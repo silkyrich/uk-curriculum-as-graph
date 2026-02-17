@@ -284,9 +284,8 @@ class CurriculumImporter:
         query = """
         MERGE (c:Curriculum {curriculum_id: $curriculum_id})
         SET c.name = $name,
-            c.country = $country,
-            c.version = $version,
-            c.last_updated = date($last_updated)
+            c.country = $country
+        REMOVE c.version, c.last_updated
         RETURN c
         """
         result = session.run(
@@ -294,8 +293,6 @@ class CurriculumImporter:
             curriculum_id="uk-national-curriculum",
             name="UK National Curriculum",
             country="England",
-            version="2014",
-            last_updated="2014-09-01",
         )
         if result.single():
             self.stats["curricula"] += 1
