@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code
+.claude/
+
+# Environment / credentials
+.env
+.env.local
+*.env
+
+# Intermediate extraction artifacts (raw pdftotext output — regenerable)
+data/extractions/test-frameworks/raw/
+
+# Quarantine (review before including)
+data/extractions/_quarantine/

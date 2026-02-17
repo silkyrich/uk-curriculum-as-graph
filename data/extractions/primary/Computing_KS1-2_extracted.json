@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "subject": "Computing",
+    "key_stage": "KS1",
+    "years_covered": [1, 2, 3, 4, 5, 6],
+    "document_reference": "DFE-00171-2013",
+    "extraction_date": "2026-02-17",
+    "structure_rating": 8
+  },
+  "domains": [
+    {
+      "domain_id": "CO-KS12-D001",
+      "domain_name": "Computer Science: Algorithms and Programming (KS1)",
+      "description": "Understanding what algorithms are and how they are implemented as programs; creating and debugging simple programs; using logical reasoning to predict program behaviour.",
+      "curriculum_context": "At KS1, the computer science strand introduces pupils to the foundational concepts of algorithms and programs. An algorithm is a precise sequence of instructions for solving a problem, and understanding that algorithms must be unambiguous and correctly ordered is the first step in computational thinking. Pupils learn to create simple programs (sequences of instructions) and to debug them when they do not work as expected, developing systematic problem-solving habits. Logical reasoning - the ability to predict what a program will do from its code - is introduced as a core skill, beginning the development of the mental modelling abilities that underpin more complex programming at KS2 and beyond. These early experiences establish that computer science is a discipline that requires both creativity and rigorous logical thinking.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CO-KS12-D002",
+      "domain_name": "Computer Science: Algorithms and Programming (KS2)",
+      "description": "Designing, writing and debugging programs that accomplish specific goals using sequences, selection, repetition, variables, and input/output; solving problems by decomposing them; using logical reasoning to explain algorithm workings.",
+      "curriculum_context": "At KS2, programming develops substantially in sophistication, moving from simple sequences to programs that use the fundamental control structures of computer science: sequence (instructions in order), selection (if-then-else decisions) and repetition (loops). The addition of variables - named storage locations that can hold and change values - enables much more powerful programs. Decomposition (breaking a problem into smaller, manageable parts) is introduced as a strategy for tackling complex programming challenges. The requirement to use logical reasoning to explain how algorithms work develops pupils' ability to analyse and communicate about code, not just to write it. Working with multiple programming languages, including at least one text-based language, broadens pupils' experience of how programming concepts are realised in different syntactic forms.",
+      "is_cross_cutting": false,
+      "structure_type": "skills"
+    },
+    {
+      "domain_id": "CO-KS12-D003",
+      "domain_name": "Digital Literacy and IT Skills (KS1)",
+      "description": "Using technology purposefully to create, organise, store, manipulate and retrieve digital content; recognising common uses of information technology beyond school; using technology safely and respectfully.",
+      "curriculum_context": "The digital literacy strand at KS1 establishes that technology is a powerful tool for creating and communicating, and that pupils should be active creators of digital content rather than only consumers. Pupils learn to use a range of hardware and software to create, organise and retrieve digital content, developing the practical digital skills that underpin all subsequent digital work. The requirement to recognise common uses of IT beyond school connects classroom learning to the digital world of everyday life. Safety and responsibility are introduced from the outset: pupils learn to keep personal information safe and to behave respectfully online, establishing the digital citizenship behaviours that become increasingly important as pupils engage more extensively with digital technologies.",
+      "is_cross_cutting": false,
+      "structure_type": "skills"
+    },
+    {
+      "domain_id": "CO-KS12-D004",
+      "domain_name": "Digital Literacy and IT Skills (KS2)",
+      "description": "Understanding computer networks including the internet; appreciating how search results are ranked; selecting, using and combining a variety of software to accomplish goals; using technology safely and responsibly, recognising threats and protecting personal identity.",
+      "curriculum_context": "Digital literacy at KS2 develops from practical creation skills to include understanding of the digital infrastructure that makes communication and collaboration possible. Pupils learn how computer networks work, how the internet connects networks globally, and how communication over the internet works. Critically, pupils develop understanding of how search technologies work and how results are ranked, which is essential for developing the critical evaluation skills needed to use internet resources effectively and safely. The expansion of software skills to include selecting and combining multiple applications develops the technological versatility and problem-solving mindset of confident digital users. Online safety at KS2 becomes more sophisticated, addressing issues of personal information, digital footprints, cyberbullying and evaluating online content.",
+      "is_cross_cutting": false,
+      "structure_type": "skills"
+    }
+  ],
+  "objectives": [
+    {
+      "objective_id": "CO-KS12-O001",
+      "domain_id": "CO-KS12-D001",
+      "objective_text": "understand what algorithms are; how they are implemented as programs on digital devices; and that programs execute by following precise and unambiguous instructions",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O002",
+      "domain_id": "CO-KS12-D001",
+      "objective_text": "create and debug simple programs",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O003",
+      "domain_id": "CO-KS12-D001",
+      "objective_text": "use logical reasoning to predict the behaviour of simple programs",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O004",
+      "domain_id": "CO-KS12-D003",
+      "objective_text": "use technology purposefully to create, organise, store, manipulate and retrieve digital content",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O005",
+      "domain_id": "CO-KS12-D003",
+      "objective_text": "recognise common uses of information technology beyond school",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O006",
+      "domain_id": "CO-KS12-D003",
+      "objective_text": "use technology safely and respectfully, keeping personal information private; identify where to go and whom to trust for help and support when they have concerns about content or contact on the internet or other online technologies",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O007",
+      "domain_id": "CO-KS12-D002",
+      "objective_text": "design, write and debug programs that accomplish specific goals, including controlling or simulating physical systems; solve problems by decomposing them into smaller parts",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O008",
+      "domain_id": "CO-KS12-D002",
+      "objective_text": "use sequence, selection, and repetition in programs; work with variables and various forms of input and output",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O009",
+      "domain_id": "CO-KS12-D002",
+      "objective_text": "use logical reasoning to explain how some simple algorithms work and to detect and correct errors in algorithms and programs",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O010",
+      "domain_id": "CO-KS12-D004",
+      "objective_text": "understand computer networks including the internet; how they can provide multiple services, such as the world wide web; and the opportunities they offer for communication and collaboration",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O011",
+      "domain_id": "CO-KS12-D004",
+      "objective_text": "use search technologies effectively, appreciate how results are selected and ranked, and be discerning in evaluating digital content",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O012",
+      "domain_id": "CO-KS12-D004",
+      "objective_text": "select, use and combine a variety of software (including internet services) on a range of digital devices to design and create a range of programs, systems and content that accomplish given goals",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CO-KS12-O013",
+      "domain_id": "CO-KS12-D004",
+      "objective_text": "use technology safely, respectfully and responsibly; recognise acceptable/unacceptable behaviour; identify a range of ways to report concerns about content and contact",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    }
+  ],
+  "concepts": [
+    {
+      "concept_id": "CO-KS12-C001",
+      "concept_name": "Algorithms",
+      "description": "An algorithm is a precise, unambiguous sequence of instructions for solving a problem or accomplishing a task. Algorithms are more general than programs: an algorithm describes what needs to be done, while a program is a specific implementation of an algorithm in a particular programming language. Algorithms must be correct (they produce the right output), precise (each step is unambiguous), and finite (they eventually reach a conclusion). At KS1 and KS2, pupils learn to write and recognise algorithms, understand their properties, and implement them as programs.",
+      "teaching_guidance": "Begin with unplugged algorithm activities before moving to digital programming. Teach pupils to write step-by-step instructions for everyday tasks (making a sandwich, brushing teeth) to illustrate the precision required in algorithms. Use robot or turtle-following activities where pupils give instructions and observe the results of ambiguity or incorrect ordering. Discuss what happens when an algorithm has an error: the program does what we said, not what we meant. Introduce the idea of testing algorithms with different inputs to check they work in all cases.",
+      "key_vocabulary": "algorithm, instruction, sequence, step, precise, unambiguous, input, output, process, program, implement, order, correct, test, debug",
+      "common_misconceptions": "Pupils may think that an algorithm is the same as a program; clarifying that an algorithm is the idea or plan, while a program is the specific coded implementation, is important. Pupils may not appreciate that algorithms need to be unambiguous; activities where deliberately ambiguous instructions lead to unexpected results make this vivid. The idea that a computer does exactly what it is told, rather than what we intended, is a fundamental shift in thinking that needs explicit attention.",
+      "concept_type": "knowledge",
+      "complexity_level": 1,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "CO-KS12-C002",
+      "concept_name": "Programming: Sequence, Selection and Repetition",
+      "description": "All programs are built from three fundamental control structures: sequence (instructions executed in order, one after another), selection (conditional branches where different instructions execute depending on a condition - if/then/else) and repetition (loops where instructions repeat a specified number of times or while a condition holds). These three structures are sufficient to express any computable algorithm, and mastery of them is the core of programming competence. At KS2, pupils learn to use all three structures in their programs, developing increasingly sophisticated and efficient code.",
+      "teaching_guidance": "Introduce each control structure separately before combining them. Use visual block-based programming environments (Scratch, Blockly) initially to reduce syntax barriers. Progress to text-based languages at upper KS2 to develop more precise understanding of programming syntax. Always connect programming tasks to a genuine purpose: a game, an animation, a simulation. Teach debugging systematically: read the code line by line, trace the execution, identify where actual behaviour diverges from expected behaviour. Celebrate debugging success as much as successful first attempts.",
+      "key_vocabulary": "sequence, selection, repetition, loop, conditional, if, then, else, while, for, variable, input, output, debug, program, code, execute, trace",
+      "common_misconceptions": "Pupils often use loops incorrectly, either not using them when repetition is present (writing the same instruction multiple times) or using them in inappropriate contexts. Explicit comparison of repetitive code versus loop code makes the efficiency benefit clear. Selection (if/then/else) is conceptually more demanding; pupils may write conditions that cannot be true, or miss the else case. Tracing through conditional code step by step makes the logic visible.",
+      "concept_type": "skill",
+      "complexity_level": 2,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "CO-KS12-C003",
+      "concept_name": "Debugging and Logical Reasoning",
+      "description": "Debugging is the process of finding and fixing errors in programs. It requires logical reasoning: the ability to read code, mentally execute it step by step, identify where the actual behaviour diverges from the expected behaviour, and determine what change will fix the error. Logical reasoning about programs is also required to predict what a program will do before running it. At KS1 and KS2, developing debugging skills and the habit of logical, systematic thinking about code is as important as learning to write new code.",
+      "teaching_guidance": "Model debugging strategies explicitly: read the error message (if any), read the code, trace through it step by step, check each part's contribution, hypothesise a fix, test. Give pupils deliberately buggy programs and ask them to identify and fix the errors before writing their own. Normalise bugs: frame them as a necessary part of programming rather than a sign of failure. Develop pupils' metacognitive awareness by asking them to articulate their reasoning when debugging. Use pair programming as a debugging strategy: talking through code with a partner helps identify errors.",
+      "key_vocabulary": "debug, error, bug, syntax error, logic error, trace, execute, predict, fix, test, check, correct, output, expected, actual, reasoning",
+      "common_misconceptions": "Pupils may feel that having errors in their code means they have failed. Reframing debugging as a normal and creative part of programming is essential. Pupils may try random changes hoping something will fix a bug rather than reasoning about the cause; teaching systematic debugging strategies builds more effective habits. Some pupils struggle to 'read' code as an execution trace; explicit tracing activities develop this skill.",
+      "concept_type": "skill",
+      "complexity_level": 2,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "CO-KS12-C004",
+      "concept_name": "Networks, the Internet and the World Wide Web",
+      "description": "A computer network is a collection of computing devices connected together to share data and resources. The internet is the global network of networks, connecting millions of devices worldwide using a common set of protocols. The World Wide Web is a service built on the internet, comprising web pages accessed via browsers. Email, messaging and streaming are other internet services. At KS2, pupils develop conceptual understanding of how networks and the internet work, distinguishing between physical infrastructure and the services that run on top of it.",
+      "teaching_guidance": "Use diagrams to show how devices are connected in a local network and how local networks connect via the internet. Discuss the difference between the internet (the physical and logical infrastructure) and the web (a service accessed via the internet). Explore how data travels across the internet in packets. Investigate the role of search engines and how they index and rank pages. Connect to digital safety: understanding how the internet works underpins understanding of online privacy and data. Use analogies: the postal system as an analogy for internet protocols.",
+      "key_vocabulary": "network, internet, World Wide Web, website, browser, server, router, packet, protocol, IP address, search engine, hyperlink, URL, data, bandwidth",
+      "common_misconceptions": "Pupils often confuse the internet with the World Wide Web, using the terms interchangeably. Establishing that the web is one service on the internet (alongside email, streaming etc.) is a key conceptual correction. Pupils may think the internet is a physical 'place' rather than a network of connected devices; using physical metaphors (roads, postal networks) helps make the infrastructure tangible. The idea that data travels in packets, potentially by different routes, is counterintuitive to many pupils.",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "CO-KS12-C005",
+      "concept_name": "Online Safety and Digital Citizenship",
+      "description": "Online safety encompasses the knowledge, skills and behaviours needed to participate in digital environments safely, responsibly and positively. It includes protecting personal information, managing digital identity and reputation, recognising online risks (cyberbullying, inappropriate content, grooming, scams), evaluating online information critically and knowing how to seek help when needed. Digital citizenship extends this to include understanding the rights and responsibilities of online participation, including intellectual property, attribution and the ethics of digital communication. At KS1 and KS2, online safety is embedded throughout the computing curriculum.",
+      "teaching_guidance": "Integrate online safety into all digital activities rather than treating it as a standalone topic. Use age-appropriate scenarios to discuss common online risks. Teach pupils to recognise personal information and understand why it should be kept private. Discuss the permanence of online information and the concept of a digital footprint. Explore how to evaluate whether an online source is trustworthy. Ensure pupils know how to report concerns to a trusted adult or to reporting services. Use PSHE links to connect online safety to broader themes of relationships, identity and wellbeing.",
+      "key_vocabulary": "online safety, personal information, privacy, digital footprint, cyberbullying, password, phishing, spam, screenshot, report, block, trusted adult, content, contact, conduct",
+      "common_misconceptions": "Pupils may think that anonymous online behaviour has no consequences; discussing the traceability of online actions corrects this. Pupils may not realise that information shared with one person online can be shared much more widely; discussing how data spreads makes the risk tangible. The idea that everything on the internet is true is common and requires deliberate work to challenge; evaluating sources, checking dates and looking for corroboration are skills to teach explicitly.",
+      "concept_type": "knowledge",
+      "complexity_level": 1,
+      "is_cross_cutting": true
+    },
+    {
+      "concept_id": "CO-KS12-C006",
+      "concept_name": "Decomposition and Computational Thinking",
+      "description": "Computational thinking is a set of problem-solving approaches that involve breaking problems down (decomposition), identifying patterns (pattern recognition), focusing on the most relevant information (abstraction) and developing step-by-step solutions (algorithm design). Decomposition - breaking a complex problem into smaller, manageable sub-problems - is particularly important in programming, as it enables pupils to tackle problems that would otherwise be too large to address as a whole. At KS2, pupils apply decomposition to design programs and to plan complex digital projects.",
+      "teaching_guidance": "Model decomposition explicitly when setting programming tasks: show how a complex program can be broken into components (an animation with a background, a character, sound, score). Ask pupils to plan their program structure before coding. Teach the use of procedures and functions as a way of organising decomposed code. Practice decomposition in non-computing contexts: planning an event, organising a research project. Connect decomposition to the design stage of the design-make-evaluate cycle. Use flowcharts and pseudocode to represent decomposed algorithms before implementing them.",
+      "key_vocabulary": "decomposition, computational thinking, abstraction, pattern recognition, algorithm, problem-solving, sub-problem, procedure, function, modular, plan, flowchart, pseudocode, design",
+      "common_misconceptions": "Pupils may attempt to solve programming challenges as a single, undivided problem rather than decomposing them. Modelling the decomposition process explicitly, and requiring pupils to plan before coding, develops this habit. Abstraction (ignoring irrelevant detail) can be conceptually challenging; concrete examples of what to include and what to leave out in specific contexts help. Pupils may not see the connection between computational thinking and problem-solving in other domains; deliberate cross-curricular examples broaden the concept.",
+      "concept_type": "skill",
+      "complexity_level": 2,
+      "is_cross_cutting": true
+    }
+  ],
+  "prerequisite_relationships": [
+    {
+      "prerequisite_concept": "CO-KS12-C001",
+      "dependent_concept": "CO-KS12-C002",
+      "confidence": "explicit",
+      "relationship_type": "logical",
+      "strength": 0.9,
+      "rationale": "Understanding what algorithms are (sequences of precise instructions) is the prerequisite for learning to implement them as programs using the specific control structures of sequence, selection and repetition."
+    },
+    {
+      "prerequisite_concept": "CO-KS12-C001",
+      "dependent_concept": "CO-KS12-C003",
+      "confidence": "explicit",
+      "relationship_type": "logical",
+      "strength": 0.85,
+      "rationale": "Debugging requires understanding that a program executes its algorithm precisely; without understanding the concept of an algorithm and its execution, systematic debugging cannot be learned."
+    },
+    {
+      "prerequisite_concept": "CO-KS12-C002",
+      "dependent_concept": "CO-KS12-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "Decomposition is most meaningfully applied in the context of programming; the ability to design programs using sequence, selection and repetition is the practical context within which decomposition becomes a useful and teachable strategy."
+    },
+    {
+      "prerequisite_concept": "CO-KS12-C004",
+      "dependent_concept": "CO-KS12-C005",
+      "confidence": "inferred",
+      "relationship_type": "logical",
+      "strength": 0.7,
+      "rationale": "Understanding how networks and the internet work provides the conceptual basis for understanding many online safety issues, including how personal data travels, where it is stored, who can access it, and how digital footprints are created."
+    }
+  ]
+}
