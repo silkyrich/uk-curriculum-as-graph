@@ -6,6 +6,7 @@
 validate_extractions.py   ← run first — checks JSON files before touching Neo4j
 import_curriculum.py      ← loads curriculum subjects into Neo4j
 import_test_frameworks.py ← loads KS2 STA test framework data (run after curriculum)
+import_epistemic_skills.py ← loads epistemic skill nodes and DEVELOPS_SKILL / PROGRESSION_OF links
 validate_schema.py        ← post-import checks against Neo4j
 create_schema.py          ← one-off: creates Neo4j constraints and indexes
 ```
@@ -33,17 +34,21 @@ python3 scripts/import_curriculum.py
 # 3. Import test framework layer (KS2 Maths, English Reading, English GPS)
 python3 scripts/import_test_frameworks.py
 
-# 4. Validate the graph
+# 4. Import epistemic skill layer
+python3 scripts/import_epistemic_skills.py
+
+# 5. Validate the graph
 python3 scripts/validate_schema.py
 ```
 
 ## Data locations
 
 ```
-data/extractions/primary/      # KS1–KS2 subject extraction JSONs
-data/extractions/secondary/    # KS3–KS4 subject extraction JSONs
+data/extractions/primary/          # KS1–KS2 subject extraction JSONs
+data/extractions/secondary/        # KS3–KS4 subject extraction JSONs
 data/extractions/test-frameworks/  # KS2 STA test framework JSONs + PROVENANCE.md
-data/curriculum-documents/     # Source PDFs (subjects + test frameworks)
+data/extractions/epistemic-skills/ # Epistemic skill JSONs (WorkingScientifically, ReadingSkill, etc.)
+data/curriculum-documents/         # Source PDFs (subjects + test frameworks)
 ```
 
 ## Known data notes

@@ -24,6 +24,13 @@ def create_schema(driver):
         "CREATE CONSTRAINT domain_id_unique IF NOT EXISTS FOR (d:Domain) REQUIRE d.domain_id IS UNIQUE",
         "CREATE CONSTRAINT objective_id_unique IF NOT EXISTS FOR (o:Objective) REQUIRE o.objective_id IS UNIQUE",
         "CREATE CONSTRAINT concept_id_unique IF NOT EXISTS FOR (c:Concept) REQUIRE c.concept_id IS UNIQUE",
+        # Epistemic skills node types (v3.2)
+        "CREATE CONSTRAINT working_scientifically_skill_id_unique IF NOT EXISTS FOR (ws:WorkingScientifically) REQUIRE ws.skill_id IS UNIQUE",
+        "CREATE CONSTRAINT geographical_skill_skill_id_unique IF NOT EXISTS FOR (gs:GeographicalSkill) REQUIRE gs.skill_id IS UNIQUE",
+        "CREATE CONSTRAINT reading_skill_skill_id_unique IF NOT EXISTS FOR (rs:ReadingSkill) REQUIRE rs.skill_id IS UNIQUE",
+        "CREATE CONSTRAINT mathematical_reasoning_skill_id_unique IF NOT EXISTS FOR (mr:MathematicalReasoning) REQUIRE mr.skill_id IS UNIQUE",
+        "CREATE CONSTRAINT historical_thinking_skill_id_unique IF NOT EXISTS FOR (ht:HistoricalThinking) REQUIRE ht.skill_id IS UNIQUE",
+        "CREATE CONSTRAINT computational_thinking_skill_id_unique IF NOT EXISTS FOR (ct:ComputationalThinking) REQUIRE ct.skill_id IS UNIQUE",
     ]
 
     # Indexes
@@ -34,6 +41,12 @@ def create_schema(driver):
         "CREATE INDEX domain_cross_cutting_idx IF NOT EXISTS FOR (d:Domain) ON (d.is_cross_cutting)",
         "CREATE INDEX subject_name_idx IF NOT EXISTS FOR (s:Subject) ON (s.name)",
         "CREATE INDEX year_number_idx IF NOT EXISTS FOR (y:Year) ON (y.year_number)",
+        # Epistemic skills indexes (v3.2)
+        "CREATE INDEX working_scientifically_key_stage_idx IF NOT EXISTS FOR (ws:WorkingScientifically) ON (ws.key_stage)",
+        "CREATE INDEX geographical_skill_key_stage_idx IF NOT EXISTS FOR (gs:GeographicalSkill) ON (gs.key_stage)",
+        "CREATE INDEX reading_skill_test_code_idx IF NOT EXISTS FOR (rs:ReadingSkill) ON (rs.test_code)",
+        "CREATE INDEX mathematical_reasoning_paper_idx IF NOT EXISTS FOR (mr:MathematicalReasoning) ON (mr.paper)",
+        "CREATE INDEX computational_thinking_key_stage_idx IF NOT EXISTS FOR (ct:ComputationalThinking) ON (ct.key_stage)",
     ]
 
     print("Creating constraints...")

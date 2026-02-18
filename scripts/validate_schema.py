@@ -395,6 +395,132 @@ class SchemaValidator:
         self.add(ValidationResult("Self-referential prerequisites", status, total, issues))
 
     # =========================================================================
+    # F. Epistemic skill layer
+    # =========================================================================
+
+    def check_working_scientifically_completeness(self):
+        """All WorkingScientifically nodes have required non-empty properties."""
+        missing = self.scalar("""
+            MATCH (s:WorkingScientifically)
+            WHERE s.skill_id IS NULL OR s.skill_name IS NULL OR s.description IS NULL
+               OR s.key_stage IS NULL OR s.complexity_level IS NULL
+            RETURN count(s) AS missing
+        """) or 0
+        total = self.scalar("MATCH (s:WorkingScientifically) RETURN count(s)") or 0
+        status = "FAIL" if missing else "PASS"
+        details = [f"{missing} WorkingScientifically nodes missing required properties"] if missing else []
+        self.add(ValidationResult("WorkingScientifically node completeness", status, total, details))
+
+    def check_geographical_skill_completeness(self):
+        """All GeographicalSkill nodes have required non-empty properties."""
+        missing = self.scalar("""
+            MATCH (s:GeographicalSkill)
+            WHERE s.skill_id IS NULL OR s.skill_name IS NULL OR s.description IS NULL
+               OR s.key_stage IS NULL OR s.complexity_level IS NULL
+            RETURN count(s) AS missing
+        """) or 0
+        total = self.scalar("MATCH (s:GeographicalSkill) RETURN count(s)") or 0
+        status = "FAIL" if missing else "PASS"
+        details = [f"{missing} GeographicalSkill nodes missing required properties"] if missing else []
+        self.add(ValidationResult("GeographicalSkill node completeness", status, total, details))
+
+    def check_reading_skill_completeness(self):
+        """All ReadingSkill nodes have required non-empty properties."""
+        missing = self.scalar("""
+            MATCH (s:ReadingSkill)
+            WHERE s.skill_id IS NULL OR s.skill_name IS NULL OR s.description IS NULL
+               OR s.key_stage IS NULL OR s.complexity_level IS NULL
+            RETURN count(s) AS missing
+        """) or 0
+        total = self.scalar("MATCH (s:ReadingSkill) RETURN count(s)") or 0
+        status = "FAIL" if missing else "PASS"
+        details = [f"{missing} ReadingSkill nodes missing required properties"] if missing else []
+        self.add(ValidationResult("ReadingSkill node completeness", status, total, details))
+
+    def check_mathematical_reasoning_completeness(self):
+        """All MathematicalReasoning nodes have required non-empty properties including paper."""
+        missing = self.scalar("""
+            MATCH (s:MathematicalReasoning)
+            WHERE s.skill_id IS NULL OR s.skill_name IS NULL OR s.description IS NULL
+               OR s.key_stage IS NULL OR s.complexity_level IS NULL OR s.paper IS NULL
+            RETURN count(s) AS missing
+        """) or 0
+        total = self.scalar("MATCH (s:MathematicalReasoning) RETURN count(s)") or 0
+        status = "FAIL" if missing else "PASS"
+        details = [f"{missing} MathematicalReasoning nodes missing required properties"] if missing else []
+        self.add(ValidationResult("MathematicalReasoning node completeness", status, total, details))
+
+    def check_historical_thinking_completeness(self):
+        """All HistoricalThinking nodes have required non-empty properties including second_order."""
+        missing = self.scalar("""
+            MATCH (s:HistoricalThinking)
+            WHERE s.skill_id IS NULL OR s.skill_name IS NULL OR s.description IS NULL
+               OR s.complexity_level IS NULL OR s.second_order IS NULL
+            RETURN count(s) AS missing
+        """) or 0
+        total = self.scalar("MATCH (s:HistoricalThinking) RETURN count(s)") or 0
+        status = "FAIL" if missing else "PASS"
+        details = [f"{missing} HistoricalThinking nodes missing required properties"] if missing else []
+        self.add(ValidationResult("HistoricalThinking node completeness", status, total, details))
+
+    def check_computational_thinking_completeness(self):
+        """All ComputationalThinking nodes have required non-empty properties."""
+        missing = self.scalar("""
+            MATCH (s:ComputationalThinking)
+            WHERE s.skill_id IS NULL OR s.skill_name IS NULL OR s.description IS NULL
+               OR s.key_stage IS NULL OR s.complexity_level IS NULL
+            RETURN count(s) AS missing
+        """) or 0
+        total = self.scalar("MATCH (s:ComputationalThinking) RETURN count(s)") or 0
+        status = "FAIL" if missing else "PASS"
+        details = [f"{missing} ComputationalThinking nodes missing required properties"] if missing else []
+        self.add(ValidationResult("ComputationalThinking node completeness", status, total, details))
+
+    def check_progression_of_integrity(self):
+        """No PROGRESSION_OF relationship points to a node of an unexpected type."""
+        broken = self.scalar("""
+            MATCH (a)-[:PROGRESSION_OF]->(b)
+            WHERE NOT (b:WorkingScientifically OR b:GeographicalSkill OR b:ReadingSkill
+                    OR b:MathematicalReasoning OR b:ComputationalThinking)
+            RETURN count(*) AS broken
+        """) or 0
+        total = self.scalar("MATCH ()-[r:PROGRESSION_OF]->() RETURN count(r)") or 0
+        status = "FAIL" if broken else "PASS"
+        details = [f"{broken} PROGRESSION_OF relationships point to unexpected node types"] if broken else []
+        self.add(ValidationResult("PROGRESSION_OF chain integrity", status, total, details))
+
+    def check_reading_skill_assesses_skill_coverage(self):
+        """All 8 KS2 reading content domain codes (2a–2h) have an ASSESSES_SKILL link."""
+        unlinked = self.scalar("""
+            MATCH (code:ContentDomainCode)
+            WHERE code.code IN ['2a','2b','2c','2d','2e','2f','2g','2h']
+              AND NOT (code)-[:ASSESSES_SKILL]->(:ReadingSkill)
+            RETURN count(code) AS unlinked
+        """) or 0
+        total = self.scalar("""
+            MATCH (code:ContentDomainCode)
+            WHERE code.code IN ['2a','2b','2c','2d','2e','2f','2g','2h']
+            RETURN count(code)
+        """) or 0
+        status = "FAIL" if unlinked else "PASS"
+        details = [f"{unlinked} KS2 content domain codes missing ASSESSES_SKILL link"] if unlinked else []
+        self.add(ValidationResult("ReadingSkill ASSESSES_SKILL coverage", status, total, details))
+
+    def check_programme_develops_skill_coverage(self):
+        """Science, Geography, English, Mathematics, History, Computing each have DEVELOPS_SKILL."""
+        expected_subjects = {"Science", "Geography", "English", "Mathematics", "History", "Computing"}
+        records = self.run("""
+            MATCH (p:Programme)-[:DEVELOPS_SKILL]->(s)
+            RETURN p.subject_name AS subject, count(s) AS skill_count
+        """)
+        linked = {r["subject"] for r in records if r["skill_count"] > 0}
+        missing = expected_subjects - linked
+        total = self.scalar("MATCH (p:Programme) RETURN count(p)") or 0
+        status = "WARN" if missing else "PASS"
+        details = [f"Programme '{subj}' has 0 DEVELOPS_SKILL links" for subj in sorted(missing)]
+        self.add(ValidationResult("Programme DEVELOPS_SKILL coverage", status, total, details))
+
+    # =========================================================================
     # Run all checks
     # =========================================================================
 
@@ -426,6 +552,16 @@ class SchemaValidator:
             # E. Prerequisite integrity
             self.check_prerequisite_dangling,
             self.check_prerequisite_self_reference,
+            # F. Epistemic skill layer
+            self.check_working_scientifically_completeness,
+            self.check_geographical_skill_completeness,
+            self.check_reading_skill_completeness,
+            self.check_mathematical_reasoning_completeness,
+            self.check_historical_thinking_completeness,
+            self.check_computational_thinking_completeness,
+            self.check_progression_of_integrity,
+            self.check_reading_skill_assesses_skill_coverage,
+            self.check_programme_develops_skill_coverage,
         ]
         for check in checks:
             try:
