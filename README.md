@@ -239,6 +239,7 @@ data/
 
 docs/
   research_briefing_learner_layer.md   Learning science research briefing
+  user_stories_child_experience.md     21 child user stories for the infinite scroll adaptive platform
   research/                            18 cached source files + SOURCES.md
   CURRICULUM_ANALYSIS.md
   extraction_inventory.md
