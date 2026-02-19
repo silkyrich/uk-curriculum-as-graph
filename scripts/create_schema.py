@@ -31,6 +31,8 @@ def create_schema(driver):
         "CREATE CONSTRAINT mathematical_reasoning_skill_id_unique IF NOT EXISTS FOR (mr:MathematicalReasoning) REQUIRE mr.skill_id IS UNIQUE",
         "CREATE CONSTRAINT historical_thinking_skill_id_unique IF NOT EXISTS FOR (ht:HistoricalThinking) REQUIRE ht.skill_id IS UNIQUE",
         "CREATE CONSTRAINT computational_thinking_skill_id_unique IF NOT EXISTS FOR (ct:ComputationalThinking) REQUIRE ct.skill_id IS UNIQUE",
+        # Topic nodes (v3.3)
+        "CREATE CONSTRAINT topic_id_unique IF NOT EXISTS FOR (t:Topic) REQUIRE t.topic_id IS UNIQUE",
     ]
 
     # Indexes

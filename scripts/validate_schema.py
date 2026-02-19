@@ -533,6 +533,38 @@ class SchemaValidator:
         self.add(ValidationResult("Programme DEVELOPS_SKILL coverage", status, total, details))
 
     # =========================================================================
+    # G. Topic layer
+    # =========================================================================
+
+    def check_topic_completeness(self):
+        """Every Topic node has topic_id, topic_name, subject, key_stage all non-empty."""
+        records = self.run("""
+            MATCH (t:Topic)
+            WHERE t.topic_name IS NULL OR t.topic_name = ''
+               OR t.subject IS NULL OR t.subject = ''
+               OR t.key_stage IS NULL OR t.key_stage = ''
+            RETURN t.topic_id AS id
+        """)
+        issues = [r["id"] for r in records]
+        total = self.scalar("MATCH (t:Topic) RETURN count(t)") or 0
+        status = "FAIL" if issues else "PASS"
+        details = [f"Topic '{i}' missing required property" for i in issues]
+        self.add(ValidationResult("Topic node completeness", status, total, details))
+
+    def check_topic_teaches_coverage(self):
+        """Every Topic has at least one TEACHES relationship to a Concept."""
+        records = self.run("""
+            MATCH (t:Topic)
+            WHERE NOT (t)-[:TEACHES]->(:Concept)
+            RETURN t.topic_id AS id
+        """)
+        issues = [r["id"] for r in records]
+        total = self.scalar("MATCH (t:Topic) RETURN count(t)") or 0
+        status = "WARN" if issues else "PASS"
+        details = [f"Topic '{i}' has no TEACHES relationship" for i in issues]
+        self.add(ValidationResult("Topic -> Concept coverage", status, total, details))
+
+    # =========================================================================
     # Run all checks
     # =========================================================================
 
@@ -575,6 +607,9 @@ class SchemaValidator:
             self.check_progression_of_integrity,
             self.check_reading_skill_assesses_skill_coverage,
             self.check_programme_develops_skill_coverage,
+            # G. Topic layer
+            self.check_topic_completeness,
+            self.check_topic_teaches_coverage,
         ]
         for check in checks:
             try:
@@ -632,6 +667,30 @@ def main():
         exit(0 if n_fail == 0 else 1)
     finally:
         validator.close()
+
+
+# ============================================================
+# COMPLETION QUERIES
+# ============================================================
+# Unified completion view — works across all subjects:
+#
+# For subjects WITH Topics (History, Geography etc.):
+#   MATCH (t:Topic)-[:TEACHES]->(c:Concept)
+#   RETURN t.subject, t.key_stage, t.topic_name,
+#          count(c) AS concepts_covered
+#   ORDER BY t.subject, t.key_stage
+#
+# For Maths/Science (Topics = Domains):
+#   MATCH (d:Domain)-[:HAS_CONCEPT]->(c:Concept)
+#   WHERE d.domain_id STARTS WITH 'MA-'
+#   RETURN d.domain_name, count(c) AS concept_count
+#
+# Concepts with no topic coverage (gap analysis):
+#   MATCH (c:Concept)
+#   WHERE NOT (:Topic)-[:TEACHES]->(c)
+#   RETURN c.concept_id, c.concept_name, c.source_reference
+#   ORDER BY c.source_reference
+# ============================================================
 
 
 if __name__ == "__main__":
