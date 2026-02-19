@@ -33,6 +33,9 @@ def create_schema(driver):
         "CREATE CONSTRAINT computational_thinking_skill_id_unique IF NOT EXISTS FOR (ct:ComputationalThinking) REQUIRE ct.skill_id IS UNIQUE",
         # Topic nodes (v3.3)
         "CREATE CONSTRAINT topic_id_unique IF NOT EXISTS FOR (t:Topic) REQUIRE t.topic_id IS UNIQUE",
+        # Oak National Academy content nodes (v3.4)
+        "CREATE CONSTRAINT oak_unit_slug_unique IF NOT EXISTS FOR (u:OakUnit) REQUIRE u.oak_unit_slug IS UNIQUE",
+        "CREATE CONSTRAINT oak_lesson_slug_unique IF NOT EXISTS FOR (l:OakLesson) REQUIRE l.oak_lesson_slug IS UNIQUE",
     ]
 
     # Indexes
@@ -49,6 +52,10 @@ def create_schema(driver):
         "CREATE INDEX reading_skill_test_code_idx IF NOT EXISTS FOR (rs:ReadingSkill) ON (rs.test_code)",
         "CREATE INDEX mathematical_reasoning_paper_idx IF NOT EXISTS FOR (mr:MathematicalReasoning) ON (mr.paper)",
         "CREATE INDEX computational_thinking_key_stage_idx IF NOT EXISTS FOR (ct:ComputationalThinking) ON (ct.key_stage)",
+        # Oak content indexes (v3.4)
+        "CREATE INDEX oak_unit_subject_idx IF NOT EXISTS FOR (u:OakUnit) ON (u.subject)",
+        "CREATE INDEX oak_unit_key_stage_idx IF NOT EXISTS FOR (u:OakUnit) ON (u.key_stage)",
+        "CREATE INDEX oak_lesson_subject_idx IF NOT EXISTS FOR (l:OakLesson) ON (l.subject)",
     ]
 
     print("Creating constraints...")

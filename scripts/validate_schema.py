@@ -565,6 +565,70 @@ class SchemaValidator:
         self.add(ValidationResult("Topic -> Concept coverage", status, total, details))
 
     # =========================================================================
+    # H. Oak Content layer (v3.4) — skip gracefully if no content imported yet
+    # =========================================================================
+
+    def check_oak_unit_completeness(self):
+        """OakUnit nodes have required properties (skipped if none exist)."""
+        total = self.scalar("MATCH (u:OakUnit) RETURN count(u)") or 0
+        if total == 0:
+            self.add(ValidationResult("OakUnit completeness", "PASS", 0, ["No OakUnit nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (u:OakUnit)
+            WHERE u.oak_unit_slug IS NULL OR u.oak_unit_title IS NULL OR u.subject IS NULL
+            RETURN u.oak_unit_slug AS id
+        """)
+        issues = [f"OakUnit '{r['id']}' missing required property" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("OakUnit completeness", status, total, issues))
+
+    def check_oak_lesson_completeness(self):
+        """OakLesson nodes have required properties (skipped if none exist)."""
+        total = self.scalar("MATCH (l:OakLesson) RETURN count(l)") or 0
+        if total == 0:
+            self.add(ValidationResult("OakLesson completeness", "PASS", 0, ["No OakLesson nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (l:OakLesson)
+            WHERE l.oak_lesson_slug IS NULL OR l.oak_lesson_title IS NULL OR l.oak_unit_slug IS NULL
+            RETURN l.oak_lesson_slug AS id
+        """)
+        issues = [f"OakLesson '{r['id']}' missing required property" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("OakLesson completeness", status, total, issues))
+
+    def check_oak_unit_covers_domain(self):
+        """Every OakUnit covers at least one Curriculum Domain (skipped if none exist)."""
+        total = self.scalar("MATCH (u:OakUnit) RETURN count(u)") or 0
+        if total == 0:
+            self.add(ValidationResult("OakUnit -> Domain coverage", "PASS", 0, ["No OakUnit nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (u:OakUnit)
+            WHERE NOT (u)-[:COVERS]->(:Domain)
+            RETURN u.oak_unit_slug AS id
+        """)
+        issues = [f"OakUnit '{r['id']}' has no COVERS -> Domain link" for r in records]
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("OakUnit -> Domain coverage", status, total, issues))
+
+    def check_oak_lesson_teaches_concept(self):
+        """Every OakLesson teaches at least one Curriculum Concept (skipped if none exist)."""
+        total = self.scalar("MATCH (l:OakLesson) RETURN count(l)") or 0
+        if total == 0:
+            self.add(ValidationResult("OakLesson -> Concept coverage", "PASS", 0, ["No OakLesson nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (l:OakLesson)
+            WHERE NOT (l)-[:TEACHES]->(:Concept)
+            RETURN l.oak_lesson_slug AS id
+        """)
+        issues = [f"OakLesson '{r['id']}' has no TEACHES -> Concept link" for r in records]
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("OakLesson -> Concept coverage", status, total, issues))
+
+    # =========================================================================
     # Run all checks
     # =========================================================================
 
@@ -610,6 +674,11 @@ class SchemaValidator:
             # G. Topic layer
             self.check_topic_completeness,
             self.check_topic_teaches_coverage,
+            # H. Oak Content layer (v3.4)
+            self.check_oak_unit_completeness,
+            self.check_oak_lesson_completeness,
+            self.check_oak_unit_covers_domain,
+            self.check_oak_lesson_teaches_concept,
         ]
         for check in checks:
             try:
