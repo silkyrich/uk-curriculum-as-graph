@@ -6,20 +6,32 @@ A Neo4j knowledge graph of the England National Curriculum (KS1–KS3, ages 5–
 
 | Layer | Nodes | Notes |
 |---|---|---|
+| **:Curriculum** | | **UK National Curriculum (England)** |
 | Programmes | 38 | One per subject × key stage (or year group) |
 | Domains | 225 | Strand/topic groupings within each programme |
 | Objectives | 1,193 | Statutory and non-statutory requirements |
 | Concepts | 1,032 | Teachable/testable knowledge, skills, processes |
 | Prerequisites | 898 relationships | With confidence, type, strength, and rationale |
-| Epistemic skills | 105 | Disciplinary skill nodes across 6 subject types |
+| **:Epistemic** | | **Disciplinary skills layer** |
+| Epistemic skills | 105 | Across 6 subject types (Working Scientifically, etc.) |
+| **:Assessment** | | **KS2 test framework layer** |
 | Content Domain Codes | 268 | KS2 STA test framework codes (Maths, Reading, GPS) |
+| **:Topic** | | **Content layer (humanities)** |
+| Topics | 55 | Curriculum content choices (History, Geography) |
+| **:Content** | | **Oak National Academy (skeleton)** |
+| Oak Units/Lessons | 0 | Awaiting mapping files (v3.4 layer prepared) |
+| **:CASE** | | **US academic standards (comparison layer)** |
+| Jurisdictions | 2 | US-NGSS, US-CCSS |
+| CASE Documents | 2 | NGSS Science, Common Core Math |
+| CASE Items | 1,783 | Standards with 6-level hierarchy |
 
 **Subjects covered (KS1–KS2):** Art & Design, Computing, Design & Technology, English (KS1 + Y3–Y6), Geography, History, Languages, Mathematics (Y1–Y6), Music, Physical Education, Science
 
 **Subjects covered (KS3):** Art & Design, Citizenship, Computing, Design & Technology, English, Geography, History, Languages, Mathematics, Music, Physical Education, Science
 
-## Graph model
+## Graph model (v3.5)
 
+### Core curriculum (:Curriculum namespace)
 ```
 Curriculum
   └─[HAS_KEY_STAGE]─▶ KeyStage
@@ -38,13 +50,30 @@ Curriculum
                                        MathematicalReasoning
                                        ComputationalThinking
                                            ↕ [PROGRESSION_OF]
+```
 
+### Assessment layer (:Assessment namespace)
+```
 TestFramework
   └─[HAS_PAPER]─▶ TestPaper
        └─[INCLUDES_CONTENT]─▶ ContentDomainCode
              ├─[ASSESSES]─▶ Programme
              ├─[ASSESSES_DOMAIN]─▶ Domain
              └─[ASSESSES_SKILL]─▶ ReadingSkill
+```
+
+### Topic layer (:Topic namespace)
+```
+Topic ─[TEACHES]─▶ Concept
+```
+
+### CASE standards layer (:CASE namespace, v3.5)
+```
+Jurisdiction ─[PUBLISHES]─▶ CFDocument
+                              └─[CONTAINS_ITEM]─▶ CFItem
+                                                    ├─[CHILD_OF]─▶ CFItem (hierarchy)
+                                                    ├─[PRECEDES]─▶ CFItem (progressions)
+                                                    └─[ALIGNS_TO]─▶ Concept/Objective (cross-layer)
 ```
 
 ### The epistemic skill layer
@@ -134,6 +163,7 @@ Annotated bibliography (18 sources): [`docs/research/SOURCES.md`](docs/research/
 
 ## Data sources
 
+### UK National Curriculum (England)
 All curriculum content extracted from official DfE documents:
 
 - [National Curriculum programmes of study (2013)](https://www.gov.uk/government/collections/national-curriculum)
@@ -142,6 +172,15 @@ All curriculum content extracted from official DfE documents:
 - [KS2 English Grammar, Punctuation and Spelling Test Framework 2016](https://www.gov.uk/government/publications/key-stage-2-english-grammar-punctuation-and-spelling-test-framework)
 
 Source PDFs are in `data/curriculum-documents/`. Provenance for test framework data is documented in `data/extractions/test-frameworks/PROVENANCE.md`.
+
+### US Academic Standards (CASE layer)
+CASE (IMS Global Competencies and Academic Standards Exchange) packages from:
+
+- [OpenSALT](https://opensalt.net) — public CASE server (NGSS, Common Core Math)
+- NGSS: Next Generation Science Standards (Achieve Inc, 2013)
+- Common Core State Standards for Mathematics (CCSSO, 2010)
+
+Fetched packages cached in `data/extractions/case/packages/`. Research notes on framework comparisons in `docs/research/case-standards/`.
 
 ## Prerequisites
 
@@ -154,7 +193,7 @@ The scripts hardcode `neo4j` / `password123` as credentials — change in each s
 ## Setup and import
 
 ```bash
-# 1. Create Neo4j constraints and indexes (one-off)
+# 1. Create Neo4j constraints and indexes (one-off, includes v3.5 CASE layer)
 python3 scripts/create_schema.py
 
 # 2. Validate extraction JSONs before touching the database
@@ -169,11 +208,18 @@ python3 scripts/import_test_frameworks.py
 # 5. Import epistemic skill layer
 python3 scripts/import_epistemic_skills.py
 
-# 6. Post-import schema validation (30 checks)
+# 6. Import topic layer
+python3 scripts/import_topics.py
+
+# 7. OPTIONAL: Import CASE standards layer (US comparison)
+python3 scripts/import_case_standards.py --fetch    # Download CASE packages
+python3 scripts/import_case_standards.py --import   # Load into Neo4j
+
+# 8. Post-import schema validation (41 checks, includes CASE)
 python3 scripts/validate_schema.py
 ```
 
-See `scripts/README.md` for full workflow details.
+See `scripts/README.md` and `data/extractions/case/README.md` for full workflow details.
 
 ## Example queries
 
@@ -225,6 +271,25 @@ ORDER BY length(path) DESC
 LIMIT 5
 ```
 
+**US vs UK curriculum structure comparison (CASE layer)**
+```cypher
+// NGSS 3D learning model vs UK subject-domain model
+MATCH (j:Jurisdiction)-[:PUBLISHES]->(d:CFDocument)-[:CONTAINS_ITEM]->(i:CFItem)
+WHERE i.depth = 1
+RETURN j.name, d.title, collect(i.full_statement) AS top_level_structure
+```
+
+**NGSS Science Practices aligned to UK Working Scientifically**
+```cypher
+MATCH (i:CFItem)-[:ALIGNS_TO]->(c:Concept)<-[:HAS_CONCEPT]-(dom:Domain)
+WHERE i.cf_doc_id CONTAINS 'ngss'
+RETURN i.abbreviated_statement AS ngss_practice,
+       c.concept_name AS uk_skill,
+       dom.domain_name
+```
+
+More CASE comparison queries in `data/extractions/case/README.md`.
+
 ## Repository layout
 
 ```
@@ -235,21 +300,34 @@ data/
     secondary/              KS3 extraction JSONs (12 files)
     test-frameworks/        KS2 STA test framework JSONs + PROVENANCE.md
     epistemic-skills/       Disciplinary skill taxonomy JSONs + REVIEW.md
+    topics/                 Topic layer JSONs (History, Geography)
+    oak/                    Oak National Academy mappings (v3.4 skeleton)
+    case/                   CASE standards (v3.5 US comparison layer)
+      case_sources.json     Framework definitions
+      packages/             Cached CFPackage JSONs (7MB, NGSS + Common Core)
+      mappings/             Cross-layer alignment files (CASE ↔ UK)
+      README.md             Fetch/import workflow
     _quarantine/            Files pending review before import
 
 docs/
   research_briefing_learner_layer.md   Learning science research briefing
   user_stories_child_experience.md     21 child user stories for the infinite scroll adaptive platform
-  research/                            18 cached source files + SOURCES.md
+  research/
+    case-standards/         CASE framework research notes (5 files + index)
+    [18 cached source files + SOURCES.md]
   CURRICULUM_ANALYSIS.md
   extraction_inventory.md
+  graph_model_v2.md
 
 scripts/
-  create_schema.py          One-off: Neo4j constraints and indexes
+  create_schema.py          One-off: Neo4j constraints and indexes (v3.5)
   validate_extractions.py   Pre-import JSON validation
   import_curriculum.py      Main curriculum importer
   import_test_frameworks.py KS2 test framework importer
   import_epistemic_skills.py Disciplinary skill layer importer
-  validate_schema.py        Post-import graph validation (30 checks)
+  import_topics.py          Topic layer importer (v3.3)
+  import_oak_content.py     Oak National Academy importer (v3.4)
+  import_case_standards.py  CASE standards importer (v3.5)
+  validate_schema.py        Post-import graph validation (41 checks)
   README.md                 Script workflow and notes
 ```
