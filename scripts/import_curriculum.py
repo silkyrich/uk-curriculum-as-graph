@@ -309,7 +309,8 @@ class CurriculumImporter:
         query = """
         MATCH (c:Curriculum {curriculum_id: 'uk-national-curriculum'})
         MERGE (ks:KeyStage {key_stage_id: $key_stage_id})
-        SET ks.name = $name,
+        SET ks:Curriculum,
+            ks.name = $name,
             ks.years = $years,
             ks.age_range = $age_range
         MERGE (c)-[:HAS_KEY_STAGE]->(ks)
@@ -342,7 +343,8 @@ class CurriculumImporter:
         query = """
         MATCH (ks:KeyStage {key_stage_id: $key_stage})
         MERGE (y:Year {year_id: $year_id})
-        SET y.year_number = $year_number,
+        SET y:Curriculum,
+            y.year_number = $year_number,
             y.age_range = $age_range,
             y.key_stage = $key_stage
         MERGE (ks)-[:HAS_YEAR]->(y)
@@ -368,7 +370,8 @@ class CurriculumImporter:
         query = """
         MATCH (c:Curriculum {curriculum_id: 'uk-national-curriculum'})
         MERGE (sd:SourceDocument {document_id: $document_id})
-        SET sd.title = $title,
+        SET sd:Curriculum,
+            sd.title = $title,
             sd.subject = $subject,
             sd.key_stages = $key_stages,
             sd.url = $url,
@@ -471,7 +474,8 @@ class CurriculumImporter:
 
         subject_query = """
         MERGE (s:Subject {subject_id: $subject_id})
-        SET s.name = $name,
+        SET s:Curriculum,
+            s.name = $name,
             s.description = $description,
             s.is_core_subject = $is_core_subject,
             s.statutory = $statutory,
@@ -498,7 +502,8 @@ class CurriculumImporter:
 
         programme_query = """
         MERGE (p:Programme {programme_id: $programme_id})
-        SET p.name = $name,
+        SET p:Curriculum,
+            p.name = $name,
             p.subject_name = $subject_name,
             p.years = $years,
             p.key_stage = $key_stage,
@@ -591,7 +596,8 @@ class CurriculumImporter:
             domain_query = """
             MATCH (p:Programme {programme_id: $programme_id})
             MERGE (d:Domain {domain_id: $domain_id})
-            SET d.domain_name = $domain_name,
+            SET d:Curriculum,
+                d.domain_name = $domain_name,
                 d.description = $description,
                 d.curriculum_context = $curriculum_context,
                 d.is_cross_cutting = $is_cross_cutting,
@@ -635,7 +641,8 @@ class CurriculumImporter:
             obj_query = """
             MATCH (d:Domain {domain_id: $domain_id})
             MERGE (o:Objective {objective_id: $objective_id})
-            SET o.objective_text = $objective_text,
+            SET o:Curriculum,
+                o.objective_text = $objective_text,
                 o.non_statutory_guidance = $non_statutory_guidance,
                 o.examples = $examples,
                 o.is_statutory = $is_statutory,
@@ -666,6 +673,7 @@ class CurriculumImporter:
         for concept in data.get("concepts", []):
             concept_name = (
                 concept.get("concept_name")
+                or concept.get("name")
                 or concept.get("label")
                 or concept.get("concept_id")
             )
@@ -680,7 +688,8 @@ class CurriculumImporter:
 
             concept_query = """
             MERGE (c:Concept {concept_id: $concept_id})
-            SET c.concept_name = $concept_name,
+            SET c:Curriculum,
+                c.concept_name = $concept_name,
                 c.description = $description,
                 c.teaching_guidance = $teaching_guidance,
                 c.key_vocabulary = $key_vocabulary,

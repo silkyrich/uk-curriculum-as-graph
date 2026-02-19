@@ -64,7 +64,8 @@ class EpistemicSkillsImporter:
         # parameterised labels.
         query = f"""
         MERGE (s:{node_type} {{skill_id: $skill_id}})
-        SET s.skill_name = $skill_name,
+        SET s:Epistemic,
+            s.skill_name = $skill_name,
             s.description = $description,
             s.key_stage = $key_stage,
             s.complexity_level = $complexity_level,

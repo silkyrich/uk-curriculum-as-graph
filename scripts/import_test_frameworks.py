@@ -62,7 +62,8 @@ class TestFrameworkImporter:
     def create_framework(self, session, meta):
         query = """
         MERGE (tf:TestFramework {framework_id: $framework_id})
-        SET tf.name = $name,
+        SET tf:Assessment,
+            tf.name = $name,
             tf.subject = $subject,
             tf.key_stage = $key_stage,
             tf.year_published = $year_published,
@@ -99,7 +100,8 @@ class TestFrameworkImporter:
         session.run("""
             MATCH (c:Curriculum {curriculum_id: 'uk-national-curriculum'})
             MERGE (sd:SourceDocument {document_id: $document_id})
-            SET sd.title = $title,
+            SET sd:Assessment,
+                sd.title = $title,
                 sd.subject = $subject,
                 sd.key_stages = $key_stages,
                 sd.url = $url,
@@ -134,7 +136,8 @@ class TestFrameworkImporter:
         query = """
         MATCH (tf:TestFramework {framework_id: $framework_id})
         MERGE (tp:TestPaper {paper_id: $paper_id})
-        SET tp.name = $name,
+        SET tp:Assessment,
+            tp.name = $name,
             tp.paper_number = $paper_number,
             tp.component_type = $component_type,
             tp.marks = $marks,
@@ -171,7 +174,8 @@ class TestFrameworkImporter:
             # Create/merge the ContentDomainCode node
             session.run("""
                 MERGE (cdc:ContentDomainCode {code_id: $code_id})
-                SET cdc.code = $code,
+                SET cdc:Assessment,
+                    cdc.code = $code,
                     cdc.framework_id = $framework_id,
                     cdc.year = $year,
                     cdc.strand_code = $strand_code,
@@ -214,6 +218,18 @@ class TestFrameworkImporter:
                     self.stats["assesses_programme"] += 1
                 else:
                     print(f"    ! Programme not found: {programme_id} (for code {code})")
+
+            # Link code -> Concept (ASSESSES_CONCEPT) via matched concept_ids
+            for concept_id in code_data.get("concept_ids", []):
+                result = session.run("""
+                    MATCH (c:Concept {concept_id: $concept_id})
+                    MATCH (cdc:ContentDomainCode {code_id: $code_id})
+                    MERGE (cdc)-[:ASSESSES_CONCEPT]->(c)
+                    RETURN c
+                """, concept_id=concept_id, code_id=code_id)
+                if result.single():
+                    self.stats.setdefault("assesses_concept", 0)
+                    self.stats["assesses_concept"] += 1
 
             # Link code -> Domain (ASSESSES_DOMAIN) by strand_name matching
             strand_name = code_data.get("strand_name", "")
