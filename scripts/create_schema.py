@@ -36,6 +36,10 @@ def create_schema(driver):
         # Oak National Academy content nodes (v3.4)
         "CREATE CONSTRAINT oak_unit_slug_unique IF NOT EXISTS FOR (u:OakUnit) REQUIRE u.oak_unit_slug IS UNIQUE",
         "CREATE CONSTRAINT oak_lesson_slug_unique IF NOT EXISTS FOR (l:OakLesson) REQUIRE l.oak_lesson_slug IS UNIQUE",
+        # CASE Standards layer (v3.5)
+        "CREATE CONSTRAINT jurisdiction_id_unique IF NOT EXISTS FOR (j:Jurisdiction) REQUIRE j.jurisdiction_id IS UNIQUE",
+        "CREATE CONSTRAINT cf_doc_id_unique IF NOT EXISTS FOR (d:CFDocument) REQUIRE d.cf_doc_id IS UNIQUE",
+        "CREATE CONSTRAINT cf_item_id_unique IF NOT EXISTS FOR (i:CFItem) REQUIRE i.cf_item_id IS UNIQUE",
     ]
 
     # Indexes
@@ -56,6 +60,11 @@ def create_schema(driver):
         "CREATE INDEX oak_unit_subject_idx IF NOT EXISTS FOR (u:OakUnit) ON (u.subject)",
         "CREATE INDEX oak_unit_key_stage_idx IF NOT EXISTS FOR (u:OakUnit) ON (u.key_stage)",
         "CREATE INDEX oak_lesson_subject_idx IF NOT EXISTS FOR (l:OakLesson) ON (l.subject)",
+        # CASE Standards indexes (v3.5)
+        "CREATE INDEX jurisdiction_country_idx IF NOT EXISTS FOR (j:Jurisdiction) ON (j.country)",
+        "CREATE INDEX cf_doc_subject_idx IF NOT EXISTS FOR (d:CFDocument) ON (d.subject)",
+        "CREATE INDEX cf_item_education_level_idx IF NOT EXISTS FOR (i:CFItem) ON (i.education_level)",
+        "CREATE INDEX cf_item_depth_idx IF NOT EXISTS FOR (i:CFItem) ON (i.depth)",
     ]
 
     print("Creating constraints...")

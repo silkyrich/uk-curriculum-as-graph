@@ -629,6 +629,82 @@ class SchemaValidator:
         self.add(ValidationResult("OakLesson -> Concept coverage", status, total, issues))
 
     # =========================================================================
+    # I. CASE Standards layer (v3.5)
+    # =========================================================================
+
+    def check_jurisdiction_completeness(self):
+        """All Jurisdiction nodes have required non-empty properties (skipped if none exist)."""
+        total = self.scalar("MATCH (j:Jurisdiction) RETURN count(j)") or 0
+        if total == 0:
+            self.add(ValidationResult("Jurisdiction node completeness", "PASS", 0,
+                                      ["No Jurisdiction nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (j:Jurisdiction)
+            WHERE j.jurisdiction_id IS NULL OR j.jurisdiction_id = ''
+               OR j.name IS NULL OR j.name = ''
+               OR j.jurisdiction_type IS NULL OR j.jurisdiction_type = ''
+               OR j.country IS NULL OR j.country = ''
+            RETURN j.jurisdiction_id AS id
+        """)
+        issues = [f"Jurisdiction '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("Jurisdiction node completeness", status, total, issues))
+
+    def check_cf_document_completeness(self):
+        """All CFDocument nodes have required non-empty properties (skipped if none exist)."""
+        total = self.scalar("MATCH (d:CFDocument) RETURN count(d)") or 0
+        if total == 0:
+            self.add(ValidationResult("CFDocument node completeness", "PASS", 0,
+                                      ["No CFDocument nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (d:CFDocument)
+            WHERE d.cf_doc_id IS NULL OR d.cf_doc_id = ''
+               OR d.title IS NULL OR d.title = ''
+               OR d.subject IS NULL OR d.subject = ''
+            RETURN d.cf_doc_id AS id
+        """)
+        issues = [f"CFDocument '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("CFDocument node completeness", status, total, issues))
+
+    def check_cf_item_completeness(self):
+        """All CFItem nodes have required non-empty properties (skipped if none exist)."""
+        total = self.scalar("MATCH (i:CFItem) RETURN count(i)") or 0
+        if total == 0:
+            self.add(ValidationResult("CFItem node completeness", "PASS", 0,
+                                      ["No CFItem nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (i:CFItem)
+            WHERE i.cf_item_id IS NULL OR i.cf_item_id = ''
+               OR i.full_statement IS NULL OR i.full_statement = ''
+               OR i.cf_doc_id IS NULL OR i.cf_doc_id = ''
+            RETURN i.cf_item_id AS id
+            LIMIT 20
+        """)
+        issues = [f"CFItem '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("CFItem node completeness", status, total, issues))
+
+    def check_cf_item_child_of_integrity(self):
+        """No CHILD_OF relationship points to a non-existent CFItem (skipped if none exist)."""
+        total = self.scalar("MATCH (:CFItem)-[:CHILD_OF]->() RETURN count(*)") or 0
+        if total == 0:
+            self.add(ValidationResult("CFItem CHILD_OF integrity", "PASS", 0,
+                                      ["No CHILD_OF relationships — import pending"]))
+            return
+        records = self.run("""
+            MATCH (child:CFItem)-[:CHILD_OF]->(parent)
+            WHERE NOT parent:CFItem
+            RETURN child.cf_item_id AS id
+        """)
+        issues = [f"CFItem '{r['id']}' has CHILD_OF pointing to non-CFItem node" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("CFItem CHILD_OF integrity", status, total, issues))
+
+    # =========================================================================
     # Run all checks
     # =========================================================================
 
@@ -679,6 +755,11 @@ class SchemaValidator:
             self.check_oak_lesson_completeness,
             self.check_oak_unit_covers_domain,
             self.check_oak_lesson_teaches_concept,
+            # I. CASE Standards layer (v3.5)
+            self.check_jurisdiction_completeness,
+            self.check_cf_document_completeness,
+            self.check_cf_item_completeness,
+            self.check_cf_item_child_of_integrity,
         ]
         for check in checks:
             try:
