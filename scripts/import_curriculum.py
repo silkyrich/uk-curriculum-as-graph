@@ -720,6 +720,19 @@ class CurriculumImporter:
                 concept_id=normalized_id,
             )
 
+            # Link Domain -> Concept (using domain_id on the concept)
+            concept_domain_id = concept.get("domain_id")
+            if concept_domain_id:
+                session.run(
+                    """
+                    MATCH (d:Domain {domain_id: $domain_id})
+                    MATCH (c:Concept {concept_id: $concept_id})
+                    MERGE (d)-[:HAS_CONCEPT]->(c)
+                    """,
+                    domain_id=concept_domain_id,
+                    concept_id=normalized_id,
+                )
+
             # Link Concept -> SourceDocument
             if src_doc:
                 document_id = make_document_id(src_doc)

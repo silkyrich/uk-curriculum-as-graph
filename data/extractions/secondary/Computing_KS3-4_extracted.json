@@ -2,7 +2,13 @@
   "metadata": {
     "subject": "Computing",
     "key_stage": "KS3",
-    "years_covered": [7, 8, 9, 10, 11],
+    "years_covered": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
     "document_reference": "DFE-00191-2013",
     "extraction_date": "2026-02-17",
     "structure_rating": 8
@@ -110,6 +116,7 @@
   "concepts": [
     {
       "concept_id": "CO-KS34-C001",
+      "domain_id": "CO-KS34-D001",
       "concept_name": "Algorithms: Sorting, Searching and Complexity",
       "description": "Classic algorithms for sorting (bubble sort, merge sort, quick sort) and searching (linear search, binary search) represent fundamental computational problems with well-understood solutions of different efficiencies. Algorithm complexity - how the time or space required by an algorithm grows as the input size grows - is expressed using Big O notation (O(n), O(n log n), O(n^2)). Understanding that different algorithms solving the same problem have different performance characteristics, and that the choice of algorithm matters at scale, is a key insight of computer science. At KS3, pupils study these algorithms, understand how they work and begin to compare their relative efficiency.",
       "teaching_guidance": "Implement sorting and searching algorithms in code and trace their execution with small data sets. Use physical activities (sorting cards, searching for a name in a list) to make the algorithms tangible before coding. Compare the steps required by linear and binary search for different list sizes to develop intuitive understanding of efficiency. Trace merge sort recursively to understand divide-and-conquer approaches. Connect to real applications: how does a database search work? Why does Google search so quickly? Introduce Big O notation as a way of expressing relative efficiency.",
@@ -121,6 +128,7 @@
     },
     {
       "concept_id": "CO-KS34-C002",
+      "domain_id": "CO-KS34-D002",
       "concept_name": "Boolean Logic and Binary",
       "description": "Boolean algebra is the branch of mathematics that deals with variables that can take only two values (true/false, 1/0). Boolean logic operations (AND, OR, NOT, NAND, NOR, XOR) are the fundamental operations of digital computing, implemented in hardware as logic gates. Binary (base 2) is the number system used by digital computers, where all data is represented as sequences of 0s and 1s. Understanding binary representation of integers, converting between binary and decimal, and performing binary arithmetic are foundational to understanding how computers store and process all types of data. Boolean logic connects programming (where logical conditions control program flow) to hardware (where logic gates implement digital circuits).",
       "teaching_guidance": "Teach Boolean operations through truth tables before connecting to programming and hardware. Use logic gate diagrams to show how Boolean operations are implemented physically. Practice binary-to-decimal and decimal-to-binary conversion systematically. Teach binary addition with carries. Connect to programming: the Boolean conditions in if statements and while loops use the same Boolean logic. Discuss how images, sound and text are encoded in binary: different data types, same underlying representation. Use physical logic gate simulations where possible.",
@@ -132,6 +140,7 @@
     },
     {
       "concept_id": "CO-KS34-C003",
+      "domain_id": "CO-KS34-D001",
       "concept_name": "Data Structures and Modular Programming",
       "description": "Data structures are ways of organising and storing data in a program so that it can be accessed and modified efficiently. Common data structures include arrays (indexed collections of items of the same type), lists (dynamic ordered collections), stacks (last-in, first-out collections), queues (first-in, first-out collections), and dictionaries/hash maps (key-value pair collections). Modular programming organises code into self-contained procedures or functions, each responsible for a specific task. This improves readability, enables reuse and simplifies debugging. At KS3, pupils learn to choose appropriate data structures and to design modular programs using procedures and functions.",
       "teaching_guidance": "Introduce data structures through problems they naturally solve: arrays for storing a list of scores, a stack for undo operations, a queue for a print job buffer. Teach pupils to choose data structures based on the operations required. Model modular program design: identify distinct tasks, write a function for each, test functions independently. Practice refactoring flat programs into modular ones. Connect data structures to real applications: how does a social media platform store users' friend lists? Develop understanding of the difference between accessing an element by index and searching through a list.",
@@ -143,6 +152,7 @@
     },
     {
       "concept_id": "CO-KS34-C004",
+      "domain_id": "CO-KS34-D003",
       "concept_name": "Ethics, Privacy and the Social Impact of Computing",
       "description": "Computing technologies are transforming society in profound ways, creating new opportunities and new risks. Algorithmic decision-making - using programs to make or assist decisions about credit, employment, criminal sentencing, medical diagnosis - raises questions about fairness, transparency and accountability when algorithms encode or amplify biases. Mass surveillance enabled by digital data collection challenges privacy and civil liberties. Automation threatens some forms of employment while creating others. Artificial intelligence raises questions about responsibility, creativity and the nature of intelligence. At KS3 and KS4, pupils develop the conceptual tools to engage with these ethical and social dimensions of computing as informed citizens.",
       "teaching_guidance": "Use real-world case studies to anchor abstract ethical discussions: algorithmic bias in hiring tools, facial recognition errors, data breaches. Teach pupils to identify stakeholders in technology systems and whose interests may be served or harmed. Develop vocabulary for ethical analysis: fairness, accountability, transparency, consent, privacy. Explore both the benefits and the risks of AI, social media and surveillance technologies. Connect to legal frameworks: GDPR, computer misuse legislation, intellectual property. Encourage pupils to evaluate technology critically rather than accepting or rejecting it wholesale.",

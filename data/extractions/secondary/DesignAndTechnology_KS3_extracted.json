@@ -2,7 +2,11 @@
   "metadata": {
     "subject": "Design and Technology",
     "key_stage": "KS3",
-    "years_covered": [7, 8, 9],
+    "years_covered": [
+      7,
+      8,
+      9
+    ],
     "document_reference": "DFE-00192-2013",
     "extraction_date": "2026-02-17",
     "structure_rating": 8
@@ -206,6 +210,7 @@
   "concepts": [
     {
       "concept_id": "DT-KS3-C001",
+      "domain_id": "DT-KS3-D001",
       "concept_name": "User-Centred Design",
       "description": "User-centred design is a design philosophy and process that places the needs, capabilities, preferences and context of intended users at the centre of every design decision. It involves deep empathy with users, structured research methods (interviews, observation, surveys, prototyping), iterative testing with real users, and continuous refinement based on user feedback. At KS3, pupils develop understanding of user-centred design as a distinct and powerful approach that produces solutions better suited to genuine human needs than solutions derived purely from technical or aesthetic assumptions.",
       "teaching_guidance": "Introduce user research methods: structured interviews, observation, persona development, user journey mapping. Set projects where pupils must engage with real potential users before and during the design process. Teach prototyping as a user testing tool, not just a making exercise. Discuss famous examples of user-centred design (and failures caused by ignoring users). Develop pupils' ability to translate qualitative user insights into quantitative design criteria. Connect to real professional practice: how do product companies discover user needs?",
@@ -217,6 +222,7 @@
     },
     {
       "concept_id": "DT-KS3-C002",
+      "domain_id": "DT-KS3-D004",
       "concept_name": "Materials Science and Properties",
       "description": "Materials science is the study of the properties of materials - physical, mechanical, thermal, electrical, chemical and aesthetic - and how these properties determine the suitability of materials for specific applications. At KS3, pupils develop systematic understanding of the properties of a range of materials including metals, polymers, wood-based materials, ceramics, composites and smart materials. Understanding properties enables pupils to make informed material selection decisions and to understand why materials behave as they do under different conditions and manufacturing processes.",
       "teaching_guidance": "Teach properties systematically with practical testing activities: compare strength, flexibility, conductivity, thermal properties of different materials. Study how manufacturing processes alter properties: how does heat treatment change metal? How does grain direction affect wood? Investigate smart and composite materials: shape-memory alloys, carbon fibre, Kevlar. Connect material choice to product examples: why is this product made from this material? What would change if a different material were used? Use material data sheets as professional reference tools.",
@@ -228,6 +234,7 @@
     },
     {
       "concept_id": "DT-KS3-C003",
+      "domain_id": "DT-KS3-D004",
       "concept_name": "Embedded Computing and Product Intelligence",
       "description": "Embedded computing refers to the integration of programmable microcontrollers and electronic components into physical products, enabling them to sense their environment, process information and control physical outputs. This creates intelligent, responsive products that adapt their behaviour to conditions and user inputs. At KS3, pupils learn to design and build products with embedded computing, applying programming knowledge from computing to create sensors, input devices, output actuators and control logic within designed products.",
       "teaching_guidance": "Use accessible microcontroller platforms (micro:bit, Arduino, Raspberry Pi) for embedded computing projects. Design tasks that require products to respond to sensor inputs (temperature, light, sound, proximity, touch) and control physical outputs (motors, LEDs, speakers, displays). Teach pupils to specify the input-process-output logic of their product's intelligence before programming. Connect to the wider world: how is embedded computing used in everyday products (washing machines, smartphones, cars, medical devices)? Evaluate how well the program meets the product's design specification.",
@@ -239,6 +246,7 @@
     },
     {
       "concept_id": "DT-KS3-C004",
+      "domain_id": "DT-KS3-D003",
       "concept_name": "Ethical and Sustainable Design",
       "description": "Ethical design considers the consequences of design decisions for users, workers in the supply chain, communities and the broader environment. Sustainable design aims to meet current needs without compromising the ability of future generations to meet their own needs, considering the environmental impact of materials extraction, manufacturing, product use and end-of-life disposal. At KS3, pupils develop the analytical frameworks to evaluate products and their own designs from ethical and environmental perspectives, understanding that designers have responsibilities that extend beyond functional requirements.",
       "teaching_guidance": "Use life cycle analysis (LCA) to trace the environmental impact of a product from raw material extraction to end-of-life disposal. Discuss fair trade and ethical sourcing in the context of materials and food ingredients. Investigate the circular economy and how products can be designed for repair, reuse and recycling rather than disposal. Explore real examples of ethical and unethical design decisions: tobacco packaging, single-use plastics, accessibility failures. Connect to pupils' own design work by requiring ethical and environmental consideration as part of the evaluation process.",

@@ -2,7 +2,12 @@
   "metadata": {
     "subject": "Design and Technology",
     "key_stage": "KS2",
-    "years_covered": [3, 4, 5, 6],
+    "years_covered": [
+      3,
+      4,
+      5,
+      6
+    ],
     "document_reference": "DFE-00172-2013",
     "extraction_date": "2026-02-17",
     "structure_rating": 8
@@ -166,6 +171,7 @@
   "concepts": [
     {
       "concept_id": "DT-KS2-C001",
+      "domain_id": "DT-KS2-D001",
       "concept_name": "Research-Informed Design",
       "description": "At KS2, effective design is grounded in research that identifies the needs, preferences and constraints relevant to a product. Research may involve interviewing potential users, examining existing products, investigating materials, or exploring relevant contexts. The findings from research are used to develop design criteria that shape the design process and provide the basis for evaluation.",
       "teaching_guidance": "Teach pupils to conduct structured research before designing - this could include interviews with target users, surveys, product analysis or contextual investigation. Model how to translate research findings into design criteria. Show examples of real product development processes where research has informed design. Provide structured templates that connect research findings to design decisions. Discuss what makes a product 'fit for purpose' in terms of user needs.",
@@ -177,6 +183,7 @@
     },
     {
       "concept_id": "DT-KS2-C002",
+      "domain_id": "DT-KS2-D001",
       "concept_name": "Technical Drawing and Design Communication",
       "description": "Technical drawing involves representing design ideas using conventions that communicate information about how a product looks, how it is constructed and how its parts relate to each other. At KS2, pupils learn to use annotated sketches, cross-sectional diagrams, exploded diagrams, pattern pieces and computer-aided design to communicate their ideas clearly and accurately to others who will make or evaluate the product.",
       "teaching_guidance": "Teach specific drawing conventions including labelling, dimensioning and cross-sections. Practice exploded diagrams to show how components fit together. Introduce appropriate computer-aided design tools for generating and presenting design ideas. Discuss why designers need to communicate their ideas clearly to others, such as when a design is made by someone other than the designer. Compare technical drawings with artistic drawings to highlight different purposes.",
@@ -188,6 +195,7 @@
     },
     {
       "concept_id": "DT-KS2-C003",
+      "domain_id": "DT-KS2-D004",
       "concept_name": "Advanced Mechanical Systems",
       "description": "Mechanical systems use physical components to transmit, redirect or transform motion and force. At KS2, pupils extend their KS1 knowledge of levers, sliders and wheels to include gears, pulleys, cams and linkages, understanding how these more complex mechanisms change the speed, direction and type of movement in a product. Pupils apply this knowledge by incorporating appropriate mechanisms into their own designed products.",
       "teaching_guidance": "Use construction kits with gear systems to explore how gear ratios affect speed. Investigate pulley systems to explore how they multiply force. Examine cams of different shapes and how they produce different patterns of movement. Study real products that use these mechanisms - clocks, bicycles, engines. Challenge pupils to design products that require a specific type of movement and to select an appropriate mechanism to achieve it.",
@@ -199,6 +207,7 @@
     },
     {
       "concept_id": "DT-KS2-C004",
+      "domain_id": "DT-KS2-D004",
       "concept_name": "Electrical Systems and Series Circuits",
       "description": "Electrical systems use the flow of electrical current through components to produce light, sound, heat or movement. At KS2, pupils learn to design and build series circuits incorporating switches, bulbs, buzzers and motors, understanding how these can be used to add active functionality to a designed product. This concept bridges design and technology with science, as understanding of circuits is developed in both subjects.",
       "teaching_guidance": "Connect to science circuits work by applying electrical knowledge in DT contexts. Build working series circuits as part of product designs - a lit-up toy, a burglar alarm, a motorised vehicle. Teach pupils to represent circuits using standard circuit symbols and to plan their circuits before building. Investigate the effect of adding more bulbs in series. Discuss how electrical components are incorporated in real products and what safety considerations apply.",
@@ -210,6 +219,7 @@
     },
     {
       "concept_id": "DT-KS2-C005",
+      "domain_id": "DT-KS2-D004",
       "concept_name": "Computing Control in Products",
       "description": "Computing can be applied to design and technology to create products that sense inputs, process information and control outputs. At KS2, pupils apply their understanding of programming to program, monitor and control their products, using components such as sensors, microcontrollers and actuators. This concept introduces the idea that modern products often contain embedded software that makes them intelligent and responsive.",
       "teaching_guidance": "Use programmable microcontrollers such as micro:bit, Arduino or similar platforms suited to primary pupils. Set projects where pupils program a device to respond to sensor input - lighting an LED when it gets dark, making a motor stop when a button is pressed. Connect programming tasks to the DT design process - pupils should design what their product will do, then program it to achieve that function. Evaluate how well the program meets the design criteria.",

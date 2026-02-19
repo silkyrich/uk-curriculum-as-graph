@@ -2,7 +2,14 @@
   "metadata": {
     "subject": "Computing",
     "key_stage": "KS1",
-    "years_covered": [1, 2, 3, 4, 5, 6],
+    "years_covered": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
     "document_reference": "DFE-00171-2013",
     "extraction_date": "2026-02-17",
     "structure_rating": 8
@@ -150,6 +157,7 @@
   "concepts": [
     {
       "concept_id": "CO-KS12-C001",
+      "domain_id": "CO-KS12-D002",
       "concept_name": "Algorithms",
       "description": "An algorithm is a precise, unambiguous sequence of instructions for solving a problem or accomplishing a task. Algorithms are more general than programs: an algorithm describes what needs to be done, while a program is a specific implementation of an algorithm in a particular programming language. Algorithms must be correct (they produce the right output), precise (each step is unambiguous), and finite (they eventually reach a conclusion). At KS1 and KS2, pupils learn to write and recognise algorithms, understand their properties, and implement them as programs.",
       "teaching_guidance": "Begin with unplugged algorithm activities before moving to digital programming. Teach pupils to write step-by-step instructions for everyday tasks (making a sandwich, brushing teeth) to illustrate the precision required in algorithms. Use robot or turtle-following activities where pupils give instructions and observe the results of ambiguity or incorrect ordering. Discuss what happens when an algorithm has an error: the program does what we said, not what we meant. Introduce the idea of testing algorithms with different inputs to check they work in all cases.",
@@ -161,6 +169,7 @@
     },
     {
       "concept_id": "CO-KS12-C002",
+      "domain_id": "CO-KS12-D002",
       "concept_name": "Programming: Sequence, Selection and Repetition",
       "description": "All programs are built from three fundamental control structures: sequence (instructions executed in order, one after another), selection (conditional branches where different instructions execute depending on a condition - if/then/else) and repetition (loops where instructions repeat a specified number of times or while a condition holds). These three structures are sufficient to express any computable algorithm, and mastery of them is the core of programming competence. At KS2, pupils learn to use all three structures in their programs, developing increasingly sophisticated and efficient code.",
       "teaching_guidance": "Introduce each control structure separately before combining them. Use visual block-based programming environments (Scratch, Blockly) initially to reduce syntax barriers. Progress to text-based languages at upper KS2 to develop more precise understanding of programming syntax. Always connect programming tasks to a genuine purpose: a game, an animation, a simulation. Teach debugging systematically: read the code line by line, trace the execution, identify where actual behaviour diverges from expected behaviour. Celebrate debugging success as much as successful first attempts.",
@@ -172,6 +181,7 @@
     },
     {
       "concept_id": "CO-KS12-C003",
+      "domain_id": "CO-KS12-D001",
       "concept_name": "Debugging and Logical Reasoning",
       "description": "Debugging is the process of finding and fixing errors in programs. It requires logical reasoning: the ability to read code, mentally execute it step by step, identify where the actual behaviour diverges from the expected behaviour, and determine what change will fix the error. Logical reasoning about programs is also required to predict what a program will do before running it. At KS1 and KS2, developing debugging skills and the habit of logical, systematic thinking about code is as important as learning to write new code.",
       "teaching_guidance": "Model debugging strategies explicitly: read the error message (if any), read the code, trace through it step by step, check each part's contribution, hypothesise a fix, test. Give pupils deliberately buggy programs and ask them to identify and fix the errors before writing their own. Normalise bugs: frame them as a necessary part of programming rather than a sign of failure. Develop pupils' metacognitive awareness by asking them to articulate their reasoning when debugging. Use pair programming as a debugging strategy: talking through code with a partner helps identify errors.",
@@ -183,6 +193,7 @@
     },
     {
       "concept_id": "CO-KS12-C004",
+      "domain_id": "CO-KS12-D004",
       "concept_name": "Networks, the Internet and the World Wide Web",
       "description": "A computer network is a collection of computing devices connected together to share data and resources. The internet is the global network of networks, connecting millions of devices worldwide using a common set of protocols. The World Wide Web is a service built on the internet, comprising web pages accessed via browsers. Email, messaging and streaming are other internet services. At KS2, pupils develop conceptual understanding of how networks and the internet work, distinguishing between physical infrastructure and the services that run on top of it.",
       "teaching_guidance": "Use diagrams to show how devices are connected in a local network and how local networks connect via the internet. Discuss the difference between the internet (the physical and logical infrastructure) and the web (a service accessed via the internet). Explore how data travels across the internet in packets. Investigate the role of search engines and how they index and rank pages. Connect to digital safety: understanding how the internet works underpins understanding of online privacy and data. Use analogies: the postal system as an analogy for internet protocols.",
@@ -194,6 +205,7 @@
     },
     {
       "concept_id": "CO-KS12-C005",
+      "domain_id": "CO-KS12-D003",
       "concept_name": "Online Safety and Digital Citizenship",
       "description": "Online safety encompasses the knowledge, skills and behaviours needed to participate in digital environments safely, responsibly and positively. It includes protecting personal information, managing digital identity and reputation, recognising online risks (cyberbullying, inappropriate content, grooming, scams), evaluating online information critically and knowing how to seek help when needed. Digital citizenship extends this to include understanding the rights and responsibilities of online participation, including intellectual property, attribution and the ethics of digital communication. At KS1 and KS2, online safety is embedded throughout the computing curriculum.",
       "teaching_guidance": "Integrate online safety into all digital activities rather than treating it as a standalone topic. Use age-appropriate scenarios to discuss common online risks. Teach pupils to recognise personal information and understand why it should be kept private. Discuss the permanence of online information and the concept of a digital footprint. Explore how to evaluate whether an online source is trustworthy. Ensure pupils know how to report concerns to a trusted adult or to reporting services. Use PSHE links to connect online safety to broader themes of relationships, identity and wellbeing.",
@@ -205,6 +217,7 @@
     },
     {
       "concept_id": "CO-KS12-C006",
+      "domain_id": "CO-KS12-D002",
       "concept_name": "Decomposition and Computational Thinking",
       "description": "Computational thinking is a set of problem-solving approaches that involve breaking problems down (decomposition), identifying patterns (pattern recognition), focusing on the most relevant information (abstraction) and developing step-by-step solutions (algorithm design). Decomposition - breaking a complex problem into smaller, manageable sub-problems - is particularly important in programming, as it enables pupils to tackle problems that would otherwise be too large to address as a whole. At KS2, pupils apply decomposition to design programs and to plan complex digital projects.",
       "teaching_guidance": "Model decomposition explicitly when setting programming tasks: show how a complex program can be broken into components (an animation with a background, a character, sound, score). Ask pupils to plan their program structure before coding. Teach the use of procedures and functions as a way of organising decomposed code. Practice decomposition in non-computing contexts: planning an event, organising a research project. Connect decomposition to the design stage of the design-make-evaluate cycle. Use flowcharts and pseudocode to represent decomposed algorithms before implementing them.",

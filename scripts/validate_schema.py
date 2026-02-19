@@ -263,6 +263,18 @@ class SchemaValidator:
         status = "FAIL" if issues else "PASS"
         self.add(ValidationResult("Orphaned Concepts", status, total, issues))
 
+    def check_domain_concept_links(self):
+        """Every Concept is linked FROM at least one Domain (HAS_CONCEPT)."""
+        records = self.run("""
+            MATCH (c:Concept)
+            WHERE NOT ()-[:HAS_CONCEPT]->(c)
+            RETURN c.concept_id AS id
+        """)
+        total = self.scalar("MATCH (c:Concept) RETURN count(c)")
+        issues = [f"Concept {r['id']} has no Domain link" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("Domain → Concept links", status, total, issues))
+
     def check_programme_year_links(self):
         """Every Programme is linked FROM at least one Year (HAS_PROGRAMME)."""
         records = self.run("""
@@ -542,6 +554,7 @@ class SchemaValidator:
             self.check_orphaned_domains,
             self.check_orphaned_objectives,
             self.check_orphaned_concepts,
+            self.check_domain_concept_links,
             self.check_programme_year_links,
             self.check_programme_source_doc_links,
             # D. Data quality
