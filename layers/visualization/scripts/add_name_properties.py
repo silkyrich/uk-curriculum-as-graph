@@ -46,11 +46,29 @@ def add_name_properties(driver):
         ("TestPaper", "paper_code"),
         ("TestFramework", "framework_id"),
 
-        # Already have 'name': Subject, Programme, Year, KeyStage
+        # Already have 'name': Subject, Programme, KeyStage
     ]
 
     with driver.session() as session:
         print("Adding 'name' properties to nodes...\n")
+
+        # Computed names (not simple property copies)
+        computed = [
+            ("Year", "SET n.name = 'Year ' + toString(n.year_number)"),
+        ]
+        for node_label, set_clause in computed:
+            try:
+                result = session.run(f"""
+                    MATCH (n:{node_label})
+                    WHERE n.name IS NULL AND n.year_number IS NOT NULL
+                    {set_clause}
+                    RETURN count(n) as updated
+                """)
+                updated = result.single()['updated']
+                if updated > 0:
+                    print(f"  ✓ {node_label:30} → {updated:4} nodes updated (computed)")
+            except Exception as e:
+                print(f"  ✗ {node_label:30} → Error: {e}")
 
         for node_label, source_property in mappings:
             try:
