@@ -25,9 +25,9 @@ from neo4j import GraphDatabase
 import json
 from pathlib import Path
 
-NEO4J_URI = "neo4j://127.0.0.1:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "password123"
+# Updated to use shared config
+# Updated to use shared config
+from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
 
 PROJECT_ROOT = Path(__file__).parent.parent
 EPISTEMIC_SKILLS_DIR = PROJECT_ROOT / "data" / "extractions" / "epistemic-skills"

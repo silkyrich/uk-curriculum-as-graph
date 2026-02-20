@@ -19,11 +19,7 @@ from neo4j import GraphDatabase
 import json
 import os
 from pathlib import Path
-
-# Neo4j connection
-NEO4J_URI = "neo4j://127.0.0.1:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "password123"
+from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
 
 # Paths
 PROJECT_ROOT = Path(__file__).parent.parent

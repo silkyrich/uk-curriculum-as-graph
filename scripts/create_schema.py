@@ -6,11 +6,7 @@ Applies constraints and indexes from neo4j_schema.cypher
 
 from neo4j import GraphDatabase
 import sys
-
-# Neo4j connection details
-NEO4J_URI = "neo4j://127.0.0.1:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "password123"
+from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
 
 def create_schema(driver):
     """Apply schema constraints and indexes to Neo4j database"""
