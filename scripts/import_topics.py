@@ -9,7 +9,7 @@ content into teachable units:
 
   Topic -[:TEACHES]-> Concept
 
-Each Topic node carries the dual label :Curriculum:Topic and is sourced from
+Each Topic node carries the dual label :Topic and is sourced from
 a JSON file in data/extractions/topics/.  One JSON file per subject/key-stage
 grouping is expected; each file contains a list of topic records.
 
@@ -57,14 +57,12 @@ class TopicsImporter:
 
     def create_topic_node(self, session, topic: dict) -> bool:
         """
-        MERGE a :Curriculum:Topic node and SET all properties.
+        MERGE a :Topic node and SET all properties.
         Returns True if the node was created (or already existed and was updated).
         """
         result = session.run(
             """
-            MERGE (t:Topic {topic_id: $topic_id})
-            SET t:Curriculum,
-                t.topic_name      = $topic_name,
+            MERGE (t:Topic {topic_id: $topic_id})                t.topic_name      = $topic_name,
                 t.subject         = $subject,
                 t.key_stage       = $key_stage,
                 t.topic_type      = $topic_type,
