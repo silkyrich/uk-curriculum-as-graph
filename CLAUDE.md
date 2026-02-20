@@ -332,14 +332,11 @@ class LayerImporter:
 - Learner Profiles (66 nodes — 33 InteractionType, 9 ContentGuideline, 9 PedagogyProfile, 9 FeedbackProfile, 5 PedagogyTechnique)
 - Visualization (5 Bloom perspectives with icons, styleRules, and search templates)
 
-✅ **In Aura cloud database (needs re-import for learner-profiles):**
+✅ **In Aura cloud database — clean full import (2026-02-20):**
 - Instance: education-graphs (6981841e)
-- All layers imported — 3,312 total nodes (before learner-profiles re-import)
+- 3,322 total nodes: UK Curriculum 2,555 · Assessment 277 · CASE Standards 276 · Epistemic Skills 105 · Learner Profile 65 · Structure 39
 - Visualization properties applied (display_color, display_icon, name)
-- Bloom perspectives uploaded and importable
-
-🔄 **Needs re-import:**
-- Learner Profiles — new nodes (phoneme_splitter, voice_recorder, letter_toggler, concept_mapper) and relationships (PRECEDES, SUPPORTS_LEARNING_OF, INTRODUCES_TECHNIQUE, REQUIRES) added
+- 5 Bloom perspectives uploaded and active
 
 🚧 **In progress:**
 - Oak National Academy content (skeleton only)
