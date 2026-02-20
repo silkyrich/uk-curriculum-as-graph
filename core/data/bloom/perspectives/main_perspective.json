@@ -1,0 +1,162 @@
+{
+  "name": "UK Curriculum Main View",
+  "description": "Complete view of UK curriculum with CASE comparison layer. Uses graph-stored display properties for portable styling.",
+  "version": "1.0.0",
+  "created": "2026-02-20",
+
+  "nodeCategories": [
+    {
+      "name": "Concept",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{name}",
+      "size": 30,
+      "sizeExpression": "degree * 2"
+    },
+    {
+      "name": "Domain",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{name}"
+    },
+    {
+      "name": "Objective",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{name}",
+      "size": 25
+    },
+    {
+      "name": "Programme",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{name}",
+      "size": 40
+    },
+    {
+      "name": "Subject",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{name}",
+      "size": 50
+    },
+    {
+      "name": "Topic",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{name}"
+    },
+    {
+      "name": "Practice",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{practice_number}. {name}"
+    },
+    {
+      "name": "CoreIdea",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{code}: {name}"
+    },
+    {
+      "name": "PerformanceExpectation",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{code}"
+    },
+    {
+      "name": "WorkingScientifically",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{name}"
+    },
+    {
+      "name": "ReadingSkill",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{name}"
+    },
+    {
+      "name": "MathematicalReasoning",
+      "color": "{display_color}",
+      "icon": "{display_icon}",
+      "caption": "{name}"
+    }
+  ],
+
+  "relationshipTypes": [
+    {
+      "name": "PREREQUISITE_OF",
+      "color": "#EF4444",
+      "caption": "prerequisite",
+      "thickness": 2
+    },
+    {
+      "name": "HAS_CONCEPT",
+      "color": "#10B981",
+      "caption": "contains",
+      "thickness": 1
+    },
+    {
+      "name": "ALIGNS_TO",
+      "color": "#F59E0B",
+      "caption": "aligns to",
+      "style": "dashed",
+      "thickness": 2
+    },
+    {
+      "name": "TEACHES",
+      "color": "#3B82F6",
+      "caption": "teaches"
+    },
+    {
+      "name": "USES_PRACTICE",
+      "color": "#0284C7",
+      "caption": "uses"
+    },
+    {
+      "name": "USES_CORE_IDEA",
+      "color": "#B45309",
+      "caption": "uses"
+    },
+    {
+      "name": "DEVELOPS_SKILL",
+      "color": "#14B8A6",
+      "caption": "develops"
+    }
+  ],
+
+  "searchPhrases": [
+    {
+      "phrase": "Show me {subject} for {key_stage}",
+      "cypher": "MATCH (s:Subject {name: $subject})-[:HAS_PROGRAMME]->(p:Programme) WHERE p.key_stage = $key_stage MATCH path = (p)-[*1..3]->() RETURN path LIMIT 100"
+    },
+    {
+      "phrase": "Prerequisites for {concept}",
+      "cypher": "MATCH path = (prereq:Concept)-[:PREREQUISITE_OF*]->(target:Concept) WHERE target.name CONTAINS $concept RETURN path"
+    },
+    {
+      "phrase": "Compare NGSS to UK science",
+      "cypher": "MATCH (p:Practice) OPTIONAL MATCH (p)-[:ALIGNS_TO]->(c:Concept) RETURN p, c LIMIT 50"
+    },
+    {
+      "phrase": "Show {category} layer",
+      "cypher": "MATCH (n) WHERE n.display_category = $category RETURN n LIMIT 200"
+    }
+  ],
+
+  "rules": [
+    {
+      "name": "Highlight cross-cutting concepts",
+      "condition": "node.is_cross_cutting = true",
+      "action": "addBadge",
+      "value": "★"
+    },
+    {
+      "name": "Size by connectivity",
+      "condition": "degree > 10",
+      "action": "setSize",
+      "value": "50"
+    }
+  ]
+}

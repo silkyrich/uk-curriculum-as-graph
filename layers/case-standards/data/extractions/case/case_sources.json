@@ -1,0 +1,82 @@
+{
+  "case_network_base": "https://opensalt.net/ims/case/v1p0",
+  "sources": [
+    {
+      "framework_id": "ngss-science-2013",
+      "title": "Next Generation Science Standards",
+      "subject": "Science",
+      "jurisdiction": {
+        "jurisdiction_id": "US-NGSS",
+        "name": "Next Generation Science Standards",
+        "jurisdiction_type": "national_org",
+        "country": "US",
+        "ngss_adopted": true,
+        "notes": "Published by Achieve Inc. Adopted by approximately 20 states. Emphasises science practices, crosscutting concepts, and disciplinary core ideas (the 3D learning model)."
+      },
+      "licence": "CC-BY",
+      "search_title": "Next Generation Science Standards"
+    },
+    {
+      "framework_id": "ccss-math-2010",
+      "title": "Common Core State Standards for Mathematics",
+      "subject": "Mathematics",
+      "jurisdiction": {
+        "jurisdiction_id": "US-CCSS",
+        "name": "Common Core State Standards Initiative",
+        "jurisdiction_type": "national_org",
+        "country": "US",
+        "ngss_adopted": null,
+        "notes": "Published by CCSSO and NGA Center. Adopted by 41 states and DC as of 2023. Texas and several other states did not adopt."
+      },
+      "licence": "CC-BY-SA",
+      "search_title": "Common Core State Standards for Math"
+    },
+    {
+      "framework_id": "ccss-ela-2010",
+      "title": "Common Core State Standards for English Language Arts",
+      "subject": "English Language Arts",
+      "jurisdiction": {
+        "jurisdiction_id": "US-CCSS",
+        "name": "Common Core State Standards Initiative",
+        "jurisdiction_type": "national_org",
+        "country": "US",
+        "ngss_adopted": null,
+        "notes": "Published by CCSSO and NGA Center. Adopted by 41 states and DC as of 2023. Texas and several other states did not adopt."
+      },
+      "licence": "CC-BY-SA",
+      "search_title": "Common Core",
+      "notes": "OpenSALT may not have a unified CCSS-ELA document; checking for availability"
+    },
+    {
+      "framework_id": "texas-teks-science",
+      "title": "Texas Essential Knowledge and Skills for Science",
+      "subject": "Science",
+      "jurisdiction": {
+        "jurisdiction_id": "US-TX",
+        "name": "Texas",
+        "jurisdiction_type": "US_state",
+        "country": "US",
+        "ngss_adopted": false,
+        "notes": "Texas maintains its own TEKS standards and did not adopt NGSS. The Texas Education Agency (TEA) publishes TEKS in CASE format. Science TEKS updated 2024. Notable for explicit inclusion of evolution alongside discussion of its limitations."
+      },
+      "licence": "Public domain (state government)",
+      "case_base_url": "https://tea.texas.gov/ims/case/v1p0",
+      "search_title": "Texas Essential Knowledge and Skills"
+    },
+    {
+      "framework_id": "wyoming-science-2016",
+      "title": "Wyoming Science Standards",
+      "subject": "Science",
+      "jurisdiction": {
+        "jurisdiction_id": "US-WY",
+        "name": "Wyoming",
+        "jurisdiction_type": "US_state",
+        "country": "US",
+        "ngss_adopted": false,
+        "notes": "Wyoming adopted modified NGSS in 2016 but removed all references to human-caused climate change following political pressure. Restored climate language in 2020 revision. Illustrates political contestation of science standards."
+      },
+      "licence": "Public domain (state government)",
+      "search_title": "Wyoming Science Standards"
+    }
+  ]
+}

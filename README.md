@@ -185,41 +185,86 @@ Fetched packages cached in `data/extractions/case/packages/`. Research notes on 
 ## Prerequisites
 
 - Python 3.10+
-- [Neo4j Desktop](https://neo4j.com/download/) with a local DBMS running at `neo4j://127.0.0.1:7687`
+- Neo4j 5.x (local or cloud — Neo4j Aura Free works perfectly)
 - `neo4j` Python driver: `pip install neo4j`
-
-The scripts hardcode `neo4j` / `password123` as credentials — change in each script if needed.
 
 ## Setup and import
 
+### 1. Configure Neo4j connection
+
+Set environment variables (use your Neo4j Aura credentials or local instance):
+
 ```bash
-# 1. Create Neo4j constraints and indexes (one-off, includes v3.5 CASE layer)
-python3 scripts/create_schema.py
-
-# 2. Validate extraction JSONs before touching the database
-python3 scripts/validate_extractions.py
-
-# 3. Import curriculum (clears and reimports)
-python3 scripts/import_curriculum.py
-
-# 4. Import KS2 test framework layer
-python3 scripts/import_test_frameworks.py
-
-# 5. Import epistemic skill layer
-python3 scripts/import_epistemic_skills.py
-
-# 6. Import topic layer
-python3 scripts/import_topics.py
-
-# 7. OPTIONAL: Import CASE standards layer (US comparison)
-python3 scripts/import_case_standards.py --fetch       # Download CASE packages
-python3 scripts/import_case_standards_v2.py --import   # Load into Neo4j (structured)
-
-# 8. Post-import schema validation (41 checks, includes CASE)
-python3 scripts/validate_schema.py
+export NEO4J_URI="neo4j+s://xxxxx.databases.neo4j.io"  # or neo4j://127.0.0.1:7687 for local
+export NEO4J_USERNAME="neo4j"
+export NEO4J_PASSWORD="your-password-here"
 ```
 
-See `scripts/README.md` and `data/extractions/case/README.md` for full workflow details.
+### 2. Create schema constraints and indexes
+
+```bash
+python3 core/scripts/create_schema.py
+```
+
+### 3. Import all layers
+
+**Quick start — import everything:**
+
+```bash
+python3 core/scripts/import_all.py
+```
+
+This imports all 6 layers in dependency order:
+1. UK Curriculum (foundation)
+2. Assessment
+3. Epistemic Skills
+4. Topics
+5. CASE Standards
+6. Oak Content
+
+**Or import layers individually:**
+
+```bash
+python3 layers/uk-curriculum/scripts/import_curriculum.py
+python3 layers/assessment/scripts/import_test_frameworks.py
+python3 layers/epistemic-skills/scripts/import_epistemic_skills.py
+python3 layers/topics/scripts/import_topics.py
+python3 layers/case-standards/scripts/import_case_standards_v2.py --import
+python3 layers/oak-content/scripts/import_oak_content.py --import
+```
+
+**Skip optional layers:**
+
+```bash
+python3 core/scripts/import_all.py --skip-case --skip-oak
+```
+
+### 4. Add visualization properties
+
+```bash
+python3 core/scripts/add_name_properties.py
+python3 core/scripts/add_display_properties.py
+```
+
+### 5. Validate the graph
+
+```bash
+python3 core/scripts/validate_schema.py
+```
+
+All checks should PASS before using the graph.
+
+## Layer documentation
+
+Each layer has its own detailed README:
+- `layers/uk-curriculum/README.md` — UK National Curriculum foundation
+- `layers/assessment/README.md` — KS2 test frameworks
+- `layers/epistemic-skills/README.md` — Disciplinary thinking skills
+- `layers/topics/README.md` — Curriculum content choices (History, Geography)
+- `layers/case-standards/README.md` — US/international standards comparison
+- `layers/oak-content/README.md` — Oak National Academy content
+
+**Quick reference**: See `CLAUDE.md` for a complete guide to the project structure and common tasks.
 
 ## Example queries
 
@@ -301,44 +346,78 @@ RETURN ws.skill_name AS uk_skill
 
 More CASE comparison queries in `data/extractions/case/README.md`.
 
-## Repository layout
+## Repository layout (layer-based structure)
+
+The project is organized into **layers** — each layer is a self-contained module with its own import scripts, data extractions, and documentation. Layers can be imported independently or removed cleanly.
 
 ```
-data/
-  curriculum-documents/     Source PDFs + metadata.json
-  extractions/
-    primary/                KS1–KS2 extraction JSONs (26 files)
-    secondary/              KS3 extraction JSONs (12 files)
-    test-frameworks/        KS2 STA test framework JSONs + PROVENANCE.md
-    epistemic-skills/       Disciplinary skill taxonomy JSONs + REVIEW.md
-    topics/                 Topic layer JSONs (History, Geography)
-    oak/                    Oak National Academy mappings (v3.4 skeleton)
-    case/                   CASE standards (v3.5 US comparison layer)
-      case_sources.json     Framework definitions
-      packages/             Cached CFPackage JSONs (7MB, NGSS + Common Core)
-      mappings/             Cross-layer alignment files (CASE ↔ UK)
-      README.md             Fetch/import workflow
-    _quarantine/            Files pending review before import
+layers/                          ← Layer-based organization (NEW)
+  uk-curriculum/                 Foundation layer: UK National Curriculum
+    scripts/import_curriculum.py
+    data/extractions/primary/    KS1–KS2 JSONs (26 files)
+    data/extractions/secondary/  KS3 JSONs (12 files)
+    README.md
 
-docs/
-  research_briefing_learner_layer.md   Learning science research briefing
-  user_stories_child_experience.md     21 child user stories for the infinite scroll adaptive platform
+  assessment/                    Test Frameworks layer
+    scripts/import_test_frameworks.py
+    data/extractions/test-frameworks/
+    README.md
+
+  epistemic-skills/              Disciplinary skills layer
+    scripts/import_epistemic_skills.py
+    data/extractions/epistemic-skills/
+    README.md
+
+  topics/                        Topic layer (History, Geography)
+    scripts/import_topics.py
+    data/extractions/topics/
+    README.md
+
+  case-standards/                US/International standards comparison
+    scripts/import_case_standards_v2.py
+    data/extractions/case/
+      case_sources.json
+      packages/                  Cached CASE packages
+      mappings/                  Cross-layer alignments
+    README.md
+
+  oak-content/                   Oak National Academy content
+    scripts/import_oak_content.py
+    data/extractions/oak/
+      catalogue/                 API discovery cache
+      mappings/                  Curriculum alignments
+    README.md
+
+core/                            ← Shared infrastructure
+  scripts/
+    neo4j_config.py              Shared Neo4j configuration
+    create_schema.py             Schema constraints/indexes
+    validate_schema.py           Graph integrity checks
+    validate_extractions.py      JSON validation
+    add_name_properties.py       Visualization setup
+    add_display_properties.py    Visualization setup
+    import_all.py                Import orchestrator (all layers)
+  data/
+    bloom/                       Neo4j Bloom perspectives
+    curriculum-documents/        Source document metadata
+  docs/
+    graph_model_overview.md      Graph model documentation
+  README.md
+
+docs/                            ← Research and documentation
+  research_briefing_learner_layer.md
+  user_stories_child_experience.md
   research/
-    case-standards/         CASE framework research notes (5 files + index)
-    [18 cached source files + SOURCES.md]
+    case-standards/              CASE framework research
+    [18 cached papers + SOURCES.md]
   CURRICULUM_ANALYSIS.md
   extraction_inventory.md
   graph_model_v2.md
 
-scripts/
-  create_schema.py          One-off: Neo4j constraints and indexes (v3.5)
-  validate_extractions.py   Pre-import JSON validation
-  import_curriculum.py      Main curriculum importer
-  import_test_frameworks.py KS2 test framework importer
-  import_epistemic_skills.py Disciplinary skill layer importer
-  import_topics.py          Topic layer importer (v3.3)
-  import_oak_content.py     Oak National Academy importer (v3.4)
-  import_case_standards.py  CASE standards importer (v3.5)
-  validate_schema.py        Post-import graph validation (41 checks)
-  README.md                 Script workflow and notes
+scripts/                         ← Legacy location (deprecated, see layers/)
+data/                            ← Legacy location (deprecated, see layers/)
+migrations/                      Cypher migration scripts
+CLAUDE.md                        AI agent navigation guide
 ```
+
+**NEW**: See `CLAUDE.md` for the complete guide to navigating this project, including common tasks, troubleshooting, and layer architecture.
