@@ -1,6 +1,6 @@
 {
-  "name": "UK Curriculum \u2014 Full Overview",
-  "id": "uk-curriculum-full-overview",
+  "name": "Assessment Map \u2014 KS2 Tests",
+  "id": "uk-curriculum-assessment-map",
   "version": "1.4.0",
   "categories": [
     {
@@ -902,63 +902,86 @@
   ],
   "templates": [
     {
-      "name": "Prerequisites for $concept",
+      "name": "KS2 test coverage",
       "id": "tmpl:1",
       "createdAt": 1708387200000,
-      "text": "Prerequisites for $concept",
-      "cypher": "MATCH path=(r:Concept)-[:PREREQUISITE_OF*]->(t:Concept) WHERE t.name CONTAINS $concept RETURN path LIMIT 100",
-      "params": [],
-      "hasCypherErrors": false
-    },
-    {
-      "name": "Show $subject $key_stage",
-      "id": "tmpl:2",
-      "createdAt": 1708387200000,
-      "text": "Show $subject $key_stage",
-      "cypher": "MATCH (p:Programme) WHERE p.subject_name=$subject AND p.key_stage=$key_stage MATCH path=(p)-[*1..3]->() RETURN path LIMIT 200",
-      "params": [],
-      "hasCypherErrors": false
-    },
-    {
-      "name": "Show $layer layer",
-      "id": "tmpl:3",
-      "createdAt": 1708387200000,
-      "text": "Show $layer layer",
-      "cypher": "MATCH (n) WHERE n.display_category=$layer RETURN n LIMIT 300",
-      "params": [],
-      "hasCypherErrors": false
-    },
-    {
-      "name": "What does $topic teach",
-      "id": "tmpl:4",
-      "createdAt": 1708387200000,
-      "text": "What does $topic teach",
-      "cypher": "MATCH (t:Topic)-[:TEACHES]->(c:Concept) WHERE t.topic_name CONTAINS $topic RETURN t, c LIMIT 100",
-      "params": [],
-      "hasCypherErrors": false
-    },
-    {
-      "name": "NGSS vs UK science",
-      "id": "tmpl:5",
-      "createdAt": 1708387200000,
-      "text": "NGSS vs UK science",
-      "cypher": "MATCH (p:Practice) OPTIONAL MATCH (p)-[:ALIGNS_TO]->(c:Concept) RETURN p, c LIMIT 100",
+      "text": "KS2 test coverage",
+      "cypher": "MATCH (tf:TestFramework)-[:HAS_PAPER]->(tp:TestPaper)-[:INCLUDES_CONTENT]->(cdc:ContentDomainCode) RETURN tf, tp, cdc LIMIT 200",
       "params": [],
       "hasCypherErrors": false
     },
     {
       "name": "Concepts assessed in KS2",
-      "id": "tmpl:6",
+      "id": "tmpl:2",
       "createdAt": 1708387200000,
       "text": "Concepts assessed in KS2",
       "cypher": "MATCH (cdc:ContentDomainCode)-[:ASSESSES_CONCEPT]->(c:Concept) RETURN cdc, c LIMIT 200",
       "params": [],
       "hasCypherErrors": false
+    },
+    {
+      "name": "Domains assessed in KS2",
+      "id": "tmpl:3",
+      "createdAt": 1708387200000,
+      "text": "Domains assessed in KS2",
+      "cypher": "MATCH (cdc:ContentDomainCode)-[:ASSESSES_DOMAIN]->(d:Domain) RETURN cdc, d LIMIT 200",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "$concept test questions",
+      "id": "tmpl:4",
+      "createdAt": 1708387200000,
+      "text": "$concept test questions",
+      "cypher": "MATCH (cdc:ContentDomainCode)-[:ASSESSES_CONCEPT]->(c:Concept) WHERE c.name CONTAINS $concept RETURN cdc, c LIMIT 100",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Maths paper breakdown",
+      "id": "tmpl:5",
+      "createdAt": 1708387200000,
+      "text": "Maths paper breakdown",
+      "cypher": "MATCH (tf:TestFramework {subject:'Mathematics'})-[:HAS_PAPER]->(tp)-[:INCLUDES_CONTENT]->(cdc) OPTIONAL MATCH (cdc)-[:ASSESSES_CONCEPT]->(c:Concept) RETURN tf, tp, cdc, c LIMIT 200",
+      "params": [],
+      "hasCypherErrors": false
     }
   ],
   "palette": [],
-  "hiddenCategories": [],
-  "hiddenRelationshipTypes": [],
+  "hiddenCategories": [
+    1,
+    2,
+    3,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "hiddenRelationshipTypes": [
+    "HAS_KEY_STAGE",
+    "HAS_YEAR",
+    "HAS_PROGRAMME",
+    "FOR_SUBJECT",
+    "DEVELOPS_SKILL",
+    "PROGRESSION_OF",
+    "HAS_DIMENSION",
+    "HAS_PRACTICE",
+    "HAS_CORE_IDEA",
+    "HAS_PE",
+    "ALIGNS_TO",
+    "SOURCED_FROM"
+  ],
   "hideUncategorisedData": false,
   "parentPerspectiveId": null,
   "createdAt": 1708387200000,

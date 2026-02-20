@@ -1,6 +1,6 @@
 {
-  "name": "UK Curriculum \u2014 Full Overview",
-  "id": "uk-curriculum-full-overview",
+  "name": "Science Literacy \u2014 UK vs NGSS",
+  "id": "uk-curriculum-science-literacy",
   "version": "1.4.0",
   "categories": [
     {
@@ -902,38 +902,38 @@
   ],
   "templates": [
     {
-      "name": "Prerequisites for $concept",
+      "name": "NGSS practices",
       "id": "tmpl:1",
       "createdAt": 1708387200000,
-      "text": "Prerequisites for $concept",
-      "cypher": "MATCH path=(r:Concept)-[:PREREQUISITE_OF*]->(t:Concept) WHERE t.name CONTAINS $concept RETURN path LIMIT 100",
+      "text": "NGSS practices",
+      "cypher": "MATCH (d:Dimension)-[:HAS_PRACTICE]->(p:Practice) RETURN d, p",
       "params": [],
       "hasCypherErrors": false
     },
     {
-      "name": "Show $subject $key_stage",
+      "name": "NGSS core ideas",
       "id": "tmpl:2",
       "createdAt": 1708387200000,
-      "text": "Show $subject $key_stage",
-      "cypher": "MATCH (p:Programme) WHERE p.subject_name=$subject AND p.key_stage=$key_stage MATCH path=(p)-[*1..3]->() RETURN path LIMIT 200",
+      "text": "NGSS core ideas",
+      "cypher": "MATCH (d:Dimension)-[:HAS_CORE_IDEA]->(ci:CoreIdea) RETURN d, ci",
       "params": [],
       "hasCypherErrors": false
     },
     {
-      "name": "Show $layer layer",
+      "name": "Working Scientifically skills",
       "id": "tmpl:3",
       "createdAt": 1708387200000,
-      "text": "Show $layer layer",
-      "cypher": "MATCH (n) WHERE n.display_category=$layer RETURN n LIMIT 300",
+      "text": "Working Scientifically skills",
+      "cypher": "MATCH (ws:WorkingScientifically) RETURN ws LIMIT 100",
       "params": [],
       "hasCypherErrors": false
     },
     {
-      "name": "What does $topic teach",
+      "name": "UK science concepts KS3",
       "id": "tmpl:4",
       "createdAt": 1708387200000,
-      "text": "What does $topic teach",
-      "cypher": "MATCH (t:Topic)-[:TEACHES]->(c:Concept) WHERE t.topic_name CONTAINS $topic RETURN t, c LIMIT 100",
+      "text": "UK science concepts KS3",
+      "cypher": "MATCH (p:Programme {subject_name:'Science', key_stage:'KS3'})-[:HAS_DOMAIN]->(d)-[:CONTAINS]->(:Objective)-[:TEACHES]->(c:Concept) RETURN d, c LIMIT 200",
       "params": [],
       "hasCypherErrors": false
     },
@@ -947,18 +947,52 @@
       "hasCypherErrors": false
     },
     {
-      "name": "Concepts assessed in KS2",
+      "name": "Crosscutting concepts",
       "id": "tmpl:6",
       "createdAt": 1708387200000,
-      "text": "Concepts assessed in KS2",
-      "cypher": "MATCH (cdc:ContentDomainCode)-[:ASSESSES_CONCEPT]->(c:Concept) RETURN cdc, c LIMIT 200",
+      "text": "Crosscutting concepts",
+      "cypher": "MATCH (d:Dimension)-[:HAS_CCC]->(ccc:CrosscuttingConcept) RETURN d, ccc",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "$concept prerequisites",
+      "id": "tmpl:7",
+      "createdAt": 1708387200000,
+      "text": "$concept prerequisites",
+      "cypher": "MATCH path=(r:Concept)-[:PREREQUISITE_OF*]->(t:Concept) WHERE t.name CONTAINS $concept RETURN path LIMIT 100",
       "params": [],
       "hasCypherErrors": false
     }
   ],
   "palette": [],
-  "hiddenCategories": [],
-  "hiddenRelationshipTypes": [],
+  "hiddenCategories": [
+    1,
+    2,
+    3,
+    7,
+    10,
+    12,
+    14,
+    15,
+    17,
+    18,
+    19,
+    25,
+    26
+  ],
+  "hiddenRelationshipTypes": [
+    "HAS_KEY_STAGE",
+    "HAS_YEAR",
+    "HAS_PROGRAMME",
+    "FOR_SUBJECT",
+    "SOURCED_FROM",
+    "ASSESSES",
+    "ASSESSES_CONCEPT",
+    "ASSESSES_DOMAIN",
+    "ASSESSES_SKILL",
+    "HAS_PE"
+  ],
   "hideUncategorisedData": false,
   "parentPerspectiveId": null,
   "createdAt": 1708387200000,

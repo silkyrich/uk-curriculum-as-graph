@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Write Bloom perspective directly into the Neo4j database.
+Write Bloom perspectives directly into the Neo4j database.
 
 Bloom reads perspectives from _Bloom_Perspective_ nodes, so this script
-creates/updates that node from the JSON file — no manual import needed.
+creates/updates those nodes from JSON files — no manual import needed.
 
 Usage:
-  python3 layers/visualization/scripts/upload_bloom_perspective.py
-  python3 layers/visualization/scripts/upload_bloom_perspective.py --perspective layers/visualization/data/perspectives/main_perspective.json
+  python3 layers/visualization/scripts/upload_bloom_perspective.py           # upload all perspectives
+  python3 layers/visualization/scripts/upload_bloom_perspective.py --perspective path/to/file.json
 """
 import json
 import time
@@ -20,7 +20,7 @@ from neo4j import GraphDatabase
 from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
 
 LAYER_ROOT = Path(__file__).parent.parent
-DEFAULT_PERSPECTIVE = LAYER_ROOT / 'data' / 'perspectives' / 'main_perspective.json'
+PERSPECTIVES_DIR = LAYER_ROOT / 'data' / 'perspectives'
 
 
 def upload_perspective(driver, perspective_path: Path):
@@ -44,7 +44,7 @@ def upload_perspective(driver, perspective_path: Path):
                     p.version     = $version,
                     p.updatedAt   = $ts
             ''', name=name, perspective=perspective_json,
-                 version=perspective.get('version', '1.4'), ts=ts)
+                 version=perspective.get('version', '1.4.0'), ts=ts)
             action = 'Updated'
         else:
             s.run('''
@@ -56,40 +56,49 @@ def upload_perspective(driver, perspective_path: Path):
                     p.createdAt   = $ts,
                     p.updatedAt   = $ts
             ''', name=name, perspective=perspective_json,
-                 version=perspective.get('version', '1.4'), ts=ts)
+                 version=perspective.get('version', '1.4.0'), ts=ts)
             action = 'Created'
 
-        result = s.run(
-            'MATCH (p:`_Bloom_Perspective_`) RETURN count(p) AS c, collect(p.name) AS names'
-        ).single()
-
         print(f'  {action}: "{name}"')
-        print(f'  Total perspectives in database: {result["c"]}')
-        for n in result['names']:
-            print(f'    • {n}')
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Upload Bloom perspective to Neo4j')
-    parser.add_argument('--perspective', default=str(DEFAULT_PERSPECTIVE),
-                        help='Path to perspective JSON file')
+    parser = argparse.ArgumentParser(description='Upload Bloom perspectives to Neo4j')
+    parser.add_argument('--perspective', default=None,
+                        help='Path to a single perspective JSON file (default: upload all)')
     args = parser.parse_args()
 
-    perspective_path = Path(args.perspective)
-    if not perspective_path.exists():
-        print(f'✗ Perspective file not found: {perspective_path}')
+    if args.perspective:
+        paths = [Path(args.perspective)]
+    else:
+        paths = sorted(PERSPECTIVES_DIR.glob('*.json'))
+
+    missing = [p for p in paths if not p.exists()]
+    if missing:
+        for p in missing:
+            print(f'✗ Not found: {p}')
         raise SystemExit(1)
 
-    print('='*60)
-    print('UPLOADING BLOOM PERSPECTIVE')
-    print('='*60)
-    print(f'  File: {perspective_path}')
-    print(f'  URI:  {NEO4J_URI}\n')
+    print('=' * 60)
+    print('UPLOADING BLOOM PERSPECTIVES')
+    print('=' * 60)
+    print(f'  URI: {NEO4J_URI}')
+    print(f'  Perspectives: {len(paths)}\n')
 
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
     try:
-        upload_perspective(driver, perspective_path)
-        print('\n✓ Done — refresh Bloom to see the perspective')
+        for path in paths:
+            upload_perspective(driver, path)
+
+        with driver.session() as s:
+            result = s.run(
+                'MATCH (p:`_Bloom_Perspective_`) RETURN count(p) AS c, collect(p.name) AS names'
+            ).single()
+            print(f'\nTotal perspectives in database: {result["c"]}')
+            for n in sorted(result['names']):
+                print(f'  • {n}')
+
+        print('\n✓ Done — refresh Bloom to see the perspectives')
     finally:
         driver.close()
 
