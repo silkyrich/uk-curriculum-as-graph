@@ -317,6 +317,12 @@ class LayerImporter:
 
 ## Current State (2026-02-20)
 
+✅ **Documentation reorganised:**
+- 61 docs sorted into semantic subdirectories (`design/`, `analysis/`, `archive/`, `user-stories/`, `research/learning-science/`, `research/interoperability/`)
+- `docs/README.md` added as navigation guide
+- CASE graph model moved to its layer (`layers/case-standards/docs/`)
+- `STATUS.md` archived; `migrations/legacy_scripts_README.md` archived
+
 ✅ **Complete layers:**
 - UK National Curriculum (3,252 nodes)
 - Assessment (KS2 test frameworks)
