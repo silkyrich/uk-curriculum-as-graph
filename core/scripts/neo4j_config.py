@@ -13,6 +13,17 @@ For local Neo4j, defaults to localhost if no env vars set.
 """
 import os
 import sys
+from pathlib import Path
+
+# Auto-load .env file from project root if present (and python-dotenv not required)
+_env_file = Path(__file__).parent.parent.parent / '.env'
+if _env_file.exists():
+    with open(_env_file) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                key, _, value = line.partition('=')
+                os.environ.setdefault(key.strip(), value.strip())
 
 # Read from environment variables (required for Aura, optional for local)
 NEO4J_URI = os.getenv('NEO4J_URI', 'neo4j://127.0.0.1:7687')
