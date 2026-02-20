@@ -233,6 +233,10 @@ The CASE layer is designed to enable comparison of **how different US states and
 
 Jurisdiction nodes (not yet implemented) would track adoption status and political context.
 
+## Documentation
+
+- `docs/CASE_GRAPH_MODEL_v3.5.md` — detailed graph model spec for this layer (node types, relationships, property schemas, query patterns)
+
 ## Notes
 
 - CASE packages are **fetched via the IMS Global CASE Network API** (no scraping)
