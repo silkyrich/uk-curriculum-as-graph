@@ -1,0 +1,176 @@
+{
+  "note": "Maps Year groups to supported InteractionTypes. 'primary' means the default/preferred interaction for this year. 'secondary' means available but not default. 'supported_from' is the minimum year this interaction is introduced.",
+  "mappings": [
+    {
+      "year_code": "Y1",
+      "primary": [
+        "voice_input",
+        "multi_choice_2",
+        "number_line_scrubber",
+        "drag_drop_place"
+      ],
+      "secondary": [
+        "multi_choice_3"
+      ]
+    },
+    {
+      "year_code": "Y2",
+      "primary": [
+        "voice_input",
+        "multi_choice_3",
+        "drag_drop_place",
+        "sentence_assembly"
+      ],
+      "secondary": [
+        "multi_choice_2",
+        "multi_choice_4",
+        "image_annotation",
+        "number_line_scrubber",
+        "column_addition",
+        "place_value_blocks"
+      ]
+    },
+    {
+      "year_code": "Y3",
+      "primary": [
+        "multi_choice_3",
+        "multi_choice_4",
+        "text_input_word",
+        "drag_categorise",
+        "matching_pairs",
+        "pattern_discovery"
+      ],
+      "secondary": [
+        "voice_input",
+        "number_line_scrubber",
+        "fraction_visualizer",
+        "column_subtraction",
+        "area_model_multiplication",
+        "place_value_blocks",
+        "image_annotation",
+        "drag_drop_place"
+      ]
+    },
+    {
+      "year_code": "Y4",
+      "primary": [
+        "multi_choice_4",
+        "text_input_phrase",
+        "drag_reorder",
+        "matching_pairs",
+        "text_highlight",
+        "inference_task"
+      ],
+      "secondary": [
+        "voice_input",
+        "multi_choice_3",
+        "bus_stop_division",
+        "fraction_visualizer",
+        "column_addition",
+        "column_subtraction",
+        "area_model_multiplication",
+        "drag_categorise",
+        "image_annotation",
+        "pattern_discovery"
+      ]
+    },
+    {
+      "year_code": "Y5",
+      "primary": [
+        "multi_choice_4",
+        "text_input_phrase",
+        "text_input_sentence",
+        "drag_categorise",
+        "text_highlight",
+        "fraction_visualizer",
+        "inference_task",
+        "pattern_discovery"
+      ],
+      "secondary": [
+        "voice_input",
+        "multi_choice_5",
+        "compare_contrast_table",
+        "text_annotation",
+        "bus_stop_division",
+        "drag_reorder",
+        "matching_pairs",
+        "image_annotation"
+      ]
+    },
+    {
+      "year_code": "Y6",
+      "primary": [
+        "text_input_sentence",
+        "text_input_paragraph",
+        "multi_choice_4",
+        "multi_choice_5",
+        "text_highlight",
+        "inference_task",
+        "compare_contrast_table"
+      ],
+      "secondary": [
+        "voice_input",
+        "text_annotation",
+        "rhythm_analyser",
+        "pattern_discovery",
+        "drag_reorder",
+        "matching_pairs",
+        "fraction_visualizer"
+      ]
+    },
+    {
+      "year_code": "Y7",
+      "primary": [
+        "text_input_sentence",
+        "text_input_paragraph",
+        "multi_choice_4",
+        "multi_choice_5",
+        "text_highlight",
+        "inference_task",
+        "compare_contrast_table",
+        "text_annotation"
+      ],
+      "secondary": [
+        "voice_input",
+        "code_input",
+        "drag_categorise",
+        "drag_reorder",
+        "matching_pairs"
+      ]
+    },
+    {
+      "year_code": "Y8",
+      "primary": [
+        "text_input_paragraph",
+        "multi_choice_5",
+        "text_highlight",
+        "inference_task",
+        "compare_contrast_table",
+        "text_annotation"
+      ],
+      "secondary": [
+        "voice_input",
+        "code_input",
+        "multi_choice_4",
+        "drag_categorise"
+      ]
+    },
+    {
+      "year_code": "Y9",
+      "primary": [
+        "text_input_paragraph",
+        "multi_choice_5",
+        "text_highlight",
+        "inference_task",
+        "compare_contrast_table",
+        "text_annotation",
+        "code_input"
+      ],
+      "secondary": [
+        "voice_input",
+        "multi_choice_4",
+        "drag_categorise"
+      ]
+    }
+  ]
+}

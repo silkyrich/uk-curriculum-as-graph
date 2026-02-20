@@ -39,6 +39,11 @@ def create_schema(driver):
         "CREATE CONSTRAINT case_core_idea_id_unique IF NOT EXISTS FOR (c:CoreIdea) REQUIRE c.core_idea_id IS UNIQUE",
         "CREATE CONSTRAINT case_pe_id_unique IF NOT EXISTS FOR (pe:PerformanceExpectation) REQUIRE pe.pe_id IS UNIQUE",
         "CREATE CONSTRAINT case_math_practice_id_unique IF NOT EXISTS FOR (mp:MathPractice) REQUIRE mp.practice_id IS UNIQUE",
+        # Learner Profiles layer (v3.6)
+        "CREATE CONSTRAINT interaction_type_id_unique IF NOT EXISTS FOR (i:InteractionType) REQUIRE i.interaction_id IS UNIQUE",
+        "CREATE CONSTRAINT content_guideline_year_unique IF NOT EXISTS FOR (c:ContentGuideline) REQUIRE c.year_code IS UNIQUE",
+        "CREATE CONSTRAINT pedagogy_profile_year_unique IF NOT EXISTS FOR (p:PedagogyProfile) REQUIRE p.year_code IS UNIQUE",
+        "CREATE CONSTRAINT feedback_profile_year_unique IF NOT EXISTS FOR (f:FeedbackProfile) REQUIRE f.year_code IS UNIQUE",
     ]
 
     # Indexes
@@ -64,6 +69,11 @@ def create_schema(driver):
         "CREATE INDEX case_dimension_type_idx IF NOT EXISTS FOR (d:Dimension) ON (d.dimension_type)",
         "CREATE INDEX case_practice_number_idx IF NOT EXISTS FOR (p:Practice) ON (p.practice_number)",
         "CREATE INDEX case_pe_code_idx IF NOT EXISTS FOR (pe:PerformanceExpectation) ON (pe.code)",
+        # Learner Profiles indexes (v3.6)
+        "CREATE INDEX interaction_type_category_idx IF NOT EXISTS FOR (i:InteractionType) ON (i.category)",
+        "CREATE INDEX interaction_type_input_method_idx IF NOT EXISTS FOR (i:InteractionType) ON (i.input_method)",
+        "CREATE INDEX content_guideline_tts_required_idx IF NOT EXISTS FOR (c:ContentGuideline) ON (c.tts_required)",
+        "CREATE INDEX pedagogy_profile_scaffolding_idx IF NOT EXISTS FOR (p:PedagogyProfile) ON (p.scaffolding_level)",
     ]
 
     print("Creating constraints...")
