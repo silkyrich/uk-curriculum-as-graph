@@ -158,7 +158,7 @@ The graph is designed as the curriculum ontology layer for an adaptive learning 
 | Spaced retrieval practice | Bjork desirable difficulties; Roediger testing effect |
 | Prerequisite gating | ALEKS outer fringe; KST; graph-based KT research |
 
-Full research briefing: [`docs/research_briefing_learner_layer.md`](docs/research_briefing_learner_layer.md)
+Full research briefing: [`docs/design/RESEARCH_BRIEFING.md`](docs/design/RESEARCH_BRIEFING.md)
 Annotated bibliography (18 sources): [`docs/research/SOURCES.md`](docs/research/SOURCES.md)
 
 ## Data sources
@@ -405,14 +405,21 @@ core/                            ← Shared infrastructure
   README.md
 
 docs/                            ← Research and documentation
-  research_briefing_learner_layer.md
-  user_stories_child_experience.md
+  README.md                      Navigation guide
+  design/                        Product thinking and design rationale
+    INTERACTION_MODES.md
+    RESEARCH_BRIEFING.md
+  analysis/                      Curriculum analysis and extraction reports
+  archive/                       Stale/superseded docs preserved for history
+  user-stories/
+    child-experience/            Child-facing experience narratives
+    technical/                   Numbered system behaviour specs
   research/
-    case-standards/              CASE framework research
-    [18 cached papers + SOURCES.md]
-  CURRICULUM_ANALYSIS.md
-  extraction_inventory.md
-  graph_model_v2.md
+    SOURCES.md                   Annotated bibliography (18 sources)
+    learning-science/            16 papers: KT, motivation, pedagogy, ITS
+    interoperability/            CASE spec, xAPI standard
+    case-standards/              US comparative standards research
+    content-sources/             UK content provider research
 
 scripts/                         ← Legacy location (deprecated, see layers/)
 data/                            ← Legacy location (deprecated, see layers/)
