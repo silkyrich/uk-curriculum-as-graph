@@ -24,161 +24,189 @@ from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
 
 NODE_STYLES = {
     # UK CURRICULUM LAYER (Blues & Purples)
-    'Concept': {
-        'color': '#3B82F6',  # Blue-500
-        'icon': 'lightbulb_outline',
-        'category': 'UK Curriculum'
+    # size scale: 5=top structural, 4=mid structural, 3=grouping, 2=content, 1=detail/leaf
+    'Curriculum': {
+        'color': '#1F2937',  # Gray-800
+        'icon': 'account_balance',
+        'category': 'Structure',
+        'size': 5,
     },
-    'Domain': {
-        'color': '#8B5CF6',  # Violet-500
-        'icon': 'folder',
-        'category': 'UK Curriculum'
+    'KeyStage': {
+        'color': '#374151',  # Gray-700
+        'icon': 'stairs',
+        'category': 'Structure',
+        'size': 5,
     },
-    'Objective': {
-        'color': '#10B981',  # Emerald-500
-        'icon': 'flag',
-        'category': 'UK Curriculum'
-    },
-    'Programme': {
-        'color': '#1E3A8A',  # Blue-900 (darker, foundational)
-        'icon': 'assignment',
-        'category': 'UK Curriculum'
+    'Year': {
+        'color': '#4B5563',  # Gray-600
+        'icon': 'event',
+        'category': 'Structure',
+        'size': 4,
     },
     'Subject': {
         'color': '#DC2626',  # Red-600
         'icon': 'menu_book',
-        'category': 'UK Curriculum'
+        'category': 'UK Curriculum',
+        'size': 4,
+    },
+    'Programme': {
+        'color': '#1E3A8A',  # Blue-900 (darker, foundational)
+        'icon': 'assignment',
+        'category': 'UK Curriculum',
+        'size': 4,
+    },
+    'Domain': {
+        'color': '#8B5CF6',  # Violet-500
+        'icon': 'folder',
+        'category': 'UK Curriculum',
+        'size': 3,
     },
     'Topic': {
         'color': '#7C3AED',  # Violet-600
-        'icon': 'map',
-        'category': 'UK Curriculum'
+        'icon': 'history_edu',
+        'category': 'UK Curriculum',
+        'size': 3,
+    },
+    'Objective': {
+        'color': '#10B981',  # Emerald-500
+        'icon': 'flag',
+        'category': 'UK Curriculum',
+        'size': 2,
+    },
+    'Concept': {
+        'color': '#3B82F6',  # Blue-500
+        'icon': 'lightbulb_outline',
+        'category': 'UK Curriculum',
+        'size': 2,
+    },
+    'SourceDocument': {
+        'color': '#6B7280',  # Gray-500
+        'icon': 'description',
+        'category': 'Structure',
+        'size': 1,
     },
 
     # EPISTEMIC SKILLS LAYER (Teals & Greens)
     'WorkingScientifically': {
         'color': '#14B8A6',  # Teal-500
         'icon': 'science',
-        'category': 'Epistemic Skills'
+        'category': 'Epistemic Skills',
+        'size': 2,
     },
     'ReadingSkill': {
         'color': '#EC4899',  # Pink-500
         'icon': 'menu_book',
-        'category': 'Epistemic Skills'
+        'category': 'Epistemic Skills',
+        'size': 2,
     },
     'MathematicalReasoning': {
         'color': '#F59E0B',  # Amber-500
         'icon': 'calculate',
-        'category': 'Epistemic Skills'
+        'category': 'Epistemic Skills',
+        'size': 2,
     },
     'GeographicalSkill': {
         'color': '#059669',  # Emerald-600
         'icon': 'public',
-        'category': 'Epistemic Skills'
+        'category': 'Epistemic Skills',
+        'size': 2,
     },
     'HistoricalThinking': {
         'color': '#92400E',  # Amber-900
         'icon': 'history_edu',
-        'category': 'Epistemic Skills'
+        'category': 'Epistemic Skills',
+        'size': 2,
     },
     'ComputationalThinking': {
         'color': '#4F46E5',  # Indigo-600
         'icon': 'computer',
-        'category': 'Epistemic Skills'
+        'category': 'Epistemic Skills',
+        'size': 2,
+    },
+
+    # ASSESSMENT LAYER (Grays)
+    'TestFramework': {
+        'color': '#374151',  # Gray-700
+        'icon': 'quiz',
+        'category': 'Assessment',
+        'size': 4,
+    },
+    'TestPaper': {
+        'color': '#4B5563',  # Gray-600
+        'icon': 'description',
+        'category': 'Assessment',
+        'size': 1,
+    },
+    'ContentDomainCode': {
+        'color': '#6B7280',  # Gray-500
+        'icon': 'bookmark',
+        'category': 'Assessment',
+        'size': 1,
     },
 
     # CASE STANDARDS LAYER (Oranges & Browns)
     'Framework': {
         'color': '#EA580C',  # Orange-600
         'icon': 'account_balance',
-        'category': 'CASE Standards'
+        'category': 'CASE Standards',
+        'size': 5,
     },
     'Dimension': {
         'color': '#C2410C',  # Orange-700
         'icon': 'view_in_ar',
-        'category': 'CASE Standards'
-    },
-    'Practice': {
-        'color': '#0284C7',  # Sky-600
-        'icon': 'engineering',
-        'category': 'CASE Standards'
+        'category': 'CASE Standards',
+        'size': 4,
     },
     'CoreIdea': {
         'color': '#B45309',  # Amber-700
         'icon': 'school',
-        'category': 'CASE Standards'
+        'category': 'CASE Standards',
+        'size': 3,
     },
     'CrosscuttingConcept': {
         'color': '#15803D',  # Green-700
         'icon': 'hub',
-        'category': 'CASE Standards'
+        'category': 'CASE Standards',
+        'size': 2,
+    },
+    'Practice': {
+        'color': '#0284C7',  # Sky-600
+        'icon': 'engineering',
+        'category': 'CASE Standards',
+        'size': 2,
     },
     'PerformanceExpectation': {
         'color': '#6B7280',  # Gray-500
         'icon': 'assessment',
-        'category': 'CASE Standards'
+        'category': 'CASE Standards',
+        'size': 1,
     },
     'GradeBand': {
         'color': '#9CA3AF',  # Gray-400
         'icon': 'grade',
-        'category': 'CASE Standards'
+        'category': 'CASE Standards',
+        'size': 1,
     },
     'MathPractice': {
         'color': '#D97706',  # Amber-600
         'icon': 'functions',
-        'category': 'CASE Standards'
-    },
-
-    # ASSESSMENT LAYER (Grays)
-    'ContentDomainCode': {
-        'color': '#6B7280',  # Gray-500
-        'icon': 'bookmark',
-        'category': 'Assessment'
-    },
-    'TestFramework': {
-        'color': '#374151',  # Gray-700
-        'icon': 'quiz',
-        'category': 'Assessment'
-    },
-    'TestPaper': {
-        'color': '#4B5563',  # Gray-600
-        'icon': 'description',
-        'category': 'Assessment'
-    },
-
-    # STRUCTURAL NODES (Dark neutrals)
-    'Curriculum': {
-        'color': '#1F2937',  # Gray-800
-        'icon': 'account_balance',
-        'category': 'Structure'
-    },
-    'KeyStage': {
-        'color': '#374151',  # Gray-700
-        'icon': 'stairs',
-        'category': 'Structure'
-    },
-    'Year': {
-        'color': '#4B5563',  # Gray-600
-        'icon': 'event',
-        'category': 'Structure'
-    },
-    'SourceDocument': {
-        'color': '#6B7280',  # Gray-500
-        'icon': 'description',
-        'category': 'Structure'
+        'category': 'CASE Standards',
+        'size': 2,
     },
 
     # OAK CONTENT (Future layer - placeholder)
     'OakUnit': {
         'color': '#16A34A',  # Green-600
         'icon': 'collections_bookmark',
-        'category': 'Oak Content'
+        'category': 'Oak Content',
+        'size': 3,
     },
     'OakLesson': {
         'color': '#22C55E',  # Green-500
         'icon': 'play_lesson',
-        'category': 'Oak Content'
-    }
+        'category': 'Oak Content',
+        'size': 2,
+    },
 }
 
 
@@ -196,16 +224,19 @@ def add_display_properties(driver):
                     MATCH (n:{node_label})
                     SET n.display_color = $color,
                         n.display_icon = $icon,
-                        n.display_category = $category
+                        n.display_category = $category,
+                        n.display_size = $size
                     RETURN count(n) as updated
-                """, color=style['color'], icon=style['icon'], category=style['category'])
+                """, color=style['color'], icon=style['icon'],
+                     category=style['category'], size=style['size'])
 
                 updated = result.single()['updated']
                 total_updated += updated
 
                 if updated > 0:
                     color_preview = f"\033[38;2;{int(style['color'][1:3], 16)};{int(style['color'][3:5], 16)};{int(style['color'][5:7], 16)}m●\033[0m"
-                    print(f"  {color_preview} {node_label:30} → {updated:4} nodes ({style['icon']})")
+                    size_bar = '█' * style['size'] + '░' * (5 - style['size'])
+                    print(f"  {color_preview} {node_label:28} [{size_bar}] → {updated:4} nodes ({style['icon']})")
 
             except Exception as e:
                 print(f"  ✗ {node_label:30} → Error: {e}")
@@ -241,7 +272,8 @@ def create_cypher_backup():
         cypher_lines.append(f"MATCH (n:{node_label})")
         cypher_lines.append(f"SET n.display_color = '{style['color']}',")
         cypher_lines.append(f"    n.display_icon = '{style['icon']}',")
-        cypher_lines.append(f"    n.display_category = '{style['category']}';")
+        cypher_lines.append(f"    n.display_category = '{style['category']}',")
+        cypher_lines.append(f"    n.display_size = {style['size']};")
         cypher_lines.append("")
 
     return "\n".join(cypher_lines)

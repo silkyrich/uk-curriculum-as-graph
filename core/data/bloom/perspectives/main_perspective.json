@@ -1,86 +1,241 @@
 {
-  "name": "UK Curriculum Main View",
-  "description": "Complete view of UK curriculum with CASE comparison layer. Uses graph-stored display properties for portable styling.",
-  "version": "1.0.0",
-  "created": "2026-02-20",
-
-  "nodeCategories": [
+  "version": "1.4",
+  "name": "UK Curriculum Knowledge Graph",
+  "description": "Complete view: UK National Curriculum + Assessment + Epistemic Skills + Topics + CASE Standards",
+  "categories": [
     {
-      "name": "Concept",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
+      "id": "cat-curriculum",
+      "name": "Curriculum",
+      "labels": ["Curriculum"],
+      "color": "#1F2937",
+      "size": 70,
       "caption": "{name}",
-      "size": 30,
-      "sizeExpression": "degree * 2"
+      "icon": "account_balance"
     },
     {
-      "name": "Domain",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
-      "caption": "{name}"
-    },
-    {
-      "name": "Objective",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
+      "id": "cat-keystage",
+      "name": "KeyStage",
+      "labels": ["KeyStage"],
+      "color": "#374151",
+      "size": 60,
       "caption": "{name}",
-      "size": 25
+      "icon": "stairs"
     },
     {
-      "name": "Programme",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
+      "id": "cat-year",
+      "name": "Year",
+      "labels": ["Year"],
+      "color": "#4B5563",
+      "size": 50,
       "caption": "{name}",
-      "size": 40
+      "icon": "event"
     },
     {
+      "id": "cat-subject",
       "name": "Subject",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
+      "labels": ["Subject"],
+      "color": "#DC2626",
+      "size": 55,
       "caption": "{name}",
-      "size": 50
+      "icon": "menu_book"
     },
     {
+      "id": "cat-programme",
+      "name": "Programme",
+      "labels": ["Programme"],
+      "color": "#1E3A8A",
+      "size": 45,
+      "caption": "{name}",
+      "icon": "assignment"
+    },
+    {
+      "id": "cat-domain",
+      "name": "Domain",
+      "labels": ["Domain"],
+      "color": "#8B5CF6",
+      "size": 38,
+      "caption": "{name}",
+      "icon": "folder"
+    },
+    {
+      "id": "cat-objective",
+      "name": "Objective",
+      "labels": ["Objective"],
+      "color": "#10B981",
+      "size": 28,
+      "caption": "{name}",
+      "icon": "flag"
+    },
+    {
+      "id": "cat-concept",
+      "name": "Concept",
+      "labels": ["Concept"],
+      "color": "#3B82F6",
+      "size": 28,
+      "caption": "{name}",
+      "icon": "lightbulb_outline"
+    },
+    {
+      "id": "cat-topic",
       "name": "Topic",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
-      "caption": "{name}"
+      "labels": ["Topic"],
+      "color": "#7C3AED",
+      "size": 38,
+      "caption": "{name}",
+      "icon": "history_edu"
     },
     {
-      "name": "Practice",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
-      "caption": "{practice_number}. {name}"
+      "id": "cat-sourcedoc",
+      "name": "SourceDocument",
+      "labels": ["SourceDocument"],
+      "color": "#6B7280",
+      "size": 20,
+      "caption": "{name}",
+      "icon": "description"
     },
     {
-      "name": "CoreIdea",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
-      "caption": "{code}: {name}"
+      "id": "cat-testframework",
+      "name": "TestFramework",
+      "labels": ["TestFramework"],
+      "color": "#374151",
+      "size": 50,
+      "caption": "{name}",
+      "icon": "quiz"
     },
     {
-      "name": "PerformanceExpectation",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
-      "caption": "{code}"
+      "id": "cat-testpaper",
+      "name": "TestPaper",
+      "labels": ["TestPaper"],
+      "color": "#4B5563",
+      "size": 22,
+      "caption": "{name}",
+      "icon": "description"
     },
     {
+      "id": "cat-cdc",
+      "name": "ContentDomainCode",
+      "labels": ["ContentDomainCode"],
+      "color": "#6B7280",
+      "size": 20,
+      "caption": "{name}",
+      "icon": "bookmark"
+    },
+    {
+      "id": "cat-ws",
       "name": "WorkingScientifically",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
-      "caption": "{name}"
+      "labels": ["WorkingScientifically"],
+      "color": "#14B8A6",
+      "size": 28,
+      "caption": "{name}",
+      "icon": "science"
     },
     {
+      "id": "cat-reading",
       "name": "ReadingSkill",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
-      "caption": "{name}"
+      "labels": ["ReadingSkill"],
+      "color": "#EC4899",
+      "size": 28,
+      "caption": "{name}",
+      "icon": "menu_book"
     },
     {
+      "id": "cat-maths",
       "name": "MathematicalReasoning",
-      "color": "{display_color}",
-      "icon": "{display_icon}",
-      "caption": "{name}"
+      "labels": ["MathematicalReasoning"],
+      "color": "#F59E0B",
+      "size": 28,
+      "caption": "{name}",
+      "icon": "calculate"
+    },
+    {
+      "id": "cat-history",
+      "name": "HistoricalThinking",
+      "labels": ["HistoricalThinking"],
+      "color": "#92400E",
+      "size": 28,
+      "caption": "{name}",
+      "icon": "history_edu"
+    },
+    {
+      "id": "cat-geo",
+      "name": "GeographicalSkill",
+      "labels": ["GeographicalSkill"],
+      "color": "#059669",
+      "size": 28,
+      "caption": "{name}",
+      "icon": "public"
+    },
+    {
+      "id": "cat-ct",
+      "name": "ComputationalThinking",
+      "labels": ["ComputationalThinking"],
+      "color": "#4F46E5",
+      "size": 28,
+      "caption": "{name}",
+      "icon": "computer"
+    },
+    {
+      "id": "cat-framework",
+      "name": "Framework",
+      "labels": ["Framework"],
+      "color": "#EA580C",
+      "size": 65,
+      "caption": "{name}",
+      "icon": "account_balance"
+    },
+    {
+      "id": "cat-dimension",
+      "name": "Dimension",
+      "labels": ["Dimension"],
+      "color": "#C2410C",
+      "size": 50,
+      "caption": "{name}",
+      "icon": "view_in_ar"
+    },
+    {
+      "id": "cat-practice",
+      "name": "Practice",
+      "labels": ["Practice"],
+      "color": "#0284C7",
+      "size": 30,
+      "caption": "{practice_number}. {name}",
+      "icon": "engineering"
+    },
+    {
+      "id": "cat-coreidea",
+      "name": "CoreIdea",
+      "labels": ["CoreIdea"],
+      "color": "#B45309",
+      "size": 35,
+      "caption": "{code}: {name}",
+      "icon": "school"
+    },
+    {
+      "id": "cat-pe",
+      "name": "PerformanceExpectation",
+      "labels": ["PerformanceExpectation"],
+      "color": "#6B7280",
+      "size": 20,
+      "caption": "{code}",
+      "icon": "assessment"
+    },
+    {
+      "id": "cat-ccc",
+      "name": "CrosscuttingConcept",
+      "labels": ["CrosscuttingConcept"],
+      "color": "#15803D",
+      "size": 28,
+      "caption": "{name}",
+      "icon": "hub"
+    },
+    {
+      "id": "cat-gradeband",
+      "name": "GradeBand",
+      "labels": ["GradeBand"],
+      "color": "#9CA3AF",
+      "size": 18,
+      "caption": "{name}",
+      "icon": "grade"
     }
   ],
 
@@ -88,75 +243,164 @@
     {
       "name": "PREREQUISITE_OF",
       "color": "#EF4444",
-      "caption": "prerequisite",
-      "thickness": 2
+      "width": 3,
+      "caption": "prerequisite"
+    },
+    {
+      "name": "HAS_KEY_STAGE",
+      "color": "#374151",
+      "width": 2,
+      "caption": ""
+    },
+    {
+      "name": "HAS_YEAR",
+      "color": "#4B5563",
+      "width": 2,
+      "caption": ""
+    },
+    {
+      "name": "HAS_PROGRAMME",
+      "color": "#1E3A8A",
+      "width": 2,
+      "caption": ""
+    },
+    {
+      "name": "FOR_SUBJECT",
+      "color": "#DC2626",
+      "width": 1,
+      "caption": ""
+    },
+    {
+      "name": "HAS_DOMAIN",
+      "color": "#8B5CF6",
+      "width": 2,
+      "caption": ""
+    },
+    {
+      "name": "CONTAINS",
+      "color": "#10B981",
+      "width": 1,
+      "caption": ""
     },
     {
       "name": "HAS_CONCEPT",
-      "color": "#10B981",
-      "caption": "contains",
-      "thickness": 1
-    },
-    {
-      "name": "ALIGNS_TO",
-      "color": "#F59E0B",
-      "caption": "aligns to",
-      "style": "dashed",
-      "thickness": 2
+      "color": "#3B82F6",
+      "width": 1,
+      "caption": ""
     },
     {
       "name": "TEACHES",
       "color": "#3B82F6",
+      "width": 2,
       "caption": "teaches"
-    },
-    {
-      "name": "USES_PRACTICE",
-      "color": "#0284C7",
-      "caption": "uses"
-    },
-    {
-      "name": "USES_CORE_IDEA",
-      "color": "#B45309",
-      "caption": "uses"
     },
     {
       "name": "DEVELOPS_SKILL",
       "color": "#14B8A6",
+      "width": 2,
       "caption": "develops"
+    },
+    {
+      "name": "PROGRESSION_OF",
+      "color": "#6D28D9",
+      "width": 2,
+      "caption": "progresses to"
+    },
+    {
+      "name": "ASSESSES",
+      "color": "#F59E0B",
+      "width": 2,
+      "caption": "assesses"
+    },
+    {
+      "name": "ASSESSES_CONCEPT",
+      "color": "#F59E0B",
+      "width": 1,
+      "caption": ""
+    },
+    {
+      "name": "ASSESSES_DOMAIN",
+      "color": "#F59E0B",
+      "width": 1,
+      "caption": ""
+    },
+    {
+      "name": "ASSESSES_SKILL",
+      "color": "#EC4899",
+      "width": 1,
+      "caption": ""
+    },
+    {
+      "name": "HAS_DIMENSION",
+      "color": "#C2410C",
+      "width": 2,
+      "caption": ""
+    },
+    {
+      "name": "HAS_PRACTICE",
+      "color": "#0284C7",
+      "width": 2,
+      "caption": ""
+    },
+    {
+      "name": "HAS_CORE_IDEA",
+      "color": "#B45309",
+      "width": 2,
+      "caption": ""
+    },
+    {
+      "name": "HAS_PE",
+      "color": "#6B7280",
+      "width": 1,
+      "caption": ""
+    },
+    {
+      "name": "ALIGNS_TO",
+      "color": "#F59E0B",
+      "width": 3,
+      "caption": "aligns to",
+      "style": "dashed"
+    },
+    {
+      "name": "SOURCED_FROM",
+      "color": "#9CA3AF",
+      "width": 1,
+      "caption": ""
     }
   ],
 
-  "searchPhrases": [
+  "phrases": [
     {
-      "phrase": "Show me {subject} for {key_stage}",
-      "cypher": "MATCH (s:Subject {name: $subject})-[:HAS_PROGRAMME]->(p:Programme) WHERE p.key_stage = $key_stage MATCH path = (p)-[*1..3]->() RETURN path LIMIT 100"
+      "phrase": "Prerequisites for $concept",
+      "cypher": "MATCH path = (prereq:Concept)-[:PREREQUISITE_OF*]->(target:Concept) WHERE target.name CONTAINS $concept RETURN path LIMIT 100"
     },
     {
-      "phrase": "Prerequisites for {concept}",
-      "cypher": "MATCH path = (prereq:Concept)-[:PREREQUISITE_OF*]->(target:Concept) WHERE target.name CONTAINS $concept RETURN path"
+      "phrase": "Show $subject $key_stage",
+      "cypher": "MATCH (p:Programme) WHERE p.subject_name = $subject AND p.key_stage = $key_stage MATCH path = (p)-[*1..3]->() RETURN path LIMIT 200"
+    },
+    {
+      "phrase": "Show $layer layer",
+      "cypher": "MATCH (n) WHERE n.display_category = $layer RETURN n LIMIT 300"
+    },
+    {
+      "phrase": "What does $topic teach",
+      "cypher": "MATCH (t:Topic)-[:TEACHES]->(c:Concept) WHERE t.topic_name CONTAINS $topic RETURN t, c LIMIT 100"
+    },
+    {
+      "phrase": "NGSS practices",
+      "cypher": "MATCH (d:Dimension)-[:HAS_PRACTICE]->(p:Practice) RETURN d, p"
     },
     {
       "phrase": "Compare NGSS to UK science",
-      "cypher": "MATCH (p:Practice) OPTIONAL MATCH (p)-[:ALIGNS_TO]->(c:Concept) RETURN p, c LIMIT 50"
+      "cypher": "MATCH (p:Practice) OPTIONAL MATCH (p)-[:ALIGNS_TO]->(c:Concept) RETURN p, c LIMIT 100"
     },
     {
-      "phrase": "Show {category} layer",
-      "cypher": "MATCH (n) WHERE n.display_category = $category RETURN n LIMIT 200"
-    }
-  ],
-
-  "rules": [
-    {
-      "name": "Highlight cross-cutting concepts",
-      "condition": "node.is_cross_cutting = true",
-      "action": "addBadge",
-      "value": "★"
+      "phrase": "KS2 test coverage",
+      "cypher": "MATCH (tf:TestFramework)-[:HAS_PAPER]->(tp:TestPaper)-[:INCLUDES_CONTENT]->(cdc:ContentDomainCode) RETURN tf, tp, cdc LIMIT 200"
     },
     {
-      "name": "Size by connectivity",
-      "condition": "degree > 10",
-      "action": "setSize",
-      "value": "50"
+      "phrase": "Concepts assessed in KS2",
+      "cypher": "MATCH (cdc:ContentDomainCode)-[:ASSESSES_CONCEPT]->(c:Concept) RETURN cdc, c LIMIT 200"
     }
   ]
 }
