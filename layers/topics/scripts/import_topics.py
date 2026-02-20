@@ -64,7 +64,8 @@ class TopicsImporter:
         """
         result = session.run(
             """
-            MERGE (t:Topic {topic_id: $topic_id})                t.topic_name      = $topic_name,
+            MERGE (t:Topic {topic_id: $topic_id})
+            SET t.topic_name      = $topic_name,
                 t.subject         = $subject,
                 t.key_stage       = $key_stage,
                 t.topic_type      = $topic_type,
