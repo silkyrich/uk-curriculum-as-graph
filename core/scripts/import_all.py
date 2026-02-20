@@ -50,6 +50,11 @@ LAYERS = {
         "depends_on": ["uk-curriculum"],
         "args": ["--import"],  # Oak script requires --import flag
     },
+    "visualization": {
+        "name": "Visualization & Formatting",
+        "script": PROJECT_ROOT / "layers" / "visualization" / "scripts" / "apply_formatting.py",
+        "depends_on": ["uk-curriculum"],  # Runs after data layers; soft dep on all
+    },
 }
 
 
@@ -97,6 +102,7 @@ def main():
     parser = argparse.ArgumentParser(description="Import all knowledge graph layers")
     parser.add_argument("--skip-case", action="store_true", help="Skip CASE Standards layer")
     parser.add_argument("--skip-oak", action="store_true", help="Skip Oak Content layer")
+    parser.add_argument("--skip-viz", action="store_true", help="Skip Visualization & Formatting layer")
     parser.add_argument("--only", help="Only import this layer (e.g., 'uk-curriculum')")
     parser.add_argument("--dry-run", action="store_true", help="Show what would be imported without running")
 
@@ -119,6 +125,8 @@ def main():
             layers_to_import.remove("case-standards")
         if args.skip_oak:
             layers_to_import.remove("oak-content")
+        if args.skip_viz:
+            layers_to_import.remove("visualization")
 
     print(f"\nLayers to import ({len(layers_to_import)}):")
     for layer_id in layers_to_import:
@@ -180,12 +188,8 @@ def main():
         sys.exit(1)
     else:
         print("\n🎉 All layers imported successfully!")
-        print("\nNext steps:")
-        print("  1. Add visualization properties:")
-        print("     python3 core/scripts/add_name_properties.py")
-        print("     python3 core/scripts/add_display_properties.py")
-        print("  2. Validate the graph:")
-        print("     python3 core/scripts/validate_schema.py")
+        print("\nNext step:")
+        print("  python3 core/scripts/validate_schema.py")
 
 
 if __name__ == "__main__":
