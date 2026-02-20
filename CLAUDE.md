@@ -231,7 +231,7 @@ All nodes have `display_category` property:
 - NGSS structure? → `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md`
 - Visualization / Bloom perspectives? → `layers/visualization/`
 - Age-appropriate design / learner profiles? → `layers/learner-profiles/`
-- User stories? → `docs/research/`
+- User stories? → `docs/user-stories/`
 - Schema definition? → `core/scripts/create_schema.py`
 - Import all data? → `core/scripts/import_all.py` (orchestrator)
 
@@ -348,6 +348,7 @@ class LayerImporter:
 3. `layers/uk-curriculum/README.md` - Core layer
 4. `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md` - NGSS structure
 5. `layers/learner-profiles/README.md` - Age-appropriate design layer + agent query patterns
+6. `docs/design/RESEARCH_BRIEFING.md` - Research briefing and rationale for the learner layer
 
 ---
 
