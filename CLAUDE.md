@@ -46,8 +46,11 @@ Each **layer** is self-contained with its own:
 
 6. **`layers/learner-profiles/`** - Age-appropriate design constraints
    - Depends on UK curriculum (links from Year nodes)
-   - 29 InteractionTypes + 9 each of ContentGuideline, PedagogyProfile, FeedbackProfile
-   - Each node has an `agent_prompt` property for direct LLM instruction
+   - 33 InteractionTypes + 9 each of ContentGuideline, PedagogyProfile, FeedbackProfile + 5 PedagogyTechniques
+   - Each node has an `agent_prompt` or `how_to_implement` property for direct LLM instruction
+   - InteractionType PRECEDES chain encodes the interface curriculum (voice → text → analysis)
+   - PedagogyTechnique REQUIRES chain encodes the pedagogy curriculum (spacing → interleaving → ...)
+   - Cross-layer: InteractionType -[:SUPPORTS_LEARNING_OF]-> Subject
    - Script: `import_learner_profiles.py`
 
 7. **`layers/oak-content/`** - Oak National Academy (future)
@@ -169,10 +172,11 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:CrosscuttingConcept`, `:PerformanceExpectation`, `:GradeBand`
 
 **Learner Profiles:**
-- `:InteractionType` — 29 UI/pedagogical patterns (multi-choice, bus stop division, etc.)
+- `:InteractionType` — 33 UI/pedagogical patterns (phoneme splitter, bus stop division, concept mapper, etc.)
 - `:ContentGuideline` — reading level, TTS, vocabulary constraints per Year
 - `:PedagogyProfile` — session structure, productive failure, scaffolding per Year
 - `:FeedbackProfile` — tone, gamification safety, metacognitive prompts per Year
+- `:PedagogyTechnique` — 5 desirable difficulty techniques with evidence base and implementation notes
 
 **NO namespace labels** - Each node has ONE semantic label (e.g., `:Objective`, not `:Curriculum:Objective`)
 
@@ -205,10 +209,16 @@ All nodes have `display_category` property:
 (:Programme)-[:DEVELOPS_SKILL]->(:WorkingScientifically)  // UK ↔ Skills
 
 // Learner profiles (linked from Year)
+(:Year)-[:PRECEDES]->(:Year)                                      // Y1→Y2→...→Y9
 (:Year)-[:HAS_CONTENT_GUIDELINE]->(:ContentGuideline)
 (:Year)-[:HAS_PEDAGOGY_PROFILE]->(:PedagogyProfile)
 (:Year)-[:HAS_FEEDBACK_PROFILE]->(:FeedbackProfile)
 (:Year)-[:SUPPORTS_INTERACTION {primary: bool}]->(:InteractionType)
+(:InteractionType)-[:PRECEDES]->(:InteractionType)                // interface curriculum
+(:InteractionType)-[:SUPPORTS_LEARNING_OF]->(:Subject)           // cross-layer
+(:PedagogyProfile)-[:USES_TECHNIQUE]->(:PedagogyTechnique)
+(:PedagogyProfile)-[:INTRODUCES_TECHNIQUE]->(:PedagogyTechnique) // first year of introduction
+(:PedagogyTechnique)-[:REQUIRES]->(:PedagogyTechnique)           // pedagogy curriculum
 ```
 
 ---
@@ -313,14 +323,17 @@ class LayerImporter:
 - Epistemic Skills
 - Topics
 - CASE Standards (NGSS + Common Core Math)
-- Learner Profiles (56 nodes — InteractionType, ContentGuideline, PedagogyProfile, FeedbackProfile)
-- Visualization (4 Bloom perspectives with icons and styleRules)
+- Learner Profiles (66 nodes — 33 InteractionType, 9 ContentGuideline, 9 PedagogyProfile, 9 FeedbackProfile, 5 PedagogyTechnique)
+- Visualization (5 Bloom perspectives with icons, styleRules, and search templates)
 
-✅ **In Aura cloud database:**
+✅ **In Aura cloud database (needs re-import for learner-profiles):**
 - Instance: education-graphs (6981841e)
-- All layers imported — 3,312 total nodes
+- All layers imported — 3,312 total nodes (before learner-profiles re-import)
 - Visualization properties applied (display_color, display_icon, name)
 - Bloom perspectives uploaded and importable
+
+🔄 **Needs re-import:**
+- Learner Profiles — new nodes (phoneme_splitter, voice_recorder, letter_toggler, concept_mapper) and relationships (PRECEDES, SUPPORTS_LEARNING_OF, INTRODUCES_TECHNIQUE, REQUIRES) added
 
 🚧 **In progress:**
 - Oak National Academy content (skeleton only)

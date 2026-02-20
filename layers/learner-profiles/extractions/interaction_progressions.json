@@ -1,0 +1,135 @@
+{
+  "note": "Defines developmental progression (PRECEDES) between InteractionType nodes. A -[:PRECEDES]-> B means A is the developmental precursor — learners typically master A before B is introduced. This encodes the interaction interface curriculum.",
+  "precedes": [
+    {
+      "from": "letter_toggler",
+      "to": "phoneme_splitter",
+      "notes": "Letter recognition precedes phoneme manipulation"
+    },
+    {
+      "from": "phoneme_splitter",
+      "to": "sentence_assembly",
+      "notes": "Phoneme-level manipulation precedes word/sentence assembly"
+    },
+    {
+      "from": "multi_choice_2",
+      "to": "multi_choice_3",
+      "notes": "Binary choice precedes ternary — increasing cognitive demand"
+    },
+    {
+      "from": "multi_choice_3",
+      "to": "multi_choice_4",
+      "notes": "Standard 4-option format introduced from Y3-Y4"
+    },
+    {
+      "from": "multi_choice_4",
+      "to": "multi_choice_5",
+      "notes": "5-option with None/All adds metacognitive demand (Y5+)"
+    },
+    {
+      "from": "voice_input",
+      "to": "voice_recorder",
+      "notes": "Simple spoken answer precedes recorded explanation with playback"
+    },
+    {
+      "from": "voice_recorder",
+      "to": "text_input_word",
+      "notes": "Oral recording bridges to typed single-word responses"
+    },
+    {
+      "from": "text_input_word",
+      "to": "text_input_phrase",
+      "notes": "Single word expands to short phrase (3-10 words)"
+    },
+    {
+      "from": "text_input_phrase",
+      "to": "text_input_sentence",
+      "notes": "Full sentence requires syntactic construction and punctuation"
+    },
+    {
+      "from": "text_input_sentence",
+      "to": "text_input_paragraph",
+      "notes": "Extended response with claim, evidence, reasoning structure"
+    },
+    {
+      "from": "text_input_paragraph",
+      "to": "code_input",
+      "notes": "Specialist text input for Computing (Y6+)"
+    },
+    {
+      "from": "drag_drop_place",
+      "to": "drag_reorder",
+      "notes": "From placement to sequencing — adds ordinality"
+    },
+    {
+      "from": "drag_reorder",
+      "to": "drag_categorise",
+      "notes": "From linear sequence to multi-category classification"
+    },
+    {
+      "from": "sentence_assembly",
+      "to": "text_input_sentence",
+      "notes": "Constrained tile assembly scaffolds free text production"
+    },
+    {
+      "from": "matching_pairs",
+      "to": "compare_contrast_table",
+      "notes": "Binary match precedes multi-dimensional comparative analysis"
+    },
+    {
+      "from": "drag_categorise",
+      "to": "compare_contrast_table",
+      "notes": "Categorical sorting precedes structured comparison table"
+    },
+    {
+      "from": "number_line_scrubber",
+      "to": "place_value_blocks",
+      "notes": "Linear number exploration precedes place value structure"
+    },
+    {
+      "from": "place_value_blocks",
+      "to": "column_addition",
+      "notes": "Concrete manipulative understanding precedes formal written algorithm"
+    },
+    {
+      "from": "column_addition",
+      "to": "column_subtraction",
+      "notes": "Addition algorithm precedes subtraction with exchange"
+    },
+    {
+      "from": "fraction_visualizer",
+      "to": "area_model_multiplication",
+      "notes": "Part-whole visual model precedes area/array model"
+    },
+    {
+      "from": "area_model_multiplication",
+      "to": "bus_stop_division",
+      "notes": "Multiplicative structure precedes formal division algorithm"
+    },
+    {
+      "from": "text_highlight",
+      "to": "text_annotation",
+      "notes": "Selection and identification precedes annotation and commentary"
+    },
+    {
+      "from": "pattern_discovery",
+      "to": "inference_task",
+      "notes": "Open observation precedes guided Socratic inference chain"
+    },
+    {
+      "from": "inference_task",
+      "to": "compare_contrast_table",
+      "notes": "Single-text inference precedes comparative multi-source analysis"
+    },
+    {
+      "from": "image_annotation",
+      "to": "concept_mapper",
+      "notes": "Labelling features on an image precedes mapping relationships between concepts"
+    },
+    {
+      "from": "text_annotation",
+      "to": "concept_mapper",
+      "notes": "Annotating evidence in text precedes building a relationship map"
+    }
+  ]
+}

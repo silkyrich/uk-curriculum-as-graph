@@ -2384,6 +2384,48 @@
       ],
       "createdAt": 1708387200000,
       "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 31,
+      "name": "PedagogyTechnique",
+      "color": "#3B0764",
+      "icon": "55B42A0C-9B6B-4DD1-9396-5FCA7523E7B5",
+      "labels": [
+        "PedagogyTechnique"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "min_year_appropriate",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "evidence_base",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "how_to_implement",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 3,
+      "styleRules": [],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     }
   ],
   "relationshipTypes": [],

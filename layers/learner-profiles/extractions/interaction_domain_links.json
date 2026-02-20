@@ -1,0 +1,27 @@
+{
+  "note": "Defines cross-layer SUPPORTS_LEARNING_OF relationships from InteractionType to Subject nodes (UK curriculum). Subject IDs match the subject_id property on :Subject nodes. 'All' means universal — not persisted as links. Links are created for specialist or subject-aligned interactions only.",
+  "links": [
+    {"interaction_id": "letter_toggler",              "subject_ids": ["English"]},
+    {"interaction_id": "phoneme_splitter",             "subject_ids": ["English"]},
+    {"interaction_id": "sentence_assembly",            "subject_ids": ["English"]},
+    {"interaction_id": "text_highlight",               "subject_ids": ["English", "History", "Science", "Geography"]},
+    {"interaction_id": "text_annotation",              "subject_ids": ["English", "History"]},
+    {"interaction_id": "inference_task",               "subject_ids": ["English", "Science", "History", "Geography"]},
+    {"interaction_id": "rhythm_analyser",              "subject_ids": ["English"]},
+    {"interaction_id": "voice_recorder",               "subject_ids": ["Science", "English", "Geography", "History"]},
+    {"interaction_id": "number_line_scrubber",         "subject_ids": ["Mathematics"]},
+    {"interaction_id": "bus_stop_division",            "subject_ids": ["Mathematics"]},
+    {"interaction_id": "column_addition",              "subject_ids": ["Mathematics"]},
+    {"interaction_id": "column_subtraction",           "subject_ids": ["Mathematics"]},
+    {"interaction_id": "fraction_visualizer",          "subject_ids": ["Mathematics"]},
+    {"interaction_id": "area_model_multiplication",    "subject_ids": ["Mathematics"]},
+    {"interaction_id": "place_value_blocks",           "subject_ids": ["Mathematics"]},
+    {"interaction_id": "pattern_discovery",            "subject_ids": ["Mathematics", "Science"]},
+    {"interaction_id": "image_annotation",             "subject_ids": ["Science", "Geography", "History"]},
+    {"interaction_id": "drag_categorise",              "subject_ids": ["Science", "Mathematics", "Geography", "History"]},
+    {"interaction_id": "drag_reorder",                 "subject_ids": ["History", "Science", "English"]},
+    {"interaction_id": "compare_contrast_table",       "subject_ids": ["Science", "History", "Geography", "English"]},
+    {"interaction_id": "code_input",                   "subject_ids": ["Computing"]},
+    {"interaction_id": "concept_mapper",               "subject_ids": ["Science", "History", "Geography", "English"]}
+  ]
+}

@@ -44,6 +44,7 @@ def create_schema(driver):
         "CREATE CONSTRAINT content_guideline_year_unique IF NOT EXISTS FOR (c:ContentGuideline) REQUIRE c.year_code IS UNIQUE",
         "CREATE CONSTRAINT pedagogy_profile_year_unique IF NOT EXISTS FOR (p:PedagogyProfile) REQUIRE p.year_code IS UNIQUE",
         "CREATE CONSTRAINT feedback_profile_year_unique IF NOT EXISTS FOR (f:FeedbackProfile) REQUIRE f.year_code IS UNIQUE",
+        "CREATE CONSTRAINT pedagogy_technique_id_unique IF NOT EXISTS FOR (pt:PedagogyTechnique) REQUIRE pt.technique_id IS UNIQUE",
     ]
 
     # Indexes
@@ -74,6 +75,7 @@ def create_schema(driver):
         "CREATE INDEX interaction_type_input_method_idx IF NOT EXISTS FOR (i:InteractionType) ON (i.input_method)",
         "CREATE INDEX content_guideline_tts_required_idx IF NOT EXISTS FOR (c:ContentGuideline) ON (c.tts_required)",
         "CREATE INDEX pedagogy_profile_scaffolding_idx IF NOT EXISTS FOR (p:PedagogyProfile) ON (p.scaffolding_level)",
+        "CREATE INDEX pedagogy_technique_min_year_idx IF NOT EXISTS FOR (pt:PedagogyTechnique) ON (pt.min_year_appropriate)",
     ]
 
     print("Creating constraints...")

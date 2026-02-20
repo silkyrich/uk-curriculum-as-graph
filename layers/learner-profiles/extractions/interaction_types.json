@@ -375,5 +375,57 @@
     "subject_affinity": ["English"],
     "ui_notes": "Text displayed syllable by syllable (split automatically). Tap to toggle stressed/unstressed. Stress marks display above syllables. Play button reads the marked rhythm aloud.",
     "agent_prompt": "First play the poem aloud (TTS with expressive prosody). Ask child to clap along before interacting with the tool. Then ask: 'Which syllables are stronger — tap those to mark them.' After marking, compare to a canonical stress pattern and discuss where the child's interpretation differs."
+  },
+  {
+    "interaction_id": "phoneme_splitter",
+    "name": "Phoneme Splitter",
+    "category": "specialist",
+    "description": "Visual word splitting tool where the word appears as draggable blocks — one block per phoneme (not per letter). Child drags blocks apart to isolate sounds. Tapping a block plays the phoneme audio. Child can build target words by dragging phoneme tiles from a bank. Primary phonics tool for Y1-Y2.",
+    "input_method": "touch_or_mouse",
+    "visual_complexity": 2,
+    "requires_literacy": false,
+    "requires_numeracy": false,
+    "subject_affinity": ["English"],
+    "ui_notes": "Word displayed as coloured draggable blocks — one block per phoneme. Blocks can be dragged apart to separate or pushed together to blend. Tap a block to hear the phoneme. Blended block plays the full word. Separate phoneme tile bank for word-building tasks. Tile colour-coded by phoneme position (initial/medial/final).",
+    "agent_prompt": "Display the target word as phoneme-block tiles. Ask child to drag them apart: 'Can you split this word into its sounds?' Tap each block in sequence to hear the phoneme chain, then drag together and tap to hear the blend. Build from known phonemes: start with the vowel identification task. Use after initial sound exposure, not as first contact with a phoneme. Do not split digraphs (sh, ch, th) — keep them as single tiles."
+  },
+  {
+    "interaction_id": "voice_recorder",
+    "name": "Voice Recorder — Record and Playback",
+    "category": "input",
+    "description": "Record a spoken explanation or observation response. Plays back with waveform visualization and automatic transcription. Used for science observations, oral explanations, and hypothesis recording from Y2 onwards. Bridges the gap between oral capability and written production.",
+    "input_method": "voice",
+    "visual_complexity": 2,
+    "requires_literacy": false,
+    "requires_numeracy": false,
+    "subject_affinity": ["Science", "English", "History", "Geography"],
+    "ui_notes": "Large microphone button with pulsing animation. Live waveform display during recording. Plays back with waveform and transcribed text below. Re-record button always visible. Transcript displayed alongside audio for child to follow. Auto-punctuation in transcript. Option to submit voice or edit transcribed text.",
+    "agent_prompt": "Use for scientific observation recording ('Press the button and tell me what you notice'), hypothesis formation ('Say what you think will happen'), and oral explanation tasks where written production is a barrier. After recording, display the transcription and ask child to confirm: 'Is that what you meant to say?' Prefer voice_recorder over typed answers for Y1-Y3 science, geography, and history observation tasks. Do not require written follow-up unless writing is the assessed skill."
+  },
+  {
+    "interaction_id": "letter_toggler",
+    "name": "Letter Toggler (Tap to Cycle)",
+    "category": "specialist",
+    "description": "Individual letter tiles that cycle through states when tapped: blank → lowercase → uppercase → removed. Used for early letter recognition, capitalization rules, and letter-level phonics tasks in Y1-Y2. Not a spelling tool — use phoneme_splitter or sentence_assembly for those.",
+    "input_method": "tap",
+    "visual_complexity": 1,
+    "requires_literacy": false,
+    "requires_numeracy": false,
+    "subject_affinity": ["English"],
+    "ui_notes": "Large square tiles (min 60x60px). Tap to cycle: empty → lowercase → uppercase → blank (delete). Visual animation on state change. Reads the letter name aloud on each tap. Screen-reader accessible. Arrange in a row for pattern tasks. Maximum 6 tiles visible at once for Y1.",
+    "agent_prompt": "Use for letter recognition and case discrimination tasks only. Present a row of tiles and ask child to tap to match a target pattern: 'Make the letters in a name show their capital form.' Do not use for phoneme discrimination — use phoneme_splitter for that. Do not use for word-building — use sentence_assembly for that. Most appropriate for Y1 letter knowledge and Y2 capitalization rules. Keep tasks concrete: 'Find the letter that starts your name.'"
+  },
+  {
+    "interaction_id": "concept_mapper",
+    "name": "Concept Mapper — Drag to Show Relationships",
+    "category": "higher_order",
+    "description": "Drag concept nodes onto a canvas and draw labelled connections between them to show relationships (causes, supports, is part of, leads to, contrasts with). Used for end-of-unit synthesis and critical thinking tasks from Y5-Y6. Not for initial learning — for consolidation and transfer.",
+    "input_method": "touch_or_mouse",
+    "visual_complexity": 4,
+    "requires_literacy": true,
+    "requires_numeracy": false,
+    "subject_affinity": ["Science", "History", "Geography", "English"],
+    "ui_notes": "Canvas with draggable labelled nodes. Tap two nodes to draw a connection line. Tap the connection line to add a label from a predefined list (causes, is part of, leads to, supports, contrasts with) or freetext for Y6+. Zoom and pan supported. Export as image. Multiple connection types shown in different colours.",
+    "agent_prompt": "Provide 4-8 concept nodes for the child to arrange and connect. Pre-populate 2-3 connections for Y5 to scaffold the task; leave all connections open for Y6+. Relationship label list: causes, is part of, leads to, supports, contrasts with. After submission, compare to a model map and ask: 'What connections did you make that I did not? What did I include that you missed?' Use concept_mapper for end-of-unit synthesis, not during initial learning. Do not introduce both the tool and the concepts simultaneously."
   }
 ]

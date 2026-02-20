@@ -1,0 +1,62 @@
+[
+  {
+    "technique_id": "spacing",
+    "name": "Spaced Practice",
+    "description": "Distributing practice over time rather than massing it in a single session. Creates desirable difficulty through time-based forgetting and subsequent retrieval. The gap between practice sessions is the mechanism — not re-studying, but retrieving after a delay.",
+    "evidence_base": "Ebbinghaus 1885, Cepeda et al. 2006 (meta-analysis, n=317 studies). Effect size d=0.46. Optimal spacing interval increases as retention target increases.",
+    "min_year_appropriate": "Y2",
+    "how_to_implement": "Return to a previously taught concept after a gap of 1-21 days (gap increases as mastery grows). Do not re-teach — retrieve only. The system selects spacing interval based on days since last correct response.",
+    "requires": [],
+    "display_category": "Learner Profile",
+    "display_color": "#7C3AED",
+    "display_icon": "clock"
+  },
+  {
+    "technique_id": "interleaving",
+    "name": "Interleaved Practice",
+    "description": "Mixing different types of problems or concepts within a session rather than blocked practice (all of one type, then all of another). Interleaving requires the learner to identify the problem type before solving — this discrimination step is the source of its effect.",
+    "evidence_base": "Bjork 2011, Rohrer & Taylor 2007, Rohrer et al. 2015. Effect size d=0.42 over blocked practice. Transfer advantage approximately 30-40% on delayed tests.",
+    "min_year_appropriate": "Y3",
+    "how_to_implement": "Mix the current concept with 2-3 previously mastered concepts in the retrieval practice phase of a session. Tell the child: 'You are practising different types of problems — that is what makes you better.' Surface features vary; underlying structure is the same.",
+    "requires": ["spacing"],
+    "display_category": "Learner Profile",
+    "display_color": "#6D28D9",
+    "display_icon": "shuffle"
+  },
+  {
+    "technique_id": "varied_practice",
+    "name": "Varied Practice (Surface Variation)",
+    "description": "Changing the surface features of practice problems (different contexts, numbers, scenarios, word choices) while keeping the underlying structure the same. Forces the learner to identify the deep structure rather than applying a surface-level pattern match.",
+    "evidence_base": "Schmidt & Bjork 1992, Kornell & Bjork 2008. Primary mechanism for transfer to novel problems. Contrast with blocked practice which improves performance during training but not on transfer tests.",
+    "min_year_appropriate": "Y4",
+    "how_to_implement": "Use the same underlying concept but with different surface contexts across practice problems within a session (e.g., fractions with pizzas, then with ribbons, then with time). Do not vary the underlying structure — vary what it is about.",
+    "requires": ["interleaving"],
+    "display_category": "Learner Profile",
+    "display_color": "#5B21B6",
+    "display_icon": "layers"
+  },
+  {
+    "technique_id": "generation_effect",
+    "name": "Generation Effect",
+    "description": "Asking the learner to produce or recall information before it is shown to them. Self-generated items are retained 20-30% better than passively read items. The act of generation — even unsuccessful generation — deepens subsequent encoding when the answer is revealed.",
+    "evidence_base": "Slamecka & Graf 1978, McNamara & Healy 1995. Effect persists even when generation fails (unsuccessful generation followed by feedback shows better retention than study alone).",
+    "min_year_appropriate": "Y5",
+    "how_to_implement": "Before showing the worked example or revealing the formula: 'What do you remember about how [X] works? Say or write it before I show you.' Accept partial and incorrect responses — the generation attempt, not the answer, is the mechanism.",
+    "requires": ["varied_practice"],
+    "display_category": "Learner Profile",
+    "display_color": "#4C1D95",
+    "display_icon": "lightbulb"
+  },
+  {
+    "technique_id": "testing_effect",
+    "name": "Testing Effect (Retrieval-Only Practice)",
+    "description": "Using low-stakes tests as a learning tool, not just assessment. Retrieving information from memory strengthens memory traces more than restudying the material. Once mastery is established, all further exposure should be retrieval-only (no re-teaching).",
+    "evidence_base": "Roediger & Karpicke 2006, Roediger & Butler 2011. Effect size d=0.50-0.80. Effect is largest when retrieval is effortful but successful. Prior retrieval also enhances future learning of related material.",
+    "min_year_appropriate": "Y6",
+    "how_to_implement": "After mastery is established (5+ correct, 80%+ success rate, 2+ session dates), switch to retrieval-only practice for that concept — questions only, no re-study, no worked examples. The spacing schedule continues. Do not re-teach unless mastery drops below threshold.",
+    "requires": ["generation_effect"],
+    "display_category": "Learner Profile",
+    "display_color": "#3B0764",
+    "display_icon": "target"
+  }
+]

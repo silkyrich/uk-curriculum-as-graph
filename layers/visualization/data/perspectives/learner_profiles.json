@@ -874,6 +874,130 @@
       ],
       "createdAt": 1708387200000,
       "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 6,
+      "name": "PedagogyTechnique",
+      "color": "#3B0764",
+      "icon": "55B42A0C-9B6B-4DD1-9396-5FCA7523E7B5",
+      "labels": [
+        "PedagogyTechnique"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "min_year_appropriate",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "evidence_base",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "how_to_implement",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "description",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 3,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#C4B5FD",
+          "minColor": "#C4B5FD",
+          "midColor": "#C4B5FD",
+          "maxColor": "#C4B5FD",
+          "basedOn": "min_year_appropriate_string",
+          "condition": "equals",
+          "conditionValue": "Y2",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#A78BFA",
+          "minColor": "#A78BFA",
+          "midColor": "#A78BFA",
+          "maxColor": "#A78BFA",
+          "basedOn": "min_year_appropriate_string",
+          "condition": "equals",
+          "conditionValue": "Y3",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#7C3AED",
+          "minColor": "#7C3AED",
+          "midColor": "#7C3AED",
+          "maxColor": "#7C3AED",
+          "basedOn": "min_year_appropriate_string",
+          "condition": "equals",
+          "conditionValue": "Y4",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#5B21B6",
+          "minColor": "#5B21B6",
+          "midColor": "#5B21B6",
+          "maxColor": "#5B21B6",
+          "basedOn": "min_year_appropriate_string",
+          "condition": "equals",
+          "conditionValue": "Y5",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#3B0764",
+          "minColor": "#3B0764",
+          "midColor": "#3B0764",
+          "maxColor": "#3B0764",
+          "basedOn": "min_year_appropriate_string",
+          "condition": "equals",
+          "conditionValue": "Y6",
+          "applyColor": true,
+          "applySize": false
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     }
   ],
   "relationshipTypes": [],
@@ -883,7 +1007,7 @@
       "id": "tmpl:lp5",
       "createdAt": 1708387200000,
       "text": "Full profile for $year",
-      "cypher": "MATCH (y:Year {year_id:$year})\nMATCH (y)-[:HAS_CONTENT_GUIDELINE]->(cg)\nMATCH (y)-[:HAS_PEDAGOGY_PROFILE]->(pp)\nMATCH (y)-[:HAS_FEEDBACK_PROFILE]->(fp)\nMATCH (y)-[:SUPPORTS_INTERACTION]->(it)\nRETURN y, cg, pp, fp, it",
+      "cypher": "MATCH (y:Year {year_id:$year})\nMATCH (y)-[:HAS_CONTENT_GUIDELINE]->(cg)\nMATCH (y)-[:HAS_PEDAGOGY_PROFILE]->(pp)\nMATCH (y)-[:HAS_FEEDBACK_PROFILE]->(fp)\nMATCH (y)-[:SUPPORTS_INTERACTION]->(it)\nOPTIONAL MATCH (pp)-[:USES_TECHNIQUE]->(pt)\nRETURN y, cg, pp, fp, it, pt",
       "params": [],
       "hasCypherErrors": false
     },
@@ -920,6 +1044,42 @@
       "createdAt": 1708387200000,
       "text": "Scaffolding by year",
       "cypher": "MATCH (y:Year)-[:HAS_PEDAGOGY_PROFILE]->(pp:PedagogyProfile)\nRETURN y, pp ORDER BY y.year_number",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Pedagogy technique progression",
+      "id": "tmpl:lp10",
+      "createdAt": 1708387200000,
+      "text": "Pedagogy technique progression",
+      "cypher": "MATCH (pt:PedagogyTechnique)\nOPTIONAL MATCH (pt)-[:REQUIRES]->(req:PedagogyTechnique)\nRETURN pt, req",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "When is $technique introduced?",
+      "id": "tmpl:lp11",
+      "createdAt": 1708387200000,
+      "text": "When is $technique introduced?",
+      "cypher": "MATCH (pp:PedagogyProfile)-[:INTRODUCES_TECHNIQUE]->(pt:PedagogyTechnique {technique_id:$technique})\nMATCH (y:Year)-[:HAS_PEDAGOGY_PROFILE]->(pp)\nRETURN y, pp, pt",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Interactions for $subject",
+      "id": "tmpl:lp12",
+      "createdAt": 1708387200000,
+      "text": "Interactions for $subject",
+      "cypher": "MATCH (i:InteractionType)-[:SUPPORTS_LEARNING_OF]->(s:Subject {subject_id:$subject})\nRETURN i, s",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Interaction progression chain",
+      "id": "tmpl:lp13",
+      "createdAt": 1708387200000,
+      "text": "Interaction progression chain",
+      "cypher": "MATCH p=(a:InteractionType)-[:PRECEDES*1..4]->(b:InteractionType)\nRETURN p LIMIT 50",
       "params": [],
       "hasCypherErrors": false
     }

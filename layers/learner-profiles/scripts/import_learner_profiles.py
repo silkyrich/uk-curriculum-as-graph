@@ -3,16 +3,23 @@
 Import learner profile layer.
 
 Creates:
-  :InteractionType nodes  — 29 named UI/pedagogical patterns
-  :ContentGuideline nodes — per year group (reading level, TTS, vocabulary)
-  :PedagogyProfile nodes  — per year group (session length, hints, PF, difficulties)
-  :FeedbackProfile nodes  — per year group (tone, gamification safety, metacognition)
+  :InteractionType nodes     — named UI/pedagogical interaction patterns
+  :ContentGuideline nodes    — per year group (reading level, TTS, vocabulary)
+  :PedagogyProfile nodes     — per year group (session length, hints, PF, difficulties)
+  :FeedbackProfile nodes     — per year group (tone, gamification safety, metacognition)
+  :PedagogyTechnique nodes   — desirable difficulty techniques (spacing, interleaving, etc.)
 
 Relationships:
   (Year)-[:SUPPORTS_INTERACTION {primary: bool}]->(InteractionType)
+  (Year)-[:PRECEDES]->(Year)
   (Year)-[:HAS_CONTENT_GUIDELINE]->(ContentGuideline)
   (Year)-[:HAS_PEDAGOGY_PROFILE]->(PedagogyProfile)
   (Year)-[:HAS_FEEDBACK_PROFILE]->(FeedbackProfile)
+  (InteractionType)-[:PRECEDES]->(InteractionType)
+  (InteractionType)-[:SUPPORTS_LEARNING_OF]->(Subject)
+  (PedagogyProfile)-[:INTRODUCES_TECHNIQUE]->(PedagogyTechnique)
+  (PedagogyProfile)-[:USES_TECHNIQUE]->(PedagogyTechnique)
+  (PedagogyTechnique)-[:REQUIRES]->(PedagogyTechnique)
 
 Usage:
   python3 layers/learner-profiles/scripts/import_learner_profiles.py
@@ -33,8 +40,8 @@ from neo4j import GraphDatabase
 
 EXTRACTIONS = Path(__file__).resolve().parents[1] / "extractions"
 
-DISPLAY_COLOR = "#7C3AED"   # purple — distinct from UK curriculum and CASE layers
-DISPLAY_ICON = "ECB5C9"
+# Year ordering for PRECEDES chain
+YEAR_ORDER = ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Y7", "Y8", "Y9"]
 
 
 def load_json(filename):
@@ -55,8 +62,14 @@ class LearnerProfileImporter:
             "content_guidelines": 0,
             "pedagogy_profiles": 0,
             "feedback_profiles": 0,
+            "pedagogy_techniques": 0,
             "year_interaction_rels": 0,
             "year_profile_rels": 0,
+            "interaction_precedes_rels": 0,
+            "interaction_domain_rels": 0,
+            "technique_requires_rels": 0,
+            "pedagogy_technique_rels": 0,
+            "year_precedes_rels": 0,
         }
 
         interaction_types = load_json("interaction_types.json")
@@ -64,6 +77,16 @@ class LearnerProfileImporter:
         pedagogy_profiles = load_json("pedagogy_profiles.json")
         feedback_profiles = load_json("feedback_profiles.json")
         year_interactions = load_json("year_interactions.json")
+        pedagogy_techniques = load_json("pedagogy_techniques.json")
+        interaction_progressions = load_json("interaction_progressions.json")
+        interaction_domain_links = load_json("interaction_domain_links.json")
+
+        # Build a map of technique first appearance by year (for INTRODUCES_TECHNIQUE)
+        technique_first_year = {}
+        for pp in pedagogy_profiles:
+            for technique_id in pp.get("desirable_difficulties", []):
+                if technique_id not in technique_first_year:
+                    technique_first_year[technique_id] = pp["year_code"]
 
         with self.driver.session() as session:
             # --- InteractionType nodes ---
@@ -85,6 +108,19 @@ class LearnerProfileImporter:
             for fp in feedback_profiles:
                 session.execute_write(self._merge_feedback_profile, fp)
                 stats["feedback_profiles"] += 1
+
+            # --- PedagogyTechnique nodes ---
+            for pt in pedagogy_techniques:
+                session.execute_write(self._merge_pedagogy_technique, pt)
+                stats["pedagogy_techniques"] += 1
+
+            # --- PedagogyTechnique REQUIRES chain ---
+            for pt in pedagogy_techniques:
+                for req_id in pt.get("requires", []):
+                    session.execute_write(
+                        self._merge_technique_requires, pt["technique_id"], req_id
+                    )
+                    stats["technique_requires_rels"] += 1
 
             # --- Year → InteractionType relationships ---
             for mapping in year_interactions["mappings"]:
@@ -108,11 +144,51 @@ class LearnerProfileImporter:
                 session.execute_write(self._merge_profile_rels, year_code)
                 stats["year_profile_rels"] += 3
 
+            # --- Year PRECEDES Year chain ---
+            for i in range(len(YEAR_ORDER) - 1):
+                session.execute_write(
+                    self._merge_year_precedes, YEAR_ORDER[i], YEAR_ORDER[i + 1]
+                )
+                stats["year_precedes_rels"] += 1
+
+            # --- InteractionType PRECEDES chain ---
+            for edge in interaction_progressions["precedes"]:
+                session.execute_write(
+                    self._merge_interaction_precedes,
+                    edge["from"], edge["to"], edge.get("notes", "")
+                )
+                stats["interaction_precedes_rels"] += 1
+
+            # --- InteractionType SUPPORTS_LEARNING_OF Subject ---
+            for link in interaction_domain_links["links"]:
+                for subject_id in link["subject_ids"]:
+                    session.execute_write(
+                        self._merge_interaction_domain_link,
+                        link["interaction_id"], subject_id
+                    )
+                    stats["interaction_domain_rels"] += 1
+
+            # --- PedagogyProfile USES_TECHNIQUE and INTRODUCES_TECHNIQUE ---
+            for pp in pedagogy_profiles:
+                year_code = pp["year_code"]
+                for technique_id in pp.get("desirable_difficulties", []):
+                    session.execute_write(
+                        self._merge_pedagogy_uses_technique,
+                        year_code, technique_id
+                    )
+                    stats["pedagogy_technique_rels"] += 1
+                    # INTRODUCES_TECHNIQUE only for first year this technique appears
+                    if technique_first_year.get(technique_id) == year_code:
+                        session.execute_write(
+                            self._merge_pedagogy_introduces_technique,
+                            year_code, technique_id
+                        )
+                        stats["pedagogy_technique_rels"] += 1
+
         return stats
 
     @staticmethod
     def _merge_interaction_type(tx, it):
-        # Store list properties as JSON strings for portability
         subject_affinity = json.dumps(it.get("subject_affinity", []))
         tx.run(
             """
@@ -318,6 +394,44 @@ class LearnerProfileImporter:
         )
 
     @staticmethod
+    def _merge_pedagogy_technique(tx, pt):
+        requires = json.dumps(pt.get("requires", []))
+        tx.run(
+            """
+            MERGE (n:PedagogyTechnique {technique_id: $technique_id})
+            SET n.name = $name,
+                n.description = $description,
+                n.evidence_base = $evidence_base,
+                n.min_year_appropriate = $min_year_appropriate,
+                n.how_to_implement = $how_to_implement,
+                n.requires_json = $requires_json,
+                n.display_category = 'Learner Profile',
+                n.display_color = '#3B0764',
+                n.display_icon = 'brain',
+                n.name = $name
+            """,
+            technique_id=pt["technique_id"],
+            name=pt["name"],
+            description=pt.get("description", ""),
+            evidence_base=pt.get("evidence_base", ""),
+            min_year_appropriate=pt.get("min_year_appropriate", "Y1"),
+            how_to_implement=pt.get("how_to_implement", ""),
+            requires_json=requires,
+        )
+
+    @staticmethod
+    def _merge_technique_requires(tx, technique_id, required_id):
+        tx.run(
+            """
+            MATCH (a:PedagogyTechnique {technique_id: $technique_id})
+            MATCH (b:PedagogyTechnique {technique_id: $required_id})
+            MERGE (a)-[:REQUIRES]->(b)
+            """,
+            technique_id=technique_id,
+            required_id=required_id,
+        )
+
+    @staticmethod
     def _merge_year_interaction_rel(tx, year_code, interaction_id, primary):
         tx.run(
             """
@@ -358,6 +472,68 @@ class LearnerProfileImporter:
             year_code=year_code,
         )
 
+    @staticmethod
+    def _merge_year_precedes(tx, from_year, to_year):
+        tx.run(
+            """
+            MATCH (a:Year {year_id: $from_year})
+            MATCH (b:Year {year_id: $to_year})
+            MERGE (a)-[:PRECEDES]->(b)
+            """,
+            from_year=from_year,
+            to_year=to_year,
+        )
+
+    @staticmethod
+    def _merge_interaction_precedes(tx, from_id, to_id, notes):
+        tx.run(
+            """
+            MATCH (a:InteractionType {interaction_id: $from_id})
+            MATCH (b:InteractionType {interaction_id: $to_id})
+            MERGE (a)-[r:PRECEDES]->(b)
+            SET r.notes = $notes
+            """,
+            from_id=from_id,
+            to_id=to_id,
+            notes=notes,
+        )
+
+    @staticmethod
+    def _merge_interaction_domain_link(tx, interaction_id, subject_id):
+        tx.run(
+            """
+            MATCH (i:InteractionType {interaction_id: $interaction_id})
+            MATCH (s:Subject {subject_id: $subject_id})
+            MERGE (i)-[:SUPPORTS_LEARNING_OF]->(s)
+            """,
+            interaction_id=interaction_id,
+            subject_id=subject_id,
+        )
+
+    @staticmethod
+    def _merge_pedagogy_uses_technique(tx, year_code, technique_id):
+        tx.run(
+            """
+            MATCH (pp:PedagogyProfile {year_code: $year_code})
+            MATCH (pt:PedagogyTechnique {technique_id: $technique_id})
+            MERGE (pp)-[:USES_TECHNIQUE]->(pt)
+            """,
+            year_code=year_code,
+            technique_id=technique_id,
+        )
+
+    @staticmethod
+    def _merge_pedagogy_introduces_technique(tx, year_code, technique_id):
+        tx.run(
+            """
+            MATCH (pp:PedagogyProfile {year_code: $year_code})
+            MATCH (pt:PedagogyTechnique {technique_id: $technique_id})
+            MERGE (pp)-[:INTRODUCES_TECHNIQUE]->(pt)
+            """,
+            year_code=year_code,
+            technique_id=technique_id,
+        )
+
 
 def main():
     print("=" * 60)
@@ -373,18 +549,19 @@ def main():
 
     print()
     print("Results:")
-    for key, count in stats.items():
-        print(f"  {key}: {count}")
+    node_keys = ["interaction_types", "content_guidelines", "pedagogy_profiles",
+                 "feedback_profiles", "pedagogy_techniques"]
+    rel_keys = ["year_interaction_rels", "year_profile_rels", "year_precedes_rels",
+                "interaction_precedes_rels", "interaction_domain_rels",
+                "technique_requires_rels", "pedagogy_technique_rels"]
+    for key in node_keys + rel_keys:
+        print(f"  {key}: {stats[key]}")
     print()
 
-    total_nodes = (
-        stats["interaction_types"]
-        + stats["content_guidelines"]
-        + stats["pedagogy_profiles"]
-        + stats["feedback_profiles"]
-    )
+    total_nodes = sum(stats[k] for k in node_keys)
+    total_rels = sum(stats[k] for k in rel_keys)
     print(f"  Total nodes created/updated: {total_nodes}")
-    print(f"  Total relationships created/updated: {stats['year_interaction_rels'] + stats['year_profile_rels']}")
+    print(f"  Total relationships created/updated: {total_rels}")
     print()
     print("Done.")
 
