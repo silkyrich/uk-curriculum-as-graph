@@ -6,7 +6,7 @@
 
 A **multi-layer knowledge graph** comparing UK National Curriculum with US standards (NGSS, Common Core) and content providers (Oak National Academy). Built in Neo4j, designed for curriculum research and adaptive learning systems.
 
-**Main use case**: Understand curriculum structure, compare international standards, map learning progressions.
+**Main use case**: Understand curriculum structure, compare international standards, map learning progressions, and generate age-appropriate AI lessons via graph queries.
 
 ---
 
@@ -44,7 +44,13 @@ Each **layer** is self-contained with its own:
    - NGSS 3D model: 8 practices, 41 core ideas, 208 performance expectations
    - Script: `import_case_standards_v2.py`
 
-6. **`layers/oak-content/`** - Oak National Academy (future)
+6. **`layers/learner-profiles/`** - Age-appropriate design constraints
+   - Depends on UK curriculum (links from Year nodes)
+   - 29 InteractionTypes + 9 each of ContentGuideline, PedagogyProfile, FeedbackProfile
+   - Each node has an `agent_prompt` property for direct LLM instruction
+   - Script: `import_learner_profiles.py`
+
+7. **`layers/oak-content/`** - Oak National Academy (future)
    - Content provider mapping
    - Script: `import_oak_content.py`
 
@@ -52,7 +58,7 @@ Each **layer** is self-contained with its own:
 
 - **`core/scripts/`** - Schema, validation, config shared across all layers
 - **`core/migrations/`** - Database migrations (add properties, fix data)
-- **`viz/`** - Bloom perspectives, styling configs
+- **`layers/visualization/`** - Bloom perspectives, display property formatting
 
 ---
 
@@ -93,9 +99,11 @@ python3 layers/topics/scripts/import_topics.py
 # CASE standards (optional, independent)
 python3 layers/case-standards/scripts/import_case_standards_v2.py --import
 
-# Visualization properties (recommended)
-python3 core/migrations/add_name_properties.py
-python3 core/migrations/add_display_properties.py
+# Learner profiles (optional, depends on UK)
+python3 layers/learner-profiles/scripts/import_learner_profiles.py
+
+# Visualization properties (recommended, run last)
+python3 layers/visualization/scripts/apply_formatting.py
 ```
 
 ### 4. Validate
@@ -160,6 +168,12 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:Framework`, `:Dimension`, `:Practice`, `:CoreIdea`
 - `:CrosscuttingConcept`, `:PerformanceExpectation`, `:GradeBand`
 
+**Learner Profiles:**
+- `:InteractionType` — 29 UI/pedagogical patterns (multi-choice, bus stop division, etc.)
+- `:ContentGuideline` — reading level, TTS, vocabulary constraints per Year
+- `:PedagogyProfile` — session structure, productive failure, scaffolding per Year
+- `:FeedbackProfile` — tone, gamification safety, metacognitive prompts per Year
+
 **NO namespace labels** - Each node has ONE semantic label (e.g., `:Objective`, not `:Curriculum:Objective`)
 
 ### Provenance Property
@@ -169,6 +183,7 @@ All nodes have `display_category` property:
 - `"CASE Standards"`
 - `"Epistemic Skills"`
 - `"Assessment"`
+- `"Learner Profile"`
 - `"Structure"`
 
 ### Key Relationships
@@ -188,6 +203,12 @@ All nodes have `display_category` property:
 // Cross-layer alignments
 (:Practice)-[:ALIGNS_TO]->(:Concept)  // NGSS ↔ UK
 (:Programme)-[:DEVELOPS_SKILL]->(:WorkingScientifically)  // UK ↔ Skills
+
+// Learner profiles (linked from Year)
+(:Year)-[:HAS_CONTENT_GUIDELINE]->(:ContentGuideline)
+(:Year)-[:HAS_PEDAGOGY_PROFILE]->(:PedagogyProfile)
+(:Year)-[:HAS_FEEDBACK_PROFILE]->(:FeedbackProfile)
+(:Year)-[:SUPPORTS_INTERACTION {primary: bool}]->(:InteractionType)
 ```
 
 ---
@@ -198,8 +219,9 @@ All nodes have `display_category` property:
 
 - UK curriculum extraction? → `layers/uk-curriculum/`
 - NGSS structure? → `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md`
-- Visualization? → `viz/bloom/`
-- User stories? → `research/learner-layer/user-stories/`
+- Visualization / Bloom perspectives? → `layers/visualization/`
+- Age-appropriate design / learner profiles? → `layers/learner-profiles/`
+- User stories? → `docs/research/`
 - Schema definition? → `core/scripts/create_schema.py`
 - Import all data? → `core/scripts/import_all.py` (orchestrator)
 
@@ -208,6 +230,7 @@ All nodes have `display_category` property:
 - Graph model? → `core/docs/graph_model_overview.md`
 - Layer architecture? → This file (CLAUDE.md)
 - Specific layer? → `layers/{layer-name}/README.md`
+- Learner profile queries? → `layers/learner-profiles/README.md`
 
 ---
 
@@ -264,6 +287,10 @@ class LayerImporter:
 - Read `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md`
 - CASE uses different node types than UK curriculum
 
+**Learner profile relationships missing**
+- Run `python3 layers/learner-profiles/scripts/import_learner_profiles.py`
+- Year nodes link via `year_id` property (e.g. `"Y3"`), not `year_code`
+
 ---
 
 ## Development Workflow
@@ -286,11 +313,14 @@ class LayerImporter:
 - Epistemic Skills
 - Topics
 - CASE Standards (NGSS + Common Core Math)
+- Learner Profiles (56 nodes — InteractionType, ContentGuideline, PedagogyProfile, FeedbackProfile)
+- Visualization (4 Bloom perspectives with icons and styleRules)
 
 ✅ **In Aura cloud database:**
-- Instance: education-graphs
-- All layers imported
-- Visualization properties applied
+- Instance: education-graphs (6981841e)
+- All layers imported — 3,312 total nodes
+- Visualization properties applied (display_color, display_icon, name)
+- Bloom perspectives uploaded and importable
 
 🚧 **In progress:**
 - Oak National Academy content (skeleton only)
@@ -304,6 +334,7 @@ class LayerImporter:
 2. `core/docs/graph_model_overview.md` - Data model
 3. `layers/uk-curriculum/README.md` - Core layer
 4. `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md` - NGSS structure
+5. `layers/learner-profiles/README.md` - Age-appropriate design layer + agent query patterns
 
 ---
 
@@ -314,6 +345,8 @@ class LayerImporter:
 ❌ Create generic "CFItem" blobs - Parse structure intelligently
 ❌ Skip validation - Always run `validate_schema.py`
 ❌ Mix layer data in scripts - Keep layers self-contained
+❌ Add flat age/interaction properties to Year nodes - Use the learner-profiles layer instead
+❌ Match Year nodes on `year_code` - the property is `year_id`
 
 ---
 
