@@ -62,8 +62,7 @@ class TestFrameworkImporter:
     def create_framework(self, session, meta):
         query = """
         MERGE (tf:TestFramework {framework_id: $framework_id})
-        SET tf:Assessment,
-            tf.name = $name,
+        SET tf.name = $name,
             tf.subject = $subject,
             tf.key_stage = $key_stage,
             tf.year_published = $year_published,
@@ -100,8 +99,7 @@ class TestFrameworkImporter:
         session.run("""
             MATCH (c:Curriculum {curriculum_id: 'uk-national-curriculum'})
             MERGE (sd:SourceDocument {document_id: $document_id})
-            SET sd:Assessment,
-                sd.title = $title,
+            SET sd.title = $title,
                 sd.subject = $subject,
                 sd.key_stages = $key_stages,
                 sd.url = $url,
@@ -136,8 +134,7 @@ class TestFrameworkImporter:
         query = """
         MATCH (tf:TestFramework {framework_id: $framework_id})
         MERGE (tp:TestPaper {paper_id: $paper_id})
-        SET tp:Assessment,
-            tp.name = $name,
+        SET tp.name = $name,
             tp.paper_number = $paper_number,
             tp.component_type = $component_type,
             tp.marks = $marks,
@@ -174,8 +171,7 @@ class TestFrameworkImporter:
             # Create/merge the ContentDomainCode node
             session.run("""
                 MERGE (cdc:ContentDomainCode {code_id: $code_id})
-                SET cdc:Assessment,
-                    cdc.code = $code,
+                SET cdc.code = $code,
                     cdc.framework_id = $framework_id,
                     cdc.year = $year,
                     cdc.strand_code = $strand_code,

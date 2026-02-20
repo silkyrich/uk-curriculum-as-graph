@@ -173,7 +173,7 @@ class CaseStandardsImporter:
             # Create Framework node
             framework_id = source_def['framework_id']
             session.run("""
-                MERGE (f:Framework:CASE {framework_id: $framework_id})
+                MERGE (f:Framework {framework_id: $framework_id})
                 SET f.title = $title,
                     f.jurisdiction_id = $jurisdiction_id,
                     f.model_type = 'three_dimensional',
@@ -199,7 +199,7 @@ class CaseStandardsImporter:
                 dimension_id = f"ngss-{dimension_type}"
 
                 session.run("""
-                    MERGE (d:Dimension:CASE {dimension_id: $dimension_id})
+                    MERGE (d:Dimension {dimension_id: $dimension_id})
                     SET d.dimension_name = $dimension_name,
                         d.dimension_type = $dimension_type,
                         d.framework_id = $framework_id
@@ -224,7 +224,7 @@ class CaseStandardsImporter:
             grade_bands = parser.get_grade_bands()
             for gb_code in grade_bands:
                 session.run("""
-                    MERGE (gb:GradeBand:CASE {grade_band_id: $grade_band_id})
+                    MERGE (gb:GradeBand {grade_band_id: $grade_band_id})
                     SET gb.grade_band_code = $grade_band_code,
                         gb.framework_id = $framework_id
                     WITH gb
@@ -247,7 +247,7 @@ class CaseStandardsImporter:
                 grade_band_id = self._map_to_grade_band(edu_levels, 'ngss')
 
                 session.run("""
-                    MERGE (pe:PerformanceExpectation:CASE {pe_id: $pe_id})
+                    MERGE (pe:PerformanceExpectation {pe_id: $pe_id})
                     SET pe.code = $code,
                         pe.statement = $statement,
                         pe.grade_band_id = $grade_band_id,
@@ -286,7 +286,7 @@ class CaseStandardsImporter:
             if stmt in practice_names:
                 practice_id = f"ngss-sep-{practice_num}"
                 session.run("""
-                    MERGE (p:Practice:CASE {practice_id: $practice_id})
+                    MERGE (p:Practice {practice_id: $practice_id})
                     SET p.practice_name = $practice_name,
                         p.practice_number = $practice_number,
                         p.dimension_id = $dimension_id,
@@ -311,7 +311,7 @@ class CaseStandardsImporter:
 
             core_idea_id = f"ngss-{code.lower()}"
             session.run("""
-                MERGE (ci:CoreIdea:CASE {core_idea_id: $core_idea_id})
+                MERGE (ci:CoreIdea {core_idea_id: $core_idea_id})
                 SET ci.code = $code,
                     ci.title = $title,
                     ci.dimension_id = $dimension_id
@@ -332,7 +332,7 @@ class CaseStandardsImporter:
             if stmt and len(stmt) < 100:  # Filter to main concepts (short titles)
                 concept_id = f"ngss-ccc-{ccc_num}"
                 session.run("""
-                    MERGE (c:CrosscuttingConcept:CASE {concept_id: $concept_id})
+                    MERGE (c:CrosscuttingConcept {concept_id: $concept_id})
                     SET c.concept_name = $concept_name,
                         c.concept_number = $concept_number,
                         c.dimension_id = $dimension_id
@@ -368,7 +368,7 @@ class CaseStandardsImporter:
         with self.driver.session() as session:
             framework_id = source_def['framework_id']
             session.run("""
-                MERGE (f:Framework:CASE {framework_id: $framework_id})
+                MERGE (f:Framework {framework_id: $framework_id})
                 SET f.title = $title,
                     f.jurisdiction_id = $jurisdiction_id,
                     f.model_type = 'practice_plus_content',
@@ -386,7 +386,7 @@ class CaseStandardsImporter:
             for i, practice_item in enumerate(practices[:8], 1):  # 8 SMPs
                 practice_id = f"ccss-smp-{i}"
                 session.run("""
-                    MERGE (mp:MathPractice:CASE {practice_id: $practice_id})
+                    MERGE (mp:MathPractice {practice_id: $practice_id})
                     SET mp.practice_number = $practice_number,
                         mp.practice_name = $practice_name,
                         mp.description = $description,
