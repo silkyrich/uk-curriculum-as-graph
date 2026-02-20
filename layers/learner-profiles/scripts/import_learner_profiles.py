@@ -41,7 +41,7 @@ from neo4j import GraphDatabase
 EXTRACTIONS = Path(__file__).resolve().parents[1] / "extractions"
 
 # Year ordering for PRECEDES chain
-YEAR_ORDER = ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Y7", "Y8", "Y9"]
+YEAR_ORDER = ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Y7", "Y8", "Y9", "Y10", "Y11"]
 
 
 def load_json(filename):

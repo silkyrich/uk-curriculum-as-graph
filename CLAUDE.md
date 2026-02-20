@@ -46,7 +46,7 @@ Each **layer** is self-contained with its own:
 
 6. **`layers/learner-profiles/`** - Age-appropriate design constraints
    - Depends on UK curriculum (links from Year nodes)
-   - 33 InteractionTypes + 9 each of ContentGuideline, PedagogyProfile, FeedbackProfile + 5 PedagogyTechniques
+   - 33 InteractionTypes + 11 each of ContentGuideline, PedagogyProfile, FeedbackProfile + 5 PedagogyTechniques
    - Each node has an `agent_prompt` or `how_to_implement` property for direct LLM instruction
    - InteractionType PRECEDES chain encodes the interface curriculum (voice → text → analysis)
    - PedagogyTechnique REQUIRES chain encodes the pedagogy curriculum (spacing → interleaving → ...)
@@ -209,7 +209,7 @@ All nodes have `display_category` property:
 (:Programme)-[:DEVELOPS_SKILL]->(:WorkingScientifically)  // UK ↔ Skills
 
 // Learner profiles (linked from Year)
-(:Year)-[:PRECEDES]->(:Year)                                      // Y1→Y2→...→Y9
+(:Year)-[:PRECEDES]->(:Year)                                      // Y1→Y2→...→Y11
 (:Year)-[:HAS_CONTENT_GUIDELINE]->(:ContentGuideline)
 (:Year)-[:HAS_PEDAGOGY_PROFILE]->(:PedagogyProfile)
 (:Year)-[:HAS_FEEDBACK_PROFILE]->(:FeedbackProfile)
@@ -329,7 +329,7 @@ class LayerImporter:
 - Epistemic Skills
 - Topics
 - CASE Standards (NGSS + Common Core Math)
-- Learner Profiles (66 nodes — 33 InteractionType, 9 ContentGuideline, 9 PedagogyProfile, 9 FeedbackProfile, 5 PedagogyTechnique)
+- Learner Profiles (71 nodes — 33 InteractionType, 11 ContentGuideline, 11 PedagogyProfile, 11 FeedbackProfile, 5 PedagogyTechnique)
 - Visualization (5 Bloom perspectives with icons, styleRules, and search templates)
 
 ✅ **In Aura cloud database — clean full import (2026-02-20):**
