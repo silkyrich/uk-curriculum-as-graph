@@ -1,25 +1,28 @@
 {
   "name": "Science Literacy \u2014 UK vs NGSS",
-  "id": "b0c9c2de-227a-414b-bd9e-fec9b0e34211",
+  "id": "1b8a8830-1f18-4e8e-9a66-5fee5ec85418",
   "version": "1.4.0",
   "categories": [
     {
       "id": 0,
       "name": "Other",
       "color": "#6B7280",
-      "icon": "no-icon",
+      "icon": "F5919855-3157-41C2-B8A4-326AA61BB076",
       "labels": [],
       "properties": [],
       "caption": [
         ""
       ],
-      "size": 1
+      "size": 1,
+      "styleRules": [],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 4,
       "name": "Subject",
       "color": "#DC2626",
-      "icon": "no-icon",
+      "icon": "F5919855-3157-41C2-B8A4-326AA61BB076",
       "labels": [
         "Subject"
       ],
@@ -40,13 +43,32 @@
       "caption": [
         ""
       ],
-      "size": 4
+      "size": 4,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 5,
       "name": "Programme",
       "color": "#1E3A8A",
-      "icon": "no-icon",
+      "icon": "E325B81B-4516-4692-AD86-2D408B2EED9D",
       "labels": [
         "Programme"
       ],
@@ -67,13 +89,212 @@
       "caption": [
         ""
       ],
-      "size": 4
+      "size": 4,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#14B8A6",
+          "minColor": "#14B8A6",
+          "midColor": "#14B8A6",
+          "maxColor": "#14B8A6",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Science",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Mathematics",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "English",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#92400E",
+          "minColor": "#92400E",
+          "midColor": "#92400E",
+          "maxColor": "#92400E",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "History",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#059669",
+          "minColor": "#059669",
+          "midColor": "#059669",
+          "maxColor": "#059669",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Geography",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#4F46E5",
+          "minColor": "#4F46E5",
+          "midColor": "#4F46E5",
+          "maxColor": "#4F46E5",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Computing",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EC4899",
+          "minColor": "#EC4899",
+          "midColor": "#EC4899",
+          "maxColor": "#EC4899",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Art and Design",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#7C3AED",
+          "minColor": "#7C3AED",
+          "midColor": "#7C3AED",
+          "maxColor": "#7C3AED",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Music",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EA580C",
+          "minColor": "#EA580C",
+          "midColor": "#EA580C",
+          "maxColor": "#EA580C",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Physical Education",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#DC2626",
+          "minColor": "#DC2626",
+          "midColor": "#DC2626",
+          "maxColor": "#DC2626",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Design and Technology",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#8B5CF6",
+          "minColor": "#8B5CF6",
+          "midColor": "#8B5CF6",
+          "maxColor": "#8B5CF6",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Languages",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#6B7280",
+          "minColor": "#6B7280",
+          "midColor": "#6B7280",
+          "maxColor": "#6B7280",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Religious Education",
+          "applyColor": true,
+          "applySize": false
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 6,
       "name": "Domain",
       "color": "#8B5CF6",
-      "icon": "no-icon",
+      "icon": "F5919855-3157-41C2-B8A4-326AA61BB076",
       "labels": [
         "Domain"
       ],
@@ -94,13 +315,212 @@
       "caption": [
         ""
       ],
-      "size": 3
+      "size": 3,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#14B8A6",
+          "minColor": "#14B8A6",
+          "midColor": "#14B8A6",
+          "maxColor": "#14B8A6",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Science",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Mathematics",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "English",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#92400E",
+          "minColor": "#92400E",
+          "midColor": "#92400E",
+          "maxColor": "#92400E",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "History",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#059669",
+          "minColor": "#059669",
+          "midColor": "#059669",
+          "maxColor": "#059669",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Geography",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#4F46E5",
+          "minColor": "#4F46E5",
+          "midColor": "#4F46E5",
+          "maxColor": "#4F46E5",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Computing",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EC4899",
+          "minColor": "#EC4899",
+          "midColor": "#EC4899",
+          "maxColor": "#EC4899",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Art and Design",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#7C3AED",
+          "minColor": "#7C3AED",
+          "midColor": "#7C3AED",
+          "maxColor": "#7C3AED",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Music",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EA580C",
+          "minColor": "#EA580C",
+          "midColor": "#EA580C",
+          "maxColor": "#EA580C",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Physical Education",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#DC2626",
+          "minColor": "#DC2626",
+          "midColor": "#DC2626",
+          "maxColor": "#DC2626",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Design and Technology",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#8B5CF6",
+          "minColor": "#8B5CF6",
+          "midColor": "#8B5CF6",
+          "maxColor": "#8B5CF6",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Languages",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 3,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#6B7280",
+          "minColor": "#6B7280",
+          "midColor": "#6B7280",
+          "maxColor": "#6B7280",
+          "basedOn": "subject_name_string",
+          "condition": "equals",
+          "conditionValue": "Religious Education",
+          "applyColor": true,
+          "applySize": false
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 8,
       "name": "Objective",
       "color": "#10B981",
-      "icon": "no-icon",
+      "icon": "158A2E72-4F2A-41ED-AB88-B27557AB55E3",
       "labels": [
         "Objective"
       ],
@@ -121,13 +541,32 @@
       "caption": [
         ""
       ],
-      "size": 2
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 9,
       "name": "Concept",
       "color": "#3B82F6",
-      "icon": "no-icon",
+      "icon": "697105CA-C37F-4B0D-BA33-FD6B7924B9C3",
       "labels": [
         "Concept"
       ],
@@ -148,13 +587,32 @@
       "caption": [
         ""
       ],
-      "size": 2
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 11,
       "name": "WorkingScientifically",
       "color": "#14B8A6",
-      "icon": "no-icon",
+      "icon": "5B3834BA-FBF2-4F63-A7A9-ECC049E8FFBE",
       "labels": [
         "WorkingScientifically"
       ],
@@ -175,13 +633,32 @@
       "caption": [
         ""
       ],
-      "size": 2
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 16,
       "name": "ComputationalThinking",
       "color": "#4F46E5",
-      "icon": "no-icon",
+      "icon": "FCD4E0B9-A86D-4DFB-AB79-3D9E8727E540",
       "labels": [
         "ComputationalThinking"
       ],
@@ -202,13 +679,32 @@
       "caption": [
         ""
       ],
-      "size": 2
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 20,
       "name": "Framework",
       "color": "#EA580C",
-      "icon": "no-icon",
+      "icon": "36ADC22A-4278-4483-8CF4-5CC5F66CA25D",
       "labels": [
         "Framework"
       ],
@@ -229,13 +725,32 @@
       "caption": [
         ""
       ],
-      "size": 5
+      "size": 5,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 21,
       "name": "Dimension",
       "color": "#C2410C",
-      "icon": "no-icon",
+      "icon": "F5919855-3157-41C2-B8A4-326AA61BB076",
       "labels": [
         "Dimension"
       ],
@@ -256,13 +771,32 @@
       "caption": [
         ""
       ],
-      "size": 4
+      "size": 4,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 22,
       "name": "CoreIdea",
       "color": "#B45309",
-      "icon": "no-icon",
+      "icon": "697105CA-C37F-4B0D-BA33-FD6B7924B9C3",
       "labels": [
         "CoreIdea"
       ],
@@ -283,13 +817,32 @@
       "caption": [
         ""
       ],
-      "size": 3
+      "size": 3,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 23,
       "name": "CrosscuttingConcept",
       "color": "#15803D",
-      "icon": "no-icon",
+      "icon": "FCD4E0B9-A86D-4DFB-AB79-3D9E8727E540",
       "labels": [
         "CrosscuttingConcept"
       ],
@@ -310,13 +863,32 @@
       "caption": [
         ""
       ],
-      "size": 2
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     },
     {
       "id": 24,
       "name": "Practice",
       "color": "#0284C7",
-      "icon": "no-icon",
+      "icon": "55B42A0C-9B6B-4DD1-9396-5FCA7523E7B5",
       "labels": [
         "Practice"
       ],
@@ -337,7 +909,26 @@
       "caption": [
         ""
       ],
-      "size": 2
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     }
   ],
   "relationshipTypes": [],
@@ -388,17 +979,8 @@
       "hasCypherErrors": false
     },
     {
-      "name": "Crosscutting concepts",
-      "id": "tmpl:6",
-      "createdAt": 1708387200000,
-      "text": "Crosscutting concepts",
-      "cypher": "MATCH (d:Dimension) OPTIONAL MATCH (d)-[:HAS_CCC]->(ccc:CrosscuttingConcept) RETURN d, ccc",
-      "params": [],
-      "hasCypherErrors": false
-    },
-    {
       "name": "$concept prerequisites",
-      "id": "tmpl:7",
+      "id": "tmpl:6",
       "createdAt": 1708387200000,
       "text": "$concept prerequisites",
       "cypher": "MATCH path=(r:Concept)-[:PREREQUISITE_OF*]->(t:Concept) WHERE t.name CONTAINS $concept RETURN path LIMIT 100",
