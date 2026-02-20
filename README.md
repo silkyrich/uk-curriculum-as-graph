@@ -212,8 +212,8 @@ python3 scripts/import_epistemic_skills.py
 python3 scripts/import_topics.py
 
 # 7. OPTIONAL: Import CASE standards layer (US comparison)
-python3 scripts/import_case_standards.py --fetch    # Download CASE packages
-python3 scripts/import_case_standards.py --import   # Load into Neo4j
+python3 scripts/import_case_standards.py --fetch       # Download CASE packages
+python3 scripts/import_case_standards_v2.py --import   # Load into Neo4j (structured)
 
 # 8. Post-import schema validation (41 checks, includes CASE)
 python3 scripts/validate_schema.py
@@ -273,19 +273,30 @@ LIMIT 5
 
 **US vs UK curriculum structure comparison (CASE layer)**
 ```cypher
-// NGSS 3D learning model vs UK subject-domain model
-MATCH (j:Jurisdiction)-[:PUBLISHES]->(d:CFDocument)-[:CONTAINS_ITEM]->(i:CFItem)
-WHERE i.depth = 1
-RETURN j.name, d.title, collect(i.full_statement) AS top_level_structure
+// NGSS 3D learning model structure
+MATCH (f:Framework {framework_id: 'ngss-science-2013'})-[:HAS_DIMENSION]->(d:Dimension)
+MATCH (d)-[r]->(child)
+RETURN d.dimension_name, type(r) as relationship, count(child) as count
+ORDER BY d.dimension_type
+// Returns: Science and Engineering Practices (8), Disciplinary Core Ideas (41), Crosscutting Concepts (12)
 ```
 
-**NGSS Science Practices aligned to UK Working Scientifically**
+**NGSS Science and Engineering Practices**
 ```cypher
-MATCH (i:CFItem)-[:ALIGNS_TO]->(c:Concept)<-[:HAS_CONCEPT]-(dom:Domain)
-WHERE i.cf_doc_id CONTAINS 'ngss'
-RETURN i.abbreviated_statement AS ngss_practice,
-       c.concept_name AS uk_skill,
-       dom.domain_name
+MATCH (d:Dimension {dimension_type: 'practice'})-[:HAS_PRACTICE]->(p:Practice)
+RETURN p.practice_number, p.practice_name
+ORDER BY p.practice_number
+// Shows all 8 SEPs: Asking Questions, Developing Models, etc.
+```
+
+**Compare NGSS Practices vs UK Working Scientifically**
+```cypher
+// NGSS Practices
+MATCH (p:Practice)
+RETURN p.practice_name AS ngss_practice
+// vs UK Working Scientifically
+MATCH (ws:WorkingScientifically {key_stage: 'KS3'})
+RETURN ws.skill_name AS uk_skill
 ```
 
 More CASE comparison queries in `data/extractions/case/README.md`.
