@@ -1,5 +1,5 @@
 {
-  "name": "UK Curriculum \u2014 Structure",
+  "name": "UK Curriculum — Structure",
   "id": "f45e04cf-e5e5-4bfe-a486-b49817d666a7",
   "version": "1.4.0",
   "categories": [
@@ -138,34 +138,16 @@
           "dataType": "number"
         },
         {
-          "name": "interaction_modes",
+          "name": "key_stage",
           "exclude": false,
           "isCaption": false,
           "dataType": "string"
         },
         {
-          "name": "input_primary",
+          "name": "year_number",
           "exclude": false,
           "isCaption": false,
-          "dataType": "string"
-        },
-        {
-          "name": "input_secondary",
-          "exclude": false,
-          "isCaption": false,
-          "dataType": "string"
-        },
-        {
-          "name": "ui_density",
-          "exclude": false,
-          "isCaption": false,
-          "dataType": "string"
-        },
-        {
-          "name": "ai_prompt_guidance",
-          "exclude": false,
-          "isCaption": false,
-          "dataType": "string"
+          "dataType": "number"
         }
       ],
       "caption": [
@@ -869,6 +851,410 @@
           "applySize": true,
           "minSizeValue": "1",
           "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 11,
+      "name": "InteractionType",
+      "color": "#8B5CF6",
+      "icon": "55B42A0C-9B6B-4DD1-9396-5FCA7523E7B5",
+      "labels": [
+        "InteractionType"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "category",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "input_method",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "requires_literacy",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "requires_numeracy",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "visual_complexity",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "number"
+        },
+        {
+          "name": "agent_prompt",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "ui_notes",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "input",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "selection",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "manipulation",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EF4444",
+          "minColor": "#EF4444",
+          "midColor": "#EF4444",
+          "maxColor": "#EF4444",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "maths_tool",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#A855F7",
+          "minColor": "#A855F7",
+          "midColor": "#A855F7",
+          "maxColor": "#A855F7",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "reading_tool",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EC4899",
+          "minColor": "#EC4899",
+          "midColor": "#EC4899",
+          "maxColor": "#EC4899",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "higher_order",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#14B8A6",
+          "minColor": "#14B8A6",
+          "midColor": "#14B8A6",
+          "maxColor": "#14B8A6",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "specialist",
+          "applyColor": true,
+          "applySize": false
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 12,
+      "name": "ContentGuideline",
+      "color": "#6D28D9",
+      "icon": "97397393-2004-4831-AE5C-A36D965A724E",
+      "labels": [
+        "ContentGuideline"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "reading_level_description",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "tts_required",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "lexile_max",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "number"
+        },
+        {
+          "name": "max_sentence_length_words",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "number"
+        },
+        {
+          "name": "vocabulary_level",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "academic_vocabulary_ok",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "agent_content_prompt",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 3,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#FCD34D",
+          "minColor": "#FCD34D",
+          "midColor": "#FCD34D",
+          "maxColor": "#FCD34D",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "concrete_everyday",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#FDE68A",
+          "minColor": "#FDE68A",
+          "midColor": "#FDE68A",
+          "maxColor": "#FDE68A",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "concrete_plus_simple_abstract",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#D1FAE5",
+          "minColor": "#D1FAE5",
+          "midColor": "#D1FAE5",
+          "maxColor": "#D1FAE5",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "curriculum_vocabulary_supported",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#A7F3D0",
+          "minColor": "#A7F3D0",
+          "midColor": "#A7F3D0",
+          "maxColor": "#A7F3D0",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "curriculum_vocabulary_established",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#6EE7B7",
+          "minColor": "#6EE7B7",
+          "midColor": "#6EE7B7",
+          "maxColor": "#6EE7B7",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "academic_vocabulary_supported",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#34D399",
+          "minColor": "#34D399",
+          "midColor": "#34D399",
+          "maxColor": "#34D399",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "academic_vocabulary_independent",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "secondary_curriculum_vocabulary",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#059669",
+          "minColor": "#059669",
+          "midColor": "#059669",
+          "maxColor": "#059669",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "specialist_secondary_vocabulary",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#047857",
+          "minColor": "#047857",
+          "midColor": "#047857",
+          "maxColor": "#047857",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "gcse_academic_vocabulary",
+          "applyColor": true,
+          "applySize": false
         }
       ],
       "createdAt": 1708387200000,

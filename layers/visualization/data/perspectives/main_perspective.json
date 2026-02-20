@@ -1,5 +1,5 @@
 {
-  "name": "UK Curriculum \u2014 Full Overview",
+  "name": "UK Curriculum — Full Overview",
   "id": "9fb0c42d-f534-4d19-b8f0-6c5aa3ada04d",
   "version": "1.4.0",
   "categories": [
@@ -138,34 +138,16 @@
           "dataType": "number"
         },
         {
-          "name": "interaction_modes",
+          "name": "key_stage",
           "exclude": false,
           "isCaption": false,
           "dataType": "string"
         },
         {
-          "name": "input_primary",
+          "name": "year_number",
           "exclude": false,
           "isCaption": false,
-          "dataType": "string"
-        },
-        {
-          "name": "input_secondary",
-          "exclude": false,
-          "isCaption": false,
-          "dataType": "string"
-        },
-        {
-          "name": "ui_density",
-          "exclude": false,
-          "isCaption": false,
-          "dataType": "string"
-        },
-        {
-          "name": "ai_prompt_guidance",
-          "exclude": false,
-          "isCaption": false,
-          "dataType": "string"
+          "dataType": "number"
         }
       ],
       "caption": [
@@ -1609,6 +1591,799 @@
       ],
       "createdAt": 1708387200000,
       "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 27,
+      "name": "InteractionType",
+      "color": "#8B5CF6",
+      "icon": "55B42A0C-9B6B-4DD1-9396-5FCA7523E7B5",
+      "labels": [
+        "InteractionType"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "category",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "input_method",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "requires_literacy",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "requires_numeracy",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "visual_complexity",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "number"
+        },
+        {
+          "name": "agent_prompt",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "ui_notes",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "input",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "selection",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "manipulation",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EF4444",
+          "minColor": "#EF4444",
+          "midColor": "#EF4444",
+          "maxColor": "#EF4444",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "maths_tool",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#A855F7",
+          "minColor": "#A855F7",
+          "midColor": "#A855F7",
+          "maxColor": "#A855F7",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "reading_tool",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EC4899",
+          "minColor": "#EC4899",
+          "midColor": "#EC4899",
+          "maxColor": "#EC4899",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "higher_order",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#14B8A6",
+          "minColor": "#14B8A6",
+          "midColor": "#14B8A6",
+          "maxColor": "#14B8A6",
+          "basedOn": "category_string",
+          "condition": "equals",
+          "conditionValue": "specialist",
+          "applyColor": true,
+          "applySize": false
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 28,
+      "name": "ContentGuideline",
+      "color": "#6D28D9",
+      "icon": "97397393-2004-4831-AE5C-A36D965A724E",
+      "labels": [
+        "ContentGuideline"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "reading_level_description",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "tts_required",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "lexile_max",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "number"
+        },
+        {
+          "name": "max_sentence_length_words",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "number"
+        },
+        {
+          "name": "vocabulary_level",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "academic_vocabulary_ok",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "agent_content_prompt",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 3,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#FCD34D",
+          "minColor": "#FCD34D",
+          "midColor": "#FCD34D",
+          "maxColor": "#FCD34D",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "concrete_everyday",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#FDE68A",
+          "minColor": "#FDE68A",
+          "midColor": "#FDE68A",
+          "maxColor": "#FDE68A",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "concrete_plus_simple_abstract",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#D1FAE5",
+          "minColor": "#D1FAE5",
+          "midColor": "#D1FAE5",
+          "maxColor": "#D1FAE5",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "curriculum_vocabulary_supported",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#A7F3D0",
+          "minColor": "#A7F3D0",
+          "midColor": "#A7F3D0",
+          "maxColor": "#A7F3D0",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "curriculum_vocabulary_established",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#6EE7B7",
+          "minColor": "#6EE7B7",
+          "midColor": "#6EE7B7",
+          "maxColor": "#6EE7B7",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "academic_vocabulary_supported",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#34D399",
+          "minColor": "#34D399",
+          "midColor": "#34D399",
+          "maxColor": "#34D399",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "academic_vocabulary_independent",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "secondary_curriculum_vocabulary",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#059669",
+          "minColor": "#059669",
+          "midColor": "#059669",
+          "maxColor": "#059669",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "specialist_secondary_vocabulary",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#047857",
+          "minColor": "#047857",
+          "midColor": "#047857",
+          "maxColor": "#047857",
+          "basedOn": "vocabulary_level_string",
+          "condition": "equals",
+          "conditionValue": "gcse_academic_vocabulary",
+          "applyColor": true,
+          "applySize": false
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 29,
+      "name": "PedagogyProfile",
+      "color": "#5B21B6",
+      "icon": "E325B81B-4516-4692-AD86-2D408B2EED9D",
+      "labels": [
+        "PedagogyProfile"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "scaffolding_level",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "session_length_max_minutes",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "number"
+        },
+        {
+          "name": "hint_tiers_max",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "number"
+        },
+        {
+          "name": "productive_failure_appropriate",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "metacognitive_prompts",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "interleaving_appropriate",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "agent_pedagogy_prompt",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 3,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EF4444",
+          "minColor": "#EF4444",
+          "midColor": "#EF4444",
+          "maxColor": "#EF4444",
+          "basedOn": "scaffolding_level_string",
+          "condition": "equals",
+          "conditionValue": "maximum",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#F97316",
+          "minColor": "#F97316",
+          "midColor": "#F97316",
+          "maxColor": "#F97316",
+          "basedOn": "scaffolding_level_string",
+          "condition": "equals",
+          "conditionValue": "moderate_to_high",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#EAB308",
+          "minColor": "#EAB308",
+          "midColor": "#EAB308",
+          "maxColor": "#EAB308",
+          "basedOn": "scaffolding_level_string",
+          "condition": "equals",
+          "conditionValue": "moderate",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#84CC16",
+          "minColor": "#84CC16",
+          "midColor": "#84CC16",
+          "maxColor": "#84CC16",
+          "basedOn": "scaffolding_level_string",
+          "condition": "equals",
+          "conditionValue": "light_to_moderate",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#22C55E",
+          "minColor": "#22C55E",
+          "midColor": "#22C55E",
+          "maxColor": "#22C55E",
+          "basedOn": "scaffolding_level_string",
+          "condition": "equals",
+          "conditionValue": "light",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "scaffolding_level_string",
+          "condition": "equals",
+          "conditionValue": "minimal",
+          "applyColor": true,
+          "applySize": false
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 30,
+      "name": "FeedbackProfile",
+      "color": "#4C1D95",
+      "icon": "158A2E72-4F2A-41ED-AB88-B27557AB55E3",
+      "labels": [
+        "FeedbackProfile"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "ai_tone",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "feedback_style",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "delight_frequency",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "unexpected_delight_safe",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "counter_misconceptions_explicit",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "metacognitive_reflection",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "boolean"
+        },
+        {
+          "name": "agent_feedback_prompt",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 3,
+      "styleRules": [
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#FCD34D",
+          "minColor": "#FCD34D",
+          "midColor": "#FCD34D",
+          "maxColor": "#FCD34D",
+          "basedOn": "ai_tone_string",
+          "condition": "equals",
+          "conditionValue": "warm_nurturing",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#FDE68A",
+          "minColor": "#FDE68A",
+          "midColor": "#FDE68A",
+          "maxColor": "#FDE68A",
+          "basedOn": "ai_tone_string",
+          "condition": "equals",
+          "conditionValue": "warm_encouraging",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#D1FAE5",
+          "minColor": "#D1FAE5",
+          "midColor": "#D1FAE5",
+          "maxColor": "#D1FAE5",
+          "basedOn": "ai_tone_string",
+          "condition": "equals",
+          "conditionValue": "warm_competence_focused",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#A7F3D0",
+          "minColor": "#A7F3D0",
+          "midColor": "#A7F3D0",
+          "maxColor": "#A7F3D0",
+          "basedOn": "ai_tone_string",
+          "condition": "equals",
+          "conditionValue": "respectful_and_precise",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#6EE7B7",
+          "minColor": "#6EE7B7",
+          "midColor": "#6EE7B7",
+          "maxColor": "#6EE7B7",
+          "basedOn": "ai_tone_string",
+          "condition": "equals",
+          "conditionValue": "peer_like_respectful",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#34D399",
+          "minColor": "#34D399",
+          "midColor": "#34D399",
+          "maxColor": "#34D399",
+          "basedOn": "ai_tone_string",
+          "condition": "equals",
+          "conditionValue": "intellectual_peer",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "ai_tone_string",
+          "condition": "equals",
+          "conditionValue": "academic_peer",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#059669",
+          "minColor": "#059669",
+          "midColor": "#059669",
+          "maxColor": "#059669",
+          "basedOn": "ai_tone_string",
+          "condition": "equals",
+          "conditionValue": "academic_critical",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#047857",
+          "minColor": "#047857",
+          "midColor": "#047857",
+          "maxColor": "#047857",
+          "basedOn": "ai_tone_string",
+          "condition": "equals",
+          "conditionValue": "examination_coach",
+          "applyColor": true,
+          "applySize": false
+        }
+      ],
+      "createdAt": 1708387200000,
+      "lastEditedAt": 1708387200000
     }
   ],
   "relationshipTypes": [],
@@ -1682,6 +2457,42 @@
       "createdAt": 1708387200000,
       "text": "KS1 learning journey",
       "cypher": "MATCH (ks:KeyStage)-[:HAS_YEAR]->(y:Year) WHERE ks.name='KS1' MATCH path=(y)-[:HAS_PROGRAMME]->(p)-[*1..3]->() RETURN path LIMIT 200",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Lesson context for $year $subject",
+      "id": "tmpl:lp1",
+      "createdAt": 1708387200000,
+      "text": "Lesson context for $year $subject",
+      "cypher": "MATCH (y:Year {year_id:$year})\nMATCH (y)-[:HAS_CONTENT_GUIDELINE]->(cg)\nMATCH (y)-[:HAS_PEDAGOGY_PROFILE]->(pp)\nMATCH (y)-[:HAS_FEEDBACK_PROFILE]->(fp)\nOPTIONAL MATCH (y)-[:SUPPORTS_INTERACTION {primary:true}]->(it)\nRETURN y, cg, pp, fp, collect(it) AS interactions",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Primary interactions for $year",
+      "id": "tmpl:lp2",
+      "createdAt": 1708387200000,
+      "text": "Primary interactions for $year",
+      "cypher": "MATCH (y:Year {year_id:$year})-[:SUPPORTS_INTERACTION {primary:true}]->(i:InteractionType)\nRETURN y, i",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Interactions by category $category",
+      "id": "tmpl:lp3",
+      "createdAt": 1708387200000,
+      "text": "Interactions by category $category",
+      "cypher": "MATCH (y:Year)-[:SUPPORTS_INTERACTION]->(i:InteractionType {category:$category})\nRETURN y, i",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Years requiring TTS",
+      "id": "tmpl:lp4",
+      "createdAt": 1708387200000,
+      "text": "Years requiring TTS",
+      "cypher": "MATCH (y:Year)-[:HAS_CONTENT_GUIDELINE]->(cg:ContentGuideline {tts_required:true})\nRETURN y, cg",
       "params": [],
       "hasCypherErrors": false
     }
