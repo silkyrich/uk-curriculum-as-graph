@@ -13,6 +13,7 @@ Product thinking and design rationale — documents describing *why* the system 
 |---|---|
 | `INTERACTION_MODES.md` | Interaction modes taxonomy — voice, text, analysis |
 | `RESEARCH_BRIEFING.md` | Research briefing for the learner profiles layer |
+| `PLAN_POST_KS3.md` | KS4 extension plan — phased approach, GCSE layer architecture |
 
 ---
 
