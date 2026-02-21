@@ -754,6 +754,342 @@
       "relationship_type": "instructional",
       "strength": 0.7,
       "rationale": "Understanding the nervous system and how signals travel from receptors to effectors provides the framework for understanding the endocrine system as an alternative (slower, longer-lasting) communication system for homeostasis."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C026",
+      "dependent_concept": "BI-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.95,
+      "rationale": "KS3 introduces basic cell structure (nucleus, cell membrane, cytoplasm, mitochondria, chloroplasts, cell wall, vacuole). KS4 Biology extends this to a mechanistic distinction between eukaryotic and prokaryotic cells with subcellular detail; the KS3 foundation is essential."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C028",
+      "dependent_concept": "BI-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers the distinction between plant and animal cells (cell wall, chloroplasts, vacuole present in plants). KS4 Biology formalises this into the eukaryote/prokaryote framework, requiring the prior descriptive knowledge as a starting point."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C029",
+      "dependent_concept": "BI-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces the function of each subcellular organelle. KS4 Biology builds directly on this by requiring mechanistic explanation of why prokaryotes lack mitochondria and a membrane-bound nucleus."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C026",
+      "dependent_concept": "BI-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "Understanding that all organisms are made of cells (KS3) is the foundation for understanding cell specialisation and differentiation at KS4 — students cannot explain how cells become specialised without knowing what a generic cell looks like."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C032",
+      "dependent_concept": "BI-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 covers the levels of biological organisation (cells, tissues, organs, organ systems). KS4 cell specialisation and differentiation requires this hierarchical framework as context for why cells need to become specialised."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C026",
+      "dependent_concept": "BI-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces cells as the basic unit of life. KS4 mitosis and the cell cycle requires understanding what a cell is before studying how cells divide to produce new cells for growth and repair."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C062",
+      "dependent_concept": "BI-KS4-C003",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces the concept of chromosomes and DNA as carrying hereditary information. KS4 mitosis requires understanding that chromosomes must be replicated and distributed equally to daughter cells during cell division."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C030",
+      "dependent_concept": "BI-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces diffusion as the net movement of particles from high to low concentration. KS4 Diffusion, Osmosis and Active Transport directly extends this by adding osmosis (special case for water) and active transport, building on the KS3 particle model."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C026",
+      "dependent_concept": "BI-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "Understanding the cell membrane as a partially permeable barrier (introduced at KS3) is essential prerequisite knowledge for explaining osmosis and active transport across cell membranes at KS4."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C039",
+      "dependent_concept": "BI-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces the digestive system including the small intestine and absorption of food. KS4 Enzymes and Digestion builds on this by requiring mechanistic understanding of specific enzymes and their substrates, optimum conditions, and denaturation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C040",
+      "dependent_concept": "BI-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces enzymes as biological catalysts that break down food molecules in digestion. KS4 extends this to a full mechanistic treatment of enzyme-substrate specificity, lock-and-key model, and quantitative effects of pH and temperature."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C032",
+      "dependent_concept": "BI-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers the organisation of cells into tissues, organs and organ systems, including the concept of the circulatory system. KS4 Heart and Circulatory System requires this prior understanding of organ-level organisation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C043",
+      "dependent_concept": "BI-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces the heart and circulatory system, including the role of the heart as a pump and the distinction between oxygenated and deoxygenated blood. KS4 builds on this with a detailed structural and mechanistic account of the double circulatory system."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C046",
+      "dependent_concept": "BI-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces plant nutrition including the uptake of water and mineral salts through roots and transport upwards. KS4 Transpiration and Plant Transport extends this to a mechanistic account of xylem and phloem and the transpiration stream."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C042",
+      "dependent_concept": "BI-KS4-C007",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 covers gas exchange in plants and the role of stomata. KS4 transpiration is directly linked to stomatal opening and closing as the mechanism by which water vapour is lost; KS3 gas exchange provides the foundational understanding of stomata."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C030",
+      "dependent_concept": "BI-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces diffusion. KS4 water movement into root hair cells by osmosis and upward movement through xylem requires understanding diffusion and osmosis as concentration gradient-driven processes."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C026",
+      "dependent_concept": "BI-KS4-C008",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces microorganisms and disease at a basic level. KS4 Pathogens and Communicable Disease requires distinguishing four types of pathogen and their mechanisms of harm, directly extending from the introductory KS3 treatment."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C026",
+      "dependent_concept": "BI-KS4-C009",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 introduces white blood cells and the immune response as part of body defences. KS4 Immune System and Vaccination builds on this with a detailed account of phagocytosis, antibody production and memory cells."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C051",
+      "dependent_concept": "BI-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.95,
+      "rationale": "KS3 introduces the word equation for photosynthesis. KS4 Photosynthesis extends this to a balanced symbol equation and requires quantitative understanding of limiting factors — the KS3 equation is the essential starting point."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C053",
+      "dependent_concept": "BI-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers leaf adaptations for photosynthesis including the role of chloroplasts and stomata. KS4 builds directly on this when explaining limiting factors that affect the rate of photosynthesis in the context of leaf structure."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C052",
+      "dependent_concept": "BI-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 establishes why photosynthesis is important for plants and food chains. KS4 extends this to a full account of how glucose from photosynthesis is used in respiration, starch storage, cellulose synthesis and other biological molecules."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C054",
+      "dependent_concept": "BI-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.95,
+      "rationale": "KS3 introduces the word equation for aerobic respiration. KS4 Aerobic and Anaerobic Respiration extends this to balanced symbol equations and connects respiration to ATP production and metabolic processes."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C055",
+      "dependent_concept": "BI-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces anaerobic respiration and fermentation in yeast and muscles. KS4 extends this by requiring pupils to distinguish the products in animals (lactic acid) and yeast (ethanol and CO2), and explain oxygen debt."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C056",
+      "dependent_concept": "BI-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces the comparison between aerobic and anaerobic respiration in terms of energy release and products. KS4 requires a more precise and quantitative version of this comparison including ATP yield and oxygen debt."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C032",
+      "dependent_concept": "BI-KS4-C012",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces organ systems and their coordination. KS4 Nervous System and Reflex Arcs requires understanding that the brain and spinal cord are organs within a system before studying the detailed neural pathway of a reflex arc."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C039",
+      "dependent_concept": "BI-KS4-C013",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces digestion and absorption of glucose. KS4 Blood Glucose Regulation requires understanding that glucose is absorbed into the blood after digestion as the starting point for explaining why blood glucose needs to be regulated."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C040",
+      "dependent_concept": "BI-KS4-C013",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 introduces enzymes and their role in digestion. KS4 Blood Glucose Regulation involves hormonal control where insulin and glucagon regulate enzymatic conversion of glucose to glycogen; the KS3 enzyme concept supports this mechanistic understanding."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C062",
+      "dependent_concept": "BI-KS4-C014",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces DNA as the molecule carrying genetic information in the nucleus. KS4 DNA Structure and Protein Synthesis extends this to the double helix structure, complementary base pairing, and the mechanism of transcription and translation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C061",
+      "dependent_concept": "BI-KS4-C014",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces heredity and the idea that characteristics are passed from parents to offspring via genes. KS4 DNA Structure and Protein Synthesis provides the molecular mechanism underpinning heredity, making the KS3 concept a logical precursor."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C061",
+      "dependent_concept": "BI-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces the concept of genes, chromosomes and sexual reproduction including that offspring inherit characteristics from both parents. KS4 Mendelian Genetics builds directly on this to explain alleles, dominance and Punnett squares."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C062",
+      "dependent_concept": "BI-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces variation (genetic and environmental) and the idea that variation arises from sexual reproduction mixing DNA. KS4 genetics requires understanding that alleles are alternative versions of a gene, building on the KS3 introduction to genetic variation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C064",
+      "dependent_concept": "BI-KS4-C015",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces variation types including continuous and discontinuous variation. KS4 Mendelian genetics uses these concepts when explaining monohybrid ratios (discontinuous variation from dominant/recessive alleles)."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C065",
+      "dependent_concept": "BI-KS4-C016",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.95,
+      "rationale": "KS3 introduces natural selection and adaptation as mechanisms of evolution. KS4 Evolution by Natural Selection extends this to the full four-component argument (variation, heritability, differential survival, allele frequency change) and speciation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C064",
+      "dependent_concept": "BI-KS4-C016",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers variation within species, including heritable genetic variation. KS4 evolution requires understanding that natural selection acts on heritable variation — the KS3 concept of variation is a direct prerequisite."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C066",
+      "dependent_concept": "BI-KS4-C016",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 covers extinction as the outcome for species that cannot adapt. KS4 evolution deepens understanding of why species become extinct (failure of natural selection to produce sufficient adaptive variation in a changing environment)."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C057",
+      "dependent_concept": "BI-KS4-C017",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces the interdependence of organisms in ecosystems. KS4 Ecosystems and Interdependence extends this to quantitative energy transfer through food chains, trophic levels and the calculation of energy transfer efficiency."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C058",
+      "dependent_concept": "BI-KS4-C017",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers food webs and the effects of changes in population on other organisms. KS4 Ecosystems builds on this by requiring pupils to analyse more complex ecological relationships and explain population dynamics using food web data."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C059",
+      "dependent_concept": "BI-KS4-C017",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 covers pollination and food security as aspects of ecosystem services. KS4 Ecosystems extends the concept of interdependence to quantitative ecosystem analysis."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C060",
+      "dependent_concept": "BI-KS4-C017",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 covers the role of environmental factors in determining where organisms live. KS4 Ecosystems requires understanding of abiotic and biotic factors as determinants of distribution and abundance, building on the KS3 introduction."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C067",
+      "dependent_concept": "BI-KS4-C018",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 covers biodiversity and its importance for ecosystem stability and human wellbeing. KS4 Biodiversity and Human Impact extends this to evaluate conservation strategies and quantify the impact of human activities on biodiversity loss."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C057",
+      "dependent_concept": "BI-KS4-C018",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces ecosystem interdependence. KS4 Biodiversity requires understanding why loss of species threatens ecosystem stability, which depends on understanding the interdependencies established at KS3."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C065",
+      "dependent_concept": "BI-KS4-C018",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 introduces adaptation and the scientific basis for biodiversity as the accumulated product of natural selection. KS4 Biodiversity connects conservation value to the evolutionary history embedded in species diversity."
     }
   ]
 }

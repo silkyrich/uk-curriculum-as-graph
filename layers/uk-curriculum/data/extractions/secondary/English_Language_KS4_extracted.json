@@ -530,6 +530,350 @@
       "relationship_type": "instructional",
       "strength": 0.7,
       "rationale": "Language analysis (AO2) requires students to comment on vocabulary choices with precision. A secure understanding of vocabulary — denotation, connotation, semantic fields — enables more sophisticated analytical commentary."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C010",
+      "dependent_concept": "ENL-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops complex inference from textual evidence. KS4 Explicit and Implicit Meaning extends this to synthesising and interpreting information across longer and more demanding texts, requiring the KS3 inference skill as a foundation."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C011",
+      "dependent_concept": "ENL-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops the ability to support interpretations with textual evidence and quotation. KS4 reading comprehension requires this same evidence-based approach but applied to more complex and challenging texts."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C015",
+      "dependent_concept": "ENL-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces figurative language analysis including metaphor, simile and symbolism. KS4 Language Analysis builds on this by requiring students to evaluate the effect of specific language choices using precise subject terminology."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C016",
+      "dependent_concept": "ENL-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops analysis of vocabulary choices and their connotations. KS4 Language Analysis (AO2) extends this to a more rigorous evaluative standard, requiring the KS3 analytical vocabulary as prerequisite."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C017",
+      "dependent_concept": "ENL-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops analysis of grammatical choices and their effects on meaning. KS4 Language Analysis requires this ability to connect form to effect, building on KS3 grammatical analysis skills."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C061",
+      "dependent_concept": "ENL-KS4-C002",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 develops literary and grammatical terminology for discussing language. KS4 Language Analysis requires confident deployment of subject terminology, making the KS3 terminology development a prerequisite."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C018",
+      "dependent_concept": "ENL-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces analysis of text structure and organisation at the whole-text level. KS4 Structural Analysis (AO2) extends this to a systematic account of how writers structure whole texts and openings, endings and shifts, building directly on KS3."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C022",
+      "dependent_concept": "ENL-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops plot structure analysis. KS4 Structural Analysis requires understanding of narrative structure (how stories are ordered and paced) which is first developed through KS3 plot analysis."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C021",
+      "dependent_concept": "ENL-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces analysis of setting and how writers use setting structurally. KS4 Structural Analysis includes analysis of how writers use setting and focus at different points in a text."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C010",
+      "dependent_concept": "ENL-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops complex inference. KS4 Critical Evaluation (AO4) requires students to judge how effectively a writer achieves an effect, which depends on the ability to read inferentially developed at KS3."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C026",
+      "dependent_concept": "ENL-KS4-C004",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces cross-textual comparison and evaluative reading across authors. KS4 Critical Evaluation extends this comparative and evaluative stance to assess how convincingly an individual writer achieves their purpose."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C026",
+      "dependent_concept": "ENL-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops the ability to compare texts by different authors. KS4 Comparing Writers' Perspectives (AO3) requires comparing perspectives and methods across two texts, directly extending the cross-textual comparison skills developed at KS3."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C013",
+      "dependent_concept": "ENL-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops understanding of historical and cultural context for reading. KS4 Comparing Writers' Perspectives requires contextual understanding of texts from different periods, including the 19th century, making KS3 contextual reading a prerequisite."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C012",
+      "dependent_concept": "ENL-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 develops analysis of purpose and audience in reading. KS4 Comparing Writers' Perspectives requires students to identify and compare what different writers are trying to achieve and for whom, making KS3 purpose/audience analysis a prerequisite."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C002",
+      "dependent_concept": "ENL-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops knowledge of pre-1914 literature and contextual reading of historical texts. KS4 19th-Century Non-Fiction Texts requires the ability to read texts from very different historical contexts, directly requiring the KS3 introduction to pre-1914 literature."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C013",
+      "dependent_concept": "ENL-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops understanding of historical and cultural context for interpreting texts. KS4 19th-Century Non-Fiction requires precisely this contextual reading skill applied to Victorian and earlier texts."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C012",
+      "dependent_concept": "ENL-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops the ability to identify and analyse purpose and audience in reading. KS4 Audience/Purpose/Form requires this analytical framework as a prerequisite before students can match writing choices to specific audience and purpose demands."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C039",
+      "dependent_concept": "ENL-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces form selection for writing — choosing the appropriate genre and format. KS4 Audience/Purpose/Form extends this to a systematic understanding of how form, purpose and audience interact in GCSE writing tasks."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C044",
+      "dependent_concept": "ENL-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 develops awareness of audience in writing, adapting content and tone. KS4 Audience/Purpose/Form requires a more sophisticated application of audience awareness across a range of formal and informal contexts."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C042",
+      "dependent_concept": "ENL-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops argumentative writing skills including the use of evidence and logical structure. KS4 Rhetorical Devices and Persuasion extends this to a wider repertoire of rhetorical techniques used in persuasive and discursive writing."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C035",
+      "dependent_concept": "ENL-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces argumentative writing including letter writing and persuasion. KS4 Rhetorical Devices builds on this introduction by formalising the repertoire of techniques used for persuasion."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C043",
+      "dependent_concept": "ENL-KS4-C008",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 develops purpose awareness in writing. KS4 Rhetorical Devices are purposefully selected to achieve specific effects on a target audience — purpose awareness is a prerequisite for this deliberate deployment."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C031",
+      "dependent_concept": "ENL-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops creative story writing including narrative technique and imaginative use of language. KS4 Narrative and Descriptive Writing extends this to a more sophisticated level required for GCSE Paper 1, where extended writing quality is assessed."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C043",
+      "dependent_concept": "ENL-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 develops awareness of writing purpose. KS4 Narrative and Descriptive Writing requires students to make deliberate purpose-driven choices about how to engage and affect their reader."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C021",
+      "dependent_concept": "ENL-KS4-C009",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 develops analysis and use of setting in narrative. KS4 Descriptive Writing is built around the evocation of setting and atmosphere, making KS3 understanding of setting a direct prerequisite."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C028",
+      "dependent_concept": "ENL-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops formal expository essay writing. KS4 Transactional Writing includes a range of formal non-fiction genres (letters, articles, speeches, reports) that build on the KS3 foundation of formal structured writing."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C035",
+      "dependent_concept": "ENL-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops letter writing and argumentative writing for specific purposes and audiences. KS4 Transactional Writing extends these skills to the full range of GCSE non-fiction forms."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C036",
+      "dependent_concept": "ENL-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces summarisation and information selection. KS4 Transactional Writing requires selecting and structuring information effectively for specific non-fiction forms, building on the KS3 summarisation skill."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C065",
+      "dependent_concept": "ENL-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops formal speech structure, including clarity of expression and maintaining focus. KS4 Formal Presentation and Speech extends this to a more polished and sustained level required for the GCSE spoken language endorsement."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C060",
+      "dependent_concept": "ENL-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops the ability to use Standard English in formal spoken contexts. KS4 Formal Presentation requires consistent use of spoken Standard English in structured and assessed contexts."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C083",
+      "dependent_concept": "ENL-KS4-C011",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 develops speaking confidence and willingness to engage with formal spoken tasks. KS4 Formal Presentation requires students to present independently to an audience, requiring the speaking confidence established at KS3."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C068",
+      "dependent_concept": "ENL-KS4-C012",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops formal debate and structured discussion skills. KS4 Discussion/Debate/Collaborative Talk extends these directly to the more formally assessed contexts of GCSE spoken language."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C069",
+      "dependent_concept": "ENL-KS4-C012",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops skills for building on others' contributions in discussion and summarising spoken contributions. KS4 Discussion and Collaborative Talk requires these listening and responding skills as prerequisites."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C071",
+      "dependent_concept": "ENL-KS4-C012",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 develops collaborative discussion skills and participation in structured group talk. KS4 Collaborative Talk extends these skills to more extended and independently managed discussion contexts."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C041",
+      "dependent_concept": "ENL-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops grammatical variety in writing including clause manipulation and complex sentence construction. KS4 Sentence Structure and Syntax for Effect requires this KS3 grammatical facility as prerequisite for the deliberate stylistic use of syntax."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C053",
+      "dependent_concept": "ENL-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops grammatical accuracy in writing. KS4 Sentence Structure for Effect requires accuracy before stylistic variation — students must be able to write correctly before they can vary syntax deliberately for effect."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C050",
+      "dependent_concept": "ENL-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces advanced punctuation including semi-colons, colons and dashes. KS4 Sentence Structure for Effect requires control of these punctuation marks before complex syntactic structures can be deployed accurately."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C008",
+      "dependent_concept": "ENL-KS4-C014",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 develops contextual vocabulary knowledge through wide reading, including inferring meaning from context. KS4 Vocabulary Range and Precision builds on this by requiring students to deploy a wide and precisely chosen vocabulary in their own writing."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C040",
+      "dependent_concept": "ENL-KS4-C014",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops sophisticated vocabulary use in writing. KS4 Vocabulary Range and Precision extends this to the highest level required for GCSE writing, requiring the KS3 vocabulary development as a foundation."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C047",
+      "dependent_concept": "ENL-KS4-C014",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 develops vocabulary refinement through drafting and editing. KS4 Vocabulary Range requires students to select vocabulary with precision, which requires the revision and refinement processes established at KS3."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C049",
+      "dependent_concept": "ENL-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces advanced spelling patterns and morphological awareness. KS4 Punctuation and Spelling Accuracy requires correct spelling of a wide vocabulary range, building on the KS3 advanced spelling work."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C050",
+      "dependent_concept": "ENL-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces advanced punctuation marks. KS4 Punctuation Accuracy requires confident use of the full range of punctuation including semi-colons, colons, dashes and brackets, directly building on KS3 punctuation development."
+    },
+    {
+      "prerequisite_concept": "EN-KS3-C051",
+      "dependent_concept": "ENL-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 develops grammatical accuracy in writing. KS4 technical accuracy requirements directly build on the grammatical accuracy standards established through KS3, as GCSE AO6 requires consistent accuracy across extended writing."
     }
   ]
 }

@@ -761,14 +761,22 @@ class CurriculumImporter:
                 )
 
         print(f"    + {len(data.get('concepts', []))} concepts")
+        # Prerequisites are created in Pass 2 (import_prerequisites_from_data)
+        # after all concepts exist — do not process them here.
 
-        # ---- F. Prerequisite relationships ----------------------------------
+    def import_prerequisites_from_data(self, session, data):
+        """
+        Second-pass prerequisite import. Called after ALL concepts exist so that
+        cross-KS references (e.g. SC-KS3 -> BI-KS4) resolve correctly regardless
+        of file processing order.
+        """
         prereq_list = (
             data.get("prerequisite_relationships")
             or data.get("prerequisites")
             or data.get("prerequisite_relations", [])
         )
 
+        created = 0
         for prereq in prereq_list:
             prerequisite_id = prereq.get("prerequisite_concept") or prereq.get("source_concept_id")
             dependent_id = prereq.get("dependent_concept") or prereq.get("target_concept_id")
@@ -804,18 +812,29 @@ class CurriculumImporter:
 
             if result.single():
                 self.stats["prerequisites"] += 1
+                created += 1
 
-        print(f"    + {len(prereq_list)} prerequisites")
+        return created
 
     # -------------------------------------------------------------------------
     # Main entry point
     # -------------------------------------------------------------------------
 
     def import_all_extractions(self):
-        """Import all JSON files from extractions directory."""
+        """Import all JSON files from extractions directory.
+
+        Uses a two-pass approach:
+          Pass 1 — create all nodes (concepts, objectives, domains, programmes)
+          Pass 2 — create all PREREQUISITE_OF relationships
+
+        This ensures cross-KS prerequisites (e.g. SC-KS3 -> BI-KS4) resolve
+        correctly regardless of alphabetical file processing order.
+        """
         print("\n" + "=" * 60)
         print("IMPORTING CURRICULUM DATA (v3.0 - Programme model)")
         print("=" * 60)
+
+        all_data = []
 
         with self.driver.session() as session:
             # Create foundational / structural nodes
@@ -828,7 +847,7 @@ class CurriculumImporter:
             print("\nCreating SourceDocument nodes from metadata.json...")
             self.create_source_documents(session)
 
-            # Import subjects / programmes from extraction files
+            # Pass 1: Import subjects/programmes/concepts (no prerequisites yet)
             print("\nImporting subjects (creating Programme nodes)...")
 
             for subdir in ["primary", "secondary"]:
@@ -842,8 +861,15 @@ class CurriculumImporter:
                         with open(json_file, "r") as f:
                             data = json.load(f)
                         self.import_subject(session, data)
+                        all_data.append(data)
                     except Exception as e:
                         print(f"  ! Error importing {json_file.name}: {e}")
+
+            # Pass 2: Create all prerequisites now that all concepts exist
+            print("\nPass 2: Creating prerequisite relationships (cross-KS aware)...")
+            for data in all_data:
+                n = self.import_prerequisites_from_data(session, data)
+            print(f"  + {self.stats['prerequisites']} total prerequisites created")
 
         # Print summary
         print("\n" + "=" * 60)

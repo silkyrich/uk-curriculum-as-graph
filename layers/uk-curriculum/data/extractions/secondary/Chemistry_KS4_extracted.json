@@ -694,6 +694,262 @@
       "relationship_type": "conceptual",
       "strength": 0.6,
       "rationale": "Understanding the environmental impact of greenhouse gas emissions provides the motivation for life cycle assessment as a tool for comparing the sustainability of different materials and processes."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C072",
+      "dependent_concept": "CH-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.95,
+      "rationale": "KS3 introduces Dalton's model of atoms and elements. KS4 Atomic Structure and Subatomic Particles extends this to the nuclear model with protons, neutrons and electrons, building directly on the KS3 conceptual foundation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C073",
+      "dependent_concept": "CH-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces the distinction between atoms, elements and compounds. KS4 Atomic Structure requires secure understanding of these definitions before exploring proton number, mass number, and isotopes."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C092",
+      "dependent_concept": "CH-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces the Periodic Table as an arrangement of elements by atomic number. KS4 Electronic Configuration and Periodic Trends builds on this by explaining the electronic basis for the periodic pattern of properties."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C093",
+      "dependent_concept": "CH-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers predicting reactions from position in the Periodic Table and the properties of groups including alkali metals and halogens. KS4 Electronic Configuration explains the electronic basis for these KS3-level periodic trends."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C091",
+      "dependent_concept": "CH-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces element properties and how they determine the behaviour of substances. KS4 Electronic Configuration extends this to explain properties in terms of outer electron arrangements."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C073",
+      "dependent_concept": "CH-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 distinguishes atoms, elements, and ionic compounds. KS4 Ionic Bonding requires understanding what atoms are before explaining how electron transfer creates ions and ionic lattices."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C095",
+      "dependent_concept": "CH-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces metal and non-metal properties and the tendency of metals to form positive ions. KS4 Ionic Bonding explains the electron transfer mechanism behind this tendency."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C073",
+      "dependent_concept": "CH-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 distinguishes elements and compounds including molecular compounds. KS4 Covalent Bonding requires understanding what atoms are and the concept of molecules formed by sharing electrons."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C095",
+      "dependent_concept": "CH-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 covers non-metal properties and the distinction between metals and non-metals. KS4 Covalent Bonding applies to non-metal combinations; the KS3 metal/non-metal distinction is prerequisite context."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C075",
+      "dependent_concept": "CH-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces conservation of mass in chemical reactions and introduces balanced equations. KS4 Moles and Stoichiometry requires the concept of conservation of mass and balanced equations before introducing the mole as a counting unit for atoms."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C082",
+      "dependent_concept": "CH-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces writing word and symbol equations for chemical reactions. KS4 stoichiometry requires balanced symbol equations as the basis for molar ratio calculations."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C075",
+      "dependent_concept": "CH-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces conservation of mass and the concept of theoretical predictions for reactions. KS4 Atom Economy and Percentage Yield extends this to industrial contexts where actual yield differs from theoretical."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C082",
+      "dependent_concept": "CH-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces balanced chemical equations, which are required for atom economy calculations at KS4."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C097",
+      "dependent_concept": "CH-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces the reactivity series and the observation that more reactive metals displace less reactive ones. KS4 Reactivity Series and Displacement Reactions extends this to electron transfer explanations and the extraction of metals from ores."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C083",
+      "dependent_concept": "CH-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 covers acid-metal reactions and the observation that different metals react at different rates with acid. KS4 Reactivity Series formalises this into a systematic ordering and connects it to redox and electron transfer."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C086",
+      "dependent_concept": "CH-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces neutralisation reactions. KS4 Displacement Reactions and salt formation extends neutralisation to a broader range of reactions involving the reactivity series."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C147",
+      "dependent_concept": "CH-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 Physics introduces electric current and conductors. KS4 Electrolysis requires understanding that electric current (flow of charge) passes through an ionic solution or melt, making the KS3 electrical concepts a prerequisite."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C097",
+      "dependent_concept": "CH-KS4-C008",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 introduces metal extraction and the reactivity series. KS4 Electrolysis is the method used to extract very reactive metals (aluminium), so the KS3 concept of metal extraction provides motivating context."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C090",
+      "dependent_concept": "CH-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces exothermic and endothermic reactions through practical experience. KS4 Exothermic and Endothermic Reactions extends this to bond energy calculations and energy level diagrams."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C089",
+      "dependent_concept": "CH-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces the concept of energy being stored in chemical bonds and released during reactions. KS4 Energy Changes in reactions deepens this into quantitative bond energy calculations."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C088",
+      "dependent_concept": "CH-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces catalysts as substances that speed up reactions without being used up. KS4 Collision Theory and Reaction Rates extends this to explain catalysts in terms of lowering activation energy, building directly on the KS3 introduction."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C083",
+      "dependent_concept": "CH-KS4-C010",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 covers reactions between acids and metals, establishing that reactions occur at different rates depending on conditions. KS4 Collision Theory provides the mechanistic explanation for these rate differences."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C083",
+      "dependent_concept": "CH-KS4-C011",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 introduces chemical reactions including reversible reactions contextually. KS4 Reversible Reactions and Dynamic Equilibrium requires understanding that some reactions do not go to completion, building on KS3 experience of reversible processes."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C090",
+      "dependent_concept": "CH-KS4-C011",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 introduces exothermic and endothermic reactions. KS4 Dynamic Equilibrium involves understanding the energy profiles of forward and reverse reactions, which requires the KS3 exo/endothermic distinction."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C099",
+      "dependent_concept": "CH-KS4-C012",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces material types including natural and synthetic materials, and different material properties. KS4 Hydrocarbons and Crude Oil extends this to the molecular basis of petroleum products and how intermolecular forces determine boiling points."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C073",
+      "dependent_concept": "CH-KS4-C012",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces compounds as substances formed from two or more different elements. KS4 Hydrocarbons defines them as compounds of carbon and hydrogen only, requiring the KS3 definition of a compound as a foundation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C068",
+      "dependent_concept": "CH-KS4-C012",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 introduces the particle model and states of matter, which underlies understanding of why crude oil fractions with different chain lengths have different boiling points in fractional distillation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C106",
+      "dependent_concept": "CH-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces climate change including the role of greenhouse gases, carbon dioxide and human activities. KS4 Greenhouse Effect and Climate Change extends this to the atmospheric chemistry of CO2 and methane and the specific mechanism of the greenhouse effect."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C104",
+      "dependent_concept": "CH-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers Earth's resources and human use of them including fossil fuels. KS4 Greenhouse Effect and Climate Change connects directly to the burning of fossil fuels as the primary cause of increased CO2."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C105",
+      "dependent_concept": "CH-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces the atmosphere's composition and how it has changed over time. KS4 Climate Change extends this to the mechanism by which increased CO2 alters the energy balance of Earth's atmosphere."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C103",
+      "dependent_concept": "CH-KS4-C014",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers the uses of Earth's resources and the concept of sustainability. KS4 Life Cycle Assessment and Sustainable Chemistry extends this to formal LCA methodology and green chemistry principles."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C106",
+      "dependent_concept": "CH-KS4-C014",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces climate change as a consequence of resource use. KS4 LCA uses carbon footprint as one of its key metrics, making the KS3 climate change context motivating and foundational for sustainability chemistry."
     }
   ]
 }

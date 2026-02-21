@@ -667,6 +667,390 @@
       "relationship_type": "instructional",
       "strength": 0.6,
       "rationale": "The Big Bang and expanding universe provide the cosmological context for stellar formation from nebulae; understanding the life cycle of stars (and hence the formation of elements) is deepened by understanding the larger-scale story of the universe's evolution."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C114",
+      "dependent_concept": "PH-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces energy transfer processes and the principle that energy is conserved. KS4 Energy Stores and Transfers extends this to a formal stores-and-pathways framework with quantitative calculation of energy in each store."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C115",
+      "dependent_concept": "PH-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces energy conservation as a fundamental principle. KS4 Energy domain applies conservation quantitatively to efficiency calculations and the stores framework."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C116",
+      "dependent_concept": "PH-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces the physical mechanisms of energy transfer (conduction, convection, radiation). KS4 Energy extends this to heating and cooling, including the quantitative treatment of energy transfer by heating."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C113",
+      "dependent_concept": "PH-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces thermal equilibrium and the direction of energy transfer by heating. KS4 Specific Heat Capacity and Latent Heat quantifies this — how much energy is needed to change temperature or state — building directly on the KS3 concept."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C115",
+      "dependent_concept": "PH-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 establishes that energy is conserved. KS4 specific heat capacity calculations rely on conservation of energy (energy input = energy stored in thermal store)."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C165",
+      "dependent_concept": "PH-KS4-C002",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces changes of state and the idea that energy is transferred without temperature change during state changes. KS4 Latent Heat provides the quantitative treatment of this KS3 observation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C147",
+      "dependent_concept": "PH-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.95,
+      "rationale": "KS3 introduces electric current as the rate of flow of charge. KS4 Current/Potential Difference/Resistance extends this to quantitative treatment of Ohm's law, I-V characteristics and circuit analysis."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C149",
+      "dependent_concept": "PH-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces potential difference (voltage) as the driving force for current. KS4 builds on this with Ohm's law (V = IR) and quantitative circuit calculations requiring the KS3 concept as prerequisite."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C150",
+      "dependent_concept": "PH-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces resistance and the distinction between conductors and insulators. KS4 extends resistance to Ohm's law quantification, I-V graphs and non-ohmic components."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C148",
+      "dependent_concept": "PH-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces series and parallel circuits with qualitative rules for current and voltage. KS4 applies these rules quantitatively and extends to resistance calculations in combined circuits."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C147",
+      "dependent_concept": "PH-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces electric current and the basic circuit concepts. KS4 Electrical Power and Mains Electricity requires the definition of current and potential difference before power (P = IV) can be introduced."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C114",
+      "dependent_concept": "PH-KS4-C004",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces energy transfer and the concept of power as rate of energy transfer. KS4 Electrical Power builds on this by applying the energy concept to electrical circuits."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C068",
+      "dependent_concept": "PH-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces the particle model and the three states of matter. KS4 Particle Model/Density/Gas Laws extends this to quantitative gas laws (pV = constant, p/T = constant) and the concept of internal energy."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C069",
+      "dependent_concept": "PH-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces states of matter and their properties in terms of particle arrangements and motion. KS4 Particle Model extends this to gas pressure calculations using the kinetic theory, requiring the KS3 states description as a foundation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C070",
+      "dependent_concept": "PH-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces gas pressure as arising from particle collisions with container walls. KS4 Gas Laws quantifies this using Boyle's law and Charles' law, directly extending the KS3 qualitative gas pressure concept."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C159",
+      "dependent_concept": "PH-KS4-C005",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces physical and chemical changes distinguishing them by whether new substances are formed. KS4 Particle Model includes changes of state as physical changes, reinforcing the KS3 concept in a quantitative context."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C163",
+      "dependent_concept": "PH-KS4-C005",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 introduces particle arrangements and properties for solids, liquids and gases. KS4 density calculations and gas law derivations build on this understanding of particle behaviour in different states."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C165",
+      "dependent_concept": "PH-KS4-C005",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "KS3 covers changes of state and the energy changes associated with them. KS4 Particle Model extends this to latent heat and the relationship between internal energy, temperature and state."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C072",
+      "dependent_concept": "PH-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces Dalton's atomic model and the idea that atoms are the basic unit of matter. KS4 Radioactive Decay and Nuclear Radiation extends this to the nuclear model where protons and neutrons in the nucleus are the basis of radioactive emissions."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C073",
+      "dependent_concept": "PH-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces the distinction between elements and compounds including the concept of atomic number and symbols. KS4 Radioactive Decay requires nuclear notation (mass number, atomic number) which builds on these KS3 definitions."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C072",
+      "dependent_concept": "PH-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces the concept of atoms and the idea that matter is made of particles with a nucleus. KS4 Nuclear Fission and Fusion requires understanding the nuclear model before explaining how nuclei can split or fuse."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C073",
+      "dependent_concept": "PH-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces elements and their symbols used in nuclear equations. KS4 Nuclear Fission and Fusion uses nuclear equations with mass and atomic numbers, requiring the KS3 concept of atomic symbols and conservation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C121",
+      "dependent_concept": "PH-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces Newton's first and third laws, and balanced/unbalanced forces. KS4 Newton's Laws of Motion extends to a full quantitative treatment of Newton's second law (F = ma) and all three laws applied to complex situations."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C123",
+      "dependent_concept": "PH-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces force diagrams and the concept of resultant force. KS4 Newton's Laws requires the ability to resolve forces and calculate resultant force as the basis for applying F = ma."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C134",
+      "dependent_concept": "PH-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers Newton's first law (objects at rest or in uniform motion remain so unless acted on by a resultant force) and the relationship between force and motion. KS4 quantifies this with Newton's second law."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C119",
+      "dependent_concept": "PH-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces speed and the distance-time graph. KS4 Newton's Laws requires understanding speed, velocity and acceleration before applying F = ma to calculate changes in motion."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C121",
+      "dependent_concept": "PH-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces force and its effects on motion. KS4 Momentum and Impulse requires understanding force as a vector and Newton's second law as a prerequisite for expressing impulse as F = Δp/Δt."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C118",
+      "dependent_concept": "PH-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces speed and its calculation from distance and time. KS4 Momentum (p = mv) requires the concept of velocity, which is the vector equivalent of the KS3 scalar speed."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C134",
+      "dependent_concept": "PH-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 covers the relationship between force and motion including Newton's laws. KS4 Momentum extends this to the conservation of momentum and impulse, which are restatements of Newton's second and third laws."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C135",
+      "dependent_concept": "PH-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces wave properties using water waves (amplitude, wavelength, frequency, wave speed). KS4 Wave Properties and Behaviour extends these to transverse and longitudinal waves, wave equations and wave behaviour (reflection, refraction, diffraction)."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C138",
+      "dependent_concept": "PH-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces sound as a mechanical wave with frequency and amplitude. KS4 Wave Properties extends this to wave equations (v = fλ) and detailed wave behaviour including standing waves."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C140",
+      "dependent_concept": "PH-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces light properties including reflection and refraction. KS4 Wave Properties builds on this by explaining these behaviours quantitatively using Snell's law and wave diagrams."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C141",
+      "dependent_concept": "PH-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces the ray model of light. KS4 Wave Properties extends the description of light from ray optics to wave optics, explaining diffraction and interference that the ray model cannot account for."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C142",
+      "dependent_concept": "PH-KS4-C010",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 covers light effects including colour and frequency. KS4 Wave Properties links frequency to wavelength through the wave equation, building on the KS3 introduction to the relationship between colour and frequency."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C142",
+      "dependent_concept": "PH-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces visible light as part of a broader spectrum and links colour to frequency. KS4 Electromagnetic Spectrum extends this to the full EM spectrum with wavelength and frequency ranges, uses and hazards of each region."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C146",
+      "dependent_concept": "PH-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 covers the key light properties including that light travels as a wave and is part of a family of electromagnetic waves. KS4 EM Spectrum requires this introductory understanding before studying the properties of radio, microwave, infrared, UV, X-ray and gamma regions."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C143",
+      "dependent_concept": "PH-KS4-C011",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 covers light effects and interactions with matter. KS4 EM Spectrum includes how different regions of the spectrum interact with matter, building on the KS3 foundation of light-matter interactions."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C140",
+      "dependent_concept": "PH-KS4-C011",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces the properties of light as a transverse wave. KS4 EM Spectrum requires understanding that all EM waves are transverse waves sharing the fundamental wave properties introduced at KS3."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C157",
+      "dependent_concept": "PH-KS4-C012",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces electromagnetism including the magnetic effect of a current and electromagnets. KS4 Motor Effect and Electromagnetic Induction extends this to the force on a current-carrying conductor in a magnetic field (the motor effect) and Faraday's law."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C155",
+      "dependent_concept": "PH-KS4-C012",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces magnetic fields and field patterns around magnets and current-carrying wires. KS4 Motor Effect and Electromagnetic Induction requires understanding of magnetic field direction conventions and field patterns."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C147",
+      "dependent_concept": "PH-KS4-C012",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces electric current as the movement of charge. KS4 Motor Effect requires the concept of a current-carrying conductor in a magnetic field, making the KS3 definition of current an essential prerequisite."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C157",
+      "dependent_concept": "PH-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces the principle of the transformer through electromagnetism. KS4 Transformers and the National Grid builds directly on the KS3 electromagnetic induction concept to explain how transformers work."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C147",
+      "dependent_concept": "PH-KS4-C013",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces electric circuits and current. KS4 National Grid requires understanding of current and power to explain why high-voltage transmission reduces energy losses in cables."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C169",
+      "dependent_concept": "PH-KS4-C014",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 introduces the solar system and the structure of stars. KS4 Life Cycle of Stars extends this to stellar evolution from nebula through main sequence to death, requiring the KS3 introduction to stars as self-luminous objects."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C167",
+      "dependent_concept": "PH-KS4-C014",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces gravity as the force responsible for keeping planets in orbit and the formation of solar systems. KS4 Life Cycle of Stars requires understanding gravitational collapse of nebulae as the mechanism of star formation."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C169",
+      "dependent_concept": "PH-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 introduces the solar system and galaxies within the universe. KS4 Red-Shift and the Big Bang builds on this cosmological framework to explain the evidence for an expanding universe and the Big Bang theory."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C171",
+      "dependent_concept": "PH-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "KS3 introduces the light year as a unit of astronomical distance. KS4 Red-Shift and the Big Bang requires understanding that galaxies are very distant (light years away) before the observational significance of red-shift can be appreciated."
+    },
+    {
+      "prerequisite_concept": "SC-KS3-C142",
+      "dependent_concept": "PH-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 introduces the relationship between colour and frequency of light. KS4 Red-Shift is defined as an increase in the observed wavelength (decrease in frequency) of light from receding galaxies, requiring the KS3 colour-frequency link."
     }
   ]
 }
