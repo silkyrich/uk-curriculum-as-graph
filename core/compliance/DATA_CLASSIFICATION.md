@@ -106,8 +106,8 @@ These data elements are prohibited regardless of parental consent. Consent canno
 | Device fingerprint | No curriculum purpose; enables cross-device tracking |
 | IP address | No curriculum purpose; enables location inference |
 | Browsing history / cross-app data | No curriculum purpose; prohibited by Children's Code |
-| Time-of-day usage patterns | Enables behavioural profiling beyond curriculum; only session start/end stored |
-| Engagement metrics (scroll depth, time-on-page, tap heatmaps) | Enables engagement optimisation, which we explicitly reject |
+| Time-of-day usage patterns **for behavioural profiling** | Using temporal patterns to schedule push notifications or infer "best learning times" is engagement optimisation, not pedagogy. Note: event timestamps and session start/end ARE stored (Tier 1) — they are essential for spacing algorithms. The prohibition is on analysing *when* the child uses the service to drive re-engagement. |
+| Engagement-maximising metrics (scroll depth, tap heatmaps, dwell time, session frequency trends) | Enables engagement optimisation, which we explicitly reject. Note: response_time_ms IS stored (Tier 1) because it measures retrieval fluency, a pedagogical signal. The prohibition is on metrics whose purpose is measuring or increasing time-on-platform. |
 | Biometric data (face, voice print, fingerprint) | Disproportionate; local pose/shape processing is permitted but biometric templates are not |
 | Predictive analytics ("will pass SATs") | Stigmatising; uncertain; parents over-index on predictions |
 

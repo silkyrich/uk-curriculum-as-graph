@@ -147,11 +147,11 @@ Yes:
 | R2 | Stigmatising labels | Profile expressed ONLY as pedagogical actions (next question, scaffold type); child never sees labels like "struggling" or "below average"; no competitive framing | Low |
 | R3 | Incorrect pedagogy | All decisions grounded in curriculum graph; prerequisite chain validation; parent can see reasoning and override mastery status | Low |
 | R4 | Parental pressure | Dashboard shows mastery against curriculum, never against other children; no predictive analytics; guidance on healthy engagement | Low |
-| R5 | Surveillance feeling | Child informed of monitoring in age-appropriate language; warm non-evaluative UI tone; no time-tracking or engagement metrics | Low |
+| R5 | Surveillance feeling | Child informed of monitoring in age-appropriate language; warm non-evaluative UI tone; no engagement-maximising metrics (timestamps stored for spacing only, not for profiling when the child uses the service) | Low |
 | R6 | Scope creep | Purpose limitation enforced in architecture (event store schema rejects non-schema fields); no third-party data access; code review process requires data classification | Low |
 | R7 | Harmful LLM content | Curriculum grounding (LLM constrained to concept nodes); output classifier; no open-ended generation; session termination for safety flags | Low |
 | R8 | Consent fatigue | Layered consent (short summary + detailed per-purpose); specific toggles not bundled; "Learn more" expandable sections; child-friendly summary | Low |
-| R9 | Emotional attachment | AI persona is a tutor, not a friend; prompt classifier discards personal/emotional content; no relationship-forming language; no memory of personal details | Low |
+| R9 | Emotional attachment | Warm, encouraging educational character is permitted, but AI never claims emotional reciprocity ("I missed you"), never remembers personal details across sessions, never uses relationship-forming language ("We're friends"); prompt classifier discards personal/emotional content from child | Low |
 | R10 | Processor breach | Art. 28 agreements; training exclusion clauses; sub-processor transparency; PII audit of what enters each processor | Low |
 | R11 | Re-identification | k=1000+ minimum aggregation; differential privacy consideration for small concept sets | Low |
 

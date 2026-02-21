@@ -462,15 +462,23 @@ class LayerImporter:
 ❌ Store child's name, school, or any PII in the learning event log - Identity and events are architecturally separated
 ❌ Store emotional states, interests, or personal disclosures - Prompt classifier must flag and discard these
 ❌ Send PII to LLM without processor agreement - Check `CONSENT_RULES.md` before adding anything to prompts
-❌ Add engagement metrics (time-on-page, scroll depth, streak counts) - We optimise learning, not engagement
-❌ Add gamification (badges, leaderboards, progress bars, streaks) - Evidence shows net negative effect on learning
-❌ Build AI companion/friend persona - Creates parasocial relationship; not in child's best interests
+❌ Add engagement-maximising metrics (scroll depth, tap heatmaps, streak counts) - We optimise learning, not engagement
+❌ Add gamification that creates extrinsic pressure (badges, leaderboards, progress bars, streaks, loss aversion) - Meta-analyses show net negative effect, especially for introverted learners
+❌ Build AI that claims emotional reciprocity ("I missed you", "We're friends", "I was thinking about you") - Creates parasocial dependency; not in child's best interests
+❌ Use time-of-day patterns for behavioural profiling or push notifications - Session timestamps for spacing are fine; engagement scheduling is not
 ❌ Profile for anything other than curriculum-aligned pedagogy - Commercial profiling is prohibited
 ❌ Collect data without classifying it against `DATA_CLASSIFICATION.md` - Every new data element must be classified
 ❌ Bundle consent purposes together - Each processing purpose needs its own toggle
 ❌ Share child data with third parties without explicit per-recipient parent consent
 ❌ Retain session transcripts beyond 30 days or learning events beyond 12 months
 ❌ Present mastery predictions to children in ways that could label or stigmatise them
+
+### Permitted Design Choices (Not Prohibited)
+✅ Warm, encouraging educational character with personality — a friendly avatar that says "Let's explore fractions!" is fine
+✅ Session timestamps, response times, event timestamps — essential for spacing algorithms and session limits
+✅ Surprise/delight moments tied to genuine learning milestones — not engagement metrics
+✅ Session duration visible to parents — informational, not competitive
+✅ Age-appropriate celebratory feedback ("You figured it out!") — not contingent on streaks or return visits
 
 ---
 
