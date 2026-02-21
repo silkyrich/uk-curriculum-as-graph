@@ -52,7 +52,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** DKT models are data-hungry and opaque — not interpretable to teachers or parents. The ASSISTments benchmark advantage does not guarantee real-world superiority over simpler models in small-data settings. No full text fetch — derived from briefing.
 
-**Cached at:** `docs/research/learning-science/dkt_piech_2015.md`
+**Cached at:** `docs/research/learning-science/knowledge-tracing/dkt_piech_2015.md`
 
 ---
 
@@ -74,7 +74,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Fetch failed; details from briefing only. Authors not confirmed. Production deployment evidence unknown. Data requirements likely high.
 
-**Cached at:** `docs/research/learning-science/dygkt_2024.md`
+**Cached at:** `docs/research/learning-science/knowledge-tracing/dygkt_2024.md`
 
 ---
 
@@ -97,7 +97,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Briefing summary only. IRLG workshop paper, not a main-track venue — verify claims against follow-up work. GKT performance advantage over DKT depends on quality of hand-authored prerequisite graph.
 
-**Cached at:** `docs/research/learning-science/gkt_nakagawa_2019.md`
+**Cached at:** `docs/research/learning-science/knowledge-tracing/gkt_nakagawa_2019.md`
 
 ---
 
@@ -120,7 +120,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Authors not confirmed from paywalled fetch. Briefing summary only. Review scope (which 25 years of BKT papers were included, which were excluded) is not verifiable from the summary.
 
-**Cached at:** `docs/research/learning-science/bkt_25years_review_2023.md`
+**Cached at:** `docs/research/learning-science/knowledge-tracing/bkt_25years_review_2023.md`
 
 ---
 
@@ -189,7 +189,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Fetch failed (403); authors not confirmed. MDPI is an open-access publisher with mixed peer-review reputation; quality should be independently verified before citing in external documents.
 
-**Cached at:** `docs/research/learning-science/kg_learning_path_2025.md`
+**Cached at:** `docs/research/learning-science/knowledge-tracing/kg_learning_path_2025.md`
 
 ---
 
@@ -215,7 +215,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Full text fetched but authors' systematic review methodology details (search strategy, inclusion criteria) not independently audited here. The Yixue Squirrel AI 4.19x effect size is a striking outlier and likely context-dependent (Chinese educational context, intensive implementation).
 
-**Cached at:** `docs/research/learning-science/ai_its_k12_systematic_review_2025.md`
+**Cached at:** `docs/research/learning-science/intelligent-tutoring/ai_its_k12_systematic_review_2025.md`
 
 ---
 
@@ -238,7 +238,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Page summary only; vendor page. The immediate feedback ES = 0.37 is for the specific ASSISTments context (US 7th grade maths homework); direct transfer to UK curriculum contexts requires caution.
 
-**Cached at:** `docs/research/learning-science/assistments_evidence.md`
+**Cached at:** `docs/research/learning-science/intelligent-tutoring/assistments_evidence.md`
 
 ---
 
@@ -261,7 +261,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Vendor page; full KST technical detail is in academic literature (Doignon & Falmagne 1985), not the page itself. The 2021 meta-analysis finding of equivalence to traditional instruction when used standalone is a caution against over-reliance on adaptive sequencing alone without teacher integration.
 
-**Cached at:** `docs/research/learning-science/aleks_knowledge_space_theory.md`
+**Cached at:** `docs/research/learning-science/intelligent-tutoring/aleks_knowledge_space_theory.md`
 
 ---
 
@@ -284,7 +284,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Vendor page; the RAND study details are not independently reviewed from this fetch. MATHia is US (Common Core) curriculum-aligned and its model-tracing approach requires hand-authored production rules — expensive and brittle compared with graph-based sequencing.
 
-**Cached at:** `docs/research/learning-science/carnegie_learning_research.md`
+**Cached at:** `docs/research/learning-science/intelligent-tutoring/carnegie_learning_research.md`
 
 ---
 
@@ -309,7 +309,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Page summary only; full text is a PDF binary that was not parsed. The paper is from 2000 — very well established but should be supplemented with more recent SDT meta-analyses for any academic-facing documentation.
 
-**Cached at:** `docs/research/learning-science/ryan_deci_sdt_2000.md`
+**Cached at:** `docs/research/learning-science/motivation-and-engagement/ryan_deci_sdt_2000.md`
 
 ---
 
@@ -333,7 +333,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Full text fetched. Frontiers in Education is an open-access journal with broad scope — peer review rigour varies. The "ghost effect" is a new conceptual framing; empirical measurement methodology should be reviewed in the full text. The personality moderation finding (extraversion vs. introversion) requires the original instruments to be verified.
 
-**Cached at:** `docs/research/learning-science/gamification_ghost_effect_2024.md`
+**Cached at:** `docs/research/learning-science/motivation-and-engagement/gamification_ghost_effect_2024.md`
 
 ---
 
@@ -356,7 +356,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Briefing summary only; PDF binary not parsed. 1973 study using drawing as the intrinsic activity — direct transfer to digital learning interactions should be treated as plausible but not proven. Some debate in the meta-analytic literature (Cameron & Pierce 1994) about boundary conditions; the Deci et al. 1999 meta-analysis is the more reliable synthesis.
 
-**Cached at:** `docs/research/learning-science/lepper_overjustification_1973.md`
+**Cached at:** `docs/research/learning-science/motivation-and-engagement/lepper_overjustification_1973.md`
 
 ---
 
@@ -381,7 +381,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Page summary only; PDF binary not parsed. The 30–40% interleaving advantage figure and 10–30% spacing figure are from the briefing's reading of the chapter — precise experimental contexts should be verified against primary sources before external citation.
 
-**Cached at:** `docs/research/learning-science/bjork_desirable_difficulties_2011.md`
+**Cached at:** `docs/research/learning-science/cognitive-learning/bjork_desirable_difficulties_2011.md`
 
 ---
 
@@ -404,7 +404,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Briefing summary only; PDF binary not parsed. 2006 study context (prose passages, college students) — the retrieval practice effect is broadly replicated but specific effect sizes in K-12 curriculum contexts should not be assumed to match the original study.
 
-**Cached at:** `docs/research/learning-science/roediger_karpicke_testing_2006.md`
+**Cached at:** `docs/research/learning-science/cognitive-learning/roediger_karpicke_testing_2006.md`
 
 ---
 
@@ -427,7 +427,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Briefing summary only; paywalled. The d = 0.58 high-fidelity figure depends on careful implementation; degraded implementations may not achieve this. Evidence is sparse outside STEM — the platform's humanities and literacy components should not assume the same effect size.
 
-**Cached at:** `docs/research/learning-science/productive_failure_meta_2021.md`
+**Cached at:** `docs/research/learning-science/cognitive-learning/productive_failure_meta_2021.md`
 
 ---
 
@@ -452,7 +452,7 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 **Caveats:** Briefing summary only; authors not confirmed. The 35% figure requires verification against the specific evaluation methodology — it may reflect particular systems or hint types and should not be assumed to apply uniformly to all LLM hint architectures.
 
-**Cached at:** `docs/research/learning-science/llm_education_review_2025.md`
+**Cached at:** `docs/research/learning-science/llm-in-education/llm_education_review_2025.md`
 
 ---
 
@@ -485,4 +485,4 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 ---
 
-*End of annotated bibliography. Learning science papers are cached in `docs/research/learning-science/`; interoperability specs in `docs/research/interoperability/`. For each entry, the access level field indicates the confidence that should be placed in derived design decisions: full text fetched is the highest confidence; briefing summary only means the design decision is based on secondary characterisation and should be verified against primary sources before external academic citation.*
+*End of annotated bibliography. Learning science papers are cached in themed subdirectories under `docs/research/learning-science/` (knowledge-tracing, intelligent-tutoring, motivation-and-engagement, cognitive-learning, llm-in-education); interoperability specs in `docs/research/interoperability/`. For each entry, the access level field indicates the confidence that should be placed in derived design decisions: full text fetched is the highest confidence; briefing summary only means the design decision is based on secondary characterisation and should be verified against primary sources before external academic citation.*

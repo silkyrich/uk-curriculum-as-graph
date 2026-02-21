@@ -237,7 +237,7 @@ All nodes have `display_category` property:
 
 **Confused about...**
 
-- Graph model? → `core/docs/graph_model_overview.md`
+- Graph model? → This file (see Graph Model Overview section above)
 - Layer architecture? → This file (CLAUDE.md)
 - Specific layer? → `layers/{layer-name}/README.md`
 - Learner profile queries? → `layers/learner-profiles/README.md`
@@ -351,8 +351,8 @@ class LayerImporter:
 
 ## Key Files to Read First
 
-1. This file (CLAUDE.md) - Architecture overview
-2. `core/docs/graph_model_overview.md` - Data model
+1. This file (CLAUDE.md) - Architecture overview + graph model
+2. `docs/README.md` - Documentation navigation guide
 3. `layers/uk-curriculum/README.md` - Core layer
 4. `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md` - NGSS structure
 5. `layers/learner-profiles/README.md` - Age-appropriate design layer + agent query patterns
