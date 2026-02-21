@@ -1,6 +1,6 @@
 # UK Curriculum as a Knowledge Graph
 
-A Neo4j knowledge graph of the England National Curriculum (KS1–KS3, ages 5–14), with every statutory subject structured as concepts, objectives, domains, prerequisite relationships, and disciplinary skill types. Built as the curriculum ontology layer for an adaptive learning platform.
+A Neo4j knowledge graph of the England National Curriculum (KS1–KS4, ages 5–16), with every statutory subject structured as concepts, objectives, domains, prerequisite relationships, and disciplinary skill types. Built as the curriculum ontology layer for an adaptive learning platform.
 
 ## What's in the graph
 
@@ -28,6 +28,8 @@ A Neo4j knowledge graph of the England National Curriculum (KS1–KS3, ages 5–
 **Subjects covered (KS1–KS2):** Art & Design, Computing, Design & Technology, English (KS1 + Y3–Y6), Geography, History, Languages, Mathematics (Y1–Y6), Music, Physical Education, Science
 
 **Subjects covered (KS3):** Art & Design, Citizenship, Computing, Design & Technology, English, Geography, History, Languages, Mathematics, Music, Physical Education, Science
+
+**Subjects covered (KS3/KS4 combined programmes):** Citizenship, Computing, Physical Education (statutory programmes span both key stages — no separate KS4 extraction; GCSE subject content for Science, Maths, English etc. is a planned next layer)
 
 ## Graph model (v3.5)
 
@@ -355,7 +357,7 @@ layers/                          ← Layer-based organization (NEW)
   uk-curriculum/                 Foundation layer: UK National Curriculum
     scripts/import_curriculum.py
     data/extractions/primary/    KS1–KS2 JSONs (26 files)
-    data/extractions/secondary/  KS3 JSONs (12 files)
+    data/extractions/secondary/  KS3/KS4 JSONs (12 files; 3 span KS3-4)
     README.md
 
   assessment/                    Test Frameworks layer

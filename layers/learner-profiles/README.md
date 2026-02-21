@@ -217,8 +217,8 @@ This is idempotent — safe to re-run. All writes use MERGE.
 ```
 extractions/
   interaction_types.json     # 29 InteractionType definitions
-  content_guidelines.json    # 9 ContentGuideline profiles (Y1–Y9)
-  pedagogy_profiles.json     # 9 PedagogyProfile profiles (Y1–Y9)
-  feedback_profiles.json     # 9 FeedbackProfile profiles (Y1–Y9)
+  content_guidelines.json    # 11 ContentGuideline profiles (Y1–Y11)
+  pedagogy_profiles.json     # 11 PedagogyProfile profiles (Y1–Y11)
+  feedback_profiles.json     # 11 FeedbackProfile profiles (Y1–Y11)
   year_interactions.json     # Year → InteractionType mapping (primary/secondary)
 ```

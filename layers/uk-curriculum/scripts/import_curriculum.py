@@ -99,6 +99,7 @@ def make_programme_id(subject_name, years, key_stage):
         "KS1": [1, 2],
         "KS2": [3, 4, 5, 6],
         "KS3": [7, 8, 9],
+        "KS4": [10, 11],
     }
     sorted_years = sorted(years) if years else []
     if len(sorted_years) == 1:
@@ -130,11 +131,9 @@ def infer_key_stage(years):
     ks1_count = sum(1 for y in years if y <= 2)
     ks2_count = sum(1 for y in years if 3 <= y <= 6)
     ks3_count = sum(1 for y in years if 7 <= y <= 9)
-    if ks2_count >= ks1_count and ks2_count >= ks3_count:
-        return "KS2"
-    if ks1_count >= ks2_count:
-        return "KS1"
-    return "KS3"
+    ks4_count = sum(1 for y in years if 10 <= y <= 11)
+    counts = {"KS1": ks1_count, "KS2": ks2_count, "KS3": ks3_count, "KS4": ks4_count}
+    return max(counts, key=counts.get)
 
 
 _CONCEPT_TYPE_MAP = {
@@ -303,6 +302,7 @@ class CurriculumImporter:
             {"key_stage_id": "KS1", "name": "Key Stage 1", "years": [1, 2], "age_range": "5-7"},
             {"key_stage_id": "KS2", "name": "Key Stage 2", "years": [3, 4, 5, 6], "age_range": "7-11"},
             {"key_stage_id": "KS3", "name": "Key Stage 3", "years": [7, 8, 9], "age_range": "11-14"},
+            {"key_stage_id": "KS4", "name": "Key Stage 4", "years": [10, 11], "age_range": "14-16"},
         ]
 
         query = """
@@ -336,6 +336,9 @@ class CurriculumImporter:
             {"year_id": "Y7", "year_number": 7, "age_range": "11-12", "key_stage": "KS3"},
             {"year_id": "Y8", "year_number": 8, "age_range": "12-13", "key_stage": "KS3"},
             {"year_id": "Y9", "year_number": 9, "age_range": "13-14", "key_stage": "KS3"},
+            # KS4
+            {"year_id": "Y10", "year_number": 10, "age_range": "14-15", "key_stage": "KS4"},
+            {"year_id": "Y11", "year_number": 11, "age_range": "15-16", "key_stage": "KS4"},
         ]
 
         query = """
@@ -433,6 +436,8 @@ class CurriculumImporter:
                 years_covered = [3, 4, 5, 6]
             elif raw_key_stage == "KS3":
                 years_covered = [7, 8, 9]
+            elif raw_key_stage == "KS4":
+                years_covered = [10, 11]
             else:
                 for ks in raw_key_stages:
                     if ks == "KS1":
@@ -441,6 +446,8 @@ class CurriculumImporter:
                         years_covered += [3, 4, 5, 6]
                     elif ks == "KS3":
                         years_covered += [7, 8, 9]
+                    elif ks == "KS4":
+                        years_covered += [10, 11]
                 years_covered = sorted(set(years_covered))
 
         # Determine canonical key_stage for this extraction file
