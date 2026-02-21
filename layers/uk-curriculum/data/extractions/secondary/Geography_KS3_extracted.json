@@ -159,6 +159,30 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false
+    },
+    {
+      "concept_id": "GE-KS3-C005",
+      "domain_id": "GE-KS3-D001",
+      "concept_name": "World Regions: Africa, Asia and the Middle East",
+      "description": "A detailed working knowledge of the world's major geographical regions, with KS3 focus extending to Africa, Russia, Asia (including China and India) and the Middle East. This includes awareness of the environmental regions within these areas (deserts, savannahs, tropical forests, tundra, mountain systems), the major countries and their capitals, the distribution of major cities, and the key physical and human characteristics that give each region its geographical character. At KS3, locational knowledge moves beyond naming towards understanding: why are cities located where they are? How do environmental regions reflect climate and geology? How do physical characteristics shape the human geography of the region?",
+      "teaching_guidance": "Use a physical-political atlas regularly: practise locating countries, capitals, major cities and physical features across Africa, Russia, Asia and the Middle East. Connect locational knowledge to thematic geography: when studying development, connect to specific countries in sub-Saharan Africa; when studying urbanisation, connect to Chinese and Indian megacities; when studying climate change, connect to the Arctic and the Middle East. Build locational knowledge cumulatively — return to maps regularly rather than treating it as a one-off coverage exercise. Use digital mapping tools (Google Earth, GIS) to explore regions at different scales, connecting satellite imagery to conventional cartographic representation.",
+      "key_vocabulary": "Africa, Asia, Russia, Middle East, region, environmental region, desert, savannah, tundra, tropical, continent, country, capital, megacity, political map, physical map, distribution, characteristics",
+      "common_misconceptions": "Pupils frequently have very limited knowledge of African geography beyond a small number of countries, treating Africa as a single undifferentiated region. Regular mapping activities that distinguish African countries, capitals and regions address this at KS3. Pupils may not appreciate the vast internal geographical diversity of regions like Asia or Russia; studying specific contrasting sub-regions within these areas challenges overgeneralisation. Locational knowledge is sometimes treated as rote memorisation rather than as a functional knowledge base that supports geographical analysis; contextualising locations within thematic geography makes locational knowledge purposeful.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "GE-KS3-C006",
+      "domain_id": "GE-KS3-D002",
+      "concept_name": "Place Depth Study: Africa and Asia",
+      "description": "Depth place study at KS3 requires developing detailed, nuanced understanding of specific regions in Africa and Asia — not merely cataloguing their characteristics, but understanding the dynamic interaction between physical geography, human activity, historical development and current change. Studying a region in Africa and a region in Asia ensures that pupils encounter parts of the world that are central to contemporary global issues (development, urbanisation, climate change, population growth, political conflict, migration) but often poorly understood by UK pupils. The requirement to understand how places change over time prevents static, stereotypical portrayals and develops awareness of agency and dynamism within studied regions.",
+      "teaching_guidance": "Choose specific, real regions rather than dealing with Africa or Asia in generalities: a region of sub-Saharan Africa (e.g. the Sahel, East Africa's Rift Valley, the Niger Delta), a region of south or east Asia (e.g. the Ganges plain, coastal China, the Mekong delta). Develop each region study through multiple lenses: physical geography (what is the landscape, climate, ecology?), human geography (how do people live, work and move?), development (how wealthy and developed is the region? why?), change (how is it changing and why?), connections (how is it connected to the UK and global economy?). Avoid stereotyping by using a range of sources including local voices and contemporary images, not only external accounts. Connect the studied regions to the wider themes studied in KS3 (development, urbanisation, climate change) to build integrated geographical understanding.",
+      "key_vocabulary": "place study, region, Africa, Asia, human geography, physical geography, depth study, interaction, change, development, connection, comparison, local, global, dynamic",
+      "common_misconceptions": "Pupils may develop a static, stereotypical view of studied regions based on media images (famine, conflict, poverty for Africa; economic dynamism or overcrowding for Asia). Studying change over time and using diverse sources including contemporary, local perspectives challenges these stereotypes. The idea that depth place study is merely factual accumulation misses its primary purpose: developing the analytical skills of geographical description, explanation, comparison and evaluation that transfer across all place contexts. Pupils sometimes equate studying a region with knowing facts about it; developing the ability to ask geographical questions and interpret evidence is more important than knowing any specific set of facts.",
+      "concept_type": "skill",
+      "complexity_level": 3,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -185,6 +209,30 @@
       "relationship_type": "developmental",
       "strength": 0.75,
       "rationale": "KS2 climate zones and biomes knowledge provides the physical geography baseline from which KS3 climate change can be understood as a shift in established climate patterns, requiring prior knowledge of what those patterns are and why they exist."
+    },
+    {
+      "prerequisite_concept": "GE-KS2-C001",
+      "dependent_concept": "GE-KS3-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS3 world regional knowledge extends the global locational framework established through latitude, longitude and the global coordinate system at KS2. Understanding how to locate places using coordinates and the global grid is prerequisite to building more detailed regional locational knowledge."
+    },
+    {
+      "prerequisite_concept": "GE-KS2-C006",
+      "dependent_concept": "GE-KS3-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 Africa and Asia place depth study develops directly from KS2 regional place study skills, requiring the same comparative and analytical approach at a greater scale, with deeper analysis of human-physical interaction and change over time."
+    },
+    {
+      "prerequisite_concept": "GE-KS3-C005",
+      "dependent_concept": "GE-KS3-C006",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Locational knowledge of Africa and Asia's regions, countries and cities provides the spatial framework within which depth place study is conducted; pupils cannot study a specific region in depth without first situating it within the broader regional geography of the continent."
     }
   ]
 }

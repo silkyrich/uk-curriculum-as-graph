@@ -180,6 +180,18 @@
       "concept_type": "skill",
       "complexity_level": 2,
       "is_cross_cutting": false
+    },
+    {
+      "concept_id": "GE-KS2-C006",
+      "domain_id": "GE-KS2-D002",
+      "concept_name": "Regional Place Study and Cross-Continental Comparison",
+      "description": "Place study at a regional scale involves developing in-depth understanding of a geographical region: its physical landscape, climate, vegetation, resources, settlement patterns, economic activity and cultural character. At KS2, pupils study three contrasting regions — a UK region, a European region, and a region within North or South America — comparing their human and physical characteristics across continental contexts. Understanding regions in depth, and comparing across continents, develops the geographical knowledge base and the comparative analytical skills that underpin sophisticated geographical thinking. The cross-continental frame ensures that pupils encounter genuinely diverse human geographies, building awareness of how physical geography (climate, relief, resources) shapes human activity in different parts of the world.",
+      "teaching_guidance": "Choose regions that offer genuine contrast: a mountainous Alpine region in Europe compared with a UK lowland region; an Amazonian region compared with a Caribbean island. Structure each regional study using a consistent inquiry framework: location (where is it?), physical geography (what is the landscape and climate like?), human geography (how do people live and work?), change (how is the region changing?), comparison (how does it compare to the other regions studied?). Use maps, photographs, satellite images, statistical data and firsthand accounts. Avoid reducing regions to stereotypes; show their internal diversity and dynamism. Return to the regions studied across the primary years rather than treating each as a one-off topic.",
+      "key_vocabulary": "region, continent, country, European, Americas, compare, physical geography, human geography, characteristic, settlement, economic activity, climate, landscape, cultural, similarities, differences",
+      "common_misconceptions": "Pupils may treat regional studies as discrete topics rather than as recurring reference points for geographical comparison. Returning to studied regions in different thematic contexts (rivers, climate, development) builds richer knowledge than treating each as a one-off study. Pupils may characterise regions by only one or two features, missing the complexity and internal diversity of real regions. Requiring pupils to update their knowledge of studied regions over time prevents oversimplification.",
+      "concept_type": "skill",
+      "complexity_level": 2,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -214,6 +226,14 @@
       "relationship_type": "developmental",
       "strength": 0.9,
       "rationale": "KS1 skills of using maps, compass directions and simple symbols are the foundation on which the more demanding Ordnance Survey map skills and grid references of KS2 are built."
+    },
+    {
+      "prerequisite_concept": "GE-KS1-C006",
+      "dependent_concept": "GE-KS2-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS2 regional place study develops directly from the KS1 locality-scale place study and comparison, extending the same skills of geographical description, comparison and enquiry to larger regional scales and more distant global contexts."
     }
   ]
 }

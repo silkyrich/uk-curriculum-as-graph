@@ -178,6 +178,18 @@
       "concept_type": "skill",
       "complexity_level": 1,
       "is_cross_cutting": false
+    },
+    {
+      "concept_id": "GE-KS1-C006",
+      "domain_id": "GE-KS1-D002",
+      "concept_name": "Place Study and Comparison",
+      "description": "Place study involves developing detailed knowledge of a specific location, understanding its human geography (how people live and work there) and its physical geography (its natural landscape, climate and environment). At KS1, pupils compare a small area of the United Kingdom with a contrasting small area in a non-European country. Comparing places reveals both the universal features of human settlement (all communities need food, shelter, places to work and play) and the differences that arise from location, culture and natural environment. This introduces pupils to the geographical concept of place as somewhere with particular character, not merely a dot on a map.",
+      "teaching_guidance": "Choose a contrasting non-European locality that offers genuine differences: a Kenyan village, an Indian town, an area of rural China. Gather photographs, maps and accounts of daily life in both areas. Structure comparisons using consistent frameworks: what people do for work, what children's lives look like, what the landscape looks like, what the weather is like. Avoid stereotyping: show the diversity within the contrasting location, not only its most exotic or dramatic features. Enable pupils to see both similarities and differences: children in both places go to school, families in both places share meals, people in both places play and celebrate. Making the familiar strange (looking at the UK through fresh eyes) and the strange familiar (finding shared human experiences across distance) develops geographical empathy.",
+      "key_vocabulary": "place, compare, contrast, similarities, differences, human, physical, local area, country, non-European, settlement, community, landscape, environment, characteristics",
+      "common_misconceptions": "Pupils may focus only on differences between places, ignoring the fundamental similarities in human needs and activities. Explicitly identifying shared human experiences across both localities prevents the othering of distant places. Pupils may believe that more distant places are automatically more different; showing that some non-European localities share characteristics with the UK (urban density, similar climates) challenges this assumption. Stereotyping of non-European localities is a persistent risk; using specific, contemporary photographic evidence rather than generalised descriptions maintains accuracy.",
+      "concept_type": "skill",
+      "complexity_level": 1,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -204,6 +216,14 @@
       "relationship_type": "instructional",
       "strength": 0.8,
       "rationale": "Using world maps, atlases and globes is the primary method through which pupils locate and learn the names of the seven continents and five oceans."
+    },
+    {
+      "prerequisite_concept": "GE-KS1-C001",
+      "dependent_concept": "GE-KS1-C006",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.7,
+      "rationale": "Understanding where continents are and how the world is divided into large geographical regions provides the locational context for understanding where the UK locality and the contrasting non-European locality sit relative to each other."
     }
   ]
 }

@@ -210,6 +210,30 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false
+    },
+    {
+      "concept_id": "LA-KS4-C006",
+      "domain_id": "LA-KS4-D001",
+      "concept_name": "Listening to Authentic Spoken Language",
+      "description": "Listening comprehension at GCSE requires processing the target language as spoken by native speakers in authentic contexts, at natural speed and in a range of accents and registers. This demands a set of cognitive skills beyond simple vocabulary recognition: the ability to tolerate incomplete comprehension while extracting key meaning; the ability to infer implied attitudes and opinions from tone, emphasis and choice of language; the ability to distinguish between literal and ironic or evaluative meaning; and the ability to retain and process information from an extended spoken text without the ability to re-read. At GCSE, pupils must demonstrate comprehension at literal, inferential and evaluative levels, matching the complexity of listening assessments to the demands of real-world listening situations.",
+      "teaching_guidance": "Develop listening stamina and tolerance for ambiguity as explicit goals: pupils must learn that understanding 60-70% of a spoken text is sufficient to answer most comprehension questions. Use a range of listening sources including native speaker recordings, radio, film, podcasts and news content in the target language alongside examination-style recordings. Teach listening strategies explicitly: predicting content from context before listening; identifying key words on first listening before seeking detail; using second and third listens for increasingly fine-grained comprehension. Practise inferential listening: what attitude is the speaker expressing? How do you know? What is not said explicitly but is implied? Develop pupils' ability to process connected speech features (elision, liaison, reduction) that differ from classroom speech.",
+      "key_vocabulary": "listening, authentic, spoken, comprehension, inference, attitude, opinion, register, accent, natural speed, main point, detail, gist, implied, evaluate, tolerate",
+      "common_misconceptions": "Pupils may attempt to understand every word, producing anxiety and comprehension failure when encountering unfamiliar vocabulary; developing the ability to tolerate and work around unknown vocabulary is a fundamental listening skill. The belief that listening is a passive skill that improves automatically with exposure underestimates the importance of active listening strategies; teaching pupils how to listen purposefully and strategically produces faster improvement. Pupils may not realise that examination recordings are typically heard twice; teaching them how to use each listen differently (gist on first, detail on second) maximises the use of available opportunities.",
+      "concept_type": "skill",
+      "complexity_level": 4,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "LA-KS4-C007",
+      "domain_id": "LA-KS4-D004",
+      "concept_name": "Extended Written Production and Translation",
+      "description": "Writing at GCSE encompasses two distinct but related competences: extended written production in the target language (producing texts of 90-200 words across a range of genres, purposes and registers with grammatical accuracy and lexical range) and translation (both into and from the target language, requiring precision and understanding of meaning transfer rather than word substitution). Extended writing at GCSE differentiates across grade bands by the range of structures used (limited range vs complex tenses, subordination, passive voice) and by the accuracy maintained across a longer text span. Translation into the target language is the most demanding written task, as it requires understanding the source meaning, selecting appropriate target language structures, and producing formally accurate output without the support of a scaffolded context.",
+      "teaching_guidance": "Develop extended writing through consistent practice of full-length writing tasks under timed conditions. Teach pupils to use three tenses in every extended writing task: present for current situations, past for narrative and description, future or conditional for aspirations and hypothetical situations. Develop a self-editing routine: check gender agreement, verb conjugation accuracy, word order, tense sequence, negation, and spelling. For translation into the target language, practise identifying the grammatical challenge in each sentence before translating: what tense is required? What does this pronoun refer to? Is there a subjunctive trigger here? Develop pupils' ability to produce equivalent, natural-sounding target language rather than literal translations. Teach exam technique: shorter writing tasks require conciseness and precision; longer tasks require structural organisation with topic sentences, development, and conclusion.",
+      "key_vocabulary": "write, extended, translate, accuracy, range, tense, agreement, register, genre, produce, paragraph, justify, structure, complex, precision, formal, informal",
+      "common_misconceptions": "Pupils often spend more time on content than on accuracy in extended writing, producing texts with communicatively interesting content but significant grammatical errors; developing systematic self-editing as a final stage of the writing process prevents this. Translation into the target language is frequently approached as word-for-word substitution, producing literal translations that are grammatically incorrect or unnatural; understanding that translation is meaning transfer, not word transfer, is the key conceptual shift. Pupils may not differentiate their register for different writing task types, using the same informal vocabulary for a formal letter as for a personal diary entry; teaching register awareness with specific examples from different text types develops appropriate flexibility.",
+      "concept_type": "skill",
+      "complexity_level": 4,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -252,6 +276,38 @@
       "relationship_type": "instructional",
       "strength": 0.65,
       "rationale": "Understanding the tense system of the target language supports reading comprehension of authentic texts by enabling pupils to identify when events occur, which is a prerequisite for accurate comprehension of narrative and argumentative texts."
+    },
+    {
+      "prerequisite_concept": "LA-KS3-C002",
+      "dependent_concept": "LA-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "GCSE listening to authentic spoken language develops directly from KS3 extended oral communication skills, requiring the same fundamental phonological processing but at greater speed, with less pedagogical control, and with more complex comprehension tasks."
+    },
+    {
+      "prerequisite_concept": "LA-KS3-C006",
+      "dependent_concept": "LA-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "GCSE extended written production and translation develops from KS3 extended writing and translation, requiring the same skills at greater length, with a wider grammatical range, across more genres, and with more demanding accuracy expectations."
+    },
+    {
+      "prerequisite_concept": "LA-KS4-C001",
+      "dependent_concept": "LA-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.85,
+      "rationale": "Command of the tense and aspect system is a prerequisite for GCSE extended writing, which is assessed on the range of tenses and structures used as well as their accuracy. Writing with restricted tense range cannot reach the higher grade bands regardless of other qualities."
+    },
+    {
+      "prerequisite_concept": "LA-KS4-C002",
+      "dependent_concept": "LA-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.85,
+      "rationale": "Grammatical accuracy and range are directly assessed in extended writing production; the range and accuracy of structures used are explicitly graded criteria. A secure grammatical foundation is therefore a direct prerequisite for high-quality extended written production."
     }
   ]
 }

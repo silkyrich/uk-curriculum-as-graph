@@ -203,6 +203,18 @@
       "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": true
+    },
+    {
+      "concept_id": "LA-KS3-C006",
+      "domain_id": "LA-KS3-D003",
+      "concept_name": "Extended Writing and Translation",
+      "description": "Extended writing in the target language at KS3 requires pupils to produce prose using an increasingly wide range of grammatical structures and vocabulary, across different genres and for different purposes. This represents a qualitative shift from the phrase-level and sentence-level writing of KS2 to the production of coherent, structured texts with multiple sentences and paragraphs. The explicit requirement to translate short passages into the target language places a premium on grammatical precision, since translation exposes misunderstandings that are less visible in free writing. Writing creatively — expressing original ideas and opinions in the target language — develops the communicative confidence and range that marks authentic language proficiency.",
+      "teaching_guidance": "Teach writing through a process approach: brainstorm, plan, draft, revise, edit. Develop pupils' use of connectives and discourse markers that structure writing effectively: firstly, however, on the other hand, in conclusion. Teach pupils to self-edit systematically: does every adjective agree? Is every tense formed correctly? Is word order correct throughout? Develop translation as an explicit skill: use carefully selected short passages that test specific grammatical knowledge, discuss translation choices, and compare translations to develop awareness of the difference between literal and idiomatic translation. Build extended writing by teaching paragraph structures explicitly: topic sentence, examples, connective, development.",
+      "key_vocabulary": "write, prose, grammar, vocabulary, translate, creative, opinion, justify, structure, paragraph, connective, draft, revise, accuracy, range, genre",
+      "common_misconceptions": "Pupils may write long texts using only simple structures, avoiding grammatical complexity for fear of error; teaching them to take controlled grammatical risks while self-editing for accuracy develops both range and accuracy. Translation is sometimes approached as a word-for-word substitution exercise; understanding that translation requires transfer of meaning, not form, and that a good translation sounds natural in the target language, develops more sophisticated translation practice. Pupils may not see writing as a skill that can be developed through practice and strategy; explicitly teaching writing as a process with drafting and revision normalises the idea that good writing takes time and iteration.",
+      "concept_type": "skill",
+      "complexity_level": 3,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -245,6 +257,22 @@
       "relationship_type": "developmental",
       "strength": 0.75,
       "rationale": "KS2 language awareness and transfer develops the metalinguistic and intercultural sensitivity on which KS3 deeper engagement with language and culture is founded."
+    },
+    {
+      "prerequisite_concept": "LA-KS2-C007",
+      "dependent_concept": "LA-KS3-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 extended writing and translation develops directly from KS2 phrase-based and sentence-based writing, requiring the same foundational ability to produce language from memory and adapt it, but at greater length, with greater grammatical range, and across more diverse genres."
+    },
+    {
+      "prerequisite_concept": "LA-KS3-C001",
+      "dependent_concept": "LA-KS3-C006",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.85,
+      "rationale": "Extended writing at KS3 requires conscious and deliberate application of the grammatical system of the target language; pupils cannot produce prose using a range of tenses, moods and structures without explicit grammatical knowledge of how those structures work."
     }
   ]
 }

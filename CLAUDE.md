@@ -24,7 +24,8 @@ Each **layer** is self-contained with its own:
 
 1. **`layers/uk-curriculum/`** - UK National Curriculum (2014)
    - Foundation layer - everything else builds on this
-   - 1,219 concepts, 1,551 objectives, 316 domains across 55 subjects (KS1–KS4)
+   - 1,278+ concepts, 1,559+ objectives, 316 domains across 55 subjects (KS1–KS4)
+   - 1,354 prerequisite relationships (cross-KS aware via two-pass import)
    - Script: `import_curriculum.py`
 
 2. **`layers/assessment/`** - KS2 Test Frameworks
@@ -410,7 +411,10 @@ class LayerImporter:
 - Plus 3 existing KS3-4 combined programmes: Citizenship, Computing, Physical Education
 
 ✅ **Complete layers:**
-- UK National Curriculum (55 subjects, 316 domains, 1,551 objectives, 1,219 concepts — KS1–KS4)
+- UK National Curriculum (55 subjects, 316 domains, 1,559+ objectives, 1,278+ concepts — KS1–KS4, 1,354+ prerequisites)
+  - Two-pass import: nodes in pass 1, all PREREQUISITE_OF in pass 2 (cross-KS links resolve correctly)
+  - Enriched: D&T KS1-KS4 concepts added; History disciplinary objectives filled; Y6 Maths/English concepts added for KS3 prerequisite links
+  - Quality fixes: concept_type normalisation, Art KS4 prefix (AD- not ART-), Languages KS4 subject name consistency
 - Assessment (KS2 test frameworks)
 - Epistemic Skills
 - Topics
@@ -420,9 +424,13 @@ class LayerImporter:
 
 ✅ **In Aura cloud database — clean full import (2026-02-21):**
 - Instance: education-graphs (6981841e)
-- **3,995 total nodes**
+- **~4,060 total nodes** (post-enrichment; verify with `MATCH (n) RETURN count(n)`)
 - Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
 - 5 Bloom perspectives uploaded and active
+
+🔄 **Needs reimport after current enrichment round:**
+- Geography KS1-KS3 place knowledge concepts being added (GE-KS1-D002, GE-KS2-D002, GE-KS3-D001/D002)
+- Languages KS2-KS4 reading/writing/listening concepts being added (LA-KS2-D002/D003, LA-KS3-D003, LA-KS4-D001/D004)
 
 ✅ **Compliance framework (2026-02-20):**
 - Data classification spec (`core/compliance/DATA_CLASSIFICATION.md`)

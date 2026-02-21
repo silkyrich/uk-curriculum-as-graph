@@ -204,6 +204,30 @@
       "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": false
+    },
+    {
+      "concept_id": "LA-KS2-C006",
+      "domain_id": "LA-KS2-D002",
+      "concept_name": "Reading in the Target Language",
+      "description": "Reading in a foreign language requires pupils to decode written text using their phonological knowledge of the target language's sound-spelling correspondences, while simultaneously applying vocabulary and grammatical knowledge to construct meaning. At KS2, pupils develop the ability to read words, phrases and simple texts in the target language with careful attention to meaning, making use of context and dictionaries to resolve unfamiliar vocabulary. Engagement with stories, songs, poems and rhymes in the written form of the target language develops both decoding skill and cultural engagement, as pupils encounter the imaginative and literary traditions of the target language community.",
+      "teaching_guidance": "Connect reading to the oral language pupils have already encountered: what they can say, they should be able to read. Build reading from familiar phrases and vocabulary before introducing unfamiliar written material. Use shared reading of simple texts with visual support (images, diagrams) to develop reading for meaning. Teach dictionary use as a strategy for resolving unfamiliar vocabulary, including the skill of identifying headwords and selecting the correct meaning from multiple options. Engage pupils with songs, poems and simple stories in the target language as authentic reading material that is motivating and culturally rich. Develop the ability to read aloud with accurate pronunciation, connecting spelling to sound in the target language.",
+      "key_vocabulary": "read, text, word, phrase, sentence, meaning, understand, dictionary, vocabulary, story, poem, song, rhyme, decode, pronunciation, spelling",
+      "common_misconceptions": "Pupils may attempt to read target language text using English sound-spelling correspondences, producing systematic mispronunciation. Consistent phonics-based teaching of the target language's sound system prevents this. Some pupils may believe that understanding every word is necessary before any meaning can be extracted; teaching reading for gist and the use of context to infer meaning develops more effective reading strategies. Dictionary use may be seen as admitting failure rather than as a competent reading strategy; normalising dictionary use as a skilled behaviour encourages its effective application.",
+      "concept_type": "skill",
+      "complexity_level": 1,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "LA-KS2-C007",
+      "domain_id": "LA-KS2-D003",
+      "concept_name": "Writing in the Target Language",
+      "description": "Writing in a foreign language at KS2 begins with reproducing and adapting learned phrases, developing pupils' ability to express ideas in the written form of the target language without copying from a visual prompt. Starting with phrases from memory demonstrates that language has been internalised, not merely copied. Adapting learned phrases to create new sentences is a crucial step towards productive competence: pupils apply their grammatical knowledge (of gender, verb forms, word order) to create language beyond the specific examples they have been taught. Describing people, places, things and actions across a range of topics develops the breadth of written productive ability.",
+      "teaching_guidance": "Scaffold the progression from copying to independent writing carefully: begin with supported writing frames, move to partially completed sentences, then to writing from memory prompts, then to unprompted writing. Teach pupils to check their writing for accuracy: does the adjective agree with the noun? Is the verb conjugated correctly? Is the word order correct? Use writing as consolidation after oral practice: what pupils can say, they should be able to write. Develop pupils' use of a bilingual dictionary or glossary for self-checking rather than for word-by-word translation. Celebrate writing as a means of communication: display and share what pupils write, and where possible use writing for real communicative purposes (pen pal letters, class books, display captions).",
+      "key_vocabulary": "write, phrase, sentence, describe, adapt, create, express, memory, idea, topic, people, place, action, accurate, check, grammar",
+      "common_misconceptions": "Pupils may produce writing by copying from classroom displays or books rather than from memory; building in activities that require independent recall (covering the model before writing) develops genuine productive competence. Pupils may view written accuracy as the only criterion for good writing; developing the ability to communicate meaning effectively even with some errors alongside developing accuracy produces more confident writers. Some pupils may feel that they cannot write in a foreign language; scaffolded, achievable writing tasks with clear success criteria build confidence before demanding more extended production.",
+      "concept_type": "skill",
+      "complexity_level": 2,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -238,6 +262,38 @@
       "relationship_type": "instructional",
       "strength": 0.65,
       "rationale": "Vocabulary acquisition provides the practical experience of encountering similarities and differences between languages (cognates, false friends, different conceptual mappings) from which language awareness and transfer insights develop."
+    },
+    {
+      "prerequisite_concept": "LA-KS2-C001",
+      "dependent_concept": "LA-KS2-C006",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.85,
+      "rationale": "Phonological knowledge of the target language's sound system is the foundation for reading: pupils need to understand how the target language's spelling represents sounds in order to decode written text with accurate pronunciation."
+    },
+    {
+      "prerequisite_concept": "LA-KS2-C002",
+      "dependent_concept": "LA-KS2-C006",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Vocabulary knowledge is prerequisite to reading comprehension: pupils cannot extract meaning from written text without recognising a sufficient proportion of the vocabulary it contains."
+    },
+    {
+      "prerequisite_concept": "LA-KS2-C003",
+      "dependent_concept": "LA-KS2-C007",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Grammatical knowledge of gender, number and verb conjugation is prerequisite to producing accurate written language: writing phrases from memory and adapting them to new sentences requires applying grammatical rules, not merely reproducing memorised forms."
+    },
+    {
+      "prerequisite_concept": "LA-KS2-C006",
+      "dependent_concept": "LA-KS2-C007",
+      "confidence": "inferred",
+      "relationship_type": "logical",
+      "strength": 0.7,
+      "rationale": "Reading and writing in the target language are mutually reinforcing skills: reading exposes pupils to correctly written examples of the language that provide models for their own written production, and the process of reading develops awareness of correct spelling and grammar."
     }
   ]
 }
