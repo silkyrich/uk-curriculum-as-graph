@@ -211,13 +211,50 @@ Every question, every intervention, every difficulty adjustment is **grounded in
 
 ---
 
+## Compliance Checklist (Required for Every New User Story)
+
+Every user story must include a **Privacy & Compliance** section at the end, completing this checklist:
+
+```markdown
+## Privacy & Compliance
+
+### Data elements introduced or modified
+| Element | Tier | Justification | Retention |
+|---|---|---|---|
+| [e.g., error_pattern_id] | Tier 1 | Misconception detection | 12 months rolling |
+
+### Consent basis
+- Processing purpose: [A/B/C/D/E from CONSENT_RULES.md]
+- New consent required? [Yes/No]
+
+### Prohibited data check
+- [ ] No emotional state inference
+- [ ] No interest/preference profiling
+- [ ] No personal disclosure storage
+- [ ] No engagement metrics beyond session events
+- [ ] Prompt classifier handles off-curriculum input
+
+### LLM prompt check (if applicable)
+- [ ] No PII beyond child first name in prompt
+- [ ] Concept IDs and curriculum text only
+- [ ] Output classifier active
+
+### DPIA impact
+- [ ] No change to processing / [Description of change → update core/compliance/DPIA.md]
+```
+
+Reference: `core/compliance/DATA_CLASSIFICATION.md`, `core/compliance/CONSENT_RULES.md`
+
+---
+
 ## Next Steps
 
-1. **Complete remaining stories** (7 more to write)
+1. **Complete remaining stories** (7 more to write — each with compliance checklist)
 2. **Create parent dashboard mockups** (showing curriculum-mapped progress)
 3. **Define data schemas** (formal JSON schemas for session data, learner models)
 4. **Write detection algorithms** (production-ready pseudocode for all patterns)
-5. **Build privacy compliance doc** (GDPR, Children's Code UK, COPPA)
+5. ~~Build privacy compliance doc~~ ✅ **Done** — see `core/compliance/` and `docs/design/CHILD_PROFILE_CONSENT.md`
+6. **Complete DPIA** (skeleton at `core/compliance/DPIA.md` — needs human review, legal counsel, DPO sign-off)
 
 ---
 

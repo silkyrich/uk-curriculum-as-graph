@@ -8,6 +8,8 @@ A **multi-layer knowledge graph** comparing UK National Curriculum with US stand
 
 **Main use case**: Understand curriculum structure, compare international standards, map learning progressions, and generate age-appropriate AI lessons via graph queries.
 
+**Regulatory context**: This platform serves children (age 5-14). All development is governed by the ICO Children's Code (Age Appropriate Design Code), UK GDPR, and the platform's own ethical framework. See **Privacy & Compliance** section below.
+
 ---
 
 ## Project Architecture (Layer-Based)
@@ -61,6 +63,7 @@ Each **layer** is self-contained with its own:
 
 - **`core/scripts/`** - Schema, validation, config shared across all layers
 - **`core/migrations/`** - Database migrations (add properties, fix data)
+- **`core/compliance/`** - Data classification, consent rules, DPIA (see Privacy & Compliance below)
 - **`layers/visualization/`** - Bloom perspectives, display property formatting
 
 ---
@@ -137,6 +140,7 @@ python3 core/scripts/create_schema.py
 3. Create import script following pattern
 4. Add constraints to `core/scripts/create_schema.py`
 5. Add validation checks to `core/scripts/validate_schema.py`
+6. **Compliance check**: Classify any new data against `core/compliance/DATA_CLASSIFICATION.md` — if it touches learner data, update the DPIA
 
 ### Update data for one layer
 ```bash
@@ -223,6 +227,68 @@ All nodes have `display_category` property:
 
 ---
 
+## Privacy & Compliance (Children's Data)
+
+**This section is mandatory reading for anyone building features that touch learner data, session data, parent accounts, or AI interactions.**
+
+### Regulatory Position
+
+We are a **commercial edtech controller** offering a direct-to-parent/child service. We are **in scope** of the ICO Children's Code (all 15 standards). The education exemption does **not** apply to us — it only applies to schools acting as processors.
+
+### The Core Rule
+
+**The AI learns HOW the child learns, not WHO the child is.**
+
+Every data element must pass this test: "Is this necessary to make a better pedagogical decision?" If no, don't collect it.
+
+### Data Tiers (Mandatory Classification)
+
+Any new data element introduced anywhere in the platform must be classified into one of these tiers. See `core/compliance/DATA_CLASSIFICATION.md` for the full specification.
+
+| Tier | What | Where Stored | Example |
+|---|---|---|---|
+| **0: Identity** | Account data | Separate identity service, NEVER in event log | Parent email, child first name, year group |
+| **1: Learning Events** | Pseudonymous interaction data | Event store (UUID, no names) | Attempt result, response time, error pattern, concept ID |
+| **2: Derived Model** | Computed from Tier 1 (not stored independently) | Runtime projection | Mastery probability, spacing interval, scaffold preference |
+| **3: Aggregated** | Anonymised population data (1000+ minimum) | Analytics store | Common misconceptions per concept |
+| **PROHIBITED** | Never collected under any circumstances | Nowhere | Emotional state, interests, personal disclosures, device fingerprints |
+
+### Consent Architecture
+
+Consent must be **specific** and **unbundled** (separate toggles per purpose):
+
+| Purpose | Required for service? | Default | Lawful Basis |
+|---|---|---|---|
+| Core adaptive learning | Yes | Off until consented | Parental consent (Art. 6(1)(a) + Art. 8) |
+| Teacher sharing | No | Off | Parental consent |
+| Anonymised analytics | No | Off | Parental consent |
+| Camera/microphone | No | Off, per activity | Parental consent |
+| Anomaly detection (safety) | Active while service is active | On | Legitimate interests (Art. 6(1)(f)) |
+
+### Profiling Justification
+
+Adaptive learning **is** profiling under the Children's Code. Standard 12 says profiling must be off by default. Our compelling reason: knowledge tracing is core to the service, personalised instruction is in the child's best interests (evidence-based), all content is curriculum-grounded (no harmful content risk), and full parent transparency/control is provided.
+
+### Key Compliance Documents
+
+| Document | Purpose | Status |
+|---|---|---|
+| `core/compliance/DATA_CLASSIFICATION.md` | What data can/cannot be collected — the developer reference | Active |
+| `core/compliance/CONSENT_RULES.md` | Consent requirements per processing purpose | Active |
+| `core/compliance/DPIA.md` | Data Protection Impact Assessment (ICO Annex D) | Skeleton — needs completion before launch |
+| `docs/design/CHILD_PROFILE_CONSENT.md` | Full legal and ethical analysis | Reference |
+| `docs/research/privacy-compliance/` | Source audit trail for all regulatory research | Reference |
+
+### Compliance in Development Workflow
+
+Every feature that introduces or modifies data processing must:
+1. Classify all data elements against `DATA_CLASSIFICATION.md`
+2. Confirm consent basis against `CONSENT_RULES.md`
+3. Update the DPIA if processing changes
+4. Include a privacy boundary section in any user story
+
+---
+
 ## Where to Find Things
 
 **Want to work on...**
@@ -234,6 +300,8 @@ All nodes have `display_category` property:
 - User stories? → `docs/user-stories/`
 - Schema definition? → `core/scripts/create_schema.py`
 - Import all data? → `core/scripts/import_all.py` (orchestrator)
+- **Privacy & data rules?** → `core/compliance/` (start here for any learner data question)
+- **Consent architecture?** → `docs/design/CHILD_PROFILE_CONSENT.md`
 
 **Confused about...**
 
@@ -241,6 +309,8 @@ All nodes have `display_category` property:
 - Layer architecture? → This file (CLAUDE.md)
 - Specific layer? → `layers/{layer-name}/README.md`
 - Learner profile queries? → `layers/learner-profiles/README.md`
+- **What data you can collect?** → `core/compliance/DATA_CLASSIFICATION.md`
+- **What needs consent?** → `core/compliance/CONSENT_RULES.md`
 
 ---
 
@@ -305,6 +375,7 @@ class LayerImporter:
 
 ## Development Workflow
 
+### Graph Layer Development
 1. **Research** → `layers/{layer}/research/`
 2. **Extract** → Create JSONs in `layers/{layer}/extractions/`
 3. **Validate** → Run `core/scripts/validate_extractions.py`
@@ -312,6 +383,16 @@ class LayerImporter:
 5. **Verify** → Run `core/scripts/validate_schema.py`
 6. **Document** → Update `layers/{layer}/README.md`
 7. **Commit** → Git commit with clear message
+
+### Feature / Application Development (Touches Learner Data)
+1. **Classify data** → Check every new data element against `core/compliance/DATA_CLASSIFICATION.md`
+2. **Check consent** → Confirm lawful basis in `core/compliance/CONSENT_RULES.md`
+3. **Design** → Include privacy boundary section (what is/isn't stored, retention, deletion)
+4. **Build** → Enforce Tier 0/1 separation (identity never in event log)
+5. **Test** → Verify no PII leaks into event log, LLM prompts, or analytics
+6. **Update DPIA** → If processing has changed, update `core/compliance/DPIA.md`
+7. **Document** → User story with compliance checklist completed
+8. **Commit** → Git commit with clear message
 
 ---
 
@@ -343,25 +424,38 @@ class LayerImporter:
 - Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
 - 5 Bloom perspectives uploaded and active
 
+✅ **Compliance framework (2026-02-20):**
+- Data classification spec (`core/compliance/DATA_CLASSIFICATION.md`)
+- Consent rules spec (`core/compliance/CONSENT_RULES.md`)
+- DPIA skeleton (`core/compliance/DPIA.md`) — needs completion before launch
+- Full legal/ethical analysis (`docs/design/CHILD_PROFILE_CONSENT.md`)
+- Regulatory research audit trail (`docs/research/privacy-compliance/`)
+- CLAUDE.md updated with compliance as first-class development concern
+
 🚧 **In progress:**
 - Oak National Academy content (skeleton only)
 - Alignment mappings (CASE ↔ UK)
+- DPIA completion (skeleton exists, needs human review and sign-off)
 
 ---
 
 ## Key Files to Read First
 
-1. This file (CLAUDE.md) - Architecture overview + graph model
-2. `docs/README.md` - Documentation navigation guide
-3. `layers/uk-curriculum/README.md` - Core layer
-4. `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md` - NGSS structure
-5. `layers/learner-profiles/README.md` - Age-appropriate design layer + agent query patterns
-6. `docs/design/RESEARCH_BRIEFING.md` - Research briefing and rationale for the learner layer
+1. This file (CLAUDE.md) - Architecture overview **including compliance rules**
+2. `core/compliance/DATA_CLASSIFICATION.md` - **What data you can and cannot collect**
+3. `docs/README.md` - Documentation navigation guide
+4. `core/docs/graph_model_overview.md` - Data model
+5. `layers/uk-curriculum/README.md` - Core layer
+6. `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md` - NGSS structure
+7. `layers/learner-profiles/README.md` - Age-appropriate design layer + agent query patterns
+8. `docs/design/RESEARCH_BRIEFING.md` - Research briefing and rationale for the learner layer
+9. `docs/design/CHILD_PROFILE_CONSENT.md` - Full consent and compliance analysis
 
 ---
 
 ## Don't Do This
 
+### Architecture
 ❌ Add namespace labels (`:Curriculum:Objective`) - We removed these for clarity
 ❌ Hardcode credentials in scripts - Use `neo4j_config.py`
 ❌ Create generic "CFItem" blobs - Parse structure intelligently
@@ -369,6 +463,28 @@ class LayerImporter:
 ❌ Mix layer data in scripts - Keep layers self-contained
 ❌ Add flat age/interaction properties to Year nodes - Use the learner-profiles layer instead
 ❌ Match Year nodes on `year_code` - the property is `year_id`
+
+### Privacy & Compliance (Non-Negotiable)
+❌ Store child's name, school, or any PII in the learning event log - Identity and events are architecturally separated
+❌ Store emotional states, interests, or personal disclosures - Prompt classifier must flag and discard these
+❌ Send PII to LLM without processor agreement - Check `CONSENT_RULES.md` before adding anything to prompts
+❌ Add engagement-maximising metrics (scroll depth, tap heatmaps, streak counts) - We optimise learning, not engagement
+❌ Add gamification that creates extrinsic pressure (badges, leaderboards, progress bars, streaks, loss aversion) - Meta-analyses show net negative effect, especially for introverted learners
+❌ Build AI that claims emotional reciprocity ("I missed you", "We're friends", "I was thinking about you") - Creates parasocial dependency; not in child's best interests
+❌ Use time-of-day patterns for behavioural profiling or push notifications - Session timestamps for spacing are fine; engagement scheduling is not
+❌ Profile for anything other than curriculum-aligned pedagogy - Commercial profiling is prohibited
+❌ Collect data without classifying it against `DATA_CLASSIFICATION.md` - Every new data element must be classified
+❌ Bundle consent purposes together - Each processing purpose needs its own toggle
+❌ Share child data with third parties without explicit per-recipient parent consent
+❌ Retain session transcripts beyond 30 days or learning events beyond 12 months
+❌ Present mastery predictions to children in ways that could label or stigmatise them
+
+### Permitted Design Choices (Not Prohibited)
+✅ Warm, encouraging educational character with personality — a friendly avatar that says "Let's explore fractions!" is fine
+✅ Session timestamps, response times, event timestamps — essential for spacing algorithms and session limits
+✅ Surprise/delight moments tied to genuine learning milestones — not engagement metrics
+✅ Session duration visible to parents — informational, not competitive
+✅ Age-appropriate celebratory feedback ("You figured it out!") — not contingent on streaks or return visits
 
 ---
 

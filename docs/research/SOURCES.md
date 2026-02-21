@@ -29,6 +29,15 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 | 17 | KG learning path | 2025 | academic paper | briefing summary only | High | Direct application of knowledge graphs to learning path recommendation |
 | 18 | LLM education review | 2025 | systematic review | briefing summary only | High | LLM over structured domain model architecture; 35% hint failure rate |
 | 19 | ICO Children's Code | 2020 | regulatory standard | no cache — briefing only | High | UK GDPR / data minimisation requirements for children's platforms |
+| 20 | ICO EdTech Guidance | 2023 | regulatory guidance | web search summaries | Critical | Determines in-scope status; controller vs processor distinction |
+| 21 | UK GDPR Art. 8 / DPA 2018 s.9 | 2018 | legislation | multiple secondary sources | Critical | Age 13 consent threshold; parental consent verification |
+| 22 | ICO Profiling Standards (5 & 12) | 2021 | regulatory guidance | web search summaries | Critical | Profiling-off-by-default; compelling reason test for adaptive learning |
+| 23 | ICO DPIA Requirements (Standard 2) | 2021 | regulatory guidance | web search summaries | High | DPIA mandatory; Annex D template; children-specific risk assessment |
+| 24 | ICO Best Interests: Profiling for ADM | 2023 | regulatory guidance | web search summaries | High | Automated decision-making framework; Recital 71 |
+| 25 | ICO Best Interests: Content Personalisation | 2023 | regulatory guidance | web search summaries | High | Content delivery profiling rules; compelling reason examples |
+| 26 | Data (Use and Access) Act | 2025 | legislation | web search references | Medium | All ICO guidance under review from June 2025 |
+| 27 | Online Safety Act 2023 | 2023 | legislation | web search references | Medium | Protection of Children Codes from July 2025 |
+| 28 | Proposed education-specific code | 2025+ | proposed legislation | web search references | Medium | Would directly address AI profiling in education |
 
 ---
 
@@ -485,4 +494,80 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 
 ---
 
-*End of annotated bibliography. Learning science papers are cached in themed subdirectories under `docs/research/learning-science/` (knowledge-tracing, intelligent-tutoring, motivation-and-engagement, cognitive-learning, llm-in-education); interoperability specs in `docs/research/interoperability/`. For each entry, the access level field indicates the confidence that should be placed in derived design decisions: full text fetched is the highest confidence; briefing summary only means the design decision is based on secondary characterisation and should be verified against primary sources before external academic citation.*
+## 8. Privacy, Compliance, and Consent (Added 2026-02-20)
+
+### ICO EdTech Guidance (2023)
+**Citation:** Information Commissioner's Office (ICO). The Children's Code and Education Technologies (EdTech). 2023.
+**URL:** https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/the-children-s-code-and-education-technologies-edtech/
+**Type:** regulatory guidance
+**Access:** web search summaries only (ICO site returned 403 on direct fetch)
+**Relevance:** Critical
+
+**What it is:** ICO guidance clarifying when the Children's Code applies to education technology providers. Establishes the controller/processor distinction and the three conditions that must ALL be met for edtech to be out of scope.
+
+**What we derived from it:** Our platform is in scope because we are a direct-to-consumer service that determines the purposes and means of processing. Full compliance with all 15 standards is required.
+
+**Cached at:** `docs/research/privacy-compliance/ico_edtech_guidance.md`
+
+---
+
+### UK GDPR Article 8 / DPA 2018 s.9 — Parental Consent
+**Citation:** UK GDPR Article 8; Data Protection Act 2018 Section 9.
+**URLs:** https://gdpr-info.eu/art-8-gdpr/ ; https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/children-and-the-uk-gdpr/what-are-the-rules-about-an-iss-and-consent/
+**Type:** legislation + regulatory guidance
+**Access:** multiple secondary sources (Fieldfisher, Sprintlaw, ICO web search summaries)
+**Relevance:** Critical
+
+**What it is:** The legal mechanism for parental consent for under-13s in the UK. Sets the age threshold at 13, requires "reasonable efforts" to verify parental responsibility, and defines when consent vs other lawful bases apply.
+
+**What we derived from it:** Consent is our primary lawful basis. Email loop + micro-charge verification is proportionate for our risk level. The consent flow in CHILD_PROFILE_CONSENT.md implements these requirements.
+
+**Cached at:** `docs/research/privacy-compliance/uk_gdpr_art8_parental_consent.md`
+
+---
+
+### ICO Profiling Standards (Standards 5 and 12)
+**Citation:** ICO Age Appropriate Design Code, Standards 5 and 12. 2021.
+**URLs:** https://ico.org.uk/.../12-profiling/ ; https://ico.org.uk/.../profiling-for-automated-decision-making/ ; https://ico.org.uk/.../profiling-for-content-delivery/
+**Type:** regulatory guidance
+**Access:** web search summaries only (403 on direct fetch)
+**Relevance:** Critical
+
+**What it is:** The two standards most challenging for adaptive learning: Standard 5 (no detrimental use of data) and Standard 12 (profiling off by default, compelling reason test). Together they define the boundary conditions for our core functionality.
+
+**What we derived from it:** Our compelling reason argument for adaptive learning profiling (core to service, evidence-based pedagogy, no harmful content, full safeguards). Documented in CHILD_PROFILE_CONSENT.md Section 3.
+
+**Cached at:** `docs/research/privacy-compliance/ico_profiling_standards.md`
+
+---
+
+### ICO DPIA Requirements (Standard 2)
+**Citation:** ICO Age Appropriate Design Code, Standard 2: Data Protection Impact Assessments. 2021.
+**URL:** https://ico.org.uk/.../2-data-protection-impact-assessments/
+**Type:** regulatory guidance
+**Access:** web search summaries only
+**Relevance:** High
+
+**What it is:** DPIA is mandatory for any online service likely to be accessed by children. Must be embedded in design, completed before launch, cover children-specific risks, and follow the Annex D template.
+
+**What we derived from it:** A formal DPIA is required before beta launch. The Annex D template should be downloaded from ICO and populated with the risk analysis from CHILD_PROFILE_CONSENT.md Section 6. This is listed as a gap in our current documentation.
+
+**Cached at:** `docs/research/privacy-compliance/ico_dpia_requirements.md`
+
+---
+
+### Upcoming Legislation: Data (Use and Access) Act, Online Safety Act, Education Code
+**Citations:** Data (Use and Access) Act 2025; Online Safety Act 2023; Proposed education-specific code of practice.
+**Type:** legislative tracking
+**Access:** web search references and secondary analysis
+**Relevance:** Medium
+
+**What it is:** Three pieces of legislation that may affect our compliance architecture. The Data (Use and Access) Act (June 2025) puts all ICO guidance under review. The Online Safety Act (July 2025) adds complementary safety duties. A proposed education-specific code would directly address AI profiling in education.
+
+**What we derived from it:** The regulatory direction is toward MORE scrutiny of automated systems serving children. Our transparency-first architecture positions us well, but we should monitor ICO guidance updates and engage with the education code consultation if possible.
+
+**Cached at:** `docs/research/privacy-compliance/upcoming_legislation.md`
+
+---
+
+*End of annotated bibliography. Learning science papers are cached in themed subdirectories under `docs/research/learning-science/` (knowledge-tracing, intelligent-tutoring, motivation-and-engagement, cognitive-learning, llm-in-education); interoperability specs in `docs/research/interoperability/`; privacy and compliance sources in `docs/research/privacy-compliance/`. For each entry, the access level field indicates the confidence that should be placed in derived design decisions: full text fetched is the highest confidence; briefing summary only means the design decision is based on secondary characterisation and should be verified against primary sources before external academic citation.*
