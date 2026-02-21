@@ -1,0 +1,696 @@
+{
+  "metadata": {
+    "subject": "Chemistry",
+    "key_stage": "KS4",
+    "years_covered": [10, 11],
+    "document_reference": "DFE-00442-2014",
+    "extraction_date": "2026-02-21",
+    "structure_rating": 8
+  },
+  "domains": [
+    {
+      "domain_id": "CH-KS4-D001",
+      "domain_name": "Atomic Structure and the Periodic Table",
+      "description": "The structure of atoms, the development of atomic models, the arrangement of electrons in shells and sub-shells, and the organisation of elements in the periodic table by atomic number. Covers trends in properties across periods and down groups, including alkali metals, halogens and noble gases.",
+      "curriculum_context": "Atomic structure underpins the whole of chemistry and extends the KS3 introduction to elements and atoms. The DfE GCSE Chemistry subject content requires pupils to understand the structure of the atom in terms of protons, neutrons and electrons, to use the periodic table to determine the number of electrons in an atom, and to explain how the electronic structure of atoms explains the periodic properties of elements. Pupils learn about the historical development of atomic models from Dalton to the nuclear model to the Bohr model, and understand why models change as new evidence emerges. The properties of group 1 (alkali metals), group 7 (halogens) and group 0 (noble gases) are studied as concrete examples of periodic trends. This domain provides the structural foundation for understanding bonding, quantitative chemistry and chemical reactivity.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CH-KS4-D002",
+      "domain_name": "Bonding, Structure and Properties of Matter",
+      "description": "The three types of chemical bonding (ionic, covalent, metallic) and how the nature of bonding determines the bulk properties of substances. Covers giant ionic lattices, simple molecular structures, giant covalent structures, metallic lattices, and the properties of polymers and nanoparticles.",
+      "curriculum_context": "Bonding and structure is one of the most conceptually demanding areas of GCSE Chemistry and requires pupils to reason from atomic-level interactions to bulk observable properties. The DfE subject content requires pupils to explain ionic bonding as the electrostatic attraction between oppositely charged ions formed by electron transfer, covalent bonding as shared electron pairs, and metallic bonding as the electrostatic attraction between positive metal ions and a sea of delocalised electrons. Pupils must use these models to explain and predict physical properties such as melting point, electrical conductivity and solubility. Higher tier pupils additionally consider the shapes of simple molecules and the intermolecular forces that explain properties of simple molecular substances. Nanoparticles and their novel properties represent a contemporary application of structure-property relationships.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CH-KS4-D003",
+      "domain_name": "Quantitative Chemistry",
+      "description": "The mathematical treatment of chemical reactions using the concept of the mole, relative formula mass, balanced equations and stoichiometry. Covers conservation of mass, moles and masses, concentrations of solutions, percentage yield, atom economy, and titration calculations.",
+      "curriculum_context": "Quantitative chemistry represents the mathematical backbone of the GCSE Chemistry specification and is explicitly identified in the DfE subject content as requiring a high level of mathematical demand. Pupils must be able to calculate relative formula masses from atomic masses, use the mole concept to relate mass to amount of substance, and apply stoichiometry to calculate the masses of reactants and products in chemical reactions. The concept of atom economy connects quantitative chemistry to green chemistry principles and sustainable industrial processes. Higher tier pupils also carry out volumetric analysis (titration) calculations and use ideal gas equations. This domain integrates mathematical skills from GCSE Mathematics and requires pupils to use significant figures, standard form and percentage calculations accurately.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CH-KS4-D004",
+      "domain_name": "Chemical Changes",
+      "description": "The study of chemical reactions including the reactivity series, displacement reactions, extraction of metals, acid-base reactions, electrolysis and the production of salts. Covers oxidation and reduction in terms of both oxygen and electron transfer.",
+      "curriculum_context": "Chemical changes extends the KS3 introduction to acid-base chemistry and reactivity to a more rigorous quantitative and mechanistic level. The DfE subject content requires pupils to understand oxidation and reduction in terms of electron transfer (OIL RIG), to use the reactivity series to predict displacement reactions and explain the extraction of metals from their ores, and to describe electrolysis as the decomposition of an ionic compound in solution or in the molten state using direct current. Required practicals include the preparation of salts by neutralisation and the electrolysis of aqueous solutions. Pupils must be able to write balanced ionic equations, including half equations for electrolysis reactions (Higher tier). This domain connects directly to the atomic structure and bonding domains, as understanding electron transfer requires prior knowledge of electronic structure.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CH-KS4-D005",
+      "domain_name": "Energy Changes",
+      "description": "The energy changes that accompany chemical reactions, including exothermic and endothermic reactions, activation energy, bond energies and the use of energy level diagrams. Covers practical measurement of energy changes using calorimetry.",
+      "curriculum_context": "Energy changes in chemical reactions connects to the Physics specification (energy stores and transfers) and requires pupils to reason about why reactions occur from an energy perspective. The DfE subject content requires pupils to understand that energy is stored in chemical bonds and that the overall energy change of a reaction depends on the difference between the energy required to break existing bonds and the energy released when new bonds form. Required practical work includes measuring the temperature change of exothermic and endothermic reactions using a calorimeter. Higher tier pupils apply Hess's law and perform quantitative bond energy calculations. The distinction between activation energy and overall energy change is important conceptually and connects to the rate of reaction domain through the concept of catalysts lowering activation energy.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CH-KS4-D006",
+      "domain_name": "Rate and Extent of Chemical Change",
+      "description": "The factors that affect the rate of chemical reactions (concentration, pressure, temperature, surface area, catalysts) and how to measure and interpret reaction rates. Covers the collision theory model, reversible reactions and dynamic equilibrium, and the effect of changing conditions on equilibrium position (Le Chatelier's principle, Higher tier).",
+      "curriculum_context": "Rate and extent of chemical change is both theoretically rich and practically grounded, offering multiple opportunities for required practical investigations. The DfE subject content requires pupils to use collision theory to explain how each factor affects the rate of reaction and to collect and interpret rate data from graphs. Required practicals include measuring the rate of the reaction between marble chips and acid using gas collection and between sodium thiosulfate and acid using turbidity. The concept of dynamic equilibrium and reversible reactions is developed through the Haber process as a real-world industrial context, connecting quantitative chemistry, green chemistry and economic considerations. Higher tier pupils apply Le Chatelier's principle quantitatively to predict the effect of changing temperature, pressure and concentration on equilibrium position.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CH-KS4-D007",
+      "domain_name": "Organic Chemistry",
+      "description": "The chemistry of carbon-containing compounds, including crude oil and its fractionation, alkanes, alkenes, alcohols, carboxylic acids, and addition and condensation polymers. Covers functional groups, homologous series, isomerism and the reactions of organic compounds including combustion, cracking, addition reactions and polymerisation.",
+      "curriculum_context": "Organic chemistry introduces pupils to the vast and practically important world of carbon chemistry, explaining the properties and reactions of the materials that make up everyday life including fuels, plastics and pharmaceuticals. The DfE subject content requires pupils to understand crude oil as a finite resource consisting of a mixture of hydrocarbons, to explain the industrial fractionation of crude oil in terms of intermolecular forces, and to describe the chemical and combustion properties of alkanes and alkenes. Pupils are required to understand addition polymerisation through the reactions of alkenes and condensation polymerisation through the formation of nylons and polyesters (separate science). The environmental implications of organic chemistry \u2014 combustion of fossil fuels, plastic pollution, use of biofuels \u2014 provide rich contexts for evaluating the social and environmental dimensions of chemistry.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CH-KS4-D008",
+      "domain_name": "Chemical Analysis",
+      "description": "Techniques for identifying substances and assessing the purity of chemical samples. Covers purity and formulations, paper chromatography, flame tests, tests for common ions, tests for gases, and the principles of instrumental analysis including spectroscopy.",
+      "curriculum_context": "Chemical analysis directly addresses the scientific skills of identification and characterisation, making it closely linked to working scientifically. The DfE subject content requires pupils to understand that a pure substance has a fixed melting and boiling point, to use paper chromatography to separate and identify mixtures, and to carry out and interpret flame tests and chemical tests for common ions (carbonate, halide, sulfate) and gases (hydrogen, oxygen, CO2, chlorine). Required practical work includes chromatography and flame tests. The accuracy and limitations of qualitative tests are an important theme, connecting to the broader discussion of analytical techniques including mass spectrometry and atomic emission spectroscopy as instrumental methods. This domain reinforces scientific methodology and the importance of reliable analytical evidence.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CH-KS4-D009",
+      "domain_name": "Chemistry of the Atmosphere",
+      "description": "The composition, origins and changes to the Earth's atmosphere over geological time and in recent decades. Covers the early atmosphere, the evolution of the atmosphere through volcanic activity and photosynthesis, the current composition of the atmosphere, and the evidence for and causes of climate change through greenhouse gas emissions.",
+      "curriculum_context": "Chemistry of the atmosphere connects chemical knowledge to one of the most pressing contemporary issues of environmental science. The DfE subject content requires pupils to explain the development of the Earth's atmosphere from approximately 4.6 billion years ago through volcanic outgassing, oceanic absorption of CO2, and the rise of photosynthetic organisms increasing oxygen levels. Pupils are required to explain the greenhouse effect as the trapping of infrared radiation by greenhouse gases (water vapour, CO2, methane), to evaluate the evidence for and causes of increased greenhouse gas concentrations, and to consider the social, ethical and economic dimensions of climate change and its mitigation. This domain integrates well with the Biology ecology domain and provides rich opportunities for evaluating scientific evidence and considering the relationship between chemistry and society.",
+      "is_cross_cutting": true,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "CH-KS4-D010",
+      "domain_name": "Using Resources",
+      "description": "The Earth's finite resources and how they are used sustainably. Covers finite and renewable resources, the sustainable use of water, the production and disposal of materials including metals, ceramics, glass and polymers, the life cycle assessment of products, and the principles of green chemistry and the circular economy.",
+      "curriculum_context": "Using resources is the most socially engaged domain of the GCSE Chemistry specification, requiring pupils to evaluate the sustainability of chemical processes and materials. The DfE subject content requires pupils to understand that the Earth's resources are finite and unevenly distributed, to explain the purification of water for potable use, and to compare the properties and uses of different materials including metals, ceramics, glass and polymers. Life cycle assessment is used as a systematic tool for evaluating the environmental impact of products from cradle to grave. Pupils are required to evaluate the social, economic and environmental trade-offs of different resource choices, including the use of recycling, bioplastics and alternative fuels. This domain integrates directly with Chemistry of the Atmosphere and provides a rich context for chemistry in everyday life.",
+      "is_cross_cutting": true,
+      "structure_type": "knowledge"
+    }
+  ],
+  "objectives": [
+    {
+      "objective_id": "CH-KS4-O001",
+      "domain_id": "CH-KS4-D001",
+      "objective_text": "Describe the structure of the atom, including the relative masses and charges of protons, neutrons and electrons, and the position of each subatomic particle within the atom.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O002",
+      "domain_id": "CH-KS4-D001",
+      "objective_text": "Explain the development of the atomic model from Dalton's solid sphere model through Thomson's plum pudding model to Rutherford's nuclear model and Bohr's planetary model, and relate each model to the experimental evidence that led to its proposal or revision.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O003",
+      "domain_id": "CH-KS4-D001",
+      "objective_text": "Use the periodic table to determine the number of protons, neutrons and electrons in an atom or ion, and write the electronic configuration of elements with atomic number 1\u201320.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O004",
+      "domain_id": "CH-KS4-D001",
+      "objective_text": "Explain the trends in properties of group 1 (alkali metals), group 7 (halogens) and group 0 (noble gases) in terms of atomic structure, and predict the properties and reactions of unfamiliar elements.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O005",
+      "domain_id": "CH-KS4-D001",
+      "objective_text": "Explain why elements in the same group of the periodic table have similar chemical properties in terms of their number of outer shell electrons.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O006",
+      "domain_id": "CH-KS4-D002",
+      "objective_text": "Explain ionic bonding as the electrostatic attraction between oppositely charged ions formed by the transfer of electrons, and draw dot-and-cross diagrams to represent the formation of ionic compounds.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O007",
+      "domain_id": "CH-KS4-D002",
+      "objective_text": "Explain covalent bonding as the sharing of electron pairs between atoms, and draw dot-and-cross diagrams for common covalently bonded molecules including H2, Cl2, HCl, H2O, NH3 and CH4.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O008",
+      "domain_id": "CH-KS4-D002",
+      "objective_text": "Explain metallic bonding as the electrostatic attraction between positive metal ions and a sea of delocalised electrons, and use this model to explain the physical properties of metals including high melting point, malleability, ductility and electrical conductivity.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O009",
+      "domain_id": "CH-KS4-D002",
+      "objective_text": "Use the type of bonding and structure (giant ionic, simple molecular, giant covalent, metallic) to explain and predict the physical properties of substances including melting point, boiling point, solubility and electrical conductivity.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O010",
+      "domain_id": "CH-KS4-D003",
+      "objective_text": "Calculate the relative formula mass of a compound from the atomic masses of its constituent elements, and use this to calculate the percentage composition by mass.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O011",
+      "domain_id": "CH-KS4-D003",
+      "objective_text": "Use the mole concept (1 mole = 6.02 \u00d7 10\u00b2\u00b3 particles) and the formula moles = mass/Mr to calculate the amounts of reactants and products in reactions.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O012",
+      "domain_id": "CH-KS4-D003",
+      "objective_text": "Calculate the percentage yield of a reaction and the atom economy of a reaction pathway, and explain the importance of atom economy for sustainable chemistry.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O013",
+      "domain_id": "CH-KS4-D003",
+      "objective_text": "Calculate the concentration of solutions in mol/dm\u00b3 and g/dm\u00b3, and apply these calculations to titration data to determine the concentration of an unknown solution (Higher tier).",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O014",
+      "domain_id": "CH-KS4-D004",
+      "objective_text": "Describe the reactivity series of metals and use it to predict whether displacement reactions will occur between metals and metal ion solutions, and between metals and acids.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O015",
+      "domain_id": "CH-KS4-D004",
+      "objective_text": "Explain the extraction of metals from their ores by reduction with carbon or by electrolysis, using reactivity as the criterion for choosing the extraction method.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O016",
+      "domain_id": "CH-KS4-D004",
+      "objective_text": "Describe the reactions of acids with metals, bases and carbonates to form salts, and prepare a pure dry sample of a soluble salt by reaction of an acid with an insoluble base.",
+      "non_statutory_guidance": "Required Practical 3.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O017",
+      "domain_id": "CH-KS4-D004",
+      "objective_text": "Explain electrolysis as the decomposition of an ionic compound using direct current, describe what happens at each electrode, and predict the products of electrolysis of common solutions.",
+      "non_statutory_guidance": "Required Practical 4.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O018",
+      "domain_id": "CH-KS4-D004",
+      "objective_text": "Define oxidation and reduction in terms of oxygen gain/loss and in terms of electron gain/loss (OIL RIG), and identify the oxidising agent and reducing agent in a reaction.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O019",
+      "domain_id": "CH-KS4-D005",
+      "objective_text": "Describe exothermic and endothermic reactions, give examples of each, and represent energy changes using energy level diagrams showing reactants, products and activation energy.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O020",
+      "domain_id": "CH-KS4-D005",
+      "objective_text": "Calculate the energy change of a reaction using average bond energies, explaining that energy is required to break bonds and released when bonds form, and that the overall energy change depends on the difference.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O021",
+      "domain_id": "CH-KS4-D005",
+      "objective_text": "Investigate the variables that affect the temperature change in a reacting solution, using a simple calorimeter to measure the enthalpy change of neutralisation or combustion.",
+      "non_statutory_guidance": "Required Practical 5.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O022",
+      "domain_id": "CH-KS4-D006",
+      "objective_text": "Use collision theory to explain how concentration, pressure, temperature, surface area and catalysts affect the rate of a chemical reaction.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O023",
+      "domain_id": "CH-KS4-D006",
+      "objective_text": "Investigate the effect of concentration on the rate of reaction between sodium thiosulfate and hydrochloric acid, and between marble chips and hydrochloric acid.",
+      "non_statutory_guidance": "Required Practicals 6 and 7.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O024",
+      "domain_id": "CH-KS4-D006",
+      "objective_text": "Explain the concept of a reversible reaction and dynamic equilibrium, and predict how changes in temperature, pressure and concentration shift the position of equilibrium (Higher tier, Le Chatelier's principle).",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O025",
+      "domain_id": "CH-KS4-D007",
+      "objective_text": "Explain the fractional distillation of crude oil in terms of the different chain lengths and boiling points of hydrocarbon fractions, and describe the properties and uses of the main fractions.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O026",
+      "domain_id": "CH-KS4-D007",
+      "objective_text": "Describe the combustion reactions of alkanes and the environmental problems caused by incomplete combustion, sulfur dioxide emissions and nitrogen oxide formation.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O027",
+      "domain_id": "CH-KS4-D007",
+      "objective_text": "Explain cracking as the thermal decomposition of longer-chain alkanes to produce shorter-chain alkanes and alkenes, and explain why cracking is economically important.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O028",
+      "domain_id": "CH-KS4-D007",
+      "objective_text": "Describe addition polymerisation of alkenes and condensation polymerisation to form polyesters and polyamides (nylons), including the monomers and repeating units involved.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O029",
+      "domain_id": "CH-KS4-D008",
+      "objective_text": "Use paper chromatography to separate and identify the components of mixtures, calculate Rf values and use reference data to identify unknown substances.",
+      "non_statutory_guidance": "Required Practical 8.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O030",
+      "domain_id": "CH-KS4-D008",
+      "objective_text": "Carry out and interpret flame tests to identify metal ions (Li: red, Na: yellow, K: lilac, Ca: orange-red, Cu: blue-green), and use chemical precipitation tests to identify carbonate, halide and sulfate ions.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O031",
+      "domain_id": "CH-KS4-D008",
+      "objective_text": "Describe the tests for common gases including hydrogen (squeaky pop with burning splint), oxygen (relights glowing splint), carbon dioxide (turns limewater milky) and chlorine (bleaches damp litmus paper).",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O032",
+      "domain_id": "CH-KS4-D009",
+      "objective_text": "Describe the composition and early evolution of the Earth's atmosphere, explaining how volcanic activity, the condensation of oceans and the rise of photosynthetic organisms changed the atmosphere over geological time.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O033",
+      "domain_id": "CH-KS4-D009",
+      "objective_text": "Explain the greenhouse effect and the role of greenhouse gases (water vapour, carbon dioxide, methane) in maintaining Earth's temperature, and evaluate the evidence for and consequences of human-induced climate change.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O034",
+      "domain_id": "CH-KS4-D009",
+      "objective_text": "Evaluate the social, economic and environmental impacts of climate change and discuss the mitigation strategies including reducing emissions, carbon capture and international agreements.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O035",
+      "domain_id": "CH-KS4-D010",
+      "objective_text": "Distinguish between finite and renewable resources and evaluate the sustainability of the use of different natural resources including ores, fossil fuels and raw materials.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O036",
+      "domain_id": "CH-KS4-D010",
+      "objective_text": "Describe the treatment of water to make it potable, including the use of sedimentation, filtration, chlorination and the desalination of sea water.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O037",
+      "domain_id": "CH-KS4-D010",
+      "objective_text": "Carry out a life cycle assessment for a given product, identifying the inputs and outputs at each stage (raw materials, manufacture, use, disposal) and comparing the environmental impacts of alternative products.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "CH-KS4-O038",
+      "domain_id": "CH-KS4-D010",
+      "objective_text": "Evaluate the use of alternative materials and processes including recycling, bioplastics and alternative fuels, considering the trade-offs between environmental, economic and social factors.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    }
+  ],
+  "concepts": [
+    {
+      "concept_id": "CH-KS4-C001",
+      "domain_id": "CH-KS4-D001",
+      "concept_name": "Atomic Structure and Subatomic Particles",
+      "description": "An atom consists of a very small, dense, positively charged nucleus containing protons and neutrons, surrounded by electrons in shells at relatively large distances. Protons have a mass of 1 and charge of +1; neutrons have a mass of 1 and charge of 0; electrons have negligible mass and charge of -1. The atomic number (proton number) identifies the element; the mass number is the total of protons and neutrons.",
+      "teaching_guidance": "Begin with the macroscopic properties of matter and work backwards to the atomic model. Use the history of atomic models to illustrate how science progresses: Dalton (solid sphere, 1803), Thomson (plum pudding, 1904), Rutherford (nuclear, 1911), Bohr (electron shells, 1913). The gold foil experiment is particularly powerful for showing how unexpected experimental results led to a paradigm shift. Pupils should be able to determine proton, neutron and electron numbers from the periodic table for atoms and ions.",
+      "key_vocabulary": "atom, proton, neutron, electron, nucleus, electron shell, atomic number, mass number, isotope, ion, relative mass, relative charge",
+      "common_misconceptions": "Students often think that neutrons have a positive charge. They also confuse atomic number (protons) with mass number (protons + neutrons), and think that ions have a different number of protons from the corresponding atom. Clarify that the number of protons defines the element and never changes in ordinary chemistry.",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C002",
+      "domain_id": "CH-KS4-D001",
+      "concept_name": "Electronic Configuration and Periodic Trends",
+      "description": "Electrons occupy shells at increasing distances from the nucleus, with the first shell holding up to 2 electrons and subsequent shells holding up to 8. The number of electrons in the outermost shell determines the chemical properties of an element. Elements in the same group have the same number of outer electrons and therefore similar chemical properties. Trends in reactivity, melting point and atomic radius can be explained by electronic configuration.",
+      "teaching_guidance": "Pupils should be able to write electronic configurations in the 2,8,8 format for elements 1\u201320 and draw shell diagrams. Connect directly to group properties: group 1 metals become more reactive down the group (outer electron further from nucleus, more easily lost); group 7 halogens become less reactive down the group (electron gained into higher shell, further from nucleus). Use this as a predictive tool \u2014 can pupils predict the properties of francium or astatine?",
+      "key_vocabulary": "electronic configuration, electron shell, outermost shell, group, period, reactivity trend, atomic radius, ionisation energy, alkali metal, halogen, noble gas",
+      "common_misconceptions": "Students write electronic configurations with too many electrons in inner shells. They also forget that noble gases have full outer shells making them unreactive, and think 'unreactive' means the atom has no electrons. Students often confuse the period number (number of electron shells) with the group number (outer electrons).",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C003",
+      "domain_id": "CH-KS4-D002",
+      "concept_name": "Ionic Bonding and Giant Ionic Lattices",
+      "description": "Ionic bonding occurs when metal atoms lose electrons and non-metal atoms gain electrons, forming oppositely charged ions. The ions arrange themselves in a regular lattice held together by strong electrostatic forces of attraction in all directions. Giant ionic compounds have high melting and boiling points, conduct electricity when molten or in aqueous solution (ions free to move) but not when solid.",
+      "teaching_guidance": "Use dot-and-cross diagrams to show electron transfer. Emphasise that ionic bonding is non-directional \u2014 each ion is attracted to all surrounding opposite ions. The structure of the lattice explains bulk properties: high melting point (many strong electrostatic bonds to break); conducts when molten/dissolved (ions free to move) but not when solid (ions fixed in lattice). NaCl is the standard example; extend to MgO (higher charge ions, higher melting point).",
+      "key_vocabulary": "ionic bond, ion, cation, anion, electrostatic attraction, lattice, giant ionic structure, melting point, conductivity, solubility, dot-and-cross diagram",
+      "common_misconceptions": "Students say ions are 'held together by shared electrons' \u2014 this is covalent bonding, not ionic. Students also think ionic compounds conduct when solid \u2014 clarify that ions must be free to move. Students draw incomplete dot-and-cross diagrams, failing to show the full electron shells of the ions.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C004",
+      "domain_id": "CH-KS4-D002",
+      "concept_name": "Covalent Bonding and Molecular Structures",
+      "description": "Covalent bonding occurs when atoms share pairs of electrons to achieve full outer shells. Simple molecular substances consist of small molecules held together by weak intermolecular forces; they have low melting points and do not conduct electricity. Giant covalent structures (diamond, graphite, silicon dioxide) have very high melting points due to many strong covalent bonds throughout the structure. Graphite is unusual in conducting electricity due to delocalised electrons.",
+      "teaching_guidance": "Draw dot-and-cross diagrams for H2, O2, N2, HCl, H2O, NH3, CH4 and CO2. Use models (ball-and-stick) to reinforce 3D structure. Emphasise the contrast between strong covalent bonds within molecules and weak intermolecular forces between molecules \u2014 the latter determine physical properties. Diamond vs graphite is a key comparison: both pure carbon, both giant covalent, but graphite has delocalised electrons between layers (conducts electricity, layers can slide making it slippery).",
+      "key_vocabulary": "covalent bond, shared electron pair, simple molecular, giant covalent, intermolecular force, diamond, graphite, silicon dioxide, delocalised electron, dot-and-cross diagram",
+      "common_misconceptions": "Students think 'weak bonds' in simple molecular substances means the covalent bonds themselves are weak \u2014 clarify it is the intermolecular forces between molecules that are weak, not the covalent bonds within molecules. Students also think graphite is a metal because it conducts electricity.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C005",
+      "domain_id": "CH-KS4-D003",
+      "concept_name": "Moles and Stoichiometry",
+      "description": "The mole is the unit of amount of substance; 1 mole of any substance contains 6.02 \u00d7 10\u00b2\u00b3 particles (Avogadro's number). The relative formula mass (Mr) numerically equals the mass in grams of 1 mole. Stoichiometry uses balanced equations to determine the molar ratios of reactants and products, allowing calculation of the mass of any reactant or product if the mass of another is known.",
+      "teaching_guidance": "Moles is consistently the most challenging quantitative topic for GCSE Chemistry pupils. Use a step-by-step 'mole map' approach: mass \u00f7 Mr = moles; moles \u00d7 ratio = moles of other substance; moles \u00d7 Mr = mass. Practise with a wide range of examples including limiting reagent calculations (Higher). Connect to percentage yield and atom economy as practical applications. Emphasise that a balanced equation tells you the molar ratio, not the mass ratio.",
+      "key_vocabulary": "mole, Avogadro's number, relative atomic mass, relative formula mass, molar mass, stoichiometry, balanced equation, molar ratio, limiting reagent, excess reagent",
+      "common_misconceptions": "Students divide by the wrong Mr in moles calculations. Students also think that a 1:2 ratio in a balanced equation means the same mass of each substance reacts. Students forget to check that the equation is balanced before using molar ratios, leading to incorrect calculations.",
+      "concept_type": "knowledge",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C006",
+      "domain_id": "CH-KS4-D003",
+      "concept_name": "Atom Economy and Percentage Yield",
+      "description": "Percentage yield compares the actual yield of a reaction to the theoretical maximum yield: % yield = (actual yield / theoretical yield) \u00d7 100. Atom economy measures what proportion of the mass of reactants ends up in the desired product: atom economy = (Mr of desired product / sum of Mr of all products) \u00d7 100. High atom economy is a key principle of green chemistry as it minimises waste.",
+      "teaching_guidance": "Use industrial examples to contextualise \u2014 why does the pharmaceutical industry seek high atom economy? Why is percentage yield rarely 100% (incomplete reactions, side reactions, product lost during separation)? Connect to the rate and extent of chemical change domain: reversible reactions often have lower yields because equilibrium is not fully to the right. Emphasise that atom economy is a property of the chemical equation, not of how the reaction is carried out.",
+      "key_vocabulary": "percentage yield, atom economy, theoretical yield, actual yield, green chemistry, waste, sustainable, industrial process, pharmaceutical",
+      "common_misconceptions": "Students confuse percentage yield (how much product was made compared to maximum possible) with atom economy (what fraction of reactant mass becomes the desired product). Students also think that increasing yield of reaction automatically improves atom economy.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": true,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C007",
+      "domain_id": "CH-KS4-D004",
+      "concept_name": "Reactivity Series and Displacement Reactions",
+      "description": "The reactivity series ranks metals in order of their tendency to react with oxygen, water and acids. A more reactive metal displaces a less reactive metal from a solution of its salt (displacement reaction). Oxidation is loss of electrons and reduction is gain of electrons (OIL RIG); in displacement reactions, the more reactive metal is oxidised and the less reactive metal ion is reduced.",
+      "teaching_guidance": "Pupils should know the order: potassium, sodium, calcium, magnesium, aluminium, zinc, iron, nickel, tin, lead, hydrogen, copper, silver, gold, platinum. Displacement reactions can be observed as temperature changes or colour changes. Write ionic equations and half-equations for displacement reactions. Connect extraction of metals to position in reactivity series: metals below carbon extracted by reduction with carbon; metals above carbon (aluminium) extracted by electrolysis.",
+      "key_vocabulary": "reactivity series, displacement reaction, oxidation, reduction, OIL RIG, half-equation, ionic equation, electrolysis, ore, smelting, redox",
+      "common_misconceptions": "Students mix up 'OIL RIG' \u2014 frequently saying oxidation is gain and reduction is loss. Regular practice with electron half-equations helps embed the correct definitions. Students also confuse which species is oxidised and which is reduced in a displacement reaction.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C008",
+      "domain_id": "CH-KS4-D004",
+      "concept_name": "Electrolysis",
+      "description": "Electrolysis is the decomposition of an ionic compound using direct current. Positive ions (cations) move to the negative electrode (cathode) and gain electrons (reduction); negative ions (anions) move to the positive electrode (anode) and lose electrons (oxidation). For aqueous solutions, the products depend on the relative positions of the ions in the reactivity series and the concentration of the solution.",
+      "teaching_guidance": "Required Practical 4: investigate the electrolysis of aqueous solutions using inert electrodes. Start with molten ionic compounds (e.g., lead bromide) where prediction is straightforward. For aqueous solutions, introduce the competition between ions: at the cathode, H+ (from water) vs metal ion; at the anode, OH- (from water) vs halide ion. Copper plating provides a good application context. Half equations: e.g., at cathode Cu2+ + 2e- \u2192 Cu; at anode 2Cl- \u2192 Cl2 + 2e-.",
+      "key_vocabulary": "electrolysis, electrode, cathode, anode, cation, anion, reduction, oxidation, half-equation, molten, aqueous, electrolyte, discharge",
+      "common_misconceptions": "Students mix up cathode and anode: cathode = negative electrode = reduction = cations; anode = positive electrode = oxidation = anions. The mnemonic 'PANOX, CARED' (Positive Anode Oxidation; Cathode Reduction Electrons Discharged) helps. Students also think that electrolysis always decomposes the ionic compound completely, forgetting that water also provides H+ and OH- ions in aqueous solutions.",
+      "concept_type": "process",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C009",
+      "domain_id": "CH-KS4-D005",
+      "concept_name": "Exothermic and Endothermic Reactions",
+      "description": "Chemical reactions involve breaking bonds in reactants (endothermic, requires energy) and forming bonds in products (exothermic, releases energy). If more energy is released forming bonds than is required breaking bonds, the overall reaction is exothermic and energy is released to the surroundings (temperature increases). If more energy is required to break bonds than is released forming bonds, the overall reaction is endothermic and energy is absorbed from the surroundings (temperature decreases).",
+      "teaching_guidance": "Required Practical 5: use a polystyrene cup calorimeter to measure temperature changes of neutralisation reactions and combustion reactions. Use energy level diagrams to illustrate exothermic and endothermic reactions, including activation energy. Bond energy calculations (Higher): sum of bonds broken minus sum of bonds formed = overall energy change. Common exothermic reactions: combustion, neutralisation, oxidation. Common endothermic: thermal decomposition, citric acid + sodium bicarbonate.",
+      "key_vocabulary": "exothermic, endothermic, bond energy, activation energy, energy level diagram, enthalpy change, calorimeter, temperature change, bond breaking, bond forming",
+      "common_misconceptions": "Students often say 'exothermic releases energy' without specifying that this energy is released to the surroundings as heat. Students also think that breaking bonds releases energy \u2014 breaking bonds always requires energy. The common confusion is that forming bonds (not breaking them) releases energy.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C010",
+      "domain_id": "CH-KS4-D006",
+      "concept_name": "Collision Theory and Reaction Rates",
+      "description": "Chemical reactions occur when reactant particles collide with sufficient energy (equal to or greater than the activation energy) and with correct orientation. Increasing concentration increases the frequency of collisions; increasing temperature increases both the frequency and energy of collisions; increasing surface area increases the frequency of collisions; a catalyst provides an alternative reaction pathway with lower activation energy.",
+      "teaching_guidance": "Required Practicals 6 and 7: sodium thiosulfate + acid (turbidity method) and marble chips + acid (gas volume method). Pupils should be able to measure and calculate mean rate of reaction from experimental data, and plot and interpret rate curves. Emphasise that catalysts are not consumed in reactions and do not change the overall energy change of the reaction \u2014 they only lower the activation energy. Biological catalysts (enzymes) should be connected to the Biology specification.",
+      "key_vocabulary": "collision theory, activation energy, frequency of collisions, concentration, pressure, temperature, surface area, catalyst, enzyme, rate of reaction, Maxwell-Boltzmann distribution",
+      "common_misconceptions": "Students say catalysts 'speed up reactions by giving energy to particles' \u2014 clarify that catalysts lower the activation energy by providing an alternative pathway. Students also think increasing temperature only increases collision frequency, forgetting the crucial effect on collision energy. Students confuse rate of reaction (speed) with yield (how much product is made).",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C011",
+      "domain_id": "CH-KS4-D006",
+      "concept_name": "Reversible Reactions and Dynamic Equilibrium",
+      "description": "Some chemical reactions are reversible: the products can react together to re-form the reactants. In a closed system, a dynamic equilibrium is established when the forward and reverse reactions occur at equal rates. The position of equilibrium can be changed by altering temperature, pressure or concentration. Le Chatelier's principle states that if a system at equilibrium is disturbed, it will shift to oppose the change.",
+      "teaching_guidance": "Use the Haber process (N2 + 3H2 \u21cc 2NH3) as the main context for applying Le Chatelier's principle. Pupils should be able to explain the industrial compromise conditions (450\u00b0C, 200 atm, iron catalyst) in terms of rate and yield trade-offs. Higher tier: quantitative treatment using equilibrium constants (Kc, Kp) is not required at GCSE but qualitative application of Le Chatelier's principle is. The chromate/dichromate equilibrium is a useful demonstration.",
+      "key_vocabulary": "reversible reaction, dynamic equilibrium, Le Chatelier's principle, equilibrium position, forward reaction, reverse reaction, Haber process, closed system, concentration, temperature, pressure",
+      "common_misconceptions": "Students think that at equilibrium, the concentrations of reactants and products are equal \u2014 at equilibrium, the rates of forward and reverse reactions are equal, not the concentrations. Students also think catalysts shift the position of equilibrium \u2014 catalysts increase the rate of both forward and reverse reactions equally, speeding up attainment of equilibrium without changing its position.",
+      "concept_type": "theory",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "pathway": "separate"
+    },
+    {
+      "concept_id": "CH-KS4-C012",
+      "domain_id": "CH-KS4-D007",
+      "concept_name": "Hydrocarbons and Crude Oil",
+      "description": "Crude oil is a finite resource formed from the remains of ancient marine organisms over millions of years. It consists of a mixture of hydrocarbons (compounds containing only carbon and hydrogen) that are separated by fractional distillation. Longer hydrocarbon chains have stronger intermolecular forces, higher boiling points, greater viscosity and lower flammability. Cracking converts longer, less useful chain molecules into shorter, more useful ones.",
+      "teaching_guidance": "Use a fractional distillation column diagram to show the different fractions (refinery gas, gasoline, kerosene, diesel, fuel oil, bitumen) and their properties. Pupils should understand why cracking is economically important: demand for short-chain hydrocarbons (petrol) exceeds supply from distillation, while supply of long-chain hydrocarbons (heavy oil) exceeds demand. Thermal cracking produces a greater proportion of alkenes, which are valuable as monomers.",
+      "key_vocabulary": "crude oil, hydrocarbon, fractional distillation, fraction, alkane, boiling point, viscosity, flammability, cracking, thermal cracking, catalytic cracking, alkene",
+      "common_misconceptions": "Students confuse fractional distillation (separation based on boiling point differences) with distillation (separation of a liquid from a mixture by evaporation and condensation). Students also think that fractions are pure compounds \u2014 each fraction is actually still a mixture of hydrocarbons of similar chain length and boiling point.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C013",
+      "domain_id": "CH-KS4-D009",
+      "concept_name": "Greenhouse Effect and Climate Change",
+      "description": "The Earth's atmosphere absorbs infrared radiation emitted by the Earth's surface, re-radiating it in all directions including back towards Earth, maintaining a temperature suitable for life (greenhouse effect). Increasing concentrations of greenhouse gases (CO2, methane, water vapour) from human activities enhance the greenhouse effect, leading to global warming and climate change.",
+      "teaching_guidance": "Use temperature vs CO2 concentration graphs from ice core data to show the correlation between atmospheric CO2 and global temperature over hundreds of thousands of years. Discuss the strength of evidence for anthropogenic climate change and why consensus has emerged. Pupils should understand the carbon cycle (links to Biology domain 7) and how burning fossil fuels and deforestation disrupts it. Evaluate mitigation strategies: renewable energy, carbon capture, international agreements (Paris Agreement).",
+      "key_vocabulary": "greenhouse effect, greenhouse gas, carbon dioxide, methane, water vapour, global warming, climate change, infrared radiation, fossil fuels, deforestation, carbon cycle, mitigation",
+      "common_misconceptions": "Students confuse the greenhouse effect (necessary natural phenomenon) with the enhanced greenhouse effect (human-caused problem). Students also confuse global warming with climate change \u2014 warming is one consequence; climate change includes shifts in rainfall patterns, extreme weather events, sea level rise. Students think the ozone hole causes climate change \u2014 these are different atmospheric issues.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": true,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C014",
+      "domain_id": "CH-KS4-D010",
+      "concept_name": "Life Cycle Assessment and Sustainable Chemistry",
+      "description": "Life cycle assessment (LCA) systematically evaluates the environmental impact of a product throughout its entire life: raw material extraction, manufacturing, use, and end-of-life disposal or recycling. LCA provides an evidence base for comparing the sustainability of different materials and processes. Sustainable chemistry (green chemistry) aims to design processes that minimise waste, use renewable feedstocks, use safer solvents and reduce energy consumption.",
+      "teaching_guidance": "Compare LCAs for different products (e.g., plastic vs glass bottles, paper vs plastic bags). Pupils should understand that LCAs are useful but have limitations \u2014 they require value judgements about how to weight different types of environmental impact, and data quality varies. Connect to the Using Resources domain: recycling reduces the need for raw material extraction; bioplastics use renewable feedstocks but may compete with food production for land.",
+      "key_vocabulary": "life cycle assessment, raw materials, manufacturing, use phase, disposal, recycling, cradle-to-grave, green chemistry, renewable feedstock, sustainable, carbon footprint, bioplastic",
+      "common_misconceptions": "Students assume recycled materials always have lower environmental impact than virgin materials \u2014 this depends on the energy required for recycling, transport distances and other factors. Students also assume 'natural' materials are always more sustainable than synthetic ones \u2014 LCA provides the evidence for making such comparisons objectively.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": true,
+      "pathway": "both"
+    }
+  ],
+  "prerequisite_relationships": [
+    {
+      "prerequisite_concept": "CH-KS4-C001",
+      "dependent_concept": "CH-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.95,
+      "rationale": "Understanding the structure of the atom (protons, neutrons, electrons in shells) is directly prerequisite to understanding electronic configurations and how the number of outer electrons determines periodic trends."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C002",
+      "dependent_concept": "CH-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Understanding that atoms gain or lose electrons to achieve full outer shells (electronic configuration) is prerequisite to explaining ionic bonding as electron transfer driven by the tendency to achieve stable configurations."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C002",
+      "dependent_concept": "CH-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Understanding electronic configuration and the drive to achieve full outer shells explains why atoms share electrons to form covalent bonds, making electronic configuration prerequisite to understanding covalent bonding."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C001",
+      "dependent_concept": "CH-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.7,
+      "rationale": "The concept of relative atomic mass derives directly from the masses of protons and neutrons in the nucleus; pupils must understand atomic structure before they can calculate relative formula masses and work with moles."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C005",
+      "dependent_concept": "CH-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Percentage yield and atom economy both require molar mass calculations and understanding of theoretical yield; mastery of moles and stoichiometry is a prerequisite for these quantitative green chemistry concepts."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C002",
+      "dependent_concept": "CH-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.8,
+      "rationale": "Understanding that reactivity reflects an element's tendency to gain or lose electrons (linked to outer electron configuration) is prerequisite to understanding the reactivity series and displacement reactions in terms of electron transfer."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C003",
+      "dependent_concept": "CH-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Electrolysis involves ionic compounds and requires understanding that ions are charged particles formed by electron transfer; ionic bonding is prerequisite to explaining why ionic compounds conduct when molten or dissolved."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C007",
+      "dependent_concept": "CH-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Electrolysis is explained in terms of oxidation and reduction (electron transfer), which is first introduced in the context of the reactivity series and displacement reactions; OIL RIG must be established before electrolysis half-equations."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C004",
+      "dependent_concept": "CH-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.8,
+      "rationale": "Bond energy calculations require understanding that covalent bonds hold atoms together and that energy is needed to break them; covalent bonding is prerequisite to understanding bond energy thermochemistry."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C009",
+      "dependent_concept": "CH-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Activation energy (introduced in the context of exothermic/endothermic reactions and energy level diagrams) is central to collision theory and rate of reaction; energy changes must be understood before the role of catalysts in lowering activation energy can be explained."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C010",
+      "dependent_concept": "CH-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Dynamic equilibrium requires understanding that both forward and reverse reactions proceed simultaneously; collision theory provides the mechanistic basis for understanding why both directions of a reversible reaction have rates that can be varied independently."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C004",
+      "dependent_concept": "CH-KS4-C012",
+      "confidence": "inferred",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Understanding that intermolecular forces between simple molecular substances determine their boiling points is prerequisite to explaining why different hydrocarbon fractions have different boiling points and why fractional distillation works."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C012",
+      "dependent_concept": "CH-KS4-C013",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.6,
+      "rationale": "Understanding fossil fuels as organic hydrocarbons and their combustion products (CO2, H2O) is context for understanding how burning fossil fuels increases atmospheric CO2 concentration and enhances the greenhouse effect."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C013",
+      "dependent_concept": "CH-KS4-C014",
+      "confidence": "inferred",
+      "relationship_type": "conceptual",
+      "strength": 0.6,
+      "rationale": "Understanding the environmental impact of greenhouse gas emissions provides the motivation for life cycle assessment as a tool for comparing the sustainability of different materials and processes."
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+{
+  "metadata": {
+    "subject": "English Language",
+    "key_stage": "KS4",
+    "years_covered": [10, 11],
+    "document_reference": "DFE-00499-2013",
+    "extraction_date": "2026-02-21",
+    "structure_rating": 8,
+    "notes": "Based on DfE GCSE English Language Subject Content and Assessment Objectives (2013/2014) and KS4 English Programme of Study (2014). Assessment objectives: AO1 (identify and interpret explicit/implicit information, select and synthesise evidence), AO2 (explain, comment on and analyse language and structure), AO3 (compare writers' ideas and perspectives across texts), AO4 (evaluate texts critically with textual references), AO5 (communicate clearly, effectively and imaginatively for different forms, purposes, audiences), AO6 (use range of vocabulary and sentence structures with accurate spelling and punctuation — statutory 20% of marks)."
+  },
+  "domains": [
+    {
+      "domain_id": "ENL-KS4-D001",
+      "domain_name": "Reading — Critical and Analytical",
+      "description": "Students read and analyse a wide range of high-quality fiction, literary non-fiction and non-fiction texts from the 19th, 20th and 21st centuries. The domain develops skills in identifying explicit and implicit meaning, analysing writers' language and structural choices, evaluating texts critically, and comparing perspectives across texts. Students are assessed on their ability to deploy subject terminology to support analytical argument.",
+      "curriculum_context": "GCSE English Language reading is assessed across two papers: Paper 1 focuses on literary reading through an extract from a 20th or 21st century fiction text, while Paper 2 draws on two non-fiction or literary non-fiction sources from the 19th century and either the 20th or 21st century. Reading constitutes approximately 40% of total GCSE marks. The statutory subject content requires students to read fluently and with good understanding a wide range of texts, drawing on reading across the curriculum and from wide independent reading to inform and improve their own writing. Critical reading and comprehension encompasses the ability to identify and interpret both explicit and implicit information, explain how writers use language and structural techniques to create effects, evaluate texts critically using detailed textual evidence, and compare writers' ideas and perspectives across different texts and time periods. Students must develop the subject terminology needed to discuss language, form and structure analytically, moving beyond identifying features to evaluating their effect on a reader.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "ENL-KS4-D002",
+      "domain_name": "Writing — Composition and Effect",
+      "description": "Students write effectively and coherently for a range of purposes, audiences and forms, including transactional writing (letters, articles, reports, speeches, reviews), narrative and descriptive writing, and persuasive writing. The domain covers planning, drafting, structural decision-making, rhetorical technique, and revision. Students develop a personal writing voice with precise vocabulary and sophisticated syntax.",
+      "curriculum_context": "GCSE English Language writing is assessed across two papers: Paper 1 includes a creative or descriptive writing task linked to a fiction stimulus, while Paper 2 includes a transactional or persuasive writing task for a specific audience and purpose. Writing constitutes approximately 40% of total GCSE marks, with AO6 (technical accuracy) carrying a statutory minimum weighting of 20% across the specification as a whole. The statutory subject content requires students to write effectively and coherently using Standard English appropriately, to select vocabulary, grammar, form and register that are adapted to purpose and audience, and to use a range of structural and grammatical features to support coherence and cohesion. Students must plan, draft, edit and revise their writing, understanding the craft of writing as a recursive and intentional process. Rhetorical and stylistic devices — including anaphora, tricolon, contrast, direct address, hyperbole, varied sentence structures for effect — should be deployed consciously and evaluated in terms of their impact on the reader.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "ENL-KS4-D003",
+      "domain_name": "Spoken Language",
+      "description": "Students present information and ideas, participate in structured discussions and debates, and use spoken Standard English effectively for a range of purposes and audiences. The domain covers formal presentation, collaborative discussion, role play and improvisation, active listening, and responding to questions and challenges. Spoken language is assessed separately, reported as a grade endorsement, and does not contribute to final examination marks.",
+      "curriculum_context": "Spoken language is a mandatory component of GCSE English Language, but its assessment is reported as a separate endorsement (Pass, Merit, Distinction) rather than contributing to the A*–U grade. The statutory subject content requires students to listen to and understand spoken language in a range of contexts, responding appropriately with Standard English, and to use spoken language effectively in formal and informal settings. Students must give presentations and speeches that are clearly structured, sustained and adapted to audience; participate in and lead discussions, taking clear positions and responding thoughtfully to others' contributions; and use register, vocabulary and gesture appropriate to purpose and context. Drama techniques such as role play are used to explore texts and ideas, developing students' ability to inhabit characters and perspectives. Students are assessed by their teacher on the basis of live or recorded evidence across a variety of spoken language activities.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "ENL-KS4-D004",
+      "domain_name": "Grammar, Vocabulary and Technical Accuracy",
+      "description": "Students deploy a wide vocabulary with precision and use a range of sentence structures purposefully and accurately. The domain covers Standard English, punctuation, spelling, grammatical terminology, and the ability to manipulate syntax for stylistic effect. Technical accuracy in writing carries a mandatory 20% weighting across the GCSE English Language specification.",
+      "curriculum_context": "Grammar, vocabulary and technical accuracy underpin both reading (analysis of writers' language choices) and writing (students' own production). The statutory subject content requires students to use a range of vocabulary and sentence structures for clarity, purpose and effect, with accurate spelling and punctuation — this requirement constitutes a minimum of 20% of marks across the whole specification. Students are expected to understand and use the grammatical terminology introduced throughout KS1–KS3, including clauses, phrases, tenses, active and passive voice, modal verbs, and a range of punctuation marks, applying these analytically when discussing texts and accurately when writing. The curriculum also emphasises vocabulary acquisition from wide reading, including subject-specific terminology for discussing language, structure and form. Students should be able to explain how grammatical and vocabulary choices create specific effects on a reader, moving from description of features to evaluation of impact.",
+      "is_cross_cutting": true,
+      "structure_type": "knowledge"
+    }
+  ],
+  "objectives": [
+    {
+      "objective_id": "ENL-KS4-O001",
+      "domain_id": "ENL-KS4-D001",
+      "objective_text": "Read and comprehend a wide range of texts fluently and with good understanding, including fiction, literary non-fiction and non-fiction from the 19th, 20th and 21st centuries.",
+      "non_statutory_guidance": null,
+      "examples": "19th-century prose extracts such as travel writing, journalism and fiction; 20th and 21st century literary fiction; contemporary journalism, speeches, letters and essays.",
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O002",
+      "domain_id": "ENL-KS4-D001",
+      "objective_text": "Identify and interpret explicit and implicit information and ideas from texts, selecting and synthesising evidence from different texts.",
+      "non_statutory_guidance": "AO1 — this objective addresses both comprehension of stated meaning and inferential reading of implied meaning.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O003",
+      "domain_id": "ENL-KS4-D001",
+      "objective_text": "Explain, comment on and analyse how writers use language and structure to achieve effects and influence readers, using relevant subject terminology to support their views.",
+      "non_statutory_guidance": "AO2 — students should move beyond identifying language features to evaluating how and why specific choices create particular effects.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O004",
+      "domain_id": "ENL-KS4-D001",
+      "objective_text": "Compare writers' ideas and perspectives, as well as how these are conveyed, across two or more texts.",
+      "non_statutory_guidance": "AO3 — comparison must address both what writers say (ideas, perspectives) and how they say it (language and structural choices).",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O005",
+      "domain_id": "ENL-KS4-D001",
+      "objective_text": "Evaluate texts critically and support this with appropriate textual references, commenting on the effect of the writer's choices on the reader.",
+      "non_statutory_guidance": "AO4 — evaluative reading requires students to make a judgement about the success or impact of the whole text or extended sections.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O006",
+      "domain_id": "ENL-KS4-D001",
+      "objective_text": "Read and understand high-quality journalism, articles, reports, essays, travel writing, accounts, sketches, letters, diaries, autobiography and biographical passages as non-fiction and literary non-fiction forms.",
+      "non_statutory_guidance": null,
+      "examples": "For Paper 2: a 19th-century source paired with a 20th or 21st-century source on a shared theme, such as attitudes to adventure, social issues, the natural world.",
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O007",
+      "domain_id": "ENL-KS4-D001",
+      "objective_text": "Read critically through understanding the purpose, audience and context of writing, drawing on this knowledge to support and develop analysis.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O008",
+      "domain_id": "ENL-KS4-D001",
+      "objective_text": "Understand how language, including figurative language, vocabulary choice, grammar, text structure and organisational features, presents meaning.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O009",
+      "domain_id": "ENL-KS4-D002",
+      "objective_text": "Write effectively and coherently for different purposes and audiences, selecting and adapting tone, style and register.",
+      "non_statutory_guidance": "AO5 — students must demonstrate that their writing choices are purposeful and responsive to the demands of the specific task.",
+      "examples": "Formal letter to a newspaper editor; persuasive speech for a school assembly; descriptive writing about a place; narrative opening.",
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O010",
+      "domain_id": "ENL-KS4-D002",
+      "objective_text": "Organise information and ideas, using structural and grammatical features to support coherence and cohesion across a whole piece of writing.",
+      "non_statutory_guidance": "AO5 — structural features include paragraph sequencing, topic sentences, discourse markers, circular structure, and contrast between sections.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O011",
+      "domain_id": "ENL-KS4-D002",
+      "objective_text": "Write for a range of purposes including: to argue, persuade and advise; to inform, explain and describe; and to narrate and create imaginative writing.",
+      "non_statutory_guidance": null,
+      "examples": "Transactional forms: letter, speech, article, report, review. Creative forms: narrative opening, descriptive scene, short story extract.",
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O012",
+      "domain_id": "ENL-KS4-D002",
+      "objective_text": "Plan, draft, edit and revise their writing, developing understanding of the craft of writing as an intentional, recursive process.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O013",
+      "domain_id": "ENL-KS4-D002",
+      "objective_text": "Use a range of rhetorical and structural devices deliberately and evaluate their effect on the reader, including repetition, contrast, direct address, lists, questions and varied sentence structures.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O014",
+      "domain_id": "ENL-KS4-D002",
+      "objective_text": "Select vocabulary that is precise, varied and appropriate to purpose and register, avoiding repetition and demonstrating a wide lexical range.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O015",
+      "domain_id": "ENL-KS4-D003",
+      "objective_text": "Give a presentation, speech or structured talk that is clearly organised, well-paced, and adapted to audience and purpose using Standard English.",
+      "non_statutory_guidance": "Spoken language endorsement — assessed by teacher, not by written examination.",
+      "examples": "Persuasive speech on a chosen topic; informative presentation on an issue of personal interest.",
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O016",
+      "domain_id": "ENL-KS4-D003",
+      "objective_text": "Participate in structured discussions, debates and collaborative activities, taking a clear position, developing argument, listening attentively and responding constructively to others.",
+      "non_statutory_guidance": null,
+      "examples": "Class debate on a controversial topic; Socratic seminar on a shared text.",
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O017",
+      "domain_id": "ENL-KS4-D003",
+      "objective_text": "Use spoken Standard English fluently and confidently, adjusting register, vocabulary and delivery to context, including formal academic discussion and informal collaborative tasks.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O018",
+      "domain_id": "ENL-KS4-D003",
+      "objective_text": "Use drama techniques including role play and improvisation to explore texts, characters and ideas, inhabiting a perspective convincingly and using voice and gesture for effect.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O019",
+      "domain_id": "ENL-KS4-D004",
+      "objective_text": "Use a range of vocabulary and sentence structures for clarity, purpose and effect, with accurate spelling and punctuation, across all written work.",
+      "non_statutory_guidance": "AO6 — this statutory requirement must constitute a minimum of 20% of marks across the whole specification.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O020",
+      "domain_id": "ENL-KS4-D004",
+      "objective_text": "Use Standard English with confidence, applying knowledge of grammatical rules including tense consistency, subject-verb agreement, subordination, and appropriate use of active and passive voice.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O021",
+      "domain_id": "ENL-KS4-D004",
+      "objective_text": "Apply accurate punctuation across a range of marks including commas, semi-colons, colons, dashes, brackets and apostrophes to support clarity and rhetorical effect.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "ENL-KS4-O022",
+      "domain_id": "ENL-KS4-D004",
+      "objective_text": "Use grammatical terminology accurately when discussing texts and evaluating language choices, including clause structures, verb forms, noun phrases, and figurative language.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    }
+  ],
+  "concepts": [
+    {
+      "concept_id": "ENL-KS4-C001",
+      "domain_id": "ENL-KS4-D001",
+      "concept_name": "Explicit and Implicit Meaning",
+      "description": "The distinction between what a text states directly (explicit) and what is implied, suggested or inferred (implicit). Students must be able to retrieve surface-level information and make reasoned inferences supported by textual evidence.",
+      "teaching_guidance": "AO1 tasks require students to both retrieve stated information and read between the lines. Teach students to move from identifying a quotation to explaining what it implies about character, attitude or situation. A common exam technique is the 'Find and Infer' approach: first locate evidence, then explain what it suggests. Command words: 'identify', 'infer', 'suggest', 'interpret'. In Paper 2 synthesis questions, students must select and combine evidence from two sources.",
+      "key_vocabulary": "explicit, implicit, infer, inference, suggest, imply, interpret, evidence, retrieve, synthesise, connotation, subtext",
+      "common_misconceptions": "Students often confuse inference with speculation — inference must be anchored in textual evidence. Students frequently answer only at the explicit level, listing information without attempting to read between the lines. Some students treat every inference as equally valid rather than grading the strength of evidence.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C002",
+      "domain_id": "ENL-KS4-D001",
+      "concept_name": "Language Analysis — Writers' Methods",
+      "description": "The analytical skill of explaining how specific language choices — including figurative language, word-level choices, sentence structures, and grammatical features — create effects and influence readers. Students must use relevant subject terminology to support their analysis.",
+      "teaching_guidance": "AO2 is the most heavily assessed reading objective. Teach the PETER or ZAP framework: Point, Evidence, Technique, Effect, Reader response — or Zoom, Analyse, Precise effect. Students must avoid 'feature spotting' (naming a technique without explaining its effect). Command words: 'analyse', 'explain', 'comment on', 'how does the writer'. Encourage students to consider why a writer chose this word/structure rather than an alternative. Push students to embed subject terminology naturally rather than listing it.",
+      "key_vocabulary": "metaphor, simile, personification, hyperbole, sibilance, alliteration, juxtaposition, semantic field, tone, voice, syntax, structure, repetition, listing, rhetorical question, anaphora, connotation, register",
+      "common_misconceptions": "Students often identify a technique but fail to explain its effect: 'the writer uses a metaphor' rather than 'the metaphor of X creates an impression of Y'. Students frequently comment on only surface-level word choices, missing structural features (paragraph ordering, sentence length variation, shifts in tense or person). Many students use subject terminology incorrectly — for example, describing any comparison as a 'metaphor' rather than checking whether it uses 'like' or 'as'.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C003",
+      "domain_id": "ENL-KS4-D001",
+      "concept_name": "Structural Analysis",
+      "description": "Analysis of how a text is organised and sequenced at whole-text level, including narrative structure, shifts in focus or perspective, pacing, openings and endings, and the relationship between different parts of a text.",
+      "teaching_guidance": "Structure questions appear in Paper 1 (AO2) and require students to comment on the whole text rather than a single extract. Teach students to consider: where does the writer start? (establishing a mystery, a setting, a character?); how does focus shift across the extract?; how does the ending or climax relate to the opening? Common structural techniques: in medias res, non-linear narrative, cliffhanger endings, zooming in from wide shot to close detail, shifts from description to action. Distinguish structural analysis from language analysis — students should not just name language devices in a structure question.",
+      "key_vocabulary": "structure, narrative arc, opening, climax, resolution, non-linear, flashback, foreshadowing, pacing, perspective, shift, focus, tension, cyclical structure, in medias res",
+      "common_misconceptions": "Students often respond to structure questions by discussing language features rather than organisational choices. Students frequently say 'the writer starts with X' without explaining why this is effective as a structural choice. Many students treat structure as a list of techniques rather than a coherent analysis of how the whole text works.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C004",
+      "domain_id": "ENL-KS4-D001",
+      "concept_name": "Critical Evaluation",
+      "description": "The ability to make an evaluative judgement about the effectiveness, impact or quality of a text, supporting this with detailed and appropriate textual references. Critical evaluation requires students to consider the effect on a reader and to assess how successfully the writer achieves their purpose.",
+      "teaching_guidance": "AO4 requires students to evaluate rather than just analyse — they must make a judgement. Teach students to weigh up evidence: 'This is effective because... however, one could argue...' or 'The writer is particularly successful in creating X because...'. Evaluation questions often provide a critical statement for students to agree or disagree with. Students should be trained to use a 'How far do you agree?' structure: agree in some respects, qualify or challenge in others. Push students to use evaluative vocabulary: 'convincingly', 'powerfully', 'effectively', 'arguably', 'particularly striking'.",
+      "key_vocabulary": "evaluate, assess, effective, convincing, powerful, impact, reader response, argue, judge, consider, weigh, perspective, viewpoint, engage, compel",
+      "common_misconceptions": "Students often write analysis responses to evaluation questions — identifying and explaining features without making an explicit judgement. Students may agree too completely with a given statement without demonstrating critical independence. Some students avoid direct evaluation by only paraphrasing the text.",
+      "concept_type": "knowledge",
+      "complexity_level": 4,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C005",
+      "domain_id": "ENL-KS4-D001",
+      "concept_name": "Comparing Writers' Perspectives",
+      "description": "The ability to compare ideas, perspectives and methods across two or more texts from different time periods or contexts. Comparison addresses both what writers think and argue (ideas) and how they express and construct those arguments (methods).",
+      "teaching_guidance": "AO3 (comparison) is the highest-order reading objective and requires simultaneous engagement with two texts. Teach students to use comparative discourse markers: 'In contrast...', 'Both writers...', 'While X focuses on..., Y emphasises...'. Students should compare across three dimensions: ideas/arguments, attitudes/perspectives, and language/structural methods. A strong comparison identifies a point of similarity or difference, provides evidence from both texts, and explains how the methods used shape the perspective expressed. Avoid 'tennis match' comparisons that discuss each text in turn without genuine integration.",
+      "key_vocabulary": "compare, contrast, similarly, conversely, both, whereas, however, perspective, viewpoint, attitude, context, influence, method, technique, effect, audience, purpose",
+      "common_misconceptions": "Students frequently write about each text separately rather than genuinely comparing, producing two mini-essays with a transitional phrase. Students sometimes compare only surface content (what each text is about) without comparing methods. Some students neglect one text, producing a heavily imbalanced comparison.",
+      "concept_type": "knowledge",
+      "complexity_level": 4,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C006",
+      "domain_id": "ENL-KS4-D001",
+      "concept_name": "19th-Century Non-Fiction Texts",
+      "description": "Understanding the conventions, purposes and contexts of 19th-century non-fiction and literary non-fiction genres, including journalism, travel writing, essays, letters, diaries, autobiography and biography. Students must be able to read and analyse these texts alongside contemporary sources.",
+      "teaching_guidance": "19th-century texts appear in Paper 2 for GCSE English Language. Teach students the conventions of Victorian-era prose: longer, more complex sentences; formal register; different vocabulary conventions (some archaic terms); likely social, political or imperial contexts shaping the writer's perspective. Encourage students to note where a 19th-century writer's viewpoint reflects their historical moment and to make connections to contemporary equivalents. Students must not treat unfamiliar vocabulary as a barrier — teach strategies for contextual inference.",
+      "key_vocabulary": "Victorian, 19th century, journalism, travel writing, autobiography, letter, diary, essay, formal register, archaic, context, historical perspective, literary non-fiction",
+      "common_misconceptions": "Students sometimes treat difficulty with 19th-century vocabulary as a reason to abandon close reading. Students may make anachronistic judgements — criticising a Victorian writer's attitudes by modern standards without contextualising those views historically. Some students fail to recognise literary non-fiction as a distinct genre, treating it either as fiction or plain factual writing.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C007",
+      "domain_id": "ENL-KS4-D002",
+      "concept_name": "Audience, Purpose and Form",
+      "description": "Understanding the relationship between the intended audience of a piece of writing, its purpose (to argue, inform, persuade, describe, narrate, entertain), and the form it takes (letter, speech, article, review, narrative). Writers adapt all aspects of their writing — vocabulary, tone, structure, register — to serve audience, purpose and form.",
+      "teaching_guidance": "AO5 (writing) requires students to demonstrate deliberate adaptation to the demands of the task. Teach students to read the question carefully to identify audience (who?), purpose (why?) and form (what format?). Students should consider how these interact: a formal letter to a local councillor demands different choices than an article for a teen magazine on the same topic. Encourage students to demonstrate their understanding of audience throughout, not just in the opening. Teach the conventions of key forms: letter (greeting, formal structure, sign-off); speech (direct address, rhetorical devices, spoken rhythm); article (headline, standfirst, subheadings, columns).",
+      "key_vocabulary": "audience, purpose, form, register, tone, formal, informal, persuade, inform, argue, describe, narrate, adapt, convention, genre, layout, structure",
+      "common_misconceptions": "Students often ignore form conventions (e.g., writing a 'speech' without any features of spoken language). Students may maintain a fixed tone throughout rather than adapting to shifting purposes within a piece. Some students confuse purpose with topic — 'to write about climate change' is a topic, not a purpose.",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C008",
+      "domain_id": "ENL-KS4-D002",
+      "concept_name": "Rhetorical Devices and Persuasion",
+      "description": "The deliberate use of language techniques to persuade, convince or move an audience. Rhetorical devices include direct address, rhetorical questions, anaphora, tricolon, hyperbole, emotive language, counter-argument and rebuttal, and appeals to logos, ethos and pathos.",
+      "teaching_guidance": "Rhetorical writing is assessed in Paper 2 (transactional writing, AO5 and AO6). Teach students to use devices not as decoration but as tools for achieving specific persuasive effects. Anaphora builds cumulative force; tricolon creates rhythm and memorability; hyperbole signals emotional intensity; direct address draws the audience in. Encourage students to vary their techniques and to consider pacing — not every sentence should use a device. Evaluative language and confident assertion are also key markers of persuasive writing at the higher grades.",
+      "key_vocabulary": "rhetoric, anaphora, tricolon, hyperbole, direct address, rhetorical question, emotive language, counter-argument, rebuttal, logos, ethos, pathos, assertion, tone, persuasion, conviction",
+      "common_misconceptions": "Students often list techniques without integrating them into a coherent argument structure. Students may use hyperbole so excessively that the writing loses credibility. Some students confuse persuasion with one-sidedness — failing to acknowledge and rebut counter-arguments, which weakens their overall credibility.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C009",
+      "domain_id": "ENL-KS4-D002",
+      "concept_name": "Narrative and Descriptive Writing",
+      "description": "The craft of creating imaginative and engaging narrative or descriptive pieces, including character construction, setting and atmosphere, narrative perspective, narrative tension, and the use of sensory detail and figurative language to engage the reader.",
+      "teaching_guidance": "Creative writing (Paper 1, AO5 and AO6) is assessed on quality and accuracy of writing, not on plot complexity. Teach students that examiners reward: original and sustained writing voice; precise and unexpected vocabulary choices; effective structure (a strong opening hook, a meaningful ending); varied sentence structures for effect; and vivid, controlled use of imagery. Encourage students to plan before writing — even a 5-minute plan should sketch the arc of the piece and 2–3 key image or language choices. Students should write from a position of control, not simply narrating events. Descriptive writing can be still and atmospheric; narrative writing needs some sense of movement or change.",
+      "key_vocabulary": "narrative, description, perspective, first person, third person, omniscient narrator, characterisation, setting, atmosphere, tension, imagery, sensory language, figurative language, pacing, dialogue",
+      "common_misconceptions": "Students often over-plot their narratives, cramming in events at the expense of language quality. Students may use clichéd figurative language ('her eyes were like stars') rather than original imagery. Some students write descriptions as lists of adjectives rather than crafted, layered prose that creates a distinct atmosphere.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C010",
+      "domain_id": "ENL-KS4-D002",
+      "concept_name": "Transactional Writing",
+      "description": "Writing that fulfils a real-world communicative purpose — letters, articles, reports, speeches, reviews, essays — adapted to specific audience, purpose, form and context. Transactional writing requires students to understand and apply the conventions of non-fiction genres.",
+      "teaching_guidance": "Transactional writing is assessed in Paper 2. Students must apply the conventions of the specified form: a report has a title, sections, subheadings and formal register; a speech has an opening address, rhetorical structure and acknowledgement of the audience; an article has a headline, engaging opening and journalist's voice. Teach students to make form, audience and purpose decisions within the first few lines and sustain them throughout. Higher-grade transactional writing shows sophisticated control of register — adjusting formality within a piece rather than maintaining a flat tone throughout.",
+      "key_vocabulary": "transactional, letter, article, speech, report, review, essay, convention, register, formality, layout, headline, subheading, audience, purpose, inform, argue, advise",
+      "common_misconceptions": "Students often write 'essay' responses to tasks specifying a different form (e.g., a speech or a letter). Students may forget form conventions mid-piece, abandoning a speech's direct address after the opening. Some students write in a uniformly formal or uniformly informal register rather than modulating between them appropriately.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C011",
+      "domain_id": "ENL-KS4-D003",
+      "concept_name": "Formal Presentation and Speech",
+      "description": "The ability to deliver a well-structured, purposeful and audience-appropriate presentation or speech using Standard English, varied vocal delivery, and appropriate non-verbal communication including gesture and eye contact.",
+      "teaching_guidance": "For the spoken language endorsement, students must demonstrate clear organisation, adaptation to audience, and use of Standard English. Teach students to structure their presentation with a clear opening, sequenced body and memorable conclusion. Encourage use of visual aids where appropriate. Students should practise controlling pace, volume and emphasis — recording themselves allows for self-review. Questions and challenges should be anticipated and planned for. Assessment criteria: fluency, range of vocabulary, control of Standard English, organisation, interaction with audience.",
+      "key_vocabulary": "presentation, speech, Standard English, vocal delivery, register, formal, structure, audience, eye contact, pace, emphasis, non-verbal communication, fluency",
+      "common_misconceptions": "Students often read directly from notes rather than speaking to the audience. Students may neglect to adapt their language register to the formality of the context. Some students struggle to sustain a presentation beyond an opening, having not planned the full sequence of their talk.",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C012",
+      "domain_id": "ENL-KS4-D003",
+      "concept_name": "Discussion, Debate and Collaborative Talk",
+      "description": "The ability to listen actively, build on others' contributions, develop and defend a position, challenge politely and constructively, and sustain extended academic discussion. Includes structured debate formats and Socratic seminar models.",
+      "teaching_guidance": "Spoken language assessment requires students to demonstrate listening as well as speaking. Teach students explicit listening strategies: note key points, identify assumptions, anticipate rebuttals. In debate, students should know how to signal disagreement politely: 'I would argue differently...', 'Could I challenge that point?'. Socratic seminars require students to develop ideas jointly rather than compete. Collaborative tasks require students to divide roles, negotiate and synthesise — all of which should be assessed by the teacher against endorsement criteria.",
+      "key_vocabulary": "discussion, debate, argument, rebuttal, counter-argument, listening, responding, collaboration, facilitate, negotiate, challenge, consensus, perspective, Standard English",
+      "common_misconceptions": "Students sometimes dominate discussion without demonstrating listening. Some students remain silent in group tasks, not meeting the requirement to participate. Students may struggle to distinguish polite challenge (engaging with an idea) from personal challenge (disagreeing with a person).",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "ENL-KS4-C013",
+      "domain_id": "ENL-KS4-D004",
+      "concept_name": "Sentence Structure and Syntax for Effect",
+      "description": "The ability to consciously vary sentence structures — simple, compound, complex and compound-complex — to create pacing, emphasis, rhythm and reader engagement. Students should understand how syntax choices (fronted adverbials, passive voice, embedded clauses, short sentences for impact) function as deliberate craft choices.",
+      "teaching_guidance": "AO6 rewards students who demonstrate control of varied sentence structures. Teach students to think of sentences as tools: short sentences for shock or emphasis; long complex sentences for explanation or immersion; fragmented sentences for dramatic effect; rhetorical questions to engage the reader directly. Encourage students to read their writing aloud to assess rhythm and pacing. Students should also be able to discuss the syntactic choices of published writers in their analysis — not just naming sentence types but explaining the effect of those choices.",
+      "key_vocabulary": "simple sentence, compound sentence, complex sentence, subordinate clause, coordinating conjunction, subordinating conjunction, fronted adverbial, passive voice, fragment, syntax, rhythm, pacing, emphasis, parenthesis",
+      "common_misconceptions": "Students often write in uniformly complex sentences, not exploiting the power of a short sentence for impact. Students may insert complex sentence structures that obscure meaning rather than enhance it. Some students confuse varying sentence length with varying sentence structure — both are needed.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": true
+    },
+    {
+      "concept_id": "ENL-KS4-C014",
+      "domain_id": "ENL-KS4-D004",
+      "concept_name": "Vocabulary Range and Precision",
+      "description": "The ability to choose vocabulary that is precise, varied and appropriate to purpose and context, demonstrating a wide lexical range. Vocabulary choices should be evaluated in reading contexts and deployed deliberately in writing.",
+      "teaching_guidance": "AO6 requires vocabulary to serve clarity, purpose and effect. In writing, encourage students to replace vague or repetitive word choices with precise alternatives — word-level editing is a key skill. In reading analysis, teach students to zoom into specific word choices and explain denotation (dictionary meaning) and connotation (associations, tone). Build vocabulary through wide reading and explicit vocabulary instruction: morphology, etymology, semantic fields. Students should develop a personal vocabulary bank of words that upgrade common phrases.",
+      "key_vocabulary": "vocabulary, lexis, diction, denotation, connotation, semantic field, register, formal, colloquial, precise, vary, synonym, word choice, nuance, tone, morphology, etymology",
+      "common_misconceptions": "Students often use sophisticated vocabulary incorrectly, creating errors rather than improvements. Students may focus on 'big words' rather than precise words — precision matters more than complexity. Some students fail to notice how small word-level choices (adjective selection, verb choice) have large effects on tone.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": true
+    },
+    {
+      "concept_id": "ENL-KS4-C015",
+      "domain_id": "ENL-KS4-D004",
+      "concept_name": "Punctuation and Spelling Accuracy",
+      "description": "Accurate and deliberate use of the full range of punctuation marks and consistent, accurate spelling of a wide vocabulary. Punctuation should function both for grammatical accuracy and for stylistic effect — for example, using a colon to introduce an idea with drama, or a dash to signal a parenthetical aside.",
+      "teaching_guidance": "AO6 carries a mandatory 20% weighting. Teach students both the rules of punctuation (comma splices, apostrophe use, semi-colon function) and their creative deployment. Encourage students to use higher-level punctuation (semi-colons, colons, dashes, brackets) deliberately and correctly rather than avoiding them through caution. Spelling accuracy should be reinforced through proofreading strategies: reading backwards, targeting personal error patterns. Students should know how to spell the vocabulary they use — overshooting vocabulary and misspelling it costs marks in both AO6 and credibility in AO5.",
+      "key_vocabulary": "comma, semi-colon, colon, dash, brackets, apostrophe, speech marks, ellipsis, full stop, spelling, homophones, proofreading, accuracy, technical accuracy",
+      "common_misconceptions": "Students commonly misuse the apostrophe, particularly confusing 'its' and 'it's', and 'their', 'there' and 'they're'. The comma splice (joining two sentences with a comma) is one of the most frequent errors at GCSE. Students often avoid semi-colons rather than learning their correct use, missing an opportunity to demonstrate technical range.",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": true
+    }
+  ],
+  "prerequisite_relationships": [
+    {
+      "prerequisite_concept": "ENL-KS4-C001",
+      "dependent_concept": "ENL-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Critical evaluation (AO4) requires a foundation in identifying both explicit and implicit meaning (AO1). Students cannot evaluate how convincingly a writer achieves an effect without first comprehending what the text explicitly states and implies."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C001",
+      "dependent_concept": "ENL-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Comparing writers' perspectives (AO3) requires secure ability to identify and interpret explicit and implicit meanings in each text before cross-text comparison is meaningful."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C002",
+      "dependent_concept": "ENL-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.85,
+      "rationale": "Comparative analysis of methods across texts (AO3) builds on secure language analysis skills (AO2). Students must be confident analysing individual texts before they can compare methods across two texts simultaneously."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C002",
+      "dependent_concept": "ENL-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Evaluation (AO4) depends on language analysis (AO2) — students must be able to explain how specific techniques work before they can evaluate how effectively the writer deploys them overall."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C002",
+      "dependent_concept": "ENL-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.75,
+      "rationale": "Structural analysis builds on language analysis — students who can analyse word-level choices need to extend this skill to whole-text organisational decisions. The analytical framework is similar; the scale of analysis differs."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C003",
+      "dependent_concept": "ENL-KS4-C004",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.75,
+      "rationale": "Full evaluation of a text requires understanding both its language choices (AO2) and its structural choices (AO2 structural strand). Students who understand how a text is organised can make more complete evaluative judgements."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C007",
+      "dependent_concept": "ENL-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Transactional writing requires prior secure knowledge of audience, purpose and form — students must understand what these concepts demand before they can apply them to specific non-fiction genres."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C007",
+      "dependent_concept": "ENL-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Deploying rhetorical devices purposefully requires understanding audience and purpose first — rhetorical choices are meaningless without knowing who they are directed at and what the writer is trying to achieve."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C008",
+      "dependent_concept": "ENL-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.75,
+      "rationale": "Effective transactional writing (persuasive articles, speeches, letters) draws on rhetorical devices. Students need control of persuasive techniques before they can write convincing non-fiction at the required standard."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C013",
+      "dependent_concept": "ENL-KS4-C009",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.7,
+      "rationale": "Effective narrative and descriptive writing requires sentence structure control. Students must be able to vary sentence structures deliberately to create pacing and effect in creative writing."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C013",
+      "dependent_concept": "ENL-KS4-C010",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.7,
+      "rationale": "Transactional writing at the higher grades requires sophisticated sentence structure variation to sustain reader engagement and demonstrate control of AO6."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C014",
+      "dependent_concept": "ENL-KS4-C009",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.75,
+      "rationale": "Precise and original vocabulary selection is central to high-quality narrative and descriptive writing. Students must develop lexical range before they can write with the distinctiveness rewarded at the higher grades."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C015",
+      "dependent_concept": "ENL-KS4-C013",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.65,
+      "rationale": "Accurate punctuation is required before sentence structure can be varied effectively — students who cannot deploy commas, semi-colons and colons accurately cannot construct complex sentences without error."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C006",
+      "dependent_concept": "ENL-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Comparing writers across different time periods (AO3, Paper 2) requires contextual knowledge of 19th-century non-fiction texts and their conventions. Students who understand the historical and generic context can compare perspectives more insightfully."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C011",
+      "dependent_concept": "ENL-KS4-C012",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.6,
+      "rationale": "Formal presentation skills provide a foundation for more dynamic discussion and debate participation — students who have practised organised, structured formal speaking can build on this in interactive discussion contexts."
+    },
+    {
+      "prerequisite_concept": "ENL-KS4-C014",
+      "dependent_concept": "ENL-KS4-C002",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.7,
+      "rationale": "Language analysis (AO2) requires students to comment on vocabulary choices with precision. A secure understanding of vocabulary — denotation, connotation, semantic fields — enables more sophisticated analytical commentary."
+    }
+  ]
+}

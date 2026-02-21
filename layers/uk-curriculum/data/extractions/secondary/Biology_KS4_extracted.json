@@ -1,0 +1,756 @@
+{
+  "metadata": {
+    "subject": "Biology",
+    "key_stage": "KS4",
+    "years_covered": [10, 11],
+    "document_reference": "DFE-00441-2014",
+    "extraction_date": "2026-02-21",
+    "structure_rating": 8
+  },
+  "domains": [
+    {
+      "domain_id": "BI-KS4-D001",
+      "domain_name": "Cell Biology",
+      "description": "The study of cell structure, cell division, and transport mechanisms across cell membranes in both prokaryotic and eukaryotic organisms. Covers microscopy, the cell cycle including mitosis, stem cells, and the processes of diffusion, osmosis and active transport.",
+      "curriculum_context": "Cell biology is the foundation of the entire GCSE Biology specification and extends directly from the KS3 introduction to cells. Pupils move from a descriptive understanding of cell structure to a mechanistic understanding of how cells divide, specialise and exchange substances with their environment. The DfE GCSE Biology subject content requires pupils to understand the differences between eukaryotic and prokaryotic cells at the subcellular level, to apply quantitative microscopy including calculation of magnification, and to use the particle model to explain passive and active transport. This domain provides the conceptual framework for understanding organisation, disease, bioenergetics and genetics, making it foundational for the rest of the specification. Required practical work includes the use of microscopes to observe and draw prepared slides and the investigation of osmosis in plant tissue.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "BI-KS4-D002",
+      "domain_name": "Organisation",
+      "description": "The hierarchical organisation of cells into tissues, organs and organ systems. Covers the digestive system, the cardiovascular system including the heart, blood and blood vessels, and organisation in plants including the xylem, phloem, transpiration and the structure of leaves.",
+      "curriculum_context": "Organisation extends the KS3 understanding of organ systems to a more detailed mechanistic and quantitative level. Pupils are required by the DfE subject content to understand how the structure of the digestive system is adapted to its function, including the role of enzymes, the structure of villi and the absorption of food molecules. The cardiovascular system is studied in detail, including the structure of the heart, the distinction between arteries, veins and capillaries, and the composition and functions of blood. Plant organisation is also required, including the roles of xylem and phloem, the process of transpiration and the factors that affect it. This domain integrates with Bioenergetics (photosynthesis) and Homeostasis (kidney function, blood glucose regulation).",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "BI-KS4-D003",
+      "domain_name": "Infection and Response",
+      "description": "The causes of communicable and non-communicable disease, the body's defence mechanisms including the immune system, vaccination, and the development and testing of drugs. Covers viral, bacterial, fungal and protist pathogens and their transmission.",
+      "curriculum_context": "Infection and Response addresses a socially significant area of biology that builds on the KS3 introduction to microorganisms and disease. The DfE subject content requires pupils to understand the distinction between communicable and non-communicable diseases, to describe how specific pathogens are transmitted and cause disease in the human body, and to explain how the immune system responds to infection through phagocytosis and antibody production. The development of medicines, vaccination programmes and monoclonal antibodies represents higher-order content that requires pupils to evaluate evidence and understand the processes of clinical trials. This domain connects to Cell Biology (immune cell function), Bioenergetics (how fever affects metabolism) and social science contexts around public health.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "BI-KS4-D004",
+      "domain_name": "Bioenergetics",
+      "description": "The processes by which organisms obtain and use energy. Covers photosynthesis as an endothermic process, aerobic and anaerobic respiration as exothermic processes, and the factors that affect the rate of photosynthesis.",
+      "curriculum_context": "Bioenergetics brings together the two fundamental energy processes of living systems \u2014 photosynthesis and cellular respiration \u2014 and requires pupils to understand them as chemical reactions with quantifiable inputs and outputs. The DfE subject content requires pupils to describe photosynthesis as an endothermic reaction in which light energy is transferred to chemical energy in glucose, to explain the effects of temperature, light intensity and carbon dioxide concentration on the rate of photosynthesis, and to distinguish between aerobic and anaerobic respiration including the products of fermentation. Required practical work includes investigations into the factors affecting photosynthesis (using aquatic plants to measure the rate of oxygen production) and the effect of exercise on respiration. This domain has strong connections to Chemistry (chemical reactions, energy changes) and Physics (energy transfer).",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "BI-KS4-D005",
+      "domain_name": "Homeostasis and Response",
+      "description": "The regulation of internal conditions in the human body. Covers the nervous system including reflex arcs, the endocrine system including hormones and their target organs, blood glucose regulation, thermoregulation, water balance and the menstrual cycle.",
+      "curriculum_context": "Homeostasis and Response develops the concept of negative feedback as a fundamental control mechanism in biology, requiring pupils to understand how the body maintains a stable internal environment despite external changes. The DfE subject content requires pupils to understand the nervous system from receptor to effector, to explain the reflex arc as a rapid automatic response, and to compare nervous and hormonal communication. Detailed content is required on the roles of insulin and glucagon in blood glucose control, ADH in water balance, and the hormones of the menstrual cycle. The separate sciences specification additionally requires understanding of plant responses including auxin, gibberellins and ethene. This domain provides important links to real-world health contexts including diabetes, IVF and drug therapies.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "BI-KS4-D006",
+      "domain_name": "Inheritance, Variation and Evolution",
+      "description": "The mechanisms of genetic inheritance including Mendelian genetics, the structure of DNA and protein synthesis, variation within species, and the evidence for and mechanisms of evolution by natural selection.",
+      "curriculum_context": "Inheritance, Variation and Evolution represents the unifying theoretical framework of biology and requires pupils to integrate molecular, cellular and organismal understanding. The DfE subject content requires pupils to understand the structure of DNA as a double helix containing complementary base pairs, to explain how genes code for proteins through transcription and translation, and to apply Mendelian genetics to predict the outcomes of crosses using Punnett squares. Pupils are required to understand how mutations can arise and their relationship to cancer, and to explain evolution by natural selection as the mechanism by which heritable variation leads to differential survival and reproduction. Required practicals include extracting DNA from plant material. This domain connects to Cell Biology (mitosis vs meiosis) and has profound links to the history and nature of science.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "BI-KS4-D007",
+      "domain_name": "Ecology",
+      "description": "The study of the interrelationships between organisms and their environments. Covers adaptations, sampling techniques, food chains and cycles of matter, biodiversity, the impact of human activity on the environment, and conservation.",
+      "curriculum_context": "Ecology at GCSE extends the KS3 understanding of ecosystems to include quantitative sampling techniques and the mathematical modelling of population dynamics. The DfE subject content requires pupils to understand how organisms are adapted to their environments, to describe the carbon and water cycles, and to explain how human activities including pollution, land clearance and climate change threaten biodiversity. Pupils are required to understand the roles of producers, consumers and decomposers in ecosystems, and to interpret data on the effects of environmental change. Required practical work includes field investigations using quadrats and transects to sample populations. The global biodiversity crisis and the value of conservation programmes provide rich contexts for evaluating scientific evidence and considering socio-scientific issues.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    }
+  ],
+  "objectives": [
+    {
+      "objective_id": "BI-KS4-O001",
+      "domain_id": "BI-KS4-D001",
+      "objective_text": "Describe the differences between eukaryotic and prokaryotic cells, including the presence or absence of a nucleus, mitochondria, chloroplasts, cell wall and plasmids.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O002",
+      "domain_id": "BI-KS4-D001",
+      "objective_text": "Identify the subcellular structures of animal cells, plant cells and bacterial cells and explain the function of each structure including: nucleus, cytoplasm, cell membrane, cell wall, mitochondria, ribosomes, chloroplasts and vacuole.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O003",
+      "domain_id": "BI-KS4-D001",
+      "objective_text": "Use a light microscope to observe, draw and label a selection of cells and calculate magnification using the formula: magnification = image size / real size.",
+      "non_statutory_guidance": "Required Practical 1.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O004",
+      "domain_id": "BI-KS4-D001",
+      "objective_text": "Explain how cells differentiate and become specialised for their function, including examples of specialised cells such as sperm cells, egg cells, red blood cells, nerve cells, muscle cells and root hair cells.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O005",
+      "domain_id": "BI-KS4-D001",
+      "objective_text": "Describe the cell cycle and explain how mitosis produces two identical diploid daughter cells for growth, repair and asexual reproduction.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O006",
+      "domain_id": "BI-KS4-D001",
+      "objective_text": "Evaluate the therapeutic uses and ethical considerations of stem cells, including embryonic stem cells and adult stem cells, in treating disease.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O007",
+      "domain_id": "BI-KS4-D001",
+      "objective_text": "Explain diffusion as the net movement of particles from a region of higher concentration to a region of lower concentration along a concentration gradient, and describe how surface area to volume ratio, concentration gradient, temperature and distance affect the rate of diffusion.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O008",
+      "domain_id": "BI-KS4-D001",
+      "objective_text": "Investigate the effect of a range of concentrations of salt or sugar solutions on the mass of plant tissue (osmosis investigation).",
+      "non_statutory_guidance": "Required Practical 2.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O009",
+      "domain_id": "BI-KS4-D001",
+      "objective_text": "Explain active transport as the movement of substances from a more dilute to a more concentrated solution, against a concentration gradient, requiring energy from respiration.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O010",
+      "domain_id": "BI-KS4-D002",
+      "objective_text": "Describe the levels of organisation in multicellular organisms: cells, tissues, organs and organ systems.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O011",
+      "domain_id": "BI-KS4-D002",
+      "objective_text": "Describe the structure of the human digestive system including the roles of the mouth, oesophagus, stomach, small intestine, large intestine, liver, pancreas and gall bladder.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O012",
+      "domain_id": "BI-KS4-D002",
+      "objective_text": "Explain the role of enzymes in digestion, including amylase, proteases and lipases, their specific substrates and products, and how pH and temperature affect enzyme activity.",
+      "non_statutory_guidance": "Required Practical 3: investigate the effect of pH on enzyme activity.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O013",
+      "domain_id": "BI-KS4-D002",
+      "objective_text": "Describe the structure and function of the heart, including the roles of the atria, ventricles, valves, aorta, pulmonary artery, vena cava and pulmonary vein, and explain how the heart maintains a unidirectional flow of blood.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O014",
+      "domain_id": "BI-KS4-D002",
+      "objective_text": "Compare the structure and function of arteries, veins and capillaries and explain how each is adapted to its role in the circulatory system.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O015",
+      "domain_id": "BI-KS4-D002",
+      "objective_text": "Describe the components of blood and explain the functions of red blood cells, white blood cells, platelets and plasma.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O016",
+      "domain_id": "BI-KS4-D002",
+      "objective_text": "Describe the structure of leaves and explain how the xylem and phloem transport water, mineral ions and dissolved sugars, including the process of transpiration and the factors that affect its rate.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O017",
+      "domain_id": "BI-KS4-D003",
+      "objective_text": "Describe the causes of communicable diseases, distinguishing between viral, bacterial, fungal and protist pathogens, and give examples of diseases caused by each type.",
+      "non_statutory_guidance": null,
+      "examples": "Influenza, HIV (viral); tuberculosis, salmonella (bacterial); rose black spot (fungal); malaria (protist).",
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O018",
+      "domain_id": "BI-KS4-D003",
+      "objective_text": "Explain how the body defends itself against pathogens through physical barriers (skin, cilia, mucus), chemical defences (stomach acid, lysozymes) and the specific immune response.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O019",
+      "domain_id": "BI-KS4-D003",
+      "objective_text": "Explain how vaccinations protect individuals and populations from infectious disease, including the role of memory cells in providing immunity.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O020",
+      "domain_id": "BI-KS4-D003",
+      "objective_text": "Describe how drugs are developed and tested, including the stages of pre-clinical and clinical trials, the use of placebos and double-blind trials.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O021",
+      "domain_id": "BI-KS4-D003",
+      "objective_text": "Describe the causes and risk factors for non-communicable diseases including cardiovascular disease, cancer and type 2 diabetes, distinguishing lifestyle, genetic and environmental factors.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O022",
+      "domain_id": "BI-KS4-D003",
+      "objective_text": "Explain how monoclonal antibodies are produced and describe their uses in diagnosis and treatment of disease (Higher tier).",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O023",
+      "domain_id": "BI-KS4-D004",
+      "objective_text": "Describe photosynthesis as an endothermic reaction in which energy is transferred from the environment to the chloroplasts by light, summarised by the equation: 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O024",
+      "domain_id": "BI-KS4-D004",
+      "objective_text": "Investigate the effect of light intensity, CO2 concentration and temperature on the rate of photosynthesis in aquatic plants.",
+      "non_statutory_guidance": "Required Practical 5.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O025",
+      "domain_id": "BI-KS4-D004",
+      "objective_text": "Describe aerobic respiration as an exothermic reaction that provides energy for all living processes, summarised by: C6H12O6 + 6O2 \u2192  6CO2 + 6H2O, and explain how the energy released is used for movement, active transport, synthesis of molecules and maintenance of body temperature.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O026",
+      "domain_id": "BI-KS4-D004",
+      "objective_text": "Explain anaerobic respiration in animals (producing lactic acid) and in yeast and plants (producing ethanol and CO2), and describe the consequences of oxygen debt in animals.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O027",
+      "domain_id": "BI-KS4-D005",
+      "objective_text": "Describe the structure and function of the nervous system, including the roles of sensory neurons, relay neurons and motor neurons, and explain the pathway of a reflex arc.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O028",
+      "domain_id": "BI-KS4-D005",
+      "objective_text": "Explain how synapses work, including the release and detection of neurotransmitters, and how hormones differ from nerve signals in their speed, duration and specificity of effect.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O029",
+      "domain_id": "BI-KS4-D005",
+      "objective_text": "Explain the role of the pancreas, insulin and glucagon in regulating blood glucose concentration, and explain the differences between type 1 and type 2 diabetes and their treatments.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O030",
+      "domain_id": "BI-KS4-D005",
+      "objective_text": "Explain how water balance in the body is regulated by the kidneys and ADH, including the process of filtration and selective reabsorption in the nephron (Higher tier).",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O031",
+      "domain_id": "BI-KS4-D005",
+      "objective_text": "Describe the role of hormones in the menstrual cycle, including oestrogen, progesterone, FSH and LH, and explain how hormonal contraception and fertility treatments work.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O032",
+      "domain_id": "BI-KS4-D006",
+      "objective_text": "Explain the structure of DNA as a double helix consisting of two polynucleotide strands, with complementary base pairing (A-T, C-G), and describe how this structure allows for accurate copying during cell division.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O033",
+      "domain_id": "BI-KS4-D006",
+      "objective_text": "Describe the process of protein synthesis, including transcription (DNA to mRNA) and translation (mRNA to amino acid sequence at the ribosome), and explain how the sequence of bases codes for the sequence of amino acids.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O034",
+      "domain_id": "BI-KS4-D006",
+      "objective_text": "Apply understanding of Mendelian genetics to predict the outcomes of monohybrid crosses using Punnett squares, using terms including allele, genotype, phenotype, dominant, recessive, homozygous and heterozygous.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O035",
+      "domain_id": "BI-KS4-D006",
+      "objective_text": "Explain the theory of evolution by natural selection, including how heritable variation, differential survival and reproduction, and the passage of advantageous alleles to offspring leads to changes in the characteristics of a population over time.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O036",
+      "domain_id": "BI-KS4-D006",
+      "objective_text": "Describe the evidence for evolution, including the fossil record, antibiotic resistance in bacteria, and the work of Darwin and Wallace.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O037",
+      "domain_id": "BI-KS4-D007",
+      "objective_text": "Describe how organisms are adapted to their environments (structural, behavioural and physiological adaptations) and explain the relationship between adaptation and natural selection.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O038",
+      "domain_id": "BI-KS4-D007",
+      "objective_text": "Use sampling techniques including quadrats and transects to investigate the distribution and abundance of organisms in an ecosystem.",
+      "non_statutory_guidance": "Required Practical 9.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O039",
+      "domain_id": "BI-KS4-D007",
+      "objective_text": "Describe the carbon cycle and the water cycle, explaining the processes of photosynthesis, respiration, combustion and decomposition.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "BI-KS4-O040",
+      "domain_id": "BI-KS4-D007",
+      "objective_text": "Evaluate the impact of human activity on biodiversity and the environment, including the effects of pollution, land clearance, climate change and over-exploitation, and assess the value of conservation programmes.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    }
+  ],
+  "concepts": [
+    {
+      "concept_id": "BI-KS4-C001",
+      "domain_id": "BI-KS4-D001",
+      "concept_name": "Eukaryotic and Prokaryotic Cell Structure",
+      "description": "Eukaryotic cells (animals, plants, fungi) have a membrane-bound nucleus and extensive internal membrane systems including the endoplasmic reticulum and Golgi apparatus. Prokaryotic cells (bacteria) lack a nucleus, with DNA as a single circular loop in the cytoplasm, and may contain plasmids. Prokaryotes also lack mitochondria and chloroplasts.",
+      "teaching_guidance": "Use annotated diagrams to compare animal, plant and bacterial cell structure. Emphasise that size difference is significant: prokaryotes are typically 1\u20135 \u00b5m while eukaryotes are 10\u2013100 \u00b5m. Electron micrographs help show real subcellular structures. Required Practical 1 uses a light microscope to observe prepared slides of eukaryotic cells.",
+      "key_vocabulary": "eukaryote, prokaryote, nucleus, cytoplasm, cell membrane, cell wall, mitochondrion, ribosome, chloroplast, plasmid, vacuole, flagellum, pili",
+      "common_misconceptions": "Students often think plant cells always have chloroplasts \u2014 clarify that only cells in green parts of the plant (leaves, stems) contain chloroplasts, not root cells. Students confuse the cell wall with the cell membrane \u2014 emphasise that the cell wall is outside the membrane in plants and bacteria, and that plant cell walls are made of cellulose while bacterial cell walls are made of peptidoglycan.",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C002",
+      "domain_id": "BI-KS4-D001",
+      "concept_name": "Cell Specialisation and Differentiation",
+      "description": "Multicellular organisms contain many different types of specialised cells, each adapted in structure to perform a specific function. Cell differentiation is the process by which a cell becomes specialised; in most animal cells this is irreversible after early embryonic development, while many plant cells retain the ability to differentiate throughout life.",
+      "teaching_guidance": "Study a range of specialised cells: sperm (streamlined with flagellum, acrosome), egg (large with energy stores), red blood cell (biconcave, no nucleus), ciliated epithelial cell (many cilia), root hair cell (large surface area), palisade mesophyll cell (many chloroplasts). Pupils should explain how each structural feature relates to function.",
+      "key_vocabulary": "differentiation, specialisation, stem cell, totipotent, pluripotent, sperm, red blood cell, neuron, root hair cell, palisade cell, structural adaptation",
+      "common_misconceptions": "Students often think all cells in an organism have the same genetic information \u2014 clarify that specialisation is about which genes are expressed, not which genes are present. Students also confuse mitosis (produces identical cells) with differentiation (cells become different) \u2014 emphasise that mitosis produces the cells, and differentiation is what happens afterwards.",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C003",
+      "domain_id": "BI-KS4-D001",
+      "concept_name": "Mitosis and the Cell Cycle",
+      "description": "The cell cycle is the series of events leading to cell division. DNA is replicated during interphase, after which mitosis produces two genetically identical daughter cells, each with the same number of chromosomes as the parent cell. Mitosis is used for growth, repair of tissues and asexual reproduction.",
+      "teaching_guidance": "Pupils need to understand the cell cycle as having distinct phases: interphase (growth and DNA replication), mitosis (division of the nucleus) and cytokinesis (division of the cytoplasm). Higher tier pupils should be able to identify the stages of mitosis (prophase, metaphase, anaphase, telophase) from diagrams. Connect to cancer as uncontrolled cell division. Required Practical: use a microscope to observe mitosis in root tip cells.",
+      "key_vocabulary": "cell cycle, interphase, mitosis, chromosome, chromatin, spindle fibre, centromere, daughter cell, cytokinesis, diploid, cancer, tumour",
+      "common_misconceptions": "Students often confuse mitosis (asexual, 2 identical daughter cells) with meiosis (sexual, 4 genetically different daughter cells) \u2014 a comparison table is essential. Students also think mitosis produces haploid cells \u2014 emphasise that mitosis is diploid to diploid.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C004",
+      "domain_id": "BI-KS4-D001",
+      "concept_name": "Diffusion, Osmosis and Active Transport",
+      "description": "Diffusion is the net movement of particles from high to low concentration along a concentration gradient; it is a passive process requiring no energy. Osmosis is the movement of water molecules through a partially permeable membrane from a region of higher water potential to lower water potential. Active transport is the movement of substances against a concentration gradient, requiring ATP energy from respiration.",
+      "teaching_guidance": "Use the sugar/salt solution and potato cylinder investigation (Required Practical 2) to establish osmosis practically. Emphasise that osmosis is a special case of diffusion for water only. Connect active transport to root hair cells absorbing mineral ions and the small intestine absorbing glucose against a gradient. The concept of surface area to volume ratio should be quantified and applied to explaining adaptations in exchange surfaces.",
+      "key_vocabulary": "diffusion, osmosis, active transport, concentration gradient, partially permeable membrane, water potential, turgor, plasmolysis, ATP, surface area to volume ratio",
+      "common_misconceptions": "Students often describe osmosis as the movement of water from low to high concentration \u2014 clarify the direction carefully (water moves from higher water concentration to lower water concentration, i.e., from dilute to concentrated solution). Students confuse active transport requiring energy with diffusion which does not \u2014 emphasise that active transport works against the concentration gradient.",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C005",
+      "domain_id": "BI-KS4-D002",
+      "concept_name": "Enzymes and Digestion",
+      "description": "Enzymes are biological catalysts that speed up chemical reactions without being used up. They have an active site whose shape is complementary to a specific substrate. Digestion involves enzymes breaking large insoluble food molecules into small soluble ones that can be absorbed. Key digestive enzymes include amylase (starch to glucose), proteases (proteins to amino acids) and lipases (fats to fatty acids and glycerol).",
+      "teaching_guidance": "Required Practical 3 investigates the effect of pH on enzyme activity using amylase and starch (detected with iodine). Use the lock-and-key and induced fit models to explain enzyme specificity. Emphasise that denaturation is irreversible and explain why \u2014 the active site changes shape permanently. Connect bile (from the liver) to emulsification of fats as a physical, not chemical, process.",
+      "key_vocabulary": "enzyme, catalyst, active site, substrate, product, lock-and-key, induced fit, denaturation, optimum pH, optimum temperature, amylase, protease, lipase, bile, emulsification",
+      "common_misconceptions": "Students often say enzymes are 'killed' by high temperatures instead of 'denatured'. Students also think bile is an enzyme \u2014 clarify that bile emulsifies fat (physical) but does not chemically digest it. Students confuse the substrate and the active site \u2014 the substrate fits into the active site.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C006",
+      "domain_id": "BI-KS4-D002",
+      "concept_name": "The Heart and Circulatory System",
+      "description": "The heart is a double pump: the right side pumps deoxygenated blood to the lungs (pulmonary circulation) and the left side pumps oxygenated blood to the body (systemic circulation). Coronary arteries supply the heart muscle itself. Valves prevent backflow. The sinoatrial node (pacemaker) initiates each heartbeat.",
+      "teaching_guidance": "Use a diagram of the heart (or a real sheep/pig heart dissection if possible) to teach the names and positions of chambers, valves and vessels. Pupils must know which side is thicker-walled and why (left ventricle pumps to body, therefore thicker). Connect to cardiovascular disease \u2014 coronary heart disease, heart attacks, the use of stents and statins. Introduce the concept of heart rate and blood pressure as indicators of health.",
+      "key_vocabulary": "atrium, ventricle, atrioventricular valve, semilunar valve, aorta, vena cava, pulmonary artery, pulmonary vein, sinoatrial node, pacemaker, coronary artery, systole, diastole",
+      "common_misconceptions": "Students consistently mix up which side of the heart carries oxygenated vs deoxygenated blood. A mnemonic or colour-coded diagram helps. Students also confuse the pulmonary artery (carries deoxygenated blood to lungs) with the pulmonary vein (brings oxygenated blood back) \u2014 emphasise that artery = away from heart, vein = towards heart.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C007",
+      "domain_id": "BI-KS4-D002",
+      "concept_name": "Transpiration and Plant Transport",
+      "description": "Water is absorbed by root hair cells and transported up the plant through xylem vessels by the process of transpiration. Dissolved sugars produced in photosynthesis are transported through phloem vessels by translocation. Transpiration rate is affected by light intensity, temperature, humidity, wind speed and the size and distribution of stomata.",
+      "teaching_guidance": "A potometer (Required Practical) can be used to investigate factors affecting transpiration rate. Pupils should understand the structure of xylem (dead, hollow, lignified, no end walls) and phloem (living, sieve tubes and companion cells) and explain how each structure suits its function. Guard cells and their mechanism for opening and closing stomata should be explained using osmosis.",
+      "key_vocabulary": "transpiration, translocation, xylem, phloem, stomata, guard cell, root hair cell, potometer, water potential gradient, cohesion, adhesion, lignin, sieve tube, companion cell",
+      "common_misconceptions": "Students confuse xylem (water and minerals, one-way, upward) with phloem (sugars, two-way). Students often say transpiration is 'breathing' \u2014 clarify it is water loss through stomata. Students also forget that transpiration is primarily driven by evaporation, not active pumping.",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C008",
+      "domain_id": "BI-KS4-D003",
+      "concept_name": "Pathogens and Communicable Disease",
+      "description": "Pathogens are microorganisms that cause infectious disease. The four types of pathogen are viruses, bacteria, fungi and protists, each with distinct mechanisms of causing harm. Viruses reproduce inside host cells and may destroy them; bacteria may produce toxins; fungi may damage tissues; protists may damage cells directly. Diseases spread through water, air, direct contact, sexual contact, vectors and contaminated food.",
+      "teaching_guidance": "Use specific examples: influenza and HIV (viral), tuberculosis and salmonella (bacterial), rose black spot (fungal), malaria (protist). For each, require pupils to know the specific mechanism of disease and transmission route. Evaluate evidence for the effectiveness of hygiene measures, vaccinations and treatments. This is an excellent context for socio-scientific reasoning about public health policy.",
+      "key_vocabulary": "pathogen, bacterium, virus, fungus, protist, vector, transmission, infection, malaria, Plasmodium, tuberculosis, influenza, HIV, toxin, host",
+      "common_misconceptions": "Students think antibiotics kill viruses \u2014 this is one of the most important misconceptions to address. Antibiotics act on bacterial structures not present in viruses. Students also confuse being 'infected' with being 'ill' \u2014 the immune system may destroy a pathogen before symptoms develop.",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C009",
+      "domain_id": "BI-KS4-D003",
+      "concept_name": "Immune System and Vaccination",
+      "description": "The immune system responds to pathogens through phagocytosis (non-specific) and antibody production (specific). Lymphocytes produce antibodies complementary to antigens on the pathogen surface. Memory cells persist after infection, enabling a rapid secondary response. Vaccination introduces antigens to stimulate an immune response without causing disease, producing immunity.",
+      "teaching_guidance": "Distinguish between the non-specific (phagocytes, skin, inflammation) and specific (lymphocytes, antibodies, memory cells) immune response. Draw and annotate the primary and secondary antibody response graphs. Discuss herd immunity and the social and ethical debates around compulsory vaccination. Link to monoclonal antibodies (separate science Higher) as an extension of antibody specificity.",
+      "key_vocabulary": "antigen, antibody, lymphocyte, phagocyte, phagocytosis, memory cell, vaccination, immunity, herd immunity, specific immune response, non-specific immune response",
+      "common_misconceptions": "Students confuse antigens (on the pathogen) and antibodies (produced by lymphocytes). Students often think vaccines contain live disease organisms \u2014 clarify that modern vaccines may contain weakened pathogens, dead pathogens, antigens, or mRNA. Students also think you cannot catch a disease if you are vaccinated \u2014 emphasise that vaccination greatly reduces risk but is not 100% guaranteed.",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C010",
+      "domain_id": "BI-KS4-D004",
+      "concept_name": "Photosynthesis",
+      "description": "Photosynthesis is an endothermic reaction in which light energy is absorbed by chlorophyll and used to convert carbon dioxide and water into glucose and oxygen. The glucose produced is used for respiration, converted to starch for storage, used to synthesise cellulose for cell walls, or used to make other biological molecules.",
+      "teaching_guidance": "Required Practical 5: investigate the effect of light intensity on the rate of photosynthesis using Elodea or similar aquatic plants, counting oxygen bubbles. Use limiting factor graphs to explain why each factor (light intensity, CO2 concentration, temperature) can limit the rate of photosynthesis. Pupils should be able to interpret and draw limiting factor graphs. Connect to agriculture and greenhouses as contexts.",
+      "key_vocabulary": "photosynthesis, chlorophyll, light intensity, carbon dioxide, oxygen, glucose, starch, limiting factor, endothermic, chloroplast, light-dependent, light-independent",
+      "common_misconceptions": "Students think plants only photosynthesise and do not respire \u2014 plants both photosynthesise AND respire. During darkness, only respiration occurs. Students also confuse the light-dependent and light-independent reactions at higher level, and think that water is the source of hydrogen for glucose \u2014 which is actually correct but counter-intuitive.",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C011",
+      "domain_id": "BI-KS4-D004",
+      "concept_name": "Aerobic and Anaerobic Respiration",
+      "description": "Aerobic respiration uses oxygen to break down glucose completely to carbon dioxide and water, releasing large amounts of ATP energy. Anaerobic respiration occurs without oxygen, producing ATP but with a much lower yield. In animals, anaerobic respiration produces lactic acid; in yeast and plants it produces ethanol and carbon dioxide. Fermentation by yeast has industrial applications in brewing and bread-making.",
+      "teaching_guidance": "Required Practical 6: investigate the rate of respiration in yeast using glucose solutions at different temperatures, measuring CO2 production. Connect to exercise physiology: pupils should explain why breathing and heart rate increase during exercise, why lactic acid builds up causing muscle fatigue, and what oxygen debt means. Fermentation should be linked to biotechnology and food production.",
+      "key_vocabulary": "aerobic respiration, anaerobic respiration, glucose, ATP, oxygen, carbon dioxide, water, lactic acid, ethanol, fermentation, oxygen debt, muscle fatigue, mitochondrion",
+      "common_misconceptions": "Students think respiration is breathing. Clarify respiration is a cellular chemical process for releasing energy from glucose. Students also think anaerobic respiration produces no energy \u2014 it produces energy (ATP) but far less than aerobic. Students confuse the products of anaerobic respiration in yeast (ethanol + CO2) with those in animals (lactic acid only).",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C012",
+      "domain_id": "BI-KS4-D005",
+      "concept_name": "Nervous System and Reflex Arcs",
+      "description": "The nervous system consists of the central nervous system (brain and spinal cord) and the peripheral nervous system. Sensory neurons carry electrical impulses from receptors to the CNS; motor neurons carry impulses from CNS to effectors. A reflex arc is a rapid, automatic response pathway: receptor \u2192 sensory neuron \u2192 relay neuron \u2192 motor neuron \u2192 effector.",
+      "teaching_guidance": "Draw and annotate a reflex arc diagram. Pupils should be able to trace the pathway of an impulse in both a spinal reflex (e.g., withdrawing from pain) and a cranial reflex (e.g., pupil light reflex). Explain why reflex responses are faster than voluntary responses \u2014 they do not pass through conscious areas of the brain. Required Practical: investigate the effect of a factor on human reaction time.",
+      "key_vocabulary": "sensory neuron, motor neuron, relay neuron, receptor, effector, synapse, reflex arc, CNS, peripheral nervous system, impulse, stimulus, response, spinal cord",
+      "common_misconceptions": "Students often draw reflex arcs without the relay neuron in the spinal cord. Students also think reflexes require conscious thought \u2014 emphasise that the defining feature of a reflex is that it does not involve the conscious brain. Students confuse effectors (muscles and glands that carry out the response) with receptors (which detect the stimulus).",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C013",
+      "domain_id": "BI-KS4-D005",
+      "concept_name": "Blood Glucose Regulation and Diabetes",
+      "description": "Blood glucose concentration is monitored and regulated by the pancreas through the hormones insulin and glucagon. When blood glucose is too high, beta cells secrete insulin, causing cells to take up glucose and the liver to convert glucose to glycogen. When blood glucose is too low, alpha cells secrete glucagon, causing glycogen to be broken down to glucose. Type 1 diabetes is caused by autoimmune destruction of beta cells; type 2 is caused by insulin resistance.",
+      "teaching_guidance": "Use annotated feedback diagrams to show the negative feedback loops for both high and low blood glucose. Pupils should understand that insulin and glucagon are antagonistic hormones. Connect to diet, obesity and lifestyle risk factors for type 2 diabetes. Treatment: type 1 requires insulin injections or pump; type 2 can be managed with diet and exercise, sometimes with medication.",
+      "key_vocabulary": "insulin, glucagon, pancreas, beta cell, alpha cell, glycogen, glycogenesis, glycogenolysis, negative feedback, type 1 diabetes, type 2 diabetes, blood glucose concentration",
+      "common_misconceptions": "Students confuse type 1 (no insulin produced) with type 2 (cells do not respond to insulin). Students think insulin lowers blood glucose by 'destroying' glucose \u2014 clarify it promotes glucose uptake by cells and glycogen synthesis in the liver. Students also confuse glucagon with glucose.",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C014",
+      "domain_id": "BI-KS4-D006",
+      "concept_name": "DNA Structure and Protein Synthesis",
+      "description": "DNA is a double helix polymer made of nucleotide monomers, each containing a deoxyribose sugar, a phosphate group and one of four nitrogenous bases (adenine, thymine, cytosine, guanine). Complementary base pairing (A-T, C-G) holds the two strands together. Protein synthesis involves transcription (DNA \u2192 mRNA in the nucleus) and translation (mRNA \u2192 amino acid sequence at the ribosome), with tRNA molecules carrying specific amino acids.",
+      "teaching_guidance": "Build DNA models using kits or paper cut-outs to reinforce complementary base pairing. Pupils should be able to write the complementary strand of a given DNA sequence. Higher tier: pupils need to understand mRNA codons and tRNA anticodons. Connect mutations (base substitutions, insertions, deletions) to changes in protein sequence and function, and to cancer.",
+      "key_vocabulary": "DNA, double helix, nucleotide, base pairing, adenine, thymine, cytosine, guanine, gene, transcription, translation, mRNA, tRNA, ribosome, codon, anticodon, protein synthesis, mutation",
+      "common_misconceptions": "Students often say A pairs with G (mixing up the complementary pairs). A memory aid: 'Apples and Trees, Cars and Garages'. Students also confuse transcription and translation \u2014 a clear diagram showing nucleus (transcription) and ribosome (translation) helps. Students think mutations always cause disease \u2014 most mutations are neutral.",
+      "concept_type": "knowledge",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "pathway": "separate"
+    },
+    {
+      "concept_id": "BI-KS4-C015",
+      "domain_id": "BI-KS4-D006",
+      "concept_name": "Mendelian Genetics and Inheritance Patterns",
+      "description": "Genes are sections of DNA that code for a specific sequence of amino acids which form a protein. Most body cells contain two copies of each chromosome (diploid), and therefore two alleles of each gene. Alleles can be dominant (expressed in heterozygotes) or recessive (only expressed in homozygotes). Punnett squares are used to predict the probability of phenotypic and genotypic ratios in offspring.",
+      "teaching_guidance": "Practise Punnett squares with a range of examples: monohybrid crosses, crosses involving sex-linkage (Higher tier), genetic conditions such as cystic fibrosis (recessive) and Huntington's disease (dominant). Calculate phenotypic ratios (e.g., 3:1, 1:1) and discuss probability in genetic terms. Sex determination should be covered using XX/XY notation. Introduce screening and ethical implications.",
+      "key_vocabulary": "gene, allele, genotype, phenotype, dominant, recessive, homozygous, heterozygous, Punnett square, monohybrid cross, sex linkage, carrier, cystic fibrosis, Huntington's disease, diploid, haploid",
+      "common_misconceptions": "Students often confuse genotype (genetic makeup) and phenotype (observable characteristics). Students think dominant alleles are more common in a population \u2014 frequency of alleles in a population is independent of dominance. Students also draw Punnett squares incorrectly by not correctly separating alleles into gametes.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C016",
+      "domain_id": "BI-KS4-D006",
+      "concept_name": "Evolution by Natural Selection",
+      "description": "Evolution by natural selection occurs when: there is variation within a population; some of that variation is heritable; individuals compete for limited resources; individuals with advantageous traits are more likely to survive and reproduce; advantageous alleles become more common in the population over generations. Speciation occurs when populations become reproductively isolated and evolve independently.",
+      "teaching_guidance": "Use the example of antibiotic resistance in bacteria as a clear and rapid illustration of natural selection. Pupils should be able to construct a full natural selection argument for any given example. Connect to evidence from the fossil record, DNA comparisons and homologous structures. Discuss the scientific controversy surrounding Darwin's ideas initially and how evidence has accumulated since.",
+      "key_vocabulary": "natural selection, variation, heritable, survival of the fittest, adaptation, allele frequency, population, speciation, reproductive isolation, evolution, fossil record, antibiotic resistance",
+      "common_misconceptions": "Students say organisms 'adapt' to their environment as an active, intentional process. Clarify: variation already exists in the population; selection acts on existing variation. Students also think evolution is directional (from 'primitive' to 'advanced') \u2014 clarify it is differential survival in a given environment.",
+      "concept_type": "theory",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C017",
+      "domain_id": "BI-KS4-D007",
+      "concept_name": "Ecosystems and Interdependence",
+      "description": "An ecosystem is the interaction of a community of organisms with their abiotic (non-living) environment. Organisms within an ecosystem compete for limited resources and depend on each other through feeding relationships, pollination, seed dispersal and decomposition. Producers form the base of food chains; energy is transferred through trophic levels but with significant losses at each stage.",
+      "teaching_guidance": "Required Practical 9: use quadrats and transects to sample the distribution and abundance of organisms. Pupils should be able to construct food chains and webs from data, calculate efficiency of energy transfer between trophic levels, and explain why food chains rarely have more than five trophic levels. Discuss keystone species and how the removal of one species can cascade through an ecosystem.",
+      "key_vocabulary": "ecosystem, community, population, abiotic, biotic, producer, consumer, decomposer, food chain, food web, trophic level, energy transfer, efficiency, keystone species, quadrat, transect",
+      "common_misconceptions": "Students think producers make 'food' from nothing \u2014 clarify that producers use light energy and inorganic molecules (CO2, water, minerals) to make organic molecules. Students also think energy is recycled through food chains \u2014 energy flows in one direction and is lost as heat; only matter is recycled.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "BI-KS4-C018",
+      "domain_id": "BI-KS4-D007",
+      "concept_name": "Biodiversity and Human Impact",
+      "description": "Biodiversity refers to the variety of life in an area, including the number of different species (species richness) and the genetic diversity within species. Human activities threaten biodiversity through habitat destruction, pollution, introduction of invasive species, overexploitation and climate change. Conservation programmes aim to maintain biodiversity and restore damaged ecosystems.",
+      "teaching_guidance": "Use real data sets on species decline, deforestation rates and climate change to evaluate the scale of human impact. Pupils should be able to evaluate conservation strategies including nature reserves, captive breeding programmes, seed banks, rewilding and international agreements. Discuss conflicting interests: economic development vs. biodiversity conservation. This is a rich context for scientific literacy and evidence evaluation.",
+      "key_vocabulary": "biodiversity, species richness, habitat, deforestation, pollution, climate change, invasive species, overexploitation, conservation, rewilding, captive breeding, seed bank, sustainable development",
+      "common_misconceptions": "Students think that protecting one or two endangered species is equivalent to conserving biodiversity \u2014 emphasise that ecosystem function requires many species and interactions. Students also underestimate the importance of invertebrates and microorganisms relative to charismatic megafauna (large visible animals).",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    }
+  ],
+  "prerequisite_relationships": [
+    {
+      "prerequisite_concept": "BI-KS4-C001",
+      "dependent_concept": "BI-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Understanding the structural features of cells is prerequisite to understanding how cells differentiate and specialise; pupils must know what organelles exist before they can explain which ones are emphasised in specialised cells."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C002",
+      "dependent_concept": "BI-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Understanding that cells are the unit of life and can specialise sets up mitosis as the mechanism by which an organism produces the cells it needs; pupils need to know cells exist before studying how they divide."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C001",
+      "dependent_concept": "BI-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.8,
+      "rationale": "Understanding cell membrane structure as a partially permeable barrier is necessary to explain osmosis and active transport across cell membranes."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C004",
+      "dependent_concept": "BI-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.7,
+      "rationale": "Absorption of digested food molecules in the small intestine involves diffusion and active transport across the intestinal epithelium; pupils need these transport mechanisms before explaining digestion and absorption."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C004",
+      "dependent_concept": "BI-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.8,
+      "rationale": "Transpiration and the movement of water into root hair cells is explained by osmosis; understanding osmosis is prerequisite to understanding plant transport."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C005",
+      "dependent_concept": "BI-KS4-C006",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.6,
+      "rationale": "Understanding the digestive system (Organisation domain) builds on knowledge of enzymes; pupils need enzyme concepts before they can explain how digestion works mechanistically."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C008",
+      "dependent_concept": "BI-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Understanding what pathogens are and how they cause disease is prerequisite to understanding the immune response; pupils must know what the body is defending against before studying how it defends itself."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C009",
+      "dependent_concept": "BI-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.5,
+      "rationale": "These concepts are mutually reinforcing; understanding immune system response deepens understanding of what makes pathogens dangerous. The primary ordering is C008 before C009."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C010",
+      "dependent_concept": "BI-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.8,
+      "rationale": "Photosynthesis produces glucose which is the substrate for cellular respiration; pupils need to understand photosynthesis before respiration can be fully contextualised as the complementary process."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C003",
+      "dependent_concept": "BI-KS4-C014",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.8,
+      "rationale": "DNA replication during the cell cycle provides context for understanding DNA structure; understanding that DNA must be accurately copied before cell division is the motivation for learning about complementary base pairing."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C014",
+      "dependent_concept": "BI-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Understanding that genes are sections of DNA coding for proteins is prerequisite to understanding alleles as alternative versions of the same gene locus, which is foundational for all of Mendelian genetics."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C015",
+      "dependent_concept": "BI-KS4-C016",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.8,
+      "rationale": "Natural selection requires that variation is heritable (genetic); pupils must understand alleles and inheritance before they can fully understand how natural selection changes allele frequencies across generations."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C016",
+      "dependent_concept": "BI-KS4-C018",
+      "confidence": "inferred",
+      "relationship_type": "conceptual",
+      "strength": 0.6,
+      "rationale": "Understanding evolution and speciation underpins the scientific basis for biodiversity \u2014 that different species represent millions of years of accumulated adaptations which cannot be recreated once lost."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C017",
+      "dependent_concept": "BI-KS4-C018",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Understanding how ecosystems function and how species are interdependent is prerequisite to understanding why loss of biodiversity threatens ecosystem function and why conservation is scientifically valuable."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C011",
+      "dependent_concept": "BI-KS4-C013",
+      "confidence": "inferred",
+      "relationship_type": "conceptual",
+      "strength": 0.6,
+      "rationale": "Understanding aerobic respiration as the energy-releasing process is helpful context for understanding metabolic rate changes in homeostasis (e.g., shivering to generate heat in thermoregulation, increased respiration during exercise)."
+    },
+    {
+      "prerequisite_concept": "BI-KS4-C012",
+      "dependent_concept": "BI-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.7,
+      "rationale": "Understanding the nervous system and how signals travel from receptors to effectors provides the framework for understanding the endocrine system as an alternative (slower, longer-lasting) communication system for homeostasis."
+    }
+  ]
+}

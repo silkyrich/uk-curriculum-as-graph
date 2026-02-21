@@ -24,7 +24,7 @@ Each **layer** is self-contained with its own:
 
 1. **`layers/uk-curriculum/`** - UK National Curriculum (2014)
    - Foundation layer - everything else builds on this
-   - 1,032 concepts, 1,193 objectives, 225 domains across 12 subjects
+   - 1,219 concepts, 1,551 objectives, 316 domains across 55 subjects (KS1–KS4)
    - Script: `import_curriculum.py`
 
 2. **`layers/assessment/`** - KS2 Test Frameworks
@@ -48,7 +48,7 @@ Each **layer** is self-contained with its own:
 
 6. **`layers/learner-profiles/`** - Age-appropriate design constraints
    - Depends on UK curriculum (links from Year nodes)
-   - 33 InteractionTypes + 9 each of ContentGuideline, PedagogyProfile, FeedbackProfile + 5 PedagogyTechniques
+   - 33 InteractionTypes + 11 each of ContentGuideline, PedagogyProfile, FeedbackProfile + 5 PedagogyTechniques
    - Each node has an `agent_prompt` or `how_to_implement` property for direct LLM instruction
    - InteractionType PRECEDES chain encodes the interface curriculum (voice → text → analysis)
    - PedagogyTechnique REQUIRES chain encodes the pedagogy curriculum (spacing → interleaving → ...)
@@ -213,7 +213,7 @@ All nodes have `display_category` property:
 (:Programme)-[:DEVELOPS_SKILL]->(:WorkingScientifically)  // UK ↔ Skills
 
 // Learner profiles (linked from Year)
-(:Year)-[:PRECEDES]->(:Year)                                      // Y1→Y2→...→Y9
+(:Year)-[:PRECEDES]->(:Year)                                      // Y1→Y2→...→Y11
 (:Year)-[:HAS_CONTENT_GUIDELINE]->(:ContentGuideline)
 (:Year)-[:HAS_PEDAGOGY_PROFILE]->(:PedagogyProfile)
 (:Year)-[:HAS_FEEDBACK_PROFILE]->(:FeedbackProfile)
@@ -305,7 +305,7 @@ Every feature that introduces or modifies data processing must:
 
 **Confused about...**
 
-- Graph model? → `core/docs/graph_model_overview.md`
+- Graph model? → This file (see Graph Model Overview section above)
 - Layer architecture? → This file (CLAUDE.md)
 - Specific layer? → `layers/{layer-name}/README.md`
 - Learner profile queries? → `layers/learner-profiles/README.md`
@@ -396,7 +396,7 @@ class LayerImporter:
 
 ---
 
-## Current State (2026-02-20)
+## Current State (2026-02-21)
 
 ✅ **Documentation reorganised:**
 - 61 docs sorted into semantic subdirectories (`design/`, `analysis/`, `archive/`, `user-stories/`, `research/learning-science/`, `research/interoperability/`)
@@ -404,19 +404,24 @@ class LayerImporter:
 - CASE graph model moved to its layer (`layers/case-standards/docs/`)
 - `STATUS.md` archived; `migrations/legacy_scripts_README.md` archived
 
+✅ **KS4 fully extracted and imported:**
+- 17 new KS4 JSON extraction files in `layers/uk-curriculum/data/extractions/secondary/`
+- Subjects: English Language, English Literature, Mathematics, Biology, Chemistry, Physics, History, Geography, Art & Design, Music, Drama, Design & Technology, Languages (MFL), Religious Studies, Business, Food Preparation & Nutrition, Media Studies
+- Plus 3 existing KS3-4 combined programmes: Citizenship, Computing, Physical Education
+
 ✅ **Complete layers:**
-- UK National Curriculum (3,252 nodes)
+- UK National Curriculum (55 subjects, 316 domains, 1,551 objectives, 1,219 concepts — KS1–KS4)
 - Assessment (KS2 test frameworks)
 - Epistemic Skills
 - Topics
 - CASE Standards (NGSS + Common Core Math)
-- Learner Profiles (66 nodes — 33 InteractionType, 9 ContentGuideline, 9 PedagogyProfile, 9 FeedbackProfile, 5 PedagogyTechnique)
+- Learner Profiles (71 nodes — 33 InteractionType, 11 ContentGuideline, 11 PedagogyProfile, 11 FeedbackProfile, 5 PedagogyTechnique)
 - Visualization (5 Bloom perspectives with icons, styleRules, and search templates)
 
-✅ **In Aura cloud database — clean full import (2026-02-20):**
+✅ **In Aura cloud database — clean full import (2026-02-21):**
 - Instance: education-graphs (6981841e)
-- 3,322 total nodes: UK Curriculum 2,555 · Assessment 277 · CASE Standards 276 · Epistemic Skills 105 · Learner Profile 65 · Structure 39
-- Visualization properties applied (display_color, display_icon, name)
+- **3,995 total nodes**
+- Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
 - 5 Bloom perspectives uploaded and active
 
 ✅ **Compliance framework (2026-02-20):**
@@ -438,12 +443,13 @@ class LayerImporter:
 
 1. This file (CLAUDE.md) - Architecture overview **including compliance rules**
 2. `core/compliance/DATA_CLASSIFICATION.md` - **What data you can and cannot collect**
-3. `core/docs/graph_model_overview.md` - Data model
-4. `layers/uk-curriculum/README.md` - Core layer
-5. `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md` - NGSS structure
-6. `layers/learner-profiles/README.md` - Age-appropriate design layer + agent query patterns
-7. `docs/design/RESEARCH_BRIEFING.md` - Research briefing and rationale for the learner layer
-8. `docs/design/CHILD_PROFILE_CONSENT.md` - Full consent and compliance analysis
+3. `docs/README.md` - Documentation navigation guide
+4. `core/docs/graph_model_overview.md` - Data model
+5. `layers/uk-curriculum/README.md` - Core layer
+6. `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md` - NGSS structure
+7. `layers/learner-profiles/README.md` - Age-appropriate design layer + agent query patterns
+8. `docs/design/RESEARCH_BRIEFING.md` - Research briefing and rationale for the learner layer
+9. `docs/design/CHILD_PROFILE_CONSENT.md` - Full consent and compliance analysis
 
 ---
 

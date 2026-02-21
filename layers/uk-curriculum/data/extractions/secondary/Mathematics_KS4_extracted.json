@@ -1,0 +1,1176 @@
+{
+  "metadata": {
+    "subject": "Mathematics",
+    "key_stage": "KS4",
+    "years_covered": [10, 11],
+    "document_reference": "DFE-00330-2014",
+    "extraction_date": "2026-02-21",
+    "structure_rating": 9,
+    "notes": "Extracted from the DfE GCSE Mathematics Subject Content and Assessment Objectives document (November 2013, reference DFE-00330-2014), supplemented by the KS4 Mathematics Programme of Study (July 2014). GCSE Mathematics is divided into Foundation (grades 1-5) and Higher (grades 4-9) tiers. Higher tier is a superset of Foundation tier content. The tier property on each concept reflects this: 'foundation' means Foundation only, 'higher' means Higher tier additional content, 'both' means assessed on both tiers. Six content domains align precisely with the official DfE structure. Structure rating 9 reflects very strong hierarchical organisation with explicit progression."
+  },
+  "domains": [
+    {
+      "domain_id": "MA-KS4-D001",
+      "domain_name": "Number",
+      "description": "Understanding and fluently applying the number system including integers, fractions, decimals, surds, powers, roots, and standard form, together with the use of approximation and estimation in context.",
+      "curriculum_context": "Number at KS4 builds directly on KS3 number work to develop a fully integrated understanding of the real number system, including the distinction between rational and irrational numbers and the manipulation of surds. Pupils extend their fluency with the four operations to include complex fractions, negative indices and standard form, and apply these in increasingly sophisticated real-world contexts. The curriculum requires pupils to use estimation and appropriate degrees of accuracy — including significant figures and decimal places — as tools for checking and communicating results. Number underpins all other domains and its KS4 extension provides the numerical fluency required for algebraic manipulation, probability calculation and statistical analysis. Higher tier pupils additionally work with recurring decimals converted to fractions, exact calculations with surds, and nth roots.",
+      "is_cross_cutting": false,
+      "structure_type": "hierarchical"
+    },
+    {
+      "domain_id": "MA-KS4-D002",
+      "domain_name": "Algebra",
+      "description": "Using algebraic notation and manipulation, solving equations and inequalities, working with sequences, functions and graphs, including quadratics, simultaneous equations, and proof.",
+      "curriculum_context": "Algebra at KS4 extends the symbolic reasoning introduced in KS3 to encompass quadratic expressions and equations, simultaneous equations, algebraic fractions and formal proof. Pupils develop fluency with expanding and factorising, including completing the square and using the quadratic formula, and apply algebraic methods to model and solve problems in geometry, ratio and statistics contexts. The statutory curriculum requires pupils to interpret and construct graphs of linear, quadratic, cubic, reciprocal and exponential functions, and to understand transformations of graphs. Higher tier pupils extend this further to include algebraic proof, manipulation of algebraic fractions, functions and their inverses, gradient of curves and area under curves using calculus ideas informally.",
+      "is_cross_cutting": false,
+      "structure_type": "hierarchical"
+    },
+    {
+      "domain_id": "MA-KS4-D003",
+      "domain_name": "Ratio, Proportion and Rates of Change",
+      "description": "Applying ratio, proportion and multiplicative reasoning to solve problems involving percentages, compound measures, scale, direct and inverse proportion, and rates of change.",
+      "curriculum_context": "Ratio, proportion and rates of change at KS4 formalises and extends the multiplicative reasoning developed at KS3, applying it in more complex and applied contexts. Pupils work with ratio to solve problems involving maps, recipes, mixing, division into parts, currency conversion and similar situations, and extend percentage work to include reverse percentages, compound interest and repeated proportional change. The curriculum requires pupils to understand gradient as a rate of change and to apply this in practical contexts such as speed-time and distance-time graphs, unit rates and compound measures such as density and pressure. Rates of change provide the conceptual bridge between arithmetic, algebraic thinking and graphical interpretation. Higher tier pupils additionally work with direct and inverse proportion expressed algebraically, including recognising and using y = kx^n relationships.",
+      "is_cross_cutting": false,
+      "structure_type": "hierarchical"
+    },
+    {
+      "domain_id": "MA-KS4-D004",
+      "domain_name": "Geometry and Measures",
+      "description": "Properties of 2D and 3D shapes, angle reasoning, transformations, constructions, mensuration, Pythagoras' theorem, trigonometry, vectors, and circle theorems.",
+      "curriculum_context": "Geometry and measures at KS4 is the most expansive domain, requiring pupils to develop confident spatial reasoning supported by rigorous deductive argument. Building on KS3 geometry, pupils extend their work with 2D and 3D shapes to include arc lengths, sector areas, surface area and volume of prisms, cylinders, cones and spheres. The statutory curriculum requires fluent use of Pythagoras' theorem in 2D and 3D, trigonometric ratios in right-angled triangles, and congruence and similarity proofs. Constructions and loci are developed using straight-edge and compass techniques, and vectors are introduced as a tool for geometric reasoning. Higher tier content adds the sine and cosine rules for non-right-angled triangles, circle theorems, and transformations of graphs. Circle theorems require the ability to identify and apply the key angle and tangent properties of circles in multi-step geometric proofs.",
+      "is_cross_cutting": false,
+      "structure_type": "hierarchical"
+    },
+    {
+      "domain_id": "MA-KS4-D005",
+      "domain_name": "Probability",
+      "description": "Calculating theoretical and experimental probabilities for single and combined events using Venn diagrams, tree diagrams, frequency trees and set notation.",
+      "curriculum_context": "Probability at KS4 builds on KS3 foundations to develop a rigorous quantitative framework for describing chance and uncertainty. Pupils learn to calculate theoretical probabilities using systematic enumeration and to estimate experimental probabilities from relative frequency, understanding the convergence of experimental probability to the theoretical value as the number of trials increases. The curriculum requires pupils to enumerate all outcomes of combined events using product rule for counting, tree diagrams and Venn diagrams, and to calculate probabilities of mutually exclusive and independent events. Conditional probability — the probability of one event given that another has occurred — is introduced in context, including through two-way tables and Venn diagrams. Higher tier pupils extend this to formal conditional probability notation and Bayes-style reasoning in two-event contexts.",
+      "is_cross_cutting": false,
+      "structure_type": "hierarchical"
+    },
+    {
+      "domain_id": "MA-KS4-D006",
+      "domain_name": "Statistics",
+      "description": "Collecting, interpreting and comparing data using graphical representations, measures of average and spread, sampling methods, and correlation.",
+      "curriculum_context": "Statistics at KS4 develops pupils' statistical literacy — the ability to collect, represent, interpret and evaluate data in order to answer questions, make decisions and identify bias. Pupils work with a wider range of graphical representations than at KS3, including cumulative frequency graphs, box plots and histograms with unequal class widths, and apply formal measures of spread including interquartile range. The curriculum requires pupils to compare distributions using summary statistics and graphical displays, to understand correlation and use it to make predictions (while recognising the distinction from causation), and to critique statistical claims and the quality of data collection methods. Sampling — including random, systematic and stratified methods — is introduced to understand the relationship between sample and population. Higher tier pupils additionally work with estimating the mean from grouped frequency tables and interpolating median from cumulative frequency.",
+      "is_cross_cutting": false,
+      "structure_type": "hierarchical"
+    }
+  ],
+  "objectives": [
+    {
+      "objective_id": "MA-KS4-O001",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "order positive and negative integers, decimals and fractions; use the symbols =, ≠, <, >, ≤, ≥",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O002",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "apply the four operations, including formal written methods, to integers, decimals and simple fractions (proper and improper), and mixed numbers — all both positive and negative; understand and use place value",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O003",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "recognise and use relationships between operations, including inverse operations; use conventional notation for priority of operations, including brackets, powers, roots and reciprocals",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O004",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "use the concepts and vocabulary of prime numbers, factors (divisors), multiples, common factors, common multiples, highest common factor, lowest common multiple, prime factorisation, including using product notation and the unique factorisation theorem",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O005",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "apply systematic listing strategies including use of the product rule for counting",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O006",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "use standard units of mass, length, time, money and other measures (including standard compound measures) using decimal quantities where appropriate",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O007",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "round numbers and measures to an appropriate degree of accuracy (e.g. to a specified number of decimal places or significant figures); use inequality notation to specify simple error intervals due to truncation or rounding",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O008",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "use and interpret standard form A × 10^n where 1 ≤ A < 10 and n is an integer",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O009",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "work interchangeably with terminating decimals and their corresponding fractions; change recurring decimals into their corresponding fractions and vice versa",
+      "non_statutory_guidance": "Recurring decimal to fraction conversion is Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O010",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "calculate with and interpret standard form A × 10^n where 1 ≤ A < 10 and n is an integer; calculate with roots and integer and fractional indices",
+      "non_statutory_guidance": "Fractional indices are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O011",
+      "domain_id": "MA-KS4-D001",
+      "objective_text": "simplify and manipulate algebraic expressions and surds; calculate exactly with fractions and multiples of π; simplify surd expressions involving squares",
+      "non_statutory_guidance": "Surds are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O012",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "use and interpret algebraic notation, including: ab in place of a × b; 3y in place of y + y + y and 3 × y; a² in place of a × a; a/b in place of a ÷ b; coefficients written as fractions rather than as decimals; brackets",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O013",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "substitute numerical values into formulae and expressions, including scientific formulae; understand and use the concepts and vocabulary of expressions, equations, formulae, identities, inequalities, terms and factors",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O014",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "simplify and manipulate algebraic expressions (including those involving surds and algebraic fractions) by: collecting like terms; multiplying a single term over a bracket; taking out common factors; expanding products of two or more binomials; factorising quadratic expressions of the form x² + bx + c, including the difference of two squares",
+      "non_statutory_guidance": "Algebraic fractions and factorising when the coefficient of x² is not 1 are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O015",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "understand and use standard mathematical formulae; rearrange formulae to change the subject",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O016",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "solve linear equations in one unknown algebraically (including those with the unknown on both sides of the equation); find approximate solutions using a graph",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O017",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "solve quadratic equations (including those that require rearrangement) algebraically by factorising, by completing the square and by using the quadratic formula; find approximate solutions using a graph",
+      "non_statutory_guidance": "Completing the square and the quadratic formula are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O018",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "solve two simultaneous equations in two variables (linear/linear) algebraically and graphically; find approximate solutions using a graph; (Higher) solve two simultaneous equations where one is linear and one is quadratic",
+      "non_statutory_guidance": "Linear/quadratic simultaneous equations are Higher tier only",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O019",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "solve linear inequalities in one or two variable(s), and quadratic inequalities in one variable; represent the solution set on a number line, using set notation and on a graph",
+      "non_statutory_guidance": "Quadratic inequalities and two-variable linear inequalities on a graph are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O020",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "generate terms of a sequence from either a term-to-term or a position-to-term rule; recognise and use sequences of triangular, square and cube numbers, simple arithmetic progressions, Fibonacci-type sequences, quadratic sequences, and simple geometric progressions (r^n where n is an integer, and r is a rational number > 0); deduce expressions to calculate the nth term of linear and quadratic sequences",
+      "non_statutory_guidance": "Quadratic sequences and geometric progressions are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O021",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "work with coordinates in all four quadrants; plot graphs of equations that correspond to straight-line graphs in the plane; use the form y = mx + c to identify parallel and perpendicular lines; find the equation of the line through two given points, or through one point with a given gradient",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O022",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "recognise, sketch and interpret graphs of linear functions, quadratic functions, simple cubic functions, the reciprocal function y = 1/x (x ≠ 0), exponential functions y = kˣ for positive values of k, and the trigonometric functions (with arguments in degrees) y = sin x, y = cos x and y = tan x for angles of any size",
+      "non_statutory_guidance": "Exponential and trigonometric graphs are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O023",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "interpret the gradient of a straight line graph as a rate of change; recognise and interpret graphs that illustrate direct and inverse proportion; (Higher) interpret the gradient at a point on a curve as the instantaneous rate of change; apply the concepts of average and instantaneous rate of change in numerical, algebraic and graphical contexts",
+      "non_statutory_guidance": "Gradient of a curve and area under a curve are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O024",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "use function notation; find and interpret composite and inverse functions algebraically and graphically; understand the effect of simple transformations on the graph of y = f(x), including sketching associated graphs: y = af(x), y = f(x) + a, y = f(x + a), y = f(ax)",
+      "non_statutory_guidance": "Function notation, composite and inverse functions, and graph transformations are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O025",
+      "domain_id": "MA-KS4-D002",
+      "objective_text": "apply and prove the standard circle theorems concerning angles, radii, tangents and chords, and use them to prove related results; use vectors to construct geometric arguments and proofs",
+      "non_statutory_guidance": "Circle theorems as proof and vector proofs are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O026",
+      "domain_id": "MA-KS4-D003",
+      "objective_text": "use scale factors, scale diagrams and maps; express one quantity as a fraction of another where the fraction is less than 1 or greater than 1; use ratio notation, including reduction to simplest form",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O027",
+      "domain_id": "MA-KS4-D003",
+      "objective_text": "divide a given quantity into two or more parts in a given part:part or part:whole ratio; express the division of a quantity into two parts as a ratio; apply ratio to real contexts and problems (such as those involving conversion, comparison, scaling, mixing and concentrations)",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O028",
+      "domain_id": "MA-KS4-D003",
+      "objective_text": "express a multiplicative relationship between two quantities as a ratio or a fraction; solve problems involving percentage change, including percentage increase/decrease and original value problems, and simple interest including in financial mathematics",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O029",
+      "domain_id": "MA-KS4-D003",
+      "objective_text": "solve problems involving direct and inverse proportion, including graphical and algebraic representations; understand that X is inversely proportional to Y is equivalent to X is proportional to 1/Y; construct and interpret equations that describe direct and inverse proportion",
+      "non_statutory_guidance": "Algebraic representation of direct/inverse proportion (y = kx^n) is Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O030",
+      "domain_id": "MA-KS4-D003",
+      "objective_text": "use compound units such as speed, unit pricing and density to solve problems; change freely between related standard units (e.g. time, length, area, volume/capacity, mass) and compound units (e.g. speed, rates of pay, prices) in numerical and algebraic contexts",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O031",
+      "domain_id": "MA-KS4-D003",
+      "objective_text": "use compound interest and understand the effects of compound growth and decay in real-world contexts; solve problems involving repeated proportional change",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O032",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "use conventional terms and notations: points, lines, vertices, edges, planes, parallel lines, perpendicular lines, right angles, polygons, regular polygons and polygons with reflection and/or rotation symmetries; use the standard conventions for labelling and referring to the sides and angles of triangles",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O033",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "derive and apply formulae to calculate and solve problems involving: perimeter and area of triangles, parallelograms, trapezia; volume of cuboids and other right prisms; surface area of pyramids, cylinders, cones and spheres",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O034",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "calculate arc lengths, angles and areas of sectors of circles; apply the standard circle formulae (circumference = 2πr, area = πr²)",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O035",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "apply Pythagoras' theorem and trigonometric ratios to find angles and lengths in right-angled triangles and, where possible, general triangles in 2D figures",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O036",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "apply the sine rule and cosine rule to find unknown lengths and angles in non-right-angled triangles; know and apply the formula (1/2)ab sinC to calculate the area of any triangle",
+      "non_statutory_guidance": "Sine rule and cosine rule are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O037",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "apply addition and subtraction of vectors, multiplication of vectors by a scalar, and diagrammatic and column representations of vectors; use vectors to construct geometric arguments",
+      "non_statutory_guidance": "Vectors as geometric proof tools are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O038",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "describe and construct congruent and similar shapes; apply the properties of congruence and similarity, including the relationships between lengths, areas and volumes in similar figures",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O039",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "apply the properties of angles at a point, angles at a point on a straight line, vertically opposite angles; understand and use the relationship between parallel lines and alternate and corresponding angles",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O040",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "derive and apply the properties and definitions of: special types of quadrilaterals, including square, rectangle, parallelogram, trapezium, kite and rhombus; and triangles and other plane figures using appropriate language",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O041",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "use the basic congruence criteria for triangles (SSS, SAS, ASA, RHS); apply and prove circle theorems (angle at centre, angles in same segment, cyclic quadrilateral, tangent-radius, alternate segment theorem)",
+      "non_statutory_guidance": "Circle theorems are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O042",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "describe, sketch and draw: using conventional terms and notations, points, lines, parallel lines, perpendicular lines, right angles, regular polygons, and other polygons that are reflectively and rotationally symmetric; use the standard ruler-and-compass constructions to bisect angles and lines and to construct perpendiculars; construct and interpret plans and elevations of 3D shapes",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O043",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "apply the concepts of congruence and similarity, including the relationships between lengths, areas and volumes in similar figures; identify and construct congruent triangles and construct similar shapes by enlargement, with and without coordinate grids",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O044",
+      "domain_id": "MA-KS4-D004",
+      "objective_text": "describe translations as 2D vectors; apply and describe rotations, reflections, translations and enlargements of 2D shapes — specifying the centre, angle and direction (rotation), line (reflection), vector (translation), and scale factor (enlargement); describe the combined effect of two or more transformations",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O045",
+      "domain_id": "MA-KS4-D005",
+      "objective_text": "record, describe and analyse the frequency of outcomes of probability experiments using tables and frequency trees; apply ideas of randomness, fairness and equally likely events to calculate expected outcomes of multiple future experiments; understand that empirical unbiased samples tend towards theoretical probability distributions with increasing sample size",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O046",
+      "domain_id": "MA-KS4-D005",
+      "objective_text": "relate relative expected frequencies to theoretical probability, using appropriate language and the 0-1 probability scale; enumerate sets and combinations of sets systematically using tables, grids, Venn diagrams and tree diagrams; calculate the probability of independent and dependent combined events",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O047",
+      "domain_id": "MA-KS4-D005",
+      "objective_text": "use a Venn diagram to calculate conditional probability; apply P(A∪B) = P(A) + P(B) − P(A∩B); apply P(A∩B) = P(A)P(B|A) for dependent events",
+      "non_statutory_guidance": "Conditional probability is Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O048",
+      "domain_id": "MA-KS4-D005",
+      "objective_text": "use set notation to describe probability events; distinguish between mutually exclusive events, independent events and complementary events; apply the addition law for mutually exclusive events: P(A or B) = P(A) + P(B)",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O049",
+      "domain_id": "MA-KS4-D006",
+      "objective_text": "infer properties of populations or distributions from a sample, while knowing the limitations of sampling; understand and use sampling techniques: simple random, systematic and stratified sampling; comment on the limitations and potential biases of different sampling methods",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O050",
+      "domain_id": "MA-KS4-D006",
+      "objective_text": "interpret and construct tables, charts and diagrams, including frequency tables, bar charts, pie charts and pictograms for categorical data, vertical line charts for ungrouped discrete numerical data, tables and line graphs for time series data; know their appropriate use",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O051",
+      "domain_id": "MA-KS4-D006",
+      "objective_text": "interpret and construct diagrams for grouped discrete data and continuous data: histograms with equal and unequal class intervals; cumulative frequency graphs; box plots; and know their appropriate use",
+      "non_statutory_guidance": "Histograms with unequal class intervals are Higher tier content",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O052",
+      "domain_id": "MA-KS4-D006",
+      "objective_text": "calculate and interpret measures of central tendency (mean, median, mode) and spread (range, quartiles and interquartile range); use and interpret scatter graphs of bivariate data; recognise correlation; draw and/or use lines of best fit by eye to make predictions",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "MA-KS4-O053",
+      "domain_id": "MA-KS4-D006",
+      "objective_text": "recognise and describe the difference between correlation and causation; apply statistics to describe a population, including applying and interpreting measures in context; understand and interpret grouped frequency tables and estimate the mean from grouped data",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    }
+  ],
+  "concepts": [
+    {
+      "concept_id": "MA-KS4-C001",
+      "domain_id": "MA-KS4-D001",
+      "concept_name": "Integer and Rational Number Operations",
+      "description": "Fluent application of the four operations to integers (including negative), fractions, decimals and mixed numbers, with accurate use of priority of operations.",
+      "teaching_guidance": "Ensure pupils can connect fraction, decimal and percentage representations fluidly. Use number lines to situate negative numbers before procedural rules. Introduce BIDMAS through carefully constructed counterexamples — calculators can mislead pupils on order of operations. Require pupils to check answers by estimation before calculating exactly.",
+      "key_vocabulary": "integer, rational, irrational, numerator, denominator, mixed number, reciprocal, BIDMAS, negative, absolute value, terminating, recurring",
+      "common_misconceptions": "Pupils frequently treat -3² as (-3)² = 9 rather than -(3²) = -9, confusing negation with squaring. Many pupils add fractions by adding numerators and denominators separately (1/3 + 1/4 = 2/7), applying whole-number intuition incorrectly. A third common error is misapplying the priority of operations when there are nested brackets or multiple operations at the same level.",
+      "concept_type": "procedural",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C002",
+      "domain_id": "MA-KS4-D001",
+      "concept_name": "Prime Factorisation and Number Theory",
+      "description": "Expressing integers as products of prime factors using index notation, and using this to find highest common factors and lowest common multiples.",
+      "teaching_guidance": "Use factor trees and division ladders as dual representations so pupils can choose their preferred method. Connect HCF to simplifying fractions and LCM to finding common denominators — this shows pupils the practical value rather than treating prime factorisation as an isolated skill. Introduce the Fundamental Theorem of Arithmetic (unique factorisation) informally.",
+      "key_vocabulary": "prime, composite, factor, multiple, product, index notation, prime factorisation, highest common factor, lowest common multiple, Fundamental Theorem of Arithmetic",
+      "common_misconceptions": "Pupils often include 1 as a prime number, confusing the definition. Many stop the factor tree too early, leaving non-prime factors. Some pupils confuse HCF and LCM — a helpful heuristic is that HCF is the highest that goes into both, while LCM is the lowest that both go into.",
+      "concept_type": "conceptual",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C003",
+      "domain_id": "MA-KS4-D001",
+      "concept_name": "Powers, Roots and Surds",
+      "description": "Understanding integer and fractional indices, laws of indices, standard form, and exact calculation with surds including rationalising denominators.",
+      "teaching_guidance": "Build the laws of indices from the definition of repeated multiplication before presenting them as abstract rules. Use standard form to connect powers of 10 to real-world contexts (distances in astronomy, sizes in biology). Introduce surds by showing that √2 cannot be expressed as a fraction — the irrationality proof by contradiction is accessible at Higher level and builds mathematical maturity.",
+      "key_vocabulary": "index, power, base, root, surd, rational, irrational, standard form, laws of indices, reciprocal, fractional index, rationalise, conjugate",
+      "common_misconceptions": "Pupils frequently write √(a+b) = √a + √b (applying linearity to square roots, which is invalid). Many treat a⁰ as 0 rather than 1, or a^(-n) as negative rather than 1/aⁿ. When rationalising denominators, pupils sometimes multiply only the denominator, forgetting to multiply the numerator.",
+      "concept_type": "conceptual",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "higher"
+    },
+    {
+      "concept_id": "MA-KS4-C004",
+      "domain_id": "MA-KS4-D001",
+      "concept_name": "Estimation and Approximation",
+      "description": "Using rounding to significant figures or decimal places and estimating results of calculations to check reasonableness; understanding truncation and error intervals.",
+      "teaching_guidance": "Frame estimation as a mathematical habit and metacognitive check, not just a paper exercise. Require pupils to estimate before every calculator calculation and compare results. Use inequality notation for error intervals systematically — this connects back to inequalities in algebra. Real-world contexts (engineering tolerances, recipe measurements) make error intervals meaningful.",
+      "key_vocabulary": "significant figures, decimal places, truncation, rounding, error interval, upper bound, lower bound, approximation, estimate, order of magnitude",
+      "common_misconceptions": "Pupils often round 3.45 to 1 decimal place as 3.4 rather than 3.5, failing to round up when the next digit is exactly 5. Many confuse significant figures with decimal places (e.g. think 0.004 rounded to 2 significant figures is 0.00 rather than 0.0040). Error interval notation (x ± 0.5 vs the correct inequality form) is frequently written imprecisely.",
+      "concept_type": "procedural",
+      "complexity_level": 2,
+      "is_cross_cutting": true,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C005",
+      "domain_id": "MA-KS4-D002",
+      "concept_name": "Algebraic Manipulation and Factorisation",
+      "description": "Expanding and factorising algebraic expressions, including single brackets, double brackets, and quadratic expressions; simplifying algebraic fractions.",
+      "teaching_guidance": "Use area models (the grid method) for expanding double brackets before the FOIL algorithm — this gives a visual foundation. Teach factorising as the reverse of expanding and always ask pupils to check by re-expanding. Difference of two squares is a special case worth isolating. Higher pupils should work with algebraic fractions alongside numeric fractions to emphasise structural similarity.",
+      "key_vocabulary": "expression, expand, factorise, bracket, quadratic, coefficient, difference of two squares, completing the square, algebraic fraction, identity, common factor, highest common factor",
+      "common_misconceptions": "When expanding (a+b)², many pupils write a²+b² rather than a²+2ab+b² — the middle term is persistently dropped. Some pupils sign-strip when factorising, forgetting that factorising out -1 changes all signs inside. Cancelling in algebraic fractions is frequently misapplied (pupils cancel terms rather than factors).",
+      "concept_type": "procedural",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C006",
+      "domain_id": "MA-KS4-D002",
+      "concept_name": "Solving Linear Equations and Inequalities",
+      "description": "Forming and solving linear equations in one variable, including equations with unknowns on both sides; solving and graphing linear inequalities in one or two variables.",
+      "teaching_guidance": "Develop the balance model early (doing the same operation to both sides maintains equality) using physical balance imagery. Progress from one-step to multi-step equations systematically. Inequalities require careful attention to the direction reversal when multiplying or dividing by a negative — use examples where pupils test both directions to discover this rule.",
+      "key_vocabulary": "equation, inequality, variable, solution, balance, solve, unknown, linear, rearrange, substitute, verify, solution set, number line, strict inequality",
+      "common_misconceptions": "Pupils frequently forget to reverse the inequality sign when multiplying or dividing by a negative number. When equations have unknowns on both sides, many pupils only subtract the smaller unknown (e.g. 5x = 3x + 8 becomes 2x = 8, correct, but 3x = 5x + 8 often becomes 2x = 8 rather than -2x = 8). Brackets are often expanded with the wrong sign applied to terms beyond the first.",
+      "concept_type": "procedural",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C007",
+      "domain_id": "MA-KS4-D002",
+      "concept_name": "Quadratic Equations",
+      "description": "Solving quadratic equations by factorising, completing the square, and the quadratic formula; understanding discriminant and nature of roots.",
+      "teaching_guidance": "Teach factorisation first as an entry point, but explicitly introduce the quadratic formula as the general-purpose method that always works. Completing the square should be linked to the vertex form of a parabola — connecting algebra to graph interpretation. The discriminant (b²-4ac) is a powerful discriminator: use it to predict the number of solutions before solving.",
+      "key_vocabulary": "quadratic, discriminant, roots, solutions, factorising, completing the square, quadratic formula, vertex, parabola, coefficient, zero, real roots",
+      "common_misconceptions": "Many pupils apply factorisation only when the leading coefficient is 1. When completing the square, pupils frequently forget to adjust the constant term after moving the half-coefficient inside. In the quadratic formula, pupils often substitute incorrectly when b or c are negative, missing the double negation.",
+      "concept_type": "procedural",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "tier": "higher"
+    },
+    {
+      "concept_id": "MA-KS4-C008",
+      "domain_id": "MA-KS4-D002",
+      "concept_name": "Simultaneous Equations",
+      "description": "Solving pairs of simultaneous linear equations by elimination, substitution, and graphically; solving linear-quadratic simultaneous equation systems (Higher).",
+      "teaching_guidance": "Begin with graphical interpretation so pupils understand that the solution is the intersection point — this builds conceptual understanding before procedural methods. Teach elimination and substitution as complementary methods: elimination is efficient for symmetric coefficient pairs, substitution is generalisable. For linear-quadratic systems, always check both solutions by substitution into the original equations.",
+      "key_vocabulary": "simultaneous, system of equations, elimination, substitution, intersection, solution, consistent, inconsistent, linear, quadratic, parallel",
+      "common_misconceptions": "During elimination, pupils often make sign errors when subtracting equations, particularly when one equation has a negative term. Many pupils find only one solution of a linear-quadratic system, not realising two solutions are possible. Graphical solutions are imprecise — pupils must learn to interpret approximate graphical solutions vs exact algebraic solutions.",
+      "concept_type": "procedural",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C009",
+      "domain_id": "MA-KS4-D002",
+      "concept_name": "Sequences and nth Term",
+      "description": "Identifying term-to-term and position-to-term rules for arithmetic and geometric sequences; finding the nth term formula for linear and quadratic sequences.",
+      "teaching_guidance": "Use tabular representations consistently (position, term, difference, second difference) to make the pattern visible before formulating rules. Arithmetic sequences have constant first differences (leading to linear nth term), quadratic sequences have constant second differences (leading to quadratic nth term). Fibonacci-type sequences model non-algebraic recursive thinking and are worth exploring computationally.",
+      "key_vocabulary": "sequence, term, position, nth term, arithmetic, geometric, common difference, common ratio, Fibonacci, linear, quadratic, recursive, explicit formula",
+      "common_misconceptions": "Many pupils confuse the term-to-term rule with the position-to-term (nth term) formula, substituting n=1,2,3 to generate terms rather than using the nth term algebraically. When identifying the nth term of an arithmetic sequence, pupils often write the common difference as the coefficient of n but forget to adjust the constant term.",
+      "concept_type": "conceptual",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C010",
+      "domain_id": "MA-KS4-D002",
+      "concept_name": "Straight Line Graphs and Linear Functions",
+      "description": "Understanding and using y = mx + c; finding equations of lines; identifying parallel and perpendicular gradients; interpreting gradient and intercept in context.",
+      "teaching_guidance": "Build gradient from its physical interpretation (steepness, rate of change) before introducing the formula. The connection between gradient and rate of change should be explicit and persistent — revisit in ratio, distance-time graphs, and statistics scatter graphs. Perpendicular gradients (product = -1) require careful derivation using rotation of slope triangles.",
+      "key_vocabulary": "gradient, intercept, linear, y = mx + c, parallel, perpendicular, rate of change, slope, x-intercept, y-intercept, equation of a line, collinear",
+      "common_misconceptions": "Pupils frequently confuse x-intercept and y-intercept, or read gradient as rise alone rather than rise over run. Many pupils state parallel lines have 'the same gradient' but cannot identify perpendicular gradients. When finding the equation of a line through two points, sign errors in computing (y₂-y₁)/(x₂-x₁) are common.",
+      "concept_type": "conceptual",
+      "complexity_level": 2,
+      "is_cross_cutting": true,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C011",
+      "domain_id": "MA-KS4-D002",
+      "concept_name": "Non-linear Graphs",
+      "description": "Recognising, sketching and interpreting graphs of quadratic, cubic, reciprocal, exponential and trigonometric functions; understanding key features including turning points, asymptotes, and roots.",
+      "teaching_guidance": "Use graphing technology (Desmos or GeoGebra) to build intuition for graph shapes before working analytically. Focus on key features: roots (where f(x)=0), y-intercept (x=0), turning points, and asymptotes. Transformations of graphs are best understood experientially — pupils should discover how f(x+a) and f(x)+a shift the graph in opposite/same directions respectively before memorising the rules.",
+      "key_vocabulary": "quadratic, cubic, reciprocal, exponential, trigonometric, turning point, maximum, minimum, root, asymptote, sketch, intercept, symmetry, period, amplitude",
+      "common_misconceptions": "Pupils commonly confuse y = kˣ (exponential) with y = xᵏ (power), not recognising the qualitative difference in growth. The direction of horizontal translations is counterintuitive: f(x+2) shifts left, not right. Many pupils draw reciprocal graphs touching the axes rather than having asymptotes.",
+      "concept_type": "conceptual",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "tier": "higher"
+    },
+    {
+      "concept_id": "MA-KS4-C012",
+      "domain_id": "MA-KS4-D002",
+      "concept_name": "Functions and Graph Transformations",
+      "description": "Using function notation; finding composite and inverse functions; applying and describing graph transformations f(x+a), f(x)+a, af(x), f(ax).",
+      "teaching_guidance": "Introduce function notation as a generalisation of the input-output machine model used at KS3. Inverse functions undo the original function — link to solving equations by rearranging. Transformations should be taught with reference to any general function y=f(x), then applied to specific cases. The domain and range of functions should be made explicit, particularly for inverse functions.",
+      "key_vocabulary": "function, domain, range, mapping, composite function, inverse function, notation f(x), translation, stretch, reflection, transformation, one-to-one",
+      "common_misconceptions": "Pupils frequently confuse f(2x) with 2f(x) — horizontal stretch vs vertical stretch. Many pupils believe every function has an inverse, not recognising that non-one-to-one functions do not have inverses over their full domain. The notation f⁻¹(x) is confused with [f(x)]⁻¹ = 1/f(x).",
+      "concept_type": "conceptual",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "tier": "higher"
+    },
+    {
+      "concept_id": "MA-KS4-C013",
+      "domain_id": "MA-KS4-D003",
+      "concept_name": "Ratio and Scale",
+      "description": "Expressing, simplifying and using ratios to solve problems including division into parts, scale drawings, maps, and comparison of quantities.",
+      "teaching_guidance": "Distinguish clearly between part:part and part:whole representations — many problems require conversion between the two. Use unitary ratio as a bridge between ratio and rate reasoning. Scale drawings provide a concrete application with built-in accuracy checking. Ratio notation (a:b) should be fluently connected to fraction (a/(a+b)) and percentage representations.",
+      "key_vocabulary": "ratio, proportion, part, whole, simplify, equivalent ratio, scale factor, unitary method, unit ratio, direct proportion, map scale, scale drawing",
+      "common_misconceptions": "Pupils often divide in ratio a:b by computing a/(a+b) × total for the first part correctly, but then subtract to find the second part instead of computing b/(a+b) × total directly. Many pupils treat 2:3 as meaning ⅔ rather than 2 parts to 3 parts (so 2 out of 5 total). Ratio is frequently confused with fractions in questions involving 'the ratio of A to B is 3:5' meaning A/B = 3/5 (fraction of A to B), not A/total = 3/5.",
+      "concept_type": "procedural",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C014",
+      "domain_id": "MA-KS4-D003",
+      "concept_name": "Percentage Change and Financial Mathematics",
+      "description": "Calculating percentage increase/decrease, original value (reverse percentage), simple and compound interest, and repeated proportional change in financial contexts.",
+      "teaching_guidance": "Use multiplier method as the standard approach for efficiency — 15% increase means ×1.15. Reverse percentages require dividing by the multiplier, not subtracting the percentage from 100 first. Compound interest is the most important application: explicitly model the difference between simple and compound interest with tables before revealing the formula A = P(1+r)ⁿ.",
+      "key_vocabulary": "percentage, increase, decrease, multiplier, reverse percentage, simple interest, compound interest, principal, rate, depreciation, appreciation, exponential growth, decay",
+      "common_misconceptions": "For reverse percentages, pupils frequently calculate the wrong value by subtracting x% from the given value rather than dividing by (1 + x/100). Many confuse compound interest (interest on interest) with simple interest (interest on principal only). Percentage change direction (increase vs decrease) and application to the original value are persistently confused.",
+      "concept_type": "procedural",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C015",
+      "domain_id": "MA-KS4-D003",
+      "concept_name": "Direct and Inverse Proportion",
+      "description": "Recognising and applying direct proportion (y = kx) and inverse proportion (y = k/x), including algebraic, graphical, and numerical representations; extending to y = kxⁿ relationships.",
+      "teaching_guidance": "Always begin with the unitary method (find the value for one unit, then multiply) before formalising as an equation. Direct proportion produces a straight-line graph through the origin; inverse proportion produces a hyperbola — visual representations reinforce conceptual understanding. For Higher, pupils should be able to identify which type of proportion applies from a given table of values by testing ratios and products.",
+      "key_vocabulary": "direct proportion, inverse proportion, constant of proportionality, unitary method, k, graph, hyperbola, proportional to, varies directly, varies inversely, power",
+      "common_misconceptions": "Pupils frequently confuse direct and inverse proportion — both involve one quantity changing as another changes, but in opposite directions. Many pupils identify y = kx as direct proportion but do not recognise y = kx² as also a proportional relationship (just not linear). The phrase 'y is inversely proportional to x' is sometimes misread as 'y = 1/x' rather than 'y = k/x'.",
+      "concept_type": "conceptual",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C016",
+      "domain_id": "MA-KS4-D003",
+      "concept_name": "Compound Measures and Rates of Change",
+      "description": "Using and interpreting compound units such as speed, density and pressure; interpreting gradient of graphs as a rate of change; solving problems involving compound measure conversions.",
+      "teaching_guidance": "Use the formula triangle approach (Speed = Distance/Time, Density = Mass/Volume) as scaffolding initially, but develop algebraic rearrangement fluency so pupils can work from any form. Connect gradient of a distance-time graph explicitly to speed — this is a key transferable concept for science. Ensure pupils can perform unit conversions within compound measures (e.g. km/h to m/s).",
+      "key_vocabulary": "speed, distance, time, density, mass, volume, pressure, force, area, gradient, rate of change, compound unit, m/s, km/h, g/cm³",
+      "common_misconceptions": "Pupils commonly invert the formula — computing time/distance for speed rather than distance/time. Unit conversions for compound measures are particularly error-prone (e.g. converting m/s to km/h requires multiplying by 3.6 not by 1000/60). The distinction between density as mass/volume versus volume/mass is regularly confused.",
+      "concept_type": "procedural",
+      "complexity_level": 2,
+      "is_cross_cutting": true,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C017",
+      "domain_id": "MA-KS4-D004",
+      "concept_name": "Area and Perimeter of 2D Shapes",
+      "description": "Calculating area and perimeter of triangles, quadrilaterals, polygons, circles and composite shapes including arcs and sectors; using exact values involving π.",
+      "teaching_guidance": "Always derive formulae from first principles before applying them — the area of a parallelogram as base × height is more memorable when shown as a rearranged rectangle. Composite shapes require pupils to decompose and recombine — encourage drawing the decomposition explicitly on the diagram. Arc length and sector area should always be linked to the fraction of the full circle (angle/360).",
+      "key_vocabulary": "perimeter, area, base, height, radius, diameter, circumference, arc, sector, segment, composite, trapezium, parallelogram, polygon, exact value, π",
+      "common_misconceptions": "Area and perimeter are persistently confused — pupils add sides to find area or multiply dimensions to find perimeter. For circles, pupils commonly use diameter where radius is required (or vice versa) — demanding one representation consistently helps. Sector area is frequently computed as (angle/360) × 2πr (arc formula) rather than (angle/360) × πr².",
+      "concept_type": "procedural",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C018",
+      "domain_id": "MA-KS4-D004",
+      "concept_name": "Volume and Surface Area of 3D Solids",
+      "description": "Calculating volume and surface area of prisms, cylinders, pyramids, cones and spheres; solving problems involving composite solids.",
+      "teaching_guidance": "Use physical models and nets to build 3D intuition before working with formulae. Volume of a prism = cross-sectional area × length is a generalisable principle worth emphasising. Pupils should be provided with the formulae for cone and sphere volumes at GCSE but need practice applying them. Frustum problems (cones with tops removed) are a useful extension and require composite volume reasoning.",
+      "key_vocabulary": "prism, cylinder, cone, sphere, pyramid, frustum, cross-section, net, surface area, volume, radius, slant height, hemisphere, composite solid",
+      "common_misconceptions": "Many pupils confuse surface area and volume, particularly for cylinders (confusing 2πrh + 2πr² with πr²h). The curved surface area of a cone (πrl) is commonly written as πr² — pupils substitute r for the slant height l. For composite solids, pupils sometimes add complete surface areas of component shapes rather than subtracting the hidden faces.",
+      "concept_type": "procedural",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C019",
+      "domain_id": "MA-KS4-D004",
+      "concept_name": "Pythagoras' Theorem",
+      "description": "Applying Pythagoras' theorem to find unknown sides in right-angled triangles in 2D and 3D contexts; using the converse to identify right angles.",
+      "teaching_guidance": "Begin with a visual proof (area of squares on sides) before the formula. Consistently require pupils to identify the hypotenuse before applying the theorem. The 3D application (finding diagonal of a box) requires constructing a hidden right-angled triangle — explicitly model the construction step with a diagram. Pythagorean triples (3,4,5; 5,12,13; 8,15,17) are worth memorising for efficiency.",
+      "key_vocabulary": "hypotenuse, right angle, right-angled triangle, Pythagorean triple, square, square root, diagonal, 3D, theorem, converse, proof",
+      "common_misconceptions": "Pupils frequently add all three sides squared rather than using a² + b² = c². In isosceles right-angled triangles, pupils sometimes apply the theorem without identifying which side is the hypotenuse. In 3D contexts, many pupils try to use the formula directly without constructing the intermediate right-angled triangle.",
+      "concept_type": "procedural",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C020",
+      "domain_id": "MA-KS4-D004",
+      "concept_name": "Trigonometric Ratios (Right-Angled Triangles)",
+      "description": "Using sine, cosine and tangent ratios to find unknown sides and angles in right-angled triangles; using exact values for 30°, 45°, 60°.",
+      "teaching_guidance": "Establish SOHCAHTOA as a mnemonic but always require pupils to label the sides (opposite, adjacent, hypotenuse) relative to the angle before applying the ratio. Inverse trigonometric functions (sin⁻¹, cos⁻¹, tan⁻¹) should be introduced as 'finding the angle' from the ratio. Exact trigonometric values (sin30°=½, cos45°=√2/2, tan60°=√3) connect to surds and geometry of equilateral and isosceles right-angled triangles.",
+      "key_vocabulary": "sine, cosine, tangent, opposite, adjacent, hypotenuse, SOHCAHTOA, angle of elevation, angle of depression, inverse trigonometric function, exact value, bearing",
+      "common_misconceptions": "Pupils consistently mis-label opposite and adjacent when the angle changes position in the triangle. Many pupils use sin when they need cos and vice versa, not re-labelling sides for each new angle. Applying SOHCAHTOA to non-right-angled triangles is a significant error — pupils must check for the right angle before applying.",
+      "concept_type": "procedural",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C021",
+      "domain_id": "MA-KS4-D004",
+      "concept_name": "Sine and Cosine Rules",
+      "description": "Applying the sine rule and cosine rule to find unknown angles and sides in non-right-angled triangles; computing areas using (1/2)ab sinC.",
+      "teaching_guidance": "The sine rule applies when a pair of angle-opposite side is known; the cosine rule when two sides and an included angle, or all three sides, are known. The ambiguous case of the sine rule (two possible triangles) requires careful attention and graphical illustration. Area = ½ab sinC is a powerful result — derive it from the standard ½ × base × height formula with height = b sinC.",
+      "key_vocabulary": "sine rule, cosine rule, non-right-angled triangle, included angle, ambiguous case, area formula, bearing, 3D trigonometry, oblique triangle",
+      "common_misconceptions": "Pupils apply the sine rule when the cosine rule is required (e.g. given two sides and an included angle). The ambiguous case is almost always missed — pupils find only the acute angle solution. When using the cosine rule to find an angle, pupils make algebraic errors in rearranging a² = b² + c² − 2bc cosA for cosA.",
+      "concept_type": "procedural",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "tier": "higher"
+    },
+    {
+      "concept_id": "MA-KS4-C022",
+      "domain_id": "MA-KS4-D004",
+      "concept_name": "Circle Theorems",
+      "description": "Applying and proving the standard circle theorems involving angles, chords, tangents and cyclic quadrilaterals.",
+      "teaching_guidance": "Teach circle theorems in a logical progression: angle at centre = twice angle at circumference leads to angles in same segment; angles in a semicircle = 90°. Tangent properties (tangent perpendicular to radius; tangents from an external point are equal) are the foundation for the alternate segment theorem. Always require pupils to name the theorem used in their proof and to give numerical justification.",
+      "key_vocabulary": "chord, arc, tangent, radius, diameter, circumference, cyclic quadrilateral, alternate segment theorem, angle at centre, angle at circumference, subtend, semicircle, perpendicular",
+      "common_misconceptions": "Pupils confuse the angle at centre with angle at circumference theorem, sometimes halving when they should double and vice versa. The alternate segment theorem is the most conceptually difficult — pupils often cannot identify which angle is the 'alternate' one. Cyclic quadrilateral opposite angles theorem is applied to non-cyclic quadrilaterals.",
+      "concept_type": "conceptual",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "tier": "higher"
+    },
+    {
+      "concept_id": "MA-KS4-C023",
+      "domain_id": "MA-KS4-D004",
+      "concept_name": "Congruence and Similarity",
+      "description": "Using congruence criteria (SSS, SAS, ASA, RHS) to prove triangles congruent; applying similarity ratios to find lengths, areas and volumes in similar figures.",
+      "teaching_guidance": "Use formal two-column or narrative proof structure for congruence proofs — this is preparation for the logical rigour expected in geometry. Similarity ratios require careful tracking of which ratio applies to which quantity: k for lengths, k² for areas, k³ for volumes. Real-world applications (scale models, maps) make the ratios memorable.",
+      "key_vocabulary": "congruent, similar, scale factor, congruence criteria, SSS, SAS, ASA, RHS, corresponding sides, corresponding angles, ratio, proportion, proof",
+      "common_misconceptions": "Pupils apply similarity ratios incorrectly between areas and volumes — cubing the length ratio for areas or squaring it for volumes rather than applying the correct power. Some pupils use four or five letters in a congruence statement rather than exactly the corresponding three, misidentifying correspondence. The condition RHS is sometimes misapplied when two sides and a non-right angle are known (this is the ambiguous SSA, not RHS).",
+      "concept_type": "conceptual",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C024",
+      "domain_id": "MA-KS4-D004",
+      "concept_name": "Transformations",
+      "description": "Describing and applying the four geometric transformations (rotation, reflection, translation, enlargement) including negative and fractional scale factors.",
+      "teaching_guidance": "Ensure pupils can perform all four transformations on coordinates and describe them fully — incomplete descriptions (rotation without centre and direction, enlargement without centre) are a common exam error. Negative scale factors (enlargement through the centre to the other side) require careful explanation with examples. Combining transformations is a Higher extension that rewards spatial thinking.",
+      "key_vocabulary": "rotation, reflection, translation, enlargement, scale factor, centre of rotation, line of symmetry, vector, invariant, congruent, similar, transformation, inverse transformation",
+      "common_misconceptions": "Pupils describe rotations without specifying the centre of rotation, or give it as a letter rather than coordinates. Reflections in non-standard lines (y = x, y = -x, y = 2) are more error-prone than horizontal/vertical mirror lines. Negative scale factor enlargements are frequently confused with rotations.",
+      "concept_type": "procedural",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C025",
+      "domain_id": "MA-KS4-D004",
+      "concept_name": "Vectors",
+      "description": "Representing vectors using column notation and diagrammatically; adding, subtracting and multiplying vectors by scalars; using vectors to construct geometric proofs.",
+      "teaching_guidance": "Column vector notation should be introduced alongside diagrammatic arrows, with both representations used throughout. Establish the key idea that equal vectors mean parallel and equal magnitude — this is the basis for proving shapes from coordinates. For Higher geometric proof: if vector AB = kAC, the points A, B, C are collinear; if midpoint vectors are shown to be equal, a parallelogram is proved.",
+      "key_vocabulary": "vector, scalar, column vector, magnitude, direction, resultant, parallel, collinear, position vector, displacement, midpoint, proof, parallelogram",
+      "common_misconceptions": "Pupils confuse vectors (direction and magnitude) with scalars (magnitude only), particularly when comparing speed and velocity. Column vector addition is computed as matrix multiplication by some pupils. The path of a route determines vector sign: AB is the negative of BA — pupils frequently add rather than subtract.",
+      "concept_type": "conceptual",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "tier": "higher"
+    },
+    {
+      "concept_id": "MA-KS4-C026",
+      "domain_id": "MA-KS4-D005",
+      "concept_name": "Basic Probability and Probability Scale",
+      "description": "Expressing probability on a 0-1 scale; using theoretical and experimental probability; understanding relative frequency and its convergence to theoretical probability.",
+      "teaching_guidance": "Connect probability language (impossible, unlikely, even, likely, certain) to numerical values early. Use relative frequency experiments (coin flips, dice rolls) — real data is more convincing than abstraction. The Law of Large Numbers can be modelled by plotting cumulative relative frequency against number of trials: pupils should see the convergence towards theoretical probability graphically.",
+      "key_vocabulary": "probability, theoretical probability, experimental probability, relative frequency, event, outcome, sample space, equally likely, random, trial, frequency, complementary",
+      "common_misconceptions": "The gambler's fallacy (that past outcomes affect future independent events) is deeply held by many pupils. Some pupils believe relative frequency equals theoretical probability after a small number of trials. Probability of an event and its complement not summing to 1 is a calculation error arising from forgetting the complement rule.",
+      "concept_type": "conceptual",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C027",
+      "domain_id": "MA-KS4-D005",
+      "concept_name": "Combined Events and Tree Diagrams",
+      "description": "Enumerating outcomes of combined events using sample space diagrams, tree diagrams and the product rule; calculating probabilities of independent and dependent combined events.",
+      "teaching_guidance": "Establish the multiplication rule for independent events (P(A and B) = P(A) × P(B)) using tree diagrams where the branches multiply. Ensure pupils can draw complete sample space diagrams systematically. For dependent events (without replacement), the second branch probabilities change — this is the crucial distinction from independent events.",
+      "key_vocabulary": "tree diagram, sample space, combined events, independent events, dependent events, with replacement, without replacement, product rule, listing, systematic enumeration, mutually exclusive",
+      "common_misconceptions": "Pupils frequently add probabilities of combined events instead of multiplying. When drawing tree diagrams for events without replacement, the second set of branches often retains the original probabilities (failing to reduce the denominator by 1). The product rule for counting (total outcomes = n₁ × n₂ ×...) is confused with adding the number of each type of outcome.",
+      "concept_type": "procedural",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C028",
+      "domain_id": "MA-KS4-D005",
+      "concept_name": "Venn Diagrams and Set Notation",
+      "description": "Using Venn diagrams and set notation (union, intersection, complement) to represent events and calculate probabilities; applying the addition law P(A∪B) = P(A) + P(B) − P(A∩B).",
+      "teaching_guidance": "Introduce set notation (∪, ∩, A') alongside Venn diagram regions to connect symbolic and visual representations. The addition law corrects for double-counting the intersection — use concrete examples (pupils doing sport and music). Conditional probability from Venn diagrams requires careful identification of the restricted sample space.",
+      "key_vocabulary": "Venn diagram, union, intersection, complement, set notation, universal set, element, subset, mutually exclusive, conditional probability, addition law",
+      "common_misconceptions": "Pupils confuse P(A∪B) with P(A) + P(B), forgetting to subtract P(A∩B) for non-mutually exclusive events. The notation A' (complement) is sometimes treated as 'not A and B' rather than everything outside A. When reading Venn diagrams, pupils often read region frequencies as probabilities without dividing by the total.",
+      "concept_type": "conceptual",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "higher"
+    },
+    {
+      "concept_id": "MA-KS4-C029",
+      "domain_id": "MA-KS4-D005",
+      "concept_name": "Conditional Probability",
+      "description": "Calculating the probability of one event given that another has occurred, using tree diagrams, Venn diagrams, two-way tables, and formal notation P(B|A).",
+      "teaching_guidance": "Begin with two-way tables before formal notation — pupils find conditional probability accessible when they can physically restrict to the given row or column. Progress to tree diagrams where the given event is identified. Formal notation P(B|A) = P(A∩B)/P(A) should emerge from the tree diagram multiplication rather than being imposed as a formula.",
+      "key_vocabulary": "conditional probability, given that, restricted sample space, two-way table, tree diagram, P(B|A), dependent events, Bayes, posterior probability",
+      "common_misconceptions": "Pupils frequently compute P(B|A) as P(A|B), reversing the conditioning. Some pupils multiply all branches of a tree diagram without recognising that the given event restricts which branches are relevant. In two-way tables, pupils use total population rather than the given row or column total as the denominator.",
+      "concept_type": "conceptual",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "tier": "higher"
+    },
+    {
+      "concept_id": "MA-KS4-C030",
+      "domain_id": "MA-KS4-D006",
+      "concept_name": "Data Collection and Sampling",
+      "description": "Understanding and applying sampling methods (random, systematic, stratified); identifying sources of bias; designing data collection methods including questionnaires and observation.",
+      "teaching_guidance": "Use real-world contexts (election polling, quality control, medical trials) to motivate proper sampling. The distinction between population and sample should be made explicit from the beginning. Stratified sampling requires proportional allocation — pupils should calculate sample sizes from each stratum using the population ratio. Questionnaire design flaws (leading questions, ambiguous response categories) are worth analysing critically.",
+      "key_vocabulary": "population, sample, random sample, systematic sampling, stratified sampling, bias, questionnaire, census, strata, representative sample, hypothesis, data collection",
+      "common_misconceptions": "Pupils confuse stratified and systematic sampling — stratified is proportional across groups, systematic is every nth member. Sample bias is difficult to identify without seeing the sampling process; pupils tend to assess bias only from the data. Many pupils believe a larger sample automatically eliminates bias, not recognising that a biased method amplifies with scale.",
+      "concept_type": "conceptual",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C031",
+      "domain_id": "MA-KS4-D006",
+      "concept_name": "Statistical Diagrams",
+      "description": "Constructing and interpreting bar charts, pie charts, histograms (equal and unequal class widths), cumulative frequency graphs, and box plots.",
+      "teaching_guidance": "Frequency density = frequency / class width is the key concept for histograms with unequal class widths — pupils must understand that it is the area, not the height, of each bar that represents frequency. Cumulative frequency graphs should always be plotted at the upper class boundary. Box plots represent the five-number summary (min, Q1, median, Q3, max) and allow distribution comparison visually.",
+      "key_vocabulary": "histogram, frequency density, class width, cumulative frequency, box plot, quartile, median, range, interquartile range, pie chart, bar chart, frequency polygon, upper class boundary",
+      "common_misconceptions": "Pupils draw histograms with equal-width bars and label the y-axis 'frequency' even when class widths are unequal — frequency density is not intuitive. Cumulative frequency is plotted at midpoints rather than upper class boundaries. Box plots are confused with bar charts; the box width has no meaning, only the positions of the lines matter.",
+      "concept_type": "procedural",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C032",
+      "domain_id": "MA-KS4-D006",
+      "concept_name": "Averages and Measures of Spread",
+      "description": "Calculating mean, median, mode and range for ungrouped data; estimating mean from grouped frequency tables; finding quartiles and interquartile range from cumulative frequency.",
+      "teaching_guidance": "Mean from grouped data requires finding midpoints and computing Σfm/Σf — the mean is an estimate because we do not know exact values within classes. Interquartile range (Q3 − Q1) measures spread while being resistant to outliers, unlike range — this statistical property is worth emphasising. Pupils should understand when each average is appropriate: mode for categorical data, median for skewed distributions, mean for symmetric data.",
+      "key_vocabulary": "mean, median, mode, range, interquartile range, quartile, grouped data, midpoint, frequency table, skew, outlier, average, measure of central tendency, spread",
+      "common_misconceptions": "The mean from grouped data is always estimated — pupils often state it as an exact value. Median from a frequency table requires finding the middle value by cumulative frequency, not by halving the total frequency and reading off. Interquartile range is sometimes computed as Q2 − Q1 (not Q3 − Q1) by pupils who confuse quartile numbering.",
+      "concept_type": "procedural",
+      "complexity_level": 2,
+      "is_cross_cutting": false,
+      "tier": "both"
+    },
+    {
+      "concept_id": "MA-KS4-C033",
+      "domain_id": "MA-KS4-D006",
+      "concept_name": "Scatter Graphs and Correlation",
+      "description": "Plotting and interpreting scatter graphs of bivariate data; describing correlation (positive, negative, none); drawing and using lines of best fit; distinguishing correlation from causation.",
+      "teaching_guidance": "Require pupils to describe correlation in context, not just label it positive/negative — 'as height increases, weight tends to increase' is more statistically meaningful than 'positive correlation'. Lines of best fit should pass through the mean point (x̄, ȳ) and pupils should use this property to check their line. The causation-correlation distinction is critical for statistical literacy and should be reinforced with counter-intuitive examples.",
+      "key_vocabulary": "scatter graph, bivariate, correlation, positive correlation, negative correlation, no correlation, line of best fit, outlier, interpolation, extrapolation, causation, association",
+      "common_misconceptions": "Pupils believe strong correlation implies causation — the most important misconception in statistics. Lines of best fit are frequently drawn from (0,0) or through the most extreme points rather than balancing the data. Extrapolation beyond the data range is treated as equally reliable as interpolation within it.",
+      "concept_type": "conceptual",
+      "complexity_level": 2,
+      "is_cross_cutting": true,
+      "tier": "both"
+    }
+  ],
+  "prerequisite_relationships": [
+    {
+      "prerequisite_concept": "MA-KS4-C001",
+      "dependent_concept": "MA-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "foundational",
+      "strength": 0.7,
+      "rationale": "Prime factorisation requires secure understanding of multiplication and division of integers, and the concept of factors requires fluency with the four operations."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C001",
+      "dependent_concept": "MA-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "foundational",
+      "strength": 0.9,
+      "rationale": "Estimation and rounding require fluent understanding of the number system, place value, and operations — without these, choosing an appropriate degree of accuracy is not meaningful."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C002",
+      "dependent_concept": "MA-KS4-C003",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Working with index laws and surds requires secure prime factorisation and understanding of powers — the laws of indices are extensions of prime factorisation reasoning."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C001",
+      "dependent_concept": "MA-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "foundational",
+      "strength": 0.9,
+      "rationale": "Algebraic manipulation is an abstraction of arithmetic operations — pupils need fluent number operations before they can apply equivalent procedures symbolically."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C005",
+      "dependent_concept": "MA-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.95,
+      "rationale": "Solving linear equations requires the ability to expand brackets and collect like terms — algebraic manipulation is a direct prerequisite to equation solving."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C005",
+      "dependent_concept": "MA-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.95,
+      "rationale": "Solving quadratic equations by factorising requires fluency with factorising quadratic expressions; completing the square requires expanding and manipulating squared binomials."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C006",
+      "dependent_concept": "MA-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Simultaneous equations require solving linear equations as a component step — elimination generates a single linear equation that must then be solved."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C007",
+      "dependent_concept": "MA-KS4-C008",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Linear-quadratic simultaneous equations (Higher) require solving quadratics after substitution — quadratic equation solving is a prerequisite for this system type."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C006",
+      "dependent_concept": "MA-KS4-C009",
+      "confidence": "inferred",
+      "relationship_type": "supporting",
+      "strength": 0.6,
+      "rationale": "Finding the nth term of a linear sequence requires forming and solving linear equations for the general term; quadratic nth terms require additional algebraic manipulation."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C001",
+      "dependent_concept": "MA-KS4-C010",
+      "confidence": "explicit",
+      "relationship_type": "foundational",
+      "strength": 0.8,
+      "rationale": "Working with coordinates and the equation y = mx + c requires secure fraction arithmetic and negative number operations for computing gradient and intercept."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C010",
+      "dependent_concept": "MA-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Understanding non-linear graphs requires the linear graph as a baseline comparison — pupils identify departures from linearity and describe curves in contrast to the straight line."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C011",
+      "dependent_concept": "MA-KS4-C012",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.85,
+      "rationale": "Graph transformations operate on known graph types — pupils must be fluent with the shapes of linear, quadratic, trigonometric and exponential graphs before transforming them."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C013",
+      "dependent_concept": "MA-KS4-C014",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Percentage change and compound interest are applications of multiplicative reasoning — ratio understanding (multiplier method) provides the conceptual bridge to percentage calculations."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C014",
+      "dependent_concept": "MA-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.75,
+      "rationale": "Direct and inverse proportion generalisations build on percentage and ratio work — the multiplier k in y = kx connects directly to the scale factor reasoning in ratio and percentage."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C010",
+      "dependent_concept": "MA-KS4-C016",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.85,
+      "rationale": "Gradient as a rate of change (speed, density, unit rate) requires understanding gradient in the linear graph context — the conceptual interpretation transfers directly from y = mx + c."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C017",
+      "dependent_concept": "MA-KS4-C018",
+      "confidence": "explicit",
+      "relationship_type": "foundational",
+      "strength": 0.9,
+      "rationale": "Surface area of 3D solids requires computing areas of the 2D faces — 2D area formulae are direct prerequisites for surface area calculation."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C019",
+      "dependent_concept": "MA-KS4-C020",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Trigonometric ratios are introduced in right-angled triangles alongside Pythagoras' theorem — both deal with the same geometric structure and pupils need Pythagoras' theorem fluency before using trigonometry to find sides."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C020",
+      "dependent_concept": "MA-KS4-C021",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "The sine and cosine rules generalise right-angled triangle trigonometry to all triangles — pupils must be fluent with SOHCAHTOA before encountering the generalised forms."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C017",
+      "dependent_concept": "MA-KS4-C022",
+      "confidence": "explicit",
+      "relationship_type": "foundational",
+      "strength": 0.7,
+      "rationale": "Circle theorems deal with circles and arc/chord/tangent properties — secure knowledge of circle area and circumference formulae provides the geometric context for these theorems."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C019",
+      "dependent_concept": "MA-KS4-C023",
+      "confidence": "explicit",
+      "relationship_type": "supporting",
+      "strength": 0.75,
+      "rationale": "Congruence and similarity in right-angled triangles use Pythagoras as a check tool — Pythagoras underpins many of the geometric relationships required for similarity proofs."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C023",
+      "dependent_concept": "MA-KS4-C024",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Transformations require understanding of congruence (rotation, reflection, translation preserve shape and size) and similarity (enlargement changes size but preserves shape) — these concepts underpin the properties of each transformation."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C010",
+      "dependent_concept": "MA-KS4-C025",
+      "confidence": "inferred",
+      "relationship_type": "supporting",
+      "strength": 0.65,
+      "rationale": "Vectors in geometry require coordinate reasoning and the ability to move between numerical and graphical representations — straight line graph work provides the coordinate fluency needed."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C026",
+      "dependent_concept": "MA-KS4-C027",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.95,
+      "rationale": "Combined event probability builds directly on single event probability — the multiplication and addition rules for combined events extend the foundational probability framework."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C027",
+      "dependent_concept": "MA-KS4-C028",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.85,
+      "rationale": "Venn diagrams and set notation provide an alternative representation to tree diagrams for combined events — pupils need combined event probability to understand what the union and intersection regions represent."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C028",
+      "dependent_concept": "MA-KS4-C029",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Conditional probability requires restricting to a subset of the sample space (the given event) — this is the operational definition of intersection in set notation, so Venn diagram fluency is a direct prerequisite."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C030",
+      "dependent_concept": "MA-KS4-C031",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Statistical diagrams represent data collected through sampling — understanding what data was collected and how it was grouped is essential context for constructing appropriate displays."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C031",
+      "dependent_concept": "MA-KS4-C032",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.85,
+      "rationale": "Measures of average and spread are read from frequency tables and cumulative frequency graphs — pupils need to be able to construct and read these diagrams before extracting statistical summaries from them."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C032",
+      "dependent_concept": "MA-KS4-C033",
+      "confidence": "explicit",
+      "relationship_type": "supporting",
+      "strength": 0.7,
+      "rationale": "Scatter graphs and correlation build on understanding of averages — the mean point (x̄, ȳ) through which the line of best fit passes requires mean computation; comparing two scatter data sets uses the same descriptive statistics as comparing single-variable distributions."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C003",
+      "dependent_concept": "MA-KS4-C007",
+      "confidence": "inferred",
+      "relationship_type": "supporting",
+      "strength": 0.7,
+      "rationale": "Completing the square involves surd manipulation (√(b²−4ac) in the quadratic formula becomes a surd when not a perfect square) — fluency with surds supports exact solutions and understanding of the discriminant."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C015",
+      "dependent_concept": "MA-KS4-C011",
+      "confidence": "inferred",
+      "relationship_type": "conceptual",
+      "strength": 0.65,
+      "rationale": "Recognising y = kx^n graphs as proportional relationships connects direct proportion (y = kx) to power graphs (y = kx²) and exponential growth (y = kˣ) — proportion reasoning informs the classification of non-linear graph types."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C004",
+      "dependent_concept": "MA-KS4-C030",
+      "confidence": "inferred",
+      "relationship_type": "supporting",
+      "strength": 0.6,
+      "rationale": "Statistical reasoning requires number sense and estimation — deciding on sample size, assessing the plausibility of results, and identifying anomalies all depend on the ability to estimate and reason quantitatively."
+    },
+    {
+      "prerequisite_concept": "MA-KS4-C016",
+      "dependent_concept": "MA-KS4-C033",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Interpreting the gradient of the line of best fit on a scatter graph as a rate of change directly applies compound measure and rate-of-change reasoning — pupils need to understand gradient as a rate before interpreting it in bivariate statistical contexts."
+    }
+  ]
+}
