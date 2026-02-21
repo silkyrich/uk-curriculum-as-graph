@@ -332,10 +332,11 @@ class LayerImporter:
 - Learner Profiles (71 nodes — 33 InteractionType, 11 ContentGuideline, 11 PedagogyProfile, 11 FeedbackProfile, 5 PedagogyTechnique)
 - Visualization (5 Bloom perspectives with icons, styleRules, and search templates)
 
-✅ **In Aura cloud database — clean full import (2026-02-20):**
+✅ **In Aura cloud database — clean full import (2026-02-21, includes KS4):**
 - Instance: education-graphs (6981841e)
-- 3,322 total nodes: UK Curriculum 2,555 · Assessment 277 · CASE Standards 276 · Epistemic Skills 105 · Learner Profile 65 · Structure 39
-- Visualization properties applied (display_color, display_icon, name)
+- 3,326 total nodes: UK Curriculum 2,555 · Assessment 277 · CASE Standards 276 · Epistemic Skills 105 · Learner Profile 71 · Structure 42
+- KS4 KeyStage node + Y10/Y11 Year nodes + learner profiles for Y10/Y11
+- Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
 - 5 Bloom perspectives uploaded and active
 
 🚧 **In progress:**
