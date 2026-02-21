@@ -199,6 +199,18 @@
       "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": true
+    },
+    {
+      "concept_id": "RS-KS4-C006",
+      "domain_id": "RS-KS4-D002",
+      "concept_name": "Religious Practices, Worship and Sources of Authority",
+      "description": "Religious practices are the ritualised actions, ceremonies, forms of worship and rites of passage through which believers express and enact their faith, build community and mark significant life events. These include collective worship (prayer, services, ceremonies), individual devotional practices (meditation, private prayer, fasting), rites of passage (birth ceremonies, coming of age rituals, marriage, death rites) and seasonal observances and festivals. Sources of authority are the texts, institutions, leaders and traditions that give guidance on how adherents should believe and practise: these may include sacred scriptures, religious leaders (priests, imams, rabbis), councils and institutions, and the accumulated tradition of the faith community. At GCSE, pupils study practices and authority in at least two religions, comparing how different traditions approach these questions and examining the diversity of practice within each tradition.",
+      "teaching_guidance": "Teach practices and authority together, since practices are typically justified by and governed through specific sources of authority. For each religion studied, develop understanding of the specific practices, their meaning and purpose for believers, their scriptural or traditional basis, and the diversity of practice across denominations, sects and individual believers. Use primary sources: video of worship, interviews with believers, visits to places of worship. Avoid stereotyping by showing the diversity within religious traditions: a Christian service in a charismatic evangelical church differs profoundly from a High Anglican Eucharist. Develop pupils' understanding that religious practices are not merely external performances but expressions of belief, identity and community. For GCSE evaluation questions, develop the ability to assess whether religious practice remains significant in contemporary secular societies.",
+      "key_vocabulary": "worship, prayer, ritual, ceremony, rite of passage, devotion, pilgrimage, festival, sacrament, scripture, authority, tradition, denomination, diversity, practitioner, observance",
+      "common_misconceptions": "Pupils may treat religious practices as mere superstition or performance without engaging with their meaning and significance for believers; developing empathetic understanding from within the tradition, while maintaining analytical distance, produces more respectful and accurate analysis. The diversity of practice within religions is frequently overlooked, leading to essentialised portrayals where all Muslims pray identically or all Christians hold the same beliefs; systematic attention to diversity prevents stereotyping. Pupils may confuse the source of authority with its content: the Bible as a source of authority raises different questions from the teachings it contains.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -241,6 +253,14 @@
       "relationship_type": "instructional",
       "strength": 0.65,
       "rationale": "Engagement with religious pluralism at a theologically sophisticated level requires understanding of the ethical dimensions of religious coexistence, including the ethics of tolerance, dialogue and respect for religious difference."
+    },
+    {
+      "prerequisite_concept": "RS-KS4-C001",
+      "dependent_concept": "RS-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "logical",
+      "strength": 0.85,
+      "rationale": "Theological beliefs are the foundation for religious practices: understanding what a tradition believes about the nature of God, humanity and salvation is prerequisite to understanding why specific practices take the forms they do and what sources of authority are considered valid within that tradition."
     }
   ]
 }

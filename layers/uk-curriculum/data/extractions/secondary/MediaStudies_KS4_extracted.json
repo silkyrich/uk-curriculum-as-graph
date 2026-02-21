@@ -207,6 +207,18 @@
       "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false
+    },
+    {
+      "concept_id": "MS-KS4-C006",
+      "domain_id": "MS-KS4-D005",
+      "concept_name": "Historical, Social and Cultural Contexts of Media",
+      "description": "Media texts do not exist in a vacuum: they are produced within specific historical moments, social contexts, cultural environments and economic structures that shape their content, form and meanings. Understanding context requires analysis of when and where a text was produced, for whom and by whom, within what technological constraints, and within what social and political climate. The same media text may be read differently by audiences in different historical periods or cultural locations. Contextual analysis also examines how media texts reflect, reinforce or challenge the dominant ideologies and values of the contexts in which they are produced, including attitudes to gender, race, class, nationality and sexuality that may now be seen as outdated or contested.",
+      "teaching_guidance": "Develop contextual analysis through comparison: take the same genre or format across different decades and examine how social attitudes, technological possibilities and audience expectations shape the texts. Study specific historical moments in media history: the introduction of television, the emergence of the internet, the rise of social media, and how each transformed media production and consumption. Connect contextual analysis to representation: how did the social context of a text's production shape the representations it contains? Connect to industry: how did the economic and regulatory context shape what could be produced and distributed? Develop pupils' ability to avoid anachronism: judging historical texts by contemporary standards without acknowledging their context.",
+      "key_vocabulary": "context, historical, social, cultural, political, economic, ideology, values, production context, reception context, discourse, hegemony, intertextuality, zeitgeist, contemporary, historical",
+      "common_misconceptions": "Pupils may analyse media texts as if they were produced in a vacuum, ignoring the social and historical conditions that shaped their content and form. The concept of ideology can be difficult: pupils may think it refers only to overtly political content, missing the way that media texts routinely embed assumptions about what is normal, desirable or inevitable. Pupils may apply contemporary values and attitudes uncritically to historical texts; developing contextual sensitivity allows more nuanced and historically informed analysis.",
+      "concept_type": "knowledge",
+      "complexity_level": 4,
+      "is_cross_cutting": true
     }
   ],
   "prerequisite_relationships": [
@@ -249,6 +261,14 @@
       "relationship_type": "instructional",
       "strength": 0.65,
       "rationale": "Industry analysis requires audience understanding: media industries' commercial decisions are driven by audience metrics (ratings, reach, demographics), so understanding the industry requires understanding the audience-industry relationship."
+    },
+    {
+      "prerequisite_concept": "MS-KS4-C004",
+      "dependent_concept": "MS-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "logical",
+      "strength": 0.8,
+      "rationale": "Audience theory and reception provides the framework for understanding how context shapes meaning differently for different audience groups across historical periods and cultural settings. Contextual analysis of media texts is enriched by understanding how audiences bring their own social and cultural positions to bear on reception."
     }
   ]
 }

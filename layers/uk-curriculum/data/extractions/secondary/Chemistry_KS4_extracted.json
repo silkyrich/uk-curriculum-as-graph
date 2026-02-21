@@ -580,6 +580,18 @@
       "complexity_level": 3,
       "is_cross_cutting": true,
       "pathway": "both"
+    },
+    {
+      "concept_id": "CH-KS4-C015",
+      "domain_id": "CH-KS4-D008",
+      "concept_name": "Chemical Analysis and Identification Techniques",
+      "description": "Chemical analysis involves systematic procedures for identifying unknown substances and assessing the purity of chemical samples. At GCSE, pupils develop proficiency in a range of qualitative analytical techniques: paper chromatography (separating mixture components using a solvent moving through chromatography paper, with Rf values calculated as distance moved by substance divided by distance moved by solvent); flame tests (identifying metal ions by the characteristic colour produced when compounds are heated in a flame); chemical precipitation tests (identifying ions in solution by adding reagents that form characteristic precipitates); and gas tests (identifying common gases by their characteristic reactions with test reagents). These techniques develop practical chemistry skills and the ability to connect observation to chemical knowledge.",
+      "teaching_guidance": "Teach analytical techniques through practical work with genuine unknowns, not just with known samples whose identity pupils already know. For chromatography: calculate Rf values accurately, compare to reference values, and discuss why the same substance always produces the same Rf value under standard conditions. For flame tests: use a systematic approach, cleaning the wire between tests; connect the colour to the electronic structure of the metal ion (electron excitation and emission). For ion tests: develop a systematic approach moving from precipitation to further tests, mimicking the flowchart approach used in professional analysis. For gas tests: ensure pupils understand why each test is specific to each gas. Connect to industrial applications: water quality analysis, food safety testing, forensic science.",
+      "key_vocabulary": "chromatography, Rf value, solvent, stationary phase, mobile phase, flame test, metal ion, precipitation, qualitative analysis, ion test, gas test, purity, formulation, mixture, separation, identification",
+      "common_misconceptions": "Pupils frequently calculate Rf values incorrectly by dividing the wrong distances, or forgetting that the measurement must be to the centre of each spot. The flame test colours must be memorised accurately; pupils often confuse similar colours (lilac for potassium vs red for lithium). In chromatography, pupils may not understand why different substances move different distances: the key principle is the balance between solubility in the mobile phase (which carries substances) and affinity for the stationary phase (which retains them).",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -950,6 +962,14 @@
       "relationship_type": "developmental",
       "strength": 0.75,
       "rationale": "KS3 introduces climate change as a consequence of resource use. KS4 LCA uses carbon footprint as one of its key metrics, making the KS3 climate change context motivating and foundational for sustainability chemistry."
+    },
+    {
+      "prerequisite_concept": "CH-KS4-C001",
+      "dependent_concept": "CH-KS4-C015",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.65,
+      "rationale": "Understanding atomic structure and the periodic table provides the conceptual basis for understanding why different elements produce characteristic flame colours and why ions have characteristic precipitation reactions: the flame colour reflects electron energy level transitions, and ion reactions reflect the charge and size of specific ions."
     }
   ]
 }

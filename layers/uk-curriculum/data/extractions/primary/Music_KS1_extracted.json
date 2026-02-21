@@ -130,6 +130,18 @@
       "concept_type": "knowledge",
       "complexity_level": 1,
       "is_cross_cutting": false
+    },
+    {
+      "concept_id": "MU-KS1-C006",
+      "domain_id": "MU-KS1-D003",
+      "concept_name": "Sound Exploration and Musical Composition",
+      "description": "Musical composition at KS1 begins with free exploration and experimentation rather than formal musical notation. Pupils experiment with how sounds can be created, modified and combined: they try different ways of striking, blowing or scraping instruments; they explore how the inter-related dimensions of music (pitch, duration, dynamics, tempo, timbre, texture and structure) can be manipulated to create different effects; and they begin to make deliberate choices about which sounds to combine and how to organise them into a simple musical piece. This creative sound exploration develops musical imagination and prepares pupils for more structured composition in later years, building intuitive understanding of musical structure through doing rather than through abstract rules.",
+      "teaching_guidance": "Provide rich opportunities for sound exploration with tuned and untuned percussion, body percussion, found sounds and voices. Give composition tasks with creative constraints rather than total freedom: 'make a sound picture of a storm using four instruments' or 'compose a piece that changes from quiet to loud'. Encourage pupils to reflect on their choices: why did you use that instrument there? What did you change and why? Develop the ability to perform compositions consistently: this requires some form of notation or memory strategy (graphic notation, memory cues, a sequence of pictures). Connect composition to listening and performing: analysing how a piece they have listened to is structured informs their own compositional choices.",
+      "key_vocabulary": "compose, create, experiment, combine, select, sound, instrument, pitch, dynamics, tempo, timbre, texture, structure, improvise, musical idea",
+      "common_misconceptions": "Pupils may believe that composition requires knowing how to write musical notation; at KS1, composition is about making musical decisions and can be recorded through graphic notation, memory or teacher transcription. Some pupils may feel that their musical ideas are wrong because they do not sound like familiar music; developing aesthetic confidence and valuing diverse musical outcomes prevents self-censorship. Pupils may not recognise that performing consistently requires some form of memory or notation: developing simple graphic notation or verbal sequencing makes composition more repeatable.",
+      "concept_type": "process",
+      "complexity_level": 1,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -164,6 +176,22 @@
       "relationship_type": "instructional",
       "strength": 0.7,
       "rationale": "Practical experience of dynamics and tempo as expressive tools supports the conceptual grasp of the inter-related dimensions as a whole."
+    },
+    {
+      "prerequisite_concept": "MU-KS1-C005",
+      "dependent_concept": "MU-KS1-C006",
+      "confidence": "explicit",
+      "relationship_type": "logical",
+      "strength": 0.85,
+      "rationale": "Understanding the inter-related dimensions of music (pitch, duration, dynamics, tempo, timbre, texture, structure) — which is what MU-KS1-C005 covers — is prerequisite to using those dimensions deliberately in composition and sound exploration."
+    },
+    {
+      "prerequisite_concept": "MU-KS1-C001",
+      "dependent_concept": "MU-KS1-C006",
+      "confidence": "inferred",
+      "relationship_type": "logical",
+      "strength": 0.7,
+      "rationale": "Understanding pulse and rhythm provides the temporal framework within which composition operates; pupils need some sense of musical time and pattern before they can create musical structures with coherent rhythmic organisation."
     }
   ]
 }

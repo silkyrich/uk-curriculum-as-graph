@@ -183,6 +183,18 @@
       "concept_type": "skill",
       "complexity_level": 3,
       "is_cross_cutting": false
+    },
+    {
+      "concept_id": "GE-KS3-C007",
+      "domain_id": "GE-KS3-D004",
+      "concept_name": "Geographical Skills: GIS, Maps and Fieldwork",
+      "description": "Geographical skills at KS3 encompass the technical and methodological competencies that geographers use to collect, represent, analyse and communicate spatial information. These include cartographic skills (reading and interpreting Ordnance Survey maps at various scales, using grid references and contours), use of Geographical Information Systems (GIS) as digital tools for visualising and analysing spatial data, and the planning and execution of fieldwork in contrasting locations. KS3 fieldwork extends beyond the local environment into contrasting urban, rural, coastal and inland locations, developing the ability to collect primary data, apply analytical techniques and draw evidence-based geographical conclusions. GIS skills connect traditional cartographic literacy to contemporary digital geographical practice.",
+      "teaching_guidance": "Develop map skills in genuine geographical contexts rather than as isolated exercises: use OS maps when studying the landscapes in their area, use atlases when studying global distributions. GIS teaching is most effective when pupils use it to answer real geographical questions: where should a new supermarket be located? What areas are at risk of flooding? Fieldwork should be planned as a genuine enquiry, not merely as a data-collection exercise: pupils should understand what question they are investigating and why their chosen methods are appropriate. Develop digital map literacy alongside traditional OS skills: Google Earth, Google Maps and open data platforms are the tools pupils will use in adult life.",
+      "key_vocabulary": "GIS, Ordnance Survey, grid reference, contour, scale, topographic, thematic map, aerial photograph, satellite image, fieldwork, primary data, secondary data, spatial data, layer, overlay, enquiry",
+      "common_misconceptions": "Pupils may treat OS map reading as a purely academic exercise rather than as a practical skill with real applications; connecting map work to fieldwork locations they have visited makes the skill purposeful. GIS is sometimes taught as a technical tool rather than as a geographical thinking tool; framing GIS use around geographical questions (where? why there? what patterns?) maintains the geographical focus. Pupils may think that fieldwork data collection is straightforward; the issues of sampling bias, measurement error and reliability require explicit discussion.",
+      "concept_type": "skill",
+      "complexity_level": 3,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -233,6 +245,22 @@
       "relationship_type": "instructional",
       "strength": 0.8,
       "rationale": "Locational knowledge of Africa and Asia's regions, countries and cities provides the spatial framework within which depth place study is conducted; pupils cannot study a specific region in depth without first situating it within the broader regional geography of the continent."
+    },
+    {
+      "prerequisite_concept": "GE-KS2-C005",
+      "dependent_concept": "GE-KS3-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS3 geographical skills develop directly from KS2 Ordnance Survey map skills and grid reference knowledge, extending them to include GIS technologies and fieldwork in contrasting locations beyond the local area."
+    },
+    {
+      "prerequisite_concept": "GE-KS3-C007",
+      "dependent_concept": "GE-KS3-C006",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.7,
+      "rationale": "Geographical skills including fieldwork and GIS are the methodological tools used to conduct place depth studies; pupils cannot carry out genuine geographical enquiry into regions in Africa and Asia without the data collection, mapping and analysis skills developed in GE-KS3-D004."
     }
   ]
 }

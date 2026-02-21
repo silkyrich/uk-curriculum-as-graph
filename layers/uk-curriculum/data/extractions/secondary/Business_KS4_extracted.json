@@ -207,6 +207,18 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": true
+    },
+    {
+      "concept_id": "BU-KS4-C006",
+      "domain_id": "BU-KS4-D003",
+      "concept_name": "Business Operations: Production and Supply Chain",
+      "description": "Operations management concerns how businesses plan, organise and control the processes by which inputs (materials, labour, energy) are transformed into outputs (goods or services). Production methods vary by volume and customisation: job production (one-off, bespoke), batch production (sets of identical products made together) and flow production (continuous, high-volume, standardised products). Quality management ensures products and services meet agreed standards, using approaches including quality control (inspection at end of process) and quality assurance (prevention throughout the process). Supply chains connect raw material producers to final consumers through a sequence of suppliers, manufacturers, distributors and retailers; effective supply chain management reduces costs, ensures availability and manages risk. Technology increasingly automates operational processes, improving efficiency but raising questions about employment.",
+      "teaching_guidance": "Teach production methods using real business examples that pupils recognise: flow production at a car factory, batch production at a bakery, job production at a bespoke tailor. Connect the choice of production method to the nature of the product and the market: high-volume, standardised products suit flow production; unique, high-value products require job production. For supply chain teaching, trace the journey of a familiar product (a smartphone, a chocolate bar) from raw material to shelf, identifying the different businesses and processes involved. Evaluate the trade-offs in supply chain decisions: offshore manufacturing reduces cost but increases lead times and supply chain risk. Quality management should be taught with specific examples of quality failures and their business consequences.",
+      "key_vocabulary": "production method, job production, batch production, flow production, quality control, quality assurance, supply chain, logistics, procurement, inventory, just-in-time, lean production, efficiency, automation, outsourcing",
+      "common_misconceptions": "Pupils often assume that flow production is always superior because it is cheaper per unit, missing the contexts (unique or customised products, small markets) where job or batch production is more appropriate. Quality control and quality assurance are frequently confused: quality control checks for defects at the end of the process and accepts some waste; quality assurance prevents defects throughout the process. Pupils may not appreciate the interdependence of supply chain members: the failure of one supplier can halt production for the entire chain.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false
     }
   ],
   "prerequisite_relationships": [
@@ -249,6 +261,14 @@
       "relationship_type": "instructional",
       "strength": 0.65,
       "rationale": "Marketing decisions generate the revenue that finance manages: understanding how marketing strategy drives sales volume and pricing connects marketing to the financial statements and ratios assessed in the finance domain."
+    },
+    {
+      "prerequisite_concept": "BU-KS4-C001",
+      "dependent_concept": "BU-KS4-C006",
+      "confidence": "inferred",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Understanding enterprise, business objectives and the business environment provides the strategic context within which operational decisions (what to produce, how to produce it, how to manage quality and supply chains) are made. Operations management is in service of business strategy."
     }
   ]
 }
