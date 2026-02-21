@@ -232,6 +232,30 @@
   ],
   "concepts": [
     {
+      "concept_id": "HI-KS4-C016",
+      "domain_id": "HI-KS4-D004",
+      "concept_name": "Non-European Societies and Global Perspectives",
+      "description": "The study of historically significant societies outside Britain and Europe — such as imperial China, Mughal India, the Ottoman Empire, or pre-Columbian American civilisations — that developed distinctive political structures, cultures, economies, and intellectual traditions. These societies are studied not as exotic contrasts to European norms but as historically significant in their own right, developing through their own internal dynamics. At GCSE, the world depth study develops students' capacity to apply historical analysis to unfamiliar historical contexts, suspending assumptions derived from British or European history and engaging with different social formations, belief systems, and structures of power.",
+      "teaching_guidance": "Avoid framing non-European societies purely in relation to Europe or Britain. Study each society on its own terms first: its political system, economy, culture, religion, and social structure. Then examine how it connected with, contrasted with, or was transformed by contact with other societies. For source analysis in non-European contexts, discuss how the availability of evidence differs from European contexts: archaeological evidence may be primary, oral traditions may carry historical authority that written sources do not, and colonial sources may distort understanding of pre-colonial societies. Connect to the broader GCSE skill of applying second-order concepts across unfamiliar contexts.",
+      "key_vocabulary": "dynasty, empire, caliphate, sultanate, shogunate, tribute system, imperial court, bureaucracy, trade network, cultural exchange, oral tradition, archaeology, indigenous, pre-colonial, globalisation",
+      "common_misconceptions": "Students frequently apply European historical frameworks (feudalism, Renaissance, industrial revolution) to non-European societies where they do not fit. Students sometimes present non-European history only through the lens of European contact or colonisation, obscuring the pre-contact internal development of these societies. Students may treat non-European societies as monolithic and static rather than recognising internal diversity, conflict, and change.",
+      "concept_type": "knowledge",
+      "complexity_level": 4,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "HI-KS4-C017",
+      "domain_id": "HI-KS4-D004",
+      "concept_name": "Cold War and Superpower Relations",
+      "description": "The ideological, political, and military confrontation between the United States and the Soviet Union from approximately 1941 to 1991, and its global consequences. The Cold War involved competing visions of political and economic organisation (liberal capitalism versus Marxist-Leninist communism), the development of nuclear arsenals and the doctrine of mutually assured destruction, a series of proxy conflicts in the developing world, and a sustained competition for global influence through diplomacy, espionage, propaganda, and economic aid. At GCSE, the Cold War is studied as a world depth study examining superpower relations, the key crises and turning points of the conflict, and its eventual resolution.",
+      "teaching_guidance": "Teach the Cold War chronologically from the post-WWII settlement through the key crises (Berlin Blockade, Korea, Cuba, Vietnam) to détente and eventual collapse of the Soviet Union. Apply the full range of second-order concepts: causation (why did the Cold War begin?), significance (which crises were most dangerous?), change and continuity (how did the superpower relationship evolve?), and interpretations (do historians agree on why the Cold War ended?). Source analysis should include propaganda materials from both sides, showing how each power represented itself and the other. The world depth study format requires detailed knowledge of specific events and turning points rather than merely general understanding of the ideological conflict.",
+      "key_vocabulary": "Cold War, superpower, NATO, Warsaw Pact, nuclear deterrence, mutually assured destruction, containment, Truman Doctrine, Marshall Plan, Berlin Wall, Cuban Missile Crisis, détente, arms race, proxy war, communism, capitalism",
+      "common_misconceptions": "Students often present the Cold War as simply a conflict between the USA and USSR, overlooking the significance of the developing world as a space of superpower competition. Students frequently treat the collapse of the Soviet Union as inevitable rather than as a product of specific political, economic, and ideological failures that might have played out differently. Students sometimes confuse Cold War détente (limited cooperation to reduce tension) with the end of superpower rivalry, missing that the underlying conflict continued through the 1980s.",
+      "concept_type": "knowledge",
+      "complexity_level": 4,
+      "is_cross_cutting": false
+    },
+    {
       "concept_id": "HI-KS4-C001",
       "domain_id": "HI-KS4-D006",
       "concept_name": "Causation",
@@ -540,6 +564,30 @@
       "relationship_type": "conceptual",
       "strength": 0.65,
       "rationale": "Understanding how interpretations are constructed — what evidence historians select, what arguments they prioritise — helps students understand that historical significance is itself constructed rather than inherent. Interpretations analysis thus deepens students' understanding of significance by showing that which events are judged significant varies by historian, era, and perspective."
+    },
+    {
+      "prerequisite_concept": "HI-KS3-C004",
+      "dependent_concept": "HI-KS4-C001",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS4 causation analysis directly extends the KS3 skill of constructing historical arguments. The GCSE requirement to argue the relative importance of causes is a more demanding and exam-focused application of the analytical argument construction established at KS3."
+    },
+    {
+      "prerequisite_concept": "HI-KS3-C004",
+      "dependent_concept": "HI-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS4 source analysis (AO3) builds on the argument construction skills developed at KS3, requiring students not only to identify what sources tell us but to construct substantiated judgements about their usefulness — a more demanding analytical task that presupposes KS3-level argumentative capability."
+    },
+    {
+      "prerequisite_concept": "HI-KS3-C004",
+      "dependent_concept": "HI-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS4 interpretation analysis (AO4) is the most demanding extension of KS3 argument construction: students must evaluate the arguments of historians, identify the evidence used, and construct their own reasoned judgement on the convincingness of competing interpretations. This cannot be done without the foundational argument construction skills established at KS3."
     }
   ]
 }

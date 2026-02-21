@@ -39,6 +39,30 @@
   ],
   "objectives": [
     {
+      "objective_id": "HI-KS3-O008",
+      "domain_id": "HI-KS3-D003",
+      "objective_text": "pupils should be taught to understand historical concepts such as continuity and change, cause and consequence, similarity, difference and significance, and use them to make connections, draw contrasts, analyse trends, frame historically-valid questions and create their own structured accounts",
+      "non_statutory_guidance": "This includes written narratives and analyses. Pupils should move from description to explanation to analytical judgement, using the full range of second-order historical concepts as analytical tools across all topics studied.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "HI-KS3-O009",
+      "domain_id": "HI-KS3-D003",
+      "objective_text": "pupils should be taught to understand the methods of historical enquiry, including how evidence is used rigorously to make historical claims, and discern how and why contrasting arguments and interpretations of the past have been constructed",
+      "non_statutory_guidance": "Pupils should understand how historians construct arguments from evidence, and that different historians may reach different conclusions from the same evidence. They should evaluate sources for their provenance, purpose and reliability.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "HI-KS3-O010",
+      "domain_id": "HI-KS3-D003",
+      "objective_text": "pupils should gain and deploy a historically grounded understanding of abstract terms such as 'empire', 'civilisation', 'parliament' and 'peasantry'",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
       "objective_id": "HI-KS3-O001",
       "domain_id": "HI-KS3-D001",
       "objective_text": "the development of Church, state and society in Medieval Britain 1066-1509",
@@ -177,6 +201,22 @@
       "relationship_type": "instructional",
       "strength": 0.7,
       "rationale": "Understanding the Holocaust requires not only historical knowledge but the analytical and argumentative skills to engage with moral complexity, evaluate diverse evidence and construct justified conclusions from incomplete and contested information."
+    },
+    {
+      "prerequisite_concept": "HI-KS2-C001",
+      "dependent_concept": "HI-KS3-C004",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "Constructing historical arguments at KS3 requires causal reasoning that is substantively developed in the KS2 concept of cause and consequence. The ability to build an argued causal thesis is a direct extension of KS2 multi-causal thinking."
+    },
+    {
+      "prerequisite_concept": "HI-KS2-C002",
+      "dependent_concept": "HI-KS3-C004",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.75,
+      "rationale": "KS3 argument construction draws on the full range of second-order concepts including significance, which is substantively introduced at KS2. Students cannot construct argued historical judgements without prior understanding of what makes a development historically significant."
     }
   ]
 }

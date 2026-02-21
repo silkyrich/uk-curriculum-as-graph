@@ -136,6 +136,42 @@
   ],
   "concepts": [
     {
+      "concept_id": "DT-KS1-C008",
+      "domain_id": "DT-KS1-D002",
+      "concept_name": "Tools, Equipment and Safe Making",
+      "description": "Tools and equipment are the instruments used to cut, shape, join and finish materials during making. At KS1, pupils learn to identify and use a range of appropriate tools including scissors, hole punches, hand saws, needles and mixing equipment, developing control and precision in their handling. Safe use of tools is an essential component of making: pupils must understand and apply basic safety rules for each tool they use, including how to hold it, how to protect themselves and others, and how to store it correctly when not in use.",
+      "teaching_guidance": "Introduce tools progressively, modelling safe handling before pupils use them independently. Establish clear routines for tool use, storage and carrying in the classroom. Practice specific tool skills in isolation before applying them in a making project. Provide sufficient working space so that pupils are not in danger from one another's tools. Discuss why safety rules exist for each tool through reference to what the tool is designed to cut or penetrate. Offer tools in a range of sizes to accommodate different hand sizes and levels of dexterity.",
+      "key_vocabulary": "tool, equipment, scissors, saw, needle, join, cut, shape, finish, safe, handle, control, precision, storage, material",
+      "common_misconceptions": "Pupils may rush tool use and lose control, leading to inaccurate cutting or safety risks. Slowing down and demonstrating the value of deliberate, careful tool use is a key habit to establish. Some pupils may not distinguish between tools designed for different materials (e.g. trying to use fabric scissors on card); building tool literacy from the start avoids this.",
+      "concept_type": "skill",
+      "complexity_level": 1,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "DT-KS1-C009",
+      "domain_id": "DT-KS1-D002",
+      "concept_name": "Joining and Finishing Techniques",
+      "description": "Joining techniques are methods used to connect materials and components together so that a product holds its shape and structure. At KS1, pupils explore a range of joining methods including adhesives (glue, tape, staples), mechanical fixings (split pins, treasury tags, stitching) and construction techniques (folding tabs, slots). Finishing refers to the processes applied to the surface of a product after it has been assembled, such as painting, colouring or adding surface decoration, to improve its appearance and protect it.",
+      "teaching_guidance": "Provide a range of joining materials and methods for pupils to test and compare. Pose design challenges that require different joining solutions: what would hold this flap firmly? What would allow this part to move? Teach pupils to consider whether a joint needs to be permanent or temporary. Practise finishing techniques separately before applying them to final products. Discuss why finishing is important in commercial products: protection, aesthetics, branding.",
+      "key_vocabulary": "join, adhesive, glue, tape, stitch, staple, fold, slot, tab, fix, permanent, temporary, finish, paint, decorate, surface, appearance",
+      "common_misconceptions": "Pupils often use excessive amounts of glue, which weakens joints rather than strengthening them. Teaching that the right amount of adhesive applied to the right surfaces makes a stronger joint is a key practical lesson. Some pupils may not understand that different joining methods suit different materials: stitching works for fabric but not card.",
+      "concept_type": "skill",
+      "complexity_level": 1,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "DT-KS1-C010",
+      "domain_id": "DT-KS1-D003",
+      "concept_name": "Product Analysis and Evaluation",
+      "description": "Product analysis involves examining an existing product to understand its purpose, how it works, what it is made from and how well it achieves its intended function. At KS1, pupils develop the habit of looking critically at products, both those made by others and those they have made themselves, asking structured questions about purpose, materials, function and user. Evaluation against design criteria develops the principle that a product's success can be measured objectively rather than assessed through preference alone.",
+      "teaching_guidance": "Provide a collection of familiar products for pupils to handle, examine and discuss. Use structured questions to guide analysis: Who is this for? What does it do? What is it made from? How is it made? Does it do its job well? Record evaluations in simple formats that pupils can complete independently. When evaluating their own products, return explicitly to the design criteria written before making began. Encourage pupils to suggest improvements, framing evaluation as a positive, forward-looking process rather than criticism.",
+      "key_vocabulary": "evaluate, analyse, product, purpose, function, user, material, criterion, criteria, strength, weakness, improve, assess, compare, opinion",
+      "common_misconceptions": "Pupils may evaluate products based purely on aesthetic preference ('I like the colour') rather than functional effectiveness. Teaching pupils to separate personal taste from functional judgement is a key evaluation skill. Some pupils may be reluctant to identify weaknesses in their own work; framing evaluation as 'what would make this even better?' rather than 'what is wrong with this?' supports a growth mindset approach.",
+      "concept_type": "process",
+      "complexity_level": 1,
+      "is_cross_cutting": false
+    },
+    {
       "concept_id": "DT-KS1-C001",
       "domain_id": "DT-KS1-D001",
       "concept_name": "Iterative Design Process",
@@ -252,6 +288,38 @@
       "relationship_type": "instructional",
       "strength": 0.65,
       "rationale": "Exploring mechanisms in products is most meaningful when framed within the design process - pupils design products that incorporate mechanisms, requiring understanding of what the mechanism needs to do."
+    },
+    {
+      "prerequisite_concept": "DT-KS1-C003",
+      "dependent_concept": "DT-KS1-C008",
+      "confidence": "inferred",
+      "relationship_type": "logical",
+      "strength": 0.75,
+      "rationale": "Selecting appropriate tools depends on understanding material characteristics: different materials require different tools, so knowledge of material properties informs purposeful tool selection during making."
+    },
+    {
+      "prerequisite_concept": "DT-KS1-C008",
+      "dependent_concept": "DT-KS1-C009",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Joining and finishing techniques require the controlled use of tools; safe and effective tool handling is therefore a prerequisite for successfully executing joining methods."
+    },
+    {
+      "prerequisite_concept": "DT-KS1-C002",
+      "dependent_concept": "DT-KS1-C010",
+      "confidence": "explicit",
+      "relationship_type": "logical",
+      "strength": 0.85,
+      "rationale": "Evaluating against design criteria requires pupils to understand what design criteria are; the concepts are directly related as criteria are the standard against which evaluation is performed."
+    },
+    {
+      "prerequisite_concept": "DT-KS1-C009",
+      "dependent_concept": "DT-KS1-C010",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.6,
+      "rationale": "Meaningful product evaluation at KS1 requires pupils to have made something, which depends on competence with joining and finishing techniques; making experience grounds evaluation in practical understanding."
     }
   ]
 }

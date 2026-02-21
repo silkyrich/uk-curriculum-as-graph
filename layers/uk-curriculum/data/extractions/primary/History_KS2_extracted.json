@@ -40,6 +40,30 @@
   ],
   "objectives": [
     {
+      "objective_id": "HI-KS2-O010",
+      "domain_id": "HI-KS2-D004",
+      "objective_text": "pupils should be taught to ask and answer historically valid questions, choosing and using parts of stories and other sources to show that they know and understand key features of events",
+      "non_statutory_guidance": "Pupils should learn to generate their own historical questions and select relevant evidence to answer them, moving beyond retelling narrative towards analytical historical thinking.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "HI-KS2-O011",
+      "domain_id": "HI-KS2-D004",
+      "objective_text": "pupils should construct informed responses that involve thoughtful selection and organisation of relevant historical information",
+      "non_statutory_guidance": "Pupils should organise their historical knowledge into argued, evidence-based responses rather than simple narrative accounts. This includes written and oral responses to historical questions.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "HI-KS2-O012",
+      "domain_id": "HI-KS2-D004",
+      "objective_text": "pupils should address and sometimes devise historically valid questions about change, cause, similarity and difference, and significance",
+      "non_statutory_guidance": "The second-order concepts of cause, consequence, change, continuity, significance, similarity and difference should be taught explicitly and applied across all historical topics studied at KS2.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
       "objective_id": "HI-KS2-O001",
       "domain_id": "HI-KS2-D002",
       "objective_text": "changes in Britain from the Stone Age to the Iron Age",
@@ -206,6 +230,14 @@
       "relationship_type": "logical",
       "strength": 0.65,
       "rationale": "Constructing causal arguments about historical events requires the ability to evaluate historical evidence, since causal claims must be grounded in and tested against the available sources."
+    },
+    {
+      "prerequisite_concept": "HI-KS1-C004",
+      "dependent_concept": "HI-KS2-C002",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.7,
+      "rationale": "Judging historical significance at KS2 requires the ability to interrogate sources about the scale and duration of a person's or event's impact, which builds on the basic source-handling skills developed at KS1."
     }
   ]
 }

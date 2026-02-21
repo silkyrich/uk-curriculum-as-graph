@@ -149,6 +149,30 @@
   ],
   "concepts": [
     {
+      "concept_id": "DT-KS4-C006",
+      "domain_id": "DT-KS4-D004",
+      "concept_name": "Evaluation Against Specification and User Needs",
+      "description": "Formal evaluation at GCSE involves systematically assessing a design outcome against both the original specification — the measurable criteria derived from the design brief — and the needs of the intended user. Effective evaluation is evidence-based: outcomes are tested against objective criteria rather than assessed through personal opinion. Methods include physical testing (does it meet strength, size, weight or capacity requirements?), user testing (does the intended user find it usable, comfortable and appealing?), and comparative analysis (how does it compare to existing products that address the same brief?). Evaluation findings are used to make justified recommendations for further development.",
+      "teaching_guidance": "Teach pupils to distinguish between objective criteria (measurable, checkable) and subjective criteria (based on opinion and preference) in their design specifications, and to use both types in evaluation. Develop user testing protocols: how do you test a product with a real user in a structured way that produces useful feedback? Practise writing evaluation conclusions that reference specific evidence: 'The product met criterion 3 because...' rather than 'The product is good because I like it.' For examination preparation, practise structured evaluation responses that identify specific strengths and specific, justified areas for improvement. Connect evaluation back to the iterative design process: evaluation outcomes should feed into the next design iteration.",
+      "key_vocabulary": "evaluate, specification, criterion, user need, test, evidence, objective, subjective, user feedback, strength, limitation, improvement, justify, recommend, fitness for purpose",
+      "common_misconceptions": "Pupils frequently write evaluation that is entirely positive or is based on personal preference, rather than being referenced to the specification and user feedback. Teaching that honest evaluation of limitations is more valuable than praise — because it drives improvement — changes this. Some pupils confuse evaluation with description: saying what they made rather than assessing how well it meets its specification. The distinction between 'what I made' and 'how well it works' needs explicit teaching.",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "is_cross_cutting": false
+    },
+    {
+      "concept_id": "DT-KS4-C007",
+      "domain_id": "DT-KS4-D004",
+      "concept_name": "Life Cycle Analysis and Sustainability Evaluation",
+      "description": "Life cycle analysis (LCA) is a systematic method for assessing the environmental impact of a product across its entire life — from raw material extraction through processing, manufacturing, distribution, use and end-of-life disposal or recycling. LCA reveals the full environmental cost of a product's existence, including energy use, water use, emissions and waste at each stage. At GCSE, pupils use LCA as an evaluation framework to assess the environmental performance of existing products and their own designs, making justified judgements about the relative sustainability of different design decisions.",
+      "teaching_guidance": "Introduce LCA through a familiar product: trace the journey of a plastic bottle, a cotton t-shirt or a smartphone from raw materials to disposal, identifying environmental impacts at each stage. Use the four LCA stages (material extraction, manufacturing, use, end-of-life) as a consistent framework for environmental evaluation. Connect LCA to the six Rs of sustainability (Rethink, Refuse, Reduce, Reuse, Repair, Recycle) as a design response framework. Practise GCSE examination questions that ask pupils to evaluate the sustainability of a product or material choice using LCA concepts. Develop pupils' ability to make justified comparative judgements: 'Material A has a lower impact in manufacturing but higher impact at end-of-life because...'",
+      "key_vocabulary": "life cycle analysis, LCA, environmental impact, carbon footprint, material extraction, manufacturing, distribution, use, end-of-life, recycling, sustainability, six Rs, biodegradable, carbon neutral, embodied energy",
+      "common_misconceptions": "Pupils may reduce sustainability evaluation to 'is it recyclable?' missing the full lifecycle dimension. A recyclable product made from energy-intensive materials may have a higher overall environmental impact than a non-recyclable product with minimal processing. The concept of 'embodied energy' — the energy used in making a product before it is ever used — is often missed but is one of the most significant dimensions of environmental impact for manufactured goods.",
+      "concept_type": "process",
+      "complexity_level": 4,
+      "is_cross_cutting": true
+    },
+    {
       "concept_id": "DT-KS4-C001",
       "domain_id": "DT-KS4-D001",
       "concept_name": "Material Properties and Selection",
@@ -249,6 +273,54 @@
       "relationship_type": "instructional",
       "strength": 0.65,
       "rationale": "Sustainable design principles are most effectively integrated into practice within an iterative design process where sustainability criteria can be evaluated at each stage and used to guide development decisions."
+    },
+    {
+      "prerequisite_concept": "DT-KS3-C004",
+      "dependent_concept": "DT-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.85,
+      "rationale": "KS4 evaluation against specification and user needs directly extends KS3 ethical and sustainable evaluation, requiring the same evaluative rigour but applied to formal design specifications and user testing evidence in the context of GCSE assessment."
+    },
+    {
+      "prerequisite_concept": "DT-KS4-C002",
+      "dependent_concept": "DT-KS4-C006",
+      "confidence": "explicit",
+      "relationship_type": "logical",
+      "strength": 0.9,
+      "rationale": "Evaluation against specification requires a specification to exist; the iterative design process generates and refines the specification through research and development, making design process knowledge a direct prerequisite for specification-referenced evaluation."
+    },
+    {
+      "prerequisite_concept": "DT-KS4-C003",
+      "dependent_concept": "DT-KS4-C006",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.75,
+      "rationale": "User needs evaluation requires understanding of human factors and ergonomics; knowing what dimensions of user experience to assess and how to conduct structured user testing depends on ergonomic and human factors knowledge."
+    },
+    {
+      "prerequisite_concept": "DT-KS3-C004",
+      "dependent_concept": "DT-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "developmental",
+      "strength": 0.9,
+      "rationale": "KS4 life cycle analysis extends the KS3 ethical and sustainable design framework with a more systematic, stage-by-stage methodology for quantifying environmental impact across the full product lifecycle."
+    },
+    {
+      "prerequisite_concept": "DT-KS4-C005",
+      "dependent_concept": "DT-KS4-C007",
+      "confidence": "inferred",
+      "relationship_type": "logical",
+      "strength": 0.8,
+      "rationale": "Life cycle analysis is the analytical tool used to operationalise sustainability and responsible design principles; understanding what sustainability means conceptually is prerequisite to conducting systematic lifecycle impact assessments."
+    },
+    {
+      "prerequisite_concept": "DT-KS4-C001",
+      "dependent_concept": "DT-KS4-C007",
+      "confidence": "inferred",
+      "relationship_type": "logical",
+      "strength": 0.7,
+      "rationale": "Meaningful LCA requires material property knowledge; assessing the environmental impact of material choices at each lifecycle stage depends on understanding the properties, sourcing and processing requirements of the materials involved."
     }
   ]
 }
