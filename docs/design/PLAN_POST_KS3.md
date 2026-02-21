@@ -52,13 +52,25 @@ At KS4, two layers of curriculum coexist:
 
 1. **National Curriculum PoS** - Thin, statutory, sets the legal framework. This is what the DfE publishes. Relatively few objectives, broad statements.
 
-2. **GCSE specifications** - Detailed, exam-board-specific, what teachers actually plan from. Each subject has 3-5 competing specs from different boards with different content organisation, weighting, and assessment structures.
+2. **DfE GCSE Subject Content documents** - Published by the DfE, these sit between the NC and exam board specs. They define the knowledge, understanding and skills that ALL GCSE specifications for a subject must include. More detailed than the NC PoS, still government-published and exam-board-neutral. Referenced by document numbers (e.g., DFE-00352-2014 for single sciences). Available at [GOV.UK GCSE subject content collection](https://www.gov.uk/government/collections/gcse-subject-content).
+
+3. **Exam board specifications** - The most detailed operational documents. Each subject has 3-5 competing specs from different boards (AQA, Edexcel/Pearson, OCR, WJEC/Eduqas) with different content organisation, paper structures, and assessment weightings. Regulated by Ofqual.
+
+### The document hierarchy at KS4
+
+```
+NC Programme of Study (statutory, ~5-20 pages)
+  └── DfE GCSE Subject Content (required for all boards, ~10-30 pages)
+        └── Exam Board Specification (AQA/Edexcel/OCR/WJEC, ~40-100+ pages)
+```
 
 ### Recommendation: Phase it
 
 **Phase 1 (this plan):** Model the NC KS4 programmes of study only. This is consistent with how KS1-3 works in the graph and is a clean extension of existing architecture.
 
-**Phase 2 (future):** Add GCSE specifications as a separate layer (`layers/gcse-specs/`), similar to how CASE standards are a parallel layer. Each exam board spec would link back to NC objectives via alignment relationships.
+**Phase 1b (optional enrichment):** Extract from the DfE GCSE Subject Content documents instead of (or in addition to) the NC PoS. This gives significantly more detail while remaining board-neutral and government-sourced. Particularly worth considering for English, where the NC PoS is only ~5 pages.
+
+**Phase 2 (future):** Add exam board specifications as a separate layer (`layers/gcse-specs/`), similar to how CASE standards are a parallel layer. Each board's spec would link back to NC objectives via alignment relationships.
 
 **Rationale:** The NC PoS at KS4 is sufficient for:
 - Learning progression queries (KS3 concept -> KS4 concept)
@@ -118,11 +130,11 @@ The existing extraction files already contain KS4 data that is silently dropped 
 
 Three subjects need new extractions from the DfE published documents:
 
-| Subject | Source document | Notes |
-|---------|----------------|-------|
-| **English KS4** | English programmes of study: key stage 4 (DfE, 2014) | Separate from KS3. Covers Reading, Writing, Spoken Language. |
-| **Mathematics KS4** | Mathematics programmes of study: key stage 4 (DfE, 2014) | Separate from KS3. Higher and Foundation tiers. |
-| **Science KS4** | Science programmes of study: key stage 4 (DfE, 2015) | Separate from KS3. Biology, Chemistry, Physics domains. Combined Science and Triple Science pathways. |
+| Subject | Source document | Pages | Notes |
+|---------|----------------|-------|-------|
+| **English KS4** | [English PoS KS4 (DfE, 2014)](https://assets.publishing.service.gov.uk/media/5a7585a1ed915d731495a9dd/KS4_English_PoS_FINAL_170714.pdf) | ~5-6 | Very broad. Covers Reading, Writing, Spoken Language. May benefit from Phase 1b (GCSE Subject Content docs). |
+| **Mathematics KS4** | [Maths PoS KS4 (DfE, 2014)](https://assets.publishing.service.gov.uk/media/5a7dc9dced915d2ac884d8ef/KS4_maths_PoS_FINAL_170714.pdf) | ~15-20 | Moderate detail. Foundation and Higher tiers. 6 domains. |
+| **Science KS4** | [Science PoS KS4 (DfE, 2015)](https://assets.publishing.service.gov.uk/media/5a7efc65ed915d74e33f3ac9/Science_KS4_PoS_7_November_2014.pdf) | ~20 | Most detailed. Biology, Chemistry, Physics. Combined/Triple pathways. 21 required practicals. |
 
 **Extraction approach:** Follow the same JSON schema used for KS3 extractions. Store in `layers/uk-curriculum/data/extractions/secondary/`:
 - `English_KS4_extracted.json`
