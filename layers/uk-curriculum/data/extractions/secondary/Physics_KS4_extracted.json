@@ -1,0 +1,669 @@
+{
+  "metadata": {
+    "subject": "Physics",
+    "key_stage": "KS4",
+    "years_covered": [10, 11],
+    "document_reference": "DFE-00443-2014",
+    "extraction_date": "2026-02-21",
+    "structure_rating": 8
+  },
+  "domains": [
+    {
+      "domain_id": "PH-KS4-D001",
+      "domain_name": "Energy",
+      "description": "The energy stores and systems framework for describing energy transfers. Covers kinetic, potential, chemical, thermal, elastic, nuclear and electromagnetic energy stores; work done; power; efficiency; and heating and cooling including specific heat capacity and latent heat.",
+      "curriculum_context": "Energy is the most cross-cutting concept in GCSE Physics and provides the quantitative framework for analysing all physical phenomena. The DfE GCSE Physics subject content requires pupils to understand energy as something stored in systems and transferred between stores, rather than as a 'thing' that flows or is 'used up'. Pupils must calculate kinetic energy, gravitational potential energy and elastic potential energy, calculate work done and power, and apply the concept of efficiency to energy transfer devices. The heating and cooling section requires pupils to use specific heat capacity to calculate energy transferred by heating, and to understand latent heat as energy transferred during change of state. Required practicals include measurement of specific heat capacity of a material. This domain integrates closely with Chemistry (exothermic/endothermic reactions) and Biology (cellular respiration as energy release).",
+      "is_cross_cutting": true,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "PH-KS4-D002",
+      "domain_name": "Electricity",
+      "description": "Electric charge, current, potential difference and resistance in series and parallel circuits. Covers the relationship between current, voltage and resistance (Ohm's law), electrical power and energy, the characteristics of different electrical components, mains electricity including the domestic supply, and static electricity.",
+      "curriculum_context": "Electricity is one of the most practically and mathematically demanding domains at GCSE and extends directly from the KS3 circuits work to a quantitative treatment using standard equations. The DfE subject content requires pupils to define and measure current, potential difference and resistance; to use Ohm's law and the rules for series and parallel circuits to calculate values in circuits; and to draw and interpret I-V characteristics for ohmic conductors, filament bulbs and diodes. Required practicals include investigations of the I-V characteristics of different components and the resistances of series and parallel circuits. Mains electricity requires understanding of alternating current, the function of the three-pin plug, the role of the earth wire and fuse, and the relationship between frequency, time period and peak voltage. Static electricity extends the model of charge to electrostatic phenomena including lightning and the photocopier.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "PH-KS4-D003",
+      "domain_name": "Particle Model of Matter",
+      "description": "The particle model as a framework for understanding states of matter, changes of state, pressure in gases, density, and internal energy. Covers the kinetic theory of gases, Boyle's law, Charles' law and the relationship between pressure, volume and temperature of a gas.",
+      "curriculum_context": "The particle model of matter at GCSE extends the KS3 introduction to a quantitative treatment using gas laws and the concept of absolute temperature. The DfE subject content requires pupils to use the particle model to explain the properties and behaviour of solids, liquids and gases, and to apply the gas pressure equation (pV/T = constant) to calculate changes in gas properties. Pupils must understand density as a physical property and be able to calculate it from mass and volume measurements. The distinction between temperature and internal energy (temperature is the mean kinetic energy of particles; internal energy is the total energy of all particles) is conceptually important and links to the thermodynamics context in the Energy domain. Required practicals include measurement of density of regular and irregular solids and liquids.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "PH-KS4-D004",
+      "domain_name": "Atomic Structure",
+      "description": "The nuclear model of the atom, isotopes, radioactive decay including alpha, beta and gamma radiation, nuclear equations, half-life, and the uses and hazards of radioactive emissions. Covers nuclear fission and nuclear fusion as sources of nuclear energy.",
+      "curriculum_context": "Atomic structure at GCSE Physics focuses on the nuclear aspect of atomic physics, including the evidence for and development of the nuclear model, the properties of ionising radiation, and the practical and medical applications of radioactivity. The DfE subject content requires pupils to use the nuclear model to explain the structure of isotopes, to describe the properties (nature, charge, mass, penetrating power, ionising ability) and the deflection in electric and magnetic fields of alpha, beta and gamma radiation, and to carry out calculations using half-life. Required practicals include the investigation of the inverse square law for gamma radiation. Nuclear fission and fusion are required as physical processes, including the distinction between chain reactions in fission (nuclear power, weapons) and the conditions required for fusion (stars, potential fusion reactors). Pupils are required to evaluate the ethical, social and environmental dimensions of nuclear power.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "PH-KS4-D005",
+      "domain_name": "Forces",
+      "description": "Forces as vectors, Newton's three laws of motion, the relationship between force, mass and acceleration, momentum and impulse, pressure in fluids, Hooke's law, and the turning effect of forces. Covers distance-time and velocity-time graphs, acceleration calculations, and the distinction between scalar and vector quantities.",
+      "curriculum_context": "Forces is the most mathematically demanding domain in GCSE Physics and requires pupils to apply vector concepts and Newton's laws to a wide range of physical situations. The DfE subject content requires pupils to analyse motion using distance-time and velocity-time graphs, to calculate acceleration, to apply Newton's second law (F = ma), and to use the concept of momentum (p = mv) and the conservation of momentum. Pupils must also understand Hooke's law, pressure in fluids (including hydraulics), and the conditions for equilibrium in terms of balanced forces and moments. Required practicals include investigations of Hooke's law and of acceleration on a ramp. The distinction between weight (a force due to gravity) and mass (the amount of matter) is conceptually important. Higher tier pupils additionally apply terminal velocity arguments, calculate work done against friction and understand the equation of motion.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "PH-KS4-D006",
+      "domain_name": "Waves",
+      "description": "The properties and behaviour of transverse and longitudinal waves, the wave equation, reflection, refraction, diffraction, and the electromagnetic spectrum. Covers sound as a longitudinal wave, the properties and applications of different parts of the electromagnetic spectrum, and the uses and hazards of EM radiation.",
+      "curriculum_context": "Waves is a domain that spans both Physics and real-world applications from medical imaging to telecommunications. The DfE subject content requires pupils to describe the properties of waves (amplitude, wavelength, frequency, speed) and apply the wave equation (v = f\u03bb) to calculate wave properties. Pupils must be able to explain reflection, refraction and diffraction in terms of wave behaviour, and to describe the electromagnetic spectrum as a family of transverse waves ranging from radio waves to gamma rays, with all waves travelling at the same speed in a vacuum. Required practicals include investigating reflection and refraction of light and measuring the speed of sound in air. Pupils are required to describe the uses of each part of the electromagnetic spectrum and evaluate the hazards of ionising radiation (X-rays, gamma rays, UV). Higher tier pupils additionally consider the superposition of waves and standing waves.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "PH-KS4-D007",
+      "domain_name": "Magnetism and Electromagnetism",
+      "description": "Magnetic fields, the motor effect, the generator effect, transformers and the National Grid. Covers permanent and induced magnets, the shape of magnetic fields, the force on a current-carrying conductor in a magnetic field, electromagnetic induction, and the structure and principles of transformers.",
+      "curriculum_context": "Magnetism and electromagnetism connects fundamental physics to the large-scale infrastructure of modern society \u2014 electricity generation, the National Grid and electric motors. The DfE subject content requires pupils to describe magnetic field patterns, to apply Fleming's left-hand rule to the motor effect (force on a current in a magnetic field), and to explain electromagnetic induction using the right-hand rule for the generator effect. Pupils must explain how transformers work using the relationship between the turns ratio and the voltage ratio, and evaluate why the National Grid transmits electricity at high voltage and low current to reduce energy losses. Required practicals include investigations of the factors affecting the force on a current-carrying conductor and the output voltage of a transformer. Higher tier pupils additionally apply the transformer equation quantitatively and calculate the efficiency of transformers.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    },
+    {
+      "domain_id": "PH-KS4-D008",
+      "domain_name": "Space Physics",
+      "description": "The structure and scale of the universe, the life cycle of stars, the solar system and evidence for the Big Bang. Covers the formation and life cycle of stars from nebulae through main sequence to white dwarf, neutron star or black hole, the expanding universe and red-shift, and the cosmic microwave background radiation as evidence for the Big Bang.",
+      "curriculum_context": "Space physics is a separate sciences only topic at GCSE, providing an opportunity to explore the largest scales of the universe and the deepest questions in cosmology. The DfE subject content requires pupils to describe the life cycle of stars of different masses, explain red-shift as evidence for an expanding universe, and evaluate the evidence for the Big Bang theory from both red-shift data and the cosmic microwave background radiation. The formation of heavier elements through nuclear fusion in stars provides an important link to the atomic structure and nuclear physics domains. Pupils are required to understand the scale of the universe, the use of light-years as a unit of distance, and the implications of the finite speed of light for observational astronomy. This domain provides rich opportunities for discussing the nature and limits of scientific knowledge.",
+      "is_cross_cutting": false,
+      "structure_type": "knowledge"
+    }
+  ],
+  "objectives": [
+    {
+      "objective_id": "PH-KS4-O001",
+      "domain_id": "PH-KS4-D001",
+      "objective_text": "Identify and describe the different energy stores in a system (kinetic, gravitational potential, elastic potential, chemical, thermal, nuclear, electromagnetic) and explain how energy is transferred between stores by heating, by doing work (mechanically or electrically), or by radiation.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O002",
+      "domain_id": "PH-KS4-D001",
+      "objective_text": "Calculate the kinetic energy of a moving object using Ek = \u00bdmv\u00b2, the gravitational potential energy using Ep = mgh, and the elastic potential energy using Ee = \u00bdke\u00b2.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O003",
+      "domain_id": "PH-KS4-D001",
+      "objective_text": "Calculate work done using W = Fd, power using P = E/t and P = Fv, and efficiency as the ratio of useful output energy to total input energy, and explain how efficiency can be improved by reducing unwanted energy transfers.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O004",
+      "domain_id": "PH-KS4-D001",
+      "objective_text": "Measure the specific heat capacity of a material using the equation Q = mc\u0394T, and explain why different materials require different amounts of energy to change their temperature by the same amount.",
+      "non_statutory_guidance": "Required Practical 14.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O005",
+      "domain_id": "PH-KS4-D001",
+      "objective_text": "Explain the concept of latent heat as the energy transferred during a change of state without a change in temperature, and calculate the energy required for a change of state using Q = mL.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O006",
+      "domain_id": "PH-KS4-D002",
+      "objective_text": "Define electric charge, current (as the rate of flow of charge using I = Q/t), potential difference (as the work done per unit charge using V = W/Q) and resistance (using R = V/I), and apply Ohm's law to circuits.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O007",
+      "domain_id": "PH-KS4-D002",
+      "objective_text": "Apply the rules for current, potential difference and resistance in series and parallel circuits, and calculate the total resistance of series and parallel combinations of resistors.",
+      "non_statutory_guidance": "Required Practical 15.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O008",
+      "domain_id": "PH-KS4-D002",
+      "objective_text": "Investigate and draw I-V characteristics for an ohmic resistor, a filament bulb and a diode, and explain the shape of each graph in terms of how resistance changes with temperature or direction of current.",
+      "non_statutory_guidance": "Required Practical 16.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O009",
+      "domain_id": "PH-KS4-D002",
+      "objective_text": "Calculate electrical power using P = IV, P = I\u00b2R and P = V\u00b2/R, and calculate the energy transferred by an electrical device using E = Pt and E = QV.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O010",
+      "domain_id": "PH-KS4-D002",
+      "objective_text": "Explain the structure and function of a three-pin plug, including the roles of the live, neutral and earth wires, the fuse and the circuit breaker, and explain the difference between alternating current (AC) and direct current (DC).",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O011",
+      "domain_id": "PH-KS4-D003",
+      "objective_text": "Use the particle model to explain the properties of solids, liquids and gases in terms of the arrangement, movement and energy of their particles, and explain changes of state in terms of changes in particle arrangement and energy.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O012",
+      "domain_id": "PH-KS4-D003",
+      "objective_text": "Measure and calculate the density of regular and irregular solids and liquids using \u03c1 = m/V, and explain density in terms of the mass of particles and their separation.",
+      "non_statutory_guidance": "Required Practical 19.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O013",
+      "domain_id": "PH-KS4-D003",
+      "objective_text": "Explain pressure in gases using the kinetic theory model, and apply the relationship pV/T = constant (gas laws) to calculate the effect of changes in pressure, volume and temperature on a fixed mass of gas.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O014",
+      "domain_id": "PH-KS4-D004",
+      "objective_text": "Describe the nuclear model of the atom, including the composition of the nucleus and the arrangement of electrons, and use nuclear notation (mass number, atomic number, symbol) to represent atoms and isotopes.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O015",
+      "domain_id": "PH-KS4-D004",
+      "objective_text": "Describe the properties of alpha, beta and gamma radiation (nature, charge, mass, ionising ability, penetrating power) and the changes in atomic number and mass number that occur in alpha and beta decay.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O016",
+      "domain_id": "PH-KS4-D004",
+      "objective_text": "Define half-life as the time for half the nuclei in a radioactive sample to decay, calculate the number of half-lives elapsed from activity-time data, and evaluate the suitability of different radioisotopes for specific uses.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O017",
+      "domain_id": "PH-KS4-D004",
+      "objective_text": "Describe nuclear fission as the splitting of a large nucleus by a slow-moving neutron, explain how a chain reaction is sustained in a nuclear reactor, and describe nuclear fusion as the joining of two light nuclei with the release of energy.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O018",
+      "domain_id": "PH-KS4-D005",
+      "objective_text": "Distinguish between scalar quantities (magnitude only) and vector quantities (magnitude and direction), and give examples of each including distance/displacement, speed/velocity and force.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O019",
+      "domain_id": "PH-KS4-D005",
+      "objective_text": "Draw, interpret and calculate gradient and area for distance-time and velocity-time graphs, including identifying and calculating uniform and non-uniform acceleration.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O020",
+      "domain_id": "PH-KS4-D005",
+      "objective_text": "Apply Newton's three laws of motion to analyse the motion of objects, and use the equation F = ma to calculate the resultant force, mass or acceleration in a given situation.",
+      "non_statutory_guidance": "Required Practical 20.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O021",
+      "domain_id": "PH-KS4-D005",
+      "objective_text": "Calculate momentum using p = mv, explain the conservation of momentum in collisions and explosions, and use the impulse-momentum theorem (F\u0394t = \u0394p) to explain why airbags and crumple zones reduce injury.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O022",
+      "domain_id": "PH-KS4-D005",
+      "objective_text": "Investigate the extension of a spring or elastic band (Hooke's law), calculate the spring constant using F = ke, and distinguish between elastic and inelastic deformation.",
+      "non_statutory_guidance": "Required Practical 18.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O023",
+      "domain_id": "PH-KS4-D005",
+      "objective_text": "Calculate pressure using P = F/A, explain how pressure varies with depth in fluids using P = h\u03c1g, and explain the principles of the hydraulic system including how force is multiplied.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O024",
+      "domain_id": "PH-KS4-D006",
+      "objective_text": "Describe the properties of waves (amplitude, wavelength, frequency, period, speed) and apply the wave equation v = f\u03bb to calculate wave properties for transverse and longitudinal waves.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O025",
+      "domain_id": "PH-KS4-D006",
+      "objective_text": "Investigate the reflection and refraction of light, explaining refraction in terms of the change in wave speed at a boundary, and measure the refractive index of a glass block using Snell's law.",
+      "non_statutory_guidance": "Required Practical 17.",
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O026",
+      "domain_id": "PH-KS4-D006",
+      "objective_text": "Describe the electromagnetic spectrum in order of increasing frequency (and decreasing wavelength), from radio waves to gamma rays, and explain that all EM waves travel at the same speed in a vacuum (3 \u00d7 10\u2078 m/s).",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O027",
+      "domain_id": "PH-KS4-D006",
+      "objective_text": "Describe the uses of each region of the electromagnetic spectrum (radio: broadcasting; microwave: satellite communications, cooking; infrared: thermal imaging, remote controls; visible: photography, fibre optics; UV: security marking; X-ray: medical imaging; gamma: sterilisation, cancer treatment) and evaluate the hazards of ionising radiation.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O028",
+      "domain_id": "PH-KS4-D007",
+      "objective_text": "Describe the magnetic field patterns around a bar magnet and around a current-carrying wire, solenoid and flat coil, and distinguish between permanent magnets and induced magnets.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O029",
+      "domain_id": "PH-KS4-D007",
+      "objective_text": "Apply Fleming's left-hand rule to predict the direction of the force on a current-carrying conductor in a magnetic field (the motor effect), and calculate the force using F = BIL.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O030",
+      "domain_id": "PH-KS4-D007",
+      "objective_text": "Explain electromagnetic induction and describe how a generator produces an alternating current, and explain how the output can be increased by increasing the speed of rotation, the number of turns or the strength of the magnetic field.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O031",
+      "domain_id": "PH-KS4-D007",
+      "objective_text": "Explain how transformers work using the relationship between the turns ratio and the voltage ratio (Vs/Vp = Ns/Np), and explain why the National Grid transmits electricity at high voltage and low current to minimise energy losses.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O032",
+      "domain_id": "PH-KS4-D008",
+      "objective_text": "Describe the life cycle of stars, including the formation of a protostar from a nebula, the main sequence phase, and the different end states for low-mass stars (white dwarf, then black dwarf) and high-mass stars (supernova, neutron star or black hole).",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O033",
+      "domain_id": "PH-KS4-D008",
+      "objective_text": "Explain red-shift as the stretching of the wavelength of light from distant galaxies, interpret red-shift data as evidence that the universe is expanding, and describe Hubble's law relating the speed of recession of a galaxy to its distance.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    },
+    {
+      "objective_id": "PH-KS4-O034",
+      "domain_id": "PH-KS4-D008",
+      "objective_text": "Describe the Big Bang theory as the current model of the origin and evolution of the universe, and evaluate the evidence from red-shift and the cosmic microwave background radiation that supports this model.",
+      "non_statutory_guidance": null,
+      "examples": null,
+      "is_statutory": true
+    }
+  ],
+  "concepts": [
+    {
+      "concept_id": "PH-KS4-C001",
+      "domain_id": "PH-KS4-D001",
+      "concept_name": "Energy Stores and Transfers",
+      "description": "Energy is stored in physical systems in various ways: kinetic (moving objects), gravitational potential (objects above a reference level), elastic potential (deformed objects), chemical (fuels, food), thermal (hot objects), nuclear (unstable nuclei), electromagnetic (electric/magnetic fields). Energy is neither created nor destroyed (conservation of energy) but transferred between stores by mechanical work, electrical work, heating or radiation. Useful energy transfers are always accompanied by dissipation to the thermal store of the surroundings.",
+      "teaching_guidance": "The 'energy store and transfer' language should be used consistently and carefully. Avoid saying energy is 'used up' \u2014 instead, energy is dissipated (transferred to the thermal store of the surroundings). Use Sankey diagrams to represent energy transfers quantitatively, showing useful and wasted transfers. Apply to a range of devices: light bulb (chemical/electrical \u2192 light + thermal), car engine (chemical \u2192 kinetic + thermal). Emphasise that conservation of energy is a fundamental law, not a guideline.",
+      "key_vocabulary": "energy store, kinetic energy, gravitational potential energy, elastic potential energy, chemical energy, thermal energy, nuclear energy, electromagnetic energy, conservation of energy, dissipation, Sankey diagram",
+      "common_misconceptions": "Students say energy is 'used up' or 'destroyed' by machines. Clarify that energy is always conserved but may be transferred to less useful forms. Students also confuse power and energy: power is the rate of energy transfer; energy is the capacity to do work. Students confuse gravitational potential energy with height \u2014 Ep depends on both mass and height.",
+      "concept_type": "theory",
+      "complexity_level": 2,
+      "is_cross_cutting": true,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C002",
+      "domain_id": "PH-KS4-D001",
+      "concept_name": "Specific Heat Capacity and Latent Heat",
+      "description": "Specific heat capacity (c) is the energy required to raise the temperature of 1 kg of a material by 1\u00b0C: Q = mc\u0394T. Different materials require different amounts of energy for the same temperature change, which explains why water is used as a coolant and why land heats up faster than sea. Latent heat is the energy transferred during a change of state at constant temperature; specific latent heat (L) is the energy required per kilogram: Q = mL.",
+      "teaching_guidance": "Required Practical 14: measure the specific heat capacity of water or a metal block using a joulemeter or ammeter and voltmeter. Pupils should calculate the energy transferred electrically and compare with the measured temperature change. Heating and cooling curves (temperature vs time) show the constant temperature during changes of state and reinforce the latent heat concept. Connect to climate science: water's high specific heat capacity moderates coastal climates.",
+      "key_vocabulary": "specific heat capacity, latent heat, specific latent heat, temperature, internal energy, change of state, melting, boiling, evaporation, condensation, joulemeter",
+      "common_misconceptions": "Students confuse temperature (a measure of mean kinetic energy of particles) and internal energy (total energy of all particles). Students think heating always raises temperature \u2014 during a change of state, heat is supplied but temperature remains constant. Students also confuse specific heat capacity (energy per kg per degree) with heat capacity (energy per degree).",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C003",
+      "domain_id": "PH-KS4-D002",
+      "concept_name": "Current, Potential Difference and Resistance",
+      "description": "Electric current (I) is the rate of flow of electric charge: I = Q/t. Potential difference (V) is the work done per unit charge: V = W/Q. Resistance (R) is the ratio of potential difference to current: R = V/I (Ohm's law). For an ohmic conductor at constant temperature, resistance is constant. Resistance of a filament bulb increases with temperature; a thermistor's resistance decreases with temperature; a diode allows current in one direction only.",
+      "teaching_guidance": "Required Practicals 15 and 16: investigate series and parallel circuits, and plot I-V characteristics. Pupils need extensive practice with circuit calculations \u2014 use structured problem-solving with V = IR as the starting point. Connect resistance to the microscopic model: electrons colliding with lattice ions. Explain the thermistor in terms of more charge carriers at higher temperatures. Use the diode I-V characteristic to explain rectification of AC.",
+      "key_vocabulary": "current, potential difference, voltage, resistance, Ohm's law, ohmic conductor, I-V characteristic, series circuit, parallel circuit, thermistor, diode, LDR, ammeter, voltmeter",
+      "common_misconceptions": "Students confuse current and potential difference: current is the flow of charge; potential difference is the energy per unit charge driving the flow. Students also think current is 'used up' in components \u2014 in a series circuit, the same current flows throughout. Students draw ammeters in parallel and voltmeters in series, reversing the correct connections.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C004",
+      "domain_id": "PH-KS4-D002",
+      "concept_name": "Electrical Power and Mains Electricity",
+      "description": "Electrical power is the rate at which energy is transferred: P = IV = I\u00b2R = V\u00b2/R. Energy transferred is calculated using E = Pt. Mains electricity in the UK is supplied as alternating current at 230 V and 50 Hz. The three-pin plug contains a live wire (brown), neutral wire (blue) and earth wire (green-yellow). The fuse protects the appliance by melting if the current becomes too large; the earth wire provides safety in case of a fault.",
+      "teaching_guidance": "Calculate electricity costs in kWh using E = Pt (with P in kW and t in hours). Pupils should be able to select an appropriate fuse rating for a given appliance (rule: fuse rating should be just above the normal operating current). Explain why a double-insulated appliance does not need an earth wire. The difference between AC (alternating direction) and DC (unidirectional) should be illustrated using oscilloscope traces. Peak voltage vs RMS voltage is Higher tier content.",
+      "key_vocabulary": "electrical power, energy transfer, kilowatt-hour, alternating current, direct current, live wire, neutral wire, earth wire, fuse, circuit breaker, double insulation, frequency, peak voltage",
+      "common_misconceptions": "Students think the earth wire carries current in normal operation \u2014 the earth wire only carries current if there is a fault. Students confuse the fuse (protects the appliance/wiring, in the plug) with the earth wire (protects the user from electric shock). Students think AC means the electrons travel alternately in both directions equally \u2014 electrons oscillate back and forth but the net charge flow (power transfer) is in one direction.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C005",
+      "domain_id": "PH-KS4-D003",
+      "concept_name": "Particle Model, Density and Gas Laws",
+      "description": "The particle model describes matter as composed of tiny particles in constant motion. In solids, particles vibrate about fixed positions; in liquids, particles can flow but remain in contact; in gases, particles move rapidly and are widely separated. Density (\u03c1 = m/V) depends on particle mass and separation. Gas pressure is caused by particles colliding with the container walls. Increasing temperature increases the kinetic energy and speed of particles, increasing the rate and force of collisions.",
+      "teaching_guidance": "Required Practical 19: measure density of regular solids (using ruler and balance), irregular solids (using Eureka can) and liquids (using measuring cylinder and balance). Pupils should be able to explain qualitatively all the gas laws using the particle model: Boyle's law (p inversely proportional to V at constant T); Charles' law (V directly proportional to T at constant p). Use absolute temperature (Kelvin): T(K) = T(\u00b0C) + 273. The combined gas law pV/T = constant applies to a fixed mass of gas.",
+      "key_vocabulary": "particle model, density, pressure, kinetic energy, Kelvin, absolute temperature, Boyle's law, Charles' law, combined gas law, internal energy, random motion",
+      "common_misconceptions": "Students use Celsius instead of Kelvin in gas law calculations. Students think pressure in a gas is caused by particles pushing on each other (it is actually caused by collisions with the container walls). Students also confuse density with weight or mass \u2014 density is mass per unit volume, a property of the material independent of the amount present.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C006",
+      "domain_id": "PH-KS4-D004",
+      "concept_name": "Radioactive Decay and Nuclear Radiation",
+      "description": "Radioactive decay is a random, spontaneous process in which unstable nuclei emit radiation to become more stable. Alpha particles (helium-4 nuclei) are strongly ionising but weakly penetrating (stopped by paper). Beta particles (electrons) are moderately ionising and penetrating (stopped by a few mm of aluminium). Gamma rays (electromagnetic waves) are weakly ionising but highly penetrating (reduced by several cm of lead or several metres of concrete). Half-life is the time for half the nuclei in a sample to decay.",
+      "teaching_guidance": "Write balanced nuclear equations for alpha and beta decay, checking that both mass number and atomic number are conserved. Use decay graphs (activity vs time) to determine half-lives. Required Practical: investigate the inverse square law for gamma radiation. Discuss uses: alpha in smoke detectors (short range, contained); beta in paper thickness monitoring; gamma in sterilising medical equipment and treating cancer (radiotherapy). Evaluate risks: ionisation of DNA can cause cancer; radiation protection involves time, distance and shielding.",
+      "key_vocabulary": "radioactive decay, alpha particle, beta particle, gamma ray, half-life, activity, becquerel, nuclear equation, ionisation, penetrating power, random, spontaneous, irradiation, contamination",
+      "common_misconceptions": "Students confuse irradiation (being exposed to radiation from an external source, which stops when the source is removed) with contamination (radioactive material deposited on or in the body, which continues to irradiate). Students also think half-life means the total activity halves after two half-lives \u2014 it drops to one quarter; after three half-lives, one eighth, and so on.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C007",
+      "domain_id": "PH-KS4-D004",
+      "concept_name": "Nuclear Fission and Fusion",
+      "description": "Nuclear fission is the splitting of a heavy nucleus (such as uranium-235 or plutonium-239) when it absorbs a slow-moving neutron, releasing two or three neutrons and a large amount of energy. These neutrons can trigger further fission reactions, forming a chain reaction. In a nuclear reactor, the chain reaction is controlled using control rods that absorb neutrons. Nuclear fusion is the joining of two light nuclei (e.g., hydrogen isotopes) to form a heavier nucleus with the release of energy; fusion powers stars and is the basis for potential future fusion reactors.",
+      "teaching_guidance": "Explain mass-energy equivalence qualitatively: in fission and fusion, the products have slightly less mass than the reactants, and this mass difference is converted to energy (E = mc\u00b2, but pupils do not need to use this equation at GCSE). Compare fission and fusion as energy sources: fission is used in current nuclear power stations; fusion has the advantage of abundant fuel and no long-lived radioactive waste but requires extremely high temperatures to overcome the electrostatic repulsion between nuclei. Evaluate the arguments for and against nuclear power.",
+      "key_vocabulary": "nuclear fission, nuclear fusion, chain reaction, uranium-235, control rod, moderator, nuclear power, mass defect, mass-energy equivalence, binding energy, proton repulsion, plasma, tokamak",
+      "common_misconceptions": "Students confuse fission (splitting, used in nuclear power stations) with fusion (joining, used in stars). Students also think nuclear power stations produce radioactive waste as a gas that escapes into the atmosphere \u2014 radioactive waste is solid material that must be safely stored. Students think fusion produces radioactive waste comparable to fission \u2014 fusion produces mainly helium and has no long-lived waste.",
+      "concept_type": "knowledge",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "pathway": "separate"
+    },
+    {
+      "concept_id": "PH-KS4-C008",
+      "domain_id": "PH-KS4-D005",
+      "concept_name": "Newton's Laws of Motion",
+      "description": "Newton's first law: an object remains at rest or in uniform motion in a straight line unless acted upon by a resultant force. Newton's second law: the resultant force on an object equals its mass times its acceleration (F = ma); the acceleration is in the direction of the resultant force. Newton's third law: when object A exerts a force on object B, object B exerts an equal and opposite force on object A (action-reaction pairs).",
+      "teaching_guidance": "Required Practical 20: investigate the effect of varying force and mass on acceleration. Pupils should be able to draw free body diagrams showing all forces on an object and determine the resultant force. Emphasise that Newton's third law pairs are always the same type of force (e.g., both gravitational, both contact) acting on different objects. Terminal velocity is important: as speed increases, drag increases until drag equals driving force (resultant force = 0, constant velocity). Use velocity-time graphs to analyse forces during acceleration and terminal velocity phases.",
+      "key_vocabulary": "resultant force, Newton's first law, Newton's second law, Newton's third law, acceleration, mass, inertia, free body diagram, terminal velocity, drag, friction, reaction force",
+      "common_misconceptions": "Students often state Newton's third law pairs as forces on the same object (e.g., 'weight and normal reaction are a Newton's third law pair'). These forces are equal and opposite but are NOT a Newton's third law pair because they act on the same object. Newton's third law pairs always act on different objects. Students also think that a stationary object has no forces acting on it \u2014 it has balanced forces (zero resultant).",
+      "concept_type": "theory",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C009",
+      "domain_id": "PH-KS4-D005",
+      "concept_name": "Momentum and Impulse",
+      "description": "Momentum is the product of mass and velocity: p = mv. The total momentum of a system is conserved in any interaction where no external forces act (conservation of momentum). A force acting on an object changes its momentum: F = \u0394p/\u0394t (Newton's second law in terms of momentum). Impulse (F\u0394t) equals the change in momentum (\u0394p). Applying a force over a longer time to achieve the same change in momentum reduces the peak force (the principle behind safety features such as airbags and crumple zones).",
+      "teaching_guidance": "Calculate momentum in collisions and explosions, using conservation of momentum to find unknown velocities. Distinguish between elastic collisions (kinetic energy conserved) and inelastic collisions (kinetic energy not conserved). Use impulse-momentum calculations to explain safety devices: airbag increases the time of impact; crumple zone increases the time of impact; both reduce the peak force on the occupant for the same change in momentum.",
+      "key_vocabulary": "momentum, conservation of momentum, impulse, change in momentum, collision, explosion, elastic collision, inelastic collision, airbag, crumple zone, safety features",
+      "common_misconceptions": "Students confuse momentum (p = mv) with kinetic energy (Ek = \u00bdmv\u00b2) \u2014 both involve mass and velocity but momentum is a vector and kinetic energy is a scalar. Students think that in a collision, the faster or heavier object always 'wins' without calculating the resulting velocities. Students also apply conservation of momentum incorrectly by not accounting for the direction (sign) of velocity in one-dimensional problems.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C010",
+      "domain_id": "PH-KS4-D006",
+      "concept_name": "Wave Properties and Behaviour",
+      "description": "A wave transfers energy without transferring matter. Transverse waves (light, electromagnetic waves, water waves) have oscillations perpendicular to the direction of wave travel. Longitudinal waves (sound) have oscillations parallel to the direction of wave travel. All waves can be described by amplitude, wavelength, frequency, period and speed. The wave equation v = f\u03bb relates speed, frequency and wavelength. Waves undergo reflection (change of direction at a boundary), refraction (change of speed and direction when entering a different medium) and diffraction (spreading of waves around obstacles or through gaps).",
+      "teaching_guidance": "Required Practical 17: investigate reflection and refraction of light using ray boxes and glass blocks; measure the refractive index using n = sin(i)/sin(r). Measure the speed of sound using the echo method or using a signal generator and microphone. Use ripple tanks to demonstrate all wave behaviours qualitatively. Pupils should be able to describe why refraction occurs (change in wave speed at a boundary causes change in direction when the wave hits at an angle). Diffraction is greatest when the wavelength is comparable to the gap size.",
+      "key_vocabulary": "transverse wave, longitudinal wave, amplitude, wavelength, frequency, period, wave speed, wave equation, reflection, refraction, diffraction, refractive index, Snell's law",
+      "common_misconceptions": "Students think waves move matter \u2014 waves transfer energy; matter oscillates but does not travel with the wave. Students confuse frequency and period: period is the time for one complete oscillation; frequency is the number of oscillations per second; they are reciprocals of each other. Students also think refraction only occurs when light hits a surface at 90\u00b0 \u2014 at 90\u00b0 (normal incidence), light passes straight through without changing direction; refraction only changes direction when the wave hits at an angle.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C011",
+      "domain_id": "PH-KS4-D006",
+      "concept_name": "Electromagnetic Spectrum",
+      "description": "The electromagnetic spectrum is a continuous range of transverse waves that all travel at the same speed in a vacuum (3 \u00d7 10\u2078 m/s). From longest to shortest wavelength: radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays. Higher frequency EM waves carry more energy per photon. Ionising radiation (X-rays, gamma rays, high-energy UV) can cause ionisation of atoms, damage DNA and increase the risk of cancer.",
+      "teaching_guidance": "Teach the spectrum mnemonic: 'Rude Martians Invaded Venus Using X-ray Guns'. For each region of the spectrum, pupils must know the wavelength range (approximately), typical sources, and practical uses and hazards. Emphasise that visible light is just one small part of the EM spectrum. The relationship between photon energy and frequency (E = hf) is not required at GCSE but the qualitative relationship (higher frequency = more energetic photons = more ionising) should be understood. Connect to atomic structure (gamma rays from radioactive decay) and medical physics (X-ray imaging, radiotherapy).",
+      "key_vocabulary": "electromagnetic spectrum, radio wave, microwave, infrared, visible light, ultraviolet, X-ray, gamma ray, frequency, wavelength, speed of light, ionisation, photon, cancer risk",
+      "common_misconceptions": "Students often order the spectrum incorrectly, particularly forgetting the correct position of microwaves (between radio and infrared) and ultraviolet (between visible and X-rays). Students also think microwaves in ovens work by ionising food molecules \u2014 microwaves cause water molecules to vibrate, generating heat by friction; they do not ionise. Students confuse gamma rays (from nuclear decay) with X-rays (from electron interactions) \u2014 both are high-energy EM radiation but they have different sources.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C012",
+      "domain_id": "PH-KS4-D007",
+      "concept_name": "Motor Effect and Electromagnetic Induction",
+      "description": "A current-carrying conductor in a magnetic field experiences a force (the motor effect) if the current is not parallel to the field. The direction of the force is given by Fleming's left-hand rule. The force is proportional to the current, the length of conductor in the field, and the magnetic field strength: F = BIL. Electromagnetic induction occurs when a conductor moves through a magnetic field or when the magnetic field through a conductor changes; this induces an EMF. Faraday's law: the magnitude of the induced EMF is proportional to the rate of change of magnetic flux linkage.",
+      "teaching_guidance": "Use physical demonstrations for both effects: a wire between magnet poles with current flowing shows the motor effect; a falling magnet through a coil shows electromagnetic induction. Required Practical: investigate factors affecting the force on a current-carrying conductor. Explain the DC motor as a continuous application of the motor effect using a commutator to reverse the current direction every half turn. Explain the AC generator as a continuous application of Faraday's law. Connect both to energy transfers: electrical \u2192 kinetic (motor); kinetic \u2192 electrical (generator).",
+      "key_vocabulary": "motor effect, magnetic field, current, force, Fleming's left-hand rule, electromagnetic induction, Faraday's law, Lenz's law, EMF, magnetic flux, generator, DC motor, commutator",
+      "common_misconceptions": "Students confuse the motor effect (current in field produces force) with electromagnetic induction (movement in field produces current) \u2014 these are inverse processes. Students also apply Fleming's left-hand rule incorrectly; frequent practice with the physical hand position is necessary. Students think AC generators produce DC \u2014 they produce AC by design (the output reverses direction every half rotation).",
+      "concept_type": "process",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C013",
+      "domain_id": "PH-KS4-D007",
+      "concept_name": "Transformers and the National Grid",
+      "description": "A transformer uses electromagnetic induction to change the voltage of an alternating current. It consists of two coils (primary and secondary) wound around an iron core. The ratio of voltages equals the ratio of turns: Vs/Vp = Ns/Np. A step-up transformer increases voltage and decreases current; a step-down transformer decreases voltage and increases current. The National Grid transmits electricity at very high voltages (up to 400,000 V) to minimise energy losses in transmission cables (P_loss = I\u00b2R).",
+      "teaching_guidance": "Required Practical: investigate the relationship between turns ratio and voltage ratio using a demonstration transformer. Pupils should calculate the current in the secondary coil of an ideal transformer using the power equation (Vp\u00d7Ip = Vs\u00d7Is for an ideal transformer). Explain why energy losses in cables are proportional to I\u00b2 and therefore why high voltage (low current) transmission minimises losses. Use energy flow diagrams to trace energy from power station through National Grid to consumer.",
+      "key_vocabulary": "transformer, primary coil, secondary coil, turns ratio, voltage ratio, step-up transformer, step-down transformer, National Grid, transmission losses, power loss, ideal transformer",
+      "common_misconceptions": "Students think step-up transformers create energy by increasing voltage \u2014 energy input equals energy output in an ideal transformer; increasing voltage decreases current proportionally so that power remains constant. Students also think the National Grid transmits at high voltage to make the electricity more powerful for consumers \u2014 the reason is to reduce transmission losses (P_loss = I\u00b2R), and the voltage is stepped down again before it reaches consumers.",
+      "concept_type": "process",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "pathway": "both"
+    },
+    {
+      "concept_id": "PH-KS4-C014",
+      "domain_id": "PH-KS4-D008",
+      "concept_name": "Life Cycle of Stars",
+      "description": "Stars form from clouds of gas and dust (nebulae) that collapse under gravity to form a protostar. As matter falls inward, the temperature rises until nuclear fusion of hydrogen begins, creating a main sequence star where the outward radiation pressure balances inward gravitational force. Low-mass stars expand into red giants and eventually shed their outer layers to leave a white dwarf. High-mass stars expand into red supergiants and explode as supernovae, leaving neutron stars or black holes. Elements heavier than iron are formed during supernovae explosions.",
+      "teaching_guidance": "Use the Hertzsprung-Russell diagram (qualitatively) to show how stars evolve through different stages. Emphasise that the life cycle timescale is billions of years \u2014 the Sun is 4.6 billion years old and has another 5 billion years on the main sequence. The fusion of hydrogen to helium in main sequence stars produces the energy that makes them luminous; heavier elements (up to iron) are synthesised in the cores of high-mass stars. The phrase 'we are all made of stardust' has a literal scientific basis \u2014 elements heavier than hydrogen and helium were made in stellar interiors or supernova explosions.",
+      "key_vocabulary": "nebula, protostar, main sequence, red giant, red supergiant, white dwarf, neutron star, black hole, supernova, nuclear fusion, gravitational collapse, Hertzsprung-Russell diagram, stellar evolution",
+      "common_misconceptions": "Students think the Sun will explode as a supernova \u2014 only high-mass stars (more than about 8 solar masses) undergo supernova; the Sun will become a red giant and then a white dwarf. Students also think that black holes 'suck' everything in \u2014 they are simply very massive objects with extremely strong gravity; objects at the same distance from a black hole as they were from the original star experience the same gravitational force.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "is_cross_cutting": false,
+      "pathway": "separate"
+    },
+    {
+      "concept_id": "PH-KS4-C015",
+      "domain_id": "PH-KS4-D008",
+      "concept_name": "Red-Shift and the Big Bang",
+      "description": "Red-shift is the increase in the observed wavelength (shift towards the red end of the spectrum) of light from distant galaxies, interpreted as evidence that these galaxies are moving away from us. The further away a galaxy is, the greater its red-shift and the faster it is receding (Hubble's law). This provides evidence that the universe is expanding. Extrapolating backwards in time suggests that the universe began from a single very hot, dense point approximately 13.8 billion years ago (the Big Bang). The cosmic microwave background radiation (CMB) \u2014 a faint glow of microwave radiation throughout the universe \u2014 provides independent evidence for the Big Bang.",
+      "teaching_guidance": "Explain red-shift using the analogy of a stretching rubber band \u2014 as the universe expands, the wavelengths of light within it are stretched. Distinguish between the Doppler effect (red-shift due to relative motion between source and observer) and cosmological red-shift (expansion of space itself stretches the wavelength). The CMB is thermal radiation left over from 380,000 years after the Big Bang, when the universe had cooled enough for hydrogen atoms to form and become transparent to radiation. Discuss how the Big Bang theory replaced the steady state theory as CMB evidence accumulated.",
+      "key_vocabulary": "red-shift, Hubble's law, expanding universe, Big Bang, cosmic microwave background, CMB, cosmology, recession velocity, wavelength shift, Doppler effect, steady state theory",
+      "common_misconceptions": "Students think the Big Bang was an explosion of matter into existing space \u2014 the Big Bang was the beginning of space and time itself; there was no 'before' or 'outside'. Students also think the CMB comes from one direction (the location of the Big Bang) \u2014 the CMB comes equally from all directions because the Big Bang happened everywhere simultaneously. Students confuse red-shift (longer wavelength) with the colour red \u2014 the light is shifted towards longer wavelengths but may not necessarily be red.",
+      "concept_type": "theory",
+      "complexity_level": 4,
+      "is_cross_cutting": false,
+      "pathway": "separate"
+    }
+  ],
+  "prerequisite_relationships": [
+    {
+      "prerequisite_concept": "PH-KS4-C001",
+      "dependent_concept": "PH-KS4-C002",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Understanding energy stores and the concept of internal energy is prerequisite to understanding specific heat capacity, which quantifies how much energy is needed to raise the temperature of an object (i.e., increase its internal energy)."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C001",
+      "dependent_concept": "PH-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Electrical power and energy transfer build directly on the energy stores and transfers framework; pupils need to understand energy as a quantity that is transferred before they can calculate the rate of electrical energy transfer (power)."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C003",
+      "dependent_concept": "PH-KS4-C004",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Calculating electrical power (P = IV) requires knowing the definitions and relationships between current and potential difference; Ohm's law and the circuit concepts of domain C003 are directly prerequisite."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C002",
+      "dependent_concept": "PH-KS4-C005",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "The particle model for gases uses the concept of internal energy (kinetic energy of particles) that is first developed in the Energy domain; specific heat capacity and latent heat introduce the quantitative treatment of energy transfer by heating that underpins gas law understanding."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C005",
+      "dependent_concept": "PH-KS4-C006",
+      "confidence": "inferred",
+      "relationship_type": "conceptual",
+      "strength": 0.6,
+      "rationale": "Understanding the nuclear model of the atom (from the particle model domain) at a conceptual level supports understanding of radioactive nuclei and decay; the distinction between atomic structure (shells) and nuclear structure (protons, neutrons) should be established."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C006",
+      "dependent_concept": "PH-KS4-C007",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "Nuclear fission and fusion build directly on knowledge of radioactive decay and the nuclear model; pupils must understand the structure of the nucleus and nuclear notation before studying fission and fusion reactions."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C008",
+      "dependent_concept": "PH-KS4-C009",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.8,
+      "rationale": "Newton's second law in its momentum form (F = \u0394p/\u0394t) is the bridge between Newton's laws and momentum; pupils must understand Newton's second law (F = ma) before they can understand impulse as a restatement of the same law in terms of momentum change."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C001",
+      "dependent_concept": "PH-KS4-C008",
+      "confidence": "inferred",
+      "relationship_type": "conceptual",
+      "strength": 0.5,
+      "rationale": "The concept of kinetic energy (from the Energy domain) is used in Newton's laws of motion to explain the relationship between force, acceleration and change in kinetic energy; work-energy theorem connects both domains."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C010",
+      "dependent_concept": "PH-KS4-C011",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "The electromagnetic spectrum is an application of the general wave properties established in C010; pupils need to know about wavelength, frequency and wave speed before they can understand how these properties vary across the EM spectrum."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C003",
+      "dependent_concept": "PH-KS4-C012",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.8,
+      "rationale": "The motor effect and electromagnetic induction both require understanding of electric current as a flow of charge; the force on a current-carrying conductor (F = BIL) uses current as a variable that must already be understood quantitatively."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C012",
+      "dependent_concept": "PH-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "instructional",
+      "strength": 0.9,
+      "rationale": "Transformers work by electromagnetic induction; pupils must understand Faraday's law and how changing magnetic flux induces an EMF before they can understand why transformers only work with AC and how they transfer energy between coils."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C004",
+      "dependent_concept": "PH-KS4-C013",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Understanding electrical power and energy transfer (P = I\u00b2R for transmission losses, P = IV for transformer power conservation) is prerequisite to explaining why the National Grid transmits at high voltage and calculating transformer parameters."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C007",
+      "dependent_concept": "PH-KS4-C014",
+      "confidence": "inferred",
+      "relationship_type": "conceptual",
+      "strength": 0.7,
+      "rationale": "Understanding nuclear fusion as the process that releases energy in stars (connects to stellar life cycle) requires prior knowledge of fusion as a physical process introduced in the atomic structure domain."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C011",
+      "dependent_concept": "PH-KS4-C015",
+      "confidence": "explicit",
+      "relationship_type": "conceptual",
+      "strength": 0.8,
+      "rationale": "Red-shift is the stretching of electromagnetic wave wavelengths; understanding the EM spectrum and the wave properties of light is prerequisite to understanding red-shift as a change in observed wavelength of light from distant galaxies."
+    },
+    {
+      "prerequisite_concept": "PH-KS4-C014",
+      "dependent_concept": "PH-KS4-C015",
+      "confidence": "inferred",
+      "relationship_type": "instructional",
+      "strength": 0.6,
+      "rationale": "The Big Bang and expanding universe provide the cosmological context for stellar formation from nebulae; understanding the life cycle of stars (and hence the formation of elements) is deepened by understanding the larger-scale story of the universe's evolution."
+    }
+  ]
+}
