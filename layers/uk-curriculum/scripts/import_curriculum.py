@@ -141,6 +141,13 @@ _CONCEPT_TYPE_MAP = {
     "concept":        "knowledge",   # LLM wrote the word "concept" as the type
     "language":       "knowledge",   # language concepts are declarative knowledge
     "representation": "knowledge",   # representational knowledge
+    # Science-specific types
+    "theory":         "knowledge",   # scientific theories are declarative knowledge
+    # Maths-specific types (Bloom's knowledge dimension)
+    "procedural":     "process",     # procedural knowledge = process type
+    "conceptual":     "knowledge",   # conceptual understanding = knowledge type
+    # History/Geography discipline types
+    "skills":         "skill",       # plural form — normalise to singular
 }
 VALID_CONCEPT_TYPES = {"knowledge", "skill", "process", "attitude", "content"}
 

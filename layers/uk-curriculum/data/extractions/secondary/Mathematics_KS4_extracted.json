@@ -2,7 +2,10 @@
   "metadata": {
     "subject": "Mathematics",
     "key_stage": "KS4",
-    "years_covered": [10, 11],
+    "years_covered": [
+      10,
+      11
+    ],
     "document_reference": "DFE-00330-2014",
     "extraction_date": "2026-02-21",
     "structure_rating": 9,
@@ -493,7 +496,7 @@
       "teaching_guidance": "Ensure pupils can connect fraction, decimal and percentage representations fluidly. Use number lines to situate negative numbers before procedural rules. Introduce BIDMAS through carefully constructed counterexamples — calculators can mislead pupils on order of operations. Require pupils to check answers by estimation before calculating exactly.",
       "key_vocabulary": "integer, rational, irrational, numerator, denominator, mixed number, reciprocal, BIDMAS, negative, absolute value, terminating, recurring",
       "common_misconceptions": "Pupils frequently treat -3² as (-3)² = 9 rather than -(3²) = -9, confusing negation with squaring. Many pupils add fractions by adding numerators and denominators separately (1/3 + 1/4 = 2/7), applying whole-number intuition incorrectly. A third common error is misapplying the priority of operations when there are nested brackets or multiple operations at the same level.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -506,7 +509,7 @@
       "teaching_guidance": "Use factor trees and division ladders as dual representations so pupils can choose their preferred method. Connect HCF to simplifying fractions and LCM to finding common denominators — this shows pupils the practical value rather than treating prime factorisation as an isolated skill. Introduce the Fundamental Theorem of Arithmetic (unique factorisation) informally.",
       "key_vocabulary": "prime, composite, factor, multiple, product, index notation, prime factorisation, highest common factor, lowest common multiple, Fundamental Theorem of Arithmetic",
       "common_misconceptions": "Pupils often include 1 as a prime number, confusing the definition. Many stop the factor tree too early, leaving non-prime factors. Some pupils confuse HCF and LCM — a helpful heuristic is that HCF is the highest that goes into both, while LCM is the lowest that both go into.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -519,7 +522,7 @@
       "teaching_guidance": "Build the laws of indices from the definition of repeated multiplication before presenting them as abstract rules. Use standard form to connect powers of 10 to real-world contexts (distances in astronomy, sizes in biology). Introduce surds by showing that √2 cannot be expressed as a fraction — the irrationality proof by contradiction is accessible at Higher level and builds mathematical maturity.",
       "key_vocabulary": "index, power, base, root, surd, rational, irrational, standard form, laws of indices, reciprocal, fractional index, rationalise, conjugate",
       "common_misconceptions": "Pupils frequently write √(a+b) = √a + √b (applying linearity to square roots, which is invalid). Many treat a⁰ as 0 rather than 1, or a^(-n) as negative rather than 1/aⁿ. When rationalising denominators, pupils sometimes multiply only the denominator, forgetting to multiply the numerator.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "higher"
@@ -532,7 +535,7 @@
       "teaching_guidance": "Frame estimation as a mathematical habit and metacognitive check, not just a paper exercise. Require pupils to estimate before every calculator calculation and compare results. Use inequality notation for error intervals systematically — this connects back to inequalities in algebra. Real-world contexts (engineering tolerances, recipe measurements) make error intervals meaningful.",
       "key_vocabulary": "significant figures, decimal places, truncation, rounding, error interval, upper bound, lower bound, approximation, estimate, order of magnitude",
       "common_misconceptions": "Pupils often round 3.45 to 1 decimal place as 3.4 rather than 3.5, failing to round up when the next digit is exactly 5. Many confuse significant figures with decimal places (e.g. think 0.004 rounded to 2 significant figures is 0.00 rather than 0.0040). Error interval notation (x ± 0.5 vs the correct inequality form) is frequently written imprecisely.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": true,
       "tier": "both"
@@ -545,7 +548,7 @@
       "teaching_guidance": "Use area models (the grid method) for expanding double brackets before the FOIL algorithm — this gives a visual foundation. Teach factorising as the reverse of expanding and always ask pupils to check by re-expanding. Difference of two squares is a special case worth isolating. Higher pupils should work with algebraic fractions alongside numeric fractions to emphasise structural similarity.",
       "key_vocabulary": "expression, expand, factorise, bracket, quadratic, coefficient, difference of two squares, completing the square, algebraic fraction, identity, common factor, highest common factor",
       "common_misconceptions": "When expanding (a+b)², many pupils write a²+b² rather than a²+2ab+b² — the middle term is persistently dropped. Some pupils sign-strip when factorising, forgetting that factorising out -1 changes all signs inside. Cancelling in algebraic fractions is frequently misapplied (pupils cancel terms rather than factors).",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -558,7 +561,7 @@
       "teaching_guidance": "Develop the balance model early (doing the same operation to both sides maintains equality) using physical balance imagery. Progress from one-step to multi-step equations systematically. Inequalities require careful attention to the direction reversal when multiplying or dividing by a negative — use examples where pupils test both directions to discover this rule.",
       "key_vocabulary": "equation, inequality, variable, solution, balance, solve, unknown, linear, rearrange, substitute, verify, solution set, number line, strict inequality",
       "common_misconceptions": "Pupils frequently forget to reverse the inequality sign when multiplying or dividing by a negative number. When equations have unknowns on both sides, many pupils only subtract the smaller unknown (e.g. 5x = 3x + 8 becomes 2x = 8, correct, but 3x = 5x + 8 often becomes 2x = 8 rather than -2x = 8). Brackets are often expanded with the wrong sign applied to terms beyond the first.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -571,7 +574,7 @@
       "teaching_guidance": "Teach factorisation first as an entry point, but explicitly introduce the quadratic formula as the general-purpose method that always works. Completing the square should be linked to the vertex form of a parabola — connecting algebra to graph interpretation. The discriminant (b²-4ac) is a powerful discriminator: use it to predict the number of solutions before solving.",
       "key_vocabulary": "quadratic, discriminant, roots, solutions, factorising, completing the square, quadratic formula, vertex, parabola, coefficient, zero, real roots",
       "common_misconceptions": "Many pupils apply factorisation only when the leading coefficient is 1. When completing the square, pupils frequently forget to adjust the constant term after moving the half-coefficient inside. In the quadratic formula, pupils often substitute incorrectly when b or c are negative, missing the double negation.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 4,
       "is_cross_cutting": false,
       "tier": "higher"
@@ -584,7 +587,7 @@
       "teaching_guidance": "Begin with graphical interpretation so pupils understand that the solution is the intersection point — this builds conceptual understanding before procedural methods. Teach elimination and substitution as complementary methods: elimination is efficient for symmetric coefficient pairs, substitution is generalisable. For linear-quadratic systems, always check both solutions by substitution into the original equations.",
       "key_vocabulary": "simultaneous, system of equations, elimination, substitution, intersection, solution, consistent, inconsistent, linear, quadratic, parallel",
       "common_misconceptions": "During elimination, pupils often make sign errors when subtracting equations, particularly when one equation has a negative term. Many pupils find only one solution of a linear-quadratic system, not realising two solutions are possible. Graphical solutions are imprecise — pupils must learn to interpret approximate graphical solutions vs exact algebraic solutions.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -597,7 +600,7 @@
       "teaching_guidance": "Use tabular representations consistently (position, term, difference, second difference) to make the pattern visible before formulating rules. Arithmetic sequences have constant first differences (leading to linear nth term), quadratic sequences have constant second differences (leading to quadratic nth term). Fibonacci-type sequences model non-algebraic recursive thinking and are worth exploring computationally.",
       "key_vocabulary": "sequence, term, position, nth term, arithmetic, geometric, common difference, common ratio, Fibonacci, linear, quadratic, recursive, explicit formula",
       "common_misconceptions": "Many pupils confuse the term-to-term rule with the position-to-term (nth term) formula, substituting n=1,2,3 to generate terms rather than using the nth term algebraically. When identifying the nth term of an arithmetic sequence, pupils often write the common difference as the coefficient of n but forget to adjust the constant term.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -610,7 +613,7 @@
       "teaching_guidance": "Build gradient from its physical interpretation (steepness, rate of change) before introducing the formula. The connection between gradient and rate of change should be explicit and persistent — revisit in ratio, distance-time graphs, and statistics scatter graphs. Perpendicular gradients (product = -1) require careful derivation using rotation of slope triangles.",
       "key_vocabulary": "gradient, intercept, linear, y = mx + c, parallel, perpendicular, rate of change, slope, x-intercept, y-intercept, equation of a line, collinear",
       "common_misconceptions": "Pupils frequently confuse x-intercept and y-intercept, or read gradient as rise alone rather than rise over run. Many pupils state parallel lines have 'the same gradient' but cannot identify perpendicular gradients. When finding the equation of a line through two points, sign errors in computing (y₂-y₁)/(x₂-x₁) are common.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": true,
       "tier": "both"
@@ -623,7 +626,7 @@
       "teaching_guidance": "Use graphing technology (Desmos or GeoGebra) to build intuition for graph shapes before working analytically. Focus on key features: roots (where f(x)=0), y-intercept (x=0), turning points, and asymptotes. Transformations of graphs are best understood experientially — pupils should discover how f(x+a) and f(x)+a shift the graph in opposite/same directions respectively before memorising the rules.",
       "key_vocabulary": "quadratic, cubic, reciprocal, exponential, trigonometric, turning point, maximum, minimum, root, asymptote, sketch, intercept, symmetry, period, amplitude",
       "common_misconceptions": "Pupils commonly confuse y = kˣ (exponential) with y = xᵏ (power), not recognising the qualitative difference in growth. The direction of horizontal translations is counterintuitive: f(x+2) shifts left, not right. Many pupils draw reciprocal graphs touching the axes rather than having asymptotes.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
       "tier": "higher"
@@ -636,7 +639,7 @@
       "teaching_guidance": "Introduce function notation as a generalisation of the input-output machine model used at KS3. Inverse functions undo the original function — link to solving equations by rearranging. Transformations should be taught with reference to any general function y=f(x), then applied to specific cases. The domain and range of functions should be made explicit, particularly for inverse functions.",
       "key_vocabulary": "function, domain, range, mapping, composite function, inverse function, notation f(x), translation, stretch, reflection, transformation, one-to-one",
       "common_misconceptions": "Pupils frequently confuse f(2x) with 2f(x) — horizontal stretch vs vertical stretch. Many pupils believe every function has an inverse, not recognising that non-one-to-one functions do not have inverses over their full domain. The notation f⁻¹(x) is confused with [f(x)]⁻¹ = 1/f(x).",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
       "tier": "higher"
@@ -649,7 +652,7 @@
       "teaching_guidance": "Distinguish clearly between part:part and part:whole representations — many problems require conversion between the two. Use unitary ratio as a bridge between ratio and rate reasoning. Scale drawings provide a concrete application with built-in accuracy checking. Ratio notation (a:b) should be fluently connected to fraction (a/(a+b)) and percentage representations.",
       "key_vocabulary": "ratio, proportion, part, whole, simplify, equivalent ratio, scale factor, unitary method, unit ratio, direct proportion, map scale, scale drawing",
       "common_misconceptions": "Pupils often divide in ratio a:b by computing a/(a+b) × total for the first part correctly, but then subtract to find the second part instead of computing b/(a+b) × total directly. Many pupils treat 2:3 as meaning ⅔ rather than 2 parts to 3 parts (so 2 out of 5 total). Ratio is frequently confused with fractions in questions involving 'the ratio of A to B is 3:5' meaning A/B = 3/5 (fraction of A to B), not A/total = 3/5.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -662,7 +665,7 @@
       "teaching_guidance": "Use multiplier method as the standard approach for efficiency — 15% increase means ×1.15. Reverse percentages require dividing by the multiplier, not subtracting the percentage from 100 first. Compound interest is the most important application: explicitly model the difference between simple and compound interest with tables before revealing the formula A = P(1+r)ⁿ.",
       "key_vocabulary": "percentage, increase, decrease, multiplier, reverse percentage, simple interest, compound interest, principal, rate, depreciation, appreciation, exponential growth, decay",
       "common_misconceptions": "For reverse percentages, pupils frequently calculate the wrong value by subtracting x% from the given value rather than dividing by (1 + x/100). Many confuse compound interest (interest on interest) with simple interest (interest on principal only). Percentage change direction (increase vs decrease) and application to the original value are persistently confused.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -675,7 +678,7 @@
       "teaching_guidance": "Always begin with the unitary method (find the value for one unit, then multiply) before formalising as an equation. Direct proportion produces a straight-line graph through the origin; inverse proportion produces a hyperbola — visual representations reinforce conceptual understanding. For Higher, pupils should be able to identify which type of proportion applies from a given table of values by testing ratios and products.",
       "key_vocabulary": "direct proportion, inverse proportion, constant of proportionality, unitary method, k, graph, hyperbola, proportional to, varies directly, varies inversely, power",
       "common_misconceptions": "Pupils frequently confuse direct and inverse proportion — both involve one quantity changing as another changes, but in opposite directions. Many pupils identify y = kx as direct proportion but do not recognise y = kx² as also a proportional relationship (just not linear). The phrase 'y is inversely proportional to x' is sometimes misread as 'y = 1/x' rather than 'y = k/x'.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -688,7 +691,7 @@
       "teaching_guidance": "Use the formula triangle approach (Speed = Distance/Time, Density = Mass/Volume) as scaffolding initially, but develop algebraic rearrangement fluency so pupils can work from any form. Connect gradient of a distance-time graph explicitly to speed — this is a key transferable concept for science. Ensure pupils can perform unit conversions within compound measures (e.g. km/h to m/s).",
       "key_vocabulary": "speed, distance, time, density, mass, volume, pressure, force, area, gradient, rate of change, compound unit, m/s, km/h, g/cm³",
       "common_misconceptions": "Pupils commonly invert the formula — computing time/distance for speed rather than distance/time. Unit conversions for compound measures are particularly error-prone (e.g. converting m/s to km/h requires multiplying by 3.6 not by 1000/60). The distinction between density as mass/volume versus volume/mass is regularly confused.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": true,
       "tier": "both"
@@ -701,7 +704,7 @@
       "teaching_guidance": "Always derive formulae from first principles before applying them — the area of a parallelogram as base × height is more memorable when shown as a rearranged rectangle. Composite shapes require pupils to decompose and recombine — encourage drawing the decomposition explicitly on the diagram. Arc length and sector area should always be linked to the fraction of the full circle (angle/360).",
       "key_vocabulary": "perimeter, area, base, height, radius, diameter, circumference, arc, sector, segment, composite, trapezium, parallelogram, polygon, exact value, π",
       "common_misconceptions": "Area and perimeter are persistently confused — pupils add sides to find area or multiply dimensions to find perimeter. For circles, pupils commonly use diameter where radius is required (or vice versa) — demanding one representation consistently helps. Sector area is frequently computed as (angle/360) × 2πr (arc formula) rather than (angle/360) × πr².",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -714,7 +717,7 @@
       "teaching_guidance": "Use physical models and nets to build 3D intuition before working with formulae. Volume of a prism = cross-sectional area × length is a generalisable principle worth emphasising. Pupils should be provided with the formulae for cone and sphere volumes at GCSE but need practice applying them. Frustum problems (cones with tops removed) are a useful extension and require composite volume reasoning.",
       "key_vocabulary": "prism, cylinder, cone, sphere, pyramid, frustum, cross-section, net, surface area, volume, radius, slant height, hemisphere, composite solid",
       "common_misconceptions": "Many pupils confuse surface area and volume, particularly for cylinders (confusing 2πrh + 2πr² with πr²h). The curved surface area of a cone (πrl) is commonly written as πr² — pupils substitute r for the slant height l. For composite solids, pupils sometimes add complete surface areas of component shapes rather than subtracting the hidden faces.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -727,7 +730,7 @@
       "teaching_guidance": "Begin with a visual proof (area of squares on sides) before the formula. Consistently require pupils to identify the hypotenuse before applying the theorem. The 3D application (finding diagonal of a box) requires constructing a hidden right-angled triangle — explicitly model the construction step with a diagram. Pythagorean triples (3,4,5; 5,12,13; 8,15,17) are worth memorising for efficiency.",
       "key_vocabulary": "hypotenuse, right angle, right-angled triangle, Pythagorean triple, square, square root, diagonal, 3D, theorem, converse, proof",
       "common_misconceptions": "Pupils frequently add all three sides squared rather than using a² + b² = c². In isosceles right-angled triangles, pupils sometimes apply the theorem without identifying which side is the hypotenuse. In 3D contexts, many pupils try to use the formula directly without constructing the intermediate right-angled triangle.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -740,7 +743,7 @@
       "teaching_guidance": "Establish SOHCAHTOA as a mnemonic but always require pupils to label the sides (opposite, adjacent, hypotenuse) relative to the angle before applying the ratio. Inverse trigonometric functions (sin⁻¹, cos⁻¹, tan⁻¹) should be introduced as 'finding the angle' from the ratio. Exact trigonometric values (sin30°=½, cos45°=√2/2, tan60°=√3) connect to surds and geometry of equilateral and isosceles right-angled triangles.",
       "key_vocabulary": "sine, cosine, tangent, opposite, adjacent, hypotenuse, SOHCAHTOA, angle of elevation, angle of depression, inverse trigonometric function, exact value, bearing",
       "common_misconceptions": "Pupils consistently mis-label opposite and adjacent when the angle changes position in the triangle. Many pupils use sin when they need cos and vice versa, not re-labelling sides for each new angle. Applying SOHCAHTOA to non-right-angled triangles is a significant error — pupils must check for the right angle before applying.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -753,7 +756,7 @@
       "teaching_guidance": "The sine rule applies when a pair of angle-opposite side is known; the cosine rule when two sides and an included angle, or all three sides, are known. The ambiguous case of the sine rule (two possible triangles) requires careful attention and graphical illustration. Area = ½ab sinC is a powerful result — derive it from the standard ½ × base × height formula with height = b sinC.",
       "key_vocabulary": "sine rule, cosine rule, non-right-angled triangle, included angle, ambiguous case, area formula, bearing, 3D trigonometry, oblique triangle",
       "common_misconceptions": "Pupils apply the sine rule when the cosine rule is required (e.g. given two sides and an included angle). The ambiguous case is almost always missed — pupils find only the acute angle solution. When using the cosine rule to find an angle, pupils make algebraic errors in rearranging a² = b² + c² − 2bc cosA for cosA.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 4,
       "is_cross_cutting": false,
       "tier": "higher"
@@ -766,7 +769,7 @@
       "teaching_guidance": "Teach circle theorems in a logical progression: angle at centre = twice angle at circumference leads to angles in same segment; angles in a semicircle = 90°. Tangent properties (tangent perpendicular to radius; tangents from an external point are equal) are the foundation for the alternate segment theorem. Always require pupils to name the theorem used in their proof and to give numerical justification.",
       "key_vocabulary": "chord, arc, tangent, radius, diameter, circumference, cyclic quadrilateral, alternate segment theorem, angle at centre, angle at circumference, subtend, semicircle, perpendicular",
       "common_misconceptions": "Pupils confuse the angle at centre with angle at circumference theorem, sometimes halving when they should double and vice versa. The alternate segment theorem is the most conceptually difficult — pupils often cannot identify which angle is the 'alternate' one. Cyclic quadrilateral opposite angles theorem is applied to non-cyclic quadrilaterals.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
       "tier": "higher"
@@ -779,7 +782,7 @@
       "teaching_guidance": "Use formal two-column or narrative proof structure for congruence proofs — this is preparation for the logical rigour expected in geometry. Similarity ratios require careful tracking of which ratio applies to which quantity: k for lengths, k² for areas, k³ for volumes. Real-world applications (scale models, maps) make the ratios memorable.",
       "key_vocabulary": "congruent, similar, scale factor, congruence criteria, SSS, SAS, ASA, RHS, corresponding sides, corresponding angles, ratio, proportion, proof",
       "common_misconceptions": "Pupils apply similarity ratios incorrectly between areas and volumes — cubing the length ratio for areas or squaring it for volumes rather than applying the correct power. Some pupils use four or five letters in a congruence statement rather than exactly the corresponding three, misidentifying correspondence. The condition RHS is sometimes misapplied when two sides and a non-right angle are known (this is the ambiguous SSA, not RHS).",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -792,7 +795,7 @@
       "teaching_guidance": "Ensure pupils can perform all four transformations on coordinates and describe them fully — incomplete descriptions (rotation without centre and direction, enlargement without centre) are a common exam error. Negative scale factors (enlargement through the centre to the other side) require careful explanation with examples. Combining transformations is a Higher extension that rewards spatial thinking.",
       "key_vocabulary": "rotation, reflection, translation, enlargement, scale factor, centre of rotation, line of symmetry, vector, invariant, congruent, similar, transformation, inverse transformation",
       "common_misconceptions": "Pupils describe rotations without specifying the centre of rotation, or give it as a letter rather than coordinates. Reflections in non-standard lines (y = x, y = -x, y = 2) are more error-prone than horizontal/vertical mirror lines. Negative scale factor enlargements are frequently confused with rotations.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -805,7 +808,7 @@
       "teaching_guidance": "Column vector notation should be introduced alongside diagrammatic arrows, with both representations used throughout. Establish the key idea that equal vectors mean parallel and equal magnitude — this is the basis for proving shapes from coordinates. For Higher geometric proof: if vector AB = kAC, the points A, B, C are collinear; if midpoint vectors are shown to be equal, a parallelogram is proved.",
       "key_vocabulary": "vector, scalar, column vector, magnitude, direction, resultant, parallel, collinear, position vector, displacement, midpoint, proof, parallelogram",
       "common_misconceptions": "Pupils confuse vectors (direction and magnitude) with scalars (magnitude only), particularly when comparing speed and velocity. Column vector addition is computed as matrix multiplication by some pupils. The path of a route determines vector sign: AB is the negative of BA — pupils frequently add rather than subtract.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
       "tier": "higher"
@@ -818,7 +821,7 @@
       "teaching_guidance": "Connect probability language (impossible, unlikely, even, likely, certain) to numerical values early. Use relative frequency experiments (coin flips, dice rolls) — real data is more convincing than abstraction. The Law of Large Numbers can be modelled by plotting cumulative relative frequency against number of trials: pupils should see the convergence towards theoretical probability graphically.",
       "key_vocabulary": "probability, theoretical probability, experimental probability, relative frequency, event, outcome, sample space, equally likely, random, trial, frequency, complementary",
       "common_misconceptions": "The gambler's fallacy (that past outcomes affect future independent events) is deeply held by many pupils. Some pupils believe relative frequency equals theoretical probability after a small number of trials. Probability of an event and its complement not summing to 1 is a calculation error arising from forgetting the complement rule.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -831,7 +834,7 @@
       "teaching_guidance": "Establish the multiplication rule for independent events (P(A and B) = P(A) × P(B)) using tree diagrams where the branches multiply. Ensure pupils can draw complete sample space diagrams systematically. For dependent events (without replacement), the second branch probabilities change — this is the crucial distinction from independent events.",
       "key_vocabulary": "tree diagram, sample space, combined events, independent events, dependent events, with replacement, without replacement, product rule, listing, systematic enumeration, mutually exclusive",
       "common_misconceptions": "Pupils frequently add probabilities of combined events instead of multiplying. When drawing tree diagrams for events without replacement, the second set of branches often retains the original probabilities (failing to reduce the denominator by 1). The product rule for counting (total outcomes = n₁ × n₂ ×...) is confused with adding the number of each type of outcome.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -844,7 +847,7 @@
       "teaching_guidance": "Introduce set notation (∪, ∩, A') alongside Venn diagram regions to connect symbolic and visual representations. The addition law corrects for double-counting the intersection — use concrete examples (pupils doing sport and music). Conditional probability from Venn diagrams requires careful identification of the restricted sample space.",
       "key_vocabulary": "Venn diagram, union, intersection, complement, set notation, universal set, element, subset, mutually exclusive, conditional probability, addition law",
       "common_misconceptions": "Pupils confuse P(A∪B) with P(A) + P(B), forgetting to subtract P(A∩B) for non-mutually exclusive events. The notation A' (complement) is sometimes treated as 'not A and B' rather than everything outside A. When reading Venn diagrams, pupils often read region frequencies as probabilities without dividing by the total.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "higher"
@@ -857,7 +860,7 @@
       "teaching_guidance": "Begin with two-way tables before formal notation — pupils find conditional probability accessible when they can physically restrict to the given row or column. Progress to tree diagrams where the given event is identified. Formal notation P(B|A) = P(A∩B)/P(A) should emerge from the tree diagram multiplication rather than being imposed as a formula.",
       "key_vocabulary": "conditional probability, given that, restricted sample space, two-way table, tree diagram, P(B|A), dependent events, Bayes, posterior probability",
       "common_misconceptions": "Pupils frequently compute P(B|A) as P(A|B), reversing the conditioning. Some pupils multiply all branches of a tree diagram without recognising that the given event restricts which branches are relevant. In two-way tables, pupils use total population rather than the given row or column total as the denominator.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
       "tier": "higher"
@@ -870,7 +873,7 @@
       "teaching_guidance": "Use real-world contexts (election polling, quality control, medical trials) to motivate proper sampling. The distinction between population and sample should be made explicit from the beginning. Stratified sampling requires proportional allocation — pupils should calculate sample sizes from each stratum using the population ratio. Questionnaire design flaws (leading questions, ambiguous response categories) are worth analysing critically.",
       "key_vocabulary": "population, sample, random sample, systematic sampling, stratified sampling, bias, questionnaire, census, strata, representative sample, hypothesis, data collection",
       "common_misconceptions": "Pupils confuse stratified and systematic sampling — stratified is proportional across groups, systematic is every nth member. Sample bias is difficult to identify without seeing the sampling process; pupils tend to assess bias only from the data. Many pupils believe a larger sample automatically eliminates bias, not recognising that a biased method amplifies with scale.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -883,7 +886,7 @@
       "teaching_guidance": "Frequency density = frequency / class width is the key concept for histograms with unequal class widths — pupils must understand that it is the area, not the height, of each bar that represents frequency. Cumulative frequency graphs should always be plotted at the upper class boundary. Box plots represent the five-number summary (min, Q1, median, Q3, max) and allow distribution comparison visually.",
       "key_vocabulary": "histogram, frequency density, class width, cumulative frequency, box plot, quartile, median, range, interquartile range, pie chart, bar chart, frequency polygon, upper class boundary",
       "common_misconceptions": "Pupils draw histograms with equal-width bars and label the y-axis 'frequency' even when class widths are unequal — frequency density is not intuitive. Cumulative frequency is plotted at midpoints rather than upper class boundaries. Box plots are confused with bar charts; the box width has no meaning, only the positions of the lines matter.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
       "tier": "both"
@@ -896,7 +899,7 @@
       "teaching_guidance": "Mean from grouped data requires finding midpoints and computing Σfm/Σf — the mean is an estimate because we do not know exact values within classes. Interquartile range (Q3 − Q1) measures spread while being resistant to outliers, unlike range — this statistical property is worth emphasising. Pupils should understand when each average is appropriate: mode for categorical data, median for skewed distributions, mean for symmetric data.",
       "key_vocabulary": "mean, median, mode, range, interquartile range, quartile, grouped data, midpoint, frequency table, skew, outlier, average, measure of central tendency, spread",
       "common_misconceptions": "The mean from grouped data is always estimated — pupils often state it as an exact value. Median from a frequency table requires finding the middle value by cumulative frequency, not by halving the total frequency and reading off. Interquartile range is sometimes computed as Q2 − Q1 (not Q3 − Q1) by pupils who confuse quartile numbering.",
-      "concept_type": "procedural",
+      "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
       "tier": "both"
@@ -909,7 +912,7 @@
       "teaching_guidance": "Require pupils to describe correlation in context, not just label it positive/negative — 'as height increases, weight tends to increase' is more statistically meaningful than 'positive correlation'. Lines of best fit should pass through the mean point (x̄, ȳ) and pupils should use this property to check their line. The causation-correlation distinction is critical for statistical literacy and should be reinforced with counter-intuitive examples.",
       "key_vocabulary": "scatter graph, bivariate, correlation, positive correlation, negative correlation, no correlation, line of best fit, outlier, interpolation, extrapolation, causation, association",
       "common_misconceptions": "Pupils believe strong correlation implies causation — the most important misconception in statistics. Lines of best fit are frequently drawn from (0,0) or through the most extreme points rather than balancing the data. Extrapolation beyond the data range is treated as equally reliable as interpolation within it.",
-      "concept_type": "conceptual",
+      "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": true,
       "tier": "both"

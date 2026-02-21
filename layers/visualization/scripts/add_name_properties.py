@@ -42,9 +42,12 @@ def add_name_properties(driver):
         ("ComputationalThinking", "skill_name"),
 
         # Assessment
-        ("ContentDomainCode", "test_domain_code"),
+        ("ContentDomainCode", "substrand_name"),
         ("TestPaper", "paper_code"),
         ("TestFramework", "framework_id"),
+
+        # Structure
+        ("SourceDocument", "title"),
 
         # Already have 'name': Subject, Programme, KeyStage
     ]
