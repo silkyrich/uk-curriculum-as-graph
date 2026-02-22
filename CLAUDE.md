@@ -56,7 +56,16 @@ Each **layer** is self-contained with its own:
    - Cross-layer: InteractionType -[:SUPPORTS_LEARNING_OF]-> Subject
    - Script: `import_learner_profiles.py`
 
-7. **`layers/oak-content/`** - Oak National Academy (future)
+7. **Concept Grouping** (derived layer, lives within `layers/uk-curriculum/`)
+   - Depends on UK curriculum (enrichment signals on Concept nodes + generated ConceptCluster nodes)
+   - Enrichment: `teaching_weight` (1-6), `co_teach_hints`, `is_keystone`, `prerequisite_fan_out` on Concept nodes
+   - `CO_TEACHES` relationships between co-teachable concepts (extracted + inferred inverse pairs)
+   - ~300-500 `ConceptCluster` nodes: sits between Domain and Concept, following the CC Math Cluster pattern
+   - Cluster types: introduction, practice, consolidation (~20%), assessment (after keystones / every 6-8 lessons)
+   - `SEQUENCED_AFTER` chains encode lesson ordering within each domain
+   - Scripts: `enrich_grouping_signals.py` (JSONs), `compute_lesson_grouping_signals.py` (migration), `generate_concept_clusters.py` (cluster generation)
+
+8. **`layers/oak-content/`** - Oak National Academy (future)
    - Content provider mapping
    - Script: `import_oak_content.py`
 
@@ -93,6 +102,10 @@ python3 core/scripts/create_schema.py
 ```bash
 # Core UK curriculum (required)
 python3 layers/uk-curriculum/scripts/import_curriculum.py
+
+# Concept grouping signals (run after curriculum import)
+python3 core/migrations/compute_lesson_grouping_signals.py
+python3 layers/uk-curriculum/scripts/generate_concept_clusters.py
 
 # Assessment layer (optional, depends on UK)
 python3 layers/assessment/scripts/import_test_frameworks.py
@@ -162,7 +175,7 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 **UK Curriculum:**
 - `:Curriculum` (root node only)
 - `:KeyStage`, `:Year`, `:Subject`, `:Programme`
-- `:Domain`, `:Objective`, `:Concept`
+- `:Domain`, `:Objective`, `:Concept`, `:ConceptCluster`
 - `:Topic`, `:SourceDocument`
 
 **Epistemic Skills:**
@@ -202,6 +215,11 @@ All nodes have `display_category` property:
 (:Curriculum)-[:HAS_KEY_STAGE]->(:KeyStage)-[:HAS_YEAR]->(:Year)-[:HAS_PROGRAMME]->(:Programme)
 (:Programme)-[:HAS_DOMAIN]->(:Domain)-[:CONTAINS]->(:Objective)-[:TEACHES]->(:Concept)
 (:Concept)-[:PREREQUISITE_OF]->(:Concept)  // Learning progressions
+
+// Concept Grouping (v3.7)
+(:Domain)-[:HAS_CLUSTER]->(:ConceptCluster)-[:GROUPS]->(:Concept)
+(:ConceptCluster)-[:SEQUENCED_AFTER]->(:ConceptCluster)  // within-domain lesson ordering
+(:Concept)-[:CO_TEACHES]->(:Concept)                     // co-teachability signal
 
 // NGSS 3D model
 (:Framework)-[:HAS_DIMENSION]->(:Dimension)-[:HAS_PRACTICE]->(:Practice)
@@ -298,6 +316,7 @@ Every feature that introduces or modifies data processing must:
 - NGSS structure? → `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md`
 - Visualization / Bloom perspectives? → `layers/visualization/`
 - Age-appropriate design / learner profiles? → `layers/learner-profiles/`
+- Concept grouping / lesson clusters? → `layers/uk-curriculum/scripts/generate_concept_clusters.py`
 - User stories? → `docs/user-stories/`
 - Schema definition? → `core/scripts/create_schema.py`
 - Import all data? → `core/scripts/import_all.py` (orchestrator)
@@ -324,6 +343,7 @@ Every feature that introduces or modifies data processing must:
 
 ### Node IDs
 - UK: `EN-Y5-O021` (Subject-Year-Type-Number)
+- Clusters: `MA-Y3-CL001` (Subject-Year-CL-Number)
 - CASE: `ngss-sep-1` (framework-type-number)
 - Always unique, never reused
 
@@ -397,7 +417,7 @@ class LayerImporter:
 
 ---
 
-## Current State (2026-02-21)
+## Current State (2026-02-22)
 
 ✅ **Documentation reorganised:**
 - 61 docs sorted into semantic subdirectories (`design/`, `analysis/`, `archive/`, `user-stories/`, `research/learning-science/`, `research/interoperability/`)
@@ -422,13 +442,27 @@ class LayerImporter:
 - Learner Profiles (71 nodes — 33 InteractionType, 11 ContentGuideline, 11 PedagogyProfile, 11 FeedbackProfile, 5 PedagogyTechnique)
 - Visualization (5 Bloom perspectives with icons, styleRules, and search templates)
 
+✅ **Concept Grouping layer (v3.7, 2026-02-22):**
+- Enrichment signals: `teaching_weight` (1-6) and `co_teach_hints` added to all 55 extraction JSONs via `enrich_grouping_signals.py`
+- Import: `import_curriculum.py` now imports `teaching_weight` + `co_teach_hints` into Concept nodes
+- Migration: `compute_lesson_grouping_signals.py` computes `is_keystone`, `prerequisite_fan_out`, and creates `CO_TEACHES` relationships (extracted + inferred inverse pairs)
+- Cluster generation: `generate_concept_clusters.py` creates `ConceptCluster` nodes with topological sort, co-teach grouping, ~20% consolidation, assessment gates after keystones
+- Schema: ConceptCluster uniqueness constraint + indexes on `cluster_type`, `is_keystone`, `teaching_weight` (v3.7)
+- Validation: 6 new schema checks (teaching_weight range, is_keystone consistency, CO_TEACHES integrity, cluster completeness/coverage/sequencing) + extraction checks for new fields
+- Visualization: ConceptCluster styled (Indigo-500, view_module icon) + name mapping
+- No learner data — all nodes are curriculum design metadata (same tier as complexity_level)
+
 ✅ **In Aura cloud database — clean full import (2026-02-21):**
 - Instance: education-graphs (6981841e)
 - **~4,060 total nodes** (post-enrichment; verify with `MATCH (n) RETURN count(n)`)
 - Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
 - 5 Bloom perspectives uploaded and active
 
-🔄 **Needs reimport after current enrichment round:**
+🔄 **Needs reimport to activate concept grouping layer:**
+- Reimport curriculum to get `teaching_weight` + `co_teach_hints` into graph
+- Run `compute_lesson_grouping_signals.py` migration for `is_keystone` + `CO_TEACHES`
+- Run `generate_concept_clusters.py` to create ConceptCluster nodes (~300-500 expected)
+- Run visualization scripts to style + name cluster nodes
 - Geography KS1-KS3 place knowledge concepts being added (GE-KS1-D002, GE-KS2-D002, GE-KS3-D001/D002)
 - Languages KS2-KS4 reading/writing/listening concepts being added (LA-KS2-D002/D003, LA-KS3-D003, LA-KS4-D001/D004)
 
@@ -471,6 +505,8 @@ class LayerImporter:
 ❌ Mix layer data in scripts - Keep layers self-contained
 ❌ Add flat age/interaction properties to Year nodes - Use the learner-profiles layer instead
 ❌ Match Year nodes on `year_code` - the property is `year_id`
+❌ Manually create ConceptCluster nodes - Use `generate_concept_clusters.py` (they are derived from graph topology)
+❌ Edit `teaching_weight` or `co_teach_hints` directly in the graph - Edit the extraction JSONs, then reimport
 
 ### Privacy & Compliance (Non-Negotiable)
 ❌ Store child's name, school, or any PII in the learning event log - Identity and events are architecturally separated
