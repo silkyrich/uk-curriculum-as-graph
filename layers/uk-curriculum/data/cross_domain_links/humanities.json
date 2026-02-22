@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "subject_group": "humanities",
+  "authored_by": "human",
+  "authored_date": "2026-02-22",
+  "note": "Seeded from Adeyemi KS3 geography teacher simulation feedback. Note: Adeyemi's D003 links are within-domain (already CO_TEACHES via co_teach_hints). Cross-domain links here focus on Skills/Fieldwork (D004) applying to content domains, and History cross-domain patterns.",
+  "links": [
+    {
+      "source": "GE-KS3-C007",
+      "target": "GE-KS3-C001",
+      "reason": "shared_context",
+      "rationale": "Adeyemi: 'Topics are not silos.' Geographical skills including GIS, maps and fieldwork (D004) are the methodological tools applied to plate tectonics study (D003). Pupils use mapping and data analysis to study earthquake distribution patterns.",
+      "strength": 0.8
+    },
+    {
+      "source": "GE-KS3-C007",
+      "target": "GE-KS3-C002",
+      "reason": "shared_context",
+      "rationale": "Geographical skills (D004) applied to development studies (D003). GIS and statistical mapping are essential for comparing development indicators across countries. Choropleth maps of HDI, GDP per capita are core geography skills.",
+      "strength": 0.8
+    },
+    {
+      "source": "GE-KS3-C007",
+      "target": "GE-KS3-C003",
+      "reason": "shared_context",
+      "rationale": "Geographical skills (D004) applied to climate change study (D003). Interpreting climate graphs, satellite imagery, and environmental data requires the analytical skills developed in D004.",
+      "strength": 0.8
+    },
+    {
+      "source": "GE-KS3-C007",
+      "target": "GE-KS3-C004",
+      "reason": "shared_context",
+      "rationale": "Geographical skills (D004) applied to population/urbanisation study (D003). Population pyramids, migration flow maps, and census data analysis are core skills applied to demographic content.",
+      "strength": 0.8
+    },
+    {
+      "source": "GE-KS3-C007",
+      "target": "GE-KS3-C006",
+      "reason": "feeds_into",
+      "rationale": "Geographical skills including fieldwork and GIS (D004) are the methodological tools used to conduct place depth studies (D002). Pupils cannot carry out genuine geographical enquiry without data collection and analysis skills.",
+      "strength": 0.9
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "version": "1.0",
+  "subject_group": "mathematics",
+  "authored_by": "human",
+  "authored_date": "2026-02-22",
+  "note": "Seeded from Henderson Y2 teacher simulation feedback. Extended editorially to Y1, Y3-Y5 following the same pedagogical patterns: counting-to-tables, place-value-to-decimals, fractions-to-division, multiplication-to-measurement.",
+  "links": [
+    {
+      "source": "MA-Y2-C006",
+      "target": "MA-Y2-C010",
+      "reason": "parallel_concept",
+      "rationale": "Commutativity of addition (C006) parallels commutativity of multiplication (C010). Henderson: 'Teach as deliberate pair, referencing addition work when reaching multiplication.'",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y2-C001",
+      "target": "MA-Y2-C008",
+      "reason": "prerequisite_gap",
+      "rationale": "Counting in steps of 2, 3, 5 (D001) is the direct precursor to 2, 5, 10 times table recall (D003). Henderson: 'Within-Year-2 prerequisite missing from graph.'",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y2-C002",
+      "target": "MA-Y2-C004",
+      "reason": "feeds_into",
+      "rationale": "Understanding tens and ones (place value, D001) allows derivation of number facts: 3+7=10 leads to 30+70=100. Henderson identified this as an implicit cross-domain bridge.",
+      "strength": 0.8
+    },
+    {
+      "source": "MA-Y2-C011",
+      "target": "MA-Y2-C008",
+      "reason": "feeds_into",
+      "rationale": "Even numbers are multiples of 2. Henderson: 'Connect deliberately when introducing tables.' Odd/even (D001) reinforces the 2x table (D003).",
+      "strength": 0.8
+    },
+    {
+      "source": "MA-Y2-C021",
+      "target": "MA-Y2-C008",
+      "reason": "shared_context",
+      "rationale": "Arrays are themselves patterns. Henderson: 'Use patterns concept from D001 when introducing arrays in D003.' Recognising patterns (D001) supports understanding of multiplication arrays (D003).",
+      "strength": 0.7
+    },
+    {
+      "source": "MA-Y1-C002",
+      "target": "MA-Y1-C012",
+      "reason": "prerequisite_gap",
+      "rationale": "Counting in multiples of 2, 5, 10 (D001) is the foundation for grouping and sharing (D003). Skip counting is the oral rehearsal that makes early multiplicative thinking concrete.",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y1-C013",
+      "target": "MA-Y1-C014",
+      "reason": "parallel_concept",
+      "rationale": "Halving (D003) is dividing by 2, which is finding one half (D004). These are the same operation in different representations: procedural (halving) versus conceptual (fraction).",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y3-C001",
+      "target": "MA-Y3-C018",
+      "reason": "prerequisite_gap",
+      "rationale": "Counting in multiples of 4 (D001) is the direct oral rehearsal for 4 times table recall (D003). Same pattern as Henderson's Y2 counting-to-tables link.",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y3-C002",
+      "target": "MA-Y3-C019",
+      "reason": "prerequisite_gap",
+      "rationale": "Counting in multiples of 8 (D001) is the direct oral rehearsal for 8 times table recall (D003). Same pattern as Henderson's Y2 counting-to-tables link.",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y3-C007",
+      "target": "MA-Y3-C014",
+      "reason": "feeds_into",
+      "rationale": "Secure place value understanding of three-digit numbers (D001) is prerequisite for formal columnar addition (D002). Children must understand hundreds/tens/ones columns before the written method makes sense.",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y3-C007",
+      "target": "MA-Y3-C024",
+      "reason": "feeds_into",
+      "rationale": "Place value in three-digit numbers (D001) extends rightward to tenths (D004). The curriculum explicitly connects these: one-tenth is the same as dividing by 10, extending the place value column structure.",
+      "strength": 0.8
+    },
+    {
+      "source": "MA-Y3-C022",
+      "target": "MA-Y3-C030",
+      "reason": "shared_context",
+      "rationale": "Scaling problems (D003) directly apply multiplication facts to measurement contexts (D005). Recipes, map scales, and unit conversions are natural contexts for both.",
+      "strength": 0.7
+    },
+    {
+      "source": "MA-Y4-C002",
+      "target": "MA-Y4-C007",
+      "reason": "prerequisite_gap",
+      "rationale": "Counting in multiples of 6, 7, 9, 25, 1000 (D001) is the oral rehearsal for all multiplication tables to 12x12 (D003). Extends the Henderson counting-to-tables pattern to Y4.",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y4-C001",
+      "target": "MA-Y4-C006",
+      "reason": "feeds_into",
+      "rationale": "Place value in four-digit numbers (D001) is prerequisite for formal columnar addition/subtraction of four-digit numbers (D002). Extends the Y3 place-value-to-columns pattern.",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y4-C001",
+      "target": "MA-Y4-C010",
+      "reason": "feeds_into",
+      "rationale": "Place value in four-digit numbers (D001) extends to hundredths and decimal place value (D004). The positional notation system works identically left and right of the decimal point.",
+      "strength": 0.8
+    },
+    {
+      "source": "MA-Y4-C009",
+      "target": "MA-Y4-C011",
+      "reason": "feeds_into",
+      "rationale": "Factor pairs and commutativity (D003) directly enable finding equivalent fractions (D004). Multiplying numerator and denominator by the same factor is the same operation as finding factor pairs.",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y4-C008",
+      "target": "MA-Y4-C013",
+      "reason": "shared_context",
+      "rationale": "Short multiplication methods (D003) are directly applied in calculating area of rectilinear shapes (D005). Area = length x width is a concrete context for the abstract multiplication procedure.",
+      "strength": 0.8
+    },
+    {
+      "source": "MA-Y4-C010",
+      "target": "MA-Y4-C014",
+      "reason": "feeds_into",
+      "rationale": "Hundredths and decimal place value (D004) enables converting between metric units (D005). The curriculum notes: 'pupils connect decimals to metric measures (e.g. 1.25 km = 1 km and 250 m).'",
+      "strength": 0.8
+    },
+    {
+      "source": "MA-Y5-C001",
+      "target": "MA-Y5-C013",
+      "reason": "feeds_into",
+      "rationale": "Numbers to 1,000,000 and their place value (D001) extends to thousandths and 3 decimal places (D004). The columnar place value system works symmetrically in both directions.",
+      "strength": 0.8
+    },
+    {
+      "source": "MA-Y5-C005",
+      "target": "MA-Y5-C008",
+      "reason": "feeds_into",
+      "rationale": "Factors, common factors, HCF and LCM (D003) are required for adding fractions with different denominators (D004). Finding the lowest common denominator requires LCM knowledge.",
+      "strength": 0.9
+    },
+    {
+      "source": "MA-Y5-C006",
+      "target": "MA-Y5-C014",
+      "reason": "shared_context",
+      "rationale": "Long multiplication of 4-digit by 2-digit numbers (D003) is applied in calculating volume of cuboids (D005). Volume = L x W x H is three-factor multiplication requiring procedural fluency.",
+      "strength": 0.8
+    }
+  ]
+}

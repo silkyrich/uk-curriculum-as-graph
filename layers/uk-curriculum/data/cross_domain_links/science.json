@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "subject_group": "science",
+  "authored_by": "human",
+  "authored_date": "2026-02-22",
+  "note": "Seeded from Osei KS3 chemistry teacher simulation feedback. Cross-domain links only — within-domain co-teaching is already captured by co_teach_hints in extraction JSONs.",
+  "links": [
+    {
+      "source": "SC-KS3-C074",
+      "target": "SC-KS3-C082",
+      "reason": "continuous_narrative",
+      "rationale": "Osei: 'Chemical symbols are the language, equations are the grammar. Cannot write/understand equations without symbol fluency.' Symbols (D007) and equations (D008) form a continuous teaching sequence.",
+      "strength": 0.9
+    },
+    {
+      "source": "SC-KS3-C073",
+      "target": "SC-KS3-C081",
+      "reason": "continuous_narrative",
+      "rationale": "Osei: 'Teaching atoms/elements/compounds and chemical reactions is a continuous narrative.' Understanding what atoms are (D007) is prerequisite for understanding atom rearrangement in reactions (D008).",
+      "strength": 0.9
+    },
+    {
+      "source": "SC-KS3-C075",
+      "target": "SC-KS3-C081",
+      "reason": "continuous_narrative",
+      "rationale": "Osei identified sequencing issue: conservation of mass (D007) only makes sense when demonstrated through actual reactions (D008). These concepts should be co-taught with reactions providing the concrete context.",
+      "strength": 0.9
+    }
+  ]
+}

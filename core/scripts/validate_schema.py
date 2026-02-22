@@ -812,21 +812,46 @@ class SchemaValidator:
         self.add(ValidationResult("is_keystone consistency", status, total, issues))
 
     def check_co_teaches_integrity(self):
-        """CO_TEACHES should connect Concepts in the same domain (cross-domain is WARN)."""
+        """CO_TEACHES: curated cross-domain = PASS, extracted cross-domain = WARN."""
+        # Find cross-domain CO_TEACHES that are NOT curated (likely data quality issue)
         records = self.run("""
             MATCH (c1:Concept)-[r:CO_TEACHES]->(c2:Concept)
             WHERE NOT EXISTS {
                 MATCH (d:Domain)-[:HAS_CONCEPT]->(c1)
                 MATCH (d)-[:HAS_CONCEPT]->(c2)
             }
-            RETURN c1.concept_id AS src, c2.concept_id AS tgt
+            AND coalesce(r.source, '') <> 'curated'
+            RETURN c1.concept_id AS src, c2.concept_id AS tgt, r.source AS source
             LIMIT 20
         """)
         total = self.scalar("MATCH ()-[r:CO_TEACHES]->() RETURN count(r)") or 0
-        issues = [f"CO_TEACHES {r['src']} -> {r['tgt']} cross-domain" for r in records]
-        # Cross-domain within same programme is valid teaching advice, not a data error
+        issues = [f"CO_TEACHES {r['src']} -> {r['tgt']} cross-domain (source: {r['source']})" for r in records]
+        # Curated cross-domain is intentional; non-curated cross-domain is a data quality flag
         status = "WARN" if issues else "PASS"
         self.add(ValidationResult("CO_TEACHES same-domain integrity", status, total, issues))
+
+    def check_cross_domain_co_teaches_completeness(self):
+        """Curated cross-domain CO_TEACHES should have non-null reason and rationale."""
+        total = self.scalar("""
+            MATCH ()-[r:CO_TEACHES]->()
+            WHERE r.source = 'curated'
+            RETURN count(r)
+        """) or 0
+        if total == 0:
+            self.add(ValidationResult("Cross-domain CO_TEACHES completeness", "PASS", 0,
+                                      ["No curated CO_TEACHES — migration pending"]))
+            return
+        records = self.run("""
+            MATCH (c1:Concept)-[r:CO_TEACHES]->(c2:Concept)
+            WHERE r.source = 'curated'
+              AND (r.reason IS NULL OR r.rationale IS NULL
+                   OR r.reason = '' OR r.rationale = '')
+            RETURN c1.concept_id AS src, c2.concept_id AS tgt
+            LIMIT 20
+        """)
+        issues = [f"Curated CO_TEACHES {r['src']} -> {r['tgt']} missing reason or rationale" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("Cross-domain CO_TEACHES completeness", status, total, issues))
 
     def check_concept_cluster_completeness(self):
         """ConceptCluster nodes have required non-null properties (skipped if none exist)."""
@@ -1155,6 +1180,7 @@ class SchemaValidator:
             self.check_teaching_weight_values,
             self.check_is_keystone_consistency,
             self.check_co_teaches_integrity,
+            self.check_cross_domain_co_teaches_completeness,
             self.check_concept_cluster_completeness,
             self.check_concept_cluster_coverage,
             self.check_cluster_sequencing,
