@@ -173,6 +173,30 @@ def validate_file(path: Path) -> list[ExtractionIssue]:
                 f"Concept {c_id} description is very short ({len(desc)} chars): '{desc}'",
             ))
 
+    # ---- Enrichment completeness -------------------------------------------
+    enrichment_fields = ["teaching_guidance", "key_vocabulary", "common_misconceptions"]
+    bare_concepts = []
+    for concept in concepts:
+        c_id = concept.get("concept_id", "(no id)")
+        missing_fields = []
+        for field in enrichment_fields:
+            val = concept.get(field)
+            if not val or (isinstance(val, str) and not val.strip()) or (isinstance(val, list) and len(val) == 0):
+                missing_fields.append(field)
+        if missing_fields:
+            bare_concepts.append((c_id, missing_fields))
+
+    if bare_concepts:
+        # Only report first 5 per file to avoid flooding output
+        sample = bare_concepts[:5]
+        suffix = f" (and {len(bare_concepts) - 5} more)" if len(bare_concepts) > 5 else ""
+        sample_strs = ["{} [{}]".format(cid, ", ".join(mf)) for cid, mf in sample]
+        issues.append(ExtractionIssue(
+            "WARN", filename,
+            f"{len(bare_concepts)}/{len(concepts)} concepts missing enrichment fields: "
+            f"{', '.join(sample_strs)}{suffix}",
+        ))
+
     # ---- Prerequisites -----------------------------------------------------
     prereq_key = (
         "prerequisite_relationships"

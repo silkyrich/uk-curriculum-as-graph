@@ -192,6 +192,41 @@ SET n.display_color = '#D97706',
     n.display_category = 'CASE Standards',
     n.display_size = 2;
 
+// InteractionType - Learner Profile
+MATCH (n:InteractionType)
+SET n.display_color = '#7C3AED',
+    n.display_icon = 'lightbulb',
+    n.display_category = 'Learner Profile',
+    n.display_size = 2;
+
+// ContentGuideline - Learner Profile
+MATCH (n:ContentGuideline)
+SET n.display_color = '#7C3AED',
+    n.display_icon = 'document',
+    n.display_category = 'Learner Profile',
+    n.display_size = 3;
+
+// PedagogyProfile - Learner Profile
+MATCH (n:PedagogyProfile)
+SET n.display_color = '#7C3AED',
+    n.display_icon = 'route',
+    n.display_category = 'Learner Profile',
+    n.display_size = 3;
+
+// FeedbackProfile - Learner Profile
+MATCH (n:FeedbackProfile)
+SET n.display_color = '#7C3AED',
+    n.display_icon = 'speech',
+    n.display_category = 'Learner Profile',
+    n.display_size = 3;
+
+// PedagogyTechnique - Learner Profile
+MATCH (n:PedagogyTechnique)
+SET n.display_color = '#3B0764',
+    n.display_icon = 'brain',
+    n.display_category = 'Learner Profile',
+    n.display_size = 3;
+
 // OakUnit - Oak Content
 MATCH (n:OakUnit)
 SET n.display_color = '#16A34A',

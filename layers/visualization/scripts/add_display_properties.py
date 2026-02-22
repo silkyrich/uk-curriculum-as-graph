@@ -200,6 +200,38 @@ NODE_STYLES = {
         'size': 2,
     },
 
+    # LEARNER PROFILE LAYER (Violets & Purples)
+    'InteractionType': {
+        'color': '#7C3AED',   # Violet-600 (matches import script)
+        'icon': 'lightbulb',
+        'category': 'Learner Profile',
+        'size': 2,
+    },
+    'ContentGuideline': {
+        'color': '#7C3AED',   # Violet-600
+        'icon': 'document',
+        'category': 'Learner Profile',
+        'size': 3,
+    },
+    'PedagogyProfile': {
+        'color': '#7C3AED',   # Violet-600
+        'icon': 'route',
+        'category': 'Learner Profile',
+        'size': 3,
+    },
+    'FeedbackProfile': {
+        'color': '#7C3AED',   # Violet-600
+        'icon': 'speech',
+        'category': 'Learner Profile',
+        'size': 3,
+    },
+    'PedagogyTechnique': {
+        'color': '#3B0764',   # Purple-950 (matches import script)
+        'icon': 'brain',
+        'category': 'Learner Profile',
+        'size': 3,
+    },
+
     # OAK CONTENT (Future layer - placeholder)
     'OakUnit': {
         'color': '#16A34A',  # Green-600

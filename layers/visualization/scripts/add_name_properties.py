@@ -49,6 +49,10 @@ def add_name_properties(driver):
         # Structure
         ("SourceDocument", "title"),
 
+        # Learner Profile nodes (usually set during import, fallback here)
+        ("InteractionType", "interaction_name"),
+        ("PedagogyTechnique", "technique_name"),
+
         # Already have 'name': Subject, Programme, KeyStage
     ]
 
@@ -58,6 +62,10 @@ def add_name_properties(driver):
         # Computed names (not simple property copies)
         computed = [
             ("Year", "SET n.name = 'Year ' + toString(n.year_number)"),
+            # Learner Profile computed names (fallback if import didn't set them)
+            ("ContentGuideline", "SET n.name = n.year_code + ' Content'"),
+            ("PedagogyProfile", "SET n.name = n.year_code + ' Pedagogy'"),
+            ("FeedbackProfile", "SET n.name = n.year_code + ' Feedback'"),
         ]
         for node_label, set_clause in computed:
             try:

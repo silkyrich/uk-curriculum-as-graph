@@ -6,11 +6,7 @@ Runs Cypher queries against Neo4j and produces a structured PASS/WARN/FAIL repor
 
 from neo4j import GraphDatabase
 from datetime import datetime
-
-# Neo4j connection
-NEO4J_URI = "neo4j://127.0.0.1:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "password123"
+from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
 
 VALID_CONCEPT_TYPES = {"knowledge", "skill", "process", "attitude", "content"}
 VALID_STRUCTURE_TYPES = {
@@ -705,6 +701,207 @@ class SchemaValidator:
         self.add(ValidationResult("CFItem CHILD_OF integrity", status, total, issues))
 
     # =========================================================================
+    # J. Learner Profile layer
+    # =========================================================================
+
+    def check_learner_profile_nodes_exist(self):
+        """All 5 learner profile node types must be present."""
+        expected = {
+            'InteractionType': 33,
+            'ContentGuideline': 11,
+            'PedagogyProfile': 11,
+            'FeedbackProfile': 11,
+            'PedagogyTechnique': 5,
+        }
+        issues = []
+        total = 0
+        for label, expected_count in expected.items():
+            count = self.scalar(f"MATCH (n:{label}) RETURN count(n)") or 0
+            total += count
+            if count == 0:
+                issues.append(f"{label}: 0 nodes (expected {expected_count}) — import pending?")
+            elif count != expected_count:
+                issues.append(f"{label}: {count} nodes (expected {expected_count})")
+        status = "FAIL" if any("0 nodes" in i for i in issues) else ("WARN" if issues else "PASS")
+        self.add(ValidationResult("Learner profile nodes exist", status, total, issues))
+
+    def check_year_learner_profile_links(self):
+        """Every Year node should link to ContentGuideline, PedagogyProfile, and FeedbackProfile."""
+        records = self.run("""
+            MATCH (y:Year)
+            OPTIONAL MATCH (y)-[:HAS_CONTENT_GUIDELINE]->(cg:ContentGuideline)
+            OPTIONAL MATCH (y)-[:HAS_PEDAGOGY_PROFILE]->(pp:PedagogyProfile)
+            OPTIONAL MATCH (y)-[:HAS_FEEDBACK_PROFILE]->(fp:FeedbackProfile)
+            WITH y, cg, pp, fp
+            WHERE cg IS NULL OR pp IS NULL OR fp IS NULL
+            RETURN y.year_id AS id,
+                   CASE WHEN cg IS NULL THEN 'ContentGuideline' ELSE '' END +
+                   CASE WHEN pp IS NULL THEN ' PedagogyProfile' ELSE '' END +
+                   CASE WHEN fp IS NULL THEN ' FeedbackProfile' ELSE '' END AS missing
+        """)
+        issues = [f"Year {r['id']} missing: {r['missing'].strip()}" for r in records]
+        total = self.scalar("MATCH (y:Year) RETURN count(y)") or 0
+        # FAIL if learner profiles exist but links are broken; WARN if no profiles at all
+        profile_count = self.scalar("MATCH (n:ContentGuideline) RETURN count(n)") or 0
+        if profile_count == 0:
+            status = "WARN" if issues else "PASS"
+            issues = ["Learner profile layer not imported — skipping link check"] if issues else []
+        else:
+            status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("Year → Learner profile links", status, total, issues))
+
+    def check_interaction_type_completeness(self):
+        """InteractionType nodes have required properties (skipped if none exist)."""
+        total = self.scalar("MATCH (n:InteractionType) RETURN count(n)") or 0
+        if total == 0:
+            self.add(ValidationResult("InteractionType completeness", "PASS", 0,
+                                      ["No InteractionType nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (n:InteractionType)
+            WHERE n.interaction_id IS NULL OR n.name IS NULL OR n.agent_prompt IS NULL
+            RETURN n.interaction_id AS id
+        """)
+        issues = [f"InteractionType '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("InteractionType completeness", status, total, issues))
+
+    def check_interaction_precedes_chain(self):
+        """InteractionType PRECEDES chain should form a connected sequence."""
+        total = self.scalar("MATCH (n:InteractionType) RETURN count(n)") or 0
+        if total == 0:
+            self.add(ValidationResult("InteractionType PRECEDES chain", "PASS", 0,
+                                      ["No InteractionType nodes — import pending"]))
+            return
+        chain_count = self.scalar("""
+            MATCH (:InteractionType)-[r:PRECEDES]->(:InteractionType) RETURN count(r)
+        """) or 0
+        status = "PASS" if chain_count > 0 else "WARN"
+        details = [] if chain_count > 0 else ["No PRECEDES chain between InteractionType nodes"]
+        self.add(ValidationResult("InteractionType PRECEDES chain", status, total, details))
+
+    # =========================================================================
+    # K. Enrichment coverage (DB-level)
+    # =========================================================================
+
+    def check_concept_enrichment_coverage(self):
+        """Concepts should have teaching_guidance, key_vocabulary, common_misconceptions."""
+        records = self.run("""
+            MATCH (c:Concept)
+            WHERE c.teaching_guidance IS NULL OR c.teaching_guidance = ''
+            MATCH (d:Domain)-[:HAS_CONCEPT]->(c)
+            MATCH (p:Programme)-[:HAS_DOMAIN]->(d)
+            RETURN p.subject_name AS subject, count(c) AS bare
+            ORDER BY bare DESC
+        """)
+        total_bare = sum(r['bare'] for r in records)
+        total = self.scalar("MATCH (c:Concept) RETURN count(c)") or 0
+        enriched = total - total_bare
+        pct = round(100 * enriched / total, 1) if total else 0
+        issues = [f"{r['subject']}: {r['bare']} concepts without teaching_guidance" for r in records]
+        if total_bare > 0:
+            issues.insert(0, f"{total_bare}/{total} concepts bare ({pct}% enriched)")
+        status = "WARN" if total_bare > 0 else "PASS"
+        self.add(ValidationResult("Concept enrichment coverage", status, total, issues))
+
+    # =========================================================================
+    # L. Display & Visualization invariants
+    # =========================================================================
+
+    def check_name_property_coverage(self):
+        """Every node must have a non-null, non-empty name property."""
+        records = self.run("""
+            MATCH (n) WHERE n.name IS NULL OR n.name = ''
+            RETURN labels(n)[0] AS label, count(n) AS count
+            ORDER BY count DESC
+        """)
+        issues = [f"{r['count']} {r['label']} node(s) missing name" for r in records]
+        total_missing = sum(r['count'] for r in records)
+        total = self.scalar("MATCH (n) RETURN count(n)") or 0
+        status = "FAIL" if total_missing else "PASS"
+        self.add(ValidationResult("name property coverage", status, total, issues))
+
+    def check_display_color_coverage(self):
+        """Every non-internal node must have a display_color property."""
+        records = self.run("""
+            MATCH (n) WHERE n.display_color IS NULL
+            WITH labels(n)[0] AS label, count(n) AS count
+            WHERE NOT label STARTS WITH '_'
+            RETURN label, count ORDER BY count DESC
+        """)
+        issues = [f"{r['count']} {r['label']} node(s) missing display_color" for r in records]
+        total_missing = sum(r['count'] for r in records)
+        total = self.scalar("MATCH (n) WHERE NOT labels(n)[0] STARTS WITH '_' RETURN count(n)") or 0
+        status = "WARN" if total_missing else "PASS"
+        self.add(ValidationResult("display_color coverage", status, total, issues))
+
+    def check_display_category_coverage(self):
+        """Every non-internal node must have a display_category property."""
+        records = self.run("""
+            MATCH (n) WHERE n.display_category IS NULL
+            WITH labels(n)[0] AS label, count(n) AS count
+            WHERE NOT label STARTS WITH '_'
+            RETURN label, count ORDER BY count DESC
+        """)
+        issues = [f"{r['count']} {r['label']} node(s) missing display_category" for r in records]
+        total_missing = sum(r['count'] for r in records)
+        total = self.scalar("MATCH (n) WHERE NOT labels(n)[0] STARTS WITH '_' RETURN count(n)") or 0
+        status = "WARN" if total_missing else "PASS"
+        self.add(ValidationResult("display_category coverage", status, total, issues))
+
+    def check_display_category_values(self):
+        """display_category must be one of the recognised values."""
+        valid_categories = {
+            'UK Curriculum', 'CASE Standards', 'Epistemic Skills',
+            'Assessment', 'Structure', 'Learner Profile', 'Oak Content',
+        }
+        records = self.run("""
+            MATCH (n)
+            WHERE n.display_category IS NOT NULL
+              AND NOT n.display_category IN $valid_cats
+            RETURN n.display_category AS val, count(n) AS count
+        """, valid_cats=list(valid_categories))
+        issues = [f"{r['count']} node(s) with unrecognised display_category '{r['val']}'" for r in records]
+        total = self.scalar("MATCH (n) WHERE n.display_category IS NOT NULL RETURN count(n)") or 0
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("display_category valid values", status, total, issues))
+
+    def check_year_node_invariants(self):
+        """All 11 Year nodes (Y1-Y11) exist with required properties and correct name."""
+        total = self.scalar("MATCH (y:Year) RETURN count(y)") or 0
+        issues = []
+        if total != 11:
+            issues.append(f"Expected 11 Year nodes, found {total}")
+        # Check required properties and name format
+        records = self.run("""
+            MATCH (y:Year)
+            WHERE y.year_id IS NULL OR y.year_number IS NULL
+               OR y.age_range IS NULL OR y.key_stage IS NULL
+               OR y.name IS NULL
+               OR y.name <> ('Year ' + toString(y.year_number))
+            RETURN y.year_id AS id, y.year_number AS num, y.name AS name
+        """)
+        for r in records:
+            yr_id = r['id'] or '(null)'
+            yr_num = r['num']
+            yr_name = r['name']
+            if yr_name is None:
+                issues.append(f"Year {yr_id} missing name property")
+            elif yr_num is not None and yr_name != f"Year {yr_num}":
+                issues.append(f"Year {yr_id} name='{yr_name}' (expected 'Year {yr_num}')")
+            else:
+                issues.append(f"Year {yr_id} missing required properties")
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("Year node invariants", status, total, issues))
+
+    def check_bloom_perspective_exists(self):
+        """At least one _Bloom_Perspective_ node exists (needed for Bloom visualization)."""
+        total = self.scalar("MATCH (p:`_Bloom_Perspective_`) RETURN count(p)") or 0
+        status = "PASS" if total > 0 else "WARN"
+        details = [] if total > 0 else ["No _Bloom_Perspective_ nodes found — Bloom visualisation won't work"]
+        self.add(ValidationResult("Bloom perspective exists", status, total, details))
+
+    # =========================================================================
     # Run all checks
     # =========================================================================
 
@@ -760,6 +957,20 @@ class SchemaValidator:
             self.check_cf_document_completeness,
             self.check_cf_item_completeness,
             self.check_cf_item_child_of_integrity,
+            # J. Learner Profile layer
+            self.check_learner_profile_nodes_exist,
+            self.check_year_learner_profile_links,
+            self.check_interaction_type_completeness,
+            self.check_interaction_precedes_chain,
+            # K. Enrichment coverage
+            self.check_concept_enrichment_coverage,
+            # L. Display & Visualization
+            self.check_name_property_coverage,
+            self.check_display_color_coverage,
+            self.check_display_category_coverage,
+            self.check_display_category_values,
+            self.check_year_node_invariants,
+            self.check_bloom_perspective_exists,
         ]
         for check in checks:
             try:
