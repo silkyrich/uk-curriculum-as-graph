@@ -2,11 +2,16 @@
 """
 Generate ConceptCluster nodes from the enriched UK Curriculum graph.
 
-For domains that have curated definitions in
+Follows the CC Math model: clusters are thin content groupings that
+say "these concepts belong together" — no assessment or consolidation
+types, no lesson counts or teaching weeks. Teachers handle timing and
+assessment placement using is_keystone signals on concepts.
+
+For domains with curated definitions in
   layers/uk-curriculum/data/cluster_definitions/*.json
-those definitions are used verbatim for the content clusters
-(introduction + practice). Consolidation and assessment clusters
-are still inserted automatically by the algorithm.
+those definitions are used verbatim. Two cluster types:
+  - introduction: first exposure to a conceptual area
+  - practice: fluency, application, extension
 
 For domains without curated definitions, falls back to algorithmic
 clustering using topological order, co-teaching signals, and
@@ -260,70 +265,7 @@ def cluster_concepts(concepts, prereq_edges, co_teach_edges, structure_type):
             "is_keystone_cluster": has_keystone,
         })
 
-    # ── Insert consolidation clusters (~15-20% of content clusters) ──
-    # Only insert if there are enough content clusters to consolidate.
-    # Each consolidation cluster recaps concepts from the preceding 2 clusters.
-    total_content = len(clusters)
-    if total_content >= 4:
-        num_consolidation = max(1, round(total_content * 0.18))
-        step = max(3, total_content // num_consolidation)
-        enriched = []
-        inserted = 0
-        for i, cluster in enumerate(clusters):
-            enriched.append(cluster)
-            # Insert consolidation after every `step` content clusters
-            if (i + 1) % step == 0 and i > 0 and inserted < num_consolidation:
-                # Gather concept_ids from the last 2 content clusters
-                prev_ids = []
-                for prev in enriched[-(min(2, len(enriched))):]:
-                    if prev["cluster_type"] != "consolidation":
-                        prev_ids.extend(prev["concept_ids"])
-                if prev_ids:
-                    enriched.append({
-                        "concept_ids": prev_ids[:4],
-                        "cluster_type": "consolidation",
-                        "is_keystone_cluster": False,
-                    })
-                    inserted += 1
-    else:
-        enriched = list(clusters)
-
-    # ── Insert assessment clusters ──
-    # After keystone clusters and every 10+ cumulative teaching_weight.
-    # Target: ~10-15% of total, not after every content cluster.
-    final = []
-    cumulative_weight = 0
-    last_assessment_weight = 0
-    assessment_gap = 10  # minimum teaching_weight between assessments
-    for cluster in enriched:
-        final.append(cluster)
-        weight = sum(
-            concept_map[cid]["teaching_weight"]
-            for cid in cluster["concept_ids"]
-            if cid in concept_map
-        )
-        cumulative_weight += weight
-
-        # Skip assessment after consolidation or other assessment clusters
-        if cluster["cluster_type"] in ("assessment", "consolidation"):
-            continue
-
-        needs_assessment = (
-            cluster["is_keystone_cluster"]
-            and (cumulative_weight - last_assessment_weight >= 4)
-        ) or (
-            cumulative_weight - last_assessment_weight >= assessment_gap
-        )
-
-        if needs_assessment:
-            final.append({
-                "concept_ids": cluster["concept_ids"],
-                "cluster_type": "assessment",
-                "is_keystone_cluster": cluster["is_keystone_cluster"],
-            })
-            last_assessment_weight = cumulative_weight
-
-    return final
+    return clusters
 
 
 # ── Graph writing ────────────────────────────────────────────────────────────
@@ -352,16 +294,10 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
             concept_map[cid]["complexity_level"]
             for cid in concept_ids if cid in concept_map
         ]
-        weights = [
-            concept_map[cid]["teaching_weight"]
-            for cid in concept_ids if cid in concept_map
-        ]
 
         min_c = min(complexities) if complexities else 1
         max_c = max(complexities) if complexities else 1
         complexity_range = f"{min_c}-{max_c}" if min_c != max_c else str(min_c)
-        lesson_count = sum(weights) if weights else 1
-        teaching_weeks = max(1, round(lesson_count / 3, 1))
 
         # Use curated name if provided; otherwise auto-generate from concept names
         if cluster.get("cluster_name"):
@@ -376,8 +312,6 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
             MERGE (cc:ConceptCluster {cluster_id: $cluster_id})
             SET cc.cluster_name = $cluster_name,
                 cc.cluster_type = $cluster_type,
-                cc.teaching_weeks = $teaching_weeks,
-                cc.lesson_count = $lesson_count,
                 cc.complexity_range = $complexity_range,
                 cc.is_keystone_cluster = $is_keystone_cluster,
                 cc.rationale = $rationale,
@@ -391,8 +325,6 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
             cluster_id=cluster_id,
             cluster_name=cluster_name,
             cluster_type=cluster["cluster_type"],
-            teaching_weeks=teaching_weeks,
-            lesson_count=lesson_count,
             complexity_range=complexity_range,
             is_keystone_cluster=cluster["is_keystone_cluster"],
             rationale=cluster.get("rationale", ""),
@@ -446,9 +378,9 @@ def clean_existing_clusters(session):
 def build_curated_clusters(curated_defs, concepts, prereq_edges, co_teach_edges, structure_type):
     """Build cluster list from curated definitions.
 
-    Uses the curated concept_ids and cluster_name/type/rationale but still
-    runs consolidation and assessment insertion so the structural clusters
-    are added automatically.
+    Uses the curated concept_ids and cluster_name/type/rationale directly.
+    Only two cluster types: introduction and practice — following the CC Math
+    model of thin content groupings without assessment or consolidation.
 
     Any concepts not covered by the curated definitions are grouped into a
     final algorithmic catch-all cluster so nothing is silently dropped.
@@ -489,73 +421,7 @@ def build_curated_clusters(curated_defs, concepts, prereq_edges, co_teach_edges,
                 "is_keystone_cluster": has_keystone,
             })
 
-    if not content_clusters:
-        return []
-
-    # Run consolidation and assessment insertion (same as algorithmic path)
-    # Re-use the tail of cluster_concepts by building a minimal concepts list
-    # from the curated groupings and re-running the insertion logic directly.
-
-    # ── Insert consolidation clusters ──
-    total_content = len(content_clusters)
-    if total_content >= 4:
-        num_consolidation = max(1, round(total_content * 0.18))
-        step = max(3, total_content // num_consolidation)
-        enriched = []
-        inserted = 0
-        for i, cluster in enumerate(content_clusters):
-            enriched.append(cluster)
-            if (i + 1) % step == 0 and i > 0 and inserted < num_consolidation:
-                prev_ids = []
-                for prev in enriched[-(min(2, len(enriched))):]:
-                    if prev["cluster_type"] != "consolidation":
-                        prev_ids.extend(prev["concept_ids"])
-                if prev_ids:
-                    enriched.append({
-                        "concept_ids": prev_ids[:4],
-                        "cluster_type": "consolidation",
-                        "cluster_name": "",
-                        "rationale": "",
-                        "inspired_by": "",
-                        "is_keystone_cluster": False,
-                    })
-                    inserted += 1
-    else:
-        enriched = list(content_clusters)
-
-    # ── Insert assessment clusters ──
-    final = []
-    cumulative_weight = 0
-    last_assessment_weight = 0
-    assessment_gap = 10
-    for cluster in enriched:
-        final.append(cluster)
-        weight = sum(
-            concept_map[cid]["teaching_weight"]
-            for cid in cluster["concept_ids"]
-            if cid in concept_map
-        )
-        cumulative_weight += weight
-        if cluster["cluster_type"] in ("assessment", "consolidation"):
-            continue
-        needs_assessment = (
-            cluster["is_keystone_cluster"]
-            and (cumulative_weight - last_assessment_weight >= 4)
-        ) or (
-            cumulative_weight - last_assessment_weight >= assessment_gap
-        )
-        if needs_assessment:
-            final.append({
-                "concept_ids": cluster["concept_ids"],
-                "cluster_type": "assessment",
-                "cluster_name": "",
-                "rationale": "",
-                "inspired_by": "",
-                "is_keystone_cluster": cluster["is_keystone_cluster"],
-            })
-            last_assessment_weight = cumulative_weight
-
-    return final
+    return content_clusters
 
 
 def main():
@@ -643,8 +509,6 @@ def main():
         print(f"  Clusters created:       {stats['clusters_created']}")
         print(f"    - introduction:       {stats['type_introduction']}")
         print(f"    - practice:           {stats['type_practice']}")
-        print(f"    - consolidation:      {stats['type_consolidation']}")
-        print(f"    - assessment:         {stats['type_assessment']}")
         print(f"  Concepts grouped:       {stats['concepts_grouped']}")
         print(f"  Sequence links:         {stats['sequence_links']}")
         if stats["clusters_created"] > 0:

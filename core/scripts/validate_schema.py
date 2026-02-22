@@ -934,7 +934,7 @@ class SchemaValidator:
         self.add(ValidationResult("Cluster non-empty", status, total, issues))
 
     def check_cluster_type_distribution(self):
-        """Cluster type distribution should be reasonable (skipped if none exist)."""
+        """Cluster types should be introduction and practice only (skipped if none exist)."""
         total = self.scalar("MATCH (cc:ConceptCluster) RETURN count(cc)") or 0
         if total == 0:
             self.add(ValidationResult("Cluster type distribution", "PASS", 0,
@@ -948,32 +948,25 @@ class SchemaValidator:
         dist = {r["ctype"]: r["cnt"] for r in records}
         issues = []
 
-        # Practice should be the majority (>40% of total)
+        # Only two valid types: introduction and practice (CC Math model)
+        valid_types = {"introduction", "practice"}
+        unexpected = {k: v for k, v in dist.items() if k not in valid_types}
+        if unexpected:
+            for ctype, cnt in unexpected.items():
+                issues.append(f"Unexpected cluster type '{ctype}': {cnt} clusters — only introduction/practice allowed")
+
+        # Practice should be the majority (>20% of total)
         practice = dist.get("practice", 0)
         practice_pct = round(100 * practice / total, 1) if total else 0
-        # Threshold is 20% (not 40%) because our graph has 315 domains; each
-        # contributes one introduction cluster, which structurally caps practice.
         if practice_pct < 20:
             issues.append(f"Practice clusters are only {practice_pct}% ({practice}/{total}) — expected >20%")
-
-        # Consolidation should be ~15-25%
-        consol = dist.get("consolidation", 0)
-        consol_pct = round(100 * consol / total, 1) if total else 0
-        if consol_pct > 30:
-            issues.append(f"Consolidation clusters are {consol_pct}% ({consol}/{total}) — expected <30%")
-
-        # Assessment should be ~10-20%
-        assess = dist.get("assessment", 0)
-        assess_pct = round(100 * assess / total, 1) if total else 0
-        if assess_pct > 30:
-            issues.append(f"Assessment clusters are {assess_pct}% ({assess}/{total}) — expected <30%")
 
         # Report distribution in detail
         dist_str = ", ".join(f"{k}: {v} ({round(100*v/total,1)}%)" for k, v in sorted(dist.items()))
         if not issues:
             issues = [f"Distribution: {dist_str}"]
 
-        status = "WARN" if any("expected" in i for i in issues) else "PASS"
+        status = "WARN" if any("expected" in i or "Unexpected" in i for i in issues) else "PASS"
         self.add(ValidationResult("Cluster type distribution", status, total, issues))
 
     # =========================================================================
