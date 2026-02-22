@@ -1,0 +1,1769 @@
+{
+  "version": "1.0",
+  "subject_group": "English",
+  "authored_by": "english-agent",
+  "authored_date": "2026-02-22",
+  "note": "Cluster definitions for all English, English Language and English Literature domains across KS1, lower KS2 (Y3-Y4), upper KS2 (Y5-Y6), KS3 and KS4. Clusters follow CC ELA-style verb-phrase conventions adapted for the UK National Curriculum. Co-teach hints were the primary grouping signal; conceptual and skill-type proximity provided the secondary signal.",
+  "domains": {
+    "EN-KS1-D001": {
+      "domain_name": "Spoken Language",
+      "clusters": [
+        {
+          "cluster_name": "Listen actively and take turns in conversation",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS1-C073",
+            "EN-KS1-C074"
+          ],
+          "rationale": "Listening skills and turn-taking are the foundational interaction habits for all spoken language; C074 lists C073 in its co_teach_hints, confirming they should be taught together as a paired entry point.",
+          "inspired_by": "CC ELA SL.1.1 - Comprehension and Collaboration"
+        },
+        {
+          "cluster_name": "Ask questions, justify opinions and use drama to explore ideas",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C075",
+            "EN-KS1-C076",
+            "EN-KS1-C077"
+          ],
+          "rationale": "Relevant questioning, justifying opinions, and drama/role-play all extend conversational competence beyond basic turn-taking into exploratory and evaluative spoken language; C077 lists C075 and C076 in its co_teach_hints.",
+          "inspired_by": "CC ELA SL.1.4 - Presentation of Knowledge and Ideas"
+        }
+      ]
+    },
+    "EN-KS1-D002": {
+      "domain_name": "Reading - Word Reading",
+      "clusters": [
+        {
+          "cluster_name": "Understand phonemes, graphemes and their correspondence",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS1-C001",
+            "EN-KS1-C002",
+            "EN-KS1-C003"
+          ],
+          "rationale": "Phoneme, grapheme and GPC are the conceptual bedrock of systematic phonics; all three are mutually co-taught (C002 lists C001 and C003), and none is meaningful without the others.",
+          "inspired_by": "CC ELA RF.1.2 - Phonological Awareness; RF.1.3 - Phonics and Word Recognition"
+        },
+        {
+          "cluster_name": "Blend and segment sounds to decode and spell words",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C004",
+            "EN-KS1-C005",
+            "EN-KS1-C006"
+          ],
+          "rationale": "Blending and segmenting are the two reciprocal phonics operations; decoding is their direct application to reading unfamiliar print. Co_teach_hints link all three tightly.",
+          "inspired_by": "CC ELA RF.1.3b - Know final-e and vowel-team conventions; RF.1.4 - Read with sufficient fluency"
+        },
+        {
+          "cluster_name": "Recognise vowel and consonant digraphs and split digraphs",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C009",
+            "EN-KS1-C010",
+            "EN-KS1-C011",
+            "EN-KS1-C012"
+          ],
+          "rationale": "Vowel digraphs, consonant digraphs, split digraphs and syllables are the grapheme pattern groups pupils must learn to extend single-phoneme GPC knowledge; the syllable concept (C012) scaffolds multi-syllable decoding across all digraph types.",
+          "inspired_by": "CC ELA RF.1.3 - Phonics and Word Recognition"
+        },
+        {
+          "cluster_name": "Read common exception words fluently and with expression",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C007",
+            "EN-KS1-C008",
+            "EN-KS1-C013"
+          ],
+          "rationale": "Automatic word recognition and common exception words are the sight-word strand that, alongside phonics, leads to reading fluency; C007 lists C008 in its co_teach_hints and C013 consolidates both strands.",
+          "inspired_by": "CC ELA RF.1.3g - Recognize and read grade-appropriate irregularly spelled words; RF.1.4 - Fluency"
+        }
+      ]
+    },
+    "EN-KS1-D003": {
+      "domain_name": "Reading - Comprehension",
+      "clusters": [
+        {
+          "cluster_name": "Retrieve information and understand story structure",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS1-C016",
+            "EN-KS1-C018",
+            "EN-KS1-C023"
+          ],
+          "rationale": "Retrieval, story structure and sequencing events are the literal-comprehension trio that anchor a reader in what a text actually says before moving to inference; they are naturally co-taught around any narrative.",
+          "inspired_by": "CC ELA RL.1.1 - Key Ideas and Details; RL.1.3 - Describe characters, settings, events"
+        },
+        {
+          "cluster_name": "Infer meaning and make predictions using text clues",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C014",
+            "EN-KS1-C015",
+            "EN-KS1-C017"
+          ],
+          "rationale": "Prediction, inference and connecting reading to experience are the three interpretive moves that take pupils beyond the literal; they are mutually reinforcing and characteristically taught together in guided reading.",
+          "inspired_by": "CC ELA RL.1.1 - Ask and answer questions; RL.1.7 - Use illustrations and details"
+        },
+        {
+          "cluster_name": "Discuss texts, recognise literary language and perform poetry",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C019",
+            "EN-KS1-C020",
+            "EN-KS1-C021",
+            "EN-KS1-C022"
+          ],
+          "rationale": "Vocabulary development, book discussion, reciting poetry and recognising literary language patterns all operate at the level of response to literature and are characteristically practised together around shared class texts.",
+          "inspired_by": "CC ELA RL.1.4 - Identify words and phrases that suggest feelings; RL.1.10 - Range of reading"
+        },
+        {
+          "cluster_name": "Monitor and self-correct while reading independently",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C024"
+          ],
+          "rationale": "Self-correction is a metacognitive reading strategy that operates across all text types and comprehension skills; as the sole concept in this functional category it forms a single-concept cluster.",
+          "inspired_by": "CC ELA RF.1.4c - Use context to confirm or self-correct word recognition and understanding"
+        }
+      ]
+    },
+    "EN-KS1-D004": {
+      "domain_name": "Writing - Transcription (Spelling)",
+      "clusters": [
+        {
+          "cluster_name": "Apply phonics knowledge to spell words",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS1-C025",
+            "EN-KS1-C026"
+          ],
+          "rationale": "Spelling using phonemes is the primary productive spelling strategy; learning exception word spellings is the complementary memorisation strategy for words the phonics route cannot reach \u2014 taught in parallel from the start.",
+          "inspired_by": "CC ELA L.1.2d - Use conventional spelling for words with common spelling patterns"
+        },
+        {
+          "cluster_name": "Understand and apply prefixes, suffixes and root words",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C027",
+            "EN-KS1-C028",
+            "EN-KS1-C029"
+          ],
+          "rationale": "Suffixes, prefixes and root words form a mutually defining morphological trio; C029 explicitly lists C027 and C028 in its co_teach_hints, and all three are required to understand word formation.",
+          "inspired_by": "CC ELA L.1.4b - Use frequently occurring affixes as clues to word meaning"
+        },
+        {
+          "cluster_name": "Spell plurals, homophones and words with regular patterns",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C030",
+            "EN-KS1-C033",
+            "EN-KS1-C034"
+          ],
+          "rationale": "Plural formation, homophones and spelling patterns are the three pattern-application challenges at KS1 \u2014 plural rules interact with suffix rules, and homophones highlight the difference between sound and spelling; C030 co_teach_hints link to all three.",
+          "inspired_by": "CC ELA L.1.2e - Spell untaught words phonetically; L.2.2e - Consult reference materials"
+        },
+        {
+          "cluster_name": "Use apostrophes for contractions and singular possession",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C031",
+            "EN-KS1-C032"
+          ],
+          "rationale": "Contractions and possessive apostrophes (singular) are the two KS1 apostrophe functions; C032 lists C031 in its co_teach_hints and both are most effectively taught together by contrast.",
+          "inspired_by": "CC ELA L.1.2b - Use end punctuation for sentences; L.2.2c - Use an apostrophe"
+        }
+      ]
+    },
+    "EN-KS1-D005": {
+      "domain_name": "Writing - Transcription (Handwriting)",
+      "clusters": [
+        {
+          "cluster_name": "Develop correct pencil grip, posture and letter formation",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS1-C035",
+            "EN-KS1-C036",
+            "EN-KS1-C037"
+          ],
+          "rationale": "Pencil grip, posture and letter formation are the foundational physical-motor prerequisites for handwriting; letter families (C037) scaffold formation by grouping letters with similar stroke patterns, and C037 lists C036 in its co_teach_hints.",
+          "inspired_by": "CC ELA L.1.1a - Print all upper- and lowercase letters"
+        },
+        {
+          "cluster_name": "Form capital letters, digits and join strokes with correct sizing and spacing",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C038",
+            "EN-KS1-C039",
+            "EN-KS1-C040",
+            "EN-KS1-C041",
+            "EN-KS1-C042"
+          ],
+          "rationale": "Capital letter formation, digit formation, letter sizing, joining strokes and word spacing collectively constitute the quality and legibility dimensions of handwriting \u2014 all co-taught once basic formation is secure; C039 lists C036, C038, C040, C041 and C042 in its co_teach_hints.",
+          "inspired_by": "CC ELA L.1.1a - Print all letters; L.2.3a - Use cursive or joined writing"
+        }
+      ]
+    },
+    "EN-KS1-D006": {
+      "domain_name": "Writing - Composition",
+      "clusters": [
+        {
+          "cluster_name": "Plan, rehearse and compose sentences orally before writing",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS1-C043",
+            "EN-KS1-C044",
+            "EN-KS1-C048"
+          ],
+          "rationale": "Oral rehearsal, sentence composition and planning writing are the pre-writing and drafting skills that scaffold the transition from speech to text; C044 lists C043 in its co_teach_hints and the three together represent the plan-compose cycle.",
+          "inspired_by": "CC ELA W.1.5 - With guidance, focus on a topic, respond to questions and suggestions"
+        },
+        {
+          "cluster_name": "Sequence narratives and write for different purposes",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C045",
+            "EN-KS1-C047"
+          ],
+          "rationale": "Narrative sequencing and writing for different purposes are the core compositional challenges at KS1 \u2014 the ability to order events and to vary text type are taught in tandem across the year.",
+          "inspired_by": "CC ELA W.1.3 - Write narratives; W.1.1 - Write opinion pieces"
+        },
+        {
+          "cluster_name": "Evaluate, proof-read and perform own writing",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C046",
+            "EN-KS1-C049",
+            "EN-KS1-C050",
+            "EN-KS1-C051"
+          ],
+          "rationale": "Re-reading for sense, evaluating, proof-reading and reading aloud with expression are the revision and performance cycle that closes the writing process at KS1; co_teach_hints across C044-C051 show these are tightly interwoven.",
+          "inspired_by": "CC ELA W.1.5 - With guidance, strengthen writing by revising and editing"
+        }
+      ]
+    },
+    "EN-KS1-D007": {
+      "domain_name": "Writing - Vocabulary, Grammar and Punctuation",
+      "clusters": [
+        {
+          "cluster_name": "Demarcate sentences with capital letters and end punctuation",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS1-C052",
+            "EN-KS1-C053",
+            "EN-KS1-C054",
+            "EN-KS1-C055",
+            "EN-KS1-C056"
+          ],
+          "rationale": "Sentence boundaries, capital letters for sentence starts, full stops, question marks and exclamation marks are the sentence-demarcation cluster \u2014 the non-negotiable punctuation taught from Y1; co_teach_hints on C055 list all related marks.",
+          "inspired_by": "CC ELA L.1.2a-b - Capitalize the first word; use end punctuation for sentences"
+        },
+        {
+          "cluster_name": "Understand and use word classes: nouns, verbs, adjectives and adverbs",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C066",
+            "EN-KS1-C067",
+            "EN-KS1-C068",
+            "EN-KS1-C069",
+            "EN-KS1-C071"
+          ],
+          "rationale": "The four core word classes \u2014 nouns, verbs, adjectives and adverbs \u2014 plus grammatical terminology are taught together as a metalinguistic system; C068 lists C066, C067 and C069 in co_teach_hints and C071 names all of them.",
+          "inspired_by": "CC ELA L.1.1 - Demonstrate command of conventions; understand parts of speech"
+        },
+        {
+          "cluster_name": "Join clauses using conjunctions, coordination and subordination",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C058",
+            "EN-KS1-C063",
+            "EN-KS1-C064"
+          ],
+          "rationale": "The conjunction 'and', subordination (when/if/that/because) and co-ordination (or/and/but) are the three clause-joining mechanisms at KS1; C064 co_teach_hints list C058 and C063 directly.",
+          "inspired_by": "CC ELA L.1.1g - Use frequently occurring conjunctions"
+        },
+        {
+          "cluster_name": "Expand noun phrases, use verb tenses and commas in lists",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C059",
+            "EN-KS1-C060",
+            "EN-KS1-C061",
+            "EN-KS1-C062",
+            "EN-KS1-C065"
+          ],
+          "rationale": "Sentence types, expanded noun phrases, present/past tense, progressive verb forms and commas in lists are the grammatical structures that build expressive range within the sentence; co_teach_hints on C062 link it to C061 and verb forms.",
+          "inspired_by": "CC ELA L.1.1 - Use verbs to convey a sense of past, present, and future; L.1.2c - Use commas in a series"
+        },
+        {
+          "cluster_name": "Use capital letters for proper nouns, compound words and Standard English",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS1-C057",
+            "EN-KS1-C070",
+            "EN-KS1-C072"
+          ],
+          "rationale": "Capital letters for proper nouns, compound words and Standard English are the three word-level conventions that complete the KS1 VGP repertoire; they are best taught together through vocabulary-rich contexts.",
+          "inspired_by": "CC ELA L.1.2a - Capitalize dates and names of people; L.1.1 - Produce complete sentences"
+        }
+      ]
+    },
+    "EN-Y3-D001": {
+      "domain_name": "Spoken Language",
+      "clusters": [
+        {
+          "cluster_name": "Listen actively, respond appropriately and question to deepen understanding",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y3-C001",
+            "EN-Y3-C002",
+            "EN-Y3-C003"
+          ],
+          "rationale": "Active listening, relevant questioning and vocabulary-building strategies are the receptive and inquiry skills that must be established before pupils can contribute productively; C001 lists C002 in its co_teach_hints.",
+          "inspired_by": "CC ELA SL.3.1 - Engage effectively in collaborative discussions"
+        },
+        {
+          "cluster_name": "Articulate and justify opinions in structured spoken contributions",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C004",
+            "EN-Y3-C005",
+            "EN-Y3-C006"
+          ],
+          "rationale": "Justifying opinions, giving structured descriptions/explanations and collaborative conversation are the expressive spoken language skills built on the listening foundation; C004 lists C005 and C006 in its co_teach_hints.",
+          "inspired_by": "CC ELA SL.3.4 - Report on a topic with appropriate facts and details"
+        },
+        {
+          "cluster_name": "Use exploratory talk, evaluate viewpoints and adapt register for audience",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C007",
+            "EN-Y3-C008",
+            "EN-Y3-C009",
+            "EN-Y3-C010",
+            "EN-Y3-C011",
+            "EN-Y3-C012"
+          ],
+          "rationale": "Exploratory talk, audible/fluent speech, spoken performance and drama, audience engagement, evaluating viewpoints and register awareness are the upper-layer spoken language competencies; C007 co_teach_hints include C004 and C011, tying all together.",
+          "inspired_by": "CC ELA SL.3.4 - Speak in complete sentences; SL.3.6 - Speak audibly in formal settings"
+        }
+      ]
+    },
+    "EN-Y3-D002": {
+      "domain_name": "Reading - Word Reading",
+      "clusters": [
+        {
+          "cluster_name": "Use root words and morphology to decode and understand new words",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y3-C013",
+            "EN-Y3-C014",
+            "EN-Y3-C016"
+          ],
+          "rationale": "Root words, prefixes/suffixes (etymology and morphology) and decoding strategies for longer words are the three interdependent strategies pupils use to read unfamiliar multisyllabic words; C013 lists C014 and C016 in co_teach_hints.",
+          "inspired_by": "CC ELA RF.3.3 - Know and apply grade-level phonics and word analysis skills"
+        },
+        {
+          "cluster_name": "Read and spell exception words from the Years 3-4 statutory list",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C015"
+          ],
+          "rationale": "The Years 3-4 exception words list is a discrete statutory requirement requiring memorisation; it forms its own cluster as it is pedagogically distinct from morphological strategies.",
+          "inspired_by": "CC ELA RF.3.3d - Read grade-appropriate irregularly spelled words"
+        }
+      ]
+    },
+    "EN-Y3-D003": {
+      "domain_name": "Reading - Comprehension",
+      "clusters": [
+        {
+          "cluster_name": "Read widely across fiction, poetry and non-fiction to build positive habits",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y3-C017",
+            "EN-Y3-C018",
+            "EN-Y3-C033"
+          ],
+          "rationale": "Wide reading for positive attitudes, reading for different purposes and silent reading with understanding are the engagement and reading-habit concepts that create the conditions for all other comprehension skills.",
+          "inspired_by": "CC ELA RL.3.10 - Read and comprehend literature at grade-level complexity"
+        },
+        {
+          "cluster_name": "Recognise themes, conventions and language in fiction and poetry",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C020",
+            "EN-Y3-C021",
+            "EN-Y3-C022",
+            "EN-Y3-C023",
+            "EN-Y3-C024"
+          ],
+          "rationale": "Fairy stories/myths/legends, themes and conventions, poetry and play performance, effective language in texts, and poetic forms are the literary knowledge and appreciation cluster; they are all taught in the context of shared literary texts.",
+          "inspired_by": "CC ELA RL.3.5 - Refer to parts of stories; RL.3.6 - Distinguish own point of view"
+        },
+        {
+          "cluster_name": "Infer, predict and summarise with evidence from texts",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C025",
+            "EN-Y3-C026",
+            "EN-Y3-C027",
+            "EN-Y3-C028",
+            "EN-Y3-C029"
+          ],
+          "rationale": "Comprehension monitoring, questioning, drawing inferences with evidence, prediction and identifying main ideas are the active comprehension strategies that pupils apply during and after reading; C027 co_teach_hints list C026, C028 and C029.",
+          "inspired_by": "CC ELA RL.3.1 - Ask and answer questions; RI.3.2 - Determine the main idea"
+        },
+        {
+          "cluster_name": "Analyse how language, structure and presentation create meaning",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C030",
+            "EN-Y3-C031",
+            "EN-Y3-C032",
+            "EN-Y3-C019"
+          ],
+          "rationale": "Language, structure and presentation contributing to meaning; retrieving from non-fiction; discussion about books; and dictionary use for comprehension are the analytical and research skills that complete the comprehension domain; C030 co_teach_hints list C031 and C032.",
+          "inspired_by": "CC ELA RI.3.5 - Use text features and search tools; RL.3.4 - Determine meaning of words and phrases"
+        }
+      ]
+    },
+    "EN-Y3-D004": {
+      "domain_name": "Writing - Transcription (Spelling)",
+      "clusters": [
+        {
+          "cluster_name": "Apply prefixes, suffixes and doubling rules to spell derived words",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y3-C034",
+            "EN-Y3-C035"
+          ],
+          "rationale": "Spelling rules for prefixes/suffixes and the suffix doubling rule for polysyllabic words are the two morphological spelling rules introduced in Y3; C035 lists C034 in its co_teach_hints.",
+          "inspired_by": "CC ELA L.3.2e - Use conventional spelling for high-frequency and other studied words"
+        },
+        {
+          "cluster_name": "Learn spelling patterns from etymology and the statutory word list",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C036",
+            "EN-Y3-C037",
+            "EN-Y3-C038"
+          ],
+          "rationale": "Homophones (Y3-4), etymology-based spelling patterns (Greek, Latin, French) and the Years 3-4 statutory word list are the knowledge-based spelling strands requiring memorisation and pattern recognition.",
+          "inspired_by": "CC ELA L.3.2f - Use spelling patterns and generalizations"
+        },
+        {
+          "cluster_name": "Use apostrophes, dictionaries and dictation to secure accurate spelling",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C039",
+            "EN-Y3-C040",
+            "EN-Y3-C041"
+          ],
+          "rationale": "Possessive apostrophe with plural nouns, dictionary use for spelling, and writing from dictation are the application and accuracy-checking skills that consolidate all spelling learning into self-monitoring practice.",
+          "inspired_by": "CC ELA L.3.2g - Consult reference materials to check and correct spellings"
+        }
+      ]
+    },
+    "EN-Y3-D005": {
+      "domain_name": "Writing - Transcription (Handwriting)",
+      "clusters": [
+        {
+          "cluster_name": "Join letters fluently and develop consistent handwriting quality",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C042",
+            "EN-Y3-C043"
+          ],
+          "rationale": "Joining strokes and handwriting quality/consistency are the two aspects of the Y3 handwriting curriculum \u2014 the mechanics of joining and the quality standards to achieve; taught together throughout.",
+          "inspired_by": "CC ELA L.3.3 - Use knowledge of language and its conventions when writing"
+        }
+      ]
+    },
+    "EN-Y3-D006": {
+      "domain_name": "Writing - Composition",
+      "clusters": [
+        {
+          "cluster_name": "Plan writing from model texts and generate ideas",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y3-C044",
+            "EN-Y3-C045",
+            "EN-Y3-C046"
+          ],
+          "rationale": "Planning from model texts, generating and recording ideas, and oral rehearsal of sentences are the pre-writing stages; C046 co_teach_hints list C044 and C045 explicitly.",
+          "inspired_by": "CC ELA W.3.5 - Plan, revise, and edit writing with guidance"
+        },
+        {
+          "cluster_name": "Organise writing into paragraphs with narrative and non-fiction structures",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C047",
+            "EN-Y3-C048",
+            "EN-Y3-C049"
+          ],
+          "rationale": "Paragraphing, narrative elements (setting, character, plot) and organisational devices in non-fiction are the structural composition skills that give writing its shape in Y3.",
+          "inspired_by": "CC ELA W.3.3 - Write narratives; W.3.2 - Write informative/explanatory texts"
+        },
+        {
+          "cluster_name": "Evaluate, edit and perform own writing",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C050",
+            "EN-Y3-C051",
+            "EN-Y3-C052",
+            "EN-Y3-C053"
+          ],
+          "rationale": "Evaluating own and others' writing, editing for grammar/vocabulary/consistency, proof-reading and reading aloud own writing are the revision and presentation cycle; C051 lists C052 in its co_teach_hints.",
+          "inspired_by": "CC ELA W.3.5 - With guidance, revise and edit; SL.3.4 - Report and speak appropriately"
+        }
+      ]
+    },
+    "EN-Y3-D007": {
+      "domain_name": "Writing - Vocabulary, Grammar and Punctuation",
+      "clusters": [
+        {
+          "cluster_name": "Extend sentences with conjunctions, fronted adverbials and direct speech",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y3-C054",
+            "EN-Y3-C057",
+            "EN-Y3-C058",
+            "EN-Y3-C059"
+          ],
+          "rationale": "Multi-clause sentences with conjunctions, conjunctions/adverbs/prepositions for time and cause, fronted adverbials, and direct speech punctuation are the clause-level and sentence-extending structures introduced in Y3.",
+          "inspired_by": "CC ELA L.3.1h - Use coordinating and subordinating conjunctions"
+        },
+        {
+          "cluster_name": "Use tense, pronouns and nouns for cohesion and grammatical accuracy",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C055",
+            "EN-Y3-C056",
+            "EN-Y3-C066"
+          ],
+          "rationale": "Present perfect tense, pronoun choice for cohesion and Standard English awareness are the grammatical accuracy and cohesion concepts; C056 lists C055 in its co_teach_hints and C055 lists C066.",
+          "inspired_by": "CC ELA L.3.1 - Explain the function of nouns, pronouns, verbs, adjectives, and adverbs"
+        },
+        {
+          "cluster_name": "Build vocabulary through prefixes, word families and morphological knowledge",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C060",
+            "EN-Y3-C061",
+            "EN-Y3-C062",
+            "EN-Y3-C065"
+          ],
+          "rationale": "Noun formation using prefixes, articles a/an, word families and Year 3 grammatical terminology are the vocabulary and metalinguistic knowledge concepts; C060 co_teach_hints include C061 and C062.",
+          "inspired_by": "CC ELA L.3.4 - Determine meaning of words and phrases; L.3.4b - Determine meaning using affixes"
+        },
+        {
+          "cluster_name": "Organise writing using paragraphs, headings and sub-headings",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y3-C063",
+            "EN-Y3-C064"
+          ],
+          "rationale": "Paragraphs to group related material and headings/sub-headings are the two text-organisation concepts that pupils understand at the knowledge level in Y3 before applying them in composition; best taught together.",
+          "inspired_by": "CC ELA RI.3.5 - Use text features including headings; W.3.2a - Introduce a topic using grouping"
+        }
+      ]
+    },
+    "EN-Y4-D001": {
+      "domain_name": "Spoken Language",
+      "clusters": [
+        {
+          "cluster_name": "Listen actively, question and build vocabulary in discussion",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y4-C001",
+            "EN-Y4-C002",
+            "EN-Y4-C003"
+          ],
+          "rationale": "Active listening, relevant questioning and vocabulary-building strategies are the foundational receptive skills; C001 lists C003 in co_teach_hints, establishing the trio as the entry point to Y4 spoken language.",
+          "inspired_by": "CC ELA SL.4.1 - Engage effectively in collaborative discussions"
+        },
+        {
+          "cluster_name": "Articulate opinions, give structured contributions and engage audiences",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C004",
+            "EN-Y4-C005",
+            "EN-Y4-C006",
+            "EN-Y4-C010"
+          ],
+          "rationale": "Articulating/justifying opinions, structured descriptions/explanations, collaborative conversation and audience engagement are the expressive spoken skills; C006 co_teach_hints include C003 and C010.",
+          "inspired_by": "CC ELA SL.4.4 - Report on a topic with appropriate facts; SL.4.5 - Add audio or visual elements"
+        },
+        {
+          "cluster_name": "Explore ideas through talk, evaluate viewpoints and adapt register",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C007",
+            "EN-Y4-C008",
+            "EN-Y4-C009",
+            "EN-Y4-C011",
+            "EN-Y4-C012"
+          ],
+          "rationale": "Exploratory talk, audible/fluent speech with Standard English, spoken performance/drama, evaluating different viewpoints and register/audience awareness are the higher-order spoken language skills that complete the Y4 domain; C011 co_teach_hints include C004, C005 and C009.",
+          "inspired_by": "CC ELA SL.4.6 - Differentiate between contexts that call for formal English"
+        }
+      ]
+    },
+    "EN-Y4-D002": {
+      "domain_name": "Reading - Word Reading",
+      "clusters": [
+        {
+          "cluster_name": "Apply morphology and etymology to read and understand unfamiliar words",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C013",
+            "EN-Y4-C014",
+            "EN-Y4-C015"
+          ],
+          "rationale": "Root words, prefixes/suffixes for reading (etymology and morphology), and exception words from Y3-4 form the complete word reading curriculum for Y4; C013 lists C014 in co_teach_hints.",
+          "inspired_by": "CC ELA RF.4.3a - Use combined knowledge of all letter-sound correspondences to decode words"
+        }
+      ]
+    },
+    "EN-Y4-D003": {
+      "domain_name": "Reading - Comprehension",
+      "clusters": [
+        {
+          "cluster_name": "Read widely to develop positive attitudes and reading stamina",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y4-C016",
+            "EN-Y4-C017",
+            "EN-Y4-C065"
+          ],
+          "rationale": "Wide reading for positive attitudes, reading for different purposes and silent reading with understanding are the engagement and independence strand that underpins all comprehension in Y4.",
+          "inspired_by": "CC ELA RL.4.10 - Read and comprehend literature at grade-level complexity"
+        },
+        {
+          "cluster_name": "Recognise literary themes, forms and effective language in texts",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C018",
+            "EN-Y4-C019",
+            "EN-Y4-C020",
+            "EN-Y4-C021",
+            "EN-Y4-C022",
+            "EN-Y4-C023"
+          ],
+          "rationale": "Dictionary use for comprehension, fairy stories/myths/legends, themes and conventions, poetry/play performance, effective language in texts, and poetic forms are the literary knowledge and appreciation cluster; C021 co_teach_hints list all others.",
+          "inspired_by": "CC ELA RL.4.5 - Explain major differences between poems, drama, and prose"
+        },
+        {
+          "cluster_name": "Infer, predict and justify interpretations with textual evidence",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C024",
+            "EN-Y4-C025",
+            "EN-Y4-C026",
+            "EN-Y4-C027",
+            "EN-Y4-C064"
+          ],
+          "rationale": "Comprehension monitoring, questioning, drawing inferences with evidence, prediction from stated/implied detail, and justifying views independently are the evidence-based interpretive skills at the heart of Y4 reading.",
+          "inspired_by": "CC ELA RL.4.1 - Refer to text when explaining; RI.4.8 - Explain how an author uses reasons and evidence"
+        },
+        {
+          "cluster_name": "Summarise main ideas and analyse how language and structure contribute to meaning",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C028",
+            "EN-Y4-C029",
+            "EN-Y4-C030",
+            "EN-Y4-C031"
+          ],
+          "rationale": "Summarising main ideas across paragraphs, language/structure/presentation contributing to meaning, retrieving from non-fiction, and book discussion are the higher-order synthesis skills; C029 and C030 co_teach_hints confirm their interdependence.",
+          "inspired_by": "CC ELA RI.4.2 - Determine the main idea; RI.4.5 - Describe the overall structure of events or concepts"
+        }
+      ]
+    },
+    "EN-Y4-D004": {
+      "domain_name": "Writing - Transcription (Spelling)",
+      "clusters": [
+        {
+          "cluster_name": "Apply prefix and suffix spelling rules to derived words",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y4-C032",
+            "EN-Y4-C033"
+          ],
+          "rationale": "Prefixes/suffixes spelling rules and the suffix doubling rule for polysyllabic words are the morphological spelling rules consolidated across Y4; C033 lists C037 in co_teach_hints (connected to plural possessives).",
+          "inspired_by": "CC ELA L.4.2d - Spell grade-appropriate words correctly"
+        },
+        {
+          "cluster_name": "Spell homophones and words from etymology-based and statutory lists",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C034",
+            "EN-Y4-C035",
+            "EN-Y4-C036"
+          ],
+          "rationale": "Homophones (Y3-4), etymology-based spelling patterns and the statutory Years 3-4 word list are the knowledge-based spelling strands requiring memorisation and pattern recognition through to end of Y4.",
+          "inspired_by": "CC ELA L.4.2 - Demonstrate command of conventions of spelling"
+        },
+        {
+          "cluster_name": "Use apostrophes, dictionaries and dictation to check and apply spelling",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C037",
+            "EN-Y4-C038",
+            "EN-Y4-C039"
+          ],
+          "rationale": "Possessive apostrophe with plural nouns, dictionary use for spelling and writing from dictation complete the Y4 spelling domain; C039 co_teach_hints list C036.",
+          "inspired_by": "CC ELA L.4.2d - Consult reference materials to check and correct spellings"
+        }
+      ]
+    },
+    "EN-Y4-D005": {
+      "domain_name": "Writing - Transcription (Handwriting)",
+      "clusters": [
+        {
+          "cluster_name": "Develop fluent, legible joined handwriting at pace",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C040",
+            "EN-Y4-C041"
+          ],
+          "rationale": "Joining strokes and handwriting fluency/quality are the two complementary aspects of the Y4 handwriting curriculum \u2014 the mechanics and the quality standard \u2014 taught in tandem throughout the year.",
+          "inspired_by": "CC ELA L.3.3 - Use knowledge of language conventions in writing"
+        }
+      ]
+    },
+    "EN-Y4-D006": {
+      "domain_name": "Writing - Composition",
+      "clusters": [
+        {
+          "cluster_name": "Plan, generate ideas and rehearse sentences orally before drafting",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y4-C042",
+            "EN-Y4-C043",
+            "EN-Y4-C044"
+          ],
+          "rationale": "Planning from model texts, generating/recording ideas and oral rehearsal including dialogue are the pre-writing stages that launch the writing process in Y4; C043 co_teach_hints list C042 and C044.",
+          "inspired_by": "CC ELA W.4.5 - With support, plan, revise, and edit writing"
+        },
+        {
+          "cluster_name": "Structure writing using paragraphs and narrative or non-fiction conventions",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C045",
+            "EN-Y4-C046",
+            "EN-Y4-C047"
+          ],
+          "rationale": "Paragraphing, narrative elements (setting, character, plot) and organisational devices in non-fiction are the three structural composition skills that give writing its form in Y4.",
+          "inspired_by": "CC ELA W.4.3 - Write narratives; W.4.2 - Write informative/explanatory texts"
+        },
+        {
+          "cluster_name": "Evaluate, edit and present own writing effectively",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C048",
+            "EN-Y4-C049",
+            "EN-Y4-C050",
+            "EN-Y4-C051"
+          ],
+          "rationale": "Evaluating writing, editing for grammar/vocabulary/consistency, proof-reading and reading aloud own writing are the revision and publication cycle that completes the Y4 writing process.",
+          "inspired_by": "CC ELA W.4.5 - With support, revise and edit; SL.4.4 - Report in an organised manner"
+        }
+      ]
+    },
+    "EN-Y4-D007": {
+      "domain_name": "Writing - Vocabulary, Grammar and Punctuation",
+      "clusters": [
+        {
+          "cluster_name": "Extend sentences with conjunctions, fronted adverbials and direct speech punctuation",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y4-C052",
+            "EN-Y4-C055",
+            "EN-Y4-C056",
+            "EN-Y4-C057"
+          ],
+          "rationale": "Multi-clause sentences, conjunctions/adverbs/prepositions for time and cause, fronted adverbials and direct speech punctuation are the clause-level and sentence-extending structures that Y4 consolidates from Y3; C052 co_teach_hints list C055 and C056.",
+          "inspired_by": "CC ELA L.4.1 - Use relative pronouns and relative adverbs; L.4.2b - Use commas and quotation marks"
+        },
+        {
+          "cluster_name": "Use pronouns, tense and verb forms accurately for grammatical cohesion",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C053",
+            "EN-Y4-C054",
+            "EN-Y4-C059",
+            "EN-Y4-C060"
+          ],
+          "rationale": "Present perfect tense, pronoun choice for cohesion, plural vs possessive -s distinction, and Standard English verb inflections are the grammatical accuracy and cohesion concepts; C054 co_teach_hints list C053, C059 and C060.",
+          "inspired_by": "CC ELA L.4.1b-c - Form and use the progressive verb tenses; use modal auxiliaries"
+        },
+        {
+          "cluster_name": "Expand noun phrases and use figurative and academic vocabulary with precision",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C058",
+            "EN-Y4-C063"
+          ],
+          "rationale": "Expanded noun phrases and figurative language/academic vocabulary are taught together as the vocabulary-enrichment and sentence-level craft tools that extend descriptive and expressive range in Y4 writing.",
+          "inspired_by": "CC ELA L.4.5 - Demonstrate understanding of figurative language"
+        },
+        {
+          "cluster_name": "Organise text using paragraphs, layout and grammatical terminology",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y4-C061",
+            "EN-Y4-C062"
+          ],
+          "rationale": "Paragraphs to organise ideas around a theme and Year 4 grammatical terminology are the organisational and metalinguistic knowledge concepts that complete the Y4 VGP domain; taught together across all writing contexts.",
+          "inspired_by": "CC ELA W.4.2a - Introduce a topic; group information logically"
+        }
+      ]
+    },
+    "EN-Y5-D001": {
+      "domain_name": "Spoken Language",
+      "clusters": [
+        {
+          "cluster_name": "Perform compositions and engage in formal debate and public speaking",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C034",
+            "EN-Y5-C035"
+          ],
+          "rationale": "Performing compositions and public speaking/formal debate are the two upper-KS2 spoken language competencies; C034 co_teach_hints list C035, confirming they are taught together as a performance and formal oracy pair.",
+          "inspired_by": "CC ELA SL.5.4 - Report on a topic, using appropriate facts; SL.5.6 - Adapt speech to formal contexts"
+        }
+      ]
+    },
+    "EN-Y5-D002": {
+      "domain_name": "Reading - Word Reading",
+      "clusters": [
+        {
+          "cluster_name": "Apply morphology, etymology and word building to read and understand new vocabulary",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C036"
+          ],
+          "rationale": "Morphology, etymology and word building is the single integrating concept for the Y5 word reading domain, consolidating knowledge of roots, prefixes, suffixes and word origin to decode and comprehend unfamiliar academic vocabulary.",
+          "inspired_by": "CC ELA RF.5.3a - Use combined knowledge of all letter-sound correspondences, syllabication patterns, and morphology"
+        }
+      ]
+    },
+    "EN-Y5-D003": {
+      "domain_name": "Reading - Comprehension",
+      "clusters": [
+        {
+          "cluster_name": "Read widely across genres and understand literary heritage and cultural diversity",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y5-C014",
+            "EN-Y5-C015"
+          ],
+          "rationale": "Reading widely across genres and literary heritage/cultural diversity are the breadth-of-reading concepts that frame upper-KS2 comprehension; C015 lists C014 in its co_teach_hints.",
+          "inspired_by": "CC ELA RL.5.10 - Read and comprehend literature at grade-level complexity"
+        },
+        {
+          "cluster_name": "Identify themes, literary conventions and make cross-text comparisons",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C016",
+            "EN-Y5-C017"
+          ],
+          "rationale": "Identifying themes/literary conventions and cross-text comparison are the genre and comparative analysis skills that differentiate upper-KS2 from lower-KS2 comprehension; both require extended reading of complete texts.",
+          "inspired_by": "CC ELA RL.5.9 - Compare and contrast stories in the same genre"
+        },
+        {
+          "cluster_name": "Infer with evidence, evaluate authorial language and distinguish fact from opinion",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C018",
+            "EN-Y5-C021",
+            "EN-Y5-C022"
+          ],
+          "rationale": "Advanced inference and evidence-based reasoning, authorial language analysis, and fact vs opinion are the critical reading skills; all three require close reading of both literary and non-fiction texts.",
+          "inspired_by": "CC ELA RL.5.1 - Quote accurately; RI.5.8 - Explain how an author uses reasons and evidence"
+        },
+        {
+          "cluster_name": "Predict, summarise and retrieve information across multi-paragraph texts",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C019",
+            "EN-Y5-C020",
+            "EN-Y5-C023"
+          ],
+          "rationale": "Prediction from stated/implied information, multi-paragraph summarisation, and information retrieval/presentation are the comprehension strategies applied to both fiction and non-fiction; frequently co-taught in the same lesson sequences.",
+          "inspired_by": "CC ELA RI.5.2 - Determine two or more main ideas; RI.5.7 - Draw on information from multiple sources"
+        }
+      ]
+    },
+    "EN-Y5-D004": {
+      "domain_name": "Writing - Transcription (Spelling)",
+      "clusters": [
+        {
+          "cluster_name": "Understand morphology and etymology as the basis for spelling",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y5-C001",
+            "EN-Y5-C002",
+            "EN-Y5-C003"
+          ],
+          "rationale": "Morphology, etymology and root words are the three interconnected conceptual foundations for upper-KS2 spelling; C001 lists C002 in co_teach_hints and C002 lists C001 and C003.",
+          "inspired_by": "CC ELA L.5.4b - Use Greek and Latin affixes and roots as clues to word meaning"
+        },
+        {
+          "cluster_name": "Apply verb prefixes and verb-forming suffixes to build and spell word forms",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C004",
+            "EN-Y5-C005"
+          ],
+          "rationale": "Verb prefixes (dis-, de-, mis-, over-, re-) and verb-forming suffixes (-ate, -ise, -ify) are the word-formation patterns that extend pupils' productive vocabulary at upper KS2; taught together as complementary morphological operations.",
+          "inspired_by": "CC ELA L.5.4b - Use common, grade-appropriate Greek and Latin affixes and roots"
+        },
+        {
+          "cluster_name": "Spell words with silent letters and advanced homophone distinctions",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C006",
+            "EN-Y5-C007"
+          ],
+          "rationale": "Silent letters and homophones/commonly confused words are the two categories of spelling challenge that cannot be resolved by phonics or morphology alone \u2014 both require memorisation supported by meaning context.",
+          "inspired_by": "CC ELA L.5.2e - Spell grade-appropriate words correctly"
+        },
+        {
+          "cluster_name": "Apply complex spelling patterns: -cious/-tious, -cial/-tial, -ant/-ent, -able/-ible",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C008",
+            "EN-Y5-C009",
+            "EN-Y5-C010",
+            "EN-Y5-C011"
+          ],
+          "rationale": "The four families of complex suffix patterns introduced in Y5-6 (-cious/-tious, -cial/-tial, -ant/-ance/-ancy/-ent/-ence/-ency, -able/-ibly/-ible/-ibly) are the statutory upper-KS2 spelling generalisations; C009 lists C002 in co_teach_hints confirming the etymology link.",
+          "inspired_by": "CC ELA L.5.2 - Demonstrate command of spelling conventions"
+        },
+        {
+          "cluster_name": "Use dictionaries and thesauruses to check spellings and select vocabulary",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C012",
+            "EN-Y5-C013"
+          ],
+          "rationale": "Advanced dictionary skills and thesaurus skills are the reference tool competencies that give pupils independence in spelling checking and vocabulary selection; naturally co-taught as paired reference skills.",
+          "inspired_by": "CC ELA L.5.4c - Consult reference materials to find pronunciation and determine meaning"
+        }
+      ]
+    },
+    "EN-Y5-D005": {
+      "domain_name": "Writing - Transcription (Handwriting and Presentation)",
+      "clusters": [
+        {
+          "cluster_name": "Write fluently and present work appropriately for purpose and audience",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C037"
+          ],
+          "rationale": "Fluent handwriting and presentation is the single concept for the Y5 handwriting domain; by Y5 the focus shifts from teaching joins to developing speed and personal style that supports extended writing.",
+          "inspired_by": "CC ELA W.5.6 - Use technology to produce and publish writing"
+        }
+      ]
+    },
+    "EN-Y5-D006": {
+      "domain_name": "Writing - Composition",
+      "clusters": [
+        {
+          "cluster_name": "Plan, draft and write for identified audiences, purposes and forms",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y5-C026",
+            "EN-Y5-C024"
+          ],
+          "rationale": "Audience, purpose and form in writing and pr\u00e9cis writing are the meta-compositional concepts at upper KS2 \u2014 pupils plan explicitly around APF and practise condensive writing as a disciplined planning tool.",
+          "inspired_by": "CC ELA W.5.4 - Produce clear and coherent writing in which development and organization are appropriate to task"
+        },
+        {
+          "cluster_name": "Write cohesive multi-paragraph texts linking ideas across sections",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C025"
+          ],
+          "rationale": "Cohesive devices and paragraph linking is the single Y5 composition concept addressing text-level coherence \u2014 the use of referencing, ellipsis, connectives and lexical chains across paragraphs.",
+          "inspired_by": "CC ELA W.5.2c - Use appropriate transitions to clarify the relationships among ideas"
+        },
+        {
+          "cluster_name": "Write narrative with deliberate craft: character, setting, atmosphere and dialogue",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C027"
+          ],
+          "rationale": "Narrative writing: character, setting, atmosphere and dialogue is the upper-KS2 creative writing concept; pupils are expected to make deliberate authorial choices \u2014 a qualitative shift from lower-KS2 narrative composition.",
+          "inspired_by": "CC ELA W.5.3 - Write narratives to develop real or imagined experiences using effective technique"
+        }
+      ]
+    },
+    "EN-Y5-D007": {
+      "domain_name": "Writing - Vocabulary, Grammar and Punctuation",
+      "clusters": [
+        {
+          "cluster_name": "Use relative clauses, modal verbs and perfect verb forms with grammatical accuracy",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y5-C028",
+            "EN-Y5-C029",
+            "EN-Y5-C031"
+          ],
+          "rationale": "Relative clauses, modal verbs and perfect verb forms are the three new grammatical structures introduced in Y5; all three extend clause-level precision and are best taught together as the Y5 grammar curriculum.",
+          "inspired_by": "CC ELA L.5.1 - Use relative pronouns; use perfect verb tenses; use modal auxiliaries"
+        },
+        {
+          "cluster_name": "Use the passive voice to vary agency and formality in writing",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C030"
+          ],
+          "rationale": "Passive voice is a significant standalone Y5 concept with its own Appendix 2 terminology requirements; its links to formal writing and authorial choice make it conceptually distinct from the active-voice clause structures.",
+          "inspired_by": "CC ELA L.5.1b - Form and use the perfect verb tenses; understand active and passive voice"
+        },
+        {
+          "cluster_name": "Punctuate parenthesis and mark clause boundaries with advanced punctuation",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y5-C032",
+            "EN-Y5-C033"
+          ],
+          "rationale": "Parenthesis punctuation (brackets, dashes, commas) and advanced punctuation for clause boundaries (semi-colons, colons, dashes) are the two Y5 punctuation clusters that extend beyond sentence demarcation into expressive and structural punctuation.",
+          "inspired_by": "CC ELA L.5.2a - Use punctuation to separate items in a series; use a comma to set off introductory elements"
+        }
+      ]
+    },
+    "EN-Y6-D001": {
+      "domain_name": "Spoken Language",
+      "clusters": [
+        {
+          "cluster_name": "Deliver formal presentations and participate in debate with command and clarity",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C045",
+            "EN-Y6-C046"
+          ],
+          "rationale": "Formal presentation/public speaking and discussion/debate/collaborative talk are the two complementary spoken language competencies at Y6; C045 co_teach_hints list C046.",
+          "inspired_by": "CC ELA SL.6.4 - Present claims and findings with pertinent descriptions and facts; SL.6.1 - Engage in collaborative discussions"
+        },
+        {
+          "cluster_name": "Use drama, role play and improvisation to explore language and meaning",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C048"
+          ],
+          "rationale": "Drama: performance, role play and improvisation is the creative spoken language concept at Y6; its focus on enactment, expression and interpretation distinguishes it from the presentational and deliberative spoken language above.",
+          "inspired_by": "CC ELA SL.6.5 - Include multimedia components in presentations"
+        }
+      ]
+    },
+    "EN-Y6-D002": {
+      "domain_name": "Reading - Word Reading",
+      "clusters": [
+        {
+          "cluster_name": "Use morphological analysis and etymological knowledge to acquire vocabulary",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C044"
+          ],
+          "rationale": "Vocabulary acquisition through morphology, etymology and context is the single integrating concept for Y6 word reading; by Y6 pupils deploy all word-analysis strategies automatically to unlock challenging academic and literary vocabulary.",
+          "inspired_by": "CC ELA RF.6.3a - Use combined knowledge of all letter-sound correspondences, syllabication patterns, and morphology"
+        }
+      ]
+    },
+    "EN-Y6-D003": {
+      "domain_name": "Reading - Comprehension",
+      "clusters": [
+        {
+          "cluster_name": "Read broadly across fiction, non-fiction and poetry with sustained independence",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y6-C017",
+            "EN-Y6-C043"
+          ],
+          "rationale": "Reading breadth across a wide range of texts and fluent independent reading/reading stamina are the habits-of-reading concepts at Y6; taught together as the attitudinal and functional prerequisites for all analytical work.",
+          "inspired_by": "CC ELA RL.6.10 - Read and comprehend literature independently and proficiently"
+        },
+        {
+          "cluster_name": "Analyse narrative structure, setting, character and poetic forms",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C018",
+            "EN-Y6-C019",
+            "EN-Y6-C020",
+            "EN-Y6-C021"
+          ],
+          "rationale": "Poetry forms/language, plot/narrative structure, setting/atmosphere, and character/characterisation are the literary architecture concepts; C019 co_teach_hints list C017, C020, C021 and C023.",
+          "inspired_by": "CC ELA RL.6.3 - Describe how a story's plot unfolds; RL.6.5 - Analyze how a particular sentence, chapter, or stanza fits into the overall structure"
+        },
+        {
+          "cluster_name": "Critically evaluate authorial language, structure and effectiveness",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C012"
+          ],
+          "rationale": "Critical evaluation of authorial language and structure is the capstone Y6 comprehension skill \u2014 evaluation that goes beyond identification to judge effect and quality; as the most demanding skill in the domain it merits a single-concept cluster.",
+          "inspired_by": "CC ELA RL.6.4 - Determine the meaning of words and phrases; RL.6.6 - Explain how an author develops the point of view"
+        },
+        {
+          "cluster_name": "Distinguish fact from opinion, compare texts and justify views with evidence",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C022",
+            "EN-Y6-C023"
+          ],
+          "rationale": "Distinguishing fact/opinion and comparing/contrasting texts are the two critical-reading and comparative skills that prepare pupils for secondary-level analytical writing; frequently co-taught using paired non-fiction texts.",
+          "inspired_by": "CC ELA RI.6.6 - Determine an author's point of view; RI.6.9 - Compare and contrast accounts in different formats"
+        }
+      ]
+    },
+    "EN-Y6-D004": {
+      "domain_name": "Writing - Transcription (Spelling)",
+      "clusters": [
+        {
+          "cluster_name": "Apply morphological and etymological strategies to secure accurate spelling",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C024",
+            "EN-Y6-C036"
+          ],
+          "rationale": "Morphological/etymological spelling strategies and the full Y5-6 statutory word list with all accumulated spelling patterns are taught together as the consolidated spelling curriculum at the end of primary; C024 and C036 together represent mastery of the primary spelling programme.",
+          "inspired_by": "CC ELA L.6.2b - Spell correctly"
+        }
+      ]
+    },
+    "EN-Y6-D005": {
+      "domain_name": "Writing - Transcription (Handwriting and Presentation)",
+      "clusters": [
+        {
+          "cluster_name": "Establish a personal handwriting style that is fluent, legible and appropriately adapted",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C049"
+          ],
+          "rationale": "Personal handwriting style and presentation is the single concept for the Y6 handwriting domain; by Y6 the curriculum goal is an established, personal, fluent style rather than the acquisition of new joining techniques.",
+          "inspired_by": "CC ELA W.6.6 - Use technology, including the internet, to produce and publish writing"
+        }
+      ]
+    },
+    "EN-Y6-D006": {
+      "domain_name": "Writing - Composition",
+      "clusters": [
+        {
+          "cluster_name": "Plan and structure extended writing for identified audiences and purposes",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y6-C034",
+            "EN-Y6-C028",
+            "EN-Y6-C029"
+          ],
+          "rationale": "Planning/structuring extended writing, writing for different purposes with appropriate form, and audience awareness in writing are the pre-writing and purpose-setting skills at Y6; C028 co_teach_hints list C029 and C034.",
+          "inspired_by": "CC ELA W.6.4 - Produce clear and coherent writing appropriate to task, purpose, and audience"
+        },
+        {
+          "cluster_name": "Write narrative, non-narrative and poetry with authorial control",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C025",
+            "EN-Y6-C026",
+            "EN-Y6-C027",
+            "EN-Y6-C047"
+          ],
+          "rationale": "Non-narrative writing (explanation, report, persuasion, discussion), narrative writing with authorial control, poetry writing with craft/intention, and writing in a range of forms for authentic purposes are the four text-type production skills at Y6; all linked via C028 co_teach_hints.",
+          "inspired_by": "CC ELA W.6.1 - Write arguments; W.6.2 - Write informative texts; W.6.3 - Write narratives"
+        },
+        {
+          "cluster_name": "Use evidence and quotation to support writing and develop critical thinking",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C031",
+            "EN-Y6-C030",
+            "EN-Y6-C032"
+          ],
+          "rationale": "Using evidence and quotation, pr\u00e9cis and summarisation, and summarising main ideas across paragraphs are the evidence-based writing skills; C031 co_teach_hints list C030 and the three together bridge reading comprehension into writing.",
+          "inspired_by": "CC ELA W.6.9 - Draw evidence from literary or informational texts to support analysis"
+        },
+        {
+          "cluster_name": "Draft, evaluate, edit and improve writing towards conscious grammatical control",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C013",
+            "EN-Y6-C033",
+            "EN-Y6-C035",
+            "EN-Y6-C014",
+            "EN-Y6-C015"
+          ],
+          "rationale": "Conscious grammatical control, drafting/editing/improving, self-evaluation, register control, and secondary school readiness are the metacognitive and quality-improvement concepts that complete Y6 composition; C033 co_teach_hints list C013, C025-C031.",
+          "inspired_by": "CC ELA W.6.5 - With support, develop and strengthen writing by planning, revising, editing, rewriting"
+        }
+      ]
+    },
+    "EN-Y6-D007": {
+      "domain_name": "Writing - Vocabulary, Grammar and Punctuation",
+      "clusters": [
+        {
+          "cluster_name": "Use formal and informal vocabulary, synonyms and nuanced language with precision",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-Y6-C001",
+            "EN-Y6-C002",
+            "EN-Y6-C016"
+          ],
+          "rationale": "Formal vs informal vocabulary, synonyms and antonyms, and nuanced/academic vocabulary are the three vocabulary precision concepts at Y6; C001 co_teach_hints list C002 and C016.",
+          "inspired_by": "CC ELA L.6.5 - Demonstrate understanding of figurative language, word relationships, and nuances in word meanings"
+        },
+        {
+          "cluster_name": "Apply formal grammatical structures including passive voice and subjunctive forms",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C003",
+            "EN-Y6-C010",
+            "EN-Y6-C038",
+            "EN-Y6-C040",
+            "EN-Y6-C041"
+          ],
+          "rationale": "Formal and informal structures/subjunctive, active and passive voice (advanced), sentence structure/grammatical control, perfect verb forms/complex tense, and expanded noun phrases/modal verbs/relative clauses are the grammatical range concepts that Y6 consolidates; C010 co_teach_hints list C040.",
+          "inspired_by": "CC ELA L.6.1 - Ensure that pronouns are in the proper case; use intensive pronouns; use active and passive voice"
+        },
+        {
+          "cluster_name": "Create cohesion across texts using advanced cohesive devices and layout",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C004",
+            "EN-Y6-C005"
+          ],
+          "rationale": "Advanced cohesive devices (repetition, grammatical connections, ellipsis) and layout devices (headings, sub-headings, columns, bullets, tables) are the text-organisation tools at Y6 \u2014 cohesion at sentence level and structure at whole-text level.",
+          "inspired_by": "CC ELA W.6.2a - Introduce a topic and organize ideas using appropriate formatting"
+        },
+        {
+          "cluster_name": "Use advanced punctuation accurately: semi-colons, colons, hyphens and bullet points",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C006",
+            "EN-Y6-C007",
+            "EN-Y6-C008",
+            "EN-Y6-C009",
+            "EN-Y6-C037"
+          ],
+          "rationale": "Semi-colons/colons/dashes for independent clauses, colons for lists/semi-colons within lists, hyphens to avoid ambiguity, bullet point punctuation, and the full primary range of punctuation are the advanced punctuation conventions consolidated at Y6; C007 co_teach_hints list C006 and C037.",
+          "inspired_by": "CC ELA L.6.2a - Use punctuation such as commas, parentheses, or dashes to set off nonrestrictive elements"
+        },
+        {
+          "cluster_name": "Use Standard English and grammatical terminology accurately in formal contexts",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-Y6-C011",
+            "EN-Y6-C039",
+            "EN-Y6-C042"
+          ],
+          "rationale": "Year 6 grammatical terminology, grammatical terminology for metalinguistic discussion, and Standard English/formal speech and writing are the metalinguistic concepts that complete primary English; C039 co_teach_hints list C011 and C042 co_teach_hints list C011.",
+          "inspired_by": "CC ELA L.6.3 - Use knowledge of language and its conventions when writing, speaking, reading, or listening"
+        }
+      ]
+    },
+    "EN-KS3-D001": {
+      "domain_name": "Reading",
+      "clusters": [
+        {
+          "cluster_name": "Read widely across literary traditions, genres and time periods",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS3-C001",
+            "EN-KS3-C002",
+            "EN-KS3-C003",
+            "EN-KS3-C004",
+            "EN-KS3-C005"
+          ],
+          "rationale": "Wide reading breadth, pre-1914 literature, contemporary literature, Shakespeare study, and world literature are the content selection concepts that define the KS3 reading canon; C002 co_teach_hints link it to C001, C003 and C004 as a cohesive reading programme.",
+          "inspired_by": "CC ELA RL.7.10 - Read and comprehend literary texts across a range of complexity"
+        },
+        {
+          "cluster_name": "Develop independent reading habits and stamina",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS3-C006",
+            "EN-KS3-C007",
+            "EN-KS3-C078",
+            "EN-KS3-C080"
+          ],
+          "rationale": "Independent book selection, re-reading for depth, reading for pleasure and reading resilience are the core metacognitive habits that underpin all sustained literacy at KS3.",
+          "inspired_by": "CC ELA RL.7.10 - By the end of the year, read and comprehend literature independently and proficiently"
+        },
+        {
+          "cluster_name": "Appreciate the literary heritage and sustain whole-book reading",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C079",
+            "EN-KS3-C085",
+            "EN-KS3-C086"
+          ],
+          "rationale": "Literary heritage appreciation, whole-book reading and reading in depth build on established reading habits and extend pupils into sustained engagement with canonical texts.",
+          "inspired_by": "CC ELA RL.7.10 - By the end of the year, read and comprehend literature independently and proficiently"
+        },
+        {
+          "cluster_name": "Comprehend challenging texts using vocabulary, inference and monitoring strategies",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C009",
+            "EN-KS3-C010",
+            "EN-KS3-C011",
+            "EN-KS3-C014"
+          ],
+          "rationale": "Contextual vocabulary understanding, complex inference, textual evidence citation, and comprehension monitoring are the active reading strategies for engaging with challenging literary and non-fiction texts; C011 co_teach_hints list C009, C010 and C014.",
+          "inspired_by": "CC ELA RL.7.1 - Cite several pieces of textual evidence; RL.7.4 - Determine the meaning of words and phrases"
+        },
+        {
+          "cluster_name": "Analyse how language, grammar, structure and figurative devices create meaning",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C015",
+            "EN-KS3-C016",
+            "EN-KS3-C017",
+            "EN-KS3-C018"
+          ],
+          "rationale": "Figurative language analysis, vocabulary choice analysis, grammatical effect analysis, and text structure analysis are the four analytical tools that pupils apply across all text types; C018 co_teach_hints list C015, C016, C017 and C018.",
+          "inspired_by": "CC ELA RL.7.4 - Determine meanings of words and figurative language; RL.7.5 - Analyze how a drama's or poem's form or structure contributes to meaning"
+        },
+        {
+          "cluster_name": "Interpret texts in historical and cultural context and evaluate authorial purpose",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C012",
+            "EN-KS3-C013"
+          ],
+          "rationale": "Purpose and audience analysis and historical/cultural context are the contextual interpretation skills that move pupils from textual analysis to reading texts as culturally situated acts; closely co-taught in the same lesson sequences.",
+          "inspired_by": "CC ELA RL.7.6 - Analyse how an author develops and contrasts the points of view of different characters"
+        },
+        {
+          "cluster_name": "Analyse poetic form, convention and figurative language",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C019",
+            "EN-KS3-C020"
+          ],
+          "rationale": "Poetic conventions and device analysis are tightly linked skills that form the analytical entry point to studying poetry as a form.",
+          "inspired_by": "CC ELA RL.7.3 - Analyze how particular elements of a story or drama interact"
+        },
+        {
+          "cluster_name": "Analyse narrative structure, character and dramatic performance",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C021",
+            "EN-KS3-C022",
+            "EN-KS3-C023",
+            "EN-KS3-C024",
+            "EN-KS3-C025"
+          ],
+          "rationale": "Setting, plot, characterisation, dramatic performance and staging interpretation form the interconnected analytical toolkit for studying prose and drama as literary forms.",
+          "inspired_by": "CC ELA RL.7.3 - Analyze how particular elements of a story or drama interact"
+        },
+        {
+          "cluster_name": "Compare texts critically and conduct in-depth author study",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C026",
+            "EN-KS3-C027"
+          ],
+          "rationale": "Cross-textual comparison and author study in depth are the highest-order KS3 reading skills that synthesise analytical, contextual and literary knowledge into comparative critical response.",
+          "inspired_by": "CC ELA RL.7.9 - Compare and contrast a fictional portrayal of a time, place, or character"
+        }
+      ]
+    },
+    "EN-KS3-D002": {
+      "domain_name": "Writing - Composition",
+      "clusters": [
+        {
+          "cluster_name": "Plan, draft and structure formal essays and extended writing",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS3-C028",
+            "EN-KS3-C029",
+            "EN-KS3-C030",
+            "EN-KS3-C081",
+            "EN-KS3-C087",
+            "EN-KS3-C088"
+          ],
+          "rationale": "Formal expository essay, formal narrative essay, extended writing stamina, writing resilience, writing planning and drafting process are the foundational writing process concepts at KS3; C029 lists C031 in co_teach_hints and C088 (drafting) is listed in C048 co_teach_hints alongside C087.",
+          "inspired_by": "CC ELA W.7.4 - Produce clear and coherent writing appropriate to task; W.7.5 - Plan, revise, and edit"
+        },
+        {
+          "cluster_name": "Write imaginatively and creatively across literary forms",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C031",
+            "EN-KS3-C032",
+            "EN-KS3-C033",
+            "EN-KS3-C034"
+          ],
+          "rationale": "Story writing, script writing, poetry composition and presentation scripting are the core creative writing forms required by the NC at KS3, grouped by their shared imaginative purpose.",
+          "inspired_by": "CC ELA W.7.1 - Write arguments; W.7.2 - Write informative texts; W.7.3 - Write narratives"
+        },
+        {
+          "cluster_name": "Write persuasively, formally and for a range of real-world purposes",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C035",
+            "EN-KS3-C036",
+            "EN-KS3-C037"
+          ],
+          "rationale": "Argumentative writing, formal/personal letter writing and summarisation are the transactional writing skills that prepare pupils for non-fiction writing demands in assessment and adult life.",
+          "inspired_by": "CC ELA W.7.1 - Write arguments; W.7.2 - Write informative texts; W.7.3 - Write narratives"
+        },
+        {
+          "cluster_name": "Support arguments with evidence and adapt writing to audience and purpose",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C038",
+            "EN-KS3-C039",
+            "EN-KS3-C042",
+            "EN-KS3-C043",
+            "EN-KS3-C044",
+            "EN-KS3-C045"
+          ],
+          "rationale": "Evidence-based argumentation, form selection, rhetorical devices, literary devices in writing, audience awareness and purpose awareness are the craft-and-rhetoric skills for effective persuasive and creative writing; all linked via C048 co_teach_hints.",
+          "inspired_by": "CC ELA W.7.1b - Support claim(s) with logical reasoning and relevant evidence; W.7.4 - Adapt writing to purpose"
+        },
+        {
+          "cluster_name": "Revise, edit and proof-read writing for coherence, grammar and accuracy",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C046",
+            "EN-KS3-C048",
+            "EN-KS3-C082",
+            "EN-KS3-C089"
+          ],
+          "rationale": "Writing revision for coherence, structural editing, revision mindset and proof-reading are the editing and quality-improvement concepts; C048 co_teach_hints list C046, C082 and C089, confirming they belong together.",
+          "inspired_by": "CC ELA W.7.5 - With support, strengthen writing by revising and editing"
+        }
+      ]
+    },
+    "EN-KS3-D003": {
+      "domain_name": "Grammar and Vocabulary",
+      "clusters": [
+        {
+          "cluster_name": "Acquire and use sophisticated vocabulary with precision and effect",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS3-C008",
+            "EN-KS3-C040",
+            "EN-KS3-C047"
+          ],
+          "rationale": "Advanced vocabulary acquisition, sophisticated vocabulary use and vocabulary refinement are the vocabulary development trio; C008 co_teach_hints list C040 and C047, and C047 co_teach_hints list all three.",
+          "inspired_by": "CC ELA L.7.4 - Determine or clarify the meaning of unknown and multiple-meaning words"
+        },
+        {
+          "cluster_name": "Apply grammatical variety and make conscious linguistic choices in writing",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C041",
+            "EN-KS3-C054"
+          ],
+          "rationale": "Grammatical variety in writing and conscious linguistic choice are the two craft concepts that distinguish KS3 grammar from KS2 \u2014 pupils deploy constructions purposefully to create specific effects; C041 lists C054 in co_teach_hints.",
+          "inspired_by": "CC ELA L.7.3 - Use knowledge of language conventions when writing, speaking, reading, or listening"
+        },
+        {
+          "cluster_name": "Spell accurately and punctuate complex sentences with precision",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C049",
+            "EN-KS3-C050",
+            "EN-KS3-C051"
+          ],
+          "rationale": "Advanced spelling accuracy, advanced punctuation and grammatical accuracy in writing are the technical accuracy skills that consolidate primary learning for application in KS3 writing; C050 lists C051 in co_teach_hints.",
+          "inspired_by": "CC ELA L.7.2 - Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling"
+        },
+        {
+          "cluster_name": "Analyse grammatical structures in challenging texts and develop metalinguistic understanding",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C052",
+            "EN-KS3-C053",
+            "EN-KS3-C061",
+            "EN-KS3-C062"
+          ],
+          "rationale": "Grammatical analysis of texts, grammatical terminology, literary terminology and metalinguistic discussion are the analytical and metalinguistic concepts; C053 and C061 underpin all terminology-dependent analysis.",
+          "inspired_by": "CC ELA L.7.1 - Demonstrate command of conventions of English grammar; RL.7.4 - Determine technical meanings"
+        },
+        {
+          "cluster_name": "Understand language variety, register, Standard English and spoken-written differences",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C055",
+            "EN-KS3-C056",
+            "EN-KS3-C057",
+            "EN-KS3-C058",
+            "EN-KS3-C059"
+          ],
+          "rationale": "Register awareness, spoken vs written language, Standard English understanding, language variety awareness, and Standard English in writing are the sociolinguistic and register concepts; C058 co_teach_hints list C056, C057 and C059.",
+          "inspired_by": "CC ELA L.7.3a - Choose language that expresses ideas precisely and concisely"
+        }
+      ]
+    },
+    "EN-KS3-D004": {
+      "domain_name": "Spoken English",
+      "clusters": [
+        {
+          "cluster_name": "Use Standard English fluently in formal and informal spoken contexts",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "EN-KS3-C060",
+            "EN-KS3-C063",
+            "EN-KS3-C064"
+          ],
+          "rationale": "Standard English in speech, formal spoken English contexts and informal spoken English contexts are the register-awareness concepts that establish when and how to deploy different language varieties; naturally taught together by contrast.",
+          "inspired_by": "CC ELA SL.7.6 - Adapt speech to a variety of contexts and tasks"
+        },
+        {
+          "cluster_name": "Organise, express and maintain focus in speeches and presentations",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C065",
+            "EN-KS3-C066",
+            "EN-KS3-C067"
+          ],
+          "rationale": "Speech structure/organisation, clear idea expression and maintaining focus are the presentation-craft skills that give pupils command over their spoken delivery; they are co-taught in the context of prepared speeches and debates.",
+          "inspired_by": "CC ELA SL.7.4 - Present claims and findings; emphasize salient points"
+        },
+        {
+          "cluster_name": "Debate, discuss, build on others' ideas and summarise spoken contributions",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C068",
+            "EN-KS3-C069",
+            "EN-KS3-C070",
+            "EN-KS3-C071",
+            "EN-KS3-C083",
+            "EN-KS3-C084"
+          ],
+          "rationale": "Formal debate participation, structured discussion skills, summarising spoken contributions, building on others' ideas, speaking confidence and collaborative discussion skills are the dialogic spoken language competencies; C071 co_teach_hints list C069, C070 and C083.",
+          "inspired_by": "CC ELA SL.7.1 - Engage effectively in collaborative discussions; SL.7.1d - Acknowledge new information"
+        },
+        {
+          "cluster_name": "Use drama, improvisation and performance techniques to generate and explore language",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "EN-KS3-C072",
+            "EN-KS3-C073",
+            "EN-KS3-C074",
+            "EN-KS3-C075",
+            "EN-KS3-C076",
+            "EN-KS3-C077"
+          ],
+          "rationale": "Dramatic improvisation, script rehearsal, script and poetry performance, performance techniques, language generation through drama, and discussing language through drama are the drama and performance concepts; C077 co_teach_hints list C072-C075.",
+          "inspired_by": "CC ELA SL.7.5 - Include multimedia components in presentations"
+        }
+      ]
+    },
+    "ENL-KS4-D001": {
+      "domain_name": "Reading \u2014 Critical and Analytical",
+      "clusters": [
+        {
+          "cluster_name": "Identify and interpret explicit and implicit meaning from texts",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "ENL-KS4-C001"
+          ],
+          "rationale": "Explicit and implicit meaning is the foundational reading concept at GCSE English Language; the ability to distinguish surface and inferred meaning underpins all analytical and evaluative work on unseen texts.",
+          "inspired_by": "CC ELA RI.9-10.1 - Cite strong and thorough textual evidence"
+        },
+        {
+          "cluster_name": "Analyse how writers use language and structural techniques for effect",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ENL-KS4-C002",
+            "ENL-KS4-C003"
+          ],
+          "rationale": "Language analysis (writers' methods) and structural analysis are the two GCSE AO2 skills; both require pupils to identify the technique, explain the effect and evaluate the intent \u2014 best taught together so pupils experience analysis at word and whole-text level simultaneously.",
+          "inspired_by": "CC ELA RL.9-10.4 - Determine the meaning of words and phrases; RL.9-10.5 - Analyze how an author's choices contribute to overall structure"
+        },
+        {
+          "cluster_name": "Evaluate the effectiveness of writers' choices with critical judgement",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ENL-KS4-C004"
+          ],
+          "rationale": "Critical evaluation is the GCSE AO4 skill \u2014 making and sustaining a personal evaluative judgement about a text's effectiveness; it builds on analysis but demands a distinct evaluative register and is assessed separately.",
+          "inspired_by": "CC ELA RL.9-10.6 - Analyze a particular point of view or cultural experience reflected in a work"
+        },
+        {
+          "cluster_name": "Compare writers' perspectives, ideas and methods across texts from different periods",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ENL-KS4-C005",
+            "ENL-KS4-C006"
+          ],
+          "rationale": "Comparing writers' perspectives and understanding 19th-century non-fiction texts are the two concepts that together constitute the GCSE cross-text comparison task; the 19th-century text context is required knowledge for informed comparison.",
+          "inspired_by": "CC ELA RI.9-10.9 - Analyze seminal U.S. documents; compare and contrast documents"
+        }
+      ]
+    },
+    "ENL-KS4-D002": {
+      "domain_name": "Writing \u2014 Composition and Effect",
+      "clusters": [
+        {
+          "cluster_name": "Write narrative and descriptive texts with craft, control and original voice",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "ENL-KS4-C009"
+          ],
+          "rationale": "Narrative and descriptive writing is one of the two GCSE English Language writing tasks; it demands a distinct skill set \u2014 imaginative construction, structural control and stylistic craft \u2014 that is best treated as a standalone introductory cluster.",
+          "inspired_by": "CC ELA W.9-10.3 - Write narratives to develop real or imagined experiences"
+        },
+        {
+          "cluster_name": "Write transactional and persuasive texts adapted to audience and purpose",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ENL-KS4-C007",
+            "ENL-KS4-C008",
+            "ENL-KS4-C010"
+          ],
+          "rationale": "Audience, purpose and form; rhetorical devices and persuasion; and transactional writing are the three concepts for real-world communicative writing; C008 co_teach_hints list C010, and APF (C007) is the organising framework for the other two.",
+          "inspired_by": "CC ELA W.9-10.1 - Write arguments to support claims; W.9-10.2 - Write explanatory texts"
+        }
+      ]
+    },
+    "ENL-KS4-D003": {
+      "domain_name": "Spoken Language",
+      "clusters": [
+        {
+          "cluster_name": "Deliver formal presentations and participate in structured discussion with command",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ENL-KS4-C011",
+            "ENL-KS4-C012"
+          ],
+          "rationale": "Formal presentation/speech and discussion/debate/collaborative talk are the two GCSE English Language spoken language assessment components; taught together as the formal oracy curriculum at KS4.",
+          "inspired_by": "CC ELA SL.9-10.4 - Present information clearly; SL.9-10.1 - Initiate and participate in collaborative discussions"
+        }
+      ]
+    },
+    "ENL-KS4-D004": {
+      "domain_name": "Grammar, Vocabulary and Technical Accuracy",
+      "clusters": [
+        {
+          "cluster_name": "Vary sentence structures for effect and deploy vocabulary with range and precision",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "ENL-KS4-C013",
+            "ENL-KS4-C014"
+          ],
+          "rationale": "Sentence structure/syntax for effect and vocabulary range/precision are the two GCSE AO6 technical quality concepts for writing; both are assessed as dimensions of quality in both GCSE EL papers and are taught together through writing craft.",
+          "inspired_by": "CC ELA L.9-10.3 - Apply knowledge of language to understand how language functions"
+        },
+        {
+          "cluster_name": "Use punctuation and spelling accurately across a wide vocabulary",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ENL-KS4-C015"
+          ],
+          "rationale": "Punctuation and spelling accuracy is the technical accuracy component of GCSE AO6; deliberately separated from the craft skills above because it is assessed as a distinct mark category and requires a different pedagogical focus on correctness.",
+          "inspired_by": "CC ELA L.9-10.2 - Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling"
+        }
+      ]
+    },
+    "ELT-KS4-D001": {
+      "domain_name": "Shakespeare",
+      "clusters": [
+        {
+          "cluster_name": "Analyse Shakespearean language, dramatic conventions and staging interpretations",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "ELT-KS4-C001",
+            "ELT-KS4-C002"
+          ],
+          "rationale": "Shakespearean dramatic conventions and Shakespearean language analysis are the two inseparable analytical skills for Shakespeare study at GCSE; understanding blank verse, soliloquy and stagecraft (C001) is the prerequisite for language analysis (C002).",
+          "inspired_by": "CC ELA RL.9-10.5 - Analyze how an author's choices contribute to its overall structure"
+        },
+        {
+          "cluster_name": "Contextualise Shakespeare's plays within Elizabethan and Jacobean society",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ELT-KS4-C003"
+          ],
+          "rationale": "Elizabethan and Jacobean context is a standalone GCSE AO3 concept; historical and cultural contextualisation of Shakespeare is assessed as a distinct skill and requires dedicated teaching about the period.",
+          "inspired_by": "CC ELA RL.9-10.6 - Analyze a particular point of view or cultural experience reflected in a work"
+        },
+        {
+          "cluster_name": "Demonstrate detailed whole-text knowledge and retain key quotations",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ELT-KS4-C014"
+          ],
+          "rationale": "Whole-text knowledge and quotation retention is the knowledge-base skill that underpins all GCSE literature essay writing; without detailed textual knowledge pupils cannot sustain analytical argument \u2014 a prerequisite distinct from analytical skill itself.",
+          "inspired_by": "CC ELA RL.9-10.1 - Cite strong and thorough textual evidence to support analysis"
+        }
+      ]
+    },
+    "ELT-KS4-D002": {
+      "domain_name": "19th-Century Fiction and Drama",
+      "clusters": [
+        {
+          "cluster_name": "Understand Victorian narrative fiction genres, forms and social contexts",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "ELT-KS4-C004",
+            "ELT-KS4-C005"
+          ],
+          "rationale": "Victorian narrative fiction genre/form and Victorian social/historical context are the literary and contextual knowledge concepts for the 19th-century text; genre cannot be analysed without contextual understanding of the period that produced it.",
+          "inspired_by": "CC ELA RL.9-10.9 - Analyze how an author draws on earlier texts; RI.9-10.6 - Determine an author's point of view"
+        },
+        {
+          "cluster_name": "Analyse characterisation, narrative voice and write critical literary essays",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ELT-KS4-C006",
+            "ELT-KS4-C015"
+          ],
+          "rationale": "Characterisation/narrative voice and literary critical writing style are the analytical and written-response skills for 19th-century texts; the analytical skill (C006) and the writing skill (C015) are most effectively taught together through modelled essay practice.",
+          "inspired_by": "CC ELA W.9-10.9b - Apply grades 9-10 Reading standards to literary nonfiction; RL.9-10.3 - Analyze how complex characters develop"
+        }
+      ]
+    },
+    "ELT-KS4-D003": {
+      "domain_name": "Modern Texts \u2014 Fiction and Drama",
+      "clusters": [
+        {
+          "cluster_name": "Analyse theatrical technique, stagecraft and narrative technique in modern texts",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ELT-KS4-C007",
+            "ELT-KS4-C008"
+          ],
+          "rationale": "Modern drama theatrical technique/stagecraft and modern fiction narrative technique are the two genre-specific analytical skills for modern texts; taught together they allow comparison of how modern drama and fiction achieve similar effects through different formal means.",
+          "inspired_by": "CC ELA RL.9-10.5 - Analyze how an author's choices contribute to its overall structure and meaning"
+        }
+      ]
+    },
+    "ELT-KS4-D004": {
+      "domain_name": "Poetry \u2014 Anthology and Unseen",
+      "clusters": [
+        {
+          "cluster_name": "Analyse poetic form, structure, voice and figurative language",
+          "cluster_type": "introduction",
+          "concept_ids": [
+            "ELT-KS4-C009",
+            "ELT-KS4-C010",
+            "ELT-KS4-C011"
+          ],
+          "rationale": "Poetic form/structure, poetic voice/perspective and poetic imagery/figurative language are the three analytical lenses applied to every poem in the anthology; they are introduced together as the core toolkit for poetry analysis at GCSE.",
+          "inspired_by": "CC ELA RL.9-10.5 - Analyze how an author's choices regarding structure, the order of events, and the manipulation of time create effects"
+        },
+        {
+          "cluster_name": "Compare anthology poems and analyse unseen poetry under examination conditions",
+          "cluster_type": "practice",
+          "concept_ids": [
+            "ELT-KS4-C012",
+            "ELT-KS4-C013"
+          ],
+          "rationale": "Comparative poetry analysis and unseen poetry analysis are the two GCSE poetry assessment tasks; comparative analysis requires deep anthology knowledge while unseen requires transferable analytical skill \u2014 taught together as the two modes of application.",
+          "inspired_by": "CC ELA RL.9-10.9 - Analyze how an author draws on and transforms source material"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1546 @@
+{
+  "version": "1.0",
+  "subject_group": "Science",
+  "authored_by": "science-agent",
+  "authored_date": "2026-02-22",
+  "note": "Cluster definitions for all Science (KS1, KS2, KS3), Biology (KS4), Chemistry (KS4), and Physics (KS4) domains. Cluster names follow NGSS/CC Math style: verb phrase + science-specific content (4-12 words). Clusters use co_teach_hints to group conceptually linked concepts. KS3 domains are large and use 4-8 clusters each to represent coherent steps in the learning journey.",
+  "domains": {
+    "SC-KS1-D001": {
+      "domain_name": "Working Scientifically",
+      "clusters": [
+        {
+          "cluster_name": "Ask questions and make close observations of the natural world",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS1-C001", "SC-KS1-C002", "SC-KS1-C046"],
+          "rationale": "Scientific curiosity and the habit of close observation are the entry point to all science; posing questions gives purpose to observation. Together these establish the foundational scientific disposition before any formal investigation method is introduced.",
+          "inspired_by": "NGSS Science and Engineering Practice 1 - Asking Questions"
+        },
+        {
+          "cluster_name": "Carry out simple tests and sort findings by grouping",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C003", "SC-KS1-C004", "SC-KS1-C039", "SC-KS1-C044"],
+          "rationale": "Simple comparative testing and grouping/sorting are the two most common KS1 enquiry types; the comparative testing method underpins fair-test thinking while sorting decisions make grouping operational. Co-teach hints link C003/C039 (testing) and C004/C044 (sorting).",
+          "inspired_by": "NGSS SEP 3 - Planning and Carrying Out Investigations"
+        },
+        {
+          "cluster_name": "Observe changes over time and use simple equipment",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C040", "SC-KS1-C041", "SC-KS1-C043"],
+          "rationale": "Observation over time is a distinct and important KS1 enquiry type (watching plants grow, seasons change); using simple equipment such as hand lenses and rulers makes those observations more accurate. C040 and C043 are closely related process/skill versions of the same idea.",
+          "inspired_by": "NGSS SEP 3 - Planning and Carrying Out Investigations"
+        },
+        {
+          "cluster_name": "Identify patterns and draw conclusions from evidence",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C005", "SC-KS1-C007", "SC-KS1-C045"],
+          "rationale": "Noticing similarities and differences (C045) feeds directly into pattern recognition (C007), which enables drawing conclusions (C005). These three concepts form a coherent sense-making sequence that follows any KS1 investigation.",
+          "inspired_by": "NGSS SEP 6 - Constructing Explanations"
+        },
+        {
+          "cluster_name": "Record and communicate scientific findings in different ways",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C006", "SC-KS1-C008", "SC-KS1-C042"],
+          "rationale": "Recording (C006), using secondary sources (C008), and scientific communication (C042) together encompass how pupils share and extend their science knowledge. All three involve literacy-science integration and naturally co-occur in project work.",
+          "inspired_by": "NGSS SEP 8 - Obtaining, Evaluating, and Communicating Information"
+        },
+        {
+          "cluster_name": "Stay safe during science investigations",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C048"],
+          "rationale": "Sun safety is the one explicit KS1 safety rule and must be covered before any outdoor or solar observation activity. It stands alone as a focused safety cluster.",
+          "inspired_by": "UK NC statutory safety requirement"
+        }
+      ]
+    },
+    "SC-KS1-D002": {
+      "domain_name": "Plants",
+      "clusters": [
+        {
+          "cluster_name": "Identify and describe common plants and their basic parts",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS1-C009", "SC-KS1-C010"],
+          "rationale": "Naming plants and identifying their external parts establishes the vocabulary and concrete referents that underpin all subsequent plant biology at KS1. Co_teach_hint links C009 and C010 directly.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Compare deciduous and evergreen trees through the seasons",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C011"],
+          "rationale": "Deciduous versus evergreen is a distinct observational focus that links plants to seasonal change; it is best taught during an extended observation project across the school year.",
+          "inspired_by": "NGSS LS1.B - Growth and Development of Organisms"
+        },
+        {
+          "cluster_name": "Investigate how seeds germinate and plants grow",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C012", "SC-KS1-C013", "SC-KS1-C014"],
+          "rationale": "Germination, plant requirements, and growth from seeds/bulbs form a natural investigative sequence: pupils grow plants and test what they need to survive. All three concepts are operationally linked in the classic bean-in-a-jar investigation.",
+          "inspired_by": "NGSS LS1.B - Growth and Development of Organisms"
+        }
+      ]
+    },
+    "SC-KS1-D003": {
+      "domain_name": "Animals, Including Humans",
+      "clusters": [
+        {
+          "cluster_name": "Identify and compare animals by their group and body structure",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS1-C015", "SC-KS1-C017"],
+          "rationale": "Classifying animals into vertebrate groups and comparing their body structures provides the organising framework for all KS1 animal biology. These two concepts are naturally paired in observation and comparison activities.",
+          "inspired_by": "NGSS LS4.D - Biodiversity and Humans"
+        },
+        {
+          "cluster_name": "Classify animals by what they eat",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C016"],
+          "rationale": "Diet classification (herbivore, carnivore, omnivore) is a distinct conceptual lens that connects animal structure to function and later feeds into food chain work.",
+          "inspired_by": "NGSS LS2.B - Cycle of Matter and Energy Transfer"
+        },
+        {
+          "cluster_name": "Name human body parts and describe the five senses",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C018", "SC-KS1-C019"],
+          "rationale": "Human body parts and the senses are typically taught together as an introduction to human biology; the senses use specific body parts and both are concrete, personal, and engaging for KS1 pupils.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Describe how animals grow and change through their life cycle",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C020", "SC-KS1-C021"],
+          "rationale": "Animal life cycles and human growth stages are taught in parallel, both showing offspring developing into adults. Pairing them helps pupils generalise the concept across species including themselves.",
+          "inspired_by": "NGSS LS1.B - Growth and Development of Organisms"
+        },
+        {
+          "cluster_name": "Understand what animals need to survive and stay healthy",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C022", "SC-KS1-C023", "SC-KS1-C047"],
+          "rationale": "Basic survival needs (water, food, air) lead naturally to human health requirements (diet, exercise, hygiene) and the ethical attitude of caring for living things. All three share the organising idea that living things have biological needs.",
+          "inspired_by": "NGSS LS1.C - Organisation for Matter and Energy Flow"
+        }
+      ]
+    },
+    "SC-KS1-D004": {
+      "domain_name": "Everyday Materials",
+      "clusters": [
+        {
+          "cluster_name": "Identify common materials and distinguish objects from materials",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS1-C024", "SC-KS1-C025"],
+          "rationale": "Understanding that objects are made from materials, and naming those materials, is the prerequisite for all further materials science. The object/material distinction is a key conceptual move at KS1.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Describe and compare properties of different materials",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C026", "SC-KS1-C027"],
+          "rationale": "Learning property vocabulary (hard/soft, rigid/flexible, transparent/opaque) directly enables the key KS1 idea that materials are chosen for their properties. These two concepts are functionally inseparable.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Investigate how forces can change the shape of solid materials",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C028"],
+          "rationale": "Physical transformation through squashing, bending, twisting and stretching is a distinct practical investigation that links materials to forces and introduces reversibility as a concept for later KS2 work.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        }
+      ]
+    },
+    "SC-KS1-D005": {
+      "domain_name": "Seasonal Changes",
+      "clusters": [
+        {
+          "cluster_name": "Identify the four seasons and describe their typical weather",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS1-C029", "SC-KS1-C030"],
+          "rationale": "Naming the seasons and associating each with characteristic weather patterns are the foundational concepts of this domain; they provide the framework for all subsequent seasonal observation.",
+          "inspired_by": "NGSS ESS2.D - Weather and Climate"
+        },
+        {
+          "cluster_name": "Observe and measure how day length changes across the year",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C031"],
+          "rationale": "Day length variation through sunrise and sunset observation is the one quantitative element of KS1 seasonal change; recording it over time connects directly to the observation-over-time enquiry type.",
+          "inspired_by": "NGSS ESS1.B - Earth and the Solar System"
+        }
+      ]
+    },
+    "SC-KS1-D006": {
+      "domain_name": "Living Things and Their Habitats",
+      "clusters": [
+        {
+          "cluster_name": "Classify things as living, dead, or never alive",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS1-C032", "SC-KS1-C033"],
+          "rationale": "The living/dead/never-alive classification and the life processes that define living things are the conceptual foundation of all biology; they must come first in this domain.",
+          "inspired_by": "NGSS LS1 - From Molecules to Organisms"
+        },
+        {
+          "cluster_name": "Describe habitats and explain how they suit the animals that live there",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C034", "SC-KS1-C035", "SC-KS1-C036"],
+          "rationale": "Habitat concept, micro-habitats, and habitat suitability/adaptation form a coherent ecological sequence: what a habitat is, the fine-grained variety within it, and why organisms are suited to their specific habitat.",
+          "inspired_by": "NGSS LS4.D - Biodiversity and Humans"
+        },
+        {
+          "cluster_name": "Understand how plants and animals in a habitat depend on each other",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS1-C037", "SC-KS1-C038"],
+          "rationale": "Interdependence and simple food chains together explain the feeding relationships that sustain a habitat. Food chains are the concrete representation of interdependence and are best taught together.",
+          "inspired_by": "NGSS LS2.A - Interdependent Relationships in Ecosystems"
+        }
+      ]
+    },
+    "SC-KS2-D001": {
+      "domain_name": "Working Scientifically",
+      "clusters": [
+        {
+          "cluster_name": "Ask scientific questions and choose the right type of enquiry",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C001", "SC-KS2-C002"],
+          "rationale": "Selecting appropriate enquiry type (including fair and comparative testing) is the gateway skill for all KS2 scientific investigation. Co_teach_hints link C001 and C002 directly.",
+          "inspired_by": "NGSS SEP 1 - Asking Questions; SEP 3 - Planning Investigations"
+        },
+        {
+          "cluster_name": "Plan investigations by identifying and controlling variables",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C007", "SC-KS2-C008"],
+          "rationale": "Variable control and precision/repeat measurement are the two features that distinguish KS2 fair testing from KS1 simple testing. They are always taught together in investigation planning.",
+          "inspired_by": "NGSS SEP 3 - Planning and Carrying Out Investigations"
+        },
+        {
+          "cluster_name": "Measure systematically and record data in a variety of formats",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C003", "SC-KS2-C004", "SC-KS2-C009"],
+          "rationale": "Systematic measurement, data classification/presentation, and complex data recording form a progression from basic to advanced data-handling skills. Co_teach_hints link C001, C004, and C009 together.",
+          "inspired_by": "NGSS SEP 4 - Analysing and Interpreting Data"
+        },
+        {
+          "cluster_name": "Draw conclusions, evaluate evidence, and communicate scientific findings",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C005", "SC-KS2-C006", "SC-KS2-C010"],
+          "rationale": "Drawing conclusions (C005), scientific reporting (C006), and causal relationship/evidence evaluation (C010) are the three sense-making and communication skills that close every enquiry cycle at KS2.",
+          "inspired_by": "NGSS SEP 6 - Constructing Explanations; SEP 8 - Communicating Information"
+        }
+      ]
+    },
+    "SC-KS2-D002": {
+      "domain_name": "Plants",
+      "clusters": [
+        {
+          "cluster_name": "Describe the functions of plant parts and how plants get what they need",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C011", "SC-KS2-C012"],
+          "rationale": "Understanding plant part functions and requirements for life together establish the structure-function foundation for all KS2 plant biology. These two concepts are conceptually inseparable.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Investigate water transport through plants",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C013"],
+          "rationale": "Water transport (demonstrable with celery/dye experiments) is a distinct, investigable process at KS2 that connects plant structure to function in a concrete, observable way.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Explain the complete life cycle of a flowering plant",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C014", "SC-KS2-C015", "SC-KS2-C016"],
+          "rationale": "The flowering plant life cycle, pollination, and seed dispersal are the three components of plant reproduction that together complete the life cycle narrative from flower to seed dispersal to new plant.",
+          "inspired_by": "NGSS LS1.B - Growth and Development of Organisms"
+        }
+      ]
+    },
+    "SC-KS2-D003": {
+      "domain_name": "Animals, Including Humans",
+      "clusters": [
+        {
+          "cluster_name": "Understand nutrition, teeth, and digestion in humans and animals",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C017", "SC-KS2-C031", "SC-KS2-C032"],
+          "rationale": "Animal nutrition, the digestive system, and tooth types form a tightly linked cluster that traces food from ingestion through digestion. Co_teach_hints extensively link C017, C031, and C032 together.",
+          "inspired_by": "NGSS LS1.C - Organisation for Matter and Energy Flow"
+        },
+        {
+          "cluster_name": "Describe the skeletal and muscular systems and their functions",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C018"],
+          "rationale": "The skeletal and muscular system is a self-contained structural topic at KS2, providing support, protection and movement, that is taught as a distinct practical unit using models and diagrams.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Construct and interpret food chains including producers and predators",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C033"],
+          "rationale": "Food chains with producers, consumers, predators and prey build on KS1 food chain work and connect nutrition to ecosystem relationships; taught here rather than in habitats because it flows directly from nutrition content.",
+          "inspired_by": "NGSS LS2.B - Cycle of Matter and Energy Transfer"
+        },
+        {
+          "cluster_name": "Describe human development from birth to old age",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C046"],
+          "rationale": "Human development and ageing is a distinct PSHE-connected science topic covering the full human life span; taught as a standalone cluster to give it appropriate curriculum time.",
+          "inspired_by": "NGSS LS1.B - Growth and Development of Organisms"
+        },
+        {
+          "cluster_name": "Explain how the circulatory system transports nutrients and oxygen",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C060", "SC-KS2-C062"],
+          "rationale": "The circulatory system and nutrient/water transport in animals are directly linked in the co_teach_hints and conceptually inseparable: the heart and blood vessels exist specifically to deliver nutrients and oxygen absorbed through digestion.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Evaluate how diet, exercise, and lifestyle affect the body",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C061"],
+          "rationale": "Diet, exercise, drugs and lifestyle is the health literacy component of KS2 biology; it applies the physiological knowledge from circulatory and digestive topics to personal health decisions.",
+          "inspired_by": "NGSS LS1.C - Organisation for Matter and Energy Flow"
+        }
+      ]
+    },
+    "SC-KS2-D004": {
+      "domain_name": "Rocks",
+      "clusters": [
+        {
+          "cluster_name": "Compare and classify rocks by their appearance and properties",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C019", "SC-KS2-C021"],
+          "rationale": "Rock classification and soil composition are linked through the co_teach_hints (C019 and C021) and share the investigative approach of comparing physical properties; soil is formed from weathered rock particles.",
+          "inspired_by": "NGSS ESS2.A - Earth Materials and Systems"
+        },
+        {
+          "cluster_name": "Describe how fossils form and what they tell us about the past",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C020"],
+          "rationale": "Fossil formation is a distinct conceptual topic that connects rocks to the history of life; it provides a bridge to KS2 evolution content and is best taught as a focused narrative unit.",
+          "inspired_by": "NGSS LS4.A - Evidence of Common Ancestry and Diversity"
+        }
+      ]
+    },
+    "SC-KS2-D005": {
+      "domain_name": "Light",
+      "clusters": [
+        {
+          "cluster_name": "Investigate light sources, vision, and the formation of shadows",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C022", "SC-KS2-C024"],
+          "rationale": "Light and vision (we need light to see) and shadow formation (light blocked by opaque objects) are the two foundational light concepts at KS2. Co_teach_hints link C024 to C067 and C022 to C023.",
+          "inspired_by": "NGSS PS4.B - Electromagnetic Radiation"
+        },
+        {
+          "cluster_name": "Explain how light travels in straight lines and is reflected from surfaces",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C023", "SC-KS2-C067"],
+          "rationale": "The straight-line travel model explains both reflection (light bouncing off surfaces) and shadow formation; C067 is the explanatory model that underpins C023. Co_teach_hints link C023 and C067 directly.",
+          "inspired_by": "NGSS PS4.B - Electromagnetic Radiation"
+        }
+      ]
+    },
+    "SC-KS2-D006": {
+      "domain_name": "Forces and Magnets",
+      "clusters": [
+        {
+          "cluster_name": "Identify and compare contact and non-contact forces",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C025", "SC-KS2-C027"],
+          "rationale": "Contact versus non-contact forces is the organising framework for this domain; friction as a contact force (C027) is the most investigable example at KS1/early KS2. Co_teach_hints link C027 to C025.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        },
+        {
+          "cluster_name": "Investigate the properties and uses of magnets",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C026"],
+          "rationale": "Magnetic properties (attraction, repulsion, poles, magnetic materials) constitute a distinct investigable topic with clear KS2 practical activities; magnetism as a non-contact force connects to C025.",
+          "inspired_by": "NGSS PS2.B - Types of Interactions"
+        }
+      ]
+    },
+    "SC-KS2-D007": {
+      "domain_name": "Living Things and Their Habitats",
+      "clusters": [
+        {
+          "cluster_name": "Classify living things and use classification keys",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C028", "SC-KS2-C029"],
+          "rationale": "Dichotomous classification keys and the idea that living things can be grouped using many different criteria are the twin classification skills of this domain; they are always taught together.",
+          "inspired_by": "NGSS LS4.D - Biodiversity and Humans"
+        },
+        {
+          "cluster_name": "Apply the formal biological classification system including microorganisms",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C058", "SC-KS2-C059"],
+          "rationale": "Formal biological classification (micro-organisms, plants, animals, fungi) and microorganisms as a group are linked in the co_teach_hints (C058, C059) and together extend KS1 classification into a more scientific taxonomy.",
+          "inspired_by": "NGSS LS4.D - Biodiversity and Humans"
+        },
+        {
+          "cluster_name": "Compare the life cycles of different types of animals",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C044", "SC-KS2-C045"],
+          "rationale": "Comparative life cycles and reproduction in plants and animals are linked concepts that together show the diversity of reproductive strategies across living things. They build directly on KS1 life cycle work.",
+          "inspired_by": "NGSS LS1.B - Growth and Development of Organisms"
+        },
+        {
+          "cluster_name": "Analyse how environmental change affects habitats and living things",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C030"],
+          "rationale": "Environmental change and its impact on organisms connects ecological knowledge to contemporary issues such as habitat loss; co_teach_hints link C030 to C059 (microorganisms playing a role in environmental change).",
+          "inspired_by": "NGSS LS4.D - Biodiversity and Humans"
+        }
+      ]
+    },
+    "SC-KS2-D008": {
+      "domain_name": "States of Matter",
+      "clusters": [
+        {
+          "cluster_name": "Identify and describe the three states of matter by their properties",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C034"],
+          "rationale": "The three states of matter and their observable properties establish the foundational classification that enables understanding of changes of state and the water cycle.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Explain changes of state and the water cycle using evidence",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C035", "SC-KS2-C036"],
+          "rationale": "Changes of state and the water cycle are directly linked in the co_teach_hints (C036 co-teaches with C035); evaporation and condensation are both change-of-state processes and key water cycle mechanisms.",
+          "inspired_by": "NGSS ESS2.C - The Role of Water in Earth's Surface Processes"
+        }
+      ]
+    },
+    "SC-KS2-D009": {
+      "domain_name": "Sound",
+      "clusters": [
+        {
+          "cluster_name": "Investigate vibration as the cause of sound and how sound travels",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C037", "SC-KS2-C038"],
+          "rationale": "Vibration as the source of all sounds and transmission through a medium are the two foundational sound concepts; they explain both how sound is made and how it reaches our ears.",
+          "inspired_by": "NGSS PS4.A - Wave Properties"
+        },
+        {
+          "cluster_name": "Explore how pitch and volume relate to the properties of sound sources",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C039", "SC-KS2-C040"],
+          "rationale": "Pitch (related to vibrating object features) and volume (related to vibration strength/amplitude) are the two key sound qualities pupils investigate at KS2. Co_teach_hints link C039 with C040 and C037.",
+          "inspired_by": "NGSS PS4.A - Wave Properties"
+        }
+      ]
+    },
+    "SC-KS2-D010": {
+      "domain_name": "Electricity",
+      "clusters": [
+        {
+          "cluster_name": "Build and describe series electrical circuits and their components",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C041", "SC-KS2-C042"],
+          "rationale": "Series circuits and conductors/insulators are the entry-point electricity concepts at KS2; co_teach_hints link C042 directly to C041 because conductors/insulators are tested within a simple circuit.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        },
+        {
+          "cluster_name": "Investigate how voltage affects circuit components and use circuit diagrams",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C043", "SC-KS2-C068"],
+          "rationale": "Voltage/cell effects on circuit brightness/volume and standard circuit symbols/diagrams are taught together because circuit diagrams are the tool for recording and communicating voltage investigations. Co_teach_hints link C068 to C041 and C043.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        }
+      ]
+    },
+    "SC-KS2-D011": {
+      "domain_name": "Properties and Changes of Materials",
+      "clusters": [
+        {
+          "cluster_name": "Compare materials using an extended range of physical properties",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C047"],
+          "rationale": "Extended material properties (hardness, solubility, transparency, conductivity) build on KS1 basic properties and provide the investigative framework for all KS2 materials work.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Investigate dissolving and how to separate mixtures",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C048", "SC-KS2-C049"],
+          "rationale": "Dissolving and separation techniques are practically linked: pupils dissolve a substance and then use evaporation, filtration or sieving to recover it, demonstrating that dissolving is reversible.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        },
+        {
+          "cluster_name": "Distinguish reversible changes from irreversible chemical changes",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C050", "SC-KS2-C051"],
+          "rationale": "Reversible and irreversible changes are the conceptual culmination of KS2 materials work; co_teach_hints link C051 to C049 and C050. The distinction between physical and chemical change is foundational for KS3.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        }
+      ]
+    },
+    "SC-KS2-D012": {
+      "domain_name": "Earth and Space",
+      "clusters": [
+        {
+          "cluster_name": "Describe the solar system and the relative positions of planets",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C052", "SC-KS2-C054"],
+          "rationale": "The solar system structure and the Moon's orbit as Earth's satellite are the spatial framework concepts for this domain. Co_teach_hints link C054 and C052 directly.",
+          "inspired_by": "NGSS ESS1.B - Earth and the Solar System"
+        },
+        {
+          "cluster_name": "Explain day and night using a model of Earth's rotation",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C053"],
+          "rationale": "Earth's rotation and its cause of day and night is the key explanatory model of the domain; it requires the solar system structure from the introduction cluster and directly addresses the common misconception that the Sun moves around Earth.",
+          "inspired_by": "NGSS ESS1.B - Earth and the Solar System"
+        }
+      ]
+    },
+    "SC-KS2-D013": {
+      "domain_name": "Forces",
+      "clusters": [
+        {
+          "cluster_name": "Explain how gravity and resistance forces affect motion",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C055", "SC-KS2-C056"],
+          "rationale": "Gravity and resistance forces (air resistance, water resistance, friction) are co-taught (co_teach_hints link C055 and C056) because they act in opposition: gravity pulls objects down while resistance slows their fall.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        },
+        {
+          "cluster_name": "Investigate how levers, pulleys and gears act as force multipliers",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C057"],
+          "rationale": "Mechanisms as force multipliers is a distinct practical investigation cluster at KS2 that applies force understanding to simple machines; it introduces the efficiency trade-off concept that continues at KS3.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        }
+      ]
+    },
+    "SC-KS2-D014": {
+      "domain_name": "Evolution and Inheritance",
+      "clusters": [
+        {
+          "cluster_name": "Understand how fossils provide evidence that living things change over time",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS2-C063"],
+          "rationale": "Fossils as evidence of change over time is the evidential foundation for evolution; co_teach_hints link C063 to C066, establishing a logical starting point before variation, adaptation and natural selection are introduced.",
+          "inspired_by": "NGSS LS4.A - Evidence of Common Ancestry and Diversity"
+        },
+        {
+          "cluster_name": "Explain variation in offspring and how features are inherited",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C064"],
+          "rationale": "Variation in offspring is the genetic prerequisite for understanding natural selection; it introduces the idea that offspring are similar but not identical to parents, setting up adaptation and evolution.",
+          "inspired_by": "NGSS LS3.B - Variation of Traits"
+        },
+        {
+          "cluster_name": "Describe adaptation and explain how it can lead to evolution",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS2-C065", "SC-KS2-C066"],
+          "rationale": "Adaptation and evolution are directly linked in the co_teach_hints (C066 co-teaches with C065); together they form the core Darwin narrative that variation + adaptation over geological time = evolutionary change.",
+          "inspired_by": "NGSS LS4.B - Natural Selection; LS4.C - Adaptation"
+        }
+      ]
+    },
+    "BI-KS4-D001": {
+      "domain_name": "Cell Biology",
+      "clusters": [
+        {
+          "cluster_name": "Compare the structure of eukaryotic and prokaryotic cells",
+          "cluster_type": "introduction",
+          "concept_ids": ["BI-KS4-C001", "BI-KS4-C002"],
+          "rationale": "Eukaryotic/prokaryotic structure and cell specialisation/differentiation together establish the cell as the fundamental unit of life in its varied forms; differentiation builds directly on structural knowledge.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Explain mitosis, cell division, and transport across cell membranes",
+          "cluster_type": "practice",
+          "concept_ids": ["BI-KS4-C003", "BI-KS4-C004"],
+          "rationale": "Mitosis and membrane transport (diffusion, osmosis, active transport) are co-taught via co_teach_hints (C003 links to C004); both are essential cell-level processes and are typically covered in the same unit.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        }
+      ]
+    },
+    "BI-KS4-D002": {
+      "domain_name": "Organisation",
+      "clusters": [
+        {
+          "cluster_name": "Explain enzyme action in digestion and the digestive system",
+          "cluster_type": "introduction",
+          "concept_ids": ["BI-KS4-C005"],
+          "rationale": "Enzymes and digestion is the biochemical entry point for GCSE organisation, connecting cell biology (enzyme structure/active site) to the organ-system level of the digestive system.",
+          "inspired_by": "NGSS LS1.C - Organisation for Matter and Energy Flow"
+        },
+        {
+          "cluster_name": "Describe the structure and function of the heart and circulatory system",
+          "cluster_type": "practice",
+          "concept_ids": ["BI-KS4-C006"],
+          "rationale": "The heart as a double pump and the pulmonary/systemic circulation is the central cardiovascular concept at GCSE; it integrates structural knowledge with physiological function.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Explain transpiration and nutrient transport in plants",
+          "cluster_type": "practice",
+          "concept_ids": ["BI-KS4-C007"],
+          "rationale": "Transpiration and the xylem/phloem transport system in plants mirrors the animal circulatory system and completes the organisational level of study; typically taught alongside heart/circulation for contrast.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        }
+      ]
+    },
+    "BI-KS4-D003": {
+      "domain_name": "Infection and Response",
+      "clusters": [
+        {
+          "cluster_name": "Describe pathogen types and how communicable diseases spread",
+          "cluster_type": "introduction",
+          "concept_ids": ["BI-KS4-C008"],
+          "rationale": "Pathogens and communicable disease provide the disease framework before immune response is studied; understanding transmission precedes understanding how the body defends against pathogens.",
+          "inspired_by": "NGSS LS2.A - Interdependent Relationships in Ecosystems"
+        },
+        {
+          "cluster_name": "Explain how the immune system responds and how vaccines provide protection",
+          "cluster_type": "practice",
+          "concept_ids": ["BI-KS4-C009"],
+          "rationale": "Immune response and vaccination directly follow pathogen knowledge; understanding antibody production and the role of lymphocytes provides the biological mechanism behind vaccination programmes.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        }
+      ]
+    },
+    "BI-KS4-D004": {
+      "domain_name": "Bioenergetics",
+      "clusters": [
+        {
+          "cluster_name": "Explain photosynthesis and aerobic and anaerobic respiration",
+          "cluster_type": "introduction",
+          "concept_ids": ["BI-KS4-C010", "BI-KS4-C011"],
+          "rationale": "Photosynthesis and respiration are directly co-taught (co_teach_hints link C010 and C011 mutually); they are the two energy transformation processes in living things and form the conceptual core of bioenergetics.",
+          "inspired_by": "NGSS LS1.C - Organisation for Matter and Energy Flow"
+        }
+      ]
+    },
+    "BI-KS4-D005": {
+      "domain_name": "Homeostasis and Response",
+      "clusters": [
+        {
+          "cluster_name": "Describe the nervous system and explain reflex arc responses",
+          "cluster_type": "introduction",
+          "concept_ids": ["BI-KS4-C012"],
+          "rationale": "The nervous system and reflex arcs introduce the neural control pathway that underpins all rapid homeostatic responses; it establishes the receptor-coordinator-effector model used throughout this domain.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Explain blood glucose regulation and the role of hormones in diabetes",
+          "cluster_type": "practice",
+          "concept_ids": ["BI-KS4-C013"],
+          "rationale": "Blood glucose regulation by insulin and glucagon is the prime GCSE example of hormonal homeostasis; its clinical context (Type 1 and Type 2 diabetes) provides real-world relevance.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        }
+      ]
+    },
+    "BI-KS4-D006": {
+      "domain_name": "Inheritance, Variation and Evolution",
+      "clusters": [
+        {
+          "cluster_name": "Describe DNA structure and explain how genes code for proteins",
+          "cluster_type": "introduction",
+          "concept_ids": ["BI-KS4-C014"],
+          "rationale": "DNA structure and protein synthesis is the molecular foundation of all inheritance content at GCSE; it must precede Mendelian genetics and evolution because genes are defined in terms of DNA.",
+          "inspired_by": "NGSS LS3.A - Inheritance of Traits"
+        },
+        {
+          "cluster_name": "Apply Mendelian genetics to predict inheritance patterns",
+          "cluster_type": "practice",
+          "concept_ids": ["BI-KS4-C015"],
+          "rationale": "Mendelian genetics with Punnett squares and dominant/recessive alleles is the quantitative genetics skill of GCSE biology; it applies molecular knowledge from DNA/protein synthesis to inheritance prediction.",
+          "inspired_by": "NGSS LS3.B - Variation of Traits"
+        },
+        {
+          "cluster_name": "Explain evolution by natural selection and evaluate supporting evidence",
+          "cluster_type": "practice",
+          "concept_ids": ["BI-KS4-C016"],
+          "rationale": "Evolution by natural selection at GCSE requires the full mechanistic explanation (variation, heritability, selection pressure, differential reproduction) underpinned by the genetics knowledge from the two preceding clusters.",
+          "inspired_by": "NGSS LS4.B - Natural Selection"
+        }
+      ]
+    },
+    "BI-KS4-D007": {
+      "domain_name": "Ecology",
+      "clusters": [
+        {
+          "cluster_name": "Describe ecosystem structure and how organisms depend on each other",
+          "cluster_type": "introduction",
+          "concept_ids": ["BI-KS4-C017"],
+          "rationale": "Ecosystem interdependence (biotic and abiotic factors, food webs, carbon and water cycles) is the conceptual entry point for GCSE ecology before human impact is considered.",
+          "inspired_by": "NGSS LS2.A - Interdependent Relationships in Ecosystems"
+        },
+        {
+          "cluster_name": "Evaluate the impact of human activity on biodiversity and ecosystems",
+          "cluster_type": "practice",
+          "concept_ids": ["BI-KS4-C018"],
+          "rationale": "Biodiversity and human impact applies ecosystem knowledge to real conservation challenges; it is the culminating applied topic of GCSE biology, connecting back to all earlier ecological understanding.",
+          "inspired_by": "NGSS LS4.D - Biodiversity and Humans"
+        }
+      ]
+    },
+    "CH-KS4-D001": {
+      "domain_name": "Atomic Structure and the Periodic Table",
+      "clusters": [
+        {
+          "cluster_name": "Describe atomic structure using subatomic particles",
+          "cluster_type": "introduction",
+          "concept_ids": ["CH-KS4-C001"],
+          "rationale": "Atomic structure with protons, neutrons and electrons is the essential foundation for all chemistry at GCSE; it must precede electronic configuration and bonding.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Explain electronic configuration and predict periodic trends",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C002"],
+          "rationale": "Electronic configuration explains the arrangement of the Periodic Table and enables prediction of chemical properties and reactivity trends across groups and periods.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        }
+      ]
+    },
+    "CH-KS4-D002": {
+      "domain_name": "Bonding, Structure and Properties of Matter",
+      "clusters": [
+        {
+          "cluster_name": "Explain ionic bonding and the properties of giant ionic lattices",
+          "cluster_type": "introduction",
+          "concept_ids": ["CH-KS4-C003"],
+          "rationale": "Ionic bonding (electron transfer, lattice structure, high melting point, conductivity when molten) is typically taught first because its electrostatic model is more concrete. Co_teach_hints link C003 and C004.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Explain covalent bonding and the properties of molecular structures",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C004"],
+          "rationale": "Covalent bonding (electron sharing, simple molecules, giant covalent structures) builds on ionic bonding to complete the GCSE bonding framework and explains properties of non-metal compounds.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        }
+      ]
+    },
+    "CH-KS4-D003": {
+      "domain_name": "Quantitative Chemistry",
+      "clusters": [
+        {
+          "cluster_name": "Apply the mole concept and stoichiometry to calculate reacting quantities",
+          "cluster_type": "introduction",
+          "concept_ids": ["CH-KS4-C005"],
+          "rationale": "The mole and stoichiometric calculations are the mathematical foundation of quantitative chemistry; they must precede yield and atom economy calculations. Co_teach_hints link C005 and C006.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        },
+        {
+          "cluster_name": "Calculate percentage yield and atom economy for chemical reactions",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C006"],
+          "rationale": "Percentage yield and atom economy apply mole calculations to real industrial chemistry contexts, evaluating reaction efficiency and sustainability. Co_teach_hints link C006 to C005.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        }
+      ]
+    },
+    "CH-KS4-D004": {
+      "domain_name": "Chemical Changes",
+      "clusters": [
+        {
+          "cluster_name": "Use the reactivity series to predict displacement and oxidation reactions",
+          "cluster_type": "introduction",
+          "concept_ids": ["CH-KS4-C007"],
+          "rationale": "The reactivity series and displacement reactions provide a predictive framework for chemical changes involving metals; co_teach_hints link C007 and C008, as electrolysis is often used to extract reactive metals.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        },
+        {
+          "cluster_name": "Explain electrolysis and its industrial applications",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C008"],
+          "rationale": "Electrolysis uses ionic knowledge and extends chemical changes into electrochemistry; its industrial applications (aluminium extraction, electroplating) provide real-world context.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        }
+      ]
+    },
+    "CH-KS4-D005": {
+      "domain_name": "Energy Changes",
+      "clusters": [
+        {
+          "cluster_name": "Explain exothermic and endothermic reactions using bond energies",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C009"],
+          "rationale": "Exothermic and endothermic reactions with bond energy calculations is the sole concept in this domain; the single cluster covers the energy landscape of chemical reactions at GCSE.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        }
+      ]
+    },
+    "CH-KS4-D006": {
+      "domain_name": "Rate and Extent of Chemical Change",
+      "clusters": [
+        {
+          "cluster_name": "Explain reaction rates using collision theory and identify affecting factors",
+          "cluster_type": "introduction",
+          "concept_ids": ["CH-KS4-C010"],
+          "rationale": "Collision theory as the mechanistic explanation for rate of reaction is the entry point for this domain; it connects particle model knowledge to the practical investigation of concentration, temperature, surface area and catalysts.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        },
+        {
+          "cluster_name": "Describe reversible reactions and dynamic equilibrium",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C011"],
+          "rationale": "Reversible reactions and dynamic equilibrium build on reaction rate understanding to introduce the idea that some reactions can run in both directions and reach a balanced state; this is a conceptually distinct topic from rates.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        }
+      ]
+    },
+    "CH-KS4-D007": {
+      "domain_name": "Organic Chemistry",
+      "clusters": [
+        {
+          "cluster_name": "Describe hydrocarbons in crude oil and explain fractional distillation",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C012"],
+          "rationale": "Hydrocarbons and crude oil is the sole concept in this domain at GCSE; it covers the origin, composition and separation of crude oil and the societal and environmental implications of fossil fuels.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        }
+      ]
+    },
+    "CH-KS4-D008": {
+      "domain_name": "Chemical Analysis",
+      "clusters": [
+        {
+          "cluster_name": "Apply chemical analysis techniques to identify and test unknown substances",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C015"],
+          "rationale": "Chemical analysis and identification techniques (flame tests, gas tests, precipitation, chromatography) is the single concept in this domain and is best taught as a practical skills cluster.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        }
+      ]
+    },
+    "CH-KS4-D009": {
+      "domain_name": "Chemistry of the Atmosphere",
+      "clusters": [
+        {
+          "cluster_name": "Explain the greenhouse effect and evaluate the evidence for climate change",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C013"],
+          "rationale": "The greenhouse effect and climate change is the single concept in this domain; it applies atmospheric chemistry knowledge to one of the most significant socio-scientific issues of the era.",
+          "inspired_by": "NGSS ESS2.D - Weather and Climate"
+        }
+      ]
+    },
+    "CH-KS4-D010": {
+      "domain_name": "Using Resources",
+      "clusters": [
+        {
+          "cluster_name": "Evaluate environmental impact using life cycle assessment and sustainable chemistry",
+          "cluster_type": "practice",
+          "concept_ids": ["CH-KS4-C014"],
+          "rationale": "Life cycle assessment and sustainable chemistry is the single concept in this domain; it provides the analytical tool for evaluating the environmental cost of products across their entire life span.",
+          "inspired_by": "NGSS ESS3.C - Human Impacts on Earth Systems"
+        }
+      ]
+    },
+    "PH-KS4-D001": {
+      "domain_name": "Energy",
+      "clusters": [
+        {
+          "cluster_name": "Describe energy stores and explain how energy is transferred between systems",
+          "cluster_type": "introduction",
+          "concept_ids": ["PH-KS4-C001"],
+          "rationale": "Energy stores and transfers provide the organising framework for all KS4 physics energy topics; identifying kinetic, gravitational potential, elastic, thermal and chemical stores underpins all subsequent energy calculations.",
+          "inspired_by": "NGSS PS3.A - Definitions of Energy"
+        },
+        {
+          "cluster_name": "Apply specific heat capacity and latent heat to calculate energy changes",
+          "cluster_type": "practice",
+          "concept_ids": ["PH-KS4-C002"],
+          "rationale": "Specific heat capacity and latent heat are the two quantitative energy calculations for thermal processes at GCSE; they directly extend energy store/transfer knowledge into measurable quantities.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        }
+      ]
+    },
+    "PH-KS4-D002": {
+      "domain_name": "Electricity",
+      "clusters": [
+        {
+          "cluster_name": "Apply Ohm's law to calculate current, potential difference and resistance",
+          "cluster_type": "introduction",
+          "concept_ids": ["PH-KS4-C003"],
+          "rationale": "Current, potential difference and resistance with Ohm's law is the foundational circuit calculation skill at GCSE; it must precede power calculations and AC/mains electricity.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        },
+        {
+          "cluster_name": "Calculate electrical power and explain mains electricity and safety",
+          "cluster_type": "practice",
+          "concept_ids": ["PH-KS4-C004"],
+          "rationale": "Electrical power calculations and mains electricity (AC, frequency, live/neutral/earth wires) build directly on V, I and R relationships and connect circuit physics to domestic electrical safety.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        }
+      ]
+    },
+    "PH-KS4-D003": {
+      "domain_name": "Particle Model of Matter",
+      "clusters": [
+        {
+          "cluster_name": "Apply the particle model to explain density, states of matter and gas laws",
+          "cluster_type": "practice",
+          "concept_ids": ["PH-KS4-C005"],
+          "rationale": "The particle model, density and gas laws constitute the single GCSE physics concept in this domain; the particle model explanation of state properties and gas pressure/volume/temperature relationships is a unified topic.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        }
+      ]
+    },
+    "PH-KS4-D004": {
+      "domain_name": "Atomic Structure",
+      "clusters": [
+        {
+          "cluster_name": "Describe radioactive decay and the properties of nuclear radiation",
+          "cluster_type": "introduction",
+          "concept_ids": ["PH-KS4-C006"],
+          "rationale": "Radioactive decay and alpha/beta/gamma radiation properties are the entry concepts for nuclear physics at GCSE; they provide the factual framework before the deeper concepts of fission and fusion are explored.",
+          "inspired_by": "NGSS PS1.C - Nuclear Processes"
+        },
+        {
+          "cluster_name": "Explain nuclear fission and fusion and their applications",
+          "cluster_type": "practice",
+          "concept_ids": ["PH-KS4-C007"],
+          "rationale": "Nuclear fission (chain reactions, nuclear reactors) and fusion (stellar energy, future power) apply radioactive decay knowledge to the most significant nuclear energy technologies; they are naturally paired as opposing processes.",
+          "inspired_by": "NGSS PS1.C - Nuclear Processes"
+        }
+      ]
+    },
+    "PH-KS4-D005": {
+      "domain_name": "Forces",
+      "clusters": [
+        {
+          "cluster_name": "Apply Newton's three laws of motion to analyse forces and acceleration",
+          "cluster_type": "introduction",
+          "concept_ids": ["PH-KS4-C008"],
+          "rationale": "Newton's laws of motion are the foundational mechanics framework at GCSE; they must precede momentum and impulse because Newton's second law connects force to rate of change of momentum.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        },
+        {
+          "cluster_name": "Apply conservation of momentum to analyse collisions and impulse",
+          "cluster_type": "practice",
+          "concept_ids": ["PH-KS4-C009"],
+          "rationale": "Momentum and impulse extend Newton's second law into conserved quantity reasoning; conservation of momentum in collisions is a key GCSE higher tier skill with important safety applications.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        }
+      ]
+    },
+    "PH-KS4-D006": {
+      "domain_name": "Waves",
+      "clusters": [
+        {
+          "cluster_name": "Describe wave properties and calculate wave speed, frequency and wavelength",
+          "cluster_type": "introduction",
+          "concept_ids": ["PH-KS4-C010"],
+          "rationale": "Wave properties (amplitude, frequency, wavelength, speed) and the wave equation are the quantitative foundation for all wave physics at GCSE; they apply to both transverse and longitudinal waves.",
+          "inspired_by": "NGSS PS4.A - Wave Properties"
+        },
+        {
+          "cluster_name": "Describe the electromagnetic spectrum and explain its uses and hazards",
+          "cluster_type": "practice",
+          "concept_ids": ["PH-KS4-C011"],
+          "rationale": "The electromagnetic spectrum applies the wave model to the full range of EM radiation from radio waves to gamma rays; its uses and hazards for each region are a key socio-scientific application of wave physics.",
+          "inspired_by": "NGSS PS4.B - Electromagnetic Radiation"
+        }
+      ]
+    },
+    "PH-KS4-D007": {
+      "domain_name": "Magnetism and Electromagnetism",
+      "clusters": [
+        {
+          "cluster_name": "Explain the motor effect and electromagnetic induction",
+          "cluster_type": "introduction",
+          "concept_ids": ["PH-KS4-C012"],
+          "rationale": "The motor effect and electromagnetic induction are the two fundamental electromagnetic phenomena at GCSE; they are complementary (one converts electrical to mechanical energy, the other converts mechanical to electrical) and are always taught together.",
+          "inspired_by": "NGSS PS2.B - Types of Interactions"
+        },
+        {
+          "cluster_name": "Explain how transformers work and their role in the National Grid",
+          "cluster_type": "practice",
+          "concept_ids": ["PH-KS4-C013"],
+          "rationale": "Transformers and the National Grid apply electromagnetic induction to the practical problem of efficient long-distance electricity transmission; the transformer equation connects voltage ratios to turns ratios.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        }
+      ]
+    },
+    "PH-KS4-D008": {
+      "domain_name": "Space Physics",
+      "clusters": [
+        {
+          "cluster_name": "Describe the life cycle of stars from nebula to remnant",
+          "cluster_type": "introduction",
+          "concept_ids": ["PH-KS4-C014"],
+          "rationale": "The life cycle of stars provides the astrophysical context for understanding nuclear fusion as the energy source of stars and explains the origin of heavy elements in the universe.",
+          "inspired_by": "NGSS ESS1.A - The Universe and Its Stars"
+        },
+        {
+          "cluster_name": "Explain red-shift as evidence for the expanding universe and the Big Bang",
+          "cluster_type": "practice",
+          "concept_ids": ["PH-KS4-C015"],
+          "rationale": "Red-shift and the Big Bang theory are the observational and theoretical conclusions of space physics at GCSE; red-shift evidence is the key empirical argument for the expanding universe model.",
+          "inspired_by": "NGSS ESS1.A - The Universe and Its Stars"
+        }
+      ]
+    },
+    "SC-KS3-D001": {
+      "domain_name": "Working Scientifically",
+      "clusters": [
+        {
+          "cluster_name": "Understand how scientific knowledge is built, tested and revised over time",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C004", "SC-KS3-C005", "SC-KS3-C001"],
+          "rationale": "The nature of science (theories evolve with evidence, peer review ensures objectivity) is the conceptual foundation for all working scientifically at KS3. Co_teach_hints strongly link C001, C004 and C005.",
+          "inspired_by": "NGSS SEP 7 - Engaging in Argument from Evidence"
+        },
+        {
+          "cluster_name": "Ask scientific questions, make predictions and design investigations",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C007", "SC-KS3-C008", "SC-KS3-C009", "SC-KS3-C010"],
+          "rationale": "Questioning, prediction, variable identification and experimental design form the planning stage of any investigation; they are always taught together as a sequence. Co_teach_hints link C007 and C021.",
+          "inspired_by": "NGSS SEP 1 - Asking Questions; SEP 3 - Planning Investigations"
+        },
+        {
+          "cluster_name": "Use laboratory equipment safely and apply appropriate techniques",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C006", "SC-KS3-C011", "SC-KS3-C014"],
+          "rationale": "Risk evaluation, laboratory techniques, and sampling methods are the practical safety and skills cluster; they are taught in context across all KS3 practical work but need explicit introduction at the start of KS3.",
+          "inspired_by": "NGSS SEP 3 - Planning and Carrying Out Investigations"
+        },
+        {
+          "cluster_name": "Measure accurately, record data and use SI units and scientific equations",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C012", "SC-KS3-C022", "SC-KS3-C024"],
+          "rationale": "Measurement, SI units and scientific equations are the quantitative skills that underpin all KS3 data collection; co_teach_hints link C022 to C015 and C018, and C024 to C010 and C015.",
+          "inspired_by": "NGSS SEP 5 - Using Mathematics and Computational Thinking"
+        },
+        {
+          "cluster_name": "Present data, identify patterns and apply statistical analysis",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C016", "SC-KS3-C017", "SC-KS3-C025"],
+          "rationale": "Data presentation (tables, graphs), pattern identification and statistical analysis form a coherent data-handling cluster. Co_teach_hints extensively link C025 with C016, C017 and C002.",
+          "inspired_by": "NGSS SEP 4 - Analysing and Interpreting Data"
+        },
+        {
+          "cluster_name": "Evaluate accuracy, precision and sources of error in scientific investigations",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C002", "SC-KS3-C003", "SC-KS3-C013", "SC-KS3-C020"],
+          "rationale": "Accuracy/precision, repeatability/reproducibility, method reliability and error analysis together constitute the quality-assessment skills of KS3 science. Co_teach_hints link C002, C013, C020 and C025.",
+          "inspired_by": "NGSS SEP 4 - Analysing and Interpreting Data"
+        },
+        {
+          "cluster_name": "Draw valid conclusions, use mathematical calculations and raise further questions",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C015", "SC-KS3-C018", "SC-KS3-C019", "SC-KS3-C021"],
+          "rationale": "Mathematical calculation in context, drawing conclusions, explaining results against predictions, and identifying further questions close the inquiry cycle. Co_teach_hints link C015 to C022/C024, and C021 to C007.",
+          "inspired_by": "NGSS SEP 6 - Constructing Explanations; SEP 8 - Communicating Information"
+        }
+      ]
+    },
+    "SC-KS3-D002": {
+      "domain_name": "Biology - Structure and Function of Living Organisms",
+      "clusters": [
+        {
+          "cluster_name": "Describe cell structure and observe cells using a light microscope",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C026", "SC-KS3-C027", "SC-KS3-C028"],
+          "rationale": "Cell structure, microscopy skills, and organelle functions form the practical entry point for KS3 biology; using the microscope to see real cells makes the abstract organelle functions concrete.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Compare plant and animal cells and explain the biological hierarchy",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C029", "SC-KS3-C031", "SC-KS3-C032"],
+          "rationale": "Comparing plant/animal cells, understanding unicellular organisms, and tracing the cell-to-organism hierarchy are closely linked. Co_teach_hints link C029 to C026/C028/C031, and C032 to C026/C028/C031.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Describe diffusion and explain its role in moving substances into and out of cells",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C030"],
+          "rationale": "Diffusion is a gateway concept linking chemistry (particle model) to biology (cell transport); its extensive co_teach_hints (C033, C038, C040, C042-C045, C048) show it underpins respiratory, digestive, and circulatory system understanding.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Describe the skeleton, muscles and joints and explain how they produce movement",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C033", "SC-KS3-C034", "SC-KS3-C035"],
+          "rationale": "Skeletal structure, biomechanics and antagonistic muscles are tightly co-taught (C034 links to C033/C035) and together explain the musculoskeletal system as a lever system.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Understand the components of a balanced diet and the consequences of poor nutrition",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C036", "SC-KS3-C037", "SC-KS3-C038", "SC-KS3-C041"],
+          "rationale": "Balanced diet, energy requirements, dietary imbalances and gut bacteria are all aspects of nutrition that co-teach (C036 links to C037-C042); teaching them together allows real-world dietary analysis.",
+          "inspired_by": "NGSS LS1.C - Organisation for Matter and Energy Flow"
+        },
+        {
+          "cluster_name": "Explain digestion and the role of enzymes in breaking down food",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C039", "SC-KS3-C040", "SC-KS3-C042"],
+          "rationale": "Digestive system organs, enzyme action, and plant nutrition form the digestion/nutrition cluster. C040 (enzymes) co-teaches with C039 (digestive system), and C042 (plant nutrition) contrasts autotrophic and heterotrophic nutrition.",
+          "inspired_by": "NGSS LS1.C - Organisation for Matter and Energy Flow"
+        },
+        {
+          "cluster_name": "Describe the gas exchange system and explain the mechanism of breathing",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C043", "SC-KS3-C044", "SC-KS3-C045", "SC-KS3-C046"],
+          "rationale": "Gas exchange system structure, the pressure-model of breathing, impacts (exercise/asthma/smoking) and plant stomata together cover respiration at the organ-system level. Co_teach_hints link C043-C046.",
+          "inspired_by": "NGSS LS1.A - Structure and Function"
+        },
+        {
+          "cluster_name": "Describe human and plant reproduction and explain the role of the placenta",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C047", "SC-KS3-C048", "SC-KS3-C049", "SC-KS3-C050"],
+          "rationale": "Human reproduction, placenta function, plant reproduction, and drug effects on the fetus form the reproduction and health cluster for KS3 biology; C048 (placenta) is naturally paired with C047 (human reproduction).",
+          "inspired_by": "NGSS LS1.B - Growth and Development of Organisms"
+        }
+      ]
+    },
+    "SC-KS3-D003": {
+      "domain_name": "Biology - Material Cycles and Energy",
+      "clusters": [
+        {
+          "cluster_name": "Explain photosynthesis and why it is fundamental to life on Earth",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C051", "SC-KS3-C052", "SC-KS3-C053"],
+          "rationale": "The photosynthesis equation, its central importance to almost all life, and leaf adaptations form the introduction cluster. Co_teach_hints link C051 and C052 directly; C053 (leaf adaptations) is the structural counterpart.",
+          "inspired_by": "NGSS LS1.C - Organisation for Matter and Energy Flow"
+        },
+        {
+          "cluster_name": "Compare aerobic and anaerobic respiration and explain their roles in organisms",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C054", "SC-KS3-C055", "SC-KS3-C056"],
+          "rationale": "Aerobic respiration, anaerobic respiration and their comparison are tightly co-taught (C054 links to C055; C056 links to C054/C055); together they complete the energy release side of the photosynthesis-respiration cycle.",
+          "inspired_by": "NGSS LS1.C - Organisation for Matter and Energy Flow"
+        }
+      ]
+    },
+    "SC-KS3-D004": {
+      "domain_name": "Biology - Interactions and Interdependencies",
+      "clusters": [
+        {
+          "cluster_name": "Describe how organisms depend on each other in ecosystems through food webs",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C057", "SC-KS3-C058"],
+          "rationale": "Ecosystem interdependence and food webs are directly co-taught (C058 links to C057) and form the conceptual entry point for ecological relationships at KS3.",
+          "inspired_by": "NGSS LS2.A - Interdependent Relationships in Ecosystems"
+        },
+        {
+          "cluster_name": "Evaluate the importance of pollination for food security and ecosystems",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C059"],
+          "rationale": "Pollination and food security is the applied ecology concept linking plant reproduction to human food supply; co_teach_hints connect it to both ecosystem interdependence and biodiversity.",
+          "inspired_by": "NGSS LS2.A - Interdependent Relationships in Ecosystems"
+        },
+        {
+          "cluster_name": "Analyse how organisms interact with and affect their environment",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C060"],
+          "rationale": "Environmental interactions (how organisms both affect and are affected by their environment) bridge ecosystem structure to the genetics/evolution domain; co_teach_hints link it to ecosystem interdependence and natural selection.",
+          "inspired_by": "NGSS LS2.C - Ecosystem Dynamics, Functioning, and Resilience"
+        }
+      ]
+    },
+    "SC-KS3-D005": {
+      "domain_name": "Biology - Genetics and Evolution",
+      "clusters": [
+        {
+          "cluster_name": "Explain how genetic information is inherited using a model of DNA",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C061", "SC-KS3-C062", "SC-KS3-C063"],
+          "rationale": "Heredity, the DNA model (chromosomes and genes), and the history of its discovery form the introduction to genetics at KS3. Co_teach_hints link C061 to C062 and C064.",
+          "inspired_by": "NGSS LS3.A - Inheritance of Traits"
+        },
+        {
+          "cluster_name": "Describe continuous and discontinuous variation within a species",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C064"],
+          "rationale": "Variation types (continuous like height vs discontinuous like blood group) is the essential bridge between inheritance and natural selection; it must be understood before selection pressures can be applied.",
+          "inspired_by": "NGSS LS3.B - Variation of Traits"
+        },
+        {
+          "cluster_name": "Explain natural selection and how adaptation can lead to extinction",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C065", "SC-KS3-C066"],
+          "rationale": "Natural selection and adaptation/extinction are directly co-taught (C065 links to C066); together they complete the Darwinian narrative from variation through selection to evolutionary outcome.",
+          "inspired_by": "NGSS LS4.B - Natural Selection; LS4.C - Adaptation"
+        },
+        {
+          "cluster_name": "Evaluate the importance of biodiversity and the threats to it",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C067"],
+          "rationale": "Biodiversity and gene banks is the culminating applied concept of the genetics/evolution domain; it connects evolution theory to contemporary conservation challenges and policy.",
+          "inspired_by": "NGSS LS4.D - Biodiversity and Humans"
+        }
+      ]
+    },
+    "SC-KS3-D006": {
+      "domain_name": "Chemistry - The Particulate Nature of Matter",
+      "clusters": [
+        {
+          "cluster_name": "Describe the particle model and explain properties of solids, liquids and gases",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C068", "SC-KS3-C069"],
+          "rationale": "The particle model and three states of matter together establish the foundational model for all KS3 chemistry; they are inseparable as the model exists precisely to explain state properties.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Explain changes of state and gas pressure using the particle model",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C070", "SC-KS3-C071"],
+          "rationale": "Gas pressure (particle collisions with container walls) and changes of state (particles gaining/losing enough energy to overcome forces) apply the particle model to explain two key phenomena. Co_teach_hints link C070 to C068/C069.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        }
+      ]
+    },
+    "SC-KS3-D007": {
+      "domain_name": "Chemistry - Atoms, Elements and Compounds",
+      "clusters": [
+        {
+          "cluster_name": "Describe atoms, elements and compounds using the Dalton model",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C072", "SC-KS3-C073"],
+          "rationale": "The Dalton atomic model and the distinctions between atoms, elements and compounds form the conceptual entry point for all KS3 chemistry classification; they must precede symbols, formulae and separation.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Use chemical symbols and apply IUPAC naming to elements and compounds",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C023", "SC-KS3-C074"],
+          "rationale": "Chemical nomenclature and symbols/formulae are the language tools of chemistry; co_teach_hints link C074 to C023 and C073, as symbols are learned alongside naming conventions.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Distinguish pure substances from mixtures and apply separation techniques",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C076", "SC-KS3-C077", "SC-KS3-C079", "SC-KS3-C080"],
+          "rationale": "Pure substances, mixtures, separation techniques and identifying pure substances form a tightly co-taught cluster. Co_teach_hints link C076-C077-C079-C080 extensively; all involve the practical application of filtration, distillation and chromatography.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Explain diffusion in chemistry and conservation of mass in changes",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C075", "SC-KS3-C078"],
+          "rationale": "Conservation of mass and diffusion in chemical contexts extend the particle model into quantitative reasoning; both underpin understanding of chemical equations and reaction stoichiometry.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        }
+      ]
+    },
+    "SC-KS3-D008": {
+      "domain_name": "Chemistry - Chemical Reactions",
+      "clusters": [
+        {
+          "cluster_name": "Explain reactions as atom rearrangement and write chemical equations",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C081", "SC-KS3-C082"],
+          "rationale": "The conceptual model (reactions rearrange atoms without creating/destroying matter) and its symbolic representation (chemical equations) are the foundation of all chemical reaction understanding. Co_teach_hints link C081 and C082.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        },
+        {
+          "cluster_name": "Identify and describe different types of chemical reactions",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C083", "SC-KS3-C088"],
+          "rationale": "Types of reaction (combustion, thermal decomposition, oxidation, displacement) and catalysts are related through co_teach_hints (C083 lists C088); understanding reaction types requires knowing what speeds them up.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        },
+        {
+          "cluster_name": "Investigate acids and alkalis using the pH scale and neutralisation",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C084", "SC-KS3-C085", "SC-KS3-C086", "SC-KS3-C087"],
+          "rationale": "Acids/alkalis, pH, acid-metal reactions and neutralisation are tightly co-taught (C084 links to C085/C086/C087; C085 links to C084/C086/C087) and form a coherent practical investigation sequence with indicators and neutralisation experiments.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        },
+        {
+          "cluster_name": "Explain energy changes in chemical reactions and changes of state",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C089", "SC-KS3-C090"],
+          "rationale": "Energy in state changes and exothermic/endothermic reactions are directly co-taught (C090 links to C089); together they introduce the energy dimension of all chemical processes, connecting to the physics energy domain.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        }
+      ]
+    },
+    "SC-KS3-D009": {
+      "domain_name": "Chemistry - The Periodic Table and Materials",
+      "clusters": [
+        {
+          "cluster_name": "Describe how Mendeleev organised the Periodic Table and explain its structure",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C092", "SC-KS3-C093"],
+          "rationale": "Mendeleev's periodic table and its structure (periods, groups, metals, non-metals) form the historical and structural introduction to the Periodic Table before element properties and reactions are studied.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Compare properties of metals and non-metals and predict their reactions",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C091", "SC-KS3-C094", "SC-KS3-C095"],
+          "rationale": "Element properties, prediction of reaction patterns from the Periodic Table, and metal/non-metal property comparison are tightly co-taught. C094 co-teaches with C091/C092/C093/C095.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Explain the reactivity series and how it determines metal extraction methods",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C096", "SC-KS3-C097", "SC-KS3-C098"],
+          "rationale": "Oxide acidity, the reactivity series, and metal extraction using carbon reduction are co-taught (C096 links to C097/C098; C097 links to C098); they form the applied chemistry of metals sequence at KS3.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        },
+        {
+          "cluster_name": "Describe the properties and uses of ceramics, polymers and composites",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C099"],
+          "rationale": "Material types (ceramics, polymers, composites) is the materials science application cluster linking property knowledge to engineering use; co_teach_hints connect it to element properties and metal extraction.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        }
+      ]
+    },
+    "SC-KS3-D010": {
+      "domain_name": "Chemistry - Earth and Atmosphere",
+      "clusters": [
+        {
+          "cluster_name": "Describe the composition and structure of the Earth",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C100", "SC-KS3-C101"],
+          "rationale": "Earth composition and Earth structure (crust, mantle, core) are directly co-taught and provide the physical geography foundation for the rock cycle and Earth resources.",
+          "inspired_by": "NGSS ESS2.A - Earth Materials and Systems"
+        },
+        {
+          "cluster_name": "Explain the rock cycle and the formation of igneous, sedimentary and metamorphic rocks",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C102"],
+          "rationale": "The rock cycle is the dynamic Earth process that connects Earth structure to rock types; it explains how the same material is recycled through different rock forms over geological time.",
+          "inspired_by": "NGSS ESS2.A - Earth Materials and Systems"
+        },
+        {
+          "cluster_name": "Analyse the carbon cycle and its relationship to the atmosphere",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C104", "SC-KS3-C105"],
+          "rationale": "The carbon cycle and atmospheric composition are directly co-taught (C104 links to C105 and vice versa); understanding atmospheric CO2 as part of the carbon cycle is the prerequisite for understanding climate change.",
+          "inspired_by": "NGSS ESS2.D - Weather and Climate"
+        },
+        {
+          "cluster_name": "Evaluate Earth as a source of finite resources and the importance of recycling",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C103"],
+          "rationale": "Earth resources and recycling is the sustainability application concept for this domain; it applies geological knowledge to the real-world challenge of resource management.",
+          "inspired_by": "NGSS ESS3.C - Human Impacts on Earth Systems"
+        },
+        {
+          "cluster_name": "Explain how human carbon dioxide production causes climate change",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C106"],
+          "rationale": "Climate change as a consequence of human CO2 production is the culminating applied topic of the Earth and atmosphere domain; it connects carbon cycle knowledge to global environmental impact.",
+          "inspired_by": "NGSS ESS3.D - Global Climate Change"
+        }
+      ]
+    },
+    "SC-KS3-D011": {
+      "domain_name": "Physics - Energy",
+      "clusters": [
+        {
+          "cluster_name": "Compare food energy values and understand fuel costs and power ratings",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C107", "SC-KS3-C108", "SC-KS3-C109", "SC-KS3-C110"],
+          "rationale": "Food energy, power ratings, energy transfer amounts and fuel costs are the everyday-context entry cluster for KS3 energy; they make the abstract concept of energy concrete and personally relevant before formal energy conservation is introduced.",
+          "inspired_by": "NGSS PS3.A - Definitions of Energy"
+        },
+        {
+          "cluster_name": "Describe different energy resources and evaluate their environmental impact",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C111"],
+          "rationale": "Energy resources (fossil fuels, renewables, nuclear) connects energy physics to societal and environmental decision-making; co_teach_hints link it to climate change (C106) and fuel costs (C110).",
+          "inspired_by": "NGSS ESS3.A - Natural Resources"
+        },
+        {
+          "cluster_name": "Explain thermal equilibrium, heat transfer processes and simple machines",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C112", "SC-KS3-C113", "SC-KS3-C114"],
+          "rationale": "Simple machines (force-distance trade-off), thermal equilibrium (heat flow and insulators) and energy transfer processes (motion, gravity, combustion) are co-taught via extensive co_teach_hints and together cover the mechanisms of energy transfer.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        },
+        {
+          "cluster_name": "Apply conservation of energy to describe energy changes in systems",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C115", "SC-KS3-C116", "SC-KS3-C117"],
+          "rationale": "Energy conservation, describing energy changes in systems over time, and physical mechanisms as energy changers are the formal physics conclusion of the energy domain; together they constitute the law of conservation of energy in practice.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        }
+      ]
+    },
+    "SC-KS3-D012": {
+      "domain_name": "Physics - Motion and Forces",
+      "clusters": [
+        {
+          "cluster_name": "Calculate speed and represent motion on distance-time graphs",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C118", "SC-KS3-C119", "SC-KS3-C120"],
+          "rationale": "Speed calculation, distance-time graphs and relative motion form the kinematics introduction; co_teach_hints link C119 to C118/C120/C122. These are always taught together as the quantitative description of motion.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        },
+        {
+          "cluster_name": "Describe forces as interactions and use force diagrams to represent them",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C121", "SC-KS3-C122", "SC-KS3-C123", "SC-KS3-C126"],
+          "rationale": "Force concept, force arrow diagrams, balanced/unbalanced forces and measuring in newtons form the foundational force representation skills. Co_teach_hints strongly link C122 to C119/C121/C123.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        },
+        {
+          "cluster_name": "Investigate contact forces including friction, resistance and deformation",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C125", "SC-KS3-C127", "SC-KS3-C128"],
+          "rationale": "Contact forces (friction/resistance/deformation), Hooke's Law and work/energy when deformed are co-taught (C127 links to C125/C128; C128 links to C125/C127); they form the practical force investigation sequence using springs and friction surfaces.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        },
+        {
+          "cluster_name": "Describe non-contact forces including gravity, magnetism and electrostatics",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C129"],
+          "rationale": "Non-contact forces (gravity, magnetic, electrostatic) acting at a distance are a distinct conceptual category; co_teach_hints link C129 to C121/C122/C123 and it connects to the electromagnetism domain.",
+          "inspired_by": "NGSS PS2.B - Types of Interactions"
+        },
+        {
+          "cluster_name": "Explain pressure in fluids including liquid pressure and atmospheric pressure",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C130", "SC-KS3-C131", "SC-KS3-C132"],
+          "rationale": "Atmospheric pressure, liquid pressure/upthrust and pressure as force per unit area are directly co-taught (C130 links to C131/C132; C132 links to C130/C131); pressure in fluids is a unified sub-topic within forces.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        },
+        {
+          "cluster_name": "Analyse moments, equilibrium and how forces cause changes in motion",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C124", "SC-KS3-C133", "SC-KS3-C134"],
+          "rationale": "Moments (turning effect), equilibrium with opposing forces, and forces causing changes in motion are the culminating mechanics concepts. Co_teach_hints link C124 to C125/C127/C131/C133/C134, and C133 to C120-C124/C132/C134.",
+          "inspired_by": "NGSS PS2.A - Forces and Motion"
+        }
+      ]
+    },
+    "SC-KS3-D013": {
+      "domain_name": "Physics - Waves",
+      "clusters": [
+        {
+          "cluster_name": "Understand how waves transfer energy and distinguish sound from light waves",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C135", "SC-KS3-C140", "SC-KS3-C141"],
+          "rationale": "Water waves as a model, waves transferring energy/information, and the comparison of light vs matter waves establish the wave concept before specific wave types are studied. Co_teach_hints link C135 to C140/C141.",
+          "inspired_by": "NGSS PS4.A - Wave Properties"
+        },
+        {
+          "cluster_name": "Describe sound wave properties including pitch, volume, echo and auditory range",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C136", "SC-KS3-C137", "SC-KS3-C138", "SC-KS3-C139"],
+          "rationale": "Sound frequency, properties (echoes, reflection, absorption), production through vibration and auditory range form the complete sound waves cluster. Co_teach_hints link C136 to C137/C138/C139/C143.",
+          "inspired_by": "NGSS PS4.A - Wave Properties"
+        },
+        {
+          "cluster_name": "Explain how light travels and interacts with transparent and opaque materials",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C142", "SC-KS3-C143", "SC-KS3-C145"],
+          "rationale": "Light properties (speed in vacuum), transmission/absorption/scattering, and light causing chemical/electrical effects are co-taught (C143 links to C142/C145). Together they cover the energy aspects of light.",
+          "inspired_by": "NGSS PS4.B - Electromagnetic Radiation"
+        },
+        {
+          "cluster_name": "Apply the ray model to explain reflection, refraction and the human eye",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C144", "SC-KS3-C146"],
+          "rationale": "The ray model and colour/frequency are the geometric and quantitative aspects of light; C144 (ray model for mirrors, refraction, lenses, the eye) co-teaches with C143 and C138, and C146 (colour from frequency) completes the light spectrum picture.",
+          "inspired_by": "NGSS PS4.B - Electromagnetic Radiation"
+        }
+      ]
+    },
+    "SC-KS3-D014": {
+      "domain_name": "Physics - Electricity and Electromagnetism",
+      "clusters": [
+        {
+          "cluster_name": "Describe electric current, potential difference and resistance in circuits",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C147", "SC-KS3-C149", "SC-KS3-C150", "SC-KS3-C151"],
+          "rationale": "Current, potential difference, resistance and conductors/insulators are the four foundational electrical quantities; they are always taught together using ammeters and voltmeters in practical circuit investigations.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        },
+        {
+          "cluster_name": "Compare series and parallel circuits and explain how components behave",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C148"],
+          "rationale": "Series and parallel circuits with current behaviour is a distinct practical topic requiring hands-on circuit building; co_teach_hints link it to current/PD/resistance, making it the applied circuit design cluster.",
+          "inspired_by": "NGSS PS3.B - Conservation of Energy and Energy Transfer"
+        },
+        {
+          "cluster_name": "Explain static electricity and the concept of electric fields",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C152", "SC-KS3-C153"],
+          "rationale": "Static electricity and electric fields are co-taught (C152 links to C153); together they introduce the field concept that unifies electric and magnetic phenomena in the next cluster.",
+          "inspired_by": "NGSS PS2.B - Types of Interactions"
+        },
+        {
+          "cluster_name": "Describe magnetic poles and fields including Earth's magnetic field",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C154", "SC-KS3-C155", "SC-KS3-C156"],
+          "rationale": "Magnetic poles, magnetic fields (with field lines) and Earth's magnetism are co-taught (C154 links to C155/C156; C155 links to C153/C154/C156); they form a natural sub-unit on magnetism before electromagnetism.",
+          "inspired_by": "NGSS PS2.B - Types of Interactions"
+        },
+        {
+          "cluster_name": "Explain electromagnetism and the motor effect in electric motors",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C157"],
+          "rationale": "Electromagnetism (the magnetic effect of current) and basic motor principles is the culminating concept of this domain; co_teach_hints link it to all electricity and magnetism concepts in the domain.",
+          "inspired_by": "NGSS PS2.B - Types of Interactions"
+        }
+      ]
+    },
+    "SC-KS3-D015": {
+      "domain_name": "Physics - Matter",
+      "clusters": [
+        {
+          "cluster_name": "Describe similarities and differences between states using the particle model",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C159", "SC-KS3-C163", "SC-KS3-C164"],
+          "rationale": "State properties, particle arrangements explaining those properties, and atoms/molecules as the particles form the structural foundation; co_teach_hints link C159 to C163 and C163 to C159/C160/C161.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Explain Brownian motion and diffusion as evidence for particle movement",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C160", "SC-KS3-C161"],
+          "rationale": "Brownian motion and diffusion driven by concentration differences are co-taught (co_teach_hints link C160 and C161 extensively); both provide observable evidence for particle motion in real systems.",
+          "inspired_by": "NGSS PS1.A - Structure and Properties of Matter"
+        },
+        {
+          "cluster_name": "Distinguish physical changes from chemical changes and explain conservation of mass",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C158", "SC-KS3-C162"],
+          "rationale": "Physical changes and the chemical vs physical change distinction are directly co-taught (C162 links to C158); both require reference to mass conservation, connecting this domain to the chemical reactions domain.",
+          "inspired_by": "NGSS PS1.B - Chemical Reactions"
+        },
+        {
+          "cluster_name": "Explain how temperature affects particle motion and the concept of internal energy",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C165", "SC-KS3-C166"],
+          "rationale": "Temperature's effect on particles and internal energy are directly co-taught (C166 co-teaches with C160/C161/C163/C165); together they link temperature as a macroscopic measurement to the microscopic particle model.",
+          "inspired_by": "NGSS PS3.A - Definitions of Energy"
+        }
+      ]
+    },
+    "SC-KS3-D016": {
+      "domain_name": "Physics - Space Physics",
+      "clusters": [
+        {
+          "cluster_name": "Describe the solar system, galaxies and the structure of the universe",
+          "cluster_type": "introduction",
+          "concept_ids": ["SC-KS3-C169"],
+          "rationale": "Solar system structure (Sun as a star, other stars, galaxies, universe structure) is the spatial context for all space physics; it establishes scale before gravitational and orbital concepts are explored.",
+          "inspired_by": "NGSS ESS1.A - The Universe and Its Stars"
+        },
+        {
+          "cluster_name": "Calculate weight using gravity and explain how gravitational field strength varies",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C167", "SC-KS3-C168"],
+          "rationale": "Gravity force (W = mg), weight calculation, and varying gravitational field strength on different bodies are co-taught (C167 links to C168/C169; C168 links to C167/C169/C170); they ground space physics in quantitative force reasoning.",
+          "inspired_by": "NGSS PS2.B - Types of Interactions"
+        },
+        {
+          "cluster_name": "Explain seasons and day length using a model of Earth's motion",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C170"],
+          "rationale": "Earth's seasons, axial tilt and day length variation require a 3D spatial model of Earth's orbital motion; this extends KS2 day/night understanding to the more complex seasonal phenomenon.",
+          "inspired_by": "NGSS ESS1.B - Earth and the Solar System"
+        },
+        {
+          "cluster_name": "Describe the light year as a unit of distance and explain its astronomical significance",
+          "cluster_type": "practice",
+          "concept_ids": ["SC-KS3-C171"],
+          "rationale": "The light year connects the speed of light from the waves domain to the scale of the universe; co_teach_hints link it to C142 (light speed) and C169/C170 (solar system structure and Earth's motion).",
+          "inspired_by": "NGSS ESS1.A - The Universe and Its Stars"
+        }
+      ]
+    }
+  }
+}

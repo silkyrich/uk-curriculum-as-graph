@@ -1,0 +1,658 @@
+{
+  "version": "1.0",
+  "subject_group": "Humanities",
+  "authored_by": "humanities-agent",
+  "authored_date": "2026-02-22",
+  "note": "Cluster definitions for History, Geography, Religious Studies and Citizenship across KS1–KS4. Clusters follow action-oriented verb phrase naming adapted for humanities inquiry. Co-teach hints from extraction files inform grouping decisions. Each concept appears in exactly one cluster per domain.",
+  "domains": {
+    "GE-KS1-D001": {
+      "domain_name": "Locational Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Understand the world's continents, oceans and UK countries",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS1-C001", "GE-KS1-C002"],
+          "rationale": "Both concepts establish foundational spatial literacy — the global scale (continents and oceans) and the home-country scale (UK nations and capitals). Taught together they build a nested sense of place: pupils locate the UK within the wider world.",
+          "inspired_by": "C3 Framework D2.Geo.2 — identifying locations using mental maps at multiple scales"
+        }
+      ]
+    },
+    "GE-KS1-D002": {
+      "domain_name": "Place Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Compare a locality in the UK with a contrasting place abroad",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS1-C006"],
+          "rationale": "Single concept domain; place study and comparison is the core activity of KS1 place knowledge — pupils observe similarities and differences between two contrasting localities using photographs, maps and first-hand accounts.",
+          "inspired_by": "C3 Framework D2.Geo.4 — explaining how culture influences place characteristics"
+        }
+      ]
+    },
+    "GE-KS1-D003": {
+      "domain_name": "Human and Physical Geography",
+      "clusters": [
+        {
+          "cluster_name": "Describe weather, seasons and the difference between physical and human features",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS1-C003", "GE-KS1-C004"],
+          "rationale": "Weather/climate and the physical/human feature distinction are foundational geographical concepts that KS1 pupils encounter together when observing their local environment. Both deal with how to 'read' the landscape around them.",
+          "inspired_by": "NGSS ESS2 — Earth's Systems; distinguishing natural from human-made features"
+        }
+      ]
+    },
+    "GE-KS1-D004": {
+      "domain_name": "Geographical Skills and Fieldwork",
+      "clusters": [
+        {
+          "cluster_name": "Use maps, atlases and globes to locate and describe places",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS1-C005"],
+          "rationale": "Single concept domain; map, atlas and globe literacy is the core geographical skill at KS1 — pupils learn to use these tools to find and communicate information about places studied in the other domains.",
+          "inspired_by": "C3 Framework D2.Geo.1 — constructing maps to represent spatial relationships"
+        }
+      ]
+    },
+    "GE-KS2-D001": {
+      "domain_name": "Locational Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Use latitude, longitude and the global grid to locate places",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS2-C001"],
+          "rationale": "Single concept domain; latitude and longitude is the defining KS2 locational knowledge skill — pupils build on KS1 atlas use to work with coordinate systems and understand climate patterns linked to latitude.",
+          "inspired_by": "C3 Framework D2.Geo.1 — using geographic representations including grid coordinates"
+        }
+      ]
+    },
+    "GE-KS2-D002": {
+      "domain_name": "Place Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Compare a region of the UK with a region in Europe or the Americas",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS2-C006"],
+          "rationale": "Single concept domain; regional place study expands KS1 locality comparison to a larger geographical scale — pupils use the full range of geographical enquiry tools to compare human and physical characteristics across continents.",
+          "inspired_by": "C3 Framework D2.Geo.5 — explaining how cultural and environmental characteristics differ between places"
+        }
+      ]
+    },
+    "GE-KS2-D003": {
+      "domain_name": "Human and Physical Geography",
+      "clusters": [
+        {
+          "cluster_name": "Understand climate zones, biomes and the water cycle",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS2-C002", "GE-KS2-C003"],
+          "rationale": "Climate zones/biomes (C002) and river systems/water cycle (C003) are linked by co-teach hints and share the physical geography thread — both explain how natural systems shape landscapes and are best taught as an interconnected physical world unit before introducing human responses.",
+          "inspired_by": "NGSS ESS2.C — The Roles of Water in Earth's Surface Processes"
+        },
+        {
+          "cluster_name": "Investigate settlement patterns and economic geography",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS2-C004"],
+          "rationale": "Settlement and economic geography (C004) builds on the physical world established in cluster 1 — pupils explore how humans organise themselves in relation to physical features such as rivers, coasts and climate zones, applying understanding of place at multiple scales.",
+          "inspired_by": "C3 Framework D2.Geo.7 — explaining how economic decisions affect the sustainable development of places"
+        }
+      ]
+    },
+    "GE-KS2-D004": {
+      "domain_name": "Geographical Skills and Fieldwork",
+      "clusters": [
+        {
+          "cluster_name": "Use Ordnance Survey maps and grid references to navigate and describe the landscape",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS2-C005"],
+          "rationale": "Single concept domain; OS maps and grid references represent the core KS2 cartographic skill — pupils move from general atlas use to the specialist detail of topographic maps, interpreting contours, symbols and four/six-figure grid references.",
+          "inspired_by": "C3 Framework D2.Geo.1 — constructing and interpreting geographic representations"
+        }
+      ]
+    },
+    "HI-KS1-D001": {
+      "domain_name": "Chronological Understanding",
+      "clusters": [
+        {
+          "cluster_name": "Understand chronology and how things change and stay the same over time",
+          "cluster_type": "introduction",
+          "concept_ids": ["HI-KS1-C001", "HI-KS1-C002"],
+          "rationale": "Time/chronology (C001) and change/continuity (C002) are linked by co-teach hints and form the conceptual bedrock of historical thinking at KS1 — pupils use the vocabulary of time, sequence events on timelines, and begin to notice what has changed and what has stayed the same within living memory.",
+          "inspired_by": "C3 Framework D2.His.1 — creating timelines and explaining relationships among events"
+        }
+      ]
+    },
+    "HI-KS1-D002": {
+      "domain_name": "Historical Content Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Explore significant individuals and events in local and national history",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS1-C003", "HI-KS1-C005"],
+          "rationale": "Significant individuals (C003) and local/national history (C005) belong in the same cluster because KS1 content study is organised around notable people whose actions connect to the local community or national story — the two concepts are routinely taught through the same historical episodes (e.g. exploring a local hero alongside national figures).",
+          "inspired_by": "C3 Framework D2.His.5 — explaining connections among historical individuals, ideas, and events"
+        }
+      ]
+    },
+    "HI-KS1-D003": {
+      "domain_name": "Historical Enquiry Skills",
+      "clusters": [
+        {
+          "cluster_name": "Investigate historical sources and ask questions about the past",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS1-C004"],
+          "rationale": "Single concept domain; source-based enquiry is the defining historical skill at KS1 — pupils handle artefacts, photographs and documents, ask questions about what they show, and begin to understand that evidence can be incomplete or biased.",
+          "inspired_by": "C3 Framework D2.His.9 — comparing information provided by different historical sources"
+        }
+      ]
+    },
+    "HI-KS2-D002": {
+      "domain_name": "British History",
+      "clusters": [
+        {
+          "cluster_name": "Understand British prehistory and medieval history from Stone Age to Norman Conquest",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS2-C005"],
+          "rationale": "Single concept domain; the sweep from Stone Age to medieval Britain is the major British history content unit at KS2 — pupils trace change and continuity across prehistoric, Iron Age, Roman, Anglo-Saxon and Viking periods, building a chronological framework for later study.",
+          "inspired_by": "C3 Framework D2.His.2 — classifying historical periods into eras and explaining the criteria used"
+        }
+      ]
+    },
+    "HI-KS2-D003": {
+      "domain_name": "World History",
+      "clusters": [
+        {
+          "cluster_name": "Investigate the achievements and legacies of ancient civilisations",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS2-C004"],
+          "rationale": "Single concept domain; ancient civilisations (Egypt, Sumer, Indus Valley, Shang China) are studied as KS2 world history content — pupils examine how early societies organised themselves and what they left behind, developing comparative thinking across cultures.",
+          "inspired_by": "C3 Framework D2.His.2 — explaining how and why historical periods have been constructed"
+        }
+      ]
+    },
+    "HI-KS2-D004": {
+      "domain_name": "Historical Enquiry and Disciplinary Skills",
+      "clusters": [
+        {
+          "cluster_name": "Analyse causes, consequences and the significance of historical events",
+          "cluster_type": "introduction",
+          "concept_ids": ["HI-KS2-C001", "HI-KS2-C002"],
+          "rationale": "Cause and consequence (C001) and significance (C002) are linked by co-teach hints — pupils learning to explain why events happened naturally move to evaluating which causes and consequences were most important (significance). These second-order concepts are typically introduced together through a shared historical enquiry question.",
+          "inspired_by": "C3 Framework D2.His.3 — explaining why individuals and groups held particular perspectives during historical periods"
+        },
+        {
+          "cluster_name": "Evaluate historical evidence and construct interpretations of the past",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS2-C003"],
+          "rationale": "Historical evidence and interpretation (C003) builds on the causal thinking in cluster 1 — once pupils understand why events happened, they apply source skills to assess how reliably we know what happened, evaluating the range and limitations of surviving evidence.",
+          "inspired_by": "C3 Framework D2.His.9 — comparing information provided by different historical sources about the past"
+        }
+      ]
+    },
+    "CI-KS34-D001": {
+      "domain_name": "Democracy, Parliament and Government (KS3)",
+      "clusters": [
+        {
+          "cluster_name": "Understand how parliamentary democracy and the UK constitution work",
+          "cluster_type": "practice",
+          "concept_ids": ["CI-KS34-C001"],
+          "rationale": "Single concept domain; parliamentary democracy and constitutional understanding is the foundational civic knowledge unit at KS3 — pupils examine how Parliament is elected, how government forms and operates, and what the uncodified UK constitution means in practice.",
+          "inspired_by": "C3 Framework D2.Civ.1 — describing the powers and limits of the branches of government"
+        }
+      ]
+    },
+    "CI-KS34-D002": {
+      "domain_name": "Law, Justice and Rights (KS3)",
+      "clusters": [
+        {
+          "cluster_name": "Understand rights, liberties and the rule of law in democratic society",
+          "cluster_type": "practice",
+          "concept_ids": ["CI-KS34-C002"],
+          "rationale": "Single concept domain; rights and the rule of law is the core justice and liberty unit at KS3 — pupils examine the legal framework protecting individual freedoms, the role of the judiciary, and the relationship between rights and responsibilities.",
+          "inspired_by": "C3 Framework D2.Civ.2 — explaining how the rule of law applies to individuals and groups"
+        }
+      ]
+    },
+    "CI-KS34-D003": {
+      "domain_name": "Community, Identity and Participation (KS3 and KS4)",
+      "clusters": [
+        {
+          "cluster_name": "Explore identity, diversity and mutual respect in British society",
+          "cluster_type": "practice",
+          "concept_ids": ["CI-KS34-C004"],
+          "rationale": "Single concept domain; identity and diversity is the community cohesion unit spanning KS3/KS4 — pupils examine how national, regional, ethnic and religious identities coexist, and how mutual respect and shared values underpin civic life.",
+          "inspired_by": "C3 Framework D2.Civ.10 — explaining how people work together to advocate for changes to laws or government policies"
+        }
+      ]
+    },
+    "CI-KS34-D004": {
+      "domain_name": "Constitutional Democracy, Human Rights and International Relations (KS4)",
+      "clusters": [
+        {
+          "cluster_name": "Analyse democracy, elections and comparative political systems",
+          "cluster_type": "practice",
+          "concept_ids": ["CI-KS34-C003"],
+          "rationale": "Single concept domain; comparative democracy is the KS4 extension of constitutional understanding — pupils evaluate different electoral systems, compare democracies internationally, and consider how human rights frameworks shape global relations.",
+          "inspired_by": "C3 Framework D2.Civ.1 — explaining how governments of different types achieve their purposes"
+        }
+      ]
+    },
+    "CI-KS34-D005": {
+      "domain_name": "Personal Finance and Economic Understanding",
+      "clusters": [
+        {
+          "cluster_name": "Evaluate personal financial decisions and understand economic systems",
+          "cluster_type": "practice",
+          "concept_ids": ["CI-KS34-C005"],
+          "rationale": "Single concept domain; personal financial management is the economic literacy unit at KS3/KS4 — pupils develop skills to manage income, credit and savings, understand taxation and public spending, and consider how individual financial choices connect to wider economic conditions.",
+          "inspired_by": "C3 Framework D2.Eco.1 — explaining how economic decisions affect the well-being of individuals, businesses, and society"
+        }
+      ]
+    },
+    "CI-KS34-D006": {
+      "domain_name": "Citizenship Skills: Critical Analysis and Democratic Participation",
+      "clusters": [
+        {
+          "cluster_name": "Practise active citizenship and democratic participation in the community",
+          "cluster_type": "practice",
+          "concept_ids": ["CI-KS34-C006"],
+          "rationale": "Single concept domain; active citizenship is the applied skills unit — pupils learn to research issues, form reasoned arguments, campaign, vote and engage with local and national democratic processes, translating knowledge from other domains into civic action.",
+          "inspired_by": "C3 Framework D2.Civ.7 — applying civic virtues when working with others"
+        }
+      ]
+    },
+    "GE-KS3-D001": {
+      "domain_name": "Locational Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Develop detailed locational knowledge of Africa, Asia and the Middle East",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS3-C005"],
+          "rationale": "Single concept domain; extending locational knowledge to Africa, Asia and the Middle East is the KS3 focus — building on KS2 European/Americas knowledge, pupils develop a fluent working knowledge of these major world regions including their physical and political geography.",
+          "inspired_by": "C3 Framework D2.Geo.2 — using geographic representations to explain relationships between places"
+        }
+      ]
+    },
+    "GE-KS3-D002": {
+      "domain_name": "Place Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Investigate a region of Africa or Asia through in-depth place study",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS3-C006"],
+          "rationale": "Single concept domain; place depth study at KS3 requires nuanced, multi-layered understanding of a specific African or Asian region — pupils apply all geographical concepts and skills to produce a rounded analysis that goes beyond surface description to explain how physical and human factors interact.",
+          "inspired_by": "C3 Framework D2.Geo.4 — explaining how cultural and environmental characteristics affect the distribution and movement of people"
+        }
+      ]
+    },
+    "GE-KS3-D003": {
+      "domain_name": "Human and Physical Geography",
+      "clusters": [
+        {
+          "cluster_name": "Investigate plate tectonics and its role in shaping landscapes and hazards",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS3-C001"],
+          "rationale": "Plate tectonics (C001) is the gateway physical geography concept at KS3 — it is co-taught with development and population (C002, C004) but forms a distinct physical science cluster. Teaching it first gives pupils the physical framework before they explore human responses to geological hazards.",
+          "inspired_by": "NGSS ESS2.B — Plate Tectonics and Large-Scale System Interactions"
+        },
+        {
+          "cluster_name": "Analyse global development, inequality, population and urbanisation",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS3-C002", "GE-KS3-C004"],
+          "rationale": "Global development/inequality (C002) and population/urbanisation/migration (C004) share co-teach hints with each other and with plate tectonics — they form a coherent human geography cluster examining how economic and demographic forces shape where and how people live, and why inequalities persist.",
+          "inspired_by": "C3 Framework D2.Geo.7 — explaining how economic decisions affect sustainable development"
+        },
+        {
+          "cluster_name": "Evaluate the causes and consequences of climate change and environmental geography",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS3-C003"],
+          "rationale": "Climate change and environmental geography (C003) is co-taught with development (C002) but stands as a distinct evaluative cluster — pupils examine the science of climate change, its unequal impacts, and the range of human responses, applying critical geographical thinking about sustainability and justice.",
+          "inspired_by": "NGSS ESS3.D — Global Climate Change; C3 Framework D2.Geo.9 — evaluate the influence of long- or short-term climate variability"
+        }
+      ]
+    },
+    "GE-KS3-D004": {
+      "domain_name": "Geographical Skills and Fieldwork",
+      "clusters": [
+        {
+          "cluster_name": "Use GIS, maps and fieldwork methods to collect and communicate geographical data",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS3-C007"],
+          "rationale": "Single concept domain; GIS, maps and fieldwork at KS3 represent a significant step up in technical skill — pupils learn to design and conduct fieldwork enquiries, use digital mapping tools, and process and present geographical data using statistical and cartographic techniques.",
+          "inspired_by": "C3 Framework D2.Geo.1 — constructing maps and other representations to explain geographic patterns"
+        }
+      ]
+    },
+    "GE-KS4-D001": {
+      "domain_name": "Physical Geography: Hazards and Natural Processes",
+      "clusters": [
+        {
+          "cluster_name": "Investigate tectonic hazards, their causes, impacts and management",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS4-C001"],
+          "rationale": "Tectonic hazards (C001) is the opening physical hazards cluster — pupils build on KS3 plate tectonics to examine earthquakes and volcanic eruptions in depth, applying hazard risk frameworks and comparing management strategies in contrasting global contexts.",
+          "inspired_by": "NGSS ESS2.B — Plate Tectonics and Large-Scale System Interactions; ESS3.B — Natural Hazards"
+        },
+        {
+          "cluster_name": "Analyse tropical storms, extreme weather and the role of climate change",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS4-C011", "GE-KS4-C002"],
+          "rationale": "Tropical storms (C011) and climate change (C002) are linked by co-teach hints — extreme weather events are understood as a consequence of a changing climate. Teaching them together allows pupils to apply the science of climate change to real hazard examples and evaluate human adaptation strategies.",
+          "inspired_by": "NGSS ESS3.B — Natural Hazards; ESS3.D — Global Climate Change"
+        },
+        {
+          "cluster_name": "Describe and explain tropical rainforest and hot desert ecosystems",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS4-C015"],
+          "rationale": "Tropical rainforest and hot desert ecosystems (C015) form a coherent biome study cluster — pupils examine how climate, soils, plants and animals interact to create distinct ecosystem structures, and evaluate the human threats to these environments and management responses.",
+          "inspired_by": "NGSS LS2.C — Ecosystem Dynamics, Functioning, and Resilience"
+        }
+      ]
+    },
+    "GE-KS4-D002": {
+      "domain_name": "Physical Geography: Landscapes and Systems",
+      "clusters": [
+        {
+          "cluster_name": "Describe river processes and landforms and examine flood management",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS4-C003"],
+          "rationale": "River landscapes and processes (C003) is the first landscape systems cluster — pupils systematically examine erosion, transportation and deposition processes, the formation of river landforms, and strategies for managing the flood risk to human settlements.",
+          "inspired_by": "NGSS ESS2.C — The Roles of Water in Earth's Surface Processes"
+        },
+        {
+          "cluster_name": "Examine coastal processes, landforms and strategies for coastal management",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS4-C004"],
+          "rationale": "Coastal processes and management (C004) parallels river landscapes — pupils apply the same geomorphological framework to coastal environments, examining wave action, longshore drift and the landforms they create, then evaluating hard and soft engineering management approaches.",
+          "inspired_by": "NGSS ESS2.C — The Roles of Water in Earth's Surface Processes; ESS3.B — Natural Hazards"
+        }
+      ]
+    },
+    "GE-KS4-D003": {
+      "domain_name": "Human Geography: Urban Issues and Challenges",
+      "clusters": [
+        {
+          "cluster_name": "Investigate urbanisation, slum growth and challenges in cities of the developing world",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS4-C005"],
+          "rationale": "Urbanisation and slum development (C005) provides the problem-focused entry into urban geography — pupils examine the push-pull drivers of rural-urban migration and the social, economic and environmental challenges created by rapid urban growth in lower-income countries.",
+          "inspired_by": "C3 Framework D2.Geo.7 — explaining how economic decisions affect sustainable development of places"
+        },
+        {
+          "cluster_name": "Evaluate sustainable urban development strategies in UK and global cities",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS4-C013"],
+          "rationale": "Sustainable urban development (C013) builds directly on the urbanisation problems in cluster 1 — pupils evaluate a range of regeneration, transport and planning strategies in UK cities and global case studies, assessing their social, economic and environmental sustainability.",
+          "inspired_by": "C3 Framework D2.Geo.9 — evaluating the influence of human decisions on resource and environment management"
+        }
+      ]
+    },
+    "GE-KS4-D004": {
+      "domain_name": "Human Geography: Economic Development and Global Inequality",
+      "clusters": [
+        {
+          "cluster_name": "Investigate the development gap and the causes of global inequality",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS4-C006"],
+          "rationale": "The development gap (C006) is the conceptual entry point — pupils examine the measures and causes of global inequality, analyse why the gap exists and has grown, and evaluate the effectiveness of strategies such as aid, trade and debt relief in reducing it.",
+          "inspired_by": "C3 Framework D2.Eco.15 — explaining how trade policies influence economic development"
+        },
+        {
+          "cluster_name": "Evaluate transnational corporations and the impacts of economic globalisation",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS4-C012"],
+          "rationale": "TNCs and economic globalisation (C012) is the applied second cluster — pupils study how global corporations drive development and inequality simultaneously, evaluating positive and negative impacts on host countries, workers and the environment, and debating the role of regulation.",
+          "inspired_by": "C3 Framework D2.Eco.15 — explaining the influence of trade on economic development"
+        }
+      ]
+    },
+    "GE-KS4-D005": {
+      "domain_name": "Resource Management and Sustainability",
+      "clusters": [
+        {
+          "cluster_name": "Analyse global water insecurity and evaluate water management strategies",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS4-C007"],
+          "rationale": "Water insecurity (C007) opens resource management — pupils map global patterns of water supply and demand, examine the human and physical causes of water stress, and evaluate management strategies (dams, transfers, conservation) and their environmental and social impacts.",
+          "inspired_by": "NGSS ESS3.A — Natural Resources; C3 Framework D2.Geo.9"
+        },
+        {
+          "cluster_name": "Evaluate energy security and the transition to a sustainable energy mix",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS4-C014"],
+          "rationale": "Energy security and the changing energy mix (C014) mirrors the water insecurity framework — pupils examine global energy demand patterns, the geopolitics of fossil fuel dependence, and evaluate the economic and environmental case for renewable energy transition.",
+          "inspired_by": "NGSS ESS3.A — Natural Resources; ESS3.D — Global Climate Change"
+        }
+      ]
+    },
+    "GE-KS4-D006": {
+      "domain_name": "Geographical Skills, Fieldwork, and Enquiry",
+      "clusters": [
+        {
+          "cluster_name": "Plan and conduct geographical fieldwork enquiry and present findings",
+          "cluster_type": "introduction",
+          "concept_ids": ["GE-KS4-C008"],
+          "rationale": "Fieldwork enquiry (C008) is the applied skills entry point — pupils design a full enquiry from hypothesis to conclusion, collecting primary data in the field and evaluating the reliability of their methods. This underpins the independent investigation component of GCSE assessment.",
+          "inspired_by": "NGSS Science and Engineering Practice 3 — Planning and Carrying Out Investigations"
+        },
+        {
+          "cluster_name": "Use maps, GIS and statistical techniques to interpret geographical data",
+          "cluster_type": "practice",
+          "concept_ids": ["GE-KS4-C009", "GE-KS4-C010"],
+          "rationale": "Cartographic/map skills (C009) and statistical skills (C010) are the complementary technical skills cluster — pupils apply a range of quantitative and spatial analysis techniques to exam-based and fieldwork data, integrating mapwork and data interpretation in geographical argument.",
+          "inspired_by": "C3 Framework D2.Geo.1 — constructing and interpreting multiple geographic representations"
+        }
+      ]
+    },
+    "HI-KS3-D001": {
+      "domain_name": "British History from 1066 to Present",
+      "clusters": [
+        {
+          "cluster_name": "Analyse the transformation of political power from monarchy to parliamentary democracy",
+          "cluster_type": "introduction",
+          "concept_ids": ["HI-KS3-C001"],
+          "rationale": "Power, monarchy and democracy (C001) opens British history at KS3 — pupils trace the long-run story of political change from Norman kingship through Magna Carta, Civil War, and the Reform Acts to modern democracy, examining change and continuity across eight centuries.",
+          "inspired_by": "C3 Framework D2.His.1 — analysing change and continuity within and across periods of history"
+        },
+        {
+          "cluster_name": "Examine the British Empire, colonialism and its enduring consequences",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS3-C002"],
+          "rationale": "Empire, colonialism and its consequences (C002) is co-taught with power and democracy (C001) — imperial expansion is inseparable from British political history and its legacy shapes modern society. Pupils examine causes, justifications, resistance and long-term consequences including migration, culture and contemporary inequalities.",
+          "inspired_by": "C3 Framework D2.His.5 — explaining connections among historical individuals, ideas, and events across geographic contexts"
+        }
+      ]
+    },
+    "HI-KS3-D002": {
+      "domain_name": "World and Non-European History",
+      "clusters": [
+        {
+          "cluster_name": "Understand the Holocaust: causes, events and moral responsibilities",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS3-C003"],
+          "rationale": "Single concept domain; the Holocaust is the mandatory world history unit at KS3 — pupils examine the systematic persecution and genocide of Jewish people and others, placing it in the context of Nazi ideology and the failure of international response, drawing out lessons about prejudice, complicity and moral responsibility.",
+          "inspired_by": "C3 Framework D2.His.5 — explaining multiple causes of historical events using sourced evidence"
+        }
+      ]
+    },
+    "HI-KS3-D003": {
+      "domain_name": "Historical Thinking and Disciplinary Skills",
+      "clusters": [
+        {
+          "cluster_name": "Construct evidence-based historical arguments using disciplinary concepts",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS3-C004"],
+          "rationale": "Single concept domain; constructing historical arguments is the signature KS3 disciplinary skill — pupils develop extended written responses that use second-order concepts (causation, significance, change) to answer historical questions with a structured, evidenced thesis.",
+          "inspired_by": "C3 Framework D3.His.1 — gather relevant information from multiple sources while taking into account the origin, authority, structure, context, and corroborative value of the sources"
+        }
+      ]
+    },
+    "HI-KS4-D001": {
+      "domain_name": "Thematic Studies",
+      "clusters": [
+        {
+          "cluster_name": "Investigate crime and punishment in Britain across time",
+          "cluster_type": "introduction",
+          "concept_ids": ["HI-KS4-C007"],
+          "rationale": "Crime and punishment (C007) is typically taught as the entry thematic study — its long chronological sweep from medieval to modern Britain gives pupils practice in the thematic study methodology: identifying patterns of change and continuity across centuries rather than within a single period.",
+          "inspired_by": "C3 Framework D2.His.1 — analysing change and continuity within and across periods of history"
+        },
+        {
+          "cluster_name": "Examine the history of medicine, public health and scientific knowledge in Britain",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS4-C008"],
+          "rationale": "Medicine in Britain (C008) applies the same thematic study framework to a different domain — pupils trace changing understanding of disease causation, treatments and public health from the medieval period to the present, evaluating the roles of individuals, science, government and war.",
+          "inspired_by": "C3 Framework D2.His.3 — explaining why individuals and groups held particular perspectives"
+        },
+        {
+          "cluster_name": "Analyse the history of migration to and from Britain from the medieval period to today",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS4-C015"],
+          "rationale": "Migrants in Britain (C015) is the third thematic option — pupils trace migration across more than a millennium, examining push-pull factors, the diversity of migrant experiences and contributions, and the political and social responses to migration, connecting historical patterns to contemporary debates.",
+          "inspired_by": "C3 Framework D2.His.5 — explaining connections among historical individuals, ideas, and events across geographic contexts"
+        }
+      ]
+    },
+    "HI-KS4-D002": {
+      "domain_name": "British Depth Studies",
+      "clusters": [
+        {
+          "cluster_name": "Investigate Early Elizabethan England and the religious and political challenges of 1558–1588",
+          "cluster_type": "introduction",
+          "concept_ids": ["HI-KS4-C009"],
+          "rationale": "Early Elizabethan England (C009) is the most popular British depth study option — pupils examine the establishment of the Elizabethan settlement in detail, using a wide range of primary sources to analyse religious tension, threats to the Crown and Elizabethan society, applying all six second-order concepts.",
+          "inspired_by": "C3 Framework D2.His.9 — comparing information provided by different historical sources about the same historical event"
+        },
+        {
+          "cluster_name": "Examine Norman England: conquest, control and the transformation of society 1066–1100",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS4-C014"],
+          "rationale": "Norman England (C014) is the other major British depth option — pupils study the Conquest and its immediate aftermath in close detail, analysing how the Normans imposed control through the feudal system, castles and Domesday Book, and evaluating the extent of change for the English population.",
+          "inspired_by": "C3 Framework D2.His.1 — analysing change and continuity within a historical period"
+        }
+      ]
+    },
+    "HI-KS4-D003": {
+      "domain_name": "Period Studies",
+      "clusters": [
+        {
+          "cluster_name": "Analyse the Weimar Republic, the rise of Nazism and Germany 1918–1939",
+          "cluster_type": "introduction",
+          "concept_ids": ["HI-KS4-C010"],
+          "rationale": "Weimar and Nazi Germany (C010) is the most widely studied period study — pupils examine the fragile democracy of the Weimar Republic, the conditions that allowed the Nazi rise to power, and the social, economic and cultural life of the Third Reich, preparing them for analysis of the Holocaust from HI-KS3.",
+          "inspired_by": "C3 Framework D2.His.3 — explaining why individuals and groups held particular perspectives during historical periods"
+        },
+        {
+          "cluster_name": "Examine the migration, settlement and conflict of the American West c1835–1895",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS4-C011"],
+          "rationale": "The American West (C011) is the other main period study option — pupils examine the westward expansion of the United States, the lives of Plains Indians and the violent dispossession they suffered, and the social transformation brought by cattle ranching and settlement, developing comparative perspectives on colonisation.",
+          "inspired_by": "C3 Framework D2.His.5 — explaining connections among historical individuals, ideas, and events across geographic contexts"
+        }
+      ]
+    },
+    "HI-KS4-D004": {
+      "domain_name": "World Depth Studies",
+      "clusters": [
+        {
+          "cluster_name": "Investigate non-European societies and global historical perspectives",
+          "cluster_type": "introduction",
+          "concept_ids": ["HI-KS4-C016"],
+          "rationale": "Non-European societies (C016) is co-taught with Cold War (C017) and opens world depth study — pupils examine historically significant societies outside Europe (imperial China, Mughal India, the Ottoman Empire) in genuine depth, developing global historical perspectives that counterbalance the Eurocentrism of other units.",
+          "inspired_by": "C3 Framework D2.His.2 — classifying historical periods into eras and explaining the criteria used to define them"
+        },
+        {
+          "cluster_name": "Analyse the Cold War: superpower rivalry, ideology and global consequences",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS4-C017"],
+          "rationale": "Cold War and superpower relations (C017) forms the modern world depth option — pupils examine the ideological confrontation between the USA and USSR from 1945 onwards, the nuclear arms race, proxy conflicts and détente, and evaluate the causes of the Cold War's end and its legacy for international relations.",
+          "inspired_by": "C3 Framework D2.His.3 — explaining why individuals and groups held particular perspectives during historical periods"
+        }
+      ]
+    },
+    "HI-KS4-D005": {
+      "domain_name": "Historic Environment Study",
+      "clusters": [
+        {
+          "cluster_name": "Investigate a historic site as a primary source for understanding the past",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS4-C012"],
+          "rationale": "Single concept domain; the historic environment study is the GCSE unit where pupils treat a specific physical site (e.g. Whitechapel, Castles of Edward I) as historical evidence — they learn to interrogate built heritage alongside documentary sources and evaluate what the site reveals and conceals about the period.",
+          "inspired_by": "C3 Framework D2.His.9 — comparing information provided by different historical sources about the same historical event"
+        }
+      ]
+    },
+    "HI-KS4-D006": {
+      "domain_name": "Second Order Historical Concepts",
+      "clusters": [
+        {
+          "cluster_name": "Analyse historical causation and evaluate consequences of events and developments",
+          "cluster_type": "introduction",
+          "concept_ids": ["HI-KS4-C001", "HI-KS4-C002"],
+          "rationale": "Causation (C001) and consequence (C002) are the foundational analytical pair — pupils learn to identify and prioritise causes, organise them into categories (economic, social, political), then trace short and long-term consequences. These two second-order concepts are taught together through shared enquiry questions and are the building blocks for extended essay writing.",
+          "inspired_by": "C3 Framework D2.His.3 — explaining why individuals and groups held particular perspectives and how perspectives have changed"
+        },
+        {
+          "cluster_name": "Examine change, continuity and similarity across historical periods",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS4-C003", "HI-KS4-C013"],
+          "rationale": "Change and continuity (C003) and similarity and difference (C013) form a natural analytical pair — both require pupils to make structured comparisons across time (change/continuity) and across situations (similarity/difference). They are frequently applied together in thematic questions and in comparing historical case studies.",
+          "inspired_by": "C3 Framework D2.His.1 — analysing change and continuity within and across periods of history"
+        },
+        {
+          "cluster_name": "Evaluate historical significance, source utility and competing interpretations",
+          "cluster_type": "practice",
+          "concept_ids": ["HI-KS4-C004", "HI-KS4-C005", "HI-KS4-C006"],
+          "rationale": "Historical significance (C004), source analysis (C005) and interpretations (C006) form the evaluative cluster — all three require pupils to apply criteria-based judgement: how important? how reliable? how convincing? These skills are tested together in GCSE exam questions and underpin extended argument writing.",
+          "inspired_by": "C3 Framework D2.His.9 — comparing information provided by different historical sources; D2.His.10 — detecting possible limitations in historical sources"
+        }
+      ]
+    },
+    "RS-KS4-D001": {
+      "domain_name": "Beliefs and Teachings",
+      "clusters": [
+        {
+          "cluster_name": "Explore theological beliefs, doctrines and scriptural authority in major world religions",
+          "cluster_type": "practice",
+          "concept_ids": ["RS-KS4-C001", "RS-KS4-C003"],
+          "rationale": "Theological belief and doctrine (C001) and scriptural authority (C003) belong in a single cluster because GCSE RS studies them as an integrated unit — the core beliefs of a religion (what is believed about God, humanity, salvation) are inseparable from the sacred texts that authorise and express those beliefs.",
+          "inspired_by": "C3 Framework D2.His.5 — explaining how religious and philosophical ideas shaped historical events and social structures"
+        }
+      ]
+    },
+    "RS-KS4-D002": {
+      "domain_name": "Practices and Sources of Authority",
+      "clusters": [
+        {
+          "cluster_name": "Investigate religious practices, worship and sources of authority in faith communities",
+          "cluster_type": "practice",
+          "concept_ids": ["RS-KS4-C006"],
+          "rationale": "Single concept domain; religious practices and worship is the lived religion cluster — pupils examine the rituals, rites of passage, places of worship and forms of devotion that express and sustain religious belief in community, and analyse how tradition and authority shape practice across denominations and traditions.",
+          "inspired_by": "C3 Framework D2.His.5 — explaining how cultural and religious practices shape historical and contemporary communities"
+        }
+      ]
+    },
+    "RS-KS4-D003": {
+      "domain_name": "Religion and Ethics",
+      "clusters": [
+        {
+          "cluster_name": "Evaluate ethical frameworks, moral reasoning and the sanctity of human life",
+          "cluster_type": "practice",
+          "concept_ids": ["RS-KS4-C002", "RS-KS4-C005"],
+          "rationale": "Ethical frameworks (C002) and sanctity of life/human dignity (C005) form the core ethics cluster — pupils study the major normative ethical theories (natural law, utilitarianism, situation ethics, Kantian ethics) and then apply them to issues such as euthanasia, abortion and capital punishment where the sanctity of life is directly at stake.",
+          "inspired_by": "C3 Framework D2.Civ.12 — analysing the relationship between the rule of law and individual rights"
+        }
+      ]
+    },
+    "RS-KS4-D004": {
+      "domain_name": "Religion and Society",
+      "clusters": [
+        {
+          "cluster_name": "Explore religious pluralism, interfaith dialogue and the role of religion in public life",
+          "cluster_type": "practice",
+          "concept_ids": ["RS-KS4-C004"],
+          "rationale": "Single concept domain; religious pluralism and interfaith dialogue is the society-facing cluster — pupils examine how multiple faith traditions coexist in a secular democratic society, analyse theological attitudes to pluralism (exclusivism, inclusivism, pluralism), and evaluate the contribution of interfaith dialogue to social cohesion.",
+          "inspired_by": "C3 Framework D2.Civ.10 — analysing the relationship between individual rights and the common good in a diverse society"
+        }
+      ]
+    }
+  }
+}

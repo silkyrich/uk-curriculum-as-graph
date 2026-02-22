@@ -1,0 +1,1243 @@
+{
+  "version": "1.0",
+  "subject_group": "Mathematics",
+  "authored_by": "maths-agent",
+  "authored_date": "2026-02-22",
+  "note": "KS1/2 clusters follow NC programme of study granularity closely. KS3 domains with many concepts (Number, Algebra, Geometry) are split into 4-6 clusters using co_teach_hints as the primary grouping signal. KS4 domains are compact by design (GCSE subject content), so 2-3 clusters each. Y1 Fractions has only 2 concepts with no meaningful sub-split so treated as a single practice cluster. Several single-concept KS2 domains (Y4-D002, Y4-D007, Y4-D008, Y5-D002, Y5-D005, Y5-D007, Y5-D008) are given a single practice cluster. Y6-D004 Ratio has one concept and one cluster.",
+  "domains": {
+    "MA-Y1-D001": {
+      "domain_name": "Number and Place Value",
+      "clusters": [
+        {
+          "cluster_name": "Understand and use the counting sequence to 100",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y1-C001", "MA-Y1-C002"],
+          "rationale": "Counting forwards/backwards and counting in multiples of 2, 5 and 10 are the twin foundations of all number work in Year 1. Both co_teach_hints link them to each other and to grouping/sharing, confirming they belong together as the entry point to the domain.",
+          "inspired_by": "CC Math K.CC.A - Know number names and the count sequence"
+        },
+        {
+          "cluster_name": "Read, write and represent numbers to 100",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y1-C003", "MA-Y1-C004"],
+          "rationale": "Reading and writing numerals and words are complementary encoding/decoding skills. C004 co_teaches with C003, confirming natural pairing.",
+          "inspired_by": "CC Math K.CC.A.3 - Write numbers from 0 to 20"
+        },
+        {
+          "cluster_name": "Compare, order and place numbers on a number line",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y1-C005", "MA-Y1-C006", "MA-Y1-C007"],
+          "rationale": "One more/one less, number line positioning and comparison language all contribute to the same mathematical idea: understanding relative magnitude. C006 and C007 mutually co-teach; C005 co-teaches with C006, confirming the cluster.",
+          "inspired_by": "CC Math 1.NBT.B.3 - Compare two two-digit numbers using >, =, < symbols"
+        }
+      ]
+    },
+    "MA-Y1-D002": {
+      "domain_name": "Addition and Subtraction",
+      "clusters": [
+        {
+          "cluster_name": "Understand addition and subtraction as operations",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y1-C009", "MA-Y1-C010"],
+          "rationale": "Establishing the conceptual meaning of both operations (combining/augmenting; taking away/difference) is the essential first move. Both concepts are mutually listed in co_teach_hints.",
+          "inspired_by": "CC Math 1.OA.A - Represent and solve problems involving addition and subtraction"
+        },
+        {
+          "cluster_name": "Know number bonds and solve missing number problems within 20",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y1-C008", "MA-Y1-C011"],
+          "rationale": "Fluent number bonds are the knowledge base; missing number problems are the application. Both co-teach with the operation concepts and with each other.",
+          "inspired_by": "CC Math 1.OA.C.6 - Add and subtract within 20"
+        }
+      ]
+    },
+    "MA-Y1-D003": {
+      "domain_name": "Multiplication and Division",
+      "clusters": [
+        {
+          "cluster_name": "Explore grouping, sharing, doubling and halving",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y1-C012", "MA-Y1-C013"],
+          "rationale": "Grouping/sharing and doubling/halving are the two foundational lenses on multiplicative structure. C013 co_teaches with C012 directly. Only two concepts, so no introduction/practice split is warranted.",
+          "inspired_by": "CC Math 2.OA.C - Work with equal groups of objects to gain foundations for multiplication"
+        }
+      ]
+    },
+    "MA-Y1-D004": {
+      "domain_name": "Fractions",
+      "clusters": [
+        {
+          "cluster_name": "Recognise and find halves and quarters of shapes and quantities",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y1-C014", "MA-Y1-C015"],
+          "rationale": "One half and one quarter are introduced together as the first fraction pair; C014 and C015 are mutually co-taught and together complete the Year 1 fractions curriculum. Only two concepts; a single cluster is appropriate.",
+          "inspired_by": "CC Math 1.G.A.3 - Partition circles and rectangles into two and four equal shares"
+        }
+      ]
+    },
+    "MA-Y1-D005": {
+      "domain_name": "Measurement",
+      "clusters": [
+        {
+          "cluster_name": "Compare and measure length, mass and capacity",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y1-C016", "MA-Y1-C017", "MA-Y1-C018"],
+          "rationale": "The three continuous quantity measures are all introduced via the same pedagogical sequence (direct comparison → non-standard → standard units). C016, C017 and C018 are mutually co-taught, forming a natural teaching unit.",
+          "inspired_by": "CC Math 1.MD.A - Measure lengths indirectly and by iterating length units"
+        },
+        {
+          "cluster_name": "Sequence events and tell the time to the hour and half past",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y1-C019"],
+          "rationale": "Time is a distinct strand within Measurement with its own vocabulary and representation. Its single concept stands alone as a cluster.",
+          "inspired_by": "CC Math 1.MD.B.3 - Tell and write time in hours and half-hours"
+        },
+        {
+          "cluster_name": "Recognise and know the value of coins and notes",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y1-C020"],
+          "rationale": "Money is a distinct applied context within Measurement. Recognising coins and notes is a knowledge-based prerequisite cluster before calculation work begins in Year 2.",
+          "inspired_by": "CC Math 2.MD.C.8 - Solve problems involving dollar bills, quarters, dimes, nickels, and pennies"
+        }
+      ]
+    },
+    "MA-Y1-D006": {
+      "domain_name": "Geometry: Properties of Shapes",
+      "clusters": [
+        {
+          "cluster_name": "Recognise and name common 2-D and 3-D shapes",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y1-C021", "MA-Y1-C022"],
+          "rationale": "2-D and 3-D shape recognition are explicitly co-taught (each concept lists the other) and together complete the Year 1 shape curriculum. A single cluster is appropriate for just two paired concepts.",
+          "inspired_by": "CC Math K.G.A.1 - Describe objects in the environment using names of shapes"
+        }
+      ]
+    },
+    "MA-Y1-D007": {
+      "domain_name": "Geometry: Position and Direction",
+      "clusters": [
+        {
+          "cluster_name": "Describe position and movement using spatial and directional language",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y1-C023", "MA-Y1-C024"],
+          "rationale": "Spatial language and turn language are taught together; C024 co-teaches with C023. Both concepts anchor real-world spatial reasoning in Year 1.",
+          "inspired_by": "CC Math K.G.A.1 - Describe relative positions of objects"
+        }
+      ]
+    },
+    "MA-Y2-D001": {
+      "domain_name": "Number and Place Value",
+      "clusters": [
+        {
+          "cluster_name": "Extend the counting sequence and recognise odd and even numbers",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y2-C001", "MA-Y2-C011"],
+          "rationale": "Counting in steps of 2, 3 and 5 and recognising odd/even are mutually co-taught and share the same structural insight about the number system. Establishes the entry point for Year 2 number work.",
+          "inspired_by": "CC Math 2.OA.C.3 - Determine whether a group of objects has an odd or even number"
+        },
+        {
+          "cluster_name": "Understand place value in two-digit numbers",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C002", "MA-Y2-C003"],
+          "rationale": "Understanding tens and ones is the prerequisite for comparing and ordering to 100 using < > = symbols. C002 co-teaches with C003.",
+          "inspired_by": "CC Math 2.NBT.A - Understand place value"
+        },
+        {
+          "cluster_name": "Order and arrange numbers and objects in patterns and sequences",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C021"],
+          "rationale": "Pattern and sequence work is a distinct strand in the NC that crosses number and shape. Placed here as a standalone practice cluster.",
+          "inspired_by": "CC Math 3.OA.D.9 - Identify arithmetic patterns"
+        }
+      ]
+    },
+    "MA-Y2-D002": {
+      "domain_name": "Addition and Subtraction",
+      "clusters": [
+        {
+          "cluster_name": "Recall and use addition and subtraction facts to 20 and 100",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y2-C004", "MA-Y2-C005"],
+          "rationale": "Fluent recall of number facts and the procedural skill of adding/subtracting two-digit numbers are tightly linked (C004 and C005 mutually co-teach). This pairing drives fluency across the rest of the domain.",
+          "inspired_by": "CC Math 2.OA.B.2 - Fluently add and subtract within 20"
+        },
+        {
+          "cluster_name": "Understand properties and relationships of addition and subtraction",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C006", "MA-Y2-C007"],
+          "rationale": "Commutativity, associativity and the inverse relationship are the conceptual scaffolding that underlies mental calculation strategies. C006 co-teaches with C007.",
+          "inspired_by": "CC Math 1.OA.B.3 - Apply properties of operations as strategies to add and subtract"
+        }
+      ]
+    },
+    "MA-Y2-D003": {
+      "domain_name": "Multiplication and Division",
+      "clusters": [
+        {
+          "cluster_name": "Recall the 2, 5 and 10 times tables and write multiplication and division statements",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y2-C008", "MA-Y2-C009"],
+          "rationale": "Table recall and writing formal multiplication/division statements (using × and ÷) are taught together as the formal entry into multiplicative arithmetic. C008 and C009 mutually co-teach.",
+          "inspired_by": "CC Math 3.OA.C.7 - Fluently multiply and divide within 100"
+        },
+        {
+          "cluster_name": "Understand commutativity of multiplication and non-commutativity of division",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C010"],
+          "rationale": "Commutativity is a distinct conceptual cluster that deepens understanding of the operation structure, building on table knowledge. Standalone as the domain has three well-separated concepts.",
+          "inspired_by": "CC Math 3.OA.B.5 - Apply properties of operations as strategies to multiply and divide"
+        }
+      ]
+    },
+    "MA-Y2-D004": {
+      "domain_name": "Fractions",
+      "clusters": [
+        {
+          "cluster_name": "Find and compare fractions of shapes and sets, including equivalent fractions",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C012", "MA-Y2-C013"],
+          "rationale": "Recognising fractions of quantities and identifying the first equivalence (2/4 = 1/2) naturally co-occur — equivalence arises directly from partitioning work. Only two concepts; a single cluster is appropriate.",
+          "inspired_by": "CC Math 2.G.A.3 - Partition circles and rectangles into two, three, or four equal shares"
+        }
+      ]
+    },
+    "MA-Y2-D005": {
+      "domain_name": "Measurement",
+      "clusters": [
+        {
+          "cluster_name": "Measure accurately using standard units of length, mass, temperature and capacity",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y2-C014"],
+          "rationale": "Standard measurement is the foundation of the Measurement domain in Year 2. Standalone as a distinct pedagogical focus before time and money.",
+          "inspired_by": "CC Math 2.MD.A - Measure and estimate lengths in standard units"
+        },
+        {
+          "cluster_name": "Use £ and p notation to solve money problems",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C015"],
+          "rationale": "Money is a distinct applied context requiring its own symbolic conventions and problem-solving strategies.",
+          "inspired_by": "CC Math 2.MD.C.8 - Solve word problems involving dollar bills and coins"
+        },
+        {
+          "cluster_name": "Tell and write the time to five minutes and use the language of time",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C016"],
+          "rationale": "Time reading to five-minute intervals is a substantial standalone skill. C016 co-teaches with the times tables (counting in 5s underpins clock reading).",
+          "inspired_by": "CC Math 2.MD.C.7 - Tell and write time from analog and digital clocks"
+        }
+      ]
+    },
+    "MA-Y2-D006": {
+      "domain_name": "Geometry: Properties of Shapes",
+      "clusters": [
+        {
+          "cluster_name": "Identify and describe properties of 2-D and 3-D shapes",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y2-C017", "MA-Y2-C018"],
+          "rationale": "Properties of 2-D shapes (sides, symmetry) and 3-D shapes (faces, edges, vertices) are the foundational analytical skills for this domain. They provide the vocabulary for the connecting concept.",
+          "inspired_by": "CC Math 2.G.A.1 - Recognize and draw shapes having specified attributes"
+        },
+        {
+          "cluster_name": "Explore the relationship between 2-D shapes and the faces of 3-D shapes",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C019"],
+          "rationale": "Identifying 2-D shapes on the surface of 3-D shapes connects both property clusters and builds deeper spatial understanding. C019 explicitly co-teaches with both C017 and C018.",
+          "inspired_by": "CC Math 2.G.A.1 - Recognize shapes by attributes"
+        }
+      ]
+    },
+    "MA-Y2-D007": {
+      "domain_name": "Geometry: Position and Direction",
+      "clusters": [
+        {
+          "cluster_name": "Describe and make movement using right angles and half, quarter and three-quarter turns",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C020"],
+          "rationale": "Only one concept in this domain. The right angle as a standard unit of turn is the Year 2 position/direction focus and is taught as a standalone concept.",
+          "inspired_by": "CC Math 2.G.A - Reason with shapes and their attributes"
+        }
+      ]
+    },
+    "MA-Y2-D008": {
+      "domain_name": "Statistics",
+      "clusters": [
+        {
+          "cluster_name": "Interpret and construct pictograms, tally charts, block diagrams and tables",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y2-C022"],
+          "rationale": "Constructing and reading representations is the foundational statistics skill; it must precede questioning and reasoning about data.",
+          "inspired_by": "CC Math 2.MD.D.10 - Draw a picture graph and a bar graph to represent a data set"
+        },
+        {
+          "cluster_name": "Ask and answer questions about data using addition and subtraction",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y2-C023"],
+          "rationale": "Asking and answering questions applies arithmetic to statistical contexts. C023 co-teaches with two-digit addition (MA-Y2-C005), confirming the cross-domain connection.",
+          "inspired_by": "CC Math 2.MD.D.10 - Solve simple put-together, take-apart and compare problems using data"
+        }
+      ]
+    },
+    "MA-Y3-D001": {
+      "domain_name": "Number - Number and Place Value",
+      "clusters": [
+        {
+          "cluster_name": "Extend counting sequences in multiples of 4, 8, 50 and 100",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y3-C001", "MA-Y3-C002", "MA-Y3-C003", "MA-Y3-C004"],
+          "rationale": "These four skip-counting sequences are linked by their co_teach_hints (C001, C003, C004 mutually co-teach) and collectively prepare pupils for the 3, 4 and 8 times tables. They establish the entry point for three-digit number work.",
+          "inspired_by": "CC Math 2.NBT.A.2 - Count within 1000, skip-count by 5s, 10s, and 100s"
+        },
+        {
+          "cluster_name": "Understand and apply place value in three-digit numbers",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y3-C007", "MA-Y3-C008", "MA-Y3-C005", "MA-Y3-C006"],
+          "rationale": "Place value understanding (C007), partitioning (C008), and finding 10/100 more or less (C005, C006) are tightly bound by co_teach_hints. Together they build the core conceptual architecture for three-digit numbers.",
+          "inspired_by": "CC Math 2.NBT.A - Understand place value to hundreds"
+        },
+        {
+          "cluster_name": "Compare, order and estimate numbers to 1000",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y3-C009", "MA-Y3-C010", "MA-Y3-C011"],
+          "rationale": "Comparing/ordering, estimating, and reading/writing numbers in words all require a secure overall grasp of the size and representation of three-digit numbers. C010 co-teaches with C003 (scales link).",
+          "inspired_by": "CC Math 2.NBT.A.4 - Compare two three-digit numbers using >, =, < symbols"
+        }
+      ]
+    },
+    "MA-Y3-D002": {
+      "domain_name": "Number - Addition and Subtraction",
+      "clusters": [
+        {
+          "cluster_name": "Add and subtract three-digit numbers mentally",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y3-C012", "MA-Y3-C013"],
+          "rationale": "Mental addition and subtraction with three-digit numbers are co-taught (C013 co-teaches with C012) and together establish fluency before formal methods are introduced.",
+          "inspired_by": "CC Math 2.NBT.B.7 - Add and subtract within 1000 using concrete models or drawings"
+        },
+        {
+          "cluster_name": "Add and subtract using formal columnar methods and check with estimation",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y3-C014", "MA-Y3-C015", "MA-Y3-C016"],
+          "rationale": "Columnar addition, columnar subtraction and the use of estimation and inverse operations to check belong together as the formal written methods cluster. C016 is explicitly about using estimation and inverses to validate results.",
+          "inspired_by": "CC Math 2.NBT.B.7 - Add and subtract within 1000 using the standard algorithm"
+        }
+      ]
+    },
+    "MA-Y3-D003": {
+      "domain_name": "Number - Multiplication and Division",
+      "clusters": [
+        {
+          "cluster_name": "Recall the 3, 4 and 8 times tables and understand their connections",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y3-C017", "MA-Y3-C018", "MA-Y3-C019", "MA-Y3-C020"],
+          "rationale": "The 3, 4 and 8 times tables are the Year 3 statutory recall targets. C020 (doubling connection between 2, 4 and 8) is explicitly co-taught with C018 and C019. These four form a coherent knowledge cluster.",
+          "inspired_by": "CC Math 3.OA.C.7 - Fluently multiply and divide within 100"
+        },
+        {
+          "cluster_name": "Multiply and solve scaling and correspondence problems",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y3-C021", "MA-Y3-C022", "MA-Y3-C023"],
+          "rationale": "Written multiplication (2-digit × 1-digit), scaling problems and correspondence problems all extend times table knowledge into applied contexts. C022 and C023 both co-teach with table concepts.",
+          "inspired_by": "CC Math 3.OA.A.3 - Use multiplication and division within 100 to solve word problems"
+        }
+      ]
+    },
+    "MA-Y3-D004": {
+      "domain_name": "Number - Fractions",
+      "clusters": [
+        {
+          "cluster_name": "Understand unit and non-unit fractions with small denominators",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y3-C024", "MA-Y3-C025", "MA-Y3-C026"],
+          "rationale": "Tenths (bridging fractions and place value), unit fractions and non-unit fractions together establish the conceptual foundation of the fraction number system in Year 3. All three mutually co-teach.",
+          "inspired_by": "CC Math 3.NF.A.1 - Understand a fraction 1/b as the quantity formed by 1 part when a whole is partitioned into b equal parts"
+        },
+        {
+          "cluster_name": "Compare, order and add fractions with the same denominator",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y3-C027", "MA-Y3-C028", "MA-Y3-C029"],
+          "rationale": "Equivalent fractions, adding/subtracting with the same denominator and comparing/ordering fractions are the procedural and relational skills built on the conceptual foundation. All three are mutually co-taught.",
+          "inspired_by": "CC Math 3.NF.A.3 - Explain equivalence of fractions and compare fractions"
+        }
+      ]
+    },
+    "MA-Y3-D005": {
+      "domain_name": "Measurement",
+      "clusters": [
+        {
+          "cluster_name": "Measure in mixed units and calculate perimeter",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y3-C030", "MA-Y3-C031"],
+          "rationale": "Mixed-unit measurement and perimeter are both applied measurement skills that connect to number work and shape. They form the practical measurement cluster.",
+          "inspired_by": "CC Math 3.MD.B.4 - Measure lengths using rulers to the nearest half and quarter inch"
+        },
+        {
+          "cluster_name": "Calculate with money and read the time accurately",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y3-C032", "MA-Y3-C033", "MA-Y3-C034", "MA-Y3-C035"],
+          "rationale": "Money calculations, Roman numerals on clock faces, 24-hour clock and duration of time are co-taught as a cluster (C032, C034, C035 mutually co-teach; C033 co-teaches with C035). Time and money together form the real-world applications cluster.",
+          "inspired_by": "CC Math 3.MD.A.1 - Tell and write time to the nearest minute and solve elapsed time problems"
+        }
+      ]
+    },
+    "MA-Y3-D006": {
+      "domain_name": "Geometry - Properties of Shapes",
+      "clusters": [
+        {
+          "cluster_name": "Draw 2-D shapes and make 3-D shapes using measurements and properties",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y3-C036", "MA-Y3-C039"],
+          "rationale": "Drawing/constructing shapes and identifying horizontal, vertical, perpendicular and parallel lines are both construction-oriented skills. C036 co-teaches with C039.",
+          "inspired_by": "CC Math 3.G.A.1 - Understand that shapes in different categories may share attributes"
+        },
+        {
+          "cluster_name": "Identify and compare angles including right angles",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y3-C037", "MA-Y3-C038"],
+          "rationale": "The concept of an angle and the identification of right angles versus acute/obtuse are closely related. C039 links back to these via co_teach_hints.",
+          "inspired_by": "CC Math 4.G.A.1 - Draw points, lines, line segments, rays, angles and perpendicular and parallel lines"
+        }
+      ]
+    },
+    "MA-Y3-D007": {
+      "domain_name": "Statistics",
+      "clusters": [
+        {
+          "cluster_name": "Interpret and construct scaled bar charts and pictograms",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y3-C040"],
+          "rationale": "Scaled charts are the Year 3 entry point for statistics, requiring pupils to understand one symbol/bar represents more than one item. Foundational representation skill.",
+          "inspired_by": "CC Math 3.MD.B.3 - Draw a scaled picture graph and a scaled bar graph"
+        },
+        {
+          "cluster_name": "Solve one-step and two-step questions using information from data",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y3-C041"],
+          "rationale": "Moving from reading charts to reasoning from data and answering multi-step questions is the key statistical thinking progression in Year 3.",
+          "inspired_by": "CC Math 3.MD.B.3 - Solve one- and two-step problems using information presented in charts"
+        }
+      ]
+    },
+    "MA-Y4-D001": {
+      "domain_name": "Number - Number and Place Value",
+      "clusters": [
+        {
+          "cluster_name": "Understand place value and count in multiples with four-digit numbers",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y4-C001", "MA-Y4-C002"],
+          "rationale": "Four-digit place value is the foundational concept; counting in multiples of 6, 7, 9, 25 and 1000 extends skip-counting to match the new times table demands. C002 co-teaches with C004.",
+          "inspired_by": "CC Math 2.NBT.A - Understand place value"
+        },
+        {
+          "cluster_name": "Round to the nearest 10, 100 and 1000 and use negative numbers in context",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y4-C003", "MA-Y4-C004"],
+          "rationale": "Rounding and negative numbers both extend the number line concept beyond the positive integers. C004 co-teaches with C002.",
+          "inspired_by": "CC Math 3.NBT.A.1 - Use place value understanding to round whole numbers"
+        },
+        {
+          "cluster_name": "Read Roman numerals to 100",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y4-C005"],
+          "rationale": "Roman numerals is a discrete knowledge strand within NC Number that does not co-teach with other Year 4 number concepts. Standalone practice cluster.",
+          "inspired_by": "UK NC Year 4 statutory requirement: Roman numerals to 100"
+        }
+      ]
+    },
+    "MA-Y4-D002": {
+      "domain_name": "Number - Addition and Subtraction",
+      "clusters": [
+        {
+          "cluster_name": "Add and subtract four-digit numbers using formal columnar methods",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y4-C006"],
+          "rationale": "Only one concept in this domain. Four-digit columnar addition and subtraction (with exchange at multiple places) is the singular statutory focus and stands alone.",
+          "inspired_by": "CC Math 4.NBT.B.4 - Fluently add and subtract multi-digit whole numbers using the standard algorithm"
+        }
+      ]
+    },
+    "MA-Y4-D003": {
+      "domain_name": "Number - Multiplication and Division",
+      "clusters": [
+        {
+          "cluster_name": "Recall all multiplication tables to 12 × 12 and use short multiplication",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y4-C007", "MA-Y4-C008"],
+          "rationale": "Complete times table recall is the major Year 4 milestone; short multiplication applies it to 2- and 3-digit numbers. C007 co-teaches with C008.",
+          "inspired_by": "CC Math 3.OA.C.7 - Fluently multiply and divide within 100"
+        },
+        {
+          "cluster_name": "Investigate factor pairs and use commutativity in mental calculation",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y4-C009"],
+          "rationale": "Factor pairs and commutativity are the conceptual tools that underpin flexible mental multiplication strategies — a distinct cluster from the recall/procedural focus.",
+          "inspired_by": "CC Math 4.OA.B.4 - Find all factor pairs for a whole number in the range 1-100"
+        }
+      ]
+    },
+    "MA-Y4-D004": {
+      "domain_name": "Number - Fractions (including Decimals)",
+      "clusters": [
+        {
+          "cluster_name": "Understand hundredths and extend decimal place value",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y4-C010", "MA-Y4-C012"],
+          "rationale": "Hundredths and decimal place value and the decimal equivalents of common fractions are co-taught (C010 and C012 mutually co-teach) and together establish the decimal number system.",
+          "inspired_by": "CC Math 4.NF.C - Understand decimal notation for fractions"
+        },
+        {
+          "cluster_name": "Generate and use equivalent fractions",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y4-C011"],
+          "rationale": "Generating equivalent fractions using multiples and factors is a distinct procedural skill that builds on Year 3 fraction understanding and underpins all fraction arithmetic to come.",
+          "inspired_by": "CC Math 4.NF.A.1 - Explain why a fraction a/b is equivalent to a fraction (n×a)/(n×b)"
+        }
+      ]
+    },
+    "MA-Y4-D005": {
+      "domain_name": "Measurement",
+      "clusters": [
+        {
+          "cluster_name": "Find the area of rectilinear shapes by counting and measuring",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y4-C013"],
+          "rationale": "Area is the new measurement concept introduced in Year 4 and provides the conceptual entry point for the domain.",
+          "inspired_by": "CC Math 3.MD.C.5 - Recognise area as an attribute of plane figures"
+        },
+        {
+          "cluster_name": "Convert between metric units of length, mass and volume",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y4-C014"],
+          "rationale": "Metric conversion is a substantial and distinct procedural skill that applies place value understanding to measurement.",
+          "inspired_by": "CC Math 4.MD.A.1 - Know relative sizes of measurement units"
+        }
+      ]
+    },
+    "MA-Y4-D006": {
+      "domain_name": "Geometry - Properties of Shapes",
+      "clusters": [
+        {
+          "cluster_name": "Classify triangles and quadrilaterals by their properties",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y4-C016"],
+          "rationale": "Classification of triangles and quadrilaterals is the primary shape-properties focus in Year 4. Provides the vocabulary for symmetry work.",
+          "inspired_by": "CC Math 4.G.A.2 - Classify two-dimensional figures based on the presence or absence of parallel or perpendicular lines"
+        },
+        {
+          "cluster_name": "Identify and complete patterns with lines of symmetry",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y4-C017"],
+          "rationale": "Lines of symmetry are a distinct geometric concept best taught after classification, linking to the classification properties of shapes (e.g. equilateral triangles have 3 lines).",
+          "inspired_by": "CC Math 4.G.A.3 - Recognize a line of symmetry for a two-dimensional figure"
+        }
+      ]
+    },
+    "MA-Y4-D007": {
+      "domain_name": "Geometry - Position and Direction",
+      "clusters": [
+        {
+          "cluster_name": "Describe and plot positions using coordinates in the first quadrant",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y4-C015"],
+          "rationale": "Only one concept in this domain. First-quadrant coordinate work is the complete Year 4 position/direction curriculum.",
+          "inspired_by": "CC Math 5.G.A.1 - Use a pair of perpendicular number lines to define a coordinate system"
+        }
+      ]
+    },
+    "MA-Y4-D008": {
+      "domain_name": "Statistics",
+      "clusters": [
+        {
+          "cluster_name": "Read, interpret and draw line graphs showing continuous data over time",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y4-C018"],
+          "rationale": "Only one concept in this domain. Time graphs (line graphs) introduce continuous data and are the Year 4 statistics focus, distinct from the discrete data work of Y2-Y3.",
+          "inspired_by": "CC Math 5.MD.B.2 - Represent and interpret data"
+        }
+      ]
+    },
+    "MA-Y5-D001": {
+      "domain_name": "Number - Number and Place Value",
+      "clusters": [
+        {
+          "cluster_name": "Read, write and order numbers to 1,000,000 and round to any power of 10",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y5-C001", "MA-Y5-C002"],
+          "rationale": "Six-digit place value and rounding to any power of 10 (nearest 10,000; 100,000) are the two statutory Year 5 number/PV requirements. Only two concepts; single cluster appropriate.",
+          "inspired_by": "CC Math 5.NBT.A.1 - Recognize that in a multi-digit number, a digit in one place represents 10 times as much as what it represents in the place to its right"
+        }
+      ]
+    },
+    "MA-Y5-D002": {
+      "domain_name": "Number - Addition and Subtraction",
+      "clusters": [
+        {
+          "cluster_name": "Add and subtract whole numbers with more than four digits using mental and written strategies",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y5-C016"],
+          "rationale": "Only one concept in this domain. Extension of addition and subtraction to larger numbers is the Year 5 focus, consolidating formal columnar methods.",
+          "inspired_by": "CC Math 5.NBT.B.7 - Add, subtract, multiply, and divide decimals to hundredths"
+        }
+      ]
+    },
+    "MA-Y5-D003": {
+      "domain_name": "Number - Multiplication and Division",
+      "clusters": [
+        {
+          "cluster_name": "Understand factors, multiples, primes, squares and cubes",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y5-C003", "MA-Y5-C004", "MA-Y5-C005"],
+          "rationale": "Prime/composite numbers and factors/multiples are mutually co-taught (C003 and C005 co-teach). Square and cube numbers naturally accompany this cluster as related number theory. Together they build multiplicative number sense before formal algorithms.",
+          "inspired_by": "CC Math 6.NS.B.4 - Find greatest common factor and least common multiple"
+        },
+        {
+          "cluster_name": "Multiply and divide using formal written methods",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y5-C006", "MA-Y5-C007"],
+          "rationale": "Long multiplication (4-digit × 2-digit) and short division with remainders are the two formal written method targets for Year 5. Both are high teaching-weight and procedurally distinct from the number theory cluster.",
+          "inspired_by": "CC Math 5.NBT.B.5 - Fluently multiply multi-digit whole numbers using the standard algorithm"
+        }
+      ]
+    },
+    "MA-Y5-D004": {
+      "domain_name": "Number - Fractions (including Decimals and Percentages)",
+      "clusters": [
+        {
+          "cluster_name": "Convert between mixed numbers and improper fractions and add fractions with different denominators",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y5-C008", "MA-Y5-C009"],
+          "rationale": "Mixed numbers/improper fractions and adding with different denominators are the procedural fraction targets that build on Year 3-4 equivalence work. Together they represent the Year 5 fraction arithmetic cluster.",
+          "inspired_by": "CC Math 5.NF.A - Use equivalent fractions as a strategy to add and subtract fractions"
+        },
+        {
+          "cluster_name": "Extend decimal place value to thousandths and understand percentages",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y5-C013", "MA-Y5-C010"],
+          "rationale": "Decimal place value to three decimal places and the concept of percentage as parts per hundred are both representational knowledge concepts that expand the number system. Together they set up the fraction-decimal-percentage equivalence work.",
+          "inspired_by": "CC Math 5.NBT.A.3 - Read, write, and compare decimals to thousandths"
+        }
+      ]
+    },
+    "MA-Y5-D005": {
+      "domain_name": "Measurement",
+      "clusters": [
+        {
+          "cluster_name": "Understand and calculate the volume of cuboids",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y5-C014"],
+          "rationale": "Only one concept in this domain. Volume of cuboids (V = l × w × h) is the new measurement concept introduced in Year 5.",
+          "inspired_by": "CC Math 5.MD.C.3 - Recognise volume as an attribute of solid figures"
+        }
+      ]
+    },
+    "MA-Y5-D006": {
+      "domain_name": "Geometry - Properties of Shapes",
+      "clusters": [
+        {
+          "cluster_name": "Measure angles with a protractor and apply angle facts",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y5-C011", "MA-Y5-C012"],
+          "rationale": "Measuring angles in degrees and applying the three key angle facts (straight line = 180°, point = 360°, triangle = 180°) are taught together as a coherent angles cluster. Both use degrees and build directly on each other.",
+          "inspired_by": "CC Math 4.MD.C.5 - Recognise angles as geometric shapes that are formed wherever two rays share a common endpoint"
+        }
+      ]
+    },
+    "MA-Y5-D007": {
+      "domain_name": "Geometry - Position and Direction",
+      "clusters": [
+        {
+          "cluster_name": "Reflect and translate shapes in all four quadrants of a coordinate grid",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y5-C015"],
+          "rationale": "Only one concept in this domain. Reflections and translations in all four quadrants extend Year 4 first-quadrant coordinate work to the full Cartesian plane.",
+          "inspired_by": "CC Math 5.G.A.2 - Represent real world and mathematical problems by graphing points in the first quadrant"
+        }
+      ]
+    },
+    "MA-Y5-D008": {
+      "domain_name": "Statistics",
+      "clusters": [
+        {
+          "cluster_name": "Read and interpret graphs, tables and timetables to solve comparison problems",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y5-C017"],
+          "rationale": "Only one concept in this domain. Year 5 statistics focuses on interpretation and reasoning across a variety of data representations including timetables.",
+          "inspired_by": "CC Math 5.MD.B.2 - Make a line plot to display a data set and solve problems"
+        }
+      ]
+    },
+    "MA-Y6-D001": {
+      "domain_name": "Number - Number and Place Value",
+      "clusters": [
+        {
+          "cluster_name": "Read, write and order whole numbers to 10,000,000",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y6-C001"],
+          "rationale": "Seven-digit place value is the Year 6 extension of place value and is the entry point for the domain before rounding and negative numbers.",
+          "inspired_by": "CC Math 5.NBT.A.1 - Recognize that in a multi-digit number, a digit represents 10 times what it represents in the place to its right"
+        },
+        {
+          "cluster_name": "Round to any degree of accuracy and calculate intervals across zero",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C002", "MA-Y6-C003"],
+          "rationale": "Rounding to any degree of accuracy and negative numbers/intervals across zero are co-taught (C002 co-teaches with C003) and together complete the Year 6 number system coverage.",
+          "inspired_by": "CC Math 6.NS.C.6 - Understand a rational number as a point on the number line"
+        }
+      ]
+    },
+    "MA-Y6-D002": {
+      "domain_name": "Number - Addition, Subtraction, Multiplication and Division",
+      "clusters": [
+        {
+          "cluster_name": "Multiply and divide using formal long methods",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y6-C004", "MA-Y6-C005"],
+          "rationale": "Long multiplication and long division are the two formal written method pinnacles of primary arithmetic. They represent the major Year 6 procedural target.",
+          "inspired_by": "CC Math 6.NS.B.2 - Fluently divide multi-digit numbers using the standard algorithm"
+        },
+        {
+          "cluster_name": "Apply order of operations and work with common factors, multiples and primes",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C006", "MA-Y6-C007"],
+          "rationale": "Order of operations (BIDMAS) and common factors/multiples/primes are the conceptual number theory targets of Year 6. C006 co-teaches with C029.",
+          "inspired_by": "CC Math 6.NS.B.4 - Find GCF and LCM; use distributive property"
+        },
+        {
+          "cluster_name": "Develop mathematical fluency and apply problem-solving strategies",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C029", "MA-Y6-C031"],
+          "rationale": "Mathematical fluency with number and problem-solving strategies are cross-cutting process skills that permeate Year 6 mathematics. C029 is linked to C006; C031 represents the statutory problem-solving requirement.",
+          "inspired_by": "CC Math 6.MP - Make sense of problems and persevere in solving them"
+        }
+      ]
+    },
+    "MA-Y6-D003": {
+      "domain_name": "Number - Fractions (including decimals and percentages)",
+      "clusters": [
+        {
+          "cluster_name": "Simplify, compare and add fractions with different denominators",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y6-C008", "MA-Y6-C009"],
+          "rationale": "Simplifying/comparing fractions and adding/subtracting with different denominators are co-taught (C008 lists C009 in co_teach_hints). Together they consolidate fraction arithmetic.",
+          "inspired_by": "CC Math 5.NF.A.1 - Add and subtract fractions with unlike denominators"
+        },
+        {
+          "cluster_name": "Multiply and divide fractions and convert fluently between fractions, decimals and percentages",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C010", "MA-Y6-C011"],
+          "rationale": "Fraction multiplication/division and fraction-decimal-percentage equivalences are the upper primary fraction targets. C011 co-teaches with C008.",
+          "inspired_by": "CC Math 6.NS.A.1 - Interpret and compute quotients of fractions"
+        }
+      ]
+    },
+    "MA-Y6-D004": {
+      "domain_name": "Ratio and Proportion",
+      "clusters": [
+        {
+          "cluster_name": "Understand and use ratio and proportion to solve problems",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C012"],
+          "rationale": "Only one concept in this domain. Ratio and proportion is the new Year 6 domain that bridges to KS3 Ratio, Proportion and Rates of Change.",
+          "inspired_by": "CC Math 6.RP.A - Understand ratio concepts and use ratio reasoning to solve problems"
+        }
+      ]
+    },
+    "MA-Y6-D005": {
+      "domain_name": "Algebra",
+      "clusters": [
+        {
+          "cluster_name": "Use algebraic notation and formulae with letters for unknowns",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y6-C013"],
+          "rationale": "Algebraic notation and formulae is the gateway concept for Year 6 algebra, introducing the idea of using letters to represent unknowns. Must precede sequence and equation work.",
+          "inspired_by": "CC Math 6.EE.A.2 - Write, read, and evaluate expressions in which letters stand for numbers"
+        },
+        {
+          "cluster_name": "Generate and describe linear sequences and solve equations in two variables",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C014", "MA-Y6-C030"],
+          "rationale": "Linear sequences, two-variable equations and mathematical reasoning/justification are co-taught (C014 and C030 mutually co-teach). Together they represent the Year 6 algebra application and reasoning cluster.",
+          "inspired_by": "CC Math 6.EE.C.9 - Use variables to represent two quantities in a real-world problem"
+        }
+      ]
+    },
+    "MA-Y6-D006": {
+      "domain_name": "Measurement",
+      "clusters": [
+        {
+          "cluster_name": "Calculate area and volume using formulae for 2-D and 3-D shapes",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C015", "MA-Y6-C016"],
+          "rationale": "Area of triangles and parallelograms and volume of cubes/cuboids are co-taught (C016 co-teaches with C015). Both apply the same principle of formula-based measurement and naturally belong together.",
+          "inspired_by": "CC Math 6.G.A - Solve real-world and mathematical problems involving area, surface area, and volume"
+        }
+      ]
+    },
+    "MA-Y6-D007": {
+      "domain_name": "Geometry - Properties of Shapes",
+      "clusters": [
+        {
+          "cluster_name": "Know and apply angle facts in polygons and circles",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y6-C017", "MA-Y6-C018"],
+          "rationale": "Angle facts in polygons and the parts of a circle are co-taught (C018 co-teaches with C017). They establish the shape-property knowledge before problem-solving application.",
+          "inspired_by": "CC Math 7.G.B.5 - Use facts about supplementary, complementary, vertical, and adjacent angles"
+        },
+        {
+          "cluster_name": "Identify properties of 3-D shapes and apply angle reasoning to solve problems",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C022", "MA-Y6-C024"],
+          "rationale": "3-D shape properties/nets and applying angle facts to solve multi-step problems are co-taught with the angle-facts concept and represent the application tier of the domain.",
+          "inspired_by": "CC Math 6.G.A.4 - Represent three-dimensional figures using nets"
+        }
+      ]
+    },
+    "MA-Y6-D008": {
+      "domain_name": "Geometry - Position and Direction",
+      "clusters": [
+        {
+          "cluster_name": "Plot and describe coordinates in all four quadrants",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y6-C019"],
+          "rationale": "Four-quadrant coordinates extend Year 5 work and provide the spatial framework needed before transformations on the grid.",
+          "inspired_by": "CC Math 6.NS.C.6 - Understand a rational number as a point on the number line; extend to the coordinate plane"
+        },
+        {
+          "cluster_name": "Perform and describe translations and reflections on a coordinate grid",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C023"],
+          "rationale": "Translations and reflections on the full four-quadrant grid apply coordinate knowledge to geometric transformation, building on Year 5's work.",
+          "inspired_by": "CC Math 8.G.A.3 - Describe the effect of dilations, translations, rotations and reflections on two-dimensional figures"
+        }
+      ]
+    },
+    "MA-Y6-D009": {
+      "domain_name": "Statistics",
+      "clusters": [
+        {
+          "cluster_name": "Construct and interpret pie charts and other statistical representations",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-Y6-C020", "MA-Y6-C028"],
+          "rationale": "Pie charts (reading and calculating proportional sectors) and the broader skill of constructing/interpreting statistical charts are co-taught (C028 co-teaches with C020). Together they cover the representational strand.",
+          "inspired_by": "CC Math 6.SP.B.4 - Display numerical data in plots on a number line, including dot plots, histograms, and box plots"
+        },
+        {
+          "cluster_name": "Calculate and interpret averages including mean, median and mode",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C021", "MA-Y6-C027"],
+          "rationale": "Mean and the mode/median pair are co-taught (C021 and C027 mutually co-teach) and together provide a complete picture of central tendency at Year 6 level.",
+          "inspired_by": "CC Math 6.SP.B.5 - Summarise numerical data sets in relation to their context"
+        },
+        {
+          "cluster_name": "Describe and compare data distributions and use probability language",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-Y6-C026", "MA-Y6-C025"],
+          "rationale": "Describing distributions and introducing probability both require understanding likelihood and variation. Both co-teach with the averages cluster (C026 lists C020, C021, C027, C028; C025 is referenced by the averages cluster). Placed here as the analytical reasoning capstone.",
+          "inspired_by": "CC Math 7.SP.C.5 - Understand that the probability of a chance event is a number between 0 and 1"
+        }
+      ]
+    },
+    "MA-KS3-D001": {
+      "domain_name": "Working Mathematically - Fluency",
+      "clusters": [
+        {
+          "cluster_name": "Develop and sustain mathematical fluency across number and calculation",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C088", "MA-KS3-C023"],
+          "rationale": "Mathematical fluency (rapid recall and accurate application) and appropriate calculator use are complementary strands of the same domain: knowing when and how to compute efficiently.",
+          "inspired_by": "CC Math 8.MP.6 - Attend to precision"
+        }
+      ]
+    },
+    "MA-KS3-D002": {
+      "domain_name": "Working Mathematically - Reasoning",
+      "clusters": [
+        {
+          "cluster_name": "Construct and communicate formal mathematical arguments and proofs",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C089", "MA-KS3-C095", "MA-KS3-C075"],
+          "rationale": "Mathematical reasoning, formal argument and geometric proof are a coherent cluster. C095 co-teaches with C075 and C089. Geometric proof is an application of formal argument in a specific domain.",
+          "inspired_by": "CC Math HSG-CO.C.9 - Prove theorems about lines and angles"
+        }
+      ]
+    },
+    "MA-KS3-D003": {
+      "domain_name": "Working Mathematically - Problem Solving",
+      "clusters": [
+        {
+          "cluster_name": "Apply problem-solving strategies, mathematical modelling and multiple representations",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C090", "MA-KS3-C091", "MA-KS3-C092"],
+          "rationale": "Problem-solving strategies, moving between representations and mathematical modelling are the three interlocking process skills in this domain. All three are process concepts that pervade KS3.",
+          "inspired_by": "CC Math MP.1-4 - Make sense of problems, reason abstractly, construct arguments, model with mathematics"
+        }
+      ]
+    },
+    "MA-KS3-D004": {
+      "domain_name": "Number",
+      "clusters": [
+        {
+          "cluster_name": "Understand place value, negative numbers and order real numbers",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS3-C001", "MA-KS3-C002", "MA-KS3-C003", "MA-KS3-C004"],
+          "rationale": "Place value with decimals, negative integers, ordering real numbers and inequality symbols all co-teach together (C001, C003, C004 mutually link; C003 co-teaches with C002 and C004). These form the foundational number system cluster.",
+          "inspired_by": "CC Math 6.NS.C.6 - Understand a rational number as a point on the number line; apply to all four quadrants"
+        },
+        {
+          "cluster_name": "Apply prime factorisation, HCF, LCM and index notation",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C005", "MA-KS3-C006", "MA-KS3-C007", "MA-KS3-C008", "MA-KS3-C014"],
+          "rationale": "Prime numbers, factors/multiples, HCF/LCM, prime factorisation and index notation are tightly linked by co_teach_hints (C006, C007, C008 mutually co-teach; C008 and C014 co-teach). This is the number theory cluster.",
+          "inspired_by": "CC Math 6.NS.B.4 - Find GCF and LCM of two whole numbers"
+        },
+        {
+          "cluster_name": "Perform operations with fractions, negative numbers and use order of operations",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C009", "MA-KS3-C010", "MA-KS3-C011", "MA-KS3-C012"],
+          "rationale": "Operations with fractions, negative number arithmetic, BIDMAS and inverse operations all co-teach together (C009 lists C010, C012; C012 lists C009, C010, C011). These constitute the calculation fluency cluster.",
+          "inspired_by": "CC Math 7.NS.A - Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers"
+        },
+        {
+          "cluster_name": "Use powers, roots, standard form and understand surds",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C013", "MA-KS3-C015", "MA-KS3-C016"],
+          "rationale": "Powers and roots, exact vs approximate roots and standard form are linked (C013 lists C014, C019; C016 links to C014). These represent the advanced number representation cluster.",
+          "inspired_by": "CC Math 8.EE.A.1 - Know and apply the properties of integer exponents"
+        },
+        {
+          "cluster_name": "Work with percentages, fractions as operators and apply to real contexts",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C017", "MA-KS3-C018", "MA-KS3-C019", "MA-KS3-C020"],
+          "rationale": "Decimal-fraction equivalence, the percentage concept, percentage calculations and fractions/percentages as operators are all linked (C020 lists C018, C019, C009, C012). This is the percentage and proportional representation cluster.",
+          "inspired_by": "CC Math 7.RP.A.3 - Use proportional relationships to solve multi-step percent problems"
+        },
+        {
+          "cluster_name": "Round to significant figures and understand error intervals",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C021", "MA-KS3-C022", "MA-KS3-C024"],
+          "rationale": "Rounding/approximation, error intervals and the nature of infinite number sets are grouped as the estimation and number sets cluster. C022 uses inequality notation (linking to C004); C024 connects to the nature of rational number sets.",
+          "inspired_by": "CC Math 8.NS.A.2 - Use rational approximations of irrational numbers"
+        }
+      ]
+    },
+    "MA-KS3-D005": {
+      "domain_name": "Algebra",
+      "clusters": [
+        {
+          "cluster_name": "Understand algebraic notation and vocabulary",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS3-C025", "MA-KS3-C027"],
+          "rationale": "Algebraic notation conventions and algebraic vocabulary (expression, equation, term, coefficient, etc.) are the entry-point knowledge cluster for the whole Algebra domain.",
+          "inspired_by": "CC Math 6.EE.A.2 - Write, read, and evaluate expressions in which letters stand for numbers"
+        },
+        {
+          "cluster_name": "Simplify, expand and factorise algebraic expressions",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C028", "MA-KS3-C029", "MA-KS3-C030", "MA-KS3-C031"],
+          "rationale": "Collecting like terms, expanding single brackets, factorising and expanding binomial products form a coherent manipulation cluster. C029 co-teaches with C028, C030, C031; C031 co-teaches with C029.",
+          "inspired_by": "CC Math HSA-APR.A.1 - Perform arithmetic operations on polynomials"
+        },
+        {
+          "cluster_name": "Substitute into expressions, form equations and change the subject of formulae",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C026", "MA-KS3-C032", "MA-KS3-C033", "MA-KS3-C034", "MA-KS3-C035"],
+          "rationale": "Substitution, formula use, rearranging formulae, forming expressions and solving linear equations are all procedural algebra skills linked via co_teach_hints (C026 lists C034, C032; C034 co-teaches with C040). Together they form the equations and formulae cluster.",
+          "inspired_by": "CC Math 6.EE.B - Reason about and solve one-variable equations and inequalities"
+        },
+        {
+          "cluster_name": "Understand and draw linear and quadratic graphs using y = mx + c",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C036", "MA-KS3-C037", "MA-KS3-C038", "MA-KS3-C039", "MA-KS3-C040", "MA-KS3-C041"],
+          "rationale": "Four-quadrant coordinates, linear graphs, quadratic graphs, y=mx+c, gradient/intercept and graphical solutions are extensively cross-referenced by co_teach_hints (C039 lists C036, C037, C038, C040, C041). This is the graphs cluster.",
+          "inspired_by": "CC Math 8.F.B.4 - Construct a function to model a linear relationship between two quantities"
+        },
+        {
+          "cluster_name": "Solve simultaneous equations graphically and interpret non-linear graphs",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C042", "MA-KS3-C043"],
+          "rationale": "Simultaneous equations graphically and non-linear graphs (exponential, reciprocal, piecewise) are the advanced graph interpretation cluster at KS3, requiring all prior graph skills.",
+          "inspired_by": "CC Math 8.EE.C.8 - Analyze and solve pairs of simultaneous linear equations"
+        },
+        {
+          "cluster_name": "Generate, describe and find the nth term of arithmetic and geometric sequences",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C044", "MA-KS3-C045", "MA-KS3-C046"],
+          "rationale": "Sequence generation, arithmetic sequences (nth term) and geometric sequences (common ratio) form a coherent sequences cluster. C044 co-teaches with C045, C046; C046 co-teaches with C045.",
+          "inspired_by": "CC Math HSF-IF.A.3 - Recognize that sequences are functions whose domain is a subset of the integers"
+        }
+      ]
+    },
+    "MA-KS3-D006": {
+      "domain_name": "Ratio, Proportion and Rates of Change",
+      "clusters": [
+        {
+          "cluster_name": "Understand ratio notation, divide in a ratio and link to fractions",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS3-C050", "MA-KS3-C051", "MA-KS3-C049", "MA-KS3-C053"],
+          "rationale": "Ratio notation, dividing in a ratio, expressing as a fraction and the link between ratios and fractions are mutually co-taught (C050 lists C049, C051; C049 lists C050, C052, C053). This cluster establishes the conceptual foundation.",
+          "inspired_by": "CC Math 6.RP.A.1 - Understand the concept of a ratio and use ratio language"
+        },
+        {
+          "cluster_name": "Apply scale factors, percentage change and financial mathematics",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C048", "MA-KS3-C054", "MA-KS3-C093"],
+          "rationale": "Scale factors/diagrams, percentage change and financial mathematics are applied ratio and proportion contexts. C048 co-teaches with C053, C057; C054 is standalone with high practical relevance alongside financial contexts.",
+          "inspired_by": "CC Math 7.RP.A.3 - Use proportional relationships to solve multi-step problems including percent"
+        },
+        {
+          "cluster_name": "Solve problems involving direct and inverse proportion and multiplicative reasoning",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C052", "MA-KS3-C055", "MA-KS3-C056", "MA-KS3-C094"],
+          "rationale": "Multiplicative relationships, direct proportion, inverse proportion and additive vs multiplicative reasoning are linked (C056 co-teaches with C055, C052, C094; C094 lists C055, C056). This is the proportional reasoning cluster.",
+          "inspired_by": "CC Math 7.RP.A.2 - Recognise and represent proportional relationships between quantities"
+        },
+        {
+          "cluster_name": "Convert between units and use compound units in problem-solving",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C047", "MA-KS3-C057"],
+          "rationale": "Unit conversion and compound units (speed, density, pressure) are co-taught (C047 co-teaches with C057; C057 extensively cross-references). These form the measurement application within the ratio domain.",
+          "inspired_by": "CC Math 6.RP.A.3d - Use ratio reasoning to convert measurement units"
+        }
+      ]
+    },
+    "MA-KS3-D007": {
+      "domain_name": "Geometry and Measures",
+      "clusters": [
+        {
+          "cluster_name": "Derive and apply area and volume formulae for 2-D and 3-D shapes",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS3-C058", "MA-KS3-C059", "MA-KS3-C060"],
+          "rationale": "Area formulae (triangles, parallelograms, trapezia), volume of prisms and circle measurements are linked (C058 co-teaches with C059, C068, C072). These constitute the mensuration cluster.",
+          "inspired_by": "CC Math 6.G.A - Solve real-world problems involving area, surface area, and volume"
+        },
+        {
+          "cluster_name": "Use geometric notation, drawing and construction tools accurately",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C061", "MA-KS3-C062", "MA-KS3-C063", "MA-KS3-C064"],
+          "rationale": "Measuring/drawing, geometric constructions, notation and triangle labelling conventions all form the practical geometry toolkit. C063 co-teaches with C062, C064.",
+          "inspired_by": "CC Math 7.G.A.2 - Draw geometric shapes with given conditions"
+        },
+        {
+          "cluster_name": "Understand angle properties and apply to triangles, polygons and parallel lines",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C070", "MA-KS3-C071", "MA-KS3-C072", "MA-KS3-C073"],
+          "rationale": "Angle properties at a point, parallel line angles, triangle angle sum and polygon angle sum are tightly linked (C071 and C072 mutually co-teach; C073 co-teaches with C071, C072). This is the angle reasoning cluster.",
+          "inspired_by": "CC Math 8.G.A.5 - Use informal arguments to establish facts about angle sums and exterior angles"
+        },
+        {
+          "cluster_name": "Prove and apply congruence and similarity in triangles",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C065", "MA-KS3-C066", "MA-KS3-C068", "MA-KS3-C069"],
+          "rationale": "Congruence criteria, shape properties, congruent triangle construction and similarity/enlargement are extensively co-taught (C065 lists C064, C068, C071-076; C068 is linked to most geometry concepts). This is the shape reasoning cluster.",
+          "inspired_by": "CC Math 8.G.A.2 - Understand that a two-dimensional figure is congruent to another if the second can be obtained from the first"
+        },
+        {
+          "cluster_name": "Apply Pythagoras' Theorem and trigonometric ratios to right-angled triangles",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C074", "MA-KS3-C076"],
+          "rationale": "Pythagoras' Theorem and trigonometric ratios (sin, cos, tan) are the two capstone right-triangle concepts in KS3, both with high teaching weight (5). They are mutually co-referenced.",
+          "inspired_by": "CC Math 8.G.B.7 - Apply the Pythagorean Theorem to determine unknown side lengths"
+        },
+        {
+          "cluster_name": "Identify, describe and perform geometric transformations",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C067", "MA-KS3-C077"],
+          "rationale": "Transformations (translation, rotation, reflection) and 3-D shape properties are grouped here as the spatial reasoning application cluster, both requiring prior shape knowledge.",
+          "inspired_by": "CC Math 8.G.A.1 - Verify experimentally the properties of rotations, reflections and translations"
+        }
+      ]
+    },
+    "MA-KS3-D008": {
+      "domain_name": "Probability",
+      "clusters": [
+        {
+          "cluster_name": "Understand and calculate theoretical and experimental probability",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS3-C078", "MA-KS3-C079", "MA-KS3-C081"],
+          "rationale": "Probability experiments, the probability scale summing to 1 and theoretical probability (sample spaces) are co-taught (C078 co-teaches with C081). These establish the foundational probability framework.",
+          "inspired_by": "CC Math 7.SP.C.5 - Understand that the probability of a chance event is a number between 0 and 1"
+        },
+        {
+          "cluster_name": "Enumerate outcomes systematically using tables, grids and Venn diagrams",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C080"],
+          "rationale": "Systematic enumeration (sample space diagrams, Venn diagrams) is the key combinatorial skill that distinguishes KS3 probability from primary-level language work.",
+          "inspired_by": "CC Math 7.SP.C.8 - Find probabilities of compound events using organised lists, tables, tree diagrams and simulation"
+        }
+      ]
+    },
+    "MA-KS3-D009": {
+      "domain_name": "Statistics",
+      "clusters": [
+        {
+          "cluster_name": "Calculate and interpret measures of central tendency and spread",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS3-C083", "MA-KS3-C084"],
+          "rationale": "Mean, mode, median and range (with outliers) are tightly co-taught (C084 lists C083). These foundational summary statistics must be established before data representation work.",
+          "inspired_by": "CC Math 6.SP.B.5 - Summarise numerical data sets in relation to their context"
+        },
+        {
+          "cluster_name": "Represent and compare data distributions using appropriate charts",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C082", "MA-KS3-C085", "MA-KS3-C086"],
+          "rationale": "Data distribution, data representation (bar charts, pie charts, pictograms) and grouped data are co-taught (C085 lists C082, C083, C086; C084 lists C082, C083, C086). This is the data representation and analysis cluster.",
+          "inspired_by": "CC Math 6.SP.B.4 - Display numerical data in plots on a number line"
+        },
+        {
+          "cluster_name": "Describe relationships between two variables using scatter graphs",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS3-C087"],
+          "rationale": "Bivariate data and scatter graphs represent a distinct statistical idea (correlation between two variables) that is meaningfully different from univariate distribution work.",
+          "inspired_by": "CC Math 8.SP.A.1 - Construct and interpret scatter plots for bivariate measurement data"
+        }
+      ]
+    },
+    "MA-KS4-D001": {
+      "domain_name": "Number",
+      "clusters": [
+        {
+          "cluster_name": "Apply the four operations fluently to integers, fractions and decimals",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS4-C001", "MA-KS4-C002"],
+          "rationale": "Integer and rational number operations and prime factorisation/number theory are the foundational GCSE number skills. Both cover the core arithmetic fluency expected of all GCSE candidates.",
+          "inspired_by": "CC Math 7.NS.A - Apply and extend previous understandings of operations with fractions"
+        },
+        {
+          "cluster_name": "Use powers, roots, surds, standard form and round to significant figures",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C003", "MA-KS4-C004"],
+          "rationale": "Powers/roots/surds (including fractional indices) and estimation/approximation (significant figures, error bounds) are the advanced number representation and precision targets at GCSE.",
+          "inspired_by": "CC Math 8.EE.A.1 - Know and apply properties of integer exponents"
+        }
+      ]
+    },
+    "MA-KS4-D002": {
+      "domain_name": "Algebra",
+      "clusters": [
+        {
+          "cluster_name": "Manipulate and factorise algebraic expressions including quadratics",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS4-C005"],
+          "rationale": "Algebraic manipulation and factorisation (single brackets, double brackets, quadratics) is the foundational algebraic skill at GCSE upon which all equation and function work depends.",
+          "inspired_by": "CC Math HSA-APR.A.1 - Perform arithmetic operations on polynomials"
+        },
+        {
+          "cluster_name": "Solve linear and quadratic equations and simultaneous equations",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C006", "MA-KS4-C007", "MA-KS4-C008"],
+          "rationale": "Linear equations/inequalities, quadratic equations (factorising, formula, completing the square) and simultaneous equations are the core equation-solving cluster. C007 co-teaches with C008.",
+          "inspired_by": "CC Math HSA-REI.B - Solve equations and inequalities in one variable"
+        },
+        {
+          "cluster_name": "Work with sequences, linear functions and non-linear graphs",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C009", "MA-KS4-C010", "MA-KS4-C011"],
+          "rationale": "Sequences/nth term, straight line graphs (y=mx+c) and non-linear graphs (quadratic, cubic, exponential, trigonometric) are the function and graph cluster at GCSE.",
+          "inspired_by": "CC Math HSF-IF.C.7 - Graph functions expressed symbolically and show key features"
+        },
+        {
+          "cluster_name": "Understand function notation and apply graph transformations",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C012"],
+          "rationale": "Functions (notation, composite, inverse) and graph transformations (f(x+a), f(ax), af(x)) are the most advanced algebra targets at GCSE and form a distinct conceptual cluster.",
+          "inspired_by": "CC Math HSF-BF.B.3 - Identify the effect on the graph of replacing f(x) by f(x)+k, k f(x), f(kx), and f(x+k)"
+        }
+      ]
+    },
+    "MA-KS4-D003": {
+      "domain_name": "Ratio, Proportion and Rates of Change",
+      "clusters": [
+        {
+          "cluster_name": "Use ratio and scale to solve problems and calculate percentage change",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS4-C013", "MA-KS4-C014"],
+          "rationale": "Ratio/scale (simplifying, dividing, scale drawings) and percentage change/financial mathematics are the applied proportional reasoning targets at GCSE foundation and higher.",
+          "inspired_by": "CC Math 7.RP.A.3 - Use proportional relationships to solve multi-step problems"
+        },
+        {
+          "cluster_name": "Apply direct and inverse proportion and interpret compound measures",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C015", "MA-KS4-C016"],
+          "rationale": "Direct/inverse proportion (algebraic, graphical, numerical) and compound measures/rates of change (speed, density, gradient) are the advanced proportion cluster at GCSE.",
+          "inspired_by": "CC Math 7.RP.A.2 - Recognize and represent proportional relationships"
+        }
+      ]
+    },
+    "MA-KS4-D004": {
+      "domain_name": "Geometry and Measures",
+      "clusters": [
+        {
+          "cluster_name": "Calculate area, perimeter and volume using formulae for 2-D and 3-D shapes",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS4-C017", "MA-KS4-C018"],
+          "rationale": "Area/perimeter of 2-D shapes (including arcs and sectors) and volume/surface area of 3-D solids are co-taught (C017 co-teaches with C018, C019, C020, C021). These form the mensuration cluster.",
+          "inspired_by": "CC Math 7.G.B.4 - Know the formulas for area and circumference of a circle"
+        },
+        {
+          "cluster_name": "Apply Pythagoras' Theorem and trigonometry to 2-D and 3-D problems",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C019", "MA-KS4-C020", "MA-KS4-C021"],
+          "rationale": "Pythagoras, right-angled triangle trigonometry (sin/cos/tan) and the sine/cosine rules (non-right-angled triangles) are the trigonometry cluster. C020 co-teaches with C017 and C019.",
+          "inspired_by": "CC Math HSG-SRT.C.8 - Use trigonometric ratios and the Pythagorean theorem to solve right triangles"
+        },
+        {
+          "cluster_name": "Prove and apply circle theorems, congruence and similarity",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C022", "MA-KS4-C023"],
+          "rationale": "Circle theorems (angles, chords, tangents) and congruence/similarity (proof and ratio application) are the formal geometry reasoning targets at GCSE higher. Both require proof skills.",
+          "inspired_by": "CC Math HSG-C.A.2 - Identify and describe relationships among inscribed angles, radii, and chords"
+        },
+        {
+          "cluster_name": "Describe and apply geometric transformations and use vectors",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C024", "MA-KS4-C025"],
+          "rationale": "The four geometric transformations and vectors (column notation, addition, subtraction, scalar multiplication) are grouped as the transformation and position cluster at GCSE.",
+          "inspired_by": "CC Math 8.G.A.3 - Describe the effect of dilations, translations, rotations and reflections"
+        }
+      ]
+    },
+    "MA-KS4-D005": {
+      "domain_name": "Probability",
+      "clusters": [
+        {
+          "cluster_name": "Understand theoretical and experimental probability on the 0-1 scale",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS4-C026"],
+          "rationale": "Basic probability and the probability scale (theoretical, experimental, relative frequency) is the foundational GCSE probability concept that all subsequent work depends upon.",
+          "inspired_by": "CC Math 7.SP.C.5 - Understand that the probability of a chance event is a number between 0 and 1"
+        },
+        {
+          "cluster_name": "Calculate probabilities of combined and conditional events using diagrams",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C027", "MA-KS4-C028", "MA-KS4-C029"],
+          "rationale": "Combined events/tree diagrams, Venn diagrams/set notation and conditional probability are the advanced GCSE probability cluster. C028 co-teaches with C029.",
+          "inspired_by": "CC Math 7.SP.C.8 - Find probabilities of compound events using organised lists, tables, tree diagrams and simulation"
+        }
+      ]
+    },
+    "MA-KS4-D006": {
+      "domain_name": "Statistics",
+      "clusters": [
+        {
+          "cluster_name": "Understand sampling methods and collect data appropriately",
+          "cluster_type": "introduction",
+          "concept_ids": ["MA-KS4-C030"],
+          "rationale": "Data collection and sampling (random, systematic, stratified; bias identification) is the foundational GCSE statistics concept — understanding how data is gathered before it can be analysed.",
+          "inspired_by": "CC Math HSS-IC.B.3 - Recognise the purposes of and differences among sample surveys, experiments and observational studies"
+        },
+        {
+          "cluster_name": "Construct and interpret statistical diagrams and calculate averages",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C031", "MA-KS4-C032"],
+          "rationale": "Statistical diagrams (histograms, cumulative frequency, box plots) and averages/measures of spread (mean, median, mode, IQR) are the core GCSE statistical analysis cluster.",
+          "inspired_by": "CC Math 6.SP.B.4 - Display numerical data in plots; summarise in relation to context"
+        },
+        {
+          "cluster_name": "Describe and interpret bivariate data using scatter graphs and correlation",
+          "cluster_type": "practice",
+          "concept_ids": ["MA-KS4-C033"],
+          "rationale": "Scatter graphs, correlation (positive/negative/none) and lines of best fit represent the bivariate data and relationship strand, distinct from univariate distribution analysis.",
+          "inspired_by": "CC Math 8.SP.A.2 - Know that straight lines are widely used to model relationships between two quantitative variables"
+        }
+      ]
+    }
+  }
+}

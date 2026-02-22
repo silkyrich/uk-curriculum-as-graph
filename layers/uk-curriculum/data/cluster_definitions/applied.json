@@ -1,0 +1,711 @@
+{
+  "version": "1.0",
+  "subject_group": "Applied",
+  "authored_by": "applied-agent",
+  "authored_date": "2026-02-22",
+  "note": "Cluster definitions for Design and Technology (KS1–KS4), Computing (KS1–KS4), Languages/MFL (KS2–KS4), Business Studies (KS4), Food Preparation and Nutrition (KS4), and Media Studies (KS4). The Design–Make–Evaluate cycle is the structural backbone for DT; language skills (Listening, Speaking, Reading, Writing) organise MFL; GCSE subjects with small concept counts receive precise single-cluster groupings where a domain has only one concept.",
+  "domains": {
+    "CO-KS12-D001": {
+      "domain_name": "Computer Science: Algorithms and Programming (KS1)",
+      "clusters": [
+        {
+          "cluster_name": "Understand algorithms and debug simple programs",
+          "cluster_type": "practice",
+          "concept_ids": ["CO-KS12-C003"],
+          "rationale": "At KS1 the sole programming concept is debugging and logical reasoning — the foundational skill of reading a program, predicting its behaviour and fixing errors. A single-concept cluster correctly represents the domain's narrow but important focus.",
+          "inspired_by": "NC Computing KS1: create and debug simple programs; use logical reasoning to predict behaviour"
+        }
+      ]
+    },
+    "CO-KS12-D002": {
+      "domain_name": "Computer Science: Algorithms and Programming (KS2)",
+      "clusters": [
+        {
+          "cluster_name": "Understand algorithms and apply computational thinking",
+          "cluster_type": "introduction",
+          "concept_ids": ["CO-KS12-C001", "CO-KS12-C006"],
+          "rationale": "Algorithms and decomposition/computational thinking are tightly co-taught at KS2: understanding what an algorithm is (C001) is the prerequisite for decomposing problems into algorithms (C006), and C006 lists C001 in its co_teach_hints. Together they form the conceptual foundation before programming practice.",
+          "inspired_by": "CC Math 'Understand algorithms and computational thinking'"
+        },
+        {
+          "cluster_name": "Design, write and debug programs using sequence, selection and repetition",
+          "cluster_type": "practice",
+          "concept_ids": ["CO-KS12-C002"],
+          "rationale": "Programming with the three control structures (sequence, selection, repetition) is the practical application domain at KS2, distinct from the conceptual/algorithmic cluster. Pupils apply their understanding of algorithms by implementing them in programs.",
+          "inspired_by": "NC Computing KS2: design, write and debug programs"
+        }
+      ]
+    },
+    "CO-KS12-D003": {
+      "domain_name": "Digital Literacy and IT Skills (KS1)",
+      "clusters": [
+        {
+          "cluster_name": "Use technology safely and develop digital citizenship",
+          "cluster_type": "practice",
+          "concept_ids": ["CO-KS12-C005"],
+          "rationale": "Online safety and digital citizenship is the sole concept in this domain. It encompasses both the practical safety skills (protecting personal information) and the ethical awareness (responsible behaviour online) that underpin all digital activity at KS1.",
+          "inspired_by": "NC Computing KS1: use technology safely and respectfully"
+        }
+      ]
+    },
+    "CO-KS12-D004": {
+      "domain_name": "Digital Literacy and IT Skills (KS2)",
+      "clusters": [
+        {
+          "cluster_name": "Understand computer networks and use search technologies critically",
+          "cluster_type": "practice",
+          "concept_ids": ["CO-KS12-C004"],
+          "rationale": "Networks and the Internet is the sole concept in the KS2 digital literacy domain, covering both the infrastructure of the internet and the digital literacy skill of evaluating search results. A single precise cluster correctly covers the domain.",
+          "inspired_by": "NC Computing KS2: understand computer networks including the internet"
+        }
+      ]
+    },
+    "DT-KS1-D001": {
+      "domain_name": "Design",
+      "clusters": [
+        {
+          "cluster_name": "Develop design ideas against criteria for a purpose and user",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS1-C001", "DT-KS1-C002"],
+          "rationale": "The iterative design process (C001) and design criteria (C002) are inseparable at KS1: criteria define what success looks like, and the process provides the cycle within which criteria are used. These two process concepts are always taught together as the design phase of the Design–Make–Evaluate cycle.",
+          "inspired_by": "DT Design–Make–Evaluate cycle"
+        }
+      ]
+    },
+    "DT-KS1-D002": {
+      "domain_name": "Make",
+      "clusters": [
+        {
+          "cluster_name": "Use tools safely and apply joining and finishing techniques",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS1-C008", "DT-KS1-C009"],
+          "rationale": "Safe tool use (C008) is the prerequisite for joining and finishing (C009): pupils must handle tools correctly before they can execute joins. These two making skills always occur together in practical DT sessions and are naturally co-taught.",
+          "inspired_by": "NC DT KS1: select from and use a range of tools and equipment"
+        }
+      ]
+    },
+    "DT-KS1-D003": {
+      "domain_name": "Evaluate",
+      "clusters": [
+        {
+          "cluster_name": "Investigate existing products and evaluate work against design criteria",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS1-C010"],
+          "rationale": "Product analysis and evaluation is the sole concept in the Evaluate domain at KS1. It covers both the investigation of existing products and the reflective self-assessment of pupils' own work against criteria — the evaluative strand of the Design–Make–Evaluate cycle.",
+          "inspired_by": "NC DT KS1: explore and evaluate a range of existing products"
+        }
+      ]
+    },
+    "DT-KS1-D004": {
+      "domain_name": "Technical Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Understand materials and their properties",
+          "cluster_type": "introduction",
+          "concept_ids": ["DT-KS1-C003"],
+          "rationale": "Materials and their characteristics (C003) underpins both structures and mechanisms: pupils must understand material properties before they can purposefully select materials for building stable structures or creating moving products. Teaching this first provides the knowledge base for the other two concepts.",
+          "inspired_by": "NC DT KS1: select from and use a wide range of materials"
+        },
+        {
+          "cluster_name": "Explore structures, stability, levers and mechanisms in products",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS1-C004", "DT-KS1-C005"],
+          "rationale": "Structures and stability (C004) and mechanisms (C005) are both applied technical concepts that pupils investigate through hands-on making. Both extend material knowledge into engineering principles and are typically taught in the context of the same making project — building a stable structure that also incorporates a moving part.",
+          "inspired_by": "NC DT KS1: build structures; explore and use mechanisms"
+        }
+      ]
+    },
+    "DT-KS1-D005": {
+      "domain_name": "Cooking and Nutrition",
+      "clusters": [
+        {
+          "cluster_name": "Understand healthy diet principles and where food comes from",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS1-C006", "DT-KS1-C007"],
+          "rationale": "Healthy and varied diet (C006) and food origins (C007) are explicitly co-taught at KS1: C007 carries C006 in its co_teach_hints. Understanding what constitutes a healthy diet is enriched by knowing where different foods come from, and both are foundational to food education before practical cooking begins.",
+          "inspired_by": "NC DT KS1: Cooking and Nutrition"
+        }
+      ]
+    },
+    "DT-KS2-D001": {
+      "domain_name": "Design",
+      "clusters": [
+        {
+          "cluster_name": "Use research and design criteria to develop and communicate design ideas",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS2-C001", "DT-KS2-C002"],
+          "rationale": "Research-informed design (C001) and technical drawing/design communication (C002) are the two facets of the KS2 design phase: research generates and validates the design criteria, while technical drawing communicates the design ideas clearly enough to be made. They are always taught together as the expanded design phase at KS2.",
+          "inspired_by": "NC DT KS2: use research and develop design criteria; annotated sketches, exploded diagrams, computer-aided design"
+        }
+      ]
+    },
+    "DT-KS2-D002": {
+      "domain_name": "Make",
+      "clusters": [
+        {
+          "cluster_name": "Make accurately using appropriate tools, materials and processes",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS2-C006", "DT-KS2-C007"],
+          "rationale": "Accurate making (C006) and functional/aesthetic material properties (C007) are deeply intertwined at KS2: selecting the right material (C007) is inseparable from executing the making with precision (C006). Both concepts are practised simultaneously in every making project and naturally co-taught.",
+          "inspired_by": "NC DT KS2: select from and accurately use a wider range of tools, equipment and materials"
+        }
+      ]
+    },
+    "DT-KS2-D003": {
+      "domain_name": "Evaluate",
+      "clusters": [
+        {
+          "cluster_name": "Investigate existing products and understand the history of design and technology",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS2-C008", "DT-KS2-C009"],
+          "rationale": "Product investigation (C008) and the history and influence of D&T (C009) are explicitly co-taught: C009 carries C008 in its co_teach_hints. Investigating existing products is the practical activity through which historical and cultural context becomes meaningful — studying Brunel's bridges or Dyson's vacuums combines both concepts naturally.",
+          "inspired_by": "NC DT KS2: investigate and analyse existing products; understand how key events and individuals have shaped the world"
+        }
+      ]
+    },
+    "DT-KS2-D004": {
+      "domain_name": "Technical Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Understand and apply mechanical systems in products",
+          "cluster_type": "introduction",
+          "concept_ids": ["DT-KS2-C003"],
+          "rationale": "Advanced mechanical systems (C003) builds directly on KS1 mechanisms and is taught before electrical systems, providing the motion/force conceptual framework that underpins understanding of how electrical and computer-controlled systems also produce useful outputs.",
+          "inspired_by": "NC DT KS2: understand and use mechanical systems"
+        },
+        {
+          "cluster_name": "Design and build electrical and computer-controlled systems in products",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS2-C004", "DT-KS2-C005"],
+          "rationale": "Electrical systems (C004) and computing control (C005) are sequentially related — computing control typically operates by switching electrical components on and off — and are best co-taught in physical computing projects where pupils program a microcontroller to control a circuit. These represent the most complex technical knowledge at KS2.",
+          "inspired_by": "NC DT KS2: understand and use electrical systems; apply understanding of computing to program, monitor and control products"
+        }
+      ]
+    },
+    "DT-KS2-D005": {
+      "domain_name": "Cooking and Nutrition",
+      "clusters": [
+        {
+          "cluster_name": "Prepare and cook dishes using appropriate techniques and seasonal ingredients",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS2-C010", "DT-KS2-C011"],
+          "rationale": "Cooking techniques (C010) and seasonality/ingredient sourcing (C011) are explicitly co-taught: C011 carries C010 in its co_teach_hints. Practical cooking lessons at KS2 naturally incorporate discussion of where ingredients come from and why seasonal choices matter, integrating both concepts.",
+          "inspired_by": "NC DT KS2: prepare and cook a variety of savoury dishes; understand seasonality"
+        }
+      ]
+    },
+    "LA-KS2-D001": {
+      "domain_name": "Listening and Speaking",
+      "clusters": [
+        {
+          "cluster_name": "Develop pronunciation and communicate in the target language",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS2-C001", "LA-KS2-C004"],
+          "rationale": "Phonology and pronunciation (C001) and communicative competence (C004) are the two essential dimensions of oracy in a foreign language at KS2: pupils must develop accurate sound production (C001) in order to communicate meaningfully (C004). Both are practised together in every listening and speaking activity.",
+          "inspired_by": "MFL four skills framework: Listening and Speaking"
+        }
+      ]
+    },
+    "LA-KS2-D002": {
+      "domain_name": "Reading",
+      "clusters": [
+        {
+          "cluster_name": "Read and respond to texts in the target language",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS2-C006"],
+          "rationale": "Reading in the target language is the sole concept in this domain at KS2, covering the decoding of written text using phonological knowledge and the development of reading comprehension. A single precise cluster correctly represents the domain.",
+          "inspired_by": "MFL four skills framework: Reading"
+        }
+      ]
+    },
+    "LA-KS2-D003": {
+      "domain_name": "Writing",
+      "clusters": [
+        {
+          "cluster_name": "Write accurately by reproducing and adapting learned phrases",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS2-C007"],
+          "rationale": "Writing in the target language is the sole concept in this domain at KS2, covering the progression from copying to adapting learned phrases using correct spelling and basic grammar. A single cluster correctly represents the domain's focus.",
+          "inspired_by": "MFL four skills framework: Writing"
+        }
+      ]
+    },
+    "LA-KS2-D004": {
+      "domain_name": "Grammar and Vocabulary",
+      "clusters": [
+        {
+          "cluster_name": "Develop vocabulary and core grammatical structures",
+          "cluster_type": "introduction",
+          "concept_ids": ["LA-KS2-C002", "LA-KS2-C003"],
+          "rationale": "Vocabulary acquisition (C002) and grammar (C003) are the two foundational knowledge components that pupils must develop before they can achieve language awareness and transfer. They are always taught together as the grammatical and lexical building blocks of the target language.",
+          "inspired_by": "MFL: vocabulary and grammar as enabling knowledge"
+        },
+        {
+          "cluster_name": "Develop language awareness and understand how languages connect",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS2-C005"],
+          "rationale": "Language awareness and transfer (C005) co-teaches with both C002 and C003 and represents a higher-order metacognitive concept: pupils reflect on how the target language relates to English and other known languages. This is taught after and alongside vocabulary and grammar, making it a distinct practice cluster.",
+          "inspired_by": "MFL KS2: note the patterns and rules that emerge"
+        }
+      ]
+    },
+    "BU-KS4-D001": {
+      "domain_name": "Business in the Real World",
+      "clusters": [
+        {
+          "cluster_name": "Understand enterprise, business objectives and the stakeholder environment",
+          "cluster_type": "practice",
+          "concept_ids": ["BU-KS4-C001", "BU-KS4-C005"],
+          "rationale": "Enterprise, entrepreneurship and business objectives (C001) and stakeholders and the business environment (C005) are explicitly co-taught: C001 lists C005 in its co_teach_hints. Business objectives can only be understood in relation to who the business serves (stakeholders), and PESTLE analysis makes the environment through which objectives are pursued visible. Both concepts form the foundational analytical framework for all subsequent GCSE Business study.",
+          "inspired_by": "GCSE Business: Business in the Real World domain"
+        }
+      ]
+    },
+    "BU-KS4-D002": {
+      "domain_name": "Marketing",
+      "clusters": [
+        {
+          "cluster_name": "Understand market research and apply the marketing mix",
+          "cluster_type": "practice",
+          "concept_ids": ["BU-KS4-C002"],
+          "rationale": "Market research and the marketing mix is the sole concept in this domain and integrates the research and strategic dimensions of marketing into a single coherent framework (4Ps). A single cluster correctly covers all marketing knowledge at GCSE.",
+          "inspired_by": "GCSE Business: Marketing domain"
+        }
+      ]
+    },
+    "BU-KS4-D003": {
+      "domain_name": "Operations",
+      "clusters": [
+        {
+          "cluster_name": "Understand production methods, quality management and supply chains",
+          "cluster_type": "practice",
+          "concept_ids": ["BU-KS4-C006"],
+          "rationale": "Business operations — production and supply chain — is the sole concept in this domain. It integrates production methods, quality management and supply chain management into a single operations framework. A single cluster correctly covers the domain.",
+          "inspired_by": "GCSE Business: Operations domain"
+        }
+      ]
+    },
+    "BU-KS4-D004": {
+      "domain_name": "Human Resources",
+      "clusters": [
+        {
+          "cluster_name": "Apply motivation theory and understand human resource management",
+          "cluster_type": "practice",
+          "concept_ids": ["BU-KS4-C004"],
+          "rationale": "Motivation theory and HRM is the sole concept in this domain, covering the full cycle of workforce management from recruitment through motivation theory to performance management. A single cluster correctly covers the domain's scope.",
+          "inspired_by": "GCSE Business: Human Resources domain"
+        }
+      ]
+    },
+    "BU-KS4-D005": {
+      "domain_name": "Finance",
+      "clusters": [
+        {
+          "cluster_name": "Analyse cash flow, profit and financial statements",
+          "cluster_type": "practice",
+          "concept_ids": ["BU-KS4-C003"],
+          "rationale": "Cash flow, profit and financial management is the sole concept in this domain and carries the highest teaching weight in the subject (5). It covers the critical distinction between cash flow and profit, financial planning through forecasting, and the interpretation of financial statements. A single cluster correctly represents the domain's focus.",
+          "inspired_by": "GCSE Business: Finance domain"
+        }
+      ]
+    },
+    "CO-KS34-D001": {
+      "domain_name": "Computer Science: Computational Thinking and Programming",
+      "clusters": [
+        {
+          "cluster_name": "Understand algorithms and use data structures in modular programs",
+          "cluster_type": "practice",
+          "concept_ids": ["CO-KS34-C001", "CO-KS34-C003"],
+          "rationale": "Algorithms (sorting, searching, complexity) and data structures with modular programming are explicitly co-taught: C001 lists C003 in its co_teach_hints. Classic algorithms are most meaningfully implemented and analysed using appropriate data structures and modular code, and these two concepts are always encountered together in the programming strand at KS3/4.",
+          "inspired_by": "NC Computing KS3: understand key algorithms; use data structures; design modular programs"
+        }
+      ]
+    },
+    "CO-KS34-D002": {
+      "domain_name": "Computer Systems and Hardware",
+      "clusters": [
+        {
+          "cluster_name": "Understand Boolean logic, binary representation and computer systems",
+          "cluster_type": "practice",
+          "concept_ids": ["CO-KS34-C002"],
+          "rationale": "Boolean logic and binary is the sole concept in this domain, underpinning both the mathematical foundations of computing and the architecture of digital hardware. A single cluster correctly covers all systems and hardware knowledge at KS3/4.",
+          "inspired_by": "NC Computing KS3: understand hardware and software components; Boolean logic; binary"
+        }
+      ]
+    },
+    "CO-KS34-D003": {
+      "domain_name": "Digital Literacy, Online Safety and Ethics",
+      "clusters": [
+        {
+          "cluster_name": "Evaluate the social and ethical impact of computing technology",
+          "cluster_type": "practice",
+          "concept_ids": ["CO-KS34-C004"],
+          "rationale": "Ethics, privacy and the social impact of computing is the sole concept in this domain at KS3/4. It covers both the practical digital literacy skills and the deeper ethical analysis of algorithmic decision-making, surveillance and AI that characterise computing citizenship at secondary level.",
+          "inspired_by": "NC Computing KS3: understand technology safely, responsibly; implications for individuals and society"
+        }
+      ]
+    },
+    "DT-KS3-D001": {
+      "domain_name": "Design",
+      "clusters": [
+        {
+          "cluster_name": "Apply user-centred design processes to develop and communicate solutions",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS3-C001"],
+          "rationale": "User-centred design is the sole concept in the KS3 Design domain. It integrates the full design process at this stage — research, ideation, communication, prototyping — around a central philosophy of designing for real users. A single cluster correctly represents the domain.",
+          "inspired_by": "NC DT KS3: design–make–evaluate cycle with user focus"
+        }
+      ]
+    },
+    "DT-KS3-D002": {
+      "domain_name": "Make",
+      "clusters": [
+        {
+          "cluster_name": "Use specialist making processes and select materials for complex products",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS3-C005", "DT-KS3-C006"],
+          "rationale": "Specialist making processes including CAM (C005) and material selection for complex products (C006) are the two making concepts at KS3. Selecting the right material (C006) is inseparable from choosing the right process to work with it (C005): laser cutting requires sheet materials; CNC routing requires suitable stock. They are naturally co-taught in practical making projects.",
+          "inspired_by": "NC DT KS3: use specialist tools, techniques, processes, equipment and machinery"
+        }
+      ]
+    },
+    "DT-KS3-D003": {
+      "domain_name": "Evaluate",
+      "clusters": [
+        {
+          "cluster_name": "Evaluate designs and products against ethical and sustainability criteria",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS3-C004"],
+          "rationale": "Ethical and sustainable design is the sole concept in the KS3 Evaluate domain, extending evaluation beyond functional criteria to include environmental impact, supply chain ethics and social responsibility — a key expansion of the evaluative skill set at secondary level.",
+          "inspired_by": "NC DT KS3: analyse the work of past and present professionals; recognise the values and ethics associated with design"
+        }
+      ]
+    },
+    "DT-KS3-D004": {
+      "domain_name": "Technical Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Understand materials science and apply knowledge of material properties",
+          "cluster_type": "introduction",
+          "concept_ids": ["DT-KS3-C002"],
+          "rationale": "Materials science and properties (C002) provides the scientific foundation at KS3 that underpins both material selection for making and the understanding of how embedded computing interacts with the physical world. It is appropriately introduced before the more complex embedded computing concept.",
+          "inspired_by": "NC DT KS3: technical knowledge — materials"
+        },
+        {
+          "cluster_name": "Design and build products with embedded computing and electronic systems",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS3-C003"],
+          "rationale": "Embedded computing and product intelligence (C003) represents the high-complexity technical knowledge at KS3 — programming microcontrollers and integrating sensors and actuators into designed products. It builds on materials science and extends KS2 computing control into sophisticated embedded systems.",
+          "inspired_by": "NC DT KS3: technical knowledge — computing and electronics"
+        }
+      ]
+    },
+    "DT-KS3-D005": {
+      "domain_name": "Cooking and Nutrition",
+      "clusters": [
+        {
+          "cluster_name": "Apply nutrition science and develop advanced culinary skills",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS3-C007", "DT-KS3-C008"],
+          "rationale": "Nutrition science (C007) and advanced cooking techniques (C008) are explicitly co-taught: C007 lists C008 in its co_teach_hints. At KS3, pupils apply nutritional knowledge to the practical preparation of increasingly complex dishes, connecting the science of nutrients to the craft of cooking in every practical session.",
+          "inspired_by": "NC DT KS3: Cooking and Nutrition"
+        }
+      ]
+    },
+    "DT-KS4-D001": {
+      "domain_name": "Core Technical Principles",
+      "clusters": [
+        {
+          "cluster_name": "Apply knowledge of material properties and selection to design decisions",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS4-C001"],
+          "rationale": "Material properties and selection is the sole concept in the GCSE Core Technical Principles domain. It synthesises the materials knowledge accumulated across KS1–KS3 into a rigorous, examination-ready framework for evaluating and selecting materials against a product specification.",
+          "inspired_by": "GCSE DT: core technical principles — materials"
+        }
+      ]
+    },
+    "DT-KS4-D002": {
+      "domain_name": "Designing",
+      "clusters": [
+        {
+          "cluster_name": "Apply iterative design, human factors and ergonomics to develop inclusive products",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS4-C002", "DT-KS4-C003"],
+          "rationale": "Iterative design process (C002) and human factors/ergonomics/inclusive design (C003) are the two designing concepts at GCSE. The iterative cycle provides the process structure, while human factors and ergonomics provide the user-centred knowledge that drives design decisions within that cycle. Both are always active in the GCSE design portfolio.",
+          "inspired_by": "GCSE DT: designing — iterative process; human factors and ergonomics"
+        }
+      ]
+    },
+    "DT-KS4-D003": {
+      "domain_name": "Making",
+      "clusters": [
+        {
+          "cluster_name": "Use CAD/CAM and digital manufacturing to realise design solutions",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS4-C004"],
+          "rationale": "CAD/CAM and digital manufacturing is the sole making concept at GCSE, representing the high-level technical skill that encompasses designing in CAD software and executing production using computer-controlled manufacturing equipment — the dominant making paradigm at GCSE level.",
+          "inspired_by": "GCSE DT: making — CAD/CAM and specialist techniques"
+        }
+      ]
+    },
+    "DT-KS4-D004": {
+      "domain_name": "Evaluating",
+      "clusters": [
+        {
+          "cluster_name": "Evaluate products against specifications, user needs and sustainability criteria",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS4-C006", "DT-KS4-C007"],
+          "rationale": "Evaluation against specification (C006) and life cycle analysis/sustainability evaluation (C007) are the two evaluation concepts at GCSE and are naturally taught together: formal evaluation of a product against specification addresses how well it works for the user, while LCA addresses its broader environmental impact across the whole product life. Both are required in GCSE portfolio evaluation.",
+          "inspired_by": "GCSE DT: evaluating — against specification; life cycle thinking"
+        }
+      ]
+    },
+    "DT-KS4-D005": {
+      "domain_name": "Design in Context: Society, Culture and Environment",
+      "clusters": [
+        {
+          "cluster_name": "Understand sustainability and responsible design in social and environmental context",
+          "cluster_type": "practice",
+          "concept_ids": ["DT-KS4-C005"],
+          "rationale": "Sustainability and responsible design is the sole concept in this domain and carries the highest teaching weight in GCSE DT (5). It synthesises the contextual, ethical and environmental dimensions of design that extend beyond the technical to address design's role in a sustainable future.",
+          "inspired_by": "GCSE DT: design in context — sustainability and responsible design"
+        }
+      ]
+    },
+    "FP-KS4-D001": {
+      "domain_name": "Food, Nutrition and Health",
+      "clusters": [
+        {
+          "cluster_name": "Understand nutrients, analyse diets and plan for different life stages",
+          "cluster_type": "practice",
+          "concept_ids": ["FP-KS4-C001"],
+          "rationale": "Macronutrients, micronutrients and nutritional analysis is the sole concept in this domain and forms the scientific core of GCSE Food Preparation and Nutrition. It encompasses nutrient functions, dietary analysis, life stages and diet-disease relationships — the central knowledge strand of the subject.",
+          "inspired_by": "GCSE Food Preparation and Nutrition: Food, Nutrition and Health"
+        }
+      ]
+    },
+    "FP-KS4-D002": {
+      "domain_name": "Food Science",
+      "clusters": [
+        {
+          "cluster_name": "Understand the functional properties of food components during cooking",
+          "cluster_type": "practice",
+          "concept_ids": ["FP-KS4-C002"],
+          "rationale": "Functional properties of food is the sole concept in this domain (and carries the highest teaching weight in the subject, 5). It covers the scientific explanation of how proteins, fats and carbohydrates behave during cooking — the food science dimension of GCSE Food Preparation and Nutrition.",
+          "inspired_by": "GCSE Food Preparation and Nutrition: Food Science"
+        }
+      ]
+    },
+    "FP-KS4-D003": {
+      "domain_name": "Food Safety",
+      "clusters": [
+        {
+          "cluster_name": "Apply food safety principles and HACCP to prevent food-borne illness",
+          "cluster_type": "practice",
+          "concept_ids": ["FP-KS4-C003"],
+          "rationale": "Food microbiology and HACCP is the sole concept in this domain (teaching weight 5). It covers the science of bacterial growth, the major food-borne pathogens, and the systematic HACCP approach to food safety management — the safety strand of the GCSE specification.",
+          "inspired_by": "GCSE Food Preparation and Nutrition: Food Safety"
+        }
+      ]
+    },
+    "FP-KS4-D004": {
+      "domain_name": "Food Choice",
+      "clusters": [
+        {
+          "cluster_name": "Evaluate sensory properties of food and analyse factors influencing food choice",
+          "cluster_type": "practice",
+          "concept_ids": ["FP-KS4-C004"],
+          "rationale": "Sensory evaluation and food choice is the sole concept in this domain. It integrates the practical skill of conducting formal sensory tests with the broader analytical understanding of cultural, religious, economic and ethical factors that shape what people eat.",
+          "inspired_by": "GCSE Food Preparation and Nutrition: Food Choice"
+        }
+      ]
+    },
+    "FP-KS4-D005": {
+      "domain_name": "Food Provenance and Sustainability",
+      "clusters": [
+        {
+          "cluster_name": "Evaluate the sustainability and environmental impact of food production systems",
+          "cluster_type": "practice",
+          "concept_ids": ["FP-KS4-C005"],
+          "rationale": "Sustainability of food sources and food provenance is the sole concept in this domain. It covers the full journey of food from farm to plate and the environmental, ethical and social implications of different food production systems — the provenance and sustainability strand of the GCSE.",
+          "inspired_by": "GCSE Food Preparation and Nutrition: Food Provenance and Sustainability"
+        }
+      ]
+    },
+    "LA-KS3-D001": {
+      "domain_name": "Listening and Speaking",
+      "clusters": [
+        {
+          "cluster_name": "Develop extended oral communication in the target language",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS3-C002"],
+          "rationale": "Extended oral communication is the sole concept in the KS3 Listening and Speaking domain. It encompasses the ability to initiate and sustain conversations beyond simple exchanges, developing the fluency and spontaneity that characterise communicative competence at secondary level.",
+          "inspired_by": "MFL KS3: listen attentively; speak coherently and confidently"
+        }
+      ]
+    },
+    "LA-KS3-D002": {
+      "domain_name": "Reading",
+      "clusters": [
+        {
+          "cluster_name": "Read authentic and literary texts with cultural understanding",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS3-C003", "LA-KS3-C005"],
+          "rationale": "Reading authentic and literary texts (C003) and language and culture (C005) are explicitly co-taught: C003 lists C005 in its co_teach_hints. Reading authentic texts in a foreign language is the primary vehicle through which cultural knowledge is acquired — you cannot truly engage with the texts without understanding the cultural context, and the cultural content gives meaning to the language encountered.",
+          "inspired_by": "MFL KS3: read and show comprehension of original and adapted materials; appreciate stories, songs, poems and texts in the original language"
+        }
+      ]
+    },
+    "LA-KS3-D003": {
+      "domain_name": "Writing",
+      "clusters": [
+        {
+          "cluster_name": "Produce extended writing and translation in the target language",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS3-C006"],
+          "rationale": "Extended writing and translation is the sole concept in the KS3 Writing domain, covering the progression from short written responses to extended prose and the additional skill of translation — both directions of which require high grammatical accuracy and broad vocabulary.",
+          "inspired_by": "MFL KS3: write at varying length; translate short written text"
+        }
+      ]
+    },
+    "LA-KS3-D004": {
+      "domain_name": "Grammar, Vocabulary and Language Knowledge",
+      "clusters": [
+        {
+          "cluster_name": "Develop grammatical accuracy and expand vocabulary range and register",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS3-C001", "LA-KS3-C004"],
+          "rationale": "Grammatical system and structure (C001) and vocabulary range, precision and register (C004) are the two enabling knowledge concepts at KS3. They are always taught together — grammar provides the rules for combining words, while vocabulary provides the words themselves — and together they underpin all four language skills at this stage.",
+          "inspired_by": "MFL KS3: grammar knowledge; vocabulary range and precision"
+        }
+      ]
+    },
+    "LA-KS4-D001": {
+      "domain_name": "Listening and Responding",
+      "clusters": [
+        {
+          "cluster_name": "Understand and respond to authentic spoken language at GCSE level",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS4-C006"],
+          "rationale": "Listening to authentic spoken language is the sole concept in this GCSE domain. At this level, pupils must process native-speaker speech including varied registers, speeds and accents — a qualitative step up from KS3 that requires this distinct treatment.",
+          "inspired_by": "GCSE MFL: Listening and Responding"
+        }
+      ]
+    },
+    "LA-KS4-D002": {
+      "domain_name": "Speaking: Individual Presentation and Interaction",
+      "clusters": [
+        {
+          "cluster_name": "Engage in spontaneous interaction using communication strategies",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS4-C003"],
+          "rationale": "Spontaneous interaction and communication strategies is the sole concept in this GCSE domain. It focuses on the real-time, unprepared speaking required in the GCSE speaking examination — the most demanding spoken language skill at this level.",
+          "inspired_by": "GCSE MFL: Speaking — individual presentation and role play"
+        }
+      ]
+    },
+    "LA-KS4-D003": {
+      "domain_name": "Reading and Responding",
+      "clusters": [
+        {
+          "cluster_name": "Apply reading strategies to comprehend authentic texts in the target language",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS4-C004"],
+          "rationale": "Reading strategies and authentic text comprehension is the sole concept in this GCSE domain. It covers the purposeful cognitive approaches needed to extract meaning efficiently from a range of authentic texts under examination conditions — a distinct skill set from classroom reading practice.",
+          "inspired_by": "GCSE MFL: Reading and Responding"
+        }
+      ]
+    },
+    "LA-KS4-D004": {
+      "domain_name": "Writing",
+      "clusters": [
+        {
+          "cluster_name": "Produce extended written work and translate with accuracy in the target language",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS4-C007"],
+          "rationale": "Extended written production and translation is the sole concept in the GCSE Writing domain. It encompasses both the productive writing skill (generating extended prose across a range of topics and registers) and translation (rendering meaning accurately between languages) — the two written skills assessed at GCSE.",
+          "inspired_by": "GCSE MFL: Writing"
+        }
+      ]
+    },
+    "LA-KS4-D005": {
+      "domain_name": "Grammar, Vocabulary and Cultural Understanding",
+      "clusters": [
+        {
+          "cluster_name": "Understand tense and aspect systems and use grammatical structures accurately",
+          "cluster_type": "introduction",
+          "concept_ids": ["LA-KS4-C001", "LA-KS4-C002"],
+          "rationale": "Tense and aspect systems (C001, teaching weight 6) and grammatical accuracy and range (C002) are the two core grammatical knowledge concepts at GCSE and are always taught together: mastering tense forms (C001) is the most important aspect of achieving grammatical accuracy (C002), and accuracy develops through repeated practice of tense formation across all four skills.",
+          "inspired_by": "GCSE MFL: grammar — tense, mood and aspect; grammatical accuracy"
+        },
+        {
+          "cluster_name": "Develop cultural awareness and use appropriate register in the target language",
+          "cluster_type": "practice",
+          "concept_ids": ["LA-KS4-C005"],
+          "rationale": "Register, cultural understanding and intercultural awareness (C005) is a distinct higher-order concept at GCSE that goes beyond grammatical accuracy to encompass the sociolinguistic knowledge of what to say, to whom and how — a key examination differentiator at GCSE.",
+          "inspired_by": "GCSE MFL: cultural understanding and intercultural awareness"
+        }
+      ]
+    },
+    "MS-KS4-D001": {
+      "domain_name": "Media Language",
+      "clusters": [
+        {
+          "cluster_name": "Analyse how media language creates meaning through semiotics, genre and narrative",
+          "cluster_type": "practice",
+          "concept_ids": ["MS-KS4-C001", "MS-KS4-C003"],
+          "rationale": "Semiotics (C001) and genre, narrative and convention (C003) are the two media language concepts and are naturally co-taught: semiotic codes (the signs and conventions that create meaning) operate within genre systems (which define what codes are appropriate to what type of text). Analysing a media text always involves both simultaneously.",
+          "inspired_by": "GCSE Media Studies: Media Language — semiotics; narrative; genre"
+        }
+      ]
+    },
+    "MS-KS4-D002": {
+      "domain_name": "Media Representation",
+      "clusters": [
+        {
+          "cluster_name": "Analyse how media represents identity, ideology and social groups",
+          "cluster_type": "practice",
+          "concept_ids": ["MS-KS4-C002"],
+          "rationale": "Representation, ideology and stereotyping is the sole concept in this domain (teaching weight 5). It covers the full theoretical framework for analysing how media constructs and perpetuates versions of social reality — one of the most significant analytical tools in the GCSE specification.",
+          "inspired_by": "GCSE Media Studies: Media Representation"
+        }
+      ]
+    },
+    "MS-KS4-D003": {
+      "domain_name": "Media Industries",
+      "clusters": [
+        {
+          "cluster_name": "Understand how media industries, ownership and regulation shape content",
+          "cluster_type": "practice",
+          "concept_ids": ["MS-KS4-C005"],
+          "rationale": "Media industries, ownership and regulation is the sole concept in this domain (teaching weight 5). It covers the institutional contexts — commercial structures, ownership concentrations, regulatory frameworks — within which media texts are produced and distributed.",
+          "inspired_by": "GCSE Media Studies: Media Industries"
+        }
+      ]
+    },
+    "MS-KS4-D004": {
+      "domain_name": "Media Audiences",
+      "clusters": [
+        {
+          "cluster_name": "Evaluate audience theory and how audiences engage with media texts",
+          "cluster_type": "practice",
+          "concept_ids": ["MS-KS4-C004"],
+          "rationale": "Audience theory and reception is the sole concept in this domain (teaching weight 5). It covers the range of theories — from hypodermic needle through uses and gratifications to reception theory — that explain how audiences are targeted by and respond to media content.",
+          "inspired_by": "GCSE Media Studies: Media Audiences"
+        }
+      ]
+    },
+    "MS-KS4-D005": {
+      "domain_name": "Media Contexts",
+      "clusters": [
+        {
+          "cluster_name": "Analyse media texts in their historical, social and cultural contexts",
+          "cluster_type": "practice",
+          "concept_ids": ["MS-KS4-C006"],
+          "rationale": "Historical, social and cultural contexts of media is the sole concept in this domain (teaching weight 5). It provides the contextual analytical framework through which media texts are understood as products of specific historical moments, social conditions and cultural environments — essential for evaluating why texts look and mean what they do.",
+          "inspired_by": "GCSE Media Studies: Media Contexts"
+        }
+      ]
+    }
+  }
+}

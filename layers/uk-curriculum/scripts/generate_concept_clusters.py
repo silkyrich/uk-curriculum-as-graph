@@ -2,23 +2,24 @@
 """
 Generate ConceptCluster nodes from the enriched UK Curriculum graph.
 
-Produces small, conservative clusters as a default starting scaffold.
-Teachers will rearrange and customise — the algorithm provides structure,
-not prescription. Follows CC Math's Domain→Cluster→Standard pattern.
+For domains that have curated definitions in
+  layers/uk-curriculum/data/cluster_definitions/*.json
+those definitions are used verbatim for the content clusters
+(introduction + practice). Consolidation and assessment clusters
+are still inserted automatically by the algorithm.
 
-Respects:
-  - topological ordering (prerequisites before dependents)
-  - co-teaching pairs (CO_TEACHES pairs stay together, but capped at 4)
-  - domain structure_type (hierarchical, sequential, developmental, mixed)
-  - keystone concepts (trigger assessment checkpoints)
-  - consolidation / assessment insertion heuristics
+For domains without curated definitions, falls back to algorithmic
+clustering using topological order, co-teaching signals, and
+keystone heuristics.
 
 Usage:
   python3 generate_concept_clusters.py           # create clusters
-  python3 generate_concept_clusters.py --clean    # delete existing clusters first
+  python3 generate_concept_clusters.py --clean    # delete existing first
+  python3 generate_concept_clusters.py --stats    # show coverage summary
 """
 
 import argparse
+import json
 import math
 import sys
 from collections import defaultdict, deque
@@ -29,6 +30,36 @@ sys.path.insert(0, str(PROJECT_ROOT / "core" / "scripts"))
 
 from neo4j import GraphDatabase
 from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
+
+CLUSTER_DEFS_DIR = PROJECT_ROOT / "layers" / "uk-curriculum" / "data" / "cluster_definitions"
+
+
+# ── Cluster definition loader ─────────────────────────────────────────────────
+
+def load_cluster_definitions():
+    """Load all curated cluster definitions from cluster_definitions/*.json.
+
+    Returns a dict keyed by domain_id:
+      { "MA-Y3-D001": [ {cluster_name, cluster_type, concept_ids, rationale}, ... ] }
+    """
+    definitions = {}
+    if not CLUSTER_DEFS_DIR.exists():
+        return definitions
+
+    for def_file in sorted(CLUSTER_DEFS_DIR.glob("*.json")):
+        try:
+            with open(def_file) as f:
+                data = json.load(f)
+        except Exception as e:
+            print(f"  WARN: Could not load {def_file.name}: {e}")
+            continue
+
+        for domain_id, domain_data in data.get("domains", {}).items():
+            clusters = domain_data.get("clusters", [])
+            if clusters:
+                definitions[domain_id] = clusters
+
+    return definitions
 
 
 # ── Graph helpers ────────────────────────────────────────────────────────────
@@ -332,9 +363,13 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
         lesson_count = sum(weights) if weights else 1
         teaching_weeks = max(1, round(lesson_count / 3, 1))
 
-        cluster_name = f"{cluster['cluster_type'].title()}: {', '.join(concept_map[cid]['concept_name'] for cid in concept_ids[:3] if cid in concept_map)}"
-        if len(concept_ids) > 3:
-            cluster_name += f" (+{len(concept_ids) - 3})"
+        # Use curated name if provided; otherwise auto-generate from concept names
+        if cluster.get("cluster_name"):
+            cluster_name = cluster["cluster_name"]
+        else:
+            cluster_name = f"{cluster['cluster_type'].title()}: {', '.join(concept_map[cid]['concept_name'] for cid in concept_ids[:3] if cid in concept_map)}"
+            if len(concept_ids) > 3:
+                cluster_name += f" (+{len(concept_ids) - 3})"
 
         # Create cluster node
         session.run("""
@@ -345,6 +380,9 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
                 cc.lesson_count = $lesson_count,
                 cc.complexity_range = $complexity_range,
                 cc.is_keystone_cluster = $is_keystone_cluster,
+                cc.rationale = $rationale,
+                cc.inspired_by = $inspired_by,
+                cc.is_curated = $is_curated,
                 cc.display_category = 'UK Curriculum',
                 cc.display_color = '#6366F1',
                 cc.display_icon = 'view_module',
@@ -357,6 +395,9 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
             lesson_count=lesson_count,
             complexity_range=complexity_range,
             is_keystone_cluster=cluster["is_keystone_cluster"],
+            rationale=cluster.get("rationale", ""),
+            inspired_by=cluster.get("inspired_by", ""),
+            is_curated=bool(cluster.get("cluster_name")),
         )
         stats["clusters_created"] += 1
         stats[f"type_{cluster['cluster_type']}"] += 1
@@ -402,59 +443,203 @@ def clean_existing_clusters(session):
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
+def build_curated_clusters(curated_defs, concepts, prereq_edges, co_teach_edges, structure_type):
+    """Build cluster list from curated definitions.
+
+    Uses the curated concept_ids and cluster_name/type/rationale but still
+    runs consolidation and assessment insertion so the structural clusters
+    are added automatically.
+
+    Any concepts not covered by the curated definitions are grouped into a
+    final algorithmic catch-all cluster so nothing is silently dropped.
+    """
+    concept_map = {c["concept_id"]: c for c in concepts}
+    covered_ids = set()
+
+    content_clusters = []
+    for defn in curated_defs:
+        valid_ids = [cid for cid in defn.get("concept_ids", []) if cid in concept_map]
+        if not valid_ids:
+            continue
+        covered_ids.update(valid_ids)
+        has_keystone = any(concept_map[cid]["is_keystone"] for cid in valid_ids)
+        content_clusters.append({
+            "concept_ids": valid_ids,
+            "cluster_type": defn.get("cluster_type", "practice"),
+            "cluster_name": defn.get("cluster_name", ""),
+            "rationale": defn.get("rationale", ""),
+            "inspired_by": defn.get("inspired_by", ""),
+            "is_keystone_cluster": has_keystone,
+        })
+
+    # Any concepts not in any curated cluster → algorithmic catch-all cluster
+    uncovered = [cid for cid in concept_map if cid not in covered_ids]
+    if uncovered:
+        topo = topological_sort(uncovered, prereq_edges)
+        # Pack into clusters of max 4
+        for i in range(0, len(uncovered), 4):
+            chunk = topo[i:i + 4]
+            has_keystone = any(concept_map[cid]["is_keystone"] for cid in chunk)
+            content_clusters.append({
+                "concept_ids": chunk,
+                "cluster_type": "practice",
+                "cluster_name": "",  # auto-named
+                "rationale": "",
+                "inspired_by": "",
+                "is_keystone_cluster": has_keystone,
+            })
+
+    if not content_clusters:
+        return []
+
+    # Run consolidation and assessment insertion (same as algorithmic path)
+    # Re-use the tail of cluster_concepts by building a minimal concepts list
+    # from the curated groupings and re-running the insertion logic directly.
+
+    # ── Insert consolidation clusters ──
+    total_content = len(content_clusters)
+    if total_content >= 4:
+        num_consolidation = max(1, round(total_content * 0.18))
+        step = max(3, total_content // num_consolidation)
+        enriched = []
+        inserted = 0
+        for i, cluster in enumerate(content_clusters):
+            enriched.append(cluster)
+            if (i + 1) % step == 0 and i > 0 and inserted < num_consolidation:
+                prev_ids = []
+                for prev in enriched[-(min(2, len(enriched))):]:
+                    if prev["cluster_type"] != "consolidation":
+                        prev_ids.extend(prev["concept_ids"])
+                if prev_ids:
+                    enriched.append({
+                        "concept_ids": prev_ids[:4],
+                        "cluster_type": "consolidation",
+                        "cluster_name": "",
+                        "rationale": "",
+                        "inspired_by": "",
+                        "is_keystone_cluster": False,
+                    })
+                    inserted += 1
+    else:
+        enriched = list(content_clusters)
+
+    # ── Insert assessment clusters ──
+    final = []
+    cumulative_weight = 0
+    last_assessment_weight = 0
+    assessment_gap = 10
+    for cluster in enriched:
+        final.append(cluster)
+        weight = sum(
+            concept_map[cid]["teaching_weight"]
+            for cid in cluster["concept_ids"]
+            if cid in concept_map
+        )
+        cumulative_weight += weight
+        if cluster["cluster_type"] in ("assessment", "consolidation"):
+            continue
+        needs_assessment = (
+            cluster["is_keystone_cluster"]
+            and (cumulative_weight - last_assessment_weight >= 4)
+        ) or (
+            cumulative_weight - last_assessment_weight >= assessment_gap
+        )
+        if needs_assessment:
+            final.append({
+                "concept_ids": cluster["concept_ids"],
+                "cluster_type": "assessment",
+                "cluster_name": "",
+                "rationale": "",
+                "inspired_by": "",
+                "is_keystone_cluster": cluster["is_keystone_cluster"],
+            })
+            last_assessment_weight = cumulative_weight
+
+    return final
+
+
 def main():
     parser = argparse.ArgumentParser(description="Generate ConceptCluster nodes")
     parser.add_argument("--clean", action="store_true",
                         help="Delete existing clusters before generating")
+    parser.add_argument("--stats", action="store_true",
+                        help="Show curated vs algorithmic coverage summary and exit")
     args = parser.parse_args()
 
     print("=" * 60)
     print("UK Curriculum: Generate ConceptCluster nodes")
     print("=" * 60)
 
+    # Load curated definitions
+    print("\n--- Loading curated cluster definitions ---")
+    curated = load_cluster_definitions()
+    print(f"  Curated domains: {len(curated)}")
+
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
     stats = defaultdict(int)
 
     try:
         with driver.session() as session:
-            if args.clean:
-                print("\n--- Cleaning existing clusters ---")
-                clean_existing_clusters(session)
-
             print("\n--- Loading domains ---")
             domains = load_domains(session)
             print(f"  Domains with concepts: {len(domains)}")
+
+            if args.stats:
+                # Coverage report only — no graph changes
+                curated_ids = set(curated.keys())
+                all_ids = {d["domain_id"] for d in domains}
+                done = curated_ids & all_ids
+                todo = all_ids - curated_ids
+                print(f"\n  Curated:     {len(done)} / {len(all_ids)} domains")
+                print(f"  Algorithmic: {len(todo)} domains still need curating")
+                driver.close()
+                return
+
+            if args.clean:
+                print("\n--- Cleaning existing clusters ---")
+                clean_existing_clusters(session)
 
             for domain in domains:
                 domain_id = domain["domain_id"]
                 structure_type = domain["structure_type"]
 
-                # Load data for this domain
                 concepts = load_domain_concepts(session, domain_id)
                 if not concepts:
                     continue
 
+                concept_map = {c["concept_id"]: c for c in concepts}
                 prereq_edges = load_domain_prerequisites(session, domain_id)
                 co_teach_edges = load_domain_co_teaches(session, domain_id)
-                concept_map = {c["concept_id"]: c for c in concepts}
 
-                # Cluster
-                clusters = cluster_concepts(
-                    concepts, prereq_edges, co_teach_edges, structure_type
-                )
+                if domain_id in curated:
+                    # ── Curated path ──────────────────────────────────────
+                    clusters = build_curated_clusters(
+                        curated[domain_id], concepts,
+                        prereq_edges, co_teach_edges, structure_type
+                    )
+                    stats["domains_curated"] += 1
+                else:
+                    # ── Algorithmic fallback ──────────────────────────────
+                    clusters = cluster_concepts(
+                        concepts, prereq_edges, co_teach_edges, structure_type
+                    )
+                    stats["domains_algorithmic"] += 1
 
                 if clusters:
                     write_clusters_to_graph(
                         session, domain_id, clusters, concept_map, stats
                     )
                     stats["domains_processed"] += 1
-                    print(f"  {domain_id}: {len(concepts)} concepts -> {len(clusters)} clusters")
+                    source = "curated" if domain_id in curated else "algo"
+                    print(f"  {domain_id} [{source}]: {len(concepts)} concepts -> {len(clusters)} clusters")
 
         # ── Summary ──────────────────────────────────────────────────────
         print("\n" + "=" * 60)
         print("SUMMARY")
         print("=" * 60)
         print(f"  Domains processed:      {stats['domains_processed']}")
+        print(f"    - curated:            {stats['domains_curated']}")
+        print(f"    - algorithmic:        {stats['domains_algorithmic']}")
         print(f"  Clusters created:       {stats['clusters_created']}")
         print(f"    - introduction:       {stats['type_introduction']}")
         print(f"    - practice:           {stats['type_practice']}")
