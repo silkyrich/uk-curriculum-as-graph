@@ -239,9 +239,25 @@ Note: Understanding the World and Expressive Arts and Design (ELGs 13-17) are **
 
 **National GLD statistics (2024/25):** 68.3% of children achieved a good level of development.
 
+### Reception Baseline Assessment (RBA)
+
+Administered at the start of Reception year. Used for school accountability (progress measure to KS2) but results are **not** shared with parents. This is a DfE accountability tool, not a teaching tool.
+
 ### Progress Check at Age 2
 
 Between ages 2-3, practitioners must review children's progress and provide parents with a short written summary focusing on the three prime areas.
+
+---
+
+## Characteristics of Effective Learning
+
+Alongside the 7 areas, the EYFS framework identifies three cross-cutting **Characteristics of Effective Learning** that describe *how* children learn (assessed alongside the ELGs in the EYFS Profile):
+
+1. **Playing and Exploring** (engagement) — finding out and exploring, playing with what they know, being willing to have a go
+2. **Active Learning** (motivation) — being involved and concentrating, keeping trying, enjoying achieving what they set out to do
+3. **Creating and Thinking Critically** (thinking) — having their own ideas, making links, choosing ways to do things
+
+These are analogous to the epistemic skills layer in the graph (Working Scientifically, Mathematical Reasoning, etc.) — they describe metacognitive and dispositional qualities rather than content knowledge.
 
 ---
 
