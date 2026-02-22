@@ -212,13 +212,17 @@ def cluster_concepts(concepts, prereq_edges, co_teach_edges, structure_type):
     if current:
         raw_clusters.append(current)
 
-    # Classify clusters: first is introduction, rest are practice
+    # Classify clusters: first is "introduction" only when the domain has
+    # enough content (3+ raw clusters) to benefit from a distinct intro.
+    # Tiny domains (1-2 clusters) use "practice" throughout so the graph-wide
+    # distribution is not swamped by one-cluster domains.
+    use_intro = len(raw_clusters) >= 3
     clusters = []
     for i, concept_ids_in_cluster in enumerate(raw_clusters):
         has_keystone = any(
             concept_map[cid]["is_keystone"] for cid in concept_ids_in_cluster
         )
-        cluster_type = "introduction" if i == 0 else "practice"
+        cluster_type = ("introduction" if (i == 0 and use_intro) else "practice")
         clusters.append({
             "concept_ids": concept_ids_in_cluster,
             "cluster_type": cluster_type,

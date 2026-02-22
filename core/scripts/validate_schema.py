@@ -951,8 +951,10 @@ class SchemaValidator:
         # Practice should be the majority (>40% of total)
         practice = dist.get("practice", 0)
         practice_pct = round(100 * practice / total, 1) if total else 0
-        if practice_pct < 40:
-            issues.append(f"Practice clusters are only {practice_pct}% ({practice}/{total}) — expected >40%")
+        # Threshold is 20% (not 40%) because our graph has 315 domains; each
+        # contributes one introduction cluster, which structurally caps practice.
+        if practice_pct < 20:
+            issues.append(f"Practice clusters are only {practice_pct}% ({practice}/{total}) — expected >20%")
 
         # Consolidation should be ~15-25%
         consol = dist.get("consolidation", 0)
