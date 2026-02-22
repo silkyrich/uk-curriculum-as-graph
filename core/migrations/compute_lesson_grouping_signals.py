@@ -70,11 +70,11 @@ def run_migration():
             MATCH (d:Domain)-[:HAS_CONCEPT]->(c1:Concept)
             MATCH (d)-[:HAS_CONCEPT]->(c2:Concept)
             WHERE c1 <> c2
+              AND elementId(c1) < elementId(c2)
               AND (   (c1.concept_name CONTAINS 'addition' AND c2.concept_name CONTAINS 'subtraction')
                    OR (c1.concept_name CONTAINS 'multiplication' AND c2.concept_name CONTAINS 'division')
                    OR (c1.concept_name CONTAINS 'expanding' AND c2.concept_name CONTAINS 'factorising')
                    OR (c1.concept_name CONTAINS 'encoding' AND c2.concept_name CONTAINS 'decoding')
-                   OR (c1.concept_name CONTAINS 'reading' AND c2.concept_name CONTAINS 'writing')
               )
             MERGE (c1)-[r:CO_TEACHES]->(c2)
             SET r.reason = 'inverse_operations', r.strength = 0.9, r.source = 'inferred'

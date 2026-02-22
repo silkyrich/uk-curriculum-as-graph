@@ -452,23 +452,20 @@ class LayerImporter:
 - Visualization: ConceptCluster styled (Indigo-500, view_module icon) + name mapping
 - No learner data — all nodes are curriculum design metadata (same tier as complexity_level)
 
-✅ **In Aura cloud database — clean full import (2026-02-21):**
+✅ **In Aura cloud database — concept grouping fully active (2026-02-22):**
 - Instance: education-graphs (6981841e)
-- **~4,060 total nodes** (post-enrichment; verify with `MATCH (n) RETURN count(n)`)
+- **~5,600+ total nodes** including ConceptClusters
+- 1,298 Concept nodes enriched with `teaching_weight` + `co_teach_hints`
+- 1,827 CO_TEACHES relationships (extracted + inferred inverse-operation pairs)
+- 776 ConceptCluster nodes (introduction, practice, consolidation, assessment types)
 - Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
 - 5 Bloom perspectives uploaded and active
 
 ✅ **All extraction gaps filled (2026-02-22):**
-- **0 domains with no concepts** across all 315 domains, KS1–KS4 (4,856 total nodes, 1,298 concepts, 1,385 prerequisites)
+- **0 domains with no concepts** across all 315 domains, KS1–KS4
 - Geography place knowledge KS1-KS3, Languages reading/writing/listening KS2-KS4 filled
 - MA-Y5 addition/subtraction + statistics domains fixed (missing domain_id assignments)
 - GE-KS3 geographical skills, Chemistry analysis, Business operations, Media contexts, RS practices filled
-
-🔄 **Needs reimport to activate concept grouping layer:**
-- Reimport curriculum to get `teaching_weight` + `co_teach_hints` into graph
-- Run `compute_lesson_grouping_signals.py` migration for `is_keystone` + `CO_TEACHES`
-- Run `generate_concept_clusters.py` to create ConceptCluster nodes (~300-500 expected)
-- Run visualization scripts to style + name cluster nodes
 
 ✅ **Compliance framework (2026-02-20):**
 - Data classification spec (`core/compliance/DATA_CLASSIFICATION.md`)

@@ -66,6 +66,13 @@ SET n.display_color = '#3B82F6',
     n.display_category = 'UK Curriculum',
     n.display_size = 2;
 
+// ConceptCluster - UK Curriculum
+MATCH (n:ConceptCluster)
+SET n.display_color = '#6366F1',
+    n.display_icon = 'view_module',
+    n.display_category = 'UK Curriculum',
+    n.display_size = 2;
+
 // SourceDocument - Structure
 MATCH (n:SourceDocument)
 SET n.display_color = '#6B7280',

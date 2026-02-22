@@ -812,7 +812,7 @@ class SchemaValidator:
         self.add(ValidationResult("is_keystone consistency", status, total, issues))
 
     def check_co_teaches_integrity(self):
-        """CO_TEACHES should connect Concepts in the same domain."""
+        """CO_TEACHES should connect Concepts in the same domain (cross-domain is WARN)."""
         records = self.run("""
             MATCH (c1:Concept)-[r:CO_TEACHES]->(c2:Concept)
             WHERE NOT EXISTS {
@@ -824,7 +824,8 @@ class SchemaValidator:
         """)
         total = self.scalar("MATCH ()-[r:CO_TEACHES]->() RETURN count(r)") or 0
         issues = [f"CO_TEACHES {r['src']} -> {r['tgt']} cross-domain" for r in records]
-        status = "FAIL" if issues else "PASS"
+        # Cross-domain within same programme is valid teaching advice, not a data error
+        status = "WARN" if issues else "PASS"
         self.add(ValidationResult("CO_TEACHES same-domain integrity", status, total, issues))
 
     def check_concept_cluster_completeness(self):
@@ -895,6 +896,83 @@ class SchemaValidator:
         chain_count = self.scalar("MATCH ()-[r:SEQUENCED_AFTER]->() RETURN count(r)") or 0
         status = "FAIL" if issues else "PASS"
         self.add(ValidationResult("Cluster SEQUENCED_AFTER chain", status, chain_count, issues))
+
+    def check_cluster_max_size(self):
+        """No cluster should group more than 6 concepts (skipped if none exist)."""
+        total = self.scalar("MATCH (cc:ConceptCluster) RETURN count(cc)") or 0
+        if total == 0:
+            self.add(ValidationResult("Cluster max size ≤6", "PASS", 0,
+                                      ["No ConceptCluster nodes — generation pending"]))
+            return
+        records = self.run("""
+            MATCH (cc:ConceptCluster)-[:GROUPS]->(c:Concept)
+            WITH cc, count(c) AS sz
+            WHERE sz > 6
+            RETURN cc.cluster_id AS id, sz
+            ORDER BY sz DESC
+            LIMIT 10
+        """)
+        issues = [f"Cluster {r['id']} groups {r['sz']} concepts (max 6)" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("Cluster max size ≤6", status, total, issues))
+
+    def check_cluster_non_empty(self):
+        """Every cluster must group at least 1 concept via GROUPS (skipped if none exist)."""
+        total = self.scalar("MATCH (cc:ConceptCluster) RETURN count(cc)") or 0
+        if total == 0:
+            self.add(ValidationResult("Cluster non-empty", "PASS", 0,
+                                      ["No ConceptCluster nodes — generation pending"]))
+            return
+        records = self.run("""
+            MATCH (cc:ConceptCluster)
+            WHERE NOT (cc)-[:GROUPS]->(:Concept)
+            RETURN cc.cluster_id AS id, cc.cluster_type AS ctype
+            LIMIT 10
+        """)
+        issues = [f"Cluster {r['id']} ({r['ctype']}) has no GROUPS relationships" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("Cluster non-empty", status, total, issues))
+
+    def check_cluster_type_distribution(self):
+        """Cluster type distribution should be reasonable (skipped if none exist)."""
+        total = self.scalar("MATCH (cc:ConceptCluster) RETURN count(cc)") or 0
+        if total == 0:
+            self.add(ValidationResult("Cluster type distribution", "PASS", 0,
+                                      ["No ConceptCluster nodes — generation pending"]))
+            return
+        records = self.run("""
+            MATCH (cc:ConceptCluster)
+            RETURN cc.cluster_type AS ctype, count(cc) AS cnt
+            ORDER BY cnt DESC
+        """)
+        dist = {r["ctype"]: r["cnt"] for r in records}
+        issues = []
+
+        # Practice should be the majority (>40% of total)
+        practice = dist.get("practice", 0)
+        practice_pct = round(100 * practice / total, 1) if total else 0
+        if practice_pct < 40:
+            issues.append(f"Practice clusters are only {practice_pct}% ({practice}/{total}) — expected >40%")
+
+        # Consolidation should be ~15-25%
+        consol = dist.get("consolidation", 0)
+        consol_pct = round(100 * consol / total, 1) if total else 0
+        if consol_pct > 30:
+            issues.append(f"Consolidation clusters are {consol_pct}% ({consol}/{total}) — expected <30%")
+
+        # Assessment should be ~10-20%
+        assess = dist.get("assessment", 0)
+        assess_pct = round(100 * assess / total, 1) if total else 0
+        if assess_pct > 30:
+            issues.append(f"Assessment clusters are {assess_pct}% ({assess}/{total}) — expected <30%")
+
+        # Report distribution in detail
+        dist_str = ", ".join(f"{k}: {v} ({round(100*v/total,1)}%)" for k, v in sorted(dist.items()))
+        if not issues:
+            issues = [f"Distribution: {dist_str}"]
+
+        status = "WARN" if any("expected" in i for i in issues) else "PASS"
+        self.add(ValidationResult("Cluster type distribution", status, total, issues))
 
     # =========================================================================
     # K. Enrichment coverage (DB-level)
@@ -1085,6 +1163,9 @@ class SchemaValidator:
             self.check_concept_cluster_completeness,
             self.check_concept_cluster_coverage,
             self.check_cluster_sequencing,
+            self.check_cluster_max_size,
+            self.check_cluster_non_empty,
+            self.check_cluster_type_distribution,
             # K. Enrichment coverage
             self.check_concept_enrichment_coverage,
             # L. Display & Visualization

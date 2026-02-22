@@ -33,3 +33,16 @@ data/extractions/test-frameworks/raw/
 
 # Quarantine (review before including)
 data/extractions/_quarantine/
+
+# Generated output (lesson plans, presentations, prototypes)
+generated/
+
+# Raw curriculum source documents (PDFs — large, regenerable)
+core/data/curriculum-documents/
+
+# PowerPoint/Office temp files
+~$*.pptx
+~$*.docx
+~$*.xlsx
+*.pptx
+*.docx

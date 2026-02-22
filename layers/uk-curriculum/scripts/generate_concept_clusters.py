@@ -2,12 +2,15 @@
 """
 Generate ConceptCluster nodes from the enriched UK Curriculum graph.
 
-Reads domains, concepts, and their PREREQUISITE_OF / CO_TEACHES topology,
-then applies a clustering algorithm that respects:
+Produces small, conservative clusters as a default starting scaffold.
+Teachers will rearrange and customise — the algorithm provides structure,
+not prescription. Follows CC Math's Domain→Cluster→Standard pattern.
+
+Respects:
   - topological ordering (prerequisites before dependents)
-  - co-teaching groups (CO_TEACHES pairs always cluster together)
+  - co-teaching pairs (CO_TEACHES pairs stay together, but capped at 4)
   - domain structure_type (hierarchical, sequential, developmental, mixed)
-  - keystone concepts (trigger assessment clusters)
+  - keystone concepts (trigger assessment checkpoints)
   - consolidation / assessment insertion heuristics
 
 Usage:
@@ -105,9 +108,16 @@ def topological_sort(concept_ids, prereq_edges):
     return ordered
 
 
-def build_co_teach_groups(concept_ids, co_teach_edges):
-    """Union-Find to merge co-teaching pairs into groups."""
+def build_co_teach_groups(concept_ids, co_teach_edges, max_group_size=4):
+    """Union-Find to merge co-teaching pairs into groups.
+
+    Groups are capped at max_group_size to prevent runaway merging
+    from aggressive vocabulary-overlap heuristics. If a union would
+    create a group larger than the cap, the edge is silently skipped.
+    Teachers can always merge clusters manually.
+    """
     parent = {cid: cid for cid in concept_ids}
+    size = {cid: 1 for cid in concept_ids}
 
     def find(x):
         while parent[x] != x:
@@ -118,7 +128,14 @@ def build_co_teach_groups(concept_ids, co_teach_edges):
     def union(a, b):
         ra, rb = find(a), find(b)
         if ra != rb:
-            parent[ra] = rb
+            # Cap: don't merge if combined size exceeds limit
+            if size[ra] + size[rb] > max_group_size:
+                return
+            # Union by size
+            if size[ra] < size[rb]:
+                ra, rb = rb, ra
+            parent[rb] = ra
+            size[ra] += size[rb]
 
     for src, tgt in co_teach_edges:
         if src in parent and tgt in parent:
@@ -134,6 +151,10 @@ def cluster_concepts(concepts, prereq_edges, co_teach_edges, structure_type):
     """
     Main clustering logic. Returns list of dicts:
       {concept_ids: [...], cluster_type: str, is_keystone_cluster: bool}
+
+    Produces small, conservative clusters (max 4 concepts). The output is
+    a suggested scaffold — teachers will rearrange based on their own
+    judgement about what goes well together.
     """
     if not concepts:
         return []
@@ -144,9 +165,11 @@ def cluster_concepts(concepts, prereq_edges, co_teach_edges, structure_type):
     # Topological order
     topo_order = topological_sort(concept_ids, prereq_edges)
 
-    # Co-teach groups (merged sets)
-    co_groups = build_co_teach_groups(concept_ids, co_teach_edges)
-    # Map each concept to its group
+    # Co-teach groups (merged sets, capped at 4 members)
+    max_per_cluster = 4 if structure_type in ("hierarchical", "sequential") else 3
+    co_groups = build_co_teach_groups(concept_ids, co_teach_edges, max_group_size=max_per_cluster)
+
+    # Map each concept to its group representative
     cid_to_group = {}
     for group in co_groups:
         rep = min(group)  # canonical representative
@@ -160,25 +183,24 @@ def cluster_concepts(concepts, prereq_edges, co_teach_edges, structure_type):
         rep = cid_to_group.get(cid, cid)
         if rep not in seen_groups:
             seen_groups.add(rep)
-            # All members of this group
             members = sorted(
                 [c for c in concept_ids if cid_to_group.get(c, c) == rep],
                 key=lambda x: topo_order.index(x)
             )
             ordered_groups.append(members)
 
-    # Pack groups into clusters (max 3-4 concepts per cluster)
-    max_per_cluster = 4 if structure_type in ("hierarchical", "sequential") else 3
+    # Pack groups into clusters (respecting max_per_cluster strictly)
     raw_clusters = []
     current = []
 
     for group_members in ordered_groups:
-        # If the group itself exceeds max, it becomes its own cluster
+        # Split oversized groups into sub-clusters of max_per_cluster
         if len(group_members) > max_per_cluster:
             if current:
                 raw_clusters.append(current)
                 current = []
-            raw_clusters.append(group_members)
+            for i in range(0, len(group_members), max_per_cluster):
+                raw_clusters.append(group_members[i:i + max_per_cluster])
             continue
 
         if len(current) + len(group_members) > max_per_cluster:
@@ -190,7 +212,7 @@ def cluster_concepts(concepts, prereq_edges, co_teach_edges, structure_type):
     if current:
         raw_clusters.append(current)
 
-    # Classify clusters and compute properties
+    # Classify clusters: first is introduction, rest are practice
     clusters = []
     for i, concept_ids_in_cluster in enumerate(raw_clusters):
         has_keystone = any(
@@ -203,83 +225,86 @@ def cluster_concepts(concepts, prereq_edges, co_teach_edges, structure_type):
             "is_keystone_cluster": has_keystone,
         })
 
-    # Insert consolidation clusters (~20% of total)
+    # ── Insert consolidation clusters (~15-20% of content clusters) ──
+    # Only insert if there are enough content clusters to consolidate.
+    # Each consolidation cluster recaps concepts from the preceding 2 clusters.
     total_content = len(clusters)
-    num_consolidation = max(1, round(total_content * 0.2))
-    # Space them evenly
-    if total_content > 1:
-        step = max(2, total_content // num_consolidation)
-        insert_positions = list(range(step, total_content + num_consolidation, step))
+    if total_content >= 4:
+        num_consolidation = max(1, round(total_content * 0.18))
+        step = max(3, total_content // num_consolidation)
+        enriched = []
+        inserted = 0
+        for i, cluster in enumerate(clusters):
+            enriched.append(cluster)
+            # Insert consolidation after every `step` content clusters
+            if (i + 1) % step == 0 and i > 0 and inserted < num_consolidation:
+                # Gather concept_ids from the last 2 content clusters
+                prev_ids = []
+                for prev in enriched[-(min(2, len(enriched))):]:
+                    if prev["cluster_type"] != "consolidation":
+                        prev_ids.extend(prev["concept_ids"])
+                if prev_ids:
+                    enriched.append({
+                        "concept_ids": prev_ids[:4],
+                        "cluster_type": "consolidation",
+                        "is_keystone_cluster": False,
+                    })
+                    inserted += 1
     else:
-        insert_positions = [1]
+        enriched = list(clusters)
 
-    enriched = []
-    content_idx = 0
-    inserted = 0
-    for pos in range(total_content + num_consolidation + 5):
-        if content_idx >= total_content and inserted >= num_consolidation:
-            break
-        if (pos + 1) in insert_positions and inserted < num_consolidation:
-            # Consolidation cluster references previous concepts
-            prev_ids = []
-            for c in enriched[-2:]:
-                prev_ids.extend(c["concept_ids"])
-            enriched.append({
-                "concept_ids": prev_ids[:4],  # recap up to 4 concepts
-                "cluster_type": "consolidation",
-                "is_keystone_cluster": False,
-            })
-            inserted += 1
-        elif content_idx < total_content:
-            enriched.append(clusters[content_idx])
-            content_idx += 1
-
-    # Drain remaining content clusters
-    while content_idx < total_content:
-        enriched.append(clusters[content_idx])
-        content_idx += 1
-
-    # Insert assessment clusters after keystone clusters and every 6-8 cumulative lessons
+    # ── Insert assessment clusters ──
+    # After keystone clusters and every 10+ cumulative teaching_weight.
+    # Target: ~10-15% of total, not after every content cluster.
     final = []
-    cumulative_lessons = 0
-    last_assessment = 0
+    cumulative_weight = 0
+    last_assessment_weight = 0
+    assessment_gap = 10  # minimum teaching_weight between assessments
     for cluster in enriched:
         final.append(cluster)
-        teaching_weights = sum(
+        weight = sum(
             concept_map[cid]["teaching_weight"]
             for cid in cluster["concept_ids"]
             if cid in concept_map
         )
-        cumulative_lessons += teaching_weights
+        cumulative_weight += weight
+
+        # Skip assessment after consolidation or other assessment clusters
+        if cluster["cluster_type"] in ("assessment", "consolidation"):
+            continue
 
         needs_assessment = (
-            (cluster["is_keystone_cluster"] and cluster["cluster_type"] != "consolidation")
-            or (cumulative_lessons - last_assessment >= 6)
+            cluster["is_keystone_cluster"]
+            and (cumulative_weight - last_assessment_weight >= 4)
+        ) or (
+            cumulative_weight - last_assessment_weight >= assessment_gap
         )
-        if needs_assessment and cluster["cluster_type"] not in ("assessment", "consolidation"):
+
+        if needs_assessment:
             final.append({
                 "concept_ids": cluster["concept_ids"],
                 "cluster_type": "assessment",
                 "is_keystone_cluster": cluster["is_keystone_cluster"],
             })
-            last_assessment = cumulative_lessons
+            last_assessment_weight = cumulative_weight
 
     return final
 
 
 # ── Graph writing ────────────────────────────────────────────────────────────
 
-def extract_subject_prefix(domain_id):
-    """Extract subject prefix from domain_id like 'MA-Y3-D001' -> 'MA-Y3'."""
-    parts = domain_id.split("-")
-    if len(parts) >= 2:
-        return "-".join(parts[:2])
+def extract_cluster_prefix(domain_id):
+    """Derive cluster prefix from domain_id, e.g. 'MA-Y3-D001' -> 'MA-Y3-D001'.
+
+    Uses the full domain_id to avoid collisions between domains in the
+    same subject-year (e.g. MA-Y3-D001 and MA-Y3-D002).
+    """
     return domain_id
 
 
 def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
     """Create ConceptCluster nodes and relationships for one domain."""
-    prefix = extract_subject_prefix(domain_id)
+    prefix = extract_cluster_prefix(domain_id)
     cluster_ids = []
 
     for i, cluster in enumerate(clusters):
