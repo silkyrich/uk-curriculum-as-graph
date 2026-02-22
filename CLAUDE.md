@@ -60,12 +60,23 @@ Each **layer** is self-contained with its own:
    - Depends on UK curriculum (enrichment signals on Concept nodes + generated ConceptCluster nodes)
    - Enrichment: `teaching_weight` (1-6), `co_teach_hints`, `is_keystone`, `prerequisite_fan_out` on Concept nodes
    - `CO_TEACHES` relationships between co-teachable concepts (extracted + inferred inverse pairs)
-   - ~300-500 `ConceptCluster` nodes: sits between Domain and Concept, following the CC Math Cluster pattern
-   - Cluster types: introduction, practice, consolidation (~20%), assessment (after keystones / every 6-8 lessons)
+   - 626 `ConceptCluster` nodes: sits between Domain and Concept, following the CC Math Cluster pattern
+   - Cluster types: `introduction` (first exposure) and `practice` (fluency/application)
    - `SEQUENCED_AFTER` chains encode lesson ordering within each domain
-   - Scripts: `enrich_grouping_signals.py` (JSONs), `compute_lesson_grouping_signals.py` (migration), `generate_concept_clusters.py` (cluster generation)
+   - `thinking_lens_primary` convenience property on each cluster; full lens options via `APPLIES_LENS` rels
+   - Scripts: `enrich_grouping_signals.py` (JSONs), `compute_lesson_grouping_signals.py` (migration), `generate_concept_clusters.py` (cluster generation), `validate_cluster_definitions.py`
 
-8. **`layers/oak-content/`** - Oak National Academy (future)
+8. **ThinkingLens** (derived layer, lives within `layers/uk-curriculum/`)
+   - 10 cross-subject cognitive lenses adapted from NGSS CCCs + UK-specific frames
+   - Each lens has `description`, `key_question`, and `agent_prompt` for direct LLM instruction
+   - `APPLIES_LENS {rank, rationale}` relationships from every ConceptCluster (1,222 total, ~2 per cluster)
+   - `rank=1` = primary recommendation; higher ranks = valid alternative framings
+   - The rationale on each rel explains *why* the lens fits *this specific cluster* — not just the topic name
+   - Definitions: `layers/uk-curriculum/data/thinking_lenses/thinking_lenses.json`
+   - Import: `layers/uk-curriculum/scripts/import_thinking_lenses.py`
+   - Surfaced by `query_cluster_context.py` in the `## Thinking lenses` section
+
+9. **`layers/oak-content/`** - Oak National Academy (future)
    - Content provider mapping
    - Script: `import_oak_content.py`
 
@@ -105,6 +116,9 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 
 # Concept grouping signals (run after curriculum import)
 python3 core/migrations/compute_lesson_grouping_signals.py
+
+# ThinkingLens nodes must exist before cluster generation creates APPLIES_LENS rels
+python3 layers/uk-curriculum/scripts/import_thinking_lenses.py
 python3 layers/uk-curriculum/scripts/generate_concept_clusters.py
 
 # Cross-domain CO_TEACHES (run after concept grouping)
@@ -182,6 +196,7 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:Curriculum` (root node only)
 - `:KeyStage`, `:Year`, `:Subject`, `:Programme`
 - `:Domain`, `:Objective`, `:Concept`, `:ConceptCluster`
+- `:ThinkingLens` — 10 cross-subject cognitive lenses (Patterns, Cause and Effect, …)
 - `:Topic`, `:SourceDocument`
 
 **Epistemic Skills:**
@@ -222,10 +237,11 @@ All nodes have `display_category` property:
 (:Programme)-[:HAS_DOMAIN]->(:Domain)-[:CONTAINS]->(:Objective)-[:TEACHES]->(:Concept)
 (:Concept)-[:PREREQUISITE_OF]->(:Concept)  // Learning progressions
 
-// Concept Grouping (v3.7)
+// Concept Grouping + ThinkingLens
 (:Domain)-[:HAS_CLUSTER]->(:ConceptCluster)-[:GROUPS]->(:Concept)
-(:ConceptCluster)-[:SEQUENCED_AFTER]->(:ConceptCluster)  // within-domain lesson ordering
-(:Concept)-[:CO_TEACHES]->(:Concept)                     // co-teachability signal
+(:ConceptCluster)-[:SEQUENCED_AFTER]->(:ConceptCluster)               // within-domain lesson ordering
+(:Concept)-[:CO_TEACHES]->(:Concept)                                  // co-teachability signal
+(:ConceptCluster)-[:APPLIES_LENS {rank: int, rationale: str}]->(:ThinkingLens)  // ordered, 1=primary
 
 // NGSS 3D model
 (:Framework)-[:HAS_DIMENSION]->(:Dimension)-[:HAS_PRACTICE]->(:Practice)
@@ -324,6 +340,7 @@ Every feature that introduces or modifies data processing must:
 - Visualization / Bloom perspectives? → `layers/visualization/`
 - Age-appropriate design / learner profiles? → `layers/learner-profiles/`
 - Concept grouping / lesson clusters? → `layers/uk-curriculum/scripts/generate_concept_clusters.py`
+- Thinking lenses (cognitive framing for clusters)? → `layers/uk-curriculum/data/thinking_lenses/` + `import_thinking_lenses.py`
 - User stories? → `docs/user-stories/`
 - Schema definition? → `core/scripts/create_schema.py`
 - Import all data? → `core/scripts/import_all.py` (orchestrator)
@@ -384,8 +401,8 @@ class LayerImporter:
 - Check for duplicate IDs in JSON files
 
 **Nodes show blank in Neo4j Browser**
-- Run `core/migrations/add_name_properties.py`
-- All nodes need `name` property
+- All nodes require a `name` property — check the import script set it during MERGE/SET
+- Re-run the relevant import script; `name` is set on all nodes by current import scripts
 
 **Can't find a script**
 - Check `layers/{layer}/scripts/` not root `scripts/`
@@ -453,20 +470,37 @@ class LayerImporter:
 - Enrichment signals: `teaching_weight` (1-6) and `co_teach_hints` added to all 55 extraction JSONs via `enrich_grouping_signals.py`
 - Import: `import_curriculum.py` now imports `teaching_weight` + `co_teach_hints` into Concept nodes
 - Migration: `compute_lesson_grouping_signals.py` computes `is_keystone`, `prerequisite_fan_out`, and creates `CO_TEACHES` relationships (extracted + inferred inverse pairs)
-- Cluster generation: `generate_concept_clusters.py` creates `ConceptCluster` nodes with topological sort, co-teach grouping, ~20% consolidation, assessment gates after keystones
+- Cluster generation: `generate_concept_clusters.py` creates `ConceptCluster` nodes (two types: introduction, practice)
 - Schema: ConceptCluster uniqueness constraint + indexes on `cluster_type`, `is_keystone`, `teaching_weight` (v3.7)
-- Validation: 6 new schema checks (teaching_weight range, is_keystone consistency, CO_TEACHES integrity, cluster completeness/coverage/sequencing) + extraction checks for new fields
+- Validation: 6 new schema checks + extraction checks for new fields; `validate_cluster_definitions.py` validates all cluster definition JSONs
 - Visualization: ConceptCluster styled (Indigo-500, view_module icon) + name mapping
 - No learner data — all nodes are curriculum design metadata (same tier as complexity_level)
 
-✅ **In Aura cloud database — concept grouping fully active (2026-02-22):**
+✅ **ThinkingLens layer (2026-02-22):**
+- 10 cross-subject cognitive lenses in `layers/uk-curriculum/data/thinking_lenses/thinking_lenses.json`
+- Adapted from NGSS CCCs + UK-specific frames: Patterns, Cause & Effect, Scale/Proportion/Quantity, Systems & System Models, Energy & Matter, Structure & Function, Stability & Change, Continuity & Change, Perspective & Interpretation, Evidence & Argument
+- Each lens has `description`, `key_question`, `agent_prompt` for direct LLM instruction; `display_color = '#7C3AED'`
+- All 626 cluster definition clusters enriched with `thinking_lenses` arrays (1-3 lenses each, ordered by fit, with per-lens rationale)
+- `validate_cluster_definitions.py` enforces `VALID_THINKING_LENSES` set and requires non-empty rationale on each lens entry
+- `generate_concept_clusters.py` writes `thinking_lens_primary` property + `APPLIES_LENS {rank, rationale}` relationships
+- `query_cluster_context.py` surfaces the `## Thinking lenses` section in teacher context output
+- No learner data — pure curriculum metadata
+
+✅ **In Aura cloud database — ThinkingLens fully active (2026-02-22):**
 - Instance: education-graphs (6981841e)
-- **~5,600+ total nodes** including ConceptClusters
+- **~5,600+ total nodes** including ConceptClusters and ThinkingLens nodes
+- 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average)
+- 626 ConceptCluster nodes (167 introduction, 459 practice) — all with `thinking_lens_primary`
 - 1,298 Concept nodes enriched with `teaching_weight` + `co_teach_hints`
 - 1,827 CO_TEACHES relationships (extracted + inferred inverse-operation pairs)
-- 776 ConceptCluster nodes (introduction, practice, consolidation, assessment types)
 - Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
 - 5 Bloom perspectives uploaded and active
+
+✅ **Dead migration scripts removed (2026-02-22):**
+- `core/migrations/fix_ks4_programme_metadata.py` — one-time KS4 metadata fix, already applied
+- `core/migrations/remove_flat_year_metadata.py` — one-time cleanup of superseded Year properties, already applied
+- `layers/uk-curriculum/scripts/add_year_metadata.py` — original flat-metadata script, superseded by learner-profiles layer
+- `core/migrations/` now contains only the 3 active rerunnable migrations: `compute_lesson_grouping_signals.py`, `create_cross_domain_co_teaches.py`, `create_concept_skill_links.py`
 
 ✅ **All extraction gaps filled (2026-02-22):**
 - **0 domains with no concepts** across all 315 domains, KS1–KS4
@@ -529,6 +563,8 @@ class LayerImporter:
 ❌ Match Year nodes on `year_code` - the property is `year_id`
 ❌ Manually create ConceptCluster nodes - Use `generate_concept_clusters.py` (they are derived from graph topology)
 ❌ Edit `teaching_weight` or `co_teach_hints` directly in the graph - Edit the extraction JSONs, then reimport
+❌ Manually create APPLIES_LENS relationships - Edit `thinking_lenses` arrays in the cluster definition JSONs, then re-run `generate_concept_clusters.py`
+❌ Import ThinkingLens nodes after cluster generation - ThinkingLens nodes must exist *before* `generate_concept_clusters.py` runs (MATCH fails silently if the node isn't there)
 
 ### Privacy & Compliance (Non-Negotiable)
 ❌ Store child's name, school, or any PII in the learning event log - Identity and events are architecturally separated

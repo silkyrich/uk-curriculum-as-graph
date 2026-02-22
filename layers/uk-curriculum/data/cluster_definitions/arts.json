@@ -11,6 +11,16 @@
         {
           "cluster_name": "Explore and use drawing, painting and sculpture to develop ideas",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Pupils learn that each medium — drawing, painting, sculpture — has distinct material properties that determine what it can communicate; understanding how a medium works enables intentional creative choice. The bundling of all three media in one programme requires pupils to notice how structure (the material) constrains and enables function (the expressive outcome)."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Early making involves recognising and recreating visual patterns (line, shape, mark) across different surfaces and tools, forming the perceptual vocabulary that underpins all subsequent art-making."
+            }
+          ],
           "concept_ids": ["AD-KS1-C001", "AD-KS1-C002", "AD-KS1-C003", "AD-KS1-C004"],
           "rationale": "All four concepts form the core KS1 making domain. Materials and Making (C001) is the overarching umbrella concept explicitly linked to Drawing, Painting, and Sculpture via co_teach_hints, and the curriculum objective bundles them together as a single programme of practical activity.",
           "inspired_by": "UK NC Art and Design KS1 statutory programme of study"
@@ -23,6 +33,16 @@
         {
           "cluster_name": "Develop understanding of colour, pattern, texture, line, shape and form",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Colour, pattern, texture, line, shape and form are all instances of visual regularity and variation — recognising, comparing and manipulating these elements is fundamentally pattern-based cognitive work."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Each formal element serves a specific expressive or compositional function; teaching pupils to name and deploy them intentionally builds understanding of how visual structure creates meaning."
+            }
+          ],
           "concept_ids": ["AD-KS1-C005"],
           "rationale": "Single concept domain covering all formal elements as an integrated body of knowledge. The concept is taught holistically across practical making activities rather than as isolated sub-topics.",
           "inspired_by": "UK NC Art and Design KS1 objective O003"
@@ -35,6 +55,16 @@
         {
           "cluster_name": "Investigate artists, craft makers and designers from different traditions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Comparing artists and designers from different cultural traditions requires pupils to recognise that aesthetic choices are shaped by viewpoint, context and intention — not universal — making perspective the central interpretive demand."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Even at KS1, noticing that different traditions exist implies an awareness that art practices vary over time and place, providing a first encounter with cultural continuity and change."
+            }
+          ],
           "concept_ids": ["AD-KS1-C006"],
           "rationale": "Single concept domain. Knowledge of diverse practitioners is taught through comparison and discussion linked to pupils' own making activities.",
           "inspired_by": "UK NC Art and Design KS1 objective O004"
@@ -47,6 +77,16 @@
         {
           "cluster_name": "Improve mastery of drawing and painting with a range of materials",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Mastery of drawing and painting requires understanding how specific material properties (pencil hardness, paint viscosity, brush type) determine the marks that can be made — structure directly constrains and enables expressive function."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Tonal control and deliberate mark-making involve identifying and reproducing graduated visual patterns; progressive skill development is itself a pattern of refinement across repeated practice episodes."
+            }
+          ],
           "concept_ids": ["AD-KS2-C001", "AD-KS2-C002"],
           "rationale": "Drawing Mastery and Painting Mastery are the two primary 2D technique strands at KS2. They share a common emphasis on deliberate practice, tonal control and progressive skill development and are naturally co-taught through integrated projects.",
           "inspired_by": "UK NC Art and Design KS2 objective O002"
@@ -54,6 +94,16 @@
         {
           "cluster_name": "Develop sculpture skills and creative experimentation across media",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Sculpture requires understanding how three-dimensional materials behave structurally — how form can be built, carved or modelled — and creative experimentation tests those structural limits to discover new expressive possibilities."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Experimentation across media involves noticing repeating surface patterns, textures and formal relationships that emerge across different sculptural approaches and materials."
+            }
+          ],
           "concept_ids": ["AD-KS2-C003", "AD-KS2-C006"],
           "rationale": "Sculpture Mastery (C003) has a co_teach_hint to Painting Mastery (C002), but pairs more naturally with Creativity and Experimentation (C006) as both involve taking creative risks in three-dimensional and mixed-media work. Creativity and Experimentation is a cross-cutting process concept best embedded within active making contexts rather than taught alone.",
           "inspired_by": "UK NC Art and Design KS2 mastery + creativity emphasis"
@@ -66,6 +116,16 @@
         {
           "cluster_name": "Use sketchbooks to record observations and develop ideas",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "The sketchbook functions as a record of visual evidence — observations, experiments, annotations — from which ideas are developed and justified; pupils learn to use their own recorded evidence to make and support creative decisions."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding the sketchbook as a structured working document (not just a notebook) requires grasping how different types of recording — thumbnail sketches, colour tests, annotations — each serve a distinct function in the creative process."
+            }
+          ],
           "concept_ids": ["AD-KS2-C004"],
           "rationale": "Single concept domain. The sketchbook as creative tool is a distinct and substantial pedagogical concept requiring dedicated teaching of habits and culture around personal working documents.",
           "inspired_by": "UK NC Art and Design KS2 objective O001"
@@ -78,6 +138,16 @@
         {
           "cluster_name": "Investigate great artists, architects and designers throughout history",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Studying significant practitioners requires pupils to understand works from within the artist's historical context and intention, not just react aesthetically — making interpretive stance the core cognitive demand."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Studying great artists and designers 'throughout history' explicitly positions art knowledge as a chronological narrative where styles, techniques and ideas develop, persist or break with precedent across time."
+            }
+          ],
           "concept_ids": ["AD-KS2-C005"],
           "rationale": "Single concept domain covering art historical knowledge of significant practitioners. Taught through project-based study connecting historical examples to pupils' own making.",
           "inspired_by": "UK NC Art and Design KS2 objective O003"
@@ -90,6 +160,16 @@
         {
           "cluster_name": "Develop technical proficiency and a personal creative voice across media",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Technical proficiency is the capacity to control how a medium's physical structure (pigment behaviour, layering, mark-making) serves expressive function; developing a personal voice requires intentional deployment of these structural choices to communicate specific meanings."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "A 'personal creative voice' is an interpretive position — it requires pupils to develop and sustain their own viewpoint rather than imitate conventions, demanding self-aware interpretive decision-making throughout extended studio work."
+            }
+          ],
           "concept_ids": ["AD-KS3-C001", "AD-KS3-C004"],
           "rationale": "Advanced Technical Proficiency and Personal Creative Voice are directly linked by co_teach_hints and are explicitly interdependent at KS3: technical skill without personal creative intention produces mechanical work, while personal voice without technical control cannot be realised. They are co-taught throughout extended studio projects.",
           "inspired_by": "UK NC Art and Design KS3 objectives O001–O003"
@@ -102,6 +182,16 @@
         {
           "cluster_name": "Analyse and evaluate artwork to strengthen visual impact and application",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Critical analysis of artwork requires pupils to construct and defend an interpretation — recognising that meaning is not inherent but is actively constructed through the viewer's framework of understanding."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Systematic analysis demands that evaluative claims be grounded in specific visual evidence (formal elements, compositional choices, materials) and structured as reasoned argument rather than impressionistic response."
+            }
+          ],
           "concept_ids": ["AD-KS3-C002"],
           "rationale": "Single concept domain. Critical Analysis and Evaluation is a substantial skill requiring dedicated teaching of systematic analytical frameworks, vocabulary and the habit of using evaluation as a tool for improvement during making.",
           "inspired_by": "UK NC Art and Design KS3 objective O004"
@@ -114,6 +204,16 @@
         {
           "cluster_name": "Investigate art history: periods, styles and movements from ancient times to present",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "continuity_change",
+              "rationale": "The explicit sweep 'from ancient times to present' makes change over time the organising framework — pupils must understand how styles, movements and ideas develop, react against predecessors and persist or transform across centuries."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Different artistic periods and movements represent coherent interpretive worldviews; understanding them requires pupils to temporarily adopt those perspectives rather than judge historical work by contemporary aesthetic norms."
+            }
+          ],
           "concept_ids": ["AD-KS3-C003"],
           "rationale": "Single concept domain covering the broad sweep of art historical knowledge at KS3. Taught through contextualised studio projects that connect historical movements to pupils' own creative practice.",
           "inspired_by": "UK NC Art and Design KS3 objective O005"
@@ -126,6 +226,16 @@
         {
           "cluster_name": "Investigate contextual sources and develop ideas through sustained analytical enquiry",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Contextual investigation at GCSE requires pupils to engage with sources from within their historical and cultural context, building an interpretive reading that goes beyond surface description to understand the intentions, influences and reception of artists and designers."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Sustained analytical enquiry means marshalling visual and contextual evidence to construct substantiated arguments about sources — the AO1 assessment explicitly rewards the quality of analytical reasoning, not just the identification of sources."
+            }
+          ],
           "concept_ids": ["AD-KS4-C001", "AD-KS4-C005"],
           "rationale": "Contextual Investigation (C001) and Cultural and Historical Contextualisation (C005) are directly linked by co_teach_hints and together constitute AO1 at GCSE: source analysis requires contextual understanding, and contextual knowledge deepens analytical engagement with sources. They are co-taught throughout the portfolio development process.",
           "inspired_by": "GCSE Art and Design AO1 — Develop"
@@ -138,6 +248,16 @@
         {
           "cluster_name": "Refine and develop work through experimentation and informed material selection",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Informed material selection requires understanding how a material's physical properties (opacity, texture, flexibility) determine what it can and cannot communicate — each refinement decision is a test of how structure serves expressive function."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "The iterative evaluate-experiment-refine model is an evidence-based process: each experimental outcome provides evidence that informs the next decision, and portfolio documentation constitutes a visible argument for creative choices made."
+            }
+          ],
           "concept_ids": ["AD-KS4-C002"],
           "rationale": "Single concept domain. Iterative Creative Development and Experimentation is a substantial process concept requiring dedicated teaching of the cyclic evaluate-experiment-refine model, portfolio documentation habits and productive failure culture.",
           "inspired_by": "GCSE Art and Design AO2 — Refine"
@@ -150,6 +270,16 @@
         {
           "cluster_name": "Record primary observations accurately through drawing and other media",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Observational drawing demands that pupils understand how marks, tones and lines function to recreate three-dimensional structure on a flat surface — accuracy of record is inseparable from understanding how visual representation works."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Perceptual accuracy in observational drawing depends on noticing tonal gradients, edge patterns and proportional relationships in the subject; the skilled observer sees the world as a system of patterns before translating them into marks."
+            }
+          ],
           "concept_ids": ["AD-KS4-C003"],
           "rationale": "Single concept domain. Observational Drawing and Primary Recording is a substantial and assessable skill at GCSE requiring sustained practice of perceptual accuracy, tonal control and purposeful looking as a creative act.",
           "inspired_by": "GCSE Art and Design AO3 — Record"
@@ -162,6 +292,16 @@
         {
           "cluster_name": "Apply visual language and formal elements to realise a personal creative response",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Visual Language and Formal Elements (C004) is essentially a grammar of structure — composition, colour relationships, form — through which creative intentions are realised; the AO4 demand is precisely to demonstrate that formal structure serves personal expressive function."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Realising a personal creative response requires maintaining and communicating a consistent interpretive viewpoint throughout the final resolved outcome, making perspective the evaluative standard against which the work is judged."
+            }
+          ],
           "concept_ids": ["AD-KS4-C004", "AD-KS4-C006"],
           "rationale": "Visual Language and Formal Elements (C004) provides the vocabulary and compositional toolkit through which Realising Creative Intentions (C006) is achieved. These two concepts together constitute AO4: understanding formal elements enables pupils to execute and communicate their creative intentions in a final resolved outcome.",
           "inspired_by": "GCSE Art and Design AO4 — Present"
@@ -174,6 +314,16 @@
         {
           "cluster_name": "Understand and use pulse, pitch, dynamics and tempo in vocal and instrumental performance",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Pulse, rhythm, pitch sequences and dynamic contours are all temporal or tonal patterns — KS1 performance is fundamentally about recognising, reproducing and internalising these musical patterns through the body."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Tempo and dynamics are structural parameters whose manipulation changes the expressive function of a performance; even at KS1, varying these elements purposefully introduces the idea that musical structure shapes meaning."
+            }
+          ],
           "concept_ids": ["MU-KS1-C001", "MU-KS1-C002", "MU-KS1-C003"],
           "rationale": "Pulse and Rhythm, Pitch, and Dynamics and Tempo are the three foundational musical parameters used in KS1 performing and singing. They are taught together through practical performance activities — singing songs, playing instruments — where all three dimensions are in play simultaneously. Separating them into distinct clusters would fragment naturally integrated performance learning.",
           "inspired_by": "UK NC Music KS1 performing objectives O001–O002"
@@ -186,6 +336,16 @@
         {
           "cluster_name": "Listen and respond to music using the inter-related dimensions as a framework",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "The inter-related dimensions of music provide a framework for noticing patterned variation — changes in timbre, texture, pitch and rhythm — which are the primary cognitive targets of attentive listening at KS1."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Responding to and discussing music introduces pupils to the idea that the same piece can be heard differently by different listeners, making interpretive response a meaningful and discussable activity even at this age."
+            }
+          ],
           "concept_ids": ["MU-KS1-C004", "MU-KS1-C005"],
           "rationale": "Timbre and Texture (C004) and the Inter-Related Dimensions of Music (C005) are both taught through active listening. The dimensions framework (C005) provides the organising vocabulary within which timbre and texture (C004) sit as specific entries. Together they give pupils the conceptual tools for listening, discussing and appraising music.",
           "inspired_by": "UK NC Music KS1 listening objective O003"
@@ -198,6 +358,16 @@
         {
           "cluster_name": "Compose and improvise music through sound exploration and creative choice",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Sound exploration at KS1 involves discovering and selecting sound patterns — sequences, contrasts, repetitions — that are deliberately chosen rather than random, developing early compositional pattern-thinking."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Simple sequencing and selection of sounds introduces pupils to the idea that the order and combination of sounds (structure) determines the character and effect of the music (function)."
+            }
+          ],
           "concept_ids": ["MU-KS1-C006"],
           "rationale": "Single concept domain. Sound Exploration and Musical Composition is a broad process concept covering all aspects of KS1 composition: free exploration, deliberate selection, use of dimensions, simple sequencing and performance of self-made music.",
           "inspired_by": "UK NC Music KS1 composing objective O004"
@@ -210,6 +380,16 @@
         {
           "cluster_name": "Develop ensemble skills and perform with accuracy, fluency and expression",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Ensemble performance is a system in which individual parts must function in coordinated relationship — listening, balance, cueing and musical communication are all properties of the ensemble as an interdependent system rather than of individual players."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Accuracy and fluency in performance depend on internalising rhythmic and melodic patterns deeply enough to reproduce them reliably under the added cognitive load of ensemble coordination."
+            }
+          ],
           "concept_ids": ["MU-KS2-C001"],
           "rationale": "Single concept domain. Ensemble Performance Skills is a substantial practical concept encompassing listening, coordination, balance and musical communication in group performance — all requiring dedicated development beyond individual instrument technique.",
           "inspired_by": "UK NC Music KS2 performing objective O001"
@@ -222,6 +402,16 @@
         {
           "cluster_name": "Compose and improvise music using musical structure and the dimensions of music",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Musical Structure and Composition (C003) makes structure the explicit object of compositional learning — understanding how sections, motifs and structural forms organise musical material to create coherent expressive effect."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Improvisation develops the ability to generate melodic and rhythmic patterns spontaneously within stylistic constraints; composition extends this by deliberately selecting, combining and repeating patterns to create planned musical architecture."
+            }
+          ],
           "concept_ids": ["MU-KS2-C002", "MU-KS2-C003"],
           "rationale": "Improvisation (C002) and Musical Structure and Composition (C003) are directly linked by co_teach_hints and are naturally co-taught at KS2: improvisation develops spontaneous musical decision-making and idea generation, while composition extends this into planned structural organisation. Together they cover the full composing and improvising domain.",
           "inspired_by": "UK NC Music KS2 composing objective O002"
@@ -234,6 +424,16 @@
         {
           "cluster_name": "Listen to and appreciate music from different traditions and historical periods",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Appreciating music from diverse traditions and historical periods requires pupils to listen from within unfamiliar aesthetic frameworks — recognising that what counts as musical quality is culturally and historically situated, not universal."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "The historical dimension of this cluster — encountering music across different periods — requires pupils to notice how musical styles, conventions and cultural functions have evolved, persisted and changed across time."
+            }
+          ],
           "concept_ids": ["MU-KS2-C005"],
           "rationale": "Single concept domain. Music History and Cultural Context is a substantial knowledge concept covering appreciation of diverse musical traditions, great composers and musicians, and historical development of music — all of which require sustained listening and contextualised teaching.",
           "inspired_by": "UK NC Music KS2 listening objectives O003, O005, O006"
@@ -246,6 +446,16 @@
         {
           "cluster_name": "Use and understand staff notation to read and communicate musical ideas",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Staff notation is a systematic visual encoding of rhythmic and pitch patterns; learning to read and write it requires developing fluent pattern recognition between visual symbols and their corresponding sounds."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding notation as a communication system means grasping how structural conventions (clef, time signature, note values) serve the function of precisely encoding and transmitting musical ideas across time and between musicians."
+            }
+          ],
           "concept_ids": ["MU-KS2-C004"],
           "rationale": "Single concept domain. Staff Notation is a discrete and substantial knowledge and skill area requiring systematic teaching of note names, rhythmic values, time signatures and score reading — always connected to real musical sound.",
           "inspired_by": "UK NC Music KS2 notation objective O004"
@@ -258,6 +468,16 @@
         {
           "cluster_name": "Perform confidently in solo and ensemble contexts with accuracy, expression and stylistic awareness",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Advanced ensemble performance at KS3 requires modelling the performance as a coordinated system — each player's technical and expressive choices must be calibrated to the whole, with stylistic awareness shaping how the system sounds collectively."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Stylistic adaptability demands that pupils interpret the expressive conventions of different musical styles from within their own aesthetic logic rather than applying a single default approach — performance becomes an interpretive act."
+            }
+          ],
           "concept_ids": ["MU-KS3-C001"],
           "rationale": "Single concept domain. Advanced Performance Skills is a substantial integrated concept at KS3 encompassing technical proficiency, musical expression, stylistic adaptability and ensemble musicianship — all developed together through sustained performance practice.",
           "inspired_by": "UK NC Music KS3 performing objective O001"
@@ -270,6 +490,16 @@
         {
           "cluster_name": "Compose and improvise using musical devices and structures across styles and traditions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Compositional Techniques and Devices — ostinato, sequence, imitation, augmentation, diminution, structural forms — are explicitly structural concepts whose value is understood through how each shapes the function and effect of a musical passage."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Techniques such as sequence (transposing a motif) and ostinato (repeating a figure) are pattern operations applied to musical material; fluent use of these devices requires deep pattern recognition and manipulation ability."
+            }
+          ],
           "concept_ids": ["MU-KS3-C003"],
           "rationale": "Single concept domain. Compositional Techniques and Devices is a substantial knowledge and process concept at KS3, covering ostinato, sequence, imitation, augmentation, diminution and structural forms — all taught through composing and improvising activities across diverse musical styles.",
           "inspired_by": "UK NC Music KS3 composing objective O002"
@@ -282,6 +512,16 @@
         {
           "cluster_name": "Listen and appraise music from world traditions and diverse cultural contexts",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Appraising world music and diverse cultural contexts requires pupils to suspend familiar Western conventions and listen from within unfamiliar aesthetic frameworks — the central cognitive demand is constructing and sustaining an interpretive position shaped by cultural knowledge."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Understanding how musical traditions develop, interact and transform across cultures and time is implicit in studying world music; the 'diverse' framing positions difference itself as a product of historical and cultural processes."
+            }
+          ],
           "concept_ids": ["MU-KS3-C004"],
           "rationale": "Single concept domain. Musical Traditions and World Music is a substantial knowledge concept requiring dedicated listening and cultural contextualisation across diverse global traditions, developing breadth of musical understanding and challenging ethnocentric assumptions.",
           "inspired_by": "UK NC Music KS3 listening objectives O005–O006"
@@ -294,6 +534,16 @@
         {
           "cluster_name": "Understand and apply tonality, harmony and the inter-related dimensions with sophistication",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Tonality and harmony are pattern systems — scales, chord functions and harmonic progressions are recurring patterns whose recognition and manipulation underpins both analytical listening and compositional decision-making at KS3."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding chord functions (tonic, dominant, subdominant) and modal tonality is understanding how harmonic structure creates the sense of tension, resolution and expressive direction — structure directly determines musical function."
+            }
+          ],
           "concept_ids": ["MU-KS3-C002"],
           "rationale": "Single concept domain. Tonality and Harmony is a substantial theoretical concept at KS3 — covering major/minor/modal tonality, chord functions and harmonic progression — that underpins both analytical listening and compositional decision-making.",
           "inspired_by": "UK NC Music KS3 elements objective O004"
@@ -306,6 +556,16 @@
         {
           "cluster_name": "Perform with technical control, musical expression and stylistic understanding",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "GCSE performance integrates technical accuracy, expressive intent, stylistic awareness and ensemble responsiveness as a coordinated whole — the performer must model and manage these interacting demands simultaneously across two years of sustained development."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Stylistic understanding at GCSE level demands interpretive depth — pupils must perform from within a style's expressive conventions, making deliberate interpretive choices that communicate a coherent musical reading of the material."
+            }
+          ],
           "concept_ids": ["MU-KS4-C001"],
           "rationale": "Single concept domain at GCSE. Technical Proficiency and Expressive Performance integrates the full range of GCSE performance demands — accuracy, fluency, expressive intent, stylistic awareness and ensemble skills — developed over two years of sustained instrumental and vocal practice.",
           "inspired_by": "GCSE Music component: Performing"
@@ -318,6 +578,16 @@
         {
           "cluster_name": "Compose original music using structural craft, notating ideas appropriately",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Compositional Craft and Structure (C003) is the explicit application of structural principles — form, development, coherence — to original material; the GCSE submission requires pupils to demonstrate that their structural choices serve clear expressive and communicative functions."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Musical Notation (C006) encodes compositional patterns in a communicable form; crafting an original composition requires sustained pattern-manipulation — developing motivic material, applying structural devices — before it can be notated for assessment."
+            }
+          ],
           "concept_ids": ["MU-KS4-C003", "MU-KS4-C006"],
           "rationale": "Compositional Craft and Structure (C003) and Musical Notation and Representation (C006) are co-taught at GCSE: composing requires pupils both to construct coherent musical structures and to represent them accurately in appropriate notation for submission. The two skills are inseparable in the assessed GCSE composition portfolio.",
           "inspired_by": "GCSE Music component: Composing (AOs 3–5)"
@@ -330,6 +600,16 @@
         {
           "cluster_name": "Analyse music using precise terminology and understand the inter-related dimensions",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Musical Elements and Analytical Terminology provides the vocabulary for labelling and discussing musical patterns — recognising a sequence, an ostinato or a modulation requires both pattern perception and precise terminology to communicate the observation."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "The inter-related dimensions framework positions each element (dynamics, texture, harmony) as a structural parameter whose manipulation serves expressive functions; analytical terminology is the tool for making these structure-function relationships explicit in writing."
+            }
+          ],
           "concept_ids": ["MU-KS4-C002"],
           "rationale": "Musical Elements and Analytical Terminology (C002) provides the foundational analytical vocabulary and framework for the appraising component. It must be introduced and consolidated before historically and stylistically contextualised analysis of set works can be attempted.",
           "inspired_by": "GCSE Music appraising: analytical vocabulary strand"
@@ -337,6 +617,16 @@
         {
           "cluster_name": "Appraise music history, set works and stylistic awareness across genres",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Set work study and stylistic awareness require pupils to construct interpretive readings of music from within specific historical and generic contexts — appraising demands understanding why a composer made particular choices given their context, not just identifying what they did."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Music History: Periods, Styles and Set Works (C004) is explicitly organised around historical development — pupils must understand how stylistic conventions emerged, evolved and were transformed, providing the contextual framework for meaningful set work analysis."
+            }
+          ],
           "concept_ids": ["MU-KS4-C004", "MU-KS4-C005"],
           "rationale": "Music History: Periods, Styles and Set Works (C004) and Stylistic Awareness Across Genres and Traditions (C005) are directly linked by co_teach_hints and are co-taught throughout the appraising course: detailed set work study develops the contextual frameworks within which stylistic awareness — identifying and explaining characteristic features of genres and traditions — is applied both analytically and in composition.",
           "inspired_by": "GCSE Music appraising: set works and stylistic awareness strands"
@@ -349,6 +639,16 @@
         {
           "cluster_name": "Create and devise drama using a range of forms, genres and theatrical techniques",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Dramatic Form and Genre is knowledge about how theatrical structures — episodic form, Brechtian Epic, physical theatre — determine what a piece can communicate; understanding form enables pupils to make intentional structural choices that serve their devising intentions."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Genre conventions encode particular ways of representing the world; selecting and working within or against a genre is an interpretive decision about how to frame the audience's understanding of the dramatic material."
+            }
+          ],
           "concept_ids": ["DR-KS4-C002"],
           "rationale": "Single concept domain. Dramatic Form and Genre is the core conceptual knowledge underpinning all devising work at GCSE: understanding form and genre enables pupils to make informed creative choices about structure, style and theatrical language when creating original work.",
           "inspired_by": "GCSE Drama devising component"
@@ -361,6 +661,16 @@
         {
           "cluster_name": "Develop physical and vocal characterisation in scripted and devised performance",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Characterisation requires sustained adoption of another person's viewpoint, motivation and physical presence — the entire performative task is to make an interpretive case for how this character inhabits and responds to their world."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Physical and vocal choices (posture, gesture, projection, intonation, pause) are structural tools whose deliberate deployment serves the function of communicating character intention and emotion to an audience — each choice is a structural decision with communicative consequence."
+            }
+          ],
           "concept_ids": ["DR-KS4-C001"],
           "rationale": "Single concept domain. Physical and Vocal Characterisation integrates all performance skill development at GCSE — posture, gesture, gait, proxemics, projection, intonation, pace and pause — in service of creating distinct, consistent and communicative characterisation.",
           "inspired_by": "GCSE Drama performing component"
@@ -373,6 +683,16 @@
         {
           "cluster_name": "Understand and apply theatre design elements to communicate meaning",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Theatre Design and Production Elements positions each design discipline — set, lighting, sound, costume — as a structural system whose organisation actively constructs meaning for the audience, requiring pupils to understand how design choices function as a communicative language."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Design decisions encode a directorial or designer's interpretive reading of the text or devised piece; understanding theatre design requires grasping that every element is a choice that positions the audience's understanding of character, theme and atmosphere."
+            }
+          ],
           "concept_ids": ["DR-KS4-C003"],
           "rationale": "Single concept domain. Theatre Design and Production Elements is a substantial knowledge concept covering set, lighting, sound and costume design as active contributors to theatrical meaning — essential for both design specialist routes and analytical writing.",
           "inspired_by": "GCSE Drama design component"
@@ -385,6 +705,16 @@
         {
           "cluster_name": "Study theatre practitioners and their methodologies in historical and contemporary context",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Practitioners such as Stanislavski, Brecht and Artaud each represent a coherent theoretical perspective on what theatre is for and how it should work; studying them requires pupils to understand and temporarily inhabit these contrasting interpretive frameworks rather than evaluate them by a single standard."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Understanding practitioners in both historical and contemporary context requires tracking how theatrical methodologies developed in response to their cultural moment and how their influence has been taken up, adapted or challenged by subsequent theatre-makers."
+            }
+          ],
           "concept_ids": ["DR-KS4-C004"],
           "rationale": "Theatre Practitioners and Their Methodologies (C004) provides the analytical frameworks and vocabulary — Stanislavski, Brecht, Artaud, physical theatre — needed before pupils can write effectively about live or recorded theatre. It is introduced early to inform both practical and analytical work throughout the course.",
           "inspired_by": "GCSE Drama practitioner study strand"
@@ -392,6 +722,16 @@
         {
           "cluster_name": "Analyse and evaluate live and recorded theatre using precise theatrical language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Written evaluation of theatre requires pupils to construct a substantiated interpretive reading of a performance — deploying practitioner frameworks and design knowledge as lenses through which to explain how specific choices created meaning for the audience."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Critical Analysis and Evaluation of Theatre is an explicitly evidence-based analytical skill: claims about theatrical effect must be grounded in specific observed details of performance or design, structured as a reasoned argument with supporting evidence."
+            }
+          ],
           "concept_ids": ["DR-KS4-C005"],
           "rationale": "Critical Analysis and Evaluation of Theatre (C005) is the capstone analytical skill at GCSE Drama, requiring pupils to deploy practitioner knowledge and design understanding as interpretive tools in substantiated written evaluation of theatre they have seen. It builds on all other domain knowledge.",
           "inspired_by": "GCSE Drama written component: live theatre evaluation"
@@ -404,6 +744,16 @@
         {
           "cluster_name": "Develop fundamental movement skills and understand their importance for health",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Fundamental movement skills are body structures (running patterns, jumping mechanics, throwing technique) whose correct form determines their function — efficient, safe and powerful movement; even KS1 pupils notice that how you do something changes what you can do."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Physical Health and Fitness (C005) is taught through noticing bodily cause-and-effect relationships — changes in heart rate, breathing and energy during physical activity — making this a first introduction to the body as a responsive physical system."
+            }
+          ],
           "concept_ids": ["PE-KS1-C001", "PE-KS1-C005"],
           "rationale": "Fundamental Movement Skills (C001) and Physical Health and Fitness (C005) are naturally co-taught at KS1: movement skill activities are the primary vehicle through which pupils develop health and fitness understanding — noticing changes in heart rate, breathing and energy during physical activity. Separating them would artificially divide what is experienced as unified physical education.",
           "inspired_by": "UK NC PE KS1 objectives O001 and health literacy strand"
@@ -416,6 +766,16 @@
         {
           "cluster_name": "Apply simple attacking and defending tactics in team games",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Even simple team games are systems in which attacking and defending roles interact dynamically — understanding that your team's movement changes the space available to the opposition is a first encounter with systems thinking in a physical context."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Tactical decision-making at KS1 is fundamentally about cause and effect: if I pass here, what happens? If they move left, what space opens? Pupils learn to anticipate consequential chains of action and response."
+            }
+          ],
           "concept_ids": ["PE-KS1-C002"],
           "rationale": "Single concept domain. Game Tactics and Strategy at KS1 encompasses both the tactical thinking and the team participation skills needed to play simple games with intent — developing decision-making, cooperation and game literacy.",
           "inspired_by": "UK NC PE KS1 objective O002"
@@ -428,6 +788,16 @@
         {
           "cluster_name": "Perform dances using simple movement patterns with expression and rhythm",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "KS1 dance is built on movement patterns — sequences reproduced from memory, repeated rhythmic motifs, mirroring — making pattern recognition and replication the central physical and cognitive demand."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Performing movement expressively requires pupils to understand that how a movement is performed (its quality, size, direction) changes what it communicates — the body's structural choices serve expressive functions."
+            }
+          ],
           "concept_ids": ["PE-KS1-C003"],
           "rationale": "Single concept domain. Expressive Movement and Dance covers all aspects of KS1 dance: reproducing sequences from memory, coordinating to music and rhythm, using the body expressively to communicate ideas.",
           "inspired_by": "UK NC PE KS1 objective O003"
@@ -440,6 +810,16 @@
         {
           "cluster_name": "Develop swimming ability and water safety across a range of strokes",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Each swimming stroke is a physical structure — a coordinated pattern of body position, arm action and leg kick — whose precise form determines its effectiveness; understanding how technique creates propulsion and reduces drag is a direct structure-function relationship."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Water safety knowledge is grounded in understanding cause-and-effect relationships in aquatic environments — why certain conditions are dangerous, what happens to the body when it fatigues in water, and how specific actions cause or prevent drowning risk."
+            }
+          ],
           "concept_ids": ["PE-KS1-C004"],
           "rationale": "Single concept domain. Swimming Competence and Water Safety covers both the technical stroke skills and the safety knowledge required to meet the statutory swimming standard — always taught as integrated aspects of aquatic competence.",
           "inspired_by": "UK NC PE KS1/KS2 swimming statutory requirements O004–O006"
@@ -452,6 +832,16 @@
         {
           "cluster_name": "Use tactics and strategies to compete effectively in team and individual games",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Tactical Awareness (C001), Strategic Planning (C002) and Direct Competition Skills (C003) all require modelling the game as a system: understanding how positions, movements and decisions interact dynamically to create and close opportunities is core systems thinking applied to physical competition."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Strategic planning depends on anticipating chains of cause and effect — predicting how opponents will respond to your tactical choices and adjusting accordingly — making consequential reasoning the primary cognitive demand of competitive game play."
+            }
+          ],
           "concept_ids": ["PE-KS3-C001", "PE-KS3-C002", "PE-KS3-C003"],
           "rationale": "Tactical Awareness (C001), Strategic Planning (C002) and Direct Competition Skills (C003) form the cognitive and applied foundation for competitive game play at KS3. Understanding tactics and being able to plan and execute them in direct competition are prerequisite to effective team and individual game participation.",
           "inspired_by": "UK NC PE KS3 objective O001"
@@ -459,6 +849,16 @@
         {
           "cluster_name": "Participate effectively in team and individual competitive sports",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Team Game Participation (C004) requires pupils to function as components of a dynamic system — their role, positioning and decision-making must be coordinated with teammates' actions in real time, requiring systemic awareness of the whole game."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Individual Game Participation (C005) in direct competition demands rapid causal reasoning — reading an opponent's movement to predict their next action and choosing a response whose consequence creates advantage."
+            }
+          ],
           "concept_ids": ["PE-KS3-C004", "PE-KS3-C005"],
           "rationale": "Team Game Participation (C004) and Individual Game Participation (C005) represent the applied practice dimension of the games domain: actually playing in team and solo competitive contexts, putting tactics and skills to work under game conditions.",
           "inspired_by": "UK NC PE KS3 objective O001 games participation strand"
@@ -471,6 +871,16 @@
         {
           "cluster_name": "Develop and refine sport-specific techniques across athletics and gymnastics",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Sport-specific techniques are physical structures — the coordinated body mechanics of a javelin throw, a gymnastic vault or a sprint start — whose correct form directly determines their functional effectiveness; technique development is fundamentally an exploration of structure-function relationships in the body."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Technical Development (C007) across rotating sports reveals cross-sport patterns in how skill transfers — certain movement patterns (weight transfer, rotation, extension) recur across athletic disciplines, and recognising these patterns accelerates learning in each new sport."
+            }
+          ],
           "concept_ids": ["PE-KS3-C006", "PE-KS3-C007", "PE-KS3-C009", "PE-KS3-C010"],
           "rationale": "Sport-Specific Techniques (C006), Technical Development (C007), Athletic Skills (C009) and Gymnastic Skills (C010) are the four core technique concepts at KS3. They are co-taught through rotating sports programmes where each sport provides specific technique learning opportunities alongside progressive skill development.",
           "inspired_by": "UK NC PE KS3 objective O002"
@@ -478,6 +888,16 @@
         {
           "cluster_name": "Build physical competence, confidence and cross-sport application",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Cross-Sport Application (C030) involves modelling how physical competence functions as a transferable system — skills and movement principles acquired in one sporting context are abstracted and reapplied in different ones, requiring a systemic understanding of physical capability."
+            },
+            {
+              "lens": "stability_change",
+              "rationale": "Physical Competence (C028) and Physical Confidence (C029) represent the stable outcome of sustained technical development — the question of whether core competencies remain robust when pupils encounter novel sporting challenges is an instance of stability under changed conditions."
+            }
+          ],
           "concept_ids": ["PE-KS3-C028", "PE-KS3-C029", "PE-KS3-C030"],
           "rationale": "Physical Competence (C028), Physical Confidence (C029) and Cross-Sport Application (C030) represent the broader physical literacy outcomes that develop alongside specific technique: growing confidence in one's physical abilities and the ability to transfer skills between different sports and activities.",
           "inspired_by": "UK NC PE KS3 physical development aims"
@@ -490,6 +910,16 @@
         {
           "cluster_name": "Perform dances with advanced techniques across a range of styles",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Dance Style Awareness (C012) requires pupils to understand that different dance styles encode different cultural and artistic viewpoints — performing across styles demands adopting distinct aesthetic frameworks, not simply applying a single physical vocabulary."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Advanced Dance Techniques (C011) are physical structures — alignment, weight shift, use of dynamics, spatial patterning — whose precise form determines the expressive and communicative function of the movement; technical refinement and expressive performance are inseparable at KS3."
+            }
+          ],
           "concept_ids": ["PE-KS3-C011", "PE-KS3-C012", "PE-KS3-C013"],
           "rationale": "Advanced Dance Techniques (C011), Dance Style Awareness (C012) and Dance Performance (C013) are all explicitly linked via co_teach_hints in the scaffold and together constitute the KS3 dance domain: technical skill, stylistic knowledge and expressive performance are inseparable in dance education.",
           "inspired_by": "UK NC PE KS3 dance objective O003"
@@ -502,6 +932,16 @@
         {
           "cluster_name": "Participate in outdoor activities and manage physical and intellectual challenges",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Outdoor activities operate within complex natural and logistical systems — terrain, weather, group capability, equipment — and managing physical and intellectual challenges requires pupils to model these interacting factors to make safe, effective decisions."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Physical Challenge Management (C015) and Intellectual Challenge Management (C016) both involve anticipating consequences — understanding how physical exertion, environmental conditions or decision-making errors can cascade into changed outcomes, and acting accordingly."
+            }
+          ],
           "concept_ids": ["PE-KS3-C014", "PE-KS3-C015", "PE-KS3-C016"],
           "rationale": "Outdoor Activity Participation (C014), Physical Challenge Management (C015) and Intellectual Challenge Management (C016) are the foundational trio for OAA at KS3: actually engaging with outdoor activities while developing the capacity to manage both physical demands and problem-solving challenges.",
           "inspired_by": "UK NC PE KS3 OAA objective O004"
@@ -509,6 +949,16 @@
         {
           "cluster_name": "Solve problems collaboratively and build trust through teamwork in outdoor contexts",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Teamwork (C017), Trust Building (C018) and the problem-solving concepts (C019–C021) together constitute a social system under pressure — effective OAA team performance requires pupils to understand how individual contributions, communication and trust function as interdependent components of collective problem-solving."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Problem-solving in physical outdoor contexts is driven by causal reasoning — identifying why a challenge is not being solved, what effect a change of approach would have, and how team members' actions create or resolve the problem."
+            }
+          ],
           "concept_ids": ["PE-KS3-C017", "PE-KS3-C018", "PE-KS3-C019", "PE-KS3-C020", "PE-KS3-C021"],
           "rationale": "Teamwork (C017), Trust Building (C018), Problem-Solving in Physical Contexts (C019), Individual Problem-Solving (C020) and Group Problem-Solving (C021) all share extensive co_teach_hints and together represent the collaborative, interpersonal and cognitive dimensions of OAA. They are taught through team challenges and problem-solving activities that require pupils to work together under challenging conditions.",
           "inspired_by": "UK NC PE KS3 OAA teamwork and problem-solving strand"
@@ -521,6 +971,16 @@
         {
           "cluster_name": "Understand principles of effective performance and analyse own improvement",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Performance Analysis (C022) and Performance Comparison (C023) are evidence-based processes — pupils must gather, interpret and compare performance data to make substantiated claims about what is working and what needs to change, developing analytical reasoning grounded in observed evidence."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Effective Performance Principles (C031) and their Application (C032) involve understanding the causal relationships between technique, tactics and outcome — knowing why a performance was effective or ineffective requires identifying the causal factors that produced the result."
+            }
+          ],
           "concept_ids": ["PE-KS3-C031", "PE-KS3-C032", "PE-KS3-C022", "PE-KS3-C023"],
           "rationale": "Effective Performance Principles (C031) and Performance Principles Application (C032) provide the conceptual framework for analysis, while Performance Analysis (C022) and Performance Comparison (C023) are the practical analytical processes applied. Together they develop the metacognitive understanding of what makes performance effective and how to measure change over time.",
           "inspired_by": "UK NC PE KS3 analysis objective O005"
@@ -528,6 +988,16 @@
         {
           "cluster_name": "Demonstrate improvement and strive for personal best across activities",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "stability_change",
+              "rationale": "Personal Best Achievement (C025) and Demonstrating Improvement (C024) are outcomes that can only be understood against a stable baseline — the concept of improvement requires a fixed reference point from which change is measured, making stability-and-change the organising cognitive framework."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Performance Improvement (C008) involves identifying which specific changes in practice, technique or approach caused measurable performance gains, developing a causal understanding of the improvement process."
+            }
+          ],
           "concept_ids": ["PE-KS3-C008", "PE-KS3-C024", "PE-KS3-C025"],
           "rationale": "Performance Improvement (C008), Demonstrating Improvement (C024) and Personal Best Achievement (C025) — linked via co_teach_hints — represent the applied motivational and achievement dimension: actually showing measurable improvement and developing the mindset of striving for personal excellence.",
           "inspired_by": "UK NC PE KS3 personal best strand"
@@ -540,6 +1010,16 @@
         {
           "cluster_name": "Engage in sport and physical activity beyond school through community and clubs",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Community Sport Participation (C026) and Extracurricular Engagement (C027) introduce pupils to sport as a social system beyond school — clubs, leagues, volunteering and community structures form an interconnected ecosystem within which sustained participation is embedded."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Understanding the breadth of sporting opportunity in the community requires awareness that sport participation patterns change across the life course — school-mediated sport gives way to self-directed community engagement, and this transition is itself a form of continuity to be planned for."
+            }
+          ],
           "concept_ids": ["PE-KS3-C026", "PE-KS3-C027"],
           "rationale": "Community Sport Participation (C026) and Extracurricular Sport Engagement (C027) are directly linked via co_teach_hints and together introduce pupils to sport beyond the school timetable: awareness of community clubs, volunteering and the breadth of sporting opportunity available.",
           "inspired_by": "UK NC PE KS3 community engagement strand"
@@ -547,6 +1027,16 @@
         {
           "cluster_name": "Understand health benefits of physical activity and develop a lifelong active lifestyle",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Long-Term Health Benefits Understanding (C034) and Health Benefits Application (C035) are grounded in understanding the causal pathways from physical activity to physiological and psychological health outcomes — pupils must understand the mechanisms, not just the headline message."
+            },
+            {
+              "lens": "stability_change",
+              "rationale": "Lifelong Physical Activity Interest (C033) frames health knowledge in terms of sustaining behaviour across a lifetime — understanding what conditions allow active lifestyle habits to persist (stability) and what causes them to lapse (change) is the motivational and behavioural core of this cluster."
+            }
+          ],
           "concept_ids": ["PE-KS3-C033", "PE-KS3-C034", "PE-KS3-C035"],
           "rationale": "Lifelong Physical Activity Interest (C033), Long-Term Health Benefits Understanding (C034) and Health Benefits Application (C035) — linked via co_teach_hints — develop the motivational and knowledge base for sustained physical activity beyond school: understanding why staying active matters and making informed lifestyle choices.",
           "inspired_by": "UK NC PE KS3 healthy active lifestyle aims"
@@ -559,6 +1049,16 @@
         {
           "cluster_name": "Use and develop advanced tactics and strategies in competitive team and individual games",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Advanced Tactical Awareness, Tactical Development, Strategic Variety and Advanced Strategy Development (C001–C004) collectively require pupils to model the game as a complex adaptive system — opponents adjust, conditions vary, and strategy must be developed and diversified in response to the dynamic whole."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Creating new strategic approaches (C004) requires systematic causal reasoning about why existing strategies succeed or fail in specific conditions, and how different tactical configurations would change outcomes — this is applied causal modelling in a competitive context."
+            }
+          ],
           "concept_ids": ["PE-KS4-C001", "PE-KS4-C002", "PE-KS4-C003", "PE-KS4-C004"],
           "rationale": "Advanced Tactical Awareness (C001), Tactical Development (C002), Strategic Variety (C003) and Advanced Strategy Development (C004) form an integrated cluster at KS4: tactical understanding, its ongoing refinement through experience, the ability to use varied strategies and the capacity to create new strategic approaches are all co-taught through sustained competitive game play.",
           "inspired_by": "UK NC PE KS4 games objective"
@@ -571,6 +1071,16 @@
         {
           "cluster_name": "Improve and refine advanced sport-specific techniques across competitive activities",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Advanced Sport-Specific Techniques (C007) and Advanced Technical Development (C008) at KS4 require sophisticated understanding of how precise body mechanics — loading, alignment, sequencing of joint actions — determine the power, accuracy and efficiency of competitive performance."
+            },
+            {
+              "lens": "stability_change",
+              "rationale": "Complex Physical Activity Engagement (C005) in demanding contexts tests whether refined techniques remain stable under competition pressure and fatigue — the KS4 challenge is maintaining technical quality as conditions change, requiring understanding of what makes performance robust."
+            }
+          ],
           "concept_ids": ["PE-KS4-C005", "PE-KS4-C007", "PE-KS4-C008"],
           "rationale": "Complex Physical Activity Engagement (C005), Advanced Sport-Specific Techniques (C007) and Advanced Technical Development (C008) together constitute KS4 technique development: tackling demanding activities, refining sophisticated sport-specific techniques and continuing the process of technical development through deliberate practice.",
           "inspired_by": "UK NC PE KS4 competitive sports objective"
@@ -583,6 +1093,16 @@
         {
           "cluster_name": "Participate in outdoor activities across varied environments adapting to challenge",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Environmental Adaptability (C011) in varied outdoor settings requires modelling each new environment as a system with its own dynamics — terrain, weather, group capability, equipment constraints — and adjusting strategies accordingly, making complex systems thinking the core cognitive demand."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Demanding Physical Challenge Management (C006) involves understanding causal chains between environmental conditions, physical decisions and safety outcomes — at KS4 the stakes and complexity increase, requiring more sophisticated consequential reasoning than at KS3."
+            }
+          ],
           "concept_ids": ["PE-KS4-C006", "PE-KS4-C010", "PE-KS4-C011"],
           "rationale": "Demanding Physical Challenge Management (C006), Extended Outdoor Activities Participation (C010) and Environmental Adaptability (C011) are directly linked via co_teach_hints and together represent KS4 OAA: engaging with more demanding and varied outdoor environments, managing greater physical challenge and adapting skills and strategies to unfamiliar conditions.",
           "inspired_by": "UK NC PE KS4 OAA objective"
@@ -595,6 +1115,16 @@
         {
           "cluster_name": "Evaluate performance critically and demonstrate improvement across activities",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Performance Evaluation (C012) and Advanced Performance Improvement (C009) at KS4 require pupils to construct analytical arguments from performance evidence — identifying what the data shows, why it shows that, and what action is justified — with greater sophistication and cross-activity range than at KS3."
+            },
+            {
+              "lens": "stability_change",
+              "rationale": "Advanced Personal Best Achievement (C014) and Cross-Activity Performance Improvement (C013) require understanding which performance capabilities transfer stably across activities and which must be rebuilt — tracking improvement across a wider range of activities foregrounds the relationship between stable physical principles and activity-specific change."
+            }
+          ],
           "concept_ids": ["PE-KS4-C009", "PE-KS4-C012", "PE-KS4-C013", "PE-KS4-C014"],
           "rationale": "Advanced Performance Improvement (C009), Performance Evaluation (C012), Cross-Activity Performance Improvement (C013) and Advanced Personal Best Achievement (C014) are linked via co_teach_hints and together constitute KS4 performance evaluation: more sophisticated analytical frameworks applied across a wider range of activities, consistently striving for personal excellence.",
           "inspired_by": "UK NC PE KS4 performance evaluation objective"
@@ -607,6 +1137,16 @@
         {
           "cluster_name": "Develop personal fitness and understand components of a healthy active lifestyle",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Healthy Lifestyle Understanding (C017) covers components of fitness and training principles as an interconnected system — cardiovascular fitness, muscular strength, flexibility and body composition interact and respond together to different training stimuli, requiring a systemic rather than component-by-component understanding."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Understanding physiological benefits of exercise is understanding specific causal pathways — how aerobic training causes cardiovascular adaptations, how resistance training causes muscular hypertrophy — making mechanistic causal knowledge the foundation of intelligent Personal Fitness Development (C015)."
+            }
+          ],
           "concept_ids": ["PE-KS4-C017", "PE-KS4-C015"],
           "rationale": "Healthy Lifestyle Understanding (C017) provides the conceptual knowledge base — components of fitness, training principles, physiological benefits — that informs Personal Fitness Development (C015). Understanding must precede purposeful, self-directed fitness development.",
           "inspired_by": "UK NC PE KS4 fitness and health knowledge strand"
@@ -614,6 +1154,16 @@
         {
           "cluster_name": "Apply fitness knowledge to promote an active lifestyle through diverse physical activities",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Active Lifestyle Promotion (C016) involves translating understanding of why exercise benefits health into behaviour — the causal link between activity choices and health outcomes must be internalised well enough to shape personal decision-making and influence others."
+            },
+            {
+              "lens": "stability_change",
+              "rationale": "Physical Activity Diversity (C020) addresses the challenge of sustaining an active lifestyle across changing life circumstances — engaging with diverse activities builds resilience by ensuring that no single activity's unavailability removes the whole lifestyle, making diversity a strategy for stability."
+            }
+          ],
           "concept_ids": ["PE-KS4-C016", "PE-KS4-C020"],
           "rationale": "Active Lifestyle Promotion (C016) and Physical Activity Diversity (C020) represent the applied dimension: actually making active lifestyle choices and engaging in a breadth of physical activities, translating health knowledge into sustained personal behaviour.",
           "inspired_by": "UK NC PE KS4 active lifestyle aims"
@@ -626,6 +1176,16 @@
         {
           "cluster_name": "Sustain regular participation in community sport and extracurricular physical activity",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "stability_change",
+              "rationale": "The KS4 emphasis on sustained rather than initial engagement explicitly foregrounds the question of what conditions allow regular participation habits to persist over time — understanding the factors that support or disrupt sporting habits is the core behavioural and motivational challenge."
+            },
+            {
+              "lens": "systems_models",
+              "rationale": "Sustained engagement in community sport requires understanding the social system — club structures, commitments, peer networks, volunteer roles — that supports regular participation, rather than treating each session as an isolated individual act."
+            }
+          ],
           "concept_ids": ["PE-KS4-C018", "PE-KS4-C019"],
           "rationale": "Regular Community Sport Participation (C018) and Sustained Extracurricular Engagement (C019) together constitute KS4 community engagement: both address the ongoing habit and commitment to sport and physical activity outside school, with the emphasis at KS4 on sustained rather than initial engagement.",
           "inspired_by": "UK NC PE KS4 community sport aims"

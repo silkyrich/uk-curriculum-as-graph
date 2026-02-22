@@ -1,0 +1,92 @@
+[
+  {
+    "lens_id": "patterns",
+    "lens_name": "Patterns",
+    "description": "Identifying regularities, making predictions, and classifying using observed patterns.",
+    "key_question": "What patterns can I notice here, and what do they allow me to predict?",
+    "applies_to_subjects": ["Mathematics", "Science", "Music", "English"],
+    "inspired_by": "NGSS CCC 1 — Patterns",
+    "agent_prompt": "Use the PATTERNS lens: prompt pupils to notice what repeats or follows a rule, classify examples by shared features, identify exceptions, and predict what comes next. Useful questions: 'What do you notice?', 'Does this always happen?', 'What would you expect next?', 'Can you sort these by...?'"
+  },
+  {
+    "lens_id": "cause_and_effect",
+    "lens_name": "Cause and Effect",
+    "description": "Identifying mechanisms and explanations for why things happen, and testing causal claims.",
+    "key_question": "What caused this to happen, and how do we know?",
+    "applies_to_subjects": ["Science", "History", "Geography", "Religious Studies"],
+    "inspired_by": "NGSS CCC 2 — Cause and Effect: Mechanism and Explanation",
+    "agent_prompt": "Use the CAUSE AND EFFECT lens: prompt pupils to distinguish correlation from causation, design tests that isolate variables, construct 'if… then… because…' explanations, and identify multiple causes. Useful questions: 'What made this happen?', 'How could we test that?', 'Is there another reason?', 'What would happen if we changed...?'"
+  },
+  {
+    "lens_id": "scale_proportion_quantity",
+    "lens_name": "Scale, Proportion and Quantity",
+    "description": "Reasoning about size, number, and measurement across different scales; understanding ratios and relative magnitude.",
+    "key_question": "How big, how many, or how much — and how does that change how we think about it?",
+    "applies_to_subjects": ["Mathematics", "Science", "Geography"],
+    "inspired_by": "NGSS CCC 3 — Scale, Proportion, and Quantity",
+    "agent_prompt": "Use the SCALE, PROPORTION AND QUANTITY lens: prompt pupils to compare quantities using ratios and percentages, consider what changes when scale changes, and choose appropriate units of measurement. Useful questions: 'How many times bigger?', 'What fraction of the whole?', 'What changes when we zoom in/out?', 'Which units fit best here?'"
+  },
+  {
+    "lens_id": "systems_models",
+    "lens_name": "Systems and System Models",
+    "description": "Identifying the components, interactions, and boundaries of a system; using models to explain and predict system behaviour.",
+    "key_question": "What are the parts of this system, how do they interact, and what happens when something changes?",
+    "applies_to_subjects": ["Science", "Geography", "Computing"],
+    "inspired_by": "NGSS CCC 4 — Systems and System Models",
+    "agent_prompt": "Use the SYSTEMS AND SYSTEM MODELS lens: prompt pupils to map the parts of a system and their connections, identify inputs and outputs, trace feedback loops, and predict what happens when one component changes. Useful questions: 'What are all the parts?', 'How does A affect B?', 'What would happen if this part was removed?', 'Where are the boundaries of this system?'"
+  },
+  {
+    "lens_id": "energy_matter",
+    "lens_name": "Energy and Matter",
+    "description": "Tracking flows of energy and cycling of matter through systems; identifying conservation and transformation.",
+    "key_question": "Where does the energy come from, where does it go, and is anything conserved?",
+    "applies_to_subjects": ["Science", "Design and Technology", "Geography"],
+    "inspired_by": "NGSS CCC 5 — Energy and Matter: Flows, Cycles, and Conservation",
+    "agent_prompt": "Use the ENERGY AND MATTER lens: prompt pupils to trace energy pathways, identify transformations between energy forms, track matter through cycles, and apply conservation thinking. Useful questions: 'Where did the energy come from?', 'What happened to it?', 'Is anything created or destroyed?', 'Can you draw the energy flow?'"
+  },
+  {
+    "lens_id": "structure_function",
+    "lens_name": "Structure and Function",
+    "description": "Connecting how something is built or arranged (structure) to what it does or enables (function).",
+    "key_question": "How does the structure of this thing enable or explain what it does?",
+    "applies_to_subjects": ["Science", "Design and Technology", "Art and Design"],
+    "inspired_by": "NGSS CCC 6 — Structure and Function",
+    "agent_prompt": "Use the STRUCTURE AND FUNCTION lens: prompt pupils to examine physical features and ask why they are shaped or arranged as they are, connect form to purpose, and compare structures that serve the same function differently. Useful questions: 'Why is it shaped like that?', 'What would happen if this part were different?', 'What job does each part do?', 'Can you design something that does the same job a different way?'"
+  },
+  {
+    "lens_id": "stability_change",
+    "lens_name": "Stability and Change",
+    "description": "Examining what makes systems stable, what triggers change, and the rates and scales of change.",
+    "key_question": "What keeps this stable, what causes change, and how quickly does change happen?",
+    "applies_to_subjects": ["Science", "Geography"],
+    "inspired_by": "NGSS CCC 7 — Stability and Change",
+    "agent_prompt": "Use the STABILITY AND CHANGE lens: prompt pupils to identify what conditions keep a system in balance, what disrupts equilibrium, and how change can be gradual or sudden. Useful questions: 'What keeps this the same?', 'What would tip it into change?', 'Is the change reversible?', 'How fast is this changing, and why?'"
+  },
+  {
+    "lens_id": "continuity_change",
+    "lens_name": "Continuity and Change Over Time",
+    "description": "Tracking what persists and what transforms across historical time; distinguishing slow evolution from sudden rupture.",
+    "key_question": "What has stayed the same, what has changed, and what drove that change?",
+    "applies_to_subjects": ["History", "Geography"],
+    "inspired_by": "UK NC History — historical concepts; adapted from chronological understanding strand",
+    "agent_prompt": "Use the CONTINUITY AND CHANGE OVER TIME lens: prompt pupils to construct timelines, identify turning points, distinguish what changed from what persisted, and explain what drove change. Useful questions: 'What was the same before and after?', 'What was the turning point?', 'Was this a sudden change or a gradual shift?', 'Who or what drove this change?'"
+  },
+  {
+    "lens_id": "perspective_interpretation",
+    "lens_name": "Perspective and Interpretation",
+    "description": "Recognising that accounts, sources, and meanings are shaped by the standpoint of the observer or author.",
+    "key_question": "Whose perspective is this, what shapes it, and what might be missing?",
+    "applies_to_subjects": ["History", "English Literature", "Religious Studies", "Geography"],
+    "inspired_by": "UK NC History — historical interpretation; NC English — reading for meaning and viewpoint",
+    "agent_prompt": "Use the PERSPECTIVE AND INTERPRETATION lens: prompt pupils to identify the author's or actor's viewpoint, consider what information or experience shapes that perspective, look for omissions or contradictions, and compare multiple accounts. Useful questions: 'Who wrote/said this, and why?', 'What might they have left out?', 'How would someone else see this differently?', 'What would change your view?'"
+  },
+  {
+    "lens_id": "evidence_argument",
+    "lens_name": "Evidence and Argument",
+    "description": "Evaluating the quality and relevance of evidence, and constructing well-reasoned arguments from it.",
+    "key_question": "What is the evidence, how reliable is it, and what conclusions can it support?",
+    "applies_to_subjects": ["All subjects"],
+    "inspired_by": "NGSS CCC — crosscutting; UK NC English — writing to argue and persuade; NC History — source analysis",
+    "agent_prompt": "Use the EVIDENCE AND ARGUMENT lens: prompt pupils to distinguish evidence from assertion, evaluate source reliability, construct claims with supporting evidence, and anticipate counter-arguments. Useful questions: 'What evidence supports this?', 'How reliable is this source?', 'What would count as evidence against it?', 'Is the conclusion the only one the evidence supports?'"
+  }
+]

@@ -27,6 +27,13 @@ EXTRACTIONS_DIR  = PROJECT_ROOT / "layers" / "uk-curriculum" / "data" / "extract
 
 VALID_CONTENT_TYPES = {"introduction", "practice"}
 
+VALID_THINKING_LENSES = {
+    "patterns", "cause_and_effect", "scale_proportion_quantity",
+    "systems_models", "energy_matter", "structure_function",
+    "stability_change", "continuity_change",
+    "perspective_interpretation", "evidence_argument",
+}
+
 
 # ── Load ground-truth concept data from extraction files ─────────────────────
 
@@ -78,6 +85,30 @@ def validate_file(def_file, domain_concepts):
                     f"  {domain_id} cluster {i}: invalid cluster_type '{ctype}' "
                     f"(must be 'introduction' or 'practice')"
                 )
+
+            # thinking_lenses must be present with valid IDs and non-empty rationales
+            lenses = cluster.get("thinking_lenses", [])
+            if not lenses:
+                warnings.append(
+                    f"  {domain_id} cluster {i} '{cname[:40]}': no thinking_lenses set"
+                )
+            else:
+                for j, lens_obj in enumerate(lenses, 1):
+                    lens_id = lens_obj.get("lens", "")
+                    rationale = lens_obj.get("rationale", "")
+                    if lens_id not in VALID_THINKING_LENSES:
+                        errors.append(
+                            f"  {domain_id} cluster {i} lens {j}: invalid lens '{lens_id}' "
+                            f"(valid: {sorted(VALID_THINKING_LENSES)})"
+                        )
+                    if not rationale or not rationale.strip():
+                        errors.append(
+                            f"  {domain_id} cluster {i} lens {j} '{lens_id}': missing rationale"
+                        )
+                if len(lenses) > 3:
+                    warnings.append(
+                        f"  {domain_id} cluster {i}: {len(lenses)} lenses — consider trimming to 3 max"
+                    )
 
             # cluster_name must be non-empty
             if not cname or not cname.strip():

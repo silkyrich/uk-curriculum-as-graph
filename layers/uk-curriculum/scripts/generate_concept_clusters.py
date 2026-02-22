@@ -307,6 +307,11 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
             if len(concept_ids) > 3:
                 cluster_name += f" (+{len(concept_ids) - 3})"
 
+        # Compute primary thinking lens (convenience property for simple queries)
+        thinking_lens_primary = ""
+        if cluster.get("thinking_lenses"):
+            thinking_lens_primary = cluster["thinking_lenses"][0].get("lens", "")
+
         # Create cluster node
         session.run("""
             MERGE (cc:ConceptCluster {cluster_id: $cluster_id})
@@ -317,6 +322,7 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
                 cc.rationale = $rationale,
                 cc.inspired_by = $inspired_by,
                 cc.is_curated = $is_curated,
+                cc.thinking_lens_primary = $thinking_lens_primary,
                 cc.display_category = 'UK Curriculum',
                 cc.display_color = '#6366F1',
                 cc.display_icon = 'view_module',
@@ -330,6 +336,7 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
             rationale=cluster.get("rationale", ""),
             inspired_by=cluster.get("inspired_by", ""),
             is_curated=bool(cluster.get("cluster_name")),
+            thinking_lens_primary=thinking_lens_primary,
         )
         stats["clusters_created"] += 1
         stats[f"type_{cluster['cluster_type']}"] += 1
@@ -340,6 +347,20 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
             MATCH (cc:ConceptCluster {cluster_id: $cluster_id})
             MERGE (d)-[:HAS_CLUSTER]->(cc)
         """, domain_id=domain_id, cluster_id=cluster_id)
+
+        # ThinkingLens links — one APPLIES_LENS rel per lens option, ranked 1-based
+        for rank, lens_obj in enumerate(cluster.get("thinking_lenses", []), 1):
+            session.run("""
+                MATCH (cc:ConceptCluster {cluster_id: $cluster_id})
+                MATCH (tl:ThinkingLens {lens_id: $lens_id})
+                MERGE (cc)-[r:APPLIES_LENS {rank: $rank}]->(tl)
+                SET r.rationale = $rationale
+            """,
+                cluster_id=cluster_id,
+                lens_id=lens_obj["lens"],
+                rank=rank,
+                rationale=lens_obj.get("rationale", ""),
+            )
 
         # Cluster -> Concepts
         for cid in concept_ids:
@@ -401,6 +422,7 @@ def build_curated_clusters(curated_defs, concepts, prereq_edges, co_teach_edges,
             "cluster_name": defn.get("cluster_name", ""),
             "rationale": defn.get("rationale", ""),
             "inspired_by": defn.get("inspired_by", ""),
+            "thinking_lenses": defn.get("thinking_lenses", []),
             "is_keystone_cluster": has_keystone,
         })
 

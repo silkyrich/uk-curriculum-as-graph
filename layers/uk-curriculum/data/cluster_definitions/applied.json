@@ -11,6 +11,16 @@
         {
           "cluster_name": "Understand algorithms and debug simple programs",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Debugging requires pupils to trace how each instruction in a program causes a specific change in output — identifying which instruction is the cause of the unexpected behaviour is the core cognitive act."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Logical reasoning about program behaviour involves recognising that the same sequence of instructions will always produce the same result, establishing the notion of predictable, repeatable computational patterns."
+            }
+          ],
           "concept_ids": ["CO-KS12-C003"],
           "rationale": "At KS1 the sole programming concept is debugging and logical reasoning — the foundational skill of reading a program, predicting its behaviour and fixing errors. A single-concept cluster correctly represents the domain's narrow but important focus.",
           "inspired_by": "NC Computing KS1: create and debug simple programs; use logical reasoning to predict behaviour"
@@ -23,6 +33,16 @@
         {
           "cluster_name": "Understand algorithms and apply computational thinking",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Decomposition requires pupils to model a complex problem as a system of smaller interacting parts — understanding that the whole can be broken into components that each perform a defined function is a systems-thinking act."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Algorithms are fundamentally repeatable patterns of instruction; recognising that the same problem type can be solved with the same algorithmic pattern is the key generalisation pupils must form at this stage."
+            }
+          ],
           "concept_ids": ["CO-KS12-C001", "CO-KS12-C006"],
           "rationale": "Algorithms and decomposition/computational thinking are tightly co-taught at KS2: understanding what an algorithm is (C001) is the prerequisite for decomposing problems into algorithms (C006), and C006 lists C001 in its co_teach_hints. Together they form the conceptual foundation before programming practice.",
           "inspired_by": "CC Math 'Understand algorithms and computational thinking'"
@@ -30,6 +50,16 @@
         {
           "cluster_name": "Design, write and debug programs using sequence, selection and repetition",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Writing and debugging programs with sequence, selection and repetition demands that pupils predict the effect of each control structure — tracing how changing a condition in a selection statement changes what the program does is a direct cause-and-effect analysis."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "The three control structures are themselves patterns of execution; pupils must recognise which structural pattern (loop, branch, sequence) is the right template for a given problem, applying pattern recognition to programming design choices."
+            }
+          ],
           "concept_ids": ["CO-KS12-C002"],
           "rationale": "Programming with the three control structures (sequence, selection, repetition) is the practical application domain at KS2, distinct from the conceptual/algorithmic cluster. Pupils apply their understanding of algorithms by implementing them in programs.",
           "inspired_by": "NC Computing KS2: design, write and debug programs"
@@ -42,6 +72,16 @@
         {
           "cluster_name": "Use technology safely and develop digital citizenship",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Online safety education is built on helping pupils understand the consequences of sharing personal information or behaving unkindly online — reasoning about cause and effect (what happens if I share this?) is the central cognitive demand."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Digital citizenship requires pupils to consider how their online actions are experienced by others, developing the perspective-taking that underpins responsible behaviour in digital environments."
+            }
+          ],
           "concept_ids": ["CO-KS12-C005"],
           "rationale": "Online safety and digital citizenship is the sole concept in this domain. It encompasses both the practical safety skills (protecting personal information) and the ethical awareness (responsible behaviour online) that underpin all digital activity at KS1.",
           "inspired_by": "NC Computing KS1: use technology safely and respectfully"
@@ -54,6 +94,16 @@
         {
           "cluster_name": "Understand computer networks and use search technologies critically",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Understanding the internet as a network requires pupils to model how devices, routers and servers interact as a system — each component has a role and the system's behaviour emerges from how the parts communicate."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluating search results critically requires pupils to assess the quality and reliability of evidence — deciding whether a source is trustworthy is an argument-evaluation task grounded in evidence appraisal."
+            }
+          ],
           "concept_ids": ["CO-KS12-C004"],
           "rationale": "Networks and the Internet is the sole concept in the KS2 digital literacy domain, covering both the infrastructure of the internet and the digital literacy skill of evaluating search results. A single precise cluster correctly covers the domain.",
           "inspired_by": "NC Computing KS2: understand computer networks including the internet"
@@ -66,6 +116,16 @@
         {
           "cluster_name": "Develop design ideas against criteria for a purpose and user",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Setting design criteria requires pupils to articulate what the product must do (function) and how it must be structured to achieve that — the criteria themselves encode structure-function reasoning about the intended product."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluating whether a design idea meets criteria is a claim-and-evidence act: pupils must justify design decisions by arguing that a particular choice satisfies the stated criteria for the intended user."
+            }
+          ],
           "concept_ids": ["DT-KS1-C001", "DT-KS1-C002"],
           "rationale": "The iterative design process (C001) and design criteria (C002) are inseparable at KS1: criteria define what success looks like, and the process provides the cycle within which criteria are used. These two process concepts are always taught together as the design phase of the Design–Make–Evaluate cycle.",
           "inspired_by": "DT Design–Make–Evaluate cycle"
@@ -78,6 +138,16 @@
         {
           "cluster_name": "Use tools safely and apply joining and finishing techniques",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Selecting joining techniques requires pupils to reason about how the method of joining (gluing, stapling, sewing) must match the structural demands of the product — the function of the join determines which technique is appropriate."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Safe tool use is built on understanding that specific actions with tools produce specific consequences — applying too much force, holding a blade incorrectly, or choosing the wrong tool each has a predictable and teachable effect."
+            }
+          ],
           "concept_ids": ["DT-KS1-C008", "DT-KS1-C009"],
           "rationale": "Safe tool use (C008) is the prerequisite for joining and finishing (C009): pupils must handle tools correctly before they can execute joins. These two making skills always occur together in practical DT sessions and are naturally co-taught.",
           "inspired_by": "NC DT KS1: select from and use a range of tools and equipment"
@@ -90,6 +160,16 @@
         {
           "cluster_name": "Investigate existing products and evaluate work against design criteria",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluating whether a product meets its design criteria requires pupils to form a judgement supported by evidence from investigation or testing — the evaluative act is a structured argument from evidence to conclusion."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Investigating existing products involves disassembly thinking: pupils examine how the structure and materials of an existing product enable it to perform its function, making structure-function reasoning the primary analytical tool."
+            }
+          ],
           "concept_ids": ["DT-KS1-C010"],
           "rationale": "Product analysis and evaluation is the sole concept in the Evaluate domain at KS1. It covers both the investigation of existing products and the reflective self-assessment of pupils' own work against criteria — the evaluative strand of the Design–Make–Evaluate cycle.",
           "inspired_by": "NC DT KS1: explore and evaluate a range of existing products"
@@ -102,6 +182,16 @@
         {
           "cluster_name": "Understand materials and their properties",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding material characteristics is fundamentally about how the internal structure of a material (its texture, rigidity, flexibility) determines what it can be used for — a foundational structure-function relationship."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Pupils learn to group materials by shared properties (all rigid materials behave similarly when cut; all fabrics can be joined with thread), building pattern recognition that supports generalisation across new materials."
+            }
+          ],
           "concept_ids": ["DT-KS1-C003"],
           "rationale": "Materials and their characteristics (C003) underpins both structures and mechanisms: pupils must understand material properties before they can purposefully select materials for building stable structures or creating moving products. Teaching this first provides the knowledge base for the other two concepts.",
           "inspired_by": "NC DT KS1: select from and use a wide range of materials"
@@ -109,6 +199,16 @@
         {
           "cluster_name": "Explore structures, stability, levers and mechanisms in products",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Exploring how structures achieve stability and how mechanisms produce movement directly exercises structure-function reasoning — pupils investigate how each design choice (triangulation, pivot placement) enables the product to perform its intended function."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Mechanisms are cause-and-effect machines: a lever converts a small input force into a larger output force, and pupils must understand the causal chain from input motion through the mechanism to output motion."
+            }
+          ],
           "concept_ids": ["DT-KS1-C004", "DT-KS1-C005"],
           "rationale": "Structures and stability (C004) and mechanisms (C005) are both applied technical concepts that pupils investigate through hands-on making. Both extend material knowledge into engineering principles and are typically taught in the context of the same making project — building a stable structure that also incorporates a moving part.",
           "inspired_by": "NC DT KS1: build structures; explore and use mechanisms"
@@ -121,6 +221,16 @@
         {
           "cluster_name": "Understand healthy diet principles and where food comes from",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "The concept of a healthy and varied diet requires pupils to model the body as a system with different nutritional needs — understanding that the diet as a whole must provide a balance of inputs (food types) to keep the system functioning well."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Food origins provides a causal chain linking farming practices and environmental conditions to the food that arrives on the plate — pupils trace the pathway from source to consumer, understanding how decisions at each stage affect food quality."
+            }
+          ],
           "concept_ids": ["DT-KS1-C006", "DT-KS1-C007"],
           "rationale": "Healthy and varied diet (C006) and food origins (C007) are explicitly co-taught at KS1: C007 carries C006 in its co_teach_hints. Understanding what constitutes a healthy diet is enriched by knowing where different foods come from, and both are foundational to food education before practical cooking begins.",
           "inspired_by": "NC DT KS1: Cooking and Nutrition"
@@ -133,6 +243,16 @@
         {
           "cluster_name": "Use research and design criteria to develop and communicate design ideas",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Research-informed design requires pupils to use evidence gathered about user needs and existing products to justify their design criteria — each design decision becomes a claim that must be supported by research evidence."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Technical drawing (annotated sketches, exploded diagrams) communicates not just what the product looks like but how its structure will enable its function — annotating design decisions makes the structure-function reasoning explicit."
+            }
+          ],
           "concept_ids": ["DT-KS2-C001", "DT-KS2-C002"],
           "rationale": "Research-informed design (C001) and technical drawing/design communication (C002) are the two facets of the KS2 design phase: research generates and validates the design criteria, while technical drawing communicates the design ideas clearly enough to be made. They are always taught together as the expanded design phase at KS2.",
           "inspired_by": "NC DT KS2: use research and develop design criteria; annotated sketches, exploded diagrams, computer-aided design"
@@ -145,6 +265,16 @@
         {
           "cluster_name": "Make accurately using appropriate tools, materials and processes",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Selecting functional and aesthetic material properties for a specific application requires pupils to match material characteristics to the structural and functional demands of the product — a direct structure-function reasoning task."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Accurate making involves understanding how tool choices and process sequences cause different surface or structural outcomes — a pupil choosing the wrong cutting technique or material treatment must reason about the causal effect on the finished product."
+            }
+          ],
           "concept_ids": ["DT-KS2-C006", "DT-KS2-C007"],
           "rationale": "Accurate making (C006) and functional/aesthetic material properties (C007) are deeply intertwined at KS2: selecting the right material (C007) is inseparable from executing the making with precision (C006). Both concepts are practised simultaneously in every making project and naturally co-taught.",
           "inspired_by": "NC DT KS2: select from and accurately use a wider range of tools, equipment and materials"
@@ -157,6 +287,16 @@
         {
           "cluster_name": "Investigate existing products and understand the history of design and technology",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Investigating existing products requires pupils to gather evidence through disassembly and testing, then build an argument about why the product was designed as it was — evaluation is a structured claim supported by evidence from investigation."
+            },
+            {
+              "lens": "stability_change",
+              "rationale": "Studying the history and influence of D&T (Brunel, Dyson) asks pupils to understand why designs changed over time — what made earlier solutions insufficient and what new knowledge or materials enabled a better solution — making this a stability-and-change analysis."
+            }
+          ],
           "concept_ids": ["DT-KS2-C008", "DT-KS2-C009"],
           "rationale": "Product investigation (C008) and the history and influence of D&T (C009) are explicitly co-taught: C009 carries C008 in its co_teach_hints. Investigating existing products is the practical activity through which historical and cultural context becomes meaningful — studying Brunel's bridges or Dyson's vacuums combines both concepts naturally.",
           "inspired_by": "NC DT KS2: investigate and analyse existing products; understand how key events and individuals have shaped the world"
@@ -169,6 +309,16 @@
         {
           "cluster_name": "Understand and apply mechanical systems in products",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Advanced mechanical systems (gears, pulleys, cams) are studied precisely to understand how their structural arrangement — gear ratios, cam profile, pulley configuration — determines the motion output they produce."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Each mechanical system is a cause-and-effect machine: changing the gear ratio changes the output speed and torque in a predictable way, and pupils must understand these causal relationships to design effective mechanisms."
+            }
+          ],
           "concept_ids": ["DT-KS2-C003"],
           "rationale": "Advanced mechanical systems (C003) builds directly on KS1 mechanisms and is taught before electrical systems, providing the motion/force conceptual framework that underpins understanding of how electrical and computer-controlled systems also produce useful outputs.",
           "inspired_by": "NC DT KS2: understand and use mechanical systems"
@@ -176,6 +326,16 @@
         {
           "cluster_name": "Design and build electrical and computer-controlled systems in products",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Electrical and computer-controlled systems are multi-component systems where input sensors, a controller, and output actuators interact — pupils must model the system as a whole to design a product where all components work together."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Programming a microcontroller to control a circuit requires pupils to reason about the causal chain from sensor input through program logic to actuator output — every program instruction causes a specific, traceable physical effect."
+            }
+          ],
           "concept_ids": ["DT-KS2-C004", "DT-KS2-C005"],
           "rationale": "Electrical systems (C004) and computing control (C005) are sequentially related — computing control typically operates by switching electrical components on and off — and are best co-taught in physical computing projects where pupils program a microcontroller to control a circuit. These represent the most complex technical knowledge at KS2.",
           "inspired_by": "NC DT KS2: understand and use electrical systems; apply understanding of computing to program, monitor and control products"
@@ -188,6 +348,16 @@
         {
           "cluster_name": "Prepare and cook dishes using appropriate techniques and seasonal ingredients",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Cooking techniques work through specific physical and chemical transformations — heat causes proteins to denature, acid causes pastry to become flaky — and pupils must understand these causal processes to select and apply techniques correctly."
+            },
+            {
+              "lens": "systems_models",
+              "rationale": "Seasonality and sourcing requires pupils to model the food supply system: understanding how growing season, geography and supply chain decisions determine ingredient availability and quality positions food choices within a larger system."
+            }
+          ],
           "concept_ids": ["DT-KS2-C010", "DT-KS2-C011"],
           "rationale": "Cooking techniques (C010) and seasonality/ingredient sourcing (C011) are explicitly co-taught: C011 carries C010 in its co_teach_hints. Practical cooking lessons at KS2 naturally incorporate discussion of where ingredients come from and why seasonal choices matter, integrating both concepts.",
           "inspired_by": "NC DT KS2: prepare and cook a variety of savoury dishes; understand seasonality"
@@ -200,6 +370,16 @@
         {
           "cluster_name": "Develop pronunciation and communicate in the target language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Phonology and pronunciation in a foreign language is built on recognising and internalising the sound patterns of the target language — pupils must perceive and reproduce the phonemic patterns that differ from English."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Communicative competence requires pupils to adapt their language to the listener's needs and the conversational context — a perspective-taking skill that goes beyond accuracy to encompass appropriacy and audience awareness."
+            }
+          ],
           "concept_ids": ["LA-KS2-C001", "LA-KS2-C004"],
           "rationale": "Phonology and pronunciation (C001) and communicative competence (C004) are the two essential dimensions of oracy in a foreign language at KS2: pupils must develop accurate sound production (C001) in order to communicate meaningfully (C004). Both are practised together in every listening and speaking activity.",
           "inspired_by": "MFL four skills framework: Listening and Speaking"
@@ -212,6 +392,16 @@
         {
           "cluster_name": "Read and respond to texts in the target language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Decoding written text in a foreign language requires pupils to recognise the grapheme-phoneme correspondence patterns of the target language — mapping written symbols to sounds follows pattern recognition rather than rule application at this stage."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Reading comprehension involves inferring meaning from context and understanding the writer's purpose, both of which require pupils to interpret text from the perspective of a reader navigating an unfamiliar language system."
+            }
+          ],
           "concept_ids": ["LA-KS2-C006"],
           "rationale": "Reading in the target language is the sole concept in this domain at KS2, covering the decoding of written text using phonological knowledge and the development of reading comprehension. A single precise cluster correctly represents the domain.",
           "inspired_by": "MFL four skills framework: Reading"
@@ -224,6 +414,16 @@
         {
           "cluster_name": "Write accurately by reproducing and adapting learned phrases",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Adapting learned phrases to new contexts depends on recognising the structural patterns underlying those phrases — noticing that a greeting pattern, a colour agreement, or a number pattern can be recombined to produce new sentences."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Correct spelling in a foreign language is governed by phoneme-grapheme rules where making the wrong choice causes an intelligibility or accuracy failure — pupils must understand how each spelling decision affects the written form produced."
+            }
+          ],
           "concept_ids": ["LA-KS2-C007"],
           "rationale": "Writing in the target language is the sole concept in this domain at KS2, covering the progression from copying to adapting learned phrases using correct spelling and basic grammar. A single cluster correctly represents the domain's focus.",
           "inspired_by": "MFL four skills framework: Writing"
@@ -236,6 +436,16 @@
         {
           "cluster_name": "Develop vocabulary and core grammatical structures",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Grammar acquisition is fundamentally about internalising the patterns that govern word order, agreement and inflection — pupils must recognise that the same grammatical pattern applies across many different vocabulary items."
+            },
+            {
+              "lens": "systems_models",
+              "rationale": "Vocabulary and grammar together form a generative system: a finite set of words and rules combines to produce an infinite range of utterances, and pupils must begin to model this system to use the language productively."
+            }
+          ],
           "concept_ids": ["LA-KS2-C002", "LA-KS2-C003"],
           "rationale": "Vocabulary acquisition (C002) and grammar (C003) are the two foundational knowledge components that pupils must develop before they can achieve language awareness and transfer. They are always taught together as the grammatical and lexical building blocks of the target language.",
           "inspired_by": "MFL: vocabulary and grammar as enabling knowledge"
@@ -243,6 +453,16 @@
         {
           "cluster_name": "Develop language awareness and understand how languages connect",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Language awareness requires pupils to step outside their first language and observe both languages as systems from a metalinguistic perspective — noticing similarities and differences in structure is an interpretive act that requires shifting viewpoint."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Transfer between languages is enabled by recognising shared patterns — cognates, parallel grammatical structures, or borrowed vocabulary — so pattern recognition across language systems is the cognitive mechanism that makes transfer possible."
+            }
+          ],
           "concept_ids": ["LA-KS2-C005"],
           "rationale": "Language awareness and transfer (C005) co-teaches with both C002 and C003 and represents a higher-order metacognitive concept: pupils reflect on how the target language relates to English and other known languages. This is taught after and alongside vocabulary and grammar, making it a distinct practice cluster.",
           "inspired_by": "MFL KS2: note the patterns and rules that emerge"
@@ -255,6 +475,16 @@
         {
           "cluster_name": "Understand enterprise, business objectives and the stakeholder environment",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "PESTLE analysis models the business as an entity operating within an environment of interacting external forces — the systems-thinking demand is to understand how political, economic, social and other system-level factors simultaneously shape what objectives are achievable."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Business objectives are always shaped by stakeholder pressures: shareholders seeking profit cause different strategic choices than community stakeholders seeking social value — tracing these causal relationships between stakeholder interests and business decisions is a core analytical skill in this cluster."
+            }
+          ],
           "concept_ids": ["BU-KS4-C001", "BU-KS4-C005"],
           "rationale": "Enterprise, entrepreneurship and business objectives (C001) and stakeholders and the business environment (C005) are explicitly co-taught: C001 lists C005 in its co_teach_hints. Business objectives can only be understood in relation to who the business serves (stakeholders), and PESTLE analysis makes the environment through which objectives are pursued visible. Both concepts form the foundational analytical framework for all subsequent GCSE Business study.",
           "inspired_by": "GCSE Business: Business in the Real World domain"
@@ -267,6 +497,16 @@
         {
           "cluster_name": "Understand market research and apply the marketing mix",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Market research is the process of gathering evidence about consumer needs and market conditions — the marketing mix decisions that follow (price, place, promotion, product) must be argued and justified on the basis of that evidence."
+            },
+            {
+              "lens": "systems_models",
+              "rationale": "The marketing mix is a model of four interacting variables where changing one element (lowering price) has ripple effects on others (distribution strategy, promotional message) — pupils must reason about the 4Ps as a system rather than four independent choices."
+            }
+          ],
           "concept_ids": ["BU-KS4-C002"],
           "rationale": "Market research and the marketing mix is the sole concept in this domain and integrates the research and strategic dimensions of marketing into a single coherent framework (4Ps). A single cluster correctly covers all marketing knowledge at GCSE.",
           "inspired_by": "GCSE Business: Marketing domain"
@@ -279,6 +519,16 @@
         {
           "cluster_name": "Understand production methods, quality management and supply chains",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "The supply chain is a system of interdependent actors — suppliers, manufacturers, distributors, retailers — where a disruption at any node propagates through the whole chain; pupils must analyse operations as a system to understand why quality management and supply chain design matter."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Choosing job versus batch versus flow production has direct causal effects on unit cost, flexibility and quality — pupils must trace how production method choices cause different operational outcomes to evaluate trade-offs in the GCSE exam."
+            }
+          ],
           "concept_ids": ["BU-KS4-C006"],
           "rationale": "Business operations — production and supply chain — is the sole concept in this domain. It integrates production methods, quality management and supply chain management into a single operations framework. A single cluster correctly covers the domain.",
           "inspired_by": "GCSE Business: Operations domain"
@@ -291,6 +541,16 @@
         {
           "cluster_name": "Apply motivation theory and understand human resource management",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Motivation theory (Taylor, Maslow, Herzberg) is framed as a causal model: applying a particular motivational strategy (financial incentive, job enrichment) causes a predictable change in employee behaviour and productivity — the exam tests whether pupils can trace this causal logic."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "HRM involves understanding workforce needs from the employee's perspective to design effective recruitment, training and appraisal systems — managers who cannot interpret the situation from the worker's point of view make poor HR decisions."
+            }
+          ],
           "concept_ids": ["BU-KS4-C004"],
           "rationale": "Motivation theory and HRM is the sole concept in this domain, covering the full cycle of workforce management from recruitment through motivation theory to performance management. A single cluster correctly covers the domain's scope.",
           "inspired_by": "GCSE Business: Human Resources domain"
@@ -303,6 +563,16 @@
         {
           "cluster_name": "Analyse cash flow, profit and financial statements",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Financial management requires pupils to model how cash flows through the business over time — distinguishing cash flow from profit demands understanding the business as a system where revenue timing, credit terms and expense commitments interact."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Interpreting financial statements is an evidence-based analytical skill: pupils must read balance sheets, income statements and cash flow forecasts as evidence, then construct an argument about the financial health or strategic options of the business."
+            }
+          ],
           "concept_ids": ["BU-KS4-C003"],
           "rationale": "Cash flow, profit and financial management is the sole concept in this domain and carries the highest teaching weight in the subject (5). It covers the critical distinction between cash flow and profit, financial planning through forecasting, and the interpretation of financial statements. A single cluster correctly represents the domain's focus.",
           "inspired_by": "GCSE Business: Finance domain"
@@ -315,6 +585,16 @@
         {
           "cluster_name": "Understand algorithms and use data structures in modular programs",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Modular programming requires pupils to decompose a system into functions/procedures with defined inputs and outputs — the program as a whole is a system of interacting modules, and the design task is to model the right modular decomposition."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Sorting and searching algorithms are canonical patterns — pupils study merge sort, binary search and others as reusable solutions to classes of problems, developing the pattern-recognition skill of identifying which algorithmic pattern fits a given problem."
+            }
+          ],
           "concept_ids": ["CO-KS34-C001", "CO-KS34-C003"],
           "rationale": "Algorithms (sorting, searching, complexity) and data structures with modular programming are explicitly co-taught: C001 lists C003 in its co_teach_hints. Classic algorithms are most meaningfully implemented and analysed using appropriate data structures and modular code, and these two concepts are always encountered together in the programming strand at KS3/4.",
           "inspired_by": "NC Computing KS3: understand key algorithms; use data structures; design modular programs"
@@ -327,6 +607,16 @@
         {
           "cluster_name": "Understand Boolean logic, binary representation and computer systems",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Computer architecture is a hierarchical system — logic gates compose into circuits, circuits into functional units, units into a CPU — and pupils must understand how each level of the system is built from simpler components at the level below."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Binary representation uses a positional pattern (place values as powers of 2) that applies identically whether representing integers, colours or characters — recognising the same underlying pattern across different data types is a key generalisation at this level."
+            }
+          ],
           "concept_ids": ["CO-KS34-C002"],
           "rationale": "Boolean logic and binary is the sole concept in this domain, underpinning both the mathematical foundations of computing and the architecture of digital hardware. A single cluster correctly covers all systems and hardware knowledge at KS3/4.",
           "inspired_by": "NC Computing KS3: understand hardware and software components; Boolean logic; binary"
@@ -339,6 +629,16 @@
         {
           "cluster_name": "Evaluate the social and ethical impact of computing technology",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Analysing the ethical implications of algorithmic decision-making, surveillance and AI requires pupils to evaluate the same technology from the perspectives of different affected groups — individuals, communities, corporations and governments — making perspective-taking the central intellectual demand."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "The social impact strand asks pupils to trace the second- and third-order causal consequences of technological choices — how widespread surveillance causes chilling effects on free expression, or how algorithmic bias perpetuates systemic discrimination."
+            }
+          ],
           "concept_ids": ["CO-KS34-C004"],
           "rationale": "Ethics, privacy and the social impact of computing is the sole concept in this domain at KS3/4. It covers both the practical digital literacy skills and the deeper ethical analysis of algorithmic decision-making, surveillance and AI that characterise computing citizenship at secondary level.",
           "inspired_by": "NC Computing KS3: understand technology safely, responsibly; implications for individuals and society"
@@ -351,6 +651,16 @@
         {
           "cluster_name": "Apply user-centred design processes to develop and communicate solutions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "User-centred design is built on the systematic practice of adopting the user's perspective — empathy mapping, user journey analysis and prototype testing with real users all require pupils to interpret the design problem through someone else's lived experience."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "The iterative design cycle at KS3 generates evidence (user testing, prototype feedback) that must be used to argue for specific design improvements — each design iteration is a cycle of claim, evidence and revision."
+            }
+          ],
           "concept_ids": ["DT-KS3-C001"],
           "rationale": "User-centred design is the sole concept in the KS3 Design domain. It integrates the full design process at this stage — research, ideation, communication, prototyping — around a central philosophy of designing for real users. A single cluster correctly represents the domain.",
           "inspired_by": "NC DT KS3: design–make–evaluate cycle with user focus"
@@ -363,6 +673,16 @@
         {
           "cluster_name": "Use specialist making processes and select materials for complex products",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Selecting the right material for a complex product and the right specialist process to work it (laser cutting sheet acrylic, CNC routing MDF) requires reasoning about how the material's structure enables or constrains the chosen manufacturing process and the product's eventual function."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "CAM processes have direct causal effects on material properties — laser cutting can cause heat-affected zones in some materials, CNC routing can leave tool marks — and pupils must understand these process-material interactions to make informed manufacturing decisions."
+            }
+          ],
           "concept_ids": ["DT-KS3-C005", "DT-KS3-C006"],
           "rationale": "Specialist making processes including CAM (C005) and material selection for complex products (C006) are the two making concepts at KS3. Selecting the right material (C006) is inseparable from choosing the right process to work with it (C005): laser cutting requires sheet materials; CNC routing requires suitable stock. They are naturally co-taught in practical making projects.",
           "inspired_by": "NC DT KS3: use specialist tools, techniques, processes, equipment and machinery"
@@ -375,6 +695,16 @@
         {
           "cluster_name": "Evaluate designs and products against ethical and sustainability criteria",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluating ethical and sustainability criteria requires pupils to construct an argument about a product's impact using evidence from supply chain analysis, material lifecycle data and ethical frameworks — the evaluation is not intuitive but must be grounded in evidenced reasoning."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Ethical design evaluation requires pupils to consider the product's impact from multiple stakeholder perspectives — the worker in the supply chain, the community near the factory, the consumer — making perspective-taking essential to a thorough evaluation."
+            }
+          ],
           "concept_ids": ["DT-KS3-C004"],
           "rationale": "Ethical and sustainable design is the sole concept in the KS3 Evaluate domain, extending evaluation beyond functional criteria to include environmental impact, supply chain ethics and social responsibility — a key expansion of the evaluative skill set at secondary level.",
           "inspired_by": "NC DT KS3: analyse the work of past and present professionals; recognise the values and ethics associated with design"
@@ -387,6 +717,16 @@
         {
           "cluster_name": "Understand materials science and apply knowledge of material properties",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Materials science at KS3 explains why materials behave as they do by connecting internal structure (crystal lattice, polymer chain, grain structure) to observable mechanical and physical properties — this is structure-function reasoning at the molecular scale."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Material families (ferrous metals, thermoplastics, composites) are defined by shared structural and property patterns — pupils recognise that all thermoplastics can be repeatedly softened and reformed because they share the same polymer chain structure."
+            }
+          ],
           "concept_ids": ["DT-KS3-C002"],
           "rationale": "Materials science and properties (C002) provides the scientific foundation at KS3 that underpins both material selection for making and the understanding of how embedded computing interacts with the physical world. It is appropriately introduced before the more complex embedded computing concept.",
           "inspired_by": "NC DT KS3: technical knowledge — materials"
@@ -394,6 +734,16 @@
         {
           "cluster_name": "Design and build products with embedded computing and electronic systems",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Embedded computing products are input-process-output systems: sensors gather environmental data, the microcontroller processes it according to a program, and actuators produce a physical response — designing such a product requires the pupil to model and balance all three system components."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Programming a microcontroller to control a physical system creates a direct, testable causal chain — changing the threshold value in a sensor condition changes the point at which an actuator fires — making systematic cause-and-effect testing essential for debugging."
+            }
+          ],
           "concept_ids": ["DT-KS3-C003"],
           "rationale": "Embedded computing and product intelligence (C003) represents the high-complexity technical knowledge at KS3 — programming microcontrollers and integrating sensors and actuators into designed products. It builds on materials science and extends KS2 computing control into sophisticated embedded systems.",
           "inspired_by": "NC DT KS3: technical knowledge — computing and electronics"
@@ -406,6 +756,16 @@
         {
           "cluster_name": "Apply nutrition science and develop advanced culinary skills",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Nutrition science at KS3 requires pupils to model the human body as a system with specific nutrient requirements — understanding how deficiencies or excesses in one nutrient affect the whole system underpins the analytical demands of this cluster."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Advanced cooking techniques are applied because specific heat and chemical processes cause desired transformations in food — emulsification, Maillard reactions, gelatinisation — and pupils must understand the causal mechanism to select and execute techniques effectively."
+            }
+          ],
           "concept_ids": ["DT-KS3-C007", "DT-KS3-C008"],
           "rationale": "Nutrition science (C007) and advanced cooking techniques (C008) are explicitly co-taught: C007 lists C008 in its co_teach_hints. At KS3, pupils apply nutritional knowledge to the practical preparation of increasingly complex dishes, connecting the science of nutrients to the craft of cooking in every practical session.",
           "inspired_by": "NC DT KS3: Cooking and Nutrition"
@@ -418,6 +778,16 @@
         {
           "cluster_name": "Apply knowledge of material properties and selection to design decisions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "GCSE material selection requires pupils to rigorously match a material's structural properties (tensile strength, malleability, thermal conductivity) to the functional demands of a product specification — every selection decision is a structure-function argument."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Justifying material selection in GCSE examinations requires a structured argument: a candidate must state which material property meets which design requirement and cite evidence (material data, test results) to support the choice."
+            }
+          ],
           "concept_ids": ["DT-KS4-C001"],
           "rationale": "Material properties and selection is the sole concept in the GCSE Core Technical Principles domain. It synthesises the materials knowledge accumulated across KS1–KS3 into a rigorous, examination-ready framework for evaluating and selecting materials against a product specification.",
           "inspired_by": "GCSE DT: core technical principles — materials"
@@ -430,6 +800,16 @@
         {
           "cluster_name": "Apply iterative design, human factors and ergonomics to develop inclusive products",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Human factors and inclusive design require pupils to evaluate a product's usability from the perspective of diverse users — including those with physical, sensory or cognitive differences — making perspective-taking the central analytical demand when assessing ergonomic and accessibility criteria."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "The iterative design portfolio is an evidence-based argument: each design iteration must be justified with reference to user feedback, ergonomic data or test outcomes, and the final design must be argued as the best solution given the constraints."
+            }
+          ],
           "concept_ids": ["DT-KS4-C002", "DT-KS4-C003"],
           "rationale": "Iterative design process (C002) and human factors/ergonomics/inclusive design (C003) are the two designing concepts at GCSE. The iterative cycle provides the process structure, while human factors and ergonomics provide the user-centred knowledge that drives design decisions within that cycle. Both are always active in the GCSE design portfolio.",
           "inspired_by": "GCSE DT: designing — iterative process; human factors and ergonomics"
@@ -442,6 +822,16 @@
         {
           "cluster_name": "Use CAD/CAM and digital manufacturing to realise design solutions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "CAD/CAM workflow requires pupils to translate a design intent (function) into a digital geometry (structure) that a manufacturing machine can realise — every CAD modelling decision encodes structural choices about how the product will be built."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "CAM manufacturing involves a precise causal chain from digital file to physical product: toolpath settings cause specific cut depths, feed rates cause different surface finishes, and kerf width causes dimensional changes — pupils must understand these causal parameters to achieve the intended outcome."
+            }
+          ],
           "concept_ids": ["DT-KS4-C004"],
           "rationale": "CAD/CAM and digital manufacturing is the sole making concept at GCSE, representing the high-level technical skill that encompasses designing in CAD software and executing production using computer-controlled manufacturing equipment — the dominant making paradigm at GCSE level.",
           "inspired_by": "GCSE DT: making — CAD/CAM and specialist techniques"
@@ -454,6 +844,16 @@
         {
           "cluster_name": "Evaluate products against specifications, user needs and sustainability criteria",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Formal evaluation against a product specification is a structured evidence-argument task: pupils must identify specific criteria, gather evidence (measurements, user tests, material data) and argue the extent to which each criterion has been met."
+            },
+            {
+              "lens": "systems_models",
+              "rationale": "Life cycle analysis models the product as a system across all stages from raw material extraction through manufacture, use and end-of-life — pupils must reason about environmental impacts at each stage of this system, not just at the point of manufacture."
+            }
+          ],
           "concept_ids": ["DT-KS4-C006", "DT-KS4-C007"],
           "rationale": "Evaluation against specification (C006) and life cycle analysis/sustainability evaluation (C007) are the two evaluation concepts at GCSE and are naturally taught together: formal evaluation of a product against specification addresses how well it works for the user, while LCA addresses its broader environmental impact across the whole product life. Both are required in GCSE portfolio evaluation.",
           "inspired_by": "GCSE DT: evaluating — against specification; life cycle thinking"
@@ -466,6 +866,16 @@
         {
           "cluster_name": "Understand sustainability and responsible design in social and environmental context",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "stability_change",
+              "rationale": "Sustainability is fundamentally a stability question: responsible design asks whether a material or production system can remain viable over time without depleting resources or causing irreversible environmental change — the cluster demands reasoning about long-run system stability."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Responsible design in social and cultural context requires pupils to evaluate design choices from the perspectives of different affected communities — a product designed in the global north may have very different implications when viewed from the perspective of the communities that mine its materials."
+            }
+          ],
           "concept_ids": ["DT-KS4-C005"],
           "rationale": "Sustainability and responsible design is the sole concept in this domain and carries the highest teaching weight in GCSE DT (5). It synthesises the contextual, ethical and environmental dimensions of design that extend beyond the technical to address design's role in a sustainable future.",
           "inspired_by": "GCSE DT: design in context — sustainability and responsible design"
@@ -478,6 +888,16 @@
         {
           "cluster_name": "Understand nutrients, analyse diets and plan for different life stages",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Nutritional analysis requires pupils to model the human body as a system with differentiated requirements at different life stages — understanding how macronutrient and micronutrient needs change across the life course positions the body as an adaptive biological system."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Diet-disease relationships are causal claims — excessive saturated fat causes elevated LDL cholesterol which causes arterial plaque — and pupils must be able to trace and evaluate these causal chains from dietary intake through physiological mechanism to health outcome."
+            }
+          ],
           "concept_ids": ["FP-KS4-C001"],
           "rationale": "Macronutrients, micronutrients and nutritional analysis is the sole concept in this domain and forms the scientific core of GCSE Food Preparation and Nutrition. It encompasses nutrient functions, dietary analysis, life stages and diet-disease relationships — the central knowledge strand of the subject.",
           "inspired_by": "GCSE Food Preparation and Nutrition: Food, Nutrition and Health"
@@ -490,6 +910,16 @@
         {
           "cluster_name": "Understand the functional properties of food components during cooking",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Functional food science is entirely built on cause-and-effect relationships: adding acid to egg foam causes denaturation that stabilises the meringue; heating starch in water causes gelatinisation that thickens a sauce — pupils must explain the causal mechanism, not just describe the outcome."
+            },
+            {
+              "lens": "energy_matter",
+              "rationale": "The functional changes that occur during cooking are transformations of matter driven by energy input — denaturation, emulsification and caramelisation all involve changes in the chemical structure of food components caused by heat energy — positioning this cluster firmly within energy-matter reasoning."
+            }
+          ],
           "concept_ids": ["FP-KS4-C002"],
           "rationale": "Functional properties of food is the sole concept in this domain (and carries the highest teaching weight in the subject, 5). It covers the scientific explanation of how proteins, fats and carbohydrates behave during cooking — the food science dimension of GCSE Food Preparation and Nutrition.",
           "inspired_by": "GCSE Food Preparation and Nutrition: Food Science"
@@ -502,6 +932,16 @@
         {
           "cluster_name": "Apply food safety principles and HACCP to prevent food-borne illness",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Food microbiology and HACCP is entirely structured around causal chains: specific temperature ranges cause bacterial multiplication, cross-contamination causes pathogen transfer, and inadequate cooking time causes unsafe internal temperatures — the HACCP system is a formal method for identifying and controlling these causal hazards."
+            },
+            {
+              "lens": "systems_models",
+              "rationale": "HACCP is explicitly a systems model: it maps the food production process as a sequence of steps and identifies critical control points where an intervention can prevent or eliminate a hazard — applying HACCP requires pupils to think in process-system terms."
+            }
+          ],
           "concept_ids": ["FP-KS4-C003"],
           "rationale": "Food microbiology and HACCP is the sole concept in this domain (teaching weight 5). It covers the science of bacterial growth, the major food-borne pathogens, and the systematic HACCP approach to food safety management — the safety strand of the GCSE specification.",
           "inspired_by": "GCSE Food Preparation and Nutrition: Food Safety"
@@ -514,6 +954,16 @@
         {
           "cluster_name": "Evaluate sensory properties of food and analyse factors influencing food choice",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Sensory evaluation is a formal evidence-gathering method — star profiles, ranking tests and preference tests generate data that pupils must analyse and use to argue for specific product modifications — positioning this as an evidence-argument task."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Analysing cultural, religious, economic and ethical factors in food choice requires pupils to interpret food decisions from diverse perspectives — understanding why halal certification matters to a Muslim consumer or why cost shapes food choices for a low-income family demands genuine perspective-taking."
+            }
+          ],
           "concept_ids": ["FP-KS4-C004"],
           "rationale": "Sensory evaluation and food choice is the sole concept in this domain. It integrates the practical skill of conducting formal sensory tests with the broader analytical understanding of cultural, religious, economic and ethical factors that shape what people eat.",
           "inspired_by": "GCSE Food Preparation and Nutrition: Food Choice"
@@ -526,6 +976,16 @@
         {
           "cluster_name": "Evaluate the sustainability and environmental impact of food production systems",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Food provenance requires pupils to trace the journey of food through a complex supply system — from growing conditions through processing, transport and retail to consumption and waste — understanding the environmental impact requires analysing the whole system, not just individual steps."
+            },
+            {
+              "lens": "stability_change",
+              "rationale": "Sustainability of food sources is a stability question: pupils must evaluate whether current production practices can be maintained without depleting soil, water or biodiversity, and understand what changes are necessary to move food systems towards long-run viability."
+            }
+          ],
           "concept_ids": ["FP-KS4-C005"],
           "rationale": "Sustainability of food sources and food provenance is the sole concept in this domain. It covers the full journey of food from farm to plate and the environmental, ethical and social implications of different food production systems — the provenance and sustainability strand of the GCSE.",
           "inspired_by": "GCSE Food Preparation and Nutrition: Food Provenance and Sustainability"
@@ -538,6 +998,16 @@
         {
           "cluster_name": "Develop extended oral communication in the target language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Extended oral communication requires pupils to adapt register, vocabulary and structure to their interlocutor's needs — interpreting conversational context from the listener's perspective is what elevates performance beyond scripted exchange to genuine communication."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Developing fluency and spontaneity involves internalising the discourse patterns of the target language — turn-taking conventions, filler strategies, repair sequences — so that communication can proceed without conscious grammatical processing."
+            }
+          ],
           "concept_ids": ["LA-KS3-C002"],
           "rationale": "Extended oral communication is the sole concept in the KS3 Listening and Speaking domain. It encompasses the ability to initiate and sustain conversations beyond simple exchanges, developing the fluency and spontaneity that characterise communicative competence at secondary level.",
           "inspired_by": "MFL KS3: listen attentively; speak coherently and confidently"
@@ -550,6 +1020,16 @@
         {
           "cluster_name": "Read authentic and literary texts with cultural understanding",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Reading authentic and literary texts in the target language with cultural understanding requires pupils to interpret the text through the cultural lens of its origin — understanding why a French newspaper treats a topic differently from a British one, or what cultural knowledge a poem presupposes."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Showing comprehension of authentic texts requires pupils to locate textual evidence for their interpretations — at KS3, reading comprehension tasks ask pupils to justify their answers with reference to specific features of the text."
+            }
+          ],
           "concept_ids": ["LA-KS3-C003", "LA-KS3-C005"],
           "rationale": "Reading authentic and literary texts (C003) and language and culture (C005) are explicitly co-taught: C003 lists C005 in its co_teach_hints. Reading authentic texts in a foreign language is the primary vehicle through which cultural knowledge is acquired — you cannot truly engage with the texts without understanding the cultural context, and the cultural content gives meaning to the language encountered.",
           "inspired_by": "MFL KS3: read and show comprehension of original and adapted materials; appreciate stories, songs, poems and texts in the original language"
@@ -562,6 +1042,16 @@
         {
           "cluster_name": "Produce extended writing and translation in the target language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Extended writing in a foreign language requires pupils to apply grammatical patterns (tense paradigms, agreement rules, clause-linking structures) consistently across a longer text — the ability to produce extended prose depends on internalising enough patterns to sustain grammatical accuracy without constant conscious attention."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Translation requires pupils to interpret meaning from the source language perspective and then reformulate it appropriately in the target language — every translation decision involves an interpretive choice about which meaning is primary and which target-language structure best conveys it."
+            }
+          ],
           "concept_ids": ["LA-KS3-C006"],
           "rationale": "Extended writing and translation is the sole concept in the KS3 Writing domain, covering the progression from short written responses to extended prose and the additional skill of translation — both directions of which require high grammatical accuracy and broad vocabulary.",
           "inspired_by": "MFL KS3: write at varying length; translate short written text"
@@ -574,6 +1064,16 @@
         {
           "cluster_name": "Develop grammatical accuracy and expand vocabulary range and register",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Grammatical accuracy at KS3 depends on recognising and applying the underlying patterns of the target language — verb conjugation paradigms, noun gender patterns, adjectival agreement rules — so that correct forms become automatic rather than effortful."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Developing vocabulary range and register requires pupils to understand that word choice is context-dependent — the same meaning may require a formal or informal word depending on the audience and purpose, which is an interpretive judgement about social context."
+            }
+          ],
           "concept_ids": ["LA-KS3-C001", "LA-KS3-C004"],
           "rationale": "Grammatical system and structure (C001) and vocabulary range, precision and register (C004) are the two enabling knowledge concepts at KS3. They are always taught together — grammar provides the rules for combining words, while vocabulary provides the words themselves — and together they underpin all four language skills at this stage.",
           "inspired_by": "MFL KS3: grammar knowledge; vocabulary range and precision"
@@ -586,6 +1086,16 @@
         {
           "cluster_name": "Understand and respond to authentic spoken language at GCSE level",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Processing authentic native-speaker speech requires pupils to interpret meaning despite variation in accent, speed and register — this is an active interpretive skill where the listener must hold multiple possible meanings simultaneously and select the most contextually appropriate one."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "At GCSE level, listening comprehension is supported by recognising phonological patterns of connected speech — linking, elision and assimilation — that differ markedly from the written or carefully enunciated forms pupils encountered at KS3."
+            }
+          ],
           "concept_ids": ["LA-KS4-C006"],
           "rationale": "Listening to authentic spoken language is the sole concept in this GCSE domain. At this level, pupils must process native-speaker speech including varied registers, speeds and accents — a qualitative step up from KS3 that requires this distinct treatment.",
           "inspired_by": "GCSE MFL: Listening and Responding"
@@ -598,6 +1108,16 @@
         {
           "cluster_name": "Engage in spontaneous interaction using communication strategies",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Spontaneous interaction at GCSE requires pupils to listen to an interlocutor and interpret their meaning in real time, then formulate a response that is both linguistically accurate and pragmatically appropriate — the perspective-taking demand of real conversation is what makes this the most cognitively demanding spoken task."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Communication strategies (circumlocution, repair, borrowing from L1) are patterns that skilled language users deploy when lexical retrieval fails — pupils must recognise these patterns in others and practise deploying them in their own spoken performance."
+            }
+          ],
           "concept_ids": ["LA-KS4-C003"],
           "rationale": "Spontaneous interaction and communication strategies is the sole concept in this GCSE domain. It focuses on the real-time, unprepared speaking required in the GCSE speaking examination — the most demanding spoken language skill at this level.",
           "inspired_by": "GCSE MFL: Speaking — individual presentation and role play"
@@ -610,6 +1130,16 @@
         {
           "cluster_name": "Apply reading strategies to comprehend authentic texts in the target language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Reading comprehension under examination conditions requires pupils to locate textual evidence for every response — the reading strategies taught (scanning, skimming, inferencing) are all techniques for efficiently extracting evidence to support answer claims."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Authentic texts carry cultural assumptions about the reader's background knowledge — interpreting an editorial, advertisement or literary extract from a target-language culture requires pupils to shift perspective from English cultural defaults to target-language ones."
+            }
+          ],
           "concept_ids": ["LA-KS4-C004"],
           "rationale": "Reading strategies and authentic text comprehension is the sole concept in this GCSE domain. It covers the purposeful cognitive approaches needed to extract meaning efficiently from a range of authentic texts under examination conditions — a distinct skill set from classroom reading practice.",
           "inspired_by": "GCSE MFL: Reading and Responding"
@@ -622,6 +1152,16 @@
         {
           "cluster_name": "Produce extended written work and translate with accuracy in the target language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Producing extended written prose at GCSE requires pupils to apply complex grammatical patterns (subjunctive, conditional, compound tenses) with consistency across a sustained piece of writing — accuracy depends on having internalised enough patterns to sustain them without conscious effort."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "GCSE translation requires pupils to make interpretive decisions about the source text's meaning and register before selecting target-language equivalents — the interpretive dimension distinguishes skilled translation from word-by-word substitution."
+            }
+          ],
           "concept_ids": ["LA-KS4-C007"],
           "rationale": "Extended written production and translation is the sole concept in the GCSE Writing domain. It encompasses both the productive writing skill (generating extended prose across a range of topics and registers) and translation (rendering meaning accurately between languages) — the two written skills assessed at GCSE.",
           "inspired_by": "GCSE MFL: Writing"
@@ -634,6 +1174,16 @@
         {
           "cluster_name": "Understand tense and aspect systems and use grammatical structures accurately",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Mastering tense and aspect systems requires pupils to internalise paradigmatic patterns (all regular -er verbs follow the same conjugation pattern) and then identify the irregular exceptions — this is high-load pattern learning where recognition of the underlying pattern makes the system tractable."
+            },
+            {
+              "lens": "systems_models",
+              "rationale": "The grammatical system of the target language is an interconnected set of rules where tense, aspect, person and number interact — pupils must model how these dimensions interact (a perfect aspect construction requires the auxiliary plus past participle, each of which has its own agreement rules) to achieve consistent accuracy."
+            }
+          ],
           "concept_ids": ["LA-KS4-C001", "LA-KS4-C002"],
           "rationale": "Tense and aspect systems (C001, teaching weight 6) and grammatical accuracy and range (C002) are the two core grammatical knowledge concepts at GCSE and are always taught together: mastering tense forms (C001) is the most important aspect of achieving grammatical accuracy (C002), and accuracy develops through repeated practice of tense formation across all four skills.",
           "inspired_by": "GCSE MFL: grammar — tense, mood and aspect; grammatical accuracy"
@@ -641,6 +1191,16 @@
         {
           "cluster_name": "Develop cultural awareness and use appropriate register in the target language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Register and cultural awareness requires pupils to interpret the social situation from a target-language cultural perspective and select language that is appropriate to that context — choosing between tu and vous in French, or knowing when formal written conventions apply, is an act of cultural perspective-taking."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Intercultural awareness is partly built on recognising recurring cultural patterns — conventions of politeness, topic taboos, genre conventions in writing — that differ systematically between the home and target cultures."
+            }
+          ],
           "concept_ids": ["LA-KS4-C005"],
           "rationale": "Register, cultural understanding and intercultural awareness (C005) is a distinct higher-order concept at GCSE that goes beyond grammatical accuracy to encompass the sociolinguistic knowledge of what to say, to whom and how — a key examination differentiator at GCSE.",
           "inspired_by": "GCSE MFL: cultural understanding and intercultural awareness"
@@ -653,6 +1213,16 @@
         {
           "cluster_name": "Analyse how media language creates meaning through semiotics, genre and narrative",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Semiotic analysis requires pupils to decode how signs and conventions create meaning for a target audience — the analytical act is always perspectival, asking how the intended audience is positioned to read the codes embedded in the text."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Genre analysis is built on recognising the recurring patterns of convention (iconography, narrative structure, character types) that define and distinguish media genres — identifying how a text conforms to or subverts genre expectations is a pattern-recognition and evaluation task."
+            }
+          ],
           "concept_ids": ["MS-KS4-C001", "MS-KS4-C003"],
           "rationale": "Semiotics (C001) and genre, narrative and convention (C003) are the two media language concepts and are naturally co-taught: semiotic codes (the signs and conventions that create meaning) operate within genre systems (which define what codes are appropriate to what type of text). Analysing a media text always involves both simultaneously.",
           "inspired_by": "GCSE Media Studies: Media Language — semiotics; narrative; genre"
@@ -665,6 +1235,16 @@
         {
           "cluster_name": "Analyse how media represents identity, ideology and social groups",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Representation analysis fundamentally asks pupils to evaluate media texts from the perspective of the groups being represented — understanding how a stereotyped representation is experienced by a member of that group is central to developing critical analytical distance."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Arguing that a text perpetuates a particular ideology or stereotype requires pupils to build an evidence-based argument: selecting specific textual details (camera angles, costume choices, dialogue) as evidence to support the interpretive claim about ideological positioning."
+            }
+          ],
           "concept_ids": ["MS-KS4-C002"],
           "rationale": "Representation, ideology and stereotyping is the sole concept in this domain (teaching weight 5). It covers the full theoretical framework for analysing how media constructs and perpetuates versions of social reality — one of the most significant analytical tools in the GCSE specification.",
           "inspired_by": "GCSE Media Studies: Media Representation"
@@ -677,6 +1257,16 @@
         {
           "cluster_name": "Understand how media industries, ownership and regulation shape content",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "systems_models",
+              "rationale": "Media industries are economic and regulatory systems: ownership structures, funding models, distribution platforms and regulatory frameworks all interact to shape what content gets made and how it reaches audiences — pupils must model these systemic forces to understand why media looks the way it does."
+            },
+            {
+              "lens": "cause_and_effect",
+              "rationale": "Ownership concentration has direct causal effects on content diversity and editorial independence — the cluster requires pupils to trace how vertical and horizontal integration changes the range of voices and perspectives available in a media landscape."
+            }
+          ],
           "concept_ids": ["MS-KS4-C005"],
           "rationale": "Media industries, ownership and regulation is the sole concept in this domain (teaching weight 5). It covers the institutional contexts — commercial structures, ownership concentrations, regulatory frameworks — within which media texts are produced and distributed.",
           "inspired_by": "GCSE Media Studies: Media Industries"
@@ -689,6 +1279,16 @@
         {
           "cluster_name": "Evaluate audience theory and how audiences engage with media texts",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Audience theory is built on interpreting media consumption from the audience's perspective — from the hypodermic model's passive recipient through uses-and-gratifications' active user to reception theory's negotiated and oppositional readers — each theory offers a different interpretive account of the audience position."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluating which audience theory best explains a specific audience's engagement with a text requires pupils to select evidence from the text and context, and argue for the applicability of one theoretical framework over alternatives."
+            }
+          ],
           "concept_ids": ["MS-KS4-C004"],
           "rationale": "Audience theory and reception is the sole concept in this domain (teaching weight 5). It covers the range of theories — from hypodermic needle through uses and gratifications to reception theory — that explain how audiences are targeted by and respond to media content.",
           "inspired_by": "GCSE Media Studies: Media Audiences"
@@ -701,6 +1301,16 @@
         {
           "cluster_name": "Analyse media texts in their historical, social and cultural contexts",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "continuity_change",
+              "rationale": "Contextual analysis of media requires pupils to understand how texts produced at different historical moments reflect and respond to their specific social and cultural conditions — tracing continuities and changes in how media treats a topic across decades is the core analytical skill of this cluster."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Understanding a media text in its historical and cultural context requires pupils to adopt the interpretive perspective of its original audience — what assumptions, values and cultural references would a 1950s cinema audience bring to a newsreel that a contemporary audience would not share?"
+            }
+          ],
           "concept_ids": ["MS-KS4-C006"],
           "rationale": "Historical, social and cultural contexts of media is the sole concept in this domain (teaching weight 5). It provides the contextual analytical framework through which media texts are understood as products of specific historical moments, social conditions and cultural environments — essential for evaluating why texts look and mean what they do.",
           "inspired_by": "GCSE Media Studies: Media Contexts"

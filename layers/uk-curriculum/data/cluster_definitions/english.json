@@ -11,6 +11,16 @@
         {
           "cluster_name": "Listen actively and take turns in conversation",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Listening and turn-taking require pupils to hold a speaker's viewpoint in mind before responding — the cognitive work is tracking whose perspective is being expressed and how to receive it appropriately."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Even at KS1, taking turns in conversation involves responding relevantly to what has been said, which requires attending to the other person's contribution as evidence for what to say next."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C073",
             "EN-KS1-C074"
@@ -21,6 +31,16 @@
         {
           "cluster_name": "Ask questions, justify opinions and use drama to explore ideas",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Justifying opinions and drama/role-play both require pupils to inhabit or evaluate a viewpoint — asking why a character acted as they did or why an opinion should be accepted are fundamentally perspectival acts."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Justifying opinions introduces the basic structure of argument: a claim supported by reasons, making evidence_argument the direct cognitive demand even at KS1."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C075",
             "EN-KS1-C076",
@@ -37,6 +57,12 @@
         {
           "cluster_name": "Understand phonemes, graphemes and their correspondence",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "The GPC system is a pattern system: each grapheme reliably maps to a phoneme. The cognitive task is learning to recognise these correspondences as regular, generalisable rules rather than isolated facts."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C001",
             "EN-KS1-C002",
@@ -48,6 +74,16 @@
         {
           "cluster_name": "Blend and segment sounds to decode and spell words",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Blending and segmenting are the procedural application of phonics patterns — pupils recognise and manipulate the systematic correspondences between sound sequences and letter sequences."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Decoding is fundamentally about how the structure of a written word (its grapheme sequence) functions to represent spoken language — pupils learn that the arrangement of letters serves the purpose of encoding sound."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C004",
             "EN-KS1-C005",
@@ -59,6 +95,12 @@
         {
           "cluster_name": "Recognise vowel and consonant digraphs and split digraphs",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Digraphs and split digraphs are grapheme patterns — groupings of letters that function as a single phoneme unit. The cluster's entire cognitive demand is recognising pattern families and applying them consistently."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C009",
             "EN-KS1-C010",
@@ -71,6 +113,16 @@
         {
           "cluster_name": "Read common exception words fluently and with expression",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Common exception words partly violate the standard GPC patterns, so recognising them as a category (words where the pattern breaks) requires pupils to understand the rule well enough to notice the exception."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Fluent, expressive reading requires pupils to understand how word recognition serves the larger function of constructing meaning — automaticity in decoding is in service of comprehension."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C007",
             "EN-KS1-C008",
@@ -87,6 +139,16 @@
         {
           "cluster_name": "Retrieve information and understand story structure",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Retrieval is the foundational evidence skill — locating specific information in a text to answer a question is the first step in learning that claims about a text must be grounded in what it actually says."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding story structure (beginning, middle, end; character, setting, event) involves recognising how narrative organisation serves the purpose of building meaning — function follows the arrangement of story elements."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C016",
             "EN-KS1-C018",
@@ -98,6 +160,16 @@
         {
           "cluster_name": "Infer meaning and make predictions using text clues",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Inference at KS1 is largely about understanding characters' feelings and motivations — pupils must ask whose perspective the text presents and use textual clues to reconstruct it."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Both prediction and inference require pupils to use text clues as evidence: the interpretive move is always 'the text says X, therefore I think Y', establishing the habit of grounding interpretation in textual detail."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C014",
             "EN-KS1-C015",
@@ -109,6 +181,16 @@
         {
           "cluster_name": "Discuss texts, recognise literary language and perform poetry",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Book discussion and recognising literary language both involve responding to an author's choices — pupils are beginning to distinguish their own reading experience from what the author intended or made possible."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Recognising literary language patterns (rhyme, rhythm, alliteration) and poetic forms involves identifying systematic features that recur across texts — a pattern-recognition task with an aesthetic dimension."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C019",
             "EN-KS1-C020",
@@ -121,6 +203,12 @@
         {
           "cluster_name": "Monitor and self-correct while reading independently",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Self-correction is driven by the reader checking their decoding or interpretation against the evidence of surrounding context — 'does this word make sense here?' is an implicit argument from evidence."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C024"
           ],
@@ -135,16 +223,32 @@
         {
           "cluster_name": "Apply phonics knowledge to spell words",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Spelling using phonemes is the productive application of GPC pattern knowledge — pupils encode sounds into graphemes by applying the same systematic correspondences they use to decode in the opposite direction."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C025",
             "EN-KS1-C026"
           ],
-          "rationale": "Spelling using phonemes is the primary productive spelling strategy; learning exception word spellings is the complementary memorisation strategy for words the phonics route cannot reach \u2014 taught in parallel from the start.",
+          "rationale": "Spelling using phonemes is the primary productive spelling strategy; learning exception word spellings is the complementary memorisation strategy for words the phonics route cannot reach — taught in parallel from the start.",
           "inspired_by": "CC ELA L.1.2d - Use conventional spelling for words with common spelling patterns"
         },
         {
           "cluster_name": "Understand and apply prefixes, suffixes and root words",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Morphological word formation is a pattern system: prefixes and suffixes attach to roots in rule-governed ways. Recognising these patterns allows pupils to both spell and infer the meaning of derived words."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding how affixes modify root words is a structure-function relationship — the structural change (adding a suffix) produces a predictable functional change in meaning or word class."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C027",
             "EN-KS1-C028",
@@ -156,17 +260,29 @@
         {
           "cluster_name": "Spell plurals, homophones and words with regular patterns",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Plural formation rules, spelling generalisations and homophones all foreground the pattern-and-exception structure of English spelling — the cognitive task is extracting the rule and knowing when it applies."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C030",
             "EN-KS1-C033",
             "EN-KS1-C034"
           ],
-          "rationale": "Plural formation, homophones and spelling patterns are the three pattern-application challenges at KS1 \u2014 plural rules interact with suffix rules, and homophones highlight the difference between sound and spelling; C030 co_teach_hints link to all three.",
+          "rationale": "Plural formation, homophones and spelling patterns are the three pattern-application challenges at KS1 — plural rules interact with suffix rules, and homophones highlight the difference between sound and spelling; C030 co_teach_hints link to all three.",
           "inspired_by": "CC ELA L.1.2e - Spell untaught words phonetically; L.2.2e - Consult reference materials"
         },
         {
           "cluster_name": "Use apostrophes for contractions and singular possession",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Apostrophe rules are grammatical patterns: contraction (omission of a letter) and possession each follow a distinct, learnable convention. The teaching task is distinguishing the two patterns and applying each correctly."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C031",
             "EN-KS1-C032"
@@ -182,6 +298,16 @@
         {
           "cluster_name": "Develop correct pencil grip, posture and letter formation",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Pencil grip, posture and letter formation are physical structures that serve the function of producing legible script — understanding why each element matters is about how body and tool arrangement enables effective handwriting."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Letter families group letters by shared stroke patterns, making the teaching of formation a pattern-recognition and pattern-reproduction task rather than the memorisation of 26 independent shapes."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C035",
             "EN-KS1-C036",
@@ -193,6 +319,12 @@
         {
           "cluster_name": "Form capital letters, digits and join strokes with correct sizing and spacing",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Joining strokes, consistent sizing and spacing are systematic conventions that pupils learn to apply across all letter combinations — recognising the regularity in how letters connect is fundamentally pattern-based."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C038",
             "EN-KS1-C039",
@@ -200,7 +332,7 @@
             "EN-KS1-C041",
             "EN-KS1-C042"
           ],
-          "rationale": "Capital letter formation, digit formation, letter sizing, joining strokes and word spacing collectively constitute the quality and legibility dimensions of handwriting \u2014 all co-taught once basic formation is secure; C039 lists C036, C038, C040, C041 and C042 in its co_teach_hints.",
+          "rationale": "Capital letter formation, digit formation, letter sizing, joining strokes and word spacing collectively constitute the quality and legibility dimensions of handwriting — all co-taught once basic formation is secure; C039 lists C036, C038, C040, C041 and C042 in its co_teach_hints.",
           "inspired_by": "CC ELA L.1.1a - Print all letters; L.2.3a - Use cursive or joined writing"
         }
       ]
@@ -211,6 +343,16 @@
         {
           "cluster_name": "Plan, rehearse and compose sentences orally before writing",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Oral rehearsal is preparation for written composition — the function of speaking sentences aloud before writing is to make the structural demands of sentence composition explicit before the motor task of transcription is added."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Composing sentences orally introduces pupils to the patterns of sentence structure (subject + verb + object/complement) before they must simultaneously manage spelling and handwriting."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C043",
             "EN-KS1-C044",
@@ -222,16 +364,36 @@
         {
           "cluster_name": "Sequence narratives and write for different purposes",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Narrative sequencing and varying text type both involve understanding how different structural arrangements serve different communicative purposes — chronology serves storytelling while instruction serves direction."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Text type patterns (narrative, instruction, label) are genre conventions that pupils begin to recognise as recurring structural templates, each with characteristic features."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C045",
             "EN-KS1-C047"
           ],
-          "rationale": "Narrative sequencing and writing for different purposes are the core compositional challenges at KS1 \u2014 the ability to order events and to vary text type are taught in tandem across the year.",
+          "rationale": "Narrative sequencing and writing for different purposes are the core compositional challenges at KS1 — the ability to order events and to vary text type are taught in tandem across the year.",
           "inspired_by": "CC ELA W.1.3 - Write narratives; W.1.1 - Write opinion pieces"
         },
         {
           "cluster_name": "Evaluate, proof-read and perform own writing",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluating and proof-reading require pupils to read their own writing as a text to be assessed — they use the evidence of what they have written to judge whether it meets the criteria of sense, accuracy and effect."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Reading aloud with expression and evaluating own writing involves adopting the perspective of an audience — pupils ask 'how will this sound/read to someone else?', which is a perspectival shift."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C046",
             "EN-KS1-C049",
@@ -249,6 +411,12 @@
         {
           "cluster_name": "Demarcate sentences with capital letters and end punctuation",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Sentence demarcation is a grammatical pattern: every sentence begins with a capital and ends with a full stop, question mark or exclamation mark. The cognitive task is recognising sentence boundaries and applying the convention consistently."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C052",
             "EN-KS1-C053",
@@ -256,12 +424,22 @@
             "EN-KS1-C055",
             "EN-KS1-C056"
           ],
-          "rationale": "Sentence boundaries, capital letters for sentence starts, full stops, question marks and exclamation marks are the sentence-demarcation cluster \u2014 the non-negotiable punctuation taught from Y1; co_teach_hints on C055 list all related marks.",
+          "rationale": "Sentence boundaries, capital letters for sentence starts, full stops, question marks and exclamation marks are the sentence-demarcation cluster — the non-negotiable punctuation taught from Y1; co_teach_hints on C055 list all related marks.",
           "inspired_by": "CC ELA L.1.2a-b - Capitalize the first word; use end punctuation for sentences"
         },
         {
           "cluster_name": "Understand and use word classes: nouns, verbs, adjectives and adverbs",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Word classes are a grammatical pattern system — categorising words by their syntactic behaviour and semantic role is the first step in understanding how English sentences are structured."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding what verbs, nouns, adjectives and adverbs do (their function) explains why language is built the way it is — each class serves a distinct role in the structure of the clause."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C066",
             "EN-KS1-C067",
@@ -269,12 +447,22 @@
             "EN-KS1-C069",
             "EN-KS1-C071"
           ],
-          "rationale": "The four core word classes \u2014 nouns, verbs, adjectives and adverbs \u2014 plus grammatical terminology are taught together as a metalinguistic system; C068 lists C066, C067 and C069 in co_teach_hints and C071 names all of them.",
+          "rationale": "The four core word classes — nouns, verbs, adjectives and adverbs — plus grammatical terminology are taught together as a metalinguistic system; C068 lists C066, C067 and C069 in co_teach_hints and C071 names all of them.",
           "inspired_by": "CC ELA L.1.1 - Demonstrate command of conventions; understand parts of speech"
         },
         {
           "cluster_name": "Join clauses using conjunctions, coordination and subordination",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Coordination and subordination are syntactic patterns: pupils learn that 'and', 'but', 'or' join clauses of equal weight while 'because', 'when', 'if' introduce a dependent clause — recognisable and reusable structural templates."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Choosing between coordination and subordination is about how clause structure functions to express logical relationships between ideas — cause, condition and contrast are encoded through specific structural choices."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C058",
             "EN-KS1-C063",
@@ -286,6 +474,16 @@
         {
           "cluster_name": "Expand noun phrases, use verb tenses and commas in lists",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Expanded noun phrases, verb tense forms and comma-in-list conventions are grammatical patterns that pupils learn to recognise and reproduce — each is a rule-governed system with predictable application."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Tense signals temporal meaning and expanded noun phrases add descriptive precision — understanding why these structures exist (their function) motivates their use in writing."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C059",
             "EN-KS1-C060",
@@ -299,6 +497,12 @@
         {
           "cluster_name": "Use capital letters for proper nouns, compound words and Standard English",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Capitalisation for proper nouns and compound word formation are spelling/punctuation conventions that follow recognisable rules — pupils learn to identify the category (proper noun, compound) and apply the pattern."
+            }
+          ],
           "concept_ids": [
             "EN-KS1-C057",
             "EN-KS1-C070",
@@ -315,6 +519,16 @@
         {
           "cluster_name": "Listen actively, respond appropriately and question to deepen understanding",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Relevant questioning and vocabulary-building through listening both position spoken contributions as responses to evidence — pupils are learning to extract and act on what others have said."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Active listening requires holding another speaker's viewpoint in mind; responding appropriately is about recognising and acknowledging the perspective being expressed."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C001",
             "EN-Y3-C002",
@@ -326,6 +540,16 @@
         {
           "cluster_name": "Articulate and justify opinions in structured spoken contributions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Justifying opinions and giving structured explanations are the core argument-making skills — pupils must support claims with reasons, making this cluster directly about evidence_argument even in spoken form."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Articulating opinions requires pupils to identify and express their own viewpoint, and collaborative conversation requires tracking how others' perspectives differ from or agree with their own."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C004",
             "EN-Y3-C005",
@@ -337,6 +561,16 @@
         {
           "cluster_name": "Use exploratory talk, evaluate viewpoints and adapt register for audience",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Evaluating viewpoints and audience/register awareness are both perspectival skills — pupils must understand that different people hold different views and that language choices must be adapted to who is listening."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Exploratory talk and spoken performance at this level require pupils to reason aloud, testing ideas against each other's contributions, which is a form of collaborative evidence-building."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C007",
             "EN-Y3-C008",
@@ -356,6 +590,16 @@
         {
           "cluster_name": "Use root words and morphology to decode and understand new words",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Morphological decoding is pattern application: pupils use knowledge of root words, prefixes and suffixes as systematic clues to pronounce and infer the meaning of unfamiliar words."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding how roots and affixes combine (structure) to produce new meanings (function) gives pupils a productive strategy for expanding vocabulary through analysis rather than memorisation."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C013",
             "EN-Y3-C014",
@@ -367,6 +611,12 @@
         {
           "cluster_name": "Read and spell exception words from the Years 3-4 statutory list",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Exception words are defined in relation to the GPC pattern system — they are words where the expected phonics rules do not apply, so recognising them as a category requires understanding the pattern well enough to identify the deviation."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C015"
           ],
@@ -381,6 +631,16 @@
         {
           "cluster_name": "Read widely across fiction, poetry and non-fiction to build positive habits",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Reading across genres and for different purposes develops pupils' capacity to adopt different reading stances — the reader of fiction interprets character and theme while the reader of non-fiction evaluates information."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Building positive reading habits over time is an incremental process — the cluster is explicitly about developing attitudes and stamina that change and grow across the year, not a single lesson outcome."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C017",
             "EN-Y3-C018",
@@ -392,6 +652,16 @@
         {
           "cluster_name": "Recognise themes, conventions and language in fiction and poetry",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Recognising themes, poetic forms and the conventions of fairy stories/myths requires pupils to understand texts as shaped by authors with purposes — they interpret what a text is doing, not just what it says."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Genre conventions (fairy tale structure, play format, poetic forms) and effective language patterns are recurring textual features that pupils learn to recognise as categories applicable across multiple texts."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C020",
             "EN-Y3-C021",
@@ -405,6 +675,16 @@
         {
           "cluster_name": "Infer, predict and summarise with evidence from texts",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Drawing inferences with evidence and identifying main ideas are explicitly evidence-grounded skills — pupils must locate textual support for their interpretive claims, not just state what they think."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Inference at Y3 increasingly involves reconstructing characters' feelings and motivations, requiring pupils to ask what perspective a character or narrator occupies and what shapes their view."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C025",
             "EN-Y3-C026",
@@ -418,6 +698,16 @@
         {
           "cluster_name": "Analyse how language, structure and presentation create meaning",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "The explicit focus of this cluster is how language choices and structural organisation (headings, layout, sequence) function to create meaning — it is a direct structure-function analysis task across both fiction and non-fiction."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Retrieving from non-fiction and discussing how language creates meaning requires pupils to use specific textual evidence to support their analytical claims, bridging retrieval and interpretation."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C030",
             "EN-Y3-C031",
@@ -435,6 +725,12 @@
         {
           "cluster_name": "Apply prefixes, suffixes and doubling rules to spell derived words",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Morphological spelling rules (prefix attachment, suffix doubling) are pattern-based — pupils must identify the class of word being modified and apply the relevant rule consistently across all cases."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C034",
             "EN-Y3-C035"
@@ -445,6 +741,12 @@
         {
           "cluster_name": "Learn spelling patterns from etymology and the statutory word list",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Etymology-based spelling patterns (Greek, Latin, French origins) and statutory word lists are both about understanding why words are spelled as they are — historical patterns explain current spelling conventions."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C036",
             "EN-Y3-C037",
@@ -456,6 +758,16 @@
         {
           "cluster_name": "Use apostrophes, dictionaries and dictation to secure accurate spelling",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Possessive apostrophe with plural nouns is a grammatical pattern applied across all plural possessives; dictionary use is pattern-based reference skill; together they reinforce the rule-governed nature of accurate spelling."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Using dictation and dictionaries frames accurate spelling as evidence-checking — pupils verify their own spelling against an authoritative source, building self-monitoring habits."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C039",
             "EN-Y3-C040",
@@ -472,11 +784,17 @@
         {
           "cluster_name": "Join letters fluently and develop consistent handwriting quality",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Joining strokes are systematic — different letter endings follow different joining patterns. Developing consistency requires pupils to recognise and reproduce these patterns reliably across extended writing."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C042",
             "EN-Y3-C043"
           ],
-          "rationale": "Joining strokes and handwriting quality/consistency are the two aspects of the Y3 handwriting curriculum \u2014 the mechanics of joining and the quality standards to achieve; taught together throughout.",
+          "rationale": "Joining strokes and handwriting quality/consistency are the two aspects of the Y3 handwriting curriculum — the mechanics of joining and the quality standards to achieve; taught together throughout.",
           "inspired_by": "CC ELA L.3.3 - Use knowledge of language and its conventions when writing"
         }
       ]
@@ -487,6 +805,16 @@
         {
           "cluster_name": "Plan writing from model texts and generate ideas",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Planning from model texts involves analysing how those texts are structured and understanding that the organisational choices serve the writer's purpose — pupils abstract structural patterns to use in their own writing."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Oral rehearsal and generating/recording ideas introduce pupils to the drafting process as a reusable template — a procedural pattern (plan, rehearse, draft) that scaffolds the writing process."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C044",
             "EN-Y3-C045",
@@ -498,6 +826,16 @@
         {
           "cluster_name": "Organise writing into paragraphs with narrative and non-fiction structures",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Paragraphing, narrative elements and non-fiction organisational devices are all about how structure serves meaning — pupils learn that grouping related ideas, building setting/character/plot, and using headings each fulfil a specific compositional function."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Narrative structure (beginning/build-up/climax/resolution) and non-fiction text organisation are genre patterns that pupils learn to recognise in models and replicate in their own writing."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C047",
             "EN-Y3-C048",
@@ -509,6 +847,16 @@
         {
           "cluster_name": "Evaluate, edit and perform own writing",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluating and editing own writing requires pupils to assess their text against criteria — using what is on the page as evidence of whether the writing achieves its purpose, then acting on that judgement."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Reading aloud with expression and evaluating writing from the perspective of an audience requires pupils to adopt the reader's viewpoint and ask whether the intended effect is achieved."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C050",
             "EN-Y3-C051",
@@ -526,6 +874,16 @@
         {
           "cluster_name": "Extend sentences with conjunctions, fronted adverbials and direct speech",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Multi-clause conjunctions, fronted adverbials and direct speech punctuation are grammatical patterns with consistent structural forms — pupils learn each as a rule-governed template for extending and varying sentence structure."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding why fronted adverbials and direct speech are punctuated as they are requires seeing punctuation as serving structural functions: the comma after a fronted adverbial signals the boundary between frame and main clause."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C054",
             "EN-Y3-C057",
@@ -538,6 +896,16 @@
         {
           "cluster_name": "Use tense, pronouns and nouns for cohesion and grammatical accuracy",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Present perfect tense, pronoun reference and Standard English verb agreement are grammatical patterns — each follows a system of rules that pupils must internalise for consistent accurate application."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Pronoun choice for cohesion is explicitly a structure-function skill: pronoun selection is a structural choice that functions to maintain referential clarity across a text without repetition."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C055",
             "EN-Y3-C056",
@@ -549,6 +917,12 @@
         {
           "cluster_name": "Build vocabulary through prefixes, word families and morphological knowledge",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Word families and prefix-based noun formation are morphological patterns — recognising that 'sign', 'signal', 'signature' share a root allows pupils to infer meaning and spelling through pattern extension."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C060",
             "EN-Y3-C061",
@@ -561,6 +935,12 @@
         {
           "cluster_name": "Organise writing using paragraphs, headings and sub-headings",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Paragraphs, headings and sub-headings are text-organisation structures that serve the function of guiding the reader and grouping related information — the cognitive task is understanding why these devices are used, not just recognising them."
+            }
+          ],
           "concept_ids": [
             "EN-Y3-C063",
             "EN-Y3-C064"
@@ -576,6 +956,16 @@
         {
           "cluster_name": "Listen actively, question and build vocabulary in discussion",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Relevant questioning and building vocabulary through listening position the pupil as an active processor of others' spoken contributions, using what has been said as evidence for how to respond and what vocabulary matters."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Active listening requires tracking the speaker's perspective; vocabulary building in discussion involves recognising that word choices signal viewpoint as well as meaning."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C001",
             "EN-Y4-C002",
@@ -587,6 +977,16 @@
         {
           "cluster_name": "Articulate opinions, give structured contributions and engage audiences",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Articulating and justifying opinions requires pupils to construct a claim-plus-reason structure — the cognitive demand is building a spoken argument that others can evaluate."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Engaging audiences and collaborative conversation require pupils to anticipate how contributions will be received by others, which is a perspectival judgement about listener needs and responses."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C004",
             "EN-Y4-C005",
@@ -599,6 +999,16 @@
         {
           "cluster_name": "Explore ideas through talk, evaluate viewpoints and adapt register",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Evaluating different viewpoints and register/audience awareness are both perspectival skills — pupils must recognise that different contexts, audiences and positions call for different spoken approaches."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Exploratory talk involves testing ideas against each other and spoken performance requires pupils to support claims about texts with oral reasoning — both are forms of collaborative evidence-based argumentation."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C007",
             "EN-Y4-C008",
@@ -617,6 +1027,16 @@
         {
           "cluster_name": "Apply morphology and etymology to read and understand unfamiliar words",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Morphological and etymological analysis is a pattern-application strategy: pupils use the systematic structure of roots, prefixes and suffixes as clues that generalise across all words sharing those elements."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding why words are structured as they are (etymology) and how those structures produce meaning (morphology) is a direct application of structure-function thinking to vocabulary."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C013",
             "EN-Y4-C014",
@@ -633,6 +1053,16 @@
         {
           "cluster_name": "Read widely to develop positive attitudes and reading stamina",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Reading for different purposes across a range of texts develops pupils' awareness that different reading stances are required — reading fiction requires interpretation of character and theme while non-fiction reading requires evaluation of evidence."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Developing positive reading attitudes and silent reading stamina are cumulative outcomes that develop through sustained practice over time — the cluster is about gradual change in reader identity and capability."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C016",
             "EN-Y4-C017",
@@ -644,6 +1074,16 @@
         {
           "cluster_name": "Recognise literary themes, forms and effective language in texts",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Identifying themes, conventions and effective language requires pupils to read as an analyst of authorial choice — they ask why the author selected this form, these words, this structure, which is a perspectival interpretation task."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Literary forms (fairy tale, myth, play), poetic conventions and genre themes are recurring textual patterns that pupils learn to recognise across multiple texts as reusable analytical categories."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C018",
             "EN-Y4-C019",
@@ -658,6 +1098,16 @@
         {
           "cluster_name": "Infer, predict and justify interpretations with textual evidence",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Justifying views independently with textual evidence is the defining cognitive demand — pupils must not only interpret but also construct and communicate a text-grounded argument for their reading."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Drawing inferences from stated and implied information, and making predictions, both require pupils to reconstruct characters' motivations or authors' intentions — fundamentally perspectival reasoning."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C024",
             "EN-Y4-C025",
@@ -671,6 +1121,16 @@
         {
           "cluster_name": "Summarise main ideas and analyse how language and structure contribute to meaning",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Summarising main ideas across paragraphs and retrieving from non-fiction require pupils to identify the most evidentially significant information in a text and organise it coherently."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Analysing how language and structure contribute to meaning is an explicit structure-function task — pupils examine how specific textual choices (word selection, paragraph order, layout) serve the author's communicative purpose."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C028",
             "EN-Y4-C029",
@@ -688,6 +1148,12 @@
         {
           "cluster_name": "Apply prefix and suffix spelling rules to derived words",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Morphological spelling rules for prefixes and the polysyllabic doubling rule are systematic patterns — pupils must identify the word class and apply the relevant rule predictably to all new derived words they encounter."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C032",
             "EN-Y4-C033"
@@ -698,6 +1164,12 @@
         {
           "cluster_name": "Spell homophones and words from etymology-based and statutory lists",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Etymology-based patterns (French, Greek, Latin origins) and statutory word lists both encode the historical regularities that explain modern English spelling — recognising the pattern behind the spelling reduces the memorisation load."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C034",
             "EN-Y4-C035",
@@ -709,6 +1181,16 @@
         {
           "cluster_name": "Use apostrophes, dictionaries and dictation to check and apply spelling",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Plural possessive apostrophe extends the KS1 apostrophe pattern to a more complex rule; dictionary use applies pattern knowledge to verify whether a spelling matches the convention."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Writing from dictation and using dictionaries to check spelling are both evidence-checking practices — pupils test their orthographic knowledge against an external standard."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C037",
             "EN-Y4-C038",
@@ -725,11 +1207,17 @@
         {
           "cluster_name": "Develop fluent, legible joined handwriting at pace",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Handwriting fluency at Y4 is achieved through internalising the motor patterns of joining — consistent, automatic reproduction of letter connections is a pattern-mastery goal."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C040",
             "EN-Y4-C041"
           ],
-          "rationale": "Joining strokes and handwriting fluency/quality are the two complementary aspects of the Y4 handwriting curriculum \u2014 the mechanics and the quality standard \u2014 taught in tandem throughout the year.",
+          "rationale": "Joining strokes and handwriting fluency/quality are the two complementary aspects of the Y4 handwriting curriculum — the mechanics and the quality standard — taught in tandem throughout the year.",
           "inspired_by": "CC ELA L.3.3 - Use knowledge of language conventions in writing"
         }
       ]
@@ -740,6 +1228,16 @@
         {
           "cluster_name": "Plan, generate ideas and rehearse sentences orally before drafting",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Planning from model texts involves understanding how the model's structure serves its purpose — pupils analyse what the text does and why before designing their own version with an equivalent structure."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "The plan-rehearse-draft process is a compositional procedure that pupils learn as a reusable pattern for approaching any writing task, building procedural fluency through repetition across different genres."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C042",
             "EN-Y4-C043",
@@ -751,6 +1249,16 @@
         {
           "cluster_name": "Structure writing using paragraphs and narrative or non-fiction conventions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Narrative elements (setting, character, plot) and non-fiction organisational devices are structural choices that serve specific communicative functions — pupils learn why stories need each element and why non-fiction texts use particular layouts."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Genre patterns for narrative (character introduction, build-up, climax, resolution) and non-fiction (introduction, sections, conclusion) are templates pupils apply to organise content across different writing purposes."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C045",
             "EN-Y4-C046",
@@ -762,6 +1270,16 @@
         {
           "cluster_name": "Evaluate, edit and present own writing effectively",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluating writing requires using the text itself as evidence — pupils assess whether the words on the page achieve the intended effect, then edit based on that judgement with criteria as the argumentative standard."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Reading aloud own writing and evaluating it requires adopting the perspective of the intended audience, asking whether the effect intended by the writer is the effect experienced by the reader."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C048",
             "EN-Y4-C049",
@@ -779,6 +1297,16 @@
         {
           "cluster_name": "Extend sentences with conjunctions, fronted adverbials and direct speech punctuation",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Fronted adverbials, conjunctions for time and cause, and direct speech punctuation are all rule-governed patterns — each has a consistent syntactic form and punctuation convention that pupils learn to apply across all instances."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding why fronted adverbials are followed by a comma, and why direct speech uses inverted commas, connects punctuation conventions to their structural function: marking clause boundaries and speech boundaries respectively."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C052",
             "EN-Y4-C055",
@@ -791,6 +1319,16 @@
         {
           "cluster_name": "Use pronouns, tense and verb forms accurately for grammatical cohesion",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Present perfect tense, pronoun-antecedent agreement and Standard English verb inflections are grammatical patterns that must be applied consistently — errors arise when pupils overgeneralise or fail to apply the correct rule."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Pronoun choice for cohesion is a structure-function relationship: selecting the right pronoun is about how referential structure functions to maintain meaning continuity without repetition."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C053",
             "EN-Y4-C054",
@@ -803,6 +1341,16 @@
         {
           "cluster_name": "Expand noun phrases and use figurative and academic vocabulary with precision",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Expanded noun phrase patterns (determiner + modifier + noun + postmodifier) are syntactic templates, and figurative language patterns (simile, metaphor, personification) are rhetorical conventions pupils learn to recognise and reproduce."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding how expanded noun phrases add descriptive precision and how figurative language creates specific effects connects structural choices (the expanded phrase, the simile) to their communicative functions."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C058",
             "EN-Y4-C063"
@@ -813,6 +1361,12 @@
         {
           "cluster_name": "Organise text using paragraphs, layout and grammatical terminology",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Paragraphing around a theme and using layout features (headings, bullet points) are organisational structures that serve the function of orienting the reader — the metalinguistic dimension (grammatical terminology) helps pupils talk about these structural choices."
+            }
+          ],
           "concept_ids": [
             "EN-Y4-C061",
             "EN-Y4-C062"
@@ -828,6 +1382,16 @@
         {
           "cluster_name": "Perform compositions and engage in formal debate and public speaking",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Formal debate is a structured form of evidence-based argumentation — pupils must construct claims, anticipate counter-arguments, and deploy evidence in real time to persuade an audience."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Public speaking and debate require pupils to consider audience perspective explicitly: what will convince this audience, and how does the opposing side's viewpoint differ from their own?"
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C034",
             "EN-Y5-C035"
@@ -843,6 +1407,16 @@
         {
           "cluster_name": "Apply morphology, etymology and word building to read and understand new vocabulary",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Morphology and etymology provide the pattern system for decoding unfamiliar academic vocabulary — pupils apply knowledge of roots, prefixes and suffixes as a generalisable strategy across all unknown words."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding why words are built as they are (etymological structure) illuminates what they mean (function), giving pupils a principled strategy for vocabulary acquisition rather than rote memorisation."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C036"
           ],
@@ -857,6 +1431,16 @@
         {
           "cluster_name": "Read widely across genres and understand literary heritage and cultural diversity",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Literary heritage and cultural diversity are inherently perspectival concepts — pupils encounter texts produced from different cultural standpoints, requiring them to consider whose perspective shaped the text and what assumptions it reflects."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Literary heritage situates texts within a historical continuum, and understanding cultural diversity requires recognising how perspectives and representations change across time and context."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C014",
             "EN-Y5-C015"
@@ -867,6 +1451,16 @@
         {
           "cluster_name": "Identify themes, literary conventions and make cross-text comparisons",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Cross-text comparison requires pupils to hold multiple authorial perspectives simultaneously — asking how different writers treat the same theme is a direct perspectival analysis task."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Identifying themes and literary conventions involves recognising recurring patterns across texts (the hero's journey, the unreliable narrator, the extended metaphor) — genre competence is pattern recognition at the textual level."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C016",
             "EN-Y5-C017"
@@ -877,6 +1471,16 @@
         {
           "cluster_name": "Infer with evidence, evaluate authorial language and distinguish fact from opinion",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Distinguishing fact from opinion and advanced inference both require pupils to assess the evidential status of claims in a text — what is asserted as established fact, what is interpretation, and what evidence grounds each."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Evaluating authorial language and making complex inferences require pupils to reconstruct the author's intentions and perspective — what choices has the author made and why, and how do those choices shape the reader's experience?"
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C018",
             "EN-Y5-C021",
@@ -888,6 +1492,16 @@
         {
           "cluster_name": "Predict, summarise and retrieve information across multi-paragraph texts",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Multi-paragraph summarisation and information retrieval are evidence-selection tasks — pupils must identify the most significant information and present it coherently, which is the same cognitive operation as selecting evidence for an argument."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Prediction and summarisation across multi-paragraph texts require pupils to track how information is organised structurally across a longer text and how each section contributes to the whole."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C019",
             "EN-Y5-C020",
@@ -904,6 +1518,12 @@
         {
           "cluster_name": "Understand morphology and etymology as the basis for spelling",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Morphology and etymology provide the underlying pattern system that explains why most English words are spelled as they are — understanding these patterns allows pupils to generalise rather than memorise each word independently."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C001",
             "EN-Y5-C002",
@@ -915,6 +1535,12 @@
         {
           "cluster_name": "Apply verb prefixes and verb-forming suffixes to build and spell word forms",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Verb prefixes (dis-, de-, mis-, over-, re-) and verb-forming suffixes (-ate, -ise, -ify) are productive morphological patterns — pupils apply each to a root to generate new word forms, making this a generative pattern application task."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C004",
             "EN-Y5-C005"
@@ -925,16 +1551,28 @@
         {
           "cluster_name": "Spell words with silent letters and advanced homophone distinctions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Silent letters and advanced homophones are categories defined by their relationship to the phonics pattern system — they are words where sound-spelling correspondence is opaque, requiring pupils to learn the category and its exceptions."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C006",
             "EN-Y5-C007"
           ],
-          "rationale": "Silent letters and homophones/commonly confused words are the two categories of spelling challenge that cannot be resolved by phonics or morphology alone \u2014 both require memorisation supported by meaning context.",
+          "rationale": "Silent letters and homophones/commonly confused words are the two categories of spelling challenge that cannot be resolved by phonics or morphology alone — both require memorisation supported by meaning context.",
           "inspired_by": "CC ELA L.5.2e - Spell grade-appropriate words correctly"
         },
         {
           "cluster_name": "Apply complex spelling patterns: -cious/-tious, -cial/-tial, -ant/-ent, -able/-ible",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "The Y5-6 suffix families are explicitly a set of competing patterns — pupils must learn the conditions under which each variant applies (Latin vs French origin, preceding vowel, etc.) making this a higher-order pattern discrimination task."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C008",
             "EN-Y5-C009",
@@ -947,6 +1585,16 @@
         {
           "cluster_name": "Use dictionaries and thesauruses to check spellings and select vocabulary",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Dictionary and thesaurus use are reference skills that position pupils as evidence-checkers of their own language choices — they verify spelling accuracy and evaluate whether a word has precisely the right meaning for their purpose."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Using a thesaurus effectively requires recognising semantic patterns — understanding that synonyms share a core meaning but differ in connotation, register and collocational behaviour."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C012",
             "EN-Y5-C013"
@@ -962,6 +1610,12 @@
         {
           "cluster_name": "Write fluently and present work appropriately for purpose and audience",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Adapting presentation for purpose and audience is a structure-function judgement — pupils consider how different presentational choices (handwriting vs print, format, layout) serve or hinder communication with their intended reader."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C037"
           ],
@@ -976,29 +1630,59 @@
         {
           "cluster_name": "Plan, draft and write for identified audiences, purposes and forms",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Audience, purpose and form (APF) is the organising framework that explicitly asks pupils to connect structural and stylistic choices to their communicative function — every decision should serve the identified purpose for the specified audience."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Precis writing and planning around audience require pupils to adopt the perspective of the reader — what does this audience need to know, and how should information be sequenced for them?"
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C026",
             "EN-Y5-C024"
           ],
-          "rationale": "Audience, purpose and form in writing and pr\u00e9cis writing are the meta-compositional concepts at upper KS2 \u2014 pupils plan explicitly around APF and practise condensive writing as a disciplined planning tool.",
+          "rationale": "Audience, purpose and form in writing and précis writing are the meta-compositional concepts at upper KS2 — pupils plan explicitly around APF and practise condensive writing as a disciplined planning tool.",
           "inspired_by": "CC ELA W.5.4 - Produce clear and coherent writing in which development and organization are appropriate to task"
         },
         {
           "cluster_name": "Write cohesive multi-paragraph texts linking ideas across sections",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Cohesive devices (referencing, ellipsis, connectives, lexical chains) are structural mechanisms that serve the function of creating semantic continuity across a text — pupils learn how each device links sections to produce a coherent whole."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Paragraph linking patterns (topic sentence, development, link to next) and cohesive device types are reusable templates that pupils apply across different text types to achieve text-level coherence."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C025"
           ],
-          "rationale": "Cohesive devices and paragraph linking is the single Y5 composition concept addressing text-level coherence \u2014 the use of referencing, ellipsis, connectives and lexical chains across paragraphs.",
+          "rationale": "Cohesive devices and paragraph linking is the single Y5 composition concept addressing text-level coherence — the use of referencing, ellipsis, connectives and lexical chains across paragraphs.",
           "inspired_by": "CC ELA W.5.2c - Use appropriate transitions to clarify the relationships among ideas"
         },
         {
           "cluster_name": "Write narrative with deliberate craft: character, setting, atmosphere and dialogue",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Deliberate authorial choices about character, setting, atmosphere and dialogue are structure-function decisions — pupils learn how each element contributes to the narrative's effect, asking 'what does this do for the reader?'"
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Writing with craft requires pupils to adopt the author's perspective consciously — they must consider how a reader will experience the text and make choices designed to create specific interpretive and emotional effects."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C027"
           ],
-          "rationale": "Narrative writing: character, setting, atmosphere and dialogue is the upper-KS2 creative writing concept; pupils are expected to make deliberate authorial choices \u2014 a qualitative shift from lower-KS2 narrative composition.",
+          "rationale": "Narrative writing: character, setting, atmosphere and dialogue is the upper-KS2 creative writing concept; pupils are expected to make deliberate authorial choices — a qualitative shift from lower-KS2 narrative composition.",
           "inspired_by": "CC ELA W.5.3 - Write narratives to develop real or imagined experiences using effective technique"
         }
       ]
@@ -1009,6 +1693,16 @@
         {
           "cluster_name": "Use relative clauses, modal verbs and perfect verb forms with grammatical accuracy",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Relative clauses, modal verbs and perfect verb forms are grammatical patterns with consistent syntactic forms and semantic functions — pupils learn the structural template for each and apply it accurately across different writing contexts."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding why modals express degrees of certainty and why relative clauses add post-nominal information connects the grammatical structure to its communicative function, giving pupils principled reasons for their choices."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C028",
             "EN-Y5-C029",
@@ -1020,6 +1714,16 @@
         {
           "cluster_name": "Use the passive voice to vary agency and formality in writing",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Passive voice is a structural choice that functions to alter agency, emphasis and formality — the cognitive demand is understanding how the same proposition can be presented in two structurally different ways to achieve different effects."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Choosing the passive voice is a perspectival authorial decision — it positions the action or outcome as more important than the agent, which changes how the reader interprets the relative significance of actors and events."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C030"
           ],
@@ -1029,6 +1733,16 @@
         {
           "cluster_name": "Punctuate parenthesis and mark clause boundaries with advanced punctuation",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Parenthesis punctuation (brackets, dashes, commas) and advanced boundary marks (semi-colons, colons) are rule-governed patterns — pupils learn the structural conditions under which each mark is appropriate."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Advanced punctuation marks function to signal structural relationships between clauses — a semi-colon indicates balance between two independent clauses, a colon announces an elaboration, and parenthesis marks interrupt the main clause."
+            }
+          ],
           "concept_ids": [
             "EN-Y5-C032",
             "EN-Y5-C033"
@@ -1044,6 +1758,16 @@
         {
           "cluster_name": "Deliver formal presentations and participate in debate with command and clarity",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Formal debate is structured argumentation — pupils must construct, sequence and defend claims with evidence in real time, making this cluster a direct application of evidence_argument in spoken form."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Formal presentations and collaborative discussion require pupils to consider how their contribution will be received and to engage with opposing viewpoints — both demand sustained attention to audience perspective."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C045",
             "EN-Y6-C046"
@@ -1054,6 +1778,16 @@
         {
           "cluster_name": "Use drama, role play and improvisation to explore language and meaning",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Drama, role play and improvisation are the most direct forms of perspectival thinking — pupils inhabit characters with different motivations, histories and viewpoints, exploring meaning by speaking from inside another consciousness."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Exploring language through dramatic enactment connects form (word choice, register, tone) to function (effect on audience, expression of character) in an experiential way."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C048"
           ],
@@ -1068,6 +1802,12 @@
         {
           "cluster_name": "Use morphological analysis and etymological knowledge to acquire vocabulary",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Morphological and etymological analysis is the mature application of the pattern system built from KS1 onwards — pupils deploy all word-analysis strategies together to unlock challenging academic and literary vocabulary automatically."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C044"
           ],
@@ -1082,6 +1822,16 @@
         {
           "cluster_name": "Read broadly across fiction, non-fiction and poetry with sustained independence",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Reading broadly across texts develops pupils' capacity to adopt different interpretive stances — recognising that fiction, non-fiction and poetry each invite different reading perspectives is a metacognitive achievement."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Sustained independent reading and reading stamina are cumulative outcomes — this cluster is explicitly about building the reading habit over time rather than mastering a single skill in isolation."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C017",
             "EN-Y6-C043"
@@ -1092,6 +1842,16 @@
         {
           "cluster_name": "Analyse narrative structure, setting, character and poetic forms",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Analysing plot structure, setting/atmosphere and poetic form requires pupils to explain how specific structural choices (narrative arc, physical environment, stanza form) function to create meaning and emotional effect."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Characterisation analysis requires pupils to reconstruct how an author has constructed a character's inner life and viewpoint — they interpret characterisation as an authorial perspective-building strategy."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C018",
             "EN-Y6-C019",
@@ -1104,15 +1864,35 @@
         {
           "cluster_name": "Critically evaluate authorial language, structure and effectiveness",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Critical evaluation moves beyond description to sustained personal judgement — pupils must adopt both the author's perspective (intended effect) and the reader's (experienced effect) to assess whether the text achieves what it sets out to do."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluative judgements about a text's effectiveness must be sustained with specific textual evidence and reasoning — the evaluative register ('this is effective because...') is an argument claim-plus-evidence structure."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C012"
           ],
-          "rationale": "Critical evaluation of authorial language and structure is the capstone Y6 comprehension skill \u2014 evaluation that goes beyond identification to judge effect and quality; as the most demanding skill in the domain it merits a single-concept cluster.",
+          "rationale": "Critical evaluation of authorial language and structure is the capstone Y6 comprehension skill — evaluation that goes beyond identification to judge effect and quality; as the most demanding skill in the domain it merits a single-concept cluster.",
           "inspired_by": "CC ELA RL.6.4 - Determine the meaning of words and phrases; RL.6.6 - Explain how an author develops the point of view"
         },
         {
           "cluster_name": "Distinguish fact from opinion, compare texts and justify views with evidence",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Distinguishing fact from opinion and comparing texts with justification are both evidence-evaluation tasks — pupils must assess the evidential status of claims in texts and construct their own textually-grounded comparative arguments."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Cross-text comparison requires holding multiple authorial perspectives simultaneously — pupils ask how different writers position themselves in relation to the same subject, and what assumptions shape each text."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C022",
             "EN-Y6-C023"
@@ -1128,6 +1908,12 @@
         {
           "cluster_name": "Apply morphological and etymological strategies to secure accurate spelling",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "By Y6, morphological and etymological strategies are the mature pattern-based approaches that allow pupils to spell unfamiliar words correctly by derivation rather than memorisation — the full statutory word list and accumulated patterns are the corpus of known patterns."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C024",
             "EN-Y6-C036"
@@ -1143,6 +1929,12 @@
         {
           "cluster_name": "Establish a personal handwriting style that is fluent, legible and appropriately adapted",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "A personal handwriting style is adapted to purpose and audience — the choice between print and joined, and the pace and size of writing, are functional decisions about how presentation serves communication."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C049"
           ],
@@ -1157,6 +1949,16 @@
         {
           "cluster_name": "Plan and structure extended writing for identified audiences and purposes",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Planning and structuring extended writing around audience and purpose is the organising principle of Y6 composition — every structural decision (opening, development, conclusion, evidence placement) is judged against whether it serves the writer's purpose for the specified audience."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Audience awareness in writing requires pupils to model the reader's perspective throughout the planning process — they anticipate what the reader needs to know, when they need to know it, and how to guide interpretation."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C034",
             "EN-Y6-C028",
@@ -1168,6 +1970,16 @@
         {
           "cluster_name": "Write narrative, non-narrative and poetry with authorial control",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Writing across narrative, non-narrative and poetry forms with authorial control requires pupils to understand how each form's structural conventions serve different expressive and communicative purposes — the choice of form is itself a functional decision."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Authorial control means making deliberate choices that shape the reader's interpretation — pupils must think as authors who are constructing a reading experience, not just transcribing content."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C025",
             "EN-Y6-C026",
@@ -1180,17 +1992,37 @@
         {
           "cluster_name": "Use evidence and quotation to support writing and develop critical thinking",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Using evidence and quotation to support writing is the written form of the argument structure — pupils embed textual evidence within their own prose to demonstrate and substantiate claims, which is the foundational skill for analytical writing at secondary level."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Precis, summarisation and evidence-selection require pupils to interpret which elements of a source text are most significant for their argument's perspective — selection is itself an interpretive act."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C031",
             "EN-Y6-C030",
             "EN-Y6-C032"
           ],
-          "rationale": "Using evidence and quotation, pr\u00e9cis and summarisation, and summarising main ideas across paragraphs are the evidence-based writing skills; C031 co_teach_hints list C030 and the three together bridge reading comprehension into writing.",
+          "rationale": "Using evidence and quotation, précis and summarisation, and summarising main ideas across paragraphs are the evidence-based writing skills; C031 co_teach_hints list C030 and the three together bridge reading comprehension into writing.",
           "inspired_by": "CC ELA W.6.9 - Draw evidence from literary or informational texts to support analysis"
         },
         {
           "cluster_name": "Draft, evaluate, edit and improve writing towards conscious grammatical control",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evaluating writing against criteria and editing for conscious grammatical control requires pupils to use what is on the page as evidence of whether they have achieved their intentions, then construct revisions as improvements to the argument or effect."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Conscious grammatical control means understanding how specific structural choices (register, sentence type, grammatical complexity) function to create the desired effect — editing is purposeful adjustment of structure in service of function."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C013",
             "EN-Y6-C033",
@@ -1209,6 +2041,16 @@
         {
           "cluster_name": "Use formal and informal vocabulary, synonyms and nuanced language with precision",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Formal vs informal vocabulary, synonyms and antonyms are semantic fields defined by patterns of register and connotation — pupils learn to recognise these patterns and deploy them to achieve precise, contextually appropriate effects."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Nuanced vocabulary choice is a perspectival skill — selecting between synonyms involves understanding what connotations each word brings and how those connotations shape the reader's interpretation of the writer's stance."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C001",
             "EN-Y6-C002",
@@ -1220,6 +2062,16 @@
         {
           "cluster_name": "Apply formal grammatical structures including passive voice and subjunctive forms",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Passive voice, subjunctive mood, perfect verb forms and relative clauses are advanced grammatical patterns that pupils must recognise and apply accurately — each has a consistent structural form with specific semantic and stylistic effects."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Understanding when to use formal structures (subjunctive in hypothetical conditions, passive to foreground object over agent) requires pupils to see grammar as functional choice rather than arbitrary rule."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C003",
             "EN-Y6-C010",
@@ -1233,16 +2085,36 @@
         {
           "cluster_name": "Create cohesion across texts using advanced cohesive devices and layout",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Advanced cohesive devices (ellipsis, lexical chains, grammatical reference) and layout features (columns, bullets, tables) are structural mechanisms that serve the specific function of guiding reader comprehension across a whole text."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Cohesive device types form a system of patterns — each type (pronoun reference, lexical repetition, conjunctive adverb) follows predictable rules for how it links one part of a text to another."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C004",
             "EN-Y6-C005"
           ],
-          "rationale": "Advanced cohesive devices (repetition, grammatical connections, ellipsis) and layout devices (headings, sub-headings, columns, bullets, tables) are the text-organisation tools at Y6 \u2014 cohesion at sentence level and structure at whole-text level.",
+          "rationale": "Advanced cohesive devices (repetition, grammatical connections, ellipsis) and layout devices (headings, sub-headings, columns, bullets, tables) are the text-organisation tools at Y6 — cohesion at sentence level and structure at whole-text level.",
           "inspired_by": "CC ELA W.6.2a - Introduce a topic and organize ideas using appropriate formatting"
         },
         {
           "cluster_name": "Use advanced punctuation accurately: semi-colons, colons, hyphens and bullet points",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "The Y6 punctuation range is a system of conventions — each mark has rule-governed uses (colon before elaboration, semi-colon between balanced independent clauses, hyphen in compound modifiers) that pupils apply consistently."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Advanced punctuation marks signal precise structural relationships: a colon announces, a semi-colon balances, a dash interrupts — understanding these functional distinctions allows pupils to deploy punctuation as a meaning-making resource."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C006",
             "EN-Y6-C007",
@@ -1256,6 +2128,16 @@
         {
           "cluster_name": "Use Standard English and grammatical terminology accurately in formal contexts",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Standard English conventions and grammatical terminology are a system of agreed patterns — pupils learn the formal register and the metalanguage needed to discuss grammatical choices systematically."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Using Standard English in formal contexts requires recognising that register choice signals the writer's or speaker's awareness of audience and context — it is a perspectival decision about how to position oneself in relation to the formal register."
+            }
+          ],
           "concept_ids": [
             "EN-Y6-C011",
             "EN-Y6-C039",
@@ -1272,6 +2154,16 @@
         {
           "cluster_name": "Read widely across literary traditions, genres and time periods",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Reading across pre-1914 literature, contemporary fiction, Shakespeare and world literature requires pupils to recognise that texts are products of specific cultural and historical perspectives — understanding a Victorian novel or a Shakespearean play requires reconstructing the perspective from which it was written."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "The historical dimension of literary heritage positions literature as a record of changing perspectives over time — pupils trace how literary conventions, themes and forms evolve across different periods."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C001",
             "EN-KS3-C002",
@@ -1285,6 +2177,16 @@
         {
           "cluster_name": "Develop independent reading habits and stamina",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "continuity_change",
+              "rationale": "Building reading resilience and re-reading for depth are habits that develop incrementally over time — the cluster is about the gradual change in pupils' relationship with texts and their capacity to sustain engagement."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Independent book selection and reading for pleasure involve pupils developing their own reading identity — they form preferences and interpretive responses that reflect their emerging perspective as readers."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C006",
             "EN-KS3-C007",
@@ -1297,6 +2199,16 @@
         {
           "cluster_name": "Appreciate the literary heritage and sustain whole-book reading",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Appreciating literary heritage involves understanding texts as culturally situated objects — pupils recognise that canonical texts carry perspectives shaped by their historical moment and that those perspectives can be evaluated from a contemporary standpoint."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "The literary heritage strand is explicitly about temporal continuity — understanding that contemporary literature exists in dialogue with earlier texts, and that literary traditions evolve while maintaining certain recurring concerns."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C079",
             "EN-KS3-C085",
@@ -1308,6 +2220,16 @@
         {
           "cluster_name": "Comprehend challenging texts using vocabulary, inference and monitoring strategies",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Citing textual evidence for complex inferences and monitoring comprehension are explicitly evidence-grounded skills — pupils must locate and deploy specific textual support for their interpretations, not just state what they think."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Complex inference at KS3 involves reconstructing characters' psychology, authors' intentions and narrators' reliability — all require pupils to ask whose perspective is being constructed and what shapes it."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C009",
             "EN-KS3-C010",
@@ -1320,6 +2242,16 @@
         {
           "cluster_name": "Analyse how language, grammar, structure and figurative devices create meaning",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Analysing how figurative language, vocabulary choice, grammatical structures and text organisation create meaning is a direct structure-function analysis — pupils explain how specific formal choices produce specific effects on the reader."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Language and structure analysis at KS3 ultimately asks what perspective the author constructs through these choices — the analytical tools serve the broader purpose of interpreting authorial viewpoint."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C015",
             "EN-KS3-C016",
@@ -1332,6 +2264,16 @@
         {
           "cluster_name": "Interpret texts in historical and cultural context and evaluate authorial purpose",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Historical/cultural context and purpose/audience analysis are the two contextual lenses that allow pupils to understand texts as perspectival acts — they ask what assumptions, values and knowledge shaped the author's choices."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Contextualising texts historically requires pupils to understand what has changed between the text's production moment and the present — readers must bridge the temporal gap to interpret texts whose cultural assumptions differ from contemporary ones."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C012",
             "EN-KS3-C013"
@@ -1342,6 +2284,16 @@
         {
           "cluster_name": "Analyse poetic form, convention and figurative language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Poetic conventions (rhyme scheme, metre, stanza form) and figurative devices are structural choices that function to create specific effects — analysing poetry requires explaining how form contributes to meaning, not merely identifying features."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Poetic device types (simile, metaphor, personification, assonance) and formal conventions (sonnet, ballad, free verse) are patterns that pupils learn to recognise across multiple poems and deploy as analytical vocabulary."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C019",
             "EN-KS3-C020"
@@ -1352,6 +2304,16 @@
         {
           "cluster_name": "Analyse narrative structure, character and dramatic performance",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Setting, plot structure, characterisation, dramatic staging and performance interpretation are all structural choices that serve narrative and dramatic functions — pupils analyse why the story is arranged as it is and how each element contributes to the whole effect."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Characterisation and staging interpretation require pupils to reconstruct how an author or director has constructed a character's perspective or how a scene positions the audience — they ask whose viewpoint is foregrounded and how."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C021",
             "EN-KS3-C022",
@@ -1365,6 +2327,16 @@
         {
           "cluster_name": "Compare texts critically and conduct in-depth author study",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Cross-textual comparison and author study both require pupils to hold multiple perspectives simultaneously — comparing how different authors treat a theme means understanding each author's distinctive viewpoint and the assumptions that shape it."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Critical comparative response requires constructing a sustained argument grounded in textual evidence from both texts — pupils must select, juxtapose and interpret evidence to support a comparative thesis."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C026",
             "EN-KS3-C027"
@@ -1380,6 +2352,16 @@
         {
           "cluster_name": "Plan, draft and structure formal essays and extended writing",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Formal expository and narrative essays require pupils to plan how evidence and argument will be sequenced — the essay form is the written argument structure, and planning is the process of organising claims and support before drafting."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Structuring extended writing for formal purposes requires understanding how different essay architectures (chronological, analytical, comparative) serve different purposes — structure is always in service of communicative function."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C028",
             "EN-KS3-C029",
@@ -1394,6 +2376,16 @@
         {
           "cluster_name": "Write imaginatively and creatively across literary forms",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Story, script, poetry and presentation scripting each have distinct formal conventions that serve different expressive purposes — writing creatively across forms requires understanding how the conventions of each genre function to create specific effects."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Creative writing requires pupils to inhabit and construct perspectives — they create characters, narrators and speakers whose viewpoints differ from their own, making imaginative writing an exercise in perspective construction."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C031",
             "EN-KS3-C032",
@@ -1406,6 +2398,16 @@
         {
           "cluster_name": "Write persuasively, formally and for a range of real-world purposes",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Argumentative writing, formal letters and summarisation are all transactional forms where the cognitive demand is constructing a persuasive case — pupils must select and deploy evidence to achieve their intended purpose on a real reader."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Persuasive writing requires pupils to model the reader's perspective — they must anticipate objections, understand what will convince their audience, and position their argument in relation to anticipated counter-views."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C035",
             "EN-KS3-C036",
@@ -1417,6 +2419,16 @@
         {
           "cluster_name": "Support arguments with evidence and adapt writing to audience and purpose",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Evidence-based argumentation, rhetorical devices and literary devices in writing are all tools for constructing persuasive prose — the cluster's defining cognitive demand is selecting and deploying evidence to build an argument that achieves its intended effect."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Audience awareness and purpose awareness require pupils to write from an understanding of the reader's perspective — they adapt form, rhetorical choices and evidence to what will work for the specific audience and purpose."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C038",
             "EN-KS3-C039",
@@ -1431,6 +2443,16 @@
         {
           "cluster_name": "Revise, edit and proof-read writing for coherence, grammar and accuracy",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Structural editing and revision for coherence require pupils to read their own text as evidence of whether their argument or narrative is achieving its effect — editing is evaluation-plus-revision driven by assessment of what the text currently does."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Revising for structural coherence requires understanding how the arrangement of paragraphs and the use of linking devices function to guide the reader — pupils adjust structure in service of communicative function."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C046",
             "EN-KS3-C048",
@@ -1448,6 +2470,16 @@
         {
           "cluster_name": "Acquire and use sophisticated vocabulary with precision and effect",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Advanced vocabulary acquisition through morphological analysis, context and etymology is pattern-based — pupils extend their vocabulary by recognising how word families, register conventions and collocational patterns work systematically."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Vocabulary refinement and sophisticated vocabulary use involve recognising that word choices are perspectival — selecting a word is choosing a way of framing experience that carries connotations and signals a stance."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C008",
             "EN-KS3-C040",
@@ -1459,16 +2491,32 @@
         {
           "cluster_name": "Apply grammatical variety and make conscious linguistic choices in writing",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Grammatical variety and conscious linguistic choice require pupils to understand how different grammatical constructions create different effects — varying sentence structure is a structure-function decision about what each construction does for the reader."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Grammatical variety means drawing on a repertoire of syntactic patterns (simple, compound, complex, minor, passive) and deploying them purposefully — pupils must know the patterns well enough to vary them strategically."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C041",
             "EN-KS3-C054"
           ],
-          "rationale": "Grammatical variety in writing and conscious linguistic choice are the two craft concepts that distinguish KS3 grammar from KS2 \u2014 pupils deploy constructions purposefully to create specific effects; C041 lists C054 in co_teach_hints.",
+          "rationale": "Grammatical variety in writing and conscious linguistic choice are the two craft concepts that distinguish KS3 grammar from KS2 — pupils deploy constructions purposefully to create specific effects; C041 lists C054 in co_teach_hints.",
           "inspired_by": "CC ELA L.7.3 - Use knowledge of language conventions when writing, speaking, reading, or listening"
         },
         {
           "cluster_name": "Spell accurately and punctuate complex sentences with precision",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Advanced spelling accuracy and advanced punctuation are both about applying the conventions of English writing as a rule system — the cognitive task is distinguishing similar patterns (affect/effect, its/it's) and applying the correct convention consistently."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C049",
             "EN-KS3-C050",
@@ -1480,6 +2528,16 @@
         {
           "cluster_name": "Analyse grammatical structures in challenging texts and develop metalinguistic understanding",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Grammatical analysis and literary/grammatical terminology form a metalinguistic system — pupils learn the pattern names that allow them to describe and discuss grammatical structures in texts precisely and consistently."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Grammatical analysis of texts is applied structure-function thinking — pupils identify a construction (nominalisation, embedded clause, appositive) and explain how it functions in context to create meaning or effect."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C052",
             "EN-KS3-C053",
@@ -1492,6 +2550,16 @@
         {
           "cluster_name": "Understand language variety, register, Standard English and spoken-written differences",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Language variety awareness, register and Standard English are sociolinguistic concepts that require pupils to understand language as a perspectival resource — dialect, register and mode choices signal identity, social position and communicative intent."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Register conventions, Standard English grammatical rules and spoken-written differences are systematic patterns — pupils learn the features that distinguish formal from informal, written from spoken, and Standard from non-standard varieties."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C055",
             "EN-KS3-C056",
@@ -1510,6 +2578,16 @@
         {
           "cluster_name": "Use Standard English fluently in formal and informal spoken contexts",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Recognising when to deploy Standard English vs informal spoken register requires pupils to read the social context and audience perspective — register choice is a perspectival decision about how to position oneself in relation to the listener and occasion."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Standard English grammatical conventions and register features are systematic patterns — pupils learn the features that distinguish formal from informal spoken language and practise code-switching between them."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C060",
             "EN-KS3-C063",
@@ -1521,6 +2599,16 @@
         {
           "cluster_name": "Organise, express and maintain focus in speeches and presentations",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Structured speech organisation and maintaining focus on a topic are the spoken forms of argument structure — pupils must sequence claims, evidence and development in a way that builds a coherent, purposeful contribution."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Speech structure (introduction, development, conclusion) and clear idea expression are structure-function choices — the arrangement of a speech serves the function of guiding the listener and making the argument as compelling as possible."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C065",
             "EN-KS3-C066",
@@ -1532,6 +2620,16 @@
         {
           "cluster_name": "Debate, discuss, build on others' ideas and summarise spoken contributions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Formal debate and structured discussion skills are explicitly argument-building in spoken form — pupils must construct claims, respond to counter-arguments and use evidence to persuade, all in real-time dialogue."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Building on others' ideas and acknowledging new information require pupils to genuinely engage with others' perspectives — they must understand the position being expressed before they can develop or challenge it."
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C068",
             "EN-KS3-C069",
@@ -1546,6 +2644,16 @@
         {
           "cluster_name": "Use drama, improvisation and performance techniques to generate and explore language",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Dramatic improvisation, script performance and discussing language through drama are all modes of perspective-taking — pupils inhabit characters with different viewpoints and explore how language choices signal those perspectives."
+            },
+            {
+              "lens": "structure_function",
+              "rationale": "Performance techniques and script rehearsal connect the structural choices in a script (stage direction, speech act, register) to their dramatic function — how does this delivery choice change what the scene communicates to the audience?"
+            }
+          ],
           "concept_ids": [
             "EN-KS3-C072",
             "EN-KS3-C073",
@@ -1560,11 +2668,21 @@
       ]
     },
     "ENL-KS4-D001": {
-      "domain_name": "Reading \u2014 Critical and Analytical",
+      "domain_name": "Reading — Critical and Analytical",
       "clusters": [
         {
           "cluster_name": "Identify and interpret explicit and implicit meaning from texts",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Distinguishing explicit from implicit meaning requires pupils to assess the evidential status of textual information — what is directly stated (evidence for retrieval) versus what must be inferred (evidence for interpretation)."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Implicit meaning interpretation requires pupils to reconstruct what the writer chose not to say directly — understanding implication is about reading the author's perspective through the gap between what is stated and what is meant."
+            }
+          ],
           "concept_ids": [
             "ENL-KS4-C001"
           ],
@@ -1574,25 +2692,55 @@
         {
           "cluster_name": "Analyse how writers use language and structural techniques for effect",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Language analysis (writers' methods) and structural analysis are the GCSE AO2 skills — the cognitive demand is explaining how specific linguistic or structural choices function to create specific effects on a reader."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Analysing writers' methods ultimately asks what perspective the writer constructs through their choices — every language and structural decision is an authorial choice about how to position the reader's understanding."
+            }
+          ],
           "concept_ids": [
             "ENL-KS4-C002",
             "ENL-KS4-C003"
           ],
-          "rationale": "Language analysis (writers' methods) and structural analysis are the two GCSE AO2 skills; both require pupils to identify the technique, explain the effect and evaluate the intent \u2014 best taught together so pupils experience analysis at word and whole-text level simultaneously.",
+          "rationale": "Language analysis (writers' methods) and structural analysis are the two GCSE AO2 skills; both require pupils to identify the technique, explain the effect and evaluate the intent — best taught together so pupils experience analysis at word and whole-text level simultaneously.",
           "inspired_by": "CC ELA RL.9-10.4 - Determine the meaning of words and phrases; RL.9-10.5 - Analyze how an author's choices contribute to overall structure"
         },
         {
           "cluster_name": "Evaluate the effectiveness of writers' choices with critical judgement",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "GCSE critical evaluation requires pupils to make and sustain a personal evaluative judgement supported by evidence — the evaluative claim ('this technique is particularly effective because...') is an argument that must be grounded in specific textual evidence."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Evaluating effectiveness requires pupils to hold both the writer's intended perspective (what they were trying to achieve) and the reader's experienced perspective (what effect was actually created) simultaneously to assess the gap between intention and reception."
+            }
+          ],
           "concept_ids": [
             "ENL-KS4-C004"
           ],
-          "rationale": "Critical evaluation is the GCSE AO4 skill \u2014 making and sustaining a personal evaluative judgement about a text's effectiveness; it builds on analysis but demands a distinct evaluative register and is assessed separately.",
+          "rationale": "Critical evaluation is the GCSE AO4 skill — making and sustaining a personal evaluative judgement about a text's effectiveness; it builds on analysis but demands a distinct evaluative register and is assessed separately.",
           "inspired_by": "CC ELA RL.9-10.6 - Analyze a particular point of view or cultural experience reflected in a work"
         },
         {
           "cluster_name": "Compare writers' perspectives, ideas and methods across texts from different periods",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Comparing writers' perspectives across a contemporary and a 19th-century text requires pupils to hold two different authorial viewpoints simultaneously, understanding how the historical context of each shapes the perspective the text constructs."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "The cross-period comparison task is fundamentally about how attitudes, values, forms and representations change between the 19th century and the present — pupils must analyse what has changed and what has remained consistent across the two texts."
+            }
+          ],
           "concept_ids": [
             "ENL-KS4-C005",
             "ENL-KS4-C006"
@@ -1603,20 +2751,40 @@
       ]
     },
     "ENL-KS4-D002": {
-      "domain_name": "Writing \u2014 Composition and Effect",
+      "domain_name": "Writing — Composition and Effect",
       "clusters": [
         {
           "cluster_name": "Write narrative and descriptive texts with craft, control and original voice",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Narrative and descriptive writing with craft requires pupils to make deliberate structural choices (narrative arc, descriptive sequence, sentence variety) that serve the function of sustaining the reader's interest and creating a specific imaginative effect."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Original voice in creative writing is a perspectival achievement — pupils must construct a distinct authorial perspective from which to narrate or describe, making choices that reflect a coherent and individual way of seeing."
+            }
+          ],
           "concept_ids": [
             "ENL-KS4-C009"
           ],
-          "rationale": "Narrative and descriptive writing is one of the two GCSE English Language writing tasks; it demands a distinct skill set \u2014 imaginative construction, structural control and stylistic craft \u2014 that is best treated as a standalone introductory cluster.",
+          "rationale": "Narrative and descriptive writing is one of the two GCSE English Language writing tasks; it demands a distinct skill set — imaginative construction, structural control and stylistic craft — that is best treated as a standalone introductory cluster.",
           "inspired_by": "CC ELA W.9-10.3 - Write narratives to develop real or imagined experiences"
         },
         {
           "cluster_name": "Write transactional and persuasive texts adapted to audience and purpose",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Rhetorical devices, persuasive techniques and transactional writing forms are all tools for constructing arguments adapted to audience — the cognitive demand is selecting the most effective evidence and rhetorical strategies for the specific persuasive task."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Adapting writing to audience and purpose requires pupils to model the reader's perspective — they must anticipate the audience's prior knowledge, values and objections, and design the text to work for that specific reader."
+            }
+          ],
           "concept_ids": [
             "ENL-KS4-C007",
             "ENL-KS4-C008",
@@ -1633,6 +2801,16 @@
         {
           "cluster_name": "Deliver formal presentations and participate in structured discussion with command",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "GCSE spoken language assessment requires pupils to construct and sustain arguments in formal spoken contexts — both formal presentations and structured discussion demand claim-evidence-reasoning sequences delivered with command."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Formal presentations and collaborative discussion require pupils to adapt to audience perspective, engage with others' contributions, and position their own viewpoint clearly in relation to the views of others."
+            }
+          ],
           "concept_ids": [
             "ENL-KS4-C011",
             "ENL-KS4-C012"
@@ -1648,6 +2826,16 @@
         {
           "cluster_name": "Vary sentence structures for effect and deploy vocabulary with range and precision",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Sentence structure variation and vocabulary precision are both GCSE AO6 craft skills — pupils must understand how syntactic choices (sentence length, type, order) and word selection function to create specific effects on the reader."
+            },
+            {
+              "lens": "patterns",
+              "rationale": "Varied sentence structures draw on a repertoire of syntactic patterns; precise vocabulary use requires understanding semantic patterns of connotation, register and collocation — both demand that pupils recognise and deploy language patterns purposefully."
+            }
+          ],
           "concept_ids": [
             "ENL-KS4-C013",
             "ENL-KS4-C014"
@@ -1658,6 +2846,12 @@
         {
           "cluster_name": "Use punctuation and spelling accurately across a wide vocabulary",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "patterns",
+              "rationale": "Punctuation and spelling accuracy are assessed as the technical dimension of GCSE AO6 — pupils must apply the full range of punctuation conventions and spelling rules reliably across a wide and varied vocabulary."
+            }
+          ],
           "concept_ids": [
             "ENL-KS4-C015"
           ],
@@ -1672,6 +2866,16 @@
         {
           "cluster_name": "Analyse Shakespearean language, dramatic conventions and staging interpretations",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Shakespearean dramatic conventions (blank verse, soliloquy, aside, dramatic irony) and language analysis are structure-function skills — pupils explain how specific structural features of Shakespeare's craft create dramatic and thematic effects on an audience."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Staging interpretation requires pupils to understand that a play script is a set of perspectival choices — different productions construct different readings of the same text, and analysing stagecraft means asking whose interpretation is being expressed."
+            }
+          ],
           "concept_ids": [
             "ELT-KS4-C001",
             "ELT-KS4-C002"
@@ -1682,6 +2886,16 @@
         {
           "cluster_name": "Contextualise Shakespeare's plays within Elizabethan and Jacobean society",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Historical contextualisation requires pupils to understand that Shakespeare's plays were written from within a specific cultural perspective — understanding Elizabethan and Jacobean assumptions about gender, power and hierarchy is essential to interpreting the plays' meanings on their own terms."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "The GCSE AO3 context skill is about the relationship between a text's moment of production and the present — pupils must understand what has changed in social attitudes since the Elizabethan period to analyse why the plays engage contemporary audiences differently."
+            }
+          ],
           "concept_ids": [
             "ELT-KS4-C003"
           ],
@@ -1691,10 +2905,16 @@
         {
           "cluster_name": "Demonstrate detailed whole-text knowledge and retain key quotations",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Whole-text knowledge and quotation retention are prerequisite evidence skills — without a detailed bank of textual knowledge, pupils cannot select and deploy the specific evidence needed to sustain analytical argument in GCSE essays."
+            }
+          ],
           "concept_ids": [
             "ELT-KS4-C014"
           ],
-          "rationale": "Whole-text knowledge and quotation retention is the knowledge-base skill that underpins all GCSE literature essay writing; without detailed textual knowledge pupils cannot sustain analytical argument \u2014 a prerequisite distinct from analytical skill itself.",
+          "rationale": "Whole-text knowledge and quotation retention is the knowledge-base skill that underpins all GCSE literature essay writing; without detailed textual knowledge pupils cannot sustain analytical argument — a prerequisite distinct from analytical skill itself.",
           "inspired_by": "CC ELA RL.9-10.1 - Cite strong and thorough textual evidence to support analysis"
         }
       ]
@@ -1705,6 +2925,16 @@
         {
           "cluster_name": "Understand Victorian narrative fiction genres, forms and social contexts",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Victorian social and historical context is the perspectival framework within which 19th-century texts must be read — understanding the values and assumptions of the period allows pupils to interpret why characters, narrators and authors take the positions they do."
+            },
+            {
+              "lens": "continuity_change",
+              "rationale": "Victorian genre and social context situate the text within a specific historical moment — pupils must understand what was distinctive about that moment (industrialisation, class, gender) and how those conditions shaped the literary forms that emerged."
+            }
+          ],
           "concept_ids": [
             "ELT-KS4-C004",
             "ELT-KS4-C005"
@@ -1715,6 +2945,16 @@
         {
           "cluster_name": "Analyse characterisation, narrative voice and write critical literary essays",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Characterisation and narrative voice analysis require pupils to reconstruct how an author constructs a character's perspective and how the narrator's viewpoint shapes what the reader knows and believes — both are fundamentally perspectival analytical tasks."
+            },
+            {
+              "lens": "evidence_argument",
+              "rationale": "Literary critical writing style requires pupils to construct analytical essays that sustain a thesis through the selection and interpretation of textual evidence — the essay is an extended argument grounded in evidence from the text."
+            }
+          ],
           "concept_ids": [
             "ELT-KS4-C006",
             "ELT-KS4-C015"
@@ -1725,11 +2965,21 @@
       ]
     },
     "ELT-KS4-D003": {
-      "domain_name": "Modern Texts \u2014 Fiction and Drama",
+      "domain_name": "Modern Texts — Fiction and Drama",
       "clusters": [
         {
           "cluster_name": "Analyse theatrical technique, stagecraft and narrative technique in modern texts",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Modern drama theatrical technique/stagecraft and modern fiction narrative technique are structure-function analytical skills — pupils explain how directors' and authors' formal choices (lighting, staging, narrative perspective, time structure) create specific effects on audience and reader."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Analysing narrative technique (point of view, unreliable narrator, free indirect discourse) requires pupils to ask whose perspective is being constructed and how the author manipulates reader access to characters' inner lives."
+            }
+          ],
           "concept_ids": [
             "ELT-KS4-C007",
             "ELT-KS4-C008"
@@ -1740,11 +2990,21 @@
       ]
     },
     "ELT-KS4-D004": {
-      "domain_name": "Poetry \u2014 Anthology and Unseen",
+      "domain_name": "Poetry — Anthology and Unseen",
       "clusters": [
         {
           "cluster_name": "Analyse poetic form, structure, voice and figurative language",
           "cluster_type": "introduction",
+          "thinking_lenses": [
+            {
+              "lens": "structure_function",
+              "rationale": "Poetic form, structure and figurative language are the analytical lenses applied to every anthology poem — the cognitive demand is explaining how each formal choice (stanza structure, enjambment, extended metaphor) contributes to the poem's effect and meaning."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Poetic voice and perspective analysis require pupils to identify and interpret the speaking position constructed in a poem — they ask who is speaking, from what perspective, and how the poem positions the reader in relation to that voice."
+            }
+          ],
           "concept_ids": [
             "ELT-KS4-C009",
             "ELT-KS4-C010",
@@ -1756,11 +3016,21 @@
         {
           "cluster_name": "Compare anthology poems and analyse unseen poetry under examination conditions",
           "cluster_type": "practice",
+          "thinking_lenses": [
+            {
+              "lens": "evidence_argument",
+              "rationale": "Comparative poetry analysis requires pupils to construct a thesis about how two poems approach a theme differently, supported by selected evidence from both texts — the comparative essay is an argument that must be substantiated throughout."
+            },
+            {
+              "lens": "perspective_interpretation",
+              "rationale": "Both comparative and unseen analysis require pupils to interpret the perspective constructed in each poem and articulate how the poets' different choices reflect or construct different ways of seeing the same subject."
+            }
+          ],
           "concept_ids": [
             "ELT-KS4-C012",
             "ELT-KS4-C013"
           ],
-          "rationale": "Comparative poetry analysis and unseen poetry analysis are the two GCSE poetry assessment tasks; comparative analysis requires deep anthology knowledge while unseen requires transferable analytical skill \u2014 taught together as the two modes of application.",
+          "rationale": "Comparative poetry analysis and unseen poetry analysis are the two GCSE poetry assessment tasks; comparative analysis requires deep anthology knowledge while unseen requires transferable analytical skill — taught together as the two modes of application.",
           "inspired_by": "CC ELA RL.9-10.9 - Analyze how an author draws on and transforms source material"
         }
       ]

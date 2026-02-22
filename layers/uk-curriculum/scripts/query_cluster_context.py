@@ -37,7 +37,7 @@ import json
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT_ROOT / "core" / "scripts"))
 
 from neo4j import GraphDatabase
@@ -243,6 +243,20 @@ def query_context(session, cluster_id, year_override=None):
         ctx["feedback_profile"] = {}
         ctx["interaction_types"] = []
 
+    # ── 9. ThinkingLens options for this cluster (ordered by rank) ───────────
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[rel:APPLIES_LENS]->(tl:ThinkingLens)
+        RETURN tl.lens_id       AS lens_id,
+               tl.lens_name     AS lens_name,
+               tl.description   AS description,
+               tl.key_question  AS key_question,
+               tl.agent_prompt  AS agent_prompt,
+               rel.rank         AS rank,
+               rel.rationale    AS mapping_rationale
+        ORDER BY rel.rank
+    """, cid=cluster_id)
+    ctx["thinking_lenses"] = [dict(row) for row in r]
+
     return ctx
 
 
@@ -257,6 +271,7 @@ def render_markdown(ctx):
     prereqs = ctx.get("prerequisite_concepts", [])
     interactions = ctx.get("interaction_types", [])
     domain_clusters = ctx.get("domain_clusters", [])
+    thinking_lenses = ctx.get("thinking_lenses", [])
 
     lines = []
 
@@ -313,6 +328,29 @@ def render_markdown(ctx):
         for n in nexts:
             lines.append(f"**Leads to**: `{n['cluster_id']}` — {n['cluster_name']}")
         lines.append("")
+
+    # ── ThinkingLens options ──
+    if thinking_lenses:
+        lines.append("## Thinking lenses")
+        lines.append("")
+        lines.append("*The following lenses apply to this cluster. Each is a valid framing — "
+                     "choose the one that fits your lesson angle.*")
+        lines.append("")
+        for tl in thinking_lenses:
+            primary = " *(recommended)*" if tl["rank"] == 1 else ""
+            lines.append(f"### {tl['lens_name']}{primary}")
+            lines.append("")
+            lines.append(f"*{tl.get('description', '')}*")
+            lines.append("")
+            if tl.get("mapping_rationale"):
+                lines.append(f"**Why this lens fits:** {tl['mapping_rationale']}")
+                lines.append("")
+            if tl.get("key_question"):
+                lines.append(f"> **Key question for pupils:** _{tl['key_question']}_")
+                lines.append("")
+            if tl.get("agent_prompt"):
+                lines.append(f"> **AI instruction:** {tl['agent_prompt']}")
+            lines.append("")
 
     # ── Prerequisites ──
     if prereqs:
