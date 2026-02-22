@@ -1,0 +1,100 @@
+{
+  "version": "1.0",
+  "subject": "Geography",
+  "skill_type": "GeographicalSkill",
+  "authored_by": "human",
+  "authored_date": "2026-02-22",
+  "note": "Concept-level DEVELOPS_SKILL links seeded from v4 teacher simulation (Adeyemi). Maps KS3 Geography concepts to the specific GeographicalSkill sub-types they develop. Adeyemi noted that C007 (Skills) needs splitting into sub-types — these links achieve that functionally by connecting content to specific skill nodes.",
+  "links": [
+    {
+      "concept_id": "GE-KS3-C001",
+      "skill_id": "GS-KS3-001",
+      "rationale": "Plate tectonics requires using maps to identify plate boundaries, earthquake/volcano distribution patterns, and tectonic hazard zones at global scale."
+    },
+    {
+      "concept_id": "GE-KS3-C001",
+      "skill_id": "GS-KS3-003",
+      "rationale": "GIS for plate tectonics: layering earthquake epicentre data, plate boundary locations, and population density to analyse hazard risk zones."
+    },
+    {
+      "concept_id": "GE-KS3-C001",
+      "skill_id": "GS-KS3-006",
+      "rationale": "Tectonics data analysis: interpreting seismic data, comparing earthquake magnitude/depth across plate boundaries, statistical analysis of hazard frequency."
+    },
+    {
+      "concept_id": "GE-KS3-C002",
+      "skill_id": "GS-KS3-003",
+      "rationale": "Adeyemi: 'Choropleth maps of HDI, GDP per capita are core geography skills.' GIS essential for development — layering economic indicators spatially."
+    },
+    {
+      "concept_id": "GE-KS3-C002",
+      "skill_id": "GS-KS3-006",
+      "rationale": "Development data analysis: comparing indicators (GDP, HDI, life expectancy), constructing scatter graphs of development indicators, identifying correlations."
+    },
+    {
+      "concept_id": "GE-KS3-C002",
+      "skill_id": "GS-KS3-004",
+      "rationale": "Development enquiry using multiple sources: World Bank data, case study research, comparing development pathways using complex secondary data."
+    },
+    {
+      "concept_id": "GE-KS3-C003",
+      "skill_id": "GS-KS3-006",
+      "rationale": "Climate change data analysis: interpreting temperature anomaly graphs, CO2 concentration data, sea level rise trends. Core data interpretation applied to climate."
+    },
+    {
+      "concept_id": "GE-KS3-C003",
+      "skill_id": "GS-KS3-004",
+      "rationale": "Climate change enquiry: evaluating evidence from multiple sources (ice cores, satellite data, historical records) to assess causes and impacts."
+    },
+    {
+      "concept_id": "GE-KS3-C004",
+      "skill_id": "GS-KS3-006",
+      "rationale": "Adeyemi: 'Population pyramids, migration flow maps, and census data analysis.' Population data requires specialist graphical analysis skills."
+    },
+    {
+      "concept_id": "GE-KS3-C004",
+      "skill_id": "GS-KS3-005",
+      "rationale": "Urbanisation fieldwork: investigating land use, environmental quality, traffic counts in contrasting urban areas. Primary data collection in the field."
+    },
+    {
+      "concept_id": "GE-KS3-C005",
+      "skill_id": "GS-KS3-001",
+      "rationale": "World regions: using maps and atlases to locate regions, identify spatial patterns of climate, biomes, economic activity at continental/global scales."
+    },
+    {
+      "concept_id": "GE-KS3-C005",
+      "skill_id": "GS-KS3-002",
+      "rationale": "World regions: interpreting thematic maps, satellite imagery, and aerial photographs to study regional characteristics and compare places."
+    },
+    {
+      "concept_id": "GE-KS3-C006",
+      "skill_id": "GS-KS3-004",
+      "rationale": "Place depth study: the core enquiry skill — designing and conducting a geographical investigation using multiple complex sources about a specific place."
+    },
+    {
+      "concept_id": "GE-KS3-C006",
+      "skill_id": "GS-KS3-005",
+      "rationale": "Place depth study through fieldwork: collecting primary data in contrasting locations, analysing findings, drawing evidence-based geographical conclusions."
+    },
+    {
+      "concept_id": "GE-KS2-C001",
+      "skill_id": "GS-KS2-001",
+      "rationale": "Latitude/longitude and locational knowledge: using maps, atlases and globes to locate places, identify the Equator, Tropics, and time zones."
+    },
+    {
+      "concept_id": "GE-KS2-C001",
+      "skill_id": "GS-KS2-002",
+      "rationale": "Locational knowledge requires grid reference skills: four and six-figure references on OS maps to locate specific places in the UK."
+    },
+    {
+      "concept_id": "GE-KS2-C002",
+      "skill_id": "GS-KS2-004",
+      "rationale": "Climate zones: geographical enquiry into why different places have different climates. Comparing data from contrasting climate zones."
+    },
+    {
+      "concept_id": "GE-KS2-C002",
+      "skill_id": "GS-KS2-005",
+      "rationale": "Climate zones: collecting and presenting weather data through fieldwork — temperature, rainfall, wind. Recording and graphing local weather data."
+    }
+  ]
+}

@@ -853,6 +853,28 @@ class SchemaValidator:
         status = "FAIL" if issues else "PASS"
         self.add(ValidationResult("Cross-domain CO_TEACHES completeness", status, total, issues))
 
+    def check_concept_skill_links_completeness(self):
+        """Concept-level DEVELOPS_SKILL: curated links should have non-null rationale."""
+        total = self.scalar("""
+            MATCH ()-[r:DEVELOPS_SKILL]->()
+            WHERE r.level = 'concept'
+            RETURN count(r)
+        """) or 0
+        if total == 0:
+            self.add(ValidationResult("Concept-level DEVELOPS_SKILL completeness", "PASS", 0,
+                                      ["No concept-level DEVELOPS_SKILL — migration pending"]))
+            return
+        records = self.run("""
+            MATCH (c:Concept)-[r:DEVELOPS_SKILL]->(s)
+            WHERE r.level = 'concept'
+              AND (r.rationale IS NULL OR r.rationale = '')
+            RETURN c.concept_id AS src, s.skill_id AS tgt
+            LIMIT 20
+        """)
+        issues = [f"DEVELOPS_SKILL {r['src']} -> {r['tgt']} missing rationale" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("Concept-level DEVELOPS_SKILL completeness", status, total, issues))
+
     def check_concept_cluster_completeness(self):
         """ConceptCluster nodes have required non-null properties (skipped if none exist)."""
         total = self.scalar("MATCH (cc:ConceptCluster) RETURN count(cc)") or 0
@@ -1181,6 +1203,7 @@ class SchemaValidator:
             self.check_is_keystone_consistency,
             self.check_co_teaches_integrity,
             self.check_cross_domain_co_teaches_completeness,
+            self.check_concept_skill_links_completeness,
             self.check_concept_cluster_completeness,
             self.check_concept_cluster_coverage,
             self.check_cluster_sequencing,

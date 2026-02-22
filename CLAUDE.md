@@ -107,6 +107,12 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 python3 core/migrations/compute_lesson_grouping_signals.py
 python3 layers/uk-curriculum/scripts/generate_concept_clusters.py
 
+# Cross-domain CO_TEACHES (run after concept grouping)
+python3 core/migrations/create_cross_domain_co_teaches.py
+
+# Concept-level skill integration (run after epistemic skills import)
+python3 core/migrations/create_concept_skill_links.py
+
 # Assessment layer (optional, depends on UK)
 python3 layers/assessment/scripts/import_test_frameworks.py
 
@@ -229,7 +235,8 @@ All nodes have `display_category` property:
 
 // Cross-layer alignments
 (:Practice)-[:ALIGNS_TO]->(:Concept)  // NGSS ↔ UK
-(:Programme)-[:DEVELOPS_SKILL]->(:WorkingScientifically)  // UK ↔ Skills
+(:Programme)-[:DEVELOPS_SKILL]->(:WorkingScientifically)  // UK ↔ Skills (programme level)
+(:Concept)-[:DEVELOPS_SKILL]->(:WorkingScientifically)    // UK ↔ Skills (concept level, curated)
 
 // Learner profiles (linked from Year)
 (:Year)-[:PRECEDES]->(:Year)                                      // Y1→Y2→...→Y11
@@ -474,6 +481,20 @@ class LayerImporter:
 - Full legal/ethical analysis (`docs/design/CHILD_PROFILE_CONSENT.md`)
 - Regulatory research audit trail (`docs/research/privacy-compliance/`)
 - CLAUDE.md updated with compliance as first-class development concern
+
+✅ **Cross-domain CO_TEACHES (2026-02-22):**
+- 48 curated within-subject cross-domain links (maths, english, science, humanities, arts, applied)
+- 18 curated cross-subject links (Science↔Maths, Science↔English, Geography↔History, English↔History)
+- Migration: `create_cross_domain_co_teaches.py` loads from `layers/uk-curriculum/data/cross_domain_links/*.json`
+- Validator: curated cross-domain = PASS, extracted cross-domain = WARN
+
+✅ **Concept-level DEVELOPS_SKILL integration (2026-02-22):**
+- 34 Science concept→WorkingScientifically links (KS2 + KS3, with enquiry_type tags)
+- 18 Geography concept→GeographicalSkill links (KS2 + KS3)
+- 18 History concept→HistoricalThinking links (KS2 + KS3)
+- Migration: `create_concept_skill_links.py` loads from `layers/uk-curriculum/data/concept_skill_links/*.json`
+- Complements existing Programme→Skill links with concept granularity
+- Validator: check_concept_skill_links_completeness added
 
 🚧 **In progress:**
 - Oak National Academy content (skeleton only)

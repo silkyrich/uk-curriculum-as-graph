@@ -1,0 +1,135 @@
+{
+  "version": "1.0",
+  "subject_group": "cross_subject",
+  "authored_by": "human",
+  "authored_date": "2026-02-22",
+  "note": "Cross-SUBJECT CO_TEACHES links seeded from v4 teacher team simulation. 18 links identified across 5 teachers: Henderson (Maths), Okonkwo (English), Kapoor (Science KS2), Osei (Science KS3), Adeyemi (Geography/History). These connect concepts that are taught in relation to each other across subject boundaries.",
+  "links": [
+    {
+      "source": "GE-KS3-C002",
+      "target": "HI-KS3-C002",
+      "reason": "shared_context",
+      "rationale": "Adeyemi: 'Empire and Development are the SAME STORY told from different disciplinary perspectives.' Colonial history explains current patterns of global development and inequality; development geography provides the evidence base for enduring consequences of empire.",
+      "strength": 0.95
+    },
+    {
+      "source": "GE-KS3-C004",
+      "target": "HI-KS3-C002",
+      "reason": "feeds_into",
+      "rationale": "Adeyemi: Historical patterns of migration (slave trade, colonial labour, Windrush, post-colonial migration) explain current population distributions and multicultural communities studied in Geography. Migration is both historical and geographical.",
+      "strength": 0.85
+    },
+    {
+      "source": "GE-KS3-C003",
+      "target": "HI-KS3-C001",
+      "reason": "shared_context",
+      "rationale": "Adeyemi: Climate change is a political issue requiring democratic action. Historical understanding of how political systems respond to crises informs contemporary climate governance debates.",
+      "strength": 0.7
+    },
+    {
+      "source": "GE-KS3-C007",
+      "target": "HI-KS3-C004",
+      "reason": "shared_context",
+      "rationale": "Adeyemi: Both are disciplinary methodologies requiring evidence evaluation, source analysis, and reasoned argument construction. Cross-pollination strengthens both — geographical enquiry and historical enquiry share a common foundation.",
+      "strength": 0.8
+    },
+    {
+      "source": "SC-KS3-C104",
+      "target": "GE-KS3-C003",
+      "reason": "shared_context",
+      "rationale": "Osei + Adeyemi: The carbon cycle (Science) is the mechanism; climate change (Geography) gives the consequences. D010 Earth/Atmosphere overlaps heavily with Geography — teachers need to coordinate.",
+      "strength": 0.9
+    },
+    {
+      "source": "SC-KS3-C100",
+      "target": "GE-KS3-C001",
+      "reason": "shared_context",
+      "rationale": "Osei + Adeyemi: Earth's structure and plate tectonics appear in both KS3 Science (Earth and Atmosphere) and KS3 Geography. Same content, different disciplinary lens — must coordinate to avoid repetition.",
+      "strength": 0.9
+    },
+    {
+      "source": "SC-KS2-C027",
+      "target": "MA-Y3-C015",
+      "reason": "feeds_into",
+      "rationale": "Kapoor + Henderson: Friction investigation requires measurement skills — reading scales on force meters, measuring distances in cm/m. Maths measurement concepts directly enable science investigation recording.",
+      "strength": 0.8
+    },
+    {
+      "source": "SC-KS2-C067",
+      "target": "MA-Y5-C015",
+      "reason": "feeds_into",
+      "rationale": "Kapoor + Henderson: Light investigation (angles of incidence/reflection) requires understanding of angles from Maths. Y5/Y6 Science uses angle measurement that depends on Maths geometry.",
+      "strength": 0.75
+    },
+    {
+      "source": "SC-KS2-C030",
+      "target": "MA-Y4-C022",
+      "reason": "feeds_into",
+      "rationale": "Kapoor + Henderson: Environmental change data requires interpreting bar charts and line graphs from Maths statistics. Science data recording depends on Maths data handling skills.",
+      "strength": 0.8
+    },
+    {
+      "source": "SC-KS2-C058",
+      "target": "MA-Y4-C022",
+      "reason": "feeds_into",
+      "rationale": "Kapoor: Classification and data analysis in Living Things requires data handling skills (tables, Venn diagrams, Carroll diagrams) that are taught in Maths statistics.",
+      "strength": 0.7
+    },
+    {
+      "source": "SC-KS2-C030",
+      "target": "EN-Y4-C030",
+      "reason": "feeds_into",
+      "rationale": "Kapoor + Okonkwo: Science environmental change concepts use non-fiction texts as source material. English 'retrieving information from non-fiction' (C030) is the literacy skill that enables science reading comprehension.",
+      "strength": 0.75
+    },
+    {
+      "source": "SC-KS2-C066",
+      "target": "EN-Y4-C030",
+      "reason": "feeds_into",
+      "rationale": "Kapoor + Okonkwo: Evolution and inheritance relies heavily on reading for information — Darwin's observations, fossil evidence, adaptation examples. English non-fiction reading skills enable science evidence evaluation.",
+      "strength": 0.7
+    },
+    {
+      "source": "SC-KS3-C119",
+      "target": "MA-Y6-C018",
+      "reason": "feeds_into",
+      "rationale": "Osei + Henderson: Distance-time graphs in KS3 Physics require line graph interpretation skills from KS2 Maths. Speed = distance/time requires formula substitution. Without maths graph skills, physics is inaccessible.",
+      "strength": 0.9
+    },
+    {
+      "source": "SC-KS3-C127",
+      "target": "MA-Y6-C018",
+      "reason": "feeds_into",
+      "rationale": "Osei + Henderson: Hooke's Law (force-extension graphs) requires plotting and interpreting line graphs, calculating gradients (spring constant). Maths data handling is prerequisite to physics investigation.",
+      "strength": 0.85
+    },
+    {
+      "source": "SC-KS3-C075",
+      "target": "MA-Y6-C007",
+      "reason": "feeds_into",
+      "rationale": "Osei + Henderson: Conservation of mass requires accurate mass measurement, calculation with decimals, and balancing equations. Maths calculation fluency directly enables chemistry quantitative work.",
+      "strength": 0.8
+    },
+    {
+      "source": "EN-Y4-C047",
+      "target": "HI-KS3-C004",
+      "reason": "feeds_into",
+      "rationale": "Okonkwo + Adeyemi: English composition skills (planning, paragraphing, evidence-based argument) feed into History essay writing. KS2 English writing is the foundation for KS3 History extended writing — but History also requires source evaluation which English doesn't teach.",
+      "strength": 0.8
+    },
+    {
+      "source": "EN-Y4-C026",
+      "target": "HI-KS3-C004",
+      "reason": "feeds_into",
+      "rationale": "Okonkwo + Adeyemi: Reading inference skills from English feed into History source interpretation. Drawing inferences with evidence is a transferable skill, though History applies it to historical sources with additional demands (provenance, reliability, bias).",
+      "strength": 0.75
+    },
+    {
+      "source": "EN-Y4-C003",
+      "target": "SC-KS2-C048",
+      "reason": "feeds_into",
+      "rationale": "Okonkwo + Kapoor: English vocabulary building strategies (Latin/Greek roots, prefixes, suffixes) directly support science technical vocabulary. 'Dissolve', 'evaporate', 'irreversible' — Latin roots taught in English enable science comprehension.",
+      "strength": 0.7
+    }
+  ]
+}
