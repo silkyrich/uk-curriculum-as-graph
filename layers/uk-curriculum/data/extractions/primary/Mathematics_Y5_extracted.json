@@ -472,7 +472,9 @@
       "common_misconceptions": "Pupils sometimes omit commas in large numbers or place them incorrectly. Numbers with zeros in the middle (e.g. 304,056) cause placeholder confusion. Pupils may read 304,056 as 'three hundred and four thousand and fifty-six' omitting the hundreds of thousands value or collapsing place values.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C002",
@@ -484,7 +486,9 @@
       "common_misconceptions": "When rounding to the nearest 10,000, pupils look at the ones or tens digit (the last digit) rather than the thousands digit. Cascading rounding — rounding 95,000 to the nearest 100,000 gives 100,000 — surprises pupils who may not expect rounding to increase the number of digits.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C003",
@@ -496,7 +500,11 @@
       "common_misconceptions": "Pupils frequently include 1 as a prime number (it has only one factor, not two). They may think all odd numbers are prime (9 = 3 × 3 is odd but not prime). The number 2 is the only even prime, which surprises pupils who think 'all primes are odd'. Large-number primeness testing requires systematic factor checking.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y5-C005"
+      ]
     },
     {
       "concept_id": "MA-Y5-C004",
@@ -508,7 +516,9 @@
       "common_misconceptions": "Pupils confuse squaring with multiplying by 2 (thinking 5² = 10 rather than 25). Similarly, they may think 5³ = 15 (multiplying by 3) rather than 125 (multiplying 5 × 5 × 5). The notation n² is sometimes read as 'n two' rather than 'n squared'. Pupils may not connect square numbers to physical square arrays.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C005",
@@ -520,7 +530,11 @@
       "common_misconceptions": "Factors and multiples are persistently confused: factors divide a number (factors of 12 are 1, 2, 3, 4, 6, 12); multiples are the products of multiplying a number by positive integers (multiples of 12 are 12, 24, 36...). When finding common factors, pupils often stop after finding one rather than listing all. HCF is confused with product of factors.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y5-C003"
+      ]
     },
     {
       "concept_id": "MA-Y5-C006",
@@ -532,7 +546,9 @@
       "common_misconceptions": "The most common error is forgetting to write the zero placeholder in the second row (so the tens product is not shifted left correctly). Pupils also forget to add carries from the first row before starting the second. Some pupils treat long multiplication as two separate short multiplications and forget to add the partial products at the end.",
       "concept_type": "skill",
       "complexity_level": 4,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C007",
@@ -544,7 +560,9 @@
       "common_misconceptions": "Pupils forget to bring down a digit when there is a remainder from one column to the next, particularly when a zero appears in the quotient (e.g. 3024 ÷ 4 = 756, where 0 ÷ 4 = 0 must still be written). Interpreting remainders contextually is frequently missed — pupils give a remainder answer when the context requires rounding.",
       "concept_type": "skill",
       "complexity_level": 4,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C008",
@@ -556,7 +574,9 @@
       "common_misconceptions": "The classic error is adding numerators and denominators independently (1/3 + 1/4 = 2/7). Pupils who do not find a common denominator first will always make this error. When only one denominator needs converting, some pupils convert both unnecessarily and make errors. Forgetting to simplify the answer (leaving 6/9 instead of 2/3) is also common.",
       "concept_type": "skill",
       "complexity_level": 4,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C009",
@@ -568,7 +588,9 @@
       "common_misconceptions": "When converting mixed to improper, pupils forget to add the numerator after multiplying (computing 2 × 5 = 10 for 2 3/5 and writing 10/5 rather than 13/5). When converting improper to mixed, pupils who use the division method may not write the remainder as a fraction (writing quotient as the answer without a remainder fraction). They may also think improper fractions are 'wrong' rather than a valid form.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C010",
@@ -580,7 +602,9 @@
       "common_misconceptions": "Pupils sometimes think 'per cent' and 'percentage points' are interchangeable in all contexts. They may write 5% as 0.5 (rather than 0.05) or as 5/10 (rather than 5/100). Converting 0.07 to a percentage: some pupils say 7% (correct) but others say 70% (multiplying by 10 rather than 100). The relationship between percentage and decimal requires multiplying or dividing by 100, not 10.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C011",
@@ -592,7 +616,9 @@
       "common_misconceptions": "The most common error is reading the wrong scale on the protractor (reading 120° when the angle is 60°, because protractors have two scales that count in opposite directions). Pupils may not place the centre of the protractor on the vertex, giving inaccurate readings. They may also not estimate before measuring, leading to unchecked errors.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C012",
@@ -604,7 +630,9 @@
       "common_misconceptions": "Pupils sometimes use the wrong total (applying 360° instead of 180° for angles on a straight line). They may confuse 'at a point' (360°) with 'on a straight line' (180°). For triangles, pupils may not check that their three angles sum to 180° after calculating, missing arithmetic errors.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C013",
@@ -616,7 +644,9 @@
       "common_misconceptions": "Pupils compare decimals with different numbers of decimal places incorrectly: thinking 0.4 > 0.35 might be true (correct) but thinking 0.035 > 0.4 because 35 > 4 (incorrect — confusing place values). The word 'thousandths' is confused with 'thousands', leading to errors when moving between large and small numbers. Writing 0.003 as 3/1000 is secure; writing 3/1000 as 0.003 is less so.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C014",
@@ -628,7 +658,9 @@
       "common_misconceptions": "Pupils confuse volume (cm³, 3-D) with area (cm², 2-D). They may multiply only two dimensions rather than three. The formula V = l × w × h is sometimes misremembered as V = l + w + h (confusing with perimeter additions). Pupils may not understand that a flat shape has no volume, or that two shapes with the same surface area can have different volumes.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C015",
@@ -640,7 +672,9 @@
       "common_misconceptions": "When reflecting in a non-axis line, pupils often count along the line rather than perpendicular to it. For reflection in the y-axis, pupils may change both coordinates rather than only the x-coordinate. Translations are confused with rotations. Pupils may change the size of the shape during transformation, not understanding that transformations preserve size and shape.",
       "concept_type": "skill",
       "complexity_level": 4,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C016",
@@ -652,7 +686,9 @@
       "common_misconceptions": "Pupils frequently make column alignment errors in formal written methods, particularly when numbers have different numbers of digits or when zeros appear as place holders. Carrying and borrowing errors are common, especially across multiple columns. Pupils may default to written methods even when mental calculation is more efficient; developing the habit of checking whether mental methods apply before starting a written calculation is important. Rounding to estimate is sometimes applied mechanically without checking whether the estimate confirms the calculated answer.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y5-C017",
@@ -664,7 +700,9 @@
       "common_misconceptions": "Pupils often misread scales that do not go up in ones, particularly scales in multiples of 2, 5 or 25; explicit work on scale reading is necessary before graph interpretation problems. On line graphs, pupils sometimes read only the plotted points rather than interpolating values between them. In timetable reading, pupils frequently confuse rows and columns or subtract the wrong times to find duration. Difference problems ('how much more than?') are sometimes solved by addition rather than subtraction — modelling on a number line helps clarify the operation required.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

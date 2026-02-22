@@ -304,7 +304,7 @@
       "domain_id": "SC-KS1-D006",
       "objective_text": "describe how animals obtain their food from plants and other animals, using the idea of a simple food chain, and identify and name different sources of food",
       "non_statutory_guidance": "Pupils should be introduced to the idea of a food chain showing what eats what, always starting with a plant (producer). Simple food chains from their local environment work best. Pupils should identify and name a variety of food sources, understanding that most food ultimately comes from plants. The concept of a food chain is introduced at this stage; food webs are not expected at KS1.",
-      "examples": "Constructing a simple food chain such as: nettle \u2192 caterpillar \u2192 robin \u2192 hawk; identifying that bread comes from wheat, milk from cows that eat grass; making cards showing plant \u2192 herbivore \u2192 carnivore and arranging them in order.",
+      "examples": "Constructing a simple food chain such as: nettle → caterpillar → robin → hawk; identifying that bread comes from wheat, milk from cows that eat grass; making cards showing plant → herbivore → carnivore and arranging them in order.",
       "is_statutory": true,
       "year": [
         2
@@ -336,7 +336,7 @@
       "objective_id": "SC-KS1-O025",
       "domain_id": "SC-KS1-D003",
       "objective_text": "notice that animals, including humans, have offspring which grow into adults",
-      "non_statutory_guidance": "Pupils should observe and describe the stages of animal growth and development, using a variety of animals as examples. Good examples include egg \u2192 chick \u2192 chicken, egg \u2192 caterpillar \u2192 pupa \u2192 butterfly, spawn \u2192 tadpole \u2192 frog, and lamb \u2192 sheep or baby \u2192 toddler \u2192 child \u2192 teenager \u2192 adult. At this stage, pupils are not expected to understand the mechanisms of reproduction.",
+      "non_statutory_guidance": "Pupils should observe and describe the stages of animal growth and development, using a variety of animals as examples. Good examples include egg → chick → chicken, egg → caterpillar → pupa → butterfly, spawn → tadpole → frog, and lamb → sheep or baby → toddler → child → teenager → adult. At this stage, pupils are not expected to understand the mechanisms of reproduction.",
       "examples": "Hatching chick eggs in an incubator in the classroom; raising butterfly larvae through metamorphosis; using time-lapse videos to observe frog spawn developing; sequencing picture cards of human growth stages.",
       "is_statutory": true,
       "year": [
@@ -399,7 +399,9 @@
       "common_misconceptions": "Children often think all science questions must be answered by doing an experiment. They need to learn that observation, research, and classification are also valid scientific methods.",
       "concept_type": "process",
       "complexity_level": 1,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C002",
@@ -411,7 +413,9 @@
       "common_misconceptions": "Children often describe what they expect to see rather than what they actually see. Encourage them to record actual observations rather than prior knowledge.",
       "concept_type": "skill",
       "complexity_level": 1,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C003",
@@ -423,7 +427,9 @@
       "common_misconceptions": "Children often change several things at once without realising this makes a fair comparison impossible. They may also confuse prediction with wish ('I want the green one to win') rather than evidence-based expectation.",
       "concept_type": "process",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C004",
@@ -435,7 +441,9 @@
       "common_misconceptions": "Children may think that once they have sorted something one way, that is the only way. They benefit from repeated sorting activities using different criteria on the same set of objects.",
       "concept_type": "process",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C005",
@@ -447,7 +455,9 @@
       "common_misconceptions": "Children often state what they think or wish rather than what the evidence shows. They may also over-generalise from limited data ('All rocks float' from a single observation).",
       "concept_type": "process",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C006",
@@ -459,7 +469,9 @@
       "common_misconceptions": "Children (and some teachers) can mistake beautiful or elaborate recording for good science. Emphasise that recording should be clear and purposeful, serving the science rather than replacing it.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C007",
@@ -471,7 +483,9 @@
       "common_misconceptions": "Children may identify false patterns from too few observations. Emphasise the need to observe many examples before claiming a pattern exists.",
       "concept_type": "process",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C008",
@@ -483,7 +497,9 @@
       "common_misconceptions": "Children may not distinguish between reliable and unreliable sources. Introduce the idea that scientific information is checked by other scientists, and that some sources are more trustworthy than others.",
       "concept_type": "skill",
       "complexity_level": 1,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C009",
@@ -495,7 +511,9 @@
       "common_misconceptions": "Children often think 'plant' means only flowering plants or garden plants, not trees, grasses or mosses. Broaden their conception of what counts as a plant.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C010",
@@ -507,7 +525,11 @@
       "common_misconceptions": "Children often think only trees have trunks and branches. They may not realise that a fruit (in the botanical sense) contains seeds and can be a tomato, pea pod or acorn, not just sweet fruits. Some children think bulbs are seeds.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": [
+        "SC-KS1-C009"
+      ]
     },
     {
       "concept_id": "SC-KS1-C011",
@@ -519,7 +541,9 @@
       "common_misconceptions": "Children often think all trees lose their leaves in winter. Some children think dead plants have lost their leaves, confusing seasonal leaf-shedding with plant death.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C012",
@@ -531,7 +555,9 @@
       "common_misconceptions": "Children often think seeds need light to germinate - they do not initially. They may also think that all plants grow from seeds (bulbs, cuttings, and runners are also used for propagation). Some children believe that when a seed sprouts, the seedling 'was inside the seed' in its final form.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C013",
@@ -543,7 +569,9 @@
       "common_misconceptions": "Children commonly believe seeds need light to germinate (they do not). Many children also think plants get their food from the soil (plants make their own food via photosynthesis; they absorb water and minerals from the soil). Children may not realise that too much water is also harmful to plants.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C014",
@@ -555,7 +583,9 @@
       "common_misconceptions": "Children may think a germinating seed is a different organism to the mature plant it will become. Some children think germination requires soil specifically - it requires water and warmth, not soil (though soil provides support and minerals for later growth).",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C015",
@@ -567,7 +597,9 @@
       "common_misconceptions": "Children commonly misclassify animals: whales as fish (they are mammals), dolphins as fish, penguins as fish. They may not know humans are mammals. Some children think all animals that live in water are fish. Children often believe that all reptiles are dangerous or all amphibians are frogs.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C016",
@@ -579,7 +611,9 @@
       "common_misconceptions": "Children may think all large animals are carnivores (elephants and rhinos are herbivores). They often incorrectly classify humans - we are omnivores. Some children think sharks are the only carnivores.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C017",
@@ -591,7 +625,9 @@
       "common_misconceptions": "Children often describe animals in terms of size or colour (which are not reliable classification criteria) rather than structural features. They may not recognise that a bat's wing and a bird's wing are different structural solutions to the same problem.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C018",
@@ -603,7 +639,9 @@
       "common_misconceptions": "Children frequently confuse the terms 'arm' and 'hand', or 'leg' and 'foot'. Some children do not distinguish 'face' from 'head'. Children may not use the term 'elbow' or 'knee' accurately.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C019",
@@ -615,19 +653,23 @@
       "common_misconceptions": "Children sometimes think they smell with their mouth or taste with their nose (these senses are closely related and interact, which can cause this confusion). Some children name more or fewer than five senses.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C020",
       "domain_id": "SC-KS1-D003",
       "concept_name": "Animal Life Cycles",
-      "description": "Understanding that animals produce offspring that grow into adults, and that this process involves different observable stages depending on the animal. Key examples at KS1 include: egg \u2192 chick \u2192 chicken, egg \u2192 caterpillar \u2192 pupa \u2192 butterfly, spawn \u2192 tadpole \u2192 frog, and lamb \u2192 sheep. Pupils are not expected to understand the mechanisms of reproduction at this stage, only to recognise and sequence the stages of growth.",
+      "description": "Understanding that animals produce offspring that grow into adults, and that this process involves different observable stages depending on the animal. Key examples at KS1 include: egg → chick → chicken, egg → caterpillar → pupa → butterfly, spawn → tadpole → frog, and lamb → sheep. Pupils are not expected to understand the mechanisms of reproduction at this stage, only to recognise and sequence the stages of growth.",
       "teaching_guidance": "Rear butterflies or chicks in the classroom to observe life cycle stages directly. Use time-lapse videos for slower cycles. Sequence picture cards showing life cycle stages. Compare life cycles of different animals and notice similarities and differences. Emphasise that all animals follow some form of this growth cycle.",
       "key_vocabulary": "offspring, adult, grow, life cycle, egg, larva, pupa, caterpillar, tadpole, spawn, chick, hatch, metamorphosis",
       "common_misconceptions": "Children often think caterpillars and butterflies are completely different animals. They may not know that frogs come from frogspawn. Some children do not realise that humans also follow a life cycle (baby to adult).",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C021",
@@ -639,7 +681,9 @@
       "common_misconceptions": "Children may not place themselves on the growth timeline accurately. Some children think 'old person' is the final stage, not recognising the full adult stage before old age.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C022",
@@ -651,7 +695,9 @@
       "common_misconceptions": "Children often add shelter, warmth or space to this list - while these matter for wellbeing, water, food and air are the three survival essentials. Some children think fish breathe air directly rather than dissolved oxygen in water.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C023",
@@ -663,7 +709,9 @@
       "common_misconceptions": "Children often think healthy food means eating no treats ever, rather than understanding balance and variety. Many do not know that different foods serve different purposes (energy, growth, repair). Some children associate exercise only with sport rather than any physical activity.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C024",
@@ -675,7 +723,9 @@
       "common_misconceptions": "Children frequently name an object when asked what it is made of (e.g., saying 'table' when the material is 'wood'). Some children believe that only man-made things are materials, not natural materials like rock or water.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C025",
@@ -687,7 +737,9 @@
       "common_misconceptions": "Children often think all clear, hard materials are glass (many are plastic). They may not recognise rock in manufactured form (e.g., granite worktop). Some children do not identify water as a material.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C026",
@@ -699,7 +751,9 @@
       "common_misconceptions": "Children often confuse 'hard' with 'heavy'. They may say transparent means 'see through' but not understand that opaque means 'you cannot see through it'. Some confuse 'absorbent' and 'waterproof' as opposites when other categories exist (e.g., water-resistant).",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C027",
@@ -711,7 +765,9 @@
       "common_misconceptions": "Children often choose materials based on familiarity or preference rather than properties. Some think there is always one 'right' answer for material choice, rather than understanding that multiple materials might work and that context determines the best choice.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C028",
@@ -723,7 +779,9 @@
       "common_misconceptions": "Children often think that because a rubber band stretches, rubber is not solid. They may not distinguish between reversible deformation (stretching a rubber band) and permanent change (squashing clay). Some confuse physical change (shape change) with chemical change (making something new).",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C029",
@@ -735,7 +793,9 @@
       "common_misconceptions": "Children in the UK may have a distorted view of seasons based on books featuring idealised summer or winter conditions. Some children think it is always the same season everywhere in the world at the same time (it is summer in Australia when it is winter in the UK).",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C030",
@@ -747,7 +807,9 @@
       "common_misconceptions": "Children often think it always snows in winter in the UK (it frequently does not, especially in southern England). They may think all rain falls in autumn and winter, not appreciating that it can rain heavily in summer too.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C031",
@@ -759,7 +821,9 @@
       "common_misconceptions": "Children (and some adults) believe that in summer the Earth is closer to the Sun (it is actually very slightly further away). The correct reason for day length and seasonal temperature is the tilt of Earth's axis, which is not covered until later in the curriculum.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C032",
@@ -771,7 +835,9 @@
       "common_misconceptions": "Children commonly think fire is alive (it moves, grows, and 'breathes' oxygen). They may also think clouds or rivers are alive. A very common error is classifying wood as 'never alive' rather than 'dead' (was part of a living tree). Seeds are often wrongly classified as 'never alive' or 'dead'.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C033",
@@ -783,7 +849,9 @@
       "common_misconceptions": "Children often think that movement is the key indicator of life, which leads them to classify fire or rivers as alive, and plants as non-living (because plants move too slowly to see without time-lapse). Many children do not realise that plants are alive.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C034",
@@ -795,7 +863,9 @@
       "common_misconceptions": "Children often think of habitats only as exotic places (jungle, Arctic) rather than recognising habitats in their immediate environment such as a garden, hedgerow, or under a stone. Some children think an animal's habitat is simply wherever it happens to be rather than where it is adapted to live.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C035",
@@ -807,7 +877,9 @@
       "common_misconceptions": "Children may not realise that the specific conditions in a micro-habitat (dampness, darkness, temperature) are what make it suitable for certain organisms - they may think animals choose locations randomly.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C036",
@@ -819,7 +891,9 @@
       "common_misconceptions": "Children often think animals actively chose or developed their adaptations (intentional fallacy). Some think all animals could survive in all habitats if they wanted to. Children may think adaptation happens within a single animal's lifetime rather than over many generations.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C037",
@@ -831,19 +905,23 @@
       "common_misconceptions": "Children often think of habitats as collections of independent organisms rather than an interconnected community. They may not appreciate that plants depend on animals (for pollination) as well as animals depending on plants.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C038",
       "domain_id": "SC-KS1-D006",
       "concept_name": "Simple Food Chains",
       "description": "A food chain is a sequence showing who eats whom, starting always with a producer (a green plant that makes its own food through photosynthesis) and showing the flow of energy through herbivores, omnivores and carnivores. At KS1 pupils construct and read simple linear food chains (3-4 organisms) from their local habitat. The concept of energy transfer from food is not formally introduced until KS2.",
-      "teaching_guidance": "Build food chains using cards or pictures from local habitats (nettle \u2192 caterpillar \u2192 blue tit \u2192 sparrowhawk). Emphasise that food chains always start with a green plant. Use arrows correctly - the arrow represents 'is eaten by' or 'energy goes to', pointing from prey to predator. Discuss what happens if one organism is removed.",
+      "teaching_guidance": "Build food chains using cards or pictures from local habitats (nettle → caterpillar → blue tit → sparrowhawk). Emphasise that food chains always start with a green plant. Use arrows correctly - the arrow represents 'is eaten by' or 'energy goes to', pointing from prey to predator. Discuss what happens if one organism is removed.",
       "key_vocabulary": "food chain, producer, consumer, predator, prey, eaten by, plant, herbivore, carnivore, arrow, energy",
       "common_misconceptions": "Children often draw arrows pointing in the wrong direction (from predator to prey). Many do not realise that food chains must always start with a plant. Some children think food chains exist only in exotic environments, not recognising chains in the school garden.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C039",
@@ -855,7 +933,9 @@
       "common_misconceptions": "Children frequently change multiple variables in a test without realising this makes fair comparison impossible. They may also not understand why keeping things the same matters.",
       "concept_type": "process",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C040",
@@ -867,7 +947,9 @@
       "common_misconceptions": "Children often expect results to be visible immediately. They may lose motivation during extended investigations. Helping them see the value of the accumulated record, rather than each individual data point, is important.",
       "concept_type": "process",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C041",
@@ -879,7 +961,9 @@
       "common_misconceptions": "Children often use hand lenses incorrectly (holding them too far from the object or eye). They may not understand why using equipment gives better results than using their senses alone.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C042",
@@ -891,7 +975,9 @@
       "common_misconceptions": "Children (and sometimes teachers) equate quantity of writing with quality of science. Oral explanation and careful drawing can demonstrate understanding just as effectively as written accounts.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C043",
@@ -903,7 +989,9 @@
       "common_misconceptions": "Children often look for dramatic, sudden changes rather than slow continuous ones. They may not see slow processes (plant growth, seasonal change) as interesting because they are not immediately visible.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C044",
@@ -915,7 +1003,9 @@
       "common_misconceptions": "Children often think there is one correct way to sort a set of things. They may not see that the choice of criterion is itself a scientific decision.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C045",
@@ -927,7 +1017,9 @@
       "common_misconceptions": "Children tend to notice obvious differences (size, colour) before noticing less visible but scientifically more important ones (structure, composition, behaviour). Guiding pupils to look at specific features systematically helps overcome this.",
       "concept_type": "skill",
       "complexity_level": 1,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C046",
@@ -939,7 +1031,9 @@
       "common_misconceptions": "Some pupils believe that science means knowing the right answer rather than asking good questions. It is important to model scientific curiosity as a valued disposition, not just a stepping-stone to right answers.",
       "concept_type": "attitude",
       "complexity_level": 1,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C047",
@@ -951,7 +1045,9 @@
       "common_misconceptions": "Children sometimes think that because they are gentle, handling living things for extended periods is fine. They need to understand that even gentle handling causes stress and that returning animals quickly is important.",
       "concept_type": "attitude",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "SC-KS1-C048",
@@ -963,7 +1059,9 @@
       "common_misconceptions": "Children commonly believe that dark glasses make it safe to look at the Sun - they do not. Some believe that looking quickly is safe - it is not.",
       "concept_type": "attitude",
       "complexity_level": 1,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

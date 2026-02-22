@@ -218,7 +218,9 @@
       "common_misconceptions": "Pupils may assume that CAM processes always produce better results than hand making, not understanding that the quality of the output depends on the quality of the design file. They may also see CAM as 'cheating' rather than as a professional making skill. Some pupils may not understand why making problems require design modifications rather than just making harder; the iterative relationship between designing and making needs explicit modelling.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS3-C006",
@@ -230,7 +232,9 @@
       "common_misconceptions": "Pupils may select familiar materials rather than the most appropriate ones. Systematic matrix-based selection challenges habitual choosing. The idea that different materials in a single product must be compatible with the same making processes can be missed; teaching pupils to consider how each part will be made alongside what it will be made from prevents this.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS3-C007",
@@ -242,7 +246,11 @@
       "common_misconceptions": "Pupils may have oversimplified views of nutritional 'good' and 'bad' foods, not understanding that most foods provide a range of nutrients and that nutritional quality depends on overall diet pattern rather than individual foods. The roles of fat and carbohydrate are often misunderstood due to popular diet culture; teaching evidence-based nutritional science corrects common misconceptions about these macronutrients.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "DT-KS3-C008"
+      ]
     },
     {
       "concept_id": "DT-KS3-C008",
@@ -254,7 +262,9 @@
       "common_misconceptions": "Pupils may approach cooking as recipe-following rather than skill development, missing the transferable technique knowledge that allows them to cook without a recipe. Framing each cooking session as practising a specific technique, not just making a specific dish, develops this broader competence. Pupils may underestimate the importance of preparation (mise en place) to a smooth cooking process; practising organised preparation as a skill in itself addresses this.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS3-C001",
@@ -266,7 +276,9 @@
       "common_misconceptions": "Pupils may assume they understand user needs without researching them; conducting actual user research and discovering unexpected insights challenges this assumption. Pupils may treat prototyping as the production of a miniature final product rather than as a testing tool; emphasising that prototypes are for learning, not perfecting, changes the approach. The idea that design can be improved through testing can seem obvious but requires practical experience to become a genuine habit.",
       "concept_type": "process",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS3-C002",
@@ -278,7 +290,9 @@
       "common_misconceptions": "Pupils may have oversimplified mental models of materials (metal = hard, plastic = soft) that do not account for the enormous range within each material category. Systematic comparison activities challenge these generalisations. The distinction between material properties (inherent characteristics) and manufacturing properties (how easily a material can be shaped) is important but often conflated. Smart materials may seem magical; explaining the underlying scientific principles demystifies them.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS3-C003",
@@ -290,7 +304,9 @@
       "common_misconceptions": "Pupils may see electronics and programming as separate from 'proper' DT making. Framing embedded computing as a component of product design, like any other mechanical or material element, integrates it appropriately. Pupils may find it difficult to specify product behaviour before programming; teaching input-process-output planning as a design step addresses this. The debugging of electronic and software systems can be frustrating; systematic fault-finding strategies build resilience.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS3-C004",
@@ -302,7 +318,9 @@
       "common_misconceptions": "Pupils may think sustainability means using recycled materials, missing the much broader concept of reducing impact across the entire life cycle. Pupils may not see a connection between their individual design decisions and wider environmental or social outcomes; tracing specific design choices to their broader consequences makes this concrete. The apparent conflict between sustainability and cost or performance requires honest discussion of real-world trade-offs.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

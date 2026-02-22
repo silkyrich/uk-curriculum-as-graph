@@ -155,7 +155,9 @@
       "common_misconceptions": "Pupils may assume that letters in the target language are pronounced as in English. Systematic attention to differences in sound-spelling correspondence prevents fossilisation of incorrect patterns. Some pupils may feel embarrassed to make unfamiliar sounds; creating a playful, low-stakes environment for sound exploration reduces inhibition. Teachers may unconsciously accept poor pronunciation as adequate; consistently modelling and expecting accurate pronunciation maintains high standards.",
       "concept_type": "skill",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "LA-KS2-C002",
@@ -167,7 +169,9 @@
       "common_misconceptions": "Pupils may believe that learning vocabulary means translating word lists. Teaching vocabulary in context and through use challenges this. Pupils may not use deliberate strategies to memorise vocabulary; teaching a range of memory techniques (visual associations, spaced practice, self-testing) develops more effective vocabulary learning habits. The distinction between receptive and productive vocabulary is important: recognising a word when heard is different from being able to use it spontaneously.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "LA-KS2-C003",
@@ -179,7 +183,9 @@
       "common_misconceptions": "Pupils accustomed to English may not understand why nouns have gender in other languages. Explaining that grammatical gender is a linguistic feature, not a reflection of real-world gender, prevents confusion. Pupils may not see the relevance of learning verb conjugation; connecting it to the ability to talk about different people (I, you, he, she) makes the functional purpose clear. Irregular verbs (which are often the most common) require extra attention; pupils may apply regular patterns to irregular forms.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "LA-KS2-C004",
@@ -191,7 +197,9 @@
       "common_misconceptions": "Pupils may believe that making a grammatical error means they have failed to communicate. Distinguishing between grammatical accuracy and communicative success, and valuing both, develops more confident communicators. Some pupils are reluctant to speak without certainty of accuracy; developing tolerance of ambiguity and risk-taking in communication is important. Pupils may see languages as sets of rules to be memorised rather than tools for communication; keeping the communicative purpose central prevents this.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "LA-KS2-C005",
@@ -203,7 +211,12 @@
       "common_misconceptions": "Pupils may assume that the target language works like English in all respects. Drawing attention to systematic differences prevents negative transfer errors. Pupils may see cognates as confusing rather than helpful; teaching that cognates are a resource for decoding unfamiliar text develops a positive strategy. Pupils who speak languages other than English at home may have significant knowledge that is not recognised or drawn upon; making space for multilingual comparison enriches the learning of all pupils.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "LA-KS2-C002",
+        "LA-KS2-C003"
+      ]
     },
     {
       "concept_id": "LA-KS2-C006",
@@ -215,7 +228,9 @@
       "common_misconceptions": "Pupils may attempt to read target language text using English sound-spelling correspondences, producing systematic mispronunciation. Consistent phonics-based teaching of the target language's sound system prevents this. Some pupils may believe that understanding every word is necessary before any meaning can be extracted; teaching reading for gist and the use of context to infer meaning develops more effective reading strategies. Dictionary use may be seen as admitting failure rather than as a competent reading strategy; normalising dictionary use as a skilled behaviour encourages its effective application.",
       "concept_type": "skill",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "LA-KS2-C007",
@@ -227,7 +242,9 @@
       "common_misconceptions": "Pupils may produce writing by copying from classroom displays or books rather than from memory; building in activities that require independent recall (covering the model before writing) develops genuine productive competence. Pupils may view written accuracy as the only criterion for good writing; developing the ability to communicate meaning effectively even with some errors alongside developing accuracy produces more confident writers. Some pupils may feel that they cannot write in a foreign language; scaffolded, achievable writing tasks with clear success criteria build confidence before demanding more extended production.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

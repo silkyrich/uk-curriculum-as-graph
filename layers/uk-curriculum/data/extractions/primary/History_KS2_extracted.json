@@ -83,7 +83,7 @@
       "objective_id": "HI-KS2-O003",
       "domain_id": "HI-KS2-D002",
       "objective_text": "Britain's settlement by Anglo-Saxons and Scots",
-      "non_statutory_guidance": "This could include: Roman withdrawal from Britain in c. AD 410 and the fall of the western Roman Empire; Scots invasions from Ireland to north Britain (now Scotland); Anglo-Saxon invasions, settlements and kingdoms; place names and village life; Anglo-Saxon art and culture; Christian conversion \u2013 Canterbury, Iona and Lindisfarne",
+      "non_statutory_guidance": "This could include: Roman withdrawal from Britain in c. AD 410 and the fall of the western Roman Empire; Scots invasions from Ireland to north Britain (now Scotland); Anglo-Saxon invasions, settlements and kingdoms; place names and village life; Anglo-Saxon art and culture; Christian conversion – Canterbury, Iona and Lindisfarne",
       "examples": "Roman withdrawal; Scots invasions; Anglo-Saxon invasions, settlements and kingdoms; Anglo-Saxon art and culture; Christian conversion",
       "is_statutory": true
     },
@@ -114,7 +114,7 @@
     {
       "objective_id": "HI-KS2-O007",
       "domain_id": "HI-KS2-D003",
-      "objective_text": "the achievements of the earliest civilizations \u2013 an overview of where and when the first civilizations appeared and a depth study of one of the following: Ancient Sumer; The Indus Valley; Ancient Egypt; The Shang Dynasty of Ancient China",
+      "objective_text": "the achievements of the earliest civilizations – an overview of where and when the first civilizations appeared and a depth study of one of the following: Ancient Sumer; The Indus Valley; Ancient Egypt; The Shang Dynasty of Ancient China",
       "non_statutory_guidance": null,
       "examples": "Ancient Sumer; The Indus Valley; Ancient Egypt; The Shang Dynasty of Ancient China",
       "is_statutory": true
@@ -122,7 +122,7 @@
     {
       "objective_id": "HI-KS2-O008",
       "domain_id": "HI-KS2-D003",
-      "objective_text": "Ancient Greece \u2013 a study of Greek life and achievements and their influence on the western world",
+      "objective_text": "Ancient Greece – a study of Greek life and achievements and their influence on the western world",
       "non_statutory_guidance": null,
       "examples": null,
       "is_statutory": true
@@ -130,7 +130,7 @@
     {
       "objective_id": "HI-KS2-O009",
       "domain_id": "HI-KS2-D003",
-      "objective_text": "a non-European society that provides contrasts with British history \u2013 one study chosen from: early Islamic civilization, including a study of Baghdad c. AD 900; Mayan civilization c. AD 900; Benin (West Africa) c. AD 900-1300",
+      "objective_text": "a non-European society that provides contrasts with British history – one study chosen from: early Islamic civilization, including a study of Baghdad c. AD 900; Mayan civilization c. AD 900; Benin (West Africa) c. AD 900-1300",
       "non_statutory_guidance": null,
       "examples": "early Islamic civilization, including a study of Baghdad c. AD 900; Mayan civilization c. AD 900; Benin (West Africa) c. AD 900-1300",
       "is_statutory": true
@@ -147,7 +147,9 @@
       "common_misconceptions": "Pupils often identify single causes for complex historical events, when in reality multiple factors interact. Teaching that causes can be categorised (political, economic, social) and that they interact helps. Pupils may confuse correlation with causation; discussing examples where two things happened at the same time but were not causally related develops more precise thinking. The idea of unintended consequences can be surprising; good historical examples make it concrete.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "HI-KS2-C002",
@@ -159,7 +161,11 @@
       "common_misconceptions": "Pupils often conflate significance with fame, assuming that well-known figures must be the most significant. Discussing overlooked historical figures who had major impacts challenges this. The idea that significance is judged rather than simply recognised can be counterintuitive; explicit discussion of the criteria for significance helps. Pupils may not realise that significance can be contested - different people may disagree about how significant an event was.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "HI-KS2-C001"
+      ]
     },
     {
       "concept_id": "HI-KS2-C003",
@@ -171,7 +177,9 @@
       "common_misconceptions": "Pupils may believe that written sources are more reliable than other types. Discussing how photographs can be staged, letters can be biased and accounts can be selective challenges this. The concept that a biased source is not necessarily useless requires explicit teaching: a source biased in a particular direction still tells us something about its author's perspective. Pupils may not understand why different historians reach different conclusions; discussing different perspectives and frameworks helps.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "HI-KS2-C004",
@@ -183,7 +191,9 @@
       "common_misconceptions": "Pupils often think ancient civilisations were primitive or unsophisticated. Studying their technological, artistic and intellectual achievements challenges this. The concept of civilisation can carry value judgements; it is important to discuss what the term means without implying that non-urban societies are inferior. Pupils may not connect ancient civilisations to the present; discussing legacies (alphabet, legal codes, mathematics, architecture) makes the connection explicit.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "HI-KS2-C005",
@@ -195,7 +205,9 @@
       "common_misconceptions": "Pupils may see the historical periods as completely separate rather than as phases in a continuous story. Emphasising connections between periods - the Roman influence on Anglo-Saxon culture, the Viking influence on English - develops more integrated understanding. Pupils may have a romantic rather than realistic view of the Viking or Anglo-Saxon periods; a balanced approach using archaeological and textual evidence avoids both romanticisation and demonisation.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

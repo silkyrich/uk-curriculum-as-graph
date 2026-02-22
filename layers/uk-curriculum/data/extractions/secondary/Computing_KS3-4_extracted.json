@@ -124,7 +124,11 @@
       "common_misconceptions": "Pupils may assume the algorithm they first learned is the best for all cases. Exploring performance with different input sizes and orders demonstrates that no single algorithm is always optimal. Binary search's requirement for a sorted list is often overlooked; understanding the preconditions of an algorithm is part of understanding the algorithm. Tracing recursive algorithms like merge sort can be confusing; explicit tree diagrams that show recursive calls make the structure visible.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "CO-KS34-C003"
+      ]
     },
     {
       "concept_id": "CO-KS34-C002",
@@ -136,7 +140,9 @@
       "common_misconceptions": "Pupils often confuse binary (a number system) with a code for letters or colours, not realising it is a general-purpose representational system for any data. The fact that 0 and 1 in binary do not mean 'nothing' and 'one' but represent powers of two needs explicit teaching. Boolean AND requiring both inputs to be true (not either), and the counterintuitive behaviour of NAND and NOR gates, are common points of confusion requiring careful attention to truth tables.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CO-KS34-C003",
@@ -148,7 +154,9 @@
       "common_misconceptions": "Pupils may not see the need for data structures beyond simple variables, especially in small programs. Showing how programs that use appropriate data structures scale to larger problems motivates their use. The difference between passing data to a function by value and by reference is a subtle but important concept that affects program behaviour. Functions that return values are often confused with procedures that only produce side effects; consistent terminology and practice develops clarity.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CO-KS34-C004",
@@ -160,7 +168,9 @@
       "common_misconceptions": "Pupils may assume that algorithms are neutral because they are mathematical. The data used to train machine learning models reflects historical human decisions and can encode and amplify historical biases. The idea that privacy is only a concern for people with 'something to hide' is common but misguided; developing nuanced understanding of privacy as a social good prevents this. Technology is neither inherently good nor bad; its impacts depend on how it is designed, deployed and governed.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

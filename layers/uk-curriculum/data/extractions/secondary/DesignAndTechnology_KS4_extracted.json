@@ -2,7 +2,10 @@
   "metadata": {
     "subject": "Design and Technology",
     "key_stage": "KS4",
-    "years_covered": [10, 11],
+    "years_covered": [
+      10,
+      11
+    ],
     "document_reference": "DFE-00283-2015",
     "extraction_date": "2026-02-21",
     "structure_rating": 8
@@ -158,7 +161,9 @@
       "common_misconceptions": "Pupils frequently write evaluation that is entirely positive or is based on personal preference, rather than being referenced to the specification and user feedback. Teaching that honest evaluation of limitations is more valuable than praise — because it drives improvement — changes this. Some pupils confuse evaluation with description: saying what they made rather than assessing how well it meets its specification. The distinction between 'what I made' and 'how well it works' needs explicit teaching.",
       "concept_type": "process",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS4-C007",
@@ -170,7 +175,9 @@
       "common_misconceptions": "Pupils may reduce sustainability evaluation to 'is it recyclable?' missing the full lifecycle dimension. A recyclable product made from energy-intensive materials may have a higher overall environmental impact than a non-recyclable product with minimal processing. The concept of 'embodied energy' — the energy used in making a product before it is ever used — is often missed but is one of the most significant dimensions of environmental impact for manufactured goods.",
       "concept_type": "process",
       "complexity_level": 4,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS4-C001",
@@ -182,7 +189,9 @@
       "common_misconceptions": "Pupils frequently confuse 'hardness' (resistance to scratching) with 'strength' (resistance to force); teaching the precise definition of each property and its testing method clarifies the distinction. The idea that one material is universally 'best' ignores the context-specificity of design decisions; every material selection must be justified in relation to specific requirements. Students may treat modern and smart materials as exotic curiosities rather than as materials with specific, relevant properties; connecting them to real design applications makes their relevance concrete.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS4-C002",
@@ -194,7 +203,9 @@
       "common_misconceptions": "Many pupils think of the design process as a linear sequence of steps, not understanding that effective design requires returning to earlier stages as new information emerges. The concept of 'failure' in prototyping is often misunderstood; a prototype that reveals a problem has succeeded as a testing tool, even if it fails as a product. Students may conflate the school assessment submission (a record of work done) with the design process itself; the process and its documentation are different things.",
       "concept_type": "process",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS4-C003",
@@ -206,7 +217,9 @@
       "common_misconceptions": "Pupils may think ergonomics is only about physical comfort (chair height, handle grip) rather than also addressing cognitive, sensory and emotional dimensions of user experience. The concept of designing for the full range of users, not the 'average' user, is counterintuitive to many; teaching that designing for the extremes often improves the experience for everyone addresses this. Students may conduct user research by asking people what they want rather than observing what they actually do; developing observational user research methods is more effective in practice.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS4-C004",
@@ -218,7 +231,9 @@
       "common_misconceptions": "Pupils frequently assume that CAD/CAM replaces the need for design thinking; understanding that digital tools are a medium for implementing design decisions, not making them, is essential. The precision of digital manufacturing can give a false sense that the design is better than it is; a poorly designed object produced to high tolerance is still a poorly designed object. Students may not understand the difference between 2D and 3D CAD file formats and their applications; developing practical literacy with both develops more appropriate tool selection.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS4-C005",
@@ -230,7 +245,9 @@
       "common_misconceptions": "The reduction of sustainability to 'using recycled materials' or 'being green' obscures the systemic and lifecycle dimensions of genuine sustainable design thinking. Pupils may believe that individual consumer choices are the primary driver of sustainability, rather than systemic design decisions made at the product and system level. The concept of planned obsolescence — deliberately designing products to fail or become unfashionable quickly — may be unfamiliar; studying it is essential for understanding the relationship between business models and sustainability outcomes.",
       "concept_type": "knowledge",
       "complexity_level": 4,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 5,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

@@ -410,7 +410,9 @@
       "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C002",
@@ -423,7 +425,9 @@
       "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C003",
@@ -436,7 +440,11 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "CH-KS4-C004"
+      ]
     },
     {
       "concept_id": "CH-KS4-C004",
@@ -449,7 +457,9 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C005",
@@ -462,7 +472,11 @@
       "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 5,
+      "co_teach_hints": [
+        "CH-KS4-C006"
+      ]
     },
     {
       "concept_id": "CH-KS4-C006",
@@ -475,7 +489,11 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": true,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "CH-KS4-C005"
+      ]
     },
     {
       "concept_id": "CH-KS4-C007",
@@ -488,7 +506,11 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "CH-KS4-C008"
+      ]
     },
     {
       "concept_id": "CH-KS4-C008",
@@ -501,7 +523,9 @@
       "concept_type": "process",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C009",
@@ -514,7 +538,9 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C010",
@@ -527,7 +553,9 @@
       "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C011",
@@ -540,7 +568,9 @@
       "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "pathway": "separate"
+      "pathway": "separate",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C012",
@@ -553,7 +583,9 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C013",
@@ -566,7 +598,9 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": true,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C014",
@@ -579,7 +613,9 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": true,
-      "pathway": "both"
+      "pathway": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CH-KS4-C015",
@@ -591,7 +627,9 @@
       "common_misconceptions": "Pupils frequently calculate Rf values incorrectly by dividing the wrong distances, or forgetting that the measurement must be to the centre of each spot. The flame test colours must be memorised accurately; pupils often confuse similar colours (lilac for potassium vs red for lithium). In chromatography, pupils may not understand why different substances move different distances: the key principle is the balance between solubility in the mobile phase (which carries substances) and affinity for the stationary phase (which retains them).",
       "concept_type": "process",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

@@ -85,6 +85,12 @@ NODE_STYLES = {
         'category': 'UK Curriculum',
         'size': 2,
     },
+    'ConceptCluster': {
+        'color': '#6366F1',  # Indigo-500
+        'icon': 'view_module',
+        'category': 'UK Curriculum',
+        'size': 2,
+    },
     'SourceDocument': {
         'color': '#6B7280',  # Gray-500
         'icon': 'description',

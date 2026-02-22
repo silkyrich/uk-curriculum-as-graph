@@ -702,7 +702,9 @@ class CurriculumImporter:
                 c.concept_type = $concept_type,
                 c.complexity_level = $complexity_level,
                 c.is_cross_cutting = $is_cross_cutting,
-                c.source_reference = $source_reference
+                c.source_reference = $source_reference,
+                c.teaching_weight = $teaching_weight,
+                c.co_teach_hints = $co_teach_hints
             RETURN c
             """
 
@@ -718,6 +720,8 @@ class CurriculumImporter:
                 complexity_level=concept["complexity_level"],
                 is_cross_cutting=concept.get("is_cross_cutting", False),
                 source_reference=f"National Curriculum 2014, {dfe_reference} — {subject_name} {key_stage} Programme of Study",
+                teaching_weight=concept.get("teaching_weight", concept["complexity_level"]),
+                co_teach_hints=concept.get("co_teach_hints", []),
             )
 
             if result.single():

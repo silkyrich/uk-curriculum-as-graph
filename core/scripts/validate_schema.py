@@ -781,6 +781,122 @@ class SchemaValidator:
         self.add(ValidationResult("InteractionType PRECEDES chain", status, total, details))
 
     # =========================================================================
+    # K-bis. Concept Grouping layer (v3.7)
+    # =========================================================================
+
+    def check_teaching_weight_values(self):
+        """teaching_weight must be 1-6 where present."""
+        records = self.run("""
+            MATCH (c:Concept)
+            WHERE c.teaching_weight IS NOT NULL
+              AND NOT (c.teaching_weight >= 1 AND c.teaching_weight <= 6)
+            RETURN c.concept_id AS id, c.teaching_weight AS val
+        """)
+        total = self.scalar("MATCH (c:Concept) WHERE c.teaching_weight IS NOT NULL RETURN count(c)") or 0
+        issues = [f"Concept {r['id']} has teaching_weight={r['val']} (must be 1-6)" for r in records]
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("teaching_weight in range 1-6", status, total, issues))
+
+    def check_is_keystone_consistency(self):
+        """is_keystone should be true iff prerequisite_fan_out >= 3."""
+        records = self.run("""
+            MATCH (c:Concept)
+            WHERE c.is_keystone IS NOT NULL AND c.prerequisite_fan_out IS NOT NULL
+              AND ((c.is_keystone = true AND c.prerequisite_fan_out < 3)
+                OR (c.is_keystone = false AND c.prerequisite_fan_out >= 3))
+            RETURN c.concept_id AS id, c.is_keystone AS ks, c.prerequisite_fan_out AS fo
+        """)
+        total = self.scalar("MATCH (c:Concept) WHERE c.is_keystone IS NOT NULL RETURN count(c)") or 0
+        issues = [f"Concept {r['id']} is_keystone={r['ks']} but fan_out={r['fo']}" for r in records]
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("is_keystone consistency", status, total, issues))
+
+    def check_co_teaches_integrity(self):
+        """CO_TEACHES should connect Concepts in the same domain."""
+        records = self.run("""
+            MATCH (c1:Concept)-[r:CO_TEACHES]->(c2:Concept)
+            WHERE NOT EXISTS {
+                MATCH (d:Domain)-[:HAS_CONCEPT]->(c1)
+                MATCH (d)-[:HAS_CONCEPT]->(c2)
+            }
+            RETURN c1.concept_id AS src, c2.concept_id AS tgt
+            LIMIT 20
+        """)
+        total = self.scalar("MATCH ()-[r:CO_TEACHES]->() RETURN count(r)") or 0
+        issues = [f"CO_TEACHES {r['src']} -> {r['tgt']} cross-domain" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("CO_TEACHES same-domain integrity", status, total, issues))
+
+    def check_concept_cluster_completeness(self):
+        """ConceptCluster nodes have required non-null properties (skipped if none exist)."""
+        total = self.scalar("MATCH (cc:ConceptCluster) RETURN count(cc)") or 0
+        if total == 0:
+            self.add(ValidationResult("ConceptCluster completeness", "PASS", 0,
+                                      ["No ConceptCluster nodes — generation pending"]))
+            return
+        records = self.run("""
+            MATCH (cc:ConceptCluster)
+            WHERE cc.cluster_id IS NULL OR cc.cluster_name IS NULL OR cc.cluster_type IS NULL
+            RETURN cc.cluster_id AS id
+        """)
+        issues = [f"ConceptCluster '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("ConceptCluster completeness", status, total, issues))
+
+    def check_concept_cluster_coverage(self):
+        """Every Concept in a domain with clusters should be grouped (skipped if none exist)."""
+        total = self.scalar("MATCH (cc:ConceptCluster) RETURN count(cc)") or 0
+        if total == 0:
+            self.add(ValidationResult("ConceptCluster coverage", "PASS", 0,
+                                      ["No ConceptCluster nodes — generation pending"]))
+            return
+        records = self.run("""
+            MATCH (d:Domain)-[:HAS_CLUSTER]->(:ConceptCluster)
+            WITH COLLECT(DISTINCT d) AS clustered_domains
+            UNWIND clustered_domains AS d
+            MATCH (d)-[:HAS_CONCEPT]->(c:Concept)
+            WHERE NOT (:ConceptCluster)-[:GROUPS]->(c)
+            RETURN c.concept_id AS id
+            LIMIT 20
+        """)
+        total_concepts = self.scalar("""
+            MATCH (d:Domain)-[:HAS_CLUSTER]->(:ConceptCluster)
+            WITH COLLECT(DISTINCT d) AS clustered_domains
+            UNWIND clustered_domains AS d
+            MATCH (d)-[:HAS_CONCEPT]->(c:Concept)
+            RETURN count(DISTINCT c)
+        """) or 0
+        issues = [f"Concept {r['id']} in clustered domain but not grouped" for r in records]
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("ConceptCluster coverage", status, total_concepts, issues))
+
+    def check_cluster_sequencing(self):
+        """SEQUENCED_AFTER forms a valid chain per domain (skipped if none exist)."""
+        total = self.scalar("MATCH (cc:ConceptCluster) RETURN count(cc)") or 0
+        if total == 0:
+            self.add(ValidationResult("Cluster SEQUENCED_AFTER chain", "PASS", 0,
+                                      ["No ConceptCluster nodes — generation pending"]))
+            return
+        # Check for cycles: a cluster that is SEQUENCED_AFTER itself (directly or indirectly)
+        records = self.run("""
+            MATCH (cc:ConceptCluster)-[:SEQUENCED_AFTER]->(cc)
+            RETURN cc.cluster_id AS id
+        """)
+        # Check for multiple incoming SEQUENCED_AFTER (would mean branching, not a chain)
+        records2 = self.run("""
+            MATCH (cc:ConceptCluster)<-[r:SEQUENCED_AFTER]-()
+            WITH cc, count(r) AS incoming
+            WHERE incoming > 1
+            RETURN cc.cluster_id AS id, incoming
+            LIMIT 10
+        """)
+        issues = [f"Cluster {r['id']} has self-referential SEQUENCED_AFTER" for r in records]
+        issues += [f"Cluster {r['id']} has {r['incoming']} incoming SEQUENCED_AFTER (expected <=1)" for r in records2]
+        chain_count = self.scalar("MATCH ()-[r:SEQUENCED_AFTER]->() RETURN count(r)") or 0
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("Cluster SEQUENCED_AFTER chain", status, chain_count, issues))
+
+    # =========================================================================
     # K. Enrichment coverage (DB-level)
     # =========================================================================
 
@@ -962,6 +1078,13 @@ class SchemaValidator:
             self.check_year_learner_profile_links,
             self.check_interaction_type_completeness,
             self.check_interaction_precedes_chain,
+            # K-bis. Concept Grouping (v3.7)
+            self.check_teaching_weight_values,
+            self.check_is_keystone_consistency,
+            self.check_co_teaches_integrity,
+            self.check_concept_cluster_completeness,
+            self.check_concept_cluster_coverage,
+            self.check_cluster_sequencing,
             # K. Enrichment coverage
             self.check_concept_enrichment_coverage,
             # L. Display & Visualization

@@ -179,7 +179,9 @@
       "common_misconceptions": "Pupils may rush the measuring and marking stage, leading to cumulative inaccuracies in the finished product. Establishing that time spent measuring carefully is recovered by avoiding mistakes during making is an important lesson. Some pupils equate more material or more joins with a stronger or better product, rather than understanding that precision in fewer, well-executed joins is more effective.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS2-C007",
@@ -191,7 +193,9 @@
       "common_misconceptions": "Pupils may select materials primarily for their aesthetics (choosing the prettiest fabric) without considering functional requirements. They may also go to the opposite extreme and choose only on functional grounds, producing products that work but are unappealing. Teaching that effective material selection balances both dimensions addresses either tendency.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS2-C008",
@@ -203,7 +207,9 @@
       "common_misconceptions": "Pupils may describe products superficially (colour, size, shape) without analysing function, materials or construction. Teaching structured analytical frameworks develops deeper investigation. Some pupils equate 'analyse' with criticise; framing investigation as learning from the solutions others have found is more productive and more accurate.",
       "concept_type": "process",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS2-C009",
@@ -215,7 +221,11 @@
       "common_misconceptions": "Pupils may think of design and technology history as a simple story of progress from primitive to advanced. Understanding that design always reflects its cultural context, and that some past innovations created new problems, gives a more nuanced picture. Pupils may not understand the difference between invention (creating something new) and innovation (improving or applying existing ideas); most design and technology history involves both.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "DT-KS2-C008"
+      ]
     },
     {
       "concept_id": "DT-KS2-C010",
@@ -227,7 +237,9 @@
       "common_misconceptions": "Pupils may think that only baking counts as cooking, missing the wide range of cooking methods available. Broadening experience across different techniques challenges this assumption. Food hygiene may seem less interesting than cooking itself; making clear connections between specific hygiene practices and specific risks (cross-contamination, bacteria growth) makes the rationale concrete.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS2-C011",
@@ -239,7 +251,11 @@
       "common_misconceptions": "Pupils may not realise that many supermarket products are available year-round because they are imported from other countries or grown in heated greenhouses, both of which have environmental costs. Pupils may equate 'imported' with 'worse' without understanding the complex trade-offs involved; nuanced discussion is more valuable than simple judgements.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "DT-KS2-C010"
+      ]
     },
     {
       "concept_id": "DT-KS2-C001",
@@ -251,7 +267,9 @@
       "common_misconceptions": "Pupils may begin designing before completing meaningful research. Establishing the design brief and research phase as required steps prevents this. Some pupils conflate research with simply looking at existing products without identifying specific needs or constraints.",
       "concept_type": "process",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS2-C002",
@@ -263,7 +281,9 @@
       "common_misconceptions": "Pupils may treat all drawing in DT as artistic expression rather than technical communication. Establishing that technical drawing has specific conventions and purposes helps. Some pupils may find exploded and cross-sectional diagrams conceptually challenging; building up from physical disassembly of real objects helps develop the mental model.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS2-C003",
@@ -275,7 +295,9 @@
       "common_misconceptions": "Pupils may confuse gears of different sizes without understanding that larger gears rotate more slowly than smaller ones when meshed. Hands-on investigation with real gear systems is essential. Pupils may not understand that cams produce different patterns of movement depending on their shape - this requires practical investigation of various cam profiles.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS2-C004",
@@ -287,7 +309,9 @@
       "common_misconceptions": "Pupils may not understand that all components in a series circuit must be connected for current to flow, leading to confusion when a broken circuit does not work. Physical construction of circuits reinforces this concept better than diagrams alone. Pupils may confuse the functions of different output components (bulb gives light, buzzer gives sound, motor gives movement).",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "DT-KS2-C005",
@@ -299,7 +323,9 @@
       "common_misconceptions": "Pupils may see computing control as separate from DT rather than as an integrated part of product design. Framing programming tasks as part of the design-make-evaluate cycle maintains this connection. Some pupils may struggle with the abstraction of programming; physical computing with immediate, visible outputs (LEDs, motors) helps make the logic concrete.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

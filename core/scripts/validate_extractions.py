@@ -173,6 +173,45 @@ def validate_file(path: Path) -> list[ExtractionIssue]:
                 f"Concept {c_id} description is very short ({len(desc)} chars): '{desc}'",
             ))
 
+    # ---- Grouping signals ---------------------------------------------------
+    for concept in concepts:
+        c_id = concept.get("concept_id", "(no id)")
+
+        tw = concept.get("teaching_weight")
+        if tw is not None:
+            try:
+                tw_int = int(tw)
+                if not (1 <= tw_int <= 6):
+                    issues.append(ExtractionIssue(
+                        "ERROR", filename,
+                        f"Concept {c_id} teaching_weight={tw} is not 1-6",
+                    ))
+            except (ValueError, TypeError):
+                issues.append(ExtractionIssue(
+                    "ERROR", filename,
+                    f"Concept {c_id} teaching_weight='{tw}' is not an integer",
+                ))
+
+        cth = concept.get("co_teach_hints")
+        if cth is not None:
+            if not isinstance(cth, list):
+                issues.append(ExtractionIssue(
+                    "ERROR", filename,
+                    f"Concept {c_id} co_teach_hints is not a list: {type(cth).__name__}",
+                ))
+            else:
+                for hint in cth:
+                    if not isinstance(hint, str):
+                        issues.append(ExtractionIssue(
+                            "ERROR", filename,
+                            f"Concept {c_id} co_teach_hints contains non-string: {hint}",
+                        ))
+                    elif hint not in concept_ids:
+                        issues.append(ExtractionIssue(
+                            "WARN", filename,
+                            f"Concept {c_id} co_teach_hints references '{hint}' not in this file",
+                        ))
+
     # ---- Enrichment completeness -------------------------------------------
     enrichment_fields = ["teaching_guidance", "key_vocabulary", "common_misconceptions"]
     bare_concepts = []

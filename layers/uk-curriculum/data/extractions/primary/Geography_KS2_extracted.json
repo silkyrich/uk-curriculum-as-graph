@@ -131,7 +131,9 @@
       "common_misconceptions": "Pupils frequently confuse latitude (horizontal lines, measuring north-south) with longitude (vertical lines, measuring east-west). A consistent mnemonic (latitude = flat/horizontal) helps. The fact that the Equator is 0 degrees latitude while the Poles are 90 degrees is sometimes reversed; connecting 0 degrees to 'no tilt' and 90 degrees to 'maximum distance from equator' helps. Pupils may not understand why time zones exist; connecting them to the Earth's rotation and the 24-hour day makes the concept concrete.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "GE-KS2-C002",
@@ -143,7 +145,12 @@
       "common_misconceptions": "Pupils may confuse climate zone with biome; clarifying that climate determines what biome can exist in an area resolves this. Pupils may think deserts are always hot; cold deserts (Gobi, Antarctica) challenge this assumption. The idea that tropical regions are always wet is also inaccurate; tropical wet and dry seasons should be distinguished. Pupils may underestimate how dramatically human activity has altered natural biomes; discussing deforestation and agriculture develops critical awareness.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "GE-KS2-C003",
+        "GE-KS2-C004"
+      ]
     },
     {
       "concept_id": "GE-KS2-C003",
@@ -155,7 +162,9 @@
       "common_misconceptions": "Pupils often think rivers flow uphill at some point; careful explanation of how gravity determines flow direction addresses this. The water cycle is often presented too simplistically; exploring the variety of pathways water can take (groundwater, evapotranspiration, run-off) develops more accurate understanding. Pupils may not connect rivers to the water cycle; linking the discussion of river flow to rainfall and precipitation makes the connection explicit.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "GE-KS2-C004",
@@ -167,7 +176,12 @@
       "common_misconceptions": "Pupils may think cities grow randomly rather than for geographical reasons. Studying the historical reasons for settlement location challenges this. The concept of comparative advantage in trade can be difficult; concrete examples of why one place might specialise in particular goods make it accessible. Pupils may not appreciate the scale of global economic interdependence; tracking the journey of a familiar product from raw material to consumer makes global connections tangible.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "GE-KS2-C002",
+        "GE-KS2-C003"
+      ]
     },
     {
       "concept_id": "GE-KS2-C005",
@@ -179,7 +193,9 @@
       "common_misconceptions": "Pupils consistently confuse the order of grid references, giving northings before eastings. The 'along the corridor and up the stairs' mnemonic helps, but consistent practice is essential. Contour interpretation is challenging; many pupils cannot readily visualise three-dimensional relief from two-dimensional contour lines. Building up from simple cross-sections and physical models helps. Pupils may not understand that the scale bar means different things at different zoom levels.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "GE-KS2-C006",
@@ -191,7 +207,9 @@
       "common_misconceptions": "Pupils may treat regional studies as discrete topics rather than as recurring reference points for geographical comparison. Returning to studied regions in different thematic contexts (rivers, climate, development) builds richer knowledge than treating each as a one-off study. Pupils may characterise regions by only one or two features, missing the complexity and internal diversity of real regions. Requiring pupils to update their knowledge of studied regions over time prevents oversimplification.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

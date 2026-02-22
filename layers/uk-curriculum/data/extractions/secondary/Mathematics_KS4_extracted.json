@@ -499,7 +499,9 @@
       "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C002",
@@ -512,7 +514,9 @@
       "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C003",
@@ -525,7 +529,9 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "higher"
+      "tier": "higher",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C004",
@@ -538,7 +544,9 @@
       "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": true,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C005",
@@ -551,7 +559,9 @@
       "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C006",
@@ -564,7 +574,9 @@
       "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C007",
@@ -577,7 +589,11 @@
       "concept_type": "process",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "tier": "higher"
+      "tier": "higher",
+      "teaching_weight": 4,
+      "co_teach_hints": [
+        "MA-KS4-C008"
+      ]
     },
     {
       "concept_id": "MA-KS4-C008",
@@ -590,7 +606,9 @@
       "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C009",
@@ -603,7 +621,9 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C010",
@@ -616,7 +636,9 @@
       "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": true,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C011",
@@ -629,7 +651,9 @@
       "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "tier": "higher"
+      "tier": "higher",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C012",
@@ -642,7 +666,9 @@
       "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "tier": "higher"
+      "tier": "higher",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C013",
@@ -655,7 +681,9 @@
       "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C014",
@@ -668,7 +696,9 @@
       "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C015",
@@ -681,7 +711,9 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C016",
@@ -694,7 +726,9 @@
       "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": true,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C017",
@@ -707,7 +741,14 @@
       "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS4-C018",
+        "MA-KS4-C019",
+        "MA-KS4-C020",
+        "MA-KS4-C021"
+      ]
     },
     {
       "concept_id": "MA-KS4-C018",
@@ -720,7 +761,9 @@
       "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C019",
@@ -733,7 +776,9 @@
       "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C020",
@@ -746,7 +791,12 @@
       "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS4-C017",
+        "MA-KS4-C019"
+      ]
     },
     {
       "concept_id": "MA-KS4-C021",
@@ -759,7 +809,9 @@
       "concept_type": "process",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "tier": "higher"
+      "tier": "higher",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C022",
@@ -772,7 +824,9 @@
       "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "tier": "higher"
+      "tier": "higher",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C023",
@@ -785,7 +839,9 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C024",
@@ -798,7 +854,9 @@
       "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C025",
@@ -811,7 +869,9 @@
       "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "tier": "higher"
+      "tier": "higher",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C026",
@@ -824,7 +884,9 @@
       "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C027",
@@ -837,7 +899,9 @@
       "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C028",
@@ -850,7 +914,11 @@
       "concept_type": "knowledge",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "higher"
+      "tier": "higher",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS4-C029"
+      ]
     },
     {
       "concept_id": "MA-KS4-C029",
@@ -863,7 +931,9 @@
       "concept_type": "knowledge",
       "complexity_level": 4,
       "is_cross_cutting": false,
-      "tier": "higher"
+      "tier": "higher",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C030",
@@ -876,7 +946,9 @@
       "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C031",
@@ -889,7 +961,9 @@
       "concept_type": "process",
       "complexity_level": 3,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C032",
@@ -902,7 +976,9 @@
       "concept_type": "process",
       "complexity_level": 2,
       "is_cross_cutting": false,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS4-C033",
@@ -915,7 +991,9 @@
       "concept_type": "knowledge",
       "complexity_level": 2,
       "is_cross_cutting": true,
-      "tier": "both"
+      "tier": "both",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

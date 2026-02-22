@@ -165,7 +165,9 @@
       "common_misconceptions": "Pupils may think that an algorithm is the same as a program; clarifying that an algorithm is the idea or plan, while a program is the specific coded implementation, is important. Pupils may not appreciate that algorithms need to be unambiguous; activities where deliberately ambiguous instructions lead to unexpected results make this vivid. The idea that a computer does exactly what it is told, rather than what we intended, is a fundamental shift in thinking that needs explicit attention.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CO-KS12-C002",
@@ -177,7 +179,9 @@
       "common_misconceptions": "Pupils often use loops incorrectly, either not using them when repetition is present (writing the same instruction multiple times) or using them in inappropriate contexts. Explicit comparison of repetitive code versus loop code makes the efficiency benefit clear. Selection (if/then/else) is conceptually more demanding; pupils may write conditions that cannot be true, or miss the else case. Tracing through conditional code step by step makes the logic visible.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CO-KS12-C003",
@@ -189,7 +193,9 @@
       "common_misconceptions": "Pupils may feel that having errors in their code means they have failed. Reframing debugging as a normal and creative part of programming is essential. Pupils may try random changes hoping something will fix a bug rather than reasoning about the cause; teaching systematic debugging strategies builds more effective habits. Some pupils struggle to 'read' code as an execution trace; explicit tracing activities develop this skill.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CO-KS12-C004",
@@ -201,7 +207,9 @@
       "common_misconceptions": "Pupils often confuse the internet with the World Wide Web, using the terms interchangeably. Establishing that the web is one service on the internet (alongside email, streaming etc.) is a key conceptual correction. Pupils may think the internet is a physical 'place' rather than a network of connected devices; using physical metaphors (roads, postal networks) helps make the infrastructure tangible. The idea that data travels in packets, potentially by different routes, is counterintuitive to many pupils.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CO-KS12-C005",
@@ -213,7 +221,9 @@
       "common_misconceptions": "Pupils may think that anonymous online behaviour has no consequences; discussing the traceability of online actions corrects this. Pupils may not realise that information shared with one person online can be shared much more widely; discussing how data spreads makes the risk tangible. The idea that everything on the internet is true is common and requires deliberate work to challenge; evaluating sources, checking dates and looking for corroboration are skills to teach explicitly.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "CO-KS12-C006",
@@ -225,7 +235,11 @@
       "common_misconceptions": "Pupils may attempt to solve programming challenges as a single, undivided problem rather than decomposing them. Modelling the decomposition process explicitly, and requiring pupils to plan before coding, develops this habit. Abstraction (ignoring irrelevant detail) can be conceptually challenging; concrete examples of what to include and what to leave out in specific contexts help. Pupils may not see the connection between computational thinking and problem-solving in other domains; deliberate cross-curricular examples broaden the concept.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "CO-KS12-C001"
+      ]
     }
   ],
   "prerequisite_relationships": [

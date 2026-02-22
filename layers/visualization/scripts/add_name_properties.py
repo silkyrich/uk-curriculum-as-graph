@@ -20,6 +20,7 @@ def add_name_properties(driver):
     mappings = [
         # UK Curriculum nodes
         ("Concept", "concept_name"),
+        ("ConceptCluster", "cluster_name"),
         ("Domain", "domain_name"),
         ("Objective", "objective_id"),  # No name field, use ID
         ("Topic", "topic_name"),

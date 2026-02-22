@@ -56,7 +56,7 @@
     {
       "objective_id": "HI-KS1-O001",
       "domain_id": "HI-KS1-D001",
-      "objective_text": "changes within living memory \u2013 where appropriate, these should be used to reveal aspects of change in national life",
+      "objective_text": "changes within living memory – where appropriate, these should be used to reveal aspects of change in national life",
       "non_statutory_guidance": null,
       "examples": null,
       "is_statutory": true
@@ -97,7 +97,11 @@
       "common_misconceptions": "Young pupils often have a very compressed sense of historical time, placing all 'old' things at the same distance from the present. Using timelines with scale helps develop a more calibrated sense of historical depth. Pupils may conflate 'old' with 'worse' or 'primitive'; a balanced approach that acknowledges both the challenges of the past and its achievements is needed. The concept that events happen in a fixed sequence that cannot be changed is important; some pupils believe history could have been different.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": [
+        "HI-KS1-C002"
+      ]
     },
     {
       "concept_id": "HI-KS1-C002",
@@ -109,7 +113,9 @@
       "common_misconceptions": "Pupils may assume all change represents progress or improvement. Discussing examples where change has involved loss (community customs, local buildings) develops a more nuanced understanding. The concept of continuity can be harder for pupils to grasp than change; using familiar examples (stories, celebrations, family customs) that have remained constant across generations helps.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "HI-KS1-C003",
@@ -121,7 +127,9 @@
       "common_misconceptions": "Pupils may think significant individuals were born special rather than shaped by context and choices. Discussing the obstacles individuals faced develops understanding of the conditions that make significance possible. Pupils may not question why some historical figures are more prominent than others; discussing who decides which figures are remembered develops critical historical thinking. The distinction between fact (what we know happened) and opinion (how we judge its significance) is important to introduce early.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "HI-KS1-C004",
@@ -133,7 +141,9 @@
       "common_misconceptions": "Pupils may treat all sources as equally reliable and complete. Introducing the idea that sources can be partial, biased or misleading even at KS1 develops critical thinking. Pupils may not understand that historians do not know everything about the past; emphasising what we do not know as well as what we do know models intellectual honesty. The concept of primary sources from 'the time' can be confusing; concrete examples help.",
       "concept_type": "skill",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "HI-KS1-C005",
@@ -145,7 +155,9 @@
       "common_misconceptions": "Pupils may think local history is less important than national history. Emphasising that every national story is made up of local stories challenges this hierarchy. Pupils may not know the history of the places they visit every day; structured observation and questioning activities reveal the historical layers of familiar environments. The concept of oral history (passed down through conversation rather than writing) may be unfamiliar but is often very accessible and personally relevant to pupils.",
       "concept_type": "knowledge",
       "complexity_level": 1,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 1,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

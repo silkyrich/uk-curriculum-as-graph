@@ -597,7 +597,15 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Begin with place value charts that extend into tenths, hundredths and thousandths, connecting to primary place value understanding. Use base-10 blocks or Dienes apparatus to show that the pattern of ×10 and ÷10 continues either side of the decimal point. Ask pupils to place decimals on number lines with progressive levels of zoom — first between 0 and 1, then between 3.4 and 3.5. Link decimal place value to measurement contexts (metres/centimetres, litres/millilitres) where the decimal point separates whole units from sub-units.",
       "key_vocabulary": "decimal, decimal place, tenths, hundredths, thousandths, place value, digit, column, decimal point, magnitude, base ten",
-      "common_misconceptions": "Pupils often believe that 0.45 is greater than 0.8 because 45 > 8 (the 'longer is larger' error). Some pupils treat digits after the decimal point as a separate whole number. Others think there is a 'oneths' column immediately after the decimal point. Using place value charts with explicit column headings corrects these errors."
+      "common_misconceptions": "Pupils often believe that 0.45 is greater than 0.8 because 45 > 8 (the 'longer is larger' error). Some pupils treat digits after the decimal point as a separate whole number. Others think there is a 'oneths' column immediately after the decimal point. Using place value charts with explicit column headings corrects these errors.",
+      "teaching_weight": 1,
+      "co_teach_hints": [
+        "MA-KS3-C002",
+        "MA-KS3-C014",
+        "MA-KS3-C016",
+        "MA-KS3-C021",
+        "MA-KS3-C022"
+      ]
     },
     {
       "concept_id": "MA-KS3-C002",
@@ -609,7 +617,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use vertical number lines (thermometers) as the primary model, then progress to horizontal number lines with zero clearly marked. Present negative numbers in real contexts: temperature, sea level (above/below), bank balances (credit/debit), and lifts going below ground. Emphasise that negative numbers continue infinitely and that the further left (or down) you go, the smaller the value. Use physical movement along a number line — stepping left for subtraction, right for addition — to build intuition before formalising rules.",
       "key_vocabulary": "negative, positive, integer, directed number, zero, below zero, above zero, minus, number line, origin, absolute value",
-      "common_misconceptions": "The most common error is thinking -8 > -3 because 8 > 3. Pupils also confuse the minus sign as an operation with its use as a direction indicator. Some pupils believe zero is a negative number. Address these by consistently returning to the number line and asking 'which is further left?'"
+      "common_misconceptions": "The most common error is thinking -8 > -3 because 8 > 3. Pupils also confuse the minus sign as an operation with its use as a direction indicator. Some pupils believe zero is a negative number. Address these by consistently returning to the number line and asking 'which is further left?'",
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C003",
@@ -621,7 +631,12 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Provide sorting activities where pupils order sets of mixed numbers — positive and negative integers, fractions and decimals — on a blank number line. Convert all numbers to the same form (e.g., all to decimals) as a checking strategy. Use card sorts where pupils physically arrange values. Progress to more abstract comparisons using inequality symbols. Emphasise that fractions and decimals can be negative, and practise ordering sets like -0.5, -¾, 0.3, -1.",
       "key_vocabulary": "order, compare, ascending, descending, number line, inequality, greater than, less than, equal to, integer, decimal, fraction, rational number",
-      "common_misconceptions": "Pupils frequently order negative fractions and decimals incorrectly because they apply positive-number reasoning. For example, they may place -¼ before -½ on a number line. Some pupils believe all fractions are between 0 and 1. Consistent use of the number line as a visual anchor helps pupils self-correct."
+      "common_misconceptions": "Pupils frequently order negative fractions and decimals incorrectly because they apply positive-number reasoning. For example, they may place -¼ before -½ on a number line. Some pupils believe all fractions are between 0 and 1. Consistent use of the number line as a visual anchor helps pupils self-correct.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C002",
+        "MA-KS3-C004"
+      ]
     },
     {
       "concept_id": "MA-KS3-C004",
@@ -633,7 +648,16 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce inequality symbols through concrete comparison activities before formalising notation. Use the 'crocodile mouth' analogy from primary but progress quickly to formal mathematical language. Present inequalities as statements that can be true or false, and ask pupils to evaluate statements like 3 < 5, -2 > -7, 0.3 ≤ 0.30. Connect to number line work: the symbol always points towards the smaller value (further left on the number line). Practise reading inequalities both ways: '3 < 5' reads as '3 is less than 5' or '5 is greater than 3'.",
       "key_vocabulary": "equals, not equal to, less than, greater than, less than or equal to, greater than or equal to, inequality, symbol, statement, ≠, <, >, ≤, ≥",
-      "common_misconceptions": "Pupils often confuse < and > because both look similar. Some pupils read a < b as 'a is greater than b' if they read left-to-right without attending to the symbol direction. The distinction between < and ≤ is also poorly understood — pupils may not appreciate that ≤ includes equality."
+      "common_misconceptions": "Pupils often confuse < and > because both look similar. Some pupils read a < b as 'a is greater than b' if they read left-to-right without attending to the symbol direction. The distinction between < and ≤ is also poorly understood — pupils may not appreciate that ≤ includes equality.",
+      "teaching_weight": 1,
+      "co_teach_hints": [
+        "MA-KS3-C002",
+        "MA-KS3-C003",
+        "MA-KS3-C008",
+        "MA-KS3-C011",
+        "MA-KS3-C022",
+        "MA-KS3-C024"
+      ]
     },
     {
       "concept_id": "MA-KS3-C005",
@@ -645,7 +669,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use the Sieve of Eratosthenes as a foundational activity to discover primes up to 100. Ask pupils to systematically identify which numbers survive the sieve and why. Discuss why 1 is not prime (it has only one factor, not exactly two) and why 2 is the only even prime. Connect to factor work by building factor rectangles — prime numbers can only be arranged as 1 × n rectangles. Extend to larger primes and discuss prime testing strategies (dividing by primes up to the square root).",
       "key_vocabulary": "prime number, composite number, factor, divisor, divisible, Sieve of Eratosthenes, prime factor, unique, indivisible",
-      "common_misconceptions": "The most persistent misconception is that 1 is a prime number. Some pupils think all odd numbers are prime (confusing 9, 15, 21 etc.). Others believe that prime numbers follow a pattern or stop at some point. The claim 'you can't tell if a big number is prime' can be countered with systematic divisibility testing."
+      "common_misconceptions": "The most persistent misconception is that 1 is a prime number. Some pupils think all odd numbers are prime (confusing 9, 15, 21 etc.). Others believe that prime numbers follow a pattern or stop at some point. The claim 'you can't tell if a big number is prime' can be countered with systematic divisibility testing.",
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C006",
@@ -657,7 +683,13 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Begin with concrete factor-finding activities: use arrays of counters or tiles to find all the factor pairs of a number. Systematically list factors by working up from 1 and stopping when factor pairs begin to repeat. For multiples, use skip-counting patterns and connect to multiplication tables. Introduce Venn diagrams and tables to organise common factors and common multiples of two or more numbers. Relate factors and multiples to division: a is a factor of b if b ÷ a has no remainder.",
       "key_vocabulary": "factor, multiple, divisor, divisible, factor pair, common factor, common multiple, product, array, systematic listing",
-      "common_misconceptions": "Pupils often confuse factors and multiples — thinking that 12 is a factor of 3 instead of the reverse. Some pupils forget to include 1 and the number itself when listing factors. When finding common multiples, pupils may list only the first few and miss that the set is infinite."
+      "common_misconceptions": "Pupils often confuse factors and multiples — thinking that 12 is a factor of 3 instead of the reverse. Some pupils forget to include 1 and the number itself when listing factors. When finding common multiples, pupils may list only the first few and miss that the set is infinite.",
+      "teaching_weight": 1,
+      "co_teach_hints": [
+        "MA-KS3-C007",
+        "MA-KS3-C008",
+        "MA-KS3-C013"
+      ]
     },
     {
       "concept_id": "MA-KS3-C007",
@@ -669,7 +701,11 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach HCF and LCM through systematic factor listing first, then introduce the Venn diagram method using prime factorisation as a more efficient approach for larger numbers. For HCF, find all common factors and select the largest. For LCM, list multiples of each number until a common one appears. Then show how the prime factor Venn diagram gives both HCF (intersection) and LCM (union) simultaneously. Use problem contexts: HCF for dividing quantities into equal groups, LCM for finding when events coincide (e.g., two buses both departing at the same time).",
       "key_vocabulary": "highest common factor, HCF, lowest common multiple, LCM, factor, multiple, common, prime factorisation, Venn diagram, shared factors",
-      "common_misconceptions": "Pupils frequently confuse HCF and LCM, producing the LCM when asked for the HCF and vice versa. Some pupils believe HCF must be a prime number. Others find a common factor or common multiple but not the highest or lowest. The Venn diagram method reduces these errors because the visual layout makes the distinction concrete."
+      "common_misconceptions": "Pupils frequently confuse HCF and LCM, producing the LCM when asked for the HCF and vice versa. Some pupils believe HCF must be a prime number. Others find a common factor or common multiple but not the highest or lowest. The Venn diagram method reduces these errors because the visual layout makes the distinction concrete.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C008"
+      ]
     },
     {
       "concept_id": "MA-KS3-C008",
@@ -681,7 +717,15 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use factor trees as the primary visual method, showing how each composite number branches into two factors until all leaves are prime. Demonstrate that different starting factorisations of the same number always produce the same set of prime factors (the Fundamental Theorem of Arithmetic). Introduce index notation for repeated prime factors (e.g., 360 = 2³ × 3² × 5). Practise 'building up' from prime factorisations to find the original number as a checking strategy. Connect to HCF/LCM by showing the Venn diagram method with prime factors.",
       "key_vocabulary": "prime factorisation, factor tree, prime factor, index notation, product of primes, Fundamental Theorem of Arithmetic, unique factorisation, decomposition",
-      "common_misconceptions": "Pupils may stop their factor tree before reaching all prime factors, leaving composite numbers as leaves (e.g., writing 12 = 2 × 6 and stopping). Some pupils believe that the order in which they split the number changes the result. Others confuse the product notation, writing 2³ × 3 as 2 × 3³."
+      "common_misconceptions": "Pupils may stop their factor tree before reaching all prime factors, leaving composite numbers as leaves (e.g., writing 12 = 2 × 6 and stopping). Some pupils believe that the order in which they split the number changes the result. Others confuse the product notation, writing 2³ × 3 as 2 × 3³.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C004",
+        "MA-KS3-C006",
+        "MA-KS3-C007",
+        "MA-KS3-C014",
+        "MA-KS3-C024"
+      ]
     },
     {
       "concept_id": "MA-KS3-C009",
@@ -693,7 +737,16 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Build on KS2 fraction operations by extending to improper fractions and mixed numbers with all four operations. Use fraction walls and bar models to maintain conceptual understanding alongside procedural fluency. For addition and subtraction, emphasise finding a common denominator. For multiplication, use area models to show why numerators and denominators multiply. For division, use the 'how many groups of' interpretation before introducing the 'keep-flip-multiply' shortcut. Always require answers in simplest form.",
       "key_vocabulary": "proper fraction, improper fraction, mixed number, numerator, denominator, common denominator, equivalent fraction, simplify, reciprocal, lowest terms",
-      "common_misconceptions": "When adding fractions, pupils commonly add both numerators and denominators (e.g., ½ + ⅓ = 2/5). For multiplication, pupils may cross-multiply instead of multiplying straight across. When dividing fractions, pupils often invert the wrong fraction. Converting between improper fractions and mixed numbers is also error-prone, with pupils confusing quotient and remainder positions."
+      "common_misconceptions": "When adding fractions, pupils commonly add both numerators and denominators (e.g., ½ + ⅓ = 2/5). For multiplication, pupils may cross-multiply instead of multiplying straight across. When dividing fractions, pupils often invert the wrong fraction. Converting between improper fractions and mixed numbers is also error-prone, with pupils confusing quotient and remainder positions.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C002",
+        "MA-KS3-C010",
+        "MA-KS3-C011",
+        "MA-KS3-C012",
+        "MA-KS3-C017",
+        "MA-KS3-C020"
+      ]
     },
     {
       "concept_id": "MA-KS3-C010",
@@ -705,7 +758,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Start with addition and subtraction of negative numbers using movement on a number line: adding a positive moves right, adding a negative moves left, and subtracting reverses the direction. Use the 'zero pair' concept with two-colour counters — a positive counter and a negative counter cancel out to zero. Progress to multiplication and division: model 3 × (-2) as three groups of -2, and use pattern-based reasoning (3×2=6, 2×2=4, 1×2=2, 0×2=0, -1×2=-2) to establish sign rules. Emphasise that sign rules are consequences of the number system, not arbitrary conventions.",
       "key_vocabulary": "directed number, negative, positive, integer, zero pair, additive inverse, sign rules, product, quotient, subtract, difference",
-      "common_misconceptions": "Pupils often think that 'two negatives make a positive' applies universally, applying it to addition (e.g., -3 + -5 = 8). The expression -3 - -5 causes particular difficulty because pupils do not interpret the double negative correctly. Some pupils believe that multiplying two negative numbers should give a negative result because 'negatives are bad'. Pattern-based reasoning and the number line are essential correctives."
+      "common_misconceptions": "Pupils often think that 'two negatives make a positive' applies universally, applying it to addition (e.g., -3 + -5 = 8). The expression -3 - -5 causes particular difficulty because pupils do not interpret the double negative correctly. Some pupils believe that multiplying two negative numbers should give a negative result because 'negatives are bad'. Pattern-based reasoning and the number line are essential correctives.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C011",
@@ -717,7 +772,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Extend the primary BODMAS/BIDMAS framework to include powers, roots and reciprocals. Present ambiguous expressions (e.g., 2 + 3² and (2 + 3)²) and ask pupils to evaluate both ways to see why convention matters. Use bracket-insertion exercises where pupils must add brackets to a given expression to produce a target answer. Progress to expressions involving nested brackets and multiple operations. Emphasise that multiplication and division have equal priority (evaluate left to right), as do addition and subtraction.",
       "key_vocabulary": "order of operations, BIDMAS, BODMAS, brackets, indices, powers, roots, reciprocal, priority, evaluate, expression, convention",
-      "common_misconceptions": "The most prevalent misconception is evaluating strictly left-to-right without attending to operation priority. Many pupils believe that division always comes before multiplication (a misreading of BIDMAS), when in fact they share equal priority. Similarly, some think addition always precedes subtraction. The mnemonic can mislead if not taught alongside the left-to-right rule for equal-priority operations."
+      "common_misconceptions": "The most prevalent misconception is evaluating strictly left-to-right without attending to operation priority. Many pupils believe that division always comes before multiplication (a misreading of BIDMAS), when in fact they share equal priority. Similarly, some think addition always precedes subtraction. The mnemonic can mislead if not taught alongside the left-to-right rule for equal-priority operations.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C012",
@@ -729,7 +786,15 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Present inverse operations as 'function machines' that can be run forwards and backwards. Show that addition and subtraction are inverses, multiplication and division are inverses, and squaring and square-rooting are inverses. Use these relationships for checking answers — if 45 × 12 = 540, then 540 ÷ 12 should give 45. Connect to equation-solving: the inverse operation is the tool for 'undoing' an operation to isolate a variable. Include examples with fractions and negative numbers.",
       "key_vocabulary": "inverse operation, reverse, undo, function machine, input, output, check, verify, opposite operation, additive inverse, multiplicative inverse",
-      "common_misconceptions": "Pupils may not recognise that squaring and square-rooting are inverses, or that cubing and cube-rooting are. Some pupils attempt to 'undo' powers by dividing rather than taking roots. Others struggle to identify which operation to invert when checking multi-step calculations."
+      "common_misconceptions": "Pupils may not recognise that squaring and square-rooting are inverses, or that cubing and cube-rooting are. Some pupils attempt to 'undo' powers by dividing rather than taking roots. Others struggle to identify which operation to invert when checking multi-step calculations.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C002",
+        "MA-KS3-C009",
+        "MA-KS3-C010",
+        "MA-KS3-C011",
+        "MA-KS3-C020"
+      ]
     },
     {
       "concept_id": "MA-KS3-C013",
@@ -741,7 +806,13 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Begin with square numbers using dot arrays arranged as squares, then extend to cubes using physical or virtual cube models. Build a reference table of squares (1² to 15²) and cubes (1³ to 5³) and use these for rapid recall activities. Introduce square roots and cube roots as the reverse question: 'what number multiplied by itself gives 49?' Use calculators to explore higher powers and their roots. Connect to area (square numbers) and volume (cube numbers) in geometry contexts.",
       "key_vocabulary": "power, index, exponent, base, square number, cube number, square root, cube root, squared, cubed, to the power of, radical sign",
-      "common_misconceptions": "Pupils commonly confuse squaring with doubling (e.g., 3² = 6 instead of 9) and cubing with trebling. Some pupils think the square root of 49 is 24.5 (halving instead of finding the root). When working with higher powers, pupils may multiply the base by the index rather than raising to the power (e.g., 2⁴ = 8 instead of 16)."
+      "common_misconceptions": "Pupils commonly confuse squaring with doubling (e.g., 3² = 6 instead of 9) and cubing with trebling. Some pupils think the square root of 49 is 24.5 (halving instead of finding the root). When working with higher powers, pupils may multiply the base by the index rather than raising to the power (e.g., 2⁴ = 8 instead of 16).",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C006",
+        "MA-KS3-C014",
+        "MA-KS3-C019"
+      ]
     },
     {
       "concept_id": "MA-KS3-C014",
@@ -753,7 +824,12 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Begin by writing repeated multiplications in full and then showing the index notation shorthand: 2 × 2 × 2 × 2 = 2⁴. Emphasise the distinction between the base and the index. Build reference lists of powers of 2 (up to 2¹⁰ = 1024), powers of 3 (up to 3⁵ = 243), powers of 4 and 5. Use pattern recognition: what happens when you multiply 2³ by 2² (add the indices)? Connect index notation to prime factorisation and to standard form.",
       "key_vocabulary": "index, index notation, base, exponent, power, indices, laws of indices, product rule, quotient rule, power of a power",
-      "common_misconceptions": "Pupils frequently confuse 3⁴ (3 to the power of 4 = 81) with 3 × 4 (= 12) or 4³ (= 64). When applying index laws, pupils may multiply indices instead of adding them for the product rule (aᵐ × aⁿ = aᵐ⁺ⁿ). Some pupils apply index laws to different bases, writing 2³ × 3² = 6⁵."
+      "common_misconceptions": "Pupils frequently confuse 3⁴ (3 to the power of 4 = 81) with 3 × 4 (= 12) or 4³ (= 64). When applying index laws, pupils may multiply indices instead of adding them for the product rule (aᵐ × aⁿ = aᵐ⁺ⁿ). Some pupils apply index laws to different bases, writing 2³ × 3² = 6⁵.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C008",
+        "MA-KS3-C016"
+      ]
     },
     {
       "concept_id": "MA-KS3-C015",
@@ -765,7 +841,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use calculator explorations to find decimal approximations of surds like √2, √3, √5 and ask pupils to notice that the decimal never terminates or repeats. Compare the exact value √2 with its approximation 1.41421... and discuss when each form is preferable. Connect to Pythagoras' Theorem where exact answers are often surds. Show that √4 = 2 exactly (a rational root) while √5 cannot be expressed as a fraction. The key insight is that some roots are rational and some are irrational.",
       "key_vocabulary": "exact value, surd, irrational number, rational number, square root, cube root, approximation, decimal approximation, terminating, non-terminating, radical",
-      "common_misconceptions": "Pupils often believe all square roots produce whole numbers, or that the calculator display gives the 'exact' answer. Some pupils round √2 to 1.41 and treat this as exact rather than approximate. Others think that √2 must be expressible as a fraction if you use a large enough denominator. Explaining that irrational numbers have non-repeating, non-terminating decimals helps clarify the distinction."
+      "common_misconceptions": "Pupils often believe all square roots produce whole numbers, or that the calculator display gives the 'exact' answer. Some pupils round √2 to 1.41 and treat this as exact rather than approximate. Others think that √2 must be expressible as a fraction if you use a large enough denominator. Explaining that irrational numbers have non-repeating, non-terminating decimals helps clarify the distinction.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C016",
@@ -777,7 +855,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce standard form through real-world contexts: distances in astronomy (Earth to Sun ≈ 1.5 × 10⁸ km), sizes of atoms (≈ 1 × 10⁻¹⁰ m), and population data. Start by converting between ordinary numbers and standard form using a place value chart, showing how the decimal point 'moves'. Emphasise the constraint 1 ≤ A < 10. Use calculators in standard form mode and interpret the display. Practise ordering numbers in standard form and converting between standard form and ordinary numbers in both directions.",
       "key_vocabulary": "standard form, scientific notation, A × 10ⁿ, power of ten, exponent, mantissa, order of magnitude, ordinary number, convert",
-      "common_misconceptions": "Pupils often write numbers like 34.5 × 10³ which violates the 1 ≤ A < 10 rule. Negative indices cause confusion — pupils may think 3.2 × 10⁻³ is a negative number rather than a small positive one. When comparing numbers in standard form, some pupils compare only the A values without considering the powers of 10."
+      "common_misconceptions": "Pupils often write numbers like 34.5 × 10³ which violates the 1 ≤ A < 10 rule. Negative indices cause confusion — pupils may think 3.2 × 10⁻³ is a negative number rather than a small positive one. When comparing numbers in standard form, some pupils compare only the A values without considering the powers of 10.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C017",
@@ -789,7 +869,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use a systematic approach: convert fractions to decimals by dividing the numerator by the denominator, and convert terminating decimals to fractions by reading the place value (e.g., 0.375 = 375/1000 = 3/8). Build a reference table of common equivalences (½ = 0.5, ¼ = 0.25, ⅕ = 0.2, ⅛ = 0.125, etc.). Explore which fractions produce terminating decimals — those whose denominators in simplest form have only factors of 2 and 5. Use this to predict whether a given fraction will terminate.",
       "key_vocabulary": "terminating decimal, fraction, equivalent, numerator, denominator, convert, simplify, decimal fraction, place value, division",
-      "common_misconceptions": "Pupils sometimes think all fractions convert to terminating decimals, not realising that fractions like ⅓ produce recurring decimals. When converting decimals to fractions, pupils may not simplify fully (writing 0.4 = 4/10 but not 2/5). Some pupils reverse the division direction, dividing denominator by numerator."
+      "common_misconceptions": "Pupils sometimes think all fractions convert to terminating decimals, not realising that fractions like ⅓ produce recurring decimals. When converting decimals to fractions, pupils may not simplify fully (writing 0.4 = 4/10 but not 2/5). Some pupils reverse the division direction, dividing denominator by numerator.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C018",
@@ -801,7 +883,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Reinforce the literal meaning of 'per cent' as 'per hundred' using hundred-squares where pupils shade the given percentage. Connect percentages to fractions (25% = 25/100 = ¼) and decimals (25% = 0.25) through a three-way conversion triangle. Use real-life contexts: shop discounts, test scores, nutritional information. Show that percentage is a standardised way to compare proportions — two classes with different sizes can be compared fairly using percentages.",
       "key_vocabulary": "percentage, per cent, parts per hundred, fraction, decimal, proportion, equivalent, convert, hundred square, percent symbol",
-      "common_misconceptions": "Pupils often confuse percentage with an absolute quantity — thinking 50% is always 50. Some pupils believe percentages cannot exceed 100%, not realising that a quantity can be more than 100% of another. Others struggle to convert between the three forms (fraction, decimal, percentage), particularly when the fraction does not have 100 as a denominator."
+      "common_misconceptions": "Pupils often confuse percentage with an absolute quantity — thinking 50% is always 50. Some pupils believe percentages cannot exceed 100%, not realising that a quantity can be more than 100% of another. Others struggle to convert between the three forms (fraction, decimal, percentage), particularly when the fraction does not have 100 as a denominator.",
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C019",
@@ -813,7 +897,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach three key percentage skills: finding a percentage of a quantity (using the decimal multiplier method), expressing one quantity as a percentage of another (divide then multiply by 100), and comparing quantities using percentages. Use bar models to represent percentage problems visually. For non-calculator work, build from known percentages (50%, 25%, 10%, 1%) and combine them. For calculator work, introduce the decimal multiplier (e.g., 35% of 240 = 0.35 × 240). Include contexts with percentages greater than 100%.",
       "key_vocabulary": "percentage of, express as a percentage, compare, decimal multiplier, proportion, per cent, finding percentages, percentage comparison, part, whole",
-      "common_misconceptions": "When expressing one quantity as a percentage of another, pupils often divide the larger by the smaller regardless of which is the 'part' and which is the 'whole'. Some pupils add percentages from different bases, not realising that 10% of 200 is not the same as 10% of 300. The decimal multiplier method is often misremembered as 'move the decimal point' without understanding why."
+      "common_misconceptions": "When expressing one quantity as a percentage of another, pupils often divide the larger by the smaller regardless of which is the 'part' and which is the 'whole'. Some pupils add percentages from different bases, not realising that 10% of 200 is not the same as 10% of 300. The decimal multiplier method is often misremembered as 'move the decimal point' without understanding why.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C020",
@@ -825,7 +911,14 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Emphasise the multiplicative nature of fractions and percentages by contrasting 'finding ¾ of 60' (multiplicative) with 'finding ¾ plus 60' (additive). Use bar models to show that 'finding ¾ of a quantity' means multiplying by ¾, and 'finding 75% of a quantity' means multiplying by 0.75. Present fractional and percentage operators in function machine diagrams. Connect to scaling: a scale factor of ¾ reduces a quantity, while a scale factor of 5/4 enlarges it. Show that repeated application of percentage operators is multiplicative, not additive.",
       "key_vocabulary": "operator, multiplicative, scale factor, of, fraction of, percentage of, multiplier, enlarge, reduce, proportion, scaling",
-      "common_misconceptions": "The most significant misconception is treating fractions and percentages additively — for example, believing that a 20% increase followed by a 20% decrease returns to the original value. Pupils also struggle to see '¾ of' as multiplication, instead treating it as a separate operation. Some pupils think 'finding 150% of a value' is impossible because percentages cannot exceed 100%."
+      "common_misconceptions": "The most significant misconception is treating fractions and percentages additively — for example, believing that a 20% increase followed by a 20% decrease returns to the original value. Pupils also struggle to see '¾ of' as multiplication, instead treating it as a separate operation. Some pupils think 'finding 150% of a value' is impossible because percentages cannot exceed 100%.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C009",
+        "MA-KS3-C012",
+        "MA-KS3-C018",
+        "MA-KS3-C019"
+      ]
     },
     {
       "concept_id": "MA-KS3-C021",
@@ -837,7 +930,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Extend primary rounding to include decimal places and significant figures. For decimal places, use the number line approach: locate the number between the two nearest values at the required precision. For significant figures, teach pupils to identify the first significant figure (the first non-zero digit) and count from there. Use estimation contexts: 'estimate 3.87 × 19.2' by rounding to 4 × 20 = 80. Practise rounding numbers with trailing zeros (e.g., 4050 to 2 significant figures) and leading zeros (e.g., 0.00372 to 2 significant figures).",
       "key_vocabulary": "round, decimal place, significant figure, estimate, approximate, truncate, degree of accuracy, nearest, upper bound, lower bound",
-      "common_misconceptions": "Pupils often confuse decimal places with significant figures — for example, rounding 0.03456 to 2 decimal places (0.03) versus 2 significant figures (0.035). When rounding to significant figures, leading zeros cause particular difficulty because pupils count them as significant. Some pupils cascade their rounding (round 3.449 to 3.45, then to 3.5) rather than rounding directly to the required degree."
+      "common_misconceptions": "Pupils often confuse decimal places with significant figures — for example, rounding 0.03456 to 2 decimal places (0.03) versus 2 significant figures (0.035). When rounding to significant figures, leading zeros cause particular difficulty because pupils count them as significant. Some pupils cascade their rounding (round 3.449 to 3.45, then to 3.5) rather than rounding directly to the required degree.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C022",
@@ -849,7 +944,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce error intervals through concrete measurement activities: measure a length to the nearest centimetre and discuss the range of actual values it could be. If a value is 7 cm to the nearest centimetre, the actual value x satisfies 6.5 ≤ x < 7.5. Use number lines to show the interval and its bounds. Progress to truncation (where the interval is different) and to combining error intervals in calculations. Emphasise the use of strict and non-strict inequalities: the lower bound is included (≤) but the upper bound is not (<).",
       "key_vocabulary": "error interval, upper bound, lower bound, inequality, truncation, rounding, degree of accuracy, bounds, continuous, discrete, ≤, <",
-      "common_misconceptions": "Pupils commonly get the bounds wrong, especially the upper bound — for example, thinking that 5.3 rounded to 1 decimal place has an upper bound of 5.4 rather than 5.35. The asymmetry of the inequality (lower bound included, upper bound excluded) is counter-intuitive. Pupils also confuse error intervals for rounding with those for truncation, where the lower bound equals the rounded value."
+      "common_misconceptions": "Pupils commonly get the bounds wrong, especially the upper bound — for example, thinking that 5.3 rounded to 1 decimal place has an upper bound of 5.4 rather than 5.35. The asymmetry of the inequality (lower bound included, upper bound excluded) is counter-intuitive. Pupils also confuse error intervals for rounding with those for truncation, where the lower bound equals the rounded value.",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C023",
@@ -861,7 +958,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach explicit calculator skills: entering fractions using the fraction key, using the square root and power keys, using brackets, and interpreting the display (especially for recurring decimals and standard form). Model the habit of estimating before calculating to detect keying errors. Show pupils how to use the ANS key for multi-step calculations and how to interpret error messages. Discuss when calculator use is appropriate and when mental or written methods are more efficient.",
       "key_vocabulary": "calculator, display, fraction key, square root key, power key, ANS, memory, brackets, estimate, check, interpret, key, enter",
-      "common_misconceptions": "Pupils often trust the calculator display without checking reasonableness. Common errors include forgetting brackets (entering 3 + 4 ÷ 2 when meaning (3 + 4) ÷ 2), misreading the display in standard form, and not knowing how to enter mixed numbers. Some pupils believe that because the calculator gives a long decimal, the answer must be exact."
+      "common_misconceptions": "Pupils often trust the calculator display without checking reasonableness. Common errors include forgetting brackets (entering 3 + 4 ÷ 2 when meaning (3 + 4) ÷ 2), misreading the display in standard form, and not knowing how to enter mixed numbers. Some pupils believe that because the calculator gives a long decimal, the answer must be exact.",
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C024",
@@ -873,7 +972,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use visual representations: the integer number line extending infinitely in both directions, and the density of rational numbers (between any two rational numbers there is always another). Introduce through questions like 'What is the biggest whole number?' and 'Is there a fraction between ¼ and ½?' to provoke discussion. Distinguish between integers (whole numbers including negatives), rational numbers (expressible as fractions), and real numbers (including irrationals like √2 and π). Use Venn diagrams showing the nesting of number sets: integers ⊂ rationals ⊂ reals.",
       "key_vocabulary": "integer, rational number, real number, irrational number, infinite, set, subset, natural number, whole number, countable, dense, number line",
-      "common_misconceptions": "Pupils often believe the number line has endpoints or that there are 'biggest' and 'smallest' numbers. Some think there are no numbers between two consecutive integers. The concept that there are infinitely many fractions between any two fractions is particularly hard to grasp. Pupils may also confuse 'infinite' with 'very large'."
+      "common_misconceptions": "Pupils often believe the number line has endpoints or that there are 'biggest' and 'smallest' numbers. Some think there are no numbers between two consecutive integers. The concept that there are infinitely many fractions between any two fractions is particularly hard to grasp. Pupils may also confuse 'infinite' with 'very large'.",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C025",
@@ -885,7 +986,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Bridge from arithmetic to algebra by translating familiar calculations into algebraic form: 'I think of a number, double it and add 3' becomes 2n + 3. Explicitly teach each notational convention: ab means a × b (the multiplication sign is omitted), 3y means y + y + y or 3 × y, a² means a × a. Use 'translation' exercises where pupils convert between words, algebraic notation and numerical examples. Emphasise that letters represent numbers, not objects — 3a means '3 times the value of a', not '3 apples'.",
       "key_vocabulary": "algebra, variable, letter, expression, term, coefficient, constant, notation, convention, multiplication sign, index, power, substitute",
-      "common_misconceptions": "The 'fruit salad' misconception — treating letters as objects rather than numbers (3a + 2b = 3 apples + 2 bananas) — is pervasive and must be explicitly addressed. Pupils often think ab means a + b rather than a × b. Some pupils believe different letters must represent different values. Others write 2 × a as 2a but then cannot recognise 2a as meaning 2 × a when reading."
+      "common_misconceptions": "The 'fruit salad' misconception — treating letters as objects rather than numbers (3a + 2b = 3 apples + 2 bananas) — is pervasive and must be explicitly addressed. Pupils often think ab means a + b rather than a × b. Some pupils believe different letters must represent different values. Others write 2 × a as 2a but then cannot recognise 2a as meaning 2 × a when reading.",
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C026",
@@ -897,7 +1000,19 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Start with simple substitution into expressions (find the value of 3x + 2 when x = 4) and progress to scientific formulae and expressions with multiple variables. Present substitution as 'replacing the letter with its value and calculating'. Use function machines alongside algebraic notation to show the same process in two representations. Emphasise the importance of applying BIDMAS after substitution — writing out the numerical expression before evaluating. Include substitution with negative numbers, fractions and decimals to expose common errors.",
       "key_vocabulary": "substitute, substitution, evaluate, replace, value, variable, expression, formula, input, output, function machine, numerical value",
-      "common_misconceptions": "When substituting negative numbers, pupils frequently forget that (-3)² = 9, not -9, confusing -3² (which equals -9) with (-3)². Pupils also make errors with implicit multiplication: substituting x = 3 into 2x may yield 23 (concatenation) rather than 6. Substituting into expressions like x² + 3x when x = -2 produces multiple opportunities for sign errors."
+      "common_misconceptions": "When substituting negative numbers, pupils frequently forget that (-3)² = 9, not -9, confusing -3² (which equals -9) with (-3)². Pupils also make errors with implicit multiplication: substituting x = 3 into 2x may yield 23 (concatenation) rather than 6. Substituting into expressions like x² + 3x when x = -2 produces multiple opportunities for sign errors.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C025",
+        "MA-KS3-C028",
+        "MA-KS3-C029",
+        "MA-KS3-C030",
+        "MA-KS3-C032",
+        "MA-KS3-C033",
+        "MA-KS3-C034",
+        "MA-KS3-C042",
+        "MA-KS3-C044"
+      ]
     },
     {
       "concept_id": "MA-KS3-C027",
@@ -909,7 +1024,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use a classification activity: give pupils a set of algebraic statements and ask them to sort into expressions, equations, inequalities, identities and formulae. Define each term precisely — an expression has no equals sign, an equation states that two expressions are equal, an identity is always true, an inequality uses <, >, ≤ or ≥. Within expressions, identify individual terms, factors within terms, and coefficients. Return to these definitions regularly throughout algebra work to build secure vocabulary.",
       "key_vocabulary": "expression, equation, identity, inequality, formula, term, factor, coefficient, variable, constant, unknown, like terms, unlike terms",
-      "common_misconceptions": "Pupils commonly confuse 'equation' and 'expression', using them interchangeably. Many pupils think an expression must contain a letter (not recognising 3 + 5 as an expression). The distinction between an equation (sometimes true) and an identity (always true) is subtle and requires repeated examples. Pupils may also confuse 'term' with 'factor'."
+      "common_misconceptions": "Pupils commonly confuse 'equation' and 'expression', using them interchangeably. Many pupils think an expression must contain a letter (not recognising 3 + 5 as an expression). The distinction between an equation (sometimes true) and an identity (always true) is subtle and requires repeated examples. Pupils may also confuse 'term' with 'factor'.",
+      "teaching_weight": 1,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C028",
@@ -921,7 +1038,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Begin with concrete representations: use algebra tiles or bar models to show that 3x + 2x can be combined (five 'x' tiles) but 3x + 2y cannot (different tiles). Practise identifying like terms in complex expressions by underlining or colour-coding terms with the same variable parts. Progress through increasingly complex expressions: single variables (3a + 5a), different variables (3a + 2b + a), expressions with powers (2x² + 3x + x²), and expressions with negative terms. Emphasise that like terms have identical variable parts, including powers.",
       "key_vocabulary": "like terms, unlike terms, collect, simplify, combine, expression, coefficient, variable, constant term, algebraic simplification",
-      "common_misconceptions": "Pupils often combine unlike terms: adding 3x + 2y to get 5xy, or combining x and x² to get 2x² (or x³). Some pupils think the constant term cannot be combined with other constants if there are also letter terms present. Others lose negative signs during collection, especially with expressions like 5a - 3b + 2b - a."
+      "common_misconceptions": "Pupils often combine unlike terms: adding 3x + 2y to get 5xy, or combining x and x² to get 2x² (or x³). Some pupils think the constant term cannot be combined with other constants if there are also letter terms present. Others lose negative signs during collection, especially with expressions like 5a - 3b + 2b - a.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C029",
@@ -933,7 +1052,18 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use the area model (grid method) to visualise expanding: a rectangle with width 3 and length (x + 4) has area 3x + 12. Progress from positive integer multipliers to negative multipliers and fractional coefficients. Use algebra tiles to show 2(x + 3) physically: two groups of (x + 3) give 2x + 6. Emphasise that every term inside the bracket must be multiplied. Practise expanding then simplifying combined expressions like 3(x + 2) + 2(x - 1). Connect to the distributive law of multiplication over addition.",
       "key_vocabulary": "expand, brackets, multiply out, distribute, distributive law, single bracket, term, expression, product, simplify",
-      "common_misconceptions": "The most common error is failing to multiply every term inside the bracket — pupils expand 3(x + 4) as 3x + 4 rather than 3x + 12. With negative multipliers, sign errors are frequent: -2(x - 3) is often incorrectly expanded as -2x - 6 instead of -2x + 6. Some pupils confuse expanding with solving, trying to find x after expanding."
+      "common_misconceptions": "The most common error is failing to multiply every term inside the bracket — pupils expand 3(x + 4) as 3x + 4 rather than 3x + 12. With negative multipliers, sign errors are frequent: -2(x - 3) is often incorrectly expanded as -2x - 6 instead of -2x + 6. Some pupils confuse expanding with solving, trying to find x after expanding.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C026",
+        "MA-KS3-C027",
+        "MA-KS3-C028",
+        "MA-KS3-C030",
+        "MA-KS3-C031",
+        "MA-KS3-C034",
+        "MA-KS3-C035",
+        "MA-KS3-C036"
+      ]
     },
     {
       "concept_id": "MA-KS3-C030",
@@ -945,7 +1075,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Present factorising as the reverse of expanding: if expanding 3(x + 4) gives 3x + 12, then factorising 3x + 12 gives 3(x + 4). Begin by identifying the highest common factor of all terms in an expression. Use factor trees or systematic listing to find the HCF of coefficients, and inspection to identify common variables. Model the checking strategy: expand your factorised answer to verify it gives the original expression. Progress from single-variable expressions to those with multiple variables.",
       "key_vocabulary": "factorise, factor, common factor, highest common factor, HCF, bracket, expression, term, reverse of expanding, extract",
-      "common_misconceptions": "Pupils often take out a common factor but not the highest common factor — for example, factorising 6x + 12 as 2(3x + 6) rather than 6(x + 2). Some pupils leave one term outside the bracket, writing 6x + 12 as 6x(1 + 2). Others confuse factorising expressions with solving equations, attempting to find a value of x."
+      "common_misconceptions": "Pupils often take out a common factor but not the highest common factor — for example, factorising 6x + 12 as 2(3x + 6) rather than 6(x + 2). Some pupils leave one term outside the bracket, writing 6x + 12 as 6x(1 + 2). Others confuse factorising expressions with solving equations, attempting to find a value of x.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C031",
@@ -957,7 +1089,15 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use the grid method (area model) extended to two dimensions: draw a 2×2 grid with (x + 2) across the top and (x + 3) down the side, fill in the four cells (x², 3x, 2x, 6), then collect like terms. Introduce FOIL (First, Outer, Inner, Last) as a mnemonic but ensure understanding through the grid model first. Practise with both positive and negative terms in the binomials. Connect to perfect squares and difference of two squares as special cases. Extend to products of three binomials for higher-attaining pupils.",
       "key_vocabulary": "binomial, expand, product, FOIL, grid method, quadratic expression, term, coefficient, collect like terms, trinomial",
-      "common_misconceptions": "Pupils commonly omit one or more of the four partial products, especially the two middle terms. A frequent error is (x + 3)² = x² + 9, omitting the 2 × 3 × x = 6x middle term. With negative terms, sign errors multiply: (x - 2)(x + 3) often yields x² + x - 6 correctly, but (x - 2)(x - 3) may yield x² - 5x - 6 (wrong sign on the constant) instead of x² - 5x + 6."
+      "common_misconceptions": "Pupils commonly omit one or more of the four partial products, especially the two middle terms. A frequent error is (x + 3)² = x² + 9, omitting the 2 × 3 × x = 6x middle term. With negative terms, sign errors multiply: (x - 2)(x + 3) often yields x² + x - 6 correctly, but (x - 2)(x - 3) may yield x² - 5x - 6 (wrong sign on the constant) instead of x² - 5x + 6.",
+      "teaching_weight": 4,
+      "co_teach_hints": [
+        "MA-KS3-C029",
+        "MA-KS3-C035",
+        "MA-KS3-C036",
+        "MA-KS3-C045",
+        "MA-KS3-C046"
+      ]
     },
     {
       "concept_id": "MA-KS3-C032",
@@ -969,7 +1109,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Start with formulae pupils already know: area of a rectangle (A = lw), circumference of a circle (C = πd), speed-distance-time (s = d/t). Practise substituting values and calculating results. Progress to less familiar formulae from science and other contexts. Emphasise that a formula is a general rule: it works for any values of the variables, not just the specific example shown. Use formula triangles (e.g., the speed-distance-time triangle) cautiously — they work for three-variable relationships but do not develop algebraic understanding.",
       "key_vocabulary": "formula, formulae, variable, substitute, subject, equation, expression, input, output, derive, apply, relationship",
-      "common_misconceptions": "Pupils often confuse the subject of a formula with other variables, substituting values into the wrong positions. When a formula involves multiple operations, BIDMAS errors arise frequently. Some pupils believe formulae only apply to specific values they have seen, not understanding the generality. Formula triangles can become a crutch that prevents pupils from developing rearrangement skills."
+      "common_misconceptions": "Pupils often confuse the subject of a formula with other variables, substituting values into the wrong positions. When a formula involves multiple operations, BIDMAS errors arise frequently. Some pupils believe formulae only apply to specific values they have seen, not understanding the generality. Formula triangles can become a crutch that prevents pupils from developing rearrangement skills.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C033",
@@ -981,7 +1123,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach rearranging formulae as a process of 'undoing' operations to isolate the desired variable, using the same inverse-operation logic as solving equations. Start with one-step rearrangements (make a the subject of v = u + at → at = v - u → ... ), then progress to two-step and multi-step examples. Use flow charts showing the sequence of operations applied to the subject, then reverse the chart. Emphasise that whatever operation is performed on one side must be performed on the other to maintain equality.",
       "key_vocabulary": "subject, rearrange, change the subject, isolate, inverse operation, formula, transpose, both sides, maintain equality, variable",
-      "common_misconceptions": "Pupils commonly perform inverse operations in the wrong order — not recognising the need to 'undo' operations in reverse order. When the subject appears in a denominator, pupils struggle with the multiplication step needed to remove it. Rearranging formulae with the subject appearing more than once (requiring factorisation) is a significant challenge that should be introduced only after basic rearrangement is secure."
+      "common_misconceptions": "Pupils commonly perform inverse operations in the wrong order — not recognising the need to 'undo' operations in reverse order. When the subject appears in a denominator, pupils struggle with the multiplication step needed to remove it. Rearranging formulae with the subject appearing more than once (requiring factorisation) is a significant challenge that should be introduced only after basic rearrangement is secure.",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C034",
@@ -993,7 +1137,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use contextual problems as the starting point: 'A taxi charges £3 plus £2 per mile. Write an expression for the cost of a journey of m miles.' Progress from word problems to more abstract 'form and solve' exercises. Model the translation process explicitly: identify the variable, identify the operations, write the expression. Practise forming expressions, equations and formulae from geometric contexts (perimeter, area) and real-life situations. Emphasise the difference between forming an expression (no equals sign) and forming an equation (with equals sign).",
       "key_vocabulary": "form, formulate, express, translate, model, variable, expression, equation, formula, represent, algebraic, context",
-      "common_misconceptions": "Pupils often write operations in the wrong order — writing '3m + 2' when they mean '2m + 3' (confusing the fixed charge with the variable charge). Some pupils introduce unnecessary variables or use the same letter for different quantities. Others struggle to identify which quantity is the variable and which is the constant in a contextual problem."
+      "common_misconceptions": "Pupils often write operations in the wrong order — writing '3m + 2' when they mean '2m + 3' (confusing the fixed charge with the variable charge). Some pupils introduce unnecessary variables or use the same letter for different quantities. Others struggle to identify which quantity is the variable and which is the constant in a contextual problem.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C035",
@@ -1005,7 +1151,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Build from one-step equations (x + 3 = 7) through two-step (2x + 3 = 11) to equations with unknowns on both sides (3x + 1 = x + 7). Use the balance model: whatever you do to one side, you must do to the other. Algebra tiles or bar models provide concrete support. Teach the 'collect variables on one side, constants on the other' strategy. Include equations with brackets requiring expansion first, and equations with fractional coefficients. Always verify solutions by substituting back into the original equation.",
       "key_vocabulary": "solve, equation, solution, unknown, variable, balance, inverse operation, isolate, rearrange, verify, check, substitute, linear",
-      "common_misconceptions": "When equations have the variable on both sides, pupils often subtract the wrong way — subtracting the larger coefficient from the smaller, producing a negative coefficient they cannot handle. Sign errors when moving terms across the equals sign are endemic (forgetting to change sign). Some pupils 'solve' by inspection for simple equations but have no systematic method for harder ones."
+      "common_misconceptions": "When equations have the variable on both sides, pupils often subtract the wrong way — subtracting the larger coefficient from the smaller, producing a negative coefficient they cannot handle. Sign errors when moving terms across the equals sign are endemic (forgetting to change sign). Some pupils 'solve' by inspection for simple equations but have no systematic method for harder ones.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C036",
@@ -1017,7 +1165,17 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Extend from KS2 first-quadrant work to all four quadrants by introducing negative coordinates. Use coordinate grids with clearly marked axes and emphasise the convention: (x, y) means 'along the corridor, then up the stairs' — x first (horizontal), then y (vertical). Plot shapes in all quadrants and identify reflective patterns (e.g., reflecting in the x-axis negates the y-coordinate). Connect to real-world grid systems. Practise reading coordinates from plotted points as well as plotting from given coordinates.",
       "key_vocabulary": "coordinate, ordered pair, x-coordinate, y-coordinate, origin, axis, axes, quadrant, Cartesian plane, plot, horizontal, vertical, negative coordinate",
-      "common_misconceptions": "The most common error is reversing x and y coordinates — plotting (3, 5) as (5, 3). Pupils also confuse axis labels, particularly in the third quadrant where both coordinates are negative. Some pupils think the quadrants are numbered clockwise rather than anti-clockwise. When reading coordinates from a graph, pupils often mis-read the scale."
+      "common_misconceptions": "The most common error is reversing x and y coordinates — plotting (3, 5) as (5, 3). Pupils also confuse axis labels, particularly in the third quadrant where both coordinates are negative. Some pupils think the quadrants are numbered clockwise rather than anti-clockwise. When reading coordinates from a graph, pupils often mis-read the scale.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C029",
+        "MA-KS3-C031",
+        "MA-KS3-C039",
+        "MA-KS3-C040",
+        "MA-KS3-C041",
+        "MA-KS3-C042",
+        "MA-KS3-C043"
+      ]
     },
     {
       "concept_id": "MA-KS3-C037",
@@ -1029,7 +1187,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Start by generating coordinate pairs from a linear equation (y = 2x + 1: when x = 0, y = 1; when x = 1, y = 3; etc.) and plotting them to discover they lie on a straight line. Use tables of values as an organising tool. Progress from plotting to sketching, where only the gradient and y-intercept are needed. Compare graphs with different gradients (steeper/shallower, positive/negative) and different intercepts. Use dynamic geometry software (GeoGebra or Desmos) to explore how changing m and c in y = mx + c affects the line.",
       "key_vocabulary": "linear function, straight line, gradient, y-intercept, x-intercept, table of values, plot, sketch, coordinate pair, equation of a line, slope",
-      "common_misconceptions": "Pupils often think that a table of values must start at x = 0, or only use positive x values. Some pupils connect plotted points with curves rather than straight lines, or fail to extend the line beyond the plotted points. Negative gradients cause particular difficulty — pupils may plot the line going the wrong way. Some pupils confuse gradient with y-intercept."
+      "common_misconceptions": "Pupils often think that a table of values must start at x = 0, or only use positive x values. Some pupils connect plotted points with curves rather than straight lines, or fail to extend the line beyond the plotted points. Negative gradients cause particular difficulty — pupils may plot the line going the wrong way. Some pupils confuse gradient with y-intercept.",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C038",
@@ -1041,7 +1201,11 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Begin by plotting y = x² from a table of values and discussing the U-shaped curve (parabola). Compare with y = -x² (inverted parabola). Explore how changing the equation affects the graph: y = x² + 3 shifts upward, y = (x - 2)² shifts right. Use Desmos or GeoGebra to investigate these transformations dynamically. Identify key features: the vertex (turning point), line of symmetry, and whether the parabola opens upward or downward. Contrast the shape of a quadratic graph with linear graphs to reinforce the distinction.",
       "key_vocabulary": "quadratic, parabola, vertex, turning point, line of symmetry, U-shape, curve, minimum, maximum, table of values, plot, sketch, coefficient",
-      "common_misconceptions": "Pupils often draw pointed rather than smooth curves at the vertex. Some pupils plot the y-values for negative x-values incorrectly because of sign errors when squaring negatives ((-3)² = -9 instead of 9). Others expect quadratic graphs to be straight lines because they confuse them with linear graphs. The asymmetry between y = x² and y = -x² is often not understood."
+      "common_misconceptions": "Pupils often draw pointed rather than smooth curves at the vertex. Some pupils plot the y-values for negative x-values incorrectly because of sign errors when squaring negatives ((-3)² = -9 instead of 9). Others expect quadratic graphs to be straight lines because they confuse them with linear graphs. The asymmetry between y = x² and y = -x² is often not understood.",
+      "teaching_weight": 4,
+      "co_teach_hints": [
+        "MA-KS3-C037"
+      ]
     },
     {
       "concept_id": "MA-KS3-C039",
@@ -1053,7 +1217,17 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Show that any linear equation can be rearranged into the form y = mx + c by isolating y. Start with equations already in this form, then practise rearranging from other forms (2y + 4x = 10 → y = -2x + 5). Interpret m as the gradient (how steep) and c as the y-intercept (where the line crosses the y-axis). Use matching activities: match equations to their graphs, or match gradient and intercept values to equations. Connect to plotting: given y = 3x - 2, identify that the line starts at (0, -2) and rises 3 units for every 1 unit across.",
       "key_vocabulary": "y = mx + c, gradient, slope, y-intercept, standard form, linear equation, coefficient, constant, rearrange, straight line",
-      "common_misconceptions": "Pupils frequently confuse m and c — identifying the constant as the gradient and vice versa. When rearranging equations, sign errors produce incorrect gradients (e.g., rearranging 2x + y = 6 to y = 2x + 6 instead of y = -2x + 6). Some pupils think every linear equation has a positive gradient. Others believe the y-intercept is always a positive integer."
+      "common_misconceptions": "Pupils frequently confuse m and c — identifying the constant as the gradient and vice versa. When rearranging equations, sign errors produce incorrect gradients (e.g., rearranging 2x + y = 6 to y = 2x + 6 instead of y = -2x + 6). Some pupils think every linear equation has a positive gradient. Others believe the y-intercept is always a positive integer.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C033",
+        "MA-KS3-C036",
+        "MA-KS3-C037",
+        "MA-KS3-C038",
+        "MA-KS3-C040",
+        "MA-KS3-C041",
+        "MA-KS3-C042"
+      ]
     },
     {
       "concept_id": "MA-KS3-C040",
@@ -1065,7 +1239,18 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Define gradient as 'rise over run' (vertical change divided by horizontal change) and calculate it from two points on a line. Use the staircase model: draw right-angled triangles between points on the line and read off the rise and run. Connect to real contexts — gradient as speed on a distance-time graph, gradient as rate of change. Show that parallel lines have equal gradients. Interpret the y-intercept as the value when x = 0, and connect to the context (e.g., a starting value, a fixed charge). Use graphical, numerical and algebraic methods for finding gradient.",
       "key_vocabulary": "gradient, slope, rise, run, steepness, rate of change, y-intercept, parallel, perpendicular, positive gradient, negative gradient, zero gradient",
-      "common_misconceptions": "Pupils often calculate gradient as 'run over rise' (inverting the fraction). When the gradient is negative, pupils may give a positive value. Some pupils calculate gradient using coordinates but subtract them in the wrong order, producing the wrong sign. The connection between gradient and rate of change is often superficial — pupils can calculate gradient but cannot interpret it in context."
+      "common_misconceptions": "Pupils often calculate gradient as 'run over rise' (inverting the fraction). When the gradient is negative, pupils may give a positive value. Some pupils calculate gradient using coordinates but subtract them in the wrong order, producing the wrong sign. The connection between gradient and rate of change is often superficial — pupils can calculate gradient but cannot interpret it in context.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C032",
+        "MA-KS3-C034",
+        "MA-KS3-C036",
+        "MA-KS3-C039",
+        "MA-KS3-C041",
+        "MA-KS3-C042",
+        "MA-KS3-C043",
+        "MA-KS3-C044"
+      ]
     },
     {
       "concept_id": "MA-KS3-C041",
@@ -1077,7 +1262,17 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach graph-reading skills explicitly: reading y-values from given x-values (and vice versa) by drawing horizontal or vertical lines to the curve and then to the axes. For simultaneous equations, plot both lines on the same axes and identify the point of intersection as the solution. Discuss accuracy: graphical solutions are approximate, and the degree of accuracy depends on the scale used. Use problems where exact methods are contrasted with graphical methods to illustrate the trade-off between speed and precision.",
       "key_vocabulary": "read from a graph, estimate, approximate solution, intersection, simultaneous, coordinate, scale, accuracy, interpolate, extrapolate",
-      "common_misconceptions": "Pupils often give approximate values as if they were exact. When reading between grid lines, pupils may not interpolate correctly, instead snapping to the nearest marked value. For simultaneous equations, pupils may identify the wrong intersection point if lines are not drawn accurately. Some pupils think graphical solutions are 'wrong' because they are not exact."
+      "common_misconceptions": "Pupils often give approximate values as if they were exact. When reading between grid lines, pupils may not interpolate correctly, instead snapping to the nearest marked value. For simultaneous equations, pupils may identify the wrong intersection point if lines are not drawn accurately. Some pupils think graphical solutions are 'wrong' because they are not exact.",
+      "teaching_weight": 4,
+      "co_teach_hints": [
+        "MA-KS3-C034",
+        "MA-KS3-C036",
+        "MA-KS3-C038",
+        "MA-KS3-C039",
+        "MA-KS3-C040",
+        "MA-KS3-C042",
+        "MA-KS3-C043"
+      ]
     },
     {
       "concept_id": "MA-KS3-C042",
@@ -1089,7 +1284,12 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Plot two linear equations on the same axes and identify the point of intersection as the simultaneous solution. Use GeoGebra or Desmos to explore how changing one equation moves the intersection point. Discuss what it means for two lines to intersect (one common solution), be parallel (no solution) and coincide (infinite solutions). Connect graphical solutions to algebraic methods (elimination, substitution) so pupils see the same problem solved in two ways. Emphasise that the coordinates of the intersection satisfy both equations.",
       "key_vocabulary": "simultaneous equations, intersection, point of intersection, consistent, inconsistent, parallel, solution, system of equations, graphical method",
-      "common_misconceptions": "Pupils may not extend their lines far enough to see the intersection point, or may draw lines inaccurately so the intersection is in the wrong place. Some pupils read the intersection coordinates from the wrong axis. Others think parallel lines will 'eventually meet' if the graph is extended far enough, not understanding that parallel means no intersection."
+      "common_misconceptions": "Pupils may not extend their lines far enough to see the intersection point, or may draw lines inaccurately so the intersection is in the wrong place. Some pupils read the intersection coordinates from the wrong axis. Others think parallel lines will 'eventually meet' if the graph is extended far enough, not understanding that parallel means no intersection.",
+      "teaching_weight": 4,
+      "co_teach_hints": [
+        "MA-KS3-C026",
+        "MA-KS3-C041"
+      ]
     },
     {
       "concept_id": "MA-KS3-C043",
@@ -1101,7 +1301,11 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce non-linear graphs through real-world contexts: exponential growth (population doubling), reciprocal relationships (speed and time for a fixed distance), and piece-wise functions (mobile phone tariffs). Plot from tables of values and discuss the shape — why exponential curves get steeper, why reciprocal curves approach but never reach the axes. Use graphs to solve contextual problems: 'At what time does the temperature reach 30°C?' by reading from the graph. Compare shapes to reinforce distinctions: linear (constant rate), quadratic (increasing rate), exponential (accelerating rate).",
       "key_vocabulary": "non-linear, exponential, reciprocal, piece-wise, asymptote, curve, growth, decay, rate of change, graph shape, function",
-      "common_misconceptions": "Pupils often try to connect plotted points with straight lines even when the graph is clearly curved. Some pupils think exponential graphs are the same as quadratic graphs. The concept of an asymptote — a line the curve approaches but never touches — is conceptually difficult and may be interpreted as the curve 'stopping' at a certain value."
+      "common_misconceptions": "Pupils often try to connect plotted points with straight lines even when the graph is clearly curved. Some pupils think exponential graphs are the same as quadratic graphs. The concept of an asymptote — a line the curve approaches but never touches — is conceptually difficult and may be interpreted as the curve 'stopping' at a certain value.",
+      "teaching_weight": 5,
+      "co_teach_hints": [
+        "MA-KS3-C037"
+      ]
     },
     {
       "concept_id": "MA-KS3-C044",
@@ -1113,7 +1317,14 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Start with sequences from visual patterns: tile patterns growing by a fixed amount each time. Generate terms from a term-to-term rule ('start at 3, add 5 each time') and from a position-to-term rule ('the nth term is 2n + 1'). Ask pupils to continue sequences and describe the rule in both forms. Use tables linking position number to term value as a bridge between the two representations. Investigate which rule type is more useful for finding, say, the 100th term. Connect to function machines: the position-to-term rule is the function.",
       "key_vocabulary": "sequence, term, position, term-to-term rule, position-to-term rule, common difference, generate, next term, nth term, pattern",
-      "common_misconceptions": "Pupils often confuse the term-to-term rule with the position-to-term rule — describing 2, 5, 8, 11 as 'add 3' when asked for the nth term rather than 3n - 1. Some pupils think the nth term rule is found by multiplying the common difference by the first term. Others generate sequences correctly from a term-to-term rule but cannot reverse-engineer the rule from a given sequence."
+      "common_misconceptions": "Pupils often confuse the term-to-term rule with the position-to-term rule — describing 2, 5, 8, 11 as 'add 3' when asked for the nth term rather than 3n - 1. Some pupils think the nth term rule is found by multiplying the common difference by the first term. Others generate sequences correctly from a term-to-term rule but cannot reverse-engineer the rule from a given sequence.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C026",
+        "MA-KS3-C040",
+        "MA-KS3-C045",
+        "MA-KS3-C046"
+      ]
     },
     {
       "concept_id": "MA-KS3-C045",
@@ -1125,7 +1336,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use the 'zero term' method for finding the nth term: the common difference d gives the coefficient of n, and the zero-th term (the term before the first) gives the constant. For the sequence 5, 8, 11, 14: d = 3, zero-th term = 5 - 3 = 2, so nth term = 3n + 2. Verify by substituting n = 1, 2, 3. Practise with sequences that have negative common differences and those that start with negative values. Use visual growing patterns (matchstick patterns, dot arrangements) to connect the nth term to a geometrical structure.",
       "key_vocabulary": "arithmetic sequence, common difference, nth term, linear sequence, position-to-term rule, general term, first term, term number, formula",
-      "common_misconceptions": "The most common error is confusing the common difference with the first term when writing the nth term expression. Pupils may write the nth term of 5, 8, 11, 14 as 5n + 3 instead of 3n + 2. Others check only the first term and assume their formula is correct without verifying further terms. Some pupils think the nth term of a decreasing sequence cannot be found using this method."
+      "common_misconceptions": "The most common error is confusing the common difference with the first term when writing the nth term expression. Pupils may write the nth term of 5, 8, 11, 14 as 5n + 3 instead of 3n + 2. Others check only the first term and assume their formula is correct without verifying further terms. Some pupils think the nth term of a decreasing sequence cannot be found using this method.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C046",
@@ -1137,7 +1350,11 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce geometric sequences through contexts like doubling bacteria, paper folding, and compound interest. Compare with arithmetic sequences: in an arithmetic sequence you add a constant, in a geometric sequence you multiply by a constant (the common ratio). Generate terms from a starting value and common ratio. Identify geometric sequences from given sequences by checking whether the ratio between consecutive terms is constant. Mention other sequence types (Fibonacci, triangular numbers) to broaden awareness, but ensure pupils can identify whether a sequence is arithmetic, geometric, or neither.",
       "key_vocabulary": "geometric sequence, common ratio, multiply, ratio, exponential, doubling, halving, term, growth, decay, Fibonacci, triangular number",
-      "common_misconceptions": "Pupils often confuse geometric and arithmetic sequences, applying additive reasoning to geometric sequences (adding the common ratio instead of multiplying). Some pupils think the common ratio must be a whole number and do not recognise sequences with fractional ratios (e.g., 64, 32, 16, 8 has a common ratio of ½). Others think that if a sequence is increasing, it must be arithmetic."
+      "common_misconceptions": "Pupils often confuse geometric and arithmetic sequences, applying additive reasoning to geometric sequences (adding the common ratio instead of multiplying). Some pupils think the common ratio must be a whole number and do not recognise sequences with fractional ratios (e.g., 64, 32, 16, 8 has a common ratio of ½). Others think that if a sequence is increasing, it must be arithmetic.",
+      "teaching_weight": 5,
+      "co_teach_hints": [
+        "MA-KS3-C045"
+      ]
     },
     {
       "concept_id": "MA-KS3-C047",
@@ -1149,7 +1366,11 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach conversion as multiplication or division by powers of 10, using a conversion staircase or table showing the relationships between units. For length: mm → cm → m → km with factors of 10, 100 and 1000. Extend to area units (1 m² = 10,000 cm²) and volume units (1 m³ = 1,000,000 cm³) by reasoning about the number of dimensions. Include time conversions (which are not base-10) and conversions between metric and common imperial units. Use dimensional analysis for compound units.",
       "key_vocabulary": "convert, unit, metric, imperial, length, mass, capacity, volume, area, milli-, centi-, kilo-, prefix, equivalence, dimension",
-      "common_misconceptions": "Pupils commonly multiply when they should divide (or vice versa) — particularly converting from smaller to larger units. Area and volume conversions cause more difficulty because pupils apply linear conversion factors instead of squaring or cubing them (e.g., thinking 1 m² = 100 cm² instead of 10,000 cm²). Time conversions are error-prone because they are not base-10."
+      "common_misconceptions": "Pupils commonly multiply when they should divide (or vice versa) — particularly converting from smaller to larger units. Area and volume conversions cause more difficulty because pupils apply linear conversion factors instead of squaring or cubing them (e.g., thinking 1 m² = 100 cm² instead of 10,000 cm²). Time conversions are error-prone because they are not base-10.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C057"
+      ]
     },
     {
       "concept_id": "MA-KS3-C048",
@@ -1161,7 +1382,16 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use maps and architectural plans as concrete starting points: measure distances on the map and use the scale to find real distances. Introduce scale factor as a multiplier — a scale of 1:50000 means every 1 cm on the map represents 50000 cm (500 m) in reality. Progress to using scale factors to enlarge and reduce shapes. Practise creating scale drawings with a given scale factor. Connect to ratio work: a scale of 1:5 is the same as the ratio 1:5. Include contexts where pupils must choose an appropriate scale for a drawing.",
       "key_vocabulary": "scale, scale factor, scale drawing, map scale, ratio, enlarge, reduce, proportion, representative fraction, actual size, model",
-      "common_misconceptions": "Pupils often confuse which way the scale factor works — multiplying by the scale factor to go from real to model instead of the reverse. When a map scale is given as 1:50000, pupils may not convert between centimetres on the map and metres or kilometres in reality. Some pupils apply the scale factor to areas without squaring it, or to volumes without cubing it."
+      "common_misconceptions": "Pupils often confuse which way the scale factor works — multiplying by the scale factor to go from real to model instead of the reverse. When a map scale is given as 1:50000, pupils may not convert between centimetres on the map and metres or kilometres in reality. Some pupils apply the scale factor to areas without squaring it, or to volumes without cubing it.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C049",
+        "MA-KS3-C053",
+        "MA-KS3-C054",
+        "MA-KS3-C055",
+        "MA-KS3-C057",
+        "MA-KS3-C093"
+      ]
     },
     {
       "concept_id": "MA-KS3-C049",
@@ -1173,7 +1403,16 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use bar models and fraction walls to visualise one quantity as a fraction of another. Start with straightforward examples: 'What fraction of 20 is 5?' (5/20 = ¼). Progress to improper fractions: 'Express 30 as a fraction of 20' (30/20 = 3/2). Connect to ratio — expressing one quantity as a fraction of another is closely related to finding the ratio between them. Include decimal and contextual examples: 'A 750 ml bottle is what fraction of a 2-litre bottle?' Connect to percentage work: expressing as a fraction is the first step towards expressing as a percentage.",
       "key_vocabulary": "fraction of, express, proper fraction, improper fraction, part, whole, compare, ratio, proportion, numerator, denominator",
-      "common_misconceptions": "Pupils often put the quantities the wrong way round — dividing the whole by the part instead of the part by the whole. When the answer is an improper fraction, pupils may think they have made an error because 'fractions should be less than 1'. Some pupils do not simplify their answers, leaving fractions in non-simplified form."
+      "common_misconceptions": "Pupils often put the quantities the wrong way round — dividing the whole by the part instead of the part by the whole. When the answer is an improper fraction, pupils may think they have made an error because 'fractions should be less than 1'. Some pupils do not simplify their answers, leaving fractions in non-simplified form.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C048",
+        "MA-KS3-C050",
+        "MA-KS3-C051",
+        "MA-KS3-C052",
+        "MA-KS3-C053",
+        "MA-KS3-C057"
+      ]
     },
     {
       "concept_id": "MA-KS3-C050",
@@ -1185,7 +1424,20 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce ratio through practical sharing activities: 'Share 20 counters between two people in the ratio 3:2.' Use bar models as the primary representation — each part of the ratio corresponds to one bar, and the total is divided into equal parts. Teach simplifying ratios using HCF, connecting to fraction simplification. Practise converting between ratio forms (part:part and part:whole) and between ratios and fractions. Include contexts: recipes, mixing paint colours, map scales. Emphasise that a ratio shows a multiplicative relationship, not additive.",
       "key_vocabulary": "ratio, ratio notation, simplify, simplest form, part, share, divide, proportion, equivalent ratio, unitary ratio, colon",
-      "common_misconceptions": "Pupils often treat ratio as additive — thinking that increasing a 2:3 recipe by 4 means adding 4 to each part (giving 6:7) rather than multiplying (giving 8:12). Some pupils confuse ratio and fraction, thinking 2:3 means ⅔ of the total rather than ⅖. When simplifying ratios, pupils may divide the parts by different numbers. Mixing up part:part and part:whole ratios is also very common."
+      "common_misconceptions": "Pupils often treat ratio as additive — thinking that increasing a 2:3 recipe by 4 means adding 4 to each part (giving 6:7) rather than multiplying (giving 8:12). Some pupils confuse ratio and fraction, thinking 2:3 means ⅔ of the total rather than ⅖. When simplifying ratios, pupils may divide the parts by different numbers. Mixing up part:part and part:whole ratios is also very common.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C049",
+        "MA-KS3-C051",
+        "MA-KS3-C052",
+        "MA-KS3-C053",
+        "MA-KS3-C054",
+        "MA-KS3-C055",
+        "MA-KS3-C056",
+        "MA-KS3-C057",
+        "MA-KS3-C093",
+        "MA-KS3-C094"
+      ]
     },
     {
       "concept_id": "MA-KS3-C051",
@@ -1197,7 +1449,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use bar models to represent the total quantity divided into parts according to the ratio. For part:part ratios, find the total number of parts first, then find the value of one part (total ÷ number of parts), then multiply to find each share. For part:whole ratios, the 'whole' bar is one of the given parts. Present multi-step problems: 'Orange squash is mixed in the ratio 1:4 concentrate to water. How much concentrate is needed for 2 litres of squash?' Progress to three-part ratios. Emphasise the unitary method — finding the value of one part first.",
       "key_vocabulary": "divide in a ratio, share, part, whole, unitary method, total parts, proportion, part:part ratio, part:whole ratio, allocate",
-      "common_misconceptions": "Pupils often divide the quantity by the ratio numbers directly (e.g., dividing £60 in ratio 2:3 as £60 ÷ 2 = £30 and £60 ÷ 3 = £20, giving £50 not £60). Some pupils add the ratio parts incorrectly. Others confuse part:part with part:whole — if told '¾ are girls', they may set up a ratio of 3:4 (girls:total) instead of 3:1 (girls:boys)."
+      "common_misconceptions": "Pupils often divide the quantity by the ratio numbers directly (e.g., dividing £60 in ratio 2:3 as £60 ÷ 2 = £30 and £60 ÷ 3 = £20, giving £50 not £60). Some pupils add the ratio parts incorrectly. Others confuse part:part with part:whole — if told '¾ are girls', they may set up a ratio of 3:4 (girls:total) instead of 3:1 (girls:boys).",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C052",
@@ -1209,7 +1463,16 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Contrast additive and multiplicative relationships using side-by-side examples: 'If I add 3 to the length, I add 3 to the width' (additive) versus 'If I double the length, I double the width' (multiplicative). Show that multiplicative relationships can be expressed as ratios (the ratio stays constant) or as fractions (one quantity is always the same fraction of the other). Use double number lines and ratio tables to represent these relationships. Connect to direct proportion — when two quantities have a constant multiplicative relationship, they are directly proportional.",
       "key_vocabulary": "multiplicative relationship, ratio, fraction, scale factor, constant, proportional, additive, multiplier, equivalence, double number line",
-      "common_misconceptions": "The fundamental misconception is applying additive reasoning to multiplicative situations. For example, when told that 3 pencils cost 45p, pupils may calculate 5 pencils as 45p + 30p = 75p (adding 2 × 15p) rather than 5 × 15p = 75p. Some pupils cannot distinguish between situations requiring additive versus multiplicative reasoning without explicit scaffolding."
+      "common_misconceptions": "The fundamental misconception is applying additive reasoning to multiplicative situations. For example, when told that 3 pencils cost 45p, pupils may calculate 5 pencils as 45p + 30p = 75p (adding 2 × 15p) rather than 5 × 15p = 75p. Some pupils cannot distinguish between situations requiring additive versus multiplicative reasoning without explicit scaffolding.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C049",
+        "MA-KS3-C050",
+        "MA-KS3-C053",
+        "MA-KS3-C055",
+        "MA-KS3-C056",
+        "MA-KS3-C094"
+      ]
     },
     {
       "concept_id": "MA-KS3-C053",
@@ -1221,7 +1484,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use concrete examples to show the same relationship expressed as a ratio and as a fraction: 'The ratio of blue to red counters is 2:3' means '⅖ of the counters are blue and ⅗ are red'. Use conversion exercises where pupils move between the representations. Show that the relationship can also be expressed as a linear function: if b:r = 2:3, then b = ⅔r. Plot this function on a graph to show the proportional relationship visually. Include percentage conversions as a third representation of the same relationship.",
       "key_vocabulary": "ratio, fraction, proportion, linear function, equivalent, convert, relationship, part, whole, graph, gradient, direct proportion",
-      "common_misconceptions": "Pupils often struggle to convert between ratio and fraction because they confuse part:part ratio with part:whole fraction. For a ratio 2:3, pupils may write the fraction as ⅔ (which gives the relationship between the parts) rather than ⅖ or ⅗ (which give the part-to-whole fractions). The connection to linear functions is new and abstract — pupils may not see why y = ⅔x represents the same relationship as 2:3."
+      "common_misconceptions": "Pupils often struggle to convert between ratio and fraction because they confuse part:part ratio with part:whole fraction. For a ratio 2:3, pupils may write the fraction as ⅔ (which gives the relationship between the parts) rather than ⅖ or ⅗ (which give the part-to-whole fractions). The connection to linear functions is new and abstract — pupils may not see why y = ⅔x represents the same relationship as 2:3.",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C054",
@@ -1233,7 +1498,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach percentage increase and decrease using the multiplier method: a 15% increase means multiplying by 1.15, a 15% decrease means multiplying by 0.85. Use bar models to show why: the original amount is 100%, so increasing by 15% gives 115% = 1.15. For reverse percentage problems ('After a 20% discount, the price is £48. What was the original price?'), emphasise that £48 represents 80% of the original, so the original is £48 ÷ 0.80. Include simple interest calculations in financial contexts.",
       "key_vocabulary": "percentage increase, percentage decrease, multiplier, original value, reverse percentage, simple interest, profit, loss, discount, VAT, appreciation, depreciation",
-      "common_misconceptions": "The most common error in reverse percentage problems is adding/subtracting the percentage from the new amount — for example, if a price after a 20% increase is £60, pupils calculate the original as £60 - 20% of £60 = £48, rather than £60 ÷ 1.20 = £50. Pupils also frequently confuse percentage increase with finding a percentage of a quantity."
+      "common_misconceptions": "The most common error in reverse percentage problems is adding/subtracting the percentage from the new amount — for example, if a price after a 20% increase is £60, pupils calculate the original as £60 - 20% of £60 = £48, rather than £60 ÷ 1.20 = £50. Pupils also frequently confuse percentage increase with finding a percentage of a quantity.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C055",
@@ -1245,7 +1512,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce through real-world contexts: currency exchange, recipe scaling, speed-distance-time. Use double number lines and ratio tables to organise proportional reasoning. Establish the unitary method: find the value for one unit, then scale to the required amount. Introduce the algebraic representation y = kx, where k is the constant of proportionality. Plot directly proportional relationships on a graph and note they always pass through the origin and are straight lines. Compare with examples that look similar but are not directly proportional.",
       "key_vocabulary": "direct proportion, directly proportional, constant of proportionality, unitary method, ratio table, y = kx, origin, linear, scaling, rate",
-      "common_misconceptions": "Pupils often assume any relationship between two variables is directly proportional. They may not check whether the graph passes through the origin, which is a requirement for direct proportion. Some pupils confuse direct proportion with a linear relationship that has a non-zero y-intercept (y = mx + c where c ≠ 0). The unitary method is sometimes applied where it is not valid."
+      "common_misconceptions": "Pupils often assume any relationship between two variables is directly proportional. They may not check whether the graph passes through the origin, which is a requirement for direct proportion. Some pupils confuse direct proportion with a linear relationship that has a non-zero y-intercept (y = mx + c where c ≠ 0). The unitary method is sometimes applied where it is not valid.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C056",
@@ -1257,7 +1526,15 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use practical contexts: if 2 workers take 12 hours to build a wall, 4 workers take 6 hours (as workers double, time halves). Contrast with direct proportion to highlight the difference: in direct proportion, both quantities increase together; in inverse proportion, as one increases the other decreases. Introduce the algebraic representation y = k/x and show the characteristic curve on a graph (a reciprocal curve). Use tables of values to check whether a relationship is inversely proportional by showing that the product xy remains constant.",
       "key_vocabulary": "inverse proportion, inversely proportional, reciprocal, constant product, y = k/x, hyperbola, as one increases the other decreases, rate",
-      "common_misconceptions": "Pupils often confuse inverse proportion with negative correlation or with simply decreasing values. Some pupils think inverse proportion means 'opposite' — that y = -kx is inverse proportion. The key diagnostic is whether the product xy is constant (inverse proportion) versus the ratio y/x being constant (direct proportion). Pupils may also struggle with the graphical representation, expecting a straight line."
+      "common_misconceptions": "Pupils often confuse inverse proportion with negative correlation or with simply decreasing values. Some pupils think inverse proportion means 'opposite' — that y = -kx is inverse proportion. The key diagnostic is whether the product xy is constant (inverse proportion) versus the ratio y/x being constant (direct proportion). Pupils may also struggle with the graphical representation, expecting a straight line.",
+      "teaching_weight": 4,
+      "co_teach_hints": [
+        "MA-KS3-C050",
+        "MA-KS3-C052",
+        "MA-KS3-C053",
+        "MA-KS3-C055",
+        "MA-KS3-C094"
+      ]
     },
     {
       "concept_id": "MA-KS3-C057",
@@ -1269,7 +1546,17 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce speed as the first compound unit: distance ÷ time. Use the formula triangle (distance, speed, time) to practise all three rearrangements. Progress to density (mass ÷ volume) and unit pricing (cost ÷ quantity). Emphasise units: speed in m/s or km/h, density in g/cm³ or kg/m³. Use real-world contexts: comparing prices per kilogram in a supermarket, calculating journey times. Practise converting between units of compound measures (e.g., km/h to m/s). Connect to ratio and proportion — compound units express rates.",
       "key_vocabulary": "compound unit, speed, distance, time, density, mass, volume, unit price, rate, per, metres per second, kilometres per hour, grams per cubic centimetre",
-      "common_misconceptions": "Pupils commonly confuse which quantities to divide when calculating compound measures — for example, calculating density as volume ÷ mass instead of mass ÷ volume. Unit conversions within compound measures cause additional errors. Some pupils cannot reconcile different units of speed (mixing up m/s and km/h). The idea that a compound unit combines two different measurements into one is conceptually challenging."
+      "common_misconceptions": "Pupils commonly confuse which quantities to divide when calculating compound measures — for example, calculating density as volume ÷ mass instead of mass ÷ volume. Unit conversions within compound measures cause additional errors. Some pupils cannot reconcile different units of speed (mixing up m/s and km/h). The idea that a compound unit combines two different measurements into one is conceptually challenging.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C047",
+        "MA-KS3-C048",
+        "MA-KS3-C049",
+        "MA-KS3-C050",
+        "MA-KS3-C051",
+        "MA-KS3-C055",
+        "MA-KS3-C093"
+      ]
     },
     {
       "concept_id": "MA-KS3-C058",
@@ -1281,7 +1568,15 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Build on Y6 area work by deriving formulae through practical investigation. For trapezia, demonstrate by combining two congruent trapezia into a parallelogram: the area of the trapezium is half the area of the parallelogram, giving A = ½(a + b)h. Use cutting and rearranging of paper shapes to prove formulae visually. Practise with compound shapes that can be divided into rectangles, triangles, parallelograms and trapezia. Include problems where pupils must identify the correct measurements to use (height, not slant height).",
       "key_vocabulary": "area, triangle, parallelogram, trapezium, base, height, perpendicular height, formula, derive, compound shape, decompose, rearrange",
-      "common_misconceptions": "The most common error is using slant height instead of perpendicular height in area calculations. Pupils often forget to halve when calculating triangle area. For trapezia, pupils may add the parallel sides but forget to halve, or may use only one parallel side. In compound shapes, pupils may double-count or miss regions. Using squared units (cm², m²) is often forgotten."
+      "common_misconceptions": "The most common error is using slant height instead of perpendicular height in area calculations. Pupils often forget to halve when calculating triangle area. For trapezia, pupils may add the parallel sides but forget to halve, or may use only one parallel side. In compound shapes, pupils may double-count or miss regions. Using squared units (cm², m²) is often forgotten.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C059",
+        "MA-KS3-C068",
+        "MA-KS3-C072",
+        "MA-KS3-C074",
+        "MA-KS3-C077"
+      ]
     },
     {
       "concept_id": "MA-KS3-C059",
@@ -1293,7 +1588,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Start with cuboids (Volume = length × width × height) and then generalise to prisms (Volume = cross-sectional area × length). Build physical prisms from cards or plastic to demonstrate that the cross-section is constant along the length. For cylinders, identify the cross-section as a circle, giving V = πr²h. Use practical estimation activities: 'How much water will this container hold?' Include problems requiring unit conversion (e.g., cm³ to litres). Derive the prism formula from first principles using cube-counting for cuboids.",
       "key_vocabulary": "volume, prism, cuboid, cylinder, cross-section, cross-sectional area, length, height, π, capacity, litres, cubic centimetres, cubic metres",
-      "common_misconceptions": "Pupils often confuse area and volume formulae, or use the wrong dimensions (e.g., using diameter instead of radius for cylinders). Some pupils think volume only applies to cuboids and do not recognise that all prisms have a constant cross-section. The distinction between volume (space inside) and surface area (total outside area) is frequently muddled. Forgetting to use cubic units is very common."
+      "common_misconceptions": "Pupils often confuse area and volume formulae, or use the wrong dimensions (e.g., using diameter instead of radius for cylinders). Some pupils think volume only applies to cuboids and do not recognise that all prisms have a constant cross-section. The distinction between volume (space inside) and surface area (total outside area) is frequently muddled. Forgetting to use cubic units is very common.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C060",
@@ -1305,7 +1602,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce π through practical measurement: pupils measure the circumference and diameter of circular objects and discover that C/d is always approximately 3.14. Derive the circumference formula C = πd = 2πr. For area, use the classic 'cut and rearrange a circle into a near-rectangle' demonstration to derive A = πr². Practise with radius and diameter given, ensuring pupils can convert between them. Progress to composite shapes involving semicircles, quarter circles and sectors. Use both exact (in terms of π) and approximate answers.",
       "key_vocabulary": "circle, radius, diameter, circumference, π, pi, area of a circle, semicircle, quarter circle, sector, arc, composite shape, exact answer",
-      "common_misconceptions": "Pupils frequently confuse circumference and area formulae, or use diameter in the area formula instead of radius. Forgetting to square the radius (writing πr instead of πr²) is very common. Some pupils think π is exactly 3.14 or 22/7, not understanding that these are approximations. When finding the perimeter of a semicircle, pupils often forget to add the diameter to the semicircular arc."
+      "common_misconceptions": "Pupils frequently confuse circumference and area formulae, or use diameter in the area formula instead of radius. Forgetting to square the radius (writing πr instead of πr²) is very common. Some pupils think π is exactly 3.14 or 22/7, not understanding that these are approximations. When finding the perimeter of a semicircle, pupils often forget to add the diameter to the semicircular arc.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C061",
@@ -1317,7 +1616,12 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Ensure pupils can use a ruler accurately to the nearest millimetre and a protractor to the nearest degree. Practise measuring angles from both the inner and outer scales of the protractor. Include scale drawing problems: 'Using a scale of 1 cm : 2 m, draw a floor plan of this room.' Teach the technique for drawing angles accurately: mark the vertex, align the baseline, read the correct scale. For interpreting scale drawings, practise extracting real measurements from given scales. Connect to map reading and technical drawing.",
       "key_vocabulary": "measure, draw, line segment, angle, protractor, ruler, degree, millimetre, scale drawing, scale, accurate, precision, perpendicular",
-      "common_misconceptions": "The most common protractor error is reading from the wrong scale (inner versus outer), producing a supplementary angle. Pupils often do not place the centre of the protractor precisely on the vertex. When drawing to a scale, pupils may add the scale rather than multiply. Some pupils think angles are larger if the lines are drawn longer, confusing the angle's measure with the line length."
+      "common_misconceptions": "The most common protractor error is reading from the wrong scale (inner versus outer), producing a supplementary angle. Pupils often do not place the centre of the protractor precisely on the vertex. When drawing to a scale, pupils may add the scale rather than multiply. Some pupils think angles are larger if the lines are drawn longer, confusing the angle's measure with the line length.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C062",
+        "MA-KS3-C074"
+      ]
     },
     {
       "concept_id": "MA-KS3-C062",
@@ -1329,7 +1633,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach each standard construction as a recipe, but ensure pupils understand why it works. For the perpendicular bisector: open the compass to more than half the line segment, draw arcs from both endpoints, join the intersection points. Explain why this works (all points equidistant from both endpoints lie on the perpendicular bisector). For the angle bisector: draw an arc from the vertex, then arcs from the points where this arc intersects the arms, then join the vertex to the intersection of these arcs. Use constructions to solve loci problems.",
       "key_vocabulary": "construction, perpendicular bisector, angle bisector, compass, arc, straightedge, locus, loci, equidistant, perpendicular, bisect",
-      "common_misconceptions": "Pupils often use inaccurate compass settings, producing constructions that look correct but are not precise. Some pupils measure with a protractor instead of constructing with a compass, not understanding that geometric construction means using only compass and straightedge. Others forget that construction arcs should be left visible as evidence of the method used."
+      "common_misconceptions": "Pupils often use inaccurate compass settings, producing constructions that look correct but are not precise. Some pupils measure with a protractor instead of constructing with a compass, not understanding that geometric construction means using only compass and straightedge. Others forget that construction arcs should be left visible as evidence of the method used.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C063",
@@ -1341,7 +1647,20 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Build a glossary of geometric terms with precise definitions, diagrams and examples. Distinguish carefully between terms that are commonly confused: line (infinite) versus line segment (finite with endpoints), parallel (equidistant, never meeting) versus perpendicular (meeting at right angles). Use matching and sorting activities where pupils classify shapes by their properties. Introduce notation: arrows for parallel lines, right angle symbols, tick marks for equal sides. Connect to the language used in geometric proofs and constructions.",
       "key_vocabulary": "point, line, line segment, ray, parallel, perpendicular, right angle, regular polygon, irregular polygon, vertex, edge, face, symmetry, notation",
-      "common_misconceptions": "Pupils often use 'line' when they mean 'line segment', not appreciating that a mathematical line extends infinitely. Some confuse perpendicular with parallel, or think perpendicular lines must be horizontal and vertical. The distinction between regular and irregular polygons is sometimes based on visual appearance rather than the formal definition (all sides equal AND all angles equal)."
+      "common_misconceptions": "Pupils often use 'line' when they mean 'line segment', not appreciating that a mathematical line extends infinitely. Some confuse perpendicular with parallel, or think perpendicular lines must be horizontal and vertical. The distinction between regular and irregular polygons is sometimes based on visual appearance rather than the formal definition (all sides equal AND all angles equal).",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C062",
+        "MA-KS3-C064",
+        "MA-KS3-C066",
+        "MA-KS3-C068",
+        "MA-KS3-C069",
+        "MA-KS3-C070",
+        "MA-KS3-C071",
+        "MA-KS3-C072",
+        "MA-KS3-C074",
+        "MA-KS3-C076"
+      ]
     },
     {
       "concept_id": "MA-KS3-C064",
@@ -1353,7 +1672,17 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce the convention that in triangle ABC, side a is opposite angle A, side b is opposite angle B, and side c is opposite angle C. Use consistent labelling in all triangle work so pupils internalise the convention. Practise labelling triangles from given information and extracting information from labelled diagrams. Connect to congruence criteria (SAS, ASA, SSS, RHS) where precise labelling is essential. This convention becomes critical for trigonometry and the sine/cosine rules at GCSE.",
       "key_vocabulary": "triangle ABC, vertex, side, angle, opposite, adjacent, labelling convention, capital letter, lowercase letter, notation",
-      "common_misconceptions": "Pupils often forget which letter refers to a side and which to an angle, or they label vertices but do not know the convention for naming opposite sides. Some pupils think the labelling is arbitrary and do not maintain consistency. Others confuse 'opposite' and 'adjacent' sides, which becomes problematic when trigonometric ratios are introduced."
+      "common_misconceptions": "Pupils often forget which letter refers to a side and which to an angle, or they label vertices but do not know the convention for naming opposite sides. Some pupils think the labelling is arbitrary and do not maintain consistency. Others confuse 'opposite' and 'adjacent' sides, which becomes problematic when trigonometric ratios are introduced.",
+      "teaching_weight": 1,
+      "co_teach_hints": [
+        "MA-KS3-C063",
+        "MA-KS3-C065",
+        "MA-KS3-C068",
+        "MA-KS3-C071",
+        "MA-KS3-C073",
+        "MA-KS3-C074",
+        "MA-KS3-C076"
+      ]
     },
     {
       "concept_id": "MA-KS3-C065",
@@ -1365,7 +1694,17 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach each congruence criterion (SSS, SAS, ASA, RHS) with hands-on construction: 'If I give you three side lengths, can you construct a unique triangle?' (Yes — SSS.) 'If I give you two sides and the included angle, can you?' (Yes — SAS.) Use compasses and protractors to physically construct triangles from given information. Explain why SSA is not a valid criterion by constructing the ambiguous case. Connect to proof: congruence criteria allow us to prove that two triangles are identical without measuring every side and angle.",
       "key_vocabulary": "congruent, congruence, SSS, SAS, ASA, RHS, identical, corresponding sides, corresponding angles, criterion, prove, unique triangle",
-      "common_misconceptions": "Pupils often confuse congruence with similarity — thinking shapes that look the same size are congruent regardless of angles, or vice versa. The ambiguous case (SSA) is commonly cited as a valid congruence criterion. Some pupils think that matching two sides and one angle is always sufficient for congruence, not realising the angle must be included (SAS) or opposite the longer side."
+      "common_misconceptions": "Pupils often confuse congruence with similarity — thinking shapes that look the same size are congruent regardless of angles, or vice versa. The ambiguous case (SSA) is commonly cited as a valid congruence criterion. Some pupils think that matching two sides and one angle is always sufficient for congruence, not realising the angle must be included (SAS) or opposite the longer side.",
+      "teaching_weight": 5,
+      "co_teach_hints": [
+        "MA-KS3-C064",
+        "MA-KS3-C068",
+        "MA-KS3-C071",
+        "MA-KS3-C072",
+        "MA-KS3-C073",
+        "MA-KS3-C074",
+        "MA-KS3-C076"
+      ]
     },
     {
       "concept_id": "MA-KS3-C066",
@@ -1377,7 +1716,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use classification activities: sort shapes by their properties rather than appearance. For triangles, classify by sides (equilateral, isosceles, scalene) and by angles (acute, right, obtuse). For quadrilaterals, use a hierarchical classification showing that a square is a special rectangle, which is a special parallelogram. Introduce circle properties: radius, diameter, circumference, chord, tangent, arc, sector, segment. Use dynamic geometry software to explore properties — what stays the same when you drag a vertex?",
       "key_vocabulary": "triangle, quadrilateral, parallelogram, rhombus, trapezium, kite, regular, irregular, equilateral, isosceles, scalene, circle, chord, tangent, arc, sector, segment",
-      "common_misconceptions": "Pupils often think that a square is not a rectangle, not understanding the hierarchical classification of quadrilaterals. Some pupils classify shapes by appearance only — thinking a 'thin' rhombus is not a parallelogram. Others confuse chord and diameter, or arc and sector. The idea that a circle has no edges or vertices (it is a curve, not a polygon) is also often misunderstood."
+      "common_misconceptions": "Pupils often think that a square is not a rectangle, not understanding the hierarchical classification of quadrilaterals. Some pupils classify shapes by appearance only — thinking a 'thin' rhombus is not a parallelogram. Others confuse chord and diameter, or arc and sector. The idea that a circle has no edges or vertices (it is a curve, not a polygon) is also often misunderstood.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C067",
@@ -1389,7 +1730,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use tracing paper and coordinate grids as practical tools for performing transformations. For translations, describe movement using column vectors. For reflections, identify the mirror line and use perpendicular distances. For rotations, specify centre, angle and direction. Practise describing transformations that have been performed as well as performing them from descriptions. Use Desmos or GeoGebra to explore transformations dynamically. Emphasise that translations, reflections and rotations are isometries — the shape and size are preserved.",
       "key_vocabulary": "transformation, translation, reflection, rotation, mirror line, centre of rotation, angle of rotation, clockwise, anti-clockwise, vector, image, object, isometry, congruent",
-      "common_misconceptions": "For reflections, pupils often reflect in the wrong direction or fail to maintain perpendicular distances from the mirror line. For rotations, pupils frequently rotate by the wrong angle or in the wrong direction (clockwise vs anti-clockwise). Some pupils confuse transformation types — performing a rotation when asked for a reflection. When describing transformations, pupils often omit key information (direction of rotation, equation of mirror line)."
+      "common_misconceptions": "For reflections, pupils often reflect in the wrong direction or fail to maintain perpendicular distances from the mirror line. For rotations, pupils frequently rotate by the wrong angle or in the wrong direction (clockwise vs anti-clockwise). Some pupils confuse transformation types — performing a rotation when asked for a reflection. When describing transformations, pupils often omit key information (direction of rotation, equation of mirror line).",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C068",
@@ -1401,7 +1744,24 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Combine the congruence criteria (SSS, SAS, ASA, RHS) with practical construction. Give pupils specifications (e.g., two sides of 5 cm and 7 cm with an included angle of 40°) and ask them to construct the triangle using compass and protractor. Verify congruence by cutting out and overlaying. Progress to identifying which criteria apply in given problems and using congruence to prove properties of shapes. Connect to symmetry: when a shape has a line of symmetry, it can be divided into two congruent triangles.",
       "key_vocabulary": "congruent triangles, construct, compass, protractor, SSS, SAS, ASA, RHS, corresponding, identical, overlay, verify, prove",
-      "common_misconceptions": "Pupils often struggle to identify which congruence criterion applies in a given problem, especially when the information is presented in a diagram rather than a list. Some pupils attempt to prove congruence by measuring rather than by citing a criterion. The distinction between 'knowing enough to construct uniquely' and 'knowing enough to prove congruence' is subtle."
+      "common_misconceptions": "Pupils often struggle to identify which congruence criterion applies in a given problem, especially when the information is presented in a diagram rather than a list. Some pupils attempt to prove congruence by measuring rather than by citing a criterion. The distinction between 'knowing enough to construct uniquely' and 'knowing enough to prove congruence' is subtle.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C058",
+        "MA-KS3-C062",
+        "MA-KS3-C063",
+        "MA-KS3-C064",
+        "MA-KS3-C065",
+        "MA-KS3-C066",
+        "MA-KS3-C069",
+        "MA-KS3-C070",
+        "MA-KS3-C071",
+        "MA-KS3-C072",
+        "MA-KS3-C073",
+        "MA-KS3-C074",
+        "MA-KS3-C076",
+        "MA-KS3-C077"
+      ]
     },
     {
       "concept_id": "MA-KS3-C069",
@@ -1413,7 +1773,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce enlargement as a transformation that changes size but preserves shape. Use coordinate grids: enlarge a shape by scale factor 2 from a given centre, with each vertex moving twice as far from the centre. Practise with integer scale factors, then fractional scale factors (which produce smaller similar shapes), then negative scale factors (which also invert). Use ray diagrams connecting the centre of enlargement to each vertex. Emphasise that in similar shapes, corresponding angles are equal and corresponding sides are in the same ratio.",
       "key_vocabulary": "similar, enlargement, scale factor, centre of enlargement, corresponding sides, corresponding angles, ratio, proportion, image, object, ray diagram",
-      "common_misconceptions": "Pupils often think enlargement always makes shapes bigger, not recognising that fractional scale factors produce smaller shapes. Some pupils enlarge from the wrong centre, or forget to use the centre at all (translating instead of enlarging). The relationship between linear scale factor, area scale factor (k²) and volume scale factor (k³) is often not understood — pupils may apply the linear factor to areas."
+      "common_misconceptions": "Pupils often think enlargement always makes shapes bigger, not recognising that fractional scale factors produce smaller shapes. Some pupils enlarge from the wrong centre, or forget to use the centre at all (translating instead of enlarging). The relationship between linear scale factor, area scale factor (k²) and volume scale factor (k³) is often not understood — pupils may apply the linear factor to areas.",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C070",
@@ -1425,7 +1787,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Start with practical demonstrations: fold a straight line to show angles on a straight line sum to 180°, spin a pencil at a point to show angles at a point sum to 360°, cross two lines to show vertically opposite angles are equal. Progress from measuring to calculating missing angles using these properties. Use multi-step problems where several angle facts must be combined. Emphasise logical reasoning: state the property used at each step, not just the numerical answer. Introduce formal justification language: 'because angles on a straight line sum to 180°'.",
       "key_vocabulary": "angle, degrees, straight line, point, vertically opposite, supplementary, complementary, full turn, right angle, acute, obtuse, reflex, justify",
-      "common_misconceptions": "Pupils frequently assume that any two angles that look similar are vertically opposite, without checking that they are formed by two intersecting lines. Some pupils confuse 'angles on a straight line' with 'angles at a point'. Others misidentify angles in complex diagrams, calculating the wrong angle. The habit of justifying with a reason ('because...') is often absent — pupils give numbers without stating the property used."
+      "common_misconceptions": "Pupils frequently assume that any two angles that look similar are vertically opposite, without checking that they are formed by two intersecting lines. Some pupils confuse 'angles on a straight line' with 'angles at a point'. Others misidentify angles in complex diagrams, calculating the wrong angle. The habit of justifying with a reason ('because...') is often absent — pupils give numbers without stating the property used.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C071",
@@ -1437,7 +1801,21 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Use physical models: draw two parallel lines with a transversal and ask pupils to measure angles to discover the relationships. Introduce alternate angles (Z-angles), corresponding angles (F-angles) and co-interior angles (C-angles) using the letter mnemonics to help identification. Practise identifying these angle pairs in complex diagrams with multiple parallel lines and transversals. Use the properties to calculate missing angles, always requiring pupils to state which property they are using. Connect to geometric proof: use parallel line properties to prove the angle sum of a triangle.",
       "key_vocabulary": "parallel lines, transversal, alternate angles, corresponding angles, co-interior angles, allied angles, Z-angles, F-angles, C-angles, equal, supplementary",
-      "common_misconceptions": "Pupils often identify angle pairs incorrectly — calling co-interior angles 'alternate' or vice versa. Some pupils apply parallel line angle properties to non-parallel lines. A common error is assuming that alternate angles are supplementary rather than equal, or that corresponding angles are supplementary. When diagrams become complex with multiple intersecting lines, pupils lose track of which lines are parallel."
+      "common_misconceptions": "Pupils often identify angle pairs incorrectly — calling co-interior angles 'alternate' or vice versa. Some pupils apply parallel line angle properties to non-parallel lines. A common error is assuming that alternate angles are supplementary rather than equal, or that corresponding angles are supplementary. When diagrams become complex with multiple intersecting lines, pupils lose track of which lines are parallel.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C063",
+        "MA-KS3-C064",
+        "MA-KS3-C065",
+        "MA-KS3-C068",
+        "MA-KS3-C069",
+        "MA-KS3-C070",
+        "MA-KS3-C072",
+        "MA-KS3-C073",
+        "MA-KS3-C074",
+        "MA-KS3-C076",
+        "MA-KS3-C077"
+      ]
     },
     {
       "concept_id": "MA-KS3-C072",
@@ -1449,7 +1827,19 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Demonstrate the angle sum of a triangle by tearing off the three corners of a triangle and rearranging them to form a straight line (180°). Follow up with a formal proof using parallel lines and alternate angles. Use the result to find missing angles in triangles, and extend to find exterior angles. Combine with properties of isosceles and equilateral triangles (where angle properties reduce the unknowns). Progress to problems requiring the angle sum together with other angle facts. Use this result as the basis for deriving the angle sum of any polygon.",
       "key_vocabulary": "triangle, angle sum, 180 degrees, interior angle, exterior angle, isosceles, equilateral, scalene, missing angle, proof, derive",
-      "common_misconceptions": "Some pupils think the angle sum of a triangle is 360° (confusing with angles at a point). In isosceles triangles, pupils often assume the unequal angle is one of the base angles rather than the apex, or vice versa. When finding exterior angles, pupils may not recognise that an exterior angle equals the sum of the two non-adjacent interior angles."
+      "common_misconceptions": "Some pupils think the angle sum of a triangle is 360° (confusing with angles at a point). In isosceles triangles, pupils often assume the unequal angle is one of the base angles rather than the apex, or vice versa. When finding exterior angles, pupils may not recognise that an exterior angle equals the sum of the two non-adjacent interior angles.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C058",
+        "MA-KS3-C063",
+        "MA-KS3-C065",
+        "MA-KS3-C066",
+        "MA-KS3-C068",
+        "MA-KS3-C070",
+        "MA-KS3-C071",
+        "MA-KS3-C073",
+        "MA-KS3-C074"
+      ]
     },
     {
       "concept_id": "MA-KS3-C073",
@@ -1461,7 +1851,17 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Derive the angle sum of a quadrilateral by dividing it into two triangles (2 × 180° = 360°). Extend to any polygon by dividing into triangles from one vertex: an n-sided polygon gives (n - 2) triangles, so the angle sum is (n - 2) × 180°. For regular polygons, divide the total angle sum equally: each interior angle = (n - 2) × 180° / n. Use tables: list polygons from triangle to decagon with their angle sums. Practise working backwards — given an interior angle, find the number of sides. Connect to tessellation: which regular polygons tessellate?",
       "key_vocabulary": "polygon, interior angle, exterior angle, angle sum, regular polygon, pentagon, hexagon, heptagon, octagon, nonagon, decagon, tessellate, formula",
-      "common_misconceptions": "Pupils often apply the triangle angle sum (180°) to all polygons, not adjusting for the number of sides. When using the formula (n-2) × 180°, pupils may substitute incorrectly (using the number of triangles instead of the number of sides). For regular polygons, pupils may confuse interior and exterior angles. Some pupils think that interior angle + exterior angle = 360° rather than 180°."
+      "common_misconceptions": "Pupils often apply the triangle angle sum (180°) to all polygons, not adjusting for the number of sides. When using the formula (n-2) × 180°, pupils may substitute incorrectly (using the number of triangles instead of the number of sides). For regular polygons, pupils may confuse interior and exterior angles. Some pupils think that interior angle + exterior angle = 360° rather than 180°.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C064",
+        "MA-KS3-C065",
+        "MA-KS3-C068",
+        "MA-KS3-C071",
+        "MA-KS3-C072",
+        "MA-KS3-C074",
+        "MA-KS3-C076"
+      ]
     },
     {
       "concept_id": "MA-KS3-C074",
@@ -1473,7 +1873,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce Pythagoras' Theorem through investigation: draw right-angled triangles and measure the squares on each side to discover that a² + b² = c² where c is the hypotenuse. Use visual proofs (rearrangement proofs) to show why this works. Practise finding the hypotenuse given two shorter sides, then rearrange to find a shorter side given the hypotenuse. Include contextual problems: distances on a coordinate grid, lengths of diagonals, real-world applications (ladder against a wall). Emphasise identifying the hypotenuse (always opposite the right angle) before applying the formula.",
       "key_vocabulary": "Pythagoras' Theorem, hypotenuse, right-angled triangle, square, square root, a² + b² = c², Pythagorean triple, diagonal, distance",
-      "common_misconceptions": "The most common error is adding all three squares (a² + b² + c²) or squaring the sum of the sides instead of summing the squares. Pupils often fail to identify the hypotenuse correctly, especially when the triangle is not oriented with the hypotenuse horizontal. When finding a shorter side, pupils may add the squares instead of subtracting. Some pupils forget to take the square root as the final step, giving the answer as a² rather than a."
+      "common_misconceptions": "The most common error is adding all three squares (a² + b² + c²) or squaring the sum of the sides instead of summing the squares. Pupils often fail to identify the hypotenuse correctly, especially when the triangle is not oriented with the hypotenuse horizontal. When finding a shorter side, pupils may add the squares instead of subtracting. Some pupils forget to take the square root as the final step, giving the answer as a² rather than a.",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C075",
@@ -1485,7 +1887,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Start with structured arguments where the logical steps are given but pupils must fill in the reasons. Progress to semi-structured proofs where some steps are given. Model the structure of a formal proof: state what is given, state what is to be proved, write each step with justification. Use angle-chasing problems (finding all angles in a diagram using known properties) as a precursor to proof. Encourage pupils to explain their reasoning verbally before writing it formally. Include proofs of familiar results (angle sum of a triangle, exterior angle theorem) to show how proof establishes certainty.",
       "key_vocabulary": "proof, prove, given, therefore, because, hence, it follows that, deduce, justify, reason, statement, conclusion, QED, counter-example",
-      "common_misconceptions": "Pupils often think that checking specific examples constitutes proof. Others confuse a proof with a demonstration or an explanation. The distinction between 'I checked 10 examples and it worked' (not proof) and 'I showed it must always work using logical reasoning' (proof) is fundamental. Some pupils write calculations without justification, presenting the answer but not the argument."
+      "common_misconceptions": "Pupils often think that checking specific examples constitutes proof. Others confuse a proof with a demonstration or an explanation. The distinction between 'I checked 10 examples and it worked' (not proof) and 'I showed it must always work using logical reasoning' (proof) is fundamental. Some pupils write calculations without justification, presenting the answer but not the argument.",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C076",
@@ -1497,7 +1901,20 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce through the context of right-angled triangles: label the sides as opposite, adjacent and hypotenuse relative to a given angle. Define the three ratios: sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent. Use SOHCAHTOA as a memory aid. Practise identifying which ratio to use for a given problem. Start with finding a side given an angle and one side, then progress to finding an angle given two sides (using inverse trig functions on a calculator). Connect to similar triangles — the ratios are the same for all similar right-angled triangles with the same angle.",
       "key_vocabulary": "trigonometry, sine, cosine, tangent, SOHCAHTOA, opposite, adjacent, hypotenuse, angle, ratio, inverse, sin⁻¹, cos⁻¹, tan⁻¹",
-      "common_misconceptions": "Pupils frequently mislabel the sides, confusing opposite and adjacent. Calculator errors are common: forgetting to set the calculator to degrees mode, or using sin instead of sin⁻¹ when finding an angle. Some pupils apply trigonometric ratios to non-right-angled triangles without adjustment. Others confuse when to use Pythagoras (two sides, finding the third) with when to use trigonometry (involving an angle)."
+      "common_misconceptions": "Pupils frequently mislabel the sides, confusing opposite and adjacent. Calculator errors are common: forgetting to set the calculator to degrees mode, or using sin instead of sin⁻¹ when finding an angle. Some pupils apply trigonometric ratios to non-right-angled triangles without adjustment. Others confuse when to use Pythagoras (two sides, finding the third) with when to use trigonometry (involving an angle).",
+      "teaching_weight": 5,
+      "co_teach_hints": [
+        "MA-KS3-C063",
+        "MA-KS3-C064",
+        "MA-KS3-C065",
+        "MA-KS3-C066",
+        "MA-KS3-C068",
+        "MA-KS3-C069",
+        "MA-KS3-C070",
+        "MA-KS3-C071",
+        "MA-KS3-C073",
+        "MA-KS3-C074"
+      ]
     },
     {
       "concept_id": "MA-KS3-C077",
@@ -1509,7 +1926,14 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Build and examine physical 3D models: cubes, cuboids, triangular prisms, cylinders, pyramids, cones and spheres. Count and record faces, edges and vertices systematically, and verify Euler's formula (V - E + F = 2) for polyhedra. Use cross-section investigations: slice 3D shapes and predict the 2D cross-section. Draw nets of 3D shapes and identify which nets fold to make which shapes. Solve problems involving surface area by summing the areas of all faces. Connect to volume work: understanding 3D properties supports correct formula selection.",
       "key_vocabulary": "face, edge, vertex, vertices, prism, pyramid, cylinder, cone, sphere, cuboid, net, cross-section, surface area, Euler's formula, polyhedron",
-      "common_misconceptions": "Pupils often confuse faces, edges and vertices — particularly for curved shapes like cylinders (2 faces, 0 vertices, 0 edges in some definitions) and cones. When drawing nets, pupils may include overlapping faces or omit faces. Some pupils think all 3D shapes have flat faces and do not account for curved surfaces when calculating surface area."
+      "common_misconceptions": "Pupils often confuse faces, edges and vertices — particularly for curved shapes like cylinders (2 faces, 0 vertices, 0 edges in some definitions) and cones. When drawing nets, pupils may include overlapping faces or omit faces. Some pupils think all 3D shapes have flat faces and do not account for curved surfaces when calculating surface area.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C058",
+        "MA-KS3-C059",
+        "MA-KS3-C068",
+        "MA-KS3-C071"
+      ]
     },
     {
       "concept_id": "MA-KS3-C078",
@@ -1521,7 +1945,11 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Begin with practical experiments: rolling dice, spinning spinners, drawing counters from a bag. Record results and calculate experimental (relative frequency) probabilities. Place events on the 0-1 probability scale: impossible (0), certain (1), equally likely (0.5). Compare experimental results with theoretical predictions and discuss why they may differ. Investigate whether experiments are 'fair' by comparing observed frequencies with expected frequencies. Increase the number of trials to show that experimental probability approaches theoretical probability over time.",
       "key_vocabulary": "probability, experiment, trial, outcome, frequency, relative frequency, expected, fair, biased, random, equally likely, impossible, certain, probability scale, event",
-      "common_misconceptions": "Pupils often believe the 'gambler's fallacy' — that if a coin has landed heads five times, tails is 'due'. Some think probability predicts individual outcomes rather than long-run frequencies. The distinction between 'equally likely' and 'possible' is often blurred — pupils may assign equal probabilities to non-equal outcomes (e.g., rolling an even number vs rolling a 1). Some pupils think probability cannot be expressed as a decimal or fraction."
+      "common_misconceptions": "Pupils often believe the 'gambler's fallacy' — that if a coin has landed heads five times, tails is 'due'. Some think probability predicts individual outcomes rather than long-run frequencies. The distinction between 'equally likely' and 'possible' is often blurred — pupils may assign equal probabilities to non-equal outcomes (e.g., rolling an even number vs rolling a 1). Some pupils think probability cannot be expressed as a decimal or fraction.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C081"
+      ]
     },
     {
       "concept_id": "MA-KS3-C079",
@@ -1533,7 +1961,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Demonstrate with a simple example: for a fair die, list all outcomes {1, 2, 3, 4, 5, 6} and their probabilities (each 1/6). Show that 1/6 + 1/6 + 1/6 + 1/6 + 1/6 + 1/6 = 1. Extend to other situations: probabilities of all colours of counter in a bag summing to 1. Use this property to find the probability of an event not happening: P(not A) = 1 - P(A). Apply to problems: 'The probability of rain is 0.3. What is the probability of no rain?' Include scenarios with more than two outcomes and verify that all probabilities sum to 1.",
       "key_vocabulary": "probability, outcome, sum to 1, complement, P(not A), exhaustive, mutually exclusive, event, certain, total probability",
-      "common_misconceptions": "Pupils sometimes think probabilities should sum to 100 (confusing with percentages) rather than 1. Others forget that for the complement rule to work, the events must be exhaustive. Some pupils apply P(not A) = 1 - P(A) but then subtract the wrong probability. The idea that probabilities must sum to exactly 1 (not approximately) is sometimes lost when working with rounded decimals."
+      "common_misconceptions": "Pupils sometimes think probabilities should sum to 100 (confusing with percentages) rather than 1. Others forget that for the complement rule to work, the events must be exhaustive. Some pupils apply P(not A) = 1 - P(A) but then subtract the wrong probability. The idea that probabilities must sum to exactly 1 (not approximately) is sometimes lost when working with rounded decimals.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C080",
@@ -1545,7 +1975,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Start with two-way tables for combined events: rolling two dice, picking a card and flipping a coin. Show how to list all outcomes systematically to form a sample space diagram. Introduce Venn diagrams for classifying items by two properties: use overlapping circles and practise placing items in the correct region. Teach the notation for union (∪) and intersection (∩) using Venn diagrams. Use tree diagrams for sequential events. Emphasise the importance of being systematic — not missing outcomes or double-counting.",
       "key_vocabulary": "sample space, Venn diagram, two-way table, union, intersection, set, enumerate, systematic, combined events, outcome, element, universal set, complement",
-      "common_misconceptions": "In Venn diagrams, pupils often place items in the intersection that belong in only one set. When listing outcomes for combined events, pupils frequently miss some combinations or list some twice. The distinction between union (OR — either or both) and intersection (AND — both) is commonly confused. Some pupils think the intersection should be counted twice in probability calculations."
+      "common_misconceptions": "In Venn diagrams, pupils often place items in the intersection that belong in only one set. When listing outcomes for combined events, pupils frequently miss some combinations or list some twice. The distinction between union (OR — either or both) and intersection (AND — both) is commonly confused. Some pupils think the intersection should be counted twice in probability calculations.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C081",
@@ -1557,7 +1989,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Build sample space diagrams for combined events (e.g., a 6×6 grid for two dice) and use them to calculate theoretical probabilities by counting favourable outcomes divided by total outcomes. Introduce tree diagrams for sequential events, multiplying along branches for AND and adding between branches for OR. Discuss mutually exclusive events (cannot happen simultaneously) and independent events (one does not affect the other). Compare theoretical probabilities with experimental results from class experiments.",
       "key_vocabulary": "theoretical probability, sample space, combined events, mutually exclusive, independent, tree diagram, multiply, add, favourable outcomes, total outcomes, P(A and B), P(A or B)",
-      "common_misconceptions": "Pupils often add probabilities when they should multiply (for independent events) and vice versa. The distinction between 'and' (multiply) and 'or' (add) probabilities is one of the most error-prone areas in mathematics. Some pupils assume all events are equally likely without checking. When using tree diagrams, pupils may not recognise that probabilities on branches from the same node must sum to 1."
+      "common_misconceptions": "Pupils often add probabilities when they should multiply (for independent events) and vice versa. The distinction between 'and' (multiply) and 'or' (add) probabilities is one of the most error-prone areas in mathematics. Some pupils assume all events are equally likely without checking. When using tree diagrams, pupils may not recognise that probabilities on branches from the same node must sum to 1.",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C082",
@@ -1569,7 +2003,11 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach pupils to select appropriate representations for different types of data: bar charts for categorical data, histograms for continuous data, line graphs for time series. Compare distributions using back-to-back stem-and-leaf diagrams or comparative bar charts. Focus on interpretation: what does the distribution tell us about the context? Practise describing distributions using measures of central tendency and spread. Include real-world datasets where pupils must choose how to represent and describe the data. Emphasise that different representations can tell different stories about the same data.",
       "key_vocabulary": "distribution, data, represent, compare, bar chart, histogram, line graph, stem-and-leaf, frequency, skew, symmetrical, spread, central tendency, categorical, continuous",
-      "common_misconceptions": "Pupils often use bar charts for continuous data when a histogram would be more appropriate. The distinction between discrete and continuous data affects the choice of representation, but pupils commonly ignore this. When comparing distributions, pupils may only compare averages without considering spread. Some pupils think taller bars always mean 'better' without considering what the data represents."
+      "common_misconceptions": "Pupils often use bar charts for continuous data when a histogram would be more appropriate. The distinction between discrete and continuous data affects the choice of representation, but pupils commonly ignore this. When comparing distributions, pupils may only compare averages without considering spread. Some pupils think taller bars always mean 'better' without considering what the data represents.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C083"
+      ]
     },
     {
       "concept_id": "MA-KS3-C083",
@@ -1581,7 +2019,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Teach all three averages (mean, median, mode) and when each is most appropriate. Use datasets where the three averages differ significantly to motivate the discussion. Calculate the mean from raw data and from frequency tables. Find the median by ordering data and locating the middle value (or mean of the two middle values for even datasets). Identify the mode as the most frequent value. Discuss which average best represents a dataset: the mean is affected by outliers, the median is resistant to outliers, the mode is useful for categorical data.",
       "key_vocabulary": "mean, median, mode, average, central tendency, sum, total, frequency, ordered, middle value, most common, representative, typical",
-      "common_misconceptions": "Pupils commonly forget to order data before finding the median. When finding the mean from a frequency table, pupils may divide by the number of categories rather than the total frequency. Some pupils think there must always be exactly one mode, not recognising bimodal distributions or datasets with no mode. The belief that the mean is always the 'best' average persists despite counterexamples with skewed data."
+      "common_misconceptions": "Pupils commonly forget to order data before finding the median. When finding the mean from a frequency table, pupils may divide by the number of categories rather than the total frequency. Some pupils think there must always be exactly one mode, not recognising bimodal distributions or datasets with no mode. The belief that the mean is always the 'best' average persists despite counterexamples with skewed data.",
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C084",
@@ -1593,7 +2033,13 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce range as the simplest measure of spread: range = highest value − lowest value. Discuss its limitations: it depends on only two values and is heavily affected by outliers. Identify outliers visually and using rules of thumb (e.g., values more than 1.5 × IQR beyond the quartiles, though this may be simplified for KS3). Use comparative datasets where two groups have the same mean but different spreads to show why a measure of spread is needed alongside an average. Introduce the concept of consistency — lower spread means more consistent data.",
       "key_vocabulary": "range, spread, outlier, consistency, variation, highest value, lowest value, quartile, interquartile range, IQR, typical, distribution",
-      "common_misconceptions": "Pupils often confuse range with the highest value rather than the difference between highest and lowest. Some pupils include outliers in range calculations without recognising their disproportionate effect. The concept of an outlier is often applied inconsistently — pupils may exclude values that are merely unusual rather than genuinely anomalous. Some think a larger range always means 'worse' data."
+      "common_misconceptions": "Pupils often confuse range with the highest value rather than the difference between highest and lowest. Some pupils include outliers in range calculations without recognising their disproportionate effect. The concept of an outlier is often applied inconsistently — pupils may exclude values that are merely unusual rather than genuinely anomalous. Some think a larger range always means 'worse' data.",
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-KS3-C082",
+        "MA-KS3-C083",
+        "MA-KS3-C086"
+      ]
     },
     {
       "concept_id": "MA-KS3-C085",
@@ -1605,7 +2051,13 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Build on primary experience with bar charts, pictograms and line graphs. Teach pupils to select appropriate representations for different data types: pictograms for small datasets, bar charts for categorical data, vertical line charts for discrete data, pie charts for proportional comparison. Emphasise the mechanics of construction: equal bar widths, appropriate scales, clear labels and titles. Include frequency table construction as a data-organising step before graphical representation. Critique real-world charts for misleading features (truncated axes, 3D effects).",
       "key_vocabulary": "frequency table, bar chart, pie chart, pictogram, vertical line chart, tally, frequency, categorical, scale, axis, label, title, key, sector",
-      "common_misconceptions": "Pupils frequently use unequal bar widths or leave gaps between bars for continuous data. Pie chart construction errors include not measuring sectors accurately or not making sectors proportional to the data. Scale selection causes problems — choosing scales that either compress or stretch the data. Some pupils think pie charts show absolute values rather than proportions."
+      "common_misconceptions": "Pupils frequently use unequal bar widths or leave gaps between bars for continuous data. Pie chart construction errors include not measuring sectors accurately or not making sectors proportional to the data. Scale selection causes problems — choosing scales that either compress or stretch the data. Some pupils think pie charts show absolute values rather than proportions.",
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-KS3-C082",
+        "MA-KS3-C083",
+        "MA-KS3-C086"
+      ]
     },
     {
       "concept_id": "MA-KS3-C086",
@@ -1617,7 +2069,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce the distinction between discrete data (counted, specific values) and continuous data (measured, any value within a range). Show that continuous data must be grouped because individual values are unlikely to repeat. Teach frequency table construction with class intervals, emphasising that intervals must not overlap and must cover all values. Discuss the effect of different class widths on the appearance of the data. Calculate estimated means from grouped frequency tables using midpoints. Introduce histograms where frequency density is used for unequal class widths.",
       "key_vocabulary": "discrete, continuous, grouped data, class interval, class width, frequency, midpoint, frequency density, histogram, estimated mean, tally, boundary",
-      "common_misconceptions": "Pupils commonly create overlapping class intervals (10-20, 20-30) rather than non-overlapping ones (10 ≤ x < 20, 20 ≤ x < 30). When calculating the estimated mean, pupils may use the lower boundary instead of the midpoint. The difference between a bar chart and a histogram (bar chart has gaps, histogram does not; histogram uses frequency density for unequal widths) is frequently confused."
+      "common_misconceptions": "Pupils commonly create overlapping class intervals (10-20, 20-30) rather than non-overlapping ones (10 ≤ x < 20, 20 ≤ x < 30). When calculating the estimated mean, pupils may use the lower boundary instead of the midpoint. The difference between a bar chart and a histogram (bar chart has gaps, histogram does not; histogram uses frequency density for unequal widths) is frequently confused.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C087",
@@ -1629,7 +2083,9 @@
       "is_cross_cutting": false,
       "teaching_guidance": "Introduce scatter graphs using real data: height versus arm span, temperature versus ice cream sales, hours of study versus test score. Plot ordered pairs with the independent variable on the x-axis and the dependent variable on the y-axis. Discuss correlation: positive (both increase together), negative (as one increases the other decreases), and no correlation. Draw lines of best fit by eye, balancing points above and below the line. Use the line of best fit to make predictions and discuss the reliability of interpolation versus extrapolation.",
       "key_vocabulary": "scatter graph, bivariate data, correlation, positive correlation, negative correlation, no correlation, line of best fit, outlier, interpolate, extrapolate, variable, relationship",
-      "common_misconceptions": "Pupils often confuse correlation with causation — just because two variables correlate does not mean one causes the other. When drawing lines of best fit, pupils may try to connect all the points rather than drawing a straight line that represents the overall trend. Some pupils think negative correlation means there is no relationship. Others place the line of best fit through the origin regardless of the data."
+      "common_misconceptions": "Pupils often confuse correlation with causation — just because two variables correlate does not mean one causes the other. When drawing lines of best fit, pupils may try to connect all the points rather than drawing a straight line that represents the overall trend. Some pupils think negative correlation means there is no relationship. Others place the line of best fit through the origin regardless of the data.",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C088",
@@ -1641,7 +2097,9 @@
       "is_cross_cutting": true,
       "teaching_guidance": "Develop fluency through regular, varied practice: daily starter activities with mental arithmetic, times table recall, and key facts. Use interleaved practice where different topics are mixed within a single exercise rather than blocked by topic. Connect fluency to understanding — fluent recall of 7 × 8 = 56 should be connected to 56 ÷ 7 = 8, 0.7 × 8 = 5.6, and 70 × 80 = 5600. Use timed challenges judiciously to build speed without anxiety. Include fluency with algebraic manipulation, not just arithmetic.",
       "key_vocabulary": "fluency, recall, rapid, accurate, mental calculation, times tables, number facts, automaticity, practice, interleave, confidence",
-      "common_misconceptions": "Pupils and teachers sometimes equate fluency with speed, but true fluency includes flexibility and the ability to choose efficient strategies. Some pupils over-rely on written methods when mental methods would be faster and more appropriate. Others memorise procedures without understanding, leading to 'fragile' fluency that breaks down in unfamiliar contexts."
+      "common_misconceptions": "Pupils and teachers sometimes equate fluency with speed, but true fluency includes flexibility and the ability to choose efficient strategies. Some pupils over-rely on written methods when mental methods would be faster and more appropriate. Others memorise procedures without understanding, leading to 'fragile' fluency that breaks down in unfamiliar contexts.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C089",
@@ -1653,7 +2111,9 @@
       "is_cross_cutting": true,
       "teaching_guidance": "Develop reasoning through structured tasks: 'always, sometimes, never' activities, 'what's the same, what's different?' comparisons, and 'odd one out' discussions. Teach the language of reasoning explicitly: conjecture, justify, prove, counter-example, generalise. Use rich tasks that require explanation rather than just answers: 'Explain why the sum of two odd numbers is always even.' Model reasoning orally before requiring written reasoning. Progress from informal reasoning ('I noticed that...') to formal reasoning ('This must be true because...').",
       "key_vocabulary": "reasoning, conjecture, justify, prove, disprove, counter-example, generalise, deduce, infer, logical, argument, conclusion, hypothesis, therefore, because",
-      "common_misconceptions": "Pupils often think that giving a correct answer constitutes reasoning, without understanding that reasoning requires explaining why. Some pupils believe that showing a few examples proves a conjecture, not understanding the difference between examples and proof. Others think mathematical reasoning is only relevant in geometry, not recognising its role across all mathematical domains."
+      "common_misconceptions": "Pupils often think that giving a correct answer constitutes reasoning, without understanding that reasoning requires explaining why. Some pupils believe that showing a few examples proves a conjecture, not understanding the difference between examples and proof. Others think mathematical reasoning is only relevant in geometry, not recognising its role across all mathematical domains.",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C090",
@@ -1665,7 +2125,9 @@
       "is_cross_cutting": true,
       "teaching_guidance": "Model problem-solving strategies explicitly: draw a diagram, make a simpler related problem, work backwards, look for patterns, use trial and improvement, be systematic. Present problems that require multiple steps and where the method is not immediately obvious. Encourage pupils to estimate answers before calculating, and to check answers for reasonableness afterwards. Use collaborative problem-solving where pupils discuss strategies in pairs or groups. Include problems from real-world contexts and cross-curricular applications (science, geography, economics).",
       "key_vocabulary": "problem-solving, strategy, approach, method, multi-step, estimate, check, systematic, trial and improvement, diagram, simplify, break down, persist",
-      "common_misconceptions": "Pupils often believe there is only one 'right' method for each problem and give up if their first approach does not work. Some pupils think problem-solving means applying a known procedure, not recognising that genuine problems require thinking beyond familiar methods. Others skip the estimation and checking stages, missing errors that would be caught by reasonableness checks."
+      "common_misconceptions": "Pupils often believe there is only one 'right' method for each problem and give up if their first approach does not work. Some pupils think problem-solving means applying a known procedure, not recognising that genuine problems require thinking beyond familiar methods. Others skip the estimation and checking stages, missing errors that would be caught by reasonableness checks.",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C091",
@@ -1677,7 +2139,9 @@
       "is_cross_cutting": true,
       "teaching_guidance": "Teach pupils to translate between representations: given a table of values, draw a graph; given a graph, write an equation; given an equation, draw a bar model. Use matching activities where pupils connect equivalent representations. Emphasise that each representation has strengths: tables show exact values, graphs show trends, equations show general rules, diagrams show structure. Practise moving in all directions between representations, not just from algebra to graph. Use real-world contexts where choosing the right representation matters.",
       "key_vocabulary": "representation, table, graph, equation, diagram, bar model, number line, algebraic, graphical, numerical, equivalent, translate, convert, interpret",
-      "common_misconceptions": "Pupils often think of representations as separate topics rather than different views of the same mathematical object. Some pupils can draw a graph from an equation but cannot write an equation from a graph. Others rely on a single preferred representation and resist using alternatives. The idea that a table, a graph and an equation can all represent the same function is a key conceptual hurdle."
+      "common_misconceptions": "Pupils often think of representations as separate topics rather than different views of the same mathematical object. Some pupils can draw a graph from an equation but cannot write an equation from a graph. Others rely on a single preferred representation and resist using alternatives. The idea that a table, a graph and an equation can all represent the same function is a key conceptual hurdle.",
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C092",
@@ -1689,7 +2153,9 @@
       "is_cross_cutting": true,
       "teaching_guidance": "Start with simple modelling tasks: 'A swimming pool is filled at 50 litres per minute. Model the volume of water over time as a formula and a graph.' Progress to models that require simplification or assumption-making. Teach the modelling cycle: formulate (translate context to mathematics), solve (work mathematically), interpret (translate the answer back to context), validate (check the answer makes sense in context). Discuss the limitations of models — what assumptions have been made and how might they affect the answer?",
       "key_vocabulary": "model, modelling, formulate, solve, interpret, validate, assumption, simplify, real-world, context, variable, formula, graph, prediction, limitation",
-      "common_misconceptions": "Pupils often skip the interpretation and validation stages, presenting mathematical answers without relating them back to the context. Some pupils think a model must be perfectly accurate, not understanding that all models involve simplification. Others struggle to identify which variables matter and which can be ignored. The transition from a real-world situation to a mathematical representation is a significant cognitive step."
+      "common_misconceptions": "Pupils often skip the interpretation and validation stages, presenting mathematical answers without relating them back to the context. Some pupils think a model must be perfectly accurate, not understanding that all models involve simplification. Others struggle to identify which variables matter and which can be ignored. The transition from a real-world situation to a mathematical representation is a significant cognitive step.",
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C093",
@@ -1701,7 +2167,9 @@
       "is_cross_cutting": true,
       "teaching_guidance": "Use real-world financial contexts: bank accounts, saving for a purchase, comparing deals, understanding bills and payslips. Teach simple interest using the formula I = PRT/100 and compare with compound interest conceptually. Include percentage increase and decrease in financial contexts: VAT, discounts, profit and loss. Practise 'best buy' problems comparing unit prices. Introduce budgeting activities where pupils must make financial decisions within constraints. Emphasise that financial mathematics is an application of percentage and ratio skills, not a separate topic.",
       "key_vocabulary": "simple interest, principal, rate, time, profit, loss, discount, VAT, budget, income, expenditure, savings, unit price, best buy, percentage change",
-      "common_misconceptions": "Pupils often confuse simple interest (calculated on the original amount) with compound interest (calculated on the accumulated amount). Some pupils add VAT by calculating the percentage and then forgetting to add it to the original price. Others struggle with reverse percentage problems in financial contexts. The concept of percentage profit being calculated on the cost price (not the selling price) is frequently misunderstood."
+      "common_misconceptions": "Pupils often confuse simple interest (calculated on the original amount) with compound interest (calculated on the accumulated amount). Some pupils add VAT by calculating the percentage and then forgetting to add it to the original price. Others struggle with reverse percentage problems in financial contexts. The concept of percentage profit being calculated on the cost price (not the selling price) is frequently misunderstood.",
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-KS3-C094",
@@ -1713,7 +2181,12 @@
       "is_cross_cutting": true,
       "teaching_guidance": "Present paired problems where the same surface structure masks different underlying structures: 'Tom has 3 more sweets than Jill' (additive) versus 'Tom has 3 times as many sweets as Jill' (multiplicative). Use bar models to make the structural difference visible. Teach pupils to ask: 'Am I comparing by adding/subtracting or by multiplying/dividing?' Proportional reasoning extends multiplicative reasoning to situations involving two variables: if one doubles, does the other double (direct proportion) or halve (inverse proportion)? Include problems that require identifying the type of reasoning before calculating.",
       "key_vocabulary": "additive reasoning, multiplicative reasoning, proportional reasoning, ratio, scale factor, times as many, difference, product, proportion, structure, compare",
-      "common_misconceptions": "The most fundamental misconception at KS3 is applying additive reasoning to proportional situations. For example: 'If 3 workers finish in 12 days, 6 workers will finish in 9 days' (subtracting 3) rather than 6 days (halving). The bar model is the most effective tool for diagnosing and correcting this error. Some pupils also apply proportional reasoning to additive situations, multiplying when they should add."
+      "common_misconceptions": "The most fundamental misconception at KS3 is applying additive reasoning to proportional situations. For example: 'If 3 workers finish in 12 days, 6 workers will finish in 9 days' (subtracting 3) rather than 6 days (halving). The bar model is the most effective tool for diagnosing and correcting this error. Some pupils also apply proportional reasoning to additive situations, multiplying when they should add.",
+      "teaching_weight": 4,
+      "co_teach_hints": [
+        "MA-KS3-C055",
+        "MA-KS3-C056"
+      ]
     },
     {
       "concept_id": "MA-KS3-C095",
@@ -1725,7 +2198,12 @@
       "is_cross_cutting": true,
       "teaching_guidance": "Build on the reasoning work (MA-KS3-C089) by introducing formal mathematical language and structure. Teach pupils to write mathematical arguments using logical connectives: 'therefore', 'because', 'if...then', 'hence', 'it follows that'. Use proof frameworks with sentence starters to scaffold written arguments. Practise distinguishing between demonstrating (showing it works for an example), explaining (saying why it works in words), justifying (giving a mathematical reason) and proving (showing it must always work). Include algebraic proofs that results about odd/even numbers and consecutive integers.",
       "key_vocabulary": "formal argument, proof, demonstrate, explain, justify, prove, conjecture, therefore, because, hence, it follows, if...then, logical, rigorous, deductive, algebraic proof",
-      "common_misconceptions": "Pupils frequently blur the boundary between explanation and proof — writing informal explanations when formal justification is required. Some think that using algebra automatically makes an argument a proof, even if the algebraic reasoning is flawed. Others avoid formal argument entirely, preferring to work with examples. The idea that a mathematical proof establishes certainty (unlike experimental evidence) is conceptually demanding."
+      "common_misconceptions": "Pupils frequently blur the boundary between explanation and proof — writing informal explanations when formal justification is required. Some think that using algebra automatically makes an argument a proof, even if the algebraic reasoning is flawed. Others avoid formal argument entirely, preferring to work with examples. The idea that a mathematical proof establishes certainty (unlike experimental evidence) is conceptually demanding.",
+      "teaching_weight": 5,
+      "co_teach_hints": [
+        "MA-KS3-C075",
+        "MA-KS3-C089"
+      ]
     }
   ],
   "prerequisite_relationships": [

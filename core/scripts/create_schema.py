@@ -45,6 +45,8 @@ def create_schema(driver):
         "CREATE CONSTRAINT pedagogy_profile_year_unique IF NOT EXISTS FOR (p:PedagogyProfile) REQUIRE p.year_code IS UNIQUE",
         "CREATE CONSTRAINT feedback_profile_year_unique IF NOT EXISTS FOR (f:FeedbackProfile) REQUIRE f.year_code IS UNIQUE",
         "CREATE CONSTRAINT pedagogy_technique_id_unique IF NOT EXISTS FOR (pt:PedagogyTechnique) REQUIRE pt.technique_id IS UNIQUE",
+        # Concept Grouping layer (v3.7)
+        "CREATE CONSTRAINT concept_cluster_id_unique IF NOT EXISTS FOR (cc:ConceptCluster) REQUIRE cc.cluster_id IS UNIQUE",
     ]
 
     # Indexes
@@ -76,6 +78,10 @@ def create_schema(driver):
         "CREATE INDEX content_guideline_tts_required_idx IF NOT EXISTS FOR (c:ContentGuideline) ON (c.tts_required)",
         "CREATE INDEX pedagogy_profile_scaffolding_idx IF NOT EXISTS FOR (p:PedagogyProfile) ON (p.scaffolding_level)",
         "CREATE INDEX pedagogy_technique_min_year_idx IF NOT EXISTS FOR (pt:PedagogyTechnique) ON (pt.min_year_appropriate)",
+        # Concept Grouping indexes (v3.7)
+        "CREATE INDEX concept_cluster_type_idx IF NOT EXISTS FOR (cc:ConceptCluster) ON (cc.cluster_type)",
+        "CREATE INDEX concept_is_keystone_idx IF NOT EXISTS FOR (c:Concept) ON (c.is_keystone)",
+        "CREATE INDEX concept_teaching_weight_idx IF NOT EXISTS FOR (c:Concept) ON (c.teaching_weight)",
     ]
 
     print("Creating constraints...")

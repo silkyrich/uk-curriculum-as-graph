@@ -2,7 +2,10 @@
   "metadata": {
     "subject": "Music",
     "key_stage": "KS4",
-    "years_covered": [10, 11],
+    "years_covered": [
+      10,
+      11
+    ],
     "document_reference": "DFE-00703-2014",
     "extraction_date": "2026-02-21",
     "structure_rating": 8
@@ -142,7 +145,9 @@
       "common_misconceptions": "Pupils frequently equate technical accuracy with musical quality, overlooking the expressive dimension that makes music meaningful. The belief that expressive performance must wait until technical mastery is achieved prevents early expressive development; encouraging expressiveness within current technical capability is more effective. Pupils may not understand that expressive choices are deliberate and informed decisions, not just whatever feels natural; teaching the craft of expressive decision-making — why this dynamic shape, why this tempo nuance — develops more sophisticated musicianship.",
       "concept_type": "skill",
       "complexity_level": 4,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MU-KS4-C002",
@@ -154,7 +159,9 @@
       "common_misconceptions": "Pupils frequently confuse 'pitch' and 'tone', 'rhythm' and 'tempo', and 'dynamics' and 'volume'. Consistent precision in modelled language and immediate correction of imprecise usage builds accurate vocabulary. The description of texture is a particular weakness: many pupils can identify homophony and polyphony but struggle to describe heterophony, homorhythm or more complex textural arrangements. Pupils may describe musical features without explaining their effect, failing to connect 'what' to 'why'; teaching the explanation step explicitly addresses this.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MU-KS4-C003",
@@ -166,7 +173,9 @@
       "common_misconceptions": "Pupils often compose by instinct without understanding the craft decisions they are making, resulting in pieces that lack structural coherence or feel unfinished. Teaching compositional decision-making explicitly — why does this cadence work here? — develops more purposeful composition. Many pupils compose melodies that lack a clear sense of phrase structure or cadential pattern; teaching phrase lengths and cadential patterns as craft conventions addresses this. The idea that 'good' composition means long composition leads to sprawling, unfocused pieces; teaching the value of economy and density develops more effective compositional thinking.",
       "concept_type": "knowledge",
       "complexity_level": 4,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 5,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MU-KS4-C004",
@@ -178,7 +187,12 @@
       "common_misconceptions": "Pupils often confuse 'Classical' (referring to the specific historical period c.1750–1820, associated with Haydn, Mozart and early Beethoven) with 'classical' as a broader term for all notated Western art music. Consistent precision in the use of period terminology avoids this confusion. Pupils may treat music history as a series of unconnected facts rather than as a coherent narrative of development and reaction; teaching how styles develop in response to each other and their contexts builds deeper understanding. The detailed demands of set work knowledge can cause pupils to focus entirely on factual recall at the expense of analytical application; practising using factual knowledge to support analytical arguments develops more effective exam technique.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MU-KS4-C002",
+        "MU-KS4-C005"
+      ]
     },
     {
       "concept_id": "MU-KS4-C005",
@@ -190,7 +204,9 @@
       "common_misconceptions": "Pupils may identify genre by superficial features (this uses a guitar, so it must be rock) rather than musical ones; developing precise identification of musical characteristics builds more robust stylistic understanding. The distinction between style (a set of characteristic musical features) and genre (a category of music defined by shared stylistic, cultural and commercial features) is frequently conflated; teaching this distinction develops more precise critical vocabulary. Students may assume that stylistic conventions are constraints on creativity rather than productive frameworks; studying how composers work within and against conventions develops more nuanced understanding of the relationship between convention and innovation.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MU-KS4-C006",
@@ -202,7 +218,9 @@
       "common_misconceptions": "Pupils often understand notation in isolation from its function as a communicative system, producing scores that are technically correct but ambiguous or incomplete as instructions for performance. Teaching notation from the perspective of the performer who must realise the score builds functional understanding. The rhythm of dotted notes and tied notes is a persistent source of error; consistent practical application through performing and clapping notated rhythms builds reliable understanding. Pupils may assume that staff notation is the only valid system; understanding that notation systems are conventions that develop within specific traditions places staff notation in a broader context.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

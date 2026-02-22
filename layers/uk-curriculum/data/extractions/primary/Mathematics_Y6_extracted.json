@@ -2,7 +2,9 @@
   "metadata": {
     "subject": "Mathematics",
     "key_stage": "KS2",
-    "years_covered": [6],
+    "years_covered": [
+      6
+    ],
     "document_reference": "DFE-00180-2013",
     "extraction_date": "2026-02-17",
     "source_pages": "39-45",
@@ -488,7 +490,9 @@
       "common_misconceptions": "Pupils often misread multi-digit numbers, especially those with zeros as placeholders (e.g., reading 4,006,050 as 'four million sixty-five'). When writing numbers from words, pupils may omit placeholder zeros. Some pupils confuse the face value of a digit (e.g., 4) with its place value (e.g., 4,000,000). Reinforce the role of each zero as a place-holder with explicit examples.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C002",
@@ -500,7 +504,11 @@
       "common_misconceptions": "When rounding to a large unit (e.g., nearest 100,000), pupils often round only the digit in the required column, ignoring whether subsequent digits cause the number to be closer to the upper or lower value. Pupils frequently round 'down' when they should round up at the 5-boundary. Some pupils truncate rather than round when working with large numbers. Explicit number-line work addresses all these errors.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-Y6-C003"
+      ]
     },
     {
       "concept_id": "MA-Y6-C003",
@@ -512,7 +520,9 @@
       "common_misconceptions": "Pupils commonly think -8 is greater than -3 because 8 is greater than 3. When calculating the difference between -3 and +5, pupils often compute 5 - 3 = 2 rather than 5 - (-3) = 8. The number line is the essential tool for overcoming both misconceptions. Some pupils resist the idea that the result of subtracting a larger positive number from a smaller one can be negative, reflecting over-generalisation from whole number arithmetic.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C004",
@@ -524,7 +534,9 @@
       "common_misconceptions": "The most common error in long multiplication is forgetting to shift the second row of partial products one place to the left when multiplying by the tens digit. Pupils also make errors with carrying, particularly when sums exceed 10 in multiple columns simultaneously. Some pupils misalign digits in the answer, especially when the number contains zeros. Estimation before calculating helps pupils identify unreasonable answers.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C005",
@@ -536,7 +548,9 @@
       "common_misconceptions": "Pupils frequently lose track of place value during long division, producing quotient digits in the wrong columns. A common error is not bringing down the next digit when the partial dividend is smaller than the divisor (the quotient digit at that step should be zero, which is often omitted). Pupils also confuse when to express the remainder as a fraction (½ of a pizza) versus rounding up (number of buses needed) — always connect to the problem context.",
       "concept_type": "skill",
       "complexity_level": 4,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C006",
@@ -548,7 +562,11 @@
       "common_misconceptions": "The most prevalent misconception is evaluating left-to-right without applying the order of operations (treating all operations as having equal priority). Pupils also commonly neglect to evaluate the contents of brackets first when brackets are nested or when brackets appear later in the expression. Some pupils misremember BODMAS as meaning division always before multiplication, when in fact they have equal priority and should be evaluated left to right.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C029"
+      ]
     },
     {
       "concept_id": "MA-Y6-C007",
@@ -560,7 +578,9 @@
       "common_misconceptions": "Pupils often confuse factors and multiples, and further confuse highest common factor (a factor, smaller than or equal to the number) with lowest common multiple (a multiple, larger than or equal to the number). Some pupils include 1 as a prime number (it is not, as it has only one factor). When finding common factors, pupils often stop at the first common factor they find rather than the highest. Systematic listing of all factors of both numbers into a Venn diagram prevents most of these errors.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C008",
@@ -572,7 +592,13 @@
       "common_misconceptions": "When simplifying, pupils often divide by 2 (or another common factor) rather than the highest common factor, leaving fractions in a partially simplified state (e.g., simplifying 12/18 to 6/9 rather than 2/3). Some pupils believe a fraction with a larger numerator and denominator is always greater than one with smaller numbers. When comparing fractions with different denominators, pupils sometimes compare numerators or denominators in isolation rather than converting to a common denominator.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C009",
+        "MA-Y6-C010",
+        "MA-Y6-C011"
+      ]
     },
     {
       "concept_id": "MA-Y6-C009",
@@ -584,7 +610,9 @@
       "common_misconceptions": "The classic and persistent misconception is adding numerators and denominators separately (e.g., 1/3 + 1/4 = 2/7). Use diagrams extensively to show why this is incorrect. When subtracting mixed numbers, pupils often subtract the smaller fraction from the larger regardless of which is the subtrahend (e.g., computing 3 1/4 - 1 3/4 as 3 + (3/4 - 1/4) = 3 2/4). Failing to simplify the final answer is also common; build simplification into the routine.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C010",
@@ -596,7 +624,9 @@
       "common_misconceptions": "Pupils apply addition/subtraction strategies to multiplication (finding a common denominator before multiplying), which is unnecessary and leads to errors. When dividing a fraction by a whole number, pupils sometimes divide the numerator rather than multiply the denominator (e.g., computing 3/4 ÷ 3 as 1/4, which coincidentally gives the right answer, but using incorrect reasoning that fails for other examples like 3/4 ÷ 2). Build conceptual understanding alongside procedural competence.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C011",
@@ -608,7 +638,11 @@
       "common_misconceptions": "Pupils sometimes treat fractions, decimals and percentages as unrelated rather than as equivalent representations, failing to convert between them when it would be helpful. Common specific errors: believing 25% = ¼ but not knowing that 75% = ¾; confusing 0.5% with 50%; writing 0.8 as 0.8% rather than 80%. Regular work with real-world contexts (sale discounts, test scores, nutritional information) builds meaningful understanding alongside the procedural fluency.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-Y6-C008"
+      ]
     },
     {
       "concept_id": "MA-Y6-C012",
@@ -620,7 +654,9 @@
       "common_misconceptions": "Pupils frequently apply additive rather than multiplicative reasoning in proportion problems (e.g., if a recipe for 4 serves uses 200 g flour and 150 g butter, pupils subtract to get 50 g 'difference' and add 50 g for each extra serving rather than using the ratio 4:3). In sharing problems, pupils sometimes give each person the stated number of parts rather than computing the value of each part. The bar model is the most effective tool for preventing both misconceptions.",
       "concept_type": "process",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C013",
@@ -632,7 +668,9 @@
       "common_misconceptions": "Pupils often treat a letter in an expression as a label or abbreviation (e.g., a = apples) rather than as a number. Concatenation notation (3n meaning 3 × n) is unfamiliar and pupils may read it as 'thirty-n' or misinterpret it. Some pupils believe that different letters in an expression must represent different values (e.g., in a + b, a ≠ b). Pupils also confuse 'evaluate an expression' with 'solve an equation' — these are importantly different tasks.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C014",
@@ -644,7 +682,11 @@
       "common_misconceptions": "Pupils confuse the term-to-term rule (add 4 each time) with the position-to-term rule (nth term = 4n - 1). When enumerating solutions to two-variable equations, pupils work unsystematically and miss solutions or count duplicates. Some pupils do not consider that variables can take the value 0. Explicit use of tables and a systematic left-to-right approach prevents most enumeration errors.",
       "concept_type": "process",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C030"
+      ]
     },
     {
       "concept_id": "MA-Y6-C015",
@@ -656,7 +698,9 @@
       "common_misconceptions": "The most significant and persistent misconception is using the slant height rather than the perpendicular height when calculating the area of a triangle or parallelogram. Pupils also sometimes use the wrong dimension as the base when the shape is in a non-standard orientation. Labelled diagrams should always identify the perpendicular height explicitly, and pupils should practise identifying perpendicular height in a variety of orientations.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C016",
@@ -668,7 +712,11 @@
       "common_misconceptions": "Pupils frequently confuse area (2-D) with volume (3-D), using the formula for one when the other is required. Some pupils multiply only two dimensions (finding an area rather than a volume). When converting between cubic units, pupils often apply the linear conversion factor rather than its cube (e.g., thinking 1 m³ = 100 cm³ rather than 1,000,000 cm³). Consistent use of the correct units in all working helps reinforce the distinction.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C015"
+      ]
     },
     {
       "concept_id": "MA-Y6-C017",
@@ -680,7 +728,13 @@
       "common_misconceptions": "Pupils often confuse the interior angle sum of a polygon with the measure of each interior angle, not dividing by the number of sides for regular polygons. A very common error is assuming all triangles have a right angle or that all quadrilaterals are rectangles, leading to incorrect angle calculations. Pupils sometimes subtract angles from 360° when they should subtract from 180° (or vice versa), confusing which angle fact applies. Labelling diagrams with known angle facts before attempting calculations prevents most of these errors.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C018",
+        "MA-Y6-C022",
+        "MA-Y6-C024"
+      ]
     },
     {
       "concept_id": "MA-Y6-C018",
@@ -692,7 +746,11 @@
       "common_misconceptions": "Pupils frequently confuse radius and diameter, especially when applying the formula d = 2r. Some pupils draw the radius to any point on the circle's interior rather than to the circumference, or place the compass point on the circumference rather than the centre. The term 'circumference' (the length of the perimeter) is often confused with 'circle' (the shape) or 'arc' (part of the circumference). Regular use of correct terminology in context, with labelled diagrams, establishes secure vocabulary.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-Y6-C017"
+      ]
     },
     {
       "concept_id": "MA-Y6-C019",
@@ -704,7 +762,9 @@
       "common_misconceptions": "Pupils persistently reverse x and y coordinates when plotting (reading up first, then across) — emphasise 'along the corridor, then up the stairs'. In all-four-quadrant grids, pupils may ignore the sign of a coordinate when it is negative, plotting in the wrong quadrant. For reflections in the y-axis, pupils sometimes reflect correctly in terms of position but fail to update the sign of the x-coordinate in their answer. Making the sign pattern of each quadrant explicit and returning to it regularly prevents these errors.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C020",
@@ -716,7 +776,14 @@
       "common_misconceptions": "Pupils often read the sector angle as the data value, rather than using it to calculate the proportion. When constructing pie charts, pupils sometimes add frequencies directly rather than converting to angles first. Some pupils assume all sectors in a pie chart represent equal proportions unless clearly different sizes are visible, and fail to read angles carefully with a protractor. The key conceptual understanding to reinforce is that the whole circle = 360° = total frequency = 100%.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C021",
+        "MA-Y6-C025",
+        "MA-Y6-C026",
+        "MA-Y6-C028"
+      ]
     },
     {
       "concept_id": "MA-Y6-C021",
@@ -728,7 +795,14 @@
       "common_misconceptions": "Pupils commonly confuse mean with mode (most frequent) or median (middle value), particularly if they have encountered all three measures without clear differentiation. When finding the mean, pupils sometimes add correctly but then divide by a number other than the count of values (e.g., dividing by the range, or by the largest value). The reverse problem — finding a missing value given the mean — is often approached by guessing rather than by using the total. Explicit recording of the calculation as a sequence of steps prevents most procedural errors.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C020",
+        "MA-Y6-C025",
+        "MA-Y6-C026",
+        "MA-Y6-C027"
+      ]
     },
     {
       "concept_id": "MA-Y6-C022",
@@ -740,7 +814,11 @@
       "common_misconceptions": "Pupils frequently miscount edges, particularly on pyramids, where edges at the apex are easily confused. Some pupils confuse faces (flat surfaces) with sides (used informally) and count curved surfaces of cylinders as faces. When working with nets, pupils often cannot visualise how adjacent panels fold and may construct nets in which the same face is covered twice. Systematic labelling of each face before attempting to draw the net prevents most of these errors.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-Y6-C017"
+      ]
     },
     {
       "concept_id": "MA-Y6-C023",
@@ -752,7 +830,11 @@
       "common_misconceptions": "When translating, pupils sometimes apply the horizontal displacement to y-coordinates and vice versa. When reflecting in the y-axis, pupils frequently negate the y-coordinate instead of the x-coordinate, confusing which coordinate changes. Some pupils rotate the shape rather than reflecting it, particularly when working without graph paper. Consistent use of tracing paper or folding the grid along the axis of reflection addresses the reflection misconception effectively.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C019"
+      ]
     },
     {
       "concept_id": "MA-Y6-C024",
@@ -764,7 +846,11 @@
       "common_misconceptions": "Pupils often apply an angle fact without checking whether it is the appropriate one for the configuration — for example, using 'angles in a triangle' when the angles are not all in the same triangle. Some pupils work with approximate values read from diagrams rather than using the angle facts algebraically. When problems require two or more steps, pupils often skip intermediate steps or make arithmetic errors in the chain. Requiring written justifications at each step prevents most of these errors.",
       "concept_type": "process",
       "complexity_level": 4,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 4,
+      "co_teach_hints": [
+        "MA-Y6-C017"
+      ]
     },
     {
       "concept_id": "MA-Y6-C025",
@@ -776,7 +862,9 @@
       "common_misconceptions": "Pupils often believe that outcomes in a random experiment must alternate (the 'gambler's fallacy': 'I've had three tails so the next must be a head'). They may also incorrectly assume that all events are equally likely (a die is more likely to show a 6 than any other number, some pupils think, because 6 is a special number). When listing outcomes, pupils commonly miss some possibilities or count the same outcome twice. Using a structured sample space grid or tree diagram prevents incomplete listing.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C026",
@@ -788,7 +876,14 @@
       "common_misconceptions": "Pupils commonly compare two data sets using only the mean, ignoring the spread. They may confuse range (a measure of spread) with average. Some pupils state comparisons without referring to the context — 'Group A has a higher mean' without explaining what this means for the groups being compared. Requiring contextualised conclusions addresses this weakness.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C020",
+        "MA-Y6-C021",
+        "MA-Y6-C027",
+        "MA-Y6-C028"
+      ]
     },
     {
       "concept_id": "MA-Y6-C027",
@@ -800,7 +895,13 @@
       "common_misconceptions": "Pupils frequently confuse median and mode, particularly since both can be described as 'middle' in informal terms. When finding the median, pupils often forget to order the data first, producing incorrect results. With an even number of values, pupils may choose one of the two middle values arbitrarily rather than averaging them. Some pupils believe the mode is always the most appropriate average regardless of context.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MA-Y6-C021",
+        "MA-Y6-C025",
+        "MA-Y6-C026"
+      ]
     },
     {
       "concept_id": "MA-Y6-C028",
@@ -812,7 +913,13 @@
       "common_misconceptions": "Pupils commonly read individual data points from a line graph rather than interpreting the trend or rate of change. They frequently confuse discrete and continuous data, applying bar charts to continuous data or histograms to discrete data. When constructing graphs, pupils often neglect titles, axis labels, and appropriate scales. The most important conceptual gap is between reading a graph and using a graph to compare, predict or identify patterns.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "MA-Y6-C020",
+        "MA-Y6-C025",
+        "MA-Y6-C026"
+      ]
     },
     {
       "concept_id": "MA-Y6-C029",
@@ -824,7 +931,9 @@
       "common_misconceptions": "Pupils and teachers sometimes confuse fluency with speed, neglecting accuracy. Some pupils develop apparent fluency through pattern-matching without conceptual understanding, leading to errors when the surface features of a problem change. The most damaging gap is in multiplication fact recall: without secure times-table knowledge, all four operations (including division, fractions and percentages) are impeded at every stage.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MA-Y6-C030",
@@ -836,7 +945,11 @@
       "common_misconceptions": "Pupils often confuse explanation ('this is what I did') with justification ('this is why it must work'). Checking a rule with one or two examples is often mistaken for proof. Some pupils communicate mathematical reasoning in informal or ambiguous language that does not precisely convey their thinking. The distinction between 'showing' and 'proving' needs explicit teaching with examples from familiar mathematical content.",
       "concept_type": "process",
       "complexity_level": 4,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 4,
+      "co_teach_hints": [
+        "MA-Y6-C014"
+      ]
     },
     {
       "concept_id": "MA-Y6-C031",
@@ -848,7 +961,9 @@
       "common_misconceptions": "Pupils often attempt to apply a recently learned procedure to a new problem without first reading to understand what the problem is asking. A very common error is computing an answer without checking whether it is reasonable in context (e.g., a negative number of people, or a fraction of a journey taking more time than the whole journey). Some pupils give up quickly on problems that do not yield to their first approach, rather than trying a different strategy. Regular problem-solving with deliberate strategy discussion and reflection builds the persistence required.",
       "concept_type": "process",
       "complexity_level": 4,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 4,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

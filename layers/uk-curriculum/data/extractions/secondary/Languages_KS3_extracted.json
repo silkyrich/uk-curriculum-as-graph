@@ -154,7 +154,9 @@
       "common_misconceptions": "Pupils may treat conjugated verb forms as vocabulary items to be memorised individually rather than as applications of a productive rule system; explicit teaching of the paradigm and the underlying rule prevents this. The subjunctive mood, which is not grammaticalised in English, is frequently misunderstood because pupils have no direct equivalent in their first language; connecting it to the semantic concept of doubt, uncertainty and hypotheticality makes it more accessible. In languages with grammatical gender, pupils may assume gender is arbitrary rather than systematic, leading to random guessing; teaching gender patterns and providing reliable rules reduces this.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "LA-KS3-C002",
@@ -166,7 +168,9 @@
       "common_misconceptions": "Pupils often believe they need to understand every word to follow a spoken text; developing tolerance for ambiguity and the use of context to infer meaning challenges this assumption. The distinction between formal and informal register is sometimes treated as merely a vocabulary difference; in languages where it is grammaticalised (affecting verb forms and pronouns), it is a systematic grammatical distinction requiring explicit teaching. Pupils may believe accurate pronunciation is optional or cosmetic; understanding that mispronunciation can affect comprehensibility (and listener relationships) motivates more careful attention to phonological accuracy.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "LA-KS3-C003",
@@ -178,7 +182,11 @@
       "common_misconceptions": "Pupils may attempt to decode every word of a text rather than reading for overall meaning, producing paralysis in the face of unknown vocabulary; explicit teaching of reading for gist prevents this. Translation is sometimes treated as a transparent process of word substitution; understanding that translation requires understanding of meaning, not just form, and that good translation preserves meaning and effect rather than literal wording, develops more sophisticated translation practice. Literary texts in a foreign language may seem inaccessible; using well-chosen, appropriately pitched texts and supporting pupils to engage with them as literature (not just as language exercises) builds genuine engagement.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": [
+        "LA-KS3-C005"
+      ]
     },
     {
       "concept_id": "LA-KS3-C004",
@@ -190,7 +198,9 @@
       "common_misconceptions": "Pupils often equate knowing a word with knowing its English translation, overlooking grammatical behaviour (gender, irregular conjugations), collocations (the words it naturally combines with) and register. The existence of false cognates (words that look similar across languages but mean different things) can mislead pupils who rely heavily on cognate guessing; awareness of this risk develops more careful checking. Pupils may believe their vocabulary is adequate when it is merely safe, avoiding more precise but risky vocabulary choices; encouraging ambitious vocabulary use within a supportive environment develops lexical courage.",
       "concept_type": "knowledge",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     },
     {
       "concept_id": "LA-KS3-C005",
@@ -202,7 +212,9 @@
       "common_misconceptions": "Pupils may equate the target language with a single national culture, overlooking the diversity of communities that speak it (French is spoken in France, Belgium, Switzerland, Canada, many African countries and elsewhere). The social conventions of the target language may seem arbitrary or unnecessarily complex; connecting them to the social structures and values they reflect makes them comprehensible and more memorable. Pupils may approach target language culture as exotic or other; developing a stance of genuine curiosity and comparative reflection challenges both ethnocentrism and superficial exoticisation.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": true
+      "is_cross_cutting": true,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "LA-KS3-C006",
@@ -214,7 +226,9 @@
       "common_misconceptions": "Pupils may write long texts using only simple structures, avoiding grammatical complexity for fear of error; teaching them to take controlled grammatical risks while self-editing for accuracy develops both range and accuracy. Translation is sometimes approached as a word-for-word substitution exercise; understanding that translation requires transfer of meaning, not form, and that a good translation sounds natural in the target language, develops more sophisticated translation practice. Pupils may not see writing as a skill that can be developed through practice and strategy; explicitly teaching writing as a process with drafting and revision normalises the idea that good writing takes time and iteration.",
       "concept_type": "skill",
       "complexity_level": 3,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 3,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [

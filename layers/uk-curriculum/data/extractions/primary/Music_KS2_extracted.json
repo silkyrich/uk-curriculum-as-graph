@@ -107,7 +107,9 @@
       "common_misconceptions": "Pupils often focus only on their own part and do not listen to others in an ensemble. Teaching that ensemble music requires active listening as well as playing is key. Some pupils may feel that playing quietly means playing badly; teaching about musical balance and the importance of dynamic blend within an ensemble addresses this.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MU-KS2-C002",
@@ -119,7 +121,11 @@
       "common_misconceptions": "Pupils often fear improvisation because they believe there is a 'right answer'. Framing improvisation as creative exploration rather than performance of a correct sequence helps. Some pupils may produce random sequences of notes rather than musical phrases; teaching phrase length and resolution helps develop more musical improvisation.",
       "concept_type": "skill",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": [
+        "MU-KS2-C003"
+      ]
     },
     {
       "concept_id": "MU-KS2-C003",
@@ -131,7 +137,9 @@
       "common_misconceptions": "Pupils often compose music that simply continues without structural contrast or repetition, resulting in a stream of unconnected ideas. Teaching basic structural forms and asking pupils to plan structure before composing prevents this. Some pupils may repeat material too mechanically; discussing how professional composers introduce subtle variations of repeated material develops more sophisticated structural thinking.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MU-KS2-C004",
@@ -143,7 +151,9 @@
       "common_misconceptions": "Pupils sometimes learn note names as abstract symbols without connecting them to specific sounds on their instrument. Always reinforcing the sound alongside the symbol prevents disconnected learning. The time signature is often misunderstood as a fraction rather than as information about pulse grouping; consistent practical activities reinforce its musical meaning.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     },
     {
       "concept_id": "MU-KS2-C005",
@@ -155,7 +165,9 @@
       "common_misconceptions": "Pupils may assume that 'good' music means Western classical music. Deliberately presenting diverse musical traditions as equally valid challenges this. Pupils may not understand that musical preferences are shaped by culture and experience; discussing how exposure influences taste develops critical musical understanding.",
       "concept_type": "knowledge",
       "complexity_level": 2,
-      "is_cross_cutting": false
+      "is_cross_cutting": false,
+      "teaching_weight": 2,
+      "co_teach_hints": []
     }
   ],
   "prerequisite_relationships": [
