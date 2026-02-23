@@ -234,6 +234,20 @@ SET n.display_color = '#3B0764',
     n.display_category = 'Learner Profile',
     n.display_size = 3;
 
+// ThinkingLens - UK Curriculum
+MATCH (n:ThinkingLens)
+SET n.display_color = '#7C3AED',
+    n.display_icon = 'psychology',
+    n.display_category = 'UK Curriculum',
+    n.display_size = 2;
+
+// ContentVehicle - Content Vehicle
+MATCH (n:ContentVehicle)
+SET n.display_color = '#0D9488',
+    n.display_icon = 'local_library',
+    n.display_category = 'Content Vehicle',
+    n.display_size = 2;
+
 // OakUnit - Oak Content
 MATCH (n:OakUnit)
 SET n.display_color = '#16A34A',

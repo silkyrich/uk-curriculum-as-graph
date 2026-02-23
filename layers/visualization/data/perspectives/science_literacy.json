@@ -1,5 +1,5 @@
 {
-  "name": "Science Literacy — UK vs NGSS",
+  "name": "Science Literacy \u2014 UK vs NGSS",
   "id": "1b8a8830-1f18-4e8e-9a66-5fee5ec85418",
   "version": "1.4.0",
   "categories": [
@@ -1146,6 +1146,316 @@
       ],
       "createdAt": 1708387200000,
       "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 26,
+      "name": "ConceptCluster",
+      "color": "#6366F1",
+      "icon": "FCD4E0B9-A86D-4DFB-AB79-3D9E8727E540",
+      "labels": [
+        "ConceptCluster"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "cluster_type",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "thinking_lens_primary",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "cluster_id",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "rationale",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "cluster_type_string",
+          "condition": "equals",
+          "conditionValue": "introduction",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "cluster_type_string",
+          "condition": "equals",
+          "conditionValue": "practice",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "cluster_type_string",
+          "condition": "equals",
+          "conditionValue": "consolidation",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#EF4444",
+          "minColor": "#EF4444",
+          "midColor": "#EF4444",
+          "maxColor": "#EF4444",
+          "basedOn": "cluster_type_string",
+          "condition": "equals",
+          "conditionValue": "assessment",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
+    },
+    {
+      "id": 27,
+      "name": "ThinkingLens",
+      "color": "#7C3AED",
+      "icon": "FCD4E0B9-A86D-4DFB-AB79-3D9E8727E540",
+      "labels": [
+        "ThinkingLens"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "description",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "key_question",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "agent_prompt",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "lens_id",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#6366F1",
+          "minColor": "#6366F1",
+          "midColor": "#6366F1",
+          "maxColor": "#6366F1",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "patterns",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#EF4444",
+          "minColor": "#EF4444",
+          "midColor": "#EF4444",
+          "maxColor": "#EF4444",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "cause_and_effect",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "scale_proportion_quantity",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#14B8A6",
+          "minColor": "#14B8A6",
+          "midColor": "#14B8A6",
+          "maxColor": "#14B8A6",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "systems_models",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F97316",
+          "minColor": "#F97316",
+          "midColor": "#F97316",
+          "maxColor": "#F97316",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "energy_matter",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#8B5CF6",
+          "minColor": "#8B5CF6",
+          "midColor": "#8B5CF6",
+          "maxColor": "#8B5CF6",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "structure_function",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "stability_change",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#0EA5E9",
+          "minColor": "#0EA5E9",
+          "midColor": "#0EA5E9",
+          "maxColor": "#0EA5E9",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "continuity_change",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#EC4899",
+          "minColor": "#EC4899",
+          "midColor": "#EC4899",
+          "maxColor": "#EC4899",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "perspective_interpretation",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#84CC16",
+          "minColor": "#84CC16",
+          "midColor": "#84CC16",
+          "maxColor": "#84CC16",
+          "basedOn": "lens_id_string",
+          "condition": "equals",
+          "conditionValue": "evidence_argument",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
     }
   ],
   "relationshipTypes": [],
@@ -1203,6 +1513,24 @@
       "cypher": "MATCH path=(r:Concept)-[:PREREQUISITE_OF*]->(t:Concept) WHERE t.name CONTAINS $concept RETURN path LIMIT 100",
       "params": [],
       "hasCypherErrors": false
+    },
+    {
+      "name": "Thinking lenses for $cluster",
+      "id": "tmpl:7",
+      "createdAt": 1740268800000,
+      "text": "Thinking lenses for $cluster",
+      "cypher": "MATCH (cc:ConceptCluster) WHERE cc.name CONTAINS $cluster OR cc.cluster_id = $cluster MATCH path=(cc)-[:APPLIES_LENS]->(tl:ThinkingLens) RETURN path LIMIT 50",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "All thinking lenses",
+      "id": "tmpl:8",
+      "createdAt": 1740268800000,
+      "text": "All thinking lenses",
+      "cypher": "MATCH (tl:ThinkingLens) RETURN tl LIMIT 20",
+      "params": [],
+      "hasCypherErrors": false
     }
   ],
   "palette": {
@@ -1240,5 +1568,5 @@
   "hideUncategorisedData": false,
   "parentPerspectiveId": null,
   "createdAt": 1708387200000,
-  "lastEditedAt": 1708387200000
+  "lastEditedAt": 1740268800000
 }

@@ -238,6 +238,22 @@ NODE_STYLES = {
         'size': 3,
     },
 
+    # THINKING LENSES LAYER (Violet — cross-subject cognitive frames)
+    'ThinkingLens': {
+        'color': '#7C3AED',  # Violet-600
+        'icon': 'psychology',
+        'category': 'UK Curriculum',
+        'size': 2,
+    },
+
+    # CONTENT VEHICLES LAYER (Teal — teaching packs)
+    'ContentVehicle': {
+        'color': '#0D9488',  # Teal-600
+        'icon': 'local_library',
+        'category': 'Content Vehicle',
+        'size': 2,
+    },
+
     # OAK CONTENT (Future layer - placeholder)
     'OakUnit': {
         'color': '#16A34A',  # Green-600

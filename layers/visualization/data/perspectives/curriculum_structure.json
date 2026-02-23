@@ -1,5 +1,5 @@
 {
-  "name": "UK Curriculum — Structure",
+  "name": "UK Curriculum \u2014 Structure",
   "id": "f45e04cf-e5e5-4bfe-a486-b49817d666a7",
   "version": "1.4.0",
   "categories": [
@@ -1259,6 +1259,122 @@
       ],
       "createdAt": 1708387200000,
       "lastEditedAt": 1708387200000
+    },
+    {
+      "id": 13,
+      "name": "ConceptCluster",
+      "color": "#6366F1",
+      "icon": "FCD4E0B9-A86D-4DFB-AB79-3D9E8727E540",
+      "labels": [
+        "ConceptCluster"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "cluster_type",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "thinking_lens_primary",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "cluster_id",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "rationale",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "cluster_type_string",
+          "condition": "equals",
+          "conditionValue": "introduction",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "cluster_type_string",
+          "condition": "equals",
+          "conditionValue": "practice",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "cluster_type_string",
+          "condition": "equals",
+          "conditionValue": "consolidation",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#EF4444",
+          "minColor": "#EF4444",
+          "midColor": "#EF4444",
+          "maxColor": "#EF4444",
+          "basedOn": "cluster_type_string",
+          "condition": "equals",
+          "conditionValue": "assessment",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
     }
   ],
   "relationshipTypes": [],
@@ -1316,6 +1432,33 @@
       "cypher": "MATCH (y:Year {name:'Y1'})-[:HAS_PROGRAMME]->(p)-[*1..3]->() RETURN p LIMIT 200",
       "params": [],
       "hasCypherErrors": false
+    },
+    {
+      "name": "Teaching clusters for $domain",
+      "id": "tmpl:7",
+      "createdAt": 1740268800000,
+      "text": "Teaching clusters for $domain",
+      "cypher": "MATCH (d:Domain) WHERE d.domain_id = $domain OR d.domain_name CONTAINS $domain MATCH path=(d)-[:HAS_CLUSTER]->(cc:ConceptCluster)-[:GROUPS]->(c:Concept) RETURN path LIMIT 150",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Cluster sequence for $domain",
+      "id": "tmpl:8",
+      "createdAt": 1740268800000,
+      "text": "Cluster sequence for $domain",
+      "cypher": "MATCH (d:Domain) WHERE d.domain_id = $domain MATCH path=(d)-[:HAS_CLUSTER]->(cc:ConceptCluster) OPTIONAL MATCH seq=(cc)-[:SEQUENCED_AFTER]->(cc2:ConceptCluster) RETURN path, seq LIMIT 100",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "EYFS to KS1 progression",
+      "id": "tmpl:9",
+      "createdAt": 1740268800000,
+      "text": "EYFS to KS1 progression",
+      "cypher": "MATCH path=(c1:Concept)-[:PREREQUISITE_OF]->(c2:Concept) WHERE c1.concept_id =~ '(CL|PSED|PD|LIT|EYMA|UW|EAD)-R-.*' RETURN path LIMIT 100",
+      "params": [],
+      "hasCypherErrors": false
     }
   ],
   "palette": {
@@ -1353,5 +1496,5 @@
   "hideUncategorisedData": false,
   "parentPerspectiveId": null,
   "createdAt": 1708387200000,
-  "lastEditedAt": 1708387200000
+  "lastEditedAt": 1740268800000
 }
