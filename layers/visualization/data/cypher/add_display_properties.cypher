@@ -234,6 +234,13 @@ SET n.display_color = '#3B0764',
     n.display_category = 'Learner Profile',
     n.display_size = 3;
 
+// DifficultyLevel - UK Curriculum
+MATCH (n:DifficultyLevel)
+SET n.display_color = '#F59E0B',
+    n.display_icon = 'signal_cellular_alt',
+    n.display_category = 'UK Curriculum',
+    n.display_size = 1;
+
 // ThinkingLens - UK Curriculum
 MATCH (n:ThinkingLens)
 SET n.display_color = '#7C3AED',

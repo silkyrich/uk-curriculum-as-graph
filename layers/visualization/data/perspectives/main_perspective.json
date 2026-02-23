@@ -2871,6 +2871,140 @@
       ],
       "createdAt": 1740268800000,
       "lastEditedAt": 1740268800000
+    },
+    {
+      "id": 35,
+      "name": "DifficultyLevel",
+      "color": "#F59E0B",
+      "icon": "697105CA-C37F-4B0D-BA33-FD6B7924B9C3",
+      "labels": [
+        "DifficultyLevel"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "level_number",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "description",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "label",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "example_task",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "example_response",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "common_errors",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "level_id",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 1,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 1,
+          "color": "#22C55E",
+          "minColor": "#22C55E",
+          "midColor": "#22C55E",
+          "maxColor": "#22C55E",
+          "basedOn": "level_number_string",
+          "condition": "equals",
+          "conditionValue": "1",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 1,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "level_number_string",
+          "condition": "equals",
+          "conditionValue": "2",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 1,
+          "color": "#F97316",
+          "minColor": "#F97316",
+          "midColor": "#F97316",
+          "maxColor": "#F97316",
+          "basedOn": "level_number_string",
+          "condition": "equals",
+          "conditionValue": "3",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 1,
+          "color": "#EF4444",
+          "minColor": "#EF4444",
+          "midColor": "#EF4444",
+          "maxColor": "#EF4444",
+          "basedOn": "level_number_string",
+          "condition": "equals",
+          "conditionValue": "4",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 1,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
     }
   ],
   "relationshipTypes": [],
@@ -3034,6 +3168,24 @@
       "createdAt": 1740268800000,
       "text": "All thinking lenses",
       "cypher": "MATCH (tl:ThinkingLens) RETURN tl LIMIT 20",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Difficulty levels for $concept",
+      "id": "tmpl:19",
+      "createdAt": 1740268800000,
+      "text": "Difficulty levels for $concept",
+      "cypher": "MATCH (c:Concept) WHERE c.concept_id = $concept OR c.concept_name CONTAINS $concept MATCH path=(c)-[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel) RETURN path ORDER BY dl.level_number LIMIT 20",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Y3 Maths difficulty map",
+      "id": "tmpl:20",
+      "createdAt": 1740268800000,
+      "text": "Y3 Maths difficulty map",
+      "cypher": "MATCH path=(c:Concept)-[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel) WHERE c.concept_id STARTS WITH 'MA-Y3-' RETURN path LIMIT 300",
       "params": [],
       "hasCypherErrors": false
     }

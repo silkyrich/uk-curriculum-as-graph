@@ -238,6 +238,14 @@ NODE_STYLES = {
         'size': 3,
     },
 
+    # DIFFICULTY LEVELS (Amber — sub-concept difficulty gradations)
+    'DifficultyLevel': {
+        'color': '#F59E0B',  # Amber-500
+        'icon': 'signal_cellular_alt',
+        'category': 'UK Curriculum',
+        'size': 1,
+    },
+
     # THINKING LENSES LAYER (Violet — cross-subject cognitive frames)
     'ThinkingLens': {
         'color': '#7C3AED',  # Violet-600
