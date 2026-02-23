@@ -47,6 +47,8 @@ def create_schema(driver):
         "CREATE CONSTRAINT pedagogy_technique_id_unique IF NOT EXISTS FOR (pt:PedagogyTechnique) REQUIRE pt.technique_id IS UNIQUE",
         # Concept Grouping layer (v3.7)
         "CREATE CONSTRAINT concept_cluster_id_unique IF NOT EXISTS FOR (cc:ConceptCluster) REQUIRE cc.cluster_id IS UNIQUE",
+        # Content Vehicles layer (v3.8)
+        "CREATE CONSTRAINT content_vehicle_id_unique IF NOT EXISTS FOR (cv:ContentVehicle) REQUIRE cv.vehicle_id IS UNIQUE",
     ]
 
     # Indexes
@@ -82,6 +84,10 @@ def create_schema(driver):
         "CREATE INDEX concept_cluster_type_idx IF NOT EXISTS FOR (cc:ConceptCluster) ON (cc.cluster_type)",
         "CREATE INDEX concept_is_keystone_idx IF NOT EXISTS FOR (c:Concept) ON (c.is_keystone)",
         "CREATE INDEX concept_teaching_weight_idx IF NOT EXISTS FOR (c:Concept) ON (c.teaching_weight)",
+        # Content Vehicles indexes (v3.8)
+        "CREATE INDEX content_vehicle_type_idx IF NOT EXISTS FOR (cv:ContentVehicle) ON (cv.vehicle_type)",
+        "CREATE INDEX content_vehicle_subject_idx IF NOT EXISTS FOR (cv:ContentVehicle) ON (cv.subject)",
+        "CREATE INDEX content_vehicle_ks_idx IF NOT EXISTS FOR (cv:ContentVehicle) ON (cv.key_stage)",
     ]
 
     print("Creating constraints...")

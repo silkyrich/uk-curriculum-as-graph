@@ -1,0 +1,137 @@
+{
+  "version": "1.0",
+  "subject": "History",
+  "key_stage": "KS3",
+  "authored_by": "llm-draft",
+  "authored_date": "2026-02-22",
+  "note": "Content vehicles for KS3 History. Seeded from Topics layer + v4 teacher feedback (Adeyemi).",
+  "vehicles": [
+    {
+      "vehicle_id": "HI-KS3-CV001",
+      "name": "Medieval Britain 1066-1509",
+      "vehicle_type": "topic_study",
+      "description": "Development of Church, state and society in Medieval Britain — from the Norman Conquest through Magna Carta, the Black Death, and the Wars of the Roses.",
+      "delivers_concept_ids": ["HI-KS3-C001", "HI-KS3-C004"],
+      "implements_topic_id": "HI-KS3-TOPIC-001",
+      "period": "1066 - 1509",
+      "key_figures": ["William the Conqueror", "Thomas Becket", "King John", "Simon de Montfort", "Henry VII"],
+      "key_events": ["Norman Conquest 1066", "Murder of Becket 1170", "Magna Carta 1215", "Black Death 1348-49", "Peasants' Revolt 1381", "Battle of Bosworth 1485"],
+      "sources": ["Bayeux Tapestry", "Magna Carta", "Domesday Book", "Chronicles of Jean Froissart"],
+      "source_types": ["primary visual", "primary legal", "primary administrative", "primary written"],
+      "perspectives": ["Norman lord", "Saxon peasant", "medieval monk", "merchant", "peasant rebel"],
+      "definitions": ["feudalism", "Magna Carta", "Parliament", "Domesday Book", "Black Death", "serf", "baron", "Church vs State"],
+      "assessment_guidance": "Can pupils construct an argument about whether power shifted from the monarch to the people between 1066 and 1509? Can they evaluate the significance of Magna Carta using contemporary and modern perspectives? Can they analyse primary sources critically, considering provenance and purpose?",
+      "success_criteria": [
+        "Construct a sustained argument about change in power 1066-1509",
+        "Evaluate the significance of Magna Carta with evidence",
+        "Analyse a medieval source considering its provenance and purpose",
+        "Explain how the Black Death caused social and economic change"
+      ],
+      "resources": [
+        "https://www.nationalarchives.gov.uk/education/resources/magna-carta/"
+      ],
+      "resource_types": ["archive_collection"]
+    },
+    {
+      "vehicle_id": "HI-KS3-CV002",
+      "name": "The Elizabethan Age",
+      "vehicle_type": "topic_study",
+      "description": "England under Elizabeth I — religious settlement, exploration, the Spanish Armada, and the development of English national identity.",
+      "delivers_concept_ids": ["HI-KS3-C001", "HI-KS3-C002", "HI-KS3-C004"],
+      "implements_topic_id": "HI-KS3-TOPIC-002",
+      "period": "1558 - 1603",
+      "key_figures": ["Elizabeth I", "Francis Drake", "Mary Queen of Scots", "William Shakespeare", "Walter Raleigh"],
+      "key_events": ["Elizabethan Religious Settlement 1559", "Execution of Mary Queen of Scots 1587", "Defeat of Spanish Armada 1588", "Founding of Roanoke colony 1585"],
+      "sources": ["Armada Portrait", "State papers and letters", "Tilbury speech (attributed)", "Maps of Drake's voyages"],
+      "source_types": ["primary visual", "primary written", "primary written (attributed)", "primary cartographic"],
+      "perspectives": ["Elizabeth I", "Catholic recusant", "explorer", "Spanish opponent", "colonised peoples"],
+      "definitions": ["Reformation", "recusant", "Armada", "exploration", "colonisation", "Golden Age", "Privy Council"],
+      "assessment_guidance": "Can pupils construct an argument about whether Elizabeth's reign was truly a 'Golden Age'? Can they analyse the Armada Portrait as propaganda? Can they evaluate the impact of English exploration from multiple perspectives, including colonised peoples?",
+      "success_criteria": [
+        "Evaluate whether Elizabeth's reign was a 'Golden Age' with evidence for and against",
+        "Analyse the Armada Portrait as a piece of propaganda",
+        "Explain the religious settlement and its consequences",
+        "Consider the impact of exploration from multiple perspectives"
+      ],
+      "resources": [],
+      "resource_types": []
+    },
+    {
+      "vehicle_id": "HI-KS3-CV003",
+      "name": "Ideas, Power, Industry and Empire 1745-1901",
+      "vehicle_type": "topic_study",
+      "description": "The transformation of Britain through industrialisation, the expansion of empire, and the growth of democratic ideas — from Enlightenment to Victorian era.",
+      "delivers_concept_ids": ["HI-KS3-C001", "HI-KS3-C002", "HI-KS3-C004"],
+      "implements_topic_id": "HI-KS3-TOPIC-004",
+      "period": "1745 - 1901",
+      "key_figures": ["Queen Victoria", "Olaudah Equiano", "Mary Seacole", "Emmeline Pankhurst", "Isambard Kingdom Brunel"],
+      "key_events": ["Industrial Revolution begins c.1760", "Abolition of slave trade 1807", "Great Reform Act 1832", "Great Exhibition 1851", "Scramble for Africa 1880s"],
+      "sources": ["Equiano's autobiography", "Factory Commission reports 1833", "Census data", "Photographs of industrial towns"],
+      "source_types": ["primary written", "primary administrative", "primary statistical", "primary visual"],
+      "perspectives": ["factory owner", "child worker", "enslaved African", "abolitionist", "colonial subject"],
+      "definitions": ["Industrial Revolution", "empire", "abolition", "suffrage", "reform", "urbanisation", "colony", "exploitation"],
+      "assessment_guidance": "Can pupils construct an argument about who benefited and who suffered from industrialisation and empire? Can they critically analyse sources about working conditions, considering purpose and reliability? Can they evaluate the consequences of empire from multiple perspectives?",
+      "success_criteria": [
+        "Explain causes and consequences of the Industrial Revolution",
+        "Construct an argument about the impact of empire using multiple perspectives",
+        "Analyse industrial-era sources critically (provenance, purpose, reliability)",
+        "Evaluate the significance of abolition and reform movements"
+      ],
+      "resources": [],
+      "resource_types": []
+    },
+    {
+      "vehicle_id": "HI-KS3-CV004",
+      "name": "Challenges 1901 to Present Day",
+      "vehicle_type": "topic_study",
+      "description": "Challenges for Britain, Europe and the wider world in the 20th and 21st centuries — World Wars, decolonisation, social change, and globalisation.",
+      "delivers_concept_ids": ["HI-KS3-C001", "HI-KS3-C002", "HI-KS3-C003", "HI-KS3-C004"],
+      "implements_topic_id": "HI-KS3-TOPIC-005",
+      "period": "1901 - present",
+      "key_figures": ["Winston Churchill", "Mahatma Gandhi", "Martin Luther King Jr", "Nelson Mandela"],
+      "key_events": ["World War I 1914-18", "World War II 1939-45", "Indian independence 1947", "Windrush 1948", "Fall of Berlin Wall 1989"],
+      "sources": ["War poetry", "Propaganda posters", "Newsreel footage", "Oral histories"],
+      "source_types": ["primary written", "primary visual", "primary audiovisual", "oral testimony"],
+      "perspectives": ["British soldier", "civilian in the Blitz", "colonial independence leader", "Windrush generation", "Holocaust survivor"],
+      "definitions": ["total war", "propaganda", "decolonisation", "Cold War", "Windrush", "globalisation", "civil rights"],
+      "assessment_guidance": "Can pupils construct sustained arguments about the causes and consequences of 20th century conflicts? Can they evaluate the reliability of propaganda as a historical source? Can they analyse multiple perspectives on decolonisation?",
+      "success_criteria": [
+        "Construct a causal argument about a 20th century conflict",
+        "Evaluate propaganda sources critically",
+        "Analyse decolonisation from multiple perspectives",
+        "Explain the significance of social change in 20th century Britain"
+      ],
+      "resources": [
+        "https://www.iwm.org.uk/learning"
+      ],
+      "resource_types": ["museum_collection"]
+    },
+    {
+      "vehicle_id": "HI-KS3-CV005",
+      "name": "The Holocaust",
+      "vehicle_type": "topic_study",
+      "description": "Understanding the Holocaust — antisemitism, Nazi persecution, genocide, resistance, and the legacy of remembrance.",
+      "delivers_concept_ids": ["HI-KS3-C002", "HI-KS3-C003", "HI-KS3-C004"],
+      "implements_topic_id": "HI-KS3-TOPIC-006",
+      "period": "1933 - 1945",
+      "key_figures": ["Anne Frank", "Primo Levi", "Oskar Schindler", "Kindertransport children"],
+      "key_events": ["Nuremberg Laws 1935", "Kristallnacht 1938", "Kindertransport 1938-39", "Wannsee Conference 1942", "Liberation of Auschwitz 1945"],
+      "sources": ["Anne Frank's diary", "Primo Levi's testimony", "Nuremberg trial transcripts", "Photographs from liberation"],
+      "source_types": ["primary written", "testimony", "primary legal", "primary visual"],
+      "perspectives": ["Jewish victim", "rescuer", "bystander", "perpetrator", "liberator"],
+      "definitions": ["antisemitism", "Holocaust", "genocide", "persecution", "ghetto", "concentration camp", "Kindertransport", "remembrance"],
+      "assessment_guidance": "Can pupils explain the escalation from discrimination to genocide? Can they use testimony sensitively as historical evidence? Can they construct an argument about the importance of remembrance? This topic requires particular sensitivity — follow school and UCL Centre for Holocaust Education guidance.",
+      "success_criteria": [
+        "Explain the stages of persecution from discrimination to genocide",
+        "Use Holocaust testimony as historical evidence with sensitivity",
+        "Construct an argument about why the Holocaust matters today",
+        "Analyse different responses to the Holocaust (resistance, rescue, bystanding)"
+      ],
+      "resources": [
+        "https://www.het.org.uk/",
+        "https://www.holocausteducation.org.uk/"
+      ],
+      "resource_types": ["educational_resource", "educational_resource"]
+    }
+  ]
+}

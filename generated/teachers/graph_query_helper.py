@@ -3,6 +3,7 @@
 
 Surfaces ALL graph layers relevant to teaching:
   - UK Curriculum: domains, concepts, prerequisites, CO_TEACHES, clusters, objectives
+  - Content Vehicles: choosable teaching packs with resources, definitions, assessment
   - Topics: case studies and teaching units (Geography, History)
   - Assessment: KS2 ContentDomainCodes (what is formally tested)
   - Epistemic Skills: disciplinary thinking skills with progression chains
@@ -207,6 +208,83 @@ def query_domain_context(session, domain_id):
             sections.append(f"Type: {t['ttype']} | Concepts: {', '.join(t['concept_ids'])}")
             if t['note']:
                 sections.append(f"NC note: {t['note']}")
+
+    # ── Content Vehicles (teaching packs) ────────────────────────────
+    vehicles = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_VEHICLE]->(cv:ContentVehicle)
+        OPTIONAL MATCH (cv)-[:DELIVERS]->(c:Concept)
+        WITH cv, collect(c.concept_id) AS concept_ids
+        OPTIONAL MATCH (cv)-[:IMPLEMENTS]->(t:Topic)
+        RETURN cv.vehicle_id AS id, cv.name AS name, cv.vehicle_type AS vtype,
+               cv.description AS desc, cv.definitions AS defs,
+               cv.assessment_guidance AS assessment,
+               cv.success_criteria AS criteria,
+               concept_ids,
+               t.topic_id AS topic_id, t.topic_name AS topic_name,
+               cv.period AS period, cv.key_figures AS key_figures,
+               cv.sources AS sources, cv.perspectives AS perspectives,
+               cv.location AS location, cv.data_points AS data_points,
+               cv.themes AS themes,
+               cv.enquiry_type AS enquiry_type, cv.equipment AS equipment,
+               cv.expected_outcome AS expected_outcome,
+               cv.genre AS genre, cv.suggested_texts AS suggested_texts,
+               cv.writing_outcome AS writing_outcome, cv.grammar_focus AS grammar_focus,
+               cv.cpa_stage AS cpa_stage, cv.manipulatives AS manipulatives,
+               cv.representations AS representations, cv.common_errors AS common_errors
+        ORDER BY cv.vehicle_id
+    """, did=domain_id))
+    if vehicles:
+        sections.append(f"\n### Content Vehicles — Teaching Packs ({len(vehicles)})")
+        sections.append("These are choosable teaching packs that deliver concepts in this domain. Teachers select the pack that fits their class.\n")
+        for v in vehicles:
+            sections.append(f"#### {v['id']} — {v['name']} ({v['vtype']})")
+            sections.append(f"{v['desc']}")
+            sections.append(f"Delivers: {', '.join(v['concept_ids'])}")
+            if v['topic_id']:
+                sections.append(f"Implements topic: {v['topic_id']} ({v['topic_name']})")
+            # Subject-specific properties
+            if v['period']:
+                sections.append(f"Period: {v['period']}")
+            if v['key_figures']:
+                sections.append(f"Key figures: {', '.join(v['key_figures'])}")
+            if v['sources']:
+                sections.append(f"Sources: {', '.join(v['sources'])}")
+            if v['perspectives']:
+                sections.append(f"Perspectives: {', '.join(v['perspectives'])}")
+            if v['location']:
+                sections.append(f"Location: {v['location']}")
+            if v['data_points']:
+                sections.append(f"Data: {', '.join(v['data_points'])}")
+            if v['themes']:
+                sections.append(f"Themes: {', '.join(v['themes'])}")
+            if v['enquiry_type']:
+                sections.append(f"Enquiry type: {v['enquiry_type']}")
+            if v['equipment']:
+                sections.append(f"Equipment: {', '.join(v['equipment'])}")
+            if v['expected_outcome']:
+                sections.append(f"Expected outcome: {v['expected_outcome']}")
+            if v['genre']:
+                sections.append(f"Genre: {v['genre']}")
+            if v['suggested_texts']:
+                sections.append(f"Suggested texts: {', '.join(v['suggested_texts'])}")
+            if v['writing_outcome']:
+                sections.append(f"Writing outcome: {v['writing_outcome']}")
+            if v['grammar_focus']:
+                sections.append(f"Grammar focus: {', '.join(v['grammar_focus'])}")
+            if v['cpa_stage']:
+                sections.append(f"CPA stage: {v['cpa_stage']}")
+            if v['manipulatives']:
+                sections.append(f"Manipulatives: {', '.join(v['manipulatives'])}")
+            if v['representations']:
+                sections.append(f"Representations: {', '.join(v['representations'])}")
+            if v['common_errors']:
+                sections.append(f"Common errors: {', '.join(v['common_errors'])}")
+            if v['defs']:
+                sections.append(f"Key vocabulary: {', '.join(v['defs'])}")
+            if v['assessment']:
+                sections.append(f"Assessment: {v['assessment']}")
+            if v['criteria']:
+                sections.append(f"Success criteria: {'; '.join(v['criteria'])}")
 
     # ── Assessment — KS2 Content Domain Codes ────────────────────────
     assessments = list(session.run("""

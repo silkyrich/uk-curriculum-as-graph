@@ -2472,11 +2472,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "rationale": "Mean, median, mode and range are summary statistics that reveal the central pattern in a data set — pupils must recognise when values cluster around a centre and identify how outliers distort measures like the mean relative to the median."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Choosing which average best represents a data set is an argumentative act: pupils must justify their choice using properties of the distribution and acknowledge when a measure is misleading, building the habit of evidence-based statistical reasoning."
             }
           ],
           "concept_ids": [
@@ -2492,11 +2492,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "rationale": "Choosing an appropriate chart type (bar chart, pie chart, frequency polygon, cumulative frequency) depends on identifying the pattern in the data structure — whether it is categorical, continuous, grouped or cumulative — and selecting the representation that reveals that pattern most clearly."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Comparing two data distributions requires constructing a reasoned argument using statistical evidence — pupils must cite specific features (median, IQR, shape) from box plots or cumulative frequency curves to support claims about which group performed better or more consistently."
             }
           ],
           "concept_ids": [
@@ -2513,11 +2513,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "rationale": "Correlation is a bivariate pattern — pupils must identify whether the relationship between two variables is positive, negative or zero, and assess how strongly the points cluster around a line of best fit to characterise the strength of that pattern."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Drawing a line of best fit and using it to interpolate or extrapolate are evidence-based claims that require pupils to distinguish correlation from causation and acknowledge the limits of their model — a central habit of statistical argumentation."
             }
           ],
           "concept_ids": [
@@ -2582,11 +2582,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
+              "rationale": "Factorisation and expansion are inverse structural patterns — recognising that ax² + bx + c can always be rewritten as a product of linear factors (when it factorises) is the key insight, and the double-bracket pattern ax² + (ad+bc)x + bd is the generalised rule pupils must internalise."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "lens": "structure_function",
+              "rationale": "Each algebraic form (expanded, factorised, completed square) reveals different structural features — the factorised form shows the roots, the completed square form reveals the vertex — so choosing the right form depends on what property you need to access."
             }
           ],
           "concept_ids": [
@@ -2600,12 +2600,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
+              "lens": "cause_and_effect",
+              "rationale": "Equation solving is systematic if-then reasoning: each operation applied to both sides causes a predictable transformation that preserves equality, and selecting the right sequence of operations to isolate the unknown requires internalising these causal chains."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "lens": "patterns",
+              "rationale": "Quadratic equations can be solved by factorisation, completing the square or the quadratic formula — recognising which structural pattern (two identical factors, two different factors, irreducible quadratic) determines which method is most efficient is the key procedural insight."
             }
           ],
           "concept_ids": [
@@ -2622,11 +2622,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
+              "rationale": "Sequences are formalised number patterns — pupils derive the nth term formula by identifying the constant difference (arithmetic) or constant ratio (geometric) that drives the pattern, and extend this to express the general rule algebraically."
             },
             {
               "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "rationale": "The gradient of a straight-line graph encodes a causal rate of change: for every unit increase in x, y changes by exactly m units — and for non-linear graphs (quadratic, exponential), the changing rate of change is itself what pupils must interpret and compare."
             }
           ],
           "concept_ids": [
@@ -2642,12 +2642,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
+              "lens": "cause_and_effect",
+              "rationale": "Graph transformations encode precise causal rules: f(x+a) shifts the graph left by a units, af(x) stretches it vertically by factor a — each modification to the function notation causes a specific and predictable geometric effect on the graph."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "lens": "structure_function",
+              "rationale": "Function notation (f(x), fg(x), f⁻¹(x)) reveals the structural architecture of composed and inverted operations — composite functions expose how independent processes chain together, while inverse functions expose the structural symmetry of reversing that chain."
             }
           ],
           "concept_ids": [
@@ -2732,11 +2732,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Pythagoras' Theorem and the trigonometric ratios are structural properties of right-angled triangles — the right angle determines a fixed relationship between the three sides (a² + b² = c²) and fixed ratios between sides and angles (sin, cos, tan) that pupils apply by recognising the structural configuration present."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Trigonometric ratios are proportional relationships: sin θ = opposite/hypotenuse is a fixed ratio for any given angle regardless of the triangle's size, which is why extending Pythagoras to 3-D problems requires pupils to identify the right proportional relationship across multiple right-angled triangles within a 3-D figure."
             }
           ],
           "concept_ids": [

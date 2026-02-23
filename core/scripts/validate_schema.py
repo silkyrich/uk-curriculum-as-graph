@@ -1017,6 +1017,77 @@ class SchemaValidator:
         self.add(ValidationResult("Cluster type distribution", status, total, issues))
 
     # =========================================================================
+    # M. Content Vehicles layer (v3.8)
+    # =========================================================================
+
+    def check_content_vehicle_completeness(self):
+        """ContentVehicle nodes have required properties (skipped if none exist)."""
+        total = self.scalar("MATCH (cv:ContentVehicle) RETURN count(cv)") or 0
+        if total == 0:
+            self.add(ValidationResult("ContentVehicle completeness", "PASS", 0,
+                                      ["No ContentVehicle nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (cv:ContentVehicle)
+            WHERE cv.vehicle_id IS NULL OR cv.name IS NULL OR cv.name = ''
+               OR cv.vehicle_type IS NULL OR cv.vehicle_type = ''
+               OR cv.subject IS NULL OR cv.subject = ''
+               OR cv.description IS NULL OR cv.description = ''
+            RETURN cv.vehicle_id AS id
+        """)
+        issues = [f"ContentVehicle '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("ContentVehicle completeness", status, total, issues))
+
+    def check_content_vehicle_delivers_coverage(self):
+        """Every ContentVehicle DELIVERS at least 1 Concept (skipped if none exist)."""
+        total = self.scalar("MATCH (cv:ContentVehicle) RETURN count(cv)") or 0
+        if total == 0:
+            self.add(ValidationResult("ContentVehicle DELIVERS coverage", "PASS", 0,
+                                      ["No ContentVehicle nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (cv:ContentVehicle)
+            WHERE NOT (cv)-[:DELIVERS]->(:Concept)
+            RETURN cv.vehicle_id AS id
+        """)
+        issues = [f"ContentVehicle '{r['id']}' has no DELIVERS relationship" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("ContentVehicle DELIVERS coverage", status, total, issues))
+
+    def check_content_vehicle_assessment_guidance(self):
+        """Every ContentVehicle should have non-null assessment_guidance (skipped if none exist)."""
+        total = self.scalar("MATCH (cv:ContentVehicle) RETURN count(cv)") or 0
+        if total == 0:
+            self.add(ValidationResult("ContentVehicle assessment_guidance", "PASS", 0,
+                                      ["No ContentVehicle nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (cv:ContentVehicle)
+            WHERE cv.assessment_guidance IS NULL OR cv.assessment_guidance = ''
+            RETURN cv.vehicle_id AS id
+        """)
+        issues = [f"ContentVehicle '{r['id']}' missing assessment_guidance" for r in records]
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("ContentVehicle assessment_guidance", status, total, issues))
+
+    def check_content_vehicle_definitions(self):
+        """Every ContentVehicle should have non-empty definitions list (skipped if none exist)."""
+        total = self.scalar("MATCH (cv:ContentVehicle) RETURN count(cv)") or 0
+        if total == 0:
+            self.add(ValidationResult("ContentVehicle definitions", "PASS", 0,
+                                      ["No ContentVehicle nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (cv:ContentVehicle)
+            WHERE cv.definitions IS NULL OR size(cv.definitions) = 0
+            RETURN cv.vehicle_id AS id
+        """)
+        issues = [f"ContentVehicle '{r['id']}' has no definitions" for r in records]
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("ContentVehicle definitions", status, total, issues))
+
+    # =========================================================================
     # K. Enrichment coverage (DB-level)
     # =========================================================================
 
@@ -1090,6 +1161,7 @@ class SchemaValidator:
         valid_categories = {
             'UK Curriculum', 'CASE Standards', 'Epistemic Skills',
             'Assessment', 'Structure', 'Learner Profile', 'Oak Content',
+            'Content Vehicle',
         }
         records = self.run("""
             MATCH (n)
@@ -1210,6 +1282,11 @@ class SchemaValidator:
             self.check_cluster_max_size,
             self.check_cluster_non_empty,
             self.check_cluster_type_distribution,
+            # M. Content Vehicles (v3.8)
+            self.check_content_vehicle_completeness,
+            self.check_content_vehicle_delivers_coverage,
+            self.check_content_vehicle_assessment_guidance,
+            self.check_content_vehicle_definitions,
             # K. Enrichment coverage
             self.check_concept_enrichment_coverage,
             # L. Display & Visualization
