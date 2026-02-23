@@ -95,6 +95,16 @@ data/
 python3 layers/content-vehicles/scripts/import_content_vehicles.py
 ```
 
+## V5 Teacher Review (2026-02-23)
+
+Five simulated teacher personas reviewed the vehicles in context. Key findings:
+
+- **Content readiness nearly doubled** — average 3.7/10 → 6.6/10
+- **Data errors found and fixed:** 6/8 KS3 Science vehicles had wrong `delivers_concept_ids` (systematic domain offset); 3 KS2 Science vehicles mixed Working Scientifically process concepts into delivers; EN-Y4-CV004 recommended a baby book for Y4 poetry (replaced with age-appropriate Rosen collection)
+- **Consensus remaining gaps:** no worked examples (despite `worked_example_set` type), no difficulty sub-levels, ~40% Geography statutory content not yet covered, thin safety notes on some Science vehicles, Thinking Lens rationales age-inappropriate for KS1
+
+Full reports in `generated/teachers-v4/` (gitignored — lesson plans, teaching logs, v5 findings, group synthesis).
+
 ## Queries
 
 ```cypher

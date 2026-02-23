@@ -373,6 +373,7 @@ Every feature that introduces or modifies data processing must:
 - Visualization / Bloom perspectives? → `layers/visualization/`
 - Age-appropriate design / learner profiles? → `layers/learner-profiles/`
 - Content vehicles / teaching packs? → `layers/content-vehicles/`
+- Teacher review findings / lesson plans? → `generated/teachers-v4/` (V5 review), `generated/teachers-v3/` (V4 review)
 - Concept grouping / lesson clusters? → `layers/uk-curriculum/scripts/generate_concept_clusters.py`
 - Thinking lenses (cognitive framing for clusters)? → `layers/uk-curriculum/data/thinking_lenses/` + `import_thinking_lenses.py`
 - User stories? → `docs/user-stories/`
@@ -475,7 +476,7 @@ class LayerImporter:
 
 ---
 
-## Current State (2026-02-22)
+## Current State (2026-02-23)
 
 ✅ **Documentation reorganised:**
 - 61 docs sorted into semantic subdirectories (`design/`, `analysis/`, `archive/`, `user-stories/`, `research/learning-science/`, `research/interoperability/`)
@@ -528,12 +529,13 @@ class LayerImporter:
 - EYFS Year -[:PRECEDES]-> Y1 — completes the progression chain from Reception to Year 11
 - Import script: `layers/eyfs/scripts/import_eyfs.py`
 
-✅ **In Aura cloud database — ThinkingLens + EYFS fully active (2026-02-23):**
+✅ **In Aura cloud database — all layers active (2026-02-23):**
 - Instance: education-graphs (6981841e)
-- **~5,700+ total nodes** including ConceptClusters, ThinkingLens nodes, and EYFS nodes
+- **~4,900+ total nodes** including ConceptClusters, ThinkingLens, EYFS, and ContentVehicle nodes
+- 61 ContentVehicle nodes; 217 DELIVERS + 92 HAS_VEHICLE + 24 IMPLEMENTS relationships
 - 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average)
 - 626 ConceptCluster nodes (167 introduction, 459 practice) — all with `thinking_lens_primary`
-- 1,298 Concept nodes enriched with `teaching_weight` + `co_teach_hints`
+- 1,351 Concept nodes enriched with `teaching_weight` + `co_teach_hints`
 - 53 EYFS Concept nodes; 34 EYFS→KS1 cross-stage prerequisites
 - 1,827 CO_TEACHES relationships (extracted + inferred inverse-operation pairs)
 - Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
@@ -573,16 +575,27 @@ class LayerImporter:
 - Complements existing Programme→Skill links with concept granularity
 - Validator: check_concept_skill_links_completeness added
 
-✅ **Content Vehicles layer (v3.8, 2026-02-22):**
-- ~61 pilot ContentVehicle nodes across 7 subject/KS combinations
+✅ **Content Vehicles layer (v3.8, 2026-02-23):**
+- 61 ContentVehicle nodes across 7 subject/KS combinations, 217 DELIVERS rels, 92 HAS_VEHICLE, 24 IMPLEMENTS
 - Vehicle types: `topic_study` (History), `case_study` (Geography), `investigation` (Science), `text_study` (English), `worked_example_set` (Maths)
 - Subject-specific properties: sources/perspectives (History), data_points/themes (Geography), equipment/enquiry_type (Science), genre/grammar_focus (English), manipulatives/CPA stage (Maths)
 - DELIVERS relationship (many-to-many): vehicles deliver concepts, concepts can be delivered by multiple vehicles
 - HAS_VEHICLE from Domain (inferred), IMPLEMENTS to Topic (optional)
 - Schema: ContentVehicle uniqueness constraint + indexes on vehicle_type, subject, key_stage (v3.8)
 - Validation: 4 new checks (completeness, DELIVERS coverage, assessment_guidance, definitions)
-- Query helper: surfaces vehicles in domain context output with subject-specific properties
+- Query helpers: `graph_query_helper.py` surfaces vehicles + ThinkingLens per domain; `query_cluster_context.py` surfaces lenses per cluster
+- V5 teacher review (2026-02-23): content readiness nearly doubled (avg 3.7→6.6/10); data errors found and fixed
 - No learner data — all nodes are curriculum design metadata
+
+✅ **V5 teacher review (2026-02-23):**
+- 5 simulated teacher personas reviewed the graph with Content Vehicles + Thinking Lenses
+- Team: Henderson (Y2 Maths), Okonkwo (Y4 English), Kapoor (Y5 Science), Osei (KS3 Biology), Adeyemi (KS3 Geography/History)
+- Average content generation readiness: **6.6/10** (up from 3.7/10 in V4)
+- Average structure rating: **7.8/10** (up from 6.7/10 in V4)
+- Data errors found and fixed: 6 KS3 Science vehicles had wrong concept IDs (systematic domain offset), 3 KS2 Science vehicles mixed WS concepts into delivers, EN-Y4-CV004 had wrong book recommendation (baby book for Y4)
+- Remaining consensus gaps: no worked examples, no difficulty sub-levels, incomplete vehicle coverage (~40% Geography statutory content missing), thin safety notes, Thinking Lens rationales age-inappropriate for KS1 and duplicated across clusters
+- Reports: `generated/teachers-v4/` (lesson plans, teaching logs, v5 findings, group report)
+- Path to 9/10: add worked examples, fix data quality, add difficulty sub-levels
 
 🚧 **In progress:**
 - Oak National Academy content (skeleton only)
