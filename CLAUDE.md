@@ -22,6 +22,12 @@ Each **layer** is self-contained with its own:
 
 ### Core Layers (in dependency order)
 
+0. **`layers/eyfs/`** - Early Years Foundation Stage (Reception, age 4-5)
+   - Pre-KS1 layer — must be imported *after* UK curriculum so EYFS→KS1 prerequisites can resolve
+   - 7 Areas of Learning, 17 Early Learning Goals, 53 concepts, 69 prerequisites (34 cross-stage EYFS→KS1)
+   - EYFS Year node (year_id: `'EYFS'`, year_number: 0) linked to KS1 via `PRECEDES`
+   - Script: `layers/eyfs/scripts/import_eyfs.py`
+
 1. **`layers/uk-curriculum/`** - UK National Curriculum (2014)
    - Foundation layer - everything else builds on this
    - 1,278+ concepts, 1,559+ objectives, 316 domains across 55 subjects (KS1–KS4)
@@ -42,12 +48,19 @@ Each **layer** is self-contained with its own:
    - 55 topics
    - Script: `import_topics.py`
 
-5. **`layers/case-standards/`** - US CASE standards (NGSS, Common Core)
+5. **`layers/content-vehicles/`** - Teaching packs (Content Vehicles)
+   - Choosable teaching packs that deliver curriculum concepts with rich metadata
+   - ~60 pilot vehicles across 7 subject/KS combinations (History, Geography, Science, English, Maths)
+   - Vehicle types: `topic_study`, `case_study`, `investigation`, `text_study`, `worked_example_set`
+   - Many-to-many: vehicles deliver concepts, teachers choose between packs
+   - Script: `import_content_vehicles.py`
+
+6. **`layers/case-standards/`** - US CASE standards (NGSS, Common Core)
    - **Independent layer** - can be removed without affecting UK layers
    - NGSS 3D model: 8 practices, 41 core ideas, 208 performance expectations
    - Script: `import_case_standards_v2.py`
 
-6. **`layers/learner-profiles/`** - Age-appropriate design constraints
+7. **`layers/learner-profiles/`** - Age-appropriate design constraints
    - Depends on UK curriculum (links from Year nodes)
    - 33 InteractionTypes + 11 each of ContentGuideline, PedagogyProfile, FeedbackProfile + 5 PedagogyTechniques
    - Each node has an `agent_prompt` or `how_to_implement` property for direct LLM instruction
@@ -56,7 +69,7 @@ Each **layer** is self-contained with its own:
    - Cross-layer: InteractionType -[:SUPPORTS_LEARNING_OF]-> Subject
    - Script: `import_learner_profiles.py`
 
-7. **Concept Grouping** (derived layer, lives within `layers/uk-curriculum/`)
+8. **Concept Grouping** (derived layer, lives within `layers/uk-curriculum/`)
    - Depends on UK curriculum (enrichment signals on Concept nodes + generated ConceptCluster nodes)
    - Enrichment: `teaching_weight` (1-6), `co_teach_hints`, `is_keystone`, `prerequisite_fan_out` on Concept nodes
    - `CO_TEACHES` relationships between co-teachable concepts (extracted + inferred inverse pairs)
@@ -136,11 +149,17 @@ python3 layers/epistemic-skills/scripts/import_epistemic_skills.py
 # Topics (optional, depends on UK)
 python3 layers/topics/scripts/import_topics.py
 
+# Content vehicles (optional, depends on UK + Topics)
+python3 layers/content-vehicles/scripts/import_content_vehicles.py
+
 # CASE standards (optional, independent)
 python3 layers/case-standards/scripts/import_case_standards_v2.py --import
 
 # Learner profiles (optional, depends on UK)
 python3 layers/learner-profiles/scripts/import_learner_profiles.py
+
+# EYFS (optional, depends on UK — run after curriculum so EYFS→KS1 prereqs resolve)
+python3 layers/eyfs/scripts/import_eyfs.py
 
 # Visualization properties (recommended, run last)
 python3 layers/visualization/scripts/apply_formatting.py
@@ -210,6 +229,9 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:Framework`, `:Dimension`, `:Practice`, `:CoreIdea`
 - `:CrosscuttingConcept`, `:PerformanceExpectation`, `:GradeBand`
 
+**Content Vehicles:**
+- `:ContentVehicle` — teaching packs with resources, definitions, assessment (topic_study, case_study, investigation, text_study, worked_example_set)
+
 **Learner Profiles:**
 - `:InteractionType` — 33 UI/pedagogical patterns (phoneme splitter, bus stop division, concept mapper, etc.)
 - `:ContentGuideline` — reading level, TTS, vocabulary constraints per Year
@@ -227,21 +249,31 @@ All nodes have `display_category` property:
 - `"Epistemic Skills"`
 - `"Assessment"`
 - `"Learner Profile"`
+- `"Content Vehicle"`
 - `"Structure"`
 
 ### Key Relationships
 
 ```cypher
-// UK Curriculum structure
+// UK Curriculum structure (KS1–KS4)
 (:Curriculum)-[:HAS_KEY_STAGE]->(:KeyStage)-[:HAS_YEAR]->(:Year)-[:HAS_PROGRAMME]->(:Programme)
 (:Programme)-[:HAS_DOMAIN]->(:Domain)-[:CONTAINS]->(:Objective)-[:TEACHES]->(:Concept)
-(:Concept)-[:PREREQUISITE_OF]->(:Concept)  // Learning progressions
+(:Concept)-[:PREREQUISITE_OF]->(:Concept)  // Learning progressions (incl. EYFS→KS1 cross-stage)
+
+// EYFS
+(:KeyStage {key_stage_id: 'EYFS'})-[:HAS_YEAR]->(:Year {year_id: 'EYFS', year_number: 0})
+(:Year {year_id: 'EYFS'})-[:PRECEDES]->(:Year {year_id: 'Y1'})
+// EYFS follows the same Programme→Domain→Objective→Concept hierarchy
 
 // Concept Grouping + ThinkingLens
 (:Domain)-[:HAS_CLUSTER]->(:ConceptCluster)-[:GROUPS]->(:Concept)
 (:ConceptCluster)-[:SEQUENCED_AFTER]->(:ConceptCluster)               // within-domain lesson ordering
 (:Concept)-[:CO_TEACHES]->(:Concept)                                  // co-teachability signal
 (:ConceptCluster)-[:APPLIES_LENS {rank: int, rationale: str}]->(:ThinkingLens)  // ordered, 1=primary
+
+// Content Vehicles (v3.8)
+(:Domain)-[:HAS_VEHICLE]->(:ContentVehicle)-[:DELIVERS]->(:Concept)
+(:ContentVehicle)-[:IMPLEMENTS]->(:Topic)  // optional link to Topics layer
 
 // NGSS 3D model
 (:Framework)-[:HAS_DIMENSION]->(:Dimension)-[:HAS_PRACTICE]->(:Practice)
@@ -335,10 +367,12 @@ Every feature that introduces or modifies data processing must:
 
 **Want to work on...**
 
+- EYFS / Reception / nursery content? → `layers/eyfs/` (extraction + import), `docs/design/PLAN_EYFS_INTEGRATION.md` (design)
 - UK curriculum extraction? → `layers/uk-curriculum/`
 - NGSS structure? → `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md`
 - Visualization / Bloom perspectives? → `layers/visualization/`
 - Age-appropriate design / learner profiles? → `layers/learner-profiles/`
+- Content vehicles / teaching packs? → `layers/content-vehicles/`
 - Concept grouping / lesson clusters? → `layers/uk-curriculum/scripts/generate_concept_clusters.py`
 - Thinking lenses (cognitive framing for clusters)? → `layers/uk-curriculum/data/thinking_lenses/` + `import_thinking_lenses.py`
 - User stories? → `docs/user-stories/`
@@ -486,12 +520,21 @@ class LayerImporter:
 - `query_cluster_context.py` surfaces the `## Thinking lenses` section in teacher context output
 - No learner data — pure curriculum metadata
 
-✅ **In Aura cloud database — ThinkingLens fully active (2026-02-22):**
+✅ **EYFS layer (2026-02-23):**
+- 7 Areas of Learning as Subjects: Communication and Language, PSED, Physical Development, Literacy, Mathematics, Understanding the World, Expressive Arts and Design
+- 1 KeyStage (EYFS), 1 Year node (year_id: `'EYFS'`, year_number: 0, age_range: `'4-5'`)
+- 17 domains (one per ELG), 51 objectives, 53 concepts
+- 69 PREREQUISITE_OF relationships: 35 within-EYFS + 34 cross-stage EYFS→KS1 (English, Maths, Science, History, Geography, Art, Music, DT)
+- EYFS Year -[:PRECEDES]-> Y1 — completes the progression chain from Reception to Year 11
+- Import script: `layers/eyfs/scripts/import_eyfs.py`
+
+✅ **In Aura cloud database — ThinkingLens + EYFS fully active (2026-02-23):**
 - Instance: education-graphs (6981841e)
-- **~5,600+ total nodes** including ConceptClusters and ThinkingLens nodes
+- **~5,700+ total nodes** including ConceptClusters, ThinkingLens nodes, and EYFS nodes
 - 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average)
 - 626 ConceptCluster nodes (167 introduction, 459 practice) — all with `thinking_lens_primary`
 - 1,298 Concept nodes enriched with `teaching_weight` + `co_teach_hints`
+- 53 EYFS Concept nodes; 34 EYFS→KS1 cross-stage prerequisites
 - 1,827 CO_TEACHES relationships (extracted + inferred inverse-operation pairs)
 - Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
 - 5 Bloom perspectives uploaded and active
@@ -529,6 +572,17 @@ class LayerImporter:
 - Migration: `create_concept_skill_links.py` loads from `layers/uk-curriculum/data/concept_skill_links/*.json`
 - Complements existing Programme→Skill links with concept granularity
 - Validator: check_concept_skill_links_completeness added
+
+✅ **Content Vehicles layer (v3.8, 2026-02-22):**
+- ~61 pilot ContentVehicle nodes across 7 subject/KS combinations
+- Vehicle types: `topic_study` (History), `case_study` (Geography), `investigation` (Science), `text_study` (English), `worked_example_set` (Maths)
+- Subject-specific properties: sources/perspectives (History), data_points/themes (Geography), equipment/enquiry_type (Science), genre/grammar_focus (English), manipulatives/CPA stage (Maths)
+- DELIVERS relationship (many-to-many): vehicles deliver concepts, concepts can be delivered by multiple vehicles
+- HAS_VEHICLE from Domain (inferred), IMPLEMENTS to Topic (optional)
+- Schema: ContentVehicle uniqueness constraint + indexes on vehicle_type, subject, key_stage (v3.8)
+- Validation: 4 new checks (completeness, DELIVERS coverage, assessment_guidance, definitions)
+- Query helper: surfaces vehicles in domain context output with subject-specific properties
+- No learner data — all nodes are curriculum design metadata
 
 🚧 **In progress:**
 - Oak National Academy content (skeleton only)

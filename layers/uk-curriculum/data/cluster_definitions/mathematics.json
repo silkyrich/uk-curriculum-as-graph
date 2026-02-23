@@ -14,11 +14,7 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
-            },
-            {
-              "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "rationale": "The counting sequence is defined by a repeating positional pattern: each number follows the previous by exactly one unit, and skip-counting in 2s, 5s and 10s reveals regular arithmetic patterns that pupils can predict and extend."
             }
           ],
           "concept_ids": [
@@ -34,11 +30,7 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
-            },
-            {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "rationale": "Numeral and word representations follow systematic base-10 patterns — recognising that 'thirty-seven' encodes the same structural pattern as 'twenty-three' allows pupils to generalise across the whole decade sequence."
             }
           ],
           "concept_ids": [
@@ -54,11 +46,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Ordering numbers and using one more/one less builds the foundational insight that the number line is a regular, predictable structure where position encodes magnitude."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "rationale": "Placing numbers on a number line introduces proportional reasoning about relative size — deciding where 47 sits between 0 and 100 requires judging magnitude, not just counting."
             }
           ],
           "concept_ids": [
@@ -79,12 +71,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "cause_and_effect",
+              "rationale": "Addition and subtraction are causal operations: combining two groups causes a predictable increase, and removing a quantity causes a predictable decrease — establishing this cause-and-effect logic is the core cognitive work of the cluster."
             },
             {
-              "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "lens": "patterns",
+              "rationale": "The inverse relationship between addition and subtraction is a fundamental pattern that pupils begin to see here — what one operation does, the other undoes."
             }
           ],
           "concept_ids": [
@@ -99,12 +91,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "Number bonds reveal the complementary pattern of a given total — knowing that 7 + 3 = 10 immediately implies 3 + 7, 10 - 3, and 10 - 7, training pupils to see a family of related facts."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "Missing number problems make the causal structure of addition and subtraction explicit: pupils reason about what value must have caused the given result, applying if-then logic."
             }
           ],
           "concept_ids": [
@@ -125,11 +117,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Doubling and halving are the first multiplicative relationships pupils encounter — grouping equal sets into a total and sharing a total into equal parts are the two inverse proportional actions that underpin all later multiplication and division."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Equal groups reveal the regular pattern that underlies multiplication: each group adds the same quantity, and doubling consistently scales any number by a factor of two."
             }
           ],
           "concept_ids": [
@@ -150,11 +142,7 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
-            },
-            {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Finding one half and one quarter introduces the idea that a whole can be divided into equal parts — this is the entry point for all proportional reasoning about part-whole relationships."
             }
           ],
           "concept_ids": [
@@ -174,12 +162,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Comparing and measuring length, mass and capacity are all about reasoning with quantity — pupils learn that objects can be ordered by magnitude and that non-standard then standard units provide a common scale for comparison."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "lens": "structure_function",
+              "rationale": "Each continuous attribute (length, mass, capacity) has a structural property that determines how it is measured — understanding what makes one thing heavier or longer than another connects the physical structure to the measurement outcome."
             }
           ],
           "concept_ids": [
@@ -196,11 +184,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Probability is grounded in recognising patterns across repeated trials and understanding how theoretical regularity emerges from random events."
+              "rationale": "The clock face encodes a regular cyclical pattern — hours repeat every 12, and half past is always halfway round; recognising this pattern underpins all subsequent time-telling work."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "The probability scale (0 to 1) and expressing likelihood as a fraction or decimal requires proportional reasoning about quantity."
+              "rationale": "Sequencing events before/after and relating half past to the half-way position on the clock introduces the idea of time as a quantity that can be measured and ordered."
             }
           ],
           "concept_ids": [
@@ -215,11 +203,7 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Area, volume and perimeter formulae encode how measurements scale — doubling a dimension does not double all quantities, making proportional reasoning essential."
-            },
-            {
-              "lens": "structure_function",
-              "rationale": "Deriving formulae requires understanding how the structure of a shape (its dimensions and arrangement) determines the quantity being measured."
+              "rationale": "Understanding that a 50p coin is worth more than a 10p coin, and that combinations of smaller coins can equal one larger coin, is an early application of reasoning about relative quantity and value."
             }
           ],
           "concept_ids": [
@@ -239,11 +223,7 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
-            },
-            {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Recognising shapes by name is the first step in understanding how a shape's structural properties — the number and type of its sides or faces — define what it is and distinguish it from other shapes."
             }
           ],
           "concept_ids": [
@@ -263,12 +243,8 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Mathematics is fundamentally the study of pattern — this cluster asks pupils to identify a regularity, formalise it, and use it to solve unfamiliar problems."
-            },
-            {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Quantitative reasoning runs through all mathematics; pupils must attend to magnitude, units, and the proportional relationships between quantities."
+              "lens": "structure_function",
+              "rationale": "Spatial and directional language (above, below, left, right, forwards, turn) encodes the structural relationships between objects in space — pupils use these terms to describe how position and orientation change."
             }
           ],
           "concept_ids": [
@@ -289,11 +265,7 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
-            },
-            {
-              "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "rationale": "Skip-counting in 2s, 3s and 5s and the odd/even classification both rest on recognising regular patterns in the number sequence — odd and even alternate without exception, and each skip-count sequence follows a fixed step that pupils can predict forward and backward."
             }
           ],
           "concept_ids": [
@@ -309,11 +281,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Two-digit place value is a positional pattern: the tens digit follows a regular rule (each ten-group contains exactly ten ones), and pupils use this pattern to partition, compare and order any two-digit number."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "rationale": "Understanding that 10 ones make one ten introduces the multiplicative scaling at the heart of our number system — the tens column represents quantities ten times as large as the ones column."
             }
           ],
           "concept_ids": [
@@ -329,11 +301,7 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
-            },
-            {
-              "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "This cluster is explicitly about pattern recognition — pupils must identify the repeating or growing rule in sequences of numbers and objects, then use that rule to extend or complete the pattern."
             }
           ],
           "concept_ids": [
@@ -353,11 +321,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Number fact fluency is built on recognising the complementary pattern within each number bond family — knowing 6 + 4 = 10 immediately activates 4 + 6, 10 - 4, and 10 - 6, so one fact unlocks four."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "lens": "cause_and_effect",
+              "rationale": "Adding or subtracting a number causes a predictable change in the total — fluent recall of these facts allows pupils to reason about what operation was applied without counting."
             }
           ],
           "concept_ids": [
@@ -397,12 +365,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "Times tables are the clearest arithmetic patterns in KS1 — the 2s always end in 0, 2, 4, 6, 8; the 5s always end in 0 or 5; the 10s always end in 0. These regularities help pupils internalise and verify facts."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Writing multiplication and division statements formally encodes the proportional relationship between groups, group size and total — 5 × 3 = 15 and 15 ÷ 3 = 5 describe the same multiplicative structure."
             }
           ],
           "concept_ids": [
@@ -417,12 +385,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "Commutativity is a structural pattern of the operation itself — 3 × 5 = 5 × 3 always holds for multiplication but never for division, making this a key moment for pupils to notice how the pattern depends on the operation."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "Understanding that reversing the order of factors has no effect on the product (but reversing dividend and divisor does change the quotient) trains pupils to reason about what causes what in a number sentence."
             }
           ],
           "concept_ids": [
@@ -442,11 +410,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Finding fractions of shapes and sets is directly about proportional part-whole reasoning — a half is always the same proportion regardless of the size of the whole, which is why 2/4 = 1/2."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Equivalent fractions reveal a pattern: multiplying or dividing numerator and denominator by the same number preserves the proportion — pupils begin to see this regularity when they spot that 2/4 and 1/2 shade the same amount."
             }
           ],
           "concept_ids": [
@@ -467,11 +435,7 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Area, volume and perimeter formulae encode how measurements scale — doubling a dimension does not double all quantities, making proportional reasoning essential."
-            },
-            {
-              "lens": "structure_function",
-              "rationale": "Deriving formulae requires understanding how the structure of a shape (its dimensions and arrangement) determines the quantity being measured."
+              "rationale": "Standard units make measurement a quantitative comparison — pupils learn that 30 cm is three times 10 cm, and 500 g is half a kilogram, building proportional thinking about measurement scales."
             }
           ],
           "concept_ids": [
@@ -485,12 +449,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Money problems require pupils to reason with quantity in a real-world context — combining coins to make a total, giving change, and understanding that 100p = £1 all rest on proportional thinking about value."
             },
             {
               "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "rationale": "Solving money word problems involves causal reasoning: spending a certain amount causes the remaining total to decrease by exactly that amount, making the additive and subtractive structure tangible."
             }
           ],
           "concept_ids": [
@@ -504,12 +468,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Area, volume and perimeter formulae encode how measurements scale — doubling a dimension does not double all quantities, making proportional reasoning essential."
+              "lens": "patterns",
+              "rationale": "Reading the clock to five-minute intervals draws directly on counting in 5s — the minute hand follows a predictable pattern around the 12 numbers, linking to the 5 times table the pupils are learning concurrently."
             },
             {
-              "lens": "structure_function",
-              "rationale": "Deriving formulae requires understanding how the structure of a shape (its dimensions and arrangement) determines the quantity being measured."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Five-minute intervals are a proportional partition of the hour — quarter past, half past and quarter to represent 1/4, 1/2 and 3/4 of 60 minutes, giving time-telling a proportional structure."
             }
           ],
           "concept_ids": [
@@ -529,11 +493,7 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
-            },
-            {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Describing shapes by counting sides, vertices, faces and edges is the first systematic analysis of how structural properties define and distinguish shapes — the number and type of faces determines what a 3-D shape is called."
             }
           ],
           "concept_ids": [
@@ -549,11 +509,7 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
-            },
-            {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Identifying that the faces of a cube are squares or that a cylinder has circular faces shows pupils how a 3-D shape's structure is determined by its 2-D faces — the surface structure defines the solid."
             }
           ],
           "concept_ids": [
@@ -572,12 +528,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Half, quarter and three-quarter turns encode proportional fractions of a full rotation — pupils learn that a quarter turn is 1/4 of 360°, making this cluster a physical embodiment of proportional quantity."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "lens": "structure_function",
+              "rationale": "The right angle is a structural unit of rotation: turns are described as one, two, three or four right angles, and understanding this unit connects the geometry of shape to the geometry of movement."
             }
           ],
           "concept_ids": [
@@ -597,11 +553,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "rationale": "Constructing and reading pictograms, tally charts and block diagrams makes frequency patterns visible — pupils move from raw counts to representations that reveal which categories occur most and least often."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "A correctly drawn chart is an evidence-based representation — pupils must ensure that every tally or block accurately encodes the data so that questions answered from it give reliable conclusions."
             }
           ],
           "concept_ids": [
@@ -615,12 +571,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "evidence_argument",
+              "rationale": "Answering questions from a chart requires pupils to use the data as evidence — 'how many more chose X than Y?' demands reading the chart accurately and applying arithmetic to support a specific claim."
             },
             {
-              "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "lens": "patterns",
+              "rationale": "Asking and answering questions about data directs pupils to look for the most and least frequent categories — comparing tallies to find differences or totals starts the habit of noticing distributional patterns."
             }
           ],
           "concept_ids": [
@@ -640,11 +596,7 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
-            },
-            {
-              "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "rationale": "Each skip-count sequence has its own regular arithmetic pattern — multiples of 4 always increase by 4, multiples of 8 by 8, and the doubling link between 4s and 8s reveals a deeper multiplicative pattern across tables."
             }
           ],
           "concept_ids": [
@@ -662,11 +614,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Three-digit place value extends the same positional pattern: hundreds, tens and ones each follow the rule that each column is worth ten times its right-hand neighbour — partitioning C008 and finding 10/100 more or less (C005, C006) all exploit this consistent structure."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "rationale": "Understanding that 10 tens make one hundred, and that 100 is ten times 10, introduces the multiplicative scale factor that pupils must reason about when partitioning or adjusting three-digit numbers."
             }
           ],
           "concept_ids": [
@@ -684,11 +636,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Estimating and placing three-digit numbers on a number line requires pupils to judge relative magnitude — deciding that 650 is closer to 700 than to 600 involves proportional reasoning about position within an interval."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Comparing and ordering numbers to 1000 relies on the place value pattern: the hundreds digit is always compared first, then tens, then ones — the same left-to-right rule that applies at every scale."
             }
           ],
           "concept_ids": [
@@ -710,11 +662,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Mental strategies for three-digit addition and subtraction rely on recognising patterns: partitioning into hundreds, tens and ones follows the same positional rule at every scale, so the same strategies apply."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "lens": "cause_and_effect",
+              "rationale": "Adding or subtracting a quantity causes a predictable change — mental methods make the causal structure explicit by tracking what happens to each place when numbers are combined or reduced."
             }
           ],
           "concept_ids": [
@@ -729,12 +681,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "The columnar algorithm is a systematic pattern applied digit-by-digit from right to left: the same exchange and borrowing rules repeat at every column, making formal written methods generalisable to any number size."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "Using estimation and inverse operations to check results trains pupils to reason causally: if addition was applied correctly, subtracting one addend from the sum should return the other — a direct test of the operation's effect."
             }
           ],
           "concept_ids": [
@@ -777,12 +729,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Scaling problems (e.g. 'three times as long') and correspondence problems (e.g. 'how many combinations?') are both fundamentally about multiplicative relationships between quantities — the core of proportional reasoning."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "lens": "patterns",
+              "rationale": "Written multiplication of a 2-digit number by a single digit extends the regular table patterns into multi-step computation, applying the same multiplicative structure to larger numbers."
             }
           ],
           "concept_ids": [
@@ -804,11 +756,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Unit fractions (1/b) establish the idea that a whole can be divided into b equal parts — this is the core proportional concept, and tenths explicitly bridge fractions to the decimal place value system."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "The pattern that non-unit fractions are multiples of their unit fraction (3/5 is three 1/5s) is the structural insight that unifies this cluster and prepares pupils for fraction arithmetic."
             }
           ],
           "concept_ids": [
@@ -825,11 +777,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Comparing fractions with the same denominator requires reasoning about proportional size — 3/7 is less than 5/7 because the parts are equal in size and we have fewer of them."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Equivalent fractions introduce the key pattern that multiplying numerator and denominator by the same factor preserves value — pupils see this first through the regularity of fraction strips and number lines."
             }
           ],
           "concept_ids": [
@@ -850,12 +802,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Mixed-unit measurement (m and cm, kg and g) develops pupils' understanding of the proportional relationship between units — 1 m = 100 cm encodes a scale factor of 100 that pupils must apply fluently."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "lens": "structure_function",
+              "rationale": "Perimeter is determined by a shape's structural properties — the total length around the boundary is a direct consequence of the side lengths, making it an early application of structure-to-measurement reasoning."
             }
           ],
           "concept_ids": [
@@ -871,11 +823,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Money calculations (adding totals, giving change) and time (24-hour clock, duration) both require reasoning with quantities on different scales — pounds/pence and hours/minutes each have fixed conversion ratios."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Roman numerals on clock faces introduce a different but regular number system, and the 24-hour clock follows a predictable pattern of adding 12 to pm times — pupils practise applying systematic rules to new notation."
             }
           ],
           "concept_ids": [
@@ -898,11 +850,7 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
-            },
-            {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Drawing shapes from given measurements requires pupils to understand how structural properties (specified side lengths, parallel lines) determine the resulting shape — the properties constrain what can be constructed."
             }
           ],
           "concept_ids": [
@@ -918,11 +866,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Angles are structural properties of shapes and turns — whether an angle is acute, right, or obtuse directly determines the shape's corner geometry and governs relationships between sides."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Comparing angles as greater or less than a right angle introduces ordinal quantity reasoning about rotation — pupils begin to see angle as a measurable quantity rather than just a visual feature."
             }
           ],
           "concept_ids": [
@@ -943,11 +891,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "rationale": "Scaled charts introduce the idea that one symbol or bar can represent multiple items — recognising the scale pattern (each symbol = 5 items) and applying it consistently is the key cognitive demand."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Constructing a scaled chart requires pupils to make evidence-representation decisions: choosing an appropriate scale that accurately encodes the data without distortion."
             }
           ],
           "concept_ids": [
@@ -961,12 +909,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "evidence_argument",
+              "rationale": "Answering two-step questions from charts (e.g. 'how many more children preferred cats and dogs combined than fish?') requires pupils to extract evidence from the data and apply arithmetic to construct a supported answer."
             },
             {
-              "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "lens": "patterns",
+              "rationale": "Multi-step data questions direct pupils to notice comparative patterns across categories — which group is largest, by how much, and what does that tell us — building the reasoning habits of statistical literacy."
             }
           ],
           "concept_ids": [
@@ -986,11 +934,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Four-digit place value applies the same positional rule as before, now extended to the thousands column — the regular base-10 pattern means pupils can immediately read and partition any four-digit number using the same framework."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "rationale": "Understanding that the thousands column represents quantities 1000 times larger than the ones column extends the proportional scaling insight of place value to a new magnitude."
             }
           ],
           "concept_ids": [
@@ -1005,12 +953,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Rounding requires pupils to judge where a number sits proportionally within an interval — 3,748 rounded to the nearest 1000 involves deciding it is closer to 4,000 than to 3,000, which is a proportional judgement."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "lens": "patterns",
+              "rationale": "Negative numbers extend the familiar counting pattern below zero — the sequence ...-3, -2, -1, 0, 1, 2, 3... follows the same regular step rule, just in both directions."
             }
           ],
           "concept_ids": [
@@ -1026,11 +974,7 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
-            },
-            {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "rationale": "Roman numerals follow a combinatorial pattern of additive and subtractive rules (IV = 4, IX = 9) — recognising these systematic rules is the cognitive work, offering a contrast with the positional pattern of Hindu-Arabic numerals."
             }
           ],
           "concept_ids": [
@@ -1050,11 +994,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Extending columnar methods to four-digit numbers applies the same column-by-column exchange pattern as before — pupils see that the algorithm scales automatically because place value follows regular rules."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "lens": "cause_and_effect",
+              "rationale": "Exchange (carrying/borrowing) is a causal chain: when a column exceeds 9 or falls below 0, it causes a change in the adjacent column — tracking this effect across multiple columns is the key procedural challenge."
             }
           ],
           "concept_ids": [
@@ -1073,12 +1017,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "lens": "patterns",
+              "rationale": "Completing all 12 times tables reveals rich cross-table patterns — the 6s are double the 3s, the 9s have a digit-sum pattern, the 12s extend the 6s — and short multiplication applies these patterns to larger numbers systematically."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Times table fluency underpins all multiplicative reasoning: knowing 7 × 8 = 56 means that 7 groups of 8 scale to 56 — a proportional relationship that pupils apply repeatedly in short multiplication."
             }
           ],
           "concept_ids": [
@@ -1118,11 +1062,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Hundredths extend the place value system below the decimal point — understanding that 0.01 is one hundredth of 1 requires the same proportional scaling insight (each place is 1/10 of the one to its left) applied in a new direction."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "The decimal place value pattern (each column is 1/10 of the previous one) is the same rule that governs the whole-number columns, just extended rightward — recognising this consistent pattern is the key insight."
             }
           ],
           "concept_ids": [
@@ -1138,11 +1082,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Generating equivalent fractions by multiplying numerator and denominator by the same factor is proportional reasoning in action — the ratio of part to whole stays constant even as the absolute numbers change."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "The family of fractions equivalent to 1/2 (2/4, 3/6, 4/8...) follows a clear multiplicative pattern, giving pupils a systematic procedure they can apply to any fraction."
             }
           ],
           "concept_ids": [
@@ -1162,11 +1106,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Area is a structural property of 2-D shapes — the number of unit squares that cover a rectilinear shape is determined entirely by its dimensions, making this the first encounter with how shape structure determines measurable quantity."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Comparing areas of different rectilinear shapes requires reasoning about quantity — pupils must judge which region contains more square units and begin to see that doubling a side more than doubles the area."
             }
           ],
           "concept_ids": [
@@ -1181,11 +1125,7 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Area, volume and perimeter formulae encode how measurements scale — doubling a dimension does not double all quantities, making proportional reasoning essential."
-            },
-            {
-              "lens": "structure_function",
-              "rationale": "Deriving formulae requires understanding how the structure of a shape (its dimensions and arrangement) determines the quantity being measured."
+              "rationale": "Metric conversion is proportional scaling: 1 km = 1000 m means every measurement in km is 1000 times larger when expressed in m, and pupils must apply this multiplicative scale factor reliably."
             }
           ],
           "concept_ids": [
@@ -1205,11 +1145,7 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
-            },
-            {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Classifying triangles (equilateral, isosceles, scalene, right-angled) and quadrilaterals (square, rectangle, rhombus, parallelogram, trapezium) requires pupils to identify how specific structural properties — equal sides, equal angles, parallel sides — define each category."
             }
           ],
           "concept_ids": [
@@ -1224,11 +1160,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Lines of symmetry are a structural property that constrains what a shape can look like — completing a symmetric pattern requires pupils to understand that every point on one side has an exact mirror-image counterpart on the other."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "lens": "patterns",
+              "rationale": "Symmetry is itself a pattern — the regularity that each half is the mirror image of the other — and identifying how many lines of symmetry a shape has reveals deeper regularities in shape classification."
             }
           ],
           "concept_ids": [
@@ -1247,12 +1183,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Mathematics is fundamentally the study of pattern — this cluster asks pupils to identify a regularity, formalise it, and use it to solve unfamiliar problems."
+              "lens": "structure_function",
+              "rationale": "The coordinate system is a structural framework where position is determined by two perpendicular number lines — understanding how x and y values jointly locate a point is the key structural insight."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Quantitative reasoning runs through all mathematics; pupils must attend to magnitude, units, and the proportional relationships between quantities."
+              "rationale": "Reading and plotting coordinates requires reasoning with exact quantities along each axis — the x-value and y-value each represent a precise distance from the origin on their respective scales."
             }
           ],
           "concept_ids": [
@@ -1272,11 +1208,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "rationale": "Line graphs reveal temporal patterns in continuous data — whether a quantity is increasing, decreasing or staying stable over time, and whether the rate of change is constant or varying."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Reading a line graph to answer questions requires pupils to use the plotted line as evidence — interpolating between points and describing what the data shows involves making evidence-based claims."
             }
           ],
           "concept_ids": [
@@ -1296,11 +1232,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Extending place value to six digits applies the same positional pattern — each column is ten times its right-hand neighbour — demonstrating that the number system scales infinitely by the same repeating rule."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "rationale": "Rounding to any power of 10 requires proportional judgement about where a number sits within progressively larger intervals — rounding 374,521 to the nearest 100,000 demands comparing it proportionally to 300,000 and 400,000."
             }
           ],
           "concept_ids": [
@@ -1321,11 +1257,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Extending addition and subtraction to five or more digits applies the same columnar algorithm pattern — the exchange rule is unchanged regardless of how many columns are involved."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "lens": "cause_and_effect",
+              "rationale": "Choosing between mental and written strategies requires pupils to reason about effect: large round numbers are easily adjusted mentally, while irregular large numbers are better handled with a formal written procedure."
             }
           ],
           "concept_ids": [
@@ -1344,12 +1280,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "Prime numbers, factors, multiples, squares and cubes are all defined by recognising patterns in the multiplication structure of integers — pupils search for regularities (which numbers have exactly two factors? which grow as n²?) that reveal the architecture of number."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "structure_function",
+              "rationale": "Prime factorisation reveals the multiplicative structure underlying every integer — understanding that any composite number can be expressed uniquely as a product of primes is a deep structural insight."
             }
           ],
           "concept_ids": [
@@ -1366,11 +1302,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Long multiplication and short division apply systematic patterns — each step in long multiplication follows the same partial-product logic, and short division applies the same remainder-carry pattern at every column."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "rationale": "Multiplying a 4-digit number by a 2-digit number and interpreting remainders in division both require pupils to reason about the proportional scale of the result relative to the inputs."
             }
           ],
           "concept_ids": [
@@ -1391,11 +1327,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Adding fractions with different denominators requires finding a common denominator — a process that depends on recognising that equivalent fractions represent the same proportion, regardless of how the numerator and denominator are scaled."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Converting between mixed numbers and improper fractions follows a systematic rule (multiply the whole part by the denominator, then add the numerator) — a regular pattern pupils can apply mechanically once understood."
             }
           ],
           "concept_ids": [
@@ -1411,11 +1347,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Thousandths extend the decimal place value scale one step further, and percentages introduce a fixed-denominator proportional representation (parts per 100) — both are tools for expressing precise proportional quantities."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "The same place value pattern (each column 1/10 of the one to its left) applies to thousandths, and percentage equivalences follow predictable patterns — 50% = 0.5 = 1/2 exemplifies a family of linked representations."
             }
           ],
           "concept_ids": [
@@ -1435,12 +1371,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Area, volume and perimeter formulae encode how measurements scale — doubling a dimension does not double all quantities, making proportional reasoning essential."
+              "lens": "structure_function",
+              "rationale": "Volume is determined by the three-dimensional structure of the cuboid — length, width and height together determine how many unit cubes fill the space, making this the first encounter with how 3-D structure produces a scalar measurement."
             },
             {
-              "lens": "structure_function",
-              "rationale": "Deriving formulae requires understanding how the structure of a shape (its dimensions and arrangement) determines the quantity being measured."
+              "lens": "scale_proportion_quantity",
+              "rationale": "The formula V = l × w × h encodes a multiplicative scaling relationship — doubling one dimension doubles the volume, but doubling all three dimensions multiplies volume by eight, making proportional reasoning about scale essential."
             }
           ],
           "concept_ids": [
@@ -1460,11 +1396,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "The three angle facts (angles on a straight line = 180°, at a point = 360°, in a triangle = 180°) express structural constraints — knowing some angles in a configuration determines the remaining ones because of these fixed relationships."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Measuring angles in degrees introduces rotation as a precisely quantifiable property, and the 360° full turn provides the proportional reference — a right angle is exactly 1/4 of a full turn."
             }
           ],
           "concept_ids": [
@@ -1485,11 +1421,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Reflections and translations preserve the shape's structural properties (side lengths, angles) while changing its position — understanding which properties are invariant under each transformation is the key structural insight."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "lens": "patterns",
+              "rationale": "Describing a translation as 'move 3 right and 2 up' reveals a pattern: each vertex moves by the same vector, so the transformation is completely regular and predictable from a single rule."
             }
           ],
           "concept_ids": [
@@ -1508,12 +1444,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "evidence_argument",
+              "rationale": "Using timetables and data tables to answer comparison problems requires pupils to extract the relevant evidence, apply it carefully, and draw only the conclusions the data warrants."
             },
             {
-              "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "lens": "patterns",
+              "rationale": "Interpreting diverse data representations — line graphs, tables, timetables — requires noticing patterns like trends over time, peak values or repeated intervals that allow pupils to answer questions efficiently."
             }
           ],
           "concept_ids": [
@@ -1533,11 +1469,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "rationale": "Seven-digit numbers apply the same positional pattern — the millions column is ten times the hundred-thousands column — showing pupils that the same base-10 rule scales infinitely."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "rationale": "Reading and ordering numbers up to ten million requires pupils to reason about magnitude at a very large scale — comparing 3,750,000 to 4,200,000 demands understanding of the proportional distance between them."
             }
           ],
           "concept_ids": [
@@ -1551,12 +1487,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Place value is the positional pattern in our base-10 number system — pupils recognise how each digit's value follows a regular, predictable rule they can extend indefinitely."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Rounding to any degree of accuracy and calculating intervals across zero both require proportional judgement — how large is the gap between -4 and 3, and where does 2,345,678 sit when rounded to the nearest million?"
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Understanding that each place is ten times the previous introduces the multiplicative structure of our number system — a fundamentally proportional idea."
+              "lens": "patterns",
+              "rationale": "The pattern of negative-to-positive number lines is the same arithmetic structure extended through zero — intervals across zero follow the same additive logic as positive intervals, just spanning the axis."
             }
           ],
           "concept_ids": [
@@ -1596,12 +1532,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "BIDMAS is a fixed pattern of precedence rules for evaluating expressions — recognising that this rule applies consistently regardless of the numbers involved is the key insight, just as factor/multiple relationships follow the multiplication table patterns."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "Order of operations determines which calculation is performed first, causing a specific intermediate result that affects the final answer — changing the order of operations changes the result, making this a precise causal reasoning challenge."
             }
           ],
           "concept_ids": [
@@ -1617,11 +1553,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "The four operations follow consistent patterns and rules (commutativity, distributivity, inverse relationships) that pupils recognise across different number types."
+              "rationale": "Mathematical fluency depends on recognising structural patterns quickly — efficient problem-solving means spotting that a problem fits a known pattern and selecting the appropriate strategy, rather than calculating from scratch."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Each operation enacts a causal transformation: adding causes an increase, multiplying by a factor causes proportional growth — understanding this causality deepens fluency."
+              "lens": "evidence_argument",
+              "rationale": "Problem-solving in Year 6 requires pupils to construct and justify mathematical arguments — selecting a strategy, showing working and explaining why an answer is correct are all forms of evidence-based reasoning."
             }
           ],
           "concept_ids": [
@@ -1642,11 +1578,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Simplifying fractions and adding with unlike denominators both require proportional reasoning — simplification preserves the ratio of part to whole, and finding a common denominator creates proportionally equivalent representations of each fraction."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "The pattern of fraction simplification (divide by HCF) and the algorithm for adding fractions with unlike denominators (find LCM of denominators) are systematic rules that pupils apply reliably once the underlying proportional pattern is understood."
             }
           ],
           "concept_ids": [
@@ -1662,11 +1598,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Fraction-decimal-percentage equivalence is fundamentally about representing the same proportion in three different notations — fluent conversion relies on understanding that 3/4, 0.75 and 75% all describe the same part-whole relationship."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Multiplying fractions follows a clean pattern (multiply numerators, multiply denominators) and dividing by a fraction follows the keep-change-flip pattern — these regular algorithmic rules are the operational backbone of the cluster."
             }
           ],
           "concept_ids": [
@@ -1687,11 +1623,7 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
-            },
-            {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Ratio and proportion are the formal language of multiplicative comparison — this cluster teaches pupils to express and use relative quantities directly, bridging all prior fraction and multiplicative work to KS3 Ratio, Proportion and Rates of Change."
             }
           ],
           "concept_ids": [
@@ -1711,11 +1643,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
+              "rationale": "Algebraic notation at Year 6 is the formal language for expressing numerical patterns with letters — writing 'n + 2' to describe a sequence generalises the repeated +2 pattern to any starting value."
             },
             {
               "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "rationale": "Formulae express causal relationships: substituting a value for the letter causes a specific output — understanding this input-output structure is the gateway to algebraic reasoning at KS3."
             }
           ],
           "concept_ids": [
@@ -1730,11 +1662,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
+              "rationale": "Generating and describing linear sequences requires pupils to express the rule algebraically — finding the nth term formula formalises the arithmetic pattern so it can be applied to any position."
             },
             {
               "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "rationale": "Two-variable equations (y = x + 3, etc.) express how changing x causes a predictable change in y — this is the earliest encounter with functional relationships, laying groundwork for KS3 graph work."
             }
           ],
           "concept_ids": [
@@ -1754,12 +1686,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
+              "lens": "structure_function",
+              "rationale": "Area of triangles (½ × base × height) and parallelograms (base × height), and volume of cubes and cuboids, are all determined by the shape's structural dimensions — the formula encodes how the geometry produces the measurable quantity."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "lens": "scale_proportion_quantity",
+              "rationale": "The area and volume formulae encode proportional scaling relationships: area scales as the square of linear dimensions and volume as the cube, so reasoning about how changes in size affect the measurements is central to the cluster."
             }
           ],
           "concept_ids": [
@@ -1780,11 +1712,7 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
-            },
-            {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Angle facts in polygons (sum of interior angles = (n-2) × 180°) and the parts of a circle (radius, diameter, circumference) are structural properties — the number of sides determines the interior angle sum, and the relationship between radius and diameter is fixed."
             }
           ],
           "concept_ids": [
@@ -1800,11 +1728,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Drawing nets and identifying 3-D shape properties requires pupils to reason about how a flat structure folds into a solid — the structural relationships between faces, edges and vertices determine the shape's 3-D form."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "lens": "evidence_argument",
+              "rationale": "Applying angle facts to find missing angles in multi-step problems requires constructing a chain of deductive reasoning — each step uses a known fact as evidence to derive the next angle, building a mathematical argument."
             }
           ],
           "concept_ids": [
@@ -1825,11 +1753,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Extending coordinates to all four quadrants reveals the structural symmetry of the Cartesian plane — negative x-values mirror positive ones, and the four quadrants have a regular structural relationship that pupils can exploit."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "lens": "patterns",
+              "rationale": "The sign pattern of coordinates in each quadrant (+,+), (-,+), (-,-), (+,-) follows a regular rule that pupils can learn and use to identify quadrants without counting from the origin."
             }
           ],
           "concept_ids": [
@@ -1844,11 +1772,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Translating and reflecting shapes on a coordinate grid demonstrates that these transformations preserve the structural properties of the shape while systematically changing all coordinates — the transformation is described by a rule that applies equally to every vertex."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "lens": "patterns",
+              "rationale": "A translation by (+3, -2) shifts every point by the same vector — a completely regular pattern — and reflection in y = x swaps the x and y coordinates of every point, revealing a systematic relational pattern."
             }
           ],
           "concept_ids": [
@@ -1867,12 +1795,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Pie charts represent data as proportional sectors — constructing one requires calculating what fraction of 360° each category corresponds to, making this the most explicitly proportional statistical representation."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Interpreting pie charts involves reading proportional evidence — 'roughly a quarter of the pie is red, so about 25% chose red' — and comparing sectors requires judging relative proportions rather than absolute counts."
             }
           ],
           "concept_ids": [
@@ -1887,12 +1815,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "evidence_argument",
+              "rationale": "Mean, median and mode each summarise the data differently — choosing which best represents a dataset, and interpreting what a calculated average tells us about the whole distribution, are evidence-based reasoning tasks."
             },
             {
-              "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "lens": "patterns",
+              "rationale": "The mean is a redistributive pattern — it represents what each value would be if the total were shared equally — and the median finds the central position in an ordered sequence, revealing distributional structure."
             }
           ],
           "concept_ids": [
@@ -1907,12 +1835,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "evidence_argument",
+              "rationale": "Comparing two distributions requires constructing an evidence-based argument using averages and range — 'Group A performed better on average, but Group B was more consistent' is a statistical claim that must be justified from the data."
             },
             {
-              "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Probability language (certain, likely, unlikely, impossible) and early probability as a fraction both require proportional reasoning — expressing likelihood as a number between 0 and 1 connects distributional description to the probability scale."
             }
           ],
           "concept_ids": [
@@ -1933,11 +1861,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Mathematics is fundamentally the study of pattern — this cluster asks pupils to identify a regularity, formalise it, and use it to solve unfamiliar problems."
+              "rationale": "Mathematical fluency is grounded in recognising structural patterns that make calculation efficient — knowing the index laws, fraction rules and operation properties as reliable patterns that apply consistently across number types."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Quantitative reasoning runs through all mathematics; pupils must attend to magnitude, units, and the proportional relationships between quantities."
+              "lens": "cause_and_effect",
+              "rationale": "Knowing when to use a calculator versus mental or written methods requires reasoning about which approach causes the most efficient and reliable result for a given calculation type."
             }
           ],
           "concept_ids": [
@@ -1957,12 +1885,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Mathematics is fundamentally the study of pattern — this cluster asks pupils to identify a regularity, formalise it, and use it to solve unfamiliar problems."
+              "lens": "evidence_argument",
+              "rationale": "Mathematical proof is the highest form of evidence-based argument — pupils must construct a deductive chain where each step follows necessarily from the previous, with no gaps, using axioms and established results as evidence."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Quantitative reasoning runs through all mathematics; pupils must attend to magnitude, units, and the proportional relationships between quantities."
+              "lens": "patterns",
+              "rationale": "Many proofs involve identifying an underlying algebraic or geometric pattern and showing it holds in general — the cluster includes proof by counter-example, algebraic proof and geometric reasoning, all of which begin by recognising a structural pattern."
             }
           ],
           "concept_ids": [
@@ -1983,12 +1911,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "systems_models",
+              "rationale": "Mathematical modelling is the process of building a simplified model of a real-world situation — pupils must decide which features to include, which to ignore, and how to represent the system mathematically."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Moving between representations (graphical, algebraic, numerical, diagrammatic) requires pupils to verify that each form encodes the same mathematical structure — a form of evidence-based checking that the model is consistent."
             }
           ],
           "concept_ids": [
@@ -2010,11 +1938,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
+              "rationale": "Ordering real numbers including decimals, negatives and integers requires applying the consistent positional pattern of the number line — the same left-to-right magnitude rule governs all real numbers, regardless of type."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Inequality notation and ordering real numbers across the number line are fundamentally about reasoning with quantity and magnitude — placing -3.7 relative to -4 and -3 requires proportional judgement."
             }
           ],
           "concept_ids": [
@@ -2032,11 +1960,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
+              "rationale": "Prime factorisation reveals the multiplicative building blocks of every integer — the fundamental theorem of arithmetic states every integer has a unique prime factorisation, which is a deep pattern underlying the entire number system."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "lens": "structure_function",
+              "rationale": "Index notation encodes repeated multiplication compactly — understanding that a³ means a × a × a and applying index laws requires grasping how the structure of the notation determines the operation being described."
             }
           ],
           "concept_ids": [
@@ -2054,12 +1982,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "Operations with fractions, negative numbers and BIDMAS all follow consistent algebraic rules (e.g. multiplying two negatives gives a positive; dividing by a fraction inverts it) — the cognitive work is recognising which pattern applies and applying it correctly."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "Each arithmetic operation on a rational number causes a precise, predictable change — adding a negative causes a decrease, and applying BIDMAS in the wrong order causes a different result, making causal reasoning central to this cluster."
             }
           ],
           "concept_ids": [
@@ -2098,11 +2026,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Percentages and fractions as operators both express multiplicative scaling of a quantity — 'find 35% of 240' means scale 240 by the proportion 35/100, making proportional reasoning the core cognitive demand throughout this cluster."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "Applying a percentage increase or decrease causes a predictable effect on the original amount — using a multiplier (e.g. 1.15 for a 15% increase) encodes the causal relationship between rate and outcome compactly."
             }
           ],
           "concept_ids": [
@@ -2120,11 +2048,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Significant figures preserve proportional precision — 3 s.f. means the same relative accuracy whether a number is 0.00347 or 34,700, making this a scale-invariant proportional tool."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "evidence_argument",
+              "rationale": "Error intervals express the bounds within which a rounded measurement must lie — pupils must reason from the precision of a measurement to the range of possible true values, which is an argument about what the evidence does and cannot tell us."
             }
           ],
           "concept_ids": [
@@ -2146,11 +2074,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
+              "rationale": "Algebraic notation is a system for expressing generalised patterns — a letter represents any number that fits the relationship, so pupils are learning to read and write the language of pattern rather than specific numerical instances."
             },
             {
               "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "rationale": "Understanding the distinction between an expression (a pattern) and an equation (a causal constraint) is the key conceptual split in this cluster — an equation asserts that a specific cause (a value of the variable) produces a specific effect (a result)."
             }
           ],
           "concept_ids": [
@@ -2166,11 +2094,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
+              "rationale": "Algebraic manipulation depends on recognising that equivalent forms follow structural patterns — collecting like terms, the distributive law for expanding brackets, and factorisation all apply consistently regardless of the specific coefficients."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "lens": "structure_function",
+              "rationale": "Factorised form reveals the structural building blocks of an expression — (x + 2)(x + 3) shows the two linear factors that combine to produce x² + 5x + 6, making the structure of the quadratic transparent."
             }
           ],
           "concept_ids": [
@@ -2187,12 +2115,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
+              "lens": "cause_and_effect",
+              "rationale": "Solving equations is explicitly causal — each inverse operation applied to one side causes a corresponding change on the other, and pupils must track this causal chain until the variable is isolated."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "lens": "patterns",
+              "rationale": "Changing the subject of a formula applies the same sequence of inverse operations regardless of the formula's specific structure — recognising this generalised pattern is what allows pupils to rearrange any formula fluently."
             }
           ],
           "concept_ids": [
@@ -2211,11 +2139,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
+              "rationale": "Linear graphs are visual patterns — y = mx + c always produces a straight line because the constant gradient m means equal x-steps always produce equal y-steps, and the six concepts in this cluster (C036–C041) all describe facets of this regular linear pattern."
             },
             {
               "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "rationale": "The gradient of a linear graph encodes the causal rate — increasing x by 1 causes y to increase by m — and graphical solutions to simultaneous equations show where two causal constraints intersect."
             }
           ],
           "concept_ids": [
@@ -2235,11 +2163,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Sequences and functions are formalised patterns — pupils identify the underlying rule, express it algebraically, and use it to predict terms or outputs."
+              "rationale": "Non-linear graphs (exponential, reciprocal, piecewise) each have characteristic shapes that are recognisable patterns — knowing that y = x² always produces a symmetric parabola and y = 1/x always produces a hyperbola is pattern recognition applied to function families."
             },
             {
               "lens": "cause_and_effect",
-              "rationale": "Algebraic relationships encode causal structure: changing the input (x) causes a predictable change in the output (y), making cause-and-effect reasoning natural here."
+              "rationale": "Solving simultaneous equations graphically shows where two equations produce the same (x, y) pair — the intersection represents the unique causal conditions that satisfy both constraints simultaneously."
             }
           ],
           "concept_ids": [
@@ -2254,12 +2182,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "Sequences are the paradigmatic mathematical pattern — pupils identify the common difference or common ratio, express it algebraically as an nth term formula, and use it to predict any term."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Geometric sequences grow by a constant multiplicative ratio — understanding that each term is the previous term scaled by the same factor introduces exponential growth as a proportional quantity relationship."
             }
           ],
           "concept_ids": [
@@ -2281,11 +2209,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Ratio notation formalises proportional relationships — dividing a quantity in a given ratio requires pupils to find what fraction of the total each part represents, directly connecting ratio to fraction as representations of the same proportional idea."
             },
             {
               "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "rationale": "Equivalent ratios follow the same pattern as equivalent fractions — multiplying or dividing all parts by the same factor preserves the ratio — and pupils use this regularity to simplify and scale ratios."
             }
           ],
           "concept_ids": [
@@ -2303,11 +2231,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Scale factors, percentage change and financial mathematics are all applied proportional reasoning — a scale factor of 2.5 enlarges every measurement by the same multiplier, and percentage change applies a proportional rate to a base quantity."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "Percentage change problems encode causal relationships: a 20% increase causes the new value to be 1.2 times the original — understanding this causal multiplier structure underpins both simple and compound interest calculations."
             }
           ],
           "concept_ids": [
@@ -2324,11 +2252,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Direct proportion (y = kx) and inverse proportion (y = k/x) are the two fundamental multiplicative relationships between quantities — recognising which applies and finding the constant of proportionality is the core skill of this cluster."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "In direct proportion, increasing one variable causes a proportional increase in the other; in inverse proportion, increasing one variable causes a proportional decrease — the contrast in causal direction is the key conceptual distinction pupils must grasp."
             }
           ],
           "concept_ids": [
@@ -2346,11 +2274,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Unit conversion is proportional scaling — 1 mile = 1.6 km means every distance in miles scales by 1.6 to give kilometres — and compound units like speed (km/h) or density (g/cm³) are ratios of two quantities that together define a proportional rate."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "systems_models",
+              "rationale": "Compound units encode relationships between physical quantities in a system — speed = distance ÷ time creates a model linking three quantities, and changing one while holding another constant reveals the systematic dependencies."
             }
           ],
           "concept_ids": [
@@ -2370,12 +2298,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "structure_function",
+              "rationale": "Deriving area formulae for triangles, parallelograms and trapezia requires pupils to see how the structural dimensions (base, height, parallel sides) determine the measurement — the formula captures exactly how structure produces quantity."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Area and volume formulae encode proportional scaling laws — area scales as the square of linear dimensions and volume as the cube — so reasoning about how changes in size affect measurements is central to applying these formulae."
             }
           ],
           "concept_ids": [
@@ -2391,12 +2319,8 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
-            },
-            {
-              "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "lens": "structure_function",
+              "rationale": "Geometric constructions with compass and straight-edge produce exact figures whose structural properties (equal lengths, bisected angles, perpendicular lines) are guaranteed by the construction method — the tool use enforces the structural relationships."
             }
           ],
           "concept_ids": [
@@ -2414,11 +2338,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Angle properties (angles on a straight line, at a point, in parallel lines, in triangles and polygons) are structural constraints — each rule specifies how the angle relationships in a configuration are determined by its geometric structure."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "lens": "evidence_argument",
+              "rationale": "Applying angle facts to find unknown angles requires constructing a deductive argument — each step cites a named property as evidence, and the chain of reasoning from known to unknown angles is a formal geometric proof."
             }
           ],
           "concept_ids": [
@@ -2436,11 +2360,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Congruence criteria (SSS, SAS, ASA, RHS) specify the minimal structural information needed to uniquely determine a triangle — proving congruence means showing that the given properties fully determine the shape."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Similarity is a proportional relationship — all corresponding sides of similar triangles are in the same ratio, making the entire cluster about identifying and using proportional scaling between congruent angle structures."
             }
           ],
           "concept_ids": [
@@ -2457,12 +2381,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "structure_function",
+              "rationale": "Pythagoras' theorem and trigonometric ratios are structural properties of right-angled triangles — knowing two measurements determines the rest because the right angle constrains the relationship between all sides and angles."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Trigonometric ratios (sin, cos, tan) are proportional relationships — sin θ = opposite/hypotenuse is a ratio that is constant for a given angle regardless of the triangle's size, making this a deep application of proportional reasoning."
             }
           ],
           "concept_ids": [
@@ -2478,11 +2402,11 @@
           "thinking_lenses": [
             {
               "lens": "structure_function",
-              "rationale": "Geometry connects structural properties (angles, side lengths, symmetry) to what is possible or provable — the question is always how the structure determines the behaviour."
+              "rationale": "Each transformation (translation, rotation, reflection, enlargement) preserves or changes specific structural properties — understanding which properties are invariant (e.g. angles under enlargement, distances under rotation) defines the transformation's nature."
             },
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "Similarity, enlargement and trigonometry are fundamentally about proportional relationships between measurements in figures across different scales."
+              "rationale": "Enlargement is explicitly a proportional transformation — a scale factor of 3 triples every length while angles remain unchanged, making this a direct application of proportional reasoning to spatial change."
             }
           ],
           "concept_ids": [
@@ -2612,12 +2536,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "Fluent operation across integers, fractions and decimals requires recognising that the same operational patterns (commutativity, associativity, distributivity, inverse) apply regardless of number type — the rules are consistent patterns."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "Each arithmetic operation causes a predictable change — multiplying a fraction by a number greater than one increases its value, while multiplying by a proper fraction decreases it — and fluent reasoning requires internalising these causal effects."
             }
           ],
           "concept_ids": [
@@ -2632,12 +2556,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "patterns",
+              "rationale": "Index laws are systematic patterns governing all power operations — a^m × a^n = a^(m+n) always holds, and extending to fractional and negative indices follows the same regular rule, making the pattern the computational engine."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Standard form and significant figures are tools for representing quantities at very different scales with appropriate precision — standard form encodes the proportional scale (order of magnitude) explicitly in the power of 10."
             }
           ],
           "concept_ids": [
@@ -2743,11 +2667,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Ratio and scale problems at GCSE require fluent proportional reasoning — simplifying ratios, using scale factors in drawings, and calculating percentage change (with reverse percentage) all express multiplicative relationships between quantities."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "Percentage change problems encode a causal multiplier — a 15% price increase causes the new price to be 1.15 times the original, and reverse percentage reverses that causal chain to find the original amount."
             }
           ],
           "concept_ids": [
@@ -2763,11 +2687,11 @@
           "thinking_lenses": [
             {
               "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "rationale": "Direct proportion (y ∝ x), inverse proportion (y ∝ 1/x) and compound measures (speed = distance/time, density = mass/volume) are all multiplicative relationships — the cluster requires pupils to identify the proportional structure and use it to solve problems."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "cause_and_effect",
+              "rationale": "The gradient of a distance-time or velocity-time graph encodes a causal rate — the rate of change causes the dependent variable to increase or decrease at a fixed rate, making graph interpretation a form of causal reasoning about rates."
             }
           ],
           "concept_ids": [
@@ -2787,12 +2711,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "structure_function",
+              "rationale": "Area of sectors, surface area and volume of cylinders, cones and spheres all require pupils to identify which formula applies based on the shape's structure — the geometry of the shape determines which measurements are needed and how they combine."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "scale_proportion_quantity",
+              "rationale": "π links a circle's circumference and area to its radius through fixed proportional constants — understanding that C = 2πr means circumference is always proportional to radius is a key proportional relationship in this cluster."
             }
           ],
           "concept_ids": [
@@ -2828,12 +2752,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "This cluster is fundamentally about proportional reasoning — how quantities relate multiplicatively and how ratios and fractions describe relative size."
+              "lens": "structure_function",
+              "rationale": "Circle theorems are structural properties of the circle — the equal radii and fixed centre create necessary angular relationships that pupils must prove, not just apply."
             },
             {
-              "lens": "patterns",
-              "rationale": "Proportional relationships follow predictable patterns (doubling one quantity doubles the other) that pupils can identify and use to solve problems."
+              "lens": "evidence_argument",
+              "rationale": "Proving circle theorems and congruence requires constructing a deductive argument from given geometric properties to a conclusion — each step must be justified by a named theorem or property, making this a formal evidence-based reasoning cluster."
             }
           ],
           "concept_ids": [
@@ -2848,12 +2772,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Algebraic manipulation relies on recognising structural patterns — equivalent forms, factorisation rules, and the symmetry of operations — that apply consistently."
+              "lens": "structure_function",
+              "rationale": "The four transformations and vectors both describe systematic spatial change — column vectors encode translations by specifying exactly how the position vector of every point changes, and understanding vector addition reveals how successive transformations combine."
             },
             {
-              "lens": "cause_and_effect",
-              "rationale": "Solving equations is a causal process: performing an operation on one side causes a predictable change that must be balanced, training systematic if-then reasoning."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Enlargement by a fractional scale factor reduces a shape proportionally, and similarity requires pupils to reason about the constant ratio of corresponding lengths — making this cluster an intersection of geometric structure and proportional quantity."
             }
           ],
           "concept_ids": [
@@ -2873,12 +2797,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Probability is a proportional quantity on the 0-to-1 scale — expressing likelihood as a fraction of equally likely outcomes is direct proportional reasoning, and relative frequency converges to theoretical probability as trials increase."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Comparing experimental frequency with theoretical probability requires constructing an evidence-based argument — pupils must reason about whether a discrepancy is due to chance or suggests the theoretical model is wrong."
             }
           ],
           "concept_ids": [
@@ -2892,12 +2816,12 @@
           "cluster_type": "practice",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Probability is grounded in recognising patterns across repeated trials and understanding how theoretical regularity emerges from random events."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Combined event probabilities involve multiplying fractions — P(A and B) = P(A) × P(B|A) — requiring pupils to reason proportionally about the fraction of outcomes that satisfy both conditions."
             },
             {
-              "lens": "scale_proportion_quantity",
-              "rationale": "The probability scale (0 to 1) and expressing likelihood as a fraction or decimal requires proportional reasoning about quantity."
+              "lens": "systems_models",
+              "rationale": "Tree diagrams and Venn diagrams are models of the probability space — they make the structure of the sample space visible and allow pupils to reason systematically about which outcomes satisfy given conditions."
             }
           ],
           "concept_ids": [
@@ -2918,12 +2842,12 @@
           "cluster_type": "introduction",
           "thinking_lenses": [
             {
-              "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "lens": "evidence_argument",
+              "rationale": "Data collection is the foundation of statistical evidence — understanding that a biased sample produces unreliable conclusions is the key argument about the quality of evidence and why systematic sampling methods matter."
             },
             {
-              "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "lens": "scale_proportion_quantity",
+              "rationale": "Stratified sampling requires pupils to calculate proportional sample sizes for each stratum — if 40% of a population is female, 40% of the sample should be female, applying proportional reasoning directly to research design."
             }
           ],
           "concept_ids": [
@@ -2938,11 +2862,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "rationale": "Histograms, cumulative frequency curves and box plots all reveal distributional patterns in data — the shape of a histogram, the steepness of a cumulative frequency curve, and the spread of a box plot each encode a pattern about where data is concentrated."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Choosing between mean, median and mode as representative averages requires evidence-based argument — pupils must justify which measure best represents the data for a given context, especially in the presence of outliers."
             }
           ],
           "concept_ids": [
@@ -2958,11 +2882,11 @@
           "thinking_lenses": [
             {
               "lens": "patterns",
-              "rationale": "Statistical work requires pupils to identify patterns and trends in data — regularities in distributions, central tendency, and relationships between variables."
+              "rationale": "Correlation is a pattern in bivariate data — the overall direction and strength of the cloud of points on a scatter graph reveals whether a linear or other pattern links the two variables."
             },
             {
               "lens": "evidence_argument",
-              "rationale": "Interpreting data requires constructing evidence-based arguments: pupils must decide what conclusions the data can and cannot support."
+              "rationale": "Interpreting scatter graphs requires pupils to construct and evaluate arguments about correlation — distinguishing correlation from causation and assessing how well a line of best fit represents the data are core evidence-based reasoning tasks."
             }
           ],
           "concept_ids": [
