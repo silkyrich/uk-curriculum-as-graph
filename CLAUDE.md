@@ -92,7 +92,20 @@ Each **layer** is self-contained with its own:
    - Import: `layers/uk-curriculum/scripts/import_thinking_lenses.py`
    - Surfaced by `query_cluster_context.py` in the `## Thinking lenses` section
 
-9. **`layers/oak-content/`** - Oak National Academy (future)
+9. **DifficultyLevel** (derived layer, lives within `layers/uk-curriculum/`)
+   - 2,572 DifficultyLevel nodes across 701 concepts (all EYFS + KS1-KS2)
+   - `(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)` — 3-4 levels per concept
+   - Standard labels aligned with KS2 statutory assessment: `entry` (1), `developing` (2), `expected` (3), `greater_depth` (4)
+   - EYFS uses 3 levels only (entry/developing/expected) — no greater_depth per developmental framework
+   - Each node has `description`, `example_task`, `example_response`, `common_errors`
+   - Replaces the ungrounded `complexity_level` integer that teachers flagged as meaningless
+   - Data: 87 domain-level JSON files in `layers/uk-curriculum/data/difficulty_levels/`
+   - File naming: `{subject}_{year}_{domain}.json` (e.g. `english_y4_composition.json`, `science_ks2_forces.json`)
+   - Import: `layers/uk-curriculum/scripts/import_difficulty_levels.py` (idempotent, globs `*.json`)
+   - ID format: `{concept_id}-DL{zero-padded level_number}` (e.g. `MA-Y3-C014-DL01`)
+   - `display_color = '#F59E0B'` (Amber-500), `display_icon = 'signal_cellular_alt'`
+
+10. **`layers/oak-content/`** - Oak National Academy (future)
    - Content provider mapping
    - Script: `import_oak_content.py`
 
@@ -137,7 +150,7 @@ python3 core/migrations/compute_lesson_grouping_signals.py
 python3 layers/uk-curriculum/scripts/import_thinking_lenses.py
 python3 layers/uk-curriculum/scripts/generate_concept_clusters.py
 
-# DifficultyLevel nodes (run after curriculum import — pilot: Y3 Maths)
+# DifficultyLevel nodes (run after curriculum + EYFS import)
 python3 layers/uk-curriculum/scripts/import_difficulty_levels.py
 
 # Cross-domain CO_TEACHES (run after concept grouping)
@@ -280,7 +293,7 @@ All nodes have `display_category` property:
 (:ThinkingLens)-[:PROMPT_FOR {agent_prompt: str, question_stems: [str]}]->(:KeyStage)  // age-banded prompts
 
 // DifficultyLevel (v3.9) — grounded difficulty tiers replacing complexity_level
-(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)  // 3-4 levels per concept (pilot: Y3 Maths)
+(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)  // 3-4 levels per concept (701/1351 concepts — all EYFS+KS1-KS2)
 
 // Content Vehicles (v3.8)
 (:Domain)-[:HAS_VEHICLE]->(:ContentVehicle)-[:DELIVERS]->(:Concept)
@@ -384,7 +397,7 @@ Every feature that introduces or modifies data processing must:
 - Visualization / Bloom perspectives? → `layers/visualization/`
 - Age-appropriate design / learner profiles? → `layers/learner-profiles/`
 - Content vehicles / teaching packs? → `layers/content-vehicles/`
-- Teacher review findings / lesson plans? → `generated/teachers-v4/` (V5 review), `generated/teachers-v3/` (V4 review)
+- Teacher review findings / lesson plans? → `generated/teachers-v7/` (V7 review + DL QA), `generated/teachers-v4/` (V5 review), `generated/teachers-v3/` (V4 review)
   - **`generated/` is TEST output, not canon** — do not treat its contents as authoritative for graph model or data decisions
 - Concept grouping / lesson clusters? → `layers/uk-curriculum/scripts/generate_concept_clusters.py`
 - Thinking lenses (cognitive framing for clusters)? → `layers/uk-curriculum/data/thinking_lenses/` + `import_thinking_lenses.py`
@@ -416,6 +429,7 @@ Every feature that introduces or modifies data processing must:
 ### Node IDs
 - UK: `EN-Y5-O021` (Subject-Year-Type-Number)
 - Clusters: `MA-Y3-CL001` (Subject-Year-CL-Number)
+- DifficultyLevels: `MA-Y3-C014-DL01` (Concept-ID + `-DL` + zero-padded level_number)
 - CASE: `ngss-sep-1` (framework-type-number)
 - Always unique, never reused
 
@@ -547,13 +561,14 @@ class LayerImporter:
 
 ✅ **In Aura cloud database — all layers active (2026-02-23):**
 - Instance: education-graphs (6981841e)
-- **~4,900+ total nodes** including ConceptClusters, ThinkingLens, EYFS, and ContentVehicle nodes
+- **7,503 total nodes**, **18,369 total relationships**
+- 2,572 DifficultyLevel nodes; 2,572 HAS_DIFFICULTY_LEVEL relationships (701/1,351 concepts covered — all EYFS+KS1-KS2)
 - 61 ContentVehicle nodes; 217 DELIVERS + 92 HAS_VEHICLE + 24 IMPLEMENTS relationships
 - 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average); 40 PROMPT_FOR relationships (age-banded prompts)
 - 626 ConceptCluster nodes (167 introduction, 459 practice) — all with `thinking_lens_primary`
 - 1,351 Concept nodes enriched with `teaching_weight` + `co_teach_hints`
 - 53 EYFS Concept nodes; 34 EYFS→KS1 cross-stage prerequisites
-- 1,827 CO_TEACHES relationships (extracted + inferred inverse-operation pairs)
+- 1,892 CO_TEACHES relationships (extracted + inferred inverse-operation pairs)
 - Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
 - 5 Bloom perspectives uploaded and active
 
@@ -617,18 +632,30 @@ class LayerImporter:
 - Replaces ungrounded `complexity_level` integer with structured sub-nodes per Concept
 - `(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)` — 3-4 levels per concept
 - Standard labels aligned with KS2 statutory assessment: `entry` (1), `developing` (2), `expected` (3), `greater_depth` (4)
+- EYFS uses 3 levels only (entry/developing/expected) — no greater_depth per developmental framework
 - Each node has `description`, `example_task`, `example_response`, `common_errors` — grounding abstract difficulty into concrete, assessable tasks
-- Pilot: Y3 Mathematics (41 concepts, ~150 DifficultyLevel nodes)
-- Data: `layers/uk-curriculum/data/difficulty_levels/mathematics_y3.json`
-- Import: `layers/uk-curriculum/scripts/import_difficulty_levels.py`
+- **Full rollout: 701 concepts, 2,572 DifficultyLevel nodes** across 87 domain-level JSON files
+- Coverage: all EYFS (53), English KS1-Y6 (294), Mathematics Y1-Y6 (154), Science KS1-KS2 (116), plus History, Geography, DT, Art, Music, PE, Computing, Languages
+- KS3-KS4 concepts (650) do not yet have difficulty levels — future extension
+- Data: 87 files in `layers/uk-curriculum/data/difficulty_levels/` named `{subject}_{year}_{domain}.json`
+- Import: `layers/uk-curriculum/scripts/import_difficulty_levels.py` (idempotent, globs `*.json`)
 - Schema: DifficultyLevel uniqueness constraint + indexes on `level_number`, `label` (v3.9)
-- Validation: 5 new checks (completeness, level_number range, label values, HAS_DIFFICULTY_LEVEL integrity, no duplicate levels)
+- Validation: 5 checks (completeness, level_number range, label values, HAS_DIFFICULTY_LEVEL integrity, no duplicate levels)
 - `complexity_level` property removed from Concept import; `complexity_range` removed from ConceptCluster generation
 - Query helpers: `query_cluster_context.py` and `graph_query_helper.py` surface difficulty levels under each concept
-- Backward-compatible: non-pilot concepts show no difficulty levels (no errors)
+- Backward-compatible: KS3-KS4 concepts show no difficulty levels (no errors)
+- QA: all 87 files QA-reviewed; report in `generated/teachers-v7/dl_qa_report.md`
 - No learner data — pure curriculum design metadata
 
+✅ **V7 teacher review (2026-02-23):**
+- 9 simulated teacher personas reviewed the graph with DifficultyLevels + Content Vehicles + Thinking Lenses
+- Focus: DifficultyLevel quality across Y3-Y5 Maths, English, Science, History, Geography
+- Average content generation readiness: **7.2/10** (up from 6.6/10 in V5)
+- DifficultyLevels identified as highest-leverage addition (+1.5 score uplift, 9/9 consensus)
+- Reports: `generated/teachers-v7/`
+
 🚧 **In progress:**
+- DifficultyLevel extension to KS3-KS4 (650 concepts remaining — different assessment framework, will need GCSE-aligned labels)
 - Oak National Academy content (skeleton only)
 - Alignment mappings (CASE ↔ UK)
 - DPIA completion (skeleton exists, needs human review and sign-off)
@@ -663,6 +690,8 @@ class LayerImporter:
 ❌ Edit `teaching_weight` or `co_teach_hints` directly in the graph - Edit the extraction JSONs, then reimport
 ❌ Manually create APPLIES_LENS relationships - Edit `thinking_lenses` arrays in the cluster definition JSONs, then re-run `generate_concept_clusters.py`
 ❌ Import ThinkingLens nodes after cluster generation - ThinkingLens nodes must exist *before* `generate_concept_clusters.py` runs (MATCH fails silently if the node isn't there)
+❌ Edit DifficultyLevel data directly in the graph - Edit the JSON files in `data/difficulty_levels/`, then rerun `import_difficulty_levels.py --clear`
+❌ Create monolithic DL files for large subjects - Split by curriculum domain (e.g. `english_y4_composition.json`, not `english_y4.json`). Max ~20 concepts per file for maintainability
 
 ### Privacy & Compliance (Non-Negotiable)
 ❌ Store child's name, school, or any PII in the learning event log - Identity and events are architecturally separated
