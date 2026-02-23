@@ -25,11 +25,6 @@ Output: JSON to stdout or --output file, plus Markdown summary.
 Usage:
   python3 query_cluster_context.py MA-Y3-D001-CL001
   python3 query_cluster_context.py MA-Y3-D001-CL001 --output year3-maths/context.json
-  python3 query_cluster_context.py SC-KS2-D001-CL001 --year Y5 --output year5-science/context.json
-
-The --year flag overrides the year group used for the learner profile (ContentGuideline,
-PedagogyProfile, FeedbackProfile, InteractionTypes). Use it when a KS-level domain returns
-the wrong anchor year (e.g. SC-KS2 anchors to Y3 but you're teaching the cluster in Y5).
 """
 
 import argparse
@@ -37,14 +32,14 @@ import json
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT / "core" / "scripts"))
 
 from neo4j import GraphDatabase
 from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
 
 
-def query_context(session, cluster_id, year_override=None):
+def query_context(session, cluster_id):
     ctx = {}
 
     # ── 1. Cluster node ───────────────────────────────────────────────────────
@@ -105,13 +100,6 @@ def query_context(session, cluster_id, year_override=None):
     ctx["domain"] = dict(row) if row else {}
 
     year_id = ctx["domain"].get("year_id")
-
-    # --year flag overrides the domain anchor (use when cluster is KS-level but
-    # you're teaching it in a specific year, e.g. SC-KS2 → Y5 not Y3)
-    if year_override:
-        ctx["domain"]["year_id"] = year_override
-        ctx["domain"]["year_override"] = True
-        year_id = year_override
 
     # ── 4. All clusters in this domain (for sequencing) ───────────────────────
     domain_id = ctx["domain"].get("domain_id")
@@ -243,22 +231,22 @@ def query_context(session, cluster_id, year_override=None):
         ctx["feedback_profile"] = {}
         ctx["interaction_types"] = []
 
-    # ── 9. ThinkingLens options for this cluster (ordered by rank) ───────────
+    # ── 9. Thinking lenses (APPLIES_LENS from cluster to ThinkingLens) ───────
     key_stage = ctx["domain"].get("key_stage")
     r = session.run("""
-        MATCH (cc:ConceptCluster {cluster_id: $cid})-[rel:APPLIES_LENS]->(tl:ThinkingLens)
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[al:APPLIES_LENS]->(tl:ThinkingLens)
         OPTIONAL MATCH (tl)-[pf:PROMPT_FOR]->(ks:KeyStage {key_stage_id: $ks})
         RETURN tl.lens_id       AS lens_id,
-               tl.lens_name     AS lens_name,
+               tl.name          AS name,
                tl.description   AS description,
                tl.key_question  AS key_question,
                coalesce(pf.agent_prompt, tl.agent_prompt) AS agent_prompt,
                pf.question_stems AS question_stems,
-               rel.rank         AS rank,
-               rel.rationale    AS mapping_rationale
-        ORDER BY rel.rank
+               al.rank          AS rank,
+               al.rationale     AS rationale
+        ORDER BY al.rank
     """, cid=cluster_id, ks=key_stage)
-    ctx["thinking_lenses"] = [dict(row) for row in r]
+    ctx["thinking_lenses"] = [dict(r) for r in r]
 
     return ctx
 
@@ -274,7 +262,6 @@ def render_markdown(ctx):
     prereqs = ctx.get("prerequisite_concepts", [])
     interactions = ctx.get("interaction_types", [])
     domain_clusters = ctx.get("domain_clusters", [])
-    thinking_lenses = ctx.get("thinking_lenses", [])
 
     lines = []
 
@@ -289,10 +276,8 @@ def render_markdown(ctx):
     lines.append("## Overview")
     lines.append("")
     lines.append(f"- **Subject**: {d.get('subject', '—')}")
-    year_display = d.get('year_id', d.get('key_stage', '—'))
-    if d.get('year_override'):
-        year_display += " *(year override — learner profile reflects this year, not domain anchor)*"
-    lines.append(f"- **Year group**: {year_display} ({d.get('year_label', '')})")
+    lines.append(f"- **Year group**: {d.get('year_id', d.get('key_stage', '—'))} "
+                 f"({d.get('year_label', '')})")
     lines.append(f"- **Domain**: {d.get('domain_name', '—')} (`{d.get('domain_id', '—')}`)")
     lines.append(f"- **Estimated teaching time**: {c.get('lesson_count', '—')} lessons "
                  f"(~{c.get('teaching_weeks', '—')} weeks)")
@@ -332,24 +317,21 @@ def render_markdown(ctx):
             lines.append(f"**Leads to**: `{n['cluster_id']}` — {n['cluster_name']}")
         lines.append("")
 
-    # ── ThinkingLens options ──
-    if thinking_lenses:
+    # ── Thinking lenses ──
+    lenses = ctx.get("thinking_lenses", [])
+    if lenses:
         lines.append("## Thinking lenses")
         lines.append("")
-        lines.append("*The following lenses apply to this cluster. Each is a valid framing — "
-                     "choose the one that fits your lesson angle.*")
-        lines.append("")
-        for tl in thinking_lenses:
-            primary = " *(recommended)*" if tl["rank"] == 1 else ""
-            lines.append(f"### {tl['lens_name']}{primary}")
+        for tl in lenses:
+            primary_tag = " (primary)" if tl["rank"] == 1 else ""
+            lines.append(f"### {tl['name']}{primary_tag}")
             lines.append("")
-            lines.append(f"*{tl.get('description', '')}*")
+            lines.append(f"*{tl['description']}*")
             lines.append("")
-            if tl.get("mapping_rationale"):
-                lines.append(f"**Why this lens fits:** {tl['mapping_rationale']}")
-                lines.append("")
-            if tl.get("key_question"):
-                lines.append(f"> **Key question for pupils:** _{tl['key_question']}_")
+            lines.append(f"**Key question:** {tl['key_question']}")
+            lines.append("")
+            if tl.get("rationale"):
+                lines.append(f"**Why this cluster:** {tl['rationale']}")
                 lines.append("")
             if tl.get("agent_prompt"):
                 lines.append(f"> **AI instruction:** {tl['agent_prompt']}")
@@ -359,7 +341,8 @@ def render_markdown(ctx):
                 lines.append("**Question stems:**")
                 for stem in stems:
                     lines.append(f"- {stem}")
-            lines.append("")
+                lines.append("")
+        lines.append("")
 
     # ── Prerequisites ──
     if prereqs:
@@ -516,14 +499,12 @@ def main():
     parser = argparse.ArgumentParser(description="Query lesson context from Neo4j")
     parser.add_argument("cluster_id", help="ConceptCluster ID e.g. MA-Y3-D001-CL001")
     parser.add_argument("--output", help="Directory to write context.json and context.md")
-    parser.add_argument("--year", help="Override year group for learner profile (e.g. Y5). "
-                                       "Use when a KS-level domain anchors to the wrong year.")
     args = parser.parse_args()
 
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
     try:
         with driver.session() as session:
-            ctx = query_context(session, args.cluster_id, year_override=args.year)
+            ctx = query_context(session, args.cluster_id)
     finally:
         driver.close()
 

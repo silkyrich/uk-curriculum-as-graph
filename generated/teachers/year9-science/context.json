@@ -1,0 +1,360 @@
+{
+  "cluster": {
+    "cluster_id": "SC-KS3-D001-CL002",
+    "cluster_name": "Ask scientific questions, make predictions and design investigations",
+    "cluster_type": "practice",
+    "rationale": "Questioning, prediction, variable identification and experimental design form the planning stage of any investigation; they are always taught together as a sequence. Co_teach_hints link C007 and C021.",
+    "inspired_by": "NGSS SEP 1 - Asking Questions; SEP 3 - Planning Investigations",
+    "is_curated": true,
+    "teaching_weeks": 4.0,
+    "lesson_count": 12,
+    "complexity_range": "2-4",
+    "is_keystone_cluster": false
+  },
+  "concepts": [
+    {
+      "concept_id": "SC-KS3-C007",
+      "concept_name": "Scientific questioning",
+      "description": "Ability to ask meaningful scientific questions based on observations and prior knowledge",
+      "teaching_guidance": "Model the process of turning a vague question into a testable scientific question. Start with broad observations (e.g., 'plants grow better in some places') and guide pupils to refine into specific, testable questions ('Does the amount of light affect the height of cress seedlings after 10 days?'). Use the Question Formulation Technique (QFT) to generate questions from stimulus material such as photographs or demonstrations.",
+      "key_vocabulary": "scientific question, testable, hypothesis, observation, variable, measurable, enquiry, investigation, prediction, correlation, causal, qualitative, quantitative",
+      "common_misconceptions": "Students often think any question is a scientific question \u2014 clarify that scientific questions must be testable through observation or experiment. Students may also confuse a question with a prediction \u2014 a question asks what might happen; a prediction states what you expect to happen based on reasoning.",
+      "concept_type": "skill",
+      "complexity_level": 2,
+      "teaching_weight": 2,
+      "is_keystone": false,
+      "co_teach_hints": []
+    },
+    {
+      "concept_id": "SC-KS3-C008",
+      "concept_name": "Scientific prediction",
+      "description": "Ability to make predictions based on scientific knowledge and understanding",
+      "teaching_guidance": "Give pupils a set of scientific facts or principles and ask them to generate predictions for specific scenarios. For example, given knowledge of thermal conductivity, predict which material will allow an ice cube to melt fastest. Emphasise the difference between a guess and a scientific prediction \u2014 predictions must be justified using existing knowledge. Use 'I predict... because...' sentence frames to scaffold reasoning.",
+      "key_vocabulary": "prediction, hypothesis, scientific knowledge, justify, reasoning, evidence, expected outcome, prior knowledge, extrapolation, trend, pattern, if...then...because",
+      "common_misconceptions": "Students often think a prediction is just a guess \u2014 emphasise that a scientific prediction is based on existing knowledge and can be tested. Students also confuse predictions with hypotheses \u2014 a prediction is a specific statement about what will happen; a hypothesis is a proposed explanation for why.",
+      "concept_type": "skill",
+      "complexity_level": 3,
+      "teaching_weight": 3,
+      "is_keystone": false,
+      "co_teach_hints": []
+    },
+    {
+      "concept_id": "SC-KS3-C009",
+      "concept_name": "Variables in experiments",
+      "description": "Understanding and identifying independent, dependent, and control variables in scientific investigations",
+      "teaching_guidance": "Use concrete examples across biology, chemistry and physics to identify the three variable types. For the classic 'effect of temperature on enzyme activity' experiment: independent variable = temperature, dependent variable = rate of reaction, control variables = enzyme concentration, substrate concentration, pH. Have pupils practise identifying variables from written scenarios before designing their own experiments. Use structured tables to organise variables.",
+      "key_vocabulary": "independent variable, dependent variable, control variable, fair test, confounding variable, experimental design, hypothesis, measurement, categorical, continuous, discrete, operational definition",
+      "common_misconceptions": "Students frequently mix up independent and dependent variables \u2014 the independent variable is what you deliberately change; the dependent variable is what you measure. The mnemonic 'I change the Independent, I observe the Dependent' can help. Students also sometimes think that only one control variable is needed \u2014 emphasise that all variables except the independent variable must be controlled.",
+      "concept_type": "knowledge",
+      "complexity_level": 3,
+      "teaching_weight": 3,
+      "is_keystone": false,
+      "co_teach_hints": []
+    },
+    {
+      "concept_id": "SC-KS3-C010",
+      "concept_name": "Experimental design",
+      "description": "Ability to plan and select appropriate types of scientific enquiries to test predictions",
+      "teaching_guidance": "Introduce the five types of scientific enquiry: observing over time, pattern seeking, identifying and classifying, comparative fair testing, and research using secondary sources. Give pupils scenarios and ask them to select the most appropriate enquiry type. For fair tests, use a structured planning framework: question \u2192 prediction \u2192 variables \u2192 method \u2192 equipment \u2192 risk assessment. Practise designing experiments collaboratively before independent work.",
+      "key_vocabulary": "experimental design, fair test, observation, pattern seeking, classification, comparative test, secondary source, methodology, controlled experiment, sample size, systematic, protocol, reliability, validity",
+      "common_misconceptions": "Students often think the only type of scientific investigation is a fair test \u2014 clarify that observational studies, surveys, and pattern-seeking investigations are equally valid scientific approaches. Students may also design experiments with too many variables changing at once \u2014 emphasise that changing only one variable at a time is essential for a controlled experiment.",
+      "concept_type": "skill",
+      "complexity_level": 4,
+      "teaching_weight": 4,
+      "is_keystone": false,
+      "co_teach_hints": []
+    }
+  ],
+  "domain": {
+    "domain_id": "SC-KS3-D001",
+    "domain_name": "Working Scientifically",
+    "domain_description": "Scientific methods, processes and enquiry skills that underpin all scientific disciplines. Includes scientific attitudes, experimental skills, analysis and evaluation, and measurement.",
+    "curriculum_context": "Working scientifically at KS3 extends the enquiry skills developed in primary school to more rigorous, systematic and hypothesis-driven investigation. Pupils are expected to ask questions, make observations, design controlled experiments using independent, dependent and control variables, and analyse data quantitatively using means, ranges and graphical representations including scatter graphs. The statutory curriculum requires pupils to evaluate the reliability of their evidence, recognise sources of error and uncertainty, and communicate findings in written reports that distinguish between data and conclusions. KS3 pupils also learn to critically evaluate the work of others, reading and interpreting published scientific accounts, and understanding how scientific knowledge develops through peer review and replication. This domain underpins all science learning and its skills are applied throughout Biology, Chemistry and Physics.",
+    "structure_type": "hierarchical",
+    "subject": "Science",
+    "key_stage": "KS3",
+    "year_id": "Y7",
+    "year_label": null,
+    "key_stage_name": null
+  },
+  "domain_clusters": [
+    {
+      "cluster_id": "SC-KS3-D001-CL001",
+      "cluster_name": "Understand how scientific knowledge is built, tested and revised over time",
+      "cluster_type": "introduction",
+      "after_id": null
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL002",
+      "cluster_name": "Ask scientific questions, make predictions and design investigations",
+      "cluster_type": "practice",
+      "after_id": "SC-KS3-D001-CL001"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL003",
+      "cluster_name": "Assessment: Scientific questioning, Scientific prediction, Variables in experiments (+1)",
+      "cluster_type": "assessment",
+      "after_id": "SC-KS3-D001-CL002"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL004",
+      "cluster_name": "Use laboratory equipment safely and apply appropriate techniques",
+      "cluster_type": "practice",
+      "after_id": "SC-KS3-D001-CL003"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL005",
+      "cluster_name": "Measure accurately, record data and use SI units and scientific equations",
+      "cluster_type": "practice",
+      "after_id": "SC-KS3-D001-CL004"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL006",
+      "cluster_name": "Assessment: Scientific measurement, SI units, Scientific equations",
+      "cluster_type": "assessment",
+      "after_id": "SC-KS3-D001-CL005"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL007",
+      "cluster_name": "Present data, identify patterns and apply statistical analysis",
+      "cluster_type": "practice",
+      "after_id": "SC-KS3-D001-CL006"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL008",
+      "cluster_name": "Assessment: Data presentation, Pattern identification, Statistical analysis",
+      "cluster_type": "assessment",
+      "after_id": "SC-KS3-D001-CL007"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL009",
+      "cluster_name": "Evaluate accuracy, precision and sources of error in scientific investigations",
+      "cluster_type": "practice",
+      "after_id": "SC-KS3-D001-CL008"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL010",
+      "cluster_name": "Assessment: Accuracy and precision, Repeatability and reproducibility, Method reliability (+1)",
+      "cluster_type": "assessment",
+      "after_id": "SC-KS3-D001-CL009"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL011",
+      "cluster_name": "Draw valid conclusions, use mathematical calculations and raise further questions",
+      "cluster_type": "practice",
+      "after_id": "SC-KS3-D001-CL010"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL012",
+      "cluster_name": "Assessment: Mathematical calculations in science, Drawing conclusions, Explaining results (+1)",
+      "cluster_type": "assessment",
+      "after_id": "SC-KS3-D001-CL011"
+    },
+    {
+      "cluster_id": "SC-KS3-D001-CL013",
+      "cluster_name": "Consolidation: Accuracy and precision, Repeatability and reproducibility, Method reliability (+1)",
+      "cluster_type": "consolidation",
+      "after_id": "SC-KS3-D001-CL012"
+    }
+  ],
+  "previous_cluster": {
+    "cluster_id": "SC-KS3-D001-CL001",
+    "cluster_name": "Understand how scientific knowledge is built, tested and revised over time",
+    "cluster_type": "introduction"
+  },
+  "next_clusters": [
+    {
+      "cluster_id": "SC-KS3-D001-CL003",
+      "cluster_name": "Assessment: Scientific questioning, Scientific prediction, Variables in experiments (+1)",
+      "cluster_type": "assessment"
+    }
+  ],
+  "prerequisite_concepts": [],
+  "content_guideline": {
+    "reading_level_description": "Entry to secondary school. Reading levels vary widely due to school transitions and reading habits. Expect to encounter academic non-fiction registers regularly.",
+    "lexile_min": 700,
+    "lexile_max": 950,
+    "flesch_kincaid_grade_max": 6,
+    "max_sentence_length_words": 30,
+    "avg_sentence_length_words": 18,
+    "vocabulary_level": "secondary_curriculum_vocabulary",
+    "academic_vocabulary_ok": true,
+    "tts_required": false,
+    "agent_content_prompt": "Secondary academic register. No vocabulary scaffolding unless for specialist domain terms. Expect students to engage with multi-source analysis, compare interpretations, and construct written arguments. Short-form analytical responses (100\u2013200 words) appropriate."
+  },
+  "pedagogy_profile": {
+    "session_length_min": 25,
+    "session_length_max": 40,
+    "hint_tiers_max": 4,
+    "productive_failure_appropriate": true,
+    "scaffolding_level": "light",
+    "session_sequence": "[\"challenge_problem\", \"exploration\", \"instruction\", \"independent_practice\", \"retrieval_practice\", \"metacognitive_reflection\"]",
+    "desirable_difficulties": "[\"spacing\", \"interleaving\", \"varied_practice\", \"generation_effect\", \"testing_effect\"]",
+    "spacing_interval_days_min": 3,
+    "spacing_interval_days_max": 21,
+    "agent_pedagogy_prompt": "Secondary level productive failure. Challenge problems can be open-ended and multi-day. Worked examples as reference, not instruction. Metacognitive reflection standard after each session. Retrieval-only practice for mastered content. Interleave across KS3 topic strands.",
+    "active_techniques": [],
+    "introduced_techniques": []
+  },
+  "feedback_profile": {
+    "feedback_style": "academic_critical",
+    "ai_tone": "academic_peer",
+    "gamification_safe": false,
+    "progress_bars_safe": false,
+    "leaderboards_safe": false,
+    "badge_systems_safe": false,
+    "unexpected_delight_safe": true,
+    "delight_frequency": "very_rare",
+    "counter_misconceptions_explicit": true,
+    "metacognitive_reflection": true,
+    "feedback_example_correct": "Correct \u2014 and the implication is worth noting: if this is true, then [connected consequence] should also hold. Does it?",
+    "feedback_example_incorrect": "That reasoning has a gap: you assumed [X], but the evidence points the other way because [Y]. Revise your argument in light of that.",
+    "avoid_phrases": "[\"Wrong\", \"Amazing\", \"Brilliant\", \"That is so clever\"]",
+    "agent_feedback_prompt": "Academic feedback. Engage with argument quality: claim, evidence, reasoning. Identify specific logical gaps or unsupported assumptions. Metacognitive debrief standard. No performance praise \u2014 evaluate ideas, not the person."
+  },
+  "interaction_types": [
+    {
+      "interaction_id": "compare_contrast_table",
+      "name": "Compare and Contrast Table",
+      "category": "higher_order",
+      "agent_prompt": "Pre-populate comparison criteria (rows) \u2014 do not ask child to identify criteria at Y5; provide them. Y6+ can be given blank criteria rows to identify. After completion, prompt: 'Looking at your table, what is the most important difference?' to prompt synthesis beyond recall.",
+      "ui_notes": "2\u20133 column table with labelled rows (criteria). Cell text input (1\u20132 sentences). 'Similarity' and 'Difference' row types. Export/print of completed table.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Science\", \"History\", \"Geography\", \"English\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "inference_task",
+      "name": "Inference Task \u2014 Socratic Questioning",
+      "category": "higher_order",
+      "agent_prompt": "Question sequence: (1) What do you notice / see? (2) What does that tell you? (3) Why do you think that? (4) What would need to be different for your answer to change? Never affirm or deny until the end of the chain. Final step: 'You inferred [X] correctly because [Y] \u2014 the text didn't say it directly, but the clues were [Z].'",
+      "ui_notes": "Conversation-style display. Child's response followed by next question. Source text/image visible on the same screen. Progress indicator shows depth into the question chain.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"English\", \"Science\", \"History\", \"Geography\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "text_annotation",
+      "name": "Text Annotation \u2014 Add Comment",
+      "category": "reading_tool",
+      "agent_prompt": "Use for PEE (Point, Evidence, Explain) structures. Scaffold with column headers: 'What does this word suggest?' / 'What is the effect on the reader?'. Show annotations from a model reader alongside child's own for comparison.",
+      "ui_notes": "Comment bubble appears on highlight. Short text field (1\u20132 sentences). Comment anchored to selected text. Multiple annotations visible simultaneously with toggle.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"English\", \"History\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "text_highlight",
+      "name": "Text Highlight and Select",
+      "category": "reading_tool",
+      "agent_prompt": "Instruct child to highlight specific evidence before asking them to explain it. 'Find the part of the text that tells you [X]'. After highlight, ask: 'Why does that part of the text show us [X]?' Multiple colours allow tracking evidence, vocabulary, and inference clues separately.",
+      "ui_notes": "Click/tap and drag to select text. Multiple highlight colours for different purposes (e.g., yellow=evidence, blue=inference clue). Annotation popup on highlight. Highlights persist across the question set.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"English\", \"History\", \"Science\", \"Geography\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "multi_choice_4",
+      "name": "Multiple Choice \u2014 4 Options",
+      "category": "selection",
+      "agent_prompt": "1 correct answer + 3 distractors. Each distractor should address a specific, documented misconception from the curriculum domain. Explain why the distractor is wrong in post-answer feedback.",
+      "ui_notes": "4 options in 2\u00d72 grid (tablet) or stacked (mobile). A/B/C/D labels visible.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "multi_choice_5",
+      "name": "Multiple Choice \u2014 5 Options (with None/All)",
+      "category": "selection",
+      "agent_prompt": "Use when curriculum content warrants nuanced discrimination. 'None of the above' is a high-cognitive-demand option \u2014 use selectively, not as a default filler. Confirm the distractor set addresses documented misconceptions.",
+      "ui_notes": "Stacked list with A\u2013E labels. 'None of the above' should appear last if used. Do not use in time-limited contexts.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "text_input_sentence",
+      "name": "Text Input \u2014 Full Sentence",
+      "category": "text_input",
+      "agent_prompt": "Evaluate sentence for meaning, not surface grammar. Provide a structural scaffold prompt if blank after 30 seconds: 'Try starting with [X] because...' or 'I think [X] because [Y]'. In feedback, show a model answer alongside the child's response.",
+      "ui_notes": "Multiline text area (2 lines). Word count guide. Sentence starter scaffold available on demand.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "text_input_paragraph",
+      "name": "Text Input \u2014 Paragraph",
+      "category": "text_input",
+      "agent_prompt": "Structure evaluation around: claim (present?), evidence (cited?), reasoning (logical?). Use a 3-point rubric internally. Feedback should address each dimension. Do not focus on spelling or grammar unless that is the assessed skill.",
+      "ui_notes": "Multiline text area (4 lines visible). Word count displayed. Paragraph planner scaffold available. Autosave in progress.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"English\", \"Science\", \"History\", \"Geography\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "voice_input",
+      "name": "Voice Input",
+      "category": "input",
+      "agent_prompt": "Use single voiced questions only. Do not display the question text \u2014 speak it. Provide visual microphone affordance. Confirm transcription back before evaluating. Accept phonetic approximations for subject vocabulary.",
+      "ui_notes": "Large microphone button with waveform animation. Playback button so child can hear their answer before submitting. Auto-submit after 2 seconds of silence option.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "drag_categorise",
+      "name": "Drag to Categorise",
+      "category": "manipulation",
+      "agent_prompt": "Limit to 2\u20133 categories for Y3, up to 4\u20135 for Y5+. Confirm whether items are mutually exclusive or can belong to multiple categories. In feedback, explain the classification principle, not just the correct placement.",
+      "ui_notes": "Category buckets clearly outlined. Items can live in multiple buckets if the classification supports it (e.g., Venn diagram). Drop zones highlight on hover/drag over.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Science\", \"Mathematics\", \"Geography\", \"History\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "drag_reorder",
+      "name": "Drag to Reorder",
+      "category": "manipulation",
+      "agent_prompt": "Use for chronological ordering, process sequences, or ranked comparisons. Provide 4\u20136 items for Y4\u2013Y5, up to 8 for Y6+. After incorrect submission, show correct order with brief explanation of the sequencing logic.",
+      "ui_notes": "Drag handles visible (\u2261 icon). Items snap to position. After submit, animate correct order if child was wrong. Maximum 8 items.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"History\", \"Science\", \"English\", \"Mathematics\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "matching_pairs",
+      "name": "Matching Pairs",
+      "category": "manipulation",
+      "agent_prompt": "Limit to 4\u20135 pairs for Y3\u2013Y4, up to 6\u20138 pairs for Y5+. Distractors should be near-misses (similar terms, not obviously unrelated). After matching, display all correct pairs simultaneously before moving on.",
+      "ui_notes": "Two columns with tappable/clickable items. Lines drawn between matched pairs. Colour-coded lines for clarity. Maximum 6 pairs per screen.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "code_input",
+      "name": "Code Input",
+      "category": "text_input",
+      "agent_prompt": "Provide code scaffolds with comments indicating what to complete. Never show the full solution in the scaffold. Check logic, not just syntax. Feedback should explain why the code works or fails conceptually.",
+      "ui_notes": "Monospaced font, syntax highlighting, auto-indent. Run/execute button if environment supports it. Line numbers visible.",
+      "requires_literacy": true,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Computing\"]",
+      "is_primary": false
+    }
+  ]
+}

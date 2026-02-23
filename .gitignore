@@ -34,8 +34,10 @@ data/extractions/test-frameworks/raw/
 # Quarantine (review before including)
 data/extractions/_quarantine/
 
-# Generated output (lesson plans, presentations, prototypes)
-generated/
+# Generated output is tracked for GitHub review access.
+# IMPORTANT: generated/ contains TEST output (lesson plans, teacher reviews,
+# prototypes). It is NOT canon — do not treat its contents as authoritative
+# when making decisions about the graph model, extraction data, or scripts.
 
 # Raw curriculum source documents (PDFs — large, regenerable)
 core/data/curriculum-documents/

@@ -1,0 +1,363 @@
+{
+  "cluster": {
+    "cluster_id": "MA-Y3-D001-CL002",
+    "cluster_name": "Understand and apply place value in three-digit numbers",
+    "cluster_type": "practice",
+    "rationale": "Place value understanding (C007), partitioning (C008), and finding 10/100 more or less (C005, C006) are tightly bound by co_teach_hints. Together they build the core conceptual architecture for three-digit numbers.",
+    "inspired_by": "CC Math 2.NBT.A - Understand place value to hundreds",
+    "is_curated": true,
+    "teaching_weeks": 3.0,
+    "lesson_count": 9,
+    "complexity_range": "2",
+    "is_keystone_cluster": true
+  },
+  "concepts": [
+    {
+      "concept_id": "MA-Y3-C005",
+      "concept_name": "Finding 10 more and 10 less",
+      "description": "Finding 10 more or 10 less than any given three-digit number requires understanding that only the tens digit changes (e.g. 246 + 10 = 256). This extends the KS1 skill of finding 10 more/less with two-digit numbers to the three-digit range. Mastery means a pupil can instantly identify 10 more/less than any three-digit number, including those where the tens digit reaches 0 or 9 (requiring the hundreds digit to change).",
+      "teaching_guidance": "Use a 0-1000 number line with clear decade markings. Dienes blocks are powerful: adding a ten-stick shows the change physically. A hundred square extended to show three-digit numbers helps pupils see the pattern. Focus on the boundary cases: 10 more than 190 is 200 (the tens digit overflows into the hundreds); 10 less than 200 is 190 (borrowing from the hundreds). Practise with rapid-fire questions.",
+      "key_vocabulary": "ten more, ten less, tens digit, hundreds digit, increase, decrease, partition",
+      "common_misconceptions": "When the tens digit is 9, pupils often say 10 more than 196 is 1096 (adding a 1 in front) or 196 + 10 = 1,106. When the tens digit is 0, pupils may say 10 less than 300 is 390 rather than 290. These boundary errors reveal incomplete understanding of how carrying and borrowing work with hundreds.",
+      "concept_type": "skill",
+      "complexity_level": 2,
+      "teaching_weight": 2,
+      "is_keystone": false,
+      "co_teach_hints": []
+    },
+    {
+      "concept_id": "MA-Y3-C006",
+      "concept_name": "Finding 100 more and 100 less",
+      "description": "Finding 100 more or 100 less than any three-digit number requires understanding that only the hundreds digit changes (e.g. 346 + 100 = 446). This extends directly from finding 10 more/less by one column of place value. Mastery means a pupil can instantly identify 100 more or 100 less, including at boundaries such as 100 more than 900 = 1000.",
+      "teaching_guidance": "Use Dienes blocks: adding a hundreds flat to a three-digit number shows the change physically. Connect to the hundred square pattern (one row down = 10 more; one full square = 100 more conceptually). Emphasise that the tens and ones digits do not change. Target the boundary: 100 more than 900 crosses into four digits (1000), which is an exciting moment to discuss. Practise in both directions.",
+      "key_vocabulary": "hundred more, hundred less, hundreds digit, partition, place value, boundary",
+      "common_misconceptions": "Pupils often change the wrong digit: for 100 more than 324, some say 424 (correct) but others say 334 (changed tens) or 325 (changed ones). The boundary case of 100 more than 900 = 1000 can confuse pupils who think four-digit numbers do not exist yet.",
+      "concept_type": "skill",
+      "complexity_level": 2,
+      "teaching_weight": 2,
+      "is_keystone": false,
+      "co_teach_hints": [
+        "MA-Y3-C001",
+        "MA-Y3-C004",
+        "MA-Y3-C005",
+        "MA-Y3-C007",
+        "MA-Y3-C008",
+        "MA-Y3-C009",
+        "MA-Y3-C011"
+      ]
+    },
+    {
+      "concept_id": "MA-Y3-C007",
+      "concept_name": "Place value in three-digit numbers",
+      "description": "Understanding that each digit in a three-digit number has a specific value determined by its position \u2014 hundreds, tens or ones \u2014 is the core of place value for Year 3. For example, in 347, the 3 represents 300, the 4 represents 40 and the 7 represents 7. Mastery means pupils can identify the value of any digit in a three-digit number, partition the number in standard form (347 = 300 + 40 + 7), and use this understanding to support all calculation strategies.",
+      "teaching_guidance": "Use base-ten (Dienes) blocks as the primary concrete resource: hundreds flats, tens sticks and ones cubes model each place value position physically. Place value mats with columns for H, T and O support structured partitioning. Arrow cards (separate cards for 300, 40, 7 that slot together to form 347) show how digits combine and separate. Progress to place value charts and then to abstract representation. Always connect to the spoken number name.",
+      "key_vocabulary": "hundreds, tens, ones, units, place value, digit, three-digit number, partition, value, represent",
+      "common_misconceptions": "Pupils frequently confuse the digit with its value \u2014 saying the digit 3 in 347 'is worth 3' rather than 300. Pupils with insecure understanding may add the digits (3 + 4 + 7 = 14) rather than partitioning them. Zero as a place holder causes particular difficulty: in 307, the zero means 'no tens', but pupils often omit it when writing the number or misread it as 37.",
+      "concept_type": "knowledge",
+      "complexity_level": 2,
+      "teaching_weight": 3,
+      "is_keystone": true,
+      "co_teach_hints": [
+        "MA-Y3-C001",
+        "MA-Y3-C004",
+        "MA-Y3-C005",
+        "MA-Y3-C006",
+        "MA-Y3-C008",
+        "MA-Y3-C009",
+        "MA-Y3-C011"
+      ]
+    },
+    {
+      "concept_id": "MA-Y3-C008",
+      "concept_name": "Partitioning three-digit numbers",
+      "description": "Partitioning is the process of splitting a number into its component parts according to place value (e.g. 347 = 300 + 40 + 7). In Year 3, pupils extend this from two-digit to three-digit numbers and also practise flexible (non-standard) partitioning (e.g. 347 = 300 + 47 or 270 + 77). Mastery means pupils can partition any three-digit number in multiple ways and use partitioning as a mental calculation strategy.",
+      "teaching_guidance": "Arrow cards and Dienes blocks remain the most powerful tools. After establishing standard partitioning, introduce flexible partitioning through practical problems: if I have 3 hundreds and 14 tens, what number is that? Discuss: 3 hundreds and 14 tens = 3 hundreds + 1 hundred + 4 tens = 4 hundreds + 4 tens = 440. Flexible partitioning is directly needed for mental addition and subtraction strategies, so teaching it in that context makes the purpose clear.",
+      "key_vocabulary": "partition, split, hundreds, tens, ones, standard, flexible, parts, whole, compose, decompose",
+      "common_misconceptions": "Pupils can usually do standard partitioning but struggle with flexible partitioning (e.g. they cannot see that 347 = 300 + 47 = 250 + 97). They may also partition in writing but not connect it to mental arithmetic strategies. Some pupils think each partition is a different number rather than different ways of expressing the same number.",
+      "concept_type": "skill",
+      "complexity_level": 2,
+      "teaching_weight": 2,
+      "is_keystone": false,
+      "co_teach_hints": []
+    }
+  ],
+  "domain": {
+    "domain_id": "MA-Y3-D001",
+    "domain_name": "Number - Number and Place Value",
+    "domain_description": "Understanding place value in three-digit numbers (hundreds, tens, ones), counting in multiples of 4, 8, 50 and 100, comparing and ordering numbers to 1000, and reading/writing numbers in numerals and words.",
+    "curriculum_context": "In lower key stage 2, the principal focus of mathematics teaching is to ensure that pupils become increasingly fluent with whole numbers and the four operations, including number facts and the concept of place value. In Year 3, pupils extend their understanding of the number system from two-digit numbers (explored in KS1) to three-digit numbers, developing secure knowledge of the hundreds, tens and ones structure. The non-statutory guidance emphasises that pupils should use a variety of representations including the number line to practise counting in fours, eights, fifties and hundreds, and should connect their new knowledge of the number system to measurement \u2014 for example, linking counting in 50s to amounts on a scale. Pupils who understand place value in three-digit numbers are equipped to undertake the mental and written arithmetic that is central to the rest of Year 3 mathematics, and this domain forms the essential prerequisite for the four-digit work of Year 4.",
+    "structure_type": "hierarchical",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "year_id": "Y3",
+    "year_label": null,
+    "key_stage_name": null
+  },
+  "domain_clusters": [
+    {
+      "cluster_id": "MA-Y3-D001-CL001",
+      "cluster_name": "Extend counting sequences in multiples of 4, 8, 50 and 100",
+      "cluster_type": "introduction",
+      "after_id": null
+    },
+    {
+      "cluster_id": "MA-Y3-D001-CL002",
+      "cluster_name": "Understand and apply place value in three-digit numbers",
+      "cluster_type": "practice",
+      "after_id": "MA-Y3-D001-CL001"
+    },
+    {
+      "cluster_id": "MA-Y3-D001-CL003",
+      "cluster_name": "Assessment: Place value in three-digit numbers, Partitioning three-digit numbers, Finding 10 more and 10 less (+1)",
+      "cluster_type": "assessment",
+      "after_id": "MA-Y3-D001-CL002"
+    },
+    {
+      "cluster_id": "MA-Y3-D001-CL004",
+      "cluster_name": "Compare, order and estimate numbers to 1000",
+      "cluster_type": "practice",
+      "after_id": "MA-Y3-D001-CL003"
+    }
+  ],
+  "previous_cluster": {
+    "cluster_id": "MA-Y3-D001-CL001",
+    "cluster_name": "Extend counting sequences in multiples of 4, 8, 50 and 100",
+    "cluster_type": "introduction"
+  },
+  "next_clusters": [
+    {
+      "cluster_id": "MA-Y3-D001-CL003",
+      "cluster_name": "Assessment: Place value in three-digit numbers, Partitioning three-digit numbers, Finding 10 more and 10 less (+1)",
+      "cluster_type": "assessment"
+    }
+  ],
+  "prerequisite_concepts": [
+    {
+      "concept_id": "MA-Y2-C005",
+      "concept_name": "Adding and subtracting two-digit numbers",
+      "from_domain": "Addition and Subtraction",
+      "from_domain_id": "MA-Y2-D002"
+    },
+    {
+      "concept_id": "MA-Y2-C007",
+      "concept_name": "Inverse relationship between addition and subtraction",
+      "from_domain": "Addition and Subtraction",
+      "from_domain_id": "MA-Y2-D002"
+    },
+    {
+      "concept_id": "MA-Y3-C004",
+      "concept_name": "Counting in multiples of 100",
+      "from_domain": "Number - Number and Place Value",
+      "from_domain_id": "MA-Y3-D001"
+    }
+  ],
+  "content_guideline": {
+    "reading_level_description": "Most children are independent readers of simple texts. Reading fluency varies widely. Decoding is largely automatic for common words.",
+    "lexile_min": 150,
+    "lexile_max": 350,
+    "flesch_kincaid_grade_max": 2,
+    "max_sentence_length_words": 14,
+    "avg_sentence_length_words": 9,
+    "vocabulary_level": "curriculum_vocabulary_supported",
+    "academic_vocabulary_ok": false,
+    "tts_required": false,
+    "agent_content_prompt": "Use clear, active sentences with one idea per sentence. Subject vocabulary can be used if first introduced with a definition. Avoid passive voice. Metaphors and similes are helpful for abstract science concepts. Questions can require 1\u20133 word written answers or spoken responses."
+  },
+  "pedagogy_profile": {
+    "session_length_min": 12,
+    "session_length_max": 20,
+    "hint_tiers_max": 3,
+    "productive_failure_appropriate": true,
+    "scaffolding_level": "moderate_to_high",
+    "session_sequence": "[\"challenge_problem\", \"guided_exploration\", \"worked_example\", \"independent_practice\", \"retrieval_practice\"]",
+    "desirable_difficulties": "[\"spacing\", \"interleaving\"]",
+    "spacing_interval_days_min": 2,
+    "spacing_interval_days_max": 7,
+    "agent_pedagogy_prompt": "Start with a challenge problem \u2014 do not explain first. Let the child attempt independently for 2\u20133 minutes. Collect their attempt. Then show the worked example. Follow with 3\u20134 retrieval practice questions that mix this concept with previously mastered material (interleaving). Contextualize difficulty: 'That one was harder \u2014 your brain was working to connect different ideas.'",
+    "active_techniques": [],
+    "introduced_techniques": []
+  },
+  "feedback_profile": {
+    "feedback_style": "specific_competence",
+    "ai_tone": "warm_competence_focused",
+    "gamification_safe": false,
+    "progress_bars_safe": false,
+    "leaderboards_safe": false,
+    "badge_systems_safe": false,
+    "unexpected_delight_safe": true,
+    "delight_frequency": "semi_random",
+    "counter_misconceptions_explicit": false,
+    "metacognitive_reflection": false,
+    "feedback_example_correct": "You spotted the pattern \u2014 all the multiples of 6 end in an even number. That is a really useful thing to notice.",
+    "feedback_example_incorrect": "That one got you \u2014 7\u00d78 trips up a lot of people. Here is a trick: 7\u00d77 is 49, so 7\u00d78 is just 7 more, which gives 56.",
+    "avoid_phrases": "[\"Wrong\", \"Incorrect\", \"You need to improve\", \"Well done!\", \"Amazing!\"]",
+    "agent_feedback_prompt": "Specific competence feedback: name the pattern, rule, or skill the child demonstrated. On error, explain the specific misconception (not just 'wrong') and give the reasoning to fix it. Normalize productive struggle: 'That one took longer \u2014 your brain was making new connections.' Never compare to other children or previous performance."
+  },
+  "interaction_types": [
+    {
+      "interaction_id": "pattern_discovery",
+      "name": "Pattern Discovery \u2014 I Notice / I Wonder",
+      "category": "higher_order",
+      "agent_prompt": "This is the productive failure activation phase \u2014 do NOT correct or evaluate observations during discovery. Say 'That is interesting, what else do you notice?' to all responses. After the discovery phase, connect the child's actual observations to the canonical concept: 'You noticed [X] \u2014 that is the [Y] pattern.'",
+      "ui_notes": "Two large buttons: 'I notice...' (yellow) and 'I wonder...' (blue). Each click opens a voice/text input. Child's observations collected in a scrollable list. No right/wrong feedback during this phase.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Mathematics\", \"Science\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "drag_categorise",
+      "name": "Drag to Categorise",
+      "category": "manipulation",
+      "agent_prompt": "Limit to 2\u20133 categories for Y3, up to 4\u20135 for Y5+. Confirm whether items are mutually exclusive or can belong to multiple categories. In feedback, explain the classification principle, not just the correct placement.",
+      "ui_notes": "Category buckets clearly outlined. Items can live in multiple buckets if the classification supports it (e.g., Venn diagram). Drop zones highlight on hover/drag over.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Science\", \"Mathematics\", \"Geography\", \"History\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "matching_pairs",
+      "name": "Matching Pairs",
+      "category": "manipulation",
+      "agent_prompt": "Limit to 4\u20135 pairs for Y3\u2013Y4, up to 6\u20138 pairs for Y5+. Distractors should be near-misses (similar terms, not obviously unrelated). After matching, display all correct pairs simultaneously before moving on.",
+      "ui_notes": "Two columns with tappable/clickable items. Lines drawn between matched pairs. Colour-coded lines for clarity. Maximum 6 pairs per screen.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "multi_choice_3",
+      "name": "Multiple Choice \u2014 3 Options",
+      "category": "selection",
+      "agent_prompt": "Provide 1 correct answer and 2 plausible distractors. Distractors should represent common misconceptions, not random wrong answers. Label A/B/C only if children are Y3+.",
+      "ui_notes": "Three clearly spaced buttons. Illustrations optional from Y3 onwards. Options stacked vertically on mobile.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "multi_choice_4",
+      "name": "Multiple Choice \u2014 4 Options",
+      "category": "selection",
+      "agent_prompt": "1 correct answer + 3 distractors. Each distractor should address a specific, documented misconception from the curriculum domain. Explain why the distractor is wrong in post-answer feedback.",
+      "ui_notes": "4 options in 2\u00d72 grid (tablet) or stacked (mobile). A/B/C/D labels visible.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "text_input_word",
+      "name": "Text Input \u2014 Single Word",
+      "category": "text_input",
+      "agent_prompt": "Accept near-miss spellings (within 2 Levenshtein edits of the correct answer). Do not penalise spelling errors unless spelling is the assessed skill. Provide word-length hint (e.g. _ _ _ _ _ _ _ _ ) if child makes 2 failed attempts.",
+      "ui_notes": "Single-line input field, auto-capitalise off, spellcheck on but answer accepted if phonetically close. Voice fallback always available.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "voice_input",
+      "name": "Voice Input",
+      "category": "input",
+      "agent_prompt": "Use single voiced questions only. Do not display the question text \u2014 speak it. Provide visual microphone affordance. Confirm transcription back before evaluating. Accept phonetic approximations for subject vocabulary.",
+      "ui_notes": "Large microphone button with waveform animation. Playback button so child can hear their answer before submitting. Auto-submit after 2 seconds of silence option.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "voice_recorder",
+      "name": "Voice Recorder \u2014 Record and Playback",
+      "category": "input",
+      "agent_prompt": "Use for scientific observation recording ('Press the button and tell me what you notice'), hypothesis formation ('Say what you think will happen'), and oral explanation tasks where written production is a barrier. After recording, display the transcription and ask child to confirm: 'Is that what you meant to say?' Prefer voice_recorder over typed answers for Y1-Y3 science, geography, and history observation tasks. Do not require written follow-up unless writing is the assessed skill.",
+      "ui_notes": "Large microphone button with pulsing animation. Live waveform display during recording. Plays back with waveform and transcribed text below. Re-record button always visible. Transcript displayed alongside audio for child to follow. Auto-punctuation in transcript. Option to submit voice or edit transcribed text.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Science\", \"English\", \"History\", \"Geography\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "drag_drop_place",
+      "name": "Drag and Drop \u2014 Place on Target",
+      "category": "manipulation",
+      "agent_prompt": "Use when placement reveals understanding (e.g., ordering on number line, sorting into Venn diagram). Items should be clearly distinguishable by colour/shape. Limit to 6 draggable items maximum per screen for Y1-Y3.",
+      "ui_notes": "Large drag handles (min 48\u00d748px touch target). Clear snap-to-target zones. Undo button always visible. Accessibility: keyboard-navigable alternative.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "image_annotation",
+      "name": "Image Annotation \u2014 Tap to Label",
+      "category": "manipulation",
+      "agent_prompt": "Use for anatomy diagrams, food webs, geographical features, historical artefacts. Hotspot targets should be minimum 44\u00d744px. Provide labelling list for Y2\u2013Y4 (select from provided terms). Open labelling (typed) for Y5+.",
+      "ui_notes": "High-resolution diagrams required. Tap targets shown as pulsing circles. Labels can be drag-placed or chosen from dropdown. Pin/label reveal animation on correct placement.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Science\", \"Geography\", \"History\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "area_model_multiplication",
+      "name": "Area Model (Grid / Array for Multiplication)",
+      "category": "maths_tool",
+      "agent_prompt": "Use after introducing multiplication concept, before formal long multiplication algorithm. Ask child to estimate the area first (productive failure). Then reveal the model. Connect: 'The grid shows us that 23 \u00d7 14 is the same as (20 \u00d7 14) + (3 \u00d7 14) \u2014 can you see that in the grid?'",
+      "ui_notes": "Gridded rectangle. Child enters width and height values. Grid fills to show array. Partition lines for expanded method. Colour sections by place value (hundreds/tens/ones).",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "column_subtraction",
+      "name": "Column Subtraction (Formal Written Method with Exchanging)",
+      "category": "maths_tool",
+      "agent_prompt": "Start from the units column. When exchange is needed, prompt: 'You need to exchange 1 ten for 10 ones \u2014 can you do that now?' Show the exchange animation. Validate after each digit. Common error: subtracting the smaller from larger (3-8 written as 8-3) \u2014 detect and correct immediately.",
+      "ui_notes": "Exchange shown visually with crossing out and superscript. Column layout with clear exchange area. Animate the exchange when child requests it.",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "fraction_visualizer",
+      "name": "Fraction Visualiser (Bar / Pizza / Set Model)",
+      "category": "maths_tool",
+      "agent_prompt": "Use in productive failure setup: ask child to compare 1/2 and 2/5 before providing tools, then reveal the visualiser. Encourage exploration of multiple models. Connect visual to symbolic: 'What does the 5 at the bottom tell you about the pizza?' Link to real-world contexts (sharing food, folding paper).",
+      "ui_notes": "Model selector tabs (bar / pizza / set). Denominator and numerator sliders. Side-by-side comparison mode. Equivalence line annotation. Display fractional notation alongside visual.",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "number_line_scrubber",
+      "name": "Number Line \u2014 Drag Marker",
+      "category": "maths_tool",
+      "agent_prompt": "Specify the number range and expected precision (integer, 0.5, 0.1, fraction). For fractions, display both the fractional position and decimal equivalent below the line. Use after teaching formal notation to reinforce conceptual placement.",
+      "ui_notes": "Labelled endpoints, optional intermediate markers. Snap-to-integer or snap-to-fraction-denominator mode. Shows value tooltip as user drags. Landscape orientation preferred.",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "place_value_blocks",
+      "name": "Place Value Blocks (Dienes / Base-10)",
+      "category": "maths_tool",
+      "agent_prompt": "Use when introducing or consolidating place value, regrouping, or exchanging concepts. Ask child to 'show me 347 using the blocks' before any formal task. When exchange is needed in addition, prompt them to group: 'You have 13 ones \u2014 what can you do with those?' Connect blocks to abstract notation.",
+      "ui_notes": "Drag blocks from a bank. Grouping animation: 10 units \u2192 1 ten rod. Three-column display (H / T / U). Counter displays total value. Exchange button.",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    }
+  ]
+}

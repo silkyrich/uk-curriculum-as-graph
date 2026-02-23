@@ -1,0 +1,346 @@
+{
+  "cluster": {
+    "cluster_id": "SC-KS2-D001-CL001",
+    "cluster_name": "Ask scientific questions and choose the right type of enquiry",
+    "cluster_type": "introduction",
+    "rationale": "Selecting appropriate enquiry type (including fair and comparative testing) is the gateway skill for all KS2 scientific investigation. Co_teach_hints link C001 and C002 directly.",
+    "inspired_by": "NGSS SEP 1 - Asking Questions; SEP 3 - Planning Investigations",
+    "is_curated": true,
+    "teaching_weeks": 2.0,
+    "lesson_count": 6,
+    "complexity_range": "3",
+    "is_keystone_cluster": false
+  },
+  "concepts": [
+    {
+      "concept_id": "SC-KS2-C001",
+      "concept_name": "Relevant Questioning and Enquiry Selection",
+      "description": "The ability to ask relevant scientific questions and select the most appropriate type of scientific enquiry to answer them (observation over time, pattern seeking, classifying, fair testing, secondary research). Develops from KS1 simple questioning to active enquiry design.",
+      "teaching_guidance": "Introduce the five types of scientific enquiry explicitly: observation over time, pattern seeking, classifying and grouping, comparative and fair testing, and researching using secondary sources. Present pupils with a question and ask them to decide which type of enquiry would best answer it. Use a 'question sorter' display where pupils categorise questions by enquiry type. Model asking relevant questions by connecting to the content being studied \u2014 for example, during a rocks topic ask 'Which rock is the most permeable?' (fair test) versus 'How are fossils formed?' (secondary research).",
+      "key_vocabulary": "enquiry, investigate, fair test, comparative test, observation over time, pattern seeking, classify, secondary source, relevant, variable, method, question",
+      "common_misconceptions": "Pupils often believe that all scientific questions must be answered by carrying out an experiment. They need explicit teaching that observation over time, classification, pattern seeking and secondary research are equally valid enquiry types. Some pupils confuse 'relevant' questions with 'interesting' questions \u2014 relevant questions are those that can be investigated scientifically.",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "teaching_weight": 3,
+      "is_keystone": false,
+      "co_teach_hints": [
+        "SC-KS2-C002",
+        "SC-KS2-C004",
+        "SC-KS2-C006",
+        "SC-KS2-C009"
+      ]
+    },
+    {
+      "concept_id": "SC-KS2-C002",
+      "concept_name": "Fair and Comparative Testing",
+      "description": "Setting up simple practical enquiries as fair tests, recognising and controlling variables. Understanding that a fair test changes only one variable at a time while keeping others constant, enabling valid comparisons.",
+      "teaching_guidance": "Begin with comparative tests (e.g., 'Which surface does the car travel furthest on?') before introducing fair tests with controlled variables. Use a planning framework that explicitly asks: 'What will I change? What will I measure? What will I keep the same?' Provide practical contexts such as testing which paper towel is most absorbent or which material is best for insulating a cup of warm water. Encourage pupils to predict outcomes before testing and to explain why the test must be fair to get reliable results.",
+      "key_vocabulary": "fair test, comparative test, variable, change, measure, keep the same, control, predict, result, reliable, method, equipment",
+      "common_misconceptions": "Pupils frequently change more than one variable at a time without recognising this invalidates the comparison. Some pupils believe that a test is 'fair' simply because everyone in the group gets a turn, rather than understanding it as controlling variables. Pupils may also confuse prediction with guessing \u2014 a prediction should be based on existing knowledge or prior observations.",
+      "concept_type": "process",
+      "complexity_level": 3,
+      "teaching_weight": 3,
+      "is_keystone": false,
+      "co_teach_hints": []
+    }
+  ],
+  "domain": {
+    "domain_id": "SC-KS2-D001",
+    "domain_name": "Working Scientifically",
+    "domain_description": "Practical scientific methods, processes and skills taught through and integrated with substantive science content. In Lower KS2 (Y3-4), pupils broaden enquiry skills including fair tests, standard measurements, data recording and drawing conclusions. In Upper KS2 (Y5-6), pupils plan enquiries, control variables, use increasing precision, and evaluate evidence. Must not be taught as a separate strand.",
+    "curriculum_context": "Working scientifically at KS2 underpins all science learning and requires pupils to use a range of scientific methods and processes, progressing from the exploratory approaches of KS1 to systematic, fair-test investigations. Pupils develop the ability to plan different types of scientific enquiry \u2014 including observing over time, pattern seeking, classifying, comparative and fair testing, and researching using secondary sources \u2014 selecting the most appropriate method for the question being asked. The statutory curriculum requires pupils to recognise that scientific evidence is used to support or refute ideas, to take measurements using standard units, to record and present data in a variety of graphical forms, and to draw conclusions consistent with their evidence. By the end of KS2, pupils should be able to report and present findings from enquiries using appropriate scientific language and representations.",
+    "structure_type": "mixed",
+    "subject": "Science",
+    "key_stage": "KS2",
+    "year_id": "Y3",
+    "year_label": null,
+    "key_stage_name": null
+  },
+  "domain_clusters": [
+    {
+      "cluster_id": "SC-KS2-D001-CL001",
+      "cluster_name": "Ask scientific questions and choose the right type of enquiry",
+      "cluster_type": "introduction",
+      "after_id": null
+    },
+    {
+      "cluster_id": "SC-KS2-D001-CL002",
+      "cluster_name": "Plan investigations by identifying and controlling variables",
+      "cluster_type": "practice",
+      "after_id": "SC-KS2-D001-CL001"
+    },
+    {
+      "cluster_id": "SC-KS2-D001-CL003",
+      "cluster_name": "Assessment: Variable Control in Enquiry Planning, Precision and Repeat Measurements",
+      "cluster_type": "assessment",
+      "after_id": "SC-KS2-D001-CL002"
+    },
+    {
+      "cluster_id": "SC-KS2-D001-CL004",
+      "cluster_name": "Measure systematically and record data in a variety of formats",
+      "cluster_type": "practice",
+      "after_id": "SC-KS2-D001-CL003"
+    },
+    {
+      "cluster_id": "SC-KS2-D001-CL005",
+      "cluster_name": "Assessment: Systematic Measurement with Standard Units, Data Classification and Presentation, Complex Data Recording",
+      "cluster_type": "assessment",
+      "after_id": "SC-KS2-D001-CL004"
+    },
+    {
+      "cluster_id": "SC-KS2-D001-CL006",
+      "cluster_name": "Draw conclusions, evaluate evidence, and communicate scientific findings",
+      "cluster_type": "practice",
+      "after_id": "SC-KS2-D001-CL005"
+    },
+    {
+      "cluster_id": "SC-KS2-D001-CL007",
+      "cluster_name": "Assessment: Drawing Conclusions and Predictions, Scientific Reporting and Communication, Causal Relationships and Evidence Evaluation",
+      "cluster_type": "assessment",
+      "after_id": "SC-KS2-D001-CL006"
+    },
+    {
+      "cluster_id": "SC-KS2-D001-CL008",
+      "cluster_name": "Consolidation: Systematic Measurement with Standard Units, Data Classification and Presentation, Complex Data Recording (+1)",
+      "cluster_type": "consolidation",
+      "after_id": "SC-KS2-D001-CL007"
+    }
+  ],
+  "previous_cluster": null,
+  "next_clusters": [
+    {
+      "cluster_id": "SC-KS2-D001-CL002",
+      "cluster_name": "Plan investigations by identifying and controlling variables",
+      "cluster_type": "practice"
+    }
+  ],
+  "prerequisite_concepts": [
+    {
+      "concept_id": "SC-KS1-C001",
+      "concept_name": "Asking Scientific Questions",
+      "from_domain": "Working Scientifically",
+      "from_domain_id": "SC-KS1-D001"
+    },
+    {
+      "concept_id": "SC-KS1-C003",
+      "concept_name": "Simple Testing",
+      "from_domain": "Working Scientifically",
+      "from_domain_id": "SC-KS1-D001"
+    },
+    {
+      "concept_id": "SC-KS1-C039",
+      "concept_name": "Comparative Testing Method",
+      "from_domain": "Working Scientifically",
+      "from_domain_id": "SC-KS1-D001"
+    }
+  ],
+  "content_guideline": {
+    "reading_level_description": "Most children are independent readers of simple texts. Reading fluency varies widely. Decoding is largely automatic for common words.",
+    "lexile_min": 150,
+    "lexile_max": 350,
+    "flesch_kincaid_grade_max": 2,
+    "max_sentence_length_words": 14,
+    "avg_sentence_length_words": 9,
+    "vocabulary_level": "curriculum_vocabulary_supported",
+    "academic_vocabulary_ok": false,
+    "tts_required": false,
+    "agent_content_prompt": "Use clear, active sentences with one idea per sentence. Subject vocabulary can be used if first introduced with a definition. Avoid passive voice. Metaphors and similes are helpful for abstract science concepts. Questions can require 1\u20133 word written answers or spoken responses."
+  },
+  "pedagogy_profile": {
+    "session_length_min": 12,
+    "session_length_max": 20,
+    "hint_tiers_max": 3,
+    "productive_failure_appropriate": true,
+    "scaffolding_level": "moderate_to_high",
+    "session_sequence": "[\"challenge_problem\", \"guided_exploration\", \"worked_example\", \"independent_practice\", \"retrieval_practice\"]",
+    "desirable_difficulties": "[\"spacing\", \"interleaving\"]",
+    "spacing_interval_days_min": 2,
+    "spacing_interval_days_max": 7,
+    "agent_pedagogy_prompt": "Start with a challenge problem \u2014 do not explain first. Let the child attempt independently for 2\u20133 minutes. Collect their attempt. Then show the worked example. Follow with 3\u20134 retrieval practice questions that mix this concept with previously mastered material (interleaving). Contextualize difficulty: 'That one was harder \u2014 your brain was working to connect different ideas.'",
+    "active_techniques": [],
+    "introduced_techniques": []
+  },
+  "feedback_profile": {
+    "feedback_style": "specific_competence",
+    "ai_tone": "warm_competence_focused",
+    "gamification_safe": false,
+    "progress_bars_safe": false,
+    "leaderboards_safe": false,
+    "badge_systems_safe": false,
+    "unexpected_delight_safe": true,
+    "delight_frequency": "semi_random",
+    "counter_misconceptions_explicit": false,
+    "metacognitive_reflection": false,
+    "feedback_example_correct": "You spotted the pattern \u2014 all the multiples of 6 end in an even number. That is a really useful thing to notice.",
+    "feedback_example_incorrect": "That one got you \u2014 7\u00d78 trips up a lot of people. Here is a trick: 7\u00d77 is 49, so 7\u00d78 is just 7 more, which gives 56.",
+    "avoid_phrases": "[\"Wrong\", \"Incorrect\", \"You need to improve\", \"Well done!\", \"Amazing!\"]",
+    "agent_feedback_prompt": "Specific competence feedback: name the pattern, rule, or skill the child demonstrated. On error, explain the specific misconception (not just 'wrong') and give the reasoning to fix it. Normalize productive struggle: 'That one took longer \u2014 your brain was making new connections.' Never compare to other children or previous performance."
+  },
+  "interaction_types": [
+    {
+      "interaction_id": "pattern_discovery",
+      "name": "Pattern Discovery \u2014 I Notice / I Wonder",
+      "category": "higher_order",
+      "agent_prompt": "This is the productive failure activation phase \u2014 do NOT correct or evaluate observations during discovery. Say 'That is interesting, what else do you notice?' to all responses. After the discovery phase, connect the child's actual observations to the canonical concept: 'You noticed [X] \u2014 that is the [Y] pattern.'",
+      "ui_notes": "Two large buttons: 'I notice...' (yellow) and 'I wonder...' (blue). Each click opens a voice/text input. Child's observations collected in a scrollable list. No right/wrong feedback during this phase.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Mathematics\", \"Science\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "drag_categorise",
+      "name": "Drag to Categorise",
+      "category": "manipulation",
+      "agent_prompt": "Limit to 2\u20133 categories for Y3, up to 4\u20135 for Y5+. Confirm whether items are mutually exclusive or can belong to multiple categories. In feedback, explain the classification principle, not just the correct placement.",
+      "ui_notes": "Category buckets clearly outlined. Items can live in multiple buckets if the classification supports it (e.g., Venn diagram). Drop zones highlight on hover/drag over.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Science\", \"Mathematics\", \"Geography\", \"History\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "matching_pairs",
+      "name": "Matching Pairs",
+      "category": "manipulation",
+      "agent_prompt": "Limit to 4\u20135 pairs for Y3\u2013Y4, up to 6\u20138 pairs for Y5+. Distractors should be near-misses (similar terms, not obviously unrelated). After matching, display all correct pairs simultaneously before moving on.",
+      "ui_notes": "Two columns with tappable/clickable items. Lines drawn between matched pairs. Colour-coded lines for clarity. Maximum 6 pairs per screen.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "multi_choice_3",
+      "name": "Multiple Choice \u2014 3 Options",
+      "category": "selection",
+      "agent_prompt": "Provide 1 correct answer and 2 plausible distractors. Distractors should represent common misconceptions, not random wrong answers. Label A/B/C only if children are Y3+.",
+      "ui_notes": "Three clearly spaced buttons. Illustrations optional from Y3 onwards. Options stacked vertically on mobile.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "multi_choice_4",
+      "name": "Multiple Choice \u2014 4 Options",
+      "category": "selection",
+      "agent_prompt": "1 correct answer + 3 distractors. Each distractor should address a specific, documented misconception from the curriculum domain. Explain why the distractor is wrong in post-answer feedback.",
+      "ui_notes": "4 options in 2\u00d72 grid (tablet) or stacked (mobile). A/B/C/D labels visible.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "text_input_word",
+      "name": "Text Input \u2014 Single Word",
+      "category": "text_input",
+      "agent_prompt": "Accept near-miss spellings (within 2 Levenshtein edits of the correct answer). Do not penalise spelling errors unless spelling is the assessed skill. Provide word-length hint (e.g. _ _ _ _ _ _ _ _ ) if child makes 2 failed attempts.",
+      "ui_notes": "Single-line input field, auto-capitalise off, spellcheck on but answer accepted if phonetically close. Voice fallback always available.",
+      "requires_literacy": true,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": true
+    },
+    {
+      "interaction_id": "voice_input",
+      "name": "Voice Input",
+      "category": "input",
+      "agent_prompt": "Use single voiced questions only. Do not display the question text \u2014 speak it. Provide visual microphone affordance. Confirm transcription back before evaluating. Accept phonetic approximations for subject vocabulary.",
+      "ui_notes": "Large microphone button with waveform animation. Playback button so child can hear their answer before submitting. Auto-submit after 2 seconds of silence option.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "voice_recorder",
+      "name": "Voice Recorder \u2014 Record and Playback",
+      "category": "input",
+      "agent_prompt": "Use for scientific observation recording ('Press the button and tell me what you notice'), hypothesis formation ('Say what you think will happen'), and oral explanation tasks where written production is a barrier. After recording, display the transcription and ask child to confirm: 'Is that what you meant to say?' Prefer voice_recorder over typed answers for Y1-Y3 science, geography, and history observation tasks. Do not require written follow-up unless writing is the assessed skill.",
+      "ui_notes": "Large microphone button with pulsing animation. Live waveform display during recording. Plays back with waveform and transcribed text below. Re-record button always visible. Transcript displayed alongside audio for child to follow. Auto-punctuation in transcript. Option to submit voice or edit transcribed text.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Science\", \"English\", \"History\", \"Geography\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "drag_drop_place",
+      "name": "Drag and Drop \u2014 Place on Target",
+      "category": "manipulation",
+      "agent_prompt": "Use when placement reveals understanding (e.g., ordering on number line, sorting into Venn diagram). Items should be clearly distinguishable by colour/shape. Limit to 6 draggable items maximum per screen for Y1-Y3.",
+      "ui_notes": "Large drag handles (min 48\u00d748px touch target). Clear snap-to-target zones. Undo button always visible. Accessibility: keyboard-navigable alternative.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"All\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "image_annotation",
+      "name": "Image Annotation \u2014 Tap to Label",
+      "category": "manipulation",
+      "agent_prompt": "Use for anatomy diagrams, food webs, geographical features, historical artefacts. Hotspot targets should be minimum 44\u00d744px. Provide labelling list for Y2\u2013Y4 (select from provided terms). Open labelling (typed) for Y5+.",
+      "ui_notes": "High-resolution diagrams required. Tap targets shown as pulsing circles. Labels can be drag-placed or chosen from dropdown. Pin/label reveal animation on correct placement.",
+      "requires_literacy": false,
+      "requires_numeracy": false,
+      "subject_affinity": "[\"Science\", \"Geography\", \"History\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "area_model_multiplication",
+      "name": "Area Model (Grid / Array for Multiplication)",
+      "category": "maths_tool",
+      "agent_prompt": "Use after introducing multiplication concept, before formal long multiplication algorithm. Ask child to estimate the area first (productive failure). Then reveal the model. Connect: 'The grid shows us that 23 \u00d7 14 is the same as (20 \u00d7 14) + (3 \u00d7 14) \u2014 can you see that in the grid?'",
+      "ui_notes": "Gridded rectangle. Child enters width and height values. Grid fills to show array. Partition lines for expanded method. Colour sections by place value (hundreds/tens/ones).",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "column_subtraction",
+      "name": "Column Subtraction (Formal Written Method with Exchanging)",
+      "category": "maths_tool",
+      "agent_prompt": "Start from the units column. When exchange is needed, prompt: 'You need to exchange 1 ten for 10 ones \u2014 can you do that now?' Show the exchange animation. Validate after each digit. Common error: subtracting the smaller from larger (3-8 written as 8-3) \u2014 detect and correct immediately.",
+      "ui_notes": "Exchange shown visually with crossing out and superscript. Column layout with clear exchange area. Animate the exchange when child requests it.",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "fraction_visualizer",
+      "name": "Fraction Visualiser (Bar / Pizza / Set Model)",
+      "category": "maths_tool",
+      "agent_prompt": "Use in productive failure setup: ask child to compare 1/2 and 2/5 before providing tools, then reveal the visualiser. Encourage exploration of multiple models. Connect visual to symbolic: 'What does the 5 at the bottom tell you about the pizza?' Link to real-world contexts (sharing food, folding paper).",
+      "ui_notes": "Model selector tabs (bar / pizza / set). Denominator and numerator sliders. Side-by-side comparison mode. Equivalence line annotation. Display fractional notation alongside visual.",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "number_line_scrubber",
+      "name": "Number Line \u2014 Drag Marker",
+      "category": "maths_tool",
+      "agent_prompt": "Specify the number range and expected precision (integer, 0.5, 0.1, fraction). For fractions, display both the fractional position and decimal equivalent below the line. Use after teaching formal notation to reinforce conceptual placement.",
+      "ui_notes": "Labelled endpoints, optional intermediate markers. Snap-to-integer or snap-to-fraction-denominator mode. Shows value tooltip as user drags. Landscape orientation preferred.",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    },
+    {
+      "interaction_id": "place_value_blocks",
+      "name": "Place Value Blocks (Dienes / Base-10)",
+      "category": "maths_tool",
+      "agent_prompt": "Use when introducing or consolidating place value, regrouping, or exchanging concepts. Ask child to 'show me 347 using the blocks' before any formal task. When exchange is needed in addition, prompt them to group: 'You have 13 ones \u2014 what can you do with those?' Connect blocks to abstract notation.",
+      "ui_notes": "Drag blocks from a bank. Grouping animation: 10 units \u2192 1 ten rod. Three-column display (H / T / U). Counter displays total value. Exchange button.",
+      "requires_literacy": false,
+      "requires_numeracy": true,
+      "subject_affinity": "[\"Mathematics\"]",
+      "is_primary": false
+    }
+  ]
+}

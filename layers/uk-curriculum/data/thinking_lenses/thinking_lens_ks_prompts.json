@@ -1,0 +1,442 @@
+[
+  {
+    "lens_id": "patterns",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the PATTERNS lens: ask children to spot what is the same and what is different. Use sorting, matching, and simple sequences. Keep examples concrete and visual — real objects, pictures, or familiar stories. Model noticing: 'I can see that these all have... Can you spot what comes next?'",
+    "question_stems": [
+      "What is the same about these?",
+      "What is different?",
+      "What comes next?",
+      "Can you sort these into groups?"
+    ]
+  },
+  {
+    "lens_id": "patterns",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the PATTERNS lens: prompt pupils to identify rules, classify using shared features, spot exceptions, and make predictions. Introduce tables and simple charts to record patterns. Encourage generalisation: 'Does this always work? How do you know?'",
+    "question_stems": [
+      "What pattern can you see?",
+      "Does this always happen, or can you find an exception?",
+      "What rule connects these examples?",
+      "What would you predict for the next one? Why?"
+    ]
+  },
+  {
+    "lens_id": "patterns",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the PATTERNS lens: prompt pupils to describe patterns precisely using mathematical or scientific language, test whether patterns hold across new cases, distinguish correlation from coincidence, and express patterns as rules or formulae where appropriate.",
+    "question_stems": [
+      "Can you describe this pattern precisely enough for someone else to continue it?",
+      "Does this pattern hold for all cases, or only some?",
+      "How could you test whether this is a real pattern or a coincidence?",
+      "Can you express this pattern as a rule or formula?"
+    ]
+  },
+  {
+    "lens_id": "patterns",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the PATTERNS lens: prompt pupils to formalise patterns algebraically or statistically, evaluate the strength and limitations of observed patterns, distinguish descriptive regularity from explanatory models, and consider sampling or selection biases that might create spurious patterns.",
+    "question_stems": [
+      "How would you formalise this pattern mathematically?",
+      "What are the limits of this pattern — where does it break down?",
+      "Could this pattern be an artefact of how the data was collected?",
+      "Does identifying the pattern tell us why it occurs?"
+    ]
+  },
+  {
+    "lens_id": "cause_and_effect",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the CAUSE AND EFFECT lens: ask children what happened and why using simple 'because' sentences. Focus on one cause at a time, use concrete observable examples. Model the structure: 'This happened... because...' Keep causal chains short and visible.",
+    "question_stems": [
+      "What made that happen?",
+      "What will happen if...?",
+      "Why did it change?",
+      "Can you finish: it happened because...?"
+    ]
+  },
+  {
+    "lens_id": "cause_and_effect",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the CAUSE AND EFFECT lens: prompt pupils to suggest reasons and test predictions. Introduce the idea that there can be more than one cause. Use 'if... then... because...' structure and encourage designing simple fair tests to check causal claims.",
+    "question_stems": [
+      "What caused this to happen?",
+      "How could we check if that is the reason?",
+      "Is there more than one reason?",
+      "What would happen if we changed just one thing?"
+    ]
+  },
+  {
+    "lens_id": "cause_and_effect",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the CAUSE AND EFFECT lens: prompt pupils to distinguish correlation from causation, identify multiple interacting causes, design controlled tests that isolate variables, and evaluate the strength of causal evidence. Introduce the language of mechanism: how does one thing lead to another?",
+    "question_stems": [
+      "Does this show a cause, or just a correlation?",
+      "What is the mechanism — how exactly does A lead to B?",
+      "Which factor had the biggest effect, and how could you tell?",
+      "What evidence would you need to prove this was the cause?"
+    ]
+  },
+  {
+    "lens_id": "cause_and_effect",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the CAUSE AND EFFECT lens: prompt pupils to evaluate causal claims critically, consider confounding variables, analyse causal chains with feedback loops, and assess the relative significance of different causes. Expect precise use of terminology: mechanism, confound, correlation, necessary vs sufficient conditions.",
+    "question_stems": [
+      "Is this a necessary cause, a sufficient cause, or a contributing factor?",
+      "What confounding variables could explain this relationship?",
+      "How would you design an investigation to establish causation, not just correlation?",
+      "In this causal chain, where could an intervention have the most effect?"
+    ]
+  },
+  {
+    "lens_id": "scale_proportion_quantity",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the SCALE, PROPORTION AND QUANTITY lens: help children compare sizes, amounts, and lengths using everyday language — bigger, smaller, more, fewer, heavier, lighter. Use direct comparison with real objects. Ask 'which is more?' and 'how do you know?' Keep counting concrete.",
+    "question_stems": [
+      "Which one is bigger?",
+      "Which group has more?",
+      "How could we check which is heavier?",
+      "Is this a lot or a little?"
+    ]
+  },
+  {
+    "lens_id": "scale_proportion_quantity",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the SCALE, PROPORTION AND QUANTITY lens: prompt pupils to measure and compare using standard units, understand simple fractions and proportions, use bar models or diagrams to show relative size, and choose appropriate units. Introduce 'how many times bigger' language.",
+    "question_stems": [
+      "How many times bigger is this than that?",
+      "What fraction of the whole is this part?",
+      "Which unit of measurement fits best here? Why?",
+      "If we doubled the amount, what would change?"
+    ]
+  },
+  {
+    "lens_id": "scale_proportion_quantity",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the SCALE, PROPORTION AND QUANTITY lens: prompt pupils to use ratios, percentages, and rates to compare quantities; reason about what happens at very large or very small scales; convert between units; and interpret scale drawings, maps, or models. Encourage order-of-magnitude reasoning.",
+    "question_stems": [
+      "What happens to the proportions when you scale this up or down?",
+      "How would you express this comparison as a ratio or percentage?",
+      "Why does scale matter here — what changes when things get much larger or smaller?",
+      "Is this quantity significant, or negligible in context?"
+    ]
+  },
+  {
+    "lens_id": "scale_proportion_quantity",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the SCALE, PROPORTION AND QUANTITY lens: prompt pupils to use logarithmic and algebraic reasoning about scale, evaluate proportional relationships in complex contexts, assess the validity of extrapolation across scales, and reason about rates of change and dimensional analysis.",
+    "question_stems": [
+      "Does this relationship stay proportional at all scales, or does it break down?",
+      "How would you use dimensional analysis to check this calculation?",
+      "What are the limits of extrapolating from this sample size or scale?",
+      "How does the rate of change itself change as the quantity increases?"
+    ]
+  },
+  {
+    "lens_id": "systems_models",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the SYSTEMS AND SYSTEM MODELS lens: help children identify the parts of something and how they fit together. Use familiar systems — a classroom, a plant, a family. Draw simple diagrams showing parts and connections. Ask 'what are all the parts?' and 'what happens if we take one away?'",
+    "question_stems": [
+      "What are all the parts of this?",
+      "How do these parts work together?",
+      "What would happen if this part was missing?",
+      "Can you draw a picture showing how it works?"
+    ]
+  },
+  {
+    "lens_id": "systems_models",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the SYSTEMS AND SYSTEM MODELS lens: prompt pupils to map inputs and outputs of a system, identify boundaries, trace how a change in one part affects others, and use simple diagrams or flow charts as models. Introduce the idea that models are simplified versions of reality.",
+    "question_stems": [
+      "What goes into this system, and what comes out?",
+      "If you changed this one part, what else would be affected?",
+      "Where does this system start and end?",
+      "How could we draw a model to explain how this works?"
+    ]
+  },
+  {
+    "lens_id": "systems_models",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the SYSTEMS AND SYSTEM MODELS lens: prompt pupils to analyse interactions between components, identify feedback loops (positive and negative), evaluate the limitations of models, and consider emergent properties that arise from component interactions. Encourage the use of systems diagrams.",
+    "question_stems": [
+      "What feedback loops exist in this system?",
+      "Does this model capture all the important interactions, or does it oversimplify?",
+      "What emergent property arises from these components interacting?",
+      "How would removing or adding a component change the system's behaviour?"
+    ]
+  },
+  {
+    "lens_id": "systems_models",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the SYSTEMS AND SYSTEM MODELS lens: prompt pupils to compare competing models of the same system, evaluate model assumptions and predictive power, analyse non-linear interactions and tipping points, and recognise when a system-level explanation is needed rather than a reductive one.",
+    "question_stems": [
+      "What assumptions does this model make, and how do they limit its predictions?",
+      "Are there tipping points where small changes produce large systemic effects?",
+      "How would you choose between two competing models of this system?",
+      "Can this phenomenon be explained by looking at parts alone, or does it require a systems perspective?"
+    ]
+  },
+  {
+    "lens_id": "energy_matter",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the ENERGY AND MATTER lens: help children notice what makes things move, get warm, light up, or grow. Use everyday language — 'what makes it go?', 'where does the heat come from?' Focus on observable energy sources: food, batteries, the sun. Keep it concrete and sensory.",
+    "question_stems": [
+      "What makes this move or work?",
+      "Where does the warmth come from?",
+      "What does this need to keep going?",
+      "What happens when the energy runs out?"
+    ]
+  },
+  {
+    "lens_id": "energy_matter",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the ENERGY AND MATTER lens: prompt pupils to trace where energy comes from, how it changes form, and where it goes. Introduce the idea that materials can change but matter is not lost. Use energy flow diagrams and simple tracking: 'follow the energy from start to finish.'",
+    "question_stems": [
+      "Where did the energy come from, and where did it go?",
+      "What form did the energy change into?",
+      "Has any material been lost, or has it just changed?",
+      "Can you draw the energy flow from start to finish?"
+    ]
+  },
+  {
+    "lens_id": "energy_matter",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the ENERGY AND MATTER lens: prompt pupils to apply conservation of energy and conservation of mass, trace energy transfers through systems including dissipation, distinguish stores and pathways, and track matter through chemical and physical changes using particle models.",
+    "question_stems": [
+      "Where is the energy stored, and through what pathway does it transfer?",
+      "How is energy dissipated in this process, and why does that matter?",
+      "Can you account for all the matter before and after this change?",
+      "What happens to the total energy in this system?"
+    ]
+  },
+  {
+    "lens_id": "energy_matter",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the ENERGY AND MATTER lens: prompt pupils to apply quantitative conservation principles, calculate energy transfers and efficiency, analyse matter cycling in ecosystems or industrial processes, and evaluate energy resource sustainability using thermodynamic reasoning.",
+    "question_stems": [
+      "How would you calculate the efficiency of this energy transfer?",
+      "What does the second law of thermodynamics imply for this process?",
+      "How does matter cycle through this system, and where are the sinks?",
+      "How would you evaluate the sustainability of this energy pathway?"
+    ]
+  },
+  {
+    "lens_id": "structure_function",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the STRUCTURE AND FUNCTION lens: help children look closely at how things are shaped and ask why. Use real objects, pictures of animals, or classroom tools. Ask 'why is it that shape?' and 'what job does each part do?' Encourage looking, touching, and describing before explaining.",
+    "question_stems": [
+      "What shape is it? Why do you think it is that shape?",
+      "What job does this part do?",
+      "What would happen if this part were a different shape?",
+      "Can you find something else that does the same job?"
+    ]
+  },
+  {
+    "lens_id": "structure_function",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the STRUCTURE AND FUNCTION lens: prompt pupils to connect how things are built or arranged to what they do. Compare different structures that serve similar functions. Encourage pupils to explain why a particular design feature helps something work, and to sketch design alternatives.",
+    "question_stems": [
+      "How does the shape or arrangement help it do its job?",
+      "Can you find two different structures that do the same thing? How do they compare?",
+      "If you were designing this, what would you keep and what would you change?",
+      "Why is this material or structure better suited than another?"
+    ]
+  },
+  {
+    "lens_id": "structure_function",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the STRUCTURE AND FUNCTION lens: prompt pupils to analyse structure-function relationships at multiple scales (molecular, cellular, organismal, textual, mechanical), evaluate design trade-offs, and explain how structural adaptations solve specific problems. Use annotated diagrams to show form-function links.",
+    "question_stems": [
+      "How does the structure at this scale enable the function we observe?",
+      "What trade-offs were involved in this structural design?",
+      "How is this structure adapted to solve a specific problem?",
+      "What would you predict about an organism's function from its structure alone?"
+    ]
+  },
+  {
+    "lens_id": "structure_function",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the STRUCTURE AND FUNCTION lens: prompt pupils to analyse hierarchical structure-function relationships from molecular to ecosystem level, evaluate how structural constraints limit or enable function, compare convergent and divergent structural solutions, and apply structure-function reasoning to design problems.",
+    "question_stems": [
+      "How do structural features at different scales interact to produce this function?",
+      "What structural constraints limit what this system can do?",
+      "Why have unrelated organisms evolved similar structures for similar functions?",
+      "How would you apply structure-function analysis to improve this design?"
+    ]
+  },
+  {
+    "lens_id": "stability_change",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the STABILITY AND CHANGE lens: help children notice what stays the same and what changes. Use familiar contexts — seasons, growing, mixing materials. Ask about before and after. Focus on observable changes: 'What has changed? What is still the same?'",
+    "question_stems": [
+      "What has changed?",
+      "What is still the same?",
+      "Can we change it back?",
+      "What made it change?"
+    ]
+  },
+  {
+    "lens_id": "stability_change",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the STABILITY AND CHANGE lens: prompt pupils to identify conditions that keep things stable, what disrupts that stability, and whether changes are reversible or irreversible. Introduce the idea that change can be fast or slow. Use before-and-after comparisons and timelines.",
+    "question_stems": [
+      "What keeps this the same over time?",
+      "What would tip it into change?",
+      "Is this change reversible or irreversible?",
+      "Is this a fast change or a slow change? How do you know?"
+    ]
+  },
+  {
+    "lens_id": "stability_change",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the STABILITY AND CHANGE lens: prompt pupils to analyse equilibrium and dynamic balance, identify thresholds and tipping points, compare rates of change, and consider why some systems resist change while others amplify it. Use graphs to show rates and trends.",
+    "question_stems": [
+      "What maintains the equilibrium in this system?",
+      "Is there a threshold beyond which the system changes dramatically?",
+      "How does the rate of change compare to other processes?",
+      "Does this system resist change or amplify it? Why?"
+    ]
+  },
+  {
+    "lens_id": "stability_change",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the STABILITY AND CHANGE lens: prompt pupils to apply quantitative analysis to rates and equilibria, evaluate the conditions for dynamic equilibrium vs static stability, analyse positive and negative feedback in relation to system stability, and assess the predictability of change in complex systems.",
+    "question_stems": [
+      "Under what conditions does this equilibrium shift, and can you quantify the change?",
+      "How do positive and negative feedback loops affect the stability of this system?",
+      "Is this system in static or dynamic equilibrium, and what is the difference here?",
+      "How predictable is this change, and what makes it more or less certain?"
+    ]
+  },
+  {
+    "lens_id": "continuity_change",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the CONTINUITY AND CHANGE OVER TIME lens: help children compare 'then' and 'now' using pictures, stories, and timelines. Focus on things they can relate to — homes, toys, clothes, schools. Ask 'what was the same long ago?' and 'what was different?' Use simple sequencing: first, then, now.",
+    "question_stems": [
+      "What was it like long ago?",
+      "What is the same now as it was then?",
+      "What is different now?",
+      "Can you put these in order: what happened first?"
+    ]
+  },
+  {
+    "lens_id": "continuity_change",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the CONTINUITY AND CHANGE OVER TIME lens: prompt pupils to build timelines, identify turning points, compare what changed with what stayed the same across a period, and begin to explain why change happened. Use evidence from sources to support claims about change and continuity.",
+    "question_stems": [
+      "What was the biggest change during this period?",
+      "What stayed the same even though other things changed?",
+      "When was the turning point, and what caused it?",
+      "How do we know what changed? What is the evidence?"
+    ]
+  },
+  {
+    "lens_id": "continuity_change",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the CONTINUITY AND CHANGE OVER TIME lens: prompt pupils to distinguish gradual change from sudden rupture, assess the pace and extent of change, weigh factors driving change against factors promoting continuity, and evaluate different historical interpretations of the same change.",
+    "question_stems": [
+      "Was this change gradual or sudden, and what determined the pace?",
+      "What factors promoted continuity, and what factors drove change?",
+      "How significant was this change — did it affect everyone, or only some?",
+      "How do different historians interpret this period of change?"
+    ]
+  },
+  {
+    "lens_id": "continuity_change",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the CONTINUITY AND CHANGE OVER TIME lens: prompt pupils to evaluate the relative significance of different types of change (political, economic, social, cultural), assess long-term trends against short-term events, construct sustained arguments about the nature and extent of change, and critically evaluate periodisation.",
+    "question_stems": [
+      "How would you weigh the significance of this change against what persisted?",
+      "Does the conventional periodisation of this era accurately reflect the pace of change?",
+      "What long-term trends does this short-term event reveal or disrupt?",
+      "How would you construct an argument for whether this period saw more change or more continuity?"
+    ]
+  },
+  {
+    "lens_id": "perspective_interpretation",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the PERSPECTIVE AND INTERPRETATION lens: help children understand that different people see things differently. Use stories, characters, and role play. Ask 'how do you think they felt?' and 'what would you see if you were standing over there?' Keep it personal and relatable.",
+    "question_stems": [
+      "How do you think this person felt?",
+      "Would everyone think the same thing? Why not?",
+      "What would it look like from over there?",
+      "Why might someone else tell this story differently?"
+    ]
+  },
+  {
+    "lens_id": "perspective_interpretation",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the PERSPECTIVE AND INTERPRETATION lens: prompt pupils to identify who created a source or account, consider what shaped their viewpoint, look for what might be missing or one-sided, and compare two different accounts of the same event or issue.",
+    "question_stems": [
+      "Who wrote or made this, and why?",
+      "What might they have left out?",
+      "How does this account compare to another version of the same event?",
+      "What experience or belief might have shaped this person's view?"
+    ]
+  },
+  {
+    "lens_id": "perspective_interpretation",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the PERSPECTIVE AND INTERPRETATION lens: prompt pupils to analyse how context shapes perspective, evaluate bias and reliability of sources, compare multiple interpretations of the same evidence, and consider whose voices are absent from the historical or literary record.",
+    "question_stems": [
+      "What contextual factors shaped this perspective?",
+      "How does the author's position affect the reliability of this account?",
+      "Whose perspective is missing from this record, and why does that matter?",
+      "How have interpretations of this event changed over time, and what drove those changes?"
+    ]
+  },
+  {
+    "lens_id": "perspective_interpretation",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the PERSPECTIVE AND INTERPRETATION lens: prompt pupils to critically evaluate historiographical debates, analyse how power structures shape whose perspectives are recorded, assess the epistemological limits of interpretation, and construct arguments that acknowledge multiple valid readings of evidence.",
+    "question_stems": [
+      "How do power structures determine whose perspective dominates this narrative?",
+      "What are the epistemological limits of interpreting this source?",
+      "How would you position your interpretation within the existing historiographical debate?",
+      "Can two contradictory interpretations both be valid? Under what conditions?"
+    ]
+  },
+  {
+    "lens_id": "evidence_argument",
+    "key_stage": "KS1",
+    "agent_prompt": "Use the EVIDENCE AND ARGUMENT lens: help children start telling the difference between what they know and what they guess. Ask 'how do you know?' after every claim. Use 'I think... because...' sentence frames. Encourage looking for clues and checking ideas against what they can see or touch.",
+    "question_stems": [
+      "How do you know that?",
+      "What clues can you see?",
+      "Can you finish: I think... because...?",
+      "Is that a guess or do you know for sure?"
+    ]
+  },
+  {
+    "lens_id": "evidence_argument",
+    "key_stage": "KS2",
+    "agent_prompt": "Use the EVIDENCE AND ARGUMENT lens: prompt pupils to support claims with evidence, consider whether evidence is strong or weak, begin to recognise when someone is giving an opinion rather than a fact, and structure simple arguments with a claim, evidence, and reasoning.",
+    "question_stems": [
+      "What evidence supports this claim?",
+      "Is this a fact or an opinion? How can you tell?",
+      "Is this strong evidence or weak evidence? Why?",
+      "Can you structure your argument: claim, evidence, reasoning?"
+    ]
+  },
+  {
+    "lens_id": "evidence_argument",
+    "key_stage": "KS3",
+    "agent_prompt": "Use the EVIDENCE AND ARGUMENT lens: prompt pupils to evaluate source reliability, distinguish evidence from assertion, construct arguments with claim-evidence-reasoning structure, anticipate counter-arguments, and assess whether a conclusion is the only one the evidence supports.",
+    "question_stems": [
+      "How reliable is this evidence, and what makes you say so?",
+      "What counter-argument could someone make, and how would you respond?",
+      "Is this the only conclusion the evidence supports, or are there alternatives?",
+      "What additional evidence would strengthen or weaken this argument?"
+    ]
+  },
+  {
+    "lens_id": "evidence_argument",
+    "key_stage": "KS4",
+    "agent_prompt": "Use the EVIDENCE AND ARGUMENT lens: prompt pupils to critically evaluate the methodology behind evidence, assess the logical validity of arguments independent of their content, identify logical fallacies, weigh competing bodies of evidence, and construct sustained analytical arguments that address counter-claims.",
+    "question_stems": [
+      "How does the methodology affect the strength of this evidence?",
+      "Is this argument logically valid, regardless of whether you agree with the conclusion?",
+      "What logical fallacy, if any, weakens this argument?",
+      "How would you weigh these competing bodies of evidence to reach a justified conclusion?"
+    ]
+  }
+]

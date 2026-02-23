@@ -178,14 +178,16 @@ def query_domain_context(session, domain_id):
         lenses = list(session.run("""
             MATCH (cc:ConceptCluster)-[al:APPLIES_LENS]->(tl:ThinkingLens)
             WHERE cc.cluster_id IN $cids
+            OPTIONAL MATCH (tl)-[pf:PROMPT_FOR]->(ks:KeyStage {key_stage_id: $ks})
             RETURN cc.cluster_id  AS cluster_id,
                    tl.name        AS lens_name,
                    tl.key_question AS key_question,
-                   tl.agent_prompt AS agent_prompt,
+                   coalesce(pf.agent_prompt, tl.agent_prompt) AS agent_prompt,
+                   pf.question_stems AS question_stems,
                    al.rank        AS rank,
                    al.rationale   AS rationale
             ORDER BY cc.cluster_id, al.rank
-        """, cids=cluster_ids))
+        """, cids=cluster_ids, ks=rec['ks']))
         if lenses:
             # Group by cluster
             from collections import defaultdict
@@ -205,6 +207,8 @@ def query_domain_context(session, domain_id):
                             sections.append(f"  Why: {l['rationale']}")
                         if l['agent_prompt']:
                             sections.append(f"  AI instruction: {l['agent_prompt']}")
+                        if l.get('question_stems'):
+                            sections.append(f"  Question stems: {'; '.join(l['question_stems'])}")
 
     # ── Objectives with Concept links ────────────────────────────────
     objectives = list(session.run("""

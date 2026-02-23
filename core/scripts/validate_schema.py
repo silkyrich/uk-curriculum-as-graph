@@ -1019,6 +1019,45 @@ class SchemaValidator:
         self.add(ValidationResult("Cluster type distribution", status, total, issues))
 
     # =========================================================================
+    # L-bis. ThinkingLens PROMPT_FOR layer
+    # =========================================================================
+
+    def check_thinking_lens_prompt_for_coverage(self):
+        """Every ThinkingLens must have exactly 4 PROMPT_FOR relationships (one per KS)."""
+        total = self.scalar("MATCH (tl:ThinkingLens) RETURN count(tl)") or 0
+        if total == 0:
+            self.add(ValidationResult("ThinkingLens PROMPT_FOR coverage", "PASS", 0,
+                                      ["No ThinkingLens nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (tl:ThinkingLens)
+            OPTIONAL MATCH (tl)-[p:PROMPT_FOR]->(ks:KeyStage)
+            WITH tl.lens_name AS lens, collect(ks.key_stage_id) AS ks_list, count(p) AS cnt
+            WHERE cnt <> 4
+            RETURN lens, cnt, ks_list
+        """)
+        issues = [f"ThinkingLens '{r['lens']}' has {r['cnt']} PROMPT_FOR rels (expected 4), KS: {r['ks_list']}" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("ThinkingLens PROMPT_FOR coverage", status, total, issues))
+
+    def check_prompt_for_completeness(self):
+        """Every PROMPT_FOR must have non-empty agent_prompt and question_stems."""
+        total = self.scalar("MATCH ()-[p:PROMPT_FOR]->() RETURN count(p)") or 0
+        if total == 0:
+            self.add(ValidationResult("PROMPT_FOR completeness", "PASS", 0,
+                                      ["No PROMPT_FOR relationships — import pending"]))
+            return
+        records = self.run("""
+            MATCH (tl:ThinkingLens)-[p:PROMPT_FOR]->(ks:KeyStage)
+            WHERE p.agent_prompt IS NULL OR p.agent_prompt = ''
+               OR p.question_stems IS NULL OR size(p.question_stems) = 0
+            RETURN tl.lens_name AS lens, ks.key_stage_id AS ks
+        """)
+        issues = [f"PROMPT_FOR {r['lens']} -> {r['ks']} missing agent_prompt or question_stems" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("PROMPT_FOR completeness", status, total, issues))
+
+    # =========================================================================
     # M. Content Vehicles layer (v3.8)
     # =========================================================================
 
@@ -1274,6 +1313,9 @@ class SchemaValidator:
             self.check_year_learner_profile_links,
             self.check_interaction_type_completeness,
             self.check_interaction_precedes_chain,
+            # L-bis. ThinkingLens PROMPT_FOR
+            self.check_thinking_lens_prompt_for_coverage,
+            self.check_prompt_for_completeness,
             # K-bis. Concept Grouping (v3.7)
             self.check_teaching_weight_values,
             self.check_is_keystone_consistency,

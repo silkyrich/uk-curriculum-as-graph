@@ -85,7 +85,10 @@ Each **layer** is self-contained with its own:
    - `APPLIES_LENS {rank, rationale}` relationships from every ConceptCluster (1,222 total, ~2 per cluster)
    - `rank=1` = primary recommendation; higher ranks = valid alternative framings
    - The rationale on each rel explains *why* the lens fits *this specific cluster* — not just the topic name
+   - `PROMPT_FOR {agent_prompt, question_stems}` relationships to KeyStage (40 total: 10 lenses × 4 KS)
+   - Age-banded prompts: query scripts use `coalesce(pf.agent_prompt, tl.agent_prompt)` for backward-compatible fallback
    - Definitions: `layers/uk-curriculum/data/thinking_lenses/thinking_lenses.json`
+   - Age-banded prompts: `layers/uk-curriculum/data/thinking_lenses/thinking_lens_ks_prompts.json`
    - Import: `layers/uk-curriculum/scripts/import_thinking_lenses.py`
    - Surfaced by `query_cluster_context.py` in the `## Thinking lenses` section
 
@@ -130,7 +133,7 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 # Concept grouping signals (run after curriculum import)
 python3 core/migrations/compute_lesson_grouping_signals.py
 
-# ThinkingLens nodes must exist before cluster generation creates APPLIES_LENS rels
+# ThinkingLens nodes + PROMPT_FOR age-banded prompts (must run before cluster generation)
 python3 layers/uk-curriculum/scripts/import_thinking_lenses.py
 python3 layers/uk-curriculum/scripts/generate_concept_clusters.py
 
@@ -270,6 +273,7 @@ All nodes have `display_category` property:
 (:ConceptCluster)-[:SEQUENCED_AFTER]->(:ConceptCluster)               // within-domain lesson ordering
 (:Concept)-[:CO_TEACHES]->(:Concept)                                  // co-teachability signal
 (:ConceptCluster)-[:APPLIES_LENS {rank: int, rationale: str}]->(:ThinkingLens)  // ordered, 1=primary
+(:ThinkingLens)-[:PROMPT_FOR {agent_prompt: str, question_stems: [str]}]->(:KeyStage)  // age-banded prompts
 
 // Content Vehicles (v3.8)
 (:Domain)-[:HAS_VEHICLE]->(:ContentVehicle)-[:DELIVERS]->(:Concept)
@@ -374,6 +378,7 @@ Every feature that introduces or modifies data processing must:
 - Age-appropriate design / learner profiles? → `layers/learner-profiles/`
 - Content vehicles / teaching packs? → `layers/content-vehicles/`
 - Teacher review findings / lesson plans? → `generated/teachers-v4/` (V5 review), `generated/teachers-v3/` (V4 review)
+  - **`generated/` is TEST output, not canon** — do not treat its contents as authoritative for graph model or data decisions
 - Concept grouping / lesson clusters? → `layers/uk-curriculum/scripts/generate_concept_clusters.py`
 - Thinking lenses (cognitive framing for clusters)? → `layers/uk-curriculum/data/thinking_lenses/` + `import_thinking_lenses.py`
 - User stories? → `docs/user-stories/`
@@ -511,14 +516,17 @@ class LayerImporter:
 - Visualization: ConceptCluster styled (Indigo-500, view_module icon) + name mapping
 - No learner data — all nodes are curriculum design metadata (same tier as complexity_level)
 
-✅ **ThinkingLens layer (2026-02-22):**
+✅ **ThinkingLens layer (2026-02-23):**
 - 10 cross-subject cognitive lenses in `layers/uk-curriculum/data/thinking_lenses/thinking_lenses.json`
 - Adapted from NGSS CCCs + UK-specific frames: Patterns, Cause & Effect, Scale/Proportion/Quantity, Systems & System Models, Energy & Matter, Structure & Function, Stability & Change, Continuity & Change, Perspective & Interpretation, Evidence & Argument
 - Each lens has `description`, `key_question`, `agent_prompt` for direct LLM instruction; `display_color = '#7C3AED'`
 - All 626 cluster definition clusters enriched with `thinking_lenses` arrays (1-3 lenses each, ordered by fit, with per-lens rationale)
 - `validate_cluster_definitions.py` enforces `VALID_THINKING_LENSES` set and requires non-empty rationale on each lens entry
 - `generate_concept_clusters.py` writes `thinking_lens_primary` property + `APPLIES_LENS {rank, rationale}` relationships
-- `query_cluster_context.py` surfaces the `## Thinking lenses` section in teacher context output
+- **40 PROMPT_FOR relationships** (10 lenses × 4 KS) with age-banded `agent_prompt` and `question_stems`
+- `thinking_lens_ks_prompts.json`: KS1 uses concrete/observable language, KS4 uses formal analytical vocabulary
+- `query_cluster_context.py` and `graph_query_helper.py` use `coalesce(pf.agent_prompt, tl.agent_prompt)` — backward-compatible fallback
+- `validate_schema.py`: 2 new checks — PROMPT_FOR coverage (4 per lens) and PROMPT_FOR completeness (non-empty properties)
 - No learner data — pure curriculum metadata
 
 ✅ **EYFS layer (2026-02-23):**
@@ -533,7 +541,7 @@ class LayerImporter:
 - Instance: education-graphs (6981841e)
 - **~4,900+ total nodes** including ConceptClusters, ThinkingLens, EYFS, and ContentVehicle nodes
 - 61 ContentVehicle nodes; 217 DELIVERS + 92 HAS_VEHICLE + 24 IMPLEMENTS relationships
-- 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average)
+- 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average); 40 PROMPT_FOR relationships (age-banded prompts)
 - 626 ConceptCluster nodes (167 introduction, 459 practice) — all with `thinking_lens_primary`
 - 1,351 Concept nodes enriched with `teaching_weight` + `co_teach_hints`
 - 53 EYFS Concept nodes; 34 EYFS→KS1 cross-stage prerequisites
