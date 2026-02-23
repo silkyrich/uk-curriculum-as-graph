@@ -726,9 +726,11 @@ class SchemaValidator:
         self.add(ValidationResult("Learner profile nodes exist", status, total, issues))
 
     def check_year_learner_profile_links(self):
-        """Every Year node should link to ContentGuideline, PedagogyProfile, and FeedbackProfile."""
+        """Every Year node Y1-Y11 should link to ContentGuideline, PedagogyProfile, and FeedbackProfile.
+        EYFS Year (year_id='EYFS') is excluded — the learner profiles layer covers Y1-Y11 only."""
         records = self.run("""
             MATCH (y:Year)
+            WHERE y.year_id <> 'EYFS'
             OPTIONAL MATCH (y)-[:HAS_CONTENT_GUIDELINE]->(cg:ContentGuideline)
             OPTIONAL MATCH (y)-[:HAS_PEDAGOGY_PROFILE]->(pp:PedagogyProfile)
             OPTIONAL MATCH (y)-[:HAS_FEEDBACK_PROFILE]->(fp:FeedbackProfile)
@@ -1175,18 +1177,20 @@ class SchemaValidator:
         self.add(ValidationResult("display_category valid values", status, total, issues))
 
     def check_year_node_invariants(self):
-        """All 11 Year nodes (Y1-Y11) exist with required properties and correct name."""
+        """All 12 Year nodes (EYFS + Y1-Y11) exist with required properties and correct name."""
         total = self.scalar("MATCH (y:Year) RETURN count(y)") or 0
         issues = []
-        if total != 11:
-            issues.append(f"Expected 11 Year nodes, found {total}")
+        if total != 12:
+            issues.append(f"Expected 12 Year nodes (EYFS + Y1-Y11), found {total}")
         # Check required properties and name format
+        # Reception (year_number=0) is a valid special case: name='Reception' not 'Year 0'
         records = self.run("""
             MATCH (y:Year)
             WHERE y.year_id IS NULL OR y.year_number IS NULL
                OR y.age_range IS NULL OR y.key_stage IS NULL
                OR y.name IS NULL
-               OR y.name <> ('Year ' + toString(y.year_number))
+               OR (y.year_number <> 0
+                   AND y.name <> ('Year ' + toString(y.year_number)))
             RETURN y.year_id AS id, y.year_number AS num, y.name AS name
         """)
         for r in records:
@@ -1195,7 +1199,7 @@ class SchemaValidator:
             yr_name = r['name']
             if yr_name is None:
                 issues.append(f"Year {yr_id} missing name property")
-            elif yr_num is not None and yr_name != f"Year {yr_num}":
+            elif yr_num is not None and yr_num != 0 and yr_name != f"Year {yr_num}":
                 issues.append(f"Year {yr_id} name='{yr_name}' (expected 'Year {yr_num}')")
             else:
                 issues.append(f"Year {yr_id} missing required properties")

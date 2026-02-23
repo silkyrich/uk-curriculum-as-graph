@@ -31,25 +31,58 @@ EXTRACTIONS_DIR = PROJECT_ROOT / "layers" / "eyfs" / "data" / "extractions"
 
 CORE_SUBJECTS = {"Mathematics", "English", "Science"}
 
-VALID_CONCEPT_TYPES = {
-    "declarative", "procedural", "conceptual", "process", "skill", "social",
+# Valid concept_type values as defined in core/scripts/validate_schema.py
+VALID_CONCEPT_TYPES = {"knowledge", "skill", "process", "attitude", "content"}
+
+# Valid structure_type values (validator VALID_STRUCTURE_TYPES)
+VALID_STRUCTURE_TYPES = {
+    "sequential", "hierarchical", "mixed", "exploratory",
+    "conceptual", "applied", "knowledge", "process",
+    "developmental", "thematic",
 }
+
+# Valid PREREQUISITE_OF confidence values
+VALID_PREREQ_CONFIDENCE = {"explicit", "inferred", "fuzzy", "suggested"}
 
 
 def _normalize_concept_type(raw):
     if not raw:
-        return "declarative"
+        return "knowledge"
     norm = raw.lower().strip()
     if norm in VALID_CONCEPT_TYPES:
         return norm
-    # Common aliases
-    if norm in ("knowledge", "fact"):
-        return "declarative"
-    if norm in ("technique", "method"):
-        return "procedural"
-    if norm in ("idea", "principle", "concept"):
-        return "conceptual"
-    return "declarative"
+    # Common aliases from agent-generated extractions
+    if norm in ("declarative", "fact", "declarative knowledge"):
+        return "knowledge"
+    if norm in ("social", "social-emotional", "socio-emotional"):
+        return "skill"
+    if norm in ("technique", "method", "procedural"):
+        return "skill"
+    if norm in ("idea", "principle", "conceptual"):
+        return "knowledge"
+    return "knowledge"
+
+
+def _normalize_structure_type(raw):
+    if not raw:
+        return "hierarchical"
+    norm = raw.lower().strip()
+    if norm in VALID_STRUCTURE_TYPES:
+        return norm
+    if norm in ("skills", "skill-based"):
+        return "developmental"
+    return "hierarchical"
+
+
+def _normalize_confidence(raw):
+    if not raw:
+        return "explicit"
+    norm = raw.lower().strip()
+    if norm in VALID_PREREQ_CONFIDENCE:
+        return norm
+    if norm in ("curated", "hand-curated", "verified"):
+        return "explicit"
+    return "inferred"
 
 
 class EYFSImporter:
@@ -250,6 +283,7 @@ class EYFSImporter:
                 p.structure_rating = $structure_rating,
                 p.extraction_date  = $extraction_date,
                 p.dfe_reference    = $dfe_reference,
+                p.source_url       = 'https://www.gov.uk/government/publications/early-years-foundation-stage-framework--2',
                 p.curriculum_name  = 'EYFS Statutory Framework 2024',
                 p.display_category = 'UK Curriculum',
                 p.display_color    = '#D97706',
@@ -307,7 +341,7 @@ class EYFSImporter:
                 description=domain.get("description", ""),
                 curriculum_context=domain.get("curriculum_context", ""),
                 is_cross_cutting=domain.get("is_cross_cutting", False),
-                structure_type=domain.get("structure_type", "hierarchical"),
+                structure_type=_normalize_structure_type(domain.get("structure_type", "hierarchical")),
                 source_reference=f"EYFS Statutory Framework 2024 — {subject_name}: {domain_name}",
             )
             self.stats["domains"] += 1
@@ -436,7 +470,7 @@ class EYFSImporter:
             """,
                 src=src_id,
                 dep=dep_id,
-                confidence=prereq.get("confidence", "curated"),
+                confidence=_normalize_confidence(prereq.get("confidence", "explicit")),
                 relationship_type=prereq.get("relationship_type", "developmental"),
                 strength=prereq.get("strength", 0.8),
                 rationale=prereq.get("rationale", ""),
