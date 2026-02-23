@@ -172,6 +172,40 @@ def query_domain_context(session, domain_id):
             if cl['inspired_by']:
                 sections.append(f"Inspired by: {cl['inspired_by']}")
 
+    # ── Thinking Lenses per cluster ─────────────────────────────────
+    if clusters:
+        cluster_ids = [cl['cid'] for cl in clusters]
+        lenses = list(session.run("""
+            MATCH (cc:ConceptCluster)-[al:APPLIES_LENS]->(tl:ThinkingLens)
+            WHERE cc.cluster_id IN $cids
+            RETURN cc.cluster_id  AS cluster_id,
+                   tl.name        AS lens_name,
+                   tl.key_question AS key_question,
+                   tl.agent_prompt AS agent_prompt,
+                   al.rank        AS rank,
+                   al.rationale   AS rationale
+            ORDER BY cc.cluster_id, al.rank
+        """, cids=cluster_ids))
+        if lenses:
+            # Group by cluster
+            from collections import defaultdict
+            lens_by_cluster = defaultdict(list)
+            for l in lenses:
+                lens_by_cluster[l['cluster_id']].append(l)
+            sections.append(f"\n### Thinking Lenses")
+            sections.append("Cognitive framing for each cluster — the primary lens (rank 1) is the recommended framing.")
+            for cid in cluster_ids:
+                cls_lenses = lens_by_cluster.get(cid, [])
+                if cls_lenses:
+                    sections.append(f"\n**{cid}:**")
+                    for l in cls_lenses:
+                        primary_tag = " (primary)" if l['rank'] == 1 else ""
+                        sections.append(f"- **{l['lens_name']}**{primary_tag}: {l['key_question']}")
+                        if l['rationale']:
+                            sections.append(f"  Why: {l['rationale']}")
+                        if l['agent_prompt']:
+                            sections.append(f"  AI instruction: {l['agent_prompt']}")
+
     # ── Objectives with Concept links ────────────────────────────────
     objectives = list(session.run("""
         MATCH (d:Domain {domain_id: $did})-[:CONTAINS]->(o:Objective)
