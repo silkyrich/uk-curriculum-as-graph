@@ -1,6 +1,6 @@
 # EYFS Layer
 
-**Status:** Phase 1 — Documentation only (no graph nodes yet)
+**Status:** Phase 2 — Extracted and importable (7 area JSONs + import script)
 **Scope:** Early Years Foundation Stage, Reception year (age 4-5)
 **Source:** DfE EYFS Statutory Framework (GOV.UK)
 
@@ -10,11 +10,24 @@
 
 The Early Years Foundation Stage (EYFS) is the statutory framework for children from birth to 5 in England. It precedes Key Stage 1 and is governed by a separate document from the National Curriculum.
 
-This layer will eventually model the EYFS content in the graph, providing prerequisite links from EYFS concepts into KS1 — completing the learning progression chain from Reception through to Year 11.
+This layer models the EYFS content in the graph, providing prerequisite links from EYFS concepts into KS1 — completing the learning progression chain from Reception through to Year 11.
 
 ---
 
 ## Current Contents
+
+### Extraction Data
+- `data/extractions/` — 7 JSON extraction files (one per area of learning):
+  - `CommunicationAndLanguage_EYFS_extracted.json`
+  - `PSED_EYFS_extracted.json`
+  - `PhysicalDevelopment_EYFS_extracted.json`
+  - `Literacy_EYFS_extracted.json`
+  - `Mathematics_EYFS_extracted.json`
+  - `UnderstandingTheWorld_EYFS_extracted.json`
+  - `ExpressiveArtsAndDesign_EYFS_extracted.json`
+
+### Import Script
+- `scripts/import_eyfs.py` — Creates EYFS KeyStage, Year, Programme, Domain, Objective, Concept nodes and EYFS-to-KS1 PREREQUISITE_OF links
 
 ### Research
 - `research/eyfs_statutory_framework.md` — Complete reference document covering:
@@ -27,8 +40,8 @@ This layer will eventually model the EYFS content in the graph, providing prereq
 
 ### Design
 - `docs/design/PLAN_EYFS_INTEGRATION.md` (project-level) — Integration plan covering:
-  - EYFS→KS1 subject mapping analysis
-  - Phased approach (docs → extraction → import → learner profiles)
+  - EYFS->KS1 subject mapping analysis
+  - Phased approach (docs -> extraction -> import -> learner profiles)
   - Modelling decisions and open questions
   - ID conventions and property recommendations
 
@@ -63,9 +76,9 @@ This layer will eventually model the EYFS content in the graph, providing prereq
 
 ---
 
-## Phase 2: Future Graph Integration
+## Graph Integration
 
-When extracted, EYFS will follow the existing Programme model:
+EYFS follows the existing Programme model:
 
 ```
 (:Curriculum)-[:HAS_KEY_STAGE]->(:KeyStage {key_stage_id: 'EYFS'})
@@ -86,16 +99,10 @@ ID conventions:
 - Objectives: `EY-R-O001`
 - Concepts: `EY-R-C001`
 
-### Extraction files (planned)
-```
-layers/eyfs/data/extractions/
-├── CommunicationAndLanguage_EYFS_extracted.json
-├── PSED_EYFS_extracted.json
-├── PhysicalDevelopment_EYFS_extracted.json
-├── Literacy_EYFS_extracted.json
-├── Mathematics_EYFS_extracted.json
-├── UnderstandingTheWorld_EYFS_extracted.json
-└── ExpressiveArtsAndDesign_EYFS_extracted.json
+### Import
+```bash
+python3 layers/eyfs/scripts/import_eyfs.py
+python3 layers/eyfs/scripts/import_eyfs.py --clear   # delete EYFS nodes first, then reimport
 ```
 
 ---
