@@ -1,0 +1,176 @@
+[
+  {
+    "concept_id": "MA-Y3-C036",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Drawing 2-D shapes on squared or dotted paper and making 3-D shapes from construction kits (e.g. Polydron, straws and clay).",
+        "example_task": "Draw a rectangle with sides 5 cm and 3 cm on squared paper. Build a cube from construction straws.",
+        "example_response": "Rectangle drawn on squared paper: 5 squares along, 3 squares up, with right angles at each corner. Cube: 12 straws of equal length, 8 clay balls at vertices.",
+        "common_errors": [
+          "Drawing the rectangle without measuring (sides not 5 and 3 squares)",
+          "Building a shape that looks like a cube but has unequal edges"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Drawing specified 2-D shapes on plain paper with a ruler, and describing 3-D shapes by their faces, edges and vertices.",
+        "example_task": "Draw a triangle with sides 4 cm, 5 cm and 6 cm. How many faces, edges and vertices does a triangular prism have?",
+        "example_response": "Triangle drawn with measured sides. A triangular prism has 5 faces (2 triangles, 3 rectangles), 9 edges and 6 vertices.",
+        "common_errors": [
+          "Drawing the triangle without a ruler or with inaccurate side lengths",
+          "Miscounting faces or edges of the prism (saying 3 faces because they only count the rectangular ones)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Drawing shapes to precise specifications including right angles (using a set-square) and describing 3-D shapes in different orientations.",
+        "example_task": "Draw a rectangle 6 cm by 2 cm. Then draw a right-angled triangle with the two shorter sides 3 cm and 4 cm.",
+        "example_response": "Rectangle: 6 cm and 2 cm sides, verified with ruler, right angles checked with set-square. Right-angled triangle: 3 cm and 4 cm sides meeting at a right angle, verified with set-square.",
+        "common_errors": [
+          "Not using a set-square to check right angles",
+          "Drawing the right-angled triangle with the wrong angle as the right angle"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C037",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Experiencing angles as turns through physical movement: making quarter, half, three-quarter and full turns.",
+        "example_task": "Stand up and face the door. Make a quarter turn clockwise. What are you facing now?",
+        "example_response": "After a quarter turn clockwise from the door, I am facing the window (90 degrees of turn).",
+        "common_errors": [
+          "Making a half turn instead of a quarter turn",
+          "Turning the wrong direction (anticlockwise instead of clockwise)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying angles in shapes and connecting them to turns, using a paper corner as a right-angle tester.",
+        "example_task": "How many angles does a triangle have? Test each corner of this rectangle with a paper corner. Are they right angles?",
+        "example_response": "A triangle has 3 angles. The rectangle has 4 corners, and each one matches the paper corner exactly, so they are all right angles.",
+        "common_errors": [
+          "Thinking the number of angles equals the number of sides only for some shapes",
+          "Saying a shape has no angles because the corners look 'smooth'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Connecting fraction turns to right angles: quarter turn = 1 right angle, half turn = 2 right angles, three-quarter turn = 3 right angles, full turn = 4 right angles.",
+        "example_task": "How many right angles in a half turn? How many right angles in a full turn? If you face north and make three right-angle turns clockwise, which direction do you face?",
+        "example_response": "Half turn = 2 right angles. Full turn = 4 right angles. Three right-angle turns clockwise from north: north to east to south to west. I face west.",
+        "common_errors": [
+          "Saying a full turn is 2 right angles (confusing with half turn)",
+          "Getting confused about the direction after multiple turns"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C038",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using a folded paper right-angle tester to find right angles in the classroom environment.",
+        "example_task": "Fold a piece of paper to make a right angle. Find 5 right angles in the classroom.",
+        "example_response": "Corner of a book, corner of the whiteboard, corner of the window frame, corner of a desk, corner of a door.",
+        "common_errors": [
+          "Folding the paper inaccurately so the tester is not a true right angle",
+          "Identifying acute or obtuse angles as right angles without testing"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Classifying angles as right, acute or obtuse by comparing them to a right-angle tester.",
+        "example_task": "Look at these three angles. Use your right-angle tester to classify each as right, acute or obtuse.",
+        "example_response": "Angle A is smaller than my right angle tester: acute. Angle B matches exactly: right angle. Angle C is bigger than my tester: obtuse.",
+        "common_errors": [
+          "Confusing acute and obtuse (saying a big angle is acute)",
+          "Thinking the length of the lines affects the angle size"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying and classifying angles in 2-D shapes without a tester, and connecting right angles to turns.",
+        "example_task": "How many right angles are in a square? A regular pentagon has no right angles. Are its angles acute or obtuse?",
+        "example_response": "A square has 4 right angles. A regular pentagon's angles are all obtuse (each is bigger than a right angle but less than a straight line).",
+        "common_errors": [
+          "Saying a square has 2 right angles (only counting top corners)",
+          "Thinking all angles in regular shapes are right angles"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Reasoning about angles in shapes and using the relationship between right angles and turns.",
+        "example_task": "A shape has exactly 2 right angles and 2 obtuse angles. Can you name what it might be? Explain.",
+        "example_response": "A trapezium can have 2 right angles and 2 obtuse angles. It is a right trapezium: the two right angles are where one vertical side meets the parallel sides, and the other two angles are obtuse.",
+        "common_errors": [
+          "Drawing a shape where the angles do not add up correctly",
+          "Not being able to visualise a shape with a mix of angle types"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C039",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying horizontal and vertical lines in the classroom environment using concrete references (spirit level, plumb line).",
+        "example_task": "Point to something horizontal in the classroom. Now point to something vertical.",
+        "example_response": "The floor is horizontal. The wall is vertical.",
+        "common_errors": [
+          "Confusing horizontal and vertical (saying the wall is horizontal)",
+          "Thinking diagonal lines are either horizontal or vertical"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying parallel and perpendicular lines in shapes and the environment, using a set-square to verify.",
+        "example_task": "Look at this rectangle. Which sides are parallel? Which sides are perpendicular?",
+        "example_response": "The top and bottom sides are parallel (same distance apart, never meet). The top and left side are perpendicular (they meet at a right angle). There are 2 pairs of parallel sides and 4 pairs of perpendicular sides.",
+        "common_errors": [
+          "Confusing parallel and perpendicular",
+          "Saying only opposite sides can be perpendicular (not seeing adjacent sides meeting at right angles)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying horizontal, vertical, parallel and perpendicular lines in diagrams and shapes, using correct vocabulary.",
+        "example_task": "Draw a pair of parallel lines. Draw a pair of perpendicular lines. In a triangle, can you have a pair of parallel sides?",
+        "example_response": "Parallel lines drawn with arrows showing they never meet. Perpendicular lines drawn meeting at a right angle with the square symbol. A triangle cannot have parallel sides because all three sides meet at vertices.",
+        "common_errors": [
+          "Drawing lines that look parallel but converge when extended",
+          "Forgetting the right-angle symbol for perpendicular lines"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analysing shapes by counting pairs of parallel and perpendicular sides, and reasoning about line relationships.",
+        "example_task": "How many pairs of parallel sides does a regular hexagon have? Explain.",
+        "example_response": "A regular hexagon has 3 pairs of parallel sides. Each side is parallel to the side directly opposite it. There are 6 sides total, giving 3 opposite pairs.",
+        "common_errors": [
+          "Saying 6 pairs (confusing sides with pairs)",
+          "Not recognising that non-adjacent sides can be parallel"
+        ]
+      }
+    ]
+  }
+]

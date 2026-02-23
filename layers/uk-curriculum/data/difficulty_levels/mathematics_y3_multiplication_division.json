@@ -1,0 +1,334 @@
+[
+  {
+    "concept_id": "MA-Y3-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Building the 3 times table using concrete equal groups of 3 objects, and counting totals.",
+        "example_task": "Make 5 groups of 3 counters. How many counters altogether?",
+        "example_response": "3, 6, 9, 12, 15. There are 15 counters. 5 x 3 = 15.",
+        "common_errors": [
+          "Miscounting the groups (counting 4 groups instead of 5)",
+          "Counting the total in ones rather than skip counting in 3s"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recalling 3 times table multiplication facts and beginning to link to division facts, with a multiplication grid for reference.",
+        "example_task": "What is 3 x 7? What is 21 divided by 3?",
+        "example_response": "3 x 7 = 21. 21 / 3 = 7.",
+        "common_errors": [
+          "Confusing 3 x 7 with 3 x 6 (getting 18 instead of 21)",
+          "Knowing 3 x 7 but not being able to derive 21 / 3"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Instant recall of all 3 times table facts (up to 3 x 12) in multiplication and division form.",
+        "example_task": "Answer these quickly: 3 x 9 = ? 36 / 3 = ? 3 x 11 = ?",
+        "example_response": "3 x 9 = 27. 36 / 3 = 12. 3 x 11 = 33.",
+        "common_errors": [
+          "Hesitating on the harder facts (3 x 7, 3 x 8, 3 x 9)",
+          "Not knowing that 3 x 12 = 36 (going only to 3 x 10)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using 3 times table facts to derive related facts with larger numbers.",
+        "example_task": "If 3 x 8 = 24, what is 30 x 8? Explain how you know.",
+        "example_response": "30 x 8 = 240. I know 3 x 8 = 24, and 30 is 10 times bigger than 3, so the answer is 10 times bigger: 24 x 10 = 240.",
+        "common_errors": [
+          "Just adding a zero without understanding why (getting the right answer but no reasoning)",
+          "Confusing x10 with +10 (saying 30 x 8 = 34)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Building the 4 times table using arrays or equal groups of 4 objects, connecting to doubling the 2 times table.",
+        "example_task": "Make an array of 4 rows with 6 counters in each row. How many counters altogether?",
+        "example_response": "4 x 6 = 24. I can see it is double the 2 x 6 = 12 array: 12 + 12 = 24.",
+        "common_errors": [
+          "Miscounting the array (getting 22 or 26)",
+          "Not seeing the connection to the 2 times table"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recalling 4 times table facts and the corresponding division facts, using doubling from the 2 times table as a strategy.",
+        "example_task": "What is 4 x 7? Use the doubling method.",
+        "example_response": "2 x 7 = 14, then double 14 = 28. So 4 x 7 = 28.",
+        "common_errors": [
+          "Doubling incorrectly (double 14 = 26 instead of 28)",
+          "Knowing 4 x 7 = 28 but not deriving 28 / 4 = 7"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Instant recall of all 4 times table facts (up to 4 x 12) in multiplication and division form.",
+        "example_task": "Answer these quickly: 4 x 8 = ? 48 / 4 = ? 4 x 11 = ?",
+        "example_response": "4 x 8 = 32. 48 / 4 = 12. 4 x 11 = 44.",
+        "common_errors": [
+          "Confusing 4 x 8 = 32 with 4 x 7 = 28 (off by one group of 4)",
+          "Not knowing 48 / 4 = 12 even when knowing 4 x 12 = 48"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using the doubling chain (2s, 4s, 8s) to derive facts and explain the multiplicative structure.",
+        "example_task": "Explain why all multiples of 4 are also multiples of 2. Then use 4 x 9 = 36 to work out 8 x 9.",
+        "example_response": "All multiples of 4 are multiples of 2 because 4 = 2 x 2, so every group of 4 contains exactly 2 groups of 2. For 8 x 9: double 4 x 9 = double 36 = 72.",
+        "common_errors": [
+          "Stating the rule without explaining it",
+          "Doubling 36 incorrectly (getting 62 or 74 instead of 72)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C019",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Building the 8 times table by doubling the 4 times table results using concrete materials.",
+        "example_task": "You know 4 x 5 = 20. Double 20 to find 8 x 5. Use counters to check.",
+        "example_response": "Double 20 = 40. So 8 x 5 = 40. Checked: 8 groups of 5 counters = 40 counters.",
+        "common_errors": [
+          "Doubling incorrectly (double 20 = 30)",
+          "Not connecting the doubling strategy to the concrete groups"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recalling 8 times table facts using the doubling strategy from the 4 times table, with a multiplication grid for reference.",
+        "example_task": "What is 8 x 6? Start from 4 x 6.",
+        "example_response": "4 x 6 = 24. Double 24 = 48. So 8 x 6 = 48.",
+        "common_errors": [
+          "Doubling the tens but not the ones (double 24 = 44 instead of 48)",
+          "Confusing 8 x 6 = 48 with 8 x 7 = 56"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Instant recall of all 8 times table facts (up to 8 x 12) in multiplication and division form.",
+        "example_task": "Answer these quickly: 8 x 7 = ? 72 / 8 = ? 8 x 12 = ?",
+        "example_response": "8 x 7 = 56. 72 / 8 = 9. 8 x 12 = 96.",
+        "common_errors": [
+          "Confusing 8 x 7 = 56 with 7 x 7 = 49 or 6 x 9 = 54",
+          "Not being able to recall division facts from multiplication facts"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using repeated halving as the inverse of the doubling chain to divide by 8.",
+        "example_task": "Work out 96 / 8 using repeated halving. Show your steps.",
+        "example_response": "96 / 2 = 48. 48 / 2 = 24. 24 / 2 = 12. So 96 / 8 = 12. I halved three times because 8 = 2 x 2 x 2.",
+        "common_errors": [
+          "Halving only once or twice instead of three times",
+          "Making a halving error: half of 96 = 46 instead of 48"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C020",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying the doubling relationship between the 2 and 4 times tables using a side-by-side comparison with concrete arrays.",
+        "example_task": "Write out the 2 times table and the 4 times table up to x5 side by side. What do you notice?",
+        "example_response": "2x1=2, 4x1=4. 2x2=4, 4x2=8. 2x3=6, 4x3=12. 2x4=8, 4x4=16. 2x5=10, 4x5=20. Each answer in the 4 times table is double the answer in the 2 times table.",
+        "common_errors": [
+          "Not noticing the doubling pattern",
+          "Thinking the 4 times table answers are '2 more' instead of 'double'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Extending the doubling pattern to include the 8 times table and using it to derive facts.",
+        "example_task": "2 x 6 = 12. Use doubling to find 4 x 6 and then 8 x 6.",
+        "example_response": "4 x 6 = double 12 = 24. 8 x 6 = double 24 = 48.",
+        "common_errors": [
+          "Doubling 12 to get 22 instead of 24",
+          "Stopping after the 4 times table and not continuing to the 8"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Explaining the doubling chain (2s to 4s to 8s) and using halving as the inverse strategy for division by 4 or 8.",
+        "example_task": "Explain the connection between 2 x 9, 4 x 9 and 8 x 9. Then use halving to work out 72 / 4.",
+        "example_response": "2 x 9 = 18. 4 x 9 = double 18 = 36. 8 x 9 = double 36 = 72. Each time we double. To divide by 4, halve twice: 72 / 2 = 36, 36 / 2 = 18. So 72 / 4 = 18.",
+        "common_errors": [
+          "Using the doubling chain for multiplication but not knowing how to reverse it for division",
+          "Halving once instead of twice when dividing by 4"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C021",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Multiplying a two-digit number by a one-digit number using concrete equal groups or arrays.",
+        "example_task": "Use counters to find 13 x 3. Make 3 groups of 13.",
+        "example_response": "3 groups of 13: 13 + 13 + 13 = 39. Or: 3 groups of 10 = 30, 3 groups of 3 = 9, 30 + 9 = 39.",
+        "common_errors": [
+          "Miscounting the groups (getting 36 or 42)",
+          "Multiplying only the ones: 3 x 3 = 9, forgetting the tens"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using the grid method (partitioning) to multiply a two-digit number by a one-digit number.",
+        "example_task": "Use the grid method to calculate 24 x 3.",
+        "example_response": "Partition 24 into 20 and 4. Grid: 20 x 3 = 60, 4 x 3 = 12. Total: 60 + 12 = 72.",
+        "common_errors": [
+          "Forgetting to add the partial products (writing 60 and 12 but not combining them)",
+          "Multiplying 2 x 3 instead of 20 x 3 (getting 6 + 12 = 18)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using compact short multiplication (vertical layout) for two-digit times one-digit, with carrying.",
+        "example_task": "Calculate 47 x 3 using short multiplication.",
+        "example_response": "7 x 3 = 21, write 1 carry 2. 4 x 3 = 12, plus 2 = 14. Answer: 141.",
+        "common_errors": [
+          "Forgetting to add the carry: 7 x 3 = 21, carry 2, then 4 x 3 = 12 (forgetting +2, writing 121)",
+          "Carrying the wrong digit (carrying 1 instead of 2 from 21)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using the distributive law to explain the method and solving multi-step problems.",
+        "example_task": "Show that 38 x 4 gives the same answer whether you use 30 x 4 + 8 x 4 or 40 x 4 - 2 x 4. Explain why.",
+        "example_response": "30 x 4 + 8 x 4 = 120 + 32 = 152. 40 x 4 - 2 x 4 = 160 - 8 = 152. Both give 152 because 38 = 30 + 8 = 40 - 2, and we can split multiplication across addition or subtraction.",
+        "common_errors": [
+          "Not understanding that subtraction can be used (only seeing addition-based partitioning)",
+          "Making arithmetic errors in one of the methods and thinking the law does not work"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C022",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Understanding 'times as many' using concrete bar models: comparing a single bar with a bar that is a given number of times longer.",
+        "example_task": "Sam has 3 stickers. Mia has 4 times as many stickers as Sam. Use cubes to show how many Mia has.",
+        "example_response": "Sam: 3 cubes. Mia: 4 groups of 3 cubes = 12 cubes. Mia has 12 stickers.",
+        "common_errors": [
+          "Adding 4 instead of multiplying by 4 (saying Mia has 7 stickers)",
+          "Confusing 'times as many' with 'more than'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Drawing bar models for scaling problems and writing the corresponding multiplication statement.",
+        "example_task": "A pencil is 8 cm long. A ruler is 3 times as long. How long is the ruler? Draw a bar model.",
+        "example_response": "Pencil: one bar of 8. Ruler: three bars of 8 = 3 x 8 = 24 cm.",
+        "common_errors": [
+          "Drawing 3 bars of 3 instead of 3 bars of 8",
+          "Writing 8 + 3 = 11 instead of 8 x 3 = 24"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving scaling problems in context, identifying the multiplication or division needed, without bar model support.",
+        "example_task": "A recipe needs 4 eggs. Tom wants to make 3 times as much. How many eggs does he need? If he has 32 eggs, how many times the recipe can he make?",
+        "example_response": "3 times as much: 4 x 3 = 12 eggs. With 32 eggs: 32 / 4 = 8 times the recipe.",
+        "common_errors": [
+          "For the first part: 4 + 3 = 7 eggs (adding instead of multiplying)",
+          "For the second part: 32 - 4 = 28 (subtracting instead of dividing)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving two-step scaling problems and explaining the difference between additive and multiplicative comparison.",
+        "example_task": "Aisha has 5 marbles. Ben has 4 more marbles than Aisha. Chloe has 4 times as many marbles as Aisha. Who has more, Ben or Chloe? How many more?",
+        "example_response": "Ben: 5 + 4 = 9 marbles. Chloe: 5 x 4 = 20 marbles. Chloe has more. 20 - 9 = 11 more.",
+        "common_errors": [
+          "Treating both '4 more' and '4 times as many' the same way",
+          "Not understanding the distinction between additive and multiplicative comparison"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C023",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding all combinations of 2 items from 2 small sets by physically matching concrete objects.",
+        "example_task": "You have 2 hats (red, blue) and 3 scarves (green, yellow, striped). Match each hat with each scarf. How many different outfits?",
+        "example_response": "Red hat + green scarf, red hat + yellow scarf, red hat + striped scarf. Blue hat + green scarf, blue hat + yellow scarf, blue hat + striped scarf. 6 outfits.",
+        "common_errors": [
+          "Missing one combination (finding only 5)",
+          "Repeating a combination (counting red+green twice)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Systematically listing combinations in a table and beginning to connect the count to multiplication.",
+        "example_task": "There are 3 flavours of ice cream (vanilla, chocolate, strawberry) and 4 toppings (sprinkles, sauce, flake, nuts). List all possible combinations in a table.",
+        "example_response": "Table with 3 rows and 4 columns = 12 combinations. 3 x 4 = 12.",
+        "common_errors": [
+          "Listing unsystematically and missing some combinations",
+          "Not connecting the table to multiplication (counting one by one instead)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using multiplication to calculate the number of combinations and explaining why multiplication works.",
+        "example_task": "A cafe offers 4 types of sandwich and 3 types of drink. How many different meal deals (one sandwich and one drink) are there? Explain why you multiply.",
+        "example_response": "4 x 3 = 12 meal deals. I multiply because for each of the 4 sandwiches, there are 3 drink choices. So that is 4 lots of 3.",
+        "common_errors": [
+          "Adding instead of multiplying (4 + 3 = 7)",
+          "Not being able to explain why multiplication gives the answer"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving correspondence problems with three sets or with constraints.",
+        "example_task": "A school trip offers 2 activities (museum, park), 3 lunch options (packed lunch, cafe, pizza) and 2 transport options (bus, train). How many different trip plans are possible?",
+        "example_response": "2 x 3 x 2 = 12 different trip plans. For each activity, there are 3 lunch options, and for each of those, 2 transport options.",
+        "common_errors": [
+          "Only multiplying two of the three sets (2 x 3 = 6)",
+          "Adding all the options (2 + 3 + 2 = 7)"
+        ]
+      }
+    ]
+  }
+]

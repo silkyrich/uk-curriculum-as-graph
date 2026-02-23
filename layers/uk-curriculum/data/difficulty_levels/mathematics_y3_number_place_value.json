@@ -1,0 +1,497 @@
+[
+  {
+    "concept_id": "MA-Y3-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting in 4s from zero using concrete groups of 4 objects, supported by a number line with multiples of 4 highlighted.",
+        "example_task": "Place 4 cubes, then 4 more, then 4 more. Count the total each time: 4, 8, 12. Continue the pattern to 40.",
+        "example_response": "4, 8, 12, 16, 20, 24, 28, 32, 36, 40",
+        "common_errors": [
+          "Counting in 2s instead of 4s (4, 6, 8, 10...)",
+          "Losing track and reverting to counting in 1s after 20"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Counting forwards and backwards in 4s from zero without concrete support, using a number line or hundred square if needed.",
+        "example_task": "Count backwards in 4s from 40 to 0.",
+        "example_response": "40, 36, 32, 28, 24, 20, 16, 12, 8, 4, 0",
+        "common_errors": [
+          "Counting backwards in 1s instead of 4s (40, 39, 38...)",
+          "Skipping a number in the sequence (40, 36, 28...)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Counting in 4s from any given multiple of 4, forwards and backwards, without support.",
+        "example_task": "Start at 24. Count on in 4s until you reach 48.",
+        "example_response": "24, 28, 32, 36, 40, 44, 48",
+        "common_errors": [
+          "Needing to restart from 0 to reach the starting point before continuing",
+          "Stumbling at decade boundaries (e.g. 28 to 32, crossing from twenties to thirties)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using the relationship between counting in 2s and counting in 4s to explain patterns and answer reasoning questions.",
+        "example_task": "Explain why every multiple of 4 is also a multiple of 2. Give three examples.",
+        "example_response": "Every multiple of 4 is a multiple of 2 because 4 = 2 x 2, so counting in 4s is like counting in 2s twice. Examples: 12 is 4 x 3 and 2 x 6; 20 is 4 x 5 and 2 x 10; 36 is 4 x 9 and 2 x 18.",
+        "common_errors": [
+          "Giving examples but no explanation of the doubling relationship",
+          "Confusing 'multiple of 4' with 'multiple of 2' and claiming all even numbers are multiples of 4"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting in 8s from zero using groups of 8 objects (e.g. spider legs), supported by a number line.",
+        "example_task": "Use cubes in groups of 8. Count the total as you add each group: 8, 16, 24. Continue to 80.",
+        "example_response": "8, 16, 24, 32, 40, 48, 56, 64, 72, 80",
+        "common_errors": [
+          "Losing count after 32 and guessing (e.g. 32, 38, 44...)",
+          "Counting in 4s instead of 8s"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Counting forwards and backwards in 8s from zero using the doubling connection to the 4 times table as a strategy.",
+        "example_task": "Count backwards in 8s from 80 to 0.",
+        "example_response": "80, 72, 64, 56, 48, 40, 32, 24, 16, 8, 0",
+        "common_errors": [
+          "Errors at transitions: 72 to 64 (saying 62 or 66)",
+          "Reverting to counting back in ones from 56 onwards"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Counting in 8s from any given multiple of 8, forwards and backwards, with fluency.",
+        "example_task": "Start at 32. Count on in 8s to 72.",
+        "example_response": "32, 40, 48, 56, 64, 72",
+        "common_errors": [
+          "Needing to recite the whole sequence from 8 before continuing from 32",
+          "Saying 32, 40, 46 instead of 32, 40, 48 (adding 6 instead of 8)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining the doubling chain from 2s to 4s to 8s and using it to derive or check multiples of 8.",
+        "example_task": "The 4 times table says 4 x 7 = 28. Use this to work out 8 x 7. Explain your method.",
+        "example_response": "8 x 7 = double 4 x 7 = double 28 = 56. This works because 8 is double 4, so every answer in the 8 times table is double the matching answer in the 4 times table.",
+        "common_errors": [
+          "Doubling incorrectly (double 28 = 46 instead of 56)",
+          "Not being able to explain why doubling works, only knowing the procedure"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting in 50s from zero using 50p coins or a number line marked in 50s.",
+        "example_task": "Put 50p coins in a line, one at a time. Count the total as you go: 50, 100, 150... Continue to 500.",
+        "example_response": "50, 100, 150, 200, 250, 300, 350, 400, 450, 500",
+        "common_errors": [
+          "Adding 5 instead of 50 (50, 55, 60...)",
+          "Getting confused at the hundreds boundary (250, 300, 310 instead of 350)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Counting forwards and backwards in 50s, including crossing hundreds boundaries, using a number line if needed.",
+        "example_task": "Count backwards in 50s from 400 to 100.",
+        "example_response": "400, 350, 300, 250, 200, 150, 100",
+        "common_errors": [
+          "Subtracting 50 inconsistently (400, 350, 300, 260...)",
+          "Skipping a hundreds boundary (400, 350, 250...)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Counting in 50s from any given multiple of 50, in both directions, without support.",
+        "example_task": "Start at 350. Count on in 50s to 700.",
+        "example_response": "350, 400, 450, 500, 550, 600, 650, 700",
+        "common_errors": [
+          "Hesitating or making errors at boundaries (350, 400, 440 instead of 450)",
+          "Adding 100 instead of 50 at some points"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting in 100s from zero using Dienes hundreds flats, placing one flat at a time and counting the total.",
+        "example_task": "Place hundreds flats one at a time. Count: 100, 200, 300... Continue to 1000.",
+        "example_response": "100, 200, 300, 400, 500, 600, 700, 800, 900, 1000",
+        "common_errors": [
+          "Saying 'ten hundred' instead of 'one thousand' for 1000",
+          "Counting in 10s instead of 100s"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Counting forwards and backwards in 100s from zero without concrete support.",
+        "example_task": "Count backwards in 100s from 1000 to 0.",
+        "example_response": "1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 0",
+        "common_errors": [
+          "Hesitating or stopping at 100 rather than reaching 0",
+          "Counting in 10s instead of 100s when going backwards"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Counting in 100s from any given multiple of 100, in both directions, fluently.",
+        "example_task": "Start at 400. Count on in 100s to 900.",
+        "example_response": "400, 500, 600, 700, 800, 900",
+        "common_errors": [
+          "Adding 10 instead of 100 (400, 410, 420...)",
+          "Needing to start from 0 each time rather than from the given number"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding 10 more or 10 less using Dienes blocks for three-digit numbers that do not cross a tens boundary.",
+        "example_task": "Show 253 with Dienes blocks. Add one tens rod. What number do you have now?",
+        "example_response": "263. The tens changed from 5 to 6 but the hundreds (2) and ones (3) stayed the same.",
+        "common_errors": [
+          "Changing the ones digit instead of the tens digit (253 + 10 = 254)",
+          "Changing the hundreds digit instead of the tens digit (253 + 10 = 353)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding 10 more or less for three-digit numbers without concrete support, including cases where the tens digit is 0 or 9.",
+        "example_task": "What is 10 less than 305?",
+        "example_response": "295. The tens digit goes from 0 to 9 and the hundreds digit decreases by 1 (from 3 to 2).",
+        "common_errors": [
+          "Saying 10 less than 305 is 205 (subtracting 100 instead of 10)",
+          "Saying 10 less than 305 is 395 (incorrectly borrowing from the ones)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Rapid recall of 10 more and 10 less for any three-digit number, including boundary cases, without support.",
+        "example_task": "What is 10 more than 496? What is 10 less than 700?",
+        "example_response": "10 more than 496 is 506. 10 less than 700 is 690.",
+        "common_errors": [
+          "Saying 10 more than 496 is 4106 (concatenating digits instead of carrying)",
+          "Saying 10 less than 700 is 600 (subtracting 100 instead of 10)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining what happens to the place value columns when finding 10 more or less at boundary cases.",
+        "example_task": "Explain why finding 10 more than 390 changes two digits. What happens to the hundreds and tens?",
+        "example_response": "390 + 10 = 400. The tens go from 9 to 0 because 9 tens + 1 ten = 10 tens, which equals 1 hundred. So the hundreds go up by 1 (from 3 to 4) and the tens become 0.",
+        "common_errors": [
+          "Being unable to explain the regrouping, only knowing the answer",
+          "Saying 'the 9 turns into 10' without linking this to the hundreds column"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding 100 more or 100 less using Dienes hundreds flats for three-digit numbers.",
+        "example_task": "Show 347 with Dienes blocks. Add one hundreds flat. What number do you have now?",
+        "example_response": "447. Only the hundreds digit changed (from 3 to 4). The tens (4) and ones (7) stayed the same.",
+        "common_errors": [
+          "Changing the tens digit instead of the hundreds (347 + 100 = 357)",
+          "Adding 10 instead of 100 (347 + 100 = 357)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding 100 more or less for three-digit numbers without concrete support, including numbers below 200.",
+        "example_task": "What is 100 less than 150?",
+        "example_response": "50",
+        "common_errors": [
+          "Saying 100 less than 150 is 140 (subtracting 10 instead of 100)",
+          "Being unsure because the result is a two-digit number"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Rapid recall of 100 more and 100 less for any three-digit number, including the 900-to-1000 boundary.",
+        "example_task": "What is 100 more than 923? What is 100 less than 208?",
+        "example_response": "100 more than 923 is 1023. 100 less than 208 is 108.",
+        "common_errors": [
+          "Saying 100 more than 923 is 933 (adding 10 instead of 100)",
+          "Being unsure whether 1023 is a valid answer because it has four digits"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying the value of each digit in a three-digit number using Dienes blocks and a place value mat (H T O columns).",
+        "example_task": "Build 352 with Dienes blocks on a place value mat. How many hundreds, tens and ones are there?",
+        "example_response": "3 hundreds, 5 tens, 2 ones. The 3 is worth 300, the 5 is worth 50, and the 2 is worth 2.",
+        "common_errors": [
+          "Saying the 3 is worth 3 rather than 300",
+          "Confusing tens and ones columns on the mat"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying the value of each digit using arrow cards or pictorial place value charts, including numbers with zero as a placeholder.",
+        "example_task": "What is the value of the 0 in 407?",
+        "example_response": "The 0 means there are no tens. 407 = 400 + 0 + 7.",
+        "common_errors": [
+          "Saying the 0 has no meaning or ignoring it (reading 407 as 47)",
+          "Saying the 0 is worth 0 without explaining it means 'zero tens'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Stating the value of any digit in any three-digit number without support, and using this to explain calculations.",
+        "example_task": "In 763, what is the value of each digit? Use this to explain why 763 = 700 + 60 + 3.",
+        "example_response": "The 7 is worth 700 because it is in the hundreds column. The 6 is worth 60 because it is in the tens column. The 3 is worth 3 because it is in the ones column. So 763 = 700 + 60 + 3.",
+        "common_errors": [
+          "Adding the digits (7 + 6 + 3 = 16) instead of stating their place values",
+          "Mixing up the values (saying the 6 is worth 600 and the 7 is worth 70)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using place value reasoning to answer questions about digit changes and number composition.",
+        "example_task": "I am thinking of a three-digit number. The hundreds digit is 5. The tens digit is double the ones digit. The number is less than 530. What could the number be?",
+        "example_response": "The tens digit must be double the ones digit, and the number is less than 530 so the tens digit must be 0, 1 or 2. If tens = 0, ones = 0, the number is 500. If tens = 2, ones = 1, the number is 521. If tens = 4, ones = 2, that gives 542 which is more than 530. So the number is 500 or 521.",
+        "common_errors": [
+          "Not working systematically through the possibilities",
+          "Forgetting the constraint that the number must be less than 530"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Standard partitioning of three-digit numbers using Dienes blocks and arrow cards (e.g. 347 = 300 + 40 + 7).",
+        "example_task": "Use arrow cards to show how 528 can be split into hundreds, tens and ones.",
+        "example_response": "528 = 500 + 20 + 8. The arrow cards are 500, 20 and 8.",
+        "common_errors": [
+          "Writing 528 = 5 + 2 + 8 (digit values rather than place values)",
+          "Struggling with zero placeholders: partitioning 503 as 500 + 3 but forgetting the 0 tens"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Standard partitioning without concrete support, including numbers with zeros, recorded using addition notation.",
+        "example_task": "Partition 604 into hundreds, tens and ones.",
+        "example_response": "604 = 600 + 0 + 4",
+        "common_errors": [
+          "Omitting the zero tens entirely (writing 604 = 600 + 4 only)",
+          "Writing 604 = 64 (ignoring the hundreds)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Flexible (non-standard) partitioning of three-digit numbers in multiple ways to support calculation.",
+        "example_task": "Partition 347 in three different ways.",
+        "example_response": "347 = 300 + 40 + 7. Also 347 = 300 + 47. Also 347 = 200 + 147.",
+        "common_errors": [
+          "Only knowing standard partitioning and being unable to create alternatives",
+          "Creating invalid partitions where the parts do not sum to the original number"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using flexible partitioning strategically to make a specific calculation easier, and explaining why.",
+        "example_task": "Which partitioning of 347 would help you calculate 347 - 50 mentally? Explain.",
+        "example_response": "Partition 347 as 350 - 3. Then 350 - 50 = 300, and 300 - 3 = 297. This works because 350 is a near-multiple of 50, making the subtraction easier.",
+        "common_errors": [
+          "Choosing a partitioning that does not help with the calculation",
+          "Being unable to explain why one partitioning is more helpful than another"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Comparing two three-digit numbers using Dienes blocks to see which has more hundreds, tens or ones.",
+        "example_task": "Build 356 and 348 with Dienes blocks. Which number is greater?",
+        "example_response": "356 is greater than 348. They both have 3 hundreds, but 356 has 5 tens and 348 only has 4 tens. 356 > 348.",
+        "common_errors": [
+          "Comparing the ones digits only (saying 348 > 356 because 8 > 6)",
+          "Saying 'they are the same' because the hundreds are the same"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Comparing two three-digit numbers using place value reasoning and the > < = symbols, without concrete support.",
+        "example_task": "Put the correct symbol (>, < or =) between these numbers: 465 ___ 456",
+        "example_response": "465 > 456. The hundreds are both 4, the tens are 6 and 5, and 6 tens is more than 5 tens.",
+        "common_errors": [
+          "Confusing > and < symbols (writing 465 < 456)",
+          "Not checking beyond the first digit that differs"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Ordering a set of up to six three-digit numbers in ascending or descending order, using systematic place value comparison.",
+        "example_task": "Put these numbers in order from smallest to largest: 503, 350, 530, 305, 535, 353",
+        "example_response": "305, 350, 353, 503, 530, 535",
+        "common_errors": [
+          "Ordering by the first digit only without comparing subsequent digits when hundreds are equal",
+          "Confusing ascending and descending order"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving reasoning problems that require comparing and ordering with missing digits or constraints.",
+        "example_task": "I have three numbers: 4_6, 46_, and _56. The missing digits are 3, 5, and 7. Place them so the three numbers are in ascending order.",
+        "example_response": "Put 3 in the first gap: 436. Put 5 in the third gap: 556. Put 7 in the second gap: 467. Check ascending order: 436, 467, 556. Yes, that works.",
+        "common_errors": [
+          "Placing digits randomly without checking the resulting order",
+          "Not considering all possible arrangements before settling on one"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Estimating the position of a number on a number line marked at 0 and 1000, using the halfway point (500) as a benchmark.",
+        "example_task": "Here is a number line from 0 to 1000. An arrow points to a position. Is it closer to 0, 500 or 1000?",
+        "example_response": "The arrow is past halfway, closer to 1000. I estimate about 750.",
+        "common_errors": [
+          "Guessing with no reasoning (saying 'about 200' for a position clearly past halfway)",
+          "Treating estimation as exact counting"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Estimating positions on number lines with more benchmark points (0, 250, 500, 750, 1000) and estimating quantities from images.",
+        "example_task": "This number line is marked at 0 and 1000, with 500 in the middle. An arrow points between 500 and the end. Estimate the number.",
+        "example_response": "The arrow is about three-quarters of the way between 500 and 1000, so I estimate about 875.",
+        "common_errors": [
+          "Ignoring the benchmarks and guessing (saying 600 for a position close to 900)",
+          "Being overly precise (saying exactly 873 rather than giving a sensible estimate like 875 or 900)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Estimating on partially labelled number lines and explaining reasoning using benchmarks, for numbers to 1000.",
+        "example_task": "A number line shows 200 and 400. An arrow points to a position one-quarter of the way from 200 to 400. What is your estimate? Explain.",
+        "example_response": "The distance from 200 to 400 is 200. One quarter of 200 is 50. So the arrow is at about 200 + 50 = 250.",
+        "common_errors": [
+          "Ignoring the scale and treating 200-400 as if it were 0-1000",
+          "Calculating the quarter incorrectly (saying a quarter of 200 is 100)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading and writing multiples of 100 in words (one hundred, two hundred... nine hundred) and the number 1000.",
+        "example_task": "Write these numbers in words: 300, 500, 800.",
+        "example_response": "Three hundred. Five hundred. Eight hundred.",
+        "common_errors": [
+          "Writing 'three hundred' as 'threehundred' (one word)",
+          "Spelling errors such as 'hundread' or 'hunderd'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading and writing three-digit numbers with non-zero tens and ones in words, using a reference chart if needed.",
+        "example_task": "Write 347 in words.",
+        "example_response": "Three hundred and forty-seven.",
+        "common_errors": [
+          "Omitting 'and' (writing 'three hundred forty-seven')",
+          "Forgetting the hyphen in compound numbers (writing 'forty seven' instead of 'forty-seven')"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading and writing any three-digit number in words, including those with zeros, without support.",
+        "example_task": "Write these numbers in words: 604, 210, 999.",
+        "example_response": "Six hundred and four. Two hundred and ten. Nine hundred and ninety-nine.",
+        "common_errors": [
+          "Writing 604 as 'six hundred and zero four' or 'six hundred and forty'",
+          "Confusing teen numbers: writing 'two hundred and eleven' for 210"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Converting between words and numerals in both directions, including interpreting ambiguous or incorrect word forms.",
+        "example_task": "A pupil wrote 'four hundred and sixty-twelve'. What number did they mean? Write it correctly in words and numerals.",
+        "example_response": "They probably meant 472 (four hundred and seventy-two). 'Sixty-twelve' is not correct English; the correct way is 'seventy-two' because 60 + 12 = 72.",
+        "common_errors": [
+          "Not recognising the error in the word form",
+          "Writing 4612 by combining the numbers literally"
+        ]
+      }
+    ]
+  }
+]

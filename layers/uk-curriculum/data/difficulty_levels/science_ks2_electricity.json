@@ -1,0 +1,198 @@
+[
+  {
+    "concept_id": "SC-KS2-C041",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Building a simple circuit with a cell, wires and a bulb to make the bulb light, with teacher guidance.",
+        "example_task": "Use a cell, two wires and a bulb to make the bulb light up.",
+        "example_response": "Child connects one wire from the cell to the bulb and another wire from the bulb back to the cell, completing the circuit. The bulb lights up.",
+        "common_errors": [
+          "Connecting both wires to the same end of the cell",
+          "Not completing the circuit (leaving a gap)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understanding that a circuit must be a complete loop for electricity to flow, and adding components like switches and buzzers.",
+        "example_task": "Why does the bulb go out when you disconnect one wire? Add a switch to your circuit.",
+        "example_response": "The bulb goes out because the circuit is broken — there is a gap in the loop so electricity cannot flow all the way around. A switch works by opening and closing the gap in the circuit. When the switch is closed, the circuit is complete and the bulb lights. When the switch is open, there is a gap and the bulb goes off.",
+        "common_errors": [
+          "Thinking electricity 'leaks out' through the gap",
+          "Not understanding that a switch is a controlled gap"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Constructing series circuits with multiple components, using standard circuit symbols in Y6, and predicting what happens when components are added or removed.",
+        "example_task": "Draw a circuit diagram for a circuit with a battery, a switch, two bulbs and a buzzer, all in series. What will happen if one bulb is removed?",
+        "example_response": "Circuit diagram using standard symbols: battery (two long and short parallel lines), switch (break in line), two bulbs (circles with crosses), buzzer (semicircle), all connected in a single loop by straight lines. If one bulb is removed, the circuit is broken because removing a component creates a gap. The other bulb goes off and the buzzer stops. In a series circuit, all components are in one loop, so breaking it anywhere stops everything.",
+        "common_errors": [
+          "Drawing components floating rather than connected in a loop",
+          "Not knowing the standard circuit symbols"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining the flow model of electricity in a circuit, understanding that current is the same throughout a series circuit, and correcting common misconceptions.",
+        "example_task": "A pupil says the first bulb in a series circuit is brighter because it 'uses up' some electricity before it reaches the second bulb. Is this correct? Explain.",
+        "example_response": "This is incorrect. In a series circuit, the current (flow of charge) is the same everywhere — it is not 'used up' by the first bulb. Both bulbs receive the same current and glow equally bright. What is 'used' is energy — each bulb converts electrical energy to light and heat, reducing the voltage available for the rest of the circuit. That is why two bulbs in series are both dimmer than one bulb alone — the voltage is shared between them. But the current itself flows in a complete loop and is not consumed. The 'using up' misconception comes from confusing current with energy. A good analogy: water flowing in a circular pipe system passes through two water wheels — the same amount of water flows through each wheel, but each wheel takes some energy from the water.",
+        "common_errors": [
+          "Believing the first bulb gets more electricity",
+          "Confusing current (flow of charge, conserved) with energy (transferred at each component)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS2-C042",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Testing materials to find out which ones let electricity flow through them (complete the circuit) and which do not.",
+        "example_task": "Place each material in the gap in our test circuit. Does the bulb light up? Record which materials let electricity through.",
+        "example_response": "The bulb lit up for: metal spoon, coin, aluminium foil, paper clip. The bulb did not light for: plastic ruler, rubber band, wooden stick, paper.",
+        "common_errors": [
+          "Not testing all the materials",
+          "Recording results inconsistently"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using the terms conductor and insulator correctly and identifying that metals are generally good conductors.",
+        "example_task": "What is a conductor? What is an insulator? What pattern did you notice in your results?",
+        "example_response": "A conductor is a material that lets electricity flow through it — the bulb lights up when it is in the circuit. An insulator is a material that does not let electricity flow through — the bulb stays off. The pattern is that all the metal objects were conductors and all the non-metal objects were insulators. Metals are good conductors of electricity.",
+        "common_errors": [
+          "Mixing up conductor and insulator",
+          "Not noticing the metal/non-metal pattern"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Explaining why electrical wires are made of metal covered in plastic, and understanding the practical importance of conductors and insulators for safety.",
+        "example_task": "Why are electrical cables made of copper wire covered in plastic? What would happen if they were not covered?",
+        "example_response": "The copper wire inside is an excellent conductor — it lets electricity flow through it easily with very little energy lost as heat. The plastic coating is an insulator — it stops electricity from flowing where we do not want it to go. Without the plastic covering, the bare metal could touch other metals (causing a short circuit), touch water (creating a dangerous shock risk), or touch a person (electric shock). The combination of conductor inside and insulator outside lets us direct electricity safely where it is needed. This is also why plugs have plastic casings and why electricians wear rubber gloves.",
+        "common_errors": [
+          "Explaining conductors without mentioning why insulators are needed for safety",
+          "Not recognising that the design choice is about directing current safely"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Recognising exceptions to the metals-conduct rule and explaining why some materials are used specifically for their electrical properties.",
+        "example_task": "Graphite (pencil lead) is not a metal but it conducts electricity. Test this by including a pencil line in a circuit. Why is this surprising? Can you think of a use for this property?",
+        "example_response": "When I draw a thick pencil line connecting the gap in the circuit, the bulb lights dimly — graphite does conduct electricity, even though it is not a metal. This is surprising because we learned that non-metals are usually insulators. Graphite is an exception because of its unique structure — its carbon atoms are arranged in layers that allow electrons to move freely, similar to metals. This is why graphite is used as an electrode in batteries and in electronic pencils for drawing circuits. It shows that the rule 'metals conduct, non-metals do not' is a generalisation with exceptions. In science, we must always be open to evidence that challenges simple rules.",
+        "common_errors": [
+          "Thinking the exception disproves the general rule rather than showing it has limits",
+          "Not testing properly (the pencil line needs to be thick and continuous)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS2-C043",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Knowing that adding more cells (batteries) makes a bulb brighter.",
+        "example_task": "What happens to the brightness of the bulb when we add a second cell to the circuit?",
+        "example_response": "The bulb gets brighter when we add another cell.",
+        "common_errors": [
+          "Not noticing the brightness change",
+          "Thinking the bulb gets brighter because the circuit is bigger"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understanding that more cells provide more 'push' (voltage) to the electricity, making bulbs brighter and buzzers louder.",
+        "example_task": "We tested a circuit with 1 cell, 2 cells and 3 cells. Describe what happened to the bulb. Use the word voltage.",
+        "example_response": "With 1 cell, the bulb was dim. With 2 cells, it was brighter. With 3 cells, it was very bright and hot. More cells mean more voltage — voltage is the 'push' that drives the electricity around the circuit. More push means more current flows, making the bulb glow brighter and the buzzer louder.",
+        "common_errors": [
+          "Not linking brightness to voltage",
+          "Confusing voltage with current"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Investigating the effect of changing the number of cells or components in a series circuit, and explaining that adding more bulbs makes each one dimmer because the voltage is shared.",
+        "example_task": "In a circuit with 2 cells, one bulb is bright. When we add a second bulb in series, both bulbs are dimmer. Explain why.",
+        "example_response": "When there is one bulb, it gets all the voltage from both cells. When we add a second bulb in series, the same voltage must be shared between the two bulbs — each gets half. Less voltage across each bulb means less current through it, so each glows more dimly. The total voltage from the cells has not changed, but it is now divided between more components. This is a key property of series circuits. If we wanted both bulbs to be as bright as the single bulb, we would need to double the number of cells.",
+        "common_errors": [
+          "Thinking adding a bulb 'uses up' electricity rather than sharing the voltage",
+          "Not understanding that the total voltage is fixed by the cells"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Predicting and explaining circuit behaviour, including the relationship between cells, bulbs and brightness, and recognising the limitations of the simple model.",
+        "example_task": "A circuit has 3 cells and 1 bright bulb. Predict what happens if you: (a) add 1 more cell, (b) add 2 more bulbs in series. Explain each prediction.",
+        "example_response": "(a) Adding a fourth cell increases the total voltage from 3 units to 4 units. The single bulb gets more voltage, so more current flows and it glows even brighter. However, too much voltage could blow the bulb — each bulb has a maximum safe voltage. (b) Adding 2 more bulbs means the 3 cells' voltage is now shared among 3 bulbs instead of 1. Each bulb gets one-third of the total voltage, so each glows much more dimly than the original single bulb. To keep all three bright, we would need to triple the cells. Note: this simple model works for basic circuits but real circuits are more complex — resistance, wire length and component type all affect behaviour.",
+        "common_errors": [
+          "Not warning that too much voltage can damage components",
+          "Thinking adding components always makes things brighter"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS2-C068",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Drawing simple pictures of circuits, showing the components connected in a loop.",
+        "example_task": "You have built a circuit with a cell, a switch and a bulb. Draw a picture of your circuit.",
+        "example_response": "Child draws a picture showing a battery, wires connecting to a switch, and wires continuing to a bulb and back to the battery, forming a complete loop. All components are drawn as recognisable pictures.",
+        "common_errors": [
+          "Drawing components that are not connected in a complete loop",
+          "Forgetting to include the wires that complete the circuit"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Learning the standard circuit symbols for common components and beginning to use them in place of pictures.",
+        "example_task": "Match these standard symbols to the correct component: cell, bulb, switch (open), switch (closed), buzzer, wire.",
+        "example_response": "Cell: one long line and one short line (long = positive, short = negative). Bulb: circle with a cross inside. Open switch: break in the line (gap). Closed switch: line with no gap. Buzzer: semicircle on the wire. Wire: straight line. These symbols are used by scientists and engineers everywhere so that anyone can read a circuit diagram regardless of language.",
+        "common_errors": [
+          "Confusing the cell symbol with the battery symbol (battery = multiple cells)",
+          "Drawing the bulb symbol without the cross inside"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Drawing and interpreting complete circuit diagrams using standard symbols, and building circuits from diagrams.",
+        "example_task": "Draw a circuit diagram for a circuit with a battery (2 cells), a closed switch, two bulbs and a motor, all in series. Then build the circuit from your diagram.",
+        "example_response": "Circuit diagram: A rectangle of straight lines with components placed along it. Starting from the battery symbol (two pairs of long/short lines), follow the wire to a closed switch symbol, then to the first bulb symbol (circle with cross), then to the second bulb symbol, then to the motor symbol (circle with M inside), and back to the battery. All components are in one continuous loop. I then built the circuit from my diagram, connecting each component in the same order. Both bulbs lit dimly (voltage shared between many components) and the motor turned slowly.",
+        "common_errors": [
+          "Drawing components floating rather than on the wire lines",
+          "Not using a neat rectangular layout with components on the sides"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using circuit diagrams to predict circuit behaviour, identifying faults from diagrams, and understanding why standard symbols are important for scientific communication.",
+        "example_task": "Look at this circuit diagram. It has a battery, a switch, and two bulbs in series, but one bulb is not lighting. The switch is closed. What could be wrong? How would you find the fault?",
+        "example_response": "If the switch is closed and one bulb is not lighting, I need to consider two possibilities: (1) If neither bulb lights, there is a break somewhere in the circuit — a loose connection, a dead battery, or a faulty switch that is not actually completing the circuit. I would check each connection systematically. (2) If one bulb lights but the other does not, the non-working bulb is probably blown (its filament has broken). In a series circuit, a blown bulb should break the circuit for everything — but if the filament has partially melted and is still touching, it might conduct without glowing. I would swap the bulbs' positions: if the same bulb stays dark regardless of position, that bulb is faulty. Circuit diagrams are essential for fault-finding because they show the logical structure — you can trace the path and identify where the problem must be without seeing the physical circuit. This is why electricians, engineers and scientists worldwide use the same standard symbols — they enable clear communication about circuits.",
+        "common_errors": [
+          "Not systematically checking each component and connection",
+          "Forgetting that in a series circuit, one break affects all components"
+        ]
+      }
+    ]
+  }
+]

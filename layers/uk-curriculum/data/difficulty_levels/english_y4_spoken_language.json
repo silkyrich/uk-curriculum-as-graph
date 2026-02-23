@@ -1,0 +1,590 @@
+[
+  {
+    "concept_id": "EN-Y4-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Listening to short spoken instructions or explanations and responding with a simple relevant comment or action.",
+        "example_task": "Listen to the teacher read a short paragraph about hedgehogs. Tell your partner one fact you heard.",
+        "example_response": "Hedgehogs curl into a ball to protect themselves.",
+        "common_errors": [
+          "Repeating the last sentence only rather than identifying a key fact",
+          "Responding with an unrelated personal anecdote about a pet"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Listening to extended speech and responding by summarising the main point before adding a relevant contribution.",
+        "example_task": "Listen to your partner explain why they think the wolf is the villain in the story. Summarise what they said, then add your own view.",
+        "example_response": "You said the wolf is the villain because he tricks the grandmother. I agree, but I also think he is clever because he plans everything carefully.",
+        "common_errors": [
+          "Skipping the summary and jumping straight to own opinion",
+          "Summarising inaccurately by changing the speaker's meaning"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Sustaining attentive listening across formal and informal contexts, identifying main points and supporting details, and responding with relevant questions or comments that build on what was said.",
+        "example_task": "Listen to a classmate's two-minute presentation about the water cycle. Ask one question about something they explained and one about something they did not cover.",
+        "example_response": "You explained evaporation really clearly. My question is: does the water cycle happen faster in hot countries? Also, you didn't mention what happens to water underground — does that count as part of the cycle?",
+        "common_errors": [
+          "Asking a question already answered in the presentation",
+          "Asking only factual recall questions rather than extending understanding"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Listening critically to identify strengths and gaps in an argument, and responding by evaluating what was said rather than simply adding information.",
+        "example_task": "Listen to two classmates debate whether zoos are good for animals. Identify the strongest argument from each side and explain which you found more convincing and why.",
+        "example_response": "Priya's strongest point was that zoos protect endangered species from extinction. Mo's strongest point was that animals in zoos cannot behave naturally. I found Mo more convincing because he gave specific examples of animals pacing in small enclosures.",
+        "common_errors": [
+          "Choosing the argument they personally agree with rather than evaluating the reasoning",
+          "Failing to identify specific arguments, giving a vague response"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Asking simple factual questions about a text or topic using question words (who, what, where, when).",
+        "example_task": "After reading a page about Roman soldiers, write two questions starting with 'Who' or 'What'.",
+        "example_response": "What weapons did Roman soldiers carry? Who was in charge of a Roman army?",
+        "common_errors": [
+          "Writing statements disguised as questions (missing question marks)",
+          "Asking questions already answered directly in the text"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Asking questions that go beyond factual recall, using 'why' and 'how' to probe meaning.",
+        "example_task": "After reading Chapter 3 of your class novel, write one 'why' question and one 'how' question about the main character's actions.",
+        "example_response": "Why did Asha decide to keep the letter secret from her brother? How did the author show that Asha was nervous when she hid it?",
+        "common_errors": [
+          "Defaulting to factual questions despite the 'why/how' prompt",
+          "Asking questions too broad to answer from the text"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Formulating analytical and evaluative questions that deepen understanding, including questions about authorial choices.",
+        "example_task": "After reading a persuasive text about banning plastic bags, write three questions: one about the facts, one about the author's argument, and one evaluating the text.",
+        "example_response": "How many plastic bags end up in the ocean each year? Why does the author use statistics in the second paragraph rather than personal stories? Do you think the argument would be stronger if the author included the other side's view?",
+        "common_errors": [
+          "Writing three factual questions rather than varying the type",
+          "Confusing an evaluative question with a personal preference question"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Generating questions that challenge assumptions in a text or connect ideas across multiple sources, demonstrating critical engagement.",
+        "example_task": "You have read two accounts of the Great Fire of London — one from Samuel Pepys' diary and one from a modern textbook. Write two questions that compare the sources.",
+        "example_response": "Why does Pepys focus on saving his cheese and wine when the modern textbook focuses on how many homes were destroyed? Does the fact that Pepys was writing for himself make his account more or less reliable than the textbook?",
+        "common_errors": [
+          "Asking questions about each text separately rather than comparing them",
+          "Assuming one source is 'right' and the other 'wrong' rather than questioning both"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using a simple dictionary to find the meaning of an unfamiliar word encountered in reading.",
+        "example_task": "Find the word 'reluctant' in the dictionary and write its meaning in your own words.",
+        "example_response": "Reluctant means not wanting to do something, like when you don't really want to go.",
+        "common_errors": [
+          "Copying the dictionary definition word-for-word without understanding it",
+          "Selecting the wrong definition when a word has multiple meanings"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using context clues alongside dictionary skills to work out the meaning of unfamiliar words.",
+        "example_task": "Read the sentence: 'The castle was ancient and dilapidated, with crumbling walls and a collapsed roof.' What does 'dilapidated' mean? How did the rest of the sentence help you work it out?",
+        "example_response": "Dilapidated means falling apart and in bad condition. I worked it out because the sentence says the walls were crumbling and the roof had collapsed, so the castle must be in a bad state.",
+        "common_errors": [
+          "Guessing a meaning that contradicts the context",
+          "Ignoring context clues and only using phonics to guess"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using morphological analysis (roots, prefixes, suffixes) alongside context and dictionaries to build vocabulary independently.",
+        "example_task": "Read the word 'international'. Break it into its parts and explain how each part contributes to the meaning.",
+        "example_response": "Inter- means 'between' and 'national' comes from 'nation', meaning a country. So international means between countries or involving more than one country.",
+        "common_errors": [
+          "Identifying syllables rather than meaningful morphemes",
+          "Knowing the word's meaning but not connecting it to the prefix and root"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Independently applying multiple vocabulary strategies and explaining which strategy was most useful for a particular word.",
+        "example_task": "You encounter the word 'subterranean' in a text about caves. Explain how you would work out its meaning using at least two different strategies.",
+        "example_response": "First, I'd break it into parts: 'sub' means under (like submarine) and 'terra' means earth (like terrain). So subterranean means under the ground. I'd also check the context — the text is about caves, which are underground, so that confirms my guess. The morphology strategy was most useful here because the word parts give you the exact meaning.",
+        "common_errors": [
+          "Relying on only one strategy without cross-checking",
+          "Misidentifying word parts (e.g., thinking 'sub' in 'subject' means 'under' in the same way)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Stating an opinion about a text with a simple reason.",
+        "example_task": "Do you think Jack was right to climb the beanstalk? Give one reason for your answer.",
+        "example_response": "I think Jack was right because his family was very poor and they needed the money.",
+        "common_errors": [
+          "Stating an opinion without any reason",
+          "Giving a reason unrelated to the text ('because I like adventures')"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Justifying an opinion using the structure: opinion, reason, evidence from the text.",
+        "example_task": "Do you think the Iron Man is a hero or a villain? Use evidence from the story to support your answer.",
+        "example_response": "I think the Iron Man is a hero because he saves the world from the space dragon. The evidence is that he challenges the dragon to a contest and wins, which protects everyone on Earth.",
+        "common_errors": [
+          "Providing a reason but no specific evidence from the text",
+          "Retelling the plot instead of building an argument"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Constructing a reasoned argument with multiple points of evidence, acknowledging alternative viewpoints.",
+        "example_task": "Some people think Willy Wonka is kind; others think he is cruel. What is your view? Give at least two reasons with evidence.",
+        "example_response": "I think Wonka is mostly kind but he can be harsh. He is kind because he gives Charlie the whole factory when Charlie's family is poor. However, he seems cruel when he lets the other children get hurt — for example, Augustus falls in the chocolate river and Wonka does not help him. I think Wonka is testing the children and rewards good behaviour, but his methods are extreme.",
+        "common_errors": [
+          "Only arguing one side without acknowledging the other viewpoint",
+          "Using emotional language rather than evidence-based reasoning"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Anticipating and addressing counter-arguments, evaluating the strength of different positions.",
+        "example_task": "A classmate argues that homework should be banned because children need time to play. Write a response that considers their argument before presenting your own view.",
+        "example_response": "I understand the argument that children need time to play, and research does show that play is important for wellbeing. However, I think short, focused homework helps children practise what they learned in class. Without it, some children might forget key skills over the weekend. A compromise would be to limit homework to 20 minutes and allow children to choose how they complete it.",
+        "common_errors": [
+          "Dismissing the opposing argument without engaging with it",
+          "Presenting a compromise that does not actually address the other person's point"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Giving a simple sequential description or explanation using basic time connectives.",
+        "example_task": "Describe how you make a sandwich. Use the words 'first', 'next', 'then' and 'finally'.",
+        "example_response": "First, you get two slices of bread. Next, you spread butter on both slices. Then, you put cheese and ham on one slice. Finally, you put the other slice on top and cut it in half.",
+        "common_errors": [
+          "Missing a key step in the sequence",
+          "Using 'then' for every step rather than varying connectives"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Giving structured spoken descriptions using sensory categories or causal connectives to organise information.",
+        "example_task": "Describe the school playground to someone who has never seen it. Include what you can see, hear and feel.",
+        "example_response": "When you walk into the playground, you can see a large grey tarmac area with painted lines for games and a climbing frame in the corner. You can hear children shouting and a whistle blowing. The ground feels hard under your feet, but the grass area near the fence is soft and sometimes muddy.",
+        "common_errors": [
+          "Including only visual description and ignoring other senses",
+          "Giving a list of objects without describing them"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Giving well-structured spoken explanations adapted for the audience, using precise vocabulary and appropriate level of detail.",
+        "example_task": "Explain to a Year 2 child how a volcano erupts. Use language they would understand.",
+        "example_response": "Deep underground, the rock gets so hot that it melts into liquid called magma. The magma pushes upwards because the pressure builds up, a bit like when you shake a fizzy drink bottle. When the pressure gets too strong, the magma bursts out through the top of the volcano. Once it comes out, we call it lava, and it flows down the sides.",
+        "common_errors": [
+          "Using technical vocabulary without explaining it for the younger audience",
+          "Giving a circular explanation that does not actually explain the process"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Adapting the same explanation for different audiences, varying vocabulary, detail and structure appropriately.",
+        "example_task": "Explain how the water cycle works twice: once for a Year 1 child and once for a parent visiting the school.",
+        "example_response": "For Year 1: The sun heats up water in puddles, rivers and the sea. The water turns into tiny invisible drops that float up into the sky and make clouds. When the clouds get heavy, the water falls back down as rain, and it starts all over again. For a parent: The water cycle is driven by solar energy, which causes evaporation from surface water. Water vapour rises, cools and condenses to form clouds. Precipitation then returns water to the earth's surface, where it collects in bodies of water or percolates into groundwater, and the cycle continues.",
+        "common_errors": [
+          "Using the same register for both audiences",
+          "Oversimplifying the parent version or overcomplicating the child version"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Taking turns in a paired conversation, listening to a partner and responding relevantly.",
+        "example_task": "With your partner, discuss your favourite book. Take turns: one person speaks for 30 seconds, then the other responds.",
+        "example_response": "Partner A: My favourite book is The Worst Witch because Mildred is funny and I like the magic school. Partner B: I like that book too. My favourite part is when her cat falls off the broomstick. I also like Diary of a Wimpy Kid because it makes me laugh.",
+        "common_errors": [
+          "Interrupting before the partner has finished",
+          "Responding with something unrelated to what the partner said"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Participating in a group discussion, staying on topic and building on others' contributions.",
+        "example_task": "In your group of four, discuss: Should children have a say in school rules? Each person must build on what the previous person said.",
+        "example_response": "Person 1: I think children should help make rules because we know what is fair. Person 2: I agree with that, and I'd add that if we help make the rules, we are more likely to follow them. Person 3: That's a good point, but some rules like fire safety need to be made by adults because children might not know the dangers.",
+        "common_errors": [
+          "Repeating what someone else said without adding anything new",
+          "Ignoring others' points and introducing a completely new topic"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Taking on specific roles within group discussions (chairperson, reporter) and managing the group process to ensure equitable participation.",
+        "example_task": "As the chairperson of your group, lead a discussion about which charity the class should support. Make sure everyone contributes and summarise the group's decision.",
+        "example_response": "Let's hear from everyone. Amir, what do you think? [listens] Thank you. Fatima, do you agree or have a different idea? [listens] Good point. Tom, you've been quiet — what's your view? [listens] So we've heard three suggestions: the food bank, the animal shelter, and the children's hospital. It sounds like most of us prefer the food bank because it helps people in our local area. Shall we vote?",
+        "common_errors": [
+          "Dominating the discussion rather than facilitating it",
+          "Not noticing that quieter members have not contributed"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Managing disagreement constructively within a group, synthesising different viewpoints to reach a reasoned conclusion.",
+        "example_task": "Your group cannot agree on the best ending for your shared story. Lead the group to a decision that takes account of everyone's ideas.",
+        "example_response": "We have three different ideas for the ending. Let's look at what each one does well. Priya's ending is exciting because of the chase scene. Oscar's ending is surprising because the treasure turns out to be a letter. Zara's ending ties up the friendship theme. Could we combine them? What if the chase leads to finding the letter, and the letter is about friendship? That way everyone's idea is included.",
+        "common_errors": [
+          "Forcing a vote rather than seeking consensus",
+          "Dismissing ideas rather than finding connections between them"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using tentative language to share an idea during discussion without needing to be certain.",
+        "example_task": "Look at this picture of a mysterious door in a forest. Share your ideas about what might be behind it. Start your sentences with 'Maybe...' or 'I wonder if...'",
+        "example_response": "Maybe it leads to an underground kingdom. I wonder if a witch lives there because it looks old and hidden.",
+        "common_errors": [
+          "Stating ideas as definite facts rather than possibilities",
+          "Waiting for the teacher to give the 'right' answer instead of speculating"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Building on others' tentative ideas using 'Yes, and...' to develop shared thinking.",
+        "example_task": "Your partner suggests that the Vikings might have been scared when they first sailed to Britain. Build on their idea.",
+        "example_response": "Yes, and they might also have been excited because they hoped to find treasure. Perhaps some Vikings were brave leaders but the ordinary sailors were more nervous because they didn't know what they'd find.",
+        "common_errors": [
+          "Replacing the partner's idea with a completely different one rather than building on it",
+          "Simply agreeing without developing the idea further"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using exploratory talk to develop understanding through sustained speculation, hypothesising and reasoning aloud.",
+        "example_task": "In your group, discuss: Why do you think the author chose to tell the story from the dog's point of view? Think aloud together — there is no single right answer.",
+        "example_response": "Perhaps the author chose the dog's point of view because dogs notice different things to humans — they focus on smells and sounds. It could be that the author wanted us to see the family's problems through innocent eyes, so we feel sympathy for them. I wonder if it's also because the dog can't understand everything, so the reader has to work things out too — that makes it more interesting.",
+        "common_errors": [
+          "Rushing to a single conclusion rather than exploring multiple possibilities",
+          "Treating exploratory talk as unstructured chat without building ideas"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using exploratory talk to test and refine ideas, changing position when presented with better reasoning.",
+        "example_task": "Discuss this ethical dilemma: A character finds a wallet with £50 in it. Should they keep it or hand it in? Be willing to change your mind if someone makes a convincing point.",
+        "example_response": "At first I thought they should keep it because the owner might never come back. But Aisha made a good point — if I lost £50, I'd want someone to hand it in. Actually, I think the best thing would be to hand it in to the police because they have a system for returning lost property. I changed my mind because Aisha helped me think about it from the owner's perspective.",
+        "common_errors": [
+          "Refusing to change position despite hearing stronger arguments",
+          "Changing position without explaining why the new reasoning is more convincing"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Speaking clearly and audibly in front of the class, projecting voice so all can hear.",
+        "example_task": "Stand at the front of the class and read your three sentences about your weekend. Make sure the person at the back can hear you.",
+        "example_response": "At the weekend, I went to the park with my family. We played football and had a picnic. My little sister fell asleep on the blanket.",
+        "common_errors": [
+          "Speaking too quietly for the back row to hear",
+          "Rushing through the sentences without pausing between them"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using Standard English verb forms in formal spoken contexts while maintaining audibility and fluency.",
+        "example_task": "Retell what happened in yesterday's science experiment using Standard English. Remember to use 'we were' not 'we was' and 'I saw' not 'I seen'.",
+        "example_response": "Yesterday, we were investigating how different materials conduct heat. I saw that the metal spoon became hot quickly, but the wooden spoon did not. We were surprised that the plastic spoon hardly changed at all.",
+        "common_errors": [
+          "Reverting to non-standard forms when concentrating on content ('we done the experiment')",
+          "Overcorrecting and producing awkward phrasing"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Speaking fluently with Standard English in formal contexts, adapting vocabulary and tone for the situation.",
+        "example_task": "Present your book recommendation to the class as if you were speaking on a school radio show. Use Standard English and a clear, engaging tone.",
+        "example_response": "Good morning, listeners. Today I would like to recommend Varjak Paw by SF Said. This is a thrilling adventure about a Mesopotamian Blue kitten who must leave his home to save his family. What I found most exciting was the way Varjak learns the mysterious Way of Jalal. I would recommend this book to anyone who enjoys stories about courage and discovery.",
+        "common_errors": [
+          "Mixing informal register with formal presentation style",
+          "Speaking in a monotone 'presentation voice' that sounds unnatural"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Consciously switching between Standard English and informal speech, explaining when and why each is appropriate.",
+        "example_task": "Say the same thing in two ways: first, how you would tell your friend about a problem at lunchtime, and second, how you would explain it to the head teacher. Then explain what you changed and why.",
+        "example_response": "To my friend: 'Miss Davis weren't happy cos we was messing about and she give us all a warning.' To the head teacher: 'Miss Davis was concerned because some of us were not following the rules during the lesson, and she gave the class a formal warning.' I changed 'weren't' to 'was not', 'cos' to 'because', 'we was' to 'we were', and 'give' to 'gave'. I used Standard English for the head teacher because it is a formal situation and shows respect.",
+        "common_errors": [
+          "Believing Standard English is always 'better' rather than understanding it as appropriate for formal contexts",
+          "Unable to identify specific differences between the two versions"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Participating in simple role play or reading aloud from a play script with basic expression.",
+        "example_task": "Read aloud the part of the wolf in this scene from a play script of Little Red Riding Hood. Try to sound like the wolf.",
+        "example_response": "[In a deep, slow voice] 'What big eyes you have, Grandmother.' [Pauses, then in a louder voice] 'All the better to SEE you with, my dear!'",
+        "common_errors": [
+          "Reading in a flat monotone without any character voice",
+          "Focusing on volume alone rather than expression and tone"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Sustaining a role in improvisation or prepared performance, making deliberate choices about voice and movement.",
+        "example_task": "Improvise a scene where you are a shopkeeper who has just discovered that a customer has accidentally broken an expensive vase. Stay in character for one minute.",
+        "example_response": "[Gasps and rushes over] 'Oh no, oh no! That was a one-of-a-kind vase from China! [Wrings hands] I've had that in my shop for twenty years and nobody has ever... [Takes a deep breath and speaks more calmly] Right. Well. Accidents happen. But we will need to talk about how this is going to be sorted out, won't we?'",
+        "common_errors": [
+          "Breaking character after a few seconds when unsure what to say",
+          "Playing for laughs rather than exploring the character's feelings"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Performing poems, play scripts or own compositions with deliberate use of intonation, pace, volume and gesture to convey meaning.",
+        "example_task": "Prepare and perform the poem 'The Tyger' by William Blake (first two verses). Make deliberate choices about pace and volume to convey the sense of wonder and fear.",
+        "example_response": "[Slowly, with emphasis] 'Tyger Tyger, [pause] burning bright, / In the forests of the night; [volume drops to near-whisper] What immortal hand or eye, / Could frame thy fearful symmetry?' [Pace quickens slightly for verse 2, with rising pitch to convey growing awe]",
+        "common_errors": [
+          "Performing at one speed and volume throughout",
+          "Memorising without understanding the poem's meaning, leading to misplaced emphasis"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Directing others in a performance, making and justifying choices about how a text should be delivered.",
+        "example_task": "You are the director. Your group is performing a scene from your class novel. Tell each actor how to deliver their lines and explain why.",
+        "example_response": "Amir, when you say 'I'm not afraid', say it quietly and slowly — because the character actually IS afraid, so a quiet voice shows he's trying to convince himself. Zara, you should pause before your line and look at the audience, because your character knows something the others don't, and the pause builds tension. Tom, deliver your line quickly and loudly because your character is panicking.",
+        "common_errors": [
+          "Giving vague direction ('say it better') rather than specific vocal or physical choices",
+          "Not connecting performance choices to the meaning of the text"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Making eye contact with the audience and speaking at an appropriate volume during a short presentation.",
+        "example_task": "Present three facts about your favourite animal to the class. Look up from your notes at least three times.",
+        "example_response": "[Looks up] 'Dolphins are mammals, not fish. [Looks up] They can hold their breath for up to 10 minutes. [Looks up] Baby dolphins are called calves.'",
+        "common_errors": [
+          "Reading directly from notes without looking up",
+          "Speaking too quietly for the room"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using a clear opening hook and organising a presentation with signpost phrases to maintain listener interest.",
+        "example_task": "Present your research about the Romans to the class. Start with a surprising fact to hook the audience, and use phrases like 'My first point is...' and 'Moving on to...'",
+        "example_response": "'Did you know that Roman soldiers had to march 30 kilometres every single day? [Pause] Today I'm going to tell you three amazing things about Roman soldiers. My first point is about their armour... Moving on to their weapons... Finally, I want to tell you about their food, which might surprise you...'",
+        "common_errors": [
+          "Starting with 'My presentation is about...' rather than an engaging hook",
+          "Forgetting to signpost, so the audience loses track of the structure"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Sustaining audience engagement throughout a presentation by varying pace, tone and volume, and responding to audience reactions.",
+        "example_task": "Give a two-minute presentation about an issue you care about. Vary your delivery to keep the audience interested and end with a call to action.",
+        "example_response": "[Starts with quiet, serious tone] 'Every year, 8 million tonnes of plastic enter our oceans.' [Pauses for effect, then pace increases with energy] 'But here's the good news — we can do something about it, starting right here in our school.' [Slows down for emphasis] 'I am asking each of you to do just one thing: bring a reusable water bottle every day.'",
+        "common_errors": [
+          "Speaking in a monotone throughout",
+          "Including too much information, causing the audience to switch off"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Adapting a presentation in real time based on audience response, using rhetorical techniques to persuade or engage.",
+        "example_task": "Present your argument for longer break times to a panel of teachers. Use at least two rhetorical techniques (rhetorical question, repetition, direct address).",
+        "example_response": "'How would you feel if you had to concentrate for three hours with only a fifteen-minute break? [Rhetorical question] We all know that exercise helps us think. We all know that fresh air improves concentration. We all know that a tired child does not learn well. [Repetition] So I am asking you — yes, you, our teachers who care about our learning — [direct address] to give us the break time we need to be the best learners we can be.'",
+        "common_errors": [
+          "Using rhetorical techniques mechanically without connecting them to the argument",
+          "Ignoring the audience's reactions (e.g., confusion) and ploughing through the script"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying that people can have different opinions about the same topic.",
+        "example_task": "Read two short reviews of the same book — one positive and one negative. What is different about what the two reviewers think?",
+        "example_response": "The first reviewer thinks the book is exciting because of the plot twists. The second reviewer thinks the book is boring because the characters are not interesting.",
+        "common_errors": [
+          "Only describing one viewpoint",
+          "Saying one reviewer is 'right' and the other is 'wrong'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Listening to different viewpoints in a discussion and identifying points of agreement and disagreement.",
+        "example_task": "After a class discussion about whether school uniform should be compulsory, list one point where most people agreed and one where people disagreed.",
+        "example_response": "Most people agreed that uniform should be comfortable and affordable. People disagreed about whether uniform stops bullying — some said it does because everyone looks the same, but others said children still get bullied about other things.",
+        "common_errors": [
+          "Only noting points of disagreement",
+          "Reporting what was said without identifying where views converged or diverged"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Evaluating different viewpoints by considering the quality of reasoning and evidence behind each one.",
+        "example_task": "Two characters in your book disagree about whether to cross the dangerous bridge. Evaluate both viewpoints: whose reasoning is stronger and why?",
+        "example_response": "Maya argues they should cross because time is running out and they have no other route. Finn argues they should wait and find another way because the bridge looks unsafe. I think Maya's reasoning is weaker because she is reacting to panic rather than thinking clearly. Finn's reasoning is stronger because he considers the evidence — the rotten planks — and thinks about the consequences.",
+        "common_errors": [
+          "Choosing the viewpoint they personally prefer rather than evaluating the reasoning",
+          "Evaluating based on who they like more as a character"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Recognising that a well-reasoned viewpoint can be wrong and a poorly-argued viewpoint can be right, separating the quality of the argument from the truth of the conclusion.",
+        "example_task": "A classmate argues: 'We should all eat vegetables because my mum says so.' Another argues: 'We shouldn't eat vegetables because they taste bad.' Which argument is better reasoned, and does that make it true?",
+        "example_response": "Neither argument is well-reasoned. The first uses authority ('my mum says so') but doesn't explain why. The second uses personal preference ('they taste bad') which isn't evidence. However, the first conclusion is actually correct — vegetables are healthy — even though the argument is weak. This shows that having the right answer isn't the same as having a good argument.",
+        "common_errors": [
+          "Assuming a true conclusion must have a good argument behind it",
+          "Judging the argument based on whether they agree with the conclusion"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y4-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising that you speak differently to friends than to teachers.",
+        "example_task": "How would you ask a friend for a pencil? How would you ask a teacher? Write both versions.",
+        "example_response": "To a friend: 'Can I borrow your pencil?' To a teacher: 'Excuse me, Miss, please could I borrow a pencil?'",
+        "common_errors": [
+          "Using the same language for both",
+          "Adding 'please' as the only difference"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Adjusting vocabulary and tone for a specific audience in a short spoken or written task.",
+        "example_task": "Write a text message to your friend about Sports Day, then write a notice about it for the school newsletter.",
+        "example_response": "Text: 'Sports day was sick!! I won the relay and nearly beat yr 5! 😄' Newsletter: 'Year 4 had an excellent Sports Day on Friday. The highlight was the relay race, which was won by Class 4B in a closely contested final.'",
+        "common_errors": [
+          "Making the newsletter too casual",
+          "Making the text message artificially formal"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Selecting and using appropriate register for different communicative purposes, understanding that register involves vocabulary, grammar, tone and level of detail.",
+        "example_task": "Write a complaint about a broken toy. First as you would tell your friend, then as a formal letter to the toy company.",
+        "example_response": "To friend: 'I'm so annoyed — I got this robot for my birthday and the arm fell off the first day. It's rubbish!' Formal letter: 'Dear Sir or Madam, I am writing to express my disappointment with the Robot Explorer 3000, purchased on 15th March. On the first day of use, the left arm detached from the body. I would be grateful if you could arrange a replacement or refund.'",
+        "common_errors": [
+          "Using informal grammar in the formal version ('I got' instead of 'I purchased')",
+          "Not adjusting sentence structure — only changing individual words"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analysing how writers manipulate register for effect and explaining why a register shift might be deliberate.",
+        "example_task": "In this extract, the author suddenly switches from formal description to informal dialogue. Why do you think the author made this choice? What effect does it create?",
+        "example_response": "The formal description creates a serious, tense atmosphere. When the character suddenly says 'Well, that's just brilliant, isn't it?' in an informal, sarcastic tone, it surprises the reader and shows the character is actually scared but using humour to cope. The register shift makes the character feel more real and relatable.",
+        "common_errors": [
+          "Identifying the register change but not explaining its effect",
+          "Assuming register shifts are mistakes rather than deliberate choices"
+        ]
+      }
+    ]
+  }
+]

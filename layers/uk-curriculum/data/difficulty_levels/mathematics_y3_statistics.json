@@ -1,0 +1,100 @@
+[
+  {
+    "concept_id": "MA-Y3-C040",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading a pictogram where each symbol represents 1 item, and reading a bar chart with a scale of 1.",
+        "example_task": "This pictogram shows favourite fruits. Each apple symbol = 1 child. How many children chose banana?",
+        "example_response": "There are 5 banana symbols, so 5 children chose banana.",
+        "common_errors": [
+          "Miscounting the symbols",
+          "Not reading the key before interpreting the pictogram"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading a pictogram where each symbol represents 2 items, including interpreting half-symbols, and reading bar charts with a scale of 2 or 5.",
+        "example_task": "In this pictogram, each star symbol = 2 votes. The row for 'Pizza' shows 4 full stars and a half star. How many votes for Pizza?",
+        "example_response": "4 full stars = 4 x 2 = 8 votes. Half star = 1 vote. Total = 9 votes.",
+        "common_errors": [
+          "Counting the symbols as the value (saying 4.5 votes instead of 9)",
+          "Ignoring the half-symbol (saying 8 votes)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading and interpreting scaled bar charts and pictograms where each unit represents 5 or 10, and presenting data in a bar chart with a chosen scale.",
+        "example_task": "A bar chart shows the number of books read. The scale goes up in 5s. The bar for 'March' reaches to the line between 15 and 20. How many books were read in March?",
+        "example_response": "The bar is halfway between 15 and 20. Halfway between 15 and 20 is 17 or 18. Looking carefully, it appears to be at the midpoint, so about 17 or 18 books.",
+        "common_errors": [
+          "Reading the value as exactly 15 or 20 (not noticing the bar is between the lines)",
+          "Not being able to determine values between scale markings"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Choosing an appropriate scale for data and creating a bar chart or pictogram, justifying the scale choice.",
+        "example_task": "These are the results of a survey: Red 35, Blue 20, Green 15, Yellow 30. Draw a bar chart. What scale will you use? Why?",
+        "example_response": "I will use a scale of 5 because all the values are multiples of 5, which makes the bars easy to draw accurately. The y-axis goes from 0 to 35 in steps of 5.",
+        "common_errors": [
+          "Choosing a scale of 1 (making the chart unnecessarily tall for values up to 35)",
+          "Choosing a scale of 10 and being unable to plot 15 or 35 accurately"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C041",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Answering one-step questions by reading a single value directly from a bar chart, pictogram or table.",
+        "example_task": "A bar chart shows favourite colours. How many children chose blue?",
+        "example_response": "The bar for blue reaches 12 on the scale. 12 children chose blue.",
+        "common_errors": [
+          "Reading the wrong bar",
+          "Misreading the scale (saying 10 when the bar is at 12)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Answering 'how many more' or 'how many fewer' questions that require reading two values and subtracting.",
+        "example_task": "The bar chart shows: Football 25, Swimming 15, Tennis 10. How many more children chose football than tennis?",
+        "example_response": "Football: 25. Tennis: 10. 25 - 10 = 15. Fifteen more children chose football.",
+        "common_errors": [
+          "Adding instead of subtracting (25 + 10 = 35)",
+          "Reading the correct values but choosing the wrong operation"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving two-step questions from data, such as finding a total and then comparing, or combining categories before answering.",
+        "example_task": "A table shows pets: Dogs 18, Cats 12, Fish 8, Rabbits 7. How many more children have dogs or cats than fish or rabbits?",
+        "example_response": "Dogs + Cats = 18 + 12 = 30. Fish + Rabbits = 8 + 7 = 15. Difference: 30 - 15 = 15 more.",
+        "common_errors": [
+          "Only completing the first step (saying 30 and 15 but not finding the difference)",
+          "Comparing only one pair instead of the combined categories"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Interpreting data to answer reasoning and explanation questions, including 'is it true that...' and 'explain why'.",
+        "example_task": "A pictogram shows: Monday 20, Tuesday 15, Wednesday 25, Thursday 10, Friday 30. A pupil says 'More than half the total ice creams were sold on Wednesday and Friday.' Is this true? Show your working.",
+        "example_response": "Total = 20 + 15 + 25 + 10 + 30 = 100. Wednesday + Friday = 25 + 30 = 55. Half of 100 = 50. 55 > 50, so yes, more than half were sold on Wednesday and Friday.",
+        "common_errors": [
+          "Not calculating the total first",
+          "Finding half of the wrong number (half of 55 instead of half of 100)"
+        ]
+      }
+    ]
+  }
+]

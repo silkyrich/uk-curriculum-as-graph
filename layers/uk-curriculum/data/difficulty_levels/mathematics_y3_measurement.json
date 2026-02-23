@@ -1,0 +1,285 @@
+[
+  {
+    "concept_id": "MA-Y3-C030",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Measuring objects using a ruler (cm and mm) and a set of kitchen scales (g/kg), recording the measurement in the correct unit.",
+        "example_task": "Measure this pencil to the nearest centimetre. Weigh this bag of rice on the scales.",
+        "example_response": "The pencil is 14 cm long. The rice weighs 500 g.",
+        "common_errors": [
+          "Not starting from zero on the ruler (measuring from 1 instead of 0)",
+          "Reading the wrong scale line on the kitchen scales"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recording measurements in mixed units and knowing simple equivalences (1 m = 100 cm, 1 kg = 1000 g, 1 l = 1000 ml).",
+        "example_task": "A table is 1 m and 35 cm long. Write this in centimetres only.",
+        "example_response": "1 m 35 cm = 135 cm because 1 m = 100 cm, so 100 + 35 = 135 cm.",
+        "common_errors": [
+          "Writing 1 m 35 cm = 35 cm (ignoring the metres)",
+          "Converting incorrectly: 1 m 35 cm = 1035 cm (adding 1000 instead of 100)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Adding and subtracting measurements in mixed units, converting to a single unit first.",
+        "example_task": "A bag weighs 2 kg 400 g. Another bag weighs 1 kg 750 g. What is their total weight?",
+        "example_response": "2 kg 400 g + 1 kg 750 g: 400 g + 750 g = 1150 g = 1 kg 150 g. 2 kg + 1 kg + 1 kg 150 g = 4 kg 150 g.",
+        "common_errors": [
+          "Adding without converting: 2 kg 400 g + 1 kg 750 g = 3 kg 1150 g (not regrouping the grams)",
+          "Forgetting to add the extra kilogram from the grams total"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving multi-step measurement problems involving comparison and conversion between units.",
+        "example_task": "A ribbon is 2 m 30 cm long. I cut off 85 cm. How much is left? Give your answer in metres and centimetres.",
+        "example_response": "2 m 30 cm = 230 cm. 230 - 85 = 145 cm = 1 m 45 cm.",
+        "common_errors": [
+          "Subtracting without converting: 2 m 30 cm - 85 cm = 2 m -55 cm (negative centimetres)",
+          "Converting back incorrectly: 145 cm = 14 m 5 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C031",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Tracing around a shape on squared paper and counting the unit lengths along each side to find the perimeter.",
+        "example_task": "A rectangle on squared paper is 4 squares long and 2 squares wide. Trace around the outside and count the units.",
+        "example_response": "Top: 4, Right: 2, Bottom: 4, Left: 2. Perimeter = 4 + 2 + 4 + 2 = 12 units.",
+        "common_errors": [
+          "Counting the squares inside (area) instead of the units around the edge",
+          "Forgetting to count one side (getting 4 + 2 + 4 = 10)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Measuring the sides of simple shapes with a ruler and adding the lengths to find the perimeter.",
+        "example_task": "Measure each side of this triangle with a ruler and find its perimeter.",
+        "example_response": "Sides: 5 cm, 4 cm, 3 cm. Perimeter = 5 + 4 + 3 = 12 cm.",
+        "common_errors": [
+          "Measuring inaccurately (not aligning the ruler correctly)",
+          "Adding only two sides and missing the third"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Calculating the perimeter of rectilinear shapes where some side lengths are given and others must be deduced.",
+        "example_task": "A rectangle has a length of 8 cm and a width of 3 cm. What is its perimeter?",
+        "example_response": "Perimeter = 8 + 3 + 8 + 3 = 22 cm. Or: 2 x (8 + 3) = 2 x 11 = 22 cm.",
+        "common_errors": [
+          "Adding only length + width (8 + 3 = 11 cm) and not doubling",
+          "Confusing perimeter with area (8 x 3 = 24)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Finding the perimeter of compound rectilinear shapes (L-shapes) where missing side lengths must be calculated.",
+        "example_task": "An L-shape has outer dimensions 6 cm by 4 cm, with a 2 cm by 2 cm square cut from one corner. Find the perimeter.",
+        "example_response": "The L-shape has 6 sides. Working around the outside: 6 + 2 + 4 + 2 + 2 + 4 = 20 cm. The missing sides are 6-2=4 and 4-2=2.",
+        "common_errors": [
+          "Not calculating the missing side lengths correctly",
+          "Missing a side when counting around the L-shape"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C032",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Adding amounts of money using play coins and notes in a shopkeeper role-play.",
+        "example_task": "A toy costs £2.35. You have a £2 coin, a 20p coin, a 10p coin and a 5p coin. Do you have enough?",
+        "example_response": "£2 + 20p + 10p + 5p = £2.35. Yes, that is exactly enough.",
+        "common_errors": [
+          "Not converting pounds and pence correctly (thinking £2 and 35p is £2.035)",
+          "Miscounting coins"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Adding and subtracting money amounts using the pounds and p notation, with pictorial support.",
+        "example_task": "A book costs £3.75. A pen costs £1.50. What is the total cost?",
+        "example_response": "£3.75 + £1.50: 75p + 50p = 125p = £1.25. £3 + £1 + £1.25 = £5.25.",
+        "common_errors": [
+          "Writing £3.75 + £1.50 = £4.125 (treating as decimals without regrouping pence)",
+          "Forgetting to carry over 100p as £1"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Calculating change from a given amount using counting up (complementary addition).",
+        "example_task": "An apple costs £1.37. You pay with a £2 coin. How much change do you get?",
+        "example_response": "Count up from £1.37: +3p to £1.40, +60p to £2.00. Change = 63p.",
+        "common_errors": [
+          "Subtracting incorrectly: £2.00 - £1.37 = £1.63 (forgetting to borrow)",
+          "Giving change as 73p (confusing the pence calculation)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving multi-step money problems involving total cost, change, and comparison.",
+        "example_task": "Jack buys 3 pencils at 45p each and a rubber for 68p. He pays with £5. How much change does he receive?",
+        "example_response": "3 x 45p = £1.35. £1.35 + 68p = £2.03. Change: £5.00 - £2.03 = £2.97.",
+        "common_errors": [
+          "Not converting pence to pounds for the total (getting 135 + 68 = 203 but writing £2.30)",
+          "Making errors in the subtraction from £5.00"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C033",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Matching Roman numerals I to XII with Hindu-Arabic numerals 1 to 12 using a clock face for reference.",
+        "example_task": "Look at this clock face. What number does VI represent? What about IX?",
+        "example_response": "VI = 6. IX = 9.",
+        "common_errors": [
+          "Confusing IV (4) and VI (6)",
+          "Reading IX as 11 (thinking I + X = 11)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading the time from a Roman numeral clock face to the nearest 5 minutes.",
+        "example_task": "The hour hand is between VIII and IX, and the minute hand points to III. What time is it?",
+        "example_response": "VIII = 8 and III = 15 minutes. The time is 8:15 or quarter past eight.",
+        "common_errors": [
+          "Reading the minute hand position as the number itself (saying 3 minutes instead of 15)",
+          "Confusing the hour and minute hands"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading any time to the nearest minute from an analogue clock with Roman numerals, writing in 12-hour notation.",
+        "example_task": "The hour hand is just past XI and the minute hand points to the 7th minute mark past VI. What time is it?",
+        "example_response": "XI = 11. The minute hand is at 30 + 7 = 37 minutes. The time is 11:37.",
+        "common_errors": [
+          "Miscounting the individual minute marks between the 5-minute intervals",
+          "Reading XI as 9 (confusion between IX and XI)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C034",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Understanding that a.m. means morning and p.m. means afternoon/evening, and identifying times as a.m. or p.m.",
+        "example_task": "Is 3 o'clock in the afternoon written as 3 a.m. or 3 p.m.? What about 8 o'clock in the morning?",
+        "example_response": "3 o'clock in the afternoon is 3 p.m. 8 o'clock in the morning is 8 a.m.",
+        "common_errors": [
+          "Mixing up a.m. and p.m.",
+          "Not knowing whether 12 noon is a.m. or p.m."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Converting simple times between 12-hour and 24-hour format using the rule 'add 12 for p.m.'",
+        "example_task": "Convert these times to 24-hour format: 2:30 p.m., 9:15 a.m., 6:00 p.m.",
+        "example_response": "2:30 p.m. = 14:30. 9:15 a.m. = 09:15. 6:00 p.m. = 18:00.",
+        "common_errors": [
+          "Not adding 12 for p.m. times (writing 2:30 p.m. as 02:30)",
+          "Adding 12 to a.m. times too (writing 9:15 a.m. as 21:15)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Converting fluently between 12-hour and 24-hour notation in both directions, including noon and midnight.",
+        "example_task": "Convert to 12-hour time: 17:45, 00:30, 12:00. Convert to 24-hour time: 11:50 p.m.",
+        "example_response": "17:45 = 5:45 p.m. 00:30 = 12:30 a.m. 12:00 = 12:00 p.m. (noon). 11:50 p.m. = 23:50.",
+        "common_errors": [
+          "Writing 00:30 as 12:30 p.m. (confusing midnight with noon)",
+          "Subtracting 12 from times before 13:00 (writing 12:00 as 0:00)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using 24-hour times in context to solve problems, such as reading timetables.",
+        "example_task": "A bus leaves at 15:45 and arrives at 16:20. How long is the journey? Another bus leaves at 09:50 and takes the same amount of time. When does it arrive?",
+        "example_response": "15:45 to 16:20: from 15:45 to 16:00 is 15 minutes, from 16:00 to 16:20 is 20 minutes. Total = 35 minutes. Second bus: 09:50 + 35 minutes = 10:25.",
+        "common_errors": [
+          "Subtracting as if times are normal numbers: 16:20 - 15:45 = 0:75 = 75 minutes",
+          "Adding 35 minutes to 09:50 incorrectly (getting 09:85 instead of 10:25)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C035",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Comparing the durations of two events by looking at a timeline or counting on from start to end time on a clock.",
+        "example_task": "Maths starts at 9:00 and finishes at 10:00. PE starts at 1:30 and finishes at 2:15. Which lesson is longer?",
+        "example_response": "Maths is 1 hour = 60 minutes. PE is 45 minutes. Maths is longer.",
+        "common_errors": [
+          "Saying PE is longer because 2:15 is a bigger number than 10:00",
+          "Not knowing that 1 hour = 60 minutes"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculating the duration between two times using counting on, where the duration does not cross an hour boundary.",
+        "example_task": "A film starts at 3:20 and finishes at 3:55. How long is the film?",
+        "example_response": "From 3:20 to 3:55 = 35 minutes.",
+        "common_errors": [
+          "Subtracting 55 - 20 = 35 (correct here but the method will fail across an hour boundary)",
+          "Saying 25 minutes (miscounting the gap)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Calculating durations that cross hour boundaries using the bridging-through-the-hour strategy.",
+        "example_task": "A journey starts at 2:45 and ends at 4:10. How long is the journey?",
+        "example_response": "2:45 to 3:00 = 15 minutes. 3:00 to 4:00 = 60 minutes. 4:00 to 4:10 = 10 minutes. Total = 85 minutes = 1 hour 25 minutes.",
+        "common_errors": [
+          "Treating time as base-10: 4:10 - 2:45 = 1.65 = 1 hour 65 minutes",
+          "Forgetting to add all the parts together"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving multi-step duration problems involving conversions between seconds, minutes and hours.",
+        "example_task": "A race takes 2 minutes and 45 seconds. Another race takes 195 seconds. Which race is longer? By how many seconds?",
+        "example_response": "2 minutes 45 seconds = 120 + 45 = 165 seconds. 195 seconds is longer. 195 - 165 = 30 seconds longer.",
+        "common_errors": [
+          "Converting 2 minutes as 200 seconds instead of 120 seconds",
+          "Saying both races are the same because 2 minutes 45 seconds 'looks like' 245 which is bigger than 195"
+        ]
+      }
+    ]
+  }
+]

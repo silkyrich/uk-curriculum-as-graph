@@ -1,0 +1,274 @@
+[
+  {
+    "concept_id": "CO-KS12-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Following a set of step-by-step instructions (an algorithm) to complete a task, understanding that the order matters.",
+        "example_task": "Follow these instructions to draw a house: 1. Draw a square. 2. Draw a triangle on top. 3. Draw a rectangle door. 4. Draw two square windows. Did the order matter?",
+        "example_response": "I followed each step in order and drew the house. The order matters because I needed the square first to know where to put the triangle roof on top.",
+        "common_errors": [
+          "Skipping steps or doing them out of order",
+          "Not understanding that algorithms must be followed precisely"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Writing simple algorithms as a sequence of instructions for a familiar task, identifying when instructions are ambiguous or incomplete.",
+        "example_task": "Write instructions for making a jam sandwich that a robot could follow exactly. Test your instructions with a partner.",
+        "example_response": "1. Pick up the bread bag. 2. Take out two slices. 3. Put them on the plate. 4. Pick up the knife. 5. Open the jam jar. 6. Put the knife in the jam. 7. Spread jam on one slice. 8. Put the other slice on top. When my partner tested them, they asked 'which side up?' for step 3 — I needed to add 'flat side up'.",
+        "common_errors": [
+          "Writing instructions that are too vague for a computer to follow precisely",
+          "Assuming the reader knows things that are not explicitly stated"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Designing algorithms to solve problems, comparing different approaches and evaluating their efficiency.",
+        "example_task": "Write two different algorithms for sorting five numbered cards into order. Which is more efficient?",
+        "example_response": "Algorithm 1 (Checking pairs): Compare each pair of cards from left to right. If they are in the wrong order, swap them. Repeat until no swaps are needed. Algorithm 2 (Finding smallest): Find the smallest card and put it first. Find the next smallest and put it second. Continue until all are sorted. Algorithm 2 requires fewer comparisons for this small set, making it more efficient. But Algorithm 1 is simpler to understand.",
+        "common_errors": [
+          "Writing algorithms that only work for the specific example, not the general case",
+          "Not being able to trace through an algorithm step by step to check it works"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analysing the efficiency of algorithms, predicting how they perform with larger inputs, and explaining the concepts of algorithm design to others.",
+        "example_task": "If Algorithm 1 (checking pairs) takes 10 comparisons to sort 5 cards, roughly how many might it take for 10 cards? Why does it take longer?",
+        "example_response": "For 10 cards, it could take many more comparisons — maybe around 45 or more — because each pass through the list compares 9 pairs, and you might need many passes. The number of comparisons grows much faster than the number of cards. This is why computer scientists care about efficiency — a slow algorithm that works fine for 5 items might be too slow for 1000 items.",
+        "common_errors": [
+          "Assuming the time doubles when the input doubles (it often grows faster)",
+          "Not connecting algorithm efficiency to real-world computing problems"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "CO-KS12-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Creating a simple program using sequence — a series of instructions executed in order — using a block-based programming environment.",
+        "example_task": "Program the sprite to walk forward 100 steps, say 'Hello!' and then turn around.",
+        "example_response": "I used three blocks: 'move 100 steps', 'say Hello! for 2 seconds', 'turn 180 degrees'. The sprite walked, spoke and turned around.",
+        "common_errors": [
+          "Putting blocks in the wrong order so the sprite turns before walking",
+          "Not connecting blocks together so only the first one runs"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using selection (if/then) and repetition (loops) in programs to create more complex behaviour.",
+        "example_task": "Program a character that walks forward and turns when it reaches the edge of the screen. Use a loop and an if statement.",
+        "example_response": "I used a 'forever' loop containing: 'move 10 steps', then 'if touching edge then turn 180 degrees'. The character bounces back and forth across the screen without stopping. The loop repeats the instructions and the if-statement checks for the edge each time.",
+        "common_errors": [
+          "Putting the if-statement outside the loop so it only checks once",
+          "Creating an infinite loop without any stopping condition"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Combining sequence, selection and repetition to create programs that solve problems or meet a design brief, using variables to store and change data.",
+        "example_task": "Create a quiz program that asks three questions, uses a variable to keep score, and gives a different message depending on the final score.",
+        "example_response": "I created a variable called 'score' set to 0. For each question, I used 'ask' and checked the answer with an if-statement. If correct, I increased score by 1. At the end, I used selection: if score = 3, say 'Perfect!'; if score >= 1, say 'Well done!'; else say 'Try again!'. The program uses sequence (question order), selection (checking answers) and repetition (I could put questions in a loop).",
+        "common_errors": [
+          "Not initialising the variable at the start (score starts at a random value)",
+          "Using the wrong comparison operator (= vs >) in the selection"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Designing modular programs using procedures or functions, explaining how abstraction makes programs easier to understand and maintain.",
+        "example_task": "Refactor your quiz program so each question is handled by a reusable procedure. Why is this better?",
+        "example_response": "I created a procedure called 'ask_question' that takes a question and correct answer as inputs. It asks the question, checks the answer, and updates the score. My main program just calls this procedure three times with different questions. This is better because if I want to change how questions work, I only change the procedure once instead of changing code in three places. It is also easier to add more questions.",
+        "common_errors": [
+          "Creating procedures that are too specific and not genuinely reusable",
+          "Not understanding how parameters pass information into procedures"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "CO-KS12-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying that a program is not working as expected and finding an obvious error by comparing the output with the intended result.",
+        "example_task": "This program should make the sprite draw a square, but it draws a triangle. Look at the code — what is wrong?",
+        "example_response": "The loop only repeats 3 times instead of 4. A square has 4 sides, so I need to change the repeat from 3 to 4.",
+        "common_errors": [
+          "Rewriting the whole program instead of finding and fixing the specific error",
+          "Not being able to describe what the program should do versus what it actually does"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using logical reasoning to trace through a program step by step, predicting the output and identifying where it goes wrong.",
+        "example_task": "Trace through this program and predict what it will output: set x to 5, repeat 3 times (set x to x + 2, say x).",
+        "example_response": "Start: x = 5. First time through the loop: x becomes 5 + 2 = 7, it says 7. Second time: x becomes 7 + 2 = 9, it says 9. Third time: x becomes 9 + 2 = 11, it says 11. The program will say 7, then 9, then 11.",
+        "common_errors": [
+          "Not updating the variable value between iterations",
+          "Tracing through only the first iteration and guessing the rest"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Systematically debugging programs by testing, identifying errors, hypothesising causes, making changes and retesting.",
+        "example_task": "This game program has two bugs: the score doesn't increase when you collect a coin, and the character can walk through walls. Find and fix both bugs.",
+        "example_response": "Bug 1: The score variable is being set to 1 each time instead of increased by 1. I changed 'set score to 1' to 'change score by 1'. Bug 2: The wall collision check uses 'if touching wall colour' but the wall colour in the code doesn't match the actual wall colour on the screen. I used the colour picker to get the exact colour. After fixing both, I tested by collecting three coins (score went 1, 2, 3) and walking into a wall (character stopped).",
+        "common_errors": [
+          "Fixing one bug without retesting to check it doesn't cause another",
+          "Changing multiple things at once and not knowing which change fixed the problem"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Applying debugging strategies systematically, including using test data, print statements for tracing, and explaining why certain types of bugs are harder to find.",
+        "example_task": "A classmate's sorting program works for most lists but gives wrong results for some. How would you systematically find the bug?",
+        "example_response": "I would test with several types of input: a sorted list, a reversed list, a list with duplicates, a list with one item, and an empty list. I would add print statements inside the loop to show the state of the list after each step, so I can see where it goes wrong. I would trace the failing case step by step. Some bugs only appear with specific inputs — these are harder to find because the program seems to work most of the time.",
+        "common_errors": [
+          "Only testing with one type of input data",
+          "Not testing edge cases (empty lists, duplicates, already-sorted data)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "CO-KS12-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Understanding that computers can be connected together and that the internet allows people to share information across the world.",
+        "example_task": "What happens when you type a website address into a computer?",
+        "example_response": "The computer sends a message through the internet to another computer (a server) that has the website stored on it. That computer sends the website back so I can see it on my screen.",
+        "common_errors": [
+          "Thinking the internet and the World Wide Web are the same thing",
+          "Believing websites are 'inside' their own computer"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describing how networks work, including the roles of routers, servers and clients, and understanding that the web is a service that runs on the internet.",
+        "example_task": "Explain the difference between the internet and the World Wide Web. What role does a server play?",
+        "example_response": "The internet is the physical network of connected computers around the world. The World Wide Web is a service that runs on the internet — it's the collection of websites you can visit with a browser. A server is a computer that stores websites and sends them to your computer (the client) when you request them. Email is another service that uses the internet but isn't part of the web.",
+        "common_errors": [
+          "Using 'internet' and 'web' as if they mean the same thing",
+          "Not understanding that the internet existed before the World Wide Web"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Explaining how data is transmitted across networks using packets and protocols, and understanding how search engines and websites work.",
+        "example_task": "When you send an email, how does it get from your computer to someone else's? What are packets?",
+        "example_response": "When I send an email, my computer breaks the message into small pieces called packets. Each packet is labelled with the destination address and sent across the internet. Different packets might take different routes. The receiving computer reassembles the packets in the right order. Protocols like TCP/IP are the rules that ensure packets are sent, received and reassembled correctly.",
+        "common_errors": [
+          "Thinking data travels as one continuous piece rather than in packets",
+          "Not understanding that packets can take different routes to the same destination"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "CO-KS12-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Understanding basic online safety rules: not sharing personal information with strangers, telling a trusted adult if something makes them uncomfortable.",
+        "example_task": "If someone you don't know sends you a message online asking for your name and address, what should you do?",
+        "example_response": "I should not reply or give them my information. I should tell a parent or teacher straight away. Personal information like my name, address and school should be kept private online.",
+        "common_errors": [
+          "Thinking it is safe to share information because the person seems friendly",
+          "Not telling an adult because they think they will get in trouble"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understanding a wider range of online risks (cyberbullying, inappropriate content, unreliable information) and knowing strategies for dealing with them.",
+        "example_task": "You find a website that says chocolate is the healthiest food in the world. How can you check if this is true?",
+        "example_response": "I should check who wrote it — is it a reliable source like the NHS or a scientist? I should look for the same information on other trusted websites. If only one website says it, it might not be true. I should think about whether the website is trying to sell me chocolate, which would make it biased.",
+        "common_errors": [
+          "Believing everything found online is true",
+          "Not knowing how to identify reliable sources"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Explaining how to manage their digital footprint, understanding how personal data is collected and used online, and acting as a responsible digital citizen.",
+        "example_task": "What is a digital footprint? Why should you think carefully before posting something online?",
+        "example_response": "A digital footprint is the trail of information you leave behind when you use the internet — posts, comments, photos, searches, likes. Once something is online, it can be very difficult to remove completely. Other people can copy, share or screenshot it. Future employers or universities might see it. I should think: would I be happy for my teacher, my parents or a stranger to see this? If not, I shouldn't post it.",
+        "common_errors": [
+          "Thinking that deleting a post removes it completely from the internet",
+          "Not understanding that their online activity creates a permanent record"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "CO-KS12-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Breaking a simple problem into smaller, more manageable parts (decomposition).",
+        "example_task": "You want to plan a birthday party. Break this big task into smaller tasks.",
+        "example_response": "1. Choose a date. 2. Make a list of who to invite. 3. Send invitations. 4. Choose food and drinks. 5. Plan games and activities. 6. Decorate the room. Breaking it into small steps makes it less overwhelming and I can do one thing at a time.",
+        "common_errors": [
+          "Making the parts too big (still complex problems rather than simple tasks)",
+          "Not being able to separate the problem into independent parts"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applying decomposition, pattern recognition and abstraction to solve problems: identifying repeated patterns and focusing on the most important information.",
+        "example_task": "Look at these five animals: cat, dog, rabbit, goldfish, parrot. Group them by a pattern, then describe each group using one word (abstraction).",
+        "example_response": "Pattern 1: cat, dog, rabbit — they are all mammals (fur, legs). Pattern 2: goldfish — lives in water (fish). Pattern 3: parrot — has feathers (bird). The abstraction removes specific details (colour, size, breed) and focuses on the key category. This is what computational thinking does — it focuses on what matters for the problem.",
+        "common_errors": [
+          "Grouping by superficial features (colour, size) rather than meaningful patterns",
+          "Not understanding what 'abstraction' means in computing — removing unnecessary detail"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Applying all aspects of computational thinking (decomposition, pattern recognition, abstraction, algorithm design) to solve a complex problem systematically.",
+        "example_task": "Design a solution for automatically sorting recycling into three bins: paper, plastic and metal. Use computational thinking.",
+        "example_response": "Decomposition: break it into detecting material type, moving the item to the correct bin, and counting items sorted. Pattern recognition: paper is light and flexible, plastic is light but rigid, metal is heavy and cold. Abstraction: we only need to know the material type — colour, size and shape don't matter. Algorithm: 1. Weigh the item. 2. If heavy, it's metal — move to metal bin. 3. If light, test flexibility. 4. If flexible, it's paper — move to paper bin. 5. If rigid, it's plastic — move to plastic bin.",
+        "common_errors": [
+          "Jumping straight to the algorithm without decomposing and abstracting first",
+          "Not recognising that computational thinking is a general problem-solving approach, not just programming"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluating the effectiveness of computational thinking solutions, identifying limitations and suggesting improvements, and explaining how these approaches are used in real-world computing.",
+        "example_task": "Our recycling sorting algorithm would fail for some items. What are its limitations? How could we improve it?",
+        "example_response": "Limitations: some items combine materials (a juice carton is paper and plastic), weight alone doesn't reliably distinguish materials (a thick sheet of paper could be as heavy as thin plastic), and the algorithm doesn't handle glass or food waste. Improvements: add a material sensor instead of just weight, add more categories, use machine learning to recognise items from images like real sorting facilities do. This shows that computational thinking produces a first solution that then needs testing and refining — just like real software development.",
+        "common_errors": [
+          "Thinking the first algorithm is the final answer without considering limitations",
+          "Not connecting the abstract solution to real-world applications"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,920 @@
+[
+  {
+    "concept_id": "MA-Y2-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting in 2s from 0 to 20 using pairs of objects as concrete support, with a number line for reference.",
+        "example_task": "Place cubes in pairs. Count the total as you add each pair: 2, 4, 6... Continue to 20.",
+        "example_response": "2, 4, 6, 8, 10, 12, 14, 16, 18, 20",
+        "common_errors": [
+          "Reverting to counting in 1s after 10",
+          "Counting in 2s starting from 1 (1, 3, 5...) instead of 0"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Counting in 2s, 3s and 5s from 0 using a hundred square with multiples highlighted, forwards and backwards.",
+        "example_task": "Count in 3s from 0 to 30 using the hundred square.",
+        "example_response": "0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30",
+        "common_errors": [
+          "Losing count when crossing decade boundaries in 3s (e.g. saying 18, 20 instead of 18, 21)",
+          "Adding 2 or 5 instead of 3 when switching between sequences"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Counting in 2s, 3s and 5s from 0 or any given multiple, forwards and backwards, without support.",
+        "example_task": "Start at 15. Count in 3s to 30. Then count backwards in 5s from 45 to 10.",
+        "example_response": "15, 18, 21, 24, 27, 30. Backwards: 45, 40, 35, 30, 25, 20, 15, 10.",
+        "common_errors": [
+          "Needing to start from 0 to reach the given starting point",
+          "Counting backwards in 3s is significantly harder than forwards (e.g. 21, 19 instead of 21, 18)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using skip-counting knowledge to solve problems and explain patterns.",
+        "example_task": "Is 25 a number you say when counting in 3s from 0? How can you check?",
+        "example_response": "No. I can count in 3s: 0, 3, 6, 9, 12, 15, 18, 21, 24, 27. I skip 25, so it is not a multiple of 3.",
+        "common_errors": [
+          "Guessing 'yes' because 25 is in the 5 times table and confusing the sequences",
+          "Being unable to systematically check beyond reciting the whole sequence"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Building two-digit numbers using Dienes ten-sticks and unit cubes on a place value mat (T | O).",
+        "example_task": "Build the number 45 using Dienes blocks. How many tens? How many ones?",
+        "example_response": "4 tens and 5 ones. 4 ten-sticks and 5 unit cubes.",
+        "common_errors": [
+          "Using 45 unit cubes instead of tens and ones",
+          "Saying '4 and 5' without identifying them as tens and ones"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Partitioning two-digit numbers into tens and ones using arrow cards or pictorial representations, including numbers with 0 ones.",
+        "example_task": "Partition 60 into tens and ones. What does the 0 mean?",
+        "example_response": "60 = 60 + 0. There are 6 tens and 0 ones. The 0 means there are no ones.",
+        "common_errors": [
+          "Saying 60 is '6' (reading only the tens digit)",
+          "Not understanding why a 0 is needed in the ones place"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Partitioning any two-digit number into tens and ones fluently, and using flexible partitioning.",
+        "example_task": "Partition 47 in two different ways.",
+        "example_response": "47 = 40 + 7. Also 47 = 30 + 17.",
+        "common_errors": [
+          "Writing 47 = 4 + 7 (face values instead of place values)",
+          "Only knowing the standard partition and being unable to partition flexibly"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining what happens to the tens and ones digits when 10 is added to or subtracted from a two-digit number.",
+        "example_task": "I have 38. I add 10. What happens to the tens digit and the ones digit? Why?",
+        "example_response": "38 + 10 = 48. The tens digit goes from 3 to 4 because I added one more ten. The ones digit stays at 8 because I did not add any ones.",
+        "common_errors": [
+          "Saying both digits change when 10 is added",
+          "Explaining that '38 becomes 48' without reference to the place value structure"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Comparing two numbers up to 20 using concrete objects to determine which is greater, with verbal comparison only.",
+        "example_task": "Which is more, 8 or 13? Show me with cubes.",
+        "example_response": "13 is more than 8. My tower of 13 cubes is taller than my tower of 8 cubes.",
+        "common_errors": [
+          "Comparing by the look of the digits rather than the quantity (e.g. thinking 8 is more because 8 looks bigger than 1 or 3)",
+          "Confusing 'greater' with 'bigger in size'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using the < and > symbols to compare two-digit numbers, with a number line or hundred square for support.",
+        "example_task": "Write the correct symbol: 34 ? 28. Use < or >.",
+        "example_response": "34 > 28. 34 is greater than 28.",
+        "common_errors": [
+          "Writing 34 < 28 (reversing the symbol)",
+          "Not knowing which way the symbol points (the open end faces the larger number)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using <, > and = to compare numbers to 100 fluently, and ordering sets of numbers from smallest to largest.",
+        "example_task": "Put these numbers in order from smallest to largest: 67, 76, 49, 94. Use < to connect them.",
+        "example_response": "49 < 67 < 76 < 94",
+        "common_errors": [
+          "Ordering by ones digit: putting 49 after 67 because 9 > 7",
+          "Confusing 67 and 76 (tens and ones digits swapped)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recalling addition bonds to 10 using a ten frame and counters.",
+        "example_task": "Put 6 counters on the ten frame. How many empty spaces? What bond to 10 does this show?",
+        "example_response": "4 empty spaces. 6 + 4 = 10.",
+        "common_errors": [
+          "Miscounting the empty spaces (saying 3 or 5 instead of 4)",
+          "Knowing the addition bond but not the subtraction inverse (10 – 6 = 4)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Instant recall of all bonds to 20 without concrete support, including related subtraction facts.",
+        "example_task": "What is 8 + 7? What is 15 – 8?",
+        "example_response": "8 + 7 = 15. 15 – 8 = 7.",
+        "common_errors": [
+          "Needing to count on rather than recalling instantly",
+          "Knowing the addition fact but not the subtraction inverse"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Deriving facts to 100 from known bonds to 10 and 20 using place value reasoning.",
+        "example_task": "You know 6 + 4 = 10. What is 60 + 40? What is 56 + 4?",
+        "example_response": "60 + 40 = 100. 56 + 4 = 60.",
+        "common_errors": [
+          "Not connecting the known bond (6 + 4 = 10) to the derived fact (60 + 40 = 100)",
+          "Computing 56 + 4 by counting on rather than using the bond"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using known facts to check addition and subtraction by adding numbers in a different order.",
+        "example_task": "Is this correct: 37 + 25 = 62? Check by adding in a different order.",
+        "example_response": "Check: 25 + 37 = 25 + 30 + 7 = 55 + 7 = 62. Yes, it is correct.",
+        "common_errors": [
+          "Checking by repeating the same calculation rather than using a different method",
+          "Not understanding why adding in a different order is a valid check"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Adding a one-digit number to a two-digit number without crossing 10, using Dienes blocks.",
+        "example_task": "Use Dienes blocks to work out 34 + 5.",
+        "example_response": "34 + 5 = 39. I kept the 3 tens and added 5 ones to the 4 ones to get 9 ones.",
+        "common_errors": [
+          "Adding 5 to the tens digit instead of the ones (34 + 5 = 84)",
+          "Getting 39 correct but unable to explain using place value"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Adding and subtracting two-digit numbers and ones, tens, or two-digit numbers using a number line, including crossing tens boundaries.",
+        "example_task": "Work out 47 + 26 using a number line.",
+        "example_response": "Start at 47. Jump 20 to get 67. Jump 6 to get 73. 47 + 26 = 73.",
+        "common_errors": [
+          "Miscounting jumps across the tens boundary (47 + 6 = 52 instead of 53)",
+          "Adding tens and ones separately but forgetting to combine (40 + 20 = 60, 7 + 6 = 13, then writing 6013 instead of 73)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Adding and subtracting combinations of two-digit numbers using efficient mental or recorded methods, and solving word problems.",
+        "example_task": "There are 38 children in one class and 27 in another. How many altogether? Show your method.",
+        "example_response": "38 + 27 = 65. Method: 38 + 20 = 58, then 58 + 7 = 65.",
+        "common_errors": [
+          "Column misalignment when recording in columns (putting 8 under 2 instead of under 7)",
+          "Forgetting to carry when 8 + 7 = 15 (writing 5 but not carrying the 1 ten)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Demonstrating commutativity with concrete objects: showing that 3 + 5 gives the same total as 5 + 3.",
+        "example_task": "Put 3 red cubes and 5 blue cubes together. Count the total. Now put 5 blue cubes and 3 red cubes together. Is the total the same?",
+        "example_response": "3 + 5 = 8. 5 + 3 = 8. Yes, the total is the same both times.",
+        "common_errors": [
+          "Recounting both groups from scratch rather than recognising the total must be the same",
+          "Believing the answer might be different if the order changes"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using commutativity to check addition calculations and recognising that subtraction is not commutative.",
+        "example_task": "You worked out 14 + 8 = 22. How can you check this using commutativity? Does the same trick work for 14 – 8?",
+        "example_response": "Check: 8 + 14 = 22. Yes, it matches. No, 14 – 8 = 6 but 8 – 14 is not 6, so subtraction is not commutative.",
+        "common_errors": [
+          "Thinking subtraction is also commutative (8 – 14 = 6)",
+          "Checking by repeating the same calculation rather than swapping the order"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using commutativity and associativity to add three numbers efficiently by choosing the easiest pair first.",
+        "example_task": "Work out 7 + 8 + 3. Which two numbers would you add first to make it easier? Why?",
+        "example_response": "Add 7 + 3 = 10 first, then 10 + 8 = 18. This is easier because 7 + 3 makes a number bond to 10.",
+        "common_errors": [
+          "Always adding left to right without considering easier combinations",
+          "Not recognising number bonds within the three addends"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using a bar model to see that the same three numbers make one addition and two subtractions.",
+        "example_task": "The bar model shows: whole = 12, parts = 5 and 7. Write an addition and a subtraction using these numbers.",
+        "example_response": "5 + 7 = 12. 12 – 7 = 5.",
+        "common_errors": [
+          "Writing 5 – 7 = 12 (subtracting the wrong way)",
+          "Only writing one fact when the bar model gives four related facts"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using the inverse relationship to check a calculation: adding to check subtraction and subtracting to check addition.",
+        "example_task": "You think 15 – 9 = 6. Check it using addition.",
+        "example_response": "Check: 6 + 9 = 15. Yes, it is correct.",
+        "common_errors": [
+          "Checking by repeating 15 – 9 rather than using the inverse",
+          "Adding 15 + 9 instead of 6 + 9"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using the inverse to solve missing number problems and explain why the strategy works.",
+        "example_task": "Find the missing number: ? – 8 = 13. Explain how you found it.",
+        "example_response": "The missing number is 21. I used the inverse: 13 + 8 = 21. This works because if I take 8 away from the mystery number and get 13, then putting the 8 back must give me the mystery number.",
+        "common_errors": [
+          "Computing 8 – 13 or 13 – 8 instead of 13 + 8",
+          "Getting the correct answer but unable to explain why the inverse method works"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting in 2s, 5s and 10s using concrete groups and connecting to the matching times table fact.",
+        "example_task": "Make 4 groups of 5 cubes. Count in 5s to find the total. What times table fact does this show?",
+        "example_response": "5, 10, 15, 20. There are 20 cubes. 4 × 5 = 20.",
+        "common_errors": [
+          "Counting in 5s correctly but not connecting to 4 × 5 = 20",
+          "Making groups of different sizes (not all exactly 5)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recalling multiplication facts for the 2, 5 and 10 times tables and connecting to division facts.",
+        "example_task": "What is 7 × 2? What is 14 ÷ 2?",
+        "example_response": "7 × 2 = 14. 14 ÷ 2 = 7.",
+        "common_errors": [
+          "Confusing × with + (saying 7 × 2 = 9 instead of 14)",
+          "Knowing the multiplication fact but not the related division fact"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Instant recall of all multiplication and division facts for 2, 5 and 10 times tables, applied in context.",
+        "example_task": "Stickers come in packs of 5. I need 35 stickers. How many packs do I need?",
+        "example_response": "35 ÷ 5 = 7. I need 7 packs.",
+        "common_errors": [
+          "Knowing 7 × 5 = 35 but not recognising the problem requires division",
+          "Counting up in 5s to 35 rather than recalling the fact directly"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining connections between the 2, 5 and 10 times tables and using known facts to derive unknown ones.",
+        "example_task": "If you know 6 × 5 = 30, how can you work out 6 × 10?",
+        "example_response": "6 × 10 = 60. I know this because 10 is double 5, so 6 × 10 is double 6 × 5. Double 30 is 60.",
+        "common_errors": [
+          "Not seeing the doubling relationship between the 5 and 10 times tables",
+          "Knowing both facts by rote but unable to explain the connection"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Writing a multiplication statement from a concrete arrangement of equal groups.",
+        "example_task": "There are 3 plates with 2 biscuits on each. Write a multiplication to show this.",
+        "example_response": "3 × 2 = 6",
+        "common_errors": [
+          "Writing 2 × 3 = 6 (correct answer but reversed understanding of 'groups of')",
+          "Writing an addition instead: 2 + 2 + 2 = 6 (valid but not using ×)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Writing both multiplication and division statements from arrays and equal group contexts.",
+        "example_task": "Look at this array: 4 rows of 5 dots. Write a multiplication and a division for it.",
+        "example_response": "4 × 5 = 20. 20 ÷ 5 = 4 (or 20 ÷ 4 = 5).",
+        "common_errors": [
+          "Writing the division backwards: 5 ÷ 20 instead of 20 ÷ 5",
+          "Not recognising that the array shows two multiplication facts (4 × 5 and 5 × 4)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Writing multiplication and division statements from word problems and interpreting statements in context.",
+        "example_task": "Write a number sentence: 'There are 30 children sitting at 5 tables with the same number at each table. How many at each table?'",
+        "example_response": "30 ÷ 5 = 6. There are 6 children at each table.",
+        "common_errors": [
+          "Writing 5 × 30 instead of 30 ÷ 5 (not identifying this as division)",
+          "Confusing the ÷ symbol with the × symbol"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using an array to show that multiplication gives the same answer when the groups are swapped.",
+        "example_task": "Make a 3 × 4 array with counters. Now turn it sideways to make a 4 × 3 array. Is the total the same?",
+        "example_response": "Yes. 3 × 4 = 12 and 4 × 3 = 12. Turning the array does not change the number of counters.",
+        "common_errors": [
+          "Recounting the turned array instead of recognising the total is unchanged",
+          "Not understanding why turning the array swaps the multiplication"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applying commutativity to choose the easier order for a multiplication and recognising division is not commutative.",
+        "example_task": "Which is easier to work out: 2 × 9 or 9 × 2? Does the same thing work for division: is 12 ÷ 3 the same as 3 ÷ 12?",
+        "example_response": "2 × 9 and 9 × 2 both equal 18 — I can do whichever is easier. But 12 ÷ 3 = 4 and 3 ÷ 12 does not give 4, so division is not the same both ways.",
+        "common_errors": [
+          "Thinking division is commutative (saying 3 ÷ 12 = 4)",
+          "Not choosing the easier order when computing (always going left to right)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Explaining why multiplication is commutative using the language of groups, and explaining why division is not.",
+        "example_task": "Explain why 5 × 3 = 3 × 5 but 15 ÷ 3 does not equal 3 ÷ 15.",
+        "example_response": "5 groups of 3 and 3 groups of 5 both give 15 objects — the array is the same, just turned. But sharing 15 among 3 gives 5 each, while sharing 3 among 15 gives less than 1 each. The answers are different.",
+        "common_errors": [
+          "Saying 'it just is' without using groups or arrays to explain",
+          "Confusing the explanation for commutativity with the explanation for associativity"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Determining whether a small number (up to 10) is odd or even by sharing objects into two equal groups.",
+        "example_task": "Take 7 cubes. Can you share them equally into two groups? Is 7 odd or even?",
+        "example_response": "No, I get 3 and 4 — one group has 1 more. 7 is odd because it cannot be shared equally into 2 groups.",
+        "common_errors": [
+          "Saying 7 is even because 'it's a big number'",
+          "Not realising that 1 left over means the number is odd"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying whether any number up to 20 is odd or even by checking the ones digit, using a number line or hundred square for support.",
+        "example_task": "Is 16 odd or even? Is 19 odd or even? How do you know?",
+        "example_response": "16 is even because it ends in 6. 19 is odd because it ends in 9.",
+        "common_errors": [
+          "Checking by pairing objects even for larger numbers (slow and error-prone)",
+          "Confusing the tens digit with the ones digit when deciding"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying any number up to 100 as odd or even instantly, and explaining the rule using the ones digit.",
+        "example_task": "Is 74 odd or even? Is 83 odd or even? Explain the rule.",
+        "example_response": "74 is even because it ends in 4. 83 is odd because it ends in 3. The rule is: if the ones digit is 0, 2, 4, 6 or 8 it is even; if it is 1, 3, 5, 7 or 9 it is odd.",
+        "common_errors": [
+          "Not knowing the rule and needing to count in 2s from 0 to check",
+          "Saying 74 is 'odd' because 7 is odd (checking the tens digit)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding one half and one quarter of a small quantity by physically sharing objects equally.",
+        "example_task": "Find half of 10 by sharing 10 counters equally between 2 plates. Find a quarter of 8 by sharing between 4 plates.",
+        "example_response": "Half of 10 is 5 (each plate gets 5). A quarter of 8 is 2 (each plate gets 2).",
+        "common_errors": [
+          "Sharing between the wrong number of groups (sharing between 4 when finding a half)",
+          "Sharing unequally and not noticing"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding 1/3, 1/4, 2/4 and 3/4 of quantities using sharing or by finding the unit fraction first then multiplying.",
+        "example_task": "Find 3/4 of 12.",
+        "example_response": "First find 1/4 of 12 = 3. Then 3/4 = 3 × 3 = 9. So 3/4 of 12 is 9.",
+        "common_errors": [
+          "Finding 1/4 correctly but not knowing how to get to 3/4",
+          "Dividing by 3 instead of 4 to find a quarter (1/4 of 12 = 4 instead of 3)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Finding unit and non-unit fractions of quantities and lengths, and counting in fractions on a number line.",
+        "example_task": "Count in quarters from 0 to 2 on the number line: 0, 1/4, 2/4, 3/4, 1, ... What is 1/3 of 18?",
+        "example_response": "0, 1/4, 2/4, 3/4, 1, 1 1/4, 1 2/4, 1 3/4, 2. One third of 18 is 6.",
+        "common_errors": [
+          "Not knowing that 4/4 = 1 whole, so stopping at 3/4 and jumping to 1",
+          "Confusing 1/3 with 1/4 when computing fractions of quantities"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Comparing folded paper strips to see that 1/2 and 2/4 cover the same area.",
+        "example_task": "Fold one strip in half and shade one part. Fold another strip in quarters and shade two parts. Compare them — are they the same?",
+        "example_response": "Yes, the shaded parts are the same size. 1/2 and 2/4 are the same amount.",
+        "common_errors": [
+          "Saying they are different because '1 is not the same as 2'",
+          "Folding unevenly so the comparison is not accurate"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognising 2/4 = 1/2 on a number line and using fraction walls to verify the equivalence.",
+        "example_task": "On the fraction wall, which fraction is the same as 1/2? Point to where 1/2 and 2/4 are on the number line.",
+        "example_response": "2/4 is the same as 1/2. They are both at the same point on the number line, exactly halfway between 0 and 1.",
+        "common_errors": [
+          "Placing 2/4 at a different point from 1/2 on the number line",
+          "Thinking 2/4 means '2 and 4' rather than '2 out of 4'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Explaining why 2/4 = 1/2 and recognising that equivalent fractions name the same value.",
+        "example_task": "Explain to a friend why 2/4 and 1/2 are the same.",
+        "example_response": "If you cut something into 4 equal parts and take 2, you have taken exactly half. 2 out of 4 is the same proportion as 1 out of 2.",
+        "common_errors": [
+          "Knowing the fact by rote ('Miss told us') without understanding why",
+          "Thinking all fractions with a 2 on top are equal to 1/2"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Measuring the length of objects using a ruler, aligning the object with 0 and reading the end mark, for objects shorter than 30 cm.",
+        "example_task": "Measure the length of this pencil using a ruler. Start at 0.",
+        "example_response": "The pencil is 12 cm long.",
+        "common_errors": [
+          "Starting from 1 on the ruler instead of 0",
+          "Reading the wrong number because the end of the pencil is between two marks"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Choosing and using appropriate standard units (m/cm, kg/g, °C, l/ml) and reading scales with labelled divisions.",
+        "example_task": "Would you measure the length of the classroom in cm or m? Read the temperature on this thermometer. [Shows 18°C]",
+        "example_response": "I would use metres for the classroom because it is very long. The thermometer shows 18°C.",
+        "common_errors": [
+          "Choosing centimetres for very long objects or metres for small objects",
+          "Misreading the thermometer scale (reading 16°C or 20°C instead of 18°C)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Measuring length, mass, temperature and capacity with standard units, reading scales where not every division is labelled.",
+        "example_task": "This weighing scale is labelled 0, 100g, 200g, 300g with 5 marks between each label. What does each small mark represent? Read the mass shown. [Arrow points to 3rd mark after 200g]",
+        "example_response": "Each small mark represents 20g. The mass is 260g.",
+        "common_errors": [
+          "Assuming each small mark is 1g (reading 203g instead of 260g)",
+          "Not working out the value of each interval before reading"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising all UK coins and notes by name and value, and using the £ and p symbols with whole amounts.",
+        "example_task": "This costs 35p. Write the price using the p symbol. This costs 2 pounds. Write it using the £ symbol.",
+        "example_response": "35p. £2.",
+        "common_errors": [
+          "Writing £35p (using both symbols together)",
+          "Confusing p and £ (writing p2 instead of £2)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Making amounts using different combinations of coins and finding how many different ways to make a given amount.",
+        "example_task": "Make 30p using exactly 4 coins. Can you find a different way?",
+        "example_response": "20p + 5p + 3p + 2p = 30p. Another way: 10p + 10p + 5p + 5p = 30p.",
+        "common_errors": [
+          "Using the wrong number of coins",
+          "Not finding different combinations because they always start with the largest coin"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving money problems involving making amounts, adding prices and giving change.",
+        "example_task": "A toy costs 45p. You pay with a 50p coin. How much change do you get?",
+        "example_response": "50p – 45p = 5p. I get 5p change.",
+        "common_errors": [
+          "Counting up from 45 to 50 correctly but struggling with larger amounts",
+          "Computing 50 – 45 by column subtraction and making a borrowing error"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading o'clock and half past times on an analogue clock (consolidating Year 1).",
+        "example_task": "What time does this clock show? [Shows 9 o'clock, then half past 2]",
+        "example_response": "9 o'clock. Half past 2.",
+        "common_errors": [
+          "Reading half past 2 as 'half past 3' (reading the number the hour hand is moving towards)",
+          "Confusing the hour and minute hands"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading times to five-minute intervals using the minute hand position: 5 past, 10 past, quarter past, 20 past, 25 past, half past.",
+        "example_task": "What time does this clock show? [Minute hand at 3, hour hand between 7 and 8]",
+        "example_response": "Quarter past 7. The minute hand is at 3, which means 15 minutes past.",
+        "common_errors": [
+          "Reading 'quarter past' as '3 o'clock' (reading the minute hand number as hours)",
+          "Not connecting the minute hand position (at 3) to 15 minutes"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading any time to five minutes on an analogue clock, including 'to' times (quarter to, 10 to, 5 to), and drawing clock hands.",
+        "example_task": "What time does this clock show? [10 minutes to 6] Draw a clock showing quarter to 9.",
+        "example_response": "10 to 6. The minute hand is at 10, which means 50 minutes past or 10 minutes to the next hour. [Draws minute hand at 9, hour hand just before 9]",
+        "common_errors": [
+          "Confusing 'to' and 'past' times (calling 10 to 6 '10 past 5')",
+          "Drawing the hour hand pointing exactly at 9 for quarter to 9 instead of just before 9"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting the number of sides and corners (vertices) of common 2-D shapes by tracing with a finger.",
+        "example_task": "Trace around this shape. How many sides does it have? How many corners?",
+        "example_response": "It has 4 sides and 4 corners. It is a rectangle.",
+        "common_errors": [
+          "Counting a side twice or missing a side",
+          "Confusing 'sides' and 'corners' — counting corners when asked for sides"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying and comparing 2-D shapes by their properties (number of sides, vertices, right angles), including non-standard orientations.",
+        "example_task": "How are a square and a rectangle similar? How are they different?",
+        "example_response": "Both have 4 sides and 4 corners with right angles. A square has all sides the same length but a rectangle has 2 long sides and 2 short sides.",
+        "common_errors": [
+          "Saying 'squares and rectangles are completely different shapes'",
+          "Not recognising a square as a special type of rectangle"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Sorting 2-D shapes by properties including line symmetry, and identifying shapes from a description of properties.",
+        "example_task": "I am thinking of a shape. It has 3 sides, 3 corners and 1 line of symmetry. Draw it.",
+        "example_response": "An isosceles triangle. [Draws a triangle with a vertical line of symmetry — two sides the same length]",
+        "common_errors": [
+          "Drawing an equilateral triangle (3 lines of symmetry, not 1)",
+          "Not knowing how to check for a line of symmetry"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting the faces of common 3-D shapes by handling them and touching each face.",
+        "example_task": "Pick up this cuboid. Touch each face as you count. How many faces does it have?",
+        "example_response": "6 faces. I touched the top, the bottom, the front, the back and both sides.",
+        "common_errors": [
+          "Missing the bottom face because the shape is resting on it",
+          "Counting a face twice"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Counting faces, edges and vertices of 3-D shapes including cubes, cuboids and pyramids.",
+        "example_task": "Count the edges and vertices of this square-based pyramid.",
+        "example_response": "8 edges and 5 vertices. 4 edges around the base and 4 going up to the top point.",
+        "common_errors": [
+          "Confusing edges and vertices (saying the shape has 8 vertices instead of 5)",
+          "Missing edges at the base when the pyramid is sitting flat"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Describing and comparing 3-D shapes by their faces, edges and vertices, and sorting them by properties.",
+        "example_task": "Sort these shapes into two groups: those with all rectangular faces and those without. Name the shapes in each group.",
+        "example_response": "All rectangular faces: cube, cuboid. Not all rectangular: pyramid (has triangular faces), cylinder (has curved surface), triangular prism (has triangular and rectangular faces).",
+        "common_errors": [
+          "Including the triangular prism in the 'all rectangular' group (forgetting the triangular end faces)",
+          "Not knowing whether a cube counts as having rectangular faces (squares are rectangles)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C019",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Pressing a face of a 3-D shape onto paper and identifying the 2-D shape it makes.",
+        "example_task": "Press the face of this cube onto the paper and trace around it. What shape did you draw?",
+        "example_response": "I drew a square. The face of a cube is a square.",
+        "common_errors": [
+          "Drawing the whole 3-D shape instead of just one face",
+          "Not pressing flat enough and getting a distorted trace"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Naming all the 2-D face shapes on common 3-D shapes without tracing.",
+        "example_task": "What 2-D shapes can you see on a cylinder?",
+        "example_response": "Two circles (top and bottom) and a curved surface (which unrolls into a rectangle).",
+        "common_errors": [
+          "Only identifying the circular faces and not mentioning the curved surface",
+          "Calling the curved surface 'a circle' because it is round"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying all face shapes on 3-D shapes and explaining how the 2-D shapes combine to form the 3-D shape.",
+        "example_task": "A triangular prism has faces that are different 2-D shapes. Name them and say how many of each.",
+        "example_response": "2 triangles (the ends) and 3 rectangles (the sides). 5 faces in total.",
+        "common_errors": [
+          "Saying '3 triangles and 2 rectangles' (swapping the counts)",
+          "Not knowing what a triangular prism looks like"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C020",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Distinguishing between moving in a straight line and turning on the spot using physical movement.",
+        "example_task": "Walk forwards 5 steps. Now stay in one spot and turn to face the window. Which was a straight line movement? Which was a turn?",
+        "example_response": "Walking was a straight line. Turning on the spot was a turn (rotation).",
+        "common_errors": [
+          "Combining walking and turning into one movement",
+          "Not understanding that 'turning' means changing direction without moving forwards"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Making quarter, half and three-quarter turns and describing them as 1, 2 and 3 right angles.",
+        "example_task": "Face the door. Make a quarter turn clockwise. How many right angles did you turn?",
+        "example_response": "I turned 1 right angle. I am now facing the wall that was on my right.",
+        "common_errors": [
+          "Confusing a quarter turn with a half turn",
+          "Not knowing the connection between 'quarter turn' and '1 right angle'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Describing rotations as whole, half, quarter or three-quarter turns in terms of right angles, clockwise or anticlockwise.",
+        "example_task": "I face North. I make 2 right angles clockwise. Which direction do I face? How many right angles is a full turn?",
+        "example_response": "I face South (2 right angles = half turn). A full turn is 4 right angles.",
+        "common_errors": [
+          "Saying 2 right angles is a quarter turn",
+          "Not knowing that a full turn is 4 right angles"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C021",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Continuing a simple repeating pattern of shapes or colours given the first few elements.",
+        "example_task": "What comes next? Circle, square, circle, square, circle, ?",
+        "example_response": "Square. The pattern repeats: circle, square, circle, square.",
+        "common_errors": [
+          "Repeating the last shape instead of continuing the pattern",
+          "Not identifying the repeating unit"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying the rule of a pattern with two or three changing attributes and continuing it.",
+        "example_task": "Continue this pattern: 5, 10, 15, 20, ?, ?",
+        "example_response": "25, 30. The rule is 'add 5 each time'.",
+        "common_errors": [
+          "Continuing with the wrong step size (adding 10 instead of 5)",
+          "Identifying the pattern by looking at only two consecutive terms"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Describing the rule of a pattern in words, creating their own patterns, and identifying errors in given patterns.",
+        "example_task": "This pattern has a mistake: 2, 4, 6, 8, 11, 12, 14. Find the mistake and correct it.",
+        "example_response": "The mistake is 11. It should be 10 because the pattern counts in 2s. The correct sequence is 2, 4, 6, 8, 10, 12, 14.",
+        "common_errors": [
+          "Not spotting the error and continuing the incorrect pattern",
+          "Identifying the error but not being able to state the correct value"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C022",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading a one-to-one pictogram where each picture represents one item.",
+        "example_task": "This pictogram shows favourite fruits. Each picture = 1 child. How many children chose apple?",
+        "example_response": "4 children chose apple (there are 4 apple pictures).",
+        "common_errors": [
+          "Counting the pictures for the wrong fruit",
+          "Miscounting when pictures are close together"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading a many-to-one pictogram (each symbol = 2 or 5) and constructing a simple block diagram from given data.",
+        "example_task": "Each star in this pictogram represents 2 children. The 'swimming' row has 4 stars. How many children chose swimming?",
+        "example_response": "8 children. 4 stars × 2 = 8.",
+        "common_errors": [
+          "Reading each symbol as 1 (saying 4 children instead of 8)",
+          "Not checking the key to find out what each symbol represents"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Interpreting and constructing pictograms, tally charts, block diagrams and tables, answering comparison and total questions.",
+        "example_task": "Draw a block diagram from this tally chart: Red 6, Blue 9, Green 3. Which colour was most popular? How many more blue than green?",
+        "example_response": "[Draws bars at correct heights] Blue was most popular with 9 votes. 9 – 3 = 6, so blue had 6 more than green.",
+        "common_errors": [
+          "Drawing bars that do not match the data values",
+          "Answering 'how many more' by stating the larger number rather than the difference"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y2-C023",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Answering 'how many' questions about data in a simple table or pictogram.",
+        "example_task": "Look at this table. How many children have a pet cat?",
+        "example_response": "5 children have a pet cat.",
+        "common_errors": [
+          "Reading the wrong row or column",
+          "Misreading the number in the table"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Answering 'which has most/least' and 'how many altogether' questions from charts and tables.",
+        "example_task": "Look at the block diagram. Which colour had the most votes? How many votes were there altogether?",
+        "example_response": "Blue had the most votes with 9. Altogether: 6 + 9 + 3 = 18 votes.",
+        "common_errors": [
+          "Identifying the most popular category but unable to calculate the total",
+          "Adding incorrectly when finding the total"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Answering 'how many more/fewer' comparison questions and posing their own questions about data.",
+        "example_task": "Using this pictogram, how many more children like football than tennis? Write your own question about the data.",
+        "example_response": "12 – 5 = 7. 7 more children like football than tennis. My question: 'How many children were asked altogether?'",
+        "common_errors": [
+          "Answering 'how many more' by stating the larger number instead of the difference",
+          "Writing a question that cannot be answered from the data"
+        ]
+      }
+    ]
+  }
+]

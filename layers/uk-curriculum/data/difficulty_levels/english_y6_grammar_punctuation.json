@@ -1,0 +1,884 @@
+[
+  {
+    "concept_id": "EN-Y6-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifies whether a word sounds formal or informal when given two clear alternatives, beginning to associate Latinate words with formal register.",
+        "example_task": "Sort these words into formal and informal: 'get' / 'obtain', 'help' / 'assist', 'buy' / 'purchase'.",
+        "example_response": "Formal: obtain, assist, purchase. Informal: get, help, buy.",
+        "common_errors": [
+          "Assumes longer words are always formal without considering meaning",
+          "Thinks 'formal' means 'correct' and 'informal' means 'wrong'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Generates formal and informal synonyms and places them on a cline from most informal to most formal, noticing Latinate versus Anglo-Saxon patterns.",
+        "example_task": "Arrange these words on a cline from most informal to most formal: discover, find, find out, ascertain, come across.",
+        "example_response": "Most informal: come across, find out, find, discover, ascertain. 'Come across' is the most casual and conversational; 'ascertain' is the most formal and would appear in official reports.",
+        "common_errors": [
+          "Places all words in only two categories (formal/informal) rather than on a sliding scale",
+          "Cannot explain why 'ascertain' is more formal than 'discover' beyond 'it sounds harder'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Rewrites passages shifting register between formal and informal, making controlled vocabulary substitutions appropriate to audience and purpose while maintaining meaning.",
+        "example_task": "Rewrite this informal email as a formal letter to the head teacher: 'Hi Miss, we reckon the school dinners are rubbish and loads of kids just chuck them in the bin. Can you sort it out?'",
+        "example_response": "Dear Mrs Patel, I am writing to raise concerns regarding the quality of school meals. A significant number of pupils are discarding their lunches, which suggests that the current menu does not meet their needs. I would be grateful if this matter could be reviewed.",
+        "common_errors": [
+          "Changes vocabulary but retains informal sentence structures ('I reckon that the school dinners are of insufficient quality')",
+          "Over-formalises to the point of obscuring meaning, using words whose precise meaning they do not know"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analyses why an author deliberately shifts between formal and informal vocabulary at specific points in a text, evaluating the effect on tone and the reader's relationship with the writer.",
+        "example_task": "In this charity appeal, the writer begins: 'Our organisation endeavours to provide sustainable nutrition programmes...' then shifts to: 'But honestly? Kids are going hungry. Right now.' Why does the writer change register? What effect does it create?",
+        "example_response": "The formal opening establishes the charity's credibility and expertise. The sudden shift to short, informal sentences ('Kids are going hungry. Right now.') strips away professional distance and confronts the reader directly. The contrast makes the informal section feel more emotionally honest and urgent precisely because it breaks the established register. The writer uses the shift as a persuasive technique: the formal language says 'trust us', the informal language says 'act now'.",
+        "common_errors": [
+          "Identifies the shift but describes it as an error rather than a deliberate rhetorical choice",
+          "Explains that it 'sounds better' without analysing the specific effect of the contrast on the reader"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Matches synonym pairs and identifies antonym pairs from a given set, understanding that synonyms share meaning and antonyms are opposites.",
+        "example_task": "Write a synonym and an antonym for each word: 'brave', 'ancient', 'generous'.",
+        "example_response": "Brave: synonym = courageous, antonym = cowardly. Ancient: synonym = old, antonym = modern. Generous: synonym = kind, antonym = selfish.",
+        "common_errors": [
+          "Provides a word that is related but not a true synonym ('brave' = 'strong')",
+          "Gives a word that is simply different rather than opposite ('ancient' antonym = 'small')"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Generates multiple synonyms and arranges them on a cline of intensity or degree, recognising that synonyms differ in strength, connotation or register.",
+        "example_task": "Write four synonyms for 'angry' and arrange them from mildest to strongest. Explain the difference between the mildest and strongest.",
+        "example_response": "Irritated, annoyed, furious, livid. 'Irritated' suggests mild displeasure, like being bothered by a small thing. 'Livid' suggests extreme, barely controlled rage.",
+        "common_errors": [
+          "Lists synonyms but cannot rank them by degree",
+          "Uses a thesaurus word whose meaning they do not fully understand ('incandescent' without knowing it implies visible, intense fury)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Selects the most precise synonym from a group for a given context, explaining how connotation, register and degree affect which synonym is appropriate.",
+        "example_task": "Replace the word 'walked' in each sentence with the most appropriate synonym from: trudged, strolled, marched, crept. Explain why each fits. (a) The soldiers ___ across the parade ground. (b) She ___ through the mud after the long hike. (c) He ___ along the beach, enjoying the sunshine. (d) The burglar ___ through the dark house.",
+        "example_response": "(a) marched - soldiers move with purpose and discipline. (b) trudged - suggests exhaustion and heavy, effortful movement through difficult ground. (c) strolled - suggests leisurely, relaxed movement matching the enjoyment. (d) crept - suggests slow, silent, secretive movement appropriate for a burglar.",
+        "common_errors": [
+          "Chooses a synonym that fits grammatically but not contextually (using 'strolled' for the burglar)",
+          "Cannot explain the difference between close synonyms beyond 'it sounds right'"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluates how an author's synonym choices create specific effects on tone, character or atmosphere, and explains why alternative synonyms would change the meaning.",
+        "example_task": "The author describes the abandoned factory as 'derelict' rather than 'broken', 'old' or 'empty'. What does 'derelict' convey that the other words do not? How does this choice shape the atmosphere?",
+        "example_response": "'Derelict' carries connotations of deliberate abandonment and slow neglect over time. Unlike 'broken', which implies sudden damage, or 'old', which is neutral, or 'empty', which describes only absence, 'derelict' suggests that someone once cared for this place and stopped. This creates an atmosphere of loss and decay, as if the building itself has been forgotten. The word also carries a slightly official, formal tone (it is used in planning and housing contexts), which gives the description a factual weight that 'old' or 'empty' would lack.",
+        "common_errors": [
+          "States that one word is 'better' without analysing the specific connotations that make it more precise",
+          "Analyses in vague terms ('it creates a better picture') without identifying the specific associations the word carries"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifies whether a sentence sounds formal or informal when given clear contrasting pairs, noticing that some structures sound more 'official'.",
+        "example_task": "Which sentence is more formal? (a) 'If I was you, I'd go home.' (b) 'Were I in your position, I would return home immediately.'",
+        "example_response": "Sentence (b) is more formal.",
+        "common_errors": [
+          "Identifies the longer sentence as formal without noticing the structural differences",
+          "Does not notice that 'Were I' is different from 'If I was'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognises the subjunctive in common formulaic expressions and distinguishes it from the indicative, understanding that the subjunctive is used in hypothetical or formal contexts.",
+        "example_task": "Underline the subjunctive form in each sentence and explain what it means: (a) 'If I were the prime minister, I would change the law.' (b) 'The head teacher insists that every pupil be present.' (c) 'Were she to arrive late, she would miss the start.'",
+        "example_response": "(a) 'were' - subjunctive because 'I' normally takes 'was', but the hypothetical requires 'were'. (b) 'be' - subjunctive because it expresses a demand; the normal form would be 'is present'. (c) 'Were she' - inverted subjunctive replacing 'If she were to'.",
+        "common_errors": [
+          "Underlines 'would' instead of 'were', confusing the conditional auxiliary with the subjunctive",
+          "Does not recognise 'be' in (b) as subjunctive because it looks like the infinitive"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Uses the subjunctive correctly in formal writing, avoids contractions and question tags in formal register, and shifts between formal and informal structures with control.",
+        "example_task": "Rewrite these sentences in formal English, using the subjunctive where appropriate: (a) 'If she was to come to the meeting, she'd need a ticket.' (b) 'The board recommended that he takes the job.' (c) 'It's important that everyone keeps quiet, isn't it?'",
+        "example_response": "(a) Were she to attend the meeting, she would require a ticket. (b) The board recommended that he take the position. (c) It is essential that everyone remain silent.",
+        "common_errors": [
+          "Writes 'If she were to come' (correct subjunctive) but keeps 'she'd need' (inconsistent register within the same sentence)",
+          "Changes 'takes' to 'took' instead of 'take' in (b), confusing past tense with subjunctive"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explains the grammatical function of the subjunctive, identifies it in published texts and speeches, and evaluates why formal structures create authority or distance.",
+        "example_task": "Read this speech extract: 'If this nation be truly committed to its children, then I demand that every school receive the funding it deserves.' Identify the subjunctive forms and explain why the speaker uses them rather than the indicative.",
+        "example_response": "'Be' (instead of 'is') and 'receive' (instead of 'receives') are subjunctive forms. The speaker uses the subjunctive because it creates a formal, authoritative tone appropriate for a public speech about national policy. 'If this nation be truly committed' sounds more weighty and challenging than 'If this nation is committed' - the subjunctive signals that the speaker is raising a hypothetical challenge, not stating a fact. 'I demand that every school receive' uses the mandative subjunctive, which matches the force of 'demand'. The indicative 'receives' would weaken the rhetorical urgency. The subjunctive forms work together to give the speech gravity and moral authority.",
+        "common_errors": [
+          "Identifies only one subjunctive form and misses the other",
+          "Explains that the speech 'sounds formal' without analysing how the subjunctive specifically creates authority and urgency"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifies deliberate repetition in a short text and understands that repeating words or phrases on purpose can strengthen a message.",
+        "example_task": "Read: 'We will not be silenced. We will not be ignored. We will not be forgotten.' What is repeated and why?",
+        "example_response": "'We will not be' is repeated at the start of each sentence. The repetition makes the message sound stronger and more determined, like the speaker will not give up.",
+        "common_errors": [
+          "Identifies the repetition but says it is an accident or poor writing",
+          "Cannot suggest any purpose beyond 'to make it sound good'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies repetition, cohesive adverbials and simple ellipsis in texts, and uses basic cohesive devices to link ideas in own writing.",
+        "example_task": "Name the cohesive device in each example: (a) 'The bridge was old. Nevertheless, it was still used daily.' (b) 'She had studied for weeks. He hadn't.' (c) 'Justice. Justice is what we demand. Justice is what we deserve.'",
+        "example_response": "(a) 'Nevertheless' is a cohesive adverbial showing contrast between the bridge being old and still being used. (b) 'hadn't' is ellipsis - 'studied for weeks' is omitted because the reader already knows. (c) 'Justice' is deliberate repetition (anaphora) for rhetorical emphasis.",
+        "common_errors": [
+          "Identifies 'nevertheless' as a connective but cannot explain its cohesive function (linking back to the previous idea)",
+          "Does not recognise that 'He hadn't' is ellipsis because the omitted words seem obvious"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Uses repetition, grammatical connections and ellipsis purposefully to create cohesion across paragraphs in extended writing, selecting the right device for the intended effect.",
+        "example_task": "Write a short persuasive text (3-4 sentences) about saving a local park. Use: (a) deliberate repetition for emphasis, (b) a cohesive adverbial to connect an argument, and (c) one instance of ellipsis. Label each device.",
+        "example_response": "This park belongs to our community. This park is where children play, where families gather, where memories are made. [Repetition: 'This park' repeated to build emotional connection.] Despite the council's financial pressures, closing the park would cost more than maintaining it. [Cohesive adverbial: 'Despite' connects the counter-argument to the main argument.] Residents want to keep it. Businesses do too. [Ellipsis: 'want to keep it' is omitted after 'do too' because the reader already knows.]",
+        "common_errors": [
+          "Uses a cohesive adverbial that does not logically fit ('Furthermore' when the next point is a contrast, not an addition)",
+          "Attempts ellipsis but creates an ambiguous or incomplete sentence that the reader cannot reconstruct"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analyses how published authors combine multiple cohesive devices for cumulative effect, evaluating which device is most effective in a given passage and why.",
+        "example_task": "In this extract, the author uses anaphora ('Every morning she walked...', 'Every morning she hoped...'), a contrastive adverbial ('Yet'), and ellipsis ('She never did.'). Analyse how these three devices work together to create meaning.",
+        "example_response": "The anaphora 'Every morning' creates a rhythmic pattern that establishes routine and persistence - the character does this repeatedly, suggesting deep commitment. The contrastive 'Yet' disrupts this established rhythm, signalling that despite all the repetition and effort, something is about to change or fail. The ellipsis 'She never did' is deliberately abrupt: the reader must infer what she never did (found what she was looking for / received a response). By omitting the verb phrase, the author forces the reader to fill the gap, making the disappointment feel more personal. Together, the three devices move from hope (repetition) to disruption (contrast) to loss (ellipsis), mirroring the character's emotional trajectory in just a few sentences.",
+        "common_errors": [
+          "Analyses each device in isolation without discussing how they build on each other for cumulative effect",
+          "Identifies the devices correctly but evaluates in general terms ('it makes it more effective') without explaining the specific emotional journey they create"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifies common layout devices (headings, subheadings, bullet points, tables) in a non-fiction text and understands that they organise information for the reader.",
+        "example_task": "Look at this information page about healthy eating. Name three different layout devices you can see and say what each one does.",
+        "example_response": "The heading ('Healthy Eating') tells you what the whole page is about. The subheading ('What to Eat for Breakfast') tells you what one section is about. The bullet points list foods quickly so you can read them easily without searching through a paragraph.",
+        "common_errors": [
+          "Confuses heading with subheading, not recognising the hierarchy",
+          "Says layout devices 'make it look nice' without explaining how they help the reader find information"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains why specific layout devices have been chosen in a text and begins to select appropriate devices when planning own non-fiction writing.",
+        "example_task": "This text about planets uses a table comparing size, distance from the Sun, and number of moons. Why is a table better than paragraphs here?",
+        "example_response": "A table allows the reader to compare the same type of information across all eight planets at a glance. If this were written in paragraphs, you would have to read through all the text to find and compare specific facts. The table organises information in rows and columns so you can look across (to compare one planet's features) or down (to compare all planets on one feature like size).",
+        "common_errors": [
+          "Says the table 'looks better' or 'is easier' without explaining the functional advantage of comparison",
+          "Cannot identify when a table is more appropriate than continuous prose"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Selects and deploys appropriate layout devices for different non-fiction writing purposes, justifying each choice as part of the planning process.",
+        "example_task": "You are writing a leaflet about internet safety for Year 4 pupils. Plan which layout devices you would use and explain why each is appropriate for the audience and purpose.",
+        "example_response": "Main heading: 'Stay Safe Online'. Subheadings for each section: 'Protecting Your Password', 'Talking to Strangers Online', 'What to Do If Something Worries You'. Bullet points under each subheading for key rules (younger readers can scan quickly). A simple table comparing 'Safe' versus 'Unsafe' actions (comparison helps pupils make decisions). No columns or dense text because Year 4 readers need clear visual breaks. Each subheading signals a new topic so the reader knows what is coming next.",
+        "common_errors": [
+          "Adds layout devices decoratively (e.g., a table with no comparative purpose) rather than choosing them to serve the reader's needs",
+          "Uses subheadings that do not accurately describe the content that follows them"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluates how layout choices in published texts serve or undermine the text's purpose, and adapts layout strategy for different audiences reading the same content.",
+        "example_task": "The same information about school meal changes is presented in two formats: a bulleted notice for the school corridor and a formal report for school governors. Compare the layout choices. Which is more effective for its audience and why?",
+        "example_response": "The corridor notice uses large headings, short bullet points and bold key dates because pupils and parents walking past need to absorb the information in seconds. The governor report uses numbered sections, a comparison table of old versus new menus, and paragraphs of explanation because governors need to understand the reasoning behind the changes, not just what is changing. The notice would fail as a governor report because it lacks justification; the governor report would fail on a corridor because nobody would stop to read it. Effective layout matches the reader's context: how much time they have, what they need to do with the information, and where they are reading it.",
+        "common_errors": [
+          "Declares one format universally better without considering how audience and reading context affect effectiveness",
+          "Cannot suggest specific improvements to either format"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognises semi-colons, colons and dashes as distinct punctuation marks and names them correctly in example sentences.",
+        "example_task": "Name the punctuation mark used between the two parts of each sentence: (a) 'She was nervous: she had never performed before.' (b) 'The hall was silent; nobody dared to speak.' (c) 'The door opened \u2014 a cold wind rushed in.'",
+        "example_response": "(a) colon (b) semi-colon (c) dash.",
+        "common_errors": [
+          "Confuses semi-colon with colon, calling both 'colons'",
+          "Calls the dash 'a long hyphen' or 'a line'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses colons to introduce an explanation or elaboration and semi-colons to link two balanced, related independent clauses, with guided support.",
+        "example_task": "Punctuate each pair of sentences using either a semi-colon or a colon. Explain your choice: (a) 'The match was cancelled ___ the pitch was waterlogged.' (b) 'Some pupils prefer reading ___ others prefer writing.'",
+        "example_response": "(a) The match was cancelled: the pitch was waterlogged. (Colon because the second clause explains why the match was cancelled.) (b) Some pupils prefer reading; others prefer writing. (Semi-colon because the two clauses are balanced and contrasting, with neither explaining the other.)",
+        "common_errors": [
+          "Uses a semi-colon where a colon is needed (when the second clause explains the first)",
+          "Puts a capital letter after the semi-colon or colon"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Deploys semi-colons, colons and dashes correctly in independent writing, understanding and articulating the different relationship each mark signals between clauses.",
+        "example_task": "Write three versions of the same pair of ideas using (a) a colon, (b) a semi-colon, (c) a dash. The ideas: 'The experiment failed' and 'The chemicals were contaminated.' Explain the different effect of each.",
+        "example_response": "(a) The experiment failed: the chemicals were contaminated. (The colon announces an explanation - the second clause reveals WHY the experiment failed.) (b) The experiment failed; the chemicals were contaminated. (The semi-colon balances two related facts with equal weight, as if reporting both events side by side.) (c) The experiment failed \u2014 the chemicals were contaminated. (The dash creates a dramatic pause, as if the contamination is a sudden revelation or afterthought.)",
+        "common_errors": [
+          "Uses all three marks identically without differentiating the relationship they signal",
+          "Creates a dependent clause after the colon rather than an independent clause ('The experiment failed: because the chemicals were contaminated')"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analyses an author's choice of punctuation between clauses in published writing, evaluating how the choice affects tone, pace and reader interpretation.",
+        "example_task": "The author wrote: 'She opened the door \u2014 the room was empty.' Why did the author choose a dash rather than a colon or semi-colon? How would the effect change with each alternative?",
+        "example_response": "The dash creates a moment of sudden discovery, as if the character and the reader find out at the same moment that the room is empty. It mimics the surprise of the experience. A colon ('She opened the door: the room was empty') would feel more explanatory and controlled, as if the narrator is calmly presenting information, which removes the shock. A semi-colon ('She opened the door; the room was empty') would balance the two clauses evenly, creating a factual, detached tone more suited to a report than a narrative moment. The dash is the best choice because the passage is building tension and the punctuation must match the character's experience of surprise.",
+        "common_errors": [
+          "Says the dash 'sounds more dramatic' without explaining what the reader experiences differently",
+          "Analyses the content of the clauses but not the specific contribution of the punctuation choice"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognises that a colon can introduce a list and identifies the colon's function in example sentences.",
+        "example_task": "Find the colon that introduces a list: 'You will need the following items: a pencil, a ruler, a rubber, and a sharpener.' What does the colon do?",
+        "example_response": "The colon after 'items' introduces the list. It tells the reader that the list is about to begin.",
+        "common_errors": [
+          "Points to the commas separating list items rather than the colon that introduces the list",
+          "Does not recognise the colon's function as a signal for what follows"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses colons to introduce lists after a complete clause and recognises when the introductory clause is incomplete (and therefore a colon is wrong).",
+        "example_task": "Which sentence uses the colon correctly? (a) 'The school offers three sports: football, netball, and cricket.' (b) 'I enjoy: football, netball, and cricket.' Explain why one is wrong.",
+        "example_response": "(a) is correct because 'The school offers three sports' is a complete clause before the colon. (b) is wrong because 'I enjoy' is not a complete sentence on its own - the colon interrupts the verb and its object.",
+        "common_errors": [
+          "Does not check whether the clause before the colon is complete",
+          "Places colons after verbs or prepositions ('I need: a pen, a ruler')"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Uses colons to introduce lists and semi-colons within lists that contain internal commas, preventing ambiguity.",
+        "example_task": "Punctuate this sentence correctly using a colon and semi-colons: 'The expedition requires the following items warm waterproof boots a sleeping bag rated to minus ten and emergency rations including chocolate dried fruit and cereal bars.'",
+        "example_response": "The expedition requires the following items: warm, waterproof boots; a sleeping bag rated to minus ten; and emergency rations, including chocolate, dried fruit, and cereal bars.",
+        "common_errors": [
+          "Uses only commas throughout, creating ambiguity about where one item ends and the next begins",
+          "Does not recognise that internal commas within list items make semi-colons necessary for clarity"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Creates well-punctuated complex lists independently across genres and evaluates when semi-colons within lists are needed for clarity versus when commas suffice.",
+        "example_task": "Write a sentence listing three achievements of a school, each with a qualifying phrase. Use a colon and semi-colons correctly. Then write a simpler list about the same school where commas are sufficient. Explain why the punctuation differs.",
+        "example_response": "Complex list: The school achieved remarkable results this year: winning the regional athletics championship, their first title in a decade; raising over three thousand pounds for charity, surpassing all previous totals; and completing the new sensory garden, which involved every year group from Reception to Year 6. Simple list: The school excels in three areas: sport, fundraising, and community projects. The first list needs semi-colons because each item contains internal commas (qualifying phrases with their own commas would blur the boundaries between items). The second list uses commas because the items are short and contain no internal punctuation.",
+        "common_errors": [
+          "Uses semi-colons in simple lists where commas would suffice, over-punctuating unnecessarily",
+          "Writes list items of inconsistent grammatical structure (mixing noun phrases with full clauses)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognises that a hyphen joins words together and is different from a dash, and identifies hyphens in example compound words.",
+        "example_task": "Which of these use a hyphen correctly? (a) a well-known author (b) the author is well known (c) a man-eating shark (d) a man eating - shark",
+        "example_response": "(a) correct - 'well-known' is hyphenated because it comes before the noun 'author'. (c) correct - 'man-eating' is hyphenated to show the shark eats men.",
+        "common_errors": [
+          "Cannot distinguish between a hyphen (short, joins words) and a dash (longer, separates clauses)",
+          "Thinks all word pairs need hyphens regardless of position in the sentence"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies compound modifiers that need hyphens to avoid ambiguity and uses hyphens with common prefixes that precede vowels.",
+        "example_task": "Add hyphens where needed and explain why: (a) 'a man eating shark' (b) 'I need to re enter my password' (c) 'a long term plan' (d) 'she is well known'.",
+        "example_response": "(a) 'a man-eating shark' - without the hyphen, it could mean a man who is eating shark. (b) 're-enter' - the hyphen separates the prefix 're' from 'enter' because two e's together would be confusing. (c) 'a long-term plan' - 'long-term' is a compound modifier before the noun 'plan'. (d) No hyphen needed - 'well known' comes after the verb 'is', not before a noun.",
+        "common_errors": [
+          "Misses the ambiguity in 'man eating shark' and does not see two possible meanings",
+          "Hyphenates after the verb ('she is well-known') when the compound is not pre-modifying a noun"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Uses hyphens to prevent ambiguity in compound modifiers and prefixed words in own writing, and explains how the hyphen changes meaning.",
+        "example_task": "Explain the difference in meaning between each pair: (a) 'a little used car' and 'a little-used car' (b) 'recover the sofa' and 're-cover the sofa' (c) 'twenty odd people' and 'twenty-odd people'.",
+        "example_response": "(a) 'A little used car' means a small second-hand car. 'A little-used car' means a car that has not been used very much. (b) 'Recover the sofa' means to get the sofa back. 'Re-cover the sofa' means to put new fabric on it. (c) 'Twenty odd people' suggests twenty strange people. 'Twenty-odd people' means approximately twenty people.",
+        "common_errors": [
+          "Explains only one meaning of each pair without articulating the contrasting meaning",
+          "Understands the examples but cannot apply the same logic to new compound modifiers in own writing"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Applies hyphenation conventions consistently in extended writing, including complex compounds and less common prefix patterns, and evaluates ambiguous cases where style guides differ.",
+        "example_task": "Decide whether each needs a hyphen and explain your reasoning: (a) 'a state of the art facility' (b) 'highly skilled workers' (c) 'the post war period' (d) 'co operate with the police' (e) 'a two hundred year old tree'.",
+        "example_response": "(a) 'a state-of-the-art facility' - the entire phrase modifies 'facility', so all words are hyphenated as one compound modifier. (b) No hyphen - 'highly' ends in -ly, and adverbs ending in -ly are not hyphenated to the adjective that follows. (c) 'the post-war period' - prefix 'post' before a root word needs a hyphen, especially before a short word. (d) 'co-operate' - the prefix 'co' before a vowel ('o') needs a hyphen to avoid the double 'oo' (though some style guides now accept 'cooperate'). (e) 'a two-hundred-year-old tree' - the entire phrase is a compound modifier before the noun.",
+        "common_errors": [
+          "Hyphenates after -ly adverbs ('a highly-skilled worker'), which is incorrect",
+          "Applies rules inconsistently, hyphenating some compound modifiers but not others in the same piece of writing"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognises bullet points as a way of presenting items in a list format and understands their basic function in organising information.",
+        "example_task": "Look at this set of classroom rules written as bullet points. Why has the teacher used bullet points instead of writing one long paragraph?",
+        "example_response": "Bullet points make each rule stand out separately so pupils can read and remember them one at a time. A paragraph would be harder to scan quickly.",
+        "common_errors": [
+          "Says bullet points are just decoration or 'make it look neat'",
+          "Does not understand that bullet points are a functional text organisation device"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses bullet points to organise information in own writing and begins to apply consistent punctuation within a bulleted list.",
+        "example_task": "Rewrite this as a bulleted list with correct punctuation: 'To make a cup of tea you need a kettle, a mug, a tea bag, milk, and a spoon.'",
+        "example_response": "To make a cup of tea, you will need:\n\u2022 a kettle\n\u2022 a mug\n\u2022 a tea bag\n\u2022 milk\n\u2022 a spoon.",
+        "common_errors": [
+          "Writes an incomplete introductory clause that cannot stand alone ('You need:')",
+          "Mixes capitalisation, capitalising some bullet items and not others"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Distinguishes between two bullet point styles (bullets completing a lead-in sentence vs. freestanding sentences) and applies punctuation consistently within each style.",
+        "example_task": "Punctuate this bulleted list in two different ways: first as bullets completing the introductory clause, then as freestanding sentences. The content: 'Our school values are: respect for others, a commitment to learning, honesty in all we do.'",
+        "example_response": "Style 1 (completing the clause):\nOur school values are:\n\u2022 respect for others\n\u2022 a commitment to learning\n\u2022 honesty in all we do.\n\nStyle 2 (freestanding sentences):\nOur school values are listed below.\n\u2022 We show respect for others.\n\u2022 We are committed to learning.\n\u2022 We are honest in all we do.",
+        "common_errors": [
+          "Adds full stops after every bullet in Style 1, even though the items complete a single sentence",
+          "Capitalises the first word in Style 1 when it continues the introductory clause"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Chooses between bullet point format and continuous prose based on audience, purpose and reading context, applying either style consistently and justifying the choice.",
+        "example_task": "You are writing two versions of recommendations about school uniform changes: one for a formal report to school governors and one for a poster in the school entrance. Should each use bullet points or prose? Write both versions and justify your layout choices.",
+        "example_response": "Governor report (bullet points): The following changes are recommended:\n\u2022 replacing the current blazer with a more affordable alternative\n\u2022 permitting black trainers for daily wear\n\u2022 introducing a school fleece for outdoor lessons.\nBullet points are appropriate because governors need to review specific proposals quickly during a meeting. Each point can be discussed and voted on separately.\n\nSchool poster (prose): We are excited to announce some changes to our school uniform next year! You will be able to wear a new, more comfortable school fleece and smart black trainers. We are also introducing a new blazer that looks great and costs less.\nProse is better here because the audience (pupils and parents) needs to feel positive about the changes, and a friendly conversational tone achieves this better than a formal list.",
+        "common_errors": [
+          "Uses the same format for both audiences without considering how reading context affects the choice",
+          "Cannot justify the layout choice beyond 'it looks better this way'"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifies whether a simple sentence is active or passive when given a clear contrasting pair, understanding that the subject and object swap position.",
+        "example_task": "Which sentence is active and which is passive? (a) 'The dog chased the cat.' (b) 'The cat was chased by the dog.' How do you know?",
+        "example_response": "(a) is active because the dog (the one doing the chasing) comes first. (b) is passive because the cat (the one being chased) comes first and the dog is pushed to the end with 'by'.",
+        "common_errors": [
+          "Confuses active and passive with present and past tense",
+          "Thinks passive means the sentence describes something calm or inactive"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies subject and object in active sentences and transforms active to passive (and vice versa), recognising that the agent ('by...') can be omitted.",
+        "example_task": "Identify subject and object, then rewrite in passive: (a) 'The teacher praised the whole class.' (b) 'Someone vandalised the bus shelter.' For (b), decide whether to include or omit the agent.",
+        "example_response": "(a) Subject: the teacher. Object: the whole class. Passive: The whole class was praised by the teacher. (b) Subject: someone. Object: the bus shelter. Passive: The bus shelter was vandalised. (Agent omitted because 'by someone' adds nothing useful - the point is the vandalism, not who did it.)",
+        "common_errors": [
+          "Reverses subject and object, thinking the object is always at the end of the sentence",
+          "Always includes the agent ('by someone', 'by the teacher') without considering whether omission would be more effective"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Constructs passive sentences across different tenses, omits the agent where appropriate, and explains why passive voice is used in specific text types such as science reports and formal writing.",
+        "example_task": "Read this science write-up: 'The solution was heated to 80 degrees. The results were recorded every five minutes. No changes were observed.' Why does science writing use passive voice? Rewrite it in active voice and explain what is lost.",
+        "example_response": "Science writing uses passive voice to focus on what happened to the materials rather than who did it. This creates an objective, impersonal tone. Active version: 'I heated the solution to 80 degrees. I recorded the results every five minutes. I did not observe any changes.' The active version sounds personal and informal because 'I' draws attention to the scientist rather than the experiment. Science writing deliberately removes the person to emphasise the method and results, making the findings feel more universal and less dependent on one individual.",
+        "common_errors": [
+          "Confuses past tense with passive voice, thinking 'I heated' is passive because it describes a past action",
+          "Uses passive in all writing once learned, without selecting it purposefully for specific effect"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analyses how published writers and public figures use passive voice strategically to shift emphasis, avoid responsibility or create deliberate ambiguity, and evaluates the ideological effect of agent omission.",
+        "example_task": "A politician says: 'Mistakes were made in the handling of the crisis.' A journalist writes: 'The government made serious mistakes in handling the crisis.' Compare these sentences. Why might the politician choose passive voice?",
+        "example_response": "The politician uses passive voice ('Mistakes were made') to acknowledge that something went wrong while avoiding saying who made the mistakes. The agent is deliberately omitted, so nobody is held directly responsible. The journalist uses active voice ('The government made') to assign responsibility clearly and directly. The politician's passive construction is a strategic rhetorical choice, not a grammatical accident: it allows them to appear accountable ('I accept mistakes were made') without actually accepting personal or institutional blame. This shows that grammar is not neutral - the choice between active and passive can be ideological, controlling how information is framed and who takes responsibility.",
+        "common_errors": [
+          "Recognises the grammatical difference but does not analyse the political purpose of agent omission",
+          "Assumes passive voice is always bad writing rather than understanding it as a deliberate rhetorical strategy"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognises and correctly names the Year 6 grammatical terms (subject, object, active, passive, synonym, antonym) in clearly labelled examples.",
+        "example_task": "In the sentence 'The dog bit the man', identify the subject and the object. Then write a synonym and an antonym for 'big'.",
+        "example_response": "Subject: the dog (the one doing the biting). Object: the man (the one being bitten). Synonym for big: large. Antonym for big: small.",
+        "common_errors": [
+          "Confuses subject with 'what the sentence is about' (topic) rather than the grammatical doer of the action",
+          "Provides a synonym when asked for an antonym, or vice versa"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses the full set of Year 6 grammatical terms (subject, object, active, passive, synonym, antonym, ellipsis, hyphen, colon, semi-colon, bullet points) correctly in simple identification tasks.",
+        "example_task": "Label the grammatical feature in each example: (a) 'The window was broken.' (b) 'a well-known artist' (c) 'She could have apologised. She didn't.' (d) 'happy, joyful, content'",
+        "example_response": "(a) Passive voice - the subject ('the window') receives the action rather than performing it. (b) Hyphen - joins 'well' and 'known' to form a compound modifier before 'artist'. (c) Ellipsis - 'apologise' is omitted after 'didn't' because the reader already knows. (d) Synonyms - three words with similar meanings.",
+        "common_errors": [
+          "Confuses grammatical ellipsis (omitting words for cohesion) with the punctuation mark '...'",
+          "Can name the feature but cannot explain its function in the sentence"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Applies all Year 6 grammatical terms accurately when discussing real texts, using metalanguage naturally in both spoken discussion and written analysis.",
+        "example_task": "Read this passage and identify: (a) an example of passive voice and explain why the author used it, (b) a semi-colon linking independent clauses, (c) a hyphen avoiding ambiguity, (d) an example of ellipsis.",
+        "example_response": "(a) 'The village was destroyed by the flood' - passive voice puts the village (the affected object) first, emphasising the destruction rather than the flood as agent. (b) 'The hall was packed; every seat was taken' - the semi-colon links two balanced independent clauses that reinforce the same idea. (c) 'a well-known artist' - the hyphen prevents misreading 'well' as an adverb modifying 'known artist'. (d) 'She promised she would return. She never did.' - 'return' is omitted after 'did', creating a blunt, final effect.",
+        "common_errors": [
+          "Identifies each feature correctly but cannot explain its function or effect in context",
+          "Uses terms mechanically ('This is a semi-colon') without connecting to meaning"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Uses the full primary grammatical terminology fluently in sustained analytical writing, weaving metalinguistic discussion naturally into evaluation of authorial choices.",
+        "example_task": "Write a paragraph analysing the grammatical choices in this short extract, using at least five Year 6 terms accurately and explaining the effect of each.",
+        "example_response": "The author opens with passive voice ('The city was engulfed by flames') to foreground the city as victim, creating immediate sympathy. The expanded noun phrase 'the ancient, crumbling stone walls' builds a vivid image of age and fragility through pre-modification. A semi-colon connects two parallel clauses ('the towers fell; the bridges collapsed'), creating a rhythm of inevitable destruction. The dash before 'nothing survived' adds dramatic emphasis, isolating the final statement for maximum impact. The synonym choice of 'engulfed' rather than the simpler 'burned' conveys total, overwhelming destruction, with connotations of being swallowed whole.",
+        "common_errors": [
+          "Lists terms correctly but does not integrate them into a coherent analytical argument",
+          "Uses terms to label features without connecting them to meaning or authorial purpose"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifies academic vocabulary in context and distinguishes it from everyday vocabulary, understanding that some words are used specifically in school subjects.",
+        "example_task": "Which word is the academic vocabulary in each pair? (a) 'work out' or 'calculate' (b) 'look at' or 'observe' (c) 'old' or 'ancient'",
+        "example_response": "(a) calculate (b) observe (c) ancient. These are the words you would use in school writing and lessons rather than in everyday conversation.",
+        "common_errors": [
+          "Thinks academic vocabulary just means 'long words' or 'hard words'",
+          "Does not recognise that academic vocabulary can differ between subjects"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses academic vocabulary accurately in subject-specific contexts and recognises that the same word can have different precise meanings across subjects.",
+        "example_task": "The word 'evaluate' is used in different subjects. Write a sentence using 'evaluate' correctly in: (a) maths (b) English (c) science. How does the meaning differ?",
+        "example_response": "(a) Maths: Evaluate 3x + 2 when x = 5. (Meaning: calculate the numerical value.) (b) English: Evaluate how the author creates tension in this passage. (Meaning: judge effectiveness with reasoning.) (c) Science: Evaluate your method and suggest improvements. (Meaning: assess strengths and weaknesses of an approach.) In maths it means calculate, in English it means judge quality, and in science it means assess how well something worked.",
+        "common_errors": [
+          "Uses the word identically in all subjects without recognising the different precise meanings",
+          "Avoids academic vocabulary because it feels unfamiliar, defaulting to everyday alternatives"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Deploys nuanced vocabulary and academic language with precision in own writing across subjects, choosing words for their exact meaning rather than their impressiveness.",
+        "example_task": "Rewrite these sentences replacing vague vocabulary with precise academic language: (a) 'The thing got bigger over time.' (context: science) (b) 'The writer makes the reader feel sad.' (context: English) (c) 'There were lots of reasons for the war.' (context: history)",
+        "example_response": "(a) 'The population increased steadily over the observation period.' ('thing' replaced with specific noun; 'got bigger' replaced with precise verb; time frame specified.) (b) 'The author evokes a sense of loss through the imagery of the empty house.' ('makes the reader feel sad' replaced with specific technique and effect.) (c) 'Multiple interconnected factors contributed to the outbreak of war.' ('lots of reasons' replaced with precise academic framing.)",
+        "common_errors": [
+          "Replaces vague words with impressive-sounding words that do not fit the precise meaning ('The thing proliferated' when 'increased' is more accurate)",
+          "Over-uses academic vocabulary in contexts where simpler language would be clearer"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluates the precision of vocabulary choices in published academic and professional texts, identifying where word choice is effective and where it obscures meaning.",
+        "example_task": "Read these two sentences about climate change: (a) 'Global temperatures have risen significantly.' (b) 'Mean global surface temperatures have increased by approximately 1.1 degrees Celsius since the pre-industrial era.' Which is more effective as academic writing and why?",
+        "example_response": "Sentence (b) is more effective because every word is precise and specific: 'mean' specifies it is an average; 'global surface' specifies where the measurement applies; 'approximately 1.1 degrees Celsius' quantifies the change exactly; 'since the pre-industrial era' anchors the comparison in a specific time frame. Sentence (a) uses 'significantly', which is vague - it could mean statistically significant or just 'a lot'. In academic writing, precision matters because the reader needs to understand exactly what is being claimed in order to evaluate the evidence. However, sentence (a) might be more effective for a general audience, showing that the 'best' vocabulary depends on purpose and audience.",
+        "common_errors": [
+          "Declares the longer sentence 'better' without analysing what specific precision each word adds",
+          "Does not recognise that vocabulary effectiveness depends on audience and purpose, not just complexity"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C037",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Names and identifies the full range of primary punctuation marks in example sentences, including commas, apostrophes, inverted commas, colons, semi-colons, dashes, hyphens, brackets and ellipsis dots.",
+        "example_task": "Name the punctuation mark and explain its job: (a) 'The children's coats were soaked.' (b) 'She whispered, \"Follow me.\"' (c) 'The castle \u2014 built centuries ago \u2014 still stands today.'",
+        "example_response": "(a) Apostrophe - shows possession (the coats belong to the children). (b) Inverted commas - show the exact words someone said (direct speech). (c) Dashes - add extra information (parenthesis) about when the castle was built.",
+        "common_errors": [
+          "Confuses apostrophe for possession with apostrophe for contraction",
+          "Calls dashes 'hyphens' or 'lines'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses the full range of punctuation marks correctly in structured tasks, applying each mark for its specific purpose.",
+        "example_task": "Punctuate this passage correctly, using at least five different punctuation marks: 'my sisters friend who lives in Edinburgh said I cant believe its snowing in April the schools been closed and everyones stuck at home'",
+        "example_response": "My sister's friend, who lives in Edinburgh, said, \"I can't believe it's snowing in April! The school's been closed and everyone's stuck at home.\"",
+        "common_errors": [
+          "Uses commas where full stops are needed (comma splicing)",
+          "Confuses possessive apostrophe with plural ('sister's friend' vs 'sisters friend')"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Deploys the full range of punctuation marks accurately in independent writing, choosing each mark for its meaning and effect rather than applying it mechanically.",
+        "example_task": "Write a short paragraph (4-5 sentences) about a school trip that uses at least six different punctuation marks. After each sentence, note which marks you used and why.",
+        "example_response": "The coach left early \u2014 far too early for most of us. [Dash for dramatic emphasis.] Mrs Taylor, our form tutor, had planned every detail: the museum visit, the picnic, and the boat ride. [Commas for parenthesis and listing; colon to introduce the list.] 'Has everyone got their packed lunch?' she asked. [Inverted commas for direct speech; question mark; apostrophe in 'everyone'.] Nobody answered; we were all half-asleep. [Semi-colon linking two related independent clauses.] It turned out to be the best day we'd had all year. [Apostrophe for contraction 'we'd'; full stop for sentence demarcation.]",
+        "common_errors": [
+          "Uses some marks correctly but avoids others (typically avoiding semi-colons and colons)",
+          "Uses punctuation marks randomly as sophistication markers without connecting to meaning"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluates how punctuation choices affect meaning, pace and tone in published texts, and makes deliberate, justifiable punctuation choices in own extended writing.",
+        "example_task": "Read this extract where the author uses a semi-colon, a dash, a colon and ellipsis within four sentences. For each mark, explain what a different punctuation choice would have done to the meaning.",
+        "example_response": "The semi-colon in 'She paused; the audience waited' creates balanced tension between character and crowd. A full stop would break the connection. A comma would be a splice error. The dash in 'The answer was obvious \u2014 too obvious' adds sudden emphasis, as if the narrator is interrupting their own thought. A comma would make it feel like a calm aside rather than a jolt. The colon in 'She had one choice: to speak the truth' announces a reveal. A dash would feel more informal and dramatic, less considered. The ellipsis 'She opened her mouth...' creates suspension and uncertainty. A full stop would suggest she actually spoke. Each mark controls what the reader expects next.",
+        "common_errors": [
+          "Analyses the content of each sentence without discussing the specific contribution of the punctuation",
+          "States that punctuation 'adds effect' without explaining what specific effect each mark creates"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C038",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifies simple, compound and complex sentences in a text and understands that writers use a mixture for different purposes.",
+        "example_task": "Label each sentence as simple, compound or complex: (a) 'Lightning struck.' (b) 'The sky was dark and rain hammered the windows.' (c) 'Although the storm had passed, the streets were still flooded.'",
+        "example_response": "(a) Simple - one clause, one verb. (b) Compound - two main clauses joined by 'and'. (c) Complex - a main clause ('the streets were still flooded') with a subordinate clause ('Although the storm had passed').",
+        "common_errors": [
+          "Thinks 'complex' just means 'long', calling any long sentence complex",
+          "Confuses compound (two main clauses with a conjunction) with complex (main clause + subordinate clause)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Constructs simple, compound and complex sentences with control, varying sentence openings and structures within a paragraph.",
+        "example_task": "Write a paragraph about a thunderstorm using: one simple sentence for impact, one compound sentence to build detail, and one complex sentence with a subordinate clause at the start. Explain why you chose each structure.",
+        "example_response": "Lightning struck. [Simple for sudden impact - the short sentence mimics the shock.] Thunder followed immediately and the windows rattled in their frames. [Compound to build detail - two events happening together, connected by 'and'.] Although the storm lasted only twenty minutes, the garden was completely flooded by the time it ended. [Complex with fronted subordinate clause - the time contrast (short storm, big effect) is emphasised by putting the subordinate clause first.]",
+        "common_errors": [
+          "Writes three sentences of similar length and structure despite being asked to vary",
+          "Explains structure labels correctly but cannot articulate why each structure was chosen for its specific purpose"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Controls sentence structure consciously across an extended piece of writing, varying simple, compound, complex and multi-clause sentences for effect and demonstrating grammatical accuracy throughout.",
+        "example_task": "Redraft this passage to improve sentence variety and control. Annotate each change, explaining why: 'The explorers reached the cave. They went inside. It was dark. They couldn't see anything. They heard dripping water. They felt scared.'",
+        "example_response": "The explorers reached the cave and, without hesitating, went inside. [Compound with embedded phrase to show actions flowing together.] Darkness surrounded them; they could see nothing. [Semi-colon balances two closely related clauses, more sophisticated than a full stop.] Somewhere in the depths, water dripped. [Fronted adverbial creates suspense by placing the vague location first.] Fear crept in. [Short simple sentence after longer ones creates a sudden, tense shift in pace.]",
+        "common_errors": [
+          "Makes surface changes (adding adjectives) without actually varying sentence structure",
+          "Varies structure mechanically ('one short, one long, one short') without connecting structure to meaning and purpose"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analyses how professional authors use sentence structure to control pace, emphasis and reader experience, and transfers these techniques with metacognitive awareness to own writing.",
+        "example_task": "In this novel extract, the author uses a series of short declaratives followed by a single long periodic sentence. Analyse the structural choices, then write a paragraph on a different topic using the same technique. Explain how the structure creates meaning.",
+        "example_response": "Analysis: The short declaratives ('He stopped. He listened. Nothing.') create staccato rhythm that mirrors alertness and tension. Each sentence forces the reader to pause, mimicking the character's cautious movements. Then the long periodic sentence ('Through the trees, beyond the ridge, where the path narrowed to almost nothing and the branches closed overhead like a tunnel, something moved') delays the main clause, building suspense through the accumulation of subordinate phrases. The reader waits for the subject, just as the character waits to see what is there.\n\nOwn paragraph: The boat stopped. The engine died. Silence. Across the flat grey water, where the fog hung low and thick and the far shore had disappeared completely, something surfaced.\n\nThe short sentences establish stillness. The periodic sentence mirrors the slow revelation, with the delayed subject ('something surfaced') arriving after layers of scene-setting that build unease.",
+        "common_errors": [
+          "Copies the surface pattern (short-short-long) without understanding the underlying principle of delayed resolution",
+          "Analyses the published extract well but cannot transfer the technique to own writing with control"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C039",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognises and names the core word classes (noun, verb, adjective, adverb, pronoun, preposition, conjunction, determiner) in straightforward example sentences.",
+        "example_task": "Name the word class of each underlined word: 'The tall boy ran quickly through the park and he smiled.'",
+        "example_response": "The = determiner, tall = adjective, boy = noun, ran = verb, quickly = adverb, through = preposition, park = noun, and = conjunction, he = pronoun, smiled = verb.",
+        "common_errors": [
+          "Confuses adjective and adverb, especially when adverbs modify verbs rather than adjectives",
+          "Identifies 'the' as an adjective rather than a determiner"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses the full primary grammatical terminology (including clause, phrase, subject, object, active, passive, synonym, antonym) correctly in simple analytical tasks.",
+        "example_task": "Analyse this sentence using grammatical terminology: 'The old castle, which had been abandoned for centuries, was finally demolished.' Identify: the subject, a relative clause, and whether the voice is active or passive.",
+        "example_response": "Subject: The old castle. Relative clause: 'which had been abandoned for centuries' (gives extra information about the castle, introduced by 'which'). Voice: passive ('was demolished' - the castle receives the action; we are not told who demolished it).",
+        "common_errors": [
+          "Identifies the subject as 'The old castle which had been abandoned for centuries' (including the relative clause within the subject)",
+          "Says the voice is passive 'because it happened in the past' rather than because the subject receives the action"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Applies the full primary grammatical terminology fluently when analysing real texts, using terms precisely to discuss function and effect rather than simply labelling.",
+        "example_task": "Read this passage from a newspaper report. Identify and explain: (a) a passive construction and why the journalist used it, (b) a noun phrase with pre- and post-modification, (c) an example of a cohesive adverbial linking paragraphs.",
+        "example_response": "(a) 'Three homes were destroyed' - passive voice because the focus is on the homes (the affected objects) rather than the storm (the agent). The journalist foregrounds human impact. (b) 'The small, terraced houses on Elm Street' - 'small' and 'terraced' are premodifiers; 'on Elm Street' is a prepositional phrase acting as postmodifier. Together they give precise identification. (c) 'Meanwhile' at the start of paragraph three links back to the events in paragraph two, showing simultaneous actions in different locations.",
+        "common_errors": [
+          "Correctly identifies grammatical features but describes their effect vaguely ('it makes it better')",
+          "Analyses each feature in isolation without connecting to the text's overall purpose or the journalist's choices"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Uses the full primary terminology fluently in sustained analytical writing, demonstrating that a word's function can change depending on its position in a sentence and deploying metalanguage with natural confidence.",
+        "example_task": "The word 'light' appears three times in this short text, each time as a different word class. Identify each use, name the word class, and explain how the context determines function: (a) 'The light faded.' (b) 'She wore a light jacket.' (c) 'Please light the candle.'",
+        "example_response": "(a) 'light' is a noun - it is the subject of the sentence, the thing that faded. The determiner 'The' signals that a noun follows. (b) 'light' is an adjective - it modifies the noun 'jacket', describing its weight. It sits in the position between a determiner ('a') and a noun, which is a typical adjective slot. (c) 'light' is a verb - it is the imperative form giving a command. 'Please' signals a request, and 'light' tells the listener what to do. This demonstrates that word class is not fixed to a word - it depends on how the word functions in its sentence. The same spelling can serve different grammatical purposes, and a reader determines the word class from the surrounding structure.",
+        "common_errors": [
+          "Correctly identifies each word class but cannot explain how grammatical context (position, surrounding words) determines function",
+          "Treats word class as a fixed property of words rather than a function of how words are used in sentences"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C040",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognises the present perfect form ('have/has + past participle') and understands that it describes a past action connected to the present moment.",
+        "example_task": "What is the difference between 'I ate my lunch' and 'I have eaten my lunch'?",
+        "example_response": "'I ate my lunch' simply tells you it happened in the past. 'I have eaten my lunch' means I ate it and it matters now - perhaps because I am full and do not want any more food.",
+        "common_errors": [
+          "Treats both sentences as meaning exactly the same thing",
+          "Does not understand why the present perfect links a past action to a present state"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Forms present perfect and past perfect sentences correctly and distinguishes them from simple past, understanding that each form places events at different points in time.",
+        "example_task": "Complete each sentence with the correct form and explain your choice: (a) 'Yesterday, I (go/went/have gone) to the dentist.' (b) 'By the time we arrived, the film (started/has started/had started).'",
+        "example_response": "(a) Yesterday, I went to the dentist. Simple past because 'yesterday' is a specific, completed time in the past. Present perfect ('have gone') would not work with a specific past time. (b) By the time we arrived, the film had started. Past perfect because the film starting happened before we arrived - it is the earlier of two past events.",
+        "common_errors": [
+          "Uses present perfect with a specific past time ('I have gone yesterday')",
+          "Cannot distinguish past perfect from present perfect, using 'had' and 'have' interchangeably"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Uses present perfect, past perfect and simple past forms correctly and purposefully in extended writing, understanding how each form positions events in temporal relationship to each other.",
+        "example_task": "Write a short narrative passage (3-4 sentences) that uses simple past, present perfect and past perfect. Explain why each tense form is needed.",
+        "example_response": "Last summer, we visited our grandparents in Wales. [Simple past: a completed action at a specific time.] Before we arrived, Grandad had already prepared a barbecue. [Past perfect: 'had prepared' happened before 'arrived', so the earlier of two past events uses past perfect.] We have been back three times since then. [Present perfect: connects the past visits to the present moment - 'since then' means the time period is still continuing and we may visit again.]",
+        "common_errors": [
+          "Avoids past perfect entirely, using simple past for everything ('Before we arrived, Grandad already prepared a barbecue')",
+          "Uses past perfect for all past events rather than reserving it for the earlier of two past actions"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Selects between simple past, present perfect and past perfect with precision to control temporal relationships and narrative perspective, and uses timelines to explain complex tense sequences.",
+        "example_task": "Write the opening of a story that begins in the present, then flashes back to an earlier event using at least two different perfect forms. Draw a simple timeline showing when each event occurs and explain your tense choices.",
+        "example_response": "I have always known this house held secrets. [Present perfect: a state that began in the past and continues to the present.] Even as a child, I had sensed something strange about the attic. [Past perfect: the childhood sensing happened before the current narration - it is the earliest past event.] The first time I climbed the stairs alone, the door swung open by itself. [Simple past: a specific event at a specific past time.] I had never mentioned it to anyone until now. [Past perfect: the silence lasted from that event until the present narration.]\n\nTimeline: childhood sensing (earliest, past perfect) > door incident (specific past, simple past) > years of silence (past perfect, lasting until now) > present narration ('I have always known', present perfect).\n\nThe present perfect establishes the narrator's current state. The past perfect creates a 'past within the past' for flashback. The simple past anchors the key story event. Together, the tense forms create layers of time that orient the reader.",
+        "common_errors": [
+          "Switches between tenses inconsistently without purposeful control of temporal relationships",
+          "Cannot explain why past perfect is needed for flashback ('past within the past') as distinct from simple past"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C041",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Understands that a noun phrase can be expanded beyond a single noun by adding words before or after it, and identifies expanded noun phrases in example sentences.",
+        "example_task": "Which noun phrase gives you more detail? (a) 'a dog' (b) 'a small, scruffy terrier with a torn ear'. What extra information does the expanded version give?",
+        "example_response": "(b) gives more detail. 'Small' and 'scruffy' describe the dog's size and appearance, 'terrier' tells us the breed, and 'with a torn ear' adds a specific physical detail. Together they create a precise picture of the dog.",
+        "common_errors": [
+          "Identifies only the adjectives and misses the prepositional phrase 'with a torn ear' as part of the noun phrase",
+          "Thinks expanding a noun phrase just means adding adjectives"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Expands basic noun phrases using both pre-modification (adjectives, determiners) and post-modification (prepositional phrases, relative clauses), and understands that each addition shapes meaning.",
+        "example_task": "Expand the noun phrase 'a castle' in three stages: (1) add a modifier before the noun, (2) add a prepositional phrase after the noun, (3) add a relative clause. Explain what each addition contributes.",
+        "example_response": "(1) 'An ancient castle' - 'ancient' tells the reader how old it is. (2) 'An ancient castle on the cliff edge' - the prepositional phrase tells us where it is. (3) 'An ancient castle on the cliff edge, which had been abandoned for centuries' - the relative clause adds history and creates atmosphere.",
+        "common_errors": [
+          "Only adds adjectives before the noun, not recognising that prepositional phrases and relative clauses are also noun phrase expansion",
+          "Adds modifiers that repeat each other rather than adding new information ('a big, large, enormous castle')"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Uses expanded noun phrases purposefully in own writing to convey precise information concisely, choosing modifiers for their contribution to meaning rather than decoration.",
+        "example_task": "Write two descriptions of the same character. In the first, use a basic noun phrase. In the second, expand the noun phrase to convey the character's personality, appearance and situation in a single sentence. Explain what each modifier contributes.",
+        "example_response": "Basic: 'A woman stood at the door.'\nExpanded: 'A tall, sharp-eyed woman in a dark suit, who clearly had no intention of leaving, stood at the door.'\n'Tall' suggests physical presence and authority. 'Sharp-eyed' implies she notices everything (personality). 'In a dark suit' suggests formality and seriousness (appearance/context). 'Who clearly had no intention of leaving' reveals her determination (personality/situation). The expanded noun phrase conveys character, mood and tension in a single sentence, which is more efficient than spreading this information across multiple sentences.",
+        "common_errors": [
+          "Adds decorative modifiers that do not contribute to meaning ('The beautiful, amazing, incredible woman')",
+          "Creates noun phrases so long that the sentence becomes difficult to follow - the main verb is buried"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analyses how published authors use expanded noun phrases as a precision tool and evaluates when expansion serves the writing versus when it clutters it.",
+        "example_task": "Compare these two sentences from different genres: (a) Science textbook: 'The small, brightly coloured tree frog of the South American rainforest.' (b) Novel: 'A frog.' Which is more effective in its context and why? Then write a noun phrase for a formal report and a narrative, explaining how audience and purpose change the expansion.",
+        "example_response": "The science textbook expands the noun phrase because precision is essential: 'small' (size), 'brightly coloured' (appearance), 'tree' (type), 'of the South American rainforest' (habitat). Each modifier adds specific scientific information the reader needs. The novel's 'A frog' is equally effective in its context because the author wants simplicity and immediacy - perhaps the frog is unexpected, and the short phrase creates surprise. Expansion is not always better; it depends on what the reader needs.\n\nFormal report: 'The outdated, poorly maintained heating system in the Year 5 building, which has failed three times this term' - each modifier provides evidence for the argument.\n\nNarrative: 'The old radiator clanked.' - minimal expansion; the verb 'clanked' does the character work more efficiently than stacking adjectives.",
+        "common_errors": [
+          "Assumes longer noun phrases are always better, without considering that brevity can be more powerful in some contexts",
+          "Cannot distinguish between expansion that adds meaning and expansion that merely adds words"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y6-C042",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Understands that paragraphs group related ideas together and that a new paragraph signals a shift in topic, time, place or speaker.",
+        "example_task": "Read this passage. Where should the paragraph breaks be? Explain why: 'The Romans arrived in Britain in AD 43. They built roads, towns and forts across the country. Many years later, the Romans left Britain. The country changed greatly after they departed. Towns fell into disrepair and trade routes collapsed.'",
+        "example_response": "Paragraph 1: 'The Romans arrived in Britain in AD 43. They built roads, towns and forts across the country.' (Both sentences are about the Romans arriving and what they built.) Paragraph 2: 'Many years later, the Romans left Britain. The country changed greatly after they departed. Towns fell into disrepair and trade routes collapsed.' (These sentences are about the Romans leaving and the consequences.) The break comes at a shift in time ('Many years later') and topic (from arrival to departure).",
+        "common_errors": [
+          "Says paragraphs should change 'when it gets too long' rather than at a shift in content",
+          "Cannot identify the topic shift that signals where the paragraph break should go"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses topic sentences to open paragraphs and begins to use cohesive devices (pronouns, adverbials, repeated key words) to link ideas within and between paragraphs.",
+        "example_task": "Write two short paragraphs about school lunches. The first paragraph should argue for change; the second should acknowledge a counter-argument. Use a topic sentence in each paragraph and a cohesive link between them.",
+        "example_response": "School lunches need to be improved urgently. Many pupils report that the food is cold by the time they sit down, and the lack of variety means some children do not eat at all. A recent survey showed that 60% of Year 6 pupils bring packed lunches instead.\n\nHowever, it is important to recognise the budget constraints the kitchen faces. Preparing fresh meals for 400 children with limited funding is a significant challenge, and the catering team works hard within these limitations.\n\n[Topic sentences: 'School lunches need to be improved urgently' and 'However, it is important to recognise the budget constraints'. The cohesive link 'However' signals a shift to a counter-argument while connecting back to the previous paragraph's claim.]",
+        "common_errors": [
+          "Writes paragraphs without clear topic sentences, so the reader cannot predict what the paragraph will cover",
+          "Uses 'However' or 'On the other hand' mechanically without it logically connecting to what came before"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Paragraphs consistently and uses a range of cohesive devices (repetition, pronouns, adverbials, ellipsis, synonyms for key terms) to create smooth connections within and across paragraphs in extended writing.",
+        "example_task": "Write three connected paragraphs about a topic of your choice. Use at least three different cohesive devices across the paragraphs and annotate where you have used them.",
+        "example_response": "The Amazon rainforest is one of the most important ecosystems on Earth. It produces a significant proportion of the world's oxygen and is home to millions of species found nowhere else. [Topic sentence establishes the subject.]\n\nDespite its importance, this vital habitat is under threat. [Cohesive adverbial 'Despite its importance' links back to paragraph 1. Synonym: 'this vital habitat' replaces 'The Amazon rainforest' to avoid repetition while maintaining the reference.] Deforestation destroys an area the size of a football pitch every minute. The trees that took centuries to grow are reduced to ash in hours. [Pronoun reference: 'The trees' refers back to the forest established in paragraph 1.]\n\nConsequently, international action is urgently needed. [Cohesive adverbial 'Consequently' signals a result of the threat described in paragraph 2.] If this destruction continues, the damage will be irreversible. It is not too late - but time is running out. [Ellipsis: 'It is not too late' implies 'to act/to save the forest' without stating it, creating urgency.]",
+        "common_errors": [
+          "Uses cohesive adverbials that do not logically match the relationship between paragraphs ('Furthermore' when the connection is actually contrast)",
+          "Creates paragraphs that read as self-contained units rather than building on each other in a connected argument"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluates how cohesive devices in published texts create sustained arguments or narratives, and deploys paragraph structure and cohesion strategically for rhetorical effect.",
+        "example_task": "Read this extract from a speech where the speaker uses three paragraphs: one setting up a problem, one describing consequences, and one proposing a solution. Analyse how the cohesive devices guide the reader through the argument. Then identify one place where the cohesion could be strengthened.",
+        "example_response": "The first paragraph ends with the key term 'inequality', which the second paragraph picks up immediately ('This inequality'). This lexical repetition acts as a thread, carrying the reader forward. The second paragraph uses 'As a result' and 'Furthermore' to build a chain of escalating consequences, each one more serious than the last - this is not just repetition of ideas but accumulation, where each consequence feeds the next.\n\nThe transition to the third paragraph uses 'It does not have to be this way', which works as a cohesive pivot: the pronoun 'it' refers back to everything described in paragraphs one and two, while 'does not have to be' signals the shift to a solution. The paragraph then mirrors the structure of paragraph two (listing three actions) but replaces negative consequences with positive proposals, creating a satisfying rhetorical balance.\n\nThe weakest transition is between paragraphs one and two. 'This inequality' is effective, but the first paragraph ends abruptly without signalling that consequences will follow. Adding a sentence like 'The effects of this are devastating' would bridge the two paragraphs more smoothly, preparing the reader for the detailed consequences that follow.",
+        "common_errors": [
+          "Describes the content of each paragraph without analysing the specific cohesive mechanisms that connect them",
+          "Identifies cohesive devices but cannot evaluate their effectiveness or suggest improvements"
+        ]
+      }
+    ]
+  }
+]

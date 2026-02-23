@@ -1,0 +1,730 @@
+[
+  {
+    "concept_id": "MA-Y4-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying the value of each digit in a four-digit number using Dienes blocks (thousands cube, hundreds flat, tens rod, ones cube) on a place value mat.",
+        "example_task": "Build 2,365 with Dienes blocks on the place value mat. How many thousands, hundreds, tens and ones?",
+        "example_response": "2 thousands, 3 hundreds, 6 tens, 5 ones. The 2 is worth 2000, the 3 is worth 300, the 6 is worth 60, the 5 is worth 5.",
+        "common_errors": [
+          "Saying the 2 is worth 2 rather than 2000",
+          "Confusing the thousands cube with the hundreds flat when building the number"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Partitioning four-digit numbers into standard form (Th + H + T + O) using arrow cards, including numbers with zero placeholders.",
+        "example_task": "Partition 4,073 into thousands, hundreds, tens and ones. What does the 0 mean?",
+        "example_response": "4,073 = 4000 + 0 + 70 + 3. The 0 means there are no hundreds.",
+        "common_errors": [
+          "Writing 4,073 as 473 (omitting the zero placeholder)",
+          "Saying the 0 has no meaning rather than explaining it represents zero hundreds"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Stating the value of any digit in any four-digit number instantly, comparing and ordering four-digit numbers, and partitioning flexibly.",
+        "example_task": "What is the value of the 8 in 5,831? Order these: 3,456; 3,465; 3,546; 3,564.",
+        "example_response": "The 8 is worth 800. In order: 3,456; 3,465; 3,546; 3,564.",
+        "common_errors": [
+          "Saying the 8 is worth 80 (reading it as the tens digit)",
+          "Ordering by looking only at the last digit rather than comparing column by column from the left"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining how the place value system works multiplicatively — each column is 10 times the column to its right — and using this to reason about numbers up to 10,000.",
+        "example_task": "Why is 3,000 the same as 300 tens? Explain using place value.",
+        "example_response": "3,000 = 3 × 1000. Since 1000 = 100 × 10, that means 3,000 = 300 × 10 = 300 tens. Each column is worth 10 times the column to its right.",
+        "common_errors": [
+          "Knowing the answer but unable to explain the multiplicative relationship between columns",
+          "Confusing 300 tens with 30 tens"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting in 25s from 0 to 200 using 25p coins as concrete support.",
+        "example_task": "Place 25p coins in a line. Count the total: 25, 50, 75... Continue to 200.",
+        "example_response": "25, 50, 75, 100, 125, 150, 175, 200",
+        "common_errors": [
+          "Stumbling at 75 to 100 (saying 80 instead of 100)",
+          "Losing the pattern after 100 (e.g. saying 100, 200 instead of 100, 125)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Counting in 6s, 7s and 9s from 0, using a hundred square or known facts as support.",
+        "example_task": "Count in 7s from 0 to 70.",
+        "example_response": "0, 7, 14, 21, 28, 35, 42, 49, 56, 63, 70",
+        "common_errors": [
+          "Errors in the middle of the sequence (saying 42, 48 instead of 42, 49)",
+          "Adding 6 instead of 7 (confusing the 6 and 7 times table sequences)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Counting fluently in 6s, 7s, 9s, 25s and 1000s from any starting multiple, forwards and backwards.",
+        "example_task": "Start at 36. Count in 9s to 72. Count in 1000s from 3000 to 9000.",
+        "example_response": "36, 45, 54, 63, 72. 3000, 4000, 5000, 6000, 7000, 8000, 9000.",
+        "common_errors": [
+          "Needing to start from 0 to reach the given starting number",
+          "Counting backwards in 9s: errors at transitions (72, 62 instead of 72, 63)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading temperatures below zero on a large vertical number line (thermometer) and counting through zero.",
+        "example_task": "The temperature is 3°C. It drops by 5 degrees. Use the thermometer to count back. What is the new temperature?",
+        "example_response": "3, 2, 1, 0, –1, –2. The new temperature is –2°C.",
+        "common_errors": [
+          "Stopping at 0 and saying the answer is 0°C",
+          "Counting 3, 2, 1, 0, 1, 2 instead of going into negative numbers"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Ordering negative numbers and comparing them, including recognising that –7 is less than –3.",
+        "example_task": "Which is colder, –3°C or –7°C? Put these in order from coldest to warmest: 5°C, –2°C, 0°C, –6°C.",
+        "example_response": "–7°C is colder. Order: –6°C, –2°C, 0°C, 5°C.",
+        "common_errors": [
+          "Saying –3°C is colder because 3 < 7 (comparing absolute values)",
+          "Placing 0°C before the negative numbers in the order"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Calculating intervals that cross zero and using negative numbers in real-world contexts without a number line.",
+        "example_task": "The temperature at midnight was –4°C. By midday it was 9°C. What was the temperature rise?",
+        "example_response": "From –4 to 0 is 4 degrees, from 0 to 9 is 9 degrees. Total rise = 4 + 9 = 13 degrees.",
+        "common_errors": [
+          "Computing 9 – 4 = 5 (not accounting for the crossing of zero)",
+          "Computing 9 + 4 = 13 correctly but unable to explain why you add"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving multi-step problems involving negative numbers and explaining the reasoning.",
+        "example_task": "The temperature was –3°C. It rose by 8 degrees, then dropped by 12 degrees. What is the final temperature?",
+        "example_response": "–3 + 8 = 5°C. Then 5 – 12 = –7°C. The final temperature is –7°C.",
+        "common_errors": [
+          "Losing track of the sign at intermediate steps",
+          "Computing 5 – 12 as 7 instead of –7"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Rounding two-digit numbers to the nearest 10 using a number line showing the two bounding multiples.",
+        "example_task": "Round 47 to the nearest 10. Is it closer to 40 or 50?",
+        "example_response": "47 rounds to 50 because 47 is closer to 50 than to 40 (it is only 3 away from 50 but 7 away from 40).",
+        "common_errors": [
+          "Rounding 47 down to 40 (always rounding down)",
+          "Not knowing the rule for 5: 45 rounds up to 50"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Rounding three-digit numbers to the nearest 10 and 100, using the 'look at the next digit' rule.",
+        "example_task": "Round 463 to the nearest 10. Round 463 to the nearest 100.",
+        "example_response": "To nearest 10: 460 (the ones digit 3 is less than 5). To nearest 100: 500 (the tens digit 6 is 5 or more).",
+        "common_errors": [
+          "Looking at the wrong digit: rounding to nearest 100 but checking the ones digit",
+          "Rounding 463 to the nearest 100 as 400 (looking at the wrong digit)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Rounding any number to the nearest 10, 100 or 1000, and using rounding to estimate answers to calculations.",
+        "example_task": "Round 7,549 to the nearest 1000. Estimate 3,782 + 5,109 by rounding each to the nearest 1000.",
+        "example_response": "7,549 rounds to 8,000. Estimate: 4,000 + 5,000 = 9,000.",
+        "common_errors": [
+          "Rounding 7,549 to the nearest 1000 by looking at the tens digit (giving 7,500 instead of 8,000)",
+          "Forgetting to round both numbers when estimating"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading and writing Roman numerals I to X and matching them to Hindu-Arabic numerals.",
+        "example_task": "Write these in Roman numerals: 3, 7, 10.",
+        "example_response": "3 = III, 7 = VII, 10 = X.",
+        "common_errors": [
+          "Writing 4 as IIII instead of IV",
+          "Confusing V (5) and X (10)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading and writing Roman numerals using I, V, X, L and C, applying the subtractive rule for 4, 9, 40, 90.",
+        "example_task": "Write 49 in Roman numerals. What number is XCIV?",
+        "example_response": "49 = XLIX. XCIV = 94.",
+        "common_errors": [
+          "Writing 49 as IL (not valid — subtractive rule only works with adjacent values: I before V or X, X before L or C)",
+          "Reading IV as 6 (adding instead of subtracting)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Converting any number from 1 to 100 between Roman numerals and Hindu-Arabic, and explaining why the Roman system has no place value.",
+        "example_task": "Write 87 in Roman numerals. Why did the Roman system need separate symbols for 50 (L) and 100 (C)?",
+        "example_response": "87 = LXXXVII. The Roman system has no place value — the position of a digit does not change its value. So they needed different symbols for different amounts: L for 50 and C for 100. Our system uses position instead.",
+        "common_errors": [
+          "Confusing 87 with 78 when converting",
+          "Being unable to explain the difference between the place value system and the Roman system"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Completing columnar addition of two four-digit numbers with no exchanges (no carrying).",
+        "example_task": "Use column addition: 3,214 + 2,563.",
+        "example_response": "   3214\n+  2563\n------\n   5777\nNo carrying needed.",
+        "common_errors": [
+          "Misaligning digits (putting thousands under hundreds)",
+          "Adding from left to right rather than right to left"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Completing columnar addition and subtraction with exchanges (carrying/borrowing) in one or two columns.",
+        "example_task": "Use column subtraction: 5,432 – 2,876.",
+        "example_response": "5432 – 2876 = 2556. Borrowing needed in the ones (12 – 6 = 6), tens (2 – 7 requires borrow: 12 – 7 = 5), and hundreds (3 – 8 requires borrow: 13 – 8 = 5).",
+        "common_errors": [
+          "Forgetting to reduce the next column after borrowing",
+          "Subtracting the smaller digit from the larger regardless of position (e.g. 2 – 6 = 4 in the ones column)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reliably computing any four-digit addition or subtraction using formal columnar methods, with estimation to check.",
+        "example_task": "Work out 6,003 – 2,458. Estimate first.",
+        "example_response": "Estimate: 6,000 – 2,500 = 3,500. Formal: 6003 – 2458 = 3545. Cascading exchange through zeros: borrow from 6 thousands through the hundreds and tens.",
+        "common_errors": [
+          "Cascading exchange through zeros is the hardest case — pupils often get 6,003 – 2,458 wrong because three consecutive exchanges are needed",
+          "Not estimating first and therefore not catching large errors"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving multi-step problems requiring addition and subtraction of four-digit numbers and explaining the method.",
+        "example_task": "A school has 2,456 fiction books and 1,789 non-fiction books. They buy 325 more fiction books and donate 450 non-fiction books. How many books does the school have now?",
+        "example_response": "Fiction: 2,456 + 325 = 2,781. Non-fiction: 1,789 – 450 = 1,339. Total: 2,781 + 1,339 = 4,120.",
+        "common_errors": [
+          "Mixing up which operation to use for buying (add) vs donating (subtract)",
+          "Carrying errors across multiple sequential calculations"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recalling multiplication facts for the 6 and 9 times tables using known facts (e.g. 6 = 2 × 3, 9 = 10 – 1 strategy).",
+        "example_task": "What is 6 × 4? Use a fact you already know to help.",
+        "example_response": "6 × 4 = 24. I know 3 × 4 = 12, so 6 × 4 = double 12 = 24.",
+        "common_errors": [
+          "Confusing 6 × 4 with 6 + 4 = 10",
+          "Deriving correctly but slowly — not yet at recall speed"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recalling multiplication facts to 12 × 12 with increasing speed, including the hardest facts (6 × 7, 7 × 8, 8 × 9).",
+        "example_task": "Answer as quickly as you can: 7 × 8 = ? 9 × 6 = ? 12 × 7 = ?",
+        "example_response": "7 × 8 = 56. 9 × 6 = 54. 12 × 7 = 84.",
+        "common_errors": [
+          "Confusing 7 × 8 = 56 with 6 × 8 = 48",
+          "Knowing 9 × 6 but not 6 × 9 without recomputing"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Instant recall of all multiplication and related division facts to 12 × 12, applied in calculation and problem-solving.",
+        "example_task": "72 ÷ 8 = ? If 7 × 11 = 77, what is 770 ÷ 7?",
+        "example_response": "72 ÷ 8 = 9. 770 ÷ 7 = 110.",
+        "common_errors": [
+          "Division facts are less secure than multiplication facts (knowing 8 × 9 = 72 but hesitating on 72 ÷ 8)",
+          "Not connecting 770 ÷ 7 = 110 to the known fact 77 ÷ 7 = 11"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Multiplying a two-digit number by a one-digit number using the grid method as pictorial support.",
+        "example_task": "Use the grid method: 34 × 6.",
+        "example_response": "Grid: 30 × 6 = 180, 4 × 6 = 24. Total: 180 + 24 = 204.",
+        "common_errors": [
+          "Forgetting to add the partial products",
+          "Multiplying 3 × 6 = 18 instead of 30 × 6 = 180 (not partitioning correctly)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Multiplying two-digit and three-digit numbers by one digit using the compact (short multiplication) method with carrying.",
+        "example_task": "Use short multiplication: 247 × 3.",
+        "example_response": "7 × 3 = 21, write 1 carry 2. 4 × 3 = 12, + 2 = 14, write 4 carry 1. 2 × 3 = 6, + 1 = 7. Answer: 741.",
+        "common_errors": [
+          "Forgetting to add the carried digit (getting 721 instead of 741)",
+          "Writing the carry digit in the wrong column"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reliably completing short multiplication for any 2- or 3-digit × 1-digit calculation, checking with estimation.",
+        "example_task": "Work out 368 × 7. Estimate first.",
+        "example_response": "Estimate: 400 × 7 = 2,800. Calculation: 368 × 7 = 2,576. This is close to the estimate, so it looks correct.",
+        "common_errors": [
+          "Multiple carrying errors in sequence (particularly when carries occur in every column)",
+          "Not estimating first and therefore missing large errors"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving multi-step word problems that require short multiplication and explaining why the method works using place value.",
+        "example_task": "A box holds 256 crayons. A school orders 8 boxes. How many crayons in total? Explain how the short multiplication method uses place value.",
+        "example_response": "256 × 8 = 2,048. The method works column by column from right: 6 ones × 8 = 48 ones (write 8, carry 4 tens), 5 tens × 8 = 40 tens + 4 = 44 tens (write 4, carry 4 hundreds), 2 hundreds × 8 = 16 hundreds + 4 = 20 hundreds = 2 thousands.",
+        "common_errors": [
+          "Getting the calculation correct but unable to explain the place value reasoning behind the carries",
+          "Not writing the answer in context (missing the unit — crayons)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding all factor pairs of a number up to 20 by systematic trial with concrete arrays.",
+        "example_task": "Find all the ways to arrange 12 counters in equal rows. List the factor pairs of 12.",
+        "example_response": "1 × 12, 2 × 6, 3 × 4. Factor pairs: (1,12), (2,6), (3,4).",
+        "common_errors": [
+          "Missing the pair (3,4) and only finding (1,12) and (2,6)",
+          "Not knowing when to stop checking (checking 5, 6, 7... when 4 × 3 already found)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding factor pairs of numbers up to 50 systematically and using commutativity to reorder calculations.",
+        "example_task": "List all factor pairs of 36. Use commutativity to work out 4 × 13 × 25 efficiently.",
+        "example_response": "Factor pairs of 36: (1,36), (2,18), (3,12), (4,9), (6,6). For 4 × 13 × 25: rearrange to 4 × 25 × 13 = 100 × 13 = 1,300.",
+        "common_errors": [
+          "Missing (4,9) or (3,12) when listing factor pairs of 36",
+          "Not spotting that 4 × 25 = 100 makes the calculation easier"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Finding all factor pairs of numbers up to 100, distinguishing factors from multiples, and using factor pairs in mental calculation.",
+        "example_task": "Is 7 a factor of 42? Is 42 a multiple of 7? Explain the difference between factors and multiples.",
+        "example_response": "Yes, 7 is a factor of 42 because 42 ÷ 7 = 6 exactly. Yes, 42 is a multiple of 7 because 7 × 6 = 42. Factors divide the number exactly; multiples are the products of multiplying.",
+        "common_errors": [
+          "Confusing factors and multiples (saying '42 is a factor of 7')",
+          "Listing some factors of 42 as 7, 14, 21 (listing multiples of 7 instead of factors of 42)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Shading hundredths on a 10×10 grid and writing the decimal as 0.01 per square, using the grid as concrete support.",
+        "example_task": "Shade 23 squares on the hundredths grid. Write this as a decimal.",
+        "example_response": "0.23. Twenty-three hundredths.",
+        "common_errors": [
+          "Writing 0.023 (confusing hundredths with thousandths)",
+          "Miscounting the shaded squares on the grid"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying the value of each digit in a number with two decimal places and understanding that 10 hundredths = 1 tenth.",
+        "example_task": "What is the value of the 4 in 0.47? How many hundredths make one tenth?",
+        "example_response": "The 4 is worth 4 tenths (0.4). 10 hundredths make 1 tenth (0.10 = 0.1).",
+        "common_errors": [
+          "Saying the 4 is worth 4 hundredths (confusing its position)",
+          "Not understanding that 0.10 = 0.1"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Counting up and down in hundredths, comparing decimals with different numbers of decimal places, and connecting to fractions.",
+        "example_task": "Which is larger, 0.7 or 0.65? Explain. Write 0.45 as a fraction.",
+        "example_response": "0.7 is larger. 0.7 = 0.70, and 70 hundredths > 65 hundredths. 0.45 = 45/100 = 9/20.",
+        "common_errors": [
+          "Saying 0.65 > 0.7 because 65 > 7 (the most critical decimal misconception)",
+          "Not knowing how to simplify 45/100 to 9/20"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Generating equivalent fractions by shading fraction walls and comparing the sizes visually.",
+        "example_task": "Using the fraction wall, find a fraction equivalent to 1/2 with a denominator of 6.",
+        "example_response": "3/6. Looking at the fraction wall, 3 sixths takes up the same amount of space as 1 half.",
+        "common_errors": [
+          "Saying 2/6 (adding 1 to numerator and denominator) instead of 3/6",
+          "Not understanding why the fraction wall shows equivalence"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Generating families of equivalent fractions using the rule: multiply (or divide) numerator and denominator by the same number.",
+        "example_task": "Write three fractions equivalent to 2/5.",
+        "example_response": "4/10, 6/15, 8/20. I multiplied top and bottom by 2, then 3, then 4.",
+        "common_errors": [
+          "Multiplying only the numerator (writing 4/5, 6/5, 8/5)",
+          "Adding the same number instead of multiplying (writing 3/6, 4/7, 5/8)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using equivalent fractions to compare and order fractions with different denominators.",
+        "example_task": "Which is larger, 3/4 or 5/6? Show your working using a common denominator.",
+        "example_response": "Common denominator of 4 and 6 is 12. 3/4 = 9/12. 5/6 = 10/12. So 5/6 > 3/4.",
+        "common_errors": [
+          "Comparing numerators without finding a common denominator (saying 5/6 > 3/4 because 5 > 3)",
+          "Finding a common denominator but converting the fractions incorrectly"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using money to establish key equivalences: 50p = half of £1, 25p = quarter of £1.",
+        "example_task": "What fraction of £1 is 50p? What fraction of £1 is 25p? Write them as decimals.",
+        "example_response": "50p = 1/2 of £1 = £0.50. 25p = 1/4 of £1 = £0.25.",
+        "common_errors": [
+          "Writing 1/2 = 0.2 (confusing the decimal representation)",
+          "Not connecting 25p to a quarter of a pound"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Knowing decimal equivalents of tenths and key fractions: 1/2 = 0.5, 1/4 = 0.25, 3/4 = 0.75, 1/10 = 0.1.",
+        "example_task": "Write 3/4 as a decimal. Write 0.1 as a fraction.",
+        "example_response": "3/4 = 0.75. 0.1 = 1/10.",
+        "common_errors": [
+          "Writing 3/4 = 0.34 (reading the digits of the fraction as the decimal)",
+          "Writing 1/4 = 0.4 (using the denominator as the decimal digit)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Converting fluently between fraction and decimal forms for all tenths and key fractions, in measurement and money contexts.",
+        "example_task": "Convert 7/10 to a decimal. A plank is 0.75 m long. What fraction of a metre is that?",
+        "example_response": "7/10 = 0.7. 0.75 m = 3/4 of a metre.",
+        "common_errors": [
+          "Knowing 0.75 = 3/4 for money but not recognising it in a measurement context",
+          "Not being able to convert any tenth (e.g. 3/10 = 0.3) beyond the memorised facts"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding the area of a rectangle by counting unit squares on squared paper.",
+        "example_task": "Count the squares inside this 4 × 3 rectangle drawn on squared paper. What is its area?",
+        "example_response": "12 squares. The area is 12 cm².",
+        "common_errors": [
+          "Counting the perimeter squares instead of all interior squares",
+          "Miscounting by skipping a row"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding the area of a rectangle using length × width, and understanding area is measured in square units.",
+        "example_task": "A rectangle is 7 cm long and 5 cm wide. What is its area?",
+        "example_response": "Area = 7 × 5 = 35 cm².",
+        "common_errors": [
+          "Computing the perimeter (7 + 5 + 7 + 5 = 24) instead of the area",
+          "Forgetting the unit (writing 35 instead of 35 cm²)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Finding area of rectilinear shapes by decomposing into rectangles, and clearly distinguishing area from perimeter.",
+        "example_task": "Find the area of this L-shape by splitting it into two rectangles. The L-shape is 6 cm tall and 4 cm wide at the top, with a 2 cm × 3 cm section removed from the bottom right.",
+        "example_response": "Split into two rectangles: top rectangle 4 × 4 = 16 cm², bottom rectangle 2 × 2 = 4 cm². Alternatively: full 6 × 4 = 24, minus 2 × 3 = 6: 24 – 6 = 18 cm².",
+        "common_errors": [
+          "Not decomposing the shape correctly and double-counting or missing an area",
+          "Computing perimeter when asked for area"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Knowing the key metric conversion facts for length: 1 km = 1000 m, 1 m = 100 cm.",
+        "example_task": "How many centimetres in 1 metre? How many metres in 1 kilometre?",
+        "example_response": "100 cm in 1 m. 1000 m in 1 km.",
+        "common_errors": [
+          "Saying 1 m = 10 cm or 1 km = 100 m (confusing the multipliers)",
+          "Not remembering which unit is larger (thinking cm is bigger than m)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Converting between standard metric units in one direction (larger to smaller: multiply) for length, mass and capacity.",
+        "example_task": "Convert 3 km to metres. Convert 2.5 kg to grams.",
+        "example_response": "3 km = 3 × 1000 = 3000 m. 2.5 kg = 2.5 × 1000 = 2500 g.",
+        "common_errors": [
+          "Dividing instead of multiplying when converting to smaller units",
+          "Writing 2.5 kg = 250 g (multiplying by 100 instead of 1000)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Converting in both directions between all common metric units and using these in context.",
+        "example_task": "A jug holds 1,750 ml. How many litres and millilitres is that? A shelf is 250 cm long. How many metres?",
+        "example_response": "1,750 ml = 1 l 750 ml = 1.75 l. 250 cm = 250 ÷ 100 = 2.5 m.",
+        "common_errors": [
+          "Writing 1,750 ml = 17.5 l (dividing by 100 instead of 1000)",
+          "Multiplying when they should divide for smaller-to-larger conversion"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading coordinates from a labelled first-quadrant grid where both axes are marked in ones.",
+        "example_task": "What are the coordinates of point A on this grid? [A is at position (3, 5)]",
+        "example_response": "(3, 5). Along 3, up 5.",
+        "common_errors": [
+          "Reversing the coordinates: writing (5, 3) instead of (3, 5)",
+          "Reading the grid line number instead of the position (counting lines rather than spaces)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Plotting coordinates on a first-quadrant grid and describing positions using coordinate language.",
+        "example_task": "Plot the point (6, 2) on the grid. Plot the point (2, 6). Are they the same?",
+        "example_response": "[Plots (6, 2) correctly — 6 along, 2 up. Plots (2, 6) correctly — 2 along, 6 up.] No, they are different points. The order matters.",
+        "common_errors": [
+          "Plotting (6, 2) and (2, 6) at the same point",
+          "Not understanding that the first number is horizontal and the second is vertical"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using coordinates to describe positions, plot shapes and describe translations on a first-quadrant grid.",
+        "example_task": "A rectangle has corners at (1, 1), (1, 4) and (5, 1). What are the coordinates of the fourth corner?",
+        "example_response": "(5, 4). The fourth corner must complete the rectangle: same x as (5, 1) and same y as (1, 4).",
+        "common_errors": [
+          "Guessing (4, 5) by simply combining the other numbers",
+          "Not recognising that opposite corners of a rectangle share x or y coordinates"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Sorting triangles into right-angled, equilateral and isosceles by looking at their side lengths and angles using concrete shape tiles.",
+        "example_task": "Sort these triangles into three groups: right-angled, equilateral and isosceles.",
+        "example_response": "[Groups triangles correctly by measuring sides with a ruler and checking for right angles with a set square]",
+        "common_errors": [
+          "Classifying by appearance only (prototypical shapes) rather than by measurement",
+          "Not recognising that a triangle can be both right-angled and isosceles"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Classifying quadrilaterals (square, rectangle, parallelogram, rhombus, trapezium) by their properties.",
+        "example_task": "What properties make a shape a parallelogram? Is a rectangle a parallelogram?",
+        "example_response": "A parallelogram has two pairs of parallel sides. Yes, a rectangle is a special parallelogram because it also has 2 pairs of parallel sides (plus right angles).",
+        "common_errors": [
+          "Saying rectangles and parallelograms are completely different shapes",
+          "Not recognising a tilted square as a square"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Classifying any triangle or quadrilateral from a description or diagram, using precise property-based reasoning.",
+        "example_task": "A shape has 4 sides, all the same length, but no right angles. What is it? Explain why it is not a square.",
+        "example_response": "It is a rhombus. A square also has 4 equal sides, but a square must have right angles. A rhombus does not need right angles.",
+        "common_errors": [
+          "Saying it must be a square because all sides are equal",
+          "Not knowing the name 'rhombus'"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying a vertical line of symmetry in common shapes using a mirror or by folding.",
+        "example_task": "Does this shape have a line of symmetry? Use the mirror to check.",
+        "example_response": "Yes, if I place the mirror down the middle, both halves are the same. It has a vertical line of symmetry.",
+        "common_errors": [
+          "Only checking for vertical symmetry and missing horizontal or diagonal lines",
+          "Saying a shape has symmetry when the fold does not match exactly"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying all lines of symmetry in regular polygons and completing a symmetric figure given one line of symmetry on squared paper.",
+        "example_task": "How many lines of symmetry does a regular pentagon have? Complete this shape so it is symmetric about the dotted line.",
+        "example_response": "A regular pentagon has 5 lines of symmetry. [Completes the shape by reflecting each point the same distance on the other side of the line]",
+        "common_errors": [
+          "Thinking a regular pentagon has only 1 line of symmetry",
+          "Reflecting points inaccurately (not counting squares carefully)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying all lines of symmetry in 2-D shapes in any orientation and explaining whether a shape has 0, 1, or multiple lines of symmetry.",
+        "example_task": "Does this parallelogram (not a rectangle) have any lines of symmetry? Explain.",
+        "example_response": "No. A parallelogram that is not a rectangle or rhombus has 0 lines of symmetry. If you fold it along any line, the two halves do not match.",
+        "common_errors": [
+          "Saying a parallelogram has 2 lines of symmetry (confusing symmetry with parallel sides)",
+          "Not testing by folding or using a mirror, and guessing instead"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y4-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading plotted points on a time graph and answering 'what was the value at time X?' questions.",
+        "example_task": "This graph shows temperature over the day. What was the temperature at 12:00?",
+        "example_response": "The temperature at 12:00 was 18°C. [Reads from the plotted point]",
+        "common_errors": [
+          "Reading the wrong axis (giving the time when asked for the temperature)",
+          "Misreading the scale on the y-axis"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading values between plotted points (interpolation) and describing the overall trend of a time graph.",
+        "example_task": "The graph shows temperature readings at 10:00 (14°C) and 12:00 (18°C). Estimate the temperature at 11:00.",
+        "example_response": "About 16°C. The line goes up evenly between 14 and 18, so halfway (11:00) is about 16.",
+        "common_errors": [
+          "Only reading plotted points and not estimating between them",
+          "Saying 'I can't tell because there is no data point at 11:00'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Interpreting time graphs to describe trends, calculate changes, and compare different data sets on the same graph.",
+        "example_task": "Between which two hours did the temperature rise the fastest? How much did it rise in total from 8:00 to 16:00?",
+        "example_response": "The temperature rose fastest between 10:00 and 12:00 (the line is steepest there — it went up 4°C in 2 hours). Total rise from 8:00 (10°C) to 16:00 (20°C) = 10°C.",
+        "common_errors": [
+          "Identifying the steepest section by looking at the highest point rather than the steepest slope",
+          "Computing the total change incorrectly (subtracting from the wrong values)"
+        ]
+      }
+    ]
+  }
+]

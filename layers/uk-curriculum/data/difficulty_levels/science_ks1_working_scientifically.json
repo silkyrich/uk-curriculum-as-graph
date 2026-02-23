@@ -1,0 +1,835 @@
+[
+  {
+    "concept_id": "SC-KS1-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Asking simple questions about things they observe, using stems such as 'What is it?' and 'What does it do?', with teacher prompting.",
+        "example_task": "Look at this plant. Can you think of a question about it? Start with 'I wonder...'",
+        "example_response": "I wonder why the leaves are green. I wonder how tall it will grow.",
+        "common_errors": [
+          "Asking questions that are statements in disguise ('I wonder it is green')",
+          "Only asking questions about things they already know the answer to"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Asking questions that can be answered by observing or finding out, beginning to distinguish between questions they can investigate and questions they need to research.",
+        "example_task": "Here are some seeds. Think of two questions: one we could find out by watching, and one we would need to look up in a book.",
+        "example_response": "We could watch to find out how many days it takes to grow a shoot. We would need to look in a book to find out what country the seeds come from.",
+        "common_errors": [
+          "Confusing 'find out by watching' with 'find out by asking the teacher'",
+          "Asking only research questions and not considering observation"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Asking questions that lead to a simple test or comparison, using stems like 'What would happen if...?' and 'Which one is best for...?'",
+        "example_task": "We have three different paper towels. Think of a question we could test about them.",
+        "example_response": "Which paper towel soaks up the most water? We could pour water on each one and see which holds the most.",
+        "common_errors": [
+          "Asking questions that are too broad to test ('Which paper towel is best?' without specifying what 'best' means)",
+          "Asking questions that cannot be answered by a simple test ('Why was this paper towel invented?')"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Independently generating testable questions and suggesting how they might be investigated, choosing between observation, testing, sorting or research.",
+        "example_task": "You notice that puddles disappear faster on sunny days. Think of a question about this that we could investigate, and say how you would find out.",
+        "example_response": "Does a puddle in the sun disappear faster than one in the shade? I would put the same amount of water in two trays — one in the sun and one in the shade — and check which dries up first.",
+        "common_errors": [
+          "Suggesting a method that does not match the question asked",
+          "Not considering how to make the comparison fair (different amounts of water)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Looking at an object or organism and describing one or two things they notice using everyday language, with teacher prompting.",
+        "example_task": "Look at this leaf with a magnifying glass. Tell me one thing you can see.",
+        "example_response": "I can see little lines on the leaf.",
+        "common_errors": [
+          "Describing what they expect to see rather than what they actually observe",
+          "Giving a single-word answer ('green') without describing what they notice"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using more than one sense to observe carefully and describing several features, beginning to use simple scientific vocabulary.",
+        "example_task": "Pick up this piece of bark. Use your eyes and your fingers to observe it carefully. Describe three things you notice.",
+        "example_response": "It feels rough and bumpy. It is brown on the outside and lighter inside. I can see tiny holes in it.",
+        "common_errors": [
+          "Relying only on sight and not using other senses",
+          "Describing the object's name or use rather than its observable features"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Making detailed observations using appropriate senses and simple equipment (hand lens), recording what they see through drawings or words with increasing precision.",
+        "example_task": "Use a hand lens to observe this snail. Draw what you see and label three features.",
+        "example_response": "Drawing shows the shell with spiral pattern, two long tentacles with eyes, the soft body (foot) underneath. Labels: shell, tentacles, foot.",
+        "common_errors": [
+          "Drawing from memory rather than from careful observation (e.g. adding features not visible)",
+          "Holding the hand lens too far from the object to get a clear view"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Comparing observations of two or more specimens, noting similarities and differences in detail, and using observations as evidence to answer a question.",
+        "example_task": "Observe these two different leaves with a hand lens. Describe how they are similar and how they are different. Which tree do you think each one comes from?",
+        "example_response": "Both leaves are green and have veins. The oak leaf has wavy edges with rounded bumps, and the holly leaf has spiky points and is shiny and thick. The oak leaf is from an oak tree because of the wavy shape. The holly leaf is from a holly tree because it is shiny and prickly.",
+        "common_errors": [
+          "Noting only differences and not similarities, or vice versa",
+          "Making identification guesses without linking them to observed features"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Following a teacher-led investigation step by step, observing what happens and describing the result with support.",
+        "example_task": "We are going to test which toy car rolls the furthest on carpet and on the wooden floor. Watch what happens when I let go of each car. Which went further?",
+        "example_response": "The car on the wooden floor went further.",
+        "common_errors": [
+          "Describing what they wanted to happen rather than what actually happened",
+          "Not watching carefully enough to notice the difference"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Carrying out a simple test with a partner, following given instructions, and recording the result in a simple format.",
+        "example_task": "Test which of these three materials is the most waterproof. Drip the same number of water drops onto each one. Record what happens in the table.",
+        "example_response": "Foil: water stayed on top (waterproof). Paper towel: water soaked in straight away (not waterproof). Plastic bag: water stayed on top (waterproof).",
+        "common_errors": [
+          "Using different numbers of drops on each material without realising it makes the test unfair",
+          "Recording only 'yes' or 'no' without describing what they observed"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Setting up a simple comparative test with some independence, keeping one thing the same while changing another, and describing what the results show.",
+        "example_task": "Test which material would make the best raincoat for teddy. You have fabric, paper and plastic. Plan your test and carry it out.",
+        "example_response": "I will pour the same amount of water on each material. I will keep the pieces the same size. The plastic kept teddy dry, the fabric let a bit through, and the paper went soggy. Plastic would make the best raincoat because it is the most waterproof.",
+        "common_errors": [
+          "Changing more than one thing at a time (different amounts of water and different sized pieces)",
+          "Choosing the material they like best rather than the one the evidence supports"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Planning and carrying out a simple test independently, explaining why they kept things the same to make it fair, and suggesting what they would do differently next time.",
+        "example_task": "Plan a test to find out which paper towel is the strongest when wet. Carry out your test and explain your results.",
+        "example_response": "I hung a wet piece of each paper towel over a ruler and added coins one at a time until it tore. I used the same size piece each time to make it fair. Brand B held 8 coins, Brand A held 5, and Brand C held 3. Brand B is the strongest. Next time I would test each one three times to check my results are right.",
+        "common_errors": [
+          "Not explaining why keeping things the same matters for fairness",
+          "Not thinking about how to improve the test when reflecting"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Sorting objects into two given groups based on a single observable property, with teacher support.",
+        "example_task": "Sort these objects into two groups: things that are hard and things that are soft.",
+        "example_response": "Hard: stone, metal spoon, wooden block. Soft: sponge, teddy bear, cotton wool.",
+        "common_errors": [
+          "Placing an object based on what it looks like rather than testing it by touch",
+          "Being unsure where to place objects that are in between (e.g. a rubber ball)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Sorting objects into groups using a criterion they have chosen themselves, and explaining their sorting rule.",
+        "example_task": "Here are ten different animals. Sort them into two groups. You choose how to sort them. Explain your rule.",
+        "example_response": "I sorted them into animals with legs and animals without legs. Animals with legs: dog, bird, frog, spider. Animals without legs: fish, snake, worm, snail, starfish, jellyfish.",
+        "common_errors": [
+          "Choosing a criterion that does not clearly divide all objects (e.g. 'big' and 'small' where sizes overlap)",
+          "Not being able to explain their sorting rule clearly"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Sorting the same set of objects in more than one way using different criteria, and recording groupings using a simple table or Venn diagram.",
+        "example_task": "Sort these leaves into groups in two different ways. Record each grouping in a table and explain your sorting rules.",
+        "example_response": "First sort: by shape — round leaves and long leaves. Second sort: by edge — smooth edges and jagged edges. Some leaves moved groups because an oak leaf is round but has jagged edges.",
+        "common_errors": [
+          "Thinking there is only one correct way to sort the leaves",
+          "Using colour as the only criterion rather than exploring different features"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Creating a simple branching sorting system (yes/no questions) to identify objects within a set, and explaining why certain criteria are more useful than others for classification.",
+        "example_task": "Make a sorting chart using yes/no questions to help someone identify which of these six minibeasts they have found.",
+        "example_response": "Does it have legs? Yes → Does it have more than six legs? Yes → spider. No → Does it have wings? Yes → ladybird. No → ant. No legs → Is it long and thin? Yes → worm. No → snail or slug: Does it have a shell? Yes → snail. No → slug.",
+        "common_errors": [
+          "Asking questions that do not clearly split the group into two (e.g. 'Is it nice?')",
+          "Creating a chart that does not successfully identify all specimens"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Saying what happened in a simple investigation, describing the result using everyday language with teacher prompting.",
+        "example_task": "We put ice cubes in a warm place and a cold place. What happened?",
+        "example_response": "The ice cube in the warm place melted. The one in the cold place did not melt yet.",
+        "common_errors": [
+          "Describing what they expected rather than what actually happened",
+          "Giving a one-word answer without describing what they observed"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describing results and beginning to connect them to the question asked, using 'because' to offer a simple reason.",
+        "example_task": "We tested which surface the toy car rolled furthest on. Look at our results table. What did we find out?",
+        "example_response": "The car rolled furthest on the smooth floor and shortest on the carpet. I think the carpet slowed it down because it is bumpy and rough.",
+        "common_errors": [
+          "Stating the result without connecting it to a reason",
+          "Offering a reason based on preference ('because I like the smooth floor') rather than evidence"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using evidence from an investigation to answer the original question, distinguishing between what the evidence shows and what they think or wish.",
+        "example_task": "We tested three materials to find the best one for an umbrella. Write a conclusion using our results. Start with 'Our results show that...'",
+        "example_response": "Our results show that the plastic was the most waterproof because no water got through. The fabric let some water through and the paper went soggy. The best material for an umbrella would be plastic because it keeps the rain out.",
+        "common_errors": [
+          "Writing 'I think...' without referring to the evidence",
+          "Concluding that the material they predicted would win did win, even when the evidence shows otherwise"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Drawing a conclusion supported by evidence, noticing when results are surprising or unexpected, and suggesting what they could investigate next.",
+        "example_task": "We grew cress in light and in darkness. The cress in the dark grew taller but was yellow and thin. The cress in the light was shorter but green and strong. What can you conclude? Was anything surprising?",
+        "example_response": "Plants need light to be healthy and green, but the cress in the dark still grew taller, which surprised me. It grew tall and thin because it was trying to reach the light. I would like to find out if the dark cress would turn green if we moved it into the light.",
+        "common_errors": [
+          "Not recognising the surprising result (dark cress growing taller)",
+          "Concluding simply that 'plants need light' without addressing the unexpected observation"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recording a simple observation through a drawing or by telling the teacher, with support for structure.",
+        "example_task": "Draw the plant you have been growing. Show what it looks like today.",
+        "example_response": "A drawing showing a pot with soil, a small green stem and two leaves. The child has used green and brown colours appropriately.",
+        "common_errors": [
+          "Drawing a fully grown plant from imagination rather than the actual seedling in front of them",
+          "Not including key observable features like the number of leaves"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recording findings using a given format such as a partially completed table or an observation sheet with headings, adding labels to drawings.",
+        "example_task": "Fill in this table to show what happened when we tested each material for waterproofness. Write 'waterproof' or 'not waterproof' for each.",
+        "example_response": "Plastic bag: waterproof. Paper: not waterproof. Tin foil: waterproof. Cotton fabric: not waterproof.",
+        "common_errors": [
+          "Leaving rows blank or writing unrelated information",
+          "Copying a partner's table rather than recording their own observations"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Choosing an appropriate way to record findings — drawing, table, pictogram or written sentences — and including labels, headings or a title.",
+        "example_task": "We measured how tall our bean plants grew each week. Choose a way to show our results so other children can understand them.",
+        "example_response": "A bar chart or pictogram showing plant height each week, with a title ('How our bean plant grew'), labelled axes (Week 1, 2, 3, 4; Height in cm), and bars of increasing height.",
+        "common_errors": [
+          "Choosing a recording method that does not clearly show the data (e.g. a drawing instead of a chart for numerical data)",
+          "Forgetting to label axes or include a title"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Recording findings clearly and accurately using more than one format (e.g. a labelled diagram and a results table), explaining why the chosen format helps communicate the findings.",
+        "example_task": "Record what we found out about the minibeasts in our school garden. Use at least two different ways to show our findings.",
+        "example_response": "A tally chart showing how many of each minibeast we found, plus labelled drawings of the three most common ones showing key features. 'I used a tally chart so you can see which was most common, and drawings so you can see what they look like.'",
+        "common_errors": [
+          "Using two formats that show the same information without adding anything new",
+          "Not explaining why they chose their recording methods"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Noticing a simple repeated occurrence when prompted by the teacher, such as 'it happens every time'.",
+        "example_task": "We have been recording the weather for two weeks. Look at our chart. What do you notice?",
+        "example_response": "It rained a lot. There were more rainy days than sunny days.",
+        "common_errors": [
+          "Focusing on a single day's weather rather than looking across the whole period",
+          "Describing what they remember rather than reading the chart"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying a simple pattern in a set of observations or results, using language like 'every time' or 'most of them'.",
+        "example_task": "We sorted these animals into groups by where they live. Look at the animals that live in water. What pattern can you see?",
+        "example_response": "Most of the animals that live in water have smooth, slippery bodies. They all have fins or flippers to help them swim.",
+        "common_errors": [
+          "Describing individual animals rather than what they have in common",
+          "Claiming a pattern from just one or two examples"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying patterns in data they have collected and using the pattern to make a simple generalisation.",
+        "example_task": "Look at our plant growth chart over six weeks. Describe the pattern you can see.",
+        "example_response": "The plant grew a little bit each week. It grew the most between week 3 and week 4. The pattern is that it kept getting taller every week — it never got shorter.",
+        "common_errors": [
+          "Describing only the first and last measurements without discussing the pattern in between",
+          "Confusing the pattern with a single observation ('It was tallest in week 6')"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using an observed pattern to make a prediction and explaining why the pattern might exist.",
+        "example_task": "We recorded day length each month from September to March. The days got shorter until December and then started getting longer. Predict what will happen next and explain why.",
+        "example_response": "I predict the days will keep getting longer until June because the pattern shows they get shorter until December and then get longer again. This happens every year because of the seasons — summer has long days and winter has short days.",
+        "common_errors": [
+          "Making a prediction without linking it to the observed pattern",
+          "Thinking the days will keep getting longer forever rather than recognising the seasonal cycle"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding a piece of information from a book, photograph or video when directed by the teacher.",
+        "example_task": "Look at this picture of a penguin. Can you find out what penguins eat? Use this book to help you.",
+        "example_response": "The book says penguins eat fish.",
+        "common_errors": [
+          "Guessing the answer without looking at the source",
+          "Looking at pictures only and not attempting to read captions or labels"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using a non-fiction book or simple source to find specific information to answer a given question, with some independence.",
+        "example_task": "Use this book about animals to find out three facts about where hedgehogs live and what they eat.",
+        "example_response": "Hedgehogs live in hedges and gardens. They eat slugs, snails and beetles. They sleep in nests of leaves in winter.",
+        "common_errors": [
+          "Copying whole sentences from the book rather than selecting relevant facts",
+          "Giving facts about the wrong animal from the same book"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Choosing an appropriate source (book, photograph, video) to answer a specific question and reporting what they found, distinguishing the answer from their own opinion.",
+        "example_task": "We want to find out how long it takes a caterpillar to become a butterfly. Choose a source from the book corner or our class videos to find the answer.",
+        "example_response": "I used the 'Life Cycles' book. It says a caterpillar takes about two weeks in a chrysalis before it becomes a butterfly. The whole life cycle from egg to butterfly takes about a month.",
+        "common_errors": [
+          "Choosing a source that does not contain the needed information and not switching to another",
+          "Mixing up their own ideas with what the source actually says"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using more than one source to find information, noticing when sources agree or give different details, and explaining which source was most useful.",
+        "example_task": "Find out what frogs eat. Use at least two different sources. Do they agree?",
+        "example_response": "The book says frogs eat insects and slugs. The video also showed a frog catching a fly with its tongue, and it said they eat spiders too. Both sources agree that frogs eat insects, but the video gave more detail about how they catch them with their sticky tongue. The video was more useful because I could see it happening.",
+        "common_errors": [
+          "Using only one source and claiming they used two",
+          "Not noticing differences between what different sources say"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C039",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Understanding that we can test two things to see which is better for a purpose, by trying both and comparing the results, with teacher guidance.",
+        "example_task": "We want to find out which ball bounces higher: a tennis ball or a rubber ball. Watch me drop them both from the same height. Which bounced higher?",
+        "example_response": "The rubber ball bounced higher than the tennis ball.",
+        "common_errors": [
+          "Not watching carefully enough to compare",
+          "Saying the ball they like best bounced higher, regardless of what happened"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Carrying out a simple comparative test with a partner, keeping one condition the same while comparing two or more options.",
+        "example_task": "Test which of these three toy cars rolls the furthest on carpet. Drop each car from the same ramp. Measure how far each rolls.",
+        "example_response": "We dropped each car from the top of the ramp onto the carpet. Car A rolled 45cm, Car B rolled 62cm, Car C rolled 38cm. Car B rolled the furthest.",
+        "common_errors": [
+          "Releasing cars from different points on the ramp",
+          "Not measuring from the same starting point for each car"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Planning and carrying out a comparative test, identifying what to keep the same to make the test fair, and recording results in a simple table.",
+        "example_task": "Plan a comparative test to find out which type of paper is strongest when wet. You have tissue paper, printer paper and card. What will you keep the same?",
+        "example_response": "I will use the same size piece of each paper. I will wet each one with the same amount of water and wait the same time. Then I will hang each over a pencil and add coins until it tears. I will keep the same: piece size, amount of water, waiting time. I will change: the type of paper. I will measure: how many coins it holds. Results: tissue — 2 coins, printer paper — 7 coins, card — 12 coins.",
+        "common_errors": [
+          "Not identifying all the variables that need to stay the same",
+          "Using different sized pieces and not realising this makes the test unfair"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluating a comparative test, identifying what could be improved to make results more reliable, and explaining why fair testing matters.",
+        "example_task": "Another group tested which paper towel is most absorbent by dipping each one in water and seeing how wet it got. They used different sized pieces. What is wrong with their test? How would you improve it?",
+        "example_response": "Their test is not fair because the pieces are different sizes — a bigger piece will absorb more water just because it is bigger, not because it is more absorbent. To improve it, they should cut all pieces to the same size, dip each in the same amount of water for the same time, then measure how much water each absorbed by squeezing it out and measuring. They should also test each one two or three times to check their results are reliable.",
+        "common_errors": [
+          "Not identifying the unfairness in the test",
+          "Suggesting improvements without explaining why the original test was flawed"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C040",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Observing something at two different times and noticing that it has changed, with teacher prompting.",
+        "example_task": "We photographed this plant last week and today. Look at both pictures. What has changed?",
+        "example_response": "It has got taller. There are more leaves now.",
+        "common_errors": [
+          "Saying 'nothing changed' because the change was small",
+          "Describing the plant now without comparing to before"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Making repeated observations at regular intervals and recording them, noticing changes over several days or weeks.",
+        "example_task": "Observe our bean plant every Monday and record what you see. After four weeks, describe how it has changed.",
+        "example_response": "Week 1: tiny shoot just above the soil. Week 2: stem 5cm tall with two small leaves. Week 3: stem 12cm, four leaves, starting to lean towards the window. Week 4: stem 20cm, six leaves, small tendrils appearing. It grew taller each week and developed more leaves.",
+        "common_errors": [
+          "Not recording consistently each week",
+          "Writing the same observation every week without noting specific changes"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Planning a systematic observation schedule, recording changes accurately using drawings and measurements, and describing the pattern of change observed.",
+        "example_task": "We want to observe how ice melts at room temperature. Plan how you would record observations over time.",
+        "example_response": "I would check the ice every 10 minutes. Each time I would describe what it looks like, measure how much water has collected in the dish, and take a photograph. After all observations I would describe the pattern: the ice gets smaller each time, there is more and more water, and the melting is fastest at the beginning when the ice has the most surface showing.",
+        "common_errors": [
+          "Checking too rarely to see the change happening (every hour for fast-melting ice)",
+          "Not recording consistently, missing some observation points"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using observations over time to identify patterns and make predictions about future change, and suggesting how to make the observation more reliable.",
+        "example_task": "We measured shadows from a stick at 9am, 12pm and 3pm. The shadow was long in the morning, shortest at midday, and long again in the afternoon. Predict what the shadow would be like at 6pm and explain why.",
+        "example_response": "At 6pm the shadow would be very long because the sun would be low in the sky near sunset. The pattern shows that shadows are longest when the sun is low (morning and evening) and shortest when the sun is highest (midday). I predict the 6pm shadow would be even longer than the 3pm one. To make this more reliable, we could repeat it on several different days and measure the shadow length with a ruler rather than just describing it. We must never look directly at the Sun.",
+        "common_errors": [
+          "Predicting the shadow would be the same as at 3pm rather than longer",
+          "Not recognising that the observation-over-time method reveals a pattern"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C041",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using a hand lens to look at an object more closely, with teacher demonstration of how to hold it.",
+        "example_task": "Use this magnifying glass to look at the leaf. Hold it close to the leaf and look through it. What can you see?",
+        "example_response": "I can see tiny veins on the leaf. The edge is not smooth — it has tiny bumps.",
+        "common_errors": [
+          "Holding the magnifying glass too far from the object",
+          "Moving the object instead of the lens to get focus"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using a hand lens and a simple ruler to make observations and measurements, selecting the appropriate equipment for the task.",
+        "example_task": "Measure the length of this caterpillar using a ruler, then look at it closely with a hand lens. Record what you find.",
+        "example_response": "The caterpillar is about 3cm long. With the hand lens I can see it has tiny legs near the front and stumpy legs further back. It has stripes along its body and tiny hairs.",
+        "common_errors": [
+          "Not starting measurement from zero on the ruler",
+          "Using only the ruler or only the hand lens, not both"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Selecting appropriate equipment for an investigation (hand lens, ruler, balance scale, timer) and explaining why that equipment is needed.",
+        "example_task": "We want to find out which rock is the heaviest and which has the most interesting texture. Which equipment do you need? Why?",
+        "example_response": "To find the heaviest rock I need balance scales to compare the mass of each one — I cannot tell just by holding them because some small rocks are surprisingly heavy. To see the texture closely I need a hand lens to observe the grain size and crystal patterns that are too small to see with my eyes alone.",
+        "common_errors": [
+          "Thinking they can judge which is heaviest by holding them (unreliable for similar masses)",
+          "Not explaining why the equipment is better than just using their senses"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using equipment carefully to improve the accuracy of observations, recognising that equipment helps us notice things our senses alone might miss.",
+        "example_task": "Why do scientists use equipment like magnifying glasses, thermometers and rulers rather than just guessing? Give an example where equipment gave a different result from what you expected.",
+        "example_response": "Equipment gives us more accurate and reliable results than our senses. Our hands are not good at judging exact temperatures — water that feels warm might be 30°C or 40°C, but a thermometer tells us exactly. When I used a balance to weigh two rocks that felt the same weight in my hands, one was actually 20g heavier. The hand lens showed me that what I thought was a smooth pebble actually had tiny crystals on its surface. Equipment helps us measure and observe things precisely, which is important for fair testing and accurate results.",
+        "common_errors": [
+          "Not giving a specific example from their own experience",
+          "Not connecting equipment use to the idea of accuracy and reliability"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C042",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Telling another person what they found out in a simple investigation, using everyday language.",
+        "example_task": "Tell your partner what happened when we put the ice in the warm water.",
+        "example_response": "The ice melted. The water got a bit colder. The ice got smaller and smaller until it was all gone.",
+        "common_errors": [
+          "Saying 'it melted' without describing what they observed happening",
+          "Being too brief for the partner to understand what happened"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Communicating findings using some scientific vocabulary and more than one method (talk and a simple drawing or table).",
+        "example_task": "Draw what happened to the ice cube and write one sentence to explain your drawing. Use the word 'melted'.",
+        "example_response": "Three drawings showing the ice cube getting smaller with a puddle of water growing around it. Sentence: 'The ice cube melted because the warm water heated it up and turned it from a solid into a liquid.'",
+        "common_errors": [
+          "Drawing without labels or an explanation",
+          "Using everyday words when a scientific word has been taught (e.g. 'went away' instead of 'melted')"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Communicating scientific findings clearly using appropriate vocabulary, a labelled diagram or chart, and a written conclusion.",
+        "example_task": "Create a poster to share the results of our plant growth investigation with another class. Include a diagram, results and a conclusion.",
+        "example_response": "Poster with title 'Does light affect plant growth?', labelled diagram showing two plants (one in light, one in dark), a bar chart comparing heights after three weeks, and a conclusion: 'The plant in the light grew taller and was green. The plant in the dark grew thin and yellow. Plants need light to grow healthily.'",
+        "common_errors": [
+          "Including results without a conclusion, or a conclusion without the supporting results",
+          "Forgetting to label the diagram or include units on the chart"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Adapting communication for different audiences, choosing the most effective way to present findings, and using scientific vocabulary precisely.",
+        "example_task": "Explain the results of our materials investigation to: (1) a Reception child and (2) a Year 3 child. How would you change what you say?",
+        "example_response": "To a Reception child: 'We tried to see which thing water goes through. The plastic kept the water out. The paper got all soggy!' To a Year 3 child: 'We tested three materials for waterproofness by dripping measured amounts of water on each. Our results showed that plastic was waterproof, fabric was water-resistant, and paper was absorbent. We concluded that plastic is the best material for keeping water out because it is impermeable.' I changed the vocabulary and detail for each audience.",
+        "common_errors": [
+          "Using the same language for both audiences",
+          "Oversimplifying for the older child or using too-complex terms for the younger one"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C043",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Noticing that something has changed since they last looked at it, when prompted to compare.",
+        "example_task": "We left a wet painting on the table this morning. Look at it now. What has changed?",
+        "example_response": "It was wet before and now it is dry. The colours look different too — lighter.",
+        "common_errors": [
+          "Not remembering what it looked like before",
+          "Describing only what it looks like now without comparing to before"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recording specific changes at two or more time points and describing what is different each time.",
+        "example_task": "Draw our tadpoles today and compare your drawing with the one you did two weeks ago. What has changed?",
+        "example_response": "Two weeks ago they were small and just had tails. Now some of them have tiny back legs starting to grow. Their bodies are a bit bigger and rounder. The tail is still there but the legs are new.",
+        "common_errors": [
+          "Drawing from imagination rather than observation",
+          "Not noting specific new details like the developing legs"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Systematically recording changes over multiple time points and describing the pattern or sequence of change observed.",
+        "example_task": "We have been recording the school tree every month since September. Look at our observation diary. Describe the pattern of changes.",
+        "example_response": "In September the tree had green leaves. In October the leaves turned yellow and brown. In November most leaves had fallen and we could see bare branches. In December the tree was completely bare. In January and February it stayed bare. The pattern shows the tree losing its leaves gradually over autumn and staying bare through winter. It is deciduous.",
+        "common_errors": [
+          "Describing only the most dramatic change (all leaves falling) and missing the gradual process",
+          "Not connecting the observations into a sequence or pattern"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Predicting what will happen next based on observed changes, and explaining what would need to happen for the pattern to continue.",
+        "example_task": "Based on our tree observation diary from September to February, predict what will happen to the tree in March, April and May. What conditions are needed?",
+        "example_response": "In March I predict the buds will start to appear on the branches because the days are getting longer and warmer. In April the buds will open into new leaves — small and light green at first. By May the tree should be fully covered in leaves. This pattern happens because longer days and warmer temperatures in spring trigger the tree to start growing again. If spring is colder than usual, the leaves might appear later.",
+        "common_errors": [
+          "Predicting the leaves will appear suddenly rather than gradually",
+          "Not connecting the predicted changes to the environmental conditions (light and warmth)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C044",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Sorting objects into two given groups using a single criterion, following teacher instructions.",
+        "example_task": "Sort these buttons into two groups: big buttons and small buttons.",
+        "example_response": "Child places large buttons in one group and small buttons in another.",
+        "common_errors": [
+          "Sorting by colour instead of size",
+          "Being unsure where medium-sized buttons should go"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Choosing their own criterion for sorting a set of objects and explaining their decision clearly.",
+        "example_task": "Here are ten shells. Sort them into groups. You decide the rule. Explain how you sorted them.",
+        "example_response": "I sorted them by shape: spiral shells in one group and flat shells in another group. The spiral ones are snail-type shells and the flat ones are clam-type shells.",
+        "common_errors": [
+          "Using a vague criterion like 'nice ones and not nice ones'",
+          "Not being able to articulate their sorting rule"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Making consistent sorting decisions using a clear criterion, and re-sorting the same set using a different criterion to show that multiple valid groupings exist.",
+        "example_task": "Sort these rocks into groups using one criterion. Then sort them again using a different criterion. Are the groups the same?",
+        "example_response": "First sort — by colour: grey rocks, brown rocks, white rocks. Second sort — by texture: rough rocks and smooth rocks. The groups are different because some grey rocks are rough and some are smooth, so the same rock can end up in a different group depending on the criterion. There is more than one way to sort things in science.",
+        "common_errors": [
+          "Using the same criterion both times (e.g. colour then a different colour grouping)",
+          "Not recognising that the same object can belong to different groups under different criteria"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluating which sorting criteria are most scientifically useful for a given purpose, and explaining their reasoning.",
+        "example_task": "We collected minibeasts from the school garden. You could sort them by colour, by size or by number of legs. Which would a scientist find most useful? Why?",
+        "example_response": "Number of legs would be most scientifically useful because it helps identify what type of animal each one is — insects have 6 legs, spiders have 8, woodlice have 14, and worms have none. This tells you about the animal's biology. Colour is not as useful because two very different animals might be the same colour, and the same species can come in different colours. Size is not reliable either because the same type of minibeast can be different sizes at different ages.",
+        "common_errors": [
+          "Choosing colour because it is the most obvious visual feature",
+          "Not explaining why their chosen criterion is more scientifically meaningful"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C045",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying one obvious similarity or difference between two objects when placed side by side, with teacher prompting.",
+        "example_task": "Look at this apple and this orange. Tell me one way they are the same and one way they are different.",
+        "example_response": "They are both round. The apple is red and the orange is orange.",
+        "common_errors": [
+          "Only noticing differences and not similarities, or vice versa",
+          "Describing only colour as the difference"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying several similarities and differences between two objects, beginning to look beyond obvious surface features.",
+        "example_task": "Compare a piece of wood and a piece of metal. Find two similarities and two differences.",
+        "example_response": "Similarities: both are hard, both are solids. Differences: the metal feels cold and is shiny, the wood feels warm and has a rough grain pattern.",
+        "common_errors": [
+          "Focusing only on colour differences",
+          "Not thinking of any similarities because the objects look different"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Systematically comparing two or more items using a set of features, organising the comparison in a table, and including both structural and functional similarities and differences.",
+        "example_task": "Compare a fish and a frog using this comparison table: body covering, where it lives, how it breathes, how it moves.",
+        "example_response": "Fish: scales, lives in water, breathes through gills, swims with fins. Frog: smooth moist skin, lives in water and on land, breathes through lungs and skin, swims with webbed feet and hops on land. Both are cold-blooded and both can live in water, but the frog can also live on land.",
+        "common_errors": [
+          "Leaving some comparison features blank",
+          "Not noting that frogs breathe differently from fish"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using identified similarities and differences to draw conclusions or make classifications, moving beyond description to reasoning.",
+        "example_task": "We compared leaves from five different trees. Three had simple oval shapes and two had complex shapes with many leaflets. What might this similarity and difference tell us? Could we use it to sort the trees?",
+        "example_response": "The three trees with simple oval leaves might be related or adapted to similar conditions. The two with complex leaves (many leaflets from one stalk) are compound leaves — like horse chestnut and ash. We could use leaf shape as a sorting criterion to divide trees into groups, but we would need to look at other features too — bark, seeds, flowers — because similar leaf shapes do not always mean the trees are closely related. A good classification uses several features, not just one.",
+        "common_errors": [
+          "Assuming similar features always mean the organisms are closely related",
+          "Not suggesting that additional features would strengthen the classification"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C046",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Showing interest in a natural object or phenomenon and asking a simple question about it.",
+        "example_task": "We found a snail in the school garden. What would you like to find out about it?",
+        "example_response": "Why does it have a shell? Where does it go at night?",
+        "common_errors": [
+          "Saying 'nothing' or showing no interest",
+          "Asking a question unrelated to the observation"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Asking multiple questions about observations and showing enthusiasm for finding out the answers.",
+        "example_task": "We have found a bird's nest that has fallen from a tree. What questions do you have? Write down as many as you can.",
+        "example_response": "What type of bird made it? What is it made of? How long did it take to build? How did the bird stick it all together? Were there eggs in it? How does the bird know how to build a nest?",
+        "common_errors": [
+          "Asking only one question when many are possible",
+          "Asking questions that cannot be explored ('Was the bird happy?')"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Demonstrating sustained curiosity by following up on initial questions, wanting to investigate further, and appreciating that science involves asking questions, not just knowing answers.",
+        "example_task": "After our investigation into which material was most waterproof, what new questions do you have? What would you like to find out next?",
+        "example_response": "I want to know if the materials are still waterproof after you rub them or crumple them. Would the results be different if we used warm water instead of cold water? Can we make a material more waterproof by adding something to it, like wax? Each investigation gives us answers but also new questions — that is how science works.",
+        "common_errors": [
+          "Saying they have no more questions",
+          "Asking the same question again rather than extending their thinking"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Independently noticing phenomena and asking investigable questions without teacher prompting, and understanding that curiosity and questioning are central to how science works.",
+        "example_task": "On the way to school, you noticed that puddles had ice on them but the pond did not. What scientific questions could you ask about this?",
+        "example_response": "Why did the puddle freeze but not the pond? Is it because the puddle is shallower and loses heat faster? Does the size of the water affect how quickly it freezes? I could test this by putting different amounts of water in containers and seeing which freezes first. Scientists start by noticing something surprising and then asking 'Why?' — that is what I did. The best questions are ones we can test or investigate.",
+        "common_errors": [
+          "Accepting the observation without questioning it",
+          "Asking a question but not suggesting how it could be investigated"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS1-C048",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Knowing the rule that we must never look directly at the Sun, when reminded by the teacher.",
+        "example_task": "We are going outside to look at shadows. What is the important safety rule about the Sun?",
+        "example_response": "Never look directly at the Sun. It can hurt your eyes.",
+        "common_errors": [
+          "Thinking it is safe to look at the Sun quickly",
+          "Thinking sunglasses make it safe to look at the Sun"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Stating the rule clearly and knowing that it applies even when wearing dark glasses or when the Sun is behind thin clouds.",
+        "example_task": "A child says 'I can look at the Sun through my sunglasses.' Is this safe? Explain.",
+        "example_response": "No, this is not safe. You must never look directly at the Sun, even with sunglasses on. Sunglasses do not block enough of the Sun's rays to protect your eyes. You should never look at the Sun through anything — not sunglasses, not binoculars, not a telescope. It can damage your eyes permanently.",
+        "common_errors": [
+          "Thinking dark glasses or squinting make it safe",
+          "Not knowing that the damage can be permanent"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Explaining why looking at the Sun is dangerous (the intense light can permanently damage the retina) and describing safe ways to observe the Sun's effects (shadows, pinhole projectors).",
+        "example_task": "We want to track how the Sun moves across the sky during the day. How can we do this safely without looking at the Sun?",
+        "example_response": "We should never look directly at the Sun. Instead, we can track its position by observing shadows — put a stick in the ground and mark where the shadow falls at different times. The shadow shows us where the Sun is without looking at it. We could also use a pinhole projector to project an image of the Sun onto paper. The Sun's light is so strong that it can burn the retina (the back of the eye) and cause permanent blindness, so this rule is really important.",
+        "common_errors": [
+          "Suggesting looking at the Sun for 'just a second'",
+          "Not knowing any safe alternatives for observing the Sun's position"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Applying the sun safety rule independently in new contexts and explaining the science behind why the Sun is dangerous to eyes.",
+        "example_task": "During a solar eclipse, the Sun is partly covered by the Moon. Some people want to watch it. Is it safe to look at the Sun during an eclipse? Why or why not?",
+        "example_response": "No, it is never safe to look directly at the Sun, even during an eclipse. During a partial eclipse the Sun is still extremely bright — the uncovered part can still damage your retina. Even when most of the Sun is covered, the remaining light is concentrated and very dangerous. The retina has no pain sensors, so you would not feel the damage happening until it is too late. Special eclipse glasses with certified solar filters are the only safe way to look at an eclipse, or you can watch a projected image. The important rule is: never look directly at the Sun, no matter what.",
+        "common_errors": [
+          "Thinking a partial eclipse makes the Sun safe to look at",
+          "Not knowing about special solar filters as the only safe direct viewing method"
+        ]
+      }
+    ]
+  }
+]

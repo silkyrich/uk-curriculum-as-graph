@@ -1,0 +1,541 @@
+[
+  {
+    "concept_id": "EN-KS1-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Making simple predictions about a story based on the front cover picture and title.",
+        "example_task": "Look at the front cover of this book. What do you think the story will be about?",
+        "example_response": "'I think it will be about a bear because there is a bear on the front and the title says \"Bear Hunt\".'",
+        "common_errors": [
+          "Making a wild guess unrelated to the cover or title",
+          "Describing what they see in the picture without making a prediction about the story"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Making predictions during reading based on pictures and simple text clues.",
+        "example_task": "We've read that the character picked up an umbrella before going outside. What do you think might happen?",
+        "example_response": "'I think it's going to rain because she took her umbrella.'",
+        "common_errors": [
+          "Predicting something unconnected to the clues given",
+          "Only using pictures to predict, ignoring what the text has said"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Making predictions based on what has been read so far, using evidence from text and illustrations, and checking predictions against what happens.",
+        "example_task": "The story says the fox crept closer to the henhouse and licked his lips. What do you predict will happen next? What clues did you use?",
+        "example_response": "'I think the fox is going to try to catch the hens because it says he crept closer, which means he was being sneaky, and he licked his lips which means he's hungry.'",
+        "common_errors": [
+          "Making a reasonable prediction but not referring to specific text evidence",
+          "Predicting what they want to happen rather than what the text suggests"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Making predictions that draw on knowledge of story conventions and genre, revising predictions as new information emerges.",
+        "example_task": "We're reading a fairy tale where the youngest brother has just set off on a quest. What do you predict? Why? Have your predictions changed since the beginning?",
+        "example_response": "'In fairy tales, the youngest one usually succeeds. I think he'll meet helpers along the way. At first I thought the oldest brother would win, but when he was mean to the old woman, I changed my prediction.'",
+        "common_errors": [
+          "Drawing on genre knowledge but not connecting it to specific details in this particular story",
+          "Not revising predictions when new evidence contradicts them"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Making simple inferences from pictures about characters' feelings using facial expressions and body language.",
+        "example_task": "Look at this picture. How do you think the boy is feeling? How can you tell?",
+        "example_response": "'He looks sad because his mouth is turned down and he's got tears on his face.'",
+        "common_errors": [
+          "Stating what they see without making an inference ('He's crying' rather than 'He's sad because...')",
+          "Projecting their own feelings without evidence ('He's happy because I would be happy')"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Making simple inferences from text about characters' feelings using obvious clues.",
+        "example_task": "The story says: 'Mia stomped up the stairs and slammed her bedroom door.' How is Mia feeling? What tells you that?",
+        "example_response": "'Mia is angry. I know because she stomped, which means she walked heavily, and she slammed the door, which is what you do when you're cross.'",
+        "common_errors": [
+          "Saying 'She's angry' without referring to the text evidence",
+          "Retelling what happened ('She went upstairs') instead of inferring how she felt"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Inferring characters' feelings, thoughts and motives from actions and dialogue, supported by text evidence.",
+        "example_task": "In the story, Dad said 'It's fine' but he kept looking out of the window at the rain. What do you think Dad is really feeling? How do you know?",
+        "example_response": "'Dad is saying it's fine but I think he's actually worried or disappointed. He keeps looking at the rain, so maybe their plans will be ruined. He's trying to pretend he's not upset.'",
+        "common_errors": [
+          "Taking the character's words at face value ('He said it's fine so he's fine')",
+          "Making an inference but not explaining the reasoning behind it"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Making inferences about why characters behave as they do, recognising that characters can have mixed or changing feelings.",
+        "example_task": "The story says the girl gave her last sweet to her little brother even though she really wanted it herself. Why do you think she did that? How might she be feeling?",
+        "example_response": "'She did it because she loves her brother and wants to be kind, even though she wanted the sweet. She might be feeling proud of herself for sharing but also a bit disappointed. She has mixed feelings.'",
+        "common_errors": [
+          "Identifying only one feeling rather than recognising mixed emotions",
+          "Inferring motive without connecting it to text evidence"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding explicitly stated information in a sentence when the question uses the same wording as the text.",
+        "example_task": "The text says: 'The dog is brown.' What colour is the dog?",
+        "example_response": "'The dog is brown.'",
+        "common_errors": [
+          "Answering from general knowledge ('Dogs are usually brown') instead of from the text",
+          "Not looking at the text to find the answer"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding information when the question is worded differently from the text, scanning to locate the relevant part.",
+        "example_task": "Read this paragraph about penguins. Where do penguins live?",
+        "example_response": "Child locates the sentence 'Penguins live in very cold places like Antarctica' and answers 'Antarctica' or 'very cold places'.",
+        "common_errors": [
+          "Answering from memory or general knowledge without checking the text",
+          "Finding a sentence about penguins but extracting the wrong detail"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Retrieving specific information from across a text, locating and pointing to evidence, including answering questions that require finding more than one piece of information.",
+        "example_task": "Read this text about minibeasts. Find two facts about what ladybirds eat and one fact about where they live.",
+        "example_response": "'Ladybirds eat aphids and they also eat small insects. They live in gardens and parks.' (Points to relevant sentences.)",
+        "common_errors": [
+          "Finding one piece of information but not both",
+          "Giving information about the wrong creature from the same text"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Retrieving and combining information from different parts of a text to give a complete answer, distinguishing relevant from irrelevant details.",
+        "example_task": "Using this page about animals in winter, explain how hedgehogs prepare for winter. You will need to look in more than one paragraph.",
+        "example_response": "'Hedgehogs eat lots of food in autumn to build up fat. Then they find a pile of leaves to hibernate in during winter. They slow their breathing and heartbeat right down.' (Information gathered from two different paragraphs.)",
+        "common_errors": [
+          "Using information from only one paragraph when the answer spans two",
+          "Including irrelevant details about other animals from the same text"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Making a simple personal connection to a story when prompted by the teacher.",
+        "example_task": "The character in the story went to the seaside. Have you ever been to the seaside?",
+        "example_response": "'Yes, I went to the beach with my nan. We built sandcastles like the character did.'",
+        "common_errors": [
+          "Sharing a lengthy personal anecdote unrelated to the story",
+          "Not connecting back to the text at all"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Making connections between a text and personal experience, beginning to explain how the connection helps understanding.",
+        "example_task": "The character feels nervous about starting a new school. Can you connect this to your own experience?",
+        "example_response": "'I felt nervous on my first day too, so I understand how the character feels. My tummy felt funny just like the story says.'",
+        "common_errors": [
+          "Making a connection but not explaining how it relates to understanding the text",
+          "Sharing personal experience without linking it back to the character's experience"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Making relevant connections to personal experience, other texts, and wider knowledge that deepen comprehension.",
+        "example_task": "This story is about a character who is different from everyone else. Does this remind you of any other stories or experiences?",
+        "example_response": "'This reminds me of Elmer the elephant because he was different too. Both characters learn that being different is okay. I also know how it feels to be the only one who likes something different.'",
+        "common_errors": [
+          "Making only text-to-self connections without considering text-to-text connections",
+          "Making connections that are superficial rather than deepening understanding"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining how personal connections enhance understanding of a text and recognising when connections might lead to misinterpretation.",
+        "example_task": "You said this story reminds you of when your pet was ill. How does that connection help you understand the story better? Could it also make you misunderstand anything?",
+        "example_response": "'It helps me understand why the character is so worried because I know that feeling. But my story had a happy ending and this one might not, so I shouldn't assume the pet in the story will get better just because mine did.'",
+        "common_errors": [
+          "Not recognising that personal connections can sometimes mislead",
+          "Only explaining the connection without evaluating how it helps or hinders understanding"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying the main character and one key event in a familiar story, with picture support.",
+        "example_task": "Who is this story about? What happened?",
+        "example_response": "'It's about Goldilocks. She went into the bears' house.'",
+        "common_errors": [
+          "Naming a character but not being able to say what happened",
+          "Confusing this story with a different one"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying the beginning, middle and end of a story with some detail about characters and setting.",
+        "example_task": "Tell me about the beginning, middle and end of 'The Three Little Pigs'.",
+        "example_response": "'At the beginning, the three pigs build their houses. In the middle, the wolf blows down the straw house and the stick house. At the end, the pigs are safe in the brick house.'",
+        "common_errors": [
+          "Providing only the beginning and end, skipping the middle",
+          "Retelling every detail without identifying the structural sections"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying characters, setting, problem and resolution in stories, and explaining how the story is structured.",
+        "example_task": "Read this story. Tell me about the characters, the setting, the problem and how it was solved.",
+        "example_response": "'The main character is a girl called Lily. It's set in a forest. The problem is she gets lost. She solves it by following the sound of a river back to her village.'",
+        "common_errors": [
+          "Identifying characters and setting but not the problem or resolution",
+          "Describing the problem but not how it was resolved"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Comparing story structures across different texts and recognising common structural patterns.",
+        "example_task": "We have read 'Jack and the Beanstalk' and 'The Enormous Turnip'. How are the story structures similar?",
+        "example_response": "'Both stories have a repeating pattern — Jack goes up the beanstalk three times, and more and more people come to pull the turnip. Both have three main events before the ending. Both have a problem that gets solved at the end.'",
+        "common_errors": [
+          "Comparing the content of the stories rather than their structure",
+          "Identifying one similarity but not elaborating or finding further structural parallels"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C019",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using picture cues and context to understand a new word encountered during shared reading.",
+        "example_task": "The story says the giant was 'enormous'. Look at the picture. What do you think 'enormous' means?",
+        "example_response": "'Really, really big — because the giant is much bigger than the houses.'",
+        "common_errors": [
+          "Saying 'I don't know' without looking at the picture for help",
+          "Giving a vague synonym like 'big' without indicating degree"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Working out the meaning of unfamiliar words using context and beginning to use new words in speech.",
+        "example_task": "The text says: 'The rabbit was timid and hid behind the bush.' What does 'timid' mean? Use it in your own sentence.",
+        "example_response": "'Timid means shy or scared. The timid mouse ran away from the cat.'",
+        "common_errors": [
+          "Defining the word but being unable to use it in a new sentence",
+          "Using the word incorrectly in the new sentence"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Discussing the meaning and effect of vocabulary choices in texts, using strategies to work out unfamiliar words, and using new words in own writing.",
+        "example_task": "The author wrote 'The leaves danced in the wind'. Why did the author use the word 'danced' instead of 'moved'?",
+        "example_response": "'Danced' is better because it makes you imagine the leaves moving lightly and happily, spinning around. 'Moved' is boring and doesn't give you a picture in your head.",
+        "common_errors": [
+          "Saying one word is 'better' without explaining why",
+          "Not recognising that 'danced' is used figuratively"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Collecting and categorising new vocabulary, understanding shades of meaning between synonyms, and choosing precise vocabulary in own writing.",
+        "example_task": "Put these words in order from least scary to most scary: 'nervous', 'terrified', 'worried', 'frightened', 'petrified'.",
+        "example_response": "Nervous, worried, frightened, terrified, petrified.",
+        "common_errors": [
+          "Not distinguishing between similar words (e.g., treating 'terrified' and 'frightened' as identical)",
+          "Ranking words based on how they sound rather than their meaning"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C020",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Responding to a simple question about a shared story with a brief answer.",
+        "example_task": "We just read a story about a dog. Did you like the story? What was your favourite part?",
+        "example_response": "'I liked the part where the dog found the bone.'",
+        "common_errors": [
+          "Giving a one-word answer ('yes') without elaboration",
+          "Retelling the whole story rather than selecting a favourite part"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Sharing opinions about stories and explaining choices using simple reasons.",
+        "example_task": "Which character in the story do you like best? Why?",
+        "example_response": "'I like the fox best because he was clever and tricky. He fooled the farmer, which was funny.'",
+        "common_errors": [
+          "Naming a character without giving a reason",
+          "Giving a circular reason: 'I like him because he's nice'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Discussing books with others, listening and responding to different viewpoints, referring to the text to support opinions.",
+        "example_task": "Talk with your partner about whether the wolf in this story is a villain or not. Use evidence from the story.",
+        "example_response": "'I think the wolf is a villain because he destroyed the pigs' houses. But my partner said maybe the wolf was just hungry and didn't mean to be bad. The story doesn't say he's evil — he just wants food.'",
+        "common_errors": [
+          "Only giving own opinion without listening to or responding to a partner's view",
+          "Making claims about the text without pointing to specific evidence"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Leading and contributing to extended discussions about texts, building on others' ideas, and changing opinions in response to persuasive evidence.",
+        "example_task": "In your group, discuss whether the ending of the story was satisfying. Build on each other's ideas and try to reach a group view.",
+        "example_response": "'I thought the ending was good because the problem was solved. But when Sam said it was too easy, I agreed — the character didn't have to try very hard. So our group thinks the ending was okay but could have been more exciting if there were more obstacles.'",
+        "common_errors": [
+          "Repeating own opinion without responding to others",
+          "Agreeing with everyone without offering a distinct contribution"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C021",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Joining in with a familiar nursery rhyme or action rhyme as a group.",
+        "example_task": "Join in as we say 'Humpty Dumpty' together. Do the actions as we go.",
+        "example_response": "Child joins in with words and actions, following the group.",
+        "common_errors": [
+          "Mumbling or mouthing words without clearly speaking them",
+          "Doing the actions but not saying the words"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reciting a short, familiar poem from memory with some expression.",
+        "example_task": "Say the poem 'Twinkle, Twinkle, Little Star' by heart. Try to use expression.",
+        "example_response": "Child recites the poem accurately from memory with some variation in voice.",
+        "common_errors": [
+          "Forgetting lines and needing prompts to continue",
+          "Reciting in a flat monotone without any expression"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reciting poems by heart with appropriate intonation, varying pace and volume for effect.",
+        "example_task": "Perform the poem 'The Owl and the Pussycat' (first verse) to the class. Use your voice to bring the poem to life.",
+        "example_response": "Child recites from memory with clear diction, appropriate pace, and expression that matches the poem's mood.",
+        "common_errors": [
+          "Reciting accurately but without varying tone or pace",
+          "Rushing through the poem to finish quickly"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Performing poems with deliberate use of voice and gesture, engaging the audience and showing understanding of meaning.",
+        "example_task": "Choose a poem you have learned and perform it to the class. Explain why you chose the expression and actions you used.",
+        "example_response": "Child performs with deliberate expression and gestures, then explains: 'I spoke quietly for the sad part and loudly for the exciting part because I wanted the audience to feel the change in mood.'",
+        "common_errors": [
+          "Performing well but being unable to explain performance choices",
+          "Using gestures that distract from the words rather than enhancing meaning"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C022",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Joining in with repeated phrases or refrains during shared reading of patterned texts.",
+        "example_task": "As I read 'We're Going on a Bear Hunt', join in with the repeated parts.",
+        "example_response": "Child joins in with 'We're going on a bear hunt. We're going to catch a big one...'",
+        "common_errors": [
+          "Not recognising when the repeated part is coming",
+          "Joining in too late, after the pattern has already been said"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognising and identifying repeated phrases, rhyme and patterned language in stories and poems.",
+        "example_task": "Listen to this story. Can you spot the words that repeat each time? What pattern do you notice?",
+        "example_response": "'Every time a new character comes, the story says \"Run, run as fast as you can, you can't catch me, I'm the Gingerbread Man.\" It repeats like a pattern.'",
+        "common_errors": [
+          "Noticing that words repeat but not being able to describe the pattern",
+          "Confusing rhyme with repetition"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Recognising how authors use literary language patterns for effect, including repetition, rhyme, alliteration and formulaic phrases.",
+        "example_task": "Find an example of a repeated phrase and an example of rhyme in this poem. Why do you think the poet used them?",
+        "example_response": "'The poet repeats \"over the hill\" at the start of each verse — it makes a rhythm and helps you know a new part is starting. The words \"bright\" and \"night\" rhyme — it makes the poem sound musical.'",
+        "common_errors": [
+          "Identifying the pattern but not explaining its effect",
+          "Confusing alliteration with rhyme"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using literary language patterns in own writing and explaining how they create effect, distinguishing literary language from everyday speech.",
+        "example_task": "Write the opening of a story using 'story language'. How is this different from how you would tell a friend about the same event?",
+        "example_response": "'Once upon a time, in a land far, far away, there lived a lonely dragon.' That's story language. If I told my friend, I'd say 'There was this dragon and he was lonely.' Story language sounds more magical and dramatic.",
+        "common_errors": [
+          "Using formulaic openings without understanding why they work",
+          "Not being able to articulate the difference between literary and everyday language"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C023",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Putting three picture cards from a familiar story in the correct order.",
+        "example_task": "Put these three pictures from 'The Very Hungry Caterpillar' in order: first, next, last.",
+        "example_response": "Child arranges: caterpillar hatching, caterpillar eating, butterfly emerging.",
+        "common_errors": [
+          "Arranging pictures in random order without reference to the story",
+          "Knowing the first picture but unsure about the order of the remaining two"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Retelling the main events of a story in chronological order using time words.",
+        "example_task": "Retell the story of 'Little Red Riding Hood' using the words first, then, next, finally.",
+        "example_response": "'First, Little Red Riding Hood went to visit her grandma. Then, the wolf got there first and pretended to be grandma. Next, Little Red Riding Hood noticed something was wrong. Finally, the woodcutter saved them.'",
+        "common_errors": [
+          "Including too much detail about one event and skipping others",
+          "Muddling the order of events in the middle of the story"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Sequencing all key events from a story or recount accurately, distinguishing main events from minor details.",
+        "example_task": "Write the five most important events from the story we just read, in order. Leave out the small details.",
+        "example_response": "Child identifies and orders the five key plot events, omitting minor details and using appropriate time connectives.",
+        "common_errors": [
+          "Including minor details alongside main events",
+          "Correctly ordering most events but transposing two in the middle"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Sequencing events and explaining why a particular order matters to the story, recognising cause and effect between events.",
+        "example_task": "Could event 3 and event 4 be swapped around? Why or why not?",
+        "example_response": "'No, because event 3 causes event 4. The character had to find the key before she could open the door. If you swapped them, the story wouldn't make sense.'",
+        "common_errors": [
+          "Saying events cannot be swapped without explaining the causal relationship",
+          "Not recognising that some events depend on previous ones"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C024",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Stopping when prompted by an adult to notice a reading error and attempting to correct it.",
+        "example_task": "You read 'The cat sat on the mop.' Look at that last word again — does it match the letters?",
+        "example_response": "Child looks again and self-corrects: 'Oh, it says mat, not mop.'",
+        "common_errors": [
+          "Waiting for the adult to provide the correct word rather than re-attempting",
+          "Looking at the word but repeating the same error"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Beginning to notice independently when a word read does not make sense and rereading to self-correct.",
+        "example_task": "Read this sentence: 'The children went to the park to play on the swigs.' (Text actually says 'swings'.) Did that sound right?",
+        "example_response": "Child pauses: 'Swigs? That doesn't make sense...' rereads and corrects to 'swings'.",
+        "common_errors": [
+          "Reading 'swigs' without noticing it doesn't make sense",
+          "Noticing the error but not knowing how to correct it"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Independently monitoring reading for sense, self-correcting errors by cross-checking sound, meaning and grammar.",
+        "example_task": "Read this page aloud. If something doesn't sound right, look right, or make sense, go back and fix it yourself.",
+        "example_response": "Child reads, notices an error mid-sentence, goes back and rereads the word correctly without being prompted.",
+        "common_errors": [
+          "Self-correcting decoding errors but not errors that change meaning",
+          "Correcting only when reading aloud but not monitoring during silent reading"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining the strategies used for self-correction and monitoring comprehension across longer passages.",
+        "example_task": "You just went back and reread that sentence. What made you go back? What strategy did you use?",
+        "example_response": "'I read \"the cat climbed up the free\" and it didn't make sense — cats climb trees, not frees. So I looked at the word again and saw it was actually \"tree\". I checked if it looked right and made sense.'",
+        "common_errors": [
+          "Self-correcting effectively but unable to articulate the strategy used",
+          "Only using one checking strategy (sound) rather than cross-checking with meaning and grammar"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,639 @@
+[
+  {
+    "concept_id": "EN-KS1-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying individual phonemes in simple CVC words using picture support and oral segmenting.",
+        "example_task": "Listen to the word 'cat'. Hold up one finger for each sound you hear. How many sounds are in 'cat'?",
+        "example_response": "Three sounds: /c/ /a/ /t/ (child holds up three fingers)",
+        "common_errors": [
+          "Counting letters instead of sounds (saying 'cat' has three letters rather than identifying the phonemes)",
+          "Adding a schwa to consonant sounds, saying 'cuh-a-tuh' instead of /c/ /a/ /t/"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying phonemes in words containing digraphs and adjacent consonants.",
+        "example_task": "How many sounds are in the word 'ship'? Say each sound separately.",
+        "example_response": "Three sounds: /sh/ /i/ /p/",
+        "common_errors": [
+          "Splitting the digraph and saying four sounds: /s/ /h/ /i/ /p/",
+          "Miscounting sounds in words with adjacent consonants (e.g., saying 'stop' has three sounds instead of four)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Accurately identifying all phonemes in words with digraphs, trigraphs and adjacent consonants without support.",
+        "example_task": "Say each sound in the word 'string'. How many phonemes does it have?",
+        "example_response": "Six phonemes: /s/ /t/ /r/ /i/ /ng/ — wait, five phonemes: /s/ /t/ /r/ /i/ /ng/",
+        "common_errors": [
+          "Treating 'ng' as two separate sounds instead of one phoneme",
+          "Confusing the number of letters with the number of phonemes"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining that the same phoneme can be represented by different graphemes, and identifying phonemes in unfamiliar multisyllabic words.",
+        "example_task": "The word 'rain' and the word 'gate' both have the same vowel sound. What is the sound? How is it written differently in each word?",
+        "example_response": "Both have the /ay/ sound. In 'rain' it is written 'ai' and in 'gate' it is written 'a-e' (split digraph).",
+        "common_errors": [
+          "Identifying the sound but not being able to name or describe the different grapheme representations",
+          "Thinking the sounds must be different because the spellings are different"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising single-letter graphemes and matching them to their most common phoneme.",
+        "example_task": "Point to the grapheme that makes the /s/ sound: s, m, t, a.",
+        "example_response": "Points to 's'.",
+        "common_errors": [
+          "Confusing visually similar graphemes such as 'b' and 'd'",
+          "Selecting a grapheme by letter name rather than sound"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognising common digraphs (sh, ch, th, ai, ee, oa) as single graphemes representing one phoneme.",
+        "example_task": "Circle the grapheme that makes one sound in the word 'chip': c-h-i-p.",
+        "example_response": "Circles 'ch'.",
+        "common_errors": [
+          "Circling 'c' and 'h' separately instead of 'ch' as one grapheme",
+          "Not recognising that two letters can represent a single sound"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying graphemes including digraphs, trigraphs and split digraphs in words, and knowing that one phoneme can have multiple grapheme spellings.",
+        "example_task": "Underline the graphemes in the word 'night'. How many graphemes are there?",
+        "example_response": "Three graphemes: n-igh-t.",
+        "common_errors": [
+          "Splitting 'igh' into separate letters and counting five graphemes",
+          "Not recognising 'igh' as a trigraph representing one phoneme"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining that the same phoneme can be written with different graphemes and choosing between alternative spellings.",
+        "example_task": "Write three different ways to spell the /ee/ sound. Give a word example for each.",
+        "example_response": "'ee' as in 'tree', 'ea' as in 'meat', 'e-e' as in 'theme'.",
+        "common_errors": [
+          "Giving only one or two alternative spellings",
+          "Providing graphemes but not being able to think of real word examples"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Matching single-letter graphemes to their most common phoneme using flashcards or picture cues.",
+        "example_task": "I show you the letter 's'. What sound does it make?",
+        "example_response": "/s/",
+        "common_errors": [
+          "Saying the letter name 'ess' instead of the phoneme /s/",
+          "Adding a schwa: saying 'suh' instead of /s/"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applying GPCs for common digraphs and beginning to recognise that some graphemes have more than one pronunciation.",
+        "example_task": "What sound does 'ow' make in the word 'cow'? What sound does 'ow' make in the word 'snow'?",
+        "example_response": "'ow' in 'cow' makes /ow/ (as in ouch). 'ow' in 'snow' makes /oa/ (as in go).",
+        "common_errors": [
+          "Applying only one pronunciation of 'ow' to both words",
+          "Not realising that the same grapheme can represent different phonemes"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Applying GPCs fluently for all taught graphemes including alternatives, using context to select the correct pronunciation.",
+        "example_task": "Read these words aloud: 'house', 'hour', 'hope'. What do you notice about the letter 'h'?",
+        "example_response": "In 'house' and 'hope', the 'h' makes the /h/ sound. In 'hour', the 'h' is silent.",
+        "common_errors": [
+          "Pronouncing the 'h' in 'hour' because the GPC for 'h' is usually /h/",
+          "Not using the context of the whole word to determine pronunciation"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining why English has complex GPCs and identifying patterns in how graphemes represent different phonemes.",
+        "example_task": "The letter 'c' makes different sounds in 'cat' and 'city'. Can you explain when 'c' makes a /s/ sound?",
+        "example_response": "The letter 'c' makes a /s/ sound when it comes before 'e', 'i' or 'y', like in 'city', 'cent' and 'cycle'. Before 'a', 'o' or 'u' it makes a /k/ sound.",
+        "common_errors": [
+          "Knowing the two sounds but not being able to state the rule about which vowels trigger which pronunciation",
+          "Thinking the rule is random rather than pattern-based"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Blending spoken phonemes into CVC words with adult modelling and picture support.",
+        "example_task": "I say the sounds /c/ /a/ /t/. Push them together to make a word. What word is it?",
+        "example_response": "Cat.",
+        "common_errors": [
+          "Repeating the individual sounds without merging them into a word",
+          "Blending only the first two sounds and guessing the rest"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Blending phonemes in CCVC and CVCC words and words containing digraphs without picture support.",
+        "example_task": "Read this word by blending the sounds: 'frog'.",
+        "example_response": "Child sounds out /f/ /r/ /o/ /g/ and blends to say 'frog'.",
+        "common_errors": [
+          "Omitting one consonant in the cluster, reading 'fog' instead of 'frog'",
+          "Blending too slowly and losing the whole word — saying each sound but unable to synthesise"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Blending phonemes fluently in words with adjacent consonants, digraphs and trigraphs to read unfamiliar words accurately.",
+        "example_task": "Read this word: 'thrush'.",
+        "example_response": "Child identifies 'thr' onset and 'ush' rime, blends to say 'thrush'.",
+        "common_errors": [
+          "Splitting the trigraph 'thr' and producing an incorrect blend",
+          "Reading only the first syllable of longer words and guessing"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Blending fluently in multisyllabic words and self-correcting when the first blending attempt does not produce a recognisable word.",
+        "example_task": "Read this word: 'adventure'. If your first try doesn't sound like a real word, try again.",
+        "example_response": "Child segments into syllables 'ad-ven-ture', blends each syllable, then combines to say 'adventure'.",
+        "common_errors": [
+          "Giving up after the first attempt rather than trying an alternative pronunciation",
+          "Blending the first syllable correctly but rushing or guessing the rest"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Segmenting spoken CVC words into individual phonemes using Elkonin boxes or finger counting.",
+        "example_task": "Say the word 'dog'. Push a counter into a box for each sound you hear.",
+        "example_response": "Child pushes three counters: /d/ /o/ /g/.",
+        "common_errors": [
+          "Saying the word as a whole without breaking it into phonemes",
+          "Counting syllables instead of phonemes"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Segmenting words with adjacent consonants and digraphs into phonemes for spelling.",
+        "example_task": "Segment the word 'chest' into its sounds so you can spell it.",
+        "example_response": "/ch/ /e/ /s/ /t/ — four sounds.",
+        "common_errors": [
+          "Splitting the digraph 'ch' into /c/ /h/, resulting in five sounds",
+          "Missing sounds in the consonant cluster at the end: writing 'chet' instead of 'chest'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Segmenting words accurately for spelling, including words with digraphs, trigraphs and adjacent consonants, choosing appropriate graphemes.",
+        "example_task": "Segment the word 'sprint' and write it.",
+        "example_response": "/s/ /p/ /r/ /i/ /n/ /t/ — writes 'sprint'.",
+        "common_errors": [
+          "Omitting a consonant in the blend, writing 'spint' or 'srint'",
+          "Writing letters in the wrong order within the cluster"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Segmenting multisyllabic words and selecting the correct grapheme from known alternatives for each phoneme.",
+        "example_task": "Segment and spell the word 'rainbow'. Explain which grapheme you chose for the /ay/ sound and why.",
+        "example_response": "Writes 'rainbow'. 'I used 'ai' for the /ay/ sound because 'ai' usually goes in the middle of a word.'",
+        "common_errors": [
+          "Choosing a plausible but incorrect grapheme (e.g., 'rane-bow')",
+          "Segmenting correctly but unable to explain the grapheme choice"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Decoding simple CVC words in a decodable text using known GPCs.",
+        "example_task": "Read this sentence from your reading book: 'The cat sat on a mat.'",
+        "example_response": "Child points to each word and decodes: 'The... cat... sat... on... a... mat.'",
+        "common_errors": [
+          "Guessing 'cap' for 'cat' by looking only at the first letter",
+          "Relying on the picture to guess rather than decoding the graphemes"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Decoding words with digraphs and adjacent consonants in connected text, applying taught GPCs.",
+        "example_task": "Read this sentence: 'The frog jumped into the pond with a splash.'",
+        "example_response": "Child decodes each word, including 'frog', 'jumped', 'pond', 'splash', using phonic knowledge.",
+        "common_errors": [
+          "Guessing 'jumped' as 'jump' without reading the suffix",
+          "Skipping 'splash' because it looks long, or guessing from the picture"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Decoding unfamiliar words accurately on first attempt in age-appropriate texts, self-correcting when needed.",
+        "example_task": "Read this passage aloud. When you come to a word you don't know, use your phonics to work it out.",
+        "example_response": "Child reads fluently, pausing to decode unfamiliar words such as 'scrambled' or 'frightened' using phonic strategies.",
+        "common_errors": [
+          "Skipping unfamiliar words instead of attempting to decode them",
+          "Decoding accurately but too slowly to retain meaning of the sentence"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Decoding polysyllabic words by breaking them into syllables and applying phonic knowledge, including words not yet encountered.",
+        "example_task": "Read this word you haven't seen before: 'thunderstorm'. How did you work it out?",
+        "example_response": "'Thunder-storm'. I split it into two parts: 'thun-der' and 'storm'. I know 'th' and 'or' graphemes.",
+        "common_errors": [
+          "Attempting to decode the whole word in one pass without syllable segmenting",
+          "Correctly decoding each syllable but failing to combine them fluently"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising a small set of high-frequency decodable words instantly on flashcards.",
+        "example_task": "Read these words as quickly as you can: 'the', 'and', 'is', 'it', 'in'.",
+        "example_response": "Child reads all five words instantly without sounding out.",
+        "common_errors": [
+          "Needing to sound out every word, indicating the words are not yet automatic",
+          "Confusing visually similar words like 'it' and 'is'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognising Year 1 common exception words and high-frequency words automatically in context.",
+        "example_task": "Read this sentence without stopping to sound out: 'He said he was going to the house.'",
+        "example_response": "Child reads fluently, recognising 'said', 'was', 'going', 'house' automatically.",
+        "common_errors": [
+          "Pausing to decode 'said' or 'was' each time, indicating these are not yet automatic",
+          "Reading known words automatically but slowing for every unfamiliar word"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading most age-appropriate words automatically, only needing to decode genuinely unfamiliar or rare words.",
+        "example_task": "Read this page from your reading book aloud. I will note which words you read automatically and which you need to decode.",
+        "example_response": "Child reads the page fluently with automatic recognition of most words, decoding only one or two unfamiliar words.",
+        "common_errors": [
+          "Reading common words automatically but still decoding words that should be familiar by this stage",
+          "Reading automatically but inaccurately — recognising the shape of a word but reading a different word"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Reading with automatic recognition across a wide range of texts, including words from Year 2 common exception word list and beyond.",
+        "example_task": "Read this passage from an unfamiliar Year 3 book. Which words did you need to decode rather than recognise?",
+        "example_response": "Child reads with fluency and expression, identifying only specialist vocabulary that required decoding.",
+        "common_errors": [
+          "Over-relying on automatic recognition and misreading words that look similar (e.g., reading 'through' as 'though')",
+          "Not noticing when automatic recognition produces the wrong word"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading a small set of common exception words with picture or context support.",
+        "example_task": "Read these words: 'the', 'I', 'no', 'go', 'to'.",
+        "example_response": "Child reads all five words correctly.",
+        "common_errors": [
+          "Attempting to decode 'the' as /t/ /h/ /e/ rather than recognising it as a whole word",
+          "Confusing 'no' and 'on' due to letter reversal"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading and spelling Year 1 common exception words (e.g., said, come, some, one, were) with some accuracy.",
+        "example_task": "Write these words from memory: 'said', 'come', 'were', 'there'.",
+        "example_response": "Child writes 'said', 'come', 'were', 'there' correctly.",
+        "common_errors": [
+          "Spelling 'said' as 'sed' using phonics rules",
+          "Writing 'wer' for 'were' or 'ther' for 'there'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading and spelling Year 1 and Year 2 common exception words accurately, including in dictated sentences.",
+        "example_task": "Write this sentence from dictation: 'They could not find their beautiful new clothes.'",
+        "example_response": "Child writes the sentence with 'could', 'their', 'beautiful', 'clothes' spelled correctly.",
+        "common_errors": [
+          "Spelling 'beautiful' as 'butiful' or 'beutiful'",
+          "Confusing 'their' with 'there'"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Identifying the tricky parts of exception words and explaining why they cannot be fully decoded using phonics.",
+        "example_task": "Look at the word 'people'. Which part is tricky? Why can't you just sound it out?",
+        "example_response": "'The 'eo' in the middle is the tricky part. If you sounded it out using phonics, you would say /p/ /ee/ /o/ /p/ /l/ /e/, which doesn't sound like 'people'. The 'eo' makes a /ee/ sound which is unusual.'",
+        "common_errors": [
+          "Saying the whole word is tricky without pinpointing the specific irregular part",
+          "Not recognising that parts of exception words are decodable (e.g., the 'p' and 'l' in 'people')"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising common vowel digraphs (ai, ee, oa) with picture cue support and reading simple words containing them.",
+        "example_task": "Read these words: 'rain', 'tree', 'boat'.",
+        "example_response": "Child reads 'rain', 'tree', 'boat' correctly, recognising the digraphs.",
+        "common_errors": [
+          "Sounding out each letter separately: /r/ /a/ /i/ /n/ instead of /r/ /ai/ /n/",
+          "Not recognising the digraph and producing a nonsense pronunciation"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading and spelling words with a range of vowel digraphs (ai, ee, oa, oo, ou, ow, oi, igh, ear, air, ure) in context.",
+        "example_task": "Sort these words by their vowel sound: 'moon', 'book', 'food', 'look', 'room', 'good'.",
+        "example_response": "Long /oo/: moon, food, room. Short /oo/: book, look, good.",
+        "common_errors": [
+          "Not distinguishing between the two pronunciations of 'oo' (long as in 'moon' vs short as in 'book')",
+          "Applying one pronunciation of 'oo' to all words"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading and spelling words with vowel digraphs accurately, including choosing the correct digraph when multiple spellings exist for the same sound.",
+        "example_task": "Spell the word 'trainee'. Which vowel digraphs did you use?",
+        "example_response": "Writes 'trainee'. 'I used 'ai' for the /ay/ sound and 'ee' for the /ee/ sound.'",
+        "common_errors": [
+          "Using an incorrect but plausible digraph (e.g., 'traynee')",
+          "Correctly identifying the sound but choosing the wrong grapheme representation"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining alternative spellings for the same vowel sound and identifying patterns in when each spelling is typically used.",
+        "example_task": "The /oa/ sound can be spelt 'oa', 'ow' or 'o-e'. Give an example word for each. Do you notice where each spelling usually appears in a word?",
+        "example_response": "'oa' in 'coat' — usually in the middle. 'ow' in 'snow' — usually at the end. 'o-e' in 'home' — the 'e' goes at the end with a consonant between.",
+        "common_errors": [
+          "Providing examples but not noticing the positional pattern",
+          "Confusing 'ow' for /oa/ (as in 'snow') with 'ow' for /ow/ (as in 'cow')"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising the most common consonant digraphs (sh, ch, th) and reading simple words containing them.",
+        "example_task": "Read these words: 'shop', 'chin', 'thin'.",
+        "example_response": "Child reads all three words correctly, producing the digraph sounds.",
+        "common_errors": [
+          "Saying /s/ /h/ /o/ /p/ instead of /sh/ /o/ /p/",
+          "Confusing 'sh' and 'ch' sounds"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading and spelling words with a wider range of consonant digraphs (sh, ch, th, ng, wh, ck, ph) including in different positions within words.",
+        "example_task": "Write these words: 'ring', 'which', 'phone', 'thick'.",
+        "example_response": "Child writes 'ring', 'which', 'phone', 'thick' correctly.",
+        "common_errors": [
+          "Writing 'fone' instead of 'phone' — not recognising 'ph' as /f/",
+          "Forgetting the silent 'w' in 'which' and writing 'wich'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using consonant digraphs accurately in reading and spelling, including distinguishing voiced and unvoiced 'th'.",
+        "example_task": "Read these words and sort them: does the 'th' sound the same in 'this' and 'think'?",
+        "example_response": "'This' has a voiced /th/ (buzzy). 'Think' has an unvoiced /th/ (whispery). They are different sounds made by the same letters.",
+        "common_errors": [
+          "Not hearing the difference between voiced and unvoiced 'th'",
+          "Pronouncing both as unvoiced /th/"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining rules about consonant digraph placement and recognising less common digraphs in unfamiliar words.",
+        "example_task": "Why do we use 'ck' in 'kick' but just 'k' in 'week'? Can you explain the pattern?",
+        "example_response": "'ck' comes after a short vowel sound — kick, duck, neck. 'k' comes after a long vowel or consonant — week, milk, park.",
+        "common_errors": [
+          "Knowing the rule implicitly but being unable to articulate it",
+          "Over-applying the 'ck' pattern to all words ending in /k/"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising the split digraph pattern in simple word pairs with adult support.",
+        "example_task": "Read these two words: 'cap' and 'cape'. What happens to the vowel sound when the 'e' is added?",
+        "example_response": "'Cap' has a short /a/. 'Cape' has a long /ay/. The 'e' makes the vowel say its name.",
+        "common_errors": [
+          "Reading 'cape' as 'cap-ee', sounding out the final 'e'",
+          "Not noticing that the vowel sound changes"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading and spelling words with all five split digraphs (a-e, e-e, i-e, o-e, u-e) with some accuracy.",
+        "example_task": "Read these words: 'make', 'theme', 'kite', 'hope', 'cube'.",
+        "example_response": "Child reads all five words correctly, applying the split digraph pattern.",
+        "common_errors": [
+          "Forgetting the split digraph pattern for less common forms (e.g., 'u-e' in 'cube')",
+          "Applying the split digraph rule to words where it doesn't apply (e.g., reading 'have' with a long /a/)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using split digraphs accurately in both reading and spelling, including distinguishing words where the pattern does and does not apply.",
+        "example_task": "Spell these words: 'stripe', 'alone', 'complete'. Underline the split digraph in each.",
+        "example_response": "Writes 'stripe' (i-e), 'alone' (o-e), 'complete' (e-e) and underlines the split digraphs correctly.",
+        "common_errors": [
+          "Omitting the final 'e' when spelling (e.g., writing 'strip' for 'stripe')",
+          "Underlining only the 'e' rather than both parts of the split digraph"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Identifying exception words that look like split digraph words but are not, and explaining why.",
+        "example_task": "Why doesn't the word 'have' follow the split digraph rule, even though it ends in 'e' after a consonant and vowel?",
+        "example_response": "'Have' looks like it should have a long /a/ sound like 'cave', but it doesn't — the 'a' stays short. It's an exception word. Other exceptions include 'give', 'come' and 'love'.",
+        "common_errors": [
+          "Assuming all words with the vowel-consonant-e pattern must follow the split digraph rule",
+          "Unable to think of other exceptions"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Clapping or tapping the beats in spoken words to identify the number of syllables.",
+        "example_task": "Clap the beats in these words: 'cat', 'rabbit', 'elephant'. How many claps for each?",
+        "example_response": "'Cat' — 1 clap. 'Rabbit' — 2 claps. 'Elephant' — 3 claps.",
+        "common_errors": [
+          "Clapping for each phoneme instead of each syllable",
+          "Miscounting syllables in words with adjacent vowels (e.g., 'lion' as one syllable)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Segmenting written words into syllables as a strategy for reading longer words.",
+        "example_task": "Break the word 'sunset' into syllables to help you read it.",
+        "example_response": "'Sun-set' — two syllables.",
+        "common_errors": [
+          "Splitting at the wrong point (e.g., 'su-nset')",
+          "Not recognising that each syllable must contain a vowel sound"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using syllable segmentation to read and spell multisyllabic words, understanding that every syllable has a vowel sound.",
+        "example_task": "Break these words into syllables: 'wonderful', 'yesterday', 'September'.",
+        "example_response": "'Won-der-ful' (3), 'yes-ter-day' (3), 'Sep-tem-ber' (3).",
+        "common_errors": [
+          "Not splitting at the correct syllable boundary (e.g., 'wond-er-ful')",
+          "Counting the final 'e' as a separate syllable when it is silent"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining the rule that every syllable contains a vowel sound and using this to self-check syllable counting.",
+        "example_task": "A child says 'smiled' has two syllables. Are they right? How do you know?",
+        "example_response": "'Smiled' has one syllable because the '-ed' doesn't add a new vowel sound — it just adds a /d/. Each syllable must have a vowel sound, and 'smiled' only has one: /ai/.",
+        "common_errors": [
+          "Agreeing that 'smiled' has two syllables because of the '-ed' ending",
+          "Not understanding that the syllable rule relates to vowel sounds, not vowel letters"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS1-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading a familiar decodable text aloud with accurate word reading, though pace may be slow and word-by-word.",
+        "example_task": "Read this page from a book you have read before. Try to read each word correctly.",
+        "example_response": "Child reads each word accurately but reads word by word with even pauses between words.",
+        "common_errors": [
+          "Reading in a robotic, word-by-word manner without any phrasing",
+          "Losing the meaning of the sentence because of slow decoding"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading familiar texts with some phrasing and beginning to attend to punctuation for expression.",
+        "example_task": "Read this page aloud. Remember to pause at full stops and change your voice for questions.",
+        "example_response": "Child reads in short phrases, pausing at full stops and raising intonation for questions.",
+        "common_errors": [
+          "Pausing at full stops but not changing intonation for questions or exclamations",
+          "Reading in a monotone despite attempting to phrase"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading age-appropriate texts fluently with appropriate pace, expression and phrasing, responding to punctuation.",
+        "example_task": "Read this passage aloud with expression, as if you were telling the story to someone.",
+        "example_response": "Child reads with natural phrasing, appropriate pace, varied intonation for dialogue and exclamations, and pauses at commas and full stops.",
+        "common_errors": [
+          "Reading fluently on familiar texts but losing fluency on unfamiliar material",
+          "Reading too fast, sacrificing expression for speed"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Reading unfamiliar age-appropriate texts with expression and fluency, using voice to convey meaning and character.",
+        "example_task": "Read this passage from a book you haven't seen before. Use different voices for the characters and show the mood of the story.",
+        "example_response": "Child reads with fluency and expression, using distinct voices for characters, adjusting pace for suspense, and conveying mood through tone.",
+        "common_errors": [
+          "Using exaggerated voices that obscure the words rather than supporting meaning",
+          "Maintaining fluency on dialogue but losing expression on narrative sections"
+        ]
+      }
+    ]
+  }
+]

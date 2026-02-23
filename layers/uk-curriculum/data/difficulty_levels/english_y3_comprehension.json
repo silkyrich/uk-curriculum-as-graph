@@ -1,0 +1,835 @@
+[
+  {
+    "concept_id": "EN-Y3-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Choosing a book to read independently and being able to say why they chose it.",
+        "example_task": "Choose a book from the library. Tell me why you chose it.",
+        "example_response": "'I chose it because the cover looks exciting and it's about space, which I like.'",
+        "common_errors": [
+          "Choosing a book randomly without being able to explain why",
+          "Always choosing the same type of book without trying new genres"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading a range of text types with some independence, including fiction, non-fiction and poetry.",
+        "example_task": "Over the next two weeks, read at least one fiction book, one non-fiction text and one poem. Record them in your reading journal.",
+        "example_response": "Child records a story, an information text and a poem, with brief comments about each.",
+        "common_errors": [
+          "Reading only fiction or only non-fiction without varying text type",
+          "Reading the required texts but not engaging with them (recording titles without comments)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading widely and independently across fiction, non-fiction, poetry, plays and reference texts, showing sustained engagement and positive attitudes.",
+        "example_task": "Recommend a book to a classmate. Explain what genre it is, who would enjoy it and why.",
+        "example_response": "'I'd recommend \"The Iron Man\" by Ted Hughes. It's a short novel — kind of science fiction and adventure. If you like stories with mysterious characters who turn out to be good, you'd love it. The writing is really descriptive and exciting.'",
+        "common_errors": [
+          "Recommending based on 'it's good' without specific reasons",
+          "Only recommending books from one genre"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Actively seeking out and engaging with diverse, challenging texts, identifying personal reading preferences while remaining open to new genres and authors.",
+        "example_task": "Choose a text from a genre you don't usually read. Read it and explain what you learned about that genre. Would you read more of it?",
+        "example_response": "'I usually read adventure stories but I tried a poetry collection. I learned that poems can tell stories too, and they use fewer words but each one matters more. I really liked the rhythm in some of the poems. I'd definitely read more poetry now, especially narrative poems.'",
+        "common_errors": [
+          "Dismissing the new genre after a brief attempt rather than engaging fully",
+          "Not reflecting on what they gained from the experience"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising that fiction tells a story and non-fiction gives information.",
+        "example_task": "Sort these books: which are fiction (stories) and which are non-fiction (information)?",
+        "example_response": "Child correctly sorts narrative stories as fiction and information texts as non-fiction.",
+        "common_errors": [
+          "Placing narrative non-fiction (e.g., a biography) in the wrong category",
+          "Thinking all books with pictures are fiction"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading for different purposes — for pleasure and for information — and beginning to adapt reading approach accordingly.",
+        "example_task": "You need to find out about Victorian schools for your topic. How would you read this information book differently from how you read your story at home?",
+        "example_response": "'For the information book, I would use the contents page to find the right section and skim through for the facts I need. For my story, I would read every word from the beginning because I want to enjoy the whole thing.'",
+        "common_errors": [
+          "Reading the non-fiction book from cover to cover like a story",
+          "Knowing the approaches are different but not being able to articulate how"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Adapting reading strategies for different purposes — scanning for information, close reading for analysis, sustained reading for pleasure — and recognising different text structures.",
+        "example_task": "Read this newspaper report and this story extract. How are they structured differently? Why?",
+        "example_response": "'The newspaper has a headline, short paragraphs and gives the most important information first. The story builds up slowly with description and dialogue. They're different because the newspaper wants to give facts quickly, but the story wants to create feelings and suspense.'",
+        "common_errors": [
+          "Describing what each text is about rather than how they are structured",
+          "Noticing surface differences (length, layout) but not structural ones"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluating how effectively a text fulfils its purpose and comparing texts written for different purposes on the same topic.",
+        "example_task": "Read the story about a volcano eruption and the science text about volcanoes. Which teaches you more facts? Which helps you understand what it would be like to experience an eruption? Why is each effective for its purpose?",
+        "example_response": "'The science text gives more facts — types of volcano, causes, locations. But the story makes you feel scared and excited because the author describes the heat, noise and panic. Each is effective for its purpose: the science text informs and the story creates empathy. A reader might want both — the facts and the experience.'",
+        "common_errors": [
+          "Saying one text is 'better' rather than recognising each serves a different purpose",
+          "Not connecting the texts' effectiveness to their purpose"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C019",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using alphabetical order to the first letter to find a word in a simplified dictionary.",
+        "example_task": "Find the word 'bridge' in this dictionary. Which letter section would you look in?",
+        "example_response": "'I'd look in the B section.' (Child finds the word.)",
+        "common_errors": [
+          "Looking through the dictionary from the beginning instead of going directly to 'B'",
+          "Not knowing alphabetical order confidently"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using alphabetical order to the second and third letter to locate words efficiently.",
+        "example_task": "Find the word 'character' in the dictionary. Explain how you navigated to it.",
+        "example_response": "'I went to C, then looked for \"ch\" words, then \"cha\" — and found character between \"chaos\" and \"charge\".'",
+        "common_errors": [
+          "Finding the correct letter section but struggling to navigate within it",
+          "Confusing the order of letters within the same initial letter group"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using a dictionary efficiently to check meanings of words encountered in reading, selecting the appropriate definition when multiple senses are given.",
+        "example_task": "The text says: 'The bank of the river was steep.' Look up 'bank' in the dictionary. Which definition fits this sentence?",
+        "example_response": "'The dictionary gives several meanings for \"bank\": 1. a financial institution, 2. the side of a river, 3. to tilt an aircraft. The one that fits is number 2 — the side of a river.'",
+        "common_errors": [
+          "Selecting the first definition without checking whether it fits the context",
+          "Finding the word but not reading beyond the first definition"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using a dictionary as a learning tool — reading etymological information, exploring related words, and using the dictionary to enhance vocabulary rather than just check spellings.",
+        "example_task": "Look up the word 'telephone' in a comprehensive dictionary. What can you learn from the entry beyond just the meaning?",
+        "example_response": "'The dictionary says telephone comes from Greek: \"tele\" meaning far and \"phone\" meaning sound or voice. It also lists \"telephony\" and \"telephonic\" as related words. Knowing \"tele\" means far helps me understand \"television\" (far seeing), \"telescope\" (far watching) and \"telegram\" (far writing).'",
+        "common_errors": [
+          "Reading only the definition and ignoring other information in the entry",
+          "Not connecting etymological information to other words they know"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C020",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Listening to and enjoying a fairy story, myth or legend read aloud, identifying basic features.",
+        "example_task": "I've just read you the Greek myth about Icarus. What magical or supernatural thing happened in the story?",
+        "example_response": "'Daedalus made wings out of feathers and wax so they could fly like birds. That's magical because people can't really fly.'",
+        "common_errors": [
+          "Retelling the whole plot instead of identifying the supernatural element",
+          "Not distinguishing between realistic and fantastical elements"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognising the characteristics of fairy stories, myths and legends as distinct forms of traditional literature.",
+        "example_task": "How do you know this is a myth rather than a fairy story? What features tell you?",
+        "example_response": "'It's a myth because it explains why something in nature happens — why the seasons change. It has gods and supernatural beings, not fairies and princes. It comes from an ancient culture.'",
+        "common_errors": [
+          "Using 'myth' and 'fairy tale' interchangeably",
+          "Identifying features of the text type but not being able to explain why those features matter"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Comparing traditional stories from different cultures, retelling key stories orally, and identifying common themes across traditions.",
+        "example_task": "We've read a Norse myth and a Greek myth. What do they have in common? How are they different?",
+        "example_response": "'Both have powerful gods who control nature, and both explain why things happen in the world. But the Norse gods seem more like warriors and the Greek gods are more like humans with superpowers. Both cultures used myths to teach lessons about how to behave.'",
+        "common_errors": [
+          "Comparing plot details rather than thematic and structural similarities",
+          "Only identifying similarities without noting differences, or vice versa"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analysing why traditional stories endure and what they reveal about the culture they come from, making connections to modern stories that use similar patterns.",
+        "example_task": "Why do you think people still read myths that are thousands of years old? Can you think of a modern story that uses similar patterns?",
+        "example_response": "'Myths deal with big questions that still matter — why the world is the way it is, what makes someone a hero, what happens when you're too proud. The myth of Icarus is about not being reckless, and that's still relevant. Modern stories like Harry Potter use the same hero's journey pattern — an ordinary person called to an adventure, facing trials, and returning changed.'",
+        "common_errors": [
+          "Saying myths are interesting without explaining why they endure",
+          "Making superficial connections to modern stories based on plot similarity only"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C021",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying a simple theme in a story (e.g., good vs evil, friendship, bravery) when prompted.",
+        "example_task": "This story was about a boy who stood up to a bully. What is the theme — what is the story really about underneath the plot?",
+        "example_response": "'It's about being brave and standing up for what's right, even when you're scared.'",
+        "common_errors": [
+          "Retelling the plot ('A boy fought a bully') instead of identifying the theme",
+          "Confusing the topic (bullying) with the theme (courage)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying themes and genre conventions in familiar book types (adventure, mystery, fairy tale).",
+        "example_task": "We've been reading adventure stories. What features do they all share? What themes keep appearing?",
+        "example_response": "'They all have a hero who goes on a journey or quest. There are obstacles to overcome and usually a villain. The themes are courage, perseverance and the idea that good wins in the end.'",
+        "common_errors": [
+          "Listing plot features without identifying the underlying themes",
+          "Identifying one convention but not recognising it as a pattern across texts"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Recognising themes across different texts and explaining how genre conventions shape reader expectations.",
+        "example_task": "Compare the themes in the adventure story and the mystery story we read this term. How does the genre affect the kind of theme?",
+        "example_response": "'The adventure story's theme was about courage — the hero had to face his fears. The mystery's theme was about truth and justice — the detective uncovered what really happened. In adventures, you expect themes about bravery. In mysteries, you expect themes about seeking truth. The genre shapes what kind of message the story gives.'",
+        "common_errors": [
+          "Identifying themes in each text but not connecting them to genre conventions",
+          "Describing the genre features without linking to thematic content"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Identifying multiple themes within a single text, recognising that authors use conventions to set up and then challenge reader expectations.",
+        "example_task": "This story starts like a fairy tale but doesn't end like one. What conventions does the author use and then subvert? How does this affect the theme?",
+        "example_response": "'The story starts with \"Once upon a time\" and has a princess and a dragon — typical fairy tale conventions. But the princess rescues herself instead of waiting for a prince, and the dragon turns out to be friendly. By subverting the conventions, the author changes the theme from \"a hero saves the day\" to \"you should question assumptions and not judge by appearances.\"'",
+        "common_errors": [
+          "Noticing the subversion but not connecting it to a shift in theme",
+          "Identifying what's different without explaining why the author made that choice"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C022",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading a poem aloud with some awareness of rhythm, varying volume for emphasis.",
+        "example_task": "Read this short poem aloud. Try to follow the rhythm — let the words bounce along.",
+        "example_response": "Child reads with some awareness of the poem's rhythmic pattern, speaking clearly.",
+        "common_errors": [
+          "Reading the poem as if it were prose, ignoring line breaks and rhythm",
+          "Reading in a singsong voice that emphasises rhythm at the expense of meaning"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Preparing a poem or play script for performance, making deliberate choices about voice and expression.",
+        "example_task": "With your group, prepare this poem for performance. Decide who says which lines and how you will use your voices.",
+        "example_response": "Group assigns parts, rehearses with varied volume and pace, and performs with some expression and coordination.",
+        "common_errors": [
+          "All reading together in unison without varying delivery",
+          "Focusing on memorisation at the expense of expression"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Performing poems and play scripts with intonation, tone, volume and action that show understanding of meaning.",
+        "example_task": "Perform this poem to the class. Your voice and actions should show you understand what the poem means and how the poet wants the audience to feel.",
+        "example_response": "Child performs with deliberate pauses, varied pace (fast for exciting parts, slow for sad parts), gestures that enhance meaning, and expression that conveys the poem's mood.",
+        "common_errors": [
+          "Reciting from memory accurately but without expression",
+          "Using exaggerated actions that distract from the poem's meaning"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Interpreting poems and scripts through performance choices, explaining why specific performance decisions enhance meaning.",
+        "example_task": "Perform the poem in two different ways — one version should feel sad and one should feel angry. Explain what you changed and why.",
+        "example_response": "Performs both versions, then explains: 'For the sad version, I spoke slowly and quietly, dropping my voice at the end of each line. For the angry version, I spoke faster and louder, emphasising the strong words. The poem works both ways because the character has lost something — they could be grieving or furious.'",
+        "common_errors": [
+          "Performing differently but not being able to articulate what changed and why",
+          "Making superficial changes (just volume) rather than changing pace, pause and emphasis"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C023",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying a word or phrase that stands out in a text and saying whether they like it.",
+        "example_task": "Find a word or phrase in this passage that you think is interesting or effective. Read it out.",
+        "example_response": "'I like \"the moon smiled down at them\" because it makes the moon sound friendly.'",
+        "common_errors": [
+          "Choosing a word because it's long or unusual rather than because of its effect",
+          "Saying 'I like it' without any explanation"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying effective language and beginning to explain what effect it creates.",
+        "example_task": "The author wrote: 'The wind howled through the empty streets.' Why is 'howled' a good word choice?",
+        "example_response": "'\"Howled\" makes the wind sound like a wolf or an animal, which makes the scene feel scary and lonely. It's better than \"blew\" because it creates a picture in your mind.'",
+        "common_errors": [
+          "Saying the word is 'descriptive' without explaining the specific effect",
+          "Identifying the technique (personification) without discussing its effect"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Discussing the effect of specific language choices, explaining how words and phrases capture the reader's interest and create imagery.",
+        "example_task": "Find three examples of effective language in this chapter. For each, explain what picture or feeling the author creates and how.",
+        "example_response": "'1. \"Shadows crept across the floor\" — personification makes the shadows feel alive and threatening. 2. \"As quiet as a held breath\" — the simile creates a tense silence, like something is about to happen. 3. \"Crash!\" — the short onomatopoeia breaks the silence suddenly and shocks the reader.'",
+        "common_errors": [
+          "Finding effective language but only being able to say it's 'good' or 'describes things well'",
+          "Identifying techniques by name without explaining their effect on the reader"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Analysing how language choices work together to create an overall effect, and applying techniques from reading to own writing.",
+        "example_task": "Look at this paragraph. How do the author's word choices work together to create a specific mood? Then write your own paragraph using similar techniques.",
+        "example_response": "'The author uses dark colours (\"grey\", \"black\"), cold temperatures (\"icy\", \"frozen\"), and hostile verbs (\"slashed\", \"bit\") to create a threatening mood. Every word choice reinforces the same feeling. In my paragraph I'll do the same but for a peaceful mood, using warm colours, gentle verbs and natural imagery.'",
+        "common_errors": [
+          "Analysing individual word choices without seeing how they work together",
+          "Understanding the analysis but not being able to apply the same techniques in own writing"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C024",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising that poems can have different forms and that not all poems rhyme.",
+        "example_task": "Listen to these two poems. One rhymes and one doesn't. Which is which? Are they both poems?",
+        "example_response": "'The first one rhymes — \"cat\" and \"hat\" at the end of lines. The second one doesn't rhyme but it's still a poem because it has short lines and creates a picture.'",
+        "common_errors": [
+          "Saying the non-rhyming text isn't a poem because it doesn't rhyme",
+          "Not being able to identify what makes the non-rhyming text a poem"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying different poetic forms (haiku, acrostic, rhyming poem, free verse) and their basic characteristics.",
+        "example_task": "Which type of poem is this: it has three lines with 5, 7 and 5 syllables?",
+        "example_response": "'A haiku — it has three lines and counts syllables: 5-7-5. It's usually about nature.'",
+        "common_errors": [
+          "Confusing poetic forms with each other",
+          "Identifying the form by name but not knowing its characteristics"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Understanding how poetic form shapes content and writing poems in different forms with awareness of their conventions.",
+        "example_task": "Write a haiku about winter and a free verse poem about winter. How does the form affect what you can say?",
+        "example_response": "Haiku: 'Frost sparkles on glass / Morning silence, white and cold / Robins wait for spring.' Free verse: 'Winter presses its cold fingers against the window pane. The garden has forgotten colour — everything grey, brown, still.' Child explains: 'The haiku forces you to choose your words carefully because you have so few. Free verse lets me develop the image more, but I have to create my own structure.'",
+        "common_errors": [
+          "Writing the haiku with the wrong syllable count",
+          "Writing free verse that reads like prose with line breaks"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining why a poet might choose a particular form and evaluating how form enhances meaning.",
+        "example_task": "Why do you think the poet chose to write about the city as a sonnet rather than free verse? How does the structured form add to the poem's effect?",
+        "example_response": "'The structured form with its strict rhythm creates a sense of the city's relentless pace — the beat is like footsteps or a heartbeat. The rhyme scheme ties ideas together. If it were free verse, it might feel more relaxed, which wouldn't match the busy city subject. The form supports the content.'",
+        "common_errors": [
+          "Discussing the form's features without connecting them to the poem's meaning",
+          "Saying the form was chosen because the poet 'likes' that form rather than for artistic reasons"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C025",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Stopping when something doesn't make sense in a text and rereading the sentence.",
+        "example_task": "Read this paragraph. If something doesn't make sense, stop and reread it. Put your hand up when you find a confusing part.",
+        "example_response": "Child rereads a confusing sentence and either works out the meaning or identifies what is unclear.",
+        "common_errors": [
+          "Reading through confusing parts without stopping",
+          "Stopping but waiting for help rather than rereading"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using fix-up strategies (rereading, reading on, using context) when comprehension breaks down.",
+        "example_task": "Read this passage. When you get stuck on meaning, use one of these strategies: reread, read on, look at the context. Tell me which strategy you used.",
+        "example_response": "'I didn't understand the word \"vessel\" so I read on and the next sentence said it sailed across the ocean, so I worked out it means a ship.'",
+        "common_errors": [
+          "Using only one strategy (usually rereading) rather than trying alternatives",
+          "Knowing the strategies but not applying them independently"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Monitoring comprehension independently while reading, using multiple strategies to maintain understanding across longer texts.",
+        "example_task": "Read this chapter independently. At the end, tell me about any parts where your understanding broke down and what you did about it.",
+        "example_response": "'On page 14, I didn't understand why the character was angry because I'd forgotten what happened in the last chapter. I went back and reread the end of the last chapter, which reminded me about the broken promise. Then the anger made sense.'",
+        "common_errors": [
+          "Reading a whole chapter without monitoring and then being unable to recall key details",
+          "Monitoring for word-level understanding but not for broader comprehension of events and motivations"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Reflecting on their own comprehension process, identifying which strategies are most effective for different types of confusion, and supporting peers with comprehension monitoring.",
+        "example_task": "Explain to a partner the difference between being confused by a word you don't know and being confused by the plot. What different strategies would you use for each?",
+        "example_response": "'If I don't know a word, I use context, word parts or a dictionary. If I'm confused by the plot, rereading earlier sections is more helpful, or drawing a timeline of events. Sometimes I'm confused because the author is being deliberately mysterious — then I need to read on and trust that it will become clear. The type of confusion tells me which strategy to use.'",
+        "common_errors": [
+          "Using the same strategy regardless of what's causing the confusion",
+          "Not recognising that some confusion is intentional (e.g., in mystery or suspense writing)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C026",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Answering a literal question about a text by locating the answer directly stated in the passage.",
+        "example_task": "Read this paragraph about hedgehogs. What do hedgehogs eat? Find the sentence that tells you.",
+        "example_response": "'The paragraph says hedgehogs eat slugs, beetles and caterpillars.' (Points to the relevant sentence.)",
+        "common_errors": [
+          "Answering from general knowledge rather than locating the answer in the text",
+          "Giving an answer that relates to a different part of the text rather than what was asked"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Formulating simple questions about a text to clarify understanding, such as asking about unfamiliar words or unclear events.",
+        "example_task": "Read this page of the story. Write down two questions about things you are not sure about or want to know more about.",
+        "example_response": "'Why did the character hide the letter? What does the word reluctantly mean?'",
+        "common_errors": [
+          "Writing questions that can be answered by simply rereading the text rather than ones that deepen understanding",
+          "Asking only factual recall questions rather than questions about meaning or motivation"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Generating inferential and evaluative questions during reading that deepen comprehension, including questions about characters' motives and author intentions.",
+        "example_task": "Read this chapter. At three points during your reading, stop and write a question. At least one question should be about why a character did something and one about why the author made a particular choice.",
+        "example_response": "'Why does the author describe the weather just before something bad happens — is the storm meant to be a warning? Why did Marcus choose not to tell his friend about the map? I wonder whether the author wants us to think Marcus is brave or foolish.'",
+        "common_errors": [
+          "Generating only surface-level questions about what happens rather than why",
+          "Asking questions that have already been answered in the text rather than genuine comprehension-deepening questions"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using questioning strategically to explore multiple interpretations of a text, recognising that different questions reveal different layers of meaning.",
+        "example_task": "Read this extract. Write one question about what is happening, one about what the author wants us to feel, and one that challenges or critiques the text.",
+        "example_response": "'What happened to the character's brother before the story starts? The author uses short sentences in this paragraph — is this to make us feel tense or rushed? Why does the author only tell the story from one character's point of view — what would change if we heard from the other character?'",
+        "common_errors": [
+          "Generating questions at only one level rather than varying the depth and focus",
+          "Treating questioning as a task to complete rather than a genuine strategy for deepening understanding"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C027",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying a character's feeling when it is stated explicitly in the text.",
+        "example_task": "Read this passage. How does the character feel? Find the word in the text that tells you.",
+        "example_response": "'The text says she felt worried. It says it on the third line.'",
+        "common_errors": [
+          "Guessing the feeling based on the picture rather than finding evidence in the text",
+          "Naming a feeling without pointing to where it is stated"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Inferring a character's feeling from their actions or dialogue when it is not directly stated, with support.",
+        "example_task": "Read this passage. The author doesn't say how the character feels, but the character slammed the door and didn't speak. How do you think they feel? What clue tells you?",
+        "example_response": "'I think the character is angry because they slammed the door. People slam doors when they are cross.'",
+        "common_errors": [
+          "Stating a feeling without connecting it to evidence from the text",
+          "Confusing what the character feels with what the reader feels"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Drawing inferences about characters' feelings, thoughts and motives from their actions and dialogue, justifying with specific textual evidence using the PEE structure.",
+        "example_task": "Read this extract. Explain what the character is thinking and why. Use evidence from the text to support your answer.",
+        "example_response": "'I think Amara is planning to run away because the text says she packed her bag secretly at night and kept looking towards the window. This suggests she doesn't want anyone to know what she is doing and is thinking about an escape route.'",
+        "common_errors": [
+          "Making an inference that is not supported by the text",
+          "Providing evidence but not explaining how it supports the inference"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Drawing inferences about complex or conflicting character motivations, recognising that characters may have mixed feelings or hidden motives, and supporting with multiple pieces of evidence.",
+        "example_task": "Read this extract where the character agrees to help but hesitates. Explain what conflicting feelings the character might have. Use at least two pieces of evidence.",
+        "example_response": "'I think the character wants to help because they say yes straight away, which shows loyalty. But the description of them biting their lip and looking away suggests they are also scared or unsure. The author might be showing that the character is torn between wanting to do the right thing and feeling afraid of what might happen.'",
+        "common_errors": [
+          "Identifying only one feeling when the text suggests a more complex emotional response",
+          "Assuming characters always feel one thing rather than recognising mixed or evolving emotions"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C028",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Making a simple prediction about what will happen next based on a picture or cover illustration.",
+        "example_task": "Look at the front cover of this book. What do you think the story will be about? Why?",
+        "example_response": "'I think it will be about a boy exploring a cave because the picture shows a boy with a torch going into a dark place.'",
+        "common_errors": [
+          "Making a random guess unconnected to the visual clues",
+          "Describing the cover rather than predicting what might happen"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Making a prediction based on what has happened so far in the story, using explicitly stated details.",
+        "example_task": "We've read that the character has found a mysterious key. What do you think will happen next? Use something from the story to explain your prediction.",
+        "example_response": "'I think she will find a locked door because earlier the story mentioned a door that nobody could open. The key might be for that door.'",
+        "common_errors": [
+          "Predicting based on personal wishes rather than textual evidence",
+          "Making a prediction but not linking it to anything stated in the text"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Making reasoned predictions using both stated and implied information, explaining the reasoning behind the prediction.",
+        "example_task": "Read up to the end of this chapter. What do you predict will happen in the next chapter? Use clues from what has been said and what has been hinted at.",
+        "example_response": "'I predict that the two characters will fall out because the author keeps mentioning small disagreements between them — like when they argued about which path to take and when one looked annoyed about the other's decision. These hints suggest a bigger conflict is building.'",
+        "common_errors": [
+          "Using only explicit details and not picking up on implied clues",
+          "Making a prediction that contradicts what has already been established in the text"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Making predictions that consider multiple possible outcomes and evaluating which is most likely based on the weight of textual evidence, including genre conventions.",
+        "example_task": "Read this extract. Give two possible predictions for what might happen next and explain which one you think is more likely, based on the evidence and the type of story this is.",
+        "example_response": "'One possibility is that the character will forgive their friend because the story has been about loyalty so far, and in most quest stories the heroes make up. But another possibility is that the character leaves the group, because the author has been hinting that they have a secret reason for being on the journey. I think the first is more likely because this feels like a story about friendship winning.'",
+        "common_errors": [
+          "Offering alternative predictions without evaluating their relative likelihood",
+          "Not using knowledge of genre conventions to support predictions"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C029",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Retelling the main event from a short passage in their own words.",
+        "example_task": "Read this short paragraph. In one sentence, tell me what happened.",
+        "example_response": "'The boy found a lost dog in the park and took it home.'",
+        "common_errors": [
+          "Retelling every detail rather than identifying the main event",
+          "Copying a sentence from the text rather than using own words"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying the main idea of a single paragraph and distinguishing it from supporting details.",
+        "example_task": "Read this paragraph about Roman soldiers. What is the main idea? Which details support it?",
+        "example_response": "'The main idea is that Roman soldiers were very well trained. The details about marching twenty miles a day and practising sword skills every morning support that.'",
+        "common_errors": [
+          "Choosing an interesting detail rather than the main idea",
+          "Identifying the topic but not the main point about the topic"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying main ideas across multiple paragraphs and creating a brief summary that captures the key information without unnecessary detail.",
+        "example_task": "Read these three paragraphs about volcanoes. Summarise the key information in 2-3 sentences.",
+        "example_response": "'Volcanoes form when magma from deep underground pushes through the Earth's surface. They can be active, dormant or extinct. When a volcano erupts, it can cause damage from lava, ash and gases, but volcanic soil is also very fertile for farming.'",
+        "common_errors": [
+          "Including too much detail and essentially retelling the whole text",
+          "Summarising only the first paragraph and ignoring the rest"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Summarising a text that contains multiple viewpoints or complex information, prioritising the most important ideas and noting how different parts of the text relate to each other.",
+        "example_task": "Read this article about whether zoos are good or bad. Summarise the main arguments from both sides in no more than four sentences.",
+        "example_response": "'Some people believe zoos protect endangered species and educate the public about wildlife. Others argue that keeping animals in captivity is cruel and that conservation is better done in the wild. The article suggests that well-run zoos do important breeding work but that not all zoos meet high standards. Both sides agree that habitat protection is essential.'",
+        "common_errors": [
+          "Summarising only one side of the argument",
+          "Including personal opinion in a summary rather than reporting what the text says"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C030",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Noticing a basic presentational feature in a non-fiction text, such as a heading or a picture with a caption.",
+        "example_task": "Look at this page from an information book. Point to the heading. What does it tell you the page is about?",
+        "example_response": "'The heading says How Caterpillars Become Butterflies. It tells me the page is about the life cycle of butterflies.'",
+        "common_errors": [
+          "Not understanding that a heading tells you what the section is about",
+          "Confusing the heading with the title of the whole book"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying how an author uses specific language choices or structural features to create an effect, with prompting.",
+        "example_task": "Read this description of a storm. The author writes: 'The wind howled and the trees groaned.' Why did the author use the words howled and groaned instead of blew and moved?",
+        "example_response": "'Howled and groaned make the storm sound like a person or animal. It makes it scarier because it sounds alive and angry.'",
+        "common_errors": [
+          "Saying the language is 'good' without explaining the effect",
+          "Not recognising that the author chose specific words deliberately"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Discussing how language choices, text structure and presentational features contribute to meaning across different text types.",
+        "example_task": "Compare these two texts about the same animal — one is a story, the other is an information page. How do the language and layout differ, and why?",
+        "example_response": "'The story uses descriptive language like silky fur and crept silently to create a picture in your mind. The information text uses headings, bullet points and factual language like nocturnal predator to organise information clearly. The story wants you to feel something about the animal; the information text wants you to learn facts.'",
+        "common_errors": [
+          "Describing the differences without explaining why each text type uses these features",
+          "Focusing only on language and ignoring structural or presentational features"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Evaluating the effectiveness of an author's language and structural choices, suggesting how different choices might change the reader's experience.",
+        "example_task": "Read this extract. The author uses very short sentences when the character is in danger. Why is this effective? How would the effect change if the sentences were long and detailed?",
+        "example_response": "'Short sentences create a fast pace and make the reader feel tense and rushed, just like the character. If the sentences were long, the scene would feel slower and calmer, and we wouldn't feel the urgency. The author matches the sentence structure to the mood — short for danger, longer for calm moments.'",
+        "common_errors": [
+          "Identifying the technique without explaining its effect on the reader",
+          "Not being able to suggest how alternative choices would change the effect"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C031",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding a single piece of information in a non-fiction text when told which page or section to look in.",
+        "example_task": "Look at page 12 of this book about dinosaurs. Find the name of the biggest dinosaur.",
+        "example_response": "'It says the Argentinosaurus was the biggest dinosaur.' (Points to the relevant sentence.)",
+        "common_errors": [
+          "Reading the whole page from start to finish instead of scanning for the specific information",
+          "Giving information from a different page or section"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using a contents page or index to locate information in a non-fiction text and recording it in own words.",
+        "example_task": "Use the contents page of this book to find the section about what Victorian children ate. Write one fact in your own words.",
+        "example_response": "'I found it in Chapter 4 on page 18. Victorian children who were poor often ate bread and dripping for their meals.'",
+        "common_errors": [
+          "Copying a sentence from the book rather than using own words",
+          "Not using the contents page and instead flicking through randomly"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Retrieving and recording information from multiple sections of a non-fiction text to answer a research question, using navigational features efficiently.",
+        "example_task": "Use this non-fiction book to find out three facts about how Ancient Egyptians built the pyramids. Use the index and contents page to find your information. Record your facts in your own words.",
+        "example_response": "'1. Thousands of workers pulled huge stone blocks along sand that had been made wet to reduce friction. 2. Ramps were probably used to move blocks up to higher levels. 3. Workers were not slaves — they were paid and lived in nearby villages.' (Notes page numbers for each fact.)",
+        "common_errors": [
+          "Recording facts that are interesting but don't answer the specific research question",
+          "Copying text word-for-word rather than putting information into own words"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Synthesising information from multiple non-fiction sources, comparing what different sources say about the same topic and noting agreements or discrepancies.",
+        "example_task": "Use these two different books about space to find out about the temperature on Mars. Do the books agree? Record what each says.",
+        "example_response": "'Book A says the average temperature on Mars is minus 60 degrees Celsius. Book B says it ranges from minus 140 to 20 degrees Celsius. They don't exactly disagree — Book B gives more detail, showing that the temperature varies a lot. Book A just gives the average. Using both sources gives a more complete picture.'",
+        "common_errors": [
+          "Treating all sources as equally reliable without comparing them",
+          "Recording information from only one source when asked to use multiple"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C032",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Sharing a simple opinion about a book when asked a direct question by the teacher.",
+        "example_task": "We've just finished reading this chapter together. Did you enjoy it? Tell your partner one thing you liked.",
+        "example_response": "'I liked the part where the dog got stuck in the tree because it was funny.'",
+        "common_errors": [
+          "Saying 'I liked it' or 'It was good' without explaining what they liked or why",
+          "Retelling what happened rather than sharing a personal response"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Contributing to a group discussion about a book by sharing opinions and responding to what others say.",
+        "example_task": "In your reading group, discuss whether the main character made the right decision. Listen to each other and respond to what your group members say.",
+        "example_response": "'I think she made the wrong decision because she didn't think about how her friend would feel. But I heard what Jayden said about her being scared, and I can understand that being scared might make you act without thinking.'",
+        "common_errors": [
+          "Waiting for the teacher to ask a question rather than initiating their own contributions",
+          "Stating a view without listening to or responding to what others have said"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Engaging in extended discussion about books, building on others' contributions, referring to the text, and developing rules for effective group discussion.",
+        "example_task": "In your book club, discuss the themes you have noticed in this story. Build on each other's ideas and refer to specific parts of the text to support your points.",
+        "example_response": "'I agree with Priya that friendship is a theme because the two characters help each other even when things go wrong — like on page 34 when Tom goes back for Ella. But I also think bravery is a theme because every challenge they face requires them to do something that frightens them. The title Even in the Dark could refer to both themes.'",
+        "common_errors": [
+          "Having a series of separate opinions rather than a connected discussion",
+          "Making points without referring to specific evidence from the text"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Leading and sustaining a rich discussion about books, asking probing questions, respectfully challenging others' interpretations, and drawing together different viewpoints.",
+        "example_task": "Lead a discussion with your group about whether the ending of this book was satisfying. Encourage everyone to contribute and draw the discussion together at the end.",
+        "example_response": "'I thought the ending was satisfying because the mystery was solved, but Anaya made a good point that we never found out what happened to the minor character. Does anyone else think there were loose ends? Kai suggested the author might have left it open for a sequel, which is a different way of looking at it. So as a group, we think the ending worked for the main plot but left some questions unanswered.'",
+        "common_errors": [
+          "Dominating the discussion rather than facilitating others' contributions",
+          "Summarising without acknowledging the different viewpoints shared in the discussion"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-Y3-C033",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading silently for a very short period (2-3 minutes) with a familiar, appropriately levelled text.",
+        "example_task": "Read this page of your reading book silently for two minutes. When I stop you, tell your partner what you just read about.",
+        "example_response": "'I read about the boy finding a map in the attic. He was excited because he thought it might lead to treasure.'",
+        "common_errors": [
+          "Mouthing words or whispering aloud rather than reading silently",
+          "Turning pages without engaging with meaning, unable to recall what was read"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading silently for a sustained period (5-10 minutes) and recalling the main points of what was read.",
+        "example_task": "Read silently for ten minutes. When the timer goes, write a brief note about what you read and one question you have.",
+        "example_response": "'I read chapters 3 and 4. The characters have arrived at the island and are setting up camp. My question is: why does Jake keep looking at the trees — is someone watching them?'",
+        "common_errors": [
+          "Losing concentration partway through and not being able to recall what was read in the second half",
+          "Choosing a text that is too difficult, leading to word-by-word decoding rather than silent reading for meaning"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading silently with sustained comprehension across longer texts, maintaining focus and using comprehension strategies independently.",
+        "example_task": "Read your novel silently for fifteen minutes. In your reading journal, summarise what happened and note any part where you needed to reread for understanding.",
+        "example_response": "'Today I read chapters 6 and 7. The main characters discovered that the old lighthouse keeper had been hiding a message all along. I had to reread the bit about the code because it was confusing at first, but when I went back it made sense — the first letter of each line spells out a warning.'",
+        "common_errors": [
+          "Reading for the full time without monitoring comprehension — reading the words but not processing the meaning",
+          "Not rereading when comprehension breaks down, continuing regardless"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Reading silently with deep engagement, making notes, asking questions and connecting to other texts or knowledge independently during extended reading sessions.",
+        "example_task": "Read your current book silently for twenty minutes. Use sticky notes to mark anything that surprises you, reminds you of another text, or raises a question.",
+        "example_response": "(Three sticky notes in the text.) 'Page 42: This reminds me of the trick in the Greek myth we read — the hero pretends to be someone else too. Page 45: I'm surprised the friend helped because earlier she seemed angry. Page 48: I wonder if the author is going to bring back the character from chapter 1.'",
+        "common_errors": [
+          "Reading passively without the active engagement that would generate notes or questions",
+          "Making superficial notes that don't reflect genuine engagement with the text"
+        ]
+      }
+    ]
+  }
+]

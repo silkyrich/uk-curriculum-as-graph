@@ -1,0 +1,236 @@
+[
+  {
+    "concept_id": "MA-Y3-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Adding ones, tens or hundreds to a three-digit number using Dienes blocks where no carrying is required.",
+        "example_task": "Use Dienes blocks to work out 342 + 5.",
+        "example_response": "Add 5 ones cubes to the 2 ones already there. 342 + 5 = 347.",
+        "common_errors": [
+          "Adding the 5 to the tens column instead (342 + 5 = 392)",
+          "Changing the hundreds digit instead (342 + 5 = 842)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Mentally adding ones, tens or hundreds to three-digit numbers, including some carrying cases, with a number line available.",
+        "example_task": "Work out 356 + 40 mentally.",
+        "example_response": "356 + 40 = 396. I added 4 tens to the 5 tens, giving 9 tens.",
+        "common_errors": [
+          "Adding to the wrong column: 356 + 40 = 360 (adding 4 to ones)",
+          "Forgetting to carry: 356 + 70 = 3126 instead of 426"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Mentally adding ones, tens or hundreds to any three-digit number, including carrying across place value boundaries, without support.",
+        "example_task": "Work out 487 + 6 and 487 + 30 mentally.",
+        "example_response": "487 + 6 = 493. 7 + 6 = 13, so ones become 3 and carry 1 ten. 487 + 30 = 517. 80 + 30 = 110, so tens become 1 and carry 1 hundred.",
+        "common_errors": [
+          "Forgetting to carry: 487 + 6 = 4813 (concatenating 48 and 13)",
+          "487 + 30 = 490 (adding 3 instead of 30)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Subtracting ones, tens or hundreds from a three-digit number using Dienes blocks where no exchanging is required.",
+        "example_task": "Use Dienes blocks to work out 487 - 5.",
+        "example_response": "Remove 5 ones cubes. 487 - 5 = 482.",
+        "common_errors": [
+          "Subtracting from the wrong column: 487 - 5 = 437 (subtracting 5 tens)",
+          "Counting the remaining cubes incorrectly"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Mentally subtracting ones, tens or hundreds, including some exchange cases, using a number line if needed.",
+        "example_task": "Work out 534 - 60 mentally. You may use a number line.",
+        "example_response": "534 - 60 = 474. I subtracted 6 tens: 53 tens - 6 tens = 47 tens.",
+        "common_errors": [
+          "534 - 60 = 530 (subtracting 4 instead of 60)",
+          "534 - 60 = 574 (subtracting from hundreds then adding back incorrectly)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Mentally subtracting ones, tens or hundreds from any three-digit number, including exchange across boundaries, without support.",
+        "example_task": "Work out 352 - 7 and 600 - 40 mentally.",
+        "example_response": "352 - 7 = 345. I can't take 7 from 2, so I take 7 from 12 (borrowing a ten) to get 5, and 5 tens become 4 tens. 600 - 40 = 560. I need to borrow from the hundreds: 60 tens - 4 tens = 56 tens = 560.",
+        "common_errors": [
+          "352 - 7 = 355 (subtracting smaller from larger: 7 - 2 = 5)",
+          "600 - 40 = 200 (subtracting 400 instead of 40)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Choosing the most efficient mental strategy for a given subtraction and explaining the choice.",
+        "example_task": "Work out 503 - 497 using the most efficient mental method. Explain why you chose it.",
+        "example_response": "I used counting on (complementary addition) from 497 to 503: 497 + 3 = 500, then 500 + 3 = 503, so the answer is 6. This is more efficient than column subtraction because the numbers are close together.",
+        "common_errors": [
+          "Using a formal written method for numbers very close together, which is slow and error-prone",
+          "Getting the counting on wrong: 497 + 3 = 500 + 3 = 503 but saying the difference is 3 instead of 6"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Adding two three-digit numbers using Dienes blocks, physically regrouping 10 ones into 1 ten or 10 tens into 1 hundred.",
+        "example_task": "Use Dienes blocks to add 145 + 237. Regroup if any column has 10 or more.",
+        "example_response": "Ones: 5 + 7 = 12, regroup 10 ones as 1 ten, write 2 ones. Tens: 4 + 3 + 1 = 8 tens. Hundreds: 1 + 2 = 3. Answer: 382.",
+        "common_errors": [
+          "Not regrouping (writing 12 in the ones column to get 3712)",
+          "Losing the carried ten (writing 372 instead of 382)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Setting out columnar addition on paper with correct alignment, carrying between columns, with a place value grid for support.",
+        "example_task": "Use columnar addition to calculate 256 + 178.",
+        "example_response": "Ones: 6 + 8 = 14, write 4 carry 1. Tens: 5 + 7 + 1 = 13, write 3 carry 1. Hundreds: 2 + 1 + 1 = 4. Answer: 434.",
+        "common_errors": [
+          "Forgetting to add the carried digit (getting 424 instead of 434)",
+          "Misaligning columns when numbers have different digit counts"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Fluent columnar addition of any two three-digit numbers, including multiple carries, without support.",
+        "example_task": "Calculate 467 + 385 using columnar addition.",
+        "example_response": "Ones: 7 + 5 = 12, write 2 carry 1. Tens: 6 + 8 + 1 = 15, write 5 carry 1. Hundreds: 4 + 3 + 1 = 8. Answer: 852.",
+        "common_errors": [
+          "Forgetting the second carry (getting 842 because tens carry is lost)",
+          "Adding digits left to right and not carrying (4 + 3 = 7, 6 + 8 = 14, 7 + 5 = 12, giving 71412)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Adding three-digit numbers where the result exceeds 1000, and checking with estimation.",
+        "example_task": "Calculate 587 + 468. First estimate, then calculate, then check using inverse.",
+        "example_response": "Estimate: 600 + 500 = 1100. Calculate: 7 + 8 = 15, write 5 carry 1. 8 + 6 + 1 = 15, write 5 carry 1. 5 + 4 + 1 = 10. Answer: 1055. Check: 1055 - 468 = 587. Correct.",
+        "common_errors": [
+          "Not knowing how to handle a four-digit answer",
+          "Estimating after calculating instead of before (defeating the purpose)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Subtracting with Dienes blocks, physically exchanging 1 ten for 10 ones when the top digit is smaller.",
+        "example_task": "Use Dienes blocks to work out 342 - 117. Exchange when needed.",
+        "example_response": "Ones: 2 - 7, need to exchange 1 ten for 10 ones. Now 12 - 7 = 5. Tens: 3 - 1 = 2. Hundreds: 3 - 1 = 2. Answer: 225.",
+        "common_errors": [
+          "Subtracting smaller from larger without exchanging (getting 235 by computing 7 - 2 = 5)",
+          "Exchanging but forgetting to reduce the tens column (getting 325)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Setting out columnar subtraction on paper with exchanges recorded correctly, using a place value grid.",
+        "example_task": "Use columnar subtraction to calculate 523 - 247.",
+        "example_response": "Ones: 3 - 7, exchange a ten. 13 - 7 = 6. Tens: 1 - 4 (now 1 ten after exchange), exchange a hundred. 11 - 4 = 7. Hundreds: 4 - 2 = 2. Answer: 276.",
+        "common_errors": [
+          "Forgetting to reduce the tens after exchanging (getting 376)",
+          "Attempting 3 - 7 by reversing: 7 - 3 = 4 (getting 284)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Fluent columnar subtraction of any three-digit numbers, including cascading exchanges, without support.",
+        "example_task": "Calculate 504 - 268 using columnar subtraction.",
+        "example_response": "Ones: 4 - 8, exchange from tens. But tens = 0, so exchange from hundreds first: 5 hundreds becomes 4 hundreds and 10 tens. Then exchange 1 ten: 9 tens and 14 ones. 14 - 8 = 6. 9 - 6 = 3. 4 - 2 = 2. Answer: 236.",
+        "common_errors": [
+          "Not knowing how to exchange across a zero (getting stuck at 0 tens)",
+          "Cascading exchange errors: making 504 into 4 hundreds, 10 tens, 4 ones instead of eventually reaching 4/9/14"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving subtractions with multiple zeros and checking using addition; explaining the exchange process.",
+        "example_task": "Calculate 600 - 347. Check your answer by adding.",
+        "example_response": "Exchange: 600 = 5 hundreds, 9 tens, 10 ones. 10 - 7 = 3. 9 - 4 = 5. 5 - 3 = 2. Answer: 253. Check: 253 + 347 = 600. Correct.",
+        "common_errors": [
+          "Not cascading the exchange correctly from 600 (trying 6/0/0 and not knowing where to borrow from)",
+          "Getting 253 but being unable to explain why 600 becomes 5/9/10"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Estimating the answer to an addition or subtraction by rounding both numbers to the nearest 100.",
+        "example_task": "Estimate the answer to 312 + 489 by rounding to the nearest hundred.",
+        "example_response": "312 rounds to 300. 489 rounds to 500. 300 + 500 = 800. So the answer is about 800.",
+        "common_errors": [
+          "Rounding incorrectly (rounding 489 to 400 instead of 500)",
+          "Computing the exact answer instead of estimating"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Estimating before calculating, then comparing the estimate with the exact answer to judge reasonableness.",
+        "example_task": "Estimate 278 + 345 first, then calculate exactly. Is your answer reasonable?",
+        "example_response": "Estimate: 300 + 300 = 600. Exact: 278 + 345 = 623. 623 is close to 600, so my answer is reasonable.",
+        "common_errors": [
+          "Estimating after calculating (biased by the answer)",
+          "Not comparing the estimate and exact answer"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using inverse operations to check calculations: after adding, subtracting to verify; after subtracting, adding to verify.",
+        "example_task": "Calculate 453 + 279. Check your answer using the inverse operation.",
+        "example_response": "453 + 279 = 732. Check: 732 - 279 = 453. My original number comes back, so the answer is correct.",
+        "common_errors": [
+          "Repeating the original calculation instead of using the inverse",
+          "Making an error in the inverse check and not knowing which answer to trust"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using estimation to spot incorrect answers and explain why they must be wrong.",
+        "example_task": "A pupil says 356 + 278 = 534. Without calculating the exact answer, explain why this must be wrong.",
+        "example_response": "356 rounds to 400 and 278 rounds to 300, so the answer should be about 700. 534 is much less than 700, so the answer must be wrong. Also, 356 + 278 must be more than 356 + 200 = 556, and 534 < 556, so it is definitely wrong.",
+        "common_errors": [
+          "Calculating the exact answer instead of using estimation to explain",
+          "Not being able to articulate why the estimate proves the answer wrong"
+        ]
+      }
+    ]
+  }
+]

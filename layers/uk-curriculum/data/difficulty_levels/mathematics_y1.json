@@ -1,0 +1,958 @@
+[
+  {
+    "concept_id": "MA-Y1-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting forwards from 1 to 20 using concrete objects, touching each object as it is counted (one-to-one correspondence).",
+        "example_task": "Count these cubes. Touch each cube as you count: 1, 2, 3... How many are there?",
+        "example_response": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12. There are 12 cubes.",
+        "common_errors": [
+          "Skipping an object or counting one object twice (losing one-to-one correspondence)",
+          "Saying number names out of order after 12 (e.g. 13, 15, 14)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Counting forwards and backwards within 50, starting from any given number, using a number line or hundred square for support.",
+        "example_task": "Start at 27. Count forwards to 35. Now count backwards from 35 to 27.",
+        "example_response": "27, 28, 29, 30, 31, 32, 33, 34, 35. Backwards: 35, 34, 33, 32, 31, 30, 29, 28, 27.",
+        "common_errors": [
+          "Hesitating or making errors at decade boundaries (e.g. saying 28, 29, 20 instead of 30)",
+          "Counting backwards is significantly slower and less fluent than counting forwards"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Counting forwards and backwards within 100 from any given number, including across decade boundaries, without support.",
+        "example_task": "Start at 77. Count forwards to 85. Now start at 43 and count backwards to 36.",
+        "example_response": "77, 78, 79, 80, 81, 82, 83, 84, 85. Backwards: 43, 42, 41, 40, 39, 38, 37, 36.",
+        "common_errors": [
+          "Stumbling at the transition from 79 to 80 or from 40 to 39",
+          "Not knowing what comes after 99 when counting forwards to 100"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Counting forwards and backwards across 100 and explaining what happens at decade boundaries.",
+        "example_task": "Count backwards from 103 to 96. What do you notice happens when you cross 100?",
+        "example_response": "103, 102, 101, 100, 99, 98, 97, 96. When you cross 100, the number of digits changes from three to two. The tens digit goes to 9 because 99 is one less than 100.",
+        "common_errors": [
+          "Saying 100, 99, 88 (jumping by 11 instead of 1 after 99)",
+          "Being unable to explain the digit change at 100 in their own words"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting in 2s from 0 to 20 using pairs of objects (socks, shoes, gloves) as concrete support.",
+        "example_task": "Put counters into pairs. Count the total as you add each pair: 2, 4, 6... Continue to 20.",
+        "example_response": "2, 4, 6, 8, 10, 12, 14, 16, 18, 20",
+        "common_errors": [
+          "Reverting to counting in 1s after a few pairs (2, 4, 5, 6...)",
+          "Counting in 2s starting from 1 (1, 3, 5, 7...) — confusing odd and even counting"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Counting in 2s, 5s and 10s from 0, using a hundred square or number line with multiples highlighted.",
+        "example_task": "Count in 5s from 0 to 50 using the hundred square.",
+        "example_response": "0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+        "common_errors": [
+          "Mixing up 5s and 10s sequences (saying 5, 10, 20, 30...)",
+          "Losing the pattern after 25 and reverting to adding 10 instead of 5"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Counting in 2s, 5s and 10s from 0 or any given multiple, forwards and backwards, without support.",
+        "example_task": "Count in 10s starting from 30. Stop at 80. Now count backwards in 5s from 35 to 0.",
+        "example_response": "30, 40, 50, 60, 70, 80. Backwards in 5s: 35, 30, 25, 20, 15, 10, 5, 0.",
+        "common_errors": [
+          "Struggling to start from a non-zero multiple (needing to count from 0 first)",
+          "Counting backwards in 5s: hesitating at 15 to 10 or 10 to 5"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using skip counting to solve practical problems and explaining connections between the sequences.",
+        "example_task": "There are 7 gloves on the table. Is 7 a number you say when counting in 2s from 0? How do you know?",
+        "example_response": "No, because when I count in 2s from 0 I say 2, 4, 6, 8 — I skip 7. Numbers you say when counting in 2s are all even, and 7 is odd.",
+        "common_errors": [
+          "Saying yes because 7 appears on the number line somewhere",
+          "Being unable to explain why 7 is not in the sequence beyond 'it just isn't'"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading single-digit numerals 0–9 when shown on cards, and writing them with correct formation.",
+        "example_task": "I will hold up a number card. Tell me the number. [Shows 7, then 3, then 9]",
+        "example_response": "Seven. Three. Nine.",
+        "common_errors": [
+          "Confusing 6 and 9 due to orientation similarity",
+          "Forming digits backwards (writing 3 as a mirror image)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading and writing two-digit numbers to 20, including the teen numbers, using a number line for support.",
+        "example_task": "Write the number fourteen. Now write the number seventeen.",
+        "example_response": "14. 17.",
+        "common_errors": [
+          "Writing 41 for fourteen (reversing the digits because 'four' is heard first)",
+          "Writing 70 for seventeen (confusing teen and ty numbers)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading and writing any number from 0 to 100 in numerals without support.",
+        "example_task": "Write the numbers fifty-three and eighty-six in numerals.",
+        "example_response": "53. 86.",
+        "common_errors": [
+          "Writing 35 for fifty-three (reversing tens and ones digits)",
+          "Writing 806 for eighty-six (expanding eighty as 80 and appending 6)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading number words from 1 to 5 when shown on cards, matching them to the correct numeral.",
+        "example_task": "Match these word cards to the number cards: one, two, three, four, five.",
+        "example_response": "one = 1, two = 2, three = 3, four = 4, five = 5",
+        "common_errors": [
+          "Confusing 'four' and 'five' because both start with 'f'",
+          "Not recognising the word 'three' when written (reading it phonetically as 'th-ree')"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading and writing number words from 1 to 10, using a word wall for spelling support.",
+        "example_task": "Write the words for 6, 8 and 10.",
+        "example_response": "six, eight, ten",
+        "common_errors": [
+          "Spelling 'eight' as 'ate' or 'eit'",
+          "Spelling 'seven' as 'sevn'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading and writing number words from 1 to 20 independently and correctly.",
+        "example_task": "Write the words for 12, 15 and 19.",
+        "example_response": "twelve, fifteen, nineteen",
+        "common_errors": [
+          "Spelling 'twelve' as 'twelv' (missing the silent e)",
+          "Spelling 'fifteen' as 'fiveteen' (using the digit word rather than the irregular form)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding one more than a given number within 10 using concrete objects (adding one cube to a group).",
+        "example_task": "Here are 6 cubes. Add one more. How many now?",
+        "example_response": "7. There are 7 cubes now.",
+        "common_errors": [
+          "Recounting all the cubes from 1 instead of counting on from 6",
+          "Saying the answer is 6 (not counting the added cube)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Stating one more and one less for numbers up to 20 using a number line for support.",
+        "example_task": "What is one less than 14? What is one more than 17?",
+        "example_response": "One less than 14 is 13. One more than 17 is 18.",
+        "common_errors": [
+          "Confusing one more and one less (giving 15 for one less than 14)",
+          "Struggling with one less than teen numbers (saying one less than 11 is 1)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Rapidly stating one more and one less for any number up to 100 without support, including across decade boundaries.",
+        "example_task": "What is one more than 49? What is one less than 70?",
+        "example_response": "One more than 49 is 50. One less than 70 is 69.",
+        "common_errors": [
+          "Saying one more than 49 is 410 (appending rather than incrementing)",
+          "Saying one less than 70 is 60 (subtracting 10 instead of 1)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining what happens to the digits when finding one more or one less at a decade boundary.",
+        "example_task": "What is one more than 39? Explain why two digits change.",
+        "example_response": "One more than 39 is 40. The ones digit goes from 9 to 0 because 9 + 1 = 10 ones, which is the same as 1 ten. So the tens digit goes up by 1 from 3 to 4.",
+        "common_errors": [
+          "Knowing the answer (40) but unable to explain why both digits change",
+          "Saying 'the 9 becomes a 10' without linking to the tens column"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Placing numbers on a number line from 0 to 10 where every position is marked and labelled.",
+        "example_task": "Point to where 7 is on this number line from 0 to 10.",
+        "example_response": "Points to the position marked 7, between 6 and 8.",
+        "common_errors": [
+          "Pointing to 6 or 8 (one position off due to miscounting from 0)",
+          "Starting the count from the mark labelled 0 as 'one'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Placing numbers on a number line from 0 to 20 where only every 5th position is labelled (0, 5, 10, 15, 20).",
+        "example_task": "Place a counter where 13 should be on this number line.",
+        "example_response": "Places the counter 3 marks after the 10, at the position for 13.",
+        "common_errors": [
+          "Placing the counter at 15 (confusing 13 with the nearest labelled mark)",
+          "Counting marks incorrectly between 10 and 15"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Estimating the position of numbers on a number line from 0 to 100 where only the endpoints and midpoint are labelled.",
+        "example_task": "This number line goes from 0 to 100. The middle is 50. Where would 75 be? Place a mark.",
+        "example_response": "Places a mark halfway between 50 and 100.",
+        "common_errors": [
+          "Placing 75 too close to 50 or too close to 100",
+          "Not understanding that the spacing should be even between numbers"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Comparing two groups of objects and using 'more' and 'less' to describe which group is bigger, with groups of obviously different sizes.",
+        "example_task": "Here are 2 red cubes and 8 blue cubes. Which colour has more?",
+        "example_response": "Blue has more cubes. There are more blue cubes than red cubes.",
+        "common_errors": [
+          "Confusing 'more' and 'less' — pointing to the smaller group when asked for more",
+          "Using 'bigger' or 'smaller' instead of the mathematical terms"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Comparing two numbers using the words 'more than', 'less than' and 'equal to' without concrete objects.",
+        "example_task": "Is 9 more than 6 or less than 6?",
+        "example_response": "9 is more than 6.",
+        "common_errors": [
+          "Confusing 'more than' with 'most' when only two quantities are compared",
+          "Saying '6 is more than 9' (reversing the comparison)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using 'equal to', 'more than', 'less than', 'most' and 'least' correctly to compare and order numbers up to 100.",
+        "example_task": "Put these numbers in order from least to most: 34, 12, 67, 45. Which is the least? Which is the most?",
+        "example_response": "12, 34, 45, 67. 12 is the least. 67 is the most.",
+        "common_errors": [
+          "Confusing 'least' with 'last' and 'most' with 'first'",
+          "Ordering by the ones digit rather than by overall value (e.g. putting 12 after 34 because 2 < 4)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding pairs that make 5 and 10 using a ten frame and counters.",
+        "example_task": "Put 3 red counters on the ten frame. How many yellow counters do you need to fill the frame to 10?",
+        "example_response": "7 yellow counters. 3 + 7 = 10.",
+        "common_errors": [
+          "Filling the frame incorrectly and counting the empty spaces rather than the needed counters",
+          "Getting bonds to 5 correct but struggling with bonds to 10"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recalling number bonds to 10 without concrete support and beginning to learn bonds to 20.",
+        "example_task": "What goes with 4 to make 10? What goes with 13 to make 20?",
+        "example_response": "6 goes with 4 to make 10. 7 goes with 13 to make 20.",
+        "common_errors": [
+          "Knowing bonds to 10 but not transferring to bonds to 20 (not seeing 13 + 7 = 20 as related to 3 + 7 = 10)",
+          "Needing to count on from 13 to 20 instead of recalling the fact"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Instant recall of all addition and subtraction bonds within 20, including relating addition bonds to their subtraction inverses.",
+        "example_task": "What is 8 + 6? What is 14 – 6?",
+        "example_response": "8 + 6 = 14. 14 – 6 = 8.",
+        "common_errors": [
+          "Knowing 8 + 6 = 14 but not automatically knowing 14 – 6 = 8",
+          "Counting on from 8 rather than recalling the fact (slower, error-prone)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Using known number bonds to solve related problems and explain relationships between facts.",
+        "example_task": "If you know 7 + 8 = 15, what other facts do you know? List as many as you can.",
+        "example_response": "8 + 7 = 15, 15 – 7 = 8, 15 – 8 = 7. I also know that 17 + 8 = 25 because it is 10 more.",
+        "common_errors": [
+          "Listing only the original fact and its commutative pair, missing the subtraction inverses",
+          "Not seeing the connection to derived facts beyond 20"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Combining two groups of objects by pushing them together and counting all to find the total.",
+        "example_task": "Here are 3 red cubes and 4 blue cubes. Push them together. How many altogether?",
+        "example_response": "7. There are 7 cubes altogether. 3 and 4 makes 7.",
+        "common_errors": [
+          "Miscounting when counting all objects from 1 (skipping one or double-counting)",
+          "Giving one of the original group sizes as the answer instead of the total"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Representing addition using a number line — counting on from the larger number.",
+        "example_task": "Use the number line to work out 5 + 3. Start at 5 and count on 3 jumps.",
+        "example_response": "Start at 5, jump to 6, 7, 8. The answer is 8. 5 + 3 = 8.",
+        "common_errors": [
+          "Starting the count at 5 instead of jumping from 5 (getting 5, 6, 7 = 7 instead of 8)",
+          "Not starting from the larger number, making counting on harder (counting 3 + 5 from 3)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving addition problems within 20 using recall or efficient strategies, recording as a number sentence.",
+        "example_task": "There were 9 children on the bus. 7 more got on. How many children are on the bus now? Write a number sentence.",
+        "example_response": "9 + 7 = 16. There are 16 children on the bus.",
+        "common_errors": [
+          "Writing the number sentence incorrectly (e.g. 7 + 9 = 79)",
+          "Not recognising that 'more got on' signals addition"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Physically removing objects from a group and counting the remainder for 'take away' problems.",
+        "example_task": "Here are 8 cubes. Take away 3. How many are left?",
+        "example_response": "5. There are 5 cubes left.",
+        "common_errors": [
+          "Counting the removed objects instead of the remaining ones",
+          "Taking away the wrong number of objects"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using a number line to count back for take-away problems and count the gap for difference problems.",
+        "example_task": "Use the number line. Start at 12. Count back 5. What number do you land on?",
+        "example_response": "Start at 12: 11, 10, 9, 8, 7. I land on 7. 12 – 5 = 7.",
+        "common_errors": [
+          "Counting the starting number as a jump (landing on 8 instead of 7)",
+          "Counting forwards instead of backwards"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving both take-away and difference problems within 20, choosing an appropriate strategy and recording as a number sentence.",
+        "example_task": "Ali has 15 stickers. Ben has 9 stickers. How many more stickers does Ali have than Ben?",
+        "example_response": "15 – 9 = 6. Ali has 6 more stickers than Ben.",
+        "common_errors": [
+          "Adding instead of subtracting (saying 15 + 9 = 24)",
+          "Not recognising 'how many more' as a subtraction/difference problem"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Solving missing number problems with a missing addend using concrete objects: ? + 3 = 7.",
+        "example_task": "I have some cubes and 3 more cubes. Altogether there are 7. How many cubes did I start with? Use cubes to find out.",
+        "example_response": "4. I started with 4 cubes because 4 + 3 = 7.",
+        "common_errors": [
+          "Guessing rather than using objects to work it out",
+          "Adding 3 + 7 = 10 instead of finding the missing part"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Solving missing number problems in different positions using a part-whole model: 6 + ? = 11, ? – 4 = 5.",
+        "example_task": "Fill in the missing number: 6 + ? = 11",
+        "example_response": "6 + 5 = 11. The missing number is 5.",
+        "common_errors": [
+          "Writing 6 + 11 = 17 (adding the two visible numbers)",
+          "Not knowing how to work backwards from the total"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving missing number problems where the unknown is in any position, understanding = as equivalence.",
+        "example_task": "Find the missing number: 7 = ? – 9",
+        "example_response": "7 = 16 – 9. The missing number is 16 because 16 – 9 = 7.",
+        "common_errors": [
+          "Being confused by the equals sign on the left (thinking 7 = means 'seven equals nothing')",
+          "Computing 7 – 9 or 7 + 9 without understanding the structure"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Sharing objects equally between 2 people by dealing one at a time ('one for you, one for me').",
+        "example_task": "Share 10 cubes equally between 2 teddies. How many does each teddy get?",
+        "example_response": "Each teddy gets 5 cubes.",
+        "common_errors": [
+          "Giving more cubes to one teddy than the other (unequal sharing)",
+          "Dealing in clumps rather than one at a time, leading to uneven groups"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Making equal groups of a given size from a collection (grouping) and counting the number of groups.",
+        "example_task": "Put these 12 counters into groups of 3. How many groups did you make?",
+        "example_response": "4 groups. There are 4 groups of 3 in 12.",
+        "common_errors": [
+          "Making groups of different sizes (not all exactly 3)",
+          "Confusing 'groups of 3' with '3 groups' — making 3 groups of 4 instead"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving simple grouping and sharing problems and connecting them to multiplication and division language.",
+        "example_task": "There are 15 pencils. Put them in groups of 5. How many groups? Can you write this as a number sentence?",
+        "example_response": "3 groups. 15 ÷ 5 = 3 or 3 × 5 = 15.",
+        "common_errors": [
+          "Being able to physically group but unable to connect to the ÷ symbol",
+          "Writing the division the wrong way round (5 ÷ 15 instead of 15 ÷ 5)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Doubling numbers to 5 by making two identical groups of objects.",
+        "example_task": "Make a group of 4 cubes. Now make another group the same size. How many altogether?",
+        "example_response": "8. Double 4 is 8 because 4 + 4 = 8.",
+        "common_errors": [
+          "Making two groups of different sizes",
+          "Counting all objects from 1 instead of saying the double"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Doubling numbers to 10 and halving even numbers to 20 using pictorial support.",
+        "example_task": "What is double 7? What is half of 16?",
+        "example_response": "Double 7 is 14. Half of 16 is 8.",
+        "common_errors": [
+          "Adding 2 instead of doubling (double 7 = 9 instead of 14)",
+          "Halving by subtracting 2 instead of dividing by 2 (half of 16 = 14)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Rapidly recalling doubles to 10 and corresponding halves, and recognising halving as the inverse of doubling.",
+        "example_task": "Double 8 is 16. What is half of 16? How do you know without working it out?",
+        "example_response": "Half of 16 is 8. I know because halving undoes doubling — if double 8 is 16, then half of 16 must be 8.",
+        "common_errors": [
+          "Knowing double 8 = 16 but working out half of 16 by counting rather than using the inverse",
+          "Not recognising halving as the inverse of doubling"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Folding a shape in half and checking that the two parts are the same size by overlaying them.",
+        "example_task": "Fold this paper circle in half. Are the two parts the same size? How do you know?",
+        "example_response": "Yes, the two parts are the same size. I can see they match exactly when I fold them on top of each other.",
+        "common_errors": [
+          "Accepting an uneven fold as 'half' because there are two parts",
+          "Not checking whether the two parts are equal"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding one half of a small quantity by sharing equally between 2.",
+        "example_task": "Find half of 8 counters by sharing them equally between 2 plates.",
+        "example_response": "Half of 8 is 4. Each plate gets 4 counters.",
+        "common_errors": [
+          "Sharing unequally (5 and 3 instead of 4 and 4)",
+          "Confusing 'half' with 'take some away' rather than 'share into 2 equal parts'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Finding one half of shapes, objects and quantities up to 20, identifying when something has or has not been halved correctly.",
+        "example_task": "Is this shape cut in half? [Shows a rectangle with an unequal cut] Find half of 18.",
+        "example_response": "No, the shape is not cut in half because the two parts are different sizes. Half of 18 is 9.",
+        "common_errors": [
+          "Accepting any two-part partition as a half without checking equality",
+          "Struggling to halve numbers beyond 10 (e.g. half of 18)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Folding a shape into four equal parts by folding in half and then in half again.",
+        "example_task": "Fold this paper square in half, then in half again. How many parts are there? Are they all the same size?",
+        "example_response": "There are 4 parts. Yes, they are all the same size. Each part is a quarter.",
+        "common_errors": [
+          "Folding unevenly so that the four parts are not equal",
+          "Not understanding that 'quarter' means 4 equal parts"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding one quarter of a quantity by sharing equally between 4.",
+        "example_task": "Find a quarter of 12 by sharing 12 counters equally between 4 plates.",
+        "example_response": "A quarter of 12 is 3. Each plate gets 3 counters.",
+        "common_errors": [
+          "Sharing between 2 instead of 4 (finding a half instead of a quarter)",
+          "Sharing unequally (getting 4, 3, 3, 2 instead of 3, 3, 3, 3)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Finding one quarter of shapes, objects and quantities up to 20, and connecting a quarter to half of a half.",
+        "example_task": "Find a quarter of 20. Explain how a quarter relates to a half.",
+        "example_response": "A quarter of 20 is 5. A quarter is half of a half: half of 20 is 10, half of 10 is 5.",
+        "common_errors": [
+          "Finding a half instead of a quarter (saying quarter of 20 is 10)",
+          "Not understanding the relationship between halving twice and quartering"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Comparing two objects by direct comparison, placing them side by side from the same baseline.",
+        "example_task": "Put these two pencils next to each other, both starting at the same edge of the table. Which is longer?",
+        "example_response": "The red pencil is longer than the blue pencil.",
+        "common_errors": [
+          "Not aligning the starting points — comparing with one pencil further forward",
+          "Confusing 'longer' and 'taller' (using height language for horizontal length)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Measuring length using non-standard units, ensuring no gaps or overlaps between units.",
+        "example_task": "Measure the length of this book using cubes. How many cubes long is it?",
+        "example_response": "The book is 8 cubes long.",
+        "common_errors": [
+          "Leaving gaps between cubes (getting a measurement that is too short)",
+          "Overlapping cubes (getting a measurement that is too long)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Measuring length in centimetres using a ruler, starting from 0 and reading the scale correctly.",
+        "example_task": "Measure the length of this ribbon using a ruler. How many centimetres long is it?",
+        "example_response": "The ribbon is 14 centimetres long.",
+        "common_errors": [
+          "Starting from 1 on the ruler instead of 0, giving a measurement that is 1 cm too short",
+          "Reading the number at the wrong end of the object"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Comparing two objects by holding one in each hand and saying which feels heavier or lighter.",
+        "example_task": "Hold the apple in one hand and the pencil in the other. Which is heavier?",
+        "example_response": "The apple is heavier than the pencil.",
+        "common_errors": [
+          "Confusing size with weight (thinking the bigger object must be heavier)",
+          "Using 'bigger' instead of 'heavier'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using a balance scale to compare two objects, identifying which is heavier by which side goes down.",
+        "example_task": "Put the toy car on one side of the balance and the rubber on the other. Which is heavier? How do you know?",
+        "example_response": "The toy car is heavier because its side of the balance goes down.",
+        "common_errors": [
+          "Thinking the side that goes up is the heavier side",
+          "Not placing objects carefully on the balance pans"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Measuring mass using non-standard units on a balance scale and beginning to use standard units (g, kg).",
+        "example_task": "How many cubes does the pencil case balance? Is it heavier or lighter than 20 cubes?",
+        "example_response": "The pencil case balances 15 cubes. It is lighter than 20 cubes.",
+        "common_errors": [
+          "Miscounting the cubes on the balance",
+          "Not understanding that the balance is level when both sides weigh the same"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Comparing two containers using the vocabulary 'full', 'empty' and 'half full' by looking at the water level.",
+        "example_task": "Look at these two bottles. Which one is full? Which one is half full? Which one is empty?",
+        "example_response": "The red bottle is full. The blue bottle is half full. The green bottle is empty.",
+        "common_errors": [
+          "Confusing 'full' with 'big' (thinking a large empty container is 'full')",
+          "Not understanding that 'half full' means the water is at the halfway mark"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Comparing the capacity of two containers by pouring water from one to the other.",
+        "example_task": "Pour the water from the tall thin bottle into the short wide bottle. Does it all fit? Which holds more?",
+        "example_response": "The water does not all fit — some is left over. The tall thin bottle holds more than the short wide bottle.",
+        "common_errors": [
+          "Assuming the taller container always holds more",
+          "Spilling water during pouring and drawing incorrect conclusions"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Measuring capacity using non-standard units (cups) and beginning to use standard units (litres).",
+        "example_task": "How many cups of water does the jug hold? Is it more or less than 5 cups?",
+        "example_response": "The jug holds 7 cups of water. That is more than 5 cups.",
+        "common_errors": [
+          "Not filling the cup to the same level each time, giving inconsistent measurements",
+          "Losing count of the number of cups poured"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C019",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Sequencing daily events using time vocabulary: before, after, morning, afternoon.",
+        "example_task": "Put these picture cards in order: eating breakfast, going to bed, eating lunch. Which comes first?",
+        "example_response": "Eating breakfast, then eating lunch, then going to bed. Breakfast comes first because it happens in the morning.",
+        "common_errors": [
+          "Putting lunch before breakfast",
+          "Not knowing whether 'afternoon' is before or after 'morning'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading o'clock times on an analogue clock by identifying the position of the short (hour) hand.",
+        "example_task": "What time does this clock show? [Clock shows 3 o'clock]",
+        "example_response": "3 o'clock. The short hand points to 3 and the long hand points to 12.",
+        "common_errors": [
+          "Reading the long hand instead of the short hand (saying 12 o'clock)",
+          "Confusing the hour and minute hands when they are similar lengths"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reading o'clock and half past times on an analogue clock and drawing hands to show given times.",
+        "example_task": "What time does this clock show? [Clock shows half past 7] Draw the hands for half past 4.",
+        "example_response": "Half past 7. The short hand is between 7 and 8, and the long hand points to 6. [Draws hour hand between 4 and 5, minute hand at 6]",
+        "common_errors": [
+          "Reading half past 7 as half past 6 (reading the number the hour hand has passed rather than the next number)",
+          "Drawing the hour hand pointing exactly at 4 for half past 4 (it should be between 4 and 5)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C020",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Sorting real coins by denomination and naming the most common coins (1p, 2p, 5p, 10p).",
+        "example_task": "Sort these coins into piles. What is each pile?",
+        "example_response": "This pile is 1p coins. This pile is 2p coins. This pile is 5p coins. This pile is 10p coins.",
+        "common_errors": [
+          "Confusing 1p and 2p coins (similar copper colour)",
+          "Sorting by size rather than by value"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Naming all coins (1p, 2p, 5p, 10p, 20p, 50p, £1, £2) and all notes (£5, £10, £20) and stating their values.",
+        "example_task": "Name this coin and tell me how much it is worth. [Shows 50p, then £2]",
+        "example_response": "That is a 50 pence coin. It is worth 50p. That is a 2 pound coin. It is worth £2.",
+        "common_errors": [
+          "Thinking the 5p coin is worth more than the 2p because it is physically larger",
+          "Not recognising the £2 coin as different from the £1 coin"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Finding given totals using different combinations of coins.",
+        "example_task": "Make 20p using exactly 3 coins.",
+        "example_response": "10p + 5p + 5p = 20p.",
+        "common_errors": [
+          "Using the right number of coins but the wrong total (e.g. 10p + 5p + 2p = 17p)",
+          "Not realising that 20p can be made in many different ways"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C021",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising and naming circles, triangles and rectangles when shown in their standard orientation.",
+        "example_task": "What shape is this? [Shows a standard equilateral triangle pointing up, a circle, a landscape rectangle]",
+        "example_response": "Triangle. Circle. Rectangle.",
+        "common_errors": [
+          "Calling all four-sided shapes 'squares'",
+          "Not recognising a square as a type of rectangle"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognising shapes in different orientations and sizes, including non-prototypical examples.",
+        "example_task": "Is this a triangle? [Shows a triangle pointing to the right, not upward]",
+        "example_response": "Yes, it is still a triangle because it has 3 straight sides and 3 corners, even though it is pointing sideways.",
+        "common_errors": [
+          "Saying a triangle that points sideways or downward 'is not a triangle'",
+          "Identifying shapes only by appearance, not by properties"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Naming rectangles (including squares), circles and triangles, describing why they are that shape using the number of sides and corners.",
+        "example_task": "How do you know this is a rectangle and not a triangle?",
+        "example_response": "It is a rectangle because it has 4 straight sides and 4 corners. A triangle only has 3 sides and 3 corners.",
+        "common_errors": [
+          "Describing shapes by colour or size rather than by mathematical properties",
+          "Not recognising that a square is a special kind of rectangle"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C022",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recognising and naming a sphere, cube and cuboid by handling solid shapes.",
+        "example_task": "Find the sphere, the cube and the cuboid from this group of shapes.",
+        "example_response": "This is the sphere (ball shape). This is the cube (all faces are squares). This is the cuboid (box shape).",
+        "common_errors": [
+          "Calling a cube a 'square' (confusing 2-D name with 3-D shape)",
+          "Confusing a sphere and a cylinder (both are 'round')"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Naming spheres, cubes, cuboids, pyramids and cylinders, and connecting them to everyday objects.",
+        "example_task": "What 3-D shape is a cereal box? What about a football? What about a tin of beans?",
+        "example_response": "A cereal box is a cuboid. A football is a sphere. A tin of beans is a cylinder.",
+        "common_errors": [
+          "Calling a tin of beans 'a circle' (naming the 2-D face rather than the 3-D shape)",
+          "Calling a pyramid 'a triangle'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Describing 3-D shapes using informal properties: whether they roll, stack, slide, and the shapes of their faces.",
+        "example_task": "Why can a sphere roll but a cube cannot?",
+        "example_response": "A sphere is curved all the way round so it rolls easily. A cube has flat faces and sharp corners so it does not roll — it slides or stays still.",
+        "common_errors": [
+          "Saying a cylinder cannot roll (it can roll on its curved surface)",
+          "Describing shapes only by name without reference to their properties"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C023",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using 'in front of', 'behind', 'above', 'below' and 'next to' to describe where an object is, using real objects in the classroom.",
+        "example_task": "Where is the teddy? [Teddy is on top of the cupboard]",
+        "example_response": "The teddy is above the cupboard. It is on top of the cupboard.",
+        "common_errors": [
+          "Using everyday language ('up there') instead of the mathematical position words",
+          "Confusing 'above' and 'below'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Following and giving instructions using positional language including left, right, forwards and backwards.",
+        "example_task": "Direct your partner to the treasure: use the words forwards, backwards, left and right.",
+        "example_response": "Go forwards 3 steps. Turn right. Go forwards 2 steps. The treasure is on your left.",
+        "common_errors": [
+          "Confusing left and right",
+          "Giving directions from their own perspective rather than the walker's perspective"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using the full range of positional vocabulary accurately in spoken and written descriptions, including 'between', 'inside', 'outside'.",
+        "example_task": "Describe where each animal is in this picture using position words.",
+        "example_response": "The cat is between the dog and the bird. The fish is inside the bowl. The rabbit is outside the fence, behind the tree.",
+        "common_errors": [
+          "Omitting 'between' and using two separate statements instead",
+          "Using 'in' instead of 'inside' or 'out' instead of 'outside'"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y1-C024",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Making whole and half turns by physically turning their body, with teacher modelling.",
+        "example_task": "Stand up. Make a whole turn. Which way are you facing now? Now make a half turn.",
+        "example_response": "After a whole turn I am facing the same way as before. After a half turn I am facing the opposite direction.",
+        "common_errors": [
+          "Confusing a half turn with a quarter turn (stopping too early)",
+          "Not returning to the same direction after a whole turn"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Making quarter and three-quarter turns clockwise and anticlockwise, describing the direction of the turn.",
+        "example_task": "Face the door. Make a quarter turn clockwise. What are you facing now?",
+        "example_response": "I am now facing the window. A quarter turn clockwise turned me from the door to the window.",
+        "common_errors": [
+          "Not knowing which direction is clockwise",
+          "Making a half turn instead of a quarter turn"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Describing turns precisely as whole, half, quarter or three-quarter turns, clockwise or anticlockwise, and explaining that a quarter turn clockwise reaches the same position as a three-quarter turn anticlockwise.",
+        "example_task": "I am facing North. I make a quarter turn clockwise. Which direction do I face? What other turn gives the same result?",
+        "example_response": "I face East. A three-quarter turn anticlockwise also ends facing East.",
+        "common_errors": [
+          "Not understanding that different turns can arrive at the same facing direction",
+          "Confusing clockwise and anticlockwise"
+        ]
+      }
+    ]
+  }
+]

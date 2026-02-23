@@ -1,0 +1,1235 @@
+[
+  {
+    "concept_id": "MA-Y6-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading and writing numbers to 1,000,000 using a place value chart, identifying the value of each digit.",
+        "example_task": "Write in digits: two million, three hundred and four thousand and fifty. What is the value of the 3?",
+        "example_response": "2,304,050. The 3 is worth 300,000 (three hundred thousand).",
+        "common_errors": [
+          "Omitting a zero placeholder (writing 234,050 or 2,340,50)",
+          "Saying the 3 is worth 3,000 (misidentifying the column)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading, writing and ordering numbers to 10,000,000, including numbers with multiple zero placeholders.",
+        "example_task": "Order these from smallest to largest: 4,006,050; 4,060,500; 4,600,005; 4,005,060.",
+        "example_response": "4,005,060; 4,006,050; 4,060,500; 4,600,005.",
+        "common_errors": [
+          "Comparing by looking at the final digits rather than column by column from the left",
+          "Misreading numbers with zeros: confusing 4,006,050 with 4,060,500"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Identifying the value of any digit in numbers up to 10,000,000, partitioning flexibly, and applying the ones-thousands-millions grouping pattern.",
+        "example_task": "In 7,482,319, what is the value of the 4? Partition 5,600,000 in two different ways.",
+        "example_response": "The 4 is worth 400,000. 5,600,000 = 5,000,000 + 600,000 = 4,000,000 + 1,600,000.",
+        "common_errors": [
+          "Saying the 4 is worth 40,000 or 4,000,000",
+          "Only knowing the standard partition"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Explaining the multiplicative structure of the place value system across non-adjacent columns and using it to reason about equivalences involving millions.",
+        "example_task": "How many thousands are there in 10,000,000? Explain why 3,500,000 is the same as 35 hundred-thousands.",
+        "example_response": "10,000,000 ÷ 1,000 = 10,000 thousands. 3,500,000 = 35 × 100,000, so it is 35 hundred-thousands. Each column is 10 times the one to its right, so moving two columns left multiplies by 100.",
+        "common_errors": [
+          "Computing 10,000,000 ÷ 1,000 as 1,000 instead of 10,000",
+          "Being unable to explain the multiplicative relationship between non-adjacent columns"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Rounding whole numbers to the nearest 10, 100, 1,000 and 10,000 (consolidating Year 5 skills).",
+        "example_task": "Round 456,789 to the nearest 10,000.",
+        "example_response": "460,000. The thousands digit is 6 (≥ 5), so round up.",
+        "common_errors": [
+          "Looking at the wrong digit (checking the hundreds digit instead of the thousands)",
+          "Rounding to 450,000 (rounding down when the decider is ≥ 5)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Rounding to the nearest 100,000 and 1,000,000, and rounding decimals to the nearest whole number and to 1 decimal place.",
+        "example_task": "Round 3.456 to 1 decimal place. Round 2,750,000 to the nearest million.",
+        "example_response": "3.456 rounds to 3.5 (the hundredths digit 5 rounds up). 2,750,000 rounds to 3,000,000.",
+        "common_errors": [
+          "Rounding 3.456 to 3.4 (truncating instead of rounding up at 5)",
+          "Not knowing which digit to examine when rounding decimals"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Rounding any number to any degree of accuracy and selecting appropriate rounding for estimation and context.",
+        "example_task": "A charity raised £3,847,291. Round this to the nearest million for a headline and to the nearest £100,000 for a report.",
+        "example_response": "Headline: approximately £4,000,000. Report: approximately £3,800,000.",
+        "common_errors": [
+          "Using the same rounding for both contexts without considering purpose",
+          "Rounding £3,847,291 to the nearest £100,000 as £3,900,000 (looking at wrong digit)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting through zero in both directions on a number line, reading negative numbers in the context of temperature.",
+        "example_task": "The temperature is –3°C. It rises by 7 degrees. What is the new temperature? Use the number line.",
+        "example_response": "–3 + 7 = 4°C. Counting up: –3, –2, –1, 0, 1, 2, 3, 4.",
+        "common_errors": [
+          "Computing –3 + 7 = –10 (adding the magnitudes with the wrong sign)",
+          "Stopping at 0 and saying the answer is 0"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculating intervals across zero between a negative and a positive number without a number line.",
+        "example_task": "The temperature fell from 5°C to –8°C overnight. What was the temperature drop?",
+        "example_response": "From 5 to 0 is 5 degrees. From 0 to –8 is 8 degrees. Total drop: 5 + 8 = 13 degrees.",
+        "common_errors": [
+          "Computing 8 – 5 = 3 (subtracting absolute values instead of bridging through zero)",
+          "Computing 5 – (–8) = 5 – 8 = –3 (mishandling the double negative)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving multi-step problems with negative numbers in context, including ordering negative numbers and calculating with them fluently.",
+        "example_task": "At 6 am the temperature was –5°C. By noon it was 8°C. By midnight it had dropped 14°C from noon. What was the midnight temperature? Order all three temperatures.",
+        "example_response": "Midnight: 8 – 14 = –6°C. Order (coldest to warmest): –6°C, –5°C, 8°C.",
+        "common_errors": [
+          "Ordering as –5, –6, 8 (thinking –5 < –6 because 5 < 6)",
+          "Computing 8 – 14 as 6 instead of –6"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Multiplying a 3-digit number by a 2-digit number using the grid method as a bridge to the formal layout.",
+        "example_task": "Use the grid method: 245 × 36.",
+        "example_response": "200×30=6000, 200×6=1200, 40×30=1200, 40×6=240, 5×30=150, 5×6=30. Total: 6000+1200+1200+240+150+30 = 8,820.",
+        "common_errors": [
+          "Missing a cell in the grid (especially the middle cells)",
+          "Errors in the mental multiplication of partial products"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using the formal long multiplication layout for 4-digit × 2-digit with correct alignment and the zero placeholder.",
+        "example_task": "Use long multiplication: 3,456 × 28.",
+        "example_response": "3,456 × 8 = 27,648. 3,456 × 20 = 69,120. Total: 27,648 + 69,120 = 96,768.",
+        "common_errors": [
+          "Forgetting the zero placeholder in the second row",
+          "Carrying errors across four columns in a single row"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Reliably computing any 4-digit × 2-digit multiplication, checking with estimation, and solving multi-step problems.",
+        "example_task": "A factory makes 2,475 items per day for 24 days. How many items in total? Estimate first.",
+        "example_response": "Estimate: 2,500 × 24 ≈ 2,500 × 25 = 62,500. Exact: 2,475 × 24 = 59,400.",
+        "common_errors": [
+          "Not estimating and therefore not catching order-of-magnitude errors",
+          "Getting the multiplication correct but misinterpreting the word problem"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Dividing a 3-digit number by a 2-digit divisor from the times tables (e.g. 13, 15, 25) using the chunking method as a bridge.",
+        "example_task": "Use chunking: 375 ÷ 25.",
+        "example_response": "375 – 250 (10 × 25) = 125. 125 – 125 (5 × 25) = 0. Answer: 10 + 5 = 15.",
+        "common_errors": [
+          "Choosing very small chunks (subtracting 25 repeatedly, which is slow and error-prone)",
+          "Not keeping track of how many chunks have been subtracted"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using the formal long division layout for 4-digit ÷ 2-digit, following the estimate-multiply-subtract-bring-down cycle.",
+        "example_task": "Use long division: 4,368 ÷ 14.",
+        "example_response": "43 ÷ 14 = 3 (14×3=42, remainder 1). Bring down 6: 16 ÷ 14 = 1 (14×1=14, remainder 2). Bring down 8: 28 ÷ 14 = 2. Answer: 312.",
+        "common_errors": [
+          "Losing place value (writing quotient digits in the wrong column)",
+          "Writing 0 when the partial dividend is smaller than the divisor but forgetting to bring down the next digit"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Completing long division for 4-digit ÷ 2-digit and interpreting remainders as whole numbers, fractions or decimals according to context.",
+        "example_task": "A 2,350 cm ribbon is cut into 16 equal pieces. How long is each piece? Give your answer as a decimal.",
+        "example_response": "2,350 ÷ 16 = 146 remainder 14. Continue: 140 ÷ 16 = 8 r12, 120 ÷ 16 = 7 r8, 80 ÷ 16 = 5. Answer: 146.875 cm.",
+        "common_errors": [
+          "Writing '146 remainder 14' without converting to the decimal as requested",
+          "Not knowing how to continue long division past the decimal point"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Evaluating expressions with brackets first, recognising that brackets override left-to-right order.",
+        "example_task": "Work out (3 + 4) × 5.",
+        "example_response": "(3 + 4) × 5 = 7 × 5 = 35.",
+        "common_errors": [
+          "Computing 3 + 4 × 5 = 3 + 20 = 23 (ignoring the brackets)",
+          "Working left to right: 3 + 4 = 7, then not completing the multiplication"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applying BODMAS/BIDMAS: evaluating multiplication and division before addition and subtraction.",
+        "example_task": "Work out 12 + 8 × 3 – 4 ÷ 2.",
+        "example_response": "8 × 3 = 24. 4 ÷ 2 = 2. Then 12 + 24 – 2 = 34.",
+        "common_errors": [
+          "Working left to right: 12 + 8 = 20, × 3 = 60, – 4 = 56, ÷ 2 = 28",
+          "Computing multiplication first but forgetting to compute division before addition"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Evaluating multi-step expressions with brackets and mixed operations, and inserting brackets to make a given expression equal a target value.",
+        "example_task": "Insert one pair of brackets to make this true: 6 + 2 × 5 – 1 = 14.",
+        "example_response": "Without brackets: 6 + 2 × 5 – 1 = 6 + 10 – 1 = 15. Try 6 + 2 × (5 – 1) = 6 + 2 × 4 = 6 + 8 = 14. ✓",
+        "common_errors": [
+          "Inserting brackets randomly without evaluating the result",
+          "Not understanding how brackets change the order of operations"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Placing brackets in different positions within the same expression to produce very different results, and explaining why the order of operations causes the difference.",
+        "example_task": "Place brackets in 48 ÷ 2 × 3 + 1 to make it equal 96. Then place brackets differently to make it equal 6. Explain why the same numbers and operations give such different answers.",
+        "example_response": "For 96: 48 ÷ 2 × (3 + 1) = 24 × 4 = 96. The ÷ and × are done left to right, so 48 ÷ 2 = 24 first, then 24 × 4 = 96. For 6: 48 ÷ (2 × (3 + 1)) = 48 ÷ (2 × 4) = 48 ÷ 8 = 6. The inner brackets force 3 + 1 = 4 first, then the outer brackets force 2 × 4 = 8 before the division. In the first expression we divide then multiply (making the result larger); in the second we multiply first then divide into a bigger number (making the result smaller).",
+        "common_errors": [
+          "Not seeing that 48 ÷ 2 × 4 ≠ 48 ÷ (2 × 4) — confusing left-to-right evaluation with grouped evaluation",
+          "Being unable to explain WHY the answers differ, only computing the results mechanically"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding all factors of a number up to 50 by systematic trial, and identifying whether it is prime.",
+        "example_task": "Find all factors of 36. Is 36 prime?",
+        "example_response": "Factors: 1, 2, 3, 4, 6, 9, 12, 18, 36. Not prime (more than 2 factors).",
+        "common_errors": [
+          "Missing factor pairs in the middle (e.g. missing 4 and 9)",
+          "Saying 36 is prime because it is a square number"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding common factors and common multiples of two numbers, identifying the HCF and LCM.",
+        "example_task": "Find the HCF of 24 and 36. Find the LCM of 6 and 8.",
+        "example_response": "Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. HCF = 12. Multiples of 6: 6,12,18,24... Multiples of 8: 8,16,24... LCM = 24.",
+        "common_errors": [
+          "Confusing HCF and LCM (using the LCM when asked for HCF)",
+          "Not listing factors systematically and missing common factors"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using HCF to simplify fractions and LCM to find common denominators, and identifying primes up to 100 using divisibility tests.",
+        "example_task": "Simplify 48/60 using the HCF. Is 91 prime? Explain how you checked.",
+        "example_response": "HCF of 48 and 60: factors of 48 include 12, factors of 60 include 12. HCF = 12. 48/60 = 4/5. 91: not divisible by 2,3,5. 91 ÷ 7 = 13. So 91 = 7 × 13, not prime.",
+        "common_errors": [
+          "Simplifying in multiple steps (48/60 → 24/30 → 12/15 → 4/5) rather than using HCF directly",
+          "Saying 91 is prime because it is odd, not ending in 0 or 5 (missing the factor 7)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Simplifying fractions by dividing numerator and denominator by a common factor.",
+        "example_task": "Simplify 8/12.",
+        "example_response": "8/12 = 4/6 = 2/3 (dividing by 2 twice) or 8/12 = 2/3 (dividing by 4, the HCF).",
+        "common_errors": [
+          "Dividing only the numerator (getting 4/12 or 2/12)",
+          "Leaving the fraction in a partially simplified state (4/6 instead of 2/3)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Comparing fractions by converting to a common denominator, including mixed numbers and improper fractions.",
+        "example_task": "Which is larger, 5/8 or 7/12?",
+        "example_response": "LCM of 8 and 12 is 24. 5/8 = 15/24. 7/12 = 14/24. 15/24 > 14/24, so 5/8 is larger.",
+        "common_errors": [
+          "Comparing numerators without a common denominator (5 < 7 so 5/8 < 7/12)",
+          "Finding a common denominator but converting one fraction incorrectly"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Ordering a set of fractions, decimals and mixed numbers by converting to a common form, and simplifying complex fractions.",
+        "example_task": "Order from smallest to largest: 3/4, 0.7, 2/3, 0.72.",
+        "example_response": "Convert all to decimals: 3/4 = 0.75, 0.7, 2/3 = 0.666..., 0.72. Order: 2/3, 0.7, 0.72, 3/4.",
+        "common_errors": [
+          "Not converting 2/3 accurately (writing 0.67 instead of 0.666...)",
+          "Placing 0.7 and 0.72 in the wrong order (0.7 = 0.70 < 0.72)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Adding and subtracting fractions with the same denominator, including mixed numbers.",
+        "example_task": "Work out 2 3/7 + 1 5/7.",
+        "example_response": "2 + 1 = 3. 3/7 + 5/7 = 8/7 = 1 1/7. Total: 3 + 1 1/7 = 4 1/7.",
+        "common_errors": [
+          "Adding numerators and denominators: 3/7 + 5/7 = 8/14",
+          "Forgetting to convert 8/7 to a mixed number and carry the extra whole"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Adding and subtracting fractions with different denominators by finding a common denominator.",
+        "example_task": "Work out 5/6 – 2/9.",
+        "example_response": "LCM of 6 and 9 is 18. 5/6 = 15/18. 2/9 = 4/18. 15/18 – 4/18 = 11/18.",
+        "common_errors": [
+          "Using 54 as common denominator (6 × 9) instead of 18 (LCM) — not wrong but less efficient",
+          "Converting the fractions but making a multiplication error"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Adding and subtracting mixed numbers with different denominators, simplifying results, in problem contexts.",
+        "example_task": "A recipe uses 2 1/3 cups of flour and 1 3/4 cups of sugar. How much more flour than sugar? Simplify.",
+        "example_response": "2 1/3 – 1 3/4. Convert: 2 4/12 – 1 9/12. Borrow 1 from 2: 1 16/12 – 1 9/12 = 7/12 cup more flour.",
+        "common_errors": [
+          "Subtracting 4/12 – 9/12 and getting a negative fraction without borrowing",
+          "Not simplifying: 7/12 is already in simplest form, but pupils may not check"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Multiplying two proper fractions using the rule: multiply numerators, multiply denominators.",
+        "example_task": "Work out 2/3 × 4/5.",
+        "example_response": "2 × 4 = 8. 3 × 5 = 15. Answer: 8/15.",
+        "common_errors": [
+          "Finding a common denominator first (as if adding) and then multiplying",
+          "Multiplying numerator by numerator but adding denominators (8/8)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Dividing a fraction by a whole number by multiplying the denominator.",
+        "example_task": "Work out 3/4 ÷ 2.",
+        "example_response": "3/4 ÷ 2 = 3/(4×2) = 3/8.",
+        "common_errors": [
+          "Dividing the numerator: 3/4 ÷ 2 = 1.5/4 (conceptually valid but procedurally messy)",
+          "Multiplying instead of dividing: 3/4 × 2 = 6/4"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Multiplying proper fractions with simplification (cross-cancellation), dividing fractions by whole numbers, and understanding that multiplying proper fractions gives a smaller result.",
+        "example_task": "Work out 3/8 × 4/9 using cross-cancellation. Explain why the answer is smaller than both fractions.",
+        "example_response": "Cross-cancel: 3 and 9 share factor 3 (3→1, 9→3). 4 and 8 share factor 4 (4→1, 8→2). So 1/2 × 1/3 = 1/6. The answer is smaller because you are taking a fraction of a fraction — a part of a part is smaller than either part.",
+        "common_errors": [
+          "Not cross-cancelling and getting 12/72, then struggling to simplify",
+          "Being unable to explain why the product is smaller than either factor"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Knowing the key fraction-decimal-percentage equivalences: 1/2 = 0.5 = 50%, 1/4 = 0.25 = 25%, 1/10 = 0.1 = 10%.",
+        "example_task": "Write 3/4 as a decimal and a percentage.",
+        "example_response": "3/4 = 0.75 = 75%.",
+        "common_errors": [
+          "Writing 3/4 = 0.34 (using digits of the fraction as the decimal)",
+          "Knowing 1/4 = 25% but not connecting 3/4 = 3 × 25% = 75%"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Converting between fractions, decimals and percentages including eighths, fifths and thirds.",
+        "example_task": "Write 3/8 as a decimal. Write 0.2 as a fraction in simplest form. What percentage is 2/5?",
+        "example_response": "3/8 = 0.375. 0.2 = 1/5. 2/5 = 40%.",
+        "common_errors": [
+          "Not knowing 1/8 = 0.125 and therefore unable to derive 3/8 = 0.375",
+          "Writing 2/5 = 20% (dividing 2 by 5 and getting 0.4 but then writing 0.4%)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Converting any fraction, decimal or percentage and selecting the most useful form for a given context.",
+        "example_task": "A shop reduces prices by 1/3. Is this more or less than a 30% discount? Show your working.",
+        "example_response": "1/3 = 33.3...% ≈ 33.3%. This is more than 30%. So a 1/3 discount is better for the customer.",
+        "common_errors": [
+          "Writing 1/3 = 0.3 = 30% (rounding without noting it is a recurring decimal)",
+          "Not being able to convert 1/3 to a percentage accurately"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Ordering and comparing a mixture of fractions, decimals and percentages by converting to a common form, and justifying which form is most efficient for a given comparison.",
+        "example_task": "Put these in order from smallest to largest: 0.375, 2/5, 37%, 3/8. Explain which form you used and why.",
+        "example_response": "Convert to decimals: 0.375, 2/5 = 0.4, 37% = 0.37, 3/8 = 0.375. Order: 37% (0.37), then 0.375 and 3/8 (equal, both 0.375), then 2/5 (0.4). I used decimals because they are easiest to compare digit by digit. Fractions would need a common denominator of 200, which is harder.",
+        "common_errors": [
+          "Converting 37% to 3.7 or 0.037 instead of 0.37",
+          "Not noticing that 0.375 and 3/8 are equal and treating them as different values"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Sharing a quantity in a simple ratio using the 'one part' method with concrete or pictorial support.",
+        "example_task": "Share 20 sweets between Ali and Ben in the ratio 3:2. How many does each person get?",
+        "example_response": "Total parts: 3 + 2 = 5. One part = 20 ÷ 5 = 4. Ali gets 3 × 4 = 12. Ben gets 2 × 4 = 8.",
+        "common_errors": [
+          "Dividing 20 by 3 and 20 by 2 separately (getting 6.67 and 10)",
+          "Not finding the total number of parts first"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Solving proportion problems using the unitary method or scale factor, including simple recipes and scaling.",
+        "example_task": "A recipe for 4 people uses 300g flour. How much flour for 6 people?",
+        "example_response": "For 1 person: 300 ÷ 4 = 75g. For 6 people: 75 × 6 = 450g.",
+        "common_errors": [
+          "Adding 2 people worth of flour by adding 2 × 75 = 150 to 300 = 450 (correct result, but additive reasoning can fail in harder cases)",
+          "Using additive reasoning: 6 is 2 more than 4, so add 2 × 50 = 100g more (wrong)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving ratio and proportion problems involving missing values, including percentage contexts, using multiplicative reasoning.",
+        "example_task": "In a class, the ratio of boys to girls is 3:5. There are 15 girls. How many children are in the class altogether?",
+        "example_response": "Girls represent 5 parts. 5 parts = 15, so 1 part = 3. Boys = 3 parts = 9. Total: 15 + 9 = 24.",
+        "common_errors": [
+          "Adding 3 to 15 instead of finding the multiplier (saying 18 children)",
+          "Not finding the value of one part before scaling"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving multi-step ratio problems where the ratio must be inferred from context, or where a change in one quantity requires reasoning about the effect on the ratio.",
+        "example_task": "Purple paint is made by mixing red and blue in the ratio 3:5. Sam has 600 ml of purple paint. He adds 150 ml more red paint. What is the new ratio of red to blue? Give your answer in its simplest form.",
+        "example_response": "Original: 3 + 5 = 8 parts. One part = 600 ÷ 8 = 75 ml. Red = 3 × 75 = 225 ml. Blue = 5 × 75 = 375 ml. After adding red: 225 + 150 = 375 ml red. Blue stays at 375 ml. New ratio = 375:375 = 1:1.",
+        "common_errors": [
+          "Adding 150 ml to the total and re-splitting in the original ratio (not understanding only red changed)",
+          "Simplifying 375:375 as 3:3 instead of 1:1"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Understanding that a letter represents an unknown number and evaluating simple expressions by substitution.",
+        "example_task": "If n = 5, what is 3n + 2?",
+        "example_response": "3 × 5 + 2 = 15 + 2 = 17.",
+        "common_errors": [
+          "Reading 3n as 35 (concatenating instead of multiplying)",
+          "Not knowing that 3n means 3 × n"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Writing algebraic expressions from word descriptions and evaluating expressions with two operations.",
+        "example_task": "Write an expression for 'twice a number, subtract 7'. If the number is 12, evaluate.",
+        "example_response": "2n – 7. When n = 12: 2 × 12 – 7 = 24 – 7 = 17.",
+        "common_errors": [
+          "Writing n2 – 7 instead of 2n – 7",
+          "Applying operations in the wrong order (subtracting 7 first then doubling)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using formulae in context, substituting values into multi-variable expressions, and forming expressions from problems.",
+        "example_task": "The perimeter of a rectangle is P = 2(l + w). Find P when l = 8 and w = 5. A pizza costs £p. Write an expression for the cost of 3 pizzas and a £2 delivery charge.",
+        "example_response": "P = 2(8 + 5) = 2 × 13 = 26. Pizza cost: 3p + 2.",
+        "common_errors": [
+          "Computing 2 × 8 + 5 = 21 instead of 2(8 + 5) = 26 (forgetting to evaluate the bracket first)",
+          "Writing 3p + 2 as 3p2 or 32p"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Continuing a linear sequence given the first few terms and describing the rule as 'add n each time'.",
+        "example_task": "Continue this sequence: 3, 7, 11, 15, ?, ?. What is the rule?",
+        "example_response": "19, 23. The rule is add 4 each time.",
+        "common_errors": [
+          "Adding the wrong amount (adding 3 instead of 4)",
+          "Not being able to state the common difference explicitly"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Generating terms of a sequence from a rule and finding pairs of values that satisfy a two-variable equation.",
+        "example_task": "Find all pairs of positive whole numbers where a + b = 8.",
+        "example_response": "1+7, 2+6, 3+5, 4+4, 5+3, 6+2, 7+1.",
+        "common_errors": [
+          "Missing symmetric pairs (listing 1+7 but not 7+1, if both are required)",
+          "Not working systematically and missing pairs in the middle"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Describing linear sequences algebraically, enumerating solutions to two-variable equations, and solving problems involving sequences.",
+        "example_task": "A sequence starts at 5 and adds 3 each time. Is 50 in the sequence? Explain.",
+        "example_response": "Terms: 5, 8, 11, 14... Each term is 3n + 2 (where n starts at 1). For 50: 3n + 2 = 50, 3n = 48, n = 16. Yes, 50 is the 16th term.",
+        "common_errors": [
+          "Checking by listing all terms up to 50 (correct but slow)",
+          "Setting up the equation correctly but making an arithmetic error"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding the area of a rectangle using length × width (consolidating Year 4/5), and understanding that a triangle is half a rectangle.",
+        "example_task": "A rectangle is 8 cm by 5 cm. What is its area? If you cut it diagonally, what is the area of each triangle?",
+        "example_response": "Rectangle area: 8 × 5 = 40 cm². Each triangle: 40 ÷ 2 = 20 cm².",
+        "common_errors": [
+          "Adding instead of multiplying (8 + 5 = 13 cm²)",
+          "Not understanding why the triangle is half the rectangle"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applying the formula A = 1/2 × b × h for triangles and A = b × h for parallelograms, using perpendicular height.",
+        "example_task": "A triangle has base 12 cm and perpendicular height 7 cm. What is its area?",
+        "example_response": "A = 1/2 × 12 × 7 = 42 cm².",
+        "common_errors": [
+          "Using the slant height instead of the perpendicular height",
+          "Forgetting to halve (computing 12 × 7 = 84 cm²)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Finding areas of triangles and parallelograms in any orientation, and solving problems where a dimension must be calculated.",
+        "example_task": "A parallelogram has area 72 cm² and base 9 cm. What is its perpendicular height?",
+        "example_response": "A = b × h. 72 = 9 × h. h = 72 ÷ 9 = 8 cm.",
+        "common_errors": [
+          "Not rearranging the formula (guessing rather than dividing)",
+          "Confusing the formula for a parallelogram with the formula for a triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Calculating the volume of a cube or cuboid by counting unit cubes or using V = l × w × h.",
+        "example_task": "A cuboid is 6 cm long, 4 cm wide and 3 cm tall. What is its volume?",
+        "example_response": "V = 6 × 4 × 3 = 72 cm³.",
+        "common_errors": [
+          "Computing 6 × 4 = 24 and stopping (finding area of the base, not volume)",
+          "Writing cm² instead of cm³"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Solving problems where one dimension of a cuboid must be found given the volume, and comparing volumes of different shapes.",
+        "example_task": "A cuboid has volume 240 cm³. Its length is 10 cm and width is 6 cm. Find the height.",
+        "example_response": "240 = 10 × 6 × h = 60h. h = 240 ÷ 60 = 4 cm.",
+        "common_errors": [
+          "Dividing by only one dimension (240 ÷ 10 = 24, then saying h = 24)",
+          "Not rearranging the formula correctly"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Estimating and calculating volumes of cubes and cuboids in appropriate units, converting between cm³ and m³ where needed, and solving multi-step problems.",
+        "example_task": "A swimming pool is 25 m long, 10 m wide and 1.5 m deep. What is its volume in m³? How many litres is this? (1 m³ = 1000 litres)",
+        "example_response": "V = 25 × 10 × 1.5 = 375 m³. 375 × 1000 = 375,000 litres.",
+        "common_errors": [
+          "Using the wrong unit conversion (1 m³ = 100 litres instead of 1000)",
+          "Not multiplying correctly with the decimal dimension (25 × 10 × 1.5 = 350 instead of 375)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using the fact that angles on a straight line sum to 180° and angles at a point sum to 360° to find a single missing angle.",
+        "example_task": "Three angles meet at a point: 120°, 150° and ?°. Find the missing angle.",
+        "example_response": "120 + 150 = 270. Missing angle = 360 – 270 = 90°.",
+        "common_errors": [
+          "Using 180° instead of 360° for angles at a point",
+          "Adding the two known angles incorrectly"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using vertically opposite angles and angles in triangles/quadrilaterals to find missing angles.",
+        "example_task": "Two straight lines cross. One angle is 35°. Find the other three angles.",
+        "example_response": "Vertically opposite: 35°. Adjacent angles: 180° – 35° = 145° (each). The four angles are 35°, 145°, 35°, 145°.",
+        "common_errors": [
+          "Not recognising vertically opposite angles are equal",
+          "Using 360° – 35° = 325° and dividing by 3"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Finding interior angles of regular polygons using the sum formula (n-2) × 180° and combining multiple angle facts in multi-step problems.",
+        "example_task": "What is the interior angle of a regular hexagon? A triangle is drawn inside — find the base angles if the apex angle matches one interior angle of the hexagon.",
+        "example_response": "Hexagon angle sum: (6-2) × 180 = 720°. Each interior angle: 720 ÷ 6 = 120°. Triangle with apex 120°: base angles = (180 – 120) ÷ 2 = 30° each.",
+        "common_errors": [
+          "Using 6 × 180 = 1080 instead of (6-2) × 180 = 720",
+          "Not dividing by the number of sides after finding the angle sum for a regular polygon"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Drawing a circle with a compass of a given radius and labelling the centre, radius and diameter.",
+        "example_task": "Draw a circle with radius 4 cm. Label the centre, a radius and a diameter.",
+        "example_response": "[Draws circle with compass set to 4 cm. Labels centre point, a line from centre to circumference as 'radius = 4 cm', and a line through the centre as 'diameter = 8 cm']",
+        "common_errors": [
+          "Drawing a circle with diameter 4 cm instead of radius 4 cm",
+          "Not placing the compass point on the centre"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using the relationship d = 2r to solve problems involving radius and diameter, and identifying other parts of a circle.",
+        "example_task": "A circle has diameter 14 cm. What is its radius? Name the line from A to B that passes through the centre.",
+        "example_response": "Radius = 14 ÷ 2 = 7 cm. A line from A to B through the centre is a diameter.",
+        "common_errors": [
+          "Multiplying instead of dividing (radius = 28 cm)",
+          "Confusing a chord (doesn't pass through centre) with a diameter (does)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving multi-step problems involving circles, explaining the difference between radius, diameter, circumference, chord and arc.",
+        "example_task": "A wheel has radius 30 cm. What is its diameter? If two wheels are placed side by side touching, what is the total width?",
+        "example_response": "Diameter = 2 × 30 = 60 cm. Two wheels side by side: 60 + 60 = 120 cm = 1.2 m.",
+        "common_errors": [
+          "Using radius instead of diameter for the width of one wheel (getting 60 cm total)",
+          "Not converting to metres when appropriate"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C019",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Plotting and reading coordinates in the first quadrant (positive x and y), consolidating Year 4/5 skills.",
+        "example_task": "Plot the points (2, 5), (6, 5), (6, 1) and (2, 1). What shape do they make?",
+        "example_response": "[Plots all four points] They make a rectangle.",
+        "common_errors": [
+          "Reversing x and y (plotting (5, 2) instead of (2, 5))",
+          "Miscounting gridlines"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Plotting and reading coordinates in all four quadrants, including negative values.",
+        "example_task": "Plot (–3, 4) and (2, –1). Which quadrant is each point in?",
+        "example_response": "(–3, 4) is in quadrant II (negative x, positive y). (2, –1) is in quadrant IV (positive x, negative y).",
+        "common_errors": [
+          "Plotting (–3, 4) in quadrant IV instead of quadrant II (getting the axes confused)",
+          "Ignoring the negative sign and plotting in quadrant I"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using coordinates in all four quadrants to describe transformations and solve geometric problems.",
+        "example_task": "A shape has vertices at (1, 2), (4, 2), (4, 5). Reflect it in the y-axis. What are the new coordinates?",
+        "example_response": "(–1, 2), (–4, 2), (–4, 5). Reflection in the y-axis changes the sign of the x-coordinate.",
+        "common_errors": [
+          "Changing the y-coordinate instead of the x-coordinate",
+          "Reflecting in the x-axis by mistake (getting (1, –2), (4, –2), (4, –5))"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C020",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading a simple pie chart where sectors are labelled with fractions or percentages.",
+        "example_task": "This pie chart shows favourite sports. The football sector is labelled 50%. If 40 children were asked, how many chose football?",
+        "example_response": "50% of 40 = 20 children.",
+        "common_errors": [
+          "Reading the angle (180°) as the number of children",
+          "Not knowing how to find 50% of 40"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Constructing a pie chart by calculating the angle for each sector: angle = (frequency ÷ total) × 360°.",
+        "example_task": "Draw a pie chart for: Red 10, Blue 15, Green 5, Yellow 6. Total = 36.",
+        "example_response": "Red: (10/36) × 360 = 100°. Blue: (15/36) × 360 = 150°. Green: (5/36) × 360 = 50°. Yellow: (6/36) × 360 = 60°. Check: 100 + 150 + 50 + 60 = 360°.",
+        "common_errors": [
+          "Forgetting to multiply by 360 (using the fraction as the angle)",
+          "Angles not summing to 360° due to calculation errors"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Interpreting pie charts to find missing values and comparing pie charts that represent different-sized groups.",
+        "example_task": "In a pie chart, the 'swimming' sector is 90°. If 48 children were surveyed, how many chose swimming? Can you compare this pie chart directly with one from a survey of 60 children?",
+        "example_response": "90° out of 360° = 1/4. 1/4 of 48 = 12 children chose swimming. You cannot compare the two pie charts directly by looking at sector size because they represent different totals — you need to calculate the actual numbers.",
+        "common_errors": [
+          "Saying 90 children chose swimming (reading the angle as the frequency)",
+          "Comparing sectors from different pie charts as if they represent the same totals"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C021",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding the mean of a small data set by adding all values and dividing by the count.",
+        "example_task": "Find the mean of: 4, 7, 9, 8, 2.",
+        "example_response": "Sum: 4 + 7 + 9 + 8 + 2 = 30. Count: 5. Mean: 30 ÷ 5 = 6.",
+        "common_errors": [
+          "Adding incorrectly",
+          "Dividing by the wrong number (e.g. by the range or by the largest value)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Working backwards from the mean to find a missing value or total, and understanding the 'levelling' interpretation.",
+        "example_task": "Five children have a mean score of 8. Four of the scores are 6, 9, 10, 7. What is the fifth score?",
+        "example_response": "Total must be 5 × 8 = 40. Known total: 6 + 9 + 10 + 7 = 32. Fifth score: 40 – 32 = 8.",
+        "common_errors": [
+          "Not knowing to multiply the mean by the count to get the total",
+          "Subtracting incorrectly (40 – 32 = 12)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Using the mean to compare two data sets and understanding that the mean may not be a value in the data set.",
+        "example_task": "Group A scores: 5, 8, 7, 6, 9. Group B scores: 4, 10, 6, 8. Which group performed better on average?",
+        "example_response": "Group A mean: 35 ÷ 5 = 7. Group B mean: 28 ÷ 4 = 7. Both groups have the same mean, but Group B has more spread.",
+        "common_errors": [
+          "Comparing totals (35 vs 28) instead of means",
+          "Not recognising that the same mean can come from very different data distributions"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C022",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Counting faces, edges and vertices of common 3-D shapes by handling physical models.",
+        "example_task": "How many faces, edges and vertices does a triangular prism have?",
+        "example_response": "5 faces (2 triangles + 3 rectangles), 9 edges, 6 vertices.",
+        "common_errors": [
+          "Miscounting edges (the most common error — there are 9, not 6 or 8)",
+          "Confusing faces with edges"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognising nets of cubes, cuboids and triangular prisms, and predicting which nets will fold into a given shape.",
+        "example_task": "Which of these nets will fold to make a cube? [Shows 3 net candidates, one valid]",
+        "example_response": "[Identifies the valid net — the one where no more than 4 squares are in a row and the arrangement allows all faces to fold without overlap]",
+        "common_errors": [
+          "Accepting a net where faces would overlap when folded",
+          "Not checking by mentally folding each face"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Describing 3-D shapes by their properties, matching shapes to their nets, and explaining relationships (e.g. Euler's formula informally).",
+        "example_task": "A shape has 5 vertices, 8 edges and 5 faces. Name it. Check: is it true that faces + vertices = edges + 2?",
+        "example_response": "Square-based pyramid (5 vertices, 8 edges, 5 faces). Check: 5 + 5 = 10, 8 + 2 = 10. Yes, Euler's formula holds.",
+        "common_errors": [
+          "Confusing a square-based pyramid with a triangular prism",
+          "Not being able to verify the relationship between F, V and E"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C023",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Translating a shape on a coordinate grid by adding or subtracting from each vertex's coordinates.",
+        "example_task": "Translate the triangle with vertices (1, 3), (4, 3), (4, 6) by 3 right and 2 down.",
+        "example_response": "(1+3, 3–2) = (4, 1). (4+3, 3–2) = (7, 1). (4+3, 6–2) = (7, 4).",
+        "common_errors": [
+          "Subtracting from x instead of adding for 'right'",
+          "Moving different vertices by different amounts"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reflecting shapes in the x-axis and y-axis on a four-quadrant grid, stating the coordinate rule for each reflection.",
+        "example_task": "Reflect the point (–2, 5) in the x-axis. What is the rule for reflecting in the x-axis?",
+        "example_response": "(–2, –5). The rule: when reflecting in the x-axis, the x-coordinate stays the same and the y-coordinate changes sign.",
+        "common_errors": [
+          "Changing the x-coordinate instead of the y-coordinate",
+          "Reflecting in the y-axis by mistake"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Describing transformations precisely using coordinates, combining translations and reflections, and identifying which transformation maps one shape to another.",
+        "example_task": "Shape A has vertices (1, 2), (3, 2), (3, 5). Shape B has vertices (–1, –2), (–3, –2), (–3, –5). What single transformation maps A to B?",
+        "example_response": "Reflection in the origin (or a rotation of 180° about the origin). Each coordinate (x, y) becomes (–x, –y).",
+        "common_errors": [
+          "Saying it is a translation (it is not — the shape is not simply shifted)",
+          "Describing two separate reflections instead of identifying the combined transformation"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C024",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Using a single angle fact to find one missing angle in a simple configuration.",
+        "example_task": "An angle on a straight line is 72°. What is the other angle?",
+        "example_response": "180° – 72° = 108°.",
+        "common_errors": [
+          "Using 360° instead of 180°",
+          "Subtracting from 90° (confusing with complementary angles)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Combining two angle facts in a two-step problem, stating the fact used at each step.",
+        "example_task": "In a diagram, angle A = 55° is on a straight line with angle B. Angle B is an angle in a triangle with angles C = 40° and D. Find angle D.",
+        "example_response": "Angle B = 180° – 55° = 125° (angles on a straight line). Angle D = 180° – 125° – 40° = 15° (angles in a triangle).",
+        "common_errors": [
+          "Not stating which angle fact is used at each step",
+          "Using the wrong fact for the configuration"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving multi-step angle problems requiring three or more facts, with clear deductive reasoning chains.",
+        "example_task": "Two straight lines cross. One angle is 70°. An equilateral triangle is drawn using one of the other angles. Find all angles in the diagram.",
+        "example_response": "Vertically opposite: 70°. Adjacent angles: 110° each. The equilateral triangle has all angles 60°. The remaining angles at the intersection within the triangle's base: 110° – 60° = 50°.",
+        "common_errors": [
+          "Not identifying all the angles in the diagram systematically",
+          "Making arithmetic errors in the chain of deductions"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C025",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Placing events on a probability scale from 'impossible' to 'certain' using everyday language.",
+        "example_task": "Place these on the scale: rolling a 7 on a normal die, getting heads on a coin, the sun rising tomorrow.",
+        "example_response": "Rolling a 7: impossible. Getting heads: even chance. Sun rising: certain.",
+        "common_errors": [
+          "Saying rolling a 7 is 'unlikely' rather than 'impossible'",
+          "Not understanding the difference between 'unlikely' and 'impossible'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Listing all outcomes of a simple experiment and expressing probability as a fraction.",
+        "example_task": "A bag has 3 red and 5 blue counters. What is the probability of picking a red counter?",
+        "example_response": "Total counters: 3 + 5 = 8. P(red) = 3/8.",
+        "common_errors": [
+          "Writing P(red) = 3/5 (using number of blue as denominator instead of total)",
+          "Saying the probability is 3 (not expressing as a fraction)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Calculating probabilities of single events as fractions, decimals or percentages, and understanding that all probabilities sum to 1.",
+        "example_task": "A spinner has sections: red (120°), blue (90°), green (150°). What is the probability of landing on blue? Express as a fraction, decimal and percentage.",
+        "example_response": "P(blue) = 90/360 = 1/4 = 0.25 = 25%.",
+        "common_errors": [
+          "Not dividing by 360 (writing P = 90)",
+          "Not checking all probabilities sum to 1: 120/360 + 90/360 + 150/360 = 360/360 = 1"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C026",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Calculating the range of a data set and describing it as a measure of spread.",
+        "example_task": "Find the range of: 4, 11, 7, 3, 9.",
+        "example_response": "Range = 11 – 3 = 8. The data is spread over 8 units.",
+        "common_errors": [
+          "Computing 11 + 3 = 14 instead of 11 – 3",
+          "Not ordering the data first and subtracting two adjacent values instead"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Comparing two data sets using both a measure of average and a measure of spread.",
+        "example_task": "Team A scores: 3, 5, 4, 6, 2. Team B scores: 1, 8, 3, 7, 1. Compare using mean and range.",
+        "example_response": "Team A: mean = 4, range = 4. Team B: mean = 4, range = 7. Same average, but Team B is more spread out — their scores are less consistent.",
+        "common_errors": [
+          "Comparing only the means and concluding the teams are equal",
+          "Not interpreting the range in context (just stating numbers without explanation)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Describing distributions using language of clusters, gaps and spread, and making justified comparisons between data sets.",
+        "example_task": "Class A test scores: 45, 67, 68, 70, 71, 72, 95. Describe the distribution. Is the mean a good representative value?",
+        "example_response": "Most scores cluster between 67 and 72. There are two outliers: 45 (low) and 95 (high). Mean = 488/7 ≈ 69.7. The mean is reasonably representative because it is in the cluster, but the two outliers pull it slightly. The median (70) might be more representative.",
+        "common_errors": [
+          "Not identifying the cluster or the outliers",
+          "Stating the mean without considering whether it represents the data well"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C027",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Finding the mode of a data set by identifying the most frequently occurring value.",
+        "example_task": "Find the mode of: 3, 5, 7, 3, 9, 3, 5.",
+        "example_response": "The mode is 3 because it appears 3 times, more than any other value.",
+        "common_errors": [
+          "Choosing the largest value (9) instead of the most frequent",
+          "Choosing the middle value (confusing mode with median)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finding the median by ordering data and locating the middle value, including with an even count.",
+        "example_task": "Find the median of: 8, 3, 11, 5, 7, 2.",
+        "example_response": "Ordered: 2, 3, 5, 7, 8, 11. Even count (6 values): median is the mean of the 3rd and 4th values = (5 + 7) ÷ 2 = 6.",
+        "common_errors": [
+          "Not ordering the data first (picking the 3rd value from the unordered list)",
+          "With an even count, choosing one of the two middle values instead of averaging them"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Explaining when each average (mean, median, mode) is most appropriate and selecting the best one for a given data set.",
+        "example_task": "Shoe sizes in a class: 4, 4, 5, 5, 5, 5, 6, 6, 12. Which average best describes the typical shoe size? Why?",
+        "example_response": "Mode = 5 (most common). Median = 5. Mean = 52/9 ≈ 5.8. The mean is pulled up by the outlier (12). The mode or median (both 5) better represent the typical shoe size.",
+        "common_errors": [
+          "Always choosing the mean without considering outliers",
+          "Not knowing that the mode is most useful for categorical data and the median resists outliers"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C028",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Reading data from a bar chart with a clear scale, answering 'how many' questions.",
+        "example_task": "This bar chart shows favourite pets. How many children chose fish?",
+        "example_response": "8 children chose fish. [Reads from the top of the 'fish' bar to the y-axis]",
+        "common_errors": [
+          "Reading the bar height inaccurately when it falls between gridlines",
+          "Confusing the x and y axes"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Interpreting line graphs (including interpolation), reading pie charts, and constructing bar charts and tables from data.",
+        "example_task": "Construct a bar chart from: Apples 12, Bananas 8, Cherries 15, Dates 5. Choose an appropriate scale.",
+        "example_response": "[Draws bar chart with y-axis going up in 2s from 0 to 16, bars at correct heights, labelled axes and title]",
+        "common_errors": [
+          "Choosing a scale that doesn't fit the data (e.g. going up in 1s when the highest value is 15)",
+          "Drawing bars of unequal width"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Choosing the appropriate chart type for different data, identifying misleading features in given charts, and drawing conclusions from data.",
+        "example_task": "A newspaper chart shows sales rising dramatically, but the y-axis starts at 995 instead of 0. Why is this misleading?",
+        "example_response": "Starting the y-axis at 995 exaggerates the visual difference between bars. A rise from 998 to 1002 looks like a doubling when the y-axis starts at 995, but it is actually a tiny change relative to the total.",
+        "common_errors": [
+          "Not noticing that the y-axis does not start at zero",
+          "Not understanding why a truncated axis makes differences appear larger"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C029",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Recalling multiplication facts to 12 × 12 and their related division facts with automaticity.",
+        "example_task": "Answer as fast as you can: 7 × 8, 9 × 6, 132 ÷ 11.",
+        "example_response": "56, 54, 12.",
+        "common_errors": [
+          "Hesitating on 7 × 8 (the most commonly misremembered fact)",
+          "Needing to derive 132 ÷ 11 rather than knowing 11 × 12 = 132"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Selecting and applying efficient mental and written strategies for calculations with integers, decimals and fractions.",
+        "example_task": "Work out 0.6 × 7 mentally. Work out 3/5 of 45.",
+        "example_response": "0.6 × 7 = 4.2 (6 × 7 = 42, then divide by 10). 3/5 of 45: 45 ÷ 5 = 9, × 3 = 27.",
+        "common_errors": [
+          "Computing 0.6 × 7 = 0.42 (dividing by 100 instead of 10)",
+          "Computing 3/5 of 45 as 45 ÷ 3 = 15 (dividing by the numerator instead of the denominator)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Applying fluent number skills to multi-step problems, choosing the most efficient method for each step.",
+        "example_task": "A shop sells pens at £0.35 each. How much for 24 pens? What change from £10?",
+        "example_response": "24 × £0.35 = 24 × 35p. 24 × 35 = 24 × 30 + 24 × 5 = 720 + 120 = 840p = £8.40. Change: £10 – £8.40 = £1.60.",
+        "common_errors": [
+          "Not converting between pounds and pence correctly",
+          "Making errors in the multi-step mental calculation"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C030",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Explaining what they did and why in a single-step calculation using mathematical vocabulary.",
+        "example_task": "Explain why you added 37 and 28 to solve the problem about apples.",
+        "example_response": "I added because the problem said 'altogether', which means combining two groups. 37 + 28 = 65 apples altogether.",
+        "common_errors": [
+          "Describing steps without explaining why ('I added them' rather than 'I added because the problem asked for the total')",
+          "Using non-mathematical language"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Using examples and counter-examples to investigate whether a mathematical statement is always, sometimes or never true.",
+        "example_task": "Is this always, sometimes or never true: 'Multiplying two numbers gives a bigger answer'?",
+        "example_response": "Sometimes true. True: 3 × 4 = 12 (bigger than both). False: 0.5 × 6 = 3 (smaller than 6). Also false: 0 × 5 = 0 (not bigger than 5). So it depends on the numbers.",
+        "common_errors": [
+          "Saying 'always true' based on whole number examples only",
+          "Not considering fractions, decimals or zero as counter-examples"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Constructing a chain of logical reasoning to prove or disprove a conjecture, distinguishing proof from demonstration.",
+        "example_task": "Prove that the sum of three consecutive numbers is always a multiple of 3.",
+        "example_response": "Let the three consecutive numbers be n, n+1, n+2. Their sum = n + (n+1) + (n+2) = 3n + 3 = 3(n+1). Since 3(n+1) is 3 times a whole number, it is always a multiple of 3.",
+        "common_errors": [
+          "Checking only specific examples (1+2+3=6, 4+5+6=15) without proving it for all cases",
+          "Not understanding why checking examples is not a proof"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y6-C031",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "entry",
+        "description": "Identifying what a word problem is asking and selecting the correct operation.",
+        "example_task": "A pack has 8 biscuits. I need 50 biscuits. How many packs do I need? What operation will you use?",
+        "example_response": "Division. 50 ÷ 8 = 6 remainder 2. I need 7 packs (round up because I need at least 50).",
+        "common_errors": [
+          "Answering '6 remainder 2' without rounding up in context",
+          "Using multiplication instead of division"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Solving two-step problems by identifying the steps needed, selecting methods and checking the answer is reasonable.",
+        "example_task": "Cinema tickets cost £7.50. A family of 4 goes. They also buy 2 buckets of popcorn at £4.25 each. What is the total cost?",
+        "example_response": "Tickets: 4 × £7.50 = £30. Popcorn: 2 × £4.25 = £8.50. Total: £30 + £8.50 = £38.50.",
+        "common_errors": [
+          "Only computing one step (tickets or popcorn but not both)",
+          "Adding 7.50 + 4.25 and multiplying by 6 (mixing the quantities)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "expected",
+        "description": "Solving multi-step problems involving mixed operations across different mathematical domains, with systematic working and checking.",
+        "example_task": "A rectangular garden is 12 m by 8 m. A circular pond (radius 2 m) is in the middle. Fencing costs £15 per metre. Grass seed costs £3 per m². How much does it cost to fence the perimeter and seed the remaining garden (not the pond)?",
+        "example_response": "Perimeter: 2(12+8) = 40 m. Fencing: 40 × £15 = £600. Garden area: 12 × 8 = 96 m². Pond area ≈ π × 2² ≈ 12.57 m². Grass area ≈ 96 – 12.57 = 83.43 m². Seed cost ≈ 83.43 × £3 = £250.29. Total ≈ £850.29.",
+        "common_errors": [
+          "Forgetting to subtract the pond area from the garden area",
+          "Computing the perimeter incorrectly or confusing perimeter with area"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "greater_depth",
+        "description": "Solving unfamiliar problems that require selecting and combining knowledge from multiple domains, reasoning about which information is relevant, and evaluating whether an exact or approximate answer is appropriate.",
+        "example_task": "A school hall is 20 m long and 15 m wide. 240 children need to sit on the floor for assembly. Each child needs a space 60 cm × 60 cm. Will they all fit? If 30 more children arrive, the head teacher says 'Squeeze up — everyone take 50 cm × 50 cm.' Is this enough? Show all working.",
+        "example_response": "Hall area: 20 × 15 = 300 m². Child space: 0.6 × 0.6 = 0.36 m². Max children: 300 ÷ 0.36 = 833. 240 < 833, so yes, easily. With 270 children at 0.5 × 0.5 = 0.25 m²: need 270 × 0.25 = 67.5 m². 67.5 < 300, so yes, plenty of room. But in practice, rows need aisles and a stage takes some space — so the real capacity is lower. An estimate of roughly half the hall being usable (150 m²) still gives 150 ÷ 0.25 = 600, which is more than 270.",
+        "common_errors": [
+          "Not converting cm to m before computing area (using 60 × 60 = 3,600 m² instead of 0.36 m²)",
+          "Computing the space needed but not comparing it to the space available"
+        ]
+      }
+    ]
+  }
+]
