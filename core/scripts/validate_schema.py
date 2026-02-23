@@ -123,7 +123,6 @@ class SchemaValidator:
                OR c.concept_name IS NULL OR c.concept_name = ''
                OR c.description IS NULL OR c.description = ''
                OR c.concept_type IS NULL OR c.concept_type = ''
-               OR c.complexity_level IS NULL
             RETURN c.concept_id AS id
         """)
         total = self.scalar("MATCH (c:Concept) RETURN count(c)")
@@ -162,19 +161,6 @@ class SchemaValidator:
         issues = [f"Concept {r['id']} has invalid concept_type '{r['val']}'" for r in records]
         status = "FAIL" if issues else "PASS"
         self.add(ValidationResult("concept_type valid values", status, total, issues))
-
-    def check_complexity_level_values(self):
-        """Concept.complexity_level must be an integer 1–5."""
-        records = self.run("""
-            MATCH (c:Concept)
-            WHERE c.complexity_level IS NULL
-               OR NOT (c.complexity_level >= 1 AND c.complexity_level <= 5)
-            RETURN c.concept_id AS id, c.complexity_level AS val
-        """)
-        total = self.scalar("MATCH (c:Concept) RETURN count(c)")
-        issues = [f"Concept {r['id']} has complexity_level={r['val']} (must be 1-5)" for r in records]
-        status = "FAIL" if issues else "PASS"
-        self.add(ValidationResult("complexity_level in range 1-5", status, total, issues))
 
     def check_domain_structure_type_values(self):
         """Domain.structure_type must be one of the valid enum values."""
@@ -1058,6 +1044,97 @@ class SchemaValidator:
         self.add(ValidationResult("PROMPT_FOR completeness", status, total, issues))
 
     # =========================================================================
+    # N. DifficultyLevel layer (v3.9)
+    # =========================================================================
+
+    def check_difficulty_level_completeness(self):
+        """DifficultyLevel nodes have required properties (skipped if none exist)."""
+        total = self.scalar("MATCH (dl:DifficultyLevel) RETURN count(dl)") or 0
+        if total == 0:
+            self.add(ValidationResult("DifficultyLevel completeness", "PASS", 0,
+                                      ["No DifficultyLevel nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (dl:DifficultyLevel)
+            WHERE dl.level_id IS NULL OR dl.level_id = ''
+               OR dl.level_number IS NULL
+               OR dl.label IS NULL OR dl.label = ''
+               OR dl.description IS NULL OR dl.description = ''
+               OR dl.example_task IS NULL OR dl.example_task = ''
+            RETURN dl.level_id AS id
+        """)
+        issues = [f"DifficultyLevel '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("DifficultyLevel completeness", status, total, issues))
+
+    def check_difficulty_level_number_range(self):
+        """DifficultyLevel.level_number must be 1-5."""
+        total = self.scalar("MATCH (dl:DifficultyLevel) RETURN count(dl)") or 0
+        if total == 0:
+            self.add(ValidationResult("DifficultyLevel level_number range", "PASS", 0,
+                                      ["No DifficultyLevel nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (dl:DifficultyLevel)
+            WHERE NOT (dl.level_number >= 1 AND dl.level_number <= 5)
+            RETURN dl.level_id AS id, dl.level_number AS val
+        """)
+        issues = [f"DifficultyLevel {r['id']} has level_number={r['val']} (must be 1-5)" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("DifficultyLevel level_number range", status, total, issues))
+
+    def check_difficulty_level_label_values(self):
+        """DifficultyLevel.label must be one of {entry, developing, expected, greater_depth}."""
+        valid_labels = ['entry', 'developing', 'expected', 'greater_depth']
+        total = self.scalar("MATCH (dl:DifficultyLevel) RETURN count(dl)") or 0
+        if total == 0:
+            self.add(ValidationResult("DifficultyLevel label values", "PASS", 0,
+                                      ["No DifficultyLevel nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (dl:DifficultyLevel)
+            WHERE NOT dl.label IN $valid_labels
+            RETURN dl.level_id AS id, dl.label AS val
+        """, valid_labels=valid_labels)
+        issues = [f"DifficultyLevel {r['id']} has invalid label '{r['val']}'" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("DifficultyLevel label values", status, total, issues))
+
+    def check_difficulty_level_relationship_integrity(self):
+        """Every DifficultyLevel is linked from exactly one Concept via HAS_DIFFICULTY_LEVEL."""
+        total = self.scalar("MATCH (dl:DifficultyLevel) RETURN count(dl)") or 0
+        if total == 0:
+            self.add(ValidationResult("HAS_DIFFICULTY_LEVEL integrity", "PASS", 0,
+                                      ["No DifficultyLevel nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (dl:DifficultyLevel)
+            WHERE NOT (:Concept)-[:HAS_DIFFICULTY_LEVEL]->(dl)
+            RETURN dl.level_id AS id
+        """)
+        issues = [f"DifficultyLevel '{r['id']}' has no incoming HAS_DIFFICULTY_LEVEL" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("HAS_DIFFICULTY_LEVEL integrity", status, total, issues))
+
+    def check_difficulty_level_no_duplicates(self):
+        """No concept has duplicate level_numbers."""
+        total = self.scalar("MATCH (dl:DifficultyLevel) RETURN count(dl)") or 0
+        if total == 0:
+            self.add(ValidationResult("DifficultyLevel no duplicate levels", "PASS", 0,
+                                      ["No DifficultyLevel nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (c:Concept)-[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
+            WITH c, dl.level_number AS ln, count(dl) AS cnt
+            WHERE cnt > 1
+            RETURN c.concept_id AS id, ln AS level_number, cnt
+            LIMIT 20
+        """)
+        issues = [f"Concept {r['id']} has {r['cnt']} DifficultyLevels with level_number={r['level_number']}" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("DifficultyLevel no duplicate levels", status, total, issues))
+
+    # =========================================================================
     # M. Content Vehicles layer (v3.8)
     # =========================================================================
 
@@ -1266,7 +1343,6 @@ class SchemaValidator:
             self.check_source_document_completeness,
             # B. Value constraints
             self.check_concept_type_values,
-            self.check_complexity_level_values,
             self.check_domain_structure_type_values,
             self.check_prereq_confidence_values,
             self.check_prereq_relationship_type_values,
@@ -1328,6 +1404,12 @@ class SchemaValidator:
             self.check_cluster_max_size,
             self.check_cluster_non_empty,
             self.check_cluster_type_distribution,
+            # N. DifficultyLevel (v3.9)
+            self.check_difficulty_level_completeness,
+            self.check_difficulty_level_number_range,
+            self.check_difficulty_level_label_values,
+            self.check_difficulty_level_relationship_integrity,
+            self.check_difficulty_level_no_duplicates,
             # M. Content Vehicles (v3.8)
             self.check_content_vehicle_completeness,
             self.check_content_vehicle_delivers_coverage,

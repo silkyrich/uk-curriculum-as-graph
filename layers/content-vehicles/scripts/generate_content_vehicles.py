@@ -127,6 +127,38 @@ def query_topics_for_subject_ks(driver, subject: str, key_stage: str) -> list[di
         return [dict(r) for r in records]
 
 
+def query_difficulty_levels(driver, subject: str, key_stage: str) -> dict[str, list[dict]]:
+    """Pull difficulty levels for all concepts in a subject/KS, keyed by concept_id."""
+    with driver.session() as session:
+        records = session.run(
+            """
+            MATCH (p:Programme)-[:HAS_CONCEPT]->(c:Concept)
+                  -[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
+            WHERE p.subject_name = $subject AND p.key_stage = $key_stage
+            RETURN c.concept_id AS concept_id,
+                   dl.level_number AS level_number,
+                   dl.label AS label,
+                   dl.description AS description,
+                   dl.example_task AS example_task
+            ORDER BY c.concept_id, dl.level_number
+            """,
+            subject=subject,
+            key_stage=key_stage,
+        )
+        dl_map: dict[str, list[dict]] = {}
+        for r in records:
+            cid = r["concept_id"]
+            if cid not in dl_map:
+                dl_map[cid] = []
+            dl_map[cid].append({
+                "level_number": r["level_number"],
+                "label": r["label"],
+                "description": r["description"],
+                "example_task": r["example_task"],
+            })
+        return dl_map
+
+
 def query_available_combinations(driver) -> list[dict]:
     """List all subject/KS combinations that have concepts."""
     with driver.session() as session:
@@ -142,8 +174,10 @@ def query_available_combinations(driver) -> list[dict]:
 
 
 def build_generation_context(concepts: list[dict], topics: list[dict],
-                             subject: str, key_stage: str) -> str:
+                             subject: str, key_stage: str,
+                             difficulty_levels: dict[str, list[dict]] | None = None) -> str:
     """Build a context string for LLM generation."""
+    dl_map = difficulty_levels or {}
     lines = [
         f"# Content Vehicle Generation Context",
         f"Subject: {subject}, Key Stage: {key_stage}",
@@ -167,6 +201,13 @@ def build_generation_context(concepts: list[dict], topics: list[dict],
                 lines.append(f"  Description: {c['description'][:200]}")
             if c.get("teaching_guidance"):
                 lines.append(f"  Teaching guidance: {c['teaching_guidance'][:200]}")
+            # Difficulty levels for this concept
+            cid = c["concept_id"]
+            if cid in dl_map:
+                lines.append(f"  Difficulty levels:")
+                for dl in dl_map[cid]:
+                    lines.append(f"    {dl['level_number']}. {dl['label'].replace('_', ' ').title()}: "
+                                 f"{dl['description']} — e.g. \"{dl['example_task']}\"")
 
     if topics:
         lines.append(f"\n## Topics ({len(topics)} total)")
@@ -199,6 +240,8 @@ Each vehicle should:
 3. Include definitions (key vocabulary), assessment_guidance, and success_criteria
 4. Include subject-specific properties as detailed below
 5. Link to an existing Topic via implements_topic_id where there is a natural match
+6. Where difficulty levels are provided for a concept, align the vehicle's progression
+   and assessment to those levels (entry → developing → expected → greater depth)
 
 Vehicle type: `{vehicle_type}`
 
@@ -274,11 +317,14 @@ def main():
 
         concepts = query_concepts_for_subject_ks(driver, args.subject, args.key_stage)
         topics = query_topics_for_subject_ks(driver, args.subject, args.key_stage)
+        dl_map = query_difficulty_levels(driver, args.subject, args.key_stage)
 
-        print(f"Found {len(concepts)} concepts and {len(topics)} topics "
-              f"for {args.subject} {args.key_stage}")
+        dl_count = sum(len(v) for v in dl_map.values())
+        print(f"Found {len(concepts)} concepts, {len(topics)} topics, "
+              f"and {dl_count} difficulty levels for {args.subject} {args.key_stage}")
 
-        context = build_generation_context(concepts, topics, args.subject, args.key_stage)
+        context = build_generation_context(concepts, topics, args.subject, args.key_stage,
+                                           difficulty_levels=dl_map)
 
         if args.context_only:
             print(context)

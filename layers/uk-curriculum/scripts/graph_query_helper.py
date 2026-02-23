@@ -51,7 +51,7 @@ def query_domain_context(session, domain_id):
         MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
         RETURN c.concept_id AS id, c.concept_name AS name,
                c.description AS desc, c.concept_type AS ctype,
-               c.complexity_level AS complexity, c.teaching_weight AS tw,
+               c.teaching_weight AS tw,
                c.is_keystone AS keystone,
                c.prerequisite_fan_out AS fan_out,
                c.teaching_guidance AS guidance,
@@ -60,12 +60,25 @@ def query_domain_context(session, domain_id):
         ORDER BY c.concept_id
     """, did=domain_id))
 
+    # ── Difficulty levels per concept ─────────────────────────────────
+    dl_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+              -[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
+        RETURN c.concept_id AS concept_id, dl.level_number AS level,
+               dl.label AS label, dl.description AS description,
+               dl.example_task AS example_task
+        ORDER BY c.concept_id, dl.level_number
+    """, did=domain_id))
+    dl_by_concept = {}
+    for row in dl_rows:
+        dl_by_concept.setdefault(row["concept_id"], []).append(row)
+
     sections.append(f"\n### Concepts ({len(concepts)})")
     for c in concepts:
         ks_flag = " **[KEYSTONE]**" if c['keystone'] else ""
         sections.append(f"\n#### {c['id']} — {c['name']}{ks_flag}")
         fan_out_info = f" | Fan-out: {c['fan_out']}" if c['fan_out'] else ""
-        sections.append(f"Type: {c['ctype']} | Complexity: {c['complexity']} | Teaching weight: {c['tw']}{fan_out_info}")
+        sections.append(f"Type: {c['ctype']} | Teaching weight: {c['tw']}{fan_out_info}")
         sections.append(f"\n{c['desc']}")
         if c['guidance']:
             sections.append(f"\n**Teaching guidance:** {c['guidance']}")
@@ -73,6 +86,13 @@ def query_domain_context(session, domain_id):
             sections.append(f"\n**Common misconceptions:** {c['misconceptions']}")
         if c['vocab']:
             sections.append(f"\n**Key vocabulary:** {c['vocab']}")
+        dl_list = dl_by_concept.get(c['id'], [])
+        if dl_list:
+            sections.append(f"\n**Difficulty levels:**")
+            for dl in dl_list:
+                label_display = dl["label"].replace("_", " ").title()
+                sections.append(f"  {dl['level']}. **{label_display}**: {dl['description']}"
+                                f" — *\"{dl['example_task']}\"*")
 
     # ── Prerequisites (within domain) ────────────────────────────────
     prereqs = list(session.run("""

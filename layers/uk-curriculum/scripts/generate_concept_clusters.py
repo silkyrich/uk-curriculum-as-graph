@@ -89,7 +89,6 @@ def load_domain_concepts(session, domain_id):
         RETURN c.concept_id AS concept_id,
                c.concept_name AS concept_name,
                coalesce(c.teaching_weight, 1) AS teaching_weight,
-               coalesce(c.complexity_level, 1) AS complexity_level,
                coalesce(c.is_keystone, false) AS is_keystone,
                coalesce(c.concept_type, 'knowledge') AS concept_type
         ORDER BY c.concept_id
@@ -290,14 +289,6 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
 
         # Compute derived properties
         concept_ids = cluster["concept_ids"]
-        complexities = [
-            concept_map[cid]["complexity_level"]
-            for cid in concept_ids if cid in concept_map
-        ]
-
-        min_c = min(complexities) if complexities else 1
-        max_c = max(complexities) if complexities else 1
-        complexity_range = f"{min_c}-{max_c}" if min_c != max_c else str(min_c)
 
         # Use curated name if provided; otherwise auto-generate from concept names
         if cluster.get("cluster_name"):
@@ -317,7 +308,6 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
             MERGE (cc:ConceptCluster {cluster_id: $cluster_id})
             SET cc.cluster_name = $cluster_name,
                 cc.cluster_type = $cluster_type,
-                cc.complexity_range = $complexity_range,
                 cc.is_keystone_cluster = $is_keystone_cluster,
                 cc.rationale = $rationale,
                 cc.inspired_by = $inspired_by,
@@ -331,7 +321,6 @@ def write_clusters_to_graph(session, domain_id, clusters, concept_map, stats):
             cluster_id=cluster_id,
             cluster_name=cluster_name,
             cluster_type=cluster["cluster_type"],
-            complexity_range=complexity_range,
             is_keystone_cluster=cluster["is_keystone_cluster"],
             rationale=cluster.get("rationale", ""),
             inspired_by=cluster.get("inspired_by", ""),

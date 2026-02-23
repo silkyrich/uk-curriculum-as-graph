@@ -700,7 +700,6 @@ class CurriculumImporter:
                 c.key_vocabulary = $key_vocabulary,
                 c.common_misconceptions = $common_misconceptions,
                 c.concept_type = $concept_type,
-                c.complexity_level = $complexity_level,
                 c.is_cross_cutting = $is_cross_cutting,
                 c.source_reference = $source_reference,
                 c.teaching_weight = $teaching_weight,
@@ -717,10 +716,9 @@ class CurriculumImporter:
                 key_vocabulary=concept.get("key_vocabulary", ""),
                 common_misconceptions=concept.get("common_misconceptions", ""),
                 concept_type=concept_type,
-                complexity_level=concept["complexity_level"],
                 is_cross_cutting=concept.get("is_cross_cutting", False),
                 source_reference=f"National Curriculum 2014, {dfe_reference} — {subject_name} {key_stage} Programme of Study",
-                teaching_weight=concept.get("teaching_weight", concept["complexity_level"]),
+                teaching_weight=concept.get("teaching_weight", concept.get("complexity_level", 1)),
                 co_teach_hints=concept.get("co_teach_hints", []),
             )
 

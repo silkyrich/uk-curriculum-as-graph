@@ -58,7 +58,6 @@ def query_context(session, cluster_id, year_override=None):
                cc.is_curated        AS is_curated,
                cc.teaching_weeks    AS teaching_weeks,
                cc.lesson_count      AS lesson_count,
-               cc.complexity_range  AS complexity_range,
                cc.is_keystone_cluster AS is_keystone_cluster
     """, cid=cluster_id)
     row = r.single()
@@ -76,13 +75,26 @@ def query_context(session, cluster_id, year_override=None):
                c.key_vocabulary        AS key_vocabulary,
                c.common_misconceptions AS common_misconceptions,
                coalesce(c.concept_type, 'knowledge')  AS concept_type,
-               coalesce(c.complexity_level, 1)         AS complexity_level,
                coalesce(c.teaching_weight, 1)          AS teaching_weight,
                coalesce(c.is_keystone, false)          AS is_keystone,
                c.co_teach_hints        AS co_teach_hints
         ORDER BY c.concept_id
     """, cid=cluster_id)
     ctx["concepts"] = [dict(r) for r in r]
+
+    # ── 2b. Difficulty levels per concept ──────────────────────────────────────
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
+              -[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
+        RETURN c.concept_id AS concept_id, dl.level_number AS level,
+               dl.label AS label, dl.description AS description,
+               dl.example_task AS example_task
+        ORDER BY c.concept_id, dl.level_number
+    """, cid=cluster_id)
+    dl_by_concept = {}
+    for row in r:
+        dl_by_concept.setdefault(row["concept_id"], []).append(dict(row))
+    ctx["difficulty_levels"] = dl_by_concept
 
     # ── 3. Domain + subject + year group ─────────────────────────────────────
     r = session.run("""
@@ -271,6 +283,7 @@ def render_markdown(ctx):
     pp = ctx.get("pedagogy_profile", {})
     fp = ctx.get("feedback_profile", {})
     concepts = ctx.get("concepts", [])
+    difficulty_levels = ctx.get("difficulty_levels", {})
     prereqs = ctx.get("prerequisite_concepts", [])
     interactions = ctx.get("interaction_types", [])
     domain_clusters = ctx.get("domain_clusters", [])
@@ -379,7 +392,6 @@ def render_markdown(ctx):
         keystone = " ⭐ **keystone**" if c_node["is_keystone"] else ""
         lines.append(f"### {c_node['concept_name']}{keystone}")
         lines.append(f"*`{c_node['concept_id']}` · {c_node['concept_type']} · "
-                     f"complexity {c_node['complexity_level']} · "
                      f"weight {c_node['teaching_weight']}*")
         lines.append("")
         if c_node.get("description"):
@@ -393,6 +405,15 @@ def render_markdown(ctx):
             lines.append("")
         if c_node.get("common_misconceptions"):
             lines.append(f"**Common misconceptions:** {c_node['common_misconceptions']}")
+            lines.append("")
+        # Difficulty levels (if present for this concept)
+        dl_list = difficulty_levels.get(c_node["concept_id"], [])
+        if dl_list:
+            lines.append("**Difficulty levels:**")
+            for dl in dl_list:
+                label_display = dl["label"].replace("_", " ").title()
+                lines.append(f"{dl['level']}. **{label_display}**: {dl['description']}"
+                             f" — *\"{dl['example_task']}\"*")
             lines.append("")
 
     # ── Learner profile ──

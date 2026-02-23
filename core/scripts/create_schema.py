@@ -49,12 +49,14 @@ def create_schema(driver):
         "CREATE CONSTRAINT concept_cluster_id_unique IF NOT EXISTS FOR (cc:ConceptCluster) REQUIRE cc.cluster_id IS UNIQUE",
         # Content Vehicles layer (v3.8)
         "CREATE CONSTRAINT content_vehicle_id_unique IF NOT EXISTS FOR (cv:ContentVehicle) REQUIRE cv.vehicle_id IS UNIQUE",
+        # DifficultyLevel layer (v3.9)
+        "CREATE CONSTRAINT difficulty_level_id_unique IF NOT EXISTS FOR (dl:DifficultyLevel) REQUIRE dl.level_id IS UNIQUE",
     ]
 
     # Indexes
     indexes = [
         "CREATE INDEX concept_type_idx IF NOT EXISTS FOR (c:Concept) ON (c.concept_type)",
-        "CREATE INDEX concept_complexity_idx IF NOT EXISTS FOR (c:Concept) ON (c.complexity_level)",
+        # (complexity_level index removed — property deprecated in v3.9)
         "CREATE INDEX concept_cross_cutting_idx IF NOT EXISTS FOR (c:Concept) ON (c.is_cross_cutting)",
         "CREATE INDEX domain_cross_cutting_idx IF NOT EXISTS FOR (d:Domain) ON (d.is_cross_cutting)",
         "CREATE INDEX subject_name_idx IF NOT EXISTS FOR (s:Subject) ON (s.name)",
@@ -88,6 +90,9 @@ def create_schema(driver):
         "CREATE INDEX content_vehicle_type_idx IF NOT EXISTS FOR (cv:ContentVehicle) ON (cv.vehicle_type)",
         "CREATE INDEX content_vehicle_subject_idx IF NOT EXISTS FOR (cv:ContentVehicle) ON (cv.subject)",
         "CREATE INDEX content_vehicle_ks_idx IF NOT EXISTS FOR (cv:ContentVehicle) ON (cv.key_stage)",
+        # DifficultyLevel indexes (v3.9)
+        "CREATE INDEX difficulty_level_number_idx IF NOT EXISTS FOR (dl:DifficultyLevel) ON (dl.level_number)",
+        "CREATE INDEX difficulty_level_label_idx IF NOT EXISTS FOR (dl:DifficultyLevel) ON (dl.label)",
     ]
 
     print("Creating constraints...")

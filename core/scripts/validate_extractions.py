@@ -154,13 +154,6 @@ def validate_file(path: Path) -> list[ExtractionIssue]:
                 f"({'will be auto-corrected' if ctype in KNOWN_CONCEPT_TYPE_FIXUPS else 'UNKNOWN — no fixup defined'})",
             ))
 
-        clevel = concept.get("complexity_level")
-        if clevel is None or not (1 <= int(clevel) <= 5 if str(clevel).isdigit() else False):
-            issues.append(ExtractionIssue(
-                "ERROR", filename,
-                f"Concept {c_id} complexity_level '{clevel}' is not 1-5",
-            ))
-
         desc = concept.get("description") or concept.get("definition", "")
         if not desc:
             issues.append(ExtractionIssue(

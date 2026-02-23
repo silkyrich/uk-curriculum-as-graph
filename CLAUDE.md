@@ -137,6 +137,9 @@ python3 core/migrations/compute_lesson_grouping_signals.py
 python3 layers/uk-curriculum/scripts/import_thinking_lenses.py
 python3 layers/uk-curriculum/scripts/generate_concept_clusters.py
 
+# DifficultyLevel nodes (run after curriculum import — pilot: Y3 Maths)
+python3 layers/uk-curriculum/scripts/import_difficulty_levels.py
+
 # Cross-domain CO_TEACHES (run after concept grouping)
 python3 core/migrations/create_cross_domain_co_teaches.py
 
@@ -219,6 +222,7 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:KeyStage`, `:Year`, `:Subject`, `:Programme`
 - `:Domain`, `:Objective`, `:Concept`, `:ConceptCluster`
 - `:ThinkingLens` — 10 cross-subject cognitive lenses (Patterns, Cause and Effect, …)
+- `:DifficultyLevel` — grounded difficulty tiers per Concept (entry → developing → expected → greater_depth)
 - `:Topic`, `:SourceDocument`
 
 **Epistemic Skills:**
@@ -274,6 +278,9 @@ All nodes have `display_category` property:
 (:Concept)-[:CO_TEACHES]->(:Concept)                                  // co-teachability signal
 (:ConceptCluster)-[:APPLIES_LENS {rank: int, rationale: str}]->(:ThinkingLens)  // ordered, 1=primary
 (:ThinkingLens)-[:PROMPT_FOR {agent_prompt: str, question_stems: [str]}]->(:KeyStage)  // age-banded prompts
+
+// DifficultyLevel (v3.9) — grounded difficulty tiers replacing complexity_level
+(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)  // 3-4 levels per concept (pilot: Y3 Maths)
 
 // Content Vehicles (v3.8)
 (:Domain)-[:HAS_VEHICLE]->(:ContentVehicle)-[:DELIVERS]->(:Concept)
@@ -381,6 +388,7 @@ Every feature that introduces or modifies data processing must:
   - **`generated/` is TEST output, not canon** — do not treat its contents as authoritative for graph model or data decisions
 - Concept grouping / lesson clusters? → `layers/uk-curriculum/scripts/generate_concept_clusters.py`
 - Thinking lenses (cognitive framing for clusters)? → `layers/uk-curriculum/data/thinking_lenses/` + `import_thinking_lenses.py`
+- Difficulty levels (grounded difficulty tiers)? → `layers/uk-curriculum/data/difficulty_levels/` + `import_difficulty_levels.py`
 - User stories? → `docs/user-stories/`
 - Schema definition? → `core/scripts/create_schema.py`
 - Import all data? → `core/scripts/import_all.py` (orchestrator)
@@ -514,7 +522,7 @@ class LayerImporter:
 - Schema: ConceptCluster uniqueness constraint + indexes on `cluster_type`, `is_keystone`, `teaching_weight` (v3.7)
 - Validation: 6 new schema checks + extraction checks for new fields; `validate_cluster_definitions.py` validates all cluster definition JSONs
 - Visualization: ConceptCluster styled (Indigo-500, view_module icon) + name mapping
-- No learner data — all nodes are curriculum design metadata (same tier as complexity_level)
+- No learner data — all nodes are curriculum design metadata
 
 ✅ **ThinkingLens layer (2026-02-23):**
 - 10 cross-subject cognitive lenses in `layers/uk-curriculum/data/thinking_lenses/thinking_lenses.json`
@@ -604,6 +612,21 @@ class LayerImporter:
 - Remaining consensus gaps: no worked examples, no difficulty sub-levels, incomplete vehicle coverage (~40% Geography statutory content missing), thin safety notes, Thinking Lens rationales age-inappropriate for KS1 and duplicated across clusters
 - Reports: `generated/teachers-v4/` (lesson plans, teaching logs, v5 findings, group report)
 - Path to 9/10: add worked examples, fix data quality, add difficulty sub-levels
+
+✅ **DifficultyLevel layer (v3.9, 2026-02-23):**
+- Replaces ungrounded `complexity_level` integer with structured sub-nodes per Concept
+- `(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)` — 3-4 levels per concept
+- Standard labels aligned with KS2 statutory assessment: `entry` (1), `developing` (2), `expected` (3), `greater_depth` (4)
+- Each node has `description`, `example_task`, `example_response`, `common_errors` — grounding abstract difficulty into concrete, assessable tasks
+- Pilot: Y3 Mathematics (41 concepts, ~150 DifficultyLevel nodes)
+- Data: `layers/uk-curriculum/data/difficulty_levels/mathematics_y3.json`
+- Import: `layers/uk-curriculum/scripts/import_difficulty_levels.py`
+- Schema: DifficultyLevel uniqueness constraint + indexes on `level_number`, `label` (v3.9)
+- Validation: 5 new checks (completeness, level_number range, label values, HAS_DIFFICULTY_LEVEL integrity, no duplicate levels)
+- `complexity_level` property removed from Concept import; `complexity_range` removed from ConceptCluster generation
+- Query helpers: `query_cluster_context.py` and `graph_query_helper.py` surface difficulty levels under each concept
+- Backward-compatible: non-pilot concepts show no difficulty levels (no errors)
+- No learner data — pure curriculum design metadata
 
 🚧 **In progress:**
 - Oak National Academy content (skeleton only)
