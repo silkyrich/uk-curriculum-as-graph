@@ -1,0 +1,885 @@
+{
+  "name": "EYFS \u2014 Early Years Foundation Stage",
+  "id": "c6474513-46b0-4804-9c88-ff0ff90a2002",
+  "version": "1.4.0",
+  "categories": [
+    {
+      "id": 0,
+      "name": "Other",
+      "color": "#6B7280",
+      "icon": "F5919855-3157-41C2-B8A4-326AA61BB076",
+      "labels": [],
+      "properties": [],
+      "caption": [
+        ""
+      ],
+      "size": 1,
+      "styleRules": [],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
+    },
+    {
+      "id": 1,
+      "name": "KeyStage",
+      "color": "#D97706",
+      "icon": "DCC09BD2-9D48-4CD3-8704-6A1003F4D103",
+      "labels": [
+        "KeyStage"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "key_stage_id",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "age_range",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 5,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#D97706",
+          "minColor": "#D97706",
+          "midColor": "#D97706",
+          "maxColor": "#D97706",
+          "basedOn": "key_stage_id_string",
+          "condition": "equals",
+          "conditionValue": "EYFS",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 5,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
+    },
+    {
+      "id": 2,
+      "name": "Year",
+      "color": "#D97706",
+      "icon": "DCC09BD2-9D48-4CD3-8704-6A1003F4D103",
+      "labels": [
+        "Year"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "year_id",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "age_range",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "key_stage",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 4,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#D97706",
+          "minColor": "#D97706",
+          "midColor": "#D97706",
+          "maxColor": "#D97706",
+          "basedOn": "year_id_string",
+          "condition": "equals",
+          "conditionValue": "EYFS",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 4,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
+    },
+    {
+      "id": 3,
+      "name": "Area of Learning",
+      "color": "#D97706",
+      "icon": "F5919855-3157-41C2-B8A4-326AA61BB076",
+      "labels": [
+        "Subject"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "subject_id",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "area_type",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "description",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 4,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#EC4899",
+          "minColor": "#EC4899",
+          "midColor": "#EC4899",
+          "maxColor": "#EC4899",
+          "basedOn": "subject_id_string",
+          "condition": "equals",
+          "conditionValue": "Communication and Language",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "subject_id_string",
+          "condition": "equals",
+          "conditionValue": "Personal, Social and Emotional Development",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F97316",
+          "minColor": "#F97316",
+          "midColor": "#F97316",
+          "maxColor": "#F97316",
+          "basedOn": "subject_id_string",
+          "condition": "equals",
+          "conditionValue": "Physical Development",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "subject_id_string",
+          "condition": "equals",
+          "conditionValue": "Literacy",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "subject_id_string",
+          "condition": "equals",
+          "conditionValue": "Mathematics",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#14B8A6",
+          "minColor": "#14B8A6",
+          "midColor": "#14B8A6",
+          "maxColor": "#14B8A6",
+          "basedOn": "subject_id_string",
+          "condition": "equals",
+          "conditionValue": "Understanding the World",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#8B5CF6",
+          "minColor": "#8B5CF6",
+          "midColor": "#8B5CF6",
+          "maxColor": "#8B5CF6",
+          "basedOn": "subject_id_string",
+          "condition": "equals",
+          "conditionValue": "Expressive Arts and Design",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
+    },
+    {
+      "id": 4,
+      "name": "Programme",
+      "color": "#D97706",
+      "icon": "E325B81B-4516-4692-AD86-2D408B2EED9D",
+      "labels": [
+        "Programme"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "subject_name",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "key_stage",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "age_range",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 4,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#D97706",
+          "minColor": "#D97706",
+          "midColor": "#D97706",
+          "maxColor": "#D97706",
+          "basedOn": "key_stage_string",
+          "condition": "equals",
+          "conditionValue": "EYFS",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 4,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
+    },
+    {
+      "id": 5,
+      "name": "ELG Domain",
+      "color": "#D97706",
+      "icon": "F5919855-3157-41C2-B8A4-326AA61BB076",
+      "labels": [
+        "Domain"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "domain_id",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "domain_name",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "curriculum_context",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 3,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#EC4899",
+          "minColor": "#EC4899",
+          "midColor": "#EC4899",
+          "maxColor": "#EC4899",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Communication and Language",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Personal, Social and Emotional Development",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F97316",
+          "minColor": "#F97316",
+          "midColor": "#F97316",
+          "maxColor": "#F97316",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Physical Development",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Literacy",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Mathematics",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#14B8A6",
+          "minColor": "#14B8A6",
+          "midColor": "#14B8A6",
+          "maxColor": "#14B8A6",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Understanding the World",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#8B5CF6",
+          "minColor": "#8B5CF6",
+          "midColor": "#8B5CF6",
+          "maxColor": "#8B5CF6",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Expressive Arts and Design",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
+    },
+    {
+      "id": 6,
+      "name": "Objective",
+      "color": "#D97706",
+      "icon": "158A2E72-4F2A-41ED-AB88-B27557AB55E3",
+      "labels": [
+        "Objective"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "objective_text",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "is_statutory",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#D97706",
+          "minColor": "#D97706",
+          "midColor": "#D97706",
+          "maxColor": "#D97706",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "EYFS",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
+    },
+    {
+      "id": 7,
+      "name": "Concept",
+      "color": "#D97706",
+      "icon": "697105CA-C37F-4B0D-BA33-FD6B7924B9C3",
+      "labels": [
+        "Concept"
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "exclude": false,
+          "isCaption": true,
+          "dataType": "string"
+        },
+        {
+          "name": "concept_id",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "concept_name",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "description",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "teaching_guidance",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        },
+        {
+          "name": "key_vocabulary",
+          "exclude": false,
+          "isCaption": false,
+          "dataType": "string"
+        }
+      ],
+      "caption": [
+        ""
+      ],
+      "size": 2,
+      "styleRules": [
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#EC4899",
+          "minColor": "#EC4899",
+          "midColor": "#EC4899",
+          "maxColor": "#EC4899",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Communication and Language",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F59E0B",
+          "minColor": "#F59E0B",
+          "midColor": "#F59E0B",
+          "maxColor": "#F59E0B",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Personal, Social and Emotional Development",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#F97316",
+          "minColor": "#F97316",
+          "midColor": "#F97316",
+          "maxColor": "#F97316",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Physical Development",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Literacy",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#10B981",
+          "minColor": "#10B981",
+          "midColor": "#10B981",
+          "maxColor": "#10B981",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Mathematics",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#14B8A6",
+          "minColor": "#14B8A6",
+          "midColor": "#14B8A6",
+          "maxColor": "#14B8A6",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Understanding the World",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#8B5CF6",
+          "minColor": "#8B5CF6",
+          "midColor": "#8B5CF6",
+          "maxColor": "#8B5CF6",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Expressive Arts and Design",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "range",
+          "size": 2,
+          "minSize": 1,
+          "maxSize": 5,
+          "color": "#888888",
+          "minColor": "#888888",
+          "midColor": "#888888",
+          "maxColor": "#888888",
+          "basedOn": "display_size_number",
+          "applyColor": false,
+          "applySize": true,
+          "minSizeValue": "1",
+          "maxSizeValue": "5"
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Key Stage 1",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Year 1",
+          "applyColor": true,
+          "applySize": false
+        },
+        {
+          "type": "single",
+          "size": 2,
+          "color": "#3B82F6",
+          "minColor": "#3B82F6",
+          "midColor": "#3B82F6",
+          "maxColor": "#3B82F6",
+          "basedOn": "source_reference_string",
+          "condition": "contains",
+          "conditionValue": "Year 2",
+          "applyColor": true,
+          "applySize": false
+        }
+      ],
+      "createdAt": 1740268800000,
+      "lastEditedAt": 1740268800000
+    }
+  ],
+  "relationshipTypes": [],
+  "templates": [
+    {
+      "name": "EYFS full structure",
+      "id": "tmpl:1",
+      "createdAt": 1740268800000,
+      "text": "EYFS full structure",
+      "cypher": "MATCH (ks:KeyStage {key_stage_id:'EYFS'})-[:HAS_YEAR]->(y)-[:HAS_PROGRAMME]->(p)-[:HAS_DOMAIN]->(d) RETURN ks, y, p, d LIMIT 200",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "EYFS area $area concepts",
+      "id": "tmpl:2",
+      "createdAt": 1740268800000,
+      "text": "EYFS area $area concepts",
+      "cypher": "MATCH (s:Subject) WHERE s.subject_id CONTAINS $area MATCH path=(s)<-[:FOR_SUBJECT]-(p:Programme {key_stage:'EYFS'})-[:HAS_DOMAIN]->(d)-[:HAS_CONCEPT]->(c:Concept) RETURN path LIMIT 150",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "EYFS to KS1 progression",
+      "id": "tmpl:3",
+      "createdAt": 1740268800000,
+      "text": "EYFS to KS1 progression",
+      "cypher": "MATCH path=(c1:Concept)-[:PREREQUISITE_OF]->(c2:Concept) WHERE c1.concept_id =~ '(CL|PSED|PD|LIT|EYMA|UW|EAD)-R-.*' RETURN path LIMIT 100",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "What does $concept lead to",
+      "id": "tmpl:4",
+      "createdAt": 1740268800000,
+      "text": "What does $concept lead to",
+      "cypher": "MATCH (c1:Concept) WHERE c1.concept_name CONTAINS $concept OR c1.concept_id = $concept MATCH path=(c1)-[:PREREQUISITE_OF*1..3]->(c2:Concept) RETURN path LIMIT 80",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Literacy EYFS to KS1",
+      "id": "tmpl:5",
+      "createdAt": 1740268800000,
+      "text": "Literacy EYFS to KS1",
+      "cypher": "MATCH path=(c1:Concept)-[:PREREQUISITE_OF]->(c2:Concept) WHERE c1.concept_id STARTS WITH 'LIT-R-' RETURN path LIMIT 80",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Maths EYFS to KS1",
+      "id": "tmpl:6",
+      "createdAt": 1740268800000,
+      "text": "Maths EYFS to KS1",
+      "cypher": "MATCH path=(c1:Concept)-[:PREREQUISITE_OF]->(c2:Concept) WHERE c1.concept_id STARTS WITH 'EYMA-R-' RETURN path LIMIT 80",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "All EYFS concepts",
+      "id": "tmpl:7",
+      "createdAt": 1740268800000,
+      "text": "All EYFS concepts",
+      "cypher": "MATCH (c:Concept) WHERE c.concept_id =~ '(CL|PSED|PD|LIT|EYMA|UW|EAD)-R-.*' RETURN c LIMIT 60",
+      "params": [],
+      "hasCypherErrors": false
+    },
+    {
+      "name": "Reception year full profile",
+      "id": "tmpl:8",
+      "createdAt": 1740268800000,
+      "text": "Reception year full profile",
+      "cypher": "MATCH (y:Year {year_id:'EYFS'}) MATCH path=(y)-[*1..4]->() RETURN path LIMIT 300",
+      "params": [],
+      "hasCypherErrors": false
+    }
+  ],
+  "palette": [],
+  "hiddenRelationshipTypes": [
+    "HAS_KEY_STAGE",
+    "ASSESSES",
+    "HAS_DIMENSION",
+    "HAS_PRACTICE",
+    "HAS_CORE_IDEA",
+    "HAS_PE",
+    "ALIGNS_TO",
+    "DEVELOPS_SKILL",
+    "SOURCED_FROM",
+    "PROGRESSION_OF"
+  ],
+  "hiddenCategories": [],
+  "hideUncategorisedData": false,
+  "parentPerspectiveId": null,
+  "createdAt": 1740268800000,
+  "lastEditedAt": 1740268800000
+}
