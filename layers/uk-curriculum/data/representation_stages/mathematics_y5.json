@@ -1,0 +1,495 @@
+[
+  {
+    "concept_id": "MA-Y5-C001",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using place value counters (100,000; 10,000; 1,000; 100; 10; 1) on a six-column place value mat to build, partition and compare numbers up to 1,000,000",
+        "resources": ["place value counters (six denominations)", "place value mat (HTh, TTh, Th, H, T, O)", "arrow cards (100,000s down to 1s)"],
+        "example_activity": "Build 304,056 with place value counters: 3 hundred-thousands, 0 ten-thousands, 4 thousands, 0 hundreds, 5 tens, 6 ones. What is the value of the 3? (300,000). Partition: 300,000 + 4,000 + 50 + 6. Use arrow cards to layer the number. Compare 304,056 and 340,056 — which counter column differs?",
+        "transition_cue": "Child reads, writes and partitions six-digit numbers without counters, explaining the value of each digit including zero placeholders"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Using place value charts, number lines to 1,000,000, and Gattegno charts to represent, compare and order large numbers on paper",
+        "resources": ["place value chart (6 columns)", "number line (0-1,000,000)", "Gattegno chart"],
+        "example_activity": "Write 725,403 in a place value chart. Mark it on a number line between 700,000 and 800,000. Use a Gattegno chart to build numbers by pointing: 700,000 + 25,000 + 400 + 3. Order five six-digit numbers from smallest to largest, comparing column by column.",
+        "transition_cue": "Child reads and compares any number up to 1,000,000 without visual aids, articulating the column-by-column comparison"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Working with numbers to 1,000,000 mentally: identifying digit values, partitioning flexibly, comparing, ordering, and reading/writing in words",
+        "resources": [],
+        "example_activity": "What is the value of the 8 in 382,510? Write 'four hundred and nine thousand and twelve' in numerals. Is 599,999 closer to 500,000 or 600,000? What number is 10,000 more than 395,000?",
+        "transition_cue": "Child works with any number to 1,000,000 fluently, partitioning flexibly and comparing instantly"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C002",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using number lines marked in 10,000s and 100,000s to physically locate numbers and identify which bounding multiple they are nearer to",
+        "resources": ["number line (0-1,000,000 marked in 100,000s)", "number line (0-100,000 marked in 10,000s)", "place value counters"],
+        "example_activity": "Place 347,500 on a number line marked in 100,000s: it falls between 300,000 and 400,000. Is it closer to 300,000 or 400,000? (300,000 — the midpoint is 350,000 and 347,500 < 350,000.) Now round to the nearest 10,000: between 340,000 and 350,000, closer to 350,000.",
+        "transition_cue": "Child identifies the bounding multiples and chooses the nearer one without a number line, correctly applying the '5 rounds up' convention"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing number line segments to show the rounding process, marking midpoints and decisions, and recording rounding to different degrees of accuracy",
+        "resources": ["number line template", "rounding recording frame", "squared paper"],
+        "example_activity": "Draw a number line from 250,000 to 350,000 in steps of 10,000. Mark 287,500. Midpoint between 280,000 and 290,000 is 285,000. Since 287,500 > 285,000, round up to 290,000. Record: 287,500 ≈ 290,000 (nearest 10,000), ≈ 300,000 (nearest 100,000).",
+        "transition_cue": "Child rounds any number to any power of 10 by identifying the key digit, without drawing a number line"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Rounding any number up to 1,000,000 to any power of 10 using the digit-checking rule, and applying rounding to estimate calculations with large numbers",
+        "resources": [],
+        "example_activity": "Round 847,356 to the nearest 1,000; 10,000; 100,000. Estimate 472,381 + 289,654 by rounding each to the nearest 100,000. Does 95,000 round to 100,000 or 90,000 to the nearest 10,000?",
+        "transition_cue": "Child rounds any large number to any degree of accuracy within 3 seconds and uses rounding to estimate calculations routinely"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C003",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using counters to build arrays for each number 2-30, identifying which numbers can only make a 1-by-n array (primes) and which can form multiple arrays (composites), following the Sieve of Eratosthenes with a hundred square",
+        "resources": ["counters", "hundred square", "Sieve of Eratosthenes template", "coloured pencils"],
+        "example_activity": "Try to arrange 7 counters into a rectangle: only 1 × 7 works. Try 12: 1×12, 2×6, 3×4 — multiple rectangles. Numbers with only one rectangle (besides 1×n) are prime. On the hundred square, cross out multiples of 2 (not 2), then multiples of 3 (not 3), then 5, then 7. The remaining numbers are prime.",
+        "transition_cue": "Child explains that a prime number has exactly two factors (1 and itself) and can identify primes up to 20 without the sieve"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Recording factor pairs to test for primeness, drawing factor trees, and using the completed Sieve of Eratosthenes as a reference to identify primes on paper",
+        "resources": ["hundred square (completed sieve)", "factor pair recording sheet", "factor tree template"],
+        "example_activity": "Is 37 prime? Check: 37 ÷ 2? No. 37 ÷ 3? No. 37 ÷ 5? No. √37 ≈ 6, so only need to check up to 6. 37 is prime. Draw a factor tree for 60: 60 = 2 × 30 = 2 × 2 × 15 = 2 × 2 × 3 × 5. List the prime factors.",
+        "transition_cue": "Child tests any number up to 100 for primeness using systematic factor checking and identifies prime factors without the sieve"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Identifying prime and composite numbers mentally, recalling primes up to at least 19, and explaining why 1 is not prime and why 2 is the only even prime",
+        "resources": [],
+        "example_activity": "Is 51 prime? (No: 51 = 3 × 17.) Is 29 prime? (Yes.) List all primes less than 30. Why is 1 not prime? (It has only one factor, not two.) Why is 2 the only even prime?",
+        "transition_cue": "Child identifies primes and composites up to 100 confidently, explains the definition, and uses prime factorisation to decompose numbers"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C004",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Building square arrays from tiles (3×3=9, 4×4=16, 5×5=25...) and cubic structures from linking cubes (2×2×2=8, 3×3×3=27) to see square and cube numbers as physical shapes",
+        "resources": ["1 cm² square tiles", "linking cubes (1 cm³)", "squared paper for arrays"],
+        "example_activity": "Build a 5×5 square from tiles: count 25 tiles. So 5² = 25. Build a 3×3×3 cube from linking cubes: count 27 cubes. So 3³ = 27. List all square numbers by building arrays: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144. Which numbers are both square and cube?",
+        "transition_cue": "Child states all square numbers up to 144 and the first five cube numbers from memory, connecting them to area and volume"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing square arrays on squared paper, recording the square and cube number sequences, and using the n² and n³ notation",
+        "resources": ["squared paper", "isometric paper (for cubes)", "sequence recording sheet"],
+        "example_activity": "Draw square arrays for 1² through 12² on squared paper. Record: 1²=1, 2²=4, 3²=9... 12²=144. Draw cubes on isometric paper for 1³, 2³, 3³, 4³, 5³. Record using notation: 7² = 49, 4³ = 64. Is 64 a square number too? (Yes: 8² = 64.)",
+        "transition_cue": "Child uses the n² and n³ notation correctly, identifies whether a given number is square or cube, and generates these sequences without drawing"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Recalling square and cube numbers instantly, using the notation, and applying them in calculations and reasoning",
+        "resources": [],
+        "example_activity": "What is 9²? What is 4³? Is 49 a square number? What is √81? If the area of a square is 144 cm², what is the side length? If the volume of a cube is 125 cm³, what is the edge length?",
+        "transition_cue": "Child answers any square/cube number question within 3 seconds and connects them to area and volume problems"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C005",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Building arrays to find all factor pairs, using counters on Venn diagram sorting hoops to identify common factors, and laying out multiples with Cuisenaire rods to find common multiples",
+        "resources": ["counters", "Venn diagram sorting hoops", "Cuisenaire rods", "factor pair recording cards"],
+        "example_activity": "Find all factor pairs of 36 using arrays: 1×36, 2×18, 3×12, 4×9, 6×6. Find factors of 24: 1×24, 2×12, 3×8, 4×6. Put factors of 36 in one hoop, factors of 24 in another. Overlap: 1, 2, 3, 4, 6, 12. HCF = 12. Lay out multiples of 4 and 6 with rods: LCM = 12.",
+        "transition_cue": "Child lists all factor pairs systematically and identifies common factors, HCF, and LCM without arrays or hoops"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing Venn diagrams of factor sets, recording factor trees, listing multiples to find LCM, and connecting HCF and LCM to fraction operations",
+        "resources": ["Venn diagram template", "factor tree template", "multiples recording sheet"],
+        "example_activity": "Draw a Venn diagram: factors of 30 and factors of 42. Common factors: 1, 2, 3, 6. HCF = 6. So 30/42 simplifies to 5/7 (÷6). List multiples of 6 and 8: 6, 12, 18, 24, 30... and 8, 16, 24, 32... LCM = 24. So to add 1/6 + 1/8, use 24 as common denominator.",
+        "transition_cue": "Child finds HCF and LCM on paper without arrays and uses them to simplify fractions and find common denominators"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Finding factors, common factors, HCF, multiples and LCM mentally, and applying them fluently to fraction operations",
+        "resources": [],
+        "example_activity": "What is the HCF of 18 and 24? (6.) What is the LCM of 6 and 9? (18.) Simplify 24/36. Find a common denominator for 3/8 and 5/12. Is 7 a factor of 63?",
+        "transition_cue": "Child identifies HCF and LCM of any pair of numbers up to 100 within 5 seconds and applies them to fraction problems"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C006",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using Dienes blocks to model the two partial products in long multiplication: partitioning the two-digit multiplier into tens and ones and building each product physically",
+        "resources": ["Dienes blocks (thousands, hundreds, tens, ones)", "place value mat", "place value counters"],
+        "example_activity": "Calculate 47 × 23. Build 47 × 3 with blocks: 141. Build 47 × 20 with blocks: 940. Combine: 141 + 940 = 1,081. Verify: the grid shows 40×20=800, 40×3=120, 7×20=140, 7×3=21. Total: 800+120+140+21=1,081.",
+        "transition_cue": "Child explains why long multiplication has two rows (ones product and tens product) and transitions to the written method without blocks"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Using the grid method side by side with the formal long multiplication layout, showing how the partial products correspond, then practising the compact method",
+        "resources": ["grid method template", "long multiplication template", "squared paper"],
+        "example_activity": "Grid for 347 × 24: split into 300, 40, 7 across the top and 20, 4 down the side. Calculate all 6 cells. Total: 8,328. Now write the compact method: row 1 = 347 × 4 = 1,388. Row 2 = 347 × 20 = 6,940. Add: 8,328. Do they match?",
+        "transition_cue": "Child completes long multiplication using the compact method independently, correctly placing the zero placeholder and managing carries across both rows"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Performing long multiplication of up to 4-digit × 2-digit numbers fluently using the compact method, with estimation to check",
+        "resources": ["squared paper"],
+        "example_activity": "Calculate 2,463 × 37. Estimate: 2,500 × 40 = 100,000. Calculate: 91,131. Is this plausible? Now try 4,085 × 26 (zero in the hundreds place).",
+        "transition_cue": "Child completes any long multiplication with correct carrying and zero handling, routinely estimating before calculating"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C007",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using Dienes blocks and place value counters to model sharing (division) physically, demonstrating the bus stop method with concrete regrouping when a column does not divide evenly",
+        "resources": ["Dienes blocks (thousands, hundreds, tens, ones)", "place value counters", "place value mat"],
+        "example_activity": "Divide 852 ÷ 4. Build 852. Share 8 hundreds into 4 groups: 2 each. Share 5 tens into 4: 1 each with 1 ten remaining. Exchange that ten for 10 ones: now 12 ones. Share 12 into 4: 3 each. Answer: 213. Now try 865 ÷ 4: 1 one left over — remainder 1.",
+        "transition_cue": "Child models division with regrouping correctly with blocks and explains what happens when there is a remainder"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Recording short division using the bus stop layout on paper, showing the carried digits, and practising remainder interpretation with word problems",
+        "resources": ["squared paper", "bus stop division template", "word problem cards"],
+        "example_activity": "Write 3,024 ÷ 6 using bus stop layout. 3÷6=0 r3 (write 0, carry 3). 30÷6=5 (write 5). 2÷6=0 r2 (write 0, carry 2). 24÷6=4 (write 4). Answer: 504. Word problem: 43 children in groups of 5. 43÷5=8 r3. Need 9 groups. Why not 8?",
+        "transition_cue": "Child completes short division on paper with correct carrying (including zero quotients) and interprets remainders appropriately for the context"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Performing short division of up to 4-digit numbers by 1-digit divisors fluently, expressing remainders as whole numbers, fractions or decimals as context requires",
+        "resources": ["squared paper"],
+        "example_activity": "Calculate 7,349 ÷ 8. Express the remainder as: (a) a whole number, (b) a fraction, (c) a decimal. A farmer has 2,350 eggs to pack in boxes of 6. How many full boxes? How many eggs left over?",
+        "transition_cue": "Child completes any short division fluently and selects the correct remainder form for the problem context without prompting"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C008",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using fraction strips and fraction walls to physically demonstrate why a common denominator is needed, and overlaying strips to convert fractions to the same-sized pieces before combining",
+        "resources": ["fraction strips (halves through twelfths)", "fraction wall", "fraction circles"],
+        "example_activity": "Add 1/3 + 1/4. Try putting a third-strip and a quarter-strip together — they don't line up on the wall. Convert both to twelfths: 1/3 = 4/12, 1/4 = 3/12. Now lay out 4 twelfth-strips + 3 twelfth-strips = 7 twelfths. So 1/3 + 1/4 = 7/12.",
+        "transition_cue": "Child explains why fractions need a common denominator before adding and finds the equivalent fractions using strips"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing fraction bars to show conversion to a common denominator, recording the equivalent fraction steps on paper, and using LCM to find the most efficient denominator",
+        "resources": ["fraction bar template", "squared paper", "LCM reference sheet"],
+        "example_activity": "Add 2/5 + 1/3. LCM of 5 and 3 = 15. Draw bars: 2/5 = 6/15, 1/3 = 5/15. Shade and combine: 11/15. Subtract 5/6 − 1/4. LCM of 6 and 4 = 12. 5/6 = 10/12, 1/4 = 3/12. 10/12 − 3/12 = 7/12. Simplify if possible.",
+        "transition_cue": "Child finds common denominators and adds/subtracts fractions on paper without fraction strips, simplifying the answer"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Adding and subtracting fractions with different denominators mentally or with minimal jottings, converting to mixed numbers when results exceed 1, and simplifying",
+        "resources": [],
+        "example_activity": "Calculate 3/4 + 2/3. 5/6 − 1/4. 2/3 + 5/8. If 7/12 + ?/12 = 1, what is the missing fraction? Add 1 2/5 + 2 3/10.",
+        "transition_cue": "Child adds and subtracts fractions with different denominators fluently, converting improper fractions to mixed numbers and simplifying automatically"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C009",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using fraction circles and fraction strips to build improper fractions beyond 1 whole and convert them to mixed numbers by grouping whole circles",
+        "resources": ["fraction circles (quarters, thirds, fifths, eighths)", "fraction strips", "number line (0-3)"],
+        "example_activity": "Take 7 quarter-pieces. Make 1 whole circle (4 quarters) with 3 left over: 7/4 = 1 3/4. Now start with 2 1/3: that is 2 whole circles and 1 third-piece. Count all thirds: 6/3 + 1/3 = 7/3. Mark both 7/4 and 1 3/4 on the number line — same point.",
+        "transition_cue": "Child converts between improper fractions and mixed numbers using pieces, explaining the grouping process verbally"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing fraction bars and number lines to show the conversion between improper fractions and mixed numbers, recording the division method on paper",
+        "resources": ["fraction bar template", "number line (0-4 marked in fractions)", "squared paper"],
+        "example_activity": "Convert 13/5: draw a fraction bar split into fifths. Shade 13 sections: that fills 2 complete bars (10/5) with 3 left over. 13/5 = 2 3/5. Check by division: 13 ÷ 5 = 2 remainder 3, so 2 3/5. Convert 3 2/7 to improper: 3 × 7 + 2 = 23. So 23/7.",
+        "transition_cue": "Child converts in both directions on paper using the division/multiplication method without drawing fraction bars"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Converting between improper fractions and mixed numbers mentally, and using these conversions in fraction calculations",
+        "resources": [],
+        "example_activity": "Convert 17/6 to a mixed number. Convert 4 3/8 to an improper fraction. Add 2 3/4 + 1 5/6 (convert to improper, find common denominator, add, convert back). Which is greater: 11/4 or 2 3/5?",
+        "transition_cue": "Child converts between forms instantly and uses these conversions fluently within fraction calculations"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C010",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using a 10×10 hundredths grid to shade percentages, connecting to money (£1 = 100p) and fraction equivalences physically",
+        "resources": ["10×10 hundredths grid", "coins (1p, 10p, 50p)", "fraction-decimal-percentage cards", "coloured pencils"],
+        "example_activity": "Shade 35 squares of a hundredths grid: that is 35% = 35/100 = 0.35. Shade 50: that is 50% = 1/2 = 0.5. Use money: 25% of £1 = 25p = £0.25 = 1/4. Match cards: pair 20% with 1/5 and 0.2. What percentage is 3/4? Shade 75 squares.",
+        "transition_cue": "Child states the fraction and decimal equivalent of any common percentage (10%, 20%, 25%, 50%, 75%) without the grid"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing bar models to find percentages of quantities, recording fraction-decimal-percentage conversion tables, and using number lines to show equivalences",
+        "resources": ["bar model template", "conversion table template", "number line (0-100%)"],
+        "example_activity": "Find 30% of 80 using a bar model: 10% = 8, so 30% = 24. Complete a conversion table: 1/5 = 0.2 = 20%, 3/10 = 0.3 = 30%, 1/8 = 0.125 = 12.5%. On a number line, mark 0%, 25%, 50%, 75%, 100% and label each with fraction and decimal equivalents.",
+        "transition_cue": "Child converts between fractions, decimals and percentages on paper and finds percentages of quantities using the bar model method"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Converting between fractions, decimals and percentages mentally, and finding percentages of quantities using efficient mental strategies",
+        "resources": [],
+        "example_activity": "What is 35% as a decimal? As a fraction? Find 15% of 60 (10% = 6, 5% = 3, so 15% = 9). Convert 7/20 to a percentage. Which is more: 40% of 50 or 25% of 80?",
+        "transition_cue": "Child converts fluently between all three forms and calculates percentages of quantities mentally using benchmark strategies"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C011",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using a large demonstration protractor on the board and individual pupil protractors to measure physical angles on shapes, turns and in the environment",
+        "resources": ["demonstration protractor", "individual protractors", "angle cards (various sizes)", "shape cut-outs"],
+        "example_activity": "Place the protractor on an angle card: centre on vertex, baseline on one arm, read the scale where the other arm crosses. This angle is 65° — it is acute. Measure the angles of a triangle cut-out: 50°, 60°, 70°. Do they sum to 180°? Draw an angle of 135° using the protractor.",
+        "transition_cue": "Child measures any angle accurately using a protractor, reading the correct scale, and estimates before measuring to verify"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing and measuring angles on paper, recording measurements, and classifying angles as acute, right, obtuse, straight or reflex",
+        "resources": ["protractor", "ruler", "angle recording sheet", "shape diagrams"],
+        "example_activity": "Measure all angles in a quadrilateral diagram. Record: 95° (obtuse), 85° (acute), 110° (obtuse), 70° (acute). Sum: 360°. Draw angles of 45°, 90°, 120° and 200° (reflex: draw 360° − 200° = 160° and mark the reflex). Classify each angle.",
+        "transition_cue": "Child draws and measures any angle to within 2° accuracy, including reflex angles, and classifies all angle types"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Estimating angles before measuring, calculating reflex angles from acute/obtuse measurements, and applying angle measurement to problem-solving",
+        "resources": [],
+        "example_activity": "Estimate the angle, then measure to check. If one angle on a straight line is 73°, what is the other? A reflex angle is 295°. What is the acute angle at the same point? The angles of a triangle are 48° and 67°. What is the third angle?",
+        "transition_cue": "Child estimates angles within 10° of the actual measurement and calculates missing angles using angle facts without measuring"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C012",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Tearing the corners off paper triangles and arranging them to make a straight line (180°), physically measuring angles at a point to verify they sum to 360°, and folding straight-line angles",
+        "resources": ["paper triangles (various types)", "protractor", "angle fans", "straight edge"],
+        "example_activity": "Tear the 3 corners off a triangle. Arrange them point-to-point along a straight edge: they make a straight line = 180°. Draw 4 angles meeting at a point: measure each. Add: 90° + 120° + 85° + 65° = 360°. Fold a straight strip to create two angles: measure both. They sum to 180°.",
+        "transition_cue": "Child states the three angle facts (straight line = 180°, point = 360°, triangle = 180°) and applies them to find missing angles without measuring"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing diagrams to show angle facts, labelling known and unknown angles, and writing equations to find missing angles",
+        "resources": ["protractor", "ruler", "angle diagram worksheets", "squared paper"],
+        "example_activity": "Draw a straight line with an angle of 125° on one side. The other angle = 180° − 125° = 55°. Label both. Draw a triangle with angles 40° and 75°. The third angle = 180° − 40° − 75° = 65°. Draw four angles at a point: three are 90°, 80° and 110°. The fourth = 360° − 280° = 80°.",
+        "transition_cue": "Child calculates missing angles using the correct angle fact, writing the equation and solving without needing to measure"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Applying angle facts to solve multi-step problems, combining facts about straight lines, points and triangles",
+        "resources": [],
+        "example_activity": "Two angles on a straight line are equal. What is each? (90°.) A triangle has one angle of 90° and another of 35°. What is the third? An isosceles triangle has a base angle of 70°. What is the apex angle? Three of four angles at a point are 95°, 80° and 115°. Find the fourth.",
+        "transition_cue": "Child applies angle facts fluently in multi-step problems, selecting the correct fact and explaining their reasoning"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C013",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using place value counters (0.001, 0.01, 0.1, 1) on a decimal place value mat and connecting to metric measurement: 1 mm = 0.001 m, 1 g = 0.001 kg",
+        "resources": ["place value counters (0.001, 0.01, 0.1, 1)", "decimal place value mat (O, .t, .h, .th)", "rulers (mm markings)", "kitchen scales (g)"],
+        "example_activity": "Build 2.345 on the mat: 2 ones, 3 tenths, 4 hundredths, 5 thousandths. Measure a pencil: 142 mm = 14.2 cm = 0.142 m. Weigh a coin: 7 g = 0.007 kg. What is the value of the 5 in 2.345? (5 thousandths = 0.005.)",
+        "transition_cue": "Child reads the value of any digit in a three-decimal-place number and connects thousandths to mm and g measurement contexts"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Using place value charts with three decimal columns, placing decimals on zoomed-in number lines, and comparing numbers with different numbers of decimal places",
+        "resources": ["place value chart (O, .t, .h, .th)", "number line templates (zoomed: 0.3 to 0.4 in thousandths)", "squared paper"],
+        "example_activity": "Write 0.407 in a place value chart. Compare 0.407 and 0.47: chart shows 0.47 = 0.470, so 0.470 > 0.407. Place 0.345, 0.354 and 0.35 on a zoomed number line between 0.34 and 0.36. Order: 0.345, 0.35, 0.354.",
+        "transition_cue": "Child compares and orders decimals to three places without a chart, appending trailing zeros mentally to equalise decimal places"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Working with thousandths mentally: reading digit values, comparing and ordering, converting between fractions and decimals, and rounding to 1 or 2 decimal places",
+        "resources": [],
+        "example_activity": "What is the value of the 6 in 4.836? Order: 0.5, 0.489, 0.51, 0.499. Convert 7/1000 to a decimal. Round 3.847 to 1 decimal place. What is 0.025 as a fraction?",
+        "transition_cue": "Child works with three-decimal-place numbers fluently, comparing, ordering, converting and rounding without visual aids"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C014",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Building cuboids from unit cubes (1 cm³), counting the cubes to find volume, and exploring how changing dimensions changes volume",
+        "resources": ["1 cm³ linking cubes", "cuboid building frame", "recording sheet"],
+        "example_activity": "Build a 3×4×2 cuboid from cubes. Count: 24 cubes = 24 cm³. Build a 5×2×3 cuboid: 30 cm³. Now double the height from 2 to 4 in the first cuboid: 3×4×4 = 48 cm³. The volume doubled. Build the biggest cuboid you can from 36 cubes.",
+        "transition_cue": "Child predicts the volume before building and explains: 'Volume = length × width × height because it is layers of rectangular arrays'"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing cuboids on isometric paper with dimensions labelled, calculating volume using the formula, and distinguishing volume (cm³) from area (cm²)",
+        "resources": ["isometric paper", "cuboid diagram template", "ruler"],
+        "example_activity": "Draw a cuboid 6 cm × 4 cm × 3 cm on isometric paper. Label the dimensions. Calculate: V = 6 × 4 × 3 = 72 cm³. What is the area of the base? 6 × 4 = 24 cm². How many layers of 24 cm² fit in the height? 3 layers = 72 cm³. Draw and calculate for a 5×5×5 cube.",
+        "transition_cue": "Child calculates volume from labelled diagrams using the formula and clearly distinguishes volume units (cm³) from area units (cm²)"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Calculating volumes of cuboids from given dimensions without drawing, solving problems involving volume, and working backwards from volume to find a missing dimension",
+        "resources": [],
+        "example_activity": "A cuboid is 8 cm × 5 cm × 3 cm. What is its volume? A cube has volume 64 cm³. What is its edge length? A fish tank is 60 cm × 30 cm × 40 cm. How many litres of water does it hold? (1 litre = 1000 cm³.)",
+        "transition_cue": "Child calculates volumes mentally and works backwards from volume to find missing dimensions, connecting cm³ to litres"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C015",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using mirrors on coordinate grids to reflect shapes, and physically sliding shape cut-outs to demonstrate translations, verifying that the shape stays the same size and shape",
+        "resources": ["coordinate grid (all four quadrants)", "Mira mirror", "shape cut-outs", "tracing paper"],
+        "example_activity": "Place a triangle on the grid with vertices at (1,2), (3,2), (2,4). Put the mirror on the y-axis: the reflection appears at (-1,2), (-3,2), (-2,4). Trace the original and slide it 4 right, 3 down: new vertices (5,-1), (7,-1), (6,1). Check: the shape hasn't changed size.",
+        "transition_cue": "Child predicts the coordinates of reflected and translated vertices before checking with the mirror or tracing paper"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing reflections and translations on coordinate grids, recording the new coordinates, and verifying congruence by comparing side lengths",
+        "resources": ["coordinate grid paper (four quadrants)", "ruler", "coloured pencils"],
+        "example_activity": "Reflect the triangle (1,3), (4,3), (4,5) in the x-axis. Each point: (x, y) → (x, -y). New vertices: (1,-3), (4,-3), (4,-5). Draw both. Translate the shape (2,1), (5,1), (5,3), (2,3) by (-3, +2). New vertices: (-1,3), (2,3), (2,5), (-1,5). Check side lengths match.",
+        "transition_cue": "Child reflects in any horizontal or vertical line and translates by any vector, recording new coordinates without drawing first"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Predicting coordinates after reflections and translations mentally, combining transformations, and reasoning about which properties are preserved",
+        "resources": [],
+        "example_activity": "A shape has vertices (2,3), (5,3), (5,6). Reflect in the y-axis, then translate 3 right. Where are the final vertices? What single transformation has the same effect? Does a reflection change the orientation of a shape? Does a translation?",
+        "transition_cue": "Child calculates transformed coordinates mentally and explains that translations preserve orientation while reflections reverse it"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C016",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using Dienes blocks and place value counters on a five-column mat to add and subtract numbers with more than four digits, physically regrouping between columns",
+        "resources": ["Dienes blocks (ten-thousands, thousands, hundreds, tens, ones)", "place value counters", "place value mat (TTh, Th, H, T, O)"],
+        "example_activity": "Add 24,567 + 18,345. Build both numbers. Combine ones: 12 (exchange 10 for 1 ten). Combine tens: 12 (exchange 10 for 1 hundred). Continue through all columns. Total: 42,912. For subtraction: 30,004 − 17,658. Demonstrate cascading exchanges through the zeros.",
+        "transition_cue": "Child explains exchanges verbally and records columnar addition/subtraction on paper without blocks, including cascading through zeros"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Recording columnar addition and subtraction for large numbers on squared paper, using estimation to check, and developing mental strategies alongside written methods",
+        "resources": ["squared paper", "column method template", "number line for estimation"],
+        "example_activity": "Calculate 45,678 + 27,493 using column addition. Estimate first: 46,000 + 27,000 ≈ 73,000. Calculate: 73,171. Close to estimate? ✓. Mental strategy: 4,998 + 3,457. Adjust: 5,000 + 3,457 − 2 = 8,455. Which method was more efficient?",
+        "transition_cue": "Child selects the most efficient method (mental, jottings or written) for each calculation and explains their choice"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Performing addition and subtraction of large numbers fluently, selecting mental or written methods strategically, and solving multi-step word problems",
+        "resources": ["squared paper"],
+        "example_activity": "Calculate 67,543 − 29,876. Use a mental strategy: 10,000 − 3,748 (adjust from 10,000). A school raised £24,750 in the autumn and £18,490 in the spring. How much altogether? How much more in autumn?",
+        "transition_cue": "Child solves multi-step problems with large numbers fluently, choosing the optimal strategy and checking with estimation"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y5-C017",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Collecting real data and plotting it on large wall graphs, reading physical timetables (bus/train printed timetables), and calculating journey times using a clock",
+        "resources": ["large wall graph paper", "sticky dots for data points", "printed bus/train timetables", "demonstration clock"],
+        "example_activity": "Plot the class temperature readings on a wall line graph. Read a bus timetable: the 9:15 bus from town centre arrives at the hospital at 9:42. How long is the journey? Use the clock to count: 27 minutes. What time does the next bus arrive?",
+        "transition_cue": "Child reads data from graphs and timetables, calculating journey times and comparing values without the demonstration clock"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Drawing line graphs with correct scales and labels, reading and interpolating values, and extracting information from printed tables and timetables on paper",
+        "resources": ["graph paper", "ruler", "timetable worksheets", "data tables"],
+        "example_activity": "Draw a line graph showing plant growth over 6 weeks. Use a scale of 2 cm per week on x-axis and 1 cm per 5 mm growth on y-axis. Estimate the height at week 3.5. From a train timetable, find the fastest train from London to Bristol and calculate the journey time.",
+        "transition_cue": "Child draws line graphs with appropriate scales, interpolates accurately, and solves comparison/difference problems from tables without prompting"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Interpreting graphs and timetables from descriptions, answering comparison/sum/difference questions, and choosing appropriate graph types for different data",
+        "resources": [],
+        "example_activity": "A line graph shows temperature rising from 8°C at 6am to 22°C at 2pm, then falling to 14°C at 8pm. What was the temperature at 10am? How much did it fall between 2pm and 8pm? A timetable shows departures every 20 minutes from 7:00. What time is the 5th bus?",
+        "transition_cue": "Child interprets graphs and timetables from verbal descriptions, solves multi-step data questions, and justifies graph type choices"
+      }
+    ]
+  }
+]

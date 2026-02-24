@@ -1,0 +1,147 @@
+[
+  {
+    "concept_id": "MA-Y3-C012",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using Dienes blocks on a place value mat to add ones, tens or hundreds to a three-digit number, physically combining groups",
+        "resources": ["Dienes blocks (ones, tens, hundreds)", "place value mat (H, T, O)"],
+        "example_activity": "Build 247 with Dienes blocks. Add 30 by placing 3 tens rods in the tens column. Read the new total: 277. Now add 6 ones to 247: combine the ones, exchange 10 ones for a ten if needed.",
+        "transition_cue": "Child performs mental addition of ones/tens/hundreds to three-digit numbers without blocks, correctly handling exchanges verbally"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Using number lines to show jumps of ones, tens or hundreds from a three-digit starting number, and using place value charts to track changes",
+        "resources": ["number line", "place value chart", "jottings paper"],
+        "example_activity": "Draw a number line. Start at 356. Show a jump of 40: land on 396. Show a jump of 7 from 356: land on 363. Record your thinking in a place value chart.",
+        "transition_cue": "Child calculates mentally, using jottings only for checking, and explains which column changes and whether an exchange occurs"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Performing mental addition of ones, tens or hundreds to any three-digit number using place value reasoning, selecting the most efficient strategy",
+        "resources": [],
+        "example_activity": "356 + 40? 247 + 6? 580 + 300? Choose: is it quicker to partition or count on? Explain your strategy.",
+        "transition_cue": "Child answers three-digit mental addition questions within 5 seconds, correctly handling all exchange cases"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C013",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using Dienes blocks on a place value mat to subtract ones, tens or hundreds from a three-digit number, physically removing and exchanging",
+        "resources": ["Dienes blocks (ones, tens, hundreds)", "place value mat (H, T, O)"],
+        "example_activity": "Build 352 with Dienes blocks. Subtract 7: not enough ones, so exchange a tens rod for 10 ones (now 4 tens, 12 ones). Remove 7 ones: 345.",
+        "transition_cue": "Child performs mental subtraction including exchange cases without blocks, articulating the exchange process verbally"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Using number lines for counting back and complementary addition, and place value charts to track exchanges during subtraction",
+        "resources": ["number line", "place value chart", "jottings paper"],
+        "example_activity": "Subtract 352 − 7 on a number line: jump back 2 to 350, then back 5 to 345. Or count up from 345 to 352. Which method do you prefer?",
+        "transition_cue": "Child chooses between counting back and complementary addition depending on the numbers, explaining their choice"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Performing mental subtraction of ones, tens or hundreds from any three-digit number, checking answers using the inverse operation",
+        "resources": [],
+        "example_activity": "352 − 7? 480 − 30? 763 − 200? Check each answer by adding back. Which strategy did you use?",
+        "transition_cue": "Child answers three-digit mental subtraction questions within 5 seconds and routinely checks using addition"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C014",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Adding three-digit numbers using Dienes blocks, physically exchanging 10 ones for 1 ten and 10 tens for 1 hundred",
+        "resources": ["Dienes blocks (ones, tens, hundreds)", "place value mat (H, T, O)"],
+        "example_activity": "Build 347 and 286 with Dienes blocks. Combine the ones: 7 + 6 = 13. Exchange 10 ones for 1 ten. Combine tens: 4 + 8 + 1 = 13 tens. Exchange 10 tens for 1 hundred. Total: 633.",
+        "transition_cue": "Child completes 3 additions with exchange without prompting, articulating the exchange verbally each time"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Recording columnar addition with drawn place value counters or expanded column method, showing the exchange process",
+        "resources": ["squared paper", "place value counters (drawn)", "column addition template"],
+        "example_activity": "Draw place value counters for 347 + 286. Circle groups of 10 ones to show the carry. Record the exchange as a small '1' above the tens column. Write the expanded method alongside.",
+        "transition_cue": "Child draws the exchange and explains it without physical blocks alongside, connecting drawn method to compact notation"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Performing compact columnar addition with carried digits recorded as small numbers above the relevant column",
+        "resources": ["squared paper"],
+        "example_activity": "Calculate 347 + 286 using the column method. Check by estimating: 350 + 290 ≈ 640. Calculate 508 + 394 with a zero placeholder.",
+        "transition_cue": "Child sets up and completes column addition independently, self-checking with estimation and inverse operations"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C015",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Subtracting three-digit numbers using Dienes blocks, physically exchanging 1 ten for 10 ones and 1 hundred for 10 tens when needed",
+        "resources": ["Dienes blocks (ones, tens, hundreds)", "place value mat (H, T, O)"],
+        "example_activity": "Build 532. Subtract 278: start with ones. 2 − 8: not enough ones. Exchange 1 ten for 10 ones (now 2 tens, 12 ones). 12 − 8 = 4 ones. Continue with tens.",
+        "transition_cue": "Child completes 3 subtractions with exchange without prompting, verbalising: 'I need to exchange because there aren't enough ones'"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Recording columnar subtraction with drawn place value counters showing crossed-out and exchanged values",
+        "resources": ["squared paper", "place value counters (drawn)", "column subtraction template"],
+        "example_activity": "Draw place value counters for 532 − 278. Cross out the exchanged ten, draw 10 extra ones. Record the exchange in the compact column method alongside.",
+        "transition_cue": "Child records exchanges correctly in the compact notation without needing to draw counters first"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Performing compact columnar subtraction with exchanges recorded as crossed-out digits and adjusted values",
+        "resources": ["squared paper"],
+        "example_activity": "Calculate 532 − 278 using the column method. Now try 300 − 147: this needs cascading exchanges. Check using addition: 254 + 278 = 532.",
+        "transition_cue": "Child handles cascading exchanges (e.g. 300 − 147) independently and verifies every answer using the inverse"
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-Y3-C016",
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage": "concrete",
+        "description": "Using Dienes blocks to round numbers to the nearest hundred before adding, then checking the actual answer against the estimate",
+        "resources": ["Dienes blocks", "number line (0-1000)", "comparison cards"],
+        "example_activity": "Build 347 and 186. Round each to nearest hundred using the number line: 300 and 200. Estimate: 500. Now calculate exactly: 533. Is 533 close to 500? Check: 533 − 347 = 186 ✓",
+        "transition_cue": "Child routinely estimates by rounding before calculating without being prompted, and uses addition to check subtraction"
+      },
+      {
+        "stage_number": 2,
+        "stage": "pictorial",
+        "description": "Recording estimates alongside calculations on paper, drawing number line jumps to show inverse checking",
+        "resources": ["number line", "estimate/calculate/check recording frame"],
+        "example_activity": "For 347 + 186: write Estimate: 300 + 200 = 500. Calculate: 533. Check: 533 − 186 = 347 ✓. Draw the inverse on a number line.",
+        "transition_cue": "Child independently writes estimate, calculates, and checks for every addition/subtraction without the recording frame"
+      },
+      {
+        "stage_number": 3,
+        "stage": "abstract",
+        "description": "Mentally estimating before calculating, identifying unreasonable answers, and using inverse operations to verify without visual aids",
+        "resources": [],
+        "example_activity": "Estimate 467 + 295. Calculate. Is the answer reasonable? A friend says 467 + 295 = 662. Check using subtraction: 662 − 295 = 367 ≠ 467. The answer must be wrong.",
+        "transition_cue": "Child spontaneously identifies implausible answers and explains why, using estimation and inverse checking as habits"
+      }
+    ]
+  }
+]

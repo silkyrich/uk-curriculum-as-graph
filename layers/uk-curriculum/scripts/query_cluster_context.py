@@ -96,6 +96,21 @@ def query_context(session, cluster_id, year_override=None):
         dl_by_concept.setdefault(row["concept_id"], []).append(dict(row))
     ctx["difficulty_levels"] = dl_by_concept
 
+    # ── 2c. Representation stages per concept ──────────────────────────────
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
+              -[:HAS_REPRESENTATION_STAGE]->(rs:RepresentationStage)
+        RETURN c.concept_id AS concept_id, rs.stage_number AS stage_number,
+               rs.stage AS stage, rs.description AS description,
+               rs.resources AS resources, rs.example_activity AS example_activity,
+               rs.transition_cue AS transition_cue
+        ORDER BY c.concept_id, rs.stage_number
+    """, cid=cluster_id)
+    rs_by_concept = {}
+    for row in r:
+        rs_by_concept.setdefault(row["concept_id"], []).append(dict(row))
+    ctx["representation_stages"] = rs_by_concept
+
     # ── 3. Domain + subject + year group ─────────────────────────────────────
     r = session.run("""
         MATCH (d:Domain)-[:HAS_CLUSTER]->(cc:ConceptCluster {cluster_id: $cid})
@@ -284,6 +299,7 @@ def render_markdown(ctx):
     fp = ctx.get("feedback_profile", {})
     concepts = ctx.get("concepts", [])
     difficulty_levels = ctx.get("difficulty_levels", {})
+    representation_stages = ctx.get("representation_stages", {})
     prereqs = ctx.get("prerequisite_concepts", [])
     interactions = ctx.get("interaction_types", [])
     domain_clusters = ctx.get("domain_clusters", [])
@@ -414,6 +430,17 @@ def render_markdown(ctx):
                 label_display = dl["label"].replace("_", " ").title()
                 lines.append(f"{dl['level']}. **{label_display}**: {dl['description']}"
                              f" — *\"{dl['example_task']}\"*")
+            lines.append("")
+        # Representation stages (CPA — if present for this concept)
+        rs_list = representation_stages.get(c_node["concept_id"], [])
+        if rs_list:
+            lines.append("**CPA stages (Concrete → Pictorial → Abstract):**")
+            for rs in rs_list:
+                lines.append(f"{rs['stage_number']}. **{rs['stage'].title()}**: {rs['description']}")
+                if rs.get("resources"):
+                    lines.append(f"   Resources: {', '.join(rs['resources'])}")
+                if rs.get("transition_cue"):
+                    lines.append(f"   *Transition cue:* {rs['transition_cue']}")
             lines.append("")
 
     # ── Learner profile ──

@@ -1135,6 +1135,97 @@ class SchemaValidator:
         self.add(ValidationResult("DifficultyLevel no duplicate levels", status, total, issues))
 
     # =========================================================================
+    # Q. RepresentationStage layer (v4.1)
+    # =========================================================================
+
+    def check_representation_stage_completeness(self):
+        """RepresentationStage nodes have required properties (skipped if none exist)."""
+        total = self.scalar("MATCH (rs:RepresentationStage) RETURN count(rs)") or 0
+        if total == 0:
+            self.add(ValidationResult("RepresentationStage completeness", "PASS", 0,
+                                      ["No RepresentationStage nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (rs:RepresentationStage)
+            WHERE rs.stage_id IS NULL OR rs.stage_id = ''
+               OR rs.stage_number IS NULL
+               OR rs.stage IS NULL OR rs.stage = ''
+               OR rs.description IS NULL OR rs.description = ''
+               OR rs.example_activity IS NULL OR rs.example_activity = ''
+            RETURN rs.stage_id AS id
+        """)
+        issues = [f"RepresentationStage '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("RepresentationStage completeness", status, total, issues))
+
+    def check_representation_stage_number_range(self):
+        """RepresentationStage.stage_number must be 1-3."""
+        total = self.scalar("MATCH (rs:RepresentationStage) RETURN count(rs)") or 0
+        if total == 0:
+            self.add(ValidationResult("RepresentationStage stage_number range", "PASS", 0,
+                                      ["No RepresentationStage nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (rs:RepresentationStage)
+            WHERE NOT (rs.stage_number >= 1 AND rs.stage_number <= 3)
+            RETURN rs.stage_id AS id, rs.stage_number AS val
+        """)
+        issues = [f"RepresentationStage {r['id']} has stage_number={r['val']} (must be 1-3)" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("RepresentationStage stage_number range", status, total, issues))
+
+    def check_representation_stage_values(self):
+        """RepresentationStage.stage must be one of concrete, pictorial, abstract."""
+        valid_stages = ['concrete', 'pictorial', 'abstract']
+        total = self.scalar("MATCH (rs:RepresentationStage) RETURN count(rs)") or 0
+        if total == 0:
+            self.add(ValidationResult("RepresentationStage stage values", "PASS", 0,
+                                      ["No RepresentationStage nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (rs:RepresentationStage)
+            WHERE NOT rs.stage IN $valid_stages
+            RETURN rs.stage_id AS id, rs.stage AS val
+        """, valid_stages=valid_stages)
+        issues = [f"RepresentationStage {r['id']} has invalid stage '{r['val']}'" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("RepresentationStage stage values", status, total, issues))
+
+    def check_representation_stage_relationship_integrity(self):
+        """Every RepresentationStage is linked from exactly one Concept via HAS_REPRESENTATION_STAGE."""
+        total = self.scalar("MATCH (rs:RepresentationStage) RETURN count(rs)") or 0
+        if total == 0:
+            self.add(ValidationResult("HAS_REPRESENTATION_STAGE integrity", "PASS", 0,
+                                      ["No RepresentationStage nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (rs:RepresentationStage)
+            WHERE NOT (:Concept)-[:HAS_REPRESENTATION_STAGE]->(rs)
+            RETURN rs.stage_id AS id
+        """)
+        issues = [f"RepresentationStage '{r['id']}' has no incoming HAS_REPRESENTATION_STAGE" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("HAS_REPRESENTATION_STAGE integrity", status, total, issues))
+
+    def check_representation_stage_no_duplicates(self):
+        """No concept has duplicate stage_numbers."""
+        total = self.scalar("MATCH (rs:RepresentationStage) RETURN count(rs)") or 0
+        if total == 0:
+            self.add(ValidationResult("RepresentationStage no duplicate stages", "PASS", 0,
+                                      ["No RepresentationStage nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (c:Concept)-[:HAS_REPRESENTATION_STAGE]->(rs:RepresentationStage)
+            WITH c, rs.stage_number AS sn, count(rs) AS cnt
+            WHERE cnt > 1
+            RETURN c.concept_id AS id, sn AS stage_number, cnt
+            LIMIT 20
+        """)
+        issues = [f"Concept {r['id']} has {r['cnt']} RepresentationStages with stage_number={r['stage_number']}" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("RepresentationStage no duplicate stages", status, total, issues))
+
+    # =========================================================================
     # M. Content Vehicles layer (v3.8)
     # =========================================================================
 
@@ -1579,6 +1670,12 @@ class SchemaValidator:
             self.check_difficulty_level_label_values,
             self.check_difficulty_level_relationship_integrity,
             self.check_difficulty_level_no_duplicates,
+            # Q. RepresentationStage (v4.1)
+            self.check_representation_stage_completeness,
+            self.check_representation_stage_number_range,
+            self.check_representation_stage_values,
+            self.check_representation_stage_relationship_integrity,
+            self.check_representation_stage_no_duplicates,
             # M. Content Vehicles (v3.8)
             self.check_content_vehicle_completeness,
             self.check_content_vehicle_delivers_coverage,

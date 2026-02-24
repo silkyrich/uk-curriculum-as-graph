@@ -246,6 +246,14 @@ NODE_STYLES = {
         'size': 1,
     },
 
+    # REPRESENTATION STAGES (Cyan — CPA progression)
+    'RepresentationStage': {
+        'color': '#06B6D4',  # Cyan-500
+        'icon': 'view_carousel',
+        'category': 'UK Curriculum',
+        'size': 1,
+    },
+
     # THINKING LENSES LAYER (Violet — cross-subject cognitive frames)
     'ThinkingLens': {
         'color': '#7C3AED',  # Violet-600

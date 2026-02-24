@@ -51,6 +51,8 @@ def create_schema(driver):
         "CREATE CONSTRAINT content_vehicle_id_unique IF NOT EXISTS FOR (cv:ContentVehicle) REQUIRE cv.vehicle_id IS UNIQUE",
         # DifficultyLevel layer (v3.9)
         "CREATE CONSTRAINT difficulty_level_id_unique IF NOT EXISTS FOR (dl:DifficultyLevel) REQUIRE dl.level_id IS UNIQUE",
+        # RepresentationStage layer (v4.1)
+        "CREATE CONSTRAINT representation_stage_id_unique IF NOT EXISTS FOR (rs:RepresentationStage) REQUIRE rs.stage_id IS UNIQUE",
         # Topic Suggestions layer (v4.0) — 9 typed labels + VehicleTemplate
         "CREATE CONSTRAINT vehicle_template_id_unique IF NOT EXISTS FOR (vt:VehicleTemplate) REQUIRE vt.template_id IS UNIQUE",
         "CREATE CONSTRAINT history_ts_id_unique IF NOT EXISTS FOR (ts:HistoryTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
@@ -104,6 +106,9 @@ def create_schema(driver):
         # DifficultyLevel indexes (v3.9)
         "CREATE INDEX difficulty_level_number_idx IF NOT EXISTS FOR (dl:DifficultyLevel) ON (dl.level_number)",
         "CREATE INDEX difficulty_level_label_idx IF NOT EXISTS FOR (dl:DifficultyLevel) ON (dl.label)",
+        # RepresentationStage indexes (v4.1)
+        "CREATE INDEX representation_stage_number_idx IF NOT EXISTS FOR (rs:RepresentationStage) ON (rs.stage_number)",
+        "CREATE INDEX representation_stage_stage_idx IF NOT EXISTS FOR (rs:RepresentationStage) ON (rs.stage)",
         # Topic Suggestions indexes (v4.0)
         "CREATE INDEX vehicle_template_type_idx IF NOT EXISTS FOR (vt:VehicleTemplate) ON (vt.template_type)",
         "CREATE INDEX history_ts_subject_idx IF NOT EXISTS FOR (ts:HistoryTopicSuggestion) ON (ts.subject)",

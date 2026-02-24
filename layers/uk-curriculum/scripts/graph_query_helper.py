@@ -73,6 +73,20 @@ def query_domain_context(session, domain_id):
     for row in dl_rows:
         dl_by_concept.setdefault(row["concept_id"], []).append(row)
 
+    # ── Representation stages per concept (CPA) ─────────────────────
+    rs_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+              -[:HAS_REPRESENTATION_STAGE]->(rs:RepresentationStage)
+        RETURN c.concept_id AS concept_id, rs.stage_number AS stage_number,
+               rs.stage AS stage, rs.description AS description,
+               rs.resources AS resources, rs.example_activity AS example_activity,
+               rs.transition_cue AS transition_cue
+        ORDER BY c.concept_id, rs.stage_number
+    """, did=domain_id))
+    rs_by_concept = {}
+    for row in rs_rows:
+        rs_by_concept.setdefault(row["concept_id"], []).append(row)
+
     sections.append(f"\n### Concepts ({len(concepts)})")
     for c in concepts:
         ks_flag = " **[KEYSTONE]**" if c['keystone'] else ""
@@ -93,6 +107,15 @@ def query_domain_context(session, domain_id):
                 label_display = dl["label"].replace("_", " ").title()
                 sections.append(f"  {dl['level']}. **{label_display}**: {dl['description']}"
                                 f" — *\"{dl['example_task']}\"*")
+        rs_list = rs_by_concept.get(c['id'], [])
+        if rs_list:
+            sections.append(f"\n**CPA stages (Concrete → Pictorial → Abstract):**")
+            for rs in rs_list:
+                sections.append(f"  {rs['stage_number']}. **{rs['stage'].title()}**: {rs['description']}")
+                if rs.get("resources"):
+                    sections.append(f"     Resources: {', '.join(rs['resources'])}")
+                if rs.get("transition_cue"):
+                    sections.append(f"     *Transition cue:* {rs['transition_cue']}")
 
     # ── Prerequisites (within domain) ────────────────────────────────
     prereqs = list(session.run("""

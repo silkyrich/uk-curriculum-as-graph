@@ -106,7 +106,21 @@ Each **layer** is self-contained with its own:
    - ID format: `{concept_id}-DL{zero-padded level_number}` (e.g. `MA-Y3-C014-DL01`)
    - `display_color = '#F59E0B'` (Amber-500), `display_icon = 'signal_cellular_alt'`
 
-10. **`layers/oak-content/`** - Oak National Academy (future)
+10. **RepresentationStage** (derived layer, lives within `layers/uk-curriculum/`)
+   - ~462 RepresentationStage nodes across 154 primary maths concepts (Y1-Y6)
+   - `(:Concept)-[:HAS_REPRESENTATION_STAGE]->(:RepresentationStage)` — 3 stages per concept
+   - CPA framework: `concrete` (1), `pictorial` (2), `abstract` (3)
+   - Each node has `description`, `resources` (string array), `example_activity`, `transition_cue`
+   - `transition_cue` describes observable child behaviour indicating readiness to progress
+   - Complements DifficultyLevel (RS = representation journey, DL = attainment tiers)
+   - Data: 12 JSON files in `layers/uk-curriculum/data/representation_stages/`
+   - File naming: `mathematics_y{n}.json` or `mathematics_y3_{domain}.json` (Y3 split by domain)
+   - Import: `layers/uk-curriculum/scripts/import_representation_stages.py` (idempotent, globs `*.json`)
+   - ID format: `{concept_id}-RS{zero-padded stage_number}` (e.g. `MA-Y3-C014-RS01`)
+   - `display_color = '#06B6D4'` (Cyan-500), `display_icon = 'view_carousel'`
+   - No learner data — pure curriculum design metadata
+
+11. **`layers/oak-content/`** - Oak National Academy (future)
    - Content provider mapping
    - Script: `import_oak_content.py`
 
@@ -153,6 +167,9 @@ python3 layers/uk-curriculum/scripts/generate_concept_clusters.py
 
 # DifficultyLevel nodes (run after curriculum + EYFS import)
 python3 layers/uk-curriculum/scripts/import_difficulty_levels.py
+
+# RepresentationStage nodes (CPA framework, run after curriculum import)
+python3 layers/uk-curriculum/scripts/import_representation_stages.py
 
 # Cross-domain CO_TEACHES (run after concept grouping)
 python3 core/migrations/create_cross_domain_co_teaches.py
@@ -237,6 +254,7 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:Domain`, `:Objective`, `:Concept`, `:ConceptCluster`
 - `:ThinkingLens` — 10 cross-subject cognitive lenses (Patterns, Cause and Effect, …)
 - `:DifficultyLevel` — grounded difficulty tiers per Concept (primary: entry → greater_depth; secondary: emerging → mastery)
+- `:RepresentationStage` — CPA (Concrete-Pictorial-Abstract) stages per Concept (primary maths Y1-Y6)
 - `:Topic`, `:SourceDocument`
 
 **Epistemic Skills:**
@@ -295,6 +313,9 @@ All nodes have `display_category` property:
 
 // DifficultyLevel (v3.9) — grounded difficulty tiers replacing complexity_level
 (:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)  // 3-4 levels per concept (1,296/1,351 concepts — all EYFS+KS1-KS4)
+
+// RepresentationStage (v4.1) — CPA (Concrete-Pictorial-Abstract) progression for primary maths
+(:Concept)-[:HAS_REPRESENTATION_STAGE]->(:RepresentationStage)  // 3 stages per concept (154 primary maths concepts Y1-Y6)
 
 // Content Vehicles (v3.8)
 (:Domain)-[:HAS_VEHICLE]->(:ContentVehicle)-[:DELIVERS]->(:Concept)
@@ -403,6 +424,7 @@ Every feature that introduces or modifies data processing must:
 - Concept grouping / lesson clusters? → `layers/uk-curriculum/scripts/generate_concept_clusters.py`
 - Thinking lenses (cognitive framing for clusters)? → `layers/uk-curriculum/data/thinking_lenses/` + `import_thinking_lenses.py`
 - Difficulty levels (grounded difficulty tiers)? → `layers/uk-curriculum/data/difficulty_levels/` + `import_difficulty_levels.py`
+- Representation stages (CPA framework for primary maths)? → `layers/uk-curriculum/data/representation_stages/` + `import_representation_stages.py`
 - User stories? → `docs/user-stories/`
 - Schema definition? → `core/scripts/create_schema.py`
 - Import all data? → `core/scripts/import_all.py` (orchestrator)
@@ -562,7 +584,7 @@ class LayerImporter:
 
 ✅ **In Aura cloud database — all layers active (2026-02-23):**
 - Instance: education-graphs (6981841e)
-- **~9,883 total nodes**, **~20,749 total relationships** (pending reimport with `--clear`)
+- **~10,345 total nodes**, **~21,211 total relationships** (pending reimport with `--clear`)
 - 4,952 DifficultyLevel nodes; 4,952 HAS_DIFFICULTY_LEVEL relationships (1,296/1,351 concepts covered — all EYFS+KS1-KS4)
 - 61 ContentVehicle nodes; 217 DELIVERS + 92 HAS_VEHICLE + 24 IMPLEMENTS relationships
 - 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average); 40 PROMPT_FOR relationships (age-banded prompts)
@@ -655,6 +677,20 @@ class LayerImporter:
 - DifficultyLevels identified as highest-leverage addition (+1.5 score uplift, 9/9 consensus)
 - Reports: `generated/teachers-v7/`
 
+✅ **RepresentationStage layer (v4.1, 2026-02-24):**
+- CPA (Concrete-Pictorial-Abstract) framework as first-class graph nodes for primary maths
+- ~462 RepresentationStage nodes across 154 concepts (Y1-Y6), 3 stages per concept
+- Each node: `description`, `resources` (array), `example_activity`, `transition_cue`
+- `transition_cue` describes observable child behaviour (not test scores or "when ready")
+- Complements DifficultyLevel: RS = representation journey (tools + transition), DL = attainment tiers
+- Resources reference UK-standard manipulatives (Dienes blocks, Numicon, Cuisenaire rods, etc.)
+- Data: 12 JSON files in `layers/uk-curriculum/data/representation_stages/`
+- Import: `layers/uk-curriculum/scripts/import_representation_stages.py` (idempotent)
+- Schema: RepresentationStage uniqueness constraint + indexes on `stage_number`, `stage` (v4.1)
+- Validation: 5 checks (completeness, stage_number range, stage values, HAS_REPRESENTATION_STAGE integrity, no duplicates)
+- Query helpers: `query_cluster_context.py` and `graph_query_helper.py` surface CPA stages per concept
+- No learner data — pure curriculum design metadata
+
 🚧 **In progress:**
 - DifficultyLevel: PE KS3-KS4 (55 concepts remaining — sport-specific assessment framework needed)
 - Oak National Academy content (skeleton only)
@@ -692,6 +728,7 @@ class LayerImporter:
 ❌ Manually create APPLIES_LENS relationships - Edit `thinking_lenses` arrays in the cluster definition JSONs, then re-run `generate_concept_clusters.py`
 ❌ Import ThinkingLens nodes after cluster generation - ThinkingLens nodes must exist *before* `generate_concept_clusters.py` runs (MATCH fails silently if the node isn't there)
 ❌ Edit DifficultyLevel data directly in the graph - Edit the JSON files in `data/difficulty_levels/`, then rerun `import_difficulty_levels.py --clear`
+❌ Edit RepresentationStage data directly in the graph - Edit the JSON files in `data/representation_stages/`, then rerun `import_representation_stages.py --clear`
 ❌ Create monolithic DL files for large subjects - Split by curriculum domain (e.g. `english_y4_composition.json`, not `english_y4.json`). Max ~20 concepts per file for maintainability
 
 ### Privacy & Compliance (Non-Negotiable)
