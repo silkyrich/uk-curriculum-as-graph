@@ -1,0 +1,143 @@
+{
+  "version": "1.0",
+  "subject": "History",
+  "authored_by": "history-specialist",
+  "authored_date": "2026-02-24",
+  "note": "The six second-order (disciplinary) historical thinking concepts. These are key-stage-independent nodes with age-banded guidance. Every HistoryStudy links to these via FOREGROUNDS {rank, ks_guidance}.",
+  "disciplinary_concepts": [
+    {
+      "concept_id": "DC-001",
+      "name": "Chronology",
+      "slug": "chronology",
+      "description": "Chronology is the ordering of events and periods in time. It is the foundational organising principle of History: without a secure sense of temporal sequence, no other historical thinking is possible. Chronology includes understanding the scale of time (millennia vs decades), the relationship between periods, and the use of dating conventions (BC/AD, BCE/CE, centuries).",
+      "key_question": "When did this happen, and how does it fit into the wider timeline?",
+      "ks1_guidance": "Focus on simple before/after sequencing, personal timelines, and the vocabulary of time (old, new, long ago, recently). Use physical timeline displays. Connect historical figures and events to a simple timeline showing 'closer to us' and 'further away'.",
+      "ks2_guidance": "Develop a secure chronological framework spanning Stone Age to 1066 (and beyond via the post-1066 theme). Place each topic studied on a class timeline. Use centuries and specific dates. Understand the relationship between periods (Romans BEFORE Anglo-Saxons BEFORE Vikings). Compare the timelines of British and world civilisations.",
+      "ks3_guidance": "Deploy chronological knowledge to identify and explain patterns of change across extended periods. Use periodisation critically: why do historians divide the past into periods, and what are the consequences of those divisions? Understand how the same event can be seen as an ending or a beginning depending on the chronological frame used.",
+      "agent_prompt": "When generating questions or activities involving chronology, always ask pupils to PLACE events in a sequence relative to other events they know. Do not treat dates as isolated facts; connect them to the wider chronological framework. At KS1, use 'before/after' and physical ordering activities. At KS2, use timelines with scale and century references. At KS3, ask pupils to consider what came before and after, and how periodisation shapes our understanding.",
+      "question_stems": [
+        "When did ___ happen?",
+        "What was happening in Britain/the world at the same time as ___?",
+        "How many years ago was ___?",
+        "What came before ___ and what came after?",
+        "Why do historians call this period ___?",
+        "How does this event fit into the wider timeline we have studied?"
+      ],
+      "display_category": "History Study",
+      "display_color": "#7C3AED",
+      "display_icon": "psychology"
+    },
+    {
+      "concept_id": "DC-002",
+      "name": "Cause and Consequence",
+      "slug": "cause_and_consequence",
+      "description": "Cause and consequence is the analysis of why historical events happened and what resulted from them. Causes can be categorised (political, economic, social, religious, individual) and ranked by importance. Consequences can be intended or unintended, short-term or long-term. Mature causal reasoning involves understanding that most historical events have multiple, interacting causes rather than a single trigger.",
+      "key_question": "Why did this happen, and what were the effects?",
+      "ks1_guidance": "Focus on simple causal chains: 'The Great Fire happened because...' and 'Because of the fire, people then...' Use 'because' and 'so' as sentence starters. Connect cause and consequence to pupils' own experience: 'Why did that happen? What happened next?'",
+      "ks2_guidance": "Introduce multiple causation: 'There were several reasons why the Romans invaded Britain.' Categorise causes (e.g. political, economic, military). Rank causes by importance. Distinguish between long-term and short-term causes. Explore unintended consequences. Use structured writing frames: 'One cause was... Another cause was... The most important cause was... because...'",
+      "ks3_guidance": "Construct multi-causal explanations that weigh the relative importance of different factors. Analyse how causes interact and reinforce each other. Distinguish between necessary conditions and triggers. Evaluate whether consequences were intended or unintended. Construct sustained causal arguments in extended writing, addressing counter-arguments about the relative weight of different causes.",
+      "agent_prompt": "When generating questions for cause and consequence, ALWAYS ask WHY something happened and WHAT resulted, not just WHAT happened. Push beyond single causes: ask 'What else contributed?' and 'Which cause was most important and why?' At KS1, use simple because/so chains. At KS2, use cause categorisation and ranking. At KS3, demand multi-causal argument with weighting and counter-argument.",
+      "question_stems": [
+        "Why did ___ happen?",
+        "What were the consequences of ___?",
+        "Was ___ the most important cause of ___? Why or why not?",
+        "What were the long-term and short-term causes of ___?",
+        "Were the consequences of ___ intended or unintended?",
+        "How did ___ lead to ___?",
+        "If ___ had not happened, would ___ still have occurred?"
+      ],
+      "display_category": "History Study",
+      "display_color": "#7C3AED",
+      "display_icon": "psychology"
+    },
+    {
+      "concept_id": "DC-003",
+      "name": "Change and Continuity",
+      "slug": "change_and_continuity",
+      "description": "Change and continuity involves identifying what transformed over time and what remained the same, and analysing the pace, extent and nature of change. Change can be rapid or gradual, revolutionary or evolutionary, affecting all or only some groups. Continuity is the persistence of structures, beliefs, practices or conditions despite other changes. Understanding both together prevents simplistic narratives of either constant progress or unchanging tradition.",
+      "key_question": "What changed, what stayed the same, and why?",
+      "ks1_guidance": "Compare 'then' and 'now' using familiar objects, homes, and daily life. Ask 'What is the same? What is different?' Use photographs of the local area from different periods. Compare old and new versions of the same thing (telephones, transport). Introduce the idea that some things change while others stay the same.",
+      "ks2_guidance": "Identify specific changes within each period studied and explain what drove them. Look for continuities that persist across periods (e.g. farming practices, religious buildings). Consider who experienced change and who did not. Distinguish between change that was chosen and change that was forced. Use structured comparison: 'At the start of this period... By the end of this period...'",
+      "ks3_guidance": "Analyse the pace and extent of change across long periods. Evaluate turning points: was the Black Death more transformative than the Norman Conquest? Consider change at different scales: political, social, economic, cultural. Examine who benefited from and who was disadvantaged by change. Construct arguments about whether a period was characterised more by change or continuity.",
+      "agent_prompt": "When generating questions about change and continuity, always ask about BOTH what changed AND what stayed the same. Avoid framing history as a simple story of progress. Ask pupils to identify WHO experienced change and WHO did not. At KS1, use before/after comparison with visual evidence. At KS2, identify specific changes and their drivers. At KS3, evaluate turning points, pace of change, and differential impact.",
+      "question_stems": [
+        "What changed between ___ and ___?",
+        "What stayed the same during this period?",
+        "Was this a turning point, or did things continue as before?",
+        "Who experienced the most change during this period?",
+        "Was the pace of change fast or slow, and why?",
+        "Which change during this period had the most lasting impact?"
+      ],
+      "display_category": "History Study",
+      "display_color": "#7C3AED",
+      "display_icon": "psychology"
+    },
+    {
+      "concept_id": "DC-004",
+      "name": "Similarity and Difference",
+      "slug": "similarity_and_difference",
+      "description": "Similarity and difference involves comparing historical contexts, societies, experiences and events to identify what they share and where they diverge. Comparison can operate across time (how was life different in Roman Britain compared with Anglo-Saxon Britain?) or across space (how did Baghdad c.900 CE compare with Anglo-Saxon England?). Identifying meaningful similarities and differences requires selecting appropriate criteria for comparison and avoiding superficial or anachronistic judgements.",
+      "key_question": "How was this similar to or different from other times, places, or peoples?",
+      "ks1_guidance": "Compare two historical figures who lived in different periods (as the NC specifies, e.g. Elizabeth I and Queen Victoria). Compare life 'then' and 'now'. Use simple comparison grids: 'Florence Nightingale... Mary Seacole... Same... Different...' Focus on observable similarities and differences in daily life, clothes, homes, transport.",
+      "ks2_guidance": "Compare civilisations systematically using defined criteria (writing, cities, religion, technology, government). Compare British society across different periods. Use the NC non-European contrast requirement to compare, e.g., Baghdad c.900 CE with Anglo-Saxon England. Explain WHY there were differences (geography, resources, beliefs, contact with other civilisations).",
+      "ks3_guidance": "Use comparison as an analytical tool: comparing the English and French Revolutions reveals what is distinctive about each. Compare different historical perspectives on the same event. Evaluate the extent to which historical experiences were shared or divergent across social groups, regions and nations. Use comparison to test historical generalisations.",
+      "agent_prompt": "When generating comparison activities, always provide CRITERIA for comparison rather than asking for random observations. Ask pupils to explain WHY things were similar or different, not just to list similarities and differences. At KS1, use paired comparisons with simple grids. At KS2, use systematic criteria across civilisations. At KS3, use comparison as an analytical method to test arguments and generalizations.",
+      "question_stems": [
+        "How was life in ___ similar to and different from life in ___?",
+        "What did ___ and ___ have in common?",
+        "Why was ___ different from ___?",
+        "What can we learn by comparing ___ with ___?",
+        "How did different groups experience ___ differently?",
+        "Is it fair to compare ___ with ___? Why or why not?"
+      ],
+      "display_category": "History Study",
+      "display_color": "#7C3AED",
+      "display_icon": "psychology"
+    },
+    {
+      "concept_id": "DC-005",
+      "name": "Significance",
+      "slug": "significance",
+      "description": "Historical significance is the assessment of why a person, event or development matters in history. Significance is not inherent; it is constructed through judgement using criteria such as the scale and duration of impact, the number of people affected, whether it represented a turning point, whether it is remembered and commemorated, and whether it resonates with current concerns. Different people and cultures may judge significance differently, and significance can change over time.",
+      "key_question": "Why does this matter, and to whom?",
+      "ks1_guidance": "Ask 'Why do we remember this person?' and 'What difference did they make?' Introduce the idea that some people are remembered while others are forgotten, and discuss why. Use the word 'significant' explicitly and regularly. Compare two historical figures: 'Who was more significant, and how do we decide?'",
+      "ks2_guidance": "Teach explicit criteria for significance (the 5 Rs: Remarkable, Remembered, Resulted in change, Resonant, Revealing). Apply these criteria to the people, events and developments studied. Discuss how significance can change over time (Mary Seacole was forgotten then rediscovered). Ask pupils to make and justify their own significance judgements.",
+      "ks3_guidance": "Evaluate contested claims of significance using evidence: was the Black Death the most significant event of the medieval period? Analyse how different groups and cultures assign significance differently. Consider how the significance of events changes with historical distance. Construct argued evaluations of significance that engage with counter-arguments.",
+      "agent_prompt": "When generating questions about significance, NEVER accept 'because it was important' as an answer. Always demand CRITERIA and EVIDENCE. Ask 'Important to whom?' and 'How do we know it was significant?' Push pupils to compare the significance of different events or figures. At KS1, ask 'Why do we remember this person?' At KS2, apply the 5 Rs framework. At KS3, demand argued evaluation with counter-arguments.",
+      "question_stems": [
+        "Why is ___ historically significant?",
+        "Who thinks ___ is significant, and who might disagree?",
+        "Was ___ a turning point, and how can we tell?",
+        "Has the significance of ___ changed over time?",
+        "Which was more significant: ___ or ___? Justify your answer.",
+        "Why is ___ still remembered/studied today?"
+      ],
+      "display_category": "History Study",
+      "display_color": "#7C3AED",
+      "display_icon": "psychology"
+    },
+    {
+      "concept_id": "DC-006",
+      "name": "Evidence and Interpretation",
+      "slug": "evidence_and_interpretation",
+      "description": "Evidence and interpretation addresses how we know about the past and why historians sometimes disagree. Historical evidence comes from sources (primary and secondary) that survive from or about the past. Historians interpret sources by asking questions about their provenance (who created them, when, and why), their content, their reliability and their utility for answering specific questions. Different historians can reach different conclusions from the same evidence because they ask different questions, use different frameworks, or weigh evidence differently. Understanding this is central to historical literacy.",
+      "key_question": "How do we know about this, and how do historians disagree?",
+      "ks1_guidance": "Ask 'How do we know about this?' for every topic studied. Introduce the word 'source' and show pupils different types (pictures, objects, stories, accounts). Ask 'What does this tell us?' and 'What can't it tell us?' Begin to distinguish between things that really happened and stories about the past.",
+      "ks2_guidance": "Teach a systematic approach to source analysis: Nature, Origin, Purpose (NOP). Compare sources that give different views of the same event. Introduce the concept of bias and discuss why a biased source can still be useful. Begin to distinguish between primary and secondary sources. Ask 'Why might different historians say different things about ___?'",
+      "ks3_guidance": "Evaluate sources rigorously for provenance, purpose and reliability. Cross-reference sources to test claims. Analyse how and why historians have constructed contrasting interpretations of the same events. Understand that all historical accounts (including textbooks) are interpretations. Use testimony as a distinctive source type (especially for the Holocaust), understanding its strengths and limitations.",
+      "agent_prompt": "When generating source-based activities, ALWAYS ask about provenance (who, when, why) before asking about content (what does it say/show). Push pupils beyond describing what a source shows towards analysing WHY it was created and HOW RELIABLE it is. At KS1, ask 'How do we know?' At KS2, use the NOP framework and source comparison. At KS3, demand evaluation of provenance, cross-referencing, and analysis of interpretive disagreement.",
+      "question_stems": [
+        "How do we know about ___?",
+        "Who created this source, and why?",
+        "How reliable is this source, and how can we tell?",
+        "What does this source tell us? What does it NOT tell us?",
+        "Why might two historians disagree about ___?",
+        "What other evidence would we need to answer this question?",
+        "How does this source support or challenge our interpretation of ___?"
+      ],
+      "display_category": "History Study",
+      "display_color": "#7C3AED",
+      "display_icon": "psychology"
+    }
+  ]
+}

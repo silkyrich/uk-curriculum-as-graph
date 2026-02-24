@@ -1,0 +1,589 @@
+{
+  "version": "1.0",
+  "subject": "English",
+  "key_stage": "KS1",
+  "authored_by": "english-specialist-teacher",
+  "authored_date": "2026-02-24",
+  "note": "EnglishUnit nodes for KS1 (Y1-Y2). Genre-based units following the NC requirement for pupils to 'write for a range of purposes' including stories, poetry, recounts, and instructions. Grammar focus draws from NC Appendix 2 (Y1 and Y2 statutory grammar). Each unit has a writing_outcome as the single most important property.",
+  "units": [
+    {
+      "unit_id": "EU-EN-KS1-001",
+      "name": "Traditional Tales: The Three Billy Goats Gruff",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y1"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y1): listening to and discussing a wide range of poems, stories and non-fiction",
+        "Writing - Composition (Y1): write sentences by sequencing sentences to form short narratives"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "repeated refrain (Trip, trap, trip, trap)",
+        "rule of three (three goats, three attempts)",
+        "good versus evil (goats versus troll)",
+        "beginning, middle, end structure"
+      ],
+      "writing_outcome": "Retell the story in 4-6 sentences using the repeated refrain and sequencing words (first, then, next, finally)",
+      "spoken_language_outcome": "Retell the story orally using a story map, with appropriate expression for different characters",
+      "grammar_focus": ["joining words (and)", "sequencing words (first, then, next)", "capital letters and full stops"],
+      "grammar_year_source": "Y1",
+      "suggested_texts": [
+        {"title": "The Three Billy Goats Gruff", "author": "Traditional (various illustrators)", "publication_year": null, "text_type": "picture book", "suitability": "Y1", "note": "Use a version with clear, large illustrations for shared reading"}
+      ],
+      "reading_level": "Phase 4-5",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "formative",
+      "literary_terms": ["character", "setting", "beginning", "middle", "end"],
+      "definitions": ["troll", "bridge", "refrain", "character", "story", "retell"],
+      "pedagogical_rationale": "Traditional tales are the entry point to narrative at KS1. The Three Billy Goats Gruff is ideal for Y1 because its repetitive structure, limited cast, and clear conflict support oral retelling before written retelling. The rule of three provides a scaffolding structure that Y1 children can internalise and replicate.",
+      "common_pitfalls": [
+        "Spending too long on drama and retelling without moving to written output",
+        "Not explicitly teaching the story structure (beginning, middle, end) as a transferable pattern",
+        "Writing task too ambitious for Y1 — keep to 4-6 sentences"
+      ],
+      "cross_curricular_hooks": [
+        "[Maths] Counting and ordering (three goats, size comparison)",
+        "[PSHE] Themes of bravery, problem-solving, and standing up to bullies"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C045", "primary": true},
+        {"concept_id": "EN-KS1-C043", "primary": false},
+        {"concept_id": "EN-KS1-C044", "primary": false},
+        {"concept_id": "EN-KS1-C018", "primary": false},
+        {"concept_id": "EN-KS1-C052", "primary": false},
+        {"concept_id": "EN-KS1-C053", "primary": false},
+        {"concept_id": "EN-KS1-C054", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-TRAD", "role": "primary"}],
+      "domain_ids": ["EN-KS1-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS1-002",
+      "name": "Traditional Tales: Little Red Riding Hood",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y1"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y1): becoming very familiar with key stories, fairy stories and traditional tales, retelling them and considering their particular characteristics",
+        "Writing - Composition (Y1): write sentences by sequencing sentences to form short narratives"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "character descriptions (big bad wolf, little girl)",
+        "direct speech pattern (What big eyes you have!)",
+        "danger and rescue structure",
+        "moral lesson (do not talk to strangers)"
+      ],
+      "writing_outcome": "Write own version of a familiar story changing one element (character, setting or ending) in 5-8 sentences",
+      "spoken_language_outcome": "Perform the dialogue between Red Riding Hood and the wolf with expression and character voices",
+      "grammar_focus": ["capital letters and full stops", "exclamation marks", "joining words (and, but)"],
+      "grammar_year_source": "Y1",
+      "suggested_texts": [
+        {"title": "Little Red Riding Hood", "author": "Traditional (various illustrators)", "publication_year": null, "text_type": "picture book", "suitability": "Y1", "note": "Use alongside a modern retelling for comparison"},
+        {"title": "Little Red", "author": "Bethan Woollvin", "publication_year": 2016, "text_type": "picture book", "suitability": "Y1", "note": "Modern feminist retelling — strong female protagonist"}
+      ],
+      "reading_level": "Phase 4-5",
+      "spoken_language_focus": "dramatic_role_play",
+      "assessment_mode": "formative",
+      "literary_terms": ["character", "setting", "moral", "villain", "hero"],
+      "definitions": ["traditional tale", "character", "villain", "hero", "moral", "retell", "version"],
+      "pedagogical_rationale": "Building on the first traditional tale unit, this unit introduces changing one story element as a scaffold to independent composition. Y1 children can manage changing the setting, the character, or the ending while retaining the familiar structure. The dialogue pattern (What big X you have!) is highly memorable and supports early speech punctuation awareness.",
+      "common_pitfalls": [
+        "Pupils copy the original rather than innovating their own version",
+        "Character change is superficial (just changing the name) rather than meaningful",
+        "Drama work does not feed into the writing task"
+      ],
+      "cross_curricular_hooks": [
+        "[PSHE] Stranger danger and personal safety",
+        "[Art] Illustrating own version of the story"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C045", "primary": true},
+        {"concept_id": "EN-KS1-C044", "primary": false},
+        {"concept_id": "EN-KS1-C047", "primary": false},
+        {"concept_id": "EN-KS1-C056", "primary": false},
+        {"concept_id": "EN-KS1-C077", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-TRAD", "role": "primary"}],
+      "domain_ids": ["EN-KS1-D006"],
+      "grammar_sequence_after": "EU-EN-KS1-001",
+      "text_complexity_after": "EU-EN-KS1-001",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS1-003",
+      "name": "Instructions: How to Wash a Woolly Mammoth",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y1"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Writing - Composition (Y1): writing clearly, using basic punctuation",
+        "Writing - Vocabulary, Grammar and Punctuation (Y1): sequencing sentences to form short narratives"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "numbered steps",
+        "imperative verbs (fill, scrub, rinse)",
+        "sequencing (first, next, then, finally)",
+        "what you need list"
+      ],
+      "writing_outcome": "Write a set of instructions (5-6 steps) for a simple task using numbered steps, imperative verbs, and sequencing words",
+      "grammar_focus": ["capital letters and full stops", "sequencing words (first, next, then, finally)", "imperative verbs"],
+      "grammar_year_source": "Y1",
+      "suggested_texts": [
+        {"title": "How to Wash a Woolly Mammoth", "author": "Michelle Robinson", "publication_year": 2013, "text_type": "picture book", "suitability": "Y1", "note": "Humorous instruction text that models the form while entertaining"}
+      ],
+      "reading_level": "Phase 4-5",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "formative",
+      "literary_terms": [],
+      "definitions": ["instruction", "step", "imperative", "command", "equipment", "method"],
+      "pedagogical_rationale": "Instruction writing is one of the most accessible non-fiction forms at KS1 because its structure is concrete and visual (numbered steps, imperative verbs). Using a humorous text as the model engages children while teaching the genuine features of the form. The task of writing real instructions that someone else follows provides authentic purpose.",
+      "common_pitfalls": [
+        "Instructions lack sufficient detail for someone to actually follow them",
+        "Steps are not in logical order",
+        "Pupils write in narrative rather than instructional register"
+      ],
+      "cross_curricular_hooks": [
+        "[DT] Writing instructions for a making task",
+        "[Science] Writing up a simple investigation as instructions",
+        "[PE] Writing instructions for a simple game"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C047", "primary": true},
+        {"concept_id": "EN-KS1-C044", "primary": false},
+        {"concept_id": "EN-KS1-C052", "primary": false},
+        {"concept_id": "EN-KS1-C054", "primary": false}
+      ],
+      "uses_template": ["VT-24"],
+      "in_genre": [{"genre_id": "GEN-INSTRUCT", "role": "primary"}],
+      "domain_ids": ["EN-KS1-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS1-004",
+      "name": "Poetry: Nursery Rhymes and Rhyming Poems",
+      "unit_type": "poetry_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y1"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y1): learning to appreciate rhymes and poems, and to recite some by heart",
+        "Spoken Language: use spoken language to develop understanding through speculating, hypothesising, imagining and exploring ideas"
+      ],
+      "text_type": "poetry",
+      "text_features_to_teach": [
+        "rhyme and rhyming patterns",
+        "rhythm and beat",
+        "repetition",
+        "predictable pattern"
+      ],
+      "writing_outcome": "Write a simple rhyming poem (4-8 lines) following a pattern from a model poem, choosing own rhyming words",
+      "spoken_language_outcome": "Recite at least 2 poems by heart with appropriate expression, pace, and volume",
+      "grammar_focus": ["capital letters for line beginnings", "full stops or no punctuation (following the model)"],
+      "grammar_year_source": "Y1",
+      "suggested_texts": [
+        {"title": "A Great Big Cuddle", "author": "Michael Rosen", "publication_year": 2015, "text_type": "poetry collection", "suitability": "Y1", "note": "Accessible, playful poems ideal for performance"},
+        {"title": "Zim Zam Zoom!", "author": "James Carter", "publication_year": 2014, "text_type": "poetry collection", "suitability": "Y1", "note": "Performance poetry with strong rhythm"}
+      ],
+      "reading_level": "Phase 3-5",
+      "spoken_language_focus": "performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["rhyme", "rhythm", "poem", "verse", "poet"],
+      "definitions": ["rhyme", "rhythm", "poem", "verse", "recite", "perform", "expression"],
+      "pedagogical_rationale": "Poetry is the first literary form most children encounter through nursery rhymes. At Y1, the focus is on enjoyment, recitation, and pattern recognition. Rhyming poems develop phonological awareness (hearing sounds in words) which supports phonics. Writing a simple rhyming poem using a pattern from a model is achievable and builds confidence with creative composition.",
+      "common_pitfalls": [
+        "Focus on writing poems before children have heard and recited enough models",
+        "Expecting rhyming couplets when children have not yet developed sufficient phonological repertoire",
+        "Performance reduced to mumbled group recitation rather than expressive individual delivery"
+      ],
+      "cross_curricular_hooks": [
+        "[Music] Rhythm and beat in poetry — clapping rhythms, musical accompaniment",
+        "[PSHE] Poems about feelings and emotions"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C021", "primary": true},
+        {"concept_id": "EN-KS1-C022", "primary": false},
+        {"concept_id": "EN-KS1-C051", "primary": false},
+        {"concept_id": "EN-KS1-C019", "primary": false}
+      ],
+      "uses_template": ["VT-12"],
+      "in_genre": [{"genre_id": "GEN-POET", "role": "primary"}],
+      "domain_ids": ["EN-KS1-D003", "EN-KS1-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS1-005",
+      "name": "Recount: My Weekend",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y1"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Writing - Composition (Y1): writing about real events",
+        "Writing - Vocabulary, Grammar and Punctuation (Y1): using the past tense correctly"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "chronological order",
+        "past tense",
+        "time words (first, then, after that)",
+        "specific detail (who, what, when, where)"
+      ],
+      "writing_outcome": "Write a personal recount (4-6 sentences) in chronological order using past tense and time words",
+      "grammar_focus": ["past tense (regular: played, walked; irregular: went, saw)", "time words", "capital letters and full stops"],
+      "grammar_year_source": "Y1",
+      "suggested_texts": [
+        {"title": "Model recount (teacher-written)", "author": "Teacher", "publication_year": null, "text_type": "shared writing", "suitability": "Y1", "note": "Teacher models writing own recount on the board, thinking aloud about time words and past tense"}
+      ],
+      "reading_level": "Phase 4-5",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "formative",
+      "literary_terms": [],
+      "definitions": ["recount", "past tense", "chronological", "event", "detail"],
+      "pedagogical_rationale": "Personal recount is the simplest non-fiction form because children write about their own experience — they already know the content and sequence. This makes it ideal for teaching text structure (chronological order) and grammar (past tense) without the cognitive load of inventing content. Oral rehearsal (Tell your partner about your weekend) precedes writing.",
+      "common_pitfalls": [
+        "Every sentence begins with 'Then I...' without varying openings",
+        "Recount is a list of events without specific detail or personal response",
+        "Past tense inconsistency (mixing went and go within the same piece)"
+      ],
+      "cross_curricular_hooks": [],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C047", "primary": true},
+        {"concept_id": "EN-KS1-C044", "primary": false},
+        {"concept_id": "EN-KS1-C043", "primary": false},
+        {"concept_id": "EN-KS1-C061", "primary": false}
+      ],
+      "uses_template": ["VT-24"],
+      "in_genre": [{"genre_id": "GEN-RECOUNT", "role": "primary"}],
+      "domain_ids": ["EN-KS1-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS1-006",
+      "name": "Narrative: Dogger",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y2"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Writing - Composition (Y2): write narratives about personal experiences and those of others (real and fictional)",
+        "Writing - Vocabulary, Grammar and Punctuation (Y2): expanded noun phrases, co-ordination and subordination"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "problem-resolution structure",
+        "character feelings and reactions",
+        "setting description",
+        "beginning, build-up, problem, resolution, ending"
+      ],
+      "writing_outcome": "Write an original narrative (8-12 sentences) about losing and finding something precious, using a clear problem-resolution structure with expanded noun phrases",
+      "grammar_focus": ["expanded noun phrases (the old, brown teddy)", "co-ordination (and, or, but)", "subordination (when, if, because)", "commas in lists"],
+      "grammar_year_source": "Y2",
+      "suggested_texts": [
+        {"title": "Dogger", "author": "Shirley Hughes", "publication_year": 1977, "text_type": "picture book", "suitability": "Y2", "note": "Classic text with clear emotional arc and problem-resolution structure"},
+        {"title": "Knuffle Bunny", "author": "Mo Willems", "publication_year": 2004, "text_type": "picture book", "suitability": "Y1-Y2", "note": "Alternative lost-and-found narrative with photographic illustration"}
+      ],
+      "reading_level": "Phase 5-6",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "formative",
+      "literary_terms": ["character", "setting", "problem", "resolution", "narrator"],
+      "definitions": ["narrative", "character", "setting", "problem", "resolution", "noun phrase", "describe"],
+      "pedagogical_rationale": "Dogger provides a perfect model for Y2 narrative because its emotional arc is universally relatable (losing a beloved toy) and its structure is transparent. The five-part narrative structure (beginning, build-up, problem, resolution, ending) gives pupils a clear framework that is more sophisticated than KS1 beginning-middle-end but still manageable. The expanded noun phrases needed to describe the toy connect reading and grammar naturally.",
+      "common_pitfalls": [
+        "Pupils write about their own lost toy experience as a recount rather than as a structured narrative",
+        "Problem is resolved too quickly without building tension",
+        "Expanded noun phrases used only in the opening rather than throughout"
+      ],
+      "cross_curricular_hooks": [
+        "[PSHE] Feelings about loss and the kindness of siblings and others",
+        "[Art] Drawing and describing a treasured possession using expanded noun phrases"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C045", "primary": true},
+        {"concept_id": "EN-KS1-C048", "primary": false},
+        {"concept_id": "EN-KS1-C060", "primary": false},
+        {"concept_id": "EN-KS1-C063", "primary": false},
+        {"concept_id": "EN-KS1-C064", "primary": false},
+        {"concept_id": "EN-KS1-C046", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-NARR", "role": "primary"}],
+      "domain_ids": ["EN-KS1-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-KS1-002",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS1-007",
+      "name": "Information Text: All About Animals",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y2"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y2): being introduced to non-fiction books that are structured in different ways",
+        "Writing - Composition (Y2): writing for different purposes including about real events"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "title and subheadings",
+        "topic sentences",
+        "present tense for facts",
+        "labelled diagrams",
+        "simple glossary"
+      ],
+      "writing_outcome": "Write a simple non-chronological report (6-10 sentences) about an animal with a title, subheadings, factual sentences in present tense, and a labelled diagram",
+      "grammar_focus": ["present tense for facts", "expanded noun phrases", "commas in lists", "subordination (because, when)"],
+      "grammar_year_source": "Y2",
+      "suggested_texts": [
+        {"title": "DK My First Animal Encyclopedia", "author": "DK", "publication_year": null, "text_type": "reference", "suitability": "Y2", "note": "Clear non-fiction layout with subheadings, diagrams, and facts"},
+        {"title": "National Geographic Little Kids First Big Book of Animals", "author": "Catherine D. Hughes", "publication_year": 2010, "text_type": "reference", "suitability": "Y1-Y2", "note": "Accessible animal facts with excellent photographs"}
+      ],
+      "reading_level": "Phase 5-6",
+      "spoken_language_focus": "presentation",
+      "assessment_mode": "formative",
+      "literary_terms": [],
+      "definitions": ["report", "non-chronological", "subheading", "fact", "diagram", "label", "caption", "glossary"],
+      "pedagogical_rationale": "Non-chronological reports about animals are the standard entry point to information writing at KS1 because children are naturally interested in animals and already have background knowledge. The cross-curricular link to Science (living things, habitats) provides authentic content. The structured layout (title, subheadings, facts) teaches organisational skills transferable to all non-fiction writing.",
+      "common_pitfalls": [
+        "Children copy facts verbatim from the source rather than putting them in their own words",
+        "Subheadings used decoratively rather than to organise information into categories",
+        "Present tense inconsistency (mixing 'Lions live in Africa' with 'The lion lived in a den')"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Living things and their habitats — animal classification, diet, habitat",
+        "[Geography] Where animals live in the world",
+        "[Computing] Using digital tools for simple research"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C047", "primary": true},
+        {"concept_id": "EN-KS1-C016", "primary": false},
+        {"concept_id": "EN-KS1-C060", "primary": false},
+        {"concept_id": "EN-KS1-C065", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-REPORT", "role": "primary"}, {"genre_id": "GEN-INFO", "role": "secondary"}],
+      "domain_ids": ["EN-KS1-D006", "EN-KS1-D003"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS1-008",
+      "name": "Poetry: Silly Poems and Tongue Twisters",
+      "unit_type": "poetry_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y2"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y2): continuing to build up a repertoire of poems learnt by heart",
+        "Writing - Composition (Y2): writing poetry"
+      ],
+      "text_type": "poetry",
+      "text_features_to_teach": [
+        "alliteration",
+        "rhyme scheme",
+        "rhythm and syllable counting",
+        "word play and invented words",
+        "imagery"
+      ],
+      "writing_outcome": "Write at least 2 poems: one alliterative tongue twister and one rhyming poem using a pattern from a model, then perform one to the class",
+      "spoken_language_outcome": "Perform a poem to the class with expression, appropriate pace, and clear diction",
+      "grammar_focus": ["alliteration (same initial sound)", "adjectives for description", "exclamation marks for effect"],
+      "grammar_year_source": "Y2",
+      "suggested_texts": [
+        {"title": "Oi Frog!", "author": "Kes Gray", "publication_year": 2014, "text_type": "picture book", "suitability": "Y1-Y2", "note": "Rhyming text with word play — can be used as poetry springboard"},
+        {"title": "Poems to Perform", "author": "Julia Donaldson", "publication_year": 2013, "text_type": "poetry collection", "suitability": "Y2", "note": "Curated for performance with actions and audience participation"}
+      ],
+      "reading_level": "Phase 5-6",
+      "spoken_language_focus": "performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["alliteration", "rhyme", "rhythm", "syllable", "verse", "poet", "poem"],
+      "definitions": ["alliteration", "tongue twister", "rhyme", "syllable", "perform", "audience", "expression"],
+      "pedagogical_rationale": "Y2 poetry builds on Y1 recitation by introducing alliteration and more varied forms. Silly poems and tongue twisters engage reluctant writers because the emphasis is on word play and sound rather than narrative coherence. Alliteration develops phonological awareness and vocabulary simultaneously. The performance element fulfils the statutory spoken language requirement.",
+      "common_pitfalls": [
+        "Alliterative poems become lists of words rather than meaningful sentences",
+        "Performance is flat group recitation rather than individual expressive delivery",
+        "Children struggle with rhyme because they have not heard enough rhyming poetry read aloud"
+      ],
+      "cross_curricular_hooks": [
+        "[Music] Rhythm in poetry — clapping syllables, adding musical accompaniment",
+        "[Science] Tongue twisters about science topics (slippery, slimy slugs)"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C021", "primary": true},
+        {"concept_id": "EN-KS1-C022", "primary": false},
+        {"concept_id": "EN-KS1-C019", "primary": false},
+        {"concept_id": "EN-KS1-C051", "primary": false}
+      ],
+      "uses_template": ["VT-12"],
+      "in_genre": [{"genre_id": "GEN-POET", "role": "primary"}],
+      "domain_ids": ["EN-KS1-D003", "EN-KS1-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-KS1-004",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS1-009",
+      "name": "Traditional Tales: The Enormous Turnip",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y2"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y2): discussing the sequence of events in books and how items of information are related",
+        "Writing - Composition (Y2): writing narratives about personal experiences and those of others"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "cumulative structure (adding characters one by one)",
+        "repetition with variation",
+        "teamwork and cooperation theme",
+        "writing from a different character's perspective"
+      ],
+      "writing_outcome": "Write own cumulative story (10-15 sentences) with a repeated pattern and at least 4 characters, using co-ordination and subordination",
+      "grammar_focus": ["co-ordination (and, but, or)", "subordination (when, if, that, because)", "past tense consistency", "commas in lists"],
+      "grammar_year_source": "Y2",
+      "suggested_texts": [
+        {"title": "The Enormous Turnip", "author": "Traditional (Aleksei Tolstoy version)", "publication_year": null, "text_type": "picture book", "suitability": "Y2", "note": "Classic cumulative structure with clear pattern for innovating"},
+        {"title": "Handa's Surprise", "author": "Eileen Browne", "publication_year": 1994, "text_type": "picture book", "suitability": "Y1-Y2", "note": "Alternative cumulative text with multicultural setting"}
+      ],
+      "reading_level": "Phase 5-6",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "formative",
+      "literary_terms": ["character", "setting", "pattern", "repetition", "perspective"],
+      "definitions": ["cumulative", "pattern", "repetition", "co-operation", "perspective", "character"],
+      "pedagogical_rationale": "The Enormous Turnip extends traditional tale study at Y2 by introducing a cumulative structure (each new character joins the pulling chain). This pattern is highly scaffolded — children see the formula, internalise it, and can innovate by changing the object, setting, or characters. It also introduces writing from a different character's perspective, a Y2 composition skill.",
+      "common_pitfalls": [
+        "Innovation is too close to the original (just changing character names)",
+        "Cumulative pattern abandoned halfway through, reverting to linear narrative",
+        "Subordination used only in teacher-modelled sentences, not in independent writing"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Plants and growing — what do plants need to grow?",
+        "[PSHE] Teamwork and co-operation"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C045", "primary": true},
+        {"concept_id": "EN-KS1-C048", "primary": false},
+        {"concept_id": "EN-KS1-C063", "primary": false},
+        {"concept_id": "EN-KS1-C064", "primary": false},
+        {"concept_id": "EN-KS1-C065", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-TRAD", "role": "primary"}, {"genre_id": "GEN-NARR", "role": "secondary"}],
+      "domain_ids": ["EN-KS1-D006"],
+      "grammar_sequence_after": "EU-EN-KS1-006",
+      "text_complexity_after": "EU-EN-KS1-002",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS1-010",
+      "name": "Recount: Diary of a Killer Cat",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS1",
+      "year_groups": ["Y2"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Writing - Composition (Y2): writing about real events, writing for different purposes",
+        "Reading - Comprehension (Y2): discussing and clarifying the meanings of words"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "diary format (Dear Diary, date, first person)",
+        "past tense",
+        "personal voice and opinion",
+        "chronological order with time phrases"
+      ],
+      "writing_outcome": "Write a diary entry (8-12 sentences) from a character's perspective using first person, past tense, diary conventions, and personal opinion",
+      "grammar_focus": ["first person (I, my, we)", "past tense", "exclamation marks for strong feelings", "subordination (because, when)"],
+      "grammar_year_source": "Y2",
+      "suggested_texts": [
+        {"title": "The Diary of a Killer Cat", "author": "Anne Fine", "publication_year": 1994, "text_type": "short novel", "suitability": "Y2", "note": "Hilarious diary from the cat's perspective — ideal for modelling voice and opinion in recount"},
+        {"title": "Diary of a Wombat", "author": "Jackie French", "publication_year": 2002, "text_type": "picture book", "suitability": "Y1-Y2", "note": "Simpler diary format for lower-ability scaffold"}
+      ],
+      "reading_level": "Phase 5-6",
+      "spoken_language_focus": "dramatic_role_play",
+      "assessment_mode": "formative",
+      "literary_terms": ["first person", "narrator", "perspective", "voice"],
+      "definitions": ["diary", "recount", "perspective", "first person", "past tense", "opinion", "chronological"],
+      "pedagogical_rationale": "Diary writing from a character's perspective bridges fiction and non-fiction: it uses recount conventions (chronological, past tense, time phrases) but requires imagination (adopting the character's voice and viewpoint). The Diary of a Killer Cat provides a strong, humorous model of personal voice that Y2 children can emulate. This prepares pupils for writing in role at KS2.",
+      "common_pitfalls": [
+        "Diary entry reads as a flat recount without personal voice or opinion",
+        "Children write as themselves rather than staying in character",
+        "Time phrases (first, then, next) used mechanically without varying openings"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Animals and their habitats — writing a diary from an animal's perspective",
+        "[PSHE] Seeing events from different points of view"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS1-C047", "primary": true},
+        {"concept_id": "EN-KS1-C049", "primary": false},
+        {"concept_id": "EN-KS1-C061", "primary": false},
+        {"concept_id": "EN-KS1-C063", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-RECOUNT", "role": "primary"}],
+      "domain_ids": ["EN-KS1-D006"],
+      "grammar_sequence_after": "EU-EN-KS1-005",
+      "text_complexity_after": "EU-EN-KS1-005",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    }
+  ]
+}

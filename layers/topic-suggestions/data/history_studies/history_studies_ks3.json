@@ -1,0 +1,706 @@
+{
+  "version": "1.0",
+  "subject": "History",
+  "key_stage": "KS3",
+  "authored_by": "history-specialist",
+  "authored_date": "2026-02-24",
+  "note": "KS3 HistoryStudy nodes. British chronological sequence: Medieval 1066-1509 -> Church/State 1509-1745 -> Elizabethan (sits within 1509-1745) -> Industry/Empire 1745-1901 -> Challenges 1901-present. Plus the Holocaust (mandatory standalone), world history open slot, and exemplar world history studies.",
+  "studies": [
+    {
+      "study_id": "HS-KS3-001",
+      "name": "Medieval Britain 1066-1509",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS3 History: 'the development of Church, state and society in Medieval Britain 1066-1509'"
+      ],
+      "period": "1066 - 1509",
+      "period_start_year": 1066,
+      "period_end_year": 1509,
+      "significance_claim": "The medieval period established the constitutional, legal and parliamentary foundations that would shape English governance for centuries, including the principles enshrined in Magna Carta that still underpin the rule of law.",
+      "pedagogical_rationale": "Medieval Britain 1066-1509 is the chronological foundation of KS3 history. The Black Death is one of the most dramatic case studies of cause and consequence in the entire curriculum. The period's rich source base (Bayeux Tapestry, Magna Carta, Domesday Book) supports sophisticated source enquiry work.",
+      "enquiry_questions": [
+        "Did power shift from the monarch to the people between 1066 and 1509?",
+        "How significant was Magna Carta: a turning point for democracy or a deal between elites?",
+        "How did the Black Death transform medieval English society?"
+      ],
+      "key_figures": ["William the Conqueror", "Thomas Becket", "King John", "Simon de Montfort", "Henry VII"],
+      "comparison_pairs": null,
+      "key_events": ["Norman Conquest 1066", "Murder of Becket 1170", "Magna Carta 1215", "Black Death 1348-49", "Peasants' Revolt 1381", "Battle of Bosworth 1485"],
+      "perspectives": ["Norman lord", "Saxon peasant", "medieval monk", "merchant", "peasant rebel"],
+      "interpretations": [
+        "Whether the Norman Conquest was a catastrophe or a modernisation for England remains a long-standing historiographical debate",
+        "Historians disagree on whether Magna Carta was a genuine step towards liberty or a self-interested baronial document later mythologised"
+      ],
+      "source_types": ["primary_visual", "primary_legal", "primary_administrative", "primary_written"],
+      "definitions": ["feudalism", "Magna Carta", "Parliament", "Domesday Book", "Black Death", "serf", "baron", "Church vs State"],
+      "common_pitfalls": [
+        "Trying to cover the entire 443-year period in equal depth rather than selecting key episodes for deep study",
+        "Presenting Magna Carta as establishing modern democracy rather than as a baronial document whose significance was constructed later",
+        "Treating the Black Death as merely an episode of mass death rather than analysing its transformative consequences"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Medieval literature: Chaucer's Canterbury Tales as a source for medieval society", "strength": "strong"},
+        {"subject": "Geography", "hook": "Medieval settlement patterns, town charters and the growth of urban centres", "strength": "moderate"},
+        {"subject": "Mathematics", "hook": "Domesday Book data: analysing medieval statistics about land, population and resources", "strength": "moderate"},
+        {"subject": "Religious Studies", "hook": "The power of the Church in medieval society: how faith shaped law, education and daily life", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "The Peasants' Revolt involved violence and execution; discuss within the context of social justice and political rights",
+        "Medieval antisemitism (including the expulsion of Jews in 1290) should be addressed honestly as context for later Holocaust study"
+      ],
+      "year_groups": ["Y7"],
+      "duration_lessons": 14,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS3, construct multi-causal explanations: why did the Black Death cause the Peasants' Revolt? Consider economic, social and political causes interacting."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS3, analyse the pace and extent of change across the full 443-year period. Was the Norman Conquest a sharper break than the Black Death?"},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS3, evaluate contested claims of significance: was Magna Carta truly a turning point, or has its significance been constructed by later generations?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS3, analyse the Bayeux Tapestry, Magna Carta and Domesday Book critically, considering provenance, purpose and reliability."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C001", "primary": true},
+        {"concept_id": "HI-KS3-C004", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS3-D001", "HI-KS3-D003"],
+      "chronologically_follows": "HS-KS2-004",
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-033", "HSRC-034", "HSRC-035", "HSRC-036"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS3-002",
+      "name": "Development of Church, State and Society 1509-1745",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS3 History: 'the development of Church, state and society in Britain 1509-1745'"
+      ],
+      "period": "1509 - 1745",
+      "period_start_year": 1509,
+      "period_end_year": 1745,
+      "significance_claim": "The constitutional crises of 1509-1745 established the principle that the monarch rules under the law and through Parliament, creating the framework of British constitutional governance that endures today.",
+      "pedagogical_rationale": "This period encompasses the most dramatic constitutional crises in British history: the break with Rome, the execution of a king, the republic, and the establishment of constitutional monarchy. These events are essential for understanding modern British governance.",
+      "enquiry_questions": [
+        "Why did the English execute their king, and what was the consequence?",
+        "Was the Glorious Revolution genuinely 'glorious', and for whom?",
+        "How did the relationship between monarch and Parliament change between 1509 and 1745?"
+      ],
+      "key_figures": ["Henry VIII", "Thomas Cromwell", "Oliver Cromwell", "Charles I", "William III"],
+      "comparison_pairs": null,
+      "key_events": ["English Reformation 1534", "English Civil War 1642-1651", "Execution of Charles I 1649", "Restoration of Charles II 1660", "Glorious Revolution 1688"],
+      "perspectives": ["monarch", "Parliamentary supporter", "Royalist supporter", "ordinary citizen", "religious dissenter"],
+      "interpretations": [
+        "Whether the English Civil War was primarily a religious, political or social conflict remains the central historiographical debate about the period",
+        "Historians disagree on whether the Glorious Revolution was genuinely revolutionary or a conservative restoration of the status quo"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_legal"],
+      "definitions": ["Reformation", "Parliament", "Civil War", "republic", "Restoration", "Glorious Revolution", "constitutional monarchy", "divine right"],
+      "common_pitfalls": [
+        "Presenting the English Civil War as simply Roundheads vs Cavaliers rather than examining its complex causes",
+        "Treating the Glorious Revolution as bloodless and universally welcomed, ignoring its impact on Ireland and Scotland",
+        "Reducing the Reformation to Henry VIII's marriages rather than examining the profound social and cultural transformation"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Milton's political writings; pamphlet culture and the origins of free speech", "strength": "moderate"},
+        {"subject": "Religious Studies", "hook": "The Reformation: how did the break with Rome change English religion and society?", "strength": "strong"},
+        {"subject": "Geography", "hook": "The plantation of Ireland and its lasting consequences", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "The English Civil War involved significant violence and social disruption; present with nuance",
+        "Religious persecution (of Catholics and Dissenters) should be discussed sensitively",
+        "The Glorious Revolution's impact on Ireland (Battle of the Boyne, Penal Laws) remains politically sensitive"
+      ],
+      "year_groups": ["Y7", "Y8"],
+      "duration_lessons": 12,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS3, construct multi-causal arguments about the Civil War: religious, political, economic and personal factors. Evaluate which was most important."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS3, assess whether the constitutional changes of this period were revolutionary or evolutionary. Was the Restoration a reversal or continuation?"},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS3, evaluate the significance of the execution of Charles I: was it a turning point in the history of British democracy?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS3, analyse Civil War pamphlets and newsbooks as propaganda sources. Why were they created and how reliable are they?"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C001", "primary": true},
+        {"concept_id": "HI-KS3-C004", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS3-D001", "HI-KS3-D003"],
+      "chronologically_follows": "HS-KS3-001",
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS3-003",
+      "name": "The Elizabethan Age",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": ["NC KS3 History: 'the Elizabethan age'"],
+      "period": "1558 - 1603",
+      "period_start_year": 1558,
+      "period_end_year": 1603,
+      "significance_claim": "The Elizabethan Age established England as a Protestant nation, a maritime power and a nascent colonial state, setting the trajectory that would lead to the British Empire.",
+      "pedagogical_rationale": "The Elizabethan Age is a crucial transition point encompassing the Reformation, the beginnings of global exploration and the emergence of English national identity. Elizabeth I's management of the religious settlement is an outstanding case study of political compromise.",
+      "enquiry_questions": [
+        "Was Elizabeth's reign truly a 'Golden Age', or is that just propaganda?",
+        "How did Elizabeth manage religious conflict, and was her settlement a success?",
+        "What was the impact of English exploration from the perspective of those who were colonised?"
+      ],
+      "key_figures": ["Elizabeth I", "Francis Drake", "Mary Queen of Scots", "William Shakespeare", "Walter Raleigh"],
+      "comparison_pairs": null,
+      "key_events": ["Elizabethan Religious Settlement 1559", "Execution of Mary Queen of Scots 1587", "Defeat of Spanish Armada 1588", "Founding of Roanoke colony 1585"],
+      "perspectives": ["Elizabeth I", "Catholic recusant", "explorer", "Spanish opponent", "colonised peoples"],
+      "interpretations": [
+        "The 'Golden Age' framing of Elizabeth's reign has been challenged by historians who emphasise poverty, religious oppression and failed colonial ventures",
+        "Whether Elizabeth's religious settlement was a genuine compromise or a Protestant victory dressed as moderation remains debated"
+      ],
+      "source_types": ["primary_visual", "primary_written", "primary_cartographic"],
+      "definitions": ["Reformation", "recusant", "Armada", "exploration", "colonisation", "Golden Age", "Privy Council"],
+      "common_pitfalls": [
+        "Accepting the 'Golden Age' label uncritically rather than examining it as historical interpretation and propaganda",
+        "Treating Elizabeth as a singular genius rather than examining the political context",
+        "Discussing exploration without acknowledging its impact on indigenous peoples"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Shakespeare's plays as both literature and historical sources for Elizabethan society", "strength": "strong"},
+        {"subject": "Geography", "hook": "Early English exploration and colonisation: mapping the expansion of English knowledge of the world", "strength": "moderate"},
+        {"subject": "Art & Design", "hook": "The Armada Portrait and other Elizabethan portraiture as propaganda", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Exploration and early colonisation involved violence against indigenous peoples; present from multiple perspectives",
+        "Religious persecution (of Catholics and Puritans alike) should be discussed with sensitivity",
+        "The execution of Mary Queen of Scots raises questions about justice, politics and power"
+      ],
+      "year_groups": ["Y7", "Y8"],
+      "duration_lessons": 10,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 1, "ks_guidance": "At KS3, analyse the Armada Portrait as propaganda. Who created it, why, and what message does it convey? How does this challenge the 'Golden Age' narrative?"},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 2, "ks_guidance": "At KS3, analyse the multiple causes of the Spanish Armada and the consequences of its defeat for England's international position."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS3, construct an argued evaluation: was Elizabeth's reign a genuine 'Golden Age' or has its significance been constructed?"},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 4, "ks_guidance": "At KS3, assess what changed in England during Elizabeth's reign (religion, international status, colonial ambitions) and what continuities persisted."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C001", "primary": true},
+        {"concept_id": "HI-KS3-C002", "primary": false},
+        {"concept_id": "HI-KS3-C004", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS3-D001", "HI-KS3-D003"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS3-004", "theme": "origins of the British Empire"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-037"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS3-004",
+      "name": "Ideas, Power, Industry and Empire 1745-1901",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": ["NC KS3 History: 'ideas, political power, industry and empire: Britain, 1745-1901'"],
+      "period": "1745 - 1901",
+      "period_start_year": 1745,
+      "period_end_year": 1901,
+      "significance_claim": "The period 1745-1901 transformed Britain from an agricultural society into the world's first industrial nation and its largest empire, changes whose consequences continue to shape the modern world.",
+      "pedagogical_rationale": "This period covers the most rapid transformation in British history. The topic is ideal for multi-perspective analysis because industrialisation and empire created both enormous wealth and enormous suffering. The abolitionist movement provides a powerful case study of how moral arguments can drive political change.",
+      "enquiry_questions": [
+        "Who benefited and who suffered from industrialisation and empire?",
+        "How should we understand and remember Britain's role in the slave trade?",
+        "Was the British Empire a force for good, a force for harm, or something more complex?"
+      ],
+      "key_figures": ["Queen Victoria", "Olaudah Equiano", "Mary Seacole", "Emmeline Pankhurst", "Isambard Kingdom Brunel"],
+      "comparison_pairs": null,
+      "key_events": ["Industrial Revolution begins c.1760", "Abolition of slave trade 1807", "Great Reform Act 1832", "Great Exhibition 1851", "Scramble for Africa 1880s"],
+      "perspectives": ["factory owner", "child worker", "enslaved African", "abolitionist", "colonial subject"],
+      "interpretations": [
+        "Whether the Industrial Revolution primarily improved or worsened living standards for working people is one of the most debated questions in economic history",
+        "The extent to which abolition was driven by moral conviction, economic self-interest or enslaved people's own resistance continues to be debated"
+      ],
+      "source_types": ["primary_written", "primary_administrative", "primary_statistical", "primary_visual"],
+      "definitions": ["Industrial Revolution", "empire", "abolition", "suffrage", "reform", "urbanisation", "colony", "exploitation"],
+      "common_pitfalls": [
+        "Presenting industrialisation as straightforward progress without examining its human costs",
+        "Teaching the abolition of slavery as a story of British moral triumph rather than examining enslaved people's own resistance",
+        "Treating empire as a separate topic from industrialisation rather than showing how they were economically intertwined"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "Urbanisation and its consequences: why did industrial towns grow where they did?", "strength": "strong"},
+        {"subject": "Science", "hook": "Industrial technology: steam power, textile machinery, iron and steel production", "strength": "moderate"},
+        {"subject": "English", "hook": "Dickens, the Brontes and Victorian social commentary literature as historical sources", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "The transatlantic slave trade requires careful, honest and sensitive teaching; centre the experiences of enslaved people",
+        "Empire involved systematic exploitation and violence against colonised peoples; do not sanitise",
+        "Child labour and industrial poverty are distressing topics; use age-appropriate sources and framing",
+        "Be aware that pupils of African and Caribbean heritage may have personal connections to this history"
+      ],
+      "year_groups": ["Y8", "Y9"],
+      "duration_lessons": 14,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS3, construct multi-causal arguments about industrialisation and empire. Analyse how economic, technological, political and social causes interacted."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS3, evaluate the pace and extent of change during this period: was it revolution or evolution? Who experienced the most change?"},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS3, evaluate the significance of the abolition of slavery and the Great Reform Act using criteria for significance."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS3, analyse Factory Commission reports, Equiano's autobiography and census data as historical sources with different strengths and limitations."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C001", "primary": false},
+        {"concept_id": "HI-KS3-C002", "primary": true},
+        {"concept_id": "HI-KS3-C004", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS3-D001", "HI-KS3-D003"],
+      "chronologically_follows": "HS-KS3-002",
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS2-002", "theme": "empire, colonisation and resistance"},
+        {"target_study_id": "HS-KS3-003", "theme": "origins of the British Empire"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-038"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS3-005",
+      "name": "Challenges 1901 to Present Day",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": ["NC KS3 History: 'challenges for Britain, Europe and the wider world 1901 to the present day'"],
+      "period": "1901 - present",
+      "period_start_year": 1901,
+      "period_end_year": null,
+      "significance_claim": "The challenges of the twentieth century transformed Britain from the world's largest empire into a post-imperial, multicultural democracy, reshaping national identity, global relationships and the lives of every subsequent generation.",
+      "pedagogical_rationale": "The twentieth century is closest to pupils' own lives, and many will have family connections to the events studied. The World Wars provide powerful case studies for analysing propaganda. Decolonisation and post-war migration connect empire to the diverse Britain pupils live in today.",
+      "enquiry_questions": [
+        "What were the most significant consequences of the World Wars for Britain and the wider world?",
+        "How reliable is propaganda as a historical source, and what can it tell us despite its bias?",
+        "How did decolonisation and migration reshape modern Britain?"
+      ],
+      "key_figures": ["Winston Churchill", "Mahatma Gandhi", "Martin Luther King Jr", "Nelson Mandela"],
+      "comparison_pairs": null,
+      "key_events": ["World War I 1914-18", "World War II 1939-45", "Indian independence 1947", "Windrush 1948", "Fall of Berlin Wall 1989"],
+      "perspectives": ["British soldier", "civilian in the Blitz", "colonial independence leader", "Windrush generation", "Holocaust survivor"],
+      "interpretations": [
+        "Whether World War I was a futile tragedy or a necessary response to German aggression remains one of the most contested questions in British public history",
+        "The narrative of post-war Britain as a story of consensus and progress versus a story of inequality and racial tension continues to divide historians"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_audiovisual", "oral_testimony"],
+      "definitions": ["total war", "propaganda", "decolonisation", "Cold War", "Windrush", "globalisation", "civil rights"],
+      "common_pitfalls": [
+        "Spending disproportionate time on military campaigns at the expense of social, political and cultural dimensions of the wars",
+        "Teaching the Windrush generation and decolonisation as footnotes rather than as central events",
+        "Using war poetry and propaganda uncritically as neutral sources"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "War poetry and propaganda analysis; oral history and memoir as literary forms", "strength": "strong"},
+        {"subject": "Geography", "hook": "Geopolitics of the World Wars; Cold War geography; decolonisation and the reshaping of the world map", "strength": "strong"},
+        {"subject": "Science", "hook": "Technological developments driven by war: radar, nuclear weapons, computing, medicine", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "War topics involve mass death, destruction and trauma; use age-appropriate sources and framing",
+        "The Blitz, evacuee experiences and rationing may resonate with family stories; create space for personal connection",
+        "Decolonisation and Windrush may connect to pupils' own family histories and racial identity; handle with sensitivity and respect",
+        "The Holocaust is treated separately (HS-KS3-006) but contextualised within this broader 20th-century framework"
+      ],
+      "year_groups": ["Y8", "Y9"],
+      "duration_lessons": 14,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS3, construct sustained causal arguments about 20th-century conflicts and their consequences, weighing multiple factors."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS3, evaluate how far Britain changed during the 20th century: from empire to multicultural democracy. What continuities persist?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS3, evaluate propaganda posters, newsreel footage and oral histories critically. What can they tell us and what are their limitations?"},
+        {"disciplinary_concept_slug": "significance", "rank": 4, "ks_guidance": "At KS3, evaluate the significance of decolonisation, Windrush and the reshaping of British identity."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C001", "primary": false},
+        {"concept_id": "HI-KS3-C002", "primary": true},
+        {"concept_id": "HI-KS3-C003", "primary": false},
+        {"concept_id": "HI-KS3-C004", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS3-D001", "HI-KS3-D002", "HI-KS3-D003"],
+      "chronologically_follows": "HS-KS3-004",
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS3-006", "theme": "The Holocaust is contextualised within the broader 20th-century challenge theme"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS3-006",
+      "name": "The Holocaust",
+      "study_type": "thematic_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS3 History: 'the Holocaust'",
+        "The only specific historical event named as a mandatory standalone topic in the KS3 curriculum"
+      ],
+      "period": "1933 - 1945",
+      "period_start_year": 1933,
+      "period_end_year": 1945,
+      "significance_claim": "The Holocaust is the defining moral catastrophe of the twentieth century, and understanding how it happened is essential for developing the vigilance and values needed to prevent future genocides.",
+      "pedagogical_rationale": "Teaching about the Holocaust develops pupils' understanding of how ideology, propaganda, dehumanisation and bureaucracy can combine to produce genocide. It connects to broader themes of human rights, prejudice and the responsibilities of citizenship.",
+      "enquiry_questions": [
+        "How did persecution escalate from discrimination to genocide, and could it have been stopped?",
+        "What can testimony tell us that other historical sources cannot?",
+        "Why does the Holocaust matter today, and what is our responsibility to remember?"
+      ],
+      "key_figures": ["Anne Frank", "Primo Levi", "Oskar Schindler", "Kindertransport children"],
+      "comparison_pairs": null,
+      "key_events": ["Nuremberg Laws 1935", "Kristallnacht 1938", "Kindertransport 1938-39", "Wannsee Conference 1942", "Liberation of Auschwitz 1945"],
+      "perspectives": ["Jewish victim", "rescuer", "bystander", "perpetrator", "liberator"],
+      "interpretations": [
+        "The question of when the Nazi regime decided on the 'Final Solution' (intentionalist vs functionalist debate) remains a central historiographical discussion",
+        "Historians debate the extent to which ordinary Germans knew about and participated in the Holocaust"
+      ],
+      "source_types": ["primary_written", "testimony", "primary_legal", "primary_visual"],
+      "definitions": ["antisemitism", "Holocaust", "genocide", "persecution", "ghetto", "concentration camp", "Kindertransport", "remembrance"],
+      "common_pitfalls": [
+        "Jumping straight to death camps without teaching the gradual escalation from discrimination to genocide",
+        "Reducing the Holocaust to statistics rather than using individual testimony to establish the human reality",
+        "Treating the Holocaust as inevitable rather than examining choices made at each stage",
+        "Using graphic imagery without pedagogical justification; the UCL Centre advises against shock tactics"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Anne Frank's diary and Primo Levi's testimony as both literature and historical source", "strength": "strong"},
+        {"subject": "Religious Studies", "hook": "The moral and theological questions raised by the Holocaust; responses of faith communities", "strength": "strong"},
+        {"subject": "Citizenship", "hook": "Human rights frameworks developed in response to the Holocaust; genocide prevention", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "This topic requires particular sensitivity and careful planning; follow UCL Centre for Holocaust Education and Holocaust Educational Trust guidance",
+        "Be aware of Jewish pupils who may have family connections to the Holocaust",
+        "Avoid comparisons that trivialise the Holocaust; use precise historical language",
+        "The perpetrator/bystander/rescuer framework should not be a simple moral judgement exercise",
+        "Some pupils may find testimony and images distressing; prepare them and provide support",
+        "Roma, disabled, LGBT+ and other victim groups should not be omitted from the narrative"
+      ],
+      "year_groups": ["Y8", "Y9"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS3, pupils should construct multi-causal explanations showing how ideology, propaganda, bureaucracy and individual choices combined to produce genocide."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 2, "ks_guidance": "At KS3, pupils must learn to use testimony as a distinct source type, understanding its strengths (personal experience, emotional truth) and limitations (memory, selectivity)."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS3, evaluate why the Holocaust is the only event specifically named in the KS3 curriculum. What makes it uniquely significant?"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C002", "primary": false},
+        {"concept_id": "HI-KS3-C003", "primary": true},
+        {"concept_id": "HI-KS3-C004", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS3-D002", "HI-KS3-D003"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS3-005", "theme": "The Holocaust is contextualised within the broader 20th-century challenge theme"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-039", "HSRC-040"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS3-007",
+      "name": "A Study of an Aspect or Theme in World History",
+      "study_type": "thematic_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS3 History: 'at least one study of a significant society or issue in world history and its interconnections with other world developments'"
+      ],
+      "period": "Varies by school choice",
+      "period_start_year": null,
+      "period_end_year": null,
+      "significance_claim": "Studying world history demonstrates that historical developments are globally interconnected and that significant civilisations, ideas and achievements have emerged independently across all regions of the world.",
+      "pedagogical_rationale": "This open slot ensures pupils engage with world history beyond Britain and Europe, developing a genuinely global perspective. The requirement for interconnection means whatever society is chosen must be studied in its wider context.",
+      "enquiry_questions": [
+        "What makes the chosen society historically significant?",
+        "How was the chosen society connected to the wider world?",
+        "What can studying this society teach us about how historians work with non-European sources?"
+      ],
+      "key_figures": [],
+      "comparison_pairs": null,
+      "key_events": [],
+      "perspectives": [],
+      "interpretations": [
+        "The selection of which world society to study itself reflects curricular values about whose history matters"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_archaeological"],
+      "definitions": ["world history", "interconnection", "significant society", "global perspective", "cultural exchange"],
+      "common_pitfalls": [
+        "Choosing a topic based on available resources rather than historical significance and interconnectedness",
+        "Studying the chosen society in isolation rather than making explicit connections to British and European history",
+        "Relying solely on European sources to study non-European societies"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "Global trade networks and geopolitical connections", "strength": "strong"},
+        {"subject": "English", "hook": "Literature and primary sources from the chosen society", "strength": "moderate"},
+        {"subject": "Religious Studies", "hook": "Religious and philosophical traditions of the chosen society", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Studies of empires and colonial relationships require balanced, multi-perspective treatment",
+        "Be sensitive to pupils who may have personal or family connections to the society studied",
+        "Avoid exoticising or othering non-European societies; study them on their own terms"
+      ],
+      "year_groups": ["Y7", "Y8", "Y9"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "significance", "rank": 1, "ks_guidance": "At KS3, evaluate the significance of the chosen world society using comparative criteria and evidence."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 2, "ks_guidance": "At KS3, compare the chosen society with contemporary British or European developments systematically."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 3, "ks_guidance": "At KS3, analyse how the chosen society was connected to wider world developments: trade, conflict, cultural exchange."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS3, work with non-European sources and evaluate the challenges of using European sources about non-European societies."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C001", "primary": false},
+        {"concept_id": "HI-KS3-C002", "primary": false},
+        {"concept_id": "HI-KS3-C004", "primary": true}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS3-D002", "HI-KS3-D003"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS3-008",
+      "name": "Pre-Columbian Americas Depth Study",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks3_world_history_non_british",
+      "curriculum_reference": ["NC KS3 History: Schools must include study of at least one non-European society. Aztec or Inca empires are among the named exemplars."],
+      "period": "c.1200 - 1572",
+      "period_start_year": 1200,
+      "period_end_year": 1572,
+      "significance_claim": "The pre-Columbian Americas demonstrate that complex empires, engineering achievements and cultural systems developed independently of the Old World, and their conquest represents one of history's most consequential cross-cultural encounters.",
+      "pedagogical_rationale": "The Aztec and Inca empires offer compelling case studies of complex civilisations that developed entirely independently of the Old World. The Spanish conquest provides one of the most dramatic examples of cross-cultural encounter in history and raises profound questions about power, technology and colonialism.",
+      "enquiry_questions": [
+        "How did the Aztec and Inca empires compare with European states at the same time?",
+        "Why did small numbers of Spanish conquistadors defeat vast empires?",
+        "What does the conquest of the Americas tell us about the relationship between power, technology and culture?"
+      ],
+      "key_figures": ["Montezuma II", "Atahualpa", "Hernan Cortes", "Francisco Pizarro"],
+      "comparison_pairs": null,
+      "key_events": ["Founding of Tenochtitlan c.1325", "Rise of Inca Empire c.1438", "Spanish conquest of Aztec Empire 1519-21", "Spanish conquest of Inca Empire 1532-72"],
+      "perspectives": ["Aztec ruler", "Inca ruler", "Spanish conquistador", "indigenous subject peoples", "modern indigenous descendant"],
+      "interpretations": [
+        "Whether the Spanish conquest was primarily driven by military technology, disease, internal divisions among indigenous peoples, or a combination is debated",
+        "The reliability and perspective of Spanish conquest accounts has been extensively challenged by historians working with indigenous sources"
+      ],
+      "source_types": ["primary_written", "primary_visual", "built_heritage", "primary_archaeological"],
+      "definitions": ["Aztec", "Inca", "Tenochtitlan", "quipu", "conquistador", "tribute", "cosmology", "empire", "conquest"],
+      "common_pitfalls": [
+        "Presenting the civilisations as primitive or inevitably doomed to conquest",
+        "Sensationalising Aztec human sacrifice without contextualising it within their cosmological framework",
+        "Telling the story of the Spanish conquest solely from the European perspective"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "The Inca road system and agricultural terracing as engineering solutions", "strength": "strong"},
+        {"subject": "Mathematics", "hook": "Inca quipu as a recording system; Aztec calendar mathematics", "strength": "moderate"},
+        {"subject": "Science", "hook": "Aztec and Inca agriculture: chinampas (floating gardens) and terracing", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Human sacrifice in Aztec religion requires careful, contextualised teaching",
+        "The Spanish conquest involved genocide and cultural destruction; present honestly",
+        "Recognise that indigenous peoples of the Americas are living communities with ongoing histories"
+      ],
+      "year_groups": ["Y7", "Y8", "Y9"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS3, analyse the complex, interacting causes of the Spanish conquest (technology, disease, alliance-building, internal divisions)."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 2, "ks_guidance": "At KS3, compare Aztec/Inca empires with contemporary European states using systematic criteria."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS3, critically evaluate Spanish conquest accounts: what biases and purposes shaped them?"},
+        {"disciplinary_concept_slug": "significance", "rank": 4, "ks_guidance": "At KS3, evaluate the significance of the conquest of the Americas for world history."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C001", "primary": false},
+        {"concept_id": "HI-KS3-C002", "primary": false},
+        {"concept_id": "HI-KS3-C004", "primary": true}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS3-D002", "HI-KS3-D003"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS2-013", "theme": "pre-Columbian Americas"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS3-009",
+      "name": "An Islamic Civilisation (e.g. Mughal India or Ottoman Empire)",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks3_world_history_non_british",
+      "curriculum_reference": ["NC KS3 History: Schools must study at least one Islamic civilisation. Named exemplar: Mughal India 1526-1857."],
+      "period": "c.1300 - 1857 (varies by chosen civilisation)",
+      "period_start_year": 1300,
+      "period_end_year": 1857,
+      "significance_claim": "Islamic empires such as the Mughal and Ottoman created some of the most sophisticated political, cultural and architectural achievements in world history, demonstrating the global reach and diversity of Islamic civilisation.",
+      "pedagogical_rationale": "Studying an Islamic civilisation at KS3 extends the KS2 introduction to early Islamic civilisation into a later period. The Mughal Empire connects directly to British imperial history in India, while the Ottoman Empire connects to European history and World War I.",
+      "enquiry_questions": [
+        "What made the chosen Islamic civilisation powerful and significant?",
+        "How did the chosen civilisation manage religious and cultural diversity?",
+        "How was the chosen civilisation connected to European and British history?"
+      ],
+      "key_figures": ["Akbar the Great", "Shah Jahan", "Suleiman the Magnificent"],
+      "comparison_pairs": null,
+      "key_events": ["Founding of Ottoman Empire c.1299", "Fall of Constantinople 1453", "Mughal Empire founded 1526", "Reign of Akbar 1556-1605", "Building of Taj Mahal 1632-53"],
+      "perspectives": ["Mughal/Ottoman ruler", "religious leader", "artist/craftsman", "European traveller", "subject peoples"],
+      "interpretations": [
+        "Whether Akbar's religious tolerance represented genuine pluralism or pragmatic political management is debated",
+        "The causes of Mughal decline are contested: was it internal weakness, British aggression, or a combination?"
+      ],
+      "source_types": ["primary_visual", "built_heritage", "primary_written"],
+      "definitions": ["Mughal", "Ottoman", "sultan", "empire", "mosque", "minaret", "dynasty", "tolerance", "diversity"],
+      "common_pitfalls": [
+        "Presenting Islamic civilisations as monolithic rather than showing their internal diversity",
+        "Studying Mughal India solely as a prelude to British colonisation rather than on its own terms",
+        "Projecting modern geopolitical tensions onto historical Islamic civilisations"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Art & Design", "hook": "Mughal miniature painting or Ottoman tile work; the Taj Mahal as architecture", "strength": "strong"},
+        {"subject": "Religious Studies", "hook": "Religious tolerance and conflict within Islamic empires; Akbar's religious policies", "strength": "strong"},
+        {"subject": "Geography", "hook": "The extent and diversity of Islamic empires; trade routes and urban centres", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Be sensitive to Muslim pupils and pupils from South Asian or Middle Eastern heritage backgrounds",
+        "Avoid framing Islamic civilisations through the lens of European superiority",
+        "Religious conflict within and between empires should be discussed with nuance and sensitivity"
+      ],
+      "year_groups": ["Y7", "Y8", "Y9"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 1, "ks_guidance": "At KS3, compare the chosen Islamic empire with contemporary European states: governance, culture, religious diversity, territorial extent."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 2, "ks_guidance": "At KS3, analyse the causes of the empire's rise and decline, and its consequences for the modern world."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS3, evaluate the lasting significance of the empire's cultural, architectural and intellectual achievements."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS3, work with Mughal/Ottoman sources and critically evaluate European traveller accounts."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C001", "primary": false},
+        {"concept_id": "HI-KS3-C002", "primary": false},
+        {"concept_id": "HI-KS3-C004", "primary": true}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS3-D002", "HI-KS3-D003"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS2-012", "theme": "Islamic civilisations across time"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS3-010",
+      "name": "Early Modern European History",
+      "study_type": "thematic_study",
+      "subject": "History",
+      "key_stage": "KS3",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks3_world_history_non_british",
+      "curriculum_reference": ["NC KS3 History: '17th century Europe' among named exemplars for world history study"],
+      "period": "c.1600 - 1800 (varies by school choice)",
+      "period_start_year": 1600,
+      "period_end_year": 1800,
+      "significance_claim": "Early modern European history produced the political ideas, scientific methods and revolutionary movements that created the modern world, from democracy and human rights to nationalism and industrialisation.",
+      "pedagogical_rationale": "Studying European history beyond Britain provides essential context for understanding the major political, religious and intellectual developments that shaped the modern world. Comparison with British developments deepens understanding of causation and significance.",
+      "enquiry_questions": [
+        "How did ideas about power and rights develop differently in Europe compared with Britain?",
+        "Was the French Revolution a triumph of liberty or a descent into violence?",
+        "How did Enlightenment ideas spread across borders and change the world?"
+      ],
+      "key_figures": ["Louis XIV", "Voltaire", "Catherine the Great", "Napoleon Bonaparte"],
+      "comparison_pairs": null,
+      "key_events": ["Thirty Years War 1618-48", "French Revolution 1789", "Napoleonic Wars 1803-15"],
+      "perspectives": ["absolute monarch", "Enlightenment philosopher", "revolutionary citizen", "peasant", "religious dissenter"],
+      "interpretations": [
+        "Whether the French Revolution was a triumph of democratic ideals or a descent into violence and dictatorship remains the defining debate",
+        "The extent to which the Enlightenment was genuinely universal versus a movement of elite European men is increasingly contested"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_administrative"],
+      "definitions": ["Enlightenment", "revolution", "nation-state", "absolutism", "republic", "rights of man", "Scientific Revolution"],
+      "common_pitfalls": [
+        "Treating European history as a uniform story rather than showing the diversity of experience",
+        "Presenting the Enlightenment or French Revolution as purely progressive without examining their contradictions",
+        "Losing the focus on interconnection: this topic should connect back to British developments"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Enlightenment texts and political pamphlets as sources and rhetorical models", "strength": "moderate"},
+        {"subject": "Geography", "hook": "European political geography and how it changed through warfare and revolution", "strength": "moderate"},
+        {"subject": "Mathematics", "hook": "The Scientific Revolution and the mathematical foundations of modern science", "strength": "light"}
+      ],
+      "sensitive_content_notes": [
+        "The French Revolution involved significant violence including the Terror; discuss with appropriate historical context",
+        "Religious wars in 17th-century Europe caused enormous suffering; be sensitive to religious diversity in the classroom"
+      ],
+      "year_groups": ["Y7", "Y8", "Y9"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS3, analyse the complex causes of the French Revolution and its far-reaching consequences for Europe and the world."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 2, "ks_guidance": "At KS3, compare political developments in France, Britain and other European states: why did similar forces produce different outcomes?"},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 3, "ks_guidance": "At KS3, evaluate whether the Enlightenment and French Revolution represented genuine turning points or built on earlier developments."},
+        {"disciplinary_concept_slug": "significance", "rank": 4, "ks_guidance": "At KS3, evaluate the lasting significance of the Enlightenment and its ideas for the modern world."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS3-C001", "primary": false},
+        {"concept_id": "HI-KS3-C002", "primary": false},
+        {"concept_id": "HI-KS3-C004", "primary": true}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS3-D002", "HI-KS3-D003"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS3-002", "theme": "parallel constitutional developments in Britain and Europe"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    }
+  ]
+}

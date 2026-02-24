@@ -241,6 +241,13 @@ SET n.display_color = '#F59E0B',
     n.display_category = 'UK Curriculum',
     n.display_size = 1;
 
+// RepresentationStage - UK Curriculum
+MATCH (n:RepresentationStage)
+SET n.display_color = '#06B6D4',
+    n.display_icon = 'view_carousel',
+    n.display_category = 'UK Curriculum',
+    n.display_size = 1;
+
 // ThinkingLens - UK Curriculum
 MATCH (n:ThinkingLens)
 SET n.display_color = '#7C3AED',

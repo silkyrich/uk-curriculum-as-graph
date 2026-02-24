@@ -1,0 +1,335 @@
+{
+  "version": "1.0",
+  "authored_by": "english-specialist-teacher",
+  "authored_date": "2026-02-24",
+  "note": "SetText nodes for GCSE English Literature. AQA specification used as primary reference (70%+ market share). Each text that appears on multiple boards gets one node per board. This initial file covers the most widely taught AQA set texts. Edexcel, OCR, Eduqas nodes can be added as separate entries when needed. Popularity estimates from teacher surveys and exam entry data 2019-2025.",
+  "set_texts": [
+    {
+      "set_text_id": "ST-AQA-SHAK-001",
+      "name": "Macbeth",
+      "title": "The Tragedy of Macbeth",
+      "author": "William Shakespeare",
+      "publication_year": 1606,
+      "exam_board": "AQA",
+      "text_category": "shakespeare",
+      "assessment_component": "Paper 1 Section A",
+      "genre": ["drama", "tragedy"],
+      "period": "Jacobean",
+      "popularity_estimate": "dominant",
+      "key_themes": ["ambition", "power", "guilt", "supernatural", "masculinity", "loyalty and betrayal", "appearance versus reality", "fate versus free will"],
+      "key_context_points": [
+        "Jacobean attitudes to witchcraft and King James I's Daemonologie (1597)",
+        "The Gunpowder Plot (1605) and anxiety about regicide",
+        "The Great Chain of Being and divine right of kings",
+        "The real Macbeth (11th-century Scottish king)",
+        "Patriarchal gender roles in Jacobean society",
+        "The role of the theatre as moral instruction"
+      ],
+      "key_quotations": [
+        {"act_scene": "1.5", "speaker": "Lady Macbeth", "quotation": "unsex me here", "significance": "Transgression of gender roles, invocation of supernatural power to reject femininity"},
+        {"act_scene": "1.7", "speaker": "Macbeth", "quotation": "I have no spur / To prick the sides of my intent, but only / Vaulting ambition", "significance": "Admits ambition is his sole motivation; horse metaphor suggests overreaching that will result in a fall"},
+        {"act_scene": "2.2", "speaker": "Macbeth", "quotation": "Will all great Neptune's ocean wash this blood / Clean from my hand?", "significance": "Guilt overwhelms immediately after the murder; hyperbolic imagery of permanent stain contrasts with Lady Macbeth's dismissiveness"},
+        {"act_scene": "3.4", "speaker": "Macbeth", "quotation": "It will have blood, they say: blood will have blood", "significance": "Proverbial language suggests Macbeth recognises the inevitability of retribution; cyclical violence"},
+        {"act_scene": "5.1", "speaker": "Lady Macbeth", "quotation": "Out, damned spot!", "significance": "Role reversal — Lady Macbeth now overwhelmed by guilt she earlier dismissed; imagined blood stain mirrors Macbeth's Act 2 Neptune speech"},
+        {"act_scene": "5.5", "speaker": "Macbeth", "quotation": "a tale / Told by an idiot, full of sound and fury, / Signifying nothing", "significance": "Nihilistic despair and meta-theatrical commentary; life reduced to meaningless performance"}
+      ],
+      "literary_heritage": true,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    },
+    {
+      "set_text_id": "ST-AQA-19C-001",
+      "name": "A Christmas Carol",
+      "title": "A Christmas Carol. In Prose. Being a Ghost Story of Christmas",
+      "author": "Charles Dickens",
+      "publication_year": 1843,
+      "exam_board": "AQA",
+      "text_category": "19th_century_novel",
+      "assessment_component": "Paper 1 Section B",
+      "genre": ["fiction", "novella", "gothic", "allegory"],
+      "period": "Victorian",
+      "popularity_estimate": "dominant",
+      "key_themes": ["redemption", "social responsibility", "poverty and wealth", "family", "Christmas spirit", "isolation and community", "time and memory"],
+      "key_context_points": [
+        "Victorian attitudes to poverty and the 'undeserving poor'",
+        "The 1834 Poor Law Amendment Act and workhouses",
+        "Malthusian economics and 'surplus population'",
+        "Dickens' own childhood experience of poverty and the blacking factory",
+        "The Victorian Christmas tradition and Dickens' role in popularising it",
+        "Child labour and education in Victorian England"
+      ],
+      "key_quotations": [
+        {"act_scene": "Stave 1", "speaker": "Narrator", "quotation": "Oh! But he was a tight-fisted hand at the grindstone, Scrooge!", "significance": "Dickens establishes Scrooge as a caricature of miserliness; exclamatory address draws the reader into moral judgement"},
+        {"act_scene": "Stave 1", "speaker": "Scrooge", "quotation": "Are there no prisons? Are there no workhouses?", "significance": "Echoes real Victorian attitudes; Scrooge's questions will be answered and condemned by the narrative"},
+        {"act_scene": "Stave 3", "speaker": "Narrator (describing Ignorance and Want)", "quotation": "This boy is Ignorance. This girl is Want. Beware them both", "significance": "Allegorical personification of social problems; Dickens' direct address to the Victorian reader"},
+        {"act_scene": "Stave 5", "speaker": "Scrooge", "quotation": "I will honour Christmas in my heart, and try to keep it all the year", "significance": "Transformation complete; Christmas as metaphor for social responsibility, not seasonal charity"}
+      ],
+      "literary_heritage": true,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    },
+    {
+      "set_text_id": "ST-AQA-19C-002",
+      "name": "Jekyll and Hyde",
+      "title": "Strange Case of Dr Jekyll and Mr Hyde",
+      "author": "Robert Louis Stevenson",
+      "publication_year": 1886,
+      "exam_board": "AQA",
+      "text_category": "19th_century_novel",
+      "assessment_component": "Paper 1 Section B",
+      "genre": ["fiction", "novella", "gothic", "mystery"],
+      "period": "Victorian",
+      "popularity_estimate": "common",
+      "key_themes": ["duality", "repression", "science and morality", "respectability", "secrecy", "good and evil", "Victorian hypocrisy"],
+      "key_context_points": [
+        "Victorian respectability and the public/private divide",
+        "Darwinism and degeneration theory",
+        "The Carew murder case and Jack the Ripper (1888, two years later)",
+        "Scientific progress and ethical limits",
+        "Edinburgh's Old Town/New Town as geographical duality",
+        "Stevenson's Calvinist upbringing and concepts of predestination"
+      ],
+      "key_quotations": [
+        {"act_scene": "Ch 1", "speaker": "Enfield", "quotation": "It wasn't like a man; it was like some damned Juggernaut", "significance": "Hyde described through negation — what he is NOT — suggesting something beyond human categorisation"},
+        {"act_scene": "Ch 2", "speaker": "Utterson", "quotation": "If he be Mr Hyde, I shall be Mr Seek", "significance": "Wordplay signals the detective-story structure; Utterson as rational investigator unable to comprehend the irrational"},
+        {"act_scene": "Ch 10", "speaker": "Jekyll", "quotation": "man is not truly one, but truly two", "significance": "Jekyll's central thesis; the novella's argument about human duality expressed in pseudo-scientific language"}
+      ],
+      "literary_heritage": true,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    },
+    {
+      "set_text_id": "ST-AQA-MOD-001",
+      "name": "An Inspector Calls",
+      "title": "An Inspector Calls",
+      "author": "J.B. Priestley",
+      "publication_year": 1945,
+      "exam_board": "AQA",
+      "text_category": "modern_text",
+      "assessment_component": "Paper 2 Section A",
+      "genre": ["drama", "morality play", "well-made play"],
+      "period": "Post-war (set 1912)",
+      "popularity_estimate": "dominant",
+      "key_themes": ["social responsibility", "class", "gender inequality", "generational conflict", "socialism versus capitalism", "collective responsibility"],
+      "key_context_points": [
+        "1912 setting: Edwardian prosperity, class system, women's suffrage movement",
+        "1945 writing: post-war desire for social reform, Beveridge Report, welfare state",
+        "Priestley's socialist politics and wartime Postscripts broadcasts",
+        "The sinking of the Titanic (April 1912) as symbol of hubris",
+        "Workers' rights and trade unions in early 20th century",
+        "Women's limited legal rights in 1912 (property, employment, voting)"
+      ],
+      "key_quotations": [
+        {"act_scene": "Act 1", "speaker": "Birling", "quotation": "The Titanic — she sails next week... absolutely unsinkable", "significance": "Dramatic irony established immediately; Birling's confident predictions about the future are all wrong"},
+        {"act_scene": "Act 1", "speaker": "Birling", "quotation": "a man has to mind his own business and look after himself and his own", "significance": "Birling's individualist philosophy — the antithesis of Priestley's socialist message — stated explicitly for the audience to reject"},
+        {"act_scene": "Act 3", "speaker": "Inspector", "quotation": "We don't live alone. We are members of one body. We are responsible for each other", "significance": "The Inspector's final speech — Priestley's direct message to the audience; 'one body' echoes Christian and socialist language"},
+        {"act_scene": "Act 3", "speaker": "Sheila", "quotation": "You're pretending everything's just as it was before", "significance": "Generational divide crystallised; Sheila represents the possibility of change that Priestley hopes for in the post-war generation"}
+      ],
+      "literary_heritage": true,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    },
+    {
+      "set_text_id": "ST-AQA-MOD-002",
+      "name": "Lord of the Flies",
+      "title": "Lord of the Flies",
+      "author": "William Golding",
+      "publication_year": 1954,
+      "exam_board": "AQA",
+      "text_category": "modern_text",
+      "assessment_component": "Paper 2 Section A",
+      "genre": ["fiction", "allegory", "adventure"],
+      "period": "Post-war",
+      "popularity_estimate": "moderate",
+      "key_themes": ["civilisation versus savagery", "power and leadership", "loss of innocence", "fear and the unknown", "democracy versus dictatorship", "mob mentality"],
+      "key_context_points": [
+        "Written in response to WWII and the Holocaust — Golding's belief in innate human evil",
+        "Cold War anxieties about nuclear annihilation (the boys evacuated from a nuclear war)",
+        "Subversion of the Victorian boys' adventure story (Coral Island by R.M. Ballantyne)",
+        "Golding's experience as a WWII naval officer",
+        "Freudian psychology: id (Jack), ego (Ralph), superego (Piggy/Simon)"
+      ],
+      "key_quotations": [
+        {"act_scene": "Ch 1", "speaker": "Ralph", "quotation": "This is our island. It's a good island", "significance": "Initial optimism and sense of adventure; Eden before the Fall"},
+        {"act_scene": "Ch 5", "speaker": "Simon", "quotation": "Maybe there is a beast... maybe it's only us", "significance": "Simon's prophetic insight — the beast is within human nature, not external"},
+        {"act_scene": "Ch 8", "speaker": "Lord of the Flies", "quotation": "You knew, didn't you? I'm part of you?", "significance": "The pig's head confirms Simon's thesis: evil is intrinsic, not external; hallucinatory scene as allegorical revelation"}
+      ],
+      "literary_heritage": true,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    },
+    {
+      "set_text_id": "ST-AQA-MOD-003",
+      "name": "Animal Farm",
+      "title": "Animal Farm: A Fairy Story",
+      "author": "George Orwell",
+      "publication_year": 1945,
+      "exam_board": "AQA",
+      "text_category": "modern_text",
+      "assessment_component": "Paper 2 Section A",
+      "genre": ["fiction", "novella", "allegory", "satire", "fable"],
+      "period": "Post-war",
+      "popularity_estimate": "common",
+      "key_themes": ["power and corruption", "propaganda and manipulation of language", "class and revolution", "totalitarianism", "education and ignorance", "betrayal of ideals"],
+      "key_context_points": [
+        "Allegorical representation of the Russian Revolution and Stalinist Soviet Union",
+        "Napoleon = Stalin, Snowball = Trotsky, Old Major = Marx/Lenin",
+        "Orwell's democratic socialist politics and opposition to totalitarianism",
+        "Propaganda techniques and the manipulation of truth",
+        "The role of education and literacy in political control"
+      ],
+      "key_quotations": [
+        {"act_scene": "Ch 1", "speaker": "Old Major", "quotation": "All animals are equal", "significance": "The founding principle of Animalism; its eventual corruption is the novella's central irony"},
+        {"act_scene": "Ch 2", "speaker": "Narrator", "quotation": "The pigs did not actually work, but directed and supervised the others", "significance": "The emergence of a new ruling class from the revolution's leadership — Orwell's warning about power"},
+        {"act_scene": "Ch 10", "speaker": "Pigs' commandment", "quotation": "All animals are equal, but some animals are more equal than others", "significance": "The final corruption of the original ideal; oxymoron captures the hypocrisy of totalitarian 'equality'"}
+      ],
+      "literary_heritage": true,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    },
+    {
+      "set_text_id": "ST-AQA-MOD-004",
+      "name": "Blood Brothers",
+      "title": "Blood Brothers",
+      "author": "Willy Russell",
+      "publication_year": 1983,
+      "exam_board": "AQA",
+      "text_category": "modern_text",
+      "assessment_component": "Paper 2 Section A",
+      "genre": ["drama", "musical", "tragedy"],
+      "period": "Late 20th century",
+      "popularity_estimate": "common",
+      "key_themes": ["class divide", "nature versus nurture", "superstition and fate", "motherhood and sacrifice", "friendship and betrayal", "the Thatcher era"],
+      "key_context_points": [
+        "Liverpool in the 1960s-1980s: deindustrialisation, unemployment, class division",
+        "Thatcher-era politics: individualism, monetarism, north-south divide",
+        "Nature versus nurture debate: identical twins raised in different social classes",
+        "Russell's working-class Liverpool background and political commitment",
+        "The musical theatre form: songs as soliloquy, the Narrator as Greek chorus"
+      ],
+      "key_quotations": [
+        {"act_scene": "Act 1", "speaker": "Narrator", "quotation": "And do we blame superstition for what came to pass? / Or could it be what we, the English, have come to know as class?", "significance": "The play's central question stated directly; superstition as metaphor for systemic inequality"},
+        {"act_scene": "Act 2", "speaker": "Mrs Johnstone", "quotation": "If we stay here we'll live for ever and ever", "significance": "Desperate optimism about the housing estate; ironic foreshadowing of the play's tragic ending"},
+        {"act_scene": "Act 2", "speaker": "Mickey", "quotation": "I could have been him!", "significance": "Nature vs nurture crystallised; Mickey's rage at the arbitrary unfairness of class determines the tragedy"}
+      ],
+      "literary_heritage": false,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    },
+    {
+      "set_text_id": "ST-AQA-POET-001",
+      "name": "Power and Conflict",
+      "title": "AQA GCSE Poetry Anthology: Power and Conflict",
+      "author": "Various (15 poets)",
+      "publication_year": null,
+      "exam_board": "AQA",
+      "text_category": "poetry_anthology",
+      "assessment_component": "Paper 2 Section B",
+      "genre": ["poetry"],
+      "period": "Various (Romantic to contemporary)",
+      "popularity_estimate": "dominant",
+      "key_themes": ["power of nature", "power of humans", "effects of conflict", "identity and place", "memory and loss", "reality of war"],
+      "key_context_points": [
+        "Romantic poetry and the sublime (Shelley, Wordsworth)",
+        "WWI poetry and the reality of trench warfare (Owen)",
+        "Post-colonial identity and cultural conflict (Agard, Dharker)",
+        "Northern Irish Troubles (Heaney)",
+        "Contemporary conflict and trauma (Garland, Weir)",
+        "The power of place and landscape in British poetry (Hughes, Wordsworth)"
+      ],
+      "key_quotations": [
+        {"act_scene": "Ozymandias", "speaker": "Shelley", "quotation": "Look on my Works, ye Mighty, and despair!", "significance": "Ironic — the works are ruined; transience of human power against time"},
+        {"act_scene": "London", "speaker": "Blake", "quotation": "In every cry of every Man, / In every Infant's cry of fear, / I hear the mind-forg'd manacles", "significance": "Psychological oppression — the chains are mental, imposed by institutions (church, state)"},
+        {"act_scene": "Exposure", "speaker": "Owen", "quotation": "Our brains ache, in the merciless iced east winds that knive us", "significance": "Personified nature as the enemy; sibilance and physical discomfort establish suffering as the reality of war"},
+        {"act_scene": "Remains", "speaker": "Armitage", "quotation": "His blood-Loss shadow stays on the street", "significance": "Trauma persists after the event; the image literally 'remains'; PTSD encoded in the form"}
+      ],
+      "literary_heritage": true,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    },
+    {
+      "set_text_id": "ST-AQA-SHAK-002",
+      "name": "Romeo and Juliet",
+      "title": "The Tragedy of Romeo and Juliet",
+      "author": "William Shakespeare",
+      "publication_year": 1597,
+      "exam_board": "AQA",
+      "text_category": "shakespeare",
+      "assessment_component": "Paper 1 Section A",
+      "genre": ["drama", "tragedy", "romance"],
+      "period": "Elizabethan",
+      "popularity_estimate": "common",
+      "key_themes": ["love", "fate and destiny", "family honour and loyalty", "youth versus age", "violence and conflict", "individual versus society"],
+      "key_context_points": [
+        "Elizabethan attitudes to love and marriage (arranged marriages, patriarchal authority)",
+        "The Italian setting and English attitudes to Italy (passion, violence, Catholicism)",
+        "The Prologue's revelation of the ending: fate versus free will",
+        "Honour culture and the blood feud tradition",
+        "The role of women in Elizabethan society (obedience, marriage as economic transaction)"
+      ],
+      "key_quotations": [
+        {"act_scene": "Prologue", "speaker": "Chorus", "quotation": "A pair of star-cross'd lovers take their life", "significance": "Fate announced from the outset; the audience watches knowing the ending — every moment of hope is dramatic irony"},
+        {"act_scene": "2.2", "speaker": "Juliet", "quotation": "What's in a name? That which we call a rose / By any other name would smell as sweet", "significance": "Juliet challenges the arbitrary nature of names and social identity; identity versus social expectation"},
+        {"act_scene": "3.1", "speaker": "Romeo", "quotation": "O, I am fortune's fool!", "significance": "Structural turning point — Romeo recognises fate's control; the tragedy accelerates from this moment"}
+      ],
+      "literary_heritage": true,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    },
+    {
+      "set_text_id": "ST-AQA-19C-003",
+      "name": "Frankenstein",
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "publication_year": 1818,
+      "exam_board": "AQA",
+      "text_category": "19th_century_novel",
+      "assessment_component": "Paper 1 Section B",
+      "genre": ["fiction", "gothic", "science fiction"],
+      "period": "Romantic",
+      "popularity_estimate": "moderate",
+      "key_themes": ["creation and responsibility", "the dangers of unchecked ambition", "isolation and belonging", "nature versus nurture", "the sublime", "monstrosity and sympathy"],
+      "key_context_points": [
+        "Romantic era: the sublime, emotion, and imagination versus Enlightenment rationalism",
+        "Galvanism and early electrical experiments (Luigi Galvani, 1780s)",
+        "Mary Shelley's personal context: mother's death (Mary Wollstonecraft), elopement with Percy Shelley",
+        "The ghost story competition at Villa Diodati (1816)",
+        "Industrial Revolution and anxieties about scientific progress",
+        "Prometheus myth: the cost of stealing knowledge from the gods"
+      ],
+      "key_quotations": [
+        {"act_scene": "Vol 1 Ch 4", "speaker": "Victor", "quotation": "I collected the instruments of life around me, that I might infuse a spark of being into the lifeless thing", "significance": "The moment of creation described with deliberate vagueness; Victor never explains how, only that he did — the focus is on moral transgression, not method"},
+        {"act_scene": "Vol 2 Ch 2", "speaker": "Creature", "quotation": "I am malicious because I am miserable", "significance": "The Creature's argument for nurture over nature; evil as a product of social rejection, not inherent monstrosity"},
+        {"act_scene": "Vol 2 Ch 9", "speaker": "Victor", "quotation": "I was the true murderer", "significance": "Victor accepts moral responsibility; the creator is more monstrous than the creature"}
+      ],
+      "literary_heritage": true,
+      "closed_book": true,
+      "display_category": "English Ontology",
+      "display_color": "#7C3AED",
+      "display_icon": "auto_stories"
+    }
+  ],
+  "same_text_different_board": [
+    {
+      "note": "Cross-board links to be added when Edexcel, OCR, and Eduqas set text nodes are created. Macbeth and Romeo and Juliet appear on all major boards. A Christmas Carol appears on AQA and Eduqas. An Inspector Calls appears on AQA and Edexcel."
+    }
+  ]
+}

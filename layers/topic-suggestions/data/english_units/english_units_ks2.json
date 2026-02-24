@@ -1,0 +1,1096 @@
+{
+  "version": "1.0",
+  "subject": "English",
+  "key_stage": "KS2",
+  "authored_by": "english-specialist-teacher",
+  "authored_date": "2026-02-24",
+  "note": "EnglishUnit nodes for KS2 (Y3-Y6). Genre-based units with statutory grammar from NC Appendix 2. Y3-Y4 lower KS2 units share the same programme of study; Y5-Y6 upper KS2 units share theirs. The Y4 units are migrated from the existing ContentVehicle and TopicSuggestion data with enriched properties.",
+  "units": [
+    {
+      "unit_id": "EU-EN-Y3-001",
+      "name": "Traditional Tales: Myths from Around the World",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y3"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y3-4): increasing their familiarity with a wide range of books, including fairy stories, myths and legends",
+        "Writing - Composition (Y3-4): composing and rehearsing sentences orally, including dialogue"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "supernatural elements (gods, monsters, magic)",
+        "heroic quest structure",
+        "moral or origin explanation",
+        "archetypal characters (hero, trickster, wise old figure)"
+      ],
+      "writing_outcome": "Retell a myth from a different culture (400-500 words) preserving key features of the genre including supernatural elements, a quest, and a moral",
+      "grammar_focus": ["multi-clause sentences with conjunctions (when, because, although)", "paragraphs to group related material", "present perfect tense"],
+      "grammar_year_source": "Y3",
+      "suggested_texts": [
+        {"title": "Tales of Ancient Egypt", "author": "Roger Lancelyn Green", "publication_year": 1967, "text_type": "retold myths", "suitability": "Y3-Y4", "note": "Accessible retellings with strong narrative structure"},
+        {"title": "The Orchard Book of Greek Myths", "author": "Geraldine McCaughrean", "publication_year": 1992, "text_type": "retold myths", "suitability": "Y3-Y4", "note": "Rich vocabulary with clear storytelling"}
+      ],
+      "reading_level": "Y3-Y4",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "formative",
+      "literary_terms": ["myth", "legend", "hero", "quest", "supernatural", "moral", "archetype"],
+      "definitions": ["myth", "supernatural", "archetype", "quest", "moral", "retell", "culture", "tradition"],
+      "pedagogical_rationale": "Myths from diverse cultures introduce Y3 to the wider world of traditional storytelling beyond European fairy tales. The common structures across cultures (hero's journey, origin explanations, moral teachings) develop pupils' ability to identify themes and conventions. The retelling task teaches narrative composition within a scaffolded framework — pupils know the story and can focus on language and style.",
+      "common_pitfalls": [
+        "All myths treated as interchangeable rather than exploring how cultural context shapes the story",
+        "Retelling is flat plot summary without vivid language or dialogue",
+        "Supernatural elements treated superficially rather than exploring why myths use them"
+      ],
+      "cross_curricular_hooks": [
+        "[History] Ancient civilisations — myths as windows into beliefs and values",
+        "[Geography] Where in the world do these myths come from?",
+        "[Art] Mythological illustration styles from different cultures"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y3-C020", "primary": true},
+        {"concept_id": "EN-Y3-C021", "primary": false},
+        {"concept_id": "EN-Y3-C044", "primary": false},
+        {"concept_id": "EN-Y3-C048", "primary": false},
+        {"concept_id": "EN-Y3-C054", "primary": false},
+        {"concept_id": "EN-Y3-C055", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-TRAD", "role": "primary"}, {"genre_id": "GEN-NARR", "role": "secondary"}],
+      "domain_ids": ["EN-Y3-D003", "EN-Y3-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y3-002",
+      "name": "Report Writing: Non-Chronological Reports",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y3"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y3-4): retrieve and record information from non-fiction",
+        "Writing - Composition (Y3-4): using organisational devices (headings and sub-headings)"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "subheadings for organisation",
+        "topic sentences to open paragraphs",
+        "present tense for general truths",
+        "formal register",
+        "technical vocabulary"
+      ],
+      "writing_outcome": "Write a non-chronological report (300-500 words) about a curriculum topic with subheadings, topic sentences, technical vocabulary, and a labelled diagram",
+      "grammar_focus": ["headings and sub-headings", "paragraphs to group related material", "present tense for factual statements"],
+      "grammar_year_source": "Y3",
+      "suggested_texts": [
+        {"title": "DK Eyewitness: Rocks and Minerals", "author": "DK", "publication_year": null, "text_type": "reference", "suitability": "Y3-Y4", "note": "Clear non-fiction layout for modelling report structure"},
+        {"title": "National Geographic Kids: Everything Rocks and Minerals", "author": "Steve Tomecek", "publication_year": 2011, "text_type": "reference", "suitability": "Y3", "note": "Accessible layout with subheadings and technical vocabulary"}
+      ],
+      "reading_level": "Y3",
+      "spoken_language_focus": "presentation",
+      "assessment_mode": "formative",
+      "literary_terms": ["formal register", "topic sentence", "technical vocabulary", "third person"],
+      "definitions": ["non-chronological", "report", "subheading", "topic sentence", "technical vocabulary", "formal", "register"],
+      "pedagogical_rationale": "Non-chronological reports are the gateway to academic writing. At Y3, the focus is on organising information under subheadings and using topic sentences — skills that transfer to every subject. Cross-curricular links (Science rocks, Geography rivers) provide authentic content so that the English lesson teaches the writing form while another subject provides the knowledge.",
+      "common_pitfalls": [
+        "Information copied from source without being reorganised or put in own words",
+        "Subheadings added but content under each heading is not grouped logically",
+        "Formal register drops into chatty, informal language mid-paragraph"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Rocks and soils, plants, animals — any topic with factual content to organise",
+        "[Geography] Rivers, weather, local area study"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y3-C031", "primary": true},
+        {"concept_id": "EN-Y3-C049", "primary": false},
+        {"concept_id": "EN-Y3-C063", "primary": false},
+        {"concept_id": "EN-Y3-C064", "primary": false},
+        {"concept_id": "EN-Y3-C030", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-REPORT", "role": "primary"}],
+      "domain_ids": ["EN-Y3-D003", "EN-Y3-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y3-003",
+      "name": "Adventure Narrative: The BFG",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y3"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Writing - Composition (Y3-4): composing sentences using a wider range of structures",
+        "Reading - Comprehension (Y3-4): drawing inferences such as inferring characters' feelings, thoughts and motives from their actions"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "character description through action and dialogue",
+        "setting description using expanded noun phrases",
+        "direct speech punctuation",
+        "building atmosphere and suspense"
+      ],
+      "writing_outcome": "Write an adventure narrative chapter (400-500 words) with a character who enters a strange or magical world, using direct speech, expanded noun phrases, and a clear narrative structure",
+      "grammar_focus": ["direct speech punctuation (inverted commas)", "expanded noun phrases", "fronted adverbials (optional introduction at Y3)"],
+      "grammar_year_source": "Y3",
+      "suggested_texts": [
+        {"title": "The BFG", "author": "Roald Dahl", "publication_year": 1982, "text_type": "novel", "suitability": "Y3-Y4", "note": "Rich vocabulary, clear narrative structure, and accessible adventure plot"},
+        {"title": "The Hodgeheg", "author": "Dick King-Smith", "publication_year": 1987, "text_type": "short novel", "suitability": "Y3", "note": "Shorter alternative with adventure elements and humour"}
+      ],
+      "reading_level": "Y3-Y4",
+      "spoken_language_focus": "dramatic_role_play",
+      "assessment_mode": "formative",
+      "literary_terms": ["protagonist", "dialogue", "setting", "atmosphere", "suspense", "narrator"],
+      "definitions": ["adventure", "protagonist", "dialogue", "inverted commas", "atmosphere", "suspense", "expanded noun phrase"],
+      "pedagogical_rationale": "The BFG provides an ideal model for Y3 adventure narrative because its portal-fantasy structure (child enters a strange world) is a clear, replicable pattern. Dahl's distinctive voice and inventive vocabulary inspire children's own language choices. The text naturally demands direct speech punctuation (the conversations between Sophie and the BFG) making grammar teaching contextual rather than decontextualised.",
+      "common_pitfalls": [
+        "Direct speech punctuation taught in isolation then not transferred to independent narrative writing",
+        "Character description is a static list of adjectives rather than revealed through action and dialogue",
+        "Adventure plot is all action with no reflective or descriptive moments"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Dreams and sleep — the BFG's dream-catching links to understanding sleep",
+        "[PSHE] Friendship, bravery, and standing up for what is right"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y3-C048", "primary": true},
+        {"concept_id": "EN-Y3-C044", "primary": false},
+        {"concept_id": "EN-Y3-C027", "primary": false},
+        {"concept_id": "EN-Y3-C059", "primary": false},
+        {"concept_id": "EN-Y3-C046", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-NARR", "role": "primary"}],
+      "domain_ids": ["EN-Y3-D006"],
+      "grammar_sequence_after": "EU-EN-Y3-001",
+      "text_complexity_after": "EU-EN-Y3-001",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y3-004",
+      "name": "Poetry: Shape Poems and Calligrams",
+      "unit_type": "poetry_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y3"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y3-4): recognising some different forms of poetry",
+        "Writing - Composition (Y3-4): composing and rehearsing sentences orally"
+      ],
+      "text_type": "poetry",
+      "text_features_to_teach": [
+        "visual layout as part of meaning (shape poems)",
+        "imagery and descriptive language",
+        "figurative language (simile introduction)",
+        "word choice for effect"
+      ],
+      "writing_outcome": "Write at least 2 poems: one shape poem where the layout reflects the subject, and one using similes, then perform one to an audience with expression",
+      "spoken_language_outcome": "Perform a poem to the class with expression, gesture, and eye contact",
+      "grammar_focus": ["expanded noun phrases for description", "simile using 'like' and 'as'", "prepositions for precise description"],
+      "grammar_year_source": "Y3",
+      "suggested_texts": [
+        {"title": "The Works: Poems for Key Stage 2", "author": "Pie Corbett (ed.)", "publication_year": 2002, "text_type": "poetry anthology", "suitability": "Y3-Y4", "note": "Wide range of forms including shape poems and calligrams"},
+        {"title": "Falling Out of the Sky", "author": "Rachel Rooney", "publication_year": 2016, "text_type": "poetry collection", "suitability": "Y3-Y4", "note": "Inventive forms with strong imagery"}
+      ],
+      "reading_level": "Y3",
+      "spoken_language_focus": "performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["simile", "imagery", "stanza", "verse", "calligram", "shape poem"],
+      "definitions": ["simile", "imagery", "shape poem", "calligram", "stanza", "verse", "form", "effect"],
+      "pedagogical_rationale": "Shape poems and calligrams make the connection between form and meaning visible and concrete. At Y3, this is an accessible way to teach that poetic form is a deliberate choice that shapes how the reader experiences the poem. Similes are introduced as the first explicit figurative language device because 'like' and 'as' provide clear signals that make the device identifiable.",
+      "common_pitfalls": [
+        "Shape poems become about drawing the shape rather than crafting the language",
+        "Similes are formulaic ('as big as a house') rather than original and precise",
+        "Performance is rushed through without attention to pace, volume, and expression"
+      ],
+      "cross_curricular_hooks": [
+        "[Art] Visual poetry as art — creating illustrated calligrams",
+        "[Science] Shape poems about natural phenomena (water, fire, animals)"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y3-C022", "primary": true},
+        {"concept_id": "EN-Y3-C024", "primary": false},
+        {"concept_id": "EN-Y3-C023", "primary": false},
+        {"concept_id": "EN-Y3-C053", "primary": false}
+      ],
+      "uses_template": ["VT-12"],
+      "in_genre": [{"genre_id": "GEN-POET", "role": "primary"}],
+      "domain_ids": ["EN-Y3-D003", "EN-Y3-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y4-001",
+      "name": "Adventure Narrative: The Iron Man",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Writing - Composition (Y3-4)",
+        "Reading - Comprehension (Y3-4)",
+        "English Appendix 2 (Y4 grammar)"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "problem-resolution structure",
+        "vivid description using expanded noun phrases",
+        "dialogue to advance plot",
+        "building suspense through sentence variation"
+      ],
+      "writing_outcome": "Write an adventure narrative (500-700 words) with clear problem-resolution structure, vivid description using expanded noun phrases, and dialogue punctuated with inverted commas",
+      "grammar_focus": ["fronted adverbials", "expanded noun phrases", "direct speech punctuation"],
+      "grammar_year_source": "Y4",
+      "suggested_texts": [
+        {"title": "The Iron Man", "author": "Ted Hughes", "publication_year": 1968, "text_type": "novel", "suitability": "Y3-Y5", "note": "Clear three-act structure, rich vocabulary, accessible themes of fear and friendship"},
+        {"title": "Stig of the Dump", "author": "Clive King", "publication_year": 1963, "text_type": "novel", "suitability": "Y3-Y5", "note": "Alternative anchor text with adventure and historical elements"}
+      ],
+      "reading_level": "Y3-Y5",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "formative",
+      "literary_terms": ["protagonist", "antagonist", "climax", "resolution", "suspense", "imagery", "personification"],
+      "definitions": ["narrative", "protagonist", "antagonist", "setting", "climax", "resolution", "suspense", "dialogue"],
+      "pedagogical_rationale": "Ted Hughes' The Iron Man provides a rich model for adventure narrative writing with its clear problem-resolution structure, vivid descriptive language, and dialogue that advances the plot. The text's accessible yet ambitious vocabulary and structural clarity make it an ideal mentor text for Y4 pupils learning to sustain narrative writing across multiple paragraphs with fronted adverbials and expanded noun phrases.",
+      "common_pitfalls": [
+        "Pupils retell The Iron Man rather than writing their own adventure narrative using its structural features",
+        "Dialogue added decoratively rather than used to advance the plot or reveal character",
+        "Fronted adverbials used repetitively without varying sentence openings"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Materials and their properties — the Iron Man's metal body",
+        "[PSHE] Themes of fear, friendship, and acceptance of difference",
+        "[Art] Illustration and character design inspired by the text"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y4-C016", "primary": true},
+        {"concept_id": "EN-Y4-C017", "primary": false},
+        {"concept_id": "EN-Y4-C019", "primary": false},
+        {"concept_id": "EN-Y4-C026", "primary": false},
+        {"concept_id": "EN-Y4-C027", "primary": false},
+        {"concept_id": "EN-Y4-C046", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-NARR", "role": "primary"}],
+      "domain_ids": ["EN-Y4-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y4-002",
+      "name": "Myths and Legends: Greek Myths",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y3-4): increasing familiarity with fairy stories, myths and legends",
+        "Writing - Composition (Y3-4): composing and rehearsing sentences orally"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "supernatural elements",
+        "heroic quest",
+        "moral lesson",
+        "origin explanation",
+        "archetypal characters"
+      ],
+      "writing_outcome": "Retell a Greek myth in own words (400-600 words) preserving key features and adding vivid description",
+      "grammar_focus": ["conjunctions for time and cause", "pronoun choice for cohesion", "present perfect tense"],
+      "grammar_year_source": "Y4",
+      "suggested_texts": [
+        {"title": "Greek Myths", "author": "Marcia Williams", "publication_year": 2006, "text_type": "retold myths", "suitability": "Y4", "note": "Accessible comic-strip style retellings"},
+        {"title": "Atticus the Storyteller", "author": "Lucy Coats", "publication_year": 2002, "text_type": "retold myths", "suitability": "Y4", "note": "Rich narrative retellings of 100 Greek myths"},
+        {"title": "Who Let the Gods Out?", "author": "Maz Evans", "publication_year": 2017, "text_type": "novel", "suitability": "Y4", "note": "Modern novel with Greek mythology context"}
+      ],
+      "reading_level": "Y4",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "formative",
+      "literary_terms": ["archetype", "theme", "convention", "genre", "moral", "quest narrative", "supernatural"],
+      "definitions": ["myth", "legend", "hero", "quest", "supernatural", "moral", "archetype", "retell"],
+      "pedagogical_rationale": "Greek myths offer an ideal vehicle for exploring narrative conventions, themes, and character archetypes at Y4 level. The recurring structures across different myths (heroic quest, supernatural elements, moral lessons) allow pupils to identify common features and practise retelling with their own embellishments, developing both comprehension and compositional skills.",
+      "common_pitfalls": [
+        "Pupils confuse myths with fairy tales or legends, losing the distinctive features of each genre",
+        "Retelling becomes a copy rather than a genuine reimagining with the pupil's own descriptive voice",
+        "Cross-referencing themes across myths is superficial without explicit modelling of how to compare"
+      ],
+      "cross_curricular_hooks": [
+        "[History] Ancient Greece topic — myths as primary sources for understanding beliefs and values",
+        "[Art] Greek pottery and mythological illustration",
+        "[Drama] Dramatic retelling and performance of myths"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y4-C019", "primary": true},
+        {"concept_id": "EN-Y4-C020", "primary": false},
+        {"concept_id": "EN-Y4-C022", "primary": false},
+        {"concept_id": "EN-Y4-C028", "primary": false},
+        {"concept_id": "EN-Y4-C031", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-TRAD", "role": "primary"}, {"genre_id": "GEN-NARR", "role": "secondary"}],
+      "domain_ids": ["EN-Y4-D003", "EN-Y4-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-Y3-001",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y4-003",
+      "name": "Persuasive Writing: Save Our Park",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Writing - Composition (Y3-4)",
+        "Writing - Vocabulary, Grammar and Punctuation (Y3-4)"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "formal tone",
+        "rhetorical questions",
+        "emotive language",
+        "logical argument structure",
+        "counter-argument"
+      ],
+      "writing_outcome": "Write a persuasive letter (300-500 words) using formal structure, rhetorical devices, and paragraphed arguments",
+      "grammar_focus": ["multi-clause sentences with conjunctions", "fronted adverbials", "paragraphs to organise ideas around a theme"],
+      "grammar_year_source": "Y4",
+      "suggested_texts": [
+        {"title": "Model persuasive letters (teacher-curated)", "author": "Various", "publication_year": null, "text_type": "model texts", "suitability": "Y4", "note": "Teacher models with clear persuasive features annotated"},
+        {"title": "Newspaper opinion columns (adapted)", "author": "Various", "publication_year": null, "text_type": "journalism", "suitability": "Y4", "note": "Age-appropriate editorials for analysing persuasive technique"}
+      ],
+      "reading_level": "Y4",
+      "spoken_language_focus": "debate",
+      "assessment_mode": "formative",
+      "literary_terms": ["rhetorical question", "emotive language", "counter-argument", "register", "tone"],
+      "definitions": ["persuasion", "rhetorical question", "emotive language", "formal", "argument", "counter-argument", "audience", "purpose"],
+      "pedagogical_rationale": "Persuasive writing develops pupils' ability to organise ideas logically, consider audience, and use language for deliberate effect. The 'Save Our Park' scenario provides a purposeful, real-world context that motivates genuine persuasion rather than formulaic letter-writing. It also bridges reading (identifying persuasive techniques in model texts) with writing (deploying those techniques independently).",
+      "common_pitfalls": [
+        "Pupils list opinions without supporting them with evidence or reasoning",
+        "Rhetorical questions used excessively rather than strategically for effect",
+        "Formal register lapses into informal language without the pupil noticing the shift"
+      ],
+      "cross_curricular_hooks": [
+        "[Geography] Local area study and land use",
+        "[PSHE] Community participation and civic responsibility",
+        "[Maths] Data collection and presentation to support arguments"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y4-C042", "primary": true},
+        {"concept_id": "EN-Y4-C045", "primary": false},
+        {"concept_id": "EN-Y4-C047", "primary": false},
+        {"concept_id": "EN-Y4-C048", "primary": false},
+        {"concept_id": "EN-Y4-C052", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-24"],
+      "in_genre": [{"genre_id": "GEN-PERSUADE", "role": "primary"}],
+      "domain_ids": ["EN-Y4-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y4-004",
+      "name": "Poetry: Performance and Form",
+      "unit_type": "poetry_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y3-4): recognising some different forms of poetry",
+        "Writing - Composition (Y3-4)",
+        "Spoken Language: use spoken language to develop understanding"
+      ],
+      "text_type": "poetry",
+      "text_features_to_teach": [
+        "rhythm and rhyme",
+        "imagery",
+        "figurative language (simile, metaphor, personification)",
+        "verse structure",
+        "performance techniques"
+      ],
+      "writing_outcome": "Write poems in at least 2 different forms and perform one to an audience with appropriate expression, pace, and volume",
+      "spoken_language_outcome": "Perform a poem to an audience with appropriate expression, pace, and volume",
+      "grammar_focus": ["figurative language and academic vocabulary", "expanded noun phrases"],
+      "grammar_year_source": "Y4",
+      "suggested_texts": [
+        {"title": "The Works: Every Kind of Poem", "author": "Paul Cookson (ed.)", "publication_year": 2000, "text_type": "poetry anthology", "suitability": "Y4", "note": "Comprehensive anthology with haiku, limerick, free verse, narrative poetry"},
+        {"title": "Quick Let's Get Out of Here", "author": "Michael Rosen", "publication_year": 1985, "text_type": "poetry collection", "suitability": "Y4", "note": "Performance-ready poems with strong voice and humour"},
+        {"title": "Revolting Rhymes", "author": "Roald Dahl", "publication_year": 1982, "text_type": "poetry collection", "suitability": "Y4", "note": "Narrative poetry that subverts fairy tale conventions"}
+      ],
+      "reading_level": "Y4",
+      "spoken_language_focus": "performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["simile", "metaphor", "imagery", "stanza", "verse", "rhyme scheme", "alliteration", "onomatopoeia", "personification"],
+      "definitions": ["verse", "stanza", "rhyme", "rhythm", "imagery", "simile", "metaphor", "haiku", "limerick", "free verse"],
+      "pedagogical_rationale": "Poetry study at Y4 develops pupils' appreciation of language precision and sound. Exploring multiple forms (haiku, limerick, free verse, narrative poetry) builds understanding that form shapes meaning and that poets make deliberate structural choices. The performance element is a statutory spoken language requirement and builds fluency, expression, and confidence.",
+      "common_pitfalls": [
+        "Focus on rhyme at the expense of meaning, imagery, and effect",
+        "Performance reduced to recitation without attention to expression, pace, or volume",
+        "Pupils write only in forms with strict rules (haiku, limerick) and avoid the challenge of free verse"
+      ],
+      "cross_curricular_hooks": [
+        "[Music] Rhythm and beat in poetry — links to musical metre",
+        "[History] Narrative poetry as a way of retelling historical events",
+        "[PSHE] Self-expression and confidence through performance"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y4-C021", "primary": true},
+        {"concept_id": "EN-Y4-C022", "primary": false},
+        {"concept_id": "EN-Y4-C023", "primary": false},
+        {"concept_id": "EN-Y4-C063", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-12"],
+      "in_genre": [{"genre_id": "GEN-POET", "role": "primary"}],
+      "domain_ids": ["EN-Y4-D003", "EN-Y4-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-Y3-004",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y4-005",
+      "name": "Information Text: Non-Chronological Report",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y3-4): retrieve and record information from non-fiction",
+        "Writing - Composition (Y3-4): using organisational devices"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "subheadings",
+        "topic sentences",
+        "technical vocabulary",
+        "present tense",
+        "formal register",
+        "diagrams and captions"
+      ],
+      "writing_outcome": "Write a non-chronological report (400-600 words) with subheadings, topic sentences, and integrated diagrams",
+      "grammar_focus": ["paragraphs to organise ideas around a theme", "expanded noun phrases", "Standard English verb inflections"],
+      "grammar_year_source": "Y4",
+      "suggested_texts": [
+        {"title": "DK Eyewitness books (topic-relevant)", "author": "DK", "publication_year": null, "text_type": "reference", "suitability": "Y4", "note": "Clear non-fiction layout with excellent organisational features"},
+        {"title": "National Geographic Kids articles", "author": "Various", "publication_year": null, "text_type": "journalism", "suitability": "Y4", "note": "Accessible online articles with subheadings and diagrams"}
+      ],
+      "reading_level": "Y4",
+      "spoken_language_focus": "presentation",
+      "assessment_mode": "formative",
+      "literary_terms": ["formal register", "topic sentence", "technical vocabulary", "third person"],
+      "definitions": ["non-chronological", "report", "subheading", "topic sentence", "technical vocabulary", "diagram", "caption", "glossary"],
+      "pedagogical_rationale": "Non-chronological reports develop pupils' ability to organise factual information logically using subheadings, topic sentences, and technical vocabulary. The cross-curricular link to Science or Geography provides authentic content for report writing, ensuring pupils write with genuine knowledge rather than padding. Retrieval and recording skills are also explicitly statutory at Y4.",
+      "common_pitfalls": [
+        "Reports become lists of copied facts rather than synthesised and reorganised information",
+        "Subheadings used as decoration rather than as genuine organisational tools for the reader",
+        "Technical vocabulary inserted without understanding, leading to inaccurate usage"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Non-chronological reports on habitats, states of matter, or the digestive system",
+        "[Geography] Reports on countries, rivers, or geographical features",
+        "[Computing] Using digital tools for research and presentation"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y4-C017", "primary": true},
+        {"concept_id": "EN-Y4-C029", "primary": false},
+        {"concept_id": "EN-Y4-C030", "primary": false},
+        {"concept_id": "EN-Y4-C045", "primary": false},
+        {"concept_id": "EN-Y4-C047", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-REPORT", "role": "primary"}],
+      "domain_ids": ["EN-Y4-D003", "EN-Y4-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-Y3-002",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y4-006",
+      "name": "Fairy Tales: Rewriting the Classics",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y3-4): increasing familiarity with fairy stories",
+        "Writing - Composition (Y3-4): composing and rehearsing sentences orally"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "traditional opening and ending",
+        "rule of three",
+        "good versus evil",
+        "transformation",
+        "subverted expectations (modern retellings)"
+      ],
+      "writing_outcome": "Write a fairy tale retelling (500-700 words) with a twist on the traditional version",
+      "grammar_focus": ["direct speech punctuation", "fronted adverbials", "pronoun choice for cohesion"],
+      "grammar_year_source": "Y4",
+      "suggested_texts": [
+        {"title": "The True Story of the 3 Little Pigs", "author": "Jon Scieszka", "publication_year": 1989, "text_type": "picture book", "suitability": "Y4", "note": "Classic retelling from the villain's perspective"},
+        {"title": "Revolting Rhymes", "author": "Roald Dahl", "publication_year": 1982, "text_type": "poetry collection", "suitability": "Y4", "note": "Subverted fairy tales in verse form"},
+        {"title": "Traditional tales collection", "author": "Various", "publication_year": null, "text_type": "anthology", "suitability": "Y4", "note": "Original versions for comparison"}
+      ],
+      "reading_level": "Y4",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "formative",
+      "literary_terms": ["narrator", "perspective", "archetype", "convention", "subversion", "motif", "moral"],
+      "definitions": ["fairy tale", "retelling", "archetype", "villain", "hero", "moral", "twist", "narrator"],
+      "pedagogical_rationale": "Comparing traditional fairy tales with modern retellings develops critical reading skills, particularly inference about character motives and thematic understanding. The retelling task scaffolds narrative writing effectively because pupils already know the plot structure and can focus on language choices, perspective shifts, and subverting reader expectations rather than generating plot from scratch.",
+      "common_pitfalls": [
+        "The 'twist' is superficial (changing names only) rather than a genuine subversion of expectations or perspective",
+        "Pupils struggle to maintain fairy tale conventions while simultaneously subverting them",
+        "Comparison work stays at plot level without exploring how language and perspective create different effects"
+      ],
+      "cross_curricular_hooks": [
+        "[Drama] Performing fairy tales from different characters' perspectives",
+        "[Art] Illustrating traditional versus modern fairy tale scenes for contrast",
+        "[PSHE] Exploring themes of good and evil, justice, and morality in fairy tales"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y4-C019", "primary": true},
+        {"concept_id": "EN-Y4-C020", "primary": false},
+        {"concept_id": "EN-Y4-C024", "primary": false},
+        {"concept_id": "EN-Y4-C026", "primary": false},
+        {"concept_id": "EN-Y4-C043", "primary": false},
+        {"concept_id": "EN-Y4-C046", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-TRAD", "role": "primary"}, {"genre_id": "GEN-NARR", "role": "secondary"}],
+      "domain_ids": ["EN-Y4-D003", "EN-Y4-D006"],
+      "grammar_sequence_after": "EU-EN-Y4-001",
+      "text_complexity_after": "EU-EN-Y4-002",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y4-007",
+      "name": "Spelling and Vocabulary: Word Detective",
+      "unit_type": "spelling_and_vocabulary",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "prescribed_topic",
+      "curriculum_reference": [
+        "Spelling (Appendix 1): Y3-4 word list and spelling rules",
+        "Reading - Word Reading (Y3-4)",
+        "Writing - Transcription (Y3-4)"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "word families",
+        "root words",
+        "prefix and suffix patterns",
+        "etymological connections"
+      ],
+      "writing_outcome": "Spelling log with word families, rules, and corrections applied in extended writing",
+      "grammar_focus": ["prefixes and suffixes spelling rules", "suffix doubling rules", "homophones"],
+      "grammar_year_source": "Y4",
+      "suggested_texts": [
+        {"title": "Y3-4 statutory word list", "author": "DfE", "publication_year": 2014, "text_type": "reference", "suitability": "Y4", "note": "Statutory word list for systematic study"},
+        {"title": "Etymological dictionaries (child-friendly)", "author": "Various", "publication_year": null, "text_type": "reference", "suitability": "Y4", "note": "For investigating word origins and patterns"}
+      ],
+      "reading_level": "Y4",
+      "spoken_language_focus": null,
+      "assessment_mode": "formative",
+      "literary_terms": ["morpheme", "prefix", "suffix", "root", "homophone", "homonym"],
+      "definitions": ["prefix", "suffix", "root word", "etymology", "homophone", "word family", "syllable", "consonant", "vowel"],
+      "pedagogical_rationale": "Systematic spelling instruction at Y4 must go beyond rote memorisation to build morphological awareness through prefixes, suffixes, and root words. An investigative approach where pupils act as 'word detectives' develops etymological curiosity and transferable spelling strategies. This maps directly to the statutory Y3-4 word list and Appendix 1 spelling rules.",
+      "common_pitfalls": [
+        "Spelling taught in isolation from reading and writing contexts, reducing transfer to independent work",
+        "Over-reliance on 'look, cover, write, check' without understanding the morphological rule behind the spelling",
+        "Homophones practised as pairs but not embedded in sentence-level context where the distinction matters"
+      ],
+      "cross_curricular_hooks": [
+        "[History] Etymology and word origins — Latin and Greek roots in English",
+        "[Languages] Comparing English spelling patterns with French and Spanish cognates",
+        "[Science] Technical vocabulary with Latin and Greek roots"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y4-C013", "primary": true},
+        {"concept_id": "EN-Y4-C014", "primary": false},
+        {"concept_id": "EN-Y4-C032", "primary": false},
+        {"concept_id": "EN-Y4-C033", "primary": false},
+        {"concept_id": "EN-Y4-C034", "primary": false},
+        {"concept_id": "EN-Y4-C035", "primary": false},
+        {"concept_id": "EN-Y4-C036", "primary": false},
+        {"concept_id": "EN-Y4-C038", "primary": false}
+      ],
+      "uses_template": ["VT-24"],
+      "in_genre": [],
+      "domain_ids": ["EN-Y4-D002", "EN-Y4-D004"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y4-008",
+      "name": "Discussion and Debate: Should Animals Be Kept in Zoos?",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Spoken Language (Y3-4)",
+        "Writing - Composition (Y3-4)",
+        "Reading - Comprehension (Y3-4)"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "for and against structure",
+        "connectives for contrast",
+        "conclusion with justified opinion",
+        "formal register"
+      ],
+      "writing_outcome": "Write a balanced discussion text (400-600 words) presenting both sides of the argument with a justified conclusion",
+      "spoken_language_outcome": "Participate in a structured class debate, presenting arguments for and against with evidence",
+      "grammar_focus": ["conjunctions, adverbs and prepositions for time and cause", "paragraphs to organise ideas around a theme", "multi-clause sentences"],
+      "grammar_year_source": "Y4",
+      "suggested_texts": [
+        {"title": "Should There Be Zoos?", "author": "Tony Stead", "publication_year": 2002, "text_type": "discussion text", "suitability": "Y4", "note": "Balanced discussion text modelling the for/against structure"},
+        {"title": "Newspaper debate articles (adapted)", "author": "Various", "publication_year": null, "text_type": "journalism", "suitability": "Y4", "note": "Age-appropriate debate articles for analysis"}
+      ],
+      "reading_level": "Y4",
+      "spoken_language_focus": "debate",
+      "assessment_mode": "formative",
+      "literary_terms": ["argument", "counter-argument", "connective", "register", "rhetorical question"],
+      "definitions": ["debate", "argument", "evidence", "opinion", "balanced", "counter-argument", "justify", "conclusion"],
+      "pedagogical_rationale": "Structured debate develops both oracy and writing simultaneously, which the NC requires at Y4. The zoo question provides a genuine moral dilemma with accessible arguments on both sides, making it easier for pupils to construct balanced arguments. Moving from spoken discussion to written balanced argument teaches pupils that writing captures and refines oral reasoning.",
+      "common_pitfalls": [
+        "Discussion dominated by a few confident speakers while quieter pupils disengage",
+        "Written arguments present personal opinion as the only valid position rather than genuinely balancing both sides",
+        "Connectives for contrast (however, on the other hand) used mechanically as sentence starters without genuine argumentative purpose"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Animal habitats, adaptation, and conservation",
+        "[Geography] Endangered species and human impact on environments",
+        "[PSHE] Ethical decision-making and respecting different viewpoints"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y4-C001", "primary": true},
+        {"concept_id": "EN-Y4-C004", "primary": false},
+        {"concept_id": "EN-Y4-C006", "primary": false},
+        {"concept_id": "EN-Y4-C007", "primary": false},
+        {"concept_id": "EN-Y4-C011", "primary": false},
+        {"concept_id": "EN-Y4-C042", "primary": false},
+        {"concept_id": "EN-Y4-C045", "primary": false}
+      ],
+      "uses_template": ["VT-11"],
+      "in_genre": [{"genre_id": "GEN-DISCUSS", "role": "primary"}],
+      "domain_ids": ["EN-Y4-D001", "EN-Y4-D006"],
+      "grammar_sequence_after": "EU-EN-Y4-003",
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y5-001",
+      "name": "Narrative: Myth-Inspired Fiction",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y5"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Writing - Composition (Y5-6): selecting appropriate grammar and vocabulary, understanding how such choices can change and enhance meaning",
+        "Reading - Comprehension (Y5-6): maintaining positive attitudes to reading and understanding of what they read"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "narrative voice and perspective",
+        "character development through dialogue and action",
+        "atmospheric description using figurative language",
+        "structural choices (flashback, foreshadowing)"
+      ],
+      "writing_outcome": "Write a myth-inspired narrative (600-800 words) with controlled narrative voice, atmospheric description using figurative language, and a clear thematic arc",
+      "grammar_focus": ["relative clauses", "modal verbs for possibility and obligation", "parenthesis (brackets, dashes, commas)"],
+      "grammar_year_source": "Y5",
+      "suggested_texts": [
+        {"title": "Beowulf", "author": "Michael Morpurgo", "publication_year": 2006, "text_type": "retold legend", "suitability": "Y5-Y6", "note": "Morpurgo's accessible retelling with rich descriptive language"},
+        {"title": "The Saga of Erik the Viking", "author": "Terry Jones", "publication_year": 1983, "text_type": "novel", "suitability": "Y5", "note": "Humorous mythological adventure with Norse setting"}
+      ],
+      "reading_level": "Y5-Y6",
+      "spoken_language_focus": "retelling",
+      "assessment_mode": "summative",
+      "literary_terms": ["narrative voice", "perspective", "atmosphere", "foreshadowing", "figurative language", "metaphor", "simile", "personification"],
+      "definitions": ["narrative voice", "atmosphere", "foreshadowing", "flashback", "figurative language", "thematic arc"],
+      "pedagogical_rationale": "At Y5, narrative writing moves from retelling to original composition with conscious stylistic choices. Myth-inspired fiction provides a bridge: pupils draw on the structural patterns of myth (quest, challenge, transformation) while developing their own narrative voice and descriptive style. This unit introduces relative clauses and parenthesis as tools for adding detail and complexity to sentences.",
+      "common_pitfalls": [
+        "Story is all plot with no atmospheric description or character development",
+        "Figurative language used randomly rather than to create a consistent atmosphere",
+        "Relative clauses and parenthetical asides interrupt flow rather than enhancing it"
+      ],
+      "cross_curricular_hooks": [
+        "[History] Anglo-Saxon and Viking Britain — myths as cultural artefacts",
+        "[Art] Illustration of mythological scenes using atmospheric techniques"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y5-C027", "primary": true},
+        {"concept_id": "EN-Y5-C025", "primary": false},
+        {"concept_id": "EN-Y5-C026", "primary": false},
+        {"concept_id": "EN-Y5-C028", "primary": false},
+        {"concept_id": "EN-Y5-C032", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-NARR", "role": "primary"}],
+      "domain_ids": ["EN-Y5-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-Y4-001",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y5-002",
+      "name": "Persuasion and Discussion: Balanced Argument",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y5"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Writing - Composition (Y5-6): identifying the audience for and purpose of the writing",
+        "Writing - Composition (Y5-6): using further organisational and presentational devices"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "formal academic register",
+        "cohesive devices linking paragraphs",
+        "hedging language (may, could, tends to)",
+        "evidence-based argumentation",
+        "counter-argument and rebuttal"
+      ],
+      "writing_outcome": "Write an extended balanced argument (500-700 words) on a topical issue with evidence from multiple sources, formal register, and a nuanced conclusion",
+      "grammar_focus": ["modal verbs for hedging", "cohesive devices across paragraphs", "passive voice for formality"],
+      "grammar_year_source": "Y5",
+      "suggested_texts": [
+        {"title": "Model discussion texts (teacher-curated)", "author": "Various", "publication_year": null, "text_type": "model texts", "suitability": "Y5", "note": "Exemplars with annotated cohesive devices and hedging language"},
+        {"title": "First News / The Week Junior articles", "author": "Various", "publication_year": null, "text_type": "journalism", "suitability": "Y5-Y6", "note": "Age-appropriate news articles presenting multiple viewpoints"}
+      ],
+      "reading_level": "Y5",
+      "spoken_language_focus": "debate",
+      "spoken_language_outcome": "Lead or participate in a structured formal debate, summarising key arguments from both sides",
+      "assessment_mode": "summative",
+      "literary_terms": ["register", "hedging", "modal verb", "passive voice", "cohesion", "evidence"],
+      "definitions": ["balanced argument", "evidence", "hedging", "modal verb", "cohesion", "rebuttal", "nuance", "perspective"],
+      "pedagogical_rationale": "At Y5, discussion writing becomes more analytically demanding. Pupils must move beyond simple for/against to acknowledge complexity, use hedging language (may, could, tends to), and build cohesion across paragraphs. The formal debate component develops the spoken language competence needed for secondary school. Modal verbs and passive voice are statutory Y5 grammar and fit naturally into academic register.",
+      "common_pitfalls": [
+        "Arguments are still binary (for/against) without acknowledging nuance or complexity",
+        "Modal verbs and passive voice used because the teacher says so, not because the register demands them",
+        "Conclusion simply repeats the strongest argument rather than genuinely weighing the evidence"
+      ],
+      "cross_curricular_hooks": [
+        "[PSHE] Current affairs and ethical issues",
+        "[Science] Environmental issues (deforestation, plastic, climate change)",
+        "[Geography] Global issues with local impact"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y5-C026", "primary": true},
+        {"concept_id": "EN-Y5-C025", "primary": false},
+        {"concept_id": "EN-Y5-C029", "primary": false},
+        {"concept_id": "EN-Y5-C030", "primary": false},
+        {"concept_id": "EN-Y5-C035", "primary": false}
+      ],
+      "uses_template": ["VT-11"],
+      "in_genre": [{"genre_id": "GEN-DISCUSS", "role": "primary"}, {"genre_id": "GEN-PERSUADE", "role": "secondary"}],
+      "domain_ids": ["EN-Y5-D006", "EN-Y5-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-Y4-008",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y5-003",
+      "name": "Poetry: Classic and Contemporary Comparison",
+      "unit_type": "poetry_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y5"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y5-6): learning a wider range of poetry by heart",
+        "Reading - Comprehension (Y5-6): making comparisons within and across books"
+      ],
+      "text_type": "poetry",
+      "text_features_to_teach": [
+        "comparison of poetic styles across time periods",
+        "effect of word choice on mood and tone",
+        "structural features (enjambment, caesura introduced informally)",
+        "poetic voice and perspective"
+      ],
+      "writing_outcome": "Write a poem responding to or inspired by a classic poem, using figurative language and structural choices to create a specific mood, then perform it with expression",
+      "spoken_language_outcome": "Learn and perform a poem by heart with expression, pace, volume, and audience awareness",
+      "grammar_focus": ["figurative language (extended metaphor)", "relative clauses for added detail", "punctuation for effect"],
+      "grammar_year_source": "Y5",
+      "suggested_texts": [
+        {"title": "The Lost Words", "author": "Robert Macfarlane and Jackie Morris", "publication_year": 2017, "text_type": "poetry collection", "suitability": "Y5-Y6", "note": "Spell poems about vanishing nature words — rich vocabulary and imagery"},
+        {"title": "A Poem for Every Night of the Year", "author": "Allie Esiri (ed.)", "publication_year": 2016, "text_type": "poetry anthology", "suitability": "Y5-Y6", "note": "Classic and contemporary poems for comparison"}
+      ],
+      "reading_level": "Y5-Y6",
+      "spoken_language_focus": "performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["enjambment", "caesura", "mood", "tone", "extended metaphor", "voice", "perspective"],
+      "definitions": ["enjambment", "caesura", "mood", "tone", "extended metaphor", "classic", "contemporary", "perspective"],
+      "pedagogical_rationale": "At Y5, poetry study introduces comparison across time periods and styles — a skill directly required for KS3 and GCSE. Comparing a classic poem with a contemporary response develops critical awareness that poetry exists in dialogue across time. The writing task (responding to a classic poem) gives pupils a scaffold while demanding original expression.",
+      "common_pitfalls": [
+        "Comparison stays at surface level (one is old, one is new) without analysing how language and form create different effects",
+        "Pupils' own poems imitate the classic too closely rather than responding with their own voice",
+        "Performance is flat and rushed — insufficient rehearsal time allocated"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Nature poetry linked to environmental topics",
+        "[History] Historical context of classic poems"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y5-C016", "primary": true},
+        {"concept_id": "EN-Y5-C017", "primary": false},
+        {"concept_id": "EN-Y5-C021", "primary": false},
+        {"concept_id": "EN-Y5-C034", "primary": false}
+      ],
+      "uses_template": ["VT-12"],
+      "in_genre": [{"genre_id": "GEN-POET", "role": "primary"}],
+      "domain_ids": ["EN-Y5-D003", "EN-Y5-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-Y4-004",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y6-001",
+      "name": "Narrative: Literary Fiction",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y6"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "Writing - Composition (Y5-6): selecting appropriate grammar and vocabulary, understanding how such choices can change and enhance meaning",
+        "Reading - Comprehension (Y5-6): identifying how language, structure and presentation contribute to meaning"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "controlled narrative voice (first or third person with distinct perspective)",
+        "setting as atmosphere (pathetic fallacy, symbolic setting)",
+        "dialogue revealing character and advancing plot",
+        "structural choices for effect (non-linear chronology, multiple perspectives)"
+      ],
+      "writing_outcome": "Write a literary narrative (700-1000 words) with controlled voice, atmospheric setting, and sophisticated structural choices, demonstrating conscious grammatical control throughout",
+      "grammar_focus": ["semi-colons and colons for independent clauses", "active and passive voice for effect", "formal vocabulary choices", "advanced cohesive devices (ellipsis, repetition)"],
+      "grammar_year_source": "Y6",
+      "suggested_texts": [
+        {"title": "Skellig", "author": "David Almond", "publication_year": 1998, "text_type": "novel", "suitability": "Y6", "note": "Literary fiction with controlled voice, atmospheric setting, and thematic depth"},
+        {"title": "The Boy in the Striped Pyjamas", "author": "John Boyne", "publication_year": 2006, "text_type": "novel", "suitability": "Y6", "note": "First-person naive narrator with dramatic irony — strong model for voice"}
+      ],
+      "reading_level": "Y6",
+      "spoken_language_focus": null,
+      "assessment_mode": "summative",
+      "literary_terms": ["narrative voice", "pathetic fallacy", "dramatic irony", "symbolism", "foreshadowing", "ellipsis", "motif"],
+      "definitions": ["narrative voice", "pathetic fallacy", "dramatic irony", "symbolism", "foreshadowing", "literary fiction", "conscious control"],
+      "pedagogical_rationale": "Y6 narrative is the culmination of primary English writing. Pupils must demonstrate 'conscious grammatical control' (NC) and the ability to select vocabulary and grammar to 'change and enhance meaning.' This unit bridges to KS3 by introducing literary fiction concepts (narrative voice, symbolism, structural choices) that will be central to secondary English study. The longer piece (700-1000 words) develops writing stamina needed for KS3.",
+      "common_pitfalls": [
+        "Narrative voice is inconsistent — slipping between first and third person or between formal and informal",
+        "Advanced punctuation (semi-colons, colons) used incorrectly or forced into the writing",
+        "Structural choices (flashback, multiple perspectives) attempted but executed confusingly"
+      ],
+      "cross_curricular_hooks": [
+        "[History] Historical fiction drawing on KS2 history topics",
+        "[PSHE] Themes of identity, growing up, and moral choice"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y6-C026", "primary": true},
+        {"concept_id": "EN-Y6-C013", "primary": false},
+        {"concept_id": "EN-Y6-C004", "primary": false},
+        {"concept_id": "EN-Y6-C006", "primary": false},
+        {"concept_id": "EN-Y6-C012", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-NARR", "role": "primary"}, {"genre_id": "GEN-FICT", "role": "secondary"}],
+      "domain_ids": ["EN-Y6-D006"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-Y5-001",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y6-002",
+      "name": "Non-Fiction: Formal Persuasion and Discussion",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y6"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "Writing - Composition (Y5-6): using further organisational and presentational devices to structure text",
+        "Writing - Vocabulary, Grammar and Punctuation (Y5-6): using the passive voice, formal vocabulary"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "formal academic register throughout",
+        "passive voice for objectivity",
+        "subjunctive mood (if I were, were he to)",
+        "cohesive devices across an extended piece",
+        "counter-argument with nuanced rebuttal"
+      ],
+      "writing_outcome": "Write a formal persuasive or discursive essay (600-800 words) with controlled register, passive voice, subjunctive forms, and evidence-based argumentation",
+      "grammar_focus": ["passive voice for formality", "subjunctive forms", "formal vocabulary and structures", "semi-colons within lists", "colons to introduce lists"],
+      "grammar_year_source": "Y6",
+      "suggested_texts": [
+        {"title": "Model formal essays (teacher-curated)", "author": "Various", "publication_year": null, "text_type": "model texts", "suitability": "Y6", "note": "Exemplars demonstrating formal register, passive voice, and subjunctive"},
+        {"title": "First News editorials and opinion pieces", "author": "Various", "publication_year": null, "text_type": "journalism", "suitability": "Y6", "note": "Real-world examples of formal persuasive writing for children"}
+      ],
+      "reading_level": "Y6",
+      "spoken_language_focus": "formal_presentation",
+      "spoken_language_outcome": "Deliver a formal presentation on a topical issue to the class, using Standard English and structured argument",
+      "assessment_mode": "summative",
+      "literary_terms": ["register", "passive voice", "subjunctive", "rhetorical device", "formal tone"],
+      "definitions": ["subjunctive", "passive voice", "register", "formal", "informal", "objective", "subjective", "rhetoric", "cohesion"],
+      "pedagogical_rationale": "Y6 formal writing is the direct bridge to KS3 academic writing. The NC requires subjunctive forms and passive voice to be taught at Y6, and both are best introduced in the context of formal essay writing where they serve a genuine purpose (objectivity, formality). This unit ensures pupils arrive at secondary school able to write in a controlled formal register — a skill many KS3 teachers identify as the biggest gap.",
+      "common_pitfalls": [
+        "Passive voice and subjunctive inserted artificially rather than used where the register demands them",
+        "Formal register collapses into informal language in the middle of the piece",
+        "Arguments are opinions dressed up in formal language rather than genuine evidence-based reasoning"
+      ],
+      "cross_curricular_hooks": [
+        "[PSHE] Topical ethical issues (environment, technology, rights)",
+        "[Science] Scientific debates (space exploration, genetic modification)",
+        "[Citizenship] Democracy, rights, and responsibilities"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y6-C025", "primary": true},
+        {"concept_id": "EN-Y6-C003", "primary": false},
+        {"concept_id": "EN-Y6-C010", "primary": false},
+        {"concept_id": "EN-Y6-C001", "primary": false},
+        {"concept_id": "EN-Y6-C014", "primary": false},
+        {"concept_id": "EN-Y6-C045", "primary": false}
+      ],
+      "uses_template": ["VT-11", "VT-24"],
+      "in_genre": [{"genre_id": "GEN-PERSUADE", "role": "primary"}, {"genre_id": "GEN-DISCUSS", "role": "secondary"}],
+      "domain_ids": ["EN-Y6-D006", "EN-Y6-D007"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-Y5-002",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-Y6-003",
+      "name": "Shakespeare: A Midsummer Night's Dream",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS2",
+      "year_groups": ["Y6"],
+      "curriculum_status": "convention",
+      "suggestion_type": "teacher_convention",
+      "curriculum_reference": [
+        "Reading - Comprehension (Y5-6): increasing their familiarity with a wide range of books, including from our literary heritage",
+        "Spoken Language: participate in discussions, presentations, performances, role play, improvisations and debates"
+      ],
+      "text_type": "drama",
+      "text_features_to_teach": [
+        "Shakespearean language and vocabulary",
+        "play structure (acts, scenes, stage directions)",
+        "dramatic irony and comedy",
+        "character relationships and conflict",
+        "performance interpretation"
+      ],
+      "writing_outcome": "Write a modern retelling of one scene from A Midsummer Night's Dream (400-600 words) or a character diary entry exploring a character's motives and feelings",
+      "spoken_language_outcome": "Perform a scene from the play with expression, movement, and audience awareness",
+      "grammar_focus": ["direct speech punctuation in playscript format", "formal and archaic vocabulary", "exclamation for dramatic effect"],
+      "grammar_year_source": "Y6",
+      "suggested_texts": [
+        {"title": "A Midsummer Night's Dream (Usborne Illustrated)", "author": "William Shakespeare / Rosie Dickins", "publication_year": 2014, "text_type": "adapted play", "suitability": "Y6", "note": "Accessible illustrated adaptation with original language extracts"},
+        {"title": "A Midsummer Night's Dream (Shakespeare Stories)", "author": "Andrew Matthews / Tony Ross", "publication_year": 2001, "text_type": "narrative retelling", "suitability": "Y5-Y6", "note": "Narrative retelling that preserves key language and plot"}
+      ],
+      "reading_level": "Y6",
+      "spoken_language_focus": "performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["soliloquy", "aside", "dramatic irony", "comedy", "tragedy", "act", "scene", "stage direction"],
+      "definitions": ["Shakespeare", "playwright", "soliloquy", "aside", "dramatic irony", "stage direction", "act", "scene", "adaptation"],
+      "pedagogical_rationale": "While Shakespeare is not statutory until KS3, the vast majority of primary schools introduce Shakespeare in Y6 as preparation for secondary school. A Midsummer Night's Dream is the most popular choice because its comedy, magic, and mistaken identity are accessible to 10-11 year olds. The performance element develops spoken language skills and confidence. Encountering Shakespearean language at Y6 reduces the anxiety of meeting it at KS3.",
+      "common_pitfalls": [
+        "Too much time spent on plot comprehension, too little on language exploration and performance",
+        "Shakespearean language presented as incomprehensible rather than as a puzzle to be decoded",
+        "Writing task defaults to plot summary rather than creative response or analytical diary entry"
+      ],
+      "cross_curricular_hooks": [
+        "[History] Tudor and Jacobean theatre — the Globe, Elizabethan audience",
+        "[Drama] Performance techniques and stagecraft",
+        "[Art] Set and costume design for a production"
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-Y6-C017", "primary": true},
+        {"concept_id": "EN-Y6-C019", "primary": false},
+        {"concept_id": "EN-Y6-C021", "primary": false},
+        {"concept_id": "EN-Y6-C048", "primary": false},
+        {"concept_id": "EN-Y6-C045", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-PLAY", "role": "primary"}, {"genre_id": "GEN-DRAMA", "role": "secondary"}],
+      "domain_ids": ["EN-Y6-D003", "EN-Y6-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    }
+  ]
+}

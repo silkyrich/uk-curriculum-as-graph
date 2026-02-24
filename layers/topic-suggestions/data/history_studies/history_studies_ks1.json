@@ -1,0 +1,602 @@
+{
+  "version": "1.0",
+  "subject": "History",
+  "key_stage": "KS1",
+  "authored_by": "history-specialist",
+  "authored_date": "2026-02-24",
+  "note": "KS1 HistoryStudy nodes. Covers: changes within living memory, events beyond living memory (Great Fire, first aeroplanes, Moon landings), significant individuals (paired and single), and local history. Ontology study_types used: significant_individual, paired_figure_study, event_study, local_history_study.",
+  "studies": [
+    {
+      "study_id": "HS-KS1-001",
+      "name": "Changes Within Living Memory",
+      "study_type": "thematic_study",
+      "subject": "History",
+      "key_stage": "KS1",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS1 History: 'Changes within living memory. Where appropriate, these should be used to reveal aspects of change in national life'"
+      ],
+      "period": "Within living memory (approx. 1950s-present)",
+      "period_start_year": null,
+      "period_end_year": null,
+      "significance_claim": "Changes within living memory connect abstract historical concepts to concrete, personal experience, demonstrating that history is not only about distant events but about the ongoing transformation of the world around us.",
+      "pedagogical_rationale": "This is the most accessible entry point for historical thinking at KS1: pupils can interview grandparents, compare photographs, and handle real objects from different decades. It grounds the abstract concept of 'the past' in their own family experience and develops chronological understanding through personally meaningful content.",
+      "enquiry_questions": [
+        "How has daily life changed since your grandparents were children?",
+        "What has changed in our school or local area within living memory?",
+        "What has stayed the same despite all the changes?"
+      ],
+      "key_figures": [],
+      "comparison_pairs": null,
+      "key_events": [],
+      "perspectives": ["grandparent/elder", "child today", "community member"],
+      "interpretations": null,
+      "source_types": ["primary_visual", "oral_testimony", "museum_artefact"],
+      "definitions": ["living memory", "change", "past", "present", "old", "new", "modern", "generation"],
+      "common_pitfalls": [
+        "Presenting all change as improvement rather than asking what was gained and what was lost",
+        "Treating oral testimony as just a fun activity rather than as historical source analysis",
+        "Choosing comparison objects that are too similar (two recent phones) rather than dramatically different (rotary phone vs smartphone)"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Writing recounts of grandparent interviews; comparing old and new stories", "strength": "strong"},
+        {"subject": "Science", "hook": "Materials and technology: why do objects look and work differently now?", "strength": "moderate"},
+        {"subject": "Art & Design", "hook": "Comparing art, design and fashion across decades", "strength": "light"}
+      ],
+      "sensitive_content_notes": [
+        "Some pupils may not have grandparents or may have difficult family circumstances; provide alternative sources of 'living memory'",
+        "Changes within living memory may include traumatic events (war, displacement) for some families"
+      ],
+      "year_groups": ["Y1", "Y2"],
+      "duration_lessons": 6,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 1, "ks_guidance": "At KS1, change and continuity means comparing 'then' and 'now' using real objects and photographs, asking 'What is the same? What is different?'"},
+        {"disciplinary_concept_slug": "chronology", "rank": 2, "ks_guidance": "At KS1, chronology means ordering events on a simple timeline and using vocabulary like 'before', 'after', 'long ago', 'recently'."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS1, evidence means asking 'How do we know about this?' and using objects, photos, and people's memories as sources."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS1-C001", "primary": false},
+        {"concept_id": "HI-KS1-C002", "primary": true},
+        {"concept_id": "HI-KS1-C005", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS1-D001", "HI-KS1-D002"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS1-002",
+      "name": "The Great Fire of London",
+      "study_type": "event_study",
+      "subject": "History",
+      "key_stage": "KS1",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks1_events_beyond_living_memory",
+      "curriculum_reference": [
+        "NC KS1 History: 'events beyond living memory that are significant nationally or globally [for example, the Great Fire of London, the first aeroplane flight or events commemorated through festivals or anniversaries]'"
+      ],
+      "period": "1666",
+      "period_start_year": 1666,
+      "period_end_year": 1666,
+      "significance_claim": "The Great Fire destroyed most of medieval London and led to fundamental changes in building regulations, fire-fighting and urban planning that shaped the modern city.",
+      "pedagogical_rationale": "The Great Fire is the most widely taught KS1 event beyond living memory because it offers a dramatic, visually engaging narrative with clear cause and consequence, rich primary sources (Pepys' diary, contemporary illustrations), and connection to modern fire safety. The chronological distance (over 350 years) is ideal for developing a sense of historical depth beyond personal experience.",
+      "enquiry_questions": [
+        "Why did the fire spread so quickly, and how was it eventually stopped?",
+        "What was it like to live through the Great Fire?",
+        "How did the Great Fire change London?"
+      ],
+      "key_figures": ["Samuel Pepys", "Thomas Farriner", "King Charles II"],
+      "comparison_pairs": null,
+      "key_events": ["Fire starts in Pudding Lane bakery 2 September 1666", "Fire spreads across the City over 4 days", "Old St Paul's Cathedral destroyed", "Fire extinguished 5 September 1666"],
+      "perspectives": ["Samuel Pepys (eyewitness diarist)", "baker Thomas Farriner", "Londoner fleeing the fire", "King Charles II"],
+      "interpretations": null,
+      "source_types": ["primary_written", "primary_visual", "built_heritage"],
+      "definitions": ["fire", "diary", "eyewitness", "bakery", "cathedral", "spread", "destroyed", "rebuilt", "brick", "stone"],
+      "common_pitfalls": [
+        "Focusing only on the drama of the fire rather than analysing cause and consequence",
+        "Not helping pupils understand the chronological distance: 1666 is a very long time ago for a 5-year-old",
+        "Treating Pepys' diary as unquestionable truth rather than as one person's perspective"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Diary writing from Pepys' perspective; retelling the story in sequence", "strength": "strong"},
+        {"subject": "Science", "hook": "Materials: why did the wooden buildings burn? What materials resist fire?", "strength": "strong"},
+        {"subject": "Geography", "hook": "Maps of London before and after the fire", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Fire can be frightening for young children; focus on the human response (helping each other, rebuilding) rather than dwelling on destruction"
+      ],
+      "year_groups": ["Y1", "Y2"],
+      "duration_lessons": 6,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS1, cause and consequence means asking 'Why did this happen?' and 'What happened because of it?' using simple because/so chains."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 2, "ks_guidance": "At KS1, evidence means looking at Samuel Pepys' diary and old pictures and asking 'What does this tell us about the fire?'"},
+        {"disciplinary_concept_slug": "chronology", "rank": 3, "ks_guidance": "At KS1, chronology means understanding that 1666 was a very long time ago and placing the fire on a simple timeline."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS1-C001", "primary": false},
+        {"concept_id": "HI-KS1-C002", "primary": false},
+        {"concept_id": "HI-KS1-C004", "primary": true},
+        {"concept_id": "HI-KS1-C005", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS1-D001", "HI-KS1-D002"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-001", "HSRC-002"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS1-003",
+      "name": "The First Aeroplanes",
+      "study_type": "event_study",
+      "subject": "History",
+      "key_stage": "KS1",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks1_events_beyond_living_memory",
+      "curriculum_reference": [
+        "NC KS1 History: 'events beyond living memory that are significant nationally or globally [for example, the Great Fire of London, the first aeroplane flight or events commemorated through festivals or anniversaries]'"
+      ],
+      "period": "1903",
+      "period_start_year": 1903,
+      "period_end_year": 1903,
+      "significance_claim": "The Wright Brothers' first powered flight in 1903 was the beginning of aviation, which transformed global travel, warfare, trade and communication within a single century.",
+      "pedagogical_rationale": "The first aeroplane flight connects technology, engineering and human aspiration in a narrative accessible to young children. It develops the concept of change (from a world without flight to one where flight is routine) and significance (why does this invention matter?). Comparison with modern aviation develops chronological understanding of scale of change.",
+      "enquiry_questions": [
+        "Why was the first aeroplane flight so significant?",
+        "How have aeroplanes changed since 1903?",
+        "What would the world be like without aeroplanes?"
+      ],
+      "key_figures": ["Orville Wright", "Wilbur Wright"],
+      "comparison_pairs": null,
+      "key_events": ["Wright Brothers' first flight at Kitty Hawk 17 December 1903"],
+      "perspectives": ["Orville Wright (pilot)", "Wilbur Wright (observer)", "spectator at Kitty Hawk"],
+      "interpretations": null,
+      "source_types": ["primary_visual", "primary_written"],
+      "definitions": ["aeroplane", "flight", "invention", "significant", "change", "technology", "pilot"],
+      "common_pitfalls": [
+        "Focusing only on the Wright Brothers without acknowledging other aviation pioneers",
+        "Not helping pupils grasp how recently flight was invented relative to other historical events they study"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Science", "hook": "Forces: what makes an aeroplane fly? Lift, thrust, drag, gravity", "strength": "strong"},
+        {"subject": "Design & Technology", "hook": "Designing and testing paper aeroplanes; understanding design iteration", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [],
+      "year_groups": ["Y1", "Y2"],
+      "duration_lessons": 4,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "significance", "rank": 1, "ks_guidance": "At KS1, significance means asking 'Why was this important?' and 'What difference did it make to people's lives?'"},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS1, change means comparing 'before' and 'after' the invention: how was travel different before aeroplanes?"},
+        {"disciplinary_concept_slug": "chronology", "rank": 3, "ks_guidance": "At KS1, place 1903 on a timeline and compare with other events studied."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS1-C001", "primary": false},
+        {"concept_id": "HI-KS1-C002", "primary": false},
+        {"concept_id": "HI-KS1-C004", "primary": true}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS1-D001", "HI-KS1-D002"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS1-004", "theme": "exploration and human achievement"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS1-004",
+      "name": "The Moon Landings",
+      "study_type": "event_study",
+      "subject": "History",
+      "key_stage": "KS1",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks1_events_beyond_living_memory",
+      "curriculum_reference": [
+        "NC KS1 History: 'events beyond living memory that are significant nationally or globally'"
+      ],
+      "period": "1969",
+      "period_start_year": 1969,
+      "period_end_year": 1969,
+      "significance_claim": "The Apollo 11 Moon landing was the first time humans set foot on another world, representing one of the greatest technological and exploratory achievements in human history.",
+      "pedagogical_rationale": "The Moon landings capture children's imagination and develop the concept of significance through an event whose scale is awe-inspiring. The event is within grandparents' living memory for many pupils, bridging the 'beyond living memory' requirement with accessible oral testimony. It develops chronological understanding (1969 is both 'a long time ago' and 'within Grandma's lifetime').",
+      "enquiry_questions": [
+        "Why did people want to go to the Moon?",
+        "What was it like to watch the Moon landing for the first time?",
+        "Why is the Moon landing still significant today?"
+      ],
+      "key_figures": ["Neil Armstrong", "Buzz Aldrin", "Michael Collins"],
+      "comparison_pairs": null,
+      "key_events": ["Apollo 11 launch 16 July 1969", "Moon landing 20 July 1969", "Neil Armstrong's first step", "Safe return to Earth 24 July 1969"],
+      "perspectives": ["Neil Armstrong (astronaut)", "mission control", "TV viewer watching at home", "child in 1969"],
+      "interpretations": null,
+      "source_types": ["primary_visual", "primary_audiovisual", "oral_testimony"],
+      "definitions": ["Moon", "astronaut", "spacecraft", "launch", "landing", "significant", "achievement", "explore"],
+      "common_pitfalls": [
+        "Treating the Moon landing as just a 'cool fact' rather than exploring its historical significance",
+        "Not connecting it to the broader Cold War space race context (simplified for KS1)"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Science", "hook": "Space, Earth and the Moon; what is the Moon? How far away is it?", "strength": "strong"},
+        {"subject": "English", "hook": "Writing a recount of the Moon landing; reporting as a news broadcaster", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [],
+      "year_groups": ["Y1", "Y2"],
+      "duration_lessons": 4,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "significance", "rank": 1, "ks_guidance": "At KS1, ask 'Why do people still talk about the Moon landing?' and 'What made it so special?'"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 2, "ks_guidance": "At KS1, use photographs and film footage as sources. Ask 'How do we know about the Moon landing?'"},
+        {"disciplinary_concept_slug": "chronology", "rank": 3, "ks_guidance": "At KS1, help pupils understand that 1969 was within their grandparents' lifetime."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS1-C001", "primary": false},
+        {"concept_id": "HI-KS1-C002", "primary": false},
+        {"concept_id": "HI-KS1-C004", "primary": true}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS1-D001", "HI-KS1-D002"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS1-003", "theme": "exploration and human achievement"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS1-005",
+      "name": "Florence Nightingale & Mary Seacole",
+      "study_type": "paired_figure_study",
+      "subject": "History",
+      "key_stage": "KS1",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks1_significant_individuals",
+      "curriculum_reference": [
+        "NC KS1 History: 'the lives of significant individuals in the past who have contributed to national and international achievements. Some should be used to compare aspects of life in different periods [for example, ... Mary Seacole and/or Florence Nightingale and Edith Cavell]'"
+      ],
+      "period": "1820-1910",
+      "period_start_year": 1820,
+      "period_end_year": 1910,
+      "significance_claim": "Nightingale transformed nursing into a respected evidence-based profession. Seacole's parallel achievements, long overlooked due to racial prejudice, reveal how historical recognition is shaped by social context.",
+      "pedagogical_rationale": "The pairing develops the disciplinary concept of significance: both women contributed to healthcare, but their recognition differed dramatically. This comparison introduces KS1 pupils to the idea that history involves selection and that some people are overlooked. It also develops similarity and difference through comparing two contemporaries from different backgrounds.",
+      "enquiry_questions": [
+        "Why are Florence Nightingale and Mary Seacole both significant?",
+        "Why was Florence Nightingale famous in her lifetime while Mary Seacole was forgotten?",
+        "What can we learn from comparing their lives?"
+      ],
+      "key_figures": ["Florence Nightingale", "Mary Seacole"],
+      "comparison_pairs": [
+        {
+          "figure_a": "Florence Nightingale",
+          "figure_b": "Mary Seacole",
+          "comparison_focus": "Both contributed to nursing in the Crimean War, but their backgrounds, methods and recognition differed dramatically. Explore why."
+        }
+      ],
+      "key_events": ["Crimean War 1853-56", "Nightingale at Scutari Hospital", "Seacole's British Hotel near Balaclava"],
+      "perspectives": ["Florence Nightingale", "Mary Seacole", "wounded soldier", "Victorian society"],
+      "interpretations": null,
+      "source_types": ["primary_visual", "primary_written"],
+      "definitions": ["significant", "nurse", "Crimean War", "hospital", "contribution", "recognition", "prejudice"],
+      "common_pitfalls": [
+        "Reducing the lesson to biography recitation rather than exploring WHY these figures are significant",
+        "Treating Seacole as an add-on to Nightingale's story rather than a significant figure in her own right",
+        "Avoiding discussion of racial prejudice, which is central to understanding why Seacole was forgotten"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Writing recounts and diary entries from Nightingale or Seacole's perspective", "strength": "strong"},
+        {"subject": "Science", "hook": "Hygiene and handwashing: why did Nightingale insist on cleanliness?", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Seacole experienced racial prejudice; discuss age-appropriately as unfairness based on skin colour",
+        "War involves injury and death; focus on the caring response rather than the violence"
+      ],
+      "year_groups": ["Y1", "Y2"],
+      "duration_lessons": 6,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "significance", "rank": 1, "ks_guidance": "At KS1, significance means asking 'Why do we remember this person?' and 'What difference did they make?'"},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 2, "ks_guidance": "At KS1, compare two people: what was the same and what was different about their lives?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS1, use portraits and simplified extracts to ask 'What does this tell us about this person?'"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS1-C003", "primary": true},
+        {"concept_id": "HI-KS1-C001", "primary": false},
+        {"concept_id": "HI-KS1-C004", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS1-D002", "HI-KS1-D003"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS1-006", "theme": "significant individuals and their recognition"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-003", "HSRC-004"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS1-006",
+      "name": "Elizabeth I & Queen Victoria",
+      "study_type": "paired_figure_study",
+      "subject": "History",
+      "key_stage": "KS1",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks1_significant_individuals",
+      "curriculum_reference": [
+        "NC KS1 History: 'the lives of significant individuals in the past who have contributed to national and international achievements. Some should be used to compare aspects of life in different periods [for example, Elizabeth I and Queen Victoria...]'"
+      ],
+      "period": "1533-1901",
+      "period_start_year": 1533,
+      "period_end_year": 1901,
+      "significance_claim": "Elizabeth I and Queen Victoria were two of Britain's most powerful and long-reigning monarchs, but they ruled in very different eras and contexts. Comparing them develops understanding of how the same role (queen) can mean different things in different periods.",
+      "pedagogical_rationale": "This pairing is explicitly specified in the NC as a vehicle for comparing 'aspects of life in different periods'. The 300-year gap between them makes the comparison powerful for developing chronological understanding. Both are significant figures, but the comparison reveals how much Britain changed between the Tudor and Victorian periods.",
+      "enquiry_questions": [
+        "What was the same and what was different about being queen in Elizabeth I's time and Victoria's time?",
+        "Which queen do you think was more significant, and why?",
+        "What had changed in Britain between Elizabeth I's reign and Victoria's reign?"
+      ],
+      "key_figures": ["Elizabeth I", "Queen Victoria"],
+      "comparison_pairs": [
+        {
+          "figure_a": "Elizabeth I",
+          "figure_b": "Queen Victoria",
+          "comparison_focus": "Both were powerful queens, but Elizabeth ruled a small, insecure kingdom while Victoria presided over the world's largest empire. Compare how Britain changed between their reigns."
+        }
+      ],
+      "key_events": ["Elizabeth's accession 1558", "Defeat of the Spanish Armada 1588", "Victoria's accession 1837", "Victoria becomes Empress of India 1876"],
+      "perspectives": ["Elizabeth I", "Queen Victoria", "subject in Tudor England", "subject in Victorian Britain"],
+      "interpretations": null,
+      "source_types": ["primary_visual", "primary_written"],
+      "definitions": ["queen", "reign", "monarch", "Tudor", "Victorian", "empire", "significant", "compare"],
+      "common_pitfalls": [
+        "Reducing the comparison to surface-level differences (clothes, buildings) rather than exploring how the role of monarch changed",
+        "Not helping pupils understand the enormous chronological gap between the two queens"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Writing factual comparisons using comparison language (both, but, however)", "strength": "strong"},
+        {"subject": "Art & Design", "hook": "Comparing portraits of both queens: what do the portraits tell us about how they wanted to be seen?", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [],
+      "year_groups": ["Y1", "Y2"],
+      "duration_lessons": 6,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 1, "ks_guidance": "At KS1, compare two people who had the same role in different times. What was the same? What was different?"},
+        {"disciplinary_concept_slug": "chronology", "rank": 2, "ks_guidance": "At KS1, place both queens on a timeline to show the large gap between their reigns."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS1, ask 'What did each queen achieve?' and 'Why do we still remember them?'"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS1-C003", "primary": true},
+        {"concept_id": "HI-KS1-C001", "primary": false},
+        {"concept_id": "HI-KS1-C002", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS1-D001", "HI-KS1-D002"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS1-005", "theme": "significant individuals and their recognition"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-005"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS1-007",
+      "name": "Christopher Columbus & Neil Armstrong",
+      "study_type": "paired_figure_study",
+      "subject": "History",
+      "key_stage": "KS1",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks1_significant_individuals",
+      "curriculum_reference": [
+        "NC KS1 History: 'the lives of significant individuals in the past who have contributed to national and international achievements. Some should be used to compare aspects of life in different periods [for example, ... Christopher Columbus and Neil Armstrong...]'"
+      ],
+      "period": "1451-2012",
+      "period_start_year": 1451,
+      "period_end_year": 2012,
+      "significance_claim": "Columbus's voyages connected the Old and New Worlds, beginning a process of globalisation with profound consequences. Armstrong's Moon landing represented humanity's first step beyond Earth. Together they frame the story of human exploration across five centuries.",
+      "pedagogical_rationale": "The NC explicitly pairs these two explorers to compare 'aspects of life in different periods'. The 500-year gap is the largest of any paired comparison, developing a deep sense of chronological change. Both were explorers, but the technology, motivations and consequences of their explorations were vastly different.",
+      "enquiry_questions": [
+        "What was the same about Columbus's and Armstrong's explorations?",
+        "How was exploring in 1492 different from exploring in 1969?",
+        "Who was more significant as an explorer, and why?"
+      ],
+      "key_figures": ["Christopher Columbus", "Neil Armstrong"],
+      "comparison_pairs": [
+        {
+          "figure_a": "Christopher Columbus",
+          "figure_b": "Neil Armstrong",
+          "comparison_focus": "Both explored unknown territory, but Columbus sailed in a wooden ship while Armstrong flew in a spacecraft. Compare the technology, risks and consequences of their explorations."
+        }
+      ],
+      "key_events": ["Columbus's first voyage 1492", "Apollo 11 Moon landing 1969"],
+      "perspectives": ["Columbus", "Neil Armstrong", "people already living in the Americas", "TV viewer in 1969"],
+      "interpretations": null,
+      "source_types": ["primary_visual", "primary_written", "primary_audiovisual"],
+      "definitions": ["explorer", "voyage", "discovery", "significant", "technology", "New World", "Moon", "spacecraft"],
+      "common_pitfalls": [
+        "Presenting Columbus as simply a heroic 'discoverer' without acknowledging the people already living in the Americas",
+        "Not using the comparison to develop genuine chronological thinking about the 500-year gap"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "Maps: where did Columbus and Armstrong go? How do we show journeys on maps?", "strength": "strong"},
+        {"subject": "Science", "hook": "Comparing the technology of a sailing ship with a spacecraft", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Columbus's arrival in the Americas led to colonisation, exploitation and the deaths of millions of indigenous people; at KS1, acknowledge that people already lived there and that the consequences were complex",
+        "Avoid the word 'discovery' for Columbus: he arrived in a place where people already lived"
+      ],
+      "year_groups": ["Y1", "Y2"],
+      "duration_lessons": 6,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 1, "ks_guidance": "At KS1, compare two explorers from different times: what was the same about their journeys? What was different?"},
+        {"disciplinary_concept_slug": "chronology", "rank": 2, "ks_guidance": "At KS1, understand the vast time gap between 1492 and 1969 using a simple timeline."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS1, ask 'Why do we still remember these explorers?' and 'What difference did their journeys make?'"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS1-C003", "primary": true},
+        {"concept_id": "HI-KS1-C001", "primary": false},
+        {"concept_id": "HI-KS1-C004", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS1-D001", "HI-KS1-D002"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS1-003", "theme": "exploration and human achievement"},
+        {"target_study_id": "HS-KS1-004", "theme": "exploration and human achievement"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS1-008",
+      "name": "Rosa Parks & Emily Davison",
+      "study_type": "paired_figure_study",
+      "subject": "History",
+      "key_stage": "KS1",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks1_significant_individuals",
+      "curriculum_reference": [
+        "NC KS1 History: 'the lives of significant individuals in the past who have contributed to national and international achievements. Some should be used to compare aspects of life in different periods [for example, ... Rosa Parks and Emily Davison...]'"
+      ],
+      "period": "1872-2005",
+      "period_start_year": 1872,
+      "period_end_year": 2005,
+      "significance_claim": "Both women challenged injustice through acts of personal courage that became symbols of wider movements for equality. Davison fought for women's right to vote; Parks challenged racial segregation. Their actions had consequences far beyond their individual lives.",
+      "pedagogical_rationale": "This pairing connects two struggles for equality across different times, countries and contexts. It develops the concept of significance (how one person's action can spark a movement) and similarity and difference (how different forms of injustice require different forms of resistance). It introduces age-appropriate discussion of fairness, rights and standing up for what is right.",
+      "enquiry_questions": [
+        "What did Rosa Parks and Emily Davison both stand up for?",
+        "How were their struggles similar and different?",
+        "Why are they both remembered as significant?"
+      ],
+      "key_figures": ["Rosa Parks", "Emily Davison"],
+      "comparison_pairs": [
+        {
+          "figure_a": "Rosa Parks",
+          "figure_b": "Emily Davison",
+          "comparison_focus": "Both challenged unfair laws through personal courage. Parks refused to give up her bus seat; Davison stepped in front of the King's horse. Compare what they fought for and how they are remembered."
+        }
+      ],
+      "key_events": ["Emily Davison's protest at Epsom Derby 1913", "Rosa Parks refuses to give up her bus seat 1955"],
+      "perspectives": ["Rosa Parks", "Emily Davison", "people who supported them", "people who opposed them"],
+      "interpretations": null,
+      "source_types": ["primary_visual", "primary_written", "oral_testimony"],
+      "definitions": ["rights", "equality", "protest", "courage", "segregation", "suffrage", "significant", "movement"],
+      "common_pitfalls": [
+        "Oversimplifying the movements these women were part of: Parks was part of a planned strategy, not just a tired woman who refused to stand",
+        "Not explaining what segregation and suffrage mean at an age-appropriate level",
+        "Reducing their stories to individual heroism without connecting to the wider movements"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Writing about fairness and standing up for what is right", "strength": "strong"},
+        {"subject": "Citizenship", "hook": "Rights and responsibilities; why do rules need to be fair?", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Racial segregation and gender inequality are difficult topics; discuss as 'unfairness' at an age-appropriate level",
+        "Emily Davison died as a result of her protest; handle with care for young pupils",
+        "Be sensitive to pupils from different racial backgrounds when discussing Parks and segregation"
+      ],
+      "year_groups": ["Y1", "Y2"],
+      "duration_lessons": 6,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "significance", "rank": 1, "ks_guidance": "At KS1, significance means asking 'What difference did this person make?' and 'Why do we still remember them?'"},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 2, "ks_guidance": "At KS1, compare what both women fought for and how they did it. What was the same? What was different?"},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 3, "ks_guidance": "At KS1, ask 'What happened because of what Rosa Parks/Emily Davison did?'"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS1-C003", "primary": true},
+        {"concept_id": "HI-KS1-C001", "primary": false},
+        {"concept_id": "HI-KS1-C004", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS1-D002", "HI-KS1-D003"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS1-009",
+      "name": "Significant Local History",
+      "study_type": "local_history_study",
+      "subject": "History",
+      "key_stage": "KS1",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS1 History: 'significant historical events, people and places in their own locality'"
+      ],
+      "period": "Varies by locality",
+      "period_start_year": null,
+      "period_end_year": null,
+      "significance_claim": "Local history demonstrates that every community has a past worth studying, and that national events are experienced and shaped at the local level.",
+      "pedagogical_rationale": "Local history at KS1 makes history tangible: pupils can walk to the historical sites, handle local artefacts, and hear stories from community elders. It develops the foundational understanding that history is not just about distant places and famous people but about the places and people pupils know.",
+      "enquiry_questions": [
+        "What is the most significant building, place or person in the history of our local area?",
+        "How has our local area changed over time?",
+        "What can we find out about local history from sources in our area?"
+      ],
+      "key_figures": [],
+      "comparison_pairs": null,
+      "key_events": [],
+      "perspectives": ["Local resident (past)", "Local resident (present)", "Historian/archaeologist"],
+      "interpretations": null,
+      "source_types": ["primary_visual", "built_heritage", "oral_testimony", "museum_artefact"],
+      "definitions": ["local", "community", "heritage", "historical site", "landmark", "significant", "change"],
+      "common_pitfalls": [
+        "Choosing a topic too broad rather than focusing on one significant local person, event or place",
+        "Not connecting the local study to the broader concepts (chronology, significance, change) being developed across KS1 History"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "Local map skills: identifying historical features on a map of the school's area", "strength": "strong"},
+        {"subject": "English", "hook": "Writing about a local historical person or place; recording oral histories", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Local history may touch on difficult aspects of community history; handle with sensitivity",
+        "Some pupils may not have deep local roots; ensure the study is inclusive"
+      ],
+      "year_groups": ["Y1", "Y2"],
+      "duration_lessons": 6,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 1, "ks_guidance": "At KS1, use local sources (buildings, photos, objects, people's memories) to find out about the past. Ask 'How do we know about this?'"},
+        {"disciplinary_concept_slug": "significance", "rank": 2, "ks_guidance": "At KS1, ask 'Why is this person/place/event important to our local area?'"},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 3, "ks_guidance": "At KS1, compare the local area 'then' and 'now' using photos and maps."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS1-C001", "primary": false},
+        {"concept_id": "HI-KS1-C002", "primary": false},
+        {"concept_id": "HI-KS1-C004", "primary": true},
+        {"concept_id": "HI-KS1-C005", "primary": true}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS1-D002", "HI-KS1-D003"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+{
+  "version": "1.0",
+  "subject": "Science",
+  "key_stage": "KS2",
+  "authored_by": "science-specialist-teacher",
+  "authored_date": "2026-02-24",
+  "note": "ScienceEnquiry nodes for KS2. Reshaped from ContentVehicle and TopicSuggestion data with full ontology properties. Each enquiry is a complete, teachable investigation context with safety, misconceptions, variables, and enquiry type links.",
+  "enquiries": [
+    {
+      "enquiry_id": "SE-KS2-001",
+      "name": "Friction Investigation",
+      "enquiry_question": "How does the surface affect how far a toy car travels?",
+      "science_discipline": "physics",
+      "key_stage": "KS2",
+      "year_groups": ["Y5"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y5 Forces: identify the effects of air resistance, water resistance and friction, that act between moving surfaces"
+      ],
+      "equipment": ["ramp", "toy car", "metre stick", "surface samples (carpet, wood, sandpaper, tile, fabric)", "masking tape"],
+      "safety_notes": "Low risk. Ensure ramp is stable and surfaces are secured flat. Keep floor area clear to prevent tripping over ramp equipment.",
+      "hazard_level": "low",
+      "expected_outcome": "Rougher surfaces produce more friction, so the car travels a shorter distance. Smooth surfaces produce less friction. Friction is a contact force that opposes motion between surfaces.",
+      "recording_format": ["results table", "bar chart", "written conclusion"],
+      "variables": {
+        "independent": "surface type (carpet, wood, sandpaper, tile, fabric)",
+        "dependent": "distance travelled by toy car (cm)",
+        "controlled": ["ramp angle", "car mass", "release point", "same car"]
+      },
+      "definitions": ["friction", "force", "contact force", "surface", "fair test", "variable", "conclusion"],
+      "pedagogical_rationale": "This is the most accessible fair test in the KS2 curriculum because pupils can see and feel friction, the variables are tangible, and the measurement (distance) is straightforward. The investigation builds all the core fair testing skills: identifying variables, measuring accurately, recording in a table, presenting as a bar chart, and writing a causal conclusion.",
+      "common_pitfalls": [
+        "Inconsistent release of the car on the ramp leads to unreliable data — model a consistent release technique before starting",
+        "Pupils confuse friction with gravity or air resistance — clarify friction requires contact between two surfaces",
+        "Pupils may think smooth surfaces have 'no friction' rather than 'less friction'"
+      ],
+      "cross_curricular_hooks": [
+        "[Maths] Measuring in centimetres, recording in tables, drawing bar charts",
+        "[English] Writing a scientific conclusion using causal connectives (because, therefore, as a result)",
+        "[DT] Exploring friction in mechanisms and moving parts"
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 3,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C025", "primary": true},
+        {"concept_id": "SC-KS2-C027", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-001", "rank": 1}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-021", "likelihood": "high"},
+        {"misconception_id": "MC-022", "likelihood": "moderate"}
+      ],
+      "progresses_to": [
+        {"enquiry_id": "SE-KS3-003", "rationale": "KS3 forces extends friction to quantitative measurement with Newton meters and introduces the relationship between force, mass, and acceleration"}
+      ],
+      "supersedes_vehicle_id": "SC-KS2-CV001",
+      "uses_template": ["VT-03"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS2-002",
+      "name": "Plant Growth Enquiry",
+      "enquiry_question": "What do plants need to grow well, and how does light affect plant growth?",
+      "science_discipline": "biology",
+      "key_stage": "KS2",
+      "year_groups": ["Y3"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y3 Plants: investigate the way in which water is transported within plants",
+        "Y3 Plants: explore the requirements of plants for life and growth (air, light, water, nutrients from soil, and room to grow)"
+      ],
+      "equipment": ["cress seeds or bean plants", "plant pots", "ruler", "watering can", "labels", "cupboard for dark condition"],
+      "safety_notes": "Wash hands after handling soil. Avoid allergenic plants — check for allergies before choosing plant species. No consumption of experimental plants.",
+      "hazard_level": "low",
+      "expected_outcome": "Plants in full sunlight grow tallest and healthiest (green, sturdy). Plants in the dark grow tall and spindly (etiolated) but pale. Plants need light for healthy growth because light provides the energy for photosynthesis.",
+      "recording_format": ["weekly measurement table", "line graph", "conclusion"],
+      "variables": {
+        "independent": "amount of light (dark cupboard, partial shade, full sunlight)",
+        "dependent": "plant height (cm) measured over 3 weeks",
+        "controlled": ["same type of plant", "same pot size", "same soil", "same amount of water"]
+      },
+      "definitions": ["photosynthesis", "germination", "nutrients", "variable", "fair test", "prediction"],
+      "pedagogical_rationale": "Fair testing plant growth over several weeks develops pupils' ability to plan long-running investigations, take repeat measurements, and draw conclusions from real-world data that includes natural variation. The light variable is accessible and produces dramatic, visible results (etiolated vs healthy plants) that motivate scientific explanation.",
+      "common_pitfalls": [
+        "Pupils water plants inconsistently across conditions, undermining the fair test — establish a watering rota",
+        "Pupils expect results within days rather than weeks — set expectations and use a measurement schedule",
+        "Confusing the plant growing tall in the dark (etiolation) with healthy growth — discuss what 'healthy growth' means"
+      ],
+      "cross_curricular_hooks": [
+        "[Maths] Measuring height in centimetres, plotting line graphs to show change over time",
+        "[English] Writing up a method using imperative verbs and time connectives",
+        "[Geography] Discussing how climate and light availability affect plant growth globally"
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 6,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C012", "primary": true}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-001", "rank": 1}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-001", "likelihood": "high"},
+        {"misconception_id": "MC-002", "likelihood": "moderate"},
+        {"misconception_id": "MC-003", "likelihood": "high"}
+      ],
+      "progresses_to": [
+        {"enquiry_id": "SE-KS3-004", "rationale": "KS3 photosynthesis investigation extends from observing that plants need light to understanding the chemical process (photosynthesis equation) and measuring its rate quantitatively"}
+      ],
+      "supersedes_vehicle_id": "SC-KS2-CV002",
+      "uses_template": ["VT-03"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS2-003",
+      "name": "Rocks and Fossils Classification",
+      "enquiry_question": "How can we sort and classify different types of rocks, and how do fossils form?",
+      "science_discipline": "chemistry",
+      "key_stage": "KS2",
+      "year_groups": ["Y3"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y3 Rocks: compare and group together different kinds of rocks on the basis of their appearance and simple physical properties",
+        "Y3 Rocks: describe in simple terms how fossils are formed when things that have lived are trapped within rock",
+        "Y3 Rocks: recognise that soils are made from rocks and organic matter"
+      ],
+      "equipment": ["rock samples (granite, chalk, sandstone, slate, marble)", "hand lenses", "vinegar (acid test for chalk)", "scratch test tools", "fossil samples"],
+      "safety_notes": "Supervise scratch tests — tools can be sharp. Vinegar is a mild acid — avoid contact with eyes. Wash hands after handling rocks and soil samples.",
+      "hazard_level": "low",
+      "expected_outcome": "Pupils classify rocks by hardness, appearance, and reaction to acid. They understand that fossils form in sedimentary rock through a process of sedimentation and mineralisation. Soil contains rock fragments plus decayed organic material.",
+      "recording_format": ["classification table with observable properties", "Venn diagram", "labelled diagrams of fossil formation"],
+      "definitions": ["igneous", "sedimentary", "metamorphic", "fossil", "soil", "mineral", "permeable", "erosion"],
+      "pedagogical_rationale": "Identifying and classifying is an essential science enquiry type that develops observational skills and evidence-based reasoning. Rocks provide a tangible, hands-on context where pupils can handle real specimens, test properties, and connect classroom science to the real landscape around them.",
+      "common_pitfalls": [
+        "Pupils may assume all shiny rocks are the same type — encourage testing multiple properties before grouping",
+        "Fossil formation is often oversimplified to 'a dead animal turns into rock' — model the sedimentation and mineralisation process step by step",
+        "Pupils confuse 'soil' with 'dirt' and do not realise soil contains both rock fragments and decayed organic material"
+      ],
+      "cross_curricular_hooks": [
+        "[Geography] Rock types in the local landscape and how geology shapes landforms",
+        "[English] Non-chronological report writing about rock types or fossil formation",
+        "[History] How fossils changed scientific understanding of Earth's history"
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 4,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C019", "primary": true},
+        {"concept_id": "SC-KS2-C020", "primary": false},
+        {"concept_id": "SC-KS2-C021", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-004", "rank": 1}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-006", "likelihood": "high"},
+        {"misconception_id": "MC-007", "likelihood": "high"},
+        {"misconception_id": "MC-008", "likelihood": "moderate"}
+      ],
+      "progresses_to": [],
+      "supersedes_vehicle_id": "SC-KS2-CV003",
+      "uses_template": ["VT-17"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS2-004",
+      "name": "Sound Investigation",
+      "enquiry_question": "How are sounds made, and what determines the pitch and volume of a sound?",
+      "science_discipline": "physics",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y4 Sound: identify how sounds are made, associating some of them with something vibrating",
+        "Y4 Sound: find patterns between the pitch of a sound and features of the object that produced it",
+        "Y4 Sound: find patterns between the volume of a sound and the strength of the vibrations that produced it",
+        "Y4 Sound: recognise that sounds get fainter as the distance from the sound source increases"
+      ],
+      "equipment": ["tuning forks", "water tray", "rulers", "elastic bands", "shoe boxes (string telephones)", "rice on drum skin"],
+      "safety_notes": "Keep volume levels reasonable to protect hearing. Tuning forks can be sharp at the prongs — demonstrate correct use before pupils handle them. Do not strike tuning forks on hard surfaces as they may chip.",
+      "hazard_level": "low",
+      "expected_outcome": "Sounds are caused by vibrations. Higher pitch = faster vibrations (shorter/tighter object). Louder sound = bigger vibrations. Sound travels through solids, liquids, and gases but not through a vacuum.",
+      "recording_format": ["observations table", "pattern statement", "diagram of vibration"],
+      "variables": {
+        "independent": "length of vibrating object (ruler overhang, elastic band tension)",
+        "dependent": "pitch of sound produced",
+        "controlled": ["same material", "same striking force"]
+      },
+      "definitions": ["vibration", "pitch", "volume", "sound wave", "medium", "ear drum", "frequency"],
+      "pedagogical_rationale": "Pattern seeking develops pupils' ability to identify relationships in data without controlling all variables — an essential skill for real-world science. Sound provides an engaging, multi-sensory context where pupils can see, feel, and hear the evidence for vibrations, making abstract concepts about waves tangible.",
+      "common_pitfalls": [
+        "Pupils confuse pitch and volume — use clear examples to distinguish (e.g. whispering a high note vs shouting a low note)",
+        "Pupils think sound only travels through air — demonstrate sound travelling through solids using string telephones or pressing an ear to a desk",
+        "Difficulty seeing that 'vibration' is the cause of all sound — use rice on a drum skin and tuning forks in water to make vibrations visible"
+      ],
+      "cross_curricular_hooks": [
+        "[Music] Pitch and dynamics in musical instruments — how instruments produce different notes",
+        "[Maths] Measuring and ordering, recognising patterns in data",
+        "[DT] Designing and building a simple musical instrument"
+      ],
+      "sensitive_content_notes": [
+        "Be aware of pupils with hearing impairments — adapt activities to include visual and tactile ways to experience vibration"
+      ],
+      "duration_lessons": 4,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C037", "primary": true},
+        {"concept_id": "SC-KS2-C038", "primary": false},
+        {"concept_id": "SC-KS2-C039", "primary": false},
+        {"concept_id": "SC-KS2-C040", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-003", "rank": 1}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-009", "likelihood": "high"},
+        {"misconception_id": "MC-010", "likelihood": "moderate"},
+        {"misconception_id": "MC-011", "likelihood": "high"}
+      ],
+      "progresses_to": [],
+      "supersedes_vehicle_id": "SC-KS2-CV004",
+      "uses_template": ["VT-05"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS2-005",
+      "name": "Electrical Circuits Investigation",
+      "enquiry_question": "How do electrical circuits work, and what affects the brightness of a bulb in a circuit?",
+      "science_discipline": "physics",
+      "key_stage": "KS2",
+      "year_groups": ["Y4", "Y6"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y4 Electricity: identify common appliances that run on electricity; construct a simple series electrical circuit",
+        "Y6 Electricity: associate the brightness of a lamp or the volume of a buzzer with the number and voltage of cells used in the circuit",
+        "Y6 Electricity: use recognised symbols when representing a simple circuit in a diagram"
+      ],
+      "equipment": ["batteries (1.5V cells)", "bulbs", "buzzers", "wires with crocodile clips", "switches", "materials for conductor/insulator testing"],
+      "safety_notes": "Use only low-voltage cells (1.5V). Never connect directly across battery terminals (short circuit risk — wires can get hot). Do not use mains electricity. Ensure pupils understand the difference between safe classroom circuits and dangerous mains electricity.",
+      "hazard_level": "standard",
+      "expected_outcome": "More batteries = brighter bulb (more voltage). More bulbs in series = dimmer each bulb. Metals conduct; plastic, rubber, wood insulate. Circuits need a complete loop for current to flow.",
+      "recording_format": ["circuit diagrams using symbols", "results table", "conclusion"],
+      "variables": {
+        "independent": "number of batteries (voltage) or number of bulbs",
+        "dependent": "brightness of bulb",
+        "controlled": ["same type of bulb", "same wire length", "same circuit design"]
+      },
+      "definitions": ["circuit", "series", "battery", "voltage", "conductor", "insulator", "switch", "component", "circuit diagram"],
+      "pedagogical_rationale": "Electricity provides an ideal context for fair testing because pupils can systematically vary one component and immediately observe the effect on brightness. Building and troubleshooting real circuits develops practical skills alongside conceptual understanding of complete loops and conductors/insulators.",
+      "common_pitfalls": [
+        "Pupils think electricity is 'used up' by the bulb — current flows around a complete circuit and is not consumed",
+        "Connecting wires incorrectly and concluding 'it doesn't work' — teach systematic troubleshooting of circuit connections",
+        "Confusing voltage (push) with current (flow) — use a water pipe analogy at KS2 level"
+      ],
+      "cross_curricular_hooks": [
+        "[Maths] Drawing circuit diagrams using standard symbols accurately",
+        "[DT] Incorporating a simple circuit into a product (e.g. a torch or alarm)",
+        "[English] Writing instructions for building a circuit using imperative verbs"
+      ],
+      "sensitive_content_notes": [
+        "Emphasise that mains electricity is extremely dangerous — pupils must NEVER experiment with mains sockets or plug sockets",
+        "Only use low-voltage cells (1.5V) in classroom activities"
+      ],
+      "duration_lessons": 5,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C041", "primary": true},
+        {"concept_id": "SC-KS2-C042", "primary": false},
+        {"concept_id": "SC-KS2-C043", "primary": false},
+        {"concept_id": "SC-KS2-C068", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-001", "rank": 1}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-012", "likelihood": "high"},
+        {"misconception_id": "MC-013", "likelihood": "high"}
+      ],
+      "progresses_to": [],
+      "supersedes_vehicle_id": "SC-KS2-CV005",
+      "uses_template": ["VT-03"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS2-006",
+      "name": "States of Matter and the Water Cycle",
+      "enquiry_question": "What are solids, liquids, and gases, and how does the water cycle work?",
+      "science_discipline": "chemistry",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y4 States of matter: compare and group materials together, according to whether they are solids, liquids or gases",
+        "Y4 States of matter: observe that some materials change state when they are heated or cooled",
+        "Y4 States of matter: identify the part played by evaporation and condensation in the water cycle"
+      ],
+      "equipment": ["ice cubes", "kettle (teacher demonstration)", "thermometer", "containers for evaporation test", "measuring cylinder"],
+      "safety_notes": "Teacher demonstrates boiling water — pupils do not handle hot water or kettles. Thermometers should be non-mercury. Supervise any activity involving hot liquids. Ensure pupils stand back during steam demonstrations.",
+      "hazard_level": "standard",
+      "expected_outcome": "Solids have fixed shape, liquids take container shape, gases fill available space. Heating causes melting/evaporation, cooling causes condensation/freezing. The water cycle is a continuous process of evaporation, condensation, and precipitation.",
+      "recording_format": ["particle diagrams for each state", "evaporation results table", "water cycle diagram with labels"],
+      "variables": {
+        "independent": "location of water sample (sunny windowsill, shaded shelf, cupboard)",
+        "dependent": "water level after 1 week (ml)",
+        "controlled": ["same volume of water", "same container size"]
+      },
+      "definitions": ["solid", "liquid", "gas", "melting", "freezing", "evaporation", "condensation", "water cycle", "temperature"],
+      "pedagogical_rationale": "Observation over time is the ideal enquiry type for evaporation because the process is too slow for a single lesson but produces clear, measurable results over a week. Combining hands-on state change demonstrations with the longer evaporation investigation helps pupils connect everyday experiences (puddles drying, windows steaming) to the scientific model of particle behaviour.",
+      "common_pitfalls": [
+        "Pupils think the water 'disappears' during evaporation rather than understanding it becomes water vapour in the air",
+        "Confusing melting and dissolving — melting is a change of state caused by heating, dissolving is a substance mixing into a liquid",
+        "Difficulty classifying some materials (e.g. sand, jelly) — discuss that individual grains of sand are solid even though sand can be poured"
+      ],
+      "cross_curricular_hooks": [
+        "[Maths] Measuring volume in millilitres, reading thermometers, plotting results",
+        "[Geography] The water cycle as a geographical process — linking to rivers and weather",
+        "[English] Explanation text writing about the water cycle"
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 5,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C034", "primary": true},
+        {"concept_id": "SC-KS2-C035", "primary": false},
+        {"concept_id": "SC-KS2-C036", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-002", "rank": 1}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-016", "likelihood": "high"},
+        {"misconception_id": "MC-017", "likelihood": "high"},
+        {"misconception_id": "MC-018", "likelihood": "moderate"},
+        {"misconception_id": "MC-046", "likelihood": "moderate"}
+      ],
+      "progresses_to": [
+        {"enquiry_id": "SE-KS3-005", "rationale": "Y4 explores states of matter through observation and classification; KS3 builds the particle model to EXPLAIN those observations. The particle model is the explanatory framework that was missing at KS2."}
+      ],
+      "supersedes_vehicle_id": "SC-KS2-CV006",
+      "uses_template": ["VT-04"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS2-007",
+      "name": "Light and Shadows Investigation",
+      "enquiry_question": "How are shadows formed, and what affects their size?",
+      "science_discipline": "physics",
+      "key_stage": "KS2",
+      "year_groups": ["Y3", "Y6"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y3 Light: recognise that they need light in order to see things and that dark is the absence of light",
+        "Y3 Light: recognise that shadows are formed when the light from a light source is blocked by an opaque object",
+        "Y6 Light: recognise that light appears to travel in straight lines",
+        "Y6 Light: use the idea that light travels in straight lines to explain why shadows have the same shape as the objects that cast them"
+      ],
+      "equipment": ["torches", "opaque objects", "white screen/card", "mirrors", "ruler", "metre stick"],
+      "safety_notes": "Do not shine torches directly into eyes. Supervise mirror use — reflected light can dazzle. Darken the room for best results but ensure safe movement.",
+      "hazard_level": "low",
+      "expected_outcome": "Shadows form when opaque objects block light. Shadow size increases as the object moves closer to the light source. Light travels in straight lines. We see objects because light reflects off them into our eyes.",
+      "recording_format": ["results table", "line graph", "ray diagram showing light travel"],
+      "variables": {
+        "independent": "distance between light source and object",
+        "dependent": "size of shadow (cm height)",
+        "controlled": ["same light source", "same object", "same screen distance", "darkened room"]
+      },
+      "definitions": ["light source", "opaque", "transparent", "translucent", "shadow", "reflection", "ray", "straight line"],
+      "pedagogical_rationale": "Fair testing the relationship between distance and shadow size produces a clear, quantitative pattern that pupils can graph and explain using the model of light travelling in straight lines. The investigation bridges practical measurement skills with the abstract idea of ray diagrams, building towards the Y6 requirement to explain how we see objects.",
+      "common_pitfalls": [
+        "Pupils think their eyes send out light to see objects — reinforce that we see because light reflects off objects into our eyes",
+        "Difficulty understanding that the shadow is not 'attached' to the object — use a torch and move both object and screen",
+        "Assuming coloured filters make coloured shadows — the shadow is where light is blocked, not where colour appears"
+      ],
+      "cross_curricular_hooks": [
+        "[Maths] Measuring shadow lengths, plotting line graphs, identifying proportional relationships",
+        "[Art] Shadow puppetry and silhouette art",
+        "[English] Descriptive writing using light and shadow imagery"
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 4,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C022", "primary": true},
+        {"concept_id": "SC-KS2-C023", "primary": false},
+        {"concept_id": "SC-KS2-C024", "primary": false},
+        {"concept_id": "SC-KS2-C067", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-001", "rank": 1}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-014", "likelihood": "high"},
+        {"misconception_id": "MC-015", "likelihood": "moderate"}
+      ],
+      "progresses_to": [],
+      "supersedes_vehicle_id": "SC-KS2-CV007",
+      "uses_template": ["VT-03"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS2-008",
+      "name": "Human Body: Digestion and Teeth",
+      "enquiry_question": "How does the digestive system work, and what are the different types of teeth for?",
+      "science_discipline": "biology",
+      "key_stage": "KS2",
+      "year_groups": ["Y4"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y4 Animals including humans: describe the simple functions of the basic parts of the digestive system in humans",
+        "Y4 Animals including humans: identify the different types of teeth in humans and their simple functions",
+        "Y4 Animals including humans: construct and interpret a variety of food chains, identifying producers, predators and prey"
+      ],
+      "equipment": ["torso model or diagram", "mirror (tooth observation)", "egg shells + cola/water (tooth decay model)", "food chain cards"],
+      "safety_notes": "Egg shell experiment uses cola — no drinking of experimental liquids. Hand washing after handling food items and models. If using mirrors for tooth observation, ensure they are unbreakable.",
+      "hazard_level": "low",
+      "expected_outcome": "Pupils can describe the journey of food through the digestive system (mouth, oesophagus, stomach, small intestine, large intestine), name and describe functions of different tooth types (incisors, canines, molars), and construct food chains with producers, predators and prey.",
+      "recording_format": ["labelled diagram of digestive system", "tooth investigation results", "food chain diagram"],
+      "definitions": ["digestion", "oesophagus", "stomach", "intestine", "incisor", "canine", "molar", "enamel", "producer", "predator", "prey", "food chain"],
+      "pedagogical_rationale": "Research enquiry is the appropriate approach here because the digestive system cannot be directly investigated through experiment in a primary classroom. Combining research with physical models (egg shell tooth decay experiment, food chain card sorting) ensures pupils engage actively with the content rather than passively reading, building both knowledge and scientific communication skills.",
+      "common_pitfalls": [
+        "Pupils think digestion only happens in the stomach — the process starts in the mouth and continues through the intestines",
+        "Confusing food chains and food webs — start with simple chains before introducing the complexity of webs",
+        "Pupils may think arrows in food chains show 'who eats who' rather than 'energy is transferred to' — clarify arrow direction"
+      ],
+      "cross_curricular_hooks": [
+        "[English] Non-chronological report writing about the digestive system",
+        "[Maths] Interpreting data about tooth decay from the egg shell experiment",
+        "[PSHE] Healthy eating and dental hygiene"
+      ],
+      "sensitive_content_notes": [
+        "Be sensitive to pupils with dietary restrictions or eating difficulties when discussing food and digestion",
+        "Avoid framing food as 'good' or 'bad' — focus on the scientific process of digestion"
+      ],
+      "duration_lessons": 5,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C017", "primary": true},
+        {"concept_id": "SC-KS2-C031", "primary": false},
+        {"concept_id": "SC-KS2-C032", "primary": false},
+        {"concept_id": "SC-KS2-C033", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-005", "rank": 1}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-023", "likelihood": "high"},
+        {"misconception_id": "MC-024", "likelihood": "high"}
+      ],
+      "progresses_to": [],
+      "supersedes_vehicle_id": "SC-KS2-CV008",
+      "uses_template": ["VT-06"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS2-009",
+      "name": "Evolution and Adaptation",
+      "enquiry_question": "How have living things changed over time, and how are they adapted to their environments?",
+      "science_discipline": "biology",
+      "key_stage": "KS2",
+      "year_groups": ["Y6"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y6 Evolution and inheritance: recognise that living things have changed over time and that fossils provide information about living things that inhabited the Earth millions of years ago",
+        "Y6 Evolution and inheritance: identify how animals and plants are adapted to suit their environment in different ways and that adaptation may lead to evolution"
+      ],
+      "equipment": ["fossil samples or images", "bird beak models (tweezers, pegs, chopsticks)", "seeds of different sizes", "images of adapted organisms"],
+      "safety_notes": "No specific physical hazards. Handle fossil samples with care as they can be fragile and valuable. Ensure sensitivity around evolution and creation discussions — follow school RE policy.",
+      "hazard_level": "low",
+      "expected_outcome": "Fossils show how organisms have changed over time. Offspring vary from parents. Organisms are adapted to their environments. Over time, natural selection means better-adapted organisms survive and reproduce more successfully.",
+      "recording_format": ["timeline of life on Earth", "beak adaptation results table", "explanation text"],
+      "definitions": ["fossil", "evolution", "adaptation", "variation", "natural selection", "inherited", "species", "extinct"],
+      "pedagogical_rationale": "Research enquiry combined with hands-on modelling (the bird beak simulation) helps pupils understand natural selection through concrete experience rather than abstract explanation. The bird beak activity transforms a complex concept into a physical investigation where pupils can see variation, competition, and differential survival in action.",
+      "common_pitfalls": [
+        "Pupils think individual organisms evolve during their lifetime — evolution happens across populations over many generations",
+        "Confusing adaptation (a trait that helps survival) with acclimatisation (a short-term response) — use clear examples",
+        "Pupils may think evolution is a deliberate choice by organisms ('the giraffe stretched its neck') — emphasise random variation and natural selection"
+      ],
+      "cross_curricular_hooks": [
+        "[History] How Darwin's theory changed scientific and religious thinking",
+        "[Geography] How different environments around the world have shaped different adaptations",
+        "[English] Writing a biography of a significant scientist (Darwin, Wallace, Mary Anning)"
+      ],
+      "sensitive_content_notes": [
+        "Evolution can conflict with some religious beliefs — present it as the scientific explanation supported by evidence, while being respectful of pupils' faith backgrounds",
+        "Focus on evidence and the scientific process rather than making value judgements about beliefs"
+      ],
+      "duration_lessons": 5,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C063", "primary": true},
+        {"concept_id": "SC-KS2-C064", "primary": false},
+        {"concept_id": "SC-KS2-C065", "primary": false},
+        {"concept_id": "SC-KS2-C066", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-005", "rank": 1},
+        {"enquiry_type_id": "ET-003", "rank": 2}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-025", "likelihood": "high"},
+        {"misconception_id": "MC-026", "likelihood": "high"}
+      ],
+      "progresses_to": [],
+      "supersedes_vehicle_id": "SC-KS2-CV009",
+      "uses_template": ["VT-06"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS2-010",
+      "name": "Separating Mixtures",
+      "enquiry_question": "How can we separate different mixtures, and which changes are reversible or irreversible?",
+      "science_discipline": "chemistry",
+      "key_stage": "KS2",
+      "year_groups": ["Y5"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y5 Properties and changes of materials: know that some materials will dissolve in liquid to form a solution, and describe how to recover a substance from a solution",
+        "Y5 Properties and changes of materials: use knowledge of solids, liquids and gases to decide how mixtures might be separated",
+        "Y5 Properties and changes of materials: demonstrate that dissolving, mixing and changes of state are reversible changes; explain that some changes result in the formation of new materials, and that this kind of change is not usually reversible"
+      ],
+      "equipment": ["salt", "sand", "water", "iron filings", "filter paper", "funnels", "sieves", "evaporating dishes", "magnets", "safety goggles"],
+      "safety_notes": "Wear safety goggles during evaporation activities. Teacher supervises all heating. Do not taste solutions or mixtures. Iron filings can irritate eyes — handle carefully and keep magnets away from electronic devices.",
+      "hazard_level": "standard",
+      "expected_outcome": "Different mixtures require different separation methods based on particle size and solubility. Dissolving and filtering are reversible. Burning and cooking are irreversible because new substances are formed.",
+      "recording_format": ["method diagram for each separation", "results table", "reversible vs irreversible sorting activity"],
+      "variables": {
+        "independent": "separation method (filtering, sieving, evaporating, magnetic)",
+        "dependent": "success of separation (observation)",
+        "controlled": ["same amount of mixture"]
+      },
+      "definitions": ["dissolve", "solution", "soluble", "insoluble", "filter", "sieve", "evaporate", "reversible", "irreversible"],
+      "pedagogical_rationale": "Fair testing separation methods gives pupils authentic problem-solving experience — they must choose the right technique for each mixture based on the properties of its components. This builds the critical KS2 skill of using scientific knowledge to make predictions and plan investigations, while the reversible/irreversible distinction develops understanding of chemical change.",
+      "common_pitfalls": [
+        "Pupils confuse dissolving and melting — dissolving involves a solute and solvent at the same temperature; melting involves a state change caused by heat",
+        "Pupils think dissolved substances have 'disappeared' — demonstrate recovery by evaporation to prove the substance is still there",
+        "Difficulty distinguishing reversible from irreversible changes — use concrete paired examples (ice melting vs egg cooking)"
+      ],
+      "cross_curricular_hooks": [
+        "[Maths] Measuring volumes accurately, recording data in tables",
+        "[DT] Choosing materials with appropriate properties for a purpose",
+        "[Geography] Water purification and its importance in different parts of the world"
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 5,
+      "delivers_via": [
+        {"concept_id": "SC-KS2-C047", "primary": true},
+        {"concept_id": "SC-KS2-C048", "primary": false},
+        {"concept_id": "SC-KS2-C049", "primary": false},
+        {"concept_id": "SC-KS2-C050", "primary": false},
+        {"concept_id": "SC-KS2-C051", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-001", "rank": 1},
+        {"enquiry_type_id": "ET-004", "rank": 2}
+      ],
+      "surfaces_misconception": [
+        {"misconception_id": "MC-017", "likelihood": "high"},
+        {"misconception_id": "MC-019", "likelihood": "high"},
+        {"misconception_id": "MC-020", "likelihood": "moderate"}
+      ],
+      "progresses_to": [],
+      "supersedes_vehicle_id": "SC-KS2-CV010",
+      "uses_template": ["VT-03"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    }
+  ]
+}

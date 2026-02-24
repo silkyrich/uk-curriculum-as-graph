@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "description": "GeoContrast nodes: curated contrasting pairs for comparative geography across KS1-KS3",
+    "version": "1.0",
+    "authored_by": "geography-specialist",
+    "authored_date": "2026-02-24",
+    "node_label": "GeoContrast",
+    "note": "Contrasts are first-class nodes rather than string cross-references because each has multiple dimensions of contrast, stimulus questions, and pedagogical rationale. They fulfil the NC requirement for comparative geography at every key stage."
+  },
+  "contrasts": [
+    {
+      "contrast_id": "GC-KS1-001",
+      "name": "UK Locality vs Non-European Locality",
+      "contrast_type": "contrasting_locality",
+      "key_stage": "KS1",
+      "place_a_id": "GP-EU-001",
+      "place_b_id": "GP-AF-001",
+      "study_a_id": "GS-GE-KS1-001",
+      "study_b_id": "GS-GE-KS1-004",
+      "dimensions": [
+        "climate",
+        "settlement type",
+        "daily life",
+        "physical features",
+        "economic activity"
+      ],
+      "stimulus_questions": [
+        "How is the other place the same as our area? How is it different?",
+        "What do children in the other place do that is the same as what you do?",
+        "What does the landscape look like? Is it the same as ours or different?",
+        "What is the weather like there? How does it compare to our weather?"
+      ],
+      "nc_requirement": "KS1: study a small area of the UK and a small area in a contrasting non-European country",
+      "pedagogical_rationale": "The NC mandates that KS1 pupils compare a UK locality with a non-European locality to develop early comparative geographical thinking and openness to diverse human geographies. The contrast must balance genuine differences (climate, landscape, economy) with fundamental similarities (children go to school, families share meals, people work and play) to prevent othering.",
+      "display_category": "Geography",
+      "display_color": "#10B981",
+      "display_icon": "compare_arrows"
+    },
+    {
+      "contrast_id": "GC-KS2-001",
+      "name": "UK Region vs European Region",
+      "contrast_type": "contrasting_locality",
+      "key_stage": "KS2",
+      "place_a_id": "GP-EU-003",
+      "place_b_id": "GP-EU-004",
+      "study_a_id": "GS-GE-KS2-001",
+      "study_b_id": "GS-GE-KS2-002",
+      "dimensions": [
+        "climate and vegetation",
+        "relief and physical landscape",
+        "economic activity",
+        "settlement patterns",
+        "cultural character",
+        "land use"
+      ],
+      "stimulus_questions": [
+        "How is the physical landscape of the European region different from the UK region?",
+        "How does climate affect the way people live and work in each region?",
+        "What types of farming and economic activity are different, and why?",
+        "Would you prefer to live in the UK region or the European region? Give geographical reasons."
+      ],
+      "nc_requirement": "KS2: understand geographical similarities and differences through the study of a region of the UK and a region in a European country",
+      "pedagogical_rationale": "The UK-Europe regional comparison develops pupils' analytical skills by requiring them to use a consistent comparison framework across two contrasting regions. The comparison should go beyond description to explanation: not just 'the Alps are higher than the Lake District' but 'why does this difference in relief affect farming, tourism, and settlement patterns?'",
+      "display_category": "Geography",
+      "display_color": "#10B981",
+      "display_icon": "compare_arrows"
+    },
+    {
+      "contrast_id": "GC-KS3-001",
+      "name": "Haiti vs Japan: Development and Disaster",
+      "contrast_type": "hazard_contrast",
+      "key_stage": "KS3",
+      "place_a_id": "GP-NA-001",
+      "place_b_id": "GP-AS-001",
+      "study_a_id": "GS-GE-KS3-001",
+      "study_b_id": "GS-GE-KS3-002",
+      "dimensions": [
+        "development level",
+        "governance quality",
+        "preparedness infrastructure",
+        "casualty toll relative to magnitude",
+        "cascading effects",
+        "international response"
+      ],
+      "stimulus_questions": [
+        "Japan's earthquake was 100x more powerful than Haiti's. Why did Haiti lose 10x more people?",
+        "Does money make you safe from earthquakes?",
+        "What does the Fukushima meltdown tell us about the limits of preparedness?",
+        "If you could spend $1 billion on earthquake preparedness in one country, which would you choose and why?"
+      ],
+      "nc_requirement": "KS3: detailed place-based exemplars for plate tectonics",
+      "pedagogical_rationale": "The Haiti-Japan pairing is the most widely used tectonic hazard contrast in English secondary schools because the two events occurred within 14 months of each other, enabling clean comparison while exposing the critical role of development and governance in disaster outcomes. The contrast prevents simplistic narratives by requiring analysis of why wealth alone does not guarantee safety (Fukushima).",
+      "display_category": "Geography",
+      "display_color": "#10B981",
+      "display_icon": "compare_arrows"
+    },
+    {
+      "contrast_id": "GC-KS3-002",
+      "name": "Lagos vs London: Urbanisation in LIC and HIC",
+      "contrast_type": "development_contrast",
+      "key_stage": "KS3",
+      "place_a_id": "GP-AF-003",
+      "place_b_id": "GP-EU-005",
+      "study_a_id": "GS-GE-KS3-005",
+      "study_b_id": null,
+      "dimensions": [
+        "rate of urban growth",
+        "informal vs formal housing",
+        "transport infrastructure",
+        "economic opportunity",
+        "environmental quality",
+        "governance and planning"
+      ],
+      "stimulus_questions": [
+        "Lagos is growing 6x faster than London. What are the consequences of this speed?",
+        "Both cities have housing crises. How are they different, and how are they similar?",
+        "Is rapid urbanisation a problem or an opportunity? For whom?",
+        "What can Lagos and London learn from each other about sustainable urban planning?"
+      ],
+      "nc_requirement": "KS3: detailed place-based exemplars for population and urbanisation",
+      "pedagogical_rationale": "Contrasting Lagos and London prevents the common trap of studying only 'problem' urbanisation in LICs. Both cities face genuine challenges (housing costs, pollution, transport congestion) but of fundamentally different kinds. The comparison illuminates how development level shapes the urbanisation experience while revealing universal urban challenges.",
+      "display_category": "Geography",
+      "display_color": "#10B981",
+      "display_icon": "compare_arrows"
+    },
+    {
+      "contrast_id": "GC-KS3-003",
+      "name": "UAE vs Iraq: Oil Wealth and Development Paths",
+      "contrast_type": "development_contrast",
+      "key_stage": "KS3",
+      "place_a_id": "GP-ME-002",
+      "place_b_id": "GP-ME-003",
+      "study_a_id": "GS-GE-KS3-010",
+      "study_b_id": null,
+      "dimensions": [
+        "GDP per capita",
+        "economic diversification",
+        "governance stability",
+        "infrastructure development",
+        "conflict history",
+        "international relations"
+      ],
+      "stimulus_questions": [
+        "Both countries have vast oil reserves. Why is the UAE so much richer than Iraq?",
+        "Is the UAE's rapid modernisation sustainable without oil?",
+        "What role has conflict played in Iraq's development path?",
+        "Can oil-rich countries avoid the resource curse? What does the evidence suggest?"
+      ],
+      "nc_requirement": "KS3: the distribution of natural resources including energy",
+      "pedagogical_rationale": "The UAE-Iraq contrast within the same region demonstrates that resource wealth does not automatically translate into development. The comparison requires analysis of governance, conflict, diversification, and international relations as mediating factors between resource endowment and development outcome, building evaluative geographical thinking.",
+      "display_category": "Geography",
+      "display_color": "#10B981",
+      "display_icon": "compare_arrows"
+    },
+    {
+      "contrast_id": "GC-KS3-004",
+      "name": "Kenya vs South Africa: African Development Paths",
+      "contrast_type": "development_contrast",
+      "key_stage": "KS3",
+      "place_a_id": "GP-AF-004",
+      "place_b_id": "GP-AF-006",
+      "study_a_id": "GS-GE-KS3-007",
+      "study_b_id": null,
+      "dimensions": [
+        "colonial legacy",
+        "economic structure",
+        "development indicators",
+        "physical geography",
+        "urbanisation rate",
+        "inequality"
+      ],
+      "stimulus_questions": [
+        "Kenya and South Africa are both in Africa but have very different development profiles. Why?",
+        "South Africa is classified as an NEE while Kenya is an LIC — what does this mean in practice?",
+        "How has the apartheid legacy shaped South Africa's geography?",
+        "What are the strengths of each country's economy, and what challenges remain?"
+      ],
+      "nc_requirement": "KS3: understand geographical similarities, differences and links between places through the study of a region within Africa",
+      "pedagogical_rationale": "Contrasting two African countries within the depth study prevents the monolithic 'Africa as one place' error. Kenya (LIC, agricultural/tourist economy, East African location) and South Africa (NEE, mining/industrial economy, post-apartheid) offer genuine diversity in development path, physical geography, and colonial legacy, building the nuanced understanding the NC requires.",
+      "display_category": "Geography",
+      "display_color": "#10B981",
+      "display_icon": "compare_arrows"
+    },
+    {
+      "contrast_id": "GC-KS3-005",
+      "name": "China vs India: Asian Development Giants",
+      "contrast_type": "development_contrast",
+      "key_stage": "KS3",
+      "place_a_id": "GP-AS-002",
+      "place_b_id": "GP-AS-003",
+      "study_a_id": "GS-GE-KS3-008",
+      "study_b_id": null,
+      "dimensions": [
+        "political system",
+        "economic growth model",
+        "population policy",
+        "urbanisation rate",
+        "environmental costs",
+        "inequality patterns"
+      ],
+      "stimulus_questions": [
+        "China and India both have 1.4 billion people. How has each country managed this differently?",
+        "Which country has developed faster? Is faster always better?",
+        "How has China's political system affected its economic geography differently from India's democracy?",
+        "What environmental costs has rapid development created in each country?"
+      ],
+      "nc_requirement": "KS3: consolidate and extend their knowledge of Asia (including China and India)",
+      "pedagogical_rationale": "The China-India comparison is the defining contrast in the Asia depth study, exposing two fundamentally different development models (state-directed vs democratic, manufacturing-led vs service-led) operating at the same population scale. The comparison prevents the trap of treating Asian development as a single story.",
+      "display_category": "Geography",
+      "display_color": "#10B981",
+      "display_icon": "compare_arrows"
+    },
+    {
+      "contrast_id": "GC-KS3-006",
+      "name": "Bangladesh vs Japan: Climate Vulnerability and Wealth",
+      "contrast_type": "hazard_contrast",
+      "key_stage": "KS3",
+      "place_a_id": "GP-AS-004",
+      "place_b_id": "GP-AS-005",
+      "study_a_id": "GS-GE-KS3-008",
+      "study_b_id": null,
+      "dimensions": [
+        "climate hazard type",
+        "development level",
+        "population density",
+        "adaptation capacity",
+        "international support",
+        "displacement risk"
+      ],
+      "stimulus_questions": [
+        "Both countries face severe natural hazards. How do their responses differ?",
+        "Bangladesh has 170 million people in a flood-prone delta. Why do people stay?",
+        "Japan spends billions on hazard preparedness. Can Bangladesh afford to do the same?",
+        "As sea levels rise, who will be most affected — and is this fair?"
+      ],
+      "nc_requirement": "KS3: Asia depth study connecting physical hazards to development",
+      "pedagogical_rationale": "Contrasting Bangladesh (LIC, flooding/cyclones, limited adaptation capacity) with Japan (HIC, earthquakes/typhoons, advanced preparedness) within the Asia depth study extends the Haiti-Japan principle to climate hazards. This pairing is particularly powerful for the climate change unit, connecting physical vulnerability to development and justice.",
+      "display_category": "Geography",
+      "display_color": "#10B981",
+      "display_icon": "compare_arrows"
+    }
+  ]
+}

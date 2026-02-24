@@ -1,0 +1,241 @@
+[
+  {
+    "enquiry_type_id": "ET-001",
+    "name": "Fair Test",
+    "code": "fair_test",
+    "description": "A controlled investigation where one variable is deliberately changed while all others are kept the same, to determine whether the changed variable has an effect on a measured outcome. The gold-standard enquiry type for causal questions in science.",
+    "nc_basis": "NC KS2 statutory: Working Scientifically — 'planning different types of scientific enquiries to answer questions, including recognising and controlling variables where necessary'. NC KS3 statutory: 'select, plan and carry out the most appropriate types of scientific enquiries to test predictions, including identifying independent, dependent and control variables'.",
+    "session_structure": ["question", "hypothesis", "method_design", "data_collection", "analysis", "conclusion"],
+    "key_question_scaffold": [
+      "What will you change? (independent variable)",
+      "What will you measure or observe? (dependent variable)",
+      "What will you keep the same? (controlled variables)",
+      "What do you predict will happen? Why?",
+      "Was your prediction correct? What does the evidence show?"
+    ],
+    "agent_prompt": "Guide the pupil through a fair test. Ensure they identify the independent, dependent, and controlled variables before collecting data. Challenge them to form a prediction grounded in scientific reasoning ('I think... because...'). During data collection, prompt careful measurement and recording. In analysis, guide them to look for patterns in their results. In the conclusion, require them to link their findings back to their hypothesis and the underlying scientific explanation.",
+    "ks2_guidance": "At KS2, fair tests should involve tangible, observable variables. Pupils identify what they will change, measure, and keep the same. Predictions use 'I think... because...' stems. Data is recorded in tables and presented as bar charts or line graphs. Conclusions state whether the prediction was supported and give a simple causal explanation.",
+    "ks3_guidance": "At KS3, fair tests become more quantitative. Pupils should take repeat readings and calculate means. They should use correct scientific terminology for variables. Data presentation includes line graphs with lines of best fit. Conclusions should reference scientific models or equations. Evaluation of method reliability is expected.",
+    "question_stems": [
+      "How does [independent variable] affect [dependent variable]?",
+      "Does changing [variable] make a difference to [outcome]?",
+      "What is the relationship between [variable A] and [variable B]?"
+    ],
+    "develops_skill": [
+      {"skill_id": "WS-KS2-003", "strength": "core"},
+      {"skill_id": "WS-KS2-002", "strength": "supporting"},
+      {"skill_id": "WS-KS2-005", "strength": "supporting"},
+      {"skill_id": "WS-KS2-006", "strength": "supporting"},
+      {"skill_id": "WS-KS3-003", "strength": "core"},
+      {"skill_id": "WS-KS3-004", "strength": "supporting"},
+      {"skill_id": "WS-KS3-005", "strength": "supporting"},
+      {"skill_id": "WS-KS3-007", "strength": "supporting"}
+    ],
+    "key_stages": ["KS1", "KS2", "KS3", "KS4"],
+    "display_category": "Science Enquiry Type",
+    "display_color": "#7C3AED",
+    "display_icon": "category"
+  },
+  {
+    "enquiry_type_id": "ET-002",
+    "name": "Observation Over Time",
+    "code": "observation_over_time",
+    "description": "A systematic enquiry where changes are observed and recorded at intervals over a period of time — hours, days, weeks, or longer. Used when the process being studied is too slow for a single lesson or when the pattern only emerges through repeated observation. Develops patience, systematic recording, and the ability to identify trends.",
+    "nc_basis": "NC KS2 statutory: Working Scientifically — 'making systematic and careful observations'. NC KS3 statutory: 'make and record observations and measurements using a range of methods for different investigations'.",
+    "session_structure": ["question", "prediction", "observation_schedule", "systematic_recording", "pattern_identification", "conclusion"],
+    "key_question_scaffold": [
+      "What do you think will happen over time? Why?",
+      "How often should we observe and record?",
+      "What exactly will we look for or measure each time?",
+      "What pattern can you see in the observations?",
+      "Can you explain why this pattern happens?"
+    ],
+    "agent_prompt": "Guide the pupil through an observation over time enquiry. Help them establish a regular observation schedule and decide what to record at each observation point. Emphasise consistent, careful recording using the same method each time. After the observation period, prompt them to identify patterns and trends in their data. Challenge them to explain the pattern using scientific knowledge.",
+    "ks2_guidance": "At KS2, observations over time typically span 1-3 weeks (plant growth, evaporation, decay). Pupils should set up a clear recording schedule and use drawings, measurements, or photographs consistently. Patterns are described in words and shown on simple line graphs. Explanations link observations to scientific concepts at an age-appropriate level.",
+    "ks3_guidance": "At KS3, observations over time become more precise and quantitative. Pupils should use data loggers where appropriate, take repeat measurements, and present results as line graphs with correct axes and units. They should evaluate the reliability of their observation method and suggest improvements. Explanations should reference relevant scientific models.",
+    "question_stems": [
+      "How does [thing being observed] change over time?",
+      "What happens to [variable] over [time period]?",
+      "What pattern can you see in how [process] changes?"
+    ],
+    "develops_skill": [
+      {"skill_id": "WS-KS2-002", "strength": "core"},
+      {"skill_id": "WS-KS2-005", "strength": "supporting"},
+      {"skill_id": "WS-KS2-004", "strength": "supporting"},
+      {"skill_id": "WS-KS3-004", "strength": "core"},
+      {"skill_id": "WS-KS3-005", "strength": "supporting"},
+      {"skill_id": "WS-KS3-006", "strength": "supporting"}
+    ],
+    "key_stages": ["KS1", "KS2", "KS3", "KS4"],
+    "display_category": "Science Enquiry Type",
+    "display_color": "#7C3AED",
+    "display_icon": "category"
+  },
+  {
+    "enquiry_type_id": "ET-003",
+    "name": "Pattern Seeking",
+    "code": "pattern_seeking",
+    "description": "An enquiry where pupils look for relationships or correlations between variables in situations where it is not possible or appropriate to control all the variables. Data is collected and analysed to determine whether there is a pattern — 'Is there a link between X and Y?' — without necessarily establishing causation.",
+    "nc_basis": "NC KS2 statutory: Working Scientifically — 'identifying differences, similarities or changes related to simple scientific ideas and processes'. NC KS3 statutory: 'interpret observations and data, including identifying patterns'.",
+    "session_structure": ["question", "prediction", "data_gathering", "pattern_identification", "explanation", "evaluation"],
+    "key_question_scaffold": [
+      "Is there a pattern between [variable A] and [variable B]?",
+      "What do you notice when you compare [these examples]?",
+      "Can you put these in order? What pattern emerges?",
+      "Why might this pattern exist?",
+      "Does the pattern always hold, or are there exceptions?"
+    ],
+    "agent_prompt": "Guide the pupil through a pattern-seeking enquiry. Help them gather data across enough examples to identify whether a pattern exists. Support organisation of data into tables or ranking formats. Prompt careful observation of the pattern ('What do you notice?'). Challenge them to explain why the pattern might exist using scientific knowledge. Where appropriate, distinguish between correlation and causation.",
+    "ks2_guidance": "At KS2, pattern seeking involves gathering observations across multiple examples and looking for trends. Pupils may rank, sort, or graph data to reveal patterns. Explanations describe the pattern and offer a possible reason. Examples: pitch and length of vibrating object, reactivity of metals, shadow size and distance.",
+    "ks3_guidance": "At KS3, pattern seeking becomes more quantitative. Pupils should use scatter graphs to identify correlations, calculate means, and evaluate whether patterns are strong or weak. They should distinguish between correlation and causation. Explanations should reference scientific models and evaluate the strength of evidence.",
+    "question_stems": [
+      "Is there a pattern between [variable A] and [variable B]?",
+      "Do [things with property X] also tend to [show property Y]?",
+      "Can you put these in order of [property] and see what pattern emerges?"
+    ],
+    "develops_skill": [
+      {"skill_id": "WS-KS2-004", "strength": "core"},
+      {"skill_id": "WS-KS2-005", "strength": "supporting"},
+      {"skill_id": "WS-KS2-006", "strength": "supporting"},
+      {"skill_id": "WS-KS3-006", "strength": "core"},
+      {"skill_id": "WS-KS3-005", "strength": "supporting"},
+      {"skill_id": "WS-KS3-011", "strength": "supporting"}
+    ],
+    "key_stages": ["KS2", "KS3", "KS4"],
+    "display_category": "Science Enquiry Type",
+    "display_color": "#7C3AED",
+    "display_icon": "category"
+  },
+  {
+    "enquiry_type_id": "ET-004",
+    "name": "Identifying and Classifying",
+    "code": "identifying_and_classifying",
+    "description": "An enquiry where pupils observe, identify, and sort objects, organisms, or materials into groups based on their observable characteristics. Develops careful observation, the ability to select relevant criteria for grouping, and understanding of why classification systems are useful in science.",
+    "nc_basis": "NC KS2 statutory: Working Scientifically — 'identifying and classifying'. NC KS3 statutory: 'interpret observations and data, including identifying patterns and using observations, measurements and data to draw conclusions'.",
+    "session_structure": ["question", "observation", "property_identification", "grouping_criteria", "classification", "key_construction"],
+    "key_question_scaffold": [
+      "What can you observe about these [objects/organisms/materials]?",
+      "What properties could you use to sort them?",
+      "How have you decided which group each one belongs to?",
+      "Could you sort them a different way? What would change?",
+      "Can you make a key that someone else could use to identify them?"
+    ],
+    "agent_prompt": "Guide the pupil through an identifying and classifying enquiry. Begin with careful, detailed observation using appropriate vocabulary. Help them select meaningful criteria for grouping (not just colour — properties that relate to scientific function or structure). Prompt them to justify their groupings. Challenge them to construct a branching key that others could use. Discuss why classification is useful in science.",
+    "ks2_guidance": "At KS2, classification uses observable properties (hardness, colour, texture, size, behaviour). Pupils should use branching keys and Venn diagrams. They should understand that the same items can be classified in different ways depending on the criteria chosen. Link classification to real scientific examples (rocks, plants, animals).",
+    "ks3_guidance": "At KS3, classification becomes more formal. Pupils should use biological classification systems (Carl Linnaeus), chemical classification (elements, compounds, mixtures), and physical groupings. They should understand hierarchical classification and use dichotomous keys. Criteria should relate to underlying scientific principles, not just surface features.",
+    "question_stems": [
+      "How can we sort these [items] into groups?",
+      "What properties can we use to classify [these things]?",
+      "Can you make a key to identify [these specimens]?"
+    ],
+    "develops_skill": [
+      {"skill_id": "WS-KS2-004", "strength": "core"},
+      {"skill_id": "WS-KS2-002", "strength": "supporting"},
+      {"skill_id": "WS-KS3-006", "strength": "core"},
+      {"skill_id": "WS-KS3-004", "strength": "supporting"}
+    ],
+    "key_stages": ["KS1", "KS2", "KS3", "KS4"],
+    "display_category": "Science Enquiry Type",
+    "display_color": "#7C3AED",
+    "display_icon": "category"
+  },
+  {
+    "enquiry_type_id": "ET-005",
+    "name": "Research Using Secondary Sources",
+    "code": "research",
+    "description": "An enquiry where pupils answer scientific questions using information from books, websites, databases, and other secondary sources rather than first-hand investigation. Used when the question cannot be answered by practical investigation in the classroom (e.g. space, evolution, body systems, historical scientific discoveries).",
+    "nc_basis": "NC KS2 statutory: Working Scientifically — 'using secondary sources of information'. NC KS3 statutory: 'evaluate data, showing awareness of potential sources of random and systematic error'.",
+    "session_structure": ["question", "source_identification", "information_gathering", "note_taking", "synthesis", "conclusion"],
+    "key_question_scaffold": [
+      "What question are we trying to answer?",
+      "Where can we find reliable information about this?",
+      "What are the key facts and ideas from this source?",
+      "Do different sources agree? If not, why might they differ?",
+      "What is the answer to our question, based on the evidence?"
+    ],
+    "agent_prompt": "Guide the pupil through a research enquiry using secondary sources. Help them formulate a clear, focused research question. Support them in selecting reliable sources (not just the first search result). Scaffold note-taking that captures key information without copying. Guide synthesis of information from multiple sources. In the conclusion, ensure they answer the original question with evidence and distinguish established scientific knowledge from speculation.",
+    "ks2_guidance": "At KS2, research enquiries should use age-appropriate sources. Pupils should be guided to check whether information comes from a reliable source. Note-taking should be in the pupil's own words. Presentation formats include posters, labelled diagrams, short reports, and timelines. Topics often include evolution, the solar system, and human body systems.",
+    "ks3_guidance": "At KS3, research enquiries become more critical. Pupils should evaluate source reliability, distinguish between primary and secondary sources, cross-reference information, and present findings using appropriate scientific conventions. They should understand how scientific knowledge is built through evidence, peer review, and replication.",
+    "question_stems": [
+      "What does the evidence tell us about [topic]?",
+      "How do scientists explain [phenomenon]?",
+      "What do we know about [topic] and how do we know it?"
+    ],
+    "develops_skill": [
+      {"skill_id": "WS-KS2-008", "strength": "core"},
+      {"skill_id": "WS-KS2-007", "strength": "supporting"},
+      {"skill_id": "WS-KS3-009", "strength": "core"},
+      {"skill_id": "WS-KS3-008", "strength": "supporting"}
+    ],
+    "key_stages": ["KS1", "KS2", "KS3", "KS4"],
+    "display_category": "Science Enquiry Type",
+    "display_color": "#7C3AED",
+    "display_icon": "category"
+  },
+  {
+    "enquiry_type_id": "ET-006",
+    "name": "Modelling",
+    "code": "modelling",
+    "description": "An enquiry where pupils build, use, and evaluate models to understand phenomena that cannot be directly observed or tested. Models can be physical (e.g. particle model using marbles), diagrammatic (e.g. ray diagrams), mathematical (e.g. equations), or computational. The key pedagogical move is testing the model's predictions against reality and refining it.",
+    "nc_basis": "NC KS3 statutory: Working Scientifically — extended from NGSS practices. 'present reasoned explanations, including explaining data in relation to predictions and hypotheses'. Models are central to KS3 Science (particle model, cell model, wave model, etc.).",
+    "session_structure": ["stimulus", "model_building", "prediction_from_model", "testing_against_reality", "model_refinement", "evaluation"],
+    "key_question_scaffold": [
+      "What are we trying to explain or understand?",
+      "How can we build a model to represent this?",
+      "If our model is correct, what should happen when...?",
+      "Does the evidence match our model's prediction?",
+      "What does our model get right? What does it get wrong? How can we improve it?"
+    ],
+    "agent_prompt": "Guide the pupil through a modelling enquiry. Present the phenomenon to be explained. Help them construct a model (physical, diagrammatic, or mathematical) that captures the key features. Prompt them to use the model to make predictions. Test those predictions against available evidence. Guide model refinement — what needs changing? Critically evaluate the model's limitations. Emphasise that all models are simplifications and that scientific understanding progresses through model revision.",
+    "ks2_guidance": "At KS2, modelling is typically physical or diagrammatic. Pupils might model the solar system, digestive system, or water cycle. They should understand that a model represents the real thing but is not identical to it. Encourage pupils to explain what their model shows well and what it cannot show.",
+    "ks3_guidance": "At KS3, modelling becomes more abstract and powerful. The particle model, cell model, and wave model are central. Pupils should use models to make quantitative predictions (e.g. using the particle model to predict what happens during heating). They should critically evaluate model limitations (e.g. particles drawn as circles do not show that real particles are not spherical). Mathematical models (e.g. speed = distance / time) are introduced.",
+    "question_stems": [
+      "How can we model [phenomenon] to understand it better?",
+      "What does our model predict will happen?",
+      "Where does our model break down? How could we improve it?"
+    ],
+    "develops_skill": [
+      {"skill_id": "WS-KS3-007", "strength": "core"},
+      {"skill_id": "WS-KS3-010", "strength": "supporting"},
+      {"skill_id": "WS-KS3-009", "strength": "supporting"},
+      {"skill_id": "WS-KS2-006", "strength": "supporting"}
+    ],
+    "key_stages": ["KS2", "KS3", "KS4"],
+    "display_category": "Science Enquiry Type",
+    "display_color": "#7C3AED",
+    "display_icon": "category"
+  },
+  {
+    "enquiry_type_id": "ET-007",
+    "name": "Secondary Data Analysis",
+    "code": "secondary_data_analysis",
+    "description": "An enquiry where pupils analyse existing published datasets rather than collecting their own data. Used when data is too large-scale (e.g. population data, climate data), too dangerous, or too time-consuming to collect first-hand. Develops statistical literacy, data interpretation, and critical evaluation of data quality.",
+    "nc_basis": "NC KS3 statutory: Working Scientifically — 'undertake basic data analysis including simple statistical techniques'. 'evaluate data, showing awareness of potential sources of random and systematic error'.",
+    "session_structure": ["question", "dataset_selection", "data_exploration", "pattern_identification", "analysis", "conclusion_with_limitations"],
+    "key_question_scaffold": [
+      "What question can this dataset help us answer?",
+      "Where does this data come from? How was it collected?",
+      "What patterns or trends can you see in the data?",
+      "What calculations or graphs would help us analyse this?",
+      "What can we conclude? What are the limitations of this data?"
+    ],
+    "agent_prompt": "Guide the pupil through a secondary data analysis enquiry. Help them frame a question that the dataset can answer. Support them in understanding where the data comes from and how it was collected (provenance matters). Scaffold data exploration using appropriate statistical techniques (means, ranges, percentages). Guide pattern identification using graphs and tables. In the conclusion, ensure they address both findings and limitations — 'What does the data show? What can we NOT conclude from this data?'",
+    "ks2_guidance": "At KS2, secondary data analysis is introduced through simple datasets — weather data, species counts, growth records from published studies. Pupils should practise reading tables and graphs, identifying the biggest/smallest values, and describing trends in words. They should begin to question where data comes from.",
+    "ks3_guidance": "At KS3, secondary data analysis becomes more sophisticated. Pupils should work with larger datasets, calculate statistical measures (mean, range, modal class), identify anomalies, and evaluate data reliability. They should distinguish between primary and secondary data, evaluate sampling methods, and present findings using appropriate graphical methods. Critical evaluation of data limitations is essential.",
+    "question_stems": [
+      "What does this data tell us about [topic]?",
+      "Is there a trend in this dataset? What might explain it?",
+      "How reliable is this data? What are its limitations?"
+    ],
+    "develops_skill": [
+      {"skill_id": "WS-KS3-011", "strength": "core"},
+      {"skill_id": "WS-KS3-006", "strength": "supporting"},
+      {"skill_id": "WS-KS3-009", "strength": "supporting"},
+      {"skill_id": "WS-KS3-005", "strength": "supporting"}
+    ],
+    "key_stages": ["KS2", "KS3", "KS4"],
+    "display_category": "Science Enquiry Type",
+    "display_color": "#7C3AED",
+    "display_icon": "category"
+  }
+]

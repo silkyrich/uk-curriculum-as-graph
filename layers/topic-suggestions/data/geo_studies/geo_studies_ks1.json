@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "description": "GeoStudy nodes for KS1 Geography: place studies, thematic studies, and fieldwork",
+    "version": "1.0",
+    "authored_by": "geography-specialist",
+    "authored_date": "2026-02-24",
+    "node_label": "GeoStudy",
+    "key_stage": "KS1",
+    "note": "Reshaped from TS-GE-KS1-* topic suggestions into the Geography-specific GeoStudy ontology. Locations are now references to GeoPlace node IDs rather than string arrays."
+  },
+  "studies": [
+    {
+      "study_id": "GS-GE-KS1-001",
+      "name": "Our Local Area",
+      "study_type": "place_study",
+      "subject": "Geography",
+      "key_stage": "KS1",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "open_slot",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS1 Geography: 'understand geographical similarities and differences through studying the human and physical geography of a small area of the United Kingdom, and of a small area in a contrasting non-European country'"
+      ],
+      "theme_category": "integrated",
+      "themes": ["local geography", "observation", "human and physical features", "place knowledge"],
+      "scale": "local",
+      "map_types": ["simple_plan", "picture_map", "aerial_photo"],
+      "data_sources": ["Pupil observation", "Local photographs", "Google Earth"],
+      "definitions": ["local area", "physical feature", "human feature", "map", "compare", "environment"],
+      "pedagogical_rationale": "The local area study is the starting point for geographical enquiry at KS1, grounding abstract concepts in direct experience. Pupils observe, describe, and map the human and physical features of their immediate environment, building the observational and descriptive vocabulary that underpins all subsequent geography. The school determines which local area to study, making this universally relevant.",
+      "common_pitfalls": [
+        "Treating the local study as a one-off activity rather than returning to it throughout the year as new concepts are learned",
+        "Focusing only on human features (buildings, shops) and neglecting physical features (rivers, hills, vegetation) in the local area",
+        "Not connecting the local study to the contrasting non-European locality — the two should be taught in dialogue"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Seasonal changes observed in the local environment",
+        "[Maths] Simple data collection — counting types of buildings, shops, or vehicles",
+        "[Art] Sketching local landmarks and physical features",
+        "[History] How the local area has changed within living memory"
+      ],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": "Walking survey of the school grounds and immediate surroundings, observing and recording human and physical features using simple tally charts and sketch maps.",
+      "duration_lessons": 6,
+      "enquiry_question": "What is our local area like?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils identify and name human and physical features in their local area? Can they use a simple map or plan to show where features are located? Can they describe what makes their local area distinctive?",
+      "success_criteria": [
+        "Name at least 3 physical features and 3 human features in the local area",
+        "Use a simple plan or sketch map to show where features are located",
+        "Describe what makes the local area similar to or different from other places"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS1-C004", "primary": true},
+        {"concept_id": "GE-KS1-C005", "primary": false}
+      ],
+      "uses_template": ["VT-19"],
+      "domain_ids": ["GE-KS1-D003", "GE-KS1-D004"],
+      "locations": ["GP-EU-001"],
+      "builds_on": null,
+      "contrasts_with": ["GC-KS1-001"],
+      "complements": ["GS-GE-KS1-004"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "travel_explore"
+    },
+    {
+      "study_id": "GS-GE-KS1-002",
+      "name": "The United Kingdom: Countries, Capitals and Seas",
+      "study_type": "place_study",
+      "subject": "Geography",
+      "key_stage": "KS1",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "prescribed_topic",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS1 Geography: 'name, locate and identify characteristics of the four countries and capital cities of the United Kingdom and its surrounding seas'",
+        "NC KS1 Geography: 'name and locate the world's seven continents and five oceans'"
+      ],
+      "theme_category": "human",
+      "themes": ["locational knowledge", "political geography", "national identity"],
+      "scale": "national",
+      "map_types": ["uk_political_map", "labelling_map", "simple_plan"],
+      "data_sources": ["Atlas", "Wall maps", "Globe"],
+      "definitions": ["United Kingdom", "England", "Scotland", "Wales", "Northern Ireland", "capital", "country", "border", "sea", "coast"],
+      "pedagogical_rationale": "Locational knowledge of the UK is a statutory requirement that gives pupils their first detailed political geography, understanding that the United Kingdom is made up of four countries each with its own capital, surrounded by named seas. This concrete, mappable knowledge provides the spatial framework for all subsequent UK geography and connects to pupils' sense of national and regional identity.",
+      "common_pitfalls": [
+        "Confusing England with the United Kingdom — deliberate, consistent use of precise terminology is essential",
+        "Teaching location names without using maps — names must be anchored to spatial positions",
+        "Treating this as rote memorisation rather than building genuine spatial understanding through repeated map use"
+      ],
+      "cross_curricular_hooks": [
+        "[History] The four countries of the UK and how they came to be united",
+        "[English] Reading stories set in different parts of the UK",
+        "[PSHE] Identity — which country do we live in? What does it mean to live in the UK?"
+      ],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": null,
+      "duration_lessons": 4,
+      "enquiry_question": "What are the countries that make up the United Kingdom?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils name and locate the four countries of the UK and their capitals on a map? Can they name the surrounding seas? Do they understand the distinction between England, Britain, and the United Kingdom?",
+      "success_criteria": [
+        "Name and locate England, Scotland, Wales, and Northern Ireland on a UK map",
+        "Name the capital city of each UK country",
+        "Name at least 2 surrounding seas"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS1-C002", "primary": true},
+        {"concept_id": "GE-KS1-C001", "primary": false},
+        {"concept_id": "GE-KS1-C005", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["GE-KS1-D001"],
+      "locations": ["GP-EU-002"],
+      "builds_on": null,
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS1-003"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "travel_explore"
+    },
+    {
+      "study_id": "GS-GE-KS1-003",
+      "name": "World Continents and Oceans",
+      "study_type": "place_study",
+      "subject": "Geography",
+      "key_stage": "KS1",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "prescribed_topic",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS1 Geography: 'name and locate the world's seven continents and five oceans'"
+      ],
+      "theme_category": "physical",
+      "themes": ["locational knowledge", "global framework", "continents and oceans"],
+      "scale": "global",
+      "map_types": ["world_political_map", "globe", "labelling_map"],
+      "data_sources": ["Atlas", "Globe", "Wall maps"],
+      "definitions": ["continent", "ocean", "globe", "map", "atlas", "Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America", "Pacific", "Atlantic", "Indian", "Arctic", "Southern"],
+      "pedagogical_rationale": "Naming and locating the seven continents and five oceans is a statutory KS1 requirement that builds the global spatial framework underpinning all subsequent geography. At this age, the emphasis is on building a mental map of the world at the broadest scale — recognising that the Earth is made up of large landmasses surrounded by named oceans — which gives children the vocabulary and spatial scaffolding to make sense of places they encounter in stories, news, and travel.",
+      "common_pitfalls": [
+        "Treating this as a one-off labelling exercise rather than revisiting regularly to build secure recall",
+        "Confusing countries with continents (e.g. thinking Africa is a country) — use maps that show both",
+        "Only using flat maps — globes are essential for understanding the spherical Earth and relative sizes of continents"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Habitats in different continents; polar, desert, and tropical environments",
+        "[English] Stories and picture books set on different continents",
+        "[Music] Songs and rhymes for memorising continent and ocean names"
+      ],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": null,
+      "duration_lessons": 4,
+      "enquiry_question": "What are the continents and oceans of the world?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils name and locate the seven continents and five oceans on a world map or globe? Do they understand that a continent is a large landmass and an ocean is a large body of water?",
+      "success_criteria": [
+        "Name and locate all 7 continents on a world map or globe",
+        "Name and locate at least 3 of the 5 oceans",
+        "Explain that continents are large landmasses and oceans are large bodies of water"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS1-C001", "primary": true},
+        {"concept_id": "GE-KS1-C005", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["GE-KS1-D001"],
+      "locations": ["GP-GLOBAL", "GP-EU-CONTINENT", "GP-AF-CONTINENT", "GP-AS-CONTINENT", "GP-NA-CONTINENT", "GP-SA-CONTINENT", "GP-AN-CONTINENT", "GP-OC-CONTINENT"],
+      "builds_on": null,
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS1-002"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "travel_explore"
+    },
+    {
+      "study_id": "GS-GE-KS1-004",
+      "name": "Contrasting Non-European Locality Study",
+      "study_type": "place_study",
+      "subject": "Geography",
+      "key_stage": "KS1",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "open_slot",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS1 Geography: 'a small area in a contrasting non-European country'",
+        "NC non-statutory guidance suggests examples such as a village in Kenya or a city in India"
+      ],
+      "theme_category": "human",
+      "themes": ["place comparison", "cultural diversity", "similarities and differences", "daily life"],
+      "scale": "local",
+      "map_types": ["world_political_map", "simple_plan", "aerial_photo"],
+      "data_sources": ["Photographs", "Video resources", "Published locality packs", "Google Earth"],
+      "definitions": ["locality", "compare", "contrast", "similarities", "differences", "non-European", "community", "settlement"],
+      "pedagogical_rationale": "The contrasting locality study is a statutory requirement ensuring that pupils' earliest geographical experience extends beyond Europe, developing openness to diverse human geographies. Comparing a non-European locality with the local area teaches pupils that geography is about understanding similarities and differences between places, not just learning about 'exotic' locations. The school selects the specific locality, enabling choice of a place with meaningful connections to the school community.",
+      "common_pitfalls": [
+        "Stereotyping the non-European locality — show daily life, schools, families, and modern infrastructure alongside differences",
+        "Focusing only on differences and not similarities — children in both places go to school, play, eat meals, and have families",
+        "Using outdated or poverty-focused imagery that creates deficit framing of the studied locality"
+      ],
+      "cross_curricular_hooks": [
+        "[English] Stories, picture books, and accounts from children in the contrasting locality",
+        "[Art] Art traditions and crafts from the contrasting locality",
+        "[PSHE] Similarities in daily life, empathy, and understanding diverse communities",
+        "[Science] Comparing weather and seasons between the two localities"
+      ],
+      "sensitive_content_notes": [
+        "Avoid 'charity tourism' framing — present the non-European locality with dignity and agency",
+        "Pupils of the heritage culture may have personal connections — create space for their knowledge and experience"
+      ],
+      "fieldwork_potential": null,
+      "duration_lessons": 6,
+      "enquiry_question": "What is life like in a different part of the world, and how does it compare to our lives?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils describe daily life in the contrasting locality? Can they identify similarities and differences with their own local area? Do they use geographical vocabulary (human feature, physical feature, compare, contrast) accurately?",
+      "success_criteria": [
+        "Describe at least 3 features of daily life in the contrasting locality",
+        "Identify at least 2 similarities and 2 differences between the localities",
+        "Use a world map to show where the contrasting locality is"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS1-C006", "primary": true},
+        {"concept_id": "GE-KS1-C001", "primary": false},
+        {"concept_id": "GE-KS1-C003", "primary": false},
+        {"concept_id": "GE-KS1-C004", "primary": false},
+        {"concept_id": "GE-KS1-C005", "primary": false}
+      ],
+      "uses_template": ["VT-19", "VT-14"],
+      "domain_ids": ["GE-KS1-D002", "GE-KS1-D001", "GE-KS1-D003"],
+      "locations": ["GP-AF-001"],
+      "builds_on": null,
+      "contrasts_with": ["GC-KS1-001"],
+      "complements": ["GS-GE-KS1-001"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "travel_explore"
+    },
+    {
+      "study_id": "GS-GE-KS1-005",
+      "name": "Hot and Cold Places: Seasonal and Daily Weather Patterns",
+      "study_type": "thematic_study",
+      "subject": "Geography",
+      "key_stage": "KS1",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "prescribed_topic",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS1 Geography: 'identify seasonal and daily weather patterns in the United Kingdom and the location of hot and cold areas of the world in relation to the Equator and the North and South Poles'"
+      ],
+      "theme_category": "physical",
+      "themes": ["weather patterns", "seasons", "climate zones", "latitude and temperature"],
+      "scale": "global",
+      "map_types": ["world_political_map", "globe", "labelling_map"],
+      "data_sources": ["Pupil weather observations", "Met Office", "Photographs of hot and cold places"],
+      "definitions": ["weather", "climate", "season", "temperature", "Equator", "North Pole", "South Pole", "hot", "cold", "temperate", "tropical", "polar"],
+      "pedagogical_rationale": "This statutory topic introduces the foundational relationship between location and climate: places near the Equator are generally hot, places near the Poles are generally cold, and the UK's temperate position produces distinct seasonal patterns. Observing daily and seasonal weather gives pupils direct, experiential evidence for geographical patterns, while the global dimension (hot and cold places) extends their mental map and connects to the Equator and Poles as key geographical concepts.",
+      "common_pitfalls": [
+        "Confusing weather (what is happening today) with climate (what typically happens) — use the distinction explicitly and repeatedly",
+        "Teaching hot and cold places only from flat maps — a globe makes the Equator-Poles relationship much clearer",
+        "Presenting UK seasons as identical to all temperate places — note that seasons vary in different countries"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Seasonal changes, temperature measurement, and simple weather recording",
+        "[Maths] Recording weather data on simple charts and pictograms",
+        "[Art] Painting or drawing seasonal landscapes showing weather effects",
+        "[English] Descriptive writing about weather and seasons"
+      ],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": "Daily weather recording using simple instruments (thermometer, rain gauge) and observation charts over a half-term or term, building a class weather diary.",
+      "duration_lessons": 5,
+      "enquiry_question": "Why are some places in the world hot and some cold?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils describe UK seasonal weather patterns? Can they explain, using a globe, why places near the Equator are hot and places near the Poles are cold? Can they name the four seasons and describe typical weather for each?",
+      "success_criteria": [
+        "Describe typical weather for each of the four UK seasons",
+        "Use a globe to show the Equator and Poles",
+        "Explain that places near the Equator are hot and places near the Poles are cold"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS1-C003", "primary": true},
+        {"concept_id": "GE-KS1-C001", "primary": false},
+        {"concept_id": "GE-KS1-C005", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["GE-KS1-D003", "GE-KS1-D001"],
+      "locations": ["GP-EU-002", "GP-GLOBAL"],
+      "builds_on": null,
+      "contrasts_with": null,
+      "complements": null,
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "category"
+    }
+  ]
+}

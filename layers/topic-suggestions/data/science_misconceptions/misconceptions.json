@@ -1,0 +1,874 @@
+[
+  {
+    "misconception_id": "MC-001",
+    "name": "Food from soil",
+    "pupil_statement": "Plants get their food from the soil.",
+    "correct_explanation": "Plants make their own food (glucose) through photosynthesis, using light energy, carbon dioxide from the air, and water from the soil. The soil provides water and minerals, but not food. This is what makes plants producers rather than consumers.",
+    "diagnostic_questions": [
+      "Where does a plant get its food from?",
+      "If you put a plant in very good soil but no light, would it grow well? Why?",
+      "What is the difference between what plants take from the soil and what they make for themselves?"
+    ],
+    "persistence": "lifelong",
+    "evidence_base": "Driver et al., 'Making Sense of Secondary Science' (1994), Chapter 7. PSTT Primary Science Teaching Trust misconception database. One of the most widely documented misconceptions in science education.",
+    "science_discipline": "biology",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-002",
+    "name": "Plants only need water and sunlight",
+    "pupil_statement": "Plants only need water and sunlight to grow.",
+    "correct_explanation": "Plants need water, light, carbon dioxide (from the air), and minerals (from the soil) to grow healthily. Carbon dioxide is needed for photosynthesis to make glucose. Minerals like nitrates are needed to make proteins. Without any one of these, the plant will not grow normally.",
+    "diagnostic_questions": [
+      "What would happen to a plant that had water and sunlight but no air?",
+      "A plant in good soil with plenty of water and light is still not growing well. What might be missing?",
+      "Can you name four things a plant needs to grow?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "PSTT misconception database. Common extension of the 'food from soil' misconception.",
+    "science_discipline": "biology",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": ["MC-001"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-003",
+    "name": "Etiolated growth is healthy",
+    "pupil_statement": "A tall plant is always a healthy plant.",
+    "correct_explanation": "Plants grown in the dark may grow taller than those in the light, but they are pale, spindly, and weak. This is called etiolation — the plant is stretching to reach light. A healthy plant has strong stems, green leaves (containing chlorophyll), and normal proportions. Height alone does not indicate health.",
+    "diagnostic_questions": [
+      "You have two plants — one is tall but pale and thin, the other is shorter but green and strong. Which is healthier? Why?",
+      "Why might a plant in a dark cupboard grow taller than one on the windowsill?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common classroom observation during plant growth investigations.",
+    "science_discipline": "biology",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-004",
+    "name": "Photosynthesis and respiration are opposites",
+    "pupil_statement": "Plants photosynthesise during the day and respire at night — they do one or the other.",
+    "correct_explanation": "Plants respire continuously, 24 hours a day, just like animals. Photosynthesis only occurs when light is available. During daylight, both processes happen simultaneously. The rate of photosynthesis typically exceeds the rate of respiration during the day, so there is a net release of oxygen.",
+    "diagnostic_questions": [
+      "Do plants respire? When?",
+      "What happens inside a plant at night — does everything stop?",
+      "If plants respire all the time and photosynthesise in light, what gas do they release overall during the day?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Driver et al., 'Making Sense of Secondary Science' (1994). Very common at KS3 where the two equations are taught side by side.",
+    "science_discipline": "biology",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": ["MC-001"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-005",
+    "name": "Oxygen is a waste product",
+    "pupil_statement": "Oxygen is a waste product that plants do not need.",
+    "correct_explanation": "Plants use oxygen for their own respiration. The oxygen released during photosynthesis is the excess — the amount produced by photosynthesis exceeds the amount used in respiration. Plants could not survive without oxygen for respiration, just like animals.",
+    "diagnostic_questions": [
+      "Do plants need oxygen? What do they use it for?",
+      "If a plant produces oxygen during photosynthesis, why doesn't it keep all of it?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "PSTT misconception database. Linked to the photosynthesis/respiration confusion.",
+    "science_discipline": "biology",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": ["MC-004"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-006",
+    "name": "All rocks are the same",
+    "pupil_statement": "All rocks are the same — they are just hard lumps from the ground.",
+    "correct_explanation": "Rocks differ significantly in hardness, grain size, permeability, colour, and formation process. There are three main types: igneous (formed from cooled magma), sedimentary (formed from compressed layers of sediment), and metamorphic (formed when existing rocks are changed by heat and pressure). Each type has different properties because of how it was formed.",
+    "diagnostic_questions": [
+      "Can you describe three ways that granite and chalk are different?",
+      "Why are some rocks harder than others?",
+      "How are the three main types of rock formed?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common misconception at Y3 level before hands-on rock classification.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-007",
+    "name": "Fossils are just bones",
+    "pupil_statement": "Fossils are dinosaur bones.",
+    "correct_explanation": "Fossils can be the preserved remains or traces of any organism, not just dinosaurs. They include shells, teeth, plant imprints, footprints (trace fossils), and even preserved insects in amber. Most fossils are of marine organisms, not dinosaurs. Fossils form when organisms are buried in sediment and their remains are gradually replaced by minerals over millions of years.",
+    "diagnostic_questions": [
+      "Can you name three different things that can become fossils?",
+      "Could you find a fossil of a plant? What about a footprint?",
+      "Are most fossils from dinosaurs?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common pop-culture reinforced misconception at KS2.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-008",
+    "name": "Rocks do not change",
+    "pupil_statement": "Rocks do not change — they have always been the same and always will be.",
+    "correct_explanation": "Rocks are slowly broken down by weathering (physical, chemical, and biological) and erosion. The fragments are transported and deposited as sediment, which can form new sedimentary rock. Rocks can also be changed by heat and pressure (metamorphism) or melted and reformed (igneous processes). The rock cycle means rocks are constantly being recycled over geological time.",
+    "diagnostic_questions": [
+      "What happens to a cliff face over thousands of years?",
+      "Can a sedimentary rock become a metamorphic rock? How?",
+      "What is the rock cycle?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Linked to difficulty with geological timescales. PSTT misconception database.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-009",
+    "name": "Sound travels through vacuum",
+    "pupil_statement": "Sound can travel through space (a vacuum).",
+    "correct_explanation": "Sound is a vibration that needs a medium (solid, liquid, or gas) to travel through. In a vacuum, there are no particles to vibrate, so sound cannot travel. This is why space is silent. Light can travel through a vacuum, but sound cannot — they are fundamentally different types of wave.",
+    "diagnostic_questions": [
+      "Can astronauts hear each other talking in space without radios? Why not?",
+      "What does sound need in order to travel from one place to another?",
+      "What is the difference between how light and sound travel?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Driver et al., 'Making Sense of Secondary Science' (1994). Reinforced by sci-fi films showing explosions in space.",
+    "science_discipline": "physics",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-010",
+    "name": "Louder sounds travel faster",
+    "pupil_statement": "Louder sounds travel faster than quieter sounds.",
+    "correct_explanation": "The speed of sound depends on the medium it travels through (faster in solids than liquids, faster in liquids than gases), not on the volume. A whisper and a shout both travel at the same speed through air (approximately 343 m/s). Volume (amplitude) and speed are independent properties of sound.",
+    "diagnostic_questions": [
+      "If someone shouts at you from across a field, does the sound arrive faster than if they whispered?",
+      "What determines how fast sound travels?",
+      "Does a loud sound have more energy than a quiet sound? Does it travel faster?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common intuitive misconception based on everyday experience of louder sounds seeming more powerful.",
+    "science_discipline": "physics",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-011",
+    "name": "Pitch and volume confusion",
+    "pupil_statement": "Pitch and volume are the same thing — a high sound is a loud sound.",
+    "correct_explanation": "Pitch and volume are independent properties of sound. Pitch is determined by the frequency of vibration (how fast the vibrations are). Volume is determined by the amplitude of vibration (how big the vibrations are). You can have a high quiet sound (a whispered squeak) or a low loud sound (a bass drum).",
+    "diagnostic_questions": [
+      "Can you make a high sound that is quiet? Can you make a low sound that is loud?",
+      "What determines the pitch of a sound? What determines the volume?",
+      "A guitar string is plucked gently (quiet) and then hard (loud). Does the pitch change?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Very common at Y4 level. PSTT misconception database.",
+    "science_discipline": "physics",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-012",
+    "name": "Electricity is used up",
+    "pupil_statement": "Electricity is used up by the bulb — it gets used up as it goes around the circuit.",
+    "correct_explanation": "Electric current flows around a complete circuit and is the same at all points in a series circuit. The bulb transfers electrical energy to light and thermal energy, but the current itself is not consumed. What is transferred is energy, not electricity. An ammeter would show the same reading before and after the bulb.",
+    "diagnostic_questions": [
+      "If you put an ammeter before the bulb and one after the bulb in a series circuit, what would you expect to see?",
+      "What happens to the electricity after it goes through the bulb?",
+      "Is it electricity or energy that is 'used up'?"
+    ],
+    "persistence": "lifelong",
+    "evidence_base": "Shipstone (1984). One of the most thoroughly researched misconceptions in physics education. Persists into adulthood in many people.",
+    "science_discipline": "physics",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-013",
+    "name": "Single wire circuit",
+    "pupil_statement": "A single wire from the battery to the bulb is enough to make it light up.",
+    "correct_explanation": "A complete circuit (loop) is needed for current to flow. The current must travel from one terminal of the battery, through the bulb, and back to the other terminal. A single wire provides a path in one direction only — without a return path, no current flows and the bulb does not light.",
+    "diagnostic_questions": [
+      "Draw how you would connect a battery to a bulb to make it light.",
+      "Why does a bulb have two contact points?",
+      "What happens to the current after it passes through the bulb?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Shipstone (1984), Osborne & Freyberg (1985). Very common at introduction to circuits (Y4).",
+    "science_discipline": "physics",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-014",
+    "name": "Eyes emit light",
+    "pupil_statement": "Our eyes send out light beams to see things.",
+    "correct_explanation": "We see objects because light from a source (the sun, a lamp, etc.) reflects off objects and enters our eyes. Our eyes are detectors, not emitters. The ancient Greek 'emission theory' of vision has been disproved — nothing comes out of our eyes. In a completely dark room, we cannot see anything because there is no light to reflect.",
+    "diagnostic_questions": [
+      "If our eyes sent out light, would we be able to see in a completely dark room?",
+      "Draw an arrow diagram showing how you see a book on a table.",
+      "What is the role of light in how we see things?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Driver et al., 'Making Sense of Secondary Science' (1994). Extensively researched; the 'emission theory' is held by a significant minority even into adulthood.",
+    "science_discipline": "physics",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-015",
+    "name": "Shadows have colour",
+    "pupil_statement": "Shadows have colour — a red object makes a red shadow.",
+    "correct_explanation": "A shadow is an area where light has been blocked by an opaque object. Shadows are dark (absence of light), not coloured. The colour of the object does not affect the colour of its shadow. The shadow takes the shape of the object because light travels in straight lines.",
+    "diagnostic_questions": [
+      "What colour is the shadow of a red ball? Why?",
+      "What actually IS a shadow?",
+      "Can you make a coloured shadow? (Only with coloured lights, not coloured objects.)"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common at Y3 level. Quickly resolved through practical investigation.",
+    "science_discipline": "physics",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-016",
+    "name": "Water disappears in evaporation",
+    "pupil_statement": "When water evaporates, it disappears — it is gone.",
+    "correct_explanation": "When water evaporates, it changes from liquid water to water vapour (an invisible gas). The water has not disappeared — it has changed state and is now in the air. This is why the air can feel humid, and why water condenses on cold surfaces. The total amount of water is conserved.",
+    "diagnostic_questions": [
+      "Where does the water in a puddle go when the puddle dries up?",
+      "If water 'disappears' when it evaporates, where does the rain come from?",
+      "Is water vapour the same as steam?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "PSTT misconception database. Very common at Y4 states of matter. Linked to conservation of matter concepts.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-017",
+    "name": "Melting and dissolving confusion",
+    "pupil_statement": "Melting and dissolving are the same thing.",
+    "correct_explanation": "Melting is a change of state caused by heating — a solid becomes a liquid (e.g. ice melts to water). Dissolving is a substance mixing into a solvent to form a solution (e.g. sugar dissolves in water). Melting involves one substance and heat; dissolving involves two substances and no heat is necessarily required. A melted substance can be recovered by cooling; a dissolved substance can be recovered by evaporating the solvent.",
+    "diagnostic_questions": [
+      "What is the difference between melting chocolate and dissolving sugar?",
+      "Does sugar melt or dissolve when you put it in tea?",
+      "How would you recover melted butter? How would you recover dissolved salt?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Driver et al., 'Making Sense of Secondary Science' (1994). Very common language confusion reinforced by everyday usage ('the sugar melted in my tea').",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-018",
+    "name": "Steam and water vapour are the same",
+    "pupil_statement": "Steam and water vapour are the same thing.",
+    "correct_explanation": "Water vapour is an invisible gas — you cannot see it. What we commonly call 'steam' (the white cloud from a kettle) is actually tiny droplets of liquid water that have condensed from water vapour when it meets cooler air. True steam (water vapour at 100C) is invisible. The visible 'steam' is a mist of condensed water droplets.",
+    "diagnostic_questions": [
+      "Can you see water vapour? Why or why not?",
+      "Look at a boiling kettle — where is the gap between the spout and the white cloud? What is in that gap?",
+      "Is the white cloud from a kettle made of gas or tiny liquid droplets?"
+    ],
+    "persistence": "lifelong",
+    "evidence_base": "Extremely common. Reinforced by everyday language and experience. Even many adults conflate steam and water vapour.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-019",
+    "name": "Dissolved substances disappear",
+    "pupil_statement": "When something dissolves, it disappears — it is gone.",
+    "correct_explanation": "When a substance dissolves, it breaks into particles too small to see, but the substance is still there in the solution. The total mass is conserved — if you weigh the water, then add and dissolve sugar, the solution weighs the same as the water plus sugar combined. The dissolved substance can be recovered by evaporating the solvent.",
+    "diagnostic_questions": [
+      "If you dissolve salt in water and then weigh the solution, will it weigh more than the water alone?",
+      "How could you prove that the salt is still in the water after it dissolves?",
+      "Has the salt 'gone' when you can no longer see it?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Driver et al., 'Making Sense of Secondary Science' (1994). Linked to conservation of mass. Common at Y5.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-020",
+    "name": "All changes are reversible",
+    "pupil_statement": "All changes can be undone if you try hard enough.",
+    "correct_explanation": "Some changes are reversible (melting, dissolving, evaporating — the original substances can be recovered). Other changes are irreversible — they form new substances that cannot be changed back to the originals. Burning, cooking, and rusting are irreversible. The key test is: can you get the original substances back? If new substances are formed, the change is irreversible.",
+    "diagnostic_questions": [
+      "Can you un-cook an egg? Why not?",
+      "Give an example of a reversible change and an irreversible change.",
+      "What makes a change irreversible? What is formed that was not there before?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common at Y5 when reversible/irreversible changes are introduced.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-021",
+    "name": "Smooth surfaces have no friction",
+    "pupil_statement": "Smooth surfaces have no friction.",
+    "correct_explanation": "All surfaces have some friction when they are in contact. Smoother surfaces have less friction than rougher surfaces, but friction is never zero. Even ice has friction. If there were truly no friction, you could not walk, hold objects, or stop a moving car. Friction is reduced on smooth surfaces but always present.",
+    "diagnostic_questions": [
+      "If there were truly no friction on an ice rink, would you be able to stand up?",
+      "Does a smooth surface have zero friction or just less friction than a rough one?",
+      "What would the world be like with absolutely no friction?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common at Y5 during friction investigations. PSTT misconception database.",
+    "science_discipline": "physics",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-022",
+    "name": "Friction is always unhelpful",
+    "pupil_statement": "Friction is always a bad thing that slows us down.",
+    "correct_explanation": "Friction is essential for many everyday actions. Without friction, you could not walk (your feet would slip), hold a pen, grip a steering wheel, or brake a car. Friction is only unhelpful when it wastes energy or causes wear in machines. Whether friction is helpful or unhelpful depends on the context.",
+    "diagnostic_questions": [
+      "Can you name three situations where friction is helpful?",
+      "What would happen if there was no friction between your shoes and the floor?",
+      "Is friction always something we want to reduce?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common at Y5. Often reinforced by focussing only on friction as a 'force that opposes motion' without discussing its usefulness.",
+    "science_discipline": "physics",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-023",
+    "name": "Digestion happens only in the stomach",
+    "pupil_statement": "The stomach is the only organ involved in digestion — food goes in and gets digested there.",
+    "correct_explanation": "Digestion begins in the mouth (teeth break down food mechanically; saliva contains enzymes that begin chemical digestion of starch). Food then travels through the oesophagus to the stomach (acid and enzymes), small intestine (most chemical digestion and absorption of nutrients), and large intestine (water absorption). Digestion is a whole-body process involving multiple organs.",
+    "diagnostic_questions": [
+      "Where does digestion start?",
+      "What happens in the small intestine? Is it just storage?",
+      "Can you name four organs involved in digestion and what each one does?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common at Y4. Quickly resolved through the digestive system topic.",
+    "science_discipline": "biology",
+    "key_stages": ["KS2"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-024",
+    "name": "Food chain arrow direction",
+    "pupil_statement": "Arrows in food chains point from the predator to the prey — they show 'who eats who'.",
+    "correct_explanation": "Arrows in food chains show the direction of energy transfer, not the direction of eating. The arrow points from the organism being eaten to the organism eating it, showing that energy is transferred from prey to predator. So 'grass -> rabbit -> fox' means energy flows from grass to rabbit to fox.",
+    "diagnostic_questions": [
+      "In the food chain 'grass -> rabbit -> fox', what do the arrows represent?",
+      "Which way does the energy flow in a food chain?",
+      "Draw a food chain for: lettuce, caterpillar, thrush. Which way do the arrows go?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Very common at KS2 and persists into KS3. PSTT misconception database.",
+    "science_discipline": "biology",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-025",
+    "name": "Evolution is individual choice",
+    "pupil_statement": "Evolution means an animal chose to change — the giraffe stretched its neck to reach leaves.",
+    "correct_explanation": "Evolution happens to populations over many generations, not to individual organisms during their lifetime. Individual organisms do not choose to evolve. Instead, random genetic variation means some individuals are better adapted than others. Those better-adapted individuals are more likely to survive and reproduce, passing on their advantageous traits. Over many generations, these traits become more common in the population. This is natural selection.",
+    "diagnostic_questions": [
+      "If a giraffe stretches its neck during its lifetime, will its babies have longer necks?",
+      "Does evolution happen to one animal or to a whole population?",
+      "What is the difference between an animal changing during its life and evolution?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "ECLIPSE project; Driver et al., 'Making Sense of Secondary Science' (1994). Linked to Lamarckian thinking, which is deeply intuitive.",
+    "science_discipline": "biology",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-026",
+    "name": "Humans evolved from monkeys",
+    "pupil_statement": "Humans evolved from modern monkeys.",
+    "correct_explanation": "Humans did not evolve from any modern ape or monkey species. Humans and modern apes (chimpanzees, gorillas, etc.) share a common ancestor that lived millions of years ago. Both lineages have evolved since then. Humans are not 'more evolved' than apes — both are equally adapted to their environments. The evolutionary tree is branching, not linear.",
+    "diagnostic_questions": [
+      "If humans evolved from monkeys, why are there still monkeys?",
+      "What do scientists mean when they say humans and chimpanzees share a 'common ancestor'?",
+      "Is evolution like a ladder (with humans at the top) or like a branching tree?"
+    ],
+    "persistence": "lifelong",
+    "evidence_base": "One of the most widely held misconceptions about evolution, persisting into adulthood across all cultures. Extensively documented in science education research.",
+    "science_discipline": "biology",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-027",
+    "name": "Animal cells have no structure",
+    "pupil_statement": "Animal cells do not have any structure — they are just blobs of jelly.",
+    "correct_explanation": "Animal cells have a well-defined internal structure including: a cell membrane (controls what enters and leaves), cytoplasm (where chemical reactions occur), a nucleus (contains DNA and controls the cell), mitochondria (where respiration releases energy), and ribosomes (where proteins are made). What animal cells lack compared to plant cells is a cell wall, chloroplasts, and a large permanent vacuole.",
+    "diagnostic_questions": [
+      "What structures would you find inside an animal cell?",
+      "What does the nucleus do?",
+      "What is the difference between a cell membrane and a cell wall?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common at KS3 introduction to cells. Often resolved through microscopy practical.",
+    "science_discipline": "biology",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-028",
+    "name": "All cells look the same",
+    "pupil_statement": "All cells look the same — they are all the round shape we draw in books.",
+    "correct_explanation": "Cells are highly specialised for different functions and vary enormously in shape and size. Red blood cells are disc-shaped to carry oxygen efficiently. Nerve cells are long and thin to transmit electrical signals. Root hair cells have extensions to absorb water. Muscle cells are elongated to contract. The shape of a cell is closely linked to its function — this is the structure-function relationship.",
+    "diagnostic_questions": [
+      "Why are nerve cells long and thin?",
+      "Can you name three types of specialised cell and explain how their shape helps them do their job?",
+      "If all cells looked the same, could they all do the same job?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "PSTT/ECLIPSE. Reinforced by simplified cell diagrams that show all cells as generic blobs.",
+    "science_discipline": "biology",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": ["MC-027"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-029",
+    "name": "Microscope makes things bigger",
+    "pupil_statement": "The microscope makes the actual cell bigger.",
+    "correct_explanation": "The microscope magnifies the image of the cell, not the cell itself. The cell stays exactly the same size on the slide. What changes is the image that reaches your eye — the lenses bend light to produce a larger image. This is why we talk about magnification of the image, not enlargement of the specimen.",
+    "diagnostic_questions": [
+      "After you look at a cell under a microscope and then remove the slide, is the cell bigger than it was before?",
+      "What does 'magnification' actually mean?",
+      "Does the microscope change the cell or change the image?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common conceptual confusion at KS3 introduction to microscopy.",
+    "science_discipline": "biology",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-030",
+    "name": "All acids are dangerous",
+    "pupil_statement": "All acids are dangerous and will burn you.",
+    "correct_explanation": "Many acids are weak and found in everyday foods. Citric acid is in lemons and oranges. Ethanoic acid (acetic acid) is in vinegar. Carbonic acid is in fizzy drinks. These are safe to consume. Only strong, concentrated acids (like concentrated hydrochloric acid or sulfuric acid) are corrosive and dangerous. The pH value and concentration determine how hazardous an acid is.",
+    "diagnostic_questions": [
+      "Is lemon juice an acid? Is it dangerous?",
+      "What is the difference between a strong acid and a weak acid?",
+      "Give an example of an acid that you eat or drink every day."
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Common at KS3. Often reinforced by safety warnings about lab acids without contextualising that many acids are safe.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-031",
+    "name": "Neutral means safe",
+    "pupil_statement": "Neutral (pH 7) means safe — anything that is neutral cannot harm you.",
+    "correct_explanation": "Neutral means pH 7, which is neither acidic nor alkaline. However, a substance can be neutral and still harmful for other reasons — for example, heavy metal solutions can be approximately neutral but extremely toxic. Conversely, many acidic substances (lemon juice, pH ~2) are perfectly safe. Safety depends on many factors beyond pH alone.",
+    "diagnostic_questions": [
+      "Is pure water safe? It is neutral at pH 7.",
+      "Could a neutral substance still be harmful? Give an example.",
+      "Does pH tell you everything you need to know about whether a substance is safe?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common simplification at KS3 when pH is introduced.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": ["MC-030"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-032",
+    "name": "Particles expand when heated",
+    "pupil_statement": "Particles get bigger when they are heated.",
+    "correct_explanation": "Particles do not change size when heated. What happens is that they gain kinetic energy and move faster. In a solid, they vibrate more; in a liquid, they move more freely; in a gas, they move faster and spread further apart. The substance expands because the particles move further apart, not because the particles themselves grow.",
+    "diagnostic_questions": [
+      "When you heat a solid, do the particles get bigger or do they move more?",
+      "If particles got bigger when heated, what would happen to the mass of the substance?",
+      "Draw what you think happens to particles in a solid when it is heated."
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Driver et al., 'Making Sense of Secondary Science' (1994). One of the most common particle model misconceptions. Very difficult to shift.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-033",
+    "name": "No particles in gas",
+    "pupil_statement": "There are no particles in a gas because you cannot see it.",
+    "correct_explanation": "Gases are made of particles just like solids and liquids. The particles in a gas are much more spread out and move randomly at high speed, which is why gases are invisible, fill their container, and can be compressed. The fact that we cannot see the particles does not mean they are not there — we cannot see the particles in a solid or liquid either, they are just closer together.",
+    "diagnostic_questions": [
+      "If there are no particles in air, what do we breathe?",
+      "Can you feel wind? What is wind made of?",
+      "Why can you smell perfume from across the room? What is travelling to your nose?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Driver et al., 'Making Sense of Secondary Science' (1994). Often linked to MC-032 (particles expand when heated).",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": ["MC-032"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-034",
+    "name": "Heating always raises temperature",
+    "pupil_statement": "Temperature always increases when you heat something.",
+    "correct_explanation": "During a change of state (melting or boiling), the temperature remains constant even though energy is being added. The energy is being used to break the bonds between particles (changing their arrangement) rather than increasing their kinetic energy (which would raise the temperature). This is why a heating curve has flat sections at the melting point and boiling point.",
+    "diagnostic_questions": [
+      "What happens to the temperature of ice when it is melting? Does it keep going up?",
+      "If you keep heating water at 100C, what happens to the temperature? What happens to the water?",
+      "Where is the energy going during a change of state if the temperature is not increasing?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Counter-intuitive result that drives deep learning in the particle model practical. Common at KS3.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": ["MC-032"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-035",
+    "name": "Decomposers are unimportant",
+    "pupil_statement": "Decomposers are not important in an ecosystem — they just eat dead things.",
+    "correct_explanation": "Decomposers (bacteria and fungi) are essential for recycling nutrients. When organisms die, decomposers break down the dead material and release minerals back into the soil. Plants absorb these minerals and use them to grow. Without decomposers, nutrients would be locked up in dead organisms and the soil would become depleted, eventually preventing plant growth and collapsing the entire food web.",
+    "diagnostic_questions": [
+      "What would happen if all the decomposers in an ecosystem died?",
+      "How do nutrients get from dead organisms back to living plants?",
+      "Why are decomposers sometimes called 'nature's recyclers'?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "PSTT/ECLIPSE. Decomposers are often omitted from simple food chains, reinforcing their perceived unimportance.",
+    "science_discipline": "biology",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-036",
+    "name": "Energy is recycled in ecosystems",
+    "pupil_statement": "Energy is recycled in an ecosystem just like materials are.",
+    "correct_explanation": "Energy flows through an ecosystem in one direction and is not recycled. At each trophic level, energy is lost as heat through respiration. This is why food chains rarely have more than four or five levels — there is not enough energy left to support another level. Materials (nutrients like carbon and nitrogen) ARE recycled through biogeochemical cycles. Energy flows; materials cycle.",
+    "diagnostic_questions": [
+      "What happens to the energy at each level of a food chain?",
+      "Why are there usually only 4-5 levels in a food chain?",
+      "What is the difference between how energy and materials move through an ecosystem?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Common confusion at KS3, especially when nutrient cycling and energy flow are taught together.",
+    "science_discipline": "biology",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": ["MC-035"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-037",
+    "name": "Constant force needed for constant speed",
+    "pupil_statement": "An object needs a constant force to keep moving at constant speed.",
+    "correct_explanation": "An object moving at constant speed has balanced forces acting on it — the driving force equals the resistive forces (friction, air resistance). No net force is needed to maintain constant velocity. This is Newton's first law: an object at rest stays at rest, and an object in motion stays in motion at constant velocity, unless acted on by an unbalanced force. The confusion arises because on Earth, friction is always present, so we need to push to overcome it — but the push balances friction, it does not cause the motion.",
+    "diagnostic_questions": [
+      "If you push a box at constant speed across the floor, what forces are acting on it?",
+      "In space with no friction, if you give an object a push and let go, what happens?",
+      "Does a car engine create the force that makes it go, or the force that overcomes friction?"
+    ],
+    "persistence": "lifelong",
+    "evidence_base": "Aristotelian thinking — one of the most deeply rooted misconceptions in physics. Documented extensively by Clement (1982) and others. Persists even in physics graduates.",
+    "science_discipline": "physics",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-038",
+    "name": "Heavy objects fall faster",
+    "pupil_statement": "Heavier objects fall faster than lighter objects.",
+    "correct_explanation": "In the absence of air resistance, all objects accelerate at the same rate due to gravity (approximately 9.8 m/s/s on Earth), regardless of their mass. A feather and a hammer dropped in a vacuum reach the ground at the same time. In air, different objects fall at different rates because of air resistance (which depends on shape and surface area, not mass). A heavy compact object falls faster than a light spread-out one because it experiences proportionally less air resistance relative to its weight.",
+    "diagnostic_questions": [
+      "If you dropped a football and a tennis ball from the same height (ignoring air resistance), which would land first?",
+      "Why does a feather fall more slowly than a coin in air? Is it because it is lighter?",
+      "On the Moon (where there is no air), a hammer and feather were dropped together. What happened?"
+    ],
+    "persistence": "lifelong",
+    "evidence_base": "Pre-Galilean Aristotelian thinking. One of the most famous misconceptions in science. Apollo 15 hammer-feather demonstration (1971).",
+    "science_discipline": "physics",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-039",
+    "name": "Energy is used up",
+    "pupil_statement": "Energy is used up when you use it — it gets used up and is gone.",
+    "correct_explanation": "Energy cannot be created or destroyed — it is conserved (the first law of thermodynamics). When we say energy is 'used', we mean it is transferred from one store to another. Often it is transferred to thermal energy in the surroundings, which is less useful but not gone. The total amount of energy before and after any process is always the same.",
+    "diagnostic_questions": [
+      "When a battery goes flat, where has the energy gone?",
+      "If energy cannot be destroyed, why do we need to keep buying fuel?",
+      "What does 'conservation of energy' mean?"
+    ],
+    "persistence": "lifelong",
+    "evidence_base": "Driver et al., 'Making Sense of Secondary Science' (1994). Reinforced by everyday language ('save energy', 'energy-saving'). One of the hardest physics misconceptions to shift.",
+    "science_discipline": "physics",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-040",
+    "name": "Cold flows into objects",
+    "pupil_statement": "Cold flows into warm objects — that is why things cool down.",
+    "correct_explanation": "There is no such thing as 'cold' as a form of energy. What happens is that thermal energy transfers from hotter objects to cooler objects. When you touch a cold window, heat transfers from your warm hand to the cold glass — it feels cold because you are losing heat, not because 'cold' is flowing into you. Energy always transfers from hot to cold, never the other way.",
+    "diagnostic_questions": [
+      "When you hold an ice cube and it feels cold, is cold flowing into your hand or heat flowing out?",
+      "What direction does thermal energy always transfer?",
+      "Why does a metal spoon feel colder than a wooden spoon at the same temperature?"
+    ],
+    "persistence": "lifelong",
+    "evidence_base": "Pre-scientific caloric theory thinking. Very common — reinforced by everyday language ('close the door, you are letting the cold in').",
+    "science_discipline": "physics",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": ["MC-039"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-041",
+    "name": "Insulators create heat",
+    "pupil_statement": "Insulators make things warmer — a jumper produces heat.",
+    "correct_explanation": "Insulators do not produce heat. They reduce the rate at which thermal energy transfers from a warm object to cooler surroundings. A jumper feels warm because it slows down the loss of heat from your body — your body is the heat source, not the jumper. If you wrapped a jumper around an ice cube, it would slow down the ice melting, not warm it up.",
+    "diagnostic_questions": [
+      "If you wrap a jumper around an ice cube, will it melt faster or slower?",
+      "Where does the warmth come from when you put on a coat?",
+      "Does insulation produce heat or slow down heat loss?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Common misconception linked to everyday experience. PSTT misconception database.",
+    "science_discipline": "physics",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": ["MC-040"],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-042",
+    "name": "All metals react with acids",
+    "pupil_statement": "All metals react with acids.",
+    "correct_explanation": "Some metals are too unreactive to react with dilute acids. Copper, silver, gold, and platinum do not react with dilute hydrochloric acid because they are below hydrogen in the reactivity series. Only metals above hydrogen (like magnesium, zinc, and iron) react with dilute acids to produce a salt and hydrogen gas. This is why gold jewellery does not dissolve in contact with acidic substances.",
+    "diagnostic_questions": [
+      "If you put a gold ring in dilute hydrochloric acid, would it dissolve? Why or why not?",
+      "What would you observe if you put copper in dilute acid?",
+      "What determines whether a metal will react with an acid?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common overgeneralisation at KS3 when reactivity series is first taught.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-043",
+    "name": "Bubbles in reactions are air",
+    "pupil_statement": "The bubbles produced when metals react with acids are air.",
+    "correct_explanation": "The gas produced when metals react with dilute acids is hydrogen, not air. Hydrogen is produced because the acid donates hydrogen ions (H+) which combine to form hydrogen gas (H2). The hydrogen gas can be identified by the 'squeaky pop' test — a burning splint makes a popping sound when held near the gas. Air would not give this result.",
+    "diagnostic_questions": [
+      "What gas is produced when magnesium reacts with hydrochloric acid?",
+      "How could you test what gas is being produced?",
+      "What is the 'squeaky pop' test? What gas does it identify?"
+    ],
+    "persistence": "transient",
+    "evidence_base": "Common at KS3 during first metals and acids practical.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-044",
+    "name": "Speed and acceleration confusion",
+    "pupil_statement": "Speed and acceleration are the same thing — a fast object is accelerating.",
+    "correct_explanation": "Speed is how fast an object is moving (distance per unit time). Acceleration is the rate at which speed changes (change in speed per unit time). An object can be moving very fast but not accelerating (constant speed). An object can be moving slowly but accelerating rapidly (just starting to move). A parked car has zero speed and zero acceleration. A car cruising at 70 mph has high speed but zero acceleration.",
+    "diagnostic_questions": [
+      "A car is travelling at a steady 60 mph on a motorway. Is it accelerating?",
+      "A bicycle starts from rest and speeds up. Is it accelerating? Is it going fast?",
+      "What is the difference between speed and acceleration?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Common at KS3 when forces and motion are introduced. Trowbridge & McDermott (1981).",
+    "science_discipline": "physics",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-045",
+    "name": "Removing one species only affects its predator",
+    "pupil_statement": "Removing one species from a food web only affects the animal that eats it.",
+    "correct_explanation": "Removing a species from a food web has cascading effects throughout the ecosystem due to interdependence. If a prey species is removed, its predators lose a food source (they may decline or switch prey). The organisms the prey species ate may increase in number. These changes ripple through the entire web. This is why biodiversity matters — the more connections in a food web, the more resilient it is.",
+    "diagnostic_questions": [
+      "If all the rabbits in a meadow ecosystem died, which other organisms would be affected? Only foxes?",
+      "What would happen to the grass if the rabbits disappeared?",
+      "Why does removing one species affect organisms that are not directly connected to it?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Common at KS3 ecology. Pupils often think linearly rather than systemically about ecosystems.",
+    "science_discipline": "biology",
+    "key_stages": ["KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  },
+  {
+    "misconception_id": "MC-046",
+    "name": "Evaporation only at boiling",
+    "pupil_statement": "Water only evaporates when it boils at 100 degrees.",
+    "correct_explanation": "Evaporation happens at any temperature from the surface of a liquid. Even at room temperature, the fastest-moving particles at the surface have enough energy to escape into the air. Boiling is when evaporation happens throughout the liquid (not just the surface) and occurs at a specific temperature (100C for water at standard pressure). Puddles dry up without reaching boiling point because of surface evaporation.",
+    "diagnostic_questions": [
+      "How does a puddle dry up on a cool day when the temperature is nowhere near 100C?",
+      "What is the difference between evaporation and boiling?",
+      "Where does evaporation happen — at the surface or throughout the liquid?"
+    ],
+    "persistence": "persistent",
+    "evidence_base": "Common at KS2 and KS3. PSTT misconception database.",
+    "science_discipline": "chemistry",
+    "key_stages": ["KS2", "KS3"],
+    "prerequisite_misconception_ids": [],
+    "display_category": "Science Misconception",
+    "display_color": "#DC2626",
+    "display_icon": "warning"
+  }
+]

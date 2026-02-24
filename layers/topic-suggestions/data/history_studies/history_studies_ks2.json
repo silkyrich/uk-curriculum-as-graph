@@ -1,0 +1,982 @@
+{
+  "version": "1.0",
+  "subject": "History",
+  "key_stage": "KS2",
+  "authored_by": "history-specialist",
+  "authored_date": "2026-02-24",
+  "note": "KS2 HistoryStudy nodes. Reshaped from migrated TopicSuggestion data (history_ks2.json) into the History ontology schema. British chronological sequence: Stone Age -> Roman Britain -> Anglo-Saxons -> Vikings. World history: 4 ancient civ options + Ancient Greece (mandatory) + 3 non-European contrast options. Plus local history and post-1066 theme.",
+  "studies": [
+    {
+      "study_id": "HS-KS2-001",
+      "name": "Stone Age to Iron Age Britain",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 History: 'Changes in Britain from the Stone Age to the Iron Age'",
+        "Statutory prescribed study covering hunter-gatherers, Bronze Age religion/technology, Iron Age hill forts"
+      ],
+      "period": "c.800,000 BC - 43 AD",
+      "period_start_year": -800000,
+      "period_end_year": 43,
+      "significance_claim": "The shift from hunter-gathering to farming was the most transformative change in human history, fundamentally altering how people lived, settled and organised their societies in Britain.",
+      "pedagogical_rationale": "This topic provides the chronological starting point for KS2 British history and offers rich archaeological evidence for developing source skills. The vast time span (c.800,000 BC to 43 AD) is ideal for developing chronological understanding and the concept of change over long periods. The shift from hunter-gathering to farming is one of the most significant turning points in human history and gives pupils a concrete example of cause and consequence.",
+      "enquiry_questions": [
+        "What was the biggest change between the Stone Age and the Iron Age?",
+        "How do we know about people who lived before writing was invented?",
+        "Why was the development of farming so significant?"
+      ],
+      "key_figures": ["Cheddar Man", "Otzi the Iceman"],
+      "comparison_pairs": null,
+      "key_events": ["Arrival of first humans", "Development of farming c.4000 BC", "Introduction of bronze tools c.2500 BC", "Construction of Stonehenge", "Iron Age hill fort building"],
+      "perspectives": ["hunter-gatherer", "early farmer", "Bronze Age metalworker", "Iron Age community member"],
+      "interpretations": [
+        "Debate over whether Stonehenge was primarily a religious site, astronomical observatory or healing centre",
+        "Competing views on whether the transition to farming was driven by migration or adoption by indigenous populations"
+      ],
+      "source_types": ["primary_archaeological", "built_heritage", "museum_artefact"],
+      "definitions": ["hunter-gatherer", "Neolithic", "Bronze Age", "Iron Age", "hill fort", "Stonehenge", "settlement", "artefact", "chronology"],
+      "common_pitfalls": [
+        "Treating the three ages as uniform blocks rather than showing internal change and regional variation within each period",
+        "Presenting prehistoric people as primitive or unintelligent rather than resourceful and adapted to their environment",
+        "Rushing through the vast timescale without helping pupils grasp the enormity of the time period involved"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "Landscape and settlement patterns: why did early peoples settle where they did?", "strength": "strong"},
+        {"subject": "Science", "hook": "Materials and properties: stone, bronze, iron -- how material properties drove technological change", "strength": "strong"},
+        {"subject": "Art & Design", "hook": "Cave paintings, pottery decoration and Iron Age metalwork as art forms", "strength": "moderate"},
+        {"subject": "Design & Technology", "hook": "Tool-making: designing and evaluating Stone Age and Bronze Age tools", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [],
+      "year_groups": ["Y3", "Y4"],
+      "duration_lessons": 12,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "chronology", "rank": 1, "ks_guidance": "At KS2, develop a secure chronological framework: Stone Age, Bronze Age, Iron Age. Use timelines with scale to show the vastness of this period compared with everything that follows."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS2, identify the specific changes between periods (tools, settlement, farming, society) and explain what drove each change."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS2, use archaeological evidence to make inferences about people who left no written records. Ask 'What can this artefact tell us, and what CAN'T it tell us?'"},
+        {"disciplinary_concept_slug": "significance", "rank": 4, "ks_guidance": "At KS2, evaluate the significance of the development of farming as a turning point in human history."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C005", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS2-D002", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-006", "HSRC-007", "HSRC-008"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-002",
+      "name": "Roman Britain",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 History: 'The Roman Empire and its impact on Britain'"
+      ],
+      "period": "43 AD - 410 AD",
+      "period_start_year": 43,
+      "period_end_year": 410,
+      "significance_claim": "The Roman occupation fundamentally transformed Britain's infrastructure, culture and identity, leaving a legacy of roads, towns, language and law that shaped subsequent British history.",
+      "pedagogical_rationale": "Roman Britain provides an outstanding case study for cause and consequence: why did the Romans invade, and what were the lasting effects? The rich primary source base (Vindolanda tablets, coins, archaeological remains) makes this ideal for developing evidence skills. The topic also introduces pupils to concepts of empire, resistance and cultural exchange that recur throughout the history curriculum.",
+      "enquiry_questions": [
+        "Why did the Romans invade Britain, and what were the consequences?",
+        "What can the Vindolanda tablets tell us about everyday life in Roman Britain?",
+        "How significant was the Roman legacy in modern Britain?"
+      ],
+      "key_figures": ["Boudicca", "Julius Caesar", "Claudius", "Hadrian"],
+      "comparison_pairs": null,
+      "key_events": ["Roman invasion 43 AD", "Boudicca's revolt 60-61 AD", "Building of Hadrian's Wall 122 AD", "Roman withdrawal c.410 AD"],
+      "perspectives": ["Roman coloniser", "Briton", "Roman soldier", "enslaved person"],
+      "interpretations": [
+        "Historians debate whether Romanisation was imposed by force or adopted willingly by British elites seeking status",
+        "The reasons for the Roman withdrawal remain contested: economic decline, military pressure, or political fragmentation?"
+      ],
+      "source_types": ["primary_written", "primary_archaeological", "built_heritage"],
+      "definitions": ["centurion", "legion", "Romanisation", "villa", "amphitheatre", "mosaic", "aqueduct", "revolt", "empire"],
+      "common_pitfalls": [
+        "Presenting the Romans as unambiguously civilising rather than examining the violence and exploitation of conquest",
+        "Neglecting the perspective of the indigenous Britons and presenting history solely from the Roman viewpoint",
+        "Reducing Boudicca to a simple hero narrative without examining the complexity of her revolt and its consequences"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Diary writing as a Roman soldier or Boudicca; Latin roots in English vocabulary", "strength": "strong"},
+        {"subject": "Mathematics", "hook": "Roman numerals; measuring distances along Roman roads", "strength": "moderate"},
+        {"subject": "Design & Technology", "hook": "Roman building techniques: arches, aqueducts, mosaics", "strength": "strong"},
+        {"subject": "Geography", "hook": "Roman roads and settlement patterns", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Slavery was integral to the Roman economy; discuss with appropriate sensitivity",
+        "The conquest involved significant violence against indigenous peoples; present balanced perspectives"
+      ],
+      "year_groups": ["Y3", "Y4"],
+      "duration_lessons": 12,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS2, identify multiple causes of the Roman invasion (trade, resources, prestige, military ambition) and rank them. Analyse both intended and unintended consequences of Romanisation."},
+        {"disciplinary_concept_slug": "significance", "rank": 2, "ks_guidance": "At KS2, evaluate the lasting significance of the Roman legacy using explicit criteria: roads, towns, language, law."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS2, use the Vindolanda tablets as primary sources: what can they tell us about daily life? What are their limitations?"},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 4, "ks_guidance": "At KS2, identify what changed in Britain during Roman occupation and what persisted after withdrawal."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C005", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS2-D002", "HI-KS2-D004"],
+      "chronologically_follows": "HS-KS2-001",
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS3-004", "theme": "empire, colonisation and resistance"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-009", "HSRC-010", "HSRC-011"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-003",
+      "name": "Anglo-Saxon and Scots Settlement",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 History: 'Britain's settlement by Anglo-Saxons and Scots'"
+      ],
+      "period": "c.410 AD - 793 AD",
+      "period_start_year": 410,
+      "period_end_year": 793,
+      "significance_claim": "The Anglo-Saxon settlement created the foundations of English identity, language, law and political geography that persist to this day, including the very concept of 'England' as a unified kingdom.",
+      "pedagogical_rationale": "This topic bridges Roman Britain and the Viking period, helping pupils understand the continuous narrative of British history. The Sutton Hoo discovery provides a spectacular entry point for source-based enquiry, and the conversion to Christianity introduces the concept of how ideas can transform a society. The topic develops understanding of migration as a historical force that has shaped Britain repeatedly.",
+      "enquiry_questions": [
+        "Why did the Anglo-Saxons come to Britain, and what happened to the people already living here?",
+        "What does the Sutton Hoo burial tell us about Anglo-Saxon beliefs and society?",
+        "How significant was the arrival of Christianity for Anglo-Saxon England?"
+      ],
+      "key_figures": ["King Ethelbert", "Augustine of Canterbury", "Hilda of Whitby", "Bede"],
+      "comparison_pairs": null,
+      "key_events": ["Anglo-Saxon migration c.450 AD", "Conversion to Christianity 597 AD", "Sutton Hoo burial c.625 AD", "Synod of Whitby 664 AD"],
+      "perspectives": ["Anglo-Saxon settler", "existing Briton", "Christian missionary", "monastery scholar"],
+      "interpretations": [
+        "Debate over whether the Anglo-Saxon migration was a mass invasion or a gradual elite takeover of existing populations",
+        "The extent to which Anglo-Saxon culture blended with or replaced existing British traditions remains contested"
+      ],
+      "source_types": ["primary_archaeological", "primary_written"],
+      "definitions": ["Anglo-Saxon", "Scots", "Picts", "kingdom", "conversion", "monastery", "Sutton Hoo", "wergild", "thane"],
+      "common_pitfalls": [
+        "Presenting Anglo-Saxon migration as a sudden invasion rather than a gradual process of settlement over generations",
+        "Neglecting the existing British population and their interaction with Anglo-Saxon settlers",
+        "Treating Christianity's arrival as straightforwardly positive without examining the complexity of conversion and syncretism"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Anglo-Saxon poetry and riddles; Beowulf as a literary text", "strength": "strong"},
+        {"subject": "Geography", "hook": "Anglo-Saxon place names and what they reveal about settlement patterns", "strength": "moderate"},
+        {"subject": "Art & Design", "hook": "Illuminated manuscripts (Lindisfarne Gospels); Anglo-Saxon metalwork design", "strength": "strong"},
+        {"subject": "Religious Studies", "hook": "The conversion to Christianity and its impact on Anglo-Saxon society", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [],
+      "year_groups": ["Y3", "Y4"],
+      "duration_lessons": 10,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 1, "ks_guidance": "At KS2, identify what changed when the Anglo-Saxons arrived (language, religion, settlement) and what continuities persisted from Roman Britain."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 2, "ks_guidance": "At KS2, explain why the Anglo-Saxons migrated (push and pull factors) and the consequences for Britain's culture, language and identity."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS2, use the Sutton Hoo finds as primary evidence. Ask 'What can these objects tell us about the person buried here?'"},
+        {"disciplinary_concept_slug": "significance", "rank": 4, "ks_guidance": "At KS2, evaluate the significance of Anglo-Saxon contributions to English identity, language and law."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C005", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS2-D002", "HI-KS2-D004"],
+      "chronologically_follows": "HS-KS2-002",
+      "thematically_linked_to": [],
+      "contrasts_with": [
+        {"target_study_id": "HS-KS2-012", "comparison_focus": "While Anglo-Saxon England was politically fragmented into competing kingdoms, Baghdad was the world's greatest centre of learning and scholarship."}
+      ],
+      "uses_source_ids": ["HSRC-012", "HSRC-013", "HSRC-014", "HSRC-015"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-004",
+      "name": "Vikings and Anglo-Saxon England",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 History: 'The Viking and Anglo-Saxon struggle for the Kingdom of England to the time of Edward the Confessor'"
+      ],
+      "period": "793 AD - 1066 AD",
+      "period_start_year": 793,
+      "period_end_year": 1066,
+      "significance_claim": "The Viking-Anglo-Saxon struggle shaped the political unification of England as a single kingdom and established the cultural fusion of Scandinavian and Anglo-Saxon traditions that defines much of English identity.",
+      "pedagogical_rationale": "This topic culminates the KS2 British chronological sequence and is ideal for examining multiple perspectives: were the Vikings raiders, traders or settlers? The rich source base (Anglo-Saxon Chronicle, York archaeological finds, coins) supports excellent source enquiry work. The topic also develops understanding of how conflict and coexistence between different peoples shapes national identity.",
+      "enquiry_questions": [
+        "Were the Vikings raiders, traders or settlers?",
+        "Why is Alfred called 'the Great', and does he deserve it?",
+        "How did Vikings and Anglo-Saxons learn to live alongside each other?"
+      ],
+      "key_figures": ["Alfred the Great", "Athelstan", "Cnut", "Edward the Confessor", "Harald Hardrada"],
+      "comparison_pairs": null,
+      "key_events": ["Lindisfarne raid 793 AD", "Alfred defeats Vikings at Edington 878 AD", "Establishment of Danelaw", "Athelstan unifies England 927 AD", "Cnut becomes King of England 1016 AD"],
+      "perspectives": ["Viking raider/settler", "Anglo-Saxon king", "Anglo-Saxon monk", "Danelaw resident"],
+      "interpretations": [
+        "The characterisation of Vikings as primarily raiders versus primarily settlers and traders remains a central historiographical debate",
+        "Historians disagree on whether Alfred's achievement was military genius or pragmatic compromise with the Danelaw"
+      ],
+      "source_types": ["primary_written", "primary_archaeological", "primary_visual"],
+      "definitions": ["Viking", "Danelaw", "Danegeld", "longship", "saga", "Jorvik", "Witan", "berserker"],
+      "common_pitfalls": [
+        "Relying on the 'savage Viking' stereotype rather than examining the complexity of Viking culture, trade and settlement",
+        "Presenting the struggle as purely military rather than examining economic, cultural and political dimensions",
+        "Neglecting to explain what the Danelaw was and how two cultures coexisted within England"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "Viking trade routes and the Danelaw boundary; Scandinavian place names in England", "strength": "strong"},
+        {"subject": "English", "hook": "Viking sagas as narrative texts; writing from different perspectives", "strength": "strong"},
+        {"subject": "Mathematics", "hook": "Viking navigation and measurement; trading calculations", "strength": "light"},
+        {"subject": "Design & Technology", "hook": "Longship design: why was the design so effective for raiding and trading?", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Viking raids involved significant violence including the killing of monks at Lindisfarne; present with age-appropriate sensitivity"
+      ],
+      "year_groups": ["Y3", "Y4"],
+      "duration_lessons": 10,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS2, explain the causes of Viking raids and settlement (push/pull) and the consequences for England (Danelaw, unification, cultural fusion)."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 2, "ks_guidance": "At KS2, compare Viking and Anglo-Saxon cultures: what was similar? What was different? How did they influence each other?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS2, compare the Anglo-Saxon Chronicle's view of Vikings with archaeological evidence from Jorvik. Why might they differ?"},
+        {"disciplinary_concept_slug": "significance", "rank": 4, "ks_guidance": "At KS2, evaluate whether Alfred deserved the title 'the Great' using criteria for significance."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C005", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS2-D002", "HI-KS2-D004"],
+      "chronologically_follows": "HS-KS2-003",
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-014", "HSRC-016", "HSRC-017"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-005",
+      "name": "Local History Study",
+      "study_type": "local_history_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": ["NC KS2 History: 'a local history study'"],
+      "period": "Varies by locality",
+      "period_start_year": null,
+      "period_end_year": null,
+      "significance_claim": "Local history demonstrates that every community has a past worth studying, and that national historical forces are experienced and shaped at the local level.",
+      "pedagogical_rationale": "Local history makes the abstract concrete by connecting historical concepts to places pupils know. It provides the most accessible route to primary sources (census records, old maps, local museum artefacts) and develops skills of historical enquiry in a personally meaningful context.",
+      "enquiry_questions": [
+        "How has our local area changed over time, and why?",
+        "What can local primary sources tell us that national history books cannot?",
+        "Who are the most significant people in the history of our area?"
+      ],
+      "key_figures": [],
+      "comparison_pairs": null,
+      "key_events": [],
+      "perspectives": ["Local resident (past)", "Local resident (present)", "Historian/archaeologist"],
+      "interpretations": [
+        "Different community groups may have contrasting memories and interpretations of local change",
+        "The selection of which local history to teach itself reflects judgements about what matters"
+      ],
+      "source_types": ["primary_written", "primary_cartographic", "museum_artefact", "primary_visual", "oral_testimony"],
+      "definitions": ["primary source", "secondary source", "census", "Ordnance Survey", "archive", "oral history", "heritage"],
+      "common_pitfalls": [
+        "Choosing a topic too broad (entire history of the town) rather than a specific aspect or period",
+        "Relying solely on secondary sources when local primary sources are often readily available",
+        "Failing to connect the local study to the broader national narrative"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "Map skills: comparing old and new OS maps of the local area", "strength": "strong"},
+        {"subject": "Mathematics", "hook": "Census data analysis: population change, occupations, household sizes", "strength": "moderate"},
+        {"subject": "English", "hook": "Writing a local history guide; conducting and recording oral history interviews", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Local history may uncover difficult aspects including poverty, industrial exploitation or displacement",
+        "Oral history from community elders may raise sensitive personal or family memories"
+      ],
+      "year_groups": ["Y3", "Y4", "Y5", "Y6"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 1, "ks_guidance": "At KS2, use local primary sources (census records, old maps, photographs, artefacts) to conduct genuine historical enquiry."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS2, compare the local area across time periods: what has changed and what has stayed the same?"},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS2, evaluate which local person, event or place is most historically significant and justify using criteria."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C005", "primary": false},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": true}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS2-D002", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-006",
+      "name": "British History Beyond 1066",
+      "study_type": "thematic_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": ["NC KS2 History: 'A study of an aspect or theme in British history that extends pupils' chronological knowledge beyond 1066'"],
+      "period": "1066 AD - present (teacher choice)",
+      "period_start_year": 1066,
+      "period_end_year": null,
+      "significance_claim": "Extending chronological knowledge beyond 1066 helps pupils understand that the Britain they live in today is the product of centuries of change, conflict and development after the Norman Conquest.",
+      "pedagogical_rationale": "This requirement bridges the chronological gap between KS2 British history (ending at 1066) and KS3 (starting at 1066), ensuring pupils have some knowledge of later British history before secondary school. The open choice allows schools to select themes that connect to local history, pupil interests or school expertise.",
+      "enquiry_questions": [
+        "What was the most significant change in Britain during the chosen period?",
+        "How did the events of this period affect people's everyday lives?",
+        "What connections can we see between this period and our lives today?"
+      ],
+      "key_figures": [],
+      "comparison_pairs": null,
+      "key_events": [],
+      "perspectives": [],
+      "interpretations": [
+        "The choice of which post-1066 theme to study itself reveals assumptions about what British history matters most"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_archaeological"],
+      "definitions": ["theme", "aspect", "turning point", "continuity", "change"],
+      "common_pitfalls": [
+        "Attempting to cover too much ground rather than choosing one clear aspect or theme to study in depth",
+        "Selecting a theme purely because resources are available rather than because it develops historical understanding",
+        "Failing to connect the post-1066 study to the pre-1066 chronology, leaving pupils with a fragmented timeline"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Biography and autobiography writing about historical figures from the chosen period", "strength": "strong"},
+        {"subject": "Geography", "hook": "How the chosen period changed the landscape and urban geography of Britain", "strength": "moderate"},
+        {"subject": "Art & Design", "hook": "Art from the chosen period as both source material and creative inspiration", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Topics involving the British Empire require careful handling of colonialism and its consequences",
+        "World War topics require age-appropriate treatment of conflict, loss and the home front experience",
+        "Tudor topics may involve religious persecution and execution; present with sensitivity"
+      ],
+      "year_groups": ["Y5", "Y6"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS2, identify causes and consequences of key events in the chosen period, using multi-causal explanation."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS2, evaluate what changed and what stayed the same during the chosen period."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS2, apply significance criteria to assess the most important development of the chosen period."},
+        {"disciplinary_concept_slug": "chronology", "rank": 4, "ks_guidance": "At KS2, extend the class timeline beyond 1066 to show how this period connects to the British history already studied."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C005", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS2-D002", "HI-KS2-D004"],
+      "chronologically_follows": "HS-KS2-004",
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS3-001", "theme": "British history continuity from KS2 to KS3"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-007",
+      "name": "Ancient Sumer",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks2_ancient_civ_depth_study",
+      "curriculum_reference": ["NC KS2 History: 'The achievements of the earliest civilizations' -- one of four named options for depth study"],
+      "period": "c.4500 BC - 1900 BC",
+      "period_start_year": -4500,
+      "period_end_year": -1900,
+      "significance_claim": "Ancient Sumer gave humanity its first writing system, first cities and first law codes, making it the cradle of literate civilisation and the foundation of many systems we still use today.",
+      "pedagogical_rationale": "Ancient Sumer is the world's first literate civilisation and offers a unique opportunity to study the origins of writing, cities, law and governance. The cuneiform tablets provide unusually direct evidence of daily life. Studying Sumer develops understanding of what 'civilisation' means as a concept.",
+      "enquiry_questions": [
+        "What made Sumer a 'civilisation', and why does that matter?",
+        "Why was the invention of writing so significant?",
+        "What can the Standard of Ur tell us about Sumerian society?"
+      ],
+      "key_figures": ["Gilgamesh", "Hammurabi"],
+      "comparison_pairs": null,
+      "key_events": ["Development of cuneiform writing c.3400 BC", "Rise of Ur c.2600 BC", "Code of Hammurabi c.1754 BC"],
+      "perspectives": ["Sumerian scribe", "farmer/labourer", "priest", "ruler"],
+      "interpretations": [
+        "Historians debate whether Sumerian city-states were primarily theocracies (ruled by priests) or secular monarchies",
+        "The relationship between irrigation, surplus and the emergence of social hierarchy is interpreted differently by environmental and social historians"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_archaeological"],
+      "definitions": ["civilisation", "Mesopotamia", "cuneiform", "city-state", "ziggurat", "irrigation", "scribe", "law code"],
+      "common_pitfalls": [
+        "Assuming pupils will know where Mesopotamia is without explicit geographical context (modern-day Iraq)",
+        "Treating civilisation as a checklist rather than exploring the interconnections between writing, cities, law and religion",
+        "Comparing Sumer unfavourably with better-known civilisations rather than appreciating its pioneering achievements"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "The Epic of Gilgamesh as one of the world's earliest stories; writing in cuneiform", "strength": "strong"},
+        {"subject": "Mathematics", "hook": "Sumerian base-60 number system: why we have 60 seconds and 360 degrees", "strength": "strong"},
+        {"subject": "Geography", "hook": "The Fertile Crescent: how geography enabled civilisation through irrigation", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Modern-day Iraq has experienced conflict; be sensitive to pupils with personal connections to the region"
+      ],
+      "year_groups": ["Y3", "Y4", "Y5", "Y6"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "significance", "rank": 1, "ks_guidance": "At KS2, evaluate the significance of Sumerian inventions (writing, cities, law codes) using the 5 Rs framework."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 2, "ks_guidance": "At KS2, use cuneiform tablets and the Standard of Ur as primary sources. Ask 'What can these sources tell us about Sumerian life?'"},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 3, "ks_guidance": "At KS2, compare Sumer systematically with another civilisation using defined criteria."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 4, "ks_guidance": "At KS2, explain how geography (Fertile Crescent, irrigation) caused civilisation to develop."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C004", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS2-D003", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS2-008", "theme": "river civilisations"},
+        {"target_study_id": "HS-KS2-009", "theme": "river civilisations"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-018", "HSRC-019", "HSRC-020"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-008",
+      "name": "The Indus Valley Civilisation",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks2_ancient_civ_depth_study",
+      "curriculum_reference": ["NC KS2 History: 'The achievements of the earliest civilizations' -- one of four named options for depth study"],
+      "period": "c.3300 BC - 1300 BC",
+      "period_start_year": -3300,
+      "period_end_year": -1300,
+      "significance_claim": "The Indus Valley civilisation demonstrates that sophisticated urban planning, trade networks and standardised systems developed independently in South Asia, challenging Eurocentric narratives of civilisational development.",
+      "pedagogical_rationale": "The Indus Valley is one of the most mysterious ancient civilisations because its writing system remains undeciphered, making it an outstanding vehicle for teaching about the limits and possibilities of archaeological evidence. The sophisticated urban planning challenges assumptions about 'primitive' ancient peoples.",
+      "enquiry_questions": [
+        "What can archaeology alone tell us about a civilisation whose writing we cannot read?",
+        "What was life like in Mohenjo-daro, and how do we know?",
+        "Why did the Indus Valley civilisation decline, and what challenges do historians face in answering this question?"
+      ],
+      "key_figures": [],
+      "comparison_pairs": null,
+      "key_events": ["Emergence of Harappan culture c.3300 BC", "Construction of Mohenjo-daro c.2500 BC", "Development of standardised weights and measures", "Gradual decline of major cities c.1900-1300 BC"],
+      "perspectives": ["city-dweller", "trader", "craft worker", "modern archaeologist"],
+      "interpretations": [
+        "The absence of obvious palaces or temples leads historians to debate whether the Indus Valley had a centralised ruling class or a more egalitarian society",
+        "The reasons for the civilisation's decline remain contested: climate change, river shifts, invasion, or internal collapse?"
+      ],
+      "source_types": ["primary_archaeological", "museum_artefact"],
+      "definitions": ["civilisation", "Indus Valley", "Mohenjo-daro", "Harappa", "drainage", "urban planning", "trade", "undeciphered", "seal"],
+      "common_pitfalls": [
+        "Assuming we know less about the Indus Valley because it was less important, rather than because of the evidence gap created by the undeciphered script",
+        "Failing to convey the scale and sophistication of the civilisation",
+        "Neglecting the geographical context: the civilisation was larger in area than Egypt and Mesopotamia combined"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "The Indus River system: how geography enabled and constrained the civilisation", "strength": "strong"},
+        {"subject": "Mathematics", "hook": "Standardised weights and measures used across the entire civilisation; grid planning", "strength": "moderate"},
+        {"subject": "Science", "hook": "Water management and drainage systems: engineering solutions to urban sanitation", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Be aware that the Indus Valley spans modern-day Pakistan and India; be sensitive to pupils with connections to these countries",
+        "Avoid speculation about the civilisation's decline that could reinforce stereotypes about South Asian history"
+      ],
+      "year_groups": ["Y3", "Y4", "Y5", "Y6"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 1, "ks_guidance": "At KS2, this is the best civilisation for teaching the limits of evidence: what can archaeology tell us when writing is undeciphered?"},
+        {"disciplinary_concept_slug": "significance", "rank": 2, "ks_guidance": "At KS2, evaluate the significance of Indus Valley urban planning and standardisation."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 3, "ks_guidance": "At KS2, compare the Indus Valley with another civilisation: what features did they share and where did they differ?"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C004", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS2-D003", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS2-007", "theme": "river civilisations"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-021", "HSRC-022"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-009",
+      "name": "Ancient Egypt",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks2_ancient_civ_depth_study",
+      "curriculum_reference": ["NC KS2 History: 'The achievements of the earliest civilizations' -- one of four named options for depth study. Most widely taught option."],
+      "period": "c.3100 BC - 30 BC",
+      "period_start_year": -3100,
+      "period_end_year": -30,
+      "significance_claim": "Ancient Egypt sustained one of the longest-lasting civilisations in human history, and its achievements in architecture, writing, medicine and governance profoundly influenced subsequent cultures across the Mediterranean world.",
+      "pedagogical_rationale": "Ancient Egypt is the most widely taught ancient civilisation in English primary schools because it offers spectacular visual evidence (pyramids, tomb paintings, mummies), a rich written record (hieroglyphs, papyri) and famous figures (Tutankhamun, Cleopatra). The Nile provides an outstanding case study for how geography shapes civilisation.",
+      "enquiry_questions": [
+        "How did the River Nile make Egyptian civilisation possible?",
+        "What can Egyptian sources tell us about what Egyptians believed about life after death?",
+        "How significant was the discovery of the Rosetta Stone?"
+      ],
+      "key_figures": ["Tutankhamun", "Cleopatra", "Hatshepsut", "Howard Carter"],
+      "comparison_pairs": null,
+      "key_events": ["Unification of Upper and Lower Egypt c.3100 BC", "Building of Great Pyramid c.2560 BC", "Reign of Hatshepsut c.1478 BC", "Discovery of Tutankhamun's tomb 1922"],
+      "perspectives": ["pharaoh", "priest", "farmer", "pyramid builder", "archaeologist (modern)"],
+      "interpretations": [
+        "How the pyramids were built remains debated: internal ramps, external ramps, or other methods?",
+        "The extent to which pyramid builders were enslaved or paid workers is a significant historiographical debate"
+      ],
+      "source_types": ["primary_written", "primary_archaeological", "built_heritage"],
+      "definitions": ["pharaoh", "hieroglyphs", "pyramid", "mummification", "sarcophagus", "papyrus", "Rosetta Stone", "Nile", "dynasty"],
+      "common_pitfalls": [
+        "Focusing exclusively on pharaohs and pyramids without examining the lives of ordinary Egyptians",
+        "Presenting mummification as 'weird' rather than as evidence of complex religious beliefs about the afterlife",
+        "Neglecting the role of the Nile and treating Egypt's achievements as divorced from their geographical context"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Geography", "hook": "The Nile: how river geography enabled agriculture, settlement and civilisation", "strength": "strong"},
+        {"subject": "Science", "hook": "Mummification as a scientific process; irrigation technology", "strength": "moderate"},
+        {"subject": "Mathematics", "hook": "Egyptian numerals; geometry in pyramid construction", "strength": "moderate"},
+        {"subject": "Art & Design", "hook": "Hieroglyphs and tomb painting conventions; creating art in the Egyptian style", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Discussion of mummification should respect religious beliefs about death and the afterlife",
+        "The display of human remains in museums raises ethical questions worth discussing at an age-appropriate level"
+      ],
+      "year_groups": ["Y3", "Y4", "Y5", "Y6"],
+      "duration_lessons": 10,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS2, explain how the Nile CAUSED Egyptian civilisation to develop: annual flooding, fertile soil, transport, trade."},
+        {"disciplinary_concept_slug": "significance", "rank": 2, "ks_guidance": "At KS2, evaluate the significance of Egyptian achievements (pyramids, hieroglyphs, medicine) and discoveries (Rosetta Stone, Tutankhamun's tomb)."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS2, use tomb paintings, the Rosetta Stone and archaeological finds as primary evidence."},
+        {"disciplinary_concept_slug": "chronology", "rank": 4, "ks_guidance": "At KS2, understand the immense span of Egyptian civilisation (3000+ years) and place it on a world timeline."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C004", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS2-D003", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS2-007", "theme": "river civilisations"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-023", "HSRC-024", "HSRC-025"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-010",
+      "name": "The Shang Dynasty",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks2_ancient_civ_depth_study",
+      "curriculum_reference": ["NC KS2 History: 'The achievements of the earliest civilizations' -- one of four named options for depth study"],
+      "period": "c.1600 BC - 1046 BC",
+      "period_start_year": -1600,
+      "period_end_year": -1046,
+      "significance_claim": "The Shang Dynasty established the foundations of Chinese civilisation including its writing system and bronze technology, achievements that influenced every subsequent Chinese dynasty.",
+      "pedagogical_rationale": "The Shang Dynasty offers outstanding source material in the form of oracle bones, which combine evidence of early writing, religious beliefs and political decision-making in a single source type. The sophisticated bronze casting technology challenges assumptions about ancient civilisations.",
+      "enquiry_questions": [
+        "What do oracle bones tell us about Shang beliefs and society?",
+        "How significant was Shang bronze casting technology?",
+        "How does the Shang Dynasty compare with other ancient civilisations we have studied?"
+      ],
+      "key_figures": ["King Tang", "Fu Hao", "King Wu of Zhou"],
+      "comparison_pairs": null,
+      "key_events": ["Founding of Shang Dynasty c.1600 BC", "Development of oracle bone script", "Bronze casting technology advances", "Fall of Shang Dynasty c.1046 BC"],
+      "perspectives": ["Shang king", "oracle bone reader", "bronze worker", "farmer"],
+      "interpretations": [
+        "The extent to which oracle bone divination was genuine belief versus a tool of political control is debated",
+        "Fu Hao's tomb evidence has challenged assumptions about the roles women could hold in Shang society"
+      ],
+      "source_types": ["primary_written", "primary_archaeological"],
+      "definitions": ["dynasty", "oracle bone", "bronze casting", "ancestor worship", "jade", "hierarchy", "ritual"],
+      "common_pitfalls": [
+        "Assuming pupils know anything about Chinese geography or culture; explicit geographical context is essential",
+        "Treating oracle bones as merely 'fortune telling' rather than as evidence of a sophisticated religious and political system",
+        "Failing to convey the extraordinary skill involved in Shang bronze casting"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Art & Design", "hook": "Chinese calligraphy from oracle bone script to modern characters; bronze vessel design", "strength": "strong"},
+        {"subject": "Science", "hook": "Bronze casting: how did the Shang achieve such sophisticated metalwork?", "strength": "moderate"},
+        {"subject": "Geography", "hook": "The Yellow River and its role in Chinese civilisation", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Shang dynasty involved human sacrifice, particularly in royal burials; discuss with age-appropriate sensitivity",
+        "Be sensitive to pupils of Chinese heritage who may have personal connections to this history"
+      ],
+      "year_groups": ["Y3", "Y4", "Y5", "Y6"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 1, "ks_guidance": "At KS2, oracle bones are an outstanding source type: what do they reveal about Shang beliefs, politics and daily life?"},
+        {"disciplinary_concept_slug": "significance", "rank": 2, "ks_guidance": "At KS2, evaluate the significance of Shang achievements (writing, bronze, political organisation) in the context of world history."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 3, "ks_guidance": "At KS2, compare the Shang Dynasty with other ancient civilisations: what features did they share and how did they differ?"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C004", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["HI-KS2-D003", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-026", "HSRC-027"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-011",
+      "name": "Ancient Greece",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": ["NC KS2 History: 'Ancient Greece - a study of Greek life and achievements and their influence on the western world'"],
+      "period": "c.800 BC - 146 BC",
+      "period_start_year": -800,
+      "period_end_year": -146,
+      "significance_claim": "Ancient Greece is the origin of democracy, Western philosophy, theatre, the Olympic Games and foundational scientific thinking, making it arguably the most influential civilisation in the development of Western culture.",
+      "pedagogical_rationale": "Ancient Greece is statutory (not a choice) because of the scale of its influence on Western civilisation. The inclusion of enslaved people and women's exclusion from democracy provides essential context for critical analysis. The Athens/Sparta comparison is ideal for developing the disciplinary concept of similarity and difference.",
+      "enquiry_questions": [
+        "How democratic was Athenian democracy, and who was left out?",
+        "What can Greek sources tell us about the differences between life in Athens and Sparta?",
+        "Which Greek achievement has had the most lasting impact on the modern world?"
+      ],
+      "key_figures": ["Pericles", "Alexander the Great", "Socrates", "Aristotle", "Leonidas"],
+      "comparison_pairs": null,
+      "key_events": ["First Olympic Games 776 BC", "Battle of Marathon 490 BC", "Golden Age of Athens c.461-429 BC", "Alexander's conquests 334-323 BC"],
+      "perspectives": ["Athenian citizen", "Spartan warrior", "enslaved person", "woman in Athens"],
+      "interpretations": [
+        "The Elgin Marbles debate raises questions about who owns ancient artefacts and how heritage should be preserved",
+        "Historians disagree on whether Athenian democracy was genuinely progressive or primarily served elite male interests"
+      ],
+      "source_types": ["built_heritage", "primary_archaeological", "primary_written"],
+      "definitions": ["democracy", "city-state", "philosophy", "Olympic Games", "myth", "Parthenon", "citizen", "senate", "legacy"],
+      "common_pitfalls": [
+        "Presenting Athenian democracy as equivalent to modern democracy without examining who was excluded",
+        "Romanticising Greek civilisation without examining slavery, warfare and the treatment of women",
+        "Treating Greek myths as the primary content rather than as sources that reveal Greek values and beliefs"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "English", "hook": "Greek myths as narrative writing models; persuasive writing in the style of Athenian rhetoric", "strength": "strong"},
+        {"subject": "Physical Education", "hook": "The ancient Olympic Games compared with their modern counterpart", "strength": "moderate"},
+        {"subject": "Mathematics", "hook": "Greek contributions to geometry and mathematical reasoning", "strength": "moderate"},
+        {"subject": "Art & Design", "hook": "Greek pottery design; architectural orders (Doric, Ionic, Corinthian)", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Slavery was central to Athenian society; discuss honestly while connecting to broader themes of human rights",
+        "Women's exclusion from public life should be discussed critically, not simply accepted as 'how things were'"
+      ],
+      "year_groups": ["Y5", "Y6"],
+      "duration_lessons": 10,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "significance", "rank": 1, "ks_guidance": "At KS2, evaluate the lasting significance of Greek legacy using explicit criteria: democracy, philosophy, Olympics, theatre, science."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 2, "ks_guidance": "At KS2, compare Athens and Sparta systematically: government, military, society, women's roles, education."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS2, use Greek pottery, architecture and texts as primary evidence. Discuss the Elgin Marbles debate."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 4, "ks_guidance": "At KS2, explain how Greek ideas spread and influenced later civilisations (legacy and consequence)."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C004", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS2-D003", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS2-002", "theme": "Mediterranean civilisations and their interactions"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-028", "HSRC-029"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-012",
+      "name": "Early Islamic Civilisation",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks2_non_european_contrast",
+      "curriculum_reference": ["NC KS2 History: 'A non-European society that provides contrasts with British history' -- one of three named options"],
+      "period": "c.600 CE - 1200 CE",
+      "period_start_year": 600,
+      "period_end_year": 1200,
+      "significance_claim": "Early Islamic civilisation made foundational contributions to mathematics, medicine, astronomy and philosophy that shaped the development of modern science and scholarship worldwide.",
+      "pedagogical_rationale": "Early Islamic civilisation offers a powerful counter-narrative to Eurocentric views of the 'Dark Ages': while Western Europe experienced fragmentation after Rome's fall, Baghdad was the world's leading centre of scholarship. The topic develops understanding of how knowledge transfers across cultures.",
+      "enquiry_questions": [
+        "Why did Baghdad become the greatest centre of learning in the world?",
+        "What did early Islamic scholars contribute to the knowledge we use today?",
+        "How does studying Baghdad c.900 CE challenge the idea of European 'Dark Ages'?"
+      ],
+      "key_figures": ["Muhammad", "Harun al-Rashid", "Al-Khwarizmi", "Ibn Sina (Avicenna)"],
+      "comparison_pairs": null,
+      "key_events": ["Founding of Baghdad 762 CE", "House of Wisdom established c.800 CE", "Golden Age of Islamic scholarship c.800-1200 CE"],
+      "perspectives": ["scholar at House of Wisdom", "merchant on trade routes", "caliph", "European visitor"],
+      "interpretations": [
+        "The extent to which the House of Wisdom was a single institution or a network of scholarly activity is debated",
+        "Historians discuss whether the Golden Age of Islam ended because of internal factors or the Mongol destruction of Baghdad in 1258"
+      ],
+      "source_types": ["primary_written", "built_heritage", "primary_technological", "primary_artistic"],
+      "definitions": ["caliph", "mosque", "House of Wisdom", "algebra", "astrolabe", "scholar", "calligraphy", "Silk Road"],
+      "common_pitfalls": [
+        "Conflating historical Islamic civilisation with modern Islam or modern Middle Eastern politics",
+        "Presenting early Islamic scholarship as merely preserving Greek knowledge rather than advancing it significantly",
+        "Failing to explain the geographic and economic factors that made Baghdad a centre of learning"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Mathematics", "hook": "Algebra (from Arabic 'al-jabr'); the development of the number system we use today", "strength": "strong"},
+        {"subject": "Science", "hook": "Islamic contributions to medicine, astronomy and optics", "strength": "strong"},
+        {"subject": "Art & Design", "hook": "Islamic geometric patterns and calligraphy as art forms", "strength": "strong"},
+        {"subject": "Geography", "hook": "Trade routes connecting Baghdad to the wider world; the Silk Road", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Be sensitive to Muslim pupils in the class who may feel pride or pressure about this topic",
+        "Avoid presenting Islam as monolithic; early Islamic civilisation was religiously and ethnically diverse",
+        "Take care not to create an 'us vs them' framing between European and Islamic civilisations"
+      ],
+      "year_groups": ["Y5", "Y6"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "significance", "rank": 1, "ks_guidance": "At KS2, evaluate the lasting significance of Islamic contributions to mathematics, science and medicine using the 5 Rs."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 2, "ks_guidance": "At KS2, compare Baghdad c.900 CE with Anglo-Saxon England at the same time. What does the comparison reveal?"},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 3, "ks_guidance": "At KS2, explain WHY Baghdad became a centre of learning: trade, patronage, translation movement."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS2, use Arabic manuscripts and architectural evidence to make inferences about Islamic scholarly culture."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C004", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS2-D003", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS3-009", "theme": "Islamic civilisations across time"}
+      ],
+      "contrasts_with": [
+        {"target_study_id": "HS-KS2-003", "comparison_focus": "While Anglo-Saxon England was politically fragmented, Baghdad was the world's greatest centre of learning and scholarship."}
+      ],
+      "uses_source_ids": ["HSRC-030", "HSRC-031"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-013",
+      "name": "Mayan Civilisation",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks2_non_european_contrast",
+      "curriculum_reference": ["NC KS2 History: 'A non-European society that provides contrasts with British history' -- one of three named options"],
+      "period": "c.2000 BC - 1500 AD (depth focus c.900 CE)",
+      "period_start_year": -2000,
+      "period_end_year": 1500,
+      "significance_claim": "The Maya independently developed writing, mathematics (including zero), sophisticated astronomy and monumental architecture, demonstrating that complex civilisation can emerge in radically different environments and cultural contexts.",
+      "pedagogical_rationale": "The Mayan civilisation offers a genuinely different perspective on human achievement: a complex literate society that developed independently of Old World civilisations. The contrast with Anglo-Saxon England at the same period (c.900 CE) is striking and pedagogically powerful.",
+      "enquiry_questions": [
+        "What was happening in Mayan civilisation at the same time as Anglo-Saxon England, and how do they compare?",
+        "What can Mayan buildings and inscriptions tell us about their society?",
+        "Why did the great Mayan cities decline, and what challenges do historians face in answering this?"
+      ],
+      "key_figures": ["K'inich Janaab Pakal (Pakal the Great)", "Lady Six Sky"],
+      "comparison_pairs": null,
+      "key_events": ["Development of Mayan writing system", "Classic Period city-building c.250-900 CE", "Political fragmentation of Classic Maya c.900 CE", "Spanish contact and conquest 1500s"],
+      "perspectives": ["Mayan ruler", "priest/astronomer", "farmer", "modern Maya descendant"],
+      "interpretations": [
+        "The 'Classic Maya collapse' is no longer seen as sudden but as a complex process of political fragmentation driven by warfare, environmental stress and social change",
+        "Debate continues over the extent to which Mayan city-states cooperated or competed with each other"
+      ],
+      "source_types": ["primary_written", "primary_archaeological", "built_heritage"],
+      "definitions": ["civilisation", "Maya", "glyph", "codex", "pyramid", "city-state", "calendar", "sacrifice", "astronomy"],
+      "common_pitfalls": [
+        "Using the idea of 'mysterious collapse' rather than examining the complex factors behind Mayan political fragmentation",
+        "Treating Mayan civilisation as extinct rather than recognising that millions of Maya people live in Central America today",
+        "Sensationalising human sacrifice without contextualising it within Mayan religious beliefs and cosmology"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Mathematics", "hook": "Mayan base-20 number system; the concept of zero developed independently", "strength": "strong"},
+        {"subject": "Science", "hook": "Mayan astronomical observations and their calendar systems", "strength": "moderate"},
+        {"subject": "Geography", "hook": "Mayan city-states in the Central American rainforest; environmental factors", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Human sacrifice was part of Mayan religious practice; discuss with sensitivity and cultural context",
+        "Recognise that Maya people are a living community today, not a 'vanished' civilisation",
+        "The Spanish conquest of Maya territory involved significant violence and cultural destruction"
+      ],
+      "year_groups": ["Y5", "Y6"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 1, "ks_guidance": "At KS2, compare Mayan civilisation c.900 CE with Anglo-Saxon England at the same time using systematic criteria."},
+        {"disciplinary_concept_slug": "significance", "rank": 2, "ks_guidance": "At KS2, evaluate the significance of Mayan achievements (writing, mathematics, astronomy, architecture)."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS2, use Mayan codices, inscriptions and architecture as evidence. Ask what these can and cannot tell us."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 4, "ks_guidance": "At KS2, examine the complex causes of Classic Maya political fragmentation."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C004", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-14"],
+      "domain_ids": ["HI-KS2-D003", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS3-008", "theme": "pre-Columbian Americas"}
+      ],
+      "contrasts_with": [
+        {"target_study_id": "HS-KS2-003", "comparison_focus": "While Anglo-Saxon England was developing a unified Christian kingdom, the Maya had independently created one of the most sophisticated writing and mathematical systems in the world."}
+      ],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS2-014",
+      "name": "Benin (West Africa)",
+      "study_type": "civilisation_study",
+      "subject": "History",
+      "key_stage": "KS2",
+      "curriculum_status": "menu_choice",
+      "choice_group": "ks2_non_european_contrast",
+      "curriculum_reference": ["NC KS2 History: 'A non-European society that provides contrasts with British history' -- one of three named options"],
+      "period": "c.900 CE - 1300 CE",
+      "period_start_year": 900,
+      "period_end_year": 1300,
+      "significance_claim": "The Kingdom of Benin created some of the most technically accomplished bronze artworks in world history and sustained a sophisticated urban civilisation that demonstrates the depth and complexity of West African history.",
+      "pedagogical_rationale": "The Kingdom of Benin offers a powerful corrective to narratives that present Africa as historically lacking complex civilisation. The Benin Bronzes are among the finest examples of metal casting in the world and serve as both art and historical source. The contemporary repatriation debate connects historical study to present-day questions of justice.",
+      "enquiry_questions": [
+        "What can the Benin Bronzes tell us about life in the Kingdom of Benin?",
+        "Why are the Benin Bronzes historically significant, and who should own them today?",
+        "How does studying Benin change our understanding of African history?"
+      ],
+      "key_figures": ["Oba Ewuare", "Oba Esigie"],
+      "comparison_pairs": null,
+      "key_events": ["Founding of Benin Kingdom c.900 CE", "Building of Benin City walls", "Development of bronze casting tradition", "Trans-Saharan and Atlantic trade networks"],
+      "perspectives": ["Oba (ruler)", "bronze caster", "Portuguese trader", "modern Nigerian descendant"],
+      "interpretations": [
+        "The Benin Bronzes are read differently as historical sources, as art objects and as symbols of colonial injustice depending on the viewer's perspective",
+        "Historians debate the extent to which European accounts of Benin are reliable, given the purposes and prejudices of their authors"
+      ],
+      "source_types": ["primary_artistic", "oral_tradition", "primary_written", "primary_archaeological"],
+      "definitions": ["Oba", "Benin Bronzes", "bronze casting", "oral history", "kingdom", "trade network", "West Africa"],
+      "common_pitfalls": [
+        "Conflating the historical Kingdom of Benin with the modern Republic of Benin (the kingdom was in what is now Nigeria)",
+        "Presenting Benin solely through the lens of European contact rather than studying the kingdom's own achievements on its own terms",
+        "Avoiding the difficult questions about the 1897 British punitive expedition and the looting of the Bronzes"
+      ],
+      "cross_curricular_hooks": [
+        {"subject": "Art & Design", "hook": "Benin Bronzes as outstanding examples of lost-wax bronze casting; creating relief designs", "strength": "strong"},
+        {"subject": "Geography", "hook": "West African trade networks; the location of Benin in relation to European maritime trade routes", "strength": "moderate"},
+        {"subject": "English", "hook": "Discussion and debate about whether the Benin Bronzes should be returned to Nigeria", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "The 1897 British punitive expedition involved violence and looting; present honestly as part of colonial history",
+        "The repatriation debate is ongoing and politically charged; present balanced perspectives",
+        "Be sensitive to pupils of Nigerian or West African heritage who may have personal connections to this history",
+        "Avoid framing that presents African civilisation as surprising or exceptional: it was normal"
+      ],
+      "year_groups": ["Y5", "Y6"],
+      "duration_lessons": 8,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 1, "ks_guidance": "At KS2, use the Benin Bronzes as primary sources: what do they tell us about Benin society, and how are they interpreted differently by different groups?"},
+        {"disciplinary_concept_slug": "significance", "rank": 2, "ks_guidance": "At KS2, evaluate the significance of the Benin Bronzes as art, as historical evidence, and as symbols in the repatriation debate."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 3, "ks_guidance": "At KS2, compare the Kingdom of Benin with contemporary British or European society."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 4, "ks_guidance": "At KS2, examine what caused the 1897 expedition and its lasting consequences for Benin heritage."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS2-C004", "primary": true},
+        {"concept_id": "HI-KS2-C001", "primary": false},
+        {"concept_id": "HI-KS2-C002", "primary": false},
+        {"concept_id": "HI-KS2-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-11"],
+      "domain_ids": ["HI-KS2-D003", "HI-KS2-D004"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [
+        {"target_study_id": "HS-KS2-003", "comparison_focus": "While Anglo-Saxon England was developing separate kingdoms, the Kingdom of Benin was creating some of the most sophisticated metalwork in the world within a centralised monarchy."}
+      ],
+      "uses_source_ids": ["HSRC-032"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    }
+  ]
+}

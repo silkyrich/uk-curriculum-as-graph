@@ -1,0 +1,272 @@
+[
+  {
+    "context_id": "MC-SHOP",
+    "name": "Shopping and Money",
+    "description": "Buying items, giving change, comparing prices, working out discounts and offers. The most common real-world maths context. Works across all four operations, decimals (prices), fractions/percentages (discounts), and data handling (comparing shops/products).",
+    "context_type": "everyday",
+    "age_suitability": "Y1-Y6",
+    "cross_curricular_subjects": [],
+    "agent_prompt": "Shopping problems are the default real-world context for arithmetic. Use catalogues, menus, or price lists. Always specify the items and prices — do not leave the child to imagine prices. For Y1-Y2: use whole pence amounts (items costing 5p, 10p, 20p). For Y3-Y4: use pound-and-pence amounts. For Y5-Y6: include percentage discounts, 'buy 2 get 1 free' offers, and unit price comparisons. AVOID: contexts that assume pocket money amounts or family shopping budgets — some children have very limited experience of shops.",
+    "example_problems": [
+      "Y2: You have 50p. An apple costs 15p and a banana costs 12p. How much change do you get if you buy both?",
+      "Y4: A book costs 8.99 pounds. You pay with a 20 pound note. How much change do you receive?",
+      "Y6: A shop offers 25% off everything. A jacket originally costs 48 pounds. How much do you save? How much do you pay?"
+    ],
+    "safeguarding_notes": "Avoid assumptions about pocket money, family wealth, or access to shops. Do not frame problems around 'what your family can afford.' Use neutral phrasing: 'a jacket costs...' not 'you want to buy a jacket.'",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-COOK",
+    "name": "Cooking and Recipes",
+    "description": "Measuring ingredients, scaling recipes up or down, timing baking, dividing food into equal portions. Natural context for fractions (half a cup), measurement (grams, millilitres), ratio and proportion (doubling a recipe), and time.",
+    "context_type": "everyday",
+    "age_suitability": "Y2-Y6",
+    "cross_curricular_subjects": ["Design and Technology"],
+    "agent_prompt": "Cooking connects maths to a familiar home activity. For Y2-Y3: measuring ingredients with cups and spoons (whole number amounts). For Y4-Y5: scaling recipes (if the recipe serves 4 and you want to serve 6, how much flour?). For Y6: ratio problems (mix juice and water in the ratio 1:3). Always use simple, common recipes that most families could make. AVOID: recipes with expensive or unusual ingredients. AVOID: assumptions about kitchen equipment.",
+    "example_problems": [
+      "Y3: A recipe needs 200g of flour to make 8 biscuits. How much flour for 16 biscuits?",
+      "Y5: A smoothie recipe uses 300ml milk, 150ml yoghurt, and 100ml fruit juice. What fraction of the smoothie is milk?",
+      "Y6: A recipe for 4 people uses 250g of pasta. How much pasta is needed for 10 people?"
+    ],
+    "safeguarding_notes": "Do not assume access to specific kitchen equipment or ingredients. Use common, inexpensive ingredients. Be aware of food allergies — do not emphasise specific foods like nuts.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-MEASURE",
+    "name": "Practical Measurement",
+    "description": "Measuring real-world lengths, masses, capacities, and temperatures. Includes comparing objects, estimating measurements, and converting between units. The context where maths meets the physical world most directly.",
+    "context_type": "everyday",
+    "age_suitability": "Y1-Y6",
+    "cross_curricular_subjects": ["Science", "Design and Technology"],
+    "agent_prompt": "Measurement contexts connect abstract number work to physical reality. For Y1-Y2: non-standard units first (how many cubes long is your pencil?), then standard units (centimetres, metres). For Y3-Y4: converting between related units (mm to cm, g to kg). For Y5-Y6: compound measures and area/volume calculations. Always include estimation BEFORE measuring: 'how long do you think this table is? Now measure and check.' At home, use everyday objects: measure the length of a room, weigh ingredients, check the temperature outside.",
+    "example_problems": [
+      "Y2: Measure the length of 5 objects in your home using a ruler. Record them in centimetres. Put them in order from shortest to longest.",
+      "Y4: The classroom is 8 metres long and 6 metres wide. What is the perimeter? What is the area?",
+      "Y6: A water tank holds 15 litres. A tap fills it at 250ml per minute. How many minutes to fill the tank?"
+    ],
+    "safeguarding_notes": "Activities should be achievable with common household items. Do not assume access to specialised measuring equipment beyond basic rulers.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-TIME",
+    "name": "Time and Timetables",
+    "description": "Reading clocks, calculating durations, planning journeys using timetables, converting between hours/minutes/seconds. Time is mathematically unusual: it uses base-60 (minutes and seconds) and base-12/24 (hours), making it a rich context for non-decimal place value.",
+    "context_type": "everyday",
+    "age_suitability": "Y1-Y5",
+    "cross_curricular_subjects": ["Geography"],
+    "agent_prompt": "Time problems use base-60, which makes them harder than they look. For Y1: o'clock and half past only. For Y2: quarter past, quarter to, and 5-minute intervals. For Y3: reading to the nearest minute, converting between analogue and digital. For Y4-Y5: calculating durations across hours, reading timetables, converting between 12-hour and 24-hour. Common errors: counting the start time as a duration unit, confusion between 'how long until' and 'what time will it be.' Use the number line method for durations: draw a line from start time to end time and count the jumps.",
+    "example_problems": [
+      "Y2: The lesson starts at half past 9 and ends at 10 o'clock. How long is the lesson?",
+      "Y3: A film starts at 2:45pm and lasts 1 hour 35 minutes. What time does it end?",
+      "Y5: A bus leaves at 08:47 and arrives at 10:12. How long is the journey in minutes?"
+    ],
+    "safeguarding_notes": "None specific. Time is a universal context.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-SPORT",
+    "name": "Sports and Games",
+    "description": "Scoring in games, calculating averages, measuring athletic performance, timing races. Appeals to many children and naturally involves data, comparison, and calculation. Includes board games, card games, and playground games as well as formal sports.",
+    "context_type": "everyday",
+    "age_suitability": "Y1-Y6",
+    "cross_curricular_subjects": ["Physical Education"],
+    "agent_prompt": "Sports contexts engage children who might not respond to pure number work. For Y1-Y2: scoring games (who scored more? how many more?), counting teams (6 teams of 5 players). For Y3-Y4: calculating totals, comparing scores, simple averages. For Y5-Y6: mean, median, mode from sports data; percentage win rates; ratio problems (goal difference). Use a variety of sports — not just football. Include individual sports (athletics times, gymnastics scores) and non-competitive games (how many catches in a row?). AVOID: contexts that assume physical ability or sports participation. Frame as data analysis, not as personal athletic performance.",
+    "example_problems": [
+      "Y3: In 5 football matches, a team scored 2, 0, 3, 1, 4 goals. How many goals in total? What was the most common score?",
+      "Y5: A runner's times for 5 races were: 12.3s, 11.8s, 12.1s, 11.9s, 12.4s. What was the mean time?",
+      "Y6: A basketball player scored 24 points in 30 minutes. At this rate, how many points in a full 40-minute game?"
+    ],
+    "safeguarding_notes": "Do not assume interest in or ability for specific sports. Frame as data and statistics, not as personal performance. Avoid competitive framing that could be exclusionary.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-TRAVEL",
+    "name": "Travel and Distance",
+    "description": "Journey distances, reading maps and scales, calculating journey times, comparing routes. Natural context for addition/subtraction of large numbers, conversion between units (km/m), reading scales on maps, and (from Y5) speed-distance-time relationships.",
+    "context_type": "everyday",
+    "age_suitability": "Y3-Y6",
+    "cross_curricular_subjects": ["Geography"],
+    "agent_prompt": "Travel contexts use large numbers naturally (distances between cities, journey times) and connect to map work in Geography. For Y3-Y4: distances in km and m, journey durations, reading simple map scales. For Y5-Y6: compound problems (two-part journeys), speed calculations, scale factor problems. Use real UK places and distances where possible — children connect better to places they have heard of. At home, use Google Maps or a road atlas to find real distances.",
+    "example_problems": [
+      "Y3: The distance from London to Birmingham is 191 km. The distance from Birmingham to Manchester is 135 km. How far is it from London to Manchester via Birmingham?",
+      "Y5: A car travels 240 km in 3 hours. What is the average speed?",
+      "Y6: On a map, 1 cm represents 5 km. Two towns are 7.5 cm apart on the map. How far apart are they in real life?"
+    ],
+    "safeguarding_notes": "Do not assume travel experience or car ownership. Use public transport contexts alongside car journeys. Walking and cycling distances are inclusive alternatives.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-NATURE",
+    "name": "Nature and Science",
+    "description": "Measuring plant growth, recording weather data, counting species, comparing animal sizes. The cross-curricular link between Maths and Science. Natural context for data collection, measurement, graphing, and (from Y5) interpreting line graphs.",
+    "context_type": "cross_curricular",
+    "age_suitability": "Y1-Y6",
+    "cross_curricular_subjects": ["Science"],
+    "agent_prompt": "Nature contexts provide real data for collection and analysis. For Y1-Y2: counting flowers, leaves, minibeasts. For Y3-Y4: measuring plant growth over time, recording temperature daily, comparing animal masses. For Y5-Y6: plotting line graphs of temperature or growth data, calculating averages from scientific data. Use real data where possible — the Met Office publishes historic UK weather data. At home, grow a plant and measure it weekly, or record the outdoor temperature each day for a week.",
+    "example_problems": [
+      "Y2: We counted birds in the garden for 5 days. We saw 3, 5, 2, 4, 6 birds. How many birds in total?",
+      "Y4: A sunflower was 12cm tall on Monday. It grew 3cm each week for 6 weeks. How tall was it after 6 weeks? Draw a line to show the growth.",
+      "Y6: The table shows average monthly temperatures for London. Calculate the mean annual temperature. Which month is closest to the mean?"
+    ],
+    "safeguarding_notes": "None specific. Nature is a universally accessible context. Ensure outdoor activities are framed as optional for home learners.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-BUILD",
+    "name": "Building and Construction",
+    "description": "Designing and building structures, calculating areas and perimeters, working with plans and blueprints. Natural context for geometry, measurement, scale drawing, and (from Y5) volume and 3D shape properties.",
+    "context_type": "cross_curricular",
+    "age_suitability": "Y3-Y6",
+    "cross_curricular_subjects": ["Design and Technology", "Art and Design"],
+    "agent_prompt": "Building contexts ground geometry and measurement in purpose. For Y3-Y4: calculating perimeter of rooms, tiling a floor (area as counting squares), designing a garden. For Y5-Y6: scale drawings of rooms, calculating volume of containers, surface area for painting walls. Use accessible activities: designing a bedroom layout on squared paper, working out how many tiles fit on a wall. At home, measuring rooms and furniture is an excellent practical activity.",
+    "example_problems": [
+      "Y3: A rectangular garden is 8m long and 5m wide. How much fencing is needed to go all the way around it?",
+      "Y5: A room is 4m long, 3m wide, and 2.5m high. How many litres of paint are needed if 1 litre covers 10 square metres? (Calculate total wall area first.)",
+      "Y6: A scale drawing of a playground uses a scale of 1:200. The playground is 12cm long on the drawing. How long is it in real life?"
+    ],
+    "safeguarding_notes": "Do not assume access to tools or DIY materials. Frame as design and planning on paper, not as actual construction projects.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-SHARE",
+    "name": "Sharing and Fairness",
+    "description": "Sharing objects equally between groups, dividing quantities fairly, understanding remainders in sharing contexts. The most natural context for division and fractions. Deeply meaningful for young children who have a strong sense of fairness.",
+    "context_type": "everyday",
+    "age_suitability": "EYFS-Y4",
+    "cross_curricular_subjects": [],
+    "agent_prompt": "Sharing is the gateway to division and fractions. For EYFS-Y1: share 10 sweets between 2 children. For Y2: share 15 stickers between 4 children — what happens to the extra ones? (remainder). For Y3-Y4: share with larger numbers, connecting to formal division. The fairness framing is powerful: young children care deeply about equal shares. Say 'is it fair? Has everyone got the same?' AVOID: sharing food contexts that might trigger sensitivity about food scarcity.",
+    "example_problems": [
+      "Y1: Share 12 crayons equally between 3 children. How many does each child get?",
+      "Y2: 17 strawberries are shared equally between 5 children. How many does each get? How many are left over?",
+      "Y4: 3 friends share a prize of 24 pounds equally. They each spend 1/3 of their share. How much does each person spend?"
+    ],
+    "safeguarding_notes": "Avoid sharing food contexts that assume all children have plenty to eat. Use neutral shareable items: stickers, crayons, cards. Do not assume party/birthday contexts are universally positive.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-SCALING",
+    "name": "Scaling and Enlargement",
+    "description": "Making things bigger or smaller by a scale factor. Includes recipe scaling, map scales, model making, and photo enlargement/reduction. The natural context for multiplicative reasoning and ratio.",
+    "context_type": "cross_curricular",
+    "age_suitability": "Y4-Y6",
+    "cross_curricular_subjects": ["Art and Design", "Geography", "Design and Technology"],
+    "agent_prompt": "Scaling develops multiplicative reasoning — the understanding that some relationships are about 'times' not 'add'. For Y4: simple doubling and halving of recipes. For Y5: scale factors applied to shapes (enlarge this shape by scale factor 2). For Y6: map scales, ratio problems, percentage increase/decrease as scaling. Always connect to the question 'is the relationship additive (add the same amount) or multiplicative (multiply by the same factor)?' This is one of the hardest conceptual transitions in primary maths. At home, use photo editing (zoom in 200%) or model kits as concrete contexts.",
+    "example_problems": [
+      "Y4: A recipe for 4 people uses 300g flour. Scale it up for 12 people.",
+      "Y5: Enlarge a triangle with sides 3cm, 4cm, 5cm by scale factor 3. What are the new side lengths?",
+      "Y6: On a map, 2cm represents 5km. A lake is 3.5km long. How long is it on the map?"
+    ],
+    "safeguarding_notes": "None specific.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-MAPREAD",
+    "name": "Map Reading and Navigation",
+    "description": "Using maps to find locations, calculate distances, give directions using compass points, and read grid references. Connects coordinates, measurement, and scale to real-world orientation. Strong cross-curricular link to Geography.",
+    "context_type": "cross_curricular",
+    "age_suitability": "Y3-Y6",
+    "cross_curricular_subjects": ["Geography"],
+    "agent_prompt": "Map reading connects coordinates to the real world. For Y3-Y4: compass directions (N, S, E, W), simple grid references, describing routes. For Y5-Y6: 4-figure and 6-figure grid references, measuring distances using map scales, calculating journey times from distances. Use OS maps of the local area or simplified school ground maps. At home, treasure hunts using grid references on a hand-drawn map of the house or garden are highly engaging.",
+    "example_problems": [
+      "Y3: Follow the route on the map: start at the school, walk North for 3 squares, then East for 2 squares. Where are you?",
+      "Y5: Two villages are at grid references (23, 45) and (27, 42). What is the distance between them on the map if each grid square represents 1km?",
+      "Y6: A map has a scale of 1:25,000. Two points are 8cm apart on the map. How far apart are they in real life?"
+    ],
+    "safeguarding_notes": "Do not include contexts that require children to share their home location or neighbourhood details.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-PATTERN",
+    "name": "Pattern and Design",
+    "description": "Creating and analysing repeating patterns, tessellations, symmetrical designs, and sequences in art and architecture. The aesthetic side of maths. Natural context for geometry, symmetry, sequence, and generalisation.",
+    "context_type": "cross_curricular",
+    "age_suitability": "Y1-Y6",
+    "cross_curricular_subjects": ["Art and Design"],
+    "agent_prompt": "Pattern contexts show that maths is beautiful. For Y1-Y2: colour patterns (red, blue, red, blue...), shape patterns, threading beads. For Y3-Y4: tessellations (which shapes tile without gaps?), symmetrical designs (Islamic art, rangoli patterns). For Y5-Y6: number patterns leading to algebra, geometric sequences, fractal-like structures. Use real examples from art and architecture: tiling in mosques, quilt patterns, Escher tessellations. At home, design a repeating pattern using any materials — coloured pencils, stickers, cut-out shapes.",
+    "example_problems": [
+      "Y2: Continue this pattern: circle, square, circle, square, circle, ___. Now make your own pattern with 3 shapes.",
+      "Y4: Which of these shapes tessellate (tile without gaps)? Equilateral triangle, regular pentagon, regular hexagon. Try each one.",
+      "Y6: How many squares are in the 4th pattern? The 5th? The 10th? Can you write a formula for the nth pattern?"
+    ],
+    "safeguarding_notes": "Be culturally sensitive when referencing artistic traditions. Present patterns from diverse cultures as equally valued examples of mathematical beauty.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-DATA",
+    "name": "Surveys and Data Collection",
+    "description": "Designing questions, collecting data from people, recording in tables, and presenting in charts. The real-world context for statistics. Teaches the full data-handling cycle: question, collect, organise, represent, interpret.",
+    "context_type": "everyday",
+    "age_suitability": "Y1-Y6",
+    "cross_curricular_subjects": ["Science", "Geography"],
+    "agent_prompt": "Data collection contexts make statistics purposeful. For Y1-Y2: 'what is your favourite fruit?' — tally chart and pictogram. For Y3-Y4: 'how do you travel to school?' — bar chart with grouped data. For Y5-Y6: 'does hand span relate to height?' — scatter plots and line graphs. Always teach the FULL cycle: (1) Ask a good question, (2) Collect data systematically, (3) Organise in a table, (4) Present in a chart, (5) Interpret and answer the original question. At home, survey family members or friends.",
+    "example_problems": [
+      "Y2: Ask 10 people what their favourite colour is. Record using a tally chart. Draw a pictogram to show the results. Which colour was most popular?",
+      "Y4: Record the temperature outside your window at 8am, 12pm, 4pm, and 8pm for 5 days. Draw a line graph. When was it warmest?",
+      "Y6: Is there a relationship between shoe size and height? Collect data from 15 people, plot a scatter graph, and describe what you see."
+    ],
+    "safeguarding_notes": "Survey questions must not ask about personal or sensitive information. Avoid questions about family composition, income, religion, or health. Stick to preferences (favourite colour, pet, sport) and observable measures (height, hand span).",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-PUZZLE",
+    "name": "Mathematical Puzzles and Investigations",
+    "description": "Open-ended mathematical explorations, logic puzzles, strategy games, and investigations. The context where maths is done for its own sake — for curiosity and enjoyment. Develops problem-solving persistence and strategic thinking.",
+    "context_type": "investigative",
+    "age_suitability": "Y1-Y6",
+    "cross_curricular_subjects": [],
+    "agent_prompt": "Puzzle contexts develop mathematical resilience and strategic thinking. For Y1-Y2: 'I am thinking of a number — it is more than 5 and less than 8, what could it be?' (logic). For Y3-Y4: magic squares, digit puzzles, systematic listing. For Y5-Y6: mathematical investigations with conjecturing and proving (e.g. Goldbach's conjecture for small numbers). The key: do not give the answer. Let the child struggle productively. Say 'what have you tried? What could you try next?' rather than 'here is how to do it.' At home, any logic puzzle book or mathematical game app can extend this.",
+    "example_problems": [
+      "Y2: Place the numbers 1-6 in a triangle so that each side adds up to 9.",
+      "Y4: Use the digits 1, 2, 3, 4, 5 to make a 3-digit number plus a 2-digit number that gives the largest possible answer.",
+      "Y6: Every even number greater than 2 can be written as the sum of two prime numbers. Test this for all even numbers up to 30. Can you find one that does not work?"
+    ],
+    "safeguarding_notes": "None specific. Puzzles are a universally accessible context.",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  },
+  {
+    "context_id": "MC-HISTORY",
+    "name": "Historical Number Systems and Measurement",
+    "description": "Exploring how different civilisations counted, measured, and calculated. Roman numerals, Egyptian multiplication, Babylonian base-60 (which gives us 60 minutes in an hour), ancient measurement units. The context where Maths meets History.",
+    "context_type": "historical",
+    "age_suitability": "Y3-Y6",
+    "cross_curricular_subjects": ["History"],
+    "agent_prompt": "Historical maths shows that our number system is a CHOICE, not a given. For Y3-Y4: Roman numerals (NC statutory requirement in Y4), comparing Roman numerals to our place value system. For Y5-Y6: Egyptian multiplication (doubling method), Babylonian base-60, ancient Greek geometry. Always compare to our modern system: 'why is our system easier for large numbers? What is better about the Roman system?' (It is better for nothing — that is the teaching point!). This context develops appreciation of place value by showing what happens without it.",
+    "example_problems": [
+      "Y4: Write these years in Roman numerals: 2024 (MMXXIV), 1999 (MCMXCIX). Which is harder to write? Why?",
+      "Y5: The ancient Egyptians multiplied by doubling. To calculate 13 x 17: double 17 repeatedly (17, 34, 68, 136). Then add: 17 + 68 + 136 = 221 (because 13 = 1 + 4 + 8). Try this for 23 x 15.",
+      "Y6: Why do we have 60 seconds in a minute and 360 degrees in a circle? Research the Babylonian base-60 system."
+    ],
+    "safeguarding_notes": "Present all historical cultures respectfully and as contributors to mathematical knowledge. Avoid framing non-Western number systems as 'primitive.'",
+    "display_category": "Maths Ontology",
+    "display_color": "#059669",
+    "display_icon": "public"
+  }
+]

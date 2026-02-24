@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "description": "GeoStudy nodes for KS2 Geography: place studies, thematic studies, and fieldwork",
+    "version": "1.0",
+    "authored_by": "geography-specialist",
+    "authored_date": "2026-02-24",
+    "node_label": "GeoStudy",
+    "key_stage": "KS2",
+    "note": "Reshaped from TS-GE-KS2-* topic suggestions. The three regional studies (UK, Europe, Americas) are adaptive open slots where the school determines the specific region."
+  },
+  "studies": [
+    {
+      "study_id": "GS-GE-KS2-001",
+      "name": "UK Regional Study",
+      "study_type": "place_study",
+      "subject": "Geography",
+      "key_stage": "KS2",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "open_slot",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 Geography: 'understand geographical similarities and differences through the study of human and physical geography of a region of the United Kingdom'"
+      ],
+      "theme_category": "integrated",
+      "themes": ["regional geography", "human-physical interaction", "settlement", "land use"],
+      "scale": "regional",
+      "map_types": ["os_map", "satellite_image", "land_use_map", "thematic_map"],
+      "data_sources": ["Ordnance Survey", "ONS census data", "Local authority data", "Google Earth"],
+      "definitions": ["region", "physical geography", "human geography", "relief", "settlement", "land use", "topography", "county"],
+      "pedagogical_rationale": "The UK regional study is a statutory requirement that deepens pupils' knowledge of their own country beyond the local area studied at KS1. Schools select a specific region, enabling the study of how physical geography (relief, rivers, climate) shapes human activity (settlement, farming, tourism) at a regional scale. This develops the analytical framework that pupils will apply to European and American regions.",
+      "common_pitfalls": [
+        "Choosing a region too similar to the school locality — the value is in genuine contrast with pupils' everyday environment",
+        "Treating the study as pure description rather than analysis — pupils should explain why the region has the characteristics it does",
+        "Neglecting how the region has changed over time — static portraits miss the dynamism of real places"
+      ],
+      "cross_curricular_hooks": [
+        "[History] How the region has changed over time — industrial heritage, rural change",
+        "[Science] Physical processes shaping the region — river erosion, weathering, glaciation",
+        "[Maths] Using grid references and scale on OS maps of the region",
+        "[English] Travel writing and descriptive accounts of the region"
+      ],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": "If feasible, a day visit to the studied region for fieldwork; alternatively, virtual fieldwork using Google Street View, satellite imagery, and published data to investigate a geographical question about the region.",
+      "duration_lessons": 8,
+      "enquiry_question": "How has physical geography shaped the way people live in this UK region?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils describe the physical and human characteristics of the region? Can they explain how physical features shape human activity? Can they compare the region with their local area and identify similarities and differences?",
+      "success_criteria": [
+        "Describe the physical geography of the region (relief, rivers, climate)",
+        "Explain how physical features shape settlement, farming, and/or tourism",
+        "Compare the region with the school locality using a structured framework",
+        "Use an OS map or satellite image to locate features within the region"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS2-C006", "primary": true},
+        {"concept_id": "GE-KS2-C001", "primary": false},
+        {"concept_id": "GE-KS2-C002", "primary": false},
+        {"concept_id": "GE-KS2-C003", "primary": false},
+        {"concept_id": "GE-KS2-C004", "primary": false},
+        {"concept_id": "GE-KS2-C005", "primary": false}
+      ],
+      "uses_template": ["VT-19"],
+      "domain_ids": ["GE-KS2-D002", "GE-KS2-D001", "GE-KS2-D003", "GE-KS2-D004"],
+      "locations": ["GP-EU-003"],
+      "builds_on": ["GS-GE-KS1-001"],
+      "contrasts_with": ["GC-KS2-001"],
+      "complements": ["GS-GE-KS2-002", "GS-GE-KS2-003"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "travel_explore"
+    },
+    {
+      "study_id": "GS-GE-KS2-002",
+      "name": "European Regional Study",
+      "study_type": "place_study",
+      "subject": "Geography",
+      "key_stage": "KS2",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "open_slot",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 Geography: 'understand geographical similarities and differences through the study of human and physical geography of a region in a European country'"
+      ],
+      "theme_category": "integrated",
+      "themes": ["regional geography", "European diversity", "comparison", "human-physical interaction"],
+      "scale": "regional",
+      "map_types": ["atlas_map", "thematic_map", "climate_graph", "satellite_image"],
+      "data_sources": ["Atlas", "Eurostat", "Google Earth", "Published regional data"],
+      "definitions": ["region", "European", "compare", "contrast", "physical geography", "human geography", "climate", "culture", "economic activity"],
+      "pedagogical_rationale": "The European regional study is a statutory requirement that extends pupils' geographical horizons beyond the UK to a contrasting European environment. Schools select a specific region, enabling comparison of how physical geography, climate, and culture shape human activity differently in a European context compared to the UK region already studied. This builds the comparative skills essential to geographical thinking.",
+      "common_pitfalls": [
+        "Choosing a capital city as the 'region' — the NC specifies a region, not a city, to develop understanding of regional geography",
+        "Treating the European study as a tourism brochure — focus on geographical analysis, not travel highlights",
+        "Failing to compare systematically with the UK region — the value is in structured comparison, not standalone description"
+      ],
+      "cross_curricular_hooks": [
+        "[Languages] Connections to French, Spanish, or German language learning if the region aligns",
+        "[History] Historical context of the European region (e.g. Roman settlement, medieval trade routes)",
+        "[Science] Comparing climate and biomes between UK and European region",
+        "[Art] European art and architecture traditions from the studied region"
+      ],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": null,
+      "duration_lessons": 6,
+      "enquiry_question": "How is life in this European region different from and similar to our UK region?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils describe the physical and human characteristics of the European region? Can they compare it systematically with the UK region? Can they explain how climate and physical geography shape human activity differently?",
+      "success_criteria": [
+        "Locate the European region on a map and describe its physical geography",
+        "Identify at least 3 similarities and 3 differences with the UK region",
+        "Explain how climate influences human activity in the European region",
+        "Use geographical vocabulary accurately in comparison"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS2-C006", "primary": true},
+        {"concept_id": "GE-KS2-C001", "primary": false},
+        {"concept_id": "GE-KS2-C002", "primary": false},
+        {"concept_id": "GE-KS2-C003", "primary": false},
+        {"concept_id": "GE-KS2-C004", "primary": false},
+        {"concept_id": "GE-KS2-C005", "primary": false}
+      ],
+      "uses_template": ["VT-19"],
+      "domain_ids": ["GE-KS2-D002", "GE-KS2-D001", "GE-KS2-D003", "GE-KS2-D004"],
+      "locations": ["GP-EU-004"],
+      "builds_on": ["GS-GE-KS2-001"],
+      "contrasts_with": ["GC-KS2-001"],
+      "complements": ["GS-GE-KS2-001", "GS-GE-KS2-003"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "travel_explore"
+    },
+    {
+      "study_id": "GS-GE-KS2-003",
+      "name": "Americas Regional Study",
+      "study_type": "place_study",
+      "subject": "Geography",
+      "key_stage": "KS2",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "open_slot",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 Geography: 'understand geographical similarities and differences through the study of human and physical geography of a region within North or South America'"
+      ],
+      "theme_category": "integrated",
+      "themes": ["regional geography", "cross-continental comparison", "biodiversity", "human-physical interaction"],
+      "scale": "regional",
+      "map_types": ["atlas_map", "thematic_map", "satellite_image", "climate_graph"],
+      "data_sources": ["Atlas", "World Bank", "NASA Earth Observatory", "Google Earth"],
+      "definitions": ["Americas", "North America", "South America", "region", "rainforest", "desert", "biodiversity", "deforestation", "indigenous"],
+      "pedagogical_rationale": "The Americas regional study is a statutory requirement that provides the most geographically distant and environmentally contrasting region study at KS2. Schools select a specific region, exposing pupils to dramatically different physical environments, economies, and cultures while developing the same comparative analytical framework used for UK and European studies.",
+      "common_pitfalls": [
+        "Defaulting to the USA when South America offers richer geographical contrast — consider Brazilian, Andean, or Caribbean regions",
+        "Treating the Amazon only as an environmental issue without understanding the human geography of communities who live there",
+        "Reducing the region to a single narrative (e.g. 'deforestation') without exploring its complexity and diversity"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Rainforest or desert ecosystems, biodiversity, and adaptation",
+        "[History] Indigenous peoples of the Americas, European colonisation",
+        "[Maths] Comparing scale — distances, areas, and population sizes across continents",
+        "[English] Myths, legends, and stories from the Americas"
+      ],
+      "sensitive_content_notes": [
+        "Indigenous peoples — present with respect and agency, not as historical curiosities",
+        "Deforestation — avoid blame narratives; discuss structural causes and multiple perspectives"
+      ],
+      "fieldwork_potential": null,
+      "duration_lessons": 6,
+      "enquiry_question": "What makes this region in the Americas so different from anywhere we have studied before?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils describe the physical and human characteristics of the Americas region? Can they compare it with both the UK and European regions studied? Can they explain how the environment shapes the way people live?",
+      "success_criteria": [
+        "Locate the Americas region on a world map and describe its physical environment",
+        "Explain how the physical environment shapes human activity (e.g. farming, settlement, transport)",
+        "Compare with the UK and European regions using a structured framework",
+        "Use key geographical vocabulary (biodiversity, deforestation, indigenous) accurately"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS2-C006", "primary": true},
+        {"concept_id": "GE-KS2-C001", "primary": false},
+        {"concept_id": "GE-KS2-C002", "primary": false},
+        {"concept_id": "GE-KS2-C003", "primary": false},
+        {"concept_id": "GE-KS2-C004", "primary": false},
+        {"concept_id": "GE-KS2-C005", "primary": false}
+      ],
+      "uses_template": ["VT-19"],
+      "domain_ids": ["GE-KS2-D002", "GE-KS2-D001", "GE-KS2-D003", "GE-KS2-D004"],
+      "locations": ["GP-AM-001"],
+      "builds_on": ["GS-GE-KS2-001", "GS-GE-KS2-002"],
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS2-001", "GS-GE-KS2-002"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "travel_explore"
+    },
+    {
+      "study_id": "GS-GE-KS2-004",
+      "name": "Rivers and the Water Cycle",
+      "study_type": "thematic_study",
+      "subject": "Geography",
+      "key_stage": "KS2",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "prescribed_topic",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 Geography: 'describe and understand key aspects of physical geography, including: rivers, mountains, volcanoes and earthquakes, and the water cycle'"
+      ],
+      "theme_category": "physical",
+      "themes": ["river processes", "water cycle", "erosion and deposition", "landscape formation"],
+      "scale": "regional",
+      "map_types": ["river_basin_map", "os_map", "cross_section", "satellite_image"],
+      "data_sources": ["Environment Agency", "Ordnance Survey", "Met Office rainfall data", "Google Earth"],
+      "definitions": ["river", "source", "mouth", "tributary", "drainage basin", "meander", "flood plain", "erosion", "deposition", "water cycle", "evaporation", "condensation", "precipitation"],
+      "pedagogical_rationale": "Rivers and the water cycle are a statutory KS2 physical geography requirement that connects observable local features (streams, rainfall, puddles evaporating) to global-scale processes (the hydrological cycle). Teaching through a specific river case study grounds abstract process understanding in real geographical contexts and enables pupils to trace how water shapes landscapes through erosion, transportation, and deposition.",
+      "common_pitfalls": [
+        "Teaching the water cycle as a closed diagram without connecting it to real rivers and rainfall pupils can observe",
+        "Presenting rivers as flowing in only one direction without explaining why (gravity and gradient)",
+        "Neglecting human interaction with rivers — flooding, water supply, settlement, and pollution"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] States of matter — evaporation, condensation, precipitation as phase changes",
+        "[Maths] Measuring rainfall, calculating river flow rates, reading scales",
+        "[History] Historical importance of rivers for settlement, trade, and industry",
+        "[English] River poetry and descriptive writing"
+      ],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": "Local river or stream study measuring width, depth, and flow velocity at different points; observing erosion and deposition features; water quality testing.",
+      "duration_lessons": 8,
+      "enquiry_question": "How does water shape the landscape?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils explain the water cycle using key vocabulary? Can they describe how rivers change from source to mouth? Can they explain how erosion and deposition create river landforms?",
+      "success_criteria": [
+        "Draw and label the water cycle with correct vocabulary",
+        "Describe how a river changes from source to mouth",
+        "Explain at least 2 river landforms (meander, flood plain, oxbow lake)",
+        "Use a river basin map to identify source, mouth, and tributaries"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS2-C003", "primary": true},
+        {"concept_id": "GE-KS2-C001", "primary": false},
+        {"concept_id": "GE-KS2-C002", "primary": false},
+        {"concept_id": "GE-KS2-C005", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-10"],
+      "domain_ids": ["GE-KS2-D003", "GE-KS2-D001"],
+      "locations": ["GP-EU-010"],
+      "builds_on": ["GS-GE-KS1-005"],
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS2-005"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "category"
+    },
+    {
+      "study_id": "GS-GE-KS2-005",
+      "name": "Climate Zones, Biomes and Vegetation Belts",
+      "study_type": "thematic_study",
+      "subject": "Geography",
+      "key_stage": "KS2",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "prescribed_topic",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 Geography: 'describe and understand key aspects of physical geography, including: climate zones, biomes and vegetation belts'"
+      ],
+      "theme_category": "physical",
+      "themes": ["climate patterns", "biomes", "vegetation", "latitude and climate"],
+      "scale": "global",
+      "map_types": ["thematic_map", "climate_graph", "satellite_image", "atlas_map"],
+      "data_sources": ["Atlas", "Met Office", "NASA Earth Observatory", "BBC Bitesize"],
+      "definitions": ["climate zone", "biome", "vegetation belt", "tropical", "temperate", "polar", "desert", "rainforest", "savanna", "tundra", "ecosystem", "adaptation"],
+      "pedagogical_rationale": "Climate zones and biomes are a statutory KS2 requirement that builds directly on KS1 work on hot and cold places, extending it into a systematic understanding of how latitude, altitude, and ocean currents determine the world's major climate patterns and the ecosystems they support. This topic connects physical geography (climate) to biological geography (biomes) and prepares pupils for KS3 work on climate change.",
+      "common_pitfalls": [
+        "Teaching biomes as a list to memorise rather than connecting each to its climate determinants (latitude, rainfall, temperature)",
+        "Confusing climate zones with biomes — climate determines what biome can exist, but they are not the same thing",
+        "Presenting biomes as untouched wilderness without acknowledging massive human modification (deforestation, agriculture)"
+      ],
+      "cross_curricular_hooks": [
+        "[Science] Habitats, adaptation, food chains, and biodiversity in different biomes",
+        "[Maths] Reading climate graphs — temperature and rainfall data for different zones",
+        "[Art] Landscapes and colours of different biomes — painting contrasting environments",
+        "[English] Non-fiction reading about environments around the world"
+      ],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": "Local habitat survey comparing vegetation in different microclimates around the school grounds (sunny vs shaded, sheltered vs exposed) as a micro-scale analogy for global climate-vegetation relationships.",
+      "duration_lessons": 6,
+      "enquiry_question": "Why do different parts of the world have different plants and animals?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils name and locate the major climate zones on a world map? Can they explain how latitude affects climate? Can they describe the characteristics of at least 3 biomes and explain how climate shapes them?",
+      "success_criteria": [
+        "Name and locate at least 4 major climate zones on a world map",
+        "Describe the characteristics of at least 3 biomes (climate, vegetation, wildlife)",
+        "Explain how latitude and rainfall determine which biome exists in an area",
+        "Read and interpret a simple climate graph"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS2-C002", "primary": true},
+        {"concept_id": "GE-KS2-C001", "primary": false},
+        {"concept_id": "GE-KS2-C005", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["GE-KS2-D003", "GE-KS2-D001"],
+      "locations": ["GP-GLOBAL"],
+      "builds_on": ["GS-GE-KS1-005"],
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS2-004"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "category"
+    },
+    {
+      "study_id": "GS-GE-KS2-006",
+      "name": "Trade, Economic Geography and Fairtrade",
+      "study_type": "thematic_study",
+      "subject": "Geography",
+      "key_stage": "KS2",
+      "year_groups": null,
+      "curriculum_status": "convention",
+      "suggestion_type": "teacher_convention",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 Geography: 'describe and understand key aspects of human geography, including: types of settlement and land use, economic activity including trade links, and the distribution of natural resources including energy, food, minerals and water'"
+      ],
+      "theme_category": "economic",
+      "themes": ["global trade", "economic sectors", "natural resources", "fair trade", "supply chains"],
+      "scale": "global",
+      "map_types": ["thematic_map", "trade_flow_map", "resource_distribution_map", "atlas_map"],
+      "data_sources": ["Fairtrade Foundation", "World Bank", "ONS trade statistics", "Product packaging (origin labels)"],
+      "definitions": ["trade", "import", "export", "Fairtrade", "supply chain", "primary sector", "secondary sector", "tertiary sector", "natural resource", "economic activity"],
+      "pedagogical_rationale": "Fairtrade is the most common pedagogical vehicle schools use to deliver the KS2 statutory requirement on trade and economic activity, because it makes abstract global supply chains concrete and age-accessible. Tracing products (chocolate, bananas, cotton) from producer to consumer introduces pupils to primary, secondary, and tertiary economic sectors, global trade patterns, and the distribution of natural resources.",
+      "common_pitfalls": [
+        "Presenting Fairtrade as the only or complete solution to trade inequality — it is one model with both strengths and limitations",
+        "Oversimplifying producer countries as uniformly poor without showing their economic complexity",
+        "Focusing only on the product journey without connecting to the broader statutory requirement on settlement, land use, and resources"
+      ],
+      "cross_curricular_hooks": [
+        "[Maths] Calculating prices, profits, and shares along a supply chain; reading trade data",
+        "[Science] Where food and raw materials come from — growing conditions for cocoa, cotton, etc.",
+        "[PSHE] Fairness, global citizenship, and making ethical consumer choices",
+        "[DT] Food provenance — where ingredients come from and how they are processed"
+      ],
+      "sensitive_content_notes": [
+        "Global inequality — avoid deficit framing of producer countries; show economic agency and complexity"
+      ],
+      "fieldwork_potential": "Classroom-based investigation tracing the origins of products in the school kitchen or shop; local supermarket survey mapping the countries of origin for a basket of goods.",
+      "duration_lessons": 6,
+      "enquiry_question": "Where does our food come from, and is the trade fair?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils trace a product from primary producer to consumer? Can they explain the three economic sectors? Can they map where specific natural resources come from? Can they evaluate Fairtrade as a response to trade inequality?",
+      "success_criteria": [
+        "Trace a specific product through its supply chain from producer to consumer",
+        "Explain the difference between primary, secondary, and tertiary economic sectors",
+        "Map the origins of at least 3 natural resources on a world map",
+        "Give at least 1 argument for and 1 argument against Fairtrade"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS2-C004", "primary": true},
+        {"concept_id": "GE-KS2-C001", "primary": false},
+        {"concept_id": "GE-KS2-C002", "primary": false}
+      ],
+      "uses_template": ["VT-01"],
+      "domain_ids": ["GE-KS2-D003", "GE-KS2-D001"],
+      "locations": ["GP-GLOBAL"],
+      "builds_on": null,
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS2-003"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "category"
+    },
+    {
+      "study_id": "GS-GE-KS2-007",
+      "name": "Geographical Skills and Fieldwork",
+      "study_type": "fieldwork_investigation",
+      "subject": "Geography",
+      "key_stage": "KS2",
+      "year_groups": null,
+      "curriculum_status": "mandatory",
+      "suggestion_type": "open_slot",
+      "choice_group": null,
+      "curriculum_reference": [
+        "NC KS2 Geography: 'use fieldwork to observe, measure, record and present the human and physical features in the local area using a range of methods, including sketch maps, plans and graphs, and digital technologies'"
+      ],
+      "theme_category": "integrated",
+      "themes": ["geographical skills", "fieldwork", "map skills", "data collection and analysis"],
+      "scale": "local",
+      "map_types": ["os_map", "satellite_image", "thematic_map", "aerial_photo"],
+      "data_sources": ["Primary data collected by pupils", "Ordnance Survey", "Digimap for Schools", "Google Earth"],
+      "definitions": ["fieldwork", "Ordnance Survey", "grid reference", "compass", "scale", "sketch map", "plan", "graph", "digital technology", "observe", "measure", "record", "present"],
+      "pedagogical_rationale": "Geographical skills and fieldwork are a statutory KS2 requirement that should be embedded across all topic studies, not taught as a standalone unit. However, dedicated skills teaching ensures pupils develop competence with OS maps, grid references, compass directions, and digital mapping tools before applying them in fieldwork contexts.",
+      "common_pitfalls": [
+        "Teaching map skills in isolation from real geographical contexts — always connect to the places pupils are studying",
+        "Treating fieldwork as a single annual event rather than an embedded practice across the year",
+        "Focusing only on data collection without teaching pupils to analyse, present, and draw conclusions from their data"
+      ],
+      "cross_curricular_hooks": [
+        "[Maths] Grid references as coordinates, scale calculations, compass bearings, data presentation in graphs and charts",
+        "[Science] Scientific enquiry methods — observation, measurement, recording, and conclusion",
+        "[Computing] Using digital mapping tools, tablets for data collection, spreadsheets for data presentation",
+        "[English] Writing structured fieldwork reports"
+      ],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": "This is the fieldwork study itself. Pupils conduct geographical enquiry in the local area: environmental quality surveys, traffic counts, land use mapping, river measurements, or microclimate investigations using sketch maps, tally charts, and digital technologies.",
+      "duration_lessons": 5,
+      "enquiry_question": "What can we discover about our local area through geographical enquiry?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils use an OS map to locate features using grid references? Can they collect, present, and interpret primary data? Can they draw a conclusion based on their fieldwork evidence?",
+      "success_criteria": [
+        "Use 4-figure and 6-figure grid references to locate features on an OS map",
+        "Collect primary data using at least 2 fieldwork techniques",
+        "Present data using appropriate methods (tally chart, bar graph, sketch map)",
+        "Draw a conclusion supported by evidence from fieldwork data"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS2-C005", "primary": true},
+        {"concept_id": "GE-KS2-C003", "primary": false},
+        {"concept_id": "GE-KS2-C004", "primary": false}
+      ],
+      "uses_template": ["VT-10"],
+      "domain_ids": ["GE-KS2-D004"],
+      "locations": ["GP-EU-007"],
+      "builds_on": ["GS-GE-KS1-001"],
+      "contrasts_with": null,
+      "complements": null,
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "explore"
+    }
+  ]
+}

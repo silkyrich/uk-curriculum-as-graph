@@ -1,0 +1,526 @@
+[
+  {
+    "representation_id": "MR-NUMTRACK",
+    "name": "Number Track",
+    "description": "A horizontal strip divided into numbered cells (typically 1-20 or 1-100). Unlike a number line, each number occupies a cell rather than a point. The track-to-line progression is a key EYFS-to-KS1 transition: tracks count objects in cells, lines count positions at marks.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Number tracks are for EYFS and early Y1. Each number sits IN a cell. Say 'put your counter on the 5. Jump forward 3 cells. What number are you on now?' When children are secure with tracks, transition to number lines (numbers at marks, not in cells). Do not use number tracks beyond Y1 — they reinforce a counting-objects model that conflicts with the measurement model of number lines.",
+    "key_stages": ["EYFS", "KS1"],
+    "mathematical_structure": "Ordinal counting — each cell represents a discrete quantity in sequence",
+    "variants": [
+      {"year": "EYFS", "variant": "1-10, large cells with objects inside"},
+      {"year": "Y1", "variant": "1-20 or 0-20, numbered cells only"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-NUMLINE",
+    "name": "Number Line",
+    "description": "A horizontal line with numbers marked at regular intervals. The most important representation in primary maths. Evolves from structured (every number marked) to empty (only key numbers marked, child places others). Foregrounds the measurement model of number: numbers represent distances from zero, not discrete objects.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Always specify the type of number line: structured (all numbers marked), partially structured (decade markers only), or empty (child places numbers). Say 'draw a number line from 0 to 100. Mark where 37 sits. How do you know?' Empty number lines from Y3 onward are more powerful for mental calculation — the child draws jumps to show their strategy. At home, draw a line on paper and mark the endpoints.",
+    "key_stages": ["KS1", "KS2", "KS3", "KS4"],
+    "mathematical_structure": "Positional magnitude — number as distance from zero on a continuous scale",
+    "variants": [
+      {"year": "Y1", "variant": "Structured, 0-20, every number marked"},
+      {"year": "Y2", "variant": "Structured, 0-100, every number or every 10 marked"},
+      {"year": "Y3", "variant": "Empty or partially structured, 0-1000, child draws jumps for mental calculation"},
+      {"year": "Y4", "variant": "Extending to negative numbers and simple decimals (tenths)"},
+      {"year": "Y5", "variant": "Fractions and decimals placed on the same line; extending to thousandths"},
+      {"year": "Y6", "variant": "Extending to very large numbers (millions) and probability (0-1)"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-HUNDSQ",
+    "name": "Hundred Square",
+    "description": "A 10x10 grid showing numbers 1-100 (or 0-99). The grid structure reveals patterns in the number system: multiples appear in columns or diagonals, adding 10 means moving down one row, adding 1 means moving right one cell. A reference tool that bridges counting and place value.",
+    "representation_type": "tabular",
+    "agent_prompt": "The hundred square is for pattern-spotting. Say 'colour all the multiples of 5. What pattern do you see?' (a column pattern). 'Start on 34 and add 10. Where do you end up? What happens every time you add 10?' (move down one row). Do not use it just for counting — use it for SEEING STRUCTURE. At home, print a hundred square from any primary maths resource site. One copy per task — children shade, circle, and annotate directly on it.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Base-10 positional structure — rows represent tens, columns represent ones",
+    "variants": [
+      {"year": "Y1", "variant": "1-100, used for counting and locating numbers"},
+      {"year": "Y2", "variant": "1-100 with multiples shaded for pattern work"},
+      {"year": "Y3", "variant": "0-99 layout (for place value alignment) or extended grids to 200/300"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-TENFRAMEDIAG",
+    "name": "Ten Frame Diagram",
+    "description": "A drawn 2x5 grid showing filled and empty cells. The pictorial version of the physical ten frame. Foregrounds bonds to 10 and the five-structure. Children draw dots in cells rather than placing physical counters.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "The ten frame diagram is the pictorial bridge from physical ten frames. Say 'draw 7 dots in the frame. How many empty spaces? So what goes with 7 to make 10?' Always draw from top-left, filling the top row first. At home, draw the 2x5 grid and use a pen to fill circles.",
+    "key_stages": ["EYFS", "KS1"],
+    "mathematical_structure": "Five-structure and bonds to 10 — subitising support",
+    "variants": [
+      {"year": "EYFS", "variant": "Single ten frame, quantities to 10"},
+      {"year": "Y1", "variant": "Double ten frame (two side-by-side) for quantities to 20"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-PARTWHOL",
+    "name": "Part-Whole Model",
+    "description": "A circle (the whole) connected by lines to two or more smaller circles (the parts). The defining representation for additive relationships in mastery maths. Foregrounds the concept that addition and subtraction are inverse operations on the SAME part-whole structure.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "The part-whole model shows that if the whole is 10 and one part is 7, the other part must be 3. This is the foundation for understanding that 7 + 3 = 10, 10 - 7 = 3, and 10 - 3 = 7 are all THE SAME FACT. Always draw the whole at the top and the parts below. Say 'what is the whole? What are the parts? If I know the whole and one part, how do I find the other part?' At home, draw circles connected by lines — the shape is simple enough for any parent to reproduce.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Additive part-whole relationship — addition and subtraction as inverse operations on a single structure",
+    "variants": [
+      {"year": "Y1", "variant": "Two parts, whole to 20, numbers only"},
+      {"year": "Y2", "variant": "Two or three parts, whole to 100"},
+      {"year": "Y3-Y4", "variant": "Used for bar model problems with missing values"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-BARMOD",
+    "name": "Bar Model",
+    "description": "Rectangular bars drawn to represent quantities, with lengths proportional to value. The Singapore/Shanghai model adapted for UK mastery teaching. Used for comparison, addition, subtraction, multiplication, division, fractions, ratio, and multi-step word problems. The single most versatile problem-solving representation in primary maths.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Bar models solve word problems by making the structure visible. For comparison: draw two bars side-by-side, one longer than the other, and label the difference. For part-whole: divide one bar into sections. Always start by asking 'what do we know? What are we trying to find?' and then 'which bar represents which quantity?' Do not rush to a bar model — let the child read the problem twice first. At home, draw rectangular bars on squared paper so the proportions are accurate.",
+    "key_stages": ["KS1", "KS2", "KS3"],
+    "mathematical_structure": "Proportional comparison and part-whole relationships — a single visual structure for additive and multiplicative problems",
+    "variants": [
+      {"year": "Y1", "variant": "Simple comparison: two bars, which is longer?"},
+      {"year": "Y2", "variant": "Part-whole bars: one bar divided into two or three sections"},
+      {"year": "Y3-Y4", "variant": "Multi-step: chained bar models for two-step word problems"},
+      {"year": "Y5-Y6", "variant": "Ratio and proportion: bars divided into equal parts for ratio comparison"},
+      {"year": "KS3", "variant": "Algebraic bar models: bars with unknown lengths represented by x"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-ARRAY",
+    "name": "Array Diagram",
+    "description": "Objects or dots arranged in rows and columns to represent multiplication. The array makes commutativity visible (3 rows of 4 is the same as 4 rows of 3 — rotate the array). Bridges to the area model for multi-digit multiplication.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Arrays show multiplication as repeated equal groups arranged in a grid. Say '3 rows of 4 — how many altogether? Now turn the array sideways: 4 rows of 3 — is it the same total?' This is commutativity. Draw arrays on squared paper for accuracy. At home, use squared paper and colour in squares, or arrange objects in rows on a table.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Multiplicative structure — rows x columns, commutativity, connection to area",
+    "variants": [
+      {"year": "Y1", "variant": "Concrete arrays with objects, up to 5 rows/columns"},
+      {"year": "Y2", "variant": "Drawn arrays on squared paper for 2, 5, and 10 times tables"},
+      {"year": "Y3", "variant": "Arrays for all times tables facts; beginning to see arrays as areas"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-PVCHART",
+    "name": "Place Value Chart",
+    "description": "A tabular chart with columns for each place value position (ones, tens, hundreds, etc.). Numbers are written with digits in the correct columns. The chart makes the positional value system explicit and supports partitioning, comparison, and columnar arithmetic.",
+    "representation_type": "tabular",
+    "agent_prompt": "The place value chart is a bridge between concrete (Dienes/counters on a mat) and abstract (written numbers). Say 'write 347 in the chart — which column does each digit go in? What is the 3 worth?' Extend to decimals from Y4: add tenths and hundredths columns. At home, draw a table with column headers on paper or a whiteboard.",
+    "key_stages": ["KS1", "KS2", "KS3"],
+    "mathematical_structure": "Positional numeration — each column represents a power of 10",
+    "variants": [
+      {"year": "Y2", "variant": "H, T, O columns only (to 999)"},
+      {"year": "Y3", "variant": "Th, H, T, O columns (to 9999)"},
+      {"year": "Y4", "variant": "Adding tenths column for decimals"},
+      {"year": "Y5", "variant": "Adding hundredths and thousandths columns"},
+      {"year": "Y6", "variant": "Up to millions; flexible partitioning shown in the chart"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-GATTEGNO",
+    "name": "Gattegno Chart",
+    "description": "A grid showing all multiples of powers of 10 (ones row: 1-9, tens row: 10-90, hundreds row: 100-900, etc.). Children point to numbers and combine them to build any number by pointing. Foregrounds multiplicative place value: 300 is 3 x 100, not just 'three hundred'.",
+    "representation_type": "tabular",
+    "agent_prompt": "The Gattegno chart teaches multiplicative place value. Say 'point to 300. Now point to 40. Now point to 7. What number have you built?' (347). 'What is 10 times 30?' (point to 30, then move down one row to 300). Use the chart for rapid oral work: 'what is 100 times bigger than 5?' At home, print a Gattegno chart or draw one — it is a simple grid with rows for ones, tens, hundreds, thousands.",
+    "key_stages": ["KS2"],
+    "mathematical_structure": "Multiplicative place value — each row is 10 times the row above",
+    "variants": [
+      {"year": "Y3-Y4", "variant": "Whole number rows only (ones to thousands)"},
+      {"year": "Y5-Y6", "variant": "Extending below ones row to tenths, hundredths, thousandths for decimals"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-COLUMNAR",
+    "name": "Columnar Method Notation",
+    "description": "The standard written methods for addition, subtraction, multiplication, and division. Numbers are written in columns aligned by place value. Carried/exchanged digits are recorded above or below the line. The abstract endpoint of the CPA progression for arithmetic.",
+    "representation_type": "notational",
+    "agent_prompt": "Columnar methods are the abstract target. Always introduce via the expanded method first (writing each place value contribution separately) before moving to the compact method. Say 'line up the digits carefully — ones under ones, tens under tens.' Common errors: misaligned digits, forgetting to record the carry, subtracting the wrong way in subtraction. At home, squared paper (1cm) keeps columns aligned.",
+    "key_stages": ["KS2", "KS3"],
+    "mathematical_structure": "Place value algorithm — each column processed independently with exchange/carry between columns",
+    "variants": [
+      {"year": "Y3", "variant": "Addition and subtraction with up to 3-digit numbers"},
+      {"year": "Y4", "variant": "Extending to 4 digits; short multiplication (HTOx1-digit)"},
+      {"year": "Y5", "variant": "Long multiplication (up to 4-digit by 2-digit); short division with remainders"},
+      {"year": "Y6", "variant": "Long division; all four operations with decimals"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-EXPANDCOL",
+    "name": "Expanded Column Method",
+    "description": "An intermediate written method where each place value contribution is written separately before being combined. For 347 + 285: write 300 + 200 = 500, 40 + 80 = 120, 7 + 5 = 12, then combine. Bridges the gap between place value understanding and the compact columnar method.",
+    "representation_type": "notational",
+    "agent_prompt": "The expanded method is the bridge from pictorial place value chart work to the compact columnar method. Say 'write what each column is worth separately, then add them up.' This makes the exchange visible: '40 + 80 = 120, which is 1 hundred and 2 tens — so the extra hundred goes into the hundreds column.' Do not skip this step — children who jump straight to compact methods without understanding often make exchange errors.",
+    "key_stages": ["KS2"],
+    "mathematical_structure": "Partitioned place value arithmetic — each column processed independently before recombination",
+    "variants": [
+      {"year": "Y3", "variant": "Addition and subtraction, 3-digit numbers"},
+      {"year": "Y4", "variant": "Grid method for multiplication (expanded partial products)"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-GRIDMETH",
+    "name": "Grid Method (Area Model for Multiplication)",
+    "description": "A grid showing partial products of a multiplication: each number is partitioned by place value, and the products of each pair are written in grid cells. For 23 x 14: grid has rows 20, 3 and columns 10, 4 giving cells 200, 80, 30, 12 = 322. Bridges array diagrams to long multiplication.",
+    "representation_type": "tabular",
+    "agent_prompt": "The grid method makes long multiplication visible. Say 'partition both numbers into tens and ones. Write them along the edges of the grid. Multiply each pair. Add all the cells together.' This is the bridge from arrays (which are too large to draw for big numbers) to the compact long multiplication method. At home, draw the grid on squared paper.",
+    "key_stages": ["KS2"],
+    "mathematical_structure": "Distributive property of multiplication — a(b + c) = ab + ac made visible as an area",
+    "variants": [
+      {"year": "Y3-Y4", "variant": "2-digit x 1-digit (two cells)"},
+      {"year": "Y4-Y5", "variant": "2-digit x 2-digit (four cells)"},
+      {"year": "Y5-Y6", "variant": "3-digit x 2-digit (six cells); extending to decimals"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-MULTGRID",
+    "name": "Multiplication Grid (Times Table Chart)",
+    "description": "A 12x12 grid showing all multiplication facts from 1x1 to 12x12. A reference tool and pattern-spotting resource. Used for fluency practice, identifying factor pairs, and noticing patterns (diagonal symmetry = commutativity, square numbers on the diagonal).",
+    "representation_type": "tabular",
+    "agent_prompt": "The multiplication grid is for pattern-spotting and reference, not for looking up answers during tests. Say 'colour all the multiples of 3 — what pattern do you see?' and 'look at the diagonal — why does 4x4 sit on the diagonal?' (square numbers). For fluency: cover a number with your thumb and ask 'what goes here?' At home, print one and stick it on the fridge.",
+    "key_stages": ["KS2"],
+    "mathematical_structure": "Multiplicative commutativity and factor structure — visible in grid symmetry and patterns",
+    "variants": [
+      {"year": "Y2-Y3", "variant": "Partial grid (2, 5, 10 times tables highlighted)"},
+      {"year": "Y4", "variant": "Full 12x12 grid for fluency to 12x12"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-FRACWALL",
+    "name": "Fraction Wall Diagram",
+    "description": "A drawn wall of horizontal bars showing a whole divided into halves, thirds, quarters, fifths, sixths, eighths, tenths, and twelfths. The bars are aligned so equivalent fractions sit at the same horizontal position. The pictorial version of the physical fraction wall manipulative.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "The fraction wall shows equivalence visually. Say 'look at where the 2/4 mark sits — is it at the same point as any other fraction?' (yes, 1/2). 'Which is bigger, 1/3 or 1/4? Look at the wall — which bar is longer?' Always keep the whole visible at the top of the wall. At home, children can make their own by folding strips of paper into equal parts.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Fractional equivalence — equal fractions occupy the same horizontal extent of the whole",
+    "variants": [
+      {"year": "Y2", "variant": "Halves, quarters, thirds only"},
+      {"year": "Y3", "variant": "Adding fifths, sixths, eighths, tenths"},
+      {"year": "Y4-Y5", "variant": "Full wall including twelfths; used for addition/subtraction of fractions"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-FRACSTRIP",
+    "name": "Fraction Strip Diagram",
+    "description": "A rectangular strip divided into equal parts by vertical lines, with some parts shaded. The simplest pictorial representation of a fraction: the shaded portion represents the numerator, the total number of parts represents the denominator. More focused than a fraction wall — shows one fraction at a time.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Fraction strips show one fraction clearly. Say 'the strip is divided into 5 equal parts. 3 parts are shaded. What fraction is shaded?' (3/5). Always ask 'are the parts equal?' — unequal parts is the most common error when children draw their own fraction strips. At home, fold a strip of paper and shade sections with a coloured pen.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Unit fraction as equal partition of a whole",
+    "variants": [
+      {"year": "Y1-Y2", "variant": "Halves and quarters of shapes (rectangles, circles)"},
+      {"year": "Y3", "variant": "Strips for tenths; connecting fractions to number line positions"},
+      {"year": "Y4-Y5", "variant": "Strips for comparing, adding, and subtracting fractions"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-FRACCIRCLE",
+    "name": "Fraction Circle Diagram (Pie Diagram)",
+    "description": "A circle divided into equal sectors with some sectors shaded. The circular representation of fractions. Children naturally connect circles to 'sharing a pizza/cake equally'. Also the foundation for pie charts in Y6 statistics.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Fraction circles are intuitive but harder to draw accurately than strips. For teaching: say 'the circle is cut into 4 equal slices. If you eat 1 slice, what fraction is left?' Use fraction circles specifically for connecting to pie charts in Y6 and for the 'pizza' context in early fractions. For fraction arithmetic, prefer fraction strips or fraction walls — they are easier to compare and combine. At home, paper plate fractions (fold and cut) are the best hands-on activity.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Fraction as equal partition of a whole — angle at centre represents proportion",
+    "variants": [
+      {"year": "Y1-Y2", "variant": "Halves and quarters of circles"},
+      {"year": "Y3-Y4", "variant": "Circles divided into thirds, fifths, sixths, eighths"},
+      {"year": "Y6", "variant": "Foundation for constructing pie charts — fraction of 360 degrees"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-PICTOGRAM",
+    "name": "Pictogram",
+    "description": "A statistical chart using pictures or symbols to represent data, where each symbol represents a fixed quantity (the key). The simplest statistical representation. Introduces the concept that one symbol can represent more than one item (scaling).",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Always include a key. Say 'each smiley face represents 2 children. How many children like football? Count the faces and multiply by 2.' Start with 1-to-1 correspondence in Y1, then move to 1-to-2 in Y2, and 1-to-5 or 1-to-10 in Y3. Common error: forgetting to apply the key. At home, use stickers or stamps on squared paper.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Scaled representation — one symbol maps to n items",
+    "variants": [
+      {"year": "Y1", "variant": "1-to-1 correspondence, concrete symbols"},
+      {"year": "Y2", "variant": "Each symbol represents 2 or 5 items"},
+      {"year": "Y3", "variant": "Each symbol represents 2, 5, or 10 items; half-symbols for odd quantities"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-BARCHART",
+    "name": "Bar Chart (Block Diagram)",
+    "description": "A chart with rectangular bars whose heights (or lengths) represent data values. The most common statistical representation in primary maths. Block diagrams (Y2) use discrete blocks; bar charts (Y3+) use continuous bars with a scaled axis.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "For Y2 block diagrams: each block represents one item, stacked in columns. For Y3+ bar charts: bars are continuous with a labelled vertical axis. Always insist on: axis labels, a title, equal bar widths, and gaps between bars (distinguishing from histograms). Say 'what does the tallest bar tell you? What does the shortest bar tell you? What is the difference?' At home, draw on squared paper for accurate scaling.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Linear proportion — bar height directly encodes quantity",
+    "variants": [
+      {"year": "Y2", "variant": "Block diagrams (discrete blocks, not scaled)"},
+      {"year": "Y3", "variant": "Bar charts with scaled axis (intervals of 2, 5, or 10)"},
+      {"year": "Y4-Y5", "variant": "Grouped and comparative bar charts"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-TALLY",
+    "name": "Tally Chart",
+    "description": "A data collection method using vertical marks grouped in fives (four vertical marks crossed by a diagonal for the fifth). The physical act of tallying teaches one-to-one correspondence and grouping in fives simultaneously.",
+    "representation_type": "notational",
+    "agent_prompt": "Tally charts are for data COLLECTION, not data DISPLAY. Say 'make a mark for each person who chooses football. Remember: every fifth mark goes across the group.' Always pair a tally chart with a bar chart or pictogram — tally for collecting, chart for presenting. At home, tally charts work for any counting activity: how many red cars pass the window in 5 minutes.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Grouped counting — base-5 grouping for efficient enumeration",
+    "variants": [
+      {"year": "Y1-Y2", "variant": "Simple tally with conversion to totals"},
+      {"year": "Y3", "variant": "Tally charts for larger datasets, converting to bar charts"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-LINEGRAPH",
+    "name": "Line Graph",
+    "description": "A graph plotting data points connected by straight lines, showing how a quantity changes over time or in relation to another variable. Introduced in Y5 for time-series data (temperature over a day, plant growth over weeks). The bridge to continuous data representation.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Line graphs show CHANGE OVER TIME. Say 'what was the temperature at 10am? At 2pm? When was it hottest? How much did it change between 10am and 2pm?' Always label both axes and include units. Common error: connecting points that should not be connected (categorical data does not use line graphs — that is what bar charts are for). At home, record temperature every hour for a day and plot it.",
+    "key_stages": ["KS2"],
+    "mathematical_structure": "Continuous change — the line between points implies intermediate values exist",
+    "variants": [
+      {"year": "Y5", "variant": "Reading and interpreting line graphs; single dataset"},
+      {"year": "Y6", "variant": "Drawing line graphs from data; comparing two datasets on the same axes"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-PIECHART",
+    "name": "Pie Chart",
+    "description": "A circle divided into sectors whose angles represent proportions of a whole dataset. Introduced in Y6. Requires understanding of fractions of 360 degrees. Builds directly on fraction circle work from earlier years.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Pie charts show PROPORTION, not quantity. Say 'what fraction of the class chose blue? Is that more or less than a quarter?' For construction: 'there are 30 children. 10 chose blue. What fraction is that? (1/3). What is 1/3 of 360 degrees? (120 degrees). Measure 120 degrees with your protractor.' Common error: thinking bigger sector = more people regardless of sample size. At home, use a paper plate and a protractor.",
+    "key_stages": ["KS2"],
+    "mathematical_structure": "Proportional representation — sector angle encodes fraction of the whole",
+    "variants": [
+      {"year": "Y6", "variant": "Reading and constructing pie charts; linking to fractions and angles"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-VENN",
+    "name": "Venn Diagram",
+    "description": "Overlapping circles showing sets and their intersections. Each circle represents a criterion; the overlap represents items that meet both criteria. Used for sorting, classifying numbers (e.g. multiples of 3 AND multiples of 4), and logical reasoning.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Venn diagrams classify by TWO criteria simultaneously. Say 'this circle is for multiples of 3. This circle is for even numbers. Where does 6 go? Where does 9 go? Where does 5 go?' (6 in the overlap, 9 in multiples-of-3 only, 5 outside both circles). Always ask 'what goes in the overlap? What goes outside both?' At home, draw two overlapping circles on paper. Use the sorting hoops activity as a concrete precursor.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Set intersection — two properties classified simultaneously",
+    "variants": [
+      {"year": "Y2", "variant": "Sorting shapes by two properties (e.g. has 4 sides / has right angles)"},
+      {"year": "Y3-Y4", "variant": "Sorting numbers by two criteria (e.g. multiples / factors)"},
+      {"year": "Y5-Y6", "variant": "Three-circle Venns for complex classification"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-CARROLL",
+    "name": "Carroll Diagram",
+    "description": "A 2x2 (or 2x3) grid where rows and columns represent criteria and their negation. Unlike Venn diagrams, Carroll diagrams explicitly show 'NOT' categories. E.g. rows: 'has 4 sides' / 'does not have 4 sides'; columns: 'has a right angle' / 'does not have a right angle'.",
+    "representation_type": "tabular",
+    "agent_prompt": "Carroll diagrams are for sorting when the NEGATION matters. Say 'which shapes have 4 sides AND a right angle? Which have 4 sides but NOT a right angle?' The key teaching point: every item must go in exactly one cell. Carroll diagrams complement Venn diagrams — use Venns when overlap is the focus, Carrolls when exclusion is the focus. At home, draw a grid on paper and label rows/columns.",
+    "key_stages": ["KS1", "KS2"],
+    "mathematical_structure": "Two-way classification with explicit negation",
+    "variants": [
+      {"year": "Y2", "variant": "2x2 Carroll diagrams for shape properties"},
+      {"year": "Y3-Y4", "variant": "2x2 and 2x3 for number properties (odd/even, multiple/not)"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-COORDGRID",
+    "name": "Coordinate Grid",
+    "description": "A grid with horizontal (x) and vertical (y) axes, where points are located by ordered pairs (x, y). Introduced in Y4 for the first quadrant (positive numbers only), extending to four quadrants in Y6 with negative coordinates.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Coordinates are always read 'along the corridor and up the stairs' — x first, then y. Say 'to find the point (3, 5): start at 0, go along 3, then go up 5. Put a dot.' Common error: reversing x and y. Always write (x, y) and say 'across then up'. At home, draw a grid on squared paper and play 'treasure hunt' — give coordinates and the child marks the spots.",
+    "key_stages": ["KS2", "KS3", "KS4"],
+    "mathematical_structure": "Cartesian coordinates — two-dimensional position specified by ordered pair",
+    "variants": [
+      {"year": "Y4", "variant": "First quadrant only (positive integers), up to 10"},
+      {"year": "Y5", "variant": "Plotting shapes, translation by coordinates"},
+      {"year": "Y6", "variant": "Four quadrants with negative coordinates"},
+      {"year": "KS3", "variant": "Plotting straight line graphs from equations"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-RATIOTABLE",
+    "name": "Ratio Table",
+    "description": "A table showing two related quantities in corresponding rows or columns, used to find equivalent ratios and solve proportion problems. The tabular equivalent of a bar model for multiplicative reasoning. Introduced in Y6 for ratio and proportion.",
+    "representation_type": "tabular",
+    "agent_prompt": "Ratio tables show the multiplicative relationship between two quantities. Say 'if 3 cakes need 6 eggs, how many eggs for 9 cakes? Fill in the table: multiply both quantities by the same number.' Always start by establishing the simplest ratio in the first column. At home, draw a simple two-row table on paper.",
+    "key_stages": ["KS2", "KS3"],
+    "mathematical_structure": "Multiplicative proportion — scaling both quantities by the same factor",
+    "variants": [
+      {"year": "Y6", "variant": "Two-row ratio tables for simple proportion"},
+      {"year": "KS3", "variant": "Multi-column ratio tables; connecting to algebraic proportion"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-FACTORTREE",
+    "name": "Factor Tree",
+    "description": "A branching diagram that repeatedly splits a number into factor pairs until all branches terminate in prime numbers. Used for finding prime factorisations, HCF, and LCM. Introduced in Y6 for prime numbers and extended in KS3.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Factor trees decompose numbers into primes. Say 'split 36 into any factor pair: 4 x 9. Now split 4: 2 x 2. Split 9: 3 x 3. The leaves are all prime: 36 = 2 x 2 x 3 x 3.' Key teaching point: the same prime factorisation results regardless of which factor pair you start with. At home, draw branches on paper — it is a simple diagram that works on any paper.",
+    "key_stages": ["KS2", "KS3"],
+    "mathematical_structure": "Unique prime factorisation — the Fundamental Theorem of Arithmetic made visual",
+    "variants": [
+      {"year": "Y6", "variant": "Prime factorisation of 2-digit numbers"},
+      {"year": "KS3", "variant": "Prime factorisation for HCF and LCM using Venn diagrams of prime factors"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-FUNCMACH",
+    "name": "Function Machine",
+    "description": "A diagram showing an input, a processing rule (operation), and an output. Multiple operations can be chained. The earliest visual model for algebraic functions. Used from Y2 for 'find the rule' problems and from Y6 for formal algebra.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "Function machines show input-rule-output. Say 'I put in 5. The machine adds 3. What comes out?' Then reverse: 'the output is 12 and the machine multiplies by 4. What went in?' Always draw the machine as a box with an arrow in and an arrow out. For two-step machines: chain two boxes. At home, play 'guess my rule' — one person is the machine, the other gives inputs and tries to work out the rule.",
+    "key_stages": ["KS1", "KS2", "KS3"],
+    "mathematical_structure": "Input-output mapping — the foundation of functional thinking",
+    "variants": [
+      {"year": "Y2", "variant": "Single-operation machines with whole numbers"},
+      {"year": "Y4", "variant": "Two-step machines; finding the input from the output (inverse)"},
+      {"year": "Y6", "variant": "Machines using algebraic notation: input x, output 3x + 2"},
+      {"year": "KS3", "variant": "Function machine as a model for y = mx + c"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-AREAMOD",
+    "name": "Area Model (Rectangle Model)",
+    "description": "A rectangle whose area represents a product, with dimensions representing the factors. The rectangle is divided into sub-rectangles by partitioning each dimension. Generalises from arrays to multi-digit multiplication, then to algebraic expansion. The bridge from the grid method to long multiplication.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "The area model shows multiplication as an area. Say 'the rectangle is 23 units wide and 14 units tall. Partition the width: 20 + 3. Partition the height: 10 + 4. Now you have four sub-rectangles: 20x10=200, 20x4=80, 3x10=30, 3x4=12. Total area = 322.' This is the same as the grid method but drawn as a scaled diagram. At home, draw on squared paper for accuracy.",
+    "key_stages": ["KS2", "KS3"],
+    "mathematical_structure": "Distributive property made spatial — area = length x width, partitioned both ways",
+    "variants": [
+      {"year": "Y4-Y5", "variant": "Whole number multiplication with proportional rectangles"},
+      {"year": "Y6", "variant": "Decimal multiplication as areas"},
+      {"year": "KS3", "variant": "Algebraic expansion: (x+3)(x+2) as an area model with algebra tiles"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-DOTGRID",
+    "name": "Dot Grid / Squared Paper",
+    "description": "A regular grid of dots or squares used as a drawing substrate for shape work, arrays, coordinates, and accurate diagrams. Not a representation in itself but an essential support for accurate mathematical drawing. Isometric dot grids support 3D shape drawing.",
+    "representation_type": "physical_model",
+    "agent_prompt": "Dot grids and squared paper are the substrate for accurate maths drawing. Use squared paper for: bar charts, arrays, shape drawing, coordinate plotting. Use isometric dot grids (triangular arrangement) for drawing 3D shapes in Y5-Y6. At home, squared paper (1cm) is the single most useful maths resource after a pencil.",
+    "key_stages": ["KS1", "KS2", "KS3"],
+    "mathematical_structure": "Regular spatial grid — supports accurate measurement and coordinate work",
+    "variants": [
+      {"year": "Y1-Y3", "variant": "1cm squared paper for shape drawing and arrays"},
+      {"year": "Y4-Y5", "variant": "0.5cm squared paper for finer detail; isometric dots for 3D"},
+      {"year": "Y5-Y6", "variant": "Isometric paper for 3D shape representation and nets"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-PROBNUMLINE",
+    "name": "Probability Number Line",
+    "description": "A number line from 0 (impossible) to 1 (certain) used to position the likelihood of events. Introduced in Y6 for probability. The line makes the continuous nature of probability visible — events are not just 'likely' or 'unlikely' but sit at specific points between 0 and 1.",
+    "representation_type": "diagrammatic",
+    "agent_prompt": "The probability number line runs from 0 (impossible) to 1 (certain). Say 'where would you put the chance of rolling a 6 on a dice? It is 1 out of 6, which is about here (pointing to 1/6 on the line).' Mark key positions: 0 (impossible), 1/2 (even chance), 1 (certain). Then place events between these markers. At home, draw a line and label the ends.",
+    "key_stages": ["KS2", "KS3"],
+    "mathematical_structure": "Probability as a position on a continuous 0-1 scale",
+    "variants": [
+      {"year": "Y6", "variant": "Qualitative placement (impossible, unlikely, even, likely, certain) moving to fractional positions"},
+      {"year": "KS3", "variant": "Precise fractional and decimal positions; theoretical vs experimental probability"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  },
+  {
+    "representation_id": "MR-TABLE",
+    "name": "Frequency Table",
+    "description": "A table recording how often each value or category appears in a dataset. The basic data organisation tool. Includes simple frequency tables, grouped frequency tables (Y5+), and two-way tables (Y6+).",
+    "representation_type": "tabular",
+    "agent_prompt": "Frequency tables organise raw data before drawing charts. Say 'go through the data one item at a time. Put a tally mark next to the correct category. When you have finished, convert tallies to numbers.' Always pair frequency tables with charts — the table is for organising, the chart is for visualising. At home, collect data (e.g. favourite colours of family members) and record in a table.",
+    "key_stages": ["KS1", "KS2", "KS3"],
+    "mathematical_structure": "Categorical frequency — counting occurrences within categories",
+    "variants": [
+      {"year": "Y2-Y3", "variant": "Simple frequency tables with tally and total columns"},
+      {"year": "Y5", "variant": "Grouped frequency tables for continuous data"},
+      {"year": "Y6", "variant": "Two-way tables for cross-classification"}
+    ],
+    "display_category": "Maths Ontology",
+    "display_color": "#2563EB",
+    "display_icon": "analytics"
+  }
+]
