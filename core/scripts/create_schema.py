@@ -53,17 +53,36 @@ def create_schema(driver):
         "CREATE CONSTRAINT difficulty_level_id_unique IF NOT EXISTS FOR (dl:DifficultyLevel) REQUIRE dl.level_id IS UNIQUE",
         # RepresentationStage layer (v4.1)
         "CREATE CONSTRAINT representation_stage_id_unique IF NOT EXISTS FOR (rs:RepresentationStage) REQUIRE rs.stage_id IS UNIQUE",
-        # Topic Suggestions layer (v4.0) — 9 typed labels + VehicleTemplate
+        # Topic Suggestions layer (v4.0) — VehicleTemplate + foundation typed labels
         "CREATE CONSTRAINT vehicle_template_id_unique IF NOT EXISTS FOR (vt:VehicleTemplate) REQUIRE vt.template_id IS UNIQUE",
+        "CREATE CONSTRAINT art_ts_id_unique IF NOT EXISTS FOR (ts:ArtTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT music_ts_id_unique IF NOT EXISTS FOR (ts:MusicTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT dt_ts_id_unique IF NOT EXISTS FOR (ts:DTTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT computing_ts_id_unique IF NOT EXISTS FOR (ts:ComputingTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT topic_suggestion_id_unique IF NOT EXISTS FOR (ts:TopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        # Per-subject ontology nodes (v4.2) — big 5 subjects + promoted domain objects
+        "CREATE CONSTRAINT history_study_id_unique IF NOT EXISTS FOR (hs:HistoryStudy) REQUIRE hs.study_id IS UNIQUE",
+        "CREATE CONSTRAINT disciplinary_concept_id_unique IF NOT EXISTS FOR (dc:DisciplinaryConcept) REQUIRE dc.concept_id IS UNIQUE",
+        "CREATE CONSTRAINT historical_source_id_unique IF NOT EXISTS FOR (hs:HistoricalSource) REQUIRE hs.source_id IS UNIQUE",
+        "CREATE CONSTRAINT geo_study_id_unique IF NOT EXISTS FOR (gs:GeoStudy) REQUIRE gs.study_id IS UNIQUE",
+        "CREATE CONSTRAINT geo_place_id_unique IF NOT EXISTS FOR (gp:GeoPlace) REQUIRE gp.place_id IS UNIQUE",
+        "CREATE CONSTRAINT geo_contrast_id_unique IF NOT EXISTS FOR (gc:GeoContrast) REQUIRE gc.contrast_id IS UNIQUE",
+        "CREATE CONSTRAINT science_enquiry_id_unique IF NOT EXISTS FOR (se:ScienceEnquiry) REQUIRE se.enquiry_id IS UNIQUE",
+        "CREATE CONSTRAINT enquiry_type_id_unique IF NOT EXISTS FOR (et:EnquiryType) REQUIRE et.enquiry_type_id IS UNIQUE",
+        "CREATE CONSTRAINT misconception_id_unique IF NOT EXISTS FOR (m:Misconception) REQUIRE m.misconception_id IS UNIQUE",
+        "CREATE CONSTRAINT english_unit_id_unique IF NOT EXISTS FOR (eu:EnglishUnit) REQUIRE eu.unit_id IS UNIQUE",
+        "CREATE CONSTRAINT genre_id_unique IF NOT EXISTS FOR (g:Genre) REQUIRE g.genre_id IS UNIQUE",
+        "CREATE CONSTRAINT set_text_id_unique IF NOT EXISTS FOR (st:SetText) REQUIRE st.set_text_id IS UNIQUE",
+        "CREATE CONSTRAINT maths_manipulative_id_unique IF NOT EXISTS FOR (mm:MathsManipulative) REQUIRE mm.manipulative_id IS UNIQUE",
+        "CREATE CONSTRAINT maths_representation_id_unique IF NOT EXISTS FOR (mr:MathsRepresentation) REQUIRE mr.representation_id IS UNIQUE",
+        "CREATE CONSTRAINT maths_context_id_unique IF NOT EXISTS FOR (mc:MathsContext) REQUIRE mc.context_id IS UNIQUE",
+        "CREATE CONSTRAINT reasoning_prompt_type_id_unique IF NOT EXISTS FOR (rp:ReasoningPromptType) REQUIRE rp.prompt_type_id IS UNIQUE",
+        # Legacy TopicSuggestion labels (v4.0, kept for backward compatibility until Phase 5 cleanup)
         "CREATE CONSTRAINT history_ts_id_unique IF NOT EXISTS FOR (ts:HistoryTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
         "CREATE CONSTRAINT geography_ts_id_unique IF NOT EXISTS FOR (ts:GeographyTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
         "CREATE CONSTRAINT science_ts_id_unique IF NOT EXISTS FOR (ts:ScienceTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
         "CREATE CONSTRAINT english_ts_id_unique IF NOT EXISTS FOR (ts:EnglishTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
         "CREATE CONSTRAINT maths_ts_id_unique IF NOT EXISTS FOR (ts:MathsTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
-        "CREATE CONSTRAINT art_ts_id_unique IF NOT EXISTS FOR (ts:ArtTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
-        "CREATE CONSTRAINT music_ts_id_unique IF NOT EXISTS FOR (ts:MusicTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
-        "CREATE CONSTRAINT dt_ts_id_unique IF NOT EXISTS FOR (ts:DTTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
-        "CREATE CONSTRAINT topic_suggestion_id_unique IF NOT EXISTS FOR (ts:TopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
     ]
 
     # Indexes
@@ -109,22 +128,26 @@ def create_schema(driver):
         # RepresentationStage indexes (v4.1)
         "CREATE INDEX representation_stage_number_idx IF NOT EXISTS FOR (rs:RepresentationStage) ON (rs.stage_number)",
         "CREATE INDEX representation_stage_stage_idx IF NOT EXISTS FOR (rs:RepresentationStage) ON (rs.stage)",
-        # Topic Suggestions indexes (v4.0)
+        # Topic Suggestions indexes (v4.0) — VehicleTemplate + foundation
         "CREATE INDEX vehicle_template_type_idx IF NOT EXISTS FOR (vt:VehicleTemplate) ON (vt.template_type)",
-        "CREATE INDEX history_ts_subject_idx IF NOT EXISTS FOR (ts:HistoryTopicSuggestion) ON (ts.subject)",
-        "CREATE INDEX history_ts_ks_idx IF NOT EXISTS FOR (ts:HistoryTopicSuggestion) ON (ts.key_stage)",
-        "CREATE INDEX geography_ts_subject_idx IF NOT EXISTS FOR (ts:GeographyTopicSuggestion) ON (ts.subject)",
-        "CREATE INDEX geography_ts_ks_idx IF NOT EXISTS FOR (ts:GeographyTopicSuggestion) ON (ts.key_stage)",
-        "CREATE INDEX science_ts_subject_idx IF NOT EXISTS FOR (ts:ScienceTopicSuggestion) ON (ts.subject)",
-        "CREATE INDEX science_ts_ks_idx IF NOT EXISTS FOR (ts:ScienceTopicSuggestion) ON (ts.key_stage)",
-        "CREATE INDEX english_ts_subject_idx IF NOT EXISTS FOR (ts:EnglishTopicSuggestion) ON (ts.subject)",
-        "CREATE INDEX english_ts_ks_idx IF NOT EXISTS FOR (ts:EnglishTopicSuggestion) ON (ts.key_stage)",
-        "CREATE INDEX maths_ts_ks_idx IF NOT EXISTS FOR (ts:MathsTopicSuggestion) ON (ts.key_stage)",
         "CREATE INDEX art_ts_ks_idx IF NOT EXISTS FOR (ts:ArtTopicSuggestion) ON (ts.key_stage)",
         "CREATE INDEX music_ts_ks_idx IF NOT EXISTS FOR (ts:MusicTopicSuggestion) ON (ts.key_stage)",
         "CREATE INDEX dt_ts_ks_idx IF NOT EXISTS FOR (ts:DTTopicSuggestion) ON (ts.key_stage)",
+        "CREATE INDEX computing_ts_ks_idx IF NOT EXISTS FOR (ts:ComputingTopicSuggestion) ON (ts.key_stage)",
         "CREATE INDEX topic_suggestion_subject_idx IF NOT EXISTS FOR (ts:TopicSuggestion) ON (ts.subject)",
         "CREATE INDEX topic_suggestion_ks_idx IF NOT EXISTS FOR (ts:TopicSuggestion) ON (ts.key_stage)",
+        # Per-subject ontology indexes (v4.2)
+        "CREATE INDEX history_study_ks_idx IF NOT EXISTS FOR (hs:HistoryStudy) ON (hs.key_stage)",
+        "CREATE INDEX geo_study_ks_idx IF NOT EXISTS FOR (gs:GeoStudy) ON (gs.key_stage)",
+        "CREATE INDEX geo_place_type_idx IF NOT EXISTS FOR (gp:GeoPlace) ON (gp.place_type)",
+        "CREATE INDEX science_enquiry_ks_idx IF NOT EXISTS FOR (se:ScienceEnquiry) ON (se.key_stage)",
+        "CREATE INDEX science_enquiry_discipline_idx IF NOT EXISTS FOR (se:ScienceEnquiry) ON (se.science_discipline)",
+        "CREATE INDEX misconception_discipline_idx IF NOT EXISTS FOR (m:Misconception) ON (m.discipline)",
+        "CREATE INDEX misconception_persistence_idx IF NOT EXISTS FOR (m:Misconception) ON (m.persistence)",
+        "CREATE INDEX english_unit_ks_idx IF NOT EXISTS FOR (eu:EnglishUnit) ON (eu.key_stage)",
+        "CREATE INDEX genre_family_idx IF NOT EXISTS FOR (g:Genre) ON (g.genre_family)",
+        "CREATE INDEX set_text_board_idx IF NOT EXISTS FOR (st:SetText) ON (st.exam_board)",
+        "CREATE INDEX maths_manipulative_type_idx IF NOT EXISTS FOR (mm:MathsManipulative) ON (mm.manipulative_type)",
     ]
 
     print("Creating constraints...")
