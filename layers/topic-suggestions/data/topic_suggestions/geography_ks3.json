@@ -1,0 +1,482 @@
+[
+  {
+    "suggestion_id": "TS-GE-KS3-001",
+    "name": "Haiti 2010 Earthquake",
+    "suggestion_type": "exemplar_topic",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "exemplar",
+    "choice_group": "tectonic_hazards_case_study",
+    "curriculum_reference": [
+      "NC KS3 Geography: 'understand, through the use of detailed place-based exemplars at a variety of scales, the key processes in physical geography relating to: geological timescales and plate tectonics'",
+      "NC KS3 Geography: 'understand, through the use of detailed place-based exemplars, the key processes in physical geography relating to: plate tectonics'"
+    ],
+    "pedagogical_rationale": "Haiti provides a paradigm case for studying vulnerability in a low-income country context, where weak governance and limited infrastructure amplify the human cost of a tectonic hazard. Pairing with a HIC earthquake (Japan) enables pupils to evaluate how development level affects disaster outcomes, moving beyond description to comparative analysis.",
+    "common_pitfalls": [
+      "Reducing Haiti to a simple 'poor country = more deaths' narrative without analysing the structural causes of vulnerability (colonial debt, deforestation, governance)",
+      "Treating the earthquake as a one-off event rather than connecting it to ongoing tectonic risk and recovery challenges",
+      "Using outdated or sensationalised imagery that stereotypes Haitian people rather than showing resilience and agency"
+    ],
+    "cross_curricular_hooks": [
+      "[Science] Seismic waves and the structure of the Earth",
+      "[Maths] Interpreting statistical data on development indicators (HDI, GDP)",
+      "[History] Colonial history of Haiti and its long-term impact on development",
+      "[PSHE] International aid, empathy, and understanding global inequality"
+    ],
+    "sensitive_content_notes": [
+      "Significant loss of life (230,000+ deaths) — handle with sensitivity, avoid graphic imagery",
+      "Poverty and development inequality — avoid deficit framing of Haitian people"
+    ],
+    "definitions": ["epicentre", "magnitude", "tectonic plate", "conservative boundary", "vulnerability", "resilience", "HDI", "aid dependency"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["Port-au-Prince", "Haiti"],
+    "theme_category": "physical",
+    "themes": ["vulnerability", "development", "governance", "international aid effectiveness"],
+    "scale": "national",
+    "map_types": ["tectonic plate boundary map", "GIS hazard overlay", "population density map", "aid distribution map"],
+    "data_sources": ["USGS", "World Bank", "UN OCHA", "Red Cross"],
+    "contrasting_with": "TS-GE-KS3-002",
+    "fieldwork_potential": null,
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C001", "primary": true},
+      {"concept_id": "GE-KS3-C002", "primary": false},
+      {"concept_id": "GE-KS3-C003", "primary": false}
+    ],
+    "uses_template": ["VT-02"],
+    "domain_ids": ["GE-KS3-D003"],
+    "contrasts_with_id": "TS-GE-KS3-002"
+  },
+  {
+    "suggestion_id": "TS-GE-KS3-002",
+    "name": "Japan 2011 Earthquake and Tsunami",
+    "suggestion_type": "exemplar_topic",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "exemplar",
+    "choice_group": "tectonic_hazards_case_study",
+    "curriculum_reference": [
+      "NC KS3 Geography: 'understand, through the use of detailed place-based exemplars at a variety of scales, the key processes in physical geography relating to: geological timescales and plate tectonics'"
+    ],
+    "pedagogical_rationale": "Japan provides a contrasting HIC case study where advanced technology and preparedness systems significantly reduce vulnerability to tectonic hazards, but cascading effects (tsunami, nuclear meltdown) demonstrate that no country can eliminate risk entirely. The contrast with Haiti enables rigorous comparative analysis of how development affects disaster outcomes.",
+    "common_pitfalls": [
+      "Oversimplifying the comparison as 'rich country = fewer deaths' without analysing specific preparedness measures and their limitations",
+      "Neglecting the Fukushima nuclear dimension as a cascading hazard, which complicates the 'technology makes you safe' narrative",
+      "Failing to distinguish between earthquake and tsunami impacts, which have different causes and preparedness strategies"
+    ],
+    "cross_curricular_hooks": [
+      "[Science] Seismic waves, subduction zones, and tsunami mechanics",
+      "[Science] Nuclear energy and the Fukushima meltdown",
+      "[Maths] Comparing statistical data across two events (magnitude, deaths, GDP)",
+      "[Design & Technology] Engineering for earthquake resistance"
+    ],
+    "sensitive_content_notes": [
+      "Significant loss of life (c.20,000 deaths) — handle with sensitivity",
+      "Nuclear disaster at Fukushima — discuss factually, avoid sensationalism"
+    ],
+    "definitions": ["subduction zone", "tsunami", "seismometer", "early warning system", "resilience", "Richter scale", "nuclear meltdown"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["Tohoku region", "Japan"],
+    "theme_category": "physical",
+    "themes": ["preparedness", "resilience", "technology", "cascading hazards"],
+    "scale": "national",
+    "map_types": ["tectonic plate boundary map", "tsunami inundation map", "population density map", "nuclear exclusion zone"],
+    "data_sources": ["USGS", "Japan Meteorological Agency", "IAEA", "World Bank"],
+    "contrasting_with": "TS-GE-KS3-001",
+    "fieldwork_potential": null,
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C001", "primary": true},
+      {"concept_id": "GE-KS3-C002", "primary": false},
+      {"concept_id": "GE-KS3-C003", "primary": false}
+    ],
+    "uses_template": ["VT-02"],
+    "domain_ids": ["GE-KS3-D003"],
+    "contrasts_with_id": "TS-GE-KS3-001"
+  },
+  {
+    "suggestion_id": "TS-GE-KS3-003",
+    "name": "Climate Change: Causes, Evidence and Mitigation",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "mandatory",
+    "choice_group": null,
+    "curriculum_reference": [
+      "NC KS3 Geography: 'understand, through the use of detailed place-based exemplars selected from the world's major climate types and biomes, the key processes in physical geography relating to weather and climate'",
+      "NC KS3 Geography: 'the change in climate from the Ice Age to the present, and evidence of further change'"
+    ],
+    "pedagogical_rationale": "Climate change is a statutory area of study at KS3 that integrates physical geography (greenhouse effect, feedback loops) with human geography (emissions inequality, international cooperation). The global scope with regional case studies ensures pupils understand both the science and the unequal distribution of causes and impacts, developing the evaluative skills needed for informed citizenship.",
+    "common_pitfalls": [
+      "Confusing the ozone hole with the greenhouse effect — these are distinct phenomena with different causes and solutions",
+      "Presenting climate change as a future problem rather than a present reality with observable effects",
+      "Failing to distinguish between weather variability and long-term climate trends when using data"
+    ],
+    "cross_curricular_hooks": [
+      "[Science] The greenhouse effect, carbon cycle, and atmospheric chemistry",
+      "[Maths] Interpreting line graphs, scatter plots, and trend data from climate records",
+      "[English] Evaluating persuasive writing and media coverage of climate issues",
+      "[Citizenship] International agreements (Paris Agreement) and collective action"
+    ],
+    "sensitive_content_notes": [
+      "Climate anxiety is real for many young people — frame with agency and solutions, not despair",
+      "Global inequality in emissions and impacts — avoid blame narratives, focus on structural analysis"
+    ],
+    "definitions": ["greenhouse effect", "carbon dioxide", "mitigation", "adaptation", "ice core", "feedback loop", "carbon footprint", "Paris Agreement"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["Global", "Arctic", "Bangladesh", "Sahel"],
+    "theme_category": "environmental",
+    "themes": ["climate science", "global inequality", "mitigation vs adaptation", "international cooperation"],
+    "scale": "global",
+    "map_types": ["global temperature anomaly map", "carbon emissions by country", "vulnerability index map", "sea level rise projection"],
+    "data_sources": ["IPCC", "NASA GISS", "Met Office", "COP agreements"],
+    "contrasting_with": null,
+    "fieldwork_potential": "Local weather station data collection and comparison with historical climate records; measuring school carbon footprint as a micro-scale investigation.",
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C003", "primary": true},
+      {"concept_id": "GE-KS3-C001", "primary": false},
+      {"concept_id": "GE-KS3-C002", "primary": false},
+      {"concept_id": "GE-KS3-C004", "primary": false}
+    ],
+    "uses_template": ["VT-02", "VT-18"],
+    "domain_ids": ["GE-KS3-D003"],
+    "contrasts_with_id": null
+  },
+  {
+    "suggestion_id": "TS-GE-KS3-004",
+    "name": "Development and Global Inequality: Nigeria",
+    "suggestion_type": "exemplar_topic",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "exemplar",
+    "choice_group": "development_case_study",
+    "curriculum_reference": [
+      "NC KS3 Geography: 'understand how human and physical processes interact to influence, and change landscapes, environments and the climate; and how human activity relies on effective functioning of natural systems'",
+      "NC KS3 Geography: 'the key processes in human geography relating to: international development; economic activity in the primary, secondary, tertiary and quaternary sectors'"
+    ],
+    "pedagogical_rationale": "Nigeria exemplifies the complexity of development: Africa's largest economy with vast oil wealth yet deep regional inequalities and persistent poverty. The case study challenges simplistic 'developing country' narratives, introducing pupils to the resource curse concept and the limitations of single development indicators like GDP. Nigeria's internal diversity (north-south divide, rural-urban contrast) makes it ideal for nuanced development analysis.",
+    "common_pitfalls": [
+      "Treating Nigeria as representative of all of Africa — emphasise it is one of 54 diverse countries",
+      "Relying solely on GDP as a development measure without exploring HDI, literacy, regional disparities",
+      "Presenting the resource curse as inevitable rather than as a political and governance challenge"
+    ],
+    "cross_curricular_hooks": [
+      "[Maths] Calculating and comparing development indicators (GDP per capita, HDI, literacy rates)",
+      "[History] Colonial history of Nigeria and its legacy on current political boundaries and economic structures",
+      "[English] Analysing different perspectives on development through contrasting written sources",
+      "[Science] Oil extraction processes and environmental impacts"
+    ],
+    "sensitive_content_notes": [
+      "Boko Haram and regional conflict — handle factually, avoid sensationalising violence",
+      "Poverty and inequality — avoid deficit framing; show agency, enterprise, and cultural richness alongside challenges"
+    ],
+    "definitions": ["GDP", "GNI", "HDI", "development gap", "resource curse", "informal economy", "FDI", "Boko Haram"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["Nigeria"],
+    "theme_category": "economic",
+    "themes": ["development indicators", "inequality", "resource curse", "urbanisation", "trade"],
+    "scale": "national",
+    "map_types": ["choropleth map (HDI by state)", "population distribution", "resource map", "trade flow map"],
+    "data_sources": ["World Bank", "UNDP", "Nigerian National Bureau of Statistics", "UN Population Division"],
+    "contrasting_with": null,
+    "fieldwork_potential": null,
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C002", "primary": true},
+      {"concept_id": "GE-KS3-C003", "primary": false},
+      {"concept_id": "GE-KS3-C004", "primary": false},
+      {"concept_id": "GE-KS3-C005", "primary": false}
+    ],
+    "uses_template": ["VT-02"],
+    "domain_ids": ["GE-KS3-D003", "GE-KS3-D001"],
+    "contrasts_with_id": null
+  },
+  {
+    "suggestion_id": "TS-GE-KS3-005",
+    "name": "Urbanisation: Lagos and London",
+    "suggestion_type": "exemplar_topic",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "exemplar",
+    "choice_group": "urbanisation_case_study",
+    "curriculum_reference": [
+      "NC KS3 Geography: 'understand, through the use of detailed place-based exemplars, the key processes in human geography relating to: population and urbanisation'"
+    ],
+    "pedagogical_rationale": "Contrasting Lagos (rapid megacity growth in a LIC) with London (managed growth in a HIC) enables pupils to explore urbanisation as a global process with radically different local manifestations. The comparison illuminates push-pull factors, informal settlement challenges, and sustainable urban planning, while avoiding the trap of studying only 'problem' urbanisation in developing countries.",
+    "common_pitfalls": [
+      "Presenting Lagos purely as a city of problems (poverty, slums) without showing its economic dynamism and cultural vibrancy",
+      "Treating London as the 'solution' and Lagos as the 'problem' — both cities face serious challenges",
+      "Using outdated data or imagery that does not reflect current urban change in either city"
+    ],
+    "cross_curricular_hooks": [
+      "[Maths] Interpreting population growth curves and percentage calculations",
+      "[History] Historical growth of London; colonial origins of Lagos",
+      "[Science] Urban heat island effect and pollution",
+      "[Citizenship] Housing inequality and social justice in urban contexts"
+    ],
+    "sensitive_content_notes": [
+      "Informal settlements — avoid 'slum tourism' framing; discuss with dignity and structural analysis",
+      "Housing inequality in London — sensitive for pupils who may experience housing insecurity"
+    ],
+    "definitions": ["urbanisation", "megacity", "rural-urban migration", "push-pull factors", "informal settlement", "gentrification", "sustainability"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["Lagos", "Nigeria", "London", "United Kingdom"],
+    "theme_category": "human",
+    "themes": ["push-pull factors", "megacity challenges", "informal settlements", "sustainable urban planning"],
+    "scale": "national",
+    "map_types": ["urban growth map (satellite time series)", "land use map", "population density map", "transport network map"],
+    "data_sources": ["UN Habitat", "World Bank", "ONS", "Lagos State Government"],
+    "contrasting_with": null,
+    "fieldwork_potential": "Local urban transect walk comparing land use, building density, and environmental quality in contrasting parts of a nearby town or city.",
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C004", "primary": true},
+      {"concept_id": "GE-KS3-C002", "primary": false},
+      {"concept_id": "GE-KS3-C003", "primary": false}
+    ],
+    "uses_template": ["VT-14", "VT-02"],
+    "domain_ids": ["GE-KS3-D003"],
+    "contrasts_with_id": null
+  },
+  {
+    "suggestion_id": "TS-GE-KS3-006",
+    "name": "Resource Management: UK Water",
+    "suggestion_type": "exemplar_topic",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "exemplar",
+    "choice_group": "resource_management_case_study",
+    "curriculum_reference": [
+      "NC KS3 Geography: 'understand how human and physical processes interact'",
+      "NC KS3 Geography: 'the distribution of natural resources including energy, food, minerals and water'"
+    ],
+    "pedagogical_rationale": "UK water supply illustrates the tension between physical geography (rainfall distribution) and human geography (population distribution, demand patterns) within a familiar national context. The north-south water divide makes abstract concepts of surplus and deficit tangible, while management strategies (reservoirs, transfer schemes, desalination) introduce pupils to evaluating competing solutions to real geographical challenges.",
+    "common_pitfalls": [
+      "Treating water scarcity as only a developing-world problem — the UK case shows it is a universal resource management challenge",
+      "Oversimplifying the solution as 'just build more reservoirs' without considering environmental, economic, and social trade-offs",
+      "Neglecting demand-side management (reducing leakage, changing consumption) in favour of supply-side solutions only"
+    ],
+    "cross_curricular_hooks": [
+      "[Science] The water cycle, evaporation, precipitation, and filtration processes",
+      "[Maths] Data handling with water consumption statistics, surplus/deficit calculations",
+      "[Design & Technology] Water filtration and purification systems",
+      "[Citizenship] Water privatisation, pricing, and equity of access"
+    ],
+    "definitions": ["water security", "surplus", "deficit", "water transfer", "desalination", "grey water", "water footprint", "drought"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["United Kingdom"],
+    "theme_category": "environmental",
+    "themes": ["supply and demand", "water security", "sustainability", "management strategies"],
+    "scale": "national",
+    "map_types": ["UK rainfall distribution", "water surplus/deficit map", "reservoir locations", "population density overlay"],
+    "data_sources": ["Environment Agency", "Ofwat", "Met Office", "Water companies"],
+    "contrasting_with": null,
+    "fieldwork_potential": "School water audit measuring daily consumption, identifying waste, and proposing reduction strategies; local river quality survey.",
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C003", "primary": true},
+      {"concept_id": "GE-KS3-C002", "primary": false},
+      {"concept_id": "GE-KS3-C004", "primary": false}
+    ],
+    "uses_template": ["VT-02"],
+    "domain_ids": ["GE-KS3-D003"],
+    "contrasts_with_id": null
+  },
+  {
+    "suggestion_id": "TS-GE-KS3-007",
+    "name": "Africa: Place Depth Study",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "mandatory",
+    "choice_group": null,
+    "curriculum_reference": [
+      "NC KS3 Geography: 'understand geographical similarities, differences and links between places through the study of human and physical geography of a region within Africa'",
+      "NC KS3 Geography: 'consolidate and extend their knowledge of the world's countries, using maps of the world to focus on Africa'"
+    ],
+    "pedagogical_rationale": "The Africa depth study is a statutory KS3 requirement that challenges stereotypical media portrayals by exposing pupils to the continent's extraordinary physical, cultural, and economic diversity across 54 countries. Using multiple country case studies (Kenya, Morocco, South Africa, Ethiopia) prevents the common trap of treating Africa as a single undifferentiated place and develops the comparative skills needed for sophisticated geographical analysis.",
+    "common_pitfalls": [
+      "Treating Africa as a single country or undifferentiated region rather than a continent of 54 diverse nations",
+      "Relying on stereotypical 'poverty and wildlife' imagery that ignores urbanisation, technology, and cultural richness",
+      "Failing to include African voices and perspectives — use sources from within African countries, not only external accounts"
+    ],
+    "cross_curricular_hooks": [
+      "[History] Pre-colonial African kingdoms, colonialism, and independence movements",
+      "[Science] Rift Valley tectonics and biodiversity of African ecosystems",
+      "[Maths] Comparing development data across African nations using multiple indicators",
+      "[Art] African art traditions, textile design, and contemporary African artists"
+    ],
+    "sensitive_content_notes": [
+      "Colonial legacy and its ongoing effects — discuss factually and sensitively",
+      "Avoid 'white saviour' narratives when discussing aid and development",
+      "Pupils of African heritage may have strong personal connections — create space for their knowledge"
+    ],
+    "definitions": ["stereotype", "diversity", "Sahel", "savanna", "Great Rift Valley", "desertification", "neo-colonialism"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["Africa", "Kenya", "Morocco", "South Africa", "Ethiopia"],
+    "theme_category": "integrated",
+    "themes": ["diversity", "stereotypes", "development", "physical geography"],
+    "scale": "continental",
+    "map_types": ["physical features map", "climate zones", "economic activity map", "urbanisation rates"],
+    "data_sources": ["African Development Bank", "World Bank", "UN Population Division"],
+    "contrasting_with": null,
+    "fieldwork_potential": null,
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C005", "primary": true},
+      {"concept_id": "GE-KS3-C006", "primary": false}
+    ],
+    "uses_template": ["VT-19"],
+    "domain_ids": ["GE-KS3-D001", "GE-KS3-D002"],
+    "contrasts_with_id": null
+  },
+  {
+    "suggestion_id": "TS-GE-KS3-008",
+    "name": "Asia: Place Depth Study",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "mandatory",
+    "choice_group": null,
+    "curriculum_reference": [
+      "NC KS3 Geography: 'understand geographical similarities, differences and links between places through the study of human and physical geography of a region within Asia'",
+      "NC KS3 Geography: 'consolidate and extend their knowledge of the world's countries, using maps of the world to focus on Asia (including China and India)'"
+    ],
+    "pedagogical_rationale": "The Asia depth study is a statutory KS3 requirement covering the world's most populous and geographically diverse continent. Studying multiple countries (China, India, Japan, Bangladesh) exposes pupils to extremes of physical geography (Himalayas, monsoon systems, deltas), rapid economic transformation, and population pressures that are reshaping global geography. The combination of physical extremes and human dynamism makes Asia essential for understanding contemporary global processes.",
+    "common_pitfalls": [
+      "Reducing Asia to 'China and India' without acknowledging the diversity of Southeast Asia, Central Asia, and the Pacific rim",
+      "Presenting population density as inherently problematic without exploring how dense populations create economic opportunity and cultural richness",
+      "Treating rapid economic growth as unambiguously positive without examining environmental costs and inequality"
+    ],
+    "cross_curricular_hooks": [
+      "[Science] Monsoon weather systems, Himalayan tectonics, and delta formation",
+      "[Maths] Population data analysis using very large numbers and growth rate calculations",
+      "[History] Silk Road trade routes, colonial history in South and Southeast Asia",
+      "[RE] Buddhism, Hinduism, Islam, and Sikhism in their geographical contexts"
+    ],
+    "sensitive_content_notes": [
+      "Avoid orientalist framing — present Asian societies on their own terms, not as exotic contrasts to Europe",
+      "Political sensitivities around China, Kashmir, Tibet — present factually without editorialising"
+    ],
+    "definitions": ["monsoon", "Himalayas", "delta", "megacity", "population density", "economic tiger", "Special Economic Zone"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["Asia", "China", "India", "Japan", "Bangladesh"],
+    "theme_category": "integrated",
+    "themes": ["population pressure", "rapid development", "physical extremes", "environmental challenges"],
+    "scale": "continental",
+    "map_types": ["physical features map", "population density", "monsoon patterns", "economic growth rates"],
+    "data_sources": ["World Bank", "UN Population Division", "Asian Development Bank"],
+    "contrasting_with": null,
+    "fieldwork_potential": null,
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C005", "primary": true},
+      {"concept_id": "GE-KS3-C006", "primary": false}
+    ],
+    "uses_template": ["VT-19"],
+    "domain_ids": ["GE-KS3-D001", "GE-KS3-D002"],
+    "contrasts_with_id": null
+  },
+  {
+    "suggestion_id": "TS-GE-KS3-009",
+    "name": "Geographical Fieldwork Investigation",
+    "suggestion_type": "open_slot",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "mandatory",
+    "choice_group": null,
+    "curriculum_reference": [
+      "NC KS3 Geography: 'build on their knowledge of globes, maps and atlases and apply and develop this knowledge routinely in the classroom and in the field'",
+      "NC KS3 Geography: 'use fieldwork in contrasting locations to collect, analyse and draw conclusions from geographical data, using multiple sources of increasingly complex information'"
+    ],
+    "pedagogical_rationale": "Fieldwork is a statutory KS3 requirement that develops the geographical enquiry skills that distinguish geography as a discipline: formulating questions, designing methodology, collecting primary data, analysing findings, and evaluating conclusions. The requirement for contrasting locations ensures pupils experience different geographical environments and develop transferable enquiry skills rather than location-specific knowledge alone.",
+    "common_pitfalls": [
+      "Treating fieldwork as a data-collection exercise rather than a genuine enquiry — pupils need to understand the question driving the investigation",
+      "Collecting data without teaching pupils to evaluate its reliability, representativeness, and limitations",
+      "Using only one fieldwork location when the NC requires contrasting locations"
+    ],
+    "cross_curricular_hooks": [
+      "[Maths] Sampling methods, data presentation (graphs, charts), calculating averages and percentages",
+      "[Science] Scientific method — hypothesis, variables, fair testing principles applied to geographical contexts",
+      "[Computing] Using GIS software and digital mapping tools for data presentation",
+      "[English] Writing up fieldwork reports with clear structure and evidence-based conclusions"
+    ],
+    "definitions": ["hypothesis", "primary data", "secondary data", "sampling", "GIS", "Ordnance Survey", "transect", "questionnaire"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["Local area (adaptable)"],
+    "theme_category": "integrated",
+    "themes": ["enquiry process", "primary data collection", "GIS", "analysis and presentation"],
+    "scale": "local",
+    "map_types": ["OS map of study area", "GIS layers", "sketch maps", "annotated photographs"],
+    "data_sources": ["Primary data collected by pupils", "Digimap for Schools", "Google Earth"],
+    "contrasting_with": null,
+    "fieldwork_potential": "This is the fieldwork suggestion itself. Pupils design and conduct a geographical enquiry in a local environment, collecting primary data through techniques such as questionnaires, environmental quality surveys, traffic counts, or river measurements.",
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C007", "primary": true}
+    ],
+    "uses_template": ["VT-10"],
+    "domain_ids": ["GE-KS3-D004"],
+    "contrasts_with_id": null
+  },
+  {
+    "suggestion_id": "TS-GE-KS3-010",
+    "name": "Middle East: Place Depth Study",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Geography",
+    "key_stage": "KS3",
+    "curriculum_status": "mandatory",
+    "choice_group": null,
+    "curriculum_reference": [
+      "NC KS3 Geography: 'consolidate and extend their knowledge of the world's countries, using maps of the world to focus on the Middle East'",
+      "NC KS3 Geography: 'the distribution of natural resources including energy'"
+    ],
+    "pedagogical_rationale": "The Middle East depth study addresses a statutory KS3 requirement for a region that is central to global energy supply, geopolitics, and migration patterns. The contrast between oil-rich Gulf states (UAE) and conflict-affected nations (Iraq) within the same region demonstrates how resource wealth does not automatically translate into development for all. Water scarcity adds an environmental dimension that connects physical and human geography.",
+    "common_pitfalls": [
+      "Reducing the Middle East to 'oil and conflict' — show cultural heritage, economic diversification, and social change",
+      "Treating the region as monolithic when it contains enormous diversity in wealth, governance, and culture",
+      "Oversimplifying the Israel-Palestine situation — present facts carefully and avoid taking political positions"
+    ],
+    "cross_curricular_hooks": [
+      "[Science] Desalination technology and water treatment processes",
+      "[History] Historical significance of the Middle East (Mesopotamia, Ottoman Empire, mandate system)",
+      "[RE] Islam in its geographical context; religious diversity in the region",
+      "[Citizenship] Refugees, conflict, and international law"
+    ],
+    "sensitive_content_notes": [
+      "Israel-Palestine conflict is highly sensitive — present factually, acknowledge multiple perspectives, avoid taking sides",
+      "Refugee crises — discuss with empathy and structural analysis",
+      "Avoid Islamophobic framing — present the region's cultural and religious diversity respectfully",
+      "Pupils of Middle Eastern heritage may have personal or family connections to conflict — handle with care"
+    ],
+    "definitions": ["OPEC", "desalination", "arid", "geopolitics", "sectarian", "refugee", "sovereignty"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "lightbulb",
+    "locations": ["Middle East", "UAE", "Iraq", "Israel", "Palestine"],
+    "theme_category": "integrated",
+    "themes": ["resource wealth", "conflict", "water scarcity", "modernisation", "cultural heritage"],
+    "scale": "continental",
+    "map_types": ["oil reserves distribution", "water scarcity map", "conflict zones", "urbanisation"],
+    "data_sources": ["OPEC", "World Bank", "UN", "UNICEF"],
+    "contrasting_with": null,
+    "fieldwork_potential": null,
+    "delivers_via": [
+      {"concept_id": "GE-KS3-C005", "primary": true},
+      {"concept_id": "GE-KS3-C006", "primary": false}
+    ],
+    "uses_template": ["VT-19"],
+    "domain_ids": ["GE-KS3-D001", "GE-KS3-D002"],
+    "contrasts_with_id": null
+  }
+]

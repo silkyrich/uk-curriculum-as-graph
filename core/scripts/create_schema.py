@@ -51,6 +51,17 @@ def create_schema(driver):
         "CREATE CONSTRAINT content_vehicle_id_unique IF NOT EXISTS FOR (cv:ContentVehicle) REQUIRE cv.vehicle_id IS UNIQUE",
         # DifficultyLevel layer (v3.9)
         "CREATE CONSTRAINT difficulty_level_id_unique IF NOT EXISTS FOR (dl:DifficultyLevel) REQUIRE dl.level_id IS UNIQUE",
+        # Topic Suggestions layer (v4.0) — 9 typed labels + VehicleTemplate
+        "CREATE CONSTRAINT vehicle_template_id_unique IF NOT EXISTS FOR (vt:VehicleTemplate) REQUIRE vt.template_id IS UNIQUE",
+        "CREATE CONSTRAINT history_ts_id_unique IF NOT EXISTS FOR (ts:HistoryTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT geography_ts_id_unique IF NOT EXISTS FOR (ts:GeographyTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT science_ts_id_unique IF NOT EXISTS FOR (ts:ScienceTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT english_ts_id_unique IF NOT EXISTS FOR (ts:EnglishTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT maths_ts_id_unique IF NOT EXISTS FOR (ts:MathsTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT art_ts_id_unique IF NOT EXISTS FOR (ts:ArtTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT music_ts_id_unique IF NOT EXISTS FOR (ts:MusicTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT dt_ts_id_unique IF NOT EXISTS FOR (ts:DTTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        "CREATE CONSTRAINT topic_suggestion_id_unique IF NOT EXISTS FOR (ts:TopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
     ]
 
     # Indexes
@@ -93,6 +104,22 @@ def create_schema(driver):
         # DifficultyLevel indexes (v3.9)
         "CREATE INDEX difficulty_level_number_idx IF NOT EXISTS FOR (dl:DifficultyLevel) ON (dl.level_number)",
         "CREATE INDEX difficulty_level_label_idx IF NOT EXISTS FOR (dl:DifficultyLevel) ON (dl.label)",
+        # Topic Suggestions indexes (v4.0)
+        "CREATE INDEX vehicle_template_type_idx IF NOT EXISTS FOR (vt:VehicleTemplate) ON (vt.template_type)",
+        "CREATE INDEX history_ts_subject_idx IF NOT EXISTS FOR (ts:HistoryTopicSuggestion) ON (ts.subject)",
+        "CREATE INDEX history_ts_ks_idx IF NOT EXISTS FOR (ts:HistoryTopicSuggestion) ON (ts.key_stage)",
+        "CREATE INDEX geography_ts_subject_idx IF NOT EXISTS FOR (ts:GeographyTopicSuggestion) ON (ts.subject)",
+        "CREATE INDEX geography_ts_ks_idx IF NOT EXISTS FOR (ts:GeographyTopicSuggestion) ON (ts.key_stage)",
+        "CREATE INDEX science_ts_subject_idx IF NOT EXISTS FOR (ts:ScienceTopicSuggestion) ON (ts.subject)",
+        "CREATE INDEX science_ts_ks_idx IF NOT EXISTS FOR (ts:ScienceTopicSuggestion) ON (ts.key_stage)",
+        "CREATE INDEX english_ts_subject_idx IF NOT EXISTS FOR (ts:EnglishTopicSuggestion) ON (ts.subject)",
+        "CREATE INDEX english_ts_ks_idx IF NOT EXISTS FOR (ts:EnglishTopicSuggestion) ON (ts.key_stage)",
+        "CREATE INDEX maths_ts_ks_idx IF NOT EXISTS FOR (ts:MathsTopicSuggestion) ON (ts.key_stage)",
+        "CREATE INDEX art_ts_ks_idx IF NOT EXISTS FOR (ts:ArtTopicSuggestion) ON (ts.key_stage)",
+        "CREATE INDEX music_ts_ks_idx IF NOT EXISTS FOR (ts:MusicTopicSuggestion) ON (ts.key_stage)",
+        "CREATE INDEX dt_ts_ks_idx IF NOT EXISTS FOR (ts:DTTopicSuggestion) ON (ts.key_stage)",
+        "CREATE INDEX topic_suggestion_subject_idx IF NOT EXISTS FOR (ts:TopicSuggestion) ON (ts.subject)",
+        "CREATE INDEX topic_suggestion_ks_idx IF NOT EXISTS FOR (ts:TopicSuggestion) ON (ts.key_stage)",
     ]
 
     print("Creating constraints...")

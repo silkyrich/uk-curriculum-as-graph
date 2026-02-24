@@ -1206,6 +1206,175 @@ class SchemaValidator:
         self.add(ValidationResult("ContentVehicle definitions", status, total, issues))
 
     # =========================================================================
+    # O. VehicleTemplate layer (v4.0)
+    # =========================================================================
+
+    def check_vehicle_template_completeness(self):
+        """VehicleTemplate nodes have required properties (skipped if none exist)."""
+        total = self.scalar("MATCH (vt:VehicleTemplate) RETURN count(vt)") or 0
+        if total == 0:
+            self.add(ValidationResult("VehicleTemplate completeness", "PASS", 0,
+                                      ["No VehicleTemplate nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (vt:VehicleTemplate)
+            WHERE vt.template_id IS NULL OR vt.template_id = ''
+               OR vt.name IS NULL OR vt.name = ''
+               OR vt.template_type IS NULL OR vt.template_type = ''
+               OR vt.description IS NULL OR vt.description = ''
+               OR vt.agent_prompt IS NULL OR vt.agent_prompt = ''
+               OR vt.session_structure IS NULL OR size(vt.session_structure) = 0
+            RETURN vt.template_id AS id
+        """)
+        issues = [f"VehicleTemplate '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("VehicleTemplate completeness", status, total, issues))
+
+    def check_vehicle_template_template_for_coverage(self):
+        """Every VehicleTemplate must have at least 1 TEMPLATE_FOR relationship to a KeyStage."""
+        total = self.scalar("MATCH (vt:VehicleTemplate) RETURN count(vt)") or 0
+        if total == 0:
+            self.add(ValidationResult("VehicleTemplate TEMPLATE_FOR coverage", "PASS", 0,
+                                      ["No VehicleTemplate nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (vt:VehicleTemplate)
+            WHERE NOT (vt)-[:TEMPLATE_FOR]->(:KeyStage)
+            RETURN vt.template_id AS id
+        """)
+        issues = [f"VehicleTemplate '{r['id']}' has no TEMPLATE_FOR relationship" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("VehicleTemplate TEMPLATE_FOR coverage", status, total, issues))
+
+    def check_template_for_completeness(self):
+        """Every TEMPLATE_FOR must have non-empty agent_prompt."""
+        total = self.scalar("MATCH ()-[r:TEMPLATE_FOR]->() RETURN count(r)") or 0
+        if total == 0:
+            self.add(ValidationResult("TEMPLATE_FOR completeness", "PASS", 0,
+                                      ["No TEMPLATE_FOR relationships — import pending"]))
+            return
+        records = self.run("""
+            MATCH (vt:VehicleTemplate)-[r:TEMPLATE_FOR]->(ks:KeyStage)
+            WHERE r.agent_prompt IS NULL OR r.agent_prompt = ''
+               OR r.question_stems IS NULL OR size(r.question_stems) = 0
+            RETURN vt.template_id AS tpl, ks.key_stage_id AS ks
+        """)
+        issues = [f"TEMPLATE_FOR {r['tpl']} -> {r['ks']} missing agent_prompt or question_stems" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("TEMPLATE_FOR completeness", status, total, issues))
+
+    # =========================================================================
+    # P. TopicSuggestion layer (v4.0) — all 9 typed labels
+    # =========================================================================
+
+    def check_topic_suggestion_completeness(self):
+        """All TopicSuggestion nodes (any label) have universal required properties."""
+        total = self.scalar("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            RETURN count(n)
+        """) or 0
+        if total == 0:
+            self.add(ValidationResult("TopicSuggestion completeness", "PASS", 0,
+                                      ["No TopicSuggestion nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            AND (n.suggestion_id IS NULL OR n.suggestion_id = ''
+                 OR n.name IS NULL OR n.name = ''
+                 OR n.suggestion_type IS NULL
+                 OR n.subject IS NULL OR n.subject = ''
+                 OR n.key_stage IS NULL OR n.key_stage = ''
+                 OR n.curriculum_status IS NULL
+                 OR n.pedagogical_rationale IS NULL OR n.pedagogical_rationale = '')
+            RETURN n.suggestion_id AS id
+        """)
+        issues = [f"TopicSuggestion '{r['id'] or '(null)'}' missing required universal properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("TopicSuggestion completeness", status, total, issues))
+
+    def check_topic_suggestion_delivers_via(self):
+        """Every TopicSuggestion has at least 1 DELIVERS_VIA relationship to a Concept."""
+        total = self.scalar("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            RETURN count(n)
+        """) or 0
+        if total == 0:
+            self.add(ValidationResult("TopicSuggestion DELIVERS_VIA coverage", "PASS", 0,
+                                      ["No TopicSuggestion nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            AND NOT (n)-[:DELIVERS_VIA]->(:Concept)
+            RETURN n.suggestion_id AS id
+        """)
+        issues = [f"TopicSuggestion '{r['id']}' has no DELIVERS_VIA relationship" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("TopicSuggestion DELIVERS_VIA coverage", status, total, issues))
+
+    def check_topic_suggestion_uses_template(self):
+        """Every TopicSuggestion has at least 1 USES_TEMPLATE relationship to a VehicleTemplate."""
+        total = self.scalar("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            RETURN count(n)
+        """) or 0
+        if total == 0:
+            self.add(ValidationResult("TopicSuggestion USES_TEMPLATE coverage", "PASS", 0,
+                                      ["No TopicSuggestion nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            AND NOT (n)-[:USES_TEMPLATE]->(:VehicleTemplate)
+            RETURN n.suggestion_id AS id
+        """)
+        issues = [f"TopicSuggestion '{r['id']}' has no USES_TEMPLATE relationship" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("TopicSuggestion USES_TEMPLATE coverage", status, total, issues))
+
+    def check_topic_suggestion_type_values(self):
+        """suggestion_type must be one of the 9 valid enum values."""
+        valid_types = [
+            'prescribed_topic', 'exemplar_topic', 'open_slot',
+            'exemplar_figure', 'exemplar_event', 'exemplar_text',
+            'set_text', 'genre_requirement', 'teacher_convention',
+        ]
+        total = self.scalar("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            RETURN count(n)
+        """) or 0
+        if total == 0:
+            self.add(ValidationResult("suggestion_type valid values", "PASS", 0,
+                                      ["No TopicSuggestion nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            AND NOT n.suggestion_type IN $valid_types
+            RETURN n.suggestion_id AS id, n.suggestion_type AS val
+        """, valid_types=valid_types)
+        issues = [f"TopicSuggestion {r['id']} has invalid suggestion_type '{r['val']}'" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("suggestion_type valid values", status, total, issues))
+
+    def check_topic_suggestion_curriculum_status_values(self):
+        """curriculum_status must be one of 4 valid values."""
+        valid_statuses = ['mandatory', 'menu_choice', 'exemplar', 'convention']
+        total = self.scalar("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            RETURN count(n)
+        """) or 0
+        if total == 0:
+            self.add(ValidationResult("curriculum_status valid values", "PASS", 0,
+                                      ["No TopicSuggestion nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            AND NOT n.curriculum_status IN $valid_statuses
+            RETURN n.suggestion_id AS id, n.curriculum_status AS val
+        """, valid_statuses=valid_statuses)
+        issues = [f"TopicSuggestion {r['id']} has invalid curriculum_status '{r['val']}'" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("curriculum_status valid values", status, total, issues))
+
+    # =========================================================================
     # K. Enrichment coverage (DB-level)
     # =========================================================================
 
@@ -1279,7 +1448,7 @@ class SchemaValidator:
         valid_categories = {
             'UK Curriculum', 'CASE Standards', 'Epistemic Skills',
             'Assessment', 'Structure', 'Learner Profile', 'Oak Content',
-            'Content Vehicle',
+            'Content Vehicle', 'Vehicle Template', 'Topic Suggestion',
         }
         records = self.run("""
             MATCH (n)
@@ -1415,6 +1584,16 @@ class SchemaValidator:
             self.check_content_vehicle_delivers_coverage,
             self.check_content_vehicle_assessment_guidance,
             self.check_content_vehicle_definitions,
+            # O. VehicleTemplate (v4.0)
+            self.check_vehicle_template_completeness,
+            self.check_vehicle_template_template_for_coverage,
+            self.check_template_for_completeness,
+            # P. TopicSuggestion (v4.0)
+            self.check_topic_suggestion_completeness,
+            self.check_topic_suggestion_delivers_via,
+            self.check_topic_suggestion_uses_template,
+            self.check_topic_suggestion_type_values,
+            self.check_topic_suggestion_curriculum_status_values,
             # K. Enrichment coverage
             self.check_concept_enrichment_coverage,
             # L. Display & Visualization
