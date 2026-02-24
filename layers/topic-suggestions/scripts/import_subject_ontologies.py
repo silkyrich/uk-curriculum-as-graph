@@ -202,7 +202,7 @@ class SubjectOntologyImporter:
             node_id = item.get(id_field)
             if not node_id:
                 continue
-            for ref in item.get("delivers_via", []):
+            for ref in (item.get("delivers_via") or []):
                 concept_id = ref if isinstance(ref, str) else ref.get("concept_id", "")
                 primary = False if isinstance(ref, str) else ref.get("primary", False)
                 if concept_id:
@@ -220,7 +220,7 @@ class SubjectOntologyImporter:
             node_id = item.get(id_field)
             if not node_id:
                 continue
-            templates = item.get("uses_template", [])
+            templates = (item.get("uses_template") or [])
             # Handle string (single) or list
             if isinstance(templates, str):
                 templates = [templates]
@@ -238,7 +238,7 @@ class SubjectOntologyImporter:
             node_id = item.get(id_field)
             if not node_id:
                 continue
-            for domain_id in item.get("domain_ids", []):
+            for domain_id in (item.get("domain_ids") or []):
                 session.run(f"""
                     MATCH (d:Domain {{domain_id: $did}})
                     MATCH (n:{label} {{{id_field}: $nid}})
@@ -256,7 +256,7 @@ class SubjectOntologyImporter:
                 continue
 
             # FOREGROUNDS -> DisciplinaryConcept
-            for fg in item.get("foregrounds", []):
+            for fg in (item.get("foregrounds") or []):
                 slug = fg.get("disciplinary_concept_slug")
                 if slug:
                     session.run("""
@@ -270,7 +270,7 @@ class SubjectOntologyImporter:
                     self.stats["foregrounds"] += 1
 
             # USES_SOURCE -> HistoricalSource
-            for src_id in item.get("uses_source_ids", []):
+            for src_id in (item.get("uses_source_ids") or []):
                 session.run("""
                     MATCH (hs:HistoryStudy {study_id: $sid})
                     MATCH (src:HistoricalSource {source_id: $srcid})
@@ -298,7 +298,7 @@ class SubjectOntologyImporter:
                 continue
 
             # LOCATED_IN -> GeoPlace
-            for place_id in item.get("locations", []):
+            for place_id in (item.get("locations") or []):
                 session.run("""
                     MATCH (gs:GeoStudy {study_id: $sid})
                     MATCH (gp:GeoPlace {place_id: $pid})
@@ -307,7 +307,7 @@ class SubjectOntologyImporter:
                 self.stats["located_in"] += 1
 
             # BUILDS_ON -> GeoStudy
-            for ref_id in item.get("builds_on", []):
+            for ref_id in (item.get("builds_on") or []):
                 session.run("""
                     MATCH (a:GeoStudy {study_id: $sid})
                     MATCH (b:GeoStudy {study_id: $rid})
@@ -316,7 +316,7 @@ class SubjectOntologyImporter:
                 self.stats["builds_on"] += 1
 
             # CONTRASTS_WITH -> GeoContrast
-            for cid in item.get("contrasts_with", []):
+            for cid in (item.get("contrasts_with") or []):
                 session.run("""
                     MATCH (gs:GeoStudy {study_id: $sid})
                     MATCH (gc:GeoContrast {contrast_id: $cid})
@@ -362,7 +362,7 @@ class SubjectOntologyImporter:
                 continue
 
             # USES_ENQUIRY_TYPE -> EnquiryType
-            for ref in item.get("uses_enquiry_type", []):
+            for ref in (item.get("uses_enquiry_type") or []):
                 etid = ref.get("enquiry_type_id") if isinstance(ref, dict) else ref
                 rank = ref.get("rank", 1) if isinstance(ref, dict) else 1
                 if etid:
@@ -375,7 +375,7 @@ class SubjectOntologyImporter:
                     self.stats["uses_enquiry_type"] += 1
 
             # SURFACES_MISCONCEPTION -> Misconception
-            for ref in item.get("surfaces_misconception", []):
+            for ref in (item.get("surfaces_misconception") or []):
                 mid = ref.get("misconception_id") if isinstance(ref, dict) else ref
                 likelihood = ref.get("likelihood", "moderate") if isinstance(ref, dict) else "moderate"
                 if mid:
@@ -388,7 +388,7 @@ class SubjectOntologyImporter:
                     self.stats["surfaces_misconception"] += 1
 
             # PROGRESSES_TO -> ScienceEnquiry
-            for ref in item.get("progresses_to", []):
+            for ref in (item.get("progresses_to") or []):
                 target = ref.get("enquiry_id") if isinstance(ref, dict) else ref
                 rationale = ref.get("rationale", "") if isinstance(ref, dict) else ""
                 if target:
@@ -403,7 +403,7 @@ class SubjectOntologyImporter:
         # Misconception prerequisite chains
         for item in misconceptions:
             mid = item.get("misconception_id")
-            for prereq in item.get("prerequisite_misconception_ids", []):
+            for prereq in (item.get("prerequisite_misconception_ids") or []):
                 session.run("""
                     MATCH (a:Misconception {misconception_id: $mid})
                     MATCH (b:Misconception {misconception_id: $pid})
@@ -414,7 +414,7 @@ class SubjectOntologyImporter:
         # EnquiryType -> WorkingScientifically (develops_skill)
         for item in enquiry_types:
             etid = item.get("enquiry_type_id")
-            for ref in item.get("develops_skill", []):
+            for ref in (item.get("develops_skill") or []):
                 skill_id = ref.get("skill_id") if isinstance(ref, dict) else ref
                 strength = ref.get("strength", "supporting") if isinstance(ref, dict) else "supporting"
                 if skill_id:
@@ -436,7 +436,7 @@ class SubjectOntologyImporter:
                 continue
 
             # IN_GENRE -> Genre
-            for ref in item.get("in_genre", []):
+            for ref in (item.get("in_genre") or []):
                 gid = ref.get("genre_id") if isinstance(ref, dict) else ref
                 role = ref.get("role", "primary") if isinstance(ref, dict) else "primary"
                 if gid:
@@ -449,7 +449,7 @@ class SubjectOntologyImporter:
                     self.stats["in_genre"] += 1
 
             # STUDIES_TEXT -> SetText
-            for stid in item.get("studies_text", []):
+            for stid in (item.get("studies_text") or []):
                 session.run("""
                     MATCH (eu:EnglishUnit {unit_id: $uid})
                     MATCH (st:SetText {set_text_id: $stid})
@@ -481,7 +481,7 @@ class SubjectOntologyImporter:
             with open(genres_file) as f:
                 gdata = json.load(f)
 
-            for prog in gdata.get("genre_progressions", []):
+            for prog in (gdata.get("genre_progressions") or []):
                 session.run("""
                     MATCH (a:Genre {genre_id: $from_id})
                     MATCH (b:Genre {genre_id: $to_id})
@@ -493,7 +493,7 @@ class SubjectOntologyImporter:
                     note=prog.get("progression_note", ""))
                 self.stats["genre_progressions"] += 1
 
-            for aff in gdata.get("genre_affinities", []):
+            for aff in (gdata.get("genre_affinities") or []):
                 session.run("""
                     MATCH (a:Genre {genre_id: $id1})
                     MATCH (b:Genre {genre_id: $id2})
@@ -511,7 +511,7 @@ class SubjectOntologyImporter:
             mid = item.get("manipulative_id")
             if not mid:
                 continue
-            for cid in item.get("source_concepts", []):
+            for cid in (item.get("source_concepts") or []):
                 session.run("""
                     MATCH (mm:MathsManipulative {manipulative_id: $mid})
                     MATCH (c:Concept {concept_id: $cid})
@@ -523,7 +523,7 @@ class SubjectOntologyImporter:
             rid = item.get("representation_id")
             if not rid:
                 continue
-            for cid in item.get("source_concepts", []):
+            for cid in (item.get("source_concepts") or []):
                 session.run("""
                     MATCH (mr:MathsRepresentation {representation_id: $rid})
                     MATCH (c:Concept {concept_id: $cid})

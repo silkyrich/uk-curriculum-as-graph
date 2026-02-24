@@ -33,10 +33,50 @@ LAYERS = {
         "script": PROJECT_ROOT / "layers" / "epistemic-skills" / "scripts" / "import_epistemic_skills.py",
         "depends_on": ["uk-curriculum", "assessment"],
     },
-    "topics": {
-        "name": "Topics",
-        "script": PROJECT_ROOT / "layers" / "topics" / "scripts" / "import_topics.py",
+    "eyfs": {
+        "name": "EYFS (Early Years Foundation Stage)",
+        "script": PROJECT_ROOT / "layers" / "eyfs" / "scripts" / "import_eyfs.py",
         "depends_on": ["uk-curriculum"],
+    },
+    "enrichment": {
+        "name": "Concept Grouping Signals (migration)",
+        "script": PROJECT_ROOT / "core" / "migrations" / "compute_lesson_grouping_signals.py",
+        "depends_on": ["uk-curriculum"],
+    },
+    "thinking-lenses": {
+        "name": "Thinking Lenses",
+        "script": PROJECT_ROOT / "layers" / "uk-curriculum" / "scripts" / "import_thinking_lenses.py",
+        "depends_on": ["uk-curriculum"],
+    },
+    "concept-clusters": {
+        "name": "Concept Clusters (generated)",
+        "script": PROJECT_ROOT / "layers" / "uk-curriculum" / "scripts" / "generate_concept_clusters.py",
+        "depends_on": ["uk-curriculum", "enrichment", "thinking-lenses"],
+    },
+    "difficulty-levels": {
+        "name": "Difficulty Levels",
+        "script": PROJECT_ROOT / "layers" / "uk-curriculum" / "scripts" / "import_difficulty_levels.py",
+        "depends_on": ["uk-curriculum", "eyfs"],
+    },
+    "cross-domain-co-teaches": {
+        "name": "Cross-Domain CO_TEACHES (migration)",
+        "script": PROJECT_ROOT / "core" / "migrations" / "create_cross_domain_co_teaches.py",
+        "depends_on": ["uk-curriculum", "enrichment"],
+    },
+    "concept-skill-links": {
+        "name": "Concept-Level Skill Links (migration)",
+        "script": PROJECT_ROOT / "core" / "migrations" / "create_concept_skill_links.py",
+        "depends_on": ["uk-curriculum", "epistemic-skills"],
+    },
+    "vehicle-templates": {
+        "name": "Vehicle Templates (pedagogical patterns)",
+        "script": PROJECT_ROOT / "layers" / "topic-suggestions" / "scripts" / "import_vehicle_templates.py",
+        "depends_on": ["uk-curriculum"],
+    },
+    "subject-ontologies": {
+        "name": "Per-Subject Ontology Nodes",
+        "script": PROJECT_ROOT / "layers" / "topic-suggestions" / "scripts" / "import_subject_ontologies.py",
+        "depends_on": ["uk-curriculum", "vehicle-templates"],
     },
     "case-standards": {
         "name": "CASE Standards (US/International)",

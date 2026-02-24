@@ -27,8 +27,7 @@ def create_schema(driver):
         "CREATE CONSTRAINT mathematical_reasoning_skill_id_unique IF NOT EXISTS FOR (mr:MathematicalReasoning) REQUIRE mr.skill_id IS UNIQUE",
         "CREATE CONSTRAINT historical_thinking_skill_id_unique IF NOT EXISTS FOR (ht:HistoricalThinking) REQUIRE ht.skill_id IS UNIQUE",
         "CREATE CONSTRAINT computational_thinking_skill_id_unique IF NOT EXISTS FOR (ct:ComputationalThinking) REQUIRE ct.skill_id IS UNIQUE",
-        # Topic nodes (v3.3)
-        "CREATE CONSTRAINT topic_id_unique IF NOT EXISTS FOR (t:Topic) REQUIRE t.topic_id IS UNIQUE",
+        # Topic nodes (v3.3) — REMOVED: replaced by per-subject ontology (v4.2)
         # Oak National Academy content nodes (v3.4)
         "CREATE CONSTRAINT oak_unit_slug_unique IF NOT EXISTS FOR (u:OakUnit) REQUIRE u.oak_unit_slug IS UNIQUE",
         "CREATE CONSTRAINT oak_lesson_slug_unique IF NOT EXISTS FOR (l:OakLesson) REQUIRE l.oak_lesson_slug IS UNIQUE",
@@ -47,8 +46,7 @@ def create_schema(driver):
         "CREATE CONSTRAINT pedagogy_technique_id_unique IF NOT EXISTS FOR (pt:PedagogyTechnique) REQUIRE pt.technique_id IS UNIQUE",
         # Concept Grouping layer (v3.7)
         "CREATE CONSTRAINT concept_cluster_id_unique IF NOT EXISTS FOR (cc:ConceptCluster) REQUIRE cc.cluster_id IS UNIQUE",
-        # Content Vehicles layer (v3.8)
-        "CREATE CONSTRAINT content_vehicle_id_unique IF NOT EXISTS FOR (cv:ContentVehicle) REQUIRE cv.vehicle_id IS UNIQUE",
+        # Content Vehicles layer (v3.8) — REMOVED: replaced by per-subject ontology (v4.2)
         # DifficultyLevel layer (v3.9)
         "CREATE CONSTRAINT difficulty_level_id_unique IF NOT EXISTS FOR (dl:DifficultyLevel) REQUIRE dl.level_id IS UNIQUE",
         # RepresentationStage layer (v4.1)
@@ -77,12 +75,7 @@ def create_schema(driver):
         "CREATE CONSTRAINT maths_representation_id_unique IF NOT EXISTS FOR (mr:MathsRepresentation) REQUIRE mr.representation_id IS UNIQUE",
         "CREATE CONSTRAINT maths_context_id_unique IF NOT EXISTS FOR (mc:MathsContext) REQUIRE mc.context_id IS UNIQUE",
         "CREATE CONSTRAINT reasoning_prompt_type_id_unique IF NOT EXISTS FOR (rp:ReasoningPromptType) REQUIRE rp.prompt_type_id IS UNIQUE",
-        # Legacy TopicSuggestion labels (v4.0, kept for backward compatibility until Phase 5 cleanup)
-        "CREATE CONSTRAINT history_ts_id_unique IF NOT EXISTS FOR (ts:HistoryTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
-        "CREATE CONSTRAINT geography_ts_id_unique IF NOT EXISTS FOR (ts:GeographyTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
-        "CREATE CONSTRAINT science_ts_id_unique IF NOT EXISTS FOR (ts:ScienceTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
-        "CREATE CONSTRAINT english_ts_id_unique IF NOT EXISTS FOR (ts:EnglishTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
-        "CREATE CONSTRAINT maths_ts_id_unique IF NOT EXISTS FOR (ts:MathsTopicSuggestion) REQUIRE ts.suggestion_id IS UNIQUE",
+        # Legacy big-5 TopicSuggestion labels (v4.0) — REMOVED in v4.2: replaced by per-subject ontology
     ]
 
     # Indexes
@@ -118,10 +111,7 @@ def create_schema(driver):
         "CREATE INDEX concept_cluster_type_idx IF NOT EXISTS FOR (cc:ConceptCluster) ON (cc.cluster_type)",
         "CREATE INDEX concept_is_keystone_idx IF NOT EXISTS FOR (c:Concept) ON (c.is_keystone)",
         "CREATE INDEX concept_teaching_weight_idx IF NOT EXISTS FOR (c:Concept) ON (c.teaching_weight)",
-        # Content Vehicles indexes (v3.8)
-        "CREATE INDEX content_vehicle_type_idx IF NOT EXISTS FOR (cv:ContentVehicle) ON (cv.vehicle_type)",
-        "CREATE INDEX content_vehicle_subject_idx IF NOT EXISTS FOR (cv:ContentVehicle) ON (cv.subject)",
-        "CREATE INDEX content_vehicle_ks_idx IF NOT EXISTS FOR (cv:ContentVehicle) ON (cv.key_stage)",
+        # Content Vehicles indexes (v3.8) — REMOVED: replaced by per-subject ontology (v4.2)
         # DifficultyLevel indexes (v3.9)
         "CREATE INDEX difficulty_level_number_idx IF NOT EXISTS FOR (dl:DifficultyLevel) ON (dl.level_number)",
         "CREATE INDEX difficulty_level_label_idx IF NOT EXISTS FOR (dl:DifficultyLevel) ON (dl.label)",
