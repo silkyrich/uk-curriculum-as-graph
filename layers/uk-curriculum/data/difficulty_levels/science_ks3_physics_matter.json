@@ -1,0 +1,443 @@
+[
+  {
+    "concept_id": "SC-KS3-C158",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that mass is conserved in physical changes and gives examples of reversible changes.",
+        "example_task": "Name two examples of reversible physical changes.",
+        "example_response": "Melting ice (can be refrozen) and dissolving salt in water (salt can be recovered by evaporation).",
+        "common_errors": [
+          "Gives an example of an irreversible chemical change (e.g. burning).",
+          "Thinks mass is lost when water evaporates."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains conservation of mass using the particle model and describes how to recover a dissolved substance.",
+        "example_task": "Sugar is dissolved in water and the solution is weighed. It has the same mass as the sugar and water separately. Explain why.",
+        "example_response": "The sugar particles spread out between the water particles but are not destroyed. The same number of particles (and the same total mass) is present before and after dissolving. No atoms are created or lost.",
+        "common_errors": [
+          "Says the sugar has disappeared so its mass has gone.",
+          "Cannot use the particle model to explain conservation."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Designs experiments to demonstrate conservation of mass in physical changes and explains apparently contradictory observations.",
+        "example_task": "When water is boiled in an open beaker, the mass reading on the balance decreases. Does this disprove conservation of mass? Explain.",
+        "example_response": "No. The water vapour escapes into the air, so the mass of the beaker plus remaining water decreases. However, the total mass of the system (beaker + remaining water + escaped vapour) is unchanged. Mass is conserved; it has just moved to the surrounding air.",
+        "common_errors": [
+          "Says mass is genuinely lost when water evaporates.",
+          "Does not define the system boundary to include the escaped vapour."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex scenarios involving physical changes, evaluates whether a change is physical or chemical, and explains why conservation of mass applies to all changes.",
+        "example_task": "A sealed flask containing water is weighed, heated until the water boils, and weighed again. The mass is the same. Explain this result and why it is strong evidence for conservation of mass in physical changes.",
+        "example_response": "In the sealed flask, no matter can enter or leave. When the water boils, it changes from liquid to gas, but the water molecules are not destroyed. The same number of H2O molecules are present as vapour inside the flask as were present as liquid. Since the total number of atoms is unchanged, the total mass is unchanged. This is strong evidence because the closed system eliminates any exchange of matter with the surroundings.",
+        "common_errors": [
+          "Says the steam weighs less than the liquid water.",
+          "Does not explain the significance of using a sealed flask."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C159",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Lists key properties of solids, liquids, and gases such as shape, volume, and compressibility.",
+        "example_task": "State two differences between a solid and a gas.",
+        "example_response": "A solid has a fixed shape and a fixed volume. A gas fills the entire container and can be compressed easily.",
+        "common_errors": [
+          "Says liquids have a fixed shape.",
+          "Cannot recall that gases are compressible."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Defines density as mass per unit volume and measures the density of regular solid objects.",
+        "example_task": "A metal block has a mass of 400 g and a volume of 50 cm cubed. Calculate its density.",
+        "example_response": "Density = mass / volume = 400 / 50 = 8 g/cm cubed.",
+        "common_errors": [
+          "Divides volume by mass.",
+          "Forgets to state the unit of density."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Measures the density of irregular objects using displacement, compares densities of different states, and uses density to predict floating and sinking.",
+        "example_task": "Explain how you would measure the density of an irregular stone.",
+        "example_response": "Measure the mass using a balance. Find the volume using water displacement: place water in a measuring cylinder, record the level, submerge the stone, record the new level. Volume = new level - original level. Then density = mass / volume.",
+        "common_errors": [
+          "Does not know how to find the volume of an irregular object.",
+          "Uses the total water level as the volume instead of the difference."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses density anomalies (e.g. ice floating on water), evaluates the relationship between density and particle arrangement, and solves multi-step density problems.",
+        "example_task": "Ice floats on water even though both are made of H2O. Explain this anomaly in terms of particle arrangement and density.",
+        "example_response": "In liquid water, hydrogen bonds constantly break and reform, allowing molecules to pack relatively closely. In ice, hydrogen bonds hold molecules in a fixed, open hexagonal lattice structure with more space between molecules than in the liquid. This means ice has a lower density (about 0.92 g/cm cubed) than liquid water (1.00 g/cm cubed), so ice floats. This is unusual; most solids are denser than their liquids.",
+        "common_errors": [
+          "Says ice floats because it is cold.",
+          "Cannot explain the molecular structure difference between ice and liquid water."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C160",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that Brownian motion is the random jiggling of small particles and that it provides evidence for the particle model.",
+        "example_task": "What is Brownian motion?",
+        "example_response": "Brownian motion is the random, jiggling movement of small visible particles (like pollen or smoke) caused by collisions with invisible molecules around them.",
+        "common_errors": [
+          "Thinks the jiggling particles are the molecules themselves.",
+          "Says Brownian motion only happens in liquids."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes how Brownian motion is observed using a smoke cell and microscope, and explains what causes the random motion.",
+        "example_task": "Describe how you would observe Brownian motion using a smoke cell.",
+        "example_response": "Trap smoke particles in a small glass cell and illuminate them from the side. View through a microscope. The bright smoke particles are seen jiggling randomly. This is caused by invisible air molecules colliding with the larger smoke particles from random directions.",
+        "common_errors": [
+          "Says the smoke particles are molecules.",
+          "Says the jiggling is caused by heat or convection rather than molecular collisions."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the historical significance of Brownian motion as evidence for the existence of atoms and molecules, and predicts how temperature changes affect the motion.",
+        "example_task": "How would increasing the temperature affect Brownian motion? Explain your answer.",
+        "example_response": "At higher temperatures, the air molecules move faster and have more kinetic energy. Their collisions with the smoke particles are more forceful, so the smoke particles jiggle more vigorously and move further between collisions.",
+        "common_errors": [
+          "Says the particles stop moving at low temperature.",
+          "Cannot link temperature to the kinetic energy of the air molecules."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates Einstein's theoretical explanation of Brownian motion, analyses how particle size and medium density affect the observed motion, and explains why Brownian motion was pivotal for acceptance of atomic theory.",
+        "example_task": "Explain why Einstein's 1905 analysis of Brownian motion was a turning point in the acceptance of atomic theory.",
+        "example_response": "Although atoms and molecules had been proposed, many scientists considered them a useful mathematical fiction because they could not be observed directly. Einstein showed that Brownian motion could be explained quantitatively if molecules exist with specific sizes and energies. His predictions matched experimental observations by Perrin, providing strong quantitative evidence that atoms and molecules are real physical entities, not just theoretical constructs.",
+        "common_errors": [
+          "Says Einstein discovered Brownian motion (Brown observed it in 1827; Einstein explained it mathematically in 1905).",
+          "Cannot explain why a quantitative prediction was more convincing than a qualitative description."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C161",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that diffusion is the spreading of particles from a region of high concentration to low concentration.",
+        "example_task": "What is diffusion?",
+        "example_response": "Diffusion is the net movement of particles from an area of higher concentration to an area of lower concentration.",
+        "common_errors": [
+          "Says particles deliberately move to less crowded areas.",
+          "Thinks diffusion only occurs in gases."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes demonstrations of diffusion in gases and liquids and explains the process using the random motion of particles.",
+        "example_task": "A drop of ink is placed in still water. Over time, the ink spreads out. Explain why.",
+        "example_response": "The ink particles are in constant random motion, as are the water molecules. Through random movement, the ink particles gradually spread from the region of high ink concentration (where the drop was placed) into regions of lower concentration until the colour is evenly distributed.",
+        "common_errors": [
+          "Says the ink is pushed by the water.",
+          "Thinks diffusion stops once the ink reaches the edge of the container."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains factors affecting the rate of diffusion (temperature, molecular mass, concentration gradient) and applies knowledge to biological contexts.",
+        "example_task": "Explain why diffusion is faster at higher temperatures.",
+        "example_response": "At higher temperatures, particles have more kinetic energy and move faster. Faster-moving particles spread out more quickly, so diffusion occurs at a greater rate. The concentration gradient is equalised sooner.",
+        "common_errors": [
+          "Says particles expand at higher temperatures (particles do not change size).",
+          "Cannot explain the link between temperature, kinetic energy, and diffusion rate."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses the ammonia-HCl diffusion experiment quantitatively, explains dynamic equilibrium after diffusion, and evaluates the importance of diffusion in living systems.",
+        "example_task": "In the ammonia and hydrochloric acid diffusion experiment, a white ring of ammonium chloride forms closer to the HCl end. Explain why.",
+        "example_response": "Ammonia (NH3, molecular mass 17) is lighter than hydrogen chloride (HCl, molecular mass 36.5). Lighter molecules move faster at the same temperature, so ammonia diffuses faster along the tube. The two gases meet closer to the HCl end because ammonia has covered a greater distance in the same time. Where they meet, they react to form the white ring of ammonium chloride.",
+        "common_errors": [
+          "Says the ring forms in the middle.",
+          "Cannot explain the relationship between molecular mass and diffusion speed."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C162",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that chemical changes produce new substances while physical changes do not.",
+        "example_task": "Is melting butter a chemical or physical change? Explain.",
+        "example_response": "Physical change. The butter changes state from solid to liquid but remains butter. No new substance is formed and it can be re-solidified.",
+        "common_errors": [
+          "Says melting is a chemical change because the butter looks different.",
+          "Cannot explain the difference between chemical and physical changes."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies evidence that a chemical change has occurred (colour change, gas produced, temperature change, precipitate) and gives examples.",
+        "example_task": "Give three pieces of evidence that a chemical reaction may have occurred.",
+        "example_response": "1. A colour change (e.g. iron turning orange-brown when rusting). 2. A gas is produced (bubbles or fizzing). 3. A temperature change (the mixture gets hotter or colder).",
+        "common_errors": [
+          "Lists a state change as evidence of a chemical change (state changes are physical).",
+          "Cannot give specific examples alongside the evidence."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses specific reactions to explain why they are chemical rather than physical, and recognises that most chemical changes are difficult to reverse.",
+        "example_task": "Explain why cooking an egg is a chemical change and not a physical change.",
+        "example_response": "When an egg is cooked, the proteins in the egg white and yolk undergo permanent chemical changes (denaturation and coagulation). New molecular structures are formed with different properties (solid, white, rubbery instead of liquid, transparent, runny). The change is irreversible: you cannot 'uncook' an egg.",
+        "common_errors": [
+          "Says cooking is physical because the egg changes state.",
+          "Thinks all chemical changes involve flames or explosions."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates borderline cases and reversible chemical reactions, and explains why conservation of mass applies to both types of change at the atomic level.",
+        "example_task": "Hydrated copper sulfate (blue) turns to anhydrous copper sulfate (white) when heated, and the change can be reversed by adding water. Is this a chemical or physical change? Justify your answer.",
+        "example_response": "This is a chemical change because the water molecules are chemically bonded to the copper sulfate in the hydrated form. Heating breaks these bonds (an endothermic chemical reaction), and adding water reforms them (an exothermic reaction). It is an example of a reversible chemical reaction. The fact that it is reversible does not make it physical; the key criterion is that chemical bonds are broken and reformed.",
+        "common_errors": [
+          "Says it must be physical because it is reversible.",
+          "Cannot explain that chemical changes involve bond breaking and forming."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C163",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Draws simple particle diagrams for solids, liquids, and gases showing differences in arrangement.",
+        "example_task": "Draw the particle arrangement in a solid, a liquid, and a gas.",
+        "example_response": "Solid: particles in a regular, closely packed pattern. Liquid: particles close together but in an irregular arrangement. Gas: particles widely spread apart in random positions.",
+        "common_errors": [
+          "Draws particles of different sizes for different states (they should be the same size).",
+          "Shows liquid particles as far apart as gas particles."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains how particle arrangement and motion account for the properties of each state.",
+        "example_task": "Explain why a liquid takes the shape of its container but a solid does not.",
+        "example_response": "In a liquid, particles are close together but can slide past each other because the intermolecular forces are weaker than in a solid. This allows the liquid to flow and take the shape of its container. In a solid, particles vibrate about fixed positions held by strong intermolecular forces, keeping a fixed shape.",
+        "common_errors": [
+          "Says liquid particles are far apart (they are close but irregular).",
+          "Does not mention the role of intermolecular forces."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses particle arrangement and kinetic energy to explain changes of state and the energy changes involved.",
+        "example_task": "Explain what happens to the particles when a solid melts, including the energy changes.",
+        "example_response": "Heating supplies energy which increases the vibration of particles. At the melting point, particles gain enough energy to overcome some of the intermolecular forces holding them in fixed positions. They begin to move past each other, forming a liquid. The temperature stays constant during melting because the energy is used to break intermolecular bonds rather than increase kinetic energy.",
+        "common_errors": [
+          "Says the particles get bigger when heated.",
+          "Does not explain why temperature stays constant during melting."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the limitations of the simple particle model and explains anomalies such as the expansion of water when freezing.",
+        "example_task": "The simple particle model suggests that solids should always be denser than liquids. Explain why water is an exception and what this tells us about the limitations of the model.",
+        "example_response": "The simple model uses identical spheres without considering the specific shapes of molecules or the nature of intermolecular bonds. In water, hydrogen bonds in ice create an open hexagonal structure with gaps, making ice less dense than liquid water. This shows the model is useful for explaining general properties but cannot account for effects that depend on the specific geometry of molecules and the directional nature of certain bonds.",
+        "common_errors": [
+          "Says the particle model is wrong because of this exception.",
+          "Cannot identify a specific limitation (molecular geometry and bond directionality)."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C164",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Distinguishes between atoms and molecules and gives a simple example of each.",
+        "example_task": "What is the difference between an atom and a molecule?",
+        "example_response": "An atom is the smallest particle of an element (e.g. a helium atom, He). A molecule is two or more atoms bonded together (e.g. a water molecule, H2O).",
+        "common_errors": [
+          "Uses 'atom' and 'molecule' interchangeably.",
+          "Says a molecule must contain different types of atoms (diatomic elements like O2 are also molecules)."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies molecules as elements or compounds based on their formulae and recognises common diatomic elements.",
+        "example_task": "Classify the following as elements or compounds: O2, CO2, N2, H2O.",
+        "example_response": "Elements: O2 (two oxygen atoms), N2 (two nitrogen atoms). Compounds: CO2 (carbon and oxygen atoms), H2O (hydrogen and oxygen atoms).",
+        "common_errors": [
+          "Classifies O2 as a compound because it has two atoms.",
+          "Cannot distinguish elements from compounds using formulae."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses molecular models to build molecules, interprets chemical formulae, and explains the difference between atoms, molecules of elements, and molecules of compounds.",
+        "example_task": "Methane has the formula CH4. Describe the molecule and explain why it is a compound.",
+        "example_response": "One carbon atom is bonded to four hydrogen atoms. It is a compound because it contains two different types of atom (carbon and hydrogen) chemically bonded together. Its properties are completely different from those of pure carbon or pure hydrogen.",
+        "common_errors": [
+          "Says CH4 contains one carbon molecule and four hydrogen molecules.",
+          "Does not explain that a compound has properties different from its constituent elements."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses the distinction between molecular substances and giant structures, explains why not all substances consist of discrete molecules, and discusses how the type of particles determines physical properties.",
+        "example_task": "Explain why sodium chloride (NaCl) is not described as a molecule even though its formula looks similar to molecular formulae like HCl.",
+        "example_response": "NaCl is an ionic compound with a giant lattice structure: each sodium ion is surrounded by chloride ions and vice versa in a repeating 3D pattern. There are no discrete NaCl pairs (molecules). The formula NaCl represents the simplest ratio of ions (1:1). HCl, by contrast, exists as discrete molecules of one hydrogen atom bonded to one chlorine atom. The formula represents an actual molecule, not just a ratio.",
+        "common_errors": [
+          "Says NaCl is a molecule of sodium chloride.",
+          "Does not explain the giant lattice structure."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C165",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that heating makes particles move faster and that temperature is related to particle motion.",
+        "example_task": "What happens to the particles in a gas when it is heated?",
+        "example_response": "The particles move faster. They have more kinetic energy and collide with each other and the container walls more often and more forcefully.",
+        "common_errors": [
+          "Says the particles get bigger.",
+          "Thinks heating adds more particles."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains thermal expansion using the particle model and links temperature to average kinetic energy of particles.",
+        "example_task": "Explain why a metal bridge has expansion joints.",
+        "example_response": "When the metal heats up in summer, the particles vibrate more and move slightly further apart, causing the bridge to expand. Expansion joints provide gaps that allow the bridge to expand without cracking or buckling.",
+        "common_errors": [
+          "Says the particles themselves expand.",
+          "Does not mention the spacing between particles increasing."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains how temperature affects changes of state, gas pressure, and diffusion rate using the particle model.",
+        "example_task": "Explain why the pressure inside a sealed container of gas increases when heated.",
+        "example_response": "Heating gives the gas particles more kinetic energy, so they move faster. They hit the container walls more frequently and with greater force. Since the volume is fixed (sealed container), these more forceful and frequent collisions produce a higher pressure.",
+        "common_errors": [
+          "Says the particles expand and take up more space.",
+          "Does not link kinetic energy to collision frequency and force."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Distinguishes between temperature and heat, explains the concept of absolute zero, and analyses why temperature remains constant during changes of state despite continued heating.",
+        "example_task": "Explain the difference between temperature and heat, and describe what happens to the temperature of water as it is heated steadily from 20 degrees C to steam at 100 degrees C.",
+        "example_response": "Temperature measures the average kinetic energy of particles; heat is the total energy transferred from a hotter to a cooler body. As water is heated from 20 to 100 degrees C, the temperature rises steadily because the kinetic energy of water molecules increases. At 100 degrees C, the temperature stops rising even though heating continues; the energy is used to break intermolecular bonds (overcoming potential energy barriers) rather than increasing kinetic energy. Once all the water has become steam, the temperature rises again.",
+        "common_errors": [
+          "Says temperature and heat are the same thing.",
+          "Cannot explain the constant temperature during boiling."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C166",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that all materials store energy internally and that this is related to the energy of their particles.",
+        "example_task": "What is internal energy?",
+        "example_response": "Internal energy is the total energy stored by the particles in a material, including their kinetic energy (movement) and potential energy (due to forces between them).",
+        "common_errors": [
+          "Says internal energy is the same as temperature.",
+          "Only mentions kinetic energy and forgets potential energy."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains that heating increases the internal energy of a substance and distinguishes the kinetic and potential energy components.",
+        "example_task": "When you heat a solid, its internal energy increases. Explain what happens to the kinetic and potential energy of the particles.",
+        "example_response": "The kinetic energy of the particles increases because they vibrate faster (shown by a rise in temperature). If the solid is near its melting point, the potential energy also increases as particles begin to overcome intermolecular forces and move apart.",
+        "common_errors": [
+          "Says only kinetic energy changes.",
+          "Does not link potential energy changes to changes of state."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains why a large body at a low temperature can have more internal energy than a small body at a high temperature, and links internal energy to changes of state.",
+        "example_task": "A swimming pool at 25 degrees C has more internal energy than a cup of tea at 80 degrees C. Explain why.",
+        "example_response": "Internal energy is the total energy of all particles. The swimming pool has vastly more particles than the cup of tea, even though each particle has less kinetic energy (lower temperature). The total internal energy (summed over all particles) is therefore greater for the pool.",
+        "common_errors": [
+          "Says the pool must be hotter because it has more energy.",
+          "Confuses temperature (average kinetic energy per particle) with internal energy (total energy of all particles)."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies the concept of internal energy to explain specific heat capacity and latent heat qualitatively, and analyses energy transfers during heating and changes of state.",
+        "example_task": "Explain why it takes longer to boil away a full kettle of water once it reaches 100 degrees C than it takes to heat the water from 20 to 100 degrees C, even though the heating rate is the same.",
+        "example_response": "Heating from 20 to 100 degrees C increases the kinetic energy of the water molecules (temperature rises 80 degrees). Boiling at 100 degrees C requires energy to break the intermolecular bonds between all the water molecules (converting liquid to gas). This potential energy increase is the latent heat of vaporisation, which is very large for water. Temperature does not change during boiling, but a lot of energy is needed to overcome the intermolecular forces, so the process takes longer despite the same heating rate.",
+        "common_errors": [
+          "Says boiling is quick because the water is already hot.",
+          "Does not distinguish between energy that raises temperature and energy that breaks bonds."
+        ]
+      }
+    ]
+  }
+]

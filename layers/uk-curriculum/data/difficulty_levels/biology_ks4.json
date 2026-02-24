@@ -1,0 +1,884 @@
+[
+  {
+    "concept_id": "BI-KS4-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can name the main parts of animal and plant cells but confuses which structures are present in prokaryotic versus eukaryotic cells, and struggles with scale and microscopy calculations.",
+        "example_task": "Name three differences between a bacterial cell and an animal cell.",
+        "example_response": "1) Bacterial cells have no nucleus — their DNA is a single loop in the cytoplasm. 2) Bacterial cells have no mitochondria. 3) Bacterial cells may have plasmids (small rings of extra DNA) which animal cells do not have.",
+        "common_errors": [
+          "Stating that bacterial cells have no DNA rather than correctly saying they have no membrane-bound nucleus",
+          "Claiming all plant cells have chloroplasts, forgetting that root cells do not"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can accurately describe the key structural differences between eukaryotic and prokaryotic cells and explain the function of each organelle, but struggles to apply this knowledge to microscopy calculations or unfamiliar contexts.",
+        "example_task": "A cell is viewed under a microscope at x400 magnification. The image of the cell is 2 mm across. Calculate the actual size of the cell in micrometres.",
+        "example_response": "Actual size = image size / magnification = 2 mm / 400 = 0.005 mm. Converting to micrometres: 0.005 x 1000 = 5 µm. This is consistent with a prokaryotic cell, as eukaryotic cells are typically 10-100 µm.",
+        "common_errors": [
+          "Forgetting to convert between mm and µm in magnification calculations",
+          "Confusing magnification with resolution — magnification makes things bigger, resolution makes them clearer"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the structural and functional differences between eukaryotic and prokaryotic cells with accuracy, performs magnification calculations confidently, and applies knowledge to interpret electron micrographs of unfamiliar cells.",
+        "example_task": "An electron micrograph shows a cell with a nucleus, mitochondria and a cell wall but no chloroplasts. What type of organism could this cell belong to? Explain your reasoning.",
+        "example_response": "This is a eukaryotic cell because it has a membrane-bound nucleus and mitochondria. The cell wall means it is not an animal cell. The absence of chloroplasts suggests it is either a fungal cell (fungi have cell walls made of chitin) or a plant cell from a non-photosynthetic part of the plant such as a root cell. It cannot be a bacterial cell because bacteria lack a nucleus and mitochondria.",
+        "common_errors": [
+          "Assuming any cell with a cell wall must be a plant cell, forgetting that fungi and bacteria also have cell walls",
+          "Not considering that plant cells in non-green tissues lack chloroplasts"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates how the structural differences between prokaryotic and eukaryotic cells relate to their evolutionary origins (endosymbiosis), applies subcellular knowledge to novel contexts, and critically assesses the limitations of different microscopy techniques.",
+        "example_task": "Explain why many biologists believe mitochondria and chloroplasts were once free-living prokaryotes. What evidence supports this endosymbiotic theory?",
+        "example_response": "Mitochondria and chloroplasts have several prokaryotic features: they have their own circular DNA (like bacteria), their own ribosomes (70S, the same size as bacterial ribosomes, not the 80S ribosomes in the eukaryotic cytoplasm), and they reproduce by binary fission independently of the cell cycle. They are approximately the same size as bacteria and have double membranes, consistent with engulfment by a host cell. Phylogenetic analysis of mitochondrial DNA shows it is more closely related to alpha-proteobacteria than to the nuclear DNA of the host cell. This strongly supports Lynn Margulis's endosymbiotic theory that eukaryotic cells evolved from a symbiotic relationship between ancestral prokaryotes.",
+        "common_errors": [
+          "Stating the theory without providing specific structural or genetic evidence to support it",
+          "Confusing endosymbiosis (a symbiotic relationship that became permanent) with parasitism"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can name some specialised cells and describe what they look like, but struggles to explain how specific structural features relate to the cell's function.",
+        "example_task": "Name two specialised animal cells and describe one feature of each that helps it do its job.",
+        "example_response": "Red blood cells are shaped like a disc with a dip in the middle, which gives them a large surface area to absorb oxygen. Sperm cells have a tail (flagellum) which helps them swim towards the egg.",
+        "common_errors": [
+          "Describing the shape of a specialised cell without connecting it to function",
+          "Confusing the functions of different white blood cells with red blood cells"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can explain how multiple structural adaptations of specialised cells relate to their function, and understands that differentiation involves changes in gene expression rather than loss of genes.",
+        "example_task": "Explain three ways in which a root hair cell is adapted for its function of absorbing water and mineral ions.",
+        "example_response": "1) The long hair-like extension increases the surface area in contact with soil water, increasing the rate of osmosis. 2) The thin cell wall allows water to pass through quickly. 3) The large permanent vacuole maintains a low water potential inside the cell, keeping a concentration gradient that drives osmosis inward.",
+        "common_errors": [
+          "Saying the root hair cell has 'lots of mitochondria for energy' without specifying that the energy is needed for active transport of mineral ions",
+          "Stating that cells lose genes during differentiation rather than correctly explaining that genes are switched on or off"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains differentiation as a process of selective gene expression, compares differentiation in animals and plants, and evaluates the therapeutic potential and ethical issues of stem cell use.",
+        "example_task": "Explain why a skin cell and a nerve cell contain the same DNA but look and function completely differently. Why can plant cells differentiate throughout life but most animal cells cannot?",
+        "example_response": "Both cells contain the same complete genome, but different genes are expressed in each cell type. In a skin cell, genes for keratin production are active while nerve-specific genes are switched off. In a nerve cell, genes for neurotransmitter production and axon growth are active while keratin genes are silenced. This selective gene expression is controlled by transcription factors. In plants, many cells retain the ability to differentiate because they can reverse their specialisation (totipotency) — this is why you can grow a whole plant from a cutting. Most animal cells lose this ability early in development, becoming permanently specialised, which is why stem cells are so valuable for medical research.",
+        "common_errors": [
+          "Saying different cells have 'different DNA' instead of correctly explaining they have the same DNA but different genes expressed",
+          "Not distinguishing between totipotent, pluripotent and multipotent stem cells"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically evaluates the medical applications of stem cell therapy, articulates the scientific and ethical arguments, and applies understanding of differentiation to novel research contexts such as induced pluripotent stem cells.",
+        "example_task": "Evaluate the arguments for and against using embryonic stem cells to treat spinal cord injuries. Include both scientific and ethical perspectives.",
+        "example_response": "Embryonic stem cells are pluripotent, meaning they can differentiate into any cell type including motor neurons. For spinal cord injury, this offers the potential to replace damaged neurons and restore function — something adult stem cells from bone marrow cannot do as effectively because they are multipotent (limited to blood cell types). However, obtaining embryonic stem cells requires the destruction of an embryo at the blastocyst stage, which some people consider morally equivalent to ending a life. The counter-argument is that at this stage the embryo has no nervous system and therefore no capacity for suffering, and that the therapeutic benefit to patients who are paralysed outweighs this concern. A compromise may be induced pluripotent stem cells (iPSCs), created by reprogramming adult cells to an embryonic-like state, which avoids embryo destruction but carries risks of tumour formation.",
+        "common_errors": [
+          "Presenting only one side of the ethical argument without acknowledging the other",
+          "Confusing embryonic stem cells (from blastocysts) with adult stem cells (from bone marrow or other tissues)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that cells divide to produce new cells for growth, but confuses mitosis with meiosis and cannot accurately describe the stages of the cell cycle.",
+        "example_task": "What is the purpose of mitosis? How many daughter cells are produced, and are they identical to the parent cell?",
+        "example_response": "Mitosis is cell division for growth and repair. It produces two daughter cells that are genetically identical to the parent cell.",
+        "common_errors": [
+          "Saying mitosis produces four cells (confusing it with meiosis)",
+          "Forgetting that DNA replication occurs during interphase before mitosis begins"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can describe the cell cycle including interphase, mitosis and cytokinesis, and distinguishes mitosis from meiosis, but makes errors when describing the stages of mitosis in detail.",
+        "example_task": "Describe what happens during each phase of the cell cycle: interphase, mitosis and cytokinesis.",
+        "example_response": "During interphase, the cell grows, carries out normal functions, and replicates its DNA so each chromosome consists of two identical chromatids joined at the centromere. During mitosis, the chromosomes line up along the middle of the cell, spindle fibres pull the chromatids apart to opposite poles, and two new nuclei form. During cytokinesis, the cytoplasm divides to produce two genetically identical daughter cells.",
+        "common_errors": [
+          "Describing DNA replication as happening during mitosis rather than during interphase",
+          "Not mentioning that chromosomes condense and become visible during prophase"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Accurately describes all stages of mitosis (prophase, metaphase, anaphase, telophase), explains the significance of the cell cycle for organisms, and connects uncontrolled cell division to cancer.",
+        "example_task": "A student observes onion root tip cells under a microscope and sees cells at different stages of mitosis. Explain why most cells appear to be in interphase rather than actively dividing.",
+        "example_response": "Interphase is the longest phase of the cell cycle, typically lasting 90% or more of the total cycle time. During interphase, the cell must grow to full size, replicate all its DNA (which involves copying approximately 6 billion base pairs in a human cell), synthesise the proteins needed for division, and replicate its organelles. Mitosis itself takes only a small fraction of the total cycle time. Therefore, at any given moment when the root tip is fixed and stained, the majority of cells will be caught in interphase rather than in the brief stages of active division.",
+        "common_errors": [
+          "Stating that cells in interphase are 'resting' — interphase is metabolically active, involving DNA replication and protein synthesis",
+          "Not linking the observation to the relative duration of each phase"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses data from cell biology experiments, evaluates the role of checkpoints in the cell cycle, and explains how disruption of cell cycle control leads to cancer at a molecular level.",
+        "example_task": "Explain how mutations in tumour suppressor genes and proto-oncogenes can lead to uncontrolled cell division and cancer. Why is cancer often described as a multi-step process?",
+        "example_response": "The cell cycle is regulated by checkpoints controlled by proteins coded for by specific genes. Tumour suppressor genes (e.g., p53) produce proteins that halt the cell cycle if DNA is damaged, allowing repair or triggering apoptosis. If these genes are mutated and lose function, damaged cells continue dividing. Proto-oncogenes code for proteins that stimulate cell division; if mutated into oncogenes, they become permanently active, driving uncontrolled growth. Cancer typically requires multiple mutations in both tumour suppressors and oncogenes (the multi-hit hypothesis), which explains why cancer risk increases with age — more time means more accumulated mutations. This also explains why inherited mutations in tumour suppressor genes (e.g., BRCA1) increase cancer risk: one hit is already present at birth, reducing the number of additional mutations needed.",
+        "common_errors": [
+          "Describing cancer as caused by a single gene mutation rather than explaining the multi-hit model",
+          "Confusing tumour suppressor genes (which inhibit cell division) with oncogenes (which promote it)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can define diffusion as particles moving from high to low concentration, but confuses diffusion, osmosis and active transport and cannot explain the factors that affect rates of transport.",
+        "example_task": "What is the difference between diffusion and active transport?",
+        "example_response": "Diffusion is the movement of particles from an area of high concentration to an area of low concentration. Active transport moves particles from low to high concentration and needs energy from respiration.",
+        "common_errors": [
+          "Describing osmosis as 'the movement of water from high to low concentration' without mentioning the partially permeable membrane",
+          "Saying diffusion requires energy"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Correctly defines and distinguishes diffusion, osmosis and active transport, and can describe the factors affecting rate of diffusion, but struggles with quantitative osmosis investigations and surface area calculations.",
+        "example_task": "In a Required Practical, potato cylinders are placed in salt solutions of different concentrations. Explain what will happen to a potato cylinder placed in a very concentrated salt solution.",
+        "example_response": "The salt solution has a lower water potential than the potato cells. Water will move out of the potato cells by osmosis through the partially permeable cell membrane, from the higher water potential inside the cell to the lower water potential in the solution. The potato cylinder will lose mass and become flaccid (soft and bendy).",
+        "common_errors": [
+          "Describing water moving from 'high concentration of water' to 'low concentration of water' rather than using the correct terminology of water potential",
+          "Forgetting to mention that osmosis specifically requires a partially permeable membrane"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses osmosis experimental data, calculates percentage change in mass, identifies the isotonic point, and explains how surface area to volume ratio affects transport efficiency in biological systems.",
+        "example_task": "A student's osmosis results show: 0.0M: +18%, 0.2M: +8%, 0.4M: -2%, 0.6M: -12%, 0.8M: -20%. Plot these results, identify the isotonic concentration, and explain its significance.",
+        "example_response": "The isotonic point is approximately 0.35M (where the line of best fit crosses the x-axis at 0% change in mass). At this concentration, the water potential inside the potato cells equals the water potential of the solution, so there is no net movement of water by osmosis. Below 0.35M, the solution is hypotonic (lower solute concentration than the cells), so water enters by osmosis and mass increases. Above 0.35M, the solution is hypertonic, so water leaves and mass decreases. The relationship is approximately linear within this range.",
+        "common_errors": [
+          "Reading the isotonic point from the nearest data point rather than interpolating from the line of best fit",
+          "Not calculating percentage change in mass (using original mass as denominator) and instead using absolute mass change"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies transport mechanisms to explain exchange surfaces in organisms (lungs, villi, root hairs), evaluates experimental design for osmosis investigations, and connects surface area to volume ratio to organism size limitations.",
+        "example_task": "Explain why single-celled organisms like Amoeba do not need a specialised gas exchange system, but multicellular organisms like humans do. Use the concept of surface area to volume ratio in your answer.",
+        "example_response": "Amoeba has a very high surface area to volume ratio because it is small. Its entire cell surface membrane provides sufficient area for oxygen to diffuse in and carbon dioxide to diffuse out at a rate that meets its metabolic needs. As organisms increase in size, volume increases faster than surface area (volume scales with the cube of length, surface area with the square). A human has a much lower SA:V ratio, so diffusion across the body surface alone would be far too slow. Humans therefore evolved specialised exchange surfaces — the alveoli in the lungs have a combined surface area of approximately 70 m², just 1-2 cells thick, with a rich blood supply to maintain a steep concentration gradient. These features (large surface area, thin barrier, good blood supply, ventilation) maximise the rate of diffusion according to Fick's law.",
+        "common_errors": [
+          "Stating that large organisms need exchange surfaces 'because they are bigger' without explaining the mathematical relationship between SA and V",
+          "Not connecting the features of exchange surfaces (thin walls, blood supply, ventilation) to maintaining a concentration gradient"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that enzymes break down food in digestion and that they work faster at higher temperatures up to a point, but cannot explain enzyme specificity or the lock-and-key model.",
+        "example_task": "What happens to an enzyme if it is heated to a very high temperature? Why?",
+        "example_response": "The enzyme stops working because the heat denatures it. The active site changes shape permanently so the substrate cannot fit into it anymore.",
+        "common_errors": [
+          "Saying the enzyme is 'killed' or 'destroyed' by heat rather than 'denatured'",
+          "Stating that the substrate changes shape rather than the active site of the enzyme"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can explain enzyme specificity using the lock-and-key model, names the main digestive enzymes and their substrates and products, and understands the concept of optimum temperature and pH.",
+        "example_task": "Name the enzyme that digests starch, where it is produced, and what it breaks starch down into. What is the optimum pH for this enzyme?",
+        "example_response": "Amylase digests starch into maltose (a sugar). It is produced in the salivary glands and the pancreas. Amylase works best at pH 7 (neutral), which is the pH of the mouth and the small intestine.",
+        "common_errors": [
+          "Saying amylase breaks starch into glucose (it breaks starch into maltose; maltase then breaks maltose into glucose)",
+          "Confusing the optimum pH of amylase (neutral, ~pH 7) with that of pepsin (acidic, ~pH 2)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the complete digestive process including the roles of bile, the specific sites of enzyme production and action, and can design and interpret enzyme activity experiments.",
+        "example_task": "In a Required Practical, you investigate the effect of pH on amylase activity. Describe the method and explain what results you would expect.",
+        "example_response": "Place equal volumes of starch solution in test tubes at different pH values (using buffer solutions at pH 2, 4, 6, 7, 8, 10). Add equal volumes of amylase to each tube at the same time. At regular intervals, take a drop from each tube and test with iodine solution on a spotting tile. When starch is present, iodine turns blue-black; when all starch has been digested, it remains yellow-brown. Record the time for the iodine to stop turning blue-black at each pH. I would expect the fastest digestion at pH 7 (the optimum for amylase) and progressively slower digestion at pH values further from the optimum. At very low or very high pH, the enzyme would be denatured and no digestion would occur.",
+        "common_errors": [
+          "Not controlling temperature as a variable (all tubes should be in the same water bath)",
+          "Testing the amylase solution with iodine instead of testing the starch solution"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the induced fit model as a refinement of lock-and-key, explains enzyme inhibition, and applies enzyme kinetics to interpret rate curves and explain clinical contexts such as lactose intolerance.",
+        "example_task": "Explain the difference between the lock-and-key model and the induced fit model of enzyme action. Why is the induced fit model considered a better explanation?",
+        "example_response": "The lock-and-key model proposes that the substrate fits perfectly into the enzyme's active site like a key into a lock, with no change in enzyme shape. The induced fit model proposes that the active site is not a perfect fit initially but changes shape slightly when the substrate binds, moulding around it to form a more precise fit. Induced fit is a better model because: 1) it explains why some enzymes can act on multiple similar substrates (the active site can adjust); 2) it explains how the enzyme can put strain on chemical bonds in the substrate, lowering the activation energy; 3) experimental X-ray crystallography data shows that enzyme shape does change upon substrate binding. However, both models are simplifications — real enzyme-substrate interactions involve complex dynamic conformational changes.",
+        "common_errors": [
+          "Describing induced fit as if the active site completely changes shape to fit any substrate — it is a subtle adjustment, not a wholesale redesign",
+          "Not explaining how the shape change in induced fit contributes to catalysis (by straining bonds)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can name the heart as an organ that pumps blood, and knows blood carries oxygen, but confuses the chambers, vessels and the direction of blood flow.",
+        "example_task": "Which side of the heart pumps blood to the lungs, and which pumps blood to the body?",
+        "example_response": "The right side pumps blood to the lungs. The left side pumps blood to the rest of the body.",
+        "common_errors": [
+          "Confusing left and right sides of the heart (diagrams show the heart as if looking at the patient, so left appears on the right)",
+          "Thinking that arteries always carry oxygenated blood (the pulmonary artery carries deoxygenated blood)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can label the chambers, valves and major vessels of the heart, explain the double circulatory system, and distinguish between arteries, veins and capillaries.",
+        "example_task": "Explain why the left ventricle wall is thicker than the right ventricle wall.",
+        "example_response": "The left ventricle pumps blood to the entire body through the aorta (systemic circulation), which requires much higher pressure to push blood through the extensive network of blood vessels. The right ventricle only pumps blood to the nearby lungs (pulmonary circulation), which requires lower pressure. Higher pressure requires a more muscular (thicker) wall to generate the force needed.",
+        "common_errors": [
+          "Saying the left ventricle is thicker because 'it has more blood' rather than because it needs to generate more pressure",
+          "Confusing the aorta (from left ventricle to body) with the vena cava (from body to right atrium)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the complete pathway of blood through the double circulatory system, relates vessel structure to function, and explains how cardiovascular disease develops and is treated.",
+        "example_task": "Explain how fatty deposits in the coronary arteries can lead to a heart attack. Describe two possible treatments.",
+        "example_response": "Fatty deposits (atheroma) build up in the walls of the coronary arteries, narrowing the lumen and reducing blood flow to the heart muscle. This may form a blood clot (thrombosis) that completely blocks the artery. The heart muscle downstream of the blockage is deprived of oxygen and glucose, so it cannot respire and the cells begin to die — this is a heart attack (myocardial infarction). Treatments include: 1) Stents — a wire mesh tube inserted into the coronary artery to hold it open and restore blood flow; 2) Statins — drugs that reduce blood cholesterol levels, slowing the build-up of fatty deposits. Stents treat the immediate blockage while statins address the underlying cause.",
+        "common_errors": [
+          "Describing the blockage as occurring in 'the heart' rather than specifically in the coronary arteries",
+          "Confusing stents (physical devices that hold arteries open) with statins (drugs that lower cholesterol)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the effectiveness and limitations of cardiovascular treatments, analyses blood composition data, and applies understanding of the circulatory system to explain clinical scenarios.",
+        "example_task": "A patient has a resting heart rate of 95 bpm, blood pressure of 160/100 mmHg, and blood cholesterol of 7.2 mmol/L. Evaluate their cardiovascular risk and recommend interventions, explaining the physiological basis for each.",
+        "example_response": "All three indicators suggest elevated cardiovascular risk. A resting heart rate above 80 bpm indicates the heart is working harder than normal to circulate blood, potentially due to reduced stroke volume or increased vascular resistance. Blood pressure of 160/100 is classified as stage 2 hypertension (normal is approximately 120/80), meaning the heart is exerting excessive force against arterial walls, increasing the risk of atherosclerosis and stroke. Cholesterol of 7.2 is above the recommended 5.0, increasing the rate of fatty deposit formation. Interventions should include: lifestyle changes (increased exercise to strengthen the heart muscle, reduce weight and lower resting heart rate); dietary modification (reduce saturated fat intake); and likely statin medication to reduce cholesterol. The patient's blood pressure may require antihypertensive medication (e.g., ACE inhibitors to reduce vasoconstriction). These are complementary — medication manages immediate risk while lifestyle changes address underlying causes.",
+        "common_errors": [
+          "Recommending treatments without explaining the physiological mechanism by which they work",
+          "Interpreting blood pressure values without explaining what systolic and diastolic numbers represent"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that plants need water and that water travels up the stem, but cannot explain the mechanism of transpiration or distinguish xylem from phloem.",
+        "example_task": "What are the two main transport tissues in plants, and what does each transport?",
+        "example_response": "Xylem transports water and mineral ions from the roots to the leaves. Phloem transports dissolved sugars (from photosynthesis) from the leaves to the rest of the plant.",
+        "common_errors": [
+          "Confusing xylem (water, upward) with phloem (sugars, both directions)",
+          "Saying phloem transports 'food' rather than specifying dissolved sugars"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can explain transpiration as the evaporation and diffusion of water from leaves, describe the transpiration stream, and name the factors that affect transpiration rate.",
+        "example_task": "Explain how water moves from the soil into a root hair cell and then up to the leaves.",
+        "example_response": "Water enters the root hair cell by osmosis because the soil water has a higher water potential than the cell sap. Water then moves from cell to cell by osmosis across the root cortex. It enters the xylem vessels, which are dead, hollow tubes with no end walls and lignified walls. Water is pulled up through the xylem by the transpiration stream: water evaporates from the spongy mesophyll cells inside the leaf and diffuses out through the stomata, creating a pulling force that draws water up from the roots.",
+        "common_errors": [
+          "Describing the movement of water up the xylem as 'pumping' rather than as a passive pull driven by evaporation",
+          "Forgetting to mention that xylem vessels are dead and hollow — these structural features explain how they function as pipes"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the mechanism and factors affecting transpiration quantitatively, interprets potometer data, and compares the structure and function of xylem and phloem in detail.",
+        "example_task": "A student uses a potometer to investigate the effect of wind speed on transpiration rate. Describe the method and explain the expected results.",
+        "example_response": "Set up the potometer by cutting a leafy shoot underwater to prevent air entering the xylem. Seal it into the potometer and allow it to equilibrate. Record the distance the air bubble moves along the capillary tube in a set time (e.g., 5 minutes) under still conditions. Then use a fan to simulate wind at increasing speeds and repeat measurements. Expected results: increasing wind speed increases transpiration rate because wind removes humid air from around the stomata, maintaining a steep diffusion gradient for water vapour between the leaf interior and the atmosphere. The bubble will move further in the same time as wind speed increases. However, at very high wind speeds, stomata may begin to close to prevent excessive water loss, which would limit further increases.",
+        "common_errors": [
+          "Measuring water uptake with a potometer but describing the measurement as 'transpiration rate' without acknowledging that some absorbed water is used for photosynthesis",
+          "Not explaining why the shoot must be cut underwater (to prevent air locks in the xylem)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the adaptations of xerophytes and hydrophytes in terms of transpiration control, analyses translocation through phloem using evidence from aphid experiments and radioactive tracers, and connects plant transport to agricultural applications.",
+        "example_task": "Explain how the structure of phloem enables translocation, and describe the evidence from aphid experiments that phloem carries dissolved sugars.",
+        "example_response": "Phloem consists of sieve tube elements and companion cells. Sieve tubes are living cells with perforated end walls (sieve plates) that allow the flow of sap containing dissolved sugars. Companion cells have many mitochondria and provide the ATP needed for active loading of sucrose into sieve tubes. The evidence from aphid experiments: when aphids feed on plant stems, their stylets (mouthparts) penetrate individual phloem sieve tubes. If the aphid is anaesthetised and its body removed while the stylet remains in the sieve tube, sap continues to exude from the stylet. Chemical analysis of this sap shows it is rich in sucrose, confirming that phloem carries dissolved sugars. Radioactive tracer experiments using 14C-labelled CO2 provide further evidence: leaves exposed to 14CO2 incorporate the radioactive carbon into sugars via photosynthesis, and autoradiography shows the 14C subsequently appearing in the phloem, not the xylem.",
+        "common_errors": [
+          "Confusing phloem sieve plates (perforated end walls allowing sap flow) with xylem being described as having 'no end walls'",
+          "Not distinguishing between the passive transpiration stream in xylem and the energy-requiring translocation in phloem"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that germs cause disease and that there are different types, but confuses viruses and bacteria and does not know specific examples of pathogens and the diseases they cause.",
+        "example_task": "Name one disease caused by a virus and one caused by a bacterium.",
+        "example_response": "Influenza (flu) is caused by a virus. Tuberculosis (TB) is caused by a bacterium.",
+        "common_errors": [
+          "Thinking antibiotics can treat viral infections",
+          "Confusing the terms 'bacteria' and 'virus' or using them interchangeably"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can name examples of viral, bacterial, fungal and protist diseases, describe their transmission routes, and explain basic body defence mechanisms.",
+        "example_task": "Describe how malaria is transmitted and explain why it is difficult to control in tropical countries.",
+        "example_response": "Malaria is caused by a protist called Plasmodium, which is transmitted by the bite of infected female Anopheles mosquitoes (the vector). When the mosquito bites, it injects Plasmodium into the blood. It is difficult to control because: the mosquitoes breed in standing water which is abundant in tropical regions; insecticide resistance is developing in mosquito populations; and the Plasmodium parasite has a complex life cycle that makes vaccine development challenging.",
+        "common_errors": [
+          "Saying malaria is caused by mosquitoes rather than by the Plasmodium protist (mosquitoes are the vector, not the pathogen)",
+          "Describing malaria as a bacterial or viral disease"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains how each type of pathogen causes disease mechanistically, compares transmission routes, and evaluates prevention strategies including hygiene measures and public health interventions.",
+        "example_task": "Compare how viruses and bacteria cause disease at the cellular level.",
+        "example_response": "Viruses are not cells and cannot reproduce independently. They invade host cells and use the cell's machinery to make copies of themselves. The host cell is typically destroyed when new virus particles burst out (lysis), which causes tissue damage and symptoms. Bacteria are living cells that reproduce rapidly by binary fission outside host cells. They cause disease primarily by producing toxins that damage tissues and trigger immune responses. For example, Salmonella bacteria produce toxins that cause inflammation of the gut lining, leading to diarrhoea and vomiting. This mechanistic difference explains why antibiotics work against bacteria (they target bacterial cell structures like cell walls or ribosomes) but not against viruses (which use host cell machinery that antibiotics cannot target without harming the patient).",
+        "common_errors": [
+          "Saying viruses 'attack' cells without explaining the mechanism of invasion, replication and lysis",
+          "Not linking the mechanism of disease to why different treatments are needed"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the global challenge of antibiotic resistance, analyses epidemiological data on disease transmission, and assesses the scientific evidence for public health interventions including drug development and clinical trials.",
+        "example_task": "Explain why antibiotic resistance is considered one of the greatest threats to global health. What role does natural selection play?",
+        "example_response": "Antibiotic resistance occurs through natural selection. Within any bacterial population, random mutations may produce individuals with resistance to a particular antibiotic. When the antibiotic is used, susceptible bacteria are killed but resistant individuals survive and reproduce, passing the resistance allele to offspring. Over time, the proportion of resistant bacteria in the population increases. This is accelerated by overuse and misuse of antibiotics (incomplete courses, use in agriculture). The result is that infections become untreatable with existing antibiotics — MRSA, for example, is resistant to methicillin and other common antibiotics. The WHO estimates that by 2050, antibiotic-resistant infections could cause 10 million deaths annually. Solutions require both scientific approaches (developing new antibiotics, using bacteriophages, developing rapid diagnostic tests) and behavioural changes (prescribing antibiotics only when necessary, completing full courses, reducing agricultural antibiotic use).",
+        "common_errors": [
+          "Saying antibiotics 'cause' resistance rather than correctly explaining that antibiotics select for pre-existing resistant variants",
+          "Describing resistance as if individual bacteria 'learn' to resist antibiotics rather than explaining population-level natural selection"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that the body fights disease and that vaccinations help prevent illness, but cannot explain the specific immune response or how vaccination works at a cellular level.",
+        "example_task": "How does a vaccination stop you getting ill?",
+        "example_response": "A vaccination puts a small amount of dead or weakened pathogen into your body. Your immune system makes antibodies to fight it. If you encounter the real pathogen later, your body can fight it off quickly.",
+        "common_errors": [
+          "Saying vaccines contain the 'actual disease' rather than dead/weakened pathogens or antigens",
+          "Not distinguishing between the primary and secondary immune response"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can describe the non-specific and specific immune responses, explain the role of white blood cells, and outline how vaccination produces immunity through memory cells.",
+        "example_task": "Describe the three ways white blood cells protect the body from pathogens.",
+        "example_response": "1) Phagocytosis: phagocytes engulf and digest pathogens. 2) Antibody production: lymphocytes detect antigens on the pathogen surface and produce specific antibodies that lock onto and neutralise them. 3) Antitoxin production: some white blood cells produce antitoxins that neutralise the toxins released by bacteria.",
+        "common_errors": [
+          "Confusing antigens (molecules on the pathogen surface) with antibodies (proteins produced by lymphocytes)",
+          "Describing phagocytes as 'eating' pathogens without mentioning engulfment and digestion"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the primary and secondary immune response with reference to memory cells, interprets antibody response graphs, and evaluates the benefits and risks of vaccination programmes.",
+        "example_task": "Draw and explain a graph showing the antibody concentration in the blood after a first infection and then a second infection with the same pathogen.",
+        "example_response": "After the first infection, there is a delay of several days before antibody levels rise (the primary response) as lymphocytes recognise the antigen, clone, and produce antibodies. The response is slow because only a few lymphocytes have the correct receptor. Levels peak then decline as the pathogen is cleared. After the second infection, antibody levels rise much faster, reach a much higher peak, and are sustained for longer (the secondary response). This is because memory cells produced during the first infection are already present in the blood and lymph. They recognise the antigen immediately, divide rapidly and produce large quantities of antibodies before the pathogen can cause symptoms.",
+        "common_errors": [
+          "Drawing the second response with the same height and speed as the first, rather than showing it is faster and higher",
+          "Not explaining that memory cells are the mechanism for the faster secondary response"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the science behind herd immunity thresholds, analyses arguments in vaccination debates using evidence, and explains advanced concepts such as monoclonal antibodies and their medical applications.",
+        "example_task": "Explain how monoclonal antibodies are produced and describe two medical applications. Evaluate why monoclonal antibody therapies are expensive.",
+        "example_response": "Monoclonal antibodies are produced by fusing a B lymphocyte (which produces a specific antibody) with a tumour cell (which divides indefinitely), creating a hybridoma. The hybridoma is cloned to produce large quantities of identical antibodies specific to one antigen. Applications: 1) Pregnancy tests — antibodies specific to HCG (a hormone produced during pregnancy) are bound to the test strip; if HCG is present in urine, it binds to the antibodies and produces a visible colour change. 2) Cancer treatment — antibodies specific to antigens on cancer cells can deliver cytotoxic drugs directly to tumour cells, minimising damage to healthy tissue (targeted therapy). Monoclonal antibody therapies are expensive because production requires specialised cell culture facilities, extensive quality control to ensure specificity and purity, and lengthy clinical trials. Each monoclonal antibody targets one specific antigen, so different antibodies must be developed for different diseases.",
+        "common_errors": [
+          "Confusing monoclonal antibodies (identical antibodies from cloned hybridoma cells) with polyclonal antibodies (mixture of antibodies from different B cells)",
+          "Describing the hybridoma technique without explaining why both the B cell and the tumour cell are needed"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that plants make food using light and can state the word equation for photosynthesis, but confuses photosynthesis with respiration and cannot explain limiting factors.",
+        "example_task": "Write the word equation for photosynthesis.",
+        "example_response": "Carbon dioxide + water → (light energy) → glucose + oxygen.",
+        "common_errors": [
+          "Writing 'oxygen + glucose → carbon dioxide + water' (this is respiration, not photosynthesis)",
+          "Forgetting to include light energy as a requirement"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can write and balance the symbol equation for photosynthesis, explain that it is endothermic, and name the three main limiting factors but struggles to interpret limiting factor graphs.",
+        "example_task": "Explain why increasing light intensity increases the rate of photosynthesis, but only up to a point.",
+        "example_response": "Increasing light intensity provides more energy for the light-dependent reactions of photosynthesis, so glucose is produced faster. However, beyond a certain point, the rate levels off because another factor becomes limiting — either the concentration of CO2 or the temperature. The plant cannot photosynthesise any faster because it is limited by the factor in shortest supply.",
+        "common_errors": [
+          "Saying the rate 'stops' at high light intensity rather than correctly saying it 'levels off' (photosynthesis continues, just not faster)",
+          "Not identifying which specific factor is likely to become limiting when light is no longer limiting"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Interprets and draws limiting factor graphs, designs investigations into factors affecting photosynthesis rate, and explains how glucose produced by photosynthesis is used by the plant.",
+        "example_task": "In a Required Practical, you investigate the effect of light intensity on the rate of photosynthesis using pondweed (Elodea). Describe how you would use the inverse square law to vary light intensity.",
+        "example_response": "Place the Elodea in a beaker of water with sodium hydrogen carbonate solution (to provide excess CO2 so it is not limiting). Position a lamp at measured distances from the beaker. Light intensity is proportional to 1/d², so doubling the distance reduces intensity to one quarter. At each distance, count the number of oxygen bubbles released per minute (or collect the gas in a graduated syringe for more accuracy). Repeat each measurement three times and calculate a mean. Keep temperature constant using a water bath or heat shield. Plot rate of photosynthesis against light intensity (calculated as 1/d²). Expected result: rate increases proportionally with light intensity at first, then levels off as another factor (temperature or CO2) becomes limiting.",
+        "common_errors": [
+          "Using distance from the lamp rather than 1/d² as the measure of light intensity",
+          "Not adding sodium hydrogen carbonate to ensure CO2 is not limiting"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex limiting factor data with multiple variables, evaluates the commercial applications of photosynthesis knowledge in greenhouses and agriculture, and explains the biochemistry of photosynthesis at an introductory level.",
+        "example_task": "A greenhouse grower wants to maximise tomato yield. Using your knowledge of photosynthesis, recommend the optimal environmental conditions and explain the scientific basis for each recommendation.",
+        "example_response": "1) CO2 enrichment: increase CO2 to approximately 0.1% (from atmospheric 0.04%) using gas burners. This increases the rate of carbon fixation in the Calvin cycle. Beyond 0.1%, the rate plateaus as RuBisCO is saturated. 2) Supplementary lighting: extend the photoperiod using artificial lighting to increase total daily photosynthesis. Use lights with wavelengths matching the absorption spectrum of chlorophyll (red and blue). 3) Temperature: maintain approximately 25-30°C. Below this, enzyme activity limits the rate; above this, enzymes begin to denature and stomata close to prevent water loss, reducing CO2 uptake. 4) Watering: ensure adequate water supply as water is a raw material for photosynthesis and is needed for turgor pressure to keep stomata open. The economic optimum is where the marginal cost of each enhancement (electricity for lighting, CO2 supply) equals the marginal revenue from increased yield.",
+        "common_errors": [
+          "Recommending 'maximum' temperature and light without explaining that beyond an optimum, higher values become counterproductive",
+          "Not considering the economic dimension — the scientifically optimal conditions may not be economically viable"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that respiration releases energy from food and can write the word equation for aerobic respiration, but confuses respiration with breathing.",
+        "example_task": "What is the difference between breathing and respiration?",
+        "example_response": "Breathing is the physical process of moving air in and out of the lungs. Respiration is a chemical process that happens inside every cell, where glucose is broken down to release energy (ATP) for life processes.",
+        "common_errors": [
+          "Using 'respiration' to mean 'breathing' rather than the cellular chemical process",
+          "Saying respiration 'produces' energy rather than 'releases' energy from glucose"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can write the equations for both aerobic and anaerobic respiration, distinguish their products, and explain when anaerobic respiration occurs, but struggles to explain oxygen debt or the link to exercise.",
+        "example_task": "Compare the products and energy yield of aerobic and anaerobic respiration in humans.",
+        "example_response": "Aerobic: glucose + oxygen → carbon dioxide + water. Releases a large amount of energy (approximately 38 ATP per glucose molecule). Anaerobic (in humans): glucose → lactic acid. Releases much less energy (approximately 2 ATP per glucose molecule). Anaerobic respiration occurs during intense exercise when the body cannot supply oxygen to muscles fast enough.",
+        "common_errors": [
+          "Confusing anaerobic respiration in humans (produces lactic acid) with anaerobic respiration in yeast (produces ethanol and CO2)",
+          "Saying anaerobic respiration produces 'no energy' rather than 'much less energy'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the relationship between exercise, oxygen demand and anaerobic respiration, describes oxygen debt and its repayment, and designs investigations into respiration rate.",
+        "example_task": "Explain why a sprinter continues to breathe heavily after finishing a 100m race.",
+        "example_response": "During the sprint, the muscles need energy faster than aerobic respiration can supply it, so anaerobic respiration also occurs, producing lactic acid. After the race, the sprinter has an oxygen debt — the extra oxygen that must be consumed to: 1) break down the accumulated lactic acid (some is oxidised to CO2 and water, some is converted back to glucose in the liver); 2) replenish the oxygen stored in myoglobin in the muscles; 3) replenish the ATP and creatine phosphate reserves used during the sprint. Heavy breathing continues after exercise to supply this extra oxygen until the debt is repaid.",
+        "common_errors": [
+          "Saying lactic acid is 'removed' without specifying that it is converted back to glucose in the liver or oxidised",
+          "Describing oxygen debt as simply 'needing to catch your breath' without explaining the biochemical basis"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Compares the biochemistry of aerobic and anaerobic pathways, evaluates the industrial applications of fermentation, and analyses experimental data on respiration rates under different conditions.",
+        "example_task": "A student investigates the rate of respiration in yeast at different temperatures by measuring CO2 production. At 30°C, 45 cm³ of CO2 was collected in 5 minutes. At 60°C, only 2 cm³ was collected. Explain these results.",
+        "example_response": "At 30°C, the enzymes involved in anaerobic respiration (including zymase) are working near their optimum temperature. Substrate molecules and enzyme active sites have sufficient kinetic energy for frequent successful collisions, producing CO2 at a high rate. At 60°C, the enzymes are denatured: the high temperature has disrupted the hydrogen bonds and other weak interactions that maintain the tertiary structure of the enzyme, permanently changing the shape of the active site so that the substrate can no longer bind effectively. The small amount of CO2 at 60°C may be from non-enzymatic chemical breakdown of glucose or from residual enzyme activity before denaturation was complete. This demonstrates that respiration is enzyme-controlled and therefore has an optimum temperature beyond which rate drops dramatically.",
+        "common_errors": [
+          "Saying the yeast 'died' at 60°C rather than explaining that the enzymes were denatured (some yeast cells may survive but the enzymes are non-functional)",
+          "Not explaining why denaturation is permanent (disruption of tertiary structure) rather than reversible"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that the brain and nerves control the body and that reflexes are fast automatic responses, but cannot draw or describe a reflex arc accurately.",
+        "example_task": "What are the three types of neuron in a reflex arc, and what does each do?",
+        "example_response": "Sensory neurons carry electrical impulses from receptors (e.g., in the skin) to the central nervous system. Relay neurons connect sensory and motor neurons within the spinal cord. Motor neurons carry impulses from the CNS to effectors (muscles or glands).",
+        "common_errors": [
+          "Forgetting the relay neuron in the reflex arc",
+          "Confusing effectors (muscles and glands that carry out a response) with receptors (which detect stimuli)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can draw and label a reflex arc diagram, explain why reflexes are faster than voluntary responses, and describe how synapses work using neurotransmitters.",
+        "example_task": "Draw a labelled diagram of the reflex arc for a person touching a hot plate and withdrawing their hand.",
+        "example_response": "Receptor (pain receptor in skin) → sensory neuron → synapse → relay neuron (in spinal cord) → synapse → motor neuron → effector (muscle in arm contracts, pulling hand away). The impulse does not travel to the brain for conscious processing, which is why it is faster than a voluntary response.",
+        "common_errors": [
+          "Drawing the reflex arc without including synapses between neurons",
+          "Showing the pathway going to the brain — reflexes are coordinated by the spinal cord, not the conscious brain"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains synaptic transmission in detail (including neurotransmitter release, diffusion and receptor binding), compares nervous and hormonal communication, and designs reaction time experiments.",
+        "example_task": "Compare nervous and hormonal communication in the body. Give one example of each.",
+        "example_response": "Nervous communication uses electrical impulses along neurons. It is fast (milliseconds), short-lived, and targets specific effectors via the neural pathway. Example: the reflex arc when touching something hot. Hormonal communication uses chemical messengers (hormones) transported in the blood. It is slower (seconds to minutes), longer-lasting, and affects target organs with specific receptors. Example: insulin released by the pancreas travels in the blood to the liver and muscle cells to reduce blood glucose. Both systems work together to coordinate body functions.",
+        "common_errors": [
+          "Describing hormones as 'slower' without explaining why (they travel in the blood rather than along dedicated neural pathways)",
+          "Not mentioning that hormones affect only target cells with specific receptors"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses how drugs affect synaptic transmission, evaluates the role of the brain in processing information, and applies understanding of the nervous system to clinical contexts such as anaesthesia and neurological conditions.",
+        "example_task": "Explain how some recreational drugs affect the nervous system at the synapse. Use a specific example.",
+        "example_response": "SSRI antidepressants (e.g., fluoxetine) block the reuptake of serotonin from the synaptic cleft. Normally, after serotonin binds to receptors on the post-synaptic membrane and triggers an impulse, it is reabsorbed by the pre-synaptic neuron (reuptake) and recycled. SSRIs block the transporter proteins that reabsorb serotonin, so it remains in the synaptic cleft for longer, continuing to stimulate the post-synaptic neuron. This increases serotonergic activity in the brain, which can alleviate symptoms of depression. Conversely, substances like curare (used in some anaesthetics) block acetylcholine receptors at the neuromuscular junction, preventing muscle contraction and causing paralysis. These examples show that drugs can either enhance or inhibit synaptic transmission by acting on different components of the synapse.",
+        "common_errors": [
+          "Describing drug effects vaguely ('it affects the brain') rather than explaining the specific mechanism at the synapse",
+          "Confusing agonists (which mimic or enhance neurotransmitter effects) with antagonists (which block them)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that insulin is involved in controlling blood sugar and that diabetes is related to blood sugar problems, but confuses the roles of insulin and glucagon and the two types of diabetes.",
+        "example_task": "What does insulin do in the body?",
+        "example_response": "When blood glucose is too high (e.g., after a meal), the pancreas releases insulin. Insulin causes cells to take up glucose from the blood and causes the liver to convert glucose to glycogen for storage, reducing blood glucose levels.",
+        "common_errors": [
+          "Saying insulin 'breaks down' glucose rather than correctly saying it promotes glucose uptake and glycogen synthesis",
+          "Confusing insulin (lowers blood glucose) with glucagon (raises blood glucose)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can explain the negative feedback loop involving insulin and glucagon, and can distinguish between type 1 and type 2 diabetes including their causes and treatments.",
+        "example_task": "Explain the difference between type 1 and type 2 diabetes.",
+        "example_response": "Type 1 diabetes is an autoimmune condition where the immune system destroys the beta cells of the pancreas, so no insulin is produced. It usually develops in childhood and is treated with insulin injections. Type 2 diabetes develops when body cells become resistant to insulin (they no longer respond to it) or when the pancreas does not produce enough insulin. It is linked to obesity and lifestyle factors and is treated with diet, exercise and sometimes medication.",
+        "common_errors": [
+          "Saying type 1 is caused by 'eating too much sugar' (it is autoimmune)",
+          "Confusing the treatments — type 1 requires insulin; type 2 is managed with lifestyle changes first"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Draws and explains the negative feedback loop for blood glucose regulation, interprets blood glucose data, and evaluates the risk factors for type 2 diabetes.",
+        "example_task": "Draw and explain the negative feedback loop that maintains blood glucose concentration at a set point.",
+        "example_response": "When blood glucose rises (e.g., after eating): the pancreas detects this → beta cells secrete insulin → insulin causes liver cells to convert glucose to glycogen (glycogenesis) and causes body cells to increase glucose uptake → blood glucose falls back to normal. When blood glucose falls (e.g., during exercise): the pancreas detects this → alpha cells secrete glucagon → glucagon causes liver cells to convert glycogen back to glucose (glycogenolysis) and release it into the blood → blood glucose rises back to normal. This is negative feedback because the response (insulin or glucagon) opposes the original change, returning the system to the set point.",
+        "common_errors": [
+          "Describing the feedback loop without using the term 'negative feedback' or explaining why it is called that",
+          "Confusing glycogen (the storage molecule) with glucagon (the hormone)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses clinical blood glucose data to diagnose diabetes type, evaluates the public health challenge of type 2 diabetes, and explains the molecular mechanisms of insulin resistance.",
+        "example_task": "A patient's blood glucose results show: fasting level 8.2 mmol/L (normal <5.5), 2 hours after glucose drink: 14.1 mmol/L (normal <7.8). The patient's insulin levels are normal. What type of diabetes is likely, and why?",
+        "example_response": "Both fasting and post-meal glucose levels are significantly elevated, indicating diabetes. Since insulin levels are normal, the pancreas is producing insulin but the body's cells are not responding to it effectively. This pattern is consistent with type 2 diabetes, where insulin resistance means cells have reduced numbers of insulin receptors or defective receptor signalling pathways. In type 1 diabetes, insulin levels would be very low or absent because beta cells have been destroyed. The patient should be advised about lifestyle modifications (increased physical activity, dietary changes to reduce refined carbohydrate intake, weight management if overweight), as these can improve insulin sensitivity. If lifestyle changes are insufficient, metformin may be prescribed — it works by increasing cellular sensitivity to insulin and reducing glucose production by the liver.",
+        "common_errors": [
+          "Diagnosing diabetes type without considering insulin levels alongside glucose levels",
+          "Not explaining the mechanism of insulin resistance at the cellular level (reduced receptor density or impaired signalling)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that DNA carries genetic information and is found in the nucleus, but cannot describe its structure or explain the base pairing rules.",
+        "example_task": "Name the four bases in DNA and state which bases pair together.",
+        "example_response": "The four bases are adenine (A), thymine (T), cytosine (C) and guanine (G). Adenine pairs with thymine (A-T) and cytosine pairs with guanine (C-G).",
+        "common_errors": [
+          "Pairing A with G or C with T instead of the correct complementary pairs",
+          "Confusing DNA bases with RNA bases (RNA has uracil instead of thymine)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can describe DNA structure as a double helix of nucleotides with complementary base pairing, and understands that genes code for proteins, but struggles with the details of protein synthesis.",
+        "example_task": "Describe the structure of a nucleotide and explain how nucleotides join to form DNA.",
+        "example_response": "Each nucleotide consists of a deoxyribose sugar, a phosphate group, and one of four bases (A, T, C, G). The nucleotides join together by their sugar-phosphate groups to form a long chain (a polynucleotide strand). Two strands run antiparallel and are held together by hydrogen bonds between complementary bases: A-T and C-G. The two strands twist around each other to form the double helix shape.",
+        "common_errors": [
+          "Describing DNA as a single strand rather than a double helix",
+          "Saying the bases are joined by 'strong covalent bonds' rather than weak hydrogen bonds (the covalent bonds are in the sugar-phosphate backbone)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the process of protein synthesis including transcription and translation, writes complementary DNA and mRNA sequences, and explains how mutations can affect protein structure and function.",
+        "example_task": "A section of DNA has the base sequence: TAC GGA CTT. Write the mRNA sequence produced during transcription, and determine the amino acid sequence using a codon table.",
+        "example_response": "During transcription, the DNA template strand TAC GGA CTT is used to produce the complementary mRNA sequence: AUG CCU GAA (remembering that RNA uses uracil instead of thymine). Using the codon table: AUG = methionine (start codon), CCU = proline, GAA = glutamic acid. So the amino acid sequence is: Met-Pro-Glu.",
+        "common_errors": [
+          "Forgetting to substitute uracil (U) for thymine (T) when writing the mRNA sequence",
+          "Reading the wrong strand of DNA during transcription (the template strand is read 3' to 5')"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses the effects of different types of mutations (substitution, insertion, deletion) on protein structure and function, and evaluates the applications of genetic technology including gene therapy and genetic engineering.",
+        "example_task": "Explain why a deletion mutation is usually more harmful than a substitution mutation. Use the concept of the reading frame in your answer.",
+        "example_response": "A substitution mutation changes one base to another, which may change one codon and therefore one amino acid in the protein. However, the rest of the protein sequence remains unaffected. The mutation may be silent (if the new codon still codes for the same amino acid due to degeneracy of the genetic code) or conservative (if it codes for an amino acid with similar properties). A deletion mutation removes one base, which shifts the entire reading frame from that point onwards (frameshift mutation). Every codon downstream of the deletion is read incorrectly, typically producing a completely non-functional protein. This is analogous to removing a letter from a sentence: 'THE CAT SAT' becomes 'THE ATS AT...' — every word after the deletion is garbled. Insertions have the same frameshift effect. This is why deletion and insertion mutations are almost always more damaging than substitutions.",
+        "common_errors": [
+          "Describing frameshift mutations without explaining that codons are read in non-overlapping triplets from a fixed start point",
+          "Stating that all substitution mutations change the protein — many are silent due to the degeneracy of the genetic code"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that children inherit characteristics from both parents and that some characteristics are dominant, but cannot use Punnett squares or genetic terminology accurately.",
+        "example_task": "If one parent has brown eyes (dominant) and the other has blue eyes (recessive), what eye colour will their children have?",
+        "example_response": "The children will probably have brown eyes because brown is dominant. But it depends on whether the brown-eyed parent carries the gene for blue eyes.",
+        "common_errors": [
+          "Saying all children will definitely have brown eyes without considering whether the parent is homozygous or heterozygous",
+          "Using everyday language ('carries the gene') rather than correct genetic terms ('heterozygous')"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can draw Punnett squares for monohybrid crosses, use the terms allele, genotype and phenotype correctly, and calculate predicted ratios, but struggles with sex-linked inheritance or interpreting pedigree diagrams.",
+        "example_task": "Two parents are both heterozygous for tongue rolling (Tt). Draw a Punnett square and predict the ratio of tongue-rollers to non-rollers in their offspring.",
+        "example_response": "Parent genotypes: Tt x Tt. Punnett square: [T,t across top; T,t down side → TT, Tt, Tt, tt]. Genotype ratio: 1 TT : 2 Tt : 1 tt. Phenotype ratio: 3 tongue-rollers (TT and Tt) : 1 non-roller (tt). There is a 75% (3 in 4) probability that any individual offspring will be a tongue-roller.",
+        "common_errors": [
+          "Placing genotypes (Tt) rather than individual alleles (T and t) around the Punnett square",
+          "Stating that exactly 75% of offspring will be tongue-rollers rather than expressing it as a probability"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies Punnett squares to a range of crosses including those involving genetic disorders, interprets pedigree diagrams, and explains sex determination and sex-linked inheritance.",
+        "example_task": "Cystic fibrosis is caused by a recessive allele (f). Two parents who do not have cystic fibrosis have a child with the condition. Explain how this is possible and calculate the probability of their next child having cystic fibrosis.",
+        "example_response": "Both parents must be carriers — heterozygous (Ff). They have one normal allele (F) and one cystic fibrosis allele (f). They do not show the condition because the dominant allele F masks the recessive f. Punnett square: Ff x Ff → FF, Ff, Ff, ff. Probability of next child having CF: 1 in 4 (25%). Probability of next child being a carrier: 2 in 4 (50%). Each pregnancy is an independent event, so the probability is 25% regardless of how many previous children have or do not have CF.",
+        "common_errors": [
+          "Thinking that because the first child has CF, the second child is more or less likely to have it (the gambler's fallacy)",
+          "Not recognising that both parents must be carriers if they are unaffected but have an affected child"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex inheritance patterns, evaluates the ethical implications of genetic testing and screening, and applies statistical reasoning to genetic probability problems.",
+        "example_task": "Haemophilia is a sex-linked recessive condition carried on the X chromosome. A carrier woman (X^H X^h) and a normal man (X^H Y) have children. Calculate the probability of having an affected son. Why are males more likely to be affected than females?",
+        "example_response": "Punnett square: X^H X^h x X^H Y → X^H X^H (normal female), X^H X^h (carrier female), X^H Y (normal male), X^h Y (affected male). Probability of an affected son: 1 in 4 (25%) of all children, or 1 in 2 (50%) of sons specifically. Males are more likely to be affected because they have only one X chromosome. A male with X^h on his single X chromosome will express haemophilia because there is no second X with a dominant allele to mask it. A female would need to be homozygous recessive (X^h X^h) to be affected, which requires inheriting the recessive allele from both parents — much less likely because the father would need to be affected (X^h Y).",
+        "common_errors": [
+          "Confusing the probability for all children (1/4) with the probability specifically for sons (1/2)",
+          "Not explaining why sex-linkage makes the condition more common in males using the chromosome mechanism"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that living things change over time and that Darwin proposed natural selection, but describes evolution as organisms 'choosing' to adapt rather than as a population-level process.",
+        "example_task": "Explain how giraffes evolved long necks according to Darwin's theory of natural selection.",
+        "example_response": "In the ancestral giraffe population, there was natural variation in neck length. Giraffes with slightly longer necks could reach more food in tall trees. These giraffes were more likely to survive, reproduce and pass on their alleles for longer necks. Over many generations, the average neck length in the population increased.",
+        "common_errors": [
+          "Saying giraffes 'stretched their necks' and passed this on (Lamarckism, not Darwinism)",
+          "Describing evolution as if individual organisms change rather than populations changing over generations"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can state the four conditions for natural selection (variation, heritability, competition, differential survival) and give examples, but struggles to construct a complete natural selection argument for unfamiliar examples.",
+        "example_task": "Explain how antibiotic resistance develops in a population of bacteria. Is this the same process as natural selection?",
+        "example_response": "In a bacterial population, some bacteria have random mutations that make them resistant to an antibiotic. When the antibiotic is used, susceptible bacteria are killed but resistant ones survive and reproduce rapidly. The proportion of resistant bacteria increases in the population. This is natural selection because: there is variation (some are resistant, some are not), the variation is heritable (the mutation is in DNA), there is a selection pressure (the antibiotic), and resistant individuals have a survival advantage.",
+        "common_errors": [
+          "Saying the antibiotic 'causes' the mutation rather than correctly saying it selects for pre-existing mutations",
+          "Describing this as something other than natural selection (it is a clear, rapid example of natural selection in action)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Constructs complete natural selection arguments for unfamiliar examples, explains the evidence for evolution from multiple sources, and explains how speciation occurs through reproductive isolation.",
+        "example_task": "Explain how a single species of finch on the Galapagos Islands could give rise to multiple species with different beak shapes. Use the concept of speciation.",
+        "example_response": "An ancestral finch species colonised the Galapagos Islands. Groups became geographically isolated on different islands with different food sources (seeds, insects, cacti). Natural selection favoured different beak shapes on each island: thick beaks for cracking hard seeds, long thin beaks for probing cactus flowers, etc. Over many generations, each isolated population accumulated different genetic changes. Eventually, the populations became so genetically different that they could no longer interbreed if they came into contact again — they had become reproductively isolated and therefore separate species. This is allopatric speciation driven by geographic isolation and divergent natural selection.",
+        "common_errors": [
+          "Describing adaptation within a population without explaining how reproductive isolation leads to speciation",
+          "Not emphasising that speciation requires that the populations can no longer interbreed"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the evidence for evolution critically, compares natural selection with genetic drift, and analyses how evolutionary theory informs modern biology and medicine.",
+        "example_task": "Evaluate the strength of the evidence for evolution from: a) the fossil record, b) comparative anatomy (homologous structures), and c) molecular biology (DNA comparisons). Which do you consider the strongest evidence, and why?",
+        "example_response": "a) The fossil record shows transitional forms (e.g., Tiktaalik between fish and amphibians) and progressive changes in body structures over geological time, providing direct historical evidence. However, it is incomplete due to the rarity of fossilisation, and gaps can be exploited by critics. b) Homologous structures (e.g., the pentadactyl limb in mammals, birds, reptiles and amphibians) show that structurally similar features have been modified for different functions, indicating common ancestry. However, similar structures can sometimes arise through convergent evolution rather than shared descent. c) DNA comparisons are the strongest evidence: the degree of DNA sequence similarity between species precisely matches the evolutionary tree predicted from morphology and the fossil record. All living things share the same genetic code, which is powerful evidence for common ancestry. DNA evidence is quantitative, testable and reproducible, making it the most scientifically robust. Additionally, the existence of pseudogenes (non-functional DNA sequences shared between related species) provides compelling evidence for shared ancestry that is very difficult to explain without evolution.",
+        "common_errors": [
+          "Listing the evidence without evaluating the relative strength of each type",
+          "Not acknowledging limitations of each evidence type (e.g., fossil record is incomplete)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can name organisms in a food chain and describe simple feeding relationships, but confuses producers, consumers and decomposers and cannot explain energy transfer between trophic levels.",
+        "example_task": "What is the difference between a producer and a consumer? Give an example of each.",
+        "example_response": "A producer makes its own food using photosynthesis, e.g., grass. A consumer cannot make its own food and must eat other organisms, e.g., a rabbit (primary consumer) eats grass.",
+        "common_errors": [
+          "Saying producers 'make food from nothing' rather than from light energy, CO2 and water",
+          "Confusing primary consumers (herbivores) with secondary consumers (carnivores that eat herbivores)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can construct food chains and webs from data, explain trophic levels, and describe how populations affect each other, but struggles with energy transfer calculations and sampling techniques.",
+        "example_task": "In a food chain: grass → rabbit → fox, explain why there are fewer foxes than rabbits.",
+        "example_response": "Energy is lost at each trophic level. Rabbits use most of the energy from eating grass for their own life processes (movement, body heat, excretion), so only about 10% of the energy is passed on to the fox when it eats the rabbit. This means less energy is available to support foxes, so the population is smaller.",
+        "common_errors": [
+          "Saying energy is 'lost' without specifying that it is transferred to the thermal store of the surroundings (heat)",
+          "Thinking that energy is recycled through food chains (energy flows in one direction; only matter is recycled)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Calculates energy transfer efficiency between trophic levels, uses quadrats and transects to estimate population size, and explains the carbon and water cycles.",
+        "example_task": "A student uses quadrats to estimate the population of daisies in a school field measuring 200 m². They place 10 quadrats (each 0.25 m²) randomly and count: 5, 3, 7, 4, 6, 2, 5, 4, 6, 3. Estimate the total population.",
+        "example_response": "Mean number of daisies per quadrat = (5+3+7+4+6+2+5+4+6+3) / 10 = 45/10 = 4.5. Total area of field = 200 m². Area of one quadrat = 0.25 m². Estimated population = mean per quadrat × (total area / quadrat area) = 4.5 × (200 / 0.25) = 4.5 × 800 = 3,600 daisies.",
+        "common_errors": [
+          "Dividing total area by the number of quadrats rather than by the area of one quadrat",
+          "Not placing quadrats randomly, which introduces sampling bias"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex ecological data, evaluates the impact of removing a species from a food web, and uses pyramid diagrams and energy budgets to model ecosystem energy flow.",
+        "example_task": "In a grassland ecosystem, gross primary productivity is 20,000 kJ/m²/year. Plants use 12,000 kJ for respiration. Primary consumers assimilate 1,200 kJ and use 960 kJ for respiration. Calculate the net primary productivity and the efficiency of energy transfer to primary consumers.",
+        "example_response": "Net primary productivity (NPP) = Gross primary productivity (GPP) - respiration = 20,000 - 12,000 = 8,000 kJ/m²/year. This is the energy available to the primary consumers. Energy transfer efficiency = energy assimilated by primary consumers / NPP × 100 = 1,200 / 8,000 × 100 = 15%. Of the energy assimilated by primary consumers, 960 kJ is used for respiration, leaving only 240 kJ available for secondary consumers. The low efficiency (15%) explains why food chains are short: after 4-5 transfers, insufficient energy remains to support another trophic level.",
+        "common_errors": [
+          "Confusing GPP (total energy fixed by photosynthesis) with NPP (energy available after plant respiration)",
+          "Calculating efficiency using GPP as the denominator rather than NPP"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "BI-KS4-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that human activities harm the environment and that some species are endangered, but provides only general statements without specific mechanisms or data.",
+        "example_task": "Name two ways that human activity reduces biodiversity.",
+        "example_response": "1) Cutting down forests (deforestation) destroys habitats, so organisms that lived there have nowhere to live and may become extinct. 2) Pollution, such as waste dumped in rivers, kills aquatic organisms.",
+        "common_errors": [
+          "Listing threats to biodiversity without explaining the mechanism by which they cause harm",
+          "Equating biodiversity with the number of individual animals rather than the variety of species and genetic diversity"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can explain specific mechanisms by which human activities reduce biodiversity and describe conservation strategies, but struggles to evaluate the effectiveness of different approaches.",
+        "example_task": "Explain how deforestation reduces biodiversity and describe two conservation strategies that could help.",
+        "example_response": "Deforestation directly destroys the habitat of species that live in forests. It also fragments remaining habitat into isolated patches, reducing population sizes and gene flow between groups, making species more vulnerable to extinction. Two conservation strategies: 1) Nature reserves protect habitats legally and prevent development. 2) Seed banks preserve the seeds of thousands of plant species in controlled conditions, ensuring genetic diversity is not lost even if wild populations decline.",
+        "common_errors": [
+          "Describing conservation strategies without explaining how they specifically address the threats to biodiversity",
+          "Not mentioning habitat fragmentation as a consequence of deforestation separate from outright habitat loss"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Evaluates the effectiveness of conservation programmes, interprets data on species decline, and explains the scientific and economic arguments for maintaining biodiversity.",
+        "example_task": "Evaluate the arguments for and against captive breeding programmes as a conservation strategy.",
+        "example_response": "Captive breeding has successfully saved species from extinction — Arabian oryx numbers recovered from 9 individuals to over 1,000 through captive breeding and reintroduction. It maintains genetic diversity by carefully managing breeding to avoid inbreeding. However, captive populations can develop behaviours unsuited to the wild (e.g., loss of predator avoidance), making reintroduction difficult. Captive breeding is expensive and can only support small populations, so it does not address the underlying causes of decline (habitat loss, hunting). It is most effective as a complement to habitat protection, not a substitute for it. There is also a philosophical argument: is a species in a zoo really 'saved' if it cannot survive in the wild?",
+        "common_errors": [
+          "Presenting captive breeding as either entirely positive or entirely negative without balancing the evaluation",
+          "Not connecting captive breeding to the broader conservation strategy (it should complement habitat protection)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses global biodiversity data critically, evaluates the trade-offs between economic development and conservation, and synthesises arguments from ecology, genetics and ethics to justify conservation policy.",
+        "example_task": "Some argue that conservation spending should prioritise 'keystone species' and 'biodiversity hotspots' rather than spreading resources evenly. Evaluate this approach using ecological evidence.",
+        "example_response": "Keystone species (e.g., sea otters in kelp forests, wolves in Yellowstone) have disproportionate effects on ecosystem structure. Removing them causes trophic cascades that reduce biodiversity far beyond the loss of that single species. Protecting them therefore protects entire ecosystems efficiently. Biodiversity hotspots are regions with exceptionally high species richness and endemism (e.g., Madagascar, which contains 5% of all known species on 0.4% of Earth's land area). Prioritising hotspots maximises the number of species protected per unit of conservation spending. However, this approach has limitations: it may neglect ecosystems that are less species-rich but provide essential ecosystem services (e.g., peatlands store vast amounts of carbon); it may undervalue genetic diversity within common species; and it creates a utilitarian calculus that may not align with the intrinsic value argument for conservation. The most effective strategy likely combines hotspot prioritisation with ecosystem-service valuation and culturally sensitive approaches that recognise indigenous land management practices.",
+        "common_errors": [
+          "Discussing conservation priorities without using specific ecological evidence or examples",
+          "Not acknowledging the limitations of any single prioritisation framework"
+        ]
+      }
+    ]
+  }
+]

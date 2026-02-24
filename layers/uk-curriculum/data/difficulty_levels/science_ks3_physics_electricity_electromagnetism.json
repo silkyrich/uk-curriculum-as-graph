@@ -1,0 +1,541 @@
+[
+  {
+    "concept_id": "SC-KS3-C147",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that electric current is the flow of charge and is measured in amperes using an ammeter.",
+        "example_task": "What instrument measures electric current and what unit is it measured in?",
+        "example_response": "An ammeter measures electric current. Current is measured in amperes (amps, A).",
+        "common_errors": [
+          "Says current is measured in volts.",
+          "Confuses an ammeter with a voltmeter."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes current as the rate of flow of charge and explains how an ammeter is connected in a circuit.",
+        "example_task": "How must an ammeter be connected in a circuit to measure the current through a lamp?",
+        "example_response": "The ammeter must be connected in series with the lamp so that all the current flowing through the lamp also flows through the ammeter.",
+        "common_errors": [
+          "Connects the ammeter in parallel (this would short-circuit the component).",
+          "Says the ammeter can be placed anywhere in a parallel circuit to measure total current."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies I = Q/t to calculate current, charge, or time, and explains that current is the same at all points in a series circuit.",
+        "example_task": "A charge of 30 coulombs flows through a lamp in 10 seconds. Calculate the current.",
+        "example_response": "I = Q/t = 30/10 = 3 A.",
+        "common_errors": [
+          "Multiplies charge by time instead of dividing.",
+          "Thinks current decreases as it passes through components in a series circuit."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses current flow in complex circuits, explains the difference between conventional current and electron flow, and evaluates common misconceptions about current being 'used up'.",
+        "example_task": "A student says the lamp nearest the positive terminal of the battery gets the most current because the current is used up as it goes round. Explain why this is incorrect.",
+        "example_response": "Current is not used up. In a series circuit, the current is the same at every point because charge is conserved. The same number of electrons flows through each component per second. What the battery does is provide energy to the charges. The charges transfer this energy to the components (as light and heat in the lamp) but the charges themselves continue flowing. The student's misconception confuses energy transfer with current flow.",
+        "common_errors": [
+          "Agrees with the student that current is used up.",
+          "Cannot explain the difference between energy transfer and charge flow."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C148",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies series and parallel circuits from diagrams and names the key components using circuit symbols.",
+        "example_task": "Is this circuit series or parallel? (Diagram shows two lamps connected in parallel with a battery.)",
+        "example_response": "This is a parallel circuit because the current splits into two branches, each containing a lamp.",
+        "common_errors": [
+          "Calls it a series circuit because there are two lamps.",
+          "Cannot distinguish series from parallel in a circuit diagram."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes how current and voltage behave differently in series and parallel circuits.",
+        "example_task": "In a series circuit with two identical lamps and a 6 V battery, what is the voltage across each lamp?",
+        "example_response": "The voltage is shared equally between identical components, so each lamp has 3 V across it (6 V / 2 = 3 V).",
+        "common_errors": [
+          "Says each lamp has 6 V across it.",
+          "Confuses voltage sharing in series with current splitting in parallel."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Predicts and explains the behaviour of current and voltage in mixed circuits, and compares lamp brightness in series versus parallel.",
+        "example_task": "Two identical lamps are connected first in series and then in parallel to the same battery. Compare their brightness in each arrangement.",
+        "example_response": "In parallel, each lamp is brighter than in series. In parallel, each lamp receives the full battery voltage and the same current as a single lamp. In series, the voltage is shared between them and the total resistance is higher, reducing the current. Less voltage and current per lamp means less power and dimmer light.",
+        "common_errors": [
+          "Says lamps are equally bright in both arrangements.",
+          "Thinks adding lamps in parallel makes each one dimmer."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex circuits with multiple branches, predicts current distribution using conservation of charge, and explains why household circuits are wired in parallel.",
+        "example_task": "Explain why household appliances are connected in parallel rather than in series.",
+        "example_response": "In parallel, each appliance receives the full mains voltage (230 V) and operates at its designed power. Appliances can be switched on and off independently without affecting others. If one fails, the others continue to work. In series, the voltage would be shared, appliances would not work properly, and switching one off would break the circuit for all.",
+        "common_errors": [
+          "Says it is cheaper to wire in parallel (the reason is functionality, not cost).",
+          "Cannot explain why independent switching requires parallel connections."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C149",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that potential difference (voltage) is measured in volts using a voltmeter.",
+        "example_task": "What does a voltmeter measure and what unit does it use?",
+        "example_response": "A voltmeter measures potential difference (voltage) across a component, measured in volts (V).",
+        "common_errors": [
+          "Says a voltmeter measures current.",
+          "Confuses volts with amps."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains that potential difference is the energy transferred per unit charge and describes how to connect a voltmeter.",
+        "example_task": "How should a voltmeter be connected to measure the potential difference across a lamp?",
+        "example_response": "The voltmeter must be connected in parallel across the lamp (one terminal on each side of the lamp).",
+        "common_errors": [
+          "Connects the voltmeter in series.",
+          "Cannot explain why parallel connection is necessary."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses V = E/Q to calculate potential difference, energy, or charge, and explains how voltage is distributed across components in series and parallel circuits.",
+        "example_task": "A battery transfers 60 J of energy when 20 C of charge flows through it. Calculate the potential difference.",
+        "example_response": "V = E/Q = 60/20 = 3 V.",
+        "common_errors": [
+          "Multiplies energy by charge.",
+          "Confuses this equation with the power equation."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses voltage distribution in complex circuits, explains why voltage is the same across parallel branches, and connects potential difference to energy transfer in real-world contexts.",
+        "example_task": "In a series circuit with a 12 V battery, a 4 ohm resistor and an 8 ohm resistor, calculate the voltage across each resistor. Explain why the larger resistor has the larger voltage.",
+        "example_response": "Total resistance = 4 + 8 = 12 ohm. Current = V/R = 12/12 = 1 A. Voltage across 4 ohm = 1 x 4 = 4 V. Voltage across 8 ohm = 1 x 8 = 8 V. The larger resistor has the larger voltage because more energy is transferred per coulomb of charge passing through a higher resistance (V = IR; same I, larger R gives larger V).",
+        "common_errors": [
+          "Splits the voltage equally between the two resistors.",
+          "Cannot explain why the voltage is proportional to resistance in a series circuit."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C150",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that resistance opposes current flow and is measured in ohms.",
+        "example_task": "What happens to the current in a circuit if you add more resistance?",
+        "example_response": "The current decreases because resistance opposes the flow of current.",
+        "common_errors": [
+          "Says current increases with more resistance.",
+          "Cannot name the unit of resistance."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses V = IR to calculate resistance, voltage, or current in simple circuits.",
+        "example_task": "A lamp has a voltage of 6 V across it and a current of 2 A flowing through it. Calculate its resistance.",
+        "example_response": "R = V/I = 6/2 = 3 ohm.",
+        "common_errors": [
+          "Multiplies V by I instead of dividing.",
+          "Uses incorrect rearrangement of the equation."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Investigates how factors such as wire length, thickness, and material affect resistance, and applies Ohm's law to interpret I-V graphs.",
+        "example_task": "Describe how you would investigate the effect of wire length on resistance. State the independent, dependent, and control variables.",
+        "example_response": "Independent variable: length of wire. Dependent variable: resistance (calculated from V/I readings). Control variables: wire material, wire diameter, temperature. Method: connect different lengths of the same wire into a circuit with an ammeter and voltmeter, measure current and voltage for each length, calculate resistance. Plot resistance against length.",
+        "common_errors": [
+          "Does not control the wire diameter or material.",
+          "Measures only current without measuring voltage (cannot calculate resistance)."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses non-ohmic components (filament lamps, thermistors, LDRs) using I-V characteristics and explains why their resistance changes.",
+        "example_task": "A filament lamp has a curved I-V graph. Explain why the graph is not a straight line, unlike a fixed resistor at constant temperature.",
+        "example_response": "As current increases through the filament, the wire heats up. Higher temperature causes the metal atoms to vibrate more, making it harder for electrons to flow, so resistance increases. This means the current does not increase proportionally with voltage (the graph curves). A fixed resistor at constant temperature has constant resistance, giving a straight line through the origin.",
+        "common_errors": [
+          "Says the graph is curved because the lamp is broken.",
+          "Cannot explain the link between temperature and resistance in a metal."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C151",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Classifies common materials as electrical conductors or insulators.",
+        "example_task": "Sort these materials into conductors and insulators: copper, rubber, iron, plastic, aluminium.",
+        "example_response": "Conductors: copper, iron, aluminium. Insulators: rubber, plastic.",
+        "common_errors": [
+          "Classifies all metals as equally good conductors.",
+          "Classifies rubber as a conductor."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains why metals are good conductors in terms of free electrons and describes why wires have plastic insulation.",
+        "example_task": "Explain why copper is a good electrical conductor.",
+        "example_response": "Copper atoms have free (delocalised) electrons that can move through the metal structure. When a potential difference is applied, these free electrons flow, carrying charge through the material as an electric current.",
+        "common_errors": [
+          "Says copper is a good conductor because it is shiny.",
+          "Does not mention free or delocalised electrons."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Compares the conductivity of different metals and explains the role of conductors and insulators in electrical safety.",
+        "example_task": "Explain why electrical cables use copper for the core and plastic for the outer covering.",
+        "example_response": "Copper has very low resistance (many free electrons), so it carries current efficiently with minimal energy waste. Plastic is an insulator (no free electrons), so it prevents current from flowing to the outside of the cable, protecting people from electric shock and preventing short circuits.",
+        "common_errors": [
+          "Says plastic is used only to keep the wire tidy.",
+          "Cannot explain the safety function of insulation."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Explains semiconductors as materials with intermediate conductivity, discusses how their resistance changes with conditions, and evaluates their importance in technology.",
+        "example_task": "Explain what a semiconductor is and why semiconductors are essential for modern electronics.",
+        "example_response": "A semiconductor (like silicon) has a conductivity between metals and insulators. Its resistance decreases with temperature or when small amounts of other elements are added (doping). This controllable conductivity makes semiconductors ideal for transistors, which are the building blocks of computer chips, allowing signals to be switched and amplified. Without semiconductors, modern computers, smartphones, and digital electronics would not be possible.",
+        "common_errors": [
+          "Defines a semiconductor as half conductor and half insulator.",
+          "Cannot explain why variable conductivity is useful in electronics."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C152",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that rubbing certain materials together causes them to become charged and that charged objects can attract or repel.",
+        "example_task": "What happens when you rub a balloon on your hair?",
+        "example_response": "The balloon picks up electrons from your hair, becoming negatively charged. Your hair loses electrons and becomes positively charged. The hair is attracted to the balloon and stands up.",
+        "common_errors": [
+          "Says rubbing creates new charges.",
+          "Thinks both the balloon and the hair become the same type of charge."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains static electricity using the electron transfer model and states that like charges repel and unlike charges attract.",
+        "example_task": "Two charged polythene rods are brought close together. They repel. Explain why.",
+        "example_response": "Both polythene rods gain electrons when rubbed, so both have a negative charge. Like charges repel each other, so the rods push apart.",
+        "common_errors": [
+          "Says the rods repel because they are the same material (the reason is the same charge).",
+          "Thinks protons are transferred during rubbing."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains charge separation in detail, describes how charging by induction works, and applies static electricity to explain everyday phenomena.",
+        "example_task": "Explain how a charged balloon can stick to an uncharged wall.",
+        "example_response": "The negatively charged balloon repels electrons in the wall's surface, pushing them deeper into the wall. The surface of the wall nearest the balloon becomes positively charged (by induction). The attraction between the negative balloon and the positive surface of the wall holds the balloon in place.",
+        "common_errors": [
+          "Says the wall becomes charged overall (it does not; only the surface charge distribution changes).",
+          "Cannot explain the induction mechanism."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates applications and hazards of static electricity, explains earthing and discharge mechanisms, and analyses quantitative aspects of charge conservation.",
+        "example_task": "Explain why fuel tanker drivers must earth themselves before refuelling an aircraft, using the concepts of static charge, sparks, and earthing.",
+        "example_response": "As fuel flows through pipes and nozzles, friction between the fuel and the pipe wall causes electrons to transfer, building up static charge. If enough charge accumulates, a spark can jump between the charged nozzle and the aircraft. Since fuel vapour is highly flammable, this spark could cause an explosion. Earthing provides a safe path for electrons to flow to the ground, preventing charge from building up to a dangerous level.",
+        "common_errors": [
+          "Says earthing removes all electrons from the system (it provides a path for excess charge to dissipate).",
+          "Cannot explain why a spark is dangerous near fuel."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C153",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that charged objects create an electric field around them and that this field exerts forces on other charges.",
+        "example_task": "What is an electric field?",
+        "example_response": "An electric field is a region around a charged object where another charged object would experience a force.",
+        "common_errors": [
+          "Says an electric field is the same as an electric current.",
+          "Thinks fields only exist between objects in contact."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes the direction of electric field lines (from positive to negative) and recognises that field strength decreases with distance.",
+        "example_task": "Draw the electric field lines around a positive point charge.",
+        "example_response": "Arrows pointing radially outward from the positive charge in all directions, getting further apart as they extend away from the charge.",
+        "common_errors": [
+          "Draws arrows pointing inward toward the positive charge.",
+          "Draws all lines the same distance apart (field strength decreases with distance)."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Draws field patterns for different charge configurations and explains that forces act on charges placed in the field.",
+        "example_task": "Draw the electric field between a positive charge and a negative charge placed near each other.",
+        "example_response": "Field lines run from the positive charge to the negative charge, curving from one to the other. The lines are closest together in the region between the charges, indicating the field is strongest there.",
+        "common_errors": [
+          "Draws field lines from negative to positive.",
+          "Does not show the lines being closer together where the field is stronger."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Compares electric fields with gravitational and magnetic fields, analyses uniform fields between parallel plates, and applies field concepts to technology.",
+        "example_task": "Compare electric and gravitational fields in terms of what produces them, what they act on, and whether they can be attractive or repulsive.",
+        "example_response": "Electric fields are produced by charges and act on other charges; they can be attractive (opposite charges) or repulsive (like charges). Gravitational fields are produced by masses and act on other masses; they are always attractive. Both fields decrease in strength with distance. Electric fields are much stronger than gravitational fields at the atomic scale, while gravity dominates at astronomical scales due to the enormous masses involved.",
+        "common_errors": [
+          "Says gravitational fields can be repulsive.",
+          "Thinks electric fields only act on metals."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C154",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that magnets have two poles and that like poles repel while unlike poles attract.",
+        "example_task": "What happens when two north poles of bar magnets are brought together?",
+        "example_response": "They repel (push apart) because like poles repel each other.",
+        "common_errors": [
+          "Says like poles attract.",
+          "Says the magnets have no effect on each other."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies which materials are magnetic and explains that cutting a magnet produces two magnets each with two poles.",
+        "example_task": "A student cuts a bar magnet in half. How many poles does each piece have?",
+        "example_response": "Each half has two poles (a north and a south). You cannot isolate a single magnetic pole.",
+        "common_errors": [
+          "Says one piece has only a north pole and the other only a south.",
+          "Thinks cutting a magnet destroys its magnetism."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Distinguishes permanent magnets from induced magnets and explains how magnetic materials can be magnetised.",
+        "example_task": "Explain why an iron nail is attracted to a magnet even though it is not itself a magnet.",
+        "example_response": "When a magnet is brought near the iron nail, the magnetic field causes the magnetic domains in the iron to align. This turns the nail into a temporary (induced) magnet with its north pole facing the magnet's south pole, causing attraction. When the magnet is removed, the domains randomise and the nail loses most of its magnetism.",
+        "common_errors": [
+          "Says the nail is a permanent magnet.",
+          "Cannot explain the mechanism of induced magnetism."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Explains magnetism using the domain model, analyses why some materials are magnetic and others are not, and discusses applications of permanent and temporary magnets.",
+        "example_task": "Explain, using the domain model, the difference between a magnetised and an unmagnetised piece of iron. Why can iron be magnetised but copper cannot?",
+        "example_response": "In unmagnetised iron, the magnetic domains (regions where atomic magnets are aligned) point in random directions, so their effects cancel out. In magnetised iron, the domains are aligned in the same direction, producing a net magnetic field. Iron can be magnetised because its atomic structure allows domain alignment. Copper's electron configuration does not produce magnetic domains, so it cannot be magnetised.",
+        "common_errors": [
+          "Says all metals have magnetic domains.",
+          "Cannot explain what a domain is."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C155",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that a magnetic field is the region around a magnet where a magnetic force acts, and that it can be shown with iron filings.",
+        "example_task": "How can you reveal the shape of a magnetic field?",
+        "example_response": "Sprinkle iron filings on a piece of paper placed over a magnet. The filings line up along the field lines, showing the pattern of the magnetic field.",
+        "common_errors": [
+          "Says the iron filings are the magnetic field.",
+          "Thinks the field only exists where the filings are visible."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Draws magnetic field lines around a bar magnet showing direction (north to south) and explains that closer lines mean a stronger field.",
+        "example_task": "Draw the magnetic field around a bar magnet and indicate where the field is strongest.",
+        "example_response": "Field lines emerge from the north pole and curve around to enter the south pole. The lines are closest together near the poles, indicating the field is strongest there.",
+        "common_errors": [
+          "Draws field lines from south to north.",
+          "Draws lines equally spaced everywhere."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses a plotting compass to trace field lines and draws the combined field patterns between attracting and repelling magnets.",
+        "example_task": "Draw the magnetic field pattern between two bar magnets placed with their north poles facing each other.",
+        "example_response": "The field lines emerge from each north pole and curve away from the region between the magnets. There is a neutral point between the magnets where the fields cancel. The lines repel each other, bowing outward.",
+        "common_errors": [
+          "Draws lines connecting the two north poles directly.",
+          "Does not show the neutral point between repelling poles."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Compares magnetic field patterns for different configurations, explains uniform and non-uniform fields, and analyses the field around a current-carrying wire or solenoid.",
+        "example_task": "Describe and compare the magnetic field inside and outside a solenoid (coil of wire carrying current).",
+        "example_response": "Inside the solenoid, the magnetic field is strong and approximately uniform (field lines are parallel and equally spaced). Outside the solenoid, the field pattern resembles that of a bar magnet, with field lines curving from one end (acting as the north pole) to the other (south pole). The field outside is much weaker and non-uniform.",
+        "common_errors": [
+          "Says the field inside a solenoid is the same as outside.",
+          "Does not recognise that the ends of the solenoid act as magnetic poles."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C156",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that the Earth has a magnetic field and that a compass needle aligns with it.",
+        "example_task": "Why does a compass needle point north?",
+        "example_response": "The Earth has a magnetic field. The north-seeking pole of the compass needle is attracted towards the Earth's magnetic pole near the geographic North Pole.",
+        "common_errors": [
+          "Says the compass points north because of gravity.",
+          "Does not mention the Earth's magnetic field."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains that the Earth's geographic North Pole is near a magnetic south pole and describes how compasses are used for navigation.",
+        "example_task": "Explain the apparent contradiction: the north-seeking pole of a compass points toward the geographic North Pole, yet like poles repel.",
+        "example_response": "The geographic North Pole is near the Earth's magnetic south pole. Since unlike poles attract, the north-seeking pole of a compass is attracted toward this magnetic south pole (near the geographic North Pole). The naming convention is confusing but historically established.",
+        "common_errors": [
+          "Says the Earth's magnetic north pole is at the geographic North Pole.",
+          "Cannot resolve the apparent contradiction."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains what generates the Earth's magnetic field, discusses magnetic declination, and describes the protective role of the magnetosphere.",
+        "example_task": "Explain why the Earth has a magnetic field and describe one important function of this field.",
+        "example_response": "The Earth's magnetic field is generated by convection currents of molten iron and nickel in the outer core, creating a dynamo effect. An important function is the magnetosphere, which deflects charged particles from the solar wind, protecting the Earth's atmosphere and living organisms from harmful radiation.",
+        "common_errors": [
+          "Says the Earth is magnetic because it contains iron ore in the crust.",
+          "Does not mention the protective function of the magnetosphere."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses evidence for changes in the Earth's magnetic field over geological time, explains how the aurora is produced, and discusses the limitations of compass navigation.",
+        "example_task": "Explain how the aurora borealis (northern lights) is produced and how it relates to the Earth's magnetic field.",
+        "example_response": "Charged particles from the solar wind are deflected by the Earth's magnetosphere but some are channelled along the field lines towards the magnetic poles. When these high-energy particles enter the upper atmosphere, they collide with gas molecules (mainly oxygen and nitrogen), exciting them. As the molecules return to their ground state, they emit light of different colours, producing the aurora. The aurora is visible near the poles because that is where the magnetic field lines converge.",
+        "common_errors": [
+          "Says the aurora is caused by sunlight reflecting off ice in the atmosphere.",
+          "Does not connect the aurora to the Earth's magnetic field."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C157",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that an electric current produces a magnetic field and that an electromagnet can be made by wrapping wire around an iron core.",
+        "example_task": "How can you make a simple electromagnet?",
+        "example_response": "Wrap insulated wire around an iron nail and connect the ends to a battery. When current flows, the nail becomes magnetised and can pick up paperclips.",
+        "common_errors": [
+          "Uses non-insulated wire (would short circuit).",
+          "Says any metal core will work (it must be a magnetic material like iron)."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes three ways to increase the strength of an electromagnet and compares electromagnets with permanent magnets.",
+        "example_task": "Name three ways to make an electromagnet stronger.",
+        "example_response": "1. Increase the current. 2. Increase the number of coils (turns of wire). 3. Add a soft iron core inside the coil.",
+        "common_errors": [
+          "Says use a bigger battery without specifying increased current.",
+          "Confuses increasing wire length with increasing number of turns."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the magnetic field around a straight wire and a solenoid carrying current, and describes the basic motor effect.",
+        "example_task": "Explain why a current-carrying wire placed in a magnetic field experiences a force.",
+        "example_response": "The current in the wire creates its own magnetic field. This field interacts with the external magnetic field. Where the two fields are in the same direction, the combined field is stronger; where they oppose, it is weaker. This imbalance in field strength creates a net force on the wire (the motor effect).",
+        "common_errors": [
+          "Says the wire is pushed because it is magnetic (the wire itself is not a magnet; it is the current's field that interacts).",
+          "Cannot explain the mechanism of the motor effect."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Explains how a simple DC motor works using the motor effect, discusses electromagnetic induction qualitatively, and evaluates applications of electromagnetism.",
+        "example_task": "Describe how a simple DC motor works. Explain the role of the split-ring commutator.",
+        "example_response": "A coil of wire carrying current sits in a magnetic field. The motor effect creates forces on each side of the coil in opposite directions (one up, one down), causing the coil to rotate. The split-ring commutator reverses the current direction every half turn so that the forces always act in the same rotational direction. Without the commutator, the coil would oscillate back and forth instead of rotating continuously.",
+        "common_errors": [
+          "Does not explain why the commutator is needed.",
+          "Says the coil rotates because of the magnetic field alone (current must also flow)."
+        ]
+      }
+    ]
+  }
+]

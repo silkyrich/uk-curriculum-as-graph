@@ -1,0 +1,149 @@
+[
+  {
+    "concept_id": "MA-KS3-C075",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can state known angle facts (e.g. angles on a straight line sum to 180°) and apply them to simple diagrams with direct prompting.",
+        "example_task": "Two angles on a straight line are 110° and x°. Find x.",
+        "example_response": "Angles on a straight line add up to 180°. So x = 180 - 110 = 70°.",
+        "common_errors": [
+          "Using 360° instead of 180° for angles on a straight line",
+          "Not stating which angle fact is being used"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applies multiple angle facts in sequence to find missing angles, giving a reason for each step.",
+        "example_task": "In a triangle, one angle is 50° and another is 65°. A line extends from one vertex. Find the exterior angle at the third vertex and explain your reasoning.",
+        "example_response": "Step 1: The third angle of the triangle = 180° - 50° - 65° = 65° (angles in a triangle sum to 180°). Step 2: The exterior angle = 180° - 65° = 115° (angles on a straight line sum to 180°). Alternatively, the exterior angle equals the sum of the two non-adjacent interior angles: 50° + 65° = 115°.",
+        "common_errors": [
+          "Giving the correct answer without stating the geometric reason at each step",
+          "Confusing interior and exterior angles"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Constructs a multi-step geometric argument, selecting and applying appropriate facts in a logical chain to prove a result about angles or sides.",
+        "example_task": "Prove that the sum of the interior angles of any quadrilateral is 360°.",
+        "example_response": "Any quadrilateral can be split into two triangles by drawing one diagonal. Each triangle has an angle sum of 180°. The angles of the two triangles together make up all four interior angles of the quadrilateral. Therefore the angle sum of a quadrilateral = 180° + 180° = 360°.",
+        "common_errors": [
+          "Stating 'it just is 360°' without constructing the proof from triangles",
+          "Drawing the diagonal but not explaining why the triangle angles combine to give the quadrilateral's angles"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Constructs rigorous proofs using deductive reasoning, including proof by exhaustion and counterexample, identifying when a proof is complete or flawed.",
+        "example_task": "Alex says: 'The exterior angle of a triangle is always greater than either of the non-adjacent interior angles.' Prove or disprove this statement.",
+        "example_response": "Proof: Let the three interior angles be a, b, c where the exterior angle is at vertex C. The exterior angle at C = 180° - c. Since a + b + c = 180°, we have a + b = 180° - c. So the exterior angle = a + b. Since a > 0 and b > 0 (all angles in a triangle are positive), the exterior angle (a + b) > a and (a + b) > b. Therefore the exterior angle is always strictly greater than either non-adjacent interior angle. The proof is complete because it holds for all valid triangles (all angles positive).",
+        "common_errors": [
+          "Testing with one or two numerical examples and claiming this proves the general case",
+          "Not establishing that a and b must be strictly positive"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C089",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can follow a mathematical argument when it is presented step-by-step, and can identify whether a given conclusion matches the working shown.",
+        "example_task": "Sam writes: 3 + 5 = 8, 7 + 11 = 18, 9 + 13 = 22. Sam concludes: 'The sum of two odd numbers is always even.' Is Sam's conclusion consistent with the examples?",
+        "example_response": "Yes, 8 is even, 18 is even, and 22 is even. All three examples give an even sum, so the conclusion is consistent with the evidence.",
+        "common_errors": [
+          "Confusing 'consistent with examples' with 'proved for all cases'",
+          "Not checking each example individually"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Generates own examples to test a conjecture and begins to explain why a pattern works or identify a counterexample to disprove it.",
+        "example_task": "Test whether this conjecture is true: 'If you square any odd number, the result is always odd.' Try at least three examples and explain what you find.",
+        "example_response": "3² = 9 (odd), 5² = 25 (odd), 7² = 49 (odd), 11² = 121 (odd). All results are odd. This makes sense because an odd number times an odd number gives an odd number — odd × odd = odd. The conjecture appears to be true.",
+        "common_errors": [
+          "Testing only one or two examples and declaring the conjecture proved",
+          "Not attempting any explanation for why the pattern holds"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Develops a structured mathematical argument using algebraic or logical reasoning, distinguishing between a conjecture supported by examples and a proven result.",
+        "example_task": "Prove that the sum of any two odd numbers is always even.",
+        "example_response": "Let the two odd numbers be (2a + 1) and (2b + 1) where a and b are integers. Their sum = (2a + 1) + (2b + 1) = 2a + 2b + 2 = 2(a + b + 1). Since (a + b + 1) is an integer, 2(a + b + 1) is a multiple of 2, which is even. Therefore the sum of any two odd numbers is always even.",
+        "common_errors": [
+          "Using specific numbers instead of general algebraic expressions (showing 3 + 5 = 8 rather than proving it for all cases)",
+          "Representing odd numbers as 2a rather than 2a + 1"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Constructs and evaluates rigorous mathematical arguments, identifies logical flaws in others' reasoning, and uses counterexamples strategically to disprove false conjectures.",
+        "example_task": "Mia claims: 'n² + n + 41 always gives a prime number for any positive integer n.' Evaluate this claim.",
+        "example_response": "Testing: n=1 gives 43 (prime), n=2 gives 47 (prime), n=3 gives 53 (prime), n=10 gives 151 (prime). The conjecture looks convincing. However, when n = 40: 40² + 40 + 41 = 1600 + 40 + 41 = 1681 = 41². Since 41² = 41 × 41, this is not prime. Therefore the conjecture is false. A counterexample at n = 41 also works: 41² + 41 + 41 = 41(41 + 1 + 1) = 41 × 43. This shows why no polynomial can generate only primes — eventually the prime factor of the constant term divides the whole expression.",
+        "common_errors": [
+          "Testing only small values and concluding the conjecture is proved",
+          "Not recognising that a single counterexample is sufficient to disprove a universal claim"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C095",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can describe mathematical observations using everyday language, such as 'it goes up by 2 each time' or 'it makes a pattern'.",
+        "example_task": "Look at this sequence: 2, 5, 8, 11, 14. Describe what you notice.",
+        "example_response": "The numbers go up by 3 each time. Starting at 2, you add 3 to get 5, add 3 to get 8, and so on.",
+        "common_errors": [
+          "Saying 'the numbers get bigger' without specifying how they increase",
+          "Not checking that the pattern holds for all given terms"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses some mathematical vocabulary and notation to express observations, moving beyond description towards explanation.",
+        "example_task": "The nth term of a sequence is 3n - 1. Explain why the sequence will never contain a multiple of 3.",
+        "example_response": "The terms are 2, 5, 8, 11, 14, ... Each term is 1 less than a multiple of 3 (3, 6, 9, 12, 15, ...). So the terms are always 3n - 1, which means they leave a remainder of 2 when divided by 3. A multiple of 3 would need a remainder of 0, so no term can be a multiple of 3.",
+        "common_errors": [
+          "Listing several terms and saying 'none of them are multiples of 3' rather than explaining why",
+          "Not connecting the algebraic expression 3n - 1 to the divisibility argument"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Expresses mathematical arguments using precise terminology, logical connectives, and appropriate notation in a structured chain of reasoning.",
+        "example_task": "Prove algebraically that the product of any two consecutive integers is always even.",
+        "example_response": "Let the two consecutive integers be n and n + 1. Their product is n(n + 1). Either n is even or n is odd. Case 1: If n is even, then n = 2k for some integer k, so n(n + 1) = 2k(n + 1), which is divisible by 2 and therefore even. Case 2: If n is odd, then n + 1 is even, so n + 1 = 2m for some integer m, and n(n + 1) = n × 2m = 2nm, which is divisible by 2 and therefore even. In both cases, the product is even.",
+        "common_errors": [
+          "Only considering one case (n even) and not the other (n odd)",
+          "Writing 'n or n+1 must be even' without formally showing why this makes the product even"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Produces formal mathematical arguments using logical structure (given/show/proof), identifies when different proof strategies are needed, and communicates with precision and economy.",
+        "example_task": "Prove that if n² is even, then n must be even. (Hint: consider the contrapositive.)",
+        "example_response": "Proof by contrapositive: Instead of proving 'n² even ⟹ n even', I prove the equivalent contrapositive: 'n odd ⟹ n² odd'. Assume n is odd. Then n = 2k + 1 for some integer k. So n² = (2k + 1)² = 4k² + 4k + 1 = 2(2k² + 2k) + 1. Since 2k² + 2k is an integer, n² has the form 2m + 1, which is odd. Therefore n odd ⟹ n² odd. By contrapositive, n² even ⟹ n even. QED.",
+        "common_errors": [
+          "Attempting a direct proof and getting stuck because assuming n² is even does not directly reveal the structure of n",
+          "Confusing the contrapositive (not B ⟹ not A) with the converse (B ⟹ A)"
+        ]
+      }
+    ]
+  }
+]

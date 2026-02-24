@@ -93,14 +93,15 @@ Each **layer** is self-contained with its own:
    - Surfaced by `query_cluster_context.py` in the `## Thinking lenses` section
 
 9. **DifficultyLevel** (derived layer, lives within `layers/uk-curriculum/`)
-   - 2,572 DifficultyLevel nodes across 701 concepts (all EYFS + KS1-KS2)
+   - 4,952 DifficultyLevel nodes across 1,296 concepts (all EYFS + KS1-KS4)
    - `(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)` — 3-4 levels per concept
-   - Standard labels aligned with KS2 statutory assessment: `entry` (1), `developing` (2), `expected` (3), `greater_depth` (4)
+   - **Primary labels** (EYFS + KS1-KS2): `entry` (1), `developing` (2), `expected` (3), `greater_depth` (4)
+   - **Secondary labels** (KS3-KS4): `emerging` (1), `developing` (2), `secure` (3), `mastery` (4)
    - EYFS uses 3 levels only (entry/developing/expected) — no greater_depth per developmental framework
    - Each node has `description`, `example_task`, `example_response`, `common_errors`
    - Replaces the ungrounded `complexity_level` integer that teachers flagged as meaningless
-   - Data: 87 domain-level JSON files in `layers/uk-curriculum/data/difficulty_levels/`
-   - File naming: `{subject}_{year}_{domain}.json` (e.g. `english_y4_composition.json`, `science_ks2_forces.json`)
+   - Data: 148 domain-level JSON files in `layers/uk-curriculum/data/difficulty_levels/`
+   - File naming: `{subject}_{year}_{domain}.json` (e.g. `english_y4_composition.json`, `science_ks3_physics_waves.json`)
    - Import: `layers/uk-curriculum/scripts/import_difficulty_levels.py` (idempotent, globs `*.json`)
    - ID format: `{concept_id}-DL{zero-padded level_number}` (e.g. `MA-Y3-C014-DL01`)
    - `display_color = '#F59E0B'` (Amber-500), `display_icon = 'signal_cellular_alt'`
@@ -235,7 +236,7 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:KeyStage`, `:Year`, `:Subject`, `:Programme`
 - `:Domain`, `:Objective`, `:Concept`, `:ConceptCluster`
 - `:ThinkingLens` — 10 cross-subject cognitive lenses (Patterns, Cause and Effect, …)
-- `:DifficultyLevel` — grounded difficulty tiers per Concept (entry → developing → expected → greater_depth)
+- `:DifficultyLevel` — grounded difficulty tiers per Concept (primary: entry → greater_depth; secondary: emerging → mastery)
 - `:Topic`, `:SourceDocument`
 
 **Epistemic Skills:**
@@ -293,7 +294,7 @@ All nodes have `display_category` property:
 (:ThinkingLens)-[:PROMPT_FOR {agent_prompt: str, question_stems: [str]}]->(:KeyStage)  // age-banded prompts
 
 // DifficultyLevel (v3.9) — grounded difficulty tiers replacing complexity_level
-(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)  // 3-4 levels per concept (701/1351 concepts — all EYFS+KS1-KS2)
+(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)  // 3-4 levels per concept (1,296/1,351 concepts — all EYFS+KS1-KS4)
 
 // Content Vehicles (v3.8)
 (:Domain)-[:HAS_VEHICLE]->(:ContentVehicle)-[:DELIVERS]->(:Concept)
@@ -561,8 +562,8 @@ class LayerImporter:
 
 ✅ **In Aura cloud database — all layers active (2026-02-23):**
 - Instance: education-graphs (6981841e)
-- **7,503 total nodes**, **18,369 total relationships**
-- 2,572 DifficultyLevel nodes; 2,572 HAS_DIFFICULTY_LEVEL relationships (701/1,351 concepts covered — all EYFS+KS1-KS2)
+- **~9,883 total nodes**, **~20,749 total relationships** (pending reimport with `--clear`)
+- 4,952 DifficultyLevel nodes; 4,952 HAS_DIFFICULTY_LEVEL relationships (1,296/1,351 concepts covered — all EYFS+KS1-KS4)
 - 61 ContentVehicle nodes; 217 DELIVERS + 92 HAS_VEHICLE + 24 IMPLEMENTS relationships
 - 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average); 40 PROMPT_FOR relationships (age-banded prompts)
 - 626 ConceptCluster nodes (167 introduction, 459 practice) — all with `thinking_lens_primary`
@@ -628,23 +629,23 @@ class LayerImporter:
 - Reports: `generated/teachers-v4/` (lesson plans, teaching logs, v5 findings, group report)
 - Path to 9/10: add worked examples, fix data quality, add difficulty sub-levels
 
-✅ **DifficultyLevel layer (v3.9, 2026-02-23):**
+✅ **DifficultyLevel layer (v3.9 → v3.10, 2026-02-23):**
 - Replaces ungrounded `complexity_level` integer with structured sub-nodes per Concept
 - `(:Concept)-[:HAS_DIFFICULTY_LEVEL]->(:DifficultyLevel)` — 3-4 levels per concept
-- Standard labels aligned with KS2 statutory assessment: `entry` (1), `developing` (2), `expected` (3), `greater_depth` (4)
+- **Primary labels** (EYFS + KS1-KS2): `entry` (1), `developing` (2), `expected` (3), `greater_depth` (4)
+- **Secondary labels** (KS3-KS4): `emerging` (1), `developing` (2), `secure` (3), `mastery` (4)
 - EYFS uses 3 levels only (entry/developing/expected) — no greater_depth per developmental framework
 - Each node has `description`, `example_task`, `example_response`, `common_errors` — grounding abstract difficulty into concrete, assessable tasks
-- **Full rollout: 701 concepts, 2,572 DifficultyLevel nodes** across 87 domain-level JSON files
-- Coverage: all EYFS (53), English KS1-Y6 (294), Mathematics Y1-Y6 (154), Science KS1-KS2 (116), plus History, Geography, DT, Art, Music, PE, Computing, Languages
-- KS3-KS4 concepts (650) do not yet have difficulty levels — future extension
-- Data: 87 files in `layers/uk-curriculum/data/difficulty_levels/` named `{subject}_{year}_{domain}.json`
+- **Full rollout: 1,296 concepts, 4,952 DifficultyLevel nodes** across 148 domain-level JSON files
+- Coverage: all EYFS (53), English KS1-Y6 (294), Mathematics Y1-Y6 (154), Science KS1-KS2 (116), plus History, Geography, DT, Art, Music, PE, Computing, Languages (KS1-KS2) + 595 KS3-KS4 concepts across all secondary subjects
+- 55 PE KS3-KS4 concepts excluded (combined programme, may need sport-specific assessment framework)
+- Data: 148 files in `layers/uk-curriculum/data/difficulty_levels/` (87 primary + 61 secondary)
 - Import: `layers/uk-curriculum/scripts/import_difficulty_levels.py` (idempotent, globs `*.json`)
 - Schema: DifficultyLevel uniqueness constraint + indexes on `level_number`, `label` (v3.9)
 - Validation: 5 checks (completeness, level_number range, label values, HAS_DIFFICULTY_LEVEL integrity, no duplicate levels)
 - `complexity_level` property removed from Concept import; `complexity_range` removed from ConceptCluster generation
 - Query helpers: `query_cluster_context.py` and `graph_query_helper.py` surface difficulty levels under each concept
-- Backward-compatible: KS3-KS4 concepts show no difficulty levels (no errors)
-- QA: all 87 files QA-reviewed; report in `generated/teachers-v7/dl_qa_report.md`
+- QA: all 148 files QA-reviewed; KS1-KS2 report in `generated/teachers-v7/dl_qa_report.md`
 - No learner data — pure curriculum design metadata
 
 ✅ **V7 teacher review (2026-02-23):**
@@ -655,7 +656,7 @@ class LayerImporter:
 - Reports: `generated/teachers-v7/`
 
 🚧 **In progress:**
-- DifficultyLevel extension to KS3-KS4 (650 concepts remaining — different assessment framework, will need GCSE-aligned labels)
+- DifficultyLevel: PE KS3-KS4 (55 concepts remaining — sport-specific assessment framework needed)
 - Oak National Academy content (skeleton only)
 - Alignment mappings (CASE ↔ UK)
 - DPIA completion (skeleton exists, needs human review and sign-off)

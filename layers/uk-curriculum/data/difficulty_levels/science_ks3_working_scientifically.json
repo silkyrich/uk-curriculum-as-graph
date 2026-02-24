@@ -1,0 +1,1178 @@
+[
+  {
+    "concept_id": "SC-KS3-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that scientists should try to be fair when investigating, but struggles to articulate what objectivity means or identify sources of bias.",
+        "example_task": "A student really wants to prove that Brand X trainers make you run faster. They time themselves in Brand X and then time themselves in Brand Y when they are already tired. Is this objective? Explain why or why not.",
+        "example_response": "It is not fair because they were tired for the second test. They should have done both tests when they were not tired.",
+        "common_errors": [
+          "Equating objectivity with simply being 'fair' without explaining what makes a test fair",
+          "Not recognising that the student's desire for a specific outcome could influence how they conduct or interpret the experiment"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understands that objectivity means not letting personal opinions influence data collection or interpretation, and can identify obvious sources of bias in an investigation.",
+        "example_task": "A pharmaceutical company tests its own new painkiller and finds it works better than a competitor's product. Give two reasons why a scientist might question the objectivity of this study.",
+        "example_response": "The company has a financial interest in proving their product is better, which could bias the study. They might have chosen conditions that favour their product, or they might interpret ambiguous results in their favour. An independent scientist with no financial stake would be more objective.",
+        "common_errors": [
+          "Identifying only one source of bias rather than recognising that bias can affect multiple stages of an investigation",
+          "Thinking objectivity simply means 'having no opinion' rather than ensuring opinions do not influence the method or data interpretation"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains how specific techniques such as blinding, randomisation, and large sample sizes help reduce bias, and can design investigations that minimise subjectivity.",
+        "example_task": "Design a fair test to compare two plant fertilisers. Explain three specific steps you would take to ensure your investigation is objective.",
+        "example_response": "I would use randomisation to decide which plants get Fertiliser A and which get Fertiliser B, so I am not unconsciously choosing healthier plants for one group. I would use blinding by labelling the fertilisers as '1' and '2' so I do not know which is which when measuring growth, preventing me from measuring more favourably for the one I expect to work. I would use a large sample size (at least 10 plants per group) so that natural variation between individual plants does not distort the results. I would also have another person check my measurements to reduce the risk of recording bias.",
+        "common_errors": [
+          "Mentioning fairness in vague terms without specifying concrete techniques like blinding or randomisation",
+          "Designing a test with a very small sample size (e.g. 1 plant per group) that cannot distinguish treatment effects from natural variation"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the objectivity of published scientific studies, identifies subtle sources of bias including funding bias, confirmation bias, and selection bias, and explains how peer review and replication act as safeguards.",
+        "example_task": "A study funded by a sugary drinks company concludes that sugar does not contribute to obesity. The study used only 20 participants, all of whom were regular exercisers. Evaluate the objectivity of this study.",
+        "example_response": "This study has multiple objectivity concerns. First, funding bias: the company profits from people believing sugar is harmless, creating a financial incentive for favourable results. Second, selection bias: using only regular exercisers is not representative of the general population — exercise may offset the effects of sugar, masking the true relationship. Third, the sample size is far too small to draw reliable conclusions about a complex relationship. Fourth, there may be confirmation bias in how the researchers interpreted their data, given the funder's expectations. For this study to be credible, it would need to be replicated by independent researchers with a larger, randomly selected sample, and subjected to rigorous peer review before publication.",
+        "common_errors": [
+          "Identifying only the funding bias without recognising the sample selection and size issues",
+          "Assuming that because a study is published it must be objective, without considering the role of peer review and replication in catching flaws"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that measurements should be close to the true value and uses basic measurement tools, but does not distinguish between accuracy and precision.",
+        "example_task": "You measure the length of a pencil three times and get 14.2 cm, 14.3 cm, and 14.1 cm. The actual length is 15.0 cm. Are your measurements accurate?",
+        "example_response": "No, because the measurements are not close to the true length of 15.0 cm.",
+        "common_errors": [
+          "Using 'accurate' and 'precise' as if they mean the same thing",
+          "Thinking a digital measurement device is automatically accurate"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Distinguishes between accuracy (closeness to true value) and precision (consistency of repeated measurements), and uses the dartboard analogy to explain the difference.",
+        "example_task": "A student measures the boiling point of water four times: 99.8°C, 99.9°C, 99.8°C, 99.9°C. Another student gets: 95°C, 102°C, 97°C, 104°C. Who is more accurate? Who is more precise?",
+        "example_response": "The first student is both more accurate (measurements are close to the true value of 100°C) and more precise (measurements are very close together, with only 0.1°C difference). The second student is less accurate (measurements are far from 100°C on average) and less precise (measurements are spread over a 9°C range). Using the dartboard analogy, the first student's darts are in a tight cluster near the bullseye; the second student's darts are scattered across the board.",
+        "common_errors": [
+          "Confusing precision with accuracy — a tight cluster of measurements far from the true value is precise but not accurate",
+          "Thinking that taking more measurements automatically makes them more accurate rather than just more precise"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains how instrument resolution, calibration, and technique affect accuracy and precision, and selects appropriate instruments to achieve the required level of precision.",
+        "example_task": "You need to measure 25 cm³ of water as precisely as possible. You have a 100 cm³ beaker (graduated every 25 cm³), a 50 cm³ measuring cylinder (graduated every 1 cm³), and a 25 cm³ burette (graduated every 0.1 cm³). Which would you choose and why?",
+        "example_response": "I would use the 25 cm³ burette because it has the finest scale divisions (0.1 cm³), giving the highest resolution and therefore the most precise measurement. The beaker would only tell me if I had approximately 25 cm³ — its resolution is too low. The measuring cylinder would be reasonable (±1 cm³), but the burette gives ten times better precision. I would also check the burette is calibrated correctly by measuring a known volume first, because precision without accuracy is not useful.",
+        "common_errors": [
+          "Choosing the largest measuring instrument rather than the one with the finest resolution",
+          "Not considering calibration — a high-resolution instrument that is poorly calibrated gives precise but inaccurate results"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Quantifies uncertainty in measurements, distinguishes between systematic errors (affecting accuracy) and random errors (affecting precision), and evaluates whether the precision of measurements is sufficient for the conclusion being drawn.",
+        "example_task": "A student investigates how temperature affects enzyme activity. At 30°C they measure the reaction rate as 2.4, 2.5, and 2.4 cm³/min. At 35°C they get 2.6, 2.7, and 2.5 cm³/min. They conclude that temperature significantly increases the rate. Evaluate this conclusion in terms of accuracy and precision.",
+        "example_response": "The measurements at each temperature are precise (small spread: ±0.1 cm³/min). However, the difference between the two means (approximately 2.43 vs 2.60 cm³/min) is only 0.17 cm³/min, which is barely larger than the measurement uncertainty (±0.1). This means the apparent increase could be due to random measurement error rather than a genuine temperature effect. The conclusion is not well-supported because the precision of the measuring technique is insufficient to detect such a small difference reliably. To strengthen the conclusion, they would need either a more precise measurement method or a larger temperature difference to produce a clearer signal. They should also check for systematic error — for example, whether the thermometer is reading correctly.",
+        "common_errors": [
+          "Concluding that a difference is significant without considering whether the measurement uncertainty is larger than the difference",
+          "Not distinguishing between systematic errors (which shift all measurements in one direction) and random errors (which cause scatter)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that experiments should be repeated, but does not clearly explain why or distinguish between repeatability and reproducibility.",
+        "example_task": "Why is it important to repeat an experiment more than once?",
+        "example_response": "You should repeat it to check your results are right. If you only do it once, you might get a wrong answer.",
+        "common_errors": [
+          "Stating 'to make sure' without explaining that repeated measurements help identify anomalies and increase confidence",
+          "Not understanding the difference between repeating your own measurements and having someone else replicate your experiment"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains that repeating measurements (repeatability) helps identify anomalous results, and that other scientists getting similar results (reproducibility) increases confidence in the findings.",
+        "example_task": "Group A measured the time for a ball to roll down a ramp 5 times and got: 2.1s, 2.2s, 2.1s, 3.5s, 2.2s. Group B did the same experiment independently and got: 2.0s, 2.1s, 2.2s, 2.1s, 2.0s. What can you say about repeatability and reproducibility?",
+        "example_response": "Group A's results are mostly repeatable (2.1, 2.2, 2.1, 2.2 are close), but the 3.5s is an anomalous result — probably a mistake in timing. Group B's results are very repeatable (all between 2.0 and 2.2s). Because both groups got similar results (around 2.1s), the experiment is also reproducible, which gives us more confidence that the true time is approximately 2.1 seconds.",
+        "common_errors": [
+          "Including the anomalous result (3.5s) when calculating the mean without first investigating it",
+          "Confusing repeatability (same person, same equipment) with reproducibility (different people or methods)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses repeat measurements to calculate means, identifies and justifies excluding anomalous results, and explains how sample size affects the reliability of conclusions.",
+        "example_task": "You measure the extension of a spring with increasing force. At 3N you get results of 6.1 cm, 6.0 cm, 6.2 cm, 9.1 cm, and 6.0 cm. Calculate the mean extension, explaining your method.",
+        "example_response": "The result of 9.1 cm is anomalous — it is far from the other values and was likely caused by misreading the ruler or the spring slipping. I will exclude it and calculate the mean from the remaining four values: (6.1 + 6.0 + 6.2 + 6.0) ÷ 4 = 6.075 cm, which I would round to 6.1 cm. The range of the remaining results is 0.2 cm, which is small, indicating good repeatability. Having 4 concordant results gives reasonable confidence, though more repeats would increase reliability further.",
+        "common_errors": [
+          "Excluding results just because they do not match the prediction, rather than because they are genuinely anomalous",
+          "Calculating the mean with only 2 repeats, which is insufficient to identify anomalies"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Designs investigations with appropriate numbers of repeats for the required confidence level, evaluates whether data is sufficiently repeatable and reproducible to support the conclusions, and explains how replication in the wider scientific community validates findings.",
+        "example_task": "A team publishes a study claiming that playing classical music to plants increases growth by 15%. Another team in a different country repeats the exact experiment and finds no significant difference. What does this tell us, and what should happen next?",
+        "example_response": "The failure to reproduce the result is significant because reproducibility is a cornerstone of reliable science. There are several possibilities: the original result could be a false positive caused by uncontrolled variables, small sample size, or confirmation bias. Alternatively, the replication team may have used slightly different conditions that affected the outcome (different plant species, different music volume, different growing conditions). The next step would be for multiple independent teams to replicate the study using a standardised protocol with pre-registered methods. If the majority cannot reproduce the result, the original claim is likely not valid. This is how science self-corrects — through replication and peer scrutiny. A single study, no matter how well-designed, is never sufficient to establish a scientific fact.",
+        "common_errors": [
+          "Assuming the original study must be wrong just because one replication failed — a single failure to replicate is not conclusive",
+          "Not recognising that differences in methodology between the original and replication could explain the discrepancy"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that scientific ideas have changed over time, but may view older ideas as simply 'wrong' rather than as the best explanation available at that time.",
+        "example_task": "People used to believe the Sun moved around the Earth. Why do you think they believed this?",
+        "example_response": "Because it looks like the Sun moves across the sky during the day, so they thought it was going around us.",
+        "common_errors": [
+          "Dismissing older scientists as 'stupid' rather than recognising they used the evidence available to them",
+          "Thinking scientific theories are just guesses rather than evidence-based explanations"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains that scientific theories change when new evidence emerges, and gives examples of how specific discoveries led to changes in scientific thinking.",
+        "example_task": "Describe how the model of the atom has changed from Dalton's model to Rutherford's model. What new evidence caused the change?",
+        "example_response": "Dalton thought atoms were solid, indivisible spheres. Then Thomson discovered electrons and proposed the 'plum pudding' model with negative electrons embedded in a positive mass. Rutherford's gold foil experiment showed that most alpha particles passed straight through the foil, but a few bounced back. This new evidence meant the atom must be mostly empty space with a dense, positive nucleus in the centre. The model changed because Rutherford's experiment provided evidence that contradicted the plum pudding model.",
+        "common_errors": [
+          "Describing the models without explaining what new evidence caused each change",
+          "Thinking each new model completely replaced the old one rather than building on and refining it"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the nature of scientific theories as the best current explanations supported by evidence, understands that theories are provisional and subject to revision, and gives detailed examples of paradigm shifts.",
+        "example_task": "Some people say 'evolution is just a theory'. Using your understanding of how science works, explain why this statement is misleading.",
+        "example_response": "In everyday language, 'theory' means a guess or hunch. But in science, a theory is a well-supported explanation based on a large body of evidence from multiple sources. The theory of evolution by natural selection is supported by evidence from the fossil record, DNA analysis, comparative anatomy, direct observation of natural selection (such as antibiotic-resistant bacteria), and biogeography. It has been tested and refined for over 160 years and no evidence has ever contradicted its core principles. Saying it is 'just a theory' confuses the everyday and scientific meanings of the word. All scientific knowledge is technically theoretical — gravity is also 'just a theory' — but theories that have withstood extensive testing are the most reliable knowledge we have.",
+        "common_errors": [
+          "Confusing the everyday meaning of 'theory' (a guess) with the scientific meaning (a well-supported explanation)",
+          "Thinking that because a theory can be revised, it is unreliable or uncertain"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses how social, cultural, and technological factors influence the development of scientific theories, evaluates the strength of evidence for competing theories, and explains how the scientific community reaches consensus through evidence accumulation.",
+        "example_task": "Wegener proposed continental drift in 1912, but it was not accepted until the 1960s when it became plate tectonics theory. Why was there a 50-year delay?",
+        "example_response": "Wegener had compelling evidence: the jigsaw fit of continents, matching fossil distributions across oceans, and similar rock formations on separated coastlines. However, he could not explain the mechanism — how continents could move through solid ocean floor. Without a mechanism, the scientific community rightly demanded more evidence. The theory was also resisted because Wegener was a meteorologist, not a geologist, and there was institutional bias against outsiders. The breakthrough came in the 1960s when new technology (sonar mapping of the ocean floor) revealed mid-ocean ridges, seafloor spreading, and magnetic stripe patterns that provided both the evidence and the mechanism. This demonstrates that scientific acceptance requires: sufficient evidence, a plausible mechanism, the right technology to gather evidence, and overcoming social biases within the scientific community. The delay was not a failure of science — it was science working as it should, demanding strong evidence before accepting a radical new idea.",
+        "common_errors": [
+          "Blaming the delay solely on scientists being stubborn, without recognising that demanding a mechanism was reasonable scientific practice",
+          "Not recognising the role of new technology in enabling the evidence that resolved the debate"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that scientists check each other's work, but has a vague understanding of how peer review operates.",
+        "example_task": "What is peer review in science?",
+        "example_response": "It is when other scientists check your work to see if it is correct.",
+        "common_errors": [
+          "Thinking peer review means asking a friend to check your work",
+          "Not understanding that reviewers are independent experts in the same field"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains the purpose of peer review as independent expert evaluation of methodology and conclusions before publication, and understands that it helps maintain scientific standards.",
+        "example_task": "Before a scientific paper is published in a journal, it goes through peer review. Describe what happens during this process and why it matters.",
+        "example_response": "The scientist submits their paper to a journal. The editor sends it to two or three independent experts in the same field who the author does not know. These reviewers read the paper critically and check whether the method is sound, the data supports the conclusions, and there are no errors. They can accept the paper, suggest changes, or recommend rejection. This matters because it acts as a quality control process — it reduces the chance of flawed or biased research being published.",
+        "common_errors": [
+          "Thinking peer review guarantees the research is correct — it reduces errors but does not eliminate them",
+          "Not realising that reviewers are anonymous and independent from the author"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Evaluates the strengths and limitations of the peer review process, and explains real-world examples where peer review has succeeded or failed in catching errors.",
+        "example_task": "Andrew Wakefield published a paper in 1998 claiming the MMR vaccine caused autism. The paper passed peer review but was later retracted. What does this tell us about peer review?",
+        "example_response": "The Wakefield case shows both the limitations and the strengths of the scientific process. Peer review failed to catch the flaws initially — the small sample size (only 12 children), the lack of a control group, and the fact that Wakefield had undeclared financial conflicts of interest. However, the wider scientific process eventually corrected the error: other scientists could not reproduce the results, investigations revealed ethical violations and data manipulation, and the paper was retracted in 2010. This shows that peer review is an important first check, but it is not infallible. The real safeguard is replication — when multiple independent studies fail to confirm a finding, the scientific community rejects it.",
+        "common_errors": [
+          "Concluding that peer review is useless because it sometimes fails, rather than seeing it as one part of a larger self-correcting system",
+          "Not mentioning replication as the ultimate test of scientific findings"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses how peer review interacts with replication, funding structures, and publication incentives to shape the reliability of scientific knowledge, and proposes improvements to strengthen the system.",
+        "example_task": "Some scientists argue that the current peer review system is under strain because reviewers are unpaid, journals have publication biases, and negative results are rarely published. Evaluate these concerns and suggest how the system could be improved.",
+        "example_response": "These concerns are valid. Unpaid reviewers may rush or decline, reducing review quality. Publication bias means journals prefer exciting positive results over important negative results, which distorts the literature — a drug that does not work may never be reported, leading other scientists to waste resources testing it again. The 'publish or perish' culture incentivises quantity over quality. Improvements could include: pre-registration (researchers publish their method before collecting data, so the results are published regardless of outcome), open peer review (reviewers identified, increasing accountability), registered reports (journals commit to publishing based on the question and method, before seeing results), and funding agencies recognising negative results as valuable contributions. The replication crisis in psychology shows what happens when these issues are not addressed. Science is self-correcting, but the correction is faster and more efficient when the peer review system is well-designed.",
+        "common_errors": [
+          "Treating peer review as either perfectly reliable or completely broken, rather than as a useful but imperfect system",
+          "Not recognising that publication bias and replication failure are connected problems"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies obvious hazards in the laboratory but struggles to distinguish between hazard and risk or to assess the likelihood of harm.",
+        "example_task": "You are about to heat water using a Bunsen burner. Name two hazards.",
+        "example_response": "The flame could burn you. The hot water could scald you.",
+        "common_errors": [
+          "Listing only one hazard rather than considering all aspects of the activity",
+          "Confusing hazard (something that could cause harm) with risk (the likelihood of that harm occurring)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Distinguishes between hazard and risk, identifies hazards and appropriate precautions for common laboratory activities, and uses safety symbols correctly.",
+        "example_task": "You need to use dilute hydrochloric acid in an experiment. The bottle has a warning symbol showing an exclamation mark (irritant). Complete a risk assessment: identify the hazard, the risk, and two precautions.",
+        "example_response": "Hazard: Dilute hydrochloric acid is an irritant — it can cause redness and soreness if it contacts skin or eyes. Risk: The risk is moderate because we are using dilute acid (not concentrated), but splashes are likely during pouring and mixing. Precautions: (1) Wear safety goggles to protect eyes from splashes. (2) If acid contacts skin, wash immediately with plenty of water. I would also keep the lid on the bottle when not in use to reduce the risk of spillage.",
+        "common_errors": [
+          "Listing precautions without linking them to the specific hazard",
+          "Thinking dilute acids are completely safe because they are dilute — they can still irritate skin and damage eyes"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Assesses both the severity and likelihood of harm for different hazards, prioritises risks appropriately, and designs practical work that minimises risk while still achieving the investigation aims.",
+        "example_task": "You are planning an investigation into how different metals react with dilute sulfuric acid. Some metals react vigorously. Write a risk assessment that considers at least three hazards, ranks them by severity, and explains your control measures.",
+        "example_response": "Hazard 1 (HIGH severity): Vigorous reaction with reactive metals (e.g. magnesium) could splash acid and produce flammable hydrogen gas rapidly. Control: Use small quantities of metal and acid. Do not test very reactive metals (sodium, potassium). Keep flames away during the experiment. Use a fume cupboard for reactive metals. Hazard 2 (MEDIUM severity): Dilute sulfuric acid is an irritant. Contact with skin causes redness; contact with eyes could cause serious damage. Control: Wear safety goggles and wash any splashes immediately. Hazard 3 (LOW severity): Broken glassware from test tubes. Control: Handle glassware carefully, report any cracks. I prioritise Hazard 1 because the consequences (fire, acid spray) are most severe, even though the likelihood can be reduced with careful technique.",
+        "common_errors": [
+          "Treating all hazards as equally risky rather than prioritising by severity and likelihood",
+          "Writing generic precautions ('be careful') instead of specific control measures linked to each hazard"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates risk in unfamiliar contexts, balances risk against benefit in scientific decision-making, and applies risk concepts beyond the laboratory to societal and environmental issues.",
+        "example_task": "The UK government must decide whether to approve a new vaccine. Clinical trials show it is 95% effective but causes mild side effects in 1 in 100 people and serious side effects in 1 in 100,000. The disease it prevents kills 1 in 1,000 infected people. Using your understanding of risk, advise the government.",
+        "example_response": "This is a risk-benefit analysis. Without the vaccine, the disease kills 1 in 1,000 infected people — a high-severity, moderate-likelihood risk. With the vaccine, serious side effects occur in 1 in 100,000 — a high-severity but very low-likelihood risk. The vaccine reduces the disease risk by 95%, so the benefit (preventing deaths) far outweighs the risk (very rare serious side effects). The mild side effects (1 in 100) are low-severity and acceptable. I would advise approval because the risk of the disease is orders of magnitude greater than the risk of the vaccine. However, informed consent is essential — people should know the risks. Ongoing monitoring (pharmacovigilance) should continue to detect any rare side effects not seen in trials. This illustrates that 'zero risk' is impossible — all decisions involve comparing risks, not eliminating them.",
+        "common_errors": [
+          "Focusing on the vaccine risk in isolation rather than comparing it to the disease risk",
+          "Expecting zero risk from the vaccine before approving it, which is an unrealistic standard"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Asks questions about scientific phenomena but the questions are often too broad or not testable.",
+        "example_task": "You notice that some plants in the school garden are taller than others. Write a scientific question you could investigate.",
+        "example_response": "Why are some plants bigger?",
+        "common_errors": [
+          "Asking questions that are too vague to investigate ('Why are plants different?')",
+          "Not including measurable variables in the question"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Formulates questions that include identifiable variables and can be investigated through observation or experiment.",
+        "example_task": "You notice that some plants in the school garden are taller than others. Write a testable scientific question.",
+        "example_response": "Does the amount of sunlight a plant receives affect its height after four weeks of growth?",
+        "common_errors": [
+          "Writing a question that cannot be tested practically (e.g. 'What is the meaning of plant growth?')",
+          "Confusing a question with a prediction — a question asks, a prediction states what you expect"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Refines broad observations into specific, testable questions with clear independent and dependent variables, and selects the most appropriate type of scientific enquiry to answer them.",
+        "example_task": "A student observes that metal spoons feel colder than wooden spoons at room temperature. Develop this observation into a testable question and explain which type of enquiry would best answer it.",
+        "example_response": "Testable question: Does the thermal conductivity of a material affect how quickly it transfers heat away from your hand? The independent variable is the material (metal, wood, plastic, glass), the dependent variable is the rate of temperature change when the material is held, and controlled variables include initial temperature and room temperature. The best enquiry type is a comparative fair test, because I am testing the effect of one variable (material) on another (heat transfer rate) while keeping other factors the same.",
+        "common_errors": [
+          "Not identifying the variables clearly within the question",
+          "Choosing an inappropriate enquiry type — for example, suggesting a survey when a fair test is needed"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Generates multiple testable questions from a single observation, evaluates which are most significant or feasible to investigate, and recognises when a question requires a different type of enquiry (e.g. correlational study rather than controlled experiment).",
+        "example_task": "You read that antibiotic resistance in bacteria is increasing worldwide. Generate three different scientific questions arising from this observation and evaluate which would be most feasible for a school investigation.",
+        "example_response": "Question 1: Does the concentration of antibiotic affect the size of the inhibition zone around a bacterial culture? (Fair test — feasible in school with standard aseptic technique.) Question 2: Is there a correlation between a country's antibiotic prescribing rate and the prevalence of resistant bacteria? (Pattern-seeking using secondary data — feasible as a research project.) Question 3: How quickly do bacteria develop resistance when exposed to sub-lethal antibiotic doses over multiple generations? (Long-term experiment — less feasible in school due to time, containment, and ethical constraints.) Question 1 is most feasible because it can be completed in one lesson using standard school equipment and follows CLEAPSS guidelines. Question 2 is feasible as a data analysis project using published WHO data. Question 3, while scientifically important, requires facilities and timescales beyond school resources.",
+        "common_errors": [
+          "Generating questions that are all the same type rather than exploring different enquiry approaches",
+          "Not considering practical feasibility when evaluating which question to investigate"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Makes simple predictions about what will happen but without justification from scientific knowledge.",
+        "example_task": "If you put a plant in a dark cupboard for two weeks, what do you predict will happen?",
+        "example_response": "I think the plant will die.",
+        "common_errors": [
+          "Making a prediction without giving a reason",
+          "Confusing a prediction (what you expect) with a guess (random chance)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Makes predictions justified by basic scientific knowledge, using 'I predict... because...' structure.",
+        "example_task": "If you put a plant in a dark cupboard for two weeks, what do you predict will happen? Justify your prediction using scientific knowledge.",
+        "example_response": "I predict the plant will turn yellow and stop growing because plants need light for photosynthesis. Without light, the plant cannot make glucose for energy and growth, and the chlorophyll in the leaves will break down, making them turn yellow.",
+        "common_errors": [
+          "Giving a reason that is not scientifically based (e.g. 'because plants like light')",
+          "Making a prediction that cannot be tested or observed"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Makes detailed, quantitative predictions where appropriate, clearly linked to scientific theory, and distinguishes between predictions and hypotheses.",
+        "example_task": "You are investigating how temperature affects the rate of an enzyme-catalysed reaction. Predict what will happen as you increase the temperature from 20°C to 70°C. Explain your reasoning.",
+        "example_response": "I predict the rate will increase steadily from 20°C to approximately 37°C (the optimum for human enzymes), because higher temperature gives particles more kinetic energy, leading to more frequent and energetic collisions between enzyme and substrate. Above the optimum, I predict the rate will decrease sharply because the enzyme becomes denatured — its active site changes shape irreversibly so the substrate can no longer fit. By 70°C, I predict the rate will be near zero. The hypothesis explaining this pattern is that enzyme activity depends on the precise three-dimensional shape of the active site, which is maintained by weak bonds that break at high temperatures.",
+        "common_errors": [
+          "Predicting the rate will just keep increasing with temperature, without accounting for denaturation",
+          "Saying the enzyme is 'killed' by heat rather than 'denatured'"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Makes predictions in unfamiliar contexts by applying scientific principles, evaluates competing predictions based on different hypotheses, and designs experiments that can distinguish between them.",
+        "example_task": "Two students make different predictions about what will happen to the rate of photosynthesis as light intensity increases. Student A predicts the rate will increase indefinitely. Student B predicts the rate will increase then level off. Design an experiment to test which prediction is correct, and explain which you think is right and why.",
+        "example_response": "Student B's prediction is more scientifically grounded. At low light intensities, light is the limiting factor, so increasing light increases the rate. But at high light intensities, another factor (such as CO₂ concentration or temperature) becomes limiting, so the rate plateaus. Student A's prediction ignores limiting factors. To test this, I would use an aquatic plant (Elodea) in sodium hydrogencarbonate solution, placing a lamp at different distances to vary light intensity. I would count oxygen bubbles per minute at each distance (at least 5 different intensities, 3 repeats each). If Student B is correct, a graph of rate vs light intensity will curve and plateau. If Student A is correct, it will be a straight line that continues upwards. I would control temperature and CO₂ concentration (using the same concentration of sodium hydrogencarbonate throughout). This experiment can distinguish between the two predictions because it tests a wide enough range of light intensities to detect the plateau.",
+        "common_errors": [
+          "Not testing a wide enough range of light intensities to distinguish between the two predictions",
+          "Not controlling other limiting factors, which would make the results ambiguous"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that things can change in an experiment but struggles to categorise variables as independent, dependent, or control.",
+        "example_task": "In an experiment to test how the height of a ramp affects the speed of a toy car at the bottom, what is being changed?",
+        "example_response": "The height of the ramp is being changed.",
+        "common_errors": [
+          "Not being able to name the dependent variable (what is measured)",
+          "Confusing what is changed with what is measured"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Correctly identifies the independent, dependent, and control variables in a described experiment.",
+        "example_task": "In an experiment to test how the height of a ramp affects the speed of a toy car at the bottom, identify the independent variable, dependent variable, and two control variables.",
+        "example_response": "Independent variable: the height of the ramp (what I change). Dependent variable: the speed of the car at the bottom (what I measure). Control variables: the same car and the same surface of the ramp, so the only thing that changes is the height.",
+        "common_errors": [
+          "Mixing up independent and dependent variables",
+          "Only listing one control variable when there are several"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Identifies variables in complex experiments, explains why each control variable must be kept constant, and recognises confounding variables that could invalidate results.",
+        "example_task": "A student investigates whether the type of surface affects friction. They drag a wooden block across sandpaper, carpet, and a polished table, measuring the force needed with a force meter. Identify all variables and explain one potential confounding variable.",
+        "example_response": "Independent variable: type of surface (sandpaper, carpet, polished table). Dependent variable: force needed to drag the block (measured with a force meter in newtons). Control variables: same block (same mass, same bottom surface), same speed of pulling, same force meter. A potential confounding variable is the speed of pulling — if the student pulls faster on one surface, the friction force may change. This would mean any differences could be due to speed rather than surface type. To avoid this, the student should try to pull at a constant speed each time, or use a motorised pulling mechanism.",
+        "common_errors": [
+          "Not identifying the confounding variable or explaining how it could affect results",
+          "Forgetting that the same block must be used each time — different blocks have different masses and surfaces"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Designs experiments with clearly identified variables in unfamiliar contexts, anticipates confounding variables and designs controls to address them, and evaluates whether someone else's experimental design has adequate variable control.",
+        "example_task": "A company claims their new insulating material keeps drinks hotter for longer than a standard mug. Design a rigorous experiment to test this claim, identifying all variables and potential confounders.",
+        "example_response": "Independent variable: type of container (new insulating material vs standard ceramic mug). Dependent variable: temperature of the water after 30 minutes (measured with a digital thermometer, ±0.1°C resolution). Control variables: same volume of water (250 ml), same starting temperature (80°C, measured with the thermometer), same room temperature, same lid (or both without lids). Potential confounders: (1) Different surface areas — if the containers are different sizes, the one with larger surface area will cool faster regardless of insulation. I would choose containers of similar size and shape. (2) Evaporation — if one container has a wider opening, more heat is lost through evaporation. I would use identical lids. (3) Room air currents — a draught could cool one container faster. I would place both in the same location. I would repeat the test 5 times to ensure reliability and calculate means. To strengthen the evidence further, I would test at multiple time intervals (every 5 minutes for 60 minutes) to plot a cooling curve.",
+        "common_errors": [
+          "Not matching the containers for size and shape, which introduces a confounding variable",
+          "Measuring temperature at only one time point rather than multiple intervals to characterise the full cooling behaviour"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Follows a provided experimental method with guidance, but struggles to plan an investigation independently.",
+        "example_task": "How would you find out whether sugar dissolves faster in hot water than cold water?",
+        "example_response": "Put sugar in hot water and cold water and see which one dissolves first.",
+        "common_errors": [
+          "Describing the investigation in vague terms without specifying a method",
+          "Not considering what to keep the same (control variables)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Plans a simple fair test with identifiable variables, a basic method, and a list of equipment.",
+        "example_task": "Plan an experiment to find out whether sugar dissolves faster in hot water than cold water. Include your variables, equipment, and method.",
+        "example_response": "Independent variable: temperature of water (hot and cold). Dependent variable: time for sugar to dissolve (measured with a stopwatch). Control variables: same amount of sugar, same amount of water, same type of sugar, same stirring. Equipment: two beakers, thermometer, sugar, stopwatch, measuring cylinder, teaspoon. Method: Measure 100 ml of water into each beaker. Heat one to 60°C. Add one teaspoon of sugar to each at the same time and stir. Time how long each takes to dissolve.",
+        "common_errors": [
+          "Not specifying how much sugar or water to use",
+          "Forgetting to include repeat measurements"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Selects the most appropriate type of scientific enquiry for a given question, writes a detailed method including repeats and risk assessment, and justifies choices of equipment and technique.",
+        "example_task": "Design a complete investigation to find out how the concentration of salt solution affects the height to which celery sticks absorb the liquid in 24 hours. Justify your experimental choices.",
+        "example_response": "This is a fair test investigating osmosis. Independent variable: salt concentration (0%, 2%, 5%, 10%, 15% salt solutions — 5 concentrations gives enough data points to identify a trend). Dependent variable: height of coloured liquid absorbed by the celery after 24 hours (measured in mm with a ruler). Control variables: same length of celery (10 cm), same volume of solution (100 ml), same temperature (room temperature), same type of celery (from the same bunch, similar width), same food colouring added to see absorption. Method: Prepare 5 solutions using a balance and measuring cylinder. Add food colouring to each. Cut 15 celery sticks to 10 cm (3 per concentration for repeats). Place celery in solutions and leave for 24 hours. Measure the height of colour absorption. Risk assessment: salt solutions are low hazard; take care with sharp knives when cutting celery. I chose 5 concentrations because fewer would not show a clear trend, and 3 repeats per concentration allows me to calculate means and identify anomalies.",
+        "common_errors": [
+          "Using too few concentrations to identify a clear pattern",
+          "Not including repeat measurements to assess reliability"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Designs investigations for complex or unfamiliar scenarios, selects between different enquiry types with justification, accounts for confounding variables, and evaluates the limitations of their chosen design.",
+        "example_task": "You want to investigate whether there is a relationship between air pollution levels and the diversity of lichen species on trees in your local area. Design an appropriate investigation.",
+        "example_response": "This requires a pattern-seeking investigation rather than a fair test, because I cannot experimentally control air pollution levels. I would identify 10 sampling sites at increasing distances from a busy road (0m, 50m, 100m, 200m, 500m, etc.). At each site, I would select 3 trees of similar species, size, and aspect. On each tree, I would use a 10x10 cm quadrat on the north-facing side at 1.5m height and count the number of different lichen species present (species diversity). I would also record potential confounding variables: tree species, tree diameter, aspect, proximity to other pollution sources. I would use secondary data from local air quality monitoring stations to estimate pollution levels at each distance. Limitations: this is a correlational study — I can identify a pattern but cannot prove causation because other factors (e.g. microclimate, tree age) may vary with distance from the road. The sample size (30 trees) gives reasonable statistical power but may not capture all variation. I would present results as a scatter graph (distance from road vs lichen diversity) and describe the correlation.",
+        "common_errors": [
+          "Attempting to design a fair test when only a correlational study is possible",
+          "Not acknowledging that correlation does not prove causation in this type of investigation"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Uses basic laboratory equipment with guidance and follows safety instructions, but requires reminders about correct technique.",
+        "example_task": "Light a Bunsen burner safely. What colour should the flame be for heating and why?",
+        "example_response": "The flame should be blue for heating because the blue flame is hotter.",
+        "common_errors": [
+          "Leaving the airhole open while lighting, risking an invisible blue flame",
+          "Thinking the yellow flame is hotter because it looks bigger"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses standard laboratory equipment correctly and independently, including measuring cylinders, thermometers, balances, and Bunsen burners, with attention to safety.",
+        "example_task": "Measure exactly 35 cm³ of water using a measuring cylinder. Describe the correct technique.",
+        "example_response": "I would use a 50 cm³ measuring cylinder for best precision. I would place it on a flat surface, pour water to just below the 35 cm³ mark, then add water carefully with a pipette to reach exactly 35 cm³. I would read the volume at eye level, looking at the bottom of the meniscus (the curved surface of the water), not the top. The meniscus curves because water is attracted to the glass walls.",
+        "common_errors": [
+          "Reading the top of the meniscus instead of the bottom, giving a measurement that is too high",
+          "Looking down at the measuring cylinder from above, introducing a parallax error"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Selects appropriate apparatus for the task, uses a range of techniques competently including microscopy and chromatography, and evaluates the suitability of apparatus for achieving required precision.",
+        "example_task": "You need to observe and draw plant cells under a microscope. Describe the technique from slide preparation to final drawing.",
+        "example_response": "1. Prepare the slide: cut a thin section of onion epidermis with a scalpel, place on a glass slide, add a drop of iodine stain (to make cell walls and nuclei visible), lower a cover slip at an angle to avoid air bubbles. 2. Focus: start with the lowest magnification objective, adjust the coarse focus until the cells are visible, then switch to medium magnification and use the fine focus. 3. Draw: use a sharp pencil, draw clear unbroken lines, label the cell wall, nucleus, cytoplasm, and vacuole. Draw at least 3-4 cells to show the arrangement. Add a title, magnification, and a scale bar. Do not shade the drawing — use stippling if needed. 4. Calculate magnification: measure the image size of one cell, divide by the actual cell size (approximately 0.1 mm for onion epidermal cells).",
+        "common_errors": [
+          "Creating air bubbles under the cover slip by dropping it straight down instead of lowering at an angle",
+          "Drawing cells with artistic shading rather than clear scientific line drawings"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Adapts techniques for unfamiliar investigations, troubleshoots equipment problems, and evaluates the limitations of available apparatus for the required measurements.",
+        "example_task": "You are asked to determine the vitamin C content of different fruit juices but the school only has basic equipment (measuring cylinders, pipettes, DCPIP solution, and test tubes). Describe how you would adapt a titration technique and evaluate its limitations.",
+        "example_response": "I would use DCPIP (dichlorophenolindophenol) solution, which is blue but turns colourless when vitamin C (ascorbic acid) is added. Method: Place 1 cm³ of DCPIP in a test tube. Use a pipette to add fruit juice drop by drop, counting drops, until the DCPIP just turns colourless. The fewer drops needed, the higher the vitamin C concentration. Repeat 3 times for each juice and calculate the mean. Limitations: Without a burette, I am measuring in drops rather than cm³, which is less precise — drop sizes vary depending on technique. I could improve this by using a graduated pipette if available. The endpoint (when the colour disappears) is subjective — different people may judge it differently. A colorimeter would give an objective measurement. The DCPIP method also responds to other reducing agents in the juice, not just vitamin C, so it may overestimate the vitamin C content. Despite these limitations, this method gives useful comparative data if I am consistent in my technique.",
+        "common_errors": [
+          "Not recognising that the drop-counting method has lower precision than a burette-based titration",
+          "Not accounting for the subjective nature of the colour-change endpoint"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Makes basic measurements using simple equipment but may forget to record units or read instruments incorrectly.",
+        "example_task": "Measure the temperature of a beaker of water using a thermometer.",
+        "example_response": "The temperature is 23.",
+        "common_errors": [
+          "Recording the measurement without a unit (should be 23°C)",
+          "Not waiting for the thermometer reading to stabilise before recording"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Makes and records measurements accurately with correct units, distinguishes between qualitative observations and quantitative measurements, and records data in appropriate tables.",
+        "example_task": "Design a results table for an experiment measuring the mass of salt that dissolves in 100 cm³ of water at different temperatures (20°C, 40°C, 60°C, 80°C). You are doing 3 repeats at each temperature.",
+        "example_response": "Table title: Mass of salt dissolved in 100 cm³ of water at different temperatures. Columns: Temperature (°C) | Mass dissolved — Trial 1 (g) | Mass dissolved — Trial 2 (g) | Mass dissolved — Trial 3 (g) | Mean mass dissolved (g). Rows: 20, 40, 60, 80. Units are in the column headers, not repeated in every cell.",
+        "common_errors": [
+          "Putting units in every cell rather than in the column header",
+          "Not including space for repeat measurements or a mean column"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Selects instruments with appropriate resolution for the measurement required, reads instruments correctly, records data systematically, and identifies when observations are qualitative versus quantitative.",
+        "example_task": "You need to measure the volume of gas produced during a chemical reaction over 5 minutes. The reaction produces approximately 50 cm³ of gas. Would you use an inverted measuring cylinder (graduated every 1 cm³) or a gas syringe (graduated every 0.5 cm³)? Justify your choice.",
+        "example_response": "I would use the gas syringe because it has finer graduations (0.5 cm³ compared to 1 cm³), giving more precise measurements. The gas syringe also allows continuous measurement as gas enters — I can read the volume at regular intervals (every 30 seconds) without disturbing the apparatus. The inverted measuring cylinder requires reading through water, which can introduce parallax error. However, if the reaction is very vigorous, the gas syringe plunger might not move smoothly, so I would need to check it is not sticking before I start. The 50 cm³ capacity of a standard gas syringe is well-matched to the expected volume.",
+        "common_errors": [
+          "Choosing equipment based on familiarity rather than suitability for the measurement",
+          "Not considering that the resolution of the instrument limits the precision of the measurement"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the uncertainty of measurements, selects measurement strategies that minimise total error, and adapts measurement approaches when standard methods are insufficient.",
+        "example_task": "You need to measure the thickness of a single sheet of paper, but your ruler only measures to the nearest millimetre. How would you obtain a more precise measurement?",
+        "example_response": "A single sheet of paper is approximately 0.1 mm thick, which is below the resolution of a standard ruler (1 mm). To measure it, I would stack 100 sheets of the same paper, measure the total thickness of the stack with the ruler (giving approximately 10 mm), and then divide by 100. This gives a thickness per sheet of approximately 0.10 mm — a measurement 100 times more precise than directly measuring one sheet. The uncertainty of ±1 mm in the stack measurement becomes ±0.01 mm per sheet when divided by 100. This technique works because the random errors in the thickness of individual sheets average out over 100 sheets. I would also repeat with a different batch of 100 sheets to check reproducibility. This is an example of a general strategy: when a single measurement is too small for your instrument, measure many identical items together and divide.",
+        "common_errors": [
+          "Trying to measure a single sheet directly and recording '0 mm' because it is below the ruler's resolution",
+          "Not explaining why the stacking technique increases precision — it is the division by a large number that reduces the uncertainty per item"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that experiments do not always go as planned but has difficulty identifying specific problems or suggesting improvements.",
+        "example_task": "Your experiment to measure how temperature affects dissolving did not give the results you expected. What might have gone wrong?",
+        "example_response": "Maybe I did something wrong or made a mistake.",
+        "common_errors": [
+          "Giving vague responses like 'human error' without being specific about what the error was",
+          "Assuming unexpected results must be wrong rather than investigating what caused them"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies specific limitations in a method and suggests concrete improvements, distinguishing between what went wrong and how to fix it.",
+        "example_task": "In an experiment, you timed how long a ball took to roll down a ramp using a stopwatch. Your results were: 1.2s, 1.8s, 1.3s, 1.4s, 1.2s. Evaluate the reliability of your method.",
+        "example_response": "The results are mostly consistent (1.2-1.4s) but 1.8s looks anomalous. This could be caused by my reaction time when starting and stopping the stopwatch — human reaction time is about 0.2-0.3 seconds, which is a significant proportion of the measurement (about 20%). To improve reliability, I could use light gates connected to a data logger to remove the human timing error, or I could use a longer ramp so the time is larger and the reaction time error becomes a smaller proportion.",
+        "common_errors": [
+          "Suggesting 'be more careful' as an improvement rather than proposing specific changes to equipment or method",
+          "Not quantifying the potential error (e.g. human reaction time) relative to the measurement"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Systematically evaluates methods for random and systematic errors, suggests specific improvements that would increase accuracy or precision, and assesses whether the method is valid for the conclusion being drawn.",
+        "example_task": "A student measured the temperature of water heated by a Bunsen burner every minute for 10 minutes. They placed the thermometer against the glass wall of the beaker. Evaluate this method and suggest improvements.",
+        "example_response": "This method has a systematic error: the thermometer is measuring the temperature of the glass, not the water. Glass is heated directly by the flame and is hotter than the water, so all temperature readings will be systematically too high. Improvement: place the thermometer in the centre of the water, not touching the glass, and stir the water to distribute heat evenly. There may also be random errors from reading the thermometer — using a digital temperature probe would give more precise, objective readings. Another issue is that the student measured at 1-minute intervals — if the water is heating rapidly, they might miss the point where the temperature plateaus (boiling). More frequent measurements (every 30 seconds) would give better resolution. Finally, the method does not account for heat loss to the surroundings — using an insulated beaker would reduce this and give a more valid measurement of the energy input from the Bunsen burner.",
+        "common_errors": [
+          "Not distinguishing between the systematic error (thermometer position) and random errors (reading inaccuracies)",
+          "Not recognising that a systematic error biases all results in the same direction and cannot be reduced by taking more readings"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the validity and reliability of methods in unfamiliar contexts, proposes modifications that address multiple sources of error simultaneously, and assesses whether conclusions are justified given the limitations of the method.",
+        "example_task": "A student concludes that copper is a better thermal conductor than aluminium because a copper rod melted wax further along its length after 5 minutes of heating. Critically evaluate whether this conclusion is justified by the method used.",
+        "example_response": "The conclusion may not be valid because the method does not adequately control for confounding variables. First, the rods may have different cross-sectional areas or lengths — a thicker rod conducts more heat regardless of material. Second, the initial temperature of the rods must be the same. Third, 'distance wax melted' depends on how much wax was applied and how evenly — this is a crude measure. More critically, thermal conductivity depends on both the material and the geometry. To validly compare conductivity, the student would need rods of identical dimensions (same length, same diameter), would need to ensure the same amount of heat is delivered to each (using identical Bunsen burner settings), and would need to measure temperature rather than wax melting (using thermocouples at fixed distances along each rod). Even then, the conclusion that copper conducts better than aluminium contradicts the established data (aluminium has higher thermal conductivity per unit mass, though copper has higher thermal conductivity per unit volume). The student's method is too imprecise to distinguish between these materials reliably.",
+        "common_errors": [
+          "Accepting the conclusion without questioning whether the method can validly distinguish between the two materials",
+          "Not recognising that the rod dimensions must be identical for a fair comparison of thermal conductivity"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands that you cannot measure every individual in a large population and that you need a sample, but does not understand why sampling method matters.",
+        "example_task": "You want to find out how many daisies are in the school field. Why can you not simply count every single one?",
+        "example_response": "There are too many to count. It would take too long.",
+        "common_errors": [
+          "Not recognising that a sample must be representative of the whole area",
+          "Thinking you can just count the daisies in one small patch and assume the whole field is the same"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses quadrats to sample a habitat and calculates a simple population estimate, understanding that random sampling reduces bias.",
+        "example_task": "You use a 0.25 m² quadrat to count daisies in 10 random positions on a 200 m² field. Your counts are: 3, 5, 2, 4, 3, 6, 4, 3, 5, 4. Estimate the total number of daisies on the field.",
+        "example_response": "Mean per quadrat: (3+5+2+4+3+6+4+3+5+4) ÷ 10 = 39 ÷ 10 = 3.9 daisies per 0.25 m². Daisies per m²: 3.9 ÷ 0.25 = 15.6 per m². Total estimate: 15.6 × 200 = 3,120 daisies. This is an estimate because I only sampled 2.5 m² out of 200 m² (1.25% of the field).",
+        "common_errors": [
+          "Forgetting to scale up from the quadrat area to the total field area",
+          "Not placing quadrats randomly — choosing 'good' spots introduces sampling bias"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Selects appropriate sampling techniques for different situations, explains the assumptions underlying each technique, and evaluates the reliability of population estimates based on sample size.",
+        "example_task": "You want to estimate the population of woodlice under logs in a woodland. Explain why you would use the capture-recapture method rather than quadrats, and describe the assumptions this method relies on.",
+        "example_response": "Quadrats are unsuitable because woodlice are mobile — they would move in and out of the quadrat during counting. Capture-recapture works better for mobile organisms. Method: capture a sample, mark them (with a small dot of non-toxic paint), release them, wait 24 hours for them to mix back into the population, then recapture a second sample and count how many are marked. Population estimate = (number in first sample × number in second sample) ÷ number of marked individuals in second sample. Assumptions: (1) no births, deaths, immigration, or emigration between samples; (2) marks do not affect survival or behaviour; (3) marked individuals mix randomly with the population; (4) all individuals have an equal chance of being captured. If any assumption is violated, the estimate will be inaccurate — for example, if marked woodlice are more visible to predators, fewer will be recaptured and the population will be overestimated.",
+        "common_errors": [
+          "Not stating the assumptions of capture-recapture or understanding why they matter",
+          "Forgetting that the marking method must not harm the organism or make it more visible to predators"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Designs sampling strategies for complex ecological investigations, evaluates sources of error and bias in sampling methods, and adapts techniques to address specific challenges of the habitat or organism being studied.",
+        "example_task": "You want to investigate how plant species diversity changes with distance from a river. Design a sampling strategy and explain how you would ensure your data is valid and representative.",
+        "example_response": "I would use a belt transect perpendicular to the river, because a transect captures the continuous change in conditions with distance. At regular intervals (every 2 metres from the riverbank to 30 metres inland), I would place a 0.5 m² quadrat and record: species present, percentage cover of each species, and soil moisture (using a moisture meter). I would repeat this using 3 parallel transects at least 20 metres apart to ensure my results are representative and not affected by local anomalies (a fallen tree, a path, etc.). For validity, I would control the transect direction (always perpendicular to the river), record at consistent distances, and identify species using a field guide. I would calculate a diversity index (e.g. Simpson's Index) at each distance to quantify diversity rather than just counting species. Sources of bias: seasonal variation (different species visible at different times), subjective percentage cover estimates, and the transect may cross micro-habitats that confound the distance variable. To address these, I would sample at the same time of year, have two people independently estimate cover, and record any local features that might explain anomalies.",
+        "common_errors": [
+          "Using random quadrats when a transect is clearly the appropriate method for studying a gradient",
+          "Not including replicate transects, making it impossible to distinguish the general pattern from local variation"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Performs simple arithmetic in scientific contexts (addition, subtraction) but struggles with multi-step calculations or applying formulae.",
+        "example_task": "A car travels 120 km in 2 hours. What is its average speed?",
+        "example_response": "120 divided by 2 is 60. The speed is 60.",
+        "common_errors": [
+          "Giving the answer without units (should be 60 km/h)",
+          "Not knowing which number to divide by which in the speed equation"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Substitutes values into standard scientific formulae correctly, includes units in answers, and performs basic unit conversions.",
+        "example_task": "Calculate the density of a metal block that has a mass of 540 g and a volume of 200 cm³. Give your answer in g/cm³.",
+        "example_response": "Density = mass ÷ volume = 540 g ÷ 200 cm³ = 2.7 g/cm³. This is the density of aluminium.",
+        "common_errors": [
+          "Dividing volume by mass instead of mass by volume",
+          "Forgetting the units or giving incorrect units (e.g. g instead of g/cm³)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Rearranges formulae to find different variables, performs multi-step calculations with correct unit conversions, and expresses answers to an appropriate number of significant figures.",
+        "example_task": "A spring has a spring constant of 25 N/m. How much energy is stored in the spring when it is extended by 0.20 m? Use the equation E = ½ke².",
+        "example_response": "E = ½ × k × e² = ½ × 25 × (0.20)² = ½ × 25 × 0.04 = 0.50 J. The spring stores 0.50 joules of elastic potential energy. I gave my answer to 2 significant figures to match the precision of the input data (0.20 m is 2 significant figures).",
+        "common_errors": [
+          "Forgetting to square the extension before multiplying (calculating ½ × 25 × 0.20 = 2.5 J instead of 0.50 J)",
+          "Not converting units where needed (e.g. using cm instead of m when the formula requires metres)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies mathematical reasoning to complex, multi-step scientific problems, selects and combines appropriate equations, and evaluates whether the mathematical answer is physically reasonable.",
+        "example_task": "A 1,200 kg car accelerates from rest to 30 m/s. Calculate the kinetic energy gained. If the car travels 450 m during this acceleration, calculate the average force applied. State any assumptions.",
+        "example_response": "Step 1: Kinetic energy gained: Ek = ½mv² = ½ × 1200 × 30² = ½ × 1200 × 900 = 540,000 J = 540 kJ. Step 2: Work done equals energy transferred: W = F × d, so F = W ÷ d = 540,000 ÷ 450 = 1,200 N. This is the average net force. Assumptions: (1) I have assumed all the work done goes into kinetic energy, with no energy lost to friction or air resistance. In reality, resistance forces would mean the engine must produce more force than 1,200 N. (2) I have calculated the average force — the actual force may vary during the acceleration. (3) I have assumed a straight-line journey. A reality check: 1,200 N is roughly the force that a small car engine produces, which is physically reasonable.",
+        "common_errors": [
+          "Not squaring the velocity when calculating kinetic energy",
+          "Not recognising that friction means the engine force must be greater than the calculated net force"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Records data in a basic list or table, but may not choose appropriate graph types or label axes correctly.",
+        "example_task": "You measured the height of a plant every day for a week. How would you present this data?",
+        "example_response": "I would draw a graph. Day 1 was 5 cm, Day 2 was 5.5 cm, and so on.",
+        "common_errors": [
+          "Choosing a bar chart for continuous data when a line graph would be more appropriate",
+          "Not labelling the axes with variables and units"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Selects the correct type of graph for the data, labels axes with variables and units, plots points accurately, and draws a line of best fit where appropriate.",
+        "example_task": "You investigated the effect of temperature on enzyme activity. Your data shows temperatures (20, 30, 40, 50, 60°C) and reaction rates (1.2, 2.4, 3.8, 2.1, 0.4 cm³/min). Draw and describe the appropriate graph.",
+        "example_response": "I would draw a line graph because both variables are continuous. The x-axis shows temperature (°C) and the y-axis shows reaction rate (cm³/min). I would plot the five points and draw a smooth curve of best fit (not connecting dot-to-dot) because the relationship is not linear — it rises, peaks at about 40°C, and then falls due to enzyme denaturation.",
+        "common_errors": [
+          "Connecting points dot-to-dot instead of drawing a smooth curve of best fit",
+          "Plotting temperature on the y-axis instead of the x-axis (the independent variable goes on the x-axis)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Constructs graphs with appropriate scales, draws accurate lines of best fit, uses graphs to interpolate and extrapolate, and presents data using the most effective format for the audience.",
+        "example_task": "Present the following data in the most appropriate format and justify your choice: the effect of fertiliser concentration (0, 5, 10, 15, 20, 25 g/L) on plant height (cm) after 4 weeks. There are 5 plants at each concentration.",
+        "example_response": "I would present this as a scatter graph with fertiliser concentration on the x-axis and plant height on the y-axis, because both variables are continuous. I would plot all 5 individual data points at each concentration (not just the mean) to show the spread of data. I would then add a line of best fit through the means to show the overall trend. I would use a sensible scale that uses most of the graph paper (e.g. x-axis 0-30, y-axis from the minimum to maximum height observed). This format is better than a bar chart because it shows both the trend and the variability at each concentration. If I only plotted means, I would add error bars (using the range or standard deviation) to show the spread.",
+        "common_errors": [
+          "Using a bar chart for continuous x-axis data when a scatter graph is more appropriate",
+          "Using scales that compress the data into a small area of the graph, making trends difficult to see"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Selects between multiple presentation methods to communicate data most effectively, creates compound graphs, calculates gradients and rates from graphs, and critically evaluates the presentation choices of others.",
+        "example_task": "You have data showing UK energy generation by source (coal, gas, nuclear, wind, solar) for the years 2000, 2010, and 2020. What is the best way to present this data and why?",
+        "example_response": "I would use a stacked bar chart or a stacked area chart with years on the x-axis and percentage of total energy on the y-axis, with each source as a different colour. This format shows both the overall trend (how the total mix changes over time) and the individual contribution of each source. An alternative would be a multiple line graph showing each source as a separate line — this is better for comparing rates of change but does not show proportions as clearly. I would avoid a pie chart because, while it shows proportions at a single time point, comparing three pie charts side by side is cognitively difficult. A table of raw numbers would be included as a supplement for readers who want precise values, but the visual representation communicates the trends more effectively. I would include a key, appropriate labels, and a descriptive title.",
+        "common_errors": [
+          "Using three separate pie charts when a stacked bar chart allows much easier comparison across years",
+          "Not considering the audience and purpose when selecting the presentation format"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies obvious patterns in data (e.g. 'it goes up') but descriptions lack precision or reference to the variables.",
+        "example_task": "Look at this data table showing temperature (°C) and number of ice cream sales: 15°C/50, 20°C/120, 25°C/200, 30°C/310. What pattern do you notice?",
+        "example_response": "The numbers get bigger when it is hotter.",
+        "common_errors": [
+          "Describing the pattern vaguely without naming the variables",
+          "Not using data values to support the pattern description"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes patterns using the names of variables and data values, and identifies positive and negative correlations.",
+        "example_task": "Describe the pattern in the ice cream data: 15°C/50 sales, 20°C/120 sales, 25°C/200 sales, 30°C/310 sales.",
+        "example_response": "There is a positive correlation between temperature and ice cream sales: as temperature increases from 15°C to 30°C, the number of ice cream sales increases from 50 to 310. The hotter it is, the more ice cream is sold.",
+        "common_errors": [
+          "Using the term 'positive correlation' without explaining what it means",
+          "Stating that temperature causes more ice cream sales without considering other factors"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Identifies trends, correlations, and anomalies in data, distinguishes between correlation and causation, and uses data values to support descriptions of patterns.",
+        "example_task": "Data shows a positive correlation between a country's chocolate consumption per capita and its number of Nobel Prize winners. Does this mean eating chocolate makes you smarter?",
+        "example_response": "No. A correlation means two variables change together, but it does not mean one causes the other. The correlation between chocolate consumption and Nobel Prizes is likely explained by a third factor — wealthier countries tend to both consume more chocolate and invest more in education and research, producing more Nobel laureates. This is called a confounding variable. To establish causation, you would need a controlled experiment showing that chocolate directly improves cognitive ability, which this data does not provide. This is a good example of why 'correlation does not imply causation' is a fundamental principle in data analysis.",
+        "common_errors": [
+          "Assuming correlation implies causation without considering confounding variables",
+          "Not identifying the likely third variable that explains both correlated observations"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex datasets to identify multiple patterns, evaluates the strength and significance of correlations, and uses patterns to make evidence-based predictions while acknowledging uncertainty.",
+        "example_task": "A dataset shows the relationship between CO₂ concentration in the atmosphere (measured in ppm) and global average temperature from 1960 to 2020. The correlation coefficient is 0.95. Evaluate this data and discuss what it tells us about climate change.",
+        "example_response": "A correlation coefficient of 0.95 indicates a very strong positive correlation between CO₂ concentration and global temperature. However, correlation alone does not prove causation. The evidence for causation comes from the known mechanism: CO₂ absorbs infrared radiation, which is well-established physics (demonstrated in laboratory experiments since the 1850s by Tyndall and Arrhenius). The correlation supports the mechanism, and the timing matches — CO₂ began rising sharply after the Industrial Revolution when fossil fuel burning increased. Potential confounders include solar activity and volcanic eruptions, but climate models that include only natural factors cannot explain the observed warming — only models that include human CO₂ emissions match the data. The strength of the climate change evidence comes from this combination: a strong correlation, a known physical mechanism, temporal alignment, and the inability of alternative explanations to account for the observations. However, the relationship is not perfectly linear — feedback loops (e.g. melting ice reducing albedo, permafrost releasing methane) mean small increases in CO₂ can trigger amplified warming.",
+        "common_errors": [
+          "Citing the correlation alone as proof of causation without discussing the underlying mechanism",
+          "Dismissing the correlation because 'correlation does not equal causation' without considering the wealth of supporting evidence"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "States what happened in the experiment but does not link findings to the original question or use data to support conclusions.",
+        "example_task": "You investigated whether plants grow taller in light or dark. The plants in light grew to 15 cm and the plants in dark grew to 8 cm. What is your conclusion?",
+        "example_response": "The plants in light grew more.",
+        "common_errors": [
+          "Restating the results without forming a conclusion that answers the original question",
+          "Not using specific data values to support the conclusion"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Draws conclusions that answer the original question and are supported by data, comparing the prediction with the outcome.",
+        "example_task": "You predicted that plants would grow taller in light. Your results showed light plants grew to 15 cm and dark plants grew to 8 cm after 2 weeks. Write a conclusion.",
+        "example_response": "My results support my prediction. Plants grown in light (15 cm) grew significantly taller than plants grown in the dark (8 cm) over 2 weeks — almost twice as tall. This suggests that light is needed for healthy plant growth, which makes sense because plants use light for photosynthesis to produce glucose for energy and growth.",
+        "common_errors": [
+          "Writing the conclusion as 'my prediction was right' without explaining the science behind the result",
+          "Not referencing specific data values from the experiment"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Writes evidence-based conclusions that reference data, compare with predictions, provide scientific explanations, and acknowledge limitations.",
+        "example_task": "You investigated the effect of pH on enzyme activity. The enzyme worked fastest at pH 7 and very slowly at pH 2 and pH 12. Write a full conclusion.",
+        "example_response": "The enzyme showed maximum activity at pH 7 (the rate was 4.2 cm³/min) with activity decreasing sharply at both lower and higher pH values (0.3 cm³/min at pH 2, 0.5 cm³/min at pH 12). This supports my prediction that enzymes have an optimum pH. The scientific explanation is that extreme pH values change the charge on the amino acids in the enzyme's active site, altering its three-dimensional shape (denaturation), so the substrate can no longer fit. At pH 7, the active site has the correct shape for substrate binding. A limitation of this experiment is that I only tested 6 pH values, so the true optimum might be slightly above or below 7. Testing at pH 6, 6.5, 7, 7.5, and 8 would give a more precise optimum. Also, I only used one type of enzyme — different enzymes have different optimum pH values (e.g. stomach pepsin works best at pH 2).",
+        "common_errors": [
+          "Concluding beyond the data — for example, claiming this applies to all enzymes when only one was tested",
+          "Not acknowledging limitations that affect the confidence of the conclusion"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Draws nuanced conclusions that consider the strength of evidence, alternative explanations, and the broader scientific context, and evaluates whether the data justifies the conclusion with appropriate confidence.",
+        "example_task": "A student finds that plants watered with 'music water' (water exposed to classical music for 24 hours) grow 2 cm taller after 3 weeks than plants watered with regular water. They conclude that music makes plants grow better. Evaluate this conclusion.",
+        "example_response": "The conclusion is not well-supported by the evidence for several reasons. First, the difference (2 cm over 3 weeks) is small and may be within the range of natural variation between individual plants — without knowing the standard deviation and sample size, we cannot assess whether this difference is statistically significant. Second, there is no known scientific mechanism by which sound waves could alter the chemical composition of water. Third, there are multiple confounding variables: the 'music water' was stored separately for 24 hours, which could have changed its temperature, dissolved gas content, or allowed chlorine to dissipate — any of these could affect plant growth. A valid experiment would need: larger sample sizes (at least 20 plants per group), a control group with water stored for 24 hours without music, measurements of water properties (temperature, pH, dissolved oxygen), and statistical testing to determine whether the difference is significant. Without these controls, the most parsimonious explanation is that the difference is due to chance or an uncontrolled variable, not the music.",
+        "common_errors": [
+          "Accepting the conclusion uncritically because the data shows a difference, without evaluating whether the difference is meaningful",
+          "Not considering simpler alternative explanations (confounding variables) before accepting an extraordinary claim"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C019",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Describes what happened in an experiment but does not explain why using scientific knowledge.",
+        "example_task": "You heated ice and it turned to water. Explain why this happened.",
+        "example_response": "The ice melted because I heated it up.",
+        "common_errors": [
+          "Describing what happened (melting) without explaining the mechanism (energy increasing particle movement)",
+          "Circular reasoning — 'it melted because it was heated' does not explain the process"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Provides explanations that link observations to basic scientific concepts, using the Claim-Evidence-Reasoning framework with support.",
+        "example_task": "Explain why the ice melted when heated, using your knowledge of particles.",
+        "example_response": "When the ice was heated, energy was transferred to the water particles. This gave the particles more kinetic energy, causing them to vibrate more. Eventually the particles had enough energy to overcome the forces holding them in their fixed positions, and they could move past each other. This is why the solid ice changed to liquid water — the particles went from a fixed arrangement to being able to flow.",
+        "common_errors": [
+          "Saying the particles 'expand' or 'get bigger' when heated — the particles themselves do not change size",
+          "Not linking the energy input to the breaking of forces between particles"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Constructs clear, logical scientific explanations using the Claim-Evidence-Reasoning framework independently, linking data to scientific theory with a chain of reasoning.",
+        "example_task": "A student found that the rate of a chemical reaction doubled when the temperature was increased from 20°C to 30°C. Explain why, using particle theory.",
+        "example_response": "Claim: Increasing temperature increases the rate of reaction. Evidence: The rate doubled when temperature increased from 20°C to 30°C. Reasoning: At higher temperatures, particles have more kinetic energy, so they move faster. This has two effects: (1) particles collide more frequently because they are moving faster through the solution, and (2) a greater proportion of collisions have enough energy to overcome the activation energy barrier and result in a successful reaction. Both effects increase the rate of reaction. The approximate doubling of rate for a 10°C rise is a well-known pattern in chemistry and is consistent with collision theory. This explanation links the macroscopic observation (reaction speeds up) to the microscopic mechanism (faster particles, more energetic collisions).",
+        "common_errors": [
+          "Only mentioning increased collision frequency without also mentioning increased collision energy",
+          "Not linking the explanation to the concept of activation energy"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Constructs multi-level explanations that link evidence to theory at different scales, evaluates competing explanations, and identifies where existing scientific models are incomplete or simplified.",
+        "example_task": "Two students disagree about why a can of fizzy drink feels cold when opened. Student A says 'the gas escaping takes heat with it.' Student B says 'the dissolved CO₂ coming out of solution is an endothermic process.' Evaluate both explanations using your scientific knowledge.",
+        "example_response": "Both explanations have some validity, but they operate at different levels. Student A's explanation (gas carrying heat away) is partially correct: when CO₂ gas escapes, it carries some thermal energy with it, slightly cooling the can. However, this effect is small because the mass of gas is tiny compared to the liquid. Student B's explanation is more scientifically precise: dissolved CO₂ coming out of solution is endothermic — energy is absorbed from the surrounding liquid to break the intermolecular attractions between CO₂ molecules and water molecules, causing the liquid to cool. Additionally, the rapid expansion of gas from high pressure (inside the can) to low pressure (atmosphere) causes adiabatic cooling — the gas does work expanding against the atmosphere, reducing its internal energy. The dominant cooling effect is probably the combination of endothermic dissolution and adiabatic expansion, rather than just 'heat escaping with the gas.' This demonstrates that everyday phenomena often have multiple contributing mechanisms operating at different scales, and a complete explanation requires identifying and evaluating the relative importance of each.",
+        "common_errors": [
+          "Accepting only one explanation when multiple mechanisms contribute",
+          "Not evaluating the relative importance of each mechanism"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C020",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that experimental results are not always perfect, but attributes all inaccuracies to vague 'human error'.",
+        "example_task": "Your measurements of temperature during a heating experiment were not exactly what you expected. Why might this be?",
+        "example_response": "Probably because of human error — I might have read the thermometer wrong.",
+        "common_errors": [
+          "Using 'human error' as a catch-all explanation without specifying what the error was",
+          "Not distinguishing between mistakes (avoidable) and inherent measurement uncertainty (unavoidable)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies specific sources of error in experiments and begins to distinguish between random and systematic errors.",
+        "example_task": "A student measures the mass of a beaker on a balance that has not been zeroed. The balance reads 0.5 g when empty. How will this affect their results? What type of error is this?",
+        "example_response": "This is a systematic error because every measurement will be 0.5 g too high. All their mass readings will be wrong by the same amount. They need to zero the balance before measuring, or subtract 0.5 g from every reading. This is different from random error, which would cause readings to scatter around the true value.",
+        "common_errors": [
+          "Thinking that repeating measurements will fix a systematic error — it will not, because all readings are offset by the same amount",
+          "Confusing systematic error (consistent offset) with random error (scatter)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Systematically identifies random and systematic errors in their own experiments, explains their effects on accuracy and precision, and suggests specific strategies to reduce each type.",
+        "example_task": "In a titration experiment, your results were: 24.2 cm³, 24.8 cm³, 24.5 cm³, 24.3 cm³, 24.4 cm³. Identify the type of error shown by this data, calculate the mean and range, and suggest how to improve.",
+        "example_response": "The data shows random error — the values scatter around a central value (mean = 24.44 cm³) with a range of 0.6 cm³. Random error is caused by small, unpredictable variations in technique (e.g. slightly different speed of adding solution, judging the colour change endpoint differently each time). Mean: (24.2+24.8+24.5+24.3+24.4) ÷ 5 = 24.44 cm³. The mean is the best estimate of the true value because random errors tend to cancel out. To reduce random error: take more repeats (increasing from 5 to 10 would give a more reliable mean), use a white tile under the flask for a clearer endpoint, and add solution more slowly near the endpoint. Note: I cannot tell from this data alone whether there is also a systematic error — the mean might be consistently offset from the true value if, for example, the burette was miscalibrated.",
+        "common_errors": [
+          "Thinking the range is the error — the range shows the spread of random error, but systematic error is not visible from repeated measurements alone",
+          "Not calculating the mean as the best estimate of the true value"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Quantifies the impact of errors on experimental conclusions, propagates uncertainty through calculations, and designs experiments that minimise both random and systematic errors.",
+        "example_task": "A student measures the density of aluminium by finding mass (27.0 ± 0.1 g) and volume (10.0 ± 0.5 cm³). Calculate the density and evaluate whether the uncertainty in the result is small enough to distinguish aluminium (2.70 g/cm³) from iron (7.87 g/cm³) and magnesium (1.74 g/cm³).",
+        "example_response": "Density = 27.0 ÷ 10.0 = 2.70 g/cm³. To estimate the uncertainty, I combine the percentage uncertainties: mass uncertainty = (0.1/27.0) × 100 = 0.37%, volume uncertainty = (0.5/10.0) × 100 = 5.0%. Total percentage uncertainty ≈ 0.37% + 5.0% = 5.37%. So density = 2.70 ± 0.14 g/cm³ (range: 2.56 to 2.84 g/cm³). This is easily distinguishable from iron (7.87) and magnesium (1.74) because neither falls within the uncertainty range. The volume measurement contributes the most uncertainty (5% vs 0.37%), so to improve precision, I should focus on measuring volume more accurately — perhaps by using a more precise measuring cylinder or water displacement with a burette instead. The mass measurement is already sufficiently precise. This analysis shows that improving the least precise measurement gives the greatest improvement in the final result.",
+        "common_errors": [
+          "Not propagating uncertainties through the calculation to the final answer",
+          "Trying to improve the most precise measurement instead of focusing on the least precise one"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C021",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Considers the experiment finished once results are collected, without thinking about what further questions arise.",
+        "example_task": "You found that larger parachutes fall more slowly. What could you investigate next?",
+        "example_response": "I could try even bigger parachutes.",
+        "common_errors": [
+          "Only suggesting repeating the same experiment with minor changes rather than asking new questions",
+          "Not recognising that results naturally lead to new investigations"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies new questions arising from experimental results that extend the investigation in a meaningful direction.",
+        "example_task": "You found that larger parachutes fall more slowly. Suggest two further questions you could investigate.",
+        "example_response": "1. Does the shape of the parachute (circular, square, triangular) affect how slowly it falls, if the area is kept the same? 2. Does the material of the parachute (plastic bag, tissue paper, fabric) affect the fall time?",
+        "common_errors": [
+          "Suggesting questions that are not testable or are too vague",
+          "Not building on the findings of the original experiment"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Generates well-reasoned further questions that build on experimental findings, identifies gaps in the evidence, and explains why each new question would be scientifically valuable.",
+        "example_task": "You investigated the effect of light intensity on the rate of photosynthesis and found the rate increases then plateaus. What further questions arise and why are they important?",
+        "example_response": "1. What is the limiting factor at high light intensities — is it CO₂ concentration or temperature? This matters because if I increase CO₂ as well, I might be able to push the rate higher. 2. Does the optimum light intensity vary between different plant species? This is important for agriculture — knowing which crops are most efficient at different light levels could improve greenhouse design. 3. At what light intensity does photodamage occur? Very high light intensities might actually reduce the rate by damaging chlorophyll. These questions build on the original finding by exploring the mechanism behind the plateau and the practical applications of the relationship.",
+        "common_errors": [
+          "Asking further questions that do not logically follow from the original findings",
+          "Not explaining the scientific or practical significance of the proposed further investigation"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Connects experimental findings to broader scientific questions and real-world applications, proposes research programmes with multiple linked investigations, and evaluates which further questions are most scientifically significant.",
+        "example_task": "Your class found that different soil types support different plant communities. Design a series of three linked investigations that would build on this finding, explaining how each builds on the previous one.",
+        "example_response": "Investigation 1: Characterise the soil — measure pH, moisture content, nutrient levels, and particle size at each site. This establishes the specific abiotic factors that differ between soils, moving beyond the vague category of 'soil type'. Investigation 2: Controlled greenhouse experiment — grow the same plant species in each soil type under identical conditions (same light, water, temperature). This tests whether the soil properties directly affect plant growth, controlling for other field variables like aspect, shade, and grazing. Investigation 3: Manipulation experiment — take one soil type and systematically alter one factor (e.g. add lime to increase pH, add fertiliser to increase nutrients) and observe the effect on plant community composition. This moves from correlation (Investigation 1) through controlled comparison (Investigation 2) to causal manipulation (Investigation 3). Each investigation builds on the previous one: the first identifies patterns, the second tests whether the relationship is causal in controlled conditions, and the third identifies the specific mechanism. This mirrors how scientific research programmes develop — from observation to controlled experiment to mechanistic understanding.",
+        "common_errors": [
+          "Proposing three unrelated investigations rather than a linked sequence that builds understanding",
+          "Not recognising the progression from correlational observation to controlled experiment to mechanistic investigation"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C022",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that scientists use specific units for measurements but may confuse common SI units or forget to include them.",
+        "example_task": "What unit do scientists use to measure mass?",
+        "example_response": "Grams. Or maybe kilograms.",
+        "common_errors": [
+          "Confusing mass (kilograms) with weight (newtons)",
+          "Not knowing that the SI unit of mass is the kilogram, not the gram"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies common SI units for mass, length, time, temperature, and force, and consistently includes correct units in calculations and answers.",
+        "example_task": "Match each quantity to its correct SI unit: mass, length, time, temperature, force, energy, current.",
+        "example_response": "Mass = kilogram (kg), Length = metre (m), Time = second (s), Temperature = kelvin (K) [though °C is commonly used in school science], Force = newton (N), Energy = joule (J), Current = ampere (A).",
+        "common_errors": [
+          "Giving grams instead of kilograms as the SI unit of mass",
+          "Confusing joules (energy) with watts (power)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Converts between SI units using prefixes (kilo, centi, milli, micro), selects appropriate units for the context, and uses correct units throughout multi-step calculations.",
+        "example_task": "Convert the following: (a) 2.5 km to metres, (b) 450 g to kilograms, (c) 30 minutes to seconds, (d) 250 cm³ to dm³.",
+        "example_response": "(a) 2.5 km = 2.5 × 1000 = 2,500 m. (b) 450 g = 450 ÷ 1000 = 0.45 kg. (c) 30 minutes = 30 × 60 = 1,800 s. (d) 250 cm³ = 250 ÷ 1000 = 0.25 dm³. In each case, I multiply to convert to smaller units and divide to convert to larger units. The key prefixes are: kilo = ×1000, centi = ÷100, milli = ÷1000.",
+        "common_errors": [
+          "Multiplying when you should divide (or vice versa) when converting units",
+          "Confusing dm³ (1 dm³ = 1000 cm³ = 1 litre) with m³"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses standard form for very large and very small quantities, derives units for complex quantities, and evaluates whether units in a calculation are consistent before solving.",
+        "example_task": "The speed of light is 300,000,000 m/s and a hydrogen atom has a diameter of approximately 0.000000000106 m. Express both in standard form. Then explain why consistent units matter in the equation E = mc².",
+        "example_response": "Speed of light: 3.0 × 10⁸ m/s. Hydrogen atom diameter: 1.06 × 10⁻¹⁰ m. Standard form makes very large and very small numbers manageable and reduces errors. In E = mc², the units must be consistent: mass in kg, speed in m/s. If mass is in kilograms and speed is in metres per second, energy comes out in joules: [kg] × [m/s]² = kg·m²/s² = J. If I accidentally used grams instead of kilograms, my energy value would be 1,000 times too small. Unit consistency is not just about convention — it is about getting the correct numerical answer. This is why scientists always convert to SI units before substituting into equations.",
+        "common_errors": [
+          "Writing standard form incorrectly (e.g. 30 × 10⁷ instead of 3.0 × 10⁸ — the coefficient must be between 1 and 10)",
+          "Not checking that all values in an equation use consistent units before calculating"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C024",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that science uses equations to describe relationships but struggles to substitute values or rearrange them.",
+        "example_task": "Speed = distance ÷ time. A cyclist travels 30 km in 2 hours. What is their speed?",
+        "example_response": "30 divided by 2 is 15. The speed is 15 km per hour.",
+        "common_errors": [
+          "Dividing the wrong way around (time ÷ distance)",
+          "Forgetting to include units in the answer"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Substitutes values into given equations correctly, includes units, and uses the formula triangle as a tool for simple rearrangements.",
+        "example_task": "Using the equation density = mass ÷ volume, calculate the volume of a gold bar with a mass of 193 g and a density of 19.3 g/cm³.",
+        "example_response": "I need to rearrange: volume = mass ÷ density = 193 ÷ 19.3 = 10.0 cm³. Using the formula triangle: mass is on top, density and volume are on the bottom. Cover volume to find volume = mass ÷ density.",
+        "common_errors": [
+          "Multiplying instead of dividing when rearranging",
+          "Not rearranging the equation and trying to use it in its original form"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Rearranges equations algebraically without relying on formula triangles, handles equations with squared terms, and selects the appropriate equation for a given problem.",
+        "example_task": "A ball of mass 0.5 kg has 10 J of kinetic energy. Calculate its speed. Use Ek = ½mv².",
+        "example_response": "Rearrange for v: Ek = ½mv², so v² = 2Ek/m = (2 × 10) ÷ 0.5 = 40. Therefore v = √40 = 6.3 m/s (to 2 significant figures). I rearranged by multiplying both sides by 2, dividing by m, then taking the square root.",
+        "common_errors": [
+          "Forgetting to take the square root as the final step",
+          "Not multiplying by 2 when rearranging — common error is v² = Ek/m instead of v² = 2Ek/m"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Combines multiple equations to solve complex problems, derives equations from first principles where needed, and evaluates whether the answer is physically reasonable.",
+        "example_task": "A 60 kg skydiver falls from rest. After falling 500 m (ignoring air resistance), what is their speed? Use Ep = mgh and Ek = ½mv². Take g = 10 N/kg.",
+        "example_response": "By conservation of energy, the gravitational potential energy lost equals the kinetic energy gained: mgh = ½mv². The mass cancels: gh = ½v², so v² = 2gh = 2 × 10 × 500 = 10,000. Therefore v = √10,000 = 100 m/s. This is approximately 360 km/h or 224 mph — which is realistic for a skydiver in a streamlined position without air resistance. In reality, air resistance would mean their actual speed is lower, reaching a terminal velocity of approximately 55 m/s. The key insight is that mass cancels, meaning all objects fall at the same rate in a vacuum (as Galileo demonstrated). This derivation also shows that speed depends on the square root of distance — to double the speed, you need to fall four times as far.",
+        "common_errors": [
+          "Not realising that mass cancels from both sides, making the calculation simpler",
+          "Not performing a reality check on the answer — 100 m/s without air resistance is reasonable, but 1000 m/s would indicate an error"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C025",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows what an average is and can calculate a simple mean, but does not understand why statistical analysis is important in science.",
+        "example_task": "Calculate the mean of these measurements: 4, 6, 5, 7, 3.",
+        "example_response": "Add them up: 4 + 6 + 5 + 7 + 3 = 25. Divide by 5: 25 ÷ 5 = 5. The mean is 5.",
+        "common_errors": [
+          "Dividing by the wrong number of values",
+          "Confusing mean, median, and mode"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates means and ranges from experimental data, explains why means are more reliable than single measurements, and identifies anomalous results before calculating.",
+        "example_task": "Five groups measured the time for a pendulum to complete 10 swings: 12.3s, 12.1s, 12.4s, 15.2s, 12.2s. Calculate the mean and range, accounting for any anomalies.",
+        "example_response": "The value 15.2s is anomalous — it is much higher than the others, probably due to a timing mistake. Excluding it: mean = (12.3 + 12.1 + 12.4 + 12.2) ÷ 4 = 48.5 ÷ 4 = 12.25s. Range of remaining values = 12.4 - 12.1 = 0.3s. The small range indicates good repeatability. The mean is a more reliable estimate of the true value than any single measurement because random errors tend to cancel out.",
+        "common_errors": [
+          "Including the anomalous result (15.2s) in the mean calculation, which distorts it",
+          "Not explaining why the anomalous result was excluded"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses scatter graphs to identify correlations, describes the strength of correlations qualitatively, and explains how sample size affects the reliability of statistical conclusions.",
+        "example_task": "You have data from 30 students showing hours of sleep per night and test scores. The scatter graph shows a positive trend but with considerable spread. Describe the correlation and explain what it tells us.",
+        "example_response": "The scatter graph shows a weak positive correlation — students who sleep more tend to score higher on tests, but there is a lot of variation. Many students who sleep the same number of hours have quite different scores, suggesting that sleep is one of many factors affecting test performance (study habits, natural ability, and stress also play a role). With 30 data points, the trend is suggestive but not conclusive. A larger sample (perhaps 200+ students) would give more confidence in whether the correlation is real or just coincidence. Importantly, this is a correlation, not proof of causation — it could be that more organised students both sleep more and study more effectively, with a third factor (organisation) driving both.",
+        "common_errors": [
+          "Describing a weak correlation as 'no correlation' or treating it as strong evidence of a relationship",
+          "Not considering sample size when evaluating the reliability of the correlation"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates whether differences between datasets are likely to be significant, uses measures of spread to assess reliability, and recognises the limitations of basic statistical techniques.",
+        "example_task": "Group A (n=10) tested plant growth with Fertiliser X and got a mean height of 15.2 cm (range 12-19 cm). Group B (n=10) used Fertiliser Y and got 16.8 cm (range 11-22 cm). A student concludes Fertiliser Y is better. Evaluate this conclusion.",
+        "example_response": "The conclusion is not well-supported. The difference in means (1.6 cm) is much smaller than the ranges of both groups (7 cm for A, 11 cm for B). The ranges overlap substantially (12-19 for A, 11-22 for B), meaning many individual plants in Group A grew taller than many in Group B. With only 10 plants per group and such large variation, the 1.6 cm difference could easily be due to natural variation between individual plants rather than the fertiliser. To strengthen this conclusion, the student would need: (1) a much larger sample size (at least 30 per group) to reduce the effect of individual variation, (2) a statistical test (such as a t-test) to calculate the probability that the difference is due to chance, and (3) controlled conditions to ensure the only variable is the fertiliser. As it stands, the data is consistent with both fertilisers having the same effect — the apparent difference is not statistically significant.",
+        "common_errors": [
+          "Concluding one treatment is better based on means alone without considering the overlap in ranges",
+          "Not recognising that small sample sizes with large variation cannot support confident conclusions about small differences"
+        ]
+      }
+    ]
+  }
+]

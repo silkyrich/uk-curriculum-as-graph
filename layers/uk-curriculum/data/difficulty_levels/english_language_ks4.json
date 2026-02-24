@@ -1,0 +1,737 @@
+[
+  {
+    "concept_id": "ENL-KS4-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can retrieve explicitly stated information from a text but struggles to read between the lines or explain what is implied.",
+        "example_task": "Read this extract from a newspaper article about homelessness. Find two facts the writer states directly and one thing the writer implies without saying it directly.",
+        "example_response": "The writer states that 'the number of rough sleepers has increased by 30% since 2019' and that 'the nearest shelter is three miles away'. I think the writer also implies that the government is not doing enough because they mention that 'no new funding has been announced'. But I am not sure if that counts as inference because the writer nearly says it directly.",
+        "common_errors": [
+          "Confusing inference with personal opinion -- 'I think homelessness is bad' is not an inference from the text",
+          "Only retrieving surface-level facts without attempting to read between the lines"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can identify both explicit and implicit meanings and attempts to support inferences with textual evidence, though evidence selection is sometimes imprecise.",
+        "example_task": "Read this extract from a 21st-century travel article. Identify what the writer explicitly tells us about the place and what they imply about their feelings towards it. Support your points with quotation.",
+        "example_response": "The writer explicitly states that 'the town square was empty at noon' and that 'every shop front carried a closing-down sale sign'. Implicitly, the writer seems to feel that the town is dying economically -- the phrase 'closing-down sale' repeated across many shops suggests permanent decline, not seasonal change. The empty square at noon implies that the town lacks the community life you would expect. The writer does not directly say the town is failing but the details they select all point in that direction.",
+        "common_errors": [
+          "Selecting quotations that do not clearly support the inference being made",
+          "Identifying an implied meaning but not explaining the textual evidence that supports it"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Confidently distinguishes explicit from implicit meaning, selects precise evidence, and synthesises information across a text or across two texts to build an interpretation.",
+        "example_task": "Read Source A (a 21st-century article about city living) and Source B (a 19th-century letter about rural life). Using details from both sources, write a summary of the differences between the writers' experiences of their environments.",
+        "example_response": "Source A presents city living as stimulating but exhausting -- the writer describes 'the relentless hum of traffic' and 'a coffee shop on every corner', implying both convenience and sensory overload. Source B, by contrast, presents rural life as peaceful but isolating: the writer's phrase 'not a soul for three miles in any direction' explicitly states physical distance while implying emotional loneliness. Both writers acknowledge trade-offs: Source A admits that 'the anonymity can feel like freedom or like invisibility', suggesting ambivalence, while Source B concedes that 'the silence, which at first was a blessing, has become a weight'. The key difference is that Source A's writer chooses to stay despite the negatives, while Source B's writer is beginning to question their choice.",
+        "common_errors": [
+          "Summarising each source separately rather than synthesising points of comparison",
+          "Including only explicit information without identifying what each writer implies"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Interprets layers of meaning with subtlety, evaluates the strength of evidence for different inferences, and synthesises complex or contradictory information across sources with analytical precision.",
+        "example_task": "Read Source A (a 21st-century investigative article on fast fashion) and Source B (a 19th-century letter from a factory inspector). Synthesise what both sources reveal about attitudes to workers, considering what is stated and what is implied.",
+        "example_response": "Both sources expose the exploitation of workers, but their methods of implication differ significantly. Source A states that 'garment workers in Dhaka earn $95 a month' -- an explicit fact -- but implies moral culpability through juxtaposition: the preceding sentence describes a high-street dress costing $12. The reader must calculate the disparity themselves, which is rhetorically more powerful than direct accusation. Source B's factory inspector explicitly documents 'children no older than nine years, their fingers raw from the spindles', but the implied audience is governmental -- the formal register and evidential precision suggest a man building a legal case, not appealing to emotion. What is most striking is what both sources omit: neither quotes the workers themselves. Source A interviews a brand spokesperson; Source B addresses Parliament. This absence -- the silent worker -- is perhaps the most significant implicit meaning in both texts, suggesting that in both centuries the voices of the exploited are mediated through those with power.",
+        "common_errors": [
+          "Treating all inferences as equally well-supported rather than evaluating which have stronger textual evidence",
+          "Failing to notice significant omissions or silences in a text as a form of implicit meaning"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can name language features (e.g. 'the writer uses a metaphor') but struggles to explain the effect of those features on the reader.",
+        "example_task": "Read this extract from a novel. Identify one language technique the writer uses and explain its effect.",
+        "example_response": "The writer uses alliteration: 'the slow, steady stream'. This makes the sentence sound nice and flow well.",
+        "common_errors": [
+          "Identifying a technique without explaining its specific effect -- 'it makes the reader want to read on' is too vague",
+          "Confusing simile and metaphor, or mislabelling techniques"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains the effect of individual language choices with some precision, using subject terminology correctly, but tends to treat each technique in isolation rather than considering how techniques work together.",
+        "example_task": "Read this extract from a short story. Analyse how the writer uses language to create a sense of danger.",
+        "example_response": "The writer uses the verb 'lunged' to describe the dog's movement, which creates a sudden, violent image -- the word suggests an attack rather than normal movement. The simile 'teeth like a row of broken glass' makes the reader visualise sharp, irregular edges that could cut, associating the dog with injury. The short sentence 'It was closer now' creates tension through its bluntness -- the lack of detail forces the reader to imagine the worst. Each technique contributes to a building sense of physical threat.",
+        "common_errors": [
+          "Analysing each technique as a separate point without connecting them to the overall effect",
+          "Focusing only on figurative language and missing the effect of sentence structure or verb choices"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses how language and structural choices work together to create specific effects, using precise subject terminology embedded naturally in a sustained analytical response.",
+        "example_task": "Read lines 10-25 of this fiction extract. Analyse how the writer uses language and structure to present the character's fear.",
+        "example_response": "The writer opens the extract with a long, breathless sentence that mimics the character's racing thoughts: 'She could hear it in the walls, in the floor, in the spaces between the floorboards where the draught crept through like fingers reaching'. The listing of locations ('walls', 'floor', 'spaces') creates a sense of encirclement, while the simile 'like fingers reaching' personifies the draught as something predatory, transforming a domestic detail into a threat. Structurally, the writer then shifts to a series of fragments: 'A creak. A pause. Then another.' The fragmentation forces the reader to pause between each sound, replicating the character's hypervigilance. The use of 'then' as a sentence opener delays the third sound, creating suspense. The semantic field shifts from the physical ('walls', 'floor') to the psychological ('she imagined', 'she told herself', 'she almost believed'), signalling the character's retreat into her own mind. The final sentence -- 'The handle turned' -- is devastating in its simplicity: after the elaborate internal landscape, the external reality intrudes with just three words.",
+        "common_errors": [
+          "Analysing language without discussing structure, or vice versa",
+          "Using subject terminology as decoration rather than as a tool for precise analysis"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Produces sophisticated analysis that evaluates the writer's methods with critical independence, considers alternative interpretations, and explains how language and structure create meaning at multiple levels simultaneously.",
+        "example_task": "Read lines 1-30 of this 20th-century fiction extract. Evaluate how successfully the writer uses language and structure to create a sense of the character's isolation.",
+        "example_response": "The writer constructs isolation through three simultaneous strategies: spatial, linguistic, and structural. Spatially, the opening paragraph maps a progressively emptying landscape -- 'the last house', 'the road narrowing to a track', 'the track dissolving into grass' -- a geographical regression that mirrors the character's psychological withdrawal from society. The verb 'dissolving' is particularly effective: it implies that civilisation does not end abruptly but fades, suggesting the character has crossed a boundary she cannot precisely locate, which intensifies the sense of disorientation. Linguistically, the writer strips away dialogue entirely. The extract is monologic -- we hear only the character's internal voice, which itself becomes increasingly sparse. The early paragraphs contain complex, reflective sentences; by line 20, the prose has contracted to bare observation: 'Sky. Stone. Water.' This syntactic diminishment is arguably more powerful than any metaphor because it enacts isolation at the formal level -- the character's language is failing alongside her connection to other people. Structurally, the writer delays the single piece of external information -- the letter in her pocket, mentioned only in line 28 -- creating a retrospective reinterpretation of everything that precedes it. The isolation is not accidental but chosen, and this revelation reframes the 'dissolving' road as a deliberate escape rather than a passive drift. Whether this reframing makes the isolation more or less disturbing is left to the reader -- the writer's refusal to resolve the ambiguity is itself a structural choice that extends the theme of uncertainty.",
+        "common_errors": [
+          "Offering a single interpretation without considering how alternative readings are possible",
+          "Evaluating only whether the writing is 'effective' in general terms rather than analysing precisely how specific choices create specific effects"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can identify basic structural features (e.g. 'the text begins with...', 'the text ends with...') but treats structure as a list of events rather than a series of deliberate choices.",
+        "example_task": "Read this fiction extract. How has the writer structured the text? What does the opening focus on and what does the ending focus on?",
+        "example_response": "The opening focuses on the setting -- it describes a house and a garden. The ending focuses on the character leaving. The writer starts with a description and ends with action.",
+        "common_errors": [
+          "Describing what happens in the text without explaining why the writer arranged it this way",
+          "Treating a structure question as a retelling of events"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies shifts in focus, perspective or pace across a text and begins to explain why these shifts matter, though analysis tends to focus on one or two structural features rather than the whole text.",
+        "example_task": "Read this fiction extract. How does the writer use structural changes across the text to create interest for the reader?",
+        "example_response": "The writer begins with a wide-angle view of the town -- 'from the hill, the rooftops looked like teeth' -- which creates a distant, slightly unsettling perspective. In the middle of the extract, the focus narrows to a single street and then to a single door, as though the camera is zooming in. This shift from wide to narrow builds anticipation because the reader wonders what is behind the door. The pace also changes: the opening paragraphs are slow and descriptive, but the final paragraph uses shorter sentences, which speeds up the reading and creates urgency.",
+        "common_errors": [
+          "Identifying a shift in focus without explaining its effect on the reader",
+          "Commenting on the beginning and end but ignoring the middle of the text"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses the whole-text structure as a coherent set of deliberate choices, explaining how the sequence, pacing, and shifts in focus create meaning and shape the reader's response across the entire extract.",
+        "example_task": "Read this fiction extract from beginning to end. Analyse how the writer has structured the text to interest the reader. You should write about the whole text.",
+        "example_response": "The writer structures the text as a reversal. The opening three paragraphs present the character as powerful and in control -- she is described from other characters' perspectives ('they watched her', 'nobody dared'), establishing dominance through external observation. The structural turning point arrives in paragraph four with a shift from external to internal perspective: 'But she knew.' This sentence, isolated as its own paragraph, marks the transition from public performance to private doubt. The second half of the extract systematically dismantles the impression the first half created: the confident gestures are revealed as rehearsed, the authoritative voice is shown to shake when nobody is listening. The final image -- 'she locked the door and sat on the floor' -- echoes the opening image of her standing at the head of a boardroom table, creating a structural contrast between public elevation and private collapse. The whole-text structure therefore works as dramatic irony: the reader now knows something the other characters do not.",
+        "common_errors": [
+          "Writing about language features when the question asks specifically about structure",
+          "Identifying structural shifts without linking them to the overall meaning or effect of the text"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates how structural choices interact with language choices to create complex and layered meanings, considering how the arrangement of the text positions the reader and manipulates their expectations.",
+        "example_task": "Read this fiction extract. Evaluate how the writer uses structure to manipulate the reader's response to the main character. Consider the whole text in your answer.",
+        "example_response": "The writer uses a three-part structure that systematically recalibrates the reader's sympathies. The opening section withholds the character's name -- referring to him only as 'the man' -- and positions the reader at a suspicious distance: the external details (the 'heavy coat in summer', the 'bag held too tightly') invite us to read him as threatening. This is a structural manipulation: the writer exploits our learned associations between certain visual cues and danger. The middle section introduces his interior voice through free indirect discourse -- 'he had promised her he would bring the bread, and the bread was in the bag, and the bag must not be dropped' -- and suddenly the 'heavy coat' and 'tight grip' are recontextualised as poverty and care, not threat. The reader's sympathy shifts precisely because the structural sequence forces us to judge first and understand second, making us complicit in the prejudice the text exposes. The final section returns to the external perspective of the opening -- 'the woman on the bus moved her bag to the other seat' -- but now the reader experiences this moment differently because of what we learned in the middle section. The circular structure does not resolve: it leaves the reader suspended between two readings. This is arguably more powerful than a redemptive ending because it implicates the reader in the social dynamics the text depicts, rather than allowing us a comfortable resolution.",
+        "common_errors": [
+          "Analysing structure as separate from meaning rather than showing how structural arrangement creates meaning",
+          "Not recognising how the writer uses structural sequence to position the reader's response"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can express a personal opinion about a text ('I liked it' / 'it was boring') but does not support the judgement with textual evidence or explain what the writer was trying to achieve.",
+        "example_task": "Read this fiction extract. A student said: 'The writer makes the reader feel sympathetic towards the main character.' To what extent do you agree?",
+        "example_response": "I agree because the character is quite sad and the reader feels sorry for them. The writer describes bad things happening to the character which makes you feel bad for them.",
+        "common_errors": [
+          "Expressing agreement or disagreement without referencing specific moments in the text",
+          "Summarising the plot rather than evaluating the writer's techniques"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Makes evaluative statements supported by textual evidence but tends to agree fully with a given statement rather than offering a qualified or nuanced judgement.",
+        "example_task": "A student said: 'The writer makes the storm scene terrifying.' To what extent do you agree? Use evidence from the text to support your answer.",
+        "example_response": "I agree that the storm scene is terrifying. The writer uses the verb 'screamed' to describe the wind, personifying it as if it were alive and in pain, which frightens the reader. The short sentence 'Lightning split the sky' is sudden and violent, mirroring the shock of the lightning itself. The metaphor 'the sea was a black mouth' suggests something monstrous that could swallow the characters, creating a primal fear of being consumed. Each of these techniques contributes to a sustained atmosphere of danger.",
+        "common_errors": [
+          "Agreeing entirely without considering whether any parts of the text are less successful",
+          "Using evaluative vocabulary ('effective', 'powerful') without explaining why the technique is effective or powerful"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Offers a nuanced evaluative judgement that agrees, disagrees or qualifies a critical statement, supporting each element of the evaluation with precise textual evidence and explaining the effect on the reader.",
+        "example_task": "A student said: 'The writer brings the character of the grandmother vividly to life.' To what extent do you agree? You should write about the whole extract.",
+        "example_response": "The writer is largely successful in creating a vivid character, though the vividness operates differently in different parts of the extract. In the opening, the grandmother is presented through sensory detail -- 'her hands smelled of flour and lavender, always both' -- which is effective because it grounds the character in physical reality and creates a sense of routine. The dialogue is convincingly idiosyncratic: 'Well, it is what it is, and it will be what it will be' captures a particular kind of resigned wisdom that feels authentic rather than generic. However, the writer is arguably less successful in the final paragraph, where the grandmother's reaction to the news shifts into melodrama: 'a cry tore from her throat'. This is a cliched phrase that undermines the careful specificity of the earlier characterisation. Where the opening used precise, original detail to create vividness, the ending relies on a stock emotional gesture. Overall, the characterisation is vivid when the writer trusts concrete detail, but weakens when the writing reaches for emotional intensity through familiar language.",
+        "common_errors": [
+          "Qualifying the evaluation superficially ('the writer is mostly effective') without grounding the qualification in specific textual evidence",
+          "Identifying weaknesses in the writing without explaining why they are less effective"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Produces a critically independent evaluation that engages with the complexities of the text, challenges a given critical position with subtlety, and demonstrates awareness of how different readers might respond differently to the same techniques.",
+        "example_task": "A student said: 'The writer's description of the city is so vivid that the reader feels they are actually there.' To what extent do you agree? You should consider the whole extract and evaluate critically.",
+        "example_response": "The claim that the reader 'feels they are actually there' assumes a realist standard of vividness -- that the writer's aim is to reproduce sensory experience faithfully. I would argue that the writer is doing something more interesting. The opening paragraph does use precise sensory detail: 'the tar-and-sugar smell of roasting chestnuts', 'the percussion of a hundred heels on wet stone'. These details are effective because they engage multiple senses simultaneously and are specific enough to evoke a real place. However, from paragraph three onwards, the writer deliberately breaks the realist mode. The description becomes surreal: 'the buildings leaned in like conspirators', 'the traffic lights blinked in morse code, spelling out a warning no one could read'. These images do not help the reader feel they are 'actually there' because they do not describe the city as it is -- they describe the city as it feels to a mind under pressure. This is a different kind of vividness: psychological rather than photographic. A reader who values immersive realism might find the surreal elements jarring, but I would argue they create a more memorable and emotionally truthful representation of urban anxiety. The writer's vividness lies not in mimicking reality but in making the reader experience the city the way the character does -- distorted, heightened and slightly threatening. Whether this constitutes being 'actually there' depends on whether we define 'there' as the physical place or the character's subjective experience of it.",
+        "common_errors": [
+          "Accepting the terms of the critical statement without interrogating its assumptions",
+          "Offering a sophisticated reading without anchoring it in specific textual evidence"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can identify what each text is about and notes obvious similarities or differences in topic, but discusses each text separately rather than making genuine comparisons.",
+        "example_task": "Read Source A (a modern newspaper article about zoos) and Source B (a 19th-century letter about a menagerie). Compare how the two writers convey their different attitudes to keeping animals in captivity.",
+        "example_response": "Source A is about modern zoos and says they help conservation. The writer thinks zoos are good. Source B is about a menagerie in the 1800s and the writer describes the animals. The writer seems interested in the animals but does not say if menageries are good or bad.",
+        "common_errors": [
+          "Writing about each source in turn without comparing them directly",
+          "Identifying the topic of each text without identifying the writer's attitude or perspective"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Makes direct comparisons between the two texts using comparative connectives, addressing both what the writers think and some aspects of how they express their views, though analysis of methods is limited.",
+        "example_task": "Compare how the writers of Source A and Source B convey their different perspectives on city life. Use evidence from both sources.",
+        "example_response": "Both writers describe city life but from very different perspectives. Source A's writer presents the city as exciting, using dynamic verbs like 'buzzing' and 'pulsing' to suggest energy. In contrast, Source B's 19th-century writer presents the city as dangerous, describing 'the stench of the gutter' and 'the cries of the wretched', which creates a much more negative sensory picture. While Source A focuses on the cultural benefits of city living, Source B focuses on the human cost of urbanisation. However, both writers acknowledge complexity -- Source A admits the city 'never lets you rest' and Source B concedes that 'the spectacle, at least, is never dull'.",
+        "common_errors": [
+          "Comparing only content (what they say) without comparing methods (how they say it)",
+          "Producing an unbalanced response that discusses one source in much more detail than the other"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Produces a genuinely integrated comparison that addresses ideas, perspectives and methods across both texts, using evidence from each to support comparative analytical points.",
+        "example_task": "Compare how the writers of Source A (a 21st-century speech about education) and Source B (a 19th-century essay about schooling) convey their different views about the purpose of education.",
+        "example_response": "Both writers argue passionately about education's purpose, but their fundamental premises differ. Source A's writer views education as empowerment -- 'every child deserves the tools to shape their own future' uses the metaphor of 'tools' to present education as practical and individually liberating. Source B's writer, by contrast, views education as moral formation: 'the purpose of instruction is not the filling of a vessel but the shaping of a character'. The metaphor of 'shaping' implies external moulding by an authority, which contrasts sharply with Source A's language of individual agency. This difference reflects their respective contexts: Source A addresses a 21st-century audience that values personal choice, while Source B writes within a Victorian framework of moral duty. Methodologically, Source A uses inclusive pronouns ('we', 'our children', 'together') to build solidarity with the audience, while Source B uses the authoritative third person ('the educator must...', 'it is the duty of...'), reflecting the 19th-century expectation that education is directed by experts, not negotiated. Both writers are persuasive, but they persuade differently: Source A appeals to shared values (pathos), while Source B appeals to moral obligation (ethos).",
+        "common_errors": [
+          "Comparing only surface-level differences without analysing how methods reflect underlying perspectives",
+          "Not connecting differences in method to differences in context or purpose"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Produces a sophisticated, critically aware comparison that analyses how writers' methods are shaped by their contexts and purposes, identifying subtle as well as obvious points of comparison and evaluating the relative effectiveness of each writer's approach.",
+        "example_task": "Compare how the writers of Source A and Source B convey their perspectives on the relationship between humans and the natural world. Consider both what they say and how they say it.",
+        "example_response": "The two writers present superficially similar perspectives -- both express concern about humanity's treatment of the natural world -- but their rhetorical strategies reveal fundamentally different conceptions of the problem. Source A's 21st-century writer frames the relationship as a crisis requiring collective action: the imperative mood ('we must act', 'the time for debate is over') and the statistical evidence ('1 million species face extinction') position the reader as a responsible citizen who must respond to data. Nature is presented as a resource under threat -- the vocabulary is economic ('ecosystem services', 'biodiversity loss', 'natural capital'), reflecting a contemporary tendency to value nature in instrumental terms. Source B's 19th-century writer, by contrast, frames the relationship as spiritual. Nature is not a resource but a revelation: 'in the turning of the leaf, I saw the hand of the Creator'. The contemplative tone, the first-person singular voice, and the extended metaphor of nature as divine text position the reader not as a citizen but as a worshipper. What is most revealing is the structural parallel: both writers build towards a final appeal, but Source A appeals to fear ('if we do not act now, it will be too late') while Source B appeals to wonder ('let us not be so dull as to miss the miracle'). Source A assumes the reader needs to be frightened into action; Source B assumes the reader needs to be awakened into attention. Both are forms of persuasion, but they reveal different assumptions about what motivates human behaviour -- and, arguably, different conceptions of what nature itself means. Whether the instrumentalist or the spiritual approach is more persuasive depends on the reader's own framework, which is precisely why comparing these two texts is instructive: they expose the values we bring to environmental discourse.",
+        "common_errors": [
+          "Comparing methods without connecting them to the underlying perspectives and values of each writer",
+          "Treating the 19th-century text as simply 'old-fashioned' rather than analysing how its historical moment shapes its rhetorical choices"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Finds 19th-century texts difficult to access due to unfamiliar vocabulary and sentence structures, and tends to disengage rather than persist with meaning-making.",
+        "example_task": "Read this extract from a 19th-century travel account. What is the writer describing? What is their attitude to what they see?",
+        "example_response": "The writer is describing a journey somewhere. They mention a carriage and a road. I think they are impressed by the scenery because they use lots of description. Some of the words are hard to understand.",
+        "common_errors": [
+          "Giving up on unfamiliar vocabulary rather than using context clues to infer meaning",
+          "Assuming that 19th-century texts are simply 'hard' rather than recognising they follow different conventions"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can follow the meaning of 19th-century texts with support, identifies some conventions of the period, and begins to contextualise the writer's perspective within their historical moment.",
+        "example_task": "Read this extract from a Victorian journalist's account of visiting a workhouse. What is the writer's attitude to what they see, and how does the language reflect the period?",
+        "example_response": "The writer seems horrified by the conditions. They describe the inmates as 'wretched souls' and the building as 'a monument to neglect', which shows strong negative feelings. The formal language -- 'it is incumbent upon the reader to consider' -- sounds very different from modern journalism. The long sentences and formal tone are typical of Victorian writing and suggest the writer is addressing an educated, middle-class audience who might have the power to change things.",
+        "common_errors": [
+          "Recognising the formal register of 19th-century writing without explaining why writers of the period adopted it",
+          "Identifying the writer's attitude without connecting it to the historical context of the text"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Reads 19th-century texts with confidence, understands genre conventions (travel writing, letters, journalism, autobiography), and integrates contextual knowledge to explain why writers of the period make specific choices.",
+        "example_task": "Read this extract from a 19th-century letter written by a woman travelling alone in Europe. Analyse how the writer's language and perspective are shaped by the conventions and expectations of the period.",
+        "example_response": "The writer adopts a deliberately understated tone when describing her own boldness: 'I found myself, quite by accident, at the summit' -- the phrase 'quite by accident' downplays what was clearly a deliberate and arduous climb. This rhetorical modesty reflects the conventions of 19th-century women's travel writing, where female authors often disguised agency as circumstance to avoid accusations of unfeminine ambition. The letter form allows her to be more candid than published prose might: she confesses to her correspondent that 'the view repaid every blister', an admission of physical discomfort that would be unusual in published Victorian travel writing. The formal register ('I venture to suggest', 'one cannot fail to notice') reflects both the conventions of letter-writing and the writer's educated social position, but the content -- a woman travelling alone across Europe -- quietly challenges the very social norms her language appears to uphold.",
+        "common_errors": [
+          "Reading 19th-century modesty as genuine uncertainty rather than recognising it as a rhetorical convention",
+          "Analysing the text without connecting its conventions to the historical position of its author"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses 19th-century texts with the same precision and sophistication as contemporary texts, evaluating how genre conventions, social expectations and historical context shape every aspect of the writing, and avoiding anachronistic judgements.",
+        "example_task": "Read this extract from a 19th-century essayist writing about poverty in London. Evaluate how the writer's methods are shaped by the conventions and social concerns of the Victorian period.",
+        "example_response": "The writer deploys the conventions of Victorian social journalism -- detailed physical description, appeal to the reader's moral conscience, and an implicit argument that something must be done -- but with a rhetorical sophistication that rewards close analysis. The opening catalogue of sensory detail ('the stench of the tanneries, the clatter of the looms, the ceaseless drip of foul water from the ceiling onto the stone floor') follows the convention of 'condition of England' journalism popularised by Mayhew and Engels, positioning the writer as an eyewitness whose authority derives from having been there. But the writer is selective in a way that reveals ideological purpose: the workers are described in passive constructions ('they were set to their tasks at dawn', 'the children were given no respite'), which grammatically removes agency from the factory owners while positioning the workers as objects of a system, not active participants. This is a deliberate rhetorical strategy -- it constructs the workers as victims deserving sympathy rather than agents capable of resistance, which aligns with the philanthropic rather than radical tradition of Victorian reform. A modern reader might critique this as paternalistic, but to do so anachronistically would miss the point: within its historical moment, this framing was tactically chosen to persuade a middle-class readership who would recoil from revolutionary language but respond to charitable appeal. The writer's methods are not simply products of their time -- they are strategic interventions within the rhetorical possibilities available in that time.",
+        "common_errors": [
+          "Judging 19th-century attitudes by 21st-century standards without recognising the historical rhetorical context",
+          "Treating all 19th-century non-fiction as a single homogeneous genre without distinguishing between journalism, letters, essays and autobiography"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Writes with a general sense of audience (e.g. knows to be more formal for a letter to a headteacher) but does not consistently adapt tone, vocabulary or structure to match the demands of the task.",
+        "example_task": "Write a letter to your local MP arguing that your town needs better public transport. Think carefully about your audience, purpose and form.",
+        "example_response": "Dear MP, I am writing to you because our buses are rubbish and we need better ones. Loads of people in my town can't get to work because the buses are always late. It's really annoying. You should do something about it because it's not fair. From [name].",
+        "common_errors": [
+          "Using informal register ('rubbish', 'loads of') in a formal letter without recognising the mismatch",
+          "Not sustaining the letter form throughout -- forgetting conventions like formal sign-off"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Demonstrates awareness of audience, purpose and form and makes deliberate choices to adapt writing accordingly, though the adaptation may be inconsistent or over-simplified.",
+        "example_task": "Write an article for a broadsheet newspaper arguing that school holidays should be shorter. Think carefully about how to adapt your writing for this audience and form.",
+        "example_response": "Should School Holidays Be Shorter? Every summer, millions of children across the UK spend six weeks away from the classroom. For some, this is a welcome break. For many others, it is a period of educational regression and widening inequality. Research consistently shows that the 'summer slide' -- the loss of academic progress during long holidays -- disproportionately affects children from disadvantaged backgrounds. While affluent families fill the weeks with enrichment activities, those on lower incomes see their children fall behind. It is time to ask whether our Victorian-era holiday calendar still serves modern families.",
+        "common_errors": [
+          "Maintaining a formal tone throughout without varying it for rhetorical effect",
+          "Following the conventions of one form (e.g. article with headline) but losing the audience-awareness within the body of the text"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Adapts tone, register, vocabulary and structural conventions confidently and consistently to match audience, purpose and form, demonstrating awareness of how these three elements interact.",
+        "example_task": "Write a speech for a school assembly persuading students to volunteer for a local community project. Think about the conventions of a speech and the specific audience of your peers.",
+        "example_response": "You know that feeling when you scroll through your phone for an hour and then feel worse than when you started? I do. We all do. Now imagine replacing that hour with something that actually makes you feel good -- not in a vague, 'good citizen' way, but genuinely, measurably better. That is what volunteering at Greenfield Community Garden did for me last term. I went expecting to be bored. I came back expecting to go again. Here is what I did not expect: that pulling weeds alongside a seventy-year-old retired engineer would teach me more about resilience than any lesson. That carrying compost in the rain would be funnier than most things I do for fun. That the garden would start to feel like mine. I am not asking you to be saints. I am asking you to try one Saturday morning. Three hours. Bring gloves if you have them. If not, we have spares. And if you hate it? Fair enough. But I do not think you will.",
+        "common_errors": [
+          "Adopting a formal speech register that sounds artificial when addressing peers",
+          "Forgetting to use spoken-language features (direct address, rhetorical questions, varied pacing) that distinguish a speech from an essay"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Controls audience, purpose and form with sophisticated precision, modulating register within a piece for deliberate effect and demonstrating critical awareness of how writing conventions shape the reader's response.",
+        "example_task": "Write an article for a quality newspaper in which you argue either for or against the statement: 'Social media has made us more connected but less kind.' Demonstrate sophisticated control of form, audience and register.",
+        "example_response": "The Kindness Illusion -- Twelve years into the social media experiment, we have more connections than any generation in human history. We have 800 Facebook friends, 2,000 Instagram followers, and precisely nobody to call when the car breaks down at midnight. The connectivity promised by Silicon Valley has been delivered. The kindness has not. Before I am accused of nostalgia -- that most comforting and least useful of emotions -- let me concede the obvious: social media has enabled genuine acts of solidarity. The #MeToo movement would not have happened without Twitter. GoFundMe has raised billions for people in crisis. These are real. But they are also, I would argue, exceptions that prove a structural rule. The architecture of social media rewards performance, not empathy. A 280-character takedown travels further than a carefully worded qualification. An angry reaction generates more engagement than a thoughtful one. We are not less kind because we are worse people; we are less kind because we are using tools that incentivise unkindness. Consider the analogy of a road. If you build a motorway, people will drive fast. Not because they are reckless, but because the road is designed for speed. Social media is a motorway for opinion: it is designed for velocity, not for care. The solution, if there is one, lies not in asking individuals to be nicer -- that is as effective as asking motorists to slow down without changing the speed limit -- but in redesigning the infrastructure. Until then, we will continue to be extraordinarily connected and remarkably alone.",
+        "common_errors": [
+          "Maintaining a single tone throughout rather than modulating register for rhetorical variety (serious argument, concession, analogy, direct address)",
+          "Using sophisticated vocabulary without ensuring it serves clarity and effect rather than mere display"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can use basic persuasive techniques (e.g. rhetorical questions, emotive language) but deploys them without clear purpose or integration into a coherent argument.",
+        "example_task": "Write the opening of a persuasive speech arguing that school uniform should be abolished. Use at least two rhetorical devices.",
+        "example_response": "Don't you think school uniform is terrible? Wouldn't it be amazing if we could all wear what we want? Every single day, millions of students are forced to wear uncomfortable clothes that crush their individuality. This is wrong. This is unfair. This is unacceptable.",
+        "common_errors": [
+          "Stacking rhetorical devices without connecting them to a logical argument",
+          "Using emotive language so heavily that the writing loses credibility"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses a range of rhetorical devices with some awareness of their purpose and integrates them into a recognisable argument structure, though the argument may lack subtlety or counter-argument.",
+        "example_task": "Write the opening two paragraphs of a persuasive article arguing that the voting age should be lowered to 16. Use rhetorical devices deliberately.",
+        "example_response": "At sixteen, you can join the army. You can pay taxes. You can get married with parental consent. But you cannot vote for the government that sends you to war, spends your taxes, or writes the laws you must obey. This is not a radical argument. It is a simple question of consistency. If we trust sixteen-year-olds with the responsibilities of adult life, we should trust them with the rights that accompany it. The counter-argument is familiar: young people lack experience. But experience of what? Of the housing crisis they cannot afford to escape? Of the education system that shapes their daily lives? Of the climate emergency they will inherit but did not create? If anything, sixteen-year-olds have more at stake in the outcome of elections than the generation currently deciding on their behalf.",
+        "common_errors": [
+          "Using tricolon and anaphora without varying the techniques across the piece",
+          "Acknowledging a counter-argument only to dismiss it immediately rather than engaging with it seriously"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Deploys a varied repertoire of rhetorical devices purposefully and effectively, integrating them into a coherent and well-structured argument that anticipates and addresses counter-arguments.",
+        "example_task": "Write a persuasive speech arguing that all young people should learn a musical instrument. Use a range of rhetorical and structural devices deliberately.",
+        "example_response": "I want to begin with a confession. I was terrible at music. Grade 1 violin, age nine, and the examiner wrote -- and I quote -- 'enthusiastic but inaccurate'. I wanted to quit. My parents, in their infinite stubbornness, said no. I hated them for it at the time. I thank them for it now. Not because I became a musician -- I did not. But because learning an instrument taught me something no other subject could: how to be bad at something and keep going. Think about that for a moment. In a world that celebrates instant achievement -- the viral video, the overnight success, the first-attempt perfection -- learning an instrument is a slow, humbling, glorious rebellion against the myth of effortless talent. You will sound terrible. For months. And then, one Tuesday evening, something clicks. The notes connect. Your fingers remember. And you understand, in your body and not just your mind, that persistence has a sound. Now, the sceptics will say: not every child is musical. True. But this argument misunderstands what music education is for. We do not teach mathematics because every child will become a mathematician. We teach it because mathematical thinking is valuable. The same is true of music. The discipline, the listening, the collaboration, the tolerance of imperfection -- these are not musical skills. They are human skills. And they are skills that every young person deserves the chance to develop.",
+        "common_errors": [
+          "Deploying devices mechanically rather than allowing them to emerge from the argument's logic",
+          "Not varying the pacing -- alternating between longer analytical passages and shorter punchy ones creates more effective persuasion"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses rhetorical devices with precision and restraint, integrating them seamlessly into a sophisticated and multi-layered argument that anticipates the audience's resistance, makes strategic concessions, and builds towards a compelling conclusion.",
+        "example_task": "Write a persuasive article arguing for or against the following proposition: 'We should ban smartphones for under-16s.' Your writing should demonstrate a sophisticated command of rhetorical technique.",
+        "example_response": "Let me start with what I am not going to say. I am not going to tell you that smartphones are destroying a generation. I am not going to cite screen-time statistics as though correlation were causation, or invoke some golden age of childhood that never existed. The case for restricting smartphones for under-16s does not require moral panic. It requires only that we take seriously what we already know. We know that social media platforms are designed -- not accidentally, not as a side effect, but by teams of engineers whose explicit goal is user retention -- to exploit the dopamine reward system. We know that this system is still developing in adolescent brains. We know that rates of adolescent anxiety, self-harm and sleep disruption have risen in close parallel with smartphone adoption. And we know that the companies profiting from this adoption have, so far, chosen self-regulation over meaningful reform. None of this is controversial. The controversy begins only when we propose doing something about it. The objection I take most seriously is this: a ban is paternalistic. It removes agency from young people at precisely the age when they should be learning to make autonomous decisions. This is a strong argument, and I would not dismiss it. But it rests on a false premise -- the premise that a thirteen-year-old scrolling TikTok at 2am is exercising free choice. Choice requires information, alternatives, and the cognitive capacity to weigh long-term consequences against immediate gratification. Neuroscience is clear that this last capacity is not fully developed until the mid-twenties. We do not let fifteen-year-olds buy alcohol, drive cars or take out loans -- not because we do not trust them, but because we recognise that some decisions require a maturity that age alone can confer. A smartphone ban would not be a punishment. It would be a guardrail. And guardrails, as every parent of a toddler knows, are not the opposite of freedom. They are what makes freedom safe enough to practise.",
+        "common_errors": [
+          "Relying on a single rhetorical register throughout rather than modulating between concession, assertion, evidence and appeal",
+          "Making the argument one-sided -- the most persuasive writing acknowledges the strongest counter-argument and engages with it honestly"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can write a basic narrative with a beginning, middle and end, but tends to rely on plot events rather than language quality, and descriptions are limited to simple adjectives.",
+        "example_task": "Write a description of a place that is mysterious or unsettling. Focus on creating atmosphere through your language choices.",
+        "example_response": "The house was old and scary. The windows were broken and the door was hanging off. Inside, it was dark and cold. There were cobwebs everywhere and the stairs were creaky. I did not want to go further but I did.",
+        "common_errors": [
+          "Telling the reader the place is 'scary' rather than creating a scary atmosphere through description",
+          "Using generic adjectives ('old', 'dark', 'cold') rather than precise, original language"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Creates some effective descriptive moments using figurative language and sensory detail, and attempts to structure narrative for effect, though the quality is inconsistent.",
+        "example_task": "Write the opening of a narrative that begins with a character waking up in an unfamiliar place. Focus on creating a strong atmosphere and engaging the reader immediately.",
+        "example_response": "Light. Too much of it, and from the wrong direction. She blinked, and the ceiling resolved itself -- white tiles, fluorescent strips, the institutional glow of somewhere that never fully sleeps. The air tasted of disinfectant and something underneath it, something metallic. A hospital, then. But she could not remember how she had arrived, and that absence -- the gap where a memory should have been -- sat in her chest like a stone. From somewhere down the corridor, a trolley rattled past. She counted its wheels on the linoleum: one-two, one-two, one-two. It was easier to count than to think.",
+        "common_errors": [
+          "Starting with strong descriptive language but allowing it to weaken as the piece continues",
+          "Using figurative language that is cliched rather than original ('her heart pounded like a drum')"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Writes sustained narrative or descriptive pieces with controlled structure, original imagery, varied sentence types for deliberate effect, and a consistent authorial voice.",
+        "example_task": "Write a narrative that begins with the line 'The last time I saw the house, it looked nothing like I remembered.' You may continue the narrative in any direction. Focus on quality of writing.",
+        "example_response": "The last time I saw the house, it looked nothing like I remembered. Which is to say: it looked exactly as it was, and it was my memory that had lied. I had carried it for years as something grand -- the garden enormous, the hallway endless, the kitchen a cathedral of steam and Sunday noise. Now it sat on its patch of road like a tooth in the wrong mouth: small, off-white, slightly crooked. The gate I had swung on as a child came up to my hip. I let myself in. The garden had not so much grown as surrendered: bindweed through the fence, a buddleia muscling up through the patio slabs, its purple heads nodding in the traffic breeze like a congregation at prayer. Inside, the hallway was four steps long. I counted. As a child, it had taken me ten. The wallpaper was the same -- brown flowers on cream -- but peeling now at the joins, curling away from the wall as though trying to leave. I pressed it back with my thumb and it stayed for a moment, then lifted again. Some things do not want to be put back. The kitchen was empty. Not just empty of people, but empty of the particular quality of occupied space -- the weight of someone recently there, the residual warmth of a kettle, a chair pushed out at the angle of someone who plans to return. This emptiness was total. The kind that has been empty for long enough to forget it was ever anything else.",
+        "common_errors": [
+          "Over-writing -- using too many figurative devices in succession so that each individual image loses its impact",
+          "Neglecting sentence variation -- writing only in long, complex sentences without using short ones for contrast and emphasis"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Produces narrative or descriptive writing of exceptional quality: a distinctive and sustained voice, precise and original imagery, structural choices that reinforce meaning, and language that creates multiple layers of effect simultaneously.",
+        "example_task": "Write a piece of descriptive writing suggested by this image: a single chair in an empty room, lit by a window. You may write about any subject related to this image.",
+        "example_response": "The chair faces the window as though waiting for a conversation. It is wooden, straight-backed, the kind that does not invite you to stay -- the kind bought for function in an era that did not apologise for discomfort. Its seat is worn to a shallow curve by years of the same body, the same weight, the same afternoon arrangement: chair to window, window to garden, garden to the slow accumulation of seasons. The room offers nothing else. Bare walls, bare boards, and a quality of light that arrives already tired, as though it has passed through too many panes to carry warmth by the time it reaches the floor. This is not emptiness as absence. It is emptiness as choice -- the careful subtraction of everything that does not serve the view. Someone sat here and decided that the world beyond the glass was enough. The garden is visible in strips through the condensation: a hedge, mathematically straight; a square of lawn; a path that runs to the gate and stops. Nothing is overgrown. Nothing is accidental. Even the condensation follows a pattern, thickest at the base where warm air meets cold glass, thinning upward until the sky appears -- clear, pale, indifferent. I think of the body that shaped this seat. How they must have arrived each afternoon at the same hour, lowered themselves with the same controlled care, adjusted the same cushion that is no longer there. How the window must have held their reflection before the light changed and the reflection dissolved into the garden behind it, so that for a moment they were both inside and outside, both here and gone. The chair is still here. The body is not. But the room has not noticed the difference, or has decided not to mention it. The light arrives at the same angle. The seat holds its curve. And the window continues its long, one-sided conversation with whoever is willing to sit down and listen.",
+        "common_errors": [
+          "Producing technically accomplished writing that lacks emotional depth or a distinctive perspective",
+          "Allowing the desire for poetic language to overwhelm clarity of meaning"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can write for a specified purpose (e.g. a letter, a report) but does not consistently follow the conventions of the required form, and register may be inappropriate.",
+        "example_task": "Write a letter to the editor of a local newspaper arguing that a new skate park should be built in your area.",
+        "example_response": "Dear editor, I think we should have a skate park because there is nothing for young people to do. We are always getting told off for hanging around in the town centre but there is nowhere else to go. A skate park would be good because it would give us something to do. Please build one.",
+        "common_errors": [
+          "Writing an informal appeal rather than a formal argument with evidence and structure",
+          "Not following letter conventions consistently (greeting, formal register, sign-off)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Follows the conventions of the required form (letter, article, speech, report) and maintains an appropriate register, though the argument structure may be simple and the range of techniques limited.",
+        "example_task": "Write a report for your school council recommending changes to the school canteen. Follow the conventions of a formal report.",
+        "example_response": "Report: Proposed Changes to the School Canteen. Prepared by: [Name], Year 11 Student Representative. 1. Introduction: This report examines current student satisfaction with the school canteen and proposes three changes. It is based on a survey of 120 students across Years 7-11 conducted in January 2026. 2. Findings: 68% of respondents said the canteen does not offer enough healthy options. 54% said queuing time exceeds 15 minutes, meaning they lose a significant portion of their lunch break. 31% said they bring packed lunch specifically to avoid the queue. 3. Recommendations: (a) Introduce a pre-ordering system via the school app to reduce queuing. (b) Add a salad bar with daily rotation. (c) Extend opening hours by 10 minutes to reduce peak congestion. 4. Conclusion: These changes would improve student satisfaction, reduce food waste, and support the school's healthy eating policy.",
+        "common_errors": [
+          "Mixing conventions from different forms (e.g. including rhetorical questions in a formal report)",
+          "Following the form conventions but not developing the content beyond simple statements"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Writes confidently in a range of transactional forms, maintaining the conventions of the form throughout, adapting register to audience and purpose, and constructing well-organised arguments supported by evidence and rhetorical technique.",
+        "example_task": "Write a review of a book, film, exhibition or performance for a quality magazine aimed at adults. Your review should demonstrate the conventions of the form and a confident critical voice.",
+        "example_response": "Review: 'Small Island' by Andrea Levy -- Headline Books, 2004. There are novels that teach you history, and there are novels that make you feel it. 'Small Island' does both, and it does so with a warmth and structural elegance that belies the brutality of its subject. Levy weaves four narrative voices across two timelines -- wartime London and 1948 post-Windrush Britain -- to explore immigration, race, class and the gap between the Britain that the Empire promised and the Britain that immigrants actually found. What makes the novel exceptional is not its subject (the Windrush story has been told before) but its method. By giving equal narrative weight to Hortense (Jamaican, proud, disappointed) and Queenie (English, pragmatic, quietly radical), Levy refuses the simplistic framing of hero and villain. Neither woman is reducible to her circumstances. Hortense's snobbery is infuriating and completely understandable. Queenie's casual racism coexists with genuine kindness. It is this moral complexity that elevates the novel above a history lesson. The prose is deceptively simple -- Levy writes with the clarity of someone who has revised until every unnecessary word is gone -- and the structural decision to alternate voices creates a rhythm of anticipation and revelation that drives the reader forward. If the novel has a weakness, it is Gilbert's voice, which occasionally drifts into a jocularity that feels performative, as though he is narrating for an audience rather than to himself. But this is a minor flaw in an otherwise masterful work. Essential reading.",
+        "common_errors": [
+          "Writing a summary of the plot rather than a critical evaluation of the work",
+          "Adopting an overly formal or impersonal tone that lacks the confident critical voice expected in a quality review"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Writes transactional pieces with a distinctive voice, sophisticated control of form conventions, and the ability to modulate register within the piece for deliberate rhetorical effect.",
+        "example_task": "Write an opinion piece for a broadsheet newspaper arguing that public libraries are more important now than ever. Your writing should demonstrate mastery of form, audience and rhetorical technique.",
+        "example_response": "In Defence of the Quiet Room -- The closure of a library never makes the front page. It is not dramatic enough. There is no fire, no flood, no scandal. Just a notice on a door, a stack of returned books, and a silence that used to be purposeful becoming a silence that is merely empty. Since 2010, over 800 public libraries have closed in the UK. The statistic is familiar. What is less familiar -- because it is harder to quantify -- is what disappears with them. A library is not a building full of books. If it were, we would not need them: the internet has more books than any library could hold, and most of them are free. What a library offers -- and what no digital platform has replicated -- is structured serendipity: the experience of looking for one thing and finding another, guided by proximity, by a librarian's recommendation, by the accident of what the previous borrower left on the return trolley. It is the teenager who came in for a graphic novel and left with a poetry collection. The retired man who came for the newspaper and stayed for the reading group. The mother who came for the baby rhyme-time session and found, in the twenty minutes of adult conversation that followed, the first moment of her week that was entirely her own. These are not quantifiable outcomes. They will never appear in a cost-benefit analysis. But they are the reason that communities fight for their libraries with a ferocity that surprises politicians, who tend to assume that anything free must be undervalued. The case for libraries is not nostalgic. It is urgent. In an information ecosystem designed to confirm what you already believe, a library is one of the last public spaces that organises knowledge by subject rather than by algorithm, that places unfamiliar ideas next to familiar ones without asking which you prefer. It does not track your reading habits, sell your data or recommend what you already like. It simply offers. And in that simplicity -- that radical, old-fashioned, increasingly rare simplicity -- lies something we cannot afford to lose.",
+        "common_errors": [
+          "Writing a polished but impersonal argument that lacks the distinctive voice and controlled passion of the best opinion journalism",
+          "Using rhetorical devices as decoration rather than integrating them into the logical and emotional structure of the argument"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can speak to a group but relies heavily on reading from notes, uses informal language in formal contexts, and does not structure the talk with a clear beginning, middle and end.",
+        "example_task": "Give a two-minute presentation to the class on a topic you feel strongly about. You should speak clearly and use Standard English.",
+        "example_response": "So, um, I am going to talk about why school should start later. Basically, teenagers need more sleep and like, the science says we should be sleeping till about 9am. So yeah, it is really unfair that school starts at 8:30 because we are all tired. And also, like, other countries have tried it and it works. So yeah, that is basically it.",
+        "common_errors": [
+          "Relying on filler words ('like', 'basically', 'so yeah') rather than pausing confidently",
+          "Not preparing a clear structure -- beginning with the argument rather than establishing context"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Delivers a structured presentation with a clear opening, body and conclusion, uses Standard English mostly consistently, and makes some eye contact with the audience.",
+        "example_task": "Prepare and deliver a three-minute presentation arguing for a change you would like to see in your local community. Use Standard English and engage your audience.",
+        "example_response": "[Delivered with notes as prompts, not read verbatim] Good morning. I want to talk to you about something that affects everyone in this room: the lack of safe cycling routes in our town. There are currently no dedicated cycle lanes on any of the main roads between here and the town centre. As a result, cyclists share the road with buses, lorries and cars, often at rush hour. Last year, three cyclists were injured on the A412 alone. My proposal is straightforward: convert the unused pavement on the north side of the High Street into a segregated cycle lane. The pavement is already wide enough, the cost would be modest, and the precedent has been set in neighbouring towns. I would like this council to commission a feasibility study before the next budget cycle. Thank you.",
+        "common_errors": [
+          "Maintaining a single pace and tone throughout without varying emphasis for key points",
+          "Making eye contact only intermittently, reverting to reading from notes during the most important sections"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Delivers a well-paced, clearly structured presentation that adapts to the audience, uses varied vocal delivery (pace, emphasis, pause) for effect, and handles questions from the audience with composure.",
+        "example_task": "Deliver a five-minute presentation on a social issue you care about. You will be asked questions by the audience afterwards. Your presentation should be well-structured, use Standard English, and engage your audience through vocal delivery and eye contact.",
+        "example_response": "[Delivered without notes, using confident eye contact and deliberate pacing] I am going to ask you a question, and I would like you to answer honestly. [Pause] When was the last time you had a conversation -- a real conversation, face to face, lasting more than ten minutes -- with someone over the age of seventy? [Pause] If you are struggling to remember, you are not alone. We live in a society that segregates by age more than almost any other variable. Children in schools, adults in offices, elderly people in care homes. And the result is a loneliness epidemic that affects 1.4 million older adults in the UK -- people who go entire weeks without speaking to another person. [Continues with evidence, personal anecdote, and a concrete proposal for an intergenerational community programme] [Responding to a question: 'How would you fund this?'] That is a fair challenge, and I want to answer it honestly rather than dodge it. The programme I described would require approximately twelve thousand pounds a year for the coordinator role. My suggestion is that this could come from the existing community grants budget, which currently funds programmes with lower evidence of impact. But I would also argue that the real cost is what we are already paying -- in NHS mental health referrals, in social care interventions, in the human cost of isolation. Prevention is always cheaper than cure.",
+        "common_errors": [
+          "Delivering a well-prepared presentation but struggling to adapt when questions challenge the argument",
+          "Using pauses and emphasis effectively in the prepared sections but reverting to a flat delivery when responding to questions"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Delivers a polished, compelling presentation that demonstrates complete command of spoken Standard English, sophisticated audience engagement, confident handling of challenges, and the ability to think on their feet while maintaining formal register.",
+        "example_task": "Deliver a presentation and participate in a follow-up discussion on a controversial topic. You must present a clear argument, respond to challenges, and demonstrate the ability to adapt your position in response to new points without losing coherence.",
+        "example_response": "[Delivered with authority, varied pacing, and deliberate use of gesture and pause] I want to begin with a paradox. We live in the most informed generation in human history and the least trusted. We have access to more data than any civilisation before us, and yet public trust in experts -- scientists, doctors, economists -- has fallen to its lowest point in decades. [Builds argument about the relationship between information overload and epistemic distrust, using three carefully chosen examples] [In discussion, responding to a peer who argues that distrust of experts is rational given historical failures:] You make an important point, and I want to engage with it seriously rather than dismiss it. You are right that experts have been wrong -- the financial crisis, the WMD intelligence, the initial Covid modelling. These failures are real and they matter. But I would distinguish between two responses to expert failure. One is healthy scepticism: demanding better evidence, more transparency, clearer communication of uncertainty. The other is wholesale rejection: the idea that because experts have sometimes been wrong, expertise itself is worthless. The first response strengthens knowledge. The second destroys it. And I worry that we are increasingly choosing the second. What I would concede, though -- and this is a genuine revision of my earlier argument -- is that the fault lies not only with the public but with experts themselves, who have not always been honest about the limits of their knowledge. If we want trust rebuilt, that rebuilding has to come from both sides.",
+        "common_errors": [
+          "Delivering a flawless prepared presentation but becoming defensive rather than genuinely responsive when challenged",
+          "Conceding points strategically but not genuinely -- audiences can detect inauthentic concessions"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Participates in discussions when prompted but tends to either dominate without listening or remain silent, and does not use formal discussion conventions.",
+        "example_task": "Participate in a group discussion about whether homework should be abolished. Listen to others and build on their points.",
+        "example_response": "I think homework should be abolished because it is boring and we already spend all day at school. [Another student disagrees] Yeah but that is just your opinion. I still think it should go.",
+        "common_errors": [
+          "Dismissing others' points without engaging with the substance of what they said",
+          "Not building on previous contributions -- each response starts from scratch rather than developing the discussion"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Engages with others' points using some discussion conventions (acknowledging, challenging politely, building on ideas) but may struggle to sustain these behaviours throughout an extended discussion.",
+        "example_task": "Participate in a structured debate on the motion: 'This house believes that competitive sport does more harm than good in schools.' You must argue the side you are assigned, even if you disagree personally.",
+        "example_response": "[Assigned to argue for the motion] I agree with my teammate's point that competitive sport can damage self-esteem, and I would add that the emphasis on winning creates an environment where only the naturally athletic feel valued. However, I would like to challenge the point made by the opposition that competitive sport teaches resilience. While that may be true for some students, research suggests that for those who consistently lose, the experience teaches not resilience but helplessness.",
+        "common_errors": [
+          "Listening to respond rather than listening to understand -- preparing a rebuttal before the other person has finished",
+          "Sustaining polite challenge in the early stages of the debate but becoming more combative as the discussion intensifies"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Participates fluently in structured discussions and debates, demonstrating active listening, well-supported challenges, the ability to build on others' contributions, and sustained use of Standard English.",
+        "example_task": "Participate in a Socratic seminar on the question: 'Is it ever right to break the law?' Reference at least one text you have studied this year in your contributions.",
+        "example_response": "[During the seminar] I want to build on what [student name] said about civil disobedience. They mentioned the suffragettes, and I agree that is a powerful example. But I think we need to distinguish between breaking a law to change it -- which is what the suffragettes did -- and breaking a law for personal convenience, which is something quite different. In 'An Inspector Calls', which we studied this term, the Birlings do not technically break any laws, and that is precisely Priestley's point: the law is insufficient as a measure of moral responsibility. Eva Smith's death is legal but inexcusable. So perhaps the question is not 'is it right to break the law?' but 'is the law sufficient as a guide to right action?'. I would like to hear whether anyone disagrees with that reframing.",
+        "common_errors": [
+          "Making strong contributions individually but not facilitating others' participation",
+          "Referencing texts superficially rather than integrating them substantively into the discussion"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Leads and facilitates complex discussions with intellectual confidence, adapts position in response to new arguments, synthesises multiple contributions into a coherent summary, and models the conventions of academic discourse.",
+        "example_task": "Lead a fifteen-minute group discussion on a topic of your choice related to your English studies. You must facilitate, contribute, respond to challenges, and synthesise the group's conclusions.",
+        "example_response": "[Facilitating] I would like us to consider whether the literature we study at GCSE gives us a representative picture of British culture. I will start by framing two positions, and then I would like each of you to take a side. [After several contributions] Let me try to synthesise where we are. Three of us have argued that the set text lists are too narrow -- predominantly white, predominantly male, predominantly English. Two of us have argued that narrowness is inevitable given the time constraints and that quality should take precedence over representation. What I notice is that both sides agree on one thing: the texts we study shape what students believe 'real literature' looks like. Where we disagree is on whose responsibility it is to broaden that picture. [Student challenges: 'Are you saying Shakespeare should not be studied?'] No, and I want to be precise about that because it is an important distinction. I am not arguing for removal. I am arguing for expansion. Shakespeare is on the list and should be. The question is what else is on the list. If the only voices students encounter are those of white, male, English writers from the 16th to 19th centuries, then we are teaching not just literature but a particular and limited story about whose words matter. Can we live with that? I genuinely do not know, and I think the honesty of this discussion reflects the difficulty of the question.",
+        "common_errors": [
+          "Facilitating the discussion but subtly steering it towards a predetermined conclusion rather than genuinely engaging with all positions",
+          "Synthesising contributions accurately but not identifying the underlying point of disagreement that structures the debate"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Writes mostly in simple and compound sentences, with limited variation in sentence openings and occasional errors in complex sentence construction.",
+        "example_task": "Rewrite this paragraph to improve the sentence variety. Currently, every sentence starts with 'The' and is the same length.",
+        "example_response": "The sky darkened. Clouds rolled in quickly. Rain started falling heavily on the streets. People ran for cover under shop awnings and bus shelters. Thunder crashed above them. Lightning lit up the sky.",
+        "common_errors": [
+          "Varying sentence length without varying sentence structure -- a short sentence and a long sentence that both begin 'subject + verb' is not genuine structural variety",
+          "Attempting complex sentences but creating run-on sentences or comma splices"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses a range of sentence structures including complex sentences with subordinate clauses, and begins to vary sentence openings (fronted adverbials, participial phrases), though the variety may feel mechanical rather than purposeful.",
+        "example_task": "Write a paragraph describing a busy market scene. Use at least three different sentence structures deliberately.",
+        "example_response": "Weaving between the stalls, the crowd moved like a single organism -- slow, purposeful, unstoppable. Every surface was colour: pyramids of oranges, rolls of silk in turquoise and gold, ceramic bowls stacked in precarious towers. A woman at the fish stall shouted prices that nobody seemed to hear. Above it all, the canvas awnings rippled in the wind, casting shadows that shifted and reformed, so that the light itself seemed alive.",
+        "common_errors": [
+          "Using fronted adverbials and participial openers so frequently that they become a new kind of monotony",
+          "Varying sentence structures for the sake of variety without considering which structure best serves the meaning"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Selects sentence structures deliberately to create specific effects -- short sentences for impact, complex sentences for nuance, fragments for dramatic emphasis -- and can explain why specific syntactic choices are effective in both their own writing and published texts.",
+        "example_task": "Write two versions of the same scene: one using mostly long, complex sentences and one using mostly short, simple sentences. Then explain how the sentence structure changes the effect.",
+        "example_response": "Version A (complex): The train pulled away from the platform with a sound that was less a departure than a surrender, the wheels grinding against the rails as though reluctant to leave, and through the window she watched the station shrink -- the clock tower, the footbridge, the woman with the red umbrella who had waved and was still waving, a diminishing figure in a diminishing world. Version B (simple): The train left. She watched the platform slide away. The clock tower. The footbridge. The woman with the red umbrella. Still waving. Gone. Explanation: Version A's complex sentence mimics the continuous, unreeling experience of departure -- the subordinate clauses keep adding detail, delaying the sense of finality, which mirrors the character's reluctance to let go. Version B's fragments create a staccato rhythm that feels like a series of snapshots -- each image is captured and then abandoned, creating a sense of rapid, irreversible loss. The same content produces grief in Version A and shock in Version B, purely through syntactic choice.",
+        "common_errors": [
+          "Explaining what sentence structures do in general terms ('short sentences create tension') without analysing why that specific short sentence in that specific context creates that specific effect",
+          "Writing effectively in one register (e.g. complex, literary prose) but not demonstrating the ability to control contrasting registers"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Deploys syntax as a fully integrated element of style, using sentence structure not just for variety but as a meaning-making tool that reinforces content, controls pacing, and positions the reader, with the same analytical precision applied to both reading and writing.",
+        "example_task": "Analyse how the writer uses sentence structure in this extract to control the reader's experience. Then write your own paragraph that uses a similar structural technique for a different purpose.",
+        "example_response": "Analysis: The writer opens with a 47-word sentence that catalogues the room's contents in a single, breathless sweep -- the commas function as a camera panning across surfaces, accumulating detail without pausing to process it. This syntactic structure enacts the character's overwhelm: she is taking in everything and understanding nothing. The second sentence -- 'She sat down.' -- is devastating by contrast. The full stop after three words creates a physical stop in the reading experience, a moment of forced stillness after the visual chaos. The passive construction ('sat down' rather than 'chose a chair' or 'lowered herself') reinforces the sense that she is acted upon rather than acting -- a syntactic choice that echoes her emotional state. The final sentence returns to complexity, but where the first sentence was a list, this one is a labyrinth of subordinate clauses that circle back on themselves ('she thought about calling him, but then she thought about what she would say, and what he would say, and what she would say after that'), enacting the recursive anxiety of a mind trapped in hypothetical conversation. My version (different purpose -- wonder rather than anxiety): The aquarium stretched the length of the wall and behind the glass the reef moved -- coral fans breathing, anemones flexing, a moray eel threading itself through a crevice with the patience of something that has never been in a hurry and never will be. She pressed her hand to the glass. Cold. And on the other side, a seahorse no bigger than her thumb hovered in the current, its body a question mark, and she had the sudden, irrational conviction that it was looking back at her, and that what it saw made it curious, and that curiosity, between species, separated by glass and a million years of evolution, was a kind of miracle she had not expected to find on a Tuesday afternoon in Zone 3.",
+        "common_errors": [
+          "Analysing sentence structure in isolation from content -- syntactic analysis must always connect form to meaning",
+          "Imitating a syntactic technique without adapting it to a different purpose, producing pastiche rather than original application"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Uses a basic vocabulary that is adequate for communication but lacks precision, variety or awareness of register, with frequent repetition of common words.",
+        "example_task": "Rewrite this sentence to replace the vague words with more precise alternatives: 'The man walked slowly down the nice street and looked at the big building.'",
+        "example_response": "The elderly man shuffled along the tree-lined avenue and gazed up at the imposing cathedral.",
+        "common_errors": [
+          "Replacing common words with longer words that are not necessarily more precise ('utilise' instead of 'use' does not improve precision)",
+          "Not considering whether the replacement word fits the register and tone of the writing"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Selects vocabulary with increasing precision and awareness of connotation, uses some subject-specific terminology in analytical writing, and avoids obvious repetition.",
+        "example_task": "Write a paragraph analysing how the writer uses vocabulary to create a sense of threat in this extract. Focus on specific word choices.",
+        "example_response": "The writer creates threat through carefully selected verbs and adjectives. The dog does not simply appear; it 'materialises' from the shadows, a word that suggests something supernatural or unnatural about its arrival. The verb 'prowled' carries connotations of predatory intent, distinguishing this movement from merely walking or wandering. The adjective 'rank' to describe the smell is more disturbing than 'bad' or 'unpleasant' because it implies decay and illness, associating the dog with death. Each word choice escalates the sense of danger incrementally.",
+        "common_errors": [
+          "Discussing vocabulary choices at the level of 'positive' and 'negative' connotations without specifying what associations the word activates",
+          "Using sophisticated vocabulary in analysis ('the writer juxtaposes') but not in creative writing, or vice versa"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Deploys vocabulary with consistent precision in both analytical and creative writing, demonstrating awareness of denotation, connotation and register, and using lexical choices to create specific effects.",
+        "example_task": "Write two descriptions of the same rainy day: one that makes rain seem welcoming and one that makes it seem threatening. The difference should come primarily from vocabulary choice.",
+        "example_response": "Welcoming: The rain arrived softly, a whisper against the windowpane. It pattered on the roof tiles, a sound so familiar it was almost domestic -- like a kettle murmuring on the stove. The garden drank gratefully: the parched roses lifted their heads, the lawn exhaled, the soil darkened and loosened as though remembering what it was for. Inside, the lamp cast an amber circle on the table and the house contracted around it, becoming smaller, warmer, more itself. Threatening: The rain struck without warning, a percussive assault on the glass. It hammered the roof tiles -- relentless, mechanical, as though testing for weakness. The garden buckled under it: the roses bowed, stems straining at angles they were not designed for, the lawn pooling into a series of shallow wounds. Inside, the lamp flickered once, twice, and the walls seemed thinner, the distance between shelter and storm suddenly negotiable. Vocabulary analysis: In the first version, rain 'arrives' (gentle, invited), 'whispers' (intimate) and 'patters' (light, rhythmic). The garden 'drinks' and 'exhales' -- verbs of nourishment and relief. In the second, rain 'strikes' (violent, sudden), 'hammers' (industrial, aggressive) and is 'relentless' (without mercy). The garden 'buckles' and 'strains' -- verbs of structural failure. The same event is transformed entirely by lexical choice.",
+        "common_errors": [
+          "Achieving precise vocabulary in creative writing but reverting to generic analytical vocabulary ('effective', 'powerful', 'creates an atmosphere')",
+          "Using sophisticated vocabulary inconsistently -- a precise word choice followed by several vague ones undermines the overall effect"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Demonstrates exceptional lexical range and precision in all forms of writing, selecting vocabulary that operates on multiple levels simultaneously and creating effects that depend on the reader's sensitivity to nuance, connotation and semantic field.",
+        "example_task": "Analyse how a single word choice in this extract carries multiple layers of meaning. Then write your own sentence in which a single word choice does similar work.",
+        "example_response": "Analysis: The writer describes the abandoned factory as 'gutted'. This word operates on three levels simultaneously. Literally, it means the interior has been stripped out -- the machinery removed, the floors cleared, the walls exposed. Figuratively, it personifies the building as a body whose vital organs have been taken, creating a visceral sense of violation. And culturally, it carries the connotation of the deindustrialisation that emptied factories across the North of England in the 1980s -- the word carries an entire social history within it. A less precise writer might have said 'empty' or 'derelict', but 'gutted' compresses physical description, emotional resonance and political context into a single syllable. My sentence: 'The school had been rationalised -- a word that made the closure sound like mathematics, as though thirty years of assemblies, sports days and first friendships could be reduced to a column in a spreadsheet and subtracted without remainder.' Here, 'rationalised' does similar multi-level work: it is the official euphemism (bureaucratic register), it implies that the closure was logical and unemotional (the literal meaning of 'rational'), and it conceals human cost behind administrative language -- which is precisely what the rest of the sentence unpacks.",
+        "common_errors": [
+          "Analysing vocabulary at a single level (denotation or connotation) without exploring how the same word operates across multiple registers",
+          "Selecting vocabulary for sophistication rather than precision -- the best word is not always the most complex one"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "ENL-KS4-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Uses basic punctuation (full stops, capital letters, commas) mostly correctly but makes frequent errors with apostrophes, and avoids higher-level punctuation marks. Spelling of common words is generally accurate but errors increase with more ambitious vocabulary.",
+        "example_task": "Proofread this paragraph and correct all punctuation and spelling errors.",
+        "example_response": "[Student corrects most full stop and capital letter errors but misses: comma splice in sentence 3, incorrect 'their/there' in sentence 5, missing apostrophe in 'dont', and does not attempt to add a semi-colon where one would improve clarity]",
+        "common_errors": [
+          "Confusing 'their', 'there' and 'they're', or 'its' and 'it's'",
+          "Using commas to join two complete sentences (comma splice) instead of a full stop, semi-colon or conjunction"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses commas, apostrophes and speech marks correctly in most contexts, attempts higher-level punctuation (semi-colons, colons, dashes) with some accuracy, and spells most words correctly including commonly misspelled ones.",
+        "example_task": "Write a paragraph that uses at least four different punctuation marks correctly, including at least one semi-colon or colon.",
+        "example_response": "The library was empty -- or so she thought. She pushed open the door (it creaked, predictably) and stepped inside. The shelves stretched in every direction: fiction, non-fiction, reference, periodicals. She had not been here since childhood; the smell was the same, though. Paper, dust, and something else -- something she could not name but recognised instantly, the way you recognise a voice before you see the face.",
+        "common_errors": [
+          "Using a semi-colon where a colon is needed, or vice versa",
+          "Misspelling words that are attempted precisely because they are ambitious -- e.g. 'definately', 'seperate', 'occassion'"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Deploys the full range of punctuation marks accurately and for deliberate effect, and spells a wide vocabulary correctly and consistently, including subject-specific and literary terminology.",
+        "example_task": "Write a paragraph in which punctuation is used not just for grammatical accuracy but for deliberate stylistic effect. Annotate your choices.",
+        "example_response": "He had three rules. [Full stop after short sentence = finality, authority.] The first: never apologise. [Colon introduces the rule with dramatic weight.] The second -- and this, he insisted, was the most important -- never explain. [Paired dashes create a parenthetical that mimics his emphatic speaking style.] The third he never told anyone; he simply lived it. [Semi-colon balances two independent clauses, the second of which redefines the first.] What was it? Nobody knew. Not his wife (who had given up asking), not his children (who had never thought to), not even the colleague who had worked beside him for thirty years and claimed, with the quiet confidence of the self-deceived, to know him 'inside out'. [Brackets create an escalating list of ignorance; the quotation marks around 'inside out' signal ironic distance -- the colleague's certainty is precisely what makes them wrong.]",
+        "common_errors": [
+          "Using higher-level punctuation marks correctly but not exploiting their stylistic potential",
+          "Spelling ambitious vocabulary correctly in careful work but making errors under timed conditions"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Demonstrates flawless technical accuracy across extended writing under timed conditions, with punctuation functioning as a fully integrated element of style and meaning, and spelling that is consistently accurate even with the most ambitious vocabulary.",
+        "example_task": "Under timed conditions (45 minutes), write a complete piece of transactional or creative writing. Your technical accuracy must be maintained throughout, including in the final paragraphs where fatigue typically causes errors.",
+        "example_response": "[The student's piece maintains consistent accuracy across 600+ words, deploying semi-colons to balance complex arguments, colons to introduce key ideas with rhetorical weight, dashes for parenthetical asides that add voice and personality, and varied comma usage (listing commas, subordinate clause commas, appositive commas) without error. Spelling is accurate throughout, including words such as 'conscientious', 'surveillance', 'disproportionate', 'exacerbate' and 'acquiesce'. The final paragraph -- typically where errors accumulate under time pressure -- shows no decline in accuracy.]",
+        "common_errors": [
+          "Maintaining accuracy in the opening paragraphs but allowing errors to creep in during the final third of timed writing",
+          "Deploying technically correct punctuation that nonetheless fails to enhance the writing's clarity or style"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,835 @@
+[
+  {
+    "concept_id": "EN-KS3-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Encounters unfamiliar vocabulary in reading and either skips it or looks up definitions without integrating the new words into active vocabulary.",
+        "example_task": "Learn three new words from this chapter and use each in a sentence of your own.",
+        "example_response": "Melancholy means sad. 'I felt melancholy.' Prudent means careful. 'She was prudent.' Eloquent means speaking well. 'He was eloquent.'",
+        "common_errors": [
+          "Using new words in minimal sentences that do not demonstrate understanding of nuance",
+          "Treating vocabulary as a list to memorise rather than a resource to deploy"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Learns new vocabulary through reading and can explain word meanings using context, roots and word families, beginning to use some new words in own writing.",
+        "example_task": "Explain how you would work out the meaning of 'magnanimous' if you encountered it for the first time. Use your knowledge of word roots.",
+        "example_response": "I know 'magn-' means great or large (as in 'magnificent' and 'magnify') and 'anim-' relates to spirit or mind (as in 'animated'). So 'magnanimous' probably means having a great spirit -- being generous or noble-minded. If the context describes someone forgiving an enemy, that would confirm it means generous in spirit.",
+        "common_errors": [
+          "Knowing word roots but not applying them systematically to unfamiliar words",
+          "Learning definitions without understanding how context modifies meaning"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Systematically acquires vocabulary through reading, morphology and etymology, understanding how words function in context and confidently deploying new vocabulary in speech and writing.",
+        "example_task": "Choose a word family (e.g. words from the Latin root 'duc/duct' meaning 'to lead') and explain how the root generates meaning across at least four English words.",
+        "example_response": "The Latin root 'duc/duct' (to lead) generates: 'educate' (to lead out of ignorance), 'conduct' (to lead together, hence managing or guiding), 'introduce' (to lead inwards, bringing something new in), 'deduce' (to lead away from, hence to reason from evidence to conclusion), and 'reduce' (to lead back, hence to make smaller). Understanding this root means I can infer the meaning of unfamiliar words like 'induct' (to lead into, as in inducting someone into a role) or 'viaduct' (a way that leads across, a bridge). Etymology is not just interesting -- it is a practical tool for vocabulary expansion.",
+        "common_errors": [
+          "Knowing etymology as trivia without using it as a practical decoding strategy",
+          "Not recognising how prefixes modify the root meaning"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Has a rich, actively growing vocabulary acquired through wide reading, systematic study and intellectual curiosity, and understands the nuances that distinguish near-synonyms.",
+        "example_task": "Explain the difference in meaning and register between these near-synonyms: 'said', 'declared', 'asserted', 'proclaimed'. When would you use each?",
+        "example_response": "'Said' is neutral and serves virtually any context. 'Declared' implies formality and decisiveness -- you declare a position publicly and with authority. 'Asserted' implies confidence and potential challenge -- to assert is to state something firmly, often when others might disagree, carrying connotations of power and insistence. 'Proclaimed' implies public announcement with ceremony or grandeur -- you proclaim a victory, a new law, a belief, often to an audience. In register: 'said' works everywhere; 'declared' and 'asserted' belong to formal and academic contexts; 'proclaimed' belongs to elevated or historical contexts. In my own writing, I would use 'declared' for a character making a confident statement, 'asserted' in an essay when describing how a writer defends a position against opposition, and 'proclaimed' for historical or ceremonial contexts. Choosing the wrong synonym changes the meaning subtly but significantly.",
+        "common_errors": [
+          "Treating synonyms as interchangeable without recognising differences in register and connotation",
+          "Using sophisticated vocabulary in contexts where a simpler word would be more effective"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C040",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Uses basic, repetitive vocabulary in writing, relying on common words and not attempting to deploy more precise or sophisticated alternatives.",
+        "example_task": "Rewrite this sentence replacing the underlined word with a more precise alternative: 'The view was nice.'",
+        "example_response": "The view was good. [Or:] The view was really nice.",
+        "common_errors": [
+          "Replacing a vague word with another equally vague word",
+          "Adding intensifiers ('really', 'very') instead of choosing a more precise word"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses some sophisticated vocabulary in writing, selecting more precise words when prompted, though may use advanced vocabulary incorrectly or inconsistently.",
+        "example_task": "Improve the vocabulary in this paragraph by replacing at least three common words with more precise alternatives.",
+        "example_response": "[Replaces 'big' with 'imposing', 'walked' with 'strode', 'said' with 'proclaimed'. The replacements are mostly appropriate though one may be slightly awkward in context.]",
+        "common_errors": [
+          "Using sophisticated words incorrectly because the precise meaning is not understood",
+          "Forcing in advanced vocabulary where simpler words would be more effective"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Selects vocabulary with precision and confidence, choosing words for their specific meaning, connotation and register rather than for impressiveness.",
+        "example_task": "Write a paragraph describing a character using vocabulary that reveals their personality without explicitly stating it.",
+        "example_response": "[Writes a paragraph where vocabulary choices do the work of characterisation: a controlling character 'arranges' rather than 'puts', 'scrutinises' rather than 'looks at', speaks in 'measured' tones. The vocabulary consistently builds an impression without the writer ever stating the character's personality directly.]",
+        "common_errors": [
+          "Using sophisticated vocabulary as decoration rather than as a tool for precision",
+          "Not maintaining consistent vocabulary choices that serve the same characterisation"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Deploys vocabulary with the precision and originality of a skilled writer, understanding that the best word is not always the most impressive but the most exact.",
+        "example_task": "Write a paragraph where every word is chosen with deliberate precision. Then explain two of your most important vocabulary choices.",
+        "example_response": "[Writes a polished paragraph where vocabulary is precise, varied and purposeful. Explanation: 'I chose 'relinquished' rather than 'gave up' because 'relinquished' carries connotations of reluctant surrender -- the character did not want to let go but had no choice. I chose 'threadbare' to describe the carpet because it is both literally accurate (worn thin) and metaphorically suggestive of the family's dignity being worn away by poverty. I avoided 'impoverished' because it labels the condition from outside; 'threadbare' shows it from inside, through the objects the family live with.']",
+        "common_errors": [
+          "Being able to choose precise vocabulary but not articulate why specific choices matter",
+          "Choosing impressive vocabulary when simplicity would be more powerful"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C041",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Writes in repetitive sentence patterns, typically using simple or compound sentences, without varying structure for effect.",
+        "example_task": "Rewrite these three simple sentences as one complex sentence: 'The dog barked. The cat ran away. The garden fell silent.'",
+        "example_response": "The dog barked and the cat ran away and the garden fell silent.",
+        "common_errors": [
+          "Joining sentences with 'and' repeatedly rather than using subordination",
+          "Not recognising the difference between compound and complex sentences"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses some variety in sentence structure, including complex sentences with subordinate clauses, though may not vary structure purposefully for effect.",
+        "example_task": "Write a paragraph about a journey using at least three different sentence structures.",
+        "example_response": "Although the train was late, I managed to find a seat by the window. The countryside rushed past in a blur of green. Somewhere beyond the hills, a new city was waiting for me -- a city I had only seen in photographs, heard about in stories, imagined in dreams.",
+        "common_errors": [
+          "Varying sentence structure for its own sake rather than for a specific effect",
+          "Using complex sentences that obscure meaning rather than enhancing it"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Varies sentence structure deliberately and purposefully, using different constructions to control pace, emphasis, rhythm and reader engagement.",
+        "example_task": "Write a paragraph that uses sentence structure to create a shift in mood from calm to urgent.",
+        "example_response": "[Writes a paragraph where the opening sentences are long, flowing and descriptive (complex sentences, embedded clauses, gentle rhythm) to create calm. Then the sentence structure shifts: shorter sentences, fragments, parataxis. The shift in structure mirrors and creates the shift in mood. The student can explain how the structural change achieves the effect.]",
+        "common_errors": [
+          "Varying structure but not connecting the variation to a specific purpose",
+          "Using fragments or short sentences as a default 'tension' technique without considering alternatives"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Controls sentence structure with the fluency of an experienced writer, using syntax as a tool for meaning-making that operates alongside vocabulary, imagery and structure.",
+        "example_task": "Write a paragraph where the sentence structures mirror the content -- where how you write reflects what you write about.",
+        "example_response": "[Writes a paragraph where syntax enacts content: a paragraph about claustrophobia uses increasingly enclosed, embedded clauses that trap the reader inside the sentence, mirroring the character's experience; or a paragraph about freedom uses expanding, open sentence structures that breathe. The student demonstrates understanding that syntax is not just a vehicle for content -- it is itself content.]",
+        "common_errors": [
+          "Creating an effect that the reader can only appreciate if told to look for it",
+          "Forcing syntax to mirror content in every sentence, which becomes exhausting rather than effective"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C047",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Does not revise vocabulary during editing, accepting the first word that comes to mind as sufficient.",
+        "example_task": "Read your writing and identify three words you could replace with better alternatives.",
+        "example_response": "I think all the words are fine. Maybe I could change 'big' to 'large'?",
+        "common_errors": [
+          "Not recognising that vocabulary can be improved during revision",
+          "Replacing words with synonyms of equal vagueness"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies vague or repetitive vocabulary during revision and replaces it with more precise alternatives when prompted.",
+        "example_task": "In your essay, you have used the word 'shows' seven times. Replace at least four instances with more precise alternatives.",
+        "example_response": "[Replaces 'shows' with 'demonstrates', 'reveals', 'illustrates' and 'conveys'. The replacements are appropriate to context and add precision.]",
+        "common_errors": [
+          "Using a thesaurus to find impressive words without checking they fit the context",
+          "Reducing repetition but not increasing precision"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Refines vocabulary independently during revision, selecting words that are more precise, more evocative or better suited to the register and purpose of the writing.",
+        "example_task": "Revise your creative writing specifically for vocabulary. Make at least five changes and explain why each is an improvement.",
+        "example_response": "[Makes five vocabulary changes with explanations: 'I changed 'walked slowly' to 'shuffled' because it shows tiredness and reluctance in a single verb. I changed 'very angry' to 'incandescent' because it suggests a level of fury that is almost visible -- glowing with rage. I changed 'the old house' to 'the house that time had given up on' because it personifies time and creates a sense of abandonment more effectively than the adjective 'old'.' Each explanation demonstrates understanding of why the revision is an improvement.]",
+        "common_errors": [
+          "Making changes that improve individual words but not the overall effect",
+          "Not considering how individual word changes affect the surrounding sentences"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Refines vocabulary with the rigour and sensitivity of a professional writer, understanding that the right word in the right place can transform a piece of writing.",
+        "example_task": "Take a paragraph of your writing and revise it so that every word earns its place. Be prepared to justify every remaining word.",
+        "example_response": "[Produces a tightly revised paragraph where no word is wasted. Can justify choices: 'I kept 'silent' rather than changing it to 'quiet' because silence is total and active -- it has a presence that quietness lacks. I cut the adverb 'carefully' because the verb 'placed' already implies care. I changed 'thought about' to 'weighed' because 'weighed' implies deliberation and consequence -- she is not just thinking, she is measuring the gravity of a decision. Every revision moved the writing from adequate to precise, from generic to specific, from telling to showing.']",
+        "common_errors": [
+          "Over-revising to the point where the writing loses its natural voice",
+          "Being able to revise vocabulary but not to explain why the revisions matter"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C049",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Makes frequent spelling errors, particularly with common words, homophones and words with irregular patterns.",
+        "example_task": "Spell these words correctly: necessary, definitely, separate, accommodate, rhythm.",
+        "example_response": "Nessecary, definately, seperate, accomodate, rythm.",
+        "common_errors": [
+          "Confusing common homophones (their/there/they're, its/it's, your/you're)",
+          "Not recognising that spelling errors undermine the credibility of writing"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Spells most common words correctly and applies basic spelling rules, though errors persist with complex or irregular words.",
+        "example_task": "Identify and correct the spelling errors in this paragraph.",
+        "example_response": "[Catches most errors but may miss one or two subtle ones, such as 'occured' (should be 'occurred') or 'arguement' (should be 'argument').]",
+        "common_errors": [
+          "Applying spelling rules inconsistently (doubling consonants, silent letters)",
+          "Not maintaining a personal list of frequently misspelled words"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Spells accurately across a wide vocabulary, using morphological knowledge (prefixes, roots, suffixes) to spell unfamiliar words and applying spelling rules consistently.",
+        "example_task": "Explain why 'accommodate' has two c's and two m's, and how understanding the word's structure helps you spell it.",
+        "example_response": "'Accommodate' comes from the Latin prefix 'ac-' (a form of 'ad-' meaning 'to') and the root 'commodare' (to make fit). The prefix assimilates to 'ac-' before 'c', giving double c. The root 'commodare' contains double m because it derives from 'com-' (with) + 'modus' (measure). Understanding the structure -- ac + commod + ate -- makes the spelling logical rather than arbitrary. The same principle helps with 'accumulate' (ac + cumul + ate) and 'accommodate' (ac + commod + ate).",
+        "common_errors": [
+          "Knowing spelling rules without applying them to unfamiliar words",
+          "Not using etymological knowledge as a spelling strategy"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Spells with consistent accuracy across an advanced vocabulary, including subject-specific and literary terminology, and uses etymological knowledge to spell unfamiliar words confidently.",
+        "example_task": "Spell these words correctly and explain the etymology of two of them: onomatopoeia, juxtaposition, soliloquy, denouement, bildungsroman.",
+        "example_response": "Onomatopoeia, juxtaposition, soliloquy, denouement, bildungsroman. 'Soliloquy' comes from Latin 'solus' (alone) + 'loqui' (to speak) -- literally 'speaking alone', which is exactly what a character does in a soliloquy. 'Denouement' comes from French 'denouer' meaning 'to untie' -- the resolution of a plot is the 'untying' of complications, like untying a knot. Knowing origins helps me spell: 'soliLOQUy' not 'soliLOQUi' because 'loqui' is the Latin infinitive form.",
+        "common_errors": [
+          "Spelling advanced words correctly but not understanding their etymological structure",
+          "Being accurate with familiar terms but guessing at unfamiliar ones rather than applying etymological reasoning"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C050",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Uses full stops and capital letters with reasonable accuracy but struggles with commas, apostrophes and higher-level punctuation.",
+        "example_task": "Add the correct punctuation to this passage: 'the boys coat was torn he didnt know how it had happened'",
+        "example_response": "The boys coat was torn. He didnt know how it had happened.",
+        "common_errors": [
+          "Missing apostrophes for possession and contraction",
+          "Using commas where full stops are needed (comma splicing)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses commas and apostrophes with growing accuracy and begins to attempt semi-colons, colons and dashes, though not always correctly.",
+        "example_task": "Punctuate this sentence correctly using a semi-colon: 'The weather was terrible we stayed indoors all day'",
+        "example_response": "The weather was terrible; we stayed indoors all day.",
+        "common_errors": [
+          "Using semi-colons between a main clause and a subordinate clause",
+          "Confusing the functions of colons and semi-colons"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses the full range of punctuation accurately, including semi-colons, colons, dashes, brackets and ellipses, understanding the distinct function and effect of each.",
+        "example_task": "Write a paragraph that uses a semi-colon, a colon and a dash, each for a different purpose. Explain why you chose each.",
+        "example_response": "[Writes a paragraph demonstrating accurate use: a semi-colon between two related independent clauses ('The experiment failed; the variables were impossible to control'), a colon to introduce an explanation or list ('There was only one option: retreat'), and a dash for parenthetical emphasis or dramatic pause ('The letter -- crumpled, stained, barely legible -- lay on the doorstep'). Explains that the semi-colon shows balanced connection, the colon signals 'here is what I mean', and the dash creates dramatic interruption.]",
+        "common_errors": [
+          "Using all three correctly but not being able to explain the difference between them",
+          "Avoiding higher-level punctuation rather than deploying it confidently"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses punctuation as a deliberate craft tool, understanding that punctuation shapes rhythm, pace, emphasis and meaning, and deploying it with the same purposefulness as vocabulary.",
+        "example_task": "Write two versions of the same sentence, using different punctuation each time, and explain how the punctuation changes the meaning or effect.",
+        "example_response": "Version 1: 'She hesitated, then walked in.' The comma creates a brief pause suggesting mild reluctance -- a moment of thought before action. Version 2: 'She hesitated -- then walked in.' The dash creates a longer, more dramatic pause suggesting significant internal conflict. The reader holds their breath during the dash. Version 3: 'She hesitated. Then walked in.' The full stop and sentence fragment create a sharp, decisive break. The hesitation is complete and separate from the action. The fragment 'Then walked in' has the quality of determination -- short, blunt, committed. Three different punctuation choices, three different characters: one slightly cautious, one deeply conflicted, one resolute.",
+        "common_errors": [
+          "Using punctuation for effect but not being able to explain how the effect is created",
+          "Not recognising that punctuation is as much a meaning-making tool as vocabulary"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C051",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Makes frequent grammatical errors including incorrect verb tense, subject-verb disagreement and confused sentence construction.",
+        "example_task": "Correct the grammatical errors in this paragraph.",
+        "example_response": "[Corrects some errors but misses others, particularly subject-verb agreement in complex sentences and tense consistency.]",
+        "common_errors": [
+          "Shifting tense within a paragraph without reason",
+          "Using plural verbs with singular subjects in complex sentences"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Writes with mostly accurate grammar in simple and compound sentences, though errors appear in complex constructions.",
+        "example_task": "Write a paragraph about your school using a range of sentence types. Check for grammatical accuracy.",
+        "example_response": "[Writes a paragraph with accurate grammar in simple sentences but may make errors in complex ones, such as dangling modifiers, incorrect relative pronoun use, or tense shifts within a single sentence.]",
+        "common_errors": [
+          "Grammatical accuracy declining as sentence complexity increases",
+          "Not proof-reading complex sentences carefully enough"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Writes with consistent grammatical accuracy across all sentence types, maintaining control of tense, agreement, voice and clause structure in extended writing.",
+        "example_task": "Write a formal analytical paragraph using complex sentence structures. Check that every sentence is grammatically accurate.",
+        "example_response": "[Writes a paragraph with accurate grammar throughout, including complex sentences with multiple subordinate clauses, correct use of passive and active voice, consistent tense, and accurate relative pronoun use. The grammar supports clarity rather than obscuring meaning.]",
+        "common_errors": [
+          "Being grammatically accurate but at the expense of sentence variety",
+          "Not recognising when a grammatically correct sentence is still unclear"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Writes with grammatical precision that serves meaning, understanding that accurate grammar enables rather than constrains sophisticated expression.",
+        "example_task": "Write a paragraph that uses a grammatically complex construction (e.g. a sentence with three or more clauses) accurately and effectively.",
+        "example_response": "[Writes a sophisticated paragraph where grammar enables complex meaning: 'Although the evidence initially suggested that the character was acting out of selfishness -- a reading supported by the opening scene, in which she refuses to share her inheritance with her siblings -- the final chapter reveals that her apparent greed concealed a plan to invest the money in a trust fund that would protect them all.' The student maintains grammatical control across a 50-word sentence with embedded clauses, dashes and multiple subordinations, all serving clarity rather than obscuring it.]",
+        "common_errors": [
+          "Writing grammatically complex sentences that are technically accurate but difficult to follow",
+          "Not recognising when a simpler construction would be more effective"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C052",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Reads texts without noticing their grammatical features or considering how grammar contributes to meaning.",
+        "example_task": "Identify one grammatical feature in this passage and explain its effect.",
+        "example_response": "There is a long sentence. It makes the passage feel longer.",
+        "common_errors": [
+          "Not distinguishing between grammatical features and other language features",
+          "Describing length rather than analysing grammatical construction"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies grammatical features in texts (sentence types, tense choices, active/passive voice) and makes basic comments on their effect.",
+        "example_task": "The writer uses passive voice in this paragraph: 'The door was opened. The room was searched.' Why might the writer have chosen passive rather than active voice?",
+        "example_response": "The passive voice hides who opened the door and searched the room. This creates mystery because we do not know who did it. It also makes the actions seem impersonal and mechanical, as if the events are happening without human agency.",
+        "common_errors": [
+          "Identifying the grammatical feature without fully explaining its effect",
+          "Not connecting the grammatical choice to the writer's broader purpose"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses how grammatical features in published texts create specific effects, connecting grammatical choices to meaning, characterisation and tone.",
+        "example_task": "Analyse how the writer's use of the imperative mood in this speech creates a particular relationship with the audience.",
+        "example_response": "[Analyses imperatives such as 'Consider this', 'Look at the evidence', 'Ask yourself' as grammatical choices that position the speaker as authoritative and the audience as responsive. Explains that imperatives create a dynamic of command -- the speaker directs the audience's attention and thinking. Notes how the shift from imperative to declarative ('This is the truth') at the speech's climax moves from directing the audience to claiming authority over reality itself.]",
+        "common_errors": [
+          "Analysing grammar in isolation rather than as part of the writer's overall strategy",
+          "Using grammatical terminology without precision"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses grammatical features with precision, understanding how syntax, tense, voice, mood and clause structure function as tools for creating complex meaning in literary and non-literary texts.",
+        "example_task": "Analyse how a writer's grammatical choices in a passage you have studied contribute to characterisation or theme.",
+        "example_response": "[Provides a detailed analysis of how, for example, Dickens's use of present participles in a description ('creeping, crawling, oozing') creates a sense of continuous, unstoppable action that mirrors the overwhelming nature of poverty; or how Austen's use of free indirect discourse (grammatically blending narrator and character voice) enables irony without direct commentary. The analysis connects grammatical micro-choices to the text's macro-themes.]",
+        "common_errors": [
+          "Providing grammatical analysis that is technically accurate but not connected to interpretation",
+          "Not using examples from the text to support grammatical observations"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C053",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows very few grammatical terms and cannot use them to describe how language works.",
+        "example_task": "What is a noun, a verb and an adjective? Give an example of each.",
+        "example_response": "A noun is a thing, like 'table'. A verb is a doing word, like 'run'. An adjective is a describing word, like 'big'.",
+        "common_errors": [
+          "Defining word classes in oversimplified terms that break down with complex examples",
+          "Not being able to identify word classes in real sentences"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses basic grammatical terminology (noun, verb, adjective, adverb, clause, phrase, sentence types) with reasonable accuracy.",
+        "example_task": "Identify the main clause and subordinate clause in this sentence: 'Although it was raining, the children played outside.'",
+        "example_response": "The subordinate clause is 'Although it was raining' because it cannot stand alone as a sentence. The main clause is 'the children played outside' because it makes sense on its own. The subordinating conjunction 'Although' introduces the subordinate clause.",
+        "common_errors": [
+          "Confusing main and subordinate clauses",
+          "Not recognising subordinating conjunctions"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses a range of grammatical terminology accurately in discussion and analysis, including clause types, verb forms, voice, mood and sentence functions.",
+        "example_task": "Using precise grammatical terminology, analyse the grammar of this sentence: 'Having been abandoned by its owners, the dog was found shivering under a bridge, too weak to stand.'",
+        "example_response": "The sentence opens with a past participle phrase ('Having been abandoned by its owners') which functions as a fronted adverbial, providing context before the main clause. The main clause uses passive voice ('the dog was found') which focuses on the dog as the receiver of the action and leaves the finder unspecified. The present participle 'shivering' functions as a complement describing the dog's state when found. 'Under a bridge' is a prepositional phrase functioning as an adverbial of place. 'Too weak to stand' is an adjective phrase with an infinitive complement that adds the final detail of the dog's condition. The grammatical choices create a sentence that foregrounds the dog's vulnerability: passive voice makes the dog the grammatical subject, and the two participles ('abandoned', 'shivering') create a continuous sense of suffering.",
+        "common_errors": [
+          "Using terminology accurately but not connecting it to meaning or effect",
+          "Confusing participles with other verb forms"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses grammatical terminology with precision and fluency as a natural part of literary and linguistic analysis, understanding that terminology is a tool for insight, not an end in itself.",
+        "example_task": "Use grammatical terminology to explain how a writer creates a specific effect in a passage you have studied.",
+        "example_response": "[Uses terminology naturally and precisely within literary analysis, demonstrating that grammatical knowledge deepens textual understanding. For example: 'Dickens's use of cumulative coordinate clauses joined by polysyndeton ('and... and... and...') creates a breathless, overwhelming catalogue of misery that mimics the experience of poverty itself -- there is no pause, no escape, no full stop until the sentence has exhausted both its content and its reader.' The terminology serves the analysis rather than replacing it.]",
+        "common_errors": [
+          "Using terminology to display knowledge rather than to generate insight",
+          "Producing a grammatical description that does not contribute to interpretation"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C054",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Makes language choices unconsciously, without considering why one grammatical construction or vocabulary choice might be more effective than another.",
+        "example_task": "Why did you use the passive voice in this sentence? Was it a deliberate choice?",
+        "example_response": "I did not know it was passive. It just came out that way.",
+        "common_errors": [
+          "Not recognising their own grammatical choices as choices",
+          "Using constructions habitually rather than purposefully"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Begins to make some language choices consciously, particularly when prompted to consider the effect of vocabulary or sentence structure.",
+        "example_task": "Rewrite this sentence in active voice and passive voice. Which is better for this context and why?",
+        "example_response": "Active: 'The government cut the funding.' Passive: 'The funding was cut.' The passive is better here because the article is about the effect on schools, not about blaming the government. The passive focuses on what happened rather than who did it.",
+        "common_errors": [
+          "Making conscious choices when prompted but reverting to habitual patterns in independent writing",
+          "Choosing between options without being able to explain the effect of each"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Makes conscious and purposeful linguistic choices in own writing, selecting vocabulary, grammar and structure to achieve specific effects on the reader.",
+        "example_task": "Write a paragraph and annotate three linguistic choices you made deliberately, explaining the effect you intended.",
+        "example_response": "[Writes a paragraph and annotates: 'I used a fronted adverbial ('Silently, relentlessly') to foreground the manner before the action, creating suspense. I chose the passive ('was consumed') rather than active ('consumed') because the character is powerless against the force acting on them -- the passive mirrors their passivity. I ended with a one-word sentence ('Gone.') to create finality and shock after the longer, building sentences before it.' Each annotation shows conscious craft.]",
+        "common_errors": [
+          "Annotating obvious choices (short sentence for impact) but not more subtle ones (tense shifts, clause arrangement)",
+          "Making claims about intended effect that the text does not support"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Makes linguistic choices with the instinctive but conscious craft of an experienced writer, understanding that every grammatical and vocabulary choice shapes meaning.",
+        "example_task": "Reflect on your own writing process. How do you decide between two possible ways of expressing the same idea?",
+        "example_response": "[Reflects with metacognitive awareness: 'I think of writing as decision-making at every level. When I draft, many choices are instinctive. When I revise, I interrogate those instincts. For example, I wrote 'the rain fell' then changed it to 'rain fell' -- removing the article 'the' makes rain abstract and universal rather than specific, which suits a passage about emotional desolation. I also consider rhythm: 'rain fell' is two stressed syllables, blunt and heavy; 'the rain fell' has an unstressed syllable that softens the impact. Small choices accumulate into voice. My voice as a writer is the sum of thousands of these micro-decisions.']",
+        "common_errors": [
+          "Being able to make conscious choices but not to reflect on the process of making them",
+          "Over-analysing during drafting, which inhibits fluency"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C055",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Uses the same register regardless of context, typically informal, without recognising that different situations require different levels of formality.",
+        "example_task": "Is there a difference between how you would speak to a friend and how you would write to a headteacher? What changes?",
+        "example_response": "I would be more polite to the headteacher. I would say please and thank you.",
+        "common_errors": [
+          "Equating register with politeness rather than with language choice",
+          "Not recognising that vocabulary, sentence structure and tone all change with register"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognises the difference between formal and informal registers and can adjust vocabulary and tone when the context is clear, though adjustment may be inconsistent.",
+        "example_task": "Write the same message in formal and informal register: telling someone their application has been unsuccessful.",
+        "example_response": "Formal: 'I regret to inform you that your application has been unsuccessful on this occasion.' Informal: 'Sorry, but you did not get it this time.'",
+        "common_errors": [
+          "Adjusting vocabulary but not sentence structure or tone",
+          "Mixing registers within a single piece of writing"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Controls register confidently across a range of contexts, adjusting vocabulary, sentence structure, tone and rhetorical strategy to match the formality requirements of the situation.",
+        "example_task": "Write the same information in three registers: casual (text to a friend), semi-formal (school newsletter), formal (letter to the local council).",
+        "example_response": "[Writes three distinct versions where every aspect of the language -- vocabulary, sentence length, tone, level of detail, rhetorical strategy -- adjusts to register. The casual version is direct and abbreviated; the semi-formal is clear and accessible; the formal is precise, measured and evidence-based. The student can explain what changes and why.]",
+        "common_errors": [
+          "Achieving appropriate register but at the cost of voice or engagement",
+          "Treating formal register as simply 'longer words and longer sentences'"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Manipulates register with sophistication, understanding that register is not just formality but a complex set of linguistic choices shaped by audience, purpose, context and power, and can shift register strategically within a single text.",
+        "example_task": "Write a piece that shifts register mid-way through for deliberate rhetorical effect.",
+        "example_response": "[Writes a piece that, for example, opens in formal academic register to establish credibility, then shifts to colloquial register to create intimacy or shock. The student explains: 'I shifted from formal to informal because the formal register creates authority and distance, and the sudden shift to colloquial language breaks through that distance -- it is like a politician taking off their jacket and rolling up their sleeves. The register shift signals: I am being real with you now. The shift itself is the message.']",
+        "common_errors": [
+          "Shifting register accidentally rather than deliberately",
+          "Not being able to explain the rhetorical function of a register shift"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C056",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Does not distinguish between spoken and written language, using the same constructions in both modes.",
+        "example_task": "How is a spoken conversation different from a written paragraph?",
+        "example_response": "In a conversation you do not need to write things down. Writing is more permanent.",
+        "common_errors": [
+          "Thinking the only difference is the medium (speaking vs writing) rather than the language choices",
+          "Writing in a spoken style without recognising that written conventions differ"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognises basic differences between spoken and written language, such as the presence of fillers, contractions and incomplete sentences in speech.",
+        "example_task": "List three features you would find in spoken language that you would not normally find in formal written language.",
+        "example_response": "Fillers like 'um' and 'like'. Contractions like 'don't' and 'can't'. Incomplete sentences like 'Yeah, sort of.'",
+        "common_errors": [
+          "Listing features without explaining why spoken and written language differ",
+          "Treating spoken language as inferior rather than as differently structured"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses the differences between spoken and written language with nuance, understanding that each mode has its own conventions, and that effective speakers and writers exploit the specific affordances of their mode.",
+        "example_task": "Compare a written news report with a live TV broadcast of the same event. What language differences do you notice and why do they exist?",
+        "example_response": "[Analyses differences including: the broadcast uses repetition (listeners cannot re-read), simpler syntax (processing spoken language requires less complex structures), hedging ('it seems that', 'we believe'), present tense (creating immediacy), and direct address ('as you can see'). The written report uses longer sentences, more precise vocabulary, past tense and attributed quotations. The differences exist because listeners process language in real time without the ability to go back, while readers can re-read and process at their own pace.]",
+        "common_errors": [
+          "Describing differences without explaining why they exist",
+          "Treating spoken language conventions as errors"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates how spoken and written language interact and influence each other, and understands that the boundary between them is increasingly blurred by digital communication.",
+        "example_task": "Argue that digital communication (texting, social media) has created a new hybrid between spoken and written language.",
+        "example_response": "[Argues that texting, social media posts and messaging apps represent a new linguistic mode that combines features of both spoken and written language. Written in form (typed text) but spoken in convention (informal, fragmented, conversational, using emojis as paralinguistic features that replace gesture and tone). This hybrid mode has its own grammar: capitalisation for emphasis rather than sentence boundaries, deliberate misspelling for tone, and punctuation that signals attitude (a full stop in a text can signal displeasure). The student argues that this is not 'bad English' but a legitimate new register adapted to a new medium, just as the telegram created its own conventions in the 19th century.]",
+        "common_errors": [
+          "Dismissing digital communication as laziness rather than analysing it as a linguistic phenomenon",
+          "Not using specific examples to support the argument"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C057",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Has a vague sense that some ways of speaking and writing are 'correct' but cannot explain what Standard English is or why it matters.",
+        "example_task": "What is Standard English? Why is it taught in schools?",
+        "example_response": "Standard English is proper English. It is taught because you need to speak properly.",
+        "common_errors": [
+          "Equating Standard English with 'correct' or 'proper' without understanding it as a dialect",
+          "Not recognising that non-standard forms are valid in appropriate contexts"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understands that Standard English is the formal variety used in education, professional contexts and formal writing, and can identify some non-standard features.",
+        "example_task": "Identify the non-standard features in this sentence and rewrite it in Standard English: 'We was going down the shops but there weren't none open.'",
+        "example_response": "'We was' should be 'we were' (subject-verb agreement). 'Weren't none' is a double negative -- it should be 'were not any' or 'none were'. Standard English: 'We were going to the shops but none of them were open.'",
+        "common_errors": [
+          "Correcting non-standard forms without understanding why they differ",
+          "Treating non-standard English as wrong rather than as appropriate in different contexts"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Understands Standard English as a prestige dialect with specific grammatical conventions, uses it confidently in formal contexts, and understands why it holds the social position it does.",
+        "example_task": "Explain why Standard English is required in formal contexts but dialect is appropriate in others.",
+        "example_response": "Standard English is required in formal contexts because it is the shared variety understood across all regions and social groups -- it enables clear communication without local ambiguity. In a job interview, a courtroom or an academic essay, Standard English signals competence and education. However, dialect is appropriate in informal contexts because it signals identity, community and belonging. A Yorkshire dialect in a conversation between friends is warmer and more authentic than Standard English would be. The key skill is knowing when to use each -- this is called code-switching. Standard English is not 'better' English; it is the English appropriate for certain situations, just as a suit is not 'better' clothing but clothing appropriate for certain occasions.",
+        "common_errors": [
+          "Explaining why Standard English matters without acknowledging the value of non-standard varieties",
+          "Not understanding code-switching as a skill rather than a compromise"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the social, political and historical reasons why Standard English holds its prestige position, understanding that language standardisation is a social process, not a linguistic one.",
+        "example_task": "Is Standard English superior to other varieties of English? Argue your case with evidence.",
+        "example_response": "[Argues that Standard English is not linguistically superior (all dialects are rule-governed and expressive) but is socially privileged because of historical circumstances: it evolved from the East Midlands dialect spoken in the London-Oxford-Cambridge triangle where political, educational and economic power was concentrated. Its prestige reflects power structures, not inherent quality. However, the student also argues that knowing Standard English provides access to power and opportunity, and that not teaching it would disadvantage students from non-Standard English backgrounds. The conclusion balances respect for all varieties with pragmatic recognition of Standard English's gatekeeping function.]",
+        "common_errors": [
+          "Arguing that Standard English is either entirely neutral or entirely oppressive without nuance",
+          "Not using linguistic evidence to support the argument"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C058",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Aware that people speak differently in different regions but does not understand what linguistic variety means or why it exists.",
+        "example_task": "Do people in different parts of the country speak differently? Can you give an example?",
+        "example_response": "Yes, people in the north say things differently. Some people have accents.",
+        "common_errors": [
+          "Confusing accent (pronunciation) with dialect (vocabulary and grammar)",
+          "Thinking regional speech is simply 'incorrect' Standard English"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies different varieties of English (regional dialects, sociolects, accents) and gives examples of linguistic variation.",
+        "example_task": "Give examples of how vocabulary varies between British English dialects.",
+        "example_response": "In Yorkshire, 'nowt' means 'nothing' and 'summat' means 'something'. In Scotland, 'bairn' means 'child' and 'wee' means 'small'. In London, 'mint' can mean 'good'. These are dialect words -- they follow their own rules and have long histories.",
+        "common_errors": [
+          "Treating dialect as curiosity rather than as a legitimate linguistic system",
+          "Not recognising sociolects (varieties based on social group) alongside regional dialects"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Understands that language varies according to region, social group, age, context and purpose, and analyses how writers use language variety for characterisation and effect.",
+        "example_task": "How does a writer you have studied use dialect or non-standard English to create character?",
+        "example_response": "[Analyses how, for example, Steinbeck uses non-standard grammar in dialogue ('I ain't got nothing', 'we could live offa the fatta the lan') to create authentic working-class American voices that contrast with the narrator's Standard English. This linguistic contrast positions the characters as outsiders to mainstream education and power while demonstrating that their non-standard speech is rule-governed, consistent and expressive. The writer's choice to use dialect is a political act: it insists on the value and humanity of speakers who are often dismissed.]",
+        "common_errors": [
+          "Noticing dialect in texts without analysing its function",
+          "Treating non-standard speech in literature as simply 'realistic' without considering its thematic purpose"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates how language variety reflects and constructs social identity, understanding the relationship between language, power and ideology.",
+        "example_task": "Argue that attitudes to language variety reveal deeper social attitudes about class, region and identity.",
+        "example_response": "[Argues that negative attitudes to non-standard English are not linguistic judgements but social judgements: when someone says 'he speaks badly', they are usually expressing a judgement about the speaker's social class, education or regional origin. Provides examples: received pronunciation (RP) is associated with intelligence and authority not because of any inherent quality but because it is the dialect of the social elite. The student connects this to literature: characters who speak in dialect are often positioned as comic, ignorant or provincial, while Standard English speakers are positioned as authoritative. This is a literary convention that reinforces social hierarchies. The student concludes that linguistic awareness is a form of social awareness: understanding why we judge certain varieties negatively reveals the power structures that shape our society.]",
+        "common_errors": [
+          "Making claims about language and power without specific examples",
+          "Oversimplifying the relationship between dialect and social class"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C059",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Uses non-standard features in formal writing without recognising them as non-standard.",
+        "example_task": "Check your essay for any non-standard English forms and correct them.",
+        "example_response": "[Does not identify non-standard features such as 'could of' (for 'could have'), 'less people' (for 'fewer people') or double negatives.]",
+        "common_errors": [
+          "Not recognising common non-standard forms in own writing",
+          "Treating spoken forms as acceptable in formal writing"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses Standard English in formal writing with reasonable consistency, correcting non-standard features when they are pointed out.",
+        "example_task": "Identify any non-standard features in your writing and correct them.",
+        "example_response": "[Identifies and corrects 'could of' to 'could have', 'me and my friend' to 'my friend and I', and 'less options' to 'fewer options'. May miss some subtler non-standard features.]",
+        "common_errors": [
+          "Correcting some non-standard forms but missing others",
+          "Over-correcting (using 'I' where 'me' is actually correct, as in 'between you and me')"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Writes in Standard English consistently and confidently in formal contexts, with control of the grammatical conventions that distinguish Standard English from other varieties.",
+        "example_task": "Write a formal essay in Standard English and annotate three features that demonstrate your control of Standard English conventions.",
+        "example_response": "[Writes a formal essay and annotates: 'I used 'fewer' rather than 'less' with a countable noun. I used 'were' in the subjunctive ('if I were to argue...') because the subjunctive is a Standard English convention. I used 'whom' in 'the character to whom the letter is addressed' because 'whom' is the objective case required after a preposition in Standard English.' Each annotation shows conscious control.]",
+        "common_errors": [
+          "Using Standard English correctly but not being able to identify what makes it standard",
+          "Being able to write in Standard English but treating it as the only correct form"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses Standard English with complete confidence in formal writing while understanding it as a chosen register rather than the only correct form, and can switch between Standard and non-standard forms deliberately and for effect.",
+        "example_task": "Write a piece that uses both Standard English and non-standard English deliberately, and explain why each is used.",
+        "example_response": "[Writes a piece -- perhaps a narrative with formal narration and dialect dialogue, or an essay that deliberately quotes non-standard English to analyse it -- where the contrast between Standard and non-standard English is purposeful. Explains: 'The narration uses Standard English because the narrator's authority and clarity depend on the reader's trust in their linguistic competence. The character's dialogue uses non-standard English because their voice, identity and social position are communicated through their speech patterns. If I standardised the dialogue, I would silence the character's identity. Both varieties are doing essential work.']",
+        "common_errors": [
+          "Using non-standard English in a way that seems accidental rather than deliberate",
+          "Not being able to articulate the rhetorical purpose of the register contrast"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C061",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows a few basic literary terms (simile, metaphor, rhyme) but cannot use them analytically in discussion.",
+        "example_task": "Name three literary techniques and define them.",
+        "example_response": "A simile is when you compare something using 'like' or 'as'. A metaphor is when you say something is something else. Rhyme is when words sound the same at the end.",
+        "common_errors": [
+          "Defining terms in isolation without being able to apply them to texts",
+          "Knowing only the most basic terms"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses a range of literary terms in analysis, including those for figurative language, narrative and poetic features, applying them to specific texts.",
+        "example_task": "Use appropriate literary terminology to analyse this extract.",
+        "example_response": "[Uses terms such as 'imagery', 'personification', 'foreshadowing', 'narrative voice' and 'symbolism' in context, applying them to specific features of the extract. Some terms may be used slightly imprecisely.]",
+        "common_errors": [
+          "Using literary terms as labels rather than as analytical tools",
+          "Confusing similar terms (imagery/symbolism, metaphor/allegory)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses a wide range of literary and linguistic terminology precisely and fluently in both spoken and written analysis.",
+        "example_task": "Analyse this poem using precise literary terminology. Ensure every term you use is deployed accurately.",
+        "example_response": "[Analyses the poem using terms such as 'caesura', 'enjambment', 'volta', 'semantic field', 'pathetic fallacy', 'dramatic monologue', 'conceit', 'anaphora' -- each used precisely and in context. The terminology serves the analysis rather than replacing it: terms are always followed by explanation of effect.]",
+        "common_errors": [
+          "Using terminology accurately but without explaining its significance in context",
+          "Deploying rare or impressive terms without genuine understanding"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Deploys literary terminology with the fluency and precision of an emerging literary critic, using terms as tools for insight and selecting the most useful terminology for each analytical purpose.",
+        "example_task": "Analyse a passage choosing the most illuminating terminology for this specific text, rather than using a standard set of terms.",
+        "example_response": "[Selects terminology specific to the text's demands rather than applying a generic checklist. For a piece of Gothic fiction, uses terms like 'the uncanny', 'doppelganger', 'sublime', 'transgression' alongside standard terms. For a speech, uses 'peroration', 'antithesis', 'chiasmus', 'epideictic rhetoric'. The choice of terminology demonstrates deep understanding of both the text and the critical tradition it belongs to.]",
+        "common_errors": [
+          "Using the same set of terms for every text rather than adapting to the specific text",
+          "Using terminology from critical theory without understanding its implications"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "EN-KS3-C062",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can discuss texts in general terms but lacks the metalinguistic vocabulary to talk about how language works.",
+        "example_task": "Discuss with a partner how the writer creates tension in this passage.",
+        "example_response": "The passage is tense because scary things happen and you want to know what will happen next.",
+        "common_errors": [
+          "Discussing content rather than language",
+          "Not having the vocabulary to talk about how effects are achieved"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Discusses language and literature using some specialist vocabulary, making observations about technique with growing precision.",
+        "example_task": "Discuss with a partner how the writer uses language to create a character. Use specific literary and grammatical terms.",
+        "example_response": "[Uses terms such as 'dialogue', 'adjective', 'simile', 'tone' and 'description' in discussion, making points about how the writer constructs the character through specific language choices. Begins to move beyond naming features to discussing their effects.]",
+        "common_errors": [
+          "Using metalanguage in teacher-directed discussion but not in peer discussion",
+          "Naming techniques without analysing them"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Discusses language and literature with confidence and precision, using metalinguistic vocabulary naturally to articulate sophisticated analytical observations.",
+        "example_task": "Lead a class discussion about how language works in a passage you have studied.",
+        "example_response": "[Leads discussion using precise terminology naturally, asking analytical questions ('Why does the writer shift from third person to second person here -- what does that do to our position as readers?'), building on others' observations with more precise language ('You said the writing is 'descriptive', and I think specifically it is the accumulation of sensory detail -- tactile and olfactory -- that creates the immersive effect'), and connecting language observations to thematic interpretation.]",
+        "common_errors": [
+          "Using metalanguage fluently but not encouraging others to do the same",
+          "Discussing language technique without connecting it to meaning"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Engages in metalinguistic discussion with the sophistication and precision of an emerging linguist or literary critic, using specialist vocabulary to construct and debate interpretive arguments.",
+        "example_task": "Participate in a Socratic seminar about how language choices in a text create its central argument.",
+        "example_response": "[Participates in extended academic discussion, building, challenging and refining arguments with precision. Uses metalinguistic vocabulary to make nuanced distinctions ('I think the effect is not pathetic fallacy -- the weather does not reflect the character's mood -- but rather dramatic irony: the beautiful weather contrasts with the horror of what is about to happen, making it more shocking'). Asks probing questions that advance the discussion ('If we accept that the writer uses the semantic field of imprisonment throughout, does that undermine the ending's apparent freedom, or does the imagery of confinement make the release more meaningful?'). The discussion demonstrates that metalinguistic vocabulary enables more precise thinking, not just more impressive talking.]",
+        "common_errors": [
+          "Using discussion to display knowledge rather than to develop understanding collectively",
+          "Not listening to others' contributions carefully enough to build on them"
+        ]
+      }
+    ]
+  }
+]

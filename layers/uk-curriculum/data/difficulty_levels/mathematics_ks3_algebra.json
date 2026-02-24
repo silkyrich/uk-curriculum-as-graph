@@ -1,0 +1,728 @@
+[
+  {
+    "concept_id": "MA-KS3-C025",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Recognises that letters can stand for numbers and understands basic conventions such as 3y meaning 3 × y.",
+        "example_task": "What does the expression 2a + 5 mean?",
+        "example_response": "It means 'multiply a by 2 then add 5'. If a = 3, the expression equals 2 × 3 + 5 = 11.",
+        "common_errors": ["Thinking 2a means 'twenty-a' or the digit 2 next to a", "Not understanding that the multiplication sign is omitted between a number and a letter"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Uses algebraic conventions confidently: coefficients as fractions, a² for a × a, a/b for a ÷ b, and brackets for grouping.",
+        "example_task": "Write using algebraic notation: 'Multiply x by itself, then divide by y, then add half of z.'",
+        "example_response": "x²/y + z/2 or x²/y + ½z.",
+        "common_errors": ["Writing x2 instead of x²", "Writing z/½ instead of z/2 or ½z"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Reads and writes algebraic expressions fluently, interpreting notation in context and translating between verbal and symbolic forms.",
+        "example_task": "The perimeter of an isosceles triangle with base b and equal sides s is P = b + 2s. Write a formula for the base in terms of P and s.",
+        "example_response": "Rearranging: b = P - 2s. The base equals the perimeter minus twice the equal side length.",
+        "common_errors": ["Writing b = P - s (subtracting only one s)", "Not rearranging correctly when the subject is embedded in the formula"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Interprets and constructs complex algebraic notation including nested expressions, and explains why conventions exist to remove ambiguity.",
+        "example_task": "Explain the difference between 2(x + 3)² and (2x + 3)² and why the brackets matter.",
+        "example_response": "2(x + 3)² means: add 3 to x, square the result, then multiply by 2. If x = 1: 2(4)² = 2 × 16 = 32. (2x + 3)² means: multiply x by 2, add 3, then square. If x = 1: (5)² = 25. The brackets determine which operations are grouped before squaring. Without conventions, the expression would be ambiguous.",
+        "common_errors": ["Assuming both expressions are equivalent", "Not applying the squaring to the entire bracketed expression"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C026",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can replace a letter with a given number and evaluate a simple expression.",
+        "example_task": "Find the value of 3x + 2 when x = 4.",
+        "example_response": "3 × 4 + 2 = 12 + 2 = 14.",
+        "common_errors": ["Computing 3 + 4 × 2 = 11 (ignoring the algebraic meaning of 3x)", "Substituting incorrectly into the wrong position"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Substitutes values into expressions and formulae involving multiple variables, powers and fractions.",
+        "example_task": "Find the value of 2a² - 3b when a = 5 and b = -2.",
+        "example_response": "2(5²) - 3(-2) = 2(25) - (-6) = 50 + 6 = 56.",
+        "common_errors": ["Computing 2a² as (2a)² = (10)² = 100", "Forgetting that subtracting a negative is addition"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Substitutes into complex formulae including scientific and geometric formulae, handling negative values, fractions and nested operations correctly.",
+        "example_task": "The formula for the surface area of a cylinder is A = 2πr² + 2πrh. Find A when r = 3 and h = 10. Give your answer in terms of π.",
+        "example_response": "A = 2π(3²) + 2π(3)(10) = 2π(9) + 2π(30) = 18π + 60π = 78π.",
+        "common_errors": ["Computing 2πr² as (2πr)²", "Forgetting to include both the circular ends and the curved surface"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Uses substitution strategically to verify algebraic results, test conjectures, and evaluate complex expressions efficiently.",
+        "example_task": "Verify that x = -2 is a solution of x³ + 3x² - 4 = 0.",
+        "example_response": "Substituting x = -2: (-2)³ + 3(-2)² - 4 = -8 + 3(4) - 4 = -8 + 12 - 4 = 0 ✓. So x = -2 is indeed a root. This means (x + 2) is a factor of x³ + 3x² - 4.",
+        "common_errors": ["Computing (-2)³ as -6 instead of -8", "Computing (-2)² as -4 instead of +4"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C027",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can distinguish between an expression (no equals sign) and an equation (has an equals sign).",
+        "example_task": "Which of these is an expression and which is an equation: 3x + 5 and 3x + 5 = 20?",
+        "example_response": "3x + 5 is an expression — it does not have an equals sign. 3x + 5 = 20 is an equation — it says two things are equal.",
+        "common_errors": ["Calling both 'equations'", "Thinking an expression can have an equals sign"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Correctly uses and distinguishes between the terms expression, equation, inequality, term, factor and coefficient.",
+        "example_task": "In the expression 5x² - 3xy + 7, identify: (a) the terms, (b) the coefficient of x², (c) the constant term.",
+        "example_response": "(a) The terms are 5x², -3xy, and 7. (b) The coefficient of x² is 5. (c) The constant term is 7.",
+        "common_errors": ["Identifying only two terms (missing the constant or treating -3xy as +3xy)", "Giving the coefficient of x² as x² rather than 5"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Distinguishes between expressions, equations, identities, formulae and inequalities, and uses each term precisely in context.",
+        "example_task": "Classify each statement: (a) 2(x+3) = 2x + 6 (b) 2x + 6 = 14 (c) A = πr² (d) 2x + 6 > 10.",
+        "example_response": "(a) Identity — true for all values of x. (b) Equation — true only when x = 4. (c) Formula — gives the area of a circle in terms of radius. (d) Inequality — true when x > 2.",
+        "common_errors": ["Confusing an identity with an equation (an identity has ≡ and is always true)", "Not recognising that a formula is a special type of equation with a subject"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Uses algebraic vocabulary precisely to construct and critique mathematical arguments, and understands why precise terminology matters for clear communication.",
+        "example_task": "A student writes: 'I factorised the equation 6x + 9.' Identify and correct the errors in this statement.",
+        "example_response": "Two errors: (1) 6x + 9 is an expression, not an equation (it has no equals sign). (2) You factorise expressions, not equations. The correct statement is: 'I factorised the expression 6x + 9 to get 3(2x + 3).' Precise terminology matters because it communicates mathematical intent clearly — 'solving an equation' and 'simplifying an expression' are different processes.",
+        "common_errors": ["Not noticing the distinction between 'equation' and 'expression' in everyday use", "Using 'solve' when 'simplify' or 'factorise' is the correct verb"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C028",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Recognises that like terms have the same variable part and can combine simple like terms.",
+        "example_task": "Simplify 3x + 5x.",
+        "example_response": "3x + 5x = 8x. Both terms have x, so I add the coefficients: 3 + 5 = 8.",
+        "common_errors": ["Getting 8x² (multiplying instead of adding)", "Not recognising that 3x and 5x are like terms"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Collects like terms in expressions with multiple variable types and negative coefficients.",
+        "example_task": "Simplify 4a + 3b - 2a + 5b.",
+        "example_response": "Group like terms: (4a - 2a) + (3b + 5b) = 2a + 8b.",
+        "common_errors": ["Combining unlike terms (writing 4a + 3b = 7ab)", "Making sign errors with negative terms"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Simplifies expressions involving powers, multiple variables and constant terms, collecting all like terms correctly.",
+        "example_task": "Simplify 3x² + 5x - 2x² + 4 - 7x + 1.",
+        "example_response": "x² terms: 3x² - 2x² = x². x terms: 5x - 7x = -2x. Constants: 4 + 1 = 5. Simplified: x² - 2x + 5.",
+        "common_errors": ["Combining x² and x terms together", "Forgetting to collect the constant terms"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Simplifies complex expressions involving algebraic fractions, surds or nested expressions by strategically collecting like terms.",
+        "example_task": "Simplify (2x + 3)(x - 1) + (x + 2)(x + 4).",
+        "example_response": "Expand first: (2x + 3)(x - 1) = 2x² - 2x + 3x - 3 = 2x² + x - 3. (x + 2)(x + 4) = x² + 4x + 2x + 8 = x² + 6x + 8. Sum: 2x² + x - 3 + x² + 6x + 8 = 3x² + 7x + 5.",
+        "common_errors": ["Expanding incorrectly and then collecting like terms from wrong expansions", "Not expanding fully before attempting to collect like terms"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C029",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can multiply a number over a bracket with positive terms.",
+        "example_task": "Expand 3(x + 4).",
+        "example_response": "3 × x + 3 × 4 = 3x + 12.",
+        "common_errors": ["Getting 3x + 4 (only multiplying the first term)", "Getting x + 12 (only multiplying the second term)"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Expands brackets with negative multipliers and simplifies the result.",
+        "example_task": "Expand and simplify 4(2x - 3) - 2(x + 5).",
+        "example_response": "4(2x - 3) = 8x - 12. -2(x + 5) = -2x - 10. Combined: 8x - 12 - 2x - 10 = 6x - 22.",
+        "common_errors": ["Expanding -2(x + 5) as -2x + 10 (not distributing the negative to both terms)", "Collecting like terms incorrectly after expanding"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Expands brackets fluently including with algebraic multipliers and fractional coefficients.",
+        "example_task": "Expand x(x² - 3x + 2).",
+        "example_response": "x × x² - x × 3x + x × 2 = x³ - 3x² + 2x.",
+        "common_errors": ["Computing x × x² as x² instead of x³", "Dropping the sign of the middle term"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Uses expansion strategically in proofs and derivations, recognising when expanding is efficient and when keeping brackets is preferable.",
+        "example_task": "Show that (n + 1)² - n² = 2n + 1, and use this to explain why the difference between consecutive perfect squares is always odd.",
+        "example_response": "(n + 1)² - n² = n² + 2n + 1 - n² = 2n + 1. Since 2n is always even, 2n + 1 is always odd. This proves the difference between consecutive squares is always odd, regardless of n. For example: 16 - 9 = 7 (odd), 25 - 16 = 9 (odd), 36 - 25 = 11 (odd).",
+        "common_errors": ["Expanding (n+1)² as n² + 1 instead of n² + 2n + 1", "Not connecting the algebraic result to the number-theory conclusion"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C030",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can identify a common factor of two terms and take it outside a bracket.",
+        "example_task": "Factorise 6x + 10.",
+        "example_response": "The common factor of 6 and 10 is 2. So 6x + 10 = 2(3x + 5).",
+        "common_errors": ["Not finding the highest common factor (writing 2(3x + 5) is correct, but some might write 6(x) + 10 leaving it unfactorised)", "Checking by re-expanding: 2(3x + 5) = 6x + 10 ✓"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Takes out the highest common factor including algebraic terms.",
+        "example_task": "Factorise 12x² + 8x.",
+        "example_response": "HCF of 12x² and 8x is 4x. So 12x² + 8x = 4x(3x + 2).",
+        "common_errors": ["Only taking out the numerical factor: 4(3x² + 2x)", "Not including x in the common factor"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Factorises expressions with multiple terms and algebraic common factors, always extracting the highest common factor.",
+        "example_task": "Factorise completely: 6ab² + 9a²b - 3ab.",
+        "example_response": "HCF = 3ab. 6ab² ÷ 3ab = 2b. 9a²b ÷ 3ab = 3a. -3ab ÷ 3ab = -1. So 6ab² + 9a²b - 3ab = 3ab(2b + 3a - 1).",
+        "common_errors": ["Not extracting the full common factor (e.g. taking out 3a but not b)", "Sign errors when factoring out a common factor from a negative term"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Uses factorising strategically to simplify expressions, solve equations, and prove results.",
+        "example_task": "Prove that n³ - n is divisible by 6 for all positive integers n.",
+        "example_response": "Factorise: n³ - n = n(n² - 1) = n(n - 1)(n + 1) = (n - 1)n(n + 1). This is the product of three consecutive integers. Among any three consecutive integers, one is divisible by 2 and one is divisible by 3. So the product is divisible by 2 × 3 = 6.",
+        "common_errors": ["Not recognising the difference of squares factorisation n² - 1 = (n-1)(n+1)", "Proving divisibility by 2 and 3 separately but not connecting them to divisibility by 6"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C031",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can expand the product of two simple binomials using a grid or FOIL method with support.",
+        "example_task": "Expand (x + 2)(x + 3).",
+        "example_response": "Using FOIL: x × x = x², x × 3 = 3x, 2 × x = 2x, 2 × 3 = 6. So (x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6.",
+        "common_errors": ["Getting only x² + 6 (missing the middle terms)", "Not collecting like terms after expansion"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Expands products of two binomials including those with negative terms, and simplifies the result.",
+        "example_task": "Expand (x - 4)(x + 7).",
+        "example_response": "x² + 7x - 4x - 28 = x² + 3x - 28.",
+        "common_errors": ["Computing -4 × 7 as +28 instead of -28", "Sign errors in the middle terms"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Expands products of binomials with coefficients greater than 1, and recognises special cases (perfect squares, difference of two squares).",
+        "example_task": "Expand (2x - 3)².",
+        "example_response": "(2x - 3)(2x - 3) = 4x² - 6x - 6x + 9 = 4x² - 12x + 9.",
+        "common_errors": ["Writing (2x)² - 3² = 4x² - 9 (missing the middle term)", "Computing the middle term as -6x instead of -12x"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Expands products of three or more binomials and uses expansion to prove algebraic identities.",
+        "example_task": "Expand (x + 1)(x + 2)(x + 3).",
+        "example_response": "First: (x + 1)(x + 2) = x² + 3x + 2. Then: (x² + 3x + 2)(x + 3) = x³ + 3x² + 3x² + 9x + 2x + 6 = x³ + 6x² + 11x + 6. This is the product of three consecutive integers starting from x + 1, and the coefficients relate to triangular numbers.",
+        "common_errors": ["Missing terms when multiplying a trinomial by a binomial", "Not expanding systematically (multiplying each term in the first bracket by each term in the second)"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C032",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can substitute values into a given formula and evaluate the result.",
+        "example_task": "The formula for the area of a rectangle is A = lw. Find A when l = 8 and w = 5.",
+        "example_response": "A = 8 × 5 = 40.",
+        "common_errors": ["Not knowing what the letters in the formula stand for", "Adding instead of multiplying"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Selects and uses standard formulae in context, including those requiring multiple operations.",
+        "example_task": "Use the formula v = u + at to find v when u = 12, a = -3 and t = 4.",
+        "example_response": "v = 12 + (-3)(4) = 12 - 12 = 0.",
+        "common_errors": ["Computing -3 × 4 as +12", "Not substituting the negative value correctly"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Uses formulae involving powers, roots and fractions in mathematical and scientific contexts.",
+        "example_task": "The kinetic energy formula is E = ½mv². Find E when m = 4 kg and v = 6 m/s.",
+        "example_response": "E = ½ × 4 × 6² = ½ × 4 × 36 = 72 joules.",
+        "common_errors": ["Computing ½mv² as (½mv)² = (12)² = 144", "Squaring m × v rather than just v"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Evaluates complex formulae and understands the derivation and domain of formulae, recognising when a formula applies and when it does not.",
+        "example_task": "The quadratic formula gives x = (-b ± √(b² - 4ac)) / 2a. Find x when a = 1, b = -5, c = 6. Interpret the ± symbol.",
+        "example_response": "b² - 4ac = 25 - 24 = 1. √1 = 1. x = (5 ± 1)/2. So x = 6/2 = 3 or x = 4/2 = 2. The ± means we get two solutions: one using + and one using -. Check: (x-3)(x-2) = x² - 5x + 6 ✓.",
+        "common_errors": ["Substituting b = -5 without handling the double negation (-(-5) = +5)", "Finding only one solution and ignoring the ±"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C033",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can rearrange a formula to make a different variable the subject when only one operation is needed.",
+        "example_task": "Make x the subject of y = x + 7.",
+        "example_response": "x = y - 7. I subtracted 7 from both sides.",
+        "common_errors": ["Writing x = y + 7 (adding instead of subtracting)", "Not performing the same operation on both sides"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Rearranges formulae requiring two or more inverse operations, maintaining correct order.",
+        "example_task": "Make t the subject of v = u + at.",
+        "example_response": "v - u = at. Then t = (v - u)/a.",
+        "common_errors": ["Writing t = v - u/a (dividing only u by a due to missing brackets)", "Performing operations in the wrong order"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Rearranges formulae involving powers, roots, fractions and the variable appearing in multiple places.",
+        "example_task": "Make r the subject of A = πr².",
+        "example_response": "r² = A/π. Then r = √(A/π). Since r is a length, we take the positive root only.",
+        "common_errors": ["Writing r = √A/π instead of r = √(A/π) (not including π inside the root)", "Forgetting to take the square root after dividing by π"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Rearranges complex formulae where the subject appears on both sides or within nested expressions.",
+        "example_task": "Make x the subject of y = (3x + 1)/(x - 2).",
+        "example_response": "Multiply both sides by (x - 2): y(x - 2) = 3x + 1. Expand: xy - 2y = 3x + 1. Collect x terms: xy - 3x = 2y + 1. Factor out x: x(y - 3) = 2y + 1. Divide: x = (2y + 1)/(y - 3).",
+        "common_errors": ["Not multiplying both sides by the denominator first", "Failing to factor out x when it appears in two terms"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C034",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can write a simple expression from a verbal description involving one operation.",
+        "example_task": "Tom is x years old. His sister is 4 years younger. Write an expression for his sister's age.",
+        "example_response": "x - 4.",
+        "common_errors": ["Writing 4 - x (reversing the subtraction)", "Writing x + 4 (adding instead of subtracting)"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Forms expressions and equations from word problems involving multiple operations.",
+        "example_task": "Pens cost p pence each and rulers cost r pence each. Write an expression for the total cost of 5 pens and 3 rulers.",
+        "example_response": "Total cost = 5p + 3r pence.",
+        "common_errors": ["Writing 5 + p + 3 + r (adding instead of multiplying)", "Forgetting to include units"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Forms expressions, equations and formulae from complex real-world situations and geometric problems.",
+        "example_task": "A rectangle has length (2x + 3) cm and width (x - 1) cm. Its perimeter is 40 cm. Write an equation for x.",
+        "example_response": "Perimeter = 2(length + width) = 2[(2x + 3) + (x - 1)] = 2[3x + 2] = 6x + 4. Setting equal to 40: 6x + 4 = 40.",
+        "common_errors": ["Computing perimeter as length × width (area formula)", "Not doubling the sum of length and width"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Constructs algebraic models for complex situations, defining variables clearly and forming systems of equations when needed.",
+        "example_task": "In a class of 30 pupils, the number of boys is 6 more than twice the number of girls. Form and solve equations to find the number of boys and girls.",
+        "example_response": "Let g = number of girls. Then boys = 2g + 6. Total: g + (2g + 6) = 30. So 3g + 6 = 30, giving 3g = 24, g = 8. Boys = 2(8) + 6 = 22. Check: 8 + 22 = 30 ✓ and 22 = 2(8) + 6 ✓.",
+        "common_errors": ["Defining variables ambiguously (not stating what g represents)", "Setting up the equation incorrectly (e.g. g = 2b + 6 instead of b = 2g + 6)"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C035",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can solve one-step equations using inverse operations.",
+        "example_task": "Solve x + 9 = 15.",
+        "example_response": "x = 15 - 9 = 6.",
+        "common_errors": ["Writing x = 15 + 9 = 24", "Not checking: 6 + 9 = 15 ✓"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Solves two-step linear equations and equations with the unknown on one side.",
+        "example_task": "Solve 3x - 7 = 14.",
+        "example_response": "Add 7: 3x = 21. Divide by 3: x = 7. Check: 3(7) - 7 = 21 - 7 = 14 ✓.",
+        "common_errors": ["Dividing by 3 before adding 7 (getting x = 14/3 - 7)", "Operating in the wrong order"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Solves equations with the unknown on both sides, including those with brackets and fractions.",
+        "example_task": "Solve 5(x - 2) = 3(x + 4).",
+        "example_response": "Expand: 5x - 10 = 3x + 12. Subtract 3x: 2x - 10 = 12. Add 10: 2x = 22. Divide by 2: x = 11. Check: 5(9) = 45, 3(15) = 45 ✓.",
+        "common_errors": ["Expanding brackets with sign errors", "Subtracting from the wrong side when the unknown is on both sides"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Solves complex linear equations including those with algebraic fractions, and constructs equations from problems before solving.",
+        "example_task": "Solve (2x + 1)/3 - (x - 3)/4 = 2.",
+        "example_response": "Multiply through by 12 (LCM of 3 and 4): 4(2x + 1) - 3(x - 3) = 24. Expand: 8x + 4 - 3x + 9 = 24. Simplify: 5x + 13 = 24. 5x = 11. x = 11/5 = 2.2. Check: (5.4)/3 - (-0.8)/4 = 1.8 + 0.2 = 2 ✓.",
+        "common_errors": ["Not multiplying every term by the common denominator", "Sign errors when expanding -3(x - 3)"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C036",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can plot and read coordinates in the first quadrant (positive x and y).",
+        "example_task": "Plot the point (3, 5) on a coordinate grid.",
+        "example_response": "I go 3 along the x-axis and 5 up the y-axis, and plot a point where they meet.",
+        "common_errors": ["Plotting (5, 3) instead of (3, 5) — swapping x and y", "Starting from the wrong axis"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Works with coordinates in all four quadrants, including plotting and reading negative coordinates.",
+        "example_task": "Plot the points A(-2, 3), B(4, -1) and C(-3, -4) on a coordinate grid.",
+        "example_response": "A is 2 left and 3 up from the origin. B is 4 right and 1 down. C is 3 left and 4 down.",
+        "common_errors": ["Confusing the direction for negative x (going right instead of left)", "Placing negative y values above the x-axis"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Uses coordinates to solve problems including finding midpoints, distances and identifying shapes from their vertices.",
+        "example_task": "Find the midpoint of the line segment from A(2, 7) to B(8, 3).",
+        "example_response": "Midpoint = ((2+8)/2, (7+3)/2) = (10/2, 10/2) = (5, 5).",
+        "common_errors": ["Subtracting coordinates instead of averaging them", "Finding the midpoint of only one coordinate"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Applies coordinate geometry to prove geometric properties, including showing that points are collinear, that shapes have right angles, or that lines are parallel.",
+        "example_task": "Show that the triangle with vertices A(1,1), B(5,3) and C(3,7) is a right-angled triangle.",
+        "example_response": "AB² = (5-1)² + (3-1)² = 16 + 4 = 20. BC² = (3-5)² + (7-3)² = 4 + 16 = 20. AC² = (3-1)² + (7-1)² = 4 + 36 = 40. Since AB² + BC² = 20 + 20 = 40 = AC², by the converse of Pythagoras' theorem, the triangle is right-angled at B.",
+        "common_errors": ["Not checking all three combinations to find which vertex has the right angle", "Using the distance formula incorrectly (forgetting to square)"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C037",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can plot points from a table of values and recognise when they form a straight line.",
+        "example_task": "Complete the table for y = 2x + 1 (x = 0, 1, 2, 3) and plot the points.",
+        "example_response": "x=0: y=1. x=1: y=3. x=2: y=5. x=3: y=7. The points form a straight line.",
+        "common_errors": ["Making substitution errors in the table", "Not joining the points with a straight line (using a ruler)"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Plots linear graphs from their equations, identifies the gradient and y-intercept from the graph.",
+        "example_task": "Draw the graph of y = 3x - 2. What is its gradient and y-intercept?",
+        "example_response": "Gradient = 3 (for every 1 unit right, the line goes up 3). y-intercept = -2 (the line crosses the y-axis at (0, -2)).",
+        "common_errors": ["Confusing gradient with y-intercept", "Drawing a line that does not pass through (0, -2)"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Recognises and sketches linear functions from their equations, including identifying parallel and perpendicular lines from their gradients.",
+        "example_task": "Without plotting, explain why y = 3x + 1 and y = 3x - 5 are parallel.",
+        "example_response": "Both have gradient 3 (the coefficient of x). Parallel lines have the same gradient but different y-intercepts. These lines are always the same distance apart and never cross.",
+        "common_errors": ["Thinking parallel lines must have the same y-intercept", "Confusing parallel (same gradient) with perpendicular (gradient product = -1)"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Finds equations of lines from geometric conditions, interprets gradient as rate of change in context, and uses linear graphs to model real-world situations.",
+        "example_task": "Find the equation of the line perpendicular to y = 2x + 3 that passes through the point (4, 1).",
+        "example_response": "The gradient of y = 2x + 3 is 2. Perpendicular gradient = -1/2 (negative reciprocal). Using y - y₁ = m(x - x₁): y - 1 = -1/2(x - 4). y = -x/2 + 2 + 1 = -x/2 + 3. Or y = -½x + 3.",
+        "common_errors": ["Using gradient 2 instead of -1/2 for the perpendicular", "Substituting the point incorrectly into the equation"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C038",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can plot a quadratic graph from a completed table of values and recognise the U-shape (parabola).",
+        "example_task": "Complete the table for y = x² for x = -3, -2, -1, 0, 1, 2, 3 and plot the graph.",
+        "example_response": "y values: 9, 4, 1, 0, 1, 4, 9. The graph is a U-shape (parabola) symmetric about the y-axis.",
+        "common_errors": ["Computing (-3)² as -9 instead of 9", "Not plotting enough points to see the curve"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Plots and reads quadratic graphs, identifying the turning point and line of symmetry.",
+        "example_task": "Sketch y = x² - 4x + 3. Find the roots and the turning point.",
+        "example_response": "Roots: x² - 4x + 3 = 0, (x-1)(x-3) = 0, so x = 1 and x = 3. Line of symmetry: x = (1+3)/2 = 2. Turning point: y(2) = 4 - 8 + 3 = -1. So minimum point is (2, -1).",
+        "common_errors": ["Not finding the turning point by averaging the roots", "Plotting the curve as a straight line between the roots"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Sketches quadratic graphs identifying roots, y-intercept and turning point, and uses graphs to solve equations.",
+        "example_task": "Use the graph of y = x² - 2x - 3 to solve x² - 2x - 3 = 5.",
+        "example_response": "Draw y = 5 (horizontal line) on the same axes. The x-coordinates where the parabola meets y = 5 are the solutions. Setting x² - 2x - 3 = 5: x² - 2x - 8 = 0, (x-4)(x+2) = 0, x = 4 or x = -2.",
+        "common_errors": ["Not understanding that solving f(x) = k means finding where the graph meets y = k", "Reading the graph values inaccurately"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Analyses the effect of parameters on quadratic graphs, connects algebraic and graphical representations, and uses quadratic models in context.",
+        "example_task": "Without plotting, compare the graphs of y = x², y = (x-3)² and y = (x-3)² + 2. Describe the transformations.",
+        "example_response": "y = x² has vertex at (0,0). y = (x-3)² is y = x² translated 3 units right — vertex at (3,0). y = (x-3)² + 2 is further translated 2 units up — vertex at (3,2). In general, y = (x-a)² + b has vertex at (a,b). All three have the same shape (opening upward with gradient 1) but different positions.",
+        "common_errors": ["Thinking (x-3)² shifts the graph left instead of right", "Not connecting the completed square form to the vertex coordinates"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C039",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Recognises that y = mx + c describes a straight line and can identify m and c in a given equation.",
+        "example_task": "For the equation y = 4x - 3, what is the gradient and the y-intercept?",
+        "example_response": "Gradient m = 4, y-intercept c = -3.",
+        "common_errors": ["Saying the gradient is -3 and the intercept is 4 (swapping them)", "Not recognising the form when the equation is written differently (e.g. y = -3 + 4x)"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Rearranges linear equations into y = mx + c form and interprets m and c in context.",
+        "example_task": "Rearrange 2y - 6x = 10 into y = mx + c form.",
+        "example_response": "2y = 6x + 10. y = 3x + 5. So gradient = 3 and y-intercept = 5.",
+        "common_errors": ["Dividing only one term by 2", "Rearranging to get x = ... instead of y = ..."]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Uses y = mx + c to find equations of lines from given information (gradient and point, or two points).",
+        "example_task": "Find the equation of the line with gradient 2 passing through (3, 7).",
+        "example_response": "y = 2x + c. Substitute (3,7): 7 = 2(3) + c, so 7 = 6 + c, c = 1. The equation is y = 2x + 1.",
+        "common_errors": ["Substituting the coordinates the wrong way round", "Forgetting to find c after using the gradient"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Applies y = mx + c in modelling contexts, interpreting gradient as rate of change and intercept as initial value, and comparing linear models.",
+        "example_task": "Company A charges £20 plus £0.50 per mile. Company B charges £5 plus £1.20 per mile. For what distance are they the same price? Which is cheaper for a 30-mile journey?",
+        "example_response": "A: C = 20 + 0.5d. B: C = 5 + 1.2d. Equal: 20 + 0.5d = 5 + 1.2d. 15 = 0.7d. d = 21.4 miles. For 30 miles: A = 20 + 15 = £35, B = 5 + 36 = £41. Company A is cheaper. The gradient (rate per mile) determines which is cheaper for long journeys; the intercept (fixed charge) matters for short ones.",
+        "common_errors": ["Setting up the equations with the wrong components (mixing fixed and variable costs)", "Not interpreting the answer in context"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C040",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can calculate gradient by counting squares on a grid (rise over run) for a line drawn on a graph.",
+        "example_task": "Find the gradient of the line passing through (1, 2) and (3, 8) by counting squares.",
+        "example_response": "Rise = 8 - 2 = 6. Run = 3 - 1 = 2. Gradient = 6/2 = 3.",
+        "common_errors": ["Computing run/rise instead of rise/run", "Not counting squares carefully on the grid"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Calculates gradient using the formula (y₂ - y₁)/(x₂ - x₁) and reads the y-intercept from a graph or equation.",
+        "example_task": "Find the gradient of the line through (-1, 5) and (3, -3).",
+        "example_response": "Gradient = (-3 - 5)/(3 - (-1)) = -8/4 = -2. The negative gradient means the line slopes downward from left to right.",
+        "common_errors": ["Subtracting coordinates inconsistently (e.g. y₂ - y₁ but x₁ - x₂)", "Sign errors with negative coordinates"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Interprets gradient as a rate of change in applied contexts and calculates the y-intercept algebraically when it is not given.",
+        "example_task": "A line passes through (2, 9) and (5, 21). Find its equation.",
+        "example_response": "Gradient = (21-9)/(5-2) = 12/3 = 4. Using y = 4x + c with point (2,9): 9 = 8 + c, so c = 1. Equation: y = 4x + 1.",
+        "common_errors": ["Computing the gradient correctly but then substituting the wrong point to find c", "Arithmetic errors in the subtraction"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Uses gradient and intercept concepts to solve complex problems including perpendicular lines, collinearity, and optimisation.",
+        "example_task": "Points A(1, 2), B(4, 8), C(7, 14) are given. Show that they are collinear (all on the same line).",
+        "example_response": "Gradient AB = (8-2)/(4-1) = 6/3 = 2. Gradient BC = (14-8)/(7-4) = 6/3 = 2. Since AB and BC have the same gradient AND share point B, all three points lie on the same line. The line has equation y = 2x (using point A: 2 = 2(1) ✓).",
+        "common_errors": ["Concluding collinearity from equal gradients alone without checking the points share a line", "Not verifying with a third gradient (AC) for confirmation"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C041",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can read approximate values from a graph, including where a curve crosses the axes.",
+        "example_task": "From the graph of y = x² - 3, read off the value of y when x = 2.",
+        "example_response": "When x = 2, y = 1 (reading from the graph). Check: 2² - 3 = 4 - 3 = 1 ✓.",
+        "common_errors": ["Reading the wrong axis", "Not reading the scale accurately"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Uses a graph to find approximate solutions to equations by reading intersection points.",
+        "example_task": "Use the graph of y = x² - 2x to estimate the solutions of x² - 2x = 3.",
+        "example_response": "Draw the line y = 3. It intersects the parabola at approximately x = -1 and x = 3. Check: (-1)² - 2(-1) = 1 + 2 = 3 ✓ and 3² - 2(3) = 9 - 6 = 3 ✓.",
+        "common_errors": ["Not drawing the horizontal line y = 3 on the graph", "Reading the x-coordinates imprecisely"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Uses graphical methods to estimate solutions of equations that are difficult to solve algebraically, and understands the limitations of graphical accuracy.",
+        "example_task": "By drawing suitable graphs, estimate the solution(s) of x³ = 5x - 2.",
+        "example_response": "Rearrange: x³ - 5x + 2 = 0, or plot y = x³ and y = 5x - 2 on the same axes. The intersections give approximate solutions. From the graph: x ≈ -2.4, x ≈ 0.4, x ≈ 2.0. These are estimates — algebraic or numerical methods would give more precision.",
+        "common_errors": ["Only finding one or two of three intersections", "Not recognising that a cubic can have up to three real roots"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Uses graphs to solve simultaneous equations (including non-linear), understand convergence of iterative methods, and evaluate whether a graphical solution is sufficient.",
+        "example_task": "Explain how to use the graph of y = sin(x) to estimate the number of solutions of sin(x) = x/5 for 0 ≤ x ≤ 2π.",
+        "example_response": "Plot y = sin(x) and y = x/5 on the same axes for 0 ≤ x ≤ 2π. y = x/5 is a straight line from (0,0) to (2π, 2π/5 ≈ 1.26). The sine curve oscillates between -1 and 1. They intersect at x = 0 and at approximately x ≈ 1.3 (where the rising sine meets the line). There are no more intersections because x/5 > 1 for x > 5 and sin(x) ≤ 1. So there are 2 solutions.",
+        "common_errors": ["Not considering the full range and missing an intersection", "Claiming solutions exist where the curves are close but do not actually cross"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C042",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Understands that solving two equations simultaneously means finding values that satisfy both equations at the same time.",
+        "example_task": "Which of these pairs satisfies both y = x + 1 and y = 2x - 3: (a) x=2, y=3 (b) x=4, y=5?",
+        "example_response": "Check (a): y = 2+1 = 3 ✓ and y = 2(2)-3 = 1 ✗. Check (b): y = 4+1 = 5 ✓ and y = 2(4)-3 = 5 ✓. So (b) x=4, y=5 satisfies both.",
+        "common_errors": ["Only checking one equation", "Not substituting into both equations"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Finds approximate solutions to simultaneous linear equations by drawing both lines and reading the intersection point.",
+        "example_task": "Draw the graphs of y = 2x - 1 and y = -x + 5 and find where they intersect.",
+        "example_response": "Plotting both lines: they intersect at (2, 3). Check: y = 2(2)-1 = 3 ✓ and y = -(2)+5 = 3 ✓.",
+        "common_errors": ["Drawing one or both lines incorrectly", "Reading the intersection coordinates imprecisely from the graph"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Uses the graphical method to identify the number of solutions (none, one, or infinitely many) and understands what parallel lines mean for simultaneous equations.",
+        "example_task": "What can you say about the solutions of y = 3x + 2 and y = 3x - 4? Use a graphical argument.",
+        "example_response": "Both lines have gradient 3 but different y-intercepts (2 and -4). They are parallel and never intersect. Therefore there are no solutions — the equations are inconsistent.",
+        "common_errors": ["Trying to find an intersection that does not exist", "Not connecting 'same gradient, different intercept' to 'no solution'"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Uses graphical methods to explore systems involving non-linear equations and interprets the meaning of multiple intersection points.",
+        "example_task": "How many solutions does the system y = x² and y = 2x + 3 have? Find them graphically and verify algebraically.",
+        "example_response": "Graphically: the parabola and line intersect at two points. Algebraically: x² = 2x + 3, so x² - 2x - 3 = 0, (x-3)(x+1) = 0, x = 3 or x = -1. Points: (3, 9) and (-1, 1). The parabola opens upward and the line crosses it twice, confirming two solutions.",
+        "common_errors": ["Finding only one intersection point", "Not verifying graphical solutions algebraically"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C043",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can read values from piece-wise linear graphs (e.g. distance-time or conversion graphs) and describe what is happening in each section.",
+        "example_task": "A distance-time graph shows: 0-2 hours climbing at constant speed, 2-3 hours stationary, 3-4 hours returning. Describe the journey.",
+        "example_response": "For the first 2 hours the person travels at a steady speed (straight line going up). From 2-3 hours they stop (horizontal line). From 3-4 hours they return (line going down).",
+        "common_errors": ["Confusing a steep line with faster speed and a shallow line with slower speed — the reverse of what is correct on some graphs", "Thinking a horizontal line means the person has disappeared"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Recognises the shapes of simple non-linear graphs (quadratic, cubic, reciprocal) and can match equations to graph shapes.",
+        "example_task": "Match each graph shape to its equation: (a) U-shape (b) S-shape (c) two separate curves. Equations: y = 1/x, y = x², y = x³.",
+        "example_response": "(a) U-shape = y = x² (parabola). (b) S-shape = y = x³ (cubic). (c) Two separate curves = y = 1/x (reciprocal — one curve in Q1 and one in Q3).",
+        "common_errors": ["Confusing the cubic S-shape with a parabola", "Not knowing that y = 1/x has two branches"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Interprets exponential and reciprocal graphs in context, understanding asymptotic behaviour and growth/decay patterns.",
+        "example_task": "Bacteria double every hour. Starting with 100, sketch the graph for 6 hours. Why is this an exponential graph?",
+        "example_response": "After 0h: 100, 1h: 200, 2h: 400, 3h: 800, 4h: 1600, 5h: 3200, 6h: 6400. The graph curves steeply upward. It is exponential because the same multiplier (×2) applies each hour — the rate of increase itself increases. The equation is N = 100 × 2ᵗ.",
+        "common_errors": ["Drawing a straight line through the points", "Confusing exponential growth with linear growth (adding 100 each hour instead of doubling)"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Analyses and compares non-linear graphs, identifies key features (turning points, asymptotes, roots), and uses them to model real-world situations.",
+        "example_task": "A cup of tea cools following the model T = 20 + 60e^(-0.1t), where T is temperature in °C and t is time in minutes. Describe the behaviour of the graph and interpret its features.",
+        "example_response": "At t=0: T = 20 + 60 = 80°C (initial temperature). As t→∞: e^(-0.1t)→0, so T→20°C (room temperature). The curve decreases steeply at first then flattens — the tea cools quickly at first then more slowly as it approaches room temperature. The horizontal asymptote at T=20 represents the ambient temperature. This is Newton's Law of Cooling — the rate of cooling is proportional to the temperature difference.",
+        "common_errors": ["Thinking the temperature eventually reaches 0°C rather than room temperature", "Not identifying the asymptote and its physical meaning"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C044",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can continue a sequence given the first few terms and a simple rule (add, subtract, multiply).",
+        "example_task": "Continue the sequence: 3, 7, 11, 15, ...",
+        "example_response": "The pattern is 'add 4 each time'. Next terms: 19, 23, 27.",
+        "common_errors": ["Not identifying the constant difference", "Applying the rule incorrectly (e.g. adding 3 instead of 4)"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Generates terms from both term-to-term and position-to-term rules, understanding the difference between the two types.",
+        "example_task": "A sequence has the rule: nth term = 2n + 3. Find the first 5 terms.",
+        "example_response": "n=1: 5, n=2: 7, n=3: 9, n=4: 11, n=5: 13.",
+        "common_errors": ["Starting with n=0 instead of n=1", "Confusing the position (n) with the term value"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Generates terms from more complex rules and can work backwards to find which term has a given value.",
+        "example_task": "The nth term of a sequence is 100 - 3n. Which term is the first negative term?",
+        "example_response": "Set 100 - 3n < 0: 100 < 3n, n > 33.3. Since n must be a whole number, the 34th term is the first negative term. Check: 33rd term = 100 - 99 = 1 (positive). 34th term = 100 - 102 = -2 (negative ✓).",
+        "common_errors": ["Giving n = 33 instead of n = 34 (not rounding up)", "Setting the expression equal to 0 instead of checking which side is negative"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Generates and analyses terms from recursive definitions, including Fibonacci-type and convergent sequences.",
+        "example_task": "A sequence is defined by u₁ = 1, uₙ₊₁ = 3 - 1/uₙ. Find the first 5 terms and describe what happens.",
+        "example_response": "u₁ = 1. u₂ = 3 - 1/1 = 2. u₃ = 3 - 1/2 = 2.5. u₄ = 3 - 1/2.5 = 2.6. u₅ = 3 - 1/2.6 ≈ 2.615. The sequence appears to converge. If it converges to L, then L = 3 - 1/L, so L² = 3L - 1, giving L² - 3L + 1 = 0. L = (3 + √5)/2 ≈ 2.618 (the golden ratio!).",
+        "common_errors": ["Making a calculation error in the recursive formula", "Not recognising convergence and trying to find a 'last term'"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C045",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Recognises arithmetic sequences (constant difference) and can state the common difference.",
+        "example_task": "Is this an arithmetic sequence: 5, 11, 17, 23, 29? If so, what is the common difference?",
+        "example_response": "Yes, the differences are all 6. So it is arithmetic with common difference d = 6.",
+        "common_errors": ["Checking only the first difference, not all of them", "Confusing 'common difference' with 'common ratio'"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Finds the nth term formula for an arithmetic sequence in the form an + b.",
+        "example_task": "Find the nth term of 7, 10, 13, 16, ...",
+        "example_response": "Common difference = 3, so the coefficient of n is 3: 3n + ?. When n=1: 3(1) + ? = 7, so ? = 4. The nth term is 3n + 4.",
+        "common_errors": ["Writing the nth term as 3n + 7 (using the first term instead of adjusting)", "Using n=0 for the first term"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Uses the nth term formula to solve problems including finding whether a number is in a sequence and finding the number of terms.",
+        "example_task": "The nth term of a sequence is 5n - 3. Is 147 in this sequence? If so, which term is it?",
+        "example_response": "Set 5n - 3 = 147: 5n = 150, n = 30. Since n is a positive integer, 147 is the 30th term. Check: 5(30) - 3 = 147 ✓.",
+        "common_errors": ["Not checking whether n is a positive integer (if n = 30.4 then the number is not in the sequence)", "Setting up the equation incorrectly"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Derives the sum formula for arithmetic series and applies it in context; finds nth terms for sequences with non-integer common differences.",
+        "example_task": "Find the sum of the first 50 terms of the arithmetic sequence 3, 7, 11, 15, ...",
+        "example_response": "a = 3, d = 4. The 50th term = 3 + 49(4) = 199. Sum = n/2 × (first + last) = 50/2 × (3 + 199) = 25 × 202 = 5050. The formula works because pairing the first and last, second and second-last, etc. always gives the same total.",
+        "common_errors": ["Using n = 50 to find the last term instead of n - 1 = 49 in the nth term formula", "Computing sum = n × (first + last) without dividing by 2"]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C046",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Recognises that geometric sequences have a common ratio rather than a common difference, and can identify the ratio.",
+        "example_task": "Is this a geometric sequence: 2, 6, 18, 54? What is the common ratio?",
+        "example_response": "Yes, each term is multiplied by 3: 2×3=6, 6×3=18, 18×3=54. The common ratio is 3.",
+        "common_errors": ["Confusing common ratio with common difference", "Computing the difference between terms instead of the ratio"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Generates terms of geometric sequences and finds missing terms using the common ratio.",
+        "example_task": "Find the next two terms of 5, 10, 20, 40, ...",
+        "example_response": "Common ratio = 2. Next terms: 40 × 2 = 80, 80 × 2 = 160.",
+        "common_errors": ["Adding the common ratio instead of multiplying by it", "Not identifying the ratio correctly when it is fractional"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Works with geometric sequences that have fractional or negative common ratios, and finds the nth term formula.",
+        "example_task": "A geometric sequence starts 81, 27, 9, 3, ... Find the nth term formula and the 8th term.",
+        "example_response": "First term a = 81, common ratio r = 27/81 = 1/3. nth term = ar^(n-1) = 81 × (1/3)^(n-1). 8th term = 81 × (1/3)⁷ = 81/2187 = 1/27.",
+        "common_errors": ["Using r^n instead of r^(n-1)", "Not simplifying 81 × (1/3)⁷ correctly"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Applies geometric sequences to model real-world exponential growth and decay, and understands convergence of geometric series.",
+        "example_task": "A ball is dropped from 10 m and bounces to 60% of its previous height each time. How far has it travelled (up and down) after 5 bounces?",
+        "example_response": "Drop: 10 m. Bounce 1 up: 6, down: 6. Bounce 2 up: 3.6, down: 3.6. Bounce 3 up: 2.16, down: 2.16. Bounce 4 up: 1.296, down: 1.296. Bounce 5 up: 0.7776, down: 0.7776. Total = 10 + 2(6 + 3.6 + 2.16 + 1.296 + 0.7776) = 10 + 2(13.8336) = 10 + 27.6672 = 37.67 m (2 d.p.). This is a geometric series with r = 0.6. As the number of bounces → ∞, the total distance converges to 10 + 2 × 6/(1-0.6) = 10 + 30 = 40 m.",
+        "common_errors": ["Forgetting that each bounce involves both an upward and downward journey", "Not recognising the geometric series structure in the bouncing distances"]
+      }
+    ]
+  }
+]

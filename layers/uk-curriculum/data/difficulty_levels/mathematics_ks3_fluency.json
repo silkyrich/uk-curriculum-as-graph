@@ -1,0 +1,100 @@
+[
+  {
+    "concept_id": "MA-KS3-C023",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can use a calculator for basic operations (addition, subtraction, multiplication, division) but needs prompting to select the correct function keys.",
+        "example_task": "Use a calculator to work out 347 + 289.",
+        "example_response": "I type 347 + 289 = and the display shows 636. The answer is 636.",
+        "common_errors": [
+          "Pressing the wrong operation key (e.g. multiplication instead of addition)",
+          "Not clearing the previous calculation before starting a new one"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses a calculator efficiently for multi-step calculations including fractions, decimals and negative numbers, and can interpret the display correctly.",
+        "example_task": "Use a calculator to work out (3.7 + 2.8) / (4.1 - 1.6). Write your answer to 2 decimal places.",
+        "example_response": "I enter (3.7 + 2.8) ÷ (4.1 - 1.6) = and the display shows 2.6. The answer is 2.60 (to 2 d.p.).",
+        "common_errors": [
+          "Not using brackets and getting the wrong answer due to order of operations",
+          "Misreading the calculator display when it shows a recurring decimal"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Selects when a calculator is appropriate and when mental or written methods are more efficient; interprets all calculator outputs including fractions, surds and standard form.",
+        "example_task": "Without a calculator, estimate 4.9 × 21.3. Then use a calculator to check. Was a calculator necessary?",
+        "example_response": "Estimate: 5 × 21 = 105. Calculator: 4.9 × 21.3 = 104.37. My estimate was close (105 vs 104.37), so the mental method gave a good approximation. A calculator was not strictly necessary for an estimate, but useful for the exact answer.",
+        "common_errors": [
+          "Always reaching for a calculator even when mental arithmetic would be faster",
+          "Not checking calculator answers against an estimate to catch input errors"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses advanced calculator functions (memory, ANS, table mode, trigonometric and statistical functions) fluently, and can critically evaluate whether a calculator output is reasonable in context.",
+        "example_task": "A formula gives the time for a pendulum swing as T = 2π√(L/g). Use your calculator to find T when L = 0.8 m and g = 9.81 m/s². Explain why your answer is reasonable.",
+        "example_response": "T = 2 × π × √(0.8 ÷ 9.81) = 2 × π × √(0.08155...) = 2 × π × 0.2856... = 1.795 seconds (3 d.p.). This is reasonable because a pendulum about 80 cm long would take roughly 2 seconds per full swing, so just under 1.8 seconds for each swing is sensible. If my calculator had shown 18 seconds, I would know something was wrong.",
+        "common_errors": [
+          "Entering the formula incorrectly by not grouping L/g inside the square root",
+          "Accepting a calculator output without checking whether it makes physical sense"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C088",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls basic number facts (times tables up to 12 × 12, number bonds to 20) but needs time and sometimes makes errors under pressure.",
+        "example_task": "What is 7 × 8? What is 156 - 89?",
+        "example_response": "7 × 8 = 56. For 156 - 89, I count up from 89: 89 + 11 = 100, then 100 + 56 = 156, so the answer is 67.",
+        "common_errors": [
+          "Confusing similar multiplication facts (e.g. 7 × 8 with 6 × 8 or 7 × 9)",
+          "Making errors with subtraction when borrowing across zeros"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applies known number facts and standard written methods accurately to calculations involving integers, decimals and fractions, with growing speed.",
+        "example_task": "Calculate 3/4 + 2/5 without a calculator.",
+        "example_response": "I need a common denominator. The LCM of 4 and 5 is 20. So 3/4 = 15/20 and 2/5 = 8/20. 15/20 + 8/20 = 23/20 = 1 3/20.",
+        "common_errors": [
+          "Adding fractions by adding numerators and denominators separately (getting 5/9 instead of 23/20)",
+          "Finding a common denominator but forgetting to adjust the numerators accordingly"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Recalls and applies mathematical knowledge rapidly and accurately across number, algebra and geometry; selects the most efficient method for each calculation.",
+        "example_task": "Calculate 25% of £360, then increase £360 by 25%.",
+        "example_response": "25% of £360 = 1/4 of 360 = £90. To increase £360 by 25%: £360 + £90 = £450. Alternatively, I could use the multiplier: 360 × 1.25 = £450.",
+        "common_errors": [
+          "Using a long method (finding 1% then multiplying by 25) when recognising 25% = 1/4 is faster",
+          "Forgetting to add the percentage onto the original amount for a percentage increase"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Demonstrates fluency by selecting and combining techniques from across mathematics, moving between representations confidently and spotting efficient shortcuts.",
+        "example_task": "Without a calculator, work out 998 × 47.",
+        "example_response": "I notice 998 = 1000 - 2, so 998 × 47 = 1000 × 47 - 2 × 47 = 47,000 - 94 = 46,906. This is much faster than long multiplication because I used the distributive law to create a simpler calculation.",
+        "common_errors": [
+          "Not spotting near-integer shortcuts and defaulting to long multiplication",
+          "Making arithmetic slips in the subtraction step after correctly setting up the shortcut"
+        ]
+      }
+    ]
+  }
+]

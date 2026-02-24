@@ -1,0 +1,1129 @@
+[
+  {
+    "concept_id": "MA-KS3-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands that digits after the decimal point represent parts of a whole, and can identify the tenths and hundredths columns.",
+        "example_task": "What is the value of the 7 in 3.47?",
+        "example_response": "The 7 is in the hundredths column, so it represents 7 hundredths or 0.07.",
+        "common_errors": [
+          "Saying the 7 is in the 'tens' column, confusing place value names left and right of the decimal point",
+          "Reading 3.47 as 'three point forty-seven' and treating 47 as a whole number"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Extends place value understanding to thousandths and beyond, and can use this to order decimals and convert between decimal representations.",
+        "example_task": "Put these numbers in order from smallest to largest: 0.35, 0.305, 0.4, 0.035.",
+        "example_response": "0.035, 0.305, 0.35, 0.4. I compared by looking at tenths first: 0.035 has 0 tenths, 0.305 and 0.35 have 3 tenths, and 0.4 has 4 tenths. For the two with 3 tenths, 0.305 has 0 hundredths and 0.35 has 5 hundredths, so 0.305 < 0.35.",
+        "common_errors": [
+          "Ordering by the number of digits after the decimal point (thinking 0.035 > 0.4 because it has more digits)",
+          "Not aligning place values when comparing decimals"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses place value fluently with decimals of any size, connecting decimal notation to fractions and understanding the continuous nature of the number line.",
+        "example_task": "Explain why 0.499... (recurring) is equal to 0.5, using place value reasoning.",
+        "example_response": "Each 9 adds value: 0.4 + 0.09 + 0.009 + 0.0009 + ... The sum of 0.09 + 0.009 + 0.0009 + ... = 0.0999... = 0.1 exactly (as an infinite geometric series with first term 0.09 and ratio 0.1). So 0.4 + 0.1 = 0.5. Alternatively, if x = 0.4999..., then 10x = 4.999... and 10x - x = 4.999... - 0.4999... = 4.5, so 9x = 4.5, giving x = 0.5.",
+        "common_errors": [
+          "Insisting that 0.499... is 'close to but not equal to' 0.5",
+          "Not recognising that an infinite recurring decimal can equal a terminating decimal"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies place value understanding to reason about the structure of the decimal system, including non-standard bases and the relationship between decimal and binary representations.",
+        "example_task": "A number rounds to 3.5 to 1 decimal place and to 3.46 to 2 decimal places. What are the possible values of this number? Express your answer using inequalities.",
+        "example_response": "Rounding to 2 d.p. gives 3.46, so the number n satisfies 3.455 ≤ n < 3.465. Rounding to 1 d.p. gives 3.5, so 3.45 ≤ n < 3.55. Both conditions must hold simultaneously. The intersection is 3.455 ≤ n < 3.465. I can verify: 3.455 rounds to 3.46 (2 d.p.) ✓ and to 3.5 (1 d.p.) ✓. 3.464 rounds to 3.46 (2 d.p.) ✓ and to 3.5 (1 d.p.) ✓. 3.465 rounds to 3.47 (2 d.p.) ✗, so it is excluded.",
+        "common_errors": [
+          "Not finding the intersection of the two rounding intervals",
+          "Using strict inequalities where the lower bound should be inclusive (or vice versa)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that negative numbers exist below zero and can place simple negative integers on a number line.",
+        "example_task": "Place these numbers on a number line: -3, 1, -1, 4, -5.",
+        "example_response": "From left to right: -5, -3, -1, 1, 4. Negative numbers go to the left of zero; the more negative, the further left.",
+        "common_errors": [
+          "Placing -5 to the right of -3, thinking 'bigger number means further right'",
+          "Forgetting to include zero as the dividing point on the number line"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understands the ordering of negative numbers and can perform addition and subtraction with negative integers using a number line model.",
+        "example_task": "Calculate: (a) -3 + 7 (b) 4 - 9 (c) -2 - 5.",
+        "example_response": "(a) Starting at -3, move 7 to the right: -3 + 7 = 4. (b) Starting at 4, move 9 to the left: 4 - 9 = -5. (c) Starting at -2, move 5 to the left: -2 - 5 = -7.",
+        "common_errors": [
+          "Computing -2 - 5 as -3 (subtracting the magnitudes instead of adding them)",
+          "Confusing the direction of movement on the number line for subtraction of a negative"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Performs all four operations with negative integers confidently, including multiplication and division, understanding the sign rules and applying them in context.",
+        "example_task": "The temperature at midnight was -8°C. By noon it had risen by 15°C, then by 6pm it had fallen by 11°C. What was the temperature at 6pm?",
+        "example_response": "Midnight: -8°C. Noon: -8 + 15 = 7°C. 6pm: 7 - 11 = -4°C. The temperature at 6pm was -4°C.",
+        "common_errors": [
+          "Computing -8 + 15 as -23 (adding magnitudes and keeping the negative sign)",
+          "Confusing 'risen by' with 'risen to' in temperature problems"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses negative numbers fluently in abstract and applied contexts, including with fractions, decimals and algebraic expressions, reasoning about why the sign rules work.",
+        "example_task": "Explain why (-1) × (-1) = +1 using a pattern-based argument.",
+        "example_response": "Consider the pattern: 3 × (-1) = -3, 2 × (-1) = -2, 1 × (-1) = -1, 0 × (-1) = 0. Each time the first number decreases by 1, the answer increases by 1. Continuing the pattern: (-1) × (-1) = +1. This must be true for the distributive law to hold: (-1)(1 + (-1)) = (-1)(0) = 0, and expanding gives (-1)(1) + (-1)(-1) = -1 + (-1)(-1) = 0, so (-1)(-1) = 1.",
+        "common_errors": [
+          "Memorising 'negative times negative is positive' without understanding why",
+          "Applying sign rules inconsistently when there are multiple negative factors"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can compare and order positive integers and simple decimals, but finds ordering fractions and negative numbers challenging.",
+        "example_task": "Which is larger: 3.7 or 3.17?",
+        "example_response": "3.7 is larger. In the tenths column, 3.7 has 7 tenths while 3.17 has only 1 tenth. So 3.7 > 3.17.",
+        "common_errors": [
+          "Thinking 3.17 > 3.7 because 17 > 7",
+          "Not comparing digit by digit from the highest place value"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Orders positive and negative integers, decimals and simple fractions by converting to a common form or using a number line.",
+        "example_task": "Put in order from smallest to largest: 1/3, 0.3, -0.5, 3/8.",
+        "example_response": "Converting to decimals: 1/3 ≈ 0.333, 0.3 = 0.300, 3/8 = 0.375, -0.5 = -0.500. Order: -0.5, 0.3, 1/3, 3/8.",
+        "common_errors": [
+          "Not converting fractions to decimals for comparison, and guessing the order",
+          "Forgetting that negative numbers are always less than positive numbers"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Orders any combination of real numbers including fractions, decimals, percentages, and negative values, justifying comparisons with mathematical reasoning.",
+        "example_task": "Without a calculator, determine which is larger: 5/7 or 7/10.",
+        "example_response": "I convert to a common denominator: 5/7 = 50/70 and 7/10 = 49/70. Since 50/70 > 49/70, we have 5/7 > 7/10. Alternatively: 5/7 = 0.714... and 7/10 = 0.7, so 5/7 is slightly larger.",
+        "common_errors": [
+          "Cross-multiplying incorrectly or comparing numerators without a common denominator",
+          "Assuming the fraction with the larger denominator is automatically smaller"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Reasons about ordering and density of real numbers, understanding that between any two real numbers there are infinitely many others, and uses this to solve problems.",
+        "example_task": "Find a fraction between 3/7 and 4/9. Explain a general method for finding a fraction between any two fractions.",
+        "example_response": "Method: Convert to a common denominator. 3/7 = 27/63 and 4/9 = 28/63. These have no integer between 27 and 28, so I double the denominator: 3/7 = 54/126 and 4/9 = 56/126. Then 55/126 lies between them. Check: 54/126 < 55/126 < 56/126. General method: given a/b and c/d, the mediant (a+c)/(b+d) always lies between them (provided both are positive). Here: (3+4)/(7+9) = 7/16 = 0.4375, and 3/7 ≈ 0.4286, 4/9 ≈ 0.4444. Confirmed: 0.4286 < 0.4375 < 0.4444.",
+        "common_errors": [
+          "Averaging numerators and denominators separately (getting (3+4)/(7+9) by luck but not understanding why it works)",
+          "Not verifying the result by checking the fraction genuinely lies between the two originals"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises the equals sign and the basic inequality symbols < and >, and can use them to compare two numbers.",
+        "example_task": "Insert < or > between each pair: 7 __ 3, 2 __ 9, -1 __ 4.",
+        "example_response": "7 > 3, 2 < 9, -1 < 4.",
+        "common_errors": [
+          "Confusing < and > (not remembering which way the 'arrow' points)",
+          "Thinking -1 > 4 because the negative sign is ignored"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses all six comparison symbols (=, ≠, <, >, ≤, ≥) correctly and can interpret them in word problems.",
+        "example_task": "Write using inequality symbols: 'x is at least 5 but less than 12'.",
+        "example_response": "5 ≤ x < 12. The ≤ means x can equal 5 (at least 5), and the < means x cannot equal 12 (less than 12).",
+        "common_errors": [
+          "Writing 5 < x < 12, missing that 'at least' includes equality",
+          "Using ≤ for both bounds when only the lower bound includes equality"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies inequality symbols fluently in mathematical contexts including error intervals, solution sets and algebraic statements.",
+        "example_task": "A length is measured as 8.3 cm to the nearest 0.1 cm. Write the error interval.",
+        "example_response": "The true length L satisfies 8.25 ≤ L < 8.35. It rounds down from 8.25 and rounds up below 8.35. The lower bound is included (8.25 rounds to 8.3), but the upper bound is excluded (8.35 would round to 8.4).",
+        "common_errors": [
+          "Writing 8.25 ≤ L ≤ 8.35 (including the upper bound when it should be excluded)",
+          "Computing the bounds as 8.3 ± 0.1 rather than 8.3 ± 0.05"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses inequality notation to express and manipulate complex mathematical relationships, including combining inequalities and reasoning about their implications.",
+        "example_task": "Given that 2 < x < 5 and 1 < y < 3, find the range of possible values for x - y.",
+        "example_response": "To maximise x - y: use largest x (approaching 5) and smallest y (approaching 1), giving x - y approaching 4. To minimise x - y: use smallest x (approaching 2) and largest y (approaching 3), giving x - y approaching -1. So -1 < x - y < 4. Note: none of the bounds are achieved because the original inequalities are strict.",
+        "common_errors": [
+          "Subtracting the inequalities as 2 - 1 < x - y < 5 - 3, giving 1 < x - y < 2 (incorrect — must subtract in opposite directions)",
+          "Not recognising that subtracting the largest y from the smallest x gives the minimum"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that prime numbers have exactly two factors (1 and themselves) and can identify small prime numbers.",
+        "example_task": "Which of these are prime numbers: 1, 2, 3, 4, 9, 11, 15?",
+        "example_response": "2, 3, and 11 are prime. 1 is not prime (it has only one factor). 4 = 2 × 2, 9 = 3 × 3, and 15 = 3 × 5, so they are not prime.",
+        "common_errors": [
+          "Including 1 as a prime number",
+          "Thinking all odd numbers are prime (e.g. including 9 and 15)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can test whether a number is prime by checking for factor pairs systematically, and knows primes up to 50.",
+        "example_task": "Is 37 prime? Show how you know.",
+        "example_response": "I check divisibility by primes up to √37 ≈ 6.1, so I test 2, 3, 5. 37 ÷ 2 = 18.5 (not whole). 37 ÷ 3 = 12.33... (not whole). 37 ÷ 5 = 7.4 (not whole). Since no prime up to 6 divides 37, it is prime.",
+        "common_errors": [
+          "Testing all numbers up to 37 rather than only primes up to √37",
+          "Not knowing that you only need to test up to the square root"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies knowledge of primes to solve problems involving prime factorisation and understands the Fundamental Theorem of Arithmetic (every integer > 1 has a unique prime factorisation).",
+        "example_task": "Use prime factorisation to show that 180 = 2² × 3² × 5.",
+        "example_response": "180 ÷ 2 = 90. 90 ÷ 2 = 45. 45 ÷ 3 = 15. 15 ÷ 3 = 5. 5 ÷ 5 = 1. So 180 = 2 × 2 × 3 × 3 × 5 = 2² × 3² × 5. This factorisation is unique — no other set of primes multiplies to give 180.",
+        "common_errors": [
+          "Stopping the factor tree too early (e.g. writing 180 = 4 × 45 and not breaking 4 and 45 into primes)",
+          "Not expressing the answer using index notation"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses properties of primes to reason about divisibility, uniqueness of factorisation, and the distribution of primes, including understanding why there are infinitely many primes.",
+        "example_task": "Explain why there must be infinitely many prime numbers. (This is Euclid's proof.)",
+        "example_response": "Suppose there are only finitely many primes: p₁, p₂, ..., pₙ. Consider the number N = p₁ × p₂ × ... × pₙ + 1. When we divide N by any of our primes pᵢ, we get a remainder of 1 (since N is 1 more than a multiple of pᵢ). So N is not divisible by any prime in our list. Therefore either N is itself prime (a new prime not in our list) or N has a prime factor not in our list. Either way, our list was incomplete. This contradiction means no finite list of primes can be complete, so there are infinitely many.",
+        "common_errors": [
+          "Claiming N itself must be prime (it might be composite, but its prime factors are not in the list)",
+          "Not clearly stating the proof by contradiction structure"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that factors are numbers that divide exactly into a given number, and multiples are the results of multiplying by whole numbers.",
+        "example_task": "List all the factors of 12. List the first five multiples of 7.",
+        "example_response": "Factors of 12: 1, 2, 3, 4, 6, 12. Multiples of 7: 7, 14, 21, 28, 35.",
+        "common_errors": [
+          "Missing factor pairs (e.g. listing 1, 2, 3, 12 but forgetting 4 and 6)",
+          "Confusing factors with multiples"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finds all factor pairs systematically and identifies common factors and common multiples of two or more numbers.",
+        "example_task": "Find the common factors of 24 and 36.",
+        "example_response": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Common factors: 1, 2, 3, 4, 6, 12.",
+        "common_errors": [
+          "Not listing factors systematically in pairs (1×24, 2×12, 3×8, 4×6) and missing some",
+          "Including numbers in the common factors list that only belong to one number"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses factors and multiples to solve problems, including simplifying fractions and finding common denominators.",
+        "example_task": "Two buses leave a station at 9:00am. Bus A departs every 12 minutes and Bus B every 18 minutes. When will they next leave together?",
+        "example_response": "I need the lowest common multiple of 12 and 18. Multiples of 12: 12, 24, 36, 48... Multiples of 18: 18, 36, 54... The LCM is 36. So they next leave together 36 minutes after 9:00am, which is 9:36am.",
+        "common_errors": [
+          "Finding a common multiple but not the lowest (e.g. 72 instead of 36)",
+          "Multiplying 12 × 18 = 216 instead of finding the LCM"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies understanding of factors and multiples to abstract problems and uses the relationship HCF(a,b) × LCM(a,b) = a × b.",
+        "example_task": "The HCF of two numbers is 6 and their LCM is 180. One of the numbers is 36. Find the other number.",
+        "example_response": "Using the relationship: HCF × LCM = product of the two numbers. So 6 × 180 = 36 × n. 1080 = 36n. n = 30. Check: HCF(36, 30) = 6 ✓. LCM(36, 30) = 180 ✓.",
+        "common_errors": [
+          "Not knowing the HCF × LCM = product relationship and trying to guess-and-check",
+          "Confusing HCF and LCM when applying the relationship"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands what HCF and LCM mean and can find them for small numbers by listing factors and multiples.",
+        "example_task": "Find the HCF and LCM of 8 and 12.",
+        "example_response": "Factors of 8: 1, 2, 4, 8. Factors of 12: 1, 2, 3, 4, 6, 12. Common factors: 1, 2, 4. HCF = 4. Multiples of 8: 8, 16, 24, 32... Multiples of 12: 12, 24, 36... LCM = 24.",
+        "common_errors": [
+          "Giving the LCM when asked for the HCF and vice versa",
+          "Missing the highest common factor by not listing all factors"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses prime factorisation to find HCF and LCM efficiently, especially for larger numbers where listing is impractical.",
+        "example_task": "Using prime factorisation, find the HCF and LCM of 60 and 90.",
+        "example_response": "60 = 2² × 3 × 5. 90 = 2 × 3² × 5. HCF = take the lowest power of each common prime: 2¹ × 3¹ × 5¹ = 30. LCM = take the highest power of each prime: 2² × 3² × 5¹ = 180.",
+        "common_errors": [
+          "Taking the highest powers for HCF instead of the lowest",
+          "Forgetting primes that appear in only one factorisation when computing LCM"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies HCF and LCM to solve contextual problems and understands why the method works.",
+        "example_task": "Tiles measuring 15 cm by 20 cm are used to tile a floor. What is the smallest square that can be tiled exactly with no cutting?",
+        "example_response": "The side of the square must be a common multiple of both 15 and 20. The smallest such square has side = LCM(15, 20). 15 = 3 × 5 and 20 = 2² × 5. LCM = 2² × 3 × 5 = 60 cm. The square is 60 cm × 60 cm. It uses 60/15 = 4 tiles across and 60/20 = 3 tiles down = 12 tiles.",
+        "common_errors": [
+          "Finding the HCF instead of the LCM for this type of problem",
+          "Not checking that the square dimensions are exactly divisible by both tile dimensions"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses HCF and LCM in abstract algebraic contexts and can extend the methods to three or more numbers, explaining the underlying principles.",
+        "example_task": "Find the LCM of 12, 18 and 30.",
+        "example_response": "12 = 2² × 3. 18 = 2 × 3². 30 = 2 × 3 × 5. LCM = take the highest power of every prime appearing: 2² × 3² × 5 = 4 × 9 × 5 = 180. Check: 180/12 = 15 ✓, 180/18 = 10 ✓, 180/30 = 6 ✓. The method extends to any number of integers by the same principle: take the maximum exponent of each prime across all factorisations.",
+        "common_errors": [
+          "Finding the LCM of two numbers first and then the LCM of that with the third (works but is error-prone)",
+          "Missing the prime 5 which only appears in the factorisation of 30"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands that prime factorisation means breaking a number down into a product of prime numbers, and can begin this process for small numbers.",
+        "example_task": "Write 24 as a product of prime factors.",
+        "example_response": "24 = 2 × 12 = 2 × 2 × 6 = 2 × 2 × 2 × 3 = 2³ × 3.",
+        "common_errors": [
+          "Stopping before all factors are prime (e.g. writing 24 = 4 × 6)",
+          "Not recognising that 1 is not a prime factor"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses factor trees or repeated division consistently to express numbers as products of prime factors in index notation.",
+        "example_task": "Express 360 as a product of prime factors using index notation.",
+        "example_response": "360 ÷ 2 = 180. 180 ÷ 2 = 90. 90 ÷ 2 = 45. 45 ÷ 3 = 15. 15 ÷ 3 = 5. 5 ÷ 5 = 1. So 360 = 2³ × 3² × 5.",
+        "common_errors": [
+          "Dividing by a non-prime number during the process (e.g. dividing by 4 instead of 2)",
+          "Writing 2 × 2 × 2 × 3 × 3 × 5 without converting to index form"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses prime factorisation as a tool to solve problems involving HCF, LCM, perfect squares, and divisibility.",
+        "example_task": "What is the smallest number you must multiply 360 by to make a perfect square?",
+        "example_response": "360 = 2³ × 3² × 5. For a perfect square, all exponents must be even. The exponent of 2 is 3 (odd — needs one more 2), the exponent of 3 is 2 (even ✓), the exponent of 5 is 1 (odd — needs one more 5). So multiply by 2 × 5 = 10. Then 3600 = 2⁴ × 3² × 5² = (2² × 3 × 5)² = 60². Check: √3600 = 60 ✓.",
+        "common_errors": [
+          "Not recognising the connection between even exponents and perfect squares",
+          "Multiplying by the wrong factor (e.g. multiplying by 2 × 3 × 5 instead of just the primes with odd exponents)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies the Fundamental Theorem of Arithmetic to reason about number properties, including proving results about divisibility and the structure of perfect numbers.",
+        "example_task": "Prove that √2 is irrational using prime factorisation.",
+        "example_response": "Suppose √2 = a/b where a and b are integers with no common factors. Then 2 = a²/b², so a² = 2b². In the prime factorisation of a², every prime appears an even number of times (since squaring doubles every exponent). Similarly for b². But a² = 2b² means the prime 2 appears an odd number of times on the right side (the exponent of 2 in b² is even, plus one more gives odd). This contradicts the uniqueness of prime factorisation. So our assumption was wrong, and √2 is irrational.",
+        "common_errors": [
+          "Not explaining why squaring a number makes all prime exponents even",
+          "Confusing the structure of the proof by contradiction"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can add and subtract fractions with the same denominator and understands what the numerator and denominator represent.",
+        "example_task": "Calculate 3/8 + 2/8.",
+        "example_response": "3/8 + 2/8 = 5/8. The denominators are the same, so I add the numerators: 3 + 2 = 5.",
+        "common_errors": [
+          "Adding both numerators and denominators (getting 5/16 instead of 5/8)",
+          "Not simplifying the answer when possible"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Adds, subtracts, multiplies and divides proper fractions by finding common denominators and using the correct procedures.",
+        "example_task": "Calculate 2/3 × 4/5.",
+        "example_response": "2/3 × 4/5 = (2 × 4)/(3 × 5) = 8/15. To multiply fractions, multiply the numerators and multiply the denominators.",
+        "common_errors": [
+          "Finding a common denominator before multiplying (this is only needed for addition/subtraction)",
+          "Forgetting to simplify the result"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Performs all four operations fluently with proper fractions, improper fractions and mixed numbers, simplifying results and converting between forms.",
+        "example_task": "Calculate 2 1/3 ÷ 1 3/4.",
+        "example_response": "Convert to improper fractions: 2 1/3 = 7/3 and 1 3/4 = 7/4. Dividing by a fraction means multiplying by its reciprocal: 7/3 ÷ 7/4 = 7/3 × 4/7 = 28/21 = 4/3 = 1 1/3.",
+        "common_errors": [
+          "Dividing numerators and denominators separately (7÷7 and 3÷4)",
+          "Forgetting to flip the second fraction (multiplying by 7/4 instead of 4/7)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Solves complex problems involving fractions, including algebraic fractions and multi-step contextual problems, choosing efficient methods.",
+        "example_task": "A tank is 1/3 full. After adding 15 litres, it is 5/8 full. Find the capacity of the tank.",
+        "example_response": "The 15 litres represents the difference between 5/8 and 1/3 of the capacity. 5/8 - 1/3 = 15/24 - 8/24 = 7/24 of the tank. So 7/24 of the capacity = 15 litres. Capacity = 15 × 24/7 = 360/7 = 51 3/7 litres. Check: 1/3 of 360/7 = 120/7. Adding 15 = 105/7 gives 225/7. And 5/8 of 360/7 = 1800/56 = 225/7 ✓.",
+        "common_errors": [
+          "Setting up 1/3 + 15 = 5/8 without recognising that 15 litres is a fraction of the capacity",
+          "Not converting between fractions of the capacity and actual litres correctly"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can add and subtract simple negative integers, often using a number line for support.",
+        "example_task": "Calculate -5 + 3.",
+        "example_response": "Starting at -5 on the number line, I move 3 to the right: -5, -4, -3, -2. The answer is -2.",
+        "common_errors": [
+          "Moving in the wrong direction on the number line",
+          "Getting confused by the negative sign and adding the magnitudes (getting -8)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Performs all four operations with negative integers using sign rules, with growing confidence away from the number line.",
+        "example_task": "Calculate: (a) -4 × 3 (b) -6 × (-2) (c) -15 ÷ (-3).",
+        "example_response": "(a) -4 × 3 = -12 (negative × positive = negative). (b) -6 × (-2) = 12 (negative × negative = positive). (c) -15 ÷ (-3) = 5 (negative ÷ negative = positive).",
+        "common_errors": [
+          "Applying sign rules inconsistently (e.g. negative × negative = negative)",
+          "Confusing the sign rule for division with that for subtraction"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Combines operations with negative numbers in multi-step calculations, including with fractions and decimals, applying BIDMAS correctly.",
+        "example_task": "Calculate: -3² + (-2)³.",
+        "example_response": "-3² means -(3²) = -9. (-2)³ means (-2) × (-2) × (-2) = 4 × (-2) = -8. So -3² + (-2)³ = -9 + (-8) = -17.",
+        "common_errors": [
+          "Interpreting -3² as (-3)² = 9 instead of -(3²) = -9",
+          "Computing (-2)³ as +8 instead of -8 (forgetting that an odd power of a negative is negative)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies operations with negative numbers in algebraic and proof contexts, explaining the logical foundations of the sign rules.",
+        "example_task": "Using the distributive law, prove that (-a) × (-b) = ab for positive numbers a and b.",
+        "example_response": "Consider (-a)(b + (-b)). Since b + (-b) = 0, this equals (-a)(0) = 0. Expanding: (-a)(b) + (-a)(-b) = 0. We know (-a)(b) = -(ab). So -(ab) + (-a)(-b) = 0. Adding ab to both sides: (-a)(-b) = ab. Therefore the product of two negative numbers is positive, as a logical consequence of the distributive law and the definition of additive inverses.",
+        "common_errors": [
+          "Stating the rule 'negative times negative is positive' as an axiom rather than a consequence of other properties",
+          "Not correctly applying the distributive law in the proof"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that multiplication and division are done before addition and subtraction, and can apply this rule to simple calculations.",
+        "example_task": "Calculate 3 + 4 × 2.",
+        "example_response": "Multiplication first: 4 × 2 = 8. Then addition: 3 + 8 = 11.",
+        "common_errors": [
+          "Working left to right and getting (3 + 4) × 2 = 14",
+          "Not knowing that × and ÷ have higher priority than + and -"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applies the full BIDMAS order (Brackets, Indices, Division/Multiplication, Addition/Subtraction) to multi-step calculations.",
+        "example_task": "Calculate (5 + 3)² - 4 × 6.",
+        "example_response": "Brackets first: 5 + 3 = 8. Indices: 8² = 64. Multiplication: 4 × 6 = 24. Subtraction: 64 - 24 = 40.",
+        "common_errors": [
+          "Computing the index before the brackets (getting 5 + 9 - 24)",
+          "Not knowing where indices fit in the priority order"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies order of operations confidently to complex expressions involving nested brackets, negative numbers, fractions and powers.",
+        "example_task": "Calculate: 2 × [3 + (8 - 5)²] - 1.",
+        "example_response": "Inner brackets: 8 - 5 = 3. Index: 3² = 9. Outer brackets: 3 + 9 = 12. Multiply: 2 × 12 = 24. Subtract: 24 - 1 = 23.",
+        "common_errors": [
+          "Not resolving nested brackets from the inside out",
+          "Squaring before completing the inner bracket subtraction"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses order of operations to interpret and construct complex mathematical expressions, and can explain why the conventions exist and how they prevent ambiguity.",
+        "example_task": "Insert brackets into the expression 2 + 3 × 4 - 1 to make it equal to 19.",
+        "example_response": "Without brackets: 2 + 3 × 4 - 1 = 2 + 12 - 1 = 13. To get 19, I need the addition to happen before the multiplication: (2 + 3) × 4 - 1 = 5 × 4 - 1 = 20 - 1 = 19. The brackets override the normal priority and force the addition first.",
+        "common_errors": [
+          "Trying random bracket placements without thinking about which operation needs to change priority",
+          "Not checking the answer by evaluating the modified expression step by step"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that addition and subtraction are inverse operations, and multiplication and division are inverse operations.",
+        "example_task": "Use an inverse operation to check: 156 + 287 = 443.",
+        "example_response": "Check by subtracting: 443 - 287 = 156 ✓. Since the subtraction gives back the first number, the addition is correct.",
+        "common_errors": [
+          "Not knowing which operation is the inverse of which",
+          "Checking by repeating the same calculation instead of using the inverse"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses inverse operations to find missing numbers and to check multi-step calculations.",
+        "example_task": "If 3 × □ + 5 = 26, find the missing number using inverse operations.",
+        "example_response": "Start with 26. Undo the +5: 26 - 5 = 21. Undo the ×3: 21 ÷ 3 = 7. So □ = 7. Check: 3 × 7 + 5 = 21 + 5 = 26 ✓.",
+        "common_errors": [
+          "Undoing operations in the wrong order (dividing by 3 first)",
+          "Not checking the answer by substituting back"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Recognises that squaring and square rooting, cubing and cube rooting are inverse operations, and applies inverse operations fluently across all number types.",
+        "example_task": "If x² = 49, find all possible values of x. Explain why there are two answers.",
+        "example_response": "x = √49 = 7 or x = -7. There are two answers because both 7² = 49 and (-7)² = 49. The square root function gives the positive root, but the equation x² = 49 has two solutions. This is because squaring destroys sign information — it maps both +7 and -7 to 49.",
+        "common_errors": [
+          "Giving only x = 7 and forgetting the negative solution",
+          "Writing x = ±√49 but not understanding why there are two solutions"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies the concept of inverse operations to function composition and equation solving, understanding when inverse operations are not straightforward (e.g. non-invertible functions).",
+        "example_task": "A function machine does: input → ×3 → +2 → square → output. If the output is 100, find all possible inputs.",
+        "example_response": "Working backwards: output = 100. Undo square: ±√100 = ±10. For +10: undo +2: 10 - 2 = 8. Undo ×3: 8/3 = 8/3. For -10: undo +2: -10 - 2 = -12. Undo ×3: -12/3 = -4. Inputs are 8/3 or -4. Check: 8/3 → 8 → 10 → 100 ✓. -4 → -12 → -10 → 100 ✓. The squaring step creates two branches because squaring is not one-to-one.",
+        "common_errors": [
+          "Only finding one input by taking the positive square root",
+          "Not recognising that the squaring operation means the inverse has two branches"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that a power means repeated multiplication and can calculate simple squares and cubes.",
+        "example_task": "Calculate: (a) 5² (b) 2³.",
+        "example_response": "(a) 5² = 5 × 5 = 25. (b) 2³ = 2 × 2 × 2 = 8.",
+        "common_errors": [
+          "Computing 5² as 5 × 2 = 10 instead of 5 × 5 = 25",
+          "Computing 2³ as 2 × 3 = 6 instead of 2 × 2 × 2 = 8"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates with higher powers and finds square roots and cube roots, recognising the relationship between powers and roots.",
+        "example_task": "Find: (a) √144 (b) ∛27 (c) 3⁴.",
+        "example_response": "(a) √144 = 12 because 12 × 12 = 144. (b) ∛27 = 3 because 3 × 3 × 3 = 27. (c) 3⁴ = 3 × 3 × 3 × 3 = 81.",
+        "common_errors": [
+          "Confusing square root with halving (e.g. √144 = 72)",
+          "Not recognising that roots are the inverse of powers"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies laws of indices (multiplication, division, power of a power) and works with integer powers including zero and negative exponents.",
+        "example_task": "Simplify: (a) 2³ × 2⁵ (b) 3⁶ ÷ 3² (c) (5²)³.",
+        "example_response": "(a) 2³ × 2⁵ = 2³⁺⁵ = 2⁸ = 256. (b) 3⁶ ÷ 3² = 3⁶⁻² = 3⁴ = 81. (c) (5²)³ = 5²ˣ³ = 5⁶ = 15625.",
+        "common_errors": [
+          "Multiplying the indices instead of adding for multiplication (getting 2¹⁵)",
+          "Adding the indices for division instead of subtracting"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies index laws to simplify complex algebraic expressions and explains why a⁰ = 1 and a⁻ⁿ = 1/aⁿ follow from the index laws.",
+        "example_task": "Explain why 7⁰ = 1 using the laws of indices.",
+        "example_response": "By the division law: 7³ ÷ 7³ = 7³⁻³ = 7⁰. But any non-zero number divided by itself equals 1: 7³ ÷ 7³ = 343/343 = 1. So 7⁰ = 1. This reasoning applies to any base a ≠ 0: aⁿ ÷ aⁿ = aⁿ⁻ⁿ = a⁰ = 1. Similarly, 7⁻² = 7⁰⁻² = 7⁰ ÷ 7² = 1/49. So negative indices give reciprocals, as a direct consequence of the subtraction rule for division.",
+        "common_errors": [
+          "Stating a⁰ = 0 (confusing the exponent value with the result)",
+          "Not connecting the definition of a⁰ = 1 to the index laws"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands that index notation is a shorthand for repeated multiplication and can write simple expressions using powers.",
+        "example_task": "Write 5 × 5 × 5 × 5 using index notation.",
+        "example_response": "5 × 5 × 5 × 5 = 5⁴.",
+        "common_errors": [
+          "Writing 5 × 4 = 20 instead of 5⁴ = 625",
+          "Not knowing which number is the base and which is the index"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Recognises and evaluates powers of 2, 3, 4, 5 and 10, and can express prime factorisations using index notation.",
+        "example_task": "Which is larger: 3⁴ or 4³?",
+        "example_response": "3⁴ = 81. 4³ = 64. So 3⁴ is larger.",
+        "common_errors": [
+          "Assuming the number with the larger base is always larger",
+          "Computing 3⁴ = 12 (multiplying base by index)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses index notation fluently with algebraic expressions and applies it in prime factorisation, HCF/LCM and scientific contexts.",
+        "example_task": "Simplify a³ × a² × b⁴ × b.",
+        "example_response": "a³ × a² = a⁵ (add indices for same base). b⁴ × b = b⁴ × b¹ = b⁵. So the answer is a⁵b⁵ or (ab)⁵.",
+        "common_errors": [
+          "Multiplying the indices instead of adding (getting a⁶ instead of a⁵)",
+          "Not recognising that b means b¹"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Works confidently with fractional and negative indices, understanding their meaning and applying them in algebraic manipulation.",
+        "example_task": "Evaluate 8^(2/3).",
+        "example_response": "8^(2/3) means (8^(1/3))² = (∛8)² = 2² = 4. Alternatively, 8^(2/3) = (8²)^(1/3) = ∛64 = 4. The fractional index 2/3 means 'cube root then square' (or 'square then cube root').",
+        "common_errors": [
+          "Computing 8 × 2/3 = 16/3 instead of applying the index law",
+          "Taking the square root instead of the cube root (confusing which part of the fraction is which)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that some square roots are whole numbers (perfect squares) and others are not, and can identify which are which.",
+        "example_task": "Which of these have exact whole-number square roots: √9, √10, √16, √20?",
+        "example_response": "√9 = 3 (exact) and √16 = 4 (exact). √10 and √20 do not have whole-number square roots.",
+        "common_errors": [
+          "Thinking √10 = 5 because 'it is close'",
+          "Not recognising perfect squares beyond 10² = 100"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understands that non-perfect-square roots are irrational (their decimal expansion never terminates or repeats) and can estimate their approximate value.",
+        "example_task": "Between which two consecutive integers does √50 lie? Estimate √50 to 1 decimal place.",
+        "example_response": "7² = 49 and 8² = 64, so √50 lies between 7 and 8. Since 50 is very close to 49, √50 ≈ 7.1. (Actual value: 7.071...)",
+        "common_errors": [
+          "Estimating √50 = 25 (halving instead of finding the root)",
+          "Not knowing the perfect squares needed to bracket the estimate"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Distinguishes between exact surd form and decimal approximations, and understands when each is appropriate.",
+        "example_task": "A square has area 32 cm². Find its side length. Give your answer (a) as a surd (b) as a decimal to 2 d.p.",
+        "example_response": "(a) Side = √32 = √(16 × 2) = 4√2 cm (exact). (b) 4√2 ≈ 4 × 1.414 = 5.66 cm (2 d.p.). The surd form 4√2 is exact — the decimal is an approximation.",
+        "common_errors": [
+          "Not simplifying √32 to 4√2",
+          "Presenting only the decimal approximation and not recognising that the surd is the exact answer"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Works fluently with surds, simplifying expressions and understanding why certain numbers are irrational.",
+        "example_task": "Simplify √75 + √48 - √12.",
+        "example_response": "√75 = √(25 × 3) = 5√3. √48 = √(16 × 3) = 4√3. √12 = √(4 × 3) = 2√3. So 5√3 + 4√3 - 2√3 = 7√3.",
+        "common_errors": [
+          "Adding the numbers under the roots directly (√75 + √48 = √123)",
+          "Not fully simplifying each surd before combining"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C016",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands that standard form is a way of writing very large or very small numbers using powers of 10.",
+        "example_task": "Write 5,000,000 in standard form.",
+        "example_response": "5,000,000 = 5 × 10⁶. The 5 is between 1 and 10, and 10⁶ = 1,000,000.",
+        "common_errors": [
+          "Writing 50 × 10⁵ instead of 5 × 10⁶ (the first number must be between 1 and 10)",
+          "Counting the zeros incorrectly"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Converts numbers to and from standard form for both large and small numbers, understanding positive and negative powers of 10.",
+        "example_task": "Write 0.00037 in standard form.",
+        "example_response": "0.00037 = 3.7 × 10⁻⁴. I moved the decimal point 4 places to the right to get 3.7, so the power is -4.",
+        "common_errors": [
+          "Writing 3.7 × 10⁴ (positive power instead of negative for a small number)",
+          "Moving the decimal point the wrong number of places"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Performs calculations with numbers in standard form, including addition, subtraction, multiplication and division, giving answers in standard form.",
+        "example_task": "Calculate (3 × 10⁴) × (5 × 10⁻²). Give your answer in standard form.",
+        "example_response": "Multiply the numbers: 3 × 5 = 15. Add the powers: 10⁴ × 10⁻² = 10². So the answer is 15 × 10² = 1.5 × 10³ (converting 15 to 1.5 × 10¹ to keep standard form).",
+        "common_errors": [
+          "Leaving the answer as 15 × 10² (not in standard form because 15 ≥ 10)",
+          "Multiplying the powers instead of adding them"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies standard form in scientific and real-world contexts, comparing quantities across different orders of magnitude and interpreting calculations in context.",
+        "example_task": "The mass of the Earth is 5.97 × 10²⁴ kg. The mass of the Moon is 7.35 × 10²² kg. How many times heavier is the Earth than the Moon?",
+        "example_response": "(5.97 × 10²⁴) ÷ (7.35 × 10²²) = (5.97 ÷ 7.35) × 10²⁴⁻²² = 0.8122... × 10² = 81.2 (to 3 s.f.). The Earth is approximately 81 times heavier than the Moon. This makes sense — the Moon is much smaller but not thousands of times smaller.",
+        "common_errors": [
+          "Subtracting the coefficients instead of dividing them",
+          "Getting the power wrong by not adjusting when the coefficient falls below 1"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C017",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that some fractions can be written as exact decimals (terminating) and can convert between simple fractions and decimals.",
+        "example_task": "Convert 3/4 to a decimal.",
+        "example_response": "3/4 = 3 ÷ 4 = 0.75.",
+        "common_errors": [
+          "Dividing 4 by 3 instead of 3 by 4",
+          "Not recognising common fraction-decimal equivalents (1/2 = 0.5, 1/4 = 0.25, 3/4 = 0.75)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Converts between fractions and terminating decimals fluently, and begins to recognise recurring decimals.",
+        "example_task": "Convert 0.125 to a fraction in its simplest form.",
+        "example_response": "0.125 = 125/1000. Simplify: 125/1000 = 25/200 = 5/40 = 1/8.",
+        "common_errors": [
+          "Not simplifying fully (stopping at 125/1000 or 1/8 after only one step)",
+          "Writing 0.125 as 1/125 instead of 125/1000"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Converts fluently between fractions, decimals and percentages, and understands which fractions give terminating decimals and which give recurring decimals.",
+        "example_task": "Without a calculator, determine whether 7/40 gives a terminating or recurring decimal. Then convert it.",
+        "example_response": "A fraction in simplest form gives a terminating decimal if and only if the denominator has no prime factors other than 2 and 5. 40 = 2³ × 5, so 7/40 terminates. 7/40 = 7/(8 × 5) = 7 × 25/1000 = 175/1000 = 0.175.",
+        "common_errors": [
+          "Thinking the rule depends on the numerator rather than the denominator",
+          "Not knowing the terminating decimal test (denominator prime factors are only 2 and 5)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Converts recurring decimals to fractions algebraically and understands the distinction between rational and irrational numbers.",
+        "example_task": "Convert 0.363636... (recurring) to a fraction.",
+        "example_response": "Let x = 0.363636... Then 100x = 36.363636... Subtracting: 100x - x = 36, so 99x = 36, giving x = 36/99 = 4/11. Check: 4 ÷ 11 = 0.363636... ✓.",
+        "common_errors": [
+          "Multiplying by 10 instead of 100 (not accounting for the two-digit recurring block)",
+          "Forgetting to simplify 36/99 to 4/11"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C018",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands that percentage means 'out of 100' and can find simple percentages of amounts (10%, 50%, 25%).",
+        "example_task": "Find 50% of 84.",
+        "example_response": "50% means half. 84 ÷ 2 = 42. So 50% of 84 = 42.",
+        "common_errors": [
+          "Not connecting 50% to 'half' or 25% to 'quarter'",
+          "Thinking percentage means dividing by the percentage number"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Converts between fractions, decimals and percentages, and finds any percentage of an amount using multiplication.",
+        "example_task": "Convert 3/8 to a percentage.",
+        "example_response": "3/8 = 3 ÷ 8 = 0.375. To convert to a percentage: 0.375 × 100 = 37.5%.",
+        "common_errors": [
+          "Dividing 8 by 3 instead of 3 by 8",
+          "Forgetting to multiply by 100 to convert from decimal to percentage"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses percentage as a multiplicative operator, understanding that finding x% means multiplying by x/100 or the equivalent decimal.",
+        "example_task": "Explain why finding 15% of a number is the same as multiplying by 0.15.",
+        "example_response": "15% means 15/100 = 0.15. Finding 15% of N means N × 15/100 = N × 0.15. This works because percentage is a fraction of 100, and multiplying by the decimal equivalent gives the same result as dividing by 100 then multiplying by 15.",
+        "common_errors": [
+          "Not seeing the connection between the percentage, fraction and decimal forms",
+          "Treating 'of' as addition rather than multiplication"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies percentage understanding in complex contexts including percentages greater than 100%, recognising that percentage is a ratio that can express any multiplicative comparison.",
+        "example_task": "A town's population increased from 8,000 to 12,400. Express the new population as a percentage of the original. What was the percentage increase?",
+        "example_response": "New as percentage of original: (12,400/8,000) × 100 = 155%. Percentage increase: 155% - 100% = 55%. Alternatively: increase = 4,400. (4,400/8,000) × 100 = 55%.",
+        "common_errors": [
+          "Dividing 8,000 by 12,400 instead of 12,400 by 8,000",
+          "Confusing 'as a percentage of' (155%) with 'percentage increase' (55%)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C019",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can find a simple percentage of a quantity and express one quantity as a fraction of another, but not yet as a percentage.",
+        "example_task": "Find 30% of £200.",
+        "example_response": "10% of £200 = £20. So 30% = 3 × £20 = £60.",
+        "common_errors": [
+          "Finding 10% correctly but then making a multiplication error",
+          "Not knowing how to break down a percentage into manageable parts"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Expresses one quantity as a percentage of another and can compare quantities using percentages.",
+        "example_task": "In a test, Amira scored 42 out of 60 and Ben scored 35 out of 50. Who scored a higher percentage?",
+        "example_response": "Amira: (42/60) × 100 = 70%. Ben: (35/50) × 100 = 70%. They scored the same percentage.",
+        "common_errors": [
+          "Comparing raw scores (42 > 35) without converting to percentages",
+          "Computing the percentages incorrectly by dividing the total by the score"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Calculates percentage increase and decrease, and works with percentages greater than 100% in context.",
+        "example_task": "A coat costs £80 in a 35% off sale. What was the original price?",
+        "example_response": "£80 represents 100% - 35% = 65% of the original price. So 65% of original = £80. Original = £80 ÷ 0.65 = £123.08 (to nearest penny).",
+        "common_errors": [
+          "Computing £80 + 35% of £80 = £108 (adding the discount to the sale price instead of finding the original)",
+          "Not recognising that £80 is 65% of the original, not 100%"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Solves complex percentage problems including successive percentage changes and understands that percentage changes are not additive.",
+        "example_task": "A price increases by 20% and then decreases by 20%. Is the final price the same as the original? Prove your answer algebraically.",
+        "example_response": "Let the original price be P. After 20% increase: P × 1.20 = 1.2P. After 20% decrease: 1.2P × 0.80 = 0.96P. The final price is 96% of the original — a 4% decrease, not back to the original. This happens because the 20% decrease applies to the larger, increased amount, not the original. In general, increasing by x% then decreasing by x% gives a multiplier of (1 + x/100)(1 - x/100) = 1 - (x/100)², which is always less than 1.",
+        "common_errors": [
+          "Assuming +20% then -20% returns to the original (additive fallacy)",
+          "Not recognising that percentage changes are multiplicative, not additive"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C020",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can find a fraction of an amount using division (e.g. 1/4 of 20 = 20 ÷ 4 = 5) and understands that a percentage acts on a quantity.",
+        "example_task": "Find 1/3 of 18 kg.",
+        "example_response": "1/3 of 18 = 18 ÷ 3 = 6 kg.",
+        "common_errors": [
+          "Computing 18 ÷ 1 = 18 or 18 × 3 = 54 instead of 18 ÷ 3",
+          "Not understanding that 'of' means 'multiply'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Finds non-unit fractions and percentages of amounts, understanding the two-step process (divide then multiply).",
+        "example_task": "Find 3/5 of £45.",
+        "example_response": "1/5 of £45 = £9. So 3/5 = 3 × £9 = £27.",
+        "common_errors": [
+          "Finding 1/5 correctly but then adding £9 instead of multiplying by 3",
+          "Computing 45 × 5 ÷ 3 (inverting the fraction operation)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Understands that fractions and percentages are multiplicative operators, using decimal multipliers for efficiency, and can reverse the process.",
+        "example_task": "After paying 17.5% VAT on a meal, the total bill is £58.75. Find the pre-VAT price.",
+        "example_response": "The bill with VAT is 117.5% of the original price. As a multiplier: 1.175. So original price = £58.75 ÷ 1.175 = £50.",
+        "common_errors": [
+          "Subtracting 17.5% of £58.75 (getting £48.47) instead of dividing by 1.175",
+          "Not recognising that the post-VAT amount is 117.5%, not 100%"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies fractional and percentage operators in complex multi-step problems, including combining operators and reasoning about the algebraic structure.",
+        "example_task": "Show that increasing a quantity by 1/5 is the same as multiplying by 6/5 and the same as increasing by 20%.",
+        "example_response": "Increasing by 1/5: new amount = original + 1/5 × original = original × (1 + 1/5) = original × 6/5. As a percentage: 6/5 = 1.2 = 120%, which is a 20% increase. All three are the same multiplicative operation: ×6/5 = ×1.2 = 'add 20%'. This shows that fractions and percentages are just different notations for the same multiplicative comparison.",
+        "common_errors": [
+          "Treating 'increase by 1/5' as 'multiply by 1/5' instead of 'multiply by 6/5'",
+          "Not seeing the equivalence between the fraction and percentage forms"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C021",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can round whole numbers to the nearest 10, 100 or 1000 and decimals to the nearest whole number.",
+        "example_task": "Round 3,847 to the nearest 100.",
+        "example_response": "3,847 rounded to the nearest 100 is 3,800. The tens digit is 4, which is less than 5, so I round down.",
+        "common_errors": [
+          "Rounding to the nearest 1000 (getting 4000) instead of nearest 100",
+          "Looking at the wrong digit to decide whether to round up or down"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Rounds numbers to a specified number of decimal places or significant figures.",
+        "example_task": "Round 0.04563 to 2 significant figures.",
+        "example_response": "The first significant figure is 4 (leading zeros don't count). The second significant figure is 5. The next digit is 6 ≥ 5, so I round up: 0.046.",
+        "common_errors": [
+          "Counting leading zeros as significant figures (getting 0.045)",
+          "Confusing significant figures with decimal places"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses estimation and approximation to check the reasonableness of answers, rounding each number to 1 significant figure for quick mental estimates.",
+        "example_task": "Estimate the value of (489 × 0.031) / 5.2 without a calculator.",
+        "example_response": "Round: 489 ≈ 500, 0.031 ≈ 0.03, 5.2 ≈ 5. Estimate: (500 × 0.03) / 5 = 15 / 5 = 3. (Exact answer: 2.917... so the estimate is good.)",
+        "common_errors": [
+          "Rounding too aggressively and losing accuracy",
+          "Not knowing which significant figure to round to for a useful estimate"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses the effect of rounding on calculations, understands accumulation of rounding errors, and determines appropriate degrees of accuracy for given contexts.",
+        "example_task": "Two lengths are measured as 8.3 cm and 5.7 cm, each to the nearest 0.1 cm. Find the maximum possible value of their sum.",
+        "example_response": "8.3 cm could be as high as 8.35 cm (upper bound). 5.7 cm could be as high as 5.75 cm (upper bound). Maximum sum = 8.35 + 5.75 = 14.1 cm. Note: the upper bounds are not achievable (they are strict), so the sum approaches but never reaches 14.1 cm. For the minimum: 8.25 + 5.65 = 13.9 cm. The true sum lies in [13.9, 14.1).",
+        "common_errors": [
+          "Using 8.35 ≤ for the upper bound when it should be < 8.35",
+          "Not recognising that errors accumulate when measurements are combined"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C022",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands that measurements are not exact and that rounding introduces a margin of error.",
+        "example_task": "A pencil is 15 cm long, measured to the nearest cm. What are the smallest and largest possible lengths?",
+        "example_response": "The smallest is 14.5 cm (anything below would round to 14). The largest is just below 15.5 cm (15.5 would round to 16).",
+        "common_errors": [
+          "Giving 14 and 16 as the bounds (using the wrong rounding interval)",
+          "Not understanding that the measurement could be anywhere in the interval"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates error intervals using inequality notation for measurements rounded to specified precisions.",
+        "example_task": "A mass is 3.4 kg to the nearest 0.1 kg. Write the error interval using inequalities.",
+        "example_response": "3.35 ≤ m < 3.45. The lower bound is 3.35 (inclusive) and the upper bound is 3.45 (exclusive).",
+        "common_errors": [
+          "Writing 3.35 < m < 3.45 (the lower bound should be inclusive)",
+          "Computing the bounds as 3.4 ± 0.1 instead of 3.4 ± 0.05"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Calculates error intervals for numbers rounded to given decimal places or significant figures, and for truncated values.",
+        "example_task": "A number is truncated to 2 decimal places to give 4.73. Write the error interval.",
+        "example_response": "Truncation always rounds down (cuts off digits). So the number could be anything from 4.73 up to but not including 4.74. Error interval: 4.73 ≤ x < 4.74.",
+        "common_errors": [
+          "Treating truncation the same as rounding (giving 4.725 ≤ x < 4.735)",
+          "Not understanding the difference between truncation and rounding"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Combines error intervals in calculations to find the range of possible results, understanding how errors propagate through operations.",
+        "example_task": "A rectangle has length 8.4 cm and width 3.2 cm, both to the nearest 0.1 cm. Find the error interval for the area.",
+        "example_response": "Length: 8.35 ≤ l < 8.45. Width: 3.15 ≤ w < 3.25. Minimum area = 8.35 × 3.15 = 26.3025 cm². Maximum area < 8.45 × 3.25 = 27.4625 cm². Error interval for area: 26.3025 ≤ A < 27.4625. The area could range from about 26.3 to 27.5 cm² — a spread of over 1 cm² from measurements that each seemed precise to 0.1 cm.",
+        "common_errors": [
+          "Using 8.4 × 3.2 = 26.88 as the minimum and maximum (not using the error bounds)",
+          "Multiplying the error margins (0.05 × 0.05) instead of combining the extreme values"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C024",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that counting numbers go on forever (there is no largest number) and can give examples of very large numbers.",
+        "example_task": "Is there a biggest whole number? Explain your answer.",
+        "example_response": "No, there is no biggest whole number. Whatever number you think of, you can always add 1 to get a bigger number. For example, a million + 1 is bigger than a million, and you could keep going forever.",
+        "common_errors": [
+          "Thinking that infinity is a number rather than a concept",
+          "Confusing 'very large' with 'infinite'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understands that integers, rationals and reals are different types of numbers and can classify numbers into these categories.",
+        "example_task": "Classify each number as integer, rational (but not integer), or irrational: 7, -3/4, √2, 0.6̄, π.",
+        "example_response": "7 = integer (also rational). -3/4 = rational (not integer). √2 = irrational. 0.6̄ = 2/3, rational (not integer). π = irrational.",
+        "common_errors": [
+          "Thinking all decimals are irrational (0.6̄ is actually rational because it equals 2/3)",
+          "Classifying √4 as irrational (it equals 2, which is rational)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Understands the hierarchy of number sets (natural ⊂ integer ⊂ rational ⊂ real) and can explain why each set is infinite.",
+        "example_task": "Are there more fractions between 0 and 1 than there are whole numbers? Explain your reasoning.",
+        "example_response": "Between 0 and 1 there are infinitely many fractions: 1/2, 1/3, 1/4, 1/5, ... and also 2/3, 3/4, etc. There are also infinitely many whole numbers: 1, 2, 3, ... Both sets are infinite. Surprisingly, mathematicians have shown these two infinite sets have the same 'size' (cardinality) — the rationals between 0 and 1 can be listed and matched one-to-one with the natural numbers. This is counterintuitive but true.",
+        "common_errors": [
+          "Assuming that because fractions are 'denser', there must be 'more' of them",
+          "Not distinguishing between density (how close together numbers are) and cardinality (how many)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Engages with the subtlety of infinite sets, understands Cantor's insight that the reals are uncountable (unlike the rationals), and appreciates the richness of the number line.",
+        "example_task": "Explain why the set of real numbers is 'larger' (in the mathematical sense) than the set of rational numbers, even though both are infinite.",
+        "example_response": "The rationals are countable — they can be listed (using a diagonal argument on a grid of all p/q pairs). But Cantor proved the reals are uncountable: suppose you could list all reals between 0 and 1. Construct a new number by making its nth decimal digit different from the nth digit of the nth number in the list. This new number differs from every number on the list (it differs from the nth number in the nth digit), so the list was incomplete. This diagonal argument shows no list can contain all reals. Therefore the reals form a strictly larger infinity than the rationals.",
+        "common_errors": [
+          "Confusing 'infinite' with 'uncountable' — not all infinite sets are the same size",
+          "Not understanding that the diagonal argument constructs a number not on any supposed list"
+        ]
+      }
+    ]
+  }
+]

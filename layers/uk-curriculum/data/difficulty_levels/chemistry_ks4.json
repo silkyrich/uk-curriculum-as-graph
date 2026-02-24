@@ -1,0 +1,497 @@
+[
+  {
+    "concept_id": "CH-KS4-C001",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can name the three subatomic particles and state that atoms have a nucleus, but confuses their charges and relative masses or cannot use the periodic table to determine particle numbers.",
+        "example_task": "State the charge and relative mass of a proton, neutron and electron.",
+        "example_response": "Proton: charge +1, mass 1. Neutron: charge 0, mass 1. Electron: charge -1, mass very small (approximately 1/2000).",
+        "common_errors": ["Stating that neutrons have a positive charge", "Confusing atomic number (number of protons) with mass number (protons + neutrons)"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can use the periodic table to determine the number of protons, neutrons and electrons in an atom, and understands what isotopes are, but struggles with ion electron configurations.",
+        "example_task": "Sodium has atomic number 11 and mass number 23. How many protons, neutrons and electrons does a sodium atom have? How many electrons does a Na+ ion have?",
+        "example_response": "Protons: 11 (equals atomic number). Neutrons: 23 - 11 = 12. Electrons in atom: 11 (equals protons in a neutral atom). Na+ ion: 11 - 1 = 10 electrons (it has lost one electron to form a positive ion).",
+        "common_errors": ["Thinking ions have different numbers of protons from the neutral atom", "Subtracting atomic number from mass number the wrong way round"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Explains the historical development of atomic models with reference to experimental evidence, calculates relative atomic masses from isotope data, and applies the nuclear model to explain ion formation.",
+        "example_task": "Explain why Rutherford's alpha particle scattering experiment led to the replacement of Thomson's plum pudding model with the nuclear model.",
+        "example_response": "Thomson's model predicted that alpha particles would pass through the atom with only slight deflections, since positive charge was spread evenly throughout the atom. However, Rutherford observed that most alpha particles passed straight through (atom is mostly empty space), some were deflected at large angles (positive charge concentrated in a small region), and a very small number bounced back (the concentrated positive charge is massive enough to repel the alpha particle). This evidence required a new model: a small, dense, positively charged nucleus with electrons orbiting at a distance, which became the nuclear model.",
+        "common_errors": ["Describing the experiment without linking each observation to a specific conclusion about atomic structure", "Confusing the Rutherford model (nuclear) with the Bohr model (electron shells)"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Evaluates the strengths and limitations of successive atomic models, calculates relative atomic masses from isotope abundance data, and explains why models in science are provisional and subject to revision.",
+        "example_task": "Chlorine has two isotopes: Cl-35 (75.8%) and Cl-37 (24.2%). Calculate the relative atomic mass of chlorine. Explain why this is not a whole number.",
+        "example_response": "RAM = (35 × 75.8/100) + (37 × 24.2/100) = 26.53 + 8.95 = 35.5. This is not a whole number because it is a weighted average of the masses of the two isotopes, reflecting their natural abundance. No individual chlorine atom has a mass of 35.5 — each atom is either 35 or 37. The value 35.5 represents the average mass you would expect if you randomly selected a large number of chlorine atoms from a naturally occurring sample.",
+        "common_errors": ["Simply averaging 35 and 37 to get 36 instead of using the weighted calculation", "Not explaining why the RAM is an average rather than the mass of any individual atom"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C002",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that elements are arranged in the periodic table and that elements in the same group have similar properties, but cannot explain why using electronic configuration.",
+        "example_task": "Why do sodium and potassium react in similar ways?",
+        "example_response": "They are both in group 1 of the periodic table, which means they both have one electron in their outer shell. When they react, they both lose this one outer electron to form a +1 ion.",
+        "common_errors": ["Saying they react similarly 'because they are in the same group' without explaining the electronic basis", "Writing electronic configurations with too many electrons in inner shells"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can write electronic configurations for elements 1-20, explain group and period trends, and predict properties of unfamiliar elements from their position in the periodic table.",
+        "example_task": "Write the electronic configuration of calcium (atomic number 20) and predict whether it is a metal or non-metal, and how reactive it is compared to magnesium.",
+        "example_response": "Calcium: 2,8,8,2. It is a metal (group 2, left side of periodic table). It is more reactive than magnesium because calcium has more electron shells, so the outer electrons are further from the nucleus and more easily lost (less nuclear attraction, more shielding from inner electrons).",
+        "common_errors": ["Writing the configuration as 2,8,10 instead of 2,8,8,2", "Confusing the trend for metals (reactivity increases down the group) with halogens (reactivity decreases down the group)"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Explains reactivity trends for groups 1, 7 and 0 in terms of atomic structure, predicts properties of elements not studied, and links electronic configuration to bonding behaviour.",
+        "example_task": "Explain why fluorine is more reactive than iodine, even though both are in group 7.",
+        "example_response": "Both fluorine and iodine need to gain one electron to achieve a full outer shell. Fluorine has fewer electron shells (2,7), so the outer shell is close to the nucleus and there is little shielding from inner electrons. The incoming electron is strongly attracted to the nucleus, so fluorine gains an electron easily — it is very reactive. Iodine has many more electron shells (2,8,18,18,7), so the outer shell is far from the nucleus with significant shielding. The nuclear attraction on an incoming electron is weaker, so iodine gains an electron less easily and is less reactive.",
+        "common_errors": ["Using the group 1 reactivity argument (easier to lose electrons) for group 7 (which gains electrons)", "Not mentioning shielding by inner electron shells as a factor reducing nuclear attraction"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Analyses periodic trends quantitatively using data on ionisation energies and electronegativity, evaluates the limitations of the simple shell model, and explains transition metal properties.",
+        "example_task": "First ionisation energies generally increase across a period but decrease down a group. Explain both trends using atomic structure.",
+        "example_response": "Across a period (e.g., Li to Ne): protons increase but electrons are added to the same shell. Nuclear charge increases while shielding remains approximately constant, so electrons are held more tightly and more energy is needed to remove one (higher ionisation energy). Down a group (e.g., Li to Cs): although nuclear charge increases, electrons are added to new shells further from the nucleus. The increased distance and increased shielding from additional inner shells outweigh the increased nuclear charge, so the outermost electron is held less tightly and less energy is needed to remove it (lower ionisation energy). Anomalies exist (e.g., the drop from N to O) due to electron pairing within sub-shells, which the simple 2,8,8 model cannot explain — this is a limitation.",
+        "common_errors": ["Explaining the trend across a period but not down a group, or vice versa", "Not acknowledging that the simple shell model has limitations for explaining anomalies"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C003",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that ionic compounds are formed from metals and non-metals and involve charged particles, but cannot draw dot-and-cross diagrams or explain why ionic compounds have high melting points.",
+        "example_task": "What happens to electrons when sodium reacts with chlorine to form sodium chloride?",
+        "example_response": "Sodium loses one electron to become Na+ (a positive ion). Chlorine gains that electron to become Cl- (a negative ion). The oppositely charged ions are attracted to each other by electrostatic forces, forming sodium chloride.",
+        "common_errors": ["Saying sodium and chlorine 'share' electrons (that would be covalent bonding)", "Drawing dot-and-cross diagrams without showing the full electron configuration of each ion"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can draw dot-and-cross diagrams for simple ionic compounds and explain their high melting points in terms of strong electrostatic attractions, but struggles with properties of compounds with higher-charged ions.",
+        "example_task": "Draw a dot-and-cross diagram for the formation of magnesium oxide (MgO) and explain why it has a very high melting point.",
+        "example_response": "Magnesium (2,8,2) loses 2 electrons → Mg²⁺ (2,8). Oxygen (2,6) gains 2 electrons → O²⁻ (2,8). MgO has a very high melting point (2852°C) because the Mg²⁺ and O²⁻ ions both have a charge of 2 (compared to 1 for NaCl). The electrostatic attraction between ions is proportional to the product of the charges, so the forces holding MgO together are much stronger than in NaCl.",
+        "common_errors": ["Drawing the dot-and-cross diagram showing only the outer electrons rather than the complete electron arrangement of the ions", "Not explaining that higher charges lead to stronger electrostatic attraction"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Explains all physical properties of ionic compounds (melting point, conductivity, solubility) in terms of ionic bonding and lattice structure, and can predict properties of unfamiliar ionic compounds.",
+        "example_task": "Explain why sodium chloride conducts electricity when dissolved in water but not when solid.",
+        "example_response": "In solid NaCl, the Na⁺ and Cl⁻ ions are held in fixed positions in a regular lattice by strong electrostatic forces. They cannot move, so they cannot carry charge — the solid does not conduct. When dissolved in water, the lattice breaks apart and the ions become free to move throughout the solution. These mobile ions can carry charge to the electrodes, so the solution conducts electricity. The same principle explains why molten NaCl conducts: the ions are free to move in the liquid state.",
+        "common_errors": ["Saying 'the electrons can move' in dissolved NaCl — it is the ions, not electrons, that carry charge in ionic solutions", "Not explaining that conductivity requires charged particles that are free to move"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Compares the properties of ionic compounds with different lattice structures, evaluates the limitations of the ionic model, and applies knowledge to predict behaviour in novel contexts.",
+        "example_task": "Sodium chloride dissolves readily in water but is insoluble in hexane. Calcium carbonate is insoluble in water. Explain these observations in terms of bonding and intermolecular forces.",
+        "example_response": "NaCl dissolves in water because water is a polar solvent. The slightly negative oxygen atoms in water molecules are attracted to Na⁺ ions, and the slightly positive hydrogen atoms are attracted to Cl⁻ ions, forming hydration shells that stabilise the ions in solution. The energy released by hydration compensates for the energy needed to break the ionic lattice. Hexane is non-polar, so it cannot form strong interactions with ions — the hydration energy is insufficient to overcome the lattice energy. CaCO3 is insoluble in water because the Ca²⁺ and CO3²⁻ ions have higher charges, creating a stronger lattice. The lattice energy exceeds the hydration energy, so the ions remain in the lattice rather than dissolving. This shows that solubility depends on the balance between lattice energy and hydration energy.",
+        "common_errors": ["Saying NaCl dissolves 'because it is ionic' without explaining the role of water's polarity", "Not using the energy balance argument (lattice energy vs hydration energy) to explain why some ionic compounds are insoluble"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C004",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that covalent bonding involves sharing electrons and can name some simple covalent molecules, but confuses weak intermolecular forces with strong covalent bonds when explaining properties.",
+        "example_task": "Why does water (H₂O) have a low boiling point compared to sodium chloride?",
+        "example_response": "Water is a simple molecular substance. It has strong covalent bonds within the molecules but weak intermolecular forces between the molecules. Only the weak intermolecular forces need to be broken to boil water, which requires relatively little energy. NaCl has strong ionic bonds throughout its giant lattice, requiring much more energy to separate the ions.",
+        "common_errors": ["Saying 'water has weak bonds' rather than correctly distinguishing between strong intramolecular bonds and weak intermolecular forces", "Thinking the covalent bonds break when water boils"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can draw dot-and-cross diagrams for common molecules, compare simple molecular and giant covalent structures, and explain diamond vs graphite properties.",
+        "example_task": "Explain why diamond is very hard but graphite is soft and slippery, even though both are pure carbon.",
+        "example_response": "In diamond, each carbon atom is covalently bonded to four others in a rigid tetrahedral arrangement, forming a giant covalent structure. The strong covalent bonds extend in all directions, making diamond extremely hard. In graphite, each carbon bonds to three others in flat hexagonal layers. The layers are held together only by weak intermolecular forces, so they can slide over each other easily, making graphite soft and slippery.",
+        "common_errors": ["Not mentioning that graphite has delocalised electrons between layers, which explains its electrical conductivity", "Saying diamond is hard because of 'strong bonds' without specifying the three-dimensional network structure"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Explains the properties of all four structure types (simple molecular, giant covalent, ionic, metallic) in terms of bonding and structure, and can predict properties of unfamiliar substances.",
+        "example_task": "Silicon dioxide (SiO₂) has a melting point of 1,713°C but carbon dioxide (CO₂) sublimes at -78°C. Both contain non-metal elements bonded covalently. Explain this enormous difference.",
+        "example_response": "CO₂ consists of simple molecules (O=C=O) held together by weak intermolecular forces. Only these weak forces need to be overcome to change state, requiring little energy. SiO₂ has a giant covalent structure where each silicon atom is bonded to four oxygen atoms in a continuous three-dimensional network (similar to diamond). To melt SiO₂, many strong covalent bonds must be broken, requiring enormous amounts of energy. The key difference is structure type, not bond type: both have covalent bonds, but CO₂ has discrete molecules while SiO₂ has a giant covalent lattice.",
+        "common_errors": ["Assuming that because both contain covalent bonds, they should have similar properties", "Not identifying the structure type as the determining factor for physical properties"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Analyses the relationship between molecular shape, polarity and intermolecular forces, evaluates the properties of nanomaterials, and applies bonding models to novel materials.",
+        "example_task": "Graphene is a single layer of graphite. Explain its unique properties (extreme strength, electrical conductivity, flexibility) in terms of its bonding and structure.",
+        "example_response": "Graphene is a single-atom-thick sheet of carbon atoms arranged in a hexagonal lattice. Each carbon bonds to three others with strong covalent bonds, leaving one electron per atom delocalised across the entire sheet. Its extreme strength comes from the continuous network of strong covalent bonds — there are no weak points because every bond is equivalent. Its electrical conductivity comes from the delocalised electrons, which can move freely across the sheet (similar to metallic conductivity but in two dimensions). Its flexibility comes from being only one atom thick: the sheet can bend without breaking covalent bonds because the deformation is distributed across a large area. These properties make graphene useful for flexible electronics, composite materials and energy storage. However, large-scale production of defect-free graphene remains challenging, which limits current applications.",
+        "common_errors": ["Describing graphene's properties without linking each property to a specific structural feature", "Not explaining why graphene conducts electricity (delocalised electrons from the fourth bonding electron on each carbon)"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C005",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that chemical equations must be balanced and that mass is conserved, but struggles with mole calculations and confuses mass with amount of substance.",
+        "example_task": "Calculate the relative formula mass (Mr) of calcium carbonate, CaCO₃. (Ca=40, C=12, O=16)",
+        "example_response": "Mr = 40 + 12 + (16 × 3) = 40 + 12 + 48 = 100.",
+        "common_errors": ["Forgetting to multiply the mass of oxygen by 3", "Adding atomic numbers instead of atomic masses"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can calculate Mr, convert between mass and moles using moles = mass/Mr, and use molar ratios from balanced equations, but makes errors in multi-step calculations.",
+        "example_task": "Calculate the mass of carbon dioxide produced when 10g of calcium carbonate reacts with excess hydrochloric acid. CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. (Ca=40, C=12, O=16, H=1, Cl=35.5)",
+        "example_response": "Mr of CaCO₃ = 100. Moles of CaCO₃ = 10/100 = 0.1 mol. From the equation, 1 mol CaCO₃ produces 1 mol CO₂. So moles of CO₂ = 0.1 mol. Mr of CO₂ = 12 + (16×2) = 44. Mass of CO₂ = 0.1 × 44 = 4.4g.",
+        "common_errors": ["Using the wrong molar ratio from the balanced equation", "Dividing by Mr when they should multiply (or vice versa) in the final step"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Performs multi-step stoichiometry calculations confidently, including limiting reagent problems and concentration calculations, and can explain the significance of conservation of mass.",
+        "example_task": "25.0 cm³ of 0.100 mol/dm³ sodium hydroxide exactly neutralises 20.0 cm³ of sulfuric acid. Calculate the concentration of the sulfuric acid. 2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O.",
+        "example_response": "Moles of NaOH = concentration × volume (in dm³) = 0.100 × (25.0/1000) = 0.00250 mol. From the equation: 2 mol NaOH reacts with 1 mol H₂SO₄. So moles of H₂SO₄ = 0.00250/2 = 0.00125 mol. Concentration of H₂SO₄ = moles/volume = 0.00125/(20.0/1000) = 0.00125/0.0200 = 0.0625 mol/dm³.",
+        "common_errors": ["Forgetting to convert cm³ to dm³ (divide by 1000)", "Using a 1:1 ratio instead of the correct 2:1 ratio from the balanced equation"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Applies stoichiometry to complex industrial and analytical contexts, evaluates sources of error in quantitative experiments, and uses the ideal gas equation for gas volume calculations.",
+        "example_task": "In a titration, a student obtains concordant results of 24.8, 25.0 and 24.9 cm³. The true value is 25.2 cm³. Explain the difference between precision and accuracy using these results, and suggest a source of systematic error.",
+        "example_response": "The results are precise (close together: range of only 0.2 cm³) but not accurate (the mean of 24.9 cm³ is consistently below the true value of 25.2 cm³). Precision refers to the reproducibility of measurements; accuracy refers to how close measurements are to the true value. The consistent underestimation suggests a systematic error rather than random error. Possible sources: the student may have been reading the burette at the top of the meniscus rather than the bottom (parallax error reading consistently too low), or the indicator endpoint may occur slightly before the true equivalence point. These systematic errors shift all readings in the same direction, producing precise but inaccurate results.",
+        "common_errors": ["Confusing precision with accuracy — precise results can be inaccurate if there is systematic error", "Not distinguishing between systematic errors (consistent bias) and random errors (scatter around the true value)"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C006",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that some reactions produce more product than expected and some less, but confuses percentage yield with atom economy and cannot perform the calculations.",
+        "example_task": "What is percentage yield? Why is it never exactly 100% in practice?",
+        "example_response": "Percentage yield = (actual yield / theoretical yield) × 100. It is never 100% because: some product is lost during separation and purification, the reaction may not go to completion, or side reactions may produce unwanted by-products.",
+        "common_errors": ["Confusing percentage yield (practical outcome) with atom economy (property of the equation)", "Saying yield is low because 'some chemicals evaporate' without specifying which and why"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can calculate both percentage yield and atom economy, and understands that high atom economy is desirable for sustainable chemistry, but struggles to apply this to industrial contexts.",
+        "example_task": "In the reaction CaCO₃ → CaO + CO₂, calculate the atom economy for CaO production. (Mr: CaCO₃=100, CaO=56, CO₂=44)",
+        "example_response": "Atom economy = (Mr of desired product / sum of Mr of all products) × 100 = (56 / (56+44)) × 100 = (56/100) × 100 = 56%. This means 44% of the reactant mass becomes waste CO₂.",
+        "common_errors": ["Dividing by the Mr of reactants rather than the sum of Mr of all products", "Confusing atom economy (a property of the equation) with yield (a property of how well the reaction was carried out)"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Applies atom economy and yield calculations to evaluate industrial processes, explains why high atom economy is important for green chemistry, and compares alternative reaction pathways.",
+        "example_task": "Ethanol can be made by fermentation (C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂) or by hydration of ethene (C₂H₄ + H₂O → C₂H₅OH). Compare the atom economy of each process.",
+        "example_response": "Fermentation: atom economy = (2×46) / (2×46 + 2×44) × 100 = 92/180 × 100 = 51.1%. Hydration: atom economy = 46 / 46 × 100 = 100% (the only product is ethanol). Hydration has a much higher atom economy because there are no by-products. However, atom economy alone does not determine which process is better: fermentation uses renewable glucose from crops and operates at low temperatures, while hydration requires ethene from crude oil (non-renewable) and high temperatures and pressures, using more energy.",
+        "common_errors": ["Concluding that the higher atom economy process is always better without considering other factors", "Forgetting that atom economy refers to the stoichiometric equation, not the practical yield"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Evaluates industrial chemical processes holistically using atom economy, yield, energy costs, raw material sustainability and waste management, and applies green chemistry principles.",
+        "example_task": "The pharmaceutical industry has historically had very low atom economy (often <10%). Explain why this is a problem and describe two green chemistry approaches that address it.",
+        "example_response": "Low atom economy means >90% of raw materials become waste, creating disposal costs and environmental contamination. Pharmaceutical waste is often hazardous (solvents, heavy metal catalysts). Two green chemistry approaches: 1) Catalytic processes instead of stoichiometric reagents: catalysts are not consumed, so they do not appear in the waste stream. Using enzymes or transition metal catalysts can replace large quantities of stoichiometric reagents, dramatically improving atom economy. 2) Cascade reactions (one-pot synthesis): combining multiple reaction steps into a single sequence without isolating intermediates eliminates purification losses between steps and reduces solvent waste. For example, the redesign of the synthesis of sertraline (an antidepressant) by Pfizer increased atom economy from 20% to 78%, eliminated 10 tonnes of waste per tonne of product, and won a Presidential Green Chemistry Challenge Award.",
+        "common_errors": ["Discussing green chemistry in abstract terms without specific examples or quantitative improvement data", "Not connecting atom economy to the broader economic and environmental impacts of waste"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C007",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can list some metals in order of reactivity and knows that more reactive metals react more vigorously with acid, but cannot explain reactivity in terms of electron transfer.",
+        "example_task": "Zinc is placed in copper sulfate solution and the solution changes from blue to colourless. Explain what has happened.",
+        "example_response": "Zinc is more reactive than copper. Zinc displaces copper from the copper sulfate solution. Zinc atoms lose electrons and form zinc ions (Zn²⁺) in solution. Copper ions (Cu²⁺) gain these electrons and form copper metal, which deposits on the zinc. The blue colour disappears because Cu²⁺ ions are removed from solution.",
+        "common_errors": ["Describing the observation without explaining it in terms of electron transfer", "Not identifying which species is oxidised and which is reduced"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can use the reactivity series to predict displacement reactions, define oxidation and reduction using OIL RIG, and write word equations for metal-acid reactions.",
+        "example_task": "Predict whether iron will displace silver from silver nitrate solution. Write a word equation and identify the oxidised and reduced species.",
+        "example_response": "Yes, iron will displace silver because iron is more reactive (higher in the reactivity series). Iron + silver nitrate → iron nitrate + silver. Iron is oxidised (loses electrons: Fe → Fe²⁺ + 2e⁻). Silver is reduced (gains electrons: Ag⁺ + e⁻ → Ag).",
+        "common_errors": ["Mixing up OIL RIG: oxidation is loss of electrons, reduction is gain of electrons", "Predicting a displacement reaction when the metal is less reactive than the ion in solution"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Writes balanced ionic and half equations for displacement reactions, explains metal extraction methods using reactivity, and applies redox concepts to electrolysis.",
+        "example_task": "Write the ionic equation and half equations for the reaction between magnesium and copper sulfate solution.",
+        "example_response": "Ionic equation: Mg(s) + Cu²⁺(aq) → Mg²⁺(aq) + Cu(s). Oxidation half equation: Mg → Mg²⁺ + 2e⁻. Reduction half equation: Cu²⁺ + 2e⁻ → Cu. Magnesium is the reducing agent (it causes reduction of Cu²⁺ by donating electrons). Copper ions are the oxidising agent.",
+        "common_errors": ["Including spectator ions in the ionic equation", "Not balancing the number of electrons in the half equations"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Applies redox principles to complex reactions including disproportionation, evaluates the economic and environmental factors in metal extraction, and analyses unfamiliar reactions using oxidation state changes.",
+        "example_task": "Aluminium is extracted by electrolysis rather than reduction with carbon, despite carbon being much cheaper. Explain why, and evaluate the environmental implications.",
+        "example_response": "Aluminium is above carbon in the reactivity series, so carbon cannot reduce aluminium oxide (Al₂O₃ → 2Al + 1.5O₂ requires more energy than carbon can provide). Electrolysis uses electrical energy to force the decomposition: at the cathode, Al³⁺ + 3e⁻ → Al; at the anode, 2O²⁻ → O₂ + 4e⁻. The Hall-Héroult process dissolves Al₂O₃ in molten cryolite to lower the melting point from 2072°C to ~950°C, reducing energy costs. Environmental implications: electrolysis consumes enormous amounts of electricity (~15 kWh per kg of Al), so the carbon footprint depends on the electricity source. Smelters powered by hydroelectricity (e.g., in Iceland) have much lower emissions than those powered by coal. Recycling aluminium requires only 5% of the energy of primary production, making aluminium recycling one of the most effective environmental interventions.",
+        "common_errors": ["Saying aluminium cannot be reduced by carbon without explaining why (its position in the reactivity series)", "Not mentioning the role of cryolite in reducing the operating temperature and energy costs"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C008",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that electrolysis uses electricity to break down compounds and that it involves electrodes, but confuses which ions go to which electrode and what happens there.",
+        "example_task": "In the electrolysis of molten lead bromide, what forms at each electrode?",
+        "example_response": "At the cathode (negative electrode): lead metal forms (Pb²⁺ ions gain electrons: Pb²⁺ + 2e⁻ → Pb). At the anode (positive electrode): bromine gas forms (Br⁻ ions lose electrons: 2Br⁻ → Br₂ + 2e⁻).",
+        "common_errors": ["Confusing cathode (negative, reduction, cations) with anode (positive, oxidation, anions)", "Forgetting that the metal always forms at the cathode"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can predict the products of electrolysis of molten compounds and write half equations, but struggles with aqueous solutions where water provides competing ions.",
+        "example_task": "Predict the products of electrolysis of molten sodium chloride and write the half equations.",
+        "example_response": "At the cathode: sodium metal (Na⁺ + e⁻ → Na). At the anode: chlorine gas (2Cl⁻ → Cl₂ + 2e⁻). In the molten state, Na⁺ and Cl⁻ are the only ions present, so the prediction is straightforward.",
+        "common_errors": ["Predicting products for molten compounds correctly but then applying the same rules to aqueous solutions without considering H⁺ and OH⁻ from water", "Not balancing electrons in the half equations"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Predicts products of electrolysis of aqueous solutions using reactivity and concentration rules, writes half equations for all products, and explains the practical applications of electrolysis.",
+        "example_task": "Predict the products of electrolysis of concentrated sodium chloride solution (brine) and dilute sodium chloride solution. Explain the difference.",
+        "example_response": "Concentrated NaCl solution: cathode = hydrogen gas (H⁺ + e⁻ → ½H₂, because Na is too reactive to be discharged); anode = chlorine gas (2Cl⁻ → Cl₂ + 2e⁻, because Cl⁻ ions are in high concentration). Dilute NaCl solution: cathode = hydrogen (same reason); anode = oxygen gas (4OH⁻ → 2H₂O + O₂ + 4e⁻, because at low Cl⁻ concentration, OH⁻ ions from water are preferentially discharged). The concentration rule applies at the anode: when halide ions are concentrated, they are discharged; when dilute, OH⁻ is discharged instead.",
+        "common_errors": ["Not applying the concentration rule at the anode — at low concentration, OH⁻ from water is discharged instead of the halide", "Forgetting that at the cathode, hydrogen is produced instead of the metal if the metal is more reactive than hydrogen"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Applies electrolysis quantitatively (Faraday's laws), evaluates industrial electrolysis processes, and analyses the economic and environmental trade-offs of electrochemical methods.",
+        "example_task": "The chlor-alkali industry electrolyses brine to produce chlorine, hydrogen and sodium hydroxide. Explain why this process is economically important and evaluate its environmental impact.",
+        "example_response": "At the anode: 2Cl⁻ → Cl₂ + 2e⁻ (chlorine, used in water purification, PVC production, and bleach). At the cathode: 2H₂O + 2e⁻ → H₂ + 2OH⁻ (hydrogen for fuel and ammonia production; NaOH remains in solution, used in soap, paper and chemical manufacturing). All three products are industrially valuable, making the process highly efficient economically. Environmental concerns: chlorine is toxic if released; historically, mercury cell technology contaminated water bodies (Minamata disease); modern membrane cell technology has largely eliminated this risk. The process is energy-intensive, so its carbon footprint depends on the electricity source. The products themselves pose environmental risks if mishandled (chlorine gas, caustic soda burns), requiring strict regulatory compliance.",
+        "common_errors": ["Describing the products without explaining their industrial applications and economic value", "Not mentioning the evolution from mercury cell to membrane cell technology as an environmental improvement"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C009",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can give examples of exothermic and endothermic reactions and knows that exothermic reactions release heat, but confuses bond breaking (endothermic) with bond forming (exothermic).",
+        "example_task": "Is combustion exothermic or endothermic? How do you know?",
+        "example_response": "Combustion is exothermic. It releases energy to the surroundings as heat and light. You can tell because the temperature of the surroundings increases.",
+        "common_errors": ["Saying 'breaking bonds releases energy' — breaking bonds always requires energy", "Confusing exothermic (energy released, temperature increases) with endothermic (energy absorbed, temperature decreases)"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can draw energy level diagrams for exothermic and endothermic reactions, including activation energy, and understands that overall energy change depends on bond breaking versus bond forming.",
+        "example_task": "Draw an energy level diagram for an exothermic reaction and label: reactants, products, activation energy, and overall energy change.",
+        "example_response": "The diagram shows reactants at a higher energy level than products. An energy 'hump' between them represents the activation energy. The downward arrow from reactants to products represents the overall energy released (negative enthalpy change). The energy released to the surroundings equals the difference between the energy levels of reactants and products.",
+        "common_errors": ["Drawing the products above the reactants for an exothermic reaction (products should be lower)", "Forgetting to include the activation energy hump — even exothermic reactions need energy input to start"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Calculates overall energy changes using bond energy data, designs and interprets calorimetry experiments, and explains why catalysts lower activation energy but do not change the overall energy change.",
+        "example_task": "Calculate the overall energy change for the combustion of methane: CH₄ + 2O₂ → CO₂ + 2H₂O. Bond energies: C-H = 413 kJ/mol, O=O = 498 kJ/mol, C=O = 805 kJ/mol, O-H = 464 kJ/mol.",
+        "example_response": "Bonds broken: 4 × C-H + 2 × O=O = 4(413) + 2(498) = 1652 + 996 = 2648 kJ. Bonds formed: 2 × C=O + 4 × O-H = 2(805) + 4(464) = 1610 + 1856 = 3466 kJ. Overall energy change = energy in (broken) - energy out (formed) = 2648 - 3466 = -818 kJ/mol. The negative value confirms the reaction is exothermic — more energy is released forming new bonds than is required to break the old ones.",
+        "common_errors": ["Subtracting bonds broken from bonds formed instead of the correct way round", "Counting the wrong number of bonds (e.g., forgetting there are 4 C-H bonds in CH₄ and 4 O-H bonds in 2H₂O)"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Evaluates the accuracy and limitations of bond energy calculations, applies energy change concepts to real-world contexts, and explains Hess's law qualitatively.",
+        "example_task": "Bond energy calculations often give approximate values that differ from experimentally measured enthalpy changes. Explain why.",
+        "example_response": "Bond energy values used in GCSE calculations are average bond energies — the mean energy required to break a particular type of bond across many different molecules. In reality, the energy of a C-H bond varies depending on the molecular environment: the C-H bond in methane (CH₄) has a slightly different energy from the C-H bond in ethanol (C₂H₅OH) because the surrounding atoms influence electron distribution. Using average values introduces systematic error. Additionally, bond energy calculations assume that all bonds are either completely broken or completely formed, which is a simplification of the transition state. Experimental calorimetry measures the actual enthalpy change for a specific reaction under specific conditions, so it gives more accurate values. However, bond energy calculations are useful for estimating energy changes when experimental data is unavailable.",
+        "common_errors": ["Not recognising that bond energies are averages and therefore approximate", "Assuming that the calculated value should exactly match the experimental value"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C010",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that reactions go faster when heated or when using smaller pieces, but cannot explain why using collision theory.",
+        "example_task": "Why does increasing the temperature increase the rate of a chemical reaction?",
+        "example_response": "Increasing temperature gives the particles more kinetic energy. They move faster, so they collide more frequently AND with more energy. More collisions exceed the activation energy, so more collisions are successful and the reaction is faster.",
+        "common_errors": ["Only mentioning increased collision frequency without mentioning increased collision energy", "Saying particles 'collide harder' without linking this to activation energy"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can use collision theory to explain the effect of all five factors (concentration, temperature, surface area, pressure, catalyst) on reaction rate, and can calculate mean rate from experimental data.",
+        "example_task": "Calculate the mean rate of reaction if 60 cm³ of gas is collected in 120 seconds.",
+        "example_response": "Mean rate = volume of gas / time = 60 / 120 = 0.5 cm³/s.",
+        "common_errors": ["Dividing time by volume instead of volume by time", "Not including correct units in the answer"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Interprets rate curves from experimental data, calculates rate at specific points from tangent gradients, and designs controlled experiments to investigate rate factors.",
+        "example_task": "A gas collection curve starts steep and then levels off. What does the gradient at any point represent? Why does the curve level off?",
+        "example_response": "The gradient at any point represents the rate of reaction at that instant. The initial steep gradient indicates a fast rate because reactant concentrations are highest. As reactants are consumed, their concentration decreases, so collisions become less frequent and the rate decreases (the gradient becomes less steep). The curve levels off when one reactant is completely used up — the reaction has finished and no more gas is produced.",
+        "common_errors": ["Saying the reaction 'slows down because it runs out of energy' rather than correctly explaining that reactant concentration decreases", "Not recognising that the final flat section means the reaction is complete, not just slow"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Analyses rate data quantitatively, evaluates the effectiveness of different catalysts, and connects collision theory to industrial process optimisation.",
+        "example_task": "In the Haber process (N₂ + 3H₂ ⇌ 2NH₃), explain why an iron catalyst is used even though it does not change the equilibrium position.",
+        "example_response": "The iron catalyst lowers the activation energy for both the forward and reverse reactions equally, so it does not change the equilibrium position or the yield of ammonia. Its value is in increasing the rate at which equilibrium is reached. Without a catalyst, the reaction would be so slow at the operating temperature (450°C) that the plant would be economically unviable. The catalyst allows the process to operate at a lower temperature than would otherwise be needed to achieve an acceptable rate, which has the added benefit of favouring the forward reaction (exothermic, so lower temperature shifts equilibrium to the right). This illustrates the industrial compromise: the catalyst enables a practical rate at a temperature that gives a reasonable yield (~15%), which is economically optimal even though it is not the thermodynamic optimum.",
+        "common_errors": ["Saying the catalyst increases the yield of ammonia (it does not — it only increases the rate)", "Not connecting the catalyst's role to the economic viability of the industrial process"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C011",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that some reactions can go backwards and that the Haber process makes ammonia, but cannot explain dynamic equilibrium or predict the effect of changing conditions.",
+        "example_task": "What does the symbol ⇌ mean in a chemical equation?",
+        "example_response": "The ⇌ symbol means the reaction is reversible — the products can react to re-form the reactants. The reaction proceeds in both directions simultaneously.",
+        "common_errors": ["Thinking that ⇌ means the reaction goes forward first and then backward separately", "Confusing reversible reactions with reactions that can be repeated"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can define dynamic equilibrium as a state where the forward and reverse reactions occur at equal rates, and can state Le Chatelier's principle, but struggles to apply it to specific examples.",
+        "example_task": "In the reaction N₂O₄(g) ⇌ 2NO₂(g), the forward reaction is endothermic. Predict the effect of increasing temperature on the equilibrium position.",
+        "example_response": "Increasing temperature favours the endothermic direction. Since the forward reaction is endothermic, increasing temperature shifts the equilibrium to the right, producing more NO₂. This is because the system opposes the change by absorbing the extra heat energy through the endothermic reaction.",
+        "common_errors": ["Confusing which direction is favoured — endothermic reactions are favoured by increasing temperature", "Saying 'the reaction speeds up' without specifying the effect on equilibrium position"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Applies Le Chatelier's principle to predict the effect of changes in temperature, pressure and concentration on equilibrium position, and evaluates industrial compromises.",
+        "example_task": "In the Haber process: N₂(g) + 3H₂(g) ⇌ 2NH₃(g), the forward reaction is exothermic. Explain why the process uses 450°C and 200 atm even though these are not the conditions that maximise yield.",
+        "example_response": "The forward reaction is exothermic and produces fewer moles of gas (4 → 2). For maximum yield: lower temperature would shift equilibrium right (favouring exothermic direction) and higher pressure would shift equilibrium right (favouring fewer gas molecules). However, 450°C is used because at lower temperatures the rate would be too slow to be economically viable, even with an iron catalyst. 200 atm is used as a compromise: higher pressures would give better yield but are dangerous and expensive (stronger vessels, more energy for compression). The ~15% yield per pass is acceptable because unreacted N₂ and H₂ are recycled back through the reactor.",
+        "common_errors": ["Not explaining the rate-yield trade-off (low temperature gives better yield but slower rate)", "Forgetting to mention that unreacted gases are recycled, which compensates for the low per-pass yield"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Analyses equilibrium shifts quantitatively, evaluates the sustainability of industrial processes, and explains why catalysts do not affect equilibrium position.",
+        "example_task": "A student claims: 'Adding a catalyst shifts the equilibrium to the right and increases yield.' Evaluate this claim.",
+        "example_response": "This claim is incorrect. A catalyst increases the rate of both the forward and reverse reactions equally by providing an alternative reaction pathway with a lower activation energy. Since both rates are increased by the same factor, the ratio of forward to reverse rate at equilibrium remains the same, so the equilibrium position does not change and the yield is not affected. What the catalyst does do is allow equilibrium to be reached more quickly. This is economically valuable (faster production) and can indirectly improve yield by allowing the process to operate at a lower temperature (where the equilibrium position for an exothermic reaction is more favourable) while still maintaining an acceptable rate. So the catalyst does not shift equilibrium, but it enables conditions where the equilibrium position is more favourable.",
+        "common_errors": ["Accepting the claim that catalysts increase yield — this is one of the most common GCSE misconceptions", "Not explaining the indirect benefit: catalysts allow lower operating temperatures, which can shift equilibrium"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C012",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that crude oil is a mixture of hydrocarbons and that it is separated by fractional distillation, but cannot explain why different fractions have different boiling points.",
+        "example_task": "What is a hydrocarbon? Why does crude oil need to be separated before it can be used?",
+        "example_response": "A hydrocarbon is a compound containing only hydrogen and carbon atoms. Crude oil needs to be separated because it is a mixture of many different hydrocarbons with different properties, and each fraction has different uses (e.g., petrol, diesel, kerosene).",
+        "common_errors": ["Including oxygen in the definition of hydrocarbons", "Thinking fractional distillation produces pure compounds rather than mixtures (fractions)"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can explain fractional distillation in terms of boiling points and intermolecular forces, describe the properties and uses of different fractions, and explain why cracking is needed.",
+        "example_task": "Explain why longer-chain hydrocarbons have higher boiling points than shorter-chain ones.",
+        "example_response": "Longer hydrocarbon chains have more electrons and therefore stronger London dispersion forces (intermolecular forces) between molecules. More energy is needed to overcome these stronger forces, so longer chains have higher boiling points. This is why heavy fractions (bitumen, fuel oil) are liquids or solids at room temperature while lighter fractions (petrol, refinery gas) are volatile liquids or gases.",
+        "common_errors": ["Saying longer chains have 'stronger bonds' without specifying that these are intermolecular forces, not covalent bonds", "Confusing properties: longer chains have higher boiling points, higher viscosity and lower flammability"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Explains the combustion products of hydrocarbons and their environmental impacts, writes balanced equations for complete and incomplete combustion, and explains the economic importance of cracking.",
+        "example_task": "Write balanced equations for the complete and incomplete combustion of octane (C₈H₁₈). Explain the environmental problems caused by each.",
+        "example_response": "Complete combustion: 2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O. Environmental problem: CO₂ is a greenhouse gas that contributes to global warming. Incomplete combustion: 2C₈H₁₈ + 17O₂ → 16CO + 18H₂O (or produces soot/carbon if oxygen supply is very limited). Environmental and health problems: CO is a toxic gas that binds to haemoglobin and prevents oxygen transport; soot particles (particulates) cause respiratory disease and reduce air quality.",
+        "common_errors": ["Not balancing the combustion equations correctly, especially for incomplete combustion", "Confusing CO (carbon monoxide, toxic) with CO₂ (carbon dioxide, greenhouse gas)"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Evaluates the environmental and economic implications of fossil fuel dependence, compares alternative fuels, and explains the chemistry of polymer formation from alkene monomers produced by cracking.",
+        "example_task": "Evaluate the case for transitioning from fossil fuels to hydrogen as a transport fuel, considering the chemistry and environmental implications of each.",
+        "example_response": "Hydrogen combustion: 2H₂ + O₂ → 2H₂O. The only product is water — no CO₂, CO, SO₂ or particulates. This makes hydrogen a 'clean' fuel at the point of use. However, the environmental benefit depends entirely on how the hydrogen is produced. 'Grey hydrogen' from steam reforming of methane (CH₄ + H₂O → CO + 3H₂) produces CO₂ and accounts for 95% of current production — its lifecycle emissions are comparable to burning natural gas directly. 'Green hydrogen' from electrolysis of water using renewable electricity is genuinely low-carbon but currently more expensive. Practical challenges include: hydrogen's low volumetric energy density (requires high-pressure storage or cryogenic liquefaction); distribution infrastructure costs; and safety concerns (hydrogen is highly flammable and burns with an invisible flame). Battery electric vehicles are a competing technology that is currently cheaper and has better infrastructure. Hydrogen may be more suited to heavy transport (trucks, ships, trains) where battery weight is prohibitive.",
+        "common_errors": ["Presenting hydrogen as automatically 'green' without considering how it is produced", "Not comparing hydrogen with battery electric vehicles as competing solutions"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C013",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that greenhouse gases trap heat and that this is causing global warming, but confuses the greenhouse effect with the ozone hole and cannot explain the mechanism.",
+        "example_task": "Name two greenhouse gases and explain what the greenhouse effect is.",
+        "example_response": "Carbon dioxide and methane are greenhouse gases. The greenhouse effect is when these gases in the atmosphere absorb infrared radiation emitted by the Earth's surface and re-radiate it in all directions, including back towards Earth, keeping the planet warm enough to support life.",
+        "common_errors": ["Confusing the greenhouse effect (trapping infrared radiation) with the ozone hole (loss of UV protection)", "Thinking the greenhouse effect is entirely harmful — it is a natural phenomenon necessary for life; the problem is the enhanced greenhouse effect"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can explain the greenhouse mechanism, identify human activities that increase greenhouse gas concentrations, and describe some consequences of climate change.",
+        "example_task": "Explain how burning fossil fuels contributes to climate change.",
+        "example_response": "Burning fossil fuels releases CO₂ that was locked in geological formations for millions of years. This increases the atmospheric CO₂ concentration, enhancing the greenhouse effect. More infrared radiation is absorbed and re-radiated back to Earth, raising the average global temperature. Consequences include: rising sea levels (thermal expansion and ice melt), more frequent extreme weather events, and changes in ecosystem distribution.",
+        "common_errors": ["Saying fossil fuels release 'pollution' generically without specifying CO₂ as the greenhouse gas", "Not explaining the mechanism by which CO₂ causes warming (absorption and re-radiation of infrared radiation)"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Evaluates the evidence for human-caused climate change, describes the evolution of Earth's atmosphere, and explains the carbon cycle in relation to atmospheric CO₂ levels.",
+        "example_task": "Describe how the Earth's atmosphere evolved from its early composition to the present day.",
+        "example_response": "The early atmosphere (~4 billion years ago) was mostly CO₂ with some water vapour and nitrogen, produced by volcanic activity. As the Earth cooled, water vapour condensed to form oceans, which absorbed large amounts of CO₂ (forming carbonate sediments and eventually limestone). Around 2.7 billion years ago, photosynthetic cyanobacteria evolved, producing oxygen and consuming CO₂. Over hundreds of millions of years, O₂ levels rose from near zero to the current 21%, while CO₂ fell from a major component to the current 0.04%. The carbon removed from the atmosphere was locked in fossil fuels (coal, oil, gas) and carbonate rocks (limestone). Burning fossil fuels returns this carbon to the atmosphere, reversing millions of years of geological carbon sequestration in a few centuries.",
+        "common_errors": ["Describing the atmospheric evolution without explaining the role of photosynthesis in increasing O₂ and decreasing CO₂", "Not connecting the formation of fossil fuels to the reduction of atmospheric CO₂"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Critically evaluates climate data, analyses the effectiveness of mitigation strategies, and addresses common climate sceptic arguments with scientific evidence.",
+        "example_task": "A climate sceptic argues: 'CO₂ is only 0.04% of the atmosphere, so it cannot possibly have a significant effect on temperature.' Evaluate this claim using scientific evidence.",
+        "example_response": "The claim is incorrect. The effectiveness of CO₂ as a greenhouse gas depends on its molecular properties, not its percentage of the atmosphere. CO₂ molecules absorb infrared radiation at specific wavelengths (primarily 15 µm) that coincide with a significant portion of Earth's outgoing thermal radiation. This absorption is quantifiable using spectroscopy and has been measured since 1859 (Tyndall). Ice core data shows a strong correlation between atmospheric CO₂ concentration and global temperature over 800,000 years. The logarithmic relationship between CO₂ concentration and warming means that even small changes in concentration have measurable effects: the increase from 280 ppm (pre-industrial) to 420 ppm (current) has caused approximately 1.1°C of warming. Furthermore, CO₂ triggers amplifying feedbacks (water vapour feedback, ice-albedo feedback) that multiply its direct warming effect. The scientific consensus (>97% of climate scientists) that human-caused CO₂ emissions are driving global warming is based on multiple independent lines of evidence from physics, chemistry, geology and atmospheric science.",
+        "common_errors": ["Dismissing the sceptic claim without explaining the specific scientific mechanism", "Not mentioning the amplifying feedback mechanisms that multiply CO₂'s direct warming effect"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C014",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Knows that recycling is good for the environment and that some resources are finite, but cannot explain the concept of a life cycle assessment or evaluate sustainability systematically.",
+        "example_task": "What is meant by a 'finite resource'? Give two examples.",
+        "example_response": "A finite resource is one that exists in a limited quantity and will eventually run out because it is not being replaced at the rate it is being used. Examples: crude oil (fossil fuel formed over millions of years) and iron ore (mineral deposits that cannot be renewed).",
+        "common_errors": ["Confusing finite resources (will run out) with renewable resources (can be replenished)", "Saying 'all resources are finite' without distinguishing between practical timeframes"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can describe the four stages of a life cycle assessment, explain why recycling conserves resources, and describe water treatment for potable water.",
+        "example_task": "Describe the four stages of a life cycle assessment for a plastic carrier bag.",
+        "example_response": "1) Raw materials: crude oil extraction and refining to produce ethene monomer. 2) Manufacturing: polymerisation of ethene to polyethene, extrusion into bag form. 3) Use: carrying shopping (typically used once). 4) Disposal: landfill (takes hundreds of years to decompose), incineration (releases CO₂ and toxic gases), or recycling (melted and reformed into new products). The LCA reveals that the single-use nature of carrier bags means most environmental impact comes from manufacturing for minimal use.",
+        "common_errors": ["Missing one of the four stages (raw materials, manufacture, use, disposal)", "Not considering energy use and emissions at each stage"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Compares the LCA of alternative products, evaluates the trade-offs in sustainability decisions, and explains the principles of green chemistry.",
+        "example_task": "Compare the life cycle assessments of a paper bag and a plastic bag. Which is more sustainable?",
+        "example_response": "Paper bag: raw materials from trees (renewable but requires land and water); manufacturing uses more energy and water than plastic; heavier, so greater transport emissions; biodegrades readily but recycling requires de-inking. Plastic bag: raw materials from crude oil (finite); manufacturing uses less energy and water; lighter (lower transport emissions); does not biodegrade but can be recycled if collected separately. Counter-intuitively, a paper bag must be reused at least 3-4 times to have a lower environmental impact than a single-use plastic bag (due to higher manufacturing energy). The most sustainable option is a reusable bag used many times. This illustrates why LCA is essential: intuitive judgements about sustainability are often wrong.",
+        "common_errors": ["Assuming paper is automatically more sustainable than plastic without comparing the full lifecycle", "Not considering the number of uses when comparing bag types"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Critically evaluates the limitations of LCA, analyses circular economy principles, and applies sustainability thinking to novel materials and processes.",
+        "example_task": "Evaluate the claim that bioplastics are more sustainable than conventional plastics. What are the limitations of this comparison?",
+        "example_response": "Bioplastics are derived from renewable biological sources (corn starch, sugarcane) rather than fossil fuels, so they reduce dependence on finite resources and may have lower production emissions if the biomass absorbs CO₂ during growth. However, the sustainability comparison is complex: bioplastic crops compete with food production for land and water; fertiliser and pesticide use has its own environmental impact; many bioplastics are not biodegradable in practical conditions (they require industrial composting at specific temperatures); and mixing bioplastics with conventional plastics in recycling streams contaminates both. The LCA limitation is that it requires assumptions about system boundaries, allocation methods and impact weighting that are inherently subjective. Different LCA methodologies can produce contradictory conclusions about the same comparison. A truly circular approach might focus on reducing plastic use and designing for recyclability rather than simply switching feedstock.",
+        "common_errors": ["Presenting bioplastics as unambiguously better without acknowledging the trade-offs", "Not recognising that LCA methodology choices affect the conclusions"]
+      }
+    ]
+  },
+  {
+    "concept_id": "CH-KS4-C015",
+    "levels": [
+      {
+        "level_number": 1, "label": "emerging",
+        "description": "Can carry out basic chemical tests (e.g., testing a gas with a splint) but does not understand the underlying chemistry or how to approach identification of an unknown systematically.",
+        "example_task": "Describe the test for hydrogen gas and state the positive result.",
+        "example_response": "Hold a lit splint near the mouth of the test tube. If hydrogen is present, it burns with a squeaky pop.",
+        "common_errors": ["Confusing the hydrogen test (squeaky pop with lit splint) with the oxygen test (relights a glowing splint)", "Not specifying that the splint must be lit (not glowing) for the hydrogen test"]
+      },
+      {
+        "level_number": 2, "label": "developing",
+        "description": "Can carry out and interpret flame tests, gas tests and simple chemical tests for ions, and understands that pure substances have fixed melting and boiling points.",
+        "example_task": "You have an unknown white powder. Describe the tests you would carry out to determine whether it contains sodium ions and carbonate ions.",
+        "example_response": "For sodium ions: carry out a flame test by dipping a clean nichrome wire loop in concentrated HCl, then into the powder, and holding it in a Bunsen flame. A persistent yellow-orange flame indicates sodium. For carbonate ions: add dilute hydrochloric acid to the powder. If bubbles are produced, test the gas with limewater — if the limewater turns milky (cloudy), the gas is CO₂, confirming carbonate ions are present.",
+        "common_errors": ["Not cleaning the wire between flame tests, leading to contamination", "Forgetting to test the gas produced with limewater — just seeing bubbles does not confirm carbonate"]
+      },
+      {
+        "level_number": 3, "label": "secure",
+        "description": "Designs systematic identification procedures for unknown substances, calculates and interprets Rf values in chromatography, and explains why each test is specific to the substance it identifies.",
+        "example_task": "A student separates a dye mixture using paper chromatography. Spot A travels 6.2 cm and the solvent front travels 8.0 cm. Calculate the Rf value and explain what it tells us.",
+        "example_response": "Rf = distance moved by spot / distance moved by solvent front = 6.2 / 8.0 = 0.775. The Rf value is characteristic of a particular substance in a given solvent under specific conditions. By comparing this Rf value to reference data, the substance in spot A can be identified. If two spots from different samples have the same Rf value, they are likely the same substance. The Rf value depends on the balance between the substance's solubility in the mobile phase (which carries it up the paper) and its affinity for the stationary phase (which holds it back).",
+        "common_errors": ["Measuring to the edge of the spot rather than the centre", "Dividing the solvent front distance by the spot distance instead of the correct way round"]
+      },
+      {
+        "level_number": 4, "label": "mastery",
+        "description": "Evaluates the limitations of qualitative tests and the advantages of instrumental methods, applies systematic analytical approaches to complex unknowns, and connects analytical chemistry to real-world applications.",
+        "example_task": "Compare the advantages of instrumental analysis methods (such as mass spectrometry or atomic emission spectroscopy) with the traditional chemical tests used at GCSE.",
+        "example_response": "Instrumental methods offer several advantages: 1) Sensitivity — they can detect substances at much lower concentrations (parts per billion) than chemical tests. 2) Speed — automated instruments process hundreds of samples per hour. 3) Accuracy — quantitative results with known precision, not subjective colour judgements. 4) Small sample size — only micrograms may be needed. 5) They can identify unknown substances by matching spectral patterns to databases. Traditional chemical tests have their own advantages: they are inexpensive, require no specialist equipment, and provide immediate results suitable for preliminary identification. In practice, the two approaches are complementary: preliminary chemical tests narrow down possibilities, and instrumental methods provide definitive identification. For example, in forensic science, a presumptive field test might indicate the presence of a drug, but mass spectrometry is required for court-admissible identification.",
+        "common_errors": ["Dismissing traditional tests entirely in favour of instrumental methods without acknowledging their practical value", "Not connecting analytical methods to specific real-world applications"]
+      }
+    ]
+  }
+]

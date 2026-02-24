@@ -1,0 +1,198 @@
+[
+  {
+    "concept_id": "CO-KS34-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands that algorithms are step-by-step instructions for solving a problem, and can trace through a simple algorithm with small inputs, but cannot compare algorithms or explain efficiency.",
+        "example_task": "Here is a list of 5 numbers: [8, 3, 5, 1, 9]. Trace through a bubble sort, showing the list after each pass.",
+        "example_response": "Pass 1: Compare 8,3 → swap → [3,8,5,1,9]. Compare 8,5 → swap → [3,5,8,1,9]. Compare 8,1 → swap → [3,5,1,8,9]. Compare 8,9 → no swap → [3,5,1,8,9]. Pass 2: Compare 3,5 → no swap. Compare 5,1 → swap → [3,1,5,8,9]. Compare 5,8 → no swap. Compare 8,9 → no swap → [3,1,5,8,9]. Pass 3: Compare 3,1 → swap → [1,3,5,8,9]. Remaining comparisons → no swaps. List is now sorted.",
+        "common_errors": [
+          "Not comparing adjacent pairs systematically, skipping some comparisons",
+          "Stopping after one pass and declaring the list sorted when it is not"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can explain how several sorting and searching algorithms work, and recognises that different algorithms solve the same problem with different efficiency, though cannot yet quantify this using Big O notation.",
+        "example_task": "Explain how binary search works and why it is faster than linear search for a sorted list of 1000 items.",
+        "example_response": "Linear search checks each item from the beginning until it finds the target — in the worst case, it checks all 1000 items. Binary search starts in the middle of the sorted list, checks if the target is higher or lower, then eliminates half the remaining items. It repeats this halving process. For 1000 items: first check eliminates 500, second eliminates 250, then 125, 63, 32, 16, 8, 4, 2, 1 — so binary search needs at most about 10 comparisons instead of 1000. Binary search requires the list to be sorted first, which is a precondition that linear search does not need.",
+        "common_errors": [
+          "Forgetting to mention that binary search requires a sorted list as a precondition",
+          "Saying binary search 'splits the list in two' without explaining which half is discarded and why"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Implements sorting and searching algorithms in code, uses Big O notation to describe algorithmic complexity, and selects appropriate algorithms for given problem constraints.",
+        "example_task": "Compare bubble sort and merge sort in terms of their time complexity. For a list of 1 million items, explain which you would choose and why.",
+        "example_response": "Bubble sort has time complexity O(n squared): for each of n items, it may need to make up to n comparisons, giving n times n operations. For 1 million items, this is approximately 1 trillion operations — far too slow for practical use. Merge sort has time complexity O(n log n): it repeatedly divides the list in half (log n divisions) and merges the halves (n operations per merge level). For 1 million items, log base 2 of 1 million is approximately 20, so merge sort needs about 20 million operations — roughly 50,000 times faster than bubble sort. I would choose merge sort because O(n log n) scales far better than O(n squared). However, merge sort uses additional memory (to store the split sublists), so if memory is extremely limited, I might consider in-place algorithms like quicksort.",
+        "common_errors": [
+          "Stating the Big O complexity without explaining what it means in practical terms",
+          "Not mentioning the space complexity trade-off (merge sort uses more memory than bubble sort)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses algorithmic trade-offs in real-world contexts, understands that no single algorithm is optimal for all situations, and evaluates algorithm choice based on input characteristics, constraints and requirements.",
+        "example_task": "A hospital database needs to search patient records in real time during emergencies. The database contains 50 million records. Evaluate the algorithm and data structure choices that would make this possible.",
+        "example_response": "Linear search at O(n) would require checking up to 50 million records — unacceptable for emergency response. Binary search at O(log n) would need about 26 comparisons, which is fast enough, but requires the data to be sorted. For a database that changes frequently (new patients, updated records), maintaining sort order is costly. A better approach is a hash table: using the patient's NHS number as a key, a hash function maps it directly to a memory location in O(1) average time — effectively instant lookup regardless of database size. However, hash tables have weaknesses: they do not support range queries (find all patients aged 30-40) and hash collisions degrade performance. A balanced binary search tree (e.g., B-tree, used in real database indexes) offers O(log n) search with efficient insertion and deletion, and supports range queries. In practice, hospital databases use B-tree indexes on key fields (NHS number, name, date of birth) combined with hash indexes for exact-match lookups. The choice depends on the query type: exact match (hash), range (B-tree), or full-text (inverted index). No single algorithm covers all needs.",
+        "common_errors": [
+          "Recommending a single algorithm without considering the different types of queries the system needs to support",
+          "Not recognising that real-world systems combine multiple algorithms and data structures"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "CO-KS34-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that computers use binary (0s and 1s) and can convert small numbers between binary and decimal, but does not understand why binary is used or how it relates to hardware.",
+        "example_task": "Convert the decimal number 13 to binary. Show your working.",
+        "example_response": "13 divided by 2 = 6 remainder 1. 6 divided by 2 = 3 remainder 0. 3 divided by 2 = 1 remainder 1. 1 divided by 2 = 0 remainder 1. Reading the remainders from bottom to top: 13 in binary is 1101.",
+        "common_errors": [
+          "Reading the remainders from top to bottom instead of bottom to top",
+          "Forgetting to include leading zeros when expressing as a fixed-width byte (e.g., 00001101)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understands Boolean logic operations (AND, OR, NOT), can complete truth tables, and performs binary addition with carries.",
+        "example_task": "Complete the truth table for the expression: A AND (B OR NOT C). Then calculate 0110 + 0011 in binary.",
+        "example_response": "Truth table (A, B, C, NOT C, B OR NOT C, A AND (B OR NOT C)):\n0,0,0,1,1,0 | 0,0,1,0,0,0 | 0,1,0,1,1,0 | 0,1,1,0,1,0 | 1,0,0,1,1,1 | 1,0,1,0,0,0 | 1,1,0,1,1,1 | 1,1,1,0,1,1.\n\nBinary addition: 0110 + 0011. Rightmost column: 0+1=1. Second column: 1+1=10, write 0 carry 1. Third column: 1+0+1(carry)=10, write 0 carry 1. Fourth column: 0+0+1(carry)=1. Result: 1001 (which is 9 in decimal: 6+3=9, correct).",
+        "common_errors": [
+          "Forgetting to carry the 1 in binary addition when the sum exceeds 1",
+          "Confusing AND with OR in the truth table (AND requires both inputs true; OR requires at least one)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Connects Boolean logic to both programming (conditional statements) and hardware (logic gates), understands how different data types are represented in binary, and applies binary arithmetic confidently.",
+        "example_task": "Explain how the colour of a single pixel on screen is stored in binary. A pixel uses 24-bit colour. How many different colours can be represented?",
+        "example_response": "A 24-bit colour pixel uses 8 bits for each of the three colour channels: red, green and blue (RGB). Each channel has 8 bits, giving 2 to the power of 8 = 256 possible intensity levels (0-255) per channel. The total number of different colours is 256 x 256 x 256 = 16,777,216 (approximately 16.7 million). For example, pure red is (11111111, 00000000, 00000000) = (255, 0, 0); white is (11111111, 11111111, 11111111) = (255, 255, 255); black is (00000000, 00000000, 00000000). A 1920x1080 screen has 2,073,600 pixels, each storing 24 bits, so a single uncompressed frame requires approximately 6.2 megabytes of data.",
+        "common_errors": [
+          "Confusing bits and bytes (8 bits per channel, not 8 bytes)",
+          "Not being able to calculate 2 to the power of 24 or explain what it means in practical terms"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Designs logic circuits using multiple gates, understands how binary representation enables all computing operations at the hardware level, and evaluates the limitations and trade-offs of binary systems.",
+        "example_task": "Design a logic circuit using AND, OR and NOT gates that implements a simple security system: the alarm sounds if the door sensor detects 'open' AND the system is armed, OR if the panic button is pressed (regardless of whether the system is armed).",
+        "example_response": "Inputs: D = door sensor (1 = open), A = armed (1 = armed), P = panic button (1 = pressed). Output: S = alarm sounds. Boolean expression: S = (D AND A) OR P. Circuit: Wire D and A into an AND gate (output = D AND A). Wire the AND gate output and P into an OR gate (output = (D AND A) OR P). The OR gate output drives the alarm. Verification: Door open + armed + no panic: (1 AND 1) OR 0 = 1 → alarm sounds (correct). Door closed + armed + no panic: (0 AND 1) OR 0 = 0 → no alarm (correct). Door open + not armed: (1 AND 0) OR 0 = 0 → no alarm (correct — the system is disarmed). Panic pressed (any state): anything OR 1 = 1 → alarm always sounds (correct — panic overrides everything). This demonstrates how complex real-world logic is implemented using simple binary gates — every digital system, from alarms to processors, is built from combinations of these fundamental operations.",
+        "common_errors": [
+          "Using an AND gate instead of OR for the final combination, which would mean the panic button only works when the door is also open",
+          "Not verifying the circuit with all possible input combinations to check correctness"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "CO-KS34-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can write simple programs using variables, sequence and basic selection (if/else), but does not use data structures beyond single variables or organise code into procedures or functions.",
+        "example_task": "Write a program that asks the user for their age and tells them whether they are old enough to vote (18 or over).",
+        "example_response": "age = int(input('Enter your age: '))\nif age >= 18:\n    print('You are old enough to vote.')\nelse:\n    print('You are not old enough to vote yet.')",
+        "common_errors": [
+          "Forgetting to convert the input to an integer, causing a comparison error with a string",
+          "Using a single equals sign (=) for comparison instead of double equals (==) or >= "
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses arrays/lists to store collections of data, writes programs with loops that process data structures, and begins to organise code into procedures or functions for clarity.",
+        "example_task": "Write a program that stores 5 test scores in a list, calculates the average, and prints which scores are above the average.",
+        "example_response": "scores = [72, 85, 63, 91, 78]\ntotal = 0\nfor score in scores:\n    total = total + score\naverage = total / len(scores)\nprint('Average:', average)\nfor score in scores:\n    if score > average:\n        print(score, 'is above average')",
+        "common_errors": [
+          "Calculating the average by dividing by a hardcoded number (5) instead of using len(scores)",
+          "Using a single loop to both calculate the total and compare to the average (the average is not yet known during the first loop)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Chooses appropriate data structures for different problems, writes modular programs using functions with parameters and return values, and debugs programs systematically.",
+        "example_task": "Write a function called 'find_max' that takes a list of numbers as a parameter and returns the largest number, without using the built-in max() function.",
+        "example_response": "def find_max(numbers):\n    if len(numbers) == 0:\n        return None\n    largest = numbers[0]\n    for number in numbers[1:]:\n        if number > largest:\n            largest = number\n    return largest\n\n# Test\nprint(find_max([3, 7, 2, 9, 5]))  # Should print 9\nprint(find_max([-5, -1, -8]))     # Should print -1\nprint(find_max([42]))             # Should print 42\nprint(find_max([]))               # Should print None",
+        "common_errors": [
+          "Initialising 'largest' to 0 instead of the first element, which fails for lists of negative numbers",
+          "Not handling edge cases such as an empty list or a list with one element"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Designs programs using appropriate data structures (stacks, queues, dictionaries), writes well-structured modular code with clear documentation, and analyses the efficiency and robustness of their solutions.",
+        "example_task": "Design a program for a library book-borrowing system. It should track which books are available, allow borrowing and returning, and use appropriate data structures. Justify your data structure choices.",
+        "example_response": "I would use a dictionary where each key is the book's ISBN and the value is another dictionary containing title, author and status (available/borrowed/borrower_name).\n\nlibrary = {}\n\ndef add_book(isbn, title, author):\n    library[isbn] = {'title': title, 'author': author, 'status': 'available', 'borrower': None}\n\ndef borrow_book(isbn, borrower):\n    if isbn not in library:\n        return 'Book not found'\n    if library[isbn]['status'] == 'borrowed':\n        return f'Already borrowed by {library[isbn][\"borrower\"]}'\n    library[isbn]['status'] = 'borrowed'\n    library[isbn]['borrower'] = borrower\n    return f'{library[isbn][\"title\"]} borrowed by {borrower}'\n\ndef return_book(isbn):\n    if isbn not in library or library[isbn]['status'] == 'available':\n        return 'Error: book not currently borrowed'\n    library[isbn]['status'] = 'available'\n    library[isbn]['borrower'] = None\n    return f'{library[isbn][\"title\"]} returned'\n\nJustification: A dictionary provides O(1) average lookup by ISBN — essential for a system that may contain thousands of books. Using a list would require O(n) linear search. The nested dictionary for each book groups related data logically. Functions are modular: each handles one operation with input validation and clear return messages.",
+        "common_errors": [
+          "Using a list instead of a dictionary, requiring linear search to find a specific book",
+          "Not including input validation (what if the ISBN does not exist? what if the book is already borrowed?)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "CO-KS34-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that personal information should be kept private online and recognises obvious online risks (e.g., sharing passwords), but does not understand the broader social or ethical dimensions of computing.",
+        "example_task": "Give two reasons why you should not share your password with friends.",
+        "example_response": "1) If a friend knows your password, they could access your accounts and read private messages, change your settings or post things pretending to be you. 2) Even if your friend is trustworthy, they might accidentally reveal the password to someone else, or their own device could be compromised, exposing your password to hackers.",
+        "common_errors": [
+          "Saying only 'it is dangerous' without explaining the specific risks",
+          "Not recognising that even trusted friends create a chain of vulnerability"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understands key concepts such as data privacy, digital footprint and intellectual property, and can identify ethical issues in straightforward scenarios involving technology.",
+        "example_task": "Explain what a 'digital footprint' is and why it matters for your future.",
+        "example_response": "A digital footprint is the trail of data you leave behind when using the internet: social media posts, comments, photos, search history, website visits, and online purchases. It matters because this data is often permanent and searchable. Employers routinely search candidates' social media before hiring — a post made at age 14 could affect a job application at age 25. Universities, landlords and even potential partners may search your name. Your digital footprint also determines what advertisements and content you are shown, as companies build profiles from your data to target you commercially.",
+        "common_errors": [
+          "Thinking that deleting a post removes it completely, not understanding that data may have been cached, screenshotted or archived",
+          "Not recognising the commercial use of digital footprint data by advertisers"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses the social impact of computing technologies including algorithmic bias, surveillance and automation, using structured ethical frameworks to evaluate benefits and harms to different stakeholders.",
+        "example_task": "An AI system is used to decide which job applicants are invited to interview. Explain how this could be biased and identify who might be harmed.",
+        "example_response": "The AI system is trained on historical hiring data — data about which candidates were previously selected by human recruiters. If those recruiters had biases (conscious or unconscious) — for example, preferring candidates from certain universities, with certain names, or of certain genders — the AI will learn to replicate those biases, encoding them into its algorithms. The system might systematically disadvantage: women (if the company historically hired mainly men); ethnic minorities (if names associated with certain backgrounds were previously filtered out); people with non-traditional career paths (if the training data only includes conventional backgrounds). The harm is significant: qualified candidates are rejected not because they are unsuitable but because the AI has learned to discriminate. The bias is harder to detect than human bias because the algorithm appears objective — people trust 'the computer said no' more than 'the manager said no'. Stakeholders harmed: rejected candidates (denied opportunities), the company (misses diverse talent), and society (systemic inequality is reinforced and automated at scale).",
+        "common_errors": [
+          "Assuming that because the system is automated it must be objective and fair",
+          "Identifying that bias exists without explaining the mechanism by which it enters the system (through biased training data)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates complex ethical dilemmas in computing with nuance, considers multiple perspectives and competing values, proposes governance frameworks, and connects technical decisions to their societal consequences.",
+        "example_task": "Should governments have the ability to access encrypted messages to prevent terrorism? Argue both sides and state your position with justification.",
+        "example_response": "For government access: terrorism, child exploitation and organised crime use encrypted messaging to coordinate harmful activities. If law enforcement cannot access these communications even with a court order, serious crimes may go undetected and lives may be lost. Democratic societies already permit surveillance warrants for phone calls and letters — encrypted digital communication should not be exempt from the rule of law. Against government access: creating a 'backdoor' in encryption that the government can access fundamentally weakens the encryption for everyone. Security researchers have consistently demonstrated that any backdoor intended for government use can be discovered and exploited by criminals and hostile states. The same weakened encryption would compromise the communications of journalists protecting sources, political dissidents in authoritarian regimes, businesses protecting trade secrets, and ordinary citizens' private conversations. Once a backdoor exists, there is no way to guarantee it is used only by authorised parties. My position: strong encryption without backdoors should be maintained. The security of billions of private communications should not be compromised because a small number of criminals use the same technology. Alternative investigative methods (metadata analysis, undercover operations, device seizure with warrants) can address criminal use without weakening the infrastructure that protects everyone. The history of surveillance powers shows consistent mission creep — powers granted for terrorism are routinely expanded to lesser offences.",
+        "common_errors": [
+          "Presenting only one side of the argument without genuinely engaging with the opposing view",
+          "Not understanding the technical reality that a backdoor for governments is also a backdoor for hackers"
+        ]
+      }
+    ]
+  }
+]

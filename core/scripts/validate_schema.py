@@ -1084,8 +1084,8 @@ class SchemaValidator:
         self.add(ValidationResult("DifficultyLevel level_number range", status, total, issues))
 
     def check_difficulty_level_label_values(self):
-        """DifficultyLevel.label must be one of {entry, developing, expected, greater_depth}."""
-        valid_labels = ['entry', 'developing', 'expected', 'greater_depth']
+        """DifficultyLevel.label must be one of the valid primary or secondary label sets."""
+        valid_labels = ['entry', 'developing', 'expected', 'greater_depth', 'emerging', 'secure', 'mastery']
         total = self.scalar("MATCH (dl:DifficultyLevel) RETURN count(dl)") or 0
         if total == 0:
             self.add(ValidationResult("DifficultyLevel label values", "PASS", 0,

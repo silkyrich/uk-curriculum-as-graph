@@ -1,0 +1,345 @@
+[
+  {
+    "concept_id": "DT-KS4-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies basic evaluation criteria such as whether a product works and whether it looks finished. Can state simple likes and dislikes about a product.",
+        "example_task": "Look at a product you have made. State two things that work well and two things you would improve.",
+        "example_response": "It works well because the handle is comfortable to grip and the mechanism opens smoothly. I would improve the surface finish because it is rough in places, and I would make the base wider so it does not tip over.",
+        "common_errors": [
+          "Giving vague opinions ('it's good') without linking to specific functional or aesthetic criteria",
+          "Only evaluating appearance and ignoring whether the product meets its functional purpose"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Evaluates a product against its original design specification point by point, using testing evidence and user feedback to support judgements.",
+        "example_task": "Evaluate your storage solution against the design specification. Use test results and user feedback to justify your assessment.",
+        "example_response": "Specification point 1: 'Must hold at least 2 kg.' Test result: it held 3.5 kg before deformation, so this is met with margin. Specification point 2: 'Must be easy for a child aged 6 to open.' User testing with three children showed two could open it independently, but one struggled with the clasp. This is partially met — the clasp could be replaced with a magnetic closure for easier operation.",
+        "common_errors": [
+          "Evaluating generally without referring back to specific specification points",
+          "Stating a specification is 'met' without providing measurable evidence or test data"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Conducts systematic evaluation using quantitative testing data, user trials, and comparison with existing commercial products. Proposes specific, justified modifications and considers manufacture at scale.",
+        "example_task": "Evaluate your prototype phone stand against its specification, a commercial competitor, and user needs. Propose and justify two modifications for a production version.",
+        "example_response": "My prototype scored 4/5 on stability (tilt test to 20°) versus the commercial product's 5/5 (stable to 35°). User trials showed 8/10 users preferred my aesthetic design but noted the charging cable port was too narrow for some cables. Modification 1: widen the cable port to 15 mm (accommodates 95% of cables based on market survey) — costs minimal extra material. Modification 2: add a weighted rubber base to improve tilt stability — rubber sourcing adds £0.30 per unit but would match the commercial benchmark. Both modifications are viable for injection moulding at scale.",
+        "common_errors": [
+          "Proposing modifications without considering cost, manufacturability, or material implications",
+          "Comparing with commercial products on appearance only rather than on performance metrics"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically evaluates the entire design-make-evaluate cycle, analysing the effectiveness of the design process itself and not just the outcome. Considers user needs beyond the specification, commercial viability, and iterative improvement strategy.",
+        "example_task": "Critically evaluate both your product and your design process. Identify where in the process key decisions were made that affected the outcome, and propose a strategy for the next iteration.",
+        "example_response": "The final product meets 7/8 specification points, but the failure in water resistance traces back to my material selection in week 3 — I chose MDF for machinability over marine plywood for moisture resistance. This was a process failure: I prioritised ease of making over fitness for purpose. User testing revealed an unanticipated need (portability) not captured in my specification, suggesting my initial research phase was too narrow — I surveyed users about home use only. For the next iteration: (1) revise the specification to include portability, (2) replace MDF with HDPE (waterproof, lightweight, injection-mouldable at scale), (3) conduct a broader user needs survey including outdoor use scenarios. This iterative approach aligns with commercial product development, where first prototypes inform specification revision before production.",
+        "common_errors": [
+          "Evaluating only the product outcome without reflecting critically on the design process decisions that led to it",
+          "Treating evaluation as a final step rather than as input to the next design iteration"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS4-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that products have an environmental impact and that materials can sometimes be recycled. Identifies basic stages of a product's life.",
+        "example_task": "List the main stages in the life of a plastic water bottle, from making it to disposing of it.",
+        "example_response": "Raw materials are extracted (crude oil), the plastic is manufactured, the bottle is shaped and filled, it is transported to shops, it is used by the consumer, and then it is disposed of — either recycled, put in landfill, or incinerated.",
+        "common_errors": [
+          "Omitting the raw material extraction or transportation stages",
+          "Assuming all plastic is recycled when in reality a significant proportion goes to landfill"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes life cycle assessment (LCA) as a method for evaluating environmental impact at each stage: raw material extraction, manufacture, use, and disposal. Identifies the environmental impact of each stage.",
+        "example_task": "Carry out a simplified LCA for a cotton tote bag, identifying the environmental impact at each of the four stages.",
+        "example_response": "Extraction: cotton farming uses large quantities of water (10,000 litres per kg) and pesticides. Manufacture: weaving and dyeing use energy and produce chemical waste water. Use: minimal impact during use, but must be reused many times to offset production impact. Disposal: cotton is biodegradable, so landfill impact is lower than plastic, but composting is the lowest-impact option.",
+        "common_errors": [
+          "Assuming 'natural' materials like cotton automatically have lower environmental impact than synthetic alternatives",
+          "Ignoring the use phase — how frequently and how long a product is used significantly affects its total impact"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Compares LCAs for alternative products or materials, uses quantitative data where available, and evaluates trade-offs between environmental, economic, and social factors. Understands the 6 Rs (reduce, reuse, recycle, refuse, rethink, repair).",
+        "example_task": "Compare the life cycle environmental impact of a single-use plastic bag, a reusable cotton tote, and a reusable polypropylene bag. Use quantitative reasoning where possible.",
+        "example_response": "A single-use HDPE bag has low production impact (1.6 kg CO₂e) but is typically used once. A cotton tote has high production impact (~271 kg CO₂e due to water and energy-intensive farming) and must be reused ~130 times to have a lower per-use carbon footprint than HDPE. A polypropylene bag has moderate production impact (~21 kg CO₂e) and needs ~11 reuses to beat HDPE. The cotton bag is best only if used very frequently over many years; the PP bag is the lowest-impact option for most consumers. This shows that 'natural' does not always mean sustainable — the full LCA matters.",
+        "common_errors": [
+          "Concluding that the 'most natural' option is automatically the most sustainable without comparing per-use impact data",
+          "Not considering realistic consumer behaviour — how many times will the bag actually be reused?"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically evaluates the limitations of LCA methodology, analyses circular economy principles, and proposes design strategies that minimise environmental impact across the full product lifecycle including end-of-life.",
+        "example_task": "Evaluate the limitations of LCA as a sustainability tool and explain how 'design for disassembly' principles could improve the sustainability of electronic products.",
+        "example_response": "LCA limitations: boundary setting is subjective (which impacts to include?), data quality varies (industry averages may not reflect specific supply chains), LCAs can be manipulated by choosing favourable system boundaries, and social impacts (worker conditions) are often excluded. Weighting different impact categories (carbon vs. water vs. toxicity) involves value judgements, not just science. Design for disassembly addresses end-of-life: using snap-fits instead of adhesives, labelling material types, using modular construction, and avoiding mixed materials (e.g. metal inserts in plastic). This allows component recovery, material recycling, and repair — extending product life and enabling circular material flows. Fairphone demonstrates this: modular design allows battery and screen replacement, reducing electronic waste. However, design for disassembly can increase manufacturing cost and may compromise structural integrity, requiring careful engineering trade-offs.",
+        "common_errors": [
+          "Treating LCA results as objective facts rather than recognising the methodological choices and value judgements embedded in them",
+          "Proposing 'design for recycling' without considering that recycling itself has environmental costs and material degradation limits"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS4-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Names common materials (wood, metal, plastic, textile) and describes basic properties such as hard, soft, flexible, rigid, waterproof.",
+        "example_task": "Suggest a suitable material for a kitchen chopping board and explain your choice using material properties.",
+        "example_response": "Hardwood such as beech would be suitable because it is hard-wearing, resistant to cuts, food-safe, and has natural antibacterial properties. It is also rigid enough not to flex during use.",
+        "common_errors": [
+          "Choosing a material without linking the choice to specific required properties",
+          "Not considering food safety or hygiene when selecting materials for kitchen products"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Classifies materials by type (hardwood, softwood, ferrous/non-ferrous metal, thermoforming/thermosetting polymer) and selects materials based on multiple properties including mechanical, physical, and working characteristics.",
+        "example_task": "A bicycle frame needs to be lightweight, strong, and corrosion-resistant. Compare aluminium alloy and mild steel for this application.",
+        "example_response": "Aluminium alloy: density ~2,700 kg/m³ (lightweight), good strength-to-weight ratio, naturally corrosion-resistant due to oxide layer. Mild steel: density ~7,850 kg/m³ (nearly three times heavier), higher tensile strength per unit area, but corrodes without protective coating (paint or galvanising). For a bicycle frame, aluminium alloy is more suitable because weight reduction is critical for performance, and it requires less surface treatment. However, mild steel is cheaper and easier to weld, making it suitable for budget frames.",
+        "common_errors": [
+          "Comparing only one property (e.g. strength) without considering the full range of requirements",
+          "Not recognising that strength-to-weight ratio matters more than absolute strength for weight-critical applications"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses material properties quantitatively using data sheets, understands how material structure affects properties (grain structure, polymer chains, alloy composition), and selects materials with justified trade-offs for specific design contexts.",
+        "example_task": "A designer is choosing between acrylic (PMMA) and polycarbonate for safety glasses. Use material property data to justify the selection.",
+        "example_response": "Acrylic: tensile strength 70 MPa, good optical clarity (92% light transmission), rigid, but brittle — shatters on impact. Polycarbonate: tensile strength 55-75 MPa, good optical clarity (88% transmission), but critically has very high impact resistance (250 times greater than glass). For safety glasses, polycarbonate is essential because the primary requirement is impact protection. The slight reduction in optical clarity is acceptable given the massive gain in impact resistance. Acrylic would be suitable for display cases where impact is not a concern and maximum clarity is desired. The difference lies in polymer chain structure: polycarbonate's long, flexible chains absorb impact energy through deformation; acrylic's rigid chains fracture.",
+        "common_errors": [
+          "Selecting materials on a single headline property without checking that other critical requirements are met",
+          "Not linking macroscopic properties (impact resistance) to material microstructure (polymer chain flexibility)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates material selection in the context of full product lifecycle including processing, cost, supply chain, environmental impact, and emerging materials. Analyses how smart and modern materials extend the design palette.",
+        "example_task": "Evaluate the use of carbon fibre reinforced polymer (CFRP) versus aluminium alloy for a high-performance racing bicycle frame. Consider performance, manufacture, cost, repairability, and end-of-life.",
+        "example_response": "Performance: CFRP offers superior stiffness-to-weight ratio (specific modulus ~190 GPa/(g/cm³) vs aluminium's ~26). Manufacture: CFRP requires hand lay-up or autoclave moulding — expensive, labour-intensive, with high tooling costs. Aluminium is extruded and welded — faster, cheaper, and more automated. Cost: a CFRP frame costs 3-10x more than aluminium. Repairability: CFRP damage (delamination) is often invisible and difficult to repair safely; aluminium can be welded. End-of-life: aluminium is infinitely recyclable with established infrastructure. CFRP recycling is technologically immature — most ends in landfill, and recycled carbon fibre has reduced properties. For elite racing, CFRP's performance advantage justifies the cost and environmental trade-offs. For mass-market cycling, aluminium remains more responsible. This illustrates how 'best material' depends on the design context, not just material properties in isolation.",
+        "common_errors": [
+          "Concluding that the highest-performing material is always the best choice without considering manufacture, cost, and sustainability",
+          "Not recognising that CFRP's end-of-life limitations are a significant sustainability concern that affects design decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS4-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Understands that design is a process of developing ideas to solve a problem, and can sketch initial design ideas with basic annotations.",
+        "example_task": "Sketch three different ideas for a phone holder that sits on a desk. Annotate each with materials and one key feature.",
+        "example_response": "Idea 1: L-shaped acrylic stand with a groove for the phone — simple, clear, can see screen. Idea 2: Wooden cradle with adjustable angle — more comfortable viewing but more complex to make. Idea 3: Wire frame holder bent from steel rod — lightweight and modern-looking but may scratch the phone.",
+        "common_errors": [
+          "Drawing only one idea rather than generating a range of alternatives",
+          "Sketching without any annotation about materials, dimensions, or how the design works"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Follows a structured iterative design process: research, specification, ideation, development, making, testing, evaluation. Uses modelling and prototyping to refine ideas before final making.",
+        "example_task": "Describe how you would use modelling to develop your phone holder design before making the final product.",
+        "example_response": "I would first make a card model to test the proportions and viewing angle — card is quick and cheap to work with. I would test it with different phone sizes to check compatibility. Based on feedback, I would modify the dimensions and then make a 3D-printed prototype in PLA to test structural integrity under load. This iterative process — model, test, modify — means the final version in acrylic is more likely to succeed first time, saving material and workshop time.",
+        "common_errors": [
+          "Going straight to final material without modelling, leading to expensive mistakes",
+          "Treating modelling as a one-off activity rather than an iterative cycle of test-modify-retest"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Manages the full design cycle independently, using research to inform the specification, systematic ideation techniques (morphological analysis, SCAMPER), controlled testing against specification, and evidence-based design decisions at each iteration.",
+        "example_task": "Explain how you would use a morphological chart to generate design ideas for a portable reading light, then narrow down to a final concept.",
+        "example_response": "I would create a morphological chart with parameters: power source (battery, USB, solar), light type (LED strip, single LED, panel), housing material (3D-printed PLA, bent aluminium, laser-cut plywood), clip mechanism (spring clip, magnetic, weighted base), and switch type (toggle, touch sensor, twist). By combining one option from each row, I can systematically generate diverse concepts — e.g. solar-powered LED panel in bent aluminium with magnetic mount and touch sensor. I would evaluate each combination against my specification (portability weight < 100g, brightness > 200 lumens, cost < £5 materials) and select the top three for quick card modelling. User feedback on the models would determine the final concept.",
+        "common_errors": [
+          "Using morphological charts to generate combinations without then evaluating them against the specification",
+          "Selecting a final design based on personal preference rather than evidence from testing and user feedback"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically analyses the iterative design process as used in industry, evaluates design methodologies (user-centred design, design thinking, agile), and reflects on how constraints (time, cost, regulation, sustainability) shape the design outcome.",
+        "example_task": "Compare user-centred design with technology-push approaches. Use a specific product example to evaluate which approach leads to better outcomes and why.",
+        "example_response": "User-centred design (UCD) starts with user needs: research (interviews, observation), define (personas, specification), ideate, prototype, test with users, iterate. Technology-push starts with a new capability and finds applications. Example — Dyson vacuum cleaners: the original DC01 was technology-push (cyclone separation applied to vacuum cleaning). However, subsequent models used UCD — testing showed users wanted lighter weight, better manoeuvrability, and easier bin emptying, which drove the shift to ball technology and cordless designs. Neither approach is universally better: technology-push creates breakthrough innovations (no user would have asked for cyclone separation), but UCD ensures the product actually solves real problems and is usable. The most successful products combine both — a novel technology refined through iterative user testing. The design process itself is a design decision that should be matched to the context.",
+        "common_errors": [
+          "Treating user-centred design and technology-push as mutually exclusive rather than complementary",
+          "Not recognising that iterative design has diminishing returns — at some point, further iteration costs more than the improvement it delivers"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS4-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that products should be designed for people of different sizes and abilities, and that comfort and ease of use are important design considerations.",
+        "example_task": "Explain why a one-size-fits-all approach to designing a school chair might not work for all students.",
+        "example_response": "Students come in different heights and sizes. A chair designed for the average student would be too tall for shorter students (feet dangling, uncomfortable) and too small for taller students (knees too high, back pain). Different sizes or adjustable chairs are needed.",
+        "common_errors": [
+          "Assuming that designing for the 'average' person works for everyone",
+          "Not considering that comfort affects concentration and learning, not just physical wellbeing"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses anthropometric data (body measurements) to inform design decisions, understands the concept of percentile ranges (5th to 95th), and applies basic ergonomic principles to ensure products fit the user.",
+        "example_task": "A door handle is being designed for a public building. Explain how you would use anthropometric data to determine the handle height.",
+        "example_response": "I would use anthropometric data for hand height during a comfortable reaching posture. The handle should be usable by the 5th percentile adult female (shortest likely users) to the 95th percentile adult male (tallest likely users). Standard data gives a comfortable handle height of 900-1050 mm from the floor. I would also consider wheelchair users, for whom a lower handle (around 900 mm) is needed. A height of 900 mm would accommodate the widest range of users including wheelchair users.",
+        "common_errors": [
+          "Designing for the 50th percentile (average) rather than the 5th-95th percentile range",
+          "Using anthropometric data for one population group and applying it universally without considering diversity"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies ergonomic principles (posture, grip, reach, force) and anthropometric data to specific design contexts. Considers inclusive design for users with a range of abilities, ages, and physical characteristics.",
+        "example_task": "Design the handle for a garden tool that will be used by elderly users with reduced grip strength. Apply ergonomic and inclusive design principles.",
+        "example_response": "Ergonomic analysis: elderly users often have reduced grip strength (average 15-20 kg vs 40-50 kg for younger adults), limited finger dexterity, and may have arthritis affecting joint flexion. Handle design: diameter 30-35 mm (larger than standard 25 mm to reduce required grip force), soft rubber overmould for comfort and friction, contoured finger grips to distribute pressure, angled at 15° to reduce wrist deviation during use. The handle should be long enough to allow a two-handed grip (300 mm). A loop strap prevents dropping. Material: polypropylene core for rigidity, TPE overmould for softness. These principles also benefit users with temporary injuries, making the design inclusive rather than specialised.",
+        "common_errors": [
+          "Designing for disability as a separate 'special' category rather than applying inclusive principles that benefit all users",
+          "Specifying ergonomic features without justifying them with specific data about user capabilities"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically evaluates how human factors research informs commercial product design, analyses the tension between inclusive design and market segmentation, and proposes design strategies that balance ergonomic optimisation with manufacturing and commercial constraints.",
+        "example_task": "Evaluate the claim that 'truly inclusive design is impossible — all products must make trade-offs that exclude some users.' Use specific product examples.",
+        "example_response": "The claim has merit but overstates the case. All physical products face geometric constraints — a handle optimised for small hands compromises comfort for large hands. However, adjustability resolves many conflicts: Herman Miller's Aeron chair offers 14 adjustments, accommodating the 5th-95th percentile across multiple body dimensions. The OXO Good Grips range demonstrates that designing for users with limited dexterity (Sam Farber designed for his wife's arthritis) created products that 95% of users prefer — inclusive design became a market advantage, not a compromise. True exclusion occurs when cost constraints prevent adjustability — budget office chairs offer minimal adjustment, excluding users at the extremes. Digital products can achieve near-universal inclusion through adaptive interfaces. The question is not whether trade-offs exist, but whether designers have genuinely explored the design space before accepting exclusion as inevitable. Most exclusion is a design failure, not an inherent necessity.",
+        "common_errors": [
+          "Accepting user exclusion as inevitable without exploring adjustable or adaptive design solutions",
+          "Not recognising that inclusive design often drives innovation that benefits all users, not just those with specific needs"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS4-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that computers can be used to design and make products, and can name basic CAD software and manufacturing equipment (3D printers, laser cutters).",
+        "example_task": "Name two advantages of using CAD (computer-aided design) compared to drawing by hand.",
+        "example_response": "CAD drawings can be easily modified without starting again, and CAD files can be sent directly to manufacturing machines like 3D printers or laser cutters for accurate production.",
+        "common_errors": [
+          "Stating CAD is 'faster' without specifying what makes it faster (modification, duplication, sharing)",
+          "Not distinguishing between CAD (design software) and CAM (manufacturing using computer-controlled machines)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses CAD software to create 2D and 3D designs with accurate dimensions, and understands how these designs are prepared for CAM processes such as 3D printing, laser cutting, and CNC routing.",
+        "example_task": "Describe the process of designing a box joint corner in CAD and manufacturing it using a laser cutter.",
+        "example_response": "In CAD (e.g. Fusion 360), I would draw the 2D profile of each face with interlocking tabs, sized to the exact material thickness (e.g. 3 mm for the plywood). I would add a kerf offset (typically 0.1-0.2 mm for laser cutting) so the joints fit snugly. The design is exported as a DXF file and imported into the laser cutter software. I would set the correct speed and power for the material, then cut. The pieces should slot together precisely due to the accurate CAD dimensions.",
+        "common_errors": [
+          "Not accounting for laser kerf (material removed by the beam) when designing press-fit joints",
+          "Exporting files in the wrong format — laser cutters typically need DXF or SVG vector files, not image files"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Selects appropriate CAD/CAM processes based on product requirements (material, geometry, accuracy, batch size), understands the capabilities and limitations of each process, and optimises designs for specific manufacturing methods.",
+        "example_task": "Compare 3D printing (FDM) and CNC milling for producing a custom gear. Discuss accuracy, material options, and suitability for different production volumes.",
+        "example_response": "FDM 3D printing: builds layer by layer in thermoplastics (PLA, ABS, nylon). Accuracy ±0.2-0.5 mm, limited by layer height and nozzle diameter. Suitable for prototyping and one-offs — no tooling cost. Limitations: visible layer lines, anisotropic strength (weak between layers), limited material range. CNC milling: subtractive process cutting from a solid block. Accuracy ±0.01-0.05 mm, smooth surface finish. Can cut metals (aluminium, steel), engineering plastics, and wood. Higher per-unit cost due to material waste and machining time, but produces stronger parts. For a prototype gear, FDM is cost-effective for testing form and fit. For a functional gear under load, CNC milling in aluminium or nylon is necessary for the required accuracy and strength.",
+        "common_errors": [
+          "Recommending 3D printing for functional parts under stress without considering anisotropic weakness between layers",
+          "Not considering that CNC is subtractive (material waste) while 3D printing is additive (minimal waste) when comparing sustainability"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates how digital manufacturing technologies are transforming industrial production, analyses the implications of Industry 4.0 (automation, IoT, digital twins), and critically assesses the environmental and social impacts of CAD/CAM in manufacturing.",
+        "example_task": "Evaluate how digital manufacturing (3D printing, CNC, robotics) is changing the economics and sustainability of product manufacturing. Consider mass production versus mass customisation.",
+        "example_response": "Traditional mass production achieves low unit costs through economies of scale but requires expensive tooling (injection mould: £10,000-100,000+), limiting it to high-volume standardised products. Digital manufacturing changes the cost curve: 3D printing has zero tooling cost, making unit cost nearly constant regardless of volume. This enables mass customisation — each product can be unique (e.g. custom-fit orthotic insoles from foot scans) without cost penalty. CNC and robotic assembly with flexible programming allow rapid product changeover. However, digital manufacturing is currently slower per unit than injection moulding for large volumes. Sustainability impacts are mixed: additive manufacturing reduces material waste (vs subtractive), and localised production reduces transport emissions. But increased accessibility to manufacturing may increase consumption — the 'rebound effect.' Digital twins allow virtual testing before physical production, reducing prototype waste. The transition benefits skilled workers who can program and operate digital systems but threatens low-skill manufacturing jobs — a significant social consideration.",
+        "common_errors": [
+          "Claiming digital manufacturing will 'replace' all traditional manufacturing without recognising that mass production remains more efficient for high-volume identical products",
+          "Not considering the social impact of automation on employment alongside the technical and environmental benefits"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS4-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that products should be designed to minimise waste and environmental harm, and can name basic sustainable practices such as recycling and using less material.",
+        "example_task": "Give two ways a designer can make a product more environmentally friendly.",
+        "example_response": "Use recycled materials instead of virgin materials, and design the product to be taken apart at the end of its life so parts can be recycled or reused.",
+        "common_errors": [
+          "Only mentioning recycling and not considering reducing material use or designing for longevity",
+          "Assuming that 'natural' materials are always more sustainable than synthetic ones without evidence"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applies the 6 Rs (reduce, reuse, recycle, refuse, rethink, repair) to design decisions, understands planned obsolescence, and selects materials and processes with lower environmental impact.",
+        "example_task": "Explain how planned obsolescence affects sustainability and describe two design strategies to counter it.",
+        "example_response": "Planned obsolescence is designing products to fail or become unfashionable after a set period, encouraging consumers to buy replacements. This increases waste and resource consumption. Counter-strategies: (1) Design for repair — use standard fasteners (screws not glue), make components accessible, and publish repair guides. Fairphone does this with modular smartphone components. (2) Design for upgradability — allow key components (battery, processor) to be upgraded without replacing the whole product, extending its useful life.",
+        "common_errors": [
+          "Confusing planned obsolescence (deliberate) with natural wear (inevitable material degradation)",
+          "Proposing recycling as the primary solution rather than designing for longevity, which has lower environmental impact"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses the environmental impact of design decisions across the full product lifecycle, evaluates trade-offs between sustainability, cost, and performance, and applies circular economy principles to design.",
+        "example_task": "A company wants to replace single-use plastic food packaging. Evaluate three alternative materials and recommend one, considering the full lifecycle.",
+        "example_response": "Option 1: Cardboard — renewable, biodegradable, recyclable. But poor moisture barrier requires wax or plastic lining, complicating recycling. Works for dry foods. Option 2: PLA bioplastic — made from corn starch, industrially compostable. But requires industrial composting facilities (not widely available), contaminates plastic recycling streams, and corn farming has significant land/water use. Option 3: Aluminium — infinitely recyclable with 95% energy saving vs virgin production, excellent barrier properties. But high energy cost for initial production and heavier than plastic (transport emissions). Recommendation: aluminium for products where the packaging is likely to be recycled (cans, trays) — the high recyclability and infinite recyclability outweigh the initial energy cost if recycling infrastructure exists. For single-serve items where recycling is unlikely, cardboard with a water-based barrier coating is the lowest-impact option.",
+        "common_errors": [
+          "Recommending bioplastics as universally better than conventional plastics without considering composting infrastructure and cross-contamination",
+          "Evaluating only production impact and not considering end-of-life — the most recyclable material is only sustainable if it is actually recycled"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically evaluates systemic approaches to sustainable design including cradle-to-cradle thinking, circular economy business models, and the tension between consumer demand and planetary boundaries. Proposes design interventions at both product and system levels.",
+        "example_task": "Evaluate the circular economy model compared to the traditional linear economy. Discuss the role of designers in enabling the transition and identify the limitations of circular design.",
+        "example_response": "The linear economy (take-make-dispose) treats resources as infinite and externalises waste costs. The circular economy aims to eliminate waste by designing products as part of closed loops: biological materials return to the biosphere, technical materials circulate through reuse, repair, remanufacture, and recycling. Designers are critical enablers: material selection (mono-materials over composites for recyclability), modular construction (replaceable components), standardised interfaces (interoperability), and material passports (tracking composition for future recovery). However, limitations exist: circular systems require new business models (product-as-service), consumer behaviour change (returning products, accepting remanufactured goods), and reverse logistics infrastructure. Thermodynamic limits mean materials degrade with each recycling loop — truly 'infinite' cycling is physically impossible. Some critics argue that circular economy thinking provides comforting illusions of sustainability while consumption volumes continue to rise. Genuine sustainability may require 'sufficiency' — designing to produce and consume less, not just more efficiently — a politically challenging but physically necessary position.",
+        "common_errors": [
+          "Presenting the circular economy as a complete solution to environmental problems without acknowledging thermodynamic degradation limits",
+          "Focusing only on product-level design changes without addressing the system-level changes (business models, infrastructure, policy) needed to close material loops"
+        ]
+      }
+    ]
+  }
+]

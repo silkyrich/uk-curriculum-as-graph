@@ -1,0 +1,590 @@
+[
+  {
+    "concept_id": "SC-KS3-C135",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that waves on water are transverse and identifies crests and troughs.",
+        "example_task": "Label the crest and the trough on this diagram of a water wave.",
+        "example_response": "The crest is the highest point of the wave and the trough is the lowest point.",
+        "common_errors": [
+          "Swaps crest and trough labels.",
+          "Thinks the wave carries water sideways rather than energy."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies wavelength, amplitude, and frequency on a wave diagram and describes reflection of water waves.",
+        "example_task": "On a diagram of a water wave, mark the wavelength and the amplitude.",
+        "example_response": "Wavelength is the distance from one crest to the next crest (or trough to trough). Amplitude is the maximum displacement from the rest position to a crest (or to a trough).",
+        "common_errors": [
+          "Measures wavelength from crest to trough instead of crest to crest.",
+          "Measures amplitude as the distance from crest to trough (this is twice the amplitude)."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses a ripple tank to explain reflection and superposition of water waves and applies the wave speed equation.",
+        "example_task": "Water waves in a ripple tank have a frequency of 4 Hz and a wavelength of 0.03 m. Calculate the wave speed.",
+        "example_response": "Wave speed = frequency x wavelength = 4 x 0.03 = 0.12 m/s.",
+        "common_errors": [
+          "Divides frequency by wavelength instead of multiplying.",
+          "Confuses the wave speed equation with the speed = distance/time equation."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Explains constructive and destructive superposition using the principle of superposition and analyses ripple tank observations in detail.",
+        "example_task": "Two identical water waves meet at a point. One has a crest arriving at the same time as the other has a trough. Describe and explain what happens at that point.",
+        "example_response": "This is destructive superposition. The upward displacement of the crest cancels the downward displacement of the trough. If the amplitudes are equal, the result is zero displacement at that instant. This occurs because when waves meet, their displacements add algebraically.",
+        "common_errors": [
+          "Thinks the waves destroy each other permanently rather than passing through each other.",
+          "Cannot distinguish constructive from destructive superposition."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C136",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that frequency is measured in hertz and that higher frequency means higher pitch.",
+        "example_task": "What unit is frequency measured in?",
+        "example_response": "Hertz (Hz).",
+        "common_errors": [
+          "Says frequency is measured in decibels (that is loudness).",
+          "Confuses frequency with wavelength."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Links frequency to pitch and describes how to change the pitch of a sound practically.",
+        "example_task": "Explain how shortening a guitar string changes the sound it makes.",
+        "example_response": "A shorter string vibrates faster (higher frequency), producing a higher-pitched sound.",
+        "common_errors": [
+          "Says a shorter string makes a louder sound (confuses pitch with loudness).",
+          "Says a shorter string vibrates more slowly."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses an oscilloscope trace to determine frequency and compare sounds, and applies the relationship between frequency and wavelength.",
+        "example_task": "An oscilloscope shows a sound wave completing 3 cycles in 0.01 seconds. Calculate the frequency.",
+        "example_response": "Frequency = number of cycles / time = 3 / 0.01 = 300 Hz.",
+        "common_errors": [
+          "Divides time by the number of cycles.",
+          "Reads the number of cycles incorrectly from the trace."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses oscilloscope traces to compare frequency, amplitude, and waveform of different sounds, and explains the inverse relationship between frequency and wavelength for waves of the same speed.",
+        "example_task": "Two sounds have the same speed in air. Sound A has a frequency of 500 Hz and sound B has a frequency of 1000 Hz. Compare their wavelengths and explain your reasoning.",
+        "example_response": "Using v = f x lambda: since both have the same speed, wavelength = v/f. Sound B has twice the frequency, so its wavelength is half that of sound A. Higher frequency means shorter wavelength when the wave speed is constant.",
+        "common_errors": [
+          "Says both sounds have the same wavelength because they travel at the same speed.",
+          "Thinks higher frequency means longer wavelength."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C137",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that sound needs a medium to travel and cannot pass through a vacuum.",
+        "example_task": "Why can astronauts not hear each other in space without using radios?",
+        "example_response": "Space is a vacuum (no air). Sound needs a medium (solid, liquid, or gas) to travel through, so it cannot pass through empty space.",
+        "common_errors": [
+          "Says sound can travel through space but is very quiet.",
+          "Thinks the astronauts' helmets block the sound."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains echoes as reflected sound and describes how soft materials absorb sound.",
+        "example_task": "Explain how an echo is produced.",
+        "example_response": "An echo occurs when a sound wave hits a hard, flat surface and reflects back to the listener. The reflected sound arrives after a short delay, so it is heard as a separate sound.",
+        "common_errors": [
+          "Says an echo is a new sound created by the wall.",
+          "Thinks echoes only happen in large spaces (they occur whenever sound reflects, but the delay must be sufficient to distinguish the echo)."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains how the speed of sound differs in solids, liquids, and gases, and applies knowledge of sound properties to practical contexts like sonar.",
+        "example_task": "Sound travels at approximately 340 m/s in air, 1500 m/s in water, and 5000 m/s in steel. Explain why sound travels fastest in steel.",
+        "example_response": "Sound is transmitted by particle vibrations. In steel, particles are packed closely together in a rigid arrangement, so vibrations pass from one particle to the next very quickly. In air, particles are widely spaced and vibrations transfer more slowly.",
+        "common_errors": [
+          "Says sound travels fastest in air because air is easy to move through.",
+          "Cannot link the speed difference to particle arrangement and spacing."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses real-world applications of sound reflection and absorption, and calculates distances using echo timing and the speed of sound.",
+        "example_task": "A ship sends a sonar pulse downward. The echo returns after 0.4 seconds. The speed of sound in water is 1500 m/s. Calculate the depth of the seabed.",
+        "example_response": "Total distance = speed x time = 1500 x 0.4 = 600 m. The sound travels to the seabed and back, so the depth = 600/2 = 300 m.",
+        "common_errors": [
+          "Forgets to halve the distance (the sound makes a return journey).",
+          "Uses the speed of sound in air instead of water."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C138",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that sound is produced by vibrating objects and can name examples.",
+        "example_task": "How does a drum produce sound?",
+        "example_response": "When the drum skin is hit, it vibrates. These vibrations travel through the air as sound waves to our ears.",
+        "common_errors": [
+          "Says the drum makes sound because it is hit, without mentioning vibrations.",
+          "Does not connect vibration to sound wave production."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes sound as a longitudinal wave and distinguishes compressions and rarefactions.",
+        "example_task": "Describe the difference between a compression and a rarefaction in a sound wave.",
+        "example_response": "A compression is a region where air particles are pushed close together (high pressure). A rarefaction is a region where particles are spread apart (low pressure). They alternate along the wave.",
+        "common_errors": [
+          "Describes sound as a transverse wave.",
+          "Confuses compressions with crests and rarefactions with troughs."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains how changes in amplitude and frequency affect the sound produced and models longitudinal waves using a slinky.",
+        "example_task": "A speaker cone vibrates with a larger amplitude. How does this change the sound produced? Explain using the particle model.",
+        "example_response": "Larger amplitude means the speaker pushes air particles together more forcefully, creating compressions with higher pressure and rarefactions with lower pressure. This produces a louder sound. The frequency (and therefore pitch) is unchanged.",
+        "common_errors": [
+          "Says larger amplitude changes the pitch.",
+          "Confuses amplitude (loudness) with frequency (pitch)."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Compares longitudinal and transverse wave models in detail and explains why sound is represented as a sine wave despite being longitudinal.",
+        "example_task": "Sound is a longitudinal wave but is often drawn as a transverse sine wave on an oscilloscope. Explain this apparent contradiction.",
+        "example_response": "A microphone converts the pressure variations in a sound wave (compressions and rarefactions) into an electrical signal. The oscilloscope displays this electrical signal as a graph of pressure (or voltage) against time. The resulting transverse-looking wave shape shows the pattern of high and low pressure, but the actual particle movement is parallel to the direction of travel, not perpendicular.",
+        "common_errors": [
+          "Concludes that sound must be transverse because it looks like a sine wave on the oscilloscope.",
+          "Cannot explain the role of the microphone in converting longitudinal vibrations to an electrical signal."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C139",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that humans can hear sounds within a certain frequency range and that some animals hear differently.",
+        "example_task": "What is the approximate range of human hearing?",
+        "example_response": "Humans can hear sounds from about 20 Hz to 20,000 Hz.",
+        "common_errors": [
+          "Gives the range in decibels instead of hertz.",
+          "Cannot recall any numerical values for the range."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Compares human hearing with at least two other animals and defines ultrasound and infrasound.",
+        "example_task": "What is ultrasound? Name one animal that uses ultrasound.",
+        "example_response": "Ultrasound is sound with a frequency above 20,000 Hz, which is above the range of human hearing. Bats use ultrasound for echolocation to navigate and find prey.",
+        "common_errors": [
+          "Defines ultrasound as very loud sound.",
+          "Confuses ultrasound with ultraviolet."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains why different animals have different hearing ranges in terms of evolutionary advantage and applies knowledge of ultrasound to technology.",
+        "example_task": "Explain one advantage for elephants of being able to hear infrasound.",
+        "example_response": "Infrasound (below 20 Hz) can travel very long distances because low-frequency sounds are absorbed less by the environment. This allows elephants to communicate over distances of several kilometres, which helps the herd stay in contact across large territories.",
+        "common_errors": [
+          "Says elephants hear infrasound because they have big ears.",
+          "Does not explain the advantage in terms of the properties of low-frequency sound."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates applications of ultrasound and infrasound in medicine, industry, and nature, and explains why hearing range decreases with age.",
+        "example_task": "Explain how ultrasound is used in medical imaging and why it is preferred over X-rays for scanning a foetus.",
+        "example_response": "Ultrasound waves are directed into the body and reflect off boundaries between tissues of different densities. The reflected waves are detected and used to build an image. Unlike X-rays, ultrasound is non-ionising, meaning it does not damage DNA or cells. This makes it much safer for imaging a developing foetus.",
+        "common_errors": [
+          "Says ultrasound can see inside the body like a camera.",
+          "Does not explain why ultrasound is safer than X-rays (non-ionising)."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C140",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that waves transfer energy from one place to another without transferring matter.",
+        "example_task": "A wave travels across the surface of a pond. Does the water travel from one side to the other?",
+        "example_response": "No. The wave transfers energy across the pond, but the water particles move up and down and return to roughly the same position. The water itself does not travel with the wave.",
+        "common_errors": [
+          "Says the water travels with the wave.",
+          "Cannot distinguish energy transfer from matter transfer."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Gives examples of waves transferring energy and information in different contexts.",
+        "example_task": "Give two examples of waves transferring energy.",
+        "example_response": "1. Sound waves transfer energy from a speaker to a listener's eardrum, making it vibrate. 2. Light waves transfer energy from the Sun to the Earth, warming the surface.",
+        "common_errors": [
+          "Gives examples of energy transfer that do not involve waves (e.g. conduction).",
+          "Confuses information transfer with energy transfer."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the distinction between mechanical waves (requiring a medium) and electromagnetic waves (no medium required), both transferring energy.",
+        "example_task": "Explain why light from the Sun can reach Earth but sound cannot travel through space.",
+        "example_response": "Light is an electromagnetic wave that transfers energy without needing a medium, so it can travel through the vacuum of space. Sound is a mechanical wave that requires particles to vibrate, and space is a vacuum with no particles, so sound energy cannot be transferred.",
+        "common_errors": [
+          "Says sound can travel through space but we cannot hear it because it is too far.",
+          "Does not distinguish between mechanical and electromagnetic waves."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses how wave amplitude and frequency affect energy transfer and applies the energy transfer concept to explain real-world wave phenomena.",
+        "example_task": "A tsunami has a much larger amplitude than a normal ocean wave. Explain the relationship between amplitude and energy transfer, and why tsunamis are so destructive.",
+        "example_response": "The energy transferred by a wave is related to the square of its amplitude. A tsunami has a very large amplitude, so it carries enormously more energy than a normal wave. When this energy is transferred to the coastline, it causes massive destruction because the energy is concentrated into a short time and small area as the wave height increases in shallow water.",
+        "common_errors": [
+          "States energy is proportional to amplitude (it is proportional to amplitude squared).",
+          "Does not explain why the energy causes damage on reaching shore."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C141",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that light is a wave and identifies one similarity and one difference between light and sound.",
+        "example_task": "Name one way light waves and sound waves are similar and one way they are different.",
+        "example_response": "Similar: both can be reflected. Different: light can travel through a vacuum but sound cannot.",
+        "common_errors": [
+          "Says both light and sound need a medium to travel.",
+          "Cannot identify any difference between them."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Classifies light as a transverse electromagnetic wave and sound as a longitudinal mechanical wave, and compares their speeds.",
+        "example_task": "Explain why you see lightning before you hear thunder.",
+        "example_response": "Light travels at about 300,000,000 m/s, much faster than sound at about 340 m/s. Both are produced at the same time, but light reaches the observer almost instantly while sound takes much longer.",
+        "common_errors": [
+          "Says thunder is produced after lightning.",
+          "Cannot give approximate speeds of light and sound."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Compares multiple properties of light waves and waves in matter (wavelength, frequency, amplitude, reflection, refraction) and explains why light can travel through a vacuum.",
+        "example_task": "Compare how light and sound are refracted. What causes refraction in each case?",
+        "example_response": "Both light and sound change direction when they pass from one medium to another (refraction). Light refracts because it changes speed at a boundary between media of different optical densities. Sound refracts because it changes speed when moving between regions of different temperature or density. In both cases, the change in speed causes the change in direction.",
+        "common_errors": [
+          "Says only light can be refracted.",
+          "Does not identify the change in speed as the cause of refraction."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Explains that light does not need a medium because it is an oscillation of electric and magnetic fields, and evaluates the historical significance of understanding this distinction.",
+        "example_task": "Explain why scientists initially struggled to accept that light could travel through a vacuum, and how Maxwell's electromagnetic theory resolved this.",
+        "example_response": "Scientists assumed all waves needed a medium (they proposed a 'luminiferous aether' filling space). Maxwell showed that light is an oscillation of electric and magnetic fields that sustain each other as they travel, requiring no medium. This was confirmed when no evidence for the aether was found (Michelson-Morley experiment), establishing that electromagnetic waves are fundamentally different from mechanical waves.",
+        "common_errors": [
+          "States the aether was proven to exist.",
+          "Cannot explain how electromagnetic waves propagate without a medium."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C142",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that light travels very fast and states the approximate speed of light.",
+        "example_task": "Approximately how fast does light travel in a vacuum?",
+        "example_response": "Light travels at approximately 300,000,000 m/s (3 x 10^8 m/s) in a vacuum.",
+        "common_errors": [
+          "Gives the speed of sound instead of the speed of light.",
+          "Says light travels instantaneously."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains that light travels in straight lines and gives evidence for this, such as shadows and pinholes.",
+        "example_task": "How does the formation of shadows provide evidence that light travels in straight lines?",
+        "example_response": "When an opaque object blocks light, it creates a shadow behind it with a sharp outline. This shows light does not bend around the object but travels in straight lines. The shadow matches the shape of the object.",
+        "common_errors": [
+          "Says shadows form because light is absorbed by the object (partially true but does not explain straight-line travel).",
+          "Cannot explain how this demonstrates straight-line propagation."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains that light slows down in denser media and returns to its original speed on leaving, and uses this to explain refraction.",
+        "example_task": "Explain what happens to the speed of light when it enters a glass block and when it leaves.",
+        "example_response": "Light slows down when it enters glass (from about 3 x 10^8 m/s in air to about 2 x 10^8 m/s in glass). When it leaves the glass and re-enters the air, it speeds up again to its original speed. The change in speed at each boundary causes refraction.",
+        "common_errors": [
+          "Says light permanently slows down after passing through glass.",
+          "Does not link the speed change to refraction."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Discusses the significance of the speed of light as a universal speed limit, applies it to astronomical distance calculations, and evaluates historical methods of measuring it.",
+        "example_task": "Light from the Sun takes approximately 8 minutes to reach Earth. The speed of light is 3 x 10^8 m/s. Calculate the approximate distance from the Sun to the Earth.",
+        "example_response": "Time = 8 minutes = 8 x 60 = 480 seconds. Distance = speed x time = 3 x 10^8 x 480 = 1.44 x 10^11 m, which is approximately 150 million km (1 AU).",
+        "common_errors": [
+          "Forgets to convert minutes to seconds.",
+          "Makes errors in the powers of ten during the calculation."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C143",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Classifies materials as transparent, translucent, or opaque based on how they interact with light.",
+        "example_task": "Classify the following materials: clear glass, frosted glass, wood.",
+        "example_response": "Clear glass: transparent (transmits light). Frosted glass: translucent (scatters light as it passes through). Wood: opaque (absorbs or reflects light, does not transmit it).",
+        "common_errors": [
+          "Swaps transparent and translucent.",
+          "Says opaque materials reflect all light (they absorb most of it, which is why dark objects heat up)."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes reflection from a mirror and explains why we can see non-luminous objects.",
+        "example_task": "Explain why you can see a book in a lit room even though the book does not produce its own light.",
+        "example_response": "Light from a light source (lamp or window) hits the book and reflects off its surface. Some of this reflected light enters your eyes, allowing you to see the book.",
+        "common_errors": [
+          "Says light from your eyes travels to the book.",
+          "Cannot explain how non-luminous objects are seen."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains how absorption and reflection of light depend on the surface colour and texture, and links this to thermal effects.",
+        "example_task": "Two cars are parked in the sun: one black and one white. Explain which car gets hotter inside and why.",
+        "example_response": "The black car gets hotter. Black surfaces absorb most visible light and convert it to thermal energy. White surfaces reflect most visible light, so less energy is absorbed and less heating occurs.",
+        "common_errors": [
+          "Says the white car gets hotter because white attracts sunlight.",
+          "Does not link colour to absorption and reflection of light."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses how absorption, reflection, and scattering of light are used in technology and natural phenomena, and distinguishes specular from diffuse reflection.",
+        "example_task": "Explain the difference between specular and diffuse reflection, and give an example of each.",
+        "example_response": "Specular reflection occurs on smooth, flat surfaces (like mirrors): parallel incoming rays reflect as parallel outgoing rays, producing a clear image. Diffuse reflection occurs on rough surfaces (like paper or walls): incoming parallel rays scatter in many directions because the surface is uneven. Diffuse reflection is why we can see objects from any angle, not just one specific viewing position.",
+        "common_errors": [
+          "Thinks diffuse reflection means some light is absorbed (absorption and diffuse reflection are separate processes).",
+          "Cannot explain why a rough surface scatters light."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C144",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Draws a ray reflecting from a flat mirror and labels the incident ray, reflected ray, and normal.",
+        "example_task": "Draw a labelled ray diagram showing light reflecting from a plane mirror.",
+        "example_response": "A line perpendicular to the mirror surface (the normal), an incoming arrow (incident ray) hitting the mirror at an angle to the normal, and an outgoing arrow (reflected ray) leaving at the same angle on the other side of the normal.",
+        "common_errors": [
+          "Does not draw the normal line perpendicular to the mirror.",
+          "Measures the angle from the mirror surface instead of from the normal."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "States the law of reflection and draws accurate ray diagrams for reflection, including measuring angles.",
+        "example_task": "The angle of incidence is 35 degrees. What is the angle of reflection? State the rule you used.",
+        "example_response": "The angle of reflection is 35 degrees. The law of reflection states that the angle of incidence equals the angle of reflection.",
+        "common_errors": [
+          "Measures angles from the mirror surface rather than from the normal.",
+          "States the correct rule but gives an incorrect angle."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Draws ray diagrams for refraction through a glass block and explains how lenses focus light.",
+        "example_task": "Draw a ray diagram showing light passing through a rectangular glass block. Label the angles of incidence and refraction at each surface.",
+        "example_response": "At the first surface, the ray bends towards the normal (entering a denser medium). Inside the glass it travels in a straight line. At the second surface, the ray bends away from the normal (entering a less dense medium). The ray emerges parallel to the original direction but laterally displaced.",
+        "common_errors": [
+          "Draws the ray bending away from the normal when entering the denser medium.",
+          "Does not show the lateral displacement of the emerging ray."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies the ray model to explain how the human eye forms images, how corrective lenses work, and analyses total internal reflection.",
+        "example_task": "Explain how a short-sighted person sees distant objects and how a diverging (concave) lens corrects this.",
+        "example_response": "In a short-sighted eye, the eyeball is too long or the lens is too powerful, so parallel rays from distant objects are focused in front of the retina, producing a blurred image. A diverging (concave) lens placed in front of the eye spreads the rays slightly before they enter the eye, so the adjusted rays now focus exactly on the retina, giving a clear image.",
+        "common_errors": [
+          "Confuses short sight with long sight.",
+          "Says a converging lens is used to correct short sight (a diverging lens is needed)."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C145",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that light can cause chemical and electrical effects and gives a simple example of each.",
+        "example_task": "Name one chemical effect and one electrical effect of light.",
+        "example_response": "Chemical: photosynthesis in plants (light drives the reaction). Electrical: a solar cell converts light into electricity.",
+        "common_errors": [
+          "Cannot name an electrical effect of light.",
+          "Confuses solar thermal panels with photovoltaic cells."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes how solar cells and photosynthesis demonstrate the energy in light waves.",
+        "example_task": "Explain how a solar cell demonstrates that light carries energy.",
+        "example_response": "When light hits a solar cell, the light energy is converted into electrical energy, which can power a circuit. This shows that light waves carry energy that can be transferred to other forms.",
+        "common_errors": [
+          "Says the solar cell stores light.",
+          "Cannot explain the energy conversion involved."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains multiple examples of light causing chemical and electrical effects, including photography and LDRs, linking each to energy transfer.",
+        "example_task": "Explain how a light-dependent resistor (LDR) works and give one application.",
+        "example_response": "An LDR has a high resistance in the dark and a low resistance in bright light. Light energy hitting the LDR releases charge carriers in the material, reducing its resistance. Application: automatic street lights that switch on when it gets dark (high LDR resistance triggers the circuit).",
+        "common_errors": [
+          "Says the LDR has low resistance in the dark.",
+          "Cannot explain the mechanism by which light changes resistance."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates applications of light's chemical and electrical effects in technology, medicine, and environmental science, and explains UV effects on biological tissue.",
+        "example_task": "Explain why UV light causes sunburn while visible light does not, relating your answer to the energy carried by different frequencies of light.",
+        "example_response": "Higher-frequency light carries more energy per photon. UV light has a higher frequency than visible light, so each UV photon carries enough energy to damage DNA molecules in skin cells, causing sunburn and increasing cancer risk. Visible light photons have lower energy and do not have enough energy to break chemical bonds in DNA.",
+        "common_errors": [
+          "Says UV causes sunburn because it is hotter.",
+          "Does not link frequency to photon energy."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C146",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that white light is made up of different colours and that a prism can separate them.",
+        "example_task": "What happens when white light passes through a prism?",
+        "example_response": "The white light is split into a spectrum of colours: red, orange, yellow, green, blue, indigo, and violet.",
+        "common_errors": [
+          "Lists the colours in the wrong order.",
+          "Says the prism adds colour to the light."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains that different colours correspond to different frequencies and wavelengths, and describes how coloured objects appear coloured.",
+        "example_task": "Explain why a red apple appears red in white light.",
+        "example_response": "The apple's surface absorbs all colours of light except red. Red light is reflected from the surface into our eyes, so the apple appears red.",
+        "common_errors": [
+          "Says the apple is red because red light shines on it.",
+          "Thinks the apple creates red light."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies colour theory to explain what happens when coloured light shines on coloured objects and distinguishes additive from subtractive colour mixing.",
+        "example_task": "A red object is illuminated by green light only. What colour does it appear? Explain.",
+        "example_response": "The object appears black. It only reflects red light, but no red light is present (only green). The green light is absorbed, and no light is reflected to our eyes.",
+        "common_errors": [
+          "Says the object appears green.",
+          "Confuses additive colour mixing (light) with subtractive (paint)."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex colour scenarios involving filters, additive colour mixing (RGB), and subtractive colour mixing (pigments), and connects colour to the electromagnetic spectrum.",
+        "example_task": "Explain why mixing red, green, and blue light produces white light (additive), but mixing red, green, and blue paints produces a dark colour (subtractive).",
+        "example_response": "Additive mixing (light): each colour adds wavelengths to the mix. Red + green + blue together stimulate all three types of cone cells in the eye, which the brain interprets as white. Subtractive mixing (paint): each pigment absorbs (subtracts) wavelengths. Red paint absorbs blue and green, green paint absorbs red and blue, blue paint absorbs red and green. Mixed together, almost all wavelengths are absorbed, producing a very dark (near-black) colour.",
+        "common_errors": [
+          "Thinks additive and subtractive mixing follow the same rules.",
+          "Cannot explain the mechanism of subtractive colour mixing."
+        ]
+      }
+    ]
+  }
+]

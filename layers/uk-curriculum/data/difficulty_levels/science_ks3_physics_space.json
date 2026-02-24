@@ -1,0 +1,247 @@
+[
+  {
+    "concept_id": "SC-KS3-C167",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls the difference between mass and weight and states that weight is a force measured in newtons.",
+        "example_task": "What is the difference between mass and weight?",
+        "example_response": "Mass is the amount of matter in an object, measured in kilograms. Weight is the gravitational force on that mass, measured in newtons.",
+        "common_errors": [
+          "Says mass and weight are the same thing.",
+          "Says weight is measured in kilograms."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses W = mg to calculate weight from mass and gravitational field strength.",
+        "example_task": "Calculate the weight of a 70 kg person on Earth (g = 10 N/kg).",
+        "example_response": "W = mg = 70 x 10 = 700 N.",
+        "common_errors": [
+          "Divides mass by g instead of multiplying.",
+          "Gives the answer in kilograms instead of newtons."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Compares weight on different planets using different values of g and explains why mass stays constant while weight changes.",
+        "example_task": "An astronaut has a mass of 80 kg. Calculate her weight on Earth (g = 10 N/kg) and on the Moon (g = 1.6 N/kg). Explain why her mass is the same in both places.",
+        "example_response": "On Earth: W = 80 x 10 = 800 N. On Moon: W = 80 x 1.6 = 128 N. Her mass is the same (80 kg) because mass is the amount of matter, which does not change with location. Weight changes because gravitational field strength is different on the Moon.",
+        "common_errors": [
+          "Says the astronaut's mass changes on the Moon.",
+          "Cannot explain why weight changes but mass does not."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses real-world scenarios involving weight, mass, and gravity, and explains apparent weightlessness in orbit.",
+        "example_task": "Astronauts on the International Space Station float as if weightless. Does this mean there is no gravity? Explain.",
+        "example_response": "No. The ISS orbits at about 400 km altitude, where g is approximately 8.7 N/kg (only slightly less than 9.8 N/kg at the surface). The astronauts appear weightless because they and the ISS are in continuous freefall around the Earth. They are constantly accelerating toward Earth (due to gravity) but also moving forward fast enough that they keep missing it. This is the same principle as an object in freefall feeling weightless, like a person in a falling lift.",
+        "common_errors": [
+          "Says there is no gravity in space.",
+          "Thinks the ISS is beyond the reach of Earth's gravity."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C168",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that gravitational field strength differs on different planets and affects weight.",
+        "example_task": "Would you weigh more or less on Jupiter than on Earth? Why?",
+        "example_response": "More, because Jupiter has a much stronger gravitational field strength (about 25 N/kg compared to 10 N/kg on Earth).",
+        "common_errors": [
+          "Says you would weigh less on Jupiter because it is further from the Sun.",
+          "Confuses mass with weight."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses different values of g to calculate weight on different planets and recognises that g depends on the mass and size of the planet.",
+        "example_task": "An object has a mass of 10 kg. Calculate its weight on Mars (g = 3.7 N/kg) and on Jupiter (g = 25 N/kg).",
+        "example_response": "On Mars: W = 10 x 3.7 = 37 N. On Jupiter: W = 10 x 25 = 250 N.",
+        "common_errors": [
+          "Uses Earth's g value for all calculations.",
+          "States that a larger planet always has a larger g (size and mass both matter)."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains why g varies with the mass and radius of a planet and why g decreases with distance from a planet's surface.",
+        "example_task": "Explain why the Moon has a weaker gravitational field strength than Earth.",
+        "example_response": "The Moon has much less mass than the Earth (about 1/81 of Earth's mass). Since gravitational field strength depends on the mass of the body, a smaller mass produces a weaker gravitational field. The Moon's smaller radius partially offsets this (being closer to the centre increases g), but the much smaller mass is the dominant factor, giving g = 1.6 N/kg compared to 9.8 N/kg on Earth.",
+        "common_errors": [
+          "Says the Moon has weaker gravity because it is smaller without mentioning mass.",
+          "Thinks gravity depends only on size, not mass."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses how g changes with altitude and distance, explains the concept of freefall and apparent weightlessness, and compares gravitational field strengths across the solar system.",
+        "example_task": "Saturn has a mass about 95 times Earth's but a surface g of only about 10.4 N/kg (similar to Earth's). Explain why its surface g is not 95 times Earth's.",
+        "example_response": "Gravitational field strength at the surface depends on both the planet's mass and its radius. Saturn is much larger than Earth (about 9.5 times Earth's radius), and g depends on mass/radius squared. While Saturn's greater mass increases g, its much larger radius greatly decreases g. The net effect is that Saturn's surface g is only slightly more than Earth's despite having 95 times the mass.",
+        "common_errors": [
+          "Says g should be 95 times greater because Saturn has 95 times the mass.",
+          "Forgets that radius is relevant and that it appears as a squared term."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C169",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Names the Sun as a star, lists the eight planets in order, and identifies the solar system as part of a galaxy.",
+        "example_task": "Name the eight planets of the solar system in order from the Sun.",
+        "example_response": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.",
+        "common_errors": [
+          "Includes Pluto as a planet (reclassified as a dwarf planet in 2006).",
+          "Gets the order wrong, typically swapping Uranus and Neptune."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Distinguishes between terrestrial and gas giant planets, and identifies other objects in the solar system (dwarf planets, moons, asteroids, comets).",
+        "example_task": "What is the difference between a terrestrial planet and a gas giant? Give two examples of each.",
+        "example_response": "Terrestrial planets are small, rocky planets with solid surfaces (e.g. Earth, Mars). Gas giants are much larger planets made mostly of hydrogen and helium with no solid surface (e.g. Jupiter, Saturn).",
+        "common_errors": [
+          "Says gas giants have no gravity.",
+          "Classifies Pluto as a terrestrial planet."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the scale of the solar system, the Milky Way, and the universe, using appropriate units (AU, light years).",
+        "example_task": "Explain what an astronomical unit (AU) is and why it is useful for measuring distances in the solar system.",
+        "example_response": "One AU is the average distance from the Earth to the Sun (approximately 150 million km). It is useful because solar system distances are very large in kilometres but become manageable numbers in AU. For example, Jupiter is about 5.2 AU from the Sun, which is easier to understand than 778 million km.",
+        "common_errors": [
+          "Says an AU is the distance from Earth to the Moon.",
+          "Confuses AU with light years."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses the hierarchical structure of the universe (planet, star system, galaxy, universe), discusses the evidence for our understanding of this structure, and evaluates the challenges of space exploration given the vast distances.",
+        "example_task": "The nearest star to Earth (after the Sun) is Proxima Centauri, about 4.2 light years away. Explain why sending a spacecraft there presents enormous challenges, even at very high speeds.",
+        "example_response": "At the speed of light, the journey would take 4.2 years. Current spacecraft travel at roughly 0.01% of the speed of light, meaning the journey would take over 40,000 years. The vast distance requires either impossibly large amounts of fuel (for acceleration and deceleration), or new propulsion technologies. Crew survival for such durations, cosmic radiation shielding, and communication delays (signals take 4.2 years to travel each way) are additional challenges. This illustrates why interstellar travel remains beyond current technology.",
+        "common_errors": [
+          "Thinks the journey would take 4.2 years in a fast rocket.",
+          "Does not consider the practical challenges beyond distance."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C170",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that the Earth orbits the Sun once a year and rotates on its axis once a day, and that the tilt of the Earth's axis causes seasons.",
+        "example_task": "What causes the seasons on Earth?",
+        "example_response": "The seasons are caused by the tilt of the Earth's axis (about 23.5 degrees). As the Earth orbits the Sun, the tilted axis means different hemispheres receive more or less direct sunlight at different times of the year.",
+        "common_errors": [
+          "Says the seasons are caused by the Earth being closer to or further from the Sun.",
+          "Does not mention the tilt of the axis."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains how axial tilt causes the Northern and Southern Hemispheres to experience opposite seasons and why day length varies throughout the year.",
+        "example_task": "When it is summer in the UK (Northern Hemisphere), what season is it in Australia (Southern Hemisphere)? Explain why.",
+        "example_response": "It is winter in Australia. When the Northern Hemisphere is tilted toward the Sun (summer in the UK), the Southern Hemisphere is tilted away from the Sun, receiving less direct sunlight and having shorter days.",
+        "common_errors": [
+          "Says it is summer everywhere at the same time.",
+          "Cannot explain the connection between tilt direction and season."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the relationship between the angle of sunlight, day length, and the intensity of solar heating, and describes solstices and equinoxes.",
+        "example_task": "Explain why summer days are warmer than winter days in the UK, using the concepts of the angle of sunlight and day length.",
+        "example_response": "In summer, the Sun is higher in the sky, so sunlight hits the ground at a steeper angle, concentrating energy over a smaller area (more heating per square metre). Days are also longer, providing more hours of solar heating. In winter, the Sun is lower in the sky, spreading the same energy over a larger area, and days are shorter, reducing total heating.",
+        "common_errors": [
+          "Says the Sun is closer in summer.",
+          "Does not explain how the angle of sunlight affects heating intensity."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses the effects of axial tilt on different latitudes (including polar regions and the equator), explains midnight sun and polar night, and discusses what would happen if the Earth had no axial tilt.",
+        "example_task": "Explain what would happen to the seasons if the Earth's axis were not tilted at all (0 degrees tilt).",
+        "example_response": "With no axial tilt, the Sun would always be directly overhead at the equator. Every location would have 12 hours of daylight and 12 hours of darkness every day, year-round. There would be no seasons: each latitude would receive the same intensity of sunlight throughout the year. The poles would receive constant grazing sunlight and remain permanently cold. The equator would be perpetually warm. Weather patterns would be dramatically different.",
+        "common_errors": [
+          "Says removing the tilt would cause permanent summer.",
+          "Cannot predict the consequences for day length and solar heating."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C171",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that a light year is a unit of distance (not time) used for measuring astronomical distances.",
+        "example_task": "Is a light year a unit of distance or a unit of time? Explain.",
+        "example_response": "A light year is a unit of distance. It is the distance that light travels in one year.",
+        "common_errors": [
+          "Says a light year is a unit of time.",
+          "Cannot explain what a light year measures."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "States the approximate value of a light year in kilometres and uses it to express the distance to nearby stars.",
+        "example_task": "The nearest star to Earth (after the Sun) is approximately 4.2 light years away. Explain what this means.",
+        "example_response": "It means the star is at the distance light would travel in 4.2 years. Since light travels about 9.5 trillion km per year, the star is approximately 4.2 x 9.5 trillion = about 40 trillion km away.",
+        "common_errors": [
+          "Says it takes 4.2 years to get there by rocket.",
+          "Cannot convert the distance into a rough numerical value."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses light years to describe distances to stars, across galaxies, and between galaxies, and explains the concept of lookback time.",
+        "example_task": "The Andromeda galaxy is about 2.5 million light years away. What does this tell us about the light we observe from it?",
+        "example_response": "The light we see from Andromeda left the galaxy 2.5 million years ago. We are observing Andromeda as it was 2.5 million years ago, not as it is now. This is called lookback time: the further away an object is, the further back in time we are looking.",
+        "common_errors": [
+          "Says we see Andromeda as it is now.",
+          "Does not connect distance in light years to lookback time."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses the implications of lookback time for understanding the universe, uses light years to reason about the observable universe, and evaluates why the light year is a more practical unit than kilometres for astronomical distances.",
+        "example_task": "The observable universe has a radius of about 46 billion light years, yet the universe is only about 13.8 billion years old. Explain this apparent contradiction.",
+        "example_response": "When the light from the most distant objects began its journey, those objects were much closer. During the 13.8 billion years the light has been travelling, the expansion of the universe has carried those objects much further away. So the current distance to the most distant observable objects is about 46 billion light years, even though the light itself has only been travelling for 13.8 billion years. The apparent contradiction arises from not accounting for the continuous expansion of space during the light's journey.",
+        "common_errors": [
+          "Says nothing can be further away in light years than the age of the universe in years.",
+          "Does not account for the expansion of the universe."
+        ]
+      }
+    ]
+  }
+]

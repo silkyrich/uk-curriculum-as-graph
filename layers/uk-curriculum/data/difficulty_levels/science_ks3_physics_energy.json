@@ -1,0 +1,541 @@
+[
+  {
+    "concept_id": "SC-KS3-C107",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that different foods contain different amounts of energy and that this information is on food labels.",
+        "example_task": "Which has more energy per 100g: an apple or a chocolate bar? How do you know?",
+        "example_response": "A chocolate bar has more energy per 100g. You can find this out by reading the food labels \u2014 energy is given in kilojoules (kJ) or kilocalories (kcal). A chocolate bar might have about 2,200 kJ per 100g while an apple has about 220 kJ per 100g.",
+        "common_errors": [
+          "Not knowing where to find energy values on food labels",
+          "Thinking 'energy-dense' always means unhealthy \u2014 nuts are energy-dense but nutritious"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Comparing energy values from food labels using correct units and understanding that food energy comes from chemical energy stores.",
+        "example_task": "A food label shows 1,500 kJ per 100g. Convert this to kilocalories and explain where this energy comes from.",
+        "example_response": "1 kcal = 4.2 kJ, so 1,500 kJ \u00f7 4.2 = approximately 357 kcal per 100g. The energy in food comes from the chemical bonds in nutrients \u2014 carbohydrates, fats, and proteins all contain stored chemical energy. Fat is the most energy-dense nutrient (37 kJ/g), followed by protein and carbohydrate (both approximately 17 kJ/g). During digestion, these nutrients are broken down, and the chemical energy is released through respiration in cells.",
+        "common_errors": [
+          "Not knowing the conversion between kJ and kcal",
+          "Thinking energy comes from vitamins or minerals \u2014 these are essential nutrients but do not provide significant energy"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Calculating daily energy requirements based on activity level and evaluating whether a diet meets energy needs.",
+        "example_task": "An active teenage boy needs approximately 11,500 kJ per day. His meals provide 8,000 kJ. Calculate the shortfall and suggest what might happen if this continues.",
+        "example_response": "Shortfall = 11,500 - 8,000 = 3,500 kJ per day. If this continues, the body will use stored chemical energy from glycogen (short-term) and body fat (longer-term) to make up the deficit. Over time, weight loss would occur. If the deficit is severe or prolonged, the body may break down muscle protein for energy, leading to muscle wasting and malnutrition. Energy requirements vary with age, sex, and activity level \u2014 a sedentary person needs less, while athletes may need 15,000+ kJ/day. The balance between energy intake and expenditure determines weight change: surplus is stored (weight gain), deficit uses stores (weight loss), balance maintains weight.",
+        "common_errors": [
+          "Not calculating the shortfall correctly",
+          "Thinking the body immediately breaks down muscle \u2014 glycogen and fat are used first"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically evaluating food energy measurements, understanding the limitations of calorimetry, and analysing how energy values relate to metabolic processes.",
+        "example_task": "Food energy values on labels are determined by burning food in a calorimeter. Explain why the actual energy obtained by the body may differ from the calorimeter value.",
+        "example_response": "A bomb calorimeter burns food completely in pure oxygen, measuring the total chemical energy released. However, the human body is less efficient: digestion does not break down all nutrients completely (especially fibre, which passes through largely undigested but would burn in a calorimeter), absorption efficiency varies (some nutrients pass through without being absorbed, particularly in high-fibre meals), not all absorbed nutrients are used for energy (some are used for building and repair), and energy is lost as heat during metabolic processes (the body is not 100% efficient at converting chemical energy to useful work). The 'Atwater factors' used on food labels (17 kJ/g for carbohydrate and protein, 37 kJ/g for fat) are already adjusted estimates, not raw calorimetry values \u2014 but they are still averages. Individual variation in gut microbiome composition means two people eating the same food may extract different amounts of energy. Cooking also affects available energy \u2014 cooked food generally provides more accessible energy than raw food because heat breaks down cell walls and denatures proteins, making nutrients more accessible. This is one reason why calorie counting is approximate, not precise.",
+        "common_errors": [
+          "Assuming the body extracts 100% of the energy measured in a calorimeter",
+          "Not knowing that the Atwater factors on food labels are already adjusted estimates, not raw measurements"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C108",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that electrical appliances have power ratings measured in watts and that different appliances use energy at different rates.",
+        "example_task": "A kettle has a power rating of 2,000 W and a phone charger has a power rating of 5 W. What does this tell you?",
+        "example_response": "The power rating tells you how fast the appliance uses energy. The kettle uses energy 400 times faster than the phone charger. That is why the kettle can heat water quickly but also costs more to run. Power is measured in watts (W) or kilowatts (kW). 1 kW = 1,000 W.",
+        "common_errors": [
+          "Confusing power (how fast energy is used) with total energy used (which depends on both power and time)",
+          "Not knowing the relationship between watts and kilowatts"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Comparing power ratings of common appliances and understanding that power is the rate of energy transfer.",
+        "example_task": "List four household appliances in order of power rating, from lowest to highest.",
+        "example_response": "Phone charger (~5 W), LED light bulb (~10 W), television (~100 W), electric kettle (~2,000 W or 2 kW). Power is the rate at which energy is transferred: 1 watt means 1 joule of energy transferred per second. A 2,000 W kettle transfers 2,000 joules of energy every second. Higher power means faster energy transfer, which is why a kettle boils water faster than a lower-powered immersion heater would.",
+        "common_errors": [
+          "Thinking a higher-powered appliance always costs more \u2014 cost depends on both power AND time of use",
+          "Not defining the watt as one joule per second"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Calculating energy transferred using E = P \u00d7 t and comparing the running costs of different appliances.",
+        "example_task": "A 2 kW electric heater is used for 3 hours. A 100 W television is used for 10 hours. Which uses more energy?",
+        "example_response": "Heater: E = P \u00d7 t = 2 kW \u00d7 3 h = 6 kWh. Television: E = P \u00d7 t = 0.1 kW \u00d7 10 h = 1 kWh. The heater uses 6 times more energy despite being on for less time, because its power rating is 20 times higher. In joules: heater = 2,000 W \u00d7 10,800 s = 21,600,000 J = 21.6 MJ. Television = 100 W \u00d7 36,000 s = 3,600,000 J = 3.6 MJ. At 34p per kWh, the heater costs 6 \u00d7 34p = \u00a32.04, while the TV costs 1 \u00d7 34p = \u00a30.34. This shows why heating is the largest component of household energy bills.",
+        "common_errors": [
+          "Forgetting to convert units \u2014 kW must be used with hours to get kWh, or W with seconds to get joules",
+          "Not recognising that time of use is as important as power rating in determining total energy consumption"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluating appliance efficiency, analysing energy ratings, and understanding how power relates to electrical design.",
+        "example_task": "An old incandescent bulb (60 W) and a modern LED bulb (8 W) produce the same amount of light. Explain the difference in terms of energy efficiency and calculate the annual cost saving.",
+        "example_response": "Both produce the same useful light output (about 800 lumens). The incandescent bulb converts most of its 60 W into heat (thermal energy) with only about 5% going to light \u2014 it is roughly 5% efficient. The LED converts about 40% of its 8 W into light \u2014 approximately 40% efficient. Annual cost comparison (assuming 5 hours use per day, 365 days, 34p/kWh): incandescent: 0.06 kW \u00d7 5 h \u00d7 365 = 109.5 kWh = \u00a337.23/year. LED: 0.008 kW \u00d7 5 h \u00d7 365 = 14.6 kWh = \u00a34.96/year. Annual saving: \u00a332.27 per bulb. Over a 25,000-hour LED lifetime (about 14 years at 5h/day), the saving is approximately \u00a3450, far exceeding the higher purchase price of the LED. This efficiency improvement is significant at scale: if every household in the UK replaced just their most-used light with an LED, the national energy saving would be equivalent to several power stations. The EU energy rating system (A-G) was introduced to help consumers compare appliance efficiency, driving manufacturers to improve designs.",
+        "common_errors": [
+          "Comparing bulbs by wattage alone rather than by light output (lumens) \u2014 a 60W incandescent is not 'brighter' than an 8W LED",
+          "Not calculating the total lifetime cost saving, which vastly exceeds the higher initial price of efficient appliances"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C109",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that energy is measured in joules and that large amounts of energy can be measured in kilojoules or kilowatt-hours.",
+        "example_task": "What units do we use to measure energy?",
+        "example_response": "Energy is measured in joules (J). One joule is a small amount of energy \u2014 about the energy needed to lift an apple one metre. For larger amounts, we use kilojoules (1 kJ = 1,000 J) for food energy, and kilowatt-hours (kWh) for electricity bills. One kilowatt-hour is the energy transferred by a 1 kW appliance in 1 hour.",
+        "common_errors": [
+          "Thinking a kilowatt-hour is a unit of power rather than energy",
+          "Not knowing the size of a joule \u2014 having no sense of scale for energy units"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Converting between energy units and calculating energy transferred using E = P \u00d7 t.",
+        "example_task": "Convert 1 kWh into joules. Show your working.",
+        "example_response": "1 kWh = 1 kilowatt \u00d7 1 hour = 1,000 watts \u00d7 3,600 seconds = 3,600,000 joules = 3.6 MJ. Working: 1 kW = 1,000 W = 1,000 J/s. 1 hour = 60 \u00d7 60 = 3,600 seconds. Energy = power \u00d7 time = 1,000 \u00d7 3,600 = 3,600,000 J. The kWh is used on electricity bills because it gives convenient numbers \u2014 a household might use 10 kWh per day, which sounds more manageable than 36,000,000 J.",
+        "common_errors": [
+          "Not converting hours to seconds when calculating in joules",
+          "Confusing MJ with mJ (mega vs milli \u2014 a millionfold difference)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Comparing energy transfers across different contexts (food, electricity, mechanical) using consistent units.",
+        "example_task": "A Mars bar contains approximately 1,000 kJ of energy. A 60 W light bulb is left on for 1 hour. Compare the energy values.",
+        "example_response": "Mars bar: 1,000 kJ = 1,000,000 J = 1 MJ. Light bulb for 1 hour: E = P \u00d7 t = 60 W \u00d7 3,600 s = 216,000 J = 216 kJ = 0.216 MJ. The Mars bar contains approximately 4.6 times more energy than the light bulb uses in an hour. In kWh: Mars bar = 1,000,000 \u00f7 3,600,000 = 0.28 kWh. Light bulb = 0.06 kWh. This comparison illustrates that food contains a remarkable amount of chemical energy \u2014 a single Mars bar could theoretically power a 60W bulb for about 4.6 hours. However, the human body is not 100% efficient at converting food energy to useful work (typically about 25% for mechanical work), so in practice you would need several Mars bars worth of food energy to power the equivalent electrical output.",
+        "common_errors": [
+          "Comparing food energy directly with electrical energy without noting that biological efficiency is much less than 100%",
+          "Making errors in unit conversion between kJ, J, and kWh"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluating energy scales from quantum to cosmic, understanding orders of magnitude, and critically analysing energy claims in media and advertising.",
+        "example_task": "A newspaper headline claims 'A bolt of lightning contains enough energy to power a house for a month.' Evaluate this claim.",
+        "example_response": "A typical lightning bolt transfers approximately 1-5 billion joules (1-5 GJ) of energy, but only over about 0.001 seconds, and most of this is dissipated as heat, light, and sound in the air. The actual electrical energy in the current channel is approximately 250 kWh (about 1 GJ). A UK household uses approximately 8 kWh per day, or about 240 kWh per month. So the total energy in a lightning bolt (250 kWh) roughly matches one month's household electricity \u2014 the headline is approximately correct in terms of total energy. However, the claim is deeply misleading because: the energy is delivered in a fraction of a second at billions of watts of power, making it impossible to capture and store with any practical technology; the voltage (up to 300 million volts) and current (up to 30,000 amps) far exceed what any household system could handle; the energy is distributed along the entire path of the bolt, not concentrated at a capture point; and the unpredictability of lightning strikes makes it an unreliable energy source. This is a good example of why critical evaluation of energy claims requires checking both the total energy and the rate, form, and practicality of energy delivery. Energy without controllable power is not useful energy.",
+        "common_errors": [
+          "Accepting energy comparisons at face value without considering the rate of delivery (power) and practicality of capture",
+          "Not distinguishing between total energy content and usable energy"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C110",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that using energy costs money and that different fuels have different costs.",
+        "example_task": "Why does using the heating cost money?",
+        "example_response": "The heating uses gas or electricity, which you have to pay for. The gas or electricity company measures how much energy you use, and you pay for each unit. Using more heating for longer costs more money because you are using more energy.",
+        "common_errors": [
+          "Thinking electricity is free once you have an appliance",
+          "Not connecting energy use to financial cost"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reading and interpreting domestic fuel bills, understanding meter readings and unit costs.",
+        "example_task": "An electricity meter reads 45,230 kWh at the start of the month and 45,530 kWh at the end. The cost is 34p per kWh. Calculate the monthly cost.",
+        "example_response": "Units used = 45,530 - 45,230 = 300 kWh. Cost = 300 \u00d7 \u00a30.34 = \u00a3102.00. The meter measures the total energy in kilowatt-hours that has been supplied. The difference between two readings gives the energy used in that period. Bills also include a standing charge (a daily fixed fee for being connected to the supply, regardless of how much you use).",
+        "common_errors": [
+          "Forgetting to subtract the previous meter reading to find units used",
+          "Not including the standing charge in total bill calculations"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Comparing the cost-effectiveness of different fuels and energy sources, and calculating running costs for specific appliances.",
+        "example_task": "Compare the cost of heating water using electricity (34p/kWh) versus gas (10p/kWh), given that both have roughly the same efficiency for water heating.",
+        "example_response": "For the same amount of energy (e.g., 1 kWh), electricity costs 34p while gas costs 10p \u2014 electricity is approximately 3.4 times more expensive per unit of energy. To heat a bath of water (approximately 5 kWh of energy needed): electric immersion heater cost = 5 \u00d7 34p = \u00a31.70; gas boiler cost = 5 \u00d7 10p = \u00a30.50. However, efficiency matters: modern gas boilers are about 90% efficient, so actual gas needed = 5/0.9 = 5.56 kWh, costing 56p. Electric immersion heaters are close to 100% efficient at the point of use, but the electricity was generated at about 40% efficiency in a gas power station \u2014 so the primary energy use is higher. Heat pumps change this calculation dramatically: a heat pump uses 1 kWh of electricity to move 3-4 kWh of heat energy from outside air, making it effectively 300-400% efficient, costing approximately 8.5-11p per kWh of heat delivered.",
+        "common_errors": [
+          "Comparing fuel costs without considering efficiency \u2014 the cost per useful kWh of heat is what matters",
+          "Not knowing that heat pumps can exceed 100% efficiency by moving heat rather than generating it"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analysing the full economic and environmental costs of energy, including hidden costs and the concept of energy payback time.",
+        "example_task": "Solar panels have a high upfront cost but produce 'free' electricity. Calculate whether solar panels are economically worthwhile over their 25-year lifetime.",
+        "example_response": "Typical UK residential solar installation: 4 kWp system, cost approximately \u00a36,000, generates approximately 3,400 kWh/year in southern England. Annual electricity saving: 3,400 \u00d7 \u00a30.34 = \u00a31,156 (if all electricity is used directly). With the Smart Export Guarantee (payment for surplus exported to the grid at ~15p/kWh), assuming 50% self-use and 50% export: (1,700 \u00d7 \u00a30.34) + (1,700 \u00d7 \u00a30.15) = \u00a3578 + \u00a3255 = \u00a3833/year. Payback time = \u00a36,000 \u00f7 \u00a3833 = approximately 7.2 years. Over 25 years: total saving = 25 \u00d7 \u00a3833 = \u00a320,825, minus the \u00a36,000 cost = \u00a314,825 net benefit. The environmental payback (energy used to manufacture the panels vs energy produced) is typically 1-3 years \u2014 so panels produce clean energy for 22-24 years beyond their manufacturing energy debt. However, this analysis has uncertainties: electricity prices may rise (improving the economics) or fall (worsening them), panel degradation reduces output by approximately 0.5% per year, battery storage adds cost but increases self-use proportion, and the discount rate (time value of money) means \u00a3833 in 20 years is worth less than \u00a3833 today. Despite these uncertainties, the economics of solar are now firmly positive in most UK locations, making it both an environmentally and financially sound investment.",
+        "common_errors": [
+          "Not considering the payback period \u2014 solar panels are a long-term investment, not an immediate saving",
+          "Ignoring panel degradation and the time value of money in lifetime calculations"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C111",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that there are different sources of energy, some of which will run out (non-renewable) and some that will not (renewable).",
+        "example_task": "Name two renewable and two non-renewable energy sources.",
+        "example_response": "Renewable: solar energy (from sunlight) and wind energy (from moving air). These will not run out because the Sun keeps shining and the wind keeps blowing. Non-renewable: coal and natural gas (fossil fuels). These will eventually run out because they take millions of years to form and we are using them much faster.",
+        "common_errors": [
+          "Thinking nuclear energy is renewable \u2014 uranium is finite",
+          "Confusing renewable with 'no environmental impact' \u2014 all energy sources have some impact"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describing how different energy resources generate electricity and comparing their advantages and disadvantages.",
+        "example_task": "Explain how wind turbines generate electricity and give one advantage and one disadvantage.",
+        "example_response": "Wind turns the blades of the turbine, which drives a generator to produce electricity. The kinetic energy of the wind is converted to electrical energy. Advantage: wind is renewable and produces no CO\u2082 during operation. Disadvantage: wind is intermittent \u2014 when the wind does not blow, no electricity is generated, so backup sources or energy storage are needed. Other factors: wind farms can affect wildlife (bird strikes) and some people consider them visually intrusive in landscapes.",
+        "common_errors": [
+          "Saying wind turbines produce 'no pollution' without acknowledging manufacturing and installation impacts",
+          "Not mentioning intermittency as the key limitation of wind energy"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Evaluating the suitability of different energy resources for different contexts, considering reliability, environmental impact, and cost.",
+        "example_task": "A remote island needs a reliable electricity supply. Evaluate whether solar, wind, or diesel generators would be the best primary energy source.",
+        "example_response": "Diesel generators: reliable and can be run on demand, but fuel must be shipped to the island (expensive and vulnerable to supply disruption), produce CO\u2082 and air pollution, and have ongoing fuel costs. Solar panels: no fuel costs once installed, low maintenance, but output depends on weather and time of day (zero at night), and energy storage (batteries) is needed for continuous supply, adding significant cost. Wind turbines: good for many island locations (often windy coastal sites), but intermittent and require maintenance expertise that may not be available locally. The best solution for most islands is a hybrid system: solar plus wind (their intermittency patterns often complement each other \u2014 windy when not sunny and vice versa) with battery storage for short gaps and a small diesel generator as backup for extended calm, cloudy periods. This combination provides reliability while minimising fuel costs and emissions. Many real island communities (e.g., Eigg in Scotland, Ta'u in American Samoa) have adopted this approach successfully.",
+        "common_errors": [
+          "Recommending a single energy source without considering reliability and intermittency",
+          "Not suggesting a hybrid approach, which is the practical solution for most real-world situations"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analysing the energy transition from fossil fuels to renewables at national and global scale, including grid-level challenges and the role of emerging technologies.",
+        "example_task": "The UK aims to decarbonise its electricity grid by 2035. Evaluate the main technical challenges and possible solutions.",
+        "example_response": "The UK generated approximately 42% of its electricity from renewables in 2023, with wind as the largest single source. Reaching 100% decarbonised electricity by 2035 faces several challenges: (1) Intermittency: wind and solar output fluctuates hourly and seasonally. Solutions: grid-scale battery storage (rapidly deploying but expensive), pumped hydro storage (limited UK sites), hydrogen production (electrolysis when surplus renewable electricity is available, burned when needed), and interconnectors to import/export electricity with neighbouring countries. (2) Baseload: the grid needs reliable baseline supply. Solutions: nuclear power (Hinkley Point C under construction), tidal energy (predictable unlike wind/solar), and demand-side management (shifting energy-intensive industry to times of surplus). (3) Grid infrastructure: renewable sources are often far from demand centres (offshore wind in the North Sea, solar in southern England, demand in cities). Solutions: new high-voltage transmission lines, distributed generation (local solar), and smart grid technology. (4) Storage for 'dunkelflaute' events (extended periods of low wind and solar, especially in winter): hydrogen storage, imported interconnector electricity, and retained gas plants with carbon capture for emergency use. (5) Cost: while renewable electricity is now cheaper than fossil fuel electricity per MWh, the total system cost (including storage and grid upgrades) is higher. The technical challenges are solvable \u2014 no fundamental physics prevents a decarbonised grid \u2014 but the integration, cost, and speed of deployment are the real hurdles.",
+        "common_errors": [
+          "Suggesting 100% renewables is straightforward without addressing intermittency, storage, and grid infrastructure challenges",
+          "Not recognising that the cost of renewable electricity generation is now competitive \u2014 the challenge is system integration, not generation cost"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C112",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that machines like levers and ramps make it easier to move heavy things by reducing the force needed.",
+        "example_task": "Why is it easier to push a heavy box up a ramp than to lift it straight up?",
+        "example_response": "A ramp lets you use less force because you push the box over a longer distance. Instead of lifting it straight up (short distance, lots of force), you push it along the ramp (longer distance, less force). The total work done is the same either way, but the ramp makes the force more manageable.",
+        "common_errors": [
+          "Thinking the ramp reduces the total work needed \u2014 it only reduces the force by spreading it over a longer distance",
+          "Believing machines give you 'free' extra force"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explaining the force-distance trade-off in levers, pulleys, and gears, and calculating mechanical advantage.",
+        "example_task": "A lever has the fulcrum 20 cm from a heavy rock and 80 cm from where you push down. How does this help you lift the rock?",
+        "example_response": "The lever trades distance for force. The effort arm (80 cm) is 4 times longer than the load arm (20 cm). This gives a mechanical advantage of 4 \u2014 you only need to apply one-quarter of the rock's weight to lift it. However, your hand moves 4 times further than the rock rises. The work done is the same: a small force over a large distance equals a large force over a small distance. Mechanical advantage = effort arm length \u00f7 load arm length = 80/20 = 4.",
+        "common_errors": [
+          "Thinking the lever creates energy \u2014 it only redirects and redistributes force",
+          "Not calculating mechanical advantage correctly"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analysing different types of simple machines, calculating work done (W = F \u00d7 d), and explaining why efficiency is always less than 100%.",
+        "example_task": "A person uses a pulley to lift a 200 N box through 3 m. They pull with a force of 110 N over 6 m of rope. Calculate the efficiency of the pulley system.",
+        "example_response": "Useful work done (output) = force \u00d7 distance = 200 N \u00d7 3 m = 600 J. Total work done (input) = 110 N \u00d7 6 m = 660 J. Efficiency = useful output \u00f7 total input \u00d7 100% = 600/660 \u00d7 100 = 90.9%. The 60 J difference (660 - 600 = 60 J) is energy dissipated through friction in the pulley mechanism and the rope, transferred to thermal energy in the surroundings. No machine can be 100% efficient because friction always transfers some energy to thermal energy stores. The mechanical advantage is 200/110 = 1.82 \u2014 the person needs to pull less than the weight of the box, but must pull through twice the distance.",
+        "common_errors": [
+          "Confusing input work with output work when calculating efficiency",
+          "Not identifying where the 'lost' energy goes \u2014 it is transferred to thermal energy through friction, not destroyed"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluating how simple machines combine in complex mechanisms, understanding the relationship between mechanical advantage and velocity ratio, and applying this to engineering design.",
+        "example_task": "A bicycle uses multiple simple machines. Identify at least three and explain how they work together to make cycling efficient.",
+        "example_response": "A bicycle combines several simple machines: (1) Levers \u2014 the pedal cranks are levers, with the bottom bracket as the fulcrum. The foot pushes on the pedal (effort arm), and the crank turns the front sprocket (load arm). The crank length determines the mechanical advantage. (2) Gears and chain (wheel and axle + belt drive) \u2014 the chain transfers force from the front sprocket to the rear sprocket. Gear ratios determine the trade-off: a large front sprocket with a small rear sprocket gives high gear (more speed, less force multiplication \u2014 good for flat roads). A small front sprocket with a large rear sprocket gives low gear (less speed, more force multiplication \u2014 good for hills). (3) Wheel and axle \u2014 the wheels themselves are wheel-and-axle machines. The large wheel diameter means a small rotation of the axle translates to a large distance covered. The key engineering insight is that these machines work in series \u2014 the mechanical advantages multiply. A low gear ratio of 1:3 combined with a crank:wheel radius ratio means the total mechanical advantage can be 5 or more on the steepest hill setting. However, the velocity ratio also multiplies \u2014 in low gear, the rider must pedal many revolutions per wheel revolution. The system is remarkably efficient \u2014 a well-maintained bicycle converts approximately 95-99% of pedal energy into forward motion, making it one of the most energy-efficient transport mechanisms ever designed. The losses are mainly in tyre deformation, chain friction, and air resistance \u2014 not in the mechanism itself.",
+        "common_errors": [
+          "Not identifying that multiple simple machines combine in series, with their effects multiplying",
+          "Thinking gears create extra energy rather than trading force for speed or vice versa"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C113",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that heat flows from hot objects to cold objects until they reach the same temperature.",
+        "example_task": "A hot cup of tea left on a table eventually cools down to room temperature. Why?",
+        "example_response": "The tea is hotter than the surrounding air. Heat energy transfers from the hot tea to the cooler air until both reach the same temperature. Energy always flows from hot to cold, never the other way. Once the tea and the room are at the same temperature, no more heat flows \u2014 this is called thermal equilibrium.",
+        "common_errors": [
+          "Thinking 'cold' flows into the tea \u2014 only heat energy transfers, and it goes from hot to cold",
+          "Thinking the tea reaches 0\u00b0C \u2014 it reaches room temperature, not zero"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understanding thermal equilibrium and explaining how insulators slow down the rate of heat transfer.",
+        "example_task": "Explain why a woolly jumper keeps you warm.",
+        "example_response": "A woolly jumper is an insulator \u2014 it slows down the rate at which heat energy transfers from your warm body to the cooler air. The wool fibres trap pockets of air, and air is a poor conductor of heat. The trapped air cannot move easily, reducing convection. The jumper does not add heat \u2014 your body generates heat through respiration. The jumper simply reduces the rate at which this heat escapes. Eventually, even in a jumper, your body would reach thermal equilibrium with the environment, but the insulation slows this process significantly.",
+        "common_errors": [
+          "Thinking the jumper generates heat \u2014 it only slows heat loss from the body",
+          "Not identifying trapped air as the main insulating factor in fibrous materials"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explaining conduction, convection, and radiation as mechanisms of heat transfer and designing experiments to compare insulating materials.",
+        "example_task": "Design a fair test to compare the insulating effectiveness of four different materials around a beaker of hot water.",
+        "example_response": "Equipment: four identical beakers, hot water at the same temperature (e.g., 80\u00b0C), thermometers or temperature probes, four wrapping materials (cotton wool, bubble wrap, newspaper, foil), stopwatch. Method: wrap each beaker with the same thickness of one material. Fill each with the same volume of water at the same starting temperature. Record the temperature every 2 minutes for 30 minutes. Control variables: same volume of water, same starting temperature, same beaker type, same thickness of insulation, same room temperature. The best insulator will show the slowest temperature decrease. This works because heat is lost by conduction (through the material), convection (warm air rising from the top), and radiation (infrared emission from the surface). A lid reduces convection losses. Good insulators reduce conduction by trapping air (cotton wool, bubble wrap) or reflecting radiation (foil). I would also include a control beaker with no insulation.",
+        "common_errors": [
+          "Not controlling the thickness of insulation \u2014 thicker layers insulate better regardless of material",
+          "Forgetting to include a control (uninsulated beaker) for comparison"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analysing heat transfer quantitatively, understanding the role of thermal conductivity, and evaluating insulation in building design.",
+        "example_task": "A house loses heat through walls, roof, floor, windows, and draughts. Explain why building regulations require minimum insulation standards and evaluate which improvement would save the most energy.",
+        "example_response": "Approximate heat loss distribution for an uninsulated UK house: roof 25%, walls 35%, floor 15%, windows 10%, draughts 15%. Building regulations set minimum U-values (thermal transmittance, measured in W/m\u00b2K \u2014 lower is better) to limit heat loss. The most cost-effective improvements in order: (1) Loft insulation (tackles 25% of heat loss, relatively cheap at ~\u00a3300, payback in 1-2 years) \u2014 fibreglass or mineral wool traps air and has very low thermal conductivity. (2) Draught-proofing (15% of heat loss, very cheap, immediate payback). (3) Cavity wall insulation (35% of total, but only applicable to cavity walls, moderate cost ~\u00a31,000, payback 3-5 years). (4) Double/triple glazing (10%, very expensive ~\u00a35,000+, long payback of 10-20+ years) \u2014 works by trapping an insulating layer of air or argon between panes. (5) Floor insulation (15%, moderate cost, moderate payback). The physics: heat transfer rate = U-value \u00d7 area \u00d7 temperature difference. To reduce heat loss, you can reduce U-value (better insulation), reduce area (fewer windows), or reduce temperature difference (lower thermostat). Diminishing returns apply \u2014 the first layer of loft insulation makes a huge difference; adding more makes progressively less. The economic optimum is typically 270mm of loft insulation, beyond which the additional energy saving does not justify the material cost. This is a real-world application of thermal equilibrium physics with significant economic and environmental consequences.",
+        "common_errors": [
+          "Not prioritising improvements by cost-effectiveness \u2014 loft insulation before triple glazing",
+          "Thinking more insulation always equals proportionally more saving \u2014 diminishing returns apply"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C114",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that energy can be transferred from one place to another by heating, light, sound, and electricity.",
+        "example_task": "How does energy get from the Sun to the Earth?",
+        "example_response": "Energy travels from the Sun to the Earth as light (and other electromagnetic radiation). It crosses the empty space between the Sun and Earth \u2014 it does not need a material to travel through. This energy heats the Earth and provides light for plants to grow.",
+        "common_errors": [
+          "Thinking energy needs a material (medium) to travel \u2014 electromagnetic radiation can travel through a vacuum",
+          "Not recognising that the Sun transfers energy through radiation, not conduction or convection"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying energy transfer processes in different contexts and understanding that energy is transferred between stores.",
+        "example_task": "Describe the energy transfers when an electric kettle boils water.",
+        "example_response": "Chemical energy store (in the fuel at the power station) \u2192 electrical energy transfer (through the wires to the kettle) \u2192 thermal energy store (heating element gets hot) \u2192 thermal energy transfer by heating (from the element to the water) \u2192 thermal energy store (the water gets hotter). Some energy is also transferred to the thermal energy store of the surroundings (the kettle gets warm, the room gets slightly warmer) and to the kinetic energy of water molecules (convection currents in the water).",
+        "common_errors": [
+          "Saying energy is 'used up' rather than transferred between stores",
+          "Not identifying the intermediate steps in the energy transfer chain"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Using the energy stores and transfers model to describe a variety of processes, identifying useful and wasted energy transfers.",
+        "example_task": "A car engine burns petrol. Describe all the energy transfers, identifying which are useful and which are wasted.",
+        "example_response": "Chemical energy store (petrol) \u2192 useful: kinetic energy store (car moves forward). Wasted: thermal energy store of the engine, exhaust gases, and surroundings (heat \u2014 approximately 70% of fuel energy); sound energy transfer (engine noise); kinetic energy of exhaust gases. Only about 25-30% of the fuel's chemical energy becomes useful kinetic energy of the car. The rest is dissipated \u2014 spread out into the thermal energy of the surroundings, where it is too dispersed to be useful. This dissipation is inevitable due to friction and the thermodynamic limits of heat engines (Carnot efficiency). Modern engines improve efficiency through turbocharging (recovering energy from exhaust gases), regenerative braking (in hybrids, converting kinetic energy back to chemical energy in a battery), and reducing friction through better lubricants and materials.",
+        "common_errors": [
+          "Not recognising that most of a car engine's energy output is wasted as heat",
+          "Using the phrase 'energy is lost' without specifying it is transferred to thermal energy stores in the surroundings"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analysing energy transfers in complex systems using Sankey diagrams, understanding dissipation, and evaluating the quality of energy.",
+        "example_task": "In a coal power station, only about 35% of the chemical energy in coal becomes electrical energy. Draw a Sankey diagram and explain why the rest cannot be converted to electricity.",
+        "example_response": "Sankey diagram: input arrow (100% chemical energy in coal) splits into: useful output (35% electrical energy \u2014 narrower arrow), waste thermal energy to cooling towers (55% \u2014 widest arrow), waste thermal energy in flue gases (5%), friction and sound (5%). The reason 65% is wasted is fundamental, not just engineering failure. The second law of thermodynamics states that when converting thermal energy to mechanical energy (to drive the generator), some energy must always be rejected as lower-temperature heat. The maximum theoretical efficiency of a heat engine is the Carnot efficiency: \u03b7 = 1 - (T_cold/T_hot), where temperatures are in kelvin. For a coal plant operating between 550\u00b0C (823K) and 30\u00b0C (303K): \u03b7_max = 1 - 303/823 = 63%. Real efficiency is lower due to friction, heat losses, and incomplete combustion. This means even a perfect coal power station could never convert more than 63% to electricity. Combined Heat and Power (CHP) plants improve overall utilisation by using the 'waste' heat for district heating \u2014 the thermal energy is still produced but becomes useful rather than wasted. This raises total energy utilisation to 80%+ while electrical efficiency remains at 35%. The concept of energy 'quality' is key: high-temperature heat and electricity are high-quality (can do many types of work), while low-temperature heat is low-quality (limited usefulness). Every energy conversion degrades quality, which is the real meaning of the second law.",
+        "common_errors": [
+          "Thinking the 65% waste is due to poor engineering rather than fundamental thermodynamic limits",
+          "Not understanding that the Carnot efficiency sets an absolute upper bound on heat engine efficiency"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C115",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that energy cannot be created or destroyed, only transferred from one store to another.",
+        "example_task": "When you rub your hands together, they get warm. Where does this energy come from?",
+        "example_response": "The energy comes from the chemical energy store in your body (from food). When you rub your hands together, friction converts kinetic energy (movement) into thermal energy (heat). The energy was not created \u2014 it was transferred from the chemical energy store in your muscles to the thermal energy store in your hands. Energy is never created or destroyed.",
+        "common_errors": [
+          "Thinking friction 'creates' energy \u2014 it converts kinetic energy to thermal energy",
+          "Believing energy can appear from nowhere or disappear"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Stating the law of conservation of energy and applying it to track energy through a system.",
+        "example_task": "A ball is dropped from a height. Describe the energy changes using the law of conservation of energy.",
+        "example_response": "At the top: the ball has maximum gravitational potential energy (GPE) and zero kinetic energy (KE). As it falls: GPE decreases and KE increases \u2014 the ball speeds up. Just before hitting the ground: GPE is at minimum, KE is at maximum. Total energy is conserved throughout \u2014 the GPE lost equals the KE gained (ignoring air resistance). On impact: KE is converted to thermal energy and sound energy as the ball and ground deform. The total energy at every point remains the same \u2014 it just changes between stores. With air resistance, some GPE is transferred to thermal energy of the air during the fall, so the ball arrives with less KE.",
+        "common_errors": [
+          "Thinking energy disappears when the ball stops \u2014 it is converted to thermal energy and sound",
+          "Not accounting for energy transferred to the surroundings through air resistance"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applying conservation of energy quantitatively (Ep = mgh, Ek = \u00bdmv\u00b2) and explaining dissipation.",
+        "example_task": "A 2 kg ball is dropped from 10 m. Calculate its speed just before hitting the ground (g = 10 N/kg). Explain why the measured speed would be slightly less.",
+        "example_response": "GPE at top = mgh = 2 \u00d7 10 \u00d7 10 = 200 J. By conservation of energy (ignoring air resistance): KE at bottom = 200 J. \u00bdmv\u00b2 = 200, so v\u00b2 = 200/(\u00bd \u00d7 2) = 200, so v = \u221a200 = 14.1 m/s. The measured speed would be slightly less because some energy is dissipated due to air resistance during the fall. Air resistance is a friction force that transfers kinetic energy to thermal energy of the air molecules. The 'missing' kinetic energy has not been destroyed \u2014 it has been transferred to the thermal energy store of the surrounding air. The total energy (kinetic + thermal + sound + any remaining GPE) is always exactly 200 J throughout the fall.",
+        "common_errors": [
+          "Forgetting to account for air resistance when explaining why measured values are lower than calculated ones",
+          "Making errors in the kinetic energy formula \u2014 it is \u00bdmv\u00b2, not mv\u00b2"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Explaining the distinction between conservation of energy (a universal law) and dissipation (spreading out), and evaluating the implications for perpetual motion machines.",
+        "example_task": "Explain why a perpetual motion machine is impossible, even though energy is conserved.",
+        "example_response": "A perpetual motion machine would run forever without any energy input. Conservation of energy says energy cannot be created or destroyed, so you might think a machine could simply recycle the same energy indefinitely. The fatal flaw is dissipation: in every real process, some energy is inevitably transferred to the thermal energy store of the surroundings through friction, air resistance, electrical resistance, and sound. This dissipated energy is too spread out and low-temperature to be recovered and reused within the machine. The second law of thermodynamics formalises this: the total entropy (disorder) of a closed system always increases. Energy naturally spreads from concentrated, useful forms (kinetic, chemical, electrical) to dispersed, less useful forms (low-temperature thermal energy). Every moving part introduces friction, every electrical connection has resistance, and every air-surrounded component experiences drag. A pendulum gradually slows down not because it 'uses up' energy (conservation of energy holds perfectly) but because energy is continuously transferred to thermal energy in the air and pivot, dissipating into the surroundings. You cannot get this energy back into the pendulum without adding external energy. This is why every attempt to build a perpetual motion machine has failed and will always fail \u2014 not because conservation of energy is violated, but because dissipation is universal and irreversible. The US Patent Office refuses to consider perpetual motion patent applications for this reason.",
+        "common_errors": [
+          "Confusing conservation of energy (a law of physics that always holds) with the practical reversibility of energy transfers (which is limited by dissipation)",
+          "Thinking perpetual motion violates conservation of energy \u2014 it actually violates the second law of thermodynamics"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C116",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that energy in a system can be stored in different ways \u2014 as movement, height, heat, or in fuels.",
+        "example_task": "Name three ways energy can be stored.",
+        "example_response": "Energy can be stored as: kinetic energy (a moving object), gravitational potential energy (an object raised above the ground), and chemical energy (in food, fuels, or batteries). There are also thermal energy stores, elastic potential energy (a stretched spring), and many others.",
+        "common_errors": [
+          "Confusing energy stores with energy transfers \u2014 'heating' is a transfer, 'thermal energy' is a store",
+          "Thinking energy only exists when something is moving"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describing energy changes in a system as transfers between stores, tracking energy through a multi-step process.",
+        "example_task": "Describe the energy changes when a battery-powered toy car drives up a slope and stops.",
+        "example_response": "Start: energy is in the chemical energy store of the battery. The battery transfers energy electrically to the motor, which converts electrical energy to kinetic energy (car moves). As the car goes up the slope, some kinetic energy is transferred to the gravitational potential energy store (higher = more GPE). Throughout, some energy is dissipated to the thermal energy store of the surroundings through friction in the motor, axles, and tyres, and through sound. When the battery runs out: the car's remaining kinetic energy is gradually transferred to GPE (going uphill) and thermal energy (friction) until the car stops. At the end: the original chemical energy has been transferred to gravitational potential energy (car is higher) and thermal energy of the surroundings (warming).",
+        "common_errors": [
+          "Missing the dissipation step \u2014 energy transferred to thermal energy of surroundings through friction at every stage",
+          "Listing energy types without showing the transfers between them"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Calculating energy in different stores (Ek = \u00bdmv\u00b2, Ep = mgh, Ee = \u00bdke\u00b2) and tracking conservation through complex systems.",
+        "example_task": "A 50 kg person jumps from a 5 m diving board. Calculate their gravitational potential energy at the top, their speed when entering the water, and explain where all the energy goes after they enter the water.",
+        "example_response": "GPE at top: Ep = mgh = 50 \u00d7 10 \u00d7 5 = 2,500 J. At water entry (all GPE converted to KE, ignoring air resistance): \u00bdmv\u00b2 = 2,500. v\u00b2 = 2,500 \u00d7 2/50 = 100. v = 10 m/s. On entering the water: the kinetic energy is rapidly transferred to the water through drag forces. The water molecules gain kinetic energy (waves and splashing), which then dissipates to thermal energy as the waves die down. Sound energy is also produced (the splash). The diver's body decelerates, and the water temperature increases by an imperceptibly small amount (2,500 J spread across thousands of litres of water). Eventually, all 2,500 J ends up as thermal energy of the pool water and surroundings \u2014 the total energy is conserved at every stage.",
+        "common_errors": [
+          "Not tracing the energy all the way to its final thermal energy store in the surroundings",
+          "Forgetting that the speed at entry is only accurate if air resistance is neglected"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analysing energy transfers in real-world engineering systems, understanding efficiency cascades, and evaluating the concept of useful energy.",
+        "example_task": "Trace the energy from the Sun to the movement of an electric car, identifying the efficiency losses at each stage.",
+        "example_response": "Sun \u2192 solar panel: solar radiation hits the panel. Efficiency approximately 20% \u2014 only some wavelengths are absorbed, and semiconductor physics limits conversion. 100 J of sunlight \u2192 20 J of electrical energy. Solar panel \u2192 grid: transmission losses approximately 5%. 20 J \u2192 19 J at the charging station. Charging station \u2192 car battery: charging efficiency approximately 90%. 19 J \u2192 17.1 J stored in battery. Battery \u2192 motor: discharge and motor efficiency approximately 85%. 17.1 J \u2192 14.5 J of kinetic energy. Motor \u2192 wheels: drivetrain efficiency approximately 95%. 14.5 J \u2192 13.8 J at the wheels. Overall efficiency: 13.8/100 = 13.8%. Contrast with a petrol car: Sun \u2192 photosynthesis (0.1-2% efficient over millions of years) \u2192 fossil fuel \u2192 engine (25-30%) \u2192 drivetrain (85%) = approximately 0.02-0.5% overall from sunlight to motion. The electric car pathway is dramatically more efficient from sunlight to motion. However, if the electricity comes from a gas power station (35% efficient) rather than solar, the overall efficiency drops: 100 J gas \u2192 35 J electrical \u2192 33.25 J after transmission \u2192 29.9 J after charging \u2192 25.4 J motor \u2192 24.2 J at wheels = 24.2%. Still better than a petrol car (25-30% from fuel to wheels) because the power station is a large, optimised heat engine, but the advantage is smaller. This cascade analysis reveals that the energy source matters as much as the vehicle technology.",
+        "common_errors": [
+          "Not multiplying efficiencies at each stage \u2014 the overall efficiency is the product of all individual efficiencies, not the average",
+          "Thinking electric cars are zero-emission without considering the electricity source"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C117",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knowing that when you push or pull something, you transfer energy, and that heating and electrical current are other ways energy is transferred.",
+        "example_task": "How does energy transfer from a battery to a light bulb?",
+        "example_response": "Energy transfers from the chemical energy store in the battery through the wires as an electric current (electrical transfer) to the light bulb. In the bulb, the electrical energy is transferred to light energy and thermal energy (the bulb gets hot). The battery pushes the electric current around the circuit, which carries energy to the bulb.",
+        "common_errors": [
+          "Thinking electricity is a type of energy rather than a way of transferring energy",
+          "Not recognising that the light bulb also produces heat, not just light"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifying the physical mechanism behind different energy transfers: forces doing work, heating, radiation, and electrical work.",
+        "example_task": "Explain what 'doing work' means in physics and give an example.",
+        "example_response": "In physics, work is done when a force causes an object to move in the direction of the force. Work done = force \u00d7 distance (W = F \u00d7 d), measured in joules. For example, when you lift a 10 N book through 2 m, you do 10 \u00d7 2 = 20 J of work against gravity, transferring 20 J to the gravitational potential energy store. The physical mechanisms for energy transfer are: forces doing work (mechanical \u2014 pushing, pulling, lifting), heating (conduction, convection, radiation \u2014 energy transfers from hot to cold), electrical work (electric current carries energy through a circuit), and electromagnetic radiation (light, infrared \u2014 energy carried by waves).",
+        "common_errors": [
+          "Using the everyday meaning of 'work' (effort) rather than the physics definition (force \u00d7 distance in the direction of the force)",
+          "Not specifying that the distance must be in the direction of the force"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Linking physical mechanisms to energy changes quantitatively and explaining how the mechanism determines the rate of energy transfer.",
+        "example_task": "A crane lifts a 5,000 N load through 20 m in 10 seconds. Calculate the work done and the power of the crane.",
+        "example_response": "Work done = force \u00d7 distance = 5,000 N \u00d7 20 m = 100,000 J = 100 kJ. Power = work done \u00f7 time = 100,000 J \u00f7 10 s = 10,000 W = 10 kW. The crane transfers 100 kJ of energy from its fuel (chemical energy store) to the gravitational potential energy store of the load. It does this at a rate of 10 kW. The mechanism is a force (tension in the cable) doing work against gravity over a distance. In reality, the crane's motor must output more than 10 kW because some energy is dissipated through friction in the motor, gears, pulley, and cable, and through air resistance. If the crane is 60% efficient, the motor must provide 10/0.6 = 16.7 kW.",
+        "common_errors": [
+          "Not including efficiency losses when calculating real-world power requirements",
+          "Confusing work done (total energy transferred) with power (rate of energy transfer)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analysing how different physical mechanisms interact in complex systems, evaluating energy flow diagrams, and connecting mechanisms to fundamental physics principles.",
+        "example_task": "When you rub your hands together, the kinetic energy of your hands is converted to thermal energy through friction. Explain, at the particle level, what friction actually does and why it always produces heat.",
+        "example_response": "At the particle level, friction occurs because the surfaces of your two hands are not perfectly smooth \u2014 they have microscopic bumps (asperities) that interlock and collide as the surfaces slide past each other. When you push your hands together and slide them, the ordered kinetic energy of your hands (all molecules moving in the same direction) is converted to disordered kinetic energy of surface molecules (molecules vibrating randomly in all directions). This disordered kinetic energy is thermal energy \u2014 temperature increases. The key physics: ordered energy (all particles moving together) is being converted to disordered energy (particles vibrating randomly). This is a one-way process because the second law of thermodynamics makes it statistically virtually impossible for randomly vibrating molecules to spontaneously align their motion in one direction again. At a deeper level, friction involves the formation and breaking of temporary bonds between surface atoms (adhesion), the deformation and fracture of asperity tips, and the dragging of surface material. All of these processes convert directed kinetic energy into random thermal motion. This is why friction always produces heat \u2014 it is a fundamental consequence of converting ordered motion to disordered motion, which is an irreversible increase in entropy. This same principle explains why perpetual motion machines fail, why car brakes get hot, why meteorites burn up entering the atmosphere, and why rubbing sticks together can start a fire.",
+        "common_errors": [
+          "Explaining friction only as 'surfaces rubbing' without the particle-level mechanism of ordered to disordered energy conversion",
+          "Not connecting friction's universal production of heat to the second law of thermodynamics and entropy increase"
+        ]
+      }
+    ]
+  }
+]

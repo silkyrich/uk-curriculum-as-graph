@@ -1,0 +1,149 @@
+[
+  {
+    "concept_id": "MA-KS3-C090",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can identify what a problem is asking and attempt a first step, but struggles to plan a multi-step approach without guidance.",
+        "example_task": "A cinema has 18 rows of seats. Each row has 24 seats. Tickets cost £8.50 each. If the cinema is full, how much money is collected?",
+        "example_response": "First I find the total number of seats: 18 × 24 = 432 seats. Then I multiply by the ticket price: 432 × £8.50 = £3,672.",
+        "common_errors": [
+          "Attempting to do everything in one step and losing track of the calculation",
+          "Not identifying which operation to use at each step"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Breaks problems into smaller steps with some independence, using known mathematical techniques to work through each step.",
+        "example_task": "A rectangular garden is 12 m by 8 m. A path 1 m wide runs around the outside. Find the area of the path.",
+        "example_response": "The garden plus the path forms a larger rectangle: (12 + 2) by (8 + 2) = 14 m by 10 m (adding 1 m to each side for the path on both sides). Area of larger rectangle = 14 × 10 = 140 m². Area of garden = 12 × 8 = 96 m². Area of path = 140 - 96 = 44 m².",
+        "common_errors": [
+          "Adding only 1 m to each dimension instead of 2 m (forgetting the path goes around both sides)",
+          "Not drawing a diagram to visualise the problem"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Plans and executes multi-step problem solutions independently, selecting appropriate strategies and checking the reasonableness of the answer.",
+        "example_task": "A shop sells apples at 35p each or in bags of 6 for £1.80. Priya needs 20 apples. What is the cheapest way to buy them?",
+        "example_response": "Option 1: Buy all individually: 20 × 35p = £7.00. Option 2: Buy 3 bags of 6 (18 apples) + 2 individual: 3 × £1.80 + 2 × £0.35 = £5.40 + £0.70 = £6.10. Option 3: Buy 4 bags of 6 (24 apples, 4 spare): 4 × £1.80 = £7.20. The cheapest option is 3 bags + 2 individual = £6.10. I checked: the bag price per apple is £1.80 ÷ 6 = 30p, which is cheaper than 35p, so buying as many bags as possible (without too many spare) gives the best price.",
+        "common_errors": [
+          "Not considering all possible combinations (e.g. only comparing all-bags vs all-individual)",
+          "Not checking whether buying an extra full bag might be cheaper than buying the remainder individually"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Solves non-routine and unfamiliar problems by selecting and combining techniques from different areas of mathematics, generalising results and evaluating the solution critically.",
+        "example_task": "The first term of a sequence is 2. Each term after the first is found by squaring the previous term and subtracting 1. Which terms of this sequence are prime? Will there always be prime terms?",
+        "example_response": "Term 1: 2. Term 2: 2² - 1 = 3 (prime). Term 3: 3² - 1 = 8 (not prime: 2³). Term 4: 8² - 1 = 63 = 7 × 9 (not prime). Term 5: 63² - 1 = 3968 = 3969 - 1. Note: n² - 1 = (n-1)(n+1) by difference of two squares. So from term 3 onwards, each term equals (previous - 1)(previous + 1). Since previous ≥ 3, both factors are ≥ 2, so the term is composite. Only terms 1 and 2 (which are 2 and 3) are prime. After that, every term factors as a difference of two squares and is therefore never prime.",
+        "common_errors": [
+          "Listing several terms but not recognising the difference of two squares factorisation",
+          "Not generalising — concluding from a few composite terms that 'it seems like primes stop' without proving it"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C091",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can work with one representation (e.g. a table of values or a graph) but does not yet connect it to other forms of the same relationship.",
+        "example_task": "Here is a table: x = 1, 2, 3, 4 and y = 3, 5, 7, 9. Plot these points on a coordinate grid.",
+        "example_response": "I plot (1,3), (2,5), (3,7), (4,9) on the grid. The points form a straight line going upwards.",
+        "common_errors": [
+          "Plotting coordinates with x and y swapped (e.g. plotting (3,1) instead of (1,3))",
+          "Not using a ruler to check whether the points are collinear"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can convert between two representations of the same relationship (e.g. table to graph, or equation to table) when prompted.",
+        "example_task": "The equation y = 2x + 1 describes a line. Complete a table of values for x = 0, 1, 2, 3, 4, then draw the graph.",
+        "example_response": "When x = 0, y = 1. When x = 1, y = 3. When x = 2, y = 5. When x = 3, y = 7. When x = 4, y = 9. I plot these points and draw a straight line through them. The line crosses the y-axis at (0,1) and goes up by 2 for every 1 across.",
+        "common_errors": [
+          "Making a substitution error (e.g. computing y = 2(3) + 1 as 5 instead of 7)",
+          "Drawing a line that does not pass exactly through all the plotted points"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Moves fluently between numerical, algebraic, graphical and diagrammatic representations, choosing the most useful form to solve a given problem.",
+        "example_task": "A phone contract costs £12 per month plus 8p per text. Write a formula, draw a graph, and use whichever is most useful to find the cost of sending 150 texts in a month.",
+        "example_response": "Formula: C = 12 + 0.08n where C is the monthly cost in pounds and n is the number of texts. For 150 texts: C = 12 + 0.08 × 150 = 12 + 12 = £24. The formula is the most efficient representation here because we need an exact answer for a specific value. The graph would be useful if we wanted to compare this contract visually with another, or read off how many texts we could send for a given budget.",
+        "common_errors": [
+          "Not converting 8p to £0.08 when writing the formula",
+          "Using a graph to find an answer that could be calculated more accurately from the formula"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Strategically selects and switches between representations to gain insight, using each form's strengths to illuminate different aspects of a mathematical situation.",
+        "example_task": "Two tanks are being filled with water. Tank A starts with 20 litres and gains 5 litres per minute. Tank B starts empty and gains 8 litres per minute. Using both algebra and graphs, find when the tanks contain the same amount and explain why both representations are valuable.",
+        "example_response": "Algebraically: Tank A = 20 + 5t, Tank B = 8t. Setting equal: 20 + 5t = 8t, so 20 = 3t, giving t = 6⅔ minutes, when both contain 53⅓ litres. Graphically: the lines intersect at (6.67, 53.3). The algebra gives the exact fractional answer. The graph shows the full picture: before t = 6⅔, Tank A has more; after, Tank B has more. The graph also shows Tank B's steeper gradient, meaning it fills faster. Neither representation alone gives the complete understanding — the algebra is precise, the graph shows the behaviour over time.",
+        "common_errors": [
+          "Only using one representation and not recognising the complementary value of the other",
+          "Not interpreting the intersection point in context (what it means for the tanks)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "MA-KS3-C092",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can extract relevant numbers from a word problem and set up a simple calculation, but does not yet create a mathematical model independently.",
+        "example_task": "A taxi charges £3 plus £1.50 per mile. How much does a 4-mile journey cost?",
+        "example_response": "The cost is £3 + 4 × £1.50 = £3 + £6 = £9.",
+        "common_errors": [
+          "Not identifying which numbers are fixed (the £3 charge) and which depend on distance",
+          "Multiplying all the numbers together rather than adding the fixed charge to the variable cost"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can translate a real-world situation into a mathematical expression or equation with some guidance, identifying the variables and relationships involved.",
+        "example_task": "A plumber charges a £40 call-out fee plus £25 per hour. Write a formula for the total cost C in terms of hours h. How many hours of work would cost £140?",
+        "example_response": "C = 40 + 25h. For C = 140: 140 = 40 + 25h, so 100 = 25h, so h = 4 hours.",
+        "common_errors": [
+          "Writing the formula as C = 40h + 25 (swapping the fixed and variable components)",
+          "Not checking: 40 + 25(4) = 40 + 100 = 140 ✓"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Independently translates complex real-world situations into mathematical models, solves them, and interprets the results back in context, including checking whether the mathematical answer makes sense.",
+        "example_task": "A farmer has 200 m of fencing and wants to enclose a rectangular field against a straight wall (so only three sides need fencing). What dimensions give the maximum area?",
+        "example_response": "Let the width perpendicular to the wall be w metres. The length parallel to the wall is 200 - 2w metres. Area A = w(200 - 2w) = 200w - 2w². To maximise, I find the vertex of this quadratic: w = -200 / (2 × -2) = 50 m. Length = 200 - 2(50) = 100 m. Maximum area = 50 × 100 = 5000 m². Check: the fencing is 50 + 100 + 50 = 200 m ✓.",
+        "common_errors": [
+          "Setting up the perimeter as 2w + 2l = 200 (not accounting for the wall replacing one side)",
+          "Finding the formula but not knowing how to locate the maximum of the quadratic"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Creates, analyses and critiques mathematical models for complex situations, recognising assumptions and limitations, and refining the model where appropriate.",
+        "example_task": "A ball is thrown upwards. Its height in metres after t seconds is modelled by h = 20t - 5t². (a) Find when the ball hits the ground. (b) Find the maximum height. (c) What assumption does this model make, and when does the model break down?",
+        "example_response": "(a) When h = 0: 20t - 5t² = 0, so 5t(4 - t) = 0, giving t = 0 or t = 4 seconds. The ball hits the ground after 4 seconds. (b) Maximum at t = -20/(2 × -5) = 2 seconds. h(2) = 20(2) - 5(4) = 40 - 20 = 20 m. (c) The model assumes no air resistance and constant gravitational acceleration (g = 10 m/s²). It breaks down for t < 0 (before the throw) and for t > 4 (the ball cannot go below ground height). For a real ball, air resistance would reduce the maximum height and increase the flight time slightly. The parabolic model is a simplification — it works well for short flights with dense objects but would be poor for a feather or a rocket.",
+        "common_errors": [
+          "Not recognising the physical limitations of the mathematical model (e.g. negative heights have no meaning)",
+          "Treating the model as exact rather than identifying the simplifying assumptions"
+        ]
+      }
+    ]
+  }
+]

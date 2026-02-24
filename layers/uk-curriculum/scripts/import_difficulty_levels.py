@@ -26,7 +26,7 @@ from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
 
 DATA_DIR = PROJECT_ROOT / "layers" / "uk-curriculum" / "data" / "difficulty_levels"
 
-VALID_LABELS = {"entry", "developing", "expected", "greater_depth"}
+VALID_LABELS = {"entry", "developing", "expected", "greater_depth", "emerging", "secure", "mastery"}
 
 
 class DifficultyLevelImporter:

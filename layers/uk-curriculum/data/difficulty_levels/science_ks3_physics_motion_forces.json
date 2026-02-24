@@ -1,0 +1,835 @@
+[
+  {
+    "concept_id": "SC-KS3-C118",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls the speed equation and substitutes given values with support.",
+        "example_task": "A car travels 100 metres in 20 seconds. Use the equation speed = distance / time to calculate the speed.",
+        "example_response": "Speed = 100 / 20 = 5 m/s.",
+        "common_errors": [
+          "Divides time by distance instead of distance by time.",
+          "Omits the unit (m/s) from the answer."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates speed and rearranges the equation to find distance or time in straightforward problems.",
+        "example_task": "A cyclist travels at 8 m/s for 25 seconds. Calculate the distance travelled.",
+        "example_response": "Distance = speed x time = 8 x 25 = 200 m.",
+        "common_errors": [
+          "Uses the wrong rearrangement (e.g. divides instead of multiplying).",
+          "Confuses instantaneous speed with average speed when given a journey with stops."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Solves multi-step speed problems including unit conversions and distinguishes average speed from instantaneous speed.",
+        "example_task": "A runner completes a 5 km race in 25 minutes. Calculate her average speed in m/s.",
+        "example_response": "5 km = 5000 m; 25 min = 1500 s. Speed = 5000 / 1500 = 3.3 m/s (1 d.p.).",
+        "common_errors": [
+          "Fails to convert km to m or minutes to seconds before calculating.",
+          "Reports the answer as km/min without being asked for that unit."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex journeys involving multiple stages, compares speeds, and evaluates whether average speed is a useful measure.",
+        "example_task": "A delivery van travels 30 km at 60 km/h and then 20 km at 40 km/h. Calculate the average speed for the whole journey and explain why it is not 50 km/h.",
+        "example_response": "Time for first part = 30/60 = 0.5 h. Time for second part = 20/40 = 0.5 h. Total distance = 50 km, total time = 1 h. Average speed = 50/1 = 50 km/h. In this case it happens to be 50 km/h, but average speed is total distance divided by total time, not the mean of the two speeds. If the distances or times differed, the average speed would not equal the mean of the two speeds.",
+        "common_errors": [
+          "Averages the two speeds (60 + 40)/2 = 50 without calculating total distance and total time.",
+          "Treats the problem as though each stage takes the same time rather than checking."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C119",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies basic features of a distance-time graph such as stationary and moving sections.",
+        "example_task": "Look at this distance-time graph. During which section is the object stationary?",
+        "example_response": "The object is stationary during the flat (horizontal) section from 10 s to 20 s because the distance is not changing.",
+        "common_errors": [
+          "Thinks a horizontal line means the object is moving at constant speed.",
+          "Confuses a distance-time graph with a picture of the journey (e.g. thinks a downward slope means going downhill)."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reads values from distance-time graphs and identifies which sections show faster or slower movement.",
+        "example_task": "A distance-time graph has two straight-line sections: one from 0 to 10 s covering 40 m and another from 10 to 30 s covering 40 m. In which section is the object moving faster?",
+        "example_response": "The first section: it covers 40 m in 10 s (4 m/s), while the second covers 40 m in 20 s (2 m/s). A steeper gradient means faster speed.",
+        "common_errors": [
+          "Judges speed by the length of the line rather than the gradient.",
+          "Reads values from the axes inaccurately."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Calculates speed from the gradient of a distance-time graph and draws graphs from journey descriptions.",
+        "example_task": "Draw a distance-time graph for this journey: a person walks 200 m in 100 s, rests for 50 s, then walks a further 100 m in 100 s.",
+        "example_response": "The graph shows a straight line from (0, 0) to (100, 200) with gradient 2 m/s, a horizontal line from (100, 200) to (150, 200), then a line from (150, 200) to (250, 300) with gradient 1 m/s.",
+        "common_errors": [
+          "Draws the resting section as a diagonal line continuing upward.",
+          "Calculates gradient as distance divided by total time rather than the time for that section."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Interprets curved sections of distance-time graphs as acceleration or deceleration and compares journeys plotted on the same axes.",
+        "example_task": "A distance-time graph shows a curve that gets steeper over time. Explain what this tells you about the motion and how you could estimate the speed at a particular instant.",
+        "example_response": "The increasing gradient shows the object is accelerating (getting faster). To estimate the instantaneous speed at a particular time, you draw a tangent to the curve at that point and calculate the gradient of the tangent.",
+        "common_errors": [
+          "States the object is moving at constant speed because the line is continuous.",
+          "Confuses the shape of a distance-time curve with a velocity-time curve."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C120",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that the speed of an object can look different depending on where the observer is.",
+        "example_task": "A passenger on a train looks out of the window. Describe what a tree beside the track appears to do.",
+        "example_response": "The tree appears to move backwards past the window, even though the tree is actually stationary and the train is moving.",
+        "common_errors": [
+          "Says the tree is moving rather than explaining it appears to move relative to the train.",
+          "Cannot explain why the tree seems to move."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains that motion is relative to a reference point using everyday examples.",
+        "example_task": "Two cars travel side by side at 60 mph on a motorway. Describe the motion of car B as seen by the driver of car A.",
+        "example_response": "Car B appears stationary relative to car A because both are moving at the same speed in the same direction.",
+        "common_errors": [
+          "States car B is moving at 60 mph without specifying relative to what.",
+          "Confuses relative speed with absolute speed."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Calculates relative speed for objects moving in the same or opposite directions along a straight line.",
+        "example_task": "Train A travels east at 80 km/h and train B travels west at 70 km/h on parallel tracks. What is the relative speed of train B as observed from train A?",
+        "example_response": "Since they move in opposite directions, the relative speed = 80 + 70 = 150 km/h. An observer on train A sees train B approaching at 150 km/h.",
+        "common_errors": [
+          "Subtracts the speeds instead of adding when objects move in opposite directions.",
+          "Adds the speeds when objects move in the same direction."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies the concept of reference frames to analyse scenarios involving multiple observers and explains why all motion is relative.",
+        "example_task": "A person walks at 1 m/s towards the front of a bus travelling at 15 m/s. Explain the person's speed relative to the bus, relative to the ground, and why the two values differ.",
+        "example_response": "Relative to the bus, the person moves at 1 m/s. Relative to the ground, the person moves at 15 + 1 = 16 m/s. The values differ because speed depends on the reference frame: the bus is itself moving relative to the ground, so the person's ground speed combines both motions.",
+        "common_errors": [
+          "States only one speed without specifying the reference frame.",
+          "Claims the person's speed must be the same for all observers."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C121",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies forces as pushes and pulls and gives everyday examples of contact and non-contact forces.",
+        "example_task": "Name two contact forces and one non-contact force.",
+        "example_response": "Contact forces: friction and tension. Non-contact force: gravity.",
+        "common_errors": [
+          "Lists 'motion' or 'speed' as a force.",
+          "Cannot distinguish between contact and non-contact forces."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes forces acting on objects in familiar situations and identifies both objects involved in each interaction.",
+        "example_task": "A book rests on a table. Name the forces acting on the book and identify what exerts each force.",
+        "example_response": "Weight (gravity) acts downward, exerted by the Earth on the book. The normal reaction force acts upward, exerted by the table on the book.",
+        "common_errors": [
+          "Names only one force acting on the object.",
+          "Says the book exerts gravity rather than the Earth."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains that forces arise from interactions between pairs of objects and classifies forces systematically as contact or non-contact.",
+        "example_task": "A skydiver falls through the air before opening a parachute. Identify all forces acting on the skydiver and classify each as contact or non-contact.",
+        "example_response": "Weight (non-contact, due to gravity between the skydiver and the Earth) acts downward. Air resistance (contact, due to the skydiver moving through air) acts upward, opposing the motion.",
+        "common_errors": [
+          "Classifies air resistance as non-contact because you cannot see it.",
+          "Forgets that air resistance is a contact force between the skydiver and the air particles."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex force scenarios, identifies Newton's third law pairs, and explains why a force is needed to change motion, not to maintain it.",
+        "example_task": "A person pushes a shopping trolley at constant speed along a supermarket aisle. Explain why the trolley does not accelerate even though a push force is applied. Identify the Newton's third law pair for the push.",
+        "example_response": "The push forward is balanced by friction backward, so the resultant force is zero and the trolley moves at constant speed (Newton's first law). The third law pair: the person pushes the trolley forward, and the trolley pushes the person backward with an equal and opposite force.",
+        "common_errors": [
+          "Claims the trolley must be accelerating because a push is applied.",
+          "Identifies the push and friction as the Newton's third law pair (they act on the same object and are not a third law pair)."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C122",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Draws simple force arrows on an object to show the direction of given forces.",
+        "example_task": "Draw two force arrows on a falling ball: one for weight and one for air resistance.",
+        "example_response": "A downward arrow labelled 'weight' and a smaller upward arrow labelled 'air resistance'.",
+        "common_errors": [
+          "Draws both arrows in the same direction.",
+          "Draws arrows that do not start from the object."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Adds forces acting in the same direction and subtracts forces in opposite directions to find the resultant force.",
+        "example_task": "Two people push a box in the same direction with forces of 30 N and 20 N. A friction force of 10 N opposes the motion. Calculate the resultant force.",
+        "example_response": "Total forward force = 30 + 20 = 50 N. Friction = 10 N backward. Resultant = 50 - 10 = 40 N forward.",
+        "common_errors": [
+          "Adds all forces together regardless of direction (30 + 20 + 10 = 60 N).",
+          "Forgets to state the direction of the resultant force."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Draws accurate free body diagrams with proportional arrows and calculates resultant forces to predict whether an object accelerates, decelerates, or moves at constant speed.",
+        "example_task": "A car has an engine force of 3000 N forward, air resistance of 1200 N, and rolling friction of 800 N. Draw a free body diagram and determine the resultant force.",
+        "example_response": "Forward: 3000 N. Backward: 1200 + 800 = 2000 N. Resultant = 3000 - 2000 = 1000 N forward. The car accelerates because the resultant force is non-zero and acts in the direction of motion.",
+        "common_errors": [
+          "Draws all backward forces as a single arrow without calculating their total.",
+          "States the car moves at constant speed despite a non-zero resultant force."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Uses force diagrams to analyse dynamic situations, explains the significance of zero resultant force, and links diagrams to changes in velocity.",
+        "example_task": "A rocket of mass 500 kg has an engine thrust of 8000 N. Its weight is 5000 N. Draw a free body diagram and calculate the initial acceleration. Explain what happens to the acceleration as fuel is burned.",
+        "example_response": "Resultant = 8000 - 5000 = 3000 N upward. a = F/m = 3000/500 = 6 m/s^2 upward. As fuel burns, the mass decreases, so the same thrust produces a greater acceleration (a = F/m with decreasing m). Also, weight decreases slightly as mass decreases.",
+        "common_errors": [
+          "Forgets to subtract weight from thrust when calculating resultant.",
+          "Does not recognise that changing mass affects acceleration."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C123",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies whether forces on an object are balanced or unbalanced given a simple diagram.",
+        "example_task": "A box has a 20 N force pushing it to the right and a 20 N friction force to the left. Are the forces balanced or unbalanced?",
+        "example_response": "The forces are balanced because they are equal in size and opposite in direction.",
+        "common_errors": [
+          "Says the forces are unbalanced because the object is being pushed.",
+          "Thinks balanced forces mean no forces are acting."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Links balanced forces to constant velocity or being stationary, and unbalanced forces to acceleration or deceleration.",
+        "example_task": "A parachutist falls at a steady speed. What can you say about the forces acting on her?",
+        "example_response": "The forces are balanced: air resistance upward equals weight downward, so there is no change in speed (constant velocity).",
+        "common_errors": [
+          "Says there must be an unbalanced downward force because the parachutist is falling.",
+          "Thinks balanced forces always mean the object is stationary."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies Newton's first law to explain why balanced forces do not change an object's motion and analyses real situations.",
+        "example_task": "A car drives at a constant 30 m/s on a straight road. The engine provides 2500 N of forward force. Explain what this tells you about the total resistive forces.",
+        "example_response": "Because the car moves at constant speed, the forces are balanced (Newton's first law). The total resistive forces (friction + air resistance) must also equal 2500 N, opposing the engine force.",
+        "common_errors": [
+          "States the resistive forces must be less than 2500 N because the car is still moving forward.",
+          "Confuses constant velocity with zero velocity."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates how the balance of forces changes over time in dynamic scenarios and explains transitions between balanced and unbalanced states.",
+        "example_task": "Describe and explain the forces on a skydiver from the moment she jumps out of the plane until she reaches terminal velocity. Use the concepts of balanced and unbalanced forces.",
+        "example_response": "Initially, only weight acts (unbalanced downward force), so she accelerates. As speed increases, air resistance increases. The forces are unbalanced (weight > air resistance) so she still accelerates, but at a decreasing rate. Eventually, air resistance equals weight (balanced forces), and she reaches terminal velocity with zero acceleration.",
+        "common_errors": [
+          "States air resistance stays constant throughout the fall.",
+          "Thinks terminal velocity means the skydiver has stopped moving."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C124",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that a moment is the turning effect of a force and identifies the pivot in simple situations.",
+        "example_task": "A spanner is used to turn a nut. What is the pivot?",
+        "example_response": "The pivot is the nut (the point around which the spanner turns).",
+        "common_errors": [
+          "Identifies the handle of the spanner as the pivot.",
+          "Confuses the force with the moment."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates moments using M = F x d for straightforward problems.",
+        "example_task": "A force of 5 N is applied at a distance of 0.3 m from the pivot. Calculate the moment.",
+        "example_response": "Moment = 5 x 0.3 = 1.5 Nm.",
+        "common_errors": [
+          "Uses the wrong unit (writes N instead of Nm).",
+          "Multiplies the wrong values together (e.g. two distances)."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies the principle of moments to balance problems and calculates unknown forces or distances.",
+        "example_task": "A seesaw has a child weighing 400 N sitting 2 m from the pivot. Where must a child weighing 300 N sit to balance the seesaw?",
+        "example_response": "Clockwise moment = anticlockwise moment. 400 x 2 = 300 x d. d = 800/300 = 2.67 m from the pivot.",
+        "common_errors": [
+          "Sets the forces equal instead of the moments.",
+          "Adds the distances instead of using the moment equation."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses problems involving multiple forces and moments, explains why longer levers require less force, and applies moments to engineering contexts.",
+        "example_task": "A 1 m uniform plank weighing 10 N is supported at one end. A 20 N weight is placed 0.8 m from the support. Calculate the total anticlockwise moment about the support and the force needed at the other end to balance the plank.",
+        "example_response": "The plank's weight acts at its centre (0.5 m from support): moment = 10 x 0.5 = 5 Nm. The 20 N weight: moment = 20 x 0.8 = 16 Nm. Total anticlockwise moment = 21 Nm. To balance: F x 1 = 21, so F = 21 N upward at the far end.",
+        "common_errors": [
+          "Forgets to include the weight of the plank acting at its centre of mass.",
+          "Measures all distances from the wrong point rather than from the pivot."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C125",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Names common contact forces and recognises that friction opposes motion.",
+        "example_task": "Name the contact force that acts when you push a box across the floor.",
+        "example_response": "Friction. It acts in the opposite direction to the movement of the box.",
+        "common_errors": [
+          "Names gravity instead of friction (gravity is a non-contact force).",
+          "Says friction acts in the same direction as the push."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes how surface type affects friction and recognises air resistance as a contact force.",
+        "example_task": "Explain why a sledge slides more easily on ice than on concrete.",
+        "example_response": "Ice is smoother than concrete, so there is less friction between the sledge and the surface. Less friction means the sledge requires less force to slide.",
+        "common_errors": [
+          "Says there is no friction on ice.",
+          "Confuses the cause (smooth surface) with the effect (less friction)."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains elastic and plastic deformation and investigates how contact forces depend on conditions such as speed, surface area, and shape.",
+        "example_task": "A spring is stretched beyond its elastic limit. Describe what happens to the spring when the force is removed and explain why.",
+        "example_response": "The spring does not return to its original length because it has been permanently (plastically) deformed. Beyond the elastic limit, the internal structure of the spring is changed irreversibly.",
+        "common_errors": [
+          "States the spring always returns to its original length.",
+          "Confuses elastic limit with the limit of proportionality."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the role of contact forces in real-world design problems and explains how streamlining and lubrication are used to manage friction and drag.",
+        "example_task": "Explain why racing cyclists wear tight clothing and adopt a crouched position, using the concepts of air resistance and streamlining.",
+        "example_response": "Tight clothing reduces the frontal area exposed to the air, and a crouched position makes the body more streamlined. Both reduce air resistance (drag), which is a contact force opposing motion. Less drag means the cyclist can travel faster for the same pedalling force.",
+        "common_errors": [
+          "States streamlining eliminates air resistance entirely.",
+          "Does not link reduced frontal area to reduced drag force."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C126",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "States that force is measured in newtons and identifies a force meter as the measuring instrument.",
+        "example_task": "What instrument do you use to measure force, and what unit is force measured in?",
+        "example_response": "A force meter (newton meter). Force is measured in newtons (N).",
+        "common_errors": [
+          "Says force is measured in kilograms.",
+          "Confuses a force meter with a balance or a ruler."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Reads a force meter accurately and distinguishes between mass (kg) and weight (N).",
+        "example_task": "A force meter reads 3.5 N when an object is hung from it. What does this tell you?",
+        "example_response": "The weight of the object is 3.5 N. This is the gravitational force pulling the object downward.",
+        "common_errors": [
+          "Says the mass of the object is 3.5 N (confuses mass and weight).",
+          "Reads the scale incorrectly by not accounting for the interval markings."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses force meters to measure a range of forces in practical situations and explains how the spring mechanism works.",
+        "example_task": "Explain how a force meter works and why the scale is linear.",
+        "example_response": "A force meter contains a spring that extends proportionally to the applied force (Hooke's Law). Because extension is proportional to force, the scale markings are equally spaced, giving a linear scale.",
+        "common_errors": [
+          "Says the spring stretches the same amount for every newton but cannot explain why (Hooke's Law).",
+          "Thinks the scale is linear by convention rather than because of the spring's properties."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates sources of error in force measurement, selects appropriate force meters for different ranges, and calibrates instruments.",
+        "example_task": "A student uses a 0-10 N force meter to measure a force of approximately 1 N. Explain why this may give an inaccurate reading and suggest how to improve the measurement.",
+        "example_response": "A 0-10 N force meter has large intervals between markings, making it difficult to read small forces precisely. A 0-2 N or 0-5 N force meter would have finer divisions, giving better precision. The student should also check the zero reading before measuring and read the scale at eye level to avoid parallax error.",
+        "common_errors": [
+          "Does not recognise that the range of the instrument affects precision.",
+          "Confuses accuracy (how close to the true value) with precision (how fine the measurement)."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C127",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that stretching a spring further requires more force and that Hooke's Law describes this relationship.",
+        "example_task": "What happens to the extension of a spring when you double the force applied to it?",
+        "example_response": "The extension doubles (as long as the elastic limit is not exceeded).",
+        "common_errors": [
+          "Says the spring length doubles rather than the extension.",
+          "Does not mention the condition that the elastic limit must not be exceeded."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses F = k x e to calculate force or extension in straightforward problems.",
+        "example_task": "A spring has a spring constant of 25 N/m. Calculate the force needed to extend it by 0.2 m.",
+        "example_response": "F = k x e = 25 x 0.2 = 5 N.",
+        "common_errors": [
+          "Divides instead of multiplying (calculates k/e or e/k).",
+          "Uses the total length of the spring instead of the extension."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Determines the spring constant from experimental data or a force-extension graph, and identifies the limit of proportionality.",
+        "example_task": "A student plots a force-extension graph for a spring. The straight-line section goes from (0, 0) to (0.15 m, 6 N), then the line curves. Calculate the spring constant and identify the limit of proportionality.",
+        "example_response": "Spring constant k = F/e = 6/0.15 = 40 N/m. The limit of proportionality is at an extension of 0.15 m (6 N force), where the graph stops being a straight line.",
+        "common_errors": [
+          "Calculates k using a point beyond the limit of proportionality.",
+          "Confuses the limit of proportionality with the elastic limit."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Compares springs with different spring constants, explains the physical meaning of k, and discusses non-linear behaviour beyond the limit of proportionality.",
+        "example_task": "Spring A has k = 50 N/m and spring B has k = 100 N/m. Explain which spring is stiffer and describe what happens to each spring if loaded beyond the elastic limit.",
+        "example_response": "Spring B is stiffer because a higher spring constant means more force is needed per unit of extension. Beyond the elastic limit, both springs will not return to their original length when unloaded (permanent deformation). The force-extension graph curves, and Hooke's Law no longer applies.",
+        "common_errors": [
+          "Says the spring with the lower k value is stiffer.",
+          "Thinks the spring will break as soon as it reaches the elastic limit."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C128",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that stretching or compressing an object requires work and stores energy.",
+        "example_task": "What type of energy is stored in a stretched elastic band?",
+        "example_response": "Elastic potential energy.",
+        "common_errors": [
+          "Says kinetic energy is stored in the elastic band.",
+          "Confuses the energy stored with the force applied."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates work done using W = F x d for simple deformation scenarios.",
+        "example_task": "A force of 4 N is used to stretch a spring by 0.1 m. Calculate the work done.",
+        "example_response": "For a spring, work done = 1/2 x F x e = 1/2 x 4 x 0.1 = 0.2 J.",
+        "common_errors": [
+          "Uses W = F x d without the 1/2 factor (this applies to constant forces, not springs where force increases linearly).",
+          "Forgets the unit (joules)."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains how work done on a spring relates to elastic potential energy and links to the area under a force-extension graph.",
+        "example_task": "Explain how you could find the energy stored in a spring from a force-extension graph.",
+        "example_response": "The energy stored equals the area under the force-extension graph. For the linear region, this is the area of a triangle: E = 1/2 x F x e. This works because the force increases uniformly from zero to F as the spring extends from 0 to e.",
+        "common_errors": [
+          "Calculates the area of a rectangle (F x e) instead of a triangle.",
+          "Does not explain why the area represents energy stored."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses energy transformations during deformation, distinguishes recoverable and non-recoverable energy, and applies concepts to real-world contexts.",
+        "example_task": "A bungee jumper falls and the bungee cord stretches. Describe the energy transformations from the jump to the lowest point, and explain what happens to the energy if the cord is stretched beyond its elastic limit.",
+        "example_response": "Gravitational potential energy converts to kinetic energy during the fall, then to elastic potential energy as the cord stretches. At the lowest point, all the energy is stored as elastic potential energy (and some thermal energy from air resistance). If the cord exceeds its elastic limit, some energy is dissipated as thermal energy through permanent deformation and cannot be recovered as kinetic energy on the rebound.",
+        "common_errors": [
+          "Omits the role of thermal energy dissipation.",
+          "States all energy is recovered as kinetic energy regardless of whether the elastic limit is exceeded."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C129",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Names the three types of non-contact force: gravity, magnetism, and electrostatic force.",
+        "example_task": "Give one example of a non-contact force.",
+        "example_response": "Gravity pulling an apple toward the ground. The apple does not need to touch the Earth for gravity to act on it.",
+        "common_errors": [
+          "Names friction as a non-contact force.",
+          "Cannot explain what 'non-contact' means."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes how each type of non-contact force acts and gives practical examples of attraction and repulsion.",
+        "example_task": "Explain the difference between gravitational and magnetic non-contact forces.",
+        "example_response": "Gravity acts on all objects with mass and is always attractive. Magnetic forces act only on magnetic materials or between magnets, and can be attractive (unlike poles) or repulsive (like poles).",
+        "common_errors": [
+          "Says gravity can be repulsive.",
+          "Thinks magnetism acts on all metals."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains non-contact forces using the concept of a field and describes how force varies with distance.",
+        "example_task": "Explain why a magnet attracts a paperclip from a short distance but not from across the room.",
+        "example_response": "The magnet creates a magnetic field around it. The field is strongest close to the magnet and gets weaker with distance. At short range, the field is strong enough to exert a noticeable force on the paperclip; across the room, the field is too weak to have a measurable effect.",
+        "common_errors": [
+          "Says the field stops at a certain distance.",
+          "Cannot explain the relationship between field strength and distance."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Compares gravitational, magnetic, and electrostatic fields in terms of what they act on, whether they attract or repel, and their relative strengths in everyday contexts.",
+        "example_task": "Compare gravitational and electrostatic forces. Explain why gravity dominates at the scale of planets but electrostatic forces dominate at the atomic scale.",
+        "example_response": "Gravity is always attractive and acts between all masses, while electrostatic forces can attract or repel and act between charges. Gravity is much weaker than electrostatic forces, but at planetary scale the huge masses involved make gravity dominant. At the atomic scale, particles have tiny masses (so gravity is negligible) but significant charges relative to their size, so electrostatic forces dominate.",
+        "common_errors": [
+          "States gravity is always stronger than electrostatic force.",
+          "Does not explain why scale matters for comparing the forces."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C130",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that the atmosphere exerts pressure on surfaces and that this pressure exists all around us.",
+        "example_task": "What causes atmospheric pressure?",
+        "example_response": "Atmospheric pressure is caused by the weight of the air above us pressing down on everything at the Earth's surface.",
+        "common_errors": [
+          "Says atmospheric pressure only acts downward.",
+          "Thinks there is no atmospheric pressure indoors."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains why atmospheric pressure decreases at higher altitudes and describes a demonstration of atmospheric pressure.",
+        "example_task": "Explain why atmospheric pressure is lower at the top of a mountain than at sea level.",
+        "example_response": "At the top of a mountain, there is less air above you, so the weight of the air column pressing down is smaller. This means the atmospheric pressure is lower.",
+        "common_errors": [
+          "Says there is no air at the top of a mountain.",
+          "Confuses lower pressure with lower temperature."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the collapsing can demonstration using particle theory and connects atmospheric pressure to everyday phenomena.",
+        "example_task": "Explain why a metal can collapses when heated with steam and then sealed and cooled.",
+        "example_response": "Heating fills the can with steam, pushing out air. When the can is sealed and cooled, the steam condenses into liquid water, greatly reducing the gas pressure inside. The atmospheric pressure outside is now much greater than the pressure inside, so the unbalanced force crushes the can inward.",
+        "common_errors": [
+          "Says a vacuum sucks the can inward (pressure pushes, not pulls).",
+          "Does not explain why the internal pressure decreases."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies atmospheric pressure concepts quantitatively and links to effects such as boiling point variation with altitude.",
+        "example_task": "Explain why water boils at a lower temperature at the top of Mount Everest than at sea level. Use the concept of atmospheric pressure in your answer.",
+        "example_response": "Boiling occurs when the vapour pressure of the water equals the atmospheric pressure. At the top of Mount Everest, atmospheric pressure is much lower (about one-third of sea-level pressure), so water molecules need less kinetic energy to escape as vapour. This means boiling occurs at a lower temperature (about 70 degrees C instead of 100 degrees C).",
+        "common_errors": [
+          "Says water boils faster at altitude (it boils at a lower temperature but this does not mean it cooks food faster; food actually takes longer because the temperature is lower).",
+          "Cannot link atmospheric pressure to the boiling point mechanism."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C131",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that pressure in a liquid increases with depth.",
+        "example_task": "Water leaks from three holes at different heights in a bottle. Which hole produces the jet that reaches furthest?",
+        "example_response": "The bottom hole, because the water pressure is greatest at the bottom where the depth is greatest.",
+        "common_errors": [
+          "Says the top hole because the water has further to fall.",
+          "Says all jets are the same because the bottle is the same."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains why objects float or sink in terms of density and describes upthrust.",
+        "example_task": "Explain why a steel ship floats even though steel is denser than water.",
+        "example_response": "The ship is not solid steel; it is a hollow shell containing air. The average density of the ship (steel + air) is less than the density of water, so it floats. The upthrust from the water equals the weight of the ship.",
+        "common_errors": [
+          "Says the ship floats because it is big.",
+          "Confuses the density of the steel with the average density of the whole ship."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains upthrust using pressure differences and applies the concept to floating and sinking scenarios.",
+        "example_task": "Explain, in terms of pressure, why a submerged object experiences an upward force (upthrust).",
+        "example_response": "Liquid pressure increases with depth. The bottom of a submerged object is deeper than the top, so the pressure on the bottom surface is greater than on the top. This pressure difference creates a net upward force called upthrust.",
+        "common_errors": [
+          "Says upthrust acts because water pushes upward but cannot explain why the upward push is greater than the downward push.",
+          "Thinks upthrust only acts on floating objects."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies Archimedes' principle qualitatively, analyses floating and sinking in different liquids, and connects liquid pressure to hydraulic systems.",
+        "example_task": "An object weighs 5 N in air and appears to weigh 3 N when fully submerged in water. Explain these readings and predict whether the object would float or sink if released.",
+        "example_response": "The apparent weight loss of 2 N is the upthrust, equal to the weight of water displaced. Since the object's true weight (5 N) is greater than the upthrust (2 N), the object would sink if released, because its density is greater than the density of water.",
+        "common_errors": [
+          "States the object has lost mass rather than explaining the upthrust.",
+          "Predicts the object will float because it appears lighter in water."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C132",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls the pressure equation and identifies that pressure depends on force and area.",
+        "example_task": "Write the equation that links pressure, force, and area.",
+        "example_response": "Pressure = force / area (P = F/A).",
+        "common_errors": [
+          "Writes P = F x A (multiplies instead of divides).",
+          "Cannot recall the unit of pressure (pascals)."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates pressure from given force and area values in simple problems.",
+        "example_task": "A box exerts a force of 200 N on the ground. Its base area is 0.5 m squared. Calculate the pressure.",
+        "example_response": "P = F/A = 200/0.5 = 400 Pa.",
+        "common_errors": [
+          "Multiplies force by area instead of dividing.",
+          "Gives the answer without a unit."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Rearranges the pressure equation to find force or area and applies it to real-world contexts.",
+        "example_task": "A person weighing 600 N stands on snow. Each snowshoe has an area of 0.15 m squared. Calculate the pressure on the snow when wearing snowshoes (standing on both feet).",
+        "example_response": "Total area = 2 x 0.15 = 0.3 m squared. P = F/A = 600/0.3 = 2000 Pa. Snowshoes spread the force over a larger area, reducing the pressure and preventing the person sinking.",
+        "common_errors": [
+          "Uses the area of one snowshoe instead of two.",
+          "Does not convert cm squared to m squared when required."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Compares pressures in different contexts, converts units, and evaluates design choices based on pressure calculations.",
+        "example_task": "A stiletto heel has a contact area of 1 cm squared and the person weighs 500 N. Compare the pressure under the heel with the pressure under an elephant's foot (weight 40000 N, area of one foot 0.08 m squared).",
+        "example_response": "Stiletto: 1 cm squared = 0.0001 m squared. P = 500/0.0001 = 5,000,000 Pa. Elephant's foot: P = 40000/0.08 = 500,000 Pa. The stiletto exerts 10 times more pressure than the elephant, demonstrating how a small area dramatically increases pressure even with a much smaller force.",
+        "common_errors": [
+          "Fails to convert cm squared to m squared correctly.",
+          "Concludes the elephant exerts more pressure because it exerts more force."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C133",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that equilibrium means forces are balanced and an object is not accelerating.",
+        "example_task": "A lamp hangs from the ceiling by a chain. Is it in equilibrium? Explain your answer.",
+        "example_response": "Yes, the lamp is in equilibrium. The tension in the chain pulling upward equals the weight of the lamp pulling downward, so the forces are balanced.",
+        "common_errors": [
+          "Says the lamp is not in equilibrium because gravity is acting on it.",
+          "Thinks equilibrium means no forces are present."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Identifies equilibrium in both stationary objects and objects moving at constant velocity.",
+        "example_task": "A submarine moves at a constant depth and constant speed. Is it in equilibrium? Explain.",
+        "example_response": "Yes. Moving at constant speed means the forward thrust equals the drag (horizontal equilibrium), and constant depth means upthrust equals weight (vertical equilibrium). All forces are balanced.",
+        "common_errors": [
+          "Says it cannot be in equilibrium because it is moving.",
+          "Only considers forces in one direction."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses both translational and rotational equilibrium, applying the principle of moments where appropriate.",
+        "example_task": "A uniform beam is supported at its centre by a pivot. A 10 N weight hangs 0.4 m to the left of the pivot. Where must a 20 N weight be placed to achieve rotational equilibrium?",
+        "example_response": "For rotational equilibrium: clockwise moment = anticlockwise moment. 10 x 0.4 = 20 x d. d = 4/20 = 0.2 m to the right of the pivot.",
+        "common_errors": [
+          "Places the heavier weight further from the pivot instead of closer.",
+          "Confuses translational equilibrium (forces balance) with rotational equilibrium (moments balance)."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates complex equilibrium scenarios involving multiple forces and moments, and discusses stable, unstable, and neutral equilibrium.",
+        "example_task": "Explain the difference between stable and unstable equilibrium, using the example of a ball on a hill. Why is this distinction important in engineering?",
+        "example_response": "Stable equilibrium: a ball at the bottom of a valley returns to its original position when displaced slightly. Unstable equilibrium: a ball balanced on top of a hill moves further from its original position when displaced. In engineering, structures are designed to be in stable equilibrium so that small disturbances (wind, vibrations) do not cause collapse.",
+        "common_errors": [
+          "Confuses stable and unstable equilibrium.",
+          "Cannot explain why the distinction matters for real-world design."
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "SC-KS3-C134",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recalls that a force can make an object start moving, speed up, slow down, or change direction.",
+        "example_task": "What can an unbalanced force do to a moving object?",
+        "example_response": "An unbalanced force can make a moving object speed up, slow down, or change direction.",
+        "common_errors": [
+          "Says a force is needed to keep an object moving at constant speed.",
+          "Lists only one effect (e.g. only speed up)."
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Explains Newton's first law in simple terms and applies it to everyday situations.",
+        "example_task": "A hockey puck slides across smooth ice. Explain why it eventually stops.",
+        "example_response": "According to Newton's first law, the puck would continue at constant speed if no forces acted. It slows down because a small friction force from the ice and air resistance act against its motion. These unbalanced forces cause it to decelerate.",
+        "common_errors": [
+          "Says the puck stops because it runs out of force.",
+          "Does not identify friction or air resistance as the cause of deceleration."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses F = ma to calculate force, mass, or acceleration in straightforward problems and explains the relationship between resultant force and acceleration.",
+        "example_task": "A resultant force of 600 N acts on a car of mass 1200 kg. Calculate the acceleration.",
+        "example_response": "a = F/m = 600/1200 = 0.5 m/s squared.",
+        "common_errors": [
+          "Multiplies force by mass instead of dividing.",
+          "Gives the answer without the correct unit (m/s squared)."
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses multi-step problems involving changing forces, links Newton's laws to real-world motion, and explains why F = ma means acceleration is proportional to force and inversely proportional to mass.",
+        "example_task": "Two identical rockets each have a mass of 2000 kg. Rocket A has a thrust of 30000 N and rocket B has a thrust of 25000 N. Both have a weight of 20000 N. Compare their initial accelerations and explain what happens to each rocket's acceleration as it burns fuel.",
+        "example_response": "Rocket A: resultant = 30000 - 20000 = 10000 N. a = 10000/2000 = 5 m/s squared. Rocket B: resultant = 25000 - 20000 = 5000 N. a = 5000/2000 = 2.5 m/s squared. As fuel burns, mass decreases, so for the same thrust the resultant force stays similar but mass is smaller, meaning acceleration increases over time for both rockets.",
+        "common_errors": [
+          "Forgets to subtract weight from thrust to find the resultant force.",
+          "States acceleration stays constant as fuel is consumed."
+        ]
+      }
+    ]
+  }
+]

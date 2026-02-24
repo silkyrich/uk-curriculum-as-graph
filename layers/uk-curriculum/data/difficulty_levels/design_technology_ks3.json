@@ -1,0 +1,394 @@
+[
+  {
+    "concept_id": "DT-KS3-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that designers should think about who will use a product, but relies on personal assumptions rather than structured research to identify user needs.",
+        "example_task": "A company wants to design a new water bottle for secondary school students. List three things you would want to find out about the users before designing the bottle.",
+        "example_response": "I would want to find out: 1) How much water students typically drink during the school day, 2) Whether they carry it in a bag or by hand (so I know if it needs to be leak-proof and what size), 3) What features they find annoying about their current water bottles.",
+        "common_errors": [
+          "Listing features they personally want rather than questions about user needs",
+          "Focusing only on appearance rather than functional requirements"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can describe user-centred design methods such as interviews and observation, and begins to use them to create a basic design specification, though research may be shallow.",
+        "example_task": "Design a short interview (4 questions) you would use to understand the needs of elderly users for a new kitchen gadget. Explain why each question is useful.",
+        "example_response": "1) 'What kitchen tasks do you find most difficult?' — identifies genuine pain points rather than my assumptions. 2) 'Do you have any conditions that affect your grip or reach?' — ensures I design for physical accessibility. 3) 'Can you show me how you currently do this task?' — observation reveals problems users may not mention. 4) 'What would make this task easier for you?' — captures user priorities in their own words. These questions focus on needs rather than solutions, so I design based on evidence.",
+        "common_errors": [
+          "Writing leading questions that assume a solution (e.g., 'Would you like a bigger handle?')",
+          "Not explaining how the information gathered would inform specific design decisions"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Conducts structured user research, develops user personas, translates findings into measurable design criteria, and uses iterative prototyping to test ideas with real users.",
+        "example_task": "You are designing a phone stand for a hospital reception desk. Describe the full user-centred design process you would follow, from research to prototype testing.",
+        "example_response": "First, I would observe the reception area to understand the environment: desk height, lighting, how staff use their phones during work, and what problems arise (phone falling, poor viewing angle, cables tangling). I would interview reception staff using open questions about their needs and frustrations. From this research I would create a user persona summarising key needs and constraints. I would then write a design specification with measurable criteria: must hold phones 60-85mm wide, must allow charging cable access, must be stable on a desk with vibrations from passing trolleys. I would generate multiple design ideas using annotated sketches, select the most promising, and create a rapid prototype from card. I would take this prototype to the reception desk and ask staff to try it during their shift, noting any problems. Based on their feedback, I would modify the design and re-test — repeating this iterate-test cycle at least twice before committing to a final design.",
+        "common_errors": [
+          "Skipping the observation and interview stages and jumping straight to designing based on assumptions",
+          "Creating a prototype but not testing it with actual users in the real context of use"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically evaluates competing user needs and design trade-offs, applies professional design thinking frameworks, and justifies design decisions with reference to user research evidence.",
+        "example_task": "Two user groups will use your product: visually impaired users need large tactile controls, but teenage users want a sleek, minimal design. How would a user-centred designer resolve this conflict?",
+        "example_response": "A user-centred designer would recognise this as a design tension, not a choice between groups. First, I would investigate whether the tension is real by researching inclusive design examples where accessibility features are integrated seamlessly — for instance, the OXO Good Grips range, designed for arthritis sufferers, became popular with all users because comfortable grip benefits everyone. I would explore design solutions that serve both needs: tactile feedback through subtle material texture differences rather than large protruding buttons; haptic vibration feedback; voice control as an alternative input mode. I would prototype multiple approaches and test with both user groups, measuring both usability (can visually impaired users operate it independently?) and desirability (do teenage users find it attractive?). The resolution likely involves reframing the brief: 'minimal' does not mean 'featureless' — it means removing unnecessary complexity while retaining essential functionality. The best inclusive designs make the accessible features invisible to users who do not need them while essential for those who do.",
+        "common_errors": [
+          "Simply choosing one user group over the other rather than seeking an inclusive solution",
+          "Not referencing real-world examples of inclusive design that resolve similar tensions"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS3-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can name some materials (wood, metal, plastic) and describe basic properties such as hard, soft or flexible, but struggles to explain why a specific material is chosen for a specific purpose.",
+        "example_task": "Why are saucepan handles usually made from plastic or wood rather than metal?",
+        "example_response": "Metal conducts heat, so a metal handle would get too hot to hold. Plastic and wood are thermal insulators, meaning they do not conduct heat well, so they stay cool enough to grip safely.",
+        "common_errors": [
+          "Saying 'because metal gets hot' without explaining the concept of thermal conductivity",
+          "Not recognising that the choice relates to material properties, not just tradition"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understands categories of materials and their general properties, and can select appropriate materials for simple products by matching properties to requirements.",
+        "example_task": "You need to choose a material for a protective phone case. Compare two possible materials — silicone rubber and polycarbonate plastic — and recommend one, giving reasons.",
+        "example_response": "Silicone rubber is soft, flexible and has high impact absorption, so it cushions the phone when dropped. Polycarbonate is rigid, hard and scratch-resistant, so it protects against abrasion and crushing. I would recommend silicone for users who frequently drop their phone, because its flexibility absorbs shock energy. I would recommend polycarbonate for users who carry their phone in a bag with keys, because its hardness resists scratching. Both are lightweight and can be moulded into shape. The choice depends on which type of damage the user is most likely to encounter.",
+        "common_errors": [
+          "Choosing a material based on personal preference rather than comparing properties against requirements",
+          "Not considering that different users might have different protection priorities"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Systematically evaluates materials against multiple criteria including functional performance, aesthetics, cost, environmental impact and manufacturing compatibility, using a selection matrix approach.",
+        "example_task": "You are designing a reusable food container. Create a materials selection matrix comparing three candidate materials against at least four criteria, and justify your final choice.",
+        "example_response": "Criteria: food safety, durability, weight, environmental impact, cost. Materials: borosilicate glass, polypropylene (PP), stainless steel. Food safety: all three are food-safe (score 5, 5, 5). Durability: glass is fragile (2), PP is durable and flexible (4), steel is very durable (5). Weight: glass is heavy (2), PP is very light (5), steel is moderate (3). Environmental impact: glass is recyclable and inert (4), PP is recyclable but derived from oil (3), steel is highly recyclable and lasts decades (4). Cost: glass moderate (3), PP low (5), steel high (2). Total scores: glass 16, PP 22, steel 19. I recommend polypropylene for everyday use because it scores highest overall, especially on weight and cost. However, if the user prioritises longevity over weight, stainless steel is better despite higher cost.",
+        "common_errors": [
+          "Including only one or two criteria rather than considering multiple requirements simultaneously",
+          "Not acknowledging that different weightings of criteria could change the recommendation"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies advanced materials knowledge including smart materials and composites, evaluates how material properties interact with manufacturing processes, and considers the full lifecycle of material choices.",
+        "example_task": "A sports equipment company wants to replace aluminium with a composite material in a tennis racket frame. Evaluate this decision considering performance, manufacturing and sustainability.",
+        "example_response": "Carbon fibre reinforced polymer (CFRP) would replace aluminium with significant performance benefits: it has a higher strength-to-weight ratio (the racket would be lighter but equally strong), greater stiffness (less energy lost in frame flex during hitting), and better vibration damping (reducing arm strain). However, there are manufacturing trade-offs: CFRP requires specialist lay-up and autoclaving processes that are more expensive and slower than aluminium extrusion, making it unsuitable for budget rackets. Sustainability is the critical weakness: aluminium is highly recyclable (melted and reused indefinitely with minimal quality loss), while CFRP is extremely difficult to recycle — the thermoset resin cannot be re-melted, so end-of-life rackets typically go to landfill. The carbon fibre production process itself is energy-intensive. A responsible design decision would need to weigh the performance gains against the environmental cost, and might consider recyclable thermoplastic composites as an emerging alternative that offers some of CFRP's performance with better end-of-life options.",
+        "common_errors": [
+          "Focusing only on performance improvements without considering manufacturing constraints and environmental costs",
+          "Not recognising that the recyclability difference between metals and composites is a significant sustainability issue"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS3-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that computers can be put inside products and that sensors can detect things like light and temperature, but cannot explain how these components work together.",
+        "example_task": "Name two everyday products that contain a small computer (microcontroller) inside them.",
+        "example_response": "A washing machine contains a microcontroller that controls the water temperature, drum speed and cycle timing. A microwave oven contains a microcontroller that controls the power level and cooking time based on the buttons you press.",
+        "common_errors": [
+          "Naming products with screens (like laptops) rather than products with embedded computing",
+          "Not explaining what the microcontroller actually does inside the product"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can describe the input-process-output model of embedded systems and identify appropriate sensors and actuators for a given design brief.",
+        "example_task": "Design a simple automatic plant watering system. Describe the input, process and output stages.",
+        "example_response": "Input: A soil moisture sensor detects how wet or dry the soil is and sends a signal to the microcontroller. Process: The microcontroller compares the moisture reading to a threshold value. If the soil moisture is below the threshold (too dry), it triggers the output. Output: A small water pump is activated, pumping water from a reservoir to the plant pot. When the moisture sensor detects the soil is wet enough, the microcontroller turns off the pump.",
+        "common_errors": [
+          "Confusing input sensors with output actuators",
+          "Not explaining the processing logic (the decision the microcontroller makes)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Programs microcontrollers to read sensor data and control outputs using conditional logic, and integrates electronic components into physical product designs with appropriate consideration of power, housing and user interface.",
+        "example_task": "Write pseudocode for a night light that turns on automatically when it is dark AND when motion is detected, then turns off after 30 seconds of no motion.",
+        "example_response": "LOOP FOREVER:\n  lightLevel = READ light sensor\n  motion = READ PIR motion sensor\n  IF lightLevel < 200 AND motion == TRUE THEN\n    TURN ON LED\n    SET timer = 30 seconds\n    WHILE timer > 0:\n      motion = READ PIR motion sensor\n      IF motion == TRUE THEN\n        RESET timer = 30 seconds\n      END IF\n      WAIT 1 second\n      timer = timer - 1\n    END WHILE\n    TURN OFF LED\n  END IF\nEND LOOP\n\nThis uses an AND condition so the light only activates in darkness with motion present. The timer resets each time new motion is detected, keeping the light on while someone is moving in the room.",
+        "common_errors": [
+          "Using OR instead of AND (the light would activate in daylight whenever motion is detected)",
+          "Not including a timer reset mechanism, causing the light to turn off while someone is still in the room"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Designs embedded systems with multiple sensor inputs and feedback loops, evaluates the broader implications of intelligent products, and connects product intelligence to real-world applications such as IoT and automation.",
+        "example_task": "A 'smart' school building could use embedded computing to reduce energy waste. Design a system, explain how it uses feedback, and evaluate one ethical concern.",
+        "example_response": "The system would use occupancy sensors (PIR) in each room, temperature sensors, light sensors, and CO2 sensors, all connected to a central microcontroller network. Feedback loop 1 (heating): temperature sensors feed current room temperature to the controller, which compares it to a setpoint. If the room is unoccupied (PIR detects no motion for 10 minutes), the setpoint drops to 15 degrees C to save energy. When occupancy is detected, the setpoint returns to 21 degrees C. The controller adjusts radiator valves continuously — this is a negative feedback loop that maintains the target temperature. Feedback loop 2 (lighting): light sensors measure ambient daylight and adjust artificial lighting to maintain a constant illumination level, dimming when sunlight is strong and brightening when it is dim. CO2 sensors trigger ventilation when levels indicate poor air quality, overriding energy-saving modes because health takes priority. Ethical concern: occupancy data reveals patterns about when and where specific people are in the building. If linked to individual identifiers (through timetabling or ID cards), this becomes surveillance data that could be used to monitor staff productivity or student attendance without their informed consent. The system should be designed to detect occupancy without identifying individuals — using anonymous motion detection rather than personal tracking.",
+        "common_errors": [
+          "Describing a simple on/off control rather than a feedback loop with continuous adjustment",
+          "Not identifying the privacy implications of occupancy monitoring in schools"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS3-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Aware that some products are harmful to the environment, such as plastic pollution, but cannot explain the broader concept of sustainability or the designer's role in reducing impact.",
+        "example_task": "Why might a designer choose to make a product from recycled plastic instead of new plastic?",
+        "example_response": "Recycled plastic uses material that already exists instead of making new plastic from oil. This means less oil needs to be extracted from the ground, and less plastic waste ends up in landfill or the ocean.",
+        "common_errors": [
+          "Saying recycled plastic is 'better for the environment' without explaining why",
+          "Thinking recycled plastic is free or has no environmental cost at all"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Understands that sustainability involves considering environmental impact across a product's lifecycle, and can identify ethical issues in design such as fair trade and planned obsolescence.",
+        "example_task": "Explain what 'planned obsolescence' means and why it is considered an ethical problem in design.",
+        "example_response": "Planned obsolescence is when a designer deliberately makes a product that will break, wear out or become outdated after a set period, forcing the consumer to buy a replacement. For example, some phone manufacturers make batteries that cannot be replaced, so when the battery degrades after two years, the whole phone must be replaced. This is ethically problematic because it wastes resources, creates electronic waste, and exploits consumers who have no choice but to buy again. It prioritises the company's profit over the customer's interests and the environment.",
+        "common_errors": [
+          "Confusing planned obsolescence with products that naturally wear out over time",
+          "Not identifying both the consumer harm and the environmental harm"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies life cycle analysis to evaluate the environmental impact of products from material extraction through to disposal, and proposes design strategies to reduce impact at each stage.",
+        "example_task": "Carry out a simplified life cycle analysis of a disposable paper coffee cup. Identify the environmental impact at each stage and suggest one improvement.",
+        "example_response": "Raw materials: Trees are felled for paper pulp (deforestation, habitat loss, CO2 release). The plastic lining is made from polyethylene derived from oil. Manufacturing: The pulp is processed using large quantities of water and energy; bleaching chemicals may contaminate waterways. The cup is assembled and printed. Distribution: Cups are transported from factory to coffee shops, creating transport emissions. Use: The cup is used once for approximately 15 minutes. End of life: The plastic lining makes the cup non-recyclable in standard paper recycling — it goes to landfill where it takes decades to decompose. Improvement: Replace the polyethylene lining with a plant-based PLA lining that is industrially compostable, so the cup can be composted rather than landfilled. However, this only works if composting infrastructure exists — otherwise the improvement is theoretical not practical.",
+        "common_errors": [
+          "Analysing only one or two lifecycle stages rather than the full journey from raw material to disposal",
+          "Suggesting improvements without considering whether the infrastructure exists to support them"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically evaluates the circular economy model, analyses conflicting sustainability claims, and proposes design solutions that balance environmental, economic and social considerations.",
+        "example_task": "A fashion company claims its clothing line is 'sustainable' because it uses organic cotton. Critically evaluate this claim using your knowledge of ethical and sustainable design.",
+        "example_response": "Organic cotton addresses only one stage of the lifecycle — raw material production — by eliminating synthetic pesticides and fertilisers. However, organic cotton still requires enormous quantities of water (approximately 10,000 litres per kilogram), often grown in water-stressed regions. The claim ignores: dyeing and finishing processes, which may use toxic chemicals and consume vast amounts of water; manufacturing conditions, where garment workers may face exploitative wages and unsafe conditions; transport emissions from global supply chains; consumer use phase, where frequent washing releases microfibres; and end-of-life, where fast fashion garments are typically worn only a few times before disposal. A genuinely sustainable approach would need to address the full lifecycle: use lower-impact fibres (recycled polyester, linen, hemp); ensure fair labour conditions throughout the supply chain; design for durability and repairability rather than trend-driven obsolescence; and implement a take-back scheme for end-of-life garments. The 'organic cotton' label functions partly as greenwashing — it provides a visible sustainability signal while potentially obscuring harmful practices elsewhere in the supply chain. A circular economy approach would design clothing to be worn longer, repaired easily, and ultimately recycled into new fibre rather than discarded.",
+        "common_errors": [
+          "Accepting the sustainability claim at face value without examining the full supply chain",
+          "Not recognising that sustainability requires consideration of social (labour) as well as environmental factors"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS3-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can use basic hand tools safely with guidance and follows step-by-step making instructions, but does not independently select tools or processes for a given task.",
+        "example_task": "You need to cut a piece of acrylic sheet along a straight line. Name the tool you would use and describe one safety precaution.",
+        "example_response": "I would use a coping saw or a strip heater to score and snap the acrylic. A safety precaution is to clamp the acrylic firmly to the bench before cutting so it does not move and cause the saw to slip.",
+        "common_errors": [
+          "Suggesting a wood saw, which would crack the acrylic due to inappropriate tooth pattern",
+          "Not mentioning clamping or securing the workpiece before cutting"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can select appropriate tools and processes for different materials, understands the link between CAD files and CAM output, and works with reasonable precision.",
+        "example_task": "Explain how a 2D drawing on a computer becomes a laser-cut part. What file format is needed and what must the designer check before cutting?",
+        "example_response": "The designer creates a 2D vector drawing (using software like Adobe Illustrator or 2D Design) and saves it as an SVG or DXF file. Vector files use mathematical lines rather than pixels, which the laser cutter needs to follow a precise path. Before cutting, the designer must check: the line colours are correctly assigned (red for cut, blue for engrave, for example), the material thickness matches the laser power settings, and the drawing dimensions are correct at 1:1 scale. The file is sent to the laser cutter software, which converts the vector paths into motor commands that move the laser head across the material.",
+        "common_errors": [
+          "Using a raster image format (JPEG, PNG) instead of a vector format",
+          "Not checking that the design is at actual size (1:1 scale) before sending to the machine"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Selects and uses specialist tools and CAM processes competently, adapts making approaches when problems arise, and applies quality control checks throughout the making process.",
+        "example_task": "During making, you discover that two laser-cut pieces do not fit together properly — there is a 2mm gap. Describe how you would diagnose the problem and what you would do next.",
+        "example_response": "First I would measure both pieces with a digital calliper to check whether the dimensions match my design file. If they do, the error is in my design — I would return to the CAD file, adjust the joint dimensions to close the 2mm gap, and re-cut the affected piece. If the pieces do not match the design file, the error is in the cutting process — I would check the laser cutter's calibration and material positioning. Either way, this is an iterative process: the making problem has revealed a design issue that needs to be resolved before continuing. I would keep the incorrect pieces as a record of what went wrong and make notes about the correction for my design log. Before cutting the replacement, I would cut a test joint in scrap material to verify the fix works.",
+        "common_errors": [
+          "Trying to fix the gap with adhesive rather than diagnosing and correcting the root cause",
+          "Not testing the correction on scrap material before committing to a full re-cut"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Combines hand and digital manufacturing processes strategically, understands industrial manufacturing contexts, and evaluates when CAM offers genuine advantages over hand making.",
+        "example_task": "A small business makes 50 identical wooden phone stands per month. Compare making them entirely by hand versus using a CNC router, and recommend an approach.",
+        "example_response": "Hand making: each stand requires marking out, sawing, drilling and sanding — perhaps 45 minutes per unit. At 50 per month, that is approximately 37.5 hours of skilled labour. Each piece will have slight variations, which could be marketed as 'handcrafted' but makes quality control harder. Errors waste material and time. CNC routing: requires upfront investment in a CNC router and time to create the CAD/CAM file and set cutting parameters. However, once set up, each stand takes perhaps 10 minutes of machine time with minimal operator involvement, and every piece is identical. The CNC can also cut complex curves and pockets that would be very time-consuming by hand. My recommendation: a hybrid approach. Use the CNC router for the primary shaping (cutting the profile, drilling holes, cutting the phone slot) to ensure precision and consistency, then hand-finish with sanding and oiling to add the tactile quality that distinguishes a premium product from a mass-produced one. This combines the precision and efficiency of CAM with the craft quality of hand finishing. At 50 units per month, the CNC setup cost is justified by the labour savings within a few months.",
+        "common_errors": [
+          "Recommending only CNC or only hand making without considering a hybrid approach",
+          "Not considering the setup time and cost investment required for CNC production"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS3-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Tends to choose familiar materials (usually wood or card) for all projects without considering whether the material's properties match the product's requirements.",
+        "example_task": "You are making a waterproof container for outdoor use. Explain why wood might not be the best choice and suggest a better material.",
+        "example_response": "Wood absorbs water over time, which would cause it to swell, warp and eventually rot, making it unsuitable for a waterproof container used outdoors. A better choice would be high-density polyethylene (HDPE) because it is waterproof, does not rot, is lightweight and is resistant to UV damage from sunlight.",
+        "common_errors": [
+          "Saying wood is fine if you 'paint it' without recognising that paint chips and the wood underneath still absorbs moisture",
+          "Not explaining why the alternative material is specifically better for this application"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can compare materials across multiple properties and select materials that meet basic functional and aesthetic requirements for a given product.",
+        "example_task": "Choose a material for a kitchen spatula. It must be heat-resistant, food-safe and flexible. Compare two options and justify your choice.",
+        "example_response": "Option 1: Silicone — heat resistant to 230 degrees C, food-safe (FDA approved), flexible enough to scrape bowls, easy to clean, does not scratch non-stick pans. Option 2: Nylon — heat resistant to about 200 degrees C, food-safe, semi-flexible, cheaper than silicone but can melt if left on a hot pan. I would choose silicone because it has a higher heat resistance (safer if accidentally left near heat), is more flexible for scraping, and will not damage non-stick coatings.",
+        "common_errors": [
+          "Choosing based on cost alone without considering whether the material meets all functional requirements",
+          "Not specifying the actual temperature resistance of the materials"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Uses systematic multi-criteria evaluation to select materials, considers how materials interact with manufacturing processes, and evaluates material combinations in multi-material products.",
+        "example_task": "Design a desk lamp that uses at least three different materials. For each material, explain why it was selected and how it will be manufactured.",
+        "example_response": "Base: cast iron — chosen for its high density (provides stability to prevent tipping), can be sand-cast into a decorative shape, and has a premium aesthetic. Manufacturing: sand casting followed by powder coating for colour and corrosion resistance. Arm: aluminium tube — chosen for its light weight (keeps centre of gravity low), corrosion resistance, and ease of bending to shape. Manufacturing: extruded aluminium tube, bent using a tube bender to the required angle. Shade: 3D-printed PLA — chosen because it allows complex geometric patterns that cast interesting light shadows, can be customised for each customer, and PLA is biodegradable. Manufacturing: FDM 3D printing with 15% infill for light diffusion. Material compatibility: the cast iron base connects to the aluminium arm using a threaded steel bolt (compatible metals joined mechanically); the PLA shade clips onto the aluminium arm using a friction-fit socket designed to be easily replaced.",
+        "common_errors": [
+          "Choosing materials without explaining the specific properties that make them suitable",
+          "Not considering how different materials will be joined together in the final product"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates advanced materials including composites and smart materials, assesses lifecycle environmental impact of material choices, and makes design decisions that balance competing requirements across performance, cost and sustainability.",
+        "example_task": "A product designer proposes using carbon fibre for a bicycle frame aimed at commuters. Evaluate this choice considering the target market, manufacturing and end-of-life.",
+        "example_response": "Carbon fibre would make the frame extremely light and stiff — excellent performance properties. However, for a commuter bicycle (rather than a racing bicycle), this is over-engineered: commuters prioritise reliability, cost and damage tolerance over minimal weight. Carbon fibre is brittle and can crack invisibly on impact (from bike racks, falls), creating a hidden safety risk — unlike aluminium or steel which deform visibly before failing. Manufacturing: carbon fibre lay-up is labour-intensive and expensive, making the frame cost-prohibitive for the commuter market segment. Each frame requires a mould, making small production runs expensive. Environmental: carbon fibre production is energy-intensive and the thermoset resin means frames cannot be recycled — they go to landfill. A steel or aluminium frame is infinitely recyclable. Recommendation: use 6061-T6 aluminium alloy for the commuter frame — it is light enough for daily commuting, dents rather than cracks (visible damage, safer), is inexpensive to hydroform or weld in production, and is 100% recyclable at end of life. Reserve carbon fibre for the premium racing market where its weight advantage justifies the cost and sustainability trade-offs.",
+        "common_errors": [
+          "Assuming that the lightest and strongest material is always the best choice regardless of context",
+          "Not considering the end-of-life recyclability difference between thermoplastic and thermoset materials"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS3-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that food contains nutrients needed for health and can name some basic food groups, but cannot explain the specific roles of macronutrients or micronutrients in the body.",
+        "example_task": "Name the three macronutrients and give one food source for each.",
+        "example_response": "Carbohydrates — found in bread and pasta. Protein — found in chicken and eggs. Fat — found in butter and olive oil.",
+        "common_errors": [
+          "Confusing macronutrients with food groups (e.g., saying 'fruit and vegetables' is a macronutrient)",
+          "Not being able to name all three macronutrients"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can explain the main functions of macronutrients and some key micronutrients, and understands that a balanced diet provides all nutrients in appropriate quantities.",
+        "example_task": "Explain why an athlete needs more protein than a sedentary office worker, and name two good sources of protein.",
+        "example_response": "Protein is needed for the growth and repair of body tissues, including muscle. An athlete trains intensively, which causes microscopic damage to muscle fibres. During recovery, the body repairs and rebuilds these fibres using amino acids from dietary protein, making the muscles stronger. An office worker has much less muscle damage to repair, so needs less protein. Good sources include chicken breast (about 31g protein per 100g) and lentils (about 9g per 100g, a plant-based option).",
+        "common_errors": [
+          "Saying athletes need protein 'for energy' — protein is primarily for growth and repair, not the main energy source",
+          "Not distinguishing between animal and plant protein sources"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Plans nutritionally balanced meals using knowledge of macronutrient and micronutrient functions, analyses nutritional content using food labels and data, and understands the consequences of deficiency or excess.",
+        "example_task": "Plan a day's meals for a 14-year-old vegetarian that meets their protein, iron and calcium needs. Explain how each meal contributes.",
+        "example_response": "Breakfast: Porridge made with fortified soya milk (calcium + protein), topped with pumpkin seeds (iron + protein) and banana (potassium, energy). Lunch: Wholemeal pitta with hummus (protein from chickpeas, iron), mixed salad with spinach (iron, vitamin C for iron absorption), and a portion of cheese (calcium, protein). Dinner: Lentil and vegetable curry (protein, iron, fibre) with brown rice (complex carbohydrates, B vitamins), served with a glass of orange juice (vitamin C to enhance non-haem iron absorption from lentils). Snack: Yoghurt with almonds (calcium, protein). Key considerations: vegetarian iron sources (non-haem iron) are less readily absorbed than meat sources, so I paired iron-rich foods with vitamin C to improve absorption. Calcium comes from dairy, fortified soya milk and almonds. Protein is spread across all meals from diverse plant and dairy sources to ensure all essential amino acids are provided.",
+        "common_errors": [
+          "Not addressing the reduced iron absorption from plant sources or the need for vitamin C pairing",
+          "Relying on a single protein source rather than combining complementary plant proteins"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Critically evaluates nutritional advice and dietary trends using evidence-based nutritional science, and applies nutrition knowledge to design diets for specific health conditions or life stages.",
+        "example_task": "A popular diet eliminates all carbohydrates. Using your knowledge of nutrition science, evaluate this approach and explain what would happen to the body.",
+        "example_response": "Carbohydrates are the body's primary and most efficient energy source. Glucose from carbohydrates fuels the brain (which uses about 120g of glucose per day) and provides readily available energy for physical activity. Eliminating all carbohydrates forces the body into ketosis: when glucose is unavailable, the liver converts stored fat into ketone bodies, which the brain and muscles can use as an alternative fuel. Short-term effects include rapid weight loss (mostly water, as glycogen stores are depleted along with their associated water), fatigue, headaches and difficulty concentrating. Long-term risks include: nutrient deficiencies (fibre from wholegrains, B vitamins, antioxidants from fruits are all carbohydrate-associated nutrients); kidney strain from processing excess protein; potential cardiovascular risk from high saturated fat intake if replacing carbohydrates with fatty meats; and loss of the gut microbiome diversity supported by dietary fibre. The diet confuses simple refined carbohydrates (white sugar, white flour — associated with poor health outcomes) with complex carbohydrates (wholegrains, vegetables, legumes — associated with positive health outcomes). Evidence-based nutritional science recommends replacing refined carbohydrates with complex ones, not eliminating the entire macronutrient category.",
+        "common_errors": [
+          "Accepting or rejecting the diet without explaining the underlying nutritional science",
+          "Not distinguishing between refined and complex carbohydrates in the evaluation"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "DT-KS3-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Can follow a recipe to prepare a simple dish with support, but does not understand why specific techniques are used or how to adapt if something goes wrong.",
+        "example_task": "You are making a stir-fry. Why is it important to cut all the vegetables into small, similar-sized pieces before you start cooking?",
+        "example_response": "Cutting vegetables into small, similar-sized pieces ensures they all cook at the same rate. If some pieces are large and some small, the small ones will overcook and go mushy while the large ones are still raw inside.",
+        "common_errors": [
+          "Thinking it is just about appearance rather than even cooking",
+          "Not understanding that stir-frying uses high heat for a short time, so uniform size is critical"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Can execute a range of cooking techniques (boiling, frying, baking, grilling) with reasonable competence and understands the basic science behind them (e.g., heat causes proteins to denature).",
+        "example_task": "Explain the difference between sauteing and deep-frying. When would you use each technique?",
+        "example_response": "Sauteing uses a small amount of oil in a wide pan over high heat. Food is cut small and moved constantly so it cooks quickly and develops a golden colour from the Maillard reaction without absorbing much oil. It is used for vegetables, strips of meat and aromatics. Deep-frying submerges food completely in hot oil (typically 170-190 degrees C). The high temperature instantly seals the surface, creating a crispy coating while the interior steams and cooks through. It is used for battered fish, chips and doughnuts. I would saute when I want a quick, healthy result with fresh flavour, and deep-fry when I want a crispy texture as the main feature of the dish.",
+        "common_errors": [
+          "Confusing sauteing with shallow frying (shallow frying uses more oil and food is not moved constantly)",
+          "Not explaining the scientific reason why deep-fried food has a crispy exterior (moisture evaporation and surface sealing)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Coordinates multiple cooking techniques within a single multi-component dish, uses sensory evaluation to adjust seasoning and timing, and understands the food science behind technique choices.",
+        "example_task": "You are making a chicken pie from scratch. Plan the order of preparation, explaining why timing and technique matter at each stage.",
+        "example_response": "Stage 1 — Pastry first: make shortcrust pastry (rub cold butter into flour to create a breadcrumb texture — the fat coats flour particles, preventing gluten development, which keeps the pastry short and crumbly). Wrap in cling film and chill for 30 minutes (this relaxes the gluten, preventing shrinkage during baking, and firms the fat for easier rolling). Stage 2 — While pastry chills, prepare the filling: dice chicken and saute in a hot pan to brown the surface (Maillard reaction develops flavour). Remove chicken. Saute diced onion, celery and carrot in the same pan (using the residual fond for extra flavour). Stage 3 — Make a roux sauce: melt butter, stir in flour, cook for 2 minutes (cooking out the raw flour taste), then gradually add chicken stock while stirring continuously to prevent lumps (the starch gelatinises as it absorbs liquid, thickening the sauce). Return the chicken, season with salt, pepper and thyme. Taste and adjust. Cool the filling before filling the pie (hot filling would melt the pastry before it has time to set in the oven). Stage 4 — Roll out pastry, fill, seal edges, egg wash (for colour), and bake at 200 degrees C until golden.",
+        "common_errors": [
+          "Not chilling the pastry before rolling, leading to shrinkage and tough texture",
+          "Putting hot filling into the pastry case, which melts the fat and produces a soggy bottom"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Adapts techniques creatively, understands the science well enough to diagnose and fix problems, and can develop recipes independently based on knowledge of how ingredients behave.",
+        "example_task": "Your hollandaise sauce has split (the butter and egg have separated into an oily, curdled mess). Explain the science behind why this happened and describe two methods to rescue it.",
+        "example_response": "Hollandaise is an emulsion: microscopic droplets of melted butter are suspended in a continuous phase of egg yolk and lemon juice. The lecithin in egg yolk acts as an emulsifier, coating each fat droplet and preventing them from merging. Splitting occurs when the emulsion breaks — the fat droplets merge back together and separate from the water phase. This happens if: the butter was added too quickly (overwhelming the emulsifier's capacity), the temperature was too high (the egg proteins coagulated, destroying the emulsifier network), or the mixture was not whisked vigorously enough. Rescue method 1: Start a fresh egg yolk in a clean bowl. Whisk it over gentle heat, then very slowly drizzle the split sauce into the new yolk while whisking constantly. The fresh lecithin re-emulsifies the mixture. Rescue method 2: Add a tablespoon of cold water to the split sauce and whisk vigorously. The cold water lowers the temperature and provides a new water phase for the fat droplets to disperse into. If this does not work, combine methods: whisk the cold water into a fresh yolk, then slowly incorporate the split sauce.",
+        "common_errors": [
+          "Not understanding that hollandaise is an emulsion (a mixture of two liquids that do not normally mix)",
+          "Attempting to rescue by adding more butter, which makes the problem worse by adding more fat without more emulsifier"
+        ]
+      }
+    ]
+  }
+]

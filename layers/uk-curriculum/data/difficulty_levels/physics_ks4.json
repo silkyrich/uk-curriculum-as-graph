@@ -1,0 +1,737 @@
+[
+  {
+    "concept_id": "PH-KS4-C001",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies basic energy stores (kinetic, thermal, gravitational potential) and recognises that energy can be transferred between stores.",
+        "example_task": "Name the energy stores involved when a ball is thrown upwards and comes back down.",
+        "example_response": "The ball starts with kinetic energy store, transfers to gravitational potential energy store as it rises, then back to kinetic energy store as it falls.",
+        "common_errors": [
+          "Describing energy as being 'used up' or 'created' rather than transferred between stores",
+          "Confusing energy stores with energy transfer pathways (e.g. saying 'sound energy store')"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes energy transfers using correct store terminology, calculates kinetic and gravitational potential energy using standard formulae, and recognises conservation of energy.",
+        "example_task": "A 2 kg ball is dropped from a height of 5 m. Calculate the gravitational potential energy at the top and the kinetic energy just before hitting the ground (g = 10 N/kg). Explain any difference.",
+        "example_response": "GPE = mgh = 2 × 10 × 5 = 100 J. If energy is conserved and air resistance is negligible, KE just before impact = 100 J. In reality some energy is transferred to the thermal store of the air and ball by air resistance, so KE would be slightly less than 100 J.",
+        "common_errors": [
+          "Forgetting to state the assumption about negligible air resistance when equating GPE to KE",
+          "Using incorrect units or confusing mass in kg with weight in N in the GPE formula"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies energy conservation quantitatively across multi-step problems, calculates efficiency, and draws and interprets Sankey diagrams for real systems.",
+        "example_task": "A 1500 W kettle transfers 270 kJ of energy to heat water. The total electrical energy input is 300 kJ. Calculate the efficiency and draw a Sankey diagram showing the useful and wasted energy transfers.",
+        "example_response": "Efficiency = useful output / total input = 270,000 / 300,000 = 0.9 = 90%. The Sankey diagram shows 300 kJ input on the left, a wide arrow of 270 kJ going to the thermal store of the water (useful), and a narrow arrow of 30 kJ going to the thermal store of the surroundings (wasted).",
+        "common_errors": [
+          "Drawing Sankey diagram arrows that do not conserve total width (input width must equal sum of output widths)",
+          "Confusing power (rate of energy transfer) with total energy transferred when calculating efficiency"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates energy transfer scenarios critically, combines power, work done, and efficiency in extended calculations, and analyses the limitations of energy models in real-world contexts.",
+        "example_task": "A regenerative braking system in an electric car recovers 60% of the kinetic energy during braking. The 1200 kg car decelerates from 20 m/s to rest. Calculate the energy recovered and evaluate why 100% recovery is impossible.",
+        "example_response": "KE = ½mv² = ½ × 1200 × 20² = 240,000 J. Energy recovered = 0.6 × 240,000 = 144,000 J. 100% recovery is impossible because some kinetic energy is transferred to thermal stores in the brake pads and tyres through friction, some is dissipated as sound, and the generator itself has internal resistance causing heating. The second law of thermodynamics means some energy will always be dissipated to less useful thermal stores.",
+        "common_errors": [
+          "Failing to identify multiple dissipation pathways and only listing one source of energy loss",
+          "Not linking the impossibility of 100% recovery to fundamental thermodynamic principles"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C002",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that different materials heat up at different rates and that changes of state require energy input or release without a temperature change.",
+        "example_task": "Explain why a metal spoon feels hotter than a wooden spoon when both are left in hot water for the same time.",
+        "example_response": "Metal conducts heat quickly so thermal energy transfers from the water to your hand faster. Wood is an insulator so it transfers heat more slowly.",
+        "common_errors": [
+          "Stating the metal 'has more heat' rather than explaining the rate of thermal energy transfer",
+          "Confusing temperature with thermal energy — believing a small hot object has more energy than a large warm one"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Uses the specific heat capacity equation (E = mcΔθ) to calculate energy changes for heating and cooling, and identifies specific latent heat as the energy for a change of state.",
+        "example_task": "Calculate the energy needed to heat 0.5 kg of water from 20°C to 100°C. The specific heat capacity of water is 4200 J/kg°C.",
+        "example_response": "E = mcΔθ = 0.5 × 4200 × (100 - 20) = 0.5 × 4200 × 80 = 168,000 J = 168 kJ.",
+        "common_errors": [
+          "Using the final temperature instead of the temperature change (Δθ) in the equation",
+          "Forgetting that during a change of state the temperature remains constant, so SHC equation does not apply"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Combines SHC and specific latent heat calculations in multi-step problems, interprets heating curves showing plateaus at changes of state, and explains the particle model basis for these energy changes.",
+        "example_task": "Describe and explain the shape of a heating curve for ice at -10°C being heated to steam at 110°C. Include relevant equations.",
+        "example_response": "The curve has five sections: (1) rising temperature as ice heats (E = mcΔθ using SHC of ice), (2) flat plateau at 0°C as ice melts (E = mL using specific latent heat of fusion), (3) rising temperature as water heats (E = mcΔθ using SHC of water), (4) flat plateau at 100°C as water boils (E = mL using specific latent heat of vaporisation), (5) rising temperature as steam heats. During plateaus, energy overcomes intermolecular bonds rather than increasing kinetic energy of particles.",
+        "common_errors": [
+          "Not recognising that the gradient differs between solid, liquid, and gas phases because they have different SHC values",
+          "Confusing latent heat of fusion with latent heat of vaporisation or using the wrong value in calculations"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates experimental methods for determining SHC and latent heat, analyses sources of systematic error, and applies combined calculations to unfamiliar engineering or environmental contexts.",
+        "example_task": "In a school experiment to determine the SHC of aluminium, a 1 kg block is heated with a 50 W immersion heater for 300 s. The temperature rises from 20°C to 53.3°C. Calculate the experimental SHC and explain why this differs from the accepted value of 900 J/kg°C.",
+        "example_response": "Energy supplied = Pt = 50 × 300 = 15,000 J. SHC = E/(mΔθ) = 15,000/(1 × 33.3) = 450 J/kg°C. This is lower than 900 J/kg°C because the calculation assumes all electrical energy heats the block, but energy is lost to the surroundings by radiation and conduction. The true temperature rise should be smaller, giving a higher SHC. Insulating the block, using a lid, and applying thermal paste between heater and block would reduce systematic error.",
+        "common_errors": [
+          "Stating the experimental value is 'wrong' without identifying the direction and cause of systematic error",
+          "Not recognising that energy losses always make the experimental SHC appear lower than the true value"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C003",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies current as the flow of charge, potential difference as the push on charges, and resistance as opposition to flow. Draws and recognises simple series and parallel circuits.",
+        "example_task": "Draw a series circuit with a battery, ammeter, lamp, and voltmeter measuring the potential difference across the lamp. Label each component.",
+        "example_response": "The circuit shows a battery connected in a single loop with an ammeter in series and a lamp. A voltmeter is connected in parallel across the lamp. The ammeter is drawn in the main loop; the voltmeter branches off and reconnects around the lamp.",
+        "common_errors": [
+          "Drawing the voltmeter in series with the lamp rather than in parallel across it",
+          "Confusing the circuit symbols for ammeter (A in circle) and voltmeter (V in circle)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applies V = IR to calculate current, p.d., or resistance. Describes how current and p.d. behave in series and parallel circuits. Interprets I-V characteristic graphs for resistors, filament lamps, and diodes.",
+        "example_task": "A 6 V battery is connected to two resistors in series: 4 Ω and 8 Ω. Calculate the current and the potential difference across each resistor.",
+        "example_response": "Total resistance = 4 + 8 = 12 Ω. Current = V/R = 6/12 = 0.5 A. P.d. across 4 Ω = IR = 0.5 × 4 = 2 V. P.d. across 8 Ω = IR = 0.5 × 8 = 4 V. Check: 2 + 4 = 6 V (equals supply p.d.).",
+        "common_errors": [
+          "Using individual resistance instead of total resistance to calculate the current from the supply",
+          "Forgetting that in a series circuit, the p.d.s across components must sum to the supply p.d."
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Analyses combined series-parallel circuits, explains non-ohmic behaviour using particle models (filament lamp, thermistor, LDR, diode), and applies the charge equation Q = It alongside V = IR.",
+        "example_task": "A thermistor is connected in series with a 100 Ω fixed resistor and a 6 V supply. At 20°C the thermistor has resistance 400 Ω; at 50°C it drops to 100 Ω. Calculate the p.d. across the fixed resistor at each temperature and explain the application.",
+        "example_response": "At 20°C: total R = 400 + 100 = 500 Ω, I = 6/500 = 0.012 A, p.d. across fixed resistor = 0.012 × 100 = 1.2 V. At 50°C: total R = 100 + 100 = 200 Ω, I = 6/200 = 0.03 A, p.d. across fixed resistor = 0.03 × 100 = 3.0 V. As temperature rises, the p.d. across the fixed resistor increases. This potential divider arrangement can trigger a switch (e.g. a fire alarm) when voltage exceeds a threshold.",
+        "common_errors": [
+          "Confusing the p.d. across the thermistor with the p.d. across the fixed resistor",
+          "Not explaining that the thermistor's resistance decreases with temperature due to more charge carriers being released"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Designs and evaluates circuits for specific purposes, analyses experimental I-V data critically, and explains the physics underlying component behaviour at a particle level, including energy transfers within circuits.",
+        "example_task": "A student claims that a filament lamp obeys Ohm's law because 'when you increase the voltage, the current increases.' Evaluate this claim using I-V characteristic data and particle theory.",
+        "example_response": "The claim is incorrect. While current does increase with voltage, Ohm's law requires a linear (directly proportional) relationship — constant resistance. A filament lamp's I-V graph is curved: at higher voltages, the filament heats up, metal ions vibrate more, and conduction electrons collide more frequently with the lattice, increasing resistance. The graph shows a decreasing gradient (I increases more slowly than V). This means the lamp is non-ohmic. The student has confused 'current increases with voltage' (true for most components) with 'current is directly proportional to voltage' (only true for ohmic conductors at constant temperature).",
+        "common_errors": [
+          "Failing to distinguish between 'current increases with voltage' and 'current is directly proportional to voltage'",
+          "Not linking the curvature of the I-V graph to the physical mechanism of increased lattice vibrations at higher temperatures"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C004",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that electrical appliances transfer energy, knows the difference between a.c. and d.c., and identifies basic electrical safety features (fuses, earth wires, insulation).",
+        "example_task": "State two differences between alternating current (a.c.) from the mains and direct current (d.c.) from a battery.",
+        "example_response": "A.c. constantly changes direction while d.c. flows in one direction only. UK mains a.c. has a frequency of 50 Hz and a voltage of 230 V, while a typical battery provides 1.5 V d.c.",
+        "common_errors": [
+          "Stating that a.c. is 'stronger' than d.c. rather than describing the directional difference",
+          "Not knowing the UK mains supply values (230 V, 50 Hz)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates electrical power using P = IV and P = I²R, determines energy transferred using E = Pt, and explains how fuses and circuit breakers protect circuits from overheating.",
+        "example_task": "A 2300 W kettle is connected to the 230 V mains. Calculate the current and select an appropriate fuse (3 A, 5 A, or 13 A).",
+        "example_response": "I = P/V = 2300/230 = 10 A. The fuse must be rated above the normal operating current but as close as possible. A 13 A fuse is appropriate. A 5 A fuse would blow during normal use; a 3 A fuse would also blow.",
+        "common_errors": [
+          "Selecting a fuse with exactly the same rating as the operating current rather than the next size up",
+          "Using the wrong power equation and mixing up variables"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies the National Grid model to explain efficient power transmission, uses P = IV and P = I²R to explain why high voltage reduces energy losses, and calculates energy costs using the kilowatt-hour.",
+        "example_task": "Explain why the National Grid transmits electricity at 400,000 V rather than at 230 V. Use relevant equations in your answer.",
+        "example_response": "Power transmitted is P = IV. For a given power, increasing voltage reduces current (I = P/V). Energy dissipated in the cables as heat is P_loss = I²R. Since current is squared, halving the current reduces heating losses by a factor of four. Transmitting at 400,000 V keeps current very low, minimising I²R losses in the long cables. Step-up transformers increase voltage at the power station; step-down transformers reduce it to 230 V for homes.",
+        "common_errors": [
+          "Stating 'high voltage means less energy lost' without explaining the mechanism via reduced current and I²R",
+          "Confusing the transmitted power with the wasted power in the cables"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the efficiency and safety trade-offs in real electrical systems, analyses energy cost scenarios with multiple appliances, and critically discusses the advantages and limitations of different generation and distribution methods.",
+        "example_task": "A household has two options for water heating: a 3 kW immersion heater running for 2 hours daily, or a heat pump rated at 1 kW running for 3 hours with a coefficient of performance of 3. Electricity costs 30p per kWh. Compare the annual costs and energy efficiency of each system.",
+        "example_response": "Immersion heater: daily energy = 3 × 2 = 6 kWh, annual cost = 6 × 365 × 0.30 = £657. Heat delivered = 6 kWh. Heat pump: daily electrical energy = 1 × 3 = 3 kWh, but COP of 3 means heat delivered = 3 × 3 = 9 kWh. Annual cost = 3 × 365 × 0.30 = £328.50. The heat pump costs half as much while delivering 50% more heat, because it moves thermal energy from outside rather than converting electrical energy directly. However, the heat pump has higher installation costs, lower COP in cold weather, and the comparison assumes constant COP, which is an idealisation.",
+        "common_errors": [
+          "Not understanding that COP > 1 is possible because a heat pump moves existing thermal energy rather than creating it",
+          "Failing to evaluate real-world limitations such as seasonal COP variation and installation costs"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C005",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Describes the particle arrangements in solids, liquids, and gases, and relates these to macroscopic properties such as shape, volume, and compressibility.",
+        "example_task": "Describe the arrangement and movement of particles in a solid, liquid, and gas.",
+        "example_response": "In a solid, particles are closely packed in a regular arrangement and vibrate about fixed positions. In a liquid, particles are close together but irregularly arranged and can move past each other. In a gas, particles are far apart with no fixed arrangement and move rapidly in random directions.",
+        "common_errors": [
+          "Drawing gas particles as stationary or evenly spaced rather than randomly distributed and moving",
+          "Stating that particles 'expand' when heated rather than that they move faster and spread further apart"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates density using ρ = m/V, describes how temperature relates to average kinetic energy of particles, and explains pressure in gases using particle collisions with container walls.",
+        "example_task": "A metal block has mass 540 g and dimensions 10 cm × 5 cm × 4 cm. Calculate its density in kg/m³ and identify the likely metal.",
+        "example_response": "Volume = 10 × 5 × 4 = 200 cm³ = 0.0002 m³. Mass = 540 g = 0.54 kg. Density = m/V = 0.54/0.0002 = 2700 kg/m³. This is the density of aluminium.",
+        "common_errors": [
+          "Failing to convert cm³ to m³ correctly (1 m³ = 1,000,000 cm³, not 100 cm³)",
+          "Mixing grams and kilograms without converting, giving an answer out by a factor of 1000"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies the gas laws (pV = constant at constant T; p/T = constant at constant V) to solve problems, links gas pressure to particle kinetic energy and collision frequency, and explains density differences between states using the particle model.",
+        "example_task": "A sealed syringe contains 100 cm³ of gas at atmospheric pressure (100 kPa). The plunger is pushed in until the volume is 40 cm³. Calculate the new pressure, assuming constant temperature, and explain the result using particle theory.",
+        "example_response": "p₁V₁ = p₂V₂, so 100 × 100 = p₂ × 40, p₂ = 10000/40 = 250 kPa. The pressure increases because the same number of gas particles now occupy a smaller volume. Particles hit the walls more frequently (more collisions per second per unit area), increasing the force per unit area, which is pressure. Temperature is constant so average kinetic energy of particles is unchanged.",
+        "common_errors": [
+          "Stating that particles 'move faster' when compressed at constant temperature — speed is unchanged, only collision frequency increases",
+          "Applying Boyle's law to situations where temperature changes, invalidating the constant-temperature assumption"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the limitations of the simple particle model, applies gas law calculations to unfamiliar contexts, and analyses experimental methods for measuring density of regular and irregular objects including sources of error.",
+        "example_task": "A student measures the density of an irregular stone by displacement. The stone has mass 156 g. Initial water level is 50.0 cm³ and rises to 107.8 cm³ when the stone is submerged. Calculate the density. The accepted density is 2800 kg/m³. Evaluate the experimental method and suggest why the result might differ.",
+        "example_response": "Volume = 107.8 - 50.0 = 57.8 cm³ = 5.78 × 10⁻⁵ m³. Density = 0.156/5.78 × 10⁻⁵ = 2699 kg/m³. This is lower than 2800 kg/m³. Possible reasons: air bubbles trapped on the stone's surface increase the apparent volume, reducing calculated density. The stone may be porous, absorbing water and increasing the displaced volume reading over time. The measuring cylinder has a resolution of ±0.5 cm³, giving a percentage uncertainty of approximately ±0.9% in volume, which is the dominant source of random error. Using a Eureka can with a more precise measuring cylinder would improve accuracy.",
+        "common_errors": [
+          "Not identifying that trapped air bubbles systematically increase volume and therefore decrease the density calculation",
+          "Confusing systematic errors (air bubbles, porous stone) with random errors (reading the meniscus) in evaluation"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C006",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies the three types of nuclear radiation (alpha, beta, gamma) and recognises that radioactive materials emit radiation from unstable nuclei.",
+        "example_task": "Name the three types of nuclear radiation and state one property of each.",
+        "example_response": "Alpha radiation is stopped by paper and has a positive charge. Beta radiation is stopped by aluminium and has a negative charge. Gamma radiation is stopped by thick lead and has no charge.",
+        "common_errors": [
+          "Confusing beta particles with electrons from electron shells rather than identifying them as coming from the nucleus",
+          "Stating that radiation makes objects radioactive (confusing irradiation with contamination)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes radioactive decay equations for alpha and beta decay, calculates half-life from data or graphs, and distinguishes between irradiation and contamination.",
+        "example_task": "A radioactive sample has an activity of 800 Bq. After 30 minutes the activity is 100 Bq. Calculate the half-life.",
+        "example_response": "800 → 400 (1 half-life) → 200 (2 half-lives) → 100 (3 half-lives). Three half-lives occur in 30 minutes, so one half-life = 30/3 = 10 minutes.",
+        "common_errors": [
+          "Dividing the initial activity by the final activity and calling that the half-life",
+          "Not recognising that each half-life halves the remaining activity, requiring repeated halving rather than a single division"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains nuclear decay in terms of changes to protons and neutrons, writes and balances nuclear equations including atomic and mass numbers, and evaluates the hazards and uses of each radiation type based on their properties.",
+        "example_task": "Write balanced nuclear equations for (a) alpha decay of uranium-238 and (b) beta decay of carbon-14. Explain what happens in the nucleus during each decay.",
+        "example_response": "(a) ²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He. The uranium nucleus emits 2 protons and 2 neutrons as an alpha particle, reducing mass number by 4 and atomic number by 2. (b) ¹⁴₆C → ¹⁴₇N + ⁰₋₁e. A neutron in the carbon nucleus converts to a proton, emitting a beta particle (fast electron). Mass number stays the same; atomic number increases by 1.",
+        "common_errors": [
+          "Not conserving both mass number and atomic number when balancing nuclear equations",
+          "Writing the beta particle as ⁰₊₁e (positive) instead of ⁰₋₁e (negative charge)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the suitability of specific isotopes for applications (medical tracers, smoke detectors, dating), analyses decay chain problems, and critically discusses the risks of nuclear radiation in context, including dose, exposure time, and distance.",
+        "example_task": "Explain why technetium-99m (half-life 6 hours, gamma emitter) is suitable as a medical tracer but americium-241 (half-life 432 years, alpha emitter) is suitable for smoke detectors. Discuss why swapping them would be unsuitable.",
+        "example_response": "Tc-99m emits gamma radiation which penetrates tissue and can be detected outside the body by a gamma camera. Its 6-hour half-life means it decays quickly enough to minimise patient exposure but slowly enough to complete the scan. Am-241 emits alpha particles which ionise air in the smoke detector chamber; smoke disrupts this ionisation current, triggering the alarm. Its 432-year half-life means the source lasts the detector's lifetime. Swapping would fail: Am-241's alpha particles cannot penetrate tissue to be detected externally, and its long half-life would expose the patient for years. Tc-99m's short half-life would require constant replacement in smoke detectors, and gamma radiation would penetrate the chamber without sufficient ionisation.",
+        "common_errors": [
+          "Stating that alpha sources are 'too dangerous' for medical use without recognising that the issue is penetration, not danger per se",
+          "Not linking half-life to practical requirements — both too short and too long can be unsuitable depending on application"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C007",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that energy can be released from atomic nuclei, distinguishes fission (splitting large nuclei) from fusion (joining small nuclei), and knows that nuclear power stations use fission.",
+        "example_task": "State the difference between nuclear fission and nuclear fusion.",
+        "example_response": "Fission is the splitting of a large unstable nucleus (like uranium) into two smaller nuclei, releasing energy. Fusion is the joining of two small nuclei (like hydrogen) to form a larger nucleus, also releasing energy.",
+        "common_errors": [
+          "Confusing fission and fusion — stating that fusion is splitting and fission is joining",
+          "Believing that fission and fusion are the same as radioactive decay"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes the chain reaction process in nuclear fission, explains the role of neutrons in sustaining the reaction, and identifies the conditions needed for fusion (high temperature and pressure).",
+        "example_task": "Describe how a chain reaction occurs in nuclear fission of uranium-235.",
+        "example_response": "A neutron is absorbed by a uranium-235 nucleus, making it unstable. It splits into two smaller daughter nuclei plus 2-3 neutrons and releases energy. These neutrons can be absorbed by other U-235 nuclei, causing further fission. Each fission event releases more neutrons, sustaining a chain reaction.",
+        "common_errors": [
+          "Stating that the neutron 'hits' the nucleus and splits it mechanically, rather than being absorbed",
+          "Not mentioning that each fission releases multiple neutrons, which is what makes the chain reaction possible"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains how control rods and moderators regulate fission in a reactor, describes the mass-energy equivalence principle underlying nuclear energy release, and compares fission and fusion in terms of fuel, products, and challenges.",
+        "example_task": "Explain the roles of the moderator and control rods in a nuclear reactor. Why is each necessary?",
+        "example_response": "The moderator (e.g. water or graphite) slows down fast neutrons released by fission to thermal speeds, because slow neutrons are more likely to be absorbed by U-235 and cause further fission. Without the moderator, most neutrons would be too fast and the chain reaction would stop. Control rods (e.g. boron) absorb excess neutrons to maintain a steady chain reaction rate. Inserting rods further absorbs more neutrons and slows the reaction; withdrawing them allows more fission events. In an emergency, rods are fully inserted to shut down the reactor.",
+        "common_errors": [
+          "Confusing the roles of moderator and control rods — the moderator slows neutrons, control rods absorb them",
+          "Stating that the moderator 'controls' the reaction rate rather than recognising its role is to thermalise neutrons"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the advantages and disadvantages of nuclear fission and fusion as energy sources, analyses why controlled fusion has not yet been achieved, and discusses nuclear waste management including ethical and environmental considerations.",
+        "example_task": "Evaluate the claim that nuclear fusion will solve the world's energy problems. Consider scientific, engineering, and ethical factors.",
+        "example_response": "Fusion offers enormous potential: hydrogen fuel is abundant (from seawater), products (helium) are non-radioactive, and energy output per kilogram far exceeds fission. However, achieving the conditions for sustained fusion (temperatures exceeding 100 million °C, sufficient confinement time and plasma density) remains an engineering challenge. Current experimental reactors (e.g. JET, ITER) have achieved brief fusion but consume more energy than they produce. The reactor materials become radioactive through neutron bombardment, though with shorter half-lives than fission waste. Timescales are uncertain — commercial fusion has been '30 years away' for decades. Investment in fusion must be balanced against deploying proven renewables now. Fusion could be transformative but is not guaranteed, and relying on it risks delaying action on current energy and climate challenges.",
+        "common_errors": [
+          "Claiming fusion produces 'no waste' — the reactor structure becomes neutron-activated and does produce radioactive waste, albeit shorter-lived",
+          "Not recognising the engineering distinction between achieving fusion (done) and achieving net energy gain from sustained fusion (not yet done at scale)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C008",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Describes Newton's three laws qualitatively: objects remain at rest or constant velocity unless acted on by a force, force causes acceleration, and every action has an equal and opposite reaction.",
+        "example_task": "A book is resting on a table. Use Newton's first law to explain why it stays still.",
+        "example_response": "The book stays still because the forces on it are balanced. The weight (gravity pulling down) is equal to the normal contact force from the table pushing up. Since the resultant force is zero, the book remains at rest, as Newton's first law states.",
+        "common_errors": [
+          "Stating the action-reaction pair is weight and normal force (these act on the same object — not a Newton's third law pair)",
+          "Believing that an object at rest has no forces acting on it, rather than recognising balanced forces"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applies F = ma to calculate force, mass, or acceleration. Draws and interprets free body diagrams showing all forces on an object. Uses Newton's third law to identify action-reaction force pairs acting on different objects.",
+        "example_task": "A 1500 kg car accelerates from rest to 15 m/s in 10 seconds. Calculate the resultant force, assuming constant acceleration.",
+        "example_response": "Acceleration = Δv/t = (15 - 0)/10 = 1.5 m/s². Resultant force = ma = 1500 × 1.5 = 2250 N.",
+        "common_errors": [
+          "Forgetting to calculate acceleration first and trying to use F = mv instead of F = ma",
+          "Not distinguishing between the driving force (from the engine) and the resultant force (driving force minus friction and air resistance)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies Newton's laws to multi-force problems including friction, air resistance, and terminal velocity. Interprets velocity-time graphs to determine acceleration and resultant force. Analyses the forces during real scenarios such as skydiving and braking.",
+        "example_task": "Describe and explain the motion of a skydiver from jumping out of the plane until landing, using Newton's laws and a velocity-time graph.",
+        "example_response": "Initially, only weight acts downward so the skydiver accelerates at g (≈10 m/s²). As speed increases, air resistance increases (proportional to velocity²), reducing the resultant downward force and hence the acceleration. When air resistance equals weight, the resultant force is zero and the skydiver reaches terminal velocity (Newton's first law). On deploying the parachute, air resistance suddenly exceeds weight, creating an upward resultant force that decelerates the skydiver (Newton's second law). Speed decreases, reducing air resistance, until a new lower terminal velocity is reached. The v-t graph shows increasing gradient initially, then decreasing gradient to a plateau, then a sharp decrease to a lower plateau.",
+        "common_errors": [
+          "Stating that air resistance is constant rather than velocity-dependent",
+          "Drawing the v-t graph with a sharp corner at terminal velocity rather than a smooth curve approaching the plateau"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Applies Newton's laws to complex and unfamiliar situations, evaluates the assumptions in simplified models, resolves forces on inclined planes, and analyses real-world applications including vehicle safety and space travel.",
+        "example_task": "A 50 kg skier descends a 30° slope. The coefficient of friction is 0.1. Calculate the acceleration down the slope and evaluate whether the assumption of constant friction is valid at high speed.",
+        "example_response": "Component of weight along slope = mg sin30° = 50 × 10 × 0.5 = 250 N. Normal reaction = mg cos30° = 50 × 10 × 0.866 = 433 N. Friction = μR = 0.1 × 433 = 43.3 N. Resultant force down slope = 250 - 43.3 = 206.7 N. Acceleration = F/m = 206.7/50 = 4.13 m/s². The constant friction model is a simplification. At higher speeds, air resistance becomes significant and should be included as an additional retarding force. The coefficient of friction may also vary with speed — snow compaction and meltwater lubrication change with pressure and temperature. A more complete model would include a velocity-dependent drag term.",
+        "common_errors": [
+          "Using mg instead of mg cos θ for the normal reaction force on an inclined plane",
+          "Forgetting to include air resistance as an additional force that becomes significant at higher speeds"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C009",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that momentum is related to both mass and velocity, and that collisions involve a transfer of momentum between objects.",
+        "example_task": "Explain why a heavy lorry moving slowly can be harder to stop than a light car moving quickly.",
+        "example_response": "The lorry has a large mass, and even though it moves slowly, its momentum (mass × velocity) can be very large. The car has a smaller mass, so even at higher speed, its momentum may be less. Stopping an object requires reducing its momentum to zero, which requires a larger force or longer time for higher momentum.",
+        "common_errors": [
+          "Stating momentum depends only on speed without considering mass",
+          "Confusing momentum with kinetic energy"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Calculates momentum using p = mv, applies the conservation of momentum to simple collisions and explosions, and determines the velocity of objects after a collision.",
+        "example_task": "A 2 kg trolley moving at 3 m/s collides with a stationary 1 kg trolley. They stick together. Calculate the velocity after the collision.",
+        "example_response": "Total momentum before = (2 × 3) + (1 × 0) = 6 kg m/s. After collision, combined mass = 3 kg. By conservation of momentum: 6 = 3 × v, so v = 2 m/s in the original direction of travel.",
+        "common_errors": [
+          "Forgetting to add the masses together for objects that stick together after collision",
+          "Not assigning correct signs to velocities when objects move in opposite directions"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies conservation of momentum to two-dimensional collision and explosion problems, links force to rate of change of momentum (F = Δp/Δt), and explains how crumple zones and airbags reduce injury by extending the time of momentum change.",
+        "example_task": "A 70 kg person in a car crash decelerates from 15 m/s to 0 m/s. Compare the force experienced if they stop in (a) 0.05 s (no airbag) and (b) 0.3 s (with airbag). Explain the safety implication.",
+        "example_response": "Change in momentum = 70 × 15 = 1050 kg m/s. (a) F = Δp/Δt = 1050/0.05 = 21,000 N. (b) F = 1050/0.3 = 3,500 N. The airbag extends the stopping time by a factor of 6, reducing the force by a factor of 6. The impulse (momentum change) is the same in both cases, but the longer time reduces the peak force, significantly reducing the risk of injury.",
+        "common_errors": [
+          "Stating the airbag 'absorbs momentum' rather than correctly explaining it increases the time over which momentum changes",
+          "Confusing force (instantaneous) with impulse (force × time = change in momentum)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses complex momentum problems involving elastic and inelastic collisions, evaluates whether kinetic energy is conserved alongside momentum, and applies impulse-momentum relationships to real engineering and safety scenarios.",
+        "example_task": "Two trolleys collide head-on: trolley A (2 kg, +4 m/s) and trolley B (3 kg, -2 m/s). After collision, trolley A moves at -1 m/s. Find trolley B's velocity. Determine whether the collision is elastic or inelastic.",
+        "example_response": "Momentum before = (2 × 4) + (3 × -2) = 8 - 6 = 2 kg m/s. After: 2 × (-1) + 3 × v_B = 2, so -2 + 3v_B = 2, v_B = 4/3 ≈ 1.33 m/s. KE before = ½(2)(4²) + ½(3)(2²) = 16 + 6 = 22 J. KE after = ½(2)(1²) + ½(3)(1.33²) = 1 + 2.67 = 3.67 J. KE is not conserved (22 J → 3.67 J), so this is an inelastic collision. The lost 18.33 J has been transferred to thermal energy, sound, and deformation of the trolleys.",
+        "common_errors": [
+          "Forgetting to use signed velocities for objects moving in opposite directions",
+          "Confusing conservation of momentum (always conserved in a closed system) with conservation of kinetic energy (only conserved in elastic collisions)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C010",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Identifies basic wave properties (amplitude, wavelength, frequency) and distinguishes between transverse and longitudinal waves with examples.",
+        "example_task": "State one example of a transverse wave and one example of a longitudinal wave. Describe how particle movement differs in each.",
+        "example_response": "A transverse wave example is a water wave — particles move up and down, perpendicular to the direction the wave travels. A longitudinal wave example is a sound wave — particles vibrate back and forth in the same direction the wave travels, creating compressions and rarefactions.",
+        "common_errors": [
+          "Stating that particles in a wave travel from source to receiver rather than oscillating about a fixed point",
+          "Confusing transverse and longitudinal — describing sound waves as transverse"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applies the wave equation v = fλ, measures wave properties from diagrams and oscilloscope traces, and describes reflection, refraction, and diffraction qualitatively.",
+        "example_task": "A sound wave has a frequency of 440 Hz and travels at 330 m/s. Calculate its wavelength.",
+        "example_response": "v = fλ, so λ = v/f = 330/440 = 0.75 m.",
+        "common_errors": [
+          "Confusing wavelength with amplitude when reading wave diagrams",
+          "Using the wrong rearrangement of v = fλ (e.g. calculating f × λ instead of v/f)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains refraction using changes in wave speed at boundaries, applies the law of reflection, describes diffraction through gaps and around obstacles, and interprets oscilloscope traces for frequency and amplitude changes.",
+        "example_task": "Explain why a light ray bends towards the normal when it passes from air into glass. Include a diagram description.",
+        "example_response": "Light travels slower in glass than in air. When the wavefront enters the glass at an angle, the part that enters first slows down while the rest continues at the original speed. This causes the wavefront to change direction, bending towards the normal. The angle of refraction is smaller than the angle of incidence. This is because the wavelength decreases in the denser medium (v = fλ; frequency stays constant, speed decreases, so wavelength decreases), causing the wave to change direction.",
+        "common_errors": [
+          "Stating that frequency changes during refraction — frequency remains constant; speed and wavelength change",
+          "Drawing the refracted ray bending away from the normal when going into a denser medium"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses total internal reflection and critical angle, applies Snell's law quantitatively, evaluates the effects of diffraction on resolution and communication, and discusses wave behaviour in complex real-world applications such as fibre optics and seismology.",
+        "example_task": "The critical angle for glass-to-air is 42°. Explain how optical fibres use total internal reflection and calculate the refractive index of the glass. Discuss one limitation of fibre optic communication.",
+        "example_response": "When light inside the glass fibre hits the boundary at an angle greater than 42° to the normal, it is totally internally reflected — no light escapes. The fibre is designed so light always hits at angles exceeding 42°, allowing signals to travel long distances with minimal loss. Refractive index n = 1/sin(c) = 1/sin(42°) = 1/0.669 = 1.49. A limitation is signal degradation over very long distances: the pulse spreads (modal dispersion) because different paths through the fibre have slightly different lengths. This limits data rate and requires repeaters. Using single-mode fibres with very narrow cores reduces dispersion.",
+        "common_errors": [
+          "Confusing the critical angle condition (angle must exceed the critical angle for TIR) with regular refraction",
+          "Not recognising that TIR only occurs when light travels from a denser to a less dense medium"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C011",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Names the main regions of the electromagnetic spectrum in order of wavelength or frequency and gives one use for each.",
+        "example_task": "List the electromagnetic spectrum in order from longest wavelength to shortest and give one use of each type.",
+        "example_response": "Radio waves (TV and radio broadcasting), microwaves (cooking and satellite communication), infrared (thermal imaging and remote controls), visible light (seeing and photography), ultraviolet (fluorescent lamps and detecting forged banknotes), X-rays (medical imaging of bones), gamma rays (treating cancer).",
+        "common_errors": [
+          "Placing the types in the wrong order or omitting one region",
+          "Confusing microwaves with radio waves or ultraviolet with X-rays"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes how all electromagnetic waves are transverse, travel at the speed of light in a vacuum, and differ only in wavelength and frequency. Relates wave properties to uses and hazards.",
+        "example_task": "Explain why all electromagnetic waves travel at the same speed in a vacuum but have different frequencies and wavelengths.",
+        "example_response": "All EM waves are oscillating electric and magnetic fields that propagate at 3 × 10⁸ m/s in a vacuum. They differ in frequency and wavelength, which are inversely related (v = fλ, with v constant). Higher frequency means shorter wavelength. The energy carried by the wave increases with frequency, which is why gamma rays are more ionising than radio waves.",
+        "common_errors": [
+          "Stating that higher frequency waves travel faster — all EM waves have the same speed in a vacuum",
+          "Confusing the properties of EM waves with sound waves (e.g. stating EM waves are longitudinal)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the hazards of different EM radiations at a cellular level (ionisation, heating), evaluates the balance of risk and benefit for medical and industrial uses, and applies the relationship between frequency, wavelength, and energy to explain penetration and absorption.",
+        "example_task": "Compare the hazards and medical uses of X-rays and gamma rays. Explain why both can be useful despite being dangerous.",
+        "example_response": "Both X-rays and gamma rays are ionising — they can remove electrons from atoms, damaging DNA and causing mutations or cell death. X-rays are used in medical imaging because they are absorbed differently by bone and soft tissue, creating contrast images. The benefit (diagnosis) outweighs the risk when exposure is minimised (lead shielding, limited dose). Gamma rays are used in radiotherapy: a focused beam targets cancer cells. Healthy tissue is damaged too, but rotating the beam source around the patient concentrates the dose at the tumour. In both cases, the ionising nature that makes them dangerous also makes them useful — the key is controlled, targeted exposure.",
+        "common_errors": [
+          "Stating that X-rays are 'safe' for medical use without discussing risk minimisation",
+          "Not explaining why ionising radiation damages cells — it is the ionisation of DNA molecules, not just general 'damage'"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses applications across the full EM spectrum in unfamiliar contexts, evaluates competing technologies, and discusses the physics behind detection methods, atmospheric absorption windows, and the social implications of EM technology.",
+        "example_task": "Explain why astronomers use telescopes operating at different EM wavelengths (radio, infrared, visible, X-ray) and why some must be in space. Evaluate the importance of multi-wavelength astronomy.",
+        "example_response": "Different astronomical objects and processes emit strongly at different wavelengths: hot gas in galaxy clusters emits X-rays; stars peak in visible/UV; cool dust clouds emit infrared; pulsars emit radio waves. Earth's atmosphere absorbs most EM radiation except visible light and radio waves (atmospheric windows). X-ray and gamma-ray telescopes must be in space (e.g. Chandra, Fermi) because the atmosphere blocks these wavelengths. Infrared telescopes benefit from space (e.g. JWST) to avoid atmospheric water vapour absorption and thermal noise. Multi-wavelength astronomy is essential because no single wavelength reveals the complete picture — combining data reveals temperature, composition, motion, and magnetic field information that would be invisible in any single band.",
+        "common_errors": [
+          "Not explaining why the atmosphere blocks certain wavelengths (absorption by gases such as ozone for UV, water vapour for IR)",
+          "Treating all telescopes as equivalent rather than recognising that different wavelengths require different detection technologies"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C012",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that a wire carrying current in a magnetic field experiences a force, and that this is the basis of electric motors.",
+        "example_task": "State what happens when a current-carrying wire is placed in a magnetic field.",
+        "example_response": "The wire experiences a force. The direction of the force is perpendicular to both the current direction and the magnetic field direction. This is called the motor effect.",
+        "common_errors": [
+          "Stating that the wire is 'attracted to the magnet' rather than experiencing a force perpendicular to both field and current",
+          "Confusing the motor effect (current in a field → force) with electromagnetic induction (movement in a field → current)"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applies Fleming's left-hand rule to determine force direction, calculates force using F = BIl, and describes the basic operation of a d.c. motor including the role of the split-ring commutator.",
+        "example_task": "A 0.5 m wire carrying 3 A is placed perpendicular to a magnetic field of 0.2 T. Calculate the force on the wire and use Fleming's left-hand rule to determine its direction if the current flows upward and the field points from north to south (left to right).",
+        "example_response": "F = BIl = 0.2 × 3 × 0.5 = 0.3 N. Using Fleming's left-hand rule: first finger (field) points left to right, second finger (current) points upward, so thumb (force) points out of the page towards the observer.",
+        "common_errors": [
+          "Using the right hand instead of the left hand for the motor effect",
+          "Not recognising that the force is zero when the wire is parallel to the magnetic field"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains electromagnetic induction — a changing magnetic field induces a potential difference in a conductor. Applies Fleming's right-hand rule (or Lenz's law) to determine the direction of induced current. Describes the operation of generators and microphones.",
+        "example_task": "A magnet is pushed into a coil of wire connected to a galvanometer. Describe and explain what happens, and state three ways to increase the induced p.d.",
+        "example_response": "The galvanometer deflects, showing an induced current flows. This occurs because the magnetic flux through the coil changes as the magnet moves, inducing a potential difference (Faraday's law). When the magnet is pulled out, the deflection reverses. When the magnet is stationary inside the coil, there is no deflection (no change in flux). Three ways to increase induced p.d.: move the magnet faster (greater rate of flux change), use a stronger magnet (greater flux), use more turns on the coil (each turn contributes to the total p.d.).",
+        "common_errors": [
+          "Stating that a current is induced when a magnet is stationary inside a coil — it is the change in flux that matters",
+          "Not recognising that the direction of the induced current opposes the change that caused it (Lenz's law)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses the factors affecting induced p.d. quantitatively, evaluates the efficiency of motors and generators, explains Lenz's law as a consequence of energy conservation, and applies electromagnetic induction to unfamiliar technologies.",
+        "example_task": "Explain why Lenz's law is a consequence of the conservation of energy. Use the example of a magnet falling through a copper tube.",
+        "example_response": "When a magnet falls through a copper tube, changing flux induces currents in the tube (eddy currents). By Lenz's law, these currents create a magnetic field that opposes the magnet's motion, slowing its fall. If the induced field instead accelerated the magnet, the magnet would speed up, inducing even larger currents and larger forces, gaining kinetic energy from nothing — violating conservation of energy. The work done against the opposing force is converted to thermal energy in the copper tube (I²R heating). This is why the magnet falls slowly but the tube warms up. The opposing force is essential: it ensures the energy for the induced current comes from the kinetic energy of the falling magnet, conserving total energy.",
+        "common_errors": [
+          "Stating Lenz's law without connecting it to energy conservation — it is not an arbitrary rule but a consequence of the first law of thermodynamics",
+          "Not identifying where the 'lost' kinetic energy goes (thermal energy in the conductor due to resistance)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C013",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Recognises that transformers change voltage levels and that the National Grid uses high voltage for efficient transmission.",
+        "example_task": "State the purpose of a step-up transformer and a step-down transformer in the National Grid.",
+        "example_response": "A step-up transformer increases voltage at the power station for efficient long-distance transmission. A step-down transformer decreases voltage near homes and businesses to a safe level (230 V) for use.",
+        "common_errors": [
+          "Confusing step-up and step-down — believing step-up decreases voltage",
+          "Stating that transformers are needed because 'power stations make too much electricity'"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Applies the transformer equation Vp/Vs = Np/Ns to calculate output voltage or turns ratio, and explains qualitatively why high voltage reduces energy loss in transmission cables.",
+        "example_task": "A step-down transformer has 2000 turns on the primary coil and 100 turns on the secondary coil. The input voltage is 400,000 V. Calculate the output voltage.",
+        "example_response": "Vp/Vs = Np/Ns, so 400,000/Vs = 2000/100 = 20. Therefore Vs = 400,000/20 = 20,000 V.",
+        "common_errors": [
+          "Inverting the ratio and calculating Vs = 400,000 × 20 instead of dividing",
+          "Not checking that a step-down transformer should give a lower output voltage than input"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Applies both the turns-ratio equation and the power equation (VpIp = VsIs for an ideal transformer) to solve problems. Explains quantitatively why high-voltage transmission reduces I²R losses.",
+        "example_task": "A power station generates 500 MW. Compare the power lost in transmission cables (total resistance 4 Ω) when transmitting at (a) 25,000 V and (b) 400,000 V.",
+        "example_response": "(a) I = P/V = 500,000,000/25,000 = 20,000 A. Power loss = I²R = 20,000² × 4 = 1.6 × 10⁹ W = 1600 MW. This exceeds the generated power — not viable. (b) I = 500,000,000/400,000 = 1,250 A. Power loss = 1,250² × 4 = 6,250,000 W = 6.25 MW. At 400 kV, only 1.25% of power is lost. Increasing voltage by a factor of 16 reduces current by 16, and power loss (proportional to I²) by 256.",
+        "common_errors": [
+          "Not recognising that the power loss scales with I² — doubling voltage quarters the loss, not halves it",
+          "Calculating power loss as IV (transmitted power) instead of I²R (wasted power in cables)"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the efficiency of real transformers (eddy current losses, resistance of windings), analyses the complete National Grid system from generation to consumer, and discusses the advantages and challenges of different transmission technologies including HVDC.",
+        "example_task": "A real transformer is 95% efficient. The primary coil draws 2 A at 230 V. Calculate the output power and explain two reasons why the transformer is not 100% efficient. Suggest how each loss is minimised in practice.",
+        "example_response": "Input power = 230 × 2 = 460 W. Output power = 0.95 × 460 = 437 W. Loss 1: Eddy currents — the changing magnetic flux induces currents in the iron core, causing I²R heating. Minimised by using a laminated core (thin insulated layers reduce the size of eddy current loops). Loss 2: Resistance of copper windings — current flowing through the coils causes I²R heating. Minimised by using thick, low-resistance copper wire. Additional minor losses include magnetic hysteresis (energy used to repeatedly magnetise and demagnetise the core) and flux leakage (not all flux links both coils). These are minimised by using soft iron (low hysteresis) and tightly wound, overlapping coils.",
+        "common_errors": [
+          "Stating transformers are inefficient 'because of friction' — there are no moving parts; losses are electromagnetic",
+          "Not connecting the laminated core design to the specific mechanism of reducing eddy current loop size"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C014",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that stars form from clouds of gas and dust, that our Sun is a star, and that stars eventually die. Recognises that different stars can be different sizes and colours.",
+        "example_task": "Describe the basic stages in the life of a star like our Sun.",
+        "example_response": "A star like the Sun forms from a cloud of gas and dust (nebula) which collapses under gravity. It becomes a main sequence star, producing energy by nuclear fusion. Eventually it swells into a red giant, then sheds its outer layers to form a planetary nebula, leaving behind a white dwarf.",
+        "common_errors": [
+          "Stating that all stars end as black holes — only the most massive stars do",
+          "Confusing a planetary nebula (expelled stellar gas) with a nebula where stars form"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes the complete life cycle of stars of different masses, distinguishing the pathways for Sun-like stars and massive stars. Identifies the role of gravity and fusion pressure in maintaining stellar equilibrium.",
+        "example_task": "Compare the life cycle of a star with the mass of the Sun to a star with 20 times the Sun's mass.",
+        "example_response": "Both form from nebulae. The Sun-like star becomes a main sequence star for billions of years, then a red giant, then sheds layers as a planetary nebula, leaving a white dwarf. The massive star has a shorter main sequence life (millions of years), becomes a red supergiant, and ends in a supernova explosion. The core collapses to form a neutron star, or if massive enough, a black hole. The massive star fuses heavier elements up to iron; the Sun-like star only fuses hydrogen to helium (and some helium to carbon in the red giant phase).",
+        "common_errors": [
+          "Stating that more massive stars live longer — they actually have shorter lifetimes because they burn fuel much faster",
+          "Confusing supernovae (massive star explosions) with novae (surface explosions on white dwarfs)"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the physics underlying each stellar phase — gravitational collapse, protostar heating, main sequence equilibrium between radiation pressure and gravity, nucleosynthesis of elements, and the Chandrasekhar limit. Interprets Hertzsprung-Russell diagrams.",
+        "example_task": "Explain why a main sequence star is stable and what causes it to leave the main sequence. Reference the balance of forces involved.",
+        "example_response": "A main sequence star is in hydrostatic equilibrium: the outward radiation pressure from nuclear fusion in the core balances the inward gravitational force. The star is self-regulating — if the core contracts slightly, temperature increases, fusion rate increases, radiation pressure increases, and the core expands back. When hydrogen fuel in the core is exhausted, fusion slows, radiation pressure drops, and gravity causes the core to contract. This heats the core and surrounding shell, igniting hydrogen fusion in a shell around the inert helium core. The increased energy output causes the outer layers to expand and cool, and the star becomes a red giant, moving off the main sequence on the H-R diagram.",
+        "common_errors": [
+          "Stating the star 'runs out of energy' rather than specifically that hydrogen in the core is exhausted",
+          "Not explaining the self-regulating feedback mechanism that keeps main sequence stars stable"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Analyses stellar evolution in the context of nucleosynthesis and the origin of elements, evaluates the evidence for neutron stars and black holes, and discusses how stellar processes connect to the formation of planetary systems and the elements in our bodies.",
+        "example_task": "Explain the statement 'We are made of star stuff' using your knowledge of stellar nucleosynthesis and supernovae. Evaluate the evidence that supports this claim.",
+        "example_response": "During the main sequence, stars fuse hydrogen to helium. In red giants and supergiants, successive fusion stages create carbon, oxygen, neon, silicon, and elements up to iron — each requiring higher temperatures. Elements heavier than iron cannot be made by fusion (it would absorb energy rather than release it) and are created during the supernova explosion itself, where extreme neutron flux builds heavier nuclei through rapid neutron capture (r-process). The supernova disperses these elements into space, enriching the interstellar medium. New stars and planetary systems form from this enriched material. Evidence: spectroscopy of stars and nebulae shows the predicted element abundances; meteorite analysis confirms isotope ratios consistent with supernova nucleosynthesis; the relative cosmic abundances (hydrogen and helium dominant, iron peak, odd-even pattern) match theoretical predictions precisely. Every atom in our bodies heavier than hydrogen was forged in a star or its death.",
+        "common_errors": [
+          "Stating that all elements are made inside stars — hydrogen and most helium were produced in the Big Bang, not in stars",
+          "Not explaining why iron is the heaviest element produced by fusion (it has the highest binding energy per nucleon)"
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "PH-KS4-C015",
+    "levels": [
+      {
+        "level_number": 1,
+        "label": "emerging",
+        "description": "Knows that the universe is expanding, that galaxies are moving apart, and that scientists believe it began with the Big Bang.",
+        "example_task": "State what the Big Bang theory says about the origin of the universe.",
+        "example_response": "The Big Bang theory states that the universe began from an extremely hot, dense point approximately 13.8 billion years ago and has been expanding ever since. All matter, energy, space, and time originated from this event.",
+        "common_errors": [
+          "Describing the Big Bang as an explosion in space rather than an expansion of space itself",
+          "Stating that the Big Bang happened at a particular location in the universe"
+        ]
+      },
+      {
+        "level_number": 2,
+        "label": "developing",
+        "description": "Describes red-shift as the stretching of light wavelengths from distant galaxies due to the expansion of space, and explains how Hubble's observations of red-shift provided evidence for the Big Bang.",
+        "example_task": "Explain what red-shift is and how it supports the Big Bang theory.",
+        "example_response": "Red-shift is the observed increase in wavelength (shift towards the red end of the spectrum) of light from distant galaxies. Hubble found that almost all galaxies show red-shift, and more distant galaxies have greater red-shift. This means they are moving away faster. If galaxies are all moving apart, they must have been closer together in the past, supporting the idea that the universe began from a single point — the Big Bang.",
+        "common_errors": [
+          "Confusing red-shift with the Doppler effect for sound — red-shift in cosmology is due to the expansion of space, not galaxies moving through space",
+          "Stating that only some galaxies show red-shift rather than nearly all distant galaxies"
+        ]
+      },
+      {
+        "level_number": 3,
+        "label": "secure",
+        "description": "Explains the relationship between red-shift and recessional velocity (Hubble's law: v = H₀d), describes the cosmic microwave background radiation (CMBR) as further evidence for the Big Bang, and interprets red-shift data to draw conclusions about the age and expansion of the universe.",
+        "example_task": "Describe the cosmic microwave background radiation and explain how it supports the Big Bang theory alongside red-shift evidence.",
+        "example_response": "The CMBR is a faint microwave radiation detected uniformly from all directions in space. It was first detected by Penzias and Wilson in 1965. The Big Bang theory predicts that the early universe was extremely hot and filled with high-energy radiation. As the universe expanded and cooled, this radiation was stretched (red-shifted) from high-energy gamma/visible radiation to microwaves. The CMBR is this remnant radiation, now at a temperature of about 2.7 K. Combined with red-shift evidence showing all galaxies are receding, and Hubble's law showing recession velocity is proportional to distance (v = H₀d), the CMBR provides independent confirmation of the Big Bang model.",
+        "common_errors": [
+          "Stating that the CMBR comes from a specific location rather than being detected uniformly from all directions",
+          "Not explaining that the CMBR was predicted by the Big Bang theory before it was discovered — a key strength of the theory"
+        ]
+      },
+      {
+        "level_number": 4,
+        "label": "mastery",
+        "description": "Evaluates the evidence for and limitations of the Big Bang model, discusses dark energy and the accelerating expansion of the universe, and critically analyses how scientific understanding of cosmology has changed over time including the roles of observation, theory, and technology.",
+        "example_task": "In 1998, observations of distant Type Ia supernovae led to the discovery that the expansion of the universe is accelerating. Discuss the implications of this discovery for our understanding of the universe and evaluate how it changed the Big Bang model.",
+        "example_response": "Before 1998, the Big Bang model predicted that gravitational attraction between all matter would slow the expansion. The supernova data showed that distant galaxies are receding faster than expected — the expansion is accelerating. This implies an unknown repulsive force, termed 'dark energy,' constituting approximately 68% of the universe's total energy. This fundamentally changed the Big Bang model from one predicting eventual deceleration (and possible re-collapse) to one where expansion accelerates forever. Type Ia supernovae were used as 'standard candles' because they have consistent peak brightness, allowing accurate distance measurements. The discovery highlights a key feature of scientific progress: well-established models must be revised when new evidence contradicts predictions. Dark energy remains one of the greatest unsolved problems in physics — we observe its effects but do not understand its nature.",
+        "common_errors": [
+          "Confusing dark energy (accelerating expansion) with dark matter (extra gravitational effects in galaxies) — they are distinct phenomena",
+          "Stating that the Big Bang theory was 'wrong' rather than recognising it was refined to incorporate new observations"
+        ]
+      }
+    ]
+  }
+]
