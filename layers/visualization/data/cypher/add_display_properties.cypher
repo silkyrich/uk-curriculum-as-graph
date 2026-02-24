@@ -45,13 +45,6 @@ SET n.display_color = '#8B5CF6',
     n.display_category = 'UK Curriculum',
     n.display_size = 3;
 
-// Topic - UK Curriculum
-MATCH (n:Topic)
-SET n.display_color = '#7C3AED',
-    n.display_icon = 'history_edu',
-    n.display_category = 'UK Curriculum',
-    n.display_size = 3;
-
 // Objective - UK Curriculum
 MATCH (n:Objective)
 SET n.display_color = '#10B981',
@@ -255,11 +248,158 @@ SET n.display_color = '#7C3AED',
     n.display_category = 'UK Curriculum',
     n.display_size = 2;
 
-// ContentVehicle - Content Vehicle
-MATCH (n:ContentVehicle)
+// VehicleTemplate - Vehicle Template
+MATCH (n:VehicleTemplate)
 SET n.display_color = '#0D9488',
-    n.display_icon = 'local_library',
-    n.display_category = 'Content Vehicle',
+    n.display_icon = 'view_timeline',
+    n.display_category = 'Vehicle Template',
+    n.display_size = 2;
+
+// HistoryStudy - Topic Suggestion
+MATCH (n:HistoryStudy)
+SET n.display_color = '#92400E',
+    n.display_icon = 'history_edu',
+    n.display_category = 'Topic Suggestion',
+    n.display_size = 2;
+
+// DisciplinaryConcept - Subject Reference
+MATCH (n:DisciplinaryConcept)
+SET n.display_color = '#78350F',
+    n.display_icon = 'psychology',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// HistoricalSource - Subject Reference
+MATCH (n:HistoricalSource)
+SET n.display_color = '#A16207',
+    n.display_icon = 'source',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// GeoStudy - Topic Suggestion
+MATCH (n:GeoStudy)
+SET n.display_color = '#059669',
+    n.display_icon = 'public',
+    n.display_category = 'Topic Suggestion',
+    n.display_size = 2;
+
+// GeoPlace - Subject Reference
+MATCH (n:GeoPlace)
+SET n.display_color = '#047857',
+    n.display_icon = 'place',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// GeoContrast - Subject Reference
+MATCH (n:GeoContrast)
+SET n.display_color = '#065F46',
+    n.display_icon = 'compare_arrows',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// ScienceEnquiry - Topic Suggestion
+MATCH (n:ScienceEnquiry)
+SET n.display_color = '#14B8A6',
+    n.display_icon = 'science',
+    n.display_category = 'Topic Suggestion',
+    n.display_size = 2;
+
+// EnquiryType - Subject Reference
+MATCH (n:EnquiryType)
+SET n.display_color = '#0F766E',
+    n.display_icon = 'biotech',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// Misconception - Subject Reference
+MATCH (n:Misconception)
+SET n.display_color = '#DC2626',
+    n.display_icon = 'warning',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// EnglishUnit - Topic Suggestion
+MATCH (n:EnglishUnit)
+SET n.display_color = '#EC4899',
+    n.display_icon = 'menu_book',
+    n.display_category = 'Topic Suggestion',
+    n.display_size = 2;
+
+// Genre - Subject Reference
+MATCH (n:Genre)
+SET n.display_color = '#BE185D',
+    n.display_icon = 'style',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// SetText - Subject Reference
+MATCH (n:SetText)
+SET n.display_color = '#9D174D',
+    n.display_icon = 'auto_stories',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// MathsManipulative - Subject Reference
+MATCH (n:MathsManipulative)
+SET n.display_color = '#F59E0B',
+    n.display_icon = 'extension',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// MathsRepresentation - Subject Reference
+MATCH (n:MathsRepresentation)
+SET n.display_color = '#D97706',
+    n.display_icon = 'palette',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// MathsContext - Subject Reference
+MATCH (n:MathsContext)
+SET n.display_color = '#B45309',
+    n.display_icon = 'category',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// ReasoningPromptType - Subject Reference
+MATCH (n:ReasoningPromptType)
+SET n.display_color = '#92400E',
+    n.display_icon = 'chat',
+    n.display_category = 'Subject Reference',
+    n.display_size = 1;
+
+// ArtTopicSuggestion - Topic Suggestion
+MATCH (n:ArtTopicSuggestion)
+SET n.display_color = '#F97316',
+    n.display_icon = 'palette',
+    n.display_category = 'Topic Suggestion',
+    n.display_size = 2;
+
+// MusicTopicSuggestion - Topic Suggestion
+MATCH (n:MusicTopicSuggestion)
+SET n.display_color = '#A855F7',
+    n.display_icon = 'music_note',
+    n.display_category = 'Topic Suggestion',
+    n.display_size = 2;
+
+// DTTopicSuggestion - Topic Suggestion
+MATCH (n:DTTopicSuggestion)
+SET n.display_color = '#64748B',
+    n.display_icon = 'build',
+    n.display_category = 'Topic Suggestion',
+    n.display_size = 2;
+
+// ComputingTopicSuggestion - Topic Suggestion
+MATCH (n:ComputingTopicSuggestion)
+SET n.display_color = '#4F46E5',
+    n.display_icon = 'computer',
+    n.display_category = 'Topic Suggestion',
+    n.display_size = 2;
+
+// TopicSuggestion - Topic Suggestion
+MATCH (n:TopicSuggestion)
+SET n.display_color = '#059669',
+    n.display_icon = 'lightbulb',
+    n.display_category = 'Topic Suggestion',
     n.display_size = 2;
 
 // OakUnit - Oak Content

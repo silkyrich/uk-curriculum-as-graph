@@ -23,7 +23,7 @@ def add_name_properties(driver):
         ("ConceptCluster", "cluster_name"),
         ("Domain", "domain_name"),
         ("Objective", "objective_id"),  # No name field, use ID
-        ("Topic", "topic_name"),
+        # Topic label removed (v4.2) — per-subject ontology nodes all have 'name' set during import
 
         # CASE nodes
         ("Practice", "practice_name"),

@@ -67,12 +67,7 @@ NODE_STYLES = {
         'category': 'UK Curriculum',
         'size': 3,
     },
-    'Topic': {
-        'color': '#7C3AED',  # Violet-600
-        'icon': 'history_edu',
-        'category': 'UK Curriculum',
-        'size': 3,
-    },
+    # Topic label removed (v4.2) — replaced by per-subject ontology nodes
     'Objective': {
         'color': '#10B981',  # Emerald-500
         'icon': 'flag',
@@ -262,11 +257,140 @@ NODE_STYLES = {
         'size': 2,
     },
 
-    # CONTENT VEHICLES LAYER (Teal — teaching packs)
-    'ContentVehicle': {
+    # VEHICLE TEMPLATES (Teal — pedagogical patterns)
+    'VehicleTemplate': {
         'color': '#0D9488',  # Teal-600
-        'icon': 'local_library',
-        'category': 'Content Vehicle',
+        'icon': 'view_timeline',
+        'category': 'Vehicle Template',
+        'size': 2,
+    },
+
+    # PER-SUBJECT ONTOLOGY (v4.2 — study/unit nodes)
+    'HistoryStudy': {
+        'color': '#92400E',  # Amber-900 (matches HistoricalThinking)
+        'icon': 'history_edu',
+        'category': 'Topic Suggestion',
+        'size': 2,
+    },
+    'DisciplinaryConcept': {
+        'color': '#78350F',  # Amber-950
+        'icon': 'psychology',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'HistoricalSource': {
+        'color': '#A16207',  # Yellow-700
+        'icon': 'source',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'GeoStudy': {
+        'color': '#059669',  # Emerald-600 (matches GeographicalSkill)
+        'icon': 'public',
+        'category': 'Topic Suggestion',
+        'size': 2,
+    },
+    'GeoPlace': {
+        'color': '#047857',  # Emerald-700
+        'icon': 'place',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'GeoContrast': {
+        'color': '#065F46',  # Emerald-800
+        'icon': 'compare_arrows',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'ScienceEnquiry': {
+        'color': '#14B8A6',  # Teal-500 (matches WorkingScientifically)
+        'icon': 'science',
+        'category': 'Topic Suggestion',
+        'size': 2,
+    },
+    'EnquiryType': {
+        'color': '#0F766E',  # Teal-700
+        'icon': 'biotech',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'Misconception': {
+        'color': '#DC2626',  # Red-600
+        'icon': 'warning',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'EnglishUnit': {
+        'color': '#EC4899',  # Pink-500 (matches ReadingSkill)
+        'icon': 'menu_book',
+        'category': 'Topic Suggestion',
+        'size': 2,
+    },
+    'Genre': {
+        'color': '#BE185D',  # Pink-700
+        'icon': 'style',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'SetText': {
+        'color': '#9D174D',  # Pink-800
+        'icon': 'auto_stories',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'MathsManipulative': {
+        'color': '#F59E0B',  # Amber-500 (matches MathematicalReasoning)
+        'icon': 'extension',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'MathsRepresentation': {
+        'color': '#D97706',  # Amber-600
+        'icon': 'palette',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'MathsContext': {
+        'color': '#B45309',  # Amber-700
+        'icon': 'category',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    'ReasoningPromptType': {
+        'color': '#92400E',  # Amber-900
+        'icon': 'chat',
+        'category': 'Subject Reference',
+        'size': 1,
+    },
+    # Foundation subject TopicSuggestion labels
+    'ArtTopicSuggestion': {
+        'color': '#F97316',  # Orange-500
+        'icon': 'palette',
+        'category': 'Topic Suggestion',
+        'size': 2,
+    },
+    'MusicTopicSuggestion': {
+        'color': '#A855F7',  # Purple-500
+        'icon': 'music_note',
+        'category': 'Topic Suggestion',
+        'size': 2,
+    },
+    'DTTopicSuggestion': {
+        'color': '#64748B',  # Slate-500
+        'icon': 'build',
+        'category': 'Topic Suggestion',
+        'size': 2,
+    },
+    'ComputingTopicSuggestion': {
+        'color': '#4F46E5',  # Indigo-600
+        'icon': 'computer',
+        'category': 'Topic Suggestion',
+        'size': 2,
+    },
+    'TopicSuggestion': {
+        'color': '#059669',  # Emerald-600
+        'icon': 'lightbulb',
+        'category': 'Topic Suggestion',
         'size': 2,
     },
 

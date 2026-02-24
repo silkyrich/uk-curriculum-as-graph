@@ -44,23 +44,22 @@ Each **layer** is self-contained with its own:
    - 105 skills across 6 types
    - Script: `import_epistemic_skills.py`
 
-4. **`layers/topics/`** - Topic layer (History, Geography)
-   - 55 topics
-   - Script: `import_topics.py`
+4. **`layers/topic-suggestions/`** - Per-subject ontology (Topic Suggestions + VehicleTemplates)
+   - Replaces old Topics + Content Vehicles layers with typed per-subject nodes
+   - 198 study/unit nodes across 9 typed labels + 255 reference nodes across 12 types + 24 VehicleTemplate nodes
+   - **Study nodes** (display_category: `"Topic Suggestion"`): HistoryStudy, GeoStudy, ScienceEnquiry, EnglishUnit, ArtTopicSuggestion, MusicTopicSuggestion, DTTopicSuggestion, ComputingTopicSuggestion, TopicSuggestion (generic)
+   - **Reference nodes** (display_category: `"Subject Reference"`): DisciplinaryConcept, HistoricalSource, GeoPlace, GeoContrast, EnquiryType, Misconception, Genre, SetText, MathsManipulative, MathsRepresentation, MathsContext, ReasoningPromptType
+   - **VehicleTemplate** (display_category: `"Vehicle Template"`): 24 pedagogical pattern templates with TEMPLATE_FOR → KeyStage
+   - Each subject uses its own property schema (no irrelevant attributes on nodes)
+   - Scripts: `import_vehicle_templates.py`, `import_subject_ontologies.py`
+   - Data: `layers/topic-suggestions/data/` (per-subject JSON files)
 
-5. **`layers/content-vehicles/`** - Teaching packs (Content Vehicles)
-   - Choosable teaching packs that deliver curriculum concepts with rich metadata
-   - ~60 pilot vehicles across 7 subject/KS combinations (History, Geography, Science, English, Maths)
-   - Vehicle types: `topic_study`, `case_study`, `investigation`, `text_study`, `worked_example_set`
-   - Many-to-many: vehicles deliver concepts, teachers choose between packs
-   - Script: `import_content_vehicles.py`
-
-6. **`layers/case-standards/`** - US CASE standards (NGSS, Common Core)
+5. **`layers/case-standards/`** - US CASE standards (NGSS, Common Core)
    - **Independent layer** - can be removed without affecting UK layers
    - NGSS 3D model: 8 practices, 41 core ideas, 208 performance expectations
    - Script: `import_case_standards_v2.py`
 
-7. **`layers/learner-profiles/`** - Age-appropriate design constraints
+6. **`layers/learner-profiles/`** - Age-appropriate design constraints
    - Depends on UK curriculum (links from Year nodes)
    - 33 InteractionTypes + 11 each of ContentGuideline, PedagogyProfile, FeedbackProfile + 5 PedagogyTechniques
    - Each node has an `agent_prompt` or `how_to_implement` property for direct LLM instruction
@@ -183,11 +182,9 @@ python3 layers/assessment/scripts/import_test_frameworks.py
 # Epistemic skills (optional, depends on UK)
 python3 layers/epistemic-skills/scripts/import_epistemic_skills.py
 
-# Topics (optional, depends on UK)
-python3 layers/topics/scripts/import_topics.py
-
-# Content vehicles (optional, depends on UK + Topics)
-python3 layers/content-vehicles/scripts/import_content_vehicles.py
+# Per-subject ontology: VehicleTemplates + typed study/reference nodes (depends on UK)
+python3 layers/topic-suggestions/scripts/import_vehicle_templates.py
+python3 layers/topic-suggestions/scripts/import_subject_ontologies.py
 
 # CASE standards (optional, independent)
 python3 layers/case-standards/scripts/import_case_standards_v2.py --import
@@ -255,7 +252,20 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:ThinkingLens` — 10 cross-subject cognitive lenses (Patterns, Cause and Effect, …)
 - `:DifficultyLevel` — grounded difficulty tiers per Concept (primary: entry → greater_depth; secondary: emerging → mastery)
 - `:RepresentationStage` — CPA (Concrete-Pictorial-Abstract) stages per Concept (primary maths Y1-Y6)
-- `:Topic`, `:SourceDocument`
+- `:SourceDocument`
+
+**Topic Suggestions (per-subject ontology):**
+- `:HistoryStudy`, `:GeoStudy`, `:ScienceEnquiry`, `:EnglishUnit` — typed study/unit nodes per subject
+- `:ArtTopicSuggestion`, `:MusicTopicSuggestion`, `:DTTopicSuggestion`, `:ComputingTopicSuggestion` — foundation subject suggestions
+- `:TopicSuggestion` — generic (RE, Citizenship, etc.)
+- `:VehicleTemplate` — 24 pedagogical pattern templates with age-banded prompts
+
+**Subject Reference (per-subject ontology):**
+- `:DisciplinaryConcept`, `:HistoricalSource` — History reference nodes
+- `:GeoPlace`, `:GeoContrast` — Geography reference nodes
+- `:EnquiryType`, `:Misconception` — Science reference nodes
+- `:Genre`, `:SetText` — English reference nodes
+- `:MathsManipulative`, `:MathsRepresentation`, `:MathsContext`, `:ReasoningPromptType` — Maths reference nodes
 
 **Epistemic Skills:**
 - `:WorkingScientifically`, `:ReadingSkill`, `:MathematicalReasoning`
@@ -267,9 +277,6 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 **CASE Standards:**
 - `:Framework`, `:Dimension`, `:Practice`, `:CoreIdea`
 - `:CrosscuttingConcept`, `:PerformanceExpectation`, `:GradeBand`
-
-**Content Vehicles:**
-- `:ContentVehicle` — teaching packs with resources, definitions, assessment (topic_study, case_study, investigation, text_study, worked_example_set)
 
 **Learner Profiles:**
 - `:InteractionType` — 33 UI/pedagogical patterns (phoneme splitter, bus stop division, concept mapper, etc.)
@@ -288,7 +295,9 @@ All nodes have `display_category` property:
 - `"Epistemic Skills"`
 - `"Assessment"`
 - `"Learner Profile"`
-- `"Content Vehicle"`
+- `"Topic Suggestion"` — study/unit nodes (HistoryStudy, GeoStudy, etc.)
+- `"Subject Reference"` — reference nodes (GeoPlace, Misconception, Genre, etc.)
+- `"Vehicle Template"` — VehicleTemplate nodes
 - `"Structure"`
 
 ### Key Relationships
@@ -317,9 +326,21 @@ All nodes have `display_category` property:
 // RepresentationStage (v4.1) — CPA (Concrete-Pictorial-Abstract) progression for primary maths
 (:Concept)-[:HAS_REPRESENTATION_STAGE]->(:RepresentationStage)  // 3 stages per concept (154 primary maths concepts Y1-Y6)
 
-// Content Vehicles (v3.8)
-(:Domain)-[:HAS_VEHICLE]->(:ContentVehicle)-[:DELIVERS]->(:Concept)
-(:ContentVehicle)-[:IMPLEMENTS]->(:Topic)  // optional link to Topics layer
+// Per-subject ontology (v4.2) — typed study nodes deliver curriculum concepts
+(:Domain)-[:HAS_SUGGESTION]->(ts)                     // ts = HistoryStudy | GeoStudy | ScienceEnquiry | EnglishUnit | ...
+(ts)-[:DELIVERS_VIA {primary: bool}]->(:Concept)      // many-to-many concept delivery
+(:VehicleTemplate)-[:TEMPLATE_FOR {agent_prompt: str}]->(:KeyStage)  // age-banded pedagogical prompts
+
+// Subject-specific relationships (examples)
+(:HistoryStudy)-[:FOREGROUNDS]->(:DisciplinaryConcept)       // History disciplinary concepts
+(:HistoryStudy)-[:USES_SOURCE]->(:HistoricalSource)          // History source types
+(:HistoryStudy)-[:CHRONOLOGICALLY_FOLLOWS]->(:HistoryStudy)  // Timeline sequencing
+(:GeoStudy)-[:LOCATED_IN]->(:GeoPlace)                       // Geography places
+(:GeoStudy)-[:CONTRASTS_WITH]->(:GeoContrast)                // Contrasting locality pairs
+(:ScienceEnquiry)-[:USES_ENQUIRY_TYPE]->(:EnquiryType)       // Science enquiry methodology
+(:ScienceEnquiry)-[:ADDRESSES_MISCONCEPTION]->(:Misconception)
+(:EnglishUnit)-[:USES_GENRE]->(:Genre)                       // English text types
+(:EnglishUnit)-[:USES_SET_TEXT]->(:SetText)                   // KS4 set text links
 
 // NGSS 3D model
 (:Framework)-[:HAS_DIMENSION]->(:Dimension)-[:HAS_PRACTICE]->(:Practice)
@@ -418,7 +439,7 @@ Every feature that introduces or modifies data processing must:
 - NGSS structure? → `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md`
 - Visualization / Bloom perspectives? → `layers/visualization/`
 - Age-appropriate design / learner profiles? → `layers/learner-profiles/`
-- Content vehicles / teaching packs? → `layers/content-vehicles/`
+- Per-subject ontology / topic suggestions / vehicle templates? → `layers/topic-suggestions/`
 - Teacher review findings / lesson plans? → `generated/teachers-v7/` (V7 review + DL QA), `generated/teachers-v4/` (V5 review), `generated/teachers-v3/` (V4 review)
   - **`generated/` is TEST output, not canon** — do not treat its contents as authoritative for graph model or data decisions
 - Concept grouping / lesson clusters? → `layers/uk-curriculum/scripts/generate_concept_clusters.py`
@@ -453,6 +474,8 @@ Every feature that introduces or modifies data processing must:
 - UK: `EN-Y5-O021` (Subject-Year-Type-Number)
 - Clusters: `MA-Y3-CL001` (Subject-Year-CL-Number)
 - DifficultyLevels: `MA-Y3-C014-DL01` (Concept-ID + `-DL` + zero-padded level_number)
+- Topic Suggestions: per-label ID property — `study_id` (History/Geo), `enquiry_id` (Science), `unit_id` (English), `suggestion_id` (generic/foundation)
+- VehicleTemplates: `VT-001` format
 - CASE: `ngss-sep-1` (framework-type-number)
 - Always unique, never reused
 
@@ -526,7 +549,7 @@ class LayerImporter:
 
 ---
 
-## Current State (2026-02-23)
+## Current State (2026-02-24)
 
 ✅ **Documentation reorganised:**
 - 61 docs sorted into semantic subdirectories (`design/`, `analysis/`, `archive/`, `user-stories/`, `research/learning-science/`, `research/interoperability/`)
@@ -546,7 +569,6 @@ class LayerImporter:
   - Quality fixes: concept_type normalisation, Art KS4 prefix (AD- not ART-), Languages KS4 subject name consistency
 - Assessment (KS2 test frameworks)
 - Epistemic Skills
-- Topics
 - CASE Standards (NGSS + Common Core Math)
 - Learner Profiles (71 nodes — 33 InteractionType, 11 ContentGuideline, 11 PedagogyProfile, 11 FeedbackProfile, 5 PedagogyTechnique)
 - Visualization (5 Bloom perspectives with icons, styleRules, and search templates)
@@ -582,18 +604,18 @@ class LayerImporter:
 - EYFS Year -[:PRECEDES]-> Y1 — completes the progression chain from Reception to Year 11
 - Import script: `layers/eyfs/scripts/import_eyfs.py`
 
-✅ **In Aura cloud database — all layers active (2026-02-23):**
+✅ **In Aura cloud database — all layers active (2026-02-24):**
 - Instance: education-graphs (6981841e)
-- **~10,345 total nodes**, **~21,211 total relationships** (pending reimport with `--clear`)
+- **~10,547 total nodes**, **~22,000+ total relationships**
+- 453 per-subject ontology nodes (198 study/unit + 255 reference) + 24 VehicleTemplate nodes; 1,711 ontology relationships + 77 TEMPLATE_FOR
 - 4,952 DifficultyLevel nodes; 4,952 HAS_DIFFICULTY_LEVEL relationships (1,296/1,351 concepts covered — all EYFS+KS1-KS4)
-- 61 ContentVehicle nodes; 217 DELIVERS + 92 HAS_VEHICLE + 24 IMPLEMENTS relationships
 - 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average); 40 PROMPT_FOR relationships (age-banded prompts)
 - 626 ConceptCluster nodes (167 introduction, 459 practice) — all with `thinking_lens_primary`
 - 1,351 Concept nodes enriched with `teaching_weight` + `co_teach_hints`
 - 53 EYFS Concept nodes; 34 EYFS→KS1 cross-stage prerequisites
 - 1,892 CO_TEACHES relationships (extracted + inferred inverse-operation pairs)
 - Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
-- 5 Bloom perspectives uploaded and active
+- 6 Bloom perspectives uploaded and active
 
 ✅ **Dead migration scripts removed (2026-02-22):**
 - `core/migrations/fix_ks4_programme_metadata.py` — one-time KS4 metadata fix, already applied
@@ -629,27 +651,19 @@ class LayerImporter:
 - Complements existing Programme→Skill links with concept granularity
 - Validator: check_concept_skill_links_completeness added
 
-✅ **Content Vehicles layer (v3.8, 2026-02-23):**
-- 61 ContentVehicle nodes across 7 subject/KS combinations, 217 DELIVERS rels, 92 HAS_VEHICLE, 24 IMPLEMENTS
-- Vehicle types: `topic_study` (History), `case_study` (Geography), `investigation` (Science), `text_study` (English), `worked_example_set` (Maths)
-- Subject-specific properties: sources/perspectives (History), data_points/themes (Geography), equipment/enquiry_type (Science), genre/grammar_focus (English), manipulatives/CPA stage (Maths)
-- DELIVERS relationship (many-to-many): vehicles deliver concepts, concepts can be delivered by multiple vehicles
-- HAS_VEHICLE from Domain (inferred), IMPLEMENTS to Topic (optional)
-- Schema: ContentVehicle uniqueness constraint + indexes on vehicle_type, subject, key_stage (v3.8)
-- Validation: 4 new checks (completeness, DELIVERS coverage, assessment_guidance, definitions)
-- Query helpers: `graph_query_helper.py` surfaces vehicles + ThinkingLens per domain; `query_cluster_context.py` surfaces lenses per cluster
-- V5 teacher review (2026-02-23): content readiness nearly doubled (avg 3.7→6.6/10); data errors found and fixed
+✅ **Per-subject ontology layer (v4.2, 2026-02-24):**
+- Replaces old Content Vehicles (v3.8) + Topics layers with typed per-subject nodes
+- **453 nodes** across 21 typed labels: 198 study/unit nodes + 255 reference nodes
+- **24 VehicleTemplate nodes** with 77 TEMPLATE_FOR relationships (age-banded pedagogical prompts)
+- **1,711 relationships** including DELIVERS_VIA, HAS_SUGGESTION, FOREGROUNDS, USES_SOURCE, LOCATED_IN, CONTRASTS_WITH, USES_ENQUIRY_TYPE, ADDRESSES_MISCONCEPTION, USES_GENRE, USES_SET_TEXT, etc.
+- Subject coverage: History (33 studies), Geography (22 studies), Science (18 enquiries), English (40 units), Maths (reference nodes only), Art (21), Music (17), DT (16), Computing (14), generic/RS/Citizenship (17)
+- Each subject uses its own property schema — no irrelevant attributes
+- 8-agent teacher panel designed the schema (Phase 0); data migrated from ContentVehicle + Topic nodes (Phase 2)
+- Old layers archived to `layers/_archived/content-vehicles/` and `layers/_archived/topics/`
+- Scripts: `import_vehicle_templates.py`, `import_subject_ontologies.py`
+- Validation: 5 checks (completeness, DELIVERS_VIA coverage, HAS_SUGGESTION coverage, suggestion_type values, curriculum_status values)
+- Query helpers: `graph_query_helper.py` surfaces per-subject ontology nodes per domain
 - No learner data — all nodes are curriculum design metadata
-
-✅ **V5 teacher review (2026-02-23):**
-- 5 simulated teacher personas reviewed the graph with Content Vehicles + Thinking Lenses
-- Team: Henderson (Y2 Maths), Okonkwo (Y4 English), Kapoor (Y5 Science), Osei (KS3 Biology), Adeyemi (KS3 Geography/History)
-- Average content generation readiness: **6.6/10** (up from 3.7/10 in V4)
-- Average structure rating: **7.8/10** (up from 6.7/10 in V4)
-- Data errors found and fixed: 6 KS3 Science vehicles had wrong concept IDs (systematic domain offset), 3 KS2 Science vehicles mixed WS concepts into delivers, EN-Y4-CV004 had wrong book recommendation (baby book for Y4)
-- Remaining consensus gaps: no worked examples, no difficulty sub-levels, incomplete vehicle coverage (~40% Geography statutory content missing), thin safety notes, Thinking Lens rationales age-inappropriate for KS1 and duplicated across clusters
-- Reports: `generated/teachers-v4/` (lesson plans, teaching logs, v5 findings, group report)
-- Path to 9/10: add worked examples, fix data quality, add difficulty sub-levels
 
 ✅ **DifficultyLevel layer (v3.9 → v3.10, 2026-02-23):**
 - Replaces ungrounded `complexity_level` integer with structured sub-nodes per Concept
@@ -671,7 +685,7 @@ class LayerImporter:
 - No learner data — pure curriculum design metadata
 
 ✅ **V7 teacher review (2026-02-23):**
-- 9 simulated teacher personas reviewed the graph with DifficultyLevels + Content Vehicles + Thinking Lenses
+- 9 simulated teacher personas reviewed the graph with DifficultyLevels + per-subject ontology + Thinking Lenses
 - Focus: DifficultyLevel quality across Y3-Y5 Maths, English, Science, History, Geography
 - Average content generation readiness: **7.2/10** (up from 6.6/10 in V5)
 - DifficultyLevels identified as highest-leverage addition (+1.5 score uplift, 9/9 consensus)
@@ -692,6 +706,7 @@ class LayerImporter:
 - No learner data — pure curriculum design metadata
 
 🚧 **In progress:**
+- Per-subject ontology Phase 3: generate additional TopicSuggestions (English Lit KS4 set texts, RS KS4, History KS1, Citizenship KS3, Art/Music)
 - DifficultyLevel: PE KS3-KS4 (55 concepts remaining — sport-specific assessment framework needed)
 - Oak National Academy content (skeleton only)
 - Alignment mappings (CASE ↔ UK)
@@ -730,6 +745,9 @@ class LayerImporter:
 ❌ Edit DifficultyLevel data directly in the graph - Edit the JSON files in `data/difficulty_levels/`, then rerun `import_difficulty_levels.py --clear`
 ❌ Edit RepresentationStage data directly in the graph - Edit the JSON files in `data/representation_stages/`, then rerun `import_representation_stages.py --clear`
 ❌ Create monolithic DL files for large subjects - Split by curriculum domain (e.g. `english_y4_composition.json`, not `english_y4.json`). Max ~20 concepts per file for maintainability
+❌ Edit per-subject ontology data directly in the graph - Edit the JSON files in `layers/topic-suggestions/data/`, then rerun `import_subject_ontologies.py --clear`
+❌ Use a universal TopicSuggestion label for all subjects - Each subject has its own typed label (HistoryStudy, GeoStudy, etc.) with subject-specific properties
+❌ Reference old ContentVehicle or Topic nodes - These have been replaced by the per-subject ontology (v4.2) and archived to `layers/_archived/`
 
 ### Privacy & Compliance (Non-Negotiable)
 ❌ Store child's name, school, or any PII in the learning event log - Identity and events are architecturally separated

@@ -3,7 +3,7 @@
 
 Surfaces ALL graph layers relevant to teaching:
   - UK Curriculum: domains, concepts, prerequisites, CO_TEACHES, clusters, objectives
-  - Topics: case studies and teaching units (Geography, History)
+  - Topic Suggestions: per-subject ontology nodes (studies, enquiries, units) via HAS_SUGGESTION
   - Assessment: KS2 ContentDomainCodes (what is formally tested)
   - Epistemic Skills: disciplinary thinking skills with progression chains
   - Learner Profiles: content guidelines, pedagogy, feedback, interaction types, techniques
@@ -231,25 +231,37 @@ def query_domain_context(session, domain_id):
             concepts_str = f" → {', '.join(o['concept_ids'])}" if o['concept_ids'] else ""
             sections.append(f"- {o['id']}{stat}: {o['text']}{concepts_str}")
 
-    # ── Topics ───────────────────────────────────────────────────────
-    topics = list(session.run("""
-        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)<-[:TEACHES]-(t:Topic)
-        WITH t, collect(DISTINCT c.concept_id) AS concept_ids
-        RETURN t.topic_id AS id, t.topic_name AS name, t.topic_type AS ttype,
-               t.is_prescribed AS prescribed, t.is_optional AS optional,
-               t.curriculum_note AS note, concept_ids
-        ORDER BY t.topic_id
+    # ── Topic Suggestions (per-subject ontology nodes) ─────────────
+    suggestions = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_SUGGESTION]->(ts)
+        OPTIONAL MATCH (ts)-[dv:DELIVERS_VIA]->(c:Concept)
+        WITH ts, labels(ts)[0] AS label,
+             collect(DISTINCT {id: c.concept_id, primary: dv.primary}) AS concepts
+        OPTIONAL MATCH (ts)-[:USES_TEMPLATE]->(vt:VehicleTemplate)
+        WITH ts, label, concepts, collect(DISTINCT vt.template_type) AS templates
+        RETURN label, ts.name AS name,
+               coalesce(ts.study_id, ts.enquiry_id, ts.unit_id, ts.suggestion_id) AS id,
+               ts.key_stage AS ks,
+               ts.curriculum_status AS status,
+               ts.pedagogical_rationale AS rationale,
+               concepts, templates
+        ORDER BY label, ts.key_stage, ts.name
     """, did=domain_id))
-    if topics:
-        sections.append(f"\n### Topics ({len(topics)})")
-        sections.append("These are teaching topics (case studies, units, exemplars) that address concepts in this domain.\n")
-        for t in topics:
-            prescribed_flag = " [prescribed]" if t['prescribed'] else ""
-            optional_flag = " [optional]" if t['optional'] else ""
-            sections.append(f"#### {t['id']} — {t['name']}{prescribed_flag}{optional_flag}")
-            sections.append(f"Type: {t['ttype']} | Concepts: {', '.join(t['concept_ids'])}")
-            if t['note']:
-                sections.append(f"NC note: {t['note']}")
+    if suggestions:
+        sections.append(f"\n### Topic Suggestions ({len(suggestions)})")
+        sections.append("Per-subject ontology nodes: studies, enquiries, and units recommended for this domain.\n")
+        for s in suggestions:
+            primary_concepts = [c['id'] for c in s['concepts'] if c.get('primary')]
+            secondary_concepts = [c['id'] for c in s['concepts'] if not c.get('primary')]
+            status_flag = f" [{s['status']}]" if s['status'] else ""
+            sections.append(f"#### {s['id']} — {s['name']}{status_flag}")
+            sections.append(f"Type: {s['label']} | KS: {s['ks']} | Templates: {', '.join(s['templates'])}")
+            if primary_concepts:
+                sections.append(f"Primary concepts: {', '.join(primary_concepts)}")
+            if secondary_concepts:
+                sections.append(f"Secondary concepts: {', '.join(secondary_concepts)}")
+            if s['rationale']:
+                sections.append(f"Rationale: {s['rationale']}")
 
     # ── Assessment — KS2 Content Domain Codes ────────────────────────
     assessments = list(session.run("""

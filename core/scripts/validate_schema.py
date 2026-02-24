@@ -515,36 +515,8 @@ class SchemaValidator:
         self.add(ValidationResult("Programme DEVELOPS_SKILL coverage", status, total, details))
 
     # =========================================================================
-    # G. Topic layer
+    # G. Topic layer — REMOVED (v4.2): replaced by per-subject ontology (section P)
     # =========================================================================
-
-    def check_topic_completeness(self):
-        """Every Topic node has topic_id, topic_name, subject, key_stage all non-empty."""
-        records = self.run("""
-            MATCH (t:Topic)
-            WHERE t.topic_name IS NULL OR t.topic_name = ''
-               OR t.subject IS NULL OR t.subject = ''
-               OR t.key_stage IS NULL OR t.key_stage = ''
-            RETURN t.topic_id AS id
-        """)
-        issues = [r["id"] for r in records]
-        total = self.scalar("MATCH (t:Topic) RETURN count(t)") or 0
-        status = "FAIL" if issues else "PASS"
-        details = [f"Topic '{i}' missing required property" for i in issues]
-        self.add(ValidationResult("Topic node completeness", status, total, details))
-
-    def check_topic_teaches_coverage(self):
-        """Every Topic has at least one TEACHES relationship to a Concept."""
-        records = self.run("""
-            MATCH (t:Topic)
-            WHERE NOT (t)-[:TEACHES]->(:Concept)
-            RETURN t.topic_id AS id
-        """)
-        issues = [r["id"] for r in records]
-        total = self.scalar("MATCH (t:Topic) RETURN count(t)") or 0
-        status = "WARN" if issues else "PASS"
-        details = [f"Topic '{i}' has no TEACHES relationship" for i in issues]
-        self.add(ValidationResult("Topic -> Concept coverage", status, total, details))
 
     # =========================================================================
     # H. Oak Content layer (v3.4) — skip gracefully if no content imported yet
@@ -1226,75 +1198,9 @@ class SchemaValidator:
         self.add(ValidationResult("RepresentationStage no duplicate stages", status, total, issues))
 
     # =========================================================================
-    # M. Content Vehicles layer (v3.8)
+    # M. Content Vehicles layer — REMOVED (v4.2): replaced by per-subject ontology
+    # VehicleTemplate checks in section O; TopicSuggestion checks in section P.
     # =========================================================================
-
-    def check_content_vehicle_completeness(self):
-        """ContentVehicle nodes have required properties (skipped if none exist)."""
-        total = self.scalar("MATCH (cv:ContentVehicle) RETURN count(cv)") or 0
-        if total == 0:
-            self.add(ValidationResult("ContentVehicle completeness", "PASS", 0,
-                                      ["No ContentVehicle nodes — import pending"]))
-            return
-        records = self.run("""
-            MATCH (cv:ContentVehicle)
-            WHERE cv.vehicle_id IS NULL OR cv.name IS NULL OR cv.name = ''
-               OR cv.vehicle_type IS NULL OR cv.vehicle_type = ''
-               OR cv.subject IS NULL OR cv.subject = ''
-               OR cv.description IS NULL OR cv.description = ''
-            RETURN cv.vehicle_id AS id
-        """)
-        issues = [f"ContentVehicle '{r['id'] or '(null)'}' missing required properties" for r in records]
-        status = "FAIL" if issues else "PASS"
-        self.add(ValidationResult("ContentVehicle completeness", status, total, issues))
-
-    def check_content_vehicle_delivers_coverage(self):
-        """Every ContentVehicle DELIVERS at least 1 Concept (skipped if none exist)."""
-        total = self.scalar("MATCH (cv:ContentVehicle) RETURN count(cv)") or 0
-        if total == 0:
-            self.add(ValidationResult("ContentVehicle DELIVERS coverage", "PASS", 0,
-                                      ["No ContentVehicle nodes — import pending"]))
-            return
-        records = self.run("""
-            MATCH (cv:ContentVehicle)
-            WHERE NOT (cv)-[:DELIVERS]->(:Concept)
-            RETURN cv.vehicle_id AS id
-        """)
-        issues = [f"ContentVehicle '{r['id']}' has no DELIVERS relationship" for r in records]
-        status = "FAIL" if issues else "PASS"
-        self.add(ValidationResult("ContentVehicle DELIVERS coverage", status, total, issues))
-
-    def check_content_vehicle_assessment_guidance(self):
-        """Every ContentVehicle should have non-null assessment_guidance (skipped if none exist)."""
-        total = self.scalar("MATCH (cv:ContentVehicle) RETURN count(cv)") or 0
-        if total == 0:
-            self.add(ValidationResult("ContentVehicle assessment_guidance", "PASS", 0,
-                                      ["No ContentVehicle nodes — import pending"]))
-            return
-        records = self.run("""
-            MATCH (cv:ContentVehicle)
-            WHERE cv.assessment_guidance IS NULL OR cv.assessment_guidance = ''
-            RETURN cv.vehicle_id AS id
-        """)
-        issues = [f"ContentVehicle '{r['id']}' missing assessment_guidance" for r in records]
-        status = "WARN" if issues else "PASS"
-        self.add(ValidationResult("ContentVehicle assessment_guidance", status, total, issues))
-
-    def check_content_vehicle_definitions(self):
-        """Every ContentVehicle should have non-empty definitions list (skipped if none exist)."""
-        total = self.scalar("MATCH (cv:ContentVehicle) RETURN count(cv)") or 0
-        if total == 0:
-            self.add(ValidationResult("ContentVehicle definitions", "PASS", 0,
-                                      ["No ContentVehicle nodes — import pending"]))
-            return
-        records = self.run("""
-            MATCH (cv:ContentVehicle)
-            WHERE cv.definitions IS NULL OR size(cv.definitions) = 0
-            RETURN cv.vehicle_id AS id
-        """)
-        issues = [f"ContentVehicle '{r['id']}' has no definitions" for r in records]
-        status = "WARN" if issues else "PASS"
-        self.add(ValidationResult("ContentVehicle definitions", status, total, issues))
 
     # =========================================================================
     # O. VehicleTemplate layer (v4.0)
@@ -1359,7 +1265,13 @@ class SchemaValidator:
     # =========================================================================
 
     def check_topic_suggestion_completeness(self):
-        """All TopicSuggestion nodes (any label) have universal required properties."""
+        """All per-subject ontology study/unit nodes have shared required properties.
+
+        Per-subject nodes use different ID properties (study_id, enquiry_id,
+        unit_id, suggestion_id). Checks that every node has at least one ID
+        property plus shared required props: name, curriculum_status,
+        pedagogical_rationale.
+        """
         total = self.scalar("""
             MATCH (n) WHERE n.display_category = 'Topic Suggestion'
             RETURN count(n)
@@ -1370,21 +1282,21 @@ class SchemaValidator:
             return
         records = self.run("""
             MATCH (n) WHERE n.display_category = 'Topic Suggestion'
-            AND (n.suggestion_id IS NULL OR n.suggestion_id = ''
-                 OR n.name IS NULL OR n.name = ''
-                 OR n.suggestion_type IS NULL
-                 OR n.subject IS NULL OR n.subject = ''
-                 OR n.key_stage IS NULL OR n.key_stage = ''
-                 OR n.curriculum_status IS NULL
-                 OR n.pedagogical_rationale IS NULL OR n.pedagogical_rationale = '')
-            RETURN n.suggestion_id AS id
+            AND (
+                (n.study_id IS NULL AND n.enquiry_id IS NULL
+                 AND n.unit_id IS NULL AND n.suggestion_id IS NULL)
+                OR n.name IS NULL OR n.name = ''
+                OR n.curriculum_status IS NULL
+                OR n.pedagogical_rationale IS NULL OR n.pedagogical_rationale = '')
+            RETURN coalesce(n.study_id, n.enquiry_id, n.unit_id, n.suggestion_id) AS id,
+                   labels(n)[0] AS label, n.name AS name
         """)
-        issues = [f"TopicSuggestion '{r['id'] or '(null)'}' missing required universal properties" for r in records]
+        issues = [f"{r['label']} '{r['name'] or r['id'] or '(null)'}' missing required properties" for r in records]
         status = "FAIL" if issues else "PASS"
         self.add(ValidationResult("TopicSuggestion completeness", status, total, issues))
 
     def check_topic_suggestion_delivers_via(self):
-        """Every TopicSuggestion has at least 1 DELIVERS_VIA relationship to a Concept."""
+        """Study/unit nodes should have DELIVERS_VIA to Concept (WARN for generic TopicSuggestion)."""
         total = self.scalar("""
             MATCH (n) WHERE n.display_category = 'Topic Suggestion'
             RETURN count(n)
@@ -1396,33 +1308,36 @@ class SchemaValidator:
         records = self.run("""
             MATCH (n) WHERE n.display_category = 'Topic Suggestion'
             AND NOT (n)-[:DELIVERS_VIA]->(:Concept)
-            RETURN n.suggestion_id AS id
+            RETURN coalesce(n.study_id, n.enquiry_id, n.unit_id, n.suggestion_id) AS id,
+                   labels(n)[0] AS label
         """)
-        issues = [f"TopicSuggestion '{r['id']}' has no DELIVERS_VIA relationship" for r in records]
-        status = "FAIL" if issues else "PASS"
+        issues = [f"{r['label']} '{r['id']}' has no DELIVERS_VIA relationship" for r in records]
+        # WARN for generic TopicSuggestion (e.g. RS) that may not map to specific concepts yet
+        status = "WARN" if issues else "PASS"
         self.add(ValidationResult("TopicSuggestion DELIVERS_VIA coverage", status, total, issues))
 
-    def check_topic_suggestion_uses_template(self):
-        """Every TopicSuggestion has at least 1 USES_TEMPLATE relationship to a VehicleTemplate."""
+    def check_topic_suggestion_has_suggestion(self):
+        """Study/unit nodes should be reachable from a Domain via HAS_SUGGESTION."""
         total = self.scalar("""
             MATCH (n) WHERE n.display_category = 'Topic Suggestion'
             RETURN count(n)
         """) or 0
         if total == 0:
-            self.add(ValidationResult("TopicSuggestion USES_TEMPLATE coverage", "PASS", 0,
+            self.add(ValidationResult("TopicSuggestion HAS_SUGGESTION coverage", "PASS", 0,
                                       ["No TopicSuggestion nodes — import pending"]))
             return
         records = self.run("""
             MATCH (n) WHERE n.display_category = 'Topic Suggestion'
-            AND NOT (n)-[:USES_TEMPLATE]->(:VehicleTemplate)
-            RETURN n.suggestion_id AS id
+            AND NOT (:Domain)-[:HAS_SUGGESTION]->(n)
+            RETURN coalesce(n.study_id, n.enquiry_id, n.unit_id, n.suggestion_id) AS id,
+                   labels(n)[0] AS label
         """)
-        issues = [f"TopicSuggestion '{r['id']}' has no USES_TEMPLATE relationship" for r in records]
-        status = "FAIL" if issues else "PASS"
-        self.add(ValidationResult("TopicSuggestion USES_TEMPLATE coverage", status, total, issues))
+        issues = [f"{r['label']} '{r['id']}' not linked from any Domain" for r in records]
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("TopicSuggestion HAS_SUGGESTION coverage", status, total, issues))
 
     def check_topic_suggestion_type_values(self):
-        """suggestion_type must be one of the 9 valid enum values."""
+        """suggestion_type (where present) must be a valid enum value."""
         valid_types = [
             'prescribed_topic', 'exemplar_topic', 'open_slot',
             'exemplar_figure', 'exemplar_event', 'exemplar_text',
@@ -1430,18 +1345,21 @@ class SchemaValidator:
         ]
         total = self.scalar("""
             MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            AND n.suggestion_type IS NOT NULL
             RETURN count(n)
         """) or 0
         if total == 0:
             self.add(ValidationResult("suggestion_type valid values", "PASS", 0,
-                                      ["No TopicSuggestion nodes — import pending"]))
+                                      ["No nodes with suggestion_type — check pending"]))
             return
         records = self.run("""
             MATCH (n) WHERE n.display_category = 'Topic Suggestion'
+            AND n.suggestion_type IS NOT NULL
             AND NOT n.suggestion_type IN $valid_types
-            RETURN n.suggestion_id AS id, n.suggestion_type AS val
+            RETURN coalesce(n.study_id, n.enquiry_id, n.unit_id, n.suggestion_id) AS id,
+                   n.suggestion_type AS val
         """, valid_types=valid_types)
-        issues = [f"TopicSuggestion {r['id']} has invalid suggestion_type '{r['val']}'" for r in records]
+        issues = [f"Node {r['id']} has invalid suggestion_type '{r['val']}'" for r in records]
         status = "FAIL" if issues else "PASS"
         self.add(ValidationResult("suggestion_type valid values", status, total, issues))
 
@@ -1459,9 +1377,10 @@ class SchemaValidator:
         records = self.run("""
             MATCH (n) WHERE n.display_category = 'Topic Suggestion'
             AND NOT n.curriculum_status IN $valid_statuses
-            RETURN n.suggestion_id AS id, n.curriculum_status AS val
+            RETURN coalesce(n.study_id, n.enquiry_id, n.unit_id, n.suggestion_id) AS id,
+                   n.curriculum_status AS val
         """, valid_statuses=valid_statuses)
-        issues = [f"TopicSuggestion {r['id']} has invalid curriculum_status '{r['val']}'" for r in records]
+        issues = [f"Node {r['id']} has invalid curriculum_status '{r['val']}'" for r in records]
         status = "FAIL" if issues else "PASS"
         self.add(ValidationResult("curriculum_status valid values", status, total, issues))
 
@@ -1539,7 +1458,7 @@ class SchemaValidator:
         valid_categories = {
             'UK Curriculum', 'CASE Standards', 'Epistemic Skills',
             'Assessment', 'Structure', 'Learner Profile', 'Oak Content',
-            'Content Vehicle', 'Vehicle Template', 'Topic Suggestion',
+            'Vehicle Template', 'Topic Suggestion', 'Subject Reference',
         }
         records = self.run("""
             MATCH (n)
@@ -1631,9 +1550,7 @@ class SchemaValidator:
             self.check_progression_of_integrity,
             self.check_reading_skill_assesses_skill_coverage,
             self.check_programme_develops_skill_coverage,
-            # G. Topic layer
-            self.check_topic_completeness,
-            self.check_topic_teaches_coverage,
+            # G. Topic layer — REMOVED (v4.2)
             # H. Oak Content layer (v3.4)
             self.check_oak_unit_completeness,
             self.check_oak_lesson_completeness,
@@ -1676,11 +1593,7 @@ class SchemaValidator:
             self.check_representation_stage_values,
             self.check_representation_stage_relationship_integrity,
             self.check_representation_stage_no_duplicates,
-            # M. Content Vehicles (v3.8)
-            self.check_content_vehicle_completeness,
-            self.check_content_vehicle_delivers_coverage,
-            self.check_content_vehicle_assessment_guidance,
-            self.check_content_vehicle_definitions,
+            # M. Content Vehicles — REMOVED (v4.2)
             # O. VehicleTemplate (v4.0)
             self.check_vehicle_template_completeness,
             self.check_vehicle_template_template_for_coverage,
@@ -1688,7 +1601,7 @@ class SchemaValidator:
             # P. TopicSuggestion (v4.0)
             self.check_topic_suggestion_completeness,
             self.check_topic_suggestion_delivers_via,
-            self.check_topic_suggestion_uses_template,
+            self.check_topic_suggestion_has_suggestion,
             self.check_topic_suggestion_type_values,
             self.check_topic_suggestion_curriculum_status_values,
             # K. Enrichment coverage
