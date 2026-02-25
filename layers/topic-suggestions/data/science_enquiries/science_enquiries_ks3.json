@@ -30,11 +30,7 @@
         "Difficulty achieving focus at higher magnifications — start with low power and work up systematically",
         "Pupils memorise cell parts without understanding their functions — use function-first questioning (e.g. 'what does this cell need to do?')"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Calculating magnification using the formula: magnification = image size / actual size",
-        "[Maths] Working with very small numbers and unit conversions (mm to micrometres)",
-        "[English] Writing a method using precise scientific vocabulary and passive voice"
-      ],
+      "cross_curricular_links": [],
       "sensitive_content_notes": [
         "Cheek cell collection requires a hygiene protocol — use disposable cotton buds and dispose of slides in disinfectant after use",
         "Some pupils may be uncomfortable providing cheek cell samples — have prepared slides available as an alternative"
@@ -93,10 +89,8 @@
         "Confusing strong/weak acids with concentrated/dilute acids — these are different concepts (strong = fully dissociates, concentrated = lots of solute)",
         "Pupils may think all acids are dangerous — many everyday substances are mildly acidic (orange juice, vinegar)"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Reading scales accurately (pH scale, measuring cylinders), plotting graphs of pH vs volume",
-        "[English] Writing a risk assessment using formal, precise language",
-        "[Geography] Acid rain and its environmental impact on ecosystems and buildings"
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-003", "hook": "Acid rain and its environmental impact on ecosystems and buildings", "strength": "moderate"}
       ],
       "sensitive_content_notes": [
         "Emphasise safe handling of acids and alkalis — always wear goggles and gloves",
@@ -154,11 +148,7 @@
         "Drawing distance-time graphs with time on the y-axis — reinforce that time always goes on the x-axis",
         "Pupils think a stationary object has no forces acting on it — stationary objects have balanced forces, not zero forces"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Calculating speed from distance-time data, plotting and interpreting graphs, using formulae",
-        "[Maths] Gradient of a distance-time graph represents speed",
-        "[PE] Measuring running speeds over different distances"
-      ],
+      "cross_curricular_links": [],
       "sensitive_content_notes": [],
       "duration_lessons": 5,
       "delivers_via": [
@@ -213,10 +203,8 @@
         "Counting bubbles is unreliable if the pondweed is not acclimatised — allow 2 minutes at each distance before counting",
         "Pupils may think only leaves photosynthesise — any green part of a plant containing chloroplasts can photosynthesise"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Plotting rate graphs, calculating means from repeat readings, understanding inverse square relationships",
-        "[Geography] Global food production and the importance of photosynthesis to ecosystems",
-        "[English] Writing a scientific explanation using causal language and the photosynthesis equation"
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-004", "hook": "Global food production and the importance of photosynthesis to ecosystems", "strength": "moderate"}
       ],
       "sensitive_content_notes": [],
       "duration_lessons": 4,
@@ -270,10 +258,8 @@
         "Difficulty explaining why temperature stays constant during a change of state — energy is being used to break bonds between particles, not to increase kinetic energy",
         "Pupils may think heating always makes things hotter — during a state change, added energy changes the arrangement of particles rather than raising temperature"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Plotting temperature-time graphs, reading scales, calculating gradients",
-        "[Geography] Relating state changes to weather phenomena (evaporation, condensation, precipitation)",
-        "[English] Using the particle model to write a scientific explanation"
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-003", "hook": "Relating state changes to weather phenomena (evaporation, condensation, precipitation)", "strength": "moderate"}
       ],
       "sensitive_content_notes": [],
       "duration_lessons": 5,
@@ -325,10 +311,8 @@
         "Confusing a food chain with a food web — food webs show multiple interconnected feeding relationships, not just single linear chains",
         "Pupils describe environmental change effects as isolated events rather than cascading impacts through the ecosystem"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Calculating means, using random number tables for sampling, estimating population size",
-        "[Geography] Studying local ecosystems, environmental management, and biodiversity",
-        "[English] Writing a discursive text about the impact of human activity on ecosystems"
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-009", "hook": "Studying local ecosystems, environmental management, and biodiversity", "strength": "strong"}
       ],
       "sensitive_content_notes": [
         "Outdoor fieldwork requires a risk assessment — check for allergies (pollen, insect stings), ensure appropriate clothing and footwear",
@@ -389,10 +373,8 @@
         "Confusing temperature with thermal energy — a bath of warm water has more thermal energy than a hot spark, even though the spark is at a higher temperature",
         "Difficulty with the efficiency calculation — practise with simple examples before applying to experimental data"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Calculating efficiency as a percentage, plotting cooling curves, reading thermometer scales",
-        "[Geography] Comparing energy resources globally — renewable vs non-renewable, energy security",
-        "[DT] Designing insulated containers or energy-efficient products"
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-006", "hook": "Comparing energy resources globally — renewable vs non-renewable, energy security", "strength": "moderate"}
       ],
       "sensitive_content_notes": [
         "Energy poverty is a real issue for some families — be sensitive when discussing home insulation and energy bills"
@@ -450,10 +432,9 @@
         "Difficulty writing word equations — practise the pattern: metal + acid -> metal salt + hydrogen",
         "Pupils may think unreactive metals are 'bad' — discuss why gold and platinum are valued precisely because they are unreactive"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Ranking data, comparing temperature changes quantitatively",
-        "[Geography] Mining and extraction of metals — environmental and social impacts",
-        "[History] The Bronze Age and Iron Age — how metal extraction shaped civilisation"
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-004", "hook": "Mining and extraction of metals — environmental and social impacts", "strength": "moderate"},
+        {"target_id": "HS-KS2-001", "hook": "The Bronze Age and Iron Age — how metal extraction shaped civilisation", "strength": "moderate"}
       ],
       "sensitive_content_notes": [],
       "duration_lessons": 4,

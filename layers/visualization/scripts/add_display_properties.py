@@ -233,9 +233,9 @@ NODE_STYLES = {
         'size': 3,
     },
 
-    # DIFFICULTY LEVELS (Amber — sub-concept difficulty gradations)
+    # DIFFICULTY LEVELS (Rose — sub-concept difficulty gradations)
     'DifficultyLevel': {
-        'color': '#F59E0B',  # Amber-500
+        'color': '#E11D48',  # Rose-600
         'icon': 'signal_cellular_alt',
         'category': 'UK Curriculum',
         'size': 1,
@@ -267,8 +267,8 @@ NODE_STYLES = {
 
     # PER-SUBJECT ONTOLOGY (v4.2 — study/unit nodes)
     'HistoryStudy': {
-        'color': '#92400E',  # Amber-900 (matches HistoricalThinking)
-        'icon': 'history_edu',
+        'color': '#B45309',  # Amber-700 (distinct from HistoricalThinking #92400E)
+        'icon': 'auto_stories',
         'category': 'Topic Suggestion',
         'size': 2,
     },

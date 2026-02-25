@@ -7,30 +7,74 @@
     "key_stage": "KS1",
     "curriculum_status": "convention",
     "mmc_reference": "MMC Year 1, Unit 1",
-    "curriculum_reference": ["use their voices expressively and creatively by singing songs and speaking chants and rhymes", "play tuned and untuned instruments musically"],
+    "curriculum_reference": [
+      "use their voices expressively and creatively by singing songs and speaking chants and rhymes",
+      "play tuned and untuned instruments musically"
+    ],
     "pedagogical_rationale": "Hey You! is a simple hip-hop/rap song that introduces pulse and rhythm through body percussion and chanting. The rap structure (rhythm-driven, repetitive) makes it accessible for non-singers and builds confidence in musical performance from the very first unit. The call-and-response structure is a natural entry point for young children.",
-    "common_pitfalls": ["Pupils shout rather than project with control -- teach 'stage voice' vs shouting", "Losing the pulse during the rap -- use a steady clap or drum to anchor tempo", "All pupils performing the same part -- introduce simple layering with body percussion"],
-    "cross_curricular_hooks": ["[English] Rhyme, rhythm in spoken language", "[PSHE] Expressing yourself, confidence"],
-    "definitions": ["pulse", "rhythm", "rap", "chant", "body percussion", "tempo"],
-    "year_groups": ["Y1"],
+    "common_pitfalls": [
+      "Pupils shout rather than project with control -- teach 'stage voice' vs shouting",
+      "Losing the pulse during the rap -- use a steady clap or drum to anchor tempo",
+      "All pupils performing the same part -- introduce simple layering with body percussion"
+    ],
+    "definitions": [
+      "pulse",
+      "rhythm",
+      "rap",
+      "chant",
+      "body percussion",
+      "tempo"
+    ],
+    "year_groups": [
+      "Y1"
+    ],
     "duration_lessons": 6,
     "composer": null,
     "piece": "Hey You!",
     "genre": "hip_hop",
-    "musical_elements": ["pulse", "rhythm", "tempo", "dynamics"],
-    "activity_focus": ["performing", "listening"],
-    "instrument": ["voice", "body percussion"],
+    "musical_elements": [
+      "pulse",
+      "rhythm",
+      "tempo",
+      "dynamics"
+    ],
+    "activity_focus": [
+      "performing",
+      "listening"
+    ],
+    "instrument": [
+      "voice",
+      "body percussion"
+    ],
     "notation_level": "none",
-    "listening_repertoire": ["Me, Myself and I - De La Soul", "Fresh Prince of Bel-Air theme - DJ Jazzy Jeff & The Fresh Prince"],
+    "listening_repertoire": [
+      "Me, Myself and I - De La Soul",
+      "Fresh Prince of Bel-Air theme - DJ Jazzy Jeff & The Fresh Prince"
+    ],
     "delivers_via": [
-      {"concept_id": "MU-KS1-C001", "primary": true},
-      {"concept_id": "MU-KS1-C003", "primary": false}
+      {
+        "concept_id": "MU-KS1-C001",
+        "primary": true
+      },
+      {
+        "concept_id": "MU-KS1-C003",
+        "primary": false
+      }
     ],
     "uses_template": "VT-20",
-    "domain_ids": ["MU-KS1-D001"],
+    "domain_ids": [
+      "MU-KS1-D001"
+    ],
     "display_category": "Topic Suggestion",
     "display_color": "#059669",
-    "display_icon": "music_note"
+    "display_icon": "music_note",
+    "cross_curricular_links": [
+      {
+        "target_id": "EU-EN-KS1-004",
+        "hook": "Rhyme, rhythm in spoken language",
+        "strength": "moderate"
+      }
+    ]
   },
   {
     "suggestion_id": "TS-MU-KS1-002",
@@ -40,31 +84,82 @@
     "key_stage": "KS1",
     "curriculum_status": "convention",
     "mmc_reference": "MMC Year 1, Unit 2",
-    "curriculum_reference": ["listen with concentration and understanding to a range of high-quality live and recorded music"],
+    "curriculum_reference": [
+      "listen with concentration and understanding to a range of high-quality live and recorded music"
+    ],
     "pedagogical_rationale": "In the Groove introduces six musical styles (Blues, Baroque, Latin, Bhangra, Folk, Funk) through a single song performed in different ways. This is the most efficient way to teach genre recognition at KS1 -- same melody, different style. Pupils experience how changing the instrumentation, tempo and rhythm of a song changes its character completely.",
-    "common_pitfalls": ["Playing all six styles in one lesson -- overwhelms; spread across six lessons (one style per week)", "Not identifying what changes between versions -- explicitly name the style features", "Passive listening -- always pair with a physical response (movement, clapping, instrument playing)"],
-    "cross_curricular_hooks": ["[Geography] Where do these music styles come from?", "[History] Historical context of Blues, Baroque"],
-    "definitions": ["style", "Blues", "Baroque", "Latin", "Bhangra", "Folk", "Funk", "genre"],
-    "year_groups": ["Y1"],
+    "common_pitfalls": [
+      "Playing all six styles in one lesson -- overwhelms; spread across six lessons (one style per week)",
+      "Not identifying what changes between versions -- explicitly name the style features",
+      "Passive listening -- always pair with a physical response (movement, clapping, instrument playing)"
+    ],
+    "definitions": [
+      "style",
+      "Blues",
+      "Baroque",
+      "Latin",
+      "Bhangra",
+      "Folk",
+      "Funk",
+      "genre"
+    ],
+    "year_groups": [
+      "Y1"
+    ],
     "duration_lessons": 6,
     "composer": null,
     "piece": "In the Groove",
     "genre": "pop",
-    "musical_elements": ["pulse", "rhythm", "tempo", "timbre", "dynamics"],
-    "activity_focus": ["listening", "performing"],
-    "instrument": ["voice", "untuned percussion"],
+    "musical_elements": [
+      "pulse",
+      "rhythm",
+      "tempo",
+      "timbre",
+      "dynamics"
+    ],
+    "activity_focus": [
+      "listening",
+      "performing"
+    ],
+    "instrument": [
+      "voice",
+      "untuned percussion"
+    ],
     "notation_level": "none",
-    "listening_repertoire": ["Hit the Road Jack - Ray Charles", "Brandenburg Concerto No.3 - J.S. Bach", "La Bamba - Ritchie Valens"],
+    "listening_repertoire": [
+      "Hit the Road Jack - Ray Charles",
+      "Brandenburg Concerto No.3 - J.S. Bach",
+      "La Bamba - Ritchie Valens"
+    ],
     "delivers_via": [
-      {"concept_id": "MU-KS1-C004", "primary": true},
-      {"concept_id": "MU-KS1-C005", "primary": false},
-      {"concept_id": "MU-KS1-C001", "primary": false}
+      {
+        "concept_id": "MU-KS1-C004",
+        "primary": true
+      },
+      {
+        "concept_id": "MU-KS1-C005",
+        "primary": false
+      },
+      {
+        "concept_id": "MU-KS1-C001",
+        "primary": false
+      }
     ],
     "uses_template": "VT-20",
-    "domain_ids": ["MU-KS1-D002", "MU-KS1-D001"],
+    "domain_ids": [
+      "MU-KS1-D002",
+      "MU-KS1-D001"
+    ],
     "display_category": "Topic Suggestion",
     "display_color": "#059669",
-    "display_icon": "music_note"
+    "display_icon": "music_note",
+    "cross_curricular_links": [
+      {
+        "target_id": "GS-GE-KS1-003",
+        "hook": "Where do these music styles come from?",
+        "strength": "moderate"
+      }
+    ]
   },
   {
     "suggestion_id": "TS-MU-KS1-003",
@@ -74,30 +169,74 @@
     "key_stage": "KS1",
     "curriculum_status": "convention",
     "mmc_reference": "MMC Year 2, Unit 2",
-    "curriculum_reference": ["use their voices expressively and creatively by singing songs and speaking chants and rhymes", "listen with concentration and understanding to a range of high-quality live and recorded music"],
+    "curriculum_reference": [
+      "use their voices expressively and creatively by singing songs and speaking chants and rhymes",
+      "listen with concentration and understanding to a range of high-quality live and recorded music"
+    ],
     "pedagogical_rationale": "This South African-inspired unit introduces pupils to music from a non-Western tradition, fulfilling the NC requirement for a range of high-quality live and recorded music. The physical, rhythmic nature of South African music connects naturally to KS1 pupils' love of movement. Body percussion activities build on the rhythm and pulse work from Year 1.",
-    "common_pitfalls": ["Treating African music as a monolith -- South African music is distinct from West African drumming", "Only clapping the pulse -- explore the polyrhythmic layers that make this music rich", "Not addressing cultural context respectfully -- discuss why this music matters to its community"],
-    "cross_curricular_hooks": ["[Geography] South Africa, African continent", "[History] South African culture and heritage"],
-    "definitions": ["pulse", "rhythm", "body percussion", "call and response", "polyrhythm"],
-    "year_groups": ["Y2"],
+    "common_pitfalls": [
+      "Treating African music as a monolith -- South African music is distinct from West African drumming",
+      "Only clapping the pulse -- explore the polyrhythmic layers that make this music rich",
+      "Not addressing cultural context respectfully -- discuss why this music matters to its community"
+    ],
+    "definitions": [
+      "pulse",
+      "rhythm",
+      "body percussion",
+      "call and response",
+      "polyrhythm"
+    ],
+    "year_groups": [
+      "Y2"
+    ],
     "duration_lessons": 6,
     "composer": null,
     "piece": "Hands, Feet, Heart",
     "genre": "world_african",
-    "musical_elements": ["pulse", "rhythm", "dynamics", "tempo"],
-    "activity_focus": ["performing", "listening"],
-    "instrument": ["voice", "body percussion"],
+    "musical_elements": [
+      "pulse",
+      "rhythm",
+      "dynamics",
+      "tempo"
+    ],
+    "activity_focus": [
+      "performing",
+      "listening"
+    ],
+    "instrument": [
+      "voice",
+      "body percussion"
+    ],
     "notation_level": "none",
-    "listening_repertoire": ["Shosholoza (traditional)", "Pata Pata - Miriam Makeba"],
+    "listening_repertoire": [
+      "Shosholoza (traditional)",
+      "Pata Pata - Miriam Makeba"
+    ],
     "delivers_via": [
-      {"concept_id": "MU-KS1-C001", "primary": true},
-      {"concept_id": "MU-KS1-C003", "primary": false}
+      {
+        "concept_id": "MU-KS1-C001",
+        "primary": true
+      },
+      {
+        "concept_id": "MU-KS1-C003",
+        "primary": false
+      }
     ],
     "uses_template": "VT-20",
-    "domain_ids": ["MU-KS1-D001", "MU-KS1-D002"],
+    "domain_ids": [
+      "MU-KS1-D001",
+      "MU-KS1-D002"
+    ],
     "display_category": "Topic Suggestion",
     "display_color": "#059669",
-    "display_icon": "music_note"
+    "display_icon": "music_note",
+    "cross_curricular_links": [
+      {
+        "target_id": "GS-GE-KS1-004",
+        "hook": "South Africa, African continent",
+        "strength": "moderate"
+      }
+    ]
   },
   {
     "suggestion_id": "TS-MU-KS1-004",
@@ -107,30 +246,75 @@
     "key_stage": "KS1",
     "curriculum_status": "convention",
     "mmc_reference": "MMC Year 1, Unit 3",
-    "curriculum_reference": ["play tuned and untuned instruments musically", "experiment with, create, select and combine sounds using the inter-related dimensions of music"],
+    "curriculum_reference": [
+      "play tuned and untuned instruments musically",
+      "experiment with, create, select and combine sounds using the inter-related dimensions of music"
+    ],
     "pedagogical_rationale": "This Latin-inspired unit introduces simple pitched instrument playing (glockenspiel) alongside singing. The Latin pulse is infectious and motivates repetitive practice. Playing a simple ostinato on glockenspiel while others sing teaches the foundational ensemble skill of maintaining your own part while others play something different.",
-    "common_pitfalls": ["Glockenspiel beaters held too tightly -- demonstrate relaxed grip for best tone", "Pupils watch their hands rather than listening -- close eyes exercise helps", "Rushing the tempo -- Latin music has a steady, dance-like pulse"],
-    "cross_curricular_hooks": ["[Geography] Latin America, Caribbean culture", "[Maths] Repeating patterns in the ostinato"],
-    "definitions": ["ostinato", "glockenspiel", "tuned percussion", "pitch", "accompaniment", "Latin"],
-    "year_groups": ["Y1"],
+    "common_pitfalls": [
+      "Glockenspiel beaters held too tightly -- demonstrate relaxed grip for best tone",
+      "Pupils watch their hands rather than listening -- close eyes exercise helps",
+      "Rushing the tempo -- Latin music has a steady, dance-like pulse"
+    ],
+    "definitions": [
+      "ostinato",
+      "glockenspiel",
+      "tuned percussion",
+      "pitch",
+      "accompaniment",
+      "Latin"
+    ],
+    "year_groups": [
+      "Y1"
+    ],
     "duration_lessons": 6,
     "composer": null,
     "piece": "Round and Round",
     "genre": "pop",
-    "musical_elements": ["pitch", "rhythm", "pulse", "tempo"],
-    "activity_focus": ["performing", "composing"],
-    "instrument": ["voice", "glockenspiel"],
+    "musical_elements": [
+      "pitch",
+      "rhythm",
+      "pulse",
+      "tempo"
+    ],
+    "activity_focus": [
+      "performing",
+      "composing"
+    ],
+    "instrument": [
+      "voice",
+      "glockenspiel"
+    ],
     "notation_level": "graphic",
-    "listening_repertoire": ["Oye Como Va - Santana", "La Bamba - Ritchie Valens"],
+    "listening_repertoire": [
+      "Oye Como Va - Santana",
+      "La Bamba - Ritchie Valens"
+    ],
     "delivers_via": [
-      {"concept_id": "MU-KS1-C002", "primary": true},
-      {"concept_id": "MU-KS1-C001", "primary": false}
+      {
+        "concept_id": "MU-KS1-C002",
+        "primary": true
+      },
+      {
+        "concept_id": "MU-KS1-C001",
+        "primary": false
+      }
     ],
     "uses_template": "VT-20",
-    "domain_ids": ["MU-KS1-D001", "MU-KS1-D003"],
+    "domain_ids": [
+      "MU-KS1-D001",
+      "MU-KS1-D003"
+    ],
     "display_category": "Topic Suggestion",
     "display_color": "#059669",
-    "display_icon": "music_note"
+    "display_icon": "music_note",
+    "cross_curricular_links": [
+      {
+        "target_id": "GS-GE-KS1-003",
+        "hook": "Latin America, Caribbean culture",
+        "strength": "moderate"
+      }
+    ]
   },
   {
     "suggestion_id": "TS-MU-KS1-005",
@@ -140,31 +324,83 @@
     "key_stage": "KS1",
     "curriculum_status": "convention",
     "mmc_reference": "MMC Year 2, Unit 3",
-    "curriculum_reference": ["experiment with, create, select and combine sounds using the inter-related dimensions of music"],
+    "curriculum_reference": [
+      "experiment with, create, select and combine sounds using the inter-related dimensions of music"
+    ],
     "pedagogical_rationale": "Composing a 'sound picture' of a zoo gives pupils a concrete creative brief for their first structured compositions. Each animal suggests different timbres, dynamics, and tempi -- a lion is loud and slow, a monkey is fast and chattering, a snake is quiet and smooth. Selecting instruments to represent animals teaches timbre awareness and the principle that sound can represent ideas.",
-    "common_pitfalls": ["Pupils just make noise rather than composing -- set a structure (beginning, middle, end)", "Everyone plays at once -- teach taking turns and layering sounds", "Only using obvious sound effects -- challenge pupils to represent the mood of the animal, not just its voice"],
-    "cross_curricular_hooks": ["[Science] Animal habitats, classification", "[English] Onomatopoeia, descriptive language"],
-    "definitions": ["composition", "timbre", "dynamics", "tempo", "sound picture", "structure", "beginning", "middle", "end"],
-    "year_groups": ["Y2"],
+    "common_pitfalls": [
+      "Pupils just make noise rather than composing -- set a structure (beginning, middle, end)",
+      "Everyone plays at once -- teach taking turns and layering sounds",
+      "Only using obvious sound effects -- challenge pupils to represent the mood of the animal, not just its voice"
+    ],
+    "definitions": [
+      "composition",
+      "timbre",
+      "dynamics",
+      "tempo",
+      "sound picture",
+      "structure",
+      "beginning",
+      "middle",
+      "end"
+    ],
+    "year_groups": [
+      "Y2"
+    ],
     "duration_lessons": 6,
     "composer": null,
     "piece": null,
     "genre": null,
-    "musical_elements": ["timbre", "dynamics", "tempo", "texture", "structure"],
-    "activity_focus": ["composing", "performing", "listening"],
-    "instrument": ["untuned percussion", "voice"],
+    "musical_elements": [
+      "timbre",
+      "dynamics",
+      "tempo",
+      "texture",
+      "structure"
+    ],
+    "activity_focus": [
+      "composing",
+      "performing",
+      "listening"
+    ],
+    "instrument": [
+      "untuned percussion",
+      "voice"
+    ],
     "notation_level": "graphic",
-    "listening_repertoire": ["Carnival of the Animals - Saint-Saens", "Peter and the Wolf - Prokofiev"],
+    "listening_repertoire": [
+      "Carnival of the Animals - Saint-Saens",
+      "Peter and the Wolf - Prokofiev"
+    ],
     "delivers_via": [
-      {"concept_id": "MU-KS1-C006", "primary": true},
-      {"concept_id": "MU-KS1-C004", "primary": false},
-      {"concept_id": "MU-KS1-C005", "primary": false}
+      {
+        "concept_id": "MU-KS1-C006",
+        "primary": true
+      },
+      {
+        "concept_id": "MU-KS1-C004",
+        "primary": false
+      },
+      {
+        "concept_id": "MU-KS1-C005",
+        "primary": false
+      }
     ],
     "uses_template": "VT-12",
-    "domain_ids": ["MU-KS1-D003", "MU-KS1-D002"],
+    "domain_ids": [
+      "MU-KS1-D003",
+      "MU-KS1-D002"
+    ],
     "display_category": "Topic Suggestion",
     "display_color": "#059669",
-    "display_icon": "music_note"
+    "display_icon": "music_note",
+    "cross_curricular_links": [
+      {
+        "target_id": "EU-EN-KS1-008",
+        "hook": "Onomatopoeia, descriptive language",
+        "strength": "moderate"
+      }
+    ]
   },
   {
     "suggestion_id": "TS-MU-KS1-006",
@@ -174,31 +410,79 @@
     "key_stage": "KS1",
     "curriculum_status": "convention",
     "mmc_reference": "MMC Year 2, Unit 1",
-    "curriculum_reference": ["use their voices expressively and creatively by singing songs and speaking chants and rhymes", "experiment with, create, select and combine sounds using the inter-related dimensions of music"],
+    "curriculum_reference": [
+      "use their voices expressively and creatively by singing songs and speaking chants and rhymes",
+      "experiment with, create, select and combine sounds using the inter-related dimensions of music"
+    ],
     "pedagogical_rationale": "Your Imagination is a pop-style song that introduces basic song structure (verse, chorus) while encouraging creative musical responses. Pupils learn to identify and perform the verse and chorus, developing awareness of musical structure. Simple improvisation within a pentatonic scale (removing notes that sound 'wrong') builds confidence in musical creativity.",
-    "common_pitfalls": ["Pupils sing verse and chorus at the same volume and energy -- teach dynamic contrast", "Improvisation attempts too long -- limit to 4 beats at first", "Not connecting singing to instrument playing -- combine vocal and glockenspiel parts"],
-    "cross_curricular_hooks": ["[English] Verse and chorus structure in poetry and song", "[PSHE] Imagination, creativity, expressing ideas"],
-    "definitions": ["verse", "chorus", "structure", "improvise", "pentatonic", "melody"],
-    "year_groups": ["Y2"],
+    "common_pitfalls": [
+      "Pupils sing verse and chorus at the same volume and energy -- teach dynamic contrast",
+      "Improvisation attempts too long -- limit to 4 beats at first",
+      "Not connecting singing to instrument playing -- combine vocal and glockenspiel parts"
+    ],
+    "definitions": [
+      "verse",
+      "chorus",
+      "structure",
+      "improvise",
+      "pentatonic",
+      "melody"
+    ],
+    "year_groups": [
+      "Y2"
+    ],
     "duration_lessons": 6,
     "composer": null,
     "piece": "Your Imagination",
     "genre": "pop",
-    "musical_elements": ["structure", "pitch", "melody", "dynamics"],
-    "activity_focus": ["performing", "composing"],
-    "instrument": ["voice", "glockenspiel"],
+    "musical_elements": [
+      "structure",
+      "pitch",
+      "melody",
+      "dynamics"
+    ],
+    "activity_focus": [
+      "performing",
+      "composing"
+    ],
+    "instrument": [
+      "voice",
+      "glockenspiel"
+    ],
     "notation_level": "graphic",
-    "listening_repertoire": ["Don't Stop Believin' - Journey", "Happy - Pharrell Williams"],
+    "listening_repertoire": [
+      "Don't Stop Believin' - Journey",
+      "Happy - Pharrell Williams"
+    ],
     "delivers_via": [
-      {"concept_id": "MU-KS1-C005", "primary": true},
-      {"concept_id": "MU-KS1-C002", "primary": false},
-      {"concept_id": "MU-KS1-C006", "primary": false}
+      {
+        "concept_id": "MU-KS1-C005",
+        "primary": true
+      },
+      {
+        "concept_id": "MU-KS1-C002",
+        "primary": false
+      },
+      {
+        "concept_id": "MU-KS1-C006",
+        "primary": false
+      }
     ],
     "uses_template": "VT-20",
-    "domain_ids": ["MU-KS1-D001", "MU-KS1-D003"],
+    "domain_ids": [
+      "MU-KS1-D001",
+      "MU-KS1-D003"
+    ],
     "display_category": "Topic Suggestion",
     "display_color": "#059669",
-    "display_icon": "music_note"
+    "display_icon": "music_note",
+    "cross_curricular_links": [
+      {
+        "target_id": "EU-EN-KS1-004",
+        "hook": "Verse and chorus structure in poetry and song",
+        "strength": "moderate"
+      }
+    ]
   },
   {
     "suggestion_id": "TS-MU-KS1-007",
@@ -208,29 +492,70 @@
     "key_stage": "KS1",
     "curriculum_status": "convention",
     "mmc_reference": "MMC Year 1, Unit 6",
-    "curriculum_reference": ["use their voices expressively and creatively by singing songs and speaking chants and rhymes"],
+    "curriculum_reference": [
+      "use their voices expressively and creatively by singing songs and speaking chants and rhymes"
+    ],
     "pedagogical_rationale": "An end-of-year performance piece that consolidates all the musical learning from Year 1. Singing about friendship is age-appropriate and connects to PSHE. The performance element (singing to parents/carers) motivates careful rehearsal and teaches the difference between rehearsal and performance. Confidence in singing is the single most important musical outcome of KS1.",
-    "common_pitfalls": ["Performance anxiety -- build up gradually from small group to whole class", "Rushing tempo when nervous -- practise with a steady accompaniment", "Forgetting the words -- use actions as memory aids"],
-    "cross_curricular_hooks": ["[PSHE] Friendship, kindness, belonging", "[English] Song lyrics as poetry"],
-    "definitions": ["perform", "rehearse", "audience", "expression", "diction", "projection"],
-    "year_groups": ["Y1"],
+    "common_pitfalls": [
+      "Performance anxiety -- build up gradually from small group to whole class",
+      "Rushing tempo when nervous -- practise with a steady accompaniment",
+      "Forgetting the words -- use actions as memory aids"
+    ],
+    "definitions": [
+      "perform",
+      "rehearse",
+      "audience",
+      "expression",
+      "diction",
+      "projection"
+    ],
+    "year_groups": [
+      "Y1"
+    ],
     "duration_lessons": 4,
     "composer": null,
     "piece": "Friendship Song",
     "genre": "pop",
-    "musical_elements": ["pitch", "dynamics", "tempo", "structure"],
-    "activity_focus": ["performing"],
-    "instrument": ["voice"],
+    "musical_elements": [
+      "pitch",
+      "dynamics",
+      "tempo",
+      "structure"
+    ],
+    "activity_focus": [
+      "performing"
+    ],
+    "instrument": [
+      "voice"
+    ],
     "notation_level": "none",
-    "listening_repertoire": ["You've Got a Friend in Me - Randy Newman", "Count on Me - Bruno Mars"],
+    "listening_repertoire": [
+      "You've Got a Friend in Me - Randy Newman",
+      "Count on Me - Bruno Mars"
+    ],
     "delivers_via": [
-      {"concept_id": "MU-KS1-C002", "primary": true},
-      {"concept_id": "MU-KS1-C003", "primary": false}
+      {
+        "concept_id": "MU-KS1-C002",
+        "primary": true
+      },
+      {
+        "concept_id": "MU-KS1-C003",
+        "primary": false
+      }
     ],
     "uses_template": "VT-20",
-    "domain_ids": ["MU-KS1-D001"],
+    "domain_ids": [
+      "MU-KS1-D001"
+    ],
     "display_category": "Topic Suggestion",
     "display_color": "#059669",
-    "display_icon": "music_note"
+    "display_icon": "music_note",
+    "cross_curricular_links": [
+      {
+        "target_id": "EU-EN-KS1-004",
+        "hook": "Song lyrics as poetry",
+        "strength": "moderate"
+      }
+    ]
   }
 ]

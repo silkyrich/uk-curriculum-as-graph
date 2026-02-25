@@ -35,12 +35,7 @@
         "Treating the earthquake as a one-off event rather than connecting it to ongoing tectonic risk and recovery challenges",
         "Using outdated or sensationalised imagery that stereotypes Haitian people rather than showing resilience and agency"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Seismic waves and the structure of the Earth",
-        "[Maths] Interpreting statistical data on development indicators (HDI, GDP)",
-        "[History] Colonial history of Haiti and its long-term impact on development",
-        "[PSHE] International aid, empathy, and understanding global inequality"
-      ],
+      "cross_curricular_links": [],
       "sensitive_content_notes": [
         "Significant loss of life (230,000+ deaths) — handle with sensitivity, avoid graphic imagery",
         "Poverty and development inequality — avoid deficit framing of Haitian people"
@@ -96,12 +91,7 @@
         "Neglecting the Fukushima nuclear dimension as a cascading hazard, which complicates the 'technology makes you safe' narrative",
         "Failing to distinguish between earthquake and tsunami impacts, which have different causes and preparedness strategies"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Seismic waves, subduction zones, and tsunami mechanics",
-        "[Science] Nuclear energy and the Fukushima meltdown",
-        "[Maths] Comparing statistical data across two events (magnitude, deaths, GDP)",
-        "[Design & Technology] Engineering for earthquake resistance"
-      ],
+      "cross_curricular_links": [],
       "sensitive_content_notes": [
         "Significant loss of life (c.20,000 deaths) — handle with sensitivity",
         "Nuclear disaster at Fukushima — discuss factually, avoid sensationalism"
@@ -158,11 +148,8 @@
         "Presenting climate change as a future problem rather than a present reality with observable effects",
         "Failing to distinguish between weather variability and long-term climate trends when using data"
       ],
-      "cross_curricular_hooks": [
-        "[Science] The greenhouse effect, carbon cycle, and atmospheric chemistry",
-        "[Maths] Interpreting line graphs, scatter plots, and trend data from climate records",
-        "[English] Evaluating persuasive writing and media coverage of climate issues",
-        "[Citizenship] International agreements (Paris Agreement) and collective action"
+      "cross_curricular_links": [
+        {"target_id": "TS-CI-KS3-005", "hook": "International agreements (Paris Agreement) and collective action", "strength": "moderate"}
       ],
       "sensitive_content_notes": [
         "Climate anxiety is real for many young people — frame with agency and solutions, not despair",
@@ -221,11 +208,8 @@
         "Relying solely on GDP as a development measure without exploring HDI, literacy, regional disparities",
         "Presenting the resource curse as inevitable rather than as a political and governance challenge"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Calculating and comparing development indicators (GDP per capita, HDI, literacy rates)",
-        "[History] Colonial history of Nigeria and its legacy on current political boundaries and economic structures",
-        "[English] Analysing different perspectives on development through contrasting written sources",
-        "[Science] Oil extraction processes and environmental impacts"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-004", "hook": "Colonial history of Nigeria and its legacy on current political boundaries and economic structures", "strength": "strong"}
       ],
       "sensitive_content_notes": [
         "Boko Haram and regional conflict — handle factually, avoid sensationalising violence",
@@ -283,11 +267,9 @@
         "Treating London as the 'solution' and Lagos as the 'problem' — both cities face serious challenges",
         "Using outdated data or imagery that does not reflect current urban change in either city"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Interpreting population growth curves and percentage calculations",
-        "[History] Historical growth of London; colonial origins of Lagos",
-        "[Science] Urban heat island effect and pollution",
-        "[Citizenship] Housing inequality and social justice in urban contexts"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-004", "hook": "Historical growth of London; colonial origins of Lagos", "strength": "moderate"},
+        {"target_id": "TS-CI-KS3-005", "hook": "Housing inequality and social justice in urban contexts", "strength": "moderate"}
       ],
       "sensitive_content_notes": [
         "Informal settlements — avoid 'slum tourism' framing; discuss with dignity and structural analysis",
@@ -345,11 +327,9 @@
         "Oversimplifying the solution as 'just build more reservoirs' without considering environmental, economic, and social trade-offs",
         "Neglecting demand-side management (reducing leakage, changing consumption) in favour of supply-side solutions only"
       ],
-      "cross_curricular_hooks": [
-        "[Science] The water cycle, evaporation, precipitation, and filtration processes",
-        "[Maths] Data handling with water consumption statistics, surplus/deficit calculations",
-        "[Design & Technology] Water filtration and purification systems",
-        "[Citizenship] Water privatisation, pricing, and equity of access"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS3-005", "hook": "The water cycle, evaporation, precipitation, and filtration processes", "strength": "moderate"},
+        {"target_id": "TS-CI-KS3-005", "hook": "Water privatisation, pricing, and equity of access", "strength": "moderate"}
       ],
       "sensitive_content_notes": null,
       "fieldwork_potential": "School water audit measuring daily consumption, identifying waste, and proposing reduction strategies; local river quality survey.",
@@ -404,11 +384,9 @@
         "Relying on stereotypical 'poverty and wildlife' imagery that ignores urbanisation, technology, and cultural richness",
         "Failing to include African voices and perspectives — use sources from within African countries, not only external accounts"
       ],
-      "cross_curricular_hooks": [
-        "[History] Pre-colonial African kingdoms, colonialism, and independence movements",
-        "[Science] Rift Valley tectonics and biodiversity of African ecosystems",
-        "[Maths] Comparing development data across African nations using multiple indicators",
-        "[Art] African art traditions, textile design, and contemporary African artists"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-004", "hook": "Pre-colonial African kingdoms, colonialism, and independence movements", "strength": "strong"},
+        {"target_id": "SE-KS3-006", "hook": "Rift Valley tectonics and biodiversity of African ecosystems", "strength": "moderate"}
       ],
       "sensitive_content_notes": [
         "Colonial legacy and its ongoing effects — discuss factually and sensitively",
@@ -466,11 +444,8 @@
         "Presenting population density as inherently problematic without exploring how dense populations create economic opportunity and cultural richness",
         "Treating rapid economic growth as unambiguously positive without examining environmental costs and inequality"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Monsoon weather systems, Himalayan tectonics, and delta formation",
-        "[Maths] Population data analysis using very large numbers and growth rate calculations",
-        "[History] Silk Road trade routes, colonial history in South and Southeast Asia",
-        "[RE] Buddhism, Hinduism, Islam, and Sikhism in their geographical contexts"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-009", "hook": "Silk Road trade routes, colonial history in South and Southeast Asia", "strength": "moderate"}
       ],
       "sensitive_content_notes": [
         "Avoid orientalist framing — present Asian societies on their own terms, not as exotic contrasts to Europe",
@@ -527,11 +502,8 @@
         "Collecting data without teaching pupils to evaluate its reliability, representativeness, and limitations",
         "Using only one fieldwork location when the NC requires contrasting locations"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Sampling methods, data presentation (graphs, charts), calculating averages and percentages",
-        "[Science] Scientific method — hypothesis, variables, fair testing principles applied to geographical contexts",
-        "[Computing] Using GIS software and digital mapping tools for data presentation",
-        "[English] Writing up fieldwork reports with clear structure and evidence-based conclusions"
+      "cross_curricular_links": [
+        {"target_id": "TS-CO-KS2-005", "hook": "Using GIS software and digital mapping tools for data presentation", "strength": "moderate"}
       ],
       "sensitive_content_notes": null,
       "fieldwork_potential": "This IS the fieldwork study. Pupils design and conduct a geographical enquiry in a local environment, collecting primary data through techniques such as questionnaires, environmental quality surveys, traffic counts, or river measurements.",
@@ -584,11 +556,10 @@
         "Treating the region as monolithic when it contains enormous diversity in wealth, governance, and culture",
         "Oversimplifying the Israel-Palestine situation — present facts carefully and avoid taking political positions"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Desalination technology and water treatment processes",
-        "[History] Historical significance of the Middle East (Mesopotamia, Ottoman Empire, mandate system)",
-        "[RE] Islam in its geographical context; religious diversity in the region",
-        "[Citizenship] Refugees, conflict, and international law"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS2-010", "hook": "Desalination technology and water treatment processes", "strength": "moderate"},
+        {"target_id": "HS-KS3-009", "hook": "Historical significance of the Middle East (Mesopotamia, Ottoman Empire, mandate system)", "strength": "strong"},
+        {"target_id": "TS-CI-KS3-005", "hook": "Refugees, conflict, and international law", "strength": "strong"}
       ],
       "sensitive_content_notes": [
         "Israel-Palestine conflict is highly sensitive — present factually, acknowledge multiple perspectives, avoid taking sides",

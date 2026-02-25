@@ -44,10 +44,7 @@
         "Not explicitly teaching the story structure (beginning, middle, end) as a transferable pattern",
         "Writing task too ambitious for Y1 — keep to 4-6 sentences"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Counting and ordering (three goats, size comparison)",
-        "[PSHE] Themes of bravery, problem-solving, and standing up to bullies"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-KS1-C045", "primary": true},
         {"concept_id": "EN-KS1-C043", "primary": false},
@@ -105,10 +102,7 @@
         "Character change is superficial (just changing the name) rather than meaningful",
         "Drama work does not feed into the writing task"
       ],
-      "cross_curricular_hooks": [
-        "[PSHE] Stranger danger and personal safety",
-        "[Art] Illustrating own version of the story"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-KS1-C045", "primary": true},
         {"concept_id": "EN-KS1-C044", "primary": false},
@@ -162,10 +156,8 @@
         "Steps are not in logical order",
         "Pupils write in narrative rather than instructional register"
       ],
-      "cross_curricular_hooks": [
-        "[DT] Writing instructions for a making task",
-        "[Science] Writing up a simple investigation as instructions",
-        "[PE] Writing instructions for a simple game"
+      "cross_curricular_links": [
+        {"target_id": "TS-DT-KS1-001", "hook": "Writing instructions for a making task", "strength": "strong"}
       ],
       "delivers_via": [
         {"concept_id": "EN-KS1-C047", "primary": true},
@@ -221,9 +213,8 @@
         "Expecting rhyming couplets when children have not yet developed sufficient phonological repertoire",
         "Performance reduced to mumbled group recitation rather than expressive individual delivery"
       ],
-      "cross_curricular_hooks": [
-        "[Music] Rhythm and beat in poetry — clapping rhythms, musical accompaniment",
-        "[PSHE] Poems about feelings and emotions"
+      "cross_curricular_links": [
+        {"target_id": "TS-MU-KS1-003", "hook": "Rhythm and beat in poetry — clapping rhythms, musical accompaniment", "strength": "strong"}
       ],
       "delivers_via": [
         {"concept_id": "EN-KS1-C021", "primary": true},
@@ -277,7 +268,7 @@
         "Recount is a list of events without specific detail or personal response",
         "Past tense inconsistency (mixing went and go within the same piece)"
       ],
-      "cross_curricular_hooks": [],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-KS1-C047", "primary": true},
         {"concept_id": "EN-KS1-C044", "primary": false},
@@ -331,9 +322,8 @@
         "Problem is resolved too quickly without building tension",
         "Expanded noun phrases used only in the opening rather than throughout"
       ],
-      "cross_curricular_hooks": [
-        "[PSHE] Feelings about loss and the kindness of siblings and others",
-        "[Art] Drawing and describing a treasured possession using expanded noun phrases"
+      "cross_curricular_links": [
+        {"target_id": "TS-AD-KS1-002", "hook": "Drawing and describing a treasured possession using expanded noun phrases", "strength": "strong"}
       ],
       "delivers_via": [
         {"concept_id": "EN-KS1-C045", "primary": true},
@@ -391,10 +381,9 @@
         "Subheadings used decoratively rather than to organise information into categories",
         "Present tense inconsistency (mixing 'Lions live in Africa' with 'The lion lived in a den')"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Living things and their habitats — animal classification, diet, habitat",
-        "[Geography] Where animals live in the world",
-        "[Computing] Using digital tools for simple research"
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS1-003", "hook": "Where animals live in the world", "strength": "moderate"},
+        {"target_id": "TS-CO-KS1-004", "hook": "Using digital tools for simple research", "strength": "moderate"}
       ],
       "delivers_via": [
         {"concept_id": "EN-KS1-C047", "primary": true},
@@ -451,9 +440,8 @@
         "Performance is flat group recitation rather than individual expressive delivery",
         "Children struggle with rhyme because they have not heard enough rhyming poetry read aloud"
       ],
-      "cross_curricular_hooks": [
-        "[Music] Rhythm in poetry — clapping syllables, adding musical accompaniment",
-        "[Science] Tongue twisters about science topics (slippery, slimy slugs)"
+      "cross_curricular_links": [
+        {"target_id": "TS-MU-KS1-003", "hook": "Rhythm in poetry — clapping syllables, adding musical accompaniment", "strength": "strong"}
       ],
       "delivers_via": [
         {"concept_id": "EN-KS1-C021", "primary": true},
@@ -508,10 +496,7 @@
         "Cumulative pattern abandoned halfway through, reverting to linear narrative",
         "Subordination used only in teacher-modelled sentences, not in independent writing"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Plants and growing — what do plants need to grow?",
-        "[PSHE] Teamwork and co-operation"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-KS1-C045", "primary": true},
         {"concept_id": "EN-KS1-C048", "primary": false},
@@ -566,10 +551,7 @@
         "Children write as themselves rather than staying in character",
         "Time phrases (first, then, next) used mechanically without varying openings"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Animals and their habitats — writing a diary from an animal's perspective",
-        "[PSHE] Seeing events from different points of view"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-KS1-C047", "primary": true},
         {"concept_id": "EN-KS1-C049", "primary": false},

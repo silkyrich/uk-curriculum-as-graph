@@ -1384,6 +1384,68 @@ class SchemaValidator:
         status = "FAIL" if issues else "PASS"
         self.add(ValidationResult("curriculum_status valid values", status, total, issues))
 
+    def check_maths_reference_concept_links(self):
+        """All 4 maths reference types should have USED_FOR_CONCEPT relationships."""
+        maths_ref_labels = [
+            'MathsManipulative', 'MathsRepresentation',
+            'MathsContext', 'ReasoningPromptType',
+        ]
+        issues = []
+        total = 0
+        for label in maths_ref_labels:
+            count = self.scalar(f"MATCH (n:{label}) RETURN count(n)") or 0
+            total += count
+            if count == 0:
+                continue
+            orphaned = self.scalar(f"""
+                MATCH (n:{label})
+                WHERE NOT (n)-[:USED_FOR_CONCEPT]->(:Concept)
+                RETURN count(n)
+            """) or 0
+            if orphaned > 0:
+                issues.append(f"{orphaned}/{count} {label} nodes have no USED_FOR_CONCEPT links")
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("Maths reference USED_FOR_CONCEPT coverage", status, total, issues))
+
+    def check_cross_curricular_integrity(self):
+        """Every CROSS_CURRICULAR relationship should connect two study/unit nodes."""
+        total = self.scalar(
+            "MATCH ()-[r:CROSS_CURRICULAR]->() RETURN count(r)"
+        ) or 0
+        issues = []
+        if total == 0:
+            issues.append("No CROSS_CURRICULAR relationships found")
+        else:
+            # Study/unit labels that are valid CROSS_CURRICULAR endpoints
+            study_labels = [
+                'HistoryStudy', 'GeoStudy', 'ScienceEnquiry', 'EnglishUnit',
+                'ArtTopicSuggestion', 'MusicTopicSuggestion', 'DTTopicSuggestion',
+                'ComputingTopicSuggestion', 'TopicSuggestion',
+            ]
+            label_check = ' OR '.join(f'a:{l}' for l in study_labels)
+            target_check = ' OR '.join(f'b:{l}' for l in study_labels)
+            bad = self.scalar(f"""
+                MATCH (a)-[r:CROSS_CURRICULAR]->(b)
+                WHERE NOT ({label_check})
+                   OR NOT ({target_check})
+                RETURN count(r)
+            """) or 0
+            if bad > 0:
+                issues.append(
+                    f"{bad}/{total} CROSS_CURRICULAR rels connect non-study/unit nodes"
+                )
+            missing_hook = self.scalar("""
+                MATCH ()-[r:CROSS_CURRICULAR]->()
+                WHERE r.hook IS NULL OR r.hook = ''
+                RETURN count(r)
+            """) or 0
+            if missing_hook > 0:
+                issues.append(f"{missing_hook} CROSS_CURRICULAR rels have empty hook text")
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult(
+            "CROSS_CURRICULAR relationship integrity", status, total, issues
+        ))
+
     # =========================================================================
     # K. Enrichment coverage (DB-level)
     # =========================================================================
@@ -1604,6 +1666,10 @@ class SchemaValidator:
             self.check_topic_suggestion_has_suggestion,
             self.check_topic_suggestion_type_values,
             self.check_topic_suggestion_curriculum_status_values,
+            # P-bis. Maths reference USED_FOR_CONCEPT (v4.2)
+            self.check_maths_reference_concept_links,
+            # P-ter. CROSS_CURRICULAR integrity (v4.2)
+            self.check_cross_curricular_integrity,
             # K. Enrichment coverage
             self.check_concept_enrichment_coverage,
             # L. Display & Visualization

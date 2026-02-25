@@ -229,7 +229,7 @@ SET n.display_color = '#3B0764',
 
 // DifficultyLevel - UK Curriculum
 MATCH (n:DifficultyLevel)
-SET n.display_color = '#F59E0B',
+SET n.display_color = '#E11D48',
     n.display_icon = 'signal_cellular_alt',
     n.display_category = 'UK Curriculum',
     n.display_size = 1;
@@ -257,8 +257,8 @@ SET n.display_color = '#0D9488',
 
 // HistoryStudy - Topic Suggestion
 MATCH (n:HistoryStudy)
-SET n.display_color = '#92400E',
-    n.display_icon = 'history_edu',
+SET n.display_color = '#B45309',
+    n.display_icon = 'auto_stories',
     n.display_category = 'Topic Suggestion',
     n.display_size = 2;
 

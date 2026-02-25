@@ -44,10 +44,9 @@
         "Retelling is flat plot summary without vivid language or dialogue",
         "Supernatural elements treated superficially rather than exploring why myths use them"
       ],
-      "cross_curricular_hooks": [
-        "[History] Ancient civilisations — myths as windows into beliefs and values",
-        "[Geography] Where in the world do these myths come from?",
-        "[Art] Mythological illustration styles from different cultures"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS2-011", "hook": "Ancient civilisations — myths as windows into beliefs and values", "strength": "strong"},
+        {"target_id": "TS-AD-KS2-005", "hook": "Mythological illustration styles from different cultures", "strength": "strong"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y3-C020", "primary": true},
@@ -105,9 +104,9 @@
         "Subheadings added but content under each heading is not grouped logically",
         "Formal register drops into chatty, informal language mid-paragraph"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Rocks and soils, plants, animals — any topic with factual content to organise",
-        "[Geography] Rivers, weather, local area study"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS2-003", "hook": "Rocks and soils, plants, animals — any topic with factual content to organise", "strength": "strong"},
+        {"target_id": "GS-GE-KS2-004", "hook": "Rivers, weather, local area study", "strength": "strong"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y3-C031", "primary": true},
@@ -163,10 +162,7 @@
         "Character description is a static list of adjectives rather than revealed through action and dialogue",
         "Adventure plot is all action with no reflective or descriptive moments"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Dreams and sleep — the BFG's dream-catching links to understanding sleep",
-        "[PSHE] Friendship, bravery, and standing up for what is right"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-Y3-C048", "primary": true},
         {"concept_id": "EN-Y3-C044", "primary": false},
@@ -222,10 +218,7 @@
         "Similes are formulaic ('as big as a house') rather than original and precise",
         "Performance is rushed through without attention to pace, volume, and expression"
       ],
-      "cross_curricular_hooks": [
-        "[Art] Visual poetry as art — creating illustrated calligrams",
-        "[Science] Shape poems about natural phenomena (water, fire, animals)"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-Y3-C022", "primary": true},
         {"concept_id": "EN-Y3-C024", "primary": false},
@@ -280,10 +273,8 @@
         "Dialogue added decoratively rather than used to advance the plot or reveal character",
         "Fronted adverbials used repetitively without varying sentence openings"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Materials and their properties — the Iron Man's metal body",
-        "[PSHE] Themes of fear, friendship, and acceptance of difference",
-        "[Art] Illustration and character design inspired by the text"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS2-010", "hook": "Materials and their properties — the Iron Man's metal body", "strength": "moderate"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y4-C016", "primary": true},
@@ -342,10 +333,9 @@
         "Retelling becomes a copy rather than a genuine reimagining with the pupil's own descriptive voice",
         "Cross-referencing themes across myths is superficial without explicit modelling of how to compare"
       ],
-      "cross_curricular_hooks": [
-        "[History] Ancient Greece topic — myths as primary sources for understanding beliefs and values",
-        "[Art] Greek pottery and mythological illustration",
-        "[Drama] Dramatic retelling and performance of myths"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS2-011", "hook": "Ancient Greece topic — myths as primary sources for understanding beliefs and values", "strength": "strong"},
+        {"target_id": "TS-AD-KS2-005", "hook": "Greek pottery and mythological illustration", "strength": "strong"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y4-C019", "primary": true},
@@ -402,10 +392,8 @@
         "Rhetorical questions used excessively rather than strategically for effect",
         "Formal register lapses into informal language without the pupil noticing the shift"
       ],
-      "cross_curricular_hooks": [
-        "[Geography] Local area study and land use",
-        "[PSHE] Community participation and civic responsibility",
-        "[Maths] Data collection and presentation to support arguments"
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS2-001", "hook": "Local area study and land use", "strength": "strong"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y4-C042", "primary": true},
@@ -465,10 +453,8 @@
         "Performance reduced to recitation without attention to expression, pace, or volume",
         "Pupils write only in forms with strict rules (haiku, limerick) and avoid the challenge of free verse"
       ],
-      "cross_curricular_hooks": [
-        "[Music] Rhythm and beat in poetry — links to musical metre",
-        "[History] Narrative poetry as a way of retelling historical events",
-        "[PSHE] Self-expression and confidence through performance"
+      "cross_curricular_links": [
+        {"target_id": "TS-MU-KS2-005", "hook": "Rhythm and beat in poetry — links to musical metre", "strength": "moderate"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y4-C021", "primary": true},
@@ -525,10 +511,10 @@
         "Subheadings used as decoration rather than as genuine organisational tools for the reader",
         "Technical vocabulary inserted without understanding, leading to inaccurate usage"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Non-chronological reports on habitats, states of matter, or the digestive system",
-        "[Geography] Reports on countries, rivers, or geographical features",
-        "[Computing] Using digital tools for research and presentation"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS2-008", "hook": "Non-chronological reports on habitats, states of matter, or the digestive system", "strength": "strong"},
+        {"target_id": "GS-GE-KS2-004", "hook": "Reports on countries, rivers, or geographical features", "strength": "strong"},
+        {"target_id": "TS-CO-KS2-005", "hook": "Using digital tools for research and presentation", "strength": "moderate"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y4-C017", "primary": true},
@@ -586,11 +572,7 @@
         "Pupils struggle to maintain fairy tale conventions while simultaneously subverting them",
         "Comparison work stays at plot level without exploring how language and perspective create different effects"
       ],
-      "cross_curricular_hooks": [
-        "[Drama] Performing fairy tales from different characters' perspectives",
-        "[Art] Illustrating traditional versus modern fairy tale scenes for contrast",
-        "[PSHE] Exploring themes of good and evil, justice, and morality in fairy tales"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-Y4-C019", "primary": true},
         {"concept_id": "EN-Y4-C020", "primary": false},
@@ -647,10 +629,8 @@
         "Over-reliance on 'look, cover, write, check' without understanding the morphological rule behind the spelling",
         "Homophones practised as pairs but not embedded in sentence-level context where the distinction matters"
       ],
-      "cross_curricular_hooks": [
-        "[History] Etymology and word origins — Latin and Greek roots in English",
-        "[Languages] Comparing English spelling patterns with French and Spanish cognates",
-        "[Science] Technical vocabulary with Latin and Greek roots"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS2-002", "hook": "Etymology and word origins — Latin and Greek roots in English", "strength": "moderate"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y4-C013", "primary": true},
@@ -711,10 +691,9 @@
         "Written arguments present personal opinion as the only valid position rather than genuinely balancing both sides",
         "Connectives for contrast (however, on the other hand) used mechanically as sentence starters without genuine argumentative purpose"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Animal habitats, adaptation, and conservation",
-        "[Geography] Endangered species and human impact on environments",
-        "[PSHE] Ethical decision-making and respecting different viewpoints"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS2-009", "hook": "Animal habitats, adaptation, and conservation", "strength": "strong"},
+        {"target_id": "GS-GE-KS2-005", "hook": "Endangered species and human impact on environments", "strength": "moderate"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y4-C001", "primary": true},
@@ -772,9 +751,9 @@
         "Figurative language used randomly rather than to create a consistent atmosphere",
         "Relative clauses and parenthetical asides interrupt flow rather than enhancing it"
       ],
-      "cross_curricular_hooks": [
-        "[History] Anglo-Saxon and Viking Britain — myths as cultural artefacts",
-        "[Art] Illustration of mythological scenes using atmospheric techniques"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS2-004", "hook": "Anglo-Saxon and Viking Britain — myths as cultural artefacts", "strength": "strong"},
+        {"target_id": "TS-AD-KS2-010", "hook": "Illustration of mythological scenes using atmospheric techniques", "strength": "moderate"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y5-C027", "primary": true},
@@ -832,11 +811,7 @@
         "Modal verbs and passive voice used because the teacher says so, not because the register demands them",
         "Conclusion simply repeats the strongest argument rather than genuinely weighing the evidence"
       ],
-      "cross_curricular_hooks": [
-        "[PSHE] Current affairs and ethical issues",
-        "[Science] Environmental issues (deforestation, plastic, climate change)",
-        "[Geography] Global issues with local impact"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-Y5-C026", "primary": true},
         {"concept_id": "EN-Y5-C025", "primary": false},
@@ -892,10 +867,7 @@
         "Pupils' own poems imitate the classic too closely rather than responding with their own voice",
         "Performance is flat and rushed — insufficient rehearsal time allocated"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Nature poetry linked to environmental topics",
-        "[History] Historical context of classic poems"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-Y5-C016", "primary": true},
         {"concept_id": "EN-Y5-C017", "primary": false},
@@ -949,10 +921,7 @@
         "Advanced punctuation (semi-colons, colons) used incorrectly or forced into the writing",
         "Structural choices (flashback, multiple perspectives) attempted but executed confusingly"
       ],
-      "cross_curricular_hooks": [
-        "[History] Historical fiction drawing on KS2 history topics",
-        "[PSHE] Themes of identity, growing up, and moral choice"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-Y6-C026", "primary": true},
         {"concept_id": "EN-Y6-C013", "primary": false},
@@ -1009,11 +978,7 @@
         "Formal register collapses into informal language in the middle of the piece",
         "Arguments are opinions dressed up in formal language rather than genuine evidence-based reasoning"
       ],
-      "cross_curricular_hooks": [
-        "[PSHE] Topical ethical issues (environment, technology, rights)",
-        "[Science] Scientific debates (space exploration, genetic modification)",
-        "[Citizenship] Democracy, rights, and responsibilities"
-      ],
+      "cross_curricular_links": [],
       "delivers_via": [
         {"concept_id": "EN-Y6-C025", "primary": true},
         {"concept_id": "EN-Y6-C003", "primary": false},
@@ -1071,10 +1036,8 @@
         "Shakespearean language presented as incomprehensible rather than as a puzzle to be decoded",
         "Writing task defaults to plot summary rather than creative response or analytical diary entry"
       ],
-      "cross_curricular_hooks": [
-        "[History] Tudor and Jacobean theatre — the Globe, Elizabethan audience",
-        "[Drama] Performance techniques and stagecraft",
-        "[Art] Set and costume design for a production"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS2-006", "hook": "Tudor and Jacobean theatre — the Globe, Elizabethan audience", "strength": "moderate"}
       ],
       "delivers_via": [
         {"concept_id": "EN-Y6-C017", "primary": true},

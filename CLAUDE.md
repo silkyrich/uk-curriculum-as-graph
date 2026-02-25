@@ -342,6 +342,9 @@ All nodes have `display_category` property:
 (:EnglishUnit)-[:USES_GENRE]->(:Genre)                       // English text types
 (:EnglishUnit)-[:USES_SET_TEXT]->(:SetText)                   // KS4 set text links
 
+// Cross-curricular links between study nodes
+(ts)-[:CROSS_CURRICULAR {hook: str, strength: str}]->(ts2)  // e.g. HistoryStudy → ScienceEnquiry
+
 // NGSS 3D model
 (:Framework)-[:HAS_DIMENSION]->(:Dimension)-[:HAS_PRACTICE]->(:Practice)
 (:Dimension)-[:HAS_CORE_IDEA]->(:CoreIdea)
@@ -655,7 +658,7 @@ class LayerImporter:
 - Replaces old Content Vehicles (v3.8) + Topics layers with typed per-subject nodes
 - **453 nodes** across 21 typed labels: 198 study/unit nodes + 255 reference nodes
 - **24 VehicleTemplate nodes** with 77 TEMPLATE_FOR relationships (age-banded pedagogical prompts)
-- **1,711 relationships** including DELIVERS_VIA, HAS_SUGGESTION, FOREGROUNDS, USES_SOURCE, LOCATED_IN, CONTRASTS_WITH, USES_ENQUIRY_TYPE, ADDRESSES_MISCONCEPTION, USES_GENRE, USES_SET_TEXT, etc.
+- **1,711+ relationships** including DELIVERS_VIA, HAS_SUGGESTION, FOREGROUNDS, USES_SOURCE, LOCATED_IN, CONTRASTS_WITH, USES_ENQUIRY_TYPE, ADDRESSES_MISCONCEPTION, USES_GENRE, USES_SET_TEXT, CROSS_CURRICULAR (~183), etc.
 - Subject coverage: History (33 studies), Geography (22 studies), Science (18 enquiries), English (40 units), Maths (reference nodes only), Art (21), Music (17), DT (16), Computing (14), generic/RS/Citizenship (17)
 - Each subject uses its own property schema — no irrelevant attributes
 - 8-agent teacher panel designed the schema (Phase 0); data migrated from ContentVehicle + Topic nodes (Phase 2)
@@ -746,6 +749,7 @@ class LayerImporter:
 ❌ Edit RepresentationStage data directly in the graph - Edit the JSON files in `data/representation_stages/`, then rerun `import_representation_stages.py --clear`
 ❌ Create monolithic DL files for large subjects - Split by curriculum domain (e.g. `english_y4_composition.json`, not `english_y4.json`). Max ~20 concepts per file for maintainability
 ❌ Edit per-subject ontology data directly in the graph - Edit the JSON files in `layers/topic-suggestions/data/`, then rerun `import_subject_ontologies.py --clear`
+❌ Store cross-curricular connections as JSON blobs on nodes — Use `cross_curricular_links` in data files, which creates proper `CROSS_CURRICULAR` relationships via import
 ❌ Use a universal TopicSuggestion label for all subjects - Each subject has its own typed label (HistoryStudy, GeoStudy, etc.) with subject-specific properties
 ❌ Reference old ContentVehicle or Topic nodes - These have been replaced by the per-subject ontology (v4.2) and archived to `layers/_archived/`
 

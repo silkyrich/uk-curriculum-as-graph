@@ -34,11 +34,8 @@
         "Treating the study as pure description rather than analysis — pupils should explain why the region has the characteristics it does",
         "Neglecting how the region has changed over time — static portraits miss the dynamism of real places"
       ],
-      "cross_curricular_hooks": [
-        "[History] How the region has changed over time — industrial heritage, rural change",
-        "[Science] Physical processes shaping the region — river erosion, weathering, glaciation",
-        "[Maths] Using grid references and scale on OS maps of the region",
-        "[English] Travel writing and descriptive accounts of the region"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS2-006", "hook": "How the region has changed over time — industrial heritage, rural change", "strength": "moderate"}
       ],
       "sensitive_content_notes": null,
       "fieldwork_potential": "If feasible, a day visit to the studied region for fieldwork; alternatively, virtual fieldwork using Google Street View, satellite imagery, and published data to investigate a geographical question about the region.",
@@ -95,11 +92,10 @@
         "Treating the European study as a tourism brochure — focus on geographical analysis, not travel highlights",
         "Failing to compare systematically with the UK region — the value is in structured comparison, not standalone description"
       ],
-      "cross_curricular_hooks": [
-        "[Languages] Connections to French, Spanish, or German language learning if the region aligns",
-        "[History] Historical context of the European region (e.g. Roman settlement, medieval trade routes)",
-        "[Science] Comparing climate and biomes between UK and European region",
-        "[Art] European art and architecture traditions from the studied region"
+      "cross_curricular_links": [
+        {"target_id": "HS-KS2-002", "hook": "Historical context of the European region (e.g. Roman settlement, medieval trade routes)", "strength": "moderate"},
+        {"target_id": "SE-KS2-009", "hook": "Comparing climate and biomes between UK and European region", "strength": "moderate"},
+        {"target_id": "TS-AD-KS2-011", "hook": "European art and architecture traditions from the studied region", "strength": "moderate"}
       ],
       "sensitive_content_notes": null,
       "fieldwork_potential": null,
@@ -156,11 +152,10 @@
         "Treating the Amazon only as an environmental issue without understanding the human geography of communities who live there",
         "Reducing the region to a single narrative (e.g. 'deforestation') without exploring its complexity and diversity"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Rainforest or desert ecosystems, biodiversity, and adaptation",
-        "[History] Indigenous peoples of the Americas, European colonisation",
-        "[Maths] Comparing scale — distances, areas, and population sizes across continents",
-        "[English] Myths, legends, and stories from the Americas"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS2-009", "hook": "Rainforest or desert ecosystems, biodiversity, and adaptation", "strength": "strong"},
+        {"target_id": "HS-KS2-013", "hook": "Indigenous peoples of the Americas, European colonisation", "strength": "moderate"},
+        {"target_id": "EU-EN-Y3-001", "hook": "Myths, legends, and stories from the Americas", "strength": "moderate"}
       ],
       "sensitive_content_notes": [
         "Indigenous peoples — present with respect and agency, not as historical curiosities",
@@ -220,11 +215,10 @@
         "Presenting rivers as flowing in only one direction without explaining why (gravity and gradient)",
         "Neglecting human interaction with rivers — flooding, water supply, settlement, and pollution"
       ],
-      "cross_curricular_hooks": [
-        "[Science] States of matter — evaporation, condensation, precipitation as phase changes",
-        "[Maths] Measuring rainfall, calculating river flow rates, reading scales",
-        "[History] Historical importance of rivers for settlement, trade, and industry",
-        "[English] River poetry and descriptive writing"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS2-006", "hook": "States of matter — evaporation, condensation, precipitation as phase changes", "strength": "strong"},
+        {"target_id": "HS-KS2-001", "hook": "Historical importance of rivers for settlement, trade, and industry", "strength": "moderate"},
+        {"target_id": "EU-EN-Y3-004", "hook": "River poetry and descriptive writing", "strength": "moderate"}
       ],
       "sensitive_content_notes": null,
       "fieldwork_potential": "Local river or stream study measuring width, depth, and flow velocity at different points; observing erosion and deposition features; water quality testing.",
@@ -279,11 +273,10 @@
         "Confusing climate zones with biomes — climate determines what biome can exist, but they are not the same thing",
         "Presenting biomes as untouched wilderness without acknowledging massive human modification (deforestation, agriculture)"
       ],
-      "cross_curricular_hooks": [
-        "[Science] Habitats, adaptation, food chains, and biodiversity in different biomes",
-        "[Maths] Reading climate graphs — temperature and rainfall data for different zones",
-        "[Art] Landscapes and colours of different biomes — painting contrasting environments",
-        "[English] Non-fiction reading about environments around the world"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS2-009", "hook": "Habitats, adaptation, food chains, and biodiversity in different biomes", "strength": "strong"},
+        {"target_id": "TS-AD-KS2-010", "hook": "Landscapes and colours of different biomes — painting contrasting environments", "strength": "moderate"},
+        {"target_id": "EU-EN-Y4-005", "hook": "Non-fiction reading about environments around the world", "strength": "moderate"}
       ],
       "sensitive_content_notes": null,
       "fieldwork_potential": "Local habitat survey comparing vegetation in different microclimates around the school grounds (sunny vs shaded, sheltered vs exposed) as a micro-scale analogy for global climate-vegetation relationships.",
@@ -337,11 +330,9 @@
         "Oversimplifying producer countries as uniformly poor without showing their economic complexity",
         "Focusing only on the product journey without connecting to the broader statutory requirement on settlement, land use, and resources"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Calculating prices, profits, and shares along a supply chain; reading trade data",
-        "[Science] Where food and raw materials come from — growing conditions for cocoa, cotton, etc.",
-        "[PSHE] Fairness, global citizenship, and making ethical consumer choices",
-        "[DT] Food provenance — where ingredients come from and how they are processed"
+      "cross_curricular_links": [
+        {"target_id": "SE-KS2-002", "hook": "Where food and raw materials come from — growing conditions for cocoa, cotton, etc.", "strength": "moderate"},
+        {"target_id": "TS-DT-KS2-005", "hook": "Food provenance — where ingredients come from and how they are processed", "strength": "moderate"}
       ],
       "sensitive_content_notes": [
         "Global inequality — avoid deficit framing of producer countries; show economic agency and complexity"
@@ -397,11 +388,9 @@
         "Treating fieldwork as a single annual event rather than an embedded practice across the year",
         "Focusing only on data collection without teaching pupils to analyse, present, and draw conclusions from their data"
       ],
-      "cross_curricular_hooks": [
-        "[Maths] Grid references as coordinates, scale calculations, compass bearings, data presentation in graphs and charts",
-        "[Science] Scientific enquiry methods — observation, measurement, recording, and conclusion",
-        "[Computing] Using digital mapping tools, tablets for data collection, spreadsheets for data presentation",
-        "[English] Writing structured fieldwork reports"
+      "cross_curricular_links": [
+        {"target_id": "TS-CO-KS2-005", "hook": "Using digital mapping tools, tablets for data collection, spreadsheets for data presentation", "strength": "moderate"},
+        {"target_id": "EU-EN-Y3-002", "hook": "Writing structured fieldwork reports", "strength": "moderate"}
       ],
       "sensitive_content_notes": null,
       "fieldwork_potential": "This is the fieldwork study itself. Pupils conduct geographical enquiry in the local area: environmental quality surveys, traffic counts, land use mapping, river measurements, or microclimate investigations using sketch maps, tally charts, and digital technologies.",

@@ -71,6 +71,7 @@ RELATIONSHIP_FIELDS = {
     "locations", "uses_enquiry_type", "surfaces_misconception", "progresses_to",
     "grammar_sequence_after", "text_complexity_after",
     "source_concepts", "develops_skill", "prerequisite_misconception_ids",
+    "cross_curricular_hooks", "cross_curricular_links",
     # Wrapper metadata fields (not node properties)
     "genre_progressions", "genre_affinities",
     # File-level metadata keys
@@ -105,6 +106,7 @@ class SubjectOntologyImporter:
             "genre_affinities": 0,
             "concept_link": 0,
             "develops_skill": 0,
+            "cross_curricular": 0,
             "errors": [],
         }
 
@@ -505,7 +507,8 @@ class SubjectOntologyImporter:
 
     # ─── Maths relationships ─────────────────────────────────────────────────
 
-    def _create_maths_rels(self, session, manipulatives, representations):
+    def _create_maths_rels(self, session, manipulatives, representations,
+                           contexts, reasoning_types):
         """Create Maths-specific relationships (source_concepts -> Concept)."""
         for item in manipulatives:
             mid = item.get("manipulative_id")
@@ -530,6 +533,69 @@ class SubjectOntologyImporter:
                     MERGE (mr)-[:USED_FOR_CONCEPT]->(c)
                 """, rid=rid, cid=cid)
                 self.stats["concept_link"] += 1
+
+        for item in contexts:
+            cxid = item.get("context_id")
+            if not cxid:
+                continue
+            for cid in (item.get("source_concepts") or []):
+                session.run("""
+                    MATCH (mc:MathsContext {context_id: $cxid})
+                    MATCH (c:Concept {concept_id: $cid})
+                    MERGE (mc)-[:USED_FOR_CONCEPT]->(c)
+                """, cxid=cxid, cid=cid)
+                self.stats["concept_link"] += 1
+
+        for item in reasoning_types:
+            ptid = item.get("prompt_type_id")
+            if not ptid:
+                continue
+            for cid in (item.get("source_concepts") or []):
+                session.run("""
+                    MATCH (rpt:ReasoningPromptType {prompt_type_id: $ptid})
+                    MATCH (c:Concept {concept_id: $cid})
+                    MERGE (rpt)-[:USED_FOR_CONCEPT]->(c)
+                """, ptid=ptid, cid=cid)
+                self.stats["concept_link"] += 1
+
+    # ─── Cross-curricular relationships ─────────────────────────────────────
+
+    def _create_cross_curricular_rels(self, session, study_data):
+        """Create CROSS_CURRICULAR relationships from cross_curricular_links."""
+        # Build lookup: node_id -> (label, id_field)
+        id_to_label = {}
+        for label, _subdir, id_field, _array_key in STUDY_NODES:
+            for item in study_data.get(label, []):
+                nid = item.get(id_field)
+                if nid:
+                    id_to_label[nid] = (label, id_field)
+
+        for label, _subdir, id_field, _array_key in STUDY_NODES:
+            for item in study_data.get(label, []):
+                source_id = item.get(id_field)
+                if not source_id:
+                    continue
+                for link in (item.get("cross_curricular_links") or []):
+                    target_id = link.get("target_id")
+                    hook = link.get("hook", "")
+                    strength = link.get("strength", "moderate")
+                    if not target_id:
+                        continue
+                    target_info = id_to_label.get(target_id)
+                    if not target_info:
+                        self.stats["errors"].append(
+                            f"CROSS_CURRICULAR: target {target_id} not found "
+                            f"(from {source_id})")
+                        continue
+                    target_label, target_id_field = target_info
+                    session.run(f"""
+                        MATCH (a:{label} {{{id_field}: $source_id}})
+                        MATCH (b:{target_label} {{{target_id_field}: $target_id}})
+                        MERGE (a)-[r:CROSS_CURRICULAR]->(b)
+                        SET r.hook = $hook, r.strength = $strength
+                    """, source_id=source_id, target_id=target_id,
+                        hook=hook, strength=strength)
+                    self.stats["cross_curricular"] += 1
 
     # ─── Clear ────────────────────────────────────────────────────────────────
 
@@ -627,7 +693,13 @@ class SubjectOntologyImporter:
                 session,
                 ref_data.get("MathsManipulative", []),
                 ref_data.get("MathsRepresentation", []),
+                ref_data.get("MathsContext", []),
+                ref_data.get("ReasoningPromptType", []),
             )
+
+            # Cross-curricular links (study-to-study across subjects)
+            print("\n  Cross-curricular relationships:")
+            self._create_cross_curricular_rels(session, study_data)
 
         # ── Report ────────────────────────────────────────────────────────
         print(f"\n{'=' * 60}")
