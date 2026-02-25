@@ -326,7 +326,6 @@ class EYFSImporter:
                 SET d.domain_name       = $domain_name,
                     d.description       = $description,
                     d.curriculum_context= $curriculum_context,
-                    d.is_cross_cutting  = $is_cross_cutting,
                     d.structure_type    = $structure_type,
                     d.source_reference  = $source_reference,
                     d.display_category  = 'UK Curriculum',
@@ -340,7 +339,6 @@ class EYFSImporter:
                 domain_name=domain_name,
                 description=domain.get("description", ""),
                 curriculum_context=domain.get("curriculum_context", ""),
-                is_cross_cutting=domain.get("is_cross_cutting", False),
                 structure_type=_normalize_structure_type(domain.get("structure_type", "hierarchical")),
                 source_reference=f"EYFS Statutory Framework 2024 — {subject_name}: {domain_name}",
             )
@@ -396,9 +394,7 @@ class EYFSImporter:
                     c.key_vocabulary       = $key_vocabulary,
                     c.common_misconceptions= $common_misconceptions,
                     c.concept_type         = $concept_type,
-                    c.is_cross_cutting     = $is_cross_cutting,
                     c.teaching_weight      = $teaching_weight,
-                    c.co_teach_hints       = $co_teach_hints,
                     c.source_reference     = $source_reference,
                     c.display_category     = 'UK Curriculum',
                     c.display_color        = '#D97706',
@@ -412,9 +408,7 @@ class EYFSImporter:
                 key_vocabulary=concept.get("key_vocabulary", ""),
                 common_misconceptions=concept.get("common_misconceptions", ""),
                 concept_type=concept_type,
-                is_cross_cutting=concept.get("is_cross_cutting", False),
                 teaching_weight=concept.get("teaching_weight", 1),
-                co_teach_hints=concept.get("co_teach_hints", []),
                 source_reference=f"EYFS Statutory Framework 2024 — {subject_name}",
             )
             self.stats["concepts"] += 1

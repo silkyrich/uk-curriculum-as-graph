@@ -72,6 +72,8 @@ RELATIONSHIP_FIELDS = {
     "grammar_sequence_after", "text_complexity_after",
     "source_concepts", "develops_skill", "prerequisite_misconception_ids",
     "cross_curricular_hooks", "cross_curricular_links",
+    # Display properties are set centrally by apply_formatting.py — skip during import
+    "display_category", "display_color", "display_icon", "display_size",
     # Wrapper metadata fields (not node properties)
     "genre_progressions", "genre_affinities",
     # File-level metadata keys

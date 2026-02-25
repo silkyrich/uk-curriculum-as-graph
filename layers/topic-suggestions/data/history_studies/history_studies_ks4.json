@@ -1,0 +1,749 @@
+{
+  "version": "1.0",
+  "subject": "History",
+  "key_stage": "KS4",
+  "authored_by": "humanities-ks4-teacher",
+  "authored_date": "2026-02-25",
+  "note": "KS4 HistoryStudy nodes following GCSE History subject content (DfE 2014). GCSE structure: one thematic study (spanning 500+ years), one British depth study, one period study, one wider world depth study, plus the historic environment study linked to the thematic study. All are exemplar (exam-board-specific choices exist). Cross-cutting second-order concepts (D006) are woven into every study via delivers_via.",
+  "studies": [
+    {
+      "study_id": "HS-KS4-001",
+      "name": "Crime and Punishment in Britain c1000-present",
+      "study_type": "thematic_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks4_thematic",
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a thematic study that covers at least 500 years'",
+        "DfE GCSE History subject content 2014: 'drawing examples from across all three eras: medieval, early modern, and modern'"
+      ],
+      "period": "c1000 - present",
+      "period_start_year": 1000,
+      "period_end_year": 2025,
+      "significance_claim": "Crime and punishment reveals how society's deepest values about justice, authority and individual rights have evolved over a millennium, from trial by ordeal to the modern criminal justice system.",
+      "pedagogical_rationale": "Crime and punishment is the most widely chosen GCSE thematic study because it offers a clear through-line across 1,000 years while touching on every aspect of social, political and legal change. The contrast between medieval and modern attitudes to punishment (public execution vs rehabilitation) is inherently engaging and supports sophisticated analysis of change and continuity. The thematic structure demands a qualitatively different kind of historical thinking from period studies: pattern recognition across centuries rather than depth in a single era.",
+      "enquiry_questions": [
+        "Has punishment become more humane over time, or just different?",
+        "Why have definitions of crime changed so dramatically since 1000?",
+        "Was the abolition of the death penalty a turning point, or one step in a longer process?",
+        "How far has the role of the state in law enforcement changed since medieval times?"
+      ],
+      "key_figures": ["Henry II", "Robert Peel", "Elizabeth Fry", "Jack the Ripper (case)", "Derek Bentley (case)"],
+      "comparison_pairs": [
+        {"a": "Medieval trial by ordeal", "b": "Modern jury trial", "dimension": "attitudes to justice and evidence"},
+        {"a": "18th-century Bloody Code", "b": "20th-century rehabilitation focus", "dimension": "purpose of punishment"}
+      ],
+      "key_events": ["Introduction of common law (Henry II)", "Witchcraft Acts 1563-1736", "Bloody Code c1688-1823", "Metropolitan Police 1829", "Abolition of death penalty 1965"],
+      "perspectives": ["medieval villager", "18th-century highway robber", "Victorian prison reformer", "20th-century police officer", "crime victim"],
+      "interpretations": [
+        "Whether punishment has become genuinely more humane or simply less visible is a contested historical and sociological argument",
+        "Historians disagree about whether the Bloody Code was genuinely intended to deter crime or served primarily to protect property owners"
+      ],
+      "source_types": ["primary_legal", "primary_visual", "primary_written", "primary_statistical"],
+      "definitions": ["common law", "trial by ordeal", "Bloody Code", "transportation", "Metropolitan Police", "capital punishment", "rehabilitation", "conscientious objector"],
+      "common_pitfalls": [
+        "Presenting the history of punishment as a simple progress narrative from cruelty to enlightenment, when the reality includes periods of regression",
+        "Treating the thematic study as a series of separate period snapshots rather than analysing genuine patterns of change across the full sweep",
+        "Spending too long on medieval content and rushing the modern period, which carries the most marks at GCSE"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "EU-ENL-KS4-003", "hook": "Persuasive writing and rhetorical analysis of courtroom speeches and campaign texts (e.g. Elizabeth Fry's arguments for prison reform)", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Graphic descriptions of historical punishment methods (hanging, burning, flogging) — teach analytically rather than sensationally",
+        "The Witchcraft Acts disproportionately targeted women — discuss within the context of gender, power and scapegoating",
+        "Derek Bentley case involves execution of a teenager — handle with sensitivity around age and justice"
+      ],
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 30,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 1, "ks_guidance": "At KS4, the thematic study IS a change-and-continuity exercise. Pupils must identify patterns across 1,000 years: acceleration, turning points, regression, and stubborn continuities. Construct analytical narratives, not chronological lists."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 2, "ks_guidance": "At KS4, explain WHY attitudes changed at specific moments (e.g. urbanisation driving the creation of police forces). Multi-factor causal analysis connecting political, social, economic and technological causes."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS4, evaluate which changes were genuine turning points vs incremental shifts. Was the abolition of the death penalty the most significant change in the history of punishment?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS4, evaluate historical sources for provenance and purpose. Compare how historians have interpreted the same evidence differently (e.g. contrasting views of the Bloody Code's effectiveness)."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C007", "primary": true},
+        {"concept_id": "HI-KS4-C001", "primary": false},
+        {"concept_id": "HI-KS4-C003", "primary": false},
+        {"concept_id": "HI-KS4-C004", "primary": false},
+        {"concept_id": "HI-KS4-C005", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS4-D001", "HI-KS4-D006"],
+      "chronologically_follows": "HS-KS3-005",
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS4-002", "theme": "Both thematic studies tracing 500+ year arcs of change"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS4-002",
+      "name": "Medicine in Britain c1250-present",
+      "study_type": "thematic_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks4_thematic",
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a thematic study that covers at least 500 years'",
+        "DfE GCSE History subject content 2014: 'drawing examples from across all three eras: medieval, early modern, and modern'"
+      ],
+      "period": "c1250 - present",
+      "period_start_year": 1250,
+      "period_end_year": 2025,
+      "significance_claim": "The history of medicine reveals how scientific understanding, technology, government policy and individual brilliance interact to transform human health outcomes — and how progress can stall for centuries when conditions are unfavourable.",
+      "pedagogical_rationale": "Medicine in Britain is the second most popular GCSE thematic study. It combines intellectual history (ideas about disease causation), social history (public health provision), and biography (key individuals like Jenner, Nightingale, Fleming). The dramatic contrast between medieval humoralism and modern germ theory provides a compelling through-line for change and continuity analysis.",
+      "enquiry_questions": [
+        "Why did medical progress stall between 1250 and 1700?",
+        "Was germ theory the most important turning point in the history of medicine?",
+        "How far was progress in medicine driven by individuals rather than broader factors?",
+        "Why did it take so long for governments to accept responsibility for public health?"
+      ],
+      "key_figures": ["Hippocrates", "Galen", "Vesalius", "Harvey", "Jenner", "Pasteur", "Koch", "Fleming", "Nightingale", "Chadwick", "Beveridge"],
+      "comparison_pairs": [
+        {"a": "Medieval humoral theory", "b": "19th-century germ theory", "dimension": "understanding of disease causation"},
+        {"a": "1348 Black Death response", "b": "2020 COVID-19 response", "dimension": "government public health intervention"}
+      ],
+      "key_events": ["Black Death 1348", "Vesalius publishes anatomy 1543", "Harvey's circulation theory 1628", "Jenner's vaccination 1796", "Pasteur's germ theory 1861", "NHS established 1948"],
+      "perspectives": ["medieval physician", "Renaissance anatomist", "Victorian public health reformer", "WW1 field surgeon", "NHS patient"],
+      "interpretations": [
+        "Whether the Renaissance represented genuine medical progress or just a return to classical methods remains debated",
+        "Historians disagree about the relative importance of individuals (e.g. Fleming) versus broader factors (e.g. government funding, war) in driving medical breakthroughs"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_scientific", "primary_statistical"],
+      "definitions": ["humoral theory", "miasma", "germ theory", "vaccination", "anaesthetic", "antiseptic", "public health", "NHS", "epidemic", "quarantine"],
+      "common_pitfalls": [
+        "Presenting medical history as a simple march from ignorance to enlightenment, ignoring periods of stagnation and the rationality of humoralism within its own knowledge framework",
+        "Over-emphasising individual genius at the expense of broader factors (war, technology, government, chance)",
+        "Rushing the medieval period to spend more time on modern medicine, when the exam requires balanced coverage of all three eras"
+      ],
+      "cross_curricular_links": [],
+      "sensitive_content_notes": [
+        "Descriptions of surgical procedures without anaesthesia — present analytically, not graphically",
+        "The Black Death involved mass death — contextualise historically",
+        "Some pupils may have personal connections to NHS treatment or medical conditions — handle with empathy"
+      ],
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 30,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 1, "ks_guidance": "At KS4, analyse WHY medical progress was faster in some periods than others. Identify the conditions (war, printing, government intervention) that accelerated or inhibited change."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 2, "ks_guidance": "At KS4, for each breakthrough (vaccination, germ theory, penicillin), analyse the multiple factors that made it possible: individuals, science, technology, war, chance, and government."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS4, evaluate turning points: was germ theory more significant than the NHS? Use criteria (scale of impact, duration, number affected) to construct argued evaluations."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS4, evaluate medical sources (e.g. medieval medical texts, Victorian public health reports) for provenance and utility. Analyse why historians disagree about the significance of individuals vs broader factors."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C008", "primary": true},
+        {"concept_id": "HI-KS4-C001", "primary": false},
+        {"concept_id": "HI-KS4-C003", "primary": false},
+        {"concept_id": "HI-KS4-C004", "primary": false},
+        {"concept_id": "HI-KS4-C006", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS4-D001", "HI-KS4-D006"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS4-001", "theme": "Both thematic studies tracing 500+ year arcs of change"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS4-003",
+      "name": "Migrants in Britain c800-present",
+      "study_type": "thematic_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks4_thematic",
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a thematic study that covers at least 500 years'",
+        "DfE GCSE History subject content 2014: 'drawing examples from across all three eras: medieval, early modern, and modern'"
+      ],
+      "period": "c800 - present",
+      "period_start_year": 800,
+      "period_end_year": 2025,
+      "significance_claim": "The history of migration reveals that Britain has always been shaped by the movement of peoples — and that attitudes towards migrants have oscillated between welcome and hostility in patterns that illuminate contemporary debates.",
+      "pedagogical_rationale": "Migration is the most recently developed GCSE thematic study option and the only one to place diversity and identity at the centre of a long-sweep historical narrative. It challenges the notion that immigration is a modern phenomenon and enables pupils to trace continuities in migrant experience across 1,200 years while analysing why attitudes have shifted.",
+      "enquiry_questions": [
+        "Has Britain always been a nation of immigrants?",
+        "Why have attitudes towards migrants shifted between welcome and hostility across 1,200 years?",
+        "How far have the experiences of migrants in Britain been shaped by their country of origin?",
+        "Is the story of migration in Britain one of integration, assimilation, or ongoing difference?"
+      ],
+      "key_figures": ["Viking settlers", "Huguenots", "Irish diaspora", "Windrush generation", "Ugandan Asian refugees"],
+      "comparison_pairs": [
+        {"a": "Viking settlement (9th-10th century)", "b": "Windrush migration (1948-1971)", "dimension": "reasons for migration, reception, and long-term integration"},
+        {"a": "Huguenot refugees (17th century)", "b": "Ugandan Asian refugees (1972)", "dimension": "forced migration, economic contribution, and identity"}
+      ],
+      "key_events": ["Viking settlement from c800", "Jewish expulsion 1290", "Huguenot arrival post-1685", "Irish famine migration 1840s", "Windrush 1948", "Ugandan Asian arrival 1972", "EU free movement 2004"],
+      "perspectives": ["Viking settler", "medieval Jewish merchant", "Huguenot refugee", "Irish labourer", "Windrush passenger", "local community receiving migrants"],
+      "interpretations": [
+        "Whether the Viking settlements represented invasion or integration remains a significant historiographical question",
+        "Historians debate whether post-war migration to Britain was driven primarily by economic pull factors or by colonial push factors"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_oral", "primary_legal"],
+      "definitions": ["emigration", "immigration", "diaspora", "assimilation", "integration", "push-pull factors", "refugee", "asylum", "Windrush generation", "Commonwealth"],
+      "common_pitfalls": [
+        "Treating migration as only a modern phenomenon rather than a constant feature of British history",
+        "Oversimplifying migrant experiences as uniformly negative or positive — emphasise diversity of experience",
+        "Allowing the study to become a list of migrant groups rather than analysing patterns and themes across the full period"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "EU-ELT-KS4-006", "hook": "Poetry exploring identity, belonging and displacement (Power and Conflict anthology)", "strength": "moderate"},
+        {"target_id": "GS-GE-KS4-007", "hook": "Push-pull factors of migration; globalisation and movement of people", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Migration is a politically sensitive topic — present historical evidence and analysis rather than contemporary political opinion",
+        "Racism and discrimination are part of this history and must be addressed honestly but sensitively",
+        "Pupils of migrant heritage may have strong personal connections — create space for their knowledge while maintaining analytical distance",
+        "Avoid reducing any migrant community to a single narrative"
+      ],
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 30,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 1, "ks_guidance": "At KS4, identify what has stayed constant about the migrant experience across 1,200 years and what has changed. Analyse why attitudes towards migrants shift cyclically."},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 2, "ks_guidance": "At KS4, compare migrant experiences across periods using consistent criteria: reasons for migration, reception, economic contribution, cultural integration, long-term impact."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS4, evaluate the significance of specific migration events (e.g. Windrush): was it a turning point in British society, or one moment in a longer process?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS4, analyse primary sources from migrant communities (oral testimony, letters, legal records) and evaluate how historians have interpreted migration differently."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C015", "primary": true},
+        {"concept_id": "HI-KS4-C003", "primary": false},
+        {"concept_id": "HI-KS4-C004", "primary": false},
+        {"concept_id": "HI-KS4-C013", "primary": false},
+        {"concept_id": "HI-KS4-C006", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS4-D001", "HI-KS4-D006"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS4-001", "theme": "Migration intersects with changing definitions of crime and the experience of migrant communities with the criminal justice system"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS4-004",
+      "name": "The Historic Environment",
+      "study_type": "site_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "mandatory",
+      "choice_group": null,
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a study of the historic environment'",
+        "DfE GCSE History subject content 2014: 'the relationship of the site to its historical context'"
+      ],
+      "period": "Varies by site",
+      "period_start_year": null,
+      "period_end_year": null,
+      "significance_claim": "The historic environment study connects abstract historical knowledge to physical evidence, demonstrating that history is not just written texts but survives in landscapes, buildings and archaeological sites that can be visited and interrogated.",
+      "pedagogical_rationale": "The historic environment is a mandatory component of GCSE History that links the thematic study to a specific physical site. It develops pupils' ability to use physical evidence (buildings, landscapes, artefacts) as historical sources and to connect site-level evidence to broader historical themes. The site changes annually (set by exam boards), ensuring fresh engagement.",
+      "enquiry_questions": [
+        "What does this site tell us about the historical period it belongs to?",
+        "How does the physical evidence at this site support or challenge what we know from written sources?",
+        "Why was this site significant to the people who used it?",
+        "How has the site changed over time, and what does that tell us about changing attitudes?"
+      ],
+      "key_figures": [],
+      "comparison_pairs": null,
+      "key_events": [],
+      "perspectives": ["site user at the time", "archaeologist", "heritage manager", "modern visitor"],
+      "interpretations": [
+        "How historians and archaeologists construct knowledge from physical evidence, and why they may disagree about what a site reveals",
+        "The relationship between physical evidence and documentary evidence — when they corroborate, contradict or complement each other"
+      ],
+      "source_types": ["primary_archaeological", "built_heritage", "primary_visual", "primary_cartographic"],
+      "definitions": ["historic environment", "site", "provenance", "archaeological evidence", "reconstruction", "heritage", "conservation", "listed building"],
+      "common_pitfalls": [
+        "Treating the historic environment as a bolt-on rather than integrating it with the thematic study",
+        "Focusing only on describing the site rather than analysing what it reveals about the historical context",
+        "Neglecting to teach pupils how to use physical evidence AS a historical source (provenance, reliability, utility)"
+      ],
+      "cross_curricular_links": [],
+      "sensitive_content_notes": null,
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 6,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 1, "ks_guidance": "At KS4, the historic environment IS an extended evidence-and-interpretation exercise. Pupils must evaluate physical evidence for provenance, reliability and utility, then connect it to broader historical interpretations."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS4, analyse how the site changed over time — what was built, modified, destroyed, preserved — and what those changes reveal about shifting attitudes and priorities."},
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 3, "ks_guidance": "At KS4, explain WHY the site was created, WHY it was significant to the people who used it, and WHAT consequences its existence had for the surrounding community."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C012", "primary": true},
+        {"concept_id": "HI-KS4-C005", "primary": false},
+        {"concept_id": "HI-KS4-C006", "primary": false},
+        {"concept_id": "HI-KS4-C003", "primary": false},
+        {"concept_id": "HI-KS4-C001", "primary": false}
+      ],
+      "uses_template": ["VT-15"],
+      "domain_ids": ["HI-KS4-D005", "HI-KS4-D006"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS4-001", "theme": "The historic environment site is linked to the thematic study, connecting physical evidence to long-sweep themes"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS4-005",
+      "name": "Early Elizabethan England 1558-1588",
+      "study_type": "british_depth_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks4_british_depth",
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a British depth study'",
+        "DfE GCSE History subject content 2014: 'at least one depth study that covers at least a quarter of a century'"
+      ],
+      "period": "1558 - 1588",
+      "period_start_year": 1558,
+      "period_end_year": 1588,
+      "significance_claim": "The first thirty years of Elizabeth's reign established England as a Protestant nation, navigated the most dangerous religious and political tensions of the age, and laid the foundations for England's emergence as a significant European power.",
+      "pedagogical_rationale": "Early Elizabethan England is the most widely studied British depth study at GCSE. The 30-year period is tightly focused, enabling genuine depth rather than breadth. The interplay between religion, politics, foreign policy and social change creates rich opportunities for multi-causal analysis. The Armada provides a dramatic climactic event.",
+      "enquiry_questions": [
+        "How successfully did Elizabeth manage the religious settlement?",
+        "How serious were the threats to Elizabeth's rule, and how effectively did she deal with them?",
+        "Was Elizabethan England genuinely a 'Golden Age' for everyone?",
+        "Why was the defeat of the Spanish Armada significant?"
+      ],
+      "key_figures": ["Elizabeth I", "Mary Queen of Scots", "Philip II of Spain", "Francis Drake", "William Cecil", "Francis Walsingham"],
+      "comparison_pairs": [
+        {"a": "Catholic threat to Elizabeth", "b": "Puritan challenge to the settlement", "dimension": "nature of religious opposition from different directions"}
+      ],
+      "key_events": ["Elizabethan Religious Settlement 1559", "Northern Rebellion 1569", "Ridolfi Plot 1571", "Execution of Mary Queen of Scots 1587", "Defeat of Spanish Armada 1588"],
+      "perspectives": ["Elizabeth I", "Catholic recusant", "Puritan", "Spanish ambassador", "ordinary Elizabethan"],
+      "interpretations": [
+        "Whether Elizabeth's religious settlement was a genuine compromise or a Protestant victory dressed as moderation remains debated by historians",
+        "Historians disagree about the extent of the threat posed by Mary Queen of Scots and whether execution was justified or politically motivated"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_legal", "primary_diplomatic"],
+      "definitions": ["religious settlement", "recusant", "Privy Council", "excommunication", "plot", "succession", "Armada", "privateering", "propaganda"],
+      "common_pitfalls": [
+        "Presenting Elizabeth as a singular genius rather than analysing the political context and her advisors' contributions",
+        "Treating the Armada defeat as inevitable rather than analysing why Spain lost and the role of contingency",
+        "Accepting the 'Golden Age' framing uncritically when poverty, religious persecution and social inequality were widespread"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "EU-ELT-KS4-001", "hook": "Macbeth (written 1606) explores kingship, legitimacy and political violence in the immediate aftermath of the Elizabethan era", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [
+        "Religious persecution (of Catholics and Puritans) should be discussed with sensitivity and analytical distance",
+        "The execution of Mary Queen of Scots raises questions about justice, politics and gender — avoid sensationalism",
+        "Exploration and early colonisation involved violence against indigenous peoples — present from multiple perspectives"
+      ],
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 20,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS4, construct multi-causal explanations of Elizabethan events: why did the Armada fail? Consider political, religious, military, economic, and contingent factors. Evaluate relative importance."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 2, "ks_guidance": "At KS4, evaluate Elizabethan sources rigorously for provenance and purpose. Analyse propaganda (Armada Portrait, Ditchley Portrait) as deliberately constructed images of power."},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS4, evaluate the significance of the Armada defeat: was it a genuine turning point in European politics, or has its significance been inflated by English nationalism?"},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 4, "ks_guidance": "At KS4, compare Catholic and Puritan opposition to Elizabeth: how were their methods and motivations similar and different?"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C009", "primary": true},
+        {"concept_id": "HI-KS4-C001", "primary": false},
+        {"concept_id": "HI-KS4-C002", "primary": false},
+        {"concept_id": "HI-KS4-C005", "primary": false},
+        {"concept_id": "HI-KS4-C013", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-15"],
+      "domain_ids": ["HI-KS4-D002", "HI-KS4-D006"],
+      "chronologically_follows": "HS-KS3-003",
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-037"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS4-006",
+      "name": "Norman England 1066-1100",
+      "study_type": "british_depth_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks4_british_depth",
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a British depth study'",
+        "DfE GCSE History subject content 2014: 'at least one depth study that covers at least a quarter of a century'"
+      ],
+      "period": "1066 - 1100",
+      "period_start_year": 1066,
+      "period_end_year": 1100,
+      "significance_claim": "The Norman Conquest was the last successful invasion of England and transformed its governance, language, architecture and social structure in ways that remain visible nearly a thousand years later.",
+      "pedagogical_rationale": "Norman England is a tightly focused 34-year depth study that enables pupils to analyse the mechanics and consequences of conquest in exceptional detail. The Bayeux Tapestry and Domesday Book provide two of the most extraordinary primary sources in British history for source evaluation work. The study connects directly to the KS3 medieval Britain unit.",
+      "enquiry_questions": [
+        "How did William establish and maintain control over England after 1066?",
+        "Was the Norman Conquest a catastrophe or a modernisation for Anglo-Saxon England?",
+        "What does the Domesday Book reveal about Norman England?",
+        "How did the Normans transform English society, culture and governance?"
+      ],
+      "key_figures": ["William the Conqueror", "Harold Godwinson", "Odo of Bayeux", "Lanfranc", "Hereward the Wake"],
+      "comparison_pairs": [
+        {"a": "Anglo-Saxon England pre-1066", "b": "Norman England by 1100", "dimension": "governance, land ownership, church, language, and architecture"}
+      ],
+      "key_events": ["Battle of Hastings 1066", "Harrying of the North 1069-70", "Domesday Survey 1086", "Death of William I 1087", "Rebellion of 1075"],
+      "perspectives": ["Norman lord", "Anglo-Saxon thegn", "English peasant", "Norman monk", "Welsh or Scottish neighbour"],
+      "interpretations": [
+        "Whether the Norman Conquest represented a sharp break from Anglo-Saxon England or built on existing structures is a long-standing historiographical debate",
+        "Historians disagree about the Harrying of the North: military necessity or ethnic cleansing?"
+      ],
+      "source_types": ["primary_visual", "primary_administrative", "primary_legal", "built_heritage"],
+      "definitions": ["feudalism", "Domesday Book", "motte-and-bailey", "Harrying of the North", "Marcher lord", "tenant-in-chief", "vassal", "homage", "Forest Law"],
+      "common_pitfalls": [
+        "Presenting the Norman Conquest as simply a change of ruler rather than analysing the systemic transformation of English society",
+        "Treating the Bayeux Tapestry as an objective record rather than a piece of Norman propaganda",
+        "Focusing exclusively on 1066 and neglecting the processes of consolidation that took decades"
+      ],
+      "cross_curricular_links": [],
+      "sensitive_content_notes": [
+        "The Harrying of the North involved mass destruction and famine — discuss as a historical atrocity with analytical distance",
+        "Feudalism involved extreme social hierarchy and subjugation — discuss within historical context"
+      ],
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 20,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS4, analyse the multiple consequences of the Norman Conquest across different domains (political, social, economic, cultural, religious). Distinguish intended from unintended consequences."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS4, evaluate the extent of transformation: was Norman England fundamentally different from Anglo-Saxon England, or did significant continuities persist beneath the surface?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS4, evaluate the Bayeux Tapestry and Domesday Book as historical sources: provenance, purpose, reliability. What can they tell us, and what can't they tell us?"},
+        {"disciplinary_concept_slug": "significance", "rank": 4, "ks_guidance": "At KS4, evaluate the significance of the Norman Conquest: was it the most important event in English history? Apply significance criteria (scale, duration, number affected, commemorated)."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C014", "primary": true},
+        {"concept_id": "HI-KS4-C001", "primary": false},
+        {"concept_id": "HI-KS4-C002", "primary": false},
+        {"concept_id": "HI-KS4-C003", "primary": false},
+        {"concept_id": "HI-KS4-C005", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-15"],
+      "domain_ids": ["HI-KS4-D002", "HI-KS4-D006"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-033", "HSRC-035"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS4-007",
+      "name": "Weimar and Nazi Germany 1918-1939",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks4_period",
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a period study of at least 50 years'",
+        "DfE GCSE History subject content 2014: 'pupils should have the opportunity to study a period of European, American or wider world history'"
+      ],
+      "period": "1918 - 1939",
+      "period_start_year": 1918,
+      "period_end_year": 1939,
+      "significance_claim": "The collapse of Weimar democracy and the rise of Nazi totalitarianism is the paradigm case of how democracies can fail, with consequences so catastrophic that it remains the central case study for understanding authoritarianism, propaganda, and genocide.",
+      "pedagogical_rationale": "Weimar and Nazi Germany is the most studied GCSE period study. It combines political history (democracy, dictatorship), social history (life in Nazi Germany), and moral history (the Holocaust). The period demands rigorous multi-causal analysis of Hitler's rise while resisting simplistic 'great man' explanations. It connects directly to the mandatory KS3 Holocaust study.",
+      "enquiry_questions": [
+        "Why did the Weimar Republic fail?",
+        "Was Hitler's rise to power inevitable, or the result of specific political mistakes?",
+        "How did the Nazis control German society after 1933?",
+        "How far did ordinary Germans support or resist Nazi rule?"
+      ],
+      "key_figures": ["Friedrich Ebert", "Gustav Stresemann", "Adolf Hitler", "Joseph Goebbels", "Heinrich Himmler", "Martin Niemöller"],
+      "comparison_pairs": [
+        {"a": "Weimar cultural freedom (1920s)", "b": "Nazi cultural control (1930s)", "dimension": "freedom of expression and state control of culture"}
+      ],
+      "key_events": ["Treaty of Versailles 1919", "Hyperinflation 1923", "Stresemann era 1924-1929", "Wall Street Crash 1929", "Hitler appointed Chancellor 1933", "Enabling Act 1933", "Night of Long Knives 1934", "Nuremberg Laws 1935", "Kristallnacht 1938"],
+      "perspectives": ["Weimar democrat", "Nazi supporter", "Jewish German citizen", "Hitler Youth member", "passive bystander", "active resister"],
+      "interpretations": [
+        "Whether Hitler's rise was primarily due to economic crisis or to deep-seated weaknesses in German democratic culture remains the central historiographical debate",
+        "Historians continue to debate the extent of ordinary German complicity in Nazi atrocities (Goldhagen vs Browning debate)"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_propaganda", "primary_legal", "testimony"],
+      "definitions": ["Weimar Republic", "proportional representation", "hyperinflation", "putsch", "Enabling Act", "Gleichschaltung", "propaganda", "Gestapo", "concentration camp", "Kristallnacht", "Aryan", "Nuremberg Laws"],
+      "common_pitfalls": [
+        "Presenting Hitler's rise as inevitable rather than contingent — emphasise the specific political decisions and accidents that enabled it",
+        "Treating Nazi Germany as an aberration unconnected to broader European history rather than analysing the conditions that allowed fascism to flourish",
+        "Reducing German society under Nazism to a binary of 'supporters vs resisters' when most people occupied complex middle ground"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "EU-ELT-KS4-004", "hook": "An Inspector Calls explores class, responsibility and social justice — themes that resonate with Weimar social inequality and the failure of collective responsibility", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "The Holocaust is integral to this study — handle with the utmost sensitivity and historical seriousness",
+        "Antisemitism must be addressed explicitly and honestly — it is not a peripheral detail but central to Nazi ideology",
+        "Avoid using Nazi propaganda images without critical analysis of their purpose and intended audience",
+        "Some pupils may have family connections to the Holocaust or to refugee communities — create a safe classroom environment",
+        "The concept of bystander complicity can be distressing — handle with nuance and historical context"
+      ],
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 24,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS4, construct multi-causal arguments: why did the Weimar Republic fail? Weigh long-term (Treaty of Versailles, constitutional weaknesses), medium-term (economic crises), and short-term (political miscalculations) causes."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 2, "ks_guidance": "At KS4, evaluate Nazi propaganda as historical sources: what can they tell us about Nazi methods of control? Analyse the Goldhagen vs Browning debate about ordinary Germans' complicity."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 3, "ks_guidance": "At KS4, analyse the transformation of German society 1918-1939: how completely did the Nazis reshape everyday life? What continuities persisted beneath the surface of totalitarian control?"},
+        {"disciplinary_concept_slug": "significance", "rank": 4, "ks_guidance": "At KS4, evaluate key turning points: was the Enabling Act more significant than the Night of Long Knives? Was 1933 inevitable after 1929?"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C010", "primary": true},
+        {"concept_id": "HI-KS4-C001", "primary": false},
+        {"concept_id": "HI-KS4-C002", "primary": false},
+        {"concept_id": "HI-KS4-C004", "primary": false},
+        {"concept_id": "HI-KS4-C006", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS4-D003", "HI-KS4-D006"],
+      "chronologically_follows": "HS-KS3-005",
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS4-009", "theme": "The Cold War emerged directly from the consequences of WW2 and the collapse of Nazi Germany"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": ["HSRC-039", "HSRC-040"],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS4-008",
+      "name": "The American West c1835-c1895",
+      "study_type": "period_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks4_period",
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a period study of at least 50 years'",
+        "DfE GCSE History subject content 2014: 'pupils should have the opportunity to study a period of European, American or wider world history'"
+      ],
+      "period": "c1835 - c1895",
+      "period_start_year": 1835,
+      "period_end_year": 1895,
+      "significance_claim": "The transformation of the American West from indigenous homelands to settled agricultural and industrial territory within 60 years represents one of the most dramatic and contested episodes of colonialism, environmental transformation and cultural conflict in modern history.",
+      "pedagogical_rationale": "The American West challenges pupils to move beyond Hollywood stereotypes and engage with the complex reality of westward expansion: the destruction of Native American societies, the motivations of diverse migrant groups, and the role of the US government in shaping the West. The study develops pupils' ability to analyse competing perspectives and challenge popular myths.",
+      "enquiry_questions": [
+        "Why did settlers move west, and how did their motivations change over time?",
+        "Was the destruction of the Plains Indians' way of life inevitable?",
+        "How far was the 'Wild West' a myth created by popular culture?",
+        "What role did the US government play in shaping the American West?"
+      ],
+      "key_figures": ["Sitting Bull", "Crazy Horse", "George Custer", "William 'Buffalo Bill' Cody", "Joseph Smith", "Brigham Young"],
+      "comparison_pairs": [
+        {"a": "Plains Indian way of life", "b": "White settler way of life", "dimension": "attitudes to land, property, community and governance"}
+      ],
+      "key_events": ["Oregon Trail migration 1840s", "California Gold Rush 1848-49", "Homestead Act 1862", "Transcontinental Railroad 1869", "Battle of Little Bighorn 1876", "Wounded Knee Massacre 1890"],
+      "perspectives": ["Plains Indian chief", "white settler family", "US cavalry officer", "Mormon migrant", "Chinese railroad worker", "Buffalo hunter"],
+      "interpretations": [
+        "Whether westward expansion should be framed as 'progress' or 'colonialism' remains a fundamental interpretive question",
+        "Historians have increasingly challenged the 'frontier thesis' (Frederick Jackson Turner) that presented expansion as the defining American experience, arguing it erases indigenous perspectives"
+      ],
+      "source_types": ["primary_visual", "primary_written", "primary_oral", "primary_cartographic"],
+      "definitions": ["manifest destiny", "homesteader", "reservation", "transcontinental railroad", "Gold Rush", "Plains Indians", "tipi", "buffalo", "frontier", "vigilante"],
+      "common_pitfalls": [
+        "Reproducing Hollywood stereotypes of Native Americans rather than presenting their societies as complex, sophisticated and diverse",
+        "Framing westward expansion purely from the settlers' perspective without centring indigenous experiences of displacement and destruction",
+        "Treating the American West as a single period when motivations and conditions changed significantly between the 1830s and 1890s"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS4-007", "hook": "Push-pull factors of migration; the role of natural resources in economic development and inequality", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "The destruction of Native American societies involves genocide, forced removal and cultural erasure — present with historical seriousness and sensitivity",
+        "Wounded Knee (1890) was a massacre of unarmed people including women and children — handle with care",
+        "Avoid romanticising either settler or indigenous cultures — present both with analytical nuance",
+        "Some pupils may have Native American heritage or connections — create space for their knowledge and perspectives"
+      ],
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 24,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS4, analyse the multiple causes of westward expansion (economic, religious, political, technological) and the devastating consequences for Plains Indian societies."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS4, trace how the West changed between 1835 and 1895: from indigenous homeland to settler territory. What drove the pace of change, and what attempts were made to resist it?"},
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 3, "ks_guidance": "At KS4, compare Plains Indian and white settler cultures using consistent criteria (land use, governance, religion, economy). Analyse the fundamental differences that made coexistence so difficult."},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS4, evaluate sources from multiple perspectives: settler diaries, government documents, indigenous oral testimony. Analyse how the 'frontier thesis' has been challenged by revisionist historians."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C011", "primary": true},
+        {"concept_id": "HI-KS4-C001", "primary": false},
+        {"concept_id": "HI-KS4-C002", "primary": false},
+        {"concept_id": "HI-KS4-C003", "primary": false},
+        {"concept_id": "HI-KS4-C013", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS4-D003", "HI-KS4-D006"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS4-009",
+      "name": "Superpower Relations and the Cold War 1941-1991",
+      "study_type": "world_depth_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks4_world_depth",
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a wider world depth study'",
+        "DfE GCSE History subject content 2014: 'focusing on at least 50 years'"
+      ],
+      "period": "1941 - 1991",
+      "period_start_year": 1941,
+      "period_end_year": 1991,
+      "significance_claim": "The Cold War shaped the second half of the 20th century, dividing the world into rival blocs, driving nuclear proliferation, and defining international relations in ways whose legacy continues to influence global politics today.",
+      "pedagogical_rationale": "The Cold War is the most popular wider world depth study at GCSE. The 50-year period enables analysis of how superpower relations evolved through distinct phases: origins, consolidation, crisis, detente, and collapse. The Cuban Missile Crisis provides one of the most compelling decision-making case studies in history, while the Berlin Wall and its fall are iconic symbols of the Cold War's human cost and eventual resolution.",
+      "enquiry_questions": [
+        "Why did the wartime alliance between the USA and USSR collapse into Cold War?",
+        "How close did the world come to nuclear war during the Cuban Missile Crisis?",
+        "Was the Cold War primarily an ideological conflict or a power struggle?",
+        "Why did the Soviet Union collapse, and was it inevitable?"
+      ],
+      "key_figures": ["Truman", "Stalin", "Khrushchev", "Kennedy", "Nixon", "Reagan", "Gorbachev"],
+      "comparison_pairs": [
+        {"a": "US capitalism/democracy", "b": "Soviet communism/one-party state", "dimension": "ideology, economic system, and individual freedoms"},
+        {"a": "Berlin Blockade 1948", "b": "Berlin Wall 1961", "dimension": "methods of superpower confrontation and their consequences for ordinary people"}
+      ],
+      "key_events": ["Yalta and Potsdam conferences 1945", "Truman Doctrine 1947", "Berlin Blockade 1948-49", "Korean War 1950-53", "Hungarian Uprising 1956", "Berlin Wall 1961", "Cuban Missile Crisis 1962", "Prague Spring 1968", "Detente 1970s", "Soviet invasion of Afghanistan 1979", "Fall of Berlin Wall 1989", "Collapse of USSR 1991"],
+      "perspectives": ["American president", "Soviet leader", "Eastern European citizen", "Western European ally", "Cuban citizen", "nuclear strategist"],
+      "interpretations": [
+        "Whether the Cold War was primarily caused by Soviet expansionism (orthodox view) or American overreaction (revisionist view) remains debated",
+        "Historians disagree about whether Gorbachev's reforms were a brave attempt to save communism or an inevitable response to systemic failure"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_diplomatic", "primary_propaganda"],
+      "definitions": ["superpower", "Cold War", "iron curtain", "containment", "Truman Doctrine", "Marshall Plan", "NATO", "Warsaw Pact", "MAD (Mutually Assured Destruction)", "detente", "glasnost", "perestroika"],
+      "common_pitfalls": [
+        "Presenting the Cold War as a simple US vs USSR binary when many other nations were drawn into the conflict",
+        "Treating the Cold War as a series of disconnected crises rather than analysing the evolving relationship between the superpowers",
+        "Accepting one-sided narratives (either pro-American or pro-Soviet) rather than analysing both sides' motivations and actions"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS4-007", "hook": "Cold War economic systems shaped global development patterns; decolonisation and the development gap", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Nuclear weapons and the threat of global annihilation can be anxiety-inducing for young people — frame with analysis and context",
+        "The Korean and Vietnam Wars involved significant civilian casualties — handle with sensitivity",
+        "Pupils from Eastern European backgrounds may have family experiences of Soviet-era repression"
+      ],
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 24,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "cause_and_consequence", "rank": 1, "ks_guidance": "At KS4, analyse the origins of the Cold War using multi-causal reasoning: ideology, mutual suspicion, the power vacuum after WW2, and the role of individuals. For each crisis, distinguish causes from triggers."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 2, "ks_guidance": "At KS4, trace how superpower relations evolved through distinct phases: origins, consolidation, crisis, detente, and collapse. What changed between phases, and what remained constant?"},
+        {"disciplinary_concept_slug": "significance", "rank": 3, "ks_guidance": "At KS4, evaluate turning points: was the Cuban Missile Crisis more significant than the building of the Berlin Wall? Was detente a genuine shift or a temporary pause?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 4, "ks_guidance": "At KS4, analyse Cold War propaganda from both sides for provenance and purpose. Evaluate the orthodox vs revisionist debate about Cold War origins."}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C017", "primary": true},
+        {"concept_id": "HI-KS4-C001", "primary": false},
+        {"concept_id": "HI-KS4-C002", "primary": false},
+        {"concept_id": "HI-KS4-C004", "primary": false},
+        {"concept_id": "HI-KS4-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS4-D004", "HI-KS4-D006"],
+      "chronologically_follows": "HS-KS3-005",
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS4-007", "theme": "The Cold War emerged directly from the consequences of WW2 and the collapse of Nazi Germany"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    },
+    {
+      "study_id": "HS-KS4-010",
+      "name": "Non-European Societies and Global Perspectives",
+      "study_type": "world_depth_study",
+      "subject": "History",
+      "key_stage": "KS4",
+      "curriculum_status": "exemplar",
+      "choice_group": "ks4_world_depth",
+      "curriculum_reference": [
+        "DfE GCSE History subject content 2014: 'a wider world depth study'",
+        "DfE GCSE History subject content 2014: 'the study of at least one period of non-European history'"
+      ],
+      "period": "Varies by chosen society",
+      "period_start_year": null,
+      "period_end_year": null,
+      "significance_claim": "Studying non-European societies on their own terms — not as footnotes to European narratives — develops genuinely global historical understanding and challenges the Eurocentrism that has historically dominated school history curricula.",
+      "pedagogical_rationale": "This study represents the DfE requirement that GCSE History includes the study of at least one period of non-European history. It can be fulfilled through a range of options depending on exam board: the Mughal Empire, imperial China, the trans-Atlantic slave trade, or other non-European depth studies. The pedagogical value lies in decentring European perspectives and enabling pupils to analyse complex non-European political, economic and cultural systems using the same disciplinary tools they apply to British and European history.",
+      "enquiry_questions": [
+        "What were the distinctive political, economic and cultural achievements of this society?",
+        "How does studying this society challenge Eurocentric assumptions about historical progress?",
+        "What were the internal dynamics of power, inequality and change within this society?",
+        "How did this society interact with other regions and civilisations?"
+      ],
+      "key_figures": [],
+      "comparison_pairs": [
+        {"a": "Non-European society", "b": "Contemporary European society", "dimension": "political structures, economic systems, cultural achievement and global connections"}
+      ],
+      "key_events": [],
+      "perspectives": ["ruler/leader", "merchant/trader", "ordinary citizen", "outsider/traveller", "modern historian"],
+      "interpretations": [
+        "How non-European societies have been represented in Western historical writing, and the ongoing effort to decolonise historical narratives",
+        "The debate about whether European colonialism interrupted or redirected the development trajectories of non-European societies"
+      ],
+      "source_types": ["primary_written", "primary_visual", "primary_archaeological", "primary_oral"],
+      "definitions": ["Eurocentrism", "decolonise", "empire", "civilisation", "cultural exchange", "trade network", "colonialism"],
+      "common_pitfalls": [
+        "Studying non-European societies only through the lens of their contact with Europe rather than on their own terms",
+        "Tokenistic coverage that does not give the society the same analytical depth afforded to British or European topics",
+        "Using Eurocentric criteria (e.g. written law, parliamentary governance) to judge non-European societies"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS4-007", "hook": "Global trade networks, the development gap, and the historical roots of contemporary global inequality", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Colonialism and its legacies are sensitive — present factually and from multiple perspectives",
+        "Avoid exoticising non-European cultures — present them with the same analytical seriousness as European history",
+        "Pupils of diverse heritage may have personal connections to the societies studied — honour their knowledge while maintaining analytical distance"
+      ],
+      "year_groups": ["Y10", "Y11"],
+      "duration_lessons": 24,
+      "foregrounds": [
+        {"disciplinary_concept_slug": "similarity_and_difference", "rank": 1, "ks_guidance": "At KS4, compare the non-European society with contemporary European societies using consistent criteria. Analyse what the comparison reveals about both societies, not just the 'exotic' one."},
+        {"disciplinary_concept_slug": "significance", "rank": 2, "ks_guidance": "At KS4, evaluate the historical significance of the non-European society: what were its lasting contributions to global history? Whose criteria of significance are we using?"},
+        {"disciplinary_concept_slug": "evidence_and_interpretation", "rank": 3, "ks_guidance": "At KS4, analyse how non-European societies have been represented in Western historical writing. Evaluate sources from within the society alongside external accounts."},
+        {"disciplinary_concept_slug": "change_and_continuity", "rank": 4, "ks_guidance": "At KS4, analyse internal dynamics of change within the society: how did it evolve over time, and what drove or constrained change?"}
+      ],
+      "delivers_via": [
+        {"concept_id": "HI-KS4-C016", "primary": true},
+        {"concept_id": "HI-KS4-C013", "primary": false},
+        {"concept_id": "HI-KS4-C004", "primary": false},
+        {"concept_id": "HI-KS4-C006", "primary": false},
+        {"concept_id": "HI-KS4-C003", "primary": false}
+      ],
+      "uses_template": ["VT-01", "VT-15"],
+      "domain_ids": ["HI-KS4-D004", "HI-KS4-D006"],
+      "chronologically_follows": null,
+      "thematically_linked_to": [
+        {"target_study_id": "HS-KS3-009", "theme": "Builds on KS3 Islamic civilisation depth study, extending non-European perspectives to GCSE level"}
+      ],
+      "contrasts_with": [],
+      "uses_source_ids": [],
+      "display_category": "History Study",
+      "display_color": "#059669",
+      "display_icon": "auto_stories"
+    }
+  ]
+}

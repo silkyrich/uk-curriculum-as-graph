@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """
-Add display properties (color, icon, category, size) to all nodes for visualization.
+Add display properties (color, icon, category) to all nodes for visualization.
 
 These properties are stored IN the graph and travel with the data:
 - display_color: Hex color code (e.g., '#3B82F6')
 - display_icon: Material Design icon name (e.g., 'lightbulb_outline')
 - display_category: High-level category (e.g., 'UK Curriculum', 'CASE Standards')
-- display_size: Relative size 1-5 (5=root, 4=structural, 3=grouping, 2=content, 1=leaf)
 
 This enables:
 1. Version-controlled styling (committed to git)
@@ -30,67 +29,56 @@ LAYER_ROOT = Path(__file__).parent.parent
 
 NODE_STYLES = {
     # UK CURRICULUM LAYER (Blues & Purples)
-    # size scale: 5=top structural, 4=mid structural, 3=grouping, 2=content, 1=detail/leaf
     'Curriculum': {
         'color': '#1F2937',  # Gray-800
         'icon': 'account_balance',
         'category': 'Structure',
-        'size': 5,
     },
     'KeyStage': {
         'color': '#374151',  # Gray-700
         'icon': 'stairs',
         'category': 'Structure',
-        'size': 5,
     },
     'Year': {
         'color': '#4B5563',  # Gray-600
         'icon': 'event',
         'category': 'Structure',
-        'size': 4,
     },
     'Subject': {
         'color': '#DC2626',  # Red-600
         'icon': 'menu_book',
         'category': 'UK Curriculum',
-        'size': 4,
     },
     'Programme': {
         'color': '#1E3A8A',  # Blue-900 (darker, foundational)
         'icon': 'assignment',
         'category': 'UK Curriculum',
-        'size': 4,
     },
     'Domain': {
         'color': '#8B5CF6',  # Violet-500
         'icon': 'folder',
         'category': 'UK Curriculum',
-        'size': 3,
     },
     # Topic label removed (v4.2) — replaced by per-subject ontology nodes
     'Objective': {
         'color': '#10B981',  # Emerald-500
         'icon': 'flag',
         'category': 'UK Curriculum',
-        'size': 2,
     },
     'Concept': {
         'color': '#3B82F6',  # Blue-500
         'icon': 'lightbulb_outline',
         'category': 'UK Curriculum',
-        'size': 2,
     },
     'ConceptCluster': {
         'color': '#6366F1',  # Indigo-500
         'icon': 'view_module',
         'category': 'UK Curriculum',
-        'size': 2,
     },
     'SourceDocument': {
         'color': '#6B7280',  # Gray-500
         'icon': 'description',
         'category': 'Structure',
-        'size': 1,
     },
 
     # EPISTEMIC SKILLS LAYER (Teals & Greens)
@@ -98,37 +86,31 @@ NODE_STYLES = {
         'color': '#14B8A6',  # Teal-500
         'icon': 'science',
         'category': 'Epistemic Skills',
-        'size': 2,
     },
     'ReadingSkill': {
         'color': '#EC4899',  # Pink-500
         'icon': 'menu_book',
         'category': 'Epistemic Skills',
-        'size': 2,
     },
     'MathematicalReasoning': {
         'color': '#F59E0B',  # Amber-500
         'icon': 'calculate',
         'category': 'Epistemic Skills',
-        'size': 2,
     },
     'GeographicalSkill': {
         'color': '#059669',  # Emerald-600
         'icon': 'public',
         'category': 'Epistemic Skills',
-        'size': 2,
     },
     'HistoricalThinking': {
         'color': '#92400E',  # Amber-900
         'icon': 'history_edu',
         'category': 'Epistemic Skills',
-        'size': 2,
     },
     'ComputationalThinking': {
         'color': '#4F46E5',  # Indigo-600
         'icon': 'computer',
         'category': 'Epistemic Skills',
-        'size': 2,
     },
 
     # ASSESSMENT LAYER (Grays)
@@ -136,19 +118,16 @@ NODE_STYLES = {
         'color': '#374151',  # Gray-700
         'icon': 'quiz',
         'category': 'Assessment',
-        'size': 4,
     },
     'TestPaper': {
         'color': '#4B5563',  # Gray-600
         'icon': 'description',
         'category': 'Assessment',
-        'size': 1,
     },
     'ContentDomainCode': {
         'color': '#6B7280',  # Gray-500
         'icon': 'bookmark',
         'category': 'Assessment',
-        'size': 1,
     },
 
     # CASE STANDARDS LAYER (Oranges & Browns)
@@ -156,49 +135,41 @@ NODE_STYLES = {
         'color': '#EA580C',  # Orange-600
         'icon': 'account_balance',
         'category': 'CASE Standards',
-        'size': 5,
     },
     'Dimension': {
         'color': '#C2410C',  # Orange-700
         'icon': 'view_in_ar',
         'category': 'CASE Standards',
-        'size': 4,
     },
     'CoreIdea': {
         'color': '#B45309',  # Amber-700
         'icon': 'school',
         'category': 'CASE Standards',
-        'size': 3,
     },
     'CrosscuttingConcept': {
         'color': '#15803D',  # Green-700
         'icon': 'hub',
         'category': 'CASE Standards',
-        'size': 2,
     },
     'Practice': {
         'color': '#0284C7',  # Sky-600
         'icon': 'engineering',
         'category': 'CASE Standards',
-        'size': 2,
     },
     'PerformanceExpectation': {
         'color': '#6B7280',  # Gray-500
         'icon': 'assessment',
         'category': 'CASE Standards',
-        'size': 1,
     },
     'GradeBand': {
         'color': '#9CA3AF',  # Gray-400
         'icon': 'grade',
         'category': 'CASE Standards',
-        'size': 1,
     },
     'MathPractice': {
         'color': '#D97706',  # Amber-600
         'icon': 'functions',
         'category': 'CASE Standards',
-        'size': 2,
     },
 
     # LEARNER PROFILE LAYER (Violets & Purples)
@@ -206,31 +177,26 @@ NODE_STYLES = {
         'color': '#7C3AED',   # Violet-600 (matches import script)
         'icon': 'lightbulb',
         'category': 'Learner Profile',
-        'size': 2,
     },
     'ContentGuideline': {
         'color': '#7C3AED',   # Violet-600
         'icon': 'document',
         'category': 'Learner Profile',
-        'size': 3,
     },
     'PedagogyProfile': {
         'color': '#7C3AED',   # Violet-600
         'icon': 'route',
         'category': 'Learner Profile',
-        'size': 3,
     },
     'FeedbackProfile': {
         'color': '#7C3AED',   # Violet-600
         'icon': 'speech',
         'category': 'Learner Profile',
-        'size': 3,
     },
     'PedagogyTechnique': {
         'color': '#3B0764',   # Purple-950 (matches import script)
         'icon': 'brain',
         'category': 'Learner Profile',
-        'size': 3,
     },
 
     # DIFFICULTY LEVELS (Rose — sub-concept difficulty gradations)
@@ -238,7 +204,6 @@ NODE_STYLES = {
         'color': '#E11D48',  # Rose-600
         'icon': 'signal_cellular_alt',
         'category': 'UK Curriculum',
-        'size': 1,
     },
 
     # REPRESENTATION STAGES (Cyan — CPA progression)
@@ -246,7 +211,6 @@ NODE_STYLES = {
         'color': '#06B6D4',  # Cyan-500
         'icon': 'view_carousel',
         'category': 'UK Curriculum',
-        'size': 1,
     },
 
     # THINKING LENSES LAYER (Violet — cross-subject cognitive frames)
@@ -254,15 +218,15 @@ NODE_STYLES = {
         'color': '#7C3AED',  # Violet-600
         'icon': 'psychology',
         'category': 'UK Curriculum',
-        'size': 2,
     },
 
-    # VEHICLE TEMPLATES (Teal — pedagogical patterns)
+    # VEHICLE TEMPLATES (Cyan — pedagogical patterns)
+    # Note: display_icon is set per-template during import (from vehicle_templates.json)
+    # so we only set color, category, and size here — NOT icon
     'VehicleTemplate': {
-        'color': '#0D9488',  # Teal-600
-        'icon': 'view_timeline',
+        'color': '#0891B2',  # Cyan-600 (matches source data)
+        'icon': None,        # preserve per-template icon from import
         'category': 'Vehicle Template',
-        'size': 2,
     },
 
     # PER-SUBJECT ONTOLOGY (v4.2 — study/unit nodes)
@@ -270,128 +234,107 @@ NODE_STYLES = {
         'color': '#B45309',  # Amber-700 (distinct from HistoricalThinking #92400E)
         'icon': 'auto_stories',
         'category': 'Topic Suggestion',
-        'size': 2,
     },
     'DisciplinaryConcept': {
         'color': '#78350F',  # Amber-950
         'icon': 'psychology',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'HistoricalSource': {
         'color': '#A16207',  # Yellow-700
         'icon': 'source',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'GeoStudy': {
         'color': '#059669',  # Emerald-600 (matches GeographicalSkill)
         'icon': 'public',
         'category': 'Topic Suggestion',
-        'size': 2,
     },
     'GeoPlace': {
         'color': '#047857',  # Emerald-700
         'icon': 'place',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'GeoContrast': {
         'color': '#065F46',  # Emerald-800
         'icon': 'compare_arrows',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'ScienceEnquiry': {
         'color': '#14B8A6',  # Teal-500 (matches WorkingScientifically)
         'icon': 'science',
         'category': 'Topic Suggestion',
-        'size': 2,
     },
     'EnquiryType': {
         'color': '#0F766E',  # Teal-700
         'icon': 'biotech',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'Misconception': {
         'color': '#DC2626',  # Red-600
         'icon': 'warning',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'EnglishUnit': {
         'color': '#EC4899',  # Pink-500 (matches ReadingSkill)
         'icon': 'menu_book',
         'category': 'Topic Suggestion',
-        'size': 2,
     },
     'Genre': {
         'color': '#BE185D',  # Pink-700
         'icon': 'style',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'SetText': {
         'color': '#9D174D',  # Pink-800
         'icon': 'auto_stories',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'MathsManipulative': {
         'color': '#F59E0B',  # Amber-500 (matches MathematicalReasoning)
         'icon': 'extension',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'MathsRepresentation': {
         'color': '#D97706',  # Amber-600
         'icon': 'palette',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'MathsContext': {
         'color': '#B45309',  # Amber-700
         'icon': 'category',
         'category': 'Subject Reference',
-        'size': 1,
     },
     'ReasoningPromptType': {
         'color': '#92400E',  # Amber-900
         'icon': 'chat',
         'category': 'Subject Reference',
-        'size': 1,
     },
     # Foundation subject TopicSuggestion labels
     'ArtTopicSuggestion': {
         'color': '#F97316',  # Orange-500
         'icon': 'palette',
         'category': 'Topic Suggestion',
-        'size': 2,
     },
     'MusicTopicSuggestion': {
         'color': '#A855F7',  # Purple-500
         'icon': 'music_note',
         'category': 'Topic Suggestion',
-        'size': 2,
     },
     'DTTopicSuggestion': {
         'color': '#64748B',  # Slate-500
         'icon': 'build',
         'category': 'Topic Suggestion',
-        'size': 2,
     },
     'ComputingTopicSuggestion': {
         'color': '#4F46E5',  # Indigo-600
         'icon': 'computer',
         'category': 'Topic Suggestion',
-        'size': 2,
     },
     'TopicSuggestion': {
         'color': '#059669',  # Emerald-600
         'icon': 'lightbulb',
         'category': 'Topic Suggestion',
-        'size': 2,
     },
 
     # OAK CONTENT (Future layer - placeholder)
@@ -399,19 +342,17 @@ NODE_STYLES = {
         'color': '#16A34A',  # Green-600
         'icon': 'collections_bookmark',
         'category': 'Oak Content',
-        'size': 3,
     },
     'OakLesson': {
         'color': '#22C55E',  # Green-500
         'icon': 'play_lesson',
         'category': 'Oak Content',
-        'size': 2,
     },
 }
 
 
 def add_display_properties(driver):
-    """Add display_color, display_icon, display_category, display_size to all nodes"""
+    """Add display_color, display_icon, display_category to all nodes"""
 
     with driver.session() as session:
         print("Adding display properties to nodes...\n")
@@ -420,23 +361,32 @@ def add_display_properties(driver):
 
         for node_label, style in NODE_STYLES.items():
             try:
-                result = session.run(f"""
-                    MATCH (n:{node_label})
-                    SET n.display_color = $color,
-                        n.display_icon = $icon,
-                        n.display_category = $category,
-                        n.display_size = $size
-                    RETURN count(n) as updated
-                """, color=style['color'], icon=style['icon'],
-                     category=style['category'], size=style['size'])
+                # When icon is None, preserve per-node icons set during import
+                if style['icon'] is None:
+                    result = session.run(f"""
+                        MATCH (n:{node_label})
+                        SET n.display_color = $color,
+                            n.display_category = $category
+                        RETURN count(n) as updated
+                    """, color=style['color'],
+                         category=style['category'])
+                else:
+                    result = session.run(f"""
+                        MATCH (n:{node_label})
+                        SET n.display_color = $color,
+                            n.display_icon = $icon,
+                            n.display_category = $category
+                        RETURN count(n) as updated
+                    """, color=style['color'], icon=style['icon'],
+                         category=style['category'])
 
                 updated = result.single()['updated']
                 total_updated += updated
 
                 if updated > 0:
                     color_preview = f"\033[38;2;{int(style['color'][1:3], 16)};{int(style['color'][3:5], 16)};{int(style['color'][5:7], 16)}m●\033[0m"
-                    size_bar = '█' * style['size'] + '░' * (5 - style['size'])
-                    print(f"  {color_preview} {node_label:28} [{size_bar}] → {updated:4} nodes ({style['icon']})")
+                    icon_label = style['icon'] or 'per-node'
+                    print(f"  {color_preview} {node_label:28} → {updated:4} nodes ({icon_label})")
 
             except Exception as e:
                 print(f"  ✗ {node_label:30} → Error: {e}")
@@ -470,10 +420,14 @@ def create_cypher_backup():
     for node_label, style in NODE_STYLES.items():
         cypher_lines.append(f"// {node_label} - {style['category']}")
         cypher_lines.append(f"MATCH (n:{node_label})")
-        cypher_lines.append(f"SET n.display_color = '{style['color']}',")
-        cypher_lines.append(f"    n.display_icon = '{style['icon']}',")
-        cypher_lines.append(f"    n.display_category = '{style['category']}',")
-        cypher_lines.append(f"    n.display_size = {style['size']};")
+        if style['icon'] is None:
+            # Icon set per-node during import — don't override
+            cypher_lines.append(f"SET n.display_color = '{style['color']}',")
+            cypher_lines.append(f"    n.display_category = '{style['category']}';")
+        else:
+            cypher_lines.append(f"SET n.display_color = '{style['color']}',")
+            cypher_lines.append(f"    n.display_icon = '{style['icon']}',")
+            cypher_lines.append(f"    n.display_category = '{style['category']}';")
         cypher_lines.append("")
 
     return "\n".join(cypher_lines)

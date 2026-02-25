@@ -1,0 +1,616 @@
+{
+  "metadata": {
+    "description": "GeoStudy nodes for KS4 Geography: GCSE case studies, thematic studies, fieldwork and issue evaluation",
+    "version": "1.0",
+    "authored_by": "humanities-ks4-teacher",
+    "authored_date": "2026-02-25",
+    "node_label": "GeoStudy",
+    "key_stage": "KS4",
+    "note": "Follows GCSE Geography subject content (DfE 2014). Physical geography (hazards, landscapes, ecosystems), human geography (urban, development), resource management, geographical skills and fieldwork. All studies are exemplar — exam boards offer specific case study choices. The KS3 GeoStudy schema is followed exactly."
+  },
+  "studies": [
+    {
+      "study_id": "GS-GE-KS4-001",
+      "name": "Tectonic Hazards: Earthquakes and Volcanoes",
+      "study_type": "case_study",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y10", "Y11"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_topic",
+      "choice_group": "ks4_tectonic_hazards",
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'physical geography processes including tectonic hazards'",
+        "DfE GCSE Geography subject content 2014: 'understanding of fundamental physical geography processes'"
+      ],
+      "theme_category": "physical",
+      "themes": ["plate tectonics", "earthquake management", "volcanic hazards", "vulnerability", "resilience"],
+      "scale": "global",
+      "map_types": ["hazard_overlay", "gis", "choropleth", "cross_section"],
+      "data_sources": ["USGS", "BGS", "NOAA", "World Bank"],
+      "definitions": ["plate boundary", "subduction", "convection current", "focus", "epicentre", "magnitude", "seismometer", "pyroclastic flow", "lahar", "primary vs secondary hazard"],
+      "pedagogical_rationale": "Tectonic hazards build directly on KS3 study of plate tectonics (Haiti/Japan) but demand deeper understanding of processes (why plates move, different boundary types) and more sophisticated analysis of management strategies. GCSE requires named case studies of both HIC and LIC/NEE earthquakes and volcanoes, enabling comparative analysis of how development level mediates hazard impact. The L'Aquila 2009 and Eyjafjallajokull 2010 are widely used exam board exemplars.",
+      "common_pitfalls": [
+        "Describing plate boundary types without explaining WHY plates move (convection currents, ridge push, slab pull)",
+        "Comparing HIC and LIC earthquake impacts without analysing the specific factors (governance, infrastructure, corruption) that create vulnerability",
+        "Treating volcanoes and earthquakes as identical hazards when their management strategies differ fundamentally"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS4-010", "hook": "Non-European societies' historical responses to tectonic hazards; the relationship between colonial history and present-day vulnerability", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Recent earthquake events may have affected pupils or their families — establish sensitivity before teaching",
+        "Avoid sensationalising death tolls — analyse them as data points that reveal vulnerability patterns"
+      ],
+      "fieldwork_potential": null,
+      "duration_lessons": 10,
+      "enquiry_question": "Can we ever be truly prepared for tectonic hazards?",
+      "data_points": ["300,000+ earthquakes/year (magnitude 2+)", "Haiti 2010: 230,000 deaths", "Japan 2011: 20,000 deaths, $235 billion damage", "Eyjafjallajökull 2010: 100,000 flights cancelled"],
+      "assessment_guidance": "Can pupils explain plate boundary processes and why hazards occur at specific locations? Can they compare the impacts of a tectonic event in an HIC and a LIC/NEE using named case studies? Can they evaluate management strategies for tectonic hazards?",
+      "success_criteria": [
+        "Explain why tectonic hazards occur at plate boundaries using process knowledge",
+        "Compare impacts and responses in HIC and LIC/NEE named case studies",
+        "Evaluate the effectiveness of monitoring, prediction and protection strategies",
+        "Analyse why some communities are more vulnerable than others"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C001", "primary": true},
+        {"concept_id": "GE-KS4-C002", "primary": false},
+        {"concept_id": "GE-KS4-C009", "primary": false},
+        {"concept_id": "GE-KS4-C010", "primary": false},
+        {"concept_id": "GE-KS4-C006", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-14"],
+      "domain_ids": ["GE-KS4-D001"],
+      "locations": ["GP-NA-001", "GP-AS-001", "GP-EU-006"],
+      "builds_on": ["GS-GE-KS3-001", "GS-GE-KS3-002"],
+      "contrasts_with": ["GC-KS3-001"],
+      "complements": ["GS-GE-KS4-002"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "case_study"
+    },
+    {
+      "study_id": "GS-GE-KS4-002",
+      "name": "Weather Hazards and Climate Change",
+      "study_type": "thematic_study",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y10", "Y11"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_topic",
+      "choice_group": "ks4_weather_hazards",
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'weather hazards'",
+        "DfE GCSE Geography subject content 2014: 'climate change — evidence, causes and management'"
+      ],
+      "theme_category": "physical",
+      "themes": ["tropical storms", "extreme UK weather", "climate change evidence", "mitigation vs adaptation", "global inequality"],
+      "scale": "global",
+      "map_types": ["synoptic_chart", "satellite_image", "choropleth", "isoline"],
+      "data_sources": ["Met Office", "IPCC", "NASA GISS", "NOAA"],
+      "definitions": ["tropical storm", "Coriolis effect", "storm surge", "Saffir-Simpson scale", "anticyclone", "depression", "jet stream", "greenhouse effect", "enhanced greenhouse effect", "mitigation", "adaptation", "carbon capture"],
+      "pedagogical_rationale": "Weather hazards and climate change extend KS3 work on atmospheric processes into GCSE-level analysis of tropical storms (formation, impacts, management) and extreme UK weather events. Climate change is integrated here because it links atmospheric science to human geography through the concepts of mitigation, adaptation, and climate justice. Named tropical storm case studies (e.g. Typhoon Haiyan 2013) and UK extreme weather events (e.g. Somerset Levels 2014) are standard exam board requirements.",
+      "common_pitfalls": [
+        "Teaching tropical storm formation as rote memorisation of conditions rather than understanding WHY warm oceans drive storm development",
+        "Treating climate change as 'controversial' when the scientific consensus is clear — the debate is about RESPONSE, not the science",
+        "Failing to distinguish between weather (short-term) and climate (long-term) when discussing climate change evidence"
+      ],
+      "cross_curricular_links": [],
+      "sensitive_content_notes": [
+        "Climate anxiety is real for many young people — frame with agency, solutions and scientific evidence",
+        "Tropical storms disproportionately affect LICs — avoid deficit framing; discuss structural causes of vulnerability",
+        "UK flooding events may have directly affected pupils or their communities"
+      ],
+      "fieldwork_potential": "Local weather data collection and comparison with historical records; microclimate investigation in the school grounds.",
+      "duration_lessons": 10,
+      "enquiry_question": "How should the world respond to the increasing threat of weather hazards?",
+      "data_points": ["Global temperature +1.1C since pre-industrial", "Typhoon Haiyan 2013: 6,300 deaths, 200mph winds", "Somerset Levels 2014: 600 homes flooded", "Arctic ice loss 13% per decade"],
+      "assessment_guidance": "Can pupils explain the formation and structure of tropical storms? Can they compare impacts and responses of a named tropical storm in a LIC/NEE? Can they evaluate the evidence for climate change and assess mitigation vs adaptation strategies?",
+      "success_criteria": [
+        "Explain tropical storm formation with process vocabulary",
+        "Analyse impacts and responses of a named tropical storm case study",
+        "Explain causes of an extreme UK weather event and evaluate the response",
+        "Evaluate evidence for climate change and compare mitigation vs adaptation strategies"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C011", "primary": true},
+        {"concept_id": "GE-KS4-C002", "primary": false},
+        {"concept_id": "GE-KS4-C001", "primary": false},
+        {"concept_id": "GE-KS4-C010", "primary": false},
+        {"concept_id": "GE-KS4-C009", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-18"],
+      "domain_ids": ["GE-KS4-D001"],
+      "locations": ["GP-GLOBAL", "GP-EU-002", "GP-AS-004"],
+      "builds_on": ["GS-GE-KS3-003"],
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS4-001", "GS-GE-KS4-008"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "category"
+    },
+    {
+      "study_id": "GS-GE-KS4-003",
+      "name": "Ecosystems: Tropical Rainforests and Hot Deserts",
+      "study_type": "thematic_study",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y10", "Y11"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_topic",
+      "choice_group": "ks4_ecosystems",
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'ecosystems'",
+        "DfE GCSE Geography subject content 2014: 'the living world — understanding of key ecosystems and human interaction with them'"
+      ],
+      "theme_category": "environmental",
+      "themes": ["ecosystem structure", "nutrient cycling", "biodiversity", "deforestation", "desertification", "sustainable management"],
+      "scale": "global",
+      "map_types": ["choropleth", "thematic_map", "satellite_image", "cross_section"],
+      "data_sources": ["WWF", "UNEP", "NASA", "Rainforest Alliance"],
+      "definitions": ["ecosystem", "biome", "biodiversity", "nutrient cycle", "food web", "deforestation", "desertification", "sustainability", "ecotourism", "debt-for-nature swap", "slash and burn", "xerophyte"],
+      "pedagogical_rationale": "Ecosystems at GCSE builds on KS3 climate and biome work by requiring detailed case study knowledge of two contrasting ecosystems: typically the tropical rainforest (e.g. Malaysian Borneo or Amazon) and the hot desert (e.g. Sahara or Thar). The focus shifts from description to process understanding (nutrient cycling, adaptation) and evaluation of human management strategies. GCSE demands analysis of why deforestation and desertification occur and how they can be managed sustainably.",
+      "common_pitfalls": [
+        "Teaching ecosystem structure as a list of plants and animals rather than explaining the PROCESSES (nutrient cycling, energy flow) that sustain the ecosystem",
+        "Presenting deforestation as a simple 'bad' without analysing the economic pressures that drive it for local communities",
+        "Treating deserts as lifeless wastelands rather than ecosystems with sophisticated adaptations"
+      ],
+      "cross_curricular_links": [],
+      "sensitive_content_notes": [
+        "Indigenous communities live in both ecosystems — avoid presenting their land management as inferior to Western conservation models",
+        "Deforestation involves complex trade-offs between conservation and economic development — avoid simplistic moral framing"
+      ],
+      "fieldwork_potential": "Local ecosystem investigation (pond dipping, quadrat survey, soil analysis) to develop understanding of ecosystem processes at a small scale.",
+      "duration_lessons": 10,
+      "enquiry_question": "Can we use the world's ecosystems without destroying them?",
+      "data_points": ["Amazon: 10% of all species on Earth", "Deforestation: 10 million hectares/year", "Sahara: 9 million km², expanding southward", "Thar Desert: 200,000 km², 83 million people"],
+      "assessment_guidance": "Can pupils explain the structure and functioning of a tropical rainforest ecosystem (nutrient cycling, layers, interdependence)? Can they analyse causes and consequences of deforestation? Can they evaluate sustainable management strategies? Can they explain plant and animal adaptations in a hot desert?",
+      "success_criteria": [
+        "Explain nutrient cycling and energy flow in a tropical rainforest",
+        "Analyse causes and consequences of deforestation with named case study evidence",
+        "Evaluate the effectiveness of sustainable management strategies",
+        "Explain plant and animal adaptations to hot desert conditions"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C015", "primary": true},
+        {"concept_id": "GE-KS4-C002", "primary": false},
+        {"concept_id": "GE-KS4-C007", "primary": false},
+        {"concept_id": "GE-KS4-C006", "primary": false},
+        {"concept_id": "GE-KS4-C010", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-18"],
+      "domain_ids": ["GE-KS4-D001"],
+      "locations": ["GP-SA-CONTINENT", "GP-AF-CONTINENT", "GP-AS-003"],
+      "builds_on": ["GS-GE-KS3-003"],
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS4-008"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "category"
+    },
+    {
+      "study_id": "GS-GE-KS4-004",
+      "name": "River Landscapes of the UK",
+      "study_type": "case_study",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y10", "Y11"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_topic",
+      "choice_group": "ks4_physical_landscapes",
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'physical landscapes in the UK'",
+        "DfE GCSE Geography subject content 2014: 'river landscapes — processes of erosion, transportation and deposition'"
+      ],
+      "theme_category": "physical",
+      "themes": ["fluvial processes", "erosion", "transportation", "deposition", "flood management", "hard vs soft engineering"],
+      "scale": "regional",
+      "map_types": ["os_map", "cross_section", "topographic", "gis"],
+      "data_sources": ["Environment Agency", "Ordnance Survey", "BGS", "Met Office"],
+      "definitions": ["erosion", "hydraulic action", "abrasion", "attrition", "corrosion", "transportation", "traction", "saltation", "suspension", "solution", "deposition", "meander", "oxbow lake", "floodplain", "levee", "delta", "hard engineering", "soft engineering"],
+      "pedagogical_rationale": "River landscapes is one of two compulsory UK physical landscape options at GCSE (alongside coastal landscapes). It develops process-based understanding of how rivers shape the landscape through erosion, transportation and deposition, creating distinctive landforms at different points along the river's long profile. The management dimension (hard vs soft engineering) introduces cost-benefit analysis and the concept of sustainable flood management.",
+      "common_pitfalls": [
+        "Teaching river landforms as isolated features rather than explaining the PROCESSES that create them",
+        "Describing hard and soft engineering without evaluating their effectiveness, cost, and environmental impact",
+        "Neglecting the human geography dimension — why do people live on floodplains despite the risk?"
+      ],
+      "cross_curricular_links": [],
+      "sensitive_content_notes": [
+        "UK flooding events are common and may have directly affected pupils — handle with sensitivity",
+        "Flood management decisions involve winners and losers — acknowledge that protecting one area can increase risk elsewhere"
+      ],
+      "fieldwork_potential": "River fieldwork is a classic GCSE option: measuring channel width, depth, velocity, and bed load at different points along a river to test hypotheses about downstream change.",
+      "duration_lessons": 8,
+      "enquiry_question": "How do rivers shape the UK landscape, and how should we manage flood risk?",
+      "data_points": ["Thames: 346 km long", "UK flood damage: £1.3 billion/year average", "Boscastle 2004: 75mm rain in 2 hours", "Environment Agency manages 71,000 flood defence structures"],
+      "assessment_guidance": "Can pupils explain the formation of river landforms (waterfall, meander, oxbow lake, floodplain, levee) using process terminology? Can they use OS maps to identify river features? Can they evaluate hard vs soft flood management strategies?",
+      "success_criteria": [
+        "Explain how erosion, transportation and deposition create distinctive river landforms",
+        "Use OS maps and cross-sections to describe and explain river valley features",
+        "Analyse causes and consequences of a named UK flood event",
+        "Evaluate the effectiveness of hard and soft engineering flood management strategies"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C003", "primary": true},
+        {"concept_id": "GE-KS4-C009", "primary": false},
+        {"concept_id": "GE-KS4-C008", "primary": false},
+        {"concept_id": "GE-KS4-C010", "primary": false},
+        {"concept_id": "GE-KS4-C013", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-10"],
+      "domain_ids": ["GE-KS4-D002"],
+      "locations": ["GP-EU-002", "GP-EU-010"],
+      "builds_on": ["GS-GE-KS3-006"],
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS4-005"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "case_study"
+    },
+    {
+      "study_id": "GS-GE-KS4-005",
+      "name": "Coastal Processes and Landscapes",
+      "study_type": "case_study",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y10", "Y11"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_topic",
+      "choice_group": "ks4_physical_landscapes",
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'physical landscapes in the UK'",
+        "DfE GCSE Geography subject content 2014: 'coastal landscapes — processes of erosion, transportation and deposition'"
+      ],
+      "theme_category": "physical",
+      "themes": ["wave processes", "coastal erosion", "longshore drift", "coastal management", "managed retreat"],
+      "scale": "regional",
+      "map_types": ["os_map", "cross_section", "satellite_image", "topographic"],
+      "data_sources": ["Ordnance Survey", "Environment Agency", "BGS", "DEFRA"],
+      "definitions": ["constructive wave", "destructive wave", "hydraulic action", "abrasion", "attrition", "longshore drift", "headland", "bay", "stack", "arch", "cave", "wave-cut platform", "spit", "bar", "tombolo", "managed retreat", "sea wall", "groynes", "rock armour", "beach nourishment"],
+      "pedagogical_rationale": "Coastal landscapes is the second compulsory UK physical landscape option at GCSE. It develops the same process-based analytical framework as rivers (erosion, transportation, deposition) but applies it to a different environment. Coastal management is particularly rich because it forces pupils to evaluate competing strategies (hard engineering, soft engineering, managed retreat) and consider the economic, social and environmental trade-offs involved. The Holderness coast and Dorset coast are classic UK case studies.",
+      "common_pitfalls": [
+        "Teaching coastal landforms as a list (stack, arch, cave) without explaining the SEQUENCE of processes that creates them",
+        "Treating coastal management as a simple choice between 'protect' and 'don't protect' rather than analysing who benefits and who loses",
+        "Confusing erosion processes (hydraulic action, abrasion) with transportation processes (longshore drift)"
+      ],
+      "cross_curricular_links": [],
+      "sensitive_content_notes": [
+        "Coastal erosion can destroy homes and communities — some pupils may live in at-risk coastal areas",
+        "Managed retreat involves deliberate decisions to abandon properties — discuss the human impact alongside the geographical rationale"
+      ],
+      "fieldwork_potential": "Coastal fieldwork: measuring wave frequency and type, longshore drift direction, beach profiles, and cliff recession rates at a UK coastal site.",
+      "duration_lessons": 8,
+      "enquiry_question": "Should we protect all of the UK coastline, and at what cost?",
+      "data_points": ["UK coastline: 31,000 km", "Holderness coast: retreating 1-2m/year", "1 in 6 coastal properties at risk of erosion by 2100", "Sea wall cost: £6,000-10,000 per metre"],
+      "assessment_guidance": "Can pupils explain the formation of erosional and depositional coastal landforms using process terminology? Can they use OS maps to identify coastal features? Can they evaluate different coastal management strategies?",
+      "success_criteria": [
+        "Explain how waves erode, transport and deposit material to create coastal landforms",
+        "Describe the sequence: cave → arch → stack → stump using process vocabulary",
+        "Analyse the costs and benefits of hard and soft coastal management strategies",
+        "Evaluate whether managed retreat is a viable strategy using named case study evidence"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C004", "primary": true},
+        {"concept_id": "GE-KS4-C003", "primary": false},
+        {"concept_id": "GE-KS4-C009", "primary": false},
+        {"concept_id": "GE-KS4-C008", "primary": false},
+        {"concept_id": "GE-KS4-C013", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-10"],
+      "domain_ids": ["GE-KS4-D002"],
+      "locations": ["GP-EU-002"],
+      "builds_on": null,
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS4-004"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "case_study"
+    },
+    {
+      "study_id": "GS-GE-KS4-006",
+      "name": "Urban Issues and Challenges",
+      "study_type": "case_study",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y10", "Y11"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_topic",
+      "choice_group": "ks4_urban",
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'the changing economic world'",
+        "DfE GCSE Geography subject content 2014: 'urban issues and challenges — the changing nature of urban areas'"
+      ],
+      "theme_category": "human",
+      "themes": ["urbanisation", "megacity growth", "sustainable urban development", "deprivation", "urban regeneration"],
+      "scale": "national",
+      "map_types": ["choropleth", "population_density", "gis", "flow_map"],
+      "data_sources": ["ONS", "UN Habitat", "World Bank", "Census data"],
+      "definitions": ["urbanisation", "suburbanisation", "counter-urbanisation", "urban sprawl", "brownfield", "greenfield", "deprivation", "regeneration", "gentrification", "urban heat island", "sustainable urban living", "traffic management"],
+      "pedagogical_rationale": "Urban Issues extends KS3 urbanisation work (Lagos/London) to GCSE-level analysis requiring named case studies of a UK city and a LIC/NEE city. The study demands comparison of urbanisation challenges in different development contexts, evaluation of sustainability strategies, and understanding of the complex processes driving urban change. Pupils must integrate physical geography (flood risk, climate) with human geography (migration, deprivation, planning).",
+      "common_pitfalls": [
+        "Studying only the 'problems' of LIC/NEE cities without acknowledging their dynamism, economic opportunity and cultural richness",
+        "Treating UK cities as uniformly prosperous and LIC cities as uniformly poor — internal inequalities exist in both contexts",
+        "Describing urban change without analysing the PROCESSES driving it (economic restructuring, deindustrialisation, migration)"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS4-003", "hook": "History of migration shaping British cities; push-pull factors across historical periods", "strength": "strong"},
+        {"target_id": "EU-ELT-KS4-004", "hook": "An Inspector Calls explores urban class division, inequality and social responsibility — themes directly relevant to urban deprivation and regeneration", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Urban deprivation may directly affect pupils — avoid treating deprived areas as case studies for outside observation",
+        "Homelessness is a visible urban issue — discuss with empathy and structural analysis, not stigma",
+        "Gentrification can displace existing communities — acknowledge the human cost alongside economic benefits"
+      ],
+      "fieldwork_potential": "Urban fieldwork: environmental quality surveys, land use mapping, traffic counts, pedestrian counts, and deprivation index analysis in contrasting urban areas.",
+      "duration_lessons": 12,
+      "enquiry_question": "Can cities grow sustainably, or is rapid urbanisation always a problem?",
+      "data_points": ["55% of world population now urban", "Lagos: 16 million, projected 30 million by 2050", "London: 9 million, UK's most diverse city", "UK brownfield land: enough for 1 million homes"],
+      "assessment_guidance": "Can pupils explain the global pattern and causes of urbanisation? Can they compare urban challenges in a UK city and a LIC/NEE city using named examples? Can they evaluate strategies for sustainable urban development?",
+      "success_criteria": [
+        "Explain the causes and consequences of urbanisation at global and local scales",
+        "Compare urban challenges in a named UK city and a named LIC/NEE city",
+        "Evaluate urban regeneration strategies using named case study evidence",
+        "Assess the potential for sustainable urban living in UK cities"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C005", "primary": true},
+        {"concept_id": "GE-KS4-C013", "primary": false},
+        {"concept_id": "GE-KS4-C006", "primary": false},
+        {"concept_id": "GE-KS4-C010", "primary": false},
+        {"concept_id": "GE-KS4-C009", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-14"],
+      "domain_ids": ["GE-KS4-D003"],
+      "locations": ["GP-EU-005", "GP-AF-003", "GP-EU-002"],
+      "builds_on": ["GS-GE-KS3-005"],
+      "contrasts_with": ["GC-KS3-002"],
+      "complements": ["GS-GE-KS4-007"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "case_study"
+    },
+    {
+      "study_id": "GS-GE-KS4-007",
+      "name": "The Development Gap and Globalisation",
+      "study_type": "thematic_study",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y10", "Y11"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_topic",
+      "choice_group": "ks4_development",
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'the changing economic world'",
+        "DfE GCSE Geography subject content 2014: 'economic development and the global economy — including transnational corporations'"
+      ],
+      "theme_category": "economic",
+      "themes": ["development indicators", "the development gap", "globalisation", "TNCs", "aid", "fair trade", "economic restructuring"],
+      "scale": "global",
+      "map_types": ["choropleth", "flow_map", "proportional_symbol", "dot_map"],
+      "data_sources": ["World Bank", "UNDP", "WTO", "UNCTAD"],
+      "definitions": ["GDP", "GNI", "HDI", "development gap", "TNC", "globalisation", "trade", "aid", "fair trade", "economic sector", "deindustrialisation", "newly emerging economy", "Brandt line", "multiplier effect"],
+      "pedagogical_rationale": "The Development Gap and Globalisation extends KS3 work on Nigeria and development inequality to GCSE-level analysis of global economic systems. Pupils must understand why the development gap exists, how globalisation is reshaping it, and evaluate the roles of TNCs, aid, fair trade and economic restructuring. A named LIC/NEE case study (e.g. Nigeria, India, China) is required to demonstrate how economic development creates both opportunities and challenges.",
+      "common_pitfalls": [
+        "Treating development as a linear journey from 'poor' to 'rich' rather than a complex process shaped by historical, political and geographical factors",
+        "Presenting TNCs as simply exploitative or simply beneficial — demand evaluation of both costs and benefits",
+        "Using outdated terminology (Third World, developing country) rather than current vocabulary (LIC, NEE, HIC)"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS4-003", "hook": "Migration driven by economic inequality; the historical roots of the development gap in colonialism and trade patterns", "strength": "strong"},
+        {"target_id": "HS-KS4-010", "hook": "Pre-colonial economic systems in non-European societies; how colonial extraction created development disparities", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Development inequality can be distressing — frame with analysis and agency, not pity",
+        "Avoid deficit framing of LICs — show economic dynamism, innovation and cultural richness alongside challenges",
+        "Sweatshop labour and child labour are part of this study — handle factually and analytically"
+      ],
+      "fieldwork_potential": null,
+      "duration_lessons": 12,
+      "enquiry_question": "Does globalisation help or hinder the world's poorest countries?",
+      "data_points": ["World's richest 1% own 46% of global wealth", "LIC average GNI: $1,085", "HIC average GNI: $44,760", "Nike: factories in 42 countries, 1 million workers"],
+      "assessment_guidance": "Can pupils use multiple development indicators to compare countries at different stages of development? Can they explain why the development gap exists? Can they evaluate the costs and benefits of globalisation and TNCs for a named LIC/NEE?",
+      "success_criteria": [
+        "Use and evaluate multiple development indicators (GDP, GNI, HDI)",
+        "Explain the causes of the development gap (historical, geographical, political)",
+        "Analyse the costs and benefits of TNCs for a named LIC/NEE country",
+        "Evaluate strategies for reducing the development gap (aid, fair trade, debt relief)"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C006", "primary": true},
+        {"concept_id": "GE-KS4-C012", "primary": false},
+        {"concept_id": "GE-KS4-C005", "primary": false},
+        {"concept_id": "GE-KS4-C010", "primary": false},
+        {"concept_id": "GE-KS4-C002", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-18"],
+      "domain_ids": ["GE-KS4-D004"],
+      "locations": ["GP-GLOBAL", "GP-AF-002", "GP-AS-002", "GP-AS-003"],
+      "builds_on": ["GS-GE-KS3-004"],
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS4-006", "GS-GE-KS4-008"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "category"
+    },
+    {
+      "study_id": "GS-GE-KS4-008",
+      "name": "Resource Management: Water and Energy",
+      "study_type": "thematic_study",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y10", "Y11"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_topic",
+      "choice_group": "ks4_resource_management",
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'resource management'",
+        "DfE GCSE Geography subject content 2014: 'the challenge of resource management — food, water and energy'"
+      ],
+      "theme_category": "environmental",
+      "themes": ["water insecurity", "energy security", "supply and demand", "sustainable management", "global inequality"],
+      "scale": "global",
+      "map_types": ["choropleth", "flow_map", "proportional_symbol", "thematic_map"],
+      "data_sources": ["UN Water", "IEA", "World Bank", "DEFRA"],
+      "definitions": ["water insecurity", "water stress", "water deficit", "water surplus", "desalination", "water transfer", "energy mix", "fossil fuel", "renewable energy", "carbon footprint", "energy security", "fracking", "sustainability"],
+      "pedagogical_rationale": "Resource Management extends KS3 work on UK water into GCSE-level global analysis of water insecurity and energy security. Pupils study the overview of food/water/energy challenges in the UK, then explore one resource in depth with global case studies. The study links physical geography (climate, hydrology) with human geography (development, governance, technology) and evaluates management strategies for sustainability.",
+      "common_pitfalls": [
+        "Treating resource insecurity as only a developing-world problem — the UK faces its own water and energy challenges",
+        "Presenting renewable energy as a simple replacement for fossil fuels without analysing intermittency, cost and land-use trade-offs",
+        "Focusing on supply-side solutions (more dams, more wind farms) without analysing demand-side management (reducing waste, changing behaviour)"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS4-001", "hook": "Historical changes in resource law and management; water rights and energy policy as governance challenges across centuries", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Energy poverty affects UK households — some pupils may experience fuel poverty directly",
+        "Water insecurity in LICs involves preventable disease and death — handle factually and with empathy",
+        "Energy policy debates (fracking, nuclear) are politically sensitive — present evidence from multiple perspectives"
+      ],
+      "fieldwork_potential": "School or home water/energy audit: measuring consumption, identifying waste, and proposing reduction strategies.",
+      "duration_lessons": 10,
+      "enquiry_question": "How can the world ensure water and energy security for everyone?",
+      "data_points": ["2.2 billion people lack safe drinking water", "UK water use: 140 litres/person/day", "World energy demand growing 1.3%/year", "UK energy mix: 43% renewables (2023)"],
+      "assessment_guidance": "Can pupils explain the global distribution of water insecurity and its causes? Can they evaluate strategies for increasing water supply (desalination, water transfer, groundwater) and reducing demand? Can they analyse the UK's changing energy mix and evaluate different energy sources?",
+      "success_criteria": [
+        "Explain the global pattern and causes of water insecurity",
+        "Evaluate supply-side and demand-side strategies for water management",
+        "Analyse the UK's changing energy mix using data",
+        "Evaluate the costs and benefits of different energy sources (fossil, nuclear, renewable)"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C007", "primary": true},
+        {"concept_id": "GE-KS4-C014", "primary": false},
+        {"concept_id": "GE-KS4-C002", "primary": false},
+        {"concept_id": "GE-KS4-C006", "primary": false},
+        {"concept_id": "GE-KS4-C010", "primary": false}
+      ],
+      "uses_template": ["VT-02", "VT-18"],
+      "domain_ids": ["GE-KS4-D005"],
+      "locations": ["GP-GLOBAL", "GP-EU-002", "GP-ME-001"],
+      "builds_on": ["GS-GE-KS3-006"],
+      "contrasts_with": ["GC-KS3-003"],
+      "complements": ["GS-GE-KS4-003", "GS-GE-KS4-007"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "category"
+    },
+    {
+      "study_id": "GS-GE-KS4-009",
+      "name": "GCSE Geographical Fieldwork Investigation",
+      "study_type": "fieldwork_investigation",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y10", "Y11"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "prescribed_topic",
+      "choice_group": null,
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'two pieces of fieldwork in contrasting environments'",
+        "DfE GCSE Geography subject content 2014: 'fieldwork skills: collecting, presenting, analysing and evaluating data'"
+      ],
+      "theme_category": "integrated",
+      "themes": ["enquiry process", "hypothesis testing", "primary data collection", "statistical analysis", "evaluation"],
+      "scale": "local",
+      "map_types": ["os_map", "gis", "topographic", "sketch_map"],
+      "data_sources": ["Primary data collected by pupils", "Digimap for Schools", "ONS Neighbourhood Statistics", "Environment Agency"],
+      "definitions": ["hypothesis", "null hypothesis", "sampling", "systematic sampling", "stratified sampling", "random sampling", "interquartile range", "Spearman's rank", "chi-squared", "risk assessment", "reliability", "accuracy", "anomaly"],
+      "pedagogical_rationale": "GCSE fieldwork is mandatory and assessed in the written exam: pupils must have completed two fieldwork investigations in contrasting environments (one physical, one human is typical). The study develops the full enquiry cycle: question → hypothesis → methodology → data collection → presentation → analysis → conclusion → evaluation. GCSE demands statistical analysis (Spearman's rank, chi-squared) that goes beyond KS3 fieldwork.",
+      "common_pitfalls": [
+        "Treating fieldwork as a data-collection day out rather than a genuine geographical enquiry driven by a question and hypothesis",
+        "Teaching statistical techniques in isolation rather than as tools for testing geographical hypotheses",
+        "Failing to teach evaluation skills — pupils must critically assess the reliability and accuracy of their own data and conclusions"
+      ],
+      "cross_curricular_links": [],
+      "sensitive_content_notes": null,
+      "fieldwork_potential": "This IS the fieldwork study. Pupils conduct two investigations: typically one physical (river, coast) and one human (urban, retail). Each investigation follows the full enquiry cycle from question to evaluation.",
+      "duration_lessons": 12,
+      "enquiry_question": "How do we use geographical fieldwork to test hypotheses and draw valid conclusions?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils design a fieldwork investigation with a clear hypothesis and appropriate methodology? Can they select and justify appropriate data collection techniques? Can they present data using appropriate statistical and cartographic methods? Can they analyse results using statistical techniques and evaluate the reliability of their conclusions?",
+      "success_criteria": [
+        "Design a geographical enquiry with a clear hypothesis and justified methodology",
+        "Select and use appropriate sampling strategies and data collection techniques",
+        "Present data using statistical diagrams, maps and GIS",
+        "Analyse data using statistical techniques (Spearman's rank, chi-squared)",
+        "Evaluate the reliability and accuracy of data and conclusions"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C008", "primary": true},
+        {"concept_id": "GE-KS4-C009", "primary": false},
+        {"concept_id": "GE-KS4-C010", "primary": false},
+        {"concept_id": "GE-KS4-C003", "primary": false},
+        {"concept_id": "GE-KS4-C004", "primary": false}
+      ],
+      "uses_template": ["VT-10"],
+      "domain_ids": ["GE-KS4-D006"],
+      "locations": ["GP-EU-007"],
+      "builds_on": ["GS-GE-KS3-009"],
+      "contrasts_with": null,
+      "complements": null,
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "explore"
+    },
+    {
+      "study_id": "GS-GE-KS4-010",
+      "name": "Issue Evaluation: Pre-Release Resource",
+      "study_type": "issue_evaluation",
+      "subject": "Geography",
+      "key_stage": "KS4",
+      "year_groups": ["Y11"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "prescribed_topic",
+      "choice_group": null,
+      "curriculum_reference": [
+        "DfE GCSE Geography subject content 2014: 'decision-making skills'",
+        "DfE GCSE Geography subject content 2014: 'the application of geographical skills and knowledge to a contemporary geographical issue'"
+      ],
+      "theme_category": "integrated",
+      "themes": ["decision-making", "evidence evaluation", "stakeholder analysis", "geographical skills application"],
+      "scale": "varies",
+      "map_types": ["os_map", "choropleth", "gis", "thematic_map"],
+      "data_sources": ["Pre-release resource booklet (exam board)", "Supplementary research sources"],
+      "definitions": ["stakeholder", "trade-off", "cost-benefit analysis", "sustainability", "evidence", "bias", "reliability"],
+      "pedagogical_rationale": "Issue Evaluation is a distinctive GCSE Geography component where pupils receive a pre-release resource booklet on a contemporary geographical issue 12 weeks before the exam. It tests their ability to apply geographical knowledge and skills to a real-world issue, evaluate evidence from multiple sources, analyse different stakeholder perspectives, and make a justified decision. This is the most synoptic element of the GCSE, requiring integration of physical and human geography.",
+      "common_pitfalls": [
+        "Treating the pre-release as additional content to memorise rather than evidence to evaluate using existing geographical knowledge",
+        "Failing to consider multiple stakeholder perspectives before reaching a judgement",
+        "Producing descriptive responses about the issue rather than analytical evaluations that weigh evidence and reach justified conclusions"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "EU-ENL-KS4-004", "hook": "Constructing a balanced argument using evidence; evaluating sources for reliability and bias in transactional writing", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Pre-release topics may involve sensitive contemporary issues (e.g. climate change impacts, housing crises, resource conflicts) — approach with analytical rigour and sensitivity"
+      ],
+      "fieldwork_potential": null,
+      "duration_lessons": 8,
+      "enquiry_question": "How do we make geographical decisions about contemporary issues using evidence?",
+      "data_points": null,
+      "assessment_guidance": "Can pupils interpret and evaluate diverse geographical sources (maps, data, photographs, text)? Can they identify different stakeholder perspectives and their underlying values? Can they construct a justified decision or argument using geographical evidence? Can they evaluate the strengths and limitations of the evidence provided?",
+      "success_criteria": [
+        "Interpret and analyse geographical data from multiple source types",
+        "Identify and evaluate different stakeholder perspectives",
+        "Apply geographical knowledge and skills to evaluate the issue",
+        "Construct a justified decision supported by evidence from the pre-release and own knowledge"
+      ],
+      "delivers_via": [
+        {"concept_id": "GE-KS4-C010", "primary": true},
+        {"concept_id": "GE-KS4-C009", "primary": false},
+        {"concept_id": "GE-KS4-C008", "primary": false},
+        {"concept_id": "GE-KS4-C002", "primary": false},
+        {"concept_id": "GE-KS4-C006", "primary": false}
+      ],
+      "uses_template": ["VT-18", "VT-11"],
+      "domain_ids": ["GE-KS4-D006"],
+      "locations": [],
+      "builds_on": null,
+      "contrasts_with": null,
+      "complements": ["GS-GE-KS4-009"],
+      "display_category": "Geography",
+      "display_color": "#059669",
+      "display_icon": "assessment"
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+[
+  {
+    "suggestion_id": "TS-CO-KS3-001",
+    "name": "Python Programming: Fundamentals",
+    "suggestion_type": "teacher_convention",
+    "subject": "Computing",
+    "key_stage": "KS3",
+    "curriculum_status": "convention",
+    "curriculum_reference": [
+      "use 2 or more programming languages, at least one of which is textual, to solve a variety of computational problems",
+      "design and develop modular programs that use procedures or functions"
+    ],
+    "pedagogical_rationale": "Python is the standard text-based language for KS3 because its clean syntax (enforced indentation, minimal boilerplate) makes it the most readable language for novice programmers transitioning from block-based environments. This unit covers variables, data types, input/output, selection (if/elif/else), iteration (for and while loops), and string manipulation. Each concept is introduced through a small practical project rather than isolated exercises.",
+    "common_pitfalls": [
+      "Indentation errors causing frustration -- teach that Python uses indentation as syntax, not decoration",
+      "Students copy-pasting code without understanding -- require line-by-line annotation of every program",
+      "Moving too fast from block-based thinking -- allow time for the cognitive shift to text-based programming"
+    ],
+    "definitions": ["Python", "variable", "data type", "string", "integer", "float", "boolean", "if", "elif", "else", "for loop", "while loop", "function", "parameter", "return"],
+    "themes": ["text-based programming", "Python", "computational thinking"],
+    "computational_concept": ["sequence", "selection", "repetition", "variable", "function"],
+    "programming_paradigm": "text_based",
+    "software_tool": "Python",
+    "abstraction_level": "symbolic",
+    "year_groups": ["Y7", "Y8"],
+    "duration_lessons": 12,
+    "delivers_via": [
+      {"concept_id": "CO-KS34-C001", "primary": false},
+      {"concept_id": "CO-KS34-C003", "primary": true}
+    ],
+    "uses_template": "VT-13",
+    "domain_ids": ["CO-KS34-D001"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "terminal",
+    "cross_curricular_links": []
+  },
+  {
+    "suggestion_id": "TS-CO-KS3-002",
+    "name": "Algorithms: Searching and Sorting",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Computing",
+    "key_stage": "KS3",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "understand several key algorithms that reflect computational thinking; use logical reasoning to compare the utility of alternative algorithms for the same problem"
+    ],
+    "pedagogical_rationale": "The NC specifically requires pupils to understand key algorithms including sorting and searching. Linear search and binary search demonstrate that algorithm choice affects efficiency dramatically (binary search is O(log n) vs O(n)). Bubble sort, insertion sort and merge sort show that the same problem (ordering data) can be solved in fundamentally different ways with different performance characteristics. Unplugged activities (sorting pupils by height, searching for a card) make abstract algorithms concrete before implementing in code.",
+    "common_pitfalls": [
+      "Teaching algorithms as abstract flowcharts without physical activity -- pupils must sort real objects first",
+      "Not comparing efficiency -- the whole point is that different algorithms perform differently; time them",
+      "Pupils memorising steps without understanding why -- ask 'what is this algorithm doing at each step and why?'"
+    ],
+    "definitions": ["algorithm", "linear search", "binary search", "bubble sort", "insertion sort", "merge sort", "efficiency", "comparison", "swap", "iteration", "recursion", "Big O notation"],
+    "themes": ["algorithms", "computational thinking", "efficiency"],
+    "computational_concept": ["algorithm", "efficiency", "comparison"],
+    "programming_paradigm": "text_based",
+    "software_tool": "Python",
+    "abstraction_level": "symbolic",
+    "year_groups": ["Y8", "Y9"],
+    "duration_lessons": 8,
+    "delivers_via": [
+      {"concept_id": "CO-KS34-C001", "primary": true}
+    ],
+    "uses_template": "VT-13",
+    "domain_ids": ["CO-KS34-D001"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "terminal",
+    "cross_curricular_links": []
+  },
+  {
+    "suggestion_id": "TS-CO-KS3-003",
+    "name": "Boolean Logic and Binary Arithmetic",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Computing",
+    "key_stage": "KS3",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "understand simple Boolean logic and some of its uses in circuits and programming",
+      "understand how numbers can be represented in binary, and be able to carry out simple operations on binary numbers"
+    ],
+    "pedagogical_rationale": "Boolean logic (AND, OR, NOT) underpins both programming (conditional expressions) and hardware (logic gates). Binary number representation explains how computers store and process all data. Teaching these together reveals that the logical and mathematical foundations of computing are deeply connected. Unplugged binary counting (with cards showing 1, 2, 4, 8, 16) and logic gate circuits (using simple switches or online simulators) make the abstract concrete.",
+    "common_pitfalls": [
+      "Binary treated as pure maths without connection to computing -- always show how binary is used inside the computer",
+      "Boolean logic taught in isolation from programming -- connect AND/OR/NOT to if-statement conditions",
+      "Pupils confusing binary addition with decimal -- use column headings (128, 64, 32, 16, 8, 4, 2, 1) consistently"
+    ],
+    "definitions": ["binary", "bit", "byte", "AND", "OR", "NOT", "truth table", "logic gate", "decimal", "hexadecimal", "overflow", "binary addition"],
+    "themes": ["binary", "Boolean logic", "data representation"],
+    "computational_concept": ["data_representation", "boolean_logic"],
+    "programming_paradigm": null,
+    "software_tool": null,
+    "abstraction_level": "symbolic",
+    "year_groups": ["Y7", "Y8"],
+    "duration_lessons": 6,
+    "delivers_via": [
+      {"concept_id": "CO-KS34-C002", "primary": true}
+    ],
+    "uses_template": "VT-13",
+    "domain_ids": ["CO-KS34-D001", "CO-KS34-D002"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "terminal",
+    "cross_curricular_links": []
+  },
+  {
+    "suggestion_id": "TS-CO-KS3-004",
+    "name": "Computer Systems: Hardware, Software and Networks",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Computing",
+    "key_stage": "KS3",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "understand the hardware and software components that make up computer systems, and how they communicate with one another and with other systems",
+      "understand how instructions are stored and executed within a computer system"
+    ],
+    "pedagogical_rationale": "Understanding how a computer works (CPU, memory, storage, I/O devices) connects the abstract world of programming to physical hardware. The fetch-decode-execute cycle explains how a processor executes instructions stored in memory. Network concepts (LAN, WAN, protocols, IP addressing, client-server vs peer-to-peer) explain how computers communicate. Disassembling an old computer (under supervision) and identifying components is the most memorable lesson in KS3 computing.",
+    "common_pitfalls": [
+      "Teaching hardware as a list of components without explaining how they interact -- use the fetch-decode-execute cycle as the narrative thread",
+      "Network concepts too abstract -- use physical role-play: pupils as routers passing 'packet' cards",
+      "Not distinguishing RAM from storage -- demonstrate by opening too many browser tabs (RAM fills up) vs saving a file (storage)"
+    ],
+    "definitions": ["CPU", "RAM", "ROM", "storage", "motherboard", "input", "output", "fetch-decode-execute", "bus", "LAN", "WAN", "protocol", "IP address", "packet"],
+    "themes": ["computer systems", "hardware", "networks"],
+    "computational_concept": ["computer_architecture", "networking"],
+    "programming_paradigm": null,
+    "software_tool": null,
+    "abstraction_level": "physical",
+    "year_groups": ["Y7"],
+    "duration_lessons": 8,
+    "delivers_via": [
+      {"concept_id": "CO-KS34-C002", "primary": true}
+    ],
+    "uses_template": "VT-06",
+    "domain_ids": ["CO-KS34-D002"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "terminal",
+    "cross_curricular_links": []
+  },
+  {
+    "suggestion_id": "TS-CO-KS3-005",
+    "name": "Data Structures and Modular Programming",
+    "suggestion_type": "teacher_convention",
+    "subject": "Computing",
+    "key_stage": "KS3",
+    "curriculum_status": "convention",
+    "curriculum_reference": [
+      "make appropriate use of data structures",
+      "design and develop modular programs that use procedures or functions"
+    ],
+    "pedagogical_rationale": "After learning basic programming, pupils need to organise data and code. Data structures (lists/arrays, dictionaries, records) teach that choosing how to store data affects how easily it can be processed. Modular programming (functions and procedures) teaches that code should be organised into reusable, testable blocks. A project like a student database or quiz system naturally requires both data structures and modular code, making the need for these concepts genuine rather than manufactured.",
+    "common_pitfalls": [
+      "Teaching data structures in isolation from a project -- pupils need a reason to store data in a list, not just an exercise",
+      "Functions taught as 'mini-programs' without explaining parameters and return values -- these are the interface",
+      "Not testing modular code independently -- teach that each function should be tested separately before integration"
+    ],
+    "definitions": ["list", "array", "dictionary", "record", "index", "function", "procedure", "parameter", "return value", "scope", "local variable", "global variable", "modular"],
+    "themes": ["data structures", "modular programming", "software design"],
+    "computational_concept": ["data_structure", "abstraction", "decomposition"],
+    "programming_paradigm": "text_based",
+    "software_tool": "Python",
+    "abstraction_level": "symbolic",
+    "year_groups": ["Y8", "Y9"],
+    "duration_lessons": 10,
+    "delivers_via": [
+      {"concept_id": "CO-KS34-C003", "primary": true},
+      {"concept_id": "CO-KS34-C001", "primary": false}
+    ],
+    "uses_template": "VT-13",
+    "domain_ids": ["CO-KS34-D001"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "terminal",
+    "cross_curricular_links": []
+  },
+  {
+    "suggestion_id": "TS-CO-KS3-006",
+    "name": "Cyber Security and Online Safety",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Computing",
+    "key_stage": "KS3",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "understand a range of ways to use technology safely, respectfully, responsibly and securely, including protecting their online identity and privacy",
+      "recognise inappropriate content, contact and conduct and know how to report concerns"
+    ],
+    "pedagogical_rationale": "KS3 online safety escalates from KS2's personal safety focus to understanding the technical and social dimensions of cyber security. Pupils learn how attacks work (phishing, social engineering, malware, SQL injection at a conceptual level), why passwords are important (hashing, brute force), and how organisations protect data (encryption, firewalls, access control). Understanding the attack surface makes pupils more effective at protecting themselves and prepares for GCSE content on ethical hacking and network security.",
+    "common_pitfalls": [
+      "Scare-based teaching without empowerment -- teach what TO do, not just what to fear",
+      "Only covering passwords -- cyber security encompasses social engineering, phishing, network security and data protection",
+      "Not connecting to GDPR and data protection law -- KS3 pupils need to understand their data rights"
+    ],
+    "definitions": ["cyber security", "phishing", "social engineering", "malware", "encryption", "firewall", "authentication", "two-factor authentication", "GDPR", "data protection", "hashing", "brute force"],
+    "themes": ["cyber security", "online safety", "data protection", "privacy"],
+    "computational_concept": ["digital_literacy", "networking"],
+    "programming_paradigm": null,
+    "software_tool": null,
+    "abstraction_level": "visual",
+    "year_groups": ["Y7", "Y8", "Y9"],
+    "duration_lessons": 6,
+    "delivers_via": [
+      {"concept_id": "CO-KS34-C004", "primary": true}
+    ],
+    "uses_template": "VT-11",
+    "domain_ids": ["CO-KS34-D003"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "terminal",
+    "cross_curricular_links": [
+      {
+        "target_id": "TS-CI-KS3-005",
+        "hook": "Human rights, digital rights, privacy and surveillance",
+        "strength": "moderate"
+      }
+    ]
+  },
+  {
+    "suggestion_id": "TS-CO-KS3-007",
+    "name": "Web Development: HTML, CSS and JavaScript",
+    "suggestion_type": "teacher_convention",
+    "subject": "Computing",
+    "key_stage": "KS3",
+    "curriculum_status": "convention",
+    "curriculum_reference": [
+      "undertake creative projects that involve selecting, using, and combining multiple applications, preferably across a range of devices, to achieve challenging goals",
+      "use 2 or more programming languages, at least one of which is textual"
+    ],
+    "pedagogical_rationale": "Web development fulfils the NC requirement for a second programming language and produces a visible, shareable outcome. HTML (structure), CSS (presentation), and JavaScript (behaviour) demonstrate separation of concerns -- a fundamental software engineering principle. Building a multi-page website with interactive elements (form validation, image galleries, responsive layout) requires all three languages working together. Every website pupils use daily is built with these technologies, making the learning immediately relevant.",
+    "common_pitfalls": [
+      "Spending too long on HTML/CSS and not reaching JavaScript -- plan the sequence so JS is introduced by mid-unit",
+      "Using WYSIWYG editors instead of writing code -- the learning is in the code, not the visual editor",
+      "Not testing across different browsers and screen sizes -- responsive design is essential in the real world"
+    ],
+    "definitions": ["HTML", "CSS", "JavaScript", "element", "tag", "attribute", "selector", "property", "value", "DOM", "event", "function", "responsive", "media query"],
+    "themes": ["web development", "programming", "creative computing"],
+    "computational_concept": ["sequence", "selection", "abstraction"],
+    "programming_paradigm": "text_based",
+    "software_tool": "HTML/CSS/JavaScript",
+    "abstraction_level": "symbolic",
+    "year_groups": ["Y8", "Y9"],
+    "duration_lessons": 10,
+    "delivers_via": [
+      {"concept_id": "CO-KS34-C003", "primary": true}
+    ],
+    "uses_template": "VT-13",
+    "domain_ids": ["CO-KS34-D001", "CO-KS34-D003"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "terminal",
+    "cross_curricular_links": []
+  },
+  {
+    "suggestion_id": "TS-CO-KS3-008",
+    "name": "Ethics of AI and Digital Technology",
+    "suggestion_type": "teacher_convention",
+    "subject": "Computing",
+    "key_stage": "KS3",
+    "curriculum_status": "convention",
+    "curriculum_reference": [
+      "understand a range of ways to use technology safely, respectfully, responsibly and securely",
+      "undertake creative projects that involve selecting, using, and combining multiple applications"
+    ],
+    "pedagogical_rationale": "Artificial intelligence, algorithmic bias, surveillance capitalism, and automation are the defining ethical challenges of contemporary computing. KS3 pupils need conceptual tools to critically evaluate these technologies rather than passively consuming them. Case studies (facial recognition bias, social media algorithms, autonomous vehicles, deepfakes) develop ethical reasoning skills. Connecting to Citizenship (rights, law, democracy) and RS (ethics, moral reasoning) creates genuinely cross-curricular learning.",
+    "common_pitfalls": [
+      "Presenting AI as either utopia or dystopia -- teach nuanced evaluation of trade-offs",
+      "Not grounding discussion in technical understanding -- pupils must understand how the technology works before debating its ethics",
+      "Discussion without structure -- use ethical frameworks (utilitarian, deontological, virtue ethics) at an accessible level"
+    ],
+    "definitions": ["artificial intelligence", "algorithm", "bias", "data", "privacy", "surveillance", "automation", "deepfake", "machine learning", "ethical framework", "informed consent"],
+    "themes": ["AI ethics", "digital citizenship", "algorithmic bias", "privacy"],
+    "computational_concept": ["digital_literacy", "algorithm"],
+    "programming_paradigm": null,
+    "software_tool": null,
+    "abstraction_level": "visual",
+    "year_groups": ["Y9"],
+    "duration_lessons": 6,
+    "delivers_via": [
+      {"concept_id": "CO-KS34-C004", "primary": true}
+    ],
+    "uses_template": "VT-11",
+    "domain_ids": ["CO-KS34-D003"],
+    "display_category": "Topic Suggestion",
+    "display_color": "#059669",
+    "display_icon": "terminal",
+    "cross_curricular_links": [
+      {
+        "target_id": "TS-CI-KS3-005",
+        "hook": "Human rights, digital rights, surveillance and democracy",
+        "strength": "strong"
+      },
+      {
+        "target_id": "EU-EN-KS3-009",
+        "hook": "Persuasive and argumentative writing on technology ethics",
+        "strength": "moderate"
+      }
+    ]
+  }
+]

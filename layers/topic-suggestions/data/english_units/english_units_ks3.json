@@ -1,0 +1,835 @@
+{
+  "version": "1.0",
+  "subject": "English",
+  "key_stage": "KS3",
+  "authored_by": "english-specialist-teacher",
+  "authored_date": "2026-02-25",
+  "note": "EnglishUnit nodes for KS3 (Y7-Y9). Single English subject covering Reading, Writing, Grammar/Vocabulary, and Spoken English. Shakespeare study is mandatory (NC requirement). Grammar is embedded within reading and writing units rather than year-specific. Assessment is formative throughout KS3 — no statutory exams. Units build GCSE readiness across both Literature and Language papers.",
+  "units": [
+    {
+      "unit_id": "EU-EN-KS3-001",
+      "name": "Shakespeare: A Midsummer Night's Dream",
+      "unit_type": "text_study_analytical",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y7", "Y8"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "NC KS3 English Reading: 'reading at least two plays by Shakespeare'",
+        "NC KS3 English Reading: 'understanding how the work of dramatists is communicated effectively through performance and how alternative staging allows for different interpretations of a play'"
+      ],
+      "text_type": "drama",
+      "text_features_to_teach": [
+        "dramatic comedy conventions (misunderstanding, disguise, resolution through marriage)",
+        "multiple plot strands and how they interweave (lovers, mechanicals, fairies)",
+        "verse versus prose as indicators of character status",
+        "figurative language in Shakespeare (imagery of nature, magic, and transformation)"
+      ],
+      "writing_outcome": "Write an analytical paragraph (300-400 words) exploring how Shakespeare uses language to present the theme of love or transformation in A Midsummer Night's Dream, using quotations to support ideas",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "A Midsummer Night's Dream", "author": "William Shakespeare", "publication_year": 1596, "text_type": "drama", "suitability": "Y7-Y8", "note": "Most accessible Shakespeare comedy for KS3; multiple plot strands sustain engagement across ability range"},
+        {"title": "A Midsummer Night's Dream (Cambridge School Shakespeare)", "author": "Rex Gibson (ed.)", "publication_year": 2014, "text_type": "annotated edition", "suitability": "Y7-Y9", "note": "Glossed edition with activities for classroom study"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "dramatic_performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["comedy", "verse", "prose", "figurative language", "metaphor", "dramatic irony", "soliloquy", "aside", "plot strand"],
+      "definitions": ["comedy", "verse", "prose", "figurative language", "dramatic irony", "transformation", "mechanicals", "iambic pentameter"],
+      "pedagogical_rationale": "A Midsummer Night's Dream is the most widely-taught Shakespeare play at KS3 because its comic plot, magical setting, and multiple storylines are accessible and enjoyable for younger students. The play introduces key dramatic conventions (verse/prose distinction, dramatic irony, multiple plot strands) that prepare students for GCSE Shakespeare study. The comedy genre is less intimidating than tragedy for first encounters with Shakespeare.",
+      "common_pitfalls": [
+        "Students retell plot rather than analysing how Shakespeare creates effects through language",
+        "The verse/prose distinction is noticed but not analysed for what it reveals about character and status",
+        "The fairy world treated as simply entertaining rather than explored for what it reveals about the real world of the play"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-003", "hook": "Elizabethan theatre, society, and the role of drama in Tudor England", "strength": "strong"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C004", "primary": true},
+        {"concept_id": "EN-KS3-C024", "primary": false},
+        {"concept_id": "EN-KS3-C025", "primary": false},
+        {"concept_id": "EN-KS3-C015", "primary": false},
+        {"concept_id": "EN-KS3-C073", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-23"],
+      "in_genre": [{"genre_id": "GEN-DRAMA", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-002",
+      "name": "Shakespeare: The Tempest",
+      "unit_type": "text_study_analytical",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y8", "Y9"],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "NC KS3 English Reading: 'reading at least two plays by Shakespeare'",
+        "NC KS3 English Reading: 'knowing how language, including figurative language, vocabulary choice, grammar, text structure and organisational features, presents meaning'"
+      ],
+      "text_type": "drama",
+      "text_features_to_teach": [
+        "dramatic verse as vehicle for complex ideas (Prospero's speeches on power and forgiveness)",
+        "colonialism and power dynamics (Prospero-Caliban-Ariel relationship)",
+        "structural control (Aristotelian unities of time, place, and action)",
+        "directorial interpretation (how staging choices shape audience understanding)"
+      ],
+      "writing_outcome": "Write an analytical essay (400-500 words) exploring how Shakespeare presents the theme of power or forgiveness in The Tempest, evaluating how directorial choices could affect audience interpretation",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "The Tempest", "author": "William Shakespeare", "publication_year": 1611, "text_type": "drama", "suitability": "Y8-Y9", "note": "More linguistically demanding than A Midsummer Night's Dream; themes of power and colonialism reward mature discussion"},
+        {"title": "The Tempest (Cambridge School Shakespeare)", "author": "Rex Gibson (ed.)", "publication_year": 2014, "text_type": "annotated edition", "suitability": "Y8-Y9", "note": "Glossed edition with critical context for classroom study"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "dramatic_performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["romance", "epilogue", "colonialism", "allegory", "dramatic verse", "unities", "stage direction", "monologue"],
+      "definitions": ["colonialism", "power", "forgiveness", "allegory", "romance", "epilogue", "usurpation", "reconciliation"],
+      "pedagogical_rationale": "The Tempest provides a more complex second Shakespeare text for KS3, building on the dramatic reading skills developed with A Midsummer Night's Dream. Its themes of colonialism, power, and forgiveness invite genuine critical debate about how we read Shakespeare in a modern context. The Prospero-Caliban relationship is a rich entry point for discussing how texts can be reinterpreted across time. The play prepares students for the analytical demands of GCSE Shakespeare.",
+      "common_pitfalls": [
+        "Students assume Prospero is straightforwardly heroic without questioning his treatment of Caliban and Ariel",
+        "Colonial reading treated as the only valid interpretation rather than one among several",
+        "Complex verse passages skipped rather than worked through slowly with students"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-004", "hook": "European colonialism, exploration, and the Age of Empire", "strength": "strong"},
+        {"target_id": "GS-GE-KS3-007", "hook": "Colonial encounters and their legacy in Africa — parallels with Prospero-Caliban dynamic", "strength": "moderate"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C004", "primary": true},
+        {"concept_id": "EN-KS3-C013", "primary": false},
+        {"concept_id": "EN-KS3-C023", "primary": false},
+        {"concept_id": "EN-KS3-C024", "primary": false},
+        {"concept_id": "EN-KS3-C072", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-23"],
+      "in_genre": [{"genre_id": "GEN-DRAMA", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-KS3-001",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-003",
+      "name": "Romantic Poetry: Nature and Imagination",
+      "unit_type": "poetry_study",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y8", "Y9"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "NC KS3 English Reading: 'reading a wide range of poetry, both pre-1914 and contemporary, including: Romantic poetry'",
+        "NC KS3 English Reading: 'learning new vocabulary, relating it explicitly to known vocabulary and understanding it with the help of context and dictionaries'"
+      ],
+      "text_type": "poetry",
+      "text_features_to_teach": [
+        "Romantic conventions (nature as sublime, imagination as creative power, the individual versus society)",
+        "imagery and figurative language in poetry (extended metaphor, personification, synaesthesia)",
+        "metre and rhythm (iambic pentameter, tetrameter) and their contribution to meaning",
+        "relationship between poetic form and content (sonnet, ode, lyric)"
+      ],
+      "writing_outcome": "Write an analytical comparison (400-500 words) of two Romantic poems exploring how the poets use imagery and form to present ideas about nature or imagination",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "I Wandered Lonely as a Cloud", "author": "William Wordsworth", "publication_year": 1807, "text_type": "lyric poem", "suitability": "Y8-Y9", "note": "Accessible entry to Romantic poetry; clear imagery and regular metre"},
+        {"title": "Tyger Tyger", "author": "William Blake", "publication_year": 1794, "text_type": "lyric poem", "suitability": "Y8-Y9", "note": "Powerful imagery with accessible repeated structure"},
+        {"title": "To Autumn", "author": "John Keats", "publication_year": 1820, "text_type": "ode", "suitability": "Y9", "note": "Rich sensory imagery; more demanding vocabulary rewards close reading"},
+        {"title": "Ozymandias", "author": "Percy Bysshe Shelley", "publication_year": 1818, "text_type": "sonnet", "suitability": "Y8-Y9", "note": "Sonnet form; themes of power and transience connect to GCSE anthology"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "poetry_recitation",
+      "assessment_mode": "formative",
+      "literary_terms": ["Romanticism", "sublime", "imagery", "extended metaphor", "personification", "metre", "iambic pentameter", "ode", "sonnet", "lyric"],
+      "definitions": ["Romanticism", "sublime", "imagery", "extended metaphor", "personification", "metre", "ode", "Industrial Revolution"],
+      "pedagogical_rationale": "Romantic poetry is a statutory requirement at KS3 and the foundational literary movement for understanding the English poetic tradition. Studying Wordsworth, Blake, Shelley, and Keats introduces students to the analytical vocabulary and close reading skills they will need at GCSE (Ozymandias appears on the AQA Power and Conflict anthology). The Romantic focus on nature, imagination, and individual feeling provides an accessible emotional entry point for teenage readers while demanding sophisticated analysis of form and language.",
+      "common_pitfalls": [
+        "Treating Romantic poetry as simply 'about nature' without exploring the philosophical ideas about imagination, freedom, and the self",
+        "Students identify imagery (simile, metaphor) without analysing why the poet chose that particular image and its effect",
+        "Historical context (Industrial Revolution, French Revolution) presented as background information rather than integrated into analysis of why these poets valued nature and imagination"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-004", "hook": "Industrial Revolution, urbanisation, and the Romantic reaction against mechanisation", "strength": "strong"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C002", "primary": true},
+        {"concept_id": "EN-KS3-C019", "primary": false},
+        {"concept_id": "EN-KS3-C020", "primary": false},
+        {"concept_id": "EN-KS3-C015", "primary": false},
+        {"concept_id": "EN-KS3-C079", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-23"],
+      "in_genre": [{"genre_id": "GEN-POET", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-004",
+      "name": "Victorian Prose: Dickens and Conan Doyle",
+      "unit_type": "text_study_analytical",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y8", "Y9"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "NC KS3 English Reading: 'reading at least one play by Shakespeare, works from the English literary heritage and works from other cultures and traditions'",
+        "NC KS3 English Reading: 'studying setting, plot, and characterisation, and the effects of these'"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "Victorian narrative voice (omniscient narrator, authorial commentary, direct reader address)",
+        "characterisation through physical description, speech, and social context",
+        "social commentary embedded in fiction (Dickens' critique of poverty and institutions)",
+        "genre conventions of detective fiction (mystery, deduction, red herring, resolution)"
+      ],
+      "writing_outcome": "Write a comparative analytical essay (400-500 words) comparing how Dickens and Conan Doyle use narrative voice and characterisation to create different effects for the reader",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "Oliver Twist (selected chapters)", "author": "Charles Dickens", "publication_year": 1838, "text_type": "novel extract", "suitability": "Y8-Y9", "note": "Vivid social commentary; accessible through selected chapters focusing on key scenes"},
+        {"title": "A Christmas Carol", "author": "Charles Dickens", "publication_year": 1843, "text_type": "novella", "suitability": "Y8-Y9", "note": "Short enough for whole-text study; excellent GCSE preparation (AQA 19th-century novel)"},
+        {"title": "The Speckled Band", "author": "Arthur Conan Doyle", "publication_year": 1892, "text_type": "short story", "suitability": "Y8-Y9", "note": "Classic detective story; Watson as narrator provides accessible entry to narrative perspective"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "dramatic_reading",
+      "assessment_mode": "formative",
+      "literary_terms": ["omniscient narrator", "social commentary", "characterisation", "motif", "gothic", "detective fiction", "red herring", "deduction"],
+      "definitions": ["omniscient", "social commentary", "Victorian", "workhouse", "deduction", "narrative voice", "characterisation", "genre"],
+      "pedagogical_rationale": "Victorian fiction is the dominant prose tradition at GCSE (A Christmas Carol, Jekyll and Hyde, Frankenstein) and KS3 is the time to build familiarity with 19th-century language and conventions. Pairing Dickens with Conan Doyle enables comparative analysis of two very different Victorian voices — Dickens' moral earnestness versus Conan Doyle's analytical precision — and introduces students to the concept that genre shapes how stories are told. The extract-based approach keeps the reading load manageable while building confidence with pre-1914 prose.",
+      "common_pitfalls": [
+        "Victorian language treated as a barrier rather than an opportunity to develop reading resilience and vocabulary inference skills",
+        "Dickens reduced to 'he wrote about poverty' without analysing his specific narrative techniques",
+        "Comparative work is sequential (all about Dickens, then all about Conan Doyle) rather than integrated around shared analytical questions"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-004", "hook": "Victorian Britain — poverty, workhouses, social reform, industrialisation, and the growth of Empire", "strength": "strong"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C002", "primary": true},
+        {"concept_id": "EN-KS3-C021", "primary": false},
+        {"concept_id": "EN-KS3-C022", "primary": false},
+        {"concept_id": "EN-KS3-C023", "primary": false},
+        {"concept_id": "EN-KS3-C013", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-23"],
+      "in_genre": [{"genre_id": "GEN-FICT", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-005",
+      "name": "Contemporary Fiction: Coming-of-Age Novel",
+      "unit_type": "text_study_analytical",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y7", "Y8"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "NC KS3 English Reading: 'choosing and reading books independently for challenge, interest and enjoyment'",
+        "NC KS3 English Reading: 'studying setting, plot, and characterisation, and the effects of these'"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "narrative perspective (first person, limited third person) and its effect on reader engagement",
+        "setting as more than backdrop — how place shapes character and theme",
+        "authorial intent — what the writer is trying to make the reader think, feel, or question",
+        "character development across a whole text (character arc, internal conflict)"
+      ],
+      "writing_outcome": "Write an analytical response (300-400 words) exploring how the author uses narrative perspective and setting to present ideas about identity or belonging, using embedded quotations",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "Refugee Boy", "author": "Benjamin Zephaniah", "publication_year": 2001, "text_type": "novel", "suitability": "Y7-Y8", "note": "Accessible contemporary voice; themes of identity and belonging with refugee context"},
+        {"title": "The Boy at the Back of the Class", "author": "Onjali Q. Rauf", "publication_year": 2018, "text_type": "novel", "suitability": "Y7", "note": "First-person child narrator; accessible entry to refugee themes"},
+        {"title": "Noughts and Crosses", "author": "Malorie Blackman", "publication_year": 2001, "text_type": "novel", "suitability": "Y8", "note": "Dual narrative; powerful exploration of prejudice and identity through speculative fiction"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "book_discussion",
+      "assessment_mode": "formative",
+      "literary_terms": ["narrative perspective", "first person", "third person limited", "character arc", "setting", "theme", "authorial intent"],
+      "definitions": ["narrative perspective", "identity", "belonging", "coming-of-age", "character arc", "authorial intent", "theme"],
+      "pedagogical_rationale": "A contemporary whole-text novel study at Y7-Y8 develops the reading stamina and analytical habits needed for GCSE while giving students the pleasure of sustained engagement with a story that speaks to their own experiences. Coming-of-age novels about identity and belonging resonate powerfully with young adolescents and provide rich opportunities for personal response alongside analytical writing. Post-2000 fiction ensures students encounter diverse voices and contemporary contexts alongside the literary heritage texts studied elsewhere.",
+      "common_pitfalls": [
+        "Analysis stays at the level of personal response ('I liked this character because...') without moving to analytical writing about authorial choices",
+        "Plot retelling dominates over analysis of how the author creates effects",
+        "Theme identified in broad terms ('it's about racism') without tracing how the theme is developed through specific textual evidence"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-007", "hook": "African diaspora, migration, and sense of place — connecting fiction about belonging to geographical study of place", "strength": "moderate"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C003", "primary": true},
+        {"concept_id": "EN-KS3-C023", "primary": false},
+        {"concept_id": "EN-KS3-C010", "primary": false},
+        {"concept_id": "EN-KS3-C001", "primary": false},
+        {"concept_id": "EN-KS3-C085", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-23"],
+      "in_genre": [{"genre_id": "GEN-FICT", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-006",
+      "name": "Poetry Comparison and Unseen Poetry",
+      "unit_type": "poetry_study",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y9"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "NC KS3 English Reading: 'making critical comparisons across texts'",
+        "NC KS3 English Reading: 'knowing how language, including figurative language, vocabulary choice, grammar, text structure and organisational features, presents meaning'"
+      ],
+      "text_type": "poetry",
+      "text_features_to_teach": [
+        "systematic approach to unseen poetry (read, annotate, identify key technique, analyse effect)",
+        "comparative analytical writing (integrating analysis of two poems rather than treating sequentially)",
+        "how poets use form and structure to shape meaning (volta, enjambment, caesura, stanza breaks)",
+        "critical evaluation of poets' choices — moving beyond description to judgement"
+      ],
+      "writing_outcome": "Write a comparative analytical essay (400-500 words) comparing how two poems present a shared theme, analysing language, form, and structure in both poems; then write an independent response (200-300 words) to an unseen poem",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "Half-Caste", "author": "John Agard", "publication_year": 1996, "text_type": "poem", "suitability": "Y9", "note": "Strong voice; challenges standard analytical approach with Creole register"},
+        {"title": "Checking Out Me History", "author": "John Agard", "publication_year": 2005, "text_type": "poem", "suitability": "Y9", "note": "Identity and education themes; appears on AQA GCSE anthology"},
+        {"title": "The Emigree", "author": "Carol Rumens", "publication_year": 1993, "text_type": "poem", "suitability": "Y9", "note": "Complex imagery of place and memory; appears on AQA GCSE anthology"},
+        {"title": "Tissue", "author": "Imtiaz Dharker", "publication_year": 2006, "text_type": "poem", "suitability": "Y9", "note": "Extended metaphor; demanding but rewarding for close reading at Y9"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": null,
+      "assessment_mode": "formative",
+      "literary_terms": ["volta", "enjambment", "caesura", "stanza", "comparative", "form", "structure", "voice", "tone", "register"],
+      "definitions": ["comparative", "volta", "enjambment", "caesura", "unseen", "analyse", "evaluate", "interpretation"],
+      "pedagogical_rationale": "Poetry comparison is the most challenging analytical skill students will face at GCSE, and Y9 is the critical preparation year. This unit develops the ability to hold two poems in mind simultaneously and weave analysis together — rather than writing about one poem then the other. The unseen poetry component builds confidence with unfamiliar texts by teaching a replicable analytical method. Studying poems that appear on the GCSE anthology (Agard, Rumens, Dharker) provides a head start for Literature Paper 2.",
+      "common_pitfalls": [
+        "Comparative essays structured as 'Poem A' then 'Poem B' rather than integrated thematic comparison",
+        "Unseen poetry responses default to feature-spotting ('the poet uses alliteration') without analysing effect",
+        "Students panic with unseen poems because they feel they should already know the 'right' answer"
+      ],
+      "cross_curricular_links": [],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C026", "primary": true},
+        {"concept_id": "EN-KS3-C019", "primary": false},
+        {"concept_id": "EN-KS3-C020", "primary": false},
+        {"concept_id": "EN-KS3-C016", "primary": false},
+        {"concept_id": "EN-KS3-C011", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-23"],
+      "in_genre": [{"genre_id": "GEN-POET", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-KS3-003",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-007",
+      "name": "Literary Non-Fiction: Travel Writing and Memoir",
+      "unit_type": "genre_study",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y8", "Y9"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "NC KS3 English Reading: 'reading a wide range of non-fiction, including essays, reviews, and journalism'",
+        "NC KS3 English Reading: 'knowing the purpose, audience for and context of the writing and drawing on this knowledge to support comprehension'"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "personal voice and perspective in non-fiction (how the writer's identity shapes what they see and how they describe it)",
+        "language analysis in non-fiction texts (rhetorical technique, imagery, structural choices)",
+        "comparing writers' perspectives on the same subject or experience",
+        "how historical period shapes non-fiction writing (19th-century travel writing versus modern memoir)"
+      ],
+      "writing_outcome": "Write a literary non-fiction piece (400-500 words) — a travel account or memoir extract — using personal voice, descriptive techniques, and conscious structural choices; then write a comparative analysis (300-400 words) of two non-fiction extracts",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "Notes from a Small Island (extract)", "author": "Bill Bryson", "publication_year": 1995, "text_type": "travel writing", "suitability": "Y8-Y9", "note": "Humorous, accessible modern travel writing with distinctive personal voice"},
+        {"title": "Travels with a Donkey (extract)", "author": "Robert Louis Stevenson", "publication_year": 1879, "text_type": "travel writing", "suitability": "Y9", "note": "19th-century travel writing for period comparison; beautiful descriptive prose"},
+        {"title": "I Know Why the Caged Bird Sings (extract)", "author": "Maya Angelou", "publication_year": 1969, "text_type": "memoir", "suitability": "Y8-Y9", "note": "Powerful personal voice; memoir conventions with literary quality"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": null,
+      "assessment_mode": "formative",
+      "literary_terms": ["perspective", "voice", "register", "rhetoric", "imagery", "structural shift", "anecdote", "tone"],
+      "definitions": ["literary non-fiction", "travel writing", "memoir", "perspective", "voice", "register", "rhetoric", "anecdote"],
+      "pedagogical_rationale": "Literary non-fiction is central to GCSE English Language Paper 2, where students must analyse and compare 19th-century and modern non-fiction extracts under timed conditions. KS3 is the time to build familiarity with the genre and the comparative skills it demands. Travel writing and memoir provide accessible, engaging entry points because they combine vivid descriptive writing with personal voice — making it easier for students to see how language choices create effects in non-fiction as well as fiction.",
+      "common_pitfalls": [
+        "Non-fiction treated as transparent ('it's just facts') rather than analysed for how the writer crafts meaning through language and structure",
+        "Comparative analysis is superficial ('Both writers describe places') without analysing differences in perspective, purpose, and technique",
+        "Historical context of 19th-century extracts presented as background rather than integrated into analysis of how period shapes voice and purpose"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-007", "hook": "Place writing and geographical perspective — how writers represent African landscapes and peoples", "strength": "moderate"},
+        {"target_id": "HS-KS3-004", "hook": "19th-century exploration and Empire — travel writing as a lens on colonial attitudes", "strength": "strong"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C012", "primary": true},
+        {"concept_id": "EN-KS3-C017", "primary": false},
+        {"concept_id": "EN-KS3-C016", "primary": false},
+        {"concept_id": "EN-KS3-C001", "primary": false},
+        {"concept_id": "EN-KS3-C055", "primary": false}
+      ],
+      "uses_template": ["VT-07"],
+      "in_genre": [{"genre_id": "GEN-LITNF", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-008",
+      "name": "Modern Drama: Post-War Plays",
+      "unit_type": "text_study_analytical",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y9"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "NC KS3 English Reading: 'reading at least one play by Shakespeare, works from the English literary heritage and works from other cultures and traditions'",
+        "NC KS3 English Reading: 'understanding how the work of dramatists is communicated effectively through performance'"
+      ],
+      "text_type": "drama",
+      "text_features_to_teach": [
+        "dramatic irony and its use as a tool for social commentary",
+        "staging and set design as carriers of meaning (single room, realistic props, symbolic elements)",
+        "character as vehicle for authorial message (the Inspector as dramatic device, not a realistic person)",
+        "audience response across time periods (how meaning changes as context changes)"
+      ],
+      "writing_outcome": "Write an analytical essay (400-500 words) exploring how the dramatist uses dramatic techniques to present ideas about social responsibility or class, analysing how staging choices and dramatic irony contribute to the play's message",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "An Inspector Calls", "author": "J.B. Priestley", "publication_year": 1945, "text_type": "drama", "suitability": "Y9", "note": "Most widely-studied modern text at GCSE; KS3 study gives significant GCSE advantage"},
+        {"title": "Journey's End", "author": "R.C. Sherriff", "publication_year": 1928, "text_type": "drama", "suitability": "Y9", "note": "Alternative: WWI setting with powerful dramatic tension in confined space"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "dramatic_performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["dramatic irony", "stage direction", "didactic", "morality play", "dramatic device", "social commentary", "naturalistic", "symbolism"],
+      "definitions": ["dramatic irony", "social responsibility", "class system", "didactic", "morality play", "socialism", "capitalism", "welfare state"],
+      "pedagogical_rationale": "Post-war British drama is the dominant modern text category at GCSE (An Inspector Calls is studied by 75-80% of AQA entries). Introducing it at Y9 gives students a significant advantage: they arrive at GCSE with familiarity with the text, the genre conventions, and the analytical vocabulary. The play's tight structure, didactic purpose, and social themes provide excellent material for developing the kind of analytical writing that GCSE demands — moving beyond what characters do to how the dramatist constructs meaning.",
+      "common_pitfalls": [
+        "Students treat the play as a whodunit mystery rather than analysing its moral argument about collective responsibility",
+        "The Inspector analysed as a realistic character rather than understood as a dramatic device",
+        "Historical context (1912 setting, 1945 audience) mentioned but not integrated into analysis of how dramatic irony works across the two time frames"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-005", "hook": "Edwardian class system, World Wars, creation of the welfare state, and post-war social change", "strength": "strong"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C003", "primary": true},
+        {"concept_id": "EN-KS3-C024", "primary": false},
+        {"concept_id": "EN-KS3-C025", "primary": false},
+        {"concept_id": "EN-KS3-C032", "primary": false},
+        {"concept_id": "EN-KS3-C013", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-23"],
+      "in_genre": [{"genre_id": "GEN-DRAMA", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": "EU-EN-KS3-002",
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-009",
+      "name": "Persuasive and Argumentative Writing",
+      "unit_type": "skills_practice",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y7", "Y8", "Y9"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "NC KS3 English Writing: 'writing for a wide range of purposes and audiences, including: well-structured formal expository and narrative essays; stories, scripts, poetry and other imaginative writing; notes and polished scripts for talks and presentations'",
+        "NC KS3 English Writing: 'using Standard English confidently in their own writing and speech'"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "rhetorical techniques for persuasion (tricolon, anaphora, rhetorical question, direct address, hyperbole)",
+        "counter-argument and rebuttal — acknowledging and dismantling opposing views",
+        "formal register and Standard English in argumentative writing",
+        "structural progression from hook to developed argument to powerful conclusion"
+      ],
+      "writing_outcome": "Write an argumentative essay or speech (500-600 words) on a topical issue, deploying at least three rhetorical techniques, including a counter-argument paragraph, and maintaining formal register throughout",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "I Have a Dream (extract)", "author": "Martin Luther King Jr.", "publication_year": 1963, "text_type": "speech", "suitability": "Y7-Y9", "note": "Master class in anaphora, tricolon, and emotional persuasion"},
+        {"title": "Malala's UN Speech (extract)", "author": "Malala Yousafzai", "publication_year": 2013, "text_type": "speech", "suitability": "Y7-Y9", "note": "Contemporary model; accessible language with powerful rhetorical structure"},
+        {"title": "How to Argue with a Racist (extract)", "author": "Adam Rutherford", "publication_year": 2020, "text_type": "non-fiction", "suitability": "Y9", "note": "Evidence-based argumentation model; counter-argument technique"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "debate",
+      "assessment_mode": "formative",
+      "literary_terms": ["rhetoric", "anaphora", "tricolon", "hyperbole", "rhetorical question", "direct address", "counter-argument", "rebuttal"],
+      "definitions": ["rhetoric", "persuasion", "argument", "counter-argument", "rebuttal", "register", "Standard English", "formal"],
+      "pedagogical_rationale": "Persuasive and argumentative writing is the backbone of GCSE English Language Paper 2 Section B, where students must write transactional pieces (speech, article, letter) under timed conditions. Building rhetorical competence across all three years of KS3 ensures students arrive at GCSE with an internalised toolkit of techniques rather than a memorised list. The progression from Y7 (basic rhetorical awareness) to Y9 (sophisticated counter-argument with controlled register) mirrors the demands of the exam.",
+      "common_pitfalls": [
+        "Rhetorical questions overused as the only persuasive technique — students need a range of devices",
+        "Counter-argument paragraph is a token 'some people think...' followed by immediate dismissal rather than genuine engagement with opposing views",
+        "Register inconsistency — essay opens formally then lapses into colloquial language",
+        "Arguments presented as a list of points rather than building to a cumulative case"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-005", "hook": "Historical arguments and speeches — suffrage, civil rights, anti-apartheid as models of persuasive rhetoric", "strength": "strong"},
+        {"target_id": "GS-GE-KS3-003", "hook": "Environmental issues as stimulus for argumentative writing — climate change, sustainability, resource management", "strength": "moderate"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C035", "primary": true},
+        {"concept_id": "EN-KS3-C042", "primary": false},
+        {"concept_id": "EN-KS3-C038", "primary": false},
+        {"concept_id": "EN-KS3-C044", "primary": false},
+        {"concept_id": "EN-KS3-C041", "primary": false}
+      ],
+      "uses_template": ["VT-24"],
+      "in_genre": [{"genre_id": "GEN-PERSUADE", "role": "primary"}, {"genre_id": "GEN-TRANS", "role": "secondary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D002"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-010",
+      "name": "Creative Writing: Descriptive and Narrative",
+      "unit_type": "skills_practice",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y7", "Y8", "Y9"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "NC KS3 English Writing: 'writing for a wide range of purposes and audiences, including: stories, scripts, poetry and other imaginative writing'",
+        "NC KS3 English Writing: 'applying their growing knowledge of vocabulary, grammar and text structure to their writing and selecting the appropriate form'"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "sensory detail and controlled imagery (showing not telling)",
+        "varied sentence structures for effect (short for tension, complex for description, minor for impact)",
+        "structural control (opening hook, shift in pace or perspective, satisfying ending)",
+        "conscious vocabulary choice — ambitious but precise, avoiding purple prose"
+      ],
+      "writing_outcome": "Write a narrative or descriptive piece (450-600 words) in response to a visual or textual prompt, demonstrating controlled voice, varied sentence structures, and effective structural choices",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "The Woman in Black (opening chapter)", "author": "Susan Hill", "publication_year": 1983, "text_type": "novel extract", "suitability": "Y8-Y9", "note": "Master class in atmospheric descriptive writing and building tension"},
+        {"title": "Stone Cold (opening)", "author": "Robert Swindells", "publication_year": 1993, "text_type": "novel extract", "suitability": "Y7-Y8", "note": "Dual narrative voice; immediate engagement through character voice"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": null,
+      "assessment_mode": "formative",
+      "literary_terms": ["imagery", "sensory detail", "pathetic fallacy", "symbolism", "narrative voice", "cyclical structure", "foreshadowing"],
+      "definitions": ["narrative", "descriptive", "imagery", "atmosphere", "tension", "voice", "structure", "sensory detail"],
+      "pedagogical_rationale": "Creative writing at GCSE (Language Paper 1 Section B) carries 40 marks and is where many students earn or lose their target grade. KS3 is the time to develop the craft habits that distinguish high-quality creative writing: showing not telling, varying sentence structures for deliberate effect, and making conscious structural choices. Regular practice across all three years builds the writing stamina and technical range that timed exam conditions demand.",
+      "common_pitfalls": [
+        "Writing too much — 800 uncontrolled words rather than 500 precise ones with clear structural shape",
+        "Figurative language piled on without consideration of overall effect (mixed metaphors, cliched similes)",
+        "Opening with weather or waking up rather than an engaging hook",
+        "No structural planning, leading to narratives that trail off without a satisfying conclusion"
+      ],
+      "cross_curricular_links": [],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C031", "primary": true},
+        {"concept_id": "EN-KS3-C040", "primary": false},
+        {"concept_id": "EN-KS3-C041", "primary": false},
+        {"concept_id": "EN-KS3-C043", "primary": false},
+        {"concept_id": "EN-KS3-C029", "primary": false}
+      ],
+      "uses_template": ["VT-12", "VT-24"],
+      "in_genre": [{"genre_id": "GEN-CREAT", "role": "primary"}, {"genre_id": "GEN-NARR", "role": "secondary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D002"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-011",
+      "name": "Transactional Writing: Letter, Article, Speech",
+      "unit_type": "skills_practice",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y7", "Y8"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "NC KS3 English Writing: 'writing for a wide range of purposes and audiences, including: well-structured formal expository and narrative essays'",
+        "NC KS3 English Writing: 'summarising and organising material, and supporting ideas and arguments with any necessary factual detail'"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "form conventions specific to letters, articles, and speeches (layout, salutation, headline, direct address)",
+        "adapting register and tone for different audiences (formal letter versus newspaper article versus spoken address)",
+        "structural organisation within each form (topic sentences, paragraph transitions, conclusion)",
+        "purpose-driven writing — how intended effect shapes every language and structural choice"
+      ],
+      "writing_outcome": "Write two transactional pieces in different forms (400-500 words each): a formal letter to an authority figure AND a newspaper article or speech on the same issue, demonstrating how form and audience shape register and structural choices",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "Letters from a war zone (Imperial War Museum collection)", "author": "various", "publication_year": null, "text_type": "letter", "suitability": "Y7-Y8", "note": "Authentic letters showing how form shapes voice; connects to history"},
+        {"title": "First News (selected articles)", "author": "various", "publication_year": null, "text_type": "newspaper article", "suitability": "Y7-Y8", "note": "Age-appropriate journalism modelling article conventions"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "presentation",
+      "assessment_mode": "formative",
+      "literary_terms": ["register", "tone", "formal", "audience", "purpose", "convention", "headline", "salutation"],
+      "definitions": ["transactional", "register", "tone", "audience", "purpose", "formal letter", "article", "speech", "salutation"],
+      "pedagogical_rationale": "Transactional writing at KS3 bridges the gap between KS2 persuasion and discussion and the GCSE Language Paper 2 writing task, where students must write in a specified form for a specified audience. Teaching multiple forms together (letter, article, speech) develops the crucial skill of adapting register and structural conventions to form — rather than writing everything in the same generic 'essay' style. Y7-Y8 is the right time to establish these conventions so that Y9 can focus on sophistication and exam readiness.",
+      "common_pitfalls": [
+        "All three forms written in the same style without adapting register for the different audiences",
+        "Formal letter opens with 'I am writing to you...' rather than establishing the issue immediately and compellingly",
+        "Article lacks clear headline and uses personal essay register rather than journalistic style",
+        "Structural conventions (salutation, sign-off, headline, subheadings) forgotten or inconsistent"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-003", "hook": "Writing about real-world issues — climate change, sustainability, resource management as stimulus for transactional writing", "strength": "moderate"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C036", "primary": true},
+        {"concept_id": "EN-KS3-C039", "primary": false},
+        {"concept_id": "EN-KS3-C044", "primary": false},
+        {"concept_id": "EN-KS3-C045", "primary": false},
+        {"concept_id": "EN-KS3-C034", "primary": false}
+      ],
+      "uses_template": ["VT-24"],
+      "in_genre": [{"genre_id": "GEN-TRANS", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D002"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-012",
+      "name": "Formal Debate and Presentation",
+      "unit_type": "spoken_language",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y7", "Y8", "Y9"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "NC KS3 English Spoken English: 'using Standard English confidently in a range of formal and informal contexts'",
+        "NC KS3 English Spoken English: 'giving short speeches and presentations, expressing their own ideas and keeping to the point'",
+        "NC KS3 English Spoken English: 'participating in formal debates and structured discussions, summarising and/or building on what has been said'"
+      ],
+      "text_type": "non_fiction",
+      "text_features_to_teach": [
+        "formal debate structure (proposition, opposition, rebuttals, points of information, summing up)",
+        "presentation skills (clear structure, audience engagement, use of evidence, pacing and emphasis)",
+        "active listening and building on others' contributions",
+        "Standard English in formal spoken contexts — register shifting between informal discussion and formal address"
+      ],
+      "writing_outcome": "Prepare a structured speech (3-4 minutes) for a formal debate on a curriculum-linked topic, with a written cue card including opening hook, three developed arguments with evidence, anticipated counter-arguments, and a concluding statement",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": null,
+      "reading_level": "KS3",
+      "spoken_language_focus": "formal_debate",
+      "assessment_mode": "formative",
+      "literary_terms": ["rhetoric", "proposition", "rebuttal", "Standard English", "register"],
+      "definitions": ["debate", "proposition", "opposition", "rebuttal", "Standard English", "register", "formal", "rhetoric"],
+      "pedagogical_rationale": "Spoken language is a statutory component of the KS3 curriculum and the foundation for the GCSE Spoken Language Endorsement. Formal debate develops the ability to construct and sustain an argument orally, respond to challenge in real time, and use Standard English in a public context — skills that transfer directly to written argumentation, job interviews, and university seminars. Regular debate practice across all three years ensures oracy development is not a one-off event but a progressive curriculum strand.",
+      "common_pitfalls": [
+        "Debates degenerate into unstructured shouting matches without formal rules and turn-taking",
+        "Students read from scripts with no eye contact or audience engagement",
+        "Standard English lapses when responding to challenges or points of information",
+        "Weaker speakers are sidelined in team debates — all students need speaking roles"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "HS-KS3-005", "hook": "Debating historical interpretations — was the British Empire a force for good? Was appeasement justified?", "strength": "moderate"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C068", "primary": true},
+        {"concept_id": "EN-KS3-C065", "primary": false},
+        {"concept_id": "EN-KS3-C066", "primary": false},
+        {"concept_id": "EN-KS3-C060", "primary": false},
+        {"concept_id": "EN-KS3-C083", "primary": false}
+      ],
+      "uses_template": ["VT-11", "VT-20"],
+      "in_genre": [{"genre_id": "GEN-TRANS", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D004"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-013",
+      "name": "World Literature and Diverse Voices",
+      "unit_type": "text_study_analytical",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y7", "Y8", "Y9"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "exemplar_text",
+      "curriculum_reference": [
+        "NC KS3 English Reading: 'reading at least one play by Shakespeare, works from the English literary heritage and works from other cultures and traditions'",
+        "NC KS3 English Reading: 'making critical comparisons across texts'"
+      ],
+      "text_type": "fiction",
+      "text_features_to_teach": [
+        "how cultural context shapes narrative voice, setting, and theme",
+        "comparing how writers from different traditions represent identity, heritage, and social experience",
+        "understanding the concept of 'literary heritage' as a living, evolving canon that includes diverse voices",
+        "close reading of unfamiliar styles and structures — developing reading resilience with varied literary traditions"
+      ],
+      "writing_outcome": "Write a comparative analytical essay (400-500 words) exploring how two writers from different cultural traditions present ideas about identity or heritage, analysing how cultural context shapes language and narrative choices",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "Things Fall Apart (extract)", "author": "Chinua Achebe", "publication_year": 1958, "text_type": "novel extract", "suitability": "Y8-Y9", "note": "Foundational postcolonial novel; pre-colonial Igbo culture presented on its own terms"},
+        {"title": "The House on Mango Street (selected vignettes)", "author": "Sandra Cisneros", "publication_year": 1984, "text_type": "short prose", "suitability": "Y7-Y8", "note": "Accessible short form; Chicana identity and coming-of-age in urban America"},
+        {"title": "A Long Walk to Water", "author": "Linda Sue Park", "publication_year": 2010, "text_type": "novel", "suitability": "Y7-Y8", "note": "Dual timeline; Sudanese setting with accessible narrative structure"},
+        {"title": "Anita and Me (extract)", "author": "Meera Syal", "publication_year": 1996, "text_type": "novel extract", "suitability": "Y8-Y9", "note": "British-Asian identity in 1970s England; humour and social commentary"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "book_discussion",
+      "assessment_mode": "formative",
+      "literary_terms": ["postcolonial", "cultural context", "narrative voice", "perspective", "diaspora", "identity", "heritage", "literary canon"],
+      "definitions": ["postcolonial", "cultural context", "diaspora", "identity", "heritage", "literary canon", "tradition", "narrative voice"],
+      "pedagogical_rationale": "The NC requires study of 'works from other cultures and traditions' alongside the English literary heritage. This unit ensures students encounter a genuinely diverse range of writers — not as tokenistic additions but as central literary voices with their own traditions, conventions, and concerns. Studying Achebe, Cisneros, or Syal alongside the English literary heritage develops critical understanding of how cultural context shapes writing and challenges the assumption that 'great literature' comes only from one tradition. The comparative element builds the analytical skills needed at GCSE.",
+      "common_pitfalls": [
+        "Texts from other cultures treated as sociological documents ('this teaches us about life in Nigeria') rather than as literary works to be analysed for craft and technique",
+        "Comparative work defaults to comparing cultures rather than comparing how writers use language and structure",
+        "Only one non-English text studied as a token gesture rather than building a genuinely diverse reading diet across KS3",
+        "Teachers unfamiliar with the cultural context avoid discussing it rather than researching and presenting it accurately"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS3-007", "hook": "African literature and the geographical study of Africa — understanding place through fiction and non-fiction", "strength": "moderate"},
+        {"target_id": "HS-KS3-004", "hook": "Postcolonial contexts — how colonial history shapes the literature of formerly colonised nations", "strength": "strong"}
+      ],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C005", "primary": true},
+        {"concept_id": "EN-KS3-C013", "primary": false},
+        {"concept_id": "EN-KS3-C023", "primary": false},
+        {"concept_id": "EN-KS3-C001", "primary": false},
+        {"concept_id": "EN-KS3-C078", "primary": false}
+      ],
+      "uses_template": ["VT-07", "VT-23"],
+      "in_genre": [{"genre_id": "GEN-FICT", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D001"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    },
+    {
+      "unit_id": "EU-EN-KS3-014",
+      "name": "Poetry Composition and Performance",
+      "unit_type": "poetry_study",
+      "subject": "English",
+      "key_stage": "KS3",
+      "year_groups": ["Y7", "Y8"],
+      "curriculum_status": "exemplar",
+      "suggestion_type": "genre_requirement",
+      "curriculum_reference": [
+        "NC KS3 English Writing: 'writing for a wide range of purposes and audiences, including: stories, scripts, poetry and other imaginative writing'",
+        "NC KS3 English Spoken English: 'improvising, rehearsing and performing play scripts and poetry in order to generate language and discuss language use and meaning'"
+      ],
+      "text_type": "poetry",
+      "text_features_to_teach": [
+        "experimenting with poetic form (free verse, sonnet, ballad, spoken word) and understanding how form shapes meaning",
+        "sound patterning in poetry (rhythm, rhyme, alliteration, assonance) and its effect on a listener",
+        "drafting and redrafting poetry — treating poetry as craft that can be revised and improved",
+        "performance techniques (pace, pause, emphasis, eye contact, gesture) for spoken word delivery"
+      ],
+      "writing_outcome": "Write a poem (12-30 lines) in a chosen form on a theme of personal significance, then rehearse and deliver a spoken word performance to the class, demonstrating conscious use of pace, pause, and emphasis",
+      "grammar_focus": null,
+      "grammar_year_source": null,
+      "suggested_texts": [
+        {"title": "The Hill We Climb", "author": "Amanda Gorman", "publication_year": 2021, "text_type": "performance poem", "suitability": "Y7-Y9", "note": "Contemporary spoken word with powerful performance element; accessible entry to performance poetry"},
+        {"title": "Still I Rise", "author": "Maya Angelou", "publication_year": 1978, "text_type": "poem", "suitability": "Y7-Y8", "note": "Strong rhythm and refrain; excellent performance poem with powerful message"},
+        {"title": "Cautionary Tales for Children", "author": "Hilaire Belloc", "publication_year": 1907, "text_type": "comic verse", "suitability": "Y7", "note": "Formal verse with humour; accessible form for own composition experiments"}
+      ],
+      "reading_level": "KS3",
+      "spoken_language_focus": "poetry_performance",
+      "assessment_mode": "formative",
+      "literary_terms": ["free verse", "spoken word", "rhythm", "rhyme scheme", "alliteration", "assonance", "refrain", "stanza"],
+      "definitions": ["free verse", "spoken word", "rhythm", "rhyme scheme", "alliteration", "assonance", "refrain", "performance"],
+      "pedagogical_rationale": "Poetry composition and performance is the creative counterpart to the analytical poetry units. Writing poetry develops students' awareness of how every word choice, line break, and sound pattern carries meaning — an awareness that directly improves their analytical reading of other poets' work. The spoken word performance element connects poetry to its oral roots and develops the oracy skills that underpin the Spoken Language Endorsement at GCSE. Students who have written and performed their own poetry approach analytical poetry study with deeper understanding of craft.",
+      "common_pitfalls": [
+        "Poetry writing treated as a frivolous 'fun' activity rather than a rigorous craft exercise with genuine learning outcomes",
+        "Students default to rhyming couplets because they think 'real poetry rhymes' — need exposure to free verse and spoken word",
+        "Performance is mumbled reading-aloud rather than genuine spoken word delivery with pace, pause, and emphasis",
+        "No drafting process — first draft treated as final draft without revision"
+      ],
+      "cross_curricular_links": [],
+      "delivers_via": [
+        {"concept_id": "EN-KS3-C033", "primary": true},
+        {"concept_id": "EN-KS3-C074", "primary": false},
+        {"concept_id": "EN-KS3-C075", "primary": false},
+        {"concept_id": "EN-KS3-C020", "primary": false},
+        {"concept_id": "EN-KS3-C047", "primary": false}
+      ],
+      "uses_template": ["VT-12", "VT-20"],
+      "in_genre": [{"genre_id": "GEN-POET", "role": "primary"}],
+      "studies_text": [],
+      "domain_ids": ["EN-KS3-D002", "EN-KS3-D004"],
+      "grammar_sequence_after": null,
+      "text_complexity_after": null,
+      "display_category": "English Ontology",
+      "display_color": "#059669",
+      "display_icon": "edit_note"
+    }
+  ]
+}

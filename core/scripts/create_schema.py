@@ -82,8 +82,7 @@ def create_schema(driver):
     indexes = [
         "CREATE INDEX concept_type_idx IF NOT EXISTS FOR (c:Concept) ON (c.concept_type)",
         # (complexity_level index removed — property deprecated in v3.9)
-        "CREATE INDEX concept_cross_cutting_idx IF NOT EXISTS FOR (c:Concept) ON (c.is_cross_cutting)",
-        "CREATE INDEX domain_cross_cutting_idx IF NOT EXISTS FOR (d:Domain) ON (d.is_cross_cutting)",
+        # (is_cross_cutting indexes removed — property no longer imported)
         "CREATE INDEX subject_name_idx IF NOT EXISTS FOR (s:Subject) ON (s.name)",
         "CREATE INDEX year_number_idx IF NOT EXISTS FOR (y:Year) ON (y.year_number)",
         # Epistemic skills indexes (v3.2)

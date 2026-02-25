@@ -1,0 +1,186 @@
+{
+  "version": "1.0",
+  "subject": "Mathematics",
+  "key_stage": "KS1",
+  "authored_by": "llm-draft",
+  "authored_date": "2026-02-22",
+  "note": "Content vehicles for Mathematics Year 2. Seeded from v4 teacher feedback (Henderson). Each vehicle is a worked example set following CPA (concrete-pictorial-abstract) progression.",
+  "vehicles": [
+    {
+      "vehicle_id": "MA-Y2-CV001",
+      "name": "Place Value with Dienes Blocks",
+      "vehicle_type": "worked_example_set",
+      "description": "Understanding place value of two-digit numbers using Dienes blocks (base-10 apparatus). Concrete manipulation of tens and ones leading to pictorial and abstract representations.",
+      "delivers_concept_ids": ["MA-Y2-C002", "MA-Y2-C003"],
+      "cpa_stage": "concrete -> pictorial -> abstract",
+      "manipulatives": ["Dienes blocks (units and tens)", "place value charts", "arrow cards"],
+      "representations": ["place value chart", "part-whole model", "number line to 100"],
+      "difficulty_levels": ["introductory: partition 2-digit numbers into tens and ones", "developing: compare 2-digit numbers using < > =", "secure: order a set of numbers and explain reasoning"],
+      "common_errors": ["Thinking the digits represent their face value (e.g. 34 = 3 and 4, not 30 and 4)", "Confusing tens and ones columns", "Writing numbers in reverse order (e.g. writing 41 for fourteen)"],
+      "definitions": ["place value", "tens", "ones", "digit", "partition", "compare", "order", "greater than", "less than", "equal to"],
+      "assessment_guidance": "Can pupils partition any 2-digit number into tens and ones using Dienes and without? Can they compare pairs of numbers using < > = symbols? Can they order a set of 2-digit numbers and explain their reasoning?",
+      "success_criteria": [
+        "Partition 2-digit numbers into tens and ones",
+        "Represent 2-digit numbers using Dienes, place value chart, and numerals",
+        "Compare 2-digit numbers using < > = symbols correctly",
+        "Order a set of numbers from smallest to largest with explanation"
+      ],
+      "resources": [],
+      "resource_types": []
+    },
+    {
+      "vehicle_id": "MA-Y2-CV002",
+      "name": "Addition and Subtraction with Number Lines",
+      "vehicle_type": "worked_example_set",
+      "description": "Adding and subtracting 2-digit numbers using number lines and hundred squares. Progresses from concrete counting to efficient mental strategies.",
+      "delivers_concept_ids": ["MA-Y2-C004", "MA-Y2-C005", "MA-Y2-C006", "MA-Y2-C007"],
+      "cpa_stage": "concrete (counting objects) -> pictorial (number line jumps) -> abstract (column method introduction)",
+      "manipulatives": ["Dienes blocks", "hundred square", "bead strings (100 beads)"],
+      "representations": ["number line", "hundred square", "part-whole model", "bar model"],
+      "difficulty_levels": ["introductory: add/subtract ones within 20", "developing: add/subtract 2-digit and 1-digit numbers", "secure: add/subtract two 2-digit numbers"],
+      "common_errors": ["Counting from 1 instead of counting on from the larger number", "Not bridging through 10 correctly (e.g. 27 + 5)", "Subtracting the smaller digit from the larger regardless of position"],
+      "definitions": ["add", "subtract", "sum", "difference", "number line", "count on", "count back", "bridge", "exchange", "inverse"],
+      "assessment_guidance": "Can pupils add and subtract 2-digit numbers using a number line, showing jumps? Can they explain commutativity of addition and why subtraction is not commutative? Can they use the inverse to check answers?",
+      "success_criteria": [
+        "Add and subtract 2-digit numbers using number line jumps",
+        "Recall addition and subtraction facts to 20 fluently",
+        "Explain that addition can be done in any order but subtraction cannot",
+        "Use the inverse operation to check answers"
+      ],
+      "resources": [],
+      "resource_types": []
+    },
+    {
+      "vehicle_id": "MA-Y2-CV003",
+      "name": "Times Tables: 2, 5 and 10",
+      "vehicle_type": "worked_example_set",
+      "description": "Building fluency with 2, 5, and 10 times tables through arrays, repeated addition, and skip counting. Links multiplication to division as grouping and sharing.",
+      "delivers_concept_ids": ["MA-Y2-C008", "MA-Y2-C009", "MA-Y2-C010"],
+      "cpa_stage": "concrete (arrays with counters) -> pictorial (array diagrams, bar models) -> abstract (multiplication/division sentences)",
+      "manipulatives": ["counters", "Numicon", "Cuisenaire rods", "arrays on pegboards"],
+      "representations": ["array diagram", "bar model", "number line (skip counting)", "multiplication grid"],
+      "difficulty_levels": ["introductory: count in 2s, 5s, 10s", "developing: write multiplication sentences for arrays", "secure: use known facts to solve division problems"],
+      "common_errors": ["Confusing multiplication and addition (2 x 5 vs 2 + 5)", "Not understanding that division is the inverse of multiplication", "Thinking division is commutative (10 / 2 = 2 / 10)"],
+      "definitions": ["multiply", "divide", "times", "groups of", "array", "repeated addition", "commutative", "inverse", "share", "group"],
+      "assessment_guidance": "Can pupils recall 2, 5, and 10 times tables? Can they write multiplication and division statements using x and / symbols? Can they demonstrate commutativity using arrays? Can they solve simple division by grouping?",
+      "success_criteria": [
+        "Recall 2, 5, and 10 times tables fluently",
+        "Write multiplication and division sentences using correct symbols",
+        "Show that multiplication is commutative using arrays",
+        "Solve division problems by grouping and sharing"
+      ],
+      "resources": [],
+      "resource_types": []
+    },
+    {
+      "vehicle_id": "MA-Y2-CV004",
+      "name": "Fractions of Shapes and Quantities",
+      "vehicle_type": "worked_example_set",
+      "description": "Introduction to fractions as equal parts of wholes and quantities. Finding 1/2, 1/3, 1/4, 2/4, 3/4 of shapes and sets of objects. First encounter with equivalence (2/4 = 1/2).",
+      "delivers_concept_ids": ["MA-Y2-C012", "MA-Y2-C013"],
+      "cpa_stage": "concrete (folding paper, sharing objects) -> pictorial (shaded fraction diagrams) -> abstract (fraction notation)",
+      "manipulatives": ["fraction wall", "paper circles/rectangles for folding", "counters for sharing", "fraction tiles"],
+      "representations": ["fraction wall", "shaded shape diagrams", "bar model", "number line (0 to 1)"],
+      "difficulty_levels": ["introductory: find 1/2 and 1/4 of shapes by folding", "developing: find fractions of quantities (1/3 of 12)", "secure: recognise equivalence 2/4 = 1/2"],
+      "common_errors": ["Not making equal parts (e.g. folding paper into unequal halves)", "Thinking 1/3 is bigger than 1/2 because 3 > 2", "Not connecting 'fraction of a shape' to 'fraction of a quantity'"],
+      "definitions": ["fraction", "half", "quarter", "third", "equal parts", "whole", "numerator", "denominator", "equivalent"],
+      "assessment_guidance": "Can pupils find 1/2, 1/4, 1/3, 2/4, 3/4 of shapes and quantities? Can they recognise that 2/4 and 1/2 are equivalent? Can they explain why parts must be equal for a fraction to be correct?",
+      "success_criteria": [
+        "Find 1/2, 1/4, 1/3 of shapes by folding or shading",
+        "Find fractions of quantities by sharing into equal groups",
+        "Recognise that 2/4 = 1/2 using concrete and pictorial models",
+        "Explain that fractions require equal parts"
+      ],
+      "resources": [],
+      "resource_types": []
+    },
+    {
+      "vehicle_id": "MA-Y2-CV005",
+      "name": "Measuring Length, Mass and Capacity",
+      "vehicle_type": "worked_example_set",
+      "description": "Practical measurement using standard units — metres/centimetres, kilograms/grams, litres/millilitres. Choosing appropriate units and reading scales.",
+      "delivers_concept_ids": ["MA-Y2-C014"],
+      "cpa_stage": "concrete (handling measuring equipment) -> pictorial (reading scales, recording in tables) -> abstract (calculating with measures)",
+      "manipulatives": ["rulers (cm and m)", "metre sticks", "balance scales", "weights (g and kg)", "measuring jugs (ml and L)", "thermometers"],
+      "representations": ["number line scaled in units", "bar model for comparison", "tables for recording"],
+      "difficulty_levels": ["introductory: estimate and measure using appropriate units", "developing: compare and order measurements", "secure: solve simple problems involving measures"],
+      "common_errors": ["Not starting measurement from zero on a ruler", "Confusing units (cm vs m, g vs kg)", "Reading scales incorrectly when divisions are not labelled"],
+      "definitions": ["centimetre", "metre", "gram", "kilogram", "millilitre", "litre", "temperature", "degree", "scale", "estimate"],
+      "assessment_guidance": "Can pupils choose an appropriate unit for a given measurement? Can they measure length, mass, capacity, and temperature using standard units? Can they read scales where not all divisions are labelled?",
+      "success_criteria": [
+        "Choose appropriate units for length, mass, capacity, and temperature",
+        "Measure accurately using rulers, scales, and measuring jugs",
+        "Read scales where not every division is labelled",
+        "Compare and order measurements with correct units"
+      ],
+      "resources": [],
+      "resource_types": []
+    },
+    {
+      "vehicle_id": "MA-Y2-CV006",
+      "name": "Money: Coins, Notes and Change",
+      "vehicle_type": "worked_example_set",
+      "description": "Working with money — recognising coins and notes, making amounts in different ways, calculating change. Real-world application of addition and subtraction.",
+      "delivers_concept_ids": ["MA-Y2-C015"],
+      "cpa_stage": "concrete (real/plastic coins) -> pictorial (coin images, price tags) -> abstract (written calculations with £ and p)",
+      "manipulatives": ["plastic coins and notes", "price tags", "shop role-play resources", "purses/wallets"],
+      "representations": ["coin images", "bar model for change", "number line for counting up"],
+      "difficulty_levels": ["introductory: recognise coins and notes, make amounts", "developing: find different combinations to make the same amount", "secure: calculate change from 50p, £1, £2"],
+      "common_errors": ["Confusing the value of coins with their size (5p is bigger than 10p)", "Not understanding £1 = 100p", "Counting change by subtracting instead of counting up"],
+      "definitions": ["pence", "pound", "coin", "note", "change", "total", "cost", "amount", "combination"],
+      "assessment_guidance": "Can pupils make given amounts using different combinations of coins? Can they use the £ and p symbols correctly? Can they calculate change using counting up or subtraction?",
+      "success_criteria": [
+        "Recognise all UK coins and notes and know their values",
+        "Make amounts in at least 2 different ways using coins",
+        "Use £ and p symbols correctly (not together: £1.50 or 150p, not £1.50p)",
+        "Calculate change from 50p, £1, and £2"
+      ],
+      "resources": [],
+      "resource_types": []
+    },
+    {
+      "vehicle_id": "MA-Y2-CV007",
+      "name": "2-D and 3-D Shapes",
+      "vehicle_type": "worked_example_set",
+      "description": "Identifying and describing properties of 2-D and 3-D shapes. Sorting shapes by properties, recognising 2-D shapes on faces of 3-D shapes, and identifying lines of symmetry.",
+      "delivers_concept_ids": ["MA-Y2-C017", "MA-Y2-C018", "MA-Y2-C019"],
+      "cpa_stage": "concrete (handling 3-D shapes, cutting 2-D shapes) -> pictorial (sorting diagrams, symmetry drawings) -> abstract (describing properties with vocabulary)",
+      "manipulatives": ["3-D shape models (cube, cuboid, sphere, cylinder, cone, pyramid)", "2-D shape tiles", "mirrors for symmetry", "elastic bands on geoboards"],
+      "representations": ["sorting diagram (Venn/Carroll)", "shape property table", "symmetry drawings"],
+      "difficulty_levels": ["introductory: name and sort common 2-D and 3-D shapes", "developing: describe shapes using sides, vertices, faces, edges", "secure: identify 2-D shapes on faces of 3-D shapes"],
+      "common_errors": ["Confusing sides and vertices", "Thinking a square is not a rectangle", "Not recognising shapes in different orientations"],
+      "definitions": ["side", "vertex", "vertices", "face", "edge", "symmetry", "line of symmetry", "2-D", "3-D", "regular", "irregular"],
+      "assessment_guidance": "Can pupils name common 2-D and 3-D shapes? Can they describe shapes using correct mathematical vocabulary (sides, vertices, faces, edges)? Can they identify 2-D shapes on the surface of 3-D shapes? Can they find lines of symmetry?",
+      "success_criteria": [
+        "Name common 2-D shapes (circle, triangle, square, rectangle, pentagon, hexagon)",
+        "Name common 3-D shapes (cube, cuboid, sphere, cylinder, cone, pyramid)",
+        "Describe shapes using sides, vertices, faces, and edges",
+        "Identify 2-D shapes on the surface of 3-D shapes"
+      ],
+      "resources": [],
+      "resource_types": []
+    },
+    {
+      "vehicle_id": "MA-Y2-CV008",
+      "name": "Statistics: Pictograms and Tally Charts",
+      "vehicle_type": "worked_example_set",
+      "description": "Collecting, presenting, and interpreting data using pictograms, tally charts, block diagrams, and tables. Asking and answering questions about data.",
+      "delivers_concept_ids": ["MA-Y2-C022", "MA-Y2-C023"],
+      "cpa_stage": "concrete (sorting real objects, collecting data) -> pictorial (pictograms, block diagrams) -> abstract (answering questions from data)",
+      "manipulatives": ["sorting hoops", "cubes for block diagrams", "data collection clipboards"],
+      "representations": ["tally chart", "pictogram (1:1 and 1:2 scales)", "block diagram", "simple table"],
+      "difficulty_levels": ["introductory: collect data using tally charts", "developing: create pictograms and block diagrams", "secure: interpret data and answer comparison questions"],
+      "common_errors": ["Tally marks not grouped in fives", "Pictogram symbols not equal size or spacing", "Answering 'how many more' by reading one value instead of finding the difference"],
+      "definitions": ["data", "tally", "pictogram", "block diagram", "table", "total", "most", "least", "difference", "category"],
+      "assessment_guidance": "Can pupils collect data using a tally chart? Can they construct a pictogram or block diagram from collected data? Can they ask and answer questions including 'how many more/fewer' and 'what is the total'?",
+      "success_criteria": [
+        "Collect and record data using a tally chart",
+        "Construct a pictogram with a simple key",
+        "Construct a block diagram with labelled axes",
+        "Answer comparison questions about data (how many more, total, most/least)"
+      ],
+      "resources": [],
+      "resource_types": []
+    }
+  ]
+}

@@ -71,8 +71,7 @@ def query_context(session, cluster_id):
                c.common_misconceptions AS common_misconceptions,
                coalesce(c.concept_type, 'knowledge')  AS concept_type,
                coalesce(c.teaching_weight, 1)          AS teaching_weight,
-               coalesce(c.is_keystone, false)          AS is_keystone,
-               c.co_teach_hints        AS co_teach_hints
+               coalesce(c.is_keystone, false)          AS is_keystone
         ORDER BY c.concept_id
     """, cid=cluster_id)
     ctx["concepts"] = [dict(r) for r in r]

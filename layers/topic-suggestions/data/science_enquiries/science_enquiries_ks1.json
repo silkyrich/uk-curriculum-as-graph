@@ -1,0 +1,496 @@
+{
+  "version": "1.0",
+  "subject": "Science",
+  "key_stage": "KS1",
+  "authored_by": "science-specialist-teacher",
+  "authored_date": "2026-02-25",
+  "note": "ScienceEnquiry nodes for KS1. Nine enquiries covering all six KS1 Science domains: Working Scientifically (cross-cutting), Plants, Animals including Humans, Everyday Materials, Seasonal Changes, and Living Things & Habitats. KS1 enquiries use simpler recording formats (drawings, sorting hoops, tallies), shorter durations, and age-appropriate enquiry questions. Variables.controlled is null where young children are not expected to control variables (classifying, observation over time).",
+  "enquiries": [
+    {
+      "enquiry_id": "SE-KS1-001",
+      "name": "Plant Identification Walk",
+      "enquiry_question": "Can we sort plants into groups?",
+      "science_discipline": "biology",
+      "key_stage": "KS1",
+      "year_groups": ["Y1"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y1 Plants: identify and name a variety of common wild and garden plants, including deciduous and evergreen trees",
+        "Y1 Plants: identify and describe the basic structure of a variety of common flowering plants, including trees"
+      ],
+      "equipment": ["hand lenses", "sorting hoops", "clipboards", "plant identification cards", "coloured pencils"],
+      "safety_notes": "Supervise outdoor activity. Remind children not to touch or taste unknown plants. Check for allergenic plants (e.g. giant hogweed) in the school grounds before the walk. Wash hands after handling plants.",
+      "hazard_level": "low",
+      "expected_outcome": "Children can name common wild and garden plants and sort them into groups using observable features such as leaf shape, flower colour, and whether they are deciduous or evergreen.",
+      "recording_format": ["drawings", "sorting hoops"],
+      "variables": {
+        "independent": "type of plant",
+        "dependent": "observable features",
+        "controlled": null
+      },
+      "definitions": ["plant", "leaf", "flower", "stem", "root", "tree", "deciduous", "evergreen"],
+      "pedagogical_rationale": "Classifying and grouping is the most accessible enquiry type for Y1 because it requires careful observation rather than measurement. The school grounds provide an immediate, free, and endlessly varied resource. Sorting plants by observable features develops the foundational science skill of using evidence to make decisions, while the outdoor context builds enthusiasm for the natural world.",
+      "common_pitfalls": [
+        "Pupils sort by colour alone rather than considering leaf shape, size, and structure — model multi-feature sorting",
+        "Children pick plants rather than observing them in situ — establish a 'look but don't pick' rule before going outside",
+        "Rushing through the walk without stopping to observe closely — use hand lenses and drawing to slow down observation"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "TS-AD-KS1-002", "hook": "Observational drawing of plants found on the walk", "strength": "strong"},
+        {"target_id": "GS-GE-KS1-001", "hook": "Mapping where plants are found in the school grounds", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 2,
+      "delivers_via": [
+        {"concept_id": "SC-KS1-C009", "primary": true},
+        {"concept_id": "SC-KS1-C010", "primary": false},
+        {"concept_id": "SC-KS1-C011", "primary": false},
+        {"concept_id": "SC-KS1-C001", "primary": false},
+        {"concept_id": "SC-KS1-C044", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-004", "rank": 1}
+      ],
+      "surfaces_misconception": [],
+      "progresses_to": [],
+      "uses_template": ["VT-17"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS1-002",
+      "name": "What Do Plants Need to Grow?",
+      "enquiry_question": "What do plants need to grow well?",
+      "science_discipline": "biology",
+      "key_stage": "KS1",
+      "year_groups": ["Y2"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y2 Plants: observe and describe how seeds and bulbs grow into mature plants",
+        "Y2 Plants: find out and describe how plants need water, light and a suitable temperature to grow and stay healthy"
+      ],
+      "equipment": ["plant pots", "cress seeds or bean seeds", "watering can", "labels", "cupboard for dark condition", "rulers"],
+      "safety_notes": "Wash hands after handling soil. Avoid allergenic plants. Do not allow children to eat experimental plants.",
+      "hazard_level": "low",
+      "expected_outcome": "Children observe that plants need water, light, and warmth to grow well. Plants without light grow pale and spindly. Plants without water wilt. Children record changes using simple drawings and tick charts.",
+      "recording_format": ["drawings", "simple tick charts"],
+      "variables": {
+        "independent": "growing condition (light, water, warmth)",
+        "dependent": "plant growth",
+        "controlled": ["type of plant", "pot size"]
+      },
+      "definitions": ["grow", "healthy", "light", "water", "warmth", "soil", "compare", "fair test"],
+      "pedagogical_rationale": "This is the earliest fair test in the curriculum, introducing Y2 children to the concept of changing one thing while keeping others the same. The variables are tangible (light, water, warmth) and the results are dramatic (wilting, pale growth), making the relationship between cause and effect visible and memorable. The investigation runs over several days, developing patience and regular observation habits.",
+      "common_pitfalls": [
+        "Children water plants inconsistently across conditions, undermining the comparison — establish a watering rota",
+        "Expecting results within one lesson rather than several days — set expectations and use a simple observation schedule",
+        "Confusing healthy growth with tall growth — the plant in the dark may grow tall but is pale and spindly, not healthy"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "EU-EN-KS1-007", "hook": "Recording observations in simple information texts with labelled diagrams", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 3,
+      "delivers_via": [
+        {"concept_id": "SC-KS1-C012", "primary": true},
+        {"concept_id": "SC-KS1-C013", "primary": false},
+        {"concept_id": "SC-KS1-C014", "primary": false},
+        {"concept_id": "SC-KS1-C002", "primary": false},
+        {"concept_id": "SC-KS1-C003", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-001", "rank": 1}
+      ],
+      "surfaces_misconception": [],
+      "progresses_to": [
+        {"enquiry_id": "SE-KS2-002", "rationale": "KS2 extends from observing that plants need light and water to investigating the specific role of light in plant growth (photosynthesis) and measuring growth quantitatively over weeks"}
+      ],
+      "uses_template": ["VT-03"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS1-003",
+      "name": "Growing Beans: Seed to Plant",
+      "enquiry_question": "How does a seed change as it grows into a plant?",
+      "science_discipline": "biology",
+      "key_stage": "KS1",
+      "year_groups": ["Y2"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y2 Plants: observe and describe how seeds and bulbs grow into mature plants",
+        "Y2 Plants: find out and describe how plants need water, light and a suitable temperature to grow and stay healthy"
+      ],
+      "equipment": ["bean seeds", "clear plastic cups or zip-lock bags", "damp paper towels", "plant pots", "soil", "rulers", "clipboards"],
+      "safety_notes": "Wash hands after handling seeds and soil. Do not allow children to eat seeds or experimental plants. Some children may have bean allergies — check before the activity.",
+      "hazard_level": "low",
+      "expected_outcome": "Children observe the stages of germination: the seed swells, the root emerges, then the shoot pushes upward. Over several weeks they record the sequence of changes through annotated drawings, building understanding that seeds grow into plants through a predictable sequence.",
+      "recording_format": ["annotated drawings", "picture sequence"],
+      "variables": {
+        "independent": "time",
+        "dependent": "changes in the plant",
+        "controlled": null
+      },
+      "definitions": ["seed", "germinate", "shoot", "root", "grow", "observe", "change", "record"],
+      "pedagogical_rationale": "Observation over time is the ideal enquiry type for germination because the process unfolds gradually and cannot be rushed. Using clear plastic cups allows children to see root growth that is normally hidden underground, making the invisible visible. The emphasis on drawing and annotating develops scientific recording skills while the multi-week timescale teaches children that science requires patience and systematic observation.",
+      "common_pitfalls": [
+        "Children overwater the seeds, causing them to rot — demonstrate that damp (not soaking) is needed",
+        "Drawings are rushed and lack labels — model annotated drawing explicitly, pointing out what scientists record",
+        "Children expect instant germination — explain that seeds take several days to sprout and set up an observation schedule"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "EU-EN-KS1-003", "hook": "Writing instructions for planting a bean seed using sequencing words", "strength": "strong"},
+        {"target_id": "TS-DT-KS1-005", "hook": "Growing food: understanding where ingredients come from", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 3,
+      "delivers_via": [
+        {"concept_id": "SC-KS1-C013", "primary": true},
+        {"concept_id": "SC-KS1-C014", "primary": false},
+        {"concept_id": "SC-KS1-C004", "primary": false},
+        {"concept_id": "SC-KS1-C005", "primary": false},
+        {"concept_id": "SC-KS1-C039", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-002", "rank": 1}
+      ],
+      "surfaces_misconception": [],
+      "progresses_to": [
+        {"enquiry_id": "SE-KS2-002", "rationale": "KS2 extends from observing germination and growth stages to investigating what specific conditions plants need for healthy growth, with quantitative measurement and fair testing"}
+      ],
+      "uses_template": ["VT-04"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS1-004",
+      "name": "Animal Sorting",
+      "enquiry_question": "How can we sort animals into groups?",
+      "science_discipline": "biology",
+      "key_stage": "KS1",
+      "year_groups": ["Y1"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y1 Animals including humans: identify and name a variety of common animals including fish, amphibians, reptiles, birds and mammals",
+        "Y1 Animals including humans: identify and name a variety of common animals that are carnivores, herbivores and omnivores",
+        "Y1 Animals including humans: describe and compare the structure of a variety of common animals (fish, amphibians, reptiles, birds and mammals, including pets)"
+      ],
+      "equipment": ["animal picture cards", "sorting hoops", "simple classification keys", "non-fiction animal books"],
+      "safety_notes": "No specific physical hazards. If using real animals (e.g. minibeast hunt), supervise handling and ensure hand washing afterwards. Check for animal allergies before any live animal encounters.",
+      "hazard_level": "low",
+      "expected_outcome": "Children can sort animals into the five vertebrate groups (fish, amphibians, reptiles, birds, mammals) using observable features such as body covering, number of legs, and habitat. They can also sort by diet (carnivore, herbivore, omnivore).",
+      "recording_format": ["picture sorting", "simple tables"],
+      "variables": {
+        "independent": "type of animal",
+        "dependent": "observable features",
+        "controlled": null
+      },
+      "definitions": ["mammal", "bird", "fish", "reptile", "amphibian", "sort", "group", "feature", "carnivore", "herbivore", "omnivore"],
+      "pedagogical_rationale": "Classifying animals is one of the most engaging science activities for Y1 because children are naturally fascinated by animals. Sorting by observable features develops the foundational scientific skill of using evidence to categorise, while the rich vocabulary (mammal, reptile, carnivore) builds the technical language needed for all future biology. Using sorting hoops and picture cards makes the abstract concept of classification concrete and physical.",
+      "common_pitfalls": [
+        "Children think whales and dolphins are fish because they live in water — use body covering (hair/fur) and breathing (lungs) as sorting criteria",
+        "Sorting relies on colour or cuteness rather than scientific features — model using structural features (legs, body covering, where they live)",
+        "The activity stays at naming groups without children understanding why the groups exist — ask 'What is the same about all the animals in this group?'"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS1-003", "hook": "Where in the world different animals live; matching animals to continents", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 2,
+      "delivers_via": [
+        {"concept_id": "SC-KS1-C015", "primary": true},
+        {"concept_id": "SC-KS1-C016", "primary": false},
+        {"concept_id": "SC-KS1-C017", "primary": false},
+        {"concept_id": "SC-KS1-C001", "primary": false},
+        {"concept_id": "SC-KS1-C044", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-004", "rank": 1}
+      ],
+      "surfaces_misconception": [],
+      "progresses_to": [],
+      "uses_template": ["VT-17"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS1-005",
+      "name": "Exploring Our Five Senses",
+      "enquiry_question": "Which sense helps us the most to identify objects?",
+      "science_discipline": "biology",
+      "key_stage": "KS1",
+      "year_groups": ["Y1"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y1 Animals including humans: identify, name, draw and label the basic parts of the human body and say which part of the body is associated with each sense"
+      ],
+      "equipment": ["mystery boxes or feely bags", "blindfolds", "objects with distinct textures, smells, and sounds", "tally chart template"],
+      "safety_notes": "Ensure blindfolds are clean and hygienic. Check for food allergies before using any food items in taste or smell activities. Do not use strong chemicals or allergens. Supervise blindfolded children to prevent tripping.",
+      "hazard_level": "low",
+      "expected_outcome": "Children identify objects using each of their five senses in turn and discover that some senses are more helpful than others for identifying particular objects. They record how many objects they correctly identified using each sense, using simple tallies.",
+      "recording_format": ["tally charts", "verbal descriptions"],
+      "variables": {
+        "independent": "sense used",
+        "dependent": "number of correct identifications",
+        "controlled": ["objects used"]
+      },
+      "definitions": ["sense", "sight", "hearing", "touch", "taste", "smell", "identify", "describe"],
+      "pedagogical_rationale": "This simple comparative test introduces Y1 children to the idea of changing one thing (which sense they use) and seeing what happens (how many objects they get right). The mystery-box format creates excitement and genuine enquiry, while the tally recording is achievable for children still developing writing skills. The activity directly connects to the statutory requirement to associate body parts with senses.",
+      "common_pitfalls": [
+        "Rushing through all five senses in one lesson — spread across two sessions to allow genuine exploration of each sense",
+        "Taste activity dominates and becomes a food tasting rather than a science investigation — limit taste to a few carefully chosen items",
+        "Children describe using sight vocabulary even when blindfolded — model how to describe using touch or smell words"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "EU-EN-KS1-005", "hook": "Describing objects and experiences using sensory vocabulary in recounts", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Be aware of pupils with sensory impairments — adapt activities so all children can participate meaningfully using their available senses"
+      ],
+      "duration_lessons": 2,
+      "delivers_via": [
+        {"concept_id": "SC-KS1-C020", "primary": true},
+        {"concept_id": "SC-KS1-C021", "primary": false},
+        {"concept_id": "SC-KS1-C003", "primary": false},
+        {"concept_id": "SC-KS1-C006", "primary": false},
+        {"concept_id": "SC-KS1-C040", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-001", "rank": 1}
+      ],
+      "surfaces_misconception": [],
+      "progresses_to": [],
+      "uses_template": ["VT-03"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS1-006",
+      "name": "Which Material Is Best?",
+      "enquiry_question": "Which material is best for keeping teddy dry?",
+      "science_discipline": "chemistry",
+      "key_stage": "KS1",
+      "year_groups": ["Y1", "Y2"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y1 Everyday materials: distinguish between an object and the material from which it is made; identify and name a variety of everyday materials, including wood, plastic, glass, metal, water and rock",
+        "Y1 Everyday materials: describe the simple physical properties of a variety of everyday materials",
+        "Y2 Uses of everyday materials: identify and compare the suitability of a variety of everyday materials, including wood, metal, plastic, glass, brick, rock, paper and cardboard for particular uses"
+      ],
+      "equipment": ["material samples (fabric, plastic bag, foil, paper, card, cling film)", "small teddy bear or toy", "water spray bottle or watering can", "measuring spoon", "paper towels"],
+      "safety_notes": "Mop up water spills promptly to prevent slipping. Ensure glass samples are not used for the waterproof test. Supervise water pouring to avoid flooding the table.",
+      "hazard_level": "low",
+      "expected_outcome": "Children discover that different materials have different properties (waterproof, absorbent, flexible, strong) that make them suitable for different purposes. Plastic and foil keep teddy dry because they are waterproof; paper and fabric let water through because they are absorbent.",
+      "recording_format": ["simple tables", "verbal descriptions"],
+      "variables": {
+        "independent": "type of material",
+        "dependent": "amount of water passing through",
+        "controlled": ["amount of water", "size of material"]
+      },
+      "definitions": ["material", "waterproof", "absorbent", "strong", "flexible", "suitable", "test", "compare"],
+      "pedagogical_rationale": "This is the most widely taught KS1 fair test because the context is immediately meaningful (keeping teddy dry), the variables are tangible, and the results are visible and dramatic. Children can see and feel the difference between waterproof and absorbent materials, making the abstract concept of material properties concrete. The investigation builds early fair testing skills: changing one thing, observing the result, and comparing materials systematically.",
+      "common_pitfalls": [
+        "Children pour different amounts of water on each material, making comparison unfair — agree a standard amount before starting",
+        "Pupils focus only on waterproofness and miss other material properties (strength, flexibility) — discuss why plastic bags are waterproof but not strong enough for some purposes",
+        "Recording is verbal only and not captured — provide a simple table with material names pre-printed so children tick or draw results"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "TS-DT-KS1-001", "hook": "Choosing suitable materials for a making task based on their properties", "strength": "strong"}
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 2,
+      "delivers_via": [
+        {"concept_id": "SC-KS1-C024", "primary": true},
+        {"concept_id": "SC-KS1-C025", "primary": false},
+        {"concept_id": "SC-KS1-C026", "primary": false},
+        {"concept_id": "SC-KS1-C002", "primary": false},
+        {"concept_id": "SC-KS1-C003", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-001", "rank": 1}
+      ],
+      "surfaces_misconception": [],
+      "progresses_to": [],
+      "uses_template": ["VT-03"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS1-007",
+      "name": "Seasonal Changes Diary",
+      "enquiry_question": "How does our weather and playground change through the seasons?",
+      "science_discipline": "earth_science",
+      "key_stage": "KS1",
+      "year_groups": ["Y1"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y1 Seasonal changes: observe changes across the four seasons",
+        "Y1 Seasonal changes: observe and describe weather associated with the seasons and how day length varies"
+      ],
+      "equipment": ["weather symbols cards", "clipboards", "coloured pencils", "simple thermometer (visual, not digital)", "class weather chart"],
+      "safety_notes": "Supervise outdoor observation in all weather conditions. Ensure appropriate clothing for weather observation walks. Avoid thermometer breakage — use shatterproof models.",
+      "hazard_level": "low",
+      "expected_outcome": "Children observe and record weather patterns across the school year, noting how temperature, rainfall, daylight, and the appearance of the school grounds change through spring, summer, autumn, and winter. They develop an understanding that seasons follow a predictable annual cycle.",
+      "recording_format": ["weather symbols", "drawings", "picture diary"],
+      "variables": {
+        "independent": "season / time of year",
+        "dependent": "weather and environmental changes",
+        "controlled": null
+      },
+      "definitions": ["season", "spring", "summer", "autumn", "winter", "weather", "temperature", "daylight"],
+      "pedagogical_rationale": "Observation over time is the natural enquiry type for seasonal changes because the phenomenon unfolds across an entire year. Regular, brief outdoor observations (weekly weather recording, monthly playground photographs) build the scientific habit of systematic data collection. Children experience the evidence for seasonal change directly rather than learning about it secondhand, making the knowledge deeply rooted in personal experience.",
+      "common_pitfalls": [
+        "Seasonal observation is treated as a one-off topic rather than revisited throughout the year — embed regular weather recording into the weekly routine",
+        "Children learn the names of seasons without connecting them to observable changes — always ask 'What has changed since last month?' and 'How do you know?'",
+        "Photographs or drawings from different seasons are not compared side-by-side — create a class display that shows all four seasons together"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS1-005", "hook": "Weather patterns in the UK and how they change through the seasons", "strength": "strong"},
+        {"target_id": "TS-AD-KS1-008", "hook": "Seasonal nature art inspired by Andy Goldsworthy using found materials", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [],
+      "duration_lessons": 2,
+      "delivers_via": [
+        {"concept_id": "SC-KS1-C029", "primary": true},
+        {"concept_id": "SC-KS1-C030", "primary": false},
+        {"concept_id": "SC-KS1-C031", "primary": false},
+        {"concept_id": "SC-KS1-C004", "primary": false},
+        {"concept_id": "SC-KS1-C005", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-002", "rank": 1}
+      ],
+      "surfaces_misconception": [],
+      "progresses_to": [],
+      "uses_template": ["VT-04"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS1-008",
+      "name": "Habitat Explorer",
+      "enquiry_question": "What living things can we find in different habitats?",
+      "science_discipline": "biology",
+      "key_stage": "KS1",
+      "year_groups": ["Y2"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y2 Living things and their habitats: explore and compare the differences between things that are living, dead, and things that have never been alive",
+        "Y2 Living things and their habitats: identify that most living things live in habitats to which they are suited and describe how different habitats provide for the basic needs of different kinds of animals and plants, and how they depend on each other",
+        "Y2 Living things and their habitats: identify and name a variety of plants and animals in their habitats, including micro-habitats"
+      ],
+      "equipment": ["hand lenses", "bug pots or pooters", "sorting hoops", "identification cards", "clipboards", "tally chart templates"],
+      "safety_notes": "Supervise outdoor activity. Teach children to handle minibeasts gently and return them to their habitat. Wash hands thoroughly after handling soil, logs, and minibeasts. Check for insect stings allergies before the activity. Avoid disturbing nesting birds.",
+      "hazard_level": "low",
+      "expected_outcome": "Children explore microhabitats in the school grounds (under logs, in leaf litter, on walls, in long grass), identify and sort the living things they find, and begin to explain why certain organisms are found in particular habitats (shelter, food, moisture).",
+      "recording_format": ["drawings", "sorting hoops", "simple tallies"],
+      "variables": {
+        "independent": "habitat type",
+        "dependent": "living things found",
+        "controlled": null
+      },
+      "definitions": ["habitat", "microhabitat", "living", "dead", "suited", "shelter", "food source"],
+      "pedagogical_rationale": "Exploring real habitats outdoors is far more powerful than studying habitats from photographs alone. The surprise of lifting a log and finding woodlice, worms, and beetles creates genuine curiosity and engagement. Classifying what they find into living, dead, and never-alive develops a foundational biological concept, while considering why organisms live where they do introduces the idea of adaptation at an accessible level.",
+      "common_pitfalls": [
+        "Children collect minibeasts without observing them in their habitat first — establish 'observe, then collect briefly, then return' as the routine",
+        "The activity becomes a minibeast hunt without scientific purpose — always return to the enquiry question: 'Why do these creatures live here?'",
+        "Confusion between 'dead' and 'never alive' (e.g. a dry leaf is dead, a stone was never alive) — use deliberate sorting activities with ambiguous examples"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "GS-GE-KS1-001", "hook": "Exploring the local environment and mapping where different habitats are found", "strength": "strong"},
+        {"target_id": "EU-EN-KS1-007", "hook": "Writing simple information texts about habitats and the animals found in them", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Some children are fearful of insects — do not force handling; observing with a hand lens from a distance is valid participation"
+      ],
+      "duration_lessons": 2,
+      "delivers_via": [
+        {"concept_id": "SC-KS1-C032", "primary": true},
+        {"concept_id": "SC-KS1-C033", "primary": false},
+        {"concept_id": "SC-KS1-C034", "primary": false},
+        {"concept_id": "SC-KS1-C001", "primary": false},
+        {"concept_id": "SC-KS1-C044", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-004", "rank": 1}
+      ],
+      "surfaces_misconception": [],
+      "progresses_to": [],
+      "uses_template": ["VT-17"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    },
+    {
+      "enquiry_id": "SE-KS1-009",
+      "name": "Who Eats What? Simple Food Chains",
+      "enquiry_question": "What do animals in our local habitat eat?",
+      "science_discipline": "biology",
+      "key_stage": "KS1",
+      "year_groups": ["Y2"],
+      "curriculum_status": "mandatory",
+      "curriculum_reference": [
+        "Y2 Living things and their habitats: describe how animals obtain their food from plants and other animals, using the idea of a simple food chain, and identify and name different sources of food"
+      ],
+      "equipment": ["food chain picture cards", "non-fiction books about animals and habitats", "video clips of animals feeding", "arrow cards for building chains", "large paper for class food chain display"],
+      "safety_notes": "No specific physical hazards. If using video clips of predation, preview to ensure content is age-appropriate and not distressing.",
+      "hazard_level": "low",
+      "expected_outcome": "Children construct simple food chains (3-4 links) showing what eats what in a familiar habitat. They identify that plants are the starting point of most food chains (producers), that some animals eat plants (herbivores) and others eat animals (predators), and that the arrows show the direction of energy transfer.",
+      "recording_format": ["picture food chains", "verbal descriptions"],
+      "variables": {
+        "independent": null,
+        "dependent": null,
+        "controlled": null
+      },
+      "definitions": ["food chain", "predator", "prey", "producer", "consumer", "source", "energy"],
+      "pedagogical_rationale": "Research enquiry is the appropriate type here because food chains in wild habitats cannot be directly observed in a single lesson. Using picture cards to physically build food chains makes the abstract relationship (energy flows from plant to herbivore to predator) concrete and manipulable. Starting from the habitat explored in SE-KS1-008 connects the food chain concept to real organisms the children have already encountered.",
+      "common_pitfalls": [
+        "Children draw arrows pointing from predator to prey ('the fox eats the rabbit') rather than in the direction of energy transfer — teach the arrow as 'is eaten by' or 'gives energy to'",
+        "Food chains start with an animal rather than a plant — always ask 'Where does the energy come from first?' to establish plants as the starting point",
+        "Children confuse food chains with food preferences — food chains describe ecological relationships, not what animals like to eat"
+      ],
+      "cross_curricular_links": [
+        {"target_id": "EU-EN-KS1-007", "hook": "Writing simple information texts about animals and what they eat", "strength": "strong"},
+        {"target_id": "HS-KS1-001", "hook": "How people used local food sources in the past; changes in farming within living memory", "strength": "moderate"}
+      ],
+      "sensitive_content_notes": [
+        "Predation can be distressing for some young children — focus on the ecological relationship rather than graphic details of hunting"
+      ],
+      "duration_lessons": 2,
+      "delivers_via": [
+        {"concept_id": "SC-KS1-C036", "primary": true},
+        {"concept_id": "SC-KS1-C037", "primary": false},
+        {"concept_id": "SC-KS1-C038", "primary": false},
+        {"concept_id": "SC-KS1-C007", "primary": false},
+        {"concept_id": "SC-KS1-C008", "primary": false}
+      ],
+      "uses_enquiry_type": [
+        {"enquiry_type_id": "ET-005", "rank": 1}
+      ],
+      "surfaces_misconception": [],
+      "progresses_to": [
+        {"enquiry_id": "SE-KS2-009", "rationale": "KS2 evolution and adaptation extends from simple food chains to understanding how organisms are adapted to their environments, how living things have changed over time, and how fossils provide evidence of past life"}
+      ],
+      "uses_template": ["VT-06"],
+      "domain_ids": [],
+      "display_category": "Science Enquiry",
+      "display_color": "#059669",
+      "display_icon": "science"
+    }
+  ]
+}

@@ -9,8 +9,8 @@ from in-graph data alone.
 Steps:
   1. is_keystone (bool) + prerequisite_fan_out (int) — derived from
      PREREQUISITE_OF fan-out (keystone threshold >= 3).
-  2. CO_TEACHES from co_teach_hints — extracted hints stored on Concept
-     nodes during import are turned into explicit relationships.
+  2. CO_TEACHES from co_teach_hints — read from extraction JSONs
+     (co_teach_hints are no longer imported into the graph).
   3. CO_TEACHES from inverse-operation heuristic — concepts in the same
      domain whose names contain classic inverse pairs (addition/subtraction,
      encoding/decoding, etc.) are linked with source='inferred'.
@@ -18,6 +18,7 @@ Steps:
 Safe to run multiple times (MERGE prevents duplicates, SET overwrites).
 """
 
+import json
 import sys
 from pathlib import Path
 
@@ -26,6 +27,30 @@ sys.path.insert(0, str(PROJECT_ROOT / "core" / "scripts"))
 
 from neo4j import GraphDatabase
 from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
+
+# Extraction directories containing co_teach_hints in concept objects
+EXTRACTION_DIRS = [
+    PROJECT_ROOT / "layers" / "uk-curriculum" / "data" / "extractions" / "primary",
+    PROJECT_ROOT / "layers" / "uk-curriculum" / "data" / "extractions" / "secondary",
+    PROJECT_ROOT / "layers" / "eyfs" / "data" / "extractions",
+]
+
+
+def _load_co_teach_hints():
+    """Read co_teach_hints from extraction JSONs. Returns {concept_id: [hint_ids]}."""
+    hints = {}
+    for extraction_dir in EXTRACTION_DIRS:
+        if not extraction_dir.exists():
+            continue
+        for json_file in sorted(extraction_dir.glob("*.json")):
+            with open(json_file) as f:
+                data = json.load(f)
+            for concept in data.get("concepts", []):
+                cid = concept.get("concept_id")
+                co_hints = concept.get("co_teach_hints", [])
+                if cid and co_hints:
+                    hints[cid] = co_hints
+    return hints
 
 
 def run_migration():
@@ -48,20 +73,23 @@ def run_migration():
         print(f"  Concepts updated: {row['updated']}")
         print(f"  Keystones (fan_out >= 3): {row['keystones']}")
 
-        # ── Step 2: CO_TEACHES from co_teach_hints ───────────────────────
-        print("\n--- Step 2: CO_TEACHES from co_teach_hints ---")
+        # ── Step 2: CO_TEACHES from co_teach_hints (read from JSONs) ─────
+        print("\n--- Step 2: CO_TEACHES from co_teach_hints (extraction JSONs) ---")
 
-        result = session.run("""
-            MATCH (c:Concept)
-            WHERE c.co_teach_hints IS NOT NULL AND size(c.co_teach_hints) > 0
-            UNWIND c.co_teach_hints AS hint_id
-            MATCH (target:Concept {concept_id: hint_id})
-            MERGE (c)-[r:CO_TEACHES]->(target)
-            SET r.reason = 'extracted', r.strength = 0.8, r.source = 'extracted'
-            RETURN count(r) AS created
-        """)
-        row = result.single()
-        print(f"  CO_TEACHES relationships (extracted): {row['created']}")
+        co_teach_map = _load_co_teach_hints()
+        created = 0
+        for concept_id, hint_ids in co_teach_map.items():
+            for hint_id in hint_ids:
+                result = session.run("""
+                    MATCH (c:Concept {concept_id: $cid})
+                    MATCH (target:Concept {concept_id: $tid})
+                    MERGE (c)-[r:CO_TEACHES]->(target)
+                    SET r.reason = 'extracted', r.strength = 0.8, r.source = 'extracted'
+                    RETURN count(r) AS cnt
+                """, cid=concept_id, tid=hint_id)
+                row = result.single()
+                created += row["cnt"]
+        print(f"  CO_TEACHES relationships (extracted): {created}")
 
         # ── Step 3: CO_TEACHES from inverse-operation heuristic ──────────
         print("\n--- Step 3: CO_TEACHES from inverse-operation pairs ---")

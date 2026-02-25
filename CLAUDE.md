@@ -46,7 +46,7 @@ Each **layer** is self-contained with its own:
 
 4. **`layers/topic-suggestions/`** - Per-subject ontology (Topic Suggestions + VehicleTemplates)
    - Replaces old Topics + Content Vehicles layers with typed per-subject nodes
-   - 198 study/unit nodes across 9 typed labels + 255 reference nodes across 12 types + 24 VehicleTemplate nodes
+   - 326 study/unit nodes across 9 typed labels + 255 reference nodes across 12 types + 24 VehicleTemplate nodes
    - **Study nodes** (display_category: `"Topic Suggestion"`): HistoryStudy, GeoStudy, ScienceEnquiry, EnglishUnit, ArtTopicSuggestion, MusicTopicSuggestion, DTTopicSuggestion, ComputingTopicSuggestion, TopicSuggestion (generic)
    - **Reference nodes** (display_category: `"Subject Reference"`): DisciplinaryConcept, HistoricalSource, GeoPlace, GeoContrast, EnquiryType, Misconception, Genre, SetText, MathsManipulative, MathsRepresentation, MathsContext, ReasoningPromptType
    - **VehicleTemplate** (display_category: `"Vehicle Template"`): 24 pedagogical pattern templates with TEMPLATE_FOR → KeyStage
@@ -552,7 +552,7 @@ class LayerImporter:
 
 ---
 
-## Current State (2026-02-24)
+## Current State (2026-02-25)
 
 ✅ **Documentation reorganised:**
 - 61 docs sorted into semantic subdirectories (`design/`, `analysis/`, `archive/`, `user-stories/`, `research/learning-science/`, `research/interoperability/`)
@@ -609,15 +609,18 @@ class LayerImporter:
 
 ✅ **In Aura cloud database — all layers active (2026-02-24):**
 - Instance: education-graphs (6981841e)
-- **~10,547 total nodes**, **~22,000+ total relationships**
-- 453 per-subject ontology nodes (198 study/unit + 255 reference) + 24 VehicleTemplate nodes; 1,711 ontology relationships + 77 TEMPLATE_FOR
+- **~10,675 total nodes**, **~23,740+ total relationships**
+- 581 per-subject ontology nodes (326 study/unit + 255 reference) + 24 VehicleTemplate nodes; 3,383+ ontology relationships + 77 TEMPLATE_FOR
 - 4,952 DifficultyLevel nodes; 4,952 HAS_DIFFICULTY_LEVEL relationships (1,296/1,351 concepts covered — all EYFS+KS1-KS4)
 - 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average); 40 PROMPT_FOR relationships (age-banded prompts)
 - 626 ConceptCluster nodes (167 introduction, 459 practice) — all with `thinking_lens_primary`
 - 1,351 Concept nodes enriched with `teaching_weight` + `co_teach_hints`
 - 53 EYFS Concept nodes; 34 EYFS→KS1 cross-stage prerequisites
 - 1,892 CO_TEACHES relationships (extracted + inferred inverse-operation pairs)
-- Visualization properties applied (display_color, display_icon, name) — Year nodes labelled "Year 1"…"Year 11"
+- Visualization properties applied (display_color, display_icon, display_category, name) — Year nodes labelled "Year 1"…"Year 11"
+- `display_size` property removed from graph and import scripts (was unused by Bloom or custom visualizations)
+- `is_cross_cutting` property removed from Domain/Concept imports and indexes (was unreliable LLM-generated flag; kept in extraction JSONs for reference)
+- `co_teach_hints` property removed from graph (now read directly from extraction JSONs by `compute_lesson_grouping_signals.py`)
 - 6 Bloom perspectives uploaded and active
 
 ✅ **Dead migration scripts removed (2026-02-22):**
@@ -656,10 +659,10 @@ class LayerImporter:
 
 ✅ **Per-subject ontology layer (v4.2, 2026-02-24):**
 - Replaces old Content Vehicles (v3.8) + Topics layers with typed per-subject nodes
-- **453 nodes** across 21 typed labels: 198 study/unit nodes + 255 reference nodes
+- **581 nodes** across 21 typed labels: 326 study/unit nodes + 255 reference nodes
 - **24 VehicleTemplate nodes** with 77 TEMPLATE_FOR relationships (age-banded pedagogical prompts)
-- **1,711+ relationships** including DELIVERS_VIA, HAS_SUGGESTION, FOREGROUNDS, USES_SOURCE, LOCATED_IN, CONTRASTS_WITH, USES_ENQUIRY_TYPE, ADDRESSES_MISCONCEPTION, USES_GENRE, USES_SET_TEXT, CROSS_CURRICULAR (~183), etc.
-- Subject coverage: History (33 studies), Geography (22 studies), Science (18 enquiries), English (40 units), Maths (reference nodes only), Art (21), Music (17), DT (16), Computing (14), generic/RS/Citizenship (17)
+- **3,383+ relationships** including DELIVERS_VIA (1,076), HAS_SUGGESTION (460), USES_TEMPLATE (382), FOREGROUNDS, USES_SOURCE, LOCATED_IN, CONTRASTS_WITH, USES_ENQUIRY_TYPE, SURFACES_MISCONCEPTION, IN_GENRE, STUDIES_TEXT, CROSS_CURRICULAR (~246), USED_FOR_CONCEPT (586), etc.
+- Subject coverage: History (43 studies, KS1-KS4), Geography (32 studies, KS1-KS4), Science (45 enquiries, KS1-KS4), English (54 units, KS1-KS4), Maths (reference nodes only), Art (39, KS1-KS4), Music (35, KS1-KS4), DT (33, KS1-KS4), Computing (22, KS1-KS4), generic/RS/Citizenship (23)
 - Each subject uses its own property schema — no irrelevant attributes
 - 8-agent teacher panel designed the schema (Phase 0); data migrated from ContentVehicle + Topic nodes (Phase 2)
 - Old layers archived to `layers/_archived/content-vehicles/` and `layers/_archived/topics/`
@@ -709,7 +712,7 @@ class LayerImporter:
 - No learner data — pure curriculum design metadata
 
 🚧 **In progress:**
-- Per-subject ontology Phase 3: generate additional TopicSuggestions (English Lit KS4 set texts, RS KS4, History KS1, Citizenship KS3, Art/Music)
+- Per-subject ontology Phase 4: remaining gaps (RS KS4, Citizenship KS4, additional set texts)
 - DifficultyLevel: PE KS3-KS4 (55 concepts remaining — sport-specific assessment framework needed)
 - Oak National Academy content (skeleton only)
 - Alignment mappings (CASE ↔ UK)

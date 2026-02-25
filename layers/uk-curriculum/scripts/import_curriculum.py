@@ -607,7 +607,6 @@ class CurriculumImporter:
             SET d.domain_name = $domain_name,
                 d.description = $description,
                 d.curriculum_context = $curriculum_context,
-                d.is_cross_cutting = $is_cross_cutting,
                 d.structure_type = $structure_type,
                 d.source_reference = $source_reference
             MERGE (p)-[:HAS_DOMAIN]->(d)
@@ -621,7 +620,6 @@ class CurriculumImporter:
                 domain_name=domain_name,
                 description=domain.get("description", ""),
                 curriculum_context=domain.get("curriculum_context", ""),
-                is_cross_cutting=domain.get("is_cross_cutting", False),
                 structure_type=_normalize_structure_type(domain.get("structure_type", "mixed")),
                 source_reference=f"National Curriculum 2014, {dfe_reference} — {subject_name} {key_stage} Programme of Study: {domain_name}",
             )
@@ -700,10 +698,8 @@ class CurriculumImporter:
                 c.key_vocabulary = $key_vocabulary,
                 c.common_misconceptions = $common_misconceptions,
                 c.concept_type = $concept_type,
-                c.is_cross_cutting = $is_cross_cutting,
                 c.source_reference = $source_reference,
-                c.teaching_weight = $teaching_weight,
-                c.co_teach_hints = $co_teach_hints
+                c.teaching_weight = $teaching_weight
             RETURN c
             """
 
@@ -716,10 +712,8 @@ class CurriculumImporter:
                 key_vocabulary=concept.get("key_vocabulary", ""),
                 common_misconceptions=concept.get("common_misconceptions", ""),
                 concept_type=concept_type,
-                is_cross_cutting=concept.get("is_cross_cutting", False),
                 source_reference=f"National Curriculum 2014, {dfe_reference} — {subject_name} {key_stage} Programme of Study",
                 teaching_weight=concept.get("teaching_weight", concept.get("complexity_level", 1)),
-                co_teach_hints=concept.get("co_teach_hints", []),
             )
 
             if result.single():
