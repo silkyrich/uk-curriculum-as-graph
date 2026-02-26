@@ -3,15 +3,18 @@
 
 Surfaces ALL graph layers relevant to teaching:
   - UK Curriculum: domains, concepts, prerequisites, CO_TEACHES, clusters, objectives
-  - Content Vehicles: choosable teaching packs with resources, definitions, assessment
-  - Topics: case studies and teaching units (Geography, History)
+  - ThinkingLens: cognitive lenses per cluster with age-banded agent prompts + question stems
+  - Source Documents: provenance (National Curriculum source documents, DfE references)
+  - Topic Suggestions: per-subject ontology nodes (studies, enquiries, units) via HAS_SUGGESTION
+  - Subject References: linked reference nodes with full properties + relationship properties
+  - Vehicle Templates: age-banded pedagogical pattern prompts
   - Assessment: KS2 ContentDomainCodes (what is formally tested)
   - Epistemic Skills: disciplinary thinking skills with progression chains
   - Learner Profiles: content guidelines, pedagogy, feedback, interaction types, techniques
 
 Intentionally excludes:
   - CASE Standards (US standards — not relevant for UK teacher planning)
-  - SourceDocument / visualization metadata (provenance, not teaching content)
+  - Visualization metadata (display_color, display_icon — styling, not teaching content)
 
 Usage:
   python3 graph_query_helper.py MA-Y3-D001 MA-Y3-D002 -o output.md
@@ -20,7 +23,7 @@ import argparse
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT_ROOT / "core" / "scripts"))
 
 from neo4j import GraphDatabase
@@ -74,6 +77,20 @@ def query_domain_context(session, domain_id):
     for row in dl_rows:
         dl_by_concept.setdefault(row["concept_id"], []).append(row)
 
+    # ── Representation stages per concept (CPA) ─────────────────────
+    rs_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+              -[:HAS_REPRESENTATION_STAGE]->(rs:RepresentationStage)
+        RETURN c.concept_id AS concept_id, rs.stage_number AS stage_number,
+               rs.stage AS stage, rs.description AS description,
+               rs.resources AS resources, rs.example_activity AS example_activity,
+               rs.transition_cue AS transition_cue
+        ORDER BY c.concept_id, rs.stage_number
+    """, did=domain_id))
+    rs_by_concept = {}
+    for row in rs_rows:
+        rs_by_concept.setdefault(row["concept_id"], []).append(row)
+
     sections.append(f"\n### Concepts ({len(concepts)})")
     for c in concepts:
         ks_flag = " **[KEYSTONE]**" if c['keystone'] else ""
@@ -94,32 +111,61 @@ def query_domain_context(session, domain_id):
                 label_display = dl["label"].replace("_", " ").title()
                 sections.append(f"  {dl['level']}. **{label_display}**: {dl['description']}"
                                 f" — *\"{dl['example_task']}\"*")
+        rs_list = rs_by_concept.get(c['id'], [])
+        if rs_list:
+            sections.append(f"\n**CPA stages (Concrete → Pictorial → Abstract):**")
+            for rs in rs_list:
+                sections.append(f"  {rs['stage_number']}. **{rs['stage'].title()}**: {rs['description']}")
+                if rs.get("resources"):
+                    sections.append(f"     Resources: {', '.join(rs['resources'])}")
+                if rs.get("transition_cue"):
+                    sections.append(f"     *Transition cue:* {rs['transition_cue']}")
 
     # ── Prerequisites (within domain) ────────────────────────────────
     prereqs = list(session.run("""
         MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c1:Concept)
-              -[:PREREQUISITE_OF]->(c2:Concept)<-[:HAS_CONCEPT]-(d)
+              -[r:PREREQUISITE_OF]->(c2:Concept)<-[:HAS_CONCEPT]-(d)
         RETURN c1.concept_id AS src, c1.concept_name AS src_name,
-               c2.concept_id AS tgt, c2.concept_name AS tgt_name
+               c2.concept_id AS tgt, c2.concept_name AS tgt_name,
+               r.relationship_type AS rel_type, r.strength AS strength,
+               r.rationale AS rationale
     """, did=domain_id))
     if prereqs:
         sections.append(f"\n### Prerequisites (within domain)")
         for p in prereqs:
-            sections.append(f"- {p['src']} ({p['src_name']}) → {p['tgt']} ({p['tgt_name']})")
+            extras = []
+            if p['rel_type']:
+                extras.append(p['rel_type'])
+            if p['strength']:
+                extras.append(f"strength: {p['strength']}")
+            extra_str = f" [{', '.join(extras)}]" if extras else ""
+            sections.append(f"- {p['src']} ({p['src_name']}) → {p['tgt']} ({p['tgt_name']}){extra_str}")
+            if p['rationale']:
+                sections.append(f"  Rationale: {p['rationale']}")
 
     # ── External prerequisites ───────────────────────────────────────
     ext_prereqs = list(session.run("""
         MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c2:Concept)
-              <-[:PREREQUISITE_OF]-(c1:Concept)
+              <-[r:PREREQUISITE_OF]-(c1:Concept)
         WHERE NOT (d)-[:HAS_CONCEPT]->(c1)
         RETURN c1.concept_id AS src, c1.concept_name AS src_name,
-               c2.concept_id AS tgt, c2.concept_name AS tgt_name
+               c2.concept_id AS tgt, c2.concept_name AS tgt_name,
+               r.relationship_type AS rel_type, r.strength AS strength,
+               r.rationale AS rationale
         LIMIT 20
     """, did=domain_id))
     if ext_prereqs:
         sections.append(f"\n### External Prerequisites (from other domains)")
         for p in ext_prereqs:
-            sections.append(f"- {p['src']} ({p['src_name']}) → {p['tgt']} ({p['tgt_name']})")
+            extras = []
+            if p['rel_type']:
+                extras.append(p['rel_type'])
+            if p['strength']:
+                extras.append(f"strength: {p['strength']}")
+            extra_str = f" [{', '.join(extras)}]" if extras else ""
+            sections.append(f"- {p['src']} ({p['src_name']}) → {p['tgt']} ({p['tgt_name']}){extra_str}")
+            if p['rationale']:
+                sections.append(f"  Rationale: {p['rationale']}")
 
     # ── CO_TEACHES (within domain) ───────────────────────────────────
     co_teaches = list(session.run("""
@@ -162,7 +208,8 @@ def query_domain_context(session, domain_id):
             if cd['rationale']:
                 sections.append(f"  Rationale: {cd['rationale']}")
 
-    # ── ConceptClusters ──────────────────────────────────────────────
+    # ── ConceptClusters + ThinkingLens ─────────────────────────────────
+    key_stage = rec['ks']  # e.g. "KS2" — needed for PROMPT_FOR lookup
     clusters = list(session.run("""
         MATCH (d:Domain {domain_id: $did})-[:HAS_CLUSTER]->(cc:ConceptCluster)
         OPTIONAL MATCH (cc)-[:GROUPS]->(c:Concept)
@@ -176,6 +223,25 @@ def query_domain_context(session, domain_id):
                prev.cluster_id AS after_cluster
         ORDER BY cc.cluster_id
     """, did=domain_id))
+
+    # Pre-fetch ThinkingLens for all clusters in this domain
+    lens_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CLUSTER]->(cc:ConceptCluster)
+              -[al:APPLIES_LENS]->(tl:ThinkingLens)
+        OPTIONAL MATCH (tl)-[pf:PROMPT_FOR]->(ks:KeyStage {key_stage_id: $ks})
+        RETURN cc.cluster_id AS cid,
+               tl.lens_name AS lens_name,
+               tl.key_question AS key_question,
+               coalesce(pf.agent_prompt, tl.agent_prompt) AS agent_prompt,
+               pf.question_stems AS question_stems,
+               al.rank AS rank,
+               al.rationale AS mapping_rationale
+        ORDER BY cc.cluster_id, al.rank
+    """, did=domain_id, ks=key_stage))
+    lenses_by_cluster = {}
+    for lr in lens_rows:
+        lenses_by_cluster.setdefault(lr['cid'], []).append(lr)
+
     if clusters:
         sections.append(f"\n### ConceptClusters ({len(clusters)})")
         for cl in clusters:
@@ -191,44 +257,20 @@ def query_domain_context(session, domain_id):
                 sections.append(f"Rationale: {cl['rationale']}")
             if cl['inspired_by']:
                 sections.append(f"Inspired by: {cl['inspired_by']}")
-
-    # ── Thinking Lenses per cluster ─────────────────────────────────
-    if clusters:
-        cluster_ids = [cl['cid'] for cl in clusters]
-        lenses = list(session.run("""
-            MATCH (cc:ConceptCluster)-[al:APPLIES_LENS]->(tl:ThinkingLens)
-            WHERE cc.cluster_id IN $cids
-            OPTIONAL MATCH (tl)-[pf:PROMPT_FOR]->(ks:KeyStage {key_stage_id: $ks})
-            RETURN cc.cluster_id  AS cluster_id,
-                   tl.name        AS lens_name,
-                   tl.key_question AS key_question,
-                   coalesce(pf.agent_prompt, tl.agent_prompt) AS agent_prompt,
-                   pf.question_stems AS question_stems,
-                   al.rank        AS rank,
-                   al.rationale   AS rationale
-            ORDER BY cc.cluster_id, al.rank
-        """, cids=cluster_ids, ks=rec['ks']))
-        if lenses:
-            # Group by cluster
-            from collections import defaultdict
-            lens_by_cluster = defaultdict(list)
-            for l in lenses:
-                lens_by_cluster[l['cluster_id']].append(l)
-            sections.append(f"\n### Thinking Lenses")
-            sections.append("Cognitive framing for each cluster — the primary lens (rank 1) is the recommended framing.")
-            for cid in cluster_ids:
-                cls_lenses = lens_by_cluster.get(cid, [])
-                if cls_lenses:
-                    sections.append(f"\n**{cid}:**")
-                    for l in cls_lenses:
-                        primary_tag = " (primary)" if l['rank'] == 1 else ""
-                        sections.append(f"- **{l['lens_name']}**{primary_tag}: {l['key_question']}")
-                        if l['rationale']:
-                            sections.append(f"  Why: {l['rationale']}")
-                        if l['agent_prompt']:
-                            sections.append(f"  AI instruction: {l['agent_prompt']}")
-                        if l.get('question_stems'):
-                            sections.append(f"  Question stems: {'; '.join(l['question_stems'])}")
+            # ThinkingLens for this cluster
+            cl_lenses = lenses_by_cluster.get(cl['cid'], [])
+            if cl_lenses:
+                sections.append("Thinking lenses:")
+                for lens in cl_lenses:
+                    rec_flag = " *(recommended)*" if lens['rank'] == 1 else ""
+                    sections.append(f"  - **{lens['lens_name']}**{rec_flag}: {lens['key_question']}")
+                    if lens['mapping_rationale']:
+                        sections.append(f"    Rationale: {lens['mapping_rationale']}")
+                    if lens['agent_prompt']:
+                        sections.append(f"    Agent prompt: {lens['agent_prompt']}")
+                    if lens['question_stems']:
+                        stems = lens['question_stems'] if isinstance(lens['question_stems'], list) else [lens['question_stems']]
+                        sections.append(f"    Question stems: {'; '.join(stems)}")
 
     # ── Objectives with Concept links ────────────────────────────────
     objectives = list(session.run("""
@@ -247,102 +289,173 @@ def query_domain_context(session, domain_id):
             concepts_str = f" → {', '.join(o['concept_ids'])}" if o['concept_ids'] else ""
             sections.append(f"- {o['id']}{stat}: {o['text']}{concepts_str}")
 
-    # ── Topics ───────────────────────────────────────────────────────
-    topics = list(session.run("""
-        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)<-[:TEACHES]-(t:Topic)
-        WITH t, collect(DISTINCT c.concept_id) AS concept_ids
-        RETURN t.topic_id AS id, t.topic_name AS name, t.topic_type AS ttype,
-               t.is_prescribed AS prescribed, t.is_optional AS optional,
-               t.curriculum_note AS note, concept_ids
-        ORDER BY t.topic_id
+    # ── Source Documents (provenance) ──────────────────────────────
+    source_docs = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+              -[:SOURCED_FROM]->(sd:SourceDocument)
+        RETURN DISTINCT sd.document_id AS doc_id, sd.title AS title,
+               sd.dfe_reference AS dfe_ref, sd.url AS url,
+               sd.subject AS subject, sd.key_stages AS key_stages
+        ORDER BY sd.document_id
     """, did=domain_id))
-    if topics:
-        sections.append(f"\n### Topics ({len(topics)})")
-        sections.append("These are teaching topics (case studies, units, exemplars) that address concepts in this domain.\n")
-        for t in topics:
-            prescribed_flag = " [prescribed]" if t['prescribed'] else ""
-            optional_flag = " [optional]" if t['optional'] else ""
-            sections.append(f"#### {t['id']} — {t['name']}{prescribed_flag}{optional_flag}")
-            sections.append(f"Type: {t['ttype']} | Concepts: {', '.join(t['concept_ids'])}")
-            if t['note']:
-                sections.append(f"NC note: {t['note']}")
+    if source_docs:
+        sections.append(f"\n### Source Documents ({len(source_docs)})")
+        sections.append("National Curriculum source documents for the concepts in this domain.\n")
+        for sd in source_docs:
+            sections.append(f"- **{sd['title']}**")
+            if sd['dfe_ref']:
+                sections.append(f"  DfE reference: {sd['dfe_ref']}")
+            if sd['url']:
+                sections.append(f"  URL: {sd['url']}")
 
-    # ── Content Vehicles (teaching packs) ────────────────────────────
-    vehicles = list(session.run("""
-        MATCH (d:Domain {domain_id: $did})-[:HAS_VEHICLE]->(cv:ContentVehicle)
-        OPTIONAL MATCH (cv)-[:DELIVERS]->(c:Concept)
-        WITH cv, collect(c.concept_id) AS concept_ids
-        OPTIONAL MATCH (cv)-[:IMPLEMENTS]->(t:Topic)
-        RETURN cv.vehicle_id AS id, cv.name AS name, cv.vehicle_type AS vtype,
-               cv.description AS desc, cv.definitions AS defs,
-               cv.assessment_guidance AS assessment,
-               cv.success_criteria AS criteria,
-               concept_ids,
-               t.topic_id AS topic_id, t.topic_name AS topic_name,
-               cv.period AS period, cv.key_figures AS key_figures,
-               cv.sources AS sources, cv.perspectives AS perspectives,
-               cv.location AS location, cv.data_points AS data_points,
-               cv.themes AS themes,
-               cv.enquiry_type AS enquiry_type, cv.equipment AS equipment,
-               cv.expected_outcome AS expected_outcome,
-               cv.genre AS genre, cv.suggested_texts AS suggested_texts,
-               cv.writing_outcome AS writing_outcome, cv.grammar_focus AS grammar_focus,
-               cv.cpa_stage AS cpa_stage, cv.manipulatives AS manipulatives,
-               cv.representations AS representations, cv.common_errors AS common_errors
-        ORDER BY cv.vehicle_id
+    # ── Topic Suggestions (per-subject ontology nodes) ─────────────
+    # Return all properties so each study type's rich schema is surfaced
+    SKIP_TS_PROPS = {"display_category", "display_color", "display_icon", "display_size",
+                     "name", "key_stage", "curriculum_status", "pedagogical_rationale",
+                     "study_id", "enquiry_id", "unit_id", "suggestion_id", "suggestion_type",
+                     "domain_ids", "source_concept_ids"}
+    suggestions = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_SUGGESTION]->(ts)
+        OPTIONAL MATCH (ts)-[dv:DELIVERS_VIA]->(c:Concept)
+        WITH ts, labels(ts)[0] AS label,
+             collect(DISTINCT {id: c.concept_id, primary: dv.primary}) AS concepts
+        OPTIONAL MATCH (ts)-[:USES_TEMPLATE]->(vt:VehicleTemplate)
+        WITH ts, label, concepts, collect(DISTINCT vt.template_type) AS templates
+        RETURN label, ts.name AS name,
+               coalesce(ts.study_id, ts.enquiry_id, ts.unit_id, ts.suggestion_id) AS id,
+               ts.key_stage AS ks,
+               ts.curriculum_status AS status,
+               ts.pedagogical_rationale AS rationale,
+               properties(ts) AS ts_props,
+               concepts, templates
+        ORDER BY label, ts.key_stage, ts.name
     """, did=domain_id))
-    if vehicles:
-        sections.append(f"\n### Content Vehicles — Teaching Packs ({len(vehicles)})")
-        sections.append("These are choosable teaching packs that deliver concepts in this domain. Teachers select the pack that fits their class.\n")
-        for v in vehicles:
-            sections.append(f"#### {v['id']} — {v['name']} ({v['vtype']})")
-            sections.append(f"{v['desc']}")
-            sections.append(f"Delivers: {', '.join(v['concept_ids'])}")
-            if v['topic_id']:
-                sections.append(f"Implements topic: {v['topic_id']} ({v['topic_name']})")
-            # Subject-specific properties
-            if v['period']:
-                sections.append(f"Period: {v['period']}")
-            if v['key_figures']:
-                sections.append(f"Key figures: {', '.join(v['key_figures'])}")
-            if v['sources']:
-                sections.append(f"Sources: {', '.join(v['sources'])}")
-            if v['perspectives']:
-                sections.append(f"Perspectives: {', '.join(v['perspectives'])}")
-            if v['location']:
-                sections.append(f"Location: {v['location']}")
-            if v['data_points']:
-                sections.append(f"Data: {', '.join(v['data_points'])}")
-            if v['themes']:
-                sections.append(f"Themes: {', '.join(v['themes'])}")
-            if v['enquiry_type']:
-                sections.append(f"Enquiry type: {v['enquiry_type']}")
-            if v['equipment']:
-                sections.append(f"Equipment: {', '.join(v['equipment'])}")
-            if v['expected_outcome']:
-                sections.append(f"Expected outcome: {v['expected_outcome']}")
-            if v['genre']:
-                sections.append(f"Genre: {v['genre']}")
-            if v['suggested_texts']:
-                sections.append(f"Suggested texts: {', '.join(v['suggested_texts'])}")
-            if v['writing_outcome']:
-                sections.append(f"Writing outcome: {v['writing_outcome']}")
-            if v['grammar_focus']:
-                sections.append(f"Grammar focus: {', '.join(v['grammar_focus'])}")
-            if v['cpa_stage']:
-                sections.append(f"CPA stage: {v['cpa_stage']}")
-            if v['manipulatives']:
-                sections.append(f"Manipulatives: {', '.join(v['manipulatives'])}")
-            if v['representations']:
-                sections.append(f"Representations: {', '.join(v['representations'])}")
-            if v['common_errors']:
-                sections.append(f"Common errors: {', '.join(v['common_errors'])}")
-            if v['defs']:
-                sections.append(f"Key vocabulary: {', '.join(v['defs'])}")
-            if v['assessment']:
-                sections.append(f"Assessment: {v['assessment']}")
-            if v['criteria']:
-                sections.append(f"Success criteria: {'; '.join(v['criteria'])}")
+    if suggestions:
+        sections.append(f"\n### Topic Suggestions ({len(suggestions)})")
+        sections.append("Per-subject ontology nodes: studies, enquiries, and units recommended for this domain.\n")
+        for s in suggestions:
+            primary_concepts = [c['id'] for c in s['concepts'] if c.get('primary')]
+            secondary_concepts = [c['id'] for c in s['concepts'] if not c.get('primary')]
+            status_flag = f" [{s['status']}]" if s['status'] else ""
+            sections.append(f"#### {s['id']} — {s['name']}{status_flag}")
+            sections.append(f"Type: {s['label']} | KS: {s['ks']} | Templates: {', '.join(s['templates'])}")
+            if primary_concepts:
+                sections.append(f"Primary concepts: {', '.join(primary_concepts)}")
+            if secondary_concepts:
+                sections.append(f"Secondary concepts: {', '.join(secondary_concepts)}")
+            if s['rationale']:
+                sections.append(f"Rationale: {s['rationale']}")
+            # Dump all remaining subject-specific properties
+            props = s.get('ts_props') or {}
+            for k, v in sorted(props.items()):
+                if k in SKIP_TS_PROPS or v is None or v == "" or v == []:
+                    continue
+                if isinstance(v, list):
+                    v = ", ".join(str(x) for x in v)
+                sections.append(f"- **{k}**: {v}")
+
+    # ── Subject Reference nodes (linked from topic suggestions) ─────
+    # Return all node AND relationship properties so nothing is lost
+    SKIP_PROPS = {"display_category", "display_color", "display_icon", "display_size", "name"}
+    ref_nodes = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_SUGGESTION]->(ts)-[rel]->(ref)
+        WHERE ref.display_category = 'Subject Reference'
+        RETURN labels(ts)[0] AS source_label,
+               coalesce(ts.study_id, ts.enquiry_id, ts.unit_id, ts.suggestion_id) AS source_id,
+               ts.name AS source_name,
+               type(rel) AS rel_type,
+               properties(rel) AS rel_props,
+               labels(ref)[0] AS ref_label,
+               ref.name AS ref_name,
+               properties(ref) AS ref_props
+        ORDER BY source_id, type(rel), ref.name
+    """, did=domain_id))
+    if ref_nodes:
+        sections.append(f"\n### Subject Reference Nodes ({len(ref_nodes)})")
+        sections.append("Linked reference materials for the topic suggestions above.\n")
+        by_source = {}
+        for rn in ref_nodes:
+            by_source.setdefault(rn['source_id'], []).append(rn)
+        for source_id, refs in by_source.items():
+            source_name = refs[0]['source_name']
+            sections.append(f"**{source_id}** ({source_name}):")
+            for rn in refs:
+                sections.append(f"\n  **[{rn['rel_type']}] {rn['ref_label']}: {rn['ref_name']}**")
+                # Relationship properties (e.g. FOREGROUNDS.ks_guidance, IN_GENRE.role)
+                rel_props = rn.get('rel_props') or {}
+                for k, v in sorted(rel_props.items()):
+                    if v is None or v == "" or v == []:
+                        continue
+                    if isinstance(v, list):
+                        v = ", ".join(str(x) for x in v)
+                    sections.append(f"  - _{k}_: {v}")
+                # Node properties
+                props = rn['ref_props'] or {}
+                for k, v in sorted(props.items()):
+                    if k in SKIP_PROPS or v is None or v == "" or v == []:
+                        continue
+                    if isinstance(v, list):
+                        v = ", ".join(str(x) for x in v)
+                    sections.append(f"  - {k}: {v}")
+
+    # ── Cross-curricular links between topic suggestions ────────────
+    cross_curr = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_SUGGESTION]->(ts)
+              -[r:CROSS_CURRICULAR]->(ts2)
+        RETURN coalesce(ts.study_id, ts.enquiry_id, ts.unit_id, ts.suggestion_id) AS source_id,
+               ts.name AS source_name, labels(ts)[0] AS source_label,
+               r.hook AS hook, r.strength AS strength,
+               coalesce(ts2.study_id, ts2.enquiry_id, ts2.unit_id, ts2.suggestion_id) AS target_id,
+               ts2.name AS target_name, labels(ts2)[0] AS target_label
+        ORDER BY source_id
+    """, did=domain_id))
+    if cross_curr:
+        sections.append(f"\n### Cross-Curricular Links ({len(cross_curr)})")
+        sections.append("Connections between this domain's topics and topics in other subjects.\n")
+        for cc in cross_curr:
+            strength_flag = f" [{cc['strength']}]" if cc['strength'] else ""
+            sections.append(f"- **{cc['source_name']}** ({cc['source_label']}) → "
+                            f"**{cc['target_name']}** ({cc['target_label']}){strength_flag}")
+            if cc['hook']:
+                sections.append(f"  Hook: {cc['hook']}")
+
+    # ── VehicleTemplate details (age-banded pedagogical prompts) ────
+    vt_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_SUGGESTION]->(ts)-[:USES_TEMPLATE]->(vt:VehicleTemplate)
+        OPTIONAL MATCH (p:Programme)-[:HAS_DOMAIN]->(d)
+        OPTIONAL MATCH (vt)-[tf:TEMPLATE_FOR]->(ks:KeyStage {key_stage_id: p.key_stage})
+        RETURN DISTINCT vt.template_id AS template_id, vt.template_type AS template_type,
+               vt.name AS name, vt.description AS description,
+               properties(vt) AS vt_props,
+               tf.agent_prompt AS agent_prompt,
+               tf.question_stems AS question_stems
+        ORDER BY vt.template_type
+    """, did=domain_id))
+    SKIP_VT_PROPS = {"display_category", "display_color", "display_icon", "display_size",
+                     "name", "template_id", "template_type", "description"}
+    if vt_rows:
+        sections.append(f"\n### Vehicle Templates ({len(vt_rows)})")
+        sections.append("Pedagogical pattern templates with age-appropriate prompts.\n")
+        for vt in vt_rows:
+            sections.append(f"#### {vt['template_type']} — {vt['name']}")
+            if vt['description']:
+                sections.append(f"{vt['description']}")
+            if vt['agent_prompt']:
+                sections.append(f"\n**Agent prompt:** {vt['agent_prompt']}")
+            stems = vt.get('question_stems')
+            if stems:
+                if isinstance(stems, list):
+                    sections.append(f"**Question stems:** {', '.join(stems)}")
+                else:
+                    sections.append(f"**Question stems:** {stems}")
+            # Dump remaining VT node properties
+            props = vt.get('vt_props') or {}
+            for k, v in sorted(props.items()):
+                if k in SKIP_VT_PROPS or v is None or v == "" or v == []:
+                    continue
+                if isinstance(v, list):
+                    v = ", ".join(str(x) for x in v)
+                sections.append(f"- {k}: {v}")
 
     # ── Assessment — KS2 Content Domain Codes ────────────────────────
     assessments = list(session.run("""

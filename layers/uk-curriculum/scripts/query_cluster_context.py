@@ -124,8 +124,8 @@ def query_context(session, cluster_id, year_override=None):
                p.subject_name        AS subject,
                p.key_stage           AS key_stage,
                y.year_id             AS year_id,
-               y.year_label          AS year_label,
-               ks.key_stage_name     AS key_stage_name
+               y.name                AS year_label,
+               ks.name              AS key_stage_name
     """, cid=cluster_id)
     row = r.single()
     ctx["domain"] = dict(row) if row else {}
@@ -175,13 +175,16 @@ def query_context(session, cluster_id, year_override=None):
     # ── 7. Prerequisite concepts (what pupils must already know) ──────────────
     r = session.run("""
         MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
-              <-[:PREREQUISITE_OF]-(prereq:Concept)
+              <-[rel:PREREQUISITE_OF]-(prereq:Concept)
         WHERE NOT (cc)-[:GROUPS]->(prereq)
         OPTIONAL MATCH (prereq_d:Domain)-[:HAS_CONCEPT]->(prereq)
         RETURN DISTINCT prereq.concept_id   AS concept_id,
                prereq.concept_name          AS concept_name,
                prereq_d.domain_name         AS from_domain,
-               prereq_d.domain_id           AS from_domain_id
+               prereq_d.domain_id           AS from_domain_id,
+               rel.relationship_type        AS rel_type,
+               rel.strength                 AS strength,
+               rel.rationale                AS rationale
         ORDER BY prereq.concept_id
     """, cid=cluster_id)
     ctx["prerequisite_concepts"] = [dict(r) for r in r]
@@ -220,8 +223,8 @@ def query_context(session, cluster_id, year_override=None):
                    pp.spacing_interval_days_min     AS spacing_interval_days_min,
                    pp.spacing_interval_days_max     AS spacing_interval_days_max,
                    pp.agent_pedagogy_prompt         AS agent_pedagogy_prompt,
-                   collect(DISTINCT pt.technique_name)       AS active_techniques,
-                   collect(DISTINCT intro_pt.technique_name) AS introduced_techniques
+                   collect(DISTINCT pt.name)       AS active_techniques,
+                   collect(DISTINCT intro_pt.name) AS introduced_techniques
         """, yid=year_id)
         row = r.single()
         ctx["pedagogy_profile"] = dict(row) if row else {}
@@ -285,6 +288,81 @@ def query_context(session, cluster_id, year_override=None):
         ORDER BY rel.rank
     """, cid=cluster_id, ks=key_stage)
     ctx["thinking_lenses"] = [dict(row) for row in r]
+
+    # ── 10. Topic suggestions that deliver concepts in this cluster ──────────
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
+              <-[:DELIVERS_VIA]-(ts)
+        WITH ts, labels(ts)[0] AS label,
+             collect(DISTINCT c.concept_id) AS concept_ids
+        OPTIONAL MATCH (ts)-[:USES_TEMPLATE]->(vt:VehicleTemplate)
+        WITH ts, label, concept_ids, collect(DISTINCT vt.template_type) AS templates
+        RETURN label, ts.name AS name,
+               coalesce(ts.study_id, ts.enquiry_id, ts.unit_id, ts.suggestion_id) AS id,
+               ts.key_stage AS ks,
+               ts.curriculum_status AS status,
+               ts.pedagogical_rationale AS rationale,
+               properties(ts) AS ts_props,
+               concept_ids, templates
+        ORDER BY label, ts.key_stage, ts.name
+    """, cid=cluster_id)
+    ctx["topic_suggestions"] = [dict(row) for row in r]
+
+    # ── 11. Subject reference nodes linked from topic suggestions ────────────
+    # Return all node AND relationship properties so nothing is lost
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
+              <-[:DELIVERS_VIA]-(ts)-[rel]->(ref)
+        WHERE ref.display_category = 'Subject Reference'
+        RETURN DISTINCT labels(ts)[0] AS source_label,
+               coalesce(ts.study_id, ts.enquiry_id, ts.unit_id, ts.suggestion_id) AS source_id,
+               ts.name AS source_name,
+               type(rel) AS rel_type,
+               properties(rel) AS rel_props,
+               labels(ref)[0] AS ref_label,
+               ref.name AS ref_name,
+               properties(ref) AS ref_props
+        ORDER BY source_id, type(rel), ref.name
+    """, cid=cluster_id)
+    ctx["subject_references"] = [dict(row) for row in r]
+
+    # ── 12. Cross-curricular links from topic suggestions ────────────────────
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
+              <-[:DELIVERS_VIA]-(ts)-[r:CROSS_CURRICULAR]->(ts2)
+        RETURN DISTINCT
+               coalesce(ts.study_id, ts.enquiry_id, ts.unit_id, ts.suggestion_id) AS source_id,
+               ts.name AS source_name, labels(ts)[0] AS source_label,
+               r.hook AS hook, r.strength AS strength,
+               coalesce(ts2.study_id, ts2.enquiry_id, ts2.unit_id, ts2.suggestion_id) AS target_id,
+               ts2.name AS target_name, labels(ts2)[0] AS target_label
+        ORDER BY source_id
+    """, cid=cluster_id)
+    ctx["cross_curricular_links"] = [dict(row) for row in r]
+
+    # ── 13. VehicleTemplate details (with age-banded prompts) ────────────────
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
+              <-[:DELIVERS_VIA]-(ts)-[:USES_TEMPLATE]->(vt:VehicleTemplate)
+        OPTIONAL MATCH (vt)-[tf:TEMPLATE_FOR]->(ks:KeyStage {key_stage_id: $ks})
+        RETURN DISTINCT vt.template_id AS template_id, vt.template_type AS template_type,
+               vt.name AS name, vt.description AS description,
+               properties(vt) AS vt_props,
+               tf.agent_prompt AS agent_prompt,
+               tf.question_stems AS question_stems
+        ORDER BY vt.template_type
+    """, cid=cluster_id, ks=key_stage)
+    ctx["vehicle_templates"] = [dict(row) for row in r]
+
+    # ── 14. Source documents (provenance / curriculum authority) ────────────
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
+              -[:SOURCED_FROM]->(sd:SourceDocument)
+        RETURN DISTINCT sd.document_id AS doc_id, sd.title AS title,
+               sd.dfe_reference AS dfe_ref, sd.url AS url
+        ORDER BY sd.document_id
+    """, cid=cluster_id)
+    ctx["source_documents"] = [dict(row) for row in r]
 
     return ctx
 
@@ -396,8 +474,16 @@ def render_markdown(ctx):
         lines.append("Pupils should already be able to:")
         lines.append("")
         for p in prereqs:
+            extras = []
+            if p.get('rel_type'):
+                extras.append(p['rel_type'])
+            if p.get('strength'):
+                extras.append(f"strength: {p['strength']}")
+            extra_str = f" [{', '.join(extras)}]" if extras else ""
             lines.append(f"- **{p['concept_name']}** "
-                         f"(from `{p.get('from_domain_id', '')}` — {p.get('from_domain', '')})")
+                         f"(from `{p.get('from_domain_id', '')}` — {p.get('from_domain', '')}){extra_str}")
+            if p.get('rationale'):
+                lines.append(f"  Rationale: {p['rationale']}")
         lines.append("")
 
     # ── Concepts ──
@@ -441,6 +527,123 @@ def render_markdown(ctx):
                 if rs.get("transition_cue"):
                     lines.append(f"   *Transition cue:* {rs['transition_cue']}")
             lines.append("")
+
+    # ── Topic Suggestions ──
+    SKIP_TS_PROPS = {"display_category", "display_color", "display_icon", "display_size",
+                     "name", "key_stage", "curriculum_status", "pedagogical_rationale",
+                     "study_id", "enquiry_id", "unit_id", "suggestion_id", "suggestion_type",
+                     "domain_ids", "source_concept_ids"}
+    topic_suggestions = ctx.get("topic_suggestions", [])
+    if topic_suggestions:
+        lines.append(f"## Topic suggestions ({len(topic_suggestions)})")
+        lines.append("")
+        lines.append("Studies, enquiries, and units that deliver concepts in this cluster:")
+        lines.append("")
+        for ts in topic_suggestions:
+            status_flag = f" [{ts['status']}]" if ts.get('status') else ""
+            lines.append(f"### {ts['id']} — {ts['name']}{status_flag}")
+            lines.append(f"*{ts['label']} · KS: {ts['ks']} · Templates: {', '.join(ts['templates'])}*")
+            lines.append("")
+            if ts.get('concept_ids'):
+                lines.append(f"Delivers concepts: {', '.join(ts['concept_ids'])}")
+            if ts.get('rationale'):
+                lines.append(f"\n**Rationale:** {ts['rationale']}")
+            # Dump all remaining subject-specific properties
+            props = ts.get('ts_props') or {}
+            for k, v in sorted(props.items()):
+                if k in SKIP_TS_PROPS or v is None or v == "" or v == []:
+                    continue
+                if isinstance(v, list):
+                    v = ", ".join(str(x) for x in v)
+                lines.append(f"- **{k}**: {v}")
+            lines.append("")
+
+    # ── Subject References ──
+    SKIP_PROPS = {"display_category", "display_color", "display_icon", "display_size", "name"}
+    subject_refs = ctx.get("subject_references", [])
+    if subject_refs:
+        lines.append(f"## Subject reference nodes ({len(subject_refs)})")
+        lines.append("")
+        by_source = {}
+        for sr in subject_refs:
+            by_source.setdefault(sr['source_id'], []).append(sr)
+        for source_id, refs in by_source.items():
+            source_name = refs[0]['source_name']
+            lines.append(f"**{source_id}** ({source_name}):")
+            for rn in refs:
+                lines.append(f"\n  **[{rn['rel_type']}] {rn['ref_label']}: {rn['ref_name']}**")
+                # Relationship properties (e.g. FOREGROUNDS.ks_guidance, IN_GENRE.role)
+                rel_props = rn.get('rel_props') or {}
+                for k, v in sorted(rel_props.items()):
+                    if v is None or v == "" or v == []:
+                        continue
+                    if isinstance(v, list):
+                        v = ", ".join(str(x) for x in v)
+                    lines.append(f"  - _{k}_: {v}")
+                # Node properties
+                props = rn.get('ref_props') or {}
+                for k, v in sorted(props.items()):
+                    if k in SKIP_PROPS or v is None or v == "" or v == []:
+                        continue
+                    if isinstance(v, list):
+                        v = ", ".join(str(x) for x in v)
+                    lines.append(f"  - {k}: {v}")
+            lines.append("")
+
+    # ── Cross-curricular links ──
+    cross_links = ctx.get("cross_curricular_links", [])
+    if cross_links:
+        lines.append(f"## Cross-curricular links ({len(cross_links)})")
+        lines.append("")
+        for cl in cross_links:
+            strength_flag = f" [{cl['strength']}]" if cl.get('strength') else ""
+            lines.append(f"- **{cl['source_name']}** ({cl['source_label']}) → "
+                         f"**{cl['target_name']}** ({cl['target_label']}){strength_flag}")
+            if cl.get('hook'):
+                lines.append(f"  Hook: {cl['hook']}")
+        lines.append("")
+
+    # ── Vehicle Templates ──
+    SKIP_VT_PROPS = {"display_category", "display_color", "display_icon", "display_size",
+                     "name", "template_id", "template_type", "description"}
+    vehicle_templates = ctx.get("vehicle_templates", [])
+    if vehicle_templates:
+        lines.append(f"## Vehicle templates ({len(vehicle_templates)})")
+        lines.append("")
+        for vt in vehicle_templates:
+            lines.append(f"### {vt['template_type']} — {vt['name']}")
+            if vt.get('description'):
+                lines.append(f"{vt['description']}")
+            if vt.get('agent_prompt'):
+                lines.append(f"\n> **Agent prompt:** {vt['agent_prompt']}")
+            stems = vt.get('question_stems')
+            if stems:
+                if isinstance(stems, list):
+                    lines.append(f"**Question stems:** {', '.join(stems)}")
+                else:
+                    lines.append(f"**Question stems:** {stems}")
+            # Dump remaining VT node properties
+            props = vt.get('vt_props') or {}
+            for k, v in sorted(props.items()):
+                if k in SKIP_VT_PROPS or v is None or v == "" or v == []:
+                    continue
+                if isinstance(v, list):
+                    v = ", ".join(str(x) for x in v)
+                lines.append(f"- {k}: {v}")
+            lines.append("")
+
+    # ── Source Documents ──
+    source_docs = ctx.get("source_documents", [])
+    if source_docs:
+        lines.append("## Source documents")
+        lines.append("")
+        for sd in source_docs:
+            lines.append(f"- **{sd['title']}**")
+            if sd.get('dfe_ref'):
+                lines.append(f"  DfE reference: {sd['dfe_ref']}")
+            if sd.get('url'):
+                lines.append(f"  URL: {sd['url']}")
+        lines.append("")
 
     # ── Learner profile ──
     lines.append("---")

@@ -1260,6 +1260,20 @@ class SchemaValidator:
         status = "FAIL" if issues else "PASS"
         self.add(ValidationResult("TEMPLATE_FOR completeness", status, total, issues))
 
+    def check_uses_template_coverage(self):
+        """Study/unit nodes should have USES_TEMPLATE relationships to VehicleTemplate nodes."""
+        vt_count = self.scalar("MATCH (vt:VehicleTemplate) RETURN count(vt)") or 0
+        if vt_count == 0:
+            self.add(ValidationResult("USES_TEMPLATE coverage", "PASS", 0,
+                                      ["No VehicleTemplate nodes — import pending"]))
+            return
+        total = self.scalar("MATCH ()-[r:USES_TEMPLATE]->() RETURN count(r)") or 0
+        issues = []
+        if total == 0:
+            issues.append("Zero USES_TEMPLATE relationships — study nodes not linked to templates")
+        status = "FAIL" if total == 0 else "PASS"
+        self.add(ValidationResult("USES_TEMPLATE coverage", status, total, issues))
+
     # =========================================================================
     # P. TopicSuggestion layer (v4.0) — all 9 typed labels
     # =========================================================================
@@ -1660,6 +1674,7 @@ class SchemaValidator:
             self.check_vehicle_template_completeness,
             self.check_vehicle_template_template_for_coverage,
             self.check_template_for_completeness,
+            self.check_uses_template_coverage,
             # P. TopicSuggestion (v4.0)
             self.check_topic_suggestion_completeness,
             self.check_topic_suggestion_delivers_via,

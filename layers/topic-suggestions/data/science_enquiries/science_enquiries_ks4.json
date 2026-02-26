@@ -12,24 +12,56 @@
       "enquiry_question": "What is the effect of sucrose solution concentration on the mass of potato cylinders?",
       "science_discipline": "biology",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Biology: osmosis as a special case of diffusion through a selectively permeable membrane",
         "GCSE Biology: calculate water potential and explain the direction of water movement",
         "GCSE Biology: required practical — investigate the effect of a range of concentrations of salt or sugar solutions on the mass of plant tissue"
       ],
-      "equipment": ["potato cylinders (cork borer)", "sucrose solutions (0.0M to 1.0M in 0.2M intervals)", "electronic balance (±0.01g)", "boiling tubes", "paper towels", "ruler", "scalpel and tile", "labels"],
+      "equipment": [
+        "potato cylinders (cork borer)",
+        "sucrose solutions (0.0M to 1.0M in 0.2M intervals)",
+        "electronic balance (±0.01g)",
+        "boiling tubes",
+        "paper towels",
+        "ruler",
+        "scalpel and tile",
+        "labels"
+      ],
       "safety_notes": "Use a cork borer with care — always cut away from the body on a white tile. Scalpels must be handled safely — cut downwards onto the tile, never towards fingers. Wash hands after handling raw potato. Ensure solutions are clearly labelled. Mop up spills promptly.",
       "hazard_level": "low",
       "expected_outcome": "In dilute solutions (low solute concentration), potato cylinders gain mass as water enters cells by osmosis. In concentrated solutions, cylinders lose mass as water leaves cells. At the isotonic point, there is no net change in mass. Plotting percentage change in mass against concentration produces a characteristic curve, and the x-intercept indicates the solute potential of the potato cells.",
-      "recording_format": ["data table with initial/final mass and percentage change", "scatter graph of % mass change vs concentration", "line of best fit to identify isotonic point"],
+      "recording_format": [
+        "data table with initial/final mass and percentage change",
+        "scatter graph of % mass change vs concentration",
+        "line of best fit to identify isotonic point"
+      ],
       "variables": {
         "independent": "concentration of sucrose solution (0.0M, 0.2M, 0.4M, 0.6M, 0.8M, 1.0M)",
         "dependent": "percentage change in mass of potato cylinder",
-        "controlled": ["volume of solution", "size of potato cylinder (length and diameter)", "temperature", "time left in solution", "same potato"]
+        "controlled": [
+          "volume of solution",
+          "size of potato cylinder (length and diameter)",
+          "temperature",
+          "time left in solution",
+          "same potato"
+        ]
       },
-      "definitions": ["osmosis", "selectively permeable membrane", "water potential", "isotonic", "hypertonic", "hypotonic", "turgid", "plasmolysed", "concentration gradient"],
+      "definitions": [
+        "osmosis",
+        "selectively permeable membrane",
+        "water potential",
+        "isotonic",
+        "hypertonic",
+        "hypotonic",
+        "turgid",
+        "plasmolysed",
+        "concentration gradient"
+      ],
       "pedagogical_rationale": "This required practical develops quantitative skills essential to GCSE science: calculating percentage change, plotting scatter graphs, drawing lines of best fit, and interpolating to find the isotonic point. The investigation makes the abstract concept of water potential tangible through measurable mass changes. Using percentage change rather than absolute change teaches pupils to normalise data for fair comparison — a skill that transfers to all experimental science.",
       "common_pitfalls": [
         "Pupils record absolute mass change rather than percentage change — absolute change is misleading because potato cylinders vary in starting mass",
@@ -40,23 +72,52 @@
       "sensitive_content_notes": [],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "BI-KS4-C004", "primary": true},
-        {"concept_id": "BI-KS4-C001", "primary": false},
-        {"concept_id": "BI-KS4-C002", "primary": false},
-        {"concept_id": "BI-KS4-C003", "primary": false},
-        {"concept_id": "BI-KS4-C007", "primary": false}
+        {
+          "concept_id": "BI-KS4-C004",
+          "primary": true
+        },
+        {
+          "concept_id": "BI-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C002",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C007",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-032", "likelihood": "moderate"},
-        {"misconception_id": "MC-028", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-032",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-028",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "BI-KS4-D001",
+        "BI-KS4-D002"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -67,24 +128,57 @@
       "enquiry_question": "What is the effect of temperature on the rate of amylase activity?",
       "science_discipline": "biology",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Biology: enzymes as biological catalysts; the lock and key model of enzyme action",
         "GCSE Biology: factors affecting enzyme activity — temperature, pH, substrate concentration",
         "GCSE Biology: required practical — investigate the effect of pH on the rate of reaction of amylase enzyme"
       ],
-      "equipment": ["amylase solution", "starch solution", "iodine solution", "spotting tile", "water baths (20°C, 30°C, 40°C, 50°C, 60°C)", "thermometers", "stopwatch", "test tubes", "pipettes", "safety goggles"],
+      "equipment": [
+        "amylase solution",
+        "starch solution",
+        "iodine solution",
+        "spotting tile",
+        "water baths (20°C, 30°C, 40°C, 50°C, 60°C)",
+        "thermometers",
+        "stopwatch",
+        "test tubes",
+        "pipettes",
+        "safety goggles"
+      ],
       "safety_notes": "Wear safety goggles throughout. Iodine solution stains skin and clothing. Amylase is an irritant — avoid skin contact and wash splashes immediately. Water baths above 50°C can scald — use test tube holders. Do not taste any solutions. Ensure good ventilation.",
       "hazard_level": "standard",
       "expected_outcome": "Amylase activity increases with temperature up to an optimum (approximately 37°C for human amylase), then decreases sharply as the enzyme denatures. At the optimum, starch is broken down most rapidly (iodine turns from blue-black to yellow-brown fastest). Above the optimum, the active site changes shape permanently and the enzyme can no longer catalyse the reaction.",
-      "recording_format": ["time taken for starch to be digested at each temperature", "rate calculation (1/time)", "graph of rate vs temperature with optimum identified"],
+      "recording_format": [
+        "time taken for starch to be digested at each temperature",
+        "rate calculation (1/time)",
+        "graph of rate vs temperature with optimum identified"
+      ],
       "variables": {
         "independent": "temperature of water bath (20°C, 30°C, 40°C, 50°C, 60°C)",
         "dependent": "time taken for amylase to fully digest starch (iodine no longer turns blue-black)",
-        "controlled": ["concentration and volume of amylase", "concentration and volume of starch", "pH (use buffer)", "volume of iodine"]
+        "controlled": [
+          "concentration and volume of amylase",
+          "concentration and volume of starch",
+          "pH (use buffer)",
+          "volume of iodine"
+        ]
       },
-      "definitions": ["enzyme", "substrate", "active site", "lock and key model", "optimum temperature", "denaturation", "rate of reaction", "catalyst", "amylase"],
+      "definitions": [
+        "enzyme",
+        "substrate",
+        "active site",
+        "lock and key model",
+        "optimum temperature",
+        "denaturation",
+        "rate of reaction",
+        "catalyst",
+        "amylase"
+      ],
       "pedagogical_rationale": "This required practical connects molecular biology to measurable chemistry. The iodine test provides a clear, qualitative endpoint that pupils can time precisely. Calculating rate as 1/time introduces quantitative analysis of reaction kinetics. The denaturation curve is one of the most important graphs in GCSE biology — understanding why the curve is asymmetric (gradual increase vs sharp decline) requires pupils to reason about protein structure at the molecular level.",
       "common_pitfalls": [
         "Pupils confuse denaturation with death — enzymes are not alive; denaturation is a structural change to the protein",
@@ -95,20 +189,44 @@
       "sensitive_content_notes": [],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "BI-KS4-C005", "primary": true},
-        {"concept_id": "BI-KS4-C001", "primary": false},
-        {"concept_id": "BI-KS4-C004", "primary": false},
-        {"concept_id": "BI-KS4-C006", "primary": false},
-        {"concept_id": "BI-KS4-C011", "primary": false}
+        {
+          "concept_id": "BI-KS4-C005",
+          "primary": true
+        },
+        {
+          "concept_id": "BI-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C004",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C006",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C011",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "BI-KS4-D001",
+        "BI-KS4-D002",
+        "BI-KS4-D004"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -119,24 +237,58 @@
       "enquiry_question": "What is the effect of different antiseptics on the growth of bacteria?",
       "science_discipline": "biology",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Biology: pathogens as microorganisms that cause infectious disease",
         "GCSE Biology: required practical — investigate the effect of antiseptics or antibiotics on bacterial growth using agar plates and measuring zones of inhibition",
         "GCSE Biology: aseptic technique to prevent contamination"
       ],
-      "equipment": ["nutrient agar plates (pre-poured)", "bacterial culture (non-pathogenic, e.g. E. coli K-12)", "filter paper discs", "antiseptic solutions (different concentrations or types)", "sterile forceps", "Bunsen burner", "marker pen", "ruler (mm)", "incubator (25°C maximum in schools)", "autoclave tape"],
+      "equipment": [
+        "nutrient agar plates (pre-poured)",
+        "bacterial culture (non-pathogenic, e.g. E. coli K-12)",
+        "filter paper discs",
+        "antiseptic solutions (different concentrations or types)",
+        "sterile forceps",
+        "Bunsen burner",
+        "marker pen",
+        "ruler (mm)",
+        "incubator (25°C maximum in schools)",
+        "autoclave tape"
+      ],
       "safety_notes": "Strict aseptic technique throughout: flame the inoculating loop, sterilise the neck of bottles, work near a Bunsen burner. Incubate at a maximum of 25°C in schools (not 37°C) to prevent growth of human pathogens. Do NOT open Petri dishes after incubation. Seal plates with two strips of tape (not fully sealed, to allow aerobic conditions). Autoclave or disinfect all plates before disposal. Wash hands with antibacterial soap before and after the practical.",
       "hazard_level": "standard",
       "expected_outcome": "Antiseptics produce clear zones of inhibition around the filter paper discs where bacteria cannot grow. More effective antiseptics produce larger zones. Pupils calculate the area of the zone of inhibition using πr². A control disc (soaked in sterile water) shows no zone, confirming it is the antiseptic, not the disc, that prevents growth.",
-      "recording_format": ["data table of zone diameters for each antiseptic", "zone of inhibition area calculation (πr²)", "bar chart comparing effectiveness of antiseptics"],
+      "recording_format": [
+        "data table of zone diameters for each antiseptic",
+        "zone of inhibition area calculation (πr²)",
+        "bar chart comparing effectiveness of antiseptics"
+      ],
       "variables": {
         "independent": "type or concentration of antiseptic",
         "dependent": "area of zone of inhibition (mm²)",
-        "controlled": ["volume of antiseptic on each disc", "size of filter paper disc", "type and concentration of bacterial culture", "incubation temperature and time", "same agar plate preparation"]
+        "controlled": [
+          "volume of antiseptic on each disc",
+          "size of filter paper disc",
+          "type and concentration of bacterial culture",
+          "incubation temperature and time",
+          "same agar plate preparation"
+        ]
       },
-      "definitions": ["pathogen", "bacteria", "aseptic technique", "zone of inhibition", "antiseptic", "antibiotic", "contamination", "incubation", "colony"],
+      "definitions": [
+        "pathogen",
+        "bacteria",
+        "aseptic technique",
+        "zone of inhibition",
+        "antiseptic",
+        "antibiotic",
+        "contamination",
+        "incubation",
+        "colony"
+      ],
       "pedagogical_rationale": "This required practical is one of the few opportunities for pupils to work with living microorganisms. The aseptic technique develops essential laboratory discipline, while measuring zones of inhibition and calculating areas using πr² integrates mathematical skills with biological concepts. Comparing antiseptic effectiveness introduces the idea of evidence-based medicine and connects to real-world applications of microbiology.",
       "common_pitfalls": [
         "Pupils measure the diameter of the zone including the disc — the zone of inhibition is the clear area around the disc, not including the disc itself",
@@ -150,23 +302,53 @@
       ],
       "duration_lessons": 5,
       "delivers_via": [
-        {"concept_id": "BI-KS4-C008", "primary": true},
-        {"concept_id": "BI-KS4-C009", "primary": false},
-        {"concept_id": "BI-KS4-C001", "primary": false},
-        {"concept_id": "BI-KS4-C003", "primary": false},
-        {"concept_id": "BI-KS4-C016", "primary": false}
+        {
+          "concept_id": "BI-KS4-C008",
+          "primary": true
+        },
+        {
+          "concept_id": "BI-KS4-C009",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C016",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1},
-        {"enquiry_type_id": "ET-002", "rank": 2}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-002",
+          "rank": 2
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-027", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-027",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "BI-KS4-D001",
+        "BI-KS4-D003",
+        "BI-KS4-D006"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -177,7 +359,10 @@
       "enquiry_question": "What is the effect of light intensity on the rate of photosynthesis in pondweed?",
       "science_discipline": "biology",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Biology: photosynthesis as an endothermic reaction; the equation for photosynthesis",
@@ -185,17 +370,47 @@
         "GCSE Biology: required practical — investigate the effect of light intensity on the rate of photosynthesis using an aquatic organism such as pondweed",
         "GCSE Biology: the concept of limiting factors"
       ],
-      "equipment": ["Elodea (pondweed)", "boiling tube", "lamp with known wattage", "ruler", "stopwatch", "sodium hydrogen carbonate solution (1%)", "thermometer", "clamp stand", "beaker (as heat shield)"],
+      "equipment": [
+        "Elodea (pondweed)",
+        "boiling tube",
+        "lamp with known wattage",
+        "ruler",
+        "stopwatch",
+        "sodium hydrogen carbonate solution (1%)",
+        "thermometer",
+        "clamp stand",
+        "beaker (as heat shield)"
+      ],
       "safety_notes": "The lamp produces significant heat — position a beaker of water between the lamp and pondweed as a heat shield to prevent temperature confounding the results. Do not touch the lamp bulb during or after use. Ensure water does not contact electrical equipment. Wash hands after handling pondweed.",
       "hazard_level": "low",
       "expected_outcome": "As the lamp is moved closer to the pondweed (increasing light intensity), the rate of oxygen bubble production increases. At very high light intensities, the rate plateaus as another factor (CO₂ or temperature) becomes limiting. Light intensity follows an inverse square law: intensity ∝ 1/d². Pupils should plot rate against 1/d² to show a proportional relationship in the non-limiting region.",
-      "recording_format": ["data table of distance, 1/d², and bubble count per minute", "scatter graph of rate vs 1/d² (light intensity proxy)", "identification of limiting factor plateau"],
+      "recording_format": [
+        "data table of distance, 1/d², and bubble count per minute",
+        "scatter graph of rate vs 1/d² (light intensity proxy)",
+        "identification of limiting factor plateau"
+      ],
       "variables": {
         "independent": "distance of lamp from pondweed (converted to light intensity using 1/d²)",
         "dependent": "rate of oxygen production (bubbles per minute or volume using a gas syringe)",
-        "controlled": ["temperature (heat shield)", "CO₂ concentration (sodium hydrogen carbonate)", "same piece of pondweed", "volume of water", "colour of light"]
+        "controlled": [
+          "temperature (heat shield)",
+          "CO₂ concentration (sodium hydrogen carbonate)",
+          "same piece of pondweed",
+          "volume of water",
+          "colour of light"
+        ]
       },
-      "definitions": ["photosynthesis", "limiting factor", "inverse square law", "rate of reaction", "chlorophyll", "chloroplast", "endothermic", "carbon dioxide", "glucose"],
+      "definitions": [
+        "photosynthesis",
+        "limiting factor",
+        "inverse square law",
+        "rate of reaction",
+        "chlorophyll",
+        "chloroplast",
+        "endothermic",
+        "carbon dioxide",
+        "glucose"
+      ],
       "pedagogical_rationale": "This required practical extends the KS3 pondweed investigation to GCSE standard by introducing the inverse square law relationship and the concept of limiting factors. Using 1/d² as a proxy for light intensity develops mathematical reasoning alongside biological understanding. The plateau region of the graph provides an excellent context for discussing limiting factors — a concept that transfers to many other biological processes (enzyme kinetics, population growth).",
       "common_pitfalls": [
         "Pupils plot rate against distance rather than 1/d² — the graph against distance produces a curve, but plotting against 1/d² should give a straight line in the non-limiting region",
@@ -206,24 +421,58 @@
       "sensitive_content_notes": [],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "BI-KS4-C010", "primary": true},
-        {"concept_id": "BI-KS4-C011", "primary": false},
-        {"concept_id": "BI-KS4-C007", "primary": false},
-        {"concept_id": "BI-KS4-C001", "primary": false},
-        {"concept_id": "BI-KS4-C017", "primary": false}
+        {
+          "concept_id": "BI-KS4-C010",
+          "primary": true
+        },
+        {
+          "concept_id": "BI-KS4-C011",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C007",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C017",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-001", "likelihood": "moderate"},
-        {"misconception_id": "MC-004", "likelihood": "high"},
-        {"misconception_id": "MC-005", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-001",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-004",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-005",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "BI-KS4-D001",
+        "BI-KS4-D002",
+        "BI-KS4-D004",
+        "BI-KS4-D007"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -234,24 +483,55 @@
       "enquiry_question": "What is the effect of a stimulus factor on human reaction time, and what does this reveal about nervous system function?",
       "science_discipline": "biology",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Biology: the structure and function of the nervous system — receptors, sensory neurones, relay neurones, motor neurones, effectors",
         "GCSE Biology: reflex arcs and the importance of reflex actions",
         "GCSE Biology: required practical — plan and carry out an investigation into the effect of a factor on human reaction time"
       ],
-      "equipment": ["ruler (30cm)", "computer-based reaction time test (optional)", "stopwatch", "data recording sheets", "calculator"],
+      "equipment": [
+        "ruler (30cm)",
+        "computer-based reaction time test (optional)",
+        "stopwatch",
+        "data recording sheets",
+        "calculator"
+      ],
       "safety_notes": "Low risk practical. Ensure pupils do not snatch at the ruler too aggressively. If testing the effect of caffeine, check school policy on consumption of caffeinated drinks by minors and obtain parental consent. Do not use any substances that could impair pupils.",
       "hazard_level": "low",
       "expected_outcome": "Reaction time can be measured using the ruler drop test and converted to time using s = ½gt². Pupils investigate a factor (e.g. practice, distraction, dominant vs non-dominant hand) and find that reaction times vary between individuals and conditions. The nervous pathway (stimulus → receptor → sensory neurone → relay neurone → motor neurone → effector) introduces a delay, and factors that interfere with signal processing increase reaction time.",
-      "recording_format": ["data table with at least 5 repeats per condition", "mean and range calculations", "bar chart or scatter graph comparing conditions", "statistical analysis (mean, range, anomaly identification)"],
+      "recording_format": [
+        "data table with at least 5 repeats per condition",
+        "mean and range calculations",
+        "bar chart or scatter graph comparing conditions",
+        "statistical analysis (mean, range, anomaly identification)"
+      ],
       "variables": {
         "independent": "factor being tested (e.g. practice effect, distraction, hand dominance)",
         "dependent": "reaction time (seconds, calculated from ruler drop distance using s = ½gt²)",
-        "controlled": ["same person catching", "same ruler", "same starting position", "same instructions", "same time of day"]
+        "controlled": [
+          "same person catching",
+          "same ruler",
+          "same starting position",
+          "same instructions",
+          "same time of day"
+        ]
       },
-      "definitions": ["stimulus", "receptor", "sensory neurone", "relay neurone", "motor neurone", "effector", "reflex arc", "synapse", "reaction time", "voluntary response"],
+      "definitions": [
+        "stimulus",
+        "receptor",
+        "sensory neurone",
+        "relay neurone",
+        "motor neurone",
+        "effector",
+        "reflex arc",
+        "synapse",
+        "reaction time",
+        "voluntary response"
+      ],
       "pedagogical_rationale": "The ruler drop test is an accessible, low-cost investigation that generates quantitative data with inherent variability — making it ideal for teaching statistical thinking at GCSE level. Calculating mean and range from repeat measurements, identifying anomalies, and drawing error bars develops the data handling skills that examiners specifically test. The biological context connects the abstract concept of reflex arcs to measurable, personal experience.",
       "common_pitfalls": [
         "Pupils anticipate the drop by watching the tester's hand rather than the ruler — standardise the drop method (e.g. tester says 'ready' but drops at a random time)",
@@ -265,23 +545,54 @@
       ],
       "duration_lessons": 3,
       "delivers_via": [
-        {"concept_id": "BI-KS4-C012", "primary": true},
-        {"concept_id": "BI-KS4-C013", "primary": false},
-        {"concept_id": "BI-KS4-C002", "primary": false},
-        {"concept_id": "BI-KS4-C014", "primary": false},
-        {"concept_id": "BI-KS4-C011", "primary": false}
+        {
+          "concept_id": "BI-KS4-C012",
+          "primary": true
+        },
+        {
+          "concept_id": "BI-KS4-C013",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C002",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C014",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C011",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1},
-        {"enquiry_type_id": "ET-003", "rank": 2}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-003",
+          "rank": 2
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-044", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-044",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "BI-KS4-D001",
+        "BI-KS4-D004",
+        "BI-KS4-D005",
+        "BI-KS4-D006"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -292,24 +603,60 @@
       "enquiry_question": "How does an environmental factor affect the distribution and abundance of organisms in a habitat?",
       "science_discipline": "biology",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Biology: ecosystems, abiotic and biotic factors affecting communities",
         "GCSE Biology: required practical — measure the population size of a common species in a habitat, using sampling techniques including quadrats and belt transects",
         "GCSE Biology: biodiversity and the effect of human activities on ecosystems"
       ],
-      "equipment": ["quadrats (0.5m × 0.5m)", "tape measures (30m)", "identification keys", "light meter", "soil moisture meter", "soil thermometer", "pH meter or indicator paper", "tally counters", "clipboards", "calculator"],
+      "equipment": [
+        "quadrats (0.5m × 0.5m)",
+        "tape measures (30m)",
+        "identification keys",
+        "light meter",
+        "soil moisture meter",
+        "soil thermometer",
+        "pH meter or indicator paper",
+        "tally counters",
+        "clipboards",
+        "calculator"
+      ],
       "safety_notes": "Complete a site-specific risk assessment before fieldwork. Check for pupil allergies (pollen, insect stings). Wear appropriate clothing and footwear. Wash hands thoroughly after handling soil and organisms. Stay within designated areas. Carry a first aid kit. Avoid unstable ground near water bodies. Check weather forecast and postpone in dangerous conditions.",
       "hazard_level": "low",
       "expected_outcome": "Organisms are not randomly distributed — their abundance correlates with abiotic factors (light, moisture, pH, temperature). A belt transect across an environmental gradient (e.g. field to woodland edge) reveals systematic changes in species distribution. Pupils can calculate species frequency, percentage cover, and population estimates using sampling data. Statistical analysis reveals whether observed patterns are significant or due to chance.",
-      "recording_format": ["belt transect data table (species count per quadrat at each distance)", "kite diagram or bar chart of species distribution along transect", "scatter graph of species abundance vs abiotic factor", "population estimate calculation"],
+      "recording_format": [
+        "belt transect data table (species count per quadrat at each distance)",
+        "kite diagram or bar chart of species distribution along transect",
+        "scatter graph of species abundance vs abiotic factor",
+        "population estimate calculation"
+      ],
       "variables": {
         "independent": "distance along transect (proxy for environmental gradient) or specific abiotic factor",
         "dependent": "abundance or percentage cover of target species",
-        "controlled": ["quadrat size", "sampling method (systematic along transect)", "time of day", "season"]
+        "controlled": [
+          "quadrat size",
+          "sampling method (systematic along transect)",
+          "time of day",
+          "season"
+        ]
       },
-      "definitions": ["ecosystem", "community", "population", "abiotic factor", "biotic factor", "quadrat", "transect", "systematic sampling", "percentage cover", "biodiversity", "species richness"],
+      "definitions": [
+        "ecosystem",
+        "community",
+        "population",
+        "abiotic factor",
+        "biotic factor",
+        "quadrat",
+        "transect",
+        "systematic sampling",
+        "percentage cover",
+        "biodiversity",
+        "species richness"
+      ],
       "pedagogical_rationale": "Fieldwork is irreplaceable for developing scientific reasoning about real ecosystems. The belt transect method provides a structured approach to pattern seeking in a complex, variable environment. Correlating species distribution with measured abiotic factors teaches pupils to identify relationships in data without controlled experiments — a critical distinction from fair testing. The inherent messiness of ecological data develops statistical thinking and the ability to draw cautious conclusions.",
       "common_pitfalls": [
         "Pupils place quadrats only in visually interesting areas rather than at systematic intervals along the transect — enforce systematic or stratified random sampling",
@@ -323,25 +670,62 @@
       ],
       "duration_lessons": 5,
       "delivers_via": [
-        {"concept_id": "BI-KS4-C017", "primary": true},
-        {"concept_id": "BI-KS4-C018", "primary": false},
-        {"concept_id": "BI-KS4-C016", "primary": false},
-        {"concept_id": "BI-KS4-C010", "primary": false},
-        {"concept_id": "BI-KS4-C007", "primary": false}
+        {
+          "concept_id": "BI-KS4-C017",
+          "primary": true
+        },
+        {
+          "concept_id": "BI-KS4-C018",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C016",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C010",
+          "primary": false
+        },
+        {
+          "concept_id": "BI-KS4-C007",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-003", "rank": 1},
-        {"enquiry_type_id": "ET-002", "rank": 2}
+        {
+          "enquiry_type_id": "ET-003",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-002",
+          "rank": 2
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-036", "likelihood": "high"},
-        {"misconception_id": "MC-035", "likelihood": "moderate"},
-        {"misconception_id": "MC-045", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-036",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-035",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-045",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-10"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-10"
+      ],
+      "domain_ids": [
+        "BI-KS4-D002",
+        "BI-KS4-D004",
+        "BI-KS4-D006",
+        "BI-KS4-D007"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -352,24 +736,54 @@
       "enquiry_question": "What is the effect of concentration on the rate of reaction between sodium thiosulfate and hydrochloric acid?",
       "science_discipline": "chemistry",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Chemistry: collision theory — reactions occur when particles collide with sufficient energy",
         "GCSE Chemistry: factors affecting rate of reaction — concentration, temperature, surface area, catalysts",
         "GCSE Chemistry: required practical — investigate how changes in concentration affect the rates of reactions by a method involving measurement of a quantity (e.g. turbidity)"
       ],
-      "equipment": ["sodium thiosulfate solution (40 g/dm³)", "dilute hydrochloric acid (1M)", "conical flasks", "measuring cylinders (10ml, 25ml)", "stopwatch", "paper with printed cross (X)", "safety goggles", "fume cupboard or well-ventilated area"],
+      "equipment": [
+        "sodium thiosulfate solution (40 g/dm³)",
+        "dilute hydrochloric acid (1M)",
+        "conical flasks",
+        "measuring cylinders (10ml, 25ml)",
+        "stopwatch",
+        "paper with printed cross (X)",
+        "safety goggles",
+        "fume cupboard or well-ventilated area"
+      ],
       "safety_notes": "Wear safety goggles throughout. This reaction produces sulfur dioxide gas — work in a fume cupboard or ensure very good ventilation. Pupils with asthma should be positioned away from the reaction or observe from a distance. Sodium thiosulfate is an irritant. Hydrochloric acid is corrosive at higher concentrations — use dilute (1M). Wash any splashes to skin immediately.",
       "hazard_level": "standard",
       "expected_outcome": "As the concentration of sodium thiosulfate increases, the time taken for the cross to disappear decreases because there are more reactant particles per unit volume, leading to more frequent successful collisions. Rate ∝ 1/time. Plotting rate (1/t) against concentration produces an approximately straight line through the origin, confirming a directly proportional relationship. Collision theory explains the result: higher concentration = more particles per unit volume = more frequent collisions = faster rate.",
-      "recording_format": ["data table of concentration, time, and rate (1/time)", "scatter graph of rate (1/t) vs concentration", "conclusion linking to collision theory"],
+      "recording_format": [
+        "data table of concentration, time, and rate (1/time)",
+        "scatter graph of rate (1/t) vs concentration",
+        "conclusion linking to collision theory"
+      ],
       "variables": {
         "independent": "concentration of sodium thiosulfate (diluted with water to maintain constant total volume)",
         "dependent": "time for the cross to disappear (seconds)",
-        "controlled": ["volume of hydrochloric acid", "total volume of solution (thiosulfate + water)", "temperature", "size and thickness of cross mark"]
+        "controlled": [
+          "volume of hydrochloric acid",
+          "total volume of solution (thiosulfate + water)",
+          "temperature",
+          "size and thickness of cross mark"
+        ]
       },
-      "definitions": ["rate of reaction", "collision theory", "activation energy", "concentration", "turbidity", "sulfur", "precipitate", "directly proportional"],
+      "definitions": [
+        "rate of reaction",
+        "collision theory",
+        "activation energy",
+        "concentration",
+        "turbidity",
+        "sulfur",
+        "precipitate",
+        "directly proportional"
+      ],
       "pedagogical_rationale": "The disappearing cross method is a classic GCSE practical because it produces clear, quantitative data with a simple visual endpoint. Calculating rate as 1/time and plotting rate against concentration develops the mathematical skills examiners test heavily. The practical provides concrete evidence for collision theory — the most important explanatory model in GCSE chemistry for understanding reaction kinetics.",
       "common_pitfalls": [
         "Pupils forget to keep the total volume constant when diluting — if total volume changes, the depth of liquid above the cross changes, confounding the results",
@@ -382,20 +796,45 @@
       ],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "CH-KS4-C010", "primary": true},
-        {"concept_id": "CH-KS4-C009", "primary": false},
-        {"concept_id": "CH-KS4-C005", "primary": false},
-        {"concept_id": "CH-KS4-C011", "primary": false},
-        {"concept_id": "CH-KS4-C001", "primary": false}
+        {
+          "concept_id": "CH-KS4-C010",
+          "primary": true
+        },
+        {
+          "concept_id": "CH-KS4-C009",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C011",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C001",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "CH-KS4-D001",
+        "CH-KS4-D003",
+        "CH-KS4-D005",
+        "CH-KS4-D006"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -406,24 +845,62 @@
       "enquiry_question": "What products are formed at each electrode during the electrolysis of different aqueous solutions?",
       "science_discipline": "chemistry",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Chemistry: electrolysis — the process of using electrical energy to decompose ionic compounds",
         "GCSE Chemistry: required practical — investigate what happens when aqueous solutions are electrolysed using inert electrodes",
         "GCSE Chemistry: predicting the products of electrolysis using the reactivity series and concentration of the solution"
       ],
-      "equipment": ["electrolysis cells or beakers", "carbon (graphite) electrodes", "DC power supply (6V)", "connecting wires with crocodile clips", "copper sulfate solution (0.5M)", "sodium chloride solution (concentrated and dilute)", "sodium sulfate solution", "universal indicator", "wooden splint", "test tubes for gas collection", "safety goggles", "gloves"],
+      "equipment": [
+        "electrolysis cells or beakers",
+        "carbon (graphite) electrodes",
+        "DC power supply (6V)",
+        "connecting wires with crocodile clips",
+        "copper sulfate solution (0.5M)",
+        "sodium chloride solution (concentrated and dilute)",
+        "sodium sulfate solution",
+        "universal indicator",
+        "wooden splint",
+        "test tubes for gas collection",
+        "safety goggles",
+        "gloves"
+      ],
       "safety_notes": "Wear safety goggles and gloves. Electrolysis of sodium chloride produces chlorine gas — work in a fume cupboard or very well ventilated area. Do NOT inhale gases directly — waft cautiously. Use low voltage DC only (max 6V). Avoid short-circuiting the power supply. Copper sulfate solution is harmful — avoid ingestion and wash skin contact immediately. Ensure electrodes are secure and do not touch each other.",
       "hazard_level": "elevated",
       "expected_outcome": "At the cathode (negative electrode): metal is deposited if it is less reactive than hydrogen (e.g. copper from copper sulfate); otherwise hydrogen gas is produced (positive splint test: squeaky pop). At the anode (positive electrode): if the solution contains a halide, the halogen is produced (e.g. chlorine from sodium chloride); otherwise oxygen is produced. Pupils predict products using the reactivity series and halide rule, then test predictions experimentally.",
-      "recording_format": ["observations table (solution, cathode product, anode product, gas tests)", "ionic half-equations at each electrode", "pattern identification linking products to reactivity series"],
+      "recording_format": [
+        "observations table (solution, cathode product, anode product, gas tests)",
+        "ionic half-equations at each electrode",
+        "pattern identification linking products to reactivity series"
+      ],
       "variables": {
         "independent": "aqueous solution used (copper sulfate, sodium chloride, sodium sulfate)",
         "dependent": "products formed at each electrode (identified by gas tests and observations)",
-        "controlled": ["voltage", "electrode material (graphite)", "volume of solution", "time of electrolysis"]
+        "controlled": [
+          "voltage",
+          "electrode material (graphite)",
+          "volume of solution",
+          "time of electrolysis"
+        ]
       },
-      "definitions": ["electrolysis", "electrolyte", "electrode", "cathode", "anode", "cation", "anion", "discharge", "oxidation", "reduction", "half-equation", "inert electrode"],
+      "definitions": [
+        "electrolysis",
+        "electrolyte",
+        "electrode",
+        "cathode",
+        "anode",
+        "cation",
+        "anion",
+        "discharge",
+        "oxidation",
+        "reduction",
+        "half-equation",
+        "inert electrode"
+      ],
       "pedagogical_rationale": "Electrolysis requires pupils to apply multiple chemistry concepts simultaneously: ionic bonding, the reactivity series, oxidation and reduction, and charge transfer. The pattern-seeking element — predicting products before testing — develops higher-order reasoning. Writing ionic half-equations extends mathematical and chemical literacy. The practical produces dramatic, visible results (copper depositing, gases bubbling, indicator colour changes) that make abstract electrochemistry concrete.",
       "common_pitfalls": [
         "Pupils confuse the cathode and anode — use the mnemonic PANIC (Positive Anode, Negative Is Cathode) and reinforce with diagrams",
@@ -436,23 +913,53 @@
       ],
       "duration_lessons": 5,
       "delivers_via": [
-        {"concept_id": "CH-KS4-C008", "primary": true},
-        {"concept_id": "CH-KS4-C003", "primary": false},
-        {"concept_id": "CH-KS4-C007", "primary": false},
-        {"concept_id": "CH-KS4-C001", "primary": false},
-        {"concept_id": "CH-KS4-C002", "primary": false}
+        {
+          "concept_id": "CH-KS4-C008",
+          "primary": true
+        },
+        {
+          "concept_id": "CH-KS4-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C007",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C002",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-003", "rank": 1},
-        {"enquiry_type_id": "ET-001", "rank": 2}
+        {
+          "enquiry_type_id": "ET-003",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 2
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-042", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-042",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-05"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-05"
+      ],
+      "domain_ids": [
+        "CH-KS4-D001",
+        "CH-KS4-D002",
+        "CH-KS4-D004"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -463,24 +970,58 @@
       "enquiry_question": "How can paper chromatography be used to identify unknown substances, and what do Rf values tell us?",
       "science_discipline": "chemistry",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Chemistry: chromatography as a technique for separating and identifying substances in a mixture",
         "GCSE Chemistry: required practical — investigate how paper chromatography can be used to separate and tell the difference between coloured substances; calculate Rf values",
         "GCSE Chemistry: pure substances have a single spot on a chromatogram; mixtures show multiple spots"
       ],
-      "equipment": ["chromatography paper", "pencil (NOT pen)", "ruler", "beaker", "watch glass or cling film", "selection of water-soluble inks or food colourings", "unknown samples", "solvent (water)", "capillary tubes or fine glass rods"],
+      "equipment": [
+        "chromatography paper",
+        "pencil (NOT pen)",
+        "ruler",
+        "beaker",
+        "watch glass or cling film",
+        "selection of water-soluble inks or food colourings",
+        "unknown samples",
+        "solvent (water)",
+        "capillary tubes or fine glass rods"
+      ],
       "safety_notes": "Low risk with water as solvent. If using organic solvents (ethanol), ensure good ventilation and keep away from naked flames. Use a pencil, not a pen, for the start line — ink from a pen will run with the solvent. Handle chromatography paper by the edges to avoid contamination with finger oils.",
       "hazard_level": "low",
       "expected_outcome": "Different substances travel different distances up the paper depending on their solubility in the solvent and their attraction to the paper. Rf value = distance moved by substance / distance moved by solvent front. A pure substance produces a single spot. A mixture produces multiple spots. Unknown substances can be identified by comparing their Rf values with known reference substances run on the same chromatogram under the same conditions.",
-      "recording_format": ["annotated chromatogram with measurements", "Rf value calculation table", "identification of unknowns by Rf comparison"],
+      "recording_format": [
+        "annotated chromatogram with measurements",
+        "Rf value calculation table",
+        "identification of unknowns by Rf comparison"
+      ],
       "variables": {
         "independent": "substance applied to the chromatography paper",
         "dependent": "distance travelled by each spot (Rf value)",
-        "controlled": ["solvent type", "temperature", "paper type", "depth of solvent in beaker", "same starting line position"]
+        "controlled": [
+          "solvent type",
+          "temperature",
+          "paper type",
+          "depth of solvent in beaker",
+          "same starting line position"
+        ]
       },
-      "definitions": ["chromatography", "chromatogram", "Rf value", "solvent", "solvent front", "mobile phase", "stationary phase", "pure substance", "mixture", "retention"],
+      "definitions": [
+        "chromatography",
+        "chromatogram",
+        "Rf value",
+        "solvent",
+        "solvent front",
+        "mobile phase",
+        "stationary phase",
+        "pure substance",
+        "mixture",
+        "retention"
+      ],
       "pedagogical_rationale": "Chromatography is one of the most accessible analytical techniques at GCSE level because results are visual and the calculation (Rf) is straightforward. The practical teaches pupils that scientists identify substances through measurable physical properties rather than appearance alone. Comparing unknown Rf values with reference values introduces the concept of analytical standards — fundamental to forensic science, pharmaceutical quality control, and food safety.",
       "common_pitfalls": [
         "Pupils draw the start line in pen rather than pencil — the pen ink dissolves and runs with the solvent, ruining the chromatogram",
@@ -491,20 +1032,46 @@
       "sensitive_content_notes": [],
       "duration_lessons": 3,
       "delivers_via": [
-        {"concept_id": "CH-KS4-C015", "primary": true},
-        {"concept_id": "CH-KS4-C004", "primary": false},
-        {"concept_id": "CH-KS4-C005", "primary": false},
-        {"concept_id": "CH-KS4-C012", "primary": false},
-        {"concept_id": "CH-KS4-C002", "primary": false}
+        {
+          "concept_id": "CH-KS4-C015",
+          "primary": true
+        },
+        {
+          "concept_id": "CH-KS4-C004",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C012",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C002",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-004", "rank": 1}
+        {
+          "enquiry_type_id": "ET-004",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-05"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-05"
+      ],
+      "domain_ids": [
+        "CH-KS4-D001",
+        "CH-KS4-D002",
+        "CH-KS4-D003",
+        "CH-KS4-D007",
+        "CH-KS4-D008"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -515,24 +1082,60 @@
       "enquiry_question": "What volume of sodium hydroxide is needed to exactly neutralise a given volume of hydrochloric acid?",
       "science_discipline": "chemistry",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Chemistry: neutralisation reactions — acid + alkali → salt + water",
         "GCSE Chemistry: required practical — determine the reacting volumes of solutions of a strong acid and a strong alkali by titration",
         "GCSE Chemistry: calculate concentrations of solutions from titration data using moles"
       ],
-      "equipment": ["burette (50ml)", "conical flask", "white tile", "clamp stand and boss", "dilute hydrochloric acid (known concentration)", "sodium hydroxide solution (unknown concentration)", "phenolphthalein indicator", "wash bottle (distilled water)", "safety goggles", "gloves", "pipette (25ml) with filler"],
+      "equipment": [
+        "burette (50ml)",
+        "conical flask",
+        "white tile",
+        "clamp stand and boss",
+        "dilute hydrochloric acid (known concentration)",
+        "sodium hydroxide solution (unknown concentration)",
+        "phenolphthalein indicator",
+        "wash bottle (distilled water)",
+        "safety goggles",
+        "gloves",
+        "pipette (25ml) with filler"
+      ],
       "safety_notes": "Wear safety goggles and gloves throughout. Sodium hydroxide is corrosive — wash splashes immediately with plenty of water. Hydrochloric acid is an irritant at dilute concentrations. Phenolphthalein is flammable (in ethanol) — keep away from naked flames. Use a pipette filler, NEVER pipette by mouth. Clean up any spills immediately. Know the location of the eyewash station.",
       "hazard_level": "standard",
       "expected_outcome": "Through careful titration, pupils determine the exact volume of sodium hydroxide needed to neutralise a fixed volume of hydrochloric acid. The indicator changes colour at the endpoint (phenolphthalein: colourless in acid, pink in alkali). Concordant results (within 0.10 cm³) demonstrate precision. Using the titration data, pupils can calculate the unknown concentration of the alkali using c₁V₁ = c₂V₂ or moles calculations.",
-      "recording_format": ["titration results table (rough, 1st, 2nd, 3rd titre volumes)", "concordant result identification", "mean titre calculation (excluding rough)", "concentration calculation using moles"],
+      "recording_format": [
+        "titration results table (rough, 1st, 2nd, 3rd titre volumes)",
+        "concordant result identification",
+        "mean titre calculation (excluding rough)",
+        "concentration calculation using moles"
+      ],
       "variables": {
         "independent": "volume of sodium hydroxide added from burette",
         "dependent": "indicator colour change (endpoint identification)",
-        "controlled": ["volume of acid (pipetted)", "concentration of acid", "indicator type and amount", "temperature"]
+        "controlled": [
+          "volume of acid (pipetted)",
+          "concentration of acid",
+          "indicator type and amount",
+          "temperature"
+        ]
       },
-      "definitions": ["titration", "burette", "pipette", "endpoint", "concordant", "neutralisation", "indicator", "concentration", "mole", "titre"],
+      "definitions": [
+        "titration",
+        "burette",
+        "pipette",
+        "endpoint",
+        "concordant",
+        "neutralisation",
+        "indicator",
+        "concentration",
+        "mole",
+        "titre"
+      ],
       "pedagogical_rationale": "Titration develops precision, patience, and quantitative chemistry skills simultaneously. Reading a burette to ±0.05 cm³ and achieving concordant results teaches the importance of careful technique. The mathematical follow-up — calculating unknown concentrations from titration volumes — integrates practical skills with moles calculations, which is the single most examined quantitative topic at GCSE chemistry. Titration also teaches pupils that real science requires multiple trials and the discipline to reject anomalous results.",
       "common_pitfalls": [
         "Pupils add alkali too quickly and overshoot the endpoint — practise adding drop by drop near the expected endpoint",
@@ -543,23 +1146,54 @@
       "sensitive_content_notes": [],
       "duration_lessons": 5,
       "delivers_via": [
-        {"concept_id": "CH-KS4-C007", "primary": true},
-        {"concept_id": "CH-KS4-C005", "primary": false},
-        {"concept_id": "CH-KS4-C006", "primary": false},
-        {"concept_id": "CH-KS4-C003", "primary": false},
-        {"concept_id": "CH-KS4-C009", "primary": false}
+        {
+          "concept_id": "CH-KS4-C007",
+          "primary": true
+        },
+        {
+          "concept_id": "CH-KS4-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C006",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C009",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-030", "likelihood": "moderate"},
-        {"misconception_id": "MC-031", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-030",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-031",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "CH-KS4-D002",
+        "CH-KS4-D003",
+        "CH-KS4-D004",
+        "CH-KS4-D005"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -570,24 +1204,59 @@
       "enquiry_question": "Is the reaction between citric acid and sodium hydrogen carbonate exothermic or endothermic, and how much energy is transferred?",
       "science_discipline": "chemistry",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Chemistry: exothermic and endothermic reactions; energy profile diagrams",
         "GCSE Chemistry: required practical — investigate the variables that affect temperature changes in reacting solutions such as acid plus metals, acid plus carbonates",
         "GCSE Chemistry: bond energy calculations — energy in = bonds broken, energy out = bonds formed"
       ],
-      "equipment": ["polystyrene cup (calorimeter)", "thermometer (±0.5°C) or temperature probe", "measuring cylinder", "citric acid solution", "sodium hydrogen carbonate powder", "dilute hydrochloric acid", "sodium hydroxide solution", "magnesium ribbon", "balance", "safety goggles", "lid for cup"],
+      "equipment": [
+        "polystyrene cup (calorimeter)",
+        "thermometer (±0.5°C) or temperature probe",
+        "measuring cylinder",
+        "citric acid solution",
+        "sodium hydrogen carbonate powder",
+        "dilute hydrochloric acid",
+        "sodium hydroxide solution",
+        "magnesium ribbon",
+        "balance",
+        "safety goggles",
+        "lid for cup"
+      ],
       "safety_notes": "Wear safety goggles throughout. Some reactions produce significant temperature changes — do not touch hot solutions. Magnesium reacts vigorously with acid and produces flammable hydrogen gas — no naked flames nearby. Sodium hydroxide is corrosive. Use a lid on the calorimeter to reduce heat loss but allow gas to escape. Wash splashes immediately.",
       "hazard_level": "standard",
       "expected_outcome": "Exothermic reactions (e.g. acid + alkali, acid + metal) increase the temperature of the surroundings. Endothermic reactions (e.g. citric acid + sodium hydrogen carbonate) decrease the temperature. The temperature change can be used to calculate the energy transferred using Q = mcΔT. Comparing experimental values with theoretical bond energy calculations reveals the inefficiency of the simple calorimeter due to heat loss.",
-      "recording_format": ["temperature readings before and after reaction", "temperature change calculation", "energy transferred calculation (Q = mcΔT)", "energy profile diagram (exothermic vs endothermic)"],
+      "recording_format": [
+        "temperature readings before and after reaction",
+        "temperature change calculation",
+        "energy transferred calculation (Q = mcΔT)",
+        "energy profile diagram (exothermic vs endothermic)"
+      ],
       "variables": {
         "independent": "type of reaction (exothermic vs endothermic) or mass/volume of reactant",
         "dependent": "temperature change (°C)",
-        "controlled": ["volume of solution", "starting temperature", "insulation (same calorimeter)", "concentration of solutions"]
+        "controlled": [
+          "volume of solution",
+          "starting temperature",
+          "insulation (same calorimeter)",
+          "concentration of solutions"
+        ]
       },
-      "definitions": ["exothermic", "endothermic", "activation energy", "bond energy", "energy profile", "calorimetry", "specific heat capacity", "enthalpy change", "thermal energy"],
+      "definitions": [
+        "exothermic",
+        "endothermic",
+        "activation energy",
+        "bond energy",
+        "energy profile",
+        "calorimetry",
+        "specific heat capacity",
+        "enthalpy change",
+        "thermal energy"
+      ],
       "pedagogical_rationale": "This required practical bridges the gap between qualitative understanding (hot = exothermic, cold = endothermic) and quantitative energy calculations using Q = mcΔT. The polystyrene cup calorimeter is deliberately imperfect, which provides an excellent context for evaluation — pupils can discuss heat loss, insulation, and why their experimental value differs from the theoretical value. This evaluation skill is heavily examined at GCSE.",
       "common_pitfalls": [
         "Pupils assume all reactions are exothermic — the endothermic citric acid reaction is counter-intuitive and memorable",
@@ -598,23 +1267,54 @@
       "sensitive_content_notes": [],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "CH-KS4-C009", "primary": true},
-        {"concept_id": "CH-KS4-C010", "primary": false},
-        {"concept_id": "CH-KS4-C003", "primary": false},
-        {"concept_id": "CH-KS4-C004", "primary": false},
-        {"concept_id": "CH-KS4-C005", "primary": false}
+        {
+          "concept_id": "CH-KS4-C009",
+          "primary": true
+        },
+        {
+          "concept_id": "CH-KS4-C010",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C004",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C005",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-039", "likelihood": "moderate"},
-        {"misconception_id": "MC-040", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-039",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-040",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "CH-KS4-D002",
+        "CH-KS4-D003",
+        "CH-KS4-D005",
+        "CH-KS4-D006"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -625,7 +1325,10 @@
       "enquiry_question": "How has the composition of Earth's atmosphere changed over time, and what is the evidence for human-caused climate change?",
       "science_discipline": "chemistry",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Chemistry: the composition of the atmosphere and how it has changed over geological time",
@@ -633,17 +1336,41 @@
         "GCSE Chemistry: evidence for human activities contributing to increased levels of greenhouse gases and climate change",
         "GCSE Chemistry: carbon footprint and its reduction"
       ],
-      "equipment": ["published datasets (atmospheric CO₂ concentration over time, global temperature records, ice core data)", "graphing software or graph paper", "carbon footprint calculators (online)", "data interpretation worksheets"],
+      "equipment": [
+        "published datasets (atmospheric CO₂ concentration over time, global temperature records, ice core data)",
+        "graphing software or graph paper",
+        "carbon footprint calculators (online)",
+        "data interpretation worksheets"
+      ],
       "safety_notes": "No physical hazards — this is a secondary data analysis enquiry. Ensure pupils use reputable data sources (e.g. NASA, Met Office, IPCC).",
       "hazard_level": "low",
       "expected_outcome": "Pupils analyse published data showing the correlation between rising CO₂ levels and global temperature increase. They evaluate the strength of evidence from multiple independent sources (ice cores, satellite data, direct measurements). They calculate and compare carbon footprints for different activities and evaluate strategies for reduction. The analysis leads to an understanding of the difference between correlation and causation, and the role of scientific consensus.",
-      "recording_format": ["annotated graphs of CO₂ and temperature data", "evaluation of data reliability and limitations", "carbon footprint comparison table", "evidence-based conclusion on climate change"],
+      "recording_format": [
+        "annotated graphs of CO₂ and temperature data",
+        "evaluation of data reliability and limitations",
+        "carbon footprint comparison table",
+        "evidence-based conclusion on climate change"
+      ],
       "variables": {
         "independent": "time period or human activity analysed",
         "dependent": "atmospheric CO₂ concentration / global temperature anomaly",
-        "controlled": ["data source consistency", "measurement methodology across datasets"]
+        "controlled": [
+          "data source consistency",
+          "measurement methodology across datasets"
+        ]
       },
-      "definitions": ["greenhouse gas", "greenhouse effect", "carbon dioxide", "methane", "carbon footprint", "climate change", "global warming", "fossil fuel", "correlation", "scientific consensus"],
+      "definitions": [
+        "greenhouse gas",
+        "greenhouse effect",
+        "carbon dioxide",
+        "methane",
+        "carbon footprint",
+        "climate change",
+        "global warming",
+        "fossil fuel",
+        "correlation",
+        "scientific consensus"
+      ],
       "pedagogical_rationale": "Secondary data analysis is the appropriate enquiry type for atmospheric chemistry because the data is collected at global scale over decades — it cannot be replicated in a school laboratory. Analysing real scientific datasets develops critical evaluation skills: pupils must assess data quality, distinguish correlation from causation, and understand why scientific consensus is based on converging evidence from multiple independent sources. This enquiry also develops scientific literacy — the ability to evaluate claims about climate change using evidence rather than opinion.",
       "common_pitfalls": [
         "Pupils confuse weather (short-term) with climate (long-term trends) — use at least 30-year datasets to show trends",
@@ -657,21 +1384,50 @@
       ],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "CH-KS4-C013", "primary": true},
-        {"concept_id": "CH-KS4-C014", "primary": false},
-        {"concept_id": "CH-KS4-C012", "primary": false},
-        {"concept_id": "CH-KS4-C009", "primary": false},
-        {"concept_id": "CH-KS4-C015", "primary": false}
+        {
+          "concept_id": "CH-KS4-C013",
+          "primary": true
+        },
+        {
+          "concept_id": "CH-KS4-C014",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C012",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C009",
+          "primary": false
+        },
+        {
+          "concept_id": "CH-KS4-C015",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-007", "rank": 1},
-        {"enquiry_type_id": "ET-005", "rank": 2}
+        {
+          "enquiry_type_id": "ET-007",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-005",
+          "rank": 2
+        }
       ],
       "surfaces_misconception": [],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-18"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-18"
+      ],
+      "domain_ids": [
+        "CH-KS4-D005",
+        "CH-KS4-D007",
+        "CH-KS4-D008",
+        "CH-KS4-D009",
+        "CH-KS4-D010"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -682,24 +1438,56 @@
       "enquiry_question": "What is the specific heat capacity of a metal block, and how does it compare with the accepted value?",
       "science_discipline": "physics",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Physics: specific heat capacity as the energy required to raise the temperature of 1 kg of a substance by 1°C",
         "GCSE Physics: required practical — an investigation to determine the specific heat capacity of one or more materials, linking to ΔE = mcΔθ",
         "GCSE Physics: energy transfers in a system — heating"
       ],
-      "equipment": ["metal block (aluminium, with two holes for heater and thermometer)", "immersion heater (12V)", "thermometer or temperature probe", "joulemeter or ammeter + voltmeter + stopwatch", "power supply (12V DC)", "insulation (lagging)", "electronic balance", "connecting wires"],
+      "equipment": [
+        "metal block (aluminium, with two holes for heater and thermometer)",
+        "immersion heater (12V)",
+        "thermometer or temperature probe",
+        "joulemeter or ammeter + voltmeter + stopwatch",
+        "power supply (12V DC)",
+        "insulation (lagging)",
+        "electronic balance",
+        "connecting wires"
+      ],
       "safety_notes": "The metal block gets hot — do not touch with bare hands; use insulation or allow to cool before handling. The immersion heater must be fully inserted into the block before switching on. Do not run the heater dry. Keep water away from electrical equipment. Check connections before switching on to avoid short circuits.",
       "hazard_level": "standard",
       "expected_outcome": "Energy supplied (E = VIt or read from joulemeter) raises the temperature of the metal block. Using ΔE = mcΔθ, pupils calculate the specific heat capacity. The experimental value will be higher than the accepted value because energy is lost to the surroundings. Evaluating this discrepancy — and suggesting how insulation reduces it — is a key assessment focus.",
-      "recording_format": ["data table of time, temperature, voltage, current (or joulemeter readings)", "temperature-time graph", "SHC calculation with full working", "evaluation of sources of error and percentage difference from accepted value"],
+      "recording_format": [
+        "data table of time, temperature, voltage, current (or joulemeter readings)",
+        "temperature-time graph",
+        "SHC calculation with full working",
+        "evaluation of sources of error and percentage difference from accepted value"
+      ],
       "variables": {
         "independent": "energy supplied to the block (via heating time or joulemeter reading)",
         "dependent": "temperature rise of the metal block (°C)",
-        "controlled": ["mass of block", "starting temperature", "voltage", "insulation"]
+        "controlled": [
+          "mass of block",
+          "starting temperature",
+          "voltage",
+          "insulation"
+        ]
       },
-      "definitions": ["specific heat capacity", "thermal energy", "internal energy", "temperature", "joule", "power", "insulation", "energy transfer", "dissipation"],
+      "definitions": [
+        "specific heat capacity",
+        "thermal energy",
+        "internal energy",
+        "temperature",
+        "joule",
+        "power",
+        "insulation",
+        "energy transfer",
+        "dissipation"
+      ],
       "pedagogical_rationale": "This required practical is one of the most quantitatively demanding at GCSE because pupils must combine electrical measurements (V, I, t) with thermal measurements (m, Δθ) in a single calculation. The inevitable discrepancy between experimental and accepted values provides an authentic context for error analysis — pupils must identify heat loss as the main source of systematic error and suggest improvements (better insulation, starting below room temperature and finishing above by the same amount). This evaluation skill is worth significant marks in exams.",
       "common_pitfalls": [
         "Pupils forget to convert mass to kilograms — SHC uses SI units throughout (J, kg, °C)",
@@ -710,24 +1498,57 @@
       "sensitive_content_notes": [],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "PH-KS4-C002", "primary": true},
-        {"concept_id": "PH-KS4-C001", "primary": false},
-        {"concept_id": "PH-KS4-C005", "primary": false},
-        {"concept_id": "PH-KS4-C003", "primary": false},
-        {"concept_id": "PH-KS4-C004", "primary": false}
+        {
+          "concept_id": "PH-KS4-C002",
+          "primary": true
+        },
+        {
+          "concept_id": "PH-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C004",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-034", "likelihood": "moderate"},
-        {"misconception_id": "MC-039", "likelihood": "moderate"},
-        {"misconception_id": "MC-040", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-034",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-039",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-040",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "PH-KS4-D001",
+        "PH-KS4-D002",
+        "PH-KS4-D003"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -738,24 +1559,56 @@
       "enquiry_question": "What is the relationship between the length of a wire and its resistance?",
       "science_discipline": "physics",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Physics: resistance as the opposition to current; V = IR",
         "GCSE Physics: required practical — use circuit diagrams to set up and check appropriate circuits to investigate the factors affecting the resistance of electrical circuits, including the length of a wire at constant temperature",
         "GCSE Physics: current-potential difference graphs for ohmic conductors"
       ],
-      "equipment": ["constantan wire (SWG 28 or 30)", "metre ruler", "ammeter", "voltmeter", "power supply (variable DC, max 3V)", "connecting wires with crocodile clips", "switch", "safety goggles"],
+      "equipment": [
+        "constantan wire (SWG 28 or 30)",
+        "metre ruler",
+        "ammeter",
+        "voltmeter",
+        "power supply (variable DC, max 3V)",
+        "connecting wires with crocodile clips",
+        "switch",
+        "safety goggles"
+      ],
       "safety_notes": "Keep the current low and duration short to prevent the wire overheating — switch off between readings. The wire can get hot enough to burn at high currents. Do not exceed 3V. Ensure the wire is firmly secured to the ruler. Use safety goggles in case the wire snaps under tension.",
       "hazard_level": "low",
       "expected_outcome": "Resistance is directly proportional to wire length: doubling the length doubles the resistance. A graph of resistance vs length passes through the origin and is a straight line. This is because a longer wire provides more resistance to electron flow — electrons must travel further through the lattice of metal ions and collide with more ions. R = V/I is used to calculate resistance at each length.",
-      "recording_format": ["data table of length, voltage, current, and calculated resistance", "graph of resistance vs length", "gradient calculation", "conclusion stating proportional relationship"],
+      "recording_format": [
+        "data table of length, voltage, current, and calculated resistance",
+        "graph of resistance vs length",
+        "gradient calculation",
+        "conclusion stating proportional relationship"
+      ],
       "variables": {
         "independent": "length of constantan wire (20cm, 40cm, 60cm, 80cm, 100cm)",
         "dependent": "resistance (calculated from V/I)",
-        "controlled": ["wire material and thickness (SWG)", "temperature (keep current low)", "same power supply voltage"]
+        "controlled": [
+          "wire material and thickness (SWG)",
+          "temperature (keep current low)",
+          "same power supply voltage"
+        ]
       },
-      "definitions": ["resistance", "current", "potential difference", "ohm", "ammeter", "voltmeter", "ohmic conductor", "directly proportional", "electron flow", "lattice"],
+      "definitions": [
+        "resistance",
+        "current",
+        "potential difference",
+        "ohm",
+        "ammeter",
+        "voltmeter",
+        "ohmic conductor",
+        "directly proportional",
+        "electron flow",
+        "lattice"
+      ],
       "pedagogical_rationale": "This required practical produces one of the cleanest proportional relationships in GCSE science — resistance vs length is reliably linear through the origin. This makes it ideal for teaching graph skills: plotting, drawing a line of best fit, calculating a gradient, and identifying proportionality. The practical also reinforces V = IR as a working tool for calculation rather than an abstract equation, and the physical model (electrons colliding with ions in a longer lattice) provides a concrete explanation.",
       "common_pitfalls": [
         "Pupils leave the circuit on too long, causing the wire to heat up — temperature increase changes resistance and confounds results; keep measurements brief",
@@ -766,22 +1619,49 @@
       "sensitive_content_notes": [],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "PH-KS4-C003", "primary": true},
-        {"concept_id": "PH-KS4-C004", "primary": false},
-        {"concept_id": "PH-KS4-C001", "primary": false},
-        {"concept_id": "PH-KS4-C005", "primary": false},
-        {"concept_id": "PH-KS4-C002", "primary": false}
+        {
+          "concept_id": "PH-KS4-C003",
+          "primary": true
+        },
+        {
+          "concept_id": "PH-KS4-C004",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C002",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-012", "likelihood": "high"}
+        {
+          "misconception_id": "MC-012",
+          "likelihood": "high"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "PH-KS4-D001",
+        "PH-KS4-D002",
+        "PH-KS4-D003"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -792,24 +1672,55 @@
       "enquiry_question": "How can we determine the density of regular and irregular solid objects?",
       "science_discipline": "physics",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Physics: density as a property of a material — ρ = m/V",
         "GCSE Physics: required practical — use appropriate apparatus to make and record the measurements needed to determine the densities of regular and irregular solid objects and liquids",
         "GCSE Physics: the particle model and how it explains density differences between states of matter"
       ],
-      "equipment": ["electronic balance (±0.01g)", "ruler with mm divisions", "vernier calipers (optional)", "eureka can (displacement can)", "measuring cylinder", "selection of regular solids (metal cubes, cylinders)", "selection of irregular solids (stones, keys)", "water", "paper towels"],
+      "equipment": [
+        "electronic balance (±0.01g)",
+        "ruler with mm divisions",
+        "vernier calipers (optional)",
+        "eureka can (displacement can)",
+        "measuring cylinder",
+        "selection of regular solids (metal cubes, cylinders)",
+        "selection of irregular solids (stones, keys)",
+        "water",
+        "paper towels"
+      ],
       "safety_notes": "Mop up water spills promptly to prevent slipping. Handle metal blocks carefully — some have sharp edges. If using stone samples, check for loose fragments. Ensure eureka cans are stable on the bench.",
       "hazard_level": "low",
       "expected_outcome": "For regular solids: measure dimensions with a ruler, calculate volume (V = l×w×h for cuboids, V = πr²h for cylinders), measure mass, calculate density (ρ = m/V). For irregular solids: measure mass on a balance, measure volume by water displacement (eureka can or measuring cylinder), calculate density. Pupils compare their experimental values with accepted densities to identify materials. The particle model explains why different materials have different densities: particles have different masses and spacings.",
-      "recording_format": ["data table of dimensions, mass, volume, and calculated density", "comparison with accepted density values", "particle model diagram explaining density differences"],
+      "recording_format": [
+        "data table of dimensions, mass, volume, and calculated density",
+        "comparison with accepted density values",
+        "particle model diagram explaining density differences"
+      ],
       "variables": {
         "independent": "object/material tested",
         "dependent": "density (kg/m³ or g/cm³)",
-        "controlled": ["measurement technique consistency", "temperature (materials expand when heated)", "same balance for all measurements"]
+        "controlled": [
+          "measurement technique consistency",
+          "temperature (materials expand when heated)",
+          "same balance for all measurements"
+        ]
       },
-      "definitions": ["density", "mass", "volume", "displacement", "regular solid", "irregular solid", "particle model", "units", "significant figures"],
+      "definitions": [
+        "density",
+        "mass",
+        "volume",
+        "displacement",
+        "regular solid",
+        "irregular solid",
+        "particle model",
+        "units",
+        "significant figures"
+      ],
       "pedagogical_rationale": "This required practical develops fundamental measurement skills: using rulers, balances, measuring cylinders, and displacement cans with appropriate precision. The distinction between regular and irregular solids teaches pupils to choose methods based on the situation — a transferable scientific skill. Calculating density in correct SI units and comparing with accepted values introduces the idea of measurement accuracy and material identification. The connection to the particle model ensures the practical is rooted in explanatory science, not just measurement.",
       "common_pitfalls": [
         "Unit confusion — pupils mix up g/cm³ and kg/m³; be explicit about which units are being used and how to convert",
@@ -820,23 +1731,53 @@
       "sensitive_content_notes": [],
       "duration_lessons": 3,
       "delivers_via": [
-        {"concept_id": "PH-KS4-C005", "primary": true},
-        {"concept_id": "PH-KS4-C001", "primary": false},
-        {"concept_id": "PH-KS4-C002", "primary": false},
-        {"concept_id": "PH-KS4-C008", "primary": false},
-        {"concept_id": "PH-KS4-C009", "primary": false}
+        {
+          "concept_id": "PH-KS4-C005",
+          "primary": true
+        },
+        {
+          "concept_id": "PH-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C002",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C008",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C009",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-032", "likelihood": "moderate"},
-        {"misconception_id": "MC-038", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-032",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-038",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "PH-KS4-D001",
+        "PH-KS4-D003",
+        "PH-KS4-D005"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -847,7 +1788,10 @@
       "enquiry_question": "What is the relationship between force and extension for a spring, and at what point does the spring stop obeying Hooke's law?",
       "science_discipline": "physics",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Physics: Hooke's law — F = ke; the spring constant k",
@@ -855,17 +1799,46 @@
         "GCSE Physics: elastic potential energy stored in a stretched spring — Ee = ½ke²",
         "GCSE Physics: the limit of proportionality"
       ],
-      "equipment": ["spring (known spring constant, or unknown for investigation)", "clamp stand, boss and clamp", "ruler with mm divisions", "mass hanger and slotted masses (100g increments)", "pointer attached to spring", "safety goggles", "soft landing surface below spring"],
+      "equipment": [
+        "spring (known spring constant, or unknown for investigation)",
+        "clamp stand, boss and clamp",
+        "ruler with mm divisions",
+        "mass hanger and slotted masses (100g increments)",
+        "pointer attached to spring",
+        "safety goggles",
+        "soft landing surface below spring"
+      ],
       "safety_notes": "Wear safety goggles — springs can detach or break under excessive load. Place a soft surface (foam mat) below the apparatus to catch falling masses. Do not exceed the elastic limit of the spring. Stand to one side when loading masses in case the spring breaks. Ensure the clamp stand is stable and weighted at the base.",
       "hazard_level": "low",
       "expected_outcome": "Extension is directly proportional to force up to the limit of proportionality — F = ke where k is the spring constant (N/m). The graph of force vs extension is a straight line through the origin in the proportional region. Beyond the limit of proportionality, the graph curves and the spring is permanently deformed. The spring constant k equals the gradient of the straight portion. Elastic potential energy Ee = ½ke² can be calculated for any extension.",
-      "recording_format": ["data table of mass, force (F=mg), total length, and extension", "graph of force vs extension with limit of proportionality marked", "gradient calculation for spring constant", "elastic PE calculation"],
+      "recording_format": [
+        "data table of mass, force (F=mg), total length, and extension",
+        "graph of force vs extension with limit of proportionality marked",
+        "gradient calculation for spring constant",
+        "elastic PE calculation"
+      ],
       "variables": {
         "independent": "force applied to the spring (weight of masses, F = mg)",
         "dependent": "extension of the spring (cm or mm)",
-        "controlled": ["same spring", "same starting length", "same measurement technique", "masses added gently (no bouncing)"]
+        "controlled": [
+          "same spring",
+          "same starting length",
+          "same measurement technique",
+          "masses added gently (no bouncing)"
+        ]
       },
-      "definitions": ["force", "extension", "Hooke's law", "spring constant", "limit of proportionality", "elastic deformation", "plastic deformation", "elastic potential energy", "directly proportional", "Newton"],
+      "definitions": [
+        "force",
+        "extension",
+        "Hooke's law",
+        "spring constant",
+        "limit of proportionality",
+        "elastic deformation",
+        "plastic deformation",
+        "elastic potential energy",
+        "directly proportional",
+        "Newton"
+      ],
       "pedagogical_rationale": "Hooke's law produces the clearest proportional relationship in GCSE physics and is the foundation for understanding elastic potential energy. The investigation naturally reveals the limit of proportionality — the point where the graph deviates from a straight line — which teaches pupils that mathematical models have domains of validity. Calculating the spring constant from the gradient connects practical measurement to mathematical analysis. The energy stored (½ke²) extends the investigation into the energy topic, making this a highly interconnected practical.",
       "common_pitfalls": [
         "Pupils measure total length rather than extension — extension = stretched length minus natural length; set up a clear reference point",
@@ -876,22 +1849,50 @@
       "sensitive_content_notes": [],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "PH-KS4-C008", "primary": true},
-        {"concept_id": "PH-KS4-C001", "primary": false},
-        {"concept_id": "PH-KS4-C005", "primary": false},
-        {"concept_id": "PH-KS4-C009", "primary": false},
-        {"concept_id": "PH-KS4-C003", "primary": false}
+        {
+          "concept_id": "PH-KS4-C008",
+          "primary": true
+        },
+        {
+          "concept_id": "PH-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C009",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C003",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-037", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-037",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "PH-KS4-D001",
+        "PH-KS4-D002",
+        "PH-KS4-D003",
+        "PH-KS4-D005"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -902,7 +1903,10 @@
       "enquiry_question": "How do waves behave when they are reflected, refracted, and diffracted, and what is the relationship between frequency, wavelength, and wave speed?",
       "science_discipline": "physics",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Physics: wave properties — amplitude, wavelength, frequency, period, wave speed",
@@ -910,17 +1914,49 @@
         "GCSE Physics: required practical — make observations to identify the suitability of apparatus to measure the frequency, wavelength and speed of waves in a ripple tank and waves in a solid",
         "GCSE Physics: reflection, refraction, and diffraction of waves"
       ],
-      "equipment": ["ripple tank with motor and dipper", "lamp (overhead or stroboscope)", "white paper screen (below tank)", "ruler", "stopwatch", "straight barrier", "curved barrier", "shallow region insert (for refraction)", "gap barriers of different widths (for diffraction)"],
+      "equipment": [
+        "ripple tank with motor and dipper",
+        "lamp (overhead or stroboscope)",
+        "white paper screen (below tank)",
+        "ruler",
+        "stopwatch",
+        "straight barrier",
+        "curved barrier",
+        "shallow region insert (for refraction)",
+        "gap barriers of different widths (for diffraction)"
+      ],
       "safety_notes": "Water and electricity in close proximity — ensure the ripple tank motor is properly insulated and connected to a low-voltage supply. Mop up any spills immediately. The stroboscope can trigger photosensitive epilepsy — check with pupils before use and have an alternative available. Do not look directly at the stroboscope light.",
       "hazard_level": "low",
       "expected_outcome": "Pupils observe wave behaviour: reflection (angle of incidence = angle of reflection), refraction (waves change speed and direction when entering shallow water), and diffraction (waves spread through gaps, with maximum diffraction when gap width ≈ wavelength). They measure wavelength from the projected wave pattern and calculate wave speed using v = fλ. The relationship between gap width and diffraction demonstrates that wave effects are most pronounced when obstacles are similar in size to the wavelength.",
-      "recording_format": ["annotated diagrams of reflection, refraction, and diffraction patterns", "wavelength measurements from projected pattern", "wave speed calculation using v = fλ", "comparison table of wave behaviours"],
+      "recording_format": [
+        "annotated diagrams of reflection, refraction, and diffraction patterns",
+        "wavelength measurements from projected pattern",
+        "wave speed calculation using v = fλ",
+        "comparison table of wave behaviours"
+      ],
       "variables": {
         "independent": "wave property being investigated (barrier position for reflection, water depth for refraction, gap width for diffraction)",
         "dependent": "observed wave pattern and measured wavelength/speed",
-        "controlled": ["frequency of dipper", "water depth (except for refraction)", "motor speed"]
+        "controlled": [
+          "frequency of dipper",
+          "water depth (except for refraction)",
+          "motor speed"
+        ]
       },
-      "definitions": ["wave", "amplitude", "wavelength", "frequency", "period", "wave speed", "reflection", "refraction", "diffraction", "transverse wave", "wavefront", "normal"],
+      "definitions": [
+        "wave",
+        "amplitude",
+        "wavelength",
+        "frequency",
+        "period",
+        "wave speed",
+        "reflection",
+        "refraction",
+        "diffraction",
+        "transverse wave",
+        "wavefront",
+        "normal"
+      ],
       "pedagogical_rationale": "The ripple tank makes invisible wave phenomena visible. Projected wave patterns allow direct observation and measurement of reflection, refraction, and diffraction — concepts that are otherwise abstract. The investigation naturally leads to the wave equation v = fλ through measurement. Comparing diffraction through different gap widths develops understanding of a key principle: waves interact most strongly with objects of similar size to their wavelength. This principle transfers directly to understanding why radio waves diffract around hills while light does not.",
       "common_pitfalls": [
         "The water surface is disturbed by external vibrations — ensure the bench is stable and pupils do not lean on the tank",
@@ -933,23 +1969,54 @@
       ],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "PH-KS4-C010", "primary": true},
-        {"concept_id": "PH-KS4-C011", "primary": false},
-        {"concept_id": "PH-KS4-C001", "primary": false},
-        {"concept_id": "PH-KS4-C005", "primary": false},
-        {"concept_id": "PH-KS4-C008", "primary": false}
+        {
+          "concept_id": "PH-KS4-C010",
+          "primary": true
+        },
+        {
+          "concept_id": "PH-KS4-C011",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C008",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-002", "rank": 1},
-        {"enquiry_type_id": "ET-001", "rank": 2}
+        {
+          "enquiry_type_id": "ET-002",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 2
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-009", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-009",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "PH-KS4-D001",
+        "PH-KS4-D003",
+        "PH-KS4-D005",
+        "PH-KS4-D006"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -960,24 +2027,53 @@
       "enquiry_question": "How do the colour and texture of a surface affect the rate of infrared radiation emission and absorption?",
       "science_discipline": "physics",
       "key_stage": "KS4",
-      "year_groups": ["Y10", "Y11"],
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
       "curriculum_status": "exemplar",
       "curriculum_reference": [
         "GCSE Physics: infrared radiation as part of the electromagnetic spectrum",
         "GCSE Physics: required practical — investigate how the amount of infrared radiation absorbed or radiated by a surface depends on the nature of that surface",
         "GCSE Physics: black body radiation and the emission spectrum"
       ],
-      "equipment": ["Leslie cube (metal cube with different surface finishes)", "infrared thermometer or thermal sensor", "boiling water (teacher pours)", "thermometers", "stopwatch", "matt black and shiny silver surfaces", "heat lamp"],
+      "equipment": [
+        "Leslie cube (metal cube with different surface finishes)",
+        "infrared thermometer or thermal sensor",
+        "boiling water (teacher pours)",
+        "thermometers",
+        "stopwatch",
+        "matt black and shiny silver surfaces",
+        "heat lamp"
+      ],
       "safety_notes": "The Leslie cube is filled with near-boiling water — teacher handles this step. Do not touch the cube surfaces. Infrared thermometers should be pointed at the cube, never at faces. Keep hands clear of the heat lamp. Allow apparatus to cool before handling for cleanup.",
       "hazard_level": "standard",
       "expected_outcome": "Matt black surfaces are the best emitters AND absorbers of infrared radiation. Shiny silver surfaces are the worst emitters and absorbers (best reflectors). The infrared thermometer reading is highest when pointed at the matt black face of the Leslie cube and lowest when pointed at the shiny silver face. This explains why radiators are painted white (compromise between emission and aesthetics) and why survival blankets are shiny (to reflect body heat back).",
-      "recording_format": ["data table of surface type and infrared reading", "bar chart comparing emission from different surfaces", "explanation linking to electromagnetic spectrum and particle model"],
+      "recording_format": [
+        "data table of surface type and infrared reading",
+        "bar chart comparing emission from different surfaces",
+        "explanation linking to electromagnetic spectrum and particle model"
+      ],
       "variables": {
         "independent": "surface colour and texture (matt black, matt white, shiny silver, shiny black)",
         "dependent": "infrared radiation reading (temperature recorded by sensor at fixed distance)",
-        "controlled": ["distance of sensor from surface", "temperature of water in cube", "time allowed for cube to reach thermal equilibrium"]
+        "controlled": [
+          "distance of sensor from surface",
+          "temperature of water in cube",
+          "time allowed for cube to reach thermal equilibrium"
+        ]
       },
-      "definitions": ["infrared radiation", "electromagnetic spectrum", "emission", "absorption", "reflection", "black body", "thermal radiation", "wavelength", "electromagnetic wave"],
+      "definitions": [
+        "infrared radiation",
+        "electromagnetic spectrum",
+        "emission",
+        "absorption",
+        "reflection",
+        "black body",
+        "thermal radiation",
+        "wavelength",
+        "electromagnetic wave"
+      ],
       "pedagogical_rationale": "This required practical connects the electromagnetic spectrum to everyday thermal physics. The Leslie cube provides dramatic, measurable differences between surfaces that challenge everyday assumptions (pupils often expect 'white = hot' because white things feel warmer in sunlight — but that is absorption, not emission). The investigation develops understanding of infrared radiation as an energy transfer mechanism that does not require a medium, distinguishing it from conduction and convection. Linking the results to real-world applications (house insulation, thermos flasks, survival blankets) demonstrates the utility of physics knowledge.",
       "common_pitfalls": [
         "Pupils confuse emission and absorption — the Leslie cube tests emission; a separate experiment with a heat lamp tests absorption. Be explicit about which is being measured",
@@ -988,24 +2084,57 @@
       "sensitive_content_notes": [],
       "duration_lessons": 3,
       "delivers_via": [
-        {"concept_id": "PH-KS4-C011", "primary": true},
-        {"concept_id": "PH-KS4-C010", "primary": false},
-        {"concept_id": "PH-KS4-C002", "primary": false},
-        {"concept_id": "PH-KS4-C001", "primary": false},
-        {"concept_id": "PH-KS4-C005", "primary": false}
+        {
+          "concept_id": "PH-KS4-C011",
+          "primary": true
+        },
+        {
+          "concept_id": "PH-KS4-C010",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C002",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C001",
+          "primary": false
+        },
+        {
+          "concept_id": "PH-KS4-C005",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1},
-        {"enquiry_type_id": "ET-003", "rank": 2}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-003",
+          "rank": 2
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-040", "likelihood": "high"},
-        {"misconception_id": "MC-041", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-040",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-041",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": null,
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "PH-KS4-D001",
+        "PH-KS4-D003",
+        "PH-KS4-D006"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"

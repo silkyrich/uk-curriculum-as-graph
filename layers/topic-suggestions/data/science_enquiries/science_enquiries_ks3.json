@@ -12,18 +12,43 @@
       "enquiry_question": "What are cells made of, and how do plant and animal cells differ?",
       "science_discipline": "biology",
       "key_stage": "KS3",
-      "year_groups": ["Y7"],
+      "year_groups": [
+        "Y7"
+      ],
       "curriculum_status": "mandatory",
       "curriculum_reference": [
         "KS3 Biology: cells as the fundamental unit of living organisms, including how to observe, interpret and record cell structure using a light microscope",
         "KS3 Biology: the functions of the cell wall, cell membrane, cytoplasm, nucleus, vacuole, mitochondria and chloroplasts"
       ],
-      "equipment": ["light microscopes", "prepared slides (cheek cells, onion epidermis)", "iodine stain", "methylene blue stain", "cover slips", "glass slides", "mounted needles"],
+      "equipment": [
+        "light microscopes",
+        "prepared slides (cheek cells, onion epidermis)",
+        "iodine stain",
+        "methylene blue stain",
+        "cover slips",
+        "glass slides",
+        "mounted needles"
+      ],
       "safety_notes": "Handle glass slides and cover slips carefully — they break easily and can cut. Iodine stains skin and clothing. Methylene blue stains are persistent — wear gloves or wash immediately. Cheek cell collection requires hygiene protocol: disposable cotton buds, individual slides, disposal into disinfectant. Do not taste or ingest any stains.",
       "hazard_level": "standard",
       "expected_outcome": "Pupils observe cell structures under the microscope, distinguish plant and animal cells, and calculate magnification. Plant cells have cell wall, chloroplasts, and permanent vacuole; animal cells do not. Both have cell membrane, cytoplasm, nucleus, and mitochondria.",
-      "recording_format": ["labelled scientific diagrams with magnification", "comparison table (plant vs animal cells)", "calculation of actual size"],
-      "definitions": ["cell", "nucleus", "cytoplasm", "cell membrane", "cell wall", "chloroplast", "vacuole", "mitochondria", "magnification", "resolution"],
+      "recording_format": [
+        "labelled scientific diagrams with magnification",
+        "comparison table (plant vs animal cells)",
+        "calculation of actual size"
+      ],
+      "definitions": [
+        "cell",
+        "nucleus",
+        "cytoplasm",
+        "cell membrane",
+        "cell wall",
+        "chloroplast",
+        "vacuole",
+        "mitochondria",
+        "magnification",
+        "resolution"
+      ],
       "pedagogical_rationale": "Observation using microscopy develops essential practical skills that underpin all subsequent biology. Preparing slides, focusing microscopes, and drawing labelled scientific diagrams are core disciplinary practices. Comparing plant and animal cells builds classification skills and introduces the concept of structure-function relationships at the cellular level.",
       "common_pitfalls": [
         "Pupils draw artistic pictures rather than scientific diagrams — explicitly teach the conventions (clean lines, no shading, labels with ruled lines)",
@@ -37,24 +62,55 @@
       ],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "SC-KS3-C026", "primary": true},
-        {"concept_id": "SC-KS3-C027", "primary": false},
-        {"concept_id": "SC-KS3-C028", "primary": false},
-        {"concept_id": "SC-KS3-C029", "primary": false}
+        {
+          "concept_id": "SC-KS3-C026",
+          "primary": true
+        },
+        {
+          "concept_id": "SC-KS3-C027",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C028",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C029",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-002", "rank": 1},
-        {"enquiry_type_id": "ET-004", "rank": 2}
+        {
+          "enquiry_type_id": "ET-002",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-004",
+          "rank": 2
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-027", "likelihood": "high"},
-        {"misconception_id": "MC-028", "likelihood": "moderate"},
-        {"misconception_id": "MC-029", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-027",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-028",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-029",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": "SC-KS3-CV001",
-      "uses_template": ["VT-04"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-04"
+      ],
+      "domain_ids": [
+        "SC-KS3-D002"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -65,24 +121,55 @@
       "enquiry_question": "How can we measure and use the pH scale, and what happens during a neutralisation reaction?",
       "science_discipline": "chemistry",
       "key_stage": "KS3",
-      "year_groups": ["Y7", "Y8"],
+      "year_groups": [
+        "Y7",
+        "Y8"
+      ],
       "curriculum_status": "mandatory",
       "curriculum_reference": [
         "KS3 Chemistry: defining acids and alkalis in terms of neutralisation reactions",
         "KS3 Chemistry: the pH scale for measuring acidity/alkalinity; and indicators",
         "KS3 Chemistry: reactions of acids with metals to produce a salt plus hydrogen; reactions of acids with alkalis to produce a salt plus water"
       ],
-      "equipment": ["universal indicator paper and solution", "pH meters", "dilute hydrochloric acid (1M)", "dilute sodium hydroxide (1M)", "household substances (lemon juice, soap, bicarbonate)", "test tubes", "safety goggles", "gloves"],
+      "equipment": [
+        "universal indicator paper and solution",
+        "pH meters",
+        "dilute hydrochloric acid (1M)",
+        "dilute sodium hydroxide (1M)",
+        "household substances (lemon juice, soap, bicarbonate)",
+        "test tubes",
+        "safety goggles",
+        "gloves"
+      ],
       "safety_notes": "Wear safety goggles and gloves throughout. Use only dilute acids and alkalis (max 1M). Wash any splashes to skin immediately with plenty of water. Know the location of the eyewash station. Ensure good ventilation. Dispose of chemicals according to school policy — do not pour down the sink without dilution.",
       "hazard_level": "elevated",
       "expected_outcome": "Acids have pH below 7, alkalis above 7, neutral = 7. Neutralisation produces a salt and water. Universal indicator shows a colour spectrum across the pH scale. Pupils can write word equations for neutralisation reactions.",
-      "recording_format": ["pH results table", "pH scale diagram", "neutralisation graph (pH vs volume of alkali added)"],
+      "recording_format": [
+        "pH results table",
+        "pH scale diagram",
+        "neutralisation graph (pH vs volume of alkali added)"
+      ],
       "variables": {
         "independent": "type of substance tested / amount of alkali added",
         "dependent": "pH value / colour of indicator",
-        "controlled": ["same volume of acid", "same indicator", "same concentration"]
+        "controlled": [
+          "same volume of acid",
+          "same indicator",
+          "same concentration"
+        ]
       },
-      "definitions": ["acid", "alkali", "base", "neutral", "pH", "indicator", "neutralisation", "salt", "corrosive", "hazard symbol"],
+      "definitions": [
+        "acid",
+        "alkali",
+        "base",
+        "neutral",
+        "pH",
+        "indicator",
+        "neutralisation",
+        "salt",
+        "corrosive",
+        "hazard symbol"
+      ],
       "pedagogical_rationale": "Fair testing with acids and alkalis provides a rich context for developing practical chemistry skills — safe handling of hazardous substances, accurate measurement using indicators and pH meters, and systematic recording. The neutralisation investigation introduces quantitative chemistry (measuring volumes) while the pH scale provides a concrete number line that pupils can relate to everyday substances.",
       "common_pitfalls": [
         "Pupils think 'neutral' means 'safe' — neutral substances are pH 7, but concentrated neutral solutions can still be harmful",
@@ -90,7 +177,11 @@
         "Pupils may think all acids are dangerous — many everyday substances are mildly acidic (orange juice, vinegar)"
       ],
       "cross_curricular_links": [
-        {"target_id": "GS-GE-KS3-003", "hook": "Acid rain and its environmental impact on ecosystems and buildings", "strength": "moderate"}
+        {
+          "target_id": "GS-GE-KS3-003",
+          "hook": "Acid rain and its environmental impact on ecosystems and buildings",
+          "strength": "moderate"
+        }
       ],
       "sensitive_content_notes": [
         "Emphasise safe handling of acids and alkalis — always wear goggles and gloves",
@@ -98,22 +189,47 @@
       ],
       "duration_lessons": 5,
       "delivers_via": [
-        {"concept_id": "SC-KS3-C084", "primary": true},
-        {"concept_id": "SC-KS3-C085", "primary": false},
-        {"concept_id": "SC-KS3-C086", "primary": false},
-        {"concept_id": "SC-KS3-C087", "primary": false}
+        {
+          "concept_id": "SC-KS3-C084",
+          "primary": true
+        },
+        {
+          "concept_id": "SC-KS3-C085",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C086",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C087",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-030", "likelihood": "high"},
-        {"misconception_id": "MC-031", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-030",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-031",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": "SC-KS3-CV002",
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "SC-KS3-D008"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -124,24 +240,55 @@
       "enquiry_question": "What is the relationship between force, mass, and motion, and how do we calculate speed?",
       "science_discipline": "physics",
       "key_stage": "KS3",
-      "year_groups": ["Y7", "Y8"],
+      "year_groups": [
+        "Y7",
+        "Y8"
+      ],
       "curriculum_status": "mandatory",
       "curriculum_reference": [
         "KS3 Physics: forces as pushes or pulls, arising from the interaction between two objects",
         "KS3 Physics: speed and the quantitative relationship between average speed, distance and time (speed = distance / time)",
         "KS3 Physics: the representation of a journey on a distance-time graph"
       ],
-      "equipment": ["dynamics trolleys", "ramps", "stopwatches", "metre sticks", "Newton meters", "masses", "ticker timers or light gates"],
+      "equipment": [
+        "dynamics trolleys",
+        "ramps",
+        "stopwatches",
+        "metre sticks",
+        "Newton meters",
+        "masses",
+        "ticker timers or light gates"
+      ],
       "safety_notes": "Ensure trolleys have end stops to prevent them rolling off the bench. Keep masses securely attached to trolleys. Clear the floor area around the ramp to prevent tripping. If using ticker timers, ensure the power supply is set correctly.",
       "hazard_level": "low",
       "expected_outcome": "Speed = distance / time. Unbalanced forces cause acceleration. Friction opposes motion. Gravity pulls objects towards Earth. Force diagrams show balanced and unbalanced forces. Pupils can calculate speed, draw and interpret distance-time graphs.",
-      "recording_format": ["distance-time data table", "speed calculation", "distance-time graph", "force diagram"],
+      "recording_format": [
+        "distance-time data table",
+        "speed calculation",
+        "distance-time graph",
+        "force diagram"
+      ],
       "variables": {
         "independent": "mass added to trolley / surface type",
         "dependent": "time to travel fixed distance / acceleration",
-        "controlled": ["same trolley", "same ramp angle", "same distance"]
+        "controlled": [
+          "same trolley",
+          "same ramp angle",
+          "same distance"
+        ]
       },
-      "definitions": ["force", "Newton", "speed", "acceleration", "friction", "gravity", "balanced forces", "unbalanced forces", "mass", "weight"],
+      "definitions": [
+        "force",
+        "Newton",
+        "speed",
+        "acceleration",
+        "friction",
+        "gravity",
+        "balanced forces",
+        "unbalanced forces",
+        "mass",
+        "weight"
+      ],
       "pedagogical_rationale": "Fair testing with trolleys and ramps provides a controlled, repeatable context for collecting quantitative data, calculating speed, and drawing distance-time graphs. The physical setup makes abstract force concepts visible and measurable. Progressing from qualitative observations (faster/slower) to quantitative analysis (speed = distance/time) bridges KS2 forces understanding to the mathematical treatment required at KS3.",
       "common_pitfalls": [
         "Pupils confuse speed and acceleration — speed is how fast something is going; acceleration is how quickly speed is changing",
@@ -152,24 +299,55 @@
       "sensitive_content_notes": [],
       "duration_lessons": 5,
       "delivers_via": [
-        {"concept_id": "SC-KS3-C118", "primary": true},
-        {"concept_id": "SC-KS3-C119", "primary": false},
-        {"concept_id": "SC-KS3-C121", "primary": false},
-        {"concept_id": "SC-KS3-C123", "primary": false}
+        {
+          "concept_id": "SC-KS3-C118",
+          "primary": true
+        },
+        {
+          "concept_id": "SC-KS3-C119",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C121",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C123",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-037", "likelihood": "high"},
-        {"misconception_id": "MC-038", "likelihood": "moderate"},
-        {"misconception_id": "MC-044", "likelihood": "high"},
-        {"misconception_id": "MC-022", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-037",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-038",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-044",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-022",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": "SC-KS3-CV003",
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "SC-KS3-D012"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -180,23 +358,53 @@
       "enquiry_question": "How does light intensity affect the rate of photosynthesis?",
       "science_discipline": "biology",
       "key_stage": "KS3",
-      "year_groups": ["Y7", "Y8"],
+      "year_groups": [
+        "Y7",
+        "Y8"
+      ],
       "curriculum_status": "mandatory",
       "curriculum_reference": [
         "KS3 Biology: photosynthesis as the key process for food production in plants; the reactants in and products of photosynthesis",
         "KS3 Biology: the role of the leaf in photosynthesis — adaptations of leaves for photosynthesis"
       ],
-      "equipment": ["Elodea (pondweed)", "beaker", "lamp", "ruler", "stopwatch", "sodium bicarbonate solution", "thermometer"],
+      "equipment": [
+        "Elodea (pondweed)",
+        "beaker",
+        "lamp",
+        "ruler",
+        "stopwatch",
+        "sodium bicarbonate solution",
+        "thermometer"
+      ],
       "safety_notes": "Lamp gets hot — do not touch the bulb during or immediately after use. Ensure water does not contact electrical equipment. Position the lamp securely so it cannot fall into the water. Wash hands after handling pondweed. Sodium bicarbonate is low hazard but avoid ingestion.",
       "hazard_level": "standard",
       "expected_outcome": "As light intensity increases (lamp closer), rate of photosynthesis increases (more oxygen bubbles). At high light intensities, the rate levels off because another factor (CO2 or temperature) becomes limiting. Pupils can state the word equation for photosynthesis and explain the concept of limiting factors.",
-      "recording_format": ["results table (distance vs bubble count)", "graph of light intensity vs rate", "conclusion linking to photosynthesis equation"],
+      "recording_format": [
+        "results table (distance vs bubble count)",
+        "graph of light intensity vs rate",
+        "conclusion linking to photosynthesis equation"
+      ],
       "variables": {
         "independent": "distance of lamp from pondweed (light intensity)",
         "dependent": "number of oxygen bubbles per minute",
-        "controlled": ["same piece of pondweed", "same temperature", "same volume of water", "same concentration of sodium bicarbonate"]
+        "controlled": [
+          "same piece of pondweed",
+          "same temperature",
+          "same volume of water",
+          "same concentration of sodium bicarbonate"
+        ]
       },
-      "definitions": ["photosynthesis", "chlorophyll", "chloroplast", "stomata", "glucose", "oxygen", "carbon dioxide", "light intensity", "limiting factor"],
+      "definitions": [
+        "photosynthesis",
+        "chlorophyll",
+        "chloroplast",
+        "stomata",
+        "glucose",
+        "oxygen",
+        "carbon dioxide",
+        "light intensity",
+        "limiting factor"
+      ],
       "pedagogical_rationale": "The pondweed bubble count investigation is a classic fair test that produces clear quantitative data linking light intensity to the rate of photosynthesis. It develops key KS3 skills: controlling variables, collecting repeat data, plotting rate graphs, and explaining results using a chemical equation. The concept of limiting factors introduces pupils to the idea that biological processes are constrained by multiple interacting variables.",
       "common_pitfalls": [
         "Pupils think photosynthesis is the opposite of respiration and plants only do one or the other — plants photosynthesise and respire simultaneously",
@@ -204,26 +412,52 @@
         "Pupils may think only leaves photosynthesise — any green part of a plant containing chloroplasts can photosynthesise"
       ],
       "cross_curricular_links": [
-        {"target_id": "GS-GE-KS3-004", "hook": "Global food production and the importance of photosynthesis to ecosystems", "strength": "moderate"}
+        {
+          "target_id": "GS-GE-KS3-004",
+          "hook": "Global food production and the importance of photosynthesis to ecosystems",
+          "strength": "moderate"
+        }
       ],
       "sensitive_content_notes": [],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "SC-KS3-C042", "primary": true},
-        {"concept_id": "SC-KS3-C046", "primary": false}
+        {
+          "concept_id": "SC-KS3-C042",
+          "primary": true
+        },
+        {
+          "concept_id": "SC-KS3-C046",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-001", "likelihood": "high"},
-        {"misconception_id": "MC-004", "likelihood": "high"},
-        {"misconception_id": "MC-005", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-001",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-004",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-005",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": "SC-KS3-CV004",
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "SC-KS3-D002"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -234,24 +468,55 @@
       "enquiry_question": "How can we use the particle model to explain the properties of solids, liquids, and gases?",
       "science_discipline": "chemistry",
       "key_stage": "KS3",
-      "year_groups": ["Y7", "Y8"],
+      "year_groups": [
+        "Y7",
+        "Y8"
+      ],
       "curriculum_status": "mandatory",
       "curriculum_reference": [
         "KS3 Chemistry: the properties of the different states of matter (solid, liquid and gas) in terms of the particle model",
         "KS3 Chemistry: changes of state in terms of the particle model",
         "KS3 Chemistry: the concept of a pure substance; melting point and boiling point as characteristic properties"
       ],
-      "equipment": ["thermometers", "beakers", "ice", "Bunsen burner or water bath", "stearic acid (for cooling curve)", "stopwatch", "heatproof mat"],
+      "equipment": [
+        "thermometers",
+        "beakers",
+        "ice",
+        "Bunsen burner or water bath",
+        "stearic acid (for cooling curve)",
+        "stopwatch",
+        "heatproof mat"
+      ],
       "safety_notes": "Use water baths rather than direct heating where possible. Stearic acid is hot when melted — use tongs to handle containers. Wear safety goggles throughout. Tie back long hair near Bunsen burners. Ensure heatproof mats are in place. Do not touch hot beakers — use tongs or allow to cool.",
       "hazard_level": "elevated",
       "expected_outcome": "Temperature stays constant during changes of state (melting, boiling). Particles in solids vibrate in fixed positions; in liquids they move freely but stay close; in gases they move rapidly in all directions. Energy is needed to change state — it breaks bonds between particles rather than raising temperature.",
-      "recording_format": ["temperature-time data table", "heating/cooling curve graph", "particle diagrams for each state"],
+      "recording_format": [
+        "temperature-time data table",
+        "heating/cooling curve graph",
+        "particle diagrams for each state"
+      ],
       "variables": {
         "independent": "time (continuous heating or cooling)",
         "dependent": "temperature",
-        "controlled": ["same substance", "same volume", "same heating rate"]
+        "controlled": [
+          "same substance",
+          "same volume",
+          "same heating rate"
+        ]
       },
-      "definitions": ["particle", "solid", "liquid", "gas", "melting point", "boiling point", "evaporation", "condensation", "sublimation", "energy", "kinetic energy"],
+      "definitions": [
+        "particle",
+        "solid",
+        "liquid",
+        "gas",
+        "melting point",
+        "boiling point",
+        "evaporation",
+        "condensation",
+        "sublimation",
+        "energy",
+        "kinetic energy"
+      ],
       "pedagogical_rationale": "The heating/cooling curve is pedagogically powerful because it reveals a counter-intuitive result: temperature stays constant during a change of state. This drives deeper questioning about what is happening at the particle level. The combination of observation over time (plotting the curve) and modelling (explaining it with particles) makes this a rich, dual-enquiry-type investigation.",
       "common_pitfalls": [
         "Pupils draw particles in a gas as being larger than in a solid — the particles are the same size, only their spacing and arrangement change",
@@ -259,29 +524,64 @@
         "Pupils may think heating always makes things hotter — during a state change, added energy changes the arrangement of particles rather than raising temperature"
       ],
       "cross_curricular_links": [
-        {"target_id": "GS-GE-KS3-003", "hook": "Relating state changes to weather phenomena (evaporation, condensation, precipitation)", "strength": "moderate"}
+        {
+          "target_id": "GS-GE-KS3-003",
+          "hook": "Relating state changes to weather phenomena (evaporation, condensation, precipitation)",
+          "strength": "moderate"
+        }
       ],
       "sensitive_content_notes": [],
       "duration_lessons": 5,
       "delivers_via": [
-        {"concept_id": "SC-KS3-C068", "primary": true},
-        {"concept_id": "SC-KS3-C069", "primary": false},
-        {"concept_id": "SC-KS3-C070", "primary": false},
-        {"concept_id": "SC-KS3-C071", "primary": false}
+        {
+          "concept_id": "SC-KS3-C068",
+          "primary": true
+        },
+        {
+          "concept_id": "SC-KS3-C069",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C070",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C071",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-002", "rank": 1},
-        {"enquiry_type_id": "ET-006", "rank": 2}
+        {
+          "enquiry_type_id": "ET-002",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-006",
+          "rank": 2
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-032", "likelihood": "high"},
-        {"misconception_id": "MC-033", "likelihood": "moderate"},
-        {"misconception_id": "MC-034", "likelihood": "high"}
+        {
+          "misconception_id": "MC-032",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-033",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-034",
+          "likelihood": "high"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": "SC-KS3-CV005",
-      "uses_template": ["VT-04"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-04"
+      ],
+      "domain_ids": [
+        "SC-KS3-D006"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -292,19 +592,47 @@
       "enquiry_question": "How are organisms in an ecosystem connected, and what happens when the environment changes?",
       "science_discipline": "biology",
       "key_stage": "KS3",
-      "year_groups": ["Y7", "Y8"],
+      "year_groups": [
+        "Y7",
+        "Y8"
+      ],
       "curriculum_status": "mandatory",
       "curriculum_reference": [
         "KS3 Biology: the interdependence of organisms in an ecosystem, including food webs and insect pollinated crops",
         "KS3 Biology: the importance of plant reproduction through insect pollination in human food security",
         "KS3 Biology: how organisms affect, and are affected by, their environment"
       ],
-      "equipment": ["quadrats", "identification keys", "tally counters", "tape measures", "light meters", "soil thermometers"],
+      "equipment": [
+        "quadrats",
+        "identification keys",
+        "tally counters",
+        "tape measures",
+        "light meters",
+        "soil thermometers"
+      ],
       "safety_notes": "Outdoor fieldwork risk assessment required before the visit. Check for pupil allergies (pollen, stings, plant sensitivities). Wash hands thoroughly after handling soil and organisms. Stay in designated areas. Appropriate footwear required. First aid kit must be available on site.",
       "hazard_level": "standard",
       "expected_outcome": "Organisms in an ecosystem are interdependent. Food webs show complex feeding relationships. Environmental changes (e.g. removing a species, pollution, habitat loss) have cascading knock-on effects through the ecosystem. Quadrat sampling provides data on species distribution.",
-      "recording_format": ["species tally table", "bar chart of distribution", "food web diagram", "impact analysis"],
-      "definitions": ["ecosystem", "habitat", "food web", "producer", "consumer", "decomposer", "predator", "prey", "interdependence", "biodiversity", "quadrat", "sampling"],
+      "recording_format": [
+        "species tally table",
+        "bar chart of distribution",
+        "food web diagram",
+        "impact analysis"
+      ],
+      "definitions": [
+        "ecosystem",
+        "habitat",
+        "food web",
+        "producer",
+        "consumer",
+        "decomposer",
+        "predator",
+        "prey",
+        "interdependence",
+        "biodiversity",
+        "quadrat",
+        "sampling"
+      ],
       "pedagogical_rationale": "Fieldwork using quadrat sampling develops essential scientific skills that cannot be replicated in a classroom: designing sampling strategies, dealing with real-world variability, and using ecological data to build food webs. The outdoor context motivates engagement while the data analysis challenges pupils to think statistically about distribution and interdependence.",
       "common_pitfalls": [
         "Pupils place quadrats only in 'interesting' areas rather than using random or systematic sampling — teach randomisation methods",
@@ -312,7 +640,11 @@
         "Pupils describe environmental change effects as isolated events rather than cascading impacts through the ecosystem"
       ],
       "cross_curricular_links": [
-        {"target_id": "GS-GE-KS3-009", "hook": "Studying local ecosystems, environmental management, and biodiversity", "strength": "strong"}
+        {
+          "target_id": "GS-GE-KS3-009",
+          "hook": "Studying local ecosystems, environmental management, and biodiversity",
+          "strength": "strong"
+        }
       ],
       "sensitive_content_notes": [
         "Outdoor fieldwork requires a risk assessment — check for allergies (pollen, insect stings), ensure appropriate clothing and footwear",
@@ -320,25 +652,59 @@
       ],
       "duration_lessons": 5,
       "delivers_via": [
-        {"concept_id": "SC-KS3-C057", "primary": true},
-        {"concept_id": "SC-KS3-C058", "primary": false},
-        {"concept_id": "SC-KS3-C059", "primary": false},
-        {"concept_id": "SC-KS3-C060", "primary": false}
+        {
+          "concept_id": "SC-KS3-C057",
+          "primary": true
+        },
+        {
+          "concept_id": "SC-KS3-C058",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C059",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C060",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-002", "rank": 1},
-        {"enquiry_type_id": "ET-003", "rank": 2},
-        {"enquiry_type_id": "ET-004", "rank": 3}
+        {
+          "enquiry_type_id": "ET-002",
+          "rank": 1
+        },
+        {
+          "enquiry_type_id": "ET-003",
+          "rank": 2
+        },
+        {
+          "enquiry_type_id": "ET-004",
+          "rank": 3
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-035", "likelihood": "moderate"},
-        {"misconception_id": "MC-036", "likelihood": "moderate"},
-        {"misconception_id": "MC-045", "likelihood": "high"}
+        {
+          "misconception_id": "MC-035",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-036",
+          "likelihood": "moderate"
+        },
+        {
+          "misconception_id": "MC-045",
+          "likelihood": "high"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": "SC-KS3-CV006",
-      "uses_template": ["VT-04"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-04"
+      ],
+      "domain_ids": [
+        "SC-KS3-D004"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -349,24 +715,55 @@
       "enquiry_question": "How is energy transferred, and what materials are the best insulators?",
       "science_discipline": "physics",
       "key_stage": "KS3",
-      "year_groups": ["Y7", "Y8"],
+      "year_groups": [
+        "Y7",
+        "Y8"
+      ],
       "curriculum_status": "mandatory",
       "curriculum_reference": [
         "KS3 Physics: energy as a quantity that can be quantified and calculated; the total energy has the same value before and after a change",
         "KS3 Physics: comparing the energy values of different foods (from labels) and fuels",
         "KS3 Physics: other processes that involve energy transfer: heating, doing work against friction"
       ],
-      "equipment": ["beakers", "thermometers", "insulation materials (bubble wrap, foil, felt, newspaper)", "hot water (60-70C, prepared by teacher)", "stopwatch", "lids"],
+      "equipment": [
+        "beakers",
+        "thermometers",
+        "insulation materials (bubble wrap, foil, felt, newspaper)",
+        "hot water (60-70C, prepared by teacher)",
+        "stopwatch",
+        "lids"
+      ],
       "safety_notes": "Use warm water (approximately 60-70C), not boiling, for pupil experiments. Teacher handles boiling water for preparation. Thermometers are fragile — handle with care and report breakages immediately. Non-mercury thermometers only. Mop up spills promptly to prevent slipping.",
       "hazard_level": "standard",
       "expected_outcome": "Energy is transferred from hot to cold objects by heating. Better insulators reduce the rate of energy transfer. Energy cannot be created or destroyed — it is conserved. Efficiency = useful energy output / total energy input. Pupils can draw cooling curves and calculate efficiency.",
-      "recording_format": ["temperature readings every 2 minutes", "cooling curve graph", "energy transfer diagram", "efficiency calculation"],
+      "recording_format": [
+        "temperature readings every 2 minutes",
+        "cooling curve graph",
+        "energy transfer diagram",
+        "efficiency calculation"
+      ],
       "variables": {
         "independent": "insulation material (bubble wrap, foil, felt, newspaper, none)",
         "dependent": "temperature drop over 10 minutes",
-        "controlled": ["same volume of hot water", "same starting temperature", "same container"]
+        "controlled": [
+          "same volume of hot water",
+          "same starting temperature",
+          "same container"
+        ]
       },
-      "definitions": ["energy", "thermal energy", "kinetic energy", "potential energy", "transfer", "insulator", "conductor", "efficiency", "renewable", "non-renewable", "conservation of energy"],
+      "definitions": [
+        "energy",
+        "thermal energy",
+        "kinetic energy",
+        "potential energy",
+        "transfer",
+        "insulator",
+        "conductor",
+        "efficiency",
+        "renewable",
+        "non-renewable",
+        "conservation of energy"
+      ],
       "pedagogical_rationale": "Fair testing insulation provides a concrete, measurable investigation that makes the abstract concept of energy transfer tangible. Pupils can feel the heat loss, measure it quantitatively, and connect the results to the particle model (thermal energy transfers from hot to cold). Calculating efficiency from real data develops mathematical skills alongside conceptual understanding that energy is always conserved but not always usefully transferred.",
       "common_pitfalls": [
         "Pupils say energy is 'used up' or 'lost' — energy is transferred to less useful stores (e.g. thermal energy in the surroundings), not destroyed",
@@ -374,30 +771,62 @@
         "Difficulty with the efficiency calculation — practise with simple examples before applying to experimental data"
       ],
       "cross_curricular_links": [
-        {"target_id": "GS-GE-KS3-006", "hook": "Comparing energy resources globally — renewable vs non-renewable, energy security", "strength": "moderate"}
+        {
+          "target_id": "GS-GE-KS3-006",
+          "hook": "Comparing energy resources globally — renewable vs non-renewable, energy security",
+          "strength": "moderate"
+        }
       ],
       "sensitive_content_notes": [
         "Energy poverty is a real issue for some families — be sensitive when discussing home insulation and energy bills"
       ],
       "duration_lessons": 5,
       "delivers_via": [
-        {"concept_id": "SC-KS3-C111", "primary": true},
-        {"concept_id": "SC-KS3-C113", "primary": false},
-        {"concept_id": "SC-KS3-C114", "primary": false},
-        {"concept_id": "SC-KS3-C115", "primary": false}
+        {
+          "concept_id": "SC-KS3-C111",
+          "primary": true
+        },
+        {
+          "concept_id": "SC-KS3-C113",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C114",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C115",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-001", "rank": 1}
+        {
+          "enquiry_type_id": "ET-001",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-039", "likelihood": "high"},
-        {"misconception_id": "MC-040", "likelihood": "high"},
-        {"misconception_id": "MC-041", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-039",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-040",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-041",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": "SC-KS3-CV007",
-      "uses_template": ["VT-03"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-03"
+      ],
+      "domain_ids": [
+        "SC-KS3-D011"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
@@ -408,24 +837,53 @@
       "enquiry_question": "How can we use the reactions of metals with acids to put them in order of reactivity?",
       "science_discipline": "chemistry",
       "key_stage": "KS3",
-      "year_groups": ["Y8", "Y9"],
+      "year_groups": [
+        "Y8",
+        "Y9"
+      ],
       "curriculum_status": "mandatory",
       "curriculum_reference": [
         "KS3 Chemistry: the order of metals and carbon in the reactivity series",
         "KS3 Chemistry: the use of carbon in obtaining metals from metal oxides",
         "KS3 Chemistry: reactions of acids with metals to produce a salt plus hydrogen"
       ],
-      "equipment": ["dilute hydrochloric acid (1M)", "metal samples (Mg, Zn, Fe, Cu)", "test tubes", "test tube rack", "splints", "safety goggles", "gloves", "thermometer"],
+      "equipment": [
+        "dilute hydrochloric acid (1M)",
+        "metal samples (Mg, Zn, Fe, Cu)",
+        "test tubes",
+        "test tube rack",
+        "splints",
+        "safety goggles",
+        "gloves",
+        "thermometer"
+      ],
       "safety_notes": "Wear safety goggles and gloves throughout. Magnesium reacts vigorously with acid — use small pieces only (1-2 cm ribbon). Test for hydrogen with a lighted splint held well away from the acid — do not look into the test tube. Good ventilation required as hydrogen gas is flammable. Dilute acid only (max 1M HCl). Dispose of waste according to school policy.",
       "hazard_level": "elevated",
       "expected_outcome": "Metals react with acids to produce a salt and hydrogen. More reactive metals react more vigorously (more fizzing, greater temperature change). The reactivity series ranks metals by their reactivity: Mg > Zn > Fe > Cu (copper does not react with dilute acid). Pupils can write word equations: metal + acid -> metal salt + hydrogen.",
-      "recording_format": ["observations table (metal, observations, temperature change)", "reactivity series ranking", "word equations"],
+      "recording_format": [
+        "observations table (metal, observations, temperature change)",
+        "reactivity series ranking",
+        "word equations"
+      ],
       "variables": {
         "independent": "type of metal (magnesium, zinc, iron, copper)",
         "dependent": "vigour of reaction (observations: fizzing, temperature change, gas production)",
-        "controlled": ["same volume and concentration of acid", "same size of metal piece"]
+        "controlled": [
+          "same volume and concentration of acid",
+          "same size of metal piece"
+        ]
       },
-      "definitions": ["reactivity", "reactivity series", "displacement", "salt", "hydrogen", "acid", "oxidation", "corrosion", "word equation"],
+      "definitions": [
+        "reactivity",
+        "reactivity series",
+        "displacement",
+        "salt",
+        "hydrogen",
+        "acid",
+        "oxidation",
+        "corrosion",
+        "word equation"
+      ],
       "pedagogical_rationale": "Pattern seeking is the natural enquiry type for the reactivity series because pupils observe a gradient of reactivity across different metals reacting with the same acid. The pattern — from vigorous fizzing (magnesium) to no reaction (copper) — is dramatic, memorable, and demands explanation. Building the reactivity series from first-hand evidence rather than memorising a list develops genuine scientific reasoning.",
       "common_pitfalls": [
         "Pupils memorise the reactivity series without understanding what it means — always link back to the practical observations",
@@ -433,27 +891,58 @@
         "Pupils may think unreactive metals are 'bad' — discuss why gold and platinum are valued precisely because they are unreactive"
       ],
       "cross_curricular_links": [
-        {"target_id": "GS-GE-KS3-004", "hook": "Mining and extraction of metals — environmental and social impacts", "strength": "moderate"},
-        {"target_id": "HS-KS2-001", "hook": "The Bronze Age and Iron Age — how metal extraction shaped civilisation", "strength": "moderate"}
+        {
+          "target_id": "GS-GE-KS3-004",
+          "hook": "Mining and extraction of metals — environmental and social impacts",
+          "strength": "moderate"
+        },
+        {
+          "target_id": "HS-KS2-001",
+          "hook": "The Bronze Age and Iron Age — how metal extraction shaped civilisation",
+          "strength": "moderate"
+        }
       ],
       "sensitive_content_notes": [],
       "duration_lessons": 4,
       "delivers_via": [
-        {"concept_id": "SC-KS3-C086", "primary": true},
-        {"concept_id": "SC-KS3-C094", "primary": false},
-        {"concept_id": "SC-KS3-C097", "primary": false}
+        {
+          "concept_id": "SC-KS3-C086",
+          "primary": true
+        },
+        {
+          "concept_id": "SC-KS3-C094",
+          "primary": false
+        },
+        {
+          "concept_id": "SC-KS3-C097",
+          "primary": false
+        }
       ],
       "uses_enquiry_type": [
-        {"enquiry_type_id": "ET-003", "rank": 1}
+        {
+          "enquiry_type_id": "ET-003",
+          "rank": 1
+        }
       ],
       "surfaces_misconception": [
-        {"misconception_id": "MC-042", "likelihood": "high"},
-        {"misconception_id": "MC-043", "likelihood": "moderate"}
+        {
+          "misconception_id": "MC-042",
+          "likelihood": "high"
+        },
+        {
+          "misconception_id": "MC-043",
+          "likelihood": "moderate"
+        }
       ],
       "progresses_to": [],
       "supersedes_vehicle_id": "SC-KS3-CV008",
-      "uses_template": ["VT-05"],
-      "domain_ids": [],
+      "uses_template": [
+        "VT-05"
+      ],
+      "domain_ids": [
+        "SC-KS3-D008",
+        "SC-KS3-D009"
+      ],
       "display_category": "Science Enquiry",
       "display_color": "#059669",
       "display_icon": "science"
