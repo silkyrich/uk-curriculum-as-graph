@@ -19,6 +19,9 @@ on:
         required: false
         default: ''
 
+permissions:
+  contents: write
+
 # Cancel in-progress runs for the same branch
 concurrency:
   group: planners-${{ github.ref }}
