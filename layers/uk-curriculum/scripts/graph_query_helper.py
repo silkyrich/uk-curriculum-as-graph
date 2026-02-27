@@ -66,7 +66,9 @@ def query_domain_context(session, domain_id):
               -[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
         RETURN c.concept_id AS concept_id, dl.level_number AS level,
                dl.label AS label, dl.description AS description,
-               dl.example_task AS example_task
+               dl.example_task AS example_task,
+               dl.example_response AS example_response,
+               dl.common_errors AS common_errors
         ORDER BY c.concept_id, dl.level_number
     """, did=domain_id))
     dl_by_concept = {}
@@ -100,13 +102,36 @@ def query_domain_context(session, domain_id):
             sections.append(f"\n**Common misconceptions:** {c['misconceptions']}")
         if c['vocab']:
             sections.append(f"\n**Key vocabulary:** {c['vocab']}")
+        # Delivery mode
+        dm = dm_by_concept.get(c['id'])
+        if dm:
+            sections.append(f"\n**Delivery mode:** {dm['mode_name']} "
+                            f"(confidence: {dm.get('confidence', '—')})")
+            if dm.get("rationale"):
+                sections.append(f"  *{dm['rationale']}*")
+        # Teaching requirements
+        tr_list = tr_by_concept.get(c['id'], [])
+        if tr_list:
+            sections.append(f"\n**Teaching requirements:** "
+                            + ", ".join(f"{tr['req_name']} ({tr['category']})" for tr in tr_list))
         dl_list = dl_by_concept.get(c['id'], [])
         if dl_list:
             sections.append(f"\n**Difficulty levels:**")
             for dl in dl_list:
                 label_display = dl["label"].replace("_", " ").title()
-                sections.append(f"  {dl['level']}. **{label_display}**: {dl['description']}"
+                target_note = ""
+                if dl["label"] == "expected":
+                    target_note = " ← **Secure knowledge target**"
+                sections.append(f"  {dl['level']}. **{label_display}**{target_note}: {dl['description']}"
                                 f" — *\"{dl['example_task']}\"*")
+                if dl.get("example_response"):
+                    sections.append(f"     *Model response:* \"{dl['example_response']}\"")
+                if dl.get("common_errors"):
+                    errors = dl["common_errors"]
+                    if isinstance(errors, list):
+                        sections.append(f"     *Common errors:* {'; '.join(errors)}")
+                    elif errors:
+                        sections.append(f"     *Common errors:* {errors}")
         rs_list = rs_by_concept.get(c['id'], [])
         if rs_list:
             sections.append(f"\n**CPA stages (Concrete → Pictorial → Abstract):**")
@@ -198,6 +223,48 @@ def query_domain_context(session, domain_id):
                prev.cluster_id AS after_cluster
         ORDER BY cc.cluster_id
     """, did=domain_id))
+    # ── ThinkingLens per cluster ──────────────────────────────────
+    lens_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CLUSTER]->(cc:ConceptCluster)
+              -[rel:APPLIES_LENS]->(tl:ThinkingLens)
+        OPTIONAL MATCH (p:Programme)-[:HAS_DOMAIN]->(d)
+        OPTIONAL MATCH (tl)-[pf:PROMPT_FOR]->(ks:KeyStage {key_stage_id: p.key_stage})
+        RETURN cc.cluster_id AS cluster_id, tl.lens_name AS lens_name,
+               tl.key_question AS key_question,
+               coalesce(pf.agent_prompt, tl.agent_prompt) AS agent_prompt,
+               pf.question_stems AS question_stems,
+               rel.rank AS rank, rel.rationale AS rationale
+        ORDER BY cc.cluster_id, rel.rank
+    """, did=domain_id))
+    lens_by_cluster = {}
+    for row in lens_rows:
+        lens_by_cluster.setdefault(row["cluster_id"], []).append(row)
+
+    # ── Delivery modes per concept ────────────────────────────────
+    dm_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+              -[dv:DELIVERABLE_VIA]->(dm:DeliveryMode)
+        WHERE dv.primary = true
+        RETURN c.concept_id AS concept_id, dm.name AS mode_name,
+               dv.confidence AS confidence, dv.rationale AS rationale
+        ORDER BY c.concept_id
+    """, did=domain_id))
+    dm_by_concept = {}
+    for row in dm_rows:
+        dm_by_concept[row["concept_id"]] = row
+
+    # ── Teaching requirements per concept ─────────────────────────
+    tr_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+              -[:HAS_TEACHING_REQUIREMENT]->(tr:TeachingRequirement)
+        RETURN c.concept_id AS concept_id, tr.name AS req_name,
+               tr.category AS category
+        ORDER BY c.concept_id, tr.requirement_id
+    """, did=domain_id))
+    tr_by_concept = {}
+    for row in tr_rows:
+        tr_by_concept.setdefault(row["concept_id"], []).append(row)
+
     if clusters:
         sections.append(f"\n### ConceptClusters ({len(clusters)})")
         for cl in clusters:
@@ -213,6 +280,22 @@ def query_domain_context(session, domain_id):
                 sections.append(f"Rationale: {cl['rationale']}")
             if cl['inspired_by']:
                 sections.append(f"Inspired by: {cl['inspired_by']}")
+            # ThinkingLens for this cluster
+            lenses = lens_by_cluster.get(cl['cid'], [])
+            if lenses:
+                primary_lens = lenses[0]
+                sections.append(f"**Thinking lens:** {primary_lens['lens_name']}"
+                                f" — _{primary_lens.get('key_question', '')}_")
+                if primary_lens.get('rationale'):
+                    sections.append(f"  Why: {primary_lens['rationale']}")
+                if primary_lens.get('agent_prompt'):
+                    sections.append(f"  Agent prompt: {primary_lens['agent_prompt']}")
+                stems = primary_lens.get('question_stems')
+                if stems:
+                    sections.append(f"  Question stems: {'; '.join(stems)}")
+                if len(lenses) > 1:
+                    alt_names = [l['lens_name'] for l in lenses[1:]]
+                    sections.append(f"  Alternative lenses: {', '.join(alt_names)}")
 
     # ── Objectives with Concept links ────────────────────────────────
     objectives = list(session.run("""
@@ -244,6 +327,16 @@ def query_domain_context(session, domain_id):
                ts.key_stage AS ks,
                ts.curriculum_status AS status,
                ts.pedagogical_rationale AS rationale,
+               ts.enquiry_questions AS enquiry_questions,
+               ts.key_events AS key_events,
+               ts.key_figures AS key_figures,
+               ts.perspectives AS perspectives,
+               ts.interpretations AS interpretations,
+               ts.sensitive_content_notes AS sensitive_content_notes,
+               ts.source_types AS source_types,
+               ts.definitions AS definitions,
+               ts.significance_claim AS significance_claim,
+               ts.period AS period,
                concepts, templates
         ORDER BY label, ts.key_stage, ts.name
     """, did=domain_id))
@@ -262,6 +355,38 @@ def query_domain_context(session, domain_id):
                 sections.append(f"Secondary concepts: {', '.join(secondary_concepts)}")
             if s['rationale']:
                 sections.append(f"Rationale: {s['rationale']}")
+            if s.get('period'):
+                sections.append(f"Period: {s['period']}")
+            if s.get('significance_claim'):
+                sections.append(f"Significance: {s['significance_claim']}")
+            if s.get('key_events'):
+                events = s['key_events']
+                sections.append(f"Key events: {', '.join(events) if isinstance(events, list) else events}")
+            if s.get('key_figures'):
+                figures = s['key_figures']
+                sections.append(f"Key figures: {', '.join(figures) if isinstance(figures, list) else figures}")
+            if s.get('perspectives'):
+                persp = s['perspectives']
+                sections.append(f"Perspectives: {', '.join(persp) if isinstance(persp, list) else persp}")
+            if s.get('interpretations'):
+                interp = s['interpretations']
+                sections.append(f"Interpretations: {', '.join(interp) if isinstance(interp, list) else interp}")
+            if s.get('enquiry_questions'):
+                questions = s['enquiry_questions']
+                if isinstance(questions, list):
+                    sections.append("Enquiry questions:")
+                    for q in questions:
+                        sections.append(f"  - {q}")
+                elif questions:
+                    sections.append(f"Enquiry questions: {questions}")
+            if s.get('source_types'):
+                sources = s['source_types']
+                sections.append(f"Source types: {', '.join(sources) if isinstance(sources, list) else sources}")
+            if s.get('definitions'):
+                defs = s['definitions']
+                sections.append(f"Definitions: {', '.join(defs) if isinstance(defs, list) else defs}")
+            if s.get('sensitive_content_notes'):
+                sections.append(f"⚠ Sensitive content: {s['sensitive_content_notes']}")
 
     # ── Assessment — KS2 Content Domain Codes ────────────────────────
     assessments = list(session.run("""

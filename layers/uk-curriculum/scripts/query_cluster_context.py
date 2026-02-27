@@ -88,7 +88,9 @@ def query_context(session, cluster_id, year_override=None):
               -[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
         RETURN c.concept_id AS concept_id, dl.level_number AS level,
                dl.label AS label, dl.description AS description,
-               dl.example_task AS example_task
+               dl.example_task AS example_task,
+               dl.example_response AS example_response,
+               dl.common_errors AS common_errors
         ORDER BY c.concept_id, dl.level_number
     """, cid=cluster_id)
     dl_by_concept = {}
@@ -215,11 +217,18 @@ def query_context(session, cluster_id, year_override=None):
                    pp.session_length_max_minutes    AS session_length_max,
                    pp.hint_tiers_max                AS hint_tiers_max,
                    pp.productive_failure_appropriate AS productive_failure_appropriate,
+                   pp.productive_failure_notes       AS productive_failure_notes,
                    pp.scaffolding_level             AS scaffolding_level,
                    pp.session_sequence              AS session_sequence,
                    pp.desirable_difficulties        AS desirable_difficulties,
                    pp.spacing_interval_days_min     AS spacing_interval_days_min,
                    pp.spacing_interval_days_max     AS spacing_interval_days_max,
+                   pp.worked_examples_required      AS worked_examples_required,
+                   pp.worked_example_style          AS worked_example_style,
+                   pp.interleaving_appropriate       AS interleaving_appropriate,
+                   pp.spacing_appropriate            AS spacing_appropriate,
+                   pp.metacognitive_prompts          AS metacognitive_prompts,
+                   pp.prerequisite_gating_required   AS prerequisite_gating_required,
                    pp.agent_pedagogy_prompt         AS agent_pedagogy_prompt,
                    collect(DISTINCT pt.technique_name)       AS active_techniques,
                    collect(DISTINCT intro_pt.technique_name) AS introduced_techniques
@@ -254,6 +263,9 @@ def query_context(session, cluster_id, year_override=None):
             RETURN it.interaction_id     AS interaction_id,
                    it.name              AS name,
                    it.category          AS category,
+                   it.description       AS description,
+                   it.input_method      AS input_method,
+                   it.visual_complexity AS visual_complexity,
                    it.agent_prompt      AS agent_prompt,
                    it.ui_notes          AS ui_notes,
                    it.requires_literacy AS requires_literacy,
@@ -287,6 +299,117 @@ def query_context(session, cluster_id, year_override=None):
     """, cid=cluster_id, ks=key_stage)
     ctx["thinking_lenses"] = [dict(row) for row in r]
 
+    # ── 10. Cumulative vocabulary from prior clusters in this domain ────
+    if domain_id:
+        r = session.run("""
+            MATCH (d:Domain {domain_id: $did})-[:HAS_CLUSTER]->(prior:ConceptCluster)
+                  -[:GROUPS]->(c:Concept)
+            WHERE prior.cluster_id < $cid
+            RETURN c.key_vocabulary AS vocab
+        """, did=domain_id, cid=cluster_id)
+        prior_vocab = set()
+        for row in r:
+            v = row["vocab"]
+            if v:
+                if isinstance(v, str):
+                    prior_vocab.update(w.strip() for w in v.split(","))
+                elif isinstance(v, list):
+                    prior_vocab.update(v)
+        ctx["cumulative_vocabulary"] = sorted(prior_vocab)
+
+    # ── 11. Delivery mode for concepts in this cluster ──────────────────
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
+              -[dv:DELIVERABLE_VIA]->(dm:DeliveryMode)
+        WHERE dv.primary = true
+        RETURN c.concept_id AS concept_id, dm.mode_id AS mode_id,
+               dm.name AS mode_name, dv.confidence AS confidence,
+               dv.rationale AS rationale
+        ORDER BY c.concept_id
+    """, cid=cluster_id)
+    dm_by_concept = {}
+    for row in r:
+        dm_by_concept[row["concept_id"]] = dict(row)
+    ctx["delivery_modes"] = dm_by_concept
+
+    # ── 12. Teaching requirements for concepts in this cluster ──────────
+    r = session.run("""
+        MATCH (cc:ConceptCluster {cluster_id: $cid})-[:GROUPS]->(c:Concept)
+              -[:HAS_TEACHING_REQUIREMENT]->(tr:TeachingRequirement)
+        RETURN c.concept_id AS concept_id, tr.requirement_id AS req_id,
+               tr.name AS req_name, tr.category AS category
+        ORDER BY c.concept_id, tr.requirement_id
+    """, cid=cluster_id)
+    tr_by_concept = {}
+    for row in r:
+        tr_by_concept.setdefault(row["concept_id"], []).append(dict(row))
+    ctx["teaching_requirements"] = tr_by_concept
+
+    # ── 13. Per-subject ontology (topic suggestions) for this domain ────
+    if domain_id:
+        r = session.run("""
+            MATCH (d:Domain {domain_id: $did})-[:HAS_SUGGESTION]->(ts)
+            WITH ts, labels(ts)[0] AS label
+            OPTIONAL MATCH (ts)-[dv:DELIVERS_VIA]->(c:Concept)
+            WITH ts, label,
+                 collect(DISTINCT {id: c.concept_id, primary: dv.primary}) AS concepts
+            RETURN label,
+                   ts.name AS name,
+                   coalesce(ts.study_id, ts.enquiry_id, ts.unit_id, ts.suggestion_id) AS id,
+                   ts.key_stage AS ks,
+                   ts.curriculum_status AS status,
+                   ts.pedagogical_rationale AS rationale,
+                   ts.enquiry_questions AS enquiry_questions,
+                   ts.key_events AS key_events,
+                   ts.key_figures AS key_figures,
+                   ts.perspectives AS perspectives,
+                   ts.interpretations AS interpretations,
+                   ts.sensitive_content_notes AS sensitive_content_notes,
+                   ts.source_types AS source_types,
+                   ts.definitions AS definitions,
+                   ts.significance_claim AS significance_claim,
+                   ts.period AS period,
+                   concepts
+            ORDER BY label, ts.name
+        """, did=domain_id)
+        ctx["topic_suggestions"] = [dict(row) for row in r]
+
+    # ── 14. Assessment — ContentDomainCodes for this domain ─────────────
+    if domain_id:
+        r = session.run("""
+            MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+                  <-[:ASSESSES_CONCEPT]-(cdc:ContentDomainCode)
+            WITH cdc, collect(DISTINCT c.concept_id) AS concept_ids
+            RETURN cdc.code AS code, cdc.description AS description,
+                   cdc.strand_name AS strand, concept_ids
+            ORDER BY cdc.code
+        """, did=domain_id)
+        cdc_list = [dict(row) for row in r]
+        if not cdc_list:
+            # Fall back to domain-level assessment links
+            r = session.run("""
+                MATCH (cdc:ContentDomainCode)-[:ASSESSES_DOMAIN]->(d:Domain {domain_id: $did})
+                RETURN cdc.code AS code, cdc.description AS description,
+                       cdc.strand_name AS strand, [] AS concept_ids
+                ORDER BY cdc.code
+            """, did=domain_id)
+            cdc_list = [dict(row) for row in r]
+        ctx["assessment_codes"] = cdc_list
+
+    # ── 15. PedagogyTechnique detail (not just names) ───────────────────
+    if year_id:
+        r = session.run("""
+            MATCH (y:Year {year_id: $yid})-[:HAS_PEDAGOGY_PROFILE]->(pp:PedagogyProfile)
+                  -[:USES_TECHNIQUE]->(pt:PedagogyTechnique)
+            OPTIONAL MATCH (pp)-[intro:INTRODUCES_TECHNIQUE]->(pt)
+            RETURN pt.technique_id AS technique_id, pt.name AS name,
+                   pt.description AS description, pt.evidence_base AS evidence_base,
+                   pt.how_to_implement AS how_to_implement,
+                   intro IS NOT NULL AS new_this_year
+            ORDER BY pt.technique_id
+        """, yid=year_id)
+        ctx["pedagogy_techniques"] = [dict(row) for row in r]
+
     return ctx
 
 
@@ -300,6 +423,12 @@ def render_markdown(ctx):
     concepts = ctx.get("concepts", [])
     difficulty_levels = ctx.get("difficulty_levels", {})
     representation_stages = ctx.get("representation_stages", {})
+    delivery_modes = ctx.get("delivery_modes", {})
+    teaching_requirements = ctx.get("teaching_requirements", {})
+    cumulative_vocab = ctx.get("cumulative_vocabulary", [])
+    topic_suggestions = ctx.get("topic_suggestions", [])
+    assessment_codes = ctx.get("assessment_codes", [])
+    pedagogy_techniques = ctx.get("pedagogy_techniques", [])
     prereqs = ctx.get("prerequisite_concepts", [])
     interactions = ctx.get("interaction_types", [])
     domain_clusters = ctx.get("domain_clusters", [])
@@ -428,8 +557,19 @@ def render_markdown(ctx):
             lines.append("**Difficulty levels:**")
             for dl in dl_list:
                 label_display = dl["label"].replace("_", " ").title()
-                lines.append(f"{dl['level']}. **{label_display}**: {dl['description']}"
-                             f" — *\"{dl['example_task']}\"*")
+                target_note = ""
+                if dl["label"] == "expected":
+                    target_note = " ← **Secure knowledge target**"
+                lines.append(f"{dl['level']}. **{label_display}**{target_note}: {dl['description']}")
+                lines.append(f"   *Task:* \"{dl['example_task']}\"")
+                if dl.get("example_response"):
+                    lines.append(f"   *Model response:* \"{dl['example_response']}\"")
+                if dl.get("common_errors"):
+                    errors = dl["common_errors"]
+                    if isinstance(errors, list):
+                        lines.append(f"   *Common errors:* {'; '.join(errors)}")
+                    elif errors:
+                        lines.append(f"   *Common errors:* {errors}")
             lines.append("")
         # Representation stages (CPA — if present for this concept)
         rs_list = representation_stages.get(c_node["concept_id"], [])
@@ -442,6 +582,122 @@ def render_markdown(ctx):
                 if rs.get("transition_cue"):
                     lines.append(f"   *Transition cue:* {rs['transition_cue']}")
             lines.append("")
+        # Delivery mode (if classified for this concept)
+        dm = delivery_modes.get(c_node["concept_id"])
+        if dm:
+            lines.append(f"**Delivery mode:** {dm['mode_name']} "
+                         f"(confidence: {dm.get('confidence', '—')})")
+            if dm.get("rationale"):
+                lines.append(f"   *{dm['rationale']}*")
+            lines.append("")
+        # Teaching requirements
+        tr_list = teaching_requirements.get(c_node["concept_id"], [])
+        if tr_list:
+            lines.append("**Teaching requirements:** "
+                         + ", ".join(f"{tr['req_name']} ({tr['category']})" for tr in tr_list))
+            lines.append("")
+
+    # ── Cumulative vocabulary ──
+    if cumulative_vocab:
+        lines.append("---")
+        lines.append("")
+        lines.append("## Cumulative vocabulary")
+        lines.append("")
+        lines.append("*Terms introduced in earlier clusters within this domain. "
+                     "Pupils should already know these:*")
+        lines.append("")
+        lines.append(", ".join(cumulative_vocab))
+        lines.append("")
+
+    # ── Topic suggestions (per-subject ontology) ──
+    if topic_suggestions:
+        lines.append("---")
+        lines.append("")
+        lines.append("## Topic suggestions")
+        lines.append("")
+        lines.append("*Per-subject ontology nodes linked to this domain — "
+                     "studies, enquiries, units, and their rich properties.*")
+        lines.append("")
+        for ts in topic_suggestions:
+            lines.append(f"### {ts.get('name', '—')} ({ts.get('label', '?')})")
+            status = ts.get("status")
+            if status:
+                lines.append(f"*Status: {status}*")
+            lines.append("")
+            if ts.get("rationale"):
+                lines.append(f"**Pedagogical rationale:** {ts['rationale']}")
+                lines.append("")
+            if ts.get("period"):
+                lines.append(f"**Period:** {ts['period']}")
+            if ts.get("significance_claim"):
+                lines.append(f"**Significance:** {ts['significance_claim']}")
+            if ts.get("key_events"):
+                events = ts["key_events"]
+                if isinstance(events, list):
+                    lines.append(f"**Key events:** {', '.join(events)}")
+                elif events:
+                    lines.append(f"**Key events:** {events}")
+            if ts.get("key_figures"):
+                figures = ts["key_figures"]
+                if isinstance(figures, list):
+                    lines.append(f"**Key figures:** {', '.join(figures)}")
+                elif figures:
+                    lines.append(f"**Key figures:** {figures}")
+            if ts.get("perspectives"):
+                persp = ts["perspectives"]
+                if isinstance(persp, list):
+                    lines.append(f"**Perspectives:** {', '.join(persp)}")
+                elif persp:
+                    lines.append(f"**Perspectives:** {persp}")
+            if ts.get("interpretations"):
+                interp = ts["interpretations"]
+                if isinstance(interp, list):
+                    lines.append(f"**Interpretations:** {', '.join(interp)}")
+                elif interp:
+                    lines.append(f"**Interpretations:** {interp}")
+            if ts.get("enquiry_questions"):
+                questions = ts["enquiry_questions"]
+                if isinstance(questions, list):
+                    for q in questions:
+                        lines.append(f"- _{q}_")
+                elif questions:
+                    lines.append(f"**Enquiry questions:** {questions}")
+            if ts.get("source_types"):
+                sources = ts["source_types"]
+                if isinstance(sources, list):
+                    lines.append(f"**Source types:** {', '.join(sources)}")
+                elif sources:
+                    lines.append(f"**Source types:** {sources}")
+            if ts.get("definitions"):
+                defs = ts["definitions"]
+                if isinstance(defs, list):
+                    lines.append(f"**Definitions:** {', '.join(defs)}")
+                elif defs:
+                    lines.append(f"**Definitions:** {defs}")
+            if ts.get("sensitive_content_notes"):
+                lines.append(f"**⚠ Sensitive content:** {ts['sensitive_content_notes']}")
+            # Show which concepts this delivers
+            ts_concepts = ts.get("concepts", [])
+            if ts_concepts:
+                primary_ids = [c["id"] for c in ts_concepts if c.get("primary")]
+                if primary_ids:
+                    lines.append(f"**Delivers concepts:** {', '.join(primary_ids)}")
+            lines.append("")
+
+    # ── Assessment codes ──
+    if assessment_codes:
+        lines.append("---")
+        lines.append("")
+        lines.append("## Assessment codes")
+        lines.append("")
+        lines.append("*KS2 Content Domain Codes mapped to concepts in this domain. "
+                     "Use these to understand what is formally tested.*")
+        lines.append("")
+        for ac in assessment_codes:
+            concept_ids = ac.get("concept_ids", [])
+            concepts_str = f" → {', '.join(concept_ids)}" if concept_ids else ""
+            lines.append(f"- **{ac['code']}**: {ac.get('description', '—')}{concepts_str}")
+        lines.append("")
 
     # ── Learner profile ──
     lines.append("---")
@@ -476,6 +732,24 @@ def render_markdown(ctx):
         lines.append(f"- **Hint tiers**: max {pp.get('hint_tiers_max', '—')}")
         lines.append(f"- **Spacing interval**: {pp.get('spacing_interval_days_min', '—')}–"
                      f"{pp.get('spacing_interval_days_max', '—')} days")
+        if pp.get("worked_examples_required") is not None:
+            style = f" ({pp['worked_example_style']})" if pp.get("worked_example_style") else ""
+            lines.append(f"- **Worked examples**: "
+                         f"{'Required' if pp['worked_examples_required'] else 'Optional'}{style}")
+        if pp.get("interleaving_appropriate") is not None:
+            lines.append(f"- **Interleaving**: "
+                         f"{'Appropriate ✓' if pp['interleaving_appropriate'] else 'Not yet appropriate'}")
+        if pp.get("spacing_appropriate") is not None:
+            lines.append(f"- **Spacing**: "
+                         f"{'Appropriate ✓' if pp['spacing_appropriate'] else 'Not yet appropriate'}")
+        if pp.get("metacognitive_prompts") is not None:
+            lines.append(f"- **Metacognitive prompts**: "
+                         f"{'Yes ✓' if pp['metacognitive_prompts'] else 'Not yet appropriate'}")
+        if pp.get("prerequisite_gating_required") is not None:
+            lines.append(f"- **Prerequisite gating**: "
+                         f"{'Required' if pp['prerequisite_gating_required'] else 'Optional'}")
+        if pp.get("productive_failure_notes"):
+            lines.append(f"  *{pp['productive_failure_notes']}*")
 
         session_seq = pp.get("session_sequence")
         if session_seq:
@@ -532,7 +806,8 @@ def render_markdown(ctx):
                 except Exception:
                     pass
             if isinstance(avoid, list):
-                lines.append(f"- **Avoid phrases**: {', '.join(f'\"{p}\"' for p in avoid[:5])}")
+                quoted = [f'"{p}"' for p in avoid[:5]]
+                lines.append(f"- **Avoid phrases**: {', '.join(quoted)}")
         if fp.get("agent_feedback_prompt"):
             lines.append("")
             lines.append(f"> **AI feedback instruction**: {fp['agent_feedback_prompt']}")
@@ -547,14 +822,33 @@ def render_markdown(ctx):
         if primary:
             lines.append("**Primary (preferred):**")
             for i in primary:
-                lines.append(f"- **{i['name']}** (`{i['interaction_id']}`, {i['category']})")
+                desc_str = f": {i['description']}" if i.get("description") else ""
+                lines.append(f"- **{i['name']}** (`{i['interaction_id']}`, {i['category']}, "
+                             f"{i.get('input_method', '—')}){desc_str}")
                 if i.get("agent_prompt"):
                     lines.append(f"  > {i['agent_prompt']}")
             lines.append("")
         if secondary:
             lines.append("**Secondary (available):**")
             for i in secondary:
-                lines.append(f"- {i['name']} (`{i['interaction_id']}`, {i['category']})")
+                desc_str = f": {i['description']}" if i.get("description") else ""
+                lines.append(f"- {i['name']} (`{i['interaction_id']}`, {i['category']}, "
+                             f"{i.get('input_method', '—')}){desc_str}")
+            lines.append("")
+
+    # ── Pedagogy techniques (full detail) ──
+    if pedagogy_techniques:
+        lines.append("### Pedagogy techniques (detail)")
+        lines.append("")
+        for pt in pedagogy_techniques:
+            new_flag = " **[NEW this year]**" if pt.get("new_this_year") else ""
+            lines.append(f"**{pt['name']}**{new_flag}")
+            if pt.get("description"):
+                lines.append(f"  {pt['description']}")
+            if pt.get("evidence_base"):
+                lines.append(f"  *Evidence:* {pt['evidence_base']}")
+            if pt.get("how_to_implement"):
+                lines.append(f"  *Implementation:* {pt['how_to_implement']}")
             lines.append("")
 
     return "\n".join(lines)
