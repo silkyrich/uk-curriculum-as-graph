@@ -31,7 +31,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
-PROJECT_ROOT = SCRIPT_DIR.parents[1]
+PROJECT_ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT / "core" / "scripts"))
 
 from neo4j import GraphDatabase

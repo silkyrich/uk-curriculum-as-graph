@@ -93,6 +93,31 @@ def query_domain_context(session, domain_id):
     for row in rs_rows:
         rs_by_concept.setdefault(row["concept_id"], []).append(row)
 
+    # ── Delivery modes per concept ────────────────────────────────
+    dm_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+              -[dv:DELIVERABLE_VIA]->(dm:DeliveryMode)
+        WHERE dv.primary = true
+        RETURN c.concept_id AS concept_id, dm.name AS mode_name,
+               dv.confidence AS confidence, dv.rationale AS rationale
+        ORDER BY c.concept_id
+    """, did=domain_id))
+    dm_by_concept = {}
+    for row in dm_rows:
+        dm_by_concept[row["concept_id"]] = row
+
+    # ── Teaching requirements per concept ─────────────────────────
+    tr_rows = list(session.run("""
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+              -[:HAS_TEACHING_REQUIREMENT]->(tr:TeachingRequirement)
+        RETURN c.concept_id AS concept_id, tr.name AS req_name,
+               tr.category AS category
+        ORDER BY c.concept_id, tr.requirement_id
+    """, did=domain_id))
+    tr_by_concept = {}
+    for row in tr_rows:
+        tr_by_concept.setdefault(row["concept_id"], []).append(row)
+
     sections.append(f"\n### Concepts ({len(concepts)})")
     for c in concepts:
         ks_flag = " **[KEYSTONE]**" if c['keystone'] else ""
@@ -264,31 +289,6 @@ def query_domain_context(session, domain_id):
     lens_by_cluster = {}
     for row in lens_rows:
         lens_by_cluster.setdefault(row["cluster_id"], []).append(row)
-
-    # ── Delivery modes per concept ────────────────────────────────
-    dm_rows = list(session.run("""
-        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
-              -[dv:DELIVERABLE_VIA]->(dm:DeliveryMode)
-        WHERE dv.primary = true
-        RETURN c.concept_id AS concept_id, dm.name AS mode_name,
-               dv.confidence AS confidence, dv.rationale AS rationale
-        ORDER BY c.concept_id
-    """, did=domain_id))
-    dm_by_concept = {}
-    for row in dm_rows:
-        dm_by_concept[row["concept_id"]] = row
-
-    # ── Teaching requirements per concept ─────────────────────────
-    tr_rows = list(session.run("""
-        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
-              -[:HAS_TEACHING_REQUIREMENT]->(tr:TeachingRequirement)
-        RETURN c.concept_id AS concept_id, tr.name AS req_name,
-               tr.category AS category
-        ORDER BY c.concept_id, tr.requirement_id
-    """, did=domain_id))
-    tr_by_concept = {}
-    for row in tr_rows:
-        tr_by_concept.setdefault(row["concept_id"], []).append(row)
 
     if clusters:
         sections.append(f"\n### ConceptClusters ({len(clusters)})")

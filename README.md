@@ -1,6 +1,6 @@
 # UK Curriculum as a Knowledge Graph
 
-A Neo4j knowledge graph of the England National Curriculum (EYFS through KS4, ages 4-16), with every statutory subject structured as concepts, objectives, domains, prerequisite relationships, disciplinary skill types, concept clusters, thinking lenses, and teaching packs. Built as the curriculum ontology layer for an adaptive learning platform.
+A Neo4j knowledge graph of the England National Curriculum (EYFS through KS4, ages 4-16), with every statutory subject structured as concepts, objectives, domains, prerequisite relationships, disciplinary skills, concept clusters, thinking lenses, difficulty levels, representation stages, delivery readiness classification, and per-subject teaching ontologies. Built as the curriculum ontology layer for an adaptive learning platform.
 
 ## What's in the graph
 
@@ -18,19 +18,28 @@ A Neo4j knowledge graph of the England National Curriculum (EYFS through KS4, ag
 | Concepts | 53 | EYFS-to-KS1 prerequisite links included |
 | **Concept Grouping** | | **Derived lesson clusters** |
 | ConceptClusters | 626 | Introduction (167) and practice (459) types |
-| CO_TEACHES | 1,827 rels | Co-teachability signal between concepts |
+| CO_TEACHES | 1,892 rels | Co-teachability signal between concepts |
 | **ThinkingLens** | | **Cross-subject cognitive framing** |
 | ThinkingLens nodes | 10 | Patterns, Cause & Effect, Scale, Systems, etc. |
 | APPLIES_LENS | 1,222 rels | Ranked lens assignments (~2 per cluster) |
-| **Content Vehicles** | | **Choosable teaching packs** |
-| ContentVehicle nodes | ~61 | Topic studies, case studies, investigations, text studies, worked examples |
-| DELIVERS | ~120 rels | Many-to-many: vehicles deliver concepts |
+| PROMPT_FOR | 40 rels | Age-banded prompts (10 lenses x 4 KS) |
+| **DifficultyLevel** | | **Grounded difficulty tiers** |
+| DifficultyLevel nodes | 4,952 | 3-4 levels per concept (entry -> greater_depth / emerging -> mastery) |
+| **RepresentationStage** | | **CPA framework (primary maths)** |
+| RepresentationStage nodes | ~462 | Concrete-Pictorial-Abstract, 3 stages per concept (Y1-Y6) |
+| **Delivery Readiness** | | **AI teachability classification** |
+| DeliveryMode nodes | 4 | AI Direct, AI Facilitated, Guided Materials, Specialist Teacher |
+| TeachingRequirement nodes | 15 | Atomic pedagogical requirements driving classification |
+| DELIVERABLE_VIA | 1,351 rels | Every concept classified (79% AI-addressable) |
+| **Per-Subject Ontology** | | **Typed study/unit nodes (v4.2)** |
+| Study/unit nodes | 326 | HistoryStudy, GeoStudy, ScienceEnquiry, EnglishUnit, etc. |
+| Reference nodes | 255 | GeoPlace, Misconception, Genre, MathsManipulative, etc. |
+| VehicleTemplate nodes | 24 | Pedagogical pattern templates with age-banded prompts |
+| DELIVERS_VIA | 1,076 rels | Many-to-many concept delivery |
 | **Epistemic Skills** | | **Disciplinary skills layer** |
 | Epistemic skills | 105 | Across 6 subject types (Working Scientifically, etc.) |
 | **Assessment** | | **KS2 test framework layer** |
 | Content Domain Codes | 268 | KS2 STA test framework codes (Maths, Reading, GPS) |
-| **Topics** | | **Content layer (humanities)** |
-| Topics | 55 | Curriculum content choices (History, Geography) |
 | **Learner Profiles** | | **Age-appropriate design constraints** |
 | InteractionType | 33 | UI/pedagogical patterns per year group |
 | ContentGuideline | 11 | Reading level, vocabulary constraints per year |
@@ -42,9 +51,9 @@ A Neo4j knowledge graph of the England National Curriculum (EYFS through KS4, ag
 | CASE Documents | 2 | NGSS Science, Common Core Math |
 | CASE Items | 1,783 | Standards with 6-level hierarchy |
 | **Visualization** | | **Neo4j Bloom perspectives** |
-| Bloom perspectives | 5 | With icons, styleRules, and search templates |
+| Bloom perspectives | 6 | With icons, styleRules, and search templates |
 
-**Total: ~5,600+ nodes** in Neo4j Aura cloud database.
+**Total: ~10,675 nodes, ~23,740+ relationships** in Neo4j Aura cloud database.
 
 **Subjects covered (KS1-KS2):** Art & Design, Computing, Design & Technology, English (KS1 + Y3-Y6), Geography, History, Languages, Mathematics (Y1-Y6), Music, Physical Education, Science
 
@@ -54,7 +63,7 @@ A Neo4j knowledge graph of the England National Curriculum (EYFS through KS4, ag
 
 **EYFS (Reception):** Communication & Language, Personal Social & Emotional Development, Physical Development, Literacy, Mathematics, Understanding the World, Expressive Arts & Design
 
-## Graph model (v3.8)
+## Graph model (v4.3)
 
 ### Core curriculum
 ```
@@ -70,16 +79,23 @@ Curriculum
                   |     |     +--[GROUPS]--> Concept
                   |     |     +--[SEQUENCED_AFTER]--> ConceptCluster
                   |     |     +--[APPLIES_LENS {rank, rationale}]--> ThinkingLens
-                  |     +--[HAS_VEHICLE]--> ContentVehicle
-                  |           +--[DELIVERS]--> Concept
-                  |           +--[IMPLEMENTS]--> Topic (optional)
+                  |     +--[HAS_SUGGESTION]--> HistoryStudy / GeoStudy / ScienceEnquiry / ...
+                  |           +--[DELIVERS_VIA {primary}]--> Concept
                   +--[HAS_CONCEPT]--> Concept
                   |                    <--> [PREREQUISITE_OF]
                   |                    <--> [CO_TEACHES]
+                  |                    +--[HAS_DIFFICULTY_LEVEL]--> DifficultyLevel
+                  |                    +--[HAS_REPRESENTATION_STAGE]--> RepresentationStage
+                  |                    +--[DELIVERABLE_VIA {primary, confidence, rationale}]--> DeliveryMode
+                  |                    +--[HAS_TEACHING_REQUIREMENT]--> TeachingRequirement
                   +--[DEVELOPS_SKILL]--> WorkingScientifically / ReadingSkill /
                                          HistoricalThinking / GeographicalSkill /
                                          MathematicalReasoning / ComputationalThinking
                                              <--> [PROGRESSION_OF]
+
+ThinkingLens --[PROMPT_FOR {agent_prompt, question_stems}]--> KeyStage
+VehicleTemplate --[TEMPLATE_FOR {agent_prompt}]--> KeyStage
+TeachingRequirement --[IMPLIES_MINIMUM_MODE]--> DeliveryMode
 ```
 
 ### Learner profiles (linked from Year)
@@ -99,11 +115,6 @@ TestFramework
              +--[ASSESSES]--> Programme
              +--[ASSESSES_DOMAIN]--> Domain
              +--[ASSESSES_SKILL]--> ReadingSkill
-```
-
-### Topic layer
-```
-Topic --[TEACHES]--> Concept
 ```
 
 ### CASE standards layer (US comparison)
@@ -135,38 +146,44 @@ Every subject has two distinct kinds of content: **substantive knowledge** (the 
 
 **ConceptClusters** sit between Domain and Concept. Each cluster groups 1-5 concepts into a teachable lesson unit. Two types: `introduction` (first exposure, ~167) and `practice` (fluency/application, ~459). Clusters chain via `SEQUENCED_AFTER` within each domain.
 
-**ThinkingLens** nodes provide cross-subject cognitive framing. 10 lenses adapted from NGSS Crosscutting Concepts + UK-specific frames: Patterns, Cause & Effect, Scale/Proportion/Quantity, Systems & System Models, Energy & Matter, Structure & Function, Stability & Change, Continuity & Change, Perspective & Interpretation, Evidence & Argument. Each lens has a `key_question` and `agent_prompt` for direct LLM instruction.
+**ThinkingLens** nodes provide cross-subject cognitive framing. 10 lenses adapted from NGSS Crosscutting Concepts + UK-specific frames: Patterns, Cause & Effect, Scale/Proportion/Quantity, Systems & System Models, Energy & Matter, Structure & Function, Stability & Change, Continuity & Change, Perspective & Interpretation, Evidence & Argument. Each lens has a `key_question` and `agent_prompt` for direct LLM instruction. Age-banded prompts via `PROMPT_FOR` relationships to KeyStage.
 
 Every cluster has 1-3 `APPLIES_LENS` relationships with `rank` (1 = primary) and `rationale` explaining why that lens fits that specific cluster.
 
-### Content vehicles
+### Per-subject ontology (v4.2)
 
-**ContentVehicle** nodes are choosable teaching packs that deliver curriculum concepts with rich metadata. Vehicle types:
-- **topic_study** (History) -- sources, key figures, perspectives, period
-- **case_study** (Geography) -- location, data points, themes, contrasting cases
-- **investigation** (Science) -- enquiry type, variables, equipment, safety
-- **text_study** (English) -- genre, suggested texts, grammar focus, writing outcome
-- **worked_example_set** (Maths) -- CPA stage, manipulatives, representations, difficulty levels
+Typed study/unit nodes deliver curriculum concepts with rich, subject-specific metadata. Each subject has its own node label and property schema:
 
-Many-to-many: one vehicle delivers multiple concepts, one concept can be delivered by multiple vehicles. This enables teacher choice.
+- **HistoryStudy** -- sources, key figures, perspectives, chronological sequencing
+- **GeoStudy** -- places, contrasting localities, data points, fieldwork
+- **ScienceEnquiry** -- enquiry type, variables, equipment, misconceptions
+- **EnglishUnit** -- genre, set texts, grammar focus, writing outcome
+- **ArtTopicSuggestion / MusicTopicSuggestion / DTTopicSuggestion / ComputingTopicSuggestion** -- foundation subjects
+- **TopicSuggestion** -- generic (RE, Citizenship, etc.)
+
+Many-to-many via `DELIVERS_VIA`: one study delivers multiple concepts, one concept can be delivered by multiple studies. **VehicleTemplate** nodes provide 24 reusable pedagogical patterns with age-banded `agent_prompt` per KeyStage.
+
+### Difficulty levels and representation stages
+
+**DifficultyLevel** nodes provide grounded difficulty tiers per concept. Primary uses entry/developing/expected/greater_depth (4 levels); secondary uses emerging/developing/secure/mastery (4 levels); EYFS uses 3 levels. Each node has `description`, `example_task`, `example_response`, `common_errors`.
+
+**RepresentationStage** nodes model the CPA (Concrete-Pictorial-Abstract) progression for primary maths (Y1-Y6). Each node has `description`, `resources`, `example_activity`, and `transition_cue` describing observable readiness behaviour.
+
+### Delivery readiness
+
+Every concept is classified by what combination of AI, human facilitation, and specialist expertise is needed to teach it. 4 delivery modes: AI Direct (59.5%), AI Facilitated (19.5%), Guided Materials (10.4%), Specialist Teacher (10.7%). **79% of concepts are AI-addressable** (AI Direct + AI Facilitated).
 
 ### Node properties (key fields)
 
 **Concept**
 - `concept_id`, `concept_name`, `concept_type` (`knowledge` | `skill` | `process` | `attitude` | `content`)
-- `complexity_level` (1-5 within key stage)
-- `teaching_weight` (1-6), `co_teach_hints`, `is_keystone`, `prerequisite_fan_out`
-- `description`, `source_reference`
+- `teaching_weight` (1-6), `is_keystone`, `prerequisite_fan_out`
+- `description`, `teaching_guidance`, `common_misconceptions`, `key_vocabulary`
 
 **ConceptCluster**
 - `cluster_id`, `name`, `cluster_type` (`introduction` | `practice`)
 - `is_keystone`, `teaching_weight`, `thinking_lens_primary`
 - `teaching_guidance`, `common_misconceptions`
-
-**ContentVehicle**
-- `vehicle_id`, `name`, `vehicle_type`, `subject`, `key_stage`
-- `definitions`, `assessment_guidance`, `success_criteria`
-- Subject-specific: `sources`, `perspectives` (History), `enquiry_type`, `equipment` (Science), etc.
 
 **Objective**
 - `objective_id`, `objective_text`, `is_statutory` (boolean)
@@ -231,8 +248,6 @@ All curriculum content extracted from official DfE documents:
 - [EYFS Statutory Framework](https://www.gov.uk/government/publications/early-years-foundation-stage-framework--2)
 - [Development Matters](https://www.gov.uk/government/publications/development-matters--2)
 
-Source PDFs are in `data/curriculum-documents/`. Provenance for test framework data is documented in `data/extractions/test-frameworks/PROVENANCE.md`.
-
 ### US Academic Standards (CASE layer)
 CASE (IMS Global Competencies and Academic Standards Exchange) packages from:
 
@@ -240,13 +255,11 @@ CASE (IMS Global Competencies and Academic Standards Exchange) packages from:
 - NGSS: Next Generation Science Standards (Achieve Inc, 2013)
 - Common Core State Standards for Mathematics (CCSSO, 2010)
 
-Fetched packages cached in `data/extractions/case/packages/`. Research notes on framework comparisons in `docs/research/case-standards/`.
-
 ## Prerequisites
 
 - Python 3.10+
 - Neo4j 5.x (local or cloud -- Neo4j Aura Free works perfectly)
-- `neo4j` Python driver: `pip install neo4j`
+- Python dependencies: `pip install -r requirements.txt`
 
 ## Setup and import
 
@@ -260,95 +273,28 @@ export NEO4J_USERNAME="neo4j"
 export NEO4J_PASSWORD="your-password-here"
 ```
 
-### 2. Create schema constraints and indexes
+### 2. Create schema and import all layers
 
 ```bash
 python3 core/scripts/create_schema.py
+python3 core/scripts/import_all.py
 ```
 
-### 3. Import all layers (dependency order)
+The orchestrator (`import_all.py`) handles dependency order automatically. Use `--skip-case` or `--skip-oak` to exclude optional layers. See `CLAUDE.md` for the full manual import sequence.
 
-```bash
-# 1. UK Curriculum (foundation -- must be first)
-python3 layers/uk-curriculum/scripts/import_curriculum.py
-
-# 2. EYFS (extends curriculum to Reception year)
-python3 layers/eyfs/scripts/import_eyfs.py
-
-# 3. Concept grouping signals (enriches Concept nodes)
-python3 core/migrations/compute_lesson_grouping_signals.py
-
-# 4. ThinkingLens nodes (must exist before cluster generation)
-python3 layers/uk-curriculum/scripts/import_thinking_lenses.py
-
-# 5. Concept clusters (derived from graph topology + thinking lenses)
-python3 layers/uk-curriculum/scripts/generate_concept_clusters.py
-
-# 6. Cross-domain CO_TEACHES relationships
-python3 core/migrations/create_cross_domain_co_teaches.py
-
-# 7. Assessment (optional, depends on UK curriculum)
-python3 layers/assessment/scripts/import_test_frameworks.py
-
-# 8. Epistemic Skills (optional, depends on UK curriculum)
-python3 layers/epistemic-skills/scripts/import_epistemic_skills.py
-
-# 9. Concept-level skill links (run after epistemic skills)
-python3 core/migrations/create_concept_skill_links.py
-
-# 10. Topics (optional, depends on UK curriculum)
-python3 layers/topics/scripts/import_topics.py
-
-# 11. Content Vehicles (optional, depends on UK curriculum + Topics)
-python3 layers/content-vehicles/scripts/import_content_vehicles.py
-
-# 12. CASE Standards (optional, independent)
-python3 layers/case-standards/scripts/import_case_standards_v2.py --import
-
-# 13. Learner Profiles (optional, depends on UK curriculum Year nodes)
-python3 layers/learner-profiles/scripts/import_learner_profiles.py
-
-# 14. Visualization properties (recommended, run last)
-python3 layers/visualization/scripts/apply_formatting.py
-```
-
-### 4. Validate the graph
+### 3. Validate the graph
 
 ```bash
 python3 core/scripts/validate_schema.py
 ```
 
-All checks should PASS before using the graph.
+### 4. Generate teacher planners (optional)
 
-## Simulated teacher reviews
+```bash
+python3 scripts/generate_all_planners.py --all
+```
 
-The `generated/` directory contains outputs from simulated teacher evaluations -- AI agents given teacher personas who assess whether the graph contains enough structured information to generate course materials (lesson plans, teaching sequences, assessment).
-
-| Directory | Graph version | What was tested |
-|---|---|---|
-| `generated/teachers/` | v3 | Initial 5-subject probe (Y1 English, Y3 Maths, Y5 Science, Y7 Maths, Y9 Science) |
-| `generated/teachers-v2/` | v3 | Same 5 subjects, improved query helper |
-| `generated/teachers-v3/` | v4 | 5 teachers (Y2 Maths, Y4 English, Y5 Science, KS3 Biology, KS3 Geography) |
-| `generated/teachers-v4/` | v5 | Same 5 teachers, with Content Vehicles and ThinkingLens |
-| `generated/teachers-v5/` | v6 | Full curriculum: Y3 (all subjects), Y4 (all subjects), Y5 (all subjects) |
-
-**Latest scores (v6):** 5.2/10 for course material generation, ~8.5/10 as a curriculum map. The gap is in rich teaching metadata -- the graph captures WHAT to teach but needs more structured data on worked examples, difficulty levels, and assessment items to fully support material generation. See `generated/teachers-v5/v6_group_report.md` for the full synthesis and 7 prioritised schema proposals.
-
-## Layer documentation
-
-Each layer has its own detailed README:
-- `layers/uk-curriculum/README.md` -- UK National Curriculum foundation
-- `layers/eyfs/README.md` -- Early Years Foundation Stage (Reception)
-- `layers/assessment/README.md` -- KS2 test frameworks
-- `layers/epistemic-skills/README.md` -- Disciplinary thinking skills
-- `layers/topics/README.md` -- Curriculum content choices (History, Geography)
-- `layers/content-vehicles/README.md` -- Teaching packs (Content Vehicles)
-- `layers/learner-profiles/README.md` -- Age-appropriate design layer + agent query patterns
-- `layers/case-standards/README.md` -- US/international standards comparison
-- `layers/visualization/README.md` -- Neo4j Bloom perspectives
-- `layers/oak-content/README.md` -- Oak National Academy content (skeleton)
-
-**Quick reference**: See `CLAUDE.md` for a complete guide to the project structure and common tasks.
+Generates markdown, PPTX, and DOCX planners for all study nodes. See `justfile` for convenience recipes (`just generate`, `just generate-md`, etc.).
 
 ## Example queries
 
@@ -369,7 +315,7 @@ WHERE already.concept_id IN mastered
 RETURN candidate.concept_name, candidate.key_stage
 ```
 
-**Lesson sequence for a domain (concept clusters)**
+**Lesson sequence for a domain (concept clusters + thinking lenses)**
 ```cypher
 MATCH (d:Domain {domain_id: 'MA-Y3-D001'})-[:HAS_CLUSTER]->(cc:ConceptCluster)
 OPTIONAL MATCH (cc)-[:SEQUENCED_AFTER]->(prev:ConceptCluster)
@@ -378,10 +324,26 @@ RETURN cc.name, cc.cluster_type, prev.name AS after, lens.name AS thinking_lens
 ORDER BY cc.cluster_id
 ```
 
-**Content vehicles for a concept**
+**Study nodes for a domain (per-subject ontology)**
 ```cypher
-MATCH (cv:ContentVehicle)-[:DELIVERS]->(c:Concept {concept_id: 'HI-KS2-C001'})
-RETURN cv.name, cv.vehicle_type, cv.assessment_guidance, cv.definitions
+MATCH (d:Domain {domain_id: 'HI-KS2-D001'})-[:HAS_SUGGESTION]->(s:HistoryStudy)
+OPTIONAL MATCH (s)-[:DELIVERS_VIA]->(c:Concept)
+RETURN s.name, s.period, s.key_question, collect(c.concept_name) AS concepts
+```
+
+**Difficulty levels for a concept**
+```cypher
+MATCH (c:Concept {concept_id: 'MA-Y3-C014'})-[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
+RETURN dl.label, dl.description, dl.example_task, dl.example_response
+ORDER BY dl.level_number
+```
+
+**Delivery mode classification for a subject**
+```cypher
+MATCH (p:Programme {programme_id: 'PROG-Mathematics-Y3'})-[:HAS_DOMAIN]->(d:Domain)
+      -[:HAS_CONCEPT]->(c:Concept)-[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
+RETURN dm.name, count(c) AS concept_count
+ORDER BY concept_count DESC
 ```
 
 **Age-appropriate interaction types for Year 3**
@@ -392,149 +354,59 @@ MATCH (y)-[:HAS_PEDAGOGY_PROFILE]->(pp:PedagogyProfile)
 RETURN it.name, it.agent_prompt, cg.reading_level, pp.session_structure
 ```
 
-**Disciplinary skills a programme develops**
-```cypher
-MATCH (p:Programme {programme_id: 'PROG-Science-KS2'})-[:DEVELOPS_SKILL]->(s:WorkingScientifically)
-RETURN s.skill_name, s.strand, s.complexity_level
-ORDER BY s.complexity_level
-```
-
-**Cross-subject prerequisite chains (KS1 -> KS3)**
-```cypher
-MATCH path = (start:Concept)-[:PREREQUISITE_OF*]->(end:Concept)
-WHERE start.key_stage = 'KS1' AND end.key_stage = 'KS3'
-RETURN path
-ORDER BY length(path) DESC
-LIMIT 5
-```
-
-**Compare NGSS Practices vs UK Working Scientifically**
-```cypher
-// NGSS Practices
-MATCH (p:Practice)
-RETURN p.practice_name AS ngss_practice
-// vs UK Working Scientifically
-MATCH (ws:WorkingScientifically {key_stage: 'KS3'})
-RETURN ws.skill_name AS uk_skill
-```
-
 More CASE comparison queries in `layers/case-standards/docs/CASE_GRAPH_MODEL_v3.5.md`.
 
 ## Repository layout
 
-The project is organized into **layers** -- each layer is a self-contained module with its own import scripts, data extractions, and documentation. Layers can be imported independently or removed cleanly.
+The project is organized into **layers** -- each layer is a self-contained module with its own import scripts, data, and documentation.
 
 ```
 layers/                          Layer-based organization
   uk-curriculum/                 Foundation layer: UK National Curriculum (KS1-KS4)
-    scripts/
-      import_curriculum.py
-      import_thinking_lenses.py
-      generate_concept_clusters.py
-      enrich_grouping_signals.py
-      validate_cluster_definitions.py
+    scripts/                     Import, enrichment, generation, and validation scripts
     data/
       extractions/primary/       KS1-KS2 JSONs (26 files)
       extractions/secondary/     KS3-KS4 JSONs (29 files)
       cluster_definitions/       ConceptCluster JSON definitions per subject
-      thinking_lenses/           ThinkingLens definitions
+      thinking_lenses/           ThinkingLens + age-banded prompt definitions
+      difficulty_levels/         DifficultyLevel JSONs (148 files, per domain)
+      representation_stages/     RepresentationStage JSONs (12 files, primary maths)
+      delivery_modes/            DeliveryMode classification JSONs (62 files)
       cross_domain_links/        Cross-domain CO_TEACHES curations
       concept_skill_links/       Concept-level DEVELOPS_SKILL curations
-    README.md
 
   eyfs/                          Early Years Foundation Stage (Reception)
-    scripts/import_eyfs.py
-    data/extractions/            7 area-of-learning JSONs
-    research/                    EYFS statutory framework reference
-    README.md
-
-  assessment/                    Test Frameworks layer
-    scripts/import_test_frameworks.py
-    data/extractions/test-frameworks/
-    README.md
-
-  epistemic-skills/              Disciplinary skills layer
-    scripts/import_epistemic_skills.py
-    data/extractions/epistemic-skills/
-    README.md
-
-  topics/                        Topic layer (History, Geography)
-    scripts/import_topics.py
-    data/extractions/topics/
-    README.md
-
-  content-vehicles/              Teaching packs (Content Vehicles)
-    scripts/import_content_vehicles.py
-    data/                        Curated JSON files per subject/KS
-    README.md
-
+  assessment/                    KS2 Test Frameworks
+  epistemic-skills/              Disciplinary skills (6 subject types)
+  topic-suggestions/             Per-subject ontology: typed study nodes + vehicle templates
   learner-profiles/              Age-appropriate design constraints
-    scripts/import_learner_profiles.py
-    data/                        InteractionType, Guideline, Profile JSONs
-    README.md
-
-  case-standards/                US/International standards comparison
-    scripts/import_case_standards_v2.py
-    data/extractions/case/
-      packages/                  Cached CASE packages
-      mappings/                  Cross-layer alignments
-    docs/CASE_GRAPH_MODEL_v3.5.md
-    README.md
-
-  oak-content/                   Oak National Academy content (skeleton)
-    scripts/import_oak_content.py
-    README.md
-
+  case-standards/                US/International standards comparison (NGSS, Common Core)
   visualization/                 Neo4j Bloom perspectives
-    scripts/apply_formatting.py
-    data/bloom/                  Perspective JSON files
-    README.md
+  oak-content/                   Oak National Academy content (skeleton)
 
 core/                            Shared infrastructure
-  scripts/
-    neo4j_config.py              Shared Neo4j configuration
-    create_schema.py             Schema constraints/indexes
-    validate_schema.py           Graph integrity checks
-    validate_extractions.py      JSON validation
-    import_all.py                Import orchestrator
-  migrations/
-    compute_lesson_grouping_signals.py   Enrichment: teaching_weight, CO_TEACHES
-    create_cross_domain_co_teaches.py    Cross-domain CO_TEACHES from curated JSONs
-    create_concept_skill_links.py        Concept-level DEVELOPS_SKILL links
-  compliance/
-    DATA_CLASSIFICATION.md       What data can/cannot be collected
-    CONSENT_RULES.md             Consent requirements per purpose
-    DPIA.md                      Data Protection Impact Assessment
-  docs/
-    graph_model_overview.md      Graph model documentation
+  scripts/                       Schema, validation, config, import orchestrator
+  migrations/                    Rerunnable enrichment scripts
+  compliance/                    Data classification, consent rules, DPIA
 
-generated/                       Simulated teacher evaluations
-  teachers/                      Query helpers + v1 context/lesson outputs
-    graph_query_helper.py        Generates curriculum context from Neo4j
-    query_cluster_context.py     Generates cluster-level teaching context
-  teachers-v2/                   v3 graph: 5 subjects
-  teachers-v3/                   v4 graph: 5 teachers, v4_group_report.md
-  teachers-v4/                   v5 graph: 5 teachers, v5_group_report.md
-  teachers-v5/                   v6 graph: Y3-Y5 full curriculum, v6_group_report.md
-
+scripts/                         Output generation (teacher planners)
+generated/                       Generated output (teacher-planners/, teacher reviews)
 docs/                            Research and documentation
-  README.md                      Navigation guide
-  design/                        Product thinking and design rationale
-  analysis/                      Curriculum analysis and extraction reports
-  archive/                       Stale/superseded docs preserved for history
-  user-stories/
-    child-experience/            Child-facing experience narratives
-    technical/                   Numbered system behaviour specs
-  research/
-    SOURCES.md                   Annotated bibliography (18 sources)
-    learning-science/            16 papers: KT, motivation, pedagogy, ITS
-    interoperability/            CASE spec, xAPI standard
-    case-standards/              US comparative standards research
-    content-sources/             UK content provider research
-    privacy-compliance/          Regulatory research audit trail
-
-CLAUDE.md                        AI agent navigation guide
 ```
+
+## Layer documentation
+
+Each layer has its own detailed README:
+- `layers/uk-curriculum/README.md` -- UK National Curriculum foundation
+- `layers/eyfs/README.md` -- Early Years Foundation Stage (Reception)
+- `layers/assessment/README.md` -- KS2 test frameworks
+- `layers/epistemic-skills/README.md` -- Disciplinary thinking skills
+- `layers/topic-suggestions/README.md` -- Per-subject ontology (typed study nodes + vehicle templates)
+- `layers/learner-profiles/README.md` -- Age-appropriate design layer + agent query patterns
+- `layers/case-standards/README.md` -- US/international standards comparison
+- `layers/visualization/README.md` -- Neo4j Bloom perspectives
+
+**Quick reference**: See `CLAUDE.md` for the complete guide to project architecture, import pipeline, and common tasks.
 
 ## Privacy & compliance
 
@@ -547,5 +419,3 @@ Key compliance documents:
 - `docs/design/CHILD_PROFILE_CONSENT.md` -- full legal and ethical analysis
 
 See `CLAUDE.md` for full privacy rules and prohibited design patterns.
-
-**NEW**: See `CLAUDE.md` for the complete guide to navigating this project, including common tasks, troubleshooting, and layer architecture.
