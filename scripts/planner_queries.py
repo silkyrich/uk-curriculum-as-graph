@@ -525,7 +525,7 @@ def query_source_documents(session, key_stage: str, subject: str = '',
             MATCH (d:Domain)<-[:HAS_DOMAIN]-(p:Programme)-[:SOURCED_FROM]->(sd:SourceDocument)
             WHERE d.domain_id IN $dids
             RETURN properties(sd) AS props, count(DISTINCT d) AS hits
-            ORDER BY hits DESC, sd.name
+            ORDER BY hits DESC, props.name
         """
         records = session.run(query, dids=domain_ids).data()
         if records:
@@ -536,7 +536,7 @@ def query_source_documents(session, key_stage: str, subject: str = '',
             MATCH (c:Concept)-[:SOURCED_FROM]->(sd:SourceDocument)
             WHERE c.concept_id IN $cids
             RETURN properties(sd) AS props, count(DISTINCT c) AS hits
-            ORDER BY hits DESC, sd.name
+            ORDER BY hits DESC, props.name
         """
         records = session.run(query, cids=concept_ids).data()
         if records:
