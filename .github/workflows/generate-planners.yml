@@ -1,0 +1,148 @@
+name: Generate Teacher Planners
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'generated/scripts/**'
+      - 'layers/**/data/**'
+      - 'core/scripts/**'
+  pull_request:
+    paths:
+      - 'generated/scripts/**'
+      - 'layers/**/data/**'
+      - 'core/scripts/**'
+  workflow_dispatch:
+    inputs:
+      subject:
+        description: 'Filter by subject (e.g. history, science). Leave empty for all.'
+        required: false
+        default: ''
+
+# Cancel in-progress runs for the same branch
+concurrency:
+  group: planners-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── Lightweight check — runs on PRs and pushes ──────────────────────
+  validate-scripts:
+    name: Validate planner scripts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check Python syntax
+        run: |
+          python3 -m py_compile generated/scripts/generate_all_planners.py
+          python3 -m py_compile generated/scripts/planner_queries.py
+          python3 -m py_compile generated/scripts/render_markdown.py
+          python3 -m py_compile generated/scripts/render_pptx.py
+          python3 -m py_compile generated/scripts/render_docx.py
+          python3 -m py_compile core/scripts/import_all.py
+          python3 -m py_compile core/scripts/create_schema.py
+
+  # ── Full pipeline — build graph, generate binaries, release ─────────
+  build-and-generate:
+    name: Build graph & generate planners
+    needs: validate-scripts
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    services:
+      neo4j:
+        image: neo4j:5-community
+        env:
+          NEO4J_AUTH: neo4j/cipassword
+          NEO4J_PLUGINS: '[]'
+        ports:
+          - 7474:7474
+          - 7687:7687
+        options: >-
+          --health-cmd "wget --no-verbose --tries=1 --spider http://localhost:7474 || exit 1"
+          --health-interval 10s
+          --health-timeout 10s
+          --health-retries 20
+          --health-start-period 30s
+
+    env:
+      NEO4J_URI: neo4j://localhost:7687
+      NEO4J_USERNAME: neo4j
+      NEO4J_PASSWORD: cipassword
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Verify Neo4j is ready
+        run: |
+          python3 -c "
+          from neo4j import GraphDatabase
+          driver = GraphDatabase.driver('neo4j://localhost:7687', auth=('neo4j', 'cipassword'))
+          driver.verify_connectivity()
+          print('Neo4j connection verified')
+          driver.close()
+          "
+
+      - name: Create schema
+        run: python3 core/scripts/create_schema.py
+
+      - name: Import all layers
+        run: python3 core/scripts/import_all.py --skip-oak --skip-case < /dev/null
+
+      - name: Validate schema
+        run: python3 core/scripts/validate_schema.py
+
+      - name: Dry run — verify all study nodes resolve
+        run: python3 generated/scripts/generate_all_planners.py --all --dry-run
+
+      - name: Generate PPTX + DOCX planners
+        run: |
+          if [ -n "${{ github.event.inputs.subject }}" ]; then
+            python3 generated/scripts/generate_all_planners.py \
+              --subject "${{ github.event.inputs.subject }}" \
+              --format pptx,docx
+          else
+            python3 generated/scripts/generate_all_planners.py \
+              --all --format pptx,docx
+          fi
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Zip generated planners
+        run: |
+          cd generated/teacher-planners
+          zip -r "../../teacher-planners-${{ steps.date.outputs.date }}.zip" . \
+            -i '*.pptx' '*.docx'
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: planners-v${{ steps.date.outputs.date }}
+          name: Teacher Planners ${{ steps.date.outputs.date }}
+          body: |
+            Auto-generated teacher planners (PPTX + DOCX) from the knowledge graph.
+
+            Built from a fresh Neo4j instance — fully reproducible from repo data.
+
+            **Trigger:** ${{ github.event_name }}
+            **Commit:** ${{ github.sha }}
+            ${{ github.event.inputs.subject && format('**Subject filter:** {0}', github.event.inputs.subject) || '**Scope:** All subjects' }}
+          files: teacher-planners-${{ steps.date.outputs.date }}.zip
+          make_latest: true
