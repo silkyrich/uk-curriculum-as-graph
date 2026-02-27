@@ -63,10 +63,25 @@ LAYERS = {
         "script": PROJECT_ROOT / "core" / "migrations" / "create_cross_domain_co_teaches.py",
         "depends_on": ["uk-curriculum", "enrichment"],
     },
+    "representation-stages": {
+        "name": "Representation Stages (CPA Framework)",
+        "script": PROJECT_ROOT / "layers" / "uk-curriculum" / "scripts" / "import_representation_stages.py",
+        "depends_on": ["uk-curriculum"],
+    },
     "concept-skill-links": {
         "name": "Concept-Level Skill Links (migration)",
         "script": PROJECT_ROOT / "core" / "migrations" / "create_concept_skill_links.py",
         "depends_on": ["uk-curriculum", "epistemic-skills"],
+    },
+    "delivery-modes-classify": {
+        "name": "Delivery Mode Classification (rule-based)",
+        "script": PROJECT_ROOT / "layers" / "uk-curriculum" / "scripts" / "classify_delivery_modes.py",
+        "depends_on": ["uk-curriculum", "enrichment", "representation-stages", "concept-skill-links", "thinking-lenses"],
+    },
+    "delivery-modes-import": {
+        "name": "Delivery Mode Import",
+        "script": PROJECT_ROOT / "layers" / "uk-curriculum" / "scripts" / "import_delivery_modes.py",
+        "depends_on": ["uk-curriculum", "delivery-modes-classify"],
     },
     "vehicle-templates": {
         "name": "Vehicle Templates (pedagogical patterns)",
