@@ -1,0 +1,46 @@
+[
+  {
+    "mode_id": "DM-AI",
+    "name": "AI Direct",
+    "short_name": "ai_direct",
+    "description": "AI or software teaches this concept end-to-end via interactive sessions. The concept has objectively assessable outcomes, well-structured interaction patterns, or factual content that can be presented, practised, and verified without human intervention.",
+    "agent_prompt": "You are the primary instructor for this concept. Deliver the full teaching sequence: activate prior knowledge, present new material using appropriate representations, guide practice with immediate feedback, and assess understanding. You can handle the complete learning cycle independently.",
+    "typical_subjects": ["Mathematics (abstract stage)", "Computing", "Grammar/Spelling", "Science knowledge", "Geography knowledge"],
+    "human_role": "None required during instruction. Parent/carer may observe or assist with login/setup.",
+    "platform_capability": "Full lesson delivery, adaptive practice, formative assessment, misconception diagnosis",
+    "display_order": 1
+  },
+  {
+    "mode_id": "DM-AF",
+    "name": "AI Facilitated",
+    "short_name": "ai_facilitated",
+    "description": "AI delivers the core instructional sequence, but a non-specialist adult facilitates specific moments: setting up physical materials, observing a physical task, mediating a brief discussion, or confirming a hands-on outcome the AI cannot directly assess.",
+    "agent_prompt": "You deliver the main instructional sequence for this concept. At specific points, you will pause and instruct the facilitating adult on what to set up, observe, or confirm. Provide clear, jargon-free instructions for the adult. Resume instruction once the physical or social step is complete.",
+    "typical_subjects": ["Mathematics (concrete/pictorial stages)", "Science (classifying, data skills)", "Languages (speaking practice)", "Music (composition with digital tools)"],
+    "human_role": "Facilitator: sets up physical materials, observes physical tasks, confirms hands-on outcomes. Does not need subject expertise.",
+    "platform_capability": "Lesson delivery with structured pause points and facilitator instructions",
+    "display_order": 2
+  },
+  {
+    "mode_id": "DM-GM",
+    "name": "Guided Materials",
+    "short_name": "guided_materials",
+    "description": "Well-designed materials enable a non-qualified adult (parent, teaching assistant, home educator) to teach this concept. The human is essential throughout — guiding discussion, reading sources together, facilitating creative tasks — but the expertise is encoded in the materials rather than requiring teacher training.",
+    "agent_prompt": "You are a lesson preparation and support assistant. Generate comprehensive teaching materials: lesson plans with timing, discussion questions with model answers, differentiated activities, and assessment criteria. The materials must be self-contained — a non-specialist adult should be able to follow them without additional subject knowledge.",
+    "typical_subjects": ["History (source analysis)", "English (composition, inference)", "RE/Citizenship (ethical reasoning)", "Science (enquiry planning)", "Geography (interpretation)"],
+    "human_role": "Active teacher using provided materials: leads discussion, reads sources aloud, facilitates activities, provides feedback using rubrics. Must be present and engaged throughout.",
+    "platform_capability": "Material generation, lesson planning, assessment rubric creation, parent/facilitator guides",
+    "display_order": 3
+  },
+  {
+    "mode_id": "DM-ST",
+    "name": "Specialist Teacher",
+    "short_name": "specialist_teacher",
+    "description": "Requires a teacher with subject expertise for real-time pedagogical judgement. The concept demands live assessment of nuanced responses (creative writing quality, physical technique), specialist knowledge to handle unpredictable questions, management of sensitive discussion, or demonstration of embodied skills that cannot be scripted.",
+    "agent_prompt": "You are a teacher planning and subject knowledge assistant. Help the specialist teacher prepare: provide subject background, suggest lesson structures, generate differentiated resources, and offer assessment frameworks. You support the teacher's expertise rather than replacing it.",
+    "typical_subjects": ["PE", "Art (making skills)", "Music (performance)", "DT (making)", "English (spoken language)", "Drama"],
+    "human_role": "Qualified teacher: demonstrates techniques, assesses creative/physical work in real-time, manages sensitive discussion, provides expert subject knowledge.",
+    "platform_capability": "Teacher preparation support, resource generation, subject knowledge briefings, assessment framework suggestions",
+    "display_order": 4
+  }
+]
