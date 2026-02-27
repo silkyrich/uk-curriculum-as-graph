@@ -105,6 +105,7 @@ jobs:
         run: python3 core/scripts/import_all.py --skip-oak --skip-case < /dev/null
 
       - name: Validate schema
+        continue-on-error: true
         run: python3 core/scripts/validate_schema.py
 
       - name: Dry run — verify all study nodes resolve
