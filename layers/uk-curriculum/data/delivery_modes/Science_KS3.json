@@ -1,0 +1,2734 @@
+[
+  {
+    "concept_id": "SC-KS3-C001",
+    "primary_mode": "specialist_teacher",
+    "primary_mode_id": "DM-ST",
+    "confidence": "medium",
+    "rationale": "Attitude concept (Objectivity in science) \u2014 attitudes require human modelling, relationship, and pastoral awareness.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-PAS",
+      "TR-MOD"
+    ],
+    "notes": "Some attitudes (e.g. scientific curiosity) could be supported via AI-guided inquiry, but human modelling is primary."
+  },
+  {
+    "concept_id": "SC-KS3-C002",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science skill involving measurement/practical work \u2014 AI structures, facilitator supervises.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-OBS",
+      "TR-APP",
+      "TR-DIG"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C003",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science process concept \u2014 enquiry methodology benefits from structured AI guidance with facilitator.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-OBS",
+      "TR-APP"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C004",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C005",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science process concept \u2014 enquiry methodology benefits from structured AI guidance with facilitator.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-OBS",
+      "TR-APP"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C006",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science skill involving measurement/practical work \u2014 AI structures, facilitator supervises.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-OBS",
+      "TR-APP",
+      "TR-DIG"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C007",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C008",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C009",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C010",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C011",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science concept with significant practical requirements \u2014 AI delivers theory, facilitator manages practical.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C012",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science skill involving measurement/practical work \u2014 AI structures, facilitator supervises.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-OBS",
+      "TR-APP",
+      "TR-DIG"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C013",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C014",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C015",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C016",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science concept with significant practical requirements \u2014 AI delivers theory, facilitator manages practical.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C017",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C018",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C019",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C020",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C021",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C022",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C023",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C024",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C025",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C026",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C027",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science skill involving measurement/practical work \u2014 AI structures, facilitator supervises.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-OBS",
+      "TR-APP",
+      "TR-DIG"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C028",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C029",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C030",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C031",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C032",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C033",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C034",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C035",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C036",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C037",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C038",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C039",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C040",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "high",
+    "rationale": "Science fair test concept \u2014 requires physical apparatus and variable control, but AI can structure the enquiry sequence.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-OBJ"
+    ],
+    "notes": "AI guides the enquiry cycle; facilitator manages equipment and safety."
+  },
+  {
+    "concept_id": "SC-KS3-C041",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C042",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C043",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C044",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C045",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C046",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C047",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C048",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C049",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C050",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C051",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C052",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C053",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C054",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C055",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C056",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C057",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C058",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C059",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C060",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C061",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C062",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C063",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Science secondary_research concept \u2014 data-driven activity well-suited to digital delivery.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C064",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C065",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C066",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C067",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C068",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C069",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C070",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C071",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science observation concept \u2014 requires sustained observation of real phenomena with adult support.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-OBS",
+      "TR-APP"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C072",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C073",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C074",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C075",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "high",
+    "rationale": "Science fair test concept \u2014 requires physical apparatus and variable control, but AI can structure the enquiry sequence.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-OBJ"
+    ],
+    "notes": "AI guides the enquiry cycle; facilitator manages equipment and safety."
+  },
+  {
+    "concept_id": "SC-KS3-C076",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C077",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C078",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "high",
+    "rationale": "Science fair test concept \u2014 requires physical apparatus and variable control, but AI can structure the enquiry sequence.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-OBJ"
+    ],
+    "notes": "AI guides the enquiry cycle; facilitator manages equipment and safety."
+  },
+  {
+    "concept_id": "SC-KS3-C079",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science skill involving measurement/practical work \u2014 AI structures, facilitator supervises.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-OBS",
+      "TR-APP",
+      "TR-DIG"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C080",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C081",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C082",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C083",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C084",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "high",
+    "rationale": "Science fair test concept \u2014 requires physical apparatus and variable control, but AI can structure the enquiry sequence.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-OBJ"
+    ],
+    "notes": "AI guides the enquiry cycle; facilitator manages equipment and safety."
+  },
+  {
+    "concept_id": "SC-KS3-C085",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C086",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C087",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C088",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "high",
+    "rationale": "Science fair test concept \u2014 requires physical apparatus and variable control, but AI can structure the enquiry sequence.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-OBJ"
+    ],
+    "notes": "AI guides the enquiry cycle; facilitator manages equipment and safety."
+  },
+  {
+    "concept_id": "SC-KS3-C089",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C090",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C091",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C092",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Science secondary_research concept \u2014 data-driven activity well-suited to digital delivery.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C093",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C094",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C095",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C096",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C097",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C098",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C099",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science concept with significant practical requirements \u2014 AI delivers theory, facilitator manages practical.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C100",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C101",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C102",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C103",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C104",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C105",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C106",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Science secondary_research concept \u2014 data-driven activity well-suited to digital delivery.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C107",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C108",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C109",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C110",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C111",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C112",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C113",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C114",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C115",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C116",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C117",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C118",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C119",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science skill involving measurement/practical work \u2014 AI structures, facilitator supervises.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-OBS",
+      "TR-APP",
+      "TR-DIG"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C120",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C121",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "high",
+    "rationale": "Science fair test concept \u2014 requires physical apparatus and variable control, but AI can structure the enquiry sequence.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-OBJ"
+    ],
+    "notes": "AI guides the enquiry cycle; facilitator manages equipment and safety."
+  },
+  {
+    "concept_id": "SC-KS3-C122",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C123",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C124",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C125",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C126",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C127",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "high",
+    "rationale": "Science fair test concept \u2014 requires physical apparatus and variable control, but AI can structure the enquiry sequence.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-OBJ"
+    ],
+    "notes": "AI guides the enquiry cycle; facilitator manages equipment and safety."
+  },
+  {
+    "concept_id": "SC-KS3-C128",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C129",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C130",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C131",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C132",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C133",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C134",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C135",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C136",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C137",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C138",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C139",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C140",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C141",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C142",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C143",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C144",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "medium",
+    "rationale": "Science data/analysis skill \u2014 graph interpretation and data handling are digitally deliverable.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-DIG",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C145",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C146",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C147",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C148",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science concept with significant practical requirements \u2014 AI delivers theory, facilitator manages practical.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C149",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C150",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C151",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C152",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C153",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C154",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C155",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C156",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C157",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C158",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C159",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C160",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C161",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C162",
+    "primary_mode": "ai_facilitated",
+    "primary_mode_id": "DM-AF",
+    "confidence": "medium",
+    "rationale": "Science concept with significant practical requirements \u2014 AI delivers theory, facilitator manages practical.",
+    "alternative_modes": [
+      "guided_materials"
+    ],
+    "teaching_requirements": [
+      "TR-APP",
+      "TR-OBS",
+      "TR-VIS"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C163",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C164",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C165",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C166",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C167",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C168",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C169",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C170",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  },
+  {
+    "concept_id": "SC-KS3-C171",
+    "primary_mode": "ai_direct",
+    "primary_mode_id": "DM-AI",
+    "confidence": "high",
+    "rationale": "Secondary science knowledge concept \u2014 factual/theoretical content with clear misconceptions to diagnose.",
+    "alternative_modes": [
+      "ai_facilitated"
+    ],
+    "teaching_requirements": [
+      "TR-OBJ",
+      "TR-VIS",
+      "TR-SPR"
+    ],
+    "notes": ""
+  }
+]

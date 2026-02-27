@@ -119,7 +119,23 @@ Each **layer** is self-contained with its own:
    - `display_color = '#06B6D4'` (Cyan-500), `display_icon = 'view_carousel'`
    - No learner data — pure curriculum design metadata
 
-11. **`layers/oak-content/`** - Oak National Academy (future)
+11. **Delivery Readiness** (derived layer, lives within `layers/uk-curriculum/`)
+   - Classifies every concept by delivery suitability: what combination of AI, human facilitation, and specialist expertise is needed
+   - 4 `DeliveryMode` nodes: AI Direct, AI Facilitated, Guided Materials, Specialist Teacher
+   - 15 `TeachingRequirement` nodes: atomic pedagogical requirements (Objective Assessment, Physical Manipulatives, Creative Assessment, etc.)
+   - `(:Concept)-[:DELIVERABLE_VIA {primary, confidence, rationale}]->(:DeliveryMode)` — 1,351 concepts classified
+   - `(:Concept)-[:HAS_TEACHING_REQUIREMENT]->(:TeachingRequirement)` — teaching requirements per concept
+   - `(:TeachingRequirement)-[:IMPLIES_MINIMUM_MODE]->(:DeliveryMode)` — structural constraint
+   - Classification: 59.5% AI Direct, 19.5% AI Facilitated, 10.4% Guided Materials, 10.7% Specialist Teacher
+   - **Platform addressable surface: 79% of all concepts** (AI Direct + AI Facilitated)
+   - Classification script: `layers/uk-curriculum/scripts/classify_delivery_modes.py` (rule-based, reads all concept metadata)
+   - Import script: `layers/uk-curriculum/scripts/import_delivery_modes.py` (idempotent)
+   - Data: 62 per-subject JSON files in `layers/uk-curriculum/data/delivery_modes/`
+   - Design doc: `docs/design/PLAN_DELIVERY_MODE_CLASSIFICATION.md`
+   - `display_color = '#10B981'` (Emerald-500), `display_icon = 'settings_input_antenna'`
+   - No learner data — pure curriculum design metadata
+
+12. **`layers/oak-content/`** - Oak National Academy (future)
    - Content provider mapping
    - Script: `import_oak_content.py`
 
@@ -175,6 +191,10 @@ python3 core/migrations/create_cross_domain_co_teaches.py
 
 # Concept-level skill integration (run after epistemic skills import)
 python3 core/migrations/create_concept_skill_links.py
+
+# Delivery mode classification (run after all enrichment layers)
+python3 layers/uk-curriculum/scripts/classify_delivery_modes.py
+python3 layers/uk-curriculum/scripts/import_delivery_modes.py
 
 # Assessment layer (optional, depends on UK)
 python3 layers/assessment/scripts/import_test_frameworks.py
@@ -252,6 +272,8 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:ThinkingLens` — 10 cross-subject cognitive lenses (Patterns, Cause and Effect, …)
 - `:DifficultyLevel` — grounded difficulty tiers per Concept (primary: entry → greater_depth; secondary: emerging → mastery)
 - `:RepresentationStage` — CPA (Concrete-Pictorial-Abstract) stages per Concept (primary maths Y1-Y6)
+- `:DeliveryMode` — 4 delivery channel nodes (AI Direct, AI Facilitated, Guided Materials, Specialist Teacher)
+- `:TeachingRequirement` — 15 atomic pedagogical requirements driving delivery classification
 - `:SourceDocument`
 
 **Topic Suggestions (per-subject ontology):**
@@ -325,6 +347,11 @@ All nodes have `display_category` property:
 
 // RepresentationStage (v4.1) — CPA (Concrete-Pictorial-Abstract) progression for primary maths
 (:Concept)-[:HAS_REPRESENTATION_STAGE]->(:RepresentationStage)  // 3 stages per concept (154 primary maths concepts Y1-Y6)
+
+// Delivery Readiness (v4.3) — delivery mode classification for every concept
+(:Concept)-[:DELIVERABLE_VIA {primary: bool, confidence: str, rationale: str}]->(:DeliveryMode)
+(:Concept)-[:HAS_TEACHING_REQUIREMENT]->(:TeachingRequirement)
+(:TeachingRequirement)-[:IMPLIES_MINIMUM_MODE]->(:DeliveryMode)
 
 // Per-subject ontology (v4.2) — typed study nodes deliver curriculum concepts
 (:Domain)-[:HAS_SUGGESTION]->(ts)                     // ts = HistoryStudy | GeoStudy | ScienceEnquiry | EnglishUnit | ...
@@ -449,6 +476,8 @@ Every feature that introduces or modifies data processing must:
 - Thinking lenses (cognitive framing for clusters)? → `layers/uk-curriculum/data/thinking_lenses/` + `import_thinking_lenses.py`
 - Difficulty levels (grounded difficulty tiers)? → `layers/uk-curriculum/data/difficulty_levels/` + `import_difficulty_levels.py`
 - Representation stages (CPA framework for primary maths)? → `layers/uk-curriculum/data/representation_stages/` + `import_representation_stages.py`
+- Delivery readiness / teachability classification? → `layers/uk-curriculum/data/delivery_modes/` + `classify_delivery_modes.py` + `import_delivery_modes.py`
+- What can the AI platform teach? → `docs/design/PLAN_DELIVERY_MODE_CLASSIFICATION.md`
 - User stories? → `docs/user-stories/`
 - Schema definition? → `core/scripts/create_schema.py`
 - Import all data? → `core/scripts/import_all.py` (orchestrator)
@@ -711,6 +740,22 @@ class LayerImporter:
 - Query helpers: `query_cluster_context.py` and `graph_query_helper.py` surface CPA stages per concept
 - No learner data — pure curriculum design metadata
 
+✅ **Delivery Readiness layer (v4.3, 2026-02-27):**
+- Every concept classified by delivery suitability: what AI/human combination is needed to teach it
+- 4 `DeliveryMode` nodes: AI Direct (DM-AI), AI Facilitated (DM-AF), Guided Materials (DM-GM), Specialist Teacher (DM-ST)
+- 15 `TeachingRequirement` nodes across 5 categories (assessment, resource, pedagogy, knowledge, safety)
+- Each TeachingRequirement has `IMPLIES_MINIMUM_MODE` relationship to a DeliveryMode
+- Classification of all 1,351 concepts: 804 AI Direct (59.5%), 263 AI Facilitated (19.5%), 140 Guided Materials (10.4%), 144 Specialist Teacher (10.7%)
+- **Platform addressable surface: 1,067 concepts (79%)** can be taught by AI Direct or AI Facilitated
+- Subject highlights: Mathematics 100% AI-reachable, Science 99%, Computing 100%, PE 12%, Drama 0%
+- Music: theory/notation/listening = AI Direct; composition = AI Facilitated (digital tools); performance = Specialist Teacher
+- Classification uses 14 input signals: concept_type, teaching_weight, RepresentationStage resources, concept_skill_links enquiry_type, ThinkingLens, keyword analysis of teaching_guidance/description
+- Data: 62 per-subject JSON files + 2 definition files in `layers/uk-curriculum/data/delivery_modes/`
+- Scripts: `classify_delivery_modes.py` (generates JSONs), `import_delivery_modes.py` (loads to Neo4j)
+- Schema: DeliveryMode + TeachingRequirement uniqueness constraints + indexes (v4.3)
+- Validation: 5 checks (completeness, coverage, integrity, distribution)
+- No learner data — pure curriculum design metadata
+
 🚧 **In progress:**
 - Per-subject ontology Phase 4: remaining gaps (RS KS4, Citizenship KS4, additional set texts)
 - DifficultyLevel: PE KS3-KS4 (55 concepts remaining — sport-specific assessment framework needed)
@@ -753,6 +798,8 @@ class LayerImporter:
 ❌ Create monolithic DL files for large subjects - Split by curriculum domain (e.g. `english_y4_composition.json`, not `english_y4.json`). Max ~20 concepts per file for maintainability
 ❌ Edit per-subject ontology data directly in the graph - Edit the JSON files in `layers/topic-suggestions/data/`, then rerun `import_subject_ontologies.py --clear`
 ❌ Store cross-curricular connections as JSON blobs on nodes — Use `cross_curricular_links` in data files, which creates proper `CROSS_CURRICULAR` relationships via import
+❌ Manually assign delivery modes in the graph - Rerun `classify_delivery_modes.py` to regenerate JSONs, then `import_delivery_modes.py --clear`
+❌ Change delivery mode classification rules without re-running the full classification - The script is the source of truth; edit the rules in `classify_delivery_modes.py`, then rerun
 ❌ Use a universal TopicSuggestion label for all subjects - Each subject has its own typed label (HistoryStudy, GeoStudy, etc.) with subject-specific properties
 ❌ Reference old ContentVehicle or Topic nodes - These have been replaced by the per-subject ontology (v4.2) and archived to `layers/_archived/`
 

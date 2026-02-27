@@ -76,6 +76,9 @@ def create_schema(driver):
         "CREATE CONSTRAINT maths_context_id_unique IF NOT EXISTS FOR (mc:MathsContext) REQUIRE mc.context_id IS UNIQUE",
         "CREATE CONSTRAINT reasoning_prompt_type_id_unique IF NOT EXISTS FOR (rp:ReasoningPromptType) REQUIRE rp.prompt_type_id IS UNIQUE",
         # Legacy big-5 TopicSuggestion labels (v4.0) — REMOVED in v4.2: replaced by per-subject ontology
+        # Delivery Readiness layer (v4.3)
+        "CREATE CONSTRAINT delivery_mode_id_unique IF NOT EXISTS FOR (dm:DeliveryMode) REQUIRE dm.mode_id IS UNIQUE",
+        "CREATE CONSTRAINT teaching_requirement_id_unique IF NOT EXISTS FOR (tr:TeachingRequirement) REQUIRE tr.requirement_id IS UNIQUE",
     ]
 
     # Indexes
@@ -137,6 +140,9 @@ def create_schema(driver):
         "CREATE INDEX genre_family_idx IF NOT EXISTS FOR (g:Genre) ON (g.genre_family)",
         "CREATE INDEX set_text_board_idx IF NOT EXISTS FOR (st:SetText) ON (st.exam_board)",
         "CREATE INDEX maths_manipulative_type_idx IF NOT EXISTS FOR (mm:MathsManipulative) ON (mm.manipulative_type)",
+        # Delivery Readiness indexes (v4.3)
+        "CREATE INDEX delivery_mode_order_idx IF NOT EXISTS FOR (dm:DeliveryMode) ON (dm.display_order)",
+        "CREATE INDEX teaching_requirement_category_idx IF NOT EXISTS FOR (tr:TeachingRequirement) ON (tr.category)",
     ]
 
     print("Creating constraints...")

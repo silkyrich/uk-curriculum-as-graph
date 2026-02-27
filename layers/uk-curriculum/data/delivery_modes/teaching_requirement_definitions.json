@@ -1,0 +1,122 @@
+[
+  {
+    "requirement_id": "TR-OBJ",
+    "name": "Objective Assessment",
+    "category": "assessment",
+    "description": "Concept outcomes have clear right/wrong answers or objectively verifiable criteria that software can assess without human judgement.",
+    "implies_minimum_mode": "DM-AI",
+    "examples": ["Mental arithmetic", "Spelling rules", "Grammar identification", "Map grid references", "Science factual recall"]
+  },
+  {
+    "requirement_id": "TR-DIG",
+    "name": "Digital Tools Available",
+    "category": "resource",
+    "description": "Existing digital interaction patterns (InteractionTypes in the graph) directly support teaching this concept — number lines, fraction visualizers, drag-and-drop, multiple choice, etc.",
+    "implies_minimum_mode": "DM-AI",
+    "examples": ["Column addition tool", "Fraction visualizer", "Number line scrubber", "Drag-to-categorise", "Multiple choice"]
+  },
+  {
+    "requirement_id": "TR-VIS",
+    "name": "Visual/Interactive Representation",
+    "category": "resource",
+    "description": "Concept can be effectively taught through visual diagrams, animations, interactive models, or on-screen representations that a computer can generate and manipulate.",
+    "implies_minimum_mode": "DM-AI",
+    "examples": ["Place value charts", "Bar models", "Food chains", "Water cycle animation", "Map overlays"]
+  },
+  {
+    "requirement_id": "TR-AUD",
+    "name": "Audio Interaction",
+    "category": "resource",
+    "description": "Concept involves significant listening or audio-based learning that can be delivered through speakers/headphones — music appreciation, phonics, language listening.",
+    "implies_minimum_mode": "DM-AI",
+    "examples": ["Music listening and appraising", "Phonics and phoneme recognition", "Language listening exercises", "Rhythm patterns"]
+  },
+  {
+    "requirement_id": "TR-SPR",
+    "name": "Structured Practice",
+    "category": "pedagogy",
+    "description": "Concept lends itself to repetitive, graduated practice cycles where difficulty adapts to the learner — drill, fluency building, spaced repetition.",
+    "implies_minimum_mode": "DM-AI",
+    "examples": ["Times tables", "Spelling practice", "Vocabulary recall", "Number bonds", "Grammar exercises"]
+  },
+  {
+    "requirement_id": "TR-PHY",
+    "name": "Physical Manipulatives",
+    "category": "resource",
+    "description": "Teaching requires physical objects the child handles: counting blocks, fraction strips, measuring tools, art materials. A facilitating adult sets these up and confirms outcomes.",
+    "implies_minimum_mode": "DM-AF",
+    "examples": ["Dienes blocks", "Numicon", "Cuisenaire rods", "Fraction circles", "Metre sticks", "Weighing scales"]
+  },
+  {
+    "requirement_id": "TR-OBS",
+    "name": "Physical Observation",
+    "category": "assessment",
+    "description": "A human needs to observe a physical action or outcome that the AI cannot directly perceive — handwriting quality, physical grouping of objects, a constructed model.",
+    "implies_minimum_mode": "DM-AF",
+    "examples": ["Handwriting formation", "Sorting physical objects", "Building a model", "Measuring with a ruler"]
+  },
+  {
+    "requirement_id": "TR-APP",
+    "name": "Physical Apparatus/Equipment",
+    "category": "resource",
+    "description": "Teaching requires specialist equipment: science apparatus, design tools, cooking equipment, musical instruments, sports equipment. Setup and safety supervision by an adult.",
+    "implies_minimum_mode": "DM-AF",
+    "examples": ["Bunsen burners", "Circuits equipment", "Woodworking tools", "Kitchen equipment", "Recorders/keyboards"]
+  },
+  {
+    "requirement_id": "TR-GDI",
+    "name": "Guided Discussion",
+    "category": "pedagogy",
+    "description": "Learning requires facilitated dialogue — discussing sources, debating interpretations, exploring ethical questions. A non-specialist can lead this with well-designed question prompts and model answers.",
+    "implies_minimum_mode": "DM-GM",
+    "examples": ["History source analysis", "RE ethical dilemmas", "Citizenship debates", "Reading inference discussion", "Science explanation building"]
+  },
+  {
+    "requirement_id": "TR-NAR",
+    "name": "Narrative/Source Materials",
+    "category": "resource",
+    "description": "Teaching requires engaging with extended texts, historical sources, case studies, or narrative materials that benefit from shared reading and discussion with an adult.",
+    "implies_minimum_mode": "DM-GM",
+    "examples": ["Historical sources and artefacts", "Literary texts for discussion", "Case studies", "News articles for citizenship"]
+  },
+  {
+    "requirement_id": "TR-MOD",
+    "name": "Adult Modelling",
+    "category": "pedagogy",
+    "description": "A human adult needs to model a process live — shared writing, think-aloud reading, demonstrating how to approach a problem — so the child sees the thinking process, not just the outcome.",
+    "implies_minimum_mode": "DM-GM",
+    "examples": ["Shared/modelled writing", "Think-aloud reading", "Science investigation planning", "Design sketching process"]
+  },
+  {
+    "requirement_id": "TR-CRA",
+    "name": "Creative Assessment",
+    "category": "assessment",
+    "description": "Quality of the child's work requires human aesthetic or creative judgement — evaluating the quality of a story, a painting, a musical composition, a design solution. Multiple valid outcomes exist and rubrics alone are insufficient.",
+    "implies_minimum_mode": "DM-ST",
+    "examples": ["Creative writing quality", "Art making assessment", "Musical composition evaluation", "Design solution assessment"]
+  },
+  {
+    "requirement_id": "TR-PER",
+    "name": "Performance Assessment",
+    "category": "assessment",
+    "description": "Assessment requires observing and evaluating a live physical performance — gymnastics, dance, musical instrument playing, dramatic performance, oral presentation. Expertise is needed to give corrective feedback.",
+    "implies_minimum_mode": "DM-ST",
+    "examples": ["Instrumental performance", "Gymnastics routine", "Swimming technique", "Drama devising", "Oral presentation"]
+  },
+  {
+    "requirement_id": "TR-SPK",
+    "name": "Specialist Subject Knowledge",
+    "category": "knowledge",
+    "description": "The teacher needs deep subject knowledge beyond what can be scripted in materials — to handle unexpected questions, correct subtle misconceptions, or make real-time pedagogical decisions that require expertise.",
+    "implies_minimum_mode": "DM-ST",
+    "examples": ["Advanced mathematical reasoning", "Scientific experimental design", "Literary critical analysis", "Musical technique correction"]
+  },
+  {
+    "requirement_id": "TR-PAS",
+    "name": "Pastoral Sensitivity",
+    "category": "safety",
+    "description": "Topic may touch emotional, personal, or culturally sensitive areas requiring pastoral awareness — bereavement, relationships, religious belief, identity. Requires a skilled adult who can read the room and respond empathetically.",
+    "implies_minimum_mode": "DM-ST",
+    "examples": ["RE: death and afterlife", "PSHE: relationships", "History: slavery and persecution", "Citizenship: rights and justice"]
+  }
+]

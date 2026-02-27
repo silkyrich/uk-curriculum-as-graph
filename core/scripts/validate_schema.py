@@ -1203,6 +1203,112 @@ class SchemaValidator:
     # =========================================================================
 
     # =========================================================================
+    # R. Delivery Readiness layer (v4.3)
+    # =========================================================================
+
+    def check_delivery_mode_completeness(self):
+        """All 4 DeliveryMode nodes exist with required properties."""
+        total = self.scalar("MATCH (dm:DeliveryMode) RETURN count(dm)") or 0
+        if total == 0:
+            self.add(ValidationResult("DeliveryMode node completeness", "PASS", 0,
+                                      ["No DeliveryMode nodes — import pending"]))
+            return
+        issues = []
+        if total != 4:
+            issues.append(f"Expected 4 DeliveryMode nodes, found {total}")
+        records = self.run("""
+            MATCH (dm:DeliveryMode)
+            WHERE dm.mode_id IS NULL OR dm.name IS NULL OR dm.name = ''
+               OR dm.description IS NULL OR dm.description = ''
+               OR dm.agent_prompt IS NULL OR dm.agent_prompt = ''
+            RETURN dm.mode_id AS id
+        """)
+        issues += [f"DeliveryMode '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("DeliveryMode node completeness", status, total, issues))
+
+    def check_teaching_requirement_completeness(self):
+        """All 15 TeachingRequirement nodes exist with required properties."""
+        total = self.scalar("MATCH (tr:TeachingRequirement) RETURN count(tr)") or 0
+        if total == 0:
+            self.add(ValidationResult("TeachingRequirement node completeness", "PASS", 0,
+                                      ["No TeachingRequirement nodes — import pending"]))
+            return
+        issues = []
+        if total != 15:
+            issues.append(f"Expected 15 TeachingRequirement nodes, found {total}")
+        records = self.run("""
+            MATCH (tr:TeachingRequirement)
+            WHERE tr.requirement_id IS NULL OR tr.name IS NULL OR tr.name = ''
+               OR tr.category IS NULL OR tr.category = ''
+            RETURN tr.requirement_id AS id
+        """)
+        issues += [f"TeachingRequirement '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("TeachingRequirement node completeness", status, total, issues))
+
+    def check_deliverable_via_coverage(self):
+        """Every Concept has at least one primary DELIVERABLE_VIA relationship."""
+        total_concepts = self.scalar("MATCH (c:Concept) RETURN count(c)") or 0
+        if total_concepts == 0:
+            self.add(ValidationResult("DELIVERABLE_VIA coverage", "PASS", 0))
+            return
+        dm_count = self.scalar("MATCH (dm:DeliveryMode) RETURN count(dm)") or 0
+        if dm_count == 0:
+            self.add(ValidationResult("DELIVERABLE_VIA coverage", "PASS", 0,
+                                      ["No DeliveryMode nodes — import pending"]))
+            return
+        linked = self.scalar("""
+            MATCH (c:Concept)-[:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
+            RETURN count(DISTINCT c)
+        """) or 0
+        missing = total_concepts - linked
+        issues = []
+        if missing > 0:
+            issues.append(f"{missing} concepts have no primary DELIVERABLE_VIA relationship")
+        status = "WARN" if missing > 0 else "PASS"
+        self.add(ValidationResult("DELIVERABLE_VIA coverage", status, total_concepts, issues))
+
+    def check_implies_minimum_mode_integrity(self):
+        """Every TeachingRequirement has exactly one IMPLIES_MINIMUM_MODE relationship."""
+        total = self.scalar("MATCH (tr:TeachingRequirement) RETURN count(tr)") or 0
+        if total == 0:
+            self.add(ValidationResult("IMPLIES_MINIMUM_MODE integrity", "PASS", 0,
+                                      ["No TeachingRequirement nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (tr:TeachingRequirement)
+            OPTIONAL MATCH (tr)-[:IMPLIES_MINIMUM_MODE]->(dm:DeliveryMode)
+            WITH tr, count(dm) AS dm_count
+            WHERE dm_count != 1
+            RETURN tr.requirement_id AS id, dm_count
+            LIMIT 20
+        """)
+        issues = [f"TeachingRequirement '{r['id']}' has {r['dm_count']} IMPLIES_MINIMUM_MODE rels (expected 1)" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("IMPLIES_MINIMUM_MODE integrity", status, total, issues))
+
+    def check_delivery_mode_distribution(self):
+        """Delivery mode distribution is reasonable (no mode has 0 concepts)."""
+        total = self.scalar("MATCH (dm:DeliveryMode) RETURN count(dm)") or 0
+        if total == 0:
+            self.add(ValidationResult("Delivery mode distribution", "PASS", 0,
+                                      ["No DeliveryMode nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (dm:DeliveryMode)
+            OPTIONAL MATCH (c:Concept)-[:DELIVERABLE_VIA {primary: true}]->(dm)
+            RETURN dm.mode_id AS mode, dm.name AS name, count(c) AS cnt
+            ORDER BY dm.display_order
+        """)
+        issues = []
+        for r in records:
+            if r["cnt"] == 0:
+                issues.append(f"DeliveryMode '{r['name']}' ({r['mode']}) has 0 concepts linked")
+        status = "WARN" if issues else "PASS"
+        self.add(ValidationResult("Delivery mode distribution", status, total, issues))
+
+    # =========================================================================
     # O. VehicleTemplate layer (v4.0)
     # =========================================================================
 
@@ -1535,6 +1641,7 @@ class SchemaValidator:
             'UK Curriculum', 'CASE Standards', 'Epistemic Skills',
             'Assessment', 'Structure', 'Learner Profile', 'Oak Content',
             'Vehicle Template', 'Topic Suggestion', 'Subject Reference',
+            'Delivery Readiness',
         }
         records = self.run("""
             MATCH (n)
@@ -1669,6 +1776,12 @@ class SchemaValidator:
             self.check_representation_stage_values,
             self.check_representation_stage_relationship_integrity,
             self.check_representation_stage_no_duplicates,
+            # R. Delivery Readiness (v4.3)
+            self.check_delivery_mode_completeness,
+            self.check_teaching_requirement_completeness,
+            self.check_deliverable_via_coverage,
+            self.check_implies_minimum_mode_integrity,
+            self.check_delivery_mode_distribution,
             # M. Content Vehicles — REMOVED (v4.2)
             # O. VehicleTemplate (v4.0)
             self.check_vehicle_template_completeness,
