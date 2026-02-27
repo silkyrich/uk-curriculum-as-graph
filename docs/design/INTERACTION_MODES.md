@@ -502,3 +502,17 @@ Each generated with child-requested details:
 **Every mode is data-rich**: We collect how child interacts (scrubs video, requests replays, draws attempt, speaks explanation) and use that to optimize learning.
 
 **Privacy-first**: Camera/mic use requires consent, processing is local, no biometric data stored.
+
+---
+
+## Related documents
+
+| Document | Relationship |
+|---|---|
+| [README](../../README.md) | Links here from the [documentation guide](../../README.md#documentation-guide) |
+| [PROJECT_DIRECTION.md](PROJECT_DIRECTION.md) | [Local-widget insight](PROJECT_DIRECTION.md#the-local-widget-insight) -- why deterministic widgets (not chatbots) are the right architecture |
+| [OUTPUT_SCHEMAS.md](OUTPUT_SCHEMAS.md) | [Schema B](OUTPUT_SCHEMAS.md#schema-b-llm-child-session-prompt) uses these modes as the [allowed interaction pick-list](OUTPUT_SCHEMAS.md#output-contract-1) |
+| [Learner profiles layer](../../layers/learner-profiles/README.md) | [InteractionType nodes](../../layers/learner-profiles/README.md#interactiontype-29-nodes-shared) encode which modes are available per year group |
+| [CHILD_PROFILE_CONSENT.md](CHILD_PROFILE_CONSENT.md) | [Camera/microphone consent](CHILD_PROFILE_CONSENT.md#13-what-parents-can-legally-consent-to) rules for modes 7-8 |
+| [CONSENT_RULES.md](../../core/compliance/CONSENT_RULES.md) | [Per-activity camera/mic consent](../../core/compliance/CONSENT_RULES.md#1-consent-purposes-unbundled) (Purpose D) |
+| [RESEARCH_BRIEFING.md](RESEARCH_BRIEFING.md) | Evidence for [worked examples](#mode-1-blackboard-presenter-khan-academy-style) from [cognitive learning science](RESEARCH_BRIEFING.md#5-novel-approaches-being-ignored-by-mainstream-edtech) |

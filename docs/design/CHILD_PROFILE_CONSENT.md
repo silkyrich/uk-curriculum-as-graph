@@ -526,3 +526,20 @@ ACCOUNT_CREATED (no child data processed yet)
 - **Data (Use and Access) Act** (law from 19 June 2025) — ICO guidance under review
 - **Online Safety Act 2023** — Protection of Children Codes (from July 2025)
 - **Proposed education-specific code of practice** — Would address profiling and AI in education specifically
+
+---
+
+## Related documents
+
+| Document | Relationship |
+|---|---|
+| [README](../../README.md) | Links here from the [privacy section](../../README.md#privacy-and-compliance) for legal framework, profiling problem, and ethical constraints |
+| [DATA_CLASSIFICATION.md](../../core/compliance/DATA_CLASSIFICATION.md) | Implements [Tier 0-3 data classification](../../core/compliance/DATA_CLASSIFICATION.md#tier-0-identity) and [prohibited data rules](../../core/compliance/DATA_CLASSIFICATION.md#prohibited-never-collected-under-any-circumstances) defined in this analysis |
+| [CONSENT_RULES.md](../../core/compliance/CONSENT_RULES.md) | Implements [unbundled consent purposes](../../core/compliance/CONSENT_RULES.md#1-consent-purposes-unbundled) and [consent lifecycle](../../core/compliance/CONSENT_RULES.md#2-consent-lifecycle) from this analysis |
+| [DPIA.md](../../core/compliance/DPIA.md) | DPIA skeleton based on the [requirements defined here](#6-dpia-requirements) |
+| [PROJECT_DIRECTION.md](PROJECT_DIRECTION.md) | [What's built vs planned](PROJECT_DIRECTION.md#whats-built-vs-whats-planned) -- compliance framework status |
+| [OUTPUT_SCHEMAS.md](OUTPUT_SCHEMAS.md) | [Schema B hard constraints](OUTPUT_SCHEMAS.md#output-contract-1) implement the gamification ban, vocabulary limits, and feedback rules from this analysis |
+| [RESEARCH_BRIEFING.md](RESEARCH_BRIEFING.md) | [Motivation science](RESEARCH_BRIEFING.md#4-motivation-and-engagement-what-the-evidence-actually-says) evidence base for the [ethical framework](#7-ethical-framework-beyond-legal-compliance) |
+| [SOURCES.md](../research/SOURCES.md) | [Privacy and compliance sources](../research/SOURCES.md#8-privacy-compliance-and-consent-added-2026-02-20) -- ICO guidance, GDPR Article 8, profiling standards |
+| [Learner profiles layer](../../layers/learner-profiles/README.md) | Implements [age-appropriate constraints](../../layers/learner-profiles/README.md#why-this-exists) grounded in this analysis |
+| [Privacy research](../research/privacy-compliance/) | Source audit trail for all regulatory research |

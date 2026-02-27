@@ -7,12 +7,17 @@ Project documentation organised by purpose. Layer-specific docs live in `layers/
 ## Directories
 
 ### `design/`
-Product thinking and design rationale — documents describing *why* the system works the way it does.
+Project direction, compilation targets, and design rationale — documents describing *what* the project is and *why* it works the way it does.
 
 | File | Description |
 |---|---|
+| `PROJECT_DIRECTION.md` | **Start here.** Project rationale, architecture direction, what's built vs planned |
+| `OUTPUT_SCHEMAS.md` | Three compilation target specs: Teacher Planner, LLM Session, Parent Guide |
+| `RESEARCH_BRIEFING.md` | Learning science evidence base for platform design decisions |
 | `INTERACTION_MODES.md` | Interaction modes taxonomy — voice, text, analysis |
-| `RESEARCH_BRIEFING.md` | Research briefing for the learner profiles layer |
+| `CHILD_PROFILE_CONSENT.md` | Full legal and ethical analysis for child data processing |
+| `PLAN_DELIVERY_MODE_CLASSIFICATION.md` | Design rationale for delivery readiness classification |
+| `PLAN_EYFS_INTEGRATION.md` | Design rationale for EYFS layer integration |
 | `PLAN_POST_KS3.md` | KS4 extension plan — phased approach, GCSE layer architecture |
 
 ---

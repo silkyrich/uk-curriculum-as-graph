@@ -146,3 +146,16 @@ When building prompts sent to the LLM inference provider:
 - **Permitted with processor agreement**: Child first name (for personalisation — "Well done, Zara")
 - **Never permitted**: Session transcripts containing personal disclosures, cross-session behavioural summaries, any Tier 0 data beyond first name
 - Check `CONSENT_RULES.md` for the LLM processor requirements
+
+---
+
+## Related documents
+
+| Document | Relationship |
+|---|---|
+| [README](../../README.md) | Links here from the [privacy section](../../README.md#privacy-and-compliance) |
+| [CONSENT_RULES.md](CONSENT_RULES.md) | [Consent per processing purpose](CONSENT_RULES.md#1-consent-purposes-unbundled) -- what lawful basis permits each tier |
+| [CHILD_PROFILE_CONSENT.md](../../docs/design/CHILD_PROFILE_CONSENT.md) | Full legal analysis defining [data tiers](../../docs/design/CHILD_PROFILE_CONSENT.md#2-what-we-need-to-know-about-the-child-data-tiers) and [prohibited data](../../docs/design/CHILD_PROFILE_CONSENT.md#what-is-explicitly-excluded-hard-boundaries) |
+| [DPIA.md](DPIA.md) | Data Protection Impact Assessment -- must be updated when processing changes |
+| [OUTPUT_SCHEMAS.md](../../docs/design/OUTPUT_SCHEMAS.md) | [Schema B hard constraints](../../docs/design/OUTPUT_SCHEMAS.md#output-contract-1) enforce these classification rules at the session prompt level |
+| [PROJECT_DIRECTION.md](../../docs/design/PROJECT_DIRECTION.md) | [Architecture direction](../../docs/design/PROJECT_DIRECTION.md#architecture-direction) -- event-stream architecture that this classification governs |

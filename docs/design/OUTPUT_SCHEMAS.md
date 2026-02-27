@@ -2,7 +2,17 @@
 
 **Three compilation targets from the same knowledge graph.**
 
-Each schema defines what data is pulled from the graph, how it's structured, and what the output contract looks like. All three compile from the same underlying data; the difference is audience, tone, and constraint strictness.
+The graph is the intermediate representation (IR). These schemas define the compilation targets -- what subset of the graph each target pulls, how it's structured, and what the output contract looks like. All three compile from the same underlying data; the difference is audience, tone, and constraint strictness.
+
+| Target | Audience | Generation | Status |
+|---|---|---|---|
+| **Teacher Planner** | Qualified teacher | Deterministic query + render | **Built** -- CI/CD pipeline, GitHub Releases |
+| **LLM Child Session** | LLM interacting with child | Deterministic query -> structured prompt | Specified, not implemented |
+| **Parent Guide** | Non-specialist adult | LLM-generated from graph data | Specified, not implemented |
+
+The Teacher Planner is the first target because it's lowest risk: the audience is professional, the output is deterministic, and the feedback loop is fast. The LLM Session Prompt is higher risk because it drives child-facing interactions and requires an adaptive engine for routing. The Parent Guide sits between -- LLM-generated but adult-facing.
+
+See [`PROJECT_DIRECTION.md`](PROJECT_DIRECTION.md) for the broader context on why this ordering matters.
 
 ---
 
@@ -529,3 +539,19 @@ Step 1 is the foundation — all three schemas share the same underlying query. 
 3. **How should the LLM Session Prompt handle multi-concept clusters?** A cluster with 3 concepts can't be covered in one 15-minute session. The adaptive engine needs to decide: teach concept 1 today, concept 2 tomorrow? Or introduce all 3 lightly? This is a routing decision upstream of the prompt.
 
 4. **Misconception compilation strategy.** The hybrid approach (use `DifficultyLevel.common_errors[]` as primary, prose as backup) works today without graph changes. Is that sufficient for v1, or is structured misconception extraction a prerequisite?
+
+---
+
+## Related documents
+
+| Document | Relationship |
+|---|---|
+| [README](../../README.md) | Project overview -- links into this document for each schema |
+| [PROJECT_DIRECTION.md](PROJECT_DIRECTION.md) | [Why the teacher planner is first](PROJECT_DIRECTION.md#the-teacher-planner-first-compilation-target), [the local-widget insight](PROJECT_DIRECTION.md#the-local-widget-insight) that shapes Schema B, [what's built vs planned](PROJECT_DIRECTION.md#whats-built-vs-whats-planned) |
+| [RESEARCH_BRIEFING.md](RESEARCH_BRIEFING.md) | Evidence for [productive failure](RESEARCH_BRIEFING.md#productive-failure-kapur) (Schema B pedagogy algorithm), [spacing/interleaving](RESEARCH_BRIEFING.md#spacing-and-interleaving-bjork) (Schema B interleaving instruction), [SDT feedback](RESEARCH_BRIEFING.md#self-determination-theory-sdt) (Schema B/C feedback rules), [no gamification](RESEARCH_BRIEFING.md#the-failure-of-gamification) (Schema B hard constraints) |
+| [INTERACTION_MODES.md](INTERACTION_MODES.md) | [10 interaction modes](INTERACTION_MODES.md#implementation-summary) that Schema B's allowed interactions draw from |
+| [CHILD_PROFILE_CONSENT.md](CHILD_PROFILE_CONSENT.md) | [Data tiers](CHILD_PROFILE_CONSENT.md#2-what-we-need-to-know-about-the-child-data-tiers) and [profiling rules](CHILD_PROFILE_CONSENT.md#3-the-profiling-problem-our-hardest-compliance-question) that constrain what Schema B can collect |
+| [PLAN_DELIVERY_MODE_CLASSIFICATION.md](PLAN_DELIVERY_MODE_CLASSIFICATION.md) | [Delivery modes](PLAN_DELIVERY_MODE_CLASSIFICATION.md#deliverymode-4-nodes) determine which concepts are eligible for Schema B (AI Direct + AI Facilitated) |
+| [Per-subject ontology](../../layers/topic-suggestions/README.md) | [Study nodes](../../layers/topic-suggestions/README.md#study-node-types) and [vehicle templates](../../layers/topic-suggestions/README.md#vehicletemplate-nodes) that all three schemas query |
+| [Learner profiles](../../layers/learner-profiles/README.md) | [Interaction types](../../layers/learner-profiles/README.md#interactiontype-29-nodes-shared), [content guidelines](../../layers/learner-profiles/README.md#contentguideline-9-nodes-one-per-year), [pedagogy profiles](../../layers/learner-profiles/README.md#pedagogyprofile-9-nodes-one-per-year) that Schema B draws from |
+| [CONSENT_RULES.md](../../core/compliance/CONSENT_RULES.md) | [Consent purposes](../../core/compliance/CONSENT_RULES.md#1-consent-purposes-unbundled) that Schema B must respect (camera/mic, teacher sharing) |

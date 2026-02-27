@@ -193,3 +193,17 @@ Before merging any PR that introduces or modifies data processing:
 - [ ] LLM prompts reviewed for PII content
 - [ ] DPIA updated if processing has materially changed
 - [ ] User story includes privacy boundary section
+
+---
+
+## Related documents
+
+| Document | Relationship |
+|---|---|
+| [README](../../README.md) | Links here from the [privacy section](../../README.md#privacy-and-compliance) |
+| [DATA_CLASSIFICATION.md](DATA_CLASSIFICATION.md) | [Data tier definitions](DATA_CLASSIFICATION.md#tier-0-identity) -- what data exists at each tier that consent governs |
+| [CHILD_PROFILE_CONSENT.md](../../docs/design/CHILD_PROFILE_CONSENT.md) | Full legal analysis: [consent architecture](../../docs/design/CHILD_PROFILE_CONSENT.md#implementation-consent-flow), [consent granularity](../../docs/design/CHILD_PROFILE_CONSENT.md#consent-granularity), [verification methods](../../docs/design/CHILD_PROFILE_CONSENT.md#4-consent-verification-how-we-know-its-the-parent) |
+| [DPIA.md](DPIA.md) | Data Protection Impact Assessment -- must be updated when consent purposes change |
+| [OUTPUT_SCHEMAS.md](../../docs/design/OUTPUT_SCHEMAS.md) | [Schema B](../../docs/design/OUTPUT_SCHEMAS.md#output-contract-1) must respect consent state (camera/mic per-activity, teacher sharing opt-in) |
+| [INTERACTION_MODES.md](../../docs/design/INTERACTION_MODES.md) | [Camera/microphone modes](../../docs/design/INTERACTION_MODES.md#mode-7-physical-movement-camera-pose-detection) that require Purpose D consent |
+| [SOURCES.md](../../docs/research/SOURCES.md) | [Privacy and compliance sources](../../docs/research/SOURCES.md#8-privacy-compliance-and-consent-added-2026-02-20) -- ICO guidance, GDPR, Children's Code |

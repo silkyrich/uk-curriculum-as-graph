@@ -255,3 +255,14 @@ RETURN count(c) AS platform_teachable
 - Requires: UK Curriculum (concepts must exist)
 - Optionally reads: DifficultyLevel, RepresentationStage, ConceptCluster, ThinkingLens
 - Import order: Run AFTER all other curriculum enrichment layers
+
+---
+
+## Related documents
+
+| Document | Relationship |
+|---|---|
+| [README](../../README.md) | Links here for [delivery mode queries](../../README.md#example-queries) and [AI-addressable surface](../../README.md#enrichment-layers-what-makes-it-compilable) |
+| [PROJECT_DIRECTION.md](PROJECT_DIRECTION.md) | [Primary boundary](PROJECT_DIRECTION.md#the-primary-boundary) analysis uses delivery mode data |
+| [OUTPUT_SCHEMAS.md](OUTPUT_SCHEMAS.md) | Delivery modes determine which concepts are eligible for [LLM session generation](OUTPUT_SCHEMAS.md#schema-b-llm-child-session-prompt) |
+| [UK curriculum layer](../../layers/uk-curriculum/README.md) | Source concepts that this classification operates on |

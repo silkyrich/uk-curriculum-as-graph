@@ -571,3 +571,16 @@ This is an honest audit trail. Each entry records what was actually fetched (ful
 ---
 
 *End of annotated bibliography. Learning science papers are cached in themed subdirectories under `docs/research/learning-science/` (knowledge-tracing, intelligent-tutoring, motivation-and-engagement, cognitive-learning, llm-in-education); interoperability specs in `docs/research/interoperability/`; privacy and compliance sources in `docs/research/privacy-compliance/`. For each entry, the access level field indicates the confidence that should be placed in derived design decisions: full text fetched is the highest confidence; briefing summary only means the design decision is based on secondary characterisation and should be verified against primary sources before external academic citation.*
+
+---
+
+## How these sources connect to the project
+
+| Source area | Where the findings are applied |
+|---|---|
+| [Knowledge tracing](#1-learner-modelling-and-knowledge-tracing) | [Research briefing](../design/RESEARCH_BRIEFING.md#1-learner-modelling-and-knowledge-tracing) analysis; [PROJECT_DIRECTION.md](../design/PROJECT_DIRECTION.md#open-questions) knowledge tracing open question |
+| [ITS systems](#3-intelligent-tutoring-systems) | [Prerequisite-aware sequencing](../design/RESEARCH_BRIEFING.md#aleks) in the graph; [outer fringe query](../../README.md#example-queries) |
+| [Motivation & engagement](#4-motivation-and-engagement) | [No gamification](../design/RESEARCH_BRIEFING.md#the-failure-of-gamification) design rule; [LLM session prompt](../design/OUTPUT_SCHEMAS.md#output-contract-1) hard constraints; [feedback profiles](../../layers/learner-profiles/README.md#feedbackprofile-9-nodes-one-per-year) |
+| [Cognitive learning science](#5-cognitive-learning-science) | [Productive failure](../design/OUTPUT_SCHEMAS.md#output-contract-1) in session pedagogy; [spacing/interleaving](../design/OUTPUT_SCHEMAS.md#output-contract-1) in session design; [retrieval practice](../design/RESEARCH_BRIEFING.md#retrieval-practice-roediger-karpicke) as core principle |
+| [LLM in education](#6-llm-and-ai-tutoring) | [LLM over structured domain model](../design/PROJECT_DIRECTION.md#the-starting-observation) architecture; [35% hint failure rate](../design/RESEARCH_BRIEFING.md#llm-tutors-and-natural-language-interaction) driving widget-based design |
+| [Privacy & compliance](#8-privacy-compliance-and-consent-added-2026-02-20) | [Consent rules](../../core/compliance/CONSENT_RULES.md); [data classification](../../core/compliance/DATA_CLASSIFICATION.md); [full legal analysis](../design/CHILD_PROFILE_CONSENT.md) |
