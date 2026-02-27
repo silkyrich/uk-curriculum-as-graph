@@ -4,12 +4,12 @@ on:
   push:
     branches: [main]
     paths:
-      - 'generated/scripts/**'
+      - 'scripts/**'
       - 'layers/**/data/**'
       - 'core/scripts/**'
   pull_request:
     paths:
-      - 'generated/scripts/**'
+      - 'scripts/**'
       - 'layers/**/data/**'
       - 'core/scripts/**'
   workflow_dispatch:
@@ -39,11 +39,11 @@ jobs:
 
       - name: Check Python syntax
         run: |
-          python3 -m py_compile generated/scripts/generate_all_planners.py
-          python3 -m py_compile generated/scripts/planner_queries.py
-          python3 -m py_compile generated/scripts/render_markdown.py
-          python3 -m py_compile generated/scripts/render_pptx.py
-          python3 -m py_compile generated/scripts/render_docx.py
+          python3 -m py_compile scripts/generate_all_planners.py
+          python3 -m py_compile scripts/planner_queries.py
+          python3 -m py_compile scripts/render_markdown.py
+          python3 -m py_compile scripts/render_pptx.py
+          python3 -m py_compile scripts/render_docx.py
           python3 -m py_compile core/scripts/import_all.py
           python3 -m py_compile core/scripts/create_schema.py
 
@@ -108,16 +108,16 @@ jobs:
         run: python3 core/scripts/validate_schema.py
 
       - name: Dry run — verify all study nodes resolve
-        run: python3 generated/scripts/generate_all_planners.py --all --dry-run
+        run: python3 scripts/generate_all_planners.py --all --dry-run
 
       - name: Generate PPTX + DOCX planners
         run: |
           if [ -n "${{ github.event.inputs.subject }}" ]; then
-            python3 generated/scripts/generate_all_planners.py \
+            python3 scripts/generate_all_planners.py \
               --subject "${{ github.event.inputs.subject }}" \
               --format pptx,docx
           else
-            python3 generated/scripts/generate_all_planners.py \
+            python3 scripts/generate_all_planners.py \
               --all --format pptx,docx
           fi
 

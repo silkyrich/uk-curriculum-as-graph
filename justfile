@@ -52,23 +52,23 @@ validate:
 
 # Generate all teacher planners (md + pptx + docx)
 generate:
-    python3 generated/scripts/generate_all_planners.py --all
+    python3 scripts/generate_all_planners.py --all
 
 # Generate markdown planners only (fast, for development)
 generate-md:
-    python3 generated/scripts/generate_all_planners.py --all --format md
+    python3 scripts/generate_all_planners.py --all --format md
 
 # Generate binary planners only (pptx + docx)
 generate-binaries:
-    python3 generated/scripts/generate_all_planners.py --all --format pptx,docx
+    python3 scripts/generate_all_planners.py --all --format pptx,docx
 
 # Generate planners for a single subject (e.g. just generate-subject history)
 generate-subject subject:
-    python3 generated/scripts/generate_all_planners.py --subject {{subject}}
+    python3 scripts/generate_all_planners.py --subject {{subject}}
 
 # Dry run — list what would be generated without creating files
 generate-dry-run:
-    python3 generated/scripts/generate_all_planners.py --all --dry-run
+    python3 scripts/generate_all_planners.py --all --dry-run
 
 # ── Utilities ────────────────────────────────────────────────────────
 
