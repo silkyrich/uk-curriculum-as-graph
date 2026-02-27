@@ -14,7 +14,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 # ── Neo4j config ─────────────────────────────────────────────────────
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT / "core" / "scripts"))
 from neo4j_config import NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD
 
