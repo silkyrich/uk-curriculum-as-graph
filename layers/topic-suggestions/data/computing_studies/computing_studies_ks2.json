@@ -91,10 +91,152 @@
     "subject": "Computing",
     "key_stage": "KS2",
     "curriculum_status": "mandatory",
-    "curriculum_reference": ["understand computer networks including the internet; how they can provide multiple services, such as the world wide web"],
-    "pedagogical_rationale": "Understanding how the internet works is foundational to digital literacy and online safety. Pupils learn that the internet is a physical network of connected devices, that data travels in packets, and that the World Wide Web is one service running on the internet (alongside email, streaming, etc.). Role-play activities where pupils act as routers, servers, and clients make the abstract infrastructure tangible.",
-    "common_pitfalls": ["Conflating 'the internet' with 'the web' -- explicitly distinguish infrastructure from service", "Too abstract -- use physical role-play: pupils pass paper 'packets' to each other", "Not connecting to safety -- 'now you know how data travels, what happens to your personal information?'"],
+    "curriculum_reference": [
+      "understand computer networks including the internet; how they can provide multiple services, such as the world wide web; and the opportunities they offer for communication and collaboration",
+      "use search technologies effectively, appreciate how results are selected and ranked, and be discerning in evaluating digital content"
+    ],
+    "pedagogical_rationale": "Understanding how the internet works is foundational to digital literacy and online safety. Pupils learn that the internet is a physical network of connected devices, that data travels in packets, and that the World Wide Web is one service running on the internet (alongside email, streaming, etc.). Role-play activities where pupils act as routers, servers, and clients make the abstract infrastructure tangible. The unit sequence explicitly targets three misconceptions: web is not the internet, the internet is not a 'place', and data does not travel as one continuous blob.",
+    "common_pitfalls": [
+      "Conflating 'the internet' with 'the web' -- explicitly distinguish infrastructure from service",
+      "Too abstract -- use physical role-play: pupils pass paper 'packets' to each other",
+      "Not connecting to safety -- 'now you know how data travels, what happens to your personal information?'",
+      "Research activity degenerates into poster-making without knowledge check",
+      "Vocabulary mat left blank -- every core term must have a pupil-safe definition"
+    ],
     "definitions": ["network", "internet", "World Wide Web", "server", "router", "packet", "browser", "URL", "website", "data"],
+    "vocabulary_mat": [
+      {"term": "network", "definition": "Connected devices that can share data and resources.", "example_sentence": "Our classroom computers and printer are on a network."},
+      {"term": "internet", "definition": "The global network of networks.", "example_sentence": "The internet connects millions of networks all over the world."},
+      {"term": "World Wide Web", "definition": "A service on the internet made of linked web pages.", "example_sentence": "When you visit a website, you are using the World Wide Web."},
+      {"term": "website", "definition": "A collection of web pages under one address.", "example_sentence": "The BBC website has pages about news, sport, and weather."},
+      {"term": "browser", "definition": "An app used to view web pages.", "example_sentence": "Chrome and Safari are browsers."},
+      {"term": "server", "definition": "A computer that stores and sends data such as websites.", "example_sentence": "When you visit a website, a server sends the page to your computer."},
+      {"term": "router", "definition": "A device that directs packets between networks.", "example_sentence": "A router decides which way to send data, like a postman choosing a route."},
+      {"term": "packet", "definition": "A small chunk of data sent across a network.", "example_sentence": "An email is broken into packets before it travels across the internet."},
+      {"term": "protocol", "definition": "Agreed rules for sending and receiving data.", "example_sentence": "Protocols make sure packets arrive correctly, like rules for posting a letter."},
+      {"term": "URL", "definition": "The address of a web page.", "example_sentence": "You type a URL into the browser to visit a website."},
+      {"term": "hyperlink", "definition": "A clickable link to another page or resource.", "example_sentence": "Click the hyperlink to go to a different web page."},
+      {"term": "search engine", "definition": "A tool that finds and ranks web pages.", "example_sentence": "Google is a search engine that helps you find information."},
+      {"term": "IP address", "definition": "A number label that identifies a device on a network.", "example_sentence": "Every computer on the internet has its own IP address, like a house number."},
+      {"term": "bandwidth", "definition": "How much data can be sent at once.", "example_sentence": "A video call needs more bandwidth than sending a text message."},
+      {"term": "data", "definition": "Information stored or sent by computers.", "example_sentence": "Photos, messages, and web pages are all types of data."}
+    ],
+    "statutory_decomposition": [
+      {
+        "sd_id": "SD-NET-01",
+        "requirement": "understand computer networks",
+        "source_objective_id": "CO-KS12-O010",
+        "kc_ids": ["KC-NET-01", "KC-NET-04"],
+        "assessment_required": true
+      },
+      {
+        "sd_id": "SD-NET-02",
+        "requirement": "including the internet",
+        "source_objective_id": "CO-KS12-O010",
+        "kc_ids": ["KC-NET-02", "KC-NET-05"],
+        "assessment_required": true
+      },
+      {
+        "sd_id": "SD-NET-03",
+        "requirement": "multiple services, such as the world wide web",
+        "source_objective_id": "CO-KS12-O010",
+        "kc_ids": ["KC-NET-03"],
+        "assessment_required": true
+      },
+      {
+        "sd_id": "SD-NET-04",
+        "requirement": "opportunities for communication and collaboration",
+        "source_objective_id": "CO-KS12-O010",
+        "kc_ids": ["KC-NET-02", "KC-NET-03"],
+        "assessment_required": false
+      },
+      {
+        "sd_id": "SD-NET-05",
+        "requirement": "use search technologies effectively",
+        "source_objective_id": "CO-KS12-O011",
+        "kc_ids": [],
+        "assessment_required": true
+      },
+      {
+        "sd_id": "SD-NET-06",
+        "requirement": "appreciate how results are selected and ranked",
+        "source_objective_id": "CO-KS12-O011",
+        "kc_ids": [],
+        "assessment_required": true
+      },
+      {
+        "sd_id": "SD-NET-07",
+        "requirement": "be discerning in evaluating digital content",
+        "source_objective_id": "CO-KS12-O011",
+        "kc_ids": [],
+        "assessment_required": true
+      }
+    ],
+    "assessment_items": [
+      {
+        "type": "hinge_true_false_justify",
+        "stem": "The web is the same as the internet: True or False? Explain.",
+        "expected": "False. The internet is the global network of networks. The web is one service that runs on the internet.",
+        "kc_ids": ["KC-NET-02", "KC-NET-03"],
+        "misconception_targeted": "Internet and web are the same thing"
+      },
+      {
+        "type": "hinge_true_false_justify",
+        "stem": "Email is part of the web: True or False? Explain.",
+        "expected": "False. Email uses the internet but is a separate service from the web.",
+        "kc_ids": ["KC-NET-03"],
+        "misconception_targeted": "All internet services are the web"
+      },
+      {
+        "type": "hinge_multiple_choice",
+        "stem": "A network is: (A) one computer (B) connected computers sharing data (C) the internet.",
+        "expected": "B",
+        "kc_ids": ["KC-NET-01"],
+        "misconception_targeted": null
+      },
+      {
+        "type": "label_diagram",
+        "stem": "Label the client, server, and router on this network diagram.",
+        "expected": "Client = device requesting data. Server = device storing/serving data. Router = device directing packets between networks.",
+        "kc_ids": ["KC-NET-04", "KC-NET-05"],
+        "misconception_targeted": null
+      },
+      {
+        "type": "hinge_true_false_justify",
+        "stem": "Packets can take different routes and still arrive: True or False.",
+        "expected": "True. Routers choose the best route for each packet. They are reassembled at the destination.",
+        "kc_ids": ["KC-NET-06"],
+        "misconception_targeted": "Data travels as one continuous piece"
+      },
+      {
+        "type": "hinge_true_false_justify",
+        "stem": "Data always travels as one long piece: True or False.",
+        "expected": "False. Data is split into packets, and different packets may take different routes.",
+        "kc_ids": ["KC-NET-06"],
+        "misconception_targeted": "Data travels as one continuous piece"
+      },
+      {
+        "type": "misconception_probe",
+        "stem": "A pupil says: 'The internet is inside my computer.' What would you say to help them understand?",
+        "expected": "The internet is not inside any computer. It is a network of networks connecting millions of devices. Your computer connects to the internet through a router.",
+        "kc_ids": ["KC-NET-01", "KC-NET-02"],
+        "misconception_targeted": "The internet is inside my computer"
+      },
+      {
+        "type": "explain_in_own_words",
+        "stem": "Explain 'packet' and 'protocol' in your own words.",
+        "expected": "A packet is a small chunk of data. A protocol is a set of rules that computers follow to send and receive packets correctly.",
+        "kc_ids": ["KC-NET-06", "KC-NET-07"],
+        "misconception_targeted": null
+      },
+      {
+        "type": "evaluate_and_justify",
+        "stem": "You find three websites about routers. One is from a computer science teacher, one is from an advert for a router shop, one has no author. Which is most reliable? Why?",
+        "expected": "The computer science teacher's site is most reliable because the author has expertise and no commercial motive. The shop advert is biased. The anonymous site cannot be verified.",
+        "kc_ids": [],
+        "misconception_targeted": "Everything on the internet is true"
+      }
+    ],
     "themes": ["networks", "internet", "digital literacy"],
     "computational_concept": ["networking", "data_representation"],
     "programming_paradigm": null,

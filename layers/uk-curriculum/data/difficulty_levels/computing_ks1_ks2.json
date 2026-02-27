@@ -176,7 +176,7 @@
         "label": "expected",
         "description": "Explaining how data is transmitted across networks using packets and protocols, and understanding how search engines and websites work.",
         "example_task": "When you send an email, how does it get from your computer to someone else's? What are packets?",
-        "example_response": "When I send an email, my computer breaks the message into small pieces called packets. Each packet is labelled with the destination address and sent across the internet. Different packets might take different routes. The receiving computer reassembles the packets in the right order. Protocols like TCP/IP are the rules that ensure packets are sent, received and reassembled correctly.",
+        "example_response": "When I send an email, my computer breaks the message into small pieces called packets. Each packet is labelled with the destination address and sent across the internet. Different packets might take different routes. The receiving computer reassembles the packets in the right order. Protocols are the agreed rules that ensure packets are sent, received and reassembled correctly.",
         "common_errors": [
           "Thinking data travels as one continuous piece rather than in packets",
           "Not understanding that packets can take different routes to the same destination"

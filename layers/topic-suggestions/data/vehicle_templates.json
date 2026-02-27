@@ -85,6 +85,33 @@
     "typical_duration_lessons": 5,
     "subjects": ["Science", "History", "Religious Studies"],
     "key_stages": ["KS2", "KS3", "KS4"],
+    "activity_constraints": [
+      {
+        "activity_type": "research",
+        "rules": {
+          "source_count_minimum": 2,
+          "credibility_rationale_required": true,
+          "output_format_blacklist": ["poster"],
+          "knowledge_check_after": true
+        },
+        "rationale": "Prevents research degenerating into unassessed poster-making. Pupils must evaluate source credibility and demonstrate understanding, not just compile information."
+      },
+      {
+        "activity_type": "presentation",
+        "rules": {
+          "knowledge_check_after": true,
+          "must_answer_original_question": true
+        },
+        "rationale": "Presentation must return to the research question and answer it with evidence, not simply display collected facts."
+      }
+    ],
+    "quality_gates": {
+      "alignment_minimum_pct": 80,
+      "misconception_coverage": "each named misconception must have at least 1 probe and 1 corrective explanation",
+      "cognitive_load_max_new_terms_per_lesson": 6,
+      "structured_talk_minimum_per_lesson": 2,
+      "worked_example_minimum_per_lesson": 1
+    },
     "display_category": "Vehicle Template",
     "display_color": "#0891B2",
     "display_icon": "search"
@@ -310,6 +337,33 @@
     "typical_duration_lessons": 8,
     "subjects": ["Design & Technology"],
     "key_stages": ["KS1", "KS2", "KS3", "KS4"],
+    "activity_constraints": [
+      {
+        "activity_type": "design_make",
+        "rules": {
+          "mechanism_understanding_check": true,
+          "evaluation_against_specification": true,
+          "knowledge_check_after": true
+        },
+        "rationale": "Prevents D&T becoming 'make a nice thing' without understanding. Pupils must demonstrate they understand the mechanism/principle, not just that the product works."
+      },
+      {
+        "activity_type": "evaluate",
+        "rules": {
+          "must_reference_design_brief": true,
+          "must_suggest_improvements": true,
+          "must_explain_material_or_mechanism_choice": true
+        },
+        "rationale": "Evaluation must be technical, not cosmetic. 'Does it work?' is necessary but not sufficient; 'Why does it work? What would improve it?' is the target."
+      }
+    ],
+    "quality_gates": {
+      "alignment_minimum_pct": 80,
+      "misconception_coverage": "each named misconception must have at least 1 probe and 1 corrective explanation",
+      "cognitive_load_max_new_terms_per_lesson": 6,
+      "structured_talk_minimum_per_lesson": 2,
+      "worked_example_minimum_per_lesson": 1
+    },
     "display_category": "Vehicle Template",
     "display_color": "#0891B2",
     "display_icon": "engineering"

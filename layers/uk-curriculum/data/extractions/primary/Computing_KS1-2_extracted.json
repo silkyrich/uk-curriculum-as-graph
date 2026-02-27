@@ -209,7 +209,73 @@
       "complexity_level": 2,
       "is_cross_cutting": false,
       "teaching_weight": 2,
-      "co_teach_hints": []
+      "co_teach_hints": [],
+      "knowledge_components": [
+        {
+          "kc_id": "KC-NET-01",
+          "statement": "A network is two or more connected devices that share data and resources.",
+          "testable_as": "define_and_give_example"
+        },
+        {
+          "kc_id": "KC-NET-02",
+          "statement": "The internet is a global network of networks.",
+          "testable_as": "define_and_distinguish"
+        },
+        {
+          "kc_id": "KC-NET-03",
+          "statement": "The World Wide Web is one service on the internet; email and streaming are others.",
+          "testable_as": "two_option_contrast"
+        },
+        {
+          "kc_id": "KC-NET-04",
+          "statement": "A server stores and provides data or services; a client requests them.",
+          "testable_as": "label_diagram"
+        },
+        {
+          "kc_id": "KC-NET-05",
+          "statement": "A router forwards packets between networks toward their destination.",
+          "testable_as": "label_diagram"
+        },
+        {
+          "kc_id": "KC-NET-06",
+          "statement": "Data is split into packets that may take different routes and are reassembled at the destination.",
+          "testable_as": "explain_in_own_words"
+        },
+        {
+          "kc_id": "KC-NET-07",
+          "statement": "Protocols are shared rules that allow devices to communicate reliably.",
+          "testable_as": "explain_in_own_words"
+        }
+      ],
+      "knowledge_component_progression": [
+        {"from": "KC-NET-01", "to": "KC-NET-02", "rationale": "Must understand a single network before network-of-networks."},
+        {"from": "KC-NET-02", "to": "KC-NET-03", "rationale": "Must understand the internet exists before distinguishing the web as one service on it."},
+        {"from": "KC-NET-01", "to": "KC-NET-04", "rationale": "Roles of server and client only make sense once connected devices are understood."},
+        {"from": "KC-NET-02", "to": "KC-NET-05", "rationale": "Routers connect networks; need internet concept first."},
+        {"from": "KC-NET-05", "to": "KC-NET-06", "rationale": "Packets are what routers forward; routing concept comes first."},
+        {"from": "KC-NET-06", "to": "KC-NET-07", "rationale": "Protocols are the rules that govern how packets are sent; packets concept comes first."}
+      ],
+      "depth_boundary": {
+        "in_scope": [
+          "Networks as connected devices sharing resources",
+          "Internet as a network of networks",
+          "Web as one service; email and streaming as others",
+          "Roles of client, server, router",
+          "Packets as chunks of data; may take different routes",
+          "Protocols as shared rules (named, not detailed)",
+          "Search engines index and rank pages; not all results equally trustworthy"
+        ],
+        "out_of_scope": [
+          "TCP/IP protocol stack detail",
+          "OSI model layers",
+          "DNS resolution process",
+          "HTTP request/response headers",
+          "IP address classes or subnetting",
+          "Detailed packet header structure",
+          "PageRank algorithm internals"
+        ],
+        "rationale": "KS2 pupils need conceptual understanding of how the internet works, not protocol-level detail. Naming TCP/IP is acceptable; explaining TCP vs UDP is not."
+      }
     },
     {
       "concept_id": "CO-KS12-C005",
