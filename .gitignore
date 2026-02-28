@@ -34,11 +34,15 @@ data/extractions/test-frameworks/raw/
 # Quarantine (review before including)
 data/extractions/_quarantine/
 
-# Generated output is tracked for GitHub review access.
+# Generated output — only markdown is tracked (diffable, reviewable).
+# Binary artefacts (PPTX, DOCX) are published via GitHub Releases.
 # IMPORTANT: generated/ contains TEST output (lesson plans, teacher reviews,
 # prototypes). It is NOT canon — do not treat its contents as authoritative
 # when making decisions about the graph model, extraction data, or scripts.
 generated/scripts/
+generated/**/*.json
+generated/**/*.zip
+generated/**/*.png
 
 # Raw curriculum source documents (PDFs — large, regenerable)
 core/data/curriculum-documents/
