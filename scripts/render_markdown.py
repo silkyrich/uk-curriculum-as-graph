@@ -37,6 +37,7 @@ CAPABILITY_LABELS = {
     'prerequisites': 'Prior knowledge links',
     'assessment_alignment': 'Assessment alignment',
     'learner_scaffolding': 'Learner scaffolding',
+    'access_inclusion': 'Access and inclusion',
 }
 
 
@@ -45,45 +46,49 @@ SUBJECT_CAPABILITY_TARGETS = {
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
         'lesson_structure', 'subject_references', 'cross_curricular',
         'vocabulary_definitions', 'success_criteria', 'prerequisites',
-        'learner_scaffolding',
+        'learner_scaffolding', 'access_inclusion',
     ],
     'Geography': [
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
         'lesson_structure', 'subject_references', 'cross_curricular',
         'vocabulary_definitions', 'success_criteria', 'prerequisites',
-        'assessment_alignment', 'learner_scaffolding',
+        'assessment_alignment', 'learner_scaffolding', 'access_inclusion',
     ],
     'Science': [
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
         'lesson_structure', 'subject_references', 'cross_curricular',
         'vocabulary_definitions', 'success_criteria', 'prerequisites',
-        'assessment_alignment', 'learner_scaffolding',
+        'assessment_alignment', 'learner_scaffolding', 'access_inclusion',
     ],
     'English': [
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
         'lesson_structure', 'subject_references', 'cross_curricular',
         'vocabulary_definitions', 'success_criteria', 'prerequisites',
-        'assessment_alignment', 'learner_scaffolding',
+        'assessment_alignment', 'learner_scaffolding', 'access_inclusion',
     ],
     'Art and Design': [
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
         'lesson_structure', 'cross_curricular', 'vocabulary_definitions',
         'success_criteria', 'prerequisites', 'learner_scaffolding',
+        'access_inclusion',
     ],
     'Music': [
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
         'lesson_structure', 'cross_curricular', 'vocabulary_definitions',
         'success_criteria', 'prerequisites', 'learner_scaffolding',
+        'access_inclusion',
     ],
     'Design and Technology': [
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
         'lesson_structure', 'cross_curricular', 'vocabulary_definitions',
         'success_criteria', 'prerequisites', 'learner_scaffolding',
+        'access_inclusion',
     ],
     'Computing': [
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
         'lesson_structure', 'cross_curricular', 'vocabulary_definitions',
         'success_criteria', 'prerequisites', 'learner_scaffolding',
+        'access_inclusion',
     ],
 }
 
@@ -516,6 +521,113 @@ def render_markdown(ctx: StudyContext) -> str:
             _add('---')
             _add('')
 
+    # ── Access and Inclusion (SEND) ─────────────────────────────────
+    _has_send = (ctx.access_requirements or
+                 any(ctx.support_strategies.get(t) for t in ('universal', 'targeted', 'specialist')))
+    if _has_send:
+        _add('## Access and Inclusion')
+        _add('')
+
+        # Likely barriers (medium/high only — low is background noise)
+        medium_high = [ar for ar in ctx.access_requirements
+                       if ar.get('effective_level') in ('medium', 'high')]
+        if medium_high:
+            _add('### Likely barriers')
+            _add('')
+            # Group by level for prose summary
+            high_items = [ar for ar in medium_high if ar.get('effective_level') == 'high']
+            med_items = [ar for ar in medium_high if ar.get('effective_level') == 'medium']
+
+            if high_items:
+                high_parts = []
+                for ar in high_items:
+                    # Find a representative rationale from the concepts
+                    rationale = ''
+                    for c in ar.get('concepts', []):
+                        if c.get('rationale'):
+                            rationale = c['rationale']
+                            break
+                    name = ar.get('name', ar.get('access_req_id', ''))
+                    high_parts.append(f"**{name}**" + (f" ({rationale})" if rationale else ''))
+                _add(f"This study has **high** demands on: {', '.join(high_parts)}.")
+                _add('')
+
+            if med_items:
+                med_parts = []
+                for ar in med_items:
+                    rationale = ''
+                    for c in ar.get('concepts', []):
+                        if c.get('rationale'):
+                            rationale = c['rationale']
+                            break
+                    name = ar.get('name', ar.get('access_req_id', ''))
+                    med_parts.append(f"**{name}**" + (f" ({rationale})" if rationale else ''))
+                _add(f"Moderate demands on: {', '.join(med_parts)}.")
+                _add('')
+
+        # Universal supports (tier=universal)
+        universal = ctx.support_strategies.get('universal', [])
+        if universal:
+            _add('### Universal supports')
+            _add('')
+            _add('Apply by default for all learners:')
+            _add('')
+            for s in universal:
+                desc = s.get('description', '')
+                _add(f"- **{s['name']}**" + (f" — {desc}" if desc else ''))
+            _add('')
+
+        # Targeted options (tier=targeted)
+        targeted = ctx.support_strategies.get('targeted', [])
+        if targeted:
+            _add('### Targeted options')
+            _add('')
+            for s in targeted:
+                desc = s.get('description', '')
+                mitigates = s.get('mitigates', [])
+                line = f"- **{s['name']}**"
+                if desc:
+                    line += f" — {desc}"
+                if mitigates:
+                    line += f" *(targets: {', '.join(mitigates)})*"
+                _add(line)
+            _add('')
+
+        # Construct warnings
+        cw = [w for w in ctx.construct_warnings
+              if w.get('construct_risk') in ('conditional', 'high')]
+        if cw:
+            _add('### Use with caution')
+            _add('')
+            for w in cw:
+                risk = w.get('construct_risk', '')
+                blocked = w.get('blocked_when_assessing', [])
+                if isinstance(blocked, str):
+                    blocked = [blocked] if blocked else []
+                name = w.get('strategy_name', '')
+                line = f"- **{name}** — construct risk: **{risk}**"
+                if blocked:
+                    line += f". Unsafe when assessing: {', '.join(blocked)}"
+                _add(line)
+            _add('')
+
+        # Adult mediation needed
+        adult_strategies = []
+        for tier_key in ('targeted', 'specialist'):
+            for s in ctx.support_strategies.get(tier_key, []):
+                if s.get('requires_adult'):
+                    adult_strategies.append(s)
+        if adult_strategies:
+            _add('### Adult mediation may be needed')
+            _add('')
+            for s in adult_strategies:
+                desc = s.get('description', '')
+                _add(f"- **{s['name']}**" + (f" — {desc}" if desc else ''))
+            _add('')
+
+        _add('---')
+        _add('')
+
     # ── Knowledge organiser ───────────────────────────────────────
     ko_definitions = ctx.study.get('definitions', [])
     if isinstance(ko_definitions, str):
@@ -839,6 +951,7 @@ def _capability_state(ctx: StudyContext) -> dict[str, bool]:
         'prerequisites': bool(ctx.prerequisites),
         'assessment_alignment': bool(ctx.assessment_codes),
         'learner_scaffolding': bool(ctx.learner_profile),
+        'access_inclusion': bool(ctx.access_requirements),
     }
 
 

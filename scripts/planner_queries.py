@@ -94,6 +94,12 @@ class StudyContext:
     assessment_codes: list = field(default_factory=list)
     learner_profile: dict = field(default_factory=dict)
 
+    # SEND support
+    access_requirements: list = field(default_factory=list)
+    support_strategies: dict = field(default_factory=dict)  # {universal: [], targeted: [], specialist: []}
+    construct_warnings: list = field(default_factory=list)
+    send_coverage: dict = field(default_factory=dict)
+
 
 # ── JSON fallback helpers ────────────────────────────────────────────
 
@@ -616,6 +622,224 @@ def query_epistemic_skills(session, domain_ids: list[str]) -> list[dict]:
     return session.run(query, dids=domain_ids).data()
 
 
+# ── SEND support queries ─────────────────────────────────────────────
+
+def query_access_requirements(session, concept_ids: list[str]) -> list[dict]:
+    """Fetch AccessRequirement nodes linked to concepts via HAS_ACCESS_REQUIREMENT.
+
+    Deduplicates by access_req_id, aggregates concept links, and sorts
+    by frequency (most-common-first).  Property names match import_send_support.py:
+    access_req_id, category, construct_sensitive, intensity_default, notes_for_compiler.
+    """
+    if not concept_ids:
+        return []
+    query = """
+        MATCH (c:Concept)-[r:HAS_ACCESS_REQUIREMENT]->(ar:AccessRequirement)
+        WHERE c.concept_id IN $cids
+        RETURN ar.access_req_id AS access_req_id,
+               ar.name AS name,
+               ar.description AS description,
+               ar.category AS category,
+               ar.construct_sensitive AS construct_sensitive,
+               ar.notes_for_compiler AS notes_for_compiler,
+               r.level AS level,
+               r.rationale AS rationale,
+               r.source AS source,
+               c.concept_id AS concept_id,
+               c.name AS concept_name
+    """
+    records = session.run(query, cids=concept_ids).data()
+    if not records:
+        return []
+
+    # Aggregate by access_req_id
+    by_id = {}
+    for r in records:
+        aid = r['access_req_id']
+        if aid not in by_id:
+            by_id[aid] = {
+                'access_req_id': aid,
+                'name': r['name'],
+                'description': r.get('description', ''),
+                'category': r.get('category', ''),
+                'construct_sensitive': r.get('construct_sensitive', False),
+                'notes_for_compiler': r.get('notes_for_compiler', ''),
+                'levels': {},
+                'concepts': [],
+            }
+        # Track highest level per requirement
+        level = r.get('level', 'low')
+        if level:
+            by_id[aid]['levels'][level] = by_id[aid]['levels'].get(level, 0) + 1
+        by_id[aid]['concepts'].append({
+            'concept_id': r['concept_id'],
+            'concept_name': r.get('concept_name', ''),
+            'level': level,
+            'rationale': r.get('rationale', ''),
+        })
+
+    # Compute effective level (highest across concepts)
+    level_order = {'high': 3, 'medium': 2, 'low': 1}
+    result = []
+    for ar in by_id.values():
+        max_level = max(ar['levels'].keys(), key=lambda l: level_order.get(l, 0))
+        ar['effective_level'] = max_level
+        ar['concept_count'] = len(ar['concepts'])
+        result.append(ar)
+
+    # Sort: high first, then by concept count
+    result.sort(key=lambda x: (-level_order.get(x['effective_level'], 0), -x['concept_count']))
+    return result
+
+
+def query_support_strategies(session, concept_ids: list[str],
+                              template_ids: list[str] | None = None) -> dict:
+    """Fetch SupportStrategy nodes relevant to concepts.
+
+    Returns dict with keys: universal, targeted, specialist.
+    Each value is a list of strategy dicts.
+
+    Property names match import_send_support.py: support_id (not strategy_id),
+    tier, construct_risk, blocked_when_assessing, requires_adult, prompt_rules.
+
+    Includes strategies linked via:
+    - MITIGATES -> AccessRequirement <- HAS_ACCESS_REQUIREMENT - Concept
+    - CAN_APPLY from VehicleTemplate (if template_ids provided)
+    """
+    if not concept_ids:
+        return {'universal': [], 'targeted': [], 'specialist': []}
+
+    # Find strategies that mitigate access requirements for these concepts
+    query = """
+        MATCH (c:Concept)-[:HAS_ACCESS_REQUIREMENT]->(ar:AccessRequirement)
+              <-[:MITIGATES]-(ss:SupportStrategy)
+        WHERE c.concept_id IN $cids
+        RETURN DISTINCT ss.support_id AS support_id,
+               ss.name AS name,
+               ss.description AS description,
+               ss.tier AS tier,
+               ss.construct_risk AS construct_risk,
+               ss.blocked_when_assessing AS blocked_when_assessing,
+               ss.requires_adult AS requires_adult,
+               ss.prompt_rules AS prompt_rules,
+               ss.ui_implications AS ui_implications,
+               collect(DISTINCT ar.name) AS mitigates
+    """
+    records = session.run(query, cids=concept_ids).data()
+
+    # Also find strategies linked via VehicleTemplate CAN_APPLY
+    template_strategies = {}
+    if template_ids:
+        vt_query = """
+            MATCH (vt:VehicleTemplate)-[ca:CAN_APPLY]->(ss:SupportStrategy)
+            WHERE vt.template_id IN $tids
+            RETURN DISTINCT ss.support_id AS support_id,
+                   ss.name AS name,
+                   ss.description AS description,
+                   ss.tier AS tier,
+                   ss.construct_risk AS construct_risk,
+                   ss.blocked_when_assessing AS blocked_when_assessing,
+                   ss.requires_adult AS requires_adult,
+                   ss.prompt_rules AS prompt_rules,
+                   ss.ui_implications AS ui_implications,
+                   ca.default AS is_default,
+                   ca.notes AS apply_notes
+        """
+        vt_records = session.run(vt_query, tids=template_ids).data()
+        for r in vt_records:
+            template_strategies[r['support_id']] = r
+
+    # Merge and deduplicate
+    seen = set()
+    grouped = {'universal': [], 'targeted': [], 'specialist': []}
+    for r in records:
+        sid = r['support_id']
+        if sid in seen:
+            continue
+        seen.add(sid)
+        strategy = {
+            'support_id': sid,
+            'name': r['name'],
+            'description': r.get('description', ''),
+            'tier': r.get('tier', 'universal'),
+            'construct_risk': r.get('construct_risk', 'low'),
+            'blocked_when_assessing': r.get('blocked_when_assessing', []),
+            'requires_adult': r.get('requires_adult', False),
+            'prompt_rules': r.get('prompt_rules', ''),
+            'ui_implications': r.get('ui_implications', ''),
+            'mitigates': r.get('mitigates', []),
+        }
+        # Merge VehicleTemplate info if available
+        if sid in template_strategies:
+            vt_info = template_strategies[sid]
+            strategy['template_default'] = vt_info.get('is_default', False)
+            strategy['template_notes'] = vt_info.get('apply_notes', '')
+        tier = strategy['tier']
+        if tier in grouped:
+            grouped[tier].append(strategy)
+        else:
+            grouped.setdefault('universal', []).append(strategy)
+
+    # Add template-only strategies not already included
+    for sid, r in template_strategies.items():
+        if sid not in seen:
+            seen.add(sid)
+            strategy = {
+                'support_id': sid,
+                'name': r['name'],
+                'description': r.get('description', ''),
+                'tier': r.get('tier', 'universal'),
+                'construct_risk': r.get('construct_risk', 'low'),
+                'blocked_when_assessing': r.get('blocked_when_assessing', []),
+                'requires_adult': r.get('requires_adult', False),
+                'prompt_rules': r.get('prompt_rules', ''),
+                'ui_implications': r.get('ui_implications', ''),
+                'mitigates': [],
+                'template_default': r.get('is_default', False),
+                'template_notes': r.get('apply_notes', ''),
+            }
+            tier = strategy['tier']
+            if tier in grouped:
+                grouped[tier].append(strategy)
+
+    return grouped
+
+
+def query_construct_warnings(session, concept_ids: list[str]) -> list[dict]:
+    """Find strategies with construct_risk=conditional or high that relate to these concepts.
+
+    Returns list of {strategy_name, construct_risk, blocked_when_assessing, related_concepts}.
+    Property names match import_send_support.py: support_id, blocked_when_assessing.
+    """
+    if not concept_ids:
+        return []
+    query = """
+        MATCH (c:Concept)-[:HAS_ACCESS_REQUIREMENT]->(ar:AccessRequirement)
+              <-[:MITIGATES]-(ss:SupportStrategy)
+        WHERE c.concept_id IN $cids
+          AND ss.construct_risk IN ['conditional', 'high']
+        RETURN DISTINCT ss.support_id AS support_id,
+               ss.name AS strategy_name,
+               ss.construct_risk AS construct_risk,
+               ss.blocked_when_assessing AS blocked_when_assessing,
+               collect(DISTINCT {concept_id: c.concept_id, concept_name: c.name}) AS related_concepts
+    """
+    records = session.run(query, cids=concept_ids).data()
+    warnings = []
+    for r in records:
+        blocked = r.get('blocked_when_assessing', [])
+        if isinstance(blocked, str):
+            blocked = [blocked] if blocked else []
+        warnings.append({
+            'support_id': r['support_id'],
+            'strategy_name': r['strategy_name'],
+            'construct_risk': r['construct_risk'],
+            'blocked_when_assessing': blocked,
+            'related_concepts': r.get('related_concepts', []),
+        })
+    return warnings
+
+
 # ── JSON fallback for references ─────────────────────────────────────
 
 def _fallback_references(study_json: dict, label: str) -> dict:
@@ -847,6 +1071,19 @@ def fetch_study_context(session, label: str, study_id: str) -> StudyContext | No
             year_groups = [year_groups] if year_groups else []
     learner_profile = query_learner_profile(session, year_groups) if year_groups else {}
 
+    # SEND support (access requirements + support strategies + construct warnings)
+    access_requirements = query_access_requirements(session, concept_ids)
+    support_strategies = query_support_strategies(session, concept_ids, template_ids)
+    construct_warnings = query_construct_warnings(session, concept_ids)
+
+    send_coverage = {
+        'access_requirements': len(access_requirements),
+        'universal': len(support_strategies.get('universal', [])),
+        'targeted': len(support_strategies.get('targeted', [])),
+        'specialist': len(support_strategies.get('specialist', [])),
+        'construct_warnings': len(construct_warnings),
+    }
+
     return StudyContext(
         study=study,
         label=label,
@@ -865,6 +1102,10 @@ def fetch_study_context(session, label: str, study_id: str) -> StudyContext | No
         prerequisites=prerequisites,
         assessment_codes=assessment_codes,
         learner_profile=learner_profile,
+        access_requirements=access_requirements,
+        support_strategies=support_strategies,
+        construct_warnings=construct_warnings,
+        send_coverage=send_coverage,
     )
 
 

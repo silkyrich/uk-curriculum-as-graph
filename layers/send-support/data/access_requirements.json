@@ -1,0 +1,290 @@
+[
+  {
+    "access_req_id": "language_load",
+    "name": "Language Load",
+    "category": "communication",
+    "description": "The volume and complexity of spoken or written language a child must process to access the learning. High language load means the concept is explained, practised and assessed through extended prose, complex sentence structures, or domain-specific vocabulary embedded in dense text. A child with receptive language difficulties or EAL may understand the underlying concept perfectly well but be blocked by the linguistic wrapper around it.",
+    "intensity_default": "medium",
+    "construct_sensitive": true,
+    "examples": [
+      "Y3 reading comprehension requiring inference from a two-paragraph passage",
+      "Y4 maths word problem with three clauses: 'Ava had 347 stickers. She gave 128 to Ben and then received 56 more from her teacher. How many does she have now?'",
+      "KS1 science instruction: 'Sort these materials into groups based on whether they are natural or man-made'"
+    ],
+    "notes_for_compiler": "When language_load is high and the child has SLCN or EAL needs, consider: chunking instructions into single-clause steps, pre-teaching key vocabulary before the activity, providing visual supports alongside text. Do NOT simplify the mathematical or scientific concept itself — simplify the language around it.",
+    "tagged_as": ["communication_and_interaction", "cognition_and_learning"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "decoding_demand",
+    "name": "Decoding Demand",
+    "category": "literacy",
+    "description": "The extent to which the task requires a child to read and decode written text independently. High decoding demand means the child must read passages, instructions, or stimulus material as a prerequisite to accessing the actual learning objective. For children with dyslexia or delayed phonics, this creates a double load: they are working on decoding when they should be thinking about the concept.",
+    "intensity_default": "medium",
+    "construct_sensitive": true,
+    "examples": [
+      "Y2 maths: reading a word problem independently before attempting the calculation",
+      "KS2 science: reading a method card to set up an investigation",
+      "Y3 history: reading a source text to answer comprehension questions about the Great Fire of London"
+    ],
+    "notes_for_compiler": "When decoding_demand is high, consider whether reading IS the learning objective. If yes (e.g. EN-KS1-C006 Decoding), the demand is construct-relevant and must not be removed. If no (e.g. a maths word problem), offer the text via TTS or adult reading so the child can focus on the target concept.",
+    "tagged_as": ["cognition_and_learning"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "vocabulary_novelty",
+    "name": "Vocabulary Novelty",
+    "category": "communication",
+    "description": "The number of unfamiliar or domain-specific words a child encounters in a single learning sequence. High vocabulary novelty means the child must learn and hold in working memory several new terms simultaneously while also learning the underlying concept. For children with language difficulties or limited vocabulary depth, each new term is a processing bottleneck.",
+    "intensity_default": "medium",
+    "construct_sensitive": false,
+    "examples": [
+      "Y3 science introducing 'igneous', 'sedimentary' and 'metamorphic' in the same lesson",
+      "Y1 maths introducing 'greater than', 'less than', 'equal to', 'most' and 'least' together",
+      "Y4 English teaching 'subordinate clause', 'main clause', 'conjunction' and 'fronted adverbial' in a grammar block"
+    ],
+    "notes_for_compiler": "Pre-teach vocabulary before the concept lesson. Use visual vocabulary cards with picture support. Limit the number of new terms introduced per session — ideally 2-3 maximum for children with SLCN needs. Revisit vocabulary at the start of subsequent sessions using retrieval practice.",
+    "tagged_as": ["communication_and_interaction", "cognition_and_learning"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "multi_step_instruction_demand",
+    "name": "Multi-Step Instruction Demand",
+    "category": "processing",
+    "description": "The number of sequential steps a child must hold in working memory and execute in order. High multi-step demand means the task requires following 3 or more steps without repetition or visual reminder. This is particularly challenging for children with working memory difficulties, ADHD, or receptive language needs, who may process step 1 but lose steps 2 and 3 before they can act on them.",
+    "intensity_default": "medium",
+    "construct_sensitive": false,
+    "examples": [
+      "Y3 maths column addition: 'Write the numbers one under the other, add the ones column first, if it's more than 9 carry the ten, then add the tens column, remember to include the carried ten'",
+      "KS2 science investigation: 'Fill the beaker to the line, add the salt, stir until dissolved, measure the temperature, record in the table'",
+      "Y2 English: 'Think of your sentence, say it out loud, count the words on your fingers, write each word, read it back to check it makes sense'"
+    ],
+    "notes_for_compiler": "Break multi-step sequences into individual steps with visual checklists. Use 'now/next' boards showing only the current step and the upcoming step. Allow the child to complete each step before revealing the next. Consider whether a task strip or visual flow chart can replace verbal instruction.",
+    "tagged_as": ["cognition_and_learning", "social_emotional_mental_health"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "working_memory_load",
+    "name": "Working Memory Load",
+    "category": "processing",
+    "description": "The amount of information a child must hold and manipulate simultaneously in working memory to complete the task. High working memory load means the child must retain partial results, track their position in a procedure, remember contextual information, and produce output all at once. This is distinct from multi-step instruction demand: working memory load refers to simultaneous holding, not sequential following.",
+    "intensity_default": "medium",
+    "construct_sensitive": false,
+    "examples": [
+      "Y4 maths long multiplication: holding the partial product of the ones while calculating the tens product",
+      "Y3 English composition: holding the sentence idea, the spelling of each word, punctuation rules, and handwriting formation simultaneously",
+      "KS2 science: remembering the prediction while collecting data and comparing results"
+    ],
+    "notes_for_compiler": "Provide external memory supports: jottings space, number lines, working-out boxes, key facts displayed on screen. Allow the child to offload partial results onto paper or screen before moving to the next step. Reduce the number of elements the child must hold simultaneously — for example, provide a word bank so spelling doesn't consume working memory during composition.",
+    "tagged_as": ["cognition_and_learning", "social_emotional_mental_health"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "sustained_attention_demand",
+    "name": "Sustained Attention Demand",
+    "category": "executive_function",
+    "description": "The length of time a child must maintain focused attention on a single task without a break or change of activity. High sustained attention demand means the task requires 10+ minutes of continuous, focused effort without natural pausing points. Children with ADHD, anxiety, or fatigue-related conditions find sustained attention genuinely effortful — this is a neurological difference, not a willingness issue.",
+    "intensity_default": "medium",
+    "construct_sensitive": false,
+    "examples": [
+      "Y4 extended writing: drafting a narrative over 20 minutes",
+      "KS2 maths: completing a sheet of 30 practice calculations",
+      "Y3 reading: sustained silent reading of a chapter book passage"
+    ],
+    "notes_for_compiler": "Build in natural break points every 5-8 minutes. Use chunked task design: present 5 questions at a time rather than 30 on one page. Allow movement breaks between chunks. Vary the modality within a session (read, then talk, then write, then draw). Avoid penalising slower pace — the child may need longer but produce equivalent quality.",
+    "tagged_as": ["social_emotional_mental_health"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "task_switching_demand",
+    "name": "Task Switching Demand",
+    "category": "executive_function",
+    "description": "The frequency with which a child must shift between different types of thinking, activities, or response modes within a single learning sequence. High task switching demand means rapid alternation between reading, calculating, drawing, discussing, and writing. Children with executive function difficulties (common in ADHD and autism) experience a measurable cognitive cost at each switch, losing time and accuracy.",
+    "intensity_default": "low",
+    "construct_sensitive": false,
+    "examples": [
+      "Y3 maths investigation: read the problem, discuss with a partner, try with equipment, record in a table, write a conclusion",
+      "KS2 science: observe, draw, measure, record, predict, test, conclude — all within one lesson",
+      "Y2 English: listen to a story, act it out, then write your own version"
+    ],
+    "notes_for_compiler": "Provide clear signals and transition warnings before each switch ('In one minute we will stop drawing and start writing'). Use visual timetables showing the sequence of activities within a session. Reduce unnecessary switches — if a child is writing well, let them continue rather than forcing a transition to a different activity.",
+    "tagged_as": ["social_emotional_mental_health", "cognition_and_learning"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "fine_motor_output_demand",
+    "name": "Fine Motor Output Demand",
+    "category": "physical",
+    "description": "The extent to which the task requires precise hand and finger movements for writing, drawing, cutting, manipulating small objects, or using a keyboard/mouse. High fine motor demand means the quality of the child's learning output depends on their physical dexterity. Children with dyspraxia, hypermobility, cerebral palsy, or developmental coordination disorder may understand the concept perfectly but be unable to demonstrate this through fine motor output.",
+    "intensity_default": "medium",
+    "construct_sensitive": true,
+    "examples": [
+      "Y1 handwriting: forming letters on lined paper with correct orientation and sizing",
+      "KS1 maths: drawing shapes accurately using a ruler",
+      "Y3 science: cutting out labels and sticking them onto a diagram in the correct positions"
+    ],
+    "notes_for_compiler": "When fine_motor_output_demand is high, determine whether motor skill IS the learning objective (e.g. EN-KS1-C031 Handwriting). If yes, the demand is construct-relevant — consider adapted tools (pencil grips, slope boards) rather than removal. If no (e.g. recording science results), offer alternative output methods: verbal response, drag-and-drop, voice-to-text, pre-printed labels.",
+    "tagged_as": ["sensory_and_physical"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "handwriting_copying_load",
+    "name": "Handwriting / Copying Load",
+    "category": "physical",
+    "description": "The volume of handwriting or text copying required to complete the task. This is distinct from fine motor demand: a child might have adequate letter formation but be extremely slow or fatigued by volume. High copying load means the child spends more cognitive energy on the act of writing than on the thinking the writing is meant to capture. Children with dysgraphia, dyspraxia, or hypermobility experience genuine physical fatigue and pain from extended writing.",
+    "intensity_default": "medium",
+    "construct_sensitive": true,
+    "examples": [
+      "Y3 English: writing a full narrative of 150+ words",
+      "KS2 science: copying a table from the board and then filling in results",
+      "Y4 maths: writing out 20 long multiplication calculations showing all working"
+    ],
+    "notes_for_compiler": "When handwriting IS the learning objective, the load is construct-relevant but should be managed with rest breaks and realistic quantity expectations. When writing is merely the recording medium (maths working, science results), offer alternatives: digital input, voice recording, scribed response, partially completed templates. Never use handwriting quantity as a proxy for learning quality.",
+    "tagged_as": ["sensory_and_physical", "cognition_and_learning"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "auditory_processing_reliance",
+    "name": "Auditory Processing Reliance",
+    "category": "sensory",
+    "description": "The extent to which the task relies on the child processing spoken language or sounds as the primary input channel. High auditory reliance means information is delivered verbally with limited visual backup. Children with auditory processing disorder, hearing impairment, or ADHD may receive the sound signal but struggle to parse it into meaningful units — particularly in noisy environments or when the speaker is fast.",
+    "intensity_default": "medium",
+    "construct_sensitive": true,
+    "examples": [
+      "Y1 phonics: discriminating between similar phonemes /b/ and /d/ spoken aloud",
+      "KS2 mental maths: teacher reads a word problem aloud once, child must calculate mentally",
+      "Y3 music: listening to distinguish between pitched and unpitched instruments"
+    ],
+    "notes_for_compiler": "When auditory processing IS the learning objective (e.g. phonics discrimination, music listening), the demand is construct-relevant — slow the pace, allow repetition, reduce background noise. When spoken instruction is just the delivery method, provide visual and written alternatives: on-screen text, visual instructions, written task cards.",
+    "tagged_as": ["sensory_and_physical", "communication_and_interaction"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "visual_crowding_dense_layout",
+    "name": "Visual Crowding / Dense Layout",
+    "category": "sensory",
+    "description": "The visual complexity and density of the materials a child must process. High visual crowding means small font, closely spaced text, busy diagrams, multiple elements competing for attention on a single page, or worksheet layouts with insufficient white space. Children with visual stress, dyslexia, scotopic sensitivity, or visual processing difficulties find crowded layouts genuinely painful or impossible to parse.",
+    "intensity_default": "low",
+    "construct_sensitive": false,
+    "examples": [
+      "Y3 maths worksheet with 40 calculations in 4 columns on a single A4 page",
+      "KS2 science diagram of the digestive system with 15 labels in small font",
+      "Y4 reading comprehension with a double-column text layout and questions alongside"
+    ],
+    "notes_for_compiler": "Use generous spacing between items. Present fewer items per screen/page. Use a clean, uncluttered layout with adequate font size (minimum 14pt for KS1, 12pt for KS2). Provide a reading window or line guide if text is dense. Avoid decorative backgrounds behind text. Use high contrast (dark text on light background or vice versa per child's preference).",
+    "tagged_as": ["sensory_and_physical", "cognition_and_learning"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "sensory_stimulation_load",
+    "name": "Sensory Stimulation Load",
+    "category": "sensory",
+    "description": "The overall level of sensory input (visual, auditory, tactile, proprioceptive) generated by the learning activity or environment. High sensory load means flashing animations, loud audio, multiple simultaneous stimuli, or unpredictable changes that may overwhelm a child's sensory processing system. Children with autism, sensory processing disorder, or anxiety may experience sensory overload leading to shutdown, distress, or flight responses that are neurological, not behavioural.",
+    "intensity_default": "low",
+    "construct_sensitive": false,
+    "examples": [
+      "Animated reward sequences with sounds, movement and colour changes after each correct answer",
+      "Science video with rapid scene changes, dramatic music, and narration simultaneously",
+      "Maths game with time pressure, flashing timer, sound effects and competitive scoring"
+    ],
+    "notes_for_compiler": "Offer a calm, low-stimulation mode: no animations, no sound effects, no time-pressure visuals. Allow the child to control audio volume independently. Avoid flashing or rapid movement unless essential to the learning objective. Provide advance warning of any sudden audio or visual changes. Never use sensory stimulation as a reward mechanism — some children experience rewards as punishing.",
+    "tagged_as": ["sensory_and_physical", "social_emotional_mental_health"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "social_inference_demand",
+    "name": "Social Inference Demand",
+    "category": "social",
+    "description": "The extent to which the task requires understanding implied social meaning, reading between the lines of dialogue, interpreting character motivation, or navigating collaborative social interaction. High social inference demand means the child must decode unstated intentions, sarcasm, idiom, or social conventions to access the learning. Children with autism or social communication difficulties process social information literally and may miss implied meaning that neurotypical peers absorb automatically.",
+    "intensity_default": "low",
+    "construct_sensitive": true,
+    "examples": [
+      "Y3 reading comprehension: 'Why did the character slam the door?' (requires inferring anger from action)",
+      "KS2 English: understanding that 'It's raining cats and dogs' is figurative, not literal",
+      "Y4 PSHE: 'How might Amir feel when his friends whisper and look at him?'"
+    ],
+    "notes_for_compiler": "When social inference IS the learning objective (e.g. EN-KS1-C015 Inference, EN-Y3-C005 Reading comprehension), this demand is construct-relevant. Provide explicit teaching of inference strategies rather than assuming the skill. When social inference is incidental to the task, make implied meaning explicit: 'The author is showing us the character is angry by describing her slamming the door.'",
+    "tagged_as": ["communication_and_interaction"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "time_pressure",
+    "name": "Time Pressure",
+    "category": "executive_function",
+    "description": "The extent to which the task imposes a time limit or implies urgency that may increase anxiety and reduce processing quality. High time pressure means the child must produce responses within a specified window, compete against a visible timer, or keep up with a pace set by the system or teacher. Children with processing speed difficulties, anxiety, perfectionism, or conditions affecting motor output may know the answer but be unable to produce it within the time allowed.",
+    "intensity_default": "low",
+    "construct_sensitive": true,
+    "examples": [
+      "Y2 times tables test: 36 questions in 5 minutes",
+      "KS2 mental maths: 5-second countdown timer per question",
+      "Y4 spelling test: teacher reads the next word before the child has finished writing the previous one"
+    ],
+    "notes_for_compiler": "When speed IS the learning objective (e.g. times table fluency where automaticity is the goal), time pressure is construct-relevant but should be introduced gradually and never punitively. For all other tasks, remove visible timers and countdown clocks. Allow the child to work at their own pace. Never present processing speed as a measure of intelligence. Consider whether 'fluency' can be assessed through accuracy over time rather than speed within a session.",
+    "tagged_as": ["social_emotional_mental_health", "cognition_and_learning"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "abstractness_without_concrete_anchor",
+    "name": "Abstractness Without Concrete Anchor",
+    "category": "conceptual",
+    "description": "The degree to which the concept is presented in abstract symbolic or verbal form without concrete, pictorial or experiential grounding. High abstractness means the child must reason about symbols, rules, or ideas that have no visible or tangible referent. Children with dyscalculia, learning difficulties, or those who are still in the concrete operational stage of development may need significantly longer at the concrete and pictorial stages before abstraction is accessible.",
+    "intensity_default": "medium",
+    "construct_sensitive": false,
+    "examples": [
+      "Y3 maths: jumping straight to column addition with digits without first using Dienes blocks",
+      "Y4 science: explaining evaporation as 'water particles gaining energy and escaping as gas' without demonstrating with wet cloth and a warm surface",
+      "KS2 English: teaching 'subordinate clause' as a grammatical rule without showing examples in real sentences first"
+    ],
+    "notes_for_compiler": "Always provide a concrete or pictorial anchor before introducing abstract notation or terminology. Follow the CPA (Concrete-Pictorial-Abstract) progression. If the child has RepresentationStage data available for this concept, use it. Allow children with learning difficulties to remain at the concrete or pictorial stage longer — abstraction is not a prerequisite for understanding.",
+    "tagged_as": ["cognition_and_learning"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  },
+  {
+    "access_req_id": "open_ended_response_demand",
+    "name": "Open-Ended Response Demand",
+    "category": "conceptual",
+    "description": "The degree to which the task requires an extended, self-structured response rather than selecting from given options or providing a brief factual answer. High open-ended demand means the child must generate, organise, and express their own ideas with minimal scaffolding. Children with executive function difficulties, expressive language needs, or anxiety about 'getting it wrong' may find the lack of structure paralysing — not because they lack ideas, but because they cannot sequence and prioritise them independently.",
+    "intensity_default": "medium",
+    "construct_sensitive": true,
+    "examples": [
+      "Y3 English: 'Write a story about an adventure' with no further structure",
+      "KS2 science: 'Plan your own investigation to find out...' with no method template",
+      "Y4 maths: 'Explain how you know this answer is correct' requiring self-generated reasoning"
+    ],
+    "notes_for_compiler": "When open-ended response IS the learning objective (e.g. composition, investigation planning), the demand is construct-relevant. Provide scaffolding that structures without dictating: sentence starters, planning frames, step-by-step templates, success criteria checklists. When the objective is knowledge or understanding (not composition), offer structured response formats: multiple choice, cloze procedure, matching, sorting, true/false with justification.",
+    "tagged_as": ["cognition_and_learning", "communication_and_interaction", "social_emotional_mental_health"],
+    "display_category": "Access Requirement",
+    "display_color": "#F97316",
+    "display_icon": "warning_amber"
+  }
+]

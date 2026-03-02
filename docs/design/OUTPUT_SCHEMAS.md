@@ -110,6 +110,18 @@ TEACHER_PLANNER
 │   ├── skill_type                  # mapwork | enquiry | fieldwork | ...
 │   └── description
 │
+├── access_and_inclusion            # SEND support — rendered only when data exists
+│   ├── likely_barriers[]           # access requirements with medium/high level
+│   │   └── requirement_name + level + rationale
+│   ├── universal_supports[]        # tier=universal strategies, apply by default
+│   │   └── strategy_name + description
+│   ├── targeted_options[]          # tier=targeted strategies, activate per pupil need
+│   │   └── strategy_name + description + mitigates[]
+│   ├── construct_warnings[]        # construct_risk=conditional|high
+│   │   └── strategy_name + risk_level + blocked_when_assessing[]
+│   └── adult_mediation[]           # requires_adult=true strategies
+│       └── strategy_name + description
+│
 └── notes
     ├── domain_curriculum_context   # what this domain covers and why it matters
     └── cluster_rationale           # why these concepts cluster together
@@ -121,6 +133,24 @@ TEACHER_PLANNER
 - Interaction types (irrelevant for classroom teaching)
 - Feedback profiles (teacher provides feedback, not a system)
 - Full topic suggestion list (only the best-fit vehicle is shown; teacher can browse others)
+
+### SEND Support Integration
+
+SEND support is a **compiler-side support layer** that surfaces access barriers and support strategies within the teacher planner. It does not change the curriculum target -- it changes the access path.
+
+**Teacher Planner** gains an `## Access and Inclusion` section (rendered only when SEND data exists for the study's concepts). This section provides:
+
+- **Likely barriers** -- which access requirements (working memory, decoding, motor control, etc.) are relevant to the concepts in this study, at what level
+- **Universal supports** -- strategies that should be applied by default for all learners (e.g. pre-teaching vocabulary, concrete-first sequencing)
+- **Targeted options** -- strategies that a teacher can activate for specific pupils (e.g. read-aloud, reduced response length)
+- **Construct warnings** -- strategies with `construct_risk=conditional` or `high` that could invalidate assessment if applied when assessing the construct they mitigate (e.g. read-aloud is unsafe when assessing decoding)
+- **Adult mediation** -- strategies that require an adult to implement, flagging where AI-only delivery is insufficient for some learners
+
+Key design principles:
+- **SEND support changes access path, not curriculum target**, unless a human explicitly overrides
+- **Construct-protection rules are mandatory** -- strategies with `construct_risk=high` are never auto-applied in child-facing flows
+- **No diagnostic labels** -- the system models barriers to task access, not diagnoses. A teacher sees "high working memory demand" not "suitable for dyslexia"
+- **No EHCP or medical data** enters the curriculum graph -- this is pure curriculum/support metadata
 
 ### Rendering notes
 
@@ -159,7 +189,14 @@ LLM_CHILD_SESSION_PROMPT
 │   ├── comparative_feedback_ban     # "Never compare to other children or previous performance."
 │   ├── avoid_phrases[]              # e.g. ["Wrong", "Incorrect", "Well done!", "Amazing!"]
 │   ├── sensitive_content_notes      # from topic suggestion (null if none)
-│   └── prerequisite_gate            # "Child has demonstrated [X]. Do not re-teach [X]."
+│   ├── prerequisite_gate            # "Child has demonstrated [X]. Do not re-teach [X]."
+│   └── support_profile              # FUTURE: runtime SEND support profile (not yet implemented)
+│       # When implemented, will contain active support strategies from the
+│       # SEND layer, filtered by construct-protection rules. Strategies with
+│       # construct_risk=high will NEVER be auto-applied. Strategies with
+│       # construct_risk=conditional will be surfaced as warnings to the
+│       # adaptive engine, which decides based on whether the session is
+│       # assessing the gated construct.
 │
 ├── 2_OUTPUT_SCHEMA                  # Exact structure the adaptive engine expects back.
 │   ├── session_meta
@@ -493,6 +530,8 @@ The procedural layer validates the LLM output before serving:
 | InteractionTypes | Omitted | Allowed pick-list | Omitted |
 | PedagogyTechniques | Omitted | Implementation rules | Omitted |
 | Learner Profile (full) | Omitted | Sections 1, 3, 4, 8 | Sections 1, 7 |
+| AccessRequirement | Barriers section | Future: support_profile | Omitted |
+| SupportStrategy | Supports + warnings | Future: support_profile | Omitted |
 
 ---
 

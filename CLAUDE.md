@@ -135,7 +135,25 @@ Each **layer** is self-contained with its own:
    - `display_color = '#10B981'` (Emerald-500), `display_icon = 'settings_input_antenna'`
    - No learner data — pure curriculum design metadata
 
-12. **`layers/oak-content/`** - Oak National Academy (future)
+12. **`layers/send-support/`** - SEND Support Layer (v4.4)
+   - Models barriers to curriculum access and support strategies, NOT diagnoses
+   - 4 `NeedArea` nodes (need_area_id; statutory SEND taxonomy -- reporting only, not execution logic)
+   - 16 `AccessRequirement` nodes (access_req_id; task-side access barriers: language_load, working_memory_load, etc.)
+   - 20 `SupportStrategy` nodes (support_id; universal/targeted/specialist supports)
+   - `(:Concept)-[:HAS_ACCESS_REQUIREMENT {level, rationale, source}]->(:AccessRequirement)` -- concept-level barrier tagging
+   - `(:SupportStrategy)-[:MITIGATES {strength, notes}]->(:AccessRequirement)` -- what helps what
+   - `(:VehicleTemplate)-[:CAN_APPLY {default, notes}]->(:SupportStrategy)` -- template compatibility
+   - `(:InteractionType)-[:ENABLES {quality, notes}]->(:SupportStrategy)` -- interaction capability
+   - `(:AccessRequirement)-[:TAGGED_AS]->(:NeedArea)`, `(:SupportStrategy)-[:COMMONLY_USED_FOR]->(:NeedArea)` -- reporting links
+   - `(:TeachingRequirement)-[:SUPPORTED_BY {notes}]->(:SupportStrategy)` -- teaching req links
+   - Construct-protection: strategies with `construct_risk=high` never auto-applied; `conditional` surfaced as warnings
+   - Teacher planner renders `## Access and Inclusion` section when data exists
+   - Per-type `display_category`: NeedArea = `'SEND Need Area'` (`#E11D48`), AccessRequirement = `'Access Requirement'` (`#F97316`), SupportStrategy = `'Support Strategy'` (`#22C55E`)
+   - No learner diagnostic data -- pure curriculum/support metadata
+   - Scripts: `import_send_support.py`, `validate_send_support.py`
+   - Data: `layers/send-support/data/`
+
+13. **`layers/oak-content/`** - Oak National Academy (future)
    - Content provider mapping
    - Script: `import_oak_content.py`
 
@@ -195,6 +213,9 @@ python3 core/migrations/create_concept_skill_links.py
 # Delivery mode classification (run after all enrichment layers)
 python3 layers/uk-curriculum/scripts/classify_delivery_modes.py
 python3 layers/uk-curriculum/scripts/import_delivery_modes.py
+
+# SEND support (run after curriculum + delivery modes; depends on UK + learner-profiles + topic-suggestions)
+python3 layers/send-support/scripts/import_send_support.py
 
 # Assessment layer (optional, depends on UK)
 python3 layers/assessment/scripts/import_test_frameworks.py
@@ -307,6 +328,11 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:FeedbackProfile` — tone, gamification safety, metacognitive prompts per Year
 - `:PedagogyTechnique` — 5 desirable difficulty techniques with evidence base and implementation notes
 
+**SEND Support:**
+- `:NeedArea` — 4 statutory SEND categories (reporting taxonomy, not execution logic)
+- `:AccessRequirement` — 16 task-side access barriers (working_memory_load, decoding_demand, etc.)
+- `:SupportStrategy` — 20 support strategies with tier (universal/targeted/specialist) and construct_risk
+
 **NO namespace labels** - Each node has ONE semantic label (e.g., `:Objective`, not `:Curriculum:Objective`)
 
 ### Provenance Property
@@ -320,6 +346,9 @@ All nodes have `display_category` property:
 - `"Topic Suggestion"` — study/unit nodes (HistoryStudy, GeoStudy, etc.)
 - `"Subject Reference"` — reference nodes (GeoPlace, Misconception, Genre, etc.)
 - `"Vehicle Template"` — VehicleTemplate nodes
+- `"SEND Need Area"` — NeedArea nodes
+- `"Access Requirement"` — AccessRequirement nodes
+- `"Support Strategy"` — SupportStrategy nodes
 - `"Structure"`
 
 ### Key Relationships
@@ -394,6 +423,15 @@ All nodes have `display_category` property:
 (:PedagogyProfile)-[:USES_TECHNIQUE]->(:PedagogyTechnique)
 (:PedagogyProfile)-[:INTRODUCES_TECHNIQUE]->(:PedagogyTechnique) // first year of introduction
 (:PedagogyTechnique)-[:REQUIRES]->(:PedagogyTechnique)           // pedagogy curriculum
+
+// SEND support (barrier-first model, no diagnostic labels)
+(:Concept)-[:HAS_ACCESS_REQUIREMENT {level, rationale, source}]->(:AccessRequirement)  // concept-level barriers
+(:SupportStrategy)-[:MITIGATES {strength, notes}]->(:AccessRequirement)                // what helps what
+(:VehicleTemplate)-[:CAN_APPLY {default, notes}]->(:SupportStrategy)                   // template compatibility
+(:InteractionType)-[:ENABLES {quality, notes}]->(:SupportStrategy)                     // interaction capability
+(:AccessRequirement)-[:TAGGED_AS]->(:NeedArea)                                         // reporting taxonomy only
+(:SupportStrategy)-[:COMMONLY_USED_FOR]->(:NeedArea)                                   // broad need-area association
+(:TeachingRequirement)-[:SUPPORTED_BY {notes}]->(:SupportStrategy)                     // teaching req links
 ```
 
 ---
@@ -477,6 +515,7 @@ Every feature that introduces or modifies data processing must:
 - Difficulty levels (grounded difficulty tiers)? → `layers/uk-curriculum/data/difficulty_levels/` + `import_difficulty_levels.py`
 - Representation stages (CPA framework for primary maths)? → `layers/uk-curriculum/data/representation_stages/` + `import_representation_stages.py`
 - Delivery readiness / teachability classification? → `layers/uk-curriculum/data/delivery_modes/` + `classify_delivery_modes.py` + `import_delivery_modes.py`
+- SEND support / access requirements / support strategies? → `layers/send-support/data/` + `import_send_support.py`
 - What can the AI platform teach? → `docs/design/PLAN_DELIVERY_MODE_CLASSIFICATION.md`
 - User stories? → `docs/user-stories/`
 - Schema definition? → `core/scripts/create_schema.py`
@@ -757,6 +796,10 @@ class LayerImporter:
 - No learner data — pure curriculum design metadata
 
 🚧 **In progress:**
+- SEND Support Layer (v4.4): data authoring, import scripts, compiler integration
+  - 4 NeedArea + 16 AccessRequirement + 20 SupportStrategy nodes designed
+  - Teacher planner Access and Inclusion section integrated in compiler
+  - Import script + validation script in development
 - Per-subject ontology Phase 4: remaining gaps (RS KS4, Citizenship KS4, additional set texts)
 - DifficultyLevel: PE KS3-KS4 (55 concepts remaining — sport-specific assessment framework needed)
 - Oak National Academy content (skeleton only)
@@ -802,6 +845,10 @@ class LayerImporter:
 ❌ Change delivery mode classification rules without re-running the full classification - The script is the source of truth; edit the rules in `classify_delivery_modes.py`, then rerun
 ❌ Use a universal TopicSuggestion label for all subjects - Each subject has its own typed label (HistoryStudy, GeoStudy, etc.) with subject-specific properties
 ❌ Reference old ContentVehicle or Topic nodes - These have been replaced by the per-subject ontology (v4.2) and archived to `layers/_archived/`
+❌ Store medical diagnoses or EHCP data in the curriculum graph - The SEND layer models barriers to task access, not diagnoses
+❌ Create diagnosis-to-action execution logic (e.g. "dyslexia = always use read-aloud") - The system maps access requirements to support strategies, never labels to actions
+❌ Auto-apply construct_risk=high strategies in child-facing flows - These must be human-gated
+❌ Edit SEND data directly in the graph - Edit JSON files in `layers/send-support/data/`, rerun `import_send_support.py --clear`
 
 ### Privacy & Compliance (Non-Negotiable)
 ❌ Store child's name, school, or any PII in the learning event log - Identity and events are architecturally separated

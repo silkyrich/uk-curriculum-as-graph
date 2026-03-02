@@ -1,0 +1,618 @@
+[
+  {
+    "support_id": "SS-01",
+    "name": "Chunked Instructions",
+    "tier": "universal",
+    "description": "Breaking multi-step instructions into individual steps, presented one at a time with visual numbering. The child completes each step before the next is revealed. This reduces working memory load and prevents the common pattern where a child hears a 4-step instruction, begins step 1, and by the time they finish has forgotten steps 2-4.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Present each instruction as a single, clear sentence",
+      "Number steps visually (Step 1, Step 2...)",
+      "Wait for confirmation or completion before revealing the next step",
+      "Use consistent phrasing: 'First... Next... Then... Finally...'",
+      "Limit to 1 action per step for children flagged as needing this support"
+    ],
+    "ui_implications": [
+      "Progressive disclosure of task steps",
+      "Visual step counter showing current position",
+      "Ability to revisit previous steps without losing current work"
+    ],
+    "review_notes": "Universal design strategy — benefits all learners but essential for those with working memory or attention difficulties. No risk to assessment validity as it changes the presentation, not the content.",
+    "mitigates": [
+      {"access_req_id": "multi_step_instruction_demand", "strength": "strong", "notes": "Directly addresses the core barrier by reducing simultaneous load to 1 step"},
+      {"access_req_id": "working_memory_load", "strength": "moderate", "notes": "Reduces holding requirements but child still needs to process each step"},
+      {"access_req_id": "sustained_attention_demand", "strength": "partial", "notes": "Natural micro-breaks between steps help maintain attention"}
+    ],
+    "commonly_used_for": ["cognition_and_learning", "social_emotional_mental_health"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-02",
+    "name": "Visual Supports",
+    "tier": "universal",
+    "description": "Providing visual representations alongside or instead of verbal/written information: icons, diagrams, picture cues, symbol-supported text, visual timetables, and graphic organisers. Visual supports make abstract information concrete and persistent (the child can refer back to them), reducing reliance on auditory processing and transient memory.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Pair spoken instructions with on-screen visual cues (icons, diagrams)",
+      "Use consistent visual symbols throughout a session — do not change icon meanings",
+      "Provide a visual reference for key vocabulary (word + image + simple definition)",
+      "Use colour coding consistently: same colour = same category/type"
+    ],
+    "ui_implications": [
+      "Icon library for common mathematical and scientific operations",
+      "Visual vocabulary cards displayable alongside task content",
+      "Consistent colour-coding scheme across subjects"
+    ],
+    "review_notes": "Universal design — visual supports benefit all learners. Essential for children with SLCN, autism, hearing impairment, or EAL. No assessment validity risk.",
+    "mitigates": [
+      {"access_req_id": "language_load", "strength": "strong", "notes": "Visual supports bypass linguistic complexity"},
+      {"access_req_id": "auditory_processing_reliance", "strength": "strong", "notes": "Provides visual alternative to auditory channel"},
+      {"access_req_id": "vocabulary_novelty", "strength": "moderate", "notes": "Visual anchor for new terms aids retention"},
+      {"access_req_id": "multi_step_instruction_demand", "strength": "moderate", "notes": "Visual step sequences are persistent and reviewable"}
+    ],
+    "commonly_used_for": ["communication_and_interaction", "cognition_and_learning", "sensory_and_physical"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-03",
+    "name": "Text-to-Speech",
+    "tier": "universal",
+    "description": "Machine reading of on-screen text aloud so the child can listen rather than decode. TTS allows children with reading difficulties to access text-based content through their auditory channel, separating the act of reading from the target learning objective. The child controls playback: play, pause, speed, repeat.",
+    "requires_adult": false,
+    "construct_risk": "conditional",
+    "blocked_when_assessing": ["decoding_demand"],
+    "prompt_rules": [
+      "Offer TTS as an option, never force it — some children prefer to read independently",
+      "Allow the child to control speed, pause and replay",
+      "Highlight each word or sentence as it is read to support tracking",
+      "Use a natural-sounding voice appropriate to the child's age and region"
+    ],
+    "ui_implications": [
+      "TTS toggle accessible from any text-containing screen",
+      "Synchronised text highlighting during playback",
+      "Speed control (0.75x, 1x, 1.25x minimum)",
+      "Per-word or per-sentence replay on tap/click"
+    ],
+    "review_notes": "Conditional construct risk: must be blocked when the learning objective IS decoding or reading fluency. For all other subjects, TTS is a valid access arrangement with no assessment validity impact.",
+    "mitigates": [
+      {"access_req_id": "decoding_demand", "strength": "strong", "notes": "Entirely bypasses decoding — use only when decoding is not the learning objective"},
+      {"access_req_id": "language_load", "strength": "moderate", "notes": "Hearing text read aloud can aid comprehension for some but does not simplify complex sentence structure"},
+      {"access_req_id": "visual_crowding_dense_layout", "strength": "partial", "notes": "Reduces visual processing demand by allowing auditory access to text content"}
+    ],
+    "commonly_used_for": ["cognition_and_learning", "sensory_and_physical"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-04",
+    "name": "Vocabulary Pre-Teaching",
+    "tier": "universal",
+    "description": "Explicitly teaching key vocabulary before the main lesson begins, so that unfamiliar terms do not block access to the concept. Pre-teaching uses the define-show-use-check pattern: define the word simply, show it in context with visual support, use it in a sentence, then check the child can use it themselves. Typically targets 2-4 key words per session.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Identify the 2-4 most critical terms for the upcoming concept",
+      "Present each word with: simple definition + picture/diagram + example sentence",
+      "Ask the child to use the word in their own sentence before proceeding",
+      "Display pre-taught words in a persistent vocabulary panel during the lesson",
+      "Revisit vocabulary at the start of the next session (retrieval practice)"
+    ],
+    "ui_implications": [
+      "Vocabulary panel that can be shown/hidden during a session",
+      "Pre-teaching sequence before main lesson content",
+      "Persistent key-word display during task completion"
+    ],
+    "review_notes": "Universal design strategy with strong evidence base (EEF Tier 1). No assessment validity risk — knowing the words is a prerequisite for accessing the concept, not a substitute for understanding it.",
+    "mitigates": [
+      {"access_req_id": "vocabulary_novelty", "strength": "strong", "notes": "Directly addresses the barrier by front-loading vocabulary acquisition"},
+      {"access_req_id": "language_load", "strength": "moderate", "notes": "Reduces one component of language load — the unknown word barrier"},
+      {"access_req_id": "abstractness_without_concrete_anchor", "strength": "partial", "notes": "Visual definitions provide a concrete anchor for abstract terms"}
+    ],
+    "commonly_used_for": ["communication_and_interaction", "cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-05",
+    "name": "Reduced Visual Clutter",
+    "tier": "universal",
+    "description": "Simplifying the visual layout of materials: fewer items per screen, larger font, more white space, reduced decorative elements, high-contrast colour scheme, and clear visual hierarchy. This is not 'dumbing down' — it is removing visual noise that interferes with cognitive processing.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Present no more than 5-6 items per screen for KS1, 8-10 for KS2",
+      "Use minimum 14pt font for KS1, 12pt for KS2",
+      "Ensure clear spacing between questions or task elements",
+      "Avoid decorative backgrounds behind text or working areas",
+      "Use a maximum of 3 colours per screen (excluding images)"
+    ],
+    "ui_implications": [
+      "Clean layout mode toggle",
+      "Adjustable font size",
+      "High-contrast mode option",
+      "Pagination of large question sets into smaller batches"
+    ],
+    "review_notes": "Universal design with particular benefit for children with dyslexia, visual stress, or autism. No assessment validity risk.",
+    "mitigates": [
+      {"access_req_id": "visual_crowding_dense_layout", "strength": "strong", "notes": "Directly addresses visual complexity"},
+      {"access_req_id": "sustained_attention_demand", "strength": "partial", "notes": "Less visual overload reduces attentional fatigue"},
+      {"access_req_id": "sensory_stimulation_load", "strength": "moderate", "notes": "Reduces one channel of sensory input"}
+    ],
+    "commonly_used_for": ["sensory_and_physical", "cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-06",
+    "name": "Calm / Low-Stimulation Mode",
+    "tier": "universal",
+    "description": "A presentation mode that removes or minimises sensory stimulation: no animations, no sound effects, no gamification elements, no time pressure visuals, muted colour palette, and minimal transitions. Essential for children with sensory processing difficulties, autism, or anxiety, for whom standard 'engaging' design features are actively distressing.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Disable all animations and transition effects",
+      "Remove sound effects (keep TTS if enabled)",
+      "Remove visible timers, countdown clocks, and progress racing elements",
+      "Use a muted colour palette without bright or flashing elements",
+      "Provide feedback through text only, not through animated celebrations"
+    ],
+    "ui_implications": [
+      "Global calm mode toggle in learner preferences",
+      "Applies across all subjects and sessions",
+      "Must override any session-level gamification or animation settings"
+    ],
+    "review_notes": "Essential accessibility feature. The absence of gamification is not a lesser experience — for the children who need this mode, it IS the better experience.",
+    "mitigates": [
+      {"access_req_id": "sensory_stimulation_load", "strength": "strong", "notes": "Directly removes the sources of sensory overload"},
+      {"access_req_id": "sustained_attention_demand", "strength": "moderate", "notes": "Reduced distraction supports sustained focus"},
+      {"access_req_id": "time_pressure", "strength": "moderate", "notes": "Removing visible timers reduces time anxiety"}
+    ],
+    "commonly_used_for": ["sensory_and_physical", "social_emotional_mental_health"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-07",
+    "name": "Extended Processing Time",
+    "tier": "universal",
+    "description": "Allowing the child more time to process information and formulate responses without any time pressure or implied urgency. This is not 'extra time' in the exam access arrangement sense — it is the removal of time constraints that have no pedagogical justification. Processing speed varies naturally across children; slower processing does not indicate lower understanding.",
+    "requires_adult": false,
+    "construct_risk": "conditional",
+    "blocked_when_assessing": ["time_pressure"],
+    "prompt_rules": [
+      "Never impose time limits unless speed is the explicit learning objective",
+      "Wait at least 7-10 seconds after asking a question before prompting again",
+      "Do not display countdown timers or progress bars that imply urgency",
+      "Allow the child to request the question be repeated or rephrased",
+      "Adjust session length rather than pace — a shorter session at the child's pace is better than a long session at forced speed"
+    ],
+    "ui_implications": [
+      "No default time limits on responses",
+      "Configurable wait time before hints appear",
+      "Session duration based on items completed, not clock time"
+    ],
+    "review_notes": "Conditional construct risk: when the learning objective IS fluency/automaticity (e.g. times tables recall speed), processing time is construct-relevant. For all other objectives, extended time is a valid and recommended adjustment.",
+    "mitigates": [
+      {"access_req_id": "time_pressure", "strength": "strong", "notes": "Directly removes the source of time anxiety"},
+      {"access_req_id": "working_memory_load", "strength": "moderate", "notes": "More time allows the child to process sequentially rather than holding everything simultaneously"},
+      {"access_req_id": "sustained_attention_demand", "strength": "partial", "notes": "Self-paced work reduces fatigue compared to externally paced work"}
+    ],
+    "commonly_used_for": ["cognition_and_learning", "social_emotional_mental_health"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-08",
+    "name": "Sentence Starters / Frames",
+    "tier": "targeted",
+    "description": "Providing the opening words or structure of a response so the child can focus on the content rather than the composition. Sentence starters reduce the executive function demand of generating and organising language from scratch. They range from simple openers ('I think... because...') to full frames with multiple slots ('The ___ is similar to the ___ because they both ___').",
+    "requires_adult": false,
+    "construct_risk": "conditional",
+    "blocked_when_assessing": ["open_ended_response_demand"],
+    "prompt_rules": [
+      "Provide 2-3 sentence starters for each response opportunity",
+      "Vary the complexity of starters to match the child's current level",
+      "Include the target vocabulary in the starter where possible",
+      "Offer starters as optional support, not mandatory templates",
+      "Withdraw starters gradually as the child gains confidence"
+    ],
+    "ui_implications": [
+      "Clickable/tappable sentence starter chips below the response area",
+      "Starters inserted into the response field when selected",
+      "Option to dismiss starters for children who do not need them"
+    ],
+    "review_notes": "Conditional construct risk: when the learning objective IS free composition or argument construction, starters may scaffold beyond the intended difficulty. Use with care in writing assessment contexts.",
+    "mitigates": [
+      {"access_req_id": "open_ended_response_demand", "strength": "strong", "notes": "Provides the structural scaffold that reduces executive function demand"},
+      {"access_req_id": "language_load", "strength": "moderate", "notes": "Models the expected language register and vocabulary"},
+      {"access_req_id": "working_memory_load", "strength": "moderate", "notes": "Reduces the need to hold sentence structure in memory while composing content"}
+    ],
+    "commonly_used_for": ["communication_and_interaction", "cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-09",
+    "name": "Concrete Manipulatives (Extended)",
+    "tier": "targeted",
+    "description": "Maintaining access to physical or on-screen manipulatives beyond the point where the curriculum typically moves to pictorial or abstract representation. Some children with dyscalculia or learning difficulties need to remain at the concrete stage significantly longer than their peers. This is a pedagogically valid position — concrete understanding IS mathematical understanding, not a lesser version of it.",
+    "requires_adult": false,
+    "construct_risk": "conditional",
+    "blocked_when_assessing": ["abstractness_without_concrete_anchor"],
+    "prompt_rules": [
+      "Provide on-screen manipulatives (place value counters, fraction bars, number lines) alongside abstract notation",
+      "Allow the child to toggle between concrete and abstract representations",
+      "Do not force transition to abstract until the child demonstrates fluency at the concrete level",
+      "Reference the concept's RepresentationStage transition_cue to judge readiness",
+      "Model the link between concrete and abstract explicitly: 'This Dienes stick is worth 10, and we write that as 1 in the tens column'"
+    ],
+    "ui_implications": [
+      "On-screen manipulative tools (draggable place value counters, fraction bars, number lines)",
+      "Toggle between concrete/pictorial/abstract views of the same problem",
+      "Manipulatives remain available even at the abstract presentation stage"
+    ],
+    "review_notes": "Conditional construct risk: if the assessment objective requires abstract calculation without aids (e.g. mental arithmetic fluency), then manipulatives change the construct being assessed. If the objective is understanding the concept, concrete access is valid.",
+    "mitigates": [
+      {"access_req_id": "abstractness_without_concrete_anchor", "strength": "strong", "notes": "Directly provides the concrete anchor the child needs"},
+      {"access_req_id": "working_memory_load", "strength": "moderate", "notes": "Physical/visual representations offload memory to the environment"}
+    ],
+    "commonly_used_for": ["cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-10",
+    "name": "Word Bank",
+    "tier": "targeted",
+    "description": "Providing a curated set of words the child may need during a writing or response task, displayed persistently on screen. This offloads spelling from working memory, allowing the child to focus on content, sentence structure, and ideas. The word bank contains domain-specific vocabulary, connectives, and high-frequency words the child is known to struggle with.",
+    "requires_adult": false,
+    "construct_risk": "conditional",
+    "blocked_when_assessing": ["vocabulary_novelty"],
+    "prompt_rules": [
+      "Include 8-15 words relevant to the current task",
+      "Organise words into categories (e.g. 'key vocabulary', 'connectives', 'useful words')",
+      "Include picture support alongside each word where possible",
+      "Allow the child to tap/click a word to insert it or hear it read aloud",
+      "Do not include words that ARE the learning objective (e.g. if assessing whether the child knows the word 'evaporation', do not put it in the word bank)"
+    ],
+    "ui_implications": [
+      "Persistent word bank panel (hideable)",
+      "Tap-to-insert functionality into response area",
+      "TTS for each word bank entry",
+      "Customisable per session based on concept vocabulary"
+    ],
+    "review_notes": "Conditional construct risk: if the assessment objective includes accurate spelling of specific words, providing those words in a bank removes the assessment target. For all other tasks, word banks are valid support.",
+    "mitigates": [
+      {"access_req_id": "vocabulary_novelty", "strength": "moderate", "notes": "Provides persistent reference but child still needs to select and use words appropriately"},
+      {"access_req_id": "handwriting_copying_load", "strength": "moderate", "notes": "Reduces the need to write from memory — tap-to-insert eliminates copying errors"},
+      {"access_req_id": "working_memory_load", "strength": "moderate", "notes": "Offloads spelling from working memory to the external display"}
+    ],
+    "commonly_used_for": ["cognition_and_learning", "communication_and_interaction"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-11",
+    "name": "Alternative Response Mode",
+    "tier": "targeted",
+    "description": "Allowing the child to demonstrate their understanding through a different output modality than the one assumed by the task. For example: verbal instead of written, drag-and-drop instead of handwriting, drawing instead of writing, voice recording instead of typing. The key principle is that the response mode should not prevent the child from showing what they know.",
+    "requires_adult": false,
+    "construct_risk": "conditional",
+    "blocked_when_assessing": ["fine_motor_output_demand", "handwriting_copying_load"],
+    "prompt_rules": [
+      "Offer at least 2 response modes for each task where the output format is not the learning objective",
+      "Common alternatives: typed text, voice recording, drag-and-drop, multiple choice, drawing",
+      "Do not offer alternatives when the response mode IS the learning objective (e.g. handwriting practice)",
+      "Present alternatives as equally valid choices, not as 'easier options'"
+    ],
+    "ui_implications": [
+      "Response mode selector per task (write / type / speak / drag-and-drop)",
+      "Voice recording with playback for verbal responses",
+      "Drag-and-drop interaction patterns for sorting, matching, ordering",
+      "Drawing canvas for diagram-based responses"
+    ],
+    "review_notes": "Conditional construct risk: when the output modality IS the assessment target (handwriting, spelling, formal written argument), alternative modes change what is being assessed. For all other tasks, alternative modes are valid access arrangements.",
+    "mitigates": [
+      {"access_req_id": "fine_motor_output_demand", "strength": "strong", "notes": "Bypasses fine motor requirements when they are not the learning objective"},
+      {"access_req_id": "handwriting_copying_load", "strength": "strong", "notes": "Eliminates the writing volume barrier entirely"},
+      {"access_req_id": "open_ended_response_demand", "strength": "moderate", "notes": "Verbal responses reduce the composition barrier for children who can talk more fluently than they write"}
+    ],
+    "commonly_used_for": ["sensory_and_physical", "cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-12",
+    "name": "Explicit Inference Teaching",
+    "tier": "targeted",
+    "description": "Directly teaching the strategies for making inferences rather than assuming children can 'read between the lines' naturally. This includes: identifying clue words in text, connecting text evidence to background knowledge, using 'because' chains to build reasoning, and explicitly labelling inference as a skill ('we are going to practise noticing what the author is hinting at'). Essential for children with autism or social communication difficulties who process language literally.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Name the skill explicitly: 'This is an inference — the author doesn't tell us directly, they give us clues'",
+      "Use a consistent framework: 'The text says ___, I know ___, so I think ___'",
+      "Start with visual/concrete examples (facial expressions, body language in images) before text-based inference",
+      "Make the implicit explicit: 'The character is probably feeling angry because the text says she slammed the door'",
+      "Distinguish between inference (evidence-based deduction) and imagination (creative guessing)"
+    ],
+    "ui_implications": [
+      "Inference scaffold template available during reading comprehension tasks",
+      "Clue highlighting tool that allows children to mark evidence in text",
+      "Because-chain builder: 'The text says... I know... So I think...'"
+    ],
+    "review_notes": "Low construct risk because this teaches the strategy rather than providing the answer. The child still has to make the inference — they are given the tool, not the conclusion.",
+    "mitigates": [
+      {"access_req_id": "social_inference_demand", "strength": "strong", "notes": "Directly teaches the skill that the child is missing"},
+      {"access_req_id": "language_load", "strength": "partial", "notes": "Framework reduces the language processing needed to formulate an inference response"}
+    ],
+    "commonly_used_for": ["communication_and_interaction", "cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-13",
+    "name": "Task Breakdown with Visual Checklist",
+    "tier": "targeted",
+    "description": "Providing a visual checklist that decomposes a complex task into discrete, checkable sub-tasks. The child ticks off each element as they complete it, providing a sense of progress and reducing the overwhelm of a large task. This goes beyond chunked instructions (SS-01) by showing the whole task overview with completion tracking.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Break the task into 3-6 visible sub-tasks",
+      "Each sub-task should take no more than 3-5 minutes",
+      "Allow the child to tick/check items as they complete them",
+      "Show progress visually (filled dots, checkmarks, progress bar)",
+      "Celebrate each sub-task completion with a brief acknowledgement"
+    ],
+    "ui_implications": [
+      "Visual checklist component with interactive checkboxes",
+      "Progress indicator showing sub-tasks completed / total",
+      "Collapsible task sections that expand when the child is ready"
+    ],
+    "review_notes": "Low construct risk. The checklist structures the process but does not change the content or reduce the cognitive demand of each sub-task.",
+    "mitigates": [
+      {"access_req_id": "sustained_attention_demand", "strength": "strong", "notes": "Visible progress and completion points sustain motivation"},
+      {"access_req_id": "multi_step_instruction_demand", "strength": "strong", "notes": "Shows all steps with persistent visual reference"},
+      {"access_req_id": "open_ended_response_demand", "strength": "moderate", "notes": "Decomposes an open task into structured sub-tasks"},
+      {"access_req_id": "task_switching_demand", "strength": "moderate", "notes": "Makes transitions between task phases predictable"}
+    ],
+    "commonly_used_for": ["social_emotional_mental_health", "cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-14",
+    "name": "Simplified Language Wrapper",
+    "tier": "targeted",
+    "description": "Rewriting task instructions, questions, and explanations using simpler sentence structures, shorter sentences, and more common vocabulary — while preserving the full complexity of the underlying concept. The mathematical, scientific, or literary idea is not simplified; only the language surrounding it is made more accessible. This requires careful judgement about which words are domain-essential (keep) versus incidental complexity (simplify).",
+    "requires_adult": false,
+    "construct_risk": "conditional",
+    "blocked_when_assessing": ["language_load"],
+    "prompt_rules": [
+      "Use single-clause sentences for instructions",
+      "Replace low-frequency words with common alternatives unless the word is domain-specific vocabulary",
+      "Keep domain-specific vocabulary intact — 'numerator' stays as 'numerator', but 'ascertain' becomes 'find out'",
+      "Break compound sentences into two simple sentences",
+      "Use active voice: 'Add the numbers' not 'The numbers should be added together'"
+    ],
+    "ui_implications": [
+      "Simplified text layer that can be toggled alongside the standard version",
+      "Automatic sentence complexity analysis on generated content"
+    ],
+    "review_notes": "Conditional construct risk: when the learning objective includes understanding complex written English (e.g. KS2 reading comprehension), simplifying the language removes the assessment target. For maths, science, and other subjects, simplified language is valid access support.",
+    "mitigates": [
+      {"access_req_id": "language_load", "strength": "strong", "notes": "Directly reduces linguistic complexity while preserving conceptual difficulty"},
+      {"access_req_id": "vocabulary_novelty", "strength": "moderate", "notes": "Reduces incidental vocabulary demands but retains essential domain terms"},
+      {"access_req_id": "decoding_demand", "strength": "moderate", "notes": "Shorter, simpler words are easier to decode"}
+    ],
+    "commonly_used_for": ["communication_and_interaction", "cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-15",
+    "name": "Worked Example First",
+    "tier": "targeted",
+    "description": "Showing a fully worked example of the type of task the child will be asked to complete before they attempt their own. The worked example is annotated to show the thinking process, not just the answer. This reduces the cognitive load of figuring out both WHAT to do and HOW to do it simultaneously. Particularly effective for procedural tasks in maths and structured writing in English.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Present a complete worked example before the child attempts the task",
+      "Annotate each step: 'First I... then I... because...'",
+      "Use a different but structurally identical example — not the same numbers or context",
+      "Allow the child to refer back to the worked example during their own attempt",
+      "Fade worked examples gradually: full example → partial example → independent attempt"
+    ],
+    "ui_implications": [
+      "Worked example panel that can be shown/hidden",
+      "Step-by-step reveal of the worked example with annotations",
+      "Side-by-side view: worked example + child's working space"
+    ],
+    "review_notes": "Low construct risk when the worked example uses different values/contexts from the assessed task. Strong evidence base from cognitive load theory (Sweller).",
+    "mitigates": [
+      {"access_req_id": "abstractness_without_concrete_anchor", "strength": "moderate", "notes": "Worked examples provide a concrete instance of the abstract procedure"},
+      {"access_req_id": "multi_step_instruction_demand", "strength": "moderate", "notes": "Shows the sequence of steps in action rather than as instructions"},
+      {"access_req_id": "open_ended_response_demand", "strength": "moderate", "notes": "Models the expected format and structure of a response"}
+    ],
+    "commonly_used_for": ["cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-16",
+    "name": "Micro-Breaks",
+    "tier": "targeted",
+    "description": "Scheduled brief pauses within a session, built into the task flow rather than requiring the child to self-regulate. Micro-breaks of 30-90 seconds occur at natural break points (between task sections, after a challenging question). They may include a simple breathing prompt, a brief stretch, or simply a pause screen. These are preventative — they reduce fatigue before it becomes shutdown.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Insert a break point after every 5-8 minutes of focused work",
+      "Keep breaks brief (30-90 seconds) to maintain learning momentum",
+      "Offer a simple calming activity: 'Take 3 deep breaths' or 'Look at something far away for 10 seconds'",
+      "Do not time the break — let the child press 'ready' when they want to continue",
+      "Do not present breaks as rewards or punishment — they are part of the learning design"
+    ],
+    "ui_implications": [
+      "Automatic break insertion at configurable intervals",
+      "Simple break screen with calming visual and 'I'm ready' button",
+      "Break frequency adjustable per learner profile"
+    ],
+    "review_notes": "Low construct risk. Breaks do not change the task demands, they manage the physiological cost of sustained attention.",
+    "mitigates": [
+      {"access_req_id": "sustained_attention_demand", "strength": "strong", "notes": "Prevents attentional fatigue by breaking sustained effort into manageable chunks"},
+      {"access_req_id": "sensory_stimulation_load", "strength": "partial", "notes": "Provides recovery time from accumulated sensory input"},
+      {"access_req_id": "working_memory_load", "strength": "partial", "notes": "Brief reset can help clear working memory for the next task segment"}
+    ],
+    "commonly_used_for": ["social_emotional_mental_health", "sensory_and_physical"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-17",
+    "name": "Adaptive Difficulty Stepping",
+    "tier": "targeted",
+    "description": "Using the DifficultyLevel data to present tasks at a level matched to the child's current attainment, stepping up only when the child demonstrates readiness. For a child working at 'entry' level while peers are at 'expected', this means presenting entry-level tasks with the option to progress — never assuming the child should start where their year group expects. The DifficultyLevel descriptions, example_tasks, and common_errors drive the adaptive presentation.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Start at the difficulty level indicated by the child's current mastery data",
+      "Present the DifficultyLevel's example_task as a model of the expected level",
+      "If the child succeeds at the current level 3 times consecutively, offer the next level",
+      "If the child struggles, do not drop the level immediately — check for access barriers first",
+      "Use the DifficultyLevel's common_errors to provide targeted feedback"
+    ],
+    "ui_implications": [
+      "Difficulty level selector that can be set by parent/SENCO or adapted automatically",
+      "Visual indicator of current working level (without stigmatising labels)",
+      "Progress pathway showing mastered and upcoming difficulty levels"
+    ],
+    "review_notes": "Low construct risk. The child is working on the same concept at an appropriate challenge level. This is differentiation, not modification — the curriculum content is preserved.",
+    "mitigates": [
+      {"access_req_id": "abstractness_without_concrete_anchor", "strength": "moderate", "notes": "Lower difficulty levels typically use more concrete examples"},
+      {"access_req_id": "working_memory_load", "strength": "moderate", "notes": "Entry-level tasks typically involve fewer simultaneous elements"},
+      {"access_req_id": "open_ended_response_demand", "strength": "partial", "notes": "Lower difficulty levels often use more structured response formats"}
+    ],
+    "commonly_used_for": ["cognition_and_learning"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-18",
+    "name": "Predictable Session Structure",
+    "tier": "targeted",
+    "description": "Using a consistent, predictable sequence of activities within every learning session so the child knows what to expect. A predictable structure reduces anxiety about the unknown, supports children who struggle with transitions, and allows the child to allocate their cognitive resources to learning rather than to managing uncertainty. The structure should be visual, persistent, and identical in format across sessions.",
+    "requires_adult": false,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Use the same session structure every time: Review → New learning → Practice → Check",
+      "Show the structure visually at the start of each session with the current phase highlighted",
+      "Give advance warning before each transition: 'Next we will move to practice'",
+      "Do not introduce surprise activities or unannounced changes of plan",
+      "If a change is necessary, explain it explicitly and show the updated structure"
+    ],
+    "ui_implications": [
+      "Visual session timeline showing all phases",
+      "Current phase highlighted, completed phases checked",
+      "Transition warning before moving between phases"
+    ],
+    "review_notes": "Low construct risk. Structure is a delivery feature, not content modification. Benefits all learners but is essential for children with autism or anxiety.",
+    "mitigates": [
+      {"access_req_id": "task_switching_demand", "strength": "strong", "notes": "Predictable transitions reduce the cognitive cost of switching"},
+      {"access_req_id": "sustained_attention_demand", "strength": "moderate", "notes": "Knowing what comes next helps children pace their effort"},
+      {"access_req_id": "sensory_stimulation_load", "strength": "partial", "notes": "Predictability reduces the startle and anxiety response to unexpected stimuli"}
+    ],
+    "commonly_used_for": ["social_emotional_mental_health", "communication_and_interaction"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-19",
+    "name": "Scaffolded Recording Template",
+    "tier": "targeted",
+    "description": "Providing a partially completed template that structures the child's written output: tables with pre-drawn columns, partially completed sentences, labelled diagram outlines, or writing frames with section headings. The child fills in the content rather than creating the structure from scratch. This separates the organisational demand from the subject knowledge demand.",
+    "requires_adult": false,
+    "construct_risk": "conditional",
+    "blocked_when_assessing": ["open_ended_response_demand"],
+    "prompt_rules": [
+      "Provide templates that structure output without dictating content",
+      "Pre-draw tables, charts, or diagrams that the child needs to populate",
+      "Include section headings or prompts: 'What I found out:', 'Because:', 'Next I would...'",
+      "Offer templates as optional — some children will prefer blank space",
+      "Match template complexity to the child's current scaffolding needs"
+    ],
+    "ui_implications": [
+      "Template library per subject/task type",
+      "Editable template fields that the child fills in",
+      "Toggle between template view and free-form view"
+    ],
+    "review_notes": "Conditional construct risk: when the learning objective includes independent organisation of response (e.g. Y5 investigation planning), providing the template scaffolds beyond the intended demand. Use with care for compositional objectives.",
+    "mitigates": [
+      {"access_req_id": "open_ended_response_demand", "strength": "strong", "notes": "Provides the structure the child cannot generate independently"},
+      {"access_req_id": "working_memory_load", "strength": "moderate", "notes": "Template holds the organisational structure, freeing memory for content"},
+      {"access_req_id": "handwriting_copying_load", "strength": "moderate", "notes": "Reduces the total volume of writing by providing structure elements"}
+    ],
+    "commonly_used_for": ["cognition_and_learning", "communication_and_interaction"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  },
+  {
+    "support_id": "SS-20",
+    "name": "Specialist SENCO Review Flag",
+    "tier": "specialist",
+    "description": "A system flag that marks a concept-learner combination for human SENCO review because the automated support system has identified a pattern it cannot resolve through universal or targeted strategies alone. This is NOT a support strategy in itself — it is the system's way of saying 'I need a human expert to look at this.' The flag triggers a notification to the parent/SENCO with specific information about what the child is struggling with and what has already been tried.",
+    "requires_adult": true,
+    "construct_risk": "low",
+    "blocked_when_assessing": [],
+    "prompt_rules": [
+      "Flag when a child has attempted a concept 3+ times at the entry difficulty level with support strategies active and is still not demonstrating understanding",
+      "Include in the flag: concept name, strategies already applied, specific error patterns observed",
+      "Do NOT present the flag to the child — it is for adult eyes only",
+      "Frame the flag positively: 'Additional support may help [child] with [concept]', never 'child is failing'",
+      "Suggest possible next steps: 'Consider whether [concept] has unmet prerequisite knowledge' or 'A 1:1 session with concrete materials may help'"
+    ],
+    "ui_implications": [
+      "Flag notification in parent/SENCO dashboard",
+      "Includes concept context, strategies tried, and suggested next steps",
+      "Not visible to the child"
+    ],
+    "review_notes": "This is the safety net. The system must know its limits. When automated support is insufficient, escalation to a human expert is the responsible action.",
+    "mitigates": [],
+    "commonly_used_for": ["cognition_and_learning", "communication_and_interaction", "social_emotional_mental_health", "sensory_and_physical"],
+    "display_category": "Support Strategy",
+    "display_color": "#22C55E",
+    "display_icon": "support_agent"
+  }
+]
