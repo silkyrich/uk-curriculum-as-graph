@@ -1,0 +1,37 @@
+---
+interface Props {
+  label: string;
+  value: number | string;
+  icon?: string;
+  color?: string;
+  href?: string;
+}
+
+const { label, value, icon, color = 'blue', href } = Astro.props;
+
+const colorMap: Record<string, string> = {
+  blue: 'bg-blue-50 text-blue-700 border-blue-200',
+  teal: 'bg-teal-50 text-teal-700 border-teal-200',
+  indigo: 'bg-indigo-50 text-indigo-700 border-indigo-200',
+  violet: 'bg-violet-50 text-violet-700 border-violet-200',
+  amber: 'bg-amber-50 text-amber-700 border-amber-200',
+  emerald: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  gray: 'bg-gray-50 text-gray-700 border-gray-200',
+};
+
+const Tag = href ? 'a' : 'div';
+---
+
+<Tag
+  href={href}
+  class:list={[
+    'rounded-xl border p-5 transition-all',
+    colorMap[color] || colorMap.blue,
+    href && 'hover:shadow-md hover:-translate-y-0.5 cursor-pointer',
+  ]}
+>
+  <p class="text-sm font-medium opacity-75">{label}</p>
+  <p class="text-3xl font-bold mt-1">
+    {typeof value === 'number' ? value.toLocaleString() : value}
+  </p>
+</Tag>

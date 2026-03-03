@@ -1,0 +1,108 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { getSubjects, getDeliveryData } from '../../lib/data';
+
+export function getStaticPaths() {
+  const subjects = getSubjects();
+  return subjects.map(subject => ({
+    params: { slug: subject.slug },
+    props: { subject },
+  }));
+}
+
+const { subject } = Astro.props;
+const delivery = getDeliveryData();
+
+// Find delivery data for this subject
+const subjectDelivery = delivery.by_subject.find(
+  s => s.subject === subject.name
+);
+const subjectTotal = subjectDelivery
+  ? Object.values(subjectDelivery.modes).reduce((sum, m) => sum + (m as any).count, 0)
+  : 0;
+
+function yearLabel(yearId: string): string {
+  if (yearId === 'EYFS') return 'Reception';
+  return `Year ${yearId.replace('Y', '')}`;
+}
+---
+
+<Layout title={subject.name}>
+  <Breadcrumb items={[
+    { label: 'Dashboard', href: '/' },
+    { label: subject.name },
+  ]} />
+
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-900">{subject.name}</h1>
+    <div class="flex items-center gap-4 mt-2">
+      {subject.key_stages.map(ks => (
+        <span class="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-medium">{ks}</span>
+      ))}
+    </div>
+    <div class="flex items-center gap-6 mt-3 text-sm text-gray-500">
+      <span><strong class="text-gray-900">{subject.total_concepts}</strong> concepts</span>
+      <span><strong class="text-gray-900">{subject.total_domains}</strong> domains</span>
+      <span><strong class="text-gray-900">{subject.total_clusters}</strong> clusters</span>
+    </div>
+  </div>
+
+  <!-- Delivery breakdown for this subject -->
+  {subjectDelivery && subjectTotal > 0 && (
+    <div class="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+      <h2 class="font-semibold text-gray-900 mb-3">Delivery Readiness</h2>
+      <div class="flex items-center gap-6 mb-3">
+        {delivery.modes.map(mode => {
+          const count = (subjectDelivery.modes as any)[mode.id]?.count || 0;
+          const pct = subjectTotal > 0 ? Math.round((count / subjectTotal) * 100) : 0;
+          return count > 0 ? (
+            <div class="flex items-center gap-2">
+              <div class="w-2.5 h-2.5 rounded-full" style={`background-color: ${mode.color}`} />
+              <span class="text-sm text-gray-600">{mode.name}: <strong>{count}</strong> ({pct}%)</span>
+            </div>
+          ) : null;
+        })}
+      </div>
+      <div class="h-6 rounded-full overflow-hidden flex bg-gray-100">
+        {delivery.modes.map(mode => {
+          const count = (subjectDelivery.modes as any)[mode.id]?.count || 0;
+          const pct = subjectTotal > 0 ? (count / subjectTotal) * 100 : 0;
+          return pct > 0 ? (
+            <div
+              style={`width: ${pct}%; background-color: ${mode.color}`}
+              class="h-full"
+              title={`${mode.name}: ${count}`}
+            />
+          ) : null;
+        })}
+      </div>
+    </div>
+  )}
+
+  <!-- Year-by-year domains -->
+  {subject.years.map(year => (
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-lg font-semibold text-gray-900">{yearLabel(year.year_id)}</h2>
+        <span class="text-sm text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{year.key_stage}</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        {year.domains.map(domain => (
+          <a
+            href={`/domains/${domain.domain_id}`}
+            class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md hover:border-blue-300 transition-all"
+          >
+            <h3 class="font-medium text-gray-900 text-sm">{domain.name}</h3>
+            <div class="flex items-center gap-3 mt-2 text-xs text-gray-500">
+              <span>{domain.concept_count} concepts</span>
+              {domain.cluster_count > 0 && (
+                <span>{domain.cluster_count} clusters</span>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  ))}
+</Layout>

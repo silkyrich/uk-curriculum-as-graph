@@ -1,0 +1,137 @@
+name: Build & Deploy Curriculum Explorer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'scripts/compile_site_data.py'
+      - 'layers/**/data/**'
+      - 'core/scripts/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Cancel in-progress runs for the same branch
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── Build graph and compile data ───────────────────────────────────
+  compile-data:
+    name: Compile graph data
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    services:
+      neo4j:
+        image: neo4j:5-community
+        env:
+          NEO4J_AUTH: neo4j/cipassword
+          NEO4J_PLUGINS: '[]'
+        ports:
+          - 7474:7474
+          - 7687:7687
+        options: >-
+          --health-cmd "wget --no-verbose --tries=1 --spider http://localhost:7474 || exit 1"
+          --health-interval 10s
+          --health-timeout 10s
+          --health-retries 20
+          --health-start-period 30s
+
+    env:
+      NEO4J_URI: neo4j://localhost:7687
+      NEO4J_USERNAME: neo4j
+      NEO4J_PASSWORD: cipassword
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Verify Neo4j is ready
+        run: |
+          python3 -c "
+          from neo4j import GraphDatabase
+          driver = GraphDatabase.driver('neo4j://localhost:7687', auth=('neo4j', 'cipassword'))
+          driver.verify_connectivity()
+          print('Neo4j connection verified')
+          driver.close()
+          "
+
+      - name: Create schema
+        run: python3 core/scripts/create_schema.py
+
+      - name: Import all layers
+        run: python3 core/scripts/import_all.py --skip-oak --skip-case < /dev/null
+
+      - name: Compile site data
+        run: python3 scripts/compile_site_data.py --output site/src/data
+
+      - name: Upload compiled data
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-data
+          path: site/src/data/
+          retention-days: 1
+
+  # ── Build Astro site ───────────────────────────────────────────────
+  build-site:
+    name: Build Astro site
+    needs: compile-data
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download compiled data
+        uses: actions/download-artifact@v4
+        with:
+          name: site-data
+          path: site/src/data/
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Build Astro site
+        working-directory: site
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist/
+
+  # ── Deploy to GitHub Pages ─────────────────────────────────────────
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build-site
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

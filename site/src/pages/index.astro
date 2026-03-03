@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StatCard from '../components/StatCard.astro';
+import SubjectCard from '../components/SubjectCard.astro';
+import { getOverview, getSubjects, getDeliveryData } from '../lib/data';
+
+const overview = getOverview();
+const subjects = getSubjects();
+const delivery = getDeliveryData();
+
+const totalConcepts = delivery.summary.reduce((sum, m) => sum + m.count, 0);
+const aiReachable = delivery.summary
+  .filter(m => m.mode_id === 'DM-AI' || m.mode_id === 'DM-AF')
+  .reduce((sum, m) => sum + m.count, 0);
+const aiPercent = totalConcepts > 0 ? Math.round((aiReachable / totalConcepts) * 100) : 0;
+---
+
+<Layout title="Dashboard">
+  <!-- Hero -->
+  <div class="mb-10">
+    <h1 class="text-3xl font-bold text-gray-900">UK National Curriculum</h1>
+    <p class="text-lg text-gray-600 mt-2 max-w-3xl">
+      A multi-layer knowledge graph mapping the entire UK National Curriculum from Reception to Year 11.
+      Explore subjects, concepts, difficulty levels, and delivery readiness across
+      {overview.key_stages_count} key stages.
+    </p>
+  </div>
+
+  <!-- Stats grid -->
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
+    <StatCard label="Concepts" value={overview.concepts} color="teal" />
+    <StatCard label="Lesson Clusters" value={overview.clusters} color="indigo" />
+    <StatCard label="Domains" value={overview.domains} color="blue" />
+    <StatCard label="Difficulty Levels" value={overview.difficulty_levels} color="amber" />
+    <StatCard label="Prerequisites" value={overview.prerequisites} color="gray" />
+    <StatCard label="AI-Teachable" value={`${aiPercent}%`} color="emerald" href="/delivery" />
+  </div>
+
+  <!-- Key stages -->
+  <div class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">Key Stages</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      {overview.key_stages.map(ks => (
+        <div class="bg-white rounded-lg border border-gray-200 p-4">
+          <h3 class="font-semibold text-gray-900">{ks.name}</h3>
+          <p class="text-sm text-gray-500 mt-1">
+            {ks.year_ids.length === 1 ? ks.year_ids[0] : `${ks.year_ids[0]}–${ks.year_ids[ks.year_ids.length - 1]}`}
+          </p>
+          <p class="text-2xl font-bold text-blue-600 mt-2">{ks.concept_count}</p>
+          <p class="text-xs text-gray-500">concepts</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Delivery readiness summary -->
+  <div class="mb-10">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-xl font-semibold text-gray-900">Delivery Readiness</h2>
+      <a href="/delivery" class="text-sm text-blue-600 hover:text-blue-800 font-medium">
+        View full breakdown &rarr;
+      </a>
+    </div>
+    <div class="bg-white rounded-lg border border-gray-200 p-6">
+      <div class="flex items-center gap-8 mb-4">
+        {delivery.summary.map(mode => (
+          <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full" style={`background-color: ${mode.color}`} />
+            <span class="text-sm text-gray-700">{mode.mode_name}</span>
+            <span class="text-sm font-semibold">{mode.count}</span>
+          </div>
+        ))}
+      </div>
+      <!-- Stacked bar -->
+      <div class="h-8 rounded-full overflow-hidden flex bg-gray-100">
+        {delivery.summary.map(mode => {
+          const pct = totalConcepts > 0 ? (mode.count / totalConcepts) * 100 : 0;
+          return (
+            <div
+              style={`width: ${pct}%; background-color: ${mode.color}`}
+              class="h-full transition-all relative group"
+              title={`${mode.mode_name}: ${mode.count} concepts (${Math.round(pct)}%)`}
+            >
+              {pct > 8 && (
+                <span class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold">
+                  {Math.round(pct)}%
+                </span>
+              )}
+            </div>
+          );
+        })}
+      </div>
+      <p class="text-sm text-gray-500 mt-3">
+        <strong>{aiPercent}%</strong> of the curriculum ({aiReachable.toLocaleString()} concepts) can be delivered through AI-powered adaptive learning.
+      </p>
+    </div>
+  </div>
+
+  <!-- Charts row -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+    <!-- Delivery by subject chart -->
+    <div class="bg-white rounded-lg border border-gray-200 p-6">
+      <h3 class="font-semibold text-gray-900 mb-4">Delivery Readiness by Subject</h3>
+      <canvas id="delivery-by-subject-chart" height="300"></canvas>
+    </div>
+
+    <!-- Concepts by key stage chart -->
+    <div class="bg-white rounded-lg border border-gray-200 p-6">
+      <h3 class="font-semibold text-gray-900 mb-4">Concepts by Key Stage</h3>
+      <canvas id="concepts-by-ks-chart" height="300"></canvas>
+    </div>
+  </div>
+
+  <!-- Subjects grid -->
+  <div class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">
+      Subjects ({subjects.length})
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {subjects
+        .filter(s => s.total_concepts > 0)
+        .sort((a, b) => b.total_concepts - a.total_concepts)
+        .map(subject => (
+          <SubjectCard subject={subject} />
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Search index for client-side search -->
+  <script define:vars={{ deliveryBySubject: delivery.by_subject, deliveryModes: delivery.modes, keyStages: overview.key_stages }}>
+    // Chart.js loaded via CDN for simplicity
+    async function loadCharts() {
+      const { Chart, registerables } = await import('https://cdn.jsdelivr.net/npm/chart.js@4.4.8/+esm');
+      Chart.register(...registerables);
+
+      // Delivery by subject (horizontal stacked bar)
+      const subjectData = deliveryBySubject.filter(s => {
+        const total = Object.values(s.modes).reduce((sum, m) => sum + m.count, 0);
+        return total > 10;
+      }).sort((a, b) => {
+        const totalA = Object.values(a.modes).reduce((sum, m) => sum + m.count, 0);
+        const totalB = Object.values(b.modes).reduce((sum, m) => sum + m.count, 0);
+        return totalB - totalA;
+      });
+
+      const modeColors = { 'DM-AI': '#10B981', 'DM-AF': '#3B82F6', 'DM-GM': '#F59E0B', 'DM-ST': '#EF4444' };
+      const modeLabels = { 'DM-AI': 'AI Direct', 'DM-AF': 'AI Facilitated', 'DM-GM': 'Guided Materials', 'DM-ST': 'Specialist Teacher' };
+
+      new Chart(document.getElementById('delivery-by-subject-chart'), {
+        type: 'bar',
+        data: {
+          labels: subjectData.map(s => s.subject),
+          datasets: Object.keys(modeColors).map(modeId => ({
+            label: modeLabels[modeId],
+            data: subjectData.map(s => s.modes[modeId]?.count || 0),
+            backgroundColor: modeColors[modeId],
+          })),
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          scales: {
+            x: { stacked: true, grid: { display: false } },
+            y: { stacked: true, grid: { display: false } },
+          },
+          plugins: { legend: { position: 'bottom' } },
+        },
+      });
+
+      // Concepts by key stage (doughnut)
+      const ksColors = ['#10B981', '#3B82F6', '#8B5CF6', '#F59E0B', '#EF4444'];
+      new Chart(document.getElementById('concepts-by-ks-chart'), {
+        type: 'doughnut',
+        data: {
+          labels: keyStages.map(ks => ks.name),
+          datasets: [{
+            data: keyStages.map(ks => ks.concept_count),
+            backgroundColor: ksColors.slice(0, keyStages.length),
+          }],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { position: 'bottom' },
+          },
+        },
+      });
+    }
+    loadCharts();
+  </script>
+</Layout>

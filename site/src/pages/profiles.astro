@@ -1,0 +1,226 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { getLearnerProfiles } from '../lib/data';
+
+const profiles = getLearnerProfiles().filter(p => p.year_id && p.content);
+
+function yearLabel(yearId: string): string {
+  if (yearId === 'EYFS') return 'Reception';
+  return `Year ${yearId.replace('Y', '')}`;
+}
+
+function ksForYear(yearId: string): string {
+  if (yearId === 'EYFS') return 'EYFS';
+  const num = parseInt(yearId.replace('Y', ''));
+  if (num <= 2) return 'KS1';
+  if (num <= 6) return 'KS2';
+  if (num <= 9) return 'KS3';
+  return 'KS4';
+}
+---
+
+<Layout title="Learner Profiles" description="Age-appropriate learning design constraints for each year group.">
+  <Breadcrumb items={[
+    { label: 'Dashboard', href: '/' },
+    { label: 'Learner Profiles' },
+  ]} />
+
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-900">Learner Profiles</h1>
+    <p class="text-lg text-gray-600 mt-2 max-w-3xl">
+      Age-appropriate design constraints for each year group. These profiles govern
+      content language level, pedagogy approach, feedback style, and available
+      interaction types.
+    </p>
+  </div>
+
+  <!-- Quick nav -->
+  <div class="flex flex-wrap gap-2 mb-8">
+    {profiles.map(p => (
+      <a
+        href={`#${p.year_id}`}
+        class="text-sm bg-white border border-gray-200 px-3 py-1.5 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
+      >
+        {yearLabel(p.year_id)}
+      </a>
+    ))}
+  </div>
+
+  <!-- Profile cards -->
+  <div class="space-y-8">
+    {profiles.map(profile => (
+      <div class="bg-white rounded-xl border border-gray-200 p-6" id={profile.year_id}>
+        <div class="flex items-center gap-3 mb-4">
+          <h2 class="text-xl font-bold text-gray-900">{yearLabel(profile.year_id)}</h2>
+          <span class="text-sm bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full">
+            {ksForYear(profile.year_id)}
+          </span>
+          {profile.age_range && (
+            <span class="text-sm text-gray-500">Age {profile.age_range}</span>
+          )}
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Content guideline -->
+          {profile.content && Object.keys(profile.content).length > 0 && (
+            <div class="space-y-3">
+              <h3 class="font-semibold text-sm text-teal-700 uppercase tracking-wide">
+                Content &amp; Language
+              </h3>
+              {profile.content.reading_level_description && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Reading level</p>
+                  <p class="text-sm text-gray-700">{profile.content.reading_level_description}</p>
+                </div>
+              )}
+              {(profile.content.lexile_min || profile.content.lexile_max) && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Lexile range</p>
+                  <p class="text-sm text-gray-700">{profile.content.lexile_min}–{profile.content.lexile_max}L</p>
+                </div>
+              )}
+              {profile.content.max_sentence_length_words && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Max sentence length</p>
+                  <p class="text-sm text-gray-700">{profile.content.max_sentence_length_words} words</p>
+                </div>
+              )}
+              {profile.content.vocabulary_level && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Vocabulary</p>
+                  <p class="text-sm text-gray-700">{profile.content.vocabulary_level}</p>
+                </div>
+              )}
+              {profile.content.tts_required !== undefined && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Text-to-speech</p>
+                  <p class="text-sm text-gray-700">{profile.content.tts_required ? 'Required' : 'Optional'}</p>
+                </div>
+              )}
+            </div>
+          )}
+
+          <!-- Pedagogy profile -->
+          {profile.pedagogy && Object.keys(profile.pedagogy).length > 0 && (
+            <div class="space-y-3">
+              <h3 class="font-semibold text-sm text-indigo-700 uppercase tracking-wide">
+                Pedagogy
+              </h3>
+              {(profile.pedagogy.session_length_min || profile.pedagogy.session_length_max) && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Session length</p>
+                  <p class="text-sm text-gray-700">{profile.pedagogy.session_length_min}–{profile.pedagogy.session_length_max} min</p>
+                </div>
+              )}
+              {profile.pedagogy.scaffolding_level && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Scaffolding</p>
+                  <p class="text-sm text-gray-700">{profile.pedagogy.scaffolding_level}</p>
+                </div>
+              )}
+              {profile.pedagogy.hint_tiers_max && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Hint tiers</p>
+                  <p class="text-sm text-gray-700">Up to {profile.pedagogy.hint_tiers_max}</p>
+                </div>
+              )}
+              {profile.pedagogy.productive_failure_appropriate !== undefined && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Productive failure</p>
+                  <p class="text-sm text-gray-700">
+                    {profile.pedagogy.productive_failure_appropriate ? 'Yes' : 'No'}
+                    {profile.pedagogy.productive_failure_notes && ` — ${profile.pedagogy.productive_failure_notes}`}
+                  </p>
+                </div>
+              )}
+              {profile.pedagogy.spacing_appropriate !== undefined && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Spacing</p>
+                  <p class="text-sm text-gray-700">
+                    {profile.pedagogy.spacing_appropriate ? 'Yes' : 'No'}
+                    {profile.pedagogy.spacing_interval_days_min && ` (${profile.pedagogy.spacing_interval_days_min}–${profile.pedagogy.spacing_interval_days_max} days)`}
+                  </p>
+                </div>
+              )}
+              {profile.pedagogy.interleaving_appropriate !== undefined && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Interleaving</p>
+                  <p class="text-sm text-gray-700">{profile.pedagogy.interleaving_appropriate ? 'Yes' : 'No'}</p>
+                </div>
+              )}
+            </div>
+          )}
+
+          <!-- Feedback profile -->
+          {profile.feedback && Object.keys(profile.feedback).length > 0 && (
+            <div class="space-y-3">
+              <h3 class="font-semibold text-sm text-amber-700 uppercase tracking-wide">
+                Feedback
+              </h3>
+              {profile.feedback.ai_tone && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">AI tone</p>
+                  <p class="text-sm text-gray-700">{profile.feedback.ai_tone}</p>
+                </div>
+              )}
+              {profile.feedback.feedback_style && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Style</p>
+                  <p class="text-sm text-gray-700">{profile.feedback.feedback_style}</p>
+                </div>
+              )}
+              {profile.feedback.gamification_safe !== undefined && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Gamification safe</p>
+                  <p class="text-sm text-gray-700">{profile.feedback.gamification_safe ? 'Yes' : 'No'}</p>
+                </div>
+              )}
+              {profile.feedback.feedback_example_correct && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Example (correct)</p>
+                  <p class="text-sm text-gray-700 italic">&ldquo;{profile.feedback.feedback_example_correct}&rdquo;</p>
+                </div>
+              )}
+              {profile.feedback.feedback_example_incorrect && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Example (incorrect)</p>
+                  <p class="text-sm text-gray-700 italic">&ldquo;{profile.feedback.feedback_example_incorrect}&rdquo;</p>
+                </div>
+              )}
+              {profile.feedback.avoid_phrases && (
+                <div>
+                  <p class="text-xs font-medium text-gray-500">Avoid</p>
+                  <p class="text-sm text-red-600">{
+                    Array.isArray(profile.feedback.avoid_phrases)
+                      ? profile.feedback.avoid_phrases.join(', ')
+                      : profile.feedback.avoid_phrases
+                  }</p>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+
+        <!-- Interaction types -->
+        {profile.interactions && profile.interactions.length > 0 && (
+          <div class="mt-6">
+            <h3 class="font-semibold text-sm text-gray-700 uppercase tracking-wide mb-3">
+              Interaction Types ({profile.interactions.length})
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {profile.interactions.map(it => (
+                <div class="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs" title={it.description || ''}>
+                  <span class="font-medium text-gray-700">{it.name}</span>
+                  {it.category && (
+                    <span class="text-gray-400 ml-1">({it.category})</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+</Layout>
