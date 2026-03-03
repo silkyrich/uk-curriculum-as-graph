@@ -1,0 +1,254 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ConceptCard from '../../components/ConceptCard.astro';
+import { getAllDomainIds, getDomain, getSubjects } from '../../lib/data';
+
+export function getStaticPaths() {
+  const domainIds = getAllDomainIds();
+  return domainIds.map(id => ({
+    params: { id },
+  }));
+}
+
+const { id } = Astro.params;
+const domain = getDomain(id);
+
+if (!domain) {
+  return Astro.redirect('/');
+}
+
+const subjects = getSubjects();
+const subject = subjects.find(s => s.name === domain.subject);
+const subjectSlug = subject?.slug || domain.subject_slug;
+
+function yearLabel(yearId: string): string {
+  if (yearId === 'EYFS') return 'Reception';
+  return `Year ${yearId.replace('Y', '')}`;
+}
+
+// Sort clusters by sequence
+const sortedClusters = [...domain.clusters].sort((a, b) => {
+  // Simple sort by cluster_id which embeds sequence
+  return a.cluster_id.localeCompare(b.cluster_id);
+});
+
+// Map concept IDs to concepts for quick lookup
+const conceptMap = new Map(domain.concepts.map(c => [c.concept_id, c]));
+
+// Group prerequisites by target concept
+const prereqsByTarget = new Map<string, typeof domain.prerequisites>();
+for (const p of domain.prerequisites) {
+  if (!prereqsByTarget.has(p.target_id)) {
+    prereqsByTarget.set(p.target_id, []);
+  }
+  prereqsByTarget.get(p.target_id)!.push(p);
+}
+
+// Delivery mode summary for this domain
+const deliveryCounts: Record<string, number> = {};
+for (const c of domain.concepts) {
+  const mode = c.delivery_mode?.mode_id || 'unknown';
+  deliveryCounts[mode] = (deliveryCounts[mode] || 0) + 1;
+}
+
+const modeLabels: Record<string, string> = {
+  'DM-AI': 'AI Direct',
+  'DM-AF': 'AI Facilitated',
+  'DM-GM': 'Guided Materials',
+  'DM-ST': 'Specialist Teacher',
+};
+const modeColors: Record<string, string> = {
+  'DM-AI': '#10B981',
+  'DM-AF': '#3B82F6',
+  'DM-GM': '#F59E0B',
+  'DM-ST': '#EF4444',
+};
+---
+
+<Layout title={domain.name} description={`${domain.subject} - ${yearLabel(domain.year_id)} - ${domain.name}`}>
+  <Breadcrumb items={[
+    { label: 'Dashboard', href: '/' },
+    { label: domain.subject, href: `/subjects/${subjectSlug}` },
+    { label: yearLabel(domain.year_id), href: `/subjects/${subjectSlug}` },
+    { label: domain.name },
+  ]} />
+
+  <!-- Header -->
+  <div class="mb-6">
+    <div class="flex items-center gap-3">
+      <h1 class="text-2xl font-bold text-gray-900">{domain.name}</h1>
+      <span class="text-sm bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full">{domain.key_stage}</span>
+    </div>
+    <p class="text-sm text-gray-400 font-mono mt-1">{domain.domain_id}</p>
+    {domain.description && (
+      <p class="text-gray-600 mt-2">{domain.description}</p>
+    )}
+    {domain.curriculum_context && (
+      <div class="mt-3 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+        <p class="text-sm text-blue-800 font-medium mb-1">National Curriculum context</p>
+        <p class="text-sm text-blue-700">{domain.curriculum_context}</p>
+      </div>
+    )}
+  </div>
+
+  <!-- Domain stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+      <p class="text-2xl font-bold text-teal-600">{domain.concepts.length}</p>
+      <p class="text-xs text-gray-500">Concepts</p>
+    </div>
+    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+      <p class="text-2xl font-bold text-indigo-600">{domain.clusters.length}</p>
+      <p class="text-xs text-gray-500">Clusters</p>
+    </div>
+    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+      <p class="text-2xl font-bold text-gray-600">{domain.prerequisites.length}</p>
+      <p class="text-xs text-gray-500">Prerequisites</p>
+    </div>
+    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+      <p class="text-2xl font-bold text-amber-600">
+        {domain.concepts.filter(c => c.difficulty_levels && c.difficulty_levels.length > 0).length}
+      </p>
+      <p class="text-xs text-gray-500">With difficulty levels</p>
+    </div>
+  </div>
+
+  <!-- Delivery breakdown mini-bar -->
+  {Object.keys(deliveryCounts).length > 0 && (
+    <div class="bg-white rounded-lg border border-gray-200 p-4 mb-8">
+      <div class="flex items-center gap-4 mb-2">
+        {Object.entries(deliveryCounts)
+          .filter(([mode]) => mode !== 'unknown')
+          .map(([mode, count]) => (
+            <div class="flex items-center gap-1.5">
+              <div class="w-2.5 h-2.5 rounded-full" style={`background-color: ${modeColors[mode] || '#9CA3AF'}`} />
+              <span class="text-xs text-gray-600">{modeLabels[mode] || mode}: {count}</span>
+            </div>
+          ))
+        }
+      </div>
+      <div class="h-4 rounded-full overflow-hidden flex bg-gray-100">
+        {Object.entries(deliveryCounts)
+          .filter(([mode]) => mode !== 'unknown')
+          .map(([mode, count]) => {
+            const pct = (count / domain.concepts.length) * 100;
+            return (
+              <div
+                style={`width: ${pct}%; background-color: ${modeColors[mode] || '#9CA3AF'}`}
+                class="h-full"
+              />
+            );
+          })
+        }
+      </div>
+    </div>
+  )}
+
+  <!-- Lesson clusters (sequenced) -->
+  {sortedClusters.length > 0 && (
+    <div class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Lesson Clusters</h2>
+      <div class="space-y-3">
+        {sortedClusters.map((cluster, i) => {
+          const clusterConcepts = cluster.concept_ids
+            .map(cid => conceptMap.get(cid))
+            .filter(Boolean);
+          const primaryLens = cluster.thinking_lenses.find(l => l.rank === 1);
+
+          return (
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-mono text-gray-400 bg-gray-50 px-2 py-0.5 rounded">
+                  {i + 1}
+                </span>
+                <h3 class="font-medium text-gray-900">{cluster.name}</h3>
+                <span class:list={[
+                  'text-xs px-2 py-0.5 rounded-full font-medium',
+                  cluster.cluster_type === 'introduction' ? 'bg-blue-50 text-blue-700' :
+                  cluster.cluster_type === 'practice' ? 'bg-green-50 text-green-700' :
+                  'bg-gray-50 text-gray-700'
+                ]}>
+                  {cluster.cluster_type}
+                </span>
+                {cluster.is_curated && (
+                  <span class="text-xs text-violet-600" title="Teacher-curated">Curated</span>
+                )}
+              </div>
+
+              {cluster.rationale && (
+                <p class="text-sm text-gray-600 mt-2">{cluster.rationale}</p>
+              )}
+
+              <div class="flex items-center gap-4 mt-2 text-xs text-gray-500">
+                <span>{clusterConcepts.length} concepts</span>
+                {cluster.teaching_weeks && <span>{cluster.teaching_weeks} weeks</span>}
+                {cluster.lesson_count && <span>{cluster.lesson_count} lessons</span>}
+                {primaryLens && (
+                  <span class="bg-violet-50 text-violet-700 px-2 py-0.5 rounded-full">
+                    {primaryLens.name}
+                  </span>
+                )}
+              </div>
+
+              {clusterConcepts.length > 0 && (
+                <div class="mt-3 flex flex-wrap gap-2">
+                  {clusterConcepts.map(c => (
+                    <a
+                      href={`#${c!.concept_id}`}
+                      class="text-xs bg-gray-50 text-gray-700 px-2 py-1 rounded hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                    >
+                      {c!.name}
+                      {c!.is_keystone && <span class="text-yellow-500 ml-0.5" title="Keystone">*</span>}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  )}
+
+  <!-- Prerequisites from other domains -->
+  {domain.prerequisites.length > 0 && (
+    <div class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Prerequisites</h2>
+      <p class="text-sm text-gray-600 mb-3">
+        Concepts from other domains that pupils should know before this domain.
+      </p>
+      <div class="space-y-2">
+        {domain.prerequisites.map(p => (
+          <div class="bg-white rounded-lg border border-gray-200 p-3 flex items-center justify-between">
+            <div>
+              <span class="text-sm font-medium text-gray-900">{p.prereq_name}</span>
+              {p.from_domain_name && (
+                <span class="text-xs text-gray-500 ml-2">
+                  from {p.from_domain_id ? (
+                    <a href={`/domains/${p.from_domain_id}`} class="text-blue-600 hover:underline">
+                      {p.from_domain_name}
+                    </a>
+                  ) : p.from_domain_name}
+                </span>
+              )}
+            </div>
+            <span class="text-xs text-gray-400 font-mono">{p.prereq_id}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- All concepts (detailed cards) -->
+  <div class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">
+      Concepts ({domain.concepts.length})
+    </h2>
+    <div class="space-y-4">
+      {domain.concepts.map(concept => (
+        <ConceptCard concept={concept} expanded={true} />
+      ))}
+    </div>
+  </div>
+</Layout>

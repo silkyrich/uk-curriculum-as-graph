@@ -1,0 +1,162 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Explore the UK National Curriculum as an interactive knowledge graph' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | UK Curriculum Explorer</title>
+  </head>
+  <body class="bg-gray-50 text-gray-900 min-h-screen">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-8">
+            <a href="/" class="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors">
+              UK Curriculum Explorer
+            </a>
+            <div class="hidden md:flex items-center gap-6">
+              <a href="/" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Dashboard</a>
+              <a href="/delivery" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Delivery Readiness</a>
+              <a href="/lenses" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Thinking Lenses</a>
+              <a href="/profiles" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Learner Profiles</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div id="search-container" class="relative">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search concepts, domains..."
+                class="w-64 pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              />
+              <svg class="absolute left-3 top-2.5 h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <div id="search-results" class="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg hidden max-h-96 overflow-y-auto z-50"></div>
+            </div>
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-gray-900">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden pb-4">
+          <a href="/" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Dashboard</a>
+          <a href="/delivery" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Delivery Readiness</a>
+          <a href="/lenses" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Thinking Lenses</a>
+          <a href="/profiles" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Learner Profiles</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <slot />
+    </main>
+
+    <footer class="border-t border-gray-200 mt-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <p class="text-sm text-gray-500 text-center">
+          UK National Curriculum Knowledge Graph &middot;
+          Data compiled from the <a href="https://www.gov.uk/government/collections/national-curriculum" class="text-blue-600 hover:underline">UK National Curriculum (2014)</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuBtn?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('hidden');
+      });
+
+      // Client-side search
+      let searchIndex = null;
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+
+      async function loadSearchIndex() {
+        if (searchIndex) return searchIndex;
+        const res = await fetch('/search.json');
+        searchIndex = await res.json();
+        return searchIndex;
+      }
+
+      function renderResults(results) {
+        if (!searchResults) return;
+        if (results.length === 0) {
+          searchResults.innerHTML = '<div class="p-3 text-sm text-gray-500">No results found</div>';
+          searchResults.classList.remove('hidden');
+          return;
+        }
+        const typeIcons = {
+          concept: '<span class="text-xs bg-teal-50 text-teal-700 px-1.5 py-0.5 rounded">Concept</span>',
+          domain: '<span class="text-xs bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded">Domain</span>',
+        };
+        const html = results.slice(0, 20).map(r => {
+          const href = r.type === 'domain' ? `/domains/${r.id}` : `/domains/${r.domain_id}#${r.id}`;
+          return `<a href="${href}" class="block p-3 hover:bg-gray-50 border-b border-gray-100 last:border-0">
+            <div class="flex items-center gap-2">
+              ${typeIcons[r.type] || ''}
+              <span class="text-sm font-medium text-gray-900">${r.name}</span>
+            </div>
+            <div class="flex items-center gap-2 mt-0.5 text-xs text-gray-500">
+              ${r.subject ? `<span>${r.subject}</span>` : ''}
+              ${r.year_id ? `<span>${r.year_id}</span>` : ''}
+              ${r.key_stage ? `<span>${r.key_stage}</span>` : ''}
+            </div>
+          </a>`;
+        }).join('');
+        searchResults.innerHTML = html;
+        searchResults.classList.remove('hidden');
+      }
+
+      let debounceTimer;
+      searchInput?.addEventListener('input', (e) => {
+        clearTimeout(debounceTimer);
+        const query = e.target.value.trim().toLowerCase();
+        if (query.length < 2) {
+          searchResults?.classList.add('hidden');
+          return;
+        }
+        debounceTimer = setTimeout(async () => {
+          const index = await loadSearchIndex();
+          const terms = query.split(/\s+/);
+          const results = index.filter(item => {
+            const text = `${item.name} ${item.description || ''} ${item.subject || ''} ${item.year_id || ''}`.toLowerCase();
+            return terms.every(t => text.includes(t));
+          }).slice(0, 20);
+          renderResults(results);
+        }, 150);
+      });
+
+      // Close search on click outside
+      document.addEventListener('click', (e) => {
+        if (!document.getElementById('search-container')?.contains(e.target)) {
+          searchResults?.classList.add('hidden');
+        }
+      });
+
+      // Close search on Escape
+      searchInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          searchResults?.classList.add('hidden');
+          searchInput.blur();
+        }
+      });
+    </script>
+  </body>
+</html>
