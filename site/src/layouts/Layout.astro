@@ -185,11 +185,25 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           const index = await loadSearchIndex();
           if (!index) return;
           const terms = query.split(/\s+/);
-          const results = index.filter((item: any) => {
-            const text = `${item.name} ${item.description || ''} ${item.subject || ''} ${item.year_id || ''}`.toLowerCase();
-            return terms.every((t: string) => text.includes(t));
-          }).slice(0, 20);
-          renderResults(results);
+          const scored = index
+            .map((item: any) => {
+              const name = (item.name || '').toLowerCase();
+              const text = `${name} ${item.description || ''} ${item.subject || ''} ${item.year_id || ''}`.toLowerCase();
+              if (!terms.every((t: string) => text.includes(t))) return null;
+              let score = 0;
+              // Planners rank highest — teachers search for these
+              if (item.type === 'planner') score += 100;
+              else if (item.type === 'domain') score += 50;
+              // Name match >> description match
+              if (terms.every((t: string) => name.includes(t))) score += 80;
+              else if (terms.some((t: string) => name.includes(t))) score += 30;
+              return { item, score };
+            })
+            .filter(Boolean)
+            .sort((a: any, b: any) => b.score - a.score)
+            .slice(0, 20)
+            .map((r: any) => r.item);
+          renderResults(scored);
         }, 150);
       });
 
