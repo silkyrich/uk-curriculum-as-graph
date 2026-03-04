@@ -24,9 +24,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-          <div class="flex items-center gap-8">
-            <a href={`${base}/`} class="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors">
-              UK Curriculum Explorer
+          <div class="flex items-center gap-4 md:gap-8 min-w-0">
+            <a href={`${base}/`} class="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors whitespace-nowrap shrink-0">
+              <span class="hidden sm:inline">UK Curriculum Explorer</span>
+              <span class="sm:hidden">Curriculum</span>
             </a>
             <div class="hidden md:flex items-center gap-6">
               <a href={`${base}/planners`} class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Planners</a>
@@ -49,19 +50,25 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
               </div>
             </div>
           </div>
-          <div class="flex items-center gap-4">
-            <div id="search-container" class="relative">
+          <div class="flex items-center gap-2 md:gap-4">
+            <div id="search-container" class="relative hidden sm:block">
               <input
                 type="text"
                 id="search-input"
                 placeholder="Search concepts, planners..."
-                class="w-64 pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                class="w-48 md:w-64 pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
               />
               <svg class="absolute left-3 top-2.5 h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
               <div id="search-results" class="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg hidden max-h-96 overflow-y-auto z-50"></div>
             </div>
+            <!-- Mobile search button -->
+            <button id="mobile-search-btn" class="sm:hidden p-2 text-gray-600 hover:text-gray-900">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
             <!-- Mobile menu button -->
             <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-gray-900">
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -70,17 +77,32 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
             </button>
           </div>
         </div>
+        <!-- Mobile search (expandable) -->
+        <div id="mobile-search" class="sm:hidden hidden pb-3">
+          <div id="mobile-search-container" class="relative">
+            <input
+              type="text"
+              id="mobile-search-input"
+              placeholder="Search concepts, planners..."
+              class="w-full pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+            />
+            <svg class="absolute left-3 top-2.5 h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <div id="mobile-search-results" class="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg hidden max-h-96 overflow-y-auto z-50"></div>
+          </div>
+        </div>
         <!-- Mobile menu -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
-          <a href={`${base}/planners`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Planners</a>
-          <a href={`${base}/years`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">By Year</a>
-          <a href={`${base}/#subjects`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">By Subject</a>
-          <a href={`${base}/guide`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Guide</a>
+          <a href={`${base}/planners`} class="block px-1 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">Planners</a>
+          <a href={`${base}/years`} class="block px-1 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">By Year</a>
+          <a href={`${base}/#subjects`} class="block px-1 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">By Subject</a>
+          <a href={`${base}/guide`} class="block px-1 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600">Guide</a>
           <div class="border-t border-gray-100 mt-2 pt-2">
-            <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Data</p>
-            <a href={`${base}/delivery`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Delivery Readiness</a>
-            <a href={`${base}/lenses`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Thinking Lenses</a>
-            <a href={`${base}/profiles`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Learner Profiles</a>
+            <p class="text-xs text-gray-400 uppercase tracking-wider mb-1 px-1">Data</p>
+            <a href={`${base}/delivery`} class="block px-1 py-2.5 text-sm text-gray-600 hover:text-blue-600">Delivery Readiness</a>
+            <a href={`${base}/lenses`} class="block px-1 py-2.5 text-sm text-gray-600 hover:text-blue-600">Thinking Lenses</a>
+            <a href={`${base}/profiles`} class="block px-1 py-2.5 text-sm text-gray-600 hover:text-blue-600">Learner Profiles</a>
           </div>
         </div>
       </div>
@@ -110,6 +132,17 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         mobileMenu?.classList.toggle('hidden');
       });
 
+      // Mobile search toggle
+      const mobileSearchBtn = document.getElementById('mobile-search-btn');
+      const mobileSearchPanel = document.getElementById('mobile-search');
+      const mobileSearchInput = document.getElementById('mobile-search-input') as HTMLInputElement;
+      mobileSearchBtn?.addEventListener('click', () => {
+        mobileSearchPanel?.classList.toggle('hidden');
+        if (!mobileSearchPanel?.classList.contains('hidden')) {
+          mobileSearchInput?.focus();
+        }
+      });
+
       // Data dropdown toggle
       const dropdownBtn = document.getElementById('data-dropdown-btn');
       const dropdown = document.getElementById('data-dropdown');
@@ -136,11 +169,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         return searchIndex;
       }
 
-      function renderResults(results: any[]) {
-        if (!searchResults) return;
+      function renderResults(results: any[], target?: HTMLElement | null) {
+        const container = target || searchResults;
+        if (!container) return;
         if (results.length === 0) {
-          searchResults.innerHTML = '<div class="p-3 text-sm text-gray-500">No results found</div>';
-          searchResults.classList.remove('hidden');
+          container.innerHTML = '<div class="p-3 text-sm text-gray-500">No results found</div>';
+          container.classList.remove('hidden');
           return;
         }
         const typeIcons: Record<string, string> = {
@@ -169,8 +203,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
             </div>
           </a>`;
         }).join('');
-        searchResults.innerHTML = html;
-        searchResults.classList.remove('hidden');
+        container.innerHTML = html;
+        container.classList.remove('hidden');
       }
 
       let debounceTimer: ReturnType<typeof setTimeout>;
@@ -207,10 +241,47 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         }, 150);
       });
 
+      // Mobile search input
+      const mobileSearchResults = document.getElementById('mobile-search-results');
+      let mobileDebounceTimer: ReturnType<typeof setTimeout>;
+      mobileSearchInput?.addEventListener('input', (e) => {
+        clearTimeout(mobileDebounceTimer);
+        const query = (e.target as HTMLInputElement).value.trim().toLowerCase();
+        if (query.length < 2) {
+          mobileSearchResults?.classList.add('hidden');
+          return;
+        }
+        mobileDebounceTimer = setTimeout(async () => {
+          const index = await loadSearchIndex();
+          if (!index) return;
+          const terms = query.split(/\s+/);
+          const scored = index
+            .map((item: any) => {
+              const name = (item.name || '').toLowerCase();
+              const text = `${name} ${item.description || ''} ${item.subject || ''} ${item.year_id || ''}`.toLowerCase();
+              if (!terms.every((t: string) => text.includes(t))) return null;
+              let score = 0;
+              if (item.type === 'planner') score += 100;
+              else if (item.type === 'domain') score += 50;
+              if (terms.every((t: string) => name.includes(t))) score += 80;
+              else if (terms.some((t: string) => name.includes(t))) score += 30;
+              return { item, score };
+            })
+            .filter(Boolean)
+            .sort((a: any, b: any) => b.score - a.score)
+            .slice(0, 20)
+            .map((r: any) => r.item);
+          renderResults(scored, mobileSearchResults);
+        }, 150);
+      });
+
       // Close search on click outside
       document.addEventListener('click', (e) => {
         if (!document.getElementById('search-container')?.contains(e.target as Node)) {
           searchResults?.classList.add('hidden');
+        }
+        if (!document.getElementById('mobile-search-container')?.contains(e.target as Node)) {
+          mobileSearchResults?.classList.add('hidden');
         }
       });
 
@@ -219,6 +290,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         if (e.key === 'Escape') {
           searchResults?.classList.add('hidden');
           searchInput.blur();
+        }
+      });
+      mobileSearchInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          mobileSearchResults?.classList.add('hidden');
+          mobileSearchInput.blur();
         }
       });
     </script>

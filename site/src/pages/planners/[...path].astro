@@ -20,8 +20,45 @@ const mdPath = join(process.cwd(), 'public', 'planners', planner.folder, `${plan
 let markdownContent = '';
 let htmlContent = '';
 
+// Parse metadata key-value pairs from the first few lines of the markdown
+interface MetaField { label: string; value: string; }
+const metaFields: MetaField[] = [];
+let coverageLine = '';
+let availableLine = '';
+let missingLine = '';
+
 if (existsSync(mdPath)) {
   markdownContent = readFileSync(mdPath, 'utf-8');
+
+  // Extract metadata lines (bold key-value pairs separated by |) — only before first ---
+  const lines = markdownContent.split('\n');
+  const metaLinePattern = /^\*\*[A-Z]/;
+  for (const line of lines) {
+    // Stop at the first horizontal rule — everything after is content
+    if (/^---\s*$/.test(line)) break;
+    if (!metaLinePattern.test(line)) continue;
+    // Coverage/availability lines get separate treatment
+    if (line.startsWith('**Planner coverage:**')) {
+      coverageLine = line.replace(/\*\*Planner coverage:\*\*\s*/, '');
+      continue;
+    }
+    if (line.startsWith('**Available now:**')) {
+      availableLine = line.replace(/\*\*Available now:\*\*\s*/, '');
+      continue;
+    }
+    if (line.startsWith('**Still thin/missing:**')) {
+      missingLine = line.replace(/\*\*Still thin\/missing:\*\*\s*/, '');
+      continue;
+    }
+    // Parse pipe-separated key-value pairs: **Key:** Value | **Key2:** Value2
+    const pairs = line.split(/\s*\|\s*/);
+    for (const pair of pairs) {
+      const match = pair.match(/\*\*(.+?):\*\*\s*(.+)/);
+      if (match) {
+        metaFields.push({ label: match[1], value: match[2] });
+      }
+    }
+  }
 
   // Simple markdown-to-HTML conversion for common patterns
   // We avoid adding a dependency by handling the patterns used in planners
@@ -30,6 +67,13 @@ if (existsSync(mdPath)) {
     .replace(/^# .+\n/, '')
     // Remove the study ID line
     .replace(/^\*\[.+\]\*\n/, '')
+    // Remove the metadata lines we extracted above
+    .replace(/^\*\*Subject:\*\*.+\n/m, '')
+    .replace(/^\*\*Statutory reference:\*\*.+\n/m, '')
+    .replace(/^\*\*Estimated duration:\*\*.+\n/m, '')
+    .replace(/^\*\*Planner coverage:\*\*.+\n/m, '')
+    .replace(/^\*\*Available now:\*\*.+\n/m, '')
+    .replace(/^\*\*Still thin\/missing:\*\*.+\n/m, '')
     // Horizontal rules
     .replace(/^---$/gm, '<hr class="my-6 border-gray-200" />')
     // Headers
@@ -137,6 +181,42 @@ const subjectColors: Record<string, string> = {
       </a>
     </div>
   </div>
+
+  <!-- Structured metadata grid -->
+  {metaFields.length > 0 && (
+    <div class="bg-white rounded-lg border border-gray-200 p-6 mb-6">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3">
+        {metaFields.map(f => (
+          <div>
+            <dt class="text-xs font-medium text-gray-500 uppercase tracking-wide">{f.label}</dt>
+            <dd class="text-sm text-gray-900 mt-0.5">{f.value}</dd>
+          </div>
+        ))}
+      </div>
+      {coverageLine && (
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <div class="flex flex-wrap items-center gap-2 text-sm">
+            <span class="font-medium text-gray-700">Coverage:</span>
+            <span class="text-gray-600">{coverageLine}</span>
+          </div>
+          {availableLine && (
+            <div class="flex flex-wrap gap-1.5 mt-2">
+              {availableLine.split(', ').map(item => (
+                <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          )}
+          {missingLine && (
+            <div class="flex flex-wrap gap-1.5 mt-2">
+              {missingLine.split(', ').map(item => (
+                <span class="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  )}
 
   <!-- Rendered planner content -->
   <div class="bg-white rounded-lg border border-gray-200 p-6 md:p-8">
