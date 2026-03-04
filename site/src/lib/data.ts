@@ -220,6 +220,32 @@ export interface SearchEntry {
   domain_id?: string;
   domain_name?: string;
   delivery_mode?: string;
+  folder?: string;
+  slug?: string;
+}
+
+export interface PlannerEntry {
+  study_id: string;
+  title: string;
+  subject: string;
+  key_stage: string;
+  year_groups: string[];
+  duration: string;
+  study_type: string;
+  status: string;
+  coverage: string;
+  folder: string;
+  slug: string;
+}
+
+export interface YearInfo {
+  year_id: string;
+  year_number: number;
+  name: string;
+  age_range: string;
+  key_stage: string;
+  key_stage_name: string;
+  subject_count: number;
 }
 
 // ── Data loaders ────────────────────────────────────────────────────
@@ -268,4 +294,109 @@ export function getLearnerProfiles(): LearnerProfile[] {
 
 export function getSearchIndex(): SearchEntry[] {
   return loadJSON<SearchEntry[]>('search_index.json');
+}
+
+// ── Planner loaders ─────────────────────────────────────────────────
+
+export function getPlannersManifest(): PlannerEntry[] {
+  try {
+    return loadJSON<PlannerEntry[]>('planners_manifest.json');
+  } catch {
+    return [];
+  }
+}
+
+export function getPlannersBySubjectAndKS(subject: string, ks: string): PlannerEntry[] {
+  return getPlannersManifest().filter(
+    p => p.subject === subject && p.key_stage === ks
+  );
+}
+
+export function getPlannersForSubject(subjectName: string): PlannerEntry[] {
+  return getPlannersManifest().filter(p => p.subject === subjectName);
+}
+
+// ── Year loaders ────────────────────────────────────────────────────
+
+const KS_NAMES: Record<string, string> = {
+  EYFS: 'Early Years Foundation Stage',
+  KS1: 'Key Stage 1',
+  KS2: 'Key Stage 2',
+  KS3: 'Key Stage 3',
+  KS4: 'Key Stage 4',
+};
+
+const YEAR_AGES: Record<string, string> = {
+  EYFS: '4-5',
+  Y1: '5-6', Y2: '6-7',
+  Y3: '7-8', Y4: '8-9', Y5: '9-10', Y6: '10-11',
+  Y7: '11-12', Y8: '12-13', Y9: '13-14',
+  Y10: '14-15', Y11: '15-16',
+};
+
+function yearIdToKS(yearId: string): string {
+  if (yearId === 'EYFS') return 'EYFS';
+  const n = parseInt(yearId.replace('Y', ''));
+  if (n <= 2) return 'KS1';
+  if (n <= 6) return 'KS2';
+  if (n <= 9) return 'KS3';
+  return 'KS4';
+}
+
+export function getYears(): YearInfo[] {
+  const subjects = getSubjects();
+  const overview = getOverview();
+
+  // Collect all year IDs from subjects
+  const yearIds = new Set<string>();
+  for (const s of subjects) {
+    for (const y of s.years) {
+      yearIds.add(y.year_id);
+    }
+  }
+
+  // Build year info
+  const years: YearInfo[] = [];
+  for (const yid of yearIds) {
+    const ks = yearIdToKS(yid);
+    const subjectCount = subjects.filter(s => s.years.some(y => y.year_id === yid)).length;
+    const yearNum = yid === 'EYFS' ? 0 : parseInt(yid.replace('Y', ''));
+    const name = yid === 'EYFS' ? 'Reception' : `Year ${yid.replace('Y', '')}`;
+
+    years.push({
+      year_id: yid,
+      year_number: yearNum,
+      name,
+      age_range: YEAR_AGES[yid] || '',
+      key_stage: ks,
+      key_stage_name: KS_NAMES[ks] || ks,
+      subject_count: subjectCount,
+    });
+  }
+
+  return years.sort((a, b) => a.year_number - b.year_number);
+}
+
+export function getYear(id: string): YearInfo | undefined {
+  return getYears().find(y => y.year_id === id);
+}
+
+export function getSubjectsForYear(yearId: string): Array<Subject & { year_domains: Subject['years'][0]['domains'] }> {
+  const subjects = getSubjects();
+  const result: Array<Subject & { year_domains: Subject['years'][0]['domains'] }> = [];
+
+  for (const s of subjects) {
+    const yearData = s.years.find(y => y.year_id === yearId);
+    if (yearData) {
+      result.push({ ...s, year_domains: yearData.domains });
+    }
+  }
+
+  return result.sort((a, b) => {
+    // Sort core subjects first
+    const priority: Record<string, number> = {
+      'English': 1, 'Mathematics': 2, 'Science': 3,
+    };
+    return (priority[a.name] || 99) - (priority[b.name] || 99) || a.name.localeCompare(b.name);
+  });
 }

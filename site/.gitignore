@@ -9,5 +9,8 @@ dist/
 src/data/*.json
 src/data/domains/
 
+# Planner files (staged from generated/ during CI)
+public/planners/
+
 # Astro
 .astro/

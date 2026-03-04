@@ -625,9 +625,29 @@ def main():
             prereq_graph = query_prerequisite_graph(session)
             write_json(out / 'prerequisites.json', prereq_graph)
 
-            # 8. Search index
+            # 8. Search index (includes planners if manifest exists)
             print("  Compiling search index...")
             search_index = query_search_index(session)
+
+            # Add planners to search index if manifest exists
+            manifest_path = out / 'planners_manifest.json'
+            if manifest_path.exists():
+                print("  Adding planners to search index...")
+                planners = json.loads(manifest_path.read_text(encoding='utf-8'))
+                for p in planners:
+                    search_index.append({
+                        'id': p['study_id'],
+                        'name': p['title'],
+                        'description': f"{p['subject']} {p['key_stage']} — {p.get('study_type', '')} — {p.get('duration', '')}".strip(' —'),
+                        'type': 'planner',
+                        'subject': p['subject'],
+                        'key_stage': p['key_stage'],
+                        'year_id': ', '.join(p.get('year_groups', [])),
+                        'folder': p['folder'],
+                        'slug': p['slug'],
+                    })
+                print(f"    {len(planners)} planners added to search index")
+
             write_json(out / 'search_index.json', search_index)
 
     finally:

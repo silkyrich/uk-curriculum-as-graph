@@ -1,0 +1,144 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import PlannerCard from '../../components/PlannerCard.astro';
+import { getPlannersManifest } from '../../lib/data';
+
+const planners = getPlannersManifest();
+
+// Collect unique subjects and key stages for filters
+const subjects = [...new Set(planners.map(p => p.subject))].sort();
+const keyStages = [...new Set(planners.map(p => p.key_stage))].sort();
+---
+
+<Layout title="Teacher Planners" description="327 ready-to-use lesson planners for the UK National Curriculum with differentiation, prior knowledge, and thinking lenses.">
+  <Breadcrumb items={[
+    { label: 'Home', href: '/' },
+    { label: 'Teacher Planners' },
+  ]} />
+
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-900">Teacher Planners</h1>
+    <p class="text-lg text-gray-600 mt-2 max-w-2xl">
+      {planners.length} lesson planners with differentiation data, thinking lenses, prior knowledge links,
+      and learner scaffolding. Ready to download and adapt.
+    </p>
+  </div>
+
+  <!-- Filter bar -->
+  <div class="bg-white rounded-lg border border-gray-200 p-4 mb-6 flex flex-wrap items-center gap-4" id="filter-bar">
+    <div>
+      <label for="subject-filter" class="text-xs text-gray-500 font-medium block mb-1">Subject</label>
+      <select id="subject-filter" class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        <option value="">All subjects</option>
+        {subjects.map(s => (
+          <option value={s}>{s}</option>
+        ))}
+      </select>
+    </div>
+
+    <div>
+      <label class="text-xs text-gray-500 font-medium block mb-1">Key Stage</label>
+      <div class="flex gap-1">
+        <button class="ks-btn text-sm px-3 py-1.5 rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors" data-ks="">All</button>
+        {keyStages.map(ks => (
+          <button class="ks-btn text-sm px-3 py-1.5 rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors" data-ks={ks}>{ks}</button>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <label class="text-xs text-gray-500 font-medium block mb-1">Status</label>
+      <div class="flex gap-1">
+        <button class="status-btn text-sm px-3 py-1.5 rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors" data-status="">All</button>
+        <button class="status-btn text-sm px-3 py-1.5 rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors" data-status="Mandatory">Mandatory</button>
+        <button class="status-btn text-sm px-3 py-1.5 rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors" data-status="Convention">Convention</button>
+      </div>
+    </div>
+
+    <div class="ml-auto">
+      <p class="text-sm text-gray-500" id="filter-count">Showing {planners.length} planners</p>
+    </div>
+  </div>
+
+  <!-- Planner grid -->
+  <div id="planner-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+    {planners.map(planner => (
+      <PlannerCard planner={planner} />
+    ))}
+  </div>
+
+  <script>
+    const grid = document.getElementById('planner-grid');
+    const cards = grid ? Array.from(grid.children) as HTMLElement[] : [];
+    const filterCount = document.getElementById('filter-count');
+    const subjectSelect = document.getElementById('subject-filter') as HTMLSelectElement;
+
+    let activeKS = '';
+    let activeStatus = '';
+
+    function applyFilters() {
+      const subject = subjectSelect?.value || '';
+      let visible = 0;
+
+      for (const card of cards) {
+        const cardSubject = card.dataset.subject || '';
+        const cardKS = card.dataset.ks || '';
+        const cardStatus = card.dataset.status || '';
+
+        const matchSubject = !subject || cardSubject === subject;
+        const matchKS = !activeKS || cardKS === activeKS;
+        const matchStatus = !activeStatus || cardStatus === activeStatus;
+
+        if (matchSubject && matchKS && matchStatus) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      }
+
+      if (filterCount) {
+        filterCount.textContent = `Showing ${visible} planner${visible !== 1 ? 's' : ''}`;
+      }
+    }
+
+    subjectSelect?.addEventListener('change', applyFilters);
+
+    // KS toggle buttons
+    document.querySelectorAll('.ks-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeKS = (btn as HTMLElement).dataset.ks || '';
+        document.querySelectorAll('.ks-btn').forEach(b => {
+          b.classList.toggle('bg-blue-600', (b as HTMLElement).dataset.ks === activeKS);
+          b.classList.toggle('text-white', (b as HTMLElement).dataset.ks === activeKS);
+          b.classList.toggle('border-blue-600', (b as HTMLElement).dataset.ks === activeKS);
+          b.classList.toggle('bg-white', (b as HTMLElement).dataset.ks !== activeKS);
+          b.classList.toggle('text-gray-700', (b as HTMLElement).dataset.ks !== activeKS);
+        });
+        applyFilters();
+      });
+    });
+
+    // Status toggle buttons
+    document.querySelectorAll('.status-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeStatus = (btn as HTMLElement).dataset.status || '';
+        document.querySelectorAll('.status-btn').forEach(b => {
+          b.classList.toggle('bg-blue-600', (b as HTMLElement).dataset.status === activeStatus);
+          b.classList.toggle('text-white', (b as HTMLElement).dataset.status === activeStatus);
+          b.classList.toggle('border-blue-600', (b as HTMLElement).dataset.status === activeStatus);
+          b.classList.toggle('bg-white', (b as HTMLElement).dataset.status !== activeStatus);
+          b.classList.toggle('text-gray-700', (b as HTMLElement).dataset.status !== activeStatus);
+        });
+        applyFilters();
+      });
+    });
+
+    // Set initial state - "All" buttons active
+    document.querySelector('.ks-btn[data-ks=""]')?.classList.add('bg-blue-600', 'text-white', 'border-blue-600');
+    document.querySelector('.ks-btn[data-ks=""]')?.classList.remove('bg-white', 'text-gray-700');
+    document.querySelector('.status-btn[data-status=""]')?.classList.add('bg-blue-600', 'text-white', 'border-blue-600');
+    document.querySelector('.status-btn[data-status=""]')?.classList.remove('bg-white', 'text-gray-700');
+  </script>
+</Layout>

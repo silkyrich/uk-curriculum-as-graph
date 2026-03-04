@@ -1,0 +1,226 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import DifficultyLevels from '../../components/DifficultyLevels.astro';
+import { getYears, getSubjectsForYear, getPlannersManifest, getLearnerProfiles, getDomain } from '../../lib/data';
+import type { PlannerEntry, LearnerProfile } from '../../lib/data';
+
+export function getStaticPaths() {
+  const years = getYears();
+  return years.map(y => ({
+    params: { id: y.year_id },
+    props: { year: y },
+  }));
+}
+
+const { year } = Astro.props;
+const subjects = getSubjectsForYear(year.year_id);
+const allPlanners = getPlannersManifest();
+const profiles = getLearnerProfiles();
+
+// Get planners for this year
+const yearPlanners = allPlanners.filter(p =>
+  p.year_groups.includes(year.year_id) ||
+  (year.year_id === 'EYFS' && p.year_groups.includes('EYFS'))
+);
+
+// Get learner profile for this year
+const profile = profiles.find(p => p.year_id === year.year_id);
+
+// Pre-fetch domain data for "expected" difficulty examples (limit to keep build fast)
+interface DomainSample {
+  domain_name: string;
+  concept_name: string;
+  expected_description: string;
+  expected_task: string;
+}
+
+const domainSamples: DomainSample[] = [];
+for (const subj of subjects.slice(0, 6)) {
+  for (const dom of subj.year_domains.slice(0, 2)) {
+    const domainData = getDomain(dom.domain_id);
+    if (!domainData) continue;
+    for (const concept of domainData.concepts.slice(0, 1)) {
+      const expected = concept.difficulty_levels?.find(
+        dl => dl.label === 'expected' || dl.label === 'secure'
+      );
+      if (expected) {
+        domainSamples.push({
+          domain_name: dom.name,
+          concept_name: concept.name,
+          expected_description: expected.description,
+          expected_task: expected.example_task || '',
+        });
+      }
+    }
+  }
+}
+
+function plannersForSubject(subjectName: string): PlannerEntry[] {
+  return yearPlanners.filter(p => p.subject === subjectName);
+}
+
+const subjectColors: Record<string, string> = {
+  'Mathematics': 'border-l-blue-500',
+  'English': 'border-l-purple-500',
+  'Science': 'border-l-green-500',
+  'History': 'border-l-amber-500',
+  'Geography': 'border-l-teal-500',
+  'Computing': 'border-l-indigo-500',
+  'Art and Design': 'border-l-pink-500',
+  'Music': 'border-l-violet-500',
+  'Design and Technology': 'border-l-orange-500',
+  'Physical Education': 'border-l-red-500',
+};
+---
+
+<Layout title={`${year.name} (Age ${year.age_range})`} description={`What children learn in ${year.name} (${year.key_stage_name}). ${subjects.length} subjects across the UK National Curriculum.`}>
+  <Breadcrumb items={[
+    { label: 'Home', href: '/' },
+    { label: 'Year Groups', href: '/years' },
+    { label: year.name },
+  ]} />
+
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-900">{year.name}</h1>
+    <div class="flex items-center gap-3 mt-2">
+      <span class="text-lg text-gray-600">Age {year.age_range}</span>
+      <span class="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-medium">{year.key_stage_name}</span>
+    </div>
+    <p class="text-gray-600 mt-2">
+      {subjects.length} subjects taught in this year group.
+      {yearPlanners.length > 0 && ` ${yearPlanners.length} lesson planners available.`}
+    </p>
+  </div>
+
+  <!-- Learner profile summary -->
+  {profile && (
+    <div class="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-8">
+      <h2 class="font-semibold text-blue-900 mb-2">Learner Profile</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+        {profile.content?.reading_level_description && (
+          <div>
+            <p class="text-blue-800 font-medium">Reading Level</p>
+            <p class="text-blue-700">{profile.content.reading_level_description}</p>
+          </div>
+        )}
+        {profile.pedagogy?.session_length_min && (
+          <div>
+            <p class="text-blue-800 font-medium">Session Length</p>
+            <p class="text-blue-700">{profile.pedagogy.session_length_min}-{profile.pedagogy.session_length_max} minutes</p>
+          </div>
+        )}
+        {profile.pedagogy?.scaffolding_level && (
+          <div>
+            <p class="text-blue-800 font-medium">Scaffolding</p>
+            <p class="text-blue-700">{profile.pedagogy.scaffolding_level}</p>
+          </div>
+        )}
+      </div>
+      <a href="/profiles" class="text-xs text-blue-600 hover:text-blue-800 mt-3 inline-block">
+        View full learner profiles &rarr;
+      </a>
+    </div>
+  )}
+
+  <!-- Subjects -->
+  {subjects.map(subj => {
+    const planners = plannersForSubject(subj.name);
+    const totalConcepts = subj.year_domains.reduce((sum, d) => sum + d.concept_count, 0);
+
+    return (
+      <div class="mb-8">
+        <div class:list={[
+          'bg-white rounded-lg border border-gray-200 border-l-4 overflow-hidden',
+          subjectColors[subj.name] || 'border-l-gray-400',
+        ]}>
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <a href={`/subjects/${subj.slug}`} class="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors">
+                  {subj.name}
+                </a>
+                <div class="flex items-center gap-3 mt-1 text-sm text-gray-500">
+                  <span>{subj.year_domains.length} domains</span>
+                  <span class="text-gray-300">|</span>
+                  <span>{totalConcepts} concepts</span>
+                </div>
+              </div>
+              {planners.length > 0 && (
+                <div class="text-right">
+                  <span class="text-xs text-gray-500">{planners.length} planner{planners.length !== 1 ? 's' : ''}</span>
+                </div>
+              )}
+            </div>
+
+            <!-- Domains (expandable) -->
+            <details class="mt-4">
+              <summary class="text-sm text-blue-600 hover:text-blue-800 cursor-pointer font-medium">
+                Show domains and concepts
+              </summary>
+              <div class="mt-3 space-y-3">
+                {subj.year_domains.map(dom => (
+                  <a href={`/domains/${dom.domain_id}`} class="block bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-colors">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-medium text-gray-900">{dom.name}</span>
+                      <span class="text-xs text-gray-500">{dom.concept_count} concepts</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </details>
+
+            <!-- Planner links -->
+            {planners.length > 0 && (
+              <div class="mt-4 pt-4 border-t border-gray-100">
+                <p class="text-xs text-gray-500 mb-2">Available planners:</p>
+                <div class="flex flex-wrap gap-2">
+                  {planners.map(p => (
+                    <a
+                      href={`/planners/${p.folder}/${p.slug}`}
+                      class="text-xs bg-blue-50 text-blue-700 px-2.5 py-1 rounded hover:bg-blue-100 transition-colors"
+                    >
+                      {p.title}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  })}
+
+  <!-- Expected level examples -->
+  {domainSamples.length > 0 && (
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">What "Expected" Looks Like</h2>
+      <p class="text-gray-600 text-sm mb-4">
+        Examples of what children working at the expected level can do in {year.name}.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {domainSamples.map(sample => (
+          <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+            <p class="text-xs text-green-600 font-medium">{sample.domain_name}</p>
+            <p class="text-sm font-medium text-green-900 mt-1">{sample.concept_name}</p>
+            <p class="text-sm text-green-800 mt-2">{sample.expected_description}</p>
+            {sample.expected_task && (
+              <div class="mt-2 bg-white/60 rounded p-2">
+                <p class="text-xs text-green-600 font-medium">Example task:</p>
+                <p class="text-sm text-green-800">{sample.expected_task}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <div class="bg-gray-50 rounded-lg p-6">
+    <h3 class="font-semibold text-gray-900">Looking for a different year?</h3>
+    <a href="/years" class="text-sm text-blue-600 hover:text-blue-800 mt-1 inline-block">
+      &larr; Back to all year groups
+    </a>
+  </div>
+</Layout>

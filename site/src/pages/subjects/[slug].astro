@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import { getSubjects, getDeliveryData } from '../../lib/data';
+import { getSubjects, getDeliveryData, getPlannersForSubject } from '../../lib/data';
 
 export function getStaticPaths() {
   const subjects = getSubjects();
@@ -13,6 +13,7 @@ export function getStaticPaths() {
 
 const { subject } = Astro.props;
 const delivery = getDeliveryData();
+const planners = getPlannersForSubject(subject.name);
 
 // Find delivery data for this subject
 const subjectDelivery = delivery.by_subject.find(
@@ -30,7 +31,7 @@ function yearLabel(yearId: string): string {
 
 <Layout title={subject.name}>
   <Breadcrumb items={[
-    { label: 'Dashboard', href: '/' },
+    { label: 'Home', href: '/' },
     { label: subject.name },
   ]} />
 
@@ -47,6 +48,36 @@ function yearLabel(yearId: string): string {
       <span><strong class="text-gray-900">{subject.total_clusters}</strong> clusters</span>
     </div>
   </div>
+
+  <!-- Teacher planners for this subject -->
+  {planners.length > 0 && (
+    <div class="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="font-semibold text-gray-900">Teacher Planners ({planners.length})</h2>
+        <a href={`/planners`} class="text-sm text-blue-600 hover:text-blue-800 font-medium">
+          View all planners &rarr;
+        </a>
+      </div>
+      {subject.key_stages.map(ks => {
+        const ksPlanners = planners.filter(p => p.key_stage === ks);
+        return ksPlanners.length > 0 ? (
+          <div class="mb-3 last:mb-0">
+            <p class="text-xs text-gray-500 font-medium mb-1.5">{ks}</p>
+            <div class="flex flex-wrap gap-2">
+              {ksPlanners.map(p => (
+                <a
+                  href={`/planners/${p.folder}/${p.slug}`}
+                  class="text-sm bg-blue-50 text-blue-700 px-3 py-1.5 rounded-lg hover:bg-blue-100 transition-colors"
+                >
+                  {p.title}
+                </a>
+              ))}
+            </div>
+          </div>
+        ) : null;
+      })}
+    </div>
+  )}
 
   <!-- Delivery breakdown for this subject -->
   {subjectDelivery && subjectTotal > 0 && (

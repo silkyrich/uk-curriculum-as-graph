@@ -6,6 +6,10 @@ on:
     paths:
       - 'site/**'
       - 'scripts/compile_site_data.py'
+      - 'scripts/compile_planners_manifest.py'
+      - 'scripts/generate_all_planners.py'
+      - 'scripts/planner_queries.py'
+      - 'scripts/render_markdown.py'
       - 'layers/**/data/**'
       - 'layers/**/scripts/**'
       - 'core/scripts/**'
@@ -77,6 +81,22 @@ jobs:
       - name: Import all layers
         run: python3 core/scripts/import_all.py --skip-oak --skip-case < /dev/null
 
+      - name: Generate teacher planners
+        run: python3 scripts/generate_all_planners.py --all --format md
+
+      - name: Compile planner manifest
+        run: python3 scripts/compile_planners_manifest.py --output site/src/data
+
+      - name: Stage planners for site
+        run: |
+          mkdir -p site/public/planners
+          for dir in generated/teacher-planners/*/; do
+            dirname=$(basename "$dir")
+            mkdir -p "site/public/planners/$dirname"
+            cp "$dir"*.md "site/public/planners/$dirname/" 2>/dev/null || true
+          done
+          echo "Staged $(find site/public/planners -name '*.md' | wc -l) planner files"
+
       - name: Compile site data
         run: python3 scripts/compile_site_data.py --output site/src/data
 
@@ -85,6 +105,13 @@ jobs:
         with:
           name: site-data
           path: site/src/data/
+          retention-days: 1
+
+      - name: Upload planner files
+        uses: actions/upload-artifact@v4
+        with:
+          name: planner-files
+          path: site/public/planners/
           retention-days: 1
 
   # ── Build Astro site ───────────────────────────────────────────────
@@ -102,6 +129,12 @@ jobs:
         with:
           name: site-data
           path: site/src/data/
+
+      - name: Download planner files
+        uses: actions/download-artifact@v4
+        with:
+          name: planner-files
+          path: site/public/planners/
 
       - name: Set up Node.js
         uses: actions/setup-node@v4

@@ -1,0 +1,214 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+
+<Layout title="Curriculum Guide" description="How the UK National Curriculum works: Key Stages, subjects, concepts, and difficulty levels explained.">
+  <Breadcrumb items={[
+    { label: 'Home', href: '/' },
+    { label: 'Curriculum Guide' },
+  ]} />
+
+  <div class="max-w-3xl">
+    <h1 class="text-3xl font-bold text-gray-900 mb-2">How the UK Curriculum Works</h1>
+    <p class="text-lg text-gray-600 mb-8">
+      A plain-English guide to the structure of the UK National Curriculum, from Reception to Year 11.
+    </p>
+
+    <!-- Key Stages -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Key Stages</h2>
+      <p class="text-gray-600 mb-4">
+        The UK National Curriculum divides schooling into five stages. Each stage has its own programmes of study
+        that define what children should learn.
+      </p>
+      <div class="space-y-3">
+        <div class="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
+          <div class="flex items-center gap-3">
+            <span class="text-sm font-semibold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded">EYFS</span>
+            <div>
+              <p class="font-medium text-gray-900">Early Years Foundation Stage</p>
+              <p class="text-sm text-gray-600">Reception (age 4-5) &middot; Play-based learning across 7 areas</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <div class="flex items-center gap-3">
+            <span class="text-sm font-semibold text-blue-800 bg-blue-100 px-2.5 py-1 rounded">KS1</span>
+            <div>
+              <p class="font-medium text-gray-900">Key Stage 1</p>
+              <p class="text-sm text-gray-600">Years 1-2 (age 5-7) &middot; Infant school &middot; Core literacy and numeracy</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+          <div class="flex items-center gap-3">
+            <span class="text-sm font-semibold text-purple-800 bg-purple-100 px-2.5 py-1 rounded">KS2</span>
+            <div>
+              <p class="font-medium text-gray-900">Key Stage 2</p>
+              <p class="text-sm text-gray-600">Years 3-6 (age 7-11) &middot; Junior school &middot; SATs at end of Y6</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+          <div class="flex items-center gap-3">
+            <span class="text-sm font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded">KS3</span>
+            <div>
+              <p class="font-medium text-gray-900">Key Stage 3</p>
+              <p class="text-sm text-gray-600">Years 7-9 (age 11-14) &middot; Secondary school &middot; Broad subject range</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+          <div class="flex items-center gap-3">
+            <span class="text-sm font-semibold text-red-800 bg-red-100 px-2.5 py-1 rounded">KS4</span>
+            <div>
+              <p class="font-medium text-gray-900">Key Stage 4</p>
+              <p class="text-sm text-gray-600">Years 10-11 (age 14-16) &middot; GCSE preparation &middot; Subject specialisation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Structure -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">How It Fits Together</h2>
+      <p class="text-gray-600 mb-4">
+        The curriculum has a nested structure. Each level adds more detail about what children learn.
+      </p>
+      <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 font-mono text-sm">
+        <div class="text-gray-900 font-semibold">National Curriculum</div>
+        <div class="ml-4 mt-2">
+          <div class="text-blue-700">&rarr; Key Stage <span class="text-gray-400">(e.g. KS2)</span></div>
+          <div class="ml-6 mt-1">
+            <div class="text-purple-700">&rarr; Year Group <span class="text-gray-400">(e.g. Year 3)</span></div>
+            <div class="ml-6 mt-1">
+              <div class="text-green-700">&rarr; Subject <span class="text-gray-400">(e.g. Mathematics)</span></div>
+              <div class="ml-6 mt-1">
+                <div class="text-amber-700">&rarr; Domain <span class="text-gray-400">(e.g. Number: Fractions)</span></div>
+                <div class="ml-6 mt-1">
+                  <div class="text-teal-700">&rarr; Concept <span class="text-gray-400">(e.g. Unit fractions)</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What are Concepts -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">What are Concepts?</h2>
+      <p class="text-gray-600 mb-3">
+        A <strong>concept</strong> is the smallest unit of knowledge in the curriculum. It represents one thing
+        a child needs to understand or be able to do.
+      </p>
+      <div class="bg-teal-50 border border-teal-200 rounded-lg p-4">
+        <p class="text-sm font-medium text-teal-900">Example: Place Value in Year 3</p>
+        <p class="text-sm text-teal-800 mt-1">
+          "Recognise the place value of each digit in a three-digit number (hundreds, tens, ones)."
+          This is one concept within the Number: Place Value domain of Year 3 Mathematics.
+        </p>
+      </div>
+      <p class="text-gray-600 mt-3">
+        This site maps <strong>1,300+ concepts</strong> across all subjects from Reception to Year 11.
+      </p>
+    </section>
+
+    <!-- Prerequisites -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">How Prerequisites Work</h2>
+      <p class="text-gray-600 mb-3">
+        Concepts build on each other year-on-year. A <strong>prerequisite</strong> is a concept that must be
+        understood before moving on to the next one.
+      </p>
+      <div class="bg-white border border-gray-200 rounded-lg p-4">
+        <div class="flex items-center gap-3 text-sm">
+          <div class="bg-blue-50 border border-blue-200 rounded px-3 py-2 text-center">
+            <p class="font-medium text-blue-900">Y2: Place Value</p>
+            <p class="text-xs text-blue-600">Two-digit numbers</p>
+          </div>
+          <svg class="w-6 h-6 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+          <div class="bg-purple-50 border border-purple-200 rounded px-3 py-2 text-center">
+            <p class="font-medium text-purple-900">Y3: Place Value</p>
+            <p class="text-xs text-purple-600">Three-digit numbers</p>
+          </div>
+          <svg class="w-6 h-6 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+          <div class="bg-amber-50 border border-amber-200 rounded px-3 py-2 text-center">
+            <p class="font-medium text-amber-900">Y4: Place Value</p>
+            <p class="text-xs text-amber-600">Four-digit numbers</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-sm text-gray-500 mt-2">
+        There are over 1,350 prerequisite links in the graph, showing how learning progresses across years.
+      </p>
+    </section>
+
+    <!-- Difficulty Levels -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">What are Difficulty Levels?</h2>
+      <p class="text-gray-600 mb-3">
+        Each concept has <strong>3-4 difficulty levels</strong> that describe what children working at different
+        levels can do. These help with differentiation in the classroom.
+      </p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="bg-white border border-gray-200 rounded-lg p-3">
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-2.5 h-2.5 rounded-full bg-blue-400"></div>
+            <span class="text-sm font-medium text-gray-900">Entry</span>
+          </div>
+          <p class="text-xs text-gray-600">Working towards the concept. Needs support and scaffolding.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-3">
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
+            <span class="text-sm font-medium text-gray-900">Developing</span>
+          </div>
+          <p class="text-xs text-gray-600">Beginning to grasp the concept. Some independence.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-3">
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
+            <span class="text-sm font-medium text-gray-900">Expected</span>
+          </div>
+          <p class="text-xs text-gray-600">Meeting the standard. Can work independently.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-3">
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-2.5 h-2.5 rounded-full bg-purple-400"></div>
+            <span class="text-sm font-medium text-gray-900">Greater Depth</span>
+          </div>
+          <p class="text-xs text-gray-600">Exceeding expectations. Can reason and apply.</p>
+        </div>
+      </div>
+      <p class="text-sm text-gray-500 mt-3">
+        At secondary level (KS3-KS4) the labels change to: Emerging, Developing, Secure, Mastery.
+      </p>
+    </section>
+
+    <!-- Where to start -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Where to Start</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <a href="/planners" class="block bg-blue-50 border border-blue-200 rounded-lg p-5 hover:shadow-md transition-all">
+          <h3 class="font-semibold text-blue-900">Teacher Planners</h3>
+          <p class="text-sm text-blue-700 mt-1">327 ready-to-use lesson planners with differentiation and prior knowledge.</p>
+        </a>
+        <a href="/years" class="block bg-purple-50 border border-purple-200 rounded-lg p-5 hover:shadow-md transition-all">
+          <h3 class="font-semibold text-purple-900">By Year Group</h3>
+          <p class="text-sm text-purple-700 mt-1">See what your child learns each year across all subjects.</p>
+        </a>
+        <a href="/#subjects" class="block bg-teal-50 border border-teal-200 rounded-lg p-5 hover:shadow-md transition-all">
+          <h3 class="font-semibold text-teal-900">By Subject</h3>
+          <p class="text-sm text-teal-700 mt-1">Browse the full curriculum for any subject from KS1 to KS4.</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</Layout>

@@ -69,7 +69,7 @@ const modeColors: Record<string, string> = {
 
 <Layout title={domain.name} description={`${domain.subject} - ${yearLabel(domain.year_id)} - ${domain.name}`}>
   <Breadcrumb items={[
-    { label: 'Dashboard', href: '/' },
+    { label: 'Home', href: '/' },
     { label: domain.subject, href: `/subjects/${subjectSlug}` },
     { label: yearLabel(domain.year_id), href: `/subjects/${subjectSlug}` },
     { label: domain.name },

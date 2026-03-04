@@ -25,10 +25,24 @@ const { title, description = 'Explore the UK National Curriculum as an interacti
               UK Curriculum Explorer
             </a>
             <div class="hidden md:flex items-center gap-6">
-              <a href="/" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Dashboard</a>
-              <a href="/delivery" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Delivery Readiness</a>
-              <a href="/lenses" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Thinking Lenses</a>
-              <a href="/profiles" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Learner Profiles</a>
+              <a href="/planners" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Planners</a>
+              <a href="/years" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">By Year</a>
+              <a href="/#subjects" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">By Subject</a>
+              <a href="/guide" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Guide</a>
+              <!-- Data dropdown -->
+              <div class="relative group">
+                <button class="text-sm text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-1" id="data-dropdown-btn">
+                  Data
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div id="data-dropdown" class="absolute left-0 top-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg hidden w-48 py-1 z-50">
+                  <a href="/delivery" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900">Delivery Readiness</a>
+                  <a href="/lenses" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900">Thinking Lenses</a>
+                  <a href="/profiles" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900">Learner Profiles</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="flex items-center gap-4">
@@ -36,7 +50,7 @@ const { title, description = 'Explore the UK National Curriculum as an interacti
               <input
                 type="text"
                 id="search-input"
-                placeholder="Search concepts, domains..."
+                placeholder="Search concepts, planners..."
                 class="w-64 pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
               />
               <svg class="absolute left-3 top-2.5 h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,10 +68,16 @@ const { title, description = 'Explore the UK National Curriculum as an interacti
         </div>
         <!-- Mobile menu -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
-          <a href="/" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Dashboard</a>
-          <a href="/delivery" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Delivery Readiness</a>
-          <a href="/lenses" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Thinking Lenses</a>
-          <a href="/profiles" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Learner Profiles</a>
+          <a href="/planners" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Planners</a>
+          <a href="/years" class="block py-2 text-sm text-gray-600 hover:text-gray-900">By Year</a>
+          <a href="/#subjects" class="block py-2 text-sm text-gray-600 hover:text-gray-900">By Subject</a>
+          <a href="/guide" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Guide</a>
+          <div class="border-t border-gray-100 mt-2 pt-2">
+            <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Data</p>
+            <a href="/delivery" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Delivery Readiness</a>
+            <a href="/lenses" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Thinking Lenses</a>
+            <a href="/profiles" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Learner Profiles</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -83,9 +103,22 @@ const { title, description = 'Explore the UK National Curriculum as an interacti
         mobileMenu?.classList.toggle('hidden');
       });
 
+      // Data dropdown toggle
+      const dropdownBtn = document.getElementById('data-dropdown-btn');
+      const dropdown = document.getElementById('data-dropdown');
+      dropdownBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown?.classList.toggle('hidden');
+      });
+      document.addEventListener('click', (e) => {
+        if (!dropdownBtn?.contains(e.target as Node) && !dropdown?.contains(e.target as Node)) {
+          dropdown?.classList.add('hidden');
+        }
+      });
+
       // Client-side search
-      let searchIndex = null;
-      const searchInput = document.getElementById('search-input');
+      let searchIndex: any[] | null = null;
+      const searchInput = document.getElementById('search-input') as HTMLInputElement;
       const searchResults = document.getElementById('search-results');
 
       async function loadSearchIndex() {
@@ -95,19 +128,27 @@ const { title, description = 'Explore the UK National Curriculum as an interacti
         return searchIndex;
       }
 
-      function renderResults(results) {
+      function renderResults(results: any[]) {
         if (!searchResults) return;
         if (results.length === 0) {
           searchResults.innerHTML = '<div class="p-3 text-sm text-gray-500">No results found</div>';
           searchResults.classList.remove('hidden');
           return;
         }
-        const typeIcons = {
+        const typeIcons: Record<string, string> = {
           concept: '<span class="text-xs bg-teal-50 text-teal-700 px-1.5 py-0.5 rounded">Concept</span>',
           domain: '<span class="text-xs bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded">Domain</span>',
+          planner: '<span class="text-xs bg-violet-50 text-violet-700 px-1.5 py-0.5 rounded">Planner</span>',
         };
-        const html = results.slice(0, 20).map(r => {
-          const href = r.type === 'domain' ? `/domains/${r.id}` : `/domains/${r.domain_id}#${r.id}`;
+        const html = results.slice(0, 20).map((r: any) => {
+          let href: string;
+          if (r.type === 'planner') {
+            href = `/planners/${r.folder}/${r.slug}`;
+          } else if (r.type === 'domain') {
+            href = `/domains/${r.id}`;
+          } else {
+            href = `/domains/${r.domain_id}#${r.id}`;
+          }
           return `<a href="${href}" class="block p-3 hover:bg-gray-50 border-b border-gray-100 last:border-0">
             <div class="flex items-center gap-2">
               ${typeIcons[r.type] || ''}
@@ -124,20 +165,21 @@ const { title, description = 'Explore the UK National Curriculum as an interacti
         searchResults.classList.remove('hidden');
       }
 
-      let debounceTimer;
+      let debounceTimer: ReturnType<typeof setTimeout>;
       searchInput?.addEventListener('input', (e) => {
         clearTimeout(debounceTimer);
-        const query = e.target.value.trim().toLowerCase();
+        const query = (e.target as HTMLInputElement).value.trim().toLowerCase();
         if (query.length < 2) {
           searchResults?.classList.add('hidden');
           return;
         }
         debounceTimer = setTimeout(async () => {
           const index = await loadSearchIndex();
+          if (!index) return;
           const terms = query.split(/\s+/);
-          const results = index.filter(item => {
+          const results = index.filter((item: any) => {
             const text = `${item.name} ${item.description || ''} ${item.subject || ''} ${item.year_id || ''}`.toLowerCase();
-            return terms.every(t => text.includes(t));
+            return terms.every((t: string) => text.includes(t));
           }).slice(0, 20);
           renderResults(results);
         }, 150);
@@ -145,7 +187,7 @@ const { title, description = 'Explore the UK National Curriculum as an interacti
 
       // Close search on click outside
       document.addEventListener('click', (e) => {
-        if (!document.getElementById('search-container')?.contains(e.target)) {
+        if (!document.getElementById('search-container')?.contains(e.target as Node)) {
           searchResults?.classList.add('hidden');
         }
       });

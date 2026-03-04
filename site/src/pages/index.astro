@@ -2,11 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import StatCard from '../components/StatCard.astro';
 import SubjectCard from '../components/SubjectCard.astro';
-import { getOverview, getSubjects, getDeliveryData } from '../lib/data';
+import { getOverview, getSubjects, getDeliveryData, getPlannersManifest } from '../lib/data';
 
 const overview = getOverview();
 const subjects = getSubjects();
 const delivery = getDeliveryData();
+const planners = getPlannersManifest();
 
 const totalConcepts = delivery.summary.reduce((sum, m) => sum + m.count, 0);
 const aiReachable = delivery.summary
@@ -15,126 +16,174 @@ const aiReachable = delivery.summary
 const aiPercent = totalConcepts > 0 ? Math.round((aiReachable / totalConcepts) * 100) : 0;
 ---
 
-<Layout title="Dashboard">
-  <!-- Hero -->
-  <div class="mb-10">
-    <h1 class="text-3xl font-bold text-gray-900">UK National Curriculum</h1>
-    <p class="text-lg text-gray-600 mt-2 max-w-3xl">
-      A multi-layer knowledge graph mapping the entire UK National Curriculum from Reception to Year 11.
-      Explore subjects, concepts, difficulty levels, and delivery readiness across
-      {overview.key_stages_count} key stages.
+<Layout title="UK National Curriculum Explorer">
+  <!-- Persona hero -->
+  <div class="mb-12">
+    <h1 class="text-3xl font-bold text-gray-900">UK National Curriculum Explorer</h1>
+    <p class="text-lg text-gray-600 mt-2 max-w-2xl">
+      Browse the curriculum, find lesson planners, and see what children learn at every stage.
     </p>
-  </div>
 
-  <!-- Stats grid -->
-  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
-    <StatCard label="Concepts" value={overview.concepts} color="teal" />
-    <StatCard label="Lesson Clusters" value={overview.clusters} color="indigo" />
-    <StatCard label="Domains" value={overview.domains} color="blue" />
-    <StatCard label="Difficulty Levels" value={overview.difficulty_levels} color="amber" />
-    <StatCard label="Prerequisites" value={overview.prerequisites} color="gray" />
-    <StatCard label="AI-Teachable" value={`${aiPercent}%`} color="emerald" href="/delivery" />
-  </div>
-
-  <!-- Key stages -->
-  <div class="mb-10">
-    <h2 class="text-xl font-semibold text-gray-900 mb-4">Key Stages</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-      {overview.key_stages.map(ks => (
-        <div class="bg-white rounded-lg border border-gray-200 p-4">
-          <h3 class="font-semibold text-gray-900">{ks.name}</h3>
-          <p class="text-sm text-gray-500 mt-1">
-            {ks.year_ids.length === 1 ? ks.year_ids[0] : `${ks.year_ids[0]}–${ks.year_ids[ks.year_ids.length - 1]}`}
-          </p>
-          <p class="text-2xl font-bold text-blue-600 mt-2">{ks.concept_count}</p>
-          <p class="text-xs text-gray-500">concepts</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
+      <!-- Teacher card -->
+      <a href="/planners" class="group block bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg hover:border-blue-300 hover:-translate-y-1 transition-all">
+        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
         </div>
-      ))}
-    </div>
-  </div>
+        <h2 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600">I'm a Teacher</h2>
+        <p class="text-sm text-gray-600 mt-1">
+          Find lesson planners for your subject with differentiation, prior knowledge, and thinking lenses.
+        </p>
+        <p class="text-sm text-blue-600 font-medium mt-3">
+          {planners.length} planners &rarr;
+        </p>
+      </a>
 
-  <!-- Delivery readiness summary -->
-  <div class="mb-10">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="text-xl font-semibold text-gray-900">Delivery Readiness</h2>
-      <a href="/delivery" class="text-sm text-blue-600 hover:text-blue-800 font-medium">
-        View full breakdown &rarr;
+      <!-- Parent card -->
+      <a href="/years" class="group block bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg hover:border-purple-300 hover:-translate-y-1 transition-all">
+        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <h2 class="text-lg font-semibold text-gray-900 group-hover:text-purple-600">I'm a Parent</h2>
+        <p class="text-sm text-gray-600 mt-1">
+          See what your child learns this year: subjects, concepts, and what "expected" level looks like.
+        </p>
+        <p class="text-sm text-purple-600 font-medium mt-3">
+          Choose year &rarr;
+        </p>
+      </a>
+
+      <!-- Explore card -->
+      <a href="#curriculum-overview" class="group block bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg hover:border-teal-300 hover:-translate-y-1 transition-all">
+        <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+          </svg>
+        </div>
+        <h2 class="text-lg font-semibold text-gray-900 group-hover:text-teal-600">Explore the Curriculum</h2>
+        <p class="text-sm text-gray-600 mt-1">
+          Browse subjects, concepts, and data across the full UK National Curriculum.
+        </p>
+        <p class="text-sm text-teal-600 font-medium mt-3">
+          {subjects.filter(s => s.total_concepts > 0).length} subjects &rarr;
+        </p>
       </a>
     </div>
-    <div class="bg-white rounded-lg border border-gray-200 p-6">
-      <div class="flex items-center gap-8 mb-4">
-        {delivery.summary.map(mode => (
-          <div class="flex items-center gap-2">
-            <div class="w-3 h-3 rounded-full" style={`background-color: ${mode.color}`} />
-            <span class="text-sm text-gray-700">{mode.mode_name}</span>
-            <span class="text-sm font-semibold">{mode.count}</span>
+  </div>
+
+  <!-- Curriculum overview (below fold) -->
+  <div id="curriculum-overview">
+    <h2 class="text-xl font-semibold text-gray-900 mb-6">Curriculum Overview</h2>
+
+    <!-- Stats grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 mb-10">
+      <StatCard label="Concepts" value={overview.concepts} color="teal" />
+      <StatCard label="Lesson Clusters" value={overview.clusters} color="indigo" />
+      <StatCard label="Domains" value={overview.domains} color="blue" />
+      <StatCard label="Difficulty Levels" value={overview.difficulty_levels} color="amber" />
+      <StatCard label="Prerequisites" value={overview.prerequisites} color="gray" />
+      <StatCard label="AI-Teachable" value={`${aiPercent}%`} color="emerald" href="/delivery" />
+      <StatCard label="Teacher Planners" value={planners.length} color="violet" href="/planners" />
+    </div>
+
+    <!-- Key stages -->
+    <div class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Key Stages</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+        {overview.key_stages.map(ks => (
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <h3 class="font-semibold text-gray-900">{ks.name}</h3>
+            <p class="text-sm text-gray-500 mt-1">
+              {ks.year_ids.length === 1 ? ks.year_ids[0] : `${ks.year_ids[0]}–${ks.year_ids[ks.year_ids.length - 1]}`}
+            </p>
+            <p class="text-2xl font-bold text-blue-600 mt-2">{ks.concept_count}</p>
+            <p class="text-xs text-gray-500">concepts</p>
           </div>
         ))}
       </div>
-      <!-- Stacked bar -->
-      <div class="h-8 rounded-full overflow-hidden flex bg-gray-100">
-        {delivery.summary.map(mode => {
-          const pct = totalConcepts > 0 ? (mode.count / totalConcepts) * 100 : 0;
-          return (
-            <div
-              style={`width: ${pct}%; background-color: ${mode.color}`}
-              class="h-full transition-all relative group"
-              title={`${mode.mode_name}: ${mode.count} concepts (${Math.round(pct)}%)`}
-            >
-              {pct > 8 && (
-                <span class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold">
-                  {Math.round(pct)}%
-                </span>
-              )}
-            </div>
-          );
-        })}
+    </div>
+
+    <!-- Delivery readiness summary -->
+    <div class="mb-10">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-semibold text-gray-900">Delivery Readiness</h2>
+        <a href="/delivery" class="text-sm text-blue-600 hover:text-blue-800 font-medium">
+          View full breakdown &rarr;
+        </a>
       </div>
-      <p class="text-sm text-gray-500 mt-3">
-        <strong>{aiPercent}%</strong> of the curriculum ({aiReachable.toLocaleString()} concepts) can be delivered through AI-powered adaptive learning.
-      </p>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <div class="flex flex-wrap items-center gap-4 md:gap-8 mb-4">
+          {delivery.summary.map(mode => (
+            <div class="flex items-center gap-2">
+              <div class="w-3 h-3 rounded-full" style={`background-color: ${mode.color}`} />
+              <span class="text-sm text-gray-700">{mode.mode_name}</span>
+              <span class="text-sm font-semibold">{mode.count}</span>
+            </div>
+          ))}
+        </div>
+        <!-- Stacked bar -->
+        <div class="h-8 rounded-full overflow-hidden flex bg-gray-100">
+          {delivery.summary.map(mode => {
+            const pct = totalConcepts > 0 ? (mode.count / totalConcepts) * 100 : 0;
+            return (
+              <div
+                style={`width: ${pct}%; background-color: ${mode.color}`}
+                class="h-full transition-all relative group"
+                title={`${mode.mode_name}: ${mode.count} concepts (${Math.round(pct)}%)`}
+              >
+                {pct > 8 && (
+                  <span class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold">
+                    {Math.round(pct)}%
+                  </span>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <p class="text-sm text-gray-500 mt-3">
+          <strong>{aiPercent}%</strong> of the curriculum ({aiReachable.toLocaleString()} concepts) can be delivered through AI-powered adaptive learning.
+        </p>
+      </div>
+    </div>
+
+    <!-- Charts row -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h3 class="font-semibold text-gray-900 mb-4">Delivery Readiness by Subject</h3>
+        <canvas id="delivery-by-subject-chart" height="300"></canvas>
+      </div>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h3 class="font-semibold text-gray-900 mb-4">Concepts by Key Stage</h3>
+        <canvas id="concepts-by-ks-chart" height="300"></canvas>
+      </div>
+    </div>
+
+    <!-- Subjects grid -->
+    <div id="subjects" class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">
+        Subjects ({subjects.filter(s => s.total_concepts > 0).length})
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {subjects
+          .filter(s => s.total_concepts > 0)
+          .sort((a, b) => b.total_concepts - a.total_concepts)
+          .map(subject => (
+            <SubjectCard subject={subject} />
+          ))
+        }
+      </div>
     </div>
   </div>
 
-  <!-- Charts row -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
-    <!-- Delivery by subject chart -->
-    <div class="bg-white rounded-lg border border-gray-200 p-6">
-      <h3 class="font-semibold text-gray-900 mb-4">Delivery Readiness by Subject</h3>
-      <canvas id="delivery-by-subject-chart" height="300"></canvas>
-    </div>
-
-    <!-- Concepts by key stage chart -->
-    <div class="bg-white rounded-lg border border-gray-200 p-6">
-      <h3 class="font-semibold text-gray-900 mb-4">Concepts by Key Stage</h3>
-      <canvas id="concepts-by-ks-chart" height="300"></canvas>
-    </div>
-  </div>
-
-  <!-- Subjects grid -->
-  <div class="mb-10">
-    <h2 class="text-xl font-semibold text-gray-900 mb-4">
-      Subjects ({subjects.length})
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {subjects
-        .filter(s => s.total_concepts > 0)
-        .sort((a, b) => b.total_concepts - a.total_concepts)
-        .map(subject => (
-          <SubjectCard subject={subject} />
-        ))
-      }
-    </div>
-  </div>
-
-  <!-- Search index for client-side search -->
   <script define:vars={{ deliveryBySubject: delivery.by_subject, deliveryModes: delivery.modes, keyStages: overview.key_stages }}>
-    // Chart.js loaded via CDN for simplicity
     async function loadCharts() {
       const { Chart, registerables } = await import('https://cdn.jsdelivr.net/npm/chart.js@4.4.8/+esm');
       Chart.register(...registerables);
 
-      // Delivery by subject (horizontal stacked bar)
       const subjectData = deliveryBySubject.filter(s => {
         const total = Object.values(s.modes).reduce((sum, m) => sum + m.count, 0);
         return total > 10;
@@ -168,7 +217,6 @@ const aiPercent = totalConcepts > 0 ? Math.round((aiReachable / totalConcepts) *
         },
       });
 
-      // Concepts by key stage (doughnut)
       const ksColors = ['#10B981', '#3B82F6', '#8B5CF6', '#F59E0B', '#EF4444'];
       new Chart(document.getElementById('concepts-by-ks-chart'), {
         type: 'doughnut',

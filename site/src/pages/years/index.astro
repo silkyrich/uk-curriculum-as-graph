@@ -1,0 +1,99 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { getYears } from '../../lib/data';
+
+const years = getYears();
+
+const ksColors: Record<string, string> = {
+  EYFS: 'border-l-emerald-500',
+  KS1: 'border-l-blue-500',
+  KS2: 'border-l-purple-500',
+  KS3: 'border-l-amber-500',
+  KS4: 'border-l-red-500',
+};
+
+const ksBg: Record<string, string> = {
+  EYFS: 'bg-emerald-50 text-emerald-700',
+  KS1: 'bg-blue-50 text-blue-700',
+  KS2: 'bg-purple-50 text-purple-700',
+  KS3: 'bg-amber-50 text-amber-700',
+  KS4: 'bg-red-50 text-red-700',
+};
+---
+
+<Layout title="Year Groups" description="What does your child learn each year? Browse the UK National Curriculum by year group.">
+  <Breadcrumb items={[
+    { label: 'Home', href: '/' },
+    { label: 'Year Groups' },
+  ]} />
+
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-900">What does your child learn?</h1>
+    <p class="text-lg text-gray-600 mt-2 max-w-2xl">
+      Choose a year group to see the subjects, concepts, and expectations for that year.
+    </p>
+  </div>
+
+  <!-- Primary (EYFS + KS1 + KS2) -->
+  <div class="mb-10">
+    <h2 class="text-lg font-semibold text-gray-900 mb-4">Primary School</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      {years.filter(y => y.year_number <= 6).map(year => (
+        <a
+          href={`/years/${year.year_id}`}
+          class:list={[
+            'block bg-white rounded-lg border border-gray-200 border-l-4 p-4',
+            'hover:shadow-md hover:-translate-y-0.5 transition-all',
+            ksColors[year.key_stage] || 'border-l-gray-400',
+          ]}
+        >
+          <h3 class="font-semibold text-gray-900">{year.name}</h3>
+          <p class="text-sm text-gray-500 mt-0.5">Age {year.age_range}</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class:list={['text-xs px-2 py-0.5 rounded font-medium', ksBg[year.key_stage] || '']}>
+              {year.key_stage}
+            </span>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">{year.subject_count} subjects</p>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <!-- Secondary (KS3 + KS4) -->
+  <div class="mb-10">
+    <h2 class="text-lg font-semibold text-gray-900 mb-4">Secondary School</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      {years.filter(y => y.year_number >= 7).map(year => (
+        <a
+          href={`/years/${year.year_id}`}
+          class:list={[
+            'block bg-white rounded-lg border border-gray-200 border-l-4 p-4',
+            'hover:shadow-md hover:-translate-y-0.5 transition-all',
+            ksColors[year.key_stage] || 'border-l-gray-400',
+          ]}
+        >
+          <h3 class="font-semibold text-gray-900">{year.name}</h3>
+          <p class="text-sm text-gray-500 mt-0.5">Age {year.age_range}</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class:list={['text-xs px-2 py-0.5 rounded font-medium', ksBg[year.key_stage] || '']}>
+              {year.key_stage}
+            </span>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">{year.subject_count} subjects</p>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <div class="bg-blue-50 rounded-lg p-6">
+    <h3 class="font-semibold text-blue-900">New to the UK Curriculum?</h3>
+    <p class="text-sm text-blue-800 mt-1">
+      Learn how Key Stages, subjects, and concepts fit together.
+    </p>
+    <a href="/guide" class="inline-block mt-3 text-sm text-blue-700 hover:text-blue-900 font-medium">
+      Read the Curriculum Guide &rarr;
+    </a>
+  </div>
+</Layout>

@@ -1,0 +1,156 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { getPlannersManifest } from '../../lib/data';
+import { readFileSync, existsSync } from 'fs';
+import { join } from 'path';
+
+export function getStaticPaths() {
+  const planners = getPlannersManifest();
+  return planners.map(p => ({
+    params: { path: `${p.folder}/${p.slug}` },
+    props: { planner: p },
+  }));
+}
+
+const { planner } = Astro.props;
+
+// Read the raw markdown file from public/planners/ at build time
+const mdPath = join(process.cwd(), 'public', 'planners', planner.folder, `${planner.slug}.md`);
+let markdownContent = '';
+let htmlContent = '';
+
+if (existsSync(mdPath)) {
+  markdownContent = readFileSync(mdPath, 'utf-8');
+
+  // Simple markdown-to-HTML conversion for common patterns
+  // We avoid adding a dependency by handling the patterns used in planners
+  htmlContent = markdownContent
+    // Remove the first header line (we render our own)
+    .replace(/^# .+\n/, '')
+    // Remove the study ID line
+    .replace(/^\*\[.+\]\*\n/, '')
+    // Horizontal rules
+    .replace(/^---$/gm, '<hr class="my-6 border-gray-200" />')
+    // Headers
+    .replace(/^#### (.+)$/gm, '<h4 class="text-base font-semibold text-gray-900 mt-6 mb-2">$1</h4>')
+    .replace(/^### (.+)$/gm, '<h3 class="text-lg font-semibold text-gray-900 mt-8 mb-3">$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2 class="text-xl font-semibold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200">$1</h2>')
+    // Bold + italic
+    .replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    // Bold
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    // Italic
+    .replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>')
+    // Ordered lists
+    .replace(/^(\d+)\. (.+)$/gm, '<li class="ml-6 list-decimal text-gray-700 text-sm mb-1">$2</li>')
+    // Unordered lists
+    .replace(/^- (.+)$/gm, '<li class="ml-6 list-disc text-gray-700 text-sm mb-1">$1</li>')
+    // Blockquotes
+    .replace(/^> (.+)$/gm, '<blockquote class="border-l-4 border-blue-200 pl-4 py-1 my-3 text-gray-600 text-sm italic">$1</blockquote>')
+    // Tables: header row
+    .replace(/^\|(.+)\|$/gm, (match) => {
+      const cells = match.split('|').filter(c => c.trim());
+      if (cells.every(c => /^[\s-:]+$/.test(c))) {
+        return '<!-- table separator -->';
+      }
+      return '<tr>' + cells.map(c => `<td class="border border-gray-200 px-3 py-2 text-sm">${c.trim()}</td>`).join('') + '</tr>';
+    })
+    // Wrap table rows
+    .replace(/((?:<tr>.*<\/tr>\n?)+)/g, '<div class="overflow-x-auto my-4"><table class="min-w-full border-collapse border border-gray-200">$1</table></div>')
+    // Inline code
+    .replace(/`([^`]+)`/g, '<code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-xs">$1</code>')
+    // Paragraphs (lines that aren't already HTML)
+    .replace(/^(?!<[a-z]|<!--)(.+)$/gm, '<p class="text-gray-700 text-sm mb-3">$1</p>')
+    // Clean up empty paragraphs
+    .replace(/<p class="[^"]*">\s*<\/p>/g, '')
+    // Clean up table separator comments
+    .replace(/<!-- table separator -->\n?/g, '');
+}
+
+const subjectColors: Record<string, string> = {
+  'Mathematics': 'bg-blue-50 text-blue-700',
+  'English': 'bg-purple-50 text-purple-700',
+  'Science': 'bg-green-50 text-green-700',
+  'History': 'bg-amber-50 text-amber-700',
+  'Geography': 'bg-teal-50 text-teal-700',
+  'Computing': 'bg-indigo-50 text-indigo-700',
+  'Art and Design': 'bg-pink-50 text-pink-700',
+  'Music': 'bg-violet-50 text-violet-700',
+  'Design and Technology': 'bg-orange-50 text-orange-700',
+  'General': 'bg-gray-100 text-gray-700',
+};
+---
+
+<Layout title={`${planner.title} — Teacher Planner`} description={`${planner.subject} ${planner.key_stage} teacher planner: ${planner.title}. ${planner.duration}.`}>
+  <Breadcrumb items={[
+    { label: 'Home', href: '/' },
+    { label: 'Planners', href: '/planners' },
+    { label: `${planner.subject} ${planner.key_stage}`, href: `/planners?subject=${encodeURIComponent(planner.subject)}&ks=${planner.key_stage}` },
+    { label: planner.title },
+  ]} />
+
+  <!-- Header -->
+  <div class="bg-white rounded-lg border border-gray-200 p-6 mb-6">
+    <div class="flex flex-wrap items-center gap-2 mb-3">
+      <span class:list={['text-sm px-3 py-1 rounded-full font-medium', subjectColors[planner.subject] || 'bg-gray-100 text-gray-700']}>
+        {planner.subject}
+      </span>
+      <span class="text-sm bg-gray-100 text-gray-700 px-3 py-1 rounded-full">{planner.key_stage}</span>
+      {planner.year_groups.map(yg => (
+        <span class="text-sm bg-gray-50 text-gray-600 px-2.5 py-1 rounded-full">{yg}</span>
+      ))}
+      {planner.study_type && (
+        <span class="text-sm bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">{planner.study_type}</span>
+      )}
+      {planner.status && (
+        <span class:list={[
+          'text-sm px-2.5 py-1 rounded-full',
+          planner.status === 'Mandatory' ? 'bg-blue-100 text-blue-800 font-medium' : 'bg-gray-50 text-gray-600',
+        ]}>
+          {planner.status}
+        </span>
+      )}
+    </div>
+    <h1 class="text-2xl font-bold text-gray-900">{planner.title}</h1>
+    {planner.duration && (
+      <p class="text-gray-600 mt-1">{planner.duration}</p>
+    )}
+    <div class="flex items-center gap-3 mt-4">
+      <a
+        href={`/planners/${planner.folder}/${planner.slug}.md`}
+        download
+        class="inline-flex items-center gap-2 text-sm bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+      >
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        Download Markdown
+      </a>
+      <a
+        href="/planners"
+        class="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+      >
+        &larr; Back to planners
+      </a>
+    </div>
+  </div>
+
+  <!-- Rendered planner content -->
+  <div class="bg-white rounded-lg border border-gray-200 p-6 md:p-8">
+    <div class="planner-content max-w-none" set:html={htmlContent} />
+  </div>
+</Layout>
+
+<style>
+  .planner-content :global(h2) {
+    scroll-margin-top: 5rem;
+  }
+  .planner-content :global(table) {
+    font-size: 0.875rem;
+  }
+  .planner-content :global(table tr:first-child td) {
+    font-weight: 600;
+    background-color: rgb(249 250 251);
+  }
+</style>
