@@ -215,16 +215,22 @@ def query_study_node(session, label: str, study_id: str) -> dict | None:
 
 
 def query_concepts(session, label: str, study_id: str) -> list[dict]:
-    """Fetch concepts delivered by this study, with difficulty levels and CPA stages."""
+    """Fetch concepts delivered by this study, with difficulty levels, CPA stages, and vocabulary."""
     id_field = _get_id_field(label)
     query = f"""
         MATCH (ts:{label} {{{id_field}: $sid}})-[dv:DELIVERS_VIA]->(c:Concept)
         OPTIONAL MATCH (c)-[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
         OPTIONAL MATCH (c)-[:HAS_REPRESENTATION_STAGE]->(rs:RepresentationStage)
+        OPTIONAL MATCH (c)-[ut:USES_TERM]->(vt:VocabularyTerm)
         WITH c, dv.primary AS is_primary,
              collect(DISTINCT properties(dl)) AS dls,
-             collect(DISTINCT properties(rs)) AS rss
-        RETURN properties(c) AS concept, is_primary, dls, rss
+             collect(DISTINCT properties(rs)) AS rss,
+             collect(DISTINCT {{
+                term: vt.term, definition: vt.definition,
+                tier: vt.tier, introduced: ut.introduced
+             }}) AS vocab
+        RETURN properties(c) AS concept, is_primary, dls, rss,
+               [v IN vocab WHERE v.term IS NOT NULL | v] AS vocabulary_terms
         ORDER BY is_primary DESC, c.concept_id
     """
     records = session.run(query, sid=study_id).data()
@@ -241,6 +247,11 @@ def query_concepts(session, label: str, study_id: str) -> list[dict]:
         c['representation_stages'] = sorted(
             [rs for rs in r['rss'] if rs],
             key=lambda x: x.get('stage_number', 0)
+        )
+        # Vocabulary terms sorted alphabetically
+        c['vocabulary_terms'] = sorted(
+            r.get('vocabulary_terms', []),
+            key=lambda x: x.get('term', '')
         )
         concepts.append(c)
     return concepts

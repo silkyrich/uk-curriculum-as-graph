@@ -79,6 +79,16 @@ export interface RepresentationStage {
   transition_cue?: string;
 }
 
+export interface VocabularyTerm {
+  term_id: string;
+  term: string;
+  definition?: string;
+  tier?: number;
+  word_class?: string;
+  introduced?: boolean;
+  importance?: string;
+}
+
 export interface Concept {
   concept_id: string;
   name: string;
@@ -91,6 +101,7 @@ export interface Concept {
   common_misconceptions?: string;
   difficulty_levels?: DifficultyLevel[];
   representation_stages?: RepresentationStage[];
+  vocabulary_terms?: VocabularyTerm[];
   delivery_mode?: {
     mode_id: string;
     name: string;

@@ -285,15 +285,21 @@ def query_domain_detail(session, domain_id: str) -> dict:
         'key_stage_name': dr['key_stage_name'],
     }
 
-    # Concepts with difficulty levels, representation stages, delivery modes
+    # Concepts with difficulty levels, representation stages, delivery modes, vocabulary
     concepts_query = """
         MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
         OPTIONAL MATCH (c)-[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
         OPTIONAL MATCH (c)-[:HAS_REPRESENTATION_STAGE]->(rs:RepresentationStage)
         OPTIONAL MATCH (c)-[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
+        OPTIONAL MATCH (c)-[ut:USES_TERM]->(vt:VocabularyTerm)
         WITH c,
              collect(DISTINCT properties(dl)) AS dls,
              collect(DISTINCT properties(rs)) AS rss,
+             collect(DISTINCT {
+                term_id: vt.term_id, term: vt.term, definition: vt.definition,
+                tier: vt.tier, word_class: vt.word_class,
+                introduced: ut.introduced, importance: ut.importance
+             }) AS vocab_terms,
              dm, dv
         RETURN c.concept_id AS concept_id, c.name AS name,
                c.description AS description, c.concept_type AS concept_type,
@@ -302,6 +308,7 @@ def query_domain_detail(session, domain_id: str) -> dict:
                c.key_vocabulary AS key_vocabulary,
                c.common_misconceptions AS common_misconceptions,
                dls, rss,
+               [v IN vocab_terms WHERE v.term_id IS NOT NULL | v] AS vocabulary_terms,
                dm.mode_id AS delivery_mode_id, dm.name AS delivery_mode_name,
                dv.confidence AS delivery_confidence, dv.rationale AS delivery_rationale
         ORDER BY c.concept_id
@@ -323,6 +330,11 @@ def query_domain_detail(session, domain_id: str) -> dict:
             key=lambda x: x.get('stage_number', 0)
         )
 
+        vocabulary_terms = sorted(
+            r.get('vocabulary_terms', []),
+            key=lambda x: x.get('term', '')
+        )
+
         concepts.append({
             'concept_id': cid,
             'name': r['name'],
@@ -335,6 +347,7 @@ def query_domain_detail(session, domain_id: str) -> dict:
             'common_misconceptions': r['common_misconceptions'],
             'difficulty_levels': difficulty_levels,
             'representation_stages': representation_stages,
+            'vocabulary_terms': vocabulary_terms,
             'delivery_mode': {
                 'mode_id': r['delivery_mode_id'],
                 'name': r['delivery_mode_name'],

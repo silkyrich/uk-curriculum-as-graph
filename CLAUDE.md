@@ -153,7 +153,21 @@ Each **layer** is self-contained with its own:
    - Scripts: `import_send_support.py`, `validate_send_support.py`
    - Data: `layers/send-support/data/`
 
-13. **`layers/oak-content/`** - Oak National Academy (future)
+13. **`layers/vocabulary/`** - Vocabulary Layer (v4.5)
+   - Promotes `key_vocabulary` strings to first-class graph nodes with definitions
+   - ~9,200 `VocabularyTerm` nodes across 62 per-subject/year JSON files
+   - `(:Concept)-[:USES_TERM {introduced, importance}]->(:VocabularyTerm)` — concept-vocabulary links
+   - `(:VocabularyTerm)-[:REFINES]->(:VocabularyTerm)` — vocabulary progression chains
+   - `(:VocabularyTerm)-[:RELATED_TO {relationship}]->(:VocabularyTerm)` — semantic links
+   - `(:VocabularyTerm)-[:SAME_SPELLING_AS]->(:VocabularyTerm)` — polysemy disambiguation
+   - Beck's tiered model: tier 1 (everyday), 2 (general academic), 3 (domain-specific)
+   - ID format: `VOC-{subject_prefix}-{slug}` (e.g. `VOC-MA-fraction`)
+   - `display_category = 'Vocabulary Term'`, `display_color = '#0EA5E9'` (Sky-500), `display_icon = 'spellcheck'`
+   - Scripts: `extract_vocabulary.py`, `generate_definitions.py`, `import_vocabulary.py`, `validate_vocabulary.py`
+   - Data: `layers/vocabulary/data/terms/` (per-subject JSONs), `layers/vocabulary/data/relationships/`
+   - No learner data — pure curriculum design metadata
+
+14. **`layers/oak-content/`** - Oak National Academy (future)
    - Content provider mapping
    - Script: `import_oak_content.py`
 
@@ -213,6 +227,10 @@ python3 core/migrations/create_concept_skill_links.py
 # Delivery mode classification (run after all enrichment layers)
 python3 layers/uk-curriculum/scripts/classify_delivery_modes.py
 python3 layers/uk-curriculum/scripts/import_delivery_modes.py
+
+# Vocabulary (run after curriculum; depends on UK concepts for USES_TERM)
+python3 layers/vocabulary/scripts/extract_vocabulary.py
+python3 layers/vocabulary/scripts/import_vocabulary.py
 
 # SEND support (run after curriculum + delivery modes; depends on UK + learner-profiles + topic-suggestions)
 python3 layers/send-support/scripts/import_send_support.py
@@ -328,6 +346,9 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:FeedbackProfile` — tone, gamification safety, metacognitive prompts per Year
 - `:PedagogyTechnique` — 5 desirable difficulty techniques with evidence base and implementation notes
 
+**Vocabulary:**
+- `:VocabularyTerm` — ~9,200 curriculum vocabulary terms with definitions, Beck's tier, etymology
+
 **SEND Support:**
 - `:NeedArea` — 4 statutory SEND categories (reporting taxonomy, not execution logic)
 - `:AccessRequirement` — 16 task-side access barriers (working_memory_load, decoding_demand, etc.)
@@ -349,6 +370,7 @@ All nodes have `display_category` property:
 - `"SEND Need Area"` — NeedArea nodes
 - `"Access Requirement"` — AccessRequirement nodes
 - `"Support Strategy"` — SupportStrategy nodes
+- `"Vocabulary Term"` — VocabularyTerm nodes
 - `"Structure"`
 
 ### Key Relationships
@@ -423,6 +445,12 @@ All nodes have `display_category` property:
 (:PedagogyProfile)-[:USES_TECHNIQUE]->(:PedagogyTechnique)
 (:PedagogyProfile)-[:INTRODUCES_TECHNIQUE]->(:PedagogyTechnique) // first year of introduction
 (:PedagogyTechnique)-[:REQUIRES]->(:PedagogyTechnique)           // pedagogy curriculum
+
+// Vocabulary (v4.5) — curriculum terms promoted to first-class nodes
+(:Concept)-[:USES_TERM {introduced: bool, importance: str}]->(:VocabularyTerm)
+(:VocabularyTerm)-[:REFINES]->(:VocabularyTerm)                 // "integer" REFINES "number"
+(:VocabularyTerm)-[:RELATED_TO {relationship: str}]->(:VocabularyTerm)  // synonym, antonym, hypernym, etc.
+(:VocabularyTerm)-[:SAME_SPELLING_AS]->(:VocabularyTerm)        // polysemy: VOC-SC-cell ↔ VOC-CO-cell
 
 // SEND support (barrier-first model, no diagnostic labels)
 (:Concept)-[:HAS_ACCESS_REQUIREMENT {level, rationale, source}]->(:AccessRequirement)  // concept-level barriers
@@ -515,6 +543,7 @@ Every feature that introduces or modifies data processing must:
 - Difficulty levels (grounded difficulty tiers)? → `layers/uk-curriculum/data/difficulty_levels/` + `import_difficulty_levels.py`
 - Representation stages (CPA framework for primary maths)? → `layers/uk-curriculum/data/representation_stages/` + `import_representation_stages.py`
 - Delivery readiness / teachability classification? → `layers/uk-curriculum/data/delivery_modes/` + `classify_delivery_modes.py` + `import_delivery_modes.py`
+- Vocabulary terms / definitions / Beck's tiers? → `layers/vocabulary/data/terms/` + `import_vocabulary.py`
 - SEND support / access requirements / support strategies? → `layers/send-support/data/` + `import_send_support.py`
 - What can the AI platform teach? → `docs/design/PLAN_DELIVERY_MODE_CLASSIFICATION.md`
 - User stories? → `docs/user-stories/`
@@ -795,7 +824,25 @@ class LayerImporter:
 - Validation: 5 checks (completeness, coverage, integrity, distribution)
 - No learner data — pure curriculum design metadata
 
+✅ **Vocabulary layer (v4.5, scaffolding complete):**
+- ~9,200 VocabularyTerm stubs extracted from all extraction JSONs (62 per-subject/year files)
+- ID format: `VOC-{subject_prefix}-{slug}` (e.g. `VOC-MA-fraction`, `VOC-SC-photosynthesis`)
+- `(:Concept)-[:USES_TERM {introduced, importance}]->(:VocabularyTerm)` — ~17,000 relationships
+- `(:VocabularyTerm)-[:REFINES]->(:VocabularyTerm)` — vocabulary progression chains (skeleton)
+- `(:VocabularyTerm)-[:RELATED_TO {relationship}]->(:VocabularyTerm)` — semantic links (skeleton)
+- `(:VocabularyTerm)-[:SAME_SPELLING_AS]->(:VocabularyTerm)` — polysemy disambiguation (skeleton)
+- Beck's tiered classification: tier 1=everyday, 2=general academic, 3=domain-specific
+- Scripts: `extract_vocabulary.py`, `generate_definitions.py` (LLM-assisted), `import_vocabulary.py`, `validate_vocabulary.py`
+- Schema: VocabularyTerm uniqueness constraint + 4 indexes (v4.5)
+- Validation: 5 checks in validate_schema.py + 8 checks in validate_vocabulary.py
+- Site integration: compile_site_data.py, ConceptCard.astro, render_markdown.py word mat, planner_queries.py
+- `key_vocabulary` string property preserved on Concept nodes (backward-compatible fallback)
+- Definitions pending: Phase 2 will generate definitions using `generate_definitions.py` (Maths Y1-Y6 pilot)
+- No learner data — pure curriculum design metadata
+
 🚧 **In progress:**
+- Vocabulary definitions: Phase 2 (Maths Y1-Y6 pilot), Phase 3 (remaining subjects)
+- Vocabulary relationships: refinements.json, polysemy.json, semantic.json (authoring pending)
 - SEND Support Layer (v4.4): data authoring, import scripts, compiler integration
   - 4 NeedArea + 16 AccessRequirement + 20 SupportStrategy nodes designed
   - Teacher planner Access and Inclusion section integrated in compiler
@@ -845,6 +892,7 @@ class LayerImporter:
 ❌ Change delivery mode classification rules without re-running the full classification - The script is the source of truth; edit the rules in `classify_delivery_modes.py`, then rerun
 ❌ Use a universal TopicSuggestion label for all subjects - Each subject has its own typed label (HistoryStudy, GeoStudy, etc.) with subject-specific properties
 ❌ Reference old ContentVehicle or Topic nodes - These have been replaced by the per-subject ontology (v4.2) and archived to `layers/_archived/`
+❌ Edit VocabularyTerm data directly in the graph - Edit the JSON files in `layers/vocabulary/data/terms/`, then rerun `import_vocabulary.py --clear`
 ❌ Store medical diagnoses or EHCP data in the curriculum graph - The SEND layer models barriers to task access, not diagnoses
 ❌ Create diagnosis-to-action execution logic (e.g. "dyslexia = always use read-aloud") - The system maps access requirements to support strategies, never labels to actions
 ❌ Auto-apply construct_risk=high strategies in child-facing flows - These must be human-gated

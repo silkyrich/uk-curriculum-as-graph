@@ -1309,6 +1309,105 @@ class SchemaValidator:
         self.add(ValidationResult("Delivery mode distribution", status, total, issues))
 
     # =========================================================================
+    # S. Vocabulary layer (v4.5)
+    # =========================================================================
+
+    def check_vocabulary_term_completeness(self):
+        """VocabularyTerm nodes have required non-empty properties."""
+        total = self.scalar("MATCH (vt:VocabularyTerm) RETURN count(vt)") or 0
+        if total == 0:
+            self.add(ValidationResult("VocabularyTerm completeness", "PASS", 0,
+                                      ["No VocabularyTerm nodes — import pending"]))
+            return
+        records = self.run("""
+            MATCH (vt:VocabularyTerm)
+            WHERE vt.term_id IS NULL OR vt.term_id = ''
+               OR vt.term IS NULL OR vt.term = ''
+               OR vt.subject IS NULL OR vt.subject = ''
+               OR vt.tier IS NULL
+            RETURN vt.term_id AS id
+            LIMIT 20
+        """)
+        issues = [f"VocabularyTerm '{r['id'] or '(null)'}' missing required properties" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("VocabularyTerm completeness", status, total, issues))
+
+    def check_vocabulary_tier_values(self):
+        """VocabularyTerm.tier must be 1, 2, or 3 (Beck's tiered model)."""
+        total = self.scalar("MATCH (vt:VocabularyTerm) RETURN count(vt)") or 0
+        if total == 0:
+            self.add(ValidationResult("VocabularyTerm tier values", "PASS", 0, []))
+            return
+        records = self.run("""
+            MATCH (vt:VocabularyTerm)
+            WHERE NOT vt.tier IN [1, 2, 3]
+            RETURN vt.term_id AS id, vt.tier AS val
+            LIMIT 20
+        """)
+        issues = [f"VocabularyTerm {r['id']} has invalid tier {r['val']}" for r in records]
+        status = "FAIL" if issues else "PASS"
+        self.add(ValidationResult("VocabularyTerm tier values", status, total, issues))
+
+    def check_uses_term_integrity(self):
+        """USES_TERM connects Concept -> VocabularyTerm with valid importance values."""
+        total = self.scalar("MATCH ()-[r:USES_TERM]->() RETURN count(r)") or 0
+        if total == 0:
+            self.add(ValidationResult("USES_TERM integrity", "PASS", 0,
+                                      ["No USES_TERM relationships — import pending"]))
+            return
+        bad = self.scalar("""
+            MATCH (a)-[r:USES_TERM]->(b)
+            WHERE NOT a:Concept OR NOT b:VocabularyTerm
+            RETURN count(r)
+        """) or 0
+        invalid_importance = self.scalar("""
+            MATCH ()-[r:USES_TERM]->()
+            WHERE r.importance IS NOT NULL
+              AND NOT r.importance IN ['core', 'supporting', 'extension']
+            RETURN count(r)
+        """) or 0
+        issues = []
+        if bad > 0:
+            issues.append(f"{bad} USES_TERM rels connect wrong node types")
+        if invalid_importance > 0:
+            issues.append(f"{invalid_importance} USES_TERM rels have invalid importance")
+        status = "FAIL" if bad > 0 else ("WARN" if invalid_importance > 0 else "PASS")
+        self.add(ValidationResult("USES_TERM integrity", status, total, issues))
+
+    def check_vocabulary_definition_coverage(self):
+        """Report how many VocabularyTerms have non-empty definitions."""
+        total = self.scalar("MATCH (vt:VocabularyTerm) RETURN count(vt)") or 0
+        if total == 0:
+            self.add(ValidationResult("Vocabulary definition coverage", "PASS", 0, []))
+            return
+        defined = self.scalar("""
+            MATCH (vt:VocabularyTerm)
+            WHERE vt.definition IS NOT NULL AND vt.definition <> ''
+            RETURN count(vt)
+        """) or 0
+        pct = round(100 * defined / total, 1) if total else 0
+        issues = [f"{defined}/{total} terms have definitions ({pct}%)"]
+        status = "WARN" if pct < 10 else "PASS"
+        self.add(ValidationResult("Vocabulary definition coverage", status, total, issues))
+
+    def check_vocabulary_orphaned_terms(self):
+        """VocabularyTerms with no USES_TERM from any Concept."""
+        total = self.scalar("MATCH (vt:VocabularyTerm) RETURN count(vt)") or 0
+        if total == 0:
+            self.add(ValidationResult("Vocabulary orphaned terms", "PASS", 0, []))
+            return
+        orphaned = self.scalar("""
+            MATCH (vt:VocabularyTerm)
+            WHERE NOT (:Concept)-[:USES_TERM]->(vt)
+            RETURN count(vt)
+        """) or 0
+        issues = []
+        if orphaned > 0:
+            issues.append(f"{orphaned}/{total} VocabularyTerm nodes have no USES_TERM")
+        status = "WARN" if orphaned > 0 else "PASS"
+        self.add(ValidationResult("Vocabulary orphaned terms", status, total, issues))
+
+    # =========================================================================
     # O. VehicleTemplate layer (v4.0)
     # =========================================================================
 
@@ -1641,7 +1740,7 @@ class SchemaValidator:
             'UK Curriculum', 'CASE Standards', 'Epistemic Skills',
             'Assessment', 'Structure', 'Learner Profile', 'Oak Content',
             'Vehicle Template', 'Topic Suggestion', 'Subject Reference',
-            'Delivery Readiness',
+            'Delivery Readiness', 'Vocabulary Term',
         }
         records = self.run("""
             MATCH (n)
@@ -1782,6 +1881,12 @@ class SchemaValidator:
             self.check_deliverable_via_coverage,
             self.check_implies_minimum_mode_integrity,
             self.check_delivery_mode_distribution,
+            # S. Vocabulary (v4.5)
+            self.check_vocabulary_term_completeness,
+            self.check_vocabulary_tier_values,
+            self.check_uses_term_integrity,
+            self.check_vocabulary_definition_coverage,
+            self.check_vocabulary_orphaned_terms,
             # M. Content Vehicles — REMOVED (v4.2)
             # O. VehicleTemplate (v4.0)
             self.check_vehicle_template_completeness,

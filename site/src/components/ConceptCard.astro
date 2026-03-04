@@ -15,6 +15,15 @@ interface Props {
     common_misconceptions?: string;
     difficulty_levels?: any[];
     representation_stages?: any[];
+    vocabulary_terms?: Array<{
+      term_id: string;
+      term: string;
+      definition?: string;
+      tier?: number;
+      word_class?: string;
+      introduced?: boolean;
+      importance?: string;
+    }>;
     delivery_mode?: {
       mode_id: string;
       name: string;
@@ -86,7 +95,23 @@ const stageColors: Record<string, string> = {
     </details>
   )}
 
-  {concept.key_vocabulary && (
+  {concept.vocabulary_terms && concept.vocabulary_terms.length > 0 ? (
+    <details class="mt-2">
+      <summary class="text-xs font-medium text-gray-500 cursor-pointer hover:text-gray-700">
+        Vocabulary ({concept.vocabulary_terms.length} terms)
+      </summary>
+      <div class="mt-1 space-y-1 pl-4 border-l-2 border-sky-200">
+        {concept.vocabulary_terms.map((v: any) => (
+          <div class="text-xs">
+            <span class="font-semibold text-gray-700">{v.term}</span>
+            {v.tier === 3 && <span class="text-sky-500 ml-1" title="Domain-specific vocabulary (Tier 3)">T3</span>}
+            {v.introduced && <span class="text-green-500 ml-1" title="Introduced in this concept">new</span>}
+            {v.definition && <span class="text-gray-600 ml-1">— {v.definition}</span>}
+          </div>
+        ))}
+      </div>
+    </details>
+  ) : concept.key_vocabulary && (
     <div class="mt-2">
       <span class="text-xs font-medium text-gray-500">Vocabulary:</span>
       <span class="text-xs text-gray-600 ml-1">{concept.key_vocabulary}</span>

@@ -390,6 +390,21 @@ def render_markdown(ctx: StudyContext) -> str:
         _add('')
 
     # ── Vocabulary word mat ──────────────────────────────────────────
+    # Priority: 1) VocabularyTerm nodes with definitions from graph
+    #           2) Study-level definitions (legacy)
+    #           3) Flat key_vocabulary strings from concepts
+
+    # Collect graph-sourced vocabulary terms from concepts
+    graph_vocab = []
+    graph_term_set = set()
+    for c in ctx.concepts:
+        for vt in c.get('vocabulary_terms', []):
+            term = vt.get('term', '')
+            if term and term.lower() not in graph_term_set:
+                graph_term_set.add(term.lower())
+                graph_vocab.append(vt)
+
+    # Legacy study-level definitions
     definitions = ctx.study.get('definitions', [])
     if isinstance(definitions, str):
         try:
@@ -406,36 +421,41 @@ def render_markdown(ctx: StudyContext) -> str:
         elif isinstance(kv, list):
             all_vocab.update(kv)
 
-    if definitions or all_vocab:
+    if graph_vocab or definitions or all_vocab:
         _add('## Vocabulary word mat')
         _add('')
-        # If definitions are dicts with term+meaning
-        if definitions and isinstance(definitions[0], dict):
-            _add('| Term | Meaning |')
-            _add('|------|---------|')
-            for d in definitions:
-                _add(f"| {d.get('term', '')} | {d.get('meaning', '')} |")
-        elif definitions and isinstance(definitions[0], str):
-            _add('| Term | Meaning |')
-            _add('|------|---------|')
-            for d in definitions:
-                _add(f"| {d} | |")
-        # Supplement with concept key_vocabulary not already in definitions
-        def_terms = set()
+        _add('| Term | Meaning |')
+        _add('|------|---------|')
+
+        shown_terms = set()
+
+        # 1) Graph vocabulary terms (with definitions from VocabularyTerm nodes)
+        for vt in sorted(graph_vocab, key=lambda x: x.get('term', '')):
+            term = vt.get('term', '')
+            defn = vt.get('definition', '')
+            shown_terms.add(term.lower())
+            if defn:
+                _add(f"| **{term}** | {defn} |")
+            else:
+                _add(f"| {term} | |")
+
+        # 2) Legacy study-level definitions not already shown
         for d in definitions:
             if isinstance(d, dict):
-                def_terms.add(d.get('term', '').lower())
+                term = d.get('term', '')
+                if term.lower() not in shown_terms:
+                    shown_terms.add(term.lower())
+                    _add(f"| {term} | {d.get('meaning', '')} |")
             elif isinstance(d, str):
-                def_terms.add(d.lower())
-        extra_vocab = sorted(v for v in all_vocab if v.lower() not in def_terms)
-        # Limit concept vocab supplement to 10 terms max
-        extra_vocab = extra_vocab[:10]
-        if extra_vocab and not definitions:
-            # No definitions at all — create table from concept vocab
-            _add('| Term | Meaning |')
-            _add('|------|---------|')
-        for v in extra_vocab:
+                if d.lower() not in shown_terms:
+                    shown_terms.add(d.lower())
+                    _add(f"| {d} | |")
+
+        # 3) Flat key_vocabulary not already covered
+        extra_vocab = sorted(v for v in all_vocab if v.lower() not in shown_terms)
+        for v in extra_vocab[:10]:
             _add(f"| {v} | *(from concept key vocabulary)* |")
+
         _add('')
 
     # ── Prior knowledge / retrieval plan ────────────────────────────
@@ -912,7 +932,13 @@ def _skill_heading(subject: str) -> str:
 
 
 def _has_meaningful_vocab_definitions(ctx: StudyContext) -> bool:
-    """True when at least one vocabulary term includes a non-empty meaning."""
+    """True when at least one vocabulary term includes a non-empty meaning/definition."""
+    # Check graph-sourced vocabulary terms from concepts
+    for c in ctx.concepts:
+        for vt in c.get('vocabulary_terms', []):
+            if vt.get('definition', '').strip():
+                return True
+    # Check legacy study-level definitions
     definitions = ctx.study.get('definitions', [])
     if isinstance(definitions, str):
         try:

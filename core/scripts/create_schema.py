@@ -79,6 +79,8 @@ def create_schema(driver):
         # Delivery Readiness layer (v4.3)
         "CREATE CONSTRAINT delivery_mode_id_unique IF NOT EXISTS FOR (dm:DeliveryMode) REQUIRE dm.mode_id IS UNIQUE",
         "CREATE CONSTRAINT teaching_requirement_id_unique IF NOT EXISTS FOR (tr:TeachingRequirement) REQUIRE tr.requirement_id IS UNIQUE",
+        # Vocabulary layer (v4.5)
+        "CREATE CONSTRAINT vocabulary_term_id_unique IF NOT EXISTS FOR (vt:VocabularyTerm) REQUIRE vt.term_id IS UNIQUE",
     ]
 
     # Indexes
@@ -143,6 +145,11 @@ def create_schema(driver):
         # Delivery Readiness indexes (v4.3)
         "CREATE INDEX delivery_mode_order_idx IF NOT EXISTS FOR (dm:DeliveryMode) ON (dm.display_order)",
         "CREATE INDEX teaching_requirement_category_idx IF NOT EXISTS FOR (tr:TeachingRequirement) ON (tr.category)",
+        # Vocabulary indexes (v4.5)
+        "CREATE INDEX vocabulary_term_subject_idx IF NOT EXISTS FOR (vt:VocabularyTerm) ON (vt.subject)",
+        "CREATE INDEX vocabulary_term_tier_idx IF NOT EXISTS FOR (vt:VocabularyTerm) ON (vt.tier)",
+        "CREATE INDEX vocabulary_term_term_idx IF NOT EXISTS FOR (vt:VocabularyTerm) ON (vt.term)",
+        "CREATE INDEX vocabulary_term_word_class_idx IF NOT EXISTS FOR (vt:VocabularyTerm) ON (vt.word_class)",
     ]
 
     print("Creating constraints...")
