@@ -7,6 +7,7 @@ on:
       - 'site/**'
       - 'scripts/compile_site_data.py'
       - 'layers/**/data/**'
+      - 'layers/**/scripts/**'
       - 'core/scripts/**'
   workflow_dispatch:
 
