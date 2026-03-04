@@ -505,8 +505,8 @@ def query_search_index(session) -> list[dict]:
     # Concepts
     concepts_query = """
         MATCH (c:Concept)<-[:TEACHES]-(:Objective)<-[:CONTAINS]-(d:Domain)
-              <-[:HAS_DOMAIN]-(:Programme)-[:HAS_SUBJECT]->(s:Subject)
-        OPTIONAL MATCH (:Programme)<-[:HAS_PROGRAMME]-(y:Year)
+              <-[:HAS_DOMAIN]-(p:Programme)-[:HAS_SUBJECT]->(s:Subject)
+        OPTIONAL MATCH (p)<-[:HAS_PROGRAMME]-(y:Year)
                        <-[:HAS_YEAR]-(ks:KeyStage)
         OPTIONAL MATCH (c)-[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
         RETURN DISTINCT c.concept_id AS id, c.name AS name,
@@ -541,8 +541,8 @@ def query_search_index(session) -> list[dict]:
 
     # Domains
     domains_query = """
-        MATCH (d:Domain)<-[:HAS_DOMAIN]-(:Programme)-[:HAS_SUBJECT]->(s:Subject)
-        OPTIONAL MATCH (:Programme)<-[:HAS_PROGRAMME]-(y:Year)
+        MATCH (d:Domain)<-[:HAS_DOMAIN]-(p:Programme)-[:HAS_SUBJECT]->(s:Subject)
+        OPTIONAL MATCH (p)<-[:HAS_PROGRAMME]-(y:Year)
                        <-[:HAS_YEAR]-(ks:KeyStage)
         RETURN DISTINCT d.domain_id AS id, d.name AS name,
                d.description AS description,
