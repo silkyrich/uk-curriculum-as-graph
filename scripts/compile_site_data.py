@@ -418,6 +418,168 @@ def query_domain_detail(session, domain_id: str) -> dict:
     """
     domain['prerequisites'] = session.run(prereq_query, did=domain_id).data()
 
+    # ── Per-subject ontology (study/unit suggestions) ─────────────────
+    suggestions_query = """
+        MATCH (d:Domain {domain_id: $did})-[:HAS_SUGGESTION]->(s)
+        OPTIONAL MATCH (s)-[:DELIVERS_VIA]->(c:Concept)<-[:HAS_CONCEPT]-(d)
+        WITH s, labels(s) AS lbls, collect(DISTINCT c.concept_id) AS cids
+        OPTIONAL MATCH (s)-[:USES_TEMPLATE]->(vt:VehicleTemplate)
+        OPTIONAL MATCH (s)-[:CROSS_CURRICULAR]->(s2)
+        OPTIONAL MATCH (s)-[:FOREGROUNDS]->(dc:DisciplinaryConcept)
+        OPTIONAL MATCH (s)-[:USES_SOURCE]->(hs:HistoricalSource)
+        OPTIONAL MATCH (s)-[:USES_ENQUIRY_TYPE]->(et:EnquiryType)
+        OPTIONAL MATCH (s)-[:SURFACES_MISCONCEPTION]->(m:Misconception)
+        OPTIONAL MATCH (s)-[:IN_GENRE]->(g:Genre)
+        OPTIONAL MATCH (s)-[:LOCATED_IN]->(gp:GeoPlace)
+        OPTIONAL MATCH (s)-[:CONTRASTS_WITH]->(gc:GeoContrast)
+        RETURN s.name AS name,
+               [l IN lbls WHERE l <> 'Node'][0] AS type,
+               s.description AS description,
+               s.pedagogical_rationale AS pedagogical_rationale,
+               s.period AS period,
+               s.key_figures AS key_figures,
+               s.enquiry_question AS enquiry_question,
+               s.enquiry_focus AS enquiry_focus,
+               s.writing_outcome AS writing_outcome,
+               s.variables AS variables,
+               cids AS concept_ids,
+               vt.name AS template_name,
+               collect(DISTINCT CASE WHEN s2 IS NOT NULL
+                   THEN {target_name: s2.name, hook: '', strength: ''}
+                   END) AS cross_curricular_raw,
+               collect(DISTINCT dc.name) AS disciplinary_concepts,
+               collect(DISTINCT hs.name) AS sources,
+               collect(DISTINCT et.name) AS enquiry_types,
+               collect(DISTINCT m.name) AS misconceptions,
+               collect(DISTINCT g.name) AS genres,
+               collect(DISTINCT gp.name) AS places,
+               collect(DISTINCT gc.name) AS contrasts
+        ORDER BY s.name
+    """
+    suggestions = []
+    for r in session.run(suggestions_query, did=domain_id):
+        s = {
+            'name': r['name'],
+            'type': r['type'],
+            'description': r['description'],
+            'pedagogical_rationale': r['pedagogical_rationale'],
+            'concept_ids': r['concept_ids'] or [],
+            'template_name': r['template_name'],
+            'cross_curricular': [
+                x for x in (r['cross_curricular_raw'] or [])
+                if x is not None
+            ],
+        }
+        # Subject-specific properties (only include when present)
+        if r['period']:
+            s['period'] = r['period']
+        if r['key_figures']:
+            s['key_figures'] = r['key_figures'] if isinstance(r['key_figures'], list) else [r['key_figures']]
+        if r.get('disciplinary_concepts'):
+            dcs = [x for x in r['disciplinary_concepts'] if x]
+            if dcs:
+                s['disciplinary_concepts'] = dcs
+        if r.get('sources'):
+            srcs = [x for x in r['sources'] if x]
+            if srcs:
+                s['sources'] = srcs
+        if r['enquiry_question']:
+            s['enquiry_question'] = r['enquiry_question']
+        if r['enquiry_focus']:
+            s['enquiry_type'] = r['enquiry_focus']
+        if r.get('enquiry_types'):
+            ets = [x for x in r['enquiry_types'] if x]
+            if ets:
+                s['enquiry_type'] = ets[0]
+        if r.get('misconceptions'):
+            ms = [x for x in r['misconceptions'] if x]
+            if ms:
+                s['misconceptions'] = ms
+        if r['writing_outcome']:
+            s['writing_outcome'] = r['writing_outcome']
+        if r.get('genres'):
+            gs = [x for x in r['genres'] if x]
+            if gs:
+                s['genre'] = gs[0]
+        if r.get('places'):
+            ps = [x for x in r['places'] if x]
+            if ps:
+                s['place'] = ps[0]
+        if r.get('contrasts'):
+            cs = [x for x in r['contrasts'] if x]
+            if cs:
+                s['contrast'] = cs[0]
+        if r['variables']:
+            s['variables'] = r['variables']
+        suggestions.append(s)
+    domain['suggestions'] = suggestions
+
+    # ── SEND support (access barriers + strategies per concept) ───────
+    send_query = """
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
+              -[har:HAS_ACCESS_REQUIREMENT]->(ar:AccessRequirement)
+        OPTIONAL MATCH (ss:SupportStrategy)-[m:MITIGATES]->(ar)
+        RETURN c.concept_id AS concept_id, c.name AS concept_name,
+               ar.access_req_id AS access_req_id, ar.name AS barrier_name,
+               ar.category AS barrier_category,
+               har.level AS level, har.rationale AS rationale,
+               collect(DISTINCT CASE WHEN ss IS NOT NULL THEN {
+                   support_id: ss.support_id,
+                   name: ss.name,
+                   tier: ss.tier,
+                   construct_risk: ss.construct_risk,
+                   strength: m.strength
+               } END) AS strategies
+        ORDER BY c.concept_id, ar.access_req_id
+    """
+    send_rows = session.run(send_query, did=domain_id).data()
+
+    # Build per-concept barriers and domain-level summary
+    concept_barriers_map = {}
+    barrier_counts = defaultdict(int)
+    strategy_usage = defaultdict(lambda: {'name': '', 'tier': '', 'count': 0})
+
+    for r in send_rows:
+        cid = r['concept_id']
+        if cid not in concept_barriers_map:
+            concept_barriers_map[cid] = {
+                'concept_id': cid,
+                'concept_name': r['concept_name'],
+                'barriers': [],
+            }
+        concept_barriers_map[cid]['barriers'].append({
+            'access_req_id': r['access_req_id'],
+            'name': r['barrier_name'],
+            'level': r['level'],
+            'rationale': r['rationale'],
+        })
+        barrier_counts[r['barrier_name']] += 1
+
+        for strat in (r['strategies'] or []):
+            if strat is not None:
+                sid = strat['support_id']
+                strategy_usage[sid]['name'] = strat['name']
+                strategy_usage[sid]['tier'] = strat['tier']
+                strategy_usage[sid]['count'] += 1
+
+    concept_barriers = sorted(concept_barriers_map.values(),
+                               key=lambda x: x['concept_id'])
+    domain['concept_barriers'] = concept_barriers
+
+    # Domain-level SEND summary
+    top_strategies = sorted(
+        [{'name': v['name'], 'tier': v['tier'], 'mitigates_count': v['count']}
+         for v in strategy_usage.values()],
+        key=lambda x: -x['mitigates_count']
+    )[:8]
+
+    domain['send_summary'] = {
+        'concepts_with_barriers': len(concept_barriers_map),
+        'total_concepts': len(domain['concepts']),
+        'barrier_counts': dict(barrier_counts),
+        'top_strategies': top_strategies,
+    } if concept_barriers_map else None
+
     return domain
 
 
@@ -572,6 +734,33 @@ def query_search_index(session) -> list[dict]:
             'subject': r['subject'],
             'year_id': r['year_id'],
             'key_stage': r['key_stage'],
+        })
+
+    # Study suggestions (ontology nodes)
+    studies_query = """
+        MATCH (d:Domain)-[:HAS_SUGGESTION]->(s)
+        OPTIONAL MATCH (d)<-[:HAS_DOMAIN]-(:Programme)-[:FOR_SUBJECT]->(subj:Subject)
+        OPTIONAL MATCH (d)<-[:HAS_DOMAIN]-(:Programme)<-[:HAS_PROGRAMME]-(y:Year)
+                       <-[:HAS_YEAR]-(ks:KeyStage)
+        RETURN DISTINCT s.name AS name,
+               [l IN labels(s) WHERE l <> 'Node'][0] AS type,
+               s.description AS description,
+               subj.name AS subject,
+               y.year_id AS year_id,
+               ks.key_stage_id AS key_stage,
+               d.domain_id AS domain_id
+        ORDER BY s.name
+    """
+    for r in session.run(studies_query):
+        entries.append({
+            'id': slugify(r['name'] or ''),
+            'name': r['name'],
+            'description': r['description'] or '',
+            'type': 'study',
+            'subject': r['subject'],
+            'year_id': r['year_id'],
+            'key_stage': r['key_stage'],
+            'domain_id': r['domain_id'],
         })
 
     return entries

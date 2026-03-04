@@ -108,6 +108,52 @@ export interface Concept {
     confidence?: string;
     rationale?: string;
   };
+  barriers?: Array<{
+    access_req_id: string;
+    name: string;
+    level: string;
+    rationale?: string;
+  }>;
+}
+
+export interface StudySuggestion {
+  name: string;
+  type: string;
+  description?: string;
+  pedagogical_rationale?: string;
+  concept_ids: string[];
+  template_name?: string;
+  cross_curricular: Array<{ target_name: string; hook: string; strength?: string }>;
+  period?: string;
+  key_figures?: string[];
+  disciplinary_concepts?: string[];
+  sources?: string[];
+  enquiry_question?: string;
+  enquiry_type?: string;
+  misconceptions?: string[];
+  variables?: string;
+  writing_outcome?: string;
+  genre?: string;
+  place?: string;
+  contrast?: string;
+}
+
+export interface ConceptBarrier {
+  concept_id: string;
+  concept_name: string;
+  barriers: Array<{
+    access_req_id: string;
+    name: string;
+    level: string;
+    rationale?: string;
+  }>;
+}
+
+export interface DomainSendSummary {
+  concepts_with_barriers: number;
+  total_concepts: number;
+  barrier_counts: Record<string, number>;
+  top_strategies: Array<{ name: string; tier: string; mitigates_count: number }>;
 }
 
 export interface Cluster {
@@ -151,6 +197,9 @@ export interface Domain {
     target_id: string;
     target_name: string;
   }>;
+  suggestions?: StudySuggestion[];
+  send_summary?: DomainSendSummary | null;
+  concept_barriers?: ConceptBarrier[];
 }
 
 export interface DeliveryData {

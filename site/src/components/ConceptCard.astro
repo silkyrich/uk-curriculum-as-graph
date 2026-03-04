@@ -30,6 +30,12 @@ interface Props {
       confidence?: string;
       rationale?: string;
     };
+    barriers?: Array<{
+      access_req_id: string;
+      name: string;
+      level: string;
+      rationale?: string;
+    }>;
   };
   expanded?: boolean;
 }
@@ -49,6 +55,12 @@ const stageColors: Record<string, string> = {
   concrete: 'bg-orange-100 text-orange-800 border-orange-200',
   pictorial: 'bg-cyan-100 text-cyan-800 border-cyan-200',
   abstract: 'bg-violet-100 text-violet-800 border-violet-200',
+};
+
+const barrierLevelColors: Record<string, string> = {
+  low: 'bg-yellow-50 text-yellow-700 border-yellow-200',
+  medium: 'bg-orange-50 text-orange-700 border-orange-200',
+  high: 'bg-red-50 text-red-700 border-red-200',
 };
 ---
 
@@ -159,6 +171,29 @@ const stageColors: Record<string, string> = {
         Delivery rationale
       </summary>
       <p class="text-xs text-gray-600 mt-1">{concept.delivery_mode.rationale}</p>
+    </details>
+  )}
+
+  {concept.barriers && concept.barriers.length > 0 && (
+    <details class="mt-3">
+      <summary class="text-xs font-medium text-orange-600 cursor-pointer hover:text-orange-800">
+        Access barriers ({concept.barriers.length})
+      </summary>
+      <div class="mt-1 space-y-1 pl-4 border-l-2 border-orange-200">
+        {concept.barriers.map(b => (
+          <div class="flex items-start gap-2">
+            <span class:list={['text-xs px-1.5 py-0.5 rounded border shrink-0', barrierLevelColors[b.level] || 'bg-gray-50 text-gray-600 border-gray-200']}>
+              {b.level}
+            </span>
+            <div>
+              <span class="text-xs font-medium text-gray-700">{b.name}</span>
+              {b.rationale && (
+                <p class="text-xs text-gray-500 mt-0.5">{b.rationale}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
     </details>
   )}
 </div>

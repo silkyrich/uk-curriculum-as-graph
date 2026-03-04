@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import ConceptCard from '../../components/ConceptCard.astro';
+import StudySuggestionCard from '../../components/StudySuggestionCard.astro';
 import VocabularyExplorer from '../../components/VocabularyExplorer.astro';
 import { getAllDomainIds, getDomain, getSubjects } from '../../lib/data';
 
@@ -39,6 +40,7 @@ const sortedClusters = [...domain.clusters].sort((a, b) => {
 
 // Map concept IDs to concepts for quick lookup
 const conceptMap = new Map(domain.concepts.map(c => [c.concept_id, c]));
+const conceptNameMap = new Map(domain.concepts.map(c => [c.concept_id, c.name]));
 
 // Group prerequisites by target concept
 const prereqsByTarget = new Map<string, typeof domain.prerequisites>();
@@ -67,6 +69,34 @@ const modeColors: Record<string, string> = {
   'DM-AF': '#3B82F6',
   'DM-GM': '#F59E0B',
   'DM-ST': '#EF4444',
+};
+
+// Build concept barrier lookup from SEND data
+const barriersByConceptId = new Map<string, Array<{access_req_id: string; name: string; level: string; rationale?: string}>>();
+if (domain.concept_barriers) {
+  for (const cb of domain.concept_barriers) {
+    barriersByConceptId.set(cb.concept_id, cb.barriers);
+  }
+}
+
+// Enrich concepts with barriers for ConceptCard
+const enrichedConcepts = domain.concepts.map(c => ({
+  ...c,
+  barriers: barriersByConceptId.get(c.concept_id),
+}));
+
+const sendSummary = domain.send_summary;
+
+const tierColors: Record<string, string> = {
+  universal: 'bg-green-100 text-green-700',
+  targeted: 'bg-amber-100 text-amber-700',
+  specialist: 'bg-red-100 text-red-700',
+};
+
+const levelColors: Record<string, string> = {
+  low: 'bg-yellow-100 text-yellow-700',
+  medium: 'bg-orange-100 text-orange-700',
+  high: 'bg-red-100 text-red-700',
 };
 ---
 
@@ -215,6 +245,76 @@ const modeColors: Record<string, string> = {
     </div>
   )}
 
+  <!-- Teaching Suggestions (per-subject ontology) -->
+  {domain.suggestions && domain.suggestions.length > 0 && (
+    <div class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">
+        Teaching Suggestions ({domain.suggestions.length})
+      </h2>
+      <p class="text-sm text-gray-600 mb-3">
+        Study units and activities that deliver concepts in this domain.
+      </p>
+      <div class="space-y-3">
+        {domain.suggestions.map(s => (
+          <StudySuggestionCard suggestion={s} conceptNames={conceptNameMap} />
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Access and Inclusion (SEND overlay) -->
+  {sendSummary && sendSummary.concepts_with_barriers > 0 && (
+    <div class="mb-10">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Access and Inclusion</h2>
+      <p class="text-sm text-gray-600 mb-3">
+        {sendSummary.concepts_with_barriers} of {sendSummary.total_concepts} concepts
+        have identified access barriers.
+      </p>
+
+      <!-- Barrier type breakdown -->
+      <div class="bg-white rounded-lg border border-gray-200 p-4 mb-4">
+        <p class="text-xs font-medium text-gray-500 mb-2">Barrier types in this domain</p>
+        <div class="space-y-2">
+          {Object.entries(sendSummary.barrier_counts)
+            .sort(([,a], [,b]) => b - a)
+            .map(([name, count]) => {
+              const totalBarrierLinks = Object.values(sendSummary.barrier_counts).reduce((s, n) => s + n, 0);
+              const pct = totalBarrierLinks > 0 ? (count / totalBarrierLinks) * 100 : 0;
+              return (
+                <div>
+                  <div class="flex items-center justify-between text-xs mb-0.5">
+                    <span class="text-gray-700">{name}</span>
+                    <span class="text-gray-500">{count}</span>
+                  </div>
+                  <div class="h-2 rounded-full bg-gray-100 overflow-hidden">
+                    <div class="h-full rounded-full bg-orange-400" style={`width: ${pct}%`} />
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+
+      <!-- Top strategies -->
+      {sendSummary.top_strategies.length > 0 && (
+        <div class="bg-white rounded-lg border border-gray-200 p-4">
+          <p class="text-xs font-medium text-gray-500 mb-2">Recommended support strategies</p>
+          <div class="flex flex-wrap gap-2">
+            {sendSummary.top_strategies.map(s => (
+              <div class="flex items-center gap-1.5">
+                <span class:list={['text-xs px-2 py-0.5 rounded-full', tierColors[s.tier] || 'bg-gray-100 text-gray-700']}>
+                  {s.name}
+                </span>
+                <span class="text-xs text-gray-400">{s.mitigates_count}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )}
+
   <!-- Prerequisites from other domains -->
   {domain.prerequisites.length > 0 && (
     <div class="mb-10">
@@ -253,7 +353,7 @@ const modeColors: Record<string, string> = {
       Concepts ({domain.concepts.length})
     </h2>
     <div class="space-y-4">
-      {domain.concepts.map(concept => (
+      {enrichedConcepts.map(concept => (
         <ConceptCard concept={concept} expanded={true} />
       ))}
     </div>

@@ -181,13 +181,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           concept: '<span class="text-xs bg-teal-50 text-teal-700 px-1.5 py-0.5 rounded">Concept</span>',
           domain: '<span class="text-xs bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded">Domain</span>',
           planner: '<span class="text-xs bg-violet-50 text-violet-700 px-1.5 py-0.5 rounded">Planner</span>',
+          study: '<span class="text-xs bg-amber-50 text-amber-700 px-1.5 py-0.5 rounded">Study</span>',
         };
         const html = results.slice(0, 20).map((r: any) => {
           let href: string;
           if (r.type === 'planner') {
             href = `${BASE}/planners/${r.folder}/${r.slug}`;
-          } else if (r.type === 'domain') {
-            href = `${BASE}/domains/${r.id}`;
+          } else if (r.type === 'domain' || r.type === 'study') {
+            href = `${BASE}/domains/${r.domain_id || r.id}`;
           } else {
             href = `${BASE}/domains/${r.domain_id}#${r.id}`;
           }
@@ -228,6 +229,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
               // Planners rank highest — teachers search for these
               if (item.type === 'planner') score += 100;
               else if (item.type === 'domain') score += 50;
+              else if (item.type === 'study') score += 40;
               // Name match >> description match
               if (terms.every((t: string) => name.includes(t))) score += 80;
               else if (terms.some((t: string) => name.includes(t))) score += 30;
@@ -263,6 +265,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
               let score = 0;
               if (item.type === 'planner') score += 100;
               else if (item.type === 'domain') score += 50;
+              else if (item.type === 'study') score += 40;
               if (terms.every((t: string) => name.includes(t))) score += 80;
               else if (terms.some((t: string) => name.includes(t))) score += 30;
               return { item, score };

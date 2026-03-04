@@ -83,6 +83,11 @@ LAYERS = {
         "script": PROJECT_ROOT / "layers" / "uk-curriculum" / "scripts" / "import_delivery_modes.py",
         "depends_on": ["uk-curriculum", "delivery-modes-classify"],
     },
+    "send-support": {
+        "name": "SEND Support (Access Requirements & Strategies)",
+        "script": PROJECT_ROOT / "layers" / "send-support" / "scripts" / "import_send_support.py",
+        "depends_on": ["uk-curriculum", "delivery-modes-import"],
+    },
     "vehicle-templates": {
         "name": "Vehicle Templates (pedagogical patterns)",
         "script": PROJECT_ROOT / "layers" / "topic-suggestions" / "scripts" / "import_vehicle_templates.py",
