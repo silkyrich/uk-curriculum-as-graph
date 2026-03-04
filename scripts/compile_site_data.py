@@ -180,8 +180,8 @@ def query_delivery_modes(session) -> dict:
         MATCH (c:Concept)-[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
         RETURN dm.mode_id AS mode_id, dm.name AS mode_name,
                dm.display_color AS color,
-               count(c) AS count
-        ORDER BY dm.delivery_order
+               count(c) AS count, dm.delivery_order AS delivery_order
+        ORDER BY delivery_order
     """
     summary = session.run(summary_query).data()
 
@@ -191,8 +191,8 @@ def query_delivery_modes(session) -> dict:
               -[:CONTAINS]->(:Objective)-[:TEACHES]->(c:Concept)
               -[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
         RETURN s.name AS subject, dm.mode_id AS mode_id, dm.name AS mode_name,
-               count(DISTINCT c) AS count
-        ORDER BY s.name, dm.delivery_order
+               count(DISTINCT c) AS count, dm.delivery_order AS delivery_order
+        ORDER BY subject, delivery_order
     """
     by_subject_raw = session.run(by_subject_query).data()
     by_subject = defaultdict(lambda: {'subject': '', 'modes': {}})
@@ -210,8 +210,9 @@ def query_delivery_modes(session) -> dict:
               -[:HAS_DOMAIN]->(:Domain)-[:CONTAINS]->(:Objective)-[:TEACHES]->(c:Concept)
               -[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
         RETURN ks.key_stage_id AS key_stage, dm.mode_id AS mode_id,
-               dm.name AS mode_name, count(DISTINCT c) AS count
-        ORDER BY ks.key_stage_id, dm.delivery_order
+               dm.name AS mode_name, count(DISTINCT c) AS count,
+               dm.delivery_order AS delivery_order
+        ORDER BY key_stage, delivery_order
     """
     by_ks_raw = session.run(by_ks_query).data()
     by_ks = defaultdict(lambda: {'key_stage': '', 'modes': {}})
