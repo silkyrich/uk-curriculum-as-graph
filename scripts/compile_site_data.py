@@ -179,8 +179,8 @@ def query_delivery_modes(session) -> dict:
         MATCH (c:Concept)-[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
         RETURN dm.mode_id AS mode_id, dm.name AS mode_name,
                dm.display_color AS color,
-               count(c) AS count, dm.delivery_order AS delivery_order
-        ORDER BY delivery_order
+               count(c) AS count
+        ORDER BY dm.mode_id
     """
     summary = session.run(summary_query).data()
 
@@ -190,8 +190,8 @@ def query_delivery_modes(session) -> dict:
               -[:HAS_CONCEPT]->(c:Concept)
               -[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
         RETURN s.name AS subject, dm.mode_id AS mode_id, dm.name AS mode_name,
-               count(DISTINCT c) AS count, dm.delivery_order AS delivery_order
-        ORDER BY subject, delivery_order
+               count(DISTINCT c) AS count
+        ORDER BY subject, dm.mode_id
     """
     by_subject_raw = session.run(by_subject_query).data()
     by_subject = defaultdict(lambda: {'subject': '', 'modes': {}})
@@ -209,9 +209,8 @@ def query_delivery_modes(session) -> dict:
               -[:HAS_DOMAIN]->(:Domain)-[:HAS_CONCEPT]->(c:Concept)
               -[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
         RETURN ks.key_stage_id AS key_stage, dm.mode_id AS mode_id,
-               dm.name AS mode_name, count(DISTINCT c) AS count,
-               dm.delivery_order AS delivery_order
-        ORDER BY key_stage, delivery_order
+               dm.name AS mode_name, count(DISTINCT c) AS count
+        ORDER BY key_stage, dm.mode_id
     """
     by_ks_raw = session.run(by_ks_query).data()
     by_ks = defaultdict(lambda: {'key_stage': '', 'modes': {}})
@@ -240,8 +239,8 @@ def query_delivery_modes(session) -> dict:
     modes_query = """
         MATCH (dm:DeliveryMode)
         RETURN dm.mode_id AS id, dm.name AS name, dm.description AS description,
-               dm.display_color AS color, dm.delivery_order AS order
-        ORDER BY dm.delivery_order
+               dm.display_color AS color
+        ORDER BY dm.mode_id
     """
     modes = session.run(modes_query).data()
 
@@ -267,9 +266,10 @@ def query_domain_detail(session, domain_id: str) -> dict:
                y.year_id AS year_id, y.year_number AS year_number,
                ks.key_stage_id AS key_stage, ks.name AS key_stage_name
     """
-    dr = session.run(domain_query, did=domain_id).single()
-    if not dr:
+    dr_rows = session.run(domain_query, did=domain_id).data()
+    if not dr_rows:
         return None
+    dr = dr_rows[0]
 
     domain = {
         'domain_id': dr['domain_id'],
