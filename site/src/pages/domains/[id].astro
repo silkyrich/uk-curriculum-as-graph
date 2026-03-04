@@ -22,7 +22,8 @@ const subjects = getSubjects();
 const subject = subjects.find(s => s.name === domain.subject);
 const subjectSlug = subject?.slug || domain.subject_slug;
 
-function yearLabel(yearId: string): string {
+function yearLabel(yearId: string | null): string {
+  if (!yearId) return '';
   if (yearId === 'EYFS') return 'Reception';
   return `Year ${yearId.replace('Y', '')}`;
 }
