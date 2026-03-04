@@ -5,11 +5,13 @@ import { getThinkingLenses } from '../lib/data';
 
 const lenses = getThinkingLenses();
 const totalClusters = lenses.reduce((sum, l) => sum + l.cluster_count, 0);
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Layout title="Thinking Lenses" description="10 cross-subject cognitive lenses for framing learning across the curriculum.">
   <Breadcrumb items={[
-    { label: 'Home', href: '/' },
+    { label: 'Home', href: `${base}/` },
     { label: 'Thinking Lenses' },
   ]} />
 

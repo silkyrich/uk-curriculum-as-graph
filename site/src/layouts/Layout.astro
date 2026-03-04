@@ -8,6 +8,7 @@ const { title, description = 'Explore the UK National Curriculum as an interacti
 
 const buildId = process.env.GITHUB_SHA?.substring(0, 7) || 'dev';
 const buildTime = new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <!doctype html>
@@ -24,14 +25,14 @@ const buildTime = new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UT
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center gap-8">
-            <a href="/" class="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors">
+            <a href={`${base}/`} class="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors">
               UK Curriculum Explorer
             </a>
             <div class="hidden md:flex items-center gap-6">
-              <a href="/planners" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Planners</a>
-              <a href="/years" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">By Year</a>
-              <a href="/#subjects" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">By Subject</a>
-              <a href="/guide" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Guide</a>
+              <a href={`${base}/planners`} class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Planners</a>
+              <a href={`${base}/years`} class="text-sm text-gray-600 hover:text-gray-900 transition-colors">By Year</a>
+              <a href={`${base}/#subjects`} class="text-sm text-gray-600 hover:text-gray-900 transition-colors">By Subject</a>
+              <a href={`${base}/guide`} class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Guide</a>
               <!-- Data dropdown -->
               <div class="relative group">
                 <button class="text-sm text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-1" id="data-dropdown-btn">
@@ -41,9 +42,9 @@ const buildTime = new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UT
                   </svg>
                 </button>
                 <div id="data-dropdown" class="absolute left-0 top-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg hidden w-48 py-1 z-50">
-                  <a href="/delivery" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900">Delivery Readiness</a>
-                  <a href="/lenses" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900">Thinking Lenses</a>
-                  <a href="/profiles" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900">Learner Profiles</a>
+                  <a href={`${base}/delivery`} class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900">Delivery Readiness</a>
+                  <a href={`${base}/lenses`} class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900">Thinking Lenses</a>
+                  <a href={`${base}/profiles`} class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900">Learner Profiles</a>
                 </div>
               </div>
             </div>
@@ -71,15 +72,15 @@ const buildTime = new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UT
         </div>
         <!-- Mobile menu -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
-          <a href="/planners" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Planners</a>
-          <a href="/years" class="block py-2 text-sm text-gray-600 hover:text-gray-900">By Year</a>
-          <a href="/#subjects" class="block py-2 text-sm text-gray-600 hover:text-gray-900">By Subject</a>
-          <a href="/guide" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Guide</a>
+          <a href={`${base}/planners`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Planners</a>
+          <a href={`${base}/years`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">By Year</a>
+          <a href={`${base}/#subjects`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">By Subject</a>
+          <a href={`${base}/guide`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Guide</a>
           <div class="border-t border-gray-100 mt-2 pt-2">
             <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Data</p>
-            <a href="/delivery" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Delivery Readiness</a>
-            <a href="/lenses" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Thinking Lenses</a>
-            <a href="/profiles" class="block py-2 text-sm text-gray-600 hover:text-gray-900">Learner Profiles</a>
+            <a href={`${base}/delivery`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Delivery Readiness</a>
+            <a href={`${base}/lenses`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Thinking Lenses</a>
+            <a href={`${base}/profiles`} class="block py-2 text-sm text-gray-600 hover:text-gray-900">Learner Profiles</a>
           </div>
         </div>
       </div>
@@ -123,13 +124,14 @@ const buildTime = new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UT
       });
 
       // Client-side search
+      const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
       let searchIndex: any[] | null = null;
       const searchInput = document.getElementById('search-input') as HTMLInputElement;
       const searchResults = document.getElementById('search-results');
 
       async function loadSearchIndex() {
         if (searchIndex) return searchIndex;
-        const res = await fetch('/search.json');
+        const res = await fetch(`${BASE}/search.json`);
         searchIndex = await res.json();
         return searchIndex;
       }
@@ -149,11 +151,11 @@ const buildTime = new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UT
         const html = results.slice(0, 20).map((r: any) => {
           let href: string;
           if (r.type === 'planner') {
-            href = `/planners/${r.folder}/${r.slug}`;
+            href = `${BASE}/planners/${r.folder}/${r.slug}`;
           } else if (r.type === 'domain') {
-            href = `/domains/${r.id}`;
+            href = `${BASE}/domains/${r.id}`;
           } else {
-            href = `/domains/${r.domain_id}#${r.id}`;
+            href = `${BASE}/domains/${r.domain_id}#${r.id}`;
           }
           return `<a href="${href}" class="block p-3 hover:bg-gray-50 border-b border-gray-100 last:border-0">
             <div class="flex items-center gap-2">

@@ -23,6 +23,8 @@ const subjectTotal = subjectDelivery
   ? Object.values(subjectDelivery.modes).reduce((sum, m) => sum + (m as any).count, 0)
   : 0;
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 function yearLabel(yearId: string): string {
   if (yearId === 'EYFS') return 'Reception';
   return `Year ${yearId.replace('Y', '')}`;
@@ -31,7 +33,7 @@ function yearLabel(yearId: string): string {
 
 <Layout title={subject.name}>
   <Breadcrumb items={[
-    { label: 'Home', href: '/' },
+    { label: 'Home', href: `${base}/` },
     { label: subject.name },
   ]} />
 
@@ -54,7 +56,7 @@ function yearLabel(yearId: string): string {
     <div class="bg-white rounded-lg border border-gray-200 p-6 mb-8">
       <div class="flex items-center justify-between mb-3">
         <h2 class="font-semibold text-gray-900">Teacher Planners ({planners.length})</h2>
-        <a href={`/planners`} class="text-sm text-blue-600 hover:text-blue-800 font-medium">
+        <a href={`${base}/planners`} class="text-sm text-blue-600 hover:text-blue-800 font-medium">
           View all planners &rarr;
         </a>
       </div>
@@ -66,7 +68,7 @@ function yearLabel(yearId: string): string {
             <div class="flex flex-wrap gap-2">
               {ksPlanners.map(p => (
                 <a
-                  href={`/planners/${p.folder}/${p.slug}`}
+                  href={`${base}/planners/${p.folder}/${p.slug}`}
                   class="text-sm bg-blue-50 text-blue-700 px-3 py-1.5 rounded-lg hover:bg-blue-100 transition-colors"
                 >
                   {p.title}
@@ -121,7 +123,7 @@ function yearLabel(yearId: string): string {
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {year.domains.map(domain => (
           <a
-            href={`/domains/${domain.domain_id}`}
+            href={`${base}/domains/${domain.domain_id}`}
             class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md hover:border-blue-300 transition-all"
           >
             <h3 class="font-medium text-gray-900 text-sm">{domain.name}</h3>

@@ -13,6 +13,8 @@ interface Props {
 
 const { subject } = Astro.props;
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 const subjectColors: Record<string, string> = {
   Mathematics: 'border-l-blue-500',
   English: 'border-l-purple-500',
@@ -28,7 +30,7 @@ const subjectColors: Record<string, string> = {
 ---
 
 <a
-  href={`/subjects/${subject.slug}`}
+  href={`${base}/subjects/${subject.slug}`}
   class:list={[
     'block bg-white rounded-lg border border-gray-200 border-l-4 p-4',
     'hover:shadow-md hover:-translate-y-0.5 transition-all',

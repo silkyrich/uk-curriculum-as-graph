@@ -37,6 +37,8 @@ const subjectBorders: Record<string, string> = {
 
 const borderClass = subjectBorders[planner.subject] || 'border-l-gray-400';
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 // Coverage ratio as percentage for indicator
 const coverageParts = planner.coverage ? planner.coverage.split('/') : [];
 const coveragePct = coverageParts.length === 2
@@ -52,7 +54,7 @@ const coveragePct = coverageParts.length === 2
   data-years={planner.year_groups.join(',')}
 >
   <a
-    href={`/planners/${planner.folder}/${planner.slug}`}
+    href={`${base}/planners/${planner.folder}/${planner.slug}`}
     class="block hover:text-blue-600 transition-colors"
   >
     <h3 class="font-semibold text-gray-900 text-sm leading-snug">{planner.title}</h3>
@@ -105,13 +107,13 @@ const coveragePct = coverageParts.length === 2
 
   <div class="mt-auto pt-3 flex items-center gap-2">
     <a
-      href={`/planners/${planner.folder}/${planner.slug}`}
+      href={`${base}/planners/${planner.folder}/${planner.slug}`}
       class="text-xs text-blue-600 hover:text-blue-800 font-medium"
     >
       View planner &rarr;
     </a>
     <a
-      href={`/planners/${planner.folder}/${planner.slug}.md`}
+      href={`${base}/planners/${planner.folder}/${planner.slug}.md`}
       download
       class="ml-auto text-xs text-gray-400 hover:text-gray-600"
       title="Download Markdown"
