@@ -1,0 +1,256 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import StatCard from '../components/StatCard.astro';
+import { getDeliveryData } from '../lib/data';
+
+const delivery = getDeliveryData();
+
+const totalConcepts = delivery.summary.reduce((sum, m) => sum + m.count, 0);
+const aiReachable = delivery.summary
+  .filter(m => m.mode_id === 'DM-AI' || m.mode_id === 'DM-AF')
+  .reduce((sum, m) => sum + m.count, 0);
+
+// Group requirements by category
+const reqByCategory = new Map<string, typeof delivery.requirements>();
+for (const req of delivery.requirements) {
+  const cat = req.category || 'other';
+  if (!reqByCategory.has(cat)) {
+    reqByCategory.set(cat, []);
+  }
+  reqByCategory.get(cat)!.push(req);
+}
+
+const categoryLabels: Record<string, string> = {
+  assessment: 'Assessment',
+  resource: 'Resources',
+  pedagogy: 'Pedagogy',
+  knowledge: 'Knowledge',
+  safety: 'Safety',
+};
+---
+
+<Layout title="Delivery Readiness" description="How much of the UK curriculum can AI teach? A data-driven breakdown.">
+  <Breadcrumb items={[
+    { label: 'Dashboard', href: '/' },
+    { label: 'Delivery Readiness' },
+  ]} />
+
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-900">Delivery Readiness</h1>
+    <p class="text-lg text-gray-600 mt-2 max-w-3xl">
+      Every concept in the curriculum has been classified by what combination of AI,
+      human facilitation, and specialist expertise is needed to teach it.
+    </p>
+  </div>
+
+  <!-- Summary stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+    {delivery.summary.map(mode => {
+      const pct = totalConcepts > 0 ? Math.round((mode.count / totalConcepts) * 100) : 0;
+      return (
+        <div class="bg-white rounded-xl border border-gray-200 p-5">
+          <div class="flex items-center gap-2 mb-1">
+            <div class="w-3 h-3 rounded-full" style={`background-color: ${mode.color}`} />
+            <p class="text-sm font-medium text-gray-600">{mode.mode_name}</p>
+          </div>
+          <p class="text-3xl font-bold" style={`color: ${mode.color}`}>{mode.count}</p>
+          <p class="text-sm text-gray-500">{pct}% of curriculum</p>
+        </div>
+      );
+    })}
+  </div>
+
+  <!-- Key insight -->
+  <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-8">
+    <h2 class="text-lg font-semibold text-emerald-900">
+      {Math.round((aiReachable / totalConcepts) * 100)}% of the curriculum is AI-teachable
+    </h2>
+    <p class="text-emerald-700 mt-1">
+      {aiReachable.toLocaleString()} out of {totalConcepts.toLocaleString()} concepts can be
+      delivered through AI-powered adaptive learning (AI Direct + AI Facilitated).
+    </p>
+  </div>
+
+  <!-- Delivery mode definitions -->
+  <div class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">Delivery Modes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {delivery.modes.map(mode => (
+        <div class="bg-white rounded-lg border-l-4 border border-gray-200 p-4" style={`border-left-color: ${mode.color}`}>
+          <h3 class="font-semibold text-gray-900">{mode.name}</h3>
+          <p class="text-sm text-gray-600 mt-1">{mode.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Charts -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+    <div class="bg-white rounded-lg border border-gray-200 p-6">
+      <h3 class="font-semibold text-gray-900 mb-4">By Subject</h3>
+      <canvas id="delivery-subject-chart" height="400"></canvas>
+    </div>
+    <div class="bg-white rounded-lg border border-gray-200 p-6">
+      <h3 class="font-semibold text-gray-900 mb-4">By Key Stage</h3>
+      <canvas id="delivery-ks-chart" height="400"></canvas>
+    </div>
+  </div>
+
+  <!-- Subject breakdown table -->
+  <div class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">Subject Breakdown</h2>
+    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-gray-50 border-b border-gray-200">
+            <th class="text-left p-3 font-medium text-gray-700">Subject</th>
+            <th class="text-right p-3 font-medium text-emerald-700">AI Direct</th>
+            <th class="text-right p-3 font-medium text-blue-700">AI Facilitated</th>
+            <th class="text-right p-3 font-medium text-amber-700">Guided</th>
+            <th class="text-right p-3 font-medium text-red-700">Specialist</th>
+            <th class="text-right p-3 font-medium text-gray-700">Total</th>
+            <th class="p-3 font-medium text-gray-700">AI %</th>
+          </tr>
+        </thead>
+        <tbody>
+          {delivery.by_subject
+            .sort((a, b) => {
+              const totalA = Object.values(a.modes).reduce((s, m) => s + (m as any).count, 0);
+              const totalB = Object.values(b.modes).reduce((s, m) => s + (m as any).count, 0);
+              return totalB - totalA;
+            })
+            .map(subj => {
+              const total = Object.values(subj.modes).reduce((s, m) => s + (m as any).count, 0);
+              const ai = ((subj.modes as any)['DM-AI']?.count || 0) + ((subj.modes as any)['DM-AF']?.count || 0);
+              const aiPct = total > 0 ? Math.round((ai / total) * 100) : 0;
+              return (
+                <tr class="border-b border-gray-100 hover:bg-gray-50">
+                  <td class="p-3 font-medium">{subj.subject}</td>
+                  <td class="text-right p-3 text-emerald-700">{(subj.modes as any)['DM-AI']?.count || 0}</td>
+                  <td class="text-right p-3 text-blue-700">{(subj.modes as any)['DM-AF']?.count || 0}</td>
+                  <td class="text-right p-3 text-amber-700">{(subj.modes as any)['DM-GM']?.count || 0}</td>
+                  <td class="text-right p-3 text-red-700">{(subj.modes as any)['DM-ST']?.count || 0}</td>
+                  <td class="text-right p-3 font-semibold">{total}</td>
+                  <td class="p-3">
+                    <div class="flex items-center gap-2">
+                      <div class="w-16 h-2 rounded-full bg-gray-100 overflow-hidden">
+                        <div class="h-full bg-emerald-500 rounded-full" style={`width: ${aiPct}%`} />
+                      </div>
+                      <span class="text-xs font-medium text-gray-600">{aiPct}%</span>
+                    </div>
+                  </td>
+                </tr>
+              );
+            })
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Teaching requirements -->
+  <div class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">Teaching Requirements</h2>
+    <p class="text-sm text-gray-600 mb-4">
+      Atomic pedagogical requirements that determine which delivery mode a concept needs.
+    </p>
+    {Array.from(reqByCategory.entries()).map(([category, reqs]) => (
+      <div class="mb-6">
+        <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-2">
+          {categoryLabels[category] || category}
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {reqs.map(req => (
+            <div class="bg-white rounded-lg border border-gray-200 p-3">
+              <div class="flex items-center justify-between">
+                <span class="font-medium text-sm text-gray-900">{req.name}</span>
+                <span class="text-xs text-gray-400">{req.concept_count} concepts</span>
+              </div>
+              {req.description && (
+                <p class="text-xs text-gray-600 mt-1">{req.description}</p>
+              )}
+              {req.implies_mode && (
+                <p class="text-xs text-gray-500 mt-1">
+                  Implies: <span class="font-medium">{req.implies_mode}</span>
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <script define:vars={{ deliveryBySubject: delivery.by_subject, deliveryByKs: delivery.by_key_stage, deliveryModes: delivery.modes }}>
+    async function loadCharts() {
+      const { Chart, registerables } = await import('https://cdn.jsdelivr.net/npm/chart.js@4.4.8/+esm');
+      Chart.register(...registerables);
+
+      const modeColors = { 'DM-AI': '#10B981', 'DM-AF': '#3B82F6', 'DM-GM': '#F59E0B', 'DM-ST': '#EF4444' };
+      const modeLabels = { 'DM-AI': 'AI Direct', 'DM-AF': 'AI Facilitated', 'DM-GM': 'Guided Materials', 'DM-ST': 'Specialist Teacher' };
+
+      // By subject (horizontal stacked bar, percentage)
+      const subjectData = deliveryBySubject
+        .map(s => ({
+          ...s,
+          total: Object.values(s.modes).reduce((sum, m) => sum + m.count, 0)
+        }))
+        .filter(s => s.total > 5)
+        .sort((a, b) => {
+          const aiA = (a.modes['DM-AI']?.count || 0) + (a.modes['DM-AF']?.count || 0);
+          const aiB = (b.modes['DM-AI']?.count || 0) + (b.modes['DM-AF']?.count || 0);
+          return (aiB / b.total) - (aiA / a.total);
+        });
+
+      new Chart(document.getElementById('delivery-subject-chart'), {
+        type: 'bar',
+        data: {
+          labels: subjectData.map(s => s.subject),
+          datasets: Object.keys(modeColors).map(modeId => ({
+            label: modeLabels[modeId],
+            data: subjectData.map(s => {
+              const count = s.modes[modeId]?.count || 0;
+              return Math.round((count / s.total) * 100);
+            }),
+            backgroundColor: modeColors[modeId],
+          })),
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          scales: {
+            x: { stacked: true, max: 100, grid: { display: false }, ticks: { callback: v => v + '%' } },
+            y: { stacked: true, grid: { display: false } },
+          },
+          plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.raw}%` } } },
+        },
+      });
+
+      // By key stage (stacked bar, absolute)
+      const ksOrder = ['EYFS', 'KS1', 'KS2', 'KS3', 'KS4'];
+      const ksData = deliveryByKs.sort((a, b) => ksOrder.indexOf(a.key_stage) - ksOrder.indexOf(b.key_stage));
+
+      new Chart(document.getElementById('delivery-ks-chart'), {
+        type: 'bar',
+        data: {
+          labels: ksData.map(k => k.key_stage),
+          datasets: Object.keys(modeColors).map(modeId => ({
+            label: modeLabels[modeId],
+            data: ksData.map(k => k.modes[modeId]?.count || 0),
+            backgroundColor: modeColors[modeId],
+          })),
+        },
+        options: {
+          responsive: true,
+          scales: {
+            x: { stacked: true, grid: { display: false } },
+            y: { stacked: true, grid: { display: false } },
+          },
+          plugins: { legend: { position: 'bottom' } },
+        },
+      });
+    }
+    loadCharts();
+  </script>
+</Layout>

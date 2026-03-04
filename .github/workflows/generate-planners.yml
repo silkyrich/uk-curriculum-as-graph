@@ -47,6 +47,7 @@ jobs:
           python3 -m py_compile scripts/render_markdown.py
           python3 -m py_compile scripts/render_pptx.py
           python3 -m py_compile scripts/render_docx.py
+          python3 -m py_compile scripts/compile_site_data.py
           python3 -m py_compile core/scripts/import_all.py
           python3 -m py_compile core/scripts/create_schema.py
 

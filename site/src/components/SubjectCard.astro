@@ -1,0 +1,57 @@
+---
+interface Props {
+  subject: {
+    subject_id: string;
+    name: string;
+    slug: string;
+    key_stages: string[];
+    total_concepts: number;
+    total_domains: number;
+    total_clusters: number;
+  };
+}
+
+const { subject } = Astro.props;
+
+const subjectColors: Record<string, string> = {
+  Mathematics: 'border-l-blue-500',
+  English: 'border-l-purple-500',
+  Science: 'border-l-green-500',
+  History: 'border-l-amber-500',
+  Geography: 'border-l-teal-500',
+  Computing: 'border-l-indigo-500',
+  'Art and Design': 'border-l-pink-500',
+  Music: 'border-l-violet-500',
+  'Design and Technology': 'border-l-orange-500',
+  'Physical Education': 'border-l-red-500',
+};
+---
+
+<a
+  href={`/subjects/${subject.slug}`}
+  class:list={[
+    'block bg-white rounded-lg border border-gray-200 border-l-4 p-4',
+    'hover:shadow-md hover:-translate-y-0.5 transition-all',
+    subjectColors[subject.name] || 'border-l-gray-400',
+  ]}
+>
+  <h3 class="font-semibold text-gray-900">{subject.name}</h3>
+  <div class="flex items-center gap-3 mt-2 text-sm text-gray-500">
+    <span>{subject.total_concepts} concepts</span>
+    <span class="text-gray-300">|</span>
+    <span>{subject.total_domains} domains</span>
+    {subject.total_clusters > 0 && (
+      <>
+        <span class="text-gray-300">|</span>
+        <span>{subject.total_clusters} clusters</span>
+      </>
+    )}
+  </div>
+  <div class="flex gap-1.5 mt-2">
+    {subject.key_stages.map(ks => (
+      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">
+        {ks}
+      </span>
+    ))}
+  </div>
+</a>
