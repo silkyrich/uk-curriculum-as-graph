@@ -5,6 +5,9 @@ interface Props {
 }
 
 const { title, description = 'Explore the UK National Curriculum as an interactive knowledge graph' } = Astro.props;
+
+const buildId = process.env.GITHUB_SHA?.substring(0, 7) || 'dev';
+const buildTime = new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
 ---
 
 <!doctype html>
@@ -91,6 +94,9 @@ const { title, description = 'Explore the UK National Curriculum as an interacti
         <p class="text-sm text-gray-500 text-center">
           UK National Curriculum Knowledge Graph &middot;
           Data compiled from the <a href="https://www.gov.uk/government/collections/national-curriculum" class="text-blue-600 hover:underline">UK National Curriculum (2014)</a>
+        </p>
+        <p class="text-xs text-gray-400 text-center mt-1">
+          Build: {buildId} &middot; {buildTime}
         </p>
       </div>
     </footer>

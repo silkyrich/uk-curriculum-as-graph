@@ -82,8 +82,7 @@ def query_overview(session) -> dict:
         OPTIONAL MATCH (ks)-[:HAS_YEAR]->(y:Year)
         WITH ks, collect(y) AS years
         OPTIONAL MATCH (ks)-[:HAS_YEAR]->(:Year)-[:HAS_PROGRAMME]->(:Programme)
-                        -[:HAS_DOMAIN]->(:Domain)-[:CONTAINS]->(:Objective)
-                        -[:TEACHES]->(c:Concept)
+                        -[:HAS_DOMAIN]->(:Domain)-[:HAS_CONCEPT]->(c:Concept)
         WITH ks, years, count(DISTINCT c) AS concept_count
         RETURN ks.key_stage_id AS id, ks.name AS name,
                [y IN years | y.year_id] AS year_ids,
@@ -108,13 +107,13 @@ def query_overview(session) -> dict:
 def query_subjects(session) -> list[dict]:
     """All subjects with year/domain breakdown and delivery modes."""
     query = """
-        MATCH (s:Subject)<-[:HAS_SUBJECT]-(p:Programme)<-[:HAS_PROGRAMME]-(y:Year)
+        MATCH (s:Subject)<-[:FOR_SUBJECT]-(p:Programme)<-[:HAS_PROGRAMME]-(y:Year)
               <-[:HAS_YEAR]-(ks:KeyStage)
         WITH s, y, ks,
              collect(DISTINCT p) AS progs
         UNWIND progs AS p
         MATCH (p)-[:HAS_DOMAIN]->(d:Domain)
-        OPTIONAL MATCH (d)-[:CONTAINS]->(:Objective)-[:TEACHES]->(c:Concept)
+        OPTIONAL MATCH (d)-[:HAS_CONCEPT]->(c:Concept)
         WITH s, y, ks, d, count(DISTINCT c) AS concept_count
         OPTIONAL MATCH (d)-[:HAS_CLUSTER]->(cl:ConceptCluster)
         WITH s, y, ks, d, concept_count, count(DISTINCT cl) AS cluster_count
@@ -187,8 +186,8 @@ def query_delivery_modes(session) -> dict:
 
     # By subject
     by_subject_query = """
-        MATCH (s:Subject)<-[:HAS_SUBJECT]-(:Programme)-[:HAS_DOMAIN]->(:Domain)
-              -[:CONTAINS]->(:Objective)-[:TEACHES]->(c:Concept)
+        MATCH (s:Subject)<-[:FOR_SUBJECT]-(:Programme)-[:HAS_DOMAIN]->(:Domain)
+              -[:HAS_CONCEPT]->(c:Concept)
               -[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
         RETURN s.name AS subject, dm.mode_id AS mode_id, dm.name AS mode_name,
                count(DISTINCT c) AS count, dm.delivery_order AS delivery_order
@@ -207,7 +206,7 @@ def query_delivery_modes(session) -> dict:
     # By key stage
     by_ks_query = """
         MATCH (ks:KeyStage)-[:HAS_YEAR]->(:Year)-[:HAS_PROGRAMME]->(:Programme)
-              -[:HAS_DOMAIN]->(:Domain)-[:CONTAINS]->(:Objective)-[:TEACHES]->(c:Concept)
+              -[:HAS_DOMAIN]->(:Domain)-[:HAS_CONCEPT]->(c:Concept)
               -[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
         RETURN ks.key_stage_id AS key_stage, dm.mode_id AS mode_id,
                dm.name AS mode_name, count(DISTINCT c) AS count,
@@ -260,7 +259,7 @@ def query_domain_detail(session, domain_id: str) -> dict:
     # Domain info
     domain_query = """
         MATCH (d:Domain {domain_id: $did})
-        OPTIONAL MATCH (d)<-[:HAS_DOMAIN]-(p:Programme)-[:HAS_SUBJECT]->(s:Subject)
+        OPTIONAL MATCH (d)<-[:HAS_DOMAIN]-(p:Programme)-[:FOR_SUBJECT]->(s:Subject)
         OPTIONAL MATCH (p)<-[:HAS_PROGRAMME]-(y:Year)<-[:HAS_YEAR]-(ks:KeyStage)
         RETURN d.domain_id AS domain_id, d.name AS name,
                d.description AS description, d.curriculum_context AS curriculum_context,
@@ -288,11 +287,11 @@ def query_domain_detail(session, domain_id: str) -> dict:
 
     # Concepts with difficulty levels, representation stages, delivery modes
     concepts_query = """
-        MATCH (d:Domain {domain_id: $did})-[:CONTAINS]->(o:Objective)-[:TEACHES]->(c:Concept)
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
         OPTIONAL MATCH (c)-[:HAS_DIFFICULTY_LEVEL]->(dl:DifficultyLevel)
         OPTIONAL MATCH (c)-[:HAS_REPRESENTATION_STAGE]->(rs:RepresentationStage)
         OPTIONAL MATCH (c)-[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
-        WITH c, o,
+        WITH c,
              collect(DISTINCT properties(dl)) AS dls,
              collect(DISTINCT properties(rs)) AS rss,
              dm, dv
@@ -302,7 +301,6 @@ def query_domain_detail(session, domain_id: str) -> dict:
                c.teaching_guidance AS teaching_guidance,
                c.key_vocabulary AS key_vocabulary,
                c.common_misconceptions AS common_misconceptions,
-               o.objective_id AS objective_id, o.name AS objective_name,
                dls, rss,
                dm.mode_id AS delivery_mode_id, dm.name AS delivery_mode_name,
                dv.confidence AS delivery_confidence, dv.rationale AS delivery_rationale
@@ -393,12 +391,12 @@ def query_domain_detail(session, domain_id: str) -> dict:
 
     # Prerequisites from outside this domain
     prereq_query = """
-        MATCH (d:Domain {domain_id: $did})-[:CONTAINS]->(:Objective)-[:TEACHES]->(c:Concept)
+        MATCH (d:Domain {domain_id: $did})-[:HAS_CONCEPT]->(c:Concept)
               <-[:PREREQUISITE_OF]-(prereq:Concept)
         WHERE NOT EXISTS {
-            MATCH (d)-[:CONTAINS]->(:Objective)-[:TEACHES]->(prereq)
+            MATCH (d)-[:HAS_CONCEPT]->(prereq)
         }
-        OPTIONAL MATCH (prereq)<-[:TEACHES]-(:Objective)<-[:CONTAINS]-(pd:Domain)
+        OPTIONAL MATCH (prereq)<-[:HAS_CONCEPT]-(pd:Domain)
         RETURN DISTINCT prereq.concept_id AS prereq_id,
                prereq.name AS prereq_name,
                pd.domain_id AS from_domain_id, pd.name AS from_domain_name,
@@ -488,8 +486,8 @@ def query_prerequisite_graph(session) -> dict:
 
     nodes_query = """
         MATCH (c:Concept) WHERE c.concept_id IN $cids
-        OPTIONAL MATCH (c)<-[:TEACHES]-(:Objective)<-[:CONTAINS]-(d:Domain)
-                        <-[:HAS_DOMAIN]-(:Programme)-[:HAS_SUBJECT]->(s:Subject)
+        OPTIONAL MATCH (c)<-[:HAS_CONCEPT]-(d:Domain)
+                        <-[:HAS_DOMAIN]-(:Programme)-[:FOR_SUBJECT]->(s:Subject)
         RETURN c.concept_id AS id, c.name AS name,
                s.name AS subject, d.name AS domain
     """
@@ -505,8 +503,8 @@ def query_search_index(session) -> list[dict]:
     """Build search index for client-side search."""
     # Concepts
     concepts_query = """
-        MATCH (c:Concept)<-[:TEACHES]-(:Objective)<-[:CONTAINS]-(d:Domain)
-              <-[:HAS_DOMAIN]-(p:Programme)-[:HAS_SUBJECT]->(s:Subject)
+        MATCH (c:Concept)<-[:HAS_CONCEPT]-(d:Domain)
+              <-[:HAS_DOMAIN]-(p:Programme)-[:FOR_SUBJECT]->(s:Subject)
         OPTIONAL MATCH (p)<-[:HAS_PROGRAMME]-(y:Year)
                        <-[:HAS_YEAR]-(ks:KeyStage)
         OPTIONAL MATCH (c)-[dv:DELIVERABLE_VIA {primary: true}]->(dm:DeliveryMode)
@@ -542,7 +540,7 @@ def query_search_index(session) -> list[dict]:
 
     # Domains
     domains_query = """
-        MATCH (d:Domain)<-[:HAS_DOMAIN]-(p:Programme)-[:HAS_SUBJECT]->(s:Subject)
+        MATCH (d:Domain)<-[:HAS_DOMAIN]-(p:Programme)-[:FOR_SUBJECT]->(s:Subject)
         OPTIONAL MATCH (p)<-[:HAS_PROGRAMME]-(y:Year)
                        <-[:HAS_YEAR]-(ks:KeyStage)
         RETURN DISTINCT d.domain_id AS id, d.name AS name,
