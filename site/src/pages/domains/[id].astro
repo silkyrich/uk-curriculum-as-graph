@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import ConceptCard from '../../components/ConceptCard.astro';
+import VocabularyExplorer from '../../components/VocabularyExplorer.astro';
 import { getAllDomainIds, getDomain, getSubjects } from '../../lib/data';
 
 export function getStaticPaths() {
@@ -242,6 +243,9 @@ const modeColors: Record<string, string> = {
       </div>
     </div>
   )}
+
+  <!-- Domain vocabulary (interactive graph + list) -->
+  <VocabularyExplorer concepts={domain.concepts} domainName={domain.name} />
 
   <!-- All concepts (detailed cards) -->
   <div class="mb-10">

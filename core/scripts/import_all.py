@@ -110,6 +110,11 @@ LAYERS = {
         "script": PROJECT_ROOT / "layers" / "learner-profiles" / "scripts" / "import_learner_profiles.py",
         "depends_on": ["uk-curriculum"],
     },
+    "vocabulary": {
+        "name": "Vocabulary Terms",
+        "script": PROJECT_ROOT / "layers" / "vocabulary" / "scripts" / "import_vocabulary.py",
+        "depends_on": ["uk-curriculum"],
+    },
     "visualization": {
         "name": "Visualization & Formatting",
         "script": PROJECT_ROOT / "layers" / "visualization" / "scripts" / "apply_formatting.py",

@@ -1,0 +1,533 @@
+---
+/**
+ * VocabularyExplorer — interactive vocabulary graph + list for a domain.
+ *
+ * Shows all vocabulary terms across concepts, with a Cytoscape.js network
+ * graph view showing which concepts share terms, plus an alphabetical list.
+ */
+
+interface VocabTerm {
+  term_id: string;
+  term: string;
+  definition?: string;
+  tier?: number;
+  word_class?: string;
+  introduced?: boolean;
+  importance?: string;
+}
+
+interface ConceptRef {
+  concept_id: string;
+  name: string;
+  vocabulary_terms?: VocabTerm[];
+  key_vocabulary?: string;
+}
+
+interface Props {
+  concepts: ConceptRef[];
+  domainName: string;
+}
+
+const { concepts, domainName } = Astro.props;
+
+// Aggregate unique terms across all concepts
+const termMap = new Map<string, {
+  term: VocabTerm;
+  concepts: Array<{ concept_id: string; name: string; introduced?: boolean; importance?: string }>;
+}>();
+
+for (const c of concepts) {
+  if (c.vocabulary_terms && c.vocabulary_terms.length > 0) {
+    for (const vt of c.vocabulary_terms) {
+      if (!termMap.has(vt.term_id)) {
+        termMap.set(vt.term_id, {
+          term: vt,
+          concepts: [],
+        });
+      }
+      termMap.get(vt.term_id)!.concepts.push({
+        concept_id: c.concept_id,
+        name: c.name,
+        introduced: vt.introduced,
+        importance: vt.importance,
+      });
+    }
+  }
+}
+
+// Sort terms alphabetically
+const allTerms = [...termMap.values()].sort((a, b) =>
+  a.term.term.localeCompare(b.term.term)
+);
+
+const totalTerms = allTerms.length;
+const tier3Count = allTerms.filter(t => t.term.tier === 3).length;
+const sharedCount = allTerms.filter(t => t.concepts.length > 1).length;
+
+// Build graph data for Cytoscape
+const graphData = {
+  terms: allTerms.map(t => ({
+    id: t.term.term_id,
+    label: t.term.term,
+    tier: t.term.tier || 2,
+    word_class: t.term.word_class,
+    definition: t.term.definition,
+    conceptCount: t.concepts.length,
+  })),
+  concepts: concepts
+    .filter(c => c.vocabulary_terms && c.vocabulary_terms.length > 0)
+    .map(c => ({
+      id: c.concept_id,
+      label: c.name,
+    })),
+  edges: allTerms.flatMap(t =>
+    t.concepts.map(c => ({
+      source: c.concept_id,
+      target: t.term.term_id,
+      importance: c.importance || 'supporting',
+      introduced: c.introduced || false,
+    }))
+  ),
+};
+
+const tierLabels: Record<number, string> = {
+  1: 'Everyday',
+  2: 'Academic',
+  3: 'Domain-specific',
+};
+
+const tierColors: Record<number, string> = {
+  1: 'bg-green-100 text-green-800 border-green-200',
+  2: 'bg-blue-100 text-blue-800 border-blue-200',
+  3: 'bg-sky-100 text-sky-800 border-sky-200',
+};
+---
+
+{totalTerms > 0 && (
+  <div class="mb-10" id="vocabulary-section">
+    <div class="flex items-center justify-between mb-4">
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900">
+          Domain Vocabulary
+        </h2>
+        <p class="text-sm text-gray-500 mt-0.5">
+          {totalTerms} terms across {concepts.filter(c => c.vocabulary_terms?.length).length} concepts
+          {tier3Count > 0 && <span class="ml-2">({tier3Count} domain-specific)</span>}
+          {sharedCount > 0 && <span class="ml-2">({sharedCount} shared)</span>}
+        </p>
+      </div>
+      <div class="flex bg-gray-100 rounded-lg p-0.5" id="vocab-view-toggle">
+        <button
+          class="vocab-tab px-3 py-1.5 text-xs font-medium rounded-md bg-white text-gray-900 shadow-sm"
+          data-view="list"
+        >
+          List
+        </button>
+        <button
+          class="vocab-tab px-3 py-1.5 text-xs font-medium rounded-md text-gray-500 hover:text-gray-700"
+          data-view="graph"
+        >
+          Graph
+        </button>
+      </div>
+    </div>
+
+    <!-- Tier legend -->
+    <div class="flex flex-wrap gap-3 mb-4">
+      {[1, 2, 3].map(tier => {
+        const count = allTerms.filter(t => t.term.tier === tier).length;
+        return count > 0 && (
+          <div class="flex items-center gap-1.5 text-xs text-gray-600">
+            <span class:list={['w-2.5 h-2.5 rounded-full border', tierColors[tier]]} />
+            <span>{tierLabels[tier]} ({count})</span>
+          </div>
+        );
+      })}
+      <div class="flex items-center gap-1.5 text-xs text-gray-600">
+        <span class="w-2.5 h-2.5 rounded bg-gray-200 border border-gray-300" />
+        <span>Concept</span>
+      </div>
+    </div>
+
+    <!-- List view (default) -->
+    <div id="vocab-list-view" class="bg-white rounded-lg border border-gray-200">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100">
+        {allTerms.map(({ term: t, concepts: tConcepts }) => (
+          <div class="bg-white p-3">
+            <div class="flex items-start gap-2">
+              <span class:list={[
+                'inline-block px-1.5 py-0.5 rounded text-[10px] font-medium border shrink-0 mt-0.5',
+                tierColors[t.tier || 2]
+              ]}>
+                T{t.tier || '?'}
+              </span>
+              <div class="min-w-0">
+                <p class="font-semibold text-sm text-gray-900 leading-tight">
+                  {t.term}
+                  {t.word_class && (
+                    <span class="font-normal text-gray-400 text-xs ml-1">({t.word_class})</span>
+                  )}
+                </p>
+                {t.definition ? (
+                  <p class="text-xs text-gray-600 mt-0.5 line-clamp-2">{t.definition}</p>
+                ) : (
+                  <p class="text-xs text-gray-400 mt-0.5 italic">Definition pending</p>
+                )}
+                {tConcepts.length > 1 && (
+                  <p class="text-[10px] text-gray-400 mt-1">
+                    Shared by {tConcepts.length} concepts
+                  </p>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Graph view (hidden by default, activated by toggle) -->
+    <div id="vocab-graph-view" class="hidden">
+      <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+        <div
+          id="vocab-cy"
+          class="w-full"
+          style="height: 500px; min-height: 400px;"
+        />
+      </div>
+      <!-- Detail panel (shown on node click) -->
+      <div
+        id="vocab-detail-panel"
+        class="hidden mt-3 bg-white rounded-lg border border-gray-200 p-4"
+      >
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 id="vocab-detail-title" class="font-semibold text-gray-900"></h3>
+            <p id="vocab-detail-meta" class="text-xs text-gray-500 mt-0.5"></p>
+          </div>
+          <button id="vocab-detail-close" class="text-gray-400 hover:text-gray-600 text-sm">Close</button>
+        </div>
+        <p id="vocab-detail-definition" class="text-sm text-gray-600 mt-2"></p>
+        <div id="vocab-detail-concepts" class="mt-3"></div>
+      </div>
+      <p class="text-xs text-gray-400 mt-2 text-center">
+        Drag to rearrange. Click a term or concept for details. Scroll to zoom.
+      </p>
+    </div>
+
+    <!-- Graph data (serialised for client-side JS) -->
+    <script
+      type="application/json"
+      id="vocab-graph-data"
+      set:html={JSON.stringify(graphData)}
+    />
+  </div>
+)}
+
+<script>
+  // Cytoscape is lazy-loaded only when the user clicks "Graph" tab
+  type CytoscapeStatic = typeof import('cytoscape').default;
+  type CytoscapeCore = ReturnType<CytoscapeStatic>;
+
+  // ── View toggle ──────────────────────────────────────────────────
+  const toggle = document.getElementById('vocab-view-toggle');
+  const listView = document.getElementById('vocab-list-view');
+  const graphView = document.getElementById('vocab-graph-view');
+  let cy: CytoscapeCore | null = null;
+  let graphInitialised = false;
+
+  if (toggle && listView && graphView) {
+    toggle.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.vocab-tab') as HTMLElement;
+      if (!btn) return;
+      const view = btn.dataset.view;
+
+      // Update tab styles
+      toggle.querySelectorAll('.vocab-tab').forEach(tab => {
+        const t = tab as HTMLElement;
+        if (t.dataset.view === view) {
+          t.classList.add('bg-white', 'text-gray-900', 'shadow-sm');
+          t.classList.remove('text-gray-500');
+        } else {
+          t.classList.remove('bg-white', 'text-gray-900', 'shadow-sm');
+          t.classList.add('text-gray-500');
+        }
+      });
+
+      // Toggle views
+      if (view === 'graph') {
+        listView.classList.add('hidden');
+        graphView.classList.remove('hidden');
+        if (!graphInitialised) {
+          initGraph();
+          graphInitialised = true;
+        } else if (cy) {
+          cy.resize();
+          cy.fit(undefined, 30);
+        }
+      } else {
+        listView.classList.remove('hidden');
+        graphView.classList.add('hidden');
+      }
+    });
+  }
+
+  // ── Cytoscape graph (lazy-loaded) ─────────────────────────────────
+  async function initGraph() {
+    const dataEl = document.getElementById('vocab-graph-data');
+    const container = document.getElementById('vocab-cy');
+    if (!dataEl || !container) return;
+
+    const data = JSON.parse(dataEl.textContent || '{}');
+    if (!data.terms?.length) return;
+
+    // Lazy-load Cytoscape.js only when graph view is activated
+    const { default: cytoscape } = await import('cytoscape');
+
+    const elements: any[] = [];
+
+    // Term nodes
+    for (const t of data.terms) {
+      elements.push({
+        data: {
+          id: t.id,
+          label: t.label,
+          nodeType: 'term',
+          tier: t.tier,
+          word_class: t.word_class || '',
+          definition: t.definition || '',
+          conceptCount: t.conceptCount,
+        },
+      });
+    }
+
+    // Concept nodes
+    for (const c of data.concepts) {
+      elements.push({
+        data: {
+          id: c.id,
+          label: c.label,
+          nodeType: 'concept',
+        },
+      });
+    }
+
+    // Edges
+    for (const e of data.edges) {
+      elements.push({
+        data: {
+          source: e.source,
+          target: e.target,
+          importance: e.importance,
+          introduced: e.introduced,
+        },
+      });
+    }
+
+    // Tier color palette
+    const tierBg: Record<number, string> = {
+      1: '#DCFCE7', // green-100
+      2: '#DBEAFE', // blue-100
+      3: '#E0F2FE', // sky-100
+    };
+    const tierBorder: Record<number, string> = {
+      1: '#22C55E', // green-500
+      2: '#3B82F6', // blue-500
+      3: '#0EA5E9', // sky-500
+    };
+    const tierText: Record<number, string> = {
+      1: '#166534', // green-800
+      2: '#1E40AF', // blue-800
+      3: '#075985', // sky-800
+    };
+
+    cy = cytoscape({
+      container,
+      elements,
+      minZoom: 0.3,
+      maxZoom: 3,
+      style: [
+        // Term nodes
+        {
+          selector: 'node[nodeType="term"]',
+          style: {
+            'label': 'data(label)',
+            'shape': 'round-rectangle',
+            'width': 'label',
+            'height': 'label',
+            'padding': '8px',
+            'font-size': '12px',
+            'font-weight': 600,
+            'text-valign': 'center',
+            'text-halign': 'center',
+            'text-wrap': 'wrap',
+            'text-max-width': '100px',
+            'background-color': (ele: any) => tierBg[ele.data('tier')] || '#F3F4F6',
+            'border-width': 2,
+            'border-color': (ele: any) => tierBorder[ele.data('tier')] || '#9CA3AF',
+            'color': (ele: any) => tierText[ele.data('tier')] || '#1F2937',
+          },
+        },
+        // Concept nodes
+        {
+          selector: 'node[nodeType="concept"]',
+          style: {
+            'label': 'data(label)',
+            'shape': 'ellipse',
+            'width': 'label',
+            'height': 'label',
+            'padding': '6px',
+            'font-size': '10px',
+            'font-weight': 400,
+            'text-valign': 'center',
+            'text-halign': 'center',
+            'text-wrap': 'wrap',
+            'text-max-width': '80px',
+            'background-color': '#F3F4F6',
+            'border-width': 1,
+            'border-color': '#D1D5DB',
+            'color': '#6B7280',
+          },
+        },
+        // Edges
+        {
+          selector: 'edge',
+          style: {
+            'width': 1.5,
+            'line-color': '#D1D5DB',
+            'curve-style': 'bezier',
+            'opacity': 0.6,
+          },
+        },
+        // Core importance edges
+        {
+          selector: 'edge[importance="core"]',
+          style: {
+            'width': 2.5,
+            'line-color': '#9CA3AF',
+            'opacity': 0.8,
+          },
+        },
+        // Introduced edges
+        {
+          selector: 'edge[?introduced]',
+          style: {
+            'line-style': 'solid',
+            'line-color': '#22C55E',
+            'opacity': 0.7,
+          },
+        },
+        // Hover states
+        {
+          selector: 'node:active',
+          style: {
+            'overlay-opacity': 0.1,
+          },
+        },
+      ],
+      layout: {
+        name: 'cose',
+        animate: true,
+        animationDuration: 800,
+        nodeOverlap: 20,
+        idealEdgeLength: (edge: any) => {
+          // Longer edges for concepts with many terms
+          return 80;
+        },
+        nodeRepulsion: () => 8000,
+        gravity: 0.25,
+        padding: 30,
+        randomize: false,
+      } as any,
+    });
+
+    // ── Interaction: click to show details ────────────────────────
+    const detailPanel = document.getElementById('vocab-detail-panel');
+    const detailTitle = document.getElementById('vocab-detail-title');
+    const detailMeta = document.getElementById('vocab-detail-meta');
+    const detailDef = document.getElementById('vocab-detail-definition');
+    const detailConcepts = document.getElementById('vocab-detail-concepts');
+    const detailClose = document.getElementById('vocab-detail-close');
+
+    if (detailPanel && detailTitle && detailMeta && detailDef && detailConcepts) {
+      cy.on('tap', 'node', (evt: any) => {
+        const node = evt.target;
+        const d = node.data();
+
+        if (d.nodeType === 'term') {
+          detailTitle.textContent = d.label;
+          const meta = [];
+          if (d.word_class) meta.push(d.word_class);
+          const tierNames: Record<number, string> = { 1: 'Tier 1 (everyday)', 2: 'Tier 2 (academic)', 3: 'Tier 3 (domain-specific)' };
+          if (d.tier) meta.push(tierNames[d.tier] || `Tier ${d.tier}`);
+          detailMeta.textContent = meta.join(' · ');
+          detailDef.textContent = d.definition || 'Definition pending — will be generated in Phase 2.';
+
+          // Show connected concepts
+          const neighbors = node.neighborhood('node[nodeType="concept"]');
+          const conceptNames = neighbors.map((n: any) => n.data('label'));
+          detailConcepts.innerHTML = conceptNames.length
+            ? `<p class="text-xs font-medium text-gray-500 mb-1">Used in ${conceptNames.length} concept${conceptNames.length > 1 ? 's' : ''}:</p>
+               <div class="flex flex-wrap gap-1">${conceptNames.map((n: string) =>
+                 `<span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded">${n}</span>`
+               ).join('')}</div>`
+            : '';
+        } else {
+          // Concept node
+          detailTitle.textContent = d.label;
+          detailMeta.textContent = d.id;
+          detailDef.textContent = '';
+
+          const neighbors = node.neighborhood('node[nodeType="term"]');
+          const termNames = neighbors.map((n: any) => {
+            const tier = n.data('tier');
+            const tierClass = tier === 3 ? 'bg-sky-100 text-sky-800' : tier === 1 ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800';
+            return `<span class="text-xs ${tierClass} px-2 py-0.5 rounded">${n.data('label')}</span>`;
+          });
+          detailConcepts.innerHTML = termNames.length
+            ? `<p class="text-xs font-medium text-gray-500 mb-1">${termNames.length} vocabulary term${termNames.length > 1 ? 's' : ''}:</p>
+               <div class="flex flex-wrap gap-1">${termNames.join('')}</div>`
+            : '';
+        }
+
+        detailPanel.classList.remove('hidden');
+
+        // Highlight selected node and neighbors
+        cy!.elements().removeClass('highlighted dimmed');
+        node.addClass('highlighted');
+        node.neighborhood().addClass('highlighted');
+        cy!.elements().not(node).not(node.neighborhood()).addClass('dimmed');
+      });
+
+      // Click background to deselect
+      cy.on('tap', (evt: any) => {
+        if (evt.target === cy) {
+          detailPanel.classList.add('hidden');
+          cy!.elements().removeClass('highlighted dimmed');
+        }
+      });
+
+      detailClose?.addEventListener('click', () => {
+        detailPanel.classList.add('hidden');
+        cy!.elements().removeClass('highlighted dimmed');
+      });
+    }
+  }
+</script>
+
+<style is:global>
+  .dimmed {
+    opacity: 0.15 !important;
+  }
+  .highlighted {
+    opacity: 1 !important;
+  }
+  #vocab-cy {
+    touch-action: none;
+  }
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
