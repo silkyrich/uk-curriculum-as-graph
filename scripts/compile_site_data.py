@@ -526,6 +526,7 @@ def query_domain_detail(session, domain_id: str) -> dict:
                collect(DISTINCT CASE WHEN ss IS NOT NULL THEN {
                    support_id: ss.support_id,
                    name: ss.name,
+                   description: ss.description,
                    tier: ss.tier,
                    construct_risk: ss.construct_risk,
                    strength: m.strength
@@ -537,7 +538,7 @@ def query_domain_detail(session, domain_id: str) -> dict:
     # Build per-concept barriers and domain-level summary
     concept_barriers_map = {}
     barrier_counts = defaultdict(int)
-    strategy_usage = defaultdict(lambda: {'name': '', 'tier': '', 'count': 0})
+    strategy_usage = defaultdict(lambda: {'name': '', 'description': '', 'tier': '', 'construct_risk': '', 'count': 0})
 
     for r in send_rows:
         cid = r['concept_id']
@@ -559,7 +560,9 @@ def query_domain_detail(session, domain_id: str) -> dict:
             if strat is not None:
                 sid = strat['support_id']
                 strategy_usage[sid]['name'] = strat['name']
+                strategy_usage[sid]['description'] = strat.get('description', '')
                 strategy_usage[sid]['tier'] = strat['tier']
+                strategy_usage[sid]['construct_risk'] = strat.get('construct_risk', '')
                 strategy_usage[sid]['count'] += 1
 
     concept_barriers = sorted(concept_barriers_map.values(),
@@ -568,7 +571,8 @@ def query_domain_detail(session, domain_id: str) -> dict:
 
     # Domain-level SEND summary
     top_strategies = sorted(
-        [{'name': v['name'], 'tier': v['tier'], 'mitigates_count': v['count']}
+        [{'name': v['name'], 'description': v['description'], 'tier': v['tier'],
+          'construct_risk': v['construct_risk'], 'mitigates_count': v['count']}
          for v in strategy_usage.values()],
         key=lambda x: -x['mitigates_count']
     )[:8]

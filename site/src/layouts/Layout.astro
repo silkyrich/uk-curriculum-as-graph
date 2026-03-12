@@ -187,7 +187,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           let href: string;
           if (r.type === 'planner') {
             href = `${BASE}/planners/${r.folder}/${r.slug}`;
-          } else if (r.type === 'domain' || r.type === 'study') {
+          } else if (r.type === 'study') {
+            href = `${BASE}/domains/${r.domain_id || r.id}#teaching-suggestions`;
+          } else if (r.type === 'domain') {
             href = `${BASE}/domains/${r.domain_id || r.id}`;
           } else {
             href = `${BASE}/domains/${r.domain_id}#${r.id}`;

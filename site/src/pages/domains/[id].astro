@@ -182,7 +182,7 @@ const levelColors: Record<string, string> = {
   <!-- Lesson clusters (sequenced) -->
   {sortedClusters.length > 0 && (
     <div class="mb-10">
-      <h2 class="text-xl font-semibold text-gray-900 mb-4">Lesson Clusters</h2>
+      <h2 id="lesson-clusters" class="text-xl font-semibold text-gray-900 mb-4">Lesson Clusters</h2>
       <div class="space-y-3">
         {sortedClusters.map((cluster, i) => {
           const clusterConcepts = cluster.concept_ids
@@ -248,7 +248,7 @@ const levelColors: Record<string, string> = {
   <!-- Teaching Suggestions (per-subject ontology) -->
   {domain.suggestions && domain.suggestions.length > 0 && (
     <div class="mb-10">
-      <h2 class="text-xl font-semibold text-gray-900 mb-4">
+      <h2 id="teaching-suggestions" class="text-xl font-semibold text-gray-900 mb-4">
         Teaching Suggestions ({domain.suggestions.length})
       </h2>
       <p class="text-sm text-gray-600 mb-3">
@@ -265,7 +265,7 @@ const levelColors: Record<string, string> = {
   <!-- Access and Inclusion (SEND overlay) -->
   {sendSummary && sendSummary.concepts_with_barriers > 0 && (
     <div class="mb-10">
-      <h2 class="text-xl font-semibold text-gray-900 mb-4">Access and Inclusion</h2>
+      <h2 id="access-and-inclusion" class="text-xl font-semibold text-gray-900 mb-4">Access and Inclusion</h2>
       <p class="text-sm text-gray-600 mb-3">
         {sendSummary.concepts_with_barriers} of {sendSummary.total_concepts} concepts
         have identified access barriers.
@@ -302,11 +302,21 @@ const levelColors: Record<string, string> = {
           <p class="text-xs font-medium text-gray-500 mb-2">Recommended support strategies</p>
           <div class="flex flex-wrap gap-2">
             {sendSummary.top_strategies.map(s => (
-              <div class="flex items-center gap-1.5">
-                <span class:list={['text-xs px-2 py-0.5 rounded-full', tierColors[s.tier] || 'bg-gray-100 text-gray-700']}>
+              <div class="flex items-center gap-1.5 group relative">
+                <span
+                  class:list={['text-xs px-2 py-0.5 rounded-full cursor-help', tierColors[s.tier] || 'bg-gray-100 text-gray-700']}
+                  title={s.description || s.name}
+                >
+                  {s.construct_risk === 'high' && <span class="text-red-500 mr-0.5" title="High construct risk — requires human gating">&#9888;</span>}
+                  {s.construct_risk === 'conditional' && <span class="text-amber-500 mr-0.5" title="Conditional construct risk">&#9651;</span>}
                   {s.name}
                 </span>
                 <span class="text-xs text-gray-400">{s.mitigates_count}</span>
+                {s.description && (
+                  <div class="absolute bottom-full left-0 mb-1 hidden group-hover:block z-10 w-64 p-2 bg-gray-900 text-white text-xs rounded-lg shadow-lg pointer-events-none">
+                    {s.description}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -318,7 +328,7 @@ const levelColors: Record<string, string> = {
   <!-- Prerequisites from other domains -->
   {domain.prerequisites.length > 0 && (
     <div class="mb-10">
-      <h2 class="text-xl font-semibold text-gray-900 mb-4">Prerequisites</h2>
+      <h2 id="prerequisites" class="text-xl font-semibold text-gray-900 mb-4">Prerequisites</h2>
       <p class="text-sm text-gray-600 mb-3">
         Concepts from other domains that pupils should know before this domain.
       </p>
@@ -349,7 +359,7 @@ const levelColors: Record<string, string> = {
 
   <!-- All concepts (detailed cards) -->
   <div class="mb-10">
-    <h2 class="text-xl font-semibold text-gray-900 mb-4">
+    <h2 id="concepts" class="text-xl font-semibold text-gray-900 mb-4">
       Concepts ({domain.concepts.length})
     </h2>
     <div class="space-y-4">

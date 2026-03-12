@@ -153,7 +153,7 @@ export interface DomainSendSummary {
   concepts_with_barriers: number;
   total_concepts: number;
   barrier_counts: Record<string, number>;
-  top_strategies: Array<{ name: string; tier: string; mitigates_count: number }>;
+  top_strategies: Array<{ name: string; description?: string; tier: string; construct_risk?: string; mitigates_count: number }>;
 }
 
 export interface Cluster {
