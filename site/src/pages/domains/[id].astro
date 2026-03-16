@@ -336,7 +336,13 @@ const levelColors: Record<string, string> = {
         {domain.prerequisites.map(p => (
           <div class="bg-white rounded-lg border border-gray-200 p-3 flex items-center justify-between">
             <div>
-              <span class="text-sm font-medium text-gray-900">{p.prereq_name}</span>
+              {p.from_domain_id ? (
+                <a href={`${base}/domains/${p.from_domain_id}#${p.prereq_id}`} class="text-sm font-medium text-blue-600 hover:underline">
+                  {p.prereq_name}
+                </a>
+              ) : (
+                <span class="text-sm font-medium text-gray-900">{p.prereq_name}</span>
+              )}
               {p.from_domain_name && (
                 <span class="text-xs text-gray-500 ml-2">
                   from {p.from_domain_id ? (
