@@ -46,8 +46,8 @@ Each **layer** is self-contained with its own:
 
 4. **`layers/topic-suggestions/`** - Per-subject ontology (Topic Suggestions + VehicleTemplates)
    - Replaces old Topics + Content Vehicles layers with typed per-subject nodes
-   - 326 study/unit nodes across 9 typed labels + 255 reference nodes across 12 types + 24 VehicleTemplate nodes
-   - **Study nodes** (display_category: `"Topic Suggestion"`): HistoryStudy, GeoStudy, ScienceEnquiry, EnglishUnit, ArtTopicSuggestion, MusicTopicSuggestion, DTTopicSuggestion, ComputingTopicSuggestion, TopicSuggestion (generic)
+   - 388 study/unit nodes across 10 typed labels + 255 reference nodes across 12 types + 24 VehicleTemplate nodes
+   - **Study nodes** (display_category: `"Topic Suggestion"`): HistoryStudy, GeoStudy, ScienceEnquiry, EnglishUnit, MathsUnit, ArtTopicSuggestion, MusicTopicSuggestion, DTTopicSuggestion, ComputingTopicSuggestion, TopicSuggestion (generic)
    - **Reference nodes** (display_category: `"Subject Reference"`): DisciplinaryConcept, HistoricalSource, GeoPlace, GeoContrast, EnquiryType, Misconception, Genre, SetText, MathsManipulative, MathsRepresentation, MathsContext, ReasoningPromptType
    - **VehicleTemplate** (display_category: `"Vehicle Template"`): 24 pedagogical pattern templates with TEMPLATE_FOR → KeyStage
    - Each subject uses its own property schema (no irrelevant attributes on nodes)
@@ -316,7 +316,7 @@ python3 layers/uk-curriculum/scripts/import_curriculum.py
 - `:SourceDocument`
 
 **Topic Suggestions (per-subject ontology):**
-- `:HistoryStudy`, `:GeoStudy`, `:ScienceEnquiry`, `:EnglishUnit` — typed study/unit nodes per subject
+- `:HistoryStudy`, `:GeoStudy`, `:ScienceEnquiry`, `:EnglishUnit`, `:MathsUnit` — typed study/unit nodes per subject
 - `:ArtTopicSuggestion`, `:MusicTopicSuggestion`, `:DTTopicSuggestion`, `:ComputingTopicSuggestion` — foundation subject suggestions
 - `:TopicSuggestion` — generic (RE, Citizenship, etc.)
 - `:VehicleTemplate` — 24 pedagogical pattern templates with age-banded prompts
@@ -419,6 +419,10 @@ All nodes have `display_category` property:
 (:ScienceEnquiry)-[:ADDRESSES_MISCONCEPTION]->(:Misconception)
 (:EnglishUnit)-[:USES_GENRE]->(:Genre)                       // English text types
 (:EnglishUnit)-[:USES_SET_TEXT]->(:SetText)                   // KS4 set text links
+(:MathsUnit)-[:USES_MANIPULATIVE]->(:MathsManipulative)      // Maths concrete resources
+(:MathsUnit)-[:USES_REPRESENTATION]->(:MathsRepresentation)  // Maths pictorial representations
+(:MathsUnit)-[:USES_CONTEXT]->(:MathsContext)                // Real-world maths contexts
+(:MathsUnit)-[:USES_REASONING_PROMPT]->(:ReasoningPromptType) // Reasoning structures
 
 // Cross-curricular links between study nodes
 (ts)-[:CROSS_CURRICULAR {hook: str, strength: str}]->(ts2)  // e.g. HistoryStudy → ScienceEnquiry
@@ -759,7 +763,7 @@ class LayerImporter:
 - **581 nodes** across 21 typed labels: 326 study/unit nodes + 255 reference nodes
 - **24 VehicleTemplate nodes** with 77 TEMPLATE_FOR relationships (age-banded pedagogical prompts)
 - **3,383+ relationships** including DELIVERS_VIA (1,076), HAS_SUGGESTION (460), USES_TEMPLATE (382), FOREGROUNDS, USES_SOURCE, LOCATED_IN, CONTRASTS_WITH, USES_ENQUIRY_TYPE, SURFACES_MISCONCEPTION, IN_GENRE, STUDIES_TEXT, CROSS_CURRICULAR (~246), USED_FOR_CONCEPT (586), etc.
-- Subject coverage: History (43 studies, KS1-KS4), Geography (32 studies, KS1-KS4), Science (45 enquiries, KS1-KS4), English (54 units, KS1-KS4), Maths (reference nodes only), Art (39, KS1-KS4), Music (35, KS1-KS4), DT (33, KS1-KS4), Computing (22, KS1-KS4), generic/RS/Citizenship (23)
+- Subject coverage: History (43 studies, KS1-KS4), Geography (32 studies, KS1-KS4), Science (45 enquiries, KS1-KS4), English (54 units, KS1-KS4), Maths (62 units, KS1-KS4), Art (39, KS1-KS4), Music (35, KS1-KS4), DT (33, KS1-KS4), Computing (22, KS1-KS4), generic/RS/Citizenship (23)
 - Each subject uses its own property schema — no irrelevant attributes
 - 8-agent teacher panel designed the schema (Phase 0); data migrated from ContentVehicle + Topic nodes (Phase 2)
 - Old layers archived to `layers/_archived/content-vehicles/` and `layers/_archived/topics/`

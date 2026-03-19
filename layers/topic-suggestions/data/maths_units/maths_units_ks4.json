@@ -1,0 +1,397 @@
+{
+  "version": "1.0",
+  "subject": "Mathematics",
+  "key_stage": "KS4",
+  "authored_by": "maths-unit-generator",
+  "authored_date": "2026-03-19",
+  "note": "MathsUnit nodes for KS4. Auto-generated from extraction data and cluster definitions. Each unit corresponds to one curriculum domain.",
+  "units": [
+    {
+      "unit_id": "MU-KS4-001",
+      "name": "Number",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Understanding and fluently applying the number system including integers, fractions, decimals, surds, powers, roots, and standard form, together with the use of approximation and estimation in context.",
+      "pedagogical_rationale": "Number at KS4 builds directly on KS3 number work to develop a fully integrated understanding of the real number system, including the distinction between rational and irrational numbers and the manipulation of surds. Pupils extend their fluency with the four operations to include complex fractions, negative indices and standard form, and apply these in increasingly sophisticated real-world contexts.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_names": [
+        "Apply the four operations fluently to integers, fractions and decimals",
+        "Use powers, roots, surds, standard form and round to significant figures"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS4-C001",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS4-C002",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C004",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-KS4-D001"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-002",
+      "name": "Algebra",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Using algebraic notation and manipulation, solving equations and inequalities, working with sequences, functions and graphs, including quadratics, simultaneous equations, and proof.",
+      "pedagogical_rationale": "Algebra at KS4 extends the symbolic reasoning introduced in KS3 to encompass quadratic expressions and equations, simultaneous equations, algebraic fractions and formal proof. Pupils develop fluency with expanding and factorising, including completing the square and using the quadratic formula, and apply algebraic methods to model and solve problems in geometry, ratio and statistics contexts.",
+      "duration_lessons": 10,
+      "concept_count": 8,
+      "cluster_names": [
+        "Manipulate and factorise algebraic expressions including quadratics",
+        "Solve linear and quadratic equations and simultaneous equations",
+        "Work with sequences, linear functions and non-linear graphs",
+        "Understand function notation and apply graph transformations"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "structure_function",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS4-C005",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS4-C006",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C007",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C008",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C009",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C010",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C011",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C012",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS4-D002"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-003",
+      "name": "Ratio, Proportion and Rates of Change",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Applying ratio, proportion and multiplicative reasoning to solve problems involving percentages, compound measures, scale, direct and inverse proportion, and rates of change.",
+      "pedagogical_rationale": "Ratio, proportion and rates of change at KS4 formalises and extends the multiplicative reasoning developed at KS3, applying it in more complex and applied contexts. Pupils work with ratio to solve problems involving maps, recipes, mixing, division into parts, currency conversion and similar situations, and extend percentage work to include reverse percentages, compound interest and repeated proportional change.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_names": [
+        "Use ratio and scale to solve problems and calculate percentage change",
+        "Apply direct and inverse proportion and interpret compound measures"
+      ],
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS4-C013",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS4-C014",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C015",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C016",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D003"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-004",
+      "name": "Geometry and Measures",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Properties of 2D and 3D shapes, angle reasoning, transformations, constructions, mensuration, Pythagoras' theorem, trigonometry, vectors, and circle theorems.",
+      "pedagogical_rationale": "Geometry and measures at KS4 is the most expansive domain, requiring pupils to develop confident spatial reasoning supported by rigorous deductive argument. Building on KS3 geometry, pupils extend their work with 2D and 3D shapes to include arc lengths, sector areas, surface area and volume of prisms, cylinders, cones and spheres.",
+      "duration_lessons": 10,
+      "concept_count": 9,
+      "cluster_names": [
+        "Calculate area, perimeter and volume using formulae for 2-D and 3-D shapes",
+        "Apply Pythagoras' Theorem and trigonometry to 2-D and 3-D problems",
+        "Prove and apply circle theorems, congruence and similarity",
+        "Describe and apply geometric transformations and use vectors"
+      ],
+      "thinking_lenses": [
+        "structure_function",
+        "scale_proportion_quantity",
+        "evidence_argument"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS4-C017",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS4-C018",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C019",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C020",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C021",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C022",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C023",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C024",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C025",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-005",
+      "name": "Probability",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Calculating theoretical and experimental probabilities for single and combined events using Venn diagrams, tree diagrams, frequency trees and set notation.",
+      "pedagogical_rationale": "Probability at KS4 builds on KS3 foundations to develop a rigorous quantitative framework for describing chance and uncertainty. Pupils learn to calculate theoretical probabilities using systematic enumeration and to estimate experimental probabilities from relative frequency, understanding the convergence of experimental probability to the theoretical value as the number of trials increases.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_names": [
+        "Understand theoretical and experimental probability on the 0-1 scale",
+        "Calculate probabilities of combined and conditional events using diagrams"
+      ],
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "evidence_argument",
+        "systems_models"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS4-C026",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS4-C027",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C028",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C029",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-006",
+      "name": "Statistics",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Collecting, interpreting and comparing data using graphical representations, measures of average and spread, sampling methods, and correlation.",
+      "pedagogical_rationale": "Statistics at KS4 develops pupils' statistical literacy — the ability to collect, represent, interpret and evaluate data in order to answer questions, make decisions and identify bias. Pupils work with a wider range of graphical representations than at KS3, including cumulative frequency graphs, box plots and histograms with unequal class widths, and apply formal measures of spread including interquartile range.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_names": [
+        "Understand sampling methods and collect data appropriately",
+        "Construct and interpret statistical diagrams and calculate averages",
+        "Describe and interpret bivariate data using scatter graphs and correlation"
+      ],
+      "thinking_lenses": [
+        "evidence_argument",
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS4-C030",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS4-C031",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C032",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C033",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D006"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    }
+  ]
+}

@@ -1,0 +1,973 @@
+{
+  "version": "1.0",
+  "subject": "Mathematics",
+  "key_stage": "KS1",
+  "authored_by": "maths-unit-generator",
+  "authored_date": "2026-03-19",
+  "note": "MathsUnit nodes for KS1. Auto-generated from extraction data and cluster definitions. Each unit corresponds to one curriculum domain.",
+  "units": [
+    {
+      "unit_id": "MU-Y1-001",
+      "name": "Number and Place Value",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y1"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils develop confidence and fluency in counting, reading, writing and representing numbers to 100, understanding one more and one less, and using the language of comparison.",
+      "pedagogical_rationale": "The principal focus of mathematics teaching in key stage 1 is to ensure that pupils develop confidence and mental fluency with whole numbers, counting and place value. In Year 1, this domain establishes the foundational number sense pupils will build on throughout their schooling.",
+      "duration_lessons": 10,
+      "concept_count": 7,
+      "cluster_names": [
+        "Understand and use the counting sequence to 100",
+        "Read, write and represent numbers to 100",
+        "Compare, order and place numbers on a number line"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y1-C001",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y1-C002",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C004",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C006",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C007",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y1-D001"
+      ],
+      "uses_manipulative": [
+        "MM-BEADSTR",
+        "MM-COUNTERS",
+        "MM-CUBES",
+        "MM-COUNTINGSTK",
+        "MM-NUMCARDS",
+        "MM-NUMICON",
+        "MM-TENFRAME",
+        "MM-2COLOUR",
+        "MM-CUISENAIRE",
+        "MM-DICE"
+      ],
+      "uses_representation": [
+        "MR-NUMTRACK",
+        "MR-HUNDSQ",
+        "MR-NUMLINE",
+        "MR-TENFRAMEDIAG",
+        "MR-BARMOD"
+      ],
+      "uses_context": [
+        "MC-NATURE",
+        "MC-SPORT"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-WCN",
+        "RPT-OOO",
+        "RPT-TF",
+        "RPT-EXPLAIN"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y1-002",
+      "name": "Addition and Subtraction",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y1"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils learn to read, write and interpret addition and subtraction statements, use number bonds within 20, and solve simple one-step problems using concrete objects and pictorial representations.",
+      "pedagogical_rationale": "In Year 1, addition and subtraction are introduced as related operations grounded in practical experience and the manipulation of concrete objects. Pupils memorise and reason with number bonds to 10 and 20 in multiple forms — for example, 9 + 7 = 16; 16 – 7 = 9; 7 = 16 – 9 — realising the effect of adding or subtracting zero and understanding that addition and subtraction are inverse operations.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_names": [
+        "Understand addition and subtraction as operations",
+        "Know number bonds and solve missing number problems within 20"
+      ],
+      "thinking_lenses": [
+        "cause_and_effect",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y1-C008",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y1-C009",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C010",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C011",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y1-D002"
+      ],
+      "uses_manipulative": [
+        "MM-2COLOUR",
+        "MM-NUMICON"
+      ],
+      "uses_representation": [
+        "MR-NUMTRACK",
+        "MR-TENFRAMEDIAG",
+        "MR-PARTWHOL",
+        "MR-BARMOD"
+      ],
+      "uses_context": [
+        "MC-PUZZLE",
+        "MC-SHOP",
+        "MC-SPORT"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-STM",
+        "RPT-HMW",
+        "RPT-MISSING",
+        "RPT-TF"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y1-003",
+      "name": "Multiplication and Division",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y1"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils begin to understand multiplication and division through grouping, sharing and arrays, connecting these to counting in twos, fives and tens.",
+      "pedagogical_rationale": "In Year 1, multiplication and division are introduced informally through grouping and sharing small quantities, with the full support of the teacher and through the use of concrete objects, pictorial representations and arrays. Pupils begin to understand doubling numbers and quantities, and finding simple fractions of objects, numbers and quantities, which naturally connects to multiplicative thinking.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_names": [
+        "Explore grouping, sharing, doubling and halving"
+      ],
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y1-C012",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y1-C013",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y1-D003"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-ARRAY"
+      ],
+      "uses_context": [
+        "MC-SHARE"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-HMW",
+        "RPT-STM"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y1-004",
+      "name": "Fractions",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y1"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils recognise, find and name halves and quarters as equal parts of objects, shapes and quantities.",
+      "pedagogical_rationale": "In Year 1, fractions are introduced through the practical concept of equal sharing and fair division, rather than as abstract notation. Pupils are taught half and quarter as 'fractions of' discrete and continuous quantities by solving problems using shapes, objects and quantities — for example, recognising and finding half a length, a quantity, a set of objects or a shape.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_names": [
+        "Recognise and find halves and quarters of shapes and quantities"
+      ],
+      "thinking_lenses": [
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y1-C014",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y1-C015",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y1-D004"
+      ],
+      "uses_manipulative": [
+        "MM-COINS"
+      ],
+      "uses_representation": [
+        "MR-FRACSTRIP",
+        "MR-FRACCIRCLE"
+      ],
+      "uses_context": [
+        "MC-SHARE"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y1-005",
+      "name": "Measurement",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y1"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils compare, describe and solve practical problems involving length, mass, capacity, time and money, and begin to record measurements using non-standard and then standard units.",
+      "pedagogical_rationale": "Measurement in Year 1 is rooted in practical, real-world experience, with pupils moving from using and comparing different types of quantities using non-standard units — including discrete and continuous measurement — to using manageable common standard units. Pupils compare and describe lengths and heights, mass/weight, capacity and volume, and time using appropriate comparative language (long/short, heavier than, full/empty, quicker/slower), and they begin to record these measurements using standard tools such as rulers, weighing scales and containers.",
+      "duration_lessons": 8,
+      "concept_count": 5,
+      "cluster_names": [
+        "Compare and measure length, mass and capacity",
+        "Sequence events and tell the time to the hour and half past",
+        "Recognise and know the value of coins and notes"
+      ],
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "structure_function",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y1-C016",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y1-C017",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C018",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C019",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y1-C020",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y1-D005"
+      ],
+      "uses_manipulative": [
+        "MM-CLOCK",
+        "MM-RULER",
+        "MM-SCALES",
+        "MM-MEASJUG",
+        "MM-CUBES",
+        "MM-GEOBOARD",
+        "MM-PATBLOCKS"
+      ],
+      "uses_representation": [],
+      "uses_context": [
+        "MC-MEASURE",
+        "MC-NATURE",
+        "MC-TIME",
+        "MC-SHOP"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y1-006",
+      "name": "Geometry: Properties of Shapes",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y1"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils recognise and name common 2-D and 3-D shapes, handling them in different orientations and sizes.",
+      "pedagogical_rationale": "In Year 1, pupils develop their geometric understanding by handling common 2-D and 3-D shapes, naming them fluently and connecting them to related everyday objects. The statutory requirements specify that pupils should recognise and name 2-D shapes including rectangles (including squares), circles and triangles, and 3-D shapes including cuboids (including cubes), pyramids and spheres.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_names": [
+        "Recognise and name common 2-D and 3-D shapes"
+      ],
+      "thinking_lenses": [
+        "structure_function"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y1-C021",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y1-C022",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y1-D006"
+      ],
+      "uses_manipulative": [
+        "MM-3DSHAPES",
+        "MM-SORTHOOPS"
+      ],
+      "uses_representation": [
+        "MR-DOTGRID"
+      ],
+      "uses_context": [
+        "MC-PATTERN"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-OOO",
+        "RPT-HMW",
+        "RPT-SD"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y1-007",
+      "name": "Geometry: Position and Direction",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y1"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils describe position, direction and movement including whole, half, quarter and three-quarter turns.",
+      "pedagogical_rationale": "In Year 1, position and direction are developed through physical experience and the language of spatial reasoning. Pupils learn to use positional language including left and right, top, middle and bottom, on top of, in front of, above, between, around, near, close and far, up and down, forwards and backwards, inside and outside.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_names": [
+        "Describe position and movement using spatial and directional language"
+      ],
+      "thinking_lenses": [
+        "structure_function"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y1-C023",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y1-C024",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y1-D007"
+      ],
+      "uses_manipulative": [
+        "MM-PATBLOCKS"
+      ],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y2-008",
+      "name": "Number and Place Value",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y2"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils develop secure understanding of place value in two-digit numbers, count in steps of 2, 3 and 5, compare and order numbers to 100 using symbols, and read and write numbers in numerals and words.",
+      "pedagogical_rationale": "By the end of year 2, pupils should know the number bonds to 20 and be precise in using and understanding place value, and an emphasis on practice at this early stage will aid fluency. In Year 2, the number and place value domain consolidates and extends work from Year 1, with pupils now working confidently with numbers up to 100 in a wide range of representations and contexts.",
+      "duration_lessons": 8,
+      "concept_count": 5,
+      "cluster_names": [
+        "Extend the counting sequence and recognise odd and even numbers",
+        "Understand place value in two-digit numbers",
+        "Order and arrange numbers and objects in patterns and sequences"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y2-C001",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y2-C002",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y2-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y2-C011",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y2-C021",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y2-D001"
+      ],
+      "uses_manipulative": [
+        "MM-CUBES",
+        "MM-DIENES",
+        "MM-ARROWCARDS",
+        "MM-PVMAT",
+        "MM-COUNTINGSTK",
+        "MM-NUMCARDS"
+      ],
+      "uses_representation": [
+        "MR-HUNDSQ",
+        "MR-PVCHART",
+        "MR-NUMLINE",
+        "MR-VENN",
+        "MR-CARROLL"
+      ],
+      "uses_context": [
+        "MC-PATTERN"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-WCN",
+        "RPT-STM",
+        "RPT-OOO",
+        "RPT-SD",
+        "RPT-EXPLAIN",
+        "RPT-WYR",
+        "RPT-ASN"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y2-009",
+      "name": "Addition and Subtraction",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y2"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils recall and use addition and subtraction facts to 20 fluently, derive related facts up to 100, add and subtract two-digit numbers using multiple methods, and understand commutativity and the inverse relationship.",
+      "pedagogical_rationale": "In Year 2, addition and subtraction develop substantially in scope and sophistication from Year 1. Pupils extend their understanding of the language of addition and subtraction to include sum and difference, and practise addition and subtraction to 20 to become increasingly fluent in deriving related facts — for example, using 3 + 7 = 10; 10 – 7 = 3 to calculate 30 + 70 = 100; 100 – 70 = 30.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_names": [
+        "Recall and use addition and subtraction facts to 20 and 100",
+        "Understand properties and relationships of addition and subtraction"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y2-C004",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y2-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y2-C006",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y2-C007",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y2-D002"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-PARTWHOL",
+        "MR-BARMOD",
+        "MR-FUNCMACH"
+      ],
+      "uses_context": [
+        "MC-SHOP",
+        "MC-PUZZLE"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-WHATIF",
+        "RPT-MISSING",
+        "RPT-STM",
+        "RPT-ASN",
+        "RPT-TF"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y2-010",
+      "name": "Multiplication and Division",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y2"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils recall and use multiplication and division facts for the 2, 5 and 10 times tables, write formal multiplication and division statements, and understand commutativity of multiplication.",
+      "pedagogical_rationale": "Year 2 marks the formal introduction of multiplication tables, with pupils required to recall and use facts for the 2, 5 and 10 multiplication tables. Pupils are introduced to the multiplication tables and practise to become fluent, connecting the 2, 5 and 10 tables to each other — particularly the 10 multiplication table to place value, and the 5 multiplication table to the divisions on the clock face.",
+      "duration_lessons": 5,
+      "concept_count": 3,
+      "cluster_names": [
+        "Recall the 2, 5 and 10 times tables and write multiplication and division statements",
+        "Understand commutativity of multiplication and non-commutativity of division"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y2-C008",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y2-C009",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y2-C010",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y2-D003"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-ARRAY",
+        "MR-MULTGRID"
+      ],
+      "uses_context": [
+        "MC-SHARE"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-WYR",
+        "RPT-ASN",
+        "RPT-TF"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y2-011",
+      "name": "Fractions",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y2"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils recognise, find, name and write fractions 1/3, 1/4, 2/4 and 3/4 of lengths, shapes, sets and quantities, write simple fractions, and recognise the equivalence of 2/4 and 1/2.",
+      "pedagogical_rationale": "In Year 2, fractions extend beyond the halves and quarters of Year 1 to include thirds and three-quarters, and pupils begin to write fraction notation. Pupils use fractions as 'fractions of' discrete and continuous quantities by solving problems using shapes, objects and quantities, connecting unit fractions to equal sharing and grouping, to numbers when they can be calculated, and to measures, finding fractions of lengths, quantities, sets of objects or shapes.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_names": [
+        "Find and compare fractions of shapes and sets, including equivalent fractions"
+      ],
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y2-C012",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y2-C013",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y2-D004"
+      ],
+      "uses_manipulative": [
+        "MM-COUNTERS",
+        "MM-CUISENAIRE",
+        "MM-FRACTILES",
+        "MM-FRACWALL"
+      ],
+      "uses_representation": [
+        "MR-FRACWALL",
+        "MR-FRACSTRIP",
+        "MR-FRACCIRCLE"
+      ],
+      "uses_context": [
+        "MC-SHARE"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-HMW",
+        "RPT-STM",
+        "RPT-EXPLAIN"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y2-012",
+      "name": "Measurement",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y2"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils choose and use appropriate standard units to estimate and measure length, mass, temperature and capacity; use symbols for money; solve practical money problems; and tell the time to five minutes.",
+      "pedagogical_rationale": "Measurement in Year 2 moves decisively from informal and non-standard approaches to the accurate use of standard units. Pupils use standard units of measurement with increasing accuracy, using their knowledge of the number system, and use appropriate language, recording using standard abbreviations (m, cm, kg, g, °C, l, ml).",
+      "duration_lessons": 5,
+      "concept_count": 3,
+      "cluster_names": [
+        "Measure accurately using standard units of length, mass, temperature and capacity",
+        "Use £ and p notation to solve money problems",
+        "Tell and write the time to five minutes and use the language of time"
+      ],
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "cause_and_effect",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y2-C014",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y2-C015",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y2-C016",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y2-D005"
+      ],
+      "uses_manipulative": [
+        "MM-RULER",
+        "MM-SCALES",
+        "MM-MEASJUG",
+        "MM-THERMOM",
+        "MM-COINS"
+      ],
+      "uses_representation": [],
+      "uses_context": [
+        "MC-COOK",
+        "MC-MEASURE",
+        "MC-NATURE",
+        "MC-SHOP",
+        "MC-TIME"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-WYR"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y2-013",
+      "name": "Geometry: Properties of Shapes",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y2"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils identify and describe properties of 2-D and 3-D shapes including sides, edges, vertices, faces and line symmetry, and compare and sort shapes and everyday objects.",
+      "pedagogical_rationale": "In Year 2, the study of shapes moves from recognition and naming (Year 1) to analysis of properties. Pupils handle and name a wide variety of common 2-D and 3-D shapes including quadrilaterals and polygons, and cuboids, prisms and cones, and identify the properties of each shape — for example, number of sides, number of faces.",
+      "duration_lessons": 5,
+      "concept_count": 3,
+      "cluster_names": [
+        "Identify and describe properties of 2-D and 3-D shapes",
+        "Explore the relationship between 2-D shapes and the faces of 3-D shapes"
+      ],
+      "thinking_lenses": [
+        "structure_function"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y2-C017",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y2-C018",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y2-C019",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y2-D006"
+      ],
+      "uses_manipulative": [
+        "MM-CLOCK",
+        "MM-3DSHAPES",
+        "MM-PATBLOCKS",
+        "MM-SORTHOOPS"
+      ],
+      "uses_representation": [
+        "MR-VENN",
+        "MR-CARROLL",
+        "MR-DOTGRID"
+      ],
+      "uses_context": [
+        "MC-PATTERN"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-OOO",
+        "RPT-TF",
+        "RPT-HMW",
+        "RPT-SD"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y2-014",
+      "name": "Geometry: Position and Direction",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y2"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils order and arrange combinations of mathematical objects in patterns and sequences, and use mathematical vocabulary to describe position, direction and movement including rotation in terms of right angles.",
+      "pedagogical_rationale": "In Year 2, position and direction develops from the informal turning and positional language of Year 1 to a more precise mathematical vocabulary involving right angles. Pupils should work with patterns of shapes, including those in different orientations, and use the concept and language of angles to describe 'turn' by applying rotations in practical contexts — for example, pupils themselves moving in turns, giving instructions to other pupils to do so, and programming robots using instructions given in right angles.",
+      "duration_lessons": 3,
+      "concept_count": 1,
+      "cluster_names": [
+        "Describe and make movement using right angles and half, quarter and three-quarter turns"
+      ],
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "structure_function"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y2-C020",
+          "primary": true
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y2-D007"
+      ],
+      "uses_manipulative": [
+        "MM-GEOBOARD",
+        "MM-MIRROR"
+      ],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y2-015",
+      "name": "Statistics",
+      "subject": "Mathematics",
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y2"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Pupils interpret and construct simple pictograms, tally charts, block diagrams and tables, and ask and answer questions about categorical data.",
+      "pedagogical_rationale": "Statistics is introduced for the first time as a formal domain in Year 2, providing pupils with tools to collect, organise, represent and interpret data. Pupils record, interpret, collate, organise and compare information — for example, using many-to-one correspondence in pictograms with simple ratios 2, 5, 10 — developing both the practical skill of data handling and the analytical skill of interpreting what the data shows.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_names": [
+        "Interpret and construct pictograms, tally charts, block diagrams and tables",
+        "Ask and answer questions about data using addition and subtraction"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "evidence_argument"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y2-C022",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y2-C023",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y2-D008"
+      ],
+      "uses_manipulative": [
+        "MM-SORTHOOPS"
+      ],
+      "uses_representation": [
+        "MR-PICTOGRAM",
+        "MR-BARCHART",
+        "MR-TALLY",
+        "MR-TABLE"
+      ],
+      "uses_context": [
+        "MC-SPORT",
+        "MC-NATURE",
+        "MC-DATA"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    }
+  ]
+}

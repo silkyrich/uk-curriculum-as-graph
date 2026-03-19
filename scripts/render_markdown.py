@@ -720,6 +720,7 @@ def render_markdown(ctx: StudyContext) -> str:
     id_field_map = {
         'HistoryStudy': 'study_id', 'GeoStudy': 'study_id',
         'ScienceEnquiry': 'enquiry_id', 'EnglishUnit': 'unit_id',
+        'MathsUnit': 'unit_id',
     }
     id_field = id_field_map.get(ctx.label, 'suggestion_id')
 

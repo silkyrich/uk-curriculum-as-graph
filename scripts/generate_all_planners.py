@@ -80,6 +80,7 @@ def resolve_study_id(study_id: str) -> tuple[str, str]:
         'TS-MU-': 'MusicTopicSuggestion',
         'TS-DT-': 'DTTopicSuggestion',
         'TS-CO-': 'ComputingTopicSuggestion',
+        'MU-':    'MathsUnit',
         'TS-RS-': 'TopicSuggestion',
         'TS-CI-': 'TopicSuggestion',
     }
@@ -113,6 +114,8 @@ def subject_matches(subject: str, filter_subject: str) -> bool:
         'sci': 'science',
         'eng': 'english',
         'mus': 'music',
+        'maths': 'mathematics',
+        'math': 'mathematics',
     }
     return abbrevs.get(fs, '') == s
 

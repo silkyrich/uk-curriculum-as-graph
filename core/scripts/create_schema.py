@@ -71,6 +71,7 @@ def create_schema(driver):
         "CREATE CONSTRAINT english_unit_id_unique IF NOT EXISTS FOR (eu:EnglishUnit) REQUIRE eu.unit_id IS UNIQUE",
         "CREATE CONSTRAINT genre_id_unique IF NOT EXISTS FOR (g:Genre) REQUIRE g.genre_id IS UNIQUE",
         "CREATE CONSTRAINT set_text_id_unique IF NOT EXISTS FOR (st:SetText) REQUIRE st.set_text_id IS UNIQUE",
+        "CREATE CONSTRAINT maths_unit_id_unique IF NOT EXISTS FOR (mu:MathsUnit) REQUIRE mu.unit_id IS UNIQUE",
         "CREATE CONSTRAINT maths_manipulative_id_unique IF NOT EXISTS FOR (mm:MathsManipulative) REQUIRE mm.manipulative_id IS UNIQUE",
         "CREATE CONSTRAINT maths_representation_id_unique IF NOT EXISTS FOR (mr:MathsRepresentation) REQUIRE mr.representation_id IS UNIQUE",
         "CREATE CONSTRAINT maths_context_id_unique IF NOT EXISTS FOR (mc:MathsContext) REQUIRE mc.context_id IS UNIQUE",
@@ -141,6 +142,7 @@ def create_schema(driver):
         "CREATE INDEX english_unit_ks_idx IF NOT EXISTS FOR (eu:EnglishUnit) ON (eu.key_stage)",
         "CREATE INDEX genre_family_idx IF NOT EXISTS FOR (g:Genre) ON (g.genre_family)",
         "CREATE INDEX set_text_board_idx IF NOT EXISTS FOR (st:SetText) ON (st.exam_board)",
+        "CREATE INDEX maths_unit_ks_idx IF NOT EXISTS FOR (mu:MathsUnit) ON (mu.key_stage)",
         "CREATE INDEX maths_manipulative_type_idx IF NOT EXISTS FOR (mm:MathsManipulative) ON (mm.manipulative_type)",
         # Delivery Readiness indexes (v4.3)
         "CREATE INDEX delivery_mode_order_idx IF NOT EXISTS FOR (dm:DeliveryMode) ON (dm.display_order)",

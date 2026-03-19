@@ -60,6 +60,7 @@ STUDY_NODES = [
     ("MusicTopicSuggestion", "music_studies", "suggestion_id", None),
     ("DTTopicSuggestion", "dt_studies", "suggestion_id", None),
     ("ComputingTopicSuggestion", "computing_studies", "suggestion_id", None),
+    ("MathsUnit", "maths_units", "unit_id", "units"),
     ("TopicSuggestion", "generic_studies", "suggestion_id", None),
 ]
 
@@ -72,6 +73,8 @@ RELATIONSHIP_FIELDS = {
     "grammar_sequence_after", "text_complexity_after",
     "source_concepts", "develops_skill", "prerequisite_misconception_ids",
     "cross_curricular_hooks", "cross_curricular_links",
+    # MathsUnit reference node links (stored as relationships, not properties)
+    "uses_manipulative", "uses_representation", "uses_context", "uses_reasoning_prompt",
     # Display properties are set centrally by apply_formatting.py — skip during import
     "display_category", "display_color", "display_icon", "display_size",
     # Wrapper metadata fields (not node properties)
@@ -108,6 +111,7 @@ class SubjectOntologyImporter:
             "genre_affinities": 0,
             "concept_link": 0,
             "develops_skill": 0,
+            "maths_unit_ref": 0,
             "cross_curricular": 0,
             "errors": [],
         }
@@ -560,6 +564,47 @@ class SubjectOntologyImporter:
                 """, ptid=ptid, cid=cid)
                 self.stats["concept_link"] += 1
 
+    # ─── MathsUnit relationships ────────────────────────────────────────────
+
+    def _create_maths_unit_rels(self, session, maths_units):
+        """Create MathsUnit -> reference node relationships."""
+        for unit in maths_units:
+            uid = unit.get("unit_id")
+            if not uid:
+                continue
+
+            for mid in (unit.get("uses_manipulative") or []):
+                session.run("""
+                    MATCH (mu:MathsUnit {unit_id: $uid})
+                    MATCH (mm:MathsManipulative {manipulative_id: $mid})
+                    MERGE (mu)-[:USES_MANIPULATIVE]->(mm)
+                """, uid=uid, mid=mid)
+                self.stats["maths_unit_ref"] += 1
+
+            for rid in (unit.get("uses_representation") or []):
+                session.run("""
+                    MATCH (mu:MathsUnit {unit_id: $uid})
+                    MATCH (mr:MathsRepresentation {representation_id: $rid})
+                    MERGE (mu)-[:USES_REPRESENTATION]->(mr)
+                """, uid=uid, rid=rid)
+                self.stats["maths_unit_ref"] += 1
+
+            for cxid in (unit.get("uses_context") or []):
+                session.run("""
+                    MATCH (mu:MathsUnit {unit_id: $uid})
+                    MATCH (mc:MathsContext {context_id: $cxid})
+                    MERGE (mu)-[:USES_CONTEXT]->(mc)
+                """, uid=uid, cxid=cxid)
+                self.stats["maths_unit_ref"] += 1
+
+            for ptid in (unit.get("uses_reasoning_prompt") or []):
+                session.run("""
+                    MATCH (mu:MathsUnit {unit_id: $uid})
+                    MATCH (rpt:ReasoningPromptType {prompt_type_id: $ptid})
+                    MERGE (mu)-[:USES_REASONING_PROMPT]->(rpt)
+                """, uid=uid, ptid=ptid)
+                self.stats["maths_unit_ref"] += 1
+
     # ─── Cross-curricular relationships ─────────────────────────────────────
 
     def _create_cross_curricular_rels(self, session, study_data):
@@ -697,6 +742,12 @@ class SubjectOntologyImporter:
                 ref_data.get("MathsRepresentation", []),
                 ref_data.get("MathsContext", []),
                 ref_data.get("ReasoningPromptType", []),
+            )
+
+            print("\n  MathsUnit-specific relationships:")
+            self._create_maths_unit_rels(
+                session,
+                study_data.get("MathsUnit", []),
             )
 
             # Cross-curricular links (study-to-study across subjects)

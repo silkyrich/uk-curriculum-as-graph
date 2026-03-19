@@ -1,0 +1,787 @@
+{
+  "version": "1.0",
+  "subject": "Mathematics",
+  "key_stage": "KS3",
+  "authored_by": "maths-unit-generator",
+  "authored_date": "2026-03-19",
+  "note": "MathsUnit nodes for KS3. Auto-generated from extraction data and cluster definitions. Each unit corresponds to one curriculum domain.",
+  "units": [
+    {
+      "unit_id": "MU-KS3-001",
+      "name": "Working Mathematically - Fluency",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Cross-cutting domain focused on developing fluency in fundamentals through varied practice, conceptual understanding, and rapid accurate recall and application",
+      "pedagogical_rationale": "Working mathematically through fluency at KS3 requires pupils to consolidate their numerical and mathematical capability from primary school and extend their understanding of the number system to include decimals, fractions, powers and roots. Fluency encompasses knowing and using facts efficiently, applying procedures with accuracy and selecting appropriate methods automatically.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_names": [
+        "Develop and sustain mathematical fluency across number and calculation"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C023",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C088",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-09"
+      ],
+      "domain_ids": [
+        "MA-KS3-D001"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-002",
+      "name": "Working Mathematically - Reasoning",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Cross-cutting domain focused on mathematical reasoning through enquiry, conjecturing relationships, and developing arguments, justifications and proofs",
+      "pedagogical_rationale": "Mathematical reasoning at KS3 moves beyond recall and procedure to require pupils to construct and present mathematical arguments with rigour. Pupils learn to conjecture, test cases, make generalisations and prove results — progressing from informal reasoning ('it always seems to work') to more formal justification ('this must be true because...').",
+      "duration_lessons": 5,
+      "concept_count": 3,
+      "cluster_names": [
+        "Construct and communicate formal mathematical arguments and proofs"
+      ],
+      "thinking_lenses": [
+        "evidence_argument",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C075",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C089",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C095",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-09"
+      ],
+      "domain_ids": [
+        "MA-KS3-D002"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-003",
+      "name": "Working Mathematically - Problem Solving",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Cross-cutting domain focused on applying mathematics to routine and non-routine problems with increasing sophistication",
+      "pedagogical_rationale": "Mathematical problem solving at KS3 requires pupils to apply and connect their mathematical knowledge in unfamiliar, multi-step contexts that do not have obvious or immediately visible solution paths. The statutory curriculum asks pupils to develop mathematical modelling skills — formulating real-world situations mathematically, working with them mathematically, and interpreting their results in context.",
+      "duration_lessons": 5,
+      "concept_count": 3,
+      "cluster_names": [
+        "Apply problem-solving strategies, mathematical modelling and multiple representations"
+      ],
+      "thinking_lenses": [
+        "systems_models",
+        "evidence_argument"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C090",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C091",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C092",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-09"
+      ],
+      "domain_ids": [
+        "MA-KS3-D003"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-004",
+      "name": "Number",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Understanding and using the number system including integers, decimals, fractions, percentages, powers, roots, and standard form",
+      "pedagogical_rationale": "Number at KS3 extends the primary number system to formal work with integers, fractions, decimals, percentages and the relationships between them. Pupils develop fluency with all four operations applied to negative numbers, fractions, mixed numbers and decimals, and are introduced to index notation and standard form for very large and very small quantities.",
+      "duration_lessons": 10,
+      "concept_count": 23,
+      "cluster_names": [
+        "Understand place value, negative numbers and order real numbers",
+        "Apply prime factorisation, HCF, LCM and index notation",
+        "Perform operations with fractions, negative numbers and use order of operations",
+        "Use powers, roots, standard form and understand surds",
+        "Work with percentages, fractions as operators and apply to real contexts",
+        "Round to significant figures and understand error intervals"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity",
+        "structure_function",
+        "cause_and_effect",
+        "evidence_argument"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C001",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C002",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C003",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C004",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C005",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C006",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C007",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C008",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C009",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C010",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C011",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C012",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C013",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C014",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C015",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C016",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C017",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C018",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C019",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C020",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C021",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C022",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C024",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-KS3-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-005",
+      "name": "Algebra",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Using algebraic notation, manipulating expressions, solving equations, working with graphs and understanding sequences",
+      "pedagogical_rationale": "Algebra at KS3 is the formal symbolic language through which generalisations about number are expressed, relationships are described and problems are solved. Pupils move from arithmetical thinking (specific number operations) to algebraic thinking (general rules), learning to use symbols to represent unknown quantities and to manipulate expressions confidently.",
+      "duration_lessons": 10,
+      "concept_count": 22,
+      "cluster_names": [
+        "Understand algebraic notation and vocabulary",
+        "Simplify, expand and factorise algebraic expressions",
+        "Substitute into expressions, form equations and change the subject of formulae",
+        "Understand and draw linear and quadratic graphs using y = mx + c",
+        "Solve simultaneous equations graphically and interpret non-linear graphs",
+        "Generate, describe and find the nth term of arithmetic and geometric sequences"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect",
+        "structure_function",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C025",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C026",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C027",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C028",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C029",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C030",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C031",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C032",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C033",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C034",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C035",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C036",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C037",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C038",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C039",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C040",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C041",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C042",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C043",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C044",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C045",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C046",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS3-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-006",
+      "name": "Ratio, Proportion and Rates of Change",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Understanding and applying ratio, proportion, percentage change, direct and inverse proportion, and compound units",
+      "pedagogical_rationale": "Ratio, proportion and rates of change at KS3 formalise the multiplicative reasoning developed informally in primary school into precise mathematical tools used across mathematics and other subjects. Pupils learn to express and use ratios, scale factors, fractions and percentages interchangeably, and to solve problems involving direct and inverse proportion.",
+      "duration_lessons": 10,
+      "concept_count": 13,
+      "cluster_names": [
+        "Understand ratio notation, divide in a ratio and link to fractions",
+        "Apply scale factors, percentage change and financial mathematics",
+        "Solve problems involving direct and inverse proportion and multiplicative reasoning",
+        "Convert between units and use compound units in problem-solving"
+      ],
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns",
+        "cause_and_effect",
+        "systems_models"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C047",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C048",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C049",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C050",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C051",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C052",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C053",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C054",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C055",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C056",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C057",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C093",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C094",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D006"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-007",
+      "name": "Geometry and Measures",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Properties of shapes, geometric constructions, transformations, angle relationships, Pythagoras' Theorem, trigonometry, and mensuration",
+      "pedagogical_rationale": "Geometry and measures at KS3 requires pupils to develop systematic spatial reasoning and the ability to construct and interpret geometric arguments. Building on KS2 shape work, pupils formally study the properties of 2D and 3D shapes, angle relationships, congruence and similarity, and the geometry of transformations — translation, rotation, reflection and enlargement.",
+      "duration_lessons": 10,
+      "concept_count": 19,
+      "cluster_names": [
+        "Derive and apply area and volume formulae for 2-D and 3-D shapes",
+        "Use geometric notation, drawing and construction tools accurately",
+        "Understand angle properties and apply to triangles, polygons and parallel lines",
+        "Prove and apply congruence and similarity in triangles",
+        "Apply Pythagoras' Theorem and trigonometric ratios to right-angled triangles",
+        "Identify, describe and perform geometric transformations"
+      ],
+      "thinking_lenses": [
+        "structure_function",
+        "scale_proportion_quantity",
+        "evidence_argument"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C058",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C059",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C060",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C061",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C062",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C063",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C064",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C065",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C066",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C067",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C068",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C069",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C070",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C071",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C072",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C073",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C074",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C076",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C077",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D007"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-008",
+      "name": "Probability",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Recording and analysing probability experiments, understanding probability scales, and calculating theoretical probabilities",
+      "pedagogical_rationale": "Probability at KS3 introduces pupils to the formal mathematical framework for describing and quantifying uncertainty and chance. Pupils learn to record, describe and analyse the frequency of outcomes of events, distinguishing between experimental probability (frequency estimates from data) and theoretical probability (calculated from equally likely outcomes).",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_names": [
+        "Understand and calculate theoretical and experimental probability",
+        "Enumerate outcomes systematically using tables, grids and Venn diagrams"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C078",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C079",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C080",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C081",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D008"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-009",
+      "name": "Statistics",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "description": "Collecting, representing, interpreting and comparing data using appropriate graphical representations and measures",
+      "pedagogical_rationale": "Statistics at KS3 develops pupils' ability to work with data — collecting, organising, representing, analysing and interpreting it to answer questions and make inferences. Pupils extend their primary experience of simple charts and averages to a full range of graphical representations including scatter graphs, histograms and cumulative frequency, and to formal measures of average (mean, median, mode) and spread (range, quartiles).",
+      "duration_lessons": 8,
+      "concept_count": 6,
+      "cluster_names": [
+        "Calculate and interpret measures of central tendency and spread",
+        "Represent and compare data distributions using appropriate charts",
+        "Describe relationships between two variables using scatter graphs"
+      ],
+      "thinking_lenses": [
+        "patterns",
+        "evidence_argument"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C082",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C083",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C084",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C085",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C086",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C087",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D009"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    }
+  ]
+}
