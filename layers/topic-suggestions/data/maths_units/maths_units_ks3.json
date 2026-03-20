@@ -3,12 +3,12 @@
   "subject": "Mathematics",
   "key_stage": "KS3",
   "authored_by": "maths-unit-generator",
-  "authored_date": "2026-03-19",
-  "note": "MathsUnit nodes for KS3. Auto-generated from extraction data and cluster definitions. Each unit corresponds to one curriculum domain.",
+  "authored_date": "2026-03-20",
+  "note": "MathsUnit nodes for KS3. Auto-generated from cluster definitions. Each unit corresponds to one ConceptCluster, following the many-to-one domain mapping pattern used by other subjects.",
   "units": [
     {
       "unit_id": "MU-KS3-001",
-      "name": "Working Mathematically - Fluency",
+      "name": "Develop and sustain mathematical fluency across number and calculation",
       "subject": "Mathematics",
       "key_stage": "KS3",
       "year_groups": [
@@ -18,24 +18,24 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Cross-cutting domain focused on developing fluency in fundamentals through varied practice, conceptual understanding, and rapid accurate recall and application",
-      "pedagogical_rationale": "Working mathematically through fluency at KS3 requires pupils to consolidate their numerical and mathematical capability from primary school and extend their understanding of the number system to include decimals, fractions, powers and roots. Fluency encompasses knowing and using facts efficiently, applying procedures with accuracy and selecting appropriate methods automatically.",
+      "unit_type": "practice",
+      "domain_name": "Working Mathematically - Fluency",
+      "description": "Covers: Mathematical fluency; Calculator use.",
+      "pedagogical_rationale": "Mathematical fluency (rapid recall and accurate application) and appropriate calculator use are complementary strands of the same domain: knowing when and how to compute efficiently.",
       "duration_lessons": 3,
       "concept_count": 2,
-      "cluster_names": [
-        "Develop and sustain mathematical fluency across number and calculation"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "patterns",
         "cause_and_effect"
       ],
       "delivers_via": [
         {
-          "concept_id": "MA-KS3-C023",
+          "concept_id": "MA-KS3-C088",
           "primary": true
         },
         {
-          "concept_id": "MA-KS3-C088",
+          "concept_id": "MA-KS3-C023",
           "primary": false
         }
       ],
@@ -57,7 +57,7 @@
     },
     {
       "unit_id": "MU-KS3-002",
-      "name": "Working Mathematically - Reasoning",
+      "name": "Construct and communicate formal mathematical arguments and proofs",
       "subject": "Mathematics",
       "key_stage": "KS3",
       "year_groups": [
@@ -67,28 +67,28 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Cross-cutting domain focused on mathematical reasoning through enquiry, conjecturing relationships, and developing arguments, justifications and proofs",
-      "pedagogical_rationale": "Mathematical reasoning at KS3 moves beyond recall and procedure to require pupils to construct and present mathematical arguments with rigour. Pupils learn to conjecture, test cases, make generalisations and prove results — progressing from informal reasoning ('it always seems to work') to more formal justification ('this must be true because...').",
-      "duration_lessons": 5,
+      "unit_type": "practice",
+      "domain_name": "Working Mathematically - Reasoning",
+      "description": "Covers: Mathematical reasoning; Formal mathematical argument; Geometric proof.",
+      "pedagogical_rationale": "Mathematical reasoning, formal argument and geometric proof are a coherent cluster. C095 co-teaches with C075 and C089. Geometric proof is an application of formal argument in a specific domain.",
+      "duration_lessons": 4,
       "concept_count": 3,
-      "cluster_names": [
-        "Construct and communicate formal mathematical arguments and proofs"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "evidence_argument",
         "patterns"
       ],
       "delivers_via": [
         {
-          "concept_id": "MA-KS3-C075",
+          "concept_id": "MA-KS3-C089",
           "primary": true
         },
         {
-          "concept_id": "MA-KS3-C089",
+          "concept_id": "MA-KS3-C095",
           "primary": false
         },
         {
-          "concept_id": "MA-KS3-C095",
+          "concept_id": "MA-KS3-C075",
           "primary": false
         }
       ],
@@ -110,7 +110,7 @@
     },
     {
       "unit_id": "MU-KS3-003",
-      "name": "Working Mathematically - Problem Solving",
+      "name": "Apply problem-solving strategies, mathematical modelling and multiple representations",
       "subject": "Mathematics",
       "key_stage": "KS3",
       "year_groups": [
@@ -120,13 +120,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Cross-cutting domain focused on applying mathematics to routine and non-routine problems with increasing sophistication",
-      "pedagogical_rationale": "Mathematical problem solving at KS3 requires pupils to apply and connect their mathematical knowledge in unfamiliar, multi-step contexts that do not have obvious or immediately visible solution paths. The statutory curriculum asks pupils to develop mathematical modelling skills — formulating real-world situations mathematically, working with them mathematically, and interpreting their results in context.",
-      "duration_lessons": 5,
+      "unit_type": "practice",
+      "domain_name": "Working Mathematically - Problem Solving",
+      "description": "Covers: Problem-solving strategies; Multiple representations; Mathematical modeling.",
+      "pedagogical_rationale": "Problem-solving strategies, moving between representations and mathematical modelling are the three interlocking process skills in this domain. All three are process concepts that pervade KS3.",
+      "duration_lessons": 4,
       "concept_count": 3,
-      "cluster_names": [
-        "Apply problem-solving strategies, mathematical modelling and multiple representations"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "systems_models",
         "evidence_argument"
@@ -163,7 +163,7 @@
     },
     {
       "unit_id": "MU-KS3-004",
-      "name": "Number",
+      "name": "Understand place value, negative numbers and order real numbers",
       "subject": "Mathematics",
       "key_stage": "KS3",
       "year_groups": [
@@ -173,24 +173,16 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Understanding and using the number system including integers, decimals, fractions, percentages, powers, roots, and standard form",
-      "pedagogical_rationale": "Number at KS3 extends the primary number system to formal work with integers, fractions, decimals, percentages and the relationships between them. Pupils develop fluency with all four operations applied to negative numbers, fractions, mixed numbers and decimals, and are introduced to index notation and standard form for very large and very small quantities.",
-      "duration_lessons": 10,
-      "concept_count": 23,
-      "cluster_names": [
-        "Understand place value, negative numbers and order real numbers",
-        "Apply prime factorisation, HCF, LCM and index notation",
-        "Perform operations with fractions, negative numbers and use order of operations",
-        "Use powers, roots, standard form and understand surds",
-        "Work with percentages, fractions as operators and apply to real contexts",
-        "Round to significant figures and understand error intervals"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number",
+      "description": "Covers: Place value with decimals; Negative integers; Ordering real numbers; Inequality symbols.",
+      "pedagogical_rationale": "Place value with decimals, negative integers, ordering real numbers and inequality symbols all co-teach together (C001, C003, C004 mutually link; C003 co-teaches with C002 and C004). These form the foundational number system cluster.",
+      "duration_lessons": 8,
+      "concept_count": 4,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
-        "scale_proportion_quantity",
-        "structure_function",
-        "cause_and_effect",
-        "evidence_argument"
+        "scale_proportion_quantity"
       ],
       "delivers_via": [
         {
@@ -208,10 +200,50 @@
         {
           "concept_id": "MA-KS3-C004",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-KS3-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-005",
+      "name": "Apply prime factorisation, HCF, LCM and index notation",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number",
+      "description": "Covers: Prime numbers; Factors and multiples; HCF and LCM; Prime factorisation; Index notation.",
+      "pedagogical_rationale": "Prime numbers, factors/multiples, HCF/LCM, prime factorisation and index notation are tightly linked by co_teach_hints (C006, C007, C008 mutually co-teach; C008 and C014 co-teach). This is the number theory cluster.",
+      "duration_lessons": 6,
+      "concept_count": 5,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "structure_function"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C005",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C006",
@@ -226,8 +258,52 @@
           "primary": false
         },
         {
-          "concept_id": "MA-KS3-C009",
+          "concept_id": "MA-KS3-C014",
           "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-KS3-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-006",
+      "name": "Perform operations with fractions, negative numbers and use order of operations",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number",
+      "description": "Covers: Operations with fractions; Operations with negative numbers; Order of operations (BIDMAS); Inverse operations.",
+      "pedagogical_rationale": "Operations with fractions, negative number arithmetic, BIDMAS and inverse operations all co-teach together (C009 lists C010, C012; C012 lists C009, C010, C011). These constitute the calculation fluency cluster.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C009",
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C010",
@@ -240,14 +316,51 @@
         {
           "concept_id": "MA-KS3-C012",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-007",
+      "name": "Use powers, roots, standard form and understand surds",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number",
+      "description": "Covers: Powers and roots; Exact vs approximate roots; Standard form.",
+      "pedagogical_rationale": "Powers and roots, exact vs approximate roots and standard form are linked (C013 lists C014, C019; C016 links to C014). These represent the advanced number representation cluster.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C013",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C014",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C015",
@@ -256,10 +369,50 @@
         {
           "concept_id": "MA-KS3-C016",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-KS3-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-008",
+      "name": "Work with percentages, fractions as operators and apply to real contexts",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number",
+      "description": "Covers: Decimal-fraction equivalence; Percentage concept; Percentage calculations; Fractions and percentages as operators.",
+      "pedagogical_rationale": "Decimal-fraction equivalence, the percentage concept, percentage calculations and fractions/percentages as operators are all linked (C020 lists C018, C019, C009, C012). This is the percentage and proportional representation cluster.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C017",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C018",
@@ -272,10 +425,50 @@
         {
           "concept_id": "MA-KS3-C020",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-KS3-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-009",
+      "name": "Round to significant figures and understand error intervals",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number",
+      "description": "Covers: Rounding and approximation; Error intervals; Infinite number sets.",
+      "pedagogical_rationale": "Rounding/approximation, error intervals and the nature of infinite number sets are grouped as the estimation and number sets cluster. C022 uses inequality notation (linking to C004); C024 connects to the nature of rational number sets.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "evidence_argument"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C021",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C022",
@@ -302,8 +495,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS3-005",
-      "name": "Algebra",
+      "unit_id": "MU-KS3-010",
+      "name": "Understand algebraic notation and vocabulary",
       "subject": "Mathematics",
       "key_stage": "KS3",
       "year_groups": [
@@ -313,23 +506,16 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Using algebraic notation, manipulating expressions, solving equations, working with graphs and understanding sequences",
-      "pedagogical_rationale": "Algebra at KS3 is the formal symbolic language through which generalisations about number are expressed, relationships are described and problems are solved. Pupils move from arithmetical thinking (specific number operations) to algebraic thinking (general rules), learning to use symbols to represent unknown quantities and to manipulate expressions confidently.",
-      "duration_lessons": 10,
-      "concept_count": 22,
-      "cluster_names": [
-        "Understand algebraic notation and vocabulary",
-        "Simplify, expand and factorise algebraic expressions",
-        "Substitute into expressions, form equations and change the subject of formulae",
-        "Understand and draw linear and quadratic graphs using y = mx + c",
-        "Solve simultaneous equations graphically and interpret non-linear graphs",
-        "Generate, describe and find the nth term of arithmetic and geometric sequences"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Algebra",
+      "description": "Covers: Algebraic notation; Algebraic vocabulary.",
+      "pedagogical_rationale": "Algebraic notation conventions and algebraic vocabulary (expression, equation, term, coefficient, etc.) are the entry-point knowledge cluster for the whole Algebra domain.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
-        "cause_and_effect",
-        "structure_function",
-        "scale_proportion_quantity"
+        "cause_and_effect"
       ],
       "delivers_via": [
         {
@@ -337,16 +523,53 @@
           "primary": true
         },
         {
-          "concept_id": "MA-KS3-C026",
-          "primary": false
-        },
-        {
           "concept_id": "MA-KS3-C027",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS3-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-011",
+      "name": "Simplify, expand and factorise algebraic expressions",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Algebra",
+      "description": "Covers: Collecting like terms; Expanding brackets; Factorising; Expanding binomial products.",
+      "pedagogical_rationale": "Collecting like terms, expanding single brackets, factorising and expanding binomial products form a coherent manipulation cluster. C029 co-teaches with C028, C030, C031; C031 co-teaches with C029.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "structure_function"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C028",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C029",
@@ -359,6 +582,51 @@
         {
           "concept_id": "MA-KS3-C031",
           "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS3-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-012",
+      "name": "Substitute into expressions, form equations and change the subject of formulae",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Algebra",
+      "description": "Covers: Substitution; Formulae use; Changing the subject; Forming expressions; Solving linear equations.",
+      "pedagogical_rationale": "Substitution, formula use, rearranging formulae, forming expressions and solving linear equations are all procedural algebra skills linked via co_teach_hints (C026 lists C034, C032; C034 co-teaches with C040). Together they form the equations and formulae cluster.",
+      "duration_lessons": 6,
+      "concept_count": 5,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "cause_and_effect",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C026",
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C032",
@@ -375,10 +643,51 @@
         {
           "concept_id": "MA-KS3-C035",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS3-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-013",
+      "name": "Understand and draw linear and quadratic graphs using y = mx + c",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Algebra",
+      "description": "Covers: Four quadrant coordinates; Linear graphs; Quadratic graphs; y = mx + c form; Gradient and intercept; Graphical solutions.",
+      "pedagogical_rationale": "Four-quadrant coordinates, linear graphs, quadratic graphs, y=mx+c, gradient/intercept and graphical solutions are extensively cross-referenced by co_teach_hints (C039 lists C036, C037, C038, C040, C041). This is the graphs cluster.",
+      "duration_lessons": 7,
+      "concept_count": 6,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C036",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C037",
@@ -399,18 +708,100 @@
         {
           "concept_id": "MA-KS3-C041",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS3-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-014",
+      "name": "Solve simultaneous equations graphically and interpret non-linear graphs",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Algebra",
+      "description": "Covers: Simultaneous equations graphically; Non-linear graphs.",
+      "pedagogical_rationale": "Simultaneous equations graphically and non-linear graphs (exponential, reciprocal, piecewise) are the advanced graph interpretation cluster at KS3, requiring all prior graph skills.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C042",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C043",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS3-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-015",
+      "name": "Generate, describe and find the nth term of arithmetic and geometric sequences",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Algebra",
+      "description": "Covers: Sequence generation; Arithmetic sequences; Geometric sequences.",
+      "pedagogical_rationale": "Sequence generation, arithmetic sequences (nth term) and geometric sequences (common ratio) form a coherent sequences cluster. C044 co-teaches with C045, C046; C046 co-teaches with C045.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C044",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C045",
@@ -438,8 +829,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS3-006",
-      "name": "Ratio, Proportion and Rates of Change",
+      "unit_id": "MU-KS3-016",
+      "name": "Understand ratio notation, divide in a ratio and link to fractions",
       "subject": "Mathematics",
       "key_stage": "KS3",
       "year_groups": [
@@ -449,29 +840,24 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Understanding and applying ratio, proportion, percentage change, direct and inverse proportion, and compound units",
-      "pedagogical_rationale": "Ratio, proportion and rates of change at KS3 formalise the multiplicative reasoning developed informally in primary school into precise mathematical tools used across mathematics and other subjects. Pupils learn to express and use ratios, scale factors, fractions and percentages interchangeably, and to solve problems involving direct and inverse proportion.",
-      "duration_lessons": 10,
-      "concept_count": 13,
-      "cluster_names": [
-        "Understand ratio notation, divide in a ratio and link to fractions",
-        "Apply scale factors, percentage change and financial mathematics",
-        "Solve problems involving direct and inverse proportion and multiplicative reasoning",
-        "Convert between units and use compound units in problem-solving"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Ratio, Proportion and Rates of Change",
+      "description": "Covers: Ratio notation; Dividing in a ratio; Expressing as a fraction; Ratios and fractions link.",
+      "pedagogical_rationale": "Ratio notation, dividing in a ratio, expressing as a fraction and the link between ratios and fractions are mutually co-taught (C050 lists C049, C051; C049 lists C050, C052, C053). This cluster establishes the conceptual foundation.",
+      "duration_lessons": 8,
+      "concept_count": 4,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "scale_proportion_quantity",
-        "patterns",
-        "cause_and_effect",
-        "systems_models"
+        "patterns"
       ],
       "delivers_via": [
         {
-          "concept_id": "MA-KS3-C047",
+          "concept_id": "MA-KS3-C050",
           "primary": true
         },
         {
-          "concept_id": "MA-KS3-C048",
+          "concept_id": "MA-KS3-C051",
           "primary": false
         },
         {
@@ -479,43 +865,7 @@
           "primary": false
         },
         {
-          "concept_id": "MA-KS3-C050",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C051",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C052",
-          "primary": false
-        },
-        {
           "concept_id": "MA-KS3-C053",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C054",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C055",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C056",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C057",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C093",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C094",
           "primary": false
         }
       ],
@@ -536,8 +886,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS3-007",
-      "name": "Geometry and Measures",
+      "unit_id": "MU-KS3-017",
+      "name": "Apply scale factors, percentage change and financial mathematics",
       "subject": "Mathematics",
       "key_stage": "KS3",
       "year_groups": [
@@ -547,22 +897,177 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Properties of shapes, geometric constructions, transformations, angle relationships, Pythagoras' Theorem, trigonometry, and mensuration",
-      "pedagogical_rationale": "Geometry and measures at KS3 requires pupils to develop systematic spatial reasoning and the ability to construct and interpret geometric arguments. Building on KS2 shape work, pupils formally study the properties of 2D and 3D shapes, angle relationships, congruence and similarity, and the geometry of transformations — translation, rotation, reflection and enlargement.",
-      "duration_lessons": 10,
-      "concept_count": 19,
-      "cluster_names": [
-        "Derive and apply area and volume formulae for 2-D and 3-D shapes",
-        "Use geometric notation, drawing and construction tools accurately",
-        "Understand angle properties and apply to triangles, polygons and parallel lines",
-        "Prove and apply congruence and similarity in triangles",
-        "Apply Pythagoras' Theorem and trigonometric ratios to right-angled triangles",
-        "Identify, describe and perform geometric transformations"
+      "unit_type": "practice",
+      "domain_name": "Ratio, Proportion and Rates of Change",
+      "description": "Covers: Scale factors and diagrams; Percentage change; Financial mathematics.",
+      "pedagogical_rationale": "Scale factors/diagrams, percentage change and financial mathematics are applied ratio and proportion contexts. C048 co-teaches with C053, C057; C054 is standalone with high practical relevance alongside financial contexts.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "cause_and_effect"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C048",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C054",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C093",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D006"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-018",
+      "name": "Solve problems involving direct and inverse proportion and multiplicative reasoning",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Ratio, Proportion and Rates of Change",
+      "description": "Covers: Multiplicative relationships; Direct proportion; Inverse proportion; Additive vs multiplicative reasoning.",
+      "pedagogical_rationale": "Multiplicative relationships, direct proportion, inverse proportion and additive vs multiplicative reasoning are linked (C056 co-teaches with C055, C052, C094; C094 lists C055, C056). This is the proportional reasoning cluster.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C052",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C055",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C056",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C094",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-09",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D006"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-019",
+      "name": "Convert between units and use compound units in problem-solving",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Ratio, Proportion and Rates of Change",
+      "description": "Covers: Unit conversion; Compound units.",
+      "pedagogical_rationale": "Unit conversion and compound units (speed, density, pressure) are co-taught (C047 co-teaches with C057; C057 extensively cross-references). These form the measurement application within the ratio domain.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "systems_models"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C047",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C057",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-09",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D006"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-020",
+      "name": "Derive and apply area and volume formulae for 2-D and 3-D shapes",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "introduction",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Area formulae; Volume of prisms; Circle measurements.",
+      "pedagogical_rationale": "Area formulae (triangles, parallelograms, trapezia), volume of prisms and circle measurements are linked (C058 co-teaches with C059, C068, C072). These constitute the mensuration cluster.",
+      "duration_lessons": 6,
+      "concept_count": 3,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "structure_function",
-        "scale_proportion_quantity",
-        "evidence_argument"
+        "scale_proportion_quantity"
       ],
       "delivers_via": [
         {
@@ -576,10 +1081,51 @@
         {
           "concept_id": "MA-KS3-C060",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS3-D007"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-021",
+      "name": "Use geometric notation, drawing and construction tools accurately",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Measuring and drawing; Geometric constructions; Geometric notation; Triangle labelling conventions.",
+      "pedagogical_rationale": "Measuring/drawing, geometric constructions, notation and triangle labelling conventions all form the practical geometry toolkit. C063 co-teaches with C062, C064.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C061",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C062",
@@ -592,30 +1138,51 @@
         {
           "concept_id": "MA-KS3-C064",
           "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C065",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C066",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C067",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C068",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C069",
-          "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D007"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-022",
+      "name": "Understand angle properties and apply to triangles, polygons and parallel lines",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Angle properties; Parallel line angles; Triangle angle sum; Polygon angle sum.",
+      "pedagogical_rationale": "Angle properties at a point, parallel line angles, triangle angle sum and polygon angle sum are tightly linked (C071 and C072 mutually co-teach; C073 co-teaches with C071, C072). This is the angle reasoning cluster.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "evidence_argument"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C070",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C071",
@@ -628,14 +1195,157 @@
         {
           "concept_id": "MA-KS3-C073",
           "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D007"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-023",
+      "name": "Prove and apply congruence and similarity in triangles",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Congruence criteria; Properties of shapes; Congruent triangles construction; Similarity and enlargement.",
+      "pedagogical_rationale": "Congruence criteria, shape properties, congruent triangle construction and similarity/enlargement are extensively co-taught (C065 lists C064, C068, C071-076; C068 is linked to most geometry concepts). This is the shape reasoning cluster.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C065",
+          "primary": true
         },
         {
-          "concept_id": "MA-KS3-C074",
+          "concept_id": "MA-KS3-C066",
           "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C068",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS3-C069",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D007"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-024",
+      "name": "Apply Pythagoras' Theorem and trigonometric ratios to right-angled triangles",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Pythagoras' Theorem; Trigonometric ratios.",
+      "pedagogical_rationale": "Pythagoras' Theorem and trigonometric ratios (sin, cos, tan) are the two capstone right-triangle concepts in KS3, both with high teaching weight (5). They are mutually co-referenced.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C074",
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C076",
           "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D007"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-025",
+      "name": "Identify, describe and perform geometric transformations",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Transformations; 3D shape properties.",
+      "pedagogical_rationale": "Transformations (translation, rotation, reflection) and 3-D shape properties are grouped here as the spatial reasoning application cluster, both requiring prior shape knowledge.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C067",
+          "primary": true
         },
         {
           "concept_id": "MA-KS3-C077",
@@ -659,8 +1369,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS3-008",
-      "name": "Probability",
+      "unit_id": "MU-KS3-026",
+      "name": "Understand and calculate theoretical and experimental probability",
       "subject": "Mathematics",
       "key_stage": "KS3",
       "year_groups": [
@@ -670,14 +1380,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Recording and analysing probability experiments, understanding probability scales, and calculating theoretical probabilities",
-      "pedagogical_rationale": "Probability at KS3 introduces pupils to the formal mathematical framework for describing and quantifying uncertainty and chance. Pupils learn to record, describe and analyse the frequency of outcomes of events, distinguishing between experimental probability (frequency estimates from data) and theoretical probability (calculated from equally likely outcomes).",
-      "duration_lessons": 5,
-      "concept_count": 4,
-      "cluster_names": [
-        "Understand and calculate theoretical and experimental probability",
-        "Enumerate outcomes systematically using tables, grids and Venn diagrams"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Probability",
+      "description": "Covers: Probability experiments; Probability sum to 1; Theoretical probability.",
+      "pedagogical_rationale": "Probability experiments, the probability scale summing to 1 and theoretical probability (sample spaces) are co-taught (C078 co-teaches with C081). These establish the foundational probability framework.",
+      "duration_lessons": 6,
+      "concept_count": 3,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
         "scale_proportion_quantity"
@@ -689,10 +1398,6 @@
         },
         {
           "concept_id": "MA-KS3-C079",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C080",
           "primary": false
         },
         {
@@ -717,8 +1422,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS3-009",
-      "name": "Statistics",
+      "unit_id": "MU-KS3-027",
+      "name": "Enumerate outcomes systematically using tables, grids and Venn diagrams",
       "subject": "Mathematics",
       "key_stage": "KS3",
       "year_groups": [
@@ -728,15 +1433,107 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Collecting, representing, interpreting and comparing data using appropriate graphical representations and measures",
-      "pedagogical_rationale": "Statistics at KS3 develops pupils' ability to work with data — collecting, organising, representing, analysing and interpreting it to answer questions and make inferences. Pupils extend their primary experience of simple charts and averages to a full range of graphical representations including scatter graphs, histograms and cumulative frequency, and to formal measures of average (mean, median, mode) and spread (range, quartiles).",
-      "duration_lessons": 8,
-      "concept_count": 6,
-      "cluster_names": [
-        "Calculate and interpret measures of central tendency and spread",
-        "Represent and compare data distributions using appropriate charts",
-        "Describe relationships between two variables using scatter graphs"
+      "unit_type": "practice",
+      "domain_name": "Probability",
+      "description": "Covers: Systematic enumeration.",
+      "pedagogical_rationale": "Systematic enumeration (sample space diagrams, Venn diagrams) is the key combinatorial skill that distinguishes KS3 probability from primary-level language work.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C080",
+          "primary": true
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D008"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-028",
+      "name": "Calculate and interpret measures of central tendency and spread",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "introduction",
+      "domain_name": "Statistics",
+      "description": "Covers: Measures of central tendency; Measures of spread.",
+      "pedagogical_rationale": "Mean, mode, median and range (with outliers) are tightly co-taught (C084 lists C083). These foundational summary statistics must be established before data representation work.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
+      "thinking_lenses": [
+        "patterns",
+        "evidence_argument"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS3-C083",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS3-C084",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D009"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-029",
+      "name": "Represent and compare data distributions using appropriate charts",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Statistics",
+      "description": "Covers: Data distribution; Data representation; Grouped data.",
+      "pedagogical_rationale": "Data distribution, data representation (bar charts, pie charts, pictograms) and grouped data are co-taught (C085 lists C082, C083, C086; C084 lists C082, C083, C086). This is the data representation and analysis cluster.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
       "thinking_lenses": [
         "patterns",
         "evidence_argument"
@@ -747,24 +1544,57 @@
           "primary": true
         },
         {
-          "concept_id": "MA-KS3-C083",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS3-C084",
-          "primary": false
-        },
-        {
           "concept_id": "MA-KS3-C085",
           "primary": false
         },
         {
           "concept_id": "MA-KS3-C086",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS3-D009"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS3-030",
+      "name": "Describe relationships between two variables using scatter graphs",
+      "subject": "Mathematics",
+      "key_stage": "KS3",
+      "year_groups": [
+        "Y7",
+        "Y8",
+        "Y9"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Statistics",
+      "description": "Covers: Bivariate data.",
+      "pedagogical_rationale": "Bivariate data and scatter graphs represent a distinct statistical idea (correlation between two variables) that is meaningfully different from univariate distribution work.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "evidence_argument"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS3-C087",
-          "primary": false
+          "primary": true
         }
       ],
       "uses_template": [

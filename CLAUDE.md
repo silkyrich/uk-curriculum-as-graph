@@ -46,7 +46,7 @@ Each **layer** is self-contained with its own:
 
 4. **`layers/topic-suggestions/`** - Per-subject ontology (Topic Suggestions + VehicleTemplates)
    - Replaces old Topics + Content Vehicles layers with typed per-subject nodes
-   - 388 study/unit nodes across 10 typed labels + 255 reference nodes across 12 types + 24 VehicleTemplate nodes
+   - 458 study/unit nodes across 10 typed labels + 255 reference nodes across 12 types + 24 VehicleTemplate nodes
    - **Study nodes** (display_category: `"Topic Suggestion"`): HistoryStudy, GeoStudy, ScienceEnquiry, EnglishUnit, MathsUnit, ArtTopicSuggestion, MusicTopicSuggestion, DTTopicSuggestion, ComputingTopicSuggestion, TopicSuggestion (generic)
    - **Reference nodes** (display_category: `"Subject Reference"`): DisciplinaryConcept, HistoricalSource, GeoPlace, GeoContrast, EnquiryType, Misconception, Genre, SetText, MathsManipulative, MathsRepresentation, MathsContext, ReasoningPromptType
    - **VehicleTemplate** (display_category: `"Vehicle Template"`): 24 pedagogical pattern templates with TEMPLATE_FOR → KeyStage
@@ -711,7 +711,7 @@ class LayerImporter:
 ✅ **In Aura cloud database — all layers active (2026-02-24):**
 - Instance: education-graphs (6981841e)
 - **~10,675 total nodes**, **~23,740+ total relationships**
-- 581 per-subject ontology nodes (326 study/unit + 255 reference) + 24 VehicleTemplate nodes; 3,383+ ontology relationships + 77 TEMPLATE_FOR
+- 713 per-subject ontology nodes (458 study/unit + 255 reference) + 24 VehicleTemplate nodes; 3,383+ ontology relationships + 77 TEMPLATE_FOR
 - 4,952 DifficultyLevel nodes; 4,952 HAS_DIFFICULTY_LEVEL relationships (1,296/1,351 concepts covered — all EYFS+KS1-KS4)
 - 10 ThinkingLens nodes; 1,222 APPLIES_LENS relationships (~2 per cluster on average); 40 PROMPT_FOR relationships (age-banded prompts)
 - 626 ConceptCluster nodes (167 introduction, 459 practice) — all with `thinking_lens_primary`
@@ -763,7 +763,7 @@ class LayerImporter:
 - **581 nodes** across 21 typed labels: 326 study/unit nodes + 255 reference nodes
 - **24 VehicleTemplate nodes** with 77 TEMPLATE_FOR relationships (age-banded pedagogical prompts)
 - **3,383+ relationships** including DELIVERS_VIA (1,076), HAS_SUGGESTION (460), USES_TEMPLATE (382), FOREGROUNDS, USES_SOURCE, LOCATED_IN, CONTRASTS_WITH, USES_ENQUIRY_TYPE, SURFACES_MISCONCEPTION, IN_GENRE, STUDIES_TEXT, CROSS_CURRICULAR (~246), USED_FOR_CONCEPT (586), etc.
-- Subject coverage: History (43 studies, KS1-KS4), Geography (32 studies, KS1-KS4), Science (45 enquiries, KS1-KS4), English (54 units, KS1-KS4), Maths (62 units, KS1-KS4), Art (39, KS1-KS4), Music (35, KS1-KS4), DT (33, KS1-KS4), Computing (22, KS1-KS4), generic/RS/Citizenship (23)
+- Subject coverage: History (43 studies, KS1-KS4), Geography (32 studies, KS1-KS4), Science (45 enquiries, KS1-KS4), English (54 units, KS1-KS4), Maths (132 units, KS1-KS4), Art (39, KS1-KS4), Music (35, KS1-KS4), DT (33, KS1-KS4), Computing (22, KS1-KS4), generic/RS/Citizenship (23)
 - Each subject uses its own property schema — no irrelevant attributes
 - 8-agent teacher panel designed the schema (Phase 0); data migrated from ContentVehicle + Topic nodes (Phase 2)
 - Old layers archived to `layers/_archived/content-vehicles/` and `layers/_archived/topics/`

@@ -3,12 +3,12 @@
   "subject": "Mathematics",
   "key_stage": "KS2",
   "authored_by": "maths-unit-generator",
-  "authored_date": "2026-03-19",
-  "note": "MathsUnit nodes for KS2. Auto-generated from extraction data and cluster definitions. Each unit corresponds to one curriculum domain.",
+  "authored_date": "2026-03-20",
+  "note": "MathsUnit nodes for KS2. Auto-generated from cluster definitions. Each unit corresponds to one ConceptCluster, following the many-to-one domain mapping pattern used by other subjects.",
   "units": [
     {
       "unit_id": "MU-Y3-001",
-      "name": "Number - Number and Place Value",
+      "name": "Extend counting sequences in multiples of 4, 8, 50 and 100",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -16,18 +16,15 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Understanding place value in three-digit numbers (hundreds, tens, ones), counting in multiples of 4, 8, 50 and 100, comparing and ordering numbers to 1000, and reading/writing numbers in numerals and words.",
-      "pedagogical_rationale": "In lower key stage 2, the principal focus of mathematics teaching is to ensure that pupils become increasingly fluent with whole numbers and the four operations, including number facts and the concept of place value. In Year 3, pupils extend their understanding of the number system from two-digit numbers (explored in KS1) to three-digit numbers, developing secure knowledge of the hundreds, tens and ones structure.",
-      "duration_lessons": 10,
-      "concept_count": 11,
-      "cluster_names": [
-        "Extend counting sequences in multiples of 4, 8, 50 and 100",
-        "Understand and apply place value in three-digit numbers",
-        "Compare, order and estimate numbers to 1000"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number - Number and Place Value",
+      "description": "Covers: Counting in multiples of 4; Counting in multiples of 8; Counting in multiples of 50; Counting in multiples of 100.",
+      "pedagogical_rationale": "These four skip-counting sequences are linked by their co_teach_hints (C001, C003, C004 mutually co-teach) and collectively prepare pupils for the 3, 4 and 8 times tables. They establish the entry point for three-digit number work.",
+      "duration_lessons": 8,
+      "concept_count": 4,
+      "cluster_type": "introduction",
       "thinking_lenses": [
-        "patterns",
-        "scale_proportion_quantity"
+        "patterns"
       ],
       "delivers_via": [
         {
@@ -45,6 +42,64 @@
         {
           "concept_id": "MA-Y3-C004",
           "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-Y3-D001"
+      ],
+      "uses_manipulative": [
+        "MM-COUNTERS",
+        "MM-COUNTINGSTK",
+        "MM-COINS",
+        "MM-DIENES",
+        "MM-ARROWCARDS",
+        "MM-PVMAT"
+      ],
+      "uses_representation": [
+        "MR-HUNDSQ"
+      ],
+      "uses_context": [],
+      "uses_reasoning_prompt": [
+        "RPT-WCN"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y3-002",
+      "name": "Understand and apply place value in three-digit numbers",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y3"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Number and Place Value",
+      "description": "Covers: Place value in three-digit numbers; Partitioning three-digit numbers; Finding 10 more and 10 less; Finding 100 more and 100 less.",
+      "pedagogical_rationale": "Place value understanding (C007), partitioning (C008), and finding 10/100 more or less (C005, C006) are tightly bound by co_teach_hints. Together they build the core conceptual architecture for three-digit numbers.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y3-C007",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y3-C008",
+          "primary": false
         },
         {
           "concept_id": "MA-Y3-C005",
@@ -53,18 +108,61 @@
         {
           "concept_id": "MA-Y3-C006",
           "primary": false
-        },
-        {
-          "concept_id": "MA-Y3-C007",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y3-C008",
-          "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y3-D001"
+      ],
+      "uses_manipulative": [
+        "MM-ARROWCARDS"
+      ],
+      "uses_representation": [
+        "MR-PVCHART",
+        "MR-GATTEGNO",
+        "MR-HUNDSQ"
+      ],
+      "uses_context": [
+        "MC-HISTORY"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-STM",
+        "RPT-EXPLAIN",
+        "RPT-HMW",
+        "RPT-WHATIF"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y3-003",
+      "name": "Compare, order and estimate numbers to 1000",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y3"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Number and Place Value",
+      "description": "Covers: Comparing and ordering numbers to 1000; Estimating numbers to 1000; Reading and writing numbers to 1000 in words.",
+      "pedagogical_rationale": "Comparing/ordering, estimating, and reading/writing numbers in words all require a secure overall grasp of the size and representation of three-digit numbers. C010 co-teaches with C003 (scales link).",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-Y3-C009",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-Y3-C010",
@@ -81,29 +179,12 @@
       "domain_ids": [
         "MA-Y3-D001"
       ],
-      "uses_manipulative": [
-        "MM-COUNTERS",
-        "MM-COUNTINGSTK",
-        "MM-COINS",
-        "MM-DIENES",
-        "MM-ARROWCARDS",
-        "MM-PVMAT"
-      ],
+      "uses_manipulative": [],
       "uses_representation": [
-        "MR-HUNDSQ",
-        "MR-PVCHART",
-        "MR-GATTEGNO",
         "MR-NUMLINE"
       ],
-      "uses_context": [
-        "MC-HISTORY"
-      ],
+      "uses_context": [],
       "uses_reasoning_prompt": [
-        "RPT-WCN",
-        "RPT-WHATIF",
-        "RPT-STM",
-        "RPT-EXPLAIN",
-        "RPT-HMW",
         "RPT-TF",
         "RPT-WYR"
       ],
@@ -113,8 +194,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y3-002",
-      "name": "Number - Addition and Subtraction",
+      "unit_id": "MU-Y3-004",
+      "name": "Add and subtract three-digit numbers mentally",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -122,14 +203,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Mental and written addition and subtraction with three-digit numbers, formal columnar methods, estimation, and using inverse operations to check answers.",
-      "pedagogical_rationale": "In Year 3, pupils are introduced to formal written methods of columnar addition and subtraction for the first time, building on the expanded methods practised in Year 2. The non-statutory guidance specifies that pupils practise solving varied addition and subtraction questions, and should be introduced to the formal written methods of columnar addition and subtraction — including where carrying (addition) and decomposition (subtraction) are required.",
-      "duration_lessons": 8,
-      "concept_count": 5,
-      "cluster_names": [
-        "Add and subtract three-digit numbers mentally",
-        "Add and subtract using formal columnar methods and check with estimation"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number - Addition and Subtraction",
+      "description": "Covers: Mental addition with three-digit numbers; Mental subtraction with three-digit numbers.",
+      "pedagogical_rationale": "Mental addition and subtraction with three-digit numbers are co-taught (C013 co-teaches with C012) and together establish fluency before formal methods are introduced.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
         "cause_and_effect"
@@ -142,10 +222,56 @@
         {
           "concept_id": "MA-Y3-C013",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y3-D002"
+      ],
+      "uses_manipulative": [
+        "MM-DIENES"
+      ],
+      "uses_representation": [
+        "MR-NUMLINE",
+        "MR-EXPANDCOL"
+      ],
+      "uses_context": [
+        "MC-SHOP",
+        "MC-TRAVEL"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y3-005",
+      "name": "Add and subtract using formal columnar methods and check with estimation",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y3"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Addition and Subtraction",
+      "description": "Covers: Formal columnar addition; Formal columnar subtraction; Estimation and inverse operations in calculation.",
+      "pedagogical_rationale": "Columnar addition, columnar subtraction and the use of estimation and inverse operations to check belong together as the formal written methods cluster. C016 is explicitly about using estimation and inverses to validate results.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-Y3-C014",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-Y3-C015",
@@ -166,14 +292,12 @@
         "MM-DIENES"
       ],
       "uses_representation": [
-        "MR-NUMLINE",
-        "MR-EXPANDCOL",
         "MR-COLUMNAR",
+        "MR-EXPANDCOL",
         "MR-BARMOD",
         "MR-FUNCMACH"
       ],
       "uses_context": [
-        "MC-SHOP",
         "MC-TRAVEL",
         "MC-PUZZLE"
       ],
@@ -188,8 +312,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y3-003",
-      "name": "Number - Multiplication and Division",
+      "unit_id": "MU-Y3-006",
+      "name": "Recall the 3, 4 and 8 times tables and understand their connections",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -197,18 +321,16 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Multiplication and division facts for the 3, 4 and 8 times tables, written and mental methods including two-digit by one-digit, scaling and correspondence problems.",
-      "pedagogical_rationale": "In Year 3, pupils build on their knowledge of the 2, 5 and 10 times tables from KS1 to learn the 3, 4 and 8 multiplication tables. The non-statutory guidance highlights that pupils should practise mental methods and should begin progressing to formal written methods, understanding that multiplication is commutative but division is not.",
-      "duration_lessons": 10,
-      "concept_count": 7,
-      "cluster_names": [
-        "Recall the 3, 4 and 8 times tables and understand their connections",
-        "Multiply and solve scaling and correspondence problems"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number - Multiplication and Division",
+      "description": "Covers: 3 times table and related division facts; 4 times table and related division facts; 8 times table and related division facts; Connection between 2, 4 and 8 times tables (doubling).",
+      "pedagogical_rationale": "The 3, 4 and 8 times tables are the Year 3 statutory recall targets. C020 (doubling connection between 2, 4 and 8) is explicitly co-taught with C018 and C019. These four form a coherent knowledge cluster.",
+      "duration_lessons": 8,
+      "concept_count": 4,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
-        "cause_and_effect",
-        "scale_proportion_quantity"
+        "cause_and_effect"
       ],
       "delivers_via": [
         {
@@ -226,10 +348,57 @@
         {
           "concept_id": "MA-Y3-C020",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y3-D003"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-ARRAY",
+        "MR-MULTGRID"
+      ],
+      "uses_context": [],
+      "uses_reasoning_prompt": [
+        "RPT-ASN",
+        "RPT-MISSING",
+        "RPT-CONVINCE",
+        "RPT-WHATIF"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y3-007",
+      "name": "Multiply and solve scaling and correspondence problems",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y3"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Multiplication and Division",
+      "description": "Covers: Written multiplication methods (2-digit × 1-digit); Scaling problems; Correspondence problems.",
+      "pedagogical_rationale": "Written multiplication (2-digit × 1-digit), scaling problems and correspondence problems all extend times table knowledge into applied contexts. C022 and C023 both co-teach with table concepts.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-Y3-C021",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-Y3-C022",
@@ -241,7 +410,8 @@
         }
       ],
       "uses_template": [
-        "VT-08"
+        "VT-08",
+        "VT-09"
       ],
       "domain_ids": [
         "MA-Y3-D003"
@@ -249,7 +419,6 @@
       "uses_manipulative": [],
       "uses_representation": [
         "MR-ARRAY",
-        "MR-MULTGRID",
         "MR-GRIDMETH",
         "MR-BARMOD"
       ],
@@ -257,9 +426,6 @@
         "MC-SCALING"
       ],
       "uses_reasoning_prompt": [
-        "RPT-ASN",
-        "RPT-MISSING",
-        "RPT-CONVINCE",
         "RPT-WHATIF",
         "RPT-WYR",
         "RPT-HMW"
@@ -270,8 +436,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y3-004",
-      "name": "Number - Fractions",
+      "unit_id": "MU-Y3-008",
+      "name": "Understand unit and non-unit fractions with small denominators",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -279,14 +445,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Understanding tenths, unit and non-unit fractions with small denominators, equivalent fractions, adding and subtracting fractions with the same denominator, and comparing and ordering fractions.",
-      "pedagogical_rationale": "Year 3 is the point at which pupils extend their understanding of fractions significantly beyond the simple halves and quarters of KS1, encountering a wider range of unit and non-unit fractions and the fundamental concept of equivalent fractions. The non-statutory guidance explains that pupils should count up and down in tenths on a number line and connect tenths to place value — understanding that one-tenth is the same as dividing by 10 — which lays essential groundwork for decimal notation in Year 4.",
-      "duration_lessons": 8,
-      "concept_count": 6,
-      "cluster_names": [
-        "Understand unit and non-unit fractions with small denominators",
-        "Compare, order and add fractions with the same denominator"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number - Fractions",
+      "description": "Covers: Tenths as fractions and in place value; Unit fractions with small denominators; Non-unit fractions with small denominators.",
+      "pedagogical_rationale": "Tenths (bridging fractions and place value), unit fractions and non-unit fractions together establish the conceptual foundation of the fraction number system in Year 3. All three mutually co-teach.",
+      "duration_lessons": 6,
+      "concept_count": 3,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "scale_proportion_quantity",
         "patterns"
@@ -302,18 +467,6 @@
         },
         {
           "concept_id": "MA-Y3-C026",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y3-C027",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y3-C028",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y3-C029",
           "primary": false
         }
       ],
@@ -339,7 +492,60 @@
       ],
       "uses_reasoning_prompt": [
         "RPT-OOO",
-        "RPT-SD",
+        "RPT-SD"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y3-009",
+      "name": "Compare, order and add fractions with the same denominator",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y3"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Fractions",
+      "description": "Covers: Equivalent fractions; Adding and subtracting fractions with the same denominator; Comparing and ordering fractions.",
+      "pedagogical_rationale": "Equivalent fractions, adding/subtracting with the same denominator and comparing/ordering fractions are the procedural and relational skills built on the conceptual foundation. All three are mutually co-taught.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y3-C027",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y3-C028",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-Y3-C029",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y3-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-FRACWALL"
+      ],
+      "uses_context": [],
+      "uses_reasoning_prompt": [
         "RPT-ASN",
         "RPT-TF",
         "RPT-CONVINCE",
@@ -354,8 +560,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y3-005",
-      "name": "Measurement",
+      "unit_id": "MU-Y3-010",
+      "name": "Measure in mixed units and calculate perimeter",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -363,18 +569,16 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Measuring and comparing lengths, mass and volume/capacity using mixed units, measuring perimeter of 2-D shapes, money calculations, and telling time using Roman numerals, analogue clocks and 12/24-hour notation.",
-      "pedagogical_rationale": "In Year 3, the measurement domain significantly extends KS1 knowledge by introducing millimetres, mixed units (e.g. 1 m and 50 cm), simple metric equivalents, and calculating the perimeter of 2-D shapes for the first time.",
-      "duration_lessons": 8,
-      "concept_count": 6,
-      "cluster_names": [
-        "Measure in mixed units and calculate perimeter",
-        "Calculate with money and read the time accurately"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Measurement",
+      "description": "Covers: Measuring in mixed units (length, mass, volume); Perimeter of simple 2-D shapes.",
+      "pedagogical_rationale": "Mixed-unit measurement and perimeter are both applied measurement skills that connect to number work and shape. They form the practical measurement cluster.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "scale_proportion_quantity",
-        "structure_function",
-        "patterns"
+        "structure_function"
       ],
       "delivers_via": [
         {
@@ -384,10 +588,56 @@
         {
           "concept_id": "MA-Y3-C031",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y3-D005"
+      ],
+      "uses_manipulative": [
+        "MM-COINS",
+        "MM-CLOCK"
+      ],
+      "uses_representation": [],
+      "uses_context": [
+        "MC-COOK",
+        "MC-MEASURE",
+        "MC-BUILD"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y3-011",
+      "name": "Calculate with money and read the time accurately",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y3"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Measurement",
+      "description": "Covers: Money calculations with £ and p; Time: Roman numerals I–XII and analogue clock; 24-hour clock; Comparing durations of time.",
+      "pedagogical_rationale": "Money calculations, Roman numerals on clock faces, 24-hour clock and duration of time are co-taught as a cluster (C032, C034, C035 mutually co-teach; C033 co-teaches with C035). Time and money together form the real-world applications cluster.",
+      "duration_lessons": 5,
+      "concept_count": 4,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-Y3-C032",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-Y3-C033",
@@ -410,8 +660,6 @@
         "MA-Y3-D005"
       ],
       "uses_manipulative": [
-        "MM-COINS",
-        "MM-CLOCK",
         "MM-RULER",
         "MM-SCALES",
         "MM-MEASJUG",
@@ -419,12 +667,10 @@
       ],
       "uses_representation": [],
       "uses_context": [
-        "MC-COOK",
-        "MC-MEASURE",
-        "MC-BUILD",
         "MC-SHOP",
         "MC-TIME",
         "MC-HISTORY",
+        "MC-COOK",
         "MC-TRAVEL"
       ],
       "uses_reasoning_prompt": [
@@ -436,8 +682,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y3-006",
-      "name": "Geometry - Properties of Shapes",
+      "unit_id": "MU-Y3-012",
+      "name": "Draw 2-D shapes and make 3-D shapes using measurements and properties",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -445,30 +691,20 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Drawing 2-D shapes and making 3-D shapes, recognising angles as properties of shapes and turns, identifying right angles, acute and obtuse angles, and horizontal, vertical, perpendicular and parallel lines.",
-      "pedagogical_rationale": "In Year 3, geometry moves beyond recognition of shapes to drawing, constructing and analysing them. Pupils learn to draw 2-D shapes with given dimensions and to make 3-D shapes using modelling materials, developing spatial reasoning and fine motor skills.",
-      "duration_lessons": 5,
-      "concept_count": 4,
-      "cluster_names": [
-        "Draw 2-D shapes and make 3-D shapes using measurements and properties",
-        "Identify and compare angles including right angles"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Geometry - Properties of Shapes",
+      "description": "Covers: Drawing 2-D shapes and making 3-D shapes; Horizontal, vertical, perpendicular and parallel lines.",
+      "pedagogical_rationale": "Drawing/constructing shapes and identifying horizontal, vertical, perpendicular and parallel lines are both construction-oriented skills. C036 co-teaches with C039.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
-        "structure_function",
-        "scale_proportion_quantity"
+        "structure_function"
       ],
       "delivers_via": [
         {
           "concept_id": "MA-Y3-C036",
           "primary": true
-        },
-        {
-          "concept_id": "MA-Y3-C037",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y3-C038",
-          "primary": false
         },
         {
           "concept_id": "MA-Y3-C039",
@@ -484,8 +720,7 @@
       ],
       "uses_manipulative": [
         "MM-GEOBOARD",
-        "MM-PATBLOCKS",
-        "MM-3DSHAPES"
+        "MM-PATBLOCKS"
       ],
       "uses_representation": [
         "MR-DOTGRID"
@@ -497,7 +732,6 @@
       ],
       "uses_reasoning_prompt": [
         "RPT-HMW",
-        "RPT-TF",
         "RPT-SD"
       ],
       "cross_curricular_links": [],
@@ -506,8 +740,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y3-007",
-      "name": "Statistics",
+      "unit_id": "MU-Y3-013",
+      "name": "Identify and compare angles including right angles",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -515,14 +749,67 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Interpreting and presenting data using bar charts, pictograms and tables, and solving one-step and two-step questions from data including 'how many more?' and 'how many fewer?'.",
-      "pedagogical_rationale": "In Year 3, the statistics curriculum builds on the KS1 work of recording, interpreting and comparing simple data by requiring pupils to interpret and present data using scaled bar charts and pictograms, where each unit represents more than one item. The non-statutory guidance clarifies that pupils should ask and answer questions, including two-step questions, using information presented in bar charts, pictograms and tables.",
+      "unit_type": "practice",
+      "domain_name": "Geometry - Properties of Shapes",
+      "description": "Covers: Angles as properties of shapes and as turns; Identifying right angles and comparing to other angles.",
+      "pedagogical_rationale": "The concept of an angle and the identification of right angles versus acute/obtuse are closely related. C039 links back to these via co_teach_hints.",
       "duration_lessons": 3,
       "concept_count": 2,
-      "cluster_names": [
-        "Interpret and construct scaled bar charts and pictograms",
-        "Solve one-step and two-step questions using information from data"
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "scale_proportion_quantity"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y3-C037",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y3-C038",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y3-D006"
+      ],
+      "uses_manipulative": [
+        "MM-3DSHAPES"
+      ],
+      "uses_representation": [],
+      "uses_context": [
+        "MC-BUILD",
+        "MC-PATTERN"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-TF"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y3-014",
+      "name": "Interpret and construct scaled bar charts and pictograms",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y3"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "introduction",
+      "domain_name": "Statistics",
+      "description": "Covers: Scaled bar charts and pictograms.",
+      "pedagogical_rationale": "Scaled charts are the Year 3 entry point for statistics, requiring pupils to understand one symbol/bar represents more than one item. Foundational representation skill.",
+      "duration_lessons": 3,
+      "concept_count": 1,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
         "evidence_argument"
@@ -531,10 +818,6 @@
         {
           "concept_id": "MA-Y3-C040",
           "primary": true
-        },
-        {
-          "concept_id": "MA-Y3-C041",
-          "primary": false
         }
       ],
       "uses_template": [
@@ -548,7 +831,56 @@
       "uses_representation": [
         "MR-PICTOGRAM",
         "MR-BARCHART",
-        "MR-TALLY",
+        "MR-TALLY"
+      ],
+      "uses_context": [
+        "MC-SPORT",
+        "MC-NATURE",
+        "MC-DATA"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y3-015",
+      "name": "Solve one-step and two-step questions using information from data",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y3"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Statistics",
+      "description": "Covers: Solving one-step and two-step questions from data.",
+      "pedagogical_rationale": "Moving from reading charts to reasoning from data and answering multi-step questions is the key statistical thinking progression in Year 3.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "evidence_argument",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y3-C041",
+          "primary": true
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y3-D007"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-BARCHART",
         "MR-TABLE"
       ],
       "uses_context": [
@@ -563,8 +895,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y4-008",
-      "name": "Number - Number and Place Value",
+      "unit_id": "MU-Y4-016",
+      "name": "Understand place value and count in multiples with four-digit numbers",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -572,15 +904,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Understanding place value in four-digit numbers, counting in larger multiples (6, 7, 9, 25, 1000), negative numbers in context, rounding to nearest 10 and 100, and Roman numerals to 100.",
-      "pedagogical_rationale": "In Year 4, pupils extend place value understanding from three-digit numbers to four-digit numbers (thousands, hundreds, tens, ones), significantly expanding the range of numbers they can work with. The non-statutory guidance specifies that pupils should practise reading Roman numerals to 100 (I to C) and begin to understand the year written in Roman numerals.",
-      "duration_lessons": 8,
-      "concept_count": 5,
-      "cluster_names": [
-        "Understand place value and count in multiples with four-digit numbers",
-        "Round to the nearest 10, 100 and 1000 and use negative numbers in context",
-        "Read Roman numerals to 100"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number - Number and Place Value",
+      "description": "Covers: Place value in four-digit numbers; Counting in multiples of 6, 7, 9, 25 and 1000.",
+      "pedagogical_rationale": "Four-digit place value is the foundational concept; counting in multiples of 6, 7, 9, 25 and 1000 extends skip-counting to match the new times table demands. C002 co-teaches with C004.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
         "scale_proportion_quantity"
@@ -592,18 +922,6 @@
         },
         {
           "concept_id": "MA-Y4-C002",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y4-C003",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y4-C004",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y4-C005",
           "primary": false
         }
       ],
@@ -619,15 +937,65 @@
       ],
       "uses_representation": [
         "MR-PVCHART",
-        "MR-GATTEGNO",
-        "MR-NUMLINE"
+        "MR-GATTEGNO"
       ],
       "uses_context": [
         "MC-HISTORY"
       ],
       "uses_reasoning_prompt": [
         "RPT-EXPLAIN",
-        "RPT-WCN",
+        "RPT-WCN"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y4-017",
+      "name": "Round to the nearest 10, 100 and 1000 and use negative numbers in context",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Number and Place Value",
+      "description": "Covers: Negative numbers in context; Rounding to nearest 10, 100 and 1000.",
+      "pedagogical_rationale": "Rounding and negative numbers both extend the number line concept beyond the positive integers. C004 co-teaches with C002.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y4-C003",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y4-C004",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y4-D001"
+      ],
+      "uses_manipulative": [
+        "MM-PVCOUNTERS"
+      ],
+      "uses_representation": [
+        "MR-NUMLINE"
+      ],
+      "uses_context": [],
+      "uses_reasoning_prompt": [
         "RPT-TF",
         "RPT-STM",
         "RPT-WHATIF"
@@ -638,8 +1006,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y4-009",
-      "name": "Number - Addition and Subtraction",
+      "unit_id": "MU-Y4-018",
+      "name": "Read Roman numerals to 100",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -647,13 +1015,56 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Formal written methods of columnar addition and subtraction for numbers with up to four digits, estimation, inverse operations, and two-step problems including missing number problems.",
-      "pedagogical_rationale": "In Year 4, pupils consolidate and extend the formal columnar methods introduced in Year 3 to four-digit numbers. The non-statutory guidance emphasises that pupils should practise adding and subtracting increasingly large numbers to aid fluency and develop their mental arithmetic, using jottings to support calculation where necessary.",
-      "duration_lessons": 3,
+      "unit_type": "practice",
+      "domain_name": "Number - Number and Place Value",
+      "description": "Covers: Roman numerals to 100 (I to C).",
+      "pedagogical_rationale": "Roman numerals is a discrete knowledge strand within NC Number that does not co-teach with other Year 4 number concepts. Standalone practice cluster.",
+      "duration_lessons": 2,
       "concept_count": 1,
-      "cluster_names": [
-        "Add and subtract four-digit numbers using formal columnar methods"
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y4-C005",
+          "primary": true
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y4-D001"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [
+        "MC-HISTORY"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y4-019",
+      "name": "Add and subtract four-digit numbers using formal columnar methods",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Addition and Subtraction",
+      "description": "Covers: Formal columnar addition and subtraction of four-digit numbers.",
+      "pedagogical_rationale": "Only one concept in this domain. Four-digit columnar addition and subtraction (with exchange at multiple places) is the singular statutory focus and stands alone.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
       "thinking_lenses": [
         "patterns",
         "cause_and_effect"
@@ -685,8 +1096,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y4-010",
-      "name": "Number - Multiplication and Division",
+      "unit_id": "MU-Y4-020",
+      "name": "Recall all multiplication tables to 12 × 12 and use short multiplication",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -694,18 +1105,16 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "All multiplication tables to 12 × 12, using place value and multiplication facts to derive related calculations, mental methods including commutativity and associativity, and formal written methods for multiplication and division.",
-      "pedagogical_rationale": "Year 4 is the statutory point by which pupils must know all multiplication tables to 12 × 12, making it a landmark year for multiplicative fluency. The non-statutory guidance states that pupils should practise mental methods and should be able to derive quickly all multiplication and division facts from the tables they know, and should understand the distributive and commutative laws.",
-      "duration_lessons": 5,
-      "concept_count": 3,
-      "cluster_names": [
-        "Recall all multiplication tables to 12 × 12 and use short multiplication",
-        "Investigate factor pairs and use commutativity in mental calculation"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number - Multiplication and Division",
+      "description": "Covers: All multiplication tables to 12 × 12; Short multiplication (2- and 3-digit × 1-digit).",
+      "pedagogical_rationale": "Complete times table recall is the major Year 4 milestone; short multiplication applies it to 2- and 3-digit numbers. C007 co-teaches with C008.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
-        "scale_proportion_quantity",
-        "cause_and_effect"
+        "scale_proportion_quantity"
       ],
       "delivers_via": [
         {
@@ -714,10 +1123,6 @@
         },
         {
           "concept_id": "MA-Y4-C008",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y4-C009",
           "primary": false
         }
       ],
@@ -733,7 +1138,56 @@
         "MR-COLUMNAR",
         "MR-EXPANDCOL",
         "MR-GRIDMETH",
-        "MR-AREAMOD",
+        "MR-AREAMOD"
+      ],
+      "uses_context": [
+        "MC-SCALING"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-ASN",
+        "RPT-MISSING"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y4-021",
+      "name": "Investigate factor pairs and use commutativity in mental calculation",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Multiplication and Division",
+      "description": "Covers: Factor pairs and commutativity in mental calculation.",
+      "pedagogical_rationale": "Factor pairs and commutativity are the conceptual tools that underpin flexible mental multiplication strategies — a distinct cluster from the recall/procedural focus.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y4-C009",
+          "primary": true
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y4-D003"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-MULTGRID",
         "MR-VENN"
       ],
       "uses_context": [
@@ -742,10 +1196,10 @@
       ],
       "uses_reasoning_prompt": [
         "RPT-ASN",
-        "RPT-MISSING",
         "RPT-OOO",
         "RPT-CONVINCE",
-        "RPT-HMW"
+        "RPT-HMW",
+        "RPT-MISSING"
       ],
       "cross_curricular_links": [],
       "display_category": "Topic Suggestion",
@@ -753,8 +1207,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y4-011",
-      "name": "Number - Fractions (including Decimals)",
+      "unit_id": "MU-Y4-022",
+      "name": "Understand hundredths and extend decimal place value",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -762,14 +1216,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Equivalent fractions using multiples and factors, hundredths as fractions and decimals, fractions greater than one, tenths and hundredths as decimal place value, rounding decimals, and comparing decimals.",
-      "pedagogical_rationale": "In Year 4, the fractions domain expands significantly to include decimals for the first time. Pupils learn that the decimal system extends the place value system to the right of the decimal point — tenths (one tenth = 0.1) and hundredths (one hundredth = 0.01).",
-      "duration_lessons": 5,
-      "concept_count": 3,
-      "cluster_names": [
-        "Understand hundredths and extend decimal place value",
-        "Generate and use equivalent fractions"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number - Fractions (including Decimals)",
+      "description": "Covers: Hundredths and decimal place value; Decimal equivalents to common fractions.",
+      "pedagogical_rationale": "Hundredths and decimal place value and the decimal equivalents of common fractions are co-taught (C010 and C012 mutually co-teach) and together establish the decimal number system.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "scale_proportion_quantity",
         "patterns"
@@ -778,10 +1231,6 @@
         {
           "concept_id": "MA-Y4-C010",
           "primary": true
-        },
-        {
-          "concept_id": "MA-Y4-C011",
-          "primary": false
         },
         {
           "concept_id": "MA-Y4-C012",
@@ -801,20 +1250,14 @@
       ],
       "uses_representation": [
         "MR-NUMLINE",
-        "MR-PVCHART",
-        "MR-FRACWALL"
+        "MR-PVCHART"
       ],
       "uses_context": [
-        "MC-SHOP",
-        "MC-SHARE"
+        "MC-SHOP"
       ],
       "uses_reasoning_prompt": [
         "RPT-STM",
         "RPT-SD",
-        "RPT-ASN",
-        "RPT-CONVINCE",
-        "RPT-HMW",
-        "RPT-EXPLAIN",
         "RPT-WYR"
       ],
       "cross_curricular_links": [],
@@ -823,8 +1266,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y4-012",
-      "name": "Measurement",
+      "unit_id": "MU-Y4-023",
+      "name": "Generate and use equivalent fractions",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -832,14 +1275,66 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Converting between units of metric measurement, calculating perimeter and area of rectilinear shapes, reading scales with increasing accuracy, analogue and digital time, and solving money and time problems.",
-      "pedagogical_rationale": "In Year 4, measurement extends to calculating area (introduced formally for the first time) alongside perimeter, converting between standard metric units (e.g. km to m, l to ml, kg to g), and reading scales more accurately.",
-      "duration_lessons": 3,
-      "concept_count": 2,
-      "cluster_names": [
-        "Find the area of rectilinear shapes by counting and measuring",
-        "Convert between metric units of length, mass and volume"
+      "unit_type": "practice",
+      "domain_name": "Number - Fractions (including Decimals)",
+      "description": "Covers: Equivalent fractions using multiples and factors.",
+      "pedagogical_rationale": "Generating equivalent fractions using multiples and factors is a distinct procedural skill that builds on Year 3 fraction understanding and underpins all fraction arithmetic to come.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y4-C011",
+          "primary": true
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y4-D004"
+      ],
+      "uses_manipulative": [
+        "MM-FRACTILES"
+      ],
+      "uses_representation": [
+        "MR-FRACWALL"
+      ],
+      "uses_context": [
+        "MC-SHARE"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-ASN",
+        "RPT-CONVINCE",
+        "RPT-HMW",
+        "RPT-EXPLAIN"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y4-024",
+      "name": "Find the area of rectilinear shapes by counting and measuring",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "introduction",
+      "domain_name": "Measurement",
+      "description": "Covers: Area of rectilinear shapes.",
+      "pedagogical_rationale": "Area is the new measurement concept introduced in Year 4 and provides the conceptual entry point for the domain.",
+      "duration_lessons": 3,
+      "concept_count": 1,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "structure_function",
         "scale_proportion_quantity"
@@ -848,10 +1343,56 @@
         {
           "concept_id": "MA-Y4-C013",
           "primary": true
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y4-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-AREAMOD",
+        "MR-DOTGRID"
+      ],
+      "uses_context": [
+        "MC-MEASURE",
+        "MC-BUILD"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-WHATIF"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y4-025",
+      "name": "Convert between metric units of length, mass and volume",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Measurement",
+      "description": "Covers: Converting between metric units.",
+      "pedagogical_rationale": "Metric conversion is a substantial and distinct procedural skill that applies place value understanding to measurement.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-Y4-C014",
-          "primary": false
+          "primary": true
         }
       ],
       "uses_template": [
@@ -865,19 +1406,14 @@
         "MM-RULER",
         "MM-THERMOM"
       ],
-      "uses_representation": [
-        "MR-AREAMOD",
-        "MR-DOTGRID"
-      ],
+      "uses_representation": [],
       "uses_context": [
-        "MC-MEASURE",
-        "MC-BUILD",
         "MC-COOK",
+        "MC-MEASURE",
         "MC-TRAVEL",
         "MC-MAPREAD"
       ],
       "uses_reasoning_prompt": [
-        "RPT-WHATIF",
         "RPT-WYR"
       ],
       "cross_curricular_links": [],
@@ -886,8 +1422,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y4-013",
-      "name": "Geometry - Properties of Shapes",
+      "unit_id": "MU-Y4-026",
+      "name": "Classify triangles and quadrilaterals by their properties",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -895,26 +1431,20 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Comparing and classifying geometric shapes using angles and sides, identifying acute and obtuse angles, comparing and ordering angles, symmetry, and coordinate geometry in the first quadrant.",
-      "pedagogical_rationale": "In Year 4, geometry develops from the Year 3 foundation of angles and line types to classifying shapes according to their properties and working with coordinates. Pupils compare and classify triangles (equilateral, isosceles, scalene, right-angled) and quadrilaterals (square, rectangle, rhombus, parallelogram, trapezium), identifying properties such as parallel and perpendicular sides and types of angles.",
+      "unit_type": "introduction",
+      "domain_name": "Geometry - Properties of Shapes",
+      "description": "Covers: Classifying triangles and quadrilaterals.",
+      "pedagogical_rationale": "Classification of triangles and quadrilaterals is the primary shape-properties focus in Year 4. Provides the vocabulary for symmetry work.",
       "duration_lessons": 3,
-      "concept_count": 2,
-      "cluster_names": [
-        "Classify triangles and quadrilaterals by their properties",
-        "Identify and complete patterns with lines of symmetry"
-      ],
+      "concept_count": 1,
+      "cluster_type": "introduction",
       "thinking_lenses": [
-        "structure_function",
-        "patterns"
+        "structure_function"
       ],
       "delivers_via": [
         {
           "concept_id": "MA-Y4-C016",
           "primary": true
-        },
-        {
-          "concept_id": "MA-Y4-C017",
-          "primary": false
         }
       ],
       "uses_template": [
@@ -946,8 +1476,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y4-014",
-      "name": "Geometry - Position and Direction",
+      "unit_id": "MU-Y4-027",
+      "name": "Identify and complete patterns with lines of symmetry",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -955,13 +1485,59 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Plotting and describing coordinates in the first quadrant, and describing movements between positions as translations.",
-      "pedagogical_rationale": "In Year 4, position and direction is formalised through the introduction of coordinates in the first quadrant of a grid. Pupils learn to plot and read points using (x, y) notation, with x measuring horizontal distance from the origin and y measuring vertical distance.",
-      "duration_lessons": 3,
+      "unit_type": "practice",
+      "domain_name": "Geometry - Properties of Shapes",
+      "description": "Covers: Lines of symmetry.",
+      "pedagogical_rationale": "Lines of symmetry are a distinct geometric concept best taught after classification, linking to the classification properties of shapes (e.g. equilateral triangles have 3 lines).",
+      "duration_lessons": 2,
       "concept_count": 1,
-      "cluster_names": [
-        "Describe and plot positions using coordinates in the first quadrant"
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "patterns"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y4-C017",
+          "primary": true
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-Y4-D006"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [
+        "MC-PATTERN"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y4-028",
+      "name": "Describe and plot positions using coordinates in the first quadrant",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry - Position and Direction",
+      "description": "Covers: Coordinates in the first quadrant.",
+      "pedagogical_rationale": "Only one concept in this domain. First-quadrant coordinate work is the complete Year 4 position/direction curriculum.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
       "thinking_lenses": [
         "structure_function",
         "scale_proportion_quantity"
@@ -993,8 +1569,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y4-015",
-      "name": "Statistics",
+      "unit_id": "MU-Y4-029",
+      "name": "Read, interpret and draw line graphs showing continuous data over time",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1002,13 +1578,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Interpreting and presenting discrete and continuous data using appropriate graphical methods including bar charts, time graphs, and tables; solving comparison, sum and difference problems.",
-      "pedagogical_rationale": "In Year 4, statistics introduces continuous data and time graphs alongside the bar charts and tables of Year 3. The non-statutory guidance clarifies that pupils should understand the difference between discrete data (individual counts, shown as bar charts) and continuous data (measurements over time, shown as line graphs).",
-      "duration_lessons": 3,
+      "unit_type": "practice",
+      "domain_name": "Statistics",
+      "description": "Covers: Time graphs and continuous data.",
+      "pedagogical_rationale": "Only one concept in this domain. Time graphs (line graphs) introduce continuous data and are the Year 4 statistics focus, distinct from the discrete data work of Y2-Y3.",
+      "duration_lessons": 2,
       "concept_count": 1,
-      "cluster_names": [
-        "Read, interpret and draw line graphs showing continuous data over time"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "patterns",
         "evidence_argument"
@@ -1045,8 +1621,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y5-016",
-      "name": "Number - Number and Place Value",
+      "unit_id": "MU-Y5-030",
+      "name": "Read, write and order numbers to 1,000,000 and round to any power of 10",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1054,13 +1630,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Reading, writing, ordering and comparing numbers to at least 1,000,000; counting forwards and backwards in steps of powers of 10; negative numbers; rounding to any power of 10; Roman numerals to 1000.",
-      "pedagogical_rationale": "In upper key stage 2, the principal focus of mathematics teaching is to ensure that pupils extend their understanding of the number system and place value to include larger integers. In Year 5, pupils read, write, order and compare numbers to at least 1,000,000, developing their understanding that the place value system extends indefinitely — each column is ten times the value of the column to its right.",
+      "unit_type": "practice",
+      "domain_name": "Number - Number and Place Value",
+      "description": "Covers: Numbers to 1,000,000 and their place value; Rounding to any power of 10.",
+      "pedagogical_rationale": "Six-digit place value and rounding to any power of 10 (nearest 10,000; 100,000) are the two statutory Year 5 number/PV requirements. Only two concepts; single cluster appropriate.",
       "duration_lessons": 3,
       "concept_count": 2,
-      "cluster_names": [
-        "Read, write and order numbers to 1,000,000 and round to any power of 10"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "patterns",
         "scale_proportion_quantity"
@@ -1101,8 +1677,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y5-017",
-      "name": "Number - Addition and Subtraction",
+      "unit_id": "MU-Y5-031",
+      "name": "Add and subtract whole numbers with more than four digits using mental and written strategies",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1110,13 +1686,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Adding and subtracting whole numbers with more than four digits using formal written methods; mental calculations with increasingly large numbers; rounding to check answers; multi-step problems.",
-      "pedagogical_rationale": "In Year 5, pupils use formal written methods to add and subtract whole numbers with more than four digits, building on the four-digit work of Year 4. The non-statutory guidance specifies that pupils should practise using formal written methods and should be able to add and subtract with confidence.",
-      "duration_lessons": 3,
+      "unit_type": "practice",
+      "domain_name": "Number - Addition and Subtraction",
+      "description": "Covers: Mental and Written Addition and Subtraction Strategies.",
+      "pedagogical_rationale": "Only one concept in this domain. Extension of addition and subtraction to larger numbers is the Year 5 focus, consolidating formal columnar methods.",
+      "duration_lessons": 2,
       "concept_count": 1,
-      "cluster_names": [
-        "Add and subtract whole numbers with more than four digits using mental and written strategies"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "patterns",
         "cause_and_effect"
@@ -1145,8 +1721,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y5-018",
-      "name": "Number - Multiplication and Division",
+      "unit_id": "MU-Y5-032",
+      "name": "Understand factors, multiples, primes, squares and cubes",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1154,18 +1730,16 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Identifying multiples, factors, common factors, prime numbers, square numbers and cube numbers; long multiplication (4-digit × 2-digit); short and long division; problem solving with all four operations.",
-      "pedagogical_rationale": "Year 5 introduces the major formal written methods of long multiplication and long division, extending the short multiplication and division of Year 4. The non-statutory guidance specifies that pupils should practise long multiplication for up to a four-digit number multiplied by a two-digit number, and short and long division with remainders.",
-      "duration_lessons": 8,
-      "concept_count": 5,
-      "cluster_names": [
-        "Understand factors, multiples, primes, squares and cubes",
-        "Multiply and divide using formal written methods"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number - Multiplication and Division",
+      "description": "Covers: Prime numbers and composite numbers; Square numbers and cube numbers; Factors, common factors and multiples.",
+      "pedagogical_rationale": "Prime/composite numbers and factors/multiples are mutually co-taught (C003 and C005 co-teach). Square and cube numbers naturally accompany this cluster as related number theory. Together they build multiplicative number sense before formal algorithms.",
+      "duration_lessons": 6,
+      "concept_count": 3,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
-        "structure_function",
-        "scale_proportion_quantity"
+        "structure_function"
       ],
       "delivers_via": [
         {
@@ -1179,14 +1753,6 @@
         {
           "concept_id": "MA-Y5-C005",
           "primary": false
-        },
-        {
-          "concept_id": "MA-Y5-C006",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y5-C007",
-          "primary": false
         }
       ],
       "uses_template": [
@@ -1198,15 +1764,10 @@
       "uses_manipulative": [],
       "uses_representation": [
         "MR-VENN",
-        "MR-FACTORTREE",
-        "MR-COLUMNAR",
-        "MR-GRIDMETH",
-        "MR-AREAMOD"
+        "MR-FACTORTREE"
       ],
       "uses_context": [
-        "MC-PUZZLE",
-        "MC-TRAVEL",
-        "MC-SCALING"
+        "MC-PUZZLE"
       ],
       "uses_reasoning_prompt": [
         "RPT-ASN",
@@ -1222,8 +1783,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y5-019",
-      "name": "Number - Fractions (including Decimals and Percentages)",
+      "unit_id": "MU-Y5-033",
+      "name": "Multiply and divide using formal written methods",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1231,14 +1792,68 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Comparing and ordering fractions; adding and subtracting fractions with different denominators; multiplying proper fractions; mixed numbers and improper fractions; decimals to three places; percentages as fractions and decimals.",
-      "pedagogical_rationale": "In Year 5, fractions become significantly more complex: pupils add and subtract fractions with different denominators using equivalent fractions (requiring LCM knowledge), multiply proper fractions and mixed numbers by whole numbers, and convert between mixed numbers and improper fractions. The non-statutory guidance explains that pupils connect fractions to division (a/b = a ÷ b) and use this connection to find equivalences.",
-      "duration_lessons": 5,
-      "concept_count": 4,
-      "cluster_names": [
-        "Convert between mixed numbers and improper fractions and add fractions with different denominators",
-        "Extend decimal place value to thousandths and understand percentages"
+      "unit_type": "practice",
+      "domain_name": "Number - Multiplication and Division",
+      "description": "Covers: Long multiplication (4-digit × 2-digit); Short division with remainders.",
+      "pedagogical_rationale": "Long multiplication (4-digit × 2-digit) and short division with remainders are the two formal written method targets for Year 5. Both are high teaching-weight and procedurally distinct from the number theory cluster.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y5-C006",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y5-C007",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y5-D003"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-COLUMNAR",
+        "MR-GRIDMETH",
+        "MR-AREAMOD"
+      ],
+      "uses_context": [
+        "MC-TRAVEL",
+        "MC-SCALING"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-WHATIF"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y5-034",
+      "name": "Convert between mixed numbers and improper fractions and add fractions with different denominators",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y5"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "introduction",
+      "domain_name": "Number - Fractions (including Decimals and Percentages)",
+      "description": "Covers: Adding and subtracting fractions with different denominators; Mixed numbers and improper fractions.",
+      "pedagogical_rationale": "Mixed numbers/improper fractions and adding with different denominators are the procedural fraction targets that build on Year 3-4 equivalence work. Together they represent the Year 5 fraction arithmetic cluster.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "scale_proportion_quantity",
         "patterns"
@@ -1251,13 +1866,61 @@
         {
           "concept_id": "MA-Y5-C009",
           "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y5-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-NUMLINE",
+        "MR-BARMOD"
+      ],
+      "uses_context": [
+        "MC-COOK"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-CONVINCE",
+        "RPT-WYR",
+        "RPT-EXPLAIN",
+        "RPT-HMW"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y5-035",
+      "name": "Extend decimal place value to thousandths and understand percentages",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y5"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Fractions (including Decimals and Percentages)",
+      "description": "Covers: Thousandths and decimal place value to 3 decimal places; Percentages as fractions and decimals.",
+      "pedagogical_rationale": "Decimal place value to three decimal places and the concept of percentage as parts per hundred are both representational knowledge concepts that expand the number system. Together they set up the fraction-decimal-percentage equivalence work.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y5-C013",
+          "primary": true
         },
         {
           "concept_id": "MA-Y5-C010",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y5-C013",
           "primary": false
         }
       ],
@@ -1270,24 +1933,19 @@
       "uses_manipulative": [],
       "uses_representation": [
         "MR-NUMLINE",
-        "MR-BARMOD",
         "MR-PVCHART",
         "MR-GATTEGNO"
       ],
       "uses_context": [
-        "MC-COOK",
         "MC-SHOP"
       ],
       "uses_reasoning_prompt": [
-        "RPT-CONVINCE",
-        "RPT-WYR",
-        "RPT-EXPLAIN",
-        "RPT-HMW",
+        "RPT-ASN",
         "RPT-STM",
+        "RPT-TF",
         "RPT-OOO",
         "RPT-SD",
-        "RPT-ASN",
-        "RPT-TF"
+        "RPT-WYR"
       ],
       "cross_curricular_links": [],
       "display_category": "Topic Suggestion",
@@ -1295,8 +1953,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y5-020",
-      "name": "Measurement",
+      "unit_id": "MU-Y5-036",
+      "name": "Understand and calculate the volume of cuboids",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1304,13 +1962,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Converting between metric and common imperial units; calculating perimeter and area of rectangles, triangles and parallelograms; volumes of cuboids; solving problems involving time and money.",
-      "pedagogical_rationale": "In Year 5, measurement extends to include some imperial units that remain in common use (miles, pounds, pints, gallons) and approximate metric equivalents. The non-statutory guidance specifies that pupils should use, read and write standard units — including decimal notation — and practise converting between units, developing fluency in using different measurement contexts.",
-      "duration_lessons": 3,
+      "unit_type": "practice",
+      "domain_name": "Measurement",
+      "description": "Covers: Volume of cuboids.",
+      "pedagogical_rationale": "Only one concept in this domain. Volume of cuboids (V = l × w × h) is the new measurement concept introduced in Year 5.",
+      "duration_lessons": 2,
       "concept_count": 1,
-      "cluster_names": [
-        "Understand and calculate the volume of cuboids"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "structure_function",
         "scale_proportion_quantity"
@@ -1345,8 +2003,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y5-021",
-      "name": "Geometry - Properties of Shapes",
+      "unit_id": "MU-Y5-037",
+      "name": "Measure angles with a protractor and apply angle facts",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1354,13 +2012,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Identifying 3-D shapes from 2-D representations; measuring angles in degrees using a protractor; drawing given angles; calculating unknown angles in triangles, quadrilaterals and around a point.",
-      "pedagogical_rationale": "In Year 5, geometry advances from the qualitative comparison of angles in Year 4 to their precise measurement and calculation in degrees. Pupils learn to use a protractor accurately to measure and draw angles, and to calculate angles using angle facts (angles in a triangle sum to 180°; angles on a straight line sum to 180°; angles around a point sum to 360°).",
+      "unit_type": "practice",
+      "domain_name": "Geometry - Properties of Shapes",
+      "description": "Covers: Measuring angles in degrees using a protractor; Angle facts (straight line, point, triangle).",
+      "pedagogical_rationale": "Measuring angles in degrees and applying the three key angle facts (straight line = 180°, point = 360°, triangle = 180°) are taught together as a coherent angles cluster. Both use degrees and build directly on each other.",
       "duration_lessons": 3,
       "concept_count": 2,
-      "cluster_names": [
-        "Measure angles with a protractor and apply angle facts"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "structure_function",
         "scale_proportion_quantity"
@@ -1396,8 +2054,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y5-022",
-      "name": "Geometry - Position and Direction",
+      "unit_id": "MU-Y5-038",
+      "name": "Reflect and translate shapes in all four quadrants of a coordinate grid",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1405,13 +2063,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Identifying, describing and representing the position of a shape following reflection or translation using the appropriate language, and using coordinates in all four quadrants.",
-      "pedagogical_rationale": "In Year 5, coordinate geometry extends from the first quadrant (Year 4) to all four quadrants, introducing negative coordinate values. Pupils describe and represent reflections (in lines parallel to the axes) and translations using coordinates.",
-      "duration_lessons": 3,
+      "unit_type": "practice",
+      "domain_name": "Geometry - Position and Direction",
+      "description": "Covers: Reflections and translations in all four quadrants.",
+      "pedagogical_rationale": "Only one concept in this domain. Reflections and translations in all four quadrants extend Year 4 first-quadrant coordinate work to the full Cartesian plane.",
+      "duration_lessons": 2,
       "concept_count": 1,
-      "cluster_names": [
-        "Reflect and translate shapes in all four quadrants of a coordinate grid"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "structure_function",
         "patterns"
@@ -1443,8 +2101,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y5-023",
-      "name": "Statistics",
+      "unit_id": "MU-Y5-039",
+      "name": "Read and interpret graphs, tables and timetables to solve comparison problems",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1452,13 +2110,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Solving comparison, sum and difference problems using information in line graphs; completing, reading and interpreting information in tables, including timetables.",
-      "pedagogical_rationale": "In Year 5, the statistics curriculum focuses on reading and interpreting line graphs accurately — including reading values between plotted points and using the graph to answer problems — and on complex tables including timetables. The non-statutory guidance specifies that pupils should connect their work on coordinates (all four quadrants) to graphs.",
-      "duration_lessons": 3,
+      "unit_type": "practice",
+      "domain_name": "Statistics",
+      "description": "Covers: Reading and Interpreting Graphs, Tables and Timetables.",
+      "pedagogical_rationale": "Only one concept in this domain. Year 5 statistics focuses on interpretation and reasoning across a variety of data representations including timetables.",
+      "duration_lessons": 2,
       "concept_count": 1,
-      "cluster_names": [
-        "Read and interpret graphs, tables and timetables to solve comparison problems"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "evidence_argument",
         "patterns"
@@ -1471,6 +2129,7 @@
       ],
       "uses_template": [
         "VT-08",
+        "VT-09",
         "VT-13"
       ],
       "domain_ids": [
@@ -1495,8 +2154,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y6-024",
-      "name": "Number - Number and Place Value",
+      "unit_id": "MU-Y6-040",
+      "name": "Read, write and order whole numbers to 10,000,000",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1504,14 +2163,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Reading, writing, ordering and comparing numbers to 10,000,000; understanding place value; negative numbers and intervals across zero; rounding to any degree of accuracy.",
-      "pedagogical_rationale": "Year 6 number and place value work consolidates and extends the progression from thousands (Year 4) through 1,000,000 (Year 5) to 10,000,000, ensuring pupils have a secure understanding of our base-10 number system at its upper primary limit. Mastery of place value to 10 million is foundational for the formal written methods, mental calculations, and estimation skills that pervade all other Year 6 domains.",
-      "duration_lessons": 5,
-      "concept_count": 3,
-      "cluster_names": [
-        "Read, write and order whole numbers to 10,000,000",
-        "Round to any degree of accuracy and calculate intervals across zero"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number - Number and Place Value",
+      "description": "Covers: MA-Y6-C001.",
+      "pedagogical_rationale": "Seven-digit place value is the Year 6 extension of place value and is the entry point for the domain before rounding and negative numbers.",
+      "duration_lessons": 3,
+      "concept_count": 1,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
         "scale_proportion_quantity"
@@ -1520,14 +2178,6 @@
         {
           "concept_id": "MA-Y6-C001",
           "primary": true
-        },
-        {
-          "concept_id": "MA-Y6-C002",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y6-C003",
-          "primary": false
         }
       ],
       "uses_template": [
@@ -1555,8 +2205,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y6-025",
-      "name": "Number - Addition, Subtraction, Multiplication and Division",
+      "unit_id": "MU-Y6-041",
+      "name": "Round to any degree of accuracy and calculate intervals across zero",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1564,19 +2214,62 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Performing mental calculations with large numbers and mixed operations; using formal written methods for long multiplication and long division; identifying common factors, common multiples and prime numbers; understanding and applying the order of operations; solving multi-step problems involving all four operations.",
-      "pedagogical_rationale": "Year 6 completes the primary programme for written and mental calculation by introducing long division as the final formal written method and by embedding the order of operations (BODMAS/BIDMAS) so that pupils can work reliably with expressions involving brackets and multiple operations. Building on the short multiplication and division of Year 5 and the secure times-table knowledge established by Year 4, pupils now extend written methods to 4-digit dividends divided by 2-digit divisors, a significant cognitive step requiring strong place value understanding.",
-      "duration_lessons": 8,
-      "concept_count": 6,
-      "cluster_names": [
-        "Multiply and divide using formal long methods",
-        "Apply order of operations and work with common factors, multiples and primes",
-        "Develop mathematical fluency and apply problem-solving strategies"
+      "unit_type": "practice",
+      "domain_name": "Number - Number and Place Value",
+      "description": "Covers: MA-Y6-C002; MA-Y6-C003.",
+      "pedagogical_rationale": "Rounding to any degree of accuracy and negative numbers/intervals across zero are co-taught (C002 co-teaches with C003) and together complete the Year 6 number system coverage.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y6-C002",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y6-C003",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y6-D001"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y6-042",
+      "name": "Multiply and divide using formal long methods",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "introduction",
+      "domain_name": "Number - Addition, Subtraction, Multiplication and Division",
+      "description": "Covers: MA-Y6-C004; MA-Y6-C005.",
+      "pedagogical_rationale": "Long multiplication and long division are the two formal written method pinnacles of primary arithmetic. They represent the major Year 6 procedural target.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
-        "cause_and_effect",
-        "evidence_argument"
+        "cause_and_effect"
       ],
       "delivers_via": [
         {
@@ -1586,22 +2279,6 @@
         {
           "concept_id": "MA-Y6-C005",
           "primary": false
-        },
-        {
-          "concept_id": "MA-Y6-C006",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y6-C007",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y6-C029",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y6-C031",
-          "primary": false
         }
       ],
       "uses_template": [
@@ -1610,17 +2287,66 @@
       "domain_ids": [
         "MA-Y6-D002"
       ],
-      "uses_manipulative": [
-        "MM-DICE"
-      ],
+      "uses_manipulative": [],
       "uses_representation": [
         "MR-COLUMNAR",
         "MR-GRIDMETH",
-        "MR-AREAMOD",
+        "MR-AREAMOD"
+      ],
+      "uses_context": [
+        "MC-SCALING"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-STM"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y6-043",
+      "name": "Apply order of operations and work with common factors, multiples and primes",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Addition, Subtraction, Multiplication and Division",
+      "description": "Covers: MA-Y6-C006; MA-Y6-C007.",
+      "pedagogical_rationale": "Order of operations (BIDMAS) and common factors/multiples/primes are the conceptual number theory targets of Year 6. C006 co-teaches with C029.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y6-C006",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y6-C007",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y6-D002"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
         "MR-FACTORTREE"
       ],
       "uses_context": [
-        "MC-SCALING",
         "MC-PUZZLE"
       ],
       "uses_reasoning_prompt": [
@@ -1637,8 +2363,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y6-026",
-      "name": "Number - Fractions (including decimals and percentages)",
+      "unit_id": "MU-Y6-044",
+      "name": "Develop mathematical fluency and apply problem-solving strategies",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1646,14 +2372,64 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Simplifying fractions using common factors; comparing and ordering fractions greater than one; adding and subtracting fractions with different denominators and mixed numbers; multiplying simple pairs of fractions; dividing fractions by whole numbers; computing decimal calculations to three decimal places; expressing fractions as decimals and percentages.",
-      "pedagogical_rationale": "Year 6 fractions work represents the culmination of the primary fraction strand, which began with equal sharing in EYFS and progressed through unit fractions, equivalent fractions, and operations with like denominators across KS1 and lower KS2. Pupils now encounter the full range of fraction arithmetic — adding and subtracting fractions with different denominators, multiplying fractions together, and dividing fractions by whole numbers — equipping them with the conceptual and procedural tools needed for the rational number work of KS3.",
-      "duration_lessons": 5,
-      "concept_count": 4,
-      "cluster_names": [
-        "Simplify, compare and add fractions with different denominators",
-        "Multiply and divide fractions and convert fluently between fractions, decimals and percentages"
+      "unit_type": "practice",
+      "domain_name": "Number - Addition, Subtraction, Multiplication and Division",
+      "description": "Covers: MA-Y6-C029; MA-Y6-C031.",
+      "pedagogical_rationale": "Mathematical fluency with number and problem-solving strategies are cross-cutting process skills that permeate Year 6 mathematics. C029 is linked to C006; C031 represents the statutory problem-solving requirement.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "evidence_argument"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y6-C029",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y6-C031",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-09"
+      ],
+      "domain_ids": [
+        "MA-Y6-D002"
+      ],
+      "uses_manipulative": [
+        "MM-DICE"
+      ],
+      "uses_representation": [],
+      "uses_context": [
+        "MC-PUZZLE"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y6-045",
+      "name": "Simplify, compare and add fractions with different denominators",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "introduction",
+      "domain_name": "Number - Fractions (including decimals and percentages)",
+      "description": "Covers: MA-Y6-C008; MA-Y6-C009.",
+      "pedagogical_rationale": "Simplifying/comparing fractions and adding/subtracting with different denominators are co-taught (C008 lists C009 in co_teach_hints). Together they consolidate fraction arithmetic.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "scale_proportion_quantity",
         "patterns"
@@ -1666,10 +2442,53 @@
         {
           "concept_id": "MA-Y6-C009",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08"
+      ],
+      "domain_ids": [
+        "MA-Y6-D003"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [
+        "RPT-ASN",
+        "RPT-STM",
+        "RPT-CONVINCE",
+        "RPT-SD"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y6-046",
+      "name": "Multiply and divide fractions and convert fluently between fractions, decimals and percentages",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number - Fractions (including decimals and percentages)",
+      "description": "Covers: MA-Y6-C010; MA-Y6-C011.",
+      "pedagogical_rationale": "Fraction multiplication/division and fraction-decimal-percentage equivalences are the upper primary fraction targets. C011 co-teaches with C008.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "patterns"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-Y6-C010",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-Y6-C011",
@@ -1692,13 +2511,10 @@
         "MC-SHOP"
       ],
       "uses_reasoning_prompt": [
-        "RPT-ASN",
-        "RPT-STM",
-        "RPT-CONVINCE",
-        "RPT-SD",
         "RPT-WYR",
         "RPT-OOO",
         "RPT-TF",
+        "RPT-SD",
         "RPT-EXPLAIN"
       ],
       "cross_curricular_links": [],
@@ -1707,8 +2523,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y6-027",
-      "name": "Ratio and Proportion",
+      "unit_id": "MU-Y6-047",
+      "name": "Understand and use ratio and proportion to solve problems",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1716,13 +2532,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Solving problems involving the relative sizes of two quantities using ratio notation; solving problems involving similar shapes and scale factors; using percentages for comparison; solving problems involving unequal sharing and grouping.",
-      "pedagogical_rationale": "Ratio and proportion is introduced explicitly as a named domain for the first time in Year 6, although proportional reasoning has been developed informally throughout the curriculum in contexts such as scaling recipes, comparing measures, and working with fractions and percentages. The formal introduction of ratio notation (a:b) and the language of 'for every' relationships marks a significant conceptual development, bridging the additive thinking that dominates KS1 and lower KS2 towards the multiplicative thinking central to KS3 mathematics.",
-      "duration_lessons": 3,
+      "unit_type": "practice",
+      "domain_name": "Ratio and Proportion",
+      "description": "Covers: MA-Y6-C012.",
+      "pedagogical_rationale": "Only one concept in this domain. Ratio and proportion is the new Year 6 domain that bridges to KS3 Ratio, Proportion and Rates of Change.",
+      "duration_lessons": 2,
       "concept_count": 1,
-      "cluster_names": [
-        "Understand and use ratio and proportion to solve problems"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "scale_proportion_quantity"
       ],
@@ -1734,6 +2550,7 @@
       ],
       "uses_template": [
         "VT-08",
+        "VT-09",
         "VT-13"
       ],
       "domain_ids": [
@@ -1760,8 +2577,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y6-028",
-      "name": "Algebra",
+      "unit_id": "MU-Y6-048",
+      "name": "Use algebraic notation and formulae with letters for unknowns",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1769,14 +2586,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Using simple formulae expressed in words and symbols; generating and describing linear number sequences; expressing missing number problems algebraically; finding pairs of numbers that satisfy an equation with two unknowns; enumerating possibilities of combinations of two variables.",
-      "pedagogical_rationale": "Algebra is introduced explicitly in Year 6 as a named domain, representing the formal beginning of symbolic mathematical reasoning that pupils will develop extensively throughout KS3 and beyond. Prior to Year 6, algebraic thinking has been present implicitly — in missing number problems from Year 1 onwards, in generalising pattern rules, and in the use of formulae for area and perimeter — but Year 6 formalises this into symbolic notation using letters to represent unknown or variable quantities.",
-      "duration_lessons": 5,
-      "concept_count": 3,
-      "cluster_names": [
-        "Use algebraic notation and formulae with letters for unknowns",
-        "Generate and describe linear sequences and solve equations in two variables"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Algebra",
+      "description": "Covers: MA-Y6-C013.",
+      "pedagogical_rationale": "Algebraic notation and formulae is the gateway concept for Year 6 algebra, introducing the idea of using letters to represent unknowns. Must precede sequence and equation work.",
+      "duration_lessons": 3,
+      "concept_count": 1,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
         "cause_and_effect"
@@ -1785,10 +2601,56 @@
         {
           "concept_id": "MA-Y6-C013",
           "primary": true
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-Y6-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-FUNCMACH"
+      ],
+      "uses_context": [
+        "MC-PUZZLE"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-WHATIF",
+        "RPT-MISSING"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y6-049",
+      "name": "Generate and describe linear sequences and solve equations in two variables",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Algebra",
+      "description": "Covers: MA-Y6-C014; MA-Y6-C030.",
+      "pedagogical_rationale": "Linear sequences, two-variable equations and mathematical reasoning/justification are co-taught (C014 and C030 mutually co-teach). Together they represent the Year 6 algebra application and reasoning cluster.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-Y6-C014",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-Y6-C030",
@@ -1809,13 +2671,13 @@
         "MR-FUNCMACH"
       ],
       "uses_context": [
-        "MC-PUZZLE",
-        "MC-PATTERN"
+        "MC-PATTERN",
+        "MC-PUZZLE"
       ],
       "uses_reasoning_prompt": [
         "RPT-WHATIF",
-        "RPT-MISSING",
         "RPT-WCN",
+        "RPT-MISSING",
         "RPT-CONVINCE"
       ],
       "cross_curricular_links": [],
@@ -1824,8 +2686,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y6-029",
-      "name": "Measurement",
+      "unit_id": "MU-Y6-050",
+      "name": "Calculate area and volume using formulae for 2-D and 3-D shapes",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1833,13 +2695,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Solving problems involving the calculation and conversion of units of measure using decimal notation; using, reading and writing standard units; recognising imperial units and their metric equivalents; calculating the area of triangles and parallelograms; calculating, estimating and comparing the volume of cubes and cuboids.",
-      "pedagogical_rationale": "Year 6 measurement extends the area and perimeter work of Years 3-5 to include the areas of triangles and parallelograms, requiring pupils to apply their understanding of multiplication and fractions (halving) in geometric contexts. Volume of cubes and cuboids builds on the introduction to volume in Year 5 and connects to the formulae for length, area, and volume in a coherent progression.",
+      "unit_type": "practice",
+      "domain_name": "Measurement",
+      "description": "Covers: MA-Y6-C015; MA-Y6-C016.",
+      "pedagogical_rationale": "Area of triangles and parallelograms and volume of cubes/cuboids are co-taught (C016 co-teaches with C015). Both apply the same principle of formula-based measurement and naturally belong together.",
       "duration_lessons": 3,
       "concept_count": 2,
-      "cluster_names": [
-        "Calculate area and volume using formulae for 2-D and 3-D shapes"
-      ],
+      "cluster_type": "practice",
       "thinking_lenses": [
         "structure_function",
         "scale_proportion_quantity"
@@ -1856,7 +2718,8 @@
       ],
       "uses_template": [
         "VT-08",
-        "VT-13"
+        "VT-13",
+        "VT-05"
       ],
       "domain_ids": [
         "MA-Y6-D006"
@@ -1879,8 +2742,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y6-030",
-      "name": "Geometry - Properties of Shapes",
+      "unit_id": "MU-Y6-051",
+      "name": "Know and apply angle facts in polygons and circles",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1888,17 +2751,15 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Recognising, describing and building simple 3-D shapes including nets; comparing and classifying geometric shapes based on their properties; finding unknown angles in triangles, quadrilaterals and regular polygons; illustrating and naming parts of circles including radius, diameter and circumference; describing positions on the full coordinate grid.",
-      "pedagogical_rationale": "Year 6 geometry consolidates and extends the shape classification and angle work of Years 4 and 5, introducing two important new areas: the properties of circles and the calculation of unknown angles using known angle facts. The introduction of circles as a named geometric focus (radius, diameter, circumference) prepares pupils for the circumference and area calculations of KS3 and establishes important vocabulary.",
-      "duration_lessons": 5,
-      "concept_count": 4,
-      "cluster_names": [
-        "Know and apply angle facts in polygons and circles",
-        "Identify properties of 3-D shapes and apply angle reasoning to solve problems"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Geometry - Properties of Shapes",
+      "description": "Covers: MA-Y6-C017; MA-Y6-C018.",
+      "pedagogical_rationale": "Angle facts in polygons and the parts of a circle are co-taught (C018 co-teaches with C017). They establish the shape-property knowledge before problem-solving application.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
-        "structure_function",
-        "evidence_argument"
+        "structure_function"
       ],
       "delivers_via": [
         {
@@ -1908,10 +2769,54 @@
         {
           "concept_id": "MA-Y6-C018",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y6-D007"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [
+        "MC-PATTERN"
+      ],
+      "uses_reasoning_prompt": [
+        "RPT-CONVINCE",
+        "RPT-TF"
+      ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y6-052",
+      "name": "Identify properties of 3-D shapes and apply angle reasoning to solve problems",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry - Properties of Shapes",
+      "description": "Covers: MA-Y6-C022; MA-Y6-C024.",
+      "pedagogical_rationale": "3-D shape properties/nets and applying angle facts to solve multi-step problems are co-taught with the angle-facts concept and represent the application tier of the domain.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "evidence_argument"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-Y6-C022",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-Y6-C024",
@@ -1920,6 +2825,7 @@
       ],
       "uses_template": [
         "VT-08",
+        "VT-09",
         "VT-13"
       ],
       "domain_ids": [
@@ -1932,12 +2838,9 @@
         "MR-DOTGRID"
       ],
       "uses_context": [
-        "MC-PATTERN",
         "MC-BUILD"
       ],
       "uses_reasoning_prompt": [
-        "RPT-CONVINCE",
-        "RPT-TF",
         "RPT-OOO",
         "RPT-HMW"
       ],
@@ -1947,8 +2850,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y6-031",
-      "name": "Geometry - Position and Direction",
+      "unit_id": "MU-Y6-053",
+      "name": "Plot and describe coordinates in all four quadrants",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -1956,14 +2859,13 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Describing positions on the full coordinate grid including all four quadrants; drawing and translating simple shapes on the coordinate plane; reflecting shapes in the axes.",
-      "pedagogical_rationale": "Year 6 position and direction extends the first-quadrant coordinate work of Year 4 and the all-four-quadrant introduction of Year 5 to include translations and reflections of shapes on the full coordinate plane. Working with all four quadrants requires pupils to apply their understanding of negative numbers in a geometric context, making this an important domain for consolidating and applying negative number reasoning.",
+      "unit_type": "introduction",
+      "domain_name": "Geometry - Position and Direction",
+      "description": "Covers: MA-Y6-C019.",
+      "pedagogical_rationale": "Four-quadrant coordinates extend Year 5 work and provide the spatial framework needed before transformations on the grid.",
       "duration_lessons": 3,
-      "concept_count": 2,
-      "cluster_names": [
-        "Plot and describe coordinates in all four quadrants",
-        "Perform and describe translations and reflections on a coordinate grid"
-      ],
+      "concept_count": 1,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "structure_function",
         "patterns"
@@ -1972,10 +2874,53 @@
         {
           "concept_id": "MA-Y6-C019",
           "primary": true
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y6-D008"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-COORDGRID"
+      ],
+      "uses_context": [
+        "MC-MAPREAD"
+      ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y6-054",
+      "name": "Perform and describe translations and reflections on a coordinate grid",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry - Position and Direction",
+      "description": "Covers: MA-Y6-C023.",
+      "pedagogical_rationale": "Translations and reflections on the full four-quadrant grid apply coordinate knowledge to geometric transformation, building on Year 5's work.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "patterns"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-Y6-C023",
-          "primary": false
+          "primary": true
         }
       ],
       "uses_template": [
@@ -2001,8 +2946,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-Y6-032",
-      "name": "Statistics",
+      "unit_id": "MU-Y6-055",
+      "name": "Construct and interpret pie charts and other statistical representations",
       "subject": "Mathematics",
       "key_stage": "KS2",
       "year_groups": [
@@ -2010,40 +2955,21 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Interpreting and constructing pie charts and line graphs; calculating and interpreting the mean as an average; using relevant questions to collect and present data.",
-      "pedagogical_rationale": "Year 6 statistics introduces pie charts as a new representation and the mean as a formal measure of average, significantly extending the statistical toolkit pupils have been building since Year 2. Pie charts require pupils to apply their understanding of fractions and percentages to represent and interpret data, connecting statistics directly to the fractions and ratio domains.",
-      "duration_lessons": 8,
-      "concept_count": 6,
-      "cluster_names": [
-        "Construct and interpret pie charts and other statistical representations",
-        "Calculate and interpret averages including mean, median and mode",
-        "Describe and compare data distributions and use probability language"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Statistics",
+      "description": "Covers: MA-Y6-C020; MA-Y6-C028.",
+      "pedagogical_rationale": "Pie charts (reading and calculating proportional sectors) and the broader skill of constructing/interpreting statistical charts are co-taught (C028 co-teaches with C020). Together they cover the representational strand.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "scale_proportion_quantity",
-        "evidence_argument",
-        "patterns"
+        "evidence_argument"
       ],
       "delivers_via": [
         {
           "concept_id": "MA-Y6-C020",
           "primary": true
-        },
-        {
-          "concept_id": "MA-Y6-C021",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y6-C025",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y6-C026",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-Y6-C027",
-          "primary": false
         },
         {
           "concept_id": "MA-Y6-C028",
@@ -2061,8 +2987,6 @@
       "uses_representation": [
         "MR-FRACCIRCLE",
         "MR-PIECHART",
-        "MR-TABLE",
-        "MR-PROBNUMLINE",
         "MR-LINEGRAPH"
       ],
       "uses_context": [
@@ -2070,9 +2994,114 @@
         "MC-SPORT",
         "MC-NATURE"
       ],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y6-056",
+      "name": "Calculate and interpret averages including mean, median and mode",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Statistics",
+      "description": "Covers: MA-Y6-C021; MA-Y6-C027.",
+      "pedagogical_rationale": "Mean and the mode/median pair are co-taught (C021 and C027 mutually co-teach) and together provide a complete picture of central tendency at Year 6 level.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "evidence_argument",
+        "patterns"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y6-C021",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y6-C027",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y6-D009"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-TABLE"
+      ],
+      "uses_context": [
+        "MC-SPORT",
+        "MC-NATURE",
+        "MC-DATA"
+      ],
       "uses_reasoning_prompt": [
         "RPT-EXPLAIN"
       ],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-Y6-057",
+      "name": "Describe and compare data distributions and use probability language",
+      "subject": "Mathematics",
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Statistics",
+      "description": "Covers: MA-Y6-C026; MA-Y6-C025.",
+      "pedagogical_rationale": "Describing distributions and introducing probability both require understanding likelihood and variation. Both co-teach with the averages cluster (C026 lists C020, C021, C027, C028; C025 is referenced by the averages cluster). Placed here as the analytical reasoning capstone.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "evidence_argument",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-Y6-C026",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-Y6-C025",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-Y6-D009"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [
+        "MR-TABLE",
+        "MR-PROBNUMLINE"
+      ],
+      "uses_context": [
+        "MC-DATA"
+      ],
+      "uses_reasoning_prompt": [],
       "cross_curricular_links": [],
       "display_category": "Topic Suggestion",
       "display_color": "#3B82F6",

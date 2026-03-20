@@ -2,12 +2,17 @@
 """
 Generate MathsUnit JSON data files from existing extraction data and cluster definitions.
 
-Each MathsUnit corresponds to one curriculum domain (e.g. "Y3 Fractions", "Y5 Measurement").
+Each MathsUnit corresponds to one ConceptCluster (e.g. "Add and subtract using
+formal columnar methods"). This follows the many-to-one domain mapping pattern
+used by other subjects — multiple units deliver the same domain from different
+angles, just as Science has multiple enquiries per domain and History has
+multiple thematic studies per domain.
+
 Units are populated with:
-  - concept_ids and delivers_via from the extraction JSONs
-  - cluster info and thinking lenses from cluster_definitions/mathematics.json
+  - concept_ids and delivers_via from the cluster definitions
+  - concept metadata (description, teaching_guidance) from the extraction JSONs
   - manipulative/representation/context/reasoning links from reference node data
-  - appropriate vehicle templates based on domain type
+  - appropriate vehicle templates based on cluster/domain type
 
 Usage:
     python3 layers/topic-suggestions/scripts/generate_maths_units.py
@@ -126,23 +131,24 @@ def load_reference_links() -> dict:
     return concept_to_refs
 
 
-def choose_templates(domain_name: str, key_stage: str) -> list[str]:
-    """Choose appropriate VehicleTemplates based on domain type."""
-    name_lower = domain_name.lower()
+def choose_templates(domain_name: str, cluster_name: str, cluster_type: str) -> list[str]:
+    """Choose appropriate VehicleTemplates based on domain and cluster type."""
+    combined = (domain_name + " " + cluster_name).lower()
 
     # VT-08 Worked Example Set — core template for all maths
     templates = ["VT-08"]
 
-    # VT-09 Open Investigation — for problem-solving/reasoning domains
-    if any(kw in name_lower for kw in ["problem", "investigation", "reasoning", "working mathematically"]):
+    # VT-09 Open Investigation — for problem-solving/reasoning/investigation clusters
+    if any(kw in combined for kw in ["problem", "investigation", "reasoning", "working mathematically", "open"]):
         templates.append("VT-09")
 
-    # VT-13 Practical Application — for measurement, statistics, geometry
-    if any(kw in name_lower for kw in ["measurement", "statistics", "geometry", "ratio", "probability"]):
+    # VT-13 Practical Application — for measurement, statistics, geometry, applied contexts
+    if any(kw in combined for kw in ["measurement", "statistics", "geometry", "ratio", "probability",
+                                      "money", "time", "perimeter", "area", "volume", "data"]):
         templates.append("VT-13")
 
-    # VT-05 Pattern Seeking — for algebra, number patterns
-    if any(kw in name_lower for kw in ["algebra", "pattern", "sequence"]):
+    # VT-05 Pattern Seeking — for algebra, number patterns, sequences
+    if any(kw in combined for kw in ["algebra", "pattern", "sequence", "formula"]):
         templates.append("VT-05")
 
     return templates
@@ -168,8 +174,35 @@ def domain_sort_key(domain_id: str) -> tuple:
     return (year, dom)
 
 
+def collect_refs(concept_ids: list[str], ref_links: dict) -> dict:
+    """Collect reference node links across a set of concept IDs."""
+    result = {"manipulatives": [], "representations": [], "contexts": [], "reasoning": []}
+    for cid in concept_ids:
+        refs = ref_links.get(cid, {})
+        for key in result:
+            for val in refs.get(key, []):
+                if val not in result[key]:
+                    result[key].append(val)
+    return result
+
+
+def build_concept_index(domains: dict) -> dict:
+    """Build concept_id -> concept metadata index from all domains."""
+    index = {}
+    for dinfo in domains.values():
+        for c in dinfo["concepts"]:
+            index[c["concept_id"]] = c
+    return index
+
+
 def generate_units(domains: dict, clusters: dict, ref_links: dict, dry_run: bool = False):
-    """Generate MathsUnit JSON files grouped by key stage."""
+    """Generate MathsUnit JSON files grouped by key stage.
+
+    Creates one MathsUnit per ConceptCluster, following the many-to-one
+    domain mapping used by other subjects (Science, History, English, Geography).
+    """
+    concept_index = build_concept_index(domains)
+
     # Group domains by key stage
     ks_domains = {}
     for did, dinfo in sorted(domains.items(), key=lambda x: domain_sort_key(x[0])):
@@ -181,103 +214,119 @@ def generate_units(domains: dict, clusters: dict, ref_links: dict, dry_run: bool
 
     for ks, domain_list in sorted(ks_domains.items()):
         units = []
-        for idx, (did, dinfo) in enumerate(domain_list, 1):
-            # Build unit_id: MU-Y3-001 or MU-KS3-001
+        unit_counter = 0
+
+        for did, dinfo in domain_list:
             year_part = did.split("-")[1]  # Y1, Y2, ..., KS3, KS4
-            unit_id = f"MU-{year_part}-{idx:03d}"
-
-            # Collect concept_ids
-            concept_ids = [c["concept_id"] for c in dinfo["concepts"]]
-
-            # Build delivers_via — first concept is primary, rest are secondary
-            delivers_via = []
-            for i, cid in enumerate(concept_ids):
-                delivers_via.append({
-                    "concept_id": cid,
-                    "primary": i == 0,
-                })
-
-            # Collect reference node links across all concepts in this domain
-            all_manipulatives = []
-            all_representations = []
-            all_contexts = []
-            all_reasoning = []
-            for cid in concept_ids:
-                refs = ref_links.get(cid, {})
-                for mid in refs.get("manipulatives", []):
-                    if mid not in all_manipulatives:
-                        all_manipulatives.append(mid)
-                for rid in refs.get("representations", []):
-                    if rid not in all_representations:
-                        all_representations.append(rid)
-                for cxid in refs.get("contexts", []):
-                    if cxid not in all_contexts:
-                        all_contexts.append(cxid)
-                for ptid in refs.get("reasoning", []):
-                    if ptid not in all_reasoning:
-                        all_reasoning.append(ptid)
-
-            # Get cluster info for pedagogical_rationale
+            domain_name = dinfo["domain_name"]
             domain_clusters = clusters.get(did, {}).get("clusters", [])
-            cluster_names = [cl["cluster_name"] for cl in domain_clusters]
-            primary_lenses = []
+
+            if not domain_clusters:
+                # Fallback: domain has no clusters — create one unit for the whole domain
+                unit_counter += 1
+                concept_ids = [c["concept_id"] for c in dinfo["concepts"]]
+                refs = collect_refs(concept_ids, ref_links)
+
+                rationale = dinfo.get("curriculum_context", dinfo.get("description", ""))
+                if len(rationale) > 500:
+                    sentences = rationale.split(". ")
+                    rationale = ". ".join(sentences[:2]) + "."
+
+                units.append({
+                    "unit_id": f"MU-{year_part}-{unit_counter:03d}",
+                    "name": domain_name,
+                    "subject": "Mathematics",
+                    "key_stage": ks,
+                    "year_groups": dinfo["year_groups"],
+                    "curriculum_status": "mandatory",
+                    "suggestion_type": "curriculum_unit",
+                    "unit_type": "domain_unit",
+                    "description": dinfo["description"],
+                    "pedagogical_rationale": rationale,
+                    "duration_lessons": max(3, min(10, len(concept_ids) * 2)),
+                    "concept_count": len(concept_ids),
+                    "cluster_type": "mixed",
+                    "thinking_lenses": [],
+                    "delivers_via": [{"concept_id": cid, "primary": i == 0}
+                                     for i, cid in enumerate(concept_ids)],
+                    "uses_template": choose_templates(domain_name, "", ""),
+                    "domain_ids": [did],
+                    "uses_manipulative": refs["manipulatives"],
+                    "uses_representation": refs["representations"],
+                    "uses_context": refs["contexts"],
+                    "uses_reasoning_prompt": refs["reasoning"],
+                    "cross_curricular_links": [],
+                    "display_category": "Topic Suggestion",
+                    "display_color": "#3B82F6",
+                    "display_icon": "calculate",
+                })
+                continue
+
+            # One unit per cluster
             for cl in domain_clusters:
-                for tl in cl.get("thinking_lenses", []):
-                    lens_name = tl.get("lens", "")
-                    if lens_name and lens_name not in primary_lenses:
-                        primary_lenses.append(lens_name)
+                unit_counter += 1
+                cluster_name = cl["cluster_name"]
+                cluster_type = cl.get("cluster_type", "introduction")
+                concept_ids = cl.get("concept_ids", [])
 
-            # Build pedagogical rationale from curriculum_context
-            rationale = dinfo.get("curriculum_context", "")
-            if not rationale:
-                rationale = dinfo.get("description", "")
+                # Extract thinking lenses
+                thinking_lenses = [tl["lens"] for tl in cl.get("thinking_lenses", [])]
 
-            # Truncate long rationale to first 2 sentences
-            if len(rationale) > 500:
-                sentences = rationale.split(". ")
-                rationale = ". ".join(sentences[:2]) + "."
+                # Build delivers_via
+                delivers_via = [{"concept_id": cid, "primary": i == 0}
+                                for i, cid in enumerate(concept_ids)]
 
-            # Choose templates
-            templates = choose_templates(dinfo["domain_name"], ks)
+                # Collect reference links for this cluster's concepts
+                refs = collect_refs(concept_ids, ref_links)
 
-            # Determine duration (lessons) from concept count
-            n_concepts = len(concept_ids)
-            if n_concepts <= 2:
-                duration_lessons = 3
-            elif n_concepts <= 4:
-                duration_lessons = 5
-            elif n_concepts <= 6:
-                duration_lessons = 8
-            else:
-                duration_lessons = 10
+                # Build description from concept metadata
+                concept_descriptions = []
+                for cid in concept_ids:
+                    cmeta = concept_index.get(cid, {})
+                    cname = cmeta.get("concept_name", cid)
+                    concept_descriptions.append(cname)
+                description = f"Covers: {'; '.join(concept_descriptions)}."
 
-            unit = {
-                "unit_id": unit_id,
-                "name": dinfo["domain_name"],
-                "subject": "Mathematics",
-                "key_stage": ks,
-                "year_groups": dinfo["year_groups"],
-                "curriculum_status": "mandatory",
-                "suggestion_type": "curriculum_unit",
-                "description": dinfo["description"],
-                "pedagogical_rationale": rationale,
-                "duration_lessons": duration_lessons,
-                "concept_count": n_concepts,
-                "cluster_names": cluster_names,
-                "thinking_lenses": primary_lenses,
-                "delivers_via": delivers_via,
-                "uses_template": templates,
-                "domain_ids": [did],
-                "uses_manipulative": all_manipulatives,
-                "uses_representation": all_representations,
-                "uses_context": all_contexts,
-                "uses_reasoning_prompt": all_reasoning,
-                "cross_curricular_links": [],
-                "display_category": "Topic Suggestion",
-                "display_color": "#3B82F6",
-                "display_icon": "calculate",
-            }
-            units.append(unit)
+                # Use cluster rationale as pedagogical_rationale
+                rationale = cl.get("rationale", "")
+
+                # Duration based on cluster type and concept count
+                n = len(concept_ids)
+                if cluster_type == "introduction":
+                    duration_lessons = max(3, n * 2)
+                else:  # practice
+                    duration_lessons = max(2, n + 1)
+
+                templates = choose_templates(domain_name, cluster_name, cluster_type)
+
+                units.append({
+                    "unit_id": f"MU-{year_part}-{unit_counter:03d}",
+                    "name": cluster_name,
+                    "subject": "Mathematics",
+                    "key_stage": ks,
+                    "year_groups": dinfo["year_groups"],
+                    "curriculum_status": "mandatory",
+                    "suggestion_type": "curriculum_unit",
+                    "unit_type": cluster_type,
+                    "domain_name": domain_name,
+                    "description": description,
+                    "pedagogical_rationale": rationale,
+                    "duration_lessons": duration_lessons,
+                    "concept_count": n,
+                    "cluster_type": cluster_type,
+                    "thinking_lenses": thinking_lenses,
+                    "delivers_via": delivers_via,
+                    "uses_template": templates,
+                    "domain_ids": [did],
+                    "uses_manipulative": refs["manipulatives"],
+                    "uses_representation": refs["representations"],
+                    "uses_context": refs["contexts"],
+                    "uses_reasoning_prompt": refs["reasoning"],
+                    "cross_curricular_links": [],
+                    "display_category": "Topic Suggestion",
+                    "display_color": "#3B82F6",
+                    "display_icon": "calculate",
+                })
 
         # Write file
         file_data = {
@@ -285,8 +334,8 @@ def generate_units(domains: dict, clusters: dict, ref_links: dict, dry_run: bool
             "subject": "Mathematics",
             "key_stage": ks,
             "authored_by": "maths-unit-generator",
-            "authored_date": "2026-03-19",
-            "note": f"MathsUnit nodes for {ks}. Auto-generated from extraction data and cluster definitions. Each unit corresponds to one curriculum domain.",
+            "authored_date": "2026-03-20",
+            "note": f"MathsUnit nodes for {ks}. Auto-generated from cluster definitions. Each unit corresponds to one ConceptCluster, following the many-to-one domain mapping pattern used by other subjects.",
             "units": units,
         }
 

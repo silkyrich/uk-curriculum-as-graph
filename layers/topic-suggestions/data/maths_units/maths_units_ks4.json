@@ -3,12 +3,12 @@
   "subject": "Mathematics",
   "key_stage": "KS4",
   "authored_by": "maths-unit-generator",
-  "authored_date": "2026-03-19",
-  "note": "MathsUnit nodes for KS4. Auto-generated from extraction data and cluster definitions. Each unit corresponds to one curriculum domain.",
+  "authored_date": "2026-03-20",
+  "note": "MathsUnit nodes for KS4. Auto-generated from cluster definitions. Each unit corresponds to one ConceptCluster, following the many-to-one domain mapping pattern used by other subjects.",
   "units": [
     {
       "unit_id": "MU-KS4-001",
-      "name": "Number",
+      "name": "Apply the four operations fluently to integers, fractions and decimals",
       "subject": "Mathematics",
       "key_stage": "KS4",
       "year_groups": [
@@ -17,18 +17,16 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Understanding and fluently applying the number system including integers, fractions, decimals, surds, powers, roots, and standard form, together with the use of approximation and estimation in context.",
-      "pedagogical_rationale": "Number at KS4 builds directly on KS3 number work to develop a fully integrated understanding of the real number system, including the distinction between rational and irrational numbers and the manipulation of surds. Pupils extend their fluency with the four operations to include complex fractions, negative indices and standard form, and apply these in increasingly sophisticated real-world contexts.",
-      "duration_lessons": 5,
-      "concept_count": 4,
-      "cluster_names": [
-        "Apply the four operations fluently to integers, fractions and decimals",
-        "Use powers, roots, surds, standard form and round to significant figures"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Number",
+      "description": "Covers: Integer and Rational Number Operations; Prime Factorisation and Number Theory.",
+      "pedagogical_rationale": "Integer and rational number operations and prime factorisation/number theory are the foundational GCSE number skills. Both cover the core arithmetic fluency expected of all GCSE candidates.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
-        "cause_and_effect",
-        "scale_proportion_quantity"
+        "cause_and_effect"
       ],
       "delivers_via": [
         {
@@ -38,10 +36,50 @@
         {
           "concept_id": "MA-KS4-C002",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D001"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-002",
+      "name": "Use powers, roots, surds, standard form and round to significant figures",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Number",
+      "description": "Covers: Powers, Roots and Surds; Estimation and Approximation.",
+      "pedagogical_rationale": "Powers/roots/surds (including fractional indices) and estimation/approximation (significant figures, error bounds) are the advanced number representation and precision targets at GCSE.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS4-C003",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS4-C004",
@@ -64,8 +102,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS4-002",
-      "name": "Algebra",
+      "unit_id": "MU-KS4-003",
+      "name": "Manipulate and factorise algebraic expressions including quadratics",
       "subject": "Mathematics",
       "key_stage": "KS4",
       "year_groups": [
@@ -74,29 +112,65 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Using algebraic notation and manipulation, solving equations and inequalities, working with sequences, functions and graphs, including quadratics, simultaneous equations, and proof.",
-      "pedagogical_rationale": "Algebra at KS4 extends the symbolic reasoning introduced in KS3 to encompass quadratic expressions and equations, simultaneous equations, algebraic fractions and formal proof. Pupils develop fluency with expanding and factorising, including completing the square and using the quadratic formula, and apply algebraic methods to model and solve problems in geometry, ratio and statistics contexts.",
-      "duration_lessons": 10,
-      "concept_count": 8,
-      "cluster_names": [
-        "Manipulate and factorise algebraic expressions including quadratics",
-        "Solve linear and quadratic equations and simultaneous equations",
-        "Work with sequences, linear functions and non-linear graphs",
-        "Understand function notation and apply graph transformations"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Algebra",
+      "description": "Covers: Algebraic Manipulation and Factorisation.",
+      "pedagogical_rationale": "Algebraic manipulation and factorisation (single brackets, double brackets, quadratics) is the foundational algebraic skill at GCSE upon which all equation and function work depends.",
+      "duration_lessons": 3,
+      "concept_count": 1,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "patterns",
-        "structure_function",
-        "cause_and_effect"
+        "structure_function"
       ],
       "delivers_via": [
         {
           "concept_id": "MA-KS4-C005",
           "primary": true
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS4-D002"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-004",
+      "name": "Solve linear and quadratic equations and simultaneous equations",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Algebra",
+      "description": "Covers: Solving Linear Equations and Inequalities; Quadratic Equations; Simultaneous Equations.",
+      "pedagogical_rationale": "Linear equations/inequalities, quadratic equations (factorising, formula, completing the square) and simultaneous equations are the core equation-solving cluster. C007 co-teaches with C008.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "cause_and_effect",
+        "patterns"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS4-C006",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS4-C007",
@@ -104,22 +178,6 @@
         },
         {
           "concept_id": "MA-KS4-C008",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS4-C009",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS4-C010",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS4-C011",
-          "primary": false
-        },
-        {
-          "concept_id": "MA-KS4-C012",
           "primary": false
         }
       ],
@@ -140,8 +198,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS4-003",
-      "name": "Ratio, Proportion and Rates of Change",
+      "unit_id": "MU-KS4-005",
+      "name": "Work with sequences, linear functions and non-linear graphs",
       "subject": "Mathematics",
       "key_stage": "KS4",
       "year_groups": [
@@ -150,14 +208,109 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Applying ratio, proportion and multiplicative reasoning to solve problems involving percentages, compound measures, scale, direct and inverse proportion, and rates of change.",
-      "pedagogical_rationale": "Ratio, proportion and rates of change at KS4 formalises and extends the multiplicative reasoning developed at KS3, applying it in more complex and applied contexts. Pupils work with ratio to solve problems involving maps, recipes, mixing, division into parts, currency conversion and similar situations, and extend percentage work to include reverse percentages, compound interest and repeated proportional change.",
-      "duration_lessons": 5,
-      "concept_count": 4,
-      "cluster_names": [
-        "Use ratio and scale to solve problems and calculate percentage change",
-        "Apply direct and inverse proportion and interpret compound measures"
+      "unit_type": "practice",
+      "domain_name": "Algebra",
+      "description": "Covers: Sequences and nth Term; Straight Line Graphs and Linear Functions; Non-linear Graphs.",
+      "pedagogical_rationale": "Sequences/nth term, straight line graphs (y=mx+c) and non-linear graphs (quadratic, cubic, exponential, trigonometric) are the function and graph cluster at GCSE.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "cause_and_effect"
       ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS4-C009",
+          "primary": true
+        },
+        {
+          "concept_id": "MA-KS4-C010",
+          "primary": false
+        },
+        {
+          "concept_id": "MA-KS4-C011",
+          "primary": false
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS4-D002"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-006",
+      "name": "Understand function notation and apply graph transformations",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Algebra",
+      "description": "Covers: Functions and Graph Transformations.",
+      "pedagogical_rationale": "Functions (notation, composite, inverse) and graph transformations (f(x+a), f(ax), af(x)) are the most advanced algebra targets at GCSE and form a distinct conceptual cluster.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "cause_and_effect",
+        "structure_function"
+      ],
+      "delivers_via": [
+        {
+          "concept_id": "MA-KS4-C012",
+          "primary": true
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS4-D002"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-007",
+      "name": "Use ratio and scale to solve problems and calculate percentage change",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "introduction",
+      "domain_name": "Ratio, Proportion and Rates of Change",
+      "description": "Covers: Ratio and Scale; Percentage Change and Financial Mathematics.",
+      "pedagogical_rationale": "Ratio/scale (simplifying, dividing, scale drawings) and percentage change/financial mathematics are the applied proportional reasoning targets at GCSE foundation and higher.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "scale_proportion_quantity",
         "cause_and_effect"
@@ -170,10 +323,51 @@
         {
           "concept_id": "MA-KS4-C014",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-09",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D003"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-008",
+      "name": "Apply direct and inverse proportion and interpret compound measures",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Ratio, Proportion and Rates of Change",
+      "description": "Covers: Direct and Inverse Proportion; Compound Measures and Rates of Change.",
+      "pedagogical_rationale": "Direct/inverse proportion (algebraic, graphical, numerical) and compound measures/rates of change (speed, density, gradient) are the advanced proportion cluster at GCSE.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "cause_and_effect"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS4-C015",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS4-C016",
@@ -197,8 +391,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS4-004",
-      "name": "Geometry and Measures",
+      "unit_id": "MU-KS4-009",
+      "name": "Calculate area, perimeter and volume using formulae for 2-D and 3-D shapes",
       "subject": "Mathematics",
       "key_stage": "KS4",
       "year_groups": [
@@ -207,20 +401,16 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Properties of 2D and 3D shapes, angle reasoning, transformations, constructions, mensuration, Pythagoras' theorem, trigonometry, vectors, and circle theorems.",
-      "pedagogical_rationale": "Geometry and measures at KS4 is the most expansive domain, requiring pupils to develop confident spatial reasoning supported by rigorous deductive argument. Building on KS3 geometry, pupils extend their work with 2D and 3D shapes to include arc lengths, sector areas, surface area and volume of prisms, cylinders, cones and spheres.",
-      "duration_lessons": 10,
-      "concept_count": 9,
-      "cluster_names": [
-        "Calculate area, perimeter and volume using formulae for 2-D and 3-D shapes",
-        "Apply Pythagoras' Theorem and trigonometry to 2-D and 3-D problems",
-        "Prove and apply circle theorems, congruence and similarity",
-        "Describe and apply geometric transformations and use vectors"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Area and Perimeter of 2D Shapes; Volume and Surface Area of 3D Solids.",
+      "pedagogical_rationale": "Area/perimeter of 2-D shapes (including arcs and sectors) and volume/surface area of 3-D solids are co-taught (C017 co-teaches with C018, C019, C020, C021). These form the mensuration cluster.",
+      "duration_lessons": 4,
+      "concept_count": 2,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "structure_function",
-        "scale_proportion_quantity",
-        "evidence_argument"
+        "scale_proportion_quantity"
       ],
       "delivers_via": [
         {
@@ -230,10 +420,51 @@
         {
           "concept_id": "MA-KS4-C018",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13",
+        "VT-05"
+      ],
+      "domain_ids": [
+        "MA-KS4-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-010",
+      "name": "Apply Pythagoras' Theorem and trigonometry to 2-D and 3-D problems",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Pythagoras' Theorem; Trigonometric Ratios (Right-Angled Triangles); Sine and Cosine Rules.",
+      "pedagogical_rationale": "Pythagoras, right-angled triangle trigonometry (sin/cos/tan) and the sine/cosine rules (non-right-angled triangles) are the trigonometry cluster. C020 co-teaches with C017 and C019.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS4-C019",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS4-C020",
@@ -242,18 +473,99 @@
         {
           "concept_id": "MA-KS4-C021",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-09",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-011",
+      "name": "Prove and apply circle theorems, congruence and similarity",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Circle Theorems; Congruence and Similarity.",
+      "pedagogical_rationale": "Circle theorems (angles, chords, tangents) and congruence/similarity (proof and ratio application) are the formal geometry reasoning targets at GCSE higher. Both require proof skills.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "evidence_argument"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS4-C022",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS4-C023",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D004"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-012",
+      "name": "Describe and apply geometric transformations and use vectors",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Geometry and Measures",
+      "description": "Covers: Transformations; Vectors.",
+      "pedagogical_rationale": "The four geometric transformations and vectors (column notation, addition, subtraction, scalar multiplication) are grouped as the transformation and position cluster at GCSE.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "structure_function",
+        "scale_proportion_quantity"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS4-C024",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS4-C025",
@@ -277,8 +589,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS4-005",
-      "name": "Probability",
+      "unit_id": "MU-KS4-013",
+      "name": "Understand theoretical and experimental probability on the 0-1 scale",
       "subject": "Mathematics",
       "key_stage": "KS4",
       "year_groups": [
@@ -287,27 +599,65 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Calculating theoretical and experimental probabilities for single and combined events using Venn diagrams, tree diagrams, frequency trees and set notation.",
-      "pedagogical_rationale": "Probability at KS4 builds on KS3 foundations to develop a rigorous quantitative framework for describing chance and uncertainty. Pupils learn to calculate theoretical probabilities using systematic enumeration and to estimate experimental probabilities from relative frequency, understanding the convergence of experimental probability to the theoretical value as the number of trials increases.",
-      "duration_lessons": 5,
-      "concept_count": 4,
-      "cluster_names": [
-        "Understand theoretical and experimental probability on the 0-1 scale",
-        "Calculate probabilities of combined and conditional events using diagrams"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Probability",
+      "description": "Covers: Basic Probability and Probability Scale.",
+      "pedagogical_rationale": "Basic probability and the probability scale (theoretical, experimental, relative frequency) is the foundational GCSE probability concept that all subsequent work depends upon.",
+      "duration_lessons": 3,
+      "concept_count": 1,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "scale_proportion_quantity",
-        "evidence_argument",
-        "systems_models"
+        "evidence_argument"
       ],
       "delivers_via": [
         {
           "concept_id": "MA-KS4-C026",
           "primary": true
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D005"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-014",
+      "name": "Calculate probabilities of combined and conditional events using diagrams",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Probability",
+      "description": "Covers: Combined Events and Tree Diagrams; Venn Diagrams and Set Notation; Conditional Probability.",
+      "pedagogical_rationale": "Combined events/tree diagrams, Venn diagrams/set notation and conditional probability are the advanced GCSE probability cluster. C028 co-teaches with C029.",
+      "duration_lessons": 4,
+      "concept_count": 3,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "scale_proportion_quantity",
+        "systems_models"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS4-C027",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS4-C028",
@@ -335,8 +685,8 @@
       "display_icon": "calculate"
     },
     {
-      "unit_id": "MU-KS4-006",
-      "name": "Statistics",
+      "unit_id": "MU-KS4-015",
+      "name": "Understand sampling methods and collect data appropriately",
       "subject": "Mathematics",
       "key_stage": "KS4",
       "year_groups": [
@@ -345,36 +695,113 @@
       ],
       "curriculum_status": "mandatory",
       "suggestion_type": "curriculum_unit",
-      "description": "Collecting, interpreting and comparing data using graphical representations, measures of average and spread, sampling methods, and correlation.",
-      "pedagogical_rationale": "Statistics at KS4 develops pupils' statistical literacy — the ability to collect, represent, interpret and evaluate data in order to answer questions, make decisions and identify bias. Pupils work with a wider range of graphical representations than at KS3, including cumulative frequency graphs, box plots and histograms with unequal class widths, and apply formal measures of spread including interquartile range.",
-      "duration_lessons": 5,
-      "concept_count": 4,
-      "cluster_names": [
-        "Understand sampling methods and collect data appropriately",
-        "Construct and interpret statistical diagrams and calculate averages",
-        "Describe and interpret bivariate data using scatter graphs and correlation"
-      ],
+      "unit_type": "introduction",
+      "domain_name": "Statistics",
+      "description": "Covers: Data Collection and Sampling.",
+      "pedagogical_rationale": "Data collection and sampling (random, systematic, stratified; bias identification) is the foundational GCSE statistics concept — understanding how data is gathered before it can be analysed.",
+      "duration_lessons": 3,
+      "concept_count": 1,
+      "cluster_type": "introduction",
       "thinking_lenses": [
         "evidence_argument",
-        "scale_proportion_quantity",
-        "patterns"
+        "scale_proportion_quantity"
       ],
       "delivers_via": [
         {
           "concept_id": "MA-KS4-C030",
           "primary": true
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D006"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-016",
+      "name": "Construct and interpret statistical diagrams and calculate averages",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Statistics",
+      "description": "Covers: Statistical Diagrams; Averages and Measures of Spread.",
+      "pedagogical_rationale": "Statistical diagrams (histograms, cumulative frequency, box plots) and averages/measures of spread (mean, median, mode, IQR) are the core GCSE statistical analysis cluster.",
+      "duration_lessons": 3,
+      "concept_count": 2,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "evidence_argument"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS4-C031",
-          "primary": false
+          "primary": true
         },
         {
           "concept_id": "MA-KS4-C032",
           "primary": false
-        },
+        }
+      ],
+      "uses_template": [
+        "VT-08",
+        "VT-13"
+      ],
+      "domain_ids": [
+        "MA-KS4-D006"
+      ],
+      "uses_manipulative": [],
+      "uses_representation": [],
+      "uses_context": [],
+      "uses_reasoning_prompt": [],
+      "cross_curricular_links": [],
+      "display_category": "Topic Suggestion",
+      "display_color": "#3B82F6",
+      "display_icon": "calculate"
+    },
+    {
+      "unit_id": "MU-KS4-017",
+      "name": "Describe and interpret bivariate data using scatter graphs and correlation",
+      "subject": "Mathematics",
+      "key_stage": "KS4",
+      "year_groups": [
+        "Y10",
+        "Y11"
+      ],
+      "curriculum_status": "mandatory",
+      "suggestion_type": "curriculum_unit",
+      "unit_type": "practice",
+      "domain_name": "Statistics",
+      "description": "Covers: Scatter Graphs and Correlation.",
+      "pedagogical_rationale": "Scatter graphs, correlation (positive/negative/none) and lines of best fit represent the bivariate data and relationship strand, distinct from univariate distribution analysis.",
+      "duration_lessons": 2,
+      "concept_count": 1,
+      "cluster_type": "practice",
+      "thinking_lenses": [
+        "patterns",
+        "evidence_argument"
+      ],
+      "delivers_via": [
         {
           "concept_id": "MA-KS4-C033",
-          "primary": false
+          "primary": true
         }
       ],
       "uses_template": [
