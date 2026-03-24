@@ -22,6 +22,7 @@ These are the "compilation units" -- the nodes that [teacher planners](../../doc
 | `GeoStudy` | Geography | 32 (KS1-KS4) | `study_type` (place/thematic/contrasting), `data_points`, `fieldwork_potential` |
 | `ScienceEnquiry` | Science | 45 (KS1-KS4) | `enquiry_type`, `variables`, `equipment`, `safety_notes` |
 | `EnglishUnit` | English | 54 (KS1-KS4) | `text_type`, `grammar_focus`, `writing_outcome`, `reading_focus` |
+| `MathsTopicSuggestion` | Mathematics | 47 (KS1-KS2) | `cpa_stage`, `manipulatives`, `representations`, `fluency_targets`, `nc_aim_emphasis` |
 | `ArtTopicSuggestion` | Art & Design | 39 (KS1-KS4) | `medium`, `artists`, `techniques` |
 | `MusicTopicSuggestion` | Music | 35 (KS1-KS4) | `musical_elements`, `listening_pieces`, `performance_type` |
 | `DTTopicSuggestion` | Design & Technology | 33 (KS1-KS4) | `materials`, `tools`, `design_brief` |

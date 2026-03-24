@@ -1,0 +1,795 @@
+[
+  {
+    "suggestion_id": "MTS-KS1-001",
+    "name": "Counting, Reading and Writing Numbers to 100",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "count to and across 100, forwards and backwards, beginning with 0 or 1, or from any given number",
+      "count, read and write numbers to 100 in numerals",
+      "given a number, identify one more and one less",
+      "identify and represent numbers using objects and pictorial representations including the number line, and use the language of: equal to, more than, less than, most, least"
+    ],
+    "pedagogical_rationale": "Counting is the bedrock of all number work. Pupils must first count reliably with one-to-one correspondence, then understand that the last number spoken tells you the total (cardinal principle). Counting forwards and backwards from any number builds fluency and prepares for addition and subtraction. Reading and writing numerals connects the oral count to the symbolic system. The progression from concrete objects to pictorial number tracks to abstract numerals follows a clear CPA pathway.",
+    "common_pitfalls": [
+      "Pupils count objects without touching or moving them, leading to miscounts -- insist on 'touch and count'",
+      "Confusion between teen numbers and decade numbers (thirteen vs thirty) -- emphasise the '-teen' suffix means 'and ten'",
+      "Difficulty crossing decade boundaries when counting (29, 30 is hard) -- practise bridging ten with a hundred square",
+      "Writing numerals reversed (especially 2, 3, 5, 7) -- provide number formation rhymes and tactile tracing"
+    ],
+    "year_groups": ["Y1"],
+    "duration_lessons": 8,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Begin with concrete counting of physical objects grouped in tens and ones. Move to pictorial number tracks and hundred squares. Abstract numeral writing practised alongside.",
+    "manipulatives": ["Interlocking Cubes", "Bead Strings", "Numicon", "Counters"],
+    "representations": ["Number Track", "Number Line", "Hundred Square"],
+    "fluency_targets": [
+      "Count forwards to 100 from any given number without hesitation",
+      "Count backwards from 20 to 0 without error",
+      "Read and write all numerals 0-20 correctly",
+      "Identify one more and one less for any number within 100"
+    ],
+    "reasoning_prompts": [
+      "I count 10, 11, 12, 31, 14... What mistake have I made?",
+      "Is 17 closer to 10 or to 20? How do you know?",
+      "If I start at 5 and count on 3, where do I land? How could you check?"
+    ],
+    "application_contexts": [
+      "Counting classroom objects (pencils, books, children in the class)",
+      "Reading house numbers on a street walk",
+      "Finding page numbers in a book"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y1-C001", "primary": true},
+      {"concept_id": "MA-Y1-C002", "primary": false},
+      {"concept_id": "MA-Y1-C003", "primary": false},
+      {"concept_id": "MA-Y1-C004", "primary": false},
+      {"concept_id": "MA-Y1-C005", "primary": false},
+      {"concept_id": "MA-Y1-C006", "primary": false},
+      {"concept_id": "MA-Y1-C007", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-05"],
+    "domain_ids": ["MA-Y1-D001"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-002",
+    "name": "Addition and Subtraction Facts Within 20",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "read, write and interpret mathematical statements involving addition (+), subtraction (–) and equals (=) signs",
+      "represent and use number bonds and related subtraction facts within 20",
+      "add and subtract one-digit and two-digit numbers to 20, including zero",
+      "solve one-step problems that involve addition and subtraction, using concrete objects and pictorial representations, and missing number problems such as 7 = ☐ – 9"
+    ],
+    "pedagogical_rationale": "Number bonds to 10 and 20 are the essential facts that underpin all later arithmetic. Pupils must move from counting all (combining two groups and counting from 1) to counting on (starting from the larger number) and eventually to known facts recalled from memory. The part-whole model is the key representation: it shows that addition and subtraction are inverse operations on the same structure, not two separate operations. Missing number problems develop early algebraic thinking.",
+    "common_pitfalls": [
+      "Pupils always count from 1 rather than counting on from the larger number -- model the counting-on strategy explicitly",
+      "Treating the equals sign as 'the answer comes next' rather than 'both sides are the same' -- use balance problems like 5 + 3 = ☐ + 2",
+      "Not recognising that subtraction can mean 'take away' OR 'find the difference' -- teach both models",
+      "Number bonds learned by rote without understanding the part-whole relationship -- always link to the part-whole model"
+    ],
+    "year_groups": ["Y1"],
+    "duration_lessons": 10,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: use two-colour counters on ten frames to physically partition numbers. Pictorial: draw part-whole models and bar models. Abstract: write number sentences using +, -, and = symbols.",
+    "manipulatives": ["Two-Colour Counters", "Ten Frames", "Numicon", "Interlocking Cubes"],
+    "representations": ["Part-Whole Model", "Ten Frame Diagram", "Bar Model", "Number Line"],
+    "fluency_targets": [
+      "Recall all number bonds to 10 within 3 seconds",
+      "Recall all number bonds to 20 within 5 seconds",
+      "State the subtraction fact for any addition bond (e.g. 7 + 3 = 10, so 10 - 3 = 7)",
+      "Add and subtract 0 and 1 to/from any number to 20 instantly"
+    ],
+    "reasoning_prompts": [
+      "I think 8 + 5 = 12. Am I right? How do you know?",
+      "If 6 + 4 = 10, what does 10 - 4 equal? Why must that be true?",
+      "Why is 7 + 3 the same as 3 + 7? Does the order matter for subtraction?"
+    ],
+    "application_contexts": [
+      "Sharing sweets equally between friends and finding how many are left",
+      "Working out how many more stickers are needed to fill a sticker book page",
+      "Solving simple word problems involving combining and separating groups"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y1-C008", "primary": true},
+      {"concept_id": "MA-Y1-C009", "primary": false},
+      {"concept_id": "MA-Y1-C010", "primary": false},
+      {"concept_id": "MA-Y1-C011", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-13"],
+    "domain_ids": ["MA-Y1-D002"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-003",
+    "name": "Doubling, Halving and Early Multiplication",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "solve one-step problems involving multiplication and division, by calculating the answer using concrete objects, pictorial representations and arrays with the support of the teacher"
+    ],
+    "pedagogical_rationale": "Y1 multiplication focuses on counting in 2s, 5s, and 10s and understanding that multiplication means repeated equal groups. Doubling is the entry point: children already understand 'two of the same'. Arrays (rows and columns of objects) make the multiplicative structure visible and lay the groundwork for times tables. Division at this stage means sharing equally into groups. The concrete experience of grouping and sharing must precede any symbolic notation.",
+    "common_pitfalls": [
+      "Pupils confuse 'groups of' with 'groups' -- 3 groups of 5 is not the same as 5 groups of 3 (though the total is equal)",
+      "Sharing unequally because they deal one to the first person, two to the second, etc. -- teach systematic 'dealing' round the circle",
+      "Counting in 2s/5s/10s by rote without understanding that each count adds another group -- link every skip-count to a concrete group"
+    ],
+    "year_groups": ["Y1"],
+    "duration_lessons": 6,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: physically make equal groups with counters and cubes; share objects into piles. Pictorial: draw arrays and groups on paper. Abstract: begin to use the x and / symbols only once concrete understanding is secure.",
+    "manipulatives": ["Counters", "Interlocking Cubes", "Numicon"],
+    "representations": ["Array Diagram", "Number Line"],
+    "fluency_targets": [
+      "Count in 2s to 20 fluently",
+      "Count in 5s to 50 fluently",
+      "Count in 10s to 100 fluently",
+      "Double any number to 10 instantly"
+    ],
+    "reasoning_prompts": [
+      "There are 3 plates with 2 biscuits on each. How many biscuits altogether? How do you know?",
+      "I have 10 sweets and share them equally between 2 friends. How many each? What if I share between 5 friends?",
+      "Is 2 + 2 + 2 + 2 the same as 4 x 2? How could you check?"
+    ],
+    "application_contexts": [
+      "Counting pairs of shoes, gloves, or socks",
+      "Sharing fruit equally at snack time",
+      "Skip-counting coins (2p, 5p, 10p)"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y1-C012", "primary": true},
+      {"concept_id": "MA-Y1-C013", "primary": false}
+    ],
+    "uses_template": ["VT-13", "VT-08"],
+    "domain_ids": ["MA-Y1-D003"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-004",
+    "name": "Halves and Quarters of Shapes and Quantities",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "recognise, find and name a half as one of two equal parts of an object, shape or quantity",
+      "recognise, find and name a quarter as one of four equal parts of an object, shape or quantity"
+    ],
+    "pedagogical_rationale": "Fractions begin with the physical experience of equal sharing and folding. A half means two equal parts -- the word 'equal' is critical and must be emphasised. Pupils who fold paper, cut playdough, and share counters into two equal groups develop an intuitive understanding that transfers to the symbolic notation 1/2. Quarters extend this to four equal parts. The emphasis at Y1 is on the concrete action of equal partitioning, not on the fraction notation.",
+    "common_pitfalls": [
+      "Pupils accept unequal halves as halves -- always ask 'are the parts exactly the same size?'",
+      "Folding paper unevenly and calling the result 'a half' -- teach edge-to-edge matching",
+      "Thinking a quarter is any piece cut from a shape rather than one of four EQUAL parts -- use counter-examples",
+      "Confusing halving a shape (area) with halving a quantity (number) -- teach both explicitly"
+    ],
+    "year_groups": ["Y1"],
+    "duration_lessons": 5,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: fold paper shapes, cut playdough, share counters into two and four equal groups. Pictorial: shade half and quarter of drawn shapes, draw fraction strips and circles. Abstract: introduce 1/2 and 1/4 notation only after concrete understanding is secure.",
+    "manipulatives": ["Fraction Tiles and Circles", "Counters", "Cuisenaire Rods"],
+    "representations": ["Fraction Strip Diagram", "Fraction Circle Diagram (Pie Diagram)"],
+    "fluency_targets": [
+      "Find half of any even number to 20",
+      "Find a quarter of 4, 8, 12, 16, and 20",
+      "Recognise that two halves make a whole and four quarters make a whole"
+    ],
+    "reasoning_prompts": [
+      "Sam says this shape is cut in half (show unequal parts). Do you agree? Why not?",
+      "If I have 12 sweets and give half to my friend, how many do we each get? How did you work it out?",
+      "Which is bigger: a half or a quarter? How do you know?"
+    ],
+    "application_contexts": [
+      "Sharing a pizza or cake equally between 2 or 4 people",
+      "Folding paper to make symmetrical patterns",
+      "Telling the time: half past the hour"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y1-C014", "primary": true},
+      {"concept_id": "MA-Y1-C015", "primary": false}
+    ],
+    "uses_template": ["VT-13", "VT-08"],
+    "domain_ids": ["MA-Y1-D004"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-005",
+    "name": "Measuring Length, Weight, Capacity and Time",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "compare, describe and solve practical problems for: lengths and heights; mass/weight; capacity and volume; time",
+      "measure and begin to record lengths and heights, mass/weight, capacity and volume",
+      "recognise and use language relating to dates, including days of the week, weeks, months and years",
+      "tell the time to the hour and half past the hour and draw the hands on a clock face to show these times",
+      "sequence events in chronological order using language"
+    ],
+    "pedagogical_rationale": "Measurement connects number to the physical world. Pupils begin by comparing directly (which is taller?), then use non-standard units (how many cubes long?), then move to standard units (centimetres, grams, litres). This progression from comparison to non-standard to standard units mirrors the CPA journey. Time is taught alongside because it involves reading a scale (the clock face) and sequencing, both of which develop measurement concepts. Practical, hands-on measuring activities are essential at this stage.",
+    "common_pitfalls": [
+      "Not aligning objects at the same starting point when comparing lengths -- teach 'line up the ends'",
+      "Leaving gaps or overlapping when measuring with non-standard units -- model careful placement",
+      "Reading the wrong hand on a clock face -- teach 'the short hand tells the hour, the long hand tells the minutes'",
+      "Confusing mass and weight in everyday language -- accept 'heavy' and 'light' but model 'mass' where appropriate"
+    ],
+    "year_groups": ["Y1"],
+    "duration_lessons": 8,
+    "cpa_stage": "concrete",
+    "cpa_notes": "Primarily concrete: direct comparison of real objects, measuring with cubes and hands, pouring water, handling clock faces. Pictorial: recording results in simple tables and drawings. This domain is inherently practical and should remain concrete for the majority of lessons.",
+    "manipulatives": ["Interlocking Cubes", "Rulers and Metre Sticks", "Balance Scales", "Geared Demonstration Clock", "Coins and Notes"],
+    "representations": ["Number Line", "Tally Chart"],
+    "fluency_targets": [
+      "Name the days of the week in order",
+      "Name the months of the year in order",
+      "Tell the time to the hour on an analogue clock",
+      "Tell the time to half past on an analogue clock",
+      "Use comparison language correctly: longer/shorter, heavier/lighter, more/less, full/empty"
+    ],
+    "reasoning_prompts": [
+      "This pencil is 5 cubes long and that pencil is 8 cubes long. Which is longer and by how many cubes?",
+      "The hour hand is pointing to 3 and the minute hand is pointing to 12. What time is it? How do you know?",
+      "I poured water from a tall thin bottle into a short wide jug. Is there more water, less water, or the same? Why?"
+    ],
+    "application_contexts": [
+      "Measuring classroom objects with cubes and rulers",
+      "Comparing the weight of fruit and vegetables with balance scales",
+      "Reading the classroom clock throughout the day"
+    ],
+    "nc_aim_emphasis": "problem_solving",
+    "delivers_via": [
+      {"concept_id": "MA-Y1-C016", "primary": true},
+      {"concept_id": "MA-Y1-C017", "primary": false},
+      {"concept_id": "MA-Y1-C018", "primary": false},
+      {"concept_id": "MA-Y1-C019", "primary": false},
+      {"concept_id": "MA-Y1-C020", "primary": false}
+    ],
+    "uses_template": ["VT-13", "VT-05"],
+    "domain_ids": ["MA-Y1-D005"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-006",
+    "name": "Recognising and Naming 2-D and 3-D Shapes",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "recognise and name common 2-D shapes [for example, rectangles (including squares), circles and triangles]",
+      "recognise and name common 3-D shapes [for example, cuboids (including cubes), pyramids and spheres]"
+    ],
+    "pedagogical_rationale": "Shape recognition at Y1 goes beyond naming: pupils must learn to identify shapes by their properties (number of sides, number of corners, flat or curved faces) rather than by appearance alone. Presenting shapes in different orientations, sizes, and contexts prevents pupils from developing a fixed mental image (e.g. thinking a triangle must have a horizontal base). Handling real 3-D shapes and sorting them by properties builds geometric reasoning.",
+    "common_pitfalls": [
+      "Only showing shapes in standard orientation (triangle with horizontal base, rectangle with longer side horizontal) -- rotate shapes deliberately",
+      "Calling a square 'not a rectangle' -- a square is a special rectangle and this should be taught from Y1",
+      "Confusing 2-D shape names with 3-D shape names (calling a sphere a 'circle') -- handle both and compare faces",
+      "Describing shapes only by name rather than by properties -- always ask 'how many sides? how many corners?'"
+    ],
+    "year_groups": ["Y1"],
+    "duration_lessons": 5,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: sort real 3-D shapes, build shapes with construction materials, feel shapes in a feely bag. Pictorial: draw around faces of 3-D shapes to discover the 2-D shapes, sort shapes on a Carroll diagram. Abstract: name and describe shapes using property vocabulary.",
+    "manipulatives": ["Interlocking Cubes"],
+    "representations": ["Array Diagram"],
+    "fluency_targets": [
+      "Name circles, triangles, rectangles (including squares) on sight",
+      "Name cubes, cuboids, pyramids, spheres, cylinders, cones on sight",
+      "State the number of sides and corners of common 2-D shapes",
+      "Identify flat and curved surfaces on 3-D shapes"
+    ],
+    "reasoning_prompts": [
+      "I have a shape with 4 sides but they are not all the same length. What could it be?",
+      "Are all triangles the same? How are they different?",
+      "A cube has 6 faces. What shape is each face? How do you know?"
+    ],
+    "application_contexts": [
+      "Shape hunts around the classroom and school grounds",
+      "Sorting everyday objects by their 3-D shape (tins, boxes, balls)",
+      "Building models from 3-D shapes and describing them"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y1-C021", "primary": true},
+      {"concept_id": "MA-Y1-C022", "primary": false}
+    ],
+    "uses_template": ["VT-05", "VT-13"],
+    "domain_ids": ["MA-Y1-D006"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-007",
+    "name": "Describing Position and Movement",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "describe position, direction and movement, including half, quarter and three-quarter turns"
+    ],
+    "pedagogical_rationale": "Position and direction work develops spatial reasoning, which is foundational for later geometry and is strongly correlated with mathematical achievement. At Y1, pupils use their own bodies to experience left, right, forwards, backwards, above, below, and turns. Whole, half, and quarter turns connect to fractions and to clockwise/anticlockwise rotation. Programming activities (e.g. directing a partner through a maze) make the precision of directional language tangible and link to computing curriculum goals.",
+    "common_pitfalls": [
+      "Confusing left and right -- practise with physical movement before pencil and paper tasks",
+      "Not specifying clockwise or anticlockwise for turns -- always name the direction",
+      "Assuming quarter turn always means turning to face right -- demonstrate quarter turns in all directions",
+      "Using 'next to' without specifying which side -- insist on precise positional language"
+    ],
+    "year_groups": ["Y1"],
+    "duration_lessons": 4,
+    "cpa_stage": "concrete",
+    "cpa_notes": "Primarily concrete and physical: pupils move their bodies, direct partners through obstacle courses, programme floor robots. Pictorial: draw routes on simple grids. The embodied, physical experience is essential before any paper-based work.",
+    "manipulatives": ["Interlocking Cubes"],
+    "representations": ["Number Track"],
+    "fluency_targets": [
+      "Use the language above, below, between, next to, in front of, behind correctly",
+      "Make a quarter turn, half turn, three-quarter turn, and full turn on the spot",
+      "Distinguish clockwise from anticlockwise turns"
+    ],
+    "reasoning_prompts": [
+      "I am facing the door. I make a half turn. What am I facing now? How do you know?",
+      "The teddy is between the car and the ball. Draw where the teddy could be. Is there more than one answer?",
+      "If I make two quarter turns in the same direction, what is that the same as?"
+    ],
+    "application_contexts": [
+      "Giving directions to a partner to navigate an obstacle course",
+      "Programming a floor robot (BeeBot) to reach a target square",
+      "Describing the position of objects in a picture"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y1-C023", "primary": true},
+      {"concept_id": "MA-Y1-C024", "primary": false}
+    ],
+    "uses_template": ["VT-13", "VT-05"],
+    "domain_ids": ["MA-Y1-D007"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-008",
+    "name": "Place Value and Number Sense to 100",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "recognise the place value of each digit in a two-digit number (tens, ones)",
+      "identify, represent and estimate numbers using different representations, including the number line",
+      "compare and order numbers from 0 up to 100; use <, > and = signs"
+    ],
+    "pedagogical_rationale": "Place value is the gateway to all written arithmetic. Y2 pupils must understand that in the number 47, the 4 represents 4 tens (forty) and the 7 represents 7 ones. This is not obvious -- our place value system is a sophisticated abstraction. Dienes blocks make the grouping concrete: ten unit cubes physically snap together to form a ten-stick. Arrow cards show partitioning by overlay. The hundred square reveals the pattern structure. Estimation on a number line develops proportional reasoning and number sense.",
+    "common_pitfalls": [
+      "Pupils read 47 as 'four seven' rather than 'forty-seven' -- always insist on the value name",
+      "Thinking the tens digit is just a digit rather than representing groups of ten -- use Dienes blocks extensively",
+      "Writing the < and > symbols the wrong way round -- teach the 'crocodile eats the bigger number' mnemonic",
+      "Treating the number line as a number track (counting spaces instead of reading positions) -- model reading the marks"
+    ],
+    "year_groups": ["Y2"],
+    "duration_lessons": 8,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: build two-digit numbers with Dienes blocks on a place value mat; partition and recombine with arrow cards. Pictorial: represent numbers on number lines, place value charts, and hundred squares. Abstract: read, write, and compare numbers using <, >, and = symbols.",
+    "manipulatives": ["Dienes Blocks (Base-10 Apparatus)", "Arrow Cards (Place Value Cards)", "Place Value Mat", "Bead Strings"],
+    "representations": ["Number Line", "Hundred Square", "Place Value Chart"],
+    "fluency_targets": [
+      "Partition any two-digit number into tens and ones (e.g. 63 = 60 + 3)",
+      "Compare any two two-digit numbers using < and > correctly",
+      "Count in 2s, 3s, and 5s from 0",
+      "Estimate the position of a number on a 0-100 number line within 5"
+    ],
+    "reasoning_prompts": [
+      "What is the value of the 3 in 37? What about the 3 in 73? Why are they different?",
+      "I have 5 tens and 12 ones. What number have I made? Is there another way to say it?",
+      "Tom says 72 > 27 because 7 is bigger than 2. Is his reasoning correct? Can you explain better?"
+    ],
+    "application_contexts": [
+      "Reading two-digit numbers on house doors, bus routes, and page numbers",
+      "Estimating quantities ('about how many cubes in this jar?') and checking by counting",
+      "Ordering scores in a class game from smallest to largest"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y2-C001", "primary": true},
+      {"concept_id": "MA-Y2-C003", "primary": false},
+      {"concept_id": "MA-Y2-C011", "primary": false},
+      {"concept_id": "MA-Y2-C021", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-05"],
+    "domain_ids": ["MA-Y2-D001"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-009",
+    "name": "Addition and Subtraction Within 100",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "solve problems with addition and subtraction: using concrete objects and pictorial representations, including those involving numbers, quantities and measures",
+      "recall and use addition and subtraction facts to 20 fluently, and derive and use related facts up to 100",
+      "add and subtract numbers using concrete objects, pictorial representations, and mentally, including: a two-digit number and ones; a two-digit number and tens; two two-digit numbers; adding three one-digit numbers",
+      "recognise and use the inverse relationship between addition and subtraction and use this to check calculations and solve missing number problems"
+    ],
+    "pedagogical_rationale": "Y2 extends addition and subtraction to two-digit numbers, which introduces the critical concept of exchanging (regrouping). Pupils must understand that 10 ones can be exchanged for 1 ten and vice versa. This is best taught concretely with Dienes blocks: physically swapping 10 unit cubes for a ten-stick makes the exchange visible and tangible. The inverse relationship between addition and subtraction is a key reasoning concept: if 34 + 27 = 61, then 61 - 27 = 34. This is taught through the part-whole model.",
+    "common_pitfalls": [
+      "Adding the tens and ones separately without exchanging (47 + 25 = 612) -- use Dienes blocks to show the exchange",
+      "Subtracting the smaller digit from the larger in each column regardless of position (62 - 47 = 25) -- model with Dienes blocks",
+      "Not using the inverse to check answers -- teach 'check by doing the opposite operation'",
+      "Over-reliance on counting in ones rather than using number facts and place value -- model efficient strategies"
+    ],
+    "year_groups": ["Y2"],
+    "duration_lessons": 10,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: Dienes blocks on place value mats for addition and subtraction with exchange. Pictorial: part-whole models and bar models for word problems, number lines for mental strategies. Abstract: column recording alongside concrete work (not replacing it).",
+    "manipulatives": ["Dienes Blocks (Base-10 Apparatus)", "Place Value Mat", "Two-Colour Counters", "Bead Strings"],
+    "representations": ["Part-Whole Model", "Bar Model", "Number Line", "Place Value Chart"],
+    "fluency_targets": [
+      "Recall all addition and subtraction facts within 20 instantly",
+      "Add and subtract 10 to/from any two-digit number mentally",
+      "Add and subtract multiples of 10 to/from any two-digit number",
+      "Use known facts to derive new ones (e.g. if 6 + 4 = 10, then 60 + 40 = 100)"
+    ],
+    "reasoning_prompts": [
+      "34 + 27 = 61. Without calculating, what is 61 - 27? How do you know?",
+      "Is it easier to work out 48 + 35 or 48 + 30 + 5? Why?",
+      "I added two numbers and got 50. One number is 23. What is the other? How many ways can you check?"
+    ],
+    "application_contexts": [
+      "Shopping problems: working out total cost and change from 1 pound",
+      "Measuring problems: finding the difference in length between two objects",
+      "Data problems: how many more children chose X than Y?"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y2-C004", "primary": true},
+      {"concept_id": "MA-Y2-C005", "primary": false},
+      {"concept_id": "MA-Y2-C006", "primary": false},
+      {"concept_id": "MA-Y2-C007", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-13"],
+    "domain_ids": ["MA-Y2-D002"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-010",
+    "name": "Multiplication and Division Facts for 2, 5, and 10",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "recall and use multiplication and division facts for the 2, 5 and 10 multiplication tables, including recognising odd and even numbers",
+      "calculate mathematical statements for multiplication and division within the multiplication tables and write them using the multiplication (x), division (/) and equals (=) signs",
+      "show that multiplication of two numbers can be done in any order (commutative) and division of one number by another cannot"
+    ],
+    "pedagogical_rationale": "The 2, 5, and 10 times tables are the first multiplication facts pupils learn because they connect to skip-counting (already familiar from Y1), coin values (2p, 5p, 10p), and the structure of the number system (even numbers, numbers ending in 0 or 5). Arrays are the key representation: they make commutativity visible (rotate the array and the total stays the same) and bridge to the area model used in later years. Division is taught as both sharing (12 shared between 3 gives 4 each) and grouping (how many groups of 3 in 12?).",
+    "common_pitfalls": [
+      "Only teaching division as sharing, not as grouping -- teach both models: 'sharing 12 between 3' AND 'how many 3s in 12?'",
+      "Not connecting multiplication and division as inverse operations -- use arrays to show 3 x 4 = 12, so 12 / 4 = 3",
+      "Rote-learning times tables without understanding the multiplicative structure -- always link to arrays and equal groups",
+      "Assuming commutativity applies to division (12 / 3 is not the same as 3 / 12) -- demonstrate with concrete sharing"
+    ],
+    "year_groups": ["Y2"],
+    "duration_lessons": 8,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: make equal groups with counters, build arrays with cubes, share objects into equal piles. Pictorial: draw arrays on squared paper, represent equal groups in pictures. Abstract: write multiplication and division sentences using x, /, and = symbols.",
+    "manipulatives": ["Counters", "Interlocking Cubes", "Coins and Notes", "Numicon"],
+    "representations": ["Array Diagram", "Number Line", "Bar Model"],
+    "fluency_targets": [
+      "Recall all 2x table facts to 2 x 12",
+      "Recall all 5x table facts to 5 x 12",
+      "Recall all 10x table facts to 10 x 12",
+      "State the related division fact for any known multiplication fact",
+      "Identify whether a number is odd or even"
+    ],
+    "reasoning_prompts": [
+      "3 x 5 = 15. Without calculating, what is 15 / 5? Why must that be true?",
+      "Is 4 x 5 the same as 5 x 4? How can you prove it using an array?",
+      "All multiples of 10 are even. Are all multiples of 5 even? How do you know?"
+    ],
+    "application_contexts": [
+      "Counting money: totals of 2p, 5p, and 10p coins",
+      "Packaging problems: putting items into equal groups for party bags",
+      "Measuring: counting in 5s and 10s on a ruler or measuring jug"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y2-C008", "primary": true},
+      {"concept_id": "MA-Y2-C009", "primary": false},
+      {"concept_id": "MA-Y2-C010", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-05"],
+    "domain_ids": ["MA-Y2-D003"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-011",
+    "name": "Fractions: Halves, Quarters, and Thirds",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "recognise, find, name and write fractions 1/3, 1/4, 2/4 and 3/4 of a length, shape, set of objects or quantity",
+      "write simple fractions for example, 1/2 of 6 = 3 and recognise the equivalence of 2/4 and 1/2"
+    ],
+    "pedagogical_rationale": "Y2 extends fraction understanding from halves and quarters to include thirds, and from unit fractions to non-unit fractions (2/4, 3/4). The critical new idea is that 2/4 is equivalent to 1/2 -- this is the first encounter with fraction equivalence. Fractions of quantities (1/3 of 12) connect fractions to division. Concrete folding and sharing remain essential, but pupils now also work with fraction notation and begin to reason about the relationship between fractions.",
+    "common_pitfalls": [
+      "Thinking fractions only apply to shapes, not to quantities -- practise fractions of sets of objects alongside shapes",
+      "Not understanding that 2/4 and 1/2 are the same amount -- use fraction walls and overlapping fraction strips",
+      "Finding 1/3 of a quantity by splitting into unequal groups -- teach systematic sharing one at a time",
+      "Reading 3/4 as 'three fours' rather than 'three quarters' -- model correct fraction language consistently"
+    ],
+    "year_groups": ["Y2"],
+    "duration_lessons": 6,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: fold paper strips, share counters into equal groups, use fraction tiles and circles. Pictorial: shade fractions of shapes, draw fraction strips side by side to compare, use fraction wall diagrams. Abstract: write fraction notation and simple fraction-of-a-quantity number sentences.",
+    "manipulatives": ["Fraction Tiles and Circles", "Fraction Wall", "Counters", "Cuisenaire Rods"],
+    "representations": ["Fraction Strip Diagram", "Fraction Wall Diagram", "Fraction Circle Diagram (Pie Diagram)", "Bar Model"],
+    "fluency_targets": [
+      "Find 1/2, 1/4, and 1/3 of quantities up to 24",
+      "Recognise that 2/4 = 1/2",
+      "Find 3/4 of a quantity by finding 1/4 and multiplying by 3 or finding 1/2 + 1/4",
+      "Write the fraction shown by a shaded shape"
+    ],
+    "reasoning_prompts": [
+      "1/2 of 12 = 6 and 2/4 of 12 = 6. Why do they give the same answer?",
+      "Which is bigger: 1/3 of 12 or 1/4 of 12? Can you explain without calculating?",
+      "Sam ate 1/4 of a pizza. What fraction is left? How do you know?"
+    ],
+    "application_contexts": [
+      "Sharing food equally at a party (pizza slices, cake portions)",
+      "Reading recipes that use fractions (half a cup, quarter of a teaspoon)",
+      "Measuring: finding the halfway point on a ruler"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y2-C012", "primary": true},
+      {"concept_id": "MA-Y2-C013", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-13"],
+    "domain_ids": ["MA-Y2-D004"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-012",
+    "name": "Measuring Length, Mass, Capacity, Temperature, and Money",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "choose and use appropriate standard units to estimate and measure length/height in any direction (m/cm); mass (kg/g); temperature (°C); capacity (litres/ml) to the nearest appropriate unit, using rulers, scales, thermometers and measuring vessels",
+      "compare and order lengths, mass, volume/capacity and record the results using >, < and =",
+      "recognise and use symbols for pounds (£) and pence (p) and combine amounts to make a particular value"
+    ],
+    "pedagogical_rationale": "Y2 measurement introduces standard units, which is a significant conceptual leap: pupils must understand that we need agreed units so everyone measures the same way. Reading scales is a cross-cutting skill that applies to rulers, kitchen scales, measuring jugs, and thermometers. Money work connects number, place value, and measurement: 1 pound = 100 pence mirrors the base-10 number system. All measurement work should be practical and hands-on, with pupils recording and comparing their results.",
+    "common_pitfalls": [
+      "Not starting from zero when using a ruler -- teach 'find the 0 first'",
+      "Reading scales with unnumbered divisions by guessing rather than counting the divisions -- teach systematic scale reading",
+      "Mixing up units (writing 35cm when they mean 35m) -- insist on meaningful estimation before measuring",
+      "Treating £ and p as separate: writing £3.50p instead of £3.50 or 350p -- teach the two notation systems"
+    ],
+    "year_groups": ["Y2"],
+    "duration_lessons": 8,
+    "cpa_stage": "concrete",
+    "cpa_notes": "Primarily concrete: measuring real objects, reading real scales, handling real coins and notes. Pictorial: recording measurements in tables and charts, drawing measurement results. Abstract: recording with correct units and symbols (cm, m, kg, g, £, p).",
+    "manipulatives": ["Rulers and Metre Sticks", "Balance Scales", "Coins and Notes", "Geared Demonstration Clock"],
+    "representations": ["Number Line", "Tally Chart", "Bar Chart (Block Diagram)"],
+    "fluency_targets": [
+      "Know that 1m = 100cm, 1kg = 1000g, 1 litre = 1000ml",
+      "Read a ruler to the nearest centimetre",
+      "Read a scale with numbered and unnumbered divisions",
+      "Make amounts to 1 pound using different coin combinations",
+      "Find change from 50p and from 1 pound"
+    ],
+    "reasoning_prompts": [
+      "My book is 30cm long. Is it longer or shorter than 1 metre? How do you know?",
+      "The scale shows a mark halfway between 100g and 200g. What is the mass?",
+      "I buy an apple for 35p and pay with a 50p coin. What change do I get? How did you work it out?"
+    ],
+    "application_contexts": [
+      "Measuring ingredients for a class cooking activity",
+      "Running a classroom shop with real coins",
+      "Recording daily temperatures and comparing them"
+    ],
+    "nc_aim_emphasis": "problem_solving",
+    "delivers_via": [
+      {"concept_id": "MA-Y2-C014", "primary": true},
+      {"concept_id": "MA-Y2-C015", "primary": false},
+      {"concept_id": "MA-Y2-C016", "primary": false}
+    ],
+    "uses_template": ["VT-13", "VT-18"],
+    "domain_ids": ["MA-Y2-D005"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-013",
+    "name": "Properties of 2-D and 3-D Shapes",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "identify and describe the properties of 2-D shapes, including the number of sides and line symmetry in a vertical line",
+      "identify and describe the properties of 3-D shapes, including the number of edges, vertices and faces",
+      "identify 2-D shapes on the surface of 3-D shapes"
+    ],
+    "pedagogical_rationale": "Y2 geometry moves from recognition to property-based description. Pupils must describe shapes using mathematical vocabulary (sides, vertices, edges, faces) rather than informal language. The introduction of symmetry adds a new dimension to shape analysis: folding shapes to test for symmetry is a powerful concrete activity. Identifying 2-D shapes on the surfaces of 3-D shapes connects the two domains and deepens understanding of both. Sorting and classifying shapes by properties develops logical reasoning.",
+    "common_pitfalls": [
+      "Confusing vertices (corners of 2-D shapes) with vertices (corners of 3-D shapes) -- handle both with the same vocabulary but distinguish the context",
+      "Thinking symmetry means 'the same on both sides' without testing by folding -- always fold or use a mirror to verify",
+      "Miscounting edges on 3-D shapes by missing hidden edges -- encourage systematic counting with a method",
+      "Describing shapes by colour or size rather than geometric properties -- redirect to mathematical properties every time"
+    ],
+    "year_groups": ["Y2"],
+    "duration_lessons": 6,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: handle, sort, and classify real 3-D shapes; fold paper shapes to test symmetry; build shapes with construction kits. Pictorial: draw shapes and label their properties, complete symmetrical patterns on a grid. Abstract: describe shapes using property vocabulary and sort on Venn and Carroll diagrams.",
+    "manipulatives": ["Interlocking Cubes"],
+    "representations": ["Array Diagram"],
+    "fluency_targets": [
+      "Name all common 2-D shapes and state their number of sides and vertices",
+      "Name all common 3-D shapes and state their number of faces, edges, and vertices",
+      "Identify whether a 2-D shape has a vertical line of symmetry",
+      "Name the 2-D shapes found on the faces of a given 3-D shape"
+    ],
+    "reasoning_prompts": [
+      "I have a shape with 4 sides and no lines of symmetry. What could it be? Can you draw one?",
+      "A cuboid has 6 faces. Are they all the same shape? How many different shapes are there?",
+      "Is a circle symmetrical? How many lines of symmetry does it have? How do you know?"
+    ],
+    "application_contexts": [
+      "Designing symmetrical patterns for display (butterfly wings, masks)",
+      "Describing 3-D shapes of packaging (cereal boxes, tin cans, Toblerone boxes)",
+      "Building structures with construction materials and describing the shapes used"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y2-C017", "primary": true},
+      {"concept_id": "MA-Y2-C018", "primary": false},
+      {"concept_id": "MA-Y2-C019", "primary": false}
+    ],
+    "uses_template": ["VT-05", "VT-13"],
+    "domain_ids": ["MA-Y2-D006"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-014",
+    "name": "Position and Direction on a Grid",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "order and arrange combinations of mathematical objects in patterns and sequences",
+      "use mathematical vocabulary to describe position, direction and movement, including movement in a straight line and distinguishing between rotation as a turn and in terms of right angles"
+    ],
+    "pedagogical_rationale": "Y2 extends position and direction to include the concept of a right angle as a quarter turn, which connects rotation to shape properties and measurement. Pattern-making with mathematical objects (shape sequences, colour patterns) develops algebraic thinking. Working on grids introduces the idea of coordinates informally: pupils describe positions as 'row 2, column 3' which prepares for formal coordinates in Y4. The combination of spatial reasoning and pattern work develops two key mathematical thinking skills simultaneously.",
+    "common_pitfalls": [
+      "Describing a right angle as just 'a corner' -- teach it as a specific amount of turn (quarter turn)",
+      "Creating patterns that do not follow a consistent rule -- ask 'what is the rule?' and 'what comes next?'",
+      "Confusing rotation (turning on the spot) with translation (sliding to a new position) -- demonstrate both with physical objects",
+      "Not being precise about direction: 'turn right' versus 'make a quarter turn clockwise' -- model the precise vocabulary"
+    ],
+    "year_groups": ["Y2"],
+    "duration_lessons": 4,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: physical movement, turning on the spot to find right angles, making patterns with shape tiles. Pictorial: routes on grids, continuing shape patterns on paper, right angle indicators on shapes. Abstract: describing movement and position using mathematical vocabulary.",
+    "manipulatives": ["Interlocking Cubes"],
+    "representations": ["Number Line", "Array Diagram"],
+    "fluency_targets": [
+      "Identify a right angle as a quarter turn",
+      "Distinguish between clockwise and anticlockwise rotation",
+      "Continue a repeating pattern and describe the rule",
+      "Describe the position of an object on a simple grid"
+    ],
+    "reasoning_prompts": [
+      "I turn clockwise through a right angle four times. Where am I facing now? Why?",
+      "What comes next in this pattern: circle, square, circle, square, ...? How do you know?",
+      "The robot is at the bottom-left of the grid and needs to reach the top-right. What instructions would you give?"
+    ],
+    "application_contexts": [
+      "Following and giving directions around the school",
+      "Creating repeating patterns for art or textile work",
+      "Programming a screen turtle or floor robot to navigate a grid"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y2-C020", "primary": true}
+    ],
+    "uses_template": ["VT-13", "VT-05"],
+    "domain_ids": ["MA-Y2-D007"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-KS1-015",
+    "name": "Interpreting and Constructing Simple Charts",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS1",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "interpret and construct simple pictograms, tally charts, block diagrams and simple tables",
+      "ask and answer simple questions by counting the number of objects in each category and sorting the categories by quantity",
+      "ask and answer questions about totalling and comparing categorical data"
+    ],
+    "pedagogical_rationale": "Statistics at Y2 is about the full data-handling cycle: asking a question, collecting data, organising it, representing it, and interpreting it. This cycle makes statistics purposeful rather than abstract. Tally charts teach systematic data collection. Pictograms and block diagrams teach data representation. Interpreting charts -- answering 'how many more?', 'how many fewer?', 'which is the most popular?' -- connects statistics to addition and subtraction. Pupils must both read pre-made charts and construct their own from collected data.",
+    "common_pitfalls": [
+      "Collecting data without a clear question -- always start with 'what do we want to find out?'",
+      "Drawing pictogram symbols in different sizes -- teach consistent symbol size and spacing",
+      "Not labelling axes or categories on block diagrams -- insist on labels and titles from the start",
+      "Only asking recall questions ('how many chose X?') without comparison questions ('how many more chose X than Y?') -- model both types"
+    ],
+    "year_groups": ["Y2"],
+    "duration_lessons": 5,
+    "cpa_stage": "pictorial_abstract",
+    "cpa_notes": "Concrete: collecting data by physical sorting (sorting objects into hoops, standing in groups). Pictorial: constructing tally charts, pictograms, and block diagrams. Abstract: interpreting charts by answering questions involving totalling, comparison, and simple difference calculations.",
+    "manipulatives": ["Counters", "Interlocking Cubes"],
+    "representations": ["Pictogram", "Tally Chart", "Bar Chart (Block Diagram)"],
+    "fluency_targets": [
+      "Read values from a pictogram, tally chart, or block diagram",
+      "Construct a tally chart with correct five-bar gate notation",
+      "Calculate totals and differences from a chart",
+      "Sort data into categories and count each category"
+    ],
+    "reasoning_prompts": [
+      "The pictogram shows 3 smiley faces for football and each face means 2 children. How many children chose football? What if each face meant 5?",
+      "Looking at this block diagram, which is the most popular and which is the least popular? How many more chose the most popular than the least popular?",
+      "If we asked a different class the same question, do you think we would get the same results? Why or why not?"
+    ],
+    "application_contexts": [
+      "Class surveys: favourite fruits, colours, animals, or sports",
+      "Science investigations: sorting and categorising natural objects",
+      "Recording weather data over a week and presenting it as a chart"
+    ],
+    "nc_aim_emphasis": "reasoning_and_problem_solving",
+    "delivers_via": [
+      {"concept_id": "MA-Y2-C022", "primary": true},
+      {"concept_id": "MA-Y2-C023", "primary": false}
+    ],
+    "uses_template": ["VT-18", "VT-13"],
+    "domain_ids": ["MA-Y2-D008"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  }
+]

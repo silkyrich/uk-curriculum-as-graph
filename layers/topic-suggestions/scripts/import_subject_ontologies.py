@@ -55,6 +55,8 @@ STUDY_NODES = [
     ("GeoStudy", "geo_studies", "study_id", "studies"),
     ("ScienceEnquiry", "science_enquiries", "enquiry_id", "enquiries"),
     ("EnglishUnit", "english_units", "unit_id", "units"),
+    # Maths — uses typed MathsTopicSuggestion label (per FINAL-SCHEMA)
+    ("MathsTopicSuggestion", "maths_studies", "suggestion_id", None),
     # Foundation subjects — use typed TopicSuggestion labels
     ("ArtTopicSuggestion", "art_studies", "suggestion_id", None),
     ("MusicTopicSuggestion", "music_studies", "suggestion_id", None),
