@@ -46,8 +46,8 @@ Each **layer** is self-contained with its own:
 
 4. **`layers/topic-suggestions/`** - Per-subject ontology (Topic Suggestions + VehicleTemplates)
    - Replaces old Topics + Content Vehicles layers with typed per-subject nodes
-   - 326 study/unit nodes across 9 typed labels + 255 reference nodes across 12 types + 24 VehicleTemplate nodes
-   - **Study nodes** (display_category: `"Topic Suggestion"`): HistoryStudy, GeoStudy, ScienceEnquiry, EnglishUnit, ArtTopicSuggestion, MusicTopicSuggestion, DTTopicSuggestion, ComputingTopicSuggestion, TopicSuggestion (generic)
+   - 373 study/unit nodes across 10 typed labels + 255 reference nodes across 12 types + 24 VehicleTemplate nodes
+   - **Study nodes** (display_category: `"Topic Suggestion"`): HistoryStudy, GeoStudy, ScienceEnquiry, EnglishUnit, MathsTopicSuggestion, ArtTopicSuggestion, MusicTopicSuggestion, DTTopicSuggestion, ComputingTopicSuggestion, TopicSuggestion (generic)
    - **Reference nodes** (display_category: `"Subject Reference"`): DisciplinaryConcept, HistoricalSource, GeoPlace, GeoContrast, EnquiryType, Misconception, Genre, SetText, MathsManipulative, MathsRepresentation, MathsContext, ReasoningPromptType
    - **VehicleTemplate** (display_category: `"Vehicle Template"`): 24 pedagogical pattern templates with TEMPLATE_FOR → KeyStage
    - Each subject uses its own property schema (no irrelevant attributes on nodes)

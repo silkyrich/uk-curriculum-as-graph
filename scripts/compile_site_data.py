@@ -424,6 +424,7 @@ def query_domain_detail(session, domain_id: str) -> dict:
         OPTIONAL MATCH (s)-[:DELIVERS_VIA]->(c:Concept)<-[:HAS_CONCEPT]-(d)
         WITH s, labels(s) AS lbls, collect(DISTINCT c.concept_id) AS cids
         OPTIONAL MATCH (s)-[:USES_TEMPLATE]->(vt:VehicleTemplate)
+        WITH s, lbls, cids, collect(DISTINCT vt.name) AS template_names
         OPTIONAL MATCH (s)-[:CROSS_CURRICULAR]->(s2)
         OPTIONAL MATCH (s)-[:FOREGROUNDS]->(dc:DisciplinaryConcept)
         OPTIONAL MATCH (s)-[:USES_SOURCE]->(hs:HistoricalSource)
@@ -442,8 +443,13 @@ def query_domain_detail(session, domain_id: str) -> dict:
                s.enquiry_focus AS enquiry_focus,
                s.writing_outcome AS writing_outcome,
                s.variables AS variables,
+               s.cpa_stage AS cpa_stage,
+               s.manipulatives AS manipulatives,
+               s.representations AS representations,
+               s.fluency_targets AS fluency_targets,
+               s.nc_aim_emphasis AS nc_aim_emphasis,
                cids AS concept_ids,
-               vt.name AS template_name,
+               CASE WHEN size(template_names) > 0 THEN template_names[0] ELSE null END AS template_name,
                collect(DISTINCT CASE WHEN s2 IS NOT NULL
                    THEN {target_name: s2.name, hook: '', strength: ''}
                    END) AS cross_curricular_raw,
@@ -511,6 +517,23 @@ def query_domain_detail(session, domain_id: str) -> dict:
                 s['contrast'] = cs[0]
         if r['variables']:
             s['variables'] = r['variables']
+        # Maths-specific properties
+        if r.get('cpa_stage'):
+            s['cpa_stage'] = r['cpa_stage']
+        if r.get('manipulatives'):
+            m = r['manipulatives'] if isinstance(r['manipulatives'], list) else [r['manipulatives']]
+            if m:
+                s['manipulatives'] = m
+        if r.get('representations'):
+            reps = r['representations'] if isinstance(r['representations'], list) else [r['representations']]
+            if reps:
+                s['representations'] = reps
+        if r.get('fluency_targets'):
+            ft = r['fluency_targets'] if isinstance(r['fluency_targets'], list) else [r['fluency_targets']]
+            if ft:
+                s['fluency_targets'] = ft
+        if r.get('nc_aim_emphasis'):
+            s['nc_aim_emphasis'] = r['nc_aim_emphasis']
         suggestions.append(s)
     domain['suggestions'] = suggestions
 

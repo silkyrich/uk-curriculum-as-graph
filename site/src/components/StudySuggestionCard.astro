@@ -20,6 +20,11 @@ interface Props {
     genre?: string;
     place?: string;
     contrast?: string;
+    cpa_stage?: string;
+    manipulatives?: string[];
+    representations?: string[];
+    fluency_targets?: string[];
+    nc_aim_emphasis?: string;
   };
   conceptNames: Map<string, string>;
 }
@@ -35,6 +40,7 @@ const typeLabels: Record<string, string> = {
   MusicTopicSuggestion: 'Music',
   DTTopicSuggestion: 'Design & Technology',
   ComputingTopicSuggestion: 'Computing',
+  MathsTopicSuggestion: 'Mathematics',
   TopicSuggestion: 'Topic',
 };
 
@@ -47,6 +53,7 @@ const typeColors: Record<string, string> = {
   MusicTopicSuggestion: 'bg-violet-50 text-violet-700 border-violet-200',
   DTTopicSuggestion: 'bg-orange-50 text-orange-700 border-orange-200',
   ComputingTopicSuggestion: 'bg-cyan-50 text-cyan-700 border-cyan-200',
+  MathsTopicSuggestion: 'bg-purple-50 text-purple-700 border-purple-200',
   TopicSuggestion: 'bg-gray-50 text-gray-700 border-gray-200',
 };
 
@@ -109,6 +116,43 @@ const colorClass = typeColors[suggestion.type] || typeColors.TopicSuggestion;
       <span><span class="font-medium text-gray-500">Variables:</span> {suggestion.variables}</span>
     )}
   </div>
+
+  <!-- Maths-specific details -->
+  {suggestion.cpa_stage && (
+    <div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-600">
+      <span><span class="font-medium text-gray-500">CPA Stage:</span> {suggestion.cpa_stage.replace(/_/g, ' → ')}</span>
+      {suggestion.nc_aim_emphasis && (
+        <span><span class="font-medium text-gray-500">NC Aim:</span> {suggestion.nc_aim_emphasis.replace(/_/g, ' ')}</span>
+      )}
+    </div>
+  )}
+
+  {suggestion.manipulatives && suggestion.manipulatives.length > 0 && (
+    <div class="mt-2 flex flex-wrap gap-1">
+      {suggestion.manipulatives.map(m => (
+        <span class="text-xs bg-amber-50 text-amber-700 px-1.5 py-0.5 rounded">
+          {m}
+        </span>
+      ))}
+    </div>
+  )}
+
+  {suggestion.representations && suggestion.representations.length > 0 && (
+    <div class="mt-2 flex flex-wrap gap-1">
+      {suggestion.representations.map(r => (
+        <span class="text-xs bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded">
+          {r}
+        </span>
+      ))}
+    </div>
+  )}
+
+  {suggestion.fluency_targets && suggestion.fluency_targets.length > 0 && (
+    <div class="mt-2">
+      <span class="text-xs font-medium text-gray-500">Fluency targets: </span>
+      <span class="text-xs text-gray-600">{suggestion.fluency_targets.join('; ')}</span>
+    </div>
+  )}
 
   {suggestion.key_figures && suggestion.key_figures.length > 0 && (
     <div class="mt-2 flex flex-wrap gap-1">

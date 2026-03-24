@@ -1,0 +1,962 @@
+[
+  {
+    "suggestion_id": "MTS-Y3-001",
+    "name": "Place Value in Three-Digit Numbers",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y3 Number and Place Value: recognise the place value of each digit in a three-digit number (hundreds, tens, ones)",
+      "Y3 Number and Place Value: compare and order numbers up to 1000",
+      "Y3 Number and Place Value: read and write numbers up to 1000 in numerals and in words"
+    ],
+    "pedagogical_rationale": "This is the foundational unit for Y3 mathematics. Children transition from two-digit to three-digit numbers, and the hundreds boundary is a significant conceptual leap. Concrete manipulation of Dienes blocks and place value counters must precede any abstract written work, because children need to physically exchange ten tens for one hundred to internalise the grouping structure. Arrow cards bridge concrete and abstract by showing how three-digit numbers are composed from separate hundreds, tens, and ones values.",
+    "common_pitfalls": [
+      "Children read 306 as 'thirty-six' because they skip the zero placeholder — use place value charts with an explicit zero counter in the tens column",
+      "Confusing the face value and place value of a digit (e.g., thinking the 3 in 350 is worth 3 not 300) — Dienes blocks make this visible",
+      "Difficulty ordering numbers that differ in the hundreds digit versus the tens digit — systematic comparison using place value charts helps",
+      "Writing numbers in words incorrectly, especially teens within larger numbers (e.g., 'one hundred and fifteen' vs 'one hundred and fifty')"
+    ],
+    "year_groups": ["Y3"],
+    "duration_lessons": 8,
+    "cpa_stage": "concrete_pictorial_abstract",
+    "cpa_notes": "Begin with Dienes blocks for physical exchange and grouping, move to pictorial place value charts and arrow card drawings, then practise abstract comparison and ordering using inequality symbols.",
+    "manipulatives": [
+      "Dienes blocks (hundreds flats, tens rods, ones cubes)",
+      "Place value counters",
+      "Arrow cards (hundreds, tens, ones overlaid)",
+      "Place value charts (hundreds, tens, ones columns)",
+      "Number line (0-1000, initially marked in hundreds)"
+    ],
+    "representations": [
+      "Place value chart (hundreds, tens, ones columns with counters or digits)",
+      "Part-whole model (hundreds + tens + ones partitioning)",
+      "Number line (0-1000, marked in hundreds then tens)",
+      "Arrow card overlays showing composition of three-digit numbers"
+    ],
+    "fluency_targets": [
+      "Identify the value of each digit in any three-digit number without concrete support",
+      "Read and write all numbers to 1000 in numerals and words",
+      "Compare pairs of three-digit numbers using < > = symbols",
+      "Count in steps of 50 and 100 from any given number"
+    ],
+    "reasoning_prompts": [
+      "The digit 4 appears in both 402 and 240. Does it have the same value in both numbers? Explain how you know.",
+      "Sam says 508 is bigger than 85 because it has more digits. Is Sam right? Is his reasoning correct?",
+      "I am a three-digit number. My hundreds digit is double my ones digit. My tens digit is zero. What could I be?"
+    ],
+    "application_contexts": [
+      "Reading distances in metres on a school orienteering map (Geography link)",
+      "Ordering historical dates within a century timeline (History link)",
+      "Comparing capacities of different containers in millilitres during a Science investigation"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y3-C001", "primary": true},
+      {"concept_id": "MA-Y3-C002", "primary": true},
+      {"concept_id": "MA-Y3-C003", "primary": true},
+      {"concept_id": "MA-Y3-C004", "primary": true},
+      {"concept_id": "MA-Y3-C005", "primary": false},
+      {"concept_id": "MA-Y3-C006", "primary": false},
+      {"concept_id": "MA-Y3-C007", "primary": false},
+      {"concept_id": "MA-Y3-C008", "primary": false},
+      {"concept_id": "MA-Y3-C009", "primary": false},
+      {"concept_id": "MA-Y3-C010", "primary": false},
+      {"concept_id": "MA-Y3-C011", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-05"],
+    "domain_ids": ["MA-Y3-D001"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y3-002",
+    "name": "Addition and Subtraction: Column Methods",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y3 Addition and Subtraction: add and subtract numbers with up to three digits, using formal written methods of columnar addition and subtraction",
+      "Y3 Addition and Subtraction: estimate the answer to a calculation and use inverse operations to check answers"
+    ],
+    "pedagogical_rationale": "Column addition and subtraction are introduced formally in Y3 for the first time. Children must understand that the column method is a written record of the concrete exchange process they already know from place value work. Without this connection, the algorithm becomes a meaningless procedure that breaks down when regrouping is required. The progression from Dienes exchange to place value counter recording to the abstract column is non-negotiable.",
+    "common_pitfalls": [
+      "Children subtract the smaller digit from the larger regardless of position (e.g., 72 - 47 = 35) — concrete exchange with Dienes blocks prevents this",
+      "Forgetting to record the exchanged ten when regrouping — insist on the 'small 1' notation alongside concrete manipulation",
+      "Misaligning columns so that tens are added to ones — use squared paper and place value column headings initially",
+      "Not estimating before calculating, so unreasonable answers go unchallenged"
+    ],
+    "year_groups": ["Y3"],
+    "duration_lessons": 6,
+    "cpa_stage": "concrete_pictorial_abstract",
+    "cpa_notes": "Start with Dienes blocks on a place value mat, physically exchanging ten ones for one ten (or vice versa). Move to pictorial recording alongside the concrete, drawing the Dienes and writing the column method in parallel. Only move to abstract column method when children can explain what each step represents.",
+    "manipulatives": [
+      "Dienes blocks (hundreds, tens, ones)",
+      "Place value counters on a place value mat",
+      "Place value mats (hundreds, tens, ones columns)",
+      "Hundred squares for estimation"
+    ],
+    "representations": [
+      "Place value chart with counters showing exchange",
+      "Bar model for comparison subtraction problems",
+      "Part-whole model for addition structure",
+      "Number line for estimation and checking",
+      "Written column method (formal layout)"
+    ],
+    "fluency_targets": [
+      "Add two three-digit numbers with no regrouping accurately",
+      "Add two three-digit numbers with regrouping across one column",
+      "Subtract a three-digit number from a three-digit number with exchange",
+      "Estimate sums and differences by rounding to the nearest 100 before calculating"
+    ],
+    "reasoning_prompts": [
+      "Here is a column addition with one digit missing. What must the missing digit be? How do you know?",
+      "Priya says 345 + 278 is about 500. Without calculating the exact answer, explain why Priya's estimate must be wrong.",
+      "When I subtract 256 from 423, I need to exchange. Explain what I am exchanging and why."
+    ],
+    "application_contexts": [
+      "Calculating total distances walked on a school trip using metres (PE/Geography link)",
+      "Working out change from a budget in a class shop role-play (PSHE/enterprise link)",
+      "Adding and comparing scores across multiple rounds in a class game"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y3-C012", "primary": true},
+      {"concept_id": "MA-Y3-C013", "primary": true},
+      {"concept_id": "MA-Y3-C014", "primary": true},
+      {"concept_id": "MA-Y3-C015", "primary": false},
+      {"concept_id": "MA-Y3-C016", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-13"],
+    "domain_ids": ["MA-Y3-D002"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y3-003",
+    "name": "Multiplication and Division Facts and Strategies",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y3 Multiplication and Division: recall and use multiplication and division facts for the 3, 4 and 8 multiplication tables",
+      "Y3 Multiplication and Division: write and calculate mathematical statements for multiplication and division using the multiplication tables that they know",
+      "Y3 Multiplication and Division: solve problems, including missing number problems, involving multiplication and division"
+    ],
+    "pedagogical_rationale": "Y3 is the critical year for multiplication table fluency, building on the 2, 5, and 10 tables from Y2. The 3, 4, and 8 tables are strategically chosen: 4 doubles the 2s, 8 doubles the 4s, and 3 is the first table without a doubling relationship. Arrays and Cuisenaire rods make the commutative and distributive properties visible, which is essential for the reasoning strand. Children who only memorise chants without structural understanding cannot apply facts flexibly to division or to multi-step problems.",
+    "common_pitfalls": [
+      "Children can chant '3, 6, 9, 12...' but cannot answer '3 x 7' directly — practise random-order recall, not just sequential chanting",
+      "Not seeing division as the inverse of multiplication — always teach multiplication and division facts as a family of four related facts",
+      "Confusing 'groups of' with 'shared between' in word problems — use concrete grouping and sharing with counters to distinguish",
+      "Believing multiplication always makes numbers bigger — explore multiplication by 1 and link to the identity property"
+    ],
+    "year_groups": ["Y3"],
+    "duration_lessons": 10,
+    "cpa_stage": "concrete_pictorial_abstract",
+    "cpa_notes": "Concrete arrays with counters and Cuisenaire rods to build each table. Pictorial arrays and number line jumps to record the structure. Abstract recall practice only after the conceptual foundation is secure.",
+    "manipulatives": [
+      "Counters for building arrays",
+      "Cuisenaire rods (showing rod lengths as multiples)",
+      "Numicon plates for equal groups",
+      "Multiplication squares for pattern spotting"
+    ],
+    "representations": [
+      "Arrays (dots or counters in rows and columns)",
+      "Repeated number line jumps",
+      "Bar model for equal groups problems",
+      "Multiplication square (partially completed for pattern seeking)",
+      "Part-whole model for grouping and sharing"
+    ],
+    "fluency_targets": [
+      "Recall all multiplication facts for 3, 4, and 8 times tables within 3 seconds",
+      "State the corresponding division fact for any given multiplication fact",
+      "Identify the operation needed for 'groups of' and 'shared between' word problems",
+      "Use commutativity to derive unknown facts from known ones (e.g., if I know 4 x 3, I know 3 x 4)"
+    ],
+    "reasoning_prompts": [
+      "If I know 4 x 6 = 24, what other facts can I work out from this? List as many as you can.",
+      "Tom says 8 x 4 must be double 4 x 4. Is he right? Can you explain why using an array?",
+      "A number multiplied by 3 gives an answer between 20 and 25. What could the number be?"
+    ],
+    "application_contexts": [
+      "Calculating the number of items needed for a class party (e.g., 4 cakes per table, 8 tables)",
+      "Working out planting arrangements in a school garden using equal rows (Science/DT link)",
+      "Sharing equipment equally between groups in PE lessons"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y3-C017", "primary": true},
+      {"concept_id": "MA-Y3-C018", "primary": true},
+      {"concept_id": "MA-Y3-C019", "primary": true},
+      {"concept_id": "MA-Y3-C020", "primary": false},
+      {"concept_id": "MA-Y3-C021", "primary": false},
+      {"concept_id": "MA-Y3-C022", "primary": false},
+      {"concept_id": "MA-Y3-C023", "primary": false}
+    ],
+    "uses_template": ["VT-05", "VT-08"],
+    "domain_ids": ["MA-Y3-D003"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y3-004",
+    "name": "Understanding Fractions as Parts of a Whole",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y3 Fractions: count up and down in tenths; recognise that tenths arise from dividing an object into 10 equal parts",
+      "Y3 Fractions: recognise, find and write fractions of a discrete set of objects: unit fractions and non-unit fractions with small denominators",
+      "Y3 Fractions: recognise and use fractions as numbers: unit fractions and non-unit fractions with small denominators"
+    ],
+    "pedagogical_rationale": "Y3 is where fractions shift from simple halving and quartering to a genuine number concept. Children must understand that a fraction describes equal parts of a whole and that the denominator tells you how many equal parts. Fraction tiles and fraction walls make the equal-parts requirement visible and prevent the common misconception that any two pieces are halves. Introducing tenths connects fractions to place value and lays groundwork for decimals in Y4.",
+    "common_pitfalls": [
+      "Believing a fraction means 'any part' rather than 'an equal part' — always ask 'are the parts equal?' when showing fractions of shapes",
+      "Thinking the larger the denominator, the larger the fraction — compare unit fractions using fraction tiles side by side",
+      "Not recognising that a fraction of a set means equal groups — use counters physically shared into groups",
+      "Confusing the numerator and denominator roles — consistent use of 'how many equal parts (denominator) and how many chosen (numerator)'"
+    ],
+    "year_groups": ["Y3"],
+    "duration_lessons": 7,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Heavy emphasis on concrete fraction tiles, fraction walls, and paper folding before any numerical work. Pictorial bar models and shaded shapes run alongside concrete. Abstract fraction notation is introduced last and always linked back to the concrete referent.",
+    "manipulatives": [
+      "Fraction tiles (halves, thirds, quarters, sixths, eighths, tenths)",
+      "Fraction wall (physical or large display version)",
+      "Paper strips for folding into equal parts",
+      "Counters for finding fractions of quantities",
+      "Cuisenaire rods for fraction relationships"
+    ],
+    "representations": [
+      "Fraction wall",
+      "Bar model (divided into equal parts with some shaded)",
+      "Number line (0 to 1, marked in fractions)",
+      "Part-whole model (whole amount partitioned into fractional parts)",
+      "Shaded shapes (circles and rectangles divided equally)"
+    ],
+    "fluency_targets": [
+      "Identify unit fractions up to 1/10 from a diagram or concrete model",
+      "Find a unit fraction of a quantity (e.g., 1/3 of 12) using sharing",
+      "Count in tenths from 0 to 1 and beyond",
+      "Place unit fractions on a number line between 0 and 1"
+    ],
+    "reasoning_prompts": [
+      "Which is larger: 1/4 or 1/6? Use a fraction wall to prove your answer.",
+      "Aisha says 1/3 of 12 is 3 and 1/4 of 12 is 4, so 1/4 must be bigger than 1/3. Is she right? What has gone wrong in her thinking?",
+      "I cut a pizza into 5 pieces but the pieces are not all the same size. Can I say each piece is one-fifth? Explain why."
+    ],
+    "application_contexts": [
+      "Measuring and cutting materials into equal fractions in DT",
+      "Dividing a music bar into equal beats (Music link)",
+      "Sharing cooking ingredients equally in a recipe context"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y3-C024", "primary": true},
+      {"concept_id": "MA-Y3-C025", "primary": true},
+      {"concept_id": "MA-Y3-C026", "primary": true},
+      {"concept_id": "MA-Y3-C027", "primary": false},
+      {"concept_id": "MA-Y3-C028", "primary": false},
+      {"concept_id": "MA-Y3-C029", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-13"],
+    "domain_ids": ["MA-Y3-D004"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y3-005",
+    "name": "Measurement: Length, Mass, Capacity and Time",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y3 Measurement: measure, compare, add and subtract: lengths (m/cm/mm); mass (kg/g); volume/capacity (l/ml)",
+      "Y3 Measurement: tell and write the time from an analogue clock, including using Roman numerals from I to XII",
+      "Y3 Measurement: estimate and read time with increasing accuracy to the nearest minute"
+    ],
+    "pedagogical_rationale": "Y3 measurement brings together practical measuring skills with the formal calculation methods being learned in number. Converting between units (e.g., knowing that 1 m = 100 cm) reinforces place value understanding. Measurement contexts provide the most natural application for addition and subtraction of three-digit numbers. Time remains a significant challenge because it is the only non-decimal system children encounter, and the analogue clock face requires simultaneous reading of two different scales.",
+    "common_pitfalls": [
+      "Confusing the unit relationships (e.g., thinking 1 kg = 100 g instead of 1000 g) — always display the conversion prominently",
+      "Reading the wrong scale on a ruler (starting from 1 instead of 0) — practise with broken rulers to force attention to the starting point",
+      "Confusing the minute and hour hands on analogue clocks — use a geared teaching clock where children can feel the relationship",
+      "Not recognising that time does not work in base 10 (60 minutes, not 100) — use empty number lines in chunks of 5 minutes"
+    ],
+    "year_groups": ["Y3"],
+    "duration_lessons": 8,
+    "cpa_stage": "concrete_pictorial_abstract",
+    "cpa_notes": "Measurement is inherently concrete. Children should measure real objects with real instruments before any textbook work. Pictorial recording of measurements on scales and number lines follows. Abstract conversion calculations come last.",
+    "manipulatives": [
+      "Rulers (30 cm) and metre sticks",
+      "Measuring jugs and cylinders (ml and l)",
+      "Balance scales and kitchen scales (g and kg)",
+      "Geared teaching clocks",
+      "Trundle wheels for longer distances"
+    ],
+    "representations": [
+      "Number line (for time durations and unit conversions)",
+      "Bar model (comparing measurements)",
+      "Scales and dials (reading intermediate values)",
+      "Conversion tables (m/cm, kg/g, l/ml)",
+      "Analogue clock face"
+    ],
+    "fluency_targets": [
+      "State the conversion facts: 1 m = 100 cm, 1 km = 1000 m, 1 kg = 1000 g, 1 l = 1000 ml",
+      "Measure lengths to the nearest millimetre using a ruler",
+      "Read the time on an analogue clock to the nearest minute",
+      "Calculate simple time durations (e.g., from 9:15 to 10:00)"
+    ],
+    "reasoning_prompts": [
+      "My water bottle holds 750 ml. How many bottles do I need to fill a 2-litre jug? Explain your thinking.",
+      "Jake says 3 km is shorter than 3500 m because 3 is less than 3500. What mistake has Jake made?",
+      "The clock shows 3:47. How many minutes until 4 o'clock? Show your method."
+    ],
+    "application_contexts": [
+      "Measuring plant growth over time in a Science investigation (Science link)",
+      "Weighing and measuring ingredients for a DT cooking project",
+      "Recording distances and times during PE activities"
+    ],
+    "nc_aim_emphasis": "problem_solving",
+    "delivers_via": [
+      {"concept_id": "MA-Y3-C030", "primary": true},
+      {"concept_id": "MA-Y3-C031", "primary": true},
+      {"concept_id": "MA-Y3-C032", "primary": true},
+      {"concept_id": "MA-Y3-C033", "primary": false},
+      {"concept_id": "MA-Y3-C034", "primary": false},
+      {"concept_id": "MA-Y3-C035", "primary": false}
+    ],
+    "uses_template": ["VT-13", "VT-08"],
+    "domain_ids": ["MA-Y3-D005"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y3-006",
+    "name": "Properties of 2-D and 3-D Shapes",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y3 Geometry: draw 2-D shapes and make 3-D shapes using modelling materials",
+      "Y3 Geometry: recognise 3-D shapes in different orientations and describe them",
+      "Y3 Geometry: recognise angles as a property of shape or a description of a turn",
+      "Y3 Geometry: identify right angles, recognise that two right angles make a half-turn, three make three-quarters of a turn and four a complete turn"
+    ],
+    "pedagogical_rationale": "Y3 geometry extends beyond naming shapes to analysing their properties. The introduction of right angles is a pivotal concept that connects shape properties to measurement and later to coordinates. Children must physically handle 3-D shapes and construct them from nets or modelling materials to understand faces, edges, and vertices — pictures alone create flat misconceptions. Identifying right angles in the environment connects abstract geometry to the real world.",
+    "common_pitfalls": [
+      "Believing a shape is only a triangle if it points upward — show triangles in many orientations",
+      "Confusing faces, edges, and vertices — handle real 3-D shapes and trace faces, run fingers along edges, touch vertices",
+      "Thinking a right angle must have horizontal and vertical lines — use a right-angle checker in different orientations",
+      "Not recognising that a square is also a rectangle — discuss properties-based classification"
+    ],
+    "year_groups": ["Y3"],
+    "duration_lessons": 5,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Geometry is naturally concrete. Children build 3-D shapes from construction materials, fold nets, and use right-angle checkers on real objects. Pictorial recording involves drawing shapes on grids and marking right angles. Abstract classification comes through sorting and Venn diagrams.",
+    "manipulatives": [
+      "3-D shape sets (prisms, pyramids, spheres, cylinders, cones)",
+      "Construction materials (Polydron, straws and connectors)",
+      "Right-angle checker (card corner)",
+      "Protractor (introduction only, for demonstration)",
+      "Geoboards and elastic bands for 2-D shapes"
+    ],
+    "representations": [
+      "Shape sorting diagrams (Carroll diagrams and Venn diagrams)",
+      "Property tables (faces, edges, vertices)",
+      "Grid paper for drawing 2-D shapes accurately",
+      "Right-angle marks on shapes and real-world photographs"
+    ],
+    "fluency_targets": [
+      "Name and describe common 3-D shapes including cubes, cuboids, prisms, cylinders, pyramids, cones, and spheres",
+      "Identify whether an angle is a right angle, greater than, or less than a right angle",
+      "State the number of faces, edges, and vertices for common 3-D shapes",
+      "Draw 2-D shapes with specified properties on a grid"
+    ],
+    "reasoning_prompts": [
+      "I have a 3-D shape with 5 faces. Two of the faces are triangles. What is my shape? Could there be more than one answer?",
+      "True or false: all shapes with 4 sides have at least one right angle. Prove your answer by drawing examples.",
+      "How many right angles can you find in the classroom in 2 minutes? How do you know they are right angles?"
+    ],
+    "application_contexts": [
+      "Identifying 3-D shapes and right angles in building structures (DT/Architecture link)",
+      "Describing turns in PE and dance using right-angle language",
+      "Exploring symmetry and shape in Art patterns"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y3-C036", "primary": true},
+      {"concept_id": "MA-Y3-C037", "primary": true},
+      {"concept_id": "MA-Y3-C038", "primary": true},
+      {"concept_id": "MA-Y3-C039", "primary": false}
+    ],
+    "uses_template": ["VT-13", "VT-05"],
+    "domain_ids": ["MA-Y3-D006"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y3-007",
+    "name": "Interpreting and Presenting Data",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y3 Statistics: interpret and present data using bar charts, pictograms and tables",
+      "Y3 Statistics: solve one-step and two-step questions [e.g. 'How many more?' and 'How many fewer?'] using information presented in scaled bar charts and pictograms and tables"
+    ],
+    "pedagogical_rationale": "Y3 statistics introduces scaled axes for the first time, which is a multiplication concept applied in a data-handling context. Previously, children used 1:1 pictograms; now each symbol or bar division represents multiple items. This requires confident use of the 2, 5, and 10 times tables to read and create charts. Two-step comparison questions ('How many more did X have than Y?') combine subtraction with data reading, making this an excellent domain for reasoning and problem-solving.",
+    "common_pitfalls": [
+      "Reading the value of a bar by looking at the top line rather than the scale — practise reading values that fall between gridlines",
+      "Forgetting that each symbol in a pictogram represents more than one item when the key says so — always check the key first",
+      "Answering 'how many more' by stating both values rather than finding the difference — model the subtraction step explicitly",
+      "Drawing bars that do not start from zero or are unequal widths — use squared paper and ruler"
+    ],
+    "year_groups": ["Y3"],
+    "duration_lessons": 4,
+    "cpa_stage": "pictorial_abstract",
+    "cpa_notes": "Statistics is naturally pictorial. Children create real data through class surveys, then represent it in bar charts and pictograms. The abstract step is answering comparison and two-step questions from the charts. Concrete data collection (e.g., tallying with cubes) precedes chart drawing.",
+    "manipulatives": [
+      "Interlocking cubes (for building physical bar charts)",
+      "Counters (for concrete data sorting before charting)"
+    ],
+    "representations": [
+      "Bar charts (with scaled axes in 2s, 5s, or 10s)",
+      "Pictograms (with keys showing 1 symbol = 2 or 5 items)",
+      "Tally charts and frequency tables",
+      "Carroll diagrams and Venn diagrams for sorting data"
+    ],
+    "fluency_targets": [
+      "Read values accurately from a bar chart with a scaled axis",
+      "Interpret a pictogram key and calculate totals for each category",
+      "Answer 'how many more/fewer' questions by finding the difference",
+      "Draw a bar chart with an appropriate scale for a given data set"
+    ],
+    "reasoning_prompts": [
+      "The pictogram shows 3 and a half symbols for Tuesday. Each symbol represents 4 children. How many children is that? Explain your reasoning.",
+      "Two bar charts show the same data but use different scales. Why do they look different even though the data is the same?",
+      "What question could you ask about this bar chart that would need two steps to answer?"
+    ],
+    "application_contexts": [
+      "Recording and comparing weather data over a half-term (Geography/Science link)",
+      "Surveying favourite books in the class for a library display (English link)",
+      "Analysing results from a Science investigation using bar charts"
+    ],
+    "nc_aim_emphasis": "reasoning_and_problem_solving",
+    "delivers_via": [
+      {"concept_id": "MA-Y3-C040", "primary": true},
+      {"concept_id": "MA-Y3-C041", "primary": true}
+    ],
+    "uses_template": ["VT-18", "VT-13"],
+    "domain_ids": ["MA-Y3-D007"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y4-001",
+    "name": "Place Value in Four-Digit Numbers and Negative Numbers",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y4 Number and Place Value: recognise the place value of each digit in a four-digit number (thousands, hundreds, tens, and ones)",
+      "Y4 Number and Place Value: order and compare numbers beyond 1000",
+      "Y4 Number and Place Value: round any number to the nearest 10, 100 or 1000",
+      "Y4 Number and Place Value: count backwards through zero to include negative numbers",
+      "Y4 Number and Place Value: read Roman numerals to 100 (C)"
+    ],
+    "pedagogical_rationale": "Y4 extends place value to four digits and introduces negative numbers and rounding. The thousands column is best understood through physical place value counters on an expanded chart, making the 10:1 relationship between adjacent columns visible. Negative numbers are introduced through temperature contexts, which give children a meaningful real-world anchor. Rounding is a new skill that requires understanding the midpoint on a number line, not just a mechanical rule.",
+    "common_pitfalls": [
+      "Children apply the 'round up at 5' rule without understanding — use number line segments to show proximity to multiples",
+      "Difficulty with negative numbers because children think you 'can't go below zero' — use thermometer displays and temperature contexts",
+      "Misreading four-digit numbers (e.g., reading 3052 as 'three hundred and fifty-two') — insist on place value chart recording",
+      "Roman numeral confusion between IV (4) and VI (6) — teach the subtractive principle explicitly with concrete examples"
+    ],
+    "year_groups": ["Y4"],
+    "duration_lessons": 7,
+    "cpa_stage": "concrete_pictorial_abstract",
+    "cpa_notes": "Place value counters on a four-column chart for the thousands extension. Vertical number lines and thermometers for negative numbers. Number lines with midpoints marked for rounding. Move to abstract when children can articulate the reasoning behind each procedure.",
+    "manipulatives": [
+      "Place value counters (thousands, hundreds, tens, ones)",
+      "Place value charts (four columns)",
+      "Dienes blocks (thousands cube for sense of scale)",
+      "Vertical number lines and thermometer displays",
+      "Arrow cards (thousands, hundreds, tens, ones)"
+    ],
+    "representations": [
+      "Place value chart (four columns with counters or digits)",
+      "Number line (showing rounding to nearest 10, 100, 1000)",
+      "Vertical number line (for negative numbers and temperature)",
+      "Part-whole model (partitioning four-digit numbers)",
+      "Roman numeral conversion charts"
+    ],
+    "fluency_targets": [
+      "State the value of each digit in any four-digit number",
+      "Round any number to the nearest 10, 100, or 1000",
+      "Order a set of numbers including negative numbers",
+      "Read and write Roman numerals to 100"
+    ],
+    "reasoning_prompts": [
+      "I round a number to the nearest 100 and get 4500. What is the smallest number I could have started with? The largest?",
+      "The temperature was -3°C in the morning and rose by 7 degrees. What is the new temperature? Show this on a number line.",
+      "Why does rounding 4550 to the nearest 100 give 4600, not 4500? Convince me using a number line."
+    ],
+    "application_contexts": [
+      "Reading and comparing temperatures in different cities around the world (Geography link)",
+      "Working with historical dates and Roman numerals in History",
+      "Rounding measurements in Science investigations to appropriate degrees of accuracy"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y4-C001", "primary": true},
+      {"concept_id": "MA-Y4-C002", "primary": true},
+      {"concept_id": "MA-Y4-C003", "primary": true},
+      {"concept_id": "MA-Y4-C004", "primary": false},
+      {"concept_id": "MA-Y4-C005", "primary": false}
+    ],
+    "uses_template": ["VT-08", "VT-05"],
+    "domain_ids": ["MA-Y4-D001"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y4-002",
+    "name": "Addition and Subtraction: Efficient Methods and Problem Solving",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y4 Addition and Subtraction: add and subtract numbers with up to 4 digits using the formal written methods of columnar addition and subtraction where appropriate"
+    ],
+    "pedagogical_rationale": "Y4 extends column methods to four-digit numbers and emphasises choosing the most efficient method. The phrase 'where appropriate' in the NC is deliberate — children should recognise when mental methods or adjustment strategies are more efficient than a written column. This requires confident place value understanding and number sense alongside procedural fluency. Estimation remains critical for checking reasonableness.",
+    "common_pitfalls": [
+      "Over-reliance on column method for calculations that are simpler mentally (e.g., 3000 - 1999) — discuss efficiency of different strategies",
+      "Errors when regrouping across multiple columns (e.g., 4002 - 1357 where multiple exchanges are needed) — slow down with place value counters",
+      "Not checking answers against estimates — build a 'estimate first, calculate, check' routine"
+    ],
+    "year_groups": ["Y4"],
+    "duration_lessons": 5,
+    "cpa_stage": "pictorial_abstract",
+    "cpa_notes": "Most Y4 children should be moving away from concrete for addition and subtraction, using pictorial place value charts only when regrouping is tricky. The emphasis is on fluent abstract method with pictorial support available for difficult exchanges.",
+    "manipulatives": [
+      "Place value counters (for complex regrouping only)",
+      "Place value charts (for recording alongside column method)"
+    ],
+    "representations": [
+      "Column method layout (formal written format)",
+      "Bar model for comparison and multi-step word problems",
+      "Number line for estimation and mental strategies",
+      "Part-whole model for problem structure"
+    ],
+    "fluency_targets": [
+      "Add and subtract four-digit numbers using column methods with regrouping across any column",
+      "Estimate answers by rounding before calculating",
+      "Choose between mental and written methods based on the numbers involved",
+      "Use inverse operations to check answers"
+    ],
+    "reasoning_prompts": [
+      "For the calculation 5001 - 2998, would you use a column method or a mental method? Explain why.",
+      "Here are three calculations. Sort them into 'best done mentally' and 'best done with a written method'. Explain your choices.",
+      "The answer to a subtraction is 1467. What could the two numbers have been? Find three possibilities."
+    ],
+    "application_contexts": [
+      "Calculating distances between places on a map (Geography link)",
+      "Managing a budget for a class event (PSHE/enterprise link)",
+      "Working out total scores or combined measurements in Science"
+    ],
+    "nc_aim_emphasis": "problem_solving",
+    "delivers_via": [
+      {"concept_id": "MA-Y4-C006", "primary": true}
+    ],
+    "uses_template": ["VT-08", "VT-13"],
+    "domain_ids": ["MA-Y4-D002"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y4-003",
+    "name": "Multiplication and Division: Formal Methods and Factor Pairs",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y4 Multiplication and Division: recall multiplication and division facts for multiplication tables up to 12 x 12",
+      "Y4 Multiplication and Division: use place value, known and derived facts to multiply and divide mentally",
+      "Y4 Multiplication and Division: recognise and use factor pairs and commutativity in mental calculations"
+    ],
+    "pedagogical_rationale": "Y4 is the year of the Multiplication Tables Check (MTC) and complete table fluency to 12 x 12 is the statutory expectation. However, fluency alone is insufficient — children must understand the multiplicative structure that allows them to derive unknown facts from known ones. Factor pairs and commutativity are introduced as reasoning tools, not just pattern-spotting exercises. The ability to decompose calculations (e.g., 6 x 8 = 6 x 4 x 2) is the foundation for the formal written methods that follow in Y5.",
+    "common_pitfalls": [
+      "Rote memorisation without understanding means children cannot recover from a forgotten fact — teach derived fact strategies (doubling, near facts)",
+      "Not recognising that multiplication and division are inverse operations — always present fact families together",
+      "Confusing factor pairs with multiples — use arrays and Cuisenaire rods to make factors visible as dimensions",
+      "Difficulty with the 7, 8, and 12 times tables — these need targeted practice with strategy support"
+    ],
+    "year_groups": ["Y4"],
+    "duration_lessons": 8,
+    "cpa_stage": "pictorial_abstract",
+    "cpa_notes": "By Y4, most table work is pictorial (arrays, area models) and abstract (mental recall). Concrete support with Cuisenaire rods or counters is available for children who need it, particularly for the harder tables. The emphasis is on rapid recall and flexible application.",
+    "manipulatives": [
+      "Cuisenaire rods (for factor pair relationships)",
+      "Counters and arrays (for children needing concrete support)",
+      "Multiplication squares (for pattern spotting)",
+      "Factor bug diagrams"
+    ],
+    "representations": [
+      "Arrays and area models",
+      "Multiplication square (complete 12 x 12)",
+      "Factor pair diagrams (factor bugs or factor trees)",
+      "Bar model for multiplication and division word problems",
+      "Number line jumps for derived facts"
+    ],
+    "fluency_targets": [
+      "Recall all multiplication facts to 12 x 12 within 6 seconds (MTC standard)",
+      "State the corresponding division fact for any multiplication fact",
+      "List all factor pairs for any number up to 100",
+      "Use known facts to derive related facts (e.g., use 6 x 4 to find 6 x 8 by doubling)"
+    ],
+    "reasoning_prompts": [
+      "A number has exactly three factor pairs. One of them is 1 and the number itself. What could the number be? What do you notice about these numbers?",
+      "Jess says 'I can work out 7 x 8 by doing 7 x 4 and doubling.' Show why this works using an array.",
+      "Which times tables are easiest to learn? Which are hardest? Why? What strategies help with the hard ones?"
+    ],
+    "application_contexts": [
+      "Calculating areas of rectangles using factor pairs (Geometry link within maths)",
+      "Working out quantities needed when scaling recipes (DT cooking link)",
+      "Calculating total costs from unit prices in a shopping context"
+    ],
+    "nc_aim_emphasis": "fluency",
+    "delivers_via": [
+      {"concept_id": "MA-Y4-C007", "primary": true},
+      {"concept_id": "MA-Y4-C008", "primary": true},
+      {"concept_id": "MA-Y4-C009", "primary": true}
+    ],
+    "uses_template": ["VT-08", "VT-05"],
+    "domain_ids": ["MA-Y4-D003"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y4-004",
+    "name": "Fractions and Decimals: Equivalence and Tenths/Hundredths",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y4 Fractions: recognise and show, using diagrams, families of common equivalent fractions",
+      "Y4 Fractions: recognise and write decimal equivalents of any number of tenths or hundredths",
+      "Y4 Fractions: recognise and write decimal equivalents to 1/4, 1/2, 3/4"
+    ],
+    "pedagogical_rationale": "Y4 is where fractions and decimals first connect explicitly. Children must understand that 0.1, 1/10, and one-tenth are three representations of the same quantity. Fraction walls and place value charts displayed side by side make this equivalence visible. The concept of equivalent fractions is also new and requires concrete proof through fraction tiles — children need to see that 2/4 and 1/2 cover exactly the same length before they trust the abstract equivalence.",
+    "common_pitfalls": [
+      "Believing 0.7 is the same as 0.07 because 'they both have a 7' — use place value charts with tenths and hundredths columns",
+      "Not understanding that equivalent fractions represent the same amount — physically lay fraction tiles side by side on a fraction wall",
+      "Thinking 0.25 is bigger than 0.3 because 25 > 3 — compare using a number line between 0 and 1",
+      "Treating the decimal point as a separator between two whole numbers rather than a place value boundary"
+    ],
+    "year_groups": ["Y4"],
+    "duration_lessons": 7,
+    "cpa_stage": "concrete_pictorial_abstract",
+    "cpa_notes": "Fraction tiles and fraction walls for equivalence (concrete). Shaded hundredths grids and number lines for decimal representation (pictorial). Abstract conversion between fractions and decimals only after both concrete and pictorial understanding is secure.",
+    "manipulatives": [
+      "Fraction tiles (halves, quarters, fifths, tenths)",
+      "Fraction wall (extending to tenths)",
+      "Hundredths grid (10 x 10 square for shading)",
+      "Place value chart (extended to tenths and hundredths columns)",
+      "Place value counters (including 0.1 and 0.01 counters)"
+    ],
+    "representations": [
+      "Fraction wall (showing equivalent fractions side by side)",
+      "Hundredths grid (shading to show decimal values)",
+      "Number line (0 to 1, marked in tenths and hundredths)",
+      "Place value chart (ones, tenths, hundredths)",
+      "Bar model (showing fractional and decimal equivalence)"
+    ],
+    "fluency_targets": [
+      "State common equivalent fractions (e.g., 1/2 = 2/4 = 5/10, 1/4 = 25/100)",
+      "Convert between fractions with denominators of 10 or 100 and their decimal equivalents",
+      "Know decimal equivalents of 1/4, 1/2, 3/4 from memory",
+      "Order a set of fractions and decimals on a number line between 0 and 1"
+    ],
+    "reasoning_prompts": [
+      "Which is bigger: 0.4 or 3/8? How could you work this out? What representations would help?",
+      "Show me three different fractions that are equivalent to 1/2. How do you know they are equivalent?",
+      "A child writes 0.35 as 3/5 because 'it has a 3 and a 5'. What has gone wrong? What is 0.35 as a fraction?"
+    ],
+    "application_contexts": [
+      "Measuring in metres with decimal notation (e.g., 1.5 m, 0.25 m) in Science or DT",
+      "Using money as a real-world decimal context (pounds and pence)",
+      "Reading and interpreting decimal scales on measuring instruments"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y4-C010", "primary": true},
+      {"concept_id": "MA-Y4-C011", "primary": true},
+      {"concept_id": "MA-Y4-C012", "primary": true}
+    ],
+    "uses_template": ["VT-08", "VT-05"],
+    "domain_ids": ["MA-Y4-D004"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y4-005",
+    "name": "Measurement: Area and Perimeter",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y4 Measurement: find the area of rectilinear shapes by counting squares",
+      "Y4 Measurement: measure and calculate the perimeter of a rectilinear figure (including squares) in centimetres and metres"
+    ],
+    "pedagogical_rationale": "Area and perimeter are among the most commonly confused concepts in primary mathematics. Children often conflate them or believe that shapes with the same perimeter must have the same area. The only cure is extensive practical investigation: covering shapes with unit squares (for area) and measuring around the outside (for perimeter) as clearly distinct activities. The investigation 'same perimeter, different area' is a powerful reasoning task that challenges assumptions.",
+    "common_pitfalls": [
+      "Confusing area and perimeter — always teach them together so children must distinguish, but define each clearly first",
+      "Counting squares for area but including partial squares inaccurately — start with rectilinear shapes only (no partial squares)",
+      "Adding all sides for perimeter but missing one side of an irregular rectilinear shape — trace the perimeter with a finger first",
+      "Believing shapes with the same perimeter must have the same area — the 'farmer's field' investigation disproves this"
+    ],
+    "year_groups": ["Y4"],
+    "duration_lessons": 5,
+    "cpa_stage": "concrete_pictorial_abstract",
+    "cpa_notes": "Concrete: cover shapes with unit square tiles and count them. Measure perimeters with string laid around the edge, then straighten and measure. Pictorial: draw shapes on squared paper, count squares, label side lengths. Abstract: calculate perimeter by adding side lengths.",
+    "manipulatives": [
+      "Unit square tiles (1 cm squared)",
+      "Squared paper (1 cm grid)",
+      "String or ribbon for measuring perimeters of irregular shapes",
+      "Rulers and metre sticks",
+      "Geoboards and elastic bands for making shapes"
+    ],
+    "representations": [
+      "Squared paper grids (for counting area)",
+      "Labelled diagrams with side lengths (for perimeter)",
+      "Bar model (comparing areas or perimeters of different shapes)",
+      "Tables recording perimeter and area for investigation data"
+    ],
+    "fluency_targets": [
+      "Find the area of any rectilinear shape by counting unit squares",
+      "Calculate the perimeter of a rectangle by adding all four side lengths",
+      "Measure the sides of a shape and calculate the total perimeter in centimetres or metres",
+      "Draw a shape with a given area on squared paper"
+    ],
+    "reasoning_prompts": [
+      "Draw two different shapes that both have a perimeter of 20 cm. Do they have the same area? Why or why not?",
+      "A rectangle has an area of 24 square centimetres. What could its dimensions be? List all possibilities.",
+      "True or false: if you make a shape bigger, both its area and perimeter always increase. Can you find a counter-example?"
+    ],
+    "application_contexts": [
+      "Designing a garden layout on squared paper with area and perimeter constraints (DT link)",
+      "Calculating floor areas in a scale drawing of a room",
+      "Comparing field sizes in a Geography map-reading context"
+    ],
+    "nc_aim_emphasis": "reasoning_and_problem_solving",
+    "delivers_via": [
+      {"concept_id": "MA-Y4-C013", "primary": true},
+      {"concept_id": "MA-Y4-C014", "primary": true}
+    ],
+    "uses_template": ["VT-13", "VT-05"],
+    "domain_ids": ["MA-Y4-D005"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y4-006",
+    "name": "Classifying Shapes: Triangles and Quadrilaterals",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y4 Geometry: compare and classify geometric shapes, including quadrilaterals and triangles, based on their properties and sizes",
+      "Y4 Geometry: identify acute and obtuse angles and compare and order angles up to two right angles"
+    ],
+    "pedagogical_rationale": "Y4 deepens shape classification from recognition to property-based comparison. Children learn that triangles and quadrilaterals can be sub-classified by their angles and sides, moving toward a hierarchical understanding (e.g., a square is a special rectangle). The introduction of acute and obtuse angles extends the Y3 right-angle work and gives children the vocabulary to describe and compare angles precisely. Sorting activities using Carroll and Venn diagrams develop logical reasoning.",
+    "common_pitfalls": [
+      "Thinking classification is just about naming — emphasise that properties determine the name, not the other way round",
+      "Not recognising that a shape can belong to multiple categories (e.g., a square is also a rectangle, rhombus, and parallelogram) — use Venn diagrams to show overlapping categories",
+      "Estimating angles inaccurately because children focus on the length of the lines rather than the size of the turn — demonstrate with opening doors or rotating arms",
+      "Believing angles must be measured to be classified — at this stage, comparison to a right angle is sufficient"
+    ],
+    "year_groups": ["Y4"],
+    "duration_lessons": 5,
+    "cpa_stage": "concrete_pictorial",
+    "cpa_notes": "Concrete: sort physical shapes by properties, construct triangles and quadrilaterals with straws or geoboards. Pictorial: classify on Carroll/Venn diagrams, draw shapes with specified angle properties. Right-angle checkers used to identify acute and obtuse angles by comparison.",
+    "manipulatives": [
+      "Shape sets (triangles: equilateral, isosceles, scalene, right-angled; quadrilaterals: squares, rectangles, parallelograms, rhombuses, trapeziums, kites)",
+      "Geoboards and elastic bands",
+      "Right-angle checker (card corner)",
+      "Angle measurer (simple 'angle eater' or fold-out angle comparator)",
+      "Construction straws and connectors"
+    ],
+    "representations": [
+      "Carroll diagrams (sorting by two properties)",
+      "Venn diagrams (showing overlapping shape categories)",
+      "Property tables (listing sides, angles, parallel sides, lines of symmetry)",
+      "Angle comparison diagrams (acute < right angle < obtuse)"
+    ],
+    "fluency_targets": [
+      "Name and classify triangles as equilateral, isosceles, scalene, or right-angled",
+      "Name and classify quadrilaterals including square, rectangle, parallelogram, rhombus, trapezium, and kite",
+      "Identify acute and obtuse angles in shapes and the environment",
+      "Sort shapes into Carroll or Venn diagrams using two properties"
+    ],
+    "reasoning_prompts": [
+      "Is a square always a rectangle? Is a rectangle always a square? Explain using properties.",
+      "I have a quadrilateral with exactly one pair of parallel sides. What could it be? What could it not be?",
+      "Draw a triangle with exactly one obtuse angle. Can you draw a triangle with two obtuse angles? Why or why not?"
+    ],
+    "application_contexts": [
+      "Identifying geometric shapes in architecture and Art (cross-curricular Art/DT link)",
+      "Describing compass turns using angle language in Geography map work",
+      "Analysing shapes in tiling patterns and tessellations"
+    ],
+    "nc_aim_emphasis": "reasoning",
+    "delivers_via": [
+      {"concept_id": "MA-Y4-C016", "primary": true},
+      {"concept_id": "MA-Y4-C017", "primary": true}
+    ],
+    "uses_template": ["VT-05", "VT-13"],
+    "domain_ids": ["MA-Y4-D006"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y4-007",
+    "name": "Position and Direction: Coordinates in the First Quadrant",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y4 Geometry: describe positions on a 2-D grid as coordinates in the first quadrant"
+    ],
+    "pedagogical_rationale": "Coordinates introduce a formal system for describing position, bridging geometry and number. The first quadrant (positive x and y only) provides a manageable starting point. The key conceptual challenge is understanding that coordinates describe a point, not a square, and that the order (x, y) matters. Grid references from Geography provide a meaningful real-world connection, though children must understand the difference between grid references (which label squares) and coordinates (which label points).",
+    "common_pitfalls": [
+      "Reversing the x and y coordinates — use the mnemonic 'along the corridor and up the stairs' consistently",
+      "Confusing grid references (labelling squares) with coordinates (labelling points) — compare the two systems explicitly",
+      "Plotting points in the wrong position because of miscounting along an axis — use a finger to trace along x first, then up y",
+      "Not understanding that (3, 5) and (5, 3) are different points — plot both and compare"
+    ],
+    "year_groups": ["Y4"],
+    "duration_lessons": 3,
+    "cpa_stage": "pictorial_abstract",
+    "cpa_notes": "This topic is naturally pictorial and abstract. Children work on coordinate grids, plotting and reading points. Concrete support comes from physical grid mats where children can stand on coordinates, or from placing objects at coordinate positions on a table-top grid.",
+    "manipulatives": [
+      "Floor coordinate grid (large enough for children to stand on)",
+      "Counters or small objects for placing at coordinate points on desk grids",
+      "Squared paper and rulers for drawing coordinate grids"
+    ],
+    "representations": [
+      "First-quadrant coordinate grid (axes labelled, gridlines visible)",
+      "Coordinate pairs written in standard notation (x, y)",
+      "Shape vertices plotted on coordinate grids",
+      "Simple coordinate maps (treasure map style)"
+    ],
+    "fluency_targets": [
+      "Read coordinates of any point plotted in the first quadrant",
+      "Plot points accurately given their coordinates",
+      "Describe the position of a point using the correct (x, y) notation",
+      "Identify the coordinates of vertices of shapes drawn on a grid"
+    ],
+    "reasoning_prompts": [
+      "A square has three corners at (1, 1), (1, 4), and (4, 1). Where must the fourth corner be? How do you know?",
+      "Sam plots the point (5, 3) but his partner reads it as (3, 5). Who is right? Does it matter?",
+      "I move a shape 3 squares to the right on a coordinate grid. What happens to all the x-coordinates? What about the y-coordinates?"
+    ],
+    "application_contexts": [
+      "Using four-figure grid references on Ordnance Survey maps (Geography link)",
+      "Programming movement instructions in a coding environment (Computing link)",
+      "Designing a treasure map with clues based on coordinates"
+    ],
+    "nc_aim_emphasis": "problem_solving",
+    "delivers_via": [
+      {"concept_id": "MA-Y4-C015", "primary": true}
+    ],
+    "uses_template": ["VT-13", "VT-08"],
+    "domain_ids": ["MA-Y4-D007"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  },
+  {
+    "suggestion_id": "MTS-Y4-008",
+    "name": "Statistics: Discrete and Continuous Data",
+    "suggestion_type": "prescribed_topic",
+    "subject": "Mathematics",
+    "key_stage": "KS2",
+    "curriculum_status": "mandatory",
+    "curriculum_reference": [
+      "Y4 Statistics: interpret and present discrete and continuous data using appropriate graphical methods, including bar charts and time graphs"
+    ],
+    "pedagogical_rationale": "Y4 introduces the distinction between discrete data (counted, separate values) and continuous data (measured, can take any value on a scale). This is a significant conceptual step because it determines which type of graph is appropriate. Time graphs (line graphs showing change over time) are introduced as the first representation of continuous data. Children must understand that the line between plotted points on a time graph represents real intermediate values, unlike a bar chart where the space between bars is meaningless.",
+    "common_pitfalls": [
+      "Drawing a line graph for discrete data (e.g., connecting bars of a bar chart) — emphasise that lines imply continuous intermediate values",
+      "Not choosing appropriate scales for axes, leading to graphs that are impossible to read — practise choosing scales before drawing",
+      "Reading values between plotted points on a time graph inaccurately — model interpolation carefully",
+      "Confusing the independent variable (time, on x-axis) with the dependent variable (measurement, on y-axis)"
+    ],
+    "year_groups": ["Y4"],
+    "duration_lessons": 4,
+    "cpa_stage": "pictorial_abstract",
+    "cpa_notes": "Statistics is inherently pictorial and abstract at this stage. Children collect real data (e.g., temperature readings over a day) and present it in appropriate graph types. The concrete element is the data collection itself. Abstract questions about the data follow.",
+    "manipulatives": [
+      "Thermometers (for collecting continuous temperature data)",
+      "Stopwatches (for collecting time-based data)",
+      "Squared paper and rulers for graph construction"
+    ],
+    "representations": [
+      "Bar charts (for discrete data with scaled axes)",
+      "Time graphs / line graphs (for continuous data over time)",
+      "Two-way tables",
+      "Comparison charts (side-by-side bar charts)"
+    ],
+    "fluency_targets": [
+      "Distinguish between discrete and continuous data and choose the appropriate graph type",
+      "Draw a time graph with correctly labelled axes and appropriate scale",
+      "Read intermediate values from a time graph",
+      "Present discrete data in a bar chart with a chosen scale"
+    ],
+    "reasoning_prompts": [
+      "The temperature graph shows a straight line between 10°C at 9 am and 16°C at 12 pm. Does this mean the temperature rose steadily? Can you be certain?",
+      "A child draws a bar chart to show how a plant grew each week. Another child says a line graph would be better. Who is right and why?",
+      "Two classes collected data about eye colour and about height. Which data set should use a bar chart and which should use a line graph? Explain your reasoning."
+    ],
+    "application_contexts": [
+      "Recording temperature changes over a school day for a Science weather investigation",
+      "Tracking plant growth over several weeks in a Science unit (Science link)",
+      "Analysing historical population data presented in different graph formats (History/Geography link)"
+    ],
+    "nc_aim_emphasis": "reasoning_and_problem_solving",
+    "delivers_via": [
+      {"concept_id": "MA-Y4-C018", "primary": true}
+    ],
+    "uses_template": ["VT-18", "VT-13"],
+    "domain_ids": ["MA-Y4-D008"],
+    "display_category": "Maths Topic Suggestion",
+    "display_color": "#7C3AED",
+    "display_icon": "calculate"
+  }
+]
