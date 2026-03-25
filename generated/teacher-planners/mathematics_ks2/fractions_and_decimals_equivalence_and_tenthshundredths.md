@@ -1,0 +1,287 @@
+# Mathematics | Teacher Planner: Fractions and Decimals: Equivalence and Tenths/Hundredths
+*[MTS-Y4-004]*
+
+**Subject:** Mathematics | **Key Stage:** KS2 | **Year group:** Y4
+**Statutory reference:** Y4 Fractions: recognise and show, using diagrams, families of common equivalent fractions | **Source document:** Mathematics (KS1/KS2) - National Curriculum Programme of Study
+**Estimated duration:** 7 lessons | **Status:** Mandatory
+
+---
+
+## Concepts
+
+This study delivers **3 primary concepts** and **0 secondary concepts**.
+
+### Primary concept: Hundredths and decimal place value (MA-Y4-C010)
+
+**Type:** Knowledge | **Teaching weight:** 3/6
+
+A hundredth is one of one hundred equal parts of a whole (1/100 = 0.01). The second decimal place (hundredths) extends the decimal place value system established with tenths in Year 3. Mastery means pupils understand that 0.01 = 1/100, can count up and down in hundredths, understand that 10 hundredths = 1 tenth, and can identify the value of any digit in a decimal number with two decimal places.
+
+**Teaching guidance:** Use a 10 × 10 grid (like a hundred square but representing one whole): each small square is 1/100 = 0.01, each row/column of 10 squares is 1/10 = 0.1. Hundredths number lines (0 to 1 marked in 0.01 steps) provide pictorial support. Connect to metric measures: 1 cm = 0.01 m, since 100 cm = 1 m. Money provides a natural context: £1.47 means 1 pound, 4 tenths of a pound and 7 hundredths of a pound. Practise reading and writing decimal numbers with up to two decimal places.
+
+**Key vocabulary:** hundredth, one hundredth, 0.01, 1/100, decimal place, tenths, hundredths, decimal point, column, value
+
+**Common misconceptions:** Pupils often think 0.17 is 'zero point seventeen' and therefore larger than 0.9 (which they read as 'zero point nine') because 17 > 9. This is the most critical misconception in decimal place value. Pupils may also think 0.1 = 0.10 but not understand why (the zero adds no value). The connection between fraction and decimal notation (1/100 = 0.01) is often procedural rather than conceptual.
+
+#### Differentiation
+
+| Level | What success looks like | Example task | Common errors |
+|-------|------------------------|-------------|---------------|
+| **Entry** | Shading hundredths on a 10×10 grid and writing the decimal as 0.01 per square, using the grid as concrete support. | Shade 23 squares on the hundredths grid. Write this as a decimal. | Writing 0.023 (confusing hundredths with thousandths); Miscounting the shaded squares on the grid |
+| **Developing** | Identifying the value of each digit in a number with two decimal places and understanding that 10 hundredths = 1 tenth. | What is the value of the 4 in 0.47? How many hundredths make one tenth? | Saying the 4 is worth 4 hundredths (confusing its position); Not understanding that 0.10 = 0.1 |
+| **Expected** | Counting up and down in hundredths, comparing decimals with different numbers of decimal places, and connecting to fractions. | Which is larger, 0.7 or 0.65? Explain. Write 0.45 as a fraction. | Saying 0.65 > 0.7 because 65 > 7 (the most critical decimal misconception); Not knowing how to simplify 45/100 to 9/20 |
+
+> **Model response (Entry):** *0.23. Twenty-three hundredths.*
+
+> **Model response (Developing):** *The 4 is worth 4 tenths (0.4). 10 hundredths make 1 tenth (0.10 = 0.1).*
+
+> **Model response (Expected):** *0.7 is larger. 0.7 = 0.70, and 70 hundredths > 65 hundredths. 0.45 = 45/100 = 9/20.*
+
+#### Representation stages (CPA)
+
+| Stage | Description | Resources | Transition cue |
+|-------|-------------|-----------|----------------|
+| **Concrete** | Using a 10×10 hundredths grid (each small square = 0.01), place value counters labelled 0.01 and 0.1, and money (1p = £0.01) to explore hundredths physically | 10×10 hundredths grid, place value counters (0.01, 0.1, 1), 1p and 10p coins, place value mat (O, tenths, hundredths) | Child explains that 10 hundredths = 1 tenth and identifies the value of each digit in a two-decimal-place number without the grid |
+| **Pictorial** | Drawing hundredths grids, using place value charts with decimal columns, and placing decimals on number lines marked in hundredths | hundredths grid template, place value chart (O, .t, .h), number line (0-1 in hundredths), squared paper | Child reads and writes any two-decimal-place number, places it on a number line, and converts between fraction and decimal notation without the grid |
+| **Abstract** | Working with hundredths mentally: counting in hundredths, identifying digit values, comparing decimals, and converting between fractions and decimals |  | Child works with hundredths fluently, never confusing 0.7 and 0.07, and converts between fraction and decimal forms instantly |
+
+### Primary concept: Equivalent fractions using multiples and factors (MA-Y4-C011)
+
+**Type:** Knowledge | **Teaching weight:** 3/6
+
+Equivalent fractions can be generated by multiplying or dividing both numerator and denominator by the same non-zero number. For example, 1/2 = 2/4 = 3/6 = 4/8 (multiplying by 2, 3, 4 respectively). Families of equivalent fractions share a common value. Mastery means pupils can generate equivalent fractions systematically, recognise whether two fractions are equivalent, and use equivalence to compare and order fractions with different denominators.
+
+**Teaching guidance:** Use fraction walls and fraction circles to show equivalence visually. The rule: multiplying numerator and denominator by the same number (×n/n = 1) preserves the value. Generate families: 1/3, 2/6, 3/9, 4/12... Practice: find three fractions equivalent to 2/5 (4/10, 6/15, 8/20). Connect to simplifying fractions (divide both by the same number). Use equivalent fractions to add fractions with different but related denominators: 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2.
+
+**Key vocabulary:** equivalent, fraction, numerator, denominator, multiply, divide, simplify, fraction wall, family, common value
+
+**Common misconceptions:** Pupils understand that multiplying both parts works but struggle to explain why it preserves value. They may think only one specific fraction in a family is 'correct'. When using equivalence to compare fractions, pupils may use trial and error rather than a systematic approach.
+
+#### Differentiation
+
+| Level | What success looks like | Example task | Common errors |
+|-------|------------------------|-------------|---------------|
+| **Entry** | Generating equivalent fractions by shading fraction walls and comparing the sizes visually. | Using the fraction wall, find a fraction equivalent to 1/2 with a denominator of 6. | Saying 2/6 (adding 1 to numerator and denominator) instead of 3/6; Not understanding why the fraction wall shows equivalence |
+| **Developing** | Generating families of equivalent fractions using the rule: multiply (or divide) numerator and denominator by the same number. | Write three fractions equivalent to 2/5. | Multiplying only the numerator (writing 4/5, 6/5, 8/5); Adding the same number instead of multiplying (writing 3/6, 4/7, 5/8) |
+| **Expected** | Using equivalent fractions to compare and order fractions with different denominators. | Which is larger, 3/4 or 5/6? Show your working using a common denominator. | Comparing numerators without finding a common denominator (saying 5/6 > 3/4 because 5 > 3); Finding a common denominator but converting the fractions incorrectly |
+
+> **Model response (Entry):** *3/6. Looking at the fraction wall, 3 sixths takes up the same amount of space as 1 half.*
+
+> **Model response (Developing):** *4/10, 6/15, 8/20. I multiplied top and bottom by 2, then 3, then 4.*
+
+> **Model response (Expected):** *Common denominator of 4 and 6 is 12. 3/4 = 9/12. 5/6 = 10/12. So 5/6 > 3/4.*
+
+#### Representation stages (CPA)
+
+| Stage | Description | Resources | Transition cue |
+|-------|-------------|-----------|----------------|
+| **Concrete** | Using fraction walls, fraction strips and fraction circles to find equivalent fractions by overlaying and comparing, generating families of equivalent fractions physically | fraction wall, fraction strips (halves through twelfths), fraction circles | Child generates equivalent fractions by multiplying numerator and denominator by the same number, verifying with strips only to confirm |
+| **Pictorial** | Drawing fraction bars to show equivalence, recording the multiplicative relationship in a table, and using equivalence to compare fractions with different denominators | fraction bar template, equivalence table template, squared paper | Child generates equivalent fractions and uses them to compare fractions with different denominators, recording on paper without fraction strips |
+| **Abstract** | Generating equivalent fractions mentally, simplifying fractions by dividing, and using equivalence to compare and order fractions |  | Child generates, simplifies and uses equivalent fractions fluently to compare any two fractions, selecting the most efficient common denominator |
+
+### Primary concept: Decimal equivalents to common fractions (MA-Y4-C012)
+
+**Type:** Knowledge | **Teaching weight:** 2/6
+
+Certain common fractions have well-known decimal equivalents: 1/2 = 0.5, 1/4 = 0.25, 3/4 = 0.75, 1/10 = 0.1, 1/100 = 0.01. These equivalences must be known to automaticity. Mastery means pupils can convert between fraction and decimal notation for these key fractions instantly and use these equivalences in measurement and money contexts.
+
+**Teaching guidance:** Use money as the most natural context: £0.50 = £1/2; £0.25 = £1/4 (25p is a quarter of a pound). Use the hundredths grid: shade 50 squares for 1/2 = 0.50; shade 25 squares for 1/4 = 0.25. Connect to division: 1 ÷ 2 = 0.5; 1 ÷ 4 = 0.25. Extend to any tenths: 3/10 = 0.3, 7/10 = 0.7. Display a reference table until these are memorised.
+
+**Key vocabulary:** decimal equivalent, fraction, one half, one quarter, three quarters, decimal point, convert, tenths, hundredths
+
+**Common misconceptions:** Pupils often write 1/4 = 0.4 (reading the denominator as the decimal digit rather than dividing). They may know 1/2 = 0.5 but not connect 3/4 = 0.75 (which requires recognising it as 3 × 0.25). The equivalence 1/10 = 0.1 is usually secure; 1/100 = 0.01 is less so.
+
+#### Differentiation
+
+| Level | What success looks like | Example task | Common errors |
+|-------|------------------------|-------------|---------------|
+| **Entry** | Using money to establish key equivalences: 50p = half of £1, 25p = quarter of £1. | What fraction of £1 is 50p? What fraction of £1 is 25p? Write them as decimals. | Writing 1/2 = 0.2 (confusing the decimal representation); Not connecting 25p to a quarter of a pound |
+| **Developing** | Knowing decimal equivalents of tenths and key fractions: 1/2 = 0.5, 1/4 = 0.25, 3/4 = 0.75, 1/10 = 0.1. | Write 3/4 as a decimal. Write 0.1 as a fraction. | Writing 3/4 = 0.34 (reading the digits of the fraction as the decimal); Writing 1/4 = 0.4 (using the denominator as the decimal digit) |
+| **Expected** | Converting fluently between fraction and decimal forms for all tenths and key fractions, in measurement and money contexts. | Convert 7/10 to a decimal. A plank is 0.75 m long. What fraction of a metre is that? | Knowing 0.75 = 3/4 for money but not recognising it in a measurement context; Not being able to convert any tenth (e.g. 3/10 = 0.3) beyond the memorised facts |
+
+> **Model response (Entry):** *50p = 1/2 of £1 = £0.50. 25p = 1/4 of £1 = £0.25.*
+
+> **Model response (Developing):** *3/4 = 0.75. 0.1 = 1/10.*
+
+> **Model response (Expected):** *7/10 = 0.7. 0.75 m = 3/4 of a metre.*
+
+#### Representation stages (CPA)
+
+| Stage | Description | Resources | Transition cue |
+|-------|-------------|-----------|----------------|
+| **Concrete** | Using money (£1 = 100p) and hundredths grids to discover key fraction-decimal equivalences: half = 50p = 0.50, quarter = 25p = 0.25, three-quarters = 75p = 0.75 | coins (1p, 10p, 50p, £1), hundredths grid, fraction circles (halves, quarters), place value counters | Child states the decimal equivalents of 1/2, 1/4, 3/4, 1/10 and 1/100 from memory without money or grids |
+| **Pictorial** | Drawing hundredths grids and number lines to show fraction-decimal equivalences, recording conversions in a reference table | hundredths grid template, number line (0-1 marked in tenths/hundredths), conversion table template | Child converts between fraction and decimal notation for all tenths and the key quarter fractions without reference materials |
+| **Abstract** | Converting instantly between common fractions and their decimal equivalents, and applying these in measurement and money contexts |  | Child converts between fractions and decimals instantly and applies equivalences in context without any visual aids |
+
+---
+
+## Thinking lens: Scale, Proportion and Quantity (primary)
+
+**Key question:** How big, how many, or how much — and how does that change how we think about it?
+
+**Why this lens fits:** Hundredths extend the place value system below the decimal point — understanding that 0.01 is one hundredth of 1 requires the same proportional scaling insight (each place is 1/10 of the one to its left) applied in a new direction.
+
+**Question stems for KS2:**
+- How many times bigger is this than that?
+- What fraction of the whole is this part?
+- Which unit of measurement fits best here? Why?
+- If we doubled the amount, what would change?
+
+**Secondary lens:** Patterns — The decimal place value pattern (each column is 1/10 of the previous one) is the same rule that governs the whole-number columns, just extended rightward — recognising this consistent pattern is the key insight.
+
+---
+
+## Session structure: Pattern Seeking + Worked Example Set
+
+This study uses 2 vehicle templates:
+
+### Pattern Seeking (main structure)
+Enquiry focused on identifying relationships and regularities in data. Pupils pose questions about possible correlations, gather data through observation or measurement, organise and represent data graphically, identify patterns, and attempt to explain the underlying relationship.
+
+`question` → `data_gathering` → `graphing` → `pattern_identification` → `explanation`
+
+**Assessment:** Data presentation with appropriate graph or chart, written description of the pattern found, and explanation of the possible reasons for the pattern, including evaluation of the strength of evidence.
+
+**Teacher note:** Use the PATTERN SEEKING template: pose a question that pupils investigate by collecting data and looking for relationships. Guide them to gather data systematically, present it in tables or graphs, and describe any patterns they find. Encourage them to suggest explanations for the patterns and consider whether the pattern always holds true.
+
+**KS2 question stems:**
+- What data do we need to collect to answer this question?
+- What does the graph or table show? Can you describe the pattern?
+- Does this pattern always happen, or are there exceptions?
+- What might explain the pattern you have found?
+
+### Worked Example Set
+A mastery-oriented mathematics sequence moving through the concrete-pictorial-abstract progression with activation and reasoning extension phases. Begins by activating prior knowledge, introduces new concepts with physical manipulatives, transitions to pictorial representations, develops abstract fluency, applies in context, and extends through reasoning challenges.
+
+`activation` → `concrete` → `pictorial` → `abstract` → `application` → `reasoning_extension`
+
+**Assessment:** Graduated practice set moving from guided examples to independent application, with reasoning task requiring explanation of method and justification of answers.
+
+**Teacher note:** Use the WORKED EXAMPLE SET template: activate prior knowledge and address common misconceptions. Guide pupils through the concrete-pictorial-abstract progression, modelling each step with clear mathematical language. Provide varied practice that builds fluency, then extend with reasoning problems that require pupils to explain, justify, or spot errors. Use bar models and diagrams to build conceptual understanding.
+
+**KS2 question stems:**
+- What do you already know that could help you here?
+- Can you draw a bar model or diagram to represent this problem?
+- Where has this gone wrong, and how would you correct it?
+- Can you explain why this method works, not just how?
+
+---
+
+## Why this study matters
+
+Y4 is where fractions and decimals first connect explicitly. Children must understand that 0.1, 1/10, and one-tenth are three representations of the same quantity. Fraction walls and place value charts displayed side by side make this equivalence visible. The concept of equivalent fractions is also new and requires concrete proof through fraction tiles — children need to see that 2/4 and 1/2 cover exactly the same length before they trust the abstract equivalence.
+
+---
+
+## Pitfalls to avoid
+
+1. Believing 0.7 is the same as 0.07 because 'they both have a 7' — use place value charts with tenths and hundredths columns
+2. Not understanding that equivalent fractions represent the same amount — physically lay fraction tiles side by side on a fraction wall
+3. Thinking 0.25 is bigger than 0.3 because 25 > 3 — compare using a number line between 0 and 1
+4. Treating the decimal point as a separator between two whole numbers rather than a place value boundary
+
+---
+
+## Mathematical reasoning skills (KS2)
+
+These disciplinary skills should be woven through teaching, not taught in isolation:
+
+- **Counting and procedural fluency** — Recall number facts, counting sequences and simple arithmetic operations with confidence and accuracy, demonstrating the ability to apply known facts without having to derive them from first principles each time.
+- **Explaining and justifying mathematical ideas** — Use mathematical language to explain how an answer was reached, give reasons for a mathematical claim, and begin to recognise when a general pattern holds by testing examples and describing what is noticed.
+- **Solving problems in familiar contexts** — Apply known mathematical procedures to solve simple one- and two-step problems set in practical, concrete contexts, selecting the appropriate operation and checking that the answer makes sense.
+- **Identifying and describing patterns** — Spot numerical and spatial patterns, describe the rule that generates a sequence, and use the rule to predict further terms, providing the foundation for algebraic generalisation.
+- **Checking and verifying results** — Use inverse operations, estimation or an alternative method to check whether a result is reasonable, and adjust working when an answer does not make sense in context.
+- **Arithmetic fluency with whole numbers and fractions** — Perform arithmetic operations — including addition, subtraction, multiplication and division with whole numbers, fractions, decimals and percentages — efficiently and accurately using mental and written methods, with rapid recall of multiplication facts.
+
+---
+
+## Vocabulary word mat
+
+| Term | Meaning |
+|------|---------|
+| 0.01 | *(from concept key vocabulary)* |
+| 1/100 | *(from concept key vocabulary)* |
+| column | *(from concept key vocabulary)* |
+| common value | *(from concept key vocabulary)* |
+| convert | *(from concept key vocabulary)* |
+| decimal equivalent | *(from concept key vocabulary)* |
+| decimal place | *(from concept key vocabulary)* |
+| decimal point | *(from concept key vocabulary)* |
+| denominator | *(from concept key vocabulary)* |
+| divide | *(from concept key vocabulary)* |
+
+## Prior knowledge (retrieval plan)
+
+Pupils should already know the following from earlier units:
+
+| Prior knowledge needed | For concept | Description |
+|----------------------|-------------|-------------|
+| Tenths as fractions and in place value | Hundredths and decimal place value | A tenth arises when one whole is divided into 10 equal parts; each part is one tenth (1/10). This... |
+| Equivalent fractions | Equivalent fractions using multiples and factors | Equivalent fractions are different fractions that represent the same value (e.g. 1/2 = 2/4 = 3/6 ... |
+| Hundredths and decimal place value | Decimal equivalents to common fractions | A hundredth is one of one hundred equal parts of a whole (1/100 = 0.01). The second decimal place... |
+
+---
+
+## Assessment alignment (KS2)
+
+KS2 test framework content domain codes assessed by this study:
+
+| Code | Description | Assesses concept |
+|------|-------------|-----------------|
+| **CDC-KS2-MA-4F1** | Year 4: recognise, find, write, name and count fractions | Equivalent fractions using multiples and factors |
+| **CDC-KS2-MA-4F2** | Year 4: equivalent fractions | Equivalent fractions using multiples and factors |
+| **CDC-KS2-MA-4F6a** | Year 4: fractions / decimals equivalence | Decimal equivalents to common fractions |
+| **CDC-KS2-MA-4F6b** | Year 4: fractions / decimals equivalence | Decimal equivalents to common fractions |
+| **CDC-KS2-MA-4F7** | Year 4: rounding decimals | Hundredths and decimal place value |
+| **CDC-KS2-MA-4F8** | Year 4: compare and order decimals | Hundredths and decimal place value |
+
+---
+
+## Scaffolding and inclusion (Y4)
+
+| Guideline | Detail |
+|-----------|--------|
+| Reading level | Fluent Reader (Emerging) (Lexile 300–500) |
+| Text-to-speech | Available |
+| Max sentence length | 18 words |
+| Vocabulary | Curriculum vocabulary expected to be known (with in-context reminder). Some academic vocabulary (e.g., 'evidence', 'conclusion') acceptable. Technical terms in context. |
+| Scaffolding level | Moderate |
+| Hint tiers | 3 tiers |
+| Session length | 15–25 minutes |
+| Worked examples | Required — Text-based with inline questions. Not fully narrated — child reads the example. |
+| Feedback tone | Respectful And Precise |
+| Normalize struggle | Yes |
+| Example correct feedback | *Your inference was correct — the text never said the character was nervous, but you worked it out from the clues: the short sentences and the word 'paced'. That is sophisticated reading.* |
+| Example error feedback | *This is a common misconception: plants do not get their food from the soil — they make it from sunlight, water, and carbon dioxide. The soil provides minerals, but food is made in the leaves.* |
+
+---
+
+## Knowledge organiser
+
+**Core facts (expected standard):**
+- **Hundredths and decimal place value**: Counting up and down in hundredths, comparing decimals with different numbers of decimal places, and connecting to fractions.
+- **Equivalent fractions using multiples and factors**: Using equivalent fractions to compare and order fractions with different denominators.
+- **Decimal equivalents to common fractions**: Converting fluently between fraction and decimal forms for all tenths and key fractions, in measurement and money contexts.
+
+---
+
+## Graph context
+
+**Node type:** `MathsTopicSuggestion` | **Study ID:** `MTS-Y4-004`
+
+**Concept IDs:**
+- `MA-Y4-C010`: Hundredths and decimal place value (primary)
+- `MA-Y4-C011`: Equivalent fractions using multiples and factors (primary)
+- `MA-Y4-C012`: Decimal equivalents to common fractions (primary)
+
+**Cypher query:**
+```cypher
+MATCH (ts:MathsTopicSuggestion {suggestion_id: 'MTS-Y4-004'})
+  -[:DELIVERS_VIA]->(c:Concept)
+  -[:HAS_DIFFICULTY_LEVEL]->(dl)
+RETURN c.name, dl.label, dl.description
+```
+
+---
+
+*Generated from the UK Curriculum Knowledge Graph — zero LLM generation.*

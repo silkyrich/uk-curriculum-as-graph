@@ -31,6 +31,7 @@ STUDY_NODES = {
     'MusicTopicSuggestion':      {'id_field': 'suggestion_id', 'data_dir': 'music_studies',      'array_key': None,         'subject': 'Music'},
     'DTTopicSuggestion':         {'id_field': 'suggestion_id', 'data_dir': 'dt_studies',         'array_key': None,         'subject': 'Design and Technology'},
     'ComputingTopicSuggestion':  {'id_field': 'suggestion_id', 'data_dir': 'computing_studies',  'array_key': None,         'subject': 'Computing'},
+    'MathsTopicSuggestion':      {'id_field': 'suggestion_id', 'data_dir': 'maths_studies',      'array_key': None,         'subject': 'Mathematics'},
     'TopicSuggestion':           {'id_field': 'suggestion_id', 'data_dir': 'generic_studies',    'array_key': None,         'subject': None},
 }
 
