@@ -92,7 +92,7 @@
       "description": "Physics domain covering vibrations as the source of sound, transmission through media, pitch and volume patterns, and the inverse relationship between distance and sound intensity. Year 4 only.",
       "is_cross_cutting": false,
       "structure_type": "hierarchical",
-      "notes": "Year 4 only. New topic at KS2 with no direct KS1 prerequisite content, though general observation and pattern-finding skills from KS1 apply.",
+      "notes": "Year 4 only. The substantive physics is a fresh start at KS2, but two narrow prerequisites apply: KS1 Five Senses (SC-KS1-C019) establishes the ear as the organ of hearing — needed for the second statutory objective about vibrations travelling 'to the ear' — and Y4 Three States of Matter (SC-KS2-C034) provides the solid/liquid/gas classification and particle model that underpins sound transmission through media. Beyond these, general observation and pattern-finding skills from KS1 apply.",
       "curriculum_context": "The Sound domain requires pupils to understand sound as a physical phenomenon produced by vibration, and to explore the properties of sound — pitch, volume and the materials through which sound travels. Pupils identify how sounds are made (all sounds result from something vibrating), and understand that vibrations travel through a medium to the ear. The statutory curriculum requires pupils to investigate the relationship between the vibration of a string and the pitch of the sound produced, and to understand how sound is attenuated by distance. Pupils develop the ability to design fair test investigations, measuring and recording sound levels and making predictions about variables that affect pitch and volume."
     },
     {
@@ -2839,6 +2839,22 @@
       "relationship_type": "foundational",
       "strength": 0.95,
       "rationale": "Understanding the solar system model (Earth orbiting the Sun) is prerequisite for using Earth's rotation to explain day and night — both are part of the same Y5 topic and the orbital model provides necessary context."
+    },
+    {
+      "prerequisite_concept": "SC-KS1-C019",
+      "dependent_concept": "SC-KS2-C037",
+      "confidence": "inferred",
+      "relationship_type": "foundational",
+      "strength": 0.7,
+      "rationale": "The second Y4 sound objective — 'vibrations from sounds travel through a medium to the ear' — explicitly names the ear as the organ that receives sound. Pupils must already know from KS1 (The Five Senses, SC-KS1-C019) that ears are the body part associated with hearing before they can meaningfully attach the vibration model to how hearing works."
+    },
+    {
+      "prerequisite_concept": "SC-KS2-C034",
+      "dependent_concept": "SC-KS2-C038",
+      "confidence": "inferred",
+      "relationship_type": "developmental",
+      "strength": 0.8,
+      "rationale": "Sound transmission through media uses the exact classification (solid, liquid, gas) taught in Y4 Three States of Matter, and relies on the particle model introduced there to explain why sound travels faster through denser media. Both concepts are Y4 but published Y4 schemes of work sequence States of Matter in autumn and Sound in spring or summer so that the particle model is already secure when transmission is introduced."
     },
     {
       "prerequisite_concept": "SC-KS2-C037",
