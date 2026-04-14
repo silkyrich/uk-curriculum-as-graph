@@ -460,13 +460,15 @@ def query_prerequisites(session, label: str, study_id: str) -> list[dict]:
     """Fetch prerequisite concepts for concepts delivered by this study.
 
     Returns concepts from earlier years/key stages that pupils should already
-    know, grouped by the target concept they feed into.
+    know, grouped by the target concept they feed into.  Concepts that are
+    themselves delivered by the current study are excluded — intra-study
+    ordering belongs to the lesson sequence, not the retrieval plan.
     """
     id_field = _get_id_field(label)
     query = f"""
         MATCH (ts:{label} {{{id_field}: $sid}})-[:DELIVERS_VIA]->(c:Concept)
               <-[:PREREQUISITE_OF]-(prereq:Concept)
-        WHERE prereq.concept_id <> c.concept_id
+        WHERE NOT (ts)-[:DELIVERS_VIA]->(prereq)
         RETURN DISTINCT prereq.concept_id AS prereq_id,
                prereq.name AS prereq_name,
                prereq.description AS prereq_description,
