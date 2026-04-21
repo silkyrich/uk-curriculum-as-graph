@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protectionism — AQA A-Level Economics 7136</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+          background: #0f172a; overflow: hidden; }
+
+  #deck { width: 100vw; height: 100vh; position: relative; }
+
+  .slide {
+    position: absolute; inset: 0; display: none;
+    flex-direction: column; width: 100%; height: 100%;
+  }
+  .slide.active { display: flex; }
+
+  .slide-content {
+    flex: 1; display: flex; flex-direction: column;
+    overflow: hidden; position: relative;
+  }
+
+  .slide-inner {
+    display: flex; flex-direction: column; width: 100%; height: 100%;
+  }
+
+  .title-bar { flex: 0 0 auto; }
+
+  /* Notes panel */
+  .notes-panel {
+    display: none; flex: 0 0 220px; background: #1e293b;
+    border-top: 2px solid #334155; overflow-y: auto;
+    padding: 0;
+  }
+  .notes-header {
+    background: #0f172a; color: #94a3b8; font-size: 11px;
+    font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+    padding: 6px 16px;
+  }
+  .notes-body {
+    padding: 12px 16px; font-size: 13px; color: #cbd5e1; line-height: 1.5;
+  }
+  body.notes-visible .notes-panel { display: block; }
+  body.notes-visible .slide-content { flex: 1; min-height: 0; }
+
+  /* Controls bar */
+  #controls {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(15,23,42,0.95); padding: 8px 24px;
+    display: flex; align-items: center; gap: 16px;
+    font-size: 13px; color: #94a3b8;
+  }
+  #controls button {
+    background: #009FA3; color: white; border: none;
+    padding: 5px 14px; border-radius: 4px; cursor: pointer; font-size: 13px;
+  }
+  #controls button:hover { opacity: 0.85; }
+  #progress { flex: 1; height: 3px; background: #334155; border-radius: 2px; }
+  #progress-bar { height: 100%; background: #009FA3; border-radius: 2px; transition: width 0.2s; }
+
+  /* AO badges */
+  .ao-badge {
+    display: inline-block; padding: 2px 7px; border-radius: 10px;
+    font-size: 11px; font-weight: 700; color: white; margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  /* Logo */
+  #logo-overlay {
+    position: fixed; bottom: 44px; right: 16px; z-index: 99; opacity: 0.85;
+  }
+
+  @media print {
+    body { background: white; overflow: auto; }
+    #controls, #logo-overlay { display: none; }
+    .slide { position: relative; display: flex !important; page-break-after: always;
+               width: 100vw; height: 100vh; }
+    .notes-panel { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div id="deck">
+  
+<div class="slide" id="slide-1" data-index="0">
+  <div class="slide-content">
+<div class="slide-inner" style="background:url('slides/images/protectionism-hook.png') center/cover;position:relative">
+  <div style="position:absolute;inset:0;background:#121F47;opacity:0.75"></div>
+  <div style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;height:100%;padding:60px 70px">
+    <div style="width:60px;height:5px;background:#009FA3;margin-bottom:30px"></div>
+    <h1 style="font-size:42px;font-weight:700;color:#fff;line-height:1.2;margin:0 0 16px 0">Protectionism: Why Countries Build Walls Around Their Economies</h1>
+    <p style="font-size:22px;color:#009FA3;font-style:italic;margin:0 0 12px 0">In 2018, President Trump imposed 25% tariffs on imported steel. Within weeks, the EU, Canada, and China had all retaliated. American soybean farmers — who had no quarrel with China — lost their primary export market. This unit explains how that sequence works, and whether it ever makes economic sense.</p>
+    <p style="font-size:14px;color:#656565;margin:0">AQA A-Level Economics 7136 | Section 3.2.6.2</p>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 1 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Do not start with definitions. Start with the hook. Read the subtitle aloud or ask a student to read it. Then ask: &#x27;Who suffered most from the US steel tariffs — the steel industry, or someone else?&#x27; Give 60 seconds for a think-pair-share. The answer (steel-using manufacturers, soybean farmers) sets up the entire unit&#x27;s core tension: protection creates concentrated winners and dispersed losers, and the losers are not always who you expect. Timing: 2 minutes on this slide before moving on.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-2" data-index="1">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Learning Objectives</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Define tariff, quota, export subsidy, customs union, Single European Market, and WTO</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Accurately draw and fully label a tariff diagram, including all six welfare areas</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Distinguish expenditure-switching from expenditure-reducing policies — with examples of each</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Explain the economic effects of a tariff using the diagram: consumer surplus, producer surplus, government revenue, deadweight loss</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Analyse the arguments for and against protectionism, deployed as structured exam paragraphs</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Apply WTO rules and customs union membership constraints to policy scenarios</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>Evaluate whether protectionism is justified, with reference to the UK economy and current policy context</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>Assess the significance of post-Brexit trade policy changes for the UK — with specific evidence</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Note: AO3+AO4 together account for ~16–21% of Paper 2. Evaluation is only rewarded in 25-mark questions.</li></ul>
+      
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 2 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Walk through the AO mapping explicitly — many students don&#x27;t realise evaluation is only creditworthy at 25 marks. Point to the AO2 objective and say: &#x27;The tariff diagram is non-negotiable. It is directly examined. Today you will draw it from memory by the end of lesson 1.&#x27; Use this slide as a contract with the class: these are the things they can do by the end of the unit. Return to it in lesson 4. Timing: 3 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-3" data-index="2">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#121F47;display:flex;flex-direction:column;justify-content:center;padding:60px 70px">
+  <p style="font-size:16px;color:#009FA3;font-weight:600;margin:0 0 12px 0;letter-spacing:2px;text-transform:uppercase">1 of 5</p>
+  <div style="width:80px;height:4px;background:#009FA3;margin-bottom:24px"></div>
+  <h2 style="font-size:44px;font-weight:700;color:#009FA3;margin:0 0 16px 0;line-height:1.2">What is Free Trade?</h2>
+  <p style="font-size:18px;color:#656565;font-style:italic;margin:0">A quick recap of comparative advantage and the gains from trade — the benchmark against which protectionism is measured.</p>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 3 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">This section assumes students have already covered comparative advantage. Do not re-teach it. The goal is a 5-minute mental reset: remind them what the world looks like without protection, so they have a baseline for understanding what protection does. If students look blank at &#x27;comparative advantage&#x27;, do a 30-second verbal recap: &#x27;Countries should produce what they&#x27;re relatively best at, and trade for the rest — even if one country is better at everything.&#x27; Then move on.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-4" data-index="3">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Free Trade: The Baseline</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:58%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Comparative advantage: countries specialise in goods where their relative efficiency is highest and trade for the rest</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Even if one country is absolutely better at producing everything, both countries gain from specialisation and trade</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Free trade increases total global output and the size of the economic pie</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Gains from trade: economies of scale (larger markets), lower prices for consumers, greater variety, competitive discipline on domestic firms</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>The political problem: gains are diffuse (many consumers gain a little), losses are concentrated (specific workers and firms lose a lot)</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Protectionism is the systematic response to that political asymmetry — not to the economics</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  Key question: If free trade increases total welfare, why does protectionism persist? Answer: because the losers from free trade vote, donate, and lobby — and the winners barely notice their gain.
+</div>
+    </div>
+    <div style="flex:0 0 42%;padding-left:24px"><img src="slides/images/free-trade-flow.png" style="width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.12)"></div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 4 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">The political economy point (bullet 5) is the single most useful framing for the entire unit and for AO4 evaluation. Spend 60 seconds on it. &#x27;Why does protectionism persist even when economists overwhelmingly support free trade?&#x27; Expect answers like &#x27;jobs&#x27; or &#x27;national security&#x27; — validate these but redirect to the political asymmetry. A steelworker who loses their job knows exactly who to blame. The millions of consumers who each save £1 on a fridge never organise into a lobby. This asymmetry drives protectionist policy in all democracies. Timing: 5 minutes including image reference.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-5" data-index="4">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#121F47;display:flex;flex-direction:column;justify-content:center;padding:60px 70px">
+  <p style="font-size:16px;color:#009FA3;font-weight:600;margin:0 0 12px 0;letter-spacing:2px;text-transform:uppercase">2 of 5</p>
+  <div style="width:80px;height:4px;background:#009FA3;margin-bottom:24px"></div>
+  <h2 style="font-size:44px;font-weight:700;color:#009FA3;margin:0 0 16px 0;line-height:1.2">The Instruments of Protectionism</h2>
+  <p style="font-size:18px;color:#656565;font-style:italic;margin:0">Tariffs, quotas, and export subsidies — how each works and what makes them different from one another.</p>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 5 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Before this section, put the following on the board and leave it up: &#x27;Tariff = tax on imports. Quota = physical limit on import quantity. Export subsidy = government payment per unit exported.&#x27; Students will see these again in more depth, but having the bare definitions visible helps anchor the analysis that follows. This section includes the most examined piece of content in the unit: the tariff diagram.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-6" data-index="5">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Three Instruments of Protectionism</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>TARIFF: a tax on imported goods at point of entry — raises the domestic price above the world price</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Ad valorem tariff: expressed as % of import price (e.g. 25% on steel)</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Specific tariff: fixed monetary amount per unit (e.g. £50 per tonne)</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>QUOTA: a direct quantitative limit on import volumes — price adjusts, not quantity</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Key distinction: quota generates no government revenue (quota rent accrues to licence holders)</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>EXPORT SUBSIDY: government payment per unit exported — allows domestic firms to undercut foreign rivals in export markets</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Cost borne by the exporting country&#x27;s taxpayers; classified as prohibited subsidy under WTO rules</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">Examiner alert: students who conflate these three instruments are answering at the lowest level-of-response band</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  The critical distinction: tariff = government revenue. Quota = quota rent to licence holders. Export subsidy = cost to government. These are not interchangeable.
+</div>
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 6 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Take each instrument in turn. For tariffs: ask &#x27;who pays?&#x27; (importer, passed on to consumer). For quotas: ask &#x27;where does the money go that would have been tariff revenue?&#x27; (quota rent — often to foreign exporters who hold licences). This is a subtle point that most students miss. For export subsidies: the EU&#x27;s Common Agricultural Policy is the standard example — EU farmers could sell grain below world price because taxpayers subsidised every tonne exported, devastating developing-country farmers who couldn&#x27;t compete. Timing: 8 minutes on this slide.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-7" data-index="6">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">The Tariff Diagram — Step by Step</h2>
+  </div>
+  <div style="display:flex;flex-direction:row;gap:24px;padding:20px 36px;flex:1;align-items:flex-start">
+    <div style="flex:0 0 60%;text-align:center"><img src="slides/images/tariff-effects.png" style="max-width:100%;max-height:340px;border-radius:6px;box-shadow:0 2px 12px rgba(0,0,0,0.1)">
+<div style="margin-top:12px;padding:10px 14px;background:#FEE2E2;
+     border-radius:4px;font-size:13px;color:#7F1D1D">
+  ⚠ EXAMINER ERRORS — flag these explicitly: (1) Axes left unlabelled — automatic deduction; (2) Drawing S_d shifting left instead of a new price line — wrong model entirely; (3) Q3 and Q4 reversed — supply increases and demand decreases simultaneously; (4) Revenue rectangle drawn but B and D triangles omitted — incomplete welfare analysis; (5) Describing the diagram (&#x27;price rises, imports fall&#x27;) rather than explaining mechanism (&#x27;because the tariff raises the domestic price by the amount of the tax, domestic producers face a higher effective price and expand output along the existing supply curve&#x27;).
+</div></div>
+    <div style="flex:1"><ol style="padding-left:20px;margin:0"><li style="margin-bottom:6px;font-size:14px;color:#2B576B"><strong style="color:#009FA3">Step 1:</strong> Step 1 — AXES. Draw vertical axis labelled &#x27;Price (£)&#x27; — not just P. Draw horizontal axis labelled &#x27;Quantity&#x27; — not just Q. Unlabelled axes lose marks automatically.</li><li style="margin-bottom:6px;font-size:14px;color:#2B576B"><strong style="color:#009FA3">Step 2:</strong> Step 2 — CURVES. Draw upward-sloping domestic supply curve S_d and downward-sloping demand curve D. Do NOT show their intersection as a point yet — the world price sits below it.</li><li style="margin-bottom:6px;font-size:14px;color:#2B576B"><strong style="color:#009FA3">Step 3:</strong> Step 3 — WORLD PRICE LINE. Draw horizontal line Pw below the domestic equilibrium intersection. This represents the small-open-economy assumption: the country is a price-taker and cannot affect the world price.</li><li style="margin-bottom:6px;font-size:14px;color:#2B576B"><strong style="color:#009FA3">Step 4:</strong> Step 4 — FREE TRADE QUANTITIES. At Pw: read off Q1 (domestic supply — where S_d meets Pw) and Q2 (total demand — where D meets Pw). Imports under free trade = Q2 minus Q1. Mark Q1 and Q2 on the X-axis with dotted vertical lines.</li><li style="margin-bottom:6px;font-size:14px;color:#2B576B"><strong style="color:#009FA3">Step 5:</strong> Step 5 — TARIFF LINE. Draw second horizontal line Pw+t above Pw. Vertical distance between the two lines = tariff per unit. Label it Pw+tariff or Pw+t.</li><li style="margin-bottom:6px;font-size:14px;color:#2B576B"><strong style="color:#009FA3">Step 6:</strong> Step 6 — POST-TARIFF QUANTITIES. At Pw+t: Q3 = new domestic supply (higher price draws more domestic production — Q3 &gt; Q1). Q4 = new domestic demand (higher price contracts demand — Q4 &lt; Q2). X-axis order left to right: Q1, Q3, Q4, Q2. New imports = Q4 minus Q3.</li><li style="margin-bottom:6px;font-size:14px;color:#2B576B"><strong style="color:#009FA3">Step 7:</strong> Step 7 — WELFARE AREAS. Label four areas: A = producer surplus gain (left of C, between Pw and Pw+t, left boundary = Q1). B = deadweight loss triangle (production inefficiency — small triangle between Q1 and Q3, below S_d). C = government revenue rectangle (between Q3 and Q4, between Pw and Pw+t). D = deadweight loss triangle (consumption reduction — small triangle between Q4 and Q2, above D curve).</li><li style="margin-bottom:6px;font-size:14px;color:#2B576B"><strong style="color:#009FA3">Step 8:</strong> Step 8 — NARRATE. Consumer surplus loss = A+B+C+D. Producer gain = A. Government revenue = C. Deadweight losses (permanently destroyed) = B+D.</li></ol></div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 7 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">This is the most important slide in the deck. Budget 20-25 minutes across two phases: (1) live draw with narration — draw each step as you say it, students copy simultaneously — never hand out a completed diagram; (2) common errors debrief with a deliberately wrong diagram. DRAW SEQUENCE: Start with axes. Say &#x27;Price in pounds on the vertical — always in pounds, never just P.&#x27; Draw S_d and D. Say &#x27;I am NOT drawing the equilibrium point yet — watch why.&#x27; Draw Pw well below the intersection. Say &#x27;At the world price, what do domestic producers supply? Find where S_d meets Pw — that&#x27;s Q1. What does domestic demand look like at this price? Find where D meets Pw — that&#x27;s Q2. The gap is our imports under free trade.&#x27; Then introduce the tariff line. Slow down at Step 7 — many students draw only the rectangle C and stop. Say explicitly: &#x27;The rectangle is not enough. You need both triangles. B is left of C — it&#x27;s the cost of drawing domestic resources into production at a cost above the world price. D is right of C — it&#x27;s the consumption that has been killed off by the price rise. These triangles are welfare destroyed, transferred to nobody.&#x27; After the draw: show a wrong version (S_d shifting, Q3 and Q4 swapped). Ask students to identify the error. 90 seconds for students to redraw from memory.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-8" data-index="7">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Tariff: Worked Numerical Example</h2>
+  </div>
+  <div style="padding:20px 36px;flex:1">
+    <ol style="padding-left:24px;margin:0"><li style="margin-bottom:8px;font-size:17px;color:#2B576B">Given: World price Pw = £10. Government imposes tariff of £4 per unit. New domestic price = £14.</li><li style="margin-bottom:8px;font-size:17px;color:#2B576B">Free trade (at £10): Domestic supply Q1 = 100 units. Domestic demand Q2 = 300 units. Imports = Q2 - Q1 = 200 units.</li><li style="margin-bottom:8px;font-size:17px;color:#2B576B">Post-tariff (at £14): Domestic supply Q3 = 140 units. Domestic demand Q4 = 260 units. Imports = Q4 - Q3 = 120 units. Import volume has fallen by 80 units (40%).</li><li style="margin-bottom:8px;font-size:17px;color:#2B576B">Government revenue = tariff per unit x post-tariff import volume = £4 x 120 = £480</li><li style="margin-bottom:8px;font-size:17px;color:#2B576B">Producer surplus gain (approximate, assuming linear supply) = £4 x average of (100 + 140) / 2 = £4 x 120 = £480</li><li style="margin-bottom:8px;font-size:17px;color:#2B576B">Consumer surplus loss (approximate, assuming linear demand) = £4 x average of (300 + 260) / 2 = £4 x 280 = £1,120</li><li style="margin-bottom:8px;font-size:17px;color:#2B576B">Deadweight loss = Consumer surplus loss - Producer surplus gain - Government revenue = £1,120 - £480 - £480 = £160</li><li style="margin-bottom:8px;font-size:17px;color:#2B576B">Check: DWL = area B + area D = two triangles. This £160 is welfare destroyed and transferred to nobody.</li></ol>
+    
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px">
+  <strong style="font-size:14px;color:#2B576B">Exam tip:</strong>
+  <span style="font-size:14px;color:#2B576B"> Always show working. Always include units (£, &#x27;units&#x27;). A correct method with a minor arithmetic error scores more marks than a correct answer with no working. State what each number represents — do not just write &#x27;£480&#x27; without labelling it &#x27;government revenue = tariff x import volume&#x27;.</span>
+</div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 8 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Work through this at the board. Do not rush. Ask students to predict each answer before you reveal it: &#x27;If the tariff is £4 and 120 units are still imported, what is government revenue?&#x27; Wait for hands. The calculation structure is: revenue = tariff x remaining imports; producer gain = tariff x average of old and new domestic supply; consumer loss = tariff x average of old and new demand. Deadweight loss is what&#x27;s left over. Key pedagogical point: note that producer gain (£480) equals government revenue (£480) in this example — a coincidence of the numbers, not a general rule. The consumer loss (£1,120) is more than twice either. That asymmetry is the welfare story. Timing: 8 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-9" data-index="8">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Quotas: The Alternative to Tariffs</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>A quota is a direct quantitative limit on import volumes — where a tariff raises price and lets quantity adjust, a quota fixes quantity and lets price adjust</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Price effect: domestic price still rises above world price (just as with a tariff) — consumers are equally harmed in direction</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Critical difference: NO government revenue</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Quota rent: the value equivalent to area C in the tariff diagram accrues to whoever holds import licences — typically foreign exporters or lucky importers</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Quotas are less transparent than tariffs: harder to measure, harder to negotiate down in trade rounds</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>WTO position: GATT Article XI generally prohibits quotas; WTO has pushed for &#x27;tariffication&#x27; — converting quotas to equivalent tariffs — because tariffs are more visible and negotiable</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Unpredictability: if demand shifts, the domestic price impact of a quota is harder to control than with a tariff</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  Exam trap: a student who knows tariff = revenue, quota = no revenue, and can explain quota rent is answering in the top two response bands. Most students don&#x27;t know what quota rent is.
+</div>
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 9 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">The quota rent concept is the differentiator for high-band students. Draw the parallel: &#x27;In the tariff diagram, area C was government revenue. Now imagine we capped imports at the same level by quota instead of tariff. Area C still exists — someone gains from selling at the higher domestic price. But who? The importer who got lucky with a licence, or the foreign exporter who negotiated one. The government gets nothing.&#x27; Pause and ask: &#x27;Is that better or worse than a tariff from the UK government&#x27;s perspective?&#x27; (Worse — revenue foregone.) Timing: 6 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-10" data-index="9">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Export Subsidies: Paying to Compete Abroad</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>An export subsidy is a government payment to domestic producers per unit exported — allows them to sell in foreign markets below their cost of production</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Who benefits: domestic producers (higher effective price = market price + subsidy). Foreign consumers (lower prices in short run)</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Who loses: the exporting country&#x27;s taxpayers. Domestic producers in the importing country who cannot compete with artificially cheap imports</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Historical example: EU Common Agricultural Policy — export subsidies allowed European farmers to sell grain, butter, and sugar below world prices, depressing global commodity prices and harming developing-country farmers</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>WTO classification: &#x27;prohibited subsidy&#x27; — the most serious category. Countries can challenge them and apply countervailing duties if upheld</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>EU formally ended most agricultural export subsidies in 2013 under WTO pressure — though domestic production subsidies remain</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Current example: EU anti-dumping tariffs of up to 47% on Chinese electric vehicles (2024)</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  Development dimension: WTO estimates EU and US agricultural subsidies cost developing-country exporters over $50 billion per year in lost earnings — more than total aid received.
+</div>
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 10 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">The development dimension callout is high-value AO3/AO4 material for 25-mark essays. Ask: &#x27;If I&#x27;m a Ghanaian cocoa farmer and the EU subsidises European chocolate exports, what happens to the world price for my cocoa?&#x27; (It falls.) &#x27;Can I compete?&#x27; (No.) This connects protectionism in rich countries to development outcomes in poor ones. Timing: 6 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-11" data-index="10">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Expenditure-Switching vs Expenditure-Reducing</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>EXPENDITURE-SWITCHING: policies that redirect domestic spending from foreign to domestic goods by changing relative prices — total spending broadly unchanged</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Tools: tariffs, import quotas, exchange rate depreciation, voluntary export restraints</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Key word: REDIRECTION — same wallet, different direction</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>EXPENDITURE-REDUCING: policies that reduce total aggregate demand — total spending falls, dragging imports down with everything else</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Tools: deflationary fiscal policy (tax rises, spending cuts), higher interest rates</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Key word: REDUCTION — smaller wallet overall</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px">Critical examiner error: classifying exchange rate depreciation as expenditure-reducing. Depreciation changes relative prices — it is expenditure-switching.</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>Note: a tariff can have both effects simultaneously — primarily switching, but if widespread, may reduce real income and total spending</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  Household analogy: switching = stop buying French wine, buy English wine instead (same spend, different destination). Reducing = stop buying wine altogether (total spend falls).
+</div>
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 11 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">The expenditure-switching / expenditure-reducing confusion is flagged across multiple examiner reports as a recurring error. Teach it with the household analogy first. Then connect to national economy. Leave the two-column table on the board. Students copy. Then give 5 verbal examples and ask students to categorise in pairs. Mark immediately. Timing: 8 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-12" data-index="11">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#121F47;display:flex;flex-direction:column;justify-content:center;padding:60px 70px">
+  <p style="font-size:16px;color:#009FA3;font-weight:600;margin:0 0 12px 0;letter-spacing:2px;text-transform:uppercase">3 of 5</p>
+  <div style="width:80px;height:4px;background:#009FA3;margin-bottom:24px"></div>
+  <h2 style="font-size:44px;font-weight:700;color:#009FA3;margin:0 0 16px 0;line-height:1.2">Why Do Countries Use Protection?</h2>
+  <p style="font-size:18px;color:#656565;font-style:italic;margin:0">The arguments for protectionism — and how to deploy them as structured analytical paragraphs, not bullet-point lists.</p>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 12 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Explicitly brief students before this section: &#x27;I am going to teach you these arguments as exam paragraphs. Not as bullet points. Each one needs: claim, mechanism, evidence, qualification. If you write these as a list in a 25-mark essay, you will cap out at Level 3.&#x27; This framing changes how students listen to the next two slides.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-13" data-index="12">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Arguments For and Against Protectionism</h2>
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;gap:24px">
+    <div style="flex:1;padding-right:16px;border-right:2px solid #009FA3"><p style="font-size:15px;font-weight:600;color:#009FA3;margin:0 0 10px;text-transform:uppercase;letter-spacing:1px">Arguments FOR (with conditions)</p><ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Infant industry: temporary protection until economies of scale achieved and comparative advantage established — requires capital market failure and credible exit rule</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Strategic industries / national security: food, energy, defence, semiconductors — COVID-19 exposed supply chain dependency on imports for PPE and pharmaceuticals</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Anti-dumping: WTO permits tariffs where foreign producers sell below cost to eliminate domestic competition — US steel tariffs on China; EU EV tariffs 2024</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Rebalancing current account deficit: expenditure-switching effect redirects demand to domestic goods</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Protecting employment: short-run jobs preserved in import-competing industries — politically salient even if economically contested</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Terms of trade (large country only): tariff may improve terms of trade if country has market power — limited applicability to UK</li></ul></div>
+    <div style="flex:1;padding-left:8px"><p style="font-size:15px;font-weight:600;color:#009FA3;margin:0 0 10px;text-transform:uppercase;letter-spacing:1px">Arguments AGAINST / Costs</p><ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Retaliation: trading partners impose counter-tariffs — UK&#x27;s export industries (financial services, pharmaceuticals, aerospace) are more exposed than import-competing ones</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Consumer welfare loss: tariff is a consumption tax paid by domestic consumers — regressive (lower-income households spend more of income on traded goods)</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Productive inefficiency: protected firms face reduced competition — lower incentive to innovate, X-inefficiency, long-run competitiveness worsens</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">WTO dispute risk: post-Brexit UK is standalone WTO member — breaching bound tariff rates invites proceedings</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Resource misallocation: factors of production kept in low-productivity protected industries rather than moving to comparative advantage sectors</li><li style="margin-left:0px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Global welfare falls: deadweight losses accumulate; protectionist spiral risk — Smoot-Hawley (1930) collapsed world trade 65% in four years</li></ul></div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 13 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Use this two-column layout to set up the essay structure conversation. Say: &#x27;Notice that the strongest counterargument to the infant industry case is not just consumer welfare loss — it&#x27;s that governments have poor information about which industries have genuine long-run comparative advantage. That&#x27;s a Paper 1 government failure argument embedded in a Paper 2 context. That&#x27;s the analytical move that reaches Level 5.&#x27; For retaliation: use the US-China trade war. For consumer welfare: note the regressive distributional effect. Timing: 8 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-14" data-index="13">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">The Infant Industry Argument — In Depth</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Core claim: a new domestic industry cannot survive foreign competition before achieving economies of scale and moving down the learning curve — temporary protection gives it space to develop</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Evidence it can work: South Korea in 1960s–80s — targeted protection + state support built POSCO (steel), Samsung (semiconductors), and shipbuilding into world-competitive industries</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">Required conditions (each is a point of failure):</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>Government can identify industries with genuine long-run comparative advantage (information problem — markets may handle this better than bureaucrats)</li><li style="margin-left:20px;font-size:16px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>Protection is genuinely temporary — exit mechanism exists and is credible (political economy works against exit: once an industry employs workers and donates politically, protection becomes permanent)</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>Capital market failure prevents private financing — if future profits are large enough, a firm should be able to borrow to survive the loss-making early years</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>Net present value of protection period costs must be less than future competitive gains</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  Evaluation structure for 25-mark essays: &#x27;The infant industry argument is compelling WHEN capital markets are failing AND government can identify a viable industry — but less compelling when politicians protect incumbents to preserve votes.&#x27;
+</div>
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 14 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">This is the most intellectually substantive argument for protection and the one examiners most reward when analysed with precision. The South Korea example is genuine — Samsung and POSCO are now world leaders. But the Brazil computer industry example cuts the other way: Brazil tried to protect its domestic computing industry in the 1980s and produced a decade of artificially expensive, uncompetitive computers. The difference lies in the conditions. The government failure point (condition 1) connects to Paper 1 — a synoptic link that examiners specifically value. Timing: 10 minutes including student task to write one evaluation sentence.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-15" data-index="14">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Terms of Trade and Trade Creation vs Diversion</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Terms of trade = ratio of export prices to import prices. An improvement means more imports per unit of exports.</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Large-country tariff argument: if a country has market power (large share of world demand), imposing a tariff may cause foreign exporters to lower their prices to maintain market access — part of the tariff is borne by the exporter</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Effect: terms of trade improve. The country imports at a lower effective price. Welfare may increase net of the DWL.</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>Caveat: UK is a small open economy in most goods markets — this argument has very limited applicability to UK policy</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">A* stretch: optimal tariff = rate that maximises national welfare (terms of trade gain minus DWL). A prohibitive tariff destroys trade entirely — not optimal.</li></ul>
+      
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 15 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Present the terms of trade argument as the &#x27;economist&#x27;s case for protectionism&#x27; — valid under specific conditions, rarely applicable to the UK. Ask: &#x27;Why does this argument almost never appear in UK policy debates?&#x27; (UK does not have sufficient market power in most goods — it cannot affect world prices.) The A* stretch is optional — use it only if the group is ahead of pace. Timing: 4 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-16" data-index="15">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#121F47;display:flex;flex-direction:column;justify-content:center;padding:60px 70px">
+  <p style="font-size:16px;color:#009FA3;font-weight:600;margin:0 0 12px 0;letter-spacing:2px;text-transform:uppercase">4 of 5</p>
+  <div style="width:80px;height:4px;background:#009FA3;margin-bottom:24px"></div>
+  <h2 style="font-size:44px;font-weight:700;color:#009FA3;margin:0 0 16px 0;line-height:1.2">The World in Practice</h2>
+  <p style="font-size:18px;color:#656565;font-style:italic;margin:0">Current real-world cases: US-China trade war, post-Brexit UK trade policy, and the WTO&#x27;s role (and limits).</p>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 16 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Brief students: &#x27;Top-band 25-mark essays require contextual grounding in specific examples. You need to know more than the name — you need the mechanism. For each case study, I will give you: what happened, what the stated reason was, and what the economic effect actually was. That gap between stated reason and actual effect is the source of your best evaluation points.&#x27; Aim to cover all three cases in approximately 15 minutes combined.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-17" data-index="16">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Customs Unions — AQA Requirement</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">Four levels of regional integration — know the distinctions precisely:</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Free Trade Area: internal tariffs removed; no CET; members negotiate own external trade deals (e.g. CPTPP)</li><li style="margin-left:20px;font-size:16px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Customs Union: internal tariffs removed + common external tariff (CET); members cannot negotiate independent deals</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Single Market: customs union + free movement of goods, services, capital, and labour + regulatory harmonisation</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Currency Union: single market + shared currency (eurozone — subset of EU members)</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Trade creation: replacing higher-cost domestic production with lower-cost partner imports — welfare gain</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Trade diversion: replacing lower-cost non-member imports with higher-cost partner imports due to the CET — welfare loss</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Net welfare effect of joining a customs union = trade creation minus trade diversion</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Post-Brexit: UK left EU customs union — now operates as a free trade area partner via TCA (zero tariffs on goods meeting rules of origin, but non-tariff barriers apply)</li></ul>
+      
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 17 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">The four-structure table is worth five minutes of board time. Build it row by row, asking students to identify which additional feature each level adds. Then use Brexit as the application: &#x27;Where did the UK sit before January 2021? Single market + customs union. Where does it sit now? Effectively a free trade area with additional non-tariff barriers.&#x27; The trade creation/diversion distinction is the key discriminator for high-band answers on customs union questions. Most students know trade creation but not trade diversion. Timing: 8 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-18" data-index="17">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">US-China Trade War: 2018–Present</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:58%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>2018: Trump administration imposed 25% tariffs on $34 billion of Chinese goods. Stated reason: unfair trade practices — state subsidies, forced tech transfer, IP theft</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Escalation: by 2019, tariffs covered over $350 billion of Chinese imports</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>China retaliated: tariffs on US agricultural exports — soybean farmers, pork producers, lobster exporters bore the cost</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Biden administration: maintained tariffs; 2024 raised tariffs on Chinese EVs to 100%, solar cells to 50%, semiconductors to 50%</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>What actually happened: US trade deficit with China widened in some years; supply chains rerouted via Vietnam/Mexico rather than dismantled; American consumers paid higher prices</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>Chinese response to semiconductor tariffs: accelerated domestic investment — arguably strengthening rather than weakening Chinese technological capacity</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>IMF estimate: the conflict reduced global output by around 0.5% of GDP</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  Use this as evaluation evidence: &#x27;The US-China trade war demonstrates that tariffs do not necessarily achieve their stated industrial policy goals — the deficit widened, jobs were not reshored, and US firms dependent on Chinese inputs saw costs rise.&#x27;
+</div>
+    </div>
+    <div style="flex:0 0 42%;padding-left:24px"><img src="slides/images/trade-war.png" style="width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.12)"></div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 18 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Ask students: &#x27;What was the stated purpose of the US steel tariffs?&#x27; (protect American steel jobs, national security). &#x27;Did they achieve it?&#x27; (steel employment did rise slightly, but steel-using manufacturers — 80x more employees — faced higher input costs). &#x27;What happened to the trade deficit?&#x27; (widened). This gap between intention and outcome is the basis for strong AO4 evaluation. The soybean farmer point is rhetorically powerful: Chinese retaliation targeted US agricultural exports precisely because American swing states produce soybeans. Timing: 6 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-19" data-index="18">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Post-Brexit UK Trade Policy</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Before 2021: UK trade policy set by the EU — applied Common External Tariff (averaging 5–6% overall), zero tariffs within Single Market</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Post-Brexit UK Global Tariff: broadly replicates CET but with unilateral reductions — zero tariffs on many food and consumer products</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>UK-EU Trade and Cooperation Agreement (TCA): zero tariffs on goods meeting rules of origin — but NOT a customs union. Regulatory divergence + border checks = significant non-tariff barriers</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Estimated impact: non-tariff barriers from Brexit have reduced UK-EU goods trade by 15–25% vs the counterfactual</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Services excluded from TCA: UK financial services firms lost EU passporting rights — a serious loss given UK comparative advantage in services</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>UK joined CPTPP (Trans-Pacific Partnership): genuine liberalisation move — but UK-EU trade is 50%+ of exports and dwarfs these deals</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#EF4444">AO4</span>FTA negotiations with India and others: take 3–7 years; trade-offs are political as much as economic</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  Essay hook: &#x27;Post-Brexit, the UK can set its own trade policy — but the UK-EU TCA demonstrates that non-tariff barriers can be as restrictive as tariffs themselves, without generating any government revenue.&#x27;
+</div>
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 19 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">The key analytical point for AO4 essays: Brexit allowed the UK to set its own tariffs — a genuine policy freedom — but the non-tariff barriers introduced with the EU are arguably more trade-restricting than the tariffs ever were. The services point (passporting) is important: the UK&#x27;s actual comparative advantage is in financial services, not in goods. Timing: 6 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-20" data-index="19">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">The WTO: Role, Principles, and Limits</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:58%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>WTO: 164 member countries. Promotes multilateral trade liberalisation through negotiating rounds (Doha Round stalled)</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Most Favoured Nation (MFN) principle: WTO members must apply the same tariff rate to all other WTO members — cannot discriminate</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>Binding of tariffs: members agree maximum bound rates and cannot raise tariffs above them unilaterally</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>WTO Dispute Settlement Body (DSB): quasi-judicial mechanism — panel hears complaints, rules on violations, authorises retaliation if not remedied</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>The WTO does NOT prohibit all tariffs. Permitted exceptions: anti-dumping measures, national security (Article XXI), infant industry provisions for developing nations</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Appellate Body paralysed since 2019: US has blocked appointment of new judges — appeals cannot be heard, significantly weakening enforcement</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>Case example: Airbus-Boeing subsidies dispute — 17 years, both EU and US found to have illegally subsidised aircraft manufacturers, settled 2021</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  Common misconception: the WTO does not ban tariffs — it binds their level and prohibits discrimination. Post-Brexit, the UK is a standalone WTO member.
+</div>
+    </div>
+    <div style="flex:0 0 42%;padding-left:24px"><img src="slides/images/wto-global.png" style="width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.12)"></div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 20 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Students often describe the WTO as &#x27;stopping tariffs&#x27; — correct this immediately. The WTO constrains the level of tariffs (bound rates), prohibits discrimination (MFN), and provides dispute resolution. It does not prevent countries from having tariffs. The Appellate Body paralysis point is genuinely important for current affairs essays. Timing: 5 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-21" data-index="20">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#121F47;display:flex;flex-direction:column;justify-content:center;padding:60px 70px">
+  <p style="font-size:16px;color:#009FA3;font-weight:600;margin:0 0 12px 0;letter-spacing:2px;text-transform:uppercase">{{section.number}} of 7</p>
+  <div style="width:80px;height:4px;background:#009FA3;margin-bottom:24px"></div>
+  <h2 style="font-size:44px;font-weight:700;color:#009FA3;margin:0 0 16px 0;line-height:1.2">The Economist Has Arrived</h2>
+  <p style="font-size:18px;color:#656565;font-style:italic;margin:0">Everything you have learned in this unit just happened — in real time. We are going to read it, diagram it, and evaluate it.</p>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 21 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">This slide exists to create a moment. Do not rush through it. &#x27;Everything we covered — tariffs, welfare effects, terms of trade, the WTO, retaliatory trade wars — all of it happened in the first week of April 2025. We are going to use real data from that week to practise every exam skill you need.&#x27; Pause. Let it land. Then move on.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-22" data-index="21">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Liberation Day — 2 April 2025</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  For your exam: when a question says &#x27;using the data, analyse the effects of this tariff&#x27; — this is what that data looks like. Read the numbers, name the direction of change, then explain the mechanism.
+</div>
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 22 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Read the quote aloud, or ask a student to. Then ask: &#x27;What question is the examiner going to ask about this data?&#x27; Students should identify: effects on consumer surplus, why markets fell, WTO compliance, whether it was justified. Walk them through all four.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-23" data-index="22">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">The Timeline: What Actually Happened</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#06B6D4">AO1</span>2 April 2025 (&#x27;Liberation Day&#x27;): Trump announces reciprocal tariffs — 10% baseline on all partners, with additions (China +34%, EU +20%)</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">3 April: S&amp;P 500 falls 4.84%, FTSE 100 falls 2.9% — US auto sector stocks down 8-12%</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>4-8 April: China retaliates with 125% tariffs on US goods; EU threatens 25% on US services</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>9 April: 90-day pause for all countries except China — effective rate falls to 13.7%</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#10B981">AO2</span>Yale Budget Lab: average US household $1,500 worse off per year at 27% tariff rate</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">20 February 2026: US Court of International Trade rules IEEPA tariffs unlawful — government appeals</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>UK deal (May 2025): 100,000 UK cars at 10% tariff (not 25%); UK steel at 25% vs 50% for all others</li></ul>
+      
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 23 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Walk through chronologically. At each bullet ask: which concept connects here? Students should identify: tariff (C005), retaliatory tariff (C024), deadweight loss (C008), terms of trade (C014), WTO (C020). Write &#x27;$1,500 per household&#x27; on the board. At the court ruling: &#x27;Were the tariffs legal? What argument would you use to challenge them in court?&#x27;</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-24" data-index="23">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Apply the Diagram: US Car Imports (25% Tariff)</h2>
+  </div>
+  <div style="display:flex;flex-direction:column;padding:20px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;text-align:center">
+<div style="padding:12px 16px;background:#F4FBFB;border-left:4px solid #121F47;
+     border-radius:4px;font-size:14px;color:#2B576B;font-style:italic;margin-bottom:16px">
+  Standard tariff welfare diagram with real US auto data. World price (Pw) = $30,000. Tariff = 25%, so Pw+T = $37,500. At Pw: domestic production Q1, imports Q1 to Q4, consumption Q4. At Pw+T: domestic production rises to Q2, imports narrow to Q2 to Q3, consumption falls to Q3. Label all six areas: A (producer surplus gain), B (DWL production), C (government tariff revenue), D (DWL consumption), and the full consumer surplus loss A+B+C+D.
+</div></div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 24 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Student activity: everyone draws the diagram from scratch using these numbers. 4 minutes. Then ask a student to narrate: who wins, who loses, by how much? The $7,500 price rise per car is tangible — &#x27;A US consumer buying a German BMW pays $7,500 more.&#x27; Note: BMW and Toyota also make cars in the US (Spartanburg, Georgetown), so those US plants gain area A. This is the AO3 complication that earns extra marks.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-25" data-index="24">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Why Did Stock Markets Fall? (AO3 Chains)</h2>
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;gap:24px">
+    <div style="flex:1;padding-right:16px;border-right:2px solid #009FA3"></div>
+    <div style="flex:1;padding-left:8px"></div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 25 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Use left column as AO2 application (direct diagram effects), right column as AO3 analysis (second-order chains of reasoning). Before revealing headings, ask students to classify each bullet. The distinction matters for exam writing: AO2 = &#x27;tariffs raise prices&#x27; (direct); AO3 = &#x27;uncertainty delays investment, reducing productive capacity and long-run growth&#x27; (chain). Top-band answers contain both.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-26" data-index="25">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">The UK Angle: Inside the Deal</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>UK-US Economic Prosperity Deal (May 2025): 100,000 UK vehicles exported to US at 10% tariff — not the standard 25%</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Above 100,000 vehicles, the rate reverts to 25% — this is a quota in all but name</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>UK steel: 25% tariff under Section 232 — versus 50% for all other countries — a partial exemption</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">JLR (Jaguar Land Rover): paused US-bound shipments on Liberation Day, then resumed after the deal — 22bn USD US investment commitment used as negotiating leverage</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px"><span class="ao-badge" style="background:#F59E0B">AO3</span>MFN problem: WTO Most Favoured Nation principle requires any advantage given to one country to be extended to all. How does the UK justify 10% while the EU pays 20%?</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">Possible legal basis: Article XXIV FTA exemption — but no full FTA was signed. A selective exemption without an FTA is legally exposed to WTO challenge.</li></ul>
+      
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 26 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">The MFN bullet is the killer exam application. &#x27;Theory says the WTO prevents discrimination — yet the UK got a better deal than the EU. Is this WTO-compliant?&#x27; FOR: part of a broader USTK FTA framework. AGAINST: selective sector carve-out with no FTA signed. This is Band 3 to Band 4 territory. The JLR detail is memorable evidence: a student who writes &#x27;the UK leveraged a 22bn USD investment commitment to negotiate a tariff exemption for car exports&#x27; is demonstrating AO3 analysis with specific evidence.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-27" data-index="26">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">AO4 Framework: Was the US Justified?</h2>
+  </div>
+  <div style="padding:20px 36px;flex:1;display:flex;flex-direction:column;gap:14px">
+    <div style="padding:14px 18px;background:#FEE2E2;border-left:5px solid #DC2626;border-radius:4px">
+      <div style="font-size:12px;font-weight:700;color:#7F1D1D;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">✗ Common error</div>
+      <div style="font-size:16px;color:#7F1D1D"></div>
+    </div>
+    <div style="padding:14px 18px;background:#D1FAE5;border-left:5px solid #059669;border-radius:4px">
+      <div style="font-size:12px;font-weight:700;color:#065F46;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">✓ Correct approach</div>
+      <div style="font-size:16px;color:#065F46"></div>
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 27 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Class debate: split the room FOR and AGAINST. The national security argument is the hardest to rebut — validate it but redirect: &#x27;Is the steel tariff protecting national security, or protecting a politically important industry in swing states?&#x27; The trade deficit argument is economically wrong — the deficit reflects savings/investment imbalances. A student who deploys this is at the top of the mark scheme. The conditional judgement tip transfers to every 25-mark question in the course.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-28" data-index="27">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px;display:flex;justify-content:space-between;align-items:center">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Case Study Practice — 9 Marks</h2>
+    <div>
+      
+      
+    </div>
+  </div>
+  <div style="padding:24px 36px;flex:1">
+    <div style="padding:20px 24px;background:#F4FBFB;border:2px solid #2B576B;border-radius:6px;font-size:18px;line-height:1.6;color:#2B576B">
+      Extract: &#x27;In April 2025, the United States imposed a 25% tariff on all imported cars. The world price of an imported mid-range car was approximately $30,000. US car imports fell from 8 million to 5.5 million vehicles per year.&#x27; Using the data and an appropriate diagram, analyse the effects of this tariff on US consumers, US domestic car producers, and the US government. [9 marks]
+    </div>
+    
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 28 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Tests AO2 (diagram: Pw, Pw+T, Q1-Q4, areas A-D) and AO3 (chain per group: consumer surplus falls by A+B+C+D; producer surplus rises by A; government revenue = C). Full marks requires all three groups analysed and the diagram correctly labelled. Common error: forgetting that domestic production RISES (Q1 to Q2) — counterintuitive but essential.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-29" data-index="28">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px;display:flex;justify-content:space-between;align-items:center">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Case Study Practice — 25 Marks</h2>
+    <div>
+      
+      
+    </div>
+  </div>
+  <div style="padding:24px 36px;flex:1">
+    <div style="padding:20px 24px;background:#F4FBFB;border:2px solid #2B576B;border-radius:6px;font-size:18px;line-height:1.6;color:#2B576B">
+      The US government announced tariffs of up to 27% on all imported goods in April 2025, citing unfair trading practices, national security concerns, and the need to revive domestic manufacturing. Following retaliatory tariffs from China (125%) and the EU, the US announced a 90-day pause. Yale Budget Lab estimated US households were $1,500 per year worse off. The US Court of International Trade ruled in February 2026 that the tariffs exceeded presidential authority. To what extent were the US tariffs of April 2025 economically justified? [25 marks]
+    </div>
+    
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 29 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Full Paper 2 evaluation essay. Band 4 answer: (1) defines tariff and &#x27;justified&#x27; in welfare economics terms; (2) presents strongest FOR arguments with evidence; (3) presents strongest AGAINST with $1,500 figure and court ruling; (4) conditional judgement — &#x27;justified only if strategic industry benefits materialise AND retaliatory costs are contained — the 2025 evidence suggests this is unlikely because China&#x27;s 125% response directly threatens sectors not originally targeted&#x27;; (5) clear conclusion. 40 minutes in exam conditions.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-30" data-index="29">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#121F47;display:flex;flex-direction:column;justify-content:center;padding:60px 70px">
+  <p style="font-size:16px;color:#009FA3;font-weight:600;margin:0 0 12px 0;letter-spacing:2px;text-transform:uppercase">5 of 5</p>
+  <div style="width:80px;height:4px;background:#009FA3;margin-bottom:24px"></div>
+  <h2 style="font-size:44px;font-weight:700;color:#009FA3;margin:0 0 16px 0;line-height:1.2">Exam Technique</h2>
+  <p style="font-size:18px;color:#656565;font-style:italic;margin:0">The errors that cost students grades — directly from examiner reports. Every one of these has appeared in recent mark schemes.</p>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 30 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Introduce this section with: &#x27;I am going to show you the specific errors that the examiner flags in their reports after every exam series. These are not generic tips. They are the actual patterns that separate Level 3 from Level 5 answers. If you avoid all of these, your floor is Level 4.&#x27; This framing increases attention because students understand these are real examiner observations, not hypothetical advice.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-31" data-index="30">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Examiner Error #1: Describing the Diagram Instead of Explaining It</h2>
+  </div>
+  <div style="padding:20px 36px;flex:1;display:flex;flex-direction:column;gap:14px">
+    <div style="padding:14px 18px;background:#FEE2E2;border-left:5px solid #DC2626;border-radius:4px">
+      <div style="font-size:12px;font-weight:700;color:#7F1D1D;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">✗ Common error</div>
+      <div style="font-size:16px;color:#7F1D1D">Students write what the tariff diagram looks like — &#x27;the price rises, imports fall, consumer surplus decreases&#x27; — without explaining why each change occurs or what it means economically.</div>
+    </div>
+    <div style="padding:14px 18px;background:#D1FAE5;border-left:5px solid #059669;border-radius:4px">
+      <div style="font-size:12px;font-weight:700;color:#065F46;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">✓ Correct approach</div>
+      <div style="font-size:16px;color:#065F46">Every diagrammatic change needs a causal chain. The mark scheme rewards process, not description. For every feature you label, write one sentence that begins with &#x27;because&#x27; or &#x27;this means that&#x27;. Example: &#x27;Consumer surplus falls by areas A+B+C+D BECAUSE the higher tariff-inclusive price reduces the quantity demanded along the demand curve, and some consumers who were willing to pay above the world price but below the domestic tariff price no longer purchase the good — their surplus is eliminated entirely.&#x27;</div>
+    </div>
+    <div style="padding:12px 16px;background:#F4FBFB;border-radius:4px;font-size:14px;font-style:italic;color:#656565">
+      Examiner report: &ldquo;Weaker responses tended to describe the diagram — stating that price rose and imports fell — rather than explaining the economic mechanism. Credit was only awarded where candidates explained the causal process connecting the tariff to each welfare effect.&rdquo; <em>— AQA Economics Paper 2 Examiner Report Jun 2022</em>
+    </div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 31 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Read the examiner quote aloud. Ask students: &#x27;What is the difference between saying the price rises and explaining why the price rises?&#x27; Give 30 seconds. Then demonstrate: write on the board — &#x27;The domestic price rises.&#x27; Now extend it: &#x27;...because the tariff is a tax on every imported unit, passed through by the importer to the consumer as a higher retail price.&#x27; That sentence is worth AO3 marks. The first sentence is worth AO2 at best. Timing: 4 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-32" data-index="31">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Examiner Error #2: Confusing the Current Account Deficit with the Budget Deficit</h2>
+  </div>
+  <div style="padding:20px 36px;flex:1;display:flex;flex-direction:column;gap:14px">
+    <div style="padding:14px 18px;background:#FEE2E2;border-left:5px solid #DC2626;border-radius:4px">
+      <div style="font-size:12px;font-weight:700;color:#7F1D1D;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">✗ Common error</div>
+      <div style="font-size:16px;color:#7F1D1D">Students answer questions about the current account deficit — an international trade imbalance — by writing about government borrowing or fiscal policy. The two are conflated because both are called &#x27;deficits&#x27;.</div>
+    </div>
+    <div style="padding:14px 18px;background:#D1FAE5;border-left:5px solid #059669;border-radius:4px">
+      <div style="font-size:12px;font-weight:700;color:#065F46;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">✓ Correct approach</div>
+      <div style="font-size:16px;color:#065F46">Write both definitions on the board simultaneously and keep them visible: CURRENT ACCOUNT DEFICIT = national spending on imports &gt; earnings from exports (international trade balance). BUDGET (FISCAL) DEFICIT = government spending &gt; tax revenue (public finance). They have different causes, different policy responses, and can move in opposite directions.</div>
+    </div>
+    <div style="padding:12px 16px;background:#F4FBFB;border-radius:4px;font-size:14px;font-style:italic;color:#656565">
+      Examiner report: &ldquo;A significant minority of candidates confused the current account deficit with the government budget deficit, deploying fiscal policy analysis where trade analysis was required. This error was present across all ability bands and caused substantial mark loss.&rdquo; <em>— AQA Economics Paper 2 Examiner Report Jun 2023</em>
+    </div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 32 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">This error appears across all ability bands — not just weaker students. Write the two definitions side by side on the board and leave them visible for the rest of the session. Ask a student to state, in their own words, the difference. The expenditure-switching vs expenditure-reducing confusion is a related error. Teach them with a household analogy: switching = stop buying French wine, buy English wine instead; reducing = stop buying wine altogether. Timing: 4 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-33" data-index="32">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Examiner Error #3: Confusing Currency Union with Customs Union</h2>
+  </div>
+  <div style="padding:20px 36px;flex:1;display:flex;flex-direction:column;gap:14px">
+    <div style="padding:14px 18px;background:#FEE2E2;border-left:5px solid #DC2626;border-radius:4px">
+      <div style="font-size:12px;font-weight:700;color:#7F1D1D;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">✗ Common error</div>
+      <div style="font-size:16px;color:#7F1D1D">Students answer questions about customs unions by writing about currency unions (shared currency, monetary policy), or conflate free trade areas with customs unions.</div>
+    </div>
+    <div style="padding:14px 18px;background:#D1FAE5;border-left:5px solid #059669;border-radius:4px">
+      <div style="font-size:12px;font-weight:700;color:#065F46;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">✓ Correct approach</div>
+      <div style="font-size:16px;color:#065F46">Customs union = internal free trade + common external tariff. Currency union = customs union + single market + shared currency. These are structurally and mechanically different. Brexit moved the UK from Single Market membership (which includes customs union) to a Free Trade Area (TCA) — zero tariffs but no CET, no free movement, non-tariff barriers apply.</div>
+    </div>
+    <div style="padding:12px 16px;background:#F4FBFB;border-radius:4px;font-size:14px;font-style:italic;color:#656565">
+      Examiner report: &ldquo;Responses to the customs union question frequently described features of a monetary union (shared currency, common interest rates) rather than the defining features of a customs union. This is a fundamental category error.&rdquo; <em>— AQA Economics Paper 2 Examiner Report Jun 2023</em>
+    </div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 33 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Show the four-structure table again. Ask students to reproduce it from memory before showing it. Give 90 seconds. Score by show of hands: who got all four rows? This is a table worth 5+ marks across an exam series. It must be automatic. Timing: 3 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-34" data-index="33">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">25-Mark Essay Structure</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">Introduction (2–3 sentences): define key term, contextualise (UK post-Brexit, WTO, current tensions). Do NOT evaluate in the introduction.</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px">Paragraph 1 — Argument + Analysis + INTEGRATED evaluation: state argument → analyse mechanism → immediately evaluate: &#x27;However, this depends on...&#x27; + UK context</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">Paragraphs 2–3: repeat structure. Each paragraph must contain at least one evaluative sentence — not saved for the end.</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">Paragraph 4 — Counterargument: lead with the strongest opposing argument. Evaluate its limits if credible.</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px">Conclusion: a genuine conditional judgement. Not &#x27;both sides have valid points.&#x27; Specify WHEN protectionism is justified and WHEN it is not.</li><li style="margin-left:20px;font-size:16px;color:#2B576B;font-weight:400;margin-bottom:6px">AQA Level 5 (22–25 marks) requires: &#x27;Sustained and well-developed evaluation applied THROUGHOUT. Supported judgements in context. Reasoned conclusion.&#x27;</li></ul>
+      
+<div style="margin-top:16px;padding:12px 16px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;
+     font-size:14px;color:#2B576B;font-style:italic">
+  The most productive feedback signal: mark where in the essay evaluation FIRST appears. If not present until the final paragraph, the student cannot reach Level 5 regardless of knowledge quality.
+</div>
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 34 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Brief students before they start the 25-mark practice: &#x27;In 25-mark questions, the examiner cannot give you Level 5 if evaluation only appears in the final paragraph. The structural rule is: evaluate as you argue. Every paragraph should contain the argument AND its qualification.&#x27; Give 5 minutes for planning. Timing: 3 minutes on this slide.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-35" data-index="34">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px;display:flex;justify-content:space-between;align-items:center">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Practice Question — 9 Marks</h2>
+    <div>
+      <span class="ao-badge" style="background:#06B6D4">AO1</span><span class="ao-badge" style="background:#10B981">AO2</span><span class="ao-badge" style="background:#F59E0B">AO3</span>
+      <span style="background:#121F47;color:white;padding:4px 12px;border-radius:20px;font-weight:700;font-size:15px;margin-left:8px">[9 marks]</span>
+    </div>
+  </div>
+  <div style="padding:24px 36px;flex:1">
+    <div style="padding:20px 24px;background:#F4FBFB;border:2px solid #2B576B;border-radius:6px;font-size:18px;line-height:1.6;color:#2B576B">
+      Using a diagram, explain the effects of the introduction of a tariff on imported steel on the welfare of domestic consumers, domestic producers, and the government of the importing country.
+    </div>
+    <p style="font-size:13px;color:#656565;margin-top:8px;font-style:italic">Suggested time: 12 minutes</p>
+    
+<div style="margin-top:14px;padding:10px 14px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;font-size:14px;font-style:italic;color:#2B576B">
+  Hint: There are NO marks for evaluation in a 9-mark question. Every sentence should explain a mechanism or label a welfare area. Draw the diagram FIRST, then write — not simultaneously. Spending time on &#x27;however, this depends on...&#x27; wastes time that should go on explanation.
+</div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 35 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Set this as a timed practice. Give students exactly 12 minutes. Say: &#x27;The clock starts now. First action: pick up your pen and draw the axes. Do not plan, do not brainstorm — draw the diagram first.&#x27; At 5 minutes: &#x27;If you have not started writing your explanation yet, you are running behind.&#x27; At 10 minutes: &#x27;You should be on your third or fourth welfare area explanation.&#x27; Peer mark immediately using checklist: (1) axes labelled Price (£) and Quantity? (2) all four welfare areas identified? (3) each welfare change has a causal explanation, not just description? Timing: 12 min practice + 5 min debrief = 17 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-36" data-index="35">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px;display:flex;justify-content:space-between;align-items:center">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Practice Question — 25 Marks</h2>
+    <div>
+      <span class="ao-badge" style="background:#06B6D4">AO1</span><span class="ao-badge" style="background:#10B981">AO2</span><span class="ao-badge" style="background:#F59E0B">AO3</span><span class="ao-badge" style="background:#EF4444">AO4</span>
+      <span style="background:#121F47;color:white;padding:4px 12px;border-radius:20px;font-weight:700;font-size:15px;margin-left:8px">[25 marks]</span>
+    </div>
+  </div>
+  <div style="padding:24px 36px;flex:1">
+    <div style="padding:20px 24px;background:#F4FBFB;border:2px solid #2B576B;border-radius:6px;font-size:18px;line-height:1.6;color:#2B576B">
+      Evaluate the view that protectionist trade policies are in the long-run interests of the UK economy.
+    </div>
+    <p style="font-size:13px;color:#656565;margin-top:8px;font-style:italic">Suggested time: 35–40 minutes</p>
+    
+<div style="margin-top:14px;padding:10px 14px;background:#E0F7F7;
+     border-left:4px solid #009FA3;border-radius:4px;font-size:14px;font-style:italic;color:#2B576B">
+  Hint: Evaluation must appear THROUGHOUT — not just in a final paragraph. Required elements for Level 5: UK-specific context in every paragraph (use TCA, WTO membership, CPTPP, post-Brexit trade position); evaluation of each argument&#x27;s conditions; conclusion that specifies WHEN protectionism may be justified and WHEN it is not.
+</div>
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 36 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Give 5 minutes for planning: introduction + 3–4 paragraph headings + conclusion position. Then 30 minutes writing. After: ask 3 students to read their conclusion aloud. Ask the class: &#x27;Is this a genuine conditional judgement, or is it a summary of the essay?&#x27; The strong version: &#x27;Protectionism may be justified in specific circumstances — national security industries, anti-dumping responses, and genuine infant industry situations — but as a general UK policy stance, the retaliation risk from EU trading partners and the damage to service sector market access that the UK has comparative advantage in makes broad tariff increases contrary to long-run interests.&#x27; Timing: plan 5 min + write 30 min + debrief 5 min = 40 minutes.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-37" data-index="36">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Key Takeaways: Protectionism (3.2.6.2)</h2>
+  </div>
+  <div style="padding:20px 36px;flex:1"><ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">THREE INSTRUMENTS: Tariff (tax, generates revenue), Quota (quantity limit, no revenue — quota rent), Export subsidy (payment per unit exported, cost to taxpayer, WTO-prohibited)</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">TARIFF DIAGRAM: non-negotiable. Axes labelled Price (£) and Quantity. Welfare areas A (producer gain), B (DWL production), C (government revenue), D (DWL consumption). Consumer surplus loss = A+B+C+D. Net welfare loss = B+D.</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">EXPENDITURE-SWITCHING vs EXPENDITURE-REDUCING: switching changes composition of spending (tariff, depreciation). Reducing lowers total spending (interest rates, fiscal austerity).</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">CURRENT ACCOUNT DEFICIT vs BUDGET DEFICIT: completely different. Current account = trade balance. Budget = fiscal balance. Confusion costs marks in every exam series.</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">INFANT INDUSTRY: valid under specific conditions (capital market failure, credible exit, correct government identification). Fails on information problem and political economy of exit.</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">WTO: does NOT ban tariffs — binds their level (MFN principle, bound rates), prohibits discrimination. Appellate Body paralysed since 2019.</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">UK POST-BREXIT: standalone WTO member, own Global Tariff, TCA with EU (zero tariffs but non-tariff barriers). Services excluded. CPTPP joined. UK-EU trade = 50%+ of exports.</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">25-MARK ESSAYS: evaluation must be THROUGHOUT, not just in final paragraph. Conclusions must be specific and conditional. UK context required in every paragraph.</li></ul></div>
+  <div style="background:#121F47;padding:14px 36px"><p style="margin:0;font-size:16px;color:#009FA3">Next: Next unit: Balance of Payments (Section 3.2.6.3). Expenditure-switching and expenditure-reducing policies seen in this unit reappear as BoP correction mechanisms — learn them as the same analytical tool seen from a different angle.</p></div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 37 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Use this as a verbal quiz: read each key point as a question rather than a statement. &#x27;What are the three instruments of protectionism and how does their revenue effect differ?&#x27; Cold-call three students in turn. &#x27;What is the difference between the current account deficit and the budget deficit?&#x27; Cold-call. &#x27;What conditions must hold for the infant industry argument to be valid?&#x27; Cold-call. Leave the next steps note on screen as students pack up.</p></div>
+  </div>
+</div>
+<div class="slide" id="slide-38" data-index="37">
+  <div class="slide-content">
+<div class="slide-inner" style="background:#FFFFFF">
+  <div class="title-bar" style="background:#009FA3;padding:16px 36px">
+    <h2 style="margin:0;font-size:26px;font-weight:700;color:#FFFFFF">Further Study and Resources</h2>
+    
+  </div>
+  <div style="display:flex;padding:24px 36px;flex:1;align-items:flex-start">
+    <div style="flex:1;width:100%">
+      <ul style="list-style:none;padding:0;margin:0"><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">AQA Specification 7136 — Section 3.2.6.2: read the exact spec bullet points and map to today&#x27;s content</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px">AQA Examiner Reports (Paper 2, Jun 2022 and Jun 2023): primary source for all errors flagged in Section 6 — read these directly</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">Econplusdal — Tariff Diagram video: recommended for students who want to re-watch the step-by-step build</li><li style="margin-left:0px;font-size:18px;color:#2B576B;font-weight:400;margin-bottom:6px">Tutor2u — Protectionism revision notes: free online, useful supplement for arguments for/against</li><li style="margin-left:0px;font-size:18px;color:#121F47;font-weight:600;margin-bottom:6px">Next lesson: Balance of Payments (3.2.6.3) — expenditure-switching and expenditure-reducing policies reappear as BoP correction mechanisms</li></ul>
+      
+    </div>
+    
+  </div>
+</div></div>
+  <div class="notes-panel">
+    <div class="notes-header">Speaker Notes — Slide 38 of 38</div>
+    <div class="notes-body"><p style="margin:4px 0">Direct students here for self-study. The examiner reports are the most valuable resource — A* candidates should read them cover to cover before the exam. The tariff diagram video is for students who want a second explanation of the steps.</p></div>
+  </div>
+</div>
+</div>
+
+<div id="logo-overlay"><img src="slides/images/harris-logo.png" style="height:32px;opacity:0.9" alt="logo"></div>
+
+<div id="controls">
+  <button onclick="navigate(-1)">◀</button>
+  <span id="counter">1 / 38</span>
+  <div id="progress"><div id="progress-bar" style="width:2.6%"></div></div>
+  <button onclick="navigate(1)">▶</button>
+  <button onclick="toggleNotes()" title="Toggle speaker notes (N)">Notes</button>
+  <span style="font-size:11px;color:#475569">← → navigate | N notes | F fullscreen | P print</span>
+</div>
+
+<script>
+var current = 0;
+var total = 38;
+var slides = document.querySelectorAll('.slide');
+
+function show(n) {
+  slides[current].classList.remove('active');
+  current = Math.max(0, Math.min(n, total - 1));
+  slides[current].classList.add('active');
+  document.getElementById('counter').textContent = (current + 1) + ' / ' + total;
+  document.getElementById('progress-bar').style.width = ((current + 1) / total * 100) + '%';
+  window.location.hash = 'slide-' + (current + 1);
+}
+
+function navigate(dir) { show(current + dir); }
+
+function toggleNotes() { document.body.classList.toggle('notes-visible'); }
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); navigate(1); }
+  if (e.key === 'ArrowLeft') { e.preventDefault(); navigate(-1); }
+  if (e.key === 'n' || e.key === 'N') toggleNotes();
+  if (e.key === 'f' || e.key === 'F') {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  if (e.key === 'Home') show(0);
+  if (e.key === 'End') show(total - 1);
+});
+
+// Jump to hash on load
+(function() {
+  var hash = window.location.hash.replace('#slide-', '');
+  var n = parseInt(hash);
+  if (!isNaN(n) && n >= 1 && n <= total) show(n - 1);
+  else show(0);
+})();
+</script>
+</body>
+</html>
