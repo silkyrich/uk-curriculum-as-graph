@@ -58,3 +58,25 @@ core/data/curriculum-documents/
 *.docx
 generated/images/
 generated/videos/
+
+
+# === CaseForge credentials ignore block ===
+# Added 2026-04-17 — never commit credentials.
+# Remove from repo with: git rm --cached <file> (keeps it on disk).
+.env
+.env.*
+!.env.example
+!.env.sample
+.mcp.json
+*.key
+*.pem
+credentials*.json
+service-account*.json
+gcp-key*.json
+*_secret.json
+*_secrets.json
+secrets.yaml
+secrets.yml
+.aws/credentials
+.netrc
+# === end credentials block ===
