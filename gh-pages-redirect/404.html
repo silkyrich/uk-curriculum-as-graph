@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moved — UK Curriculum Explorer</title>
+  <link rel="canonical" href="https://curriculum.richmorgan.co.uk/">
+  <meta name="robots" content="noindex">
+  <!-- Path-preserving redirect: strips the old /uk-curriculum-as-graph base
+       so deep links land on the matching page at the new domain. -->
+  <script>
+    (function () {
+      var base = '/uk-curriculum-as-graph';
+      var p = location.pathname;
+      if (p.indexOf(base) === 0) p = p.slice(base.length);
+      if (p === '' ) p = '/';
+      location.replace('https://curriculum.richmorgan.co.uk' + p + location.search + location.hash);
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=https://curriculum.richmorgan.co.uk/">
+  <style>
+    body { font: 16px/1.6 system-ui, sans-serif; max-width: 32rem;
+           margin: 6rem auto; padding: 0 1.5rem; color: #222; }
+    a { color: #0a66c2; }
+  </style>
+</head>
+<body>
+  <p>The UK Curriculum Explorer has moved to
+  <a href="https://curriculum.richmorgan.co.uk/">curriculum.richmorgan.co.uk</a>.</p>
+  <p>You should be redirected automatically. If not, follow the link above.</p>
+</body>
+</html>
