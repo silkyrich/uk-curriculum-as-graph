@@ -1,0 +1,185 @@
+name: Build & Deploy Curriculum Explorer to Cloudflare
+
+# Builds the Neo4j knowledge graph, compiles site data + teacher planners,
+# builds the Astro site, and deploys it to Cloudflare Pages (project
+# "uk-curriculum" → https://curriculum.richmorgan.co.uk).
+#
+# Replaces the old GitHub Pages deploy. The old URL now serves a redirect
+# stub published by deploy-site.yml.
+#
+# Requires repo secrets:
+#   CLOUDFLARE_API_TOKEN  — token with "Cloudflare Pages: Edit"
+#   CLOUDFLARE_ACCOUNT_ID — the account id
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'scripts/compile_site_data.py'
+      - 'scripts/compile_planners_manifest.py'
+      - 'scripts/generate_all_planners.py'
+      - 'scripts/planner_queries.py'
+      - 'scripts/render_markdown.py'
+      - 'layers/**/data/**'
+      - 'layers/**/scripts/**'
+      - 'core/scripts/**'
+  workflow_dispatch:
+
+concurrency:
+  group: cf-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── Build graph and compile data ───────────────────────────────────
+  compile-data:
+    name: Compile graph data
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    services:
+      neo4j:
+        image: neo4j:5-community
+        env:
+          NEO4J_AUTH: neo4j/cipassword
+          NEO4J_PLUGINS: '[]'
+        ports:
+          - 7474:7474
+          - 7687:7687
+        options: >-
+          --health-cmd "wget --no-verbose --tries=1 --spider http://localhost:7474 || exit 1"
+          --health-interval 10s
+          --health-timeout 10s
+          --health-retries 20
+          --health-start-period 30s
+
+    env:
+      NEO4J_URI: neo4j://localhost:7687
+      NEO4J_USERNAME: neo4j
+      NEO4J_PASSWORD: cipassword
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Verify Neo4j is ready
+        run: |
+          python3 -c "
+          from neo4j import GraphDatabase
+          driver = GraphDatabase.driver('neo4j://localhost:7687', auth=('neo4j', 'cipassword'))
+          driver.verify_connectivity()
+          print('Neo4j connection verified')
+          driver.close()
+          "
+
+      - name: Create schema
+        run: python3 core/scripts/create_schema.py
+
+      - name: Import all layers
+        run: python3 core/scripts/import_all.py --skip-oak --skip-case < /dev/null
+
+      - name: Generate teacher planners
+        run: python3 scripts/generate_all_planners.py --all --format md
+
+      - name: Compile planner manifest
+        run: python3 scripts/compile_planners_manifest.py --output site/src/data
+
+      - name: Stage planners for site
+        run: |
+          mkdir -p site/public/planners
+          for dir in generated/teacher-planners/*/; do
+            dirname=$(basename "$dir")
+            mkdir -p "site/public/planners/$dirname"
+            cp "$dir"*.md "site/public/planners/$dirname/" 2>/dev/null || true
+          done
+          echo "Staged $(find site/public/planners -name '*.md' | wc -l) planner files"
+
+      - name: Compile site data
+        run: python3 scripts/compile_site_data.py --output site/src/data
+
+      - name: Upload compiled data
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-data
+          path: site/src/data/
+          retention-days: 1
+
+      - name: Upload planner files
+        uses: actions/upload-artifact@v4
+        with:
+          name: planner-files
+          path: site/public/planners/
+          retention-days: 1
+
+  # ── Build Astro site ───────────────────────────────────────────────
+  build-site:
+    name: Build Astro site
+    needs: compile-data
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download compiled data
+        uses: actions/download-artifact@v4
+        with:
+          name: site-data
+          path: site/src/data/
+
+      - name: Download planner files
+        uses: actions/download-artifact@v4
+        with:
+          name: planner-files
+          path: site/public/planners/
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Build Astro site
+        working-directory: site
+        run: npm run build
+
+      - name: Upload built site
+        uses: actions/upload-artifact@v4
+        with:
+          name: astro-dist
+          path: site/dist/
+          retention-days: 1
+
+  # ── Deploy to Cloudflare Pages ─────────────────────────────────────
+  deploy:
+    name: Deploy to Cloudflare Pages
+    needs: build-site
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Download built site
+        uses: actions/download-artifact@v4
+        with:
+          name: astro-dist
+          path: dist/
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=uk-curriculum --branch=main
