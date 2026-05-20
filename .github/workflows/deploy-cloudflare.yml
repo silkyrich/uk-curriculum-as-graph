@@ -182,4 +182,9 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=uk-curriculum --branch=main
+          # Explicit ASCII commit message + --commit-dirty avoids wrangler's
+          # git auto-detection, which chokes on non-ASCII commit messages
+          # ("Invalid commit message" from the Pages API).
+          command: >-
+            pages deploy dist --project-name=uk-curriculum --branch=main
+            --commit-dirty=true --commit-message="CI deploy ${{ github.sha }}"
