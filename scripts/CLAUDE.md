@@ -8,6 +8,20 @@ The planner compiler has three main stages:
 - `planner_queries.py` queries Neo4j and assembles a `StudyContext` object for each study.
 - `render_markdown.py`, `render_docx.py`, and `render_pptx.py` turn that context into delivery artifacts.
 
+## Full markdown site export
+
+`generate_markdown_site.py` produces a complete hierarchical markdown export of
+the whole graph under `generated/markdown-site/`, not just teacher planners. It
+reuses the query functions in `compile_site_data.py` (the website data
+compiler) so the markdown export stays in lockstep with whatever the website
+serves — overview, subjects, domains, thinking lenses, learner profiles,
+delivery modes and prerequisites — plus the teacher planners. `render_site_markdown.py`
+holds the per-view markdown renderers.
+
+When a new view is added to `compile_site_data.py`, add a matching renderer to
+`render_site_markdown.py` and wire it into `generate_markdown_site.py`, or the
+markdown export will fall behind the website again.
+
 ## Current markdown compiler behavior
 
 The markdown path is the most actively developed output target and is the reference implementation for semantic surfacing.

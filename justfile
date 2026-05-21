@@ -70,6 +70,14 @@ generate-subject subject:
 generate-dry-run:
     python3 scripts/generate_all_planners.py --all --dry-run
 
+# Generate the full hierarchical markdown site export (all graph views + planners)
+generate-markdown-site:
+    python3 scripts/generate_markdown_site.py
+
+# Generate the markdown site export without planners (graph views only, fast)
+generate-markdown-site-views:
+    python3 scripts/generate_markdown_site.py --no-planners
+
 # ── Utilities ────────────────────────────────────────────────────────
 
 # Install Python dependencies
