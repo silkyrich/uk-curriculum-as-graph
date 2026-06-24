@@ -55,10 +55,14 @@ SUBJECT_CAPABILITY_TARGETS = {
         'assessment_alignment', 'learner_scaffolding', 'access_inclusion',
     ],
     'Science': [
+        # NB: KS2 Science has no statutory test framework (SATs abolished 2009;
+        # replaced by teacher assessment at Y6). The assessment layer contains
+        # no ContentDomainCode links to Science concepts, so assessment_alignment
+        # is intentionally omitted — same pattern as History.
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
         'lesson_structure', 'subject_references', 'cross_curricular',
         'vocabulary_definitions', 'success_criteria', 'prerequisites',
-        'assessment_alignment', 'learner_scaffolding', 'access_inclusion',
+        'learner_scaffolding', 'access_inclusion',
     ],
     'English': [
         'curriculum_anchor', 'concept_model', 'differentiation', 'thinking_lens',
